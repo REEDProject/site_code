@@ -1,0 +1,288 @@
+import html
+
+import pyparsing as pp
+
+
+def _define_grammar ():
+    content = pp.Word(pp.alphanums + ' ' + '\n')
+    content.setWhitespaceChars('')
+    content.setDefaultWhitespaceChars('')
+    punctuation = pp.oneOf('. , ; : \' " ( ) * / # $ % + - ? |')
+    ignored = pp.oneOf('\ufeff').suppress()
+    xml_escape = pp.oneOf('& < >').setParseAction(_pa_xml_escape)
+    vowels = pp.oneOf('A a E e I i O o U u')
+    acute_code = pp.Literal("@'") + vowels
+    acute_code.setParseAction(_pa_acute)
+    ae_code = pp.Literal('@ae').setParseAction(_pa_ae)
+    AE_code = pp.Literal('@AE').setParseAction(_pa_AE)
+    blank_code = pp.Literal('{(blank)}').setParseAction(_pa_blank)
+    capitulum_code = pp.Literal('@C').setParseAction(_pa_capitulum)
+    caret_code = pp.Literal('^').setParseAction(_pa_caret)
+    cedilla_code = pp.Literal('@?') + pp.oneOf('c')
+    cedilla_code.setParseAction(_pa_cedilla)
+    circumflex_code = pp.Literal('@^') + vowels
+    circumflex_code.setParseAction(_pa_circumflex)
+    collation_ref_code = '@c\\' + pp.OneOrMore(pp.nums) + '\\'
+    damaged_code = pp.Literal('<') + pp.Word('.', min=1, max=3) + \
+                   pp.Literal('>')
+    damaged_code.setParseAction(_pa_damaged)
+    dot_over_code = pp.Literal('@.') + pp.Regex(r'[A-Za-z]')
+    dot_over_code.setParseAction(_pa_dot_over)
+    dot_under_code = pp.Literal('@#') + pp.Regex(r'[A-Za-z]')
+    dot_under_code.setParseAction(_pa_dot_under)
+    ellipsis_code = pp.Literal('...') ^ pp.Literal('…')
+    ellipsis_code.setParseAction(_pa_ellipsis)
+    en_dash_code = pp.Literal('--').setParseAction(_pa_en_dash)
+    endnote_code = '@E\\' + pp.OneOrMore(pp.nums) + '\\'
+    eng_code = pp.Literal('@n').setParseAction(_pa_eng)
+    ENG_code = pp.Literal('@N').setParseAction(_pa_ENG)
+    eth_code = pp.Literal('@d').setParseAction(_pa_eth)
+    exclamation_code = pp.Literal('@!').setParseAction(_pa_exclamation)
+    grave_code = pp.Literal('@,') + vowels
+    grave_code.setParseAction(_pa_grave)
+    half_pica_code = pp.Literal('@u')
+    macron_code = pp.Literal('@-') + vowels
+    macron_code.setParseAction(_pa_macron)
+    oe_code = pp.Literal('@oe').setParseAction(_pa_oe)
+    OE_code = pp.Literal('@OE').setParseAction(_pa_OE)
+    paragraph_code = pp.Literal('@P').setParseAction(_pa_paragraph)
+    pound_code = pp.Literal('@$').setParseAction(_pa_pound)
+    raised_code = pp.Literal('@*').setParseAction(_pa_raised)
+    return_code = pp.Literal('!').setParseAction(_pa_return)
+    section_code = pp.Literal('@%').setParseAction(_pa_section)
+    semicolon_code = pp.Literal('@;').setParseAction(_pa_semicolon)
+    special_v_code = pp.Literal('@v').setParseAction(_pa_special_v)
+    tab_code = pp.Literal('@[')
+    thorn_code = pp.Literal('@th').setParseAction(_pa_thorn)
+    THORN_code = pp.Literal('@TH').setParseAction(_pa_THORN)
+    tilde_code = pp.Literal('@"') + (vowels | pp.Literal('n'))
+    tilde_code.setParseAction(_pa_tilde)
+    umlaut_code = pp.Literal('@:') + vowels
+    umlaut_code.setParseAction(_pa_umlaut)
+    wynn_code = pp.Literal('@y').setParseAction(_pa_wynn)
+    yogh_code = pp.Literal('@z').setParseAction(_pa_yogh)
+    YOGH_code = pp.Literal('@Z').setParseAction(_pa_YOGH)
+    single_codes = acute_code ^ ae_code ^ AE_code ^ blank_code ^ capitulum_code ^ caret_code ^ cedilla_code ^ circumflex_code ^ collation_ref_code ^ damaged_code ^ dot_over_code ^ dot_under_code ^ ellipsis_code ^ en_dash_code ^ endnote_code ^ eng_code ^ ENG_code ^ eth_code ^ exclamation_code ^ grave_code ^ half_pica_code ^ macron_code ^ oe_code ^ OE_code ^ paragraph_code ^ pound_code ^ raised_code ^ section_code ^ semicolon_code ^ special_v_code ^ tab_code ^ thorn_code ^ THORN_code ^ tilde_code ^ umlaut_code ^ wynn_code ^ yogh_code ^ YOGH_code
+    enclosed = pp.Forward()
+    bold_code = pp.nestedExpr('@e\\', '@e \\', content=enclosed)
+    bold_code.setParseAction(_pa_bold)
+    bold_italic_code = pp.nestedExpr('@j\\', '@j \\', content=enclosed)
+    bold_italic_code.setParseAction(_pa_bold_italic)
+    centred_code = pp.nestedExpr('@m\\', '@m \\', content=enclosed)
+    centred_code.setParseAction(_pa_centred)
+    deleted_code = pp.nestedExpr('[', ']', content=enclosed)
+    deleted_code.setParseAction(_pa_deleted)
+    exdented_code = pp.nestedExpr('@g\\', '@g \\', content=enclosed)
+    exdented_code.setParseAction(_pa_exdented)
+    footnote_code = pp.nestedExpr('@f\\', '@f \\', content=enclosed)
+    footnote_code.setParseAction(_pa_footnote)
+    indented_code = pp.nestedExpr('@p\\', '@p \\', content=enclosed)
+    indented_code.setParseAction(_pa_indented)
+    interlineation_above_code = pp.nestedExpr('@a\\', '@a \\', content=enclosed)
+    interlineation_above_code.setParseAction(_pa_interlineation_above)
+    interlineation_below_code = pp.nestedExpr('@b\\', '@b \\', content=enclosed)
+    interlineation_below_code.setParseAction(_pa_interlineation_below)
+    interpolation_code = pp.nestedExpr('@i\\', '@i \\', content=enclosed)
+    interpolation_code.setParseAction(_pa_interpolation)
+    italic_code = pp.nestedExpr('{', '}', content=enclosed)
+    italic_code.setParseAction(_pa_italic)
+    italic_small_caps_code = pp.nestedExpr('@q\\', '@q \\', content=enclosed)
+    italic_small_caps_code.setParseAction(_pa_italic_small_caps)
+    left_marginale_code = pp.nestedExpr('@l\\', '@l \\', content=enclosed)
+    left_marginale_code.setParseAction(_pa_left_marginale)
+    personnel_code = pp.nestedExpr('@x\\', '@x \\', content=enclosed)
+    personnel_code.setParseAction(_pa_personnel)
+    right_marginale_code = pp.nestedExpr('@r\\', '@r \\', content=enclosed)
+    right_marginale_code.setParseAction(_pa_right_marginale)
+    small_caps_code = pp.nestedExpr('@k\\', '@k \\', content=enclosed)
+    small_caps_code.setParseAction(_pa_small_caps)
+    subheading_code = pp.nestedExpr('@w\\', '\\!', content=enclosed)
+    subheading_code.setParseAction(_pa_subheading)
+    superscript_code = pp.nestedExpr('@s\\', '@s \\', content=enclosed)
+    superscript_code.setParseAction(_pa_superscript)
+    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ deleted_code ^ exdented_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_code ^ italic_small_caps_code ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ small_caps_code ^ subheading_code ^ superscript_code
+    enclosed << pp.OneOrMore(single_codes | return_code | paired_codes | content |
+                             punctuation | xml_escape | ignored)
+    heading_sub_content = pp.OneOrMore(single_codes | paired_codes | content | punctuation | xml_escape | ignored)
+    heading_content = heading_sub_content + pp.Literal('!') + \
+                      heading_sub_content + pp.Literal('!') + \
+                      heading_sub_content
+    heading_code = pp.nestedExpr('@h\\', '\\!', content=heading_content)
+    heading_code.setParseAction(_pa_heading)
+    return pp.StringStart() + pp.OneOrMore(enclosed ^ heading_code) + \
+        pp.StringEnd()
+
+def _pa_acute (s, loc, toks):
+    return ['{}\N{COMBINING ACUTE ACCENT}'.format(toks[1])]
+
+def _pa_ae (s, loc, toks):
+    return ['\N{LATIN SMALL LETTER AE}']
+
+def _pa_AE (s, loc, toks):
+    return ['\N{LATIN CAPITAL LETTER AE}']
+
+def _pa_blank (s, loc, toks):
+    return ['<space />']
+
+def _pa_bold (s, loc, toks):
+    return ['<hi rend="bold">', ''.join(toks[0]), '</hi>']
+
+def _pa_bold_italic (s, loc, toks):
+    return ['<hi rend="bold_italic">', ''.join(toks[0]), '</hi>']
+
+def _pa_capitulum (s, loc, toks):
+    # Black Lefwards Bullet is not the correct character, but
+    # according to the Fortune white paper it is "as close as we can
+    # get for now".
+    return ['\N{BLACK LEFTWARDS BULLET}']
+
+def _pa_caret (s, loc, toks):
+    return ['\N{LATIN SMALL LETTER TURNED V}']
+
+def _pa_cedilla (s, loc, toks):
+    return ['{}\N{COMBINING CEDILLA}'.format(toks[1])]
+
+def _pa_centred (s, loc, toks):
+    return ['<hi rend="center">', ''.join(toks[0]), '</hi>']
+
+def _pa_circumflex (s, loc, toks):
+    return ['{}\N{COMBINING CIRCUMFLEX ACCENT}'.format(toks[1])]
+
+def _pa_damaged (s, loc, toks):
+    return ['<damage><gap unit="chars" extent="{}" /></damage>'.format(
+        len(toks[1]))]
+
+def _pa_deleted (s, loc, toks):
+    return ['<del>', ''.join(toks[0]), '</del>']
+
+def _pa_dot_over (s, loc, toks):
+    return ['{}\N{COMBINING DOT ABOVE}'.format(toks[1])]
+
+def _pa_dot_under (s, loc, toks):
+    return ['{}\N{COMBINING DOT BELOW}'.format(toks[1])]
+
+def _pa_ellipsis (s, loc, toks):
+    return ['<gap reason="omitted" />']
+
+def _pa_en_dash (s, loc, toks):
+    return ['\N{EN DASH}']
+
+def _pa_eng (s, loc, toks):
+    return ['\N{LATIN SMALL LETTER ENG}']
+
+def _pa_ENG (s, loc, toks):
+    return ['\N{LATIN CAPITAL LETTER ENG}']
+
+def _pa_eth (s, loc, toks):
+    return ['\N{LATIN SMALL LETTER ETH}']
+
+def _pa_exclamation (s, loc, toks):
+    return ['!']
+
+def _pa_exdented (s, loc, toks):
+    return ['<ab type="body_p_exdented">', ''.join(toks[0]), '</ab>']
+
+def _pa_footnote (s, loc, toks):
+    return ['<note type="foot">', ''.join(toks[0]), '</note>']
+
+def _pa_grave (s, loc, toks):
+    return ['{}\N{COMBINING GRAVE ACCENT}'.format(toks[1])]
+
+def _pa_heading (s, loc, toks):
+    return ['<head type="main"><seg type="REPLACE_ME_FROM_CODE_LIST" subtype="place_name">', ''.join(toks[0]), '</seg></head>']
+
+def _pa_indented (s, loc, toks):
+    return ['<ab type="body_p_indented">', ''.join(toks[0]), '</ab>']
+
+def _pa_interlineation_above (s, loc, toks):
+    return ['<add place="above">', ''.join(toks[0]), '</add>']
+
+def _pa_interlineation_below (s, loc, toks):
+    return ['<add place="below">', ''.join(toks[0]), '</add>']
+
+def _pa_interpolation (s, loc, toks):
+    return ['<add><handShift />', ''.join(toks[0]), '</add>']
+
+def _pa_italic (s, loc, toks):
+    return ['<hi rend="italic">', ''.join(toks[0]), '</hi>']
+
+def _pa_italic_small_caps (s, loc, toks):
+    return ['<hi rend="smallcaps_italic">', ''.join(toks[0]), '</hi>']
+
+def _pa_left_marginale (s, loc, toks):
+    return ['<note type="marginal" place="margin_left" n="CHANGE_ME_TO_XMLID">',
+            ''.join(toks[0]), '</note>']
+
+def _pa_macron (s, loc, toks):
+    return ['{}\N{COMBINING MACRON}'.format(toks[1])]
+
+def _pa_oe (s, loc, toks):
+    return ['\N{LATIN SMALL LIGATURE OE}']
+
+def _pa_OE (s, loc, toks):
+    return ['\N{LATIN CAPITAL LIGATURE OE}']
+
+def _pa_paragraph (s, loc, toks):
+    return ['\N{PILCROW SIGN}']
+
+def _pa_personnel (s, loc, toks):
+    return ['<note type="eccles_court">', ''.join(toks[0]), '</note>']
+
+def _pa_pound (s, loc, toks):
+    return ['\N{POUND SIGN}']
+
+def _pa_raised (s, loc, toks):
+    return ['\N{MIDDLE DOT}']
+
+def _pa_return (s, loc, toks):
+    return ['<lb />']
+
+def _pa_right_marginale (s, loc, toks):
+    return ['<note type="marginal" place="margin_right" n="CHANGE_ME_TO_XMLID">',
+            ''.join(toks[0]), '</note>']
+
+def _pa_section (s, loc, toks):
+    return ['\N{SECTION SIGN}']
+
+def _pa_semicolon (s, loc, toks):
+    # Private Use Area; see
+    # http://folk.uib.no/hnooh/mufi/specs/MUFI-Alphabetic-3-0.pdf
+    return ['\uF161']
+
+def _pa_small_caps (s, loc, toks):
+    return ['<hi rend="smallcaps">', ''.join(toks[0]), '</hi>']
+
+def _pa_special_v (s, loc, toks):
+    return ['\N{LATIN SMALL LETTER MIDDLE-WELSH V}']
+
+def _pa_subheading (s, loc, toks):
+    return ['<head type="sub">', ''.join(toks[0]), '</head>']
+
+def _pa_superscript (s, loc, toks):
+    return ['<hi rend="superscript">', ''.join(toks[0]), '</hi>']
+
+def _pa_thorn (s, loc, toks):
+    return ['\N{LATIN SMALL LETTER THORN}']
+
+def _pa_THORN (s, loc, toks):
+    return ['\N{LATIN CAPITAL LETTER THORN}']
+
+def _pa_tilde (s, loc, toks):
+    return ['{}\N{COMBINING TILDE}'.format(toks[1])]
+
+def _pa_umlaut (s, loc, toks):
+    return ['{}\N{COMBINING DIAERESIS}'.format(toks[1])]
+
+def _pa_wynn (s, loc, toks):
+    return ['\N{LATIN LETTER WYNN}']
+
+def _pa_xml_escape (s, loc, toks):
+    return [html.escape(toks[0])]
+
+def _pa_yogh (s, loc, toks):
+    return ['\N{LATIN SMALL LETTER YOGH}']
+
+def _pa_YOGH (s, loc, toks):
+    return ['\N{LATIN CAPITAL LETTER YOGH}']
+
+document_grammar = _define_grammar()

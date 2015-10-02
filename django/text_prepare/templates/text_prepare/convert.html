@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Convert document to TEI XML</h1>
+
+    {% if error %}
+    {% if invalid %}
+    {% include 'text_prepare/validation_error.html' with error=error filename=filename only %}
+    {% else %}
+    <p>An error occurred in the process of converting {{ filename }}:
+    {{ error }}</p>
+    {% endif %}
+    <hr>
+    {% endif %}
+
+    <form enctype="multipart/form-data" method="post" action="">
+      {% csrf_token %}
+      {% for field in form %}
+      <div class="row">
+        <div class="small-6 columns">
+          <label {% if field.errors %}class="error"{% endif %}>{{ field.label }} {{ field }}</label>
+        </div>
+      </div>
+      {% endfor %}
+      <div class="row">
+        <div class="small-6 columns">
+          <input class="button" type="submit" value="Convert">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock content %}

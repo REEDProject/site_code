@@ -1,0 +1,46 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    {% block css %}
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="{% static 'foundation/css/foundation.css' %}">
+    {% endblock css %}
+    {% block js %}
+    <script src="{% static 'foundation/js/vendor/modernizr.js' %}"></script>
+    {% endblock js %}
+  </head>
+  <body>
+    {% block topnav %}
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name"><h1><a href="#">eREED</a></h1></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class="has-dropdown">
+            <a href="#">Document processing</a>
+            <ul class="dropdown">
+              <li><a href="{% url 'text_prepare-validate' %}">Validate</a></li>
+              <li><a href="{% url 'text_prepare-convert' %}">Convert
+                  to TEI</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    {% endblock topnav %}
+    {% block content %}
+    {% endblock content %}
+    {% block endjs %}
+    <script src="{% static 'foundation/js/vendor/jquery.js' %}"></script>
+    <script src="{% static 'foundation/js/vendor/fastclick.js' %}"></script>
+    <script src="{% static 'foundation/js/foundation.min.js' %}"></script>
+    <script>$(document).foundation();</script>
+    {% endblock endjs %}
+  </body>
+</html>
