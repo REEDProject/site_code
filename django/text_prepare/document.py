@@ -43,17 +43,19 @@ class Document:
         """
         with tempfile.TemporaryDirectory() as env_fh:
             command = self.convert_command.format(env_fh, file_path)
+            message = 'Failed to extract text from the document: {}'
             try:
                 text = subprocess.check_output(shlex.split(command))
+            except subprocess.CalledProcessError as e:
+                raise TextPrepareDocumentTextExtractionError(message.format(
+                    e.output))
             except Exception as e:
                 # In addition to subprocess.CalledProcessError,
                 # FileNotFoundError might be raised (if the command is
                 # not available) and quite possibly others. Given that
                 # any failure here should be handled and reported in
                 # the same way, just catch Exception.
-                message = 'Failed to extract text from the document:' \
-                          ' {}'.format(e.output)
-                raise TextPrepareDocumentTextExtractionError(message)
+                raise TextPrepareDocumentTextExtractionError(message.format(e))
         return text.decode('utf-8')
 
     def validate (self):
