@@ -45,7 +45,12 @@ class Document:
             command = self.convert_command.format(env_fh, file_path)
             try:
                 text = subprocess.check_output(shlex.split(command))
-            except subprocess.CalledProcessError as e:
+            except Exception as e:
+                # In addition to subprocess.CalledProcessError,
+                # FileNotFoundError might be raised (if the command is
+                # not available) and quite possibly others. Given that
+                # any failure here should be handled and reported in
+                # the same way, just catch Exception.
                 message = 'Failed to extract text from the document:' \
                           ' {}'.format(e.output)
                 raise TextPrepareDocumentTextExtractionError(message)
