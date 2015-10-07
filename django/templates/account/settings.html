@@ -1,0 +1,13 @@
+{% extends "account/base.html" %}
+
+{% block title %}Account settings{% endblock title %}
+
+{% block account %}
+<h1>Account settings</h1>
+
+<form method="post" action="{% url 'account_settings' %}">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Save</button>
+</form>
+{% endblock account %}

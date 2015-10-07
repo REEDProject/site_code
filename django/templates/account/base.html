@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+  <div class="small-4 columns">
+    <ul class="side-nav" role="navigation" title="Section link list">
+      <li><a href="{% url 'account_settings' %}">Account</a></li>
+      <li><a href="{% url 'account_password' %}">Change password</a></li>
+      <li><a href="{% url 'account_delete' %}">Delete account</a></li>
+    </ul>
+  </div>
+  <div class="small-8 columns">
+    {% block account %}
+    {% endblock account %}
+  </div>
+</div>
+{% endblock content %}

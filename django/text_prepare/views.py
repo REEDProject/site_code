@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.core.files.uploadhandler import TemporaryFileUploadHandler
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -9,6 +10,7 @@ from .exceptions import (TextPrepareDocumentError,
 from .forms import UploadDocumentForm
 
 
+@login_required
 @csrf_exempt
 def convert (request):
     # Ensure that any uploaded file is stored as a temporary file.
@@ -37,6 +39,7 @@ def _convert (request):
     context['form'] = form
     return render(request, 'text_prepare/convert.html', context)
 
+@login_required
 @csrf_exempt
 def validate (request):
     # Ensure that any uploaded file is stored as a temporary file.

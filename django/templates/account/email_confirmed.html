@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Email confirmed{% endblock title %}
+
+{% block content %}
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Email confirmed</h1>
+
+    <p>You have confrimed <strong>{{ confirmation.email_address.email }}</strong>.</p>
+  </div>
+</div>
+{% endblock content %}

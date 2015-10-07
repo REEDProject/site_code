@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Confirm your email address{% endblock title %}
+
+{% block content %}
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Confirm your email address</h1>
+
+    <p>We have sent you an email to <strong>{{ email }}</strong> for
+    verification. Follow the link provided to finalise the signup
+    process.</p>
+
+    <p><a href="{{ success_url }}">Go back</a></p>
+  </div>
+</div>
+{% endblock content %}

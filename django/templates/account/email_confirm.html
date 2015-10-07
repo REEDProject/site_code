@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Confirm email{% endblock title %}
+
+{% block content %}
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Confirm email</h1>
+
+    <form method="post" action="{% url 'account_confirm_email' key=confirmation.key %}">
+      {% csrf_token %}
+      <p>Confirm email address <strong>{{ email }}</strong>?</p>
+      <button type="submit">Confirm</button>
+    </form>
+  </div>
+</div>
+{% endblock content %}

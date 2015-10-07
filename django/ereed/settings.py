@@ -40,6 +40,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'account',
     'text_prepare',
 )
 
@@ -52,6 +54,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'account.middleware.LocaleMiddleware',
+    'account.middleware.TimezoneMiddleware',
 )
 
 ROOT_URLCONF = 'ereed.urls'
@@ -66,6 +70,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'account.context_processors.account',
             ],
             'loaders': [
                 ('django.template.loaders.cached.Loader', [
@@ -78,6 +83,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'ereed.wsgi.application'
+
+SITE_ID = 1
 
 
 # Internationalization
@@ -101,6 +108,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+
+# Account settings.
+ACCOUNT_OPEN_SIGNUP = False
 
 
 # Local settings

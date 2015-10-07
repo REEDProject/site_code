@@ -23,6 +23,19 @@
       <section class="top-bar-section">
         <ul class="right">
           <li class="has-dropdown">
+            <a href="#">Account</a>
+            <ul class="dropdown">
+              {% if request.user.is_authenticated %}
+              <li><a href="{% url 'account_settings' %}">Settings</a></li>
+              <li><a href="{% url 'account_logout' %}">Log out</a></li>
+              {% else %}
+              <li><a href="{% url 'account_login' %}">Log in</a></li>
+              <li><a href="{% url 'account_signup' %}">Sign up</a></li>
+              {% endif %}
+            </ul>
+          </li>
+          {% if request.user.is_authenticated %}
+          <li class="has-dropdown">
             <a href="#">Document processing</a>
             <ul class="dropdown">
               <li><a href="{% url 'text_prepare-validate' %}">Validate</a></li>
@@ -30,6 +43,7 @@
                   to TEI</a></li>
             </ul>
           </li>
+          {% endif %}
         </ul>
       </section>
     </nav>

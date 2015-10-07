@@ -20,6 +20,7 @@ from text_prepare import urls as text_prepare_urls
 
 
 urlpatterns = [
+    url(r'^accounts/', include('account.urls')),
     url(r'^prepare/', include(text_prepare_urls)),
     url(r'^admin/', include(admin.site.urls)),
 ]
