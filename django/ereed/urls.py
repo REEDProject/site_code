@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+from records import urls as records_urls
 from text_prepare import urls as text_prepare_urls
 
 
@@ -23,4 +24,5 @@ urlpatterns = [
     url(r'^accounts/', include('account.urls')),
     url(r'^prepare/', include(text_prepare_urls)),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^', include(records_urls)),
 ]

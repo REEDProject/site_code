@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'account',
     'text_prepare',
+    'records',
 )
 
 MIDDLEWARE_CLASSES = (
