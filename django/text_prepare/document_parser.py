@@ -23,7 +23,8 @@ def _define_grammar ():
     circumflex_code = pp.Literal('@^') + vowels
     circumflex_code.setParseAction(_pa_circumflex)
     collation_ref_code = '@c\\' + pp.OneOrMore(pp.nums) + '\\'
-    damaged_code = pp.Literal('<') + pp.Word('.', min=1, max=3) + \
+    damaged_code = pp.Literal('<') + \
+                   (pp.Word('.', min=1, max=3) ^ pp.Literal('…')) + \
                    pp.Literal('>')
     damaged_code.setParseAction(_pa_damaged)
     dot_over_code = pp.Literal('@.') + pp.Regex(r'[A-Za-z]')
@@ -40,7 +41,6 @@ def _define_grammar ():
     exclamation_code = pp.Literal('@!').setParseAction(_pa_exclamation)
     grave_code = pp.Literal('@,') + vowels
     grave_code.setParseAction(_pa_grave)
-    half_pica_code = pp.Literal('@u')
     macron_code = pp.Literal('@-') + vowels
     macron_code.setParseAction(_pa_macron)
     oe_code = pp.Literal('@oe').setParseAction(_pa_oe)
@@ -52,7 +52,7 @@ def _define_grammar ():
     section_code = pp.Literal('@%').setParseAction(_pa_section)
     semicolon_code = pp.Literal('@;').setParseAction(_pa_semicolon)
     special_v_code = pp.Literal('@v').setParseAction(_pa_special_v)
-    tab_code = pp.Literal('@[')
+    tab_code = pp.Literal('@[').setParseAction(_pa_tab)
     thorn_code = pp.Literal('@th').setParseAction(_pa_thorn)
     THORN_code = pp.Literal('@TH').setParseAction(_pa_THORN)
     tilde_code = pp.Literal('@"') + (vowels | pp.Literal('n'))
@@ -62,7 +62,7 @@ def _define_grammar ():
     wynn_code = pp.Literal('@y').setParseAction(_pa_wynn)
     yogh_code = pp.Literal('@z').setParseAction(_pa_yogh)
     YOGH_code = pp.Literal('@Z').setParseAction(_pa_YOGH)
-    single_codes = acute_code ^ ae_code ^ AE_code ^ blank_code ^ capitulum_code ^ caret_code ^ cedilla_code ^ circumflex_code ^ collation_ref_code ^ damaged_code ^ dot_over_code ^ dot_under_code ^ ellipsis_code ^ en_dash_code ^ endnote_code ^ eng_code ^ ENG_code ^ eth_code ^ exclamation_code ^ grave_code ^ half_pica_code ^ macron_code ^ oe_code ^ OE_code ^ paragraph_code ^ pound_code ^ raised_code ^ section_code ^ semicolon_code ^ special_v_code ^ tab_code ^ thorn_code ^ THORN_code ^ tilde_code ^ umlaut_code ^ wynn_code ^ yogh_code ^ YOGH_code
+    single_codes = acute_code ^ ae_code ^ AE_code ^ blank_code ^ capitulum_code ^ caret_code ^ cedilla_code ^ circumflex_code ^ collation_ref_code ^ damaged_code ^ dot_over_code ^ dot_under_code ^ ellipsis_code ^ en_dash_code ^ endnote_code ^ eng_code ^ ENG_code ^ eth_code ^ exclamation_code ^ grave_code ^ macron_code ^ oe_code ^ OE_code ^ paragraph_code ^ pound_code ^ raised_code ^ section_code ^ semicolon_code ^ special_v_code ^ tab_code ^ thorn_code ^ THORN_code ^ tilde_code ^ umlaut_code ^ wynn_code ^ yogh_code ^ YOGH_code
     enclosed = pp.Forward()
     bold_code = pp.nestedExpr('@e\\', '@e \\', content=enclosed)
     bold_code.setParseAction(_pa_bold)
@@ -100,7 +100,10 @@ def _define_grammar ():
     subheading_code.setParseAction(_pa_subheading)
     superscript_code = pp.nestedExpr('@s\\', '@s \\', content=enclosed)
     superscript_code.setParseAction(_pa_superscript)
-    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ deleted_code ^ exdented_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_code ^ italic_small_caps_code ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ small_caps_code ^ subheading_code ^ superscript_code
+    tab_start_code = pp.nestedExpr(pp.LineStart() + pp.Literal('@['), '!',
+                                   content=enclosed)
+    tab_start_code.setParseAction(_pa_tab_start)
+    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ deleted_code ^ exdented_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_code ^ italic_small_caps_code ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ small_caps_code ^ subheading_code ^ superscript_code ^ tab_start_code
     enclosed << pp.OneOrMore(single_codes | return_code | paired_codes | content |
                              punctuation | xml_escape | ignored)
     heading_sub_content = pp.OneOrMore(single_codes | paired_codes | content | punctuation | xml_escape | ignored)
@@ -131,7 +134,7 @@ def _pa_bold_italic (s, loc, toks):
     return ['<hi rend="bold_italic">', ''.join(toks[0]), '</hi>']
 
 def _pa_capitulum (s, loc, toks):
-    # Black Lefwards Bullet is not the correct character, but
+    # Black Leftwards Bullet is not the correct character, but
     # according to the Fortune white paper it is "as close as we can
     # get for now".
     return ['\N{BLACK LEFTWARDS BULLET}']
@@ -189,7 +192,7 @@ def _pa_grave (s, loc, toks):
     return ['{}\N{COMBINING GRAVE ACCENT}'.format(toks[1])]
 
 def _pa_heading (s, loc, toks):
-    return ['<head type="main"><seg type="REPLACE_ME_FROM_CODE_LIST" subtype="place_name">', ''.join(toks[0]), '</seg></head>']
+    return ['<head type="main"><name type="place_region">', ''.join(toks[0]), '</name></head>']
 
 def _pa_indented (s, loc, toks):
     return ['<ab type="body_p_indented">', ''.join(toks[0]), '</ab>']
@@ -260,6 +263,12 @@ def _pa_subheading (s, loc, toks):
 
 def _pa_superscript (s, loc, toks):
     return ['<hi rend="superscript">', ''.join(toks[0]), '</hi>']
+
+def _pa_tab (s, loc, toks):
+    return ['<milestone type="table-cell" />']
+
+def _pa_tab_start (s, loc, toks):
+    return ['<hi rend="right">', ''.join(toks[0]), '</hi>']
 
 def _pa_thorn (s, loc, toks):
     return ['\N{LATIN SMALL LETTER THORN}']
