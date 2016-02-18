@@ -64,6 +64,11 @@ class TestDocumentConverter (TestCase):
         expected = 'garc\N{COMBINING CEDILLA}on'
         self._check_conversion(text, expected)
 
+    def test_cell_right (self):
+        text = '<t><r><c>Some</c><cr>text</cr></r></t>'
+        expected = '<table><row><cell>Some</cell><cell rend="right">text</cell></row></table>'
+        self._check_conversion(text, expected)
+
     def test_centred (self):
         text = 'some @m\\centred@m \\ text'
         expected = 'some <hi rend="center">centred</hi> text'
@@ -274,6 +279,11 @@ class TestDocumentConverter (TestCase):
         expected = 'Some <hi rend="superscript">superscripted</hi> text'
         self._check_conversion(text, expected)
 
+    def test_table (self):
+        text = '<t><r><c>Some</c><c>text</c></r></t>'
+        expected = '<table><row><cell>Some</cell><cell>text</cell></row></table>'
+        self._check_conversion(text, expected)
+
     def test_THORN (self):
         text = '@THat is silly and wrong'
         expected = '\N{LATIN CAPITAL LETTER THORN}at is silly and wrong'
@@ -304,8 +314,8 @@ class TestDocumentConverter (TestCase):
     def test_xml_escape (self):
         data = {'&': '&amp;', '<': '&lt;', '>': '&gt;'}
         for char, expected in data.items():
-            text = 'a{}b'.format(char)
-            expected = 'a{}b'.format(expected)
+            text = 'a {} b'.format(char)
+            expected = 'a {} b'.format(expected)
             self._check_conversion(text, expected)
 
     def test_YOGH (self):

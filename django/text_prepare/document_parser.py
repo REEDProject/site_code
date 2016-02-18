@@ -10,7 +10,13 @@ def _define_grammar ():
     white = pp.Word(' ' + '\n')
     punctuation = pp.oneOf('. , ; : \' " ( ) * / # $ % + - ? |')
     ignored = pp.oneOf('\ufeff').suppress() # zero width no-break space
-    xml_escape = pp.oneOf('& < >').setParseAction(_pa_xml_escape)
+    # This is an awful cludge for < to get around my inability to find
+    # a way for pyparsing to handle tables correctly (despite
+    # damaged_code working fine). With luck there won't be any < in
+    # the text content.
+    xml_escape = pp.oneOf('& >') | (pp.Literal('<') + pp.FollowedBy(
+        white | ignored | pp.nums))
+    xml_escape.setParseAction(_pa_xml_escape)
     vowels = pp.oneOf('A a E e I i O o U u')
     acute_code = pp.Literal("@'") + vowels
     acute_code.setParseAction(_pa_acute)
@@ -103,10 +109,10 @@ def _define_grammar ():
                                    content=enclosed)
     tab_start_code.setParseAction(_pa_tab_start)
     paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ deleted_code ^ exdented_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_code ^ italic_small_caps_code ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ small_caps_code ^ superscript_code ^ tab_start_code
-    enclosed << pp.OneOrMore(single_codes | return_code | paired_codes |
-                             content | punctuation | xml_escape | ignored)
+    enclosed << pp.OneOrMore(single_codes ^ return_code ^ paired_codes ^
+                             content ^ punctuation ^ xml_escape ^ ignored)
     main_heading_sub_content = pp.OneOrMore(content | punctuation | xml_escape |
-                                       ignored)
+                                            ignored)
     main_heading_content = main_heading_sub_content + \
                            pp.Literal('!').suppress() + \
                            main_heading_sub_content + \
@@ -117,7 +123,15 @@ def _define_grammar ():
     main_heading_code.setParseAction(_pa_main_heading)
     subheading_code = pp.nestedExpr('@w\\', '\\!', content=enclosed)
     subheading_code.setParseAction(_pa_subheading)
-    subsection = subheading_code + pp.OneOrMore(enclosed)
+    cell = pp.nestedExpr('<c>', '</c>', content=enclosed)
+    cell.setParseAction(_pa_cell)
+    cell_right = pp.nestedExpr('<cr>', '</cr>', content=enclosed)
+    cell_right.setParseAction(_pa_cell_right)
+    row = pp.nestedExpr('<r>', '</r>', content=pp.OneOrMore(cell | cell_right))
+    row.setParseAction(_pa_row)
+    table = pp.nestedExpr('<t>', '</t>', content=pp.OneOrMore(row))
+    table.setParseAction(_pa_table)
+    subsection = subheading_code + pp.OneOrMore(table ^ enclosed)
     subsection.setParseAction(_pa_subsection)
     main_section = pp.ZeroOrMore(white | ignored) + main_heading_code + \
                    pp.ZeroOrMore(white) + pp.OneOrMore(subsection)
@@ -153,6 +167,12 @@ def _pa_caret (s, loc, toks):
 
 def _pa_cedilla (s, loc, toks):
     return ['{}\N{COMBINING CEDILLA}'.format(toks[1])]
+
+def _pa_cell (s, loc, toks):
+    return ['<cell>', ''.join(toks[0]), '</cell>']
+
+def _pa_cell_right (s, loc, toks):
+    return ['<cell rend="right">', ''.join(toks[0]), '</cell>']
 
 def _pa_centred (s, loc, toks):
     return ['<hi rend="center">', ''.join(toks[0]), '</hi>']
@@ -251,11 +271,16 @@ def _pa_raised (s, loc, toks):
     return ['\N{MIDDLE DOT}']
 
 def _pa_return (s, loc, toks):
+    # TODO: Perhaps add newlines here to deal with the case of long
+    # lines in the source?
     return ['<lb />']
 
 def _pa_right_marginale (s, loc, toks):
     return ['<note type="marginal" place="margin_right" n="CHANGE_ME_TO_XMLID">',
             ''.join(toks[0]), '</note>']
+
+def _pa_row (s, loc, toks):
+    return ['<row>', ''.join(toks[0]), '</row>']
 
 def _pa_section (s, loc, toks):
     return ['\N{SECTION SIGN}']
@@ -285,6 +310,9 @@ def _pa_tab (s, loc, toks):
 
 def _pa_tab_start (s, loc, toks):
     return ['<hi rend="right">', ''.join(toks[0]), '</hi>']
+
+def _pa_table (s, loc, toks):
+    return ['<table>', ''.join(toks[0]), '</table>']
 
 def _pa_thorn (s, loc, toks):
     return ['\N{LATIN SMALL LETTER THORN}']
