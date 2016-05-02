@@ -44,6 +44,9 @@ INSTALLED_APPS = (
     'account',
     'text_prepare',
     'records',
+    'selectable',
+    'tmapi',
+    'eats',
 )
 
 MIDDLEWARE_CLASSES = (

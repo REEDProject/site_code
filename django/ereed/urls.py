@@ -24,5 +24,6 @@ urlpatterns = [
     url(r'^accounts/', include('account.urls')),
     url(r'^prepare/', include(text_prepare_urls)),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^selectable/', include('selectable.urls')),
     url(r'^', include(records_urls)),
 ]
