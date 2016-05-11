@@ -85,6 +85,11 @@ class TestDocumentConverter (TestCase):
         expected = 'QAZ'
         self._check_conversion(text, expected)
 
+    def test_comment (self):
+        text = 'some @xc\\commented out@xc \\ text'
+        expected = 'some <!-- commented out --> text'
+        self._check_conversion(text, expected)
+
     def test_damaged (self):
         for i in range(1, 4):
             text = 'dam<{}> text'.format('.' * i)

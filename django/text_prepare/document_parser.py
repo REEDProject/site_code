@@ -8,7 +8,7 @@ def _define_grammar ():
     content.setWhitespaceChars('')
     content.setDefaultWhitespaceChars('')
     white = pp.Word(' ' + '\n')
-    punctuation = pp.oneOf('. , ; : \' " ( ) * / # $ % + - ? |')
+    punctuation = pp.oneOf('. , ; : \' " ( ) * / # $ % + - ? | –')
     ignored = pp.oneOf('\ufeff').suppress() # zero width no-break space
     # This is an awful cludge for < to get around my inability to find
     # a way for pyparsing to handle tables correctly (despite
@@ -77,6 +77,8 @@ def _define_grammar ():
     bold_italic_code.setParseAction(_pa_bold_italic)
     centred_code = pp.nestedExpr('@m\\', '@m \\', content=enclosed)
     centred_code.setParseAction(_pa_centred)
+    comment_code = pp.nestedExpr('@xc\\', '@xc \\', content=enclosed)
+    comment_code.setParseAction(_pa_comment)
     deleted_code = pp.nestedExpr('[', ']', content=enclosed)
     deleted_code.setParseAction(_pa_deleted)
     exdented_code = pp.nestedExpr('@g\\', '@g \\', content=enclosed)
@@ -108,7 +110,7 @@ def _define_grammar ():
     tab_start_code = pp.nestedExpr(pp.LineStart() + pp.Literal('@['), '!',
                                    content=enclosed)
     tab_start_code.setParseAction(_pa_tab_start)
-    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ deleted_code ^ exdented_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_code ^ italic_small_caps_code ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ small_caps_code ^ superscript_code ^ tab_start_code
+    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ comment_code ^ deleted_code ^ exdented_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_code ^ italic_small_caps_code ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ small_caps_code ^ superscript_code ^ tab_start_code
     enclosed << pp.OneOrMore(single_codes ^ return_code ^ paired_codes ^
                              content ^ punctuation ^ xml_escape ^ ignored)
     main_heading_sub_content = pp.OneOrMore(content | punctuation | xml_escape |
@@ -179,6 +181,9 @@ def _pa_centred (s, loc, toks):
 
 def _pa_circumflex (s, loc, toks):
     return ['{}\N{COMBINING CIRCUMFLEX ACCENT}'.format(toks[1])]
+
+def _pa_comment (s, loc, toks):
+    return ['<!-- ', ''.join(toks[0]), ' -->']
 
 def _pa_damaged (s, loc, toks):
     return ['<damage><gap unit="chars" extent="{}" /></damage>'.format(
