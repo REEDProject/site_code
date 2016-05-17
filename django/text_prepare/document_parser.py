@@ -129,9 +129,11 @@ def _define_grammar ():
     cell.setParseAction(_pa_cell)
     cell_right = pp.nestedExpr('<cr>', '</cr>', content=enclosed)
     cell_right.setParseAction(_pa_cell_right)
-    row = pp.nestedExpr('<r>', '</r>', content=pp.OneOrMore(cell | cell_right))
+    row = pp.nestedExpr('<r>', '</r>', content=pp.OneOrMore(
+        cell | cell_right | comment_code | white))
     row.setParseAction(_pa_row)
-    table = pp.nestedExpr('<t>', '</t>', content=pp.OneOrMore(row))
+    table = pp.nestedExpr('<t>', '</t>', content=pp.OneOrMore(
+        row | comment_code | white))
     table.setParseAction(_pa_table)
     subsection = subheading_code + pp.OneOrMore(table ^ enclosed)
     subsection.setParseAction(_pa_subsection)

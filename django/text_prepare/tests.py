@@ -285,8 +285,13 @@ class TestDocumentConverter (TestCase):
         self._check_conversion(text, expected)
 
     def test_table (self):
-        text = '<t><r><c>Some</c><c>text</c></r></t>'
-        expected = '<table><row><cell>Some</cell><cell>text</cell></row></table>'
+        text = '<t>\n<r>\n<c></c>\n<c>Some</c>\n<c>text</c>\n</r>\n</t>'
+        expected = '<table>\n<row>\n<cell></cell>\n<cell>Some</cell>\n<cell>text</cell>\n</row>\n</table>'
+        self._check_conversion(text, expected)
+
+    def test_table_with_comment (self):
+        text = '<t>\n<r>\n<c></c>\n<c>Some</c>\n@xc\\A comment@xc \\\n<c>text</c>\n</r>\n</t>'
+        expected = '<table>\n<row>\n<cell></cell>\n<cell>Some</cell>\n<!-- A comment -->\n<cell>text</cell>\n</row>\n</table>'
         self._check_conversion(text, expected)
 
     def test_THORN (self):
