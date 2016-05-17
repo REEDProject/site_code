@@ -138,7 +138,7 @@ def _define_grammar ():
     main_section = pp.ZeroOrMore(white | ignored) + main_heading_code + \
                    pp.ZeroOrMore(white) + pp.OneOrMore(subsection)
     main_section.setParseAction(_pa_main_section)
-    return pp.StringStart() + main_section + pp.StringEnd()
+    return pp.StringStart() + pp.OneOrMore(main_section) + pp.StringEnd()
 
 def _pa_acute (s, loc, toks):
     return ['{}\N{COMBINING ACUTE ACCENT}'.format(toks[1])]
