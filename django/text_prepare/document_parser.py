@@ -30,8 +30,7 @@ def _define_grammar ():
     circumflex_code = pp.Literal('@^') + vowels
     circumflex_code.setParseAction(_pa_circumflex)
     collation_ref_code = '@c\\' + pp.OneOrMore(pp.nums) + '\\'
-    damaged_code = pp.Literal('<') + \
-                   (pp.Word('.', min=1, max=3) ^ pp.Literal('…')) + \
+    damaged_code = pp.Literal('<') + (pp.Word('.', min=1) ^ pp.Literal('…')) + \
                    pp.Literal('>')
     damaged_code.setParseAction(_pa_damaged)
     dot_over_code = pp.Literal('@.') + pp.Regex(r'[A-Za-z]')

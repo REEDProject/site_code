@@ -91,7 +91,7 @@ class TestDocumentConverter (TestCase):
         self._check_conversion(text, expected)
 
     def test_damaged (self):
-        for i in range(1, 4):
+        for i in range(1, 5):
             text = 'dam<{}> text'.format('.' * i)
             expected = 'dam<damage><gap unit="chars" extent="{}" /></damage>' \
                        ' text'.format(i)
