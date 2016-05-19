@@ -23,9 +23,10 @@ def _convert (request):
     if request.method == 'POST':
         form = UploadDocumentForm(request.POST, request.FILES)
         if form.is_valid():
+            line_length = form.cleaned_data['line_length']
             doc = request.FILES['document']
             context['filename'] = doc.name
-            document = Document(doc.temporary_file_path())
+            document = Document(doc.temporary_file_path(), line_length)
             try:
                 tei = document.convert()
                 return HttpResponse(tei, content_type='text/xml')
@@ -52,10 +53,11 @@ def _validate (request):
     if request.method == 'POST':
         form = UploadDocumentForm(request.POST, request.FILES)
         if form.is_valid():
+            line_length = form.cleaned_data['line_length']
             doc = request.FILES['document']
             context['filename'] = doc.name
             context['validated'] = True
-            document = Document(doc.temporary_file_path())
+            document = Document(doc.temporary_file_path(), line_length)
             try:
                 document.validate()
             except TextPrepareDocumentError as error:

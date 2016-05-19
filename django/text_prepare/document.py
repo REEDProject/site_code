@@ -1,6 +1,7 @@
 import shlex
 import subprocess
 import tempfile
+import textwrap
 import unicodedata
 
 import pyparsing as pp
@@ -17,11 +18,12 @@ class Document:
     convert_command = '''soffice -env:UserInstallation=file://{} --headless
                          --convert-to txt:Text --cat {}'''
 
-    def __init__ (self, file_path):
+    def __init__ (self, file_path, line_length):
         self._file_path = file_path
+        self._line_length = line_length
 
     def convert (self):
-        text = self._get_text(self._file_path)
+        text = self._get_text(self._file_path, self._line_length)
         results = self._validate(text)
         return self._convert(results)
 
@@ -29,7 +31,7 @@ class Document:
         text = '<TEI>{}</TEI>'.format(''.join(results))
         return unicodedata.normalize('NFC', text)
 
-    def _get_text (self, file_path):
+    def _get_text (self, file_path, line_length):
         """Return the plain text conversion of the file at `file_path`.
 
         The file at `file_path` is converted using LibreOffice, and is
@@ -38,6 +40,8 @@ class Document:
 
         :param file_path: path to file to extract text from
         :type file_path: `str`
+        :param line_length: number of characters to wrap lines to
+        :type line_length: `int`
         :rtype: `str`
 
         """
@@ -56,10 +60,11 @@ class Document:
                 # any failure here should be handled and reported in
                 # the same way, just catch Exception.
                 raise TextPrepareDocumentTextExtractionError(message.format(e))
-        return text.decode('utf-8')
+        text = text.decode('utf-8')
+        return self._wrap_text(text, line_length)
 
     def validate (self):
-        text = self._get_text(self._file_path)
+        text = self._get_text(self._file_path, self._line_length)
         self._validate(text)
 
     def _validate (self, text):
@@ -80,23 +85,30 @@ class Document:
             # main line.
             col = e.column
             line = e.line
+            line_number = e.lineno
+            split_text = text.splitlines()
             lines = []
-            line_length = 90
-            marker_index = 30
-            start_index = 0
-            end_index = line_length
-            prev_line = ''
-            if col > marker_index:
-                start_index = col - marker_index
-                end_index = col + line_length - marker_index
-                prev_line = line[start_index-line_length:start_index]
-            if prev_line:
-                lines.append(prev_line)
-            lines.append(line[start_index:end_index])
-            lines.append(' ' * (col - start_index) + '^')
-            next_line = line[end_index:end_index+line_length]
-            if next_line:
-                lines.append(next_line)
+            lines.append('Line: {}\n'.format(line_number))
+            if line_number > 1:
+                lines.append(split_text[line_number-2])
+            lines.append(line)
+            lines.append(' ' * col + '^')
+            try:
+                lines.append(split_text[line_number])
+            except:
+                pass
             message = '\n'.join(lines)
             raise TextPrepareDocumentValidationError(message)
         return results
+
+    def _wrap_text (self, text, line_length):
+        """Returns `text` wrapped to the specified line `length`."""
+        # Due to slight differences in how Word and textwrap wrap
+        # lines, it can happen that a closing @-code (eg, "@f \") is
+        # split over two lines on the whitespace, which breaks the
+        # parsing of this element. Therefore hack around this.
+        text = text.replace(' \\', '豈\\')
+        wrapper = textwrap.TextWrapper(width=line_length)
+        text = '\n'.join([wrapper.fill(line) for line in text.splitlines()])
+        text = text.replace('豈\\', ' \\')
+        return text

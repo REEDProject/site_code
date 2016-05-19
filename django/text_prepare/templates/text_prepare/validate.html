@@ -19,18 +19,13 @@
 
     <form enctype="multipart/form-data" method="post" action="">
       {% csrf_token %}
-      {% for field in form %}
-      <div class="row">
-        <div class="small-6 columns">
-          <label {% if field.errors %}class="error"{% endif %}>{{ field.label }} {{ field }}</label>
-        </div>
-      </div>
-      {% endfor %}
-      <div class="row">
-        <div class="small-6 columns">
-          <input class="button" type="submit" value="Validate">
-        </div>
-      </div>
+      <table>
+        {{ form.as_table }}
+        <tr>
+          <td></td>
+          <td><input class="button" type="submit" value="Validate"></td>
+        </tr>
+      </table>
     </form>
   </div>
 </div>
