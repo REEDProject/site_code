@@ -11,6 +11,12 @@ from .exceptions import (TextPrepareDocumentTextExtractionError,
                          TextPrepareDocumentValidationError)
 
 
+# Constants for the number of lines of context to display before and
+# after the line on which a validation error occurs.
+CONTEXT_LINES_BEFORE = 1
+CONTEXT_LINES_AFTER = 2
+
+
 class Document:
 
     # The env argument allows for the command to run (and work) while
@@ -86,15 +92,18 @@ class Document:
             col = e.column
             line = e.line
             line_number = e.lineno
+            line_index = e.lineno - 1
             split_text = text.splitlines()
             lines = []
             lines.append('Line: {}\n'.format(line_number))
-            if line_number > 1:
-                lines.append(split_text[line_number-2])
+            if line_number > CONTEXT_LINES_BEFORE:
+                lines.extend(split_text[
+                    line_index-CONTEXT_LINES_BEFORE:line_index])
             lines.append(line)
             lines.append(' ' * col + '^')
             try:
-                lines.append(split_text[line_number])
+                lines.extend(split_text[
+                    line_index+1:line_index+1+CONTEXT_LINES_AFTER])
             except:
                 pass
             message = '\n'.join(lines)
