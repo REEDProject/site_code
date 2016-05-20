@@ -262,6 +262,21 @@ class TestDocumentConverter (TestCase):
         expected = 'PUA \uF161 punctus elevatus'
         self._check_conversion(text, expected)
 
+    def test_signed (self):
+        text = '@sn\\Thomas dyckes@sn \\'
+        expected = '<seg type="signed">Thomas dyckes</seg>'
+        self._check_conversion(text, expected)
+
+    def test_signed_centre (self):
+        text = '@snc\\Thomas dyckes@snc \\'
+        expected = '<seg type="signed" rend="centre">Thomas dyckes</seg>'
+        self._check_conversion(text, expected)
+
+    def test_signed_right (self):
+        text = '@snr\\Thomas dyckes@snr \\'
+        expected = '<seg type="signed" rend="right">Thomas dyckes</seg>'
+        self._check_conversion(text, expected)
+
     def test_small_caps (self):
         text = 'Some @k\\small caps@k \\ text'
         expected = 'Some <hi rend="smallcaps">small caps</hi> text'

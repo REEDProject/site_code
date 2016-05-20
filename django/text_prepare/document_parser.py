@@ -102,6 +102,12 @@ def _define_grammar ():
     personnel_code.setParseAction(_pa_personnel)
     right_marginale_code = pp.nestedExpr('@r\\', '@r \\', content=enclosed)
     right_marginale_code.setParseAction(_pa_right_marginale)
+    signed_code = pp.nestedExpr('@sn\\', '@sn \\', content=enclosed)
+    signed_code.setParseAction(_pa_signed)
+    signed_centre_code = pp.nestedExpr('@snc\\', '@snc \\', content=enclosed)
+    signed_centre_code.setParseAction(_pa_signed_centre)
+    signed_right_code = pp.nestedExpr('@snr\\', '@snr \\', content=enclosed)
+    signed_right_code.setParseAction(_pa_signed_right)
     small_caps_code = pp.nestedExpr('@k\\', '@k \\', content=enclosed)
     small_caps_code.setParseAction(_pa_small_caps)
     superscript_code = pp.nestedExpr('@s\\', '@s \\', content=enclosed)
@@ -109,7 +115,7 @@ def _define_grammar ():
     tab_start_code = pp.nestedExpr(pp.LineStart() + pp.Literal('@['), '!',
                                    content=enclosed)
     tab_start_code.setParseAction(_pa_tab_start)
-    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ comment_code ^ deleted_code ^ exdented_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_code ^ italic_small_caps_code ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ small_caps_code ^ superscript_code ^ tab_start_code
+    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ comment_code ^ deleted_code ^ exdented_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_code ^ italic_small_caps_code ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ signed_code ^ signed_centre_code ^ signed_right_code ^ small_caps_code ^ superscript_code ^ tab_start_code
     enclosed << pp.OneOrMore(single_codes ^ return_code ^ paired_codes ^
                              content ^ punctuation ^ xml_escape ^ ignored)
     main_heading_sub_content = pp.OneOrMore(content | punctuation | xml_escape |
@@ -140,6 +146,12 @@ def _define_grammar ():
                    pp.ZeroOrMore(white) + pp.OneOrMore(subsection)
     main_section.setParseAction(_pa_main_section)
     return pp.StringStart() + pp.OneOrMore(main_section) + pp.StringEnd()
+
+def _make_signed (s, loc, toks, rend_value=None):
+    rend = ''
+    if rend_value:
+        rend = ' rend="{}"'.format(rend_value)
+    return ['<seg type="signed"{}>'.format(rend), ''.join(toks[0]), '</seg>']
 
 def _pa_acute (s, loc, toks):
     return ['{}\N{COMBINING ACUTE ACCENT}'.format(toks[1])]
@@ -295,6 +307,15 @@ def _pa_semicolon (s, loc, toks):
     # Private Use Area; see
     # http://folk.uib.no/hnooh/mufi/specs/MUFI-Alphabetic-3-0.pdf
     return ['\uF161']
+
+def _pa_signed (s, loc, toks):
+    return _make_signed(s, loc, toks)
+
+def _pa_signed_centre (s, loc, toks):
+    return _make_signed(s, loc, toks, 'centre')
+
+def _pa_signed_right (s, loc, toks):
+    return _make_signed(s, loc, toks, 'right')
 
 def _pa_small_caps (s, loc, toks):
     return ['<hi rend="smallcaps">', ''.join(toks[0]), '</hi>']
