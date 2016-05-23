@@ -40,7 +40,7 @@
             <ul class="dropdown">
               <li><a href="{% url 'eats-home' %}">Home</a></li>
               <li><a href="{% url 'eats-search' %}">Search</a></li>
-              <li class="has-form"><form method="get" action="{% url 'eats-search' %}"><input type="search" placeholder="Search"></form></li>
+              <li class="has-form"><form method="get" action="{% url 'eats-search' %}"><input name="name" type="search" placeholder="Search"></form></li>
               <li><a href="{% url 'eats-entity-add' %}">Add an entity</a></li>
               <li><a href="{% url 'eats-administration-panel' %}">Administration</a></li>
             </ul>
