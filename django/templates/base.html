@@ -8,9 +8,12 @@
     {% block css %}
     <link rel="stylesheet" href="{% static 'foundation/css/normalize.css' %}">
     <link rel="stylesheet" href="{% static 'foundation/css/foundation.css' %}">
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/ui-lightness/jquery-ui.css" type="text/css" />
     {% endblock css %}
     {% block js %}
     <script src="{% static 'foundation/js/vendor/modernizr.js' %}"></script>
+    <script src="{% static 'foundation/js/vendor/jquery.js' %}"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     {% endblock js %}
   </head>
   <body>
@@ -60,7 +63,6 @@
     {% block content %}
     {% endblock content %}
     {% block endjs %}
-    <script src="{% static 'foundation/js/vendor/jquery.js' %}"></script>
     <script src="{% static 'foundation/js/vendor/fastclick.js' %}"></script>
     <script src="{% static 'foundation/js/foundation.min.js' %}"></script>
     <script>$(document).foundation();</script>
