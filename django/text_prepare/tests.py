@@ -13,8 +13,8 @@ class TestDocumentConverter (TestCase):
             text = '@w\\f 124 {(19 November)}\\!\n\n' + text
             expected = '<div type="subsection"><head type="sub">f 124 <hi rend="italic">(19 November)</hi></head>\n\n' + expected + '</div>'
         if main_heading:
-            text = '@h\\BPA!1532!DOU2\\!\n\n' + text
-            expected = '<div><head type="main"><name type="place_region">BPA</name> <date>1532</date></head>\n\n' + expected + '</div>'
+            text = '@h\\BPA!1532!DOU2!eng\\!\n\n' + text
+            expected = '<div xml:lang="eng"><head type="main"><name type="place_region">BPA</name> <date>1532</date></head>\n\n' + expected + '</div>'
         actual = ''.join(document_grammar.parseString(text))
         self.assertEqual(actual, expected)
 
@@ -196,6 +196,21 @@ class TestDocumentConverter (TestCase):
         expected = 'Some <hi rend="smallcaps_italic">italic small caps</hi> text'
         self._check_conversion(text, expected)
 
+    def test_lang_anglo_french (self):
+        text = 'The king said, "@xaf\\Bon soir.@xaf \\"'
+        expected = 'The king said, "<foreign xml:lang="xaf">Bon soir.</foreign>"'
+        self._check_conversion(text, expected)
+
+    def test_lang_english (self):
+        text = 'rex "@eng\\Hi.@eng \\" dixit'
+        expected = 'rex "<foreign xml:lang="eng">Hi.</foreign>" dixit'
+        self._check_conversion(text, expected)
+
+    def test_lang_latin (self):
+        text = 'The king said, "@lat\\Salve.@lat \\"'
+        expected = 'The king said, "<foreign xml:lang="lat">Salve.</foreign>"'
+        self._check_conversion(text, expected)
+
     def test_left_marginale (self):
         text = 'Hark, a @l\\left marginale note@l \\ appears'
         expected = 'Hark, a <note type="marginal" place="margin_left" n="CHANGE_ME_TO_XMLID">left marginale note</note> appears'
@@ -208,8 +223,8 @@ class TestDocumentConverter (TestCase):
             self._check_conversion(text, expected)
 
     def test_main_heading (self):
-        text = '@h\\BPA!1532!DOU2\\!\n\n@w\\Test\\!\n\nText'
-        expected = '<div><head type="main"><name type="place_region">BPA</name> <date>1532</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>'
+        text = '@h\\BPA!1532!DOU2!lat\\!\n\n@w\\Test\\!\n\nText'
+        expected = '<div xml:lang="lat"><head type="main"><name type="place_region">BPA</name> <date>1532</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>'
         self._check_conversion(text, expected, False, False)
 
     def test_OE (self):

@@ -80,6 +80,13 @@ def _define_grammar ():
     comment_code.setParseAction(_pa_comment)
     deleted_code = pp.nestedExpr('[', ']', content=enclosed)
     deleted_code.setParseAction(_pa_deleted)
+    lang_anglo_french_code = pp.nestedExpr('@xaf\\', '@xaf \\', content=enclosed)
+    lang_anglo_french_code.setParseAction(_pa_lang_anglo_french)
+    lang_english_code = pp.nestedExpr('@eng\\', '@eng \\', content=enclosed)
+    lang_english_code.setParseAction(_pa_lang_english)
+    lang_latin_code = pp.nestedExpr('@lat\\', '@lat \\', content=enclosed)
+    lang_latin_code.setParseAction(_pa_lang_latin)
+    language_codes = lang_anglo_french_code ^ lang_english_code ^ lang_latin_code
     exdented_code = pp.nestedExpr('@g\\', '@g \\', content=enclosed)
     exdented_code.setParseAction(_pa_exdented)
     footnote_code = pp.nestedExpr('@f\\', '@f \\', content=enclosed)
@@ -115,16 +122,19 @@ def _define_grammar ():
     tab_start_code = pp.nestedExpr(pp.LineStart() + pp.Literal('@['), '!',
                                    content=enclosed)
     tab_start_code.setParseAction(_pa_tab_start)
-    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ comment_code ^ deleted_code ^ exdented_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_code ^ italic_small_caps_code ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ signed_code ^ signed_centre_code ^ signed_right_code ^ small_caps_code ^ superscript_code ^ tab_start_code
+    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ comment_code ^ deleted_code ^ exdented_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_code ^ italic_small_caps_code ^ language_codes ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ signed_code ^ signed_centre_code ^ signed_right_code ^ small_caps_code ^ superscript_code ^ tab_start_code
     enclosed << pp.OneOrMore(single_codes ^ return_code ^ paired_codes ^
                              content ^ punctuation ^ xml_escape ^ ignored)
     main_heading_sub_content = pp.OneOrMore(content | punctuation | xml_escape |
                                             ignored)
+    language_code = pp.oneOf('lat eng xaf')
     main_heading_content = main_heading_sub_content + \
                            pp.Literal('!').suppress() + \
                            main_heading_sub_content + \
                            pp.Literal('!').suppress() + \
-                           main_heading_sub_content
+                           main_heading_sub_content + \
+                           pp.Literal('!').suppress() + \
+                           language_code
     main_heading_code = pp.nestedExpr('@h\\', '\\!',
                                       content=main_heading_content)
     main_heading_code.setParseAction(_pa_main_heading)
@@ -146,6 +156,10 @@ def _define_grammar ():
                    pp.ZeroOrMore(white) + pp.OneOrMore(subsection)
     main_section.setParseAction(_pa_main_section)
     return pp.StringStart() + pp.OneOrMore(main_section) + pp.StringEnd()
+
+def _make_foreign (lang_code, toks):
+    return ['<foreign xml:lang="{}">{}</foreign>'.format(
+        lang_code, ''.join(toks[0]))]
 
 def _make_signed (s, loc, toks, rend_value=None):
     rend = ''
@@ -256,6 +270,15 @@ def _pa_italic (s, loc, toks):
 def _pa_italic_small_caps (s, loc, toks):
     return ['<hi rend="smallcaps_italic">', ''.join(toks[0]), '</hi>']
 
+def _pa_lang_anglo_french (s, loc, toks):
+    return _make_foreign('xaf', toks)
+
+def _pa_lang_english (s, loc, toks):
+    return _make_foreign('eng', toks)
+
+def _pa_lang_latin (s, loc, toks):
+    return _make_foreign('lat', toks)
+
 def _pa_left_marginale (s, loc, toks):
     return ['<note type="marginal" place="margin_left" n="CHANGE_ME_TO_XMLID">',
             ''.join(toks[0]), '</note>']
@@ -264,11 +287,11 @@ def _pa_macron (s, loc, toks):
     return ['{}\N{COMBINING MACRON}'.format(toks[1])]
 
 def _pa_main_heading (s, loc, toks):
-    return ['<head type="main"><name type="place_region">', toks[0][0],
-            '</name> <date>', toks[0][1], '</date></head>']
+    place, date, code, language_code = toks[0]
+    return [language_code, '<head type="main"><name type="place_region">{}</name> <date>{}</date></head>'.format(place, date)]
 
 def _pa_main_section (s, loc, toks):
-    return ['<div>', ''.join(toks), '</div>']
+    return ['<div xml:lang="{}">{}</div>'.format(toks[0], ''.join(toks[1:]))]
 
 def _pa_oe (s, loc, toks):
     return ['\N{LATIN SMALL LIGATURE OE}']
