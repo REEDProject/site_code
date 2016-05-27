@@ -226,6 +226,9 @@ class TestDocumentConverter (TestCase):
         text = '@h\\BPA!1532!DOU2!lat\\!\n\n@w\\Test\\!\n\nText'
         expected = '<div xml:lang="lat"><head type="main"><name type="place_region">BPA</name> <date>1532</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>'
         self._check_conversion(text, expected, False, False)
+        text = '@h\\LEE!1630/1!V151!lat\\!\n\n@w\\Test\\!\n\nText'
+        expected = '<div xml:lang="lat"><head type="main"><name type="place_region">LEE</name> <date>1630/1</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>'
+        self._check_conversion(text, expected, False, False)
 
     def test_OE (self):
         text = 'd@OEr'

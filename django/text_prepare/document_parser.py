@@ -127,6 +127,7 @@ def _define_grammar ():
                              content ^ punctuation ^ xml_escape ^ ignored)
     main_heading_sub_content = pp.OneOrMore(content | punctuation | xml_escape |
                                             ignored)
+    main_heading_sub_content.setParseAction(_pa_main_heading_sub_content)
     language_code = pp.oneOf('lat eng xaf')
     main_heading_content = main_heading_sub_content + \
                            pp.Literal('!').suppress() + \
@@ -289,6 +290,9 @@ def _pa_macron (s, loc, toks):
 def _pa_main_heading (s, loc, toks):
     place, date, code, language_code = toks[0]
     return [language_code, '<head type="main"><name type="place_region">{}</name> <date>{}</date></head>'.format(place, date)]
+
+def _pa_main_heading_sub_content (s, loc, toks):
+    return [''.join(toks)]
 
 def _pa_main_section (s, loc, toks):
     return ['<div xml:lang="{}">{}</div>'.format(toks[0], ''.join(toks[1:]))]
