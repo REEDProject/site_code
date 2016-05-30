@@ -80,13 +80,56 @@ def _define_grammar ():
     comment_code.setParseAction(_pa_comment)
     deleted_code = pp.nestedExpr('[', ']', content=enclosed)
     deleted_code.setParseAction(_pa_deleted)
-    lang_anglo_french_code = pp.nestedExpr('@xaf\\', '@xaf \\', content=enclosed)
+    lang_ancient_greek_code = pp.nestedExpr('@grc\\', '@grc \\',
+                                           content=enclosed)
+    lang_ancient_greek_code.setParseAction(_pa_lang_ancient_greek)
+    lang_anglo_french_code = pp.nestedExpr('@xaf\\', '@xaf \\',
+                                           content=enclosed)
     lang_anglo_french_code.setParseAction(_pa_lang_anglo_french)
+    lang_anglo_norman_code = pp.nestedExpr('@xno\\', '@xno \\',
+                                           content=enclosed)
+    lang_anglo_norman_code.setParseAction(_pa_lang_anglo_norman)
+    lang_cornish_code = pp.nestedExpr('@cor\\', '@cor \\', content=enclosed)
+    lang_cornish_code.setParseAction(_pa_lang_cornish)
     lang_english_code = pp.nestedExpr('@eng\\', '@eng \\', content=enclosed)
     lang_english_code.setParseAction(_pa_lang_english)
+    lang_french_code = pp.nestedExpr('@fra\\', '@fra \\', content=enclosed)
+    lang_french_code.setParseAction(_pa_lang_french)
+    lang_german_code = pp.nestedExpr('@deu\\', '@deu \\', content=enclosed)
+    lang_german_code.setParseAction(_pa_lang_german)
+    lang_italian_code = pp.nestedExpr('@ita\\', '@ita \\', content=enclosed)
+    lang_italian_code.setParseAction(_pa_lang_italian)
     lang_latin_code = pp.nestedExpr('@lat\\', '@lat \\', content=enclosed)
     lang_latin_code.setParseAction(_pa_lang_latin)
-    language_codes = lang_anglo_french_code ^ lang_english_code ^ lang_latin_code
+    lang_middle_cornish_code = pp.nestedExpr('@cnx\\', '@cnx \\',
+                                             content=enclosed)
+    lang_middle_cornish_code.setParseAction(_pa_lang_middle_cornish)
+    lang_middle_high_german_code = pp.nestedExpr('@gmh\\', '@gmh \\',
+                                                 content=enclosed)
+    lang_middle_high_german_code.setParseAction(_pa_lang_middle_high_german)
+    lang_middle_low_german_code = pp.nestedExpr('@gml\\', '@gml \\',
+                                                content=enclosed)
+    lang_middle_low_german_code.setParseAction(_pa_lang_middle_low_german)
+    lang_middle_welsh_code = pp.nestedExpr('@wlm\\', '@wlm \\',
+                                           content=enclosed)
+    lang_middle_welsh_code.setParseAction(_pa_lang_middle_welsh)
+    lang_portuguese_code = pp.nestedExpr('@por\\', '@por \\', content=enclosed)
+    lang_portuguese_code.setParseAction(_pa_lang_portuguese)
+    lang_scottish_gaelic_code = pp.nestedExpr('@gla\\', '@gla \\',
+                                              content=enclosed)
+    lang_scottish_gaelic_code.setParseAction(_pa_lang_scottish_gaelic)
+    lang_spanish_code = pp.nestedExpr('@spa\\', '@spa \\', content=enclosed)
+    lang_spanish_code.setParseAction(_pa_lang_spanish)
+    lang_welsh_code = pp.nestedExpr('@cym\\', '@cym \\', content=enclosed)
+    lang_welsh_code.setParseAction(_pa_lang_welsh)
+    language_codes = (lang_ancient_greek_code ^ lang_anglo_french_code ^
+                      lang_anglo_norman_code ^ lang_cornish_code ^
+                      lang_english_code ^ lang_french_code ^ lang_german_code ^
+                      lang_italian_code ^ lang_latin_code ^
+                      lang_middle_cornish_code ^ lang_middle_high_german_code ^
+                      lang_middle_low_german_code ^ lang_middle_welsh_code ^
+                      lang_portuguese_code ^ lang_scottish_gaelic_code ^
+                      lang_spanish_code ^ lang_welsh_code)
     exdented_code = pp.nestedExpr('@g\\', '@g \\', content=enclosed)
     exdented_code.setParseAction(_pa_exdented)
     footnote_code = pp.nestedExpr('@f\\', '@f \\', content=enclosed)
@@ -271,14 +314,56 @@ def _pa_italic (s, loc, toks):
 def _pa_italic_small_caps (s, loc, toks):
     return ['<hi rend="smallcaps_italic">', ''.join(toks[0]), '</hi>']
 
+def _pa_lang_ancient_greek (s, loc, toks):
+    return _make_foreign('grc', toks)
+
 def _pa_lang_anglo_french (s, loc, toks):
     return _make_foreign('xaf', toks)
+
+def _pa_lang_anglo_norman (s, loc, toks):
+    return _make_foreign('xno', toks)
+
+def _pa_lang_cornish (s, loc, toks):
+    return _make_foreign('cor', toks)
 
 def _pa_lang_english (s, loc, toks):
     return _make_foreign('eng', toks)
 
+def _pa_lang_french (s, loc, toks):
+    return _make_foreign('fra', toks)
+
+def _pa_lang_german (s, loc, toks):
+    return _make_foreign('deu', toks)
+
+def _pa_lang_italian (s, loc, toks):
+    return _make_foreign('ita', toks)
+
 def _pa_lang_latin (s, loc, toks):
     return _make_foreign('lat', toks)
+
+def _pa_lang_middle_cornish (s, loc, toks):
+    return _make_foreign('cnx', toks)
+
+def _pa_lang_middle_high_german (s, loc, toks):
+    return _make_foreign('gmh', toks)
+
+def _pa_lang_middle_low_german (s, loc, toks):
+    return _make_foreign('gml', toks)
+
+def _pa_lang_middle_welsh (s, loc, toks):
+    return _make_foreign('wlm', toks)
+
+def _pa_lang_portuguese (s, loc, toks):
+    return _make_foreign('por', toks)
+
+def _pa_lang_scottish_gaelic (s, loc, toks):
+    return _make_foreign('gla', toks)
+
+def _pa_lang_spanish (s, loc, toks):
+    return _make_foreign('spa', toks)
+
+def _pa_lang_welsh (s, loc, toks):
+    return _make_foreign('cym', toks)
 
 def _pa_left_marginale (s, loc, toks):
     return ['<note type="marginal" place="margin_left" n="CHANGE_ME_TO_XMLID">',
