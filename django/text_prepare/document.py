@@ -53,9 +53,10 @@ class Document:
         """
         with tempfile.TemporaryDirectory() as env_fh:
             command = self.convert_command.format(env_fh, file_path)
+            env = {'LC_ALL': 'en_US.UTF-8', 'LANGUAGE': 'en_US.UTF-8'}
             message = 'Failed to extract text from the document: {}'
             try:
-                text = subprocess.check_output(shlex.split(command))
+                text = subprocess.check_output(shlex.split(command), env=env)
             except subprocess.CalledProcessError as e:
                 raise TextPrepareDocumentTextExtractionError(message.format(
                     e.output))
