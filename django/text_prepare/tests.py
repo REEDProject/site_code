@@ -196,9 +196,9 @@ class TestDocumentConverter (TestCase):
         expected = 'Some <hi rend="smallcaps_italic">italic small caps</hi> text'
         self._check_conversion(text, expected)
 
-    def test_lang_anglo_french (self):
-        text = 'The king said, "@xaf\\Bon soir.@xaf \\"'
-        expected = 'The king said, "<foreign xml:lang="xaf">Bon soir.</foreign>"'
+    def test_lang_anglo_norman (self):
+        text = 'The king said, "@xno\\Bon soir.@xno \\"'
+        expected = 'The king said, "<foreign xml:lang="xno">Bon soir.</foreign>"'
         self._check_conversion(text, expected)
 
     def test_lang_english (self):

@@ -83,9 +83,6 @@ def _define_grammar ():
     lang_ancient_greek_code = pp.nestedExpr('@grc\\', '@grc \\',
                                            content=enclosed)
     lang_ancient_greek_code.setParseAction(_pa_lang_ancient_greek)
-    lang_anglo_french_code = pp.nestedExpr('@xaf\\', '@xaf \\',
-                                           content=enclosed)
-    lang_anglo_french_code.setParseAction(_pa_lang_anglo_french)
     lang_anglo_norman_code = pp.nestedExpr('@xno\\', '@xno \\',
                                            content=enclosed)
     lang_anglo_norman_code.setParseAction(_pa_lang_anglo_norman)
@@ -122,7 +119,7 @@ def _define_grammar ():
     lang_spanish_code.setParseAction(_pa_lang_spanish)
     lang_welsh_code = pp.nestedExpr('@cym\\', '@cym \\', content=enclosed)
     lang_welsh_code.setParseAction(_pa_lang_welsh)
-    language_codes = (lang_ancient_greek_code ^ lang_anglo_french_code ^
+    language_codes = (lang_ancient_greek_code ^
                       lang_anglo_norman_code ^ lang_cornish_code ^
                       lang_english_code ^ lang_french_code ^ lang_german_code ^
                       lang_italian_code ^ lang_latin_code ^
@@ -316,9 +313,6 @@ def _pa_italic_small_caps (s, loc, toks):
 
 def _pa_lang_ancient_greek (s, loc, toks):
     return _make_foreign('grc', toks)
-
-def _pa_lang_anglo_french (s, loc, toks):
-    return _make_foreign('xaf', toks)
 
 def _pa_lang_anglo_norman (s, loc, toks):
     return _make_foreign('xno', toks)
