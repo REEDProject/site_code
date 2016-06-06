@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
+           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <!-- Imports stylesheet to convert Solr results into HTML. -->
+  <xsl:import href="cocoon://_internal/template/xsl/stylesheets/solr/results-to-html.xsl" />
+
+  <kiln:parent>
+    <xi:include href="base.xml" />
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title">
+      <kiln:super />
+      <xsl:text>Search</xsl:text>
+    </kiln:block>
+
+    <kiln:block name="page-heading">
+      <kiln:super />
+      <xsl:text>Search</xsl:text>
+    </kiln:block>
+
+    <kiln:block name="content">
+      <div class="row">
+        <div class="large-4 columns">
+          <form action="." method="get">
+            <input name="q" placeholder="Search terms" type="search">
+              <xsl:attribute name="value">
+                <xsl:value-of select="/aggregation/response/lst[@name='responseHeader']/lst[@name='params']/str[@name='q']" />
+              </xsl:attribute>
+            </input>
+          </form>
+          <!-- List of currently applied facets. -->
+          <xsl:apply-templates mode="search-results" select="/aggregation/response/lst[@name='responseHeader']/lst[@name='params']/*[@name='fq']" />
+          <!-- List available facets. -->
+          <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']"
+                               mode="search-results" />
+        </div>
+        <div class="large-8 columns">
+          <xsl:apply-templates select="/aggregation/response/result"
+                               mode="search-results" />
+        </div>
+      </div>
+    </kiln:block>
+  </kiln:child>
+
+</kiln:root>

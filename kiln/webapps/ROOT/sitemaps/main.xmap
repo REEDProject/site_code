@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<!-- Project main sitemap. -->
+<map:sitemap xmlns:map="http://apache.org/cocoon/sitemap/1.0">
+
+  <map:views>
+    <map:view from-label="content" name="content">
+      <map:serialize type="xml" />
+    </map:view>
+
+    <map:view from-label="tei" name="tei">
+      <map:serialize type="xml" />
+    </map:view>
+  </map:views>
+
+  <map:pipelines>
+    <!-- Mount sub-sitemaps. -->
+    <map:pipeline id="local-mount">
+      <!-- Mount a sitemap for any admin URLs, such as editorial
+           processes like Schematron validation. -->
+      <map:match pattern="admin/**">
+        <map:mount check-reload="yes" src="admin.xmap" uri-prefix="admin/" />
+      </map:match>
+      <!-- Mount a sitemap for (potentially) project-specific internal
+           pipelines. -->
+      <map:match pattern="internal/**">
+        <map:mount check-reload="yes" src="internal.xmap"
+                   uri-prefix="internal/" />
+      </map:match>
+    </map:pipeline>
+
+    <map:pipeline id="local-images">
+      <map:match id="local-images-gif" pattern="images/**.gif">
+        <map:read mime-type="image/gif" src="../content/images/{1}.gif" />
+      </map:match>
+
+      <map:match id="local-images-jpeg" pattern="images/**.jpg">
+        <map:read mime-type="image/jpeg" src="../content/images/{1}.jpg" />
+      </map:match>
+
+      <map:match id="local-images-png" pattern="images/**.png">
+        <map:read mime-type="image/png" src="../content/images/{1}.png" />
+      </map:match>
+    </map:pipeline>
+
+    <!-- Main display pipeline. -->
+    <map:pipeline type="noncaching">
+      <!-- Home page (at /). -->
+      <map:match id="local-home-page" pattern="">
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="cocoon://_internal/menu/main.xml" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/index.xsl" />
+        <map:serialize />
+      </map:match>
+
+      <!-- Search. -->
+      <map:match id="local-search" pattern="search/">
+        <map:aggregate element="aggregation">
+          <map:part src="cocoon://_internal/menu/main.xml?url=search/" />
+          <map:part src="cocoon://internal/search/facet_query.xml" />
+          <map:part src="cocoon://_internal/request.xml" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/search.xsl" />
+        <map:serialize />
+      </map:match>
+
+      <!-- TEI texts. -->
+      <map:match id="local-tei-index-display" pattern="text/">
+        <map:aggregate element="aggregation">
+          <!-- Use TEI metadata extracted directly from the
+               files. This would be better done with a Solr query
+               after indexing, but for demonstration and quick start
+               purposes, use this method. -->
+          <map:part src="cocoon://internal/metadata/files.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=text/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/text-index.xsl" />
+        <map:serialize />
+      </map:match>
+
+      <map:match id="local-tei-display-html" pattern="text/**.html">
+        <map:aggregate element="aggregation" label="content">
+          <map:part label="tei" src="cocoon://internal/tei/preprocess/{1}.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=text/{1}.html" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/tei.xsl" />
+        <map:serialize />
+      </map:match>
+
+      <map:match id="local-tei-display-xml" pattern="text/**.xml">
+        <map:read mime-type="application/tei+xml"
+                  src="../content/xml/tei/{1}.xml" />
+      </map:match>
+
+      <map:match id="local-tei-display-pdf" pattern="text/**.pdf">
+        <map:generate src="cocoon://internal/tei/preprocess/{1}/{2}.xml"
+                      label="tei" />
+        <map:transform src="cocoon://_internal/template/pdf.xsl" />
+        <map:serialize type="fo2pdf" />
+      </map:match>
+
+      <map:match id="local-tei-display-epub" pattern="text/**.epub">
+        <map:generate src="cocon://internal/tei/preprocess/{1}/{2}.xml"
+                      label="tei" />
+        <map:transform src="cocoon://_internal/template/epub.xsl" />
+        <map:serialize type="xhtml" />
+      </map:match>
+
+      <!-- Example of providing content in more than one language. -->
+      <map:match id="local-generic-multilingual-html" pattern="*/**.html">
+        <!-- {1} is a language code. -->
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="cocoon://_internal/menu/{1}/{1}-main.xml?url={2}.html" />
+          <map:part src="cocoon://internal/metadata/files.xml" />
+          <map:part src="cocoon://internal/tei/preprocess/{1}/{2}.xml"
+                    label="tei" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/tei.xsl" />
+        <map:serialize />
+      </map:match>
+    </map:pipeline>
+
+    <!-- Kiln as backend pipeline. -->
+    <map:pipeline>
+      <!-- TEI content provided as HTML with internal metadata. -->
+      <map:match id="local-tei-backend-xml" pattern="text/*.xml">
+        <map:generate src="cocoon://internal/tei/preprocess/{1}.xml"
+                      label="tei" />
+        <map:transform src="cocoon://_internal/template/backend_tei.xsl" />
+        <map:serialize type="xml_nodecl" />
+      </map:match>
+    </map:pipeline>
+
+    <!-- Error handling, making use of the templating system for
+         errors that fit within the site's design. If this throws any
+         errors, handling will fall back to the default plain error
+         handling in config.xmap. -->
+    <map:handle-errors>
+      <map:generate type="exception" />
+      <map:select type="exception">
+        <map:when test="not-found">
+          <map:transform src="../stylesheets/error/add-not-found-messages.xsl" />
+        </map:when>
+      </map:select>
+      <map:transform src="cocoon://_internal/template/error.xsl">
+        <map:parameter name="debug" value="{global:debug}" />
+      </map:transform>
+      <map:serialize />
+    </map:handle-errors>
+  </map:pipelines>
+</map:sitemap>
