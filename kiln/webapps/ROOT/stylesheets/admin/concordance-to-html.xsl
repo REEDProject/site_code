@@ -19,6 +19,7 @@
       <thead>
         <tr>
           <th scope="col">Word</th>
+          <th scope="col">Language</th>
           <th scope="col">Count</th>
           <th scope="col">Citations</th>
         </tr>
@@ -31,11 +32,8 @@
 
   <xsl:template match="entry">
     <tr>
-      <td>
-        <xsl:apply-templates select="w" />
-        <br/>
-        <xsl:apply-templates select="langs" />
-      </td>
+      <td><xsl:apply-templates select="w" /></td>
+      <td><xsl:apply-templates select="lang" /></td>
       <td><xsl:apply-templates select="count" /></td>
       <td><xsl:apply-templates select="cits" /></td>
     </tr>

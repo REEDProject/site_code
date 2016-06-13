@@ -13,23 +13,25 @@
       <xsl:variable name="exclusions" select="exclusions/words/w" />
       <xsl:for-each-group select="word_lists/word_list/w"
                           group-by="@lemma">
-        <xsl:variable name="lemma" select="@lemma" />
-        <xsl:variable name="langs"
-                      select="distinct-values(current-group()/@xml:lang)" />
-        <xsl:if test="not($lemma = $exclusions[not(@xml:lang)])">
-          <entry>
-            <w><xsl:value-of select="$lemma" /></w>
-            <count><xsl:value-of select="count(current-group())" /></count>
-            <langs><xsl:value-of select="$langs" separator=", " /></langs>
-            <cits>
-              <xsl:for-each select="current-group()">
-                <cit>
-                  <xsl:apply-templates select="." mode="citation" />
-                </cit>
-              </xsl:for-each>
-            </cits>
-          </entry>
-        </xsl:if>
+        <xsl:for-each-group select="current-group()" group-by="@xml:lang">
+          <xsl:variable name="lemma" select="@lemma" />
+          <xsl:variable name="lang" select="current-group()/@xml:lang" />
+          <xsl:if test="not($lemma = $exclusions[not(@xml:lang)] or
+                        $lemma = $exclusions[@xml:lang=$lang])">
+            <entry>
+              <w><xsl:value-of select="$lemma" /></w>
+              <count><xsl:value-of select="count(current-group())" /></count>
+              <lang><xsl:value-of select="$lang" /></lang>
+              <cits>
+                <xsl:for-each select="current-group()">
+                  <cit>
+                    <xsl:apply-templates select="." mode="citation" />
+                  </cit>
+                </xsl:for-each>
+              </cits>
+            </entry>
+          </xsl:if>
+        </xsl:for-each-group>
       </xsl:for-each-group>
     </concordance>
   </xsl:template>

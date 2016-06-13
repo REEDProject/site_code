@@ -36,7 +36,7 @@
       <script src="{$kiln:assets-path}/scripts/jquery.tablesorter.js" />
       <script>
         <xsl:text>$(document).ready(function() {$("#concordance").tablesorter({
-        headers: {2: {sorter: false}}
+        headers: {3: {sorter: false}}
         });});</xsl:text>
       </script>
     </kiln:block>
