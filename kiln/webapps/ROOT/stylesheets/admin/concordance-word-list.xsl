@@ -14,7 +14,7 @@
 
   <xsl:template match="text()[normalize-space()]">
     <xsl:variable name='lang' select="ancestor::*[normalize-space(@xml:lang)][1]/@xml:lang"/>
-    <xsl:analyze-string select="." regex="[\p{{L}}\p{{N}}]+">
+    <xsl:analyze-string select="." regex="[\p{{L}}]+">
       <xsl:matching-substring>
         <xsl:element name="w">
           <xsl:attribute name="xml:lang" select="$lang" />
