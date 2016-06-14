@@ -168,7 +168,8 @@ def _define_grammar ():
     main_heading_sub_content = pp.OneOrMore(content | punctuation | xml_escape |
                                             ignored)
     main_heading_sub_content.setParseAction(_pa_main_heading_sub_content)
-    language_code = pp.oneOf('lat eng xaf')
+    language_code = pp.oneOf('cnx cor cym deu eng fra gla gmh gml grc ita lat '
+                             'por spa wlm xno')
     main_heading_content = main_heading_sub_content + \
                            pp.Literal('!').suppress() + \
                            main_heading_sub_content + \
