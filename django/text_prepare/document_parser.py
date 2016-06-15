@@ -8,7 +8,7 @@ def _define_grammar ():
     content.setWhitespaceChars('')
     content.setDefaultWhitespaceChars('')
     white = pp.Word(' ' + '\n')
-    punctuation = pp.oneOf('. , ; : \' " ( ) * / # $ % + - ? | –')
+    punctuation = pp.oneOf('. , ; : \' " ( ) * / # $ % + - ? | – ‑')
     ignored = pp.oneOf('\ufeff').suppress() # zero width no-break space
     # This is an awful cludge for < to get around my inability to find
     # a way for pyparsing to handle tables correctly (despite
