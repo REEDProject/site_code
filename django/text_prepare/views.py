@@ -4,10 +4,11 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt, csrf_protect
 
+from .word_updater import update_word
 from .document import Document
 from .exceptions import (TextPrepareDocumentError,
                          TextPrepareDocumentValidationError)
-from .forms import UploadDocumentForm
+from .forms import BasicUploadDocumentForm, UploadDocumentForm
 
 
 @login_required
@@ -39,6 +40,26 @@ def _convert (request):
         form = UploadDocumentForm()
     context['form'] = form
     return render(request, 'text_prepare/convert.html', context)
+
+@login_required
+@csrf_exempt
+def update (request):
+    # Ensure that any uploaded file is stored as a temporary file.
+    request.upload_handlers = [TemporaryFileUploadHandler()]
+    return _update(request)
+
+@csrf_protect
+def _update (request):
+    if request.method == 'POST':
+        form = BasicUploadDocumentForm(request.POST, request.FILES)
+        if form.is_valid():
+            doc = request.FILES['document']
+            updated_doc = update_word(doc.temporary_file_path())
+            return HttpResponse(updated_doc, content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
+    else:
+        form = BasicUploadDocumentForm()
+    context = {'form': form}
+    return render(request, 'text_prepare/update.html', context)
 
 @login_required
 @csrf_exempt

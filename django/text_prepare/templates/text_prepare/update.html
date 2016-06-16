@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Update Word document</h1>
+
+    <p>Returns the supplied Word document, with the @-code markup
+    converted to the required form (from "@foo\...@foo \" to
+    "@foo\...@foo/").</p>
+
+    <p>Note that the returned Word document is a .docx file.</p>
+
+    <form enctype="multipart/form-data" method="post" action="">
+      {% csrf_token %}
+      <table>
+        {{ form.as_table }}
+        <tr>
+          <td></td>
+          <td><input class="button" type="submit" value="Update"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+{% endblock content %}

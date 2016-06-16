@@ -13,6 +13,14 @@ class TextPrepareDocumentTextExtractionError (TextPrepareDocumentError):
     pass
 
 
+class TextPrepareDocumentUpdateError (TextPrepareDocumentError):
+
+    """Exception class for errors pertaining to updating a Word
+    document."""
+
+    pass
+
+
 class TextPrepareDocumentValidationError (TextPrepareDocumentError):
 
     """Exception class for document validation errors."""

@@ -22,7 +22,7 @@ class Document:
     # The env argument allows for the command to run (and work) while
     # an interactive instance of LibreOffice is open.
     convert_command = '''soffice -env:UserInstallation=file://{} --headless
-                         --convert-to txt:Text --cat {}'''
+                         --cat {}'''
 
     def __init__ (self, file_path, line_length):
         self._file_path = file_path

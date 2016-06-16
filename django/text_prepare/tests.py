@@ -40,12 +40,12 @@ class TestDocumentConverter (TestCase):
         self._check_conversion(text, expected)
 
     def test_bold (self):
-        text = 'some @e\\bold@e \\ text'
+        text = 'some @e\\bold@e/ text'
         expected = 'some <hi rend="bold">bold</hi> text'
         self._check_conversion(text, expected)
 
     def test_bold_italic (self):
-        text = 'some @j\\bold italic@j \\ text'
+        text = 'some @j\\bold italic@j/ text'
         expected = 'some <hi rend="bold_italic">bold italic</hi> text'
         self._check_conversion(text, expected)
 
@@ -70,7 +70,7 @@ class TestDocumentConverter (TestCase):
         self._check_conversion(text, expected)
 
     def test_centred (self):
-        text = 'some @m\\centred@m \\ text'
+        text = 'some @m\\centred@m/ text'
         expected = 'some <hi rend="center">centred</hi> text'
         self._check_conversion(text, expected)
 
@@ -86,7 +86,7 @@ class TestDocumentConverter (TestCase):
         self._check_conversion(text, expected)
 
     def test_comment (self):
-        text = 'some @xc\\commented out@xc \\ text'
+        text = 'some @xc\\commented out@xc/ text'
         expected = 'some <!-- commented out --> text'
         self._check_conversion(text, expected)
 
@@ -148,12 +148,12 @@ class TestDocumentConverter (TestCase):
         self._check_conversion(text, expected)
 
     def test_exdented (self):
-        text = '@g\\Exdented block of text.@g \\'
+        text = '@g\\Exdented block of text.@g/'
         expected = '<ab type="body_p_exdented">Exdented block of text.</ab>'
         self._check_conversion(text, expected)
 
     def test_footnote (self):
-        text = '@f\\our Churche: {St Nicholas}@f \\'
+        text = '@f\\our Churche: {St Nicholas}@f/'
         expected = '<note type="foot">our Churche: <hi rend="italic">St Nicholas</hi></note>'
         self._check_conversion(text, expected)
 
@@ -164,25 +164,25 @@ class TestDocumentConverter (TestCase):
             self._check_conversion(text, expected)
 
     def test_indented (self):
-        text = '@p\\Indented block of text.@p \\'
+        text = '@p\\Indented block of text.@p/'
         expected = '<ab type="body_p_indented">Indented block of text.</ab>'
         self._check_conversion(text, expected)
 
     def test_interlineation_above (self):
-        text = 'Some @a\\interlinearly above@a \\ text'
+        text = 'Some @a\\interlinearly above@a/ text'
         expected = 'Some <add place="above">interlinearly above</add> text'
         self._check_conversion(text, expected)
 
     def test_interlineation_below (self):
-        text = 'Some @b\\interlinearly below@b \\ text'
+        text = 'Some @b\\interlinearly below@b/ text'
         expected = 'Some <add place="below">interlinearly below</add> text'
         self._check_conversion(text, expected)
 
     def test_interpolation (self):
-        text = 'Some @i\\interpolated@i \\ text'
+        text = 'Some @i\\interpolated@i/ text'
         expected = 'Some <add><handShift />interpolated</add> text'
         self._check_conversion(text, expected)
-        nested_text = 'Some @i\\@i\\really@i \\ interpolated@i \\ text'
+        nested_text = 'Some @i\\@i\\really@i/ interpolated@i/ text'
         nested_expected = 'Some <add><handShift /><add><handShift />really</add> interpolated</add> text'
         self._check_conversion(nested_text, nested_expected)
 
@@ -192,27 +192,27 @@ class TestDocumentConverter (TestCase):
         self._check_conversion(text, expected)
 
     def test_italic_small_caps (self):
-        text = 'Some @q\\italic small caps@q \\ text'
+        text = 'Some @q\\italic small caps@q/ text'
         expected = 'Some <hi rend="smallcaps_italic">italic small caps</hi> text'
         self._check_conversion(text, expected)
 
     def test_lang_anglo_norman (self):
-        text = 'The king said, "@xno\\Bon soir.@xno \\"'
+        text = 'The king said, "@xno\\Bon soir.@xno/"'
         expected = 'The king said, "<foreign xml:lang="xno">Bon soir.</foreign>"'
         self._check_conversion(text, expected)
 
     def test_lang_english (self):
-        text = 'rex "@eng\\Hi.@eng \\" dixit'
+        text = 'rex "@eng\\Hi.@eng/" dixit'
         expected = 'rex "<foreign xml:lang="eng">Hi.</foreign>" dixit'
         self._check_conversion(text, expected)
 
     def test_lang_latin (self):
-        text = 'The king said, "@lat\\Salve.@lat \\"'
+        text = 'The king said, "@lat\\Salve.@lat/"'
         expected = 'The king said, "<foreign xml:lang="lat">Salve.</foreign>"'
         self._check_conversion(text, expected)
 
     def test_left_marginale (self):
-        text = 'Hark, a @l\\left marginale note@l \\ appears'
+        text = 'Hark, a @l\\left marginale note@l/ appears'
         expected = 'Hark, a <note type="marginal" place="margin_left" n="CHANGE_ME_TO_XMLID">left marginale note</note> appears'
         self._check_conversion(text, expected)
 
@@ -246,7 +246,7 @@ class TestDocumentConverter (TestCase):
         self._check_conversion(text, expected)
 
     def test_personnel (self):
-        text = 'No one expects @x\\personnel@x \\'
+        text = 'No one expects @x\\personnel@x/'
         expected = 'No one expects <note type="eccles_court">personnel</note>'
         self._check_conversion(text, expected)
 
@@ -266,7 +266,7 @@ class TestDocumentConverter (TestCase):
         self._check_conversion(text, expected)
 
     def test_right_marginale (self):
-        text = 'Hark, a @r\\right marginale note@r \\ appears'
+        text = 'Hark, a @r\\right marginale note@r/ appears'
         expected = 'Hark, a <note type="marginal" place="margin_right" n="CHANGE_ME_TO_XMLID">right marginale note</note> appears'
         self._check_conversion(text, expected)
 
@@ -281,22 +281,22 @@ class TestDocumentConverter (TestCase):
         self._check_conversion(text, expected)
 
     def test_signed (self):
-        text = '@sn\\Thomas dyckes@sn \\'
+        text = '@sn\\Thomas dyckes@sn/'
         expected = '<seg type="signed">Thomas dyckes</seg>'
         self._check_conversion(text, expected)
 
     def test_signed_centre (self):
-        text = '@snc\\Thomas dyckes@snc \\'
+        text = '@snc\\Thomas dyckes@snc/'
         expected = '<seg type="signed" rend="centre">Thomas dyckes</seg>'
         self._check_conversion(text, expected)
 
     def test_signed_right (self):
-        text = '@snr\\Thomas dyckes@snr \\'
+        text = '@snr\\Thomas dyckes@snr/'
         expected = '<seg type="signed" rend="right">Thomas dyckes</seg>'
         self._check_conversion(text, expected)
 
     def test_small_caps (self):
-        text = 'Some @k\\small caps@k \\ text'
+        text = 'Some @k\\small caps@k/ text'
         expected = 'Some <hi rend="smallcaps">small caps</hi> text'
         self._check_conversion(text, expected)
 
@@ -313,7 +313,7 @@ class TestDocumentConverter (TestCase):
         self._check_conversion(text, expected, True, False)
 
     def test_superscript (self):
-        text = 'Some @s\\superscripted@s \\ text'
+        text = 'Some @s\\superscripted@s/ text'
         expected = 'Some <hi rend="superscript">superscripted</hi> text'
         self._check_conversion(text, expected)
 
@@ -323,7 +323,7 @@ class TestDocumentConverter (TestCase):
         self._check_conversion(text, expected)
 
     def test_table_with_comment (self):
-        text = '<t>\n<r>\n<c></c>\n<c>Some</c>\n@xc\\A comment@xc \\\n<c>text</c>\n</r>\n</t>'
+        text = '<t>\n<r>\n<c></c>\n<c>Some</c>\n@xc\\A comment@xc/\n<c>text</c>\n</r>\n</t>'
         expected = '<table>\n<row>\n<cell></cell>\n<cell>Some</cell>\n<!-- A comment -->\n<cell>text</cell>\n</row>\n</table>'
         self._check_conversion(text, expected)
 
@@ -374,6 +374,6 @@ class TestDocumentConverter (TestCase):
     def test_nesting (self):
         # This is impossible to comprehensively test. Start with a few
         # examples and add more as problems are discovered.
-        text = '@l\\@k\\ac@k \\or @k\\a@k \\@l \\!'
+        text = '@l\\@k\\ac@k/or @k\\a@k/@l/!'
         expected = '<note type="marginal" place="margin_left" n="CHANGE_ME_TO_XMLID"><hi rend="smallcaps">ac</hi>or <hi rend="smallcaps">a</hi></note><lb />'
         self._check_conversion(text, expected)
