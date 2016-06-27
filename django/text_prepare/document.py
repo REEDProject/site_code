@@ -34,7 +34,7 @@ class Document:
         return self._convert(results)
 
     def _convert (self, results):
-        text = '<TEI xmlns="http://www.tei-c.org/ns/1.0">{}</TEI>'.format(
+        text = '<TEI xmlns="http://www.tei-c.org/ns/1.0"><text><group>{}</group></text></TEI>'.format(
             ''.join(results))
         return unicodedata.normalize('NFC', text)
 
