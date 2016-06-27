@@ -11,10 +11,10 @@ class TestDocumentConverter (TestCase):
                            subheading=True):
         if subheading:
             text = '@w\\f 124 {(19 November)}\\!\n\n' + text
-            expected = '<div type="subsection"><head type="sub">f 124 <hi rend="italic">(19 November)</hi></head>\n\n' + expected + '</div>'
+            expected = '<div type="subsection"><head type="sub">f 124 <ex>(19 November)</ex></head>\n\n' + expected + '</div>'
         if main_heading:
             text = '@h\\BPA!1532!DOU2!eng\\!\n\n' + text
-            expected = '<div xml:lang="eng"><head type="main"><name type="place_region">BPA</name> <date>1532</date></head>\n\n' + expected + '</div>'
+            expected = '<text type="record">\n<body>\n<div xml:lang="eng"><head type="main"><name type="place_region">BPA</name> <date>1532</date></head>\n\n' + expected + '</div>\n</body>\n</text>'
         actual = ''.join(document_grammar.parseString(text))
         self.assertEqual(actual, expected)
 
@@ -152,9 +152,14 @@ class TestDocumentConverter (TestCase):
         expected = '<ab type="body_p_exdented">Exdented block of text.</ab>'
         self._check_conversion(text, expected)
 
+    def test_expansion (self):
+        text = 'some {expanded} text'
+        expected = 'some <ex>expanded</ex> text'
+        self._check_conversion(text, expected)
+
     def test_footnote (self):
         text = '@f\\our Churche: {St Nicholas}@f/'
-        expected = '<note type="foot">our Churche: <hi rend="italic">St Nicholas</hi></note>'
+        expected = '<note type="foot">our Churche: <ex>St Nicholas</ex></note>'
         self._check_conversion(text, expected)
 
     def test_grave (self):
@@ -185,11 +190,6 @@ class TestDocumentConverter (TestCase):
         nested_text = 'Some @i\\@i\\really@i/ interpolated@i/ text'
         nested_expected = 'Some <add><handShift /><add><handShift />really</add> interpolated</add> text'
         self._check_conversion(nested_text, nested_expected)
-
-    def test_italic (self):
-        text = 'some {italic} text'
-        expected = 'some <hi rend="italic">italic</hi> text'
-        self._check_conversion(text, expected)
 
     def test_italic_small_caps (self):
         text = 'Some @q\\italic small caps@q/ text'
@@ -224,10 +224,10 @@ class TestDocumentConverter (TestCase):
 
     def test_main_heading (self):
         text = '@h\\BPA!1532!DOU2!lat\\!\n\n@w\\Test\\!\n\nText'
-        expected = '<div xml:lang="lat"><head type="main"><name type="place_region">BPA</name> <date>1532</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>'
+        expected = '<text type="record">\n<body>\n<div xml:lang="lat"><head type="main"><name type="place_region">BPA</name> <date>1532</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
         self._check_conversion(text, expected, False, False)
         text = '@h\\LEE!1630/1!V151!lat\\!\n\n@w\\Test\\!\n\nText'
-        expected = '<div xml:lang="lat"><head type="main"><name type="place_region">LEE</name> <date>1630/1</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>'
+        expected = '<text type="record">\n<body>\n<div xml:lang="lat"><head type="main"><name type="place_region">LEE</name> <date>1630/1</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
         self._check_conversion(text, expected, False, False)
 
     def test_OE (self):
@@ -309,7 +309,7 @@ class TestDocumentConverter (TestCase):
         # QAZ: Check what this should actually be - likely this needs
         # to be processed further.
         text = '@w\ f.40* {(12 January) (Fortune: Warrant)}\!\n\nText'
-        expected = '<div type="subsection"><head type="sub"> f.40* <hi rend="italic">(12 January) (Fortune: Warrant)</hi></head>\n\nText</div>'
+        expected = '<div type="subsection"><head type="sub"> f.40* <ex>(12 January) (Fortune: Warrant)</ex></head>\n\nText</div>'
         self._check_conversion(text, expected, True, False)
 
     def test_superscript (self):

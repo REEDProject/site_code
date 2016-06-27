@@ -129,6 +129,8 @@ def _define_grammar ():
                       lang_spanish_code ^ lang_welsh_code)
     exdented_code = pp.nestedExpr('@g\\', '@g/', content=enclosed)
     exdented_code.setParseAction(_pa_exdented)
+    expansion_code = pp.nestedExpr('{', '}', content=enclosed)
+    expansion_code.setParseAction(_pa_expansion)
     footnote_code = pp.nestedExpr('@f\\', '@f/', content=enclosed)
     footnote_code.setParseAction(_pa_footnote)
     indented_code = pp.nestedExpr('@p\\', '@p/', content=enclosed)
@@ -139,8 +141,6 @@ def _define_grammar ():
     interlineation_below_code.setParseAction(_pa_interlineation_below)
     interpolation_code = pp.nestedExpr('@i\\', '@i/', content=enclosed)
     interpolation_code.setParseAction(_pa_interpolation)
-    italic_code = pp.nestedExpr('{', '}', content=enclosed)
-    italic_code.setParseAction(_pa_italic)
     italic_small_caps_code = pp.nestedExpr('@q\\', '@q/', content=enclosed)
     italic_small_caps_code.setParseAction(_pa_italic_small_caps)
     left_marginale_code = pp.nestedExpr('@l\\', '@l/', content=enclosed)
@@ -162,7 +162,7 @@ def _define_grammar ():
     tab_start_code = pp.nestedExpr(pp.LineStart() + pp.Literal('@['), '!',
                                    content=enclosed)
     tab_start_code.setParseAction(_pa_tab_start)
-    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ comment_code ^ deleted_code ^ exdented_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_code ^ italic_small_caps_code ^ language_codes ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ signed_code ^ signed_centre_code ^ signed_right_code ^ small_caps_code ^ superscript_code ^ tab_start_code
+    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ comment_code ^ deleted_code ^ exdented_code ^ expansion_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_small_caps_code ^ language_codes ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ signed_code ^ signed_centre_code ^ signed_right_code ^ small_caps_code ^ superscript_code ^ tab_start_code
     enclosed << pp.OneOrMore(single_codes ^ return_code ^ paired_codes ^
                              content ^ punctuation ^ xml_escape ^ ignored)
     main_heading_sub_content = pp.OneOrMore(content | punctuation | xml_escape |
@@ -288,6 +288,9 @@ def _pa_exclamation (s, loc, toks):
 def _pa_exdented (s, loc, toks):
     return ['<ab type="body_p_exdented">', ''.join(toks[0]), '</ab>']
 
+def _pa_expansion (s, loc, toks):
+    return ['<ex>', ''.join(toks[0]), '</ex>']
+
 def _pa_footnote (s, loc, toks):
     return ['<note type="foot">', ''.join(toks[0]), '</note>']
 
@@ -305,9 +308,6 @@ def _pa_interlineation_below (s, loc, toks):
 
 def _pa_interpolation (s, loc, toks):
     return ['<add><handShift />', ''.join(toks[0]), '</add>']
-
-def _pa_italic (s, loc, toks):
-    return ['<hi rend="italic">', ''.join(toks[0]), '</hi>']
 
 def _pa_italic_small_caps (s, loc, toks):
     return ['<hi rend="smallcaps_italic">', ''.join(toks[0]), '</hi>']
@@ -375,7 +375,7 @@ def _pa_main_heading_sub_content (s, loc, toks):
     return [''.join(toks)]
 
 def _pa_main_section (s, loc, toks):
-    return ['<div xml:lang="{}">{}</div>'.format(toks[0], ''.join(toks[1:]))]
+    return ['<text type="record">\n<body>\n<div xml:lang="{}">{}</div>\n</body>\n</text>'.format(toks[0], ''.join(toks[1:]))]
 
 def _pa_oe (s, loc, toks):
     return ['\N{LATIN SMALL LIGATURE OE}']
