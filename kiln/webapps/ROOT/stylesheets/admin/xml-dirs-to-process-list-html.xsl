@@ -22,9 +22,11 @@
       </a>
     </p>
 
+    <form method="get" action="{kiln:url-for-match('local-admin-concordance-word-lists-report', ())}">
     <table>
       <thead>
         <tr>
+          <th scope="col"></th>
           <th scope="col">File</th>
           <th colspan="2" scope="col">Reports</th>
           <th scope="col">Search</th>
@@ -37,6 +39,8 @@
                              select=".//dir:directory[@name='tei']" />
       </tbody>
     </table>
+    <p><input type="submit" value="Generate concordance" /></p>
+    </form>
   </xsl:template>
 
   <xsl:template match="dir:directory" mode="#all">
@@ -60,6 +64,7 @@
       <xsl:value-of select="substring-after($filepath, 'tei/')" />
     </xsl:variable>
     <tr>
+      <td><input type="checkbox" name="docs" value="{$filepath}" /></td>
       <!-- File path. -->
       <td>
         <xsl:value-of select="$short-filepath"/>
