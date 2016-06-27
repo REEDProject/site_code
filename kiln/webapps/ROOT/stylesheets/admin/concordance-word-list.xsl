@@ -12,6 +12,14 @@
     </word_list>
   </xsl:template>
 
+  <xsl:template match="tei:div[tei:head/@type='main']">
+    <record>
+      <xsl:attribute name="date" select="tei:head/@iso-date" />
+      <xsl:attribute name="cit" select="normalize-space(tei:head)" />
+      <xsl:apply-templates />
+    </record>
+  </xsl:template>
+
   <xsl:template match="text()[normalize-space()]">
     <xsl:variable name='lang' select="ancestor::*[normalize-space(@xml:lang)][1]/@xml:lang"/>
     <xsl:analyze-string select="." regex="[\p{{L}}]+">

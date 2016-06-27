@@ -6,16 +6,15 @@
        exclusion lists. -->
 
   <xsl:variable name="context-length" select="10" />
-  <xsl:variable name="no-space-punc" select="('(', '[', '-', '—', '/')" />
 
   <xsl:template match="data">
     <concordance>
       <xsl:variable name="exclusions" select="exclusions/words/w" />
-      <xsl:for-each-group select="word_lists/word_list/w"
+      <xsl:for-each-group select="word_lists/word_list/record/w"
                           group-by="@lemma">
         <xsl:for-each-group select="current-group()" group-by="@xml:lang">
           <xsl:variable name="lemma" select="@lemma" />
-          <xsl:variable name="lang" select="current-group()/@xml:lang" />
+          <xsl:variable name="lang" select="distinct-values(current-group()/@xml:lang)" />
           <xsl:if test="not($lemma = $exclusions[not(@xml:lang)] or
                         $lemma = $exclusions[@xml:lang=$lang])">
             <entry>
@@ -24,7 +23,7 @@
               <lang><xsl:value-of select="$lang" /></lang>
               <cits>
                 <xsl:for-each select="current-group()">
-                  <cit>
+                  <cit date="{../@date}" record="{../@cit}">
                     <xsl:apply-templates select="." mode="citation" />
                   </cit>
                 </xsl:for-each>

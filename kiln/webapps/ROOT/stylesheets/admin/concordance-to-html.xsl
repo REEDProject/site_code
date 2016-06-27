@@ -5,12 +5,17 @@
   <xsl:template match="cit">
     <li>
       <xsl:apply-templates />
+      <xsl:text> [</xsl:text>
+      <xsl:value-of select="@record" />
+      <xsl:text>]</xsl:text>
     </li>
   </xsl:template>
 
   <xsl:template match="cits">
     <ul>
-      <xsl:apply-templates select="cit" />
+      <xsl:apply-templates select="cit">
+        <xsl:sort select="@date" />
+      </xsl:apply-templates>
     </ul>
   </xsl:template>
 
