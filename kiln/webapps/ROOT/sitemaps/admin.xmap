@@ -198,12 +198,6 @@
         <map:serialize type="xml" />
       </map:match>
 
-      <map:match pattern="test.xml">
-        <map:generate src="../content/xml/test2.xml" />
-        <map:transform type="xinclude" />
-        <map:serialize type="xml" />
-      </map:match>
-
       <!-- Generate an XML document containing an annotated word list
            for a specific document. -->
       <map:match id="local-admin-concordance-word-list"
