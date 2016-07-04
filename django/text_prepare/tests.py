@@ -14,7 +14,7 @@ class TestDocumentConverter (TestCase):
             expected = '<div type="subsection"><head type="sub">f 124 <ex>(19 November)</ex></head>\n\n' + expected + '</div>'
         if main_heading:
             text = '@h\\BPA!1532!DOU2!eng\\!\n\n' + text
-            expected = '<text type="record">\n<body>\n<div xml:lang="eng"><head type="main"><name type="place_region">BPA</name> <date>1532</date></head>\n\n' + expected + '</div>\n</body>\n</text>'
+            expected = '<text type="record">\n<body>\n<div xml:lang="eng"><head type="main"><name type="place_region">BPA</name> <date when-iso="1532">1532</date></head>\n\n' + expected + '</div>\n</body>\n</text>'
         actual = ''.join(document_grammar.parseString(text))
         self.assertEqual(actual, expected)
 
@@ -224,10 +224,13 @@ class TestDocumentConverter (TestCase):
 
     def test_main_heading (self):
         text = '@h\\BPA!1532!DOU2!lat\\!\n\n@w\\Test\\!\n\nText'
-        expected = '<text type="record">\n<body>\n<div xml:lang="lat"><head type="main"><name type="place_region">BPA</name> <date>1532</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
+        expected = '<text type="record">\n<body>\n<div xml:lang="lat"><head type="main"><name type="place_region">BPA</name> <date when-iso="1532">1532</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
         self._check_conversion(text, expected, False, False)
         text = '@h\\LEE!1630/1!V151!lat\\!\n\n@w\\Test\\!\n\nText'
-        expected = '<text type="record">\n<body>\n<div xml:lang="lat"><head type="main"><name type="place_region">LEE</name> <date>1630/1</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
+        expected = '<text type="record">\n<body>\n<div xml:lang="lat"><head type="main"><name type="place_region">LEE</name> <date when-iso="1630">1630/1</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
+        self._check_conversion(text, expected, False, False)
+        text = '@h\\LEE!1630-1631!V151!eng\\!\n\n@w\\Test\\!\n\nText'
+        expected = '<text type="record">\n<body>\n<div xml:lang="eng"><head type="main"><name type="place_region">LEE</name> <date from-iso="1630" to-iso="1631">1630-1631</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
         self._check_conversion(text, expected, False, False)
 
     def test_OE (self):
