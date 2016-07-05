@@ -229,8 +229,11 @@ class TestDocumentConverter (TestCase):
         text = '@h\\LEE!1630/1!V151!lat\\!\n\n@w\\Test\\!\n\nText'
         expected = '<text type="record">\n<body>\n<div xml:lang="lat"><head type="main"><name type="place_region">LEE</name> <date when-iso="1630">1630/1</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
         self._check_conversion(text, expected, False, False)
-        text = '@h\\LEE!1630-1631!V151!eng\\!\n\n@w\\Test\\!\n\nText'
-        expected = '<text type="record">\n<body>\n<div xml:lang="eng"><head type="main"><name type="place_region">LEE</name> <date from-iso="1630" to-iso="1631">1630-1631</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
+        text = '@h\\LEE!1630-1!V151!eng\\!\n\n@w\\Test\\!\n\nText'
+        expected = '<text type="record">\n<body>\n<div xml:lang="eng"><head type="main"><name type="place_region">LEE</name> <date from-iso="1630" to-iso="1631">1630-1</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
+        self._check_conversion(text, expected, False, False)
+        text = '@h\\LEE!1629-31!V151!eng\\!\n\n@w\\Test\\!\n\nText'
+        expected = '<text type="record">\n<body>\n<div xml:lang="eng"><head type="main"><name type="place_region">LEE</name> <date from-iso="1629" to-iso="1631">1629-31</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
         self._check_conversion(text, expected, False, False)
 
     def test_OE (self):

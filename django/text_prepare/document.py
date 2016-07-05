@@ -78,7 +78,7 @@ class Document:
     def _validate (self, text):
         try:
             results = document_grammar.parseString(text)
-        except pp.ParseException as e:
+        except (pp.ParseException, pp.ParseSyntaxException) as e:
             # Generate the context of the error, with a pointer to the
             # column identified as its place, in a way that copes with
             # a "line" potentially being very long.

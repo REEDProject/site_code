@@ -171,17 +171,18 @@ def _define_grammar ():
     year = pp.Word(pp.nums, min=4, max=4)
     slash_year = pp.Optional(pp.Literal('/') + pp.Word(pp.nums, min=1, max=2))
     start_year = year.setResultsName('year') + slash_year
-    end_year = year.setResultsName('end_year') + slash_year
+    end_year = pp.Word(pp.nums, min=1, max=4).setResultsName('end_year') + \
+               slash_year
     main_heading_date = start_year + pp.Optional(pp.oneOf('- –') + end_year)
     main_heading_date.setParseAction(_pa_main_heading_date)
     language_code = pp.oneOf('cnx cor cym deu eng fra gla gmh gml grc ita lat '
                              'por spa wlm xno')
-    main_heading_content = main_heading_sub_content + \
-                           pp.Literal('!').suppress() + \
-                           main_heading_date + \
-                           pp.Literal('!').suppress() + \
-                           main_heading_sub_content + \
-                           pp.Literal('!').suppress() + \
+    main_heading_content = main_heading_sub_content - \
+                           pp.Literal('!').suppress() - \
+                           main_heading_date - \
+                           pp.Literal('!').suppress() - \
+                           main_heading_sub_content - \
+                           pp.Literal('!').suppress() - \
                            language_code
     main_heading_code = pp.nestedExpr('@h\\', '\\!',
                                       content=main_heading_content)
@@ -378,11 +379,14 @@ def _pa_main_heading (s, loc, toks):
     return [language_code, '<head type="main"><name type="place_region">{}</name> {}</head>'.format(place, date)]
 
 def _pa_main_heading_date (s, loc, toks):
-    if 'end_year' in toks:
-        attrs = 'from-iso="{}" to-iso="{}"'.format(toks['year'],
-                                                   toks['end_year'])
+    year = toks['year']
+    end_year = toks.get('end_year')
+    if end_year:
+        changed = 4 - len(end_year)
+        base = year[:changed]
+        attrs = 'from-iso="{}" to-iso="{}"'.format(year, base + end_year)
     else:
-        attrs = 'when-iso="{}"'.format(toks['year'])
+        attrs = 'when-iso="{}"'.format(year)
     return ['<date {}>{}</date>'.format(attrs, ''.join(toks))]
 
 def _pa_main_heading_sub_content (s, loc, toks):
