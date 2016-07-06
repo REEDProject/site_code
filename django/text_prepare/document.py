@@ -1,3 +1,4 @@
+import os.path
 import shlex
 import subprocess
 import tempfile
@@ -5,6 +6,7 @@ import textwrap
 import unicodedata
 
 import pyparsing as pp
+from lxml import etree
 
 from .document_parser import document_grammar
 from .exceptions import (TextPrepareDocumentTextExtractionError,
@@ -15,6 +17,9 @@ from .exceptions import (TextPrepareDocumentTextExtractionError,
 # after the line on which a validation error occurs.
 CONTEXT_LINES_BEFORE = 1
 CONTEXT_LINES_AFTER = 2
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+XSLT_PATH = os.path.join(BASE_DIR, 'add_ab.xsl')
 
 
 class Document:
@@ -36,7 +41,11 @@ class Document:
     def _convert (self, results):
         text = '<TEI xmlns="http://www.tei-c.org/ns/1.0"><text><group>{}</group></text></TEI>'.format(
             ''.join(results))
-        return unicodedata.normalize('NFC', text)
+        text = unicodedata.normalize('NFC', text)
+        root = etree.fromstring(text)
+        transform = etree.XSLT(etree.parse(XSLT_PATH))
+        result = transform(root)
+        return etree.tostring(result, encoding='utf-8', pretty_print=True)
 
     def _get_text (self, file_path, line_length):
         """Return the plain text conversion of the file at `file_path`.
