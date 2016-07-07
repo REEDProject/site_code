@@ -22,15 +22,17 @@
   </xsl:template>
 
   <xsl:template match="tei:div[@type='subsection']">
-    <xsl:apply-templates select="tei:head" />
-    <xsl:variable name="following-id">
-      <xsl:call-template name="get-first-following">
-        <xsl:with-param name="start" select="tei:head" />
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:variable name="following"
-                  select="tei:head/following-sibling::node()[generate-id(.)=$following-id]" />
-    <xsl:apply-templates mode="initial" select="$following" />
+    <xsl:copy>
+      <xsl:apply-templates select="tei:head" />
+      <xsl:variable name="following-id">
+        <xsl:call-template name="get-first-following">
+          <xsl:with-param name="start" select="tei:head" />
+        </xsl:call-template>
+      </xsl:variable>
+      <xsl:variable name="following"
+                    select="tei:head/following-sibling::node()[generate-id(.)=$following-id]" />
+      <xsl:apply-templates mode="initial" select="$following" />
+    </xsl:copy>
   </xsl:template>
 
   <xsl:template match="tei:ab|tei:table" mode="initial">
