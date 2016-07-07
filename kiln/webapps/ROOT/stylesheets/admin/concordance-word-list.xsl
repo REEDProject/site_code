@@ -14,7 +14,16 @@
 
   <xsl:template match="tei:div[tei:head/@type='main']">
     <record>
-      <xsl:attribute name="date" select="tei:head/@iso-date" />
+      <xsl:attribute name="date">
+        <xsl:choose>
+          <xsl:when test="tei:head/tei:date/@when-iso">
+            <xsl:value-of select="tei:head/tei:date/@when-iso" />
+          </xsl:when>
+          <xsl:when test="tei:head/tei:date/@from-iso">
+            <xsl:value-of select="tei:head/tei:date/@from-iso" />
+          </xsl:when>
+        </xsl:choose>
+      </xsl:attribute>
       <xsl:attribute name="cit" select="normalize-space(tei:head)" />
       <xsl:apply-templates />
     </record>
