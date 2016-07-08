@@ -170,9 +170,10 @@ def _define_grammar ():
     main_heading_sub_content.setParseAction(_pa_main_heading_sub_content)
     year = pp.Word(pp.nums, min=4, max=4)
     slash_year = pp.Optional(pp.Literal('/') + pp.Word(pp.nums, min=1, max=2))
-    start_year = year.setResultsName('year') + slash_year
+    start_year = year.setResultsName('year') + slash_year.setResultsName(
+        'slash_year')
     end_year = pp.Word(pp.nums, min=1, max=4).setResultsName('end_year') + \
-               slash_year
+               slash_year.setResultsName('slash_end_year')
     main_heading_date = start_year + pp.Optional(pp.oneOf('- –') + end_year)
     main_heading_date.setParseAction(_pa_main_heading_date)
     language_code = pp.oneOf('cnx cor cym deu eng fra gla gmh gml grc ita lat '
@@ -215,6 +216,13 @@ def _make_signed (s, loc, toks, rend_value=None):
     if rend_value:
         rend = ' rend="{}"'.format(rend_value)
     return ['<seg type="signed"{}>'.format(rend), ''.join(toks[0]), '</seg>']
+
+def _merge_years (year, replacement):
+    """Return `year` merged with `replacement`, where `replacement`
+    replaces the last digit(s) of `year`."""
+    changed = 4 - len(replacement)
+    base = year[:changed]
+    return base + replacement
 
 def _pa_acute (s, loc, toks):
     return ['{}\N{COMBINING ACUTE ACCENT}'.format(toks[1])]
@@ -380,11 +388,16 @@ def _pa_main_heading (s, loc, toks):
 
 def _pa_main_heading_date (s, loc, toks):
     year = toks['year']
+    slash_year = toks.get('slash_year')
     end_year = toks.get('end_year')
+    slash_end_year = toks.get('slash_end_year')
+    if slash_year:
+        year = _merge_years(year, slash_year[1])
     if end_year:
-        changed = 4 - len(end_year)
-        base = year[:changed]
-        attrs = 'from-iso="{}" to-iso="{}"'.format(year, base + end_year)
+        end_year = _merge_years(year, end_year)
+        if slash_end_year:
+            end_year = _merge_years(end_year, slash_end_year[1])
+        attrs = 'from-iso="{}" to-iso="{}"'.format(year, end_year)
     else:
         attrs = 'when-iso="{}"'.format(year)
     return ['<date {}>{}</date>'.format(attrs, ''.join(toks))]
