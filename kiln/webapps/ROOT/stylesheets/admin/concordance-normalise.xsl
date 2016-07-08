@@ -11,7 +11,11 @@
     <xsl:apply-templates />
   </xsl:template>
 
+  <xsl:template match="tei:head[@type='sub']" />
+
   <xsl:template match="tei:note" />
+
+  <xsl:template match="tei:teiHeader" />
 
   <xsl:template match="node()|@*">
     <xsl:copy>
