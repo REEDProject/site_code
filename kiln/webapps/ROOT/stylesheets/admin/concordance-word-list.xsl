@@ -41,7 +41,7 @@
         </xsl:element>
       </xsl:matching-substring>
       <xsl:non-matching-substring>
-        <nw><xsl:value-of select="." /></nw>
+        <nw><xsl:value-of select="translate(., '&#xA;', ' ')" /></nw>
       </xsl:non-matching-substring>
     </xsl:analyze-string>
   </xsl:template>
