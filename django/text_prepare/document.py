@@ -19,8 +19,10 @@ CONTEXT_LINES_BEFORE = 1
 CONTEXT_LINES_AFTER = 2
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-ADD_AB_XSLT_PATH = os.path.join(BASE_DIR, 'add_ab.xsl')
-ADD_ID_XSLT_PATH = os.path.join(BASE_DIR, 'add_id.xsl')
+XSLT_DIR = os.path.join(BASE_DIR, 'xslt')
+ADD_AB_XSLT_PATH = os.path.join(XSLT_DIR, 'add_ab.xsl')
+ADD_HEADER_XSLT_PATH = os.path.join(XSLT_DIR, 'add_header.xsl')
+ADD_ID_XSLT_PATH = os.path.join(XSLT_DIR, 'add_id.xsl')
 
 
 class Document:
@@ -81,7 +83,8 @@ class Document:
 
     def _postprocess_text (self, text):
         tree = etree.ElementTree(etree.fromstring(text))
-        tree = self._transform(tree, ADD_AB_XSLT_PATH, ADD_ID_XSLT_PATH)
+        tree = self._transform(tree, ADD_AB_XSLT_PATH, ADD_ID_XSLT_PATH,
+                               ADD_HEADER_XSLT_PATH)
         return etree.tostring(tree, encoding='utf-8', pretty_print=True)
 
     def _transform (self, tree, *xslt_paths):

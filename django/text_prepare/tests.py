@@ -2,7 +2,8 @@ from django.test import TestCase
 
 from lxml import etree
 
-from .document import ADD_AB_XSLT_PATH, ADD_ID_XSLT_PATH, Document
+from .document import (ADD_AB_XSLT_PATH, ADD_HEADER_XSLT_PATH,
+                       ADD_ID_XSLT_PATH, Document)
 from .document_parser import document_grammar
 
 
@@ -24,7 +25,7 @@ class TestDocumentConverter (TestCase):
             text = '@h\\BPA!1532!DOU2!eng\\!\n' + text
             expected = '''<text type="record">
 <body xml:lang="eng">
-<head><name type="place_region">BPA</name> <date when-iso="1532">1532</date></head>
+<head><name ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
 ''' + expected + '''
 </body>
 </text>'''
@@ -108,7 +109,7 @@ Test.
 @cn/'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><name type="place_region">BPA</name> <date when-iso="1532">1532</date></head>
+<head><name ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <ex>(19 November)</ex></head>
@@ -176,7 +177,7 @@ Test.
 @EN/'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><name type="place_region">BPA</name> <date when-iso="1532">1532</date></head>
+<head><name ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <ex>(19 November)</ex></head>
@@ -322,40 +323,41 @@ Another note.
         self._check_conversion(text, expected)
 
     def test_record_heading (self):
+        base_input = '@h\\{place}!{year}!{record}!{lang}\\!\n@w\\Test\\!\nText'
         base_expected = '''<text type="record">
-<body xml:lang="{}">
-<head><name type="place_region">{}</name> {}</head>
-
+<body xml:lang="{lang}">
+<head><name ana="ereed:{place}" type="place_region">{place}</name> {date} <seg ana="ereed:{record}">{record}</seg></head>
 <div type="transcription">
 <div>
 <head>Test</head>
-
 Text
 </div>
 </div>
 </body>
 </text>'''
-        text = '@h\\BPA!1532!DOU2!lat\\!\n\n@w\\Test\\!\n\nText'
-        expected = base_expected.format('lat', 'BPA',
-                                        '<date when-iso="1532">1532</date>')
-        self._check_conversion(text, expected, False, False)
-        text = '@h\\LEE!1630/1!V151!lat\\!\n\n@w\\Test\\!\n\nText'
-        expected = base_expected.format('lat', 'LEE',
-                                        '<date when-iso="1631">1630/1</date>')
-        self._check_conversion(text, expected, False, False)
-        text = '@h\\LEE!1630-1!V151!eng\\!\n\n@w\\Test\\!\n\nText'
-        expected = base_expected.format(
-            'eng', 'LEE', '<date from-iso="1630" to-iso="1631">1630-1</date>')
-        self._check_conversion(text, expected, False, False)
-        text = '@h\\LEE!1629-31!V151!eng\\!\n\n@w\\Test\\!\n\nText'
-        expected = base_expected.format(
-            'eng', 'LEE', '<date from-iso="1629" to-iso="1631">1629-31</date>')
-        self._check_conversion(text, expected, False, False)
-        text = '@h\\LEE!1629/30-31/2!V151!eng\\!\n\n@w\\Test\\!\n\nText'
-        expected = base_expected.format(
-            'eng', 'LEE',
-            '<date from-iso="1630" to-iso="1632">1629/30-31/2</date>')
-        self._check_conversion(text, expected, False, False)
+        data = {'lang': 'lat', 'place': 'BPA', 'record': 'DOU2',
+                'date': '<date when-iso="1532">1532</date>', 'year': '1532'}
+        self._check_conversion(base_input.format(**data),
+                               base_expected.format(**data), False, False)
+        data = {'lang': 'lat', 'place': 'LEE', 'record': 'V151',
+                'date': '<date when-iso="1631">1630/1</date>', 'year': '1630/1'}
+        self._check_conversion(base_input.format(**data),
+                               base_expected.format(**data), False, False)
+        data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
+                'date': '<date from-iso="1630" to-iso="1631">1630-1</date>',
+                'year': '1630-1'}
+        self._check_conversion(base_input.format(**data),
+                               base_expected.format(**data), False, False)
+        data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
+                'date': '<date from-iso="1629" to-iso="1631">1629-31</date>',
+                'year': '1629-31'}
+        self._check_conversion(base_input.format(**data),
+                               base_expected.format(**data), False, False)
+        data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
+                'date': '<date from-iso="1630" to-iso="1632">1629/30-31/2</date>',
+                'year': '1629/30-31/2'}
+        self._check_conversion(base_input.format(**data),
+                               base_expected.format(**data), False, False)
 
     def test_return (self):
         text = 'Bam! new line'
@@ -578,6 +580,45 @@ After table text.
 </TEI>
 '''
         actual = self._transform(text, ADD_AB_XSLT_PATH)
+        self.assertEqual(actual, expected)
+
+    def test_add_header (self):
+        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff">
+<text>
+<group>
+<text type="record" xml:id="staff-ridm4">
+<body>
+<head>@h head 1</head>
+<div type="transcription" xml:id="staff-ridm4-transcription">
+<div>
+<head>@w head 1.1</head>
+<ab>Some text.</ab>
+</div>
+</div>
+</body>
+</text>
+</group>
+</text>
+</TEI>'''
+        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff"><teiHeader><fileDesc><titleStmt/><sourceDesc/></fileDesc><encodingDesc><listPrefixDef><prefixDef ident="ereed" matchPattern="([A-Za-z0-9]+)" replacementPattern="../code_list.xml#$1"><p>Private URIs using the <code>ereed</code> prefix are pointers to entities in the code_list.xml file. For example, <code>ereed:BPA</code> dereferences to <code>code_list.xml#BPA</code>.</p></prefixDef></listPrefixDef></encodingDesc></teiHeader>
+<text>
+<group>
+<text type="record" xml:id="staff-ridm4">
+<body>
+<head>@h head 1</head>
+<div type="transcription" xml:id="staff-ridm4-transcription">
+<div>
+<head>@w head 1.1</head>
+<ab>Some text.</ab>
+</div>
+</div>
+</body>
+</text>
+</group>
+</text>
+</TEI>
+'''
+        actual = self._transform(text, ADD_HEADER_XSLT_PATH)
         self.assertEqual(actual, expected)
 
     def test_add_id (self):

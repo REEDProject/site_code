@@ -214,9 +214,10 @@ def _define_grammar ():
     table = pp.nestedExpr('<t>', '</t>', content=pp.OneOrMore(
         row | comment_code | white))
     table.setParseAction(_pa_table)
-    record_heading_sub_content = pp.OneOrMore(content | punctuation | xml_escape |
-                                            ignored)
-    record_heading_sub_content.setParseAction(_pa_record_heading_sub_content)
+    record_heading_place = pp.Word(pp.alphanums)
+    record_heading_place.setParseAction(_pa_record_heading_place)
+    record_heading_record = pp.Word(pp.alphanums)
+    record_heading_record.setParseAction(_pa_record_heading_record)
     year = pp.Word(pp.nums, min=4, max=4)
     slash_year = pp.Optional(pp.Literal('/') + pp.Word(pp.nums, min=1, max=2))
     start_year = year.setResultsName('year') + slash_year.setResultsName(
@@ -227,11 +228,11 @@ def _define_grammar ():
     record_heading_date.setParseAction(_pa_record_heading_date)
     language_code = pp.oneOf('cnx cor cym deu eng fra gla gmh gml grc ita lat '
                              'por spa wlm xno')
-    record_heading_content = record_heading_sub_content - \
+    record_heading_content = record_heading_place - \
                              pp.Literal('!').suppress() - \
                              record_heading_date - \
                              pp.Literal('!').suppress() - \
-                             record_heading_sub_content - \
+                             record_heading_record - \
                              pp.Literal('!').suppress() - \
                              language_code
     record_heading = pp.nestedExpr('@h\\', '\\!',
@@ -489,8 +490,8 @@ def _pa_record (s, loc, toks):
     return ['<text type="record">\n<body xml:lang="{}">\n{}</body>\n</text>'.format(toks[0], ''.join(toks[1:]))]
 
 def _pa_record_heading (s, loc, toks):
-    place, date, code, language_code = toks[0]
-    return [language_code, '<head><name type="place_region">{}</name> {}</head>'.format(place, date)]
+    place, date, record, language_code = toks[0]
+    return [language_code, '<head>{} {} {}</head>'.format(place, date, record)]
 
 def _pa_record_heading_date (s, loc, toks):
     year = toks['year']
@@ -508,8 +509,12 @@ def _pa_record_heading_date (s, loc, toks):
         attrs = 'when-iso="{}"'.format(year)
     return ['<date {}>{}</date>'.format(attrs, ''.join(toks))]
 
-def _pa_record_heading_sub_content (s, loc, toks):
-    return [''.join(toks)]
+def _pa_record_heading_place (s, loc, toks):
+    return ['<name ana="ereed:{}" type="place_region">{}</name>'.format(
+        toks[0], toks[0])]
+
+def _pa_record_heading_record (s, loc, toks):
+    return ['<seg ana="ereed:{}">{}</seg>'.format(toks[0], toks[0])]
 
 def _pa_return (s, loc, toks):
     # TODO: Perhaps add newlines here to deal with the case of long
