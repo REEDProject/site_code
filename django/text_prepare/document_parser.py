@@ -1,3 +1,38 @@
+"""This module defines a grammar for parsing a records document marked
+up using various @-codes and converting it to TEI.
+
+The basic TEI structure generated is:
+
+<text type="record">
+  <body xml:lang="...">
+    <head>...</head>
+    <div type="transcription">
+      <div>
+        <head>...</head>
+        ...
+      </div>
+      ...
+    </div>
+    <div type="collation_notes">
+      <div type="collation_note">
+        ...
+      </div>
+      ...
+    </div>
+    <div type="end_notes">
+      <div type="end_note">
+        ...
+      </div>
+      ...
+    </div>
+  </body>
+</text>
+
+The grammar does not enforce referential integrity (for collation
+notes), and does not produce xml:ids.
+
+"""
+
 import html
 
 import pyparsing as pp
@@ -9,13 +44,14 @@ def _define_grammar ():
     content.setDefaultWhitespaceChars('')
     white = pp.Word(' ' + '\n')
     punctuation = pp.oneOf('. , ; : \' " ( ) * / # $ % + - ? | – ‑')
+    integer = pp.Word(pp.nums)
     ignored = pp.oneOf('\ufeff').suppress() # zero width no-break space
     # This is an awful cludge for < to get around my inability to find
     # a way for pyparsing to handle tables correctly (despite
     # damaged_code working fine). With luck there won't be any < in
     # the text content.
     xml_escape = pp.oneOf('& >') | (pp.Literal('<') + pp.FollowedBy(
-        white | ignored | pp.nums))
+        white | ignored | integer))
     xml_escape.setParseAction(_pa_xml_escape)
     vowels = pp.oneOf('A a E e I i O o U u')
     acute_code = pp.Literal("@'") + vowels
@@ -29,7 +65,8 @@ def _define_grammar ():
     cedilla_code.setParseAction(_pa_cedilla)
     circumflex_code = pp.Literal('@^') + vowels
     circumflex_code.setParseAction(_pa_circumflex)
-    collation_ref_code = '@c\\' + pp.OneOrMore(pp.nums) + '\\'
+    collation_ref_number_code = '@r' + pp.OneOrMore(integer) + '\\'
+    collation_ref_number_code.setParseAction(_pa_collation_ref_number)
     damaged_code = pp.Literal('<') + (pp.Word('.', min=1) ^ pp.Literal('…')) + \
                    pp.Literal('>')
     damaged_code.setParseAction(_pa_damaged)
@@ -40,7 +77,6 @@ def _define_grammar ():
     ellipsis_code = pp.Literal('...') ^ pp.Literal('…')
     ellipsis_code.setParseAction(_pa_ellipsis)
     en_dash_code = pp.Literal('--').setParseAction(_pa_en_dash)
-    endnote_code = '@E\\' + pp.OneOrMore(pp.nums) + '\\'
     eng_code = pp.Literal('@n').setParseAction(_pa_eng)
     ENG_code = pp.Literal('@N').setParseAction(_pa_ENG)
     eth_code = pp.Literal('@d').setParseAction(_pa_eth)
@@ -68,7 +104,7 @@ def _define_grammar ():
     wynn_code = pp.Literal('@y').setParseAction(_pa_wynn)
     yogh_code = pp.Literal('@z').setParseAction(_pa_yogh)
     YOGH_code = pp.Literal('@Z').setParseAction(_pa_YOGH)
-    single_codes = acute_code ^ ae_code ^ AE_code ^ blank_code ^ capitulum_code ^ caret_code ^ cedilla_code ^ circumflex_code ^ collation_ref_code ^ damaged_code ^ dot_over_code ^ dot_under_code ^ ellipsis_code ^ en_dash_code ^ endnote_code ^ eng_code ^ ENG_code ^ eth_code ^ exclamation_code ^ grave_code ^ macron_code ^ oe_code ^ OE_code ^ paragraph_code ^ pound_code ^ raised_code ^ section_code ^ semicolon_code ^ special_v_code ^ tab_code ^ thorn_code ^ THORN_code ^ tilde_code ^ umlaut_code ^ wynn_code ^ yogh_code ^ YOGH_code
+    single_codes = acute_code ^ ae_code ^ AE_code ^ blank_code ^ capitulum_code ^ caret_code ^ cedilla_code ^ circumflex_code ^ collation_ref_number_code ^ damaged_code ^ dot_over_code ^ dot_under_code ^ ellipsis_code ^ en_dash_code ^ eng_code ^ ENG_code ^ eth_code ^ exclamation_code ^ grave_code ^ macron_code ^ oe_code ^ OE_code ^ paragraph_code ^ pound_code ^ raised_code ^ section_code ^ semicolon_code ^ special_v_code ^ tab_code ^ thorn_code ^ THORN_code ^ tilde_code ^ umlaut_code ^ wynn_code ^ yogh_code ^ YOGH_code
     enclosed = pp.Forward()
     bold_code = pp.nestedExpr('@e\\', '@e/', content=enclosed)
     bold_code.setParseAction(_pa_bold)
@@ -76,6 +112,9 @@ def _define_grammar ():
     bold_italic_code.setParseAction(_pa_bold_italic)
     centred_code = pp.nestedExpr('@m\\', '@m/', content=enclosed)
     centred_code.setParseAction(_pa_centred)
+    collation_ref = pp.nestedExpr('@cr\\', '@cr/',
+                                  content=collation_ref_number_code - enclosed)
+    collation_ref.setParseAction(_pa_collation_ref)
     comment_code = pp.nestedExpr('@xc\\', '@xc/', content=enclosed)
     comment_code.setParseAction(_pa_comment)
     deleted_code = pp.nestedExpr('[', ']', content=enclosed)
@@ -162,34 +201,9 @@ def _define_grammar ():
     tab_start_code = pp.nestedExpr(pp.LineStart() + pp.Literal('@['), '!',
                                    content=enclosed)
     tab_start_code.setParseAction(_pa_tab_start)
-    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ comment_code ^ deleted_code ^ exdented_code ^ expansion_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_small_caps_code ^ language_codes ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ signed_code ^ signed_centre_code ^ signed_right_code ^ small_caps_code ^ superscript_code ^ tab_start_code
+    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ collation_ref ^ comment_code ^ deleted_code ^ exdented_code ^ expansion_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_small_caps_code ^ language_codes ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ signed_code ^ signed_centre_code ^ signed_right_code ^ small_caps_code ^ superscript_code ^ tab_start_code
     enclosed << pp.OneOrMore(single_codes ^ return_code ^ paired_codes ^
                              content ^ punctuation ^ xml_escape ^ ignored)
-    main_heading_sub_content = pp.OneOrMore(content | punctuation | xml_escape |
-                                            ignored)
-    main_heading_sub_content.setParseAction(_pa_main_heading_sub_content)
-    year = pp.Word(pp.nums, min=4, max=4)
-    slash_year = pp.Optional(pp.Literal('/') + pp.Word(pp.nums, min=1, max=2))
-    start_year = year.setResultsName('year') + slash_year.setResultsName(
-        'slash_year')
-    end_year = pp.Word(pp.nums, min=1, max=4).setResultsName('end_year') + \
-               slash_year.setResultsName('slash_end_year')
-    main_heading_date = start_year + pp.Optional(pp.oneOf('- –') + end_year)
-    main_heading_date.setParseAction(_pa_main_heading_date)
-    language_code = pp.oneOf('cnx cor cym deu eng fra gla gmh gml grc ita lat '
-                             'por spa wlm xno')
-    main_heading_content = main_heading_sub_content - \
-                           pp.Literal('!').suppress() - \
-                           main_heading_date - \
-                           pp.Literal('!').suppress() - \
-                           main_heading_sub_content - \
-                           pp.Literal('!').suppress() - \
-                           language_code
-    main_heading_code = pp.nestedExpr('@h\\', '\\!',
-                                      content=main_heading_content)
-    main_heading_code.setParseAction(_pa_main_heading)
-    subheading_code = pp.nestedExpr('@w\\', '\\!', content=enclosed)
-    subheading_code.setParseAction(_pa_subheading)
     cell = pp.nestedExpr('<c>', '</c>', content=enclosed)
     cell.setParseAction(_pa_cell)
     cell_right = pp.nestedExpr('<cr>', '</cr>', content=enclosed)
@@ -200,12 +214,61 @@ def _define_grammar ():
     table = pp.nestedExpr('<t>', '</t>', content=pp.OneOrMore(
         row | comment_code | white))
     table.setParseAction(_pa_table)
-    subsection = subheading_code + pp.OneOrMore(table ^ enclosed)
-    subsection.setParseAction(_pa_subsection)
-    main_section = pp.ZeroOrMore(white | ignored) + main_heading_code + \
-                   pp.ZeroOrMore(white) + pp.OneOrMore(subsection)
-    main_section.setParseAction(_pa_main_section)
-    return pp.StringStart() + pp.OneOrMore(main_section) + pp.StringEnd()
+    record_heading_sub_content = pp.OneOrMore(content | punctuation | xml_escape |
+                                            ignored)
+    record_heading_sub_content.setParseAction(_pa_record_heading_sub_content)
+    year = pp.Word(pp.nums, min=4, max=4)
+    slash_year = pp.Optional(pp.Literal('/') + pp.Word(pp.nums, min=1, max=2))
+    start_year = year.setResultsName('year') + slash_year.setResultsName(
+        'slash_year')
+    end_year = pp.Word(pp.nums, min=1, max=4).setResultsName('end_year') + \
+               slash_year.setResultsName('slash_end_year')
+    record_heading_date = start_year + pp.Optional(pp.oneOf('- –') + end_year)
+    record_heading_date.setParseAction(_pa_record_heading_date)
+    language_code = pp.oneOf('cnx cor cym deu eng fra gla gmh gml grc ita lat '
+                             'por spa wlm xno')
+    record_heading_content = record_heading_sub_content - \
+                             pp.Literal('!').suppress() - \
+                             record_heading_date - \
+                             pp.Literal('!').suppress() - \
+                             record_heading_sub_content - \
+                             pp.Literal('!').suppress() - \
+                             language_code
+    record_heading = pp.nestedExpr('@h\\', '\\!',
+                                        content=record_heading_content)
+    record_heading.setParseAction(_pa_record_heading)
+    transcription_heading = pp.nestedExpr('@w\\', '\\!', content=enclosed)
+    transcription_heading.setParseAction(_pa_transcription_heading)
+    transcription_section = transcription_heading - pp.OneOrMore(
+        table ^ enclosed)
+    transcription_section.setParseAction(_pa_transcription_section)
+    transcription = pp.OneOrMore(transcription_section)
+    transcription.setParseAction(_pa_transcription)
+    collation_note_anchor = pp.Literal('@a') - pp.OneOrMore(integer) - \
+                            pp.Literal('\\')
+    collation_note_anchor.setParseAction(_pa_collation_note_anchor)
+    collation_note_content = collation_note_anchor - enclosed
+    collation_note = pp.nestedExpr('@c\\', '@c/',
+                                   content=collation_note_content)
+    collation_note.setParseAction(_pa_collation_note)
+    collation_note_wrapper = pp.Suppress(pp.ZeroOrMore(white | ignored)) + \
+                             collation_note + pp.Suppress(
+                                 pp.ZeroOrMore(white | ignored))
+    collation_notes = pp.nestedExpr('@cn\\', '@cn/', content=pp.OneOrMore(
+        collation_note_wrapper))
+    collation_notes.setParseAction(_pa_collation_notes)
+    end_note = pp.nestedExpr('@E\\', '@E/', content=enclosed)
+    end_note.setParseAction(_pa_endnote)
+    end_note_wrapper = pp.Suppress(pp.ZeroOrMore(white | ignored)) + \
+                       end_note + pp.Suppress(pp.ZeroOrMore(white | ignored))
+    end_notes = pp.nestedExpr('@EN\\', '@EN/', content=pp.OneOrMore(
+        end_note_wrapper))
+    end_notes.setParseAction(_pa_endnotes)
+    record = pp.ZeroOrMore(white | ignored) + record_heading + \
+                   pp.ZeroOrMore(white) + transcription + \
+                   pp.Optional(collation_notes) + pp.Optional(end_notes)
+    record.setParseAction(_pa_record)
+    return pp.StringStart() + pp.OneOrMore(record) + pp.StringEnd()
 
 def _make_foreign (lang_code, toks):
     return ['<foreign xml:lang="{}">{}</foreign>'.format(
@@ -266,6 +329,21 @@ def _pa_centred (s, loc, toks):
 def _pa_circumflex (s, loc, toks):
     return ['{}\N{COMBINING CIRCUMFLEX ACCENT}'.format(toks[1])]
 
+def _pa_collation_note (s, loc, toks):
+    return ['<div type="collation_note">\n', ''.join(toks[0]), '\n</div>\n']
+
+def _pa_collation_note_anchor (s, loc, toks):
+    return ['<anchor n="c{}" />'.format(toks[1])]
+
+def _pa_collation_notes (s, loc, toks):
+    return ['<div type="collation_notes">\n', ''.join(toks[0]), '</div>\n']
+
+def _pa_collation_ref (s, loc, toks):
+    return ['<ref target="#c{}">{}</ref>'.format(toks[0][0], toks[0][1])]
+
+def _pa_collation_ref_number (s, loc, toks):
+    return [toks[1]]
+
 def _pa_comment (s, loc, toks):
     return ['<!-- ', ''.join(toks[0]), ' -->']
 
@@ -287,6 +365,12 @@ def _pa_ellipsis (s, loc, toks):
 
 def _pa_en_dash (s, loc, toks):
     return ['\N{EN DASH}']
+
+def _pa_endnote (s, loc, toks):
+    return ['<div type="end_note">\n', ''.join(toks[0]), '\n</div>\n']
+
+def _pa_endnotes (s, loc, toks):
+    return ['<div type="end_notes">\n', ''.join(toks[0]), '</div>\n']
 
 def _pa_eng (s, loc, toks):
     return ['\N{LATIN SMALL LETTER ENG}']
@@ -382,32 +466,6 @@ def _pa_left_marginale (s, loc, toks):
 def _pa_macron (s, loc, toks):
     return ['{}\N{COMBINING MACRON}'.format(toks[1])]
 
-def _pa_main_heading (s, loc, toks):
-    place, date, code, language_code = toks[0]
-    return [language_code, '<head type="main"><name type="place_region">{}</name> {}</head>'.format(place, date)]
-
-def _pa_main_heading_date (s, loc, toks):
-    year = toks['year']
-    slash_year = toks.get('slash_year')
-    end_year = toks.get('end_year')
-    slash_end_year = toks.get('slash_end_year')
-    if slash_year:
-        year = _merge_years(year, slash_year[1])
-    if end_year:
-        end_year = _merge_years(year, end_year)
-        if slash_end_year:
-            end_year = _merge_years(end_year, slash_end_year[1])
-        attrs = 'from-iso="{}" to-iso="{}"'.format(year, end_year)
-    else:
-        attrs = 'when-iso="{}"'.format(year)
-    return ['<date {}>{}</date>'.format(attrs, ''.join(toks))]
-
-def _pa_main_heading_sub_content (s, loc, toks):
-    return [''.join(toks)]
-
-def _pa_main_section (s, loc, toks):
-    return ['<text type="record">\n<body>\n<div xml:lang="{}">{}</div>\n</body>\n</text>'.format(toks[0], ''.join(toks[1:]))]
-
 def _pa_oe (s, loc, toks):
     return ['\N{LATIN SMALL LIGATURE OE}']
 
@@ -425,6 +483,32 @@ def _pa_pound (s, loc, toks):
 
 def _pa_raised (s, loc, toks):
     return ['\N{MIDDLE DOT}']
+
+def _pa_record (s, loc, toks):
+    return ['<text type="record">\n<body xml:lang="{}">\n{}</body>\n</text>'.format(toks[0], ''.join(toks[1:]))]
+
+def _pa_record_heading (s, loc, toks):
+    place, date, code, language_code = toks[0]
+    return [language_code, '<head><name type="place_region">{}</name> {}</head>'.format(place, date)]
+
+def _pa_record_heading_date (s, loc, toks):
+    year = toks['year']
+    slash_year = toks.get('slash_year')
+    end_year = toks.get('end_year')
+    slash_end_year = toks.get('slash_end_year')
+    if slash_year:
+        year = _merge_years(year, slash_year[1])
+    if end_year:
+        end_year = _merge_years(year, end_year)
+        if slash_end_year:
+            end_year = _merge_years(end_year, slash_end_year[1])
+        attrs = 'from-iso="{}" to-iso="{}"'.format(year, end_year)
+    else:
+        attrs = 'when-iso="{}"'.format(year)
+    return ['<date {}>{}</date>'.format(attrs, ''.join(toks))]
+
+def _pa_record_heading_sub_content (s, loc, toks):
+    return [''.join(toks)]
 
 def _pa_return (s, loc, toks):
     # TODO: Perhaps add newlines here to deal with the case of long
@@ -461,12 +545,6 @@ def _pa_small_caps (s, loc, toks):
 def _pa_special_v (s, loc, toks):
     return ['\N{LATIN SMALL LETTER MIDDLE-WELSH V}']
 
-def _pa_subheading (s, loc, toks):
-    return ['<head type="sub">', ''.join(toks[0]), '</head>']
-
-def _pa_subsection (s, loc, toks):
-    return ['<div type="subsection">', ''.join(toks), '</div>']
-
 def _pa_superscript (s, loc, toks):
     return ['<hi rend="superscript">', ''.join(toks[0]), '</hi>']
 
@@ -487,6 +565,15 @@ def _pa_THORN (s, loc, toks):
 
 def _pa_tilde (s, loc, toks):
     return ['{}\N{COMBINING TILDE}'.format(toks[1])]
+
+def _pa_transcription (s, loc, toks):
+    return ['<div type="transcription">\n', ''.join(toks), '</div>\n']
+
+def _pa_transcription_heading (s, loc, toks):
+    return ['<head>', ''.join(toks[0]), '</head>']
+
+def _pa_transcription_section (s, loc, toks):
+    return ['<div>\n', ''.join(toks), '\n</div>\n']
 
 def _pa_umlaut (s, loc, toks):
     return ['{}\N{COMBINING DIAERESIS}'.format(toks[1])]

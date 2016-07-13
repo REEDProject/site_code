@@ -7,14 +7,24 @@ class TestDocumentConverter (TestCase):
 
     vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u']
 
-    def _check_conversion (self, text, expected, main_heading=True,
+    def _check_conversion (self, text, expected, record_heading=True,
                            subheading=True):
         if subheading:
-            text = '@w\\f 124 {(19 November)}\\!\n\n' + text
-            expected = '<div type="subsection"><head type="sub">f 124 <ex>(19 November)</ex></head>\n\n' + expected + '</div>'
-        if main_heading:
-            text = '@h\\BPA!1532!DOU2!eng\\!\n\n' + text
-            expected = '<text type="record">\n<body>\n<div xml:lang="eng"><head type="main"><name type="place_region">BPA</name> <date when-iso="1532">1532</date></head>\n\n' + expected + '</div>\n</body>\n</text>'
+            text = '@w\\f 124 {(19 November)}\\!\n' + text
+            expected = '''<div type="transcription">
+<div>
+<head>f 124 <ex>(19 November)</ex></head>
+''' + expected + '''
+</div>
+</div>'''
+        if record_heading:
+            text = '@h\\BPA!1532!DOU2!eng\\!\n' + text
+            expected = '''<text type="record">
+<body xml:lang="eng">
+<head><name type="place_region">BPA</name> <date when-iso="1532">1532</date></head>
+''' + expected + '''
+</body>
+</text>'''
         actual = ''.join(document_grammar.parseString(text))
         self.assertEqual(actual, expected)
 
@@ -80,10 +90,41 @@ class TestDocumentConverter (TestCase):
             expected = 'b{}\N{COMBINING CIRCUMFLEX ACCENT}t'.format(vowel)
             self._check_conversion(text, expected)
 
-    def test_collation (self):
-        text = 'FOO'
-        expected = 'QAZ'
+    def test_collation_note_ref (self):
+        text = 'Some @cr\\@r1\\interesting text@cr/ content'
+        expected = 'Some <ref target="#c1">interesting text</ref> content'
         self._check_conversion(text, expected)
+
+    def test_collation_notes (self):
+        text = '''@h\\BPA!1532!DOU2!eng\\!
+@w\\f 124 {(19 November)}\\!
+Test.
+@cn\\
+@c\\@a1\\A note.@c/
+@c\\@a2\\Another note.@c/
+@cn/'''
+        expected = '''<text type="record">
+<body xml:lang="eng">
+<head><name type="place_region">BPA</name> <date when-iso="1532">1532</date></head>
+<div type="transcription">
+<div>
+<head>f 124 <ex>(19 November)</ex></head>
+Test.
+
+</div>
+</div>
+<div type="collation_notes">
+<div type="collation_note">
+<anchor n="c1" />A note.
+</div>
+<div type="collation_note">
+<anchor n="c2" />Another note.
+</div>
+</div>
+</body>
+</text>'''
+        self.maxDiff = None
+        self._check_conversion(text, expected, False, False)
 
     def test_comment (self):
         text = 'some @xc\\commented out@xc/ text'
@@ -122,10 +163,35 @@ class TestDocumentConverter (TestCase):
         expected = '1651\N{EN DASH}1653'
         self._check_conversion(text, expected)
 
-    def test_endnote (self):
-        text = 'FOO'
-        expected = 'QAZ'
-        self._check_conversion(text, expected)
+    def test_end_notes (self):
+        text = '''@h\\BPA!1532!DOU2!eng\\!
+@w\\f 124 {(19 November)}\\!
+Test.
+@EN\\
+@E\\A note.@E/
+@E\\Another note.@E/
+@EN/'''
+        expected = '''<text type="record">
+<body xml:lang="eng">
+<head><name type="place_region">BPA</name> <date when-iso="1532">1532</date></head>
+<div type="transcription">
+<div>
+<head>f 124 <ex>(19 November)</ex></head>
+Test.
+
+</div>
+</div>
+<div type="end_notes">
+<div type="end_note">
+A note.
+</div>
+<div type="end_note">
+Another note.
+</div>
+</div>
+</body>
+</text>'''
+        self._check_conversion(text, expected, False, False)
 
     def test_ENG (self):
         text = '@Nati'
@@ -222,23 +288,6 @@ class TestDocumentConverter (TestCase):
             expected = 'b{}\N{COMBINING MACRON}t'.format(vowel)
             self._check_conversion(text, expected)
 
-    def test_main_heading (self):
-        text = '@h\\BPA!1532!DOU2!lat\\!\n\n@w\\Test\\!\n\nText'
-        expected = '<text type="record">\n<body>\n<div xml:lang="lat"><head type="main"><name type="place_region">BPA</name> <date when-iso="1532">1532</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
-        self._check_conversion(text, expected, False, False)
-        text = '@h\\LEE!1630/1!V151!lat\\!\n\n@w\\Test\\!\n\nText'
-        expected = '<text type="record">\n<body>\n<div xml:lang="lat"><head type="main"><name type="place_region">LEE</name> <date when-iso="1631">1630/1</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
-        self._check_conversion(text, expected, False, False)
-        text = '@h\\LEE!1630-1!V151!eng\\!\n\n@w\\Test\\!\n\nText'
-        expected = '<text type="record">\n<body>\n<div xml:lang="eng"><head type="main"><name type="place_region">LEE</name> <date from-iso="1630" to-iso="1631">1630-1</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
-        self._check_conversion(text, expected, False, False)
-        text = '@h\\LEE!1629-31!V151!eng\\!\n\n@w\\Test\\!\n\nText'
-        expected = '<text type="record">\n<body>\n<div xml:lang="eng"><head type="main"><name type="place_region">LEE</name> <date from-iso="1629" to-iso="1631">1629-31</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
-        self._check_conversion(text, expected, False, False)
-        text = '@h\\LEE!1629/30-31/2!V151!eng\\!\n\n@w\\Test\\!\n\nText'
-        expected = '<text type="record">\n<body>\n<div xml:lang="eng"><head type="main"><name type="place_region">LEE</name> <date from-iso="1630" to-iso="1632">1629/30-31/2</date></head>\n\n<div type="subsection"><head type="sub">Test</head>\n\nText</div></div>\n</body>\n</text>'
-        self._check_conversion(text, expected, False, False)
-
     def test_OE (self):
         text = 'd@OEr'
         expected = 'd\N{LATIN CAPITAL LIGATURE OE}r'
@@ -268,6 +317,42 @@ class TestDocumentConverter (TestCase):
         text = 'mid@*dot'
         expected = 'mid\N{MIDDLE DOT}dot'
         self._check_conversion(text, expected)
+
+    def test_record_heading (self):
+        base_expected = '''<text type="record">
+<body xml:lang="{}">
+<head><name type="place_region">{}</name> {}</head>
+
+<div type="transcription">
+<div>
+<head>Test</head>
+
+Text
+</div>
+</div>
+</body>
+</text>'''
+        text = '@h\\BPA!1532!DOU2!lat\\!\n\n@w\\Test\\!\n\nText'
+        expected = base_expected.format('lat', 'BPA',
+                                        '<date when-iso="1532">1532</date>')
+        self._check_conversion(text, expected, False, False)
+        text = '@h\\LEE!1630/1!V151!lat\\!\n\n@w\\Test\\!\n\nText'
+        expected = base_expected.format('lat', 'LEE',
+                                        '<date when-iso="1631">1630/1</date>')
+        self._check_conversion(text, expected, False, False)
+        text = '@h\\LEE!1630-1!V151!eng\\!\n\n@w\\Test\\!\n\nText'
+        expected = base_expected.format(
+            'eng', 'LEE', '<date from-iso="1630" to-iso="1631">1630-1</date>')
+        self._check_conversion(text, expected, False, False)
+        text = '@h\\LEE!1629-31!V151!eng\\!\n\n@w\\Test\\!\n\nText'
+        expected = base_expected.format(
+            'eng', 'LEE', '<date from-iso="1629" to-iso="1631">1629-31</date>')
+        self._check_conversion(text, expected, False, False)
+        text = '@h\\LEE!1629/30-31/2!V151!eng\\!\n\n@w\\Test\\!\n\nText'
+        expected = base_expected.format(
+            'eng', 'LEE',
+            '<date from-iso="1630" to-iso="1632">1629/30-31/2</date>')
+        self._check_conversion(text, expected, False, False)
 
     def test_return (self):
         text = 'Bam! new line'
@@ -314,13 +399,6 @@ class TestDocumentConverter (TestCase):
         expected = 'Special \N{LATIN SMALL LETTER MIDDLE-WELSH V}, not k'
         self._check_conversion(text, expected)
 
-    def test_subsection (self):
-        # QAZ: Check what this should actually be - likely this needs
-        # to be processed further.
-        text = '@w\ f.40* {(12 January) (Fortune: Warrant)}\!\n\nText'
-        expected = '<div type="subsection"><head type="sub"> f.40* <ex>(12 January) (Fortune: Warrant)</ex></head>\n\nText</div>'
-        self._check_conversion(text, expected, True, False)
-
     def test_superscript (self):
         text = 'Some @s\\superscripted@s/ text'
         expected = 'Some <hi rend="superscript">superscripted</hi> text'
@@ -351,6 +429,17 @@ class TestDocumentConverter (TestCase):
             text = 'pa@"{}a'.format(char)
             expected = 'pa{}\N{COMBINING TILDE}a'.format(char)
             self._check_conversion(text, expected)
+
+    def test_transcription (self):
+        text = '@w\ f.40* {(12 January) (Fortune: Warrant)}\!\n\nText'
+        expected = '''<div type="transcription">
+<div>
+<head> f.40* <ex>(12 January) (Fortune: Warrant)</ex></head>
+
+Text
+</div>
+</div>'''
+        self._check_conversion(text, expected, True, False)
 
     def test_umlaut (self):
         for vowel in self.vowels:
