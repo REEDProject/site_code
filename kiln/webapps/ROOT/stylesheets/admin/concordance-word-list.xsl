@@ -8,11 +8,11 @@
 
   <xsl:template match="tei:TEI">
     <word_list>
-      <xsl:apply-templates select="tei:text" />
+      <xsl:apply-templates select="tei:text/tei:group/tei:text[@type='record']/tei:body" />
     </word_list>
   </xsl:template>
 
-  <xsl:template match="tei:div[tei:head/@type='main']">
+  <xsl:template match="tei:body">
     <record>
       <xsl:attribute name="date">
         <xsl:choose>
@@ -25,7 +25,7 @@
         </xsl:choose>
       </xsl:attribute>
       <xsl:attribute name="cit" select="normalize-space(tei:head)" />
-      <xsl:apply-templates />
+      <xsl:apply-templates select="tei:div[@type='transcription']" />
     </record>
   </xsl:template>
 
