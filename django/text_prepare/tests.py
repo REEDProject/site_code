@@ -95,7 +95,7 @@ class TestDocumentConverter (TestCase):
 
     def test_collation_note_ref (self):
         text = 'Some @cr\\@r1\\interesting text@cr/ content'
-        expected = 'Some <ref target="#c1">interesting text</ref> content'
+        expected = 'Some <ref target="#cn1" type="collation-note">interesting text</ref> content'
         self._check_conversion(text, expected)
 
     def test_collation_notes (self):
@@ -118,10 +118,10 @@ Test.
 </div>
 <div type="collation_notes">
 <div type="collation_note">
-<anchor n="c1" />A note.
+<anchor n="cn1" />A note.
 </div>
 <div type="collation_note">
-<anchor n="c2" />Another note.
+<anchor n="cn2" />Another note.
 </div>
 </div>
 </body>
@@ -483,7 +483,7 @@ Text
 class TestXSLT (TestCase):
 
     def setUp (self):
-        self._doc = Document(None, 0)
+        self._doc = Document(None, 0, 'staff')
         self.maxDiff = None
 
     def _transform (self, text, *xslt_paths):
@@ -578,4 +578,99 @@ After table text.
 </TEI>
 '''
         actual = self._transform(text, ADD_AB_XSLT_PATH)
+        self.assertEqual(actual, expected)
+
+    def test_add_id (self):
+        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<text>
+<group>
+<text type="record">
+<body>
+<head>@h head 1</head>
+<div type="transcription">
+<div>
+<head>@w head 1.1</head>
+<ab>Some text with <ref target="#cn1" type="collation-note">collated material</ref>.</ab>
+<ab>More <ref target="#cn2" type="collation-note">material needing a collation note</ref>.</ab>
+</div>
+</div>
+<div type="collation_notes">
+<div type="collation_note">
+<ab><anchor n="cn1" />A note.</ab>
+</div>
+<div type="collation_note">
+<ab><anchor n="cn2" />Another note.</ab>
+</div>
+</div>
+</body>
+</text>
+<text type="record">
+<body>
+<head>@h head 2</head>
+<div type="transcription">
+<div>
+<head>@w head 2.1</head>
+<ab>Nothing here.</ab>
+</div>
+</div>
+<div type="end_notes">
+<div type="end_note">
+<ab>An end note.</ab>
+</div>
+<div type="end_note">
+<ab>Another end note.</ab>
+</div>
+</div>
+</body>
+</text>
+</group>
+</text>
+</TEI>'''
+        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff">
+<text>
+<group>
+<text type="record" xml:id="staff-ridm4">
+<body>
+<head>@h head 1</head>
+<div type="transcription" xml:id="staff-ridm4-transcription">
+<div>
+<head>@w head 1.1</head>
+<ab>Some text with <ref target="#staff-ridm4-cnidm15" type="collation-note">collated material</ref>.</ab>
+<ab>More <ref target="#staff-ridm4-cnidm18" type="collation-note">material needing a collation note</ref>.</ab>
+</div>
+</div>
+<div type="collation_notes" xml:id="staff-ridm4-collation-notes">
+<div type="collation_note" xml:id="staff-ridm4-cnidm15">
+<ab>A note.</ab>
+</div>
+<div type="collation_note" xml:id="staff-ridm4-cnidm18">
+<ab>Another note.</ab>
+</div>
+</div>
+</body>
+</text>
+<text type="record" xml:id="staff-ridm21">
+<body>
+<head>@h head 2</head>
+<div type="transcription" xml:id="staff-ridm21-transcription">
+<div>
+<head>@w head 2.1</head>
+<ab>Nothing here.</ab>
+</div>
+</div>
+<div type="end_notes" xml:id="staff-ridm21-end-notes">
+<div type="end_note" xml:id="staff-ridm21-enidm29">
+<ab>An end note.</ab>
+</div>
+<div type="end_note" xml:id="staff-ridm21-enidm31">
+<ab>Another end note.</ab>
+</div>
+</div>
+</body>
+</text>
+</group>
+</text>
+</TEI>
+'''
+        actual = self._transform(text, ADD_ID_XSLT_PATH)
         self.assertEqual(actual, expected)

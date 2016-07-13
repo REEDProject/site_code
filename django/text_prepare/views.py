@@ -8,7 +8,7 @@ from .word_updater import update_word
 from .document import Document
 from .exceptions import (TextPrepareDocumentError,
                          TextPrepareDocumentValidationError)
-from .forms import BasicUploadDocumentForm, UploadDocumentForm
+from .forms import UpdateDocumentForm, ValidateDocumentForm, ConvertDocumentForm
 
 
 @login_required
@@ -22,12 +22,13 @@ def convert (request):
 def _convert (request):
     context = {}
     if request.method == 'POST':
-        form = UploadDocumentForm(request.POST, request.FILES)
+        form = ConvertDocumentForm(request.POST, request.FILES)
         if form.is_valid():
             line_length = form.cleaned_data['line_length']
+            base_id = form.cleaned_data['base_id']
             doc = request.FILES['document']
             context['filename'] = doc.name
-            document = Document(doc.temporary_file_path(), line_length)
+            document = Document(doc.temporary_file_path(), line_length, base_id)
             try:
                 tei = document.convert()
                 return HttpResponse(tei, content_type='text/xml')
@@ -37,7 +38,7 @@ def _convert (request):
             except TextPrepareDocumentError as error:
                 context['error'] = error
     else:
-        form = UploadDocumentForm()
+        form = ConvertDocumentForm()
     context['form'] = form
     return render(request, 'text_prepare/convert.html', context)
 
@@ -51,13 +52,13 @@ def update (request):
 @csrf_protect
 def _update (request):
     if request.method == 'POST':
-        form = BasicUploadDocumentForm(request.POST, request.FILES)
+        form = UpdateDocumentForm(request.POST, request.FILES)
         if form.is_valid():
             doc = request.FILES['document']
             updated_doc = update_word(doc.temporary_file_path())
             return HttpResponse(updated_doc, content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
     else:
-        form = BasicUploadDocumentForm()
+        form = UpdateDocumentForm()
     context = {'form': form}
     return render(request, 'text_prepare/update.html', context)
 
@@ -72,18 +73,18 @@ def validate (request):
 def _validate (request):
     context = {'error': None, 'filename': None, 'validated': False}
     if request.method == 'POST':
-        form = UploadDocumentForm(request.POST, request.FILES)
+        form = ValidateDocumentForm(request.POST, request.FILES)
         if form.is_valid():
             line_length = form.cleaned_data['line_length']
             doc = request.FILES['document']
             context['filename'] = doc.name
             context['validated'] = True
-            document = Document(doc.temporary_file_path(), line_length)
+            document = Document(doc.temporary_file_path(), line_length, '')
             try:
                 document.validate()
             except TextPrepareDocumentError as error:
                 context['error'] = error
     else:
-        form = UploadDocumentForm()
+        form = ValidateDocumentForm()
     context['form'] = form
     return render(request, 'text_prepare/validate.html', context)

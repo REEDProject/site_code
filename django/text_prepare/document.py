@@ -30,9 +30,10 @@ class Document:
     convert_command = '''soffice -env:UserInstallation=file://{} --headless
                          --cat {}'''
 
-    def __init__ (self, file_path, line_length):
+    def __init__ (self, file_path, line_length, base_id):
         self._file_path = file_path
         self._line_length = line_length
+        self._base_id = base_id
 
     def convert (self):
         text = self._get_text(self._file_path, self._line_length)
@@ -80,13 +81,13 @@ class Document:
 
     def _postprocess_text (self, text):
         tree = etree.ElementTree(etree.fromstring(text))
-        tree = self._transform(tree, ADD_AB_XSLT_PATH)
+        tree = self._transform(tree, ADD_AB_XSLT_PATH, ADD_ID_XSLT_PATH)
         return etree.tostring(tree, encoding='utf-8', pretty_print=True)
 
     def _transform (self, tree, *xslt_paths):
         for path in xslt_paths:
             transform = etree.XSLT(etree.parse(path))
-            tree = transform(tree)
+            tree = transform(tree, base_id="'{}'".format(self._base_id))
         return tree
 
     def validate (self):

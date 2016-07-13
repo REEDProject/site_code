@@ -333,13 +333,14 @@ def _pa_collation_note (s, loc, toks):
     return ['<div type="collation_note">\n', ''.join(toks[0]), '\n</div>\n']
 
 def _pa_collation_note_anchor (s, loc, toks):
-    return ['<anchor n="c{}" />'.format(toks[1])]
+    return ['<anchor n="cn{}" />'.format(toks[1])]
 
 def _pa_collation_notes (s, loc, toks):
     return ['<div type="collation_notes">\n', ''.join(toks[0]), '</div>\n']
 
 def _pa_collation_ref (s, loc, toks):
-    return ['<ref target="#c{}">{}</ref>'.format(toks[0][0], toks[0][1])]
+    return ['<ref target="#cn{}" type="collation-note">{}</ref>'.format(
+        toks[0][0], toks[0][1])]
 
 def _pa_collation_ref_number (s, loc, toks):
     return [toks[1]]
