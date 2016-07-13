@@ -19,7 +19,8 @@ CONTEXT_LINES_BEFORE = 1
 CONTEXT_LINES_AFTER = 2
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-XSLT_PATH = os.path.join(BASE_DIR, 'add_ab.xsl')
+ADD_AB_XSLT_PATH = os.path.join(BASE_DIR, 'add_ab.xsl')
+ADD_ID_XSLT_PATH = os.path.join(BASE_DIR, 'add_id.xsl')
 
 
 class Document:
@@ -42,10 +43,7 @@ class Document:
         text = '<TEI xmlns="http://www.tei-c.org/ns/1.0"><text><group>{}</group></text></TEI>'.format(
             ''.join(results))
         text = unicodedata.normalize('NFC', text)
-        root = etree.fromstring(text)
-        transform = etree.XSLT(etree.parse(XSLT_PATH))
-        result = transform(root)
-        return etree.tostring(result, encoding='utf-8', pretty_print=True)
+        return self._postprocess_text(text)
 
     def _get_text (self, file_path, line_length):
         """Return the plain text conversion of the file at `file_path`.
@@ -79,6 +77,17 @@ class Document:
                 raise TextPrepareDocumentTextExtractionError(message.format(e))
         text = text.decode('utf-8')
         return self._wrap_text(text, line_length)
+
+    def _postprocess_text (self, text):
+        tree = etree.ElementTree(etree.fromstring(text))
+        tree = self._transform(tree, ADD_AB_XSLT_PATH)
+        return etree.tostring(tree, encoding='utf-8', pretty_print=True)
+
+    def _transform (self, tree, *xslt_paths):
+        for path in xslt_paths:
+            transform = etree.XSLT(etree.parse(path))
+            tree = transform(tree)
+        return tree
 
     def validate (self):
         text = self._get_text(self._file_path, self._line_length)

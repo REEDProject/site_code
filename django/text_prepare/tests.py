@@ -1,5 +1,8 @@
 from django.test import TestCase
 
+from lxml import etree
+
+from .document import ADD_AB_XSLT_PATH, ADD_ID_XSLT_PATH, Document
 from .document_parser import document_grammar
 
 
@@ -475,3 +478,104 @@ Text
         text = '@l\\@k\\ac@k/or @k\\a@k/@l/!'
         expected = '<note type="marginal" place="margin_left" n="CHANGE_ME_TO_XMLID"><hi rend="smallcaps">ac</hi>or <hi rend="smallcaps">a</hi></note><lb />'
         self._check_conversion(text, expected)
+
+
+class TestXSLT (TestCase):
+
+    def setUp (self):
+        self._doc = Document(None, 0)
+        self.maxDiff = None
+
+    def _transform (self, text, *xslt_paths):
+        tree = etree.ElementTree(etree.fromstring(text))
+        result_tree = self._doc._transform(tree, *xslt_paths)
+        return etree.tostring(result_tree, encoding='unicode',
+                              pretty_print=True)
+
+    def test_add_ab (self):
+        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<text>
+<group>
+<text type="record">
+<body>
+<head>@h head 1</head>
+<div type="transcription">
+<div>
+<head>@w head 1.1</head>
+<lb/>Some text.<lb/>
+<lb/>More text.<lb/>
+</div>
+</div>
+<div type="end_notes">
+<div type="end_note">
+End note text.<lb/>
+</div>
+</div>
+</body>
+</text>
+<text type="record">
+<body>
+<head>@h head 2</head>
+<div type="transcription">
+<div>
+<head>@w head 2.1</head>
+Transcription text.<lb/>
+<table><r><c>Cell text 1</c><c>Cell text 2</c></r></table>
+After table text.
+</div>
+<div>
+<head>@w head 2.2</head>
+<lb/><lb/>More transcription text.
+</div>
+</div>
+</body>
+</text>
+</group>
+</text>
+</TEI>'''
+        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<text>
+<group>
+<text type="record">
+<body>
+<head>@h head 1</head>
+<div type="transcription">
+<div><head>@w head 1.1</head>
+<ab>Some text.</ab>
+
+<ab>More text.</ab>
+</div>
+</div>
+<div type="end_notes">
+<div type="end_note">
+<ab>
+End note text.</ab>
+</div>
+</div>
+</body>
+</text>
+<text type="record">
+<body>
+<head>@h head 2</head>
+<div type="transcription">
+<div><head>@w head 2.1</head>
+<ab>
+Transcription text.</ab>
+<table><r><c>Cell text 1</c><c>Cell text 2</c></r></table>
+<ab>
+After table text.
+</ab>
+</div>
+<div><head>@w head 2.2</head>
+<ab>More transcription text.
+</ab>
+</div>
+</div>
+</body>
+</text>
+</group>
+</text>
+</TEI>
+'''
+        actual = self._transform(text, ADD_AB_XSLT_PATH)
+        self.assertEqual(actual, expected)

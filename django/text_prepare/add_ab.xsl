@@ -13,16 +13,16 @@
        a tei:div), and those few that aren't can be ignored or handled
        manually). -->
 
-  <xsl:output indent="yes" />
-
   <xsl:template match="@*|node()">
     <xsl:copy>
       <xsl:apply-templates select="@*|node()" />
     </xsl:copy>
   </xsl:template>
 
-  <xsl:template match="tei:div[@type='subsection']">
+  <!-- Transcription section divs. -->
+  <xsl:template match="tei:div[../@type='transcription']">
     <xsl:copy>
+      <xsl:apply-templates select="@*" />
       <xsl:apply-templates select="tei:head" />
       <xsl:variable name="following-id">
         <xsl:call-template name="get-first-following">
@@ -35,6 +35,16 @@
     </xsl:copy>
   </xsl:template>
 
+  <!-- Content divs that do not have a tei:head. -->
+  <xsl:template match="tei:div[@type='end_note'] |
+                       tei:div[@type='collation_note']">
+    <xsl:copy>
+      <xsl:apply-templates select="@*" />
+      <xsl:apply-templates mode="initial" select="child::node()[1]" />
+    </xsl:copy>
+  </xsl:template>
+
+  <!-- Elements that should not be wrapped in tei:ab. -->
   <xsl:template match="tei:ab|tei:table" mode="initial">
     <xsl:copy-of select="." />
     <xsl:variable name="following-id">
@@ -55,9 +65,13 @@
     <xsl:choose>
       <xsl:when test="$following and $following-name != 'ab' and
                       $following-name != 'table' and $following-name != 'lb'">
+        <xsl:text>
+</xsl:text>
         <ab>
           <xsl:apply-templates mode="following" select="$following" />
         </ab>
+        <xsl:text>
+</xsl:text>
         <xsl:apply-templates mode="initial"
                              select="following-sibling::tei:lb[1]" />
       </xsl:when>
@@ -68,10 +82,14 @@
   </xsl:template>
 
   <xsl:template match="node()" mode="initial">
+    <xsl:text>
+</xsl:text>
     <ab>
       <xsl:copy-of select="." />
       <xsl:apply-templates mode="following" select="following-sibling::node()[1]" />
     </ab>
+    <xsl:text>
+</xsl:text>
     <xsl:apply-templates mode="initial"
                          select="following-sibling::tei:lb[1]" />
   </xsl:template>
@@ -99,6 +117,9 @@
     <xsl:choose>
       <xsl:when test="not($first-text)">
         <xsl:value-of select="generate-id($first-element)" />
+      </xsl:when>
+      <xsl:when test="not($first-element)">
+        <xsl:value-of select="generate-id($first-text)" />
       </xsl:when>
       <xsl:when test="$text-count &lt; $element-count">
         <xsl:value-of select="generate-id($first-text)" />
