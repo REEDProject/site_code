@@ -24,11 +24,11 @@ block names, they only need to be changed in this template.
 {% block eats_metadata %}{% endblock eats_metadata %}
 {% endblock metadata %}
 
-{% block style %}{{ block.super }}
+{% block css %}{{ block.super }}
 {% block eats_style %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/eats_base.css' %}"/>
 {% endblock eats_style %}
-{% endblock style %}
+{% endblock css %}
 
 {% block js %}{{ block.super }}
 {% block eats_js %}
