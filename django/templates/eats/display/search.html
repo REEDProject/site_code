@@ -1,0 +1,51 @@
+{% extends "eats/display/base.html" %}
+{% load entity_display %}
+{% load ddh_utils_tags %}
+
+{% block eats_title %}{{ block.super }} Search entities{% endblock eats_title %}
+
+{% block eats_content %}
+<h1>Search entities</h1>
+
+<form method="get" action="">
+{{ search_form.as_p }}
+<input class="button" type="submit" name="search" value="Search"/>
+</form>
+
+{% if entities %}
+<h2>Results</h2>
+
+<div id="search-results">
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Entity types</th>
+        <th scope="col">Dates</th>
+        <th scope="col">Other names</th>
+        <th scope="col">Relationships</th>
+        <th scope="col">Notes</th>
+        <th scope="col">Links</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for entity in entities %}
+      {% display_entity_search_result entity %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% display_pagination querydict entities %}
+
+{% else %}
+{% if search_form.is_bound %}
+<h2>No results</h2>
+{% endif %}
+{% endif %}
+
+{% if user_is_editor %}
+<p><a href="{% url 'eats-entity-add' %}">Create a new entity.</a></p>
+{% endif %}
+
+{% endblock eats_content %}
