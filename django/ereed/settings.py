@@ -45,6 +45,7 @@ INSTALLED_APPS = (
     'text_prepare',
     'records',
     'selectable',
+    'ddh_utils',
     'django_cache_manager',
     'tmapi',
     'eats',
