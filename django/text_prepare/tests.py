@@ -18,6 +18,7 @@ class TestDocumentConverter (TestCase):
             expected = '''<div type="transcription">
 <div>
 <head>f 124 <ex>(19 November)</ex></head>
+<pb n="124" type="folio" />
 ''' + expected + '''
 </div>
 </div>'''
@@ -113,6 +114,7 @@ Test.
 <div type="transcription">
 <div>
 <head>f 124 <ex>(19 November)</ex></head>
+<pb n="124" type="folio" />
 Test.
 
 </div>
@@ -181,6 +183,7 @@ Test.
 <div type="transcription">
 <div>
 <head>f 124 <ex>(19 November)</ex></head>
+<pb n="124" type="folio" />
 Test.
 
 </div>
@@ -302,6 +305,17 @@ Another note.
         expected = 'd\N{LATIN SMALL LIGATURE OE}r'
         self._check_conversion(text, expected)
 
+    def test_page_break (self):
+        text = '@w\\f 1\\!\nText that |crosses a page.'
+        expected = '''<div type="transcription">
+<div>
+<head>f 1</head>
+<pb n="1" type="folio" />
+Text that <pb />crosses a page.
+</div>
+</div>'''
+        self._check_conversion(text, expected, True, False)
+
     def test_paragraph (self):
         text = '@P Lo, a paragraph.'
         expected = '\N{PILCROW SIGN} Lo, a paragraph.'
@@ -330,6 +344,7 @@ Another note.
 <div type="transcription">
 <div>
 <head>Test</head>
+<pb />
 Text
 </div>
 </div>
@@ -436,10 +451,38 @@ Text
             self._check_conversion(text, expected)
 
     def test_transcription (self):
-        text = '@w\ f.40* {(12 January) (Fortune: Warrant)}\!\n\nText'
+        text = '@w\\ f.40* {(12 January) (Fortune: Warrant)}\!\nText'
         expected = '''<div type="transcription">
 <div>
 <head> f.40* <ex>(12 January) (Fortune: Warrant)</ex></head>
+<pb />
+Text
+</div>
+</div>'''
+        self._check_conversion(text, expected, True, False)
+        base_text = '@w\\{head}\!\nText'
+        base_expected = '''<div type="transcription">
+<div>
+<head>{head}</head>
+{pb}
+Text
+</div>
+</div>'''
+        all_data = [
+            {'head': 'single mb', 'pb': '<pb n="1" type="membrane" />'},
+            {'head': 'sig B3', 'pb': '<pb n="B3" type="signature" />'},
+            {'head': 'p 234', 'pb': '<pb n="234" type="page" />'},
+            {'head': 'ff [1v–2]', 'pb': '<pb type="folio" />'},
+            {'head': 'f 46v', 'pb': '<pb n="46v" type="folio" />'},
+            {'head': '', 'pb': ''}
+        ]
+        for data in all_data:
+            self._check_conversion(base_text.format(**data),
+                                   base_expected.format(**data), True, False)
+        text = '@w\\ {(12 January)}\!\nText'
+        expected = '''<div type="transcription">
+<div>
+<head> <ex>(12 January)</ex></head>
 
 Text
 </div>

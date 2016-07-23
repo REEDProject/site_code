@@ -43,7 +43,7 @@ def _define_grammar ():
     content.setWhitespaceChars('')
     content.setDefaultWhitespaceChars('')
     white = pp.Word(' ' + '\n')
-    punctuation = pp.oneOf('. , ; : \' " ( ) * / # $ % + - ? | – ‑')
+    punctuation = pp.oneOf('. , ; : \' " ( ) * / # $ % + - ? – ‑')
     integer = pp.Word(pp.nums)
     ignored = pp.oneOf('\ufeff').suppress() # zero width no-break space
     # This is an awful cludge for < to get around my inability to find
@@ -87,6 +87,7 @@ def _define_grammar ():
     macron_code.setParseAction(_pa_macron)
     oe_code = pp.Literal('@oe').setParseAction(_pa_oe)
     OE_code = pp.Literal('@OE').setParseAction(_pa_OE)
+    page_break_code = pp.Literal('|').setParseAction(_pa_page_break)
     paragraph_code = pp.Literal('@P').setParseAction(_pa_paragraph)
     pound_code = pp.Literal('@$').setParseAction(_pa_pound)
     raised_code = pp.Literal('@*').setParseAction(_pa_raised)
@@ -104,7 +105,7 @@ def _define_grammar ():
     wynn_code = pp.Literal('@y').setParseAction(_pa_wynn)
     yogh_code = pp.Literal('@z').setParseAction(_pa_yogh)
     YOGH_code = pp.Literal('@Z').setParseAction(_pa_YOGH)
-    single_codes = acute_code ^ ae_code ^ AE_code ^ blank_code ^ capitulum_code ^ caret_code ^ cedilla_code ^ circumflex_code ^ collation_ref_number_code ^ damaged_code ^ dot_over_code ^ dot_under_code ^ ellipsis_code ^ en_dash_code ^ eng_code ^ ENG_code ^ eth_code ^ exclamation_code ^ grave_code ^ macron_code ^ oe_code ^ OE_code ^ paragraph_code ^ pound_code ^ raised_code ^ section_code ^ semicolon_code ^ special_v_code ^ tab_code ^ thorn_code ^ THORN_code ^ tilde_code ^ umlaut_code ^ wynn_code ^ yogh_code ^ YOGH_code
+    single_codes = acute_code ^ ae_code ^ AE_code ^ blank_code ^ capitulum_code ^ caret_code ^ cedilla_code ^ circumflex_code ^ collation_ref_number_code ^ damaged_code ^ dot_over_code ^ dot_under_code ^ ellipsis_code ^ en_dash_code ^ eng_code ^ ENG_code ^ eth_code ^ exclamation_code ^ grave_code ^ macron_code ^ oe_code ^ OE_code ^ page_break_code ^ paragraph_code ^ pound_code ^ raised_code ^ section_code ^ semicolon_code ^ special_v_code ^ tab_code ^ thorn_code ^ THORN_code ^ tilde_code ^ umlaut_code ^ wynn_code ^ yogh_code ^ YOGH_code
     enclosed = pp.Forward()
     bold_code = pp.nestedExpr('@e\\', '@e/', content=enclosed)
     bold_code.setParseAction(_pa_bold)
@@ -238,7 +239,13 @@ def _define_grammar ():
     record_heading = pp.nestedExpr('@h\\', '\\!',
                                         content=record_heading_content)
     record_heading.setParseAction(_pa_record_heading)
-    transcription_heading = pp.nestedExpr('@w\\', '\\!', content=enclosed)
+    # A special content model is required for transcription headings,
+    # since [] does not mean deleted material there.
+    transcription_heading_content = pp.OneOrMore(
+        single_codes ^ pp.Word(pp.alphanums + ' []-–') ^ punctuation ^
+        xml_escape ^ ignored ^ expansion_code)
+    transcription_heading = pp.nestedExpr('@w\\', '\\!',
+                                          content=transcription_heading_content)
     transcription_heading.setParseAction(_pa_transcription_heading)
     transcription_section = transcription_heading - pp.OneOrMore(
         table ^ enclosed)
@@ -270,6 +277,22 @@ def _define_grammar ():
                    pp.Optional(collation_notes) + pp.Optional(end_notes)
     record.setParseAction(_pa_record)
     return pp.StringStart() + pp.OneOrMore(record) + pp.StringEnd()
+
+def _get_page_type (data):
+    """Return the expanded page type indicated by the abbreviation `data`,
+    or an empty string if not match is found."""
+    ptype = ''
+    if data in ('f', 'ff'):
+        ptype = 'folio'
+    elif data == 'mb':
+        ptype = 'membrane'
+    elif data == 'p':
+        ptype = 'page'
+    elif data == 'sheet':
+        ptype = 'sheet'
+    elif data == 'sig':
+        ptype = 'signature'
+    return ptype
 
 def _make_foreign (lang_code, toks):
     return ['<foreign xml:lang="{}">{}</foreign>'.format(
@@ -474,6 +497,9 @@ def _pa_oe (s, loc, toks):
 def _pa_OE (s, loc, toks):
     return ['\N{LATIN CAPITAL LIGATURE OE}']
 
+def _pa_page_break (s, loc, toks):
+    return ['<pb />']
+
 def _pa_paragraph (s, loc, toks):
     return ['\N{PILCROW SIGN}']
 
@@ -576,7 +602,33 @@ def _pa_transcription (s, loc, toks):
     return ['<div type="transcription">\n', ''.join(toks), '</div>\n']
 
 def _pa_transcription_heading (s, loc, toks):
-    return ['<head>', ''.join(toks[0]), '</head>']
+    try:
+        page_details = toks[0][0].strip().split()
+    except IndexError:
+        # toks[0] (the entire contents of the @w) may be empty (though
+        # this is a degenerate case that likely shouldn't occur).
+        page_details = []
+    if page_details:
+        n = ''
+        ptype = ''
+        if len(page_details) < 2:
+            pass
+        elif page_details[0] == 'single':
+            n = '1'
+            ptype = _get_page_type(page_details[1])
+        else:
+            ptype = _get_page_type(page_details[0])
+            n = page_details[1]
+        if '–' in n or '-' in n:
+            n = ''
+        if ptype:
+            ptype = ' type="{}"'.format(ptype)
+        if n:
+            n = ' n="{}"'.format(n)
+        pb = '<pb{}{} />'.format(n, ptype)
+    else:
+        pb = ''
+    return ['<head>{}</head>\n{}'.format(''.join(toks[0]), pb)]
 
 def _pa_transcription_section (s, loc, toks):
     return ['<div>\n', ''.join(toks), '\n</div>\n']
