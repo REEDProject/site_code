@@ -71,7 +71,7 @@ class TestDocumentConverter (TestCase):
 
     def test_caret (self):
         text = 'a^e'
-        expected = 'a\N{LATIN SMALL LETTER TURNED V}e'
+        expected = 'a\N{CARET}e'
         self._check_conversion(text, expected)
 
     def test_cedilla (self):

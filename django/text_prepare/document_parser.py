@@ -336,7 +336,7 @@ def _pa_capitulum (s, loc, toks):
     return ['\N{BLACK LEFTWARDS BULLET}']
 
 def _pa_caret (s, loc, toks):
-    return ['\N{LATIN SMALL LETTER TURNED V}']
+    return ['\N{CARET}']
 
 def _pa_cedilla (s, loc, toks):
     return ['{}\N{COMBINING CEDILLA}'.format(toks[1])]
