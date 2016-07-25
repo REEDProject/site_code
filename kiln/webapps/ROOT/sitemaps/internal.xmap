@@ -2,7 +2,7 @@
 <map:sitemap xmlns:map="http://apache.org/cocoon/sitemap/1.0">
 
   <map:pipelines>
-    <map:pipeline internal-only="true">
+    <map:pipeline internal-only="false">
       <!-- Process a TEI document prior to its use in another
            pipeline, normalising and annotating it as required. -->
       <map:match id="local-preprocess-tei"
@@ -10,6 +10,15 @@
         <map:generate src="../content/xml/tei/{1}.xml" />
         <map:transform src="../kiln/stylesheets/tei/join-elements.xsl" />
         <map:transform src="../kiln/stylesheets/tei/annotate.xsl" />
+        <map:serialize type="xml" />
+      </map:match>
+
+      <map:match id="ereed-preprocess-record-tei"
+                 pattern="tei/preprocess-record/*-*.xml">
+        <map:generate src="../content/xml/tei/records/{1}.xml" />
+        <map:transform src="../stylesheets/tei/extract-record.xsl">
+          <map:parameter name="record-id" value="{1}-{2}" />
+        </map:transform>
         <map:serialize type="xml" />
       </map:match>
 

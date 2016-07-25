@@ -78,6 +78,17 @@
         <map:serialize />
       </map:match>
 
+      <map:match id="ereed-record-display-html"
+                 pattern="records/*.html">
+        <map:aggregate element="aggregation" label="content">
+          <map:part label="tei"
+                    src="cocoon://internal/tei/preprocess-record/{1}.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=records/{1}.html" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/tei.xsl" />
+        <map:serialize />
+      </map:match>
+
       <map:match id="local-tei-display-html" pattern="text/**.html">
         <map:aggregate element="aggregation" label="content">
           <map:part label="tei" src="cocoon://internal/tei/preprocess/{1}.xml" />

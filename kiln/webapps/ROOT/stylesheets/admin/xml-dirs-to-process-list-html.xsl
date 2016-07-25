@@ -48,6 +48,7 @@
     <xsl:variable name="new_path" select="concat($path, @name, '/')"/>
     <xsl:apply-templates select="dir:file" mode="#current">
       <xsl:with-param name="path" select="$new_path"/>
+      <xsl:with-param name="parent-dir" select="@name" />
     </xsl:apply-templates>
     <xsl:apply-templates select="dir:directory" mode="#current">
       <xsl:with-param name="path" select="$new_path"/>
@@ -56,6 +57,7 @@
 
   <xsl:template match="dir:file" mode="tei">
     <xsl:param name="path"/>
+    <xsl:param name="parent-dir" />
     <xsl:variable name="filepath">
       <xsl:value-of select="$path"/>
       <xsl:value-of select="substring-before(@name, '.xml')"/>
@@ -87,8 +89,16 @@
       </td>
       <!-- Search indexing. -->
       <td>
+        <xsl:variable name="content-type">
+          <xsl:text>tei</xsl:text>
+          <xsl:if test="$parent-dir != 'tei'">
+            <xsl:text>-</xsl:text>
+            <xsl:value-of select="$parent-dir" />
+          </xsl:if>
+        </xsl:variable>
         <a title="Index document in search server"
-           href="{kiln:url-for-match('local-solr-index', ('tei', $filepath))}">
+           href="{kiln:url-for-match('local-solr-index',
+                 ($content-type, $filepath))}">
           <xsl:text>Index</xsl:text>
         </a>
       </td>

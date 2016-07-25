@@ -123,14 +123,8 @@
           required="false" stored="true" type="string" />
    <field indexed="false" multiValued="false" name="document_id"
           required="true" stored="true" type="string" />
-   <field indexed="false" multiValued="false" name="section_id"
+   <field indexed="true" multiValued="True" name="mentioned_entities"
           required="false" stored="true" type="string" />
-   <field indexed="true" multiValued="false" name="entity_key"
-          required="false" stored="true" type="string" />
-   <field indexed="true" multiValued="false" name="entity_name"
-          required="false" stored="true" type="text_general" />
-   <field indexed="true" multiValued="false" name="eats_entity_name"
-          required="false" stored="true" type="text_general" />
 
    <!-- catchall field, containing all other searchable text fields
         (implemented via copyField further on in this schema -->
