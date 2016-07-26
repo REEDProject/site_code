@@ -24,6 +24,12 @@ ADD_AB_XSLT_PATH = os.path.join(XSLT_DIR, 'add_ab.xsl')
 ADD_HEADER_XSLT_PATH = os.path.join(XSLT_DIR, 'add_header.xsl')
 ADD_ID_XSLT_PATH = os.path.join(XSLT_DIR, 'add_id.xsl')
 
+TEI_SKELETON = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/">
+  <text>
+    <group>{}</group>
+  </text>
+</TEI>'''
+
 
 class Document:
 
@@ -43,8 +49,7 @@ class Document:
         return self._convert(results)
 
     def _convert (self, results):
-        text = '<TEI xmlns="http://www.tei-c.org/ns/1.0"><text><group>{}</group></text></TEI>'.format(
-            ''.join(results))
+        text = TEI_SKELETON.format(''.join(results))
         text = unicodedata.normalize('NFC', text)
         return self._postprocess_text(text)
 
