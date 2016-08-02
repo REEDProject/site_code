@@ -383,6 +383,11 @@ Text
                 'year': 'c 1629/30-31/2'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), False, False)
+        data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
+                'date': '<date from-iso="1601" to-iso="1700">17th Century</date>',
+                'year': '17th Century'}
+        self._check_conversion(base_input.format(**data),
+                               base_expected.format(**data), False, False)
 
     def test_return (self):
         text = 'Bam! new line'

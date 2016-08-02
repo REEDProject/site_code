@@ -220,6 +220,8 @@ def _define_grammar ():
     record_heading_record = pp.Word(pp.alphanums)
     record_heading_record.setParseAction(_pa_record_heading_record)
     year = pp.Word(pp.nums, min=4, max=4)
+    record_heading_date_century = pp.Word(pp.nums, min=2, max=2).setResultsName('century') + pp.Literal('th Century').setResultsName('label')
+    record_heading_date_century.setParseAction(_pa_record_heading_date_century)
     circa = pp.Literal('c ')
     slash_year = pp.Literal('/') + pp.Word(pp.nums, min=1, max=2)
     start_year = pp.Optional(circa).setResultsName('circa') + \
@@ -227,8 +229,10 @@ def _define_grammar ():
                  pp.Optional(slash_year).setResultsName('slash_year')
     end_year = pp.Word(pp.nums, min=1, max=4).setResultsName('end_year') + \
                pp.Optional(slash_year).setResultsName('slash_end_year')
-    record_heading_date = start_year + pp.Optional(pp.oneOf('- –') + end_year)
-    record_heading_date.setParseAction(_pa_record_heading_date)
+    record_heading_date_year = start_year + pp.Optional(pp.oneOf('- –') + \
+                                                        end_year)
+    record_heading_date_year.setParseAction(_pa_record_heading_date_year)
+    record_heading_date = record_heading_date_century ^ record_heading_date_year
     language_code = pp.oneOf('cnx cor cym deu eng fra gla gmh gml grc ita lat '
                              'por spa wlm xno')
     record_heading_content = record_heading_place - \
@@ -521,7 +525,13 @@ def _pa_record_heading (s, loc, toks):
     place, date, record, language_code = toks[0]
     return [language_code, '<head>{} {} {}</head>'.format(place, date, record)]
 
-def _pa_record_heading_date (s, loc, toks):
+def _pa_record_heading_date_century (s, loc, toks):
+    century = int(toks['century'])
+    label = toks['label']
+    return ['<date from-iso="{}01" to-iso="{}00">{}{}</date>'.format(
+        century-1, century, century, label)]
+
+def _pa_record_heading_date_year (s, loc, toks):
     circa = toks.get('circa')
     year = toks['year']
     slash_year = toks.get('slash_year')
