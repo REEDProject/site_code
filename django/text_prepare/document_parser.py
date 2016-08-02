@@ -220,11 +220,13 @@ def _define_grammar ():
     record_heading_record = pp.Word(pp.alphanums)
     record_heading_record.setParseAction(_pa_record_heading_record)
     year = pp.Word(pp.nums, min=4, max=4)
-    slash_year = pp.Optional(pp.Literal('/') + pp.Word(pp.nums, min=1, max=2))
-    start_year = year.setResultsName('year') + slash_year.setResultsName(
-        'slash_year')
+    circa = pp.Literal('c ')
+    slash_year = pp.Literal('/') + pp.Word(pp.nums, min=1, max=2)
+    start_year = pp.Optional(circa).setResultsName('circa') + \
+                 year.setResultsName('year') + \
+                 pp.Optional(slash_year).setResultsName('slash_year')
     end_year = pp.Word(pp.nums, min=1, max=4).setResultsName('end_year') + \
-               slash_year.setResultsName('slash_end_year')
+               pp.Optional(slash_year).setResultsName('slash_end_year')
     record_heading_date = start_year + pp.Optional(pp.oneOf('- –') + end_year)
     record_heading_date.setParseAction(_pa_record_heading_date)
     language_code = pp.oneOf('cnx cor cym deu eng fra gla gmh gml grc ita lat '
@@ -520,20 +522,26 @@ def _pa_record_heading (s, loc, toks):
     return [language_code, '<head>{} {} {}</head>'.format(place, date, record)]
 
 def _pa_record_heading_date (s, loc, toks):
+    circa = toks.get('circa')
     year = toks['year']
     slash_year = toks.get('slash_year')
     end_year = toks.get('end_year')
     slash_end_year = toks.get('slash_end_year')
+    attrs = []
+    if circa:
+        attrs.append('precision="low"')
     if slash_year:
         year = _merge_years(year, slash_year[1])
     if end_year:
         end_year = _merge_years(year, end_year)
         if slash_end_year:
             end_year = _merge_years(end_year, slash_end_year[1])
-        attrs = 'from-iso="{}" to-iso="{}"'.format(year, end_year)
+        attrs.append('from-iso="{}"'.format(year))
+        attrs.append('to-iso="{}"'.format(end_year))
     else:
-        attrs = 'when-iso="{}"'.format(year)
-    return ['<date {}>{}</date>'.format(attrs, ''.join(toks))]
+        attrs.append('when-iso="{}"'.format(year))
+    attrs.sort()
+    return ['<date {}>{}</date>'.format(' '.join(attrs), ''.join(toks))]
 
 def _pa_record_heading_place (s, loc, toks):
     return ['<name ana="ereed:{}" type="place_region">{}</name>'.format(
