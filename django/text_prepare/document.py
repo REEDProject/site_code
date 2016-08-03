@@ -90,7 +90,7 @@ class Document:
     def _postprocess_text (self, text):
         tree = etree.ElementTree(etree.fromstring(text))
         tree = self._transform(tree, ADD_AB_XSLT_PATH, ADD_ID_XSLT_PATH,
-                               ADD_HEADER_XSLT_PATH)
+                               ADD_HEADER_XSLT_PATH, MASSAGE_FOOTNOTE_XSLT_PATH)
         return etree.tostring(tree, encoding='utf-8', pretty_print=True)
 
     def _transform (self, tree, *xslt_paths):
