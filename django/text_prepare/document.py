@@ -1,4 +1,5 @@
 import os.path
+import re
 import shlex
 import subprocess
 import tempfile
@@ -52,7 +53,12 @@ class Document:
     def _convert (self, results):
         text = TEI_SKELETON.format(''.join(results))
         text = unicodedata.normalize('NFC', text)
-        return self._postprocess_text(text)
+        text = self._postprocess_text(text)
+        # Do some cosmetic changes that are too hard to do with XSLT
+        # 1. This is rather dirty!
+        text = re.sub(r'(<ab[^>]*>)[ \t\n\r\f\v]+', r'\1', text)
+        text = re.sub(r'[ \t\n\r\f\v]+(</ab>)', r'\1', text)
+        return text.encode('utf-8')
 
     def _get_text (self, file_path, line_length):
         """Return the plain text conversion of the file at `file_path`.
@@ -91,7 +97,7 @@ class Document:
         tree = etree.ElementTree(etree.fromstring(text))
         tree = self._transform(tree, ADD_AB_XSLT_PATH, ADD_ID_XSLT_PATH,
                                ADD_HEADER_XSLT_PATH, MASSAGE_FOOTNOTE_XSLT_PATH)
-        return etree.tostring(tree, encoding='utf-8', pretty_print=True)
+        return etree.tostring(tree, encoding='unicode', pretty_print=True)
 
     def _transform (self, tree, *xslt_paths):
         for path in xslt_paths:
