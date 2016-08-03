@@ -3,7 +3,7 @@ from django.test import TestCase
 from lxml import etree
 
 from .document import (ADD_AB_XSLT_PATH, ADD_HEADER_XSLT_PATH,
-                       ADD_ID_XSLT_PATH, Document)
+                       ADD_ID_XSLT_PATH, Document, MASSAGE_FOOTNOTE_XSLT_PATH)
 from .document_parser import document_grammar
 
 
@@ -772,4 +772,43 @@ After table text.
 </TEI>
 '''
         actual = self._transform(text, ADD_ID_XSLT_PATH)
+        self.assertEqual(actual, expected)
+
+    def test_massage_footnote (self):
+        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<text>
+<group>
+<text type="record">
+<body>
+<head>@h head 1</head>
+<div type="transcription">
+<div>
+<head>@w head 1.1</head>
+<ab>Some text with <note type="foot">with: <ex>see f <del>1v</del>.</ex></note>.</ab>
+</div>
+</div>
+</body>
+</text>
+</group>
+</text>
+</TEI>'''
+        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<text>
+<group>
+<text type="record">
+<body>
+<head>@h head 1</head>
+<div type="transcription">
+<div>
+<head>@w head 1.1</head>
+<ab>Some text with <note type="foot">with: <ex>see f [1v].</ex></note>.</ab>
+</div>
+</div>
+</body>
+</text>
+</group>
+</text>
+</TEI>
+'''
+        actual = self._transform(text, MASSAGE_FOOTNOTE_XSLT_PATH)
         self.assertEqual(actual, expected)

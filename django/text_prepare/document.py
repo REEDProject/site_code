@@ -23,6 +23,7 @@ XSLT_DIR = os.path.join(BASE_DIR, 'xslt')
 ADD_AB_XSLT_PATH = os.path.join(XSLT_DIR, 'add_ab.xsl')
 ADD_HEADER_XSLT_PATH = os.path.join(XSLT_DIR, 'add_header.xsl')
 ADD_ID_XSLT_PATH = os.path.join(XSLT_DIR, 'add_id.xsl')
+MASSAGE_FOOTNOTE_XSLT_PATH = os.path.join(XSLT_DIR, 'massage_footnote.xsl')
 
 TEI_SKELETON = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/">
   <text>
