@@ -45,8 +45,12 @@
   </xsl:template>
 
   <!-- Elements that should not be wrapped in tei:ab. -->
-  <xsl:template match="tei:ab|tei:table" mode="initial">
+  <xsl:template match="tei:ab|tei:table|tei:list" mode="initial">
+    <xsl:text>
+</xsl:text>
     <xsl:copy-of select="." />
+    <xsl:text>
+</xsl:text>
     <xsl:variable name="following-id">
       <xsl:call-template name="get-first-following" />
     </xsl:variable>
@@ -64,7 +68,8 @@
     <xsl:variable name="following-name" select="local-name($following)" />
     <xsl:choose>
       <xsl:when test="$following and $following-name != 'ab' and
-                      $following-name != 'table' and $following-name != 'lb'">
+                      $following-name != 'table' and $following-name != 'lb'
+                      and $following-name != 'list'">
         <xsl:text>
 </xsl:text>
         <ab>

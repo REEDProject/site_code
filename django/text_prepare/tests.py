@@ -295,6 +295,11 @@ Another note.
         expected = 'Hark, a <note type="marginal" place="margin_left" n="CHANGE_ME_TO_XMLID">left marginale note</note> appears'
         self._check_conversion(text, expected)
 
+    def test_list (self):
+        text = '@ul\\ @li\\List item@li/ @li\\Another@li/ @ul/'
+        expected = '<list><item>List item</item><item>Another</item></list>'
+        self._check_conversion(text, expected)
+
     def test_macron (self):
         for vowel in self.vowels:
             text = 'b@-{}t'.format(vowel)
@@ -570,6 +575,8 @@ class TestXSLT (TestCase):
 <head>@w head 1.1</head>
 <lb/>Some text.<lb/>
 <lb/>More text.<lb/>
+<lb/>
+<list><item>Item.</item></list><lb/>
 </div>
 </div>
 <div type="end_notes">
@@ -610,6 +617,8 @@ After table text.
 <ab>Some text.</ab>
 
 <ab>More text.</ab>
+
+<list><item>Item.</item></list>
 </div>
 </div>
 <div type="end_notes">
@@ -627,7 +636,9 @@ End note text.</ab>
 <div><head>@w head 2.1</head>
 <ab>
 Transcription text.</ab>
+
 <table><r><c>Cell text 1</c><c>Cell text 2</c></r></table>
+
 <ab>
 After table text.
 </ab>

@@ -185,6 +185,12 @@ def _define_grammar ():
     italic_small_caps_code.setParseAction(_pa_italic_small_caps)
     left_marginale_code = pp.nestedExpr('@l\\', '@l/', content=enclosed)
     left_marginale_code.setParseAction(_pa_left_marginale)
+    list_item_code = pp.nestedExpr('@li\\', '@li/', content=enclosed)
+    list_item_code.setParseAction(_pa_list_item_code)
+    list_code = pp.nestedExpr('@ul\\', '@ul/', content=pp.OneOrMore(
+        pp.Suppress(pp.ZeroOrMore(white | ignored)) + list_item_code +
+        pp.Suppress(pp.ZeroOrMore(white | ignored))))
+    list_code.setParseAction(_pa_list_code)
     personnel_code = pp.nestedExpr('@x\\', '@x/', content=enclosed)
     personnel_code.setParseAction(_pa_personnel)
     right_marginale_code = pp.nestedExpr('@r\\', '@r/', content=enclosed)
@@ -202,7 +208,7 @@ def _define_grammar ():
     tab_start_code = pp.nestedExpr(pp.LineStart() + pp.Literal('@['), '!',
                                    content=enclosed)
     tab_start_code.setParseAction(_pa_tab_start)
-    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ collation_ref ^ comment_code ^ deleted_code ^ exdented_code ^ expansion_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_small_caps_code ^ language_codes ^ left_marginale_code ^ personnel_code ^ right_marginale_code ^ signed_code ^ signed_centre_code ^ signed_right_code ^ small_caps_code ^ superscript_code ^ tab_start_code
+    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ collation_ref ^ comment_code ^ deleted_code ^ exdented_code ^ expansion_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_small_caps_code ^ language_codes ^ left_marginale_code ^ list_code ^ personnel_code ^ right_marginale_code ^ signed_code ^ signed_centre_code ^ signed_right_code ^ small_caps_code ^ superscript_code ^ tab_start_code
     enclosed << pp.OneOrMore(single_codes ^ return_code ^ paired_codes ^
                              content ^ punctuation ^ xml_escape ^ ignored)
     cell = pp.nestedExpr('<c>', '</c>', content=enclosed)
@@ -493,6 +499,12 @@ def _pa_lang_welsh (s, loc, toks):
 def _pa_left_marginale (s, loc, toks):
     return ['<note type="marginal" place="margin_left" n="CHANGE_ME_TO_XMLID">',
             ''.join(toks[0]), '</note>']
+
+def _pa_list_item_code (s, loc, toks):
+    return ['<item>', ''.join(toks[0]), '</item>']
+
+def _pa_list_code (s, loc, toks):
+    return ['<list>', ''.join(toks[0]), '</list>']
 
 def _pa_macron (s, loc, toks):
     return ['{}\N{COMBINING MACRON}'.format(toks[1])]
