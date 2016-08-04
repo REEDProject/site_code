@@ -502,8 +502,8 @@ def _pa_lang_welsh (s, loc, toks):
     return _make_foreign('cym', toks)
 
 def _pa_left_marginale (s, loc, toks):
-    return ['<note type="marginal" place="margin_left" n="CHANGE_ME_TO_XMLID">',
-            ''.join(toks[0]), '</note>']
+    return ['<note type="marginal" place="margin_left">', ''.join(toks[0]),
+            '</note>']
 
 def _pa_list_item_code (s, loc, toks):
     return ['<item>', ''.join(toks[0]), '</item>']
@@ -583,8 +583,8 @@ def _pa_return (s, loc, toks):
     return ['<lb />']
 
 def _pa_right_marginale (s, loc, toks):
-    return ['<note type="marginal" place="margin_right" n="CHANGE_ME_TO_XMLID">',
-            ''.join(toks[0]), '</note>']
+    return ['<note type="marginal" place="margin_right">', ''.join(toks[0]),
+            '</note>']
 
 def _pa_row (s, loc, toks):
     return ['<row>', ''.join(toks[0]), '</row>']

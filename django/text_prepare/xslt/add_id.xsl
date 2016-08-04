@@ -74,6 +74,24 @@
     </xsl:call-template>
   </xsl:template>
 
+  <xsl:template match="tei:note[@type='foot']">
+    <xsl:param name="id_prefix" />
+    <xsl:call-template name="copy-element-add-id">
+      <xsl:with-param name="id_prefix" select="$id_prefix" />
+      <xsl:with-param name="id" select="concat($id_prefix, '-fn',
+                                        generate-id())" />
+    </xsl:call-template>
+  </xsl:template>
+
+  <xsl:template match="tei:note[@type='marginal']">
+    <xsl:param name="id_prefix" />
+    <xsl:call-template name="copy-element-add-id">
+      <xsl:with-param name="id_prefix" select="$id_prefix" />
+      <xsl:with-param name="id" select="concat($id_prefix, '-mn',
+                                        generate-id())" />
+    </xsl:call-template>
+  </xsl:template>
+
   <xsl:template match="tei:ref[@type='collation-note']">
     <xsl:param name="id_prefix" />
     <xsl:variable name="ref" select="substring-after(@target, '#')" />

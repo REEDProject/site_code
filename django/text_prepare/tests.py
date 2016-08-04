@@ -297,7 +297,7 @@ Another note.
 
     def test_left_marginale (self):
         text = 'Hark, a @l\\left marginale note@l/ appears'
-        expected = 'Hark, a <note type="marginal" place="margin_left" n="CHANGE_ME_TO_XMLID">left marginale note</note> appears'
+        expected = 'Hark, a <note type="marginal" place="margin_left">left marginale note</note> appears'
         self._check_conversion(text, expected)
 
     def test_list (self):
@@ -412,7 +412,7 @@ Text
 
     def test_right_marginale (self):
         text = 'Hark, a @r\\right marginale note@r/ appears'
-        expected = 'Hark, a <note type="marginal" place="margin_right" n="CHANGE_ME_TO_XMLID">right marginale note</note> appears'
+        expected = 'Hark, a <note type="marginal" place="margin_right">right marginale note</note> appears'
         self._check_conversion(text, expected)
 
     def test_section (self):
@@ -552,7 +552,7 @@ Text
         # This is impossible to comprehensively test. Start with a few
         # examples and add more as problems are discovered.
         text = '@l\\@k\\ac@k/or @k\\a@k/@l/!'
-        expected = '<note type="marginal" place="margin_left" n="CHANGE_ME_TO_XMLID"><hi rend="smallcaps">ac</hi>or <hi rend="smallcaps">a</hi></note><lb />'
+        expected = '<note type="marginal" place="margin_left"><hi rend="smallcaps">ac</hi>or <hi rend="smallcaps">a</hi></note><lb />'
         self._check_conversion(text, expected)
 
 
@@ -734,7 +734,7 @@ After table text.
 <div type="transcription">
 <div>
 <head>@w head 2.1</head>
-<ab>Nothing here.</ab>
+<ab>Nothing here but a <note type="marginal" place="margin_left">marginal note</note> and a <note type="foot">footnote</note>.</ab>
 </div>
 </div>
 <div type="end_notes">
@@ -779,14 +779,14 @@ After table text.
 <div type="transcription" xml:id="staff-ridm21-transcription">
 <div>
 <head>@w head 2.1</head>
-<ab>Nothing here.</ab>
+<ab>Nothing here but a <note type="marginal" place="margin_left" xml:id="staff-ridm21-mnidm28">marginal note</note> and a <note type="foot" xml:id="staff-ridm21-fnidm29">footnote</note>.</ab>
 </div>
 </div>
 <div type="end_notes" xml:id="staff-ridm21-end-notes">
-<div type="end_note" xml:id="staff-ridm21-enidm29">
+<div type="end_note" xml:id="staff-ridm21-enidm31">
 <ab>An end note.</ab>
 </div>
-<div type="end_note" xml:id="staff-ridm21-enidm31">
+<div type="end_note" xml:id="staff-ridm21-enidm33">
 <ab>Another end note.</ab>
 </div>
 </div>
