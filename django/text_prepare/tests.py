@@ -33,6 +33,12 @@ class TestDocumentConverter (TestCase):
         actual = ''.join(document_grammar.parseString(text))
         self.assertEqual(actual, expected)
 
+    def test_foo (self):
+        text = 'Item@f\Item: {written in display script}@f/ it is ordered that it shalbe lawfull for the said foure officers called the stewards of the said courte called the min<...>@f\min<...>:  minst<…> {BL: Addit. Ch. 42681A}@f/ Courte and for every or any of them accordinge to the auncient Custome to distreine the Instrument{es} of musick or any <...>@f\<...>: other {BL: Addit. Ch. 42681A}@f/ goodes or Chattells'
+        expected = 'Item<note type="foot">Item: <ex>written in display script</ex></note> it is ordered that it shalbe lawfull for the said foure officers called the stewards of the said courte called the min<damage><gap unit="chars" extent="3" /></damage><note type="foot">min<damage><gap unit="chars" extent="3" /></damage>:  minst<damage><gap unit="chars" extent="1" /></damage> <ex>BL: Addit. Ch. 42681A</ex></note> Courte and for every or any of them accordinge to the auncient Custome to distreine the Instrument<ex>es</ex> of musick or any <damage><gap unit="chars" extent="3" /></damage><note type="foot"><damage><gap unit="chars" extent="3" /></damage>: other <ex>BL: Addit. Ch. 42681A</ex></note> goodes or Chattells'
+        self.maxDiff = None
+        self._check_conversion(text, expected)
+
     def test_acute (self):
         for vowel in self.vowels:
             text = "b@'{}t".format(vowel)
@@ -222,7 +228,7 @@ Another note.
 
     def test_exdented (self):
         text = '@g\\Exdented block of text.@g/'
-        expected = '<ab type="body_p_exdented">Exdented block of text.</ab>'
+        expected = '<ab type="exdent">Exdented block of text.</ab>'
         self._check_conversion(text, expected)
 
     def test_expansion (self):
@@ -243,7 +249,7 @@ Another note.
 
     def test_indented (self):
         text = '@p\\Indented block of text.@p/'
-        expected = '<ab type="body_p_indented">Indented block of text.</ab>'
+        expected = '<ab type="indent">Indented block of text.</ab>'
         self._check_conversion(text, expected)
 
     def test_interlineation_above (self):

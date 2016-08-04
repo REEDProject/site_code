@@ -416,7 +416,7 @@ def _pa_exclamation (s, loc, toks):
     return ['!']
 
 def _pa_exdented (s, loc, toks):
-    return ['<ab type="body_p_exdented">', ''.join(toks[0]), '</ab>']
+    return ['<ab type="exdent">', ''.join(toks[0]), '</ab>']
 
 def _pa_expansion (s, loc, toks):
     return ['<ex>', ''.join(toks[0]), '</ex>']
@@ -428,7 +428,7 @@ def _pa_grave (s, loc, toks):
     return ['{}\N{COMBINING GRAVE ACCENT}'.format(toks[1])]
 
 def _pa_indented (s, loc, toks):
-    return ['<ab type="body_p_indented">', ''.join(toks[0]), '</ab>']
+    return ['<ab type="indent">', ''.join(toks[0]), '</ab>']
 
 def _pa_interlineation_above (s, loc, toks):
     return ['<add place="above">', ''.join(toks[0]), '</add>']
