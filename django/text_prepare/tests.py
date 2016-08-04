@@ -101,6 +101,11 @@ class TestDocumentConverter (TestCase):
             expected = 'b{}\N{COMBINING CIRCUMFLEX ACCENT}t'.format(vowel)
             self._check_conversion(text, expected)
 
+    def test_closer (self):
+        text = '@cl\\TTFN, Jamie@cl/'
+        expected = '<closer>TTFN, Jamie</closer>'
+        self._check_conversion(text, expected)
+
     def test_collation_note_ref (self):
         text = 'Some @cr\\@r1\\interesting text@cr/ content'
         expected = 'Some <ref target="#cn1" type="collation-note">interesting text</ref> content'
@@ -577,6 +582,7 @@ class TestXSLT (TestCase):
 <lb/>More text.<lb/>
 <lb/>
 <list><item>Item.</item></list><lb/>
+<closer>Bye</closer><lb/>
 </div>
 </div>
 <div type="end_notes">
@@ -619,6 +625,8 @@ After table text.
 <ab>More text.</ab>
 
 <list><item>Item.</item></list>
+
+<closer>Bye</closer>
 </div>
 </div>
 <div type="end_notes">

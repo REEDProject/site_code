@@ -113,6 +113,8 @@ def _define_grammar ():
     bold_italic_code.setParseAction(_pa_bold_italic)
     centred_code = pp.nestedExpr('@m\\', '@m/', content=enclosed)
     centred_code.setParseAction(_pa_centred)
+    closer_code = pp.nestedExpr('@cl\\', '@cl/', content=enclosed)
+    closer_code.setParseAction(_pa_closer)
     collation_ref = pp.nestedExpr('@cr\\', '@cr/',
                                   content=collation_ref_number_code - enclosed)
     collation_ref.setParseAction(_pa_collation_ref)
@@ -208,7 +210,7 @@ def _define_grammar ():
     tab_start_code = pp.nestedExpr(pp.LineStart() + pp.Literal('@['), '!',
                                    content=enclosed)
     tab_start_code.setParseAction(_pa_tab_start)
-    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ collation_ref ^ comment_code ^ deleted_code ^ exdented_code ^ expansion_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_small_caps_code ^ language_codes ^ left_marginale_code ^ list_code ^ personnel_code ^ right_marginale_code ^ signed_code ^ signed_centre_code ^ signed_right_code ^ small_caps_code ^ superscript_code ^ tab_start_code
+    paired_codes = bold_code ^ bold_italic_code ^ centred_code ^ closer_code ^ collation_ref ^ comment_code ^ deleted_code ^ exdented_code ^ expansion_code ^ footnote_code ^ indented_code ^ interpolation_code ^ interlineation_above_code ^ interlineation_below_code ^ italic_small_caps_code ^ language_codes ^ left_marginale_code ^ list_code ^ personnel_code ^ right_marginale_code ^ signed_code ^ signed_centre_code ^ signed_right_code ^ small_caps_code ^ superscript_code ^ tab_start_code
     enclosed << pp.OneOrMore(single_codes ^ return_code ^ paired_codes ^
                              content ^ punctuation ^ xml_escape ^ ignored)
     cell = pp.nestedExpr('<c>', '</c>', content=enclosed)
@@ -364,6 +366,9 @@ def _pa_centred (s, loc, toks):
 
 def _pa_circumflex (s, loc, toks):
     return ['{}\N{COMBINING CIRCUMFLEX ACCENT}'.format(toks[1])]
+
+def _pa_closer (s, loc, toks):
+    return ['<closer>', ''.join(toks[0]), '</closer>']
 
 def _pa_collation_note (s, loc, toks):
     return ['<div type="collation_note">\n', ''.join(toks[0]), '\n</div>\n']
