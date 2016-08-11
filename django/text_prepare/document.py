@@ -25,6 +25,7 @@ ADD_AB_XSLT_PATH = os.path.join(XSLT_DIR, 'add_ab.xsl')
 ADD_HEADER_XSLT_PATH = os.path.join(XSLT_DIR, 'add_header.xsl')
 ADD_ID_XSLT_PATH = os.path.join(XSLT_DIR, 'add_id.xsl')
 MASSAGE_FOOTNOTE_XSLT_PATH = os.path.join(XSLT_DIR, 'massage_footnote.xsl')
+REMOVE_AB_XSLT_PATH = os.path.join(XSLT_DIR, 'remove_ab.xsl')
 
 TEI_SKELETON = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/">
   <text>
@@ -96,7 +97,8 @@ class Document:
     def _postprocess_text (self, text):
         tree = etree.ElementTree(etree.fromstring(text))
         tree = self._transform(tree, ADD_AB_XSLT_PATH, ADD_ID_XSLT_PATH,
-                               ADD_HEADER_XSLT_PATH, MASSAGE_FOOTNOTE_XSLT_PATH)
+                               ADD_HEADER_XSLT_PATH, MASSAGE_FOOTNOTE_XSLT_PATH,
+                               REMOVE_AB_XSLT_PATH)
         return etree.tostring(tree, encoding='unicode', pretty_print=True)
 
     def _transform (self, tree, *xslt_paths):

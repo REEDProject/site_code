@@ -3,7 +3,8 @@ from django.test import TestCase
 from lxml import etree
 
 from .document import (ADD_AB_XSLT_PATH, ADD_HEADER_XSLT_PATH,
-                       ADD_ID_XSLT_PATH, Document, MASSAGE_FOOTNOTE_XSLT_PATH)
+                       ADD_ID_XSLT_PATH, Document, MASSAGE_FOOTNOTE_XSLT_PATH,
+                       REMOVE_AB_XSLT_PATH)
 from .document_parser import document_grammar
 
 
@@ -839,4 +840,45 @@ After table text.
 </TEI>
 '''
         actual = self._transform(text, MASSAGE_FOOTNOTE_XSLT_PATH)
+        self.assertEqual(actual, expected)
+
+    def test_remove_ab (self):
+        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<text>
+<group>
+<text type="record">
+<body>
+<head>@h head 1</head>
+<div type="transcription">
+<div>
+<head>@w head 1.1</head>
+<ab><gap /></ab>
+<ab><gap />Some text.</ab>
+</div>
+</div>
+</body>
+</text>
+</group>
+</text>
+</TEI>'''
+        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<text>
+<group>
+<text type="record">
+<body>
+<head>@h head 1</head>
+<div type="transcription">
+<div>
+<head>@w head 1.1</head>
+<gap/>
+<ab><gap/>Some text.</ab>
+</div>
+</div>
+</body>
+</text>
+</group>
+</text>
+</TEI>
+'''
+        actual = self._transform(text, REMOVE_AB_XSLT_PATH)
         self.assertEqual(actual, expected)
