@@ -45,7 +45,8 @@
   </xsl:template>
 
   <!-- Elements that should not be wrapped in tei:ab. -->
-  <xsl:template match="tei:ab|tei:closer|tei:list|tei:table" mode="initial">
+  <xsl:template match="tei:ab|tei:closer|tei:list|tei:pb|tei:table"
+                mode="initial">
     <xsl:text>
 </xsl:text>
     <xsl:copy-of select="." />
@@ -69,8 +70,8 @@
     <xsl:choose>
       <xsl:when test="$following and $following-name != 'ab' and
                       $following-name != 'closer' and $following-name != 'lb'
-                      and $following-name != 'list' and
-                      $following-name != 'table'">
+                      and $following-name != 'list' and $following-name != 'pb'
+                      and $following-name != 'table'">
         <xsl:text>
 </xsl:text>
         <ab>

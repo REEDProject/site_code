@@ -578,6 +578,7 @@ class TestXSLT (TestCase):
 <div type="transcription">
 <div>
 <head>@w head 1.1</head>
+<pb />
 <lb/>Some text.<lb/>
 <lb/>More text.<lb/>
 <lb/>
@@ -620,6 +621,8 @@ After table text.
 <head>@h head 1</head>
 <div type="transcription">
 <div><head>@w head 1.1</head>
+<pb/>
+
 <ab>Some text.</ab>
 
 <ab>More text.</ab>
