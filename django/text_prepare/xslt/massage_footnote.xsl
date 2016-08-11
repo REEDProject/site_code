@@ -12,6 +12,13 @@
        markup that the grammar permits within footnotes are not
        correctly interpreted. Fix those up here. -->
 
+  <!-- tei:ex should be converted to tei:hi. -->
+  <xsl:template match="tei:note[@type='foot']//tei:ex">
+    <hi rend="italic">
+      <xsl:apply-templates />
+    </hi>
+  </xsl:template>
+
   <!-- Deletions should be converted back to enclosing square
        parentheses. -->
   <xsl:template match="tei:note[@type='foot']//tei:del">

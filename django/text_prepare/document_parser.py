@@ -251,13 +251,15 @@ def _define_grammar ():
                              pp.Literal('!').suppress() - \
                              language_code
     record_heading = pp.nestedExpr('@h\\', '\\!',
-                                        content=record_heading_content)
+                                   content=record_heading_content)
     record_heading.setParseAction(_pa_record_heading)
     # A special content model is required for transcription headings,
     # since [] does not mean deleted material there.
+    supplied_code = pp.nestedExpr('{', '}', content=enclosed)
+    supplied_code.setParseAction(_pa_supplied)
     transcription_heading_content = pp.OneOrMore(
         single_codes ^ pp.Word(pp.alphanums + ' []-–') ^ punctuation ^
-        xml_escape ^ ignored ^ expansion_code)
+        xml_escape ^ ignored ^ supplied_code)
     transcription_heading = pp.nestedExpr('@w\\', '\\!',
                                           content=transcription_heading_content)
     transcription_heading.setParseAction(_pa_transcription_heading)
@@ -614,6 +616,9 @@ def _pa_special_v (s, loc, toks):
 
 def _pa_superscript (s, loc, toks):
     return ['<hi rend="superscript">', ''.join(toks[0]), '</hi>']
+
+def _pa_supplied (s, loc, toks):
+    return ['<supplied>', ''.join(toks[0]), '</supplied>']
 
 def _pa_tab (s, loc, toks):
     return ['<milestone type="table-cell" />']

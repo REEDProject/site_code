@@ -17,7 +17,7 @@ class TestDocumentConverter (TestCase):
             text = '@w\\f 124 {(19 November)}\\!\n' + text
             expected = '''<div type="transcription">
 <div>
-<head>f 124 <ex>(19 November)</ex></head>
+<head>f 124 <supplied>(19 November)</supplied></head>
 <pb n="124" type="folio" />
 ''' + expected + '''
 </div>
@@ -124,7 +124,7 @@ Test.
 <head><name ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
 <div type="transcription">
 <div>
-<head>f 124 <ex>(19 November)</ex></head>
+<head>f 124 <supplied>(19 November)</supplied></head>
 <pb n="124" type="folio" />
 Test.
 
@@ -193,7 +193,7 @@ Test.
 <head><name ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
 <div type="transcription">
 <div>
-<head>f 124 <ex>(19 November)</ex></head>
+<head>f 124 <supplied>(19 November)</supplied></head>
 <pb n="124" type="folio" />
 Test.
 
@@ -485,7 +485,7 @@ Text
         text = '@w\\ f.40* {(12 January) (Fortune: Warrant)}\!\nText'
         expected = '''<div type="transcription">
 <div>
-<head> f.40* <ex>(12 January) (Fortune: Warrant)</ex></head>
+<head> f.40* <supplied>(12 January) (Fortune: Warrant)</supplied></head>
 <pb />
 Text
 </div>
@@ -513,7 +513,7 @@ Text
         text = '@w\\ {(12 January)}\!\nText'
         expected = '''<div type="transcription">
 <div>
-<head> <ex>(12 January)</ex></head>
+<head> <supplied>(12 January)</supplied></head>
 
 Text
 </div>
@@ -826,7 +826,7 @@ After table text.
 <div type="transcription">
 <div>
 <head>@w head 1.1</head>
-<ab>Some text with <note type="foot">with: <ex>see f [1v].</ex></note>.</ab>
+<ab>Some text with <note type="foot">with: <hi rend="italic">see f [1v].</hi></note>.</ab>
 </div>
 </div>
 </body>
