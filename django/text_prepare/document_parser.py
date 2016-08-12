@@ -529,7 +529,7 @@ def _pa_paragraph (s, loc, toks):
     return ['\N{PILCROW SIGN}']
 
 def _pa_personnel (s, loc, toks):
-    return ['<note type="eccles_court">', ''.join(toks[0]), '</note>']
+    return ['<note type="court">', ''.join(toks[0]), '</note>']
 
 def _pa_pound (s, loc, toks):
     return ['\N{POUND SIGN}']

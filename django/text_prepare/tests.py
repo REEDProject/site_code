@@ -340,7 +340,7 @@ Text that <pb />crosses a page.
 
     def test_personnel (self):
         text = 'No one expects @x\\personnel@x/'
-        expected = 'No one expects <note type="eccles_court">personnel</note>'
+        expected = 'No one expects <note type="court">personnel</note>'
         self._check_conversion(text, expected)
 
     def test_pound (self):
