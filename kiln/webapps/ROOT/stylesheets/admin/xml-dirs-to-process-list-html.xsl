@@ -55,7 +55,9 @@
     </xsl:apply-templates>
   </xsl:template>
 
-  <xsl:template match="dir:file" mode="tei">
+  <xsl:template match="dir:file" mode="tei" />
+
+  <xsl:template match="dir:file[ends-with(@name, '.xml')]" mode="tei">
     <xsl:param name="path"/>
     <xsl:param name="parent-dir" />
     <xsl:variable name="filepath">
