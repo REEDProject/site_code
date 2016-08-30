@@ -47,8 +47,9 @@ block names, they only need to be changed in this template.
 </div>
 {% endblock content %}
 
-{% block end_js %}
+{% block endjs %}
 {{ block.super }}
 {% block eats_end_js %}
+<script src="{% static 'js/ereed-eats.js' %}"></script>
 {% endblock eats_end_js %}
-{% endblock end_js %}
+{% endblock endjs %}
