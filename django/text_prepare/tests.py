@@ -338,11 +338,6 @@ Text that <pb />crosses a page.
         expected = '\N{PILCROW SIGN} Lo, a paragraph.'
         self._check_conversion(text, expected)
 
-    def test_personnel (self):
-        text = 'No one expects @x\\personnel@x/'
-        expected = 'No one expects <note type="court">personnel</note>'
-        self._check_conversion(text, expected)
-
     def test_pound (self):
         text = '@$20 thousand I never knew I had'
         expected = '\N{POUND SIGN}20 thousand I never knew I had'
