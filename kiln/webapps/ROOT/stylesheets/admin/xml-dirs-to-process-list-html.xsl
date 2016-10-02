@@ -23,23 +23,27 @@
     </p>
 
     <form method="get" action="{kiln:url-for-match('local-admin-concordance-word-lists-report', ())}">
-    <table>
-      <thead>
-        <tr>
-          <th scope="col"></th>
-          <th scope="col">File</th>
-          <th colspan="2" scope="col">Reports</th>
-          <th scope="col">Search</th>
-          <th scope="col">RDF</th>
-          <th scope="col">View</th>
-        </tr>
-      </thead>
-      <tbody>
-        <xsl:apply-templates mode="tei"
-                             select=".//dir:directory[@name='tei']" />
-      </tbody>
-    </table>
-    <p><input type="submit" value="Generate concordance" /></p>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">File</th>
+            <th colspan="2" scope="col">Reports</th>
+            <th scope="col">Search</th>
+            <th scope="col">RDF</th>
+            <th scope="col">View</th>
+          </tr>
+        </thead>
+        <tbody>
+          <xsl:apply-templates mode="tei"
+                               select=".//dir:directory[@name='tei']" />
+        </tbody>
+      </table>
+      <p>
+        <button name="format" type="submit" value="html">Generate concordance</button>
+        <xsl:text> </xsl:text>
+        <button name="format" type="submit" value="csv">Generate CSV concordance</button>
+      </p>
     </form>
   </xsl:template>
 

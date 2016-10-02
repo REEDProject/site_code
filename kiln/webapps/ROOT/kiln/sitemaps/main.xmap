@@ -42,6 +42,13 @@
         <encoding>UTF-8</encoding>
         <indent>yes</indent>
       </map:serializer>
+
+      <map:serializer logger="sitemap.serialize.text"
+                      mime-type="text/plain; charset=utf-8" name="text"
+                      src="org.apache.cocoon.serialization.TextSerializer">
+        <encoding>UTF-8</encoding>
+        <indent>no</indent>
+      </map:serializer>
     </map:serializers>
   </map:components>
 
