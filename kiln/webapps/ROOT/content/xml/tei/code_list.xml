@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+            <titleStmt>
+                <title type="main">Staffordshire</title><!-- Still to be tagged in EATS with collection EATS entity page -->
+                <funder><orgName>Andrew W. Mellon Foundation</orgName>, Scholarly Communications and Information Technology Program. Program Officer: <persName>Donald J. Waters</persName></funder><!-- funding info to be checked with SB -->
+                <respStmt>
+                    <persName>Alan Somerset</persName>
+                    <resp>Editor</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>version 1, released </edition><!-- publication month day year to be added when known -->
+            </editionStmt>
+            <publicationStmt>
+                <authority><orgName>Records of Early English Drama (REED)</orgName>
+                    <address>
+                        <addrLine>University of Toronto</addrLine>
+                        <addrLine>170 St George Street, Suite 810</addrLine>
+                        <addrLine>Toronto, Ontario, Canada</addrLine>
+                        <addrLine>M5R 2M8</addrLine>
+                    </address>
+                </authority>
+                <availability>
+                    <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>, <date>2017</date></p>
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) licence.</licence>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title>Records of Early English Drama</title>
+            </seriesStmt>
+            <sourceDesc>
+                <p>Born digital. Information on original sources for transcriptions can be accessed via the transcriptions.</p>
+            </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy>             
+          <category xml:id="records_div">
+            <catDesc>Records Divisions</catDesc>
+            <category xml:id="dioceses">
+              <catDesc>Dioceses</catDesc>
+              <category xml:id="DOL">
+                <catDesc>Diocese of Lichfield</catDesc>
+              </category>
+            </category>
+            <category xml:id="households">
+              <catDesc>Households</catDesc>
+              <category xml:id="BOB">
+                <catDesc>Bagot of Blithfield</catDesc>
+              </category>
+              <category xml:id="DRA">
+                <catDesc>Drayton Basset</catDesc>
+              </category>
+              <category xml:id="FHO">
+                <catDesc>Ferrers of Walton on Trent and Tamworth</catDesc>
+              </category>
+              <category xml:id="GHO">
+                <catDesc>John of Gaunt of Tutbury</catDesc>
+              </category>
+              <category xml:id="PGB">
+                <catDesc>Paget of Burton on Trent and Beaudesert</catDesc>
+              </category>
+              <category xml:id="WRT">
+                <catDesc>Wrottesley of Wrottesley</catDesc>
+              </category>
+            </category>
+            <category xml:id="parishes">
+              <catDesc>Parishes</catDesc>
+              <category xml:id="BPA">
+                <catDesc>Abbots Bromley</catDesc>
+              </category>
+              <category xml:id="BET">
+                <catDesc>Betley</catDesc>
+              </category>
+              <category xml:id="BTN">
+                <catDesc>Burton upon Trent</catDesc>
+              </category>
+              <category xml:id="CHC">
+                <catDesc>Checkley</catDesc>
+              </category>
+              <category xml:id="DRH">
+                <catDesc>Drayton in Hales</catDesc>
+              </category>
+              <category xml:id="ECC">
+                <catDesc>Eccleshall</catDesc>
+              </category>
+              <category xml:id="ELH">
+                <catDesc>Ellenhall</catDesc>
+              </category>
+              <category xml:id="GFE">
+                <catDesc>Great Fenton</catDesc>
+              </category>
+              <category xml:id="HAN">
+                <catDesc>Handsworth</catDesc>
+              </category>
+              <category xml:id="KNV">
+                <catDesc>Kinver</catDesc>
+              </category>
+              <category xml:id="LEE">
+                <catDesc>Leek</catDesc>
+              </category>
+              <category xml:id="LCH">
+                <catDesc>Lichfield</catDesc>
+              </category>
+              <category xml:id="MAD">
+                <catDesc>Madeley</catDesc>
+              </category>
+              <category xml:id="MUC">
+                <catDesc>Mucklestone</catDesc>
+              </category>
+              <category xml:id="NUL">
+                <catDesc>Newcastle under Lyme</catDesc>
+              </category>
+              <category xml:id="NOR">
+                <catDesc>Norton Canes</catDesc>
+              </category>
+              <category xml:id="ROW">
+                <catDesc>Rowley Regis</catDesc>
+              </category>
+              <category xml:id="RUS">
+                <catDesc>Rushton</catDesc>
+              </category>
+              <category xml:id="SHL">
+                <catDesc>Shareshill</catDesc>
+              </category>
+              <category xml:id="STF">
+                <catDesc>Stafford</catDesc>
+              </category>
+              <category xml:id="SLD">
+                <catDesc>Statfold</catDesc>
+              </category>
+              <category xml:id="STN">
+                <catDesc>Stone</catDesc>
+              </category>
+              <category xml:id="TAM">
+                <catDesc>Tanworth</catDesc>
+              </category>
+              <category xml:id="TUT">
+                <catDesc>Tutbury</catDesc>
+              </category>
+              <category xml:id="UTT">
+                <catDesc>Uttoxeter</catDesc>
+              </category>
+              <category xml:id="WLL">
+                <catDesc>Wall</catDesc>
+              </category>
+              <category xml:id="WED">
+                <catDesc>Wednesbury</catDesc>
+              </category>
+              <category xml:id="WBR">
+                <catDesc>West Bromwich</catDesc>
+              </category>
+              <category xml:id="WOL">
+                <catDesc>Wolverhampton</catDesc>
+              </category>
+              <category xml:id="YOX">
+                <catDesc>Yoxall</catDesc>
+              </category>
+          </category>           
+              <category xml:id="record_types">
+                  <catDesc>Record types</catDesc>
+                  <category xml:id="central_gvt">
+                      <catDesc>central government</catDesc>
+                  </category>
+                  <category xml:id="local_gvt">
+                      <catDesc>local government</catDesc>
+                  </category>
+                  <category xml:id="church">
+                      <catDesc>church</catDesc>
+                  </category>
+                  <category xml:id="education">
+                      <catDesc>educational institution</catDesc>
+                  </category>
+                  <category xml:id="guild_craft">
+                      <catDesc>guild, craft/trade</catDesc>
+                  </category>
+                  <category xml:id="guild_rel">
+                      <catDesc>guild, religious</catDesc>
+                  </category>
+                  <category xml:id="rel_community">
+                      <catDesc>religious community</catDesc>
+                  </category>
+                  <category xml:id="manor">
+                      <catDesc>manorial</catDesc>
+                  </category>
+                  <category xml:id="family">
+                      <catDesc>family</catDesc>
+                  </category>
+                  <category xml:id="chron_hist">
+                      <catDesc>chronicles and histories</catDesc>
+                  </category>
+              </category>
+              <category xml:id="repositories">
+                  <catDesc>Repositories</catDesc>
+                  <category xml:id="Bodl.">
+                      <catDesc>Bodleian</catDesc>
+                  </category>
+                  <category xml:id="LRO">
+                      <catDesc>Lichfield Record Office</catDesc>
+                  </category>
+                  <category xml:id="CRO">
+                      <catDesc>Cheshire Record Office</catDesc>
+                  </category>
+                  <category xml:id="BL">
+                      <catDesc>British Library</catDesc>
+                  </category>
+                  <category xml:id="TNA">
+                      <catDesc>The National Archives</catDesc>
+                  </category>
+                  <category xml:id="STRO">
+                      <catDesc>Staffordshire Record Office</catDesc>
+                  </category>
+                  <category xml:id="CL">
+                      <catDesc>Chetham's Library</catDesc>
+                  </category>
+                  <category xml:id="LA">
+                      <catDesc>Lincolnshire Archives</catDesc>
+                  </category>
+                  <category xml:id="LCL">
+                      <catDesc>Lichfield Cathedral Library</catDesc>
+                  </category>
+                  <category xml:id="NLBM">
+                      <catDesc>Newcastle under Lyme Borough Museum</catDesc>
+                  </category>
+                  <category xml:id="WRO">
+                      <catDesc>Worcester Record Office</catDesc>
+                  </category>
+                  <category xml:id="WSL">
+                      <catDesc>William Salt Library</catDesc>
+                  </category>
+                  <category xml:id="WBRO">
+                      <catDesc>Walsall Metropolital Borough Central Library</catDesc>
+                  </category>
+                  <category xml:id="WLHC">
+                      <catDesc>Walsall Local History Centre</catDesc>
+                  </category>
+                  <category xml:id="CUL">
+                      <catDesc>Cambridge University Library</catDesc>
+                  </category>
+                  <category xml:id="FSL">
+                      <catDesc>Folger Shakespeare Library</catDesc>
+                  </category>
+              </category>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Abbreviations, symbols and taxonomies used in eREED</head>
+
+      <div>
+        <head>Sources</head>
+
+        <listBibl>
+          <bibl xml:id="AWAS">
+            <title>Archdeacon John Fulnetby's Visitation Articles</title>
+            <idno type="publication" sameAs="#STC" />
+            <idno type="STC_number">10336</idno>
+          </bibl>
+            
+          <bibl xml:id="DOU2">
+            <title>Manorial Court Roll Excerpt (A)</title>
+              <idno type="repository" sameAs="#Bodl." />
+              <idno type="shelfmark">MS. Douce d.24</idno>
+          </bibl>
+               
+          <bibl xml:id="V117">
+            <title>Archdeaconry of Stafford Visitation Act Book</title>
+                <idno type="repository" sameAs="#LRO" />
+                <idno type="shelfmark">B/V/1/17</idno>
+            </bibl>
+
+        <bibl xml:id="CCCR">
+            <title>Diocese of Chester Consistory Court Case, Response to Complaint in Colly v. Dikes</title>
+                <idno type="repository">Cheshire Record Office</idno>:
+                <idno type="shelfmark">EDC 5 (1635)/87</idno>
+        </bibl>
+    
+        <bibl xml:id="ABTA">
+            <title>Annals of Burton upon Trent Abbey</title>
+                <idno type="repository" sameAs="#BL" />
+                <idno type="shelfmark">Cotton MS Vespas. E. iii</idno>
+         </bibl>
+   
+        <bibl xml:id="BUR1">
+            <title>Bill of Complaint in Criples v. Lambe</title>
+                <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">STAC 8/104/20</idno>
+            </bibl>
+   
+        <bibl xml:id="BUR2">
+            <title>Answer of Defendants in Criples v. Lambe</title>
+                <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">STAC 8/104/20</idno>
+            </bibl>
+          
+        <bibl xml:id="V131">
+            <title>Archdeaconry of Stafford Visitation Act Book</title>
+                <idno type="repository" sameAs="#LRO" />
+                <idno type="shelfmark">B/V/1/31</idno>
+            </bibl>
+  
+        <bibl xml:id="V151">
+            <title>Archdeaconry of Stafford Visitation Act Book</title>
+          <idno type="repository" sameAs="#LRO" />
+                <idno type="shelfmark">B/V/1/51</idno>
+        </bibl>
+    
+        <bibl xml:id="DRA1">
+            <title>Bill of Complaint and Answer in Gillam v. Church</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">STAC 8/20/24</idno>
+            </bibl>
+
+        <bibl xml:id="ECC1">
+            <title>Interrogatories of Defendants in Alkyn v. Pursall</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">STAC 2/1</idno>
+            </bibl>
+       
+        <bibl xml:id="ECC2">
+            <title>Depositions of Defendants in Alkyn v. Pursall</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">STAC 2/1</idno>
+            </bibl>
+          
+        <bibl xml:id="EQSA">
+            <title>Complaints against Thomas Jacson, Victualler</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">Q/SR/72, item 36</idno>
+            </bibl>
+          
+        <bibl xml:id="EQS1">
+            <title>Information Lodged against Thomas Jacson, Victualler</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">Q/SR/91, items 61-2</idno>
+            </bibl>
+          
+        <bibl xml:id="EQS2">
+            <title>Charges Alleged against Thomas Jacson, Victualler</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">Q/SR/91, item 63</idno>
+            </bibl>
+          
+        <bibl xml:id="EQS3">
+            <title>Complaint against Thomas Jacson, Victualler, by Roger Stephenson, Vicar</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">Q/SR/94, items 69-70</idno>
+            </bibl>
+          
+        <bibl xml:id="GRF1">
+            <title>Court Order against William Johnson</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">Q/SR/95, items 37-8</idno>
+            </bibl>
+  
+        <bibl xml:id="V138">
+            <title>Archdeaconry of Stafford Visitation Act Book</title>
+          <idno type="repository" sameAs="#LRO" />
+                <idno type="shelfmark">B/V/1/38</idno>
+            </bibl>
+
+        <bibl xml:id="CORV">
+            <title>Corvisors' and Curriers' Guild Accounts</title>
+                <idno type="repository">Chetham's Library</idno>:
+                <idno type="shelfmark">MUN.A.6.65.A</idno>
+            </bibl>
+       
+        <bibl xml:id="JSIN">
+            <title>Inventory of Julian Stonynge</title>
+          <idno type="repository" sameAs="#LRO" />
+                <idno type="shelfmark">Peculiar Court of Lichfield, 1618, P/C/11</idno>
+            </bibl>
+        
+        <bibl xml:id="LBNS">
+            <title>Cathedral Statutes of Bishop Hugh Nonant</title>
+                <idno type="repository">Lincolnshire Archives</idno>:
+                <idno type="shelfmark">D&amp;C A/2/3</idno>
+            </bibl>
+      
+        <bibl xml:id="LCHA">
+            <title>Account of John Stalker, Bishop's Bailiff</title>
+          <idno type="repository" sameAs="#LRO" />
+                <idno type="shelfmark">B/A/21/CC 124078</idno>
+            </bibl>
+     
+        <bibl xml:id="LCHB">
+            <title>Longdon Manorial Court Roll</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">D(W) 1734/J. 2057</idno>
+            </bibl>
+       
+        <bibl xml:id="LCHX">
+            <title>Account of Robert Blaby, Bishop's Bailiff</title>
+                <idno type="repository">Cheshire Record Office</idno>
+                <idno type="shelfmark">DCH/0/8, item 2</idno>
+            </bibl>
+     
+        <bibl xml:id="LDCA">
+            <title>Dean and Chapter Act Book</title>
+                <idno type="repository">Lichfield Cathedral Library</idno>:
+                <idno type="shelfmark">Chapter Act Books No. 3</idno>
+            </bibl>
+      
+        <bibl xml:id="LDI1">
+            <title>Lichfield Cathedral Sacrist's Roll</title>
+          <idno type="repository" sameAs="#LRO" />
+                <idno type="shelfmark">D 30/7/1/1</idno>
+            </bibl>
+      
+        <bibl xml:id="LSRV">
+            <title>A Relation of a Short Survey of 26 Counties</title>
+          <idno type="repository" sameAs="#BL" />
+                <idno type="shelfmark">Lansdowne MS 213</idno>
+            </bibl>
+      
+        <bibl xml:id="NICH">
+            <title>Queen Elizabeth's Visit to Lichfield (A)</title>
+                <idno type="author_surname">Nichols</idno>:
+                <idno type="short_title">{Progresses}, vol 1</idno>
+            </bibl>
+   
+        <bibl xml:id="V152">
+            <title>Archdeaconry of Staffordshire Visitation Act Book</title>
+          <idno type="repository" sameAs="#LRO" />
+                <idno type="shelfmark">B/V/1/52</idno>
+            </bibl>
+      
+        <bibl xml:id="GRB1">
+            <title>Letter from John of Gaunt's Register Book</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">DL 42/13</idno>
+            </bibl>
+       
+        <bibl xml:id="NASM">
+            <title>Assembly Minute Book</title>
+                <idno type="repository">Newcastle under Lyme Borough Museum</idno>:
+                <idno type="shelfmark">no shelfmark</idno>
+            </bibl>
+    
+        <bibl xml:id="NQS1">
+            <title>Information Lodged against Thomas Greene, Tailor</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">Q/SR/26, item 1</idno>
+            </bibl>
+     
+        <bibl xml:id="RVAB">
+            <title>Diocese of Worcester Visitation Act Book</title>
+          <idno type="repository" sameAs="#WRO" />
+                <idno type="shelfmark">BA 2760</idno>
+            </bibl>
+
+        <bibl xml:id="SHA1">
+            <title>Bill of Complaint in Bourne v. Cole et al</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">STAC 8/67/11</idno>
+            </bibl>
+        
+        <bibl xml:id="MCBR">
+            <title>Matthew Cradock's Book of Remembrance</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">D1287/10/2 (0/250)</idno>
+            </bibl>
+     
+        <bibl xml:id="SBAI">
+            <title>Bailiffs' Accounts</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">D/1323/E/1</idno>
+            </bibl>
+     
+        <bibl xml:id="SMAR">
+            <title>St Mary's Churchwardens' Accounts</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">D/1323/E/1</idno>
+            </bibl>
+       
+        <bibl xml:id="SMAY">
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">D/1323/E/1</idno>
+            </bibl>
+       
+        <bibl xml:id="SSUM">
+            <title>Summary of Sixteenth-Century Accounts</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">D/1323/E/1</idno>
+            </bibl>
+      
+        <bibl xml:id="SSU2">
+            <title>Copies of Summary Accounts (A)</title>
+                <idno type="repository">William Salt Library</idno>:
+                <idno type="shelfmark">S.MS. 366/1/A</idno>
+            </bibl>
+     
+        <bibl xml:id="WORS">
+            <title>Thomas Worswick's Book</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">D(W) 1721/1/4</idno>
+            </bibl>
+ 
+        <bibl xml:id="TWYS">
+            <title>Will of John Wistowe</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">PROB 11/27</idno>
+            </bibl>
+   
+        <bibl xml:id="V130">
+            <title>Archdeaconry of Stafford Visitation Act Book</title>
+          <idno type="repository" sameAs="#LRO" />
+                <idno type="shelfmark">B/V/1/30</idno>
+            </bibl>
+
+        <bibl xml:id="TAM1">
+            <title>Depositions taken in Bett v. Ferrys</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">STAC 2/4</idno>
+            </bibl>
+     
+        <bibl xml:id="TAM2">
+            <title>Examination of Witnesses in Bett v. Ferrys</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">STAC 2/4</idno>
+            </bibl>
+      
+        <bibl xml:id="TAM3">
+            <title>Examination of Defendant in Bett v. Ferrys (A)</title>
+          <idno type="repository" sameAs="#BL" />
+                <idno type="shelfmark">Additional MS 28177</idno>
+            </bibl>
+  
+        <bibl xml:id="GRB2">
+            <title>Order from John of Gaunt's Register Book</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">DL 42/14</idno>
+            </bibl>
+    
+        <bibl xml:id="TLE2">
+            <title>Letter from Lord Newburgh, Chancellor of the Duchy of Lancaster, to the Clerk of the Duchy Chamber</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">DL 41/597, item [d]</idno>
+            </bibl>
+     
+        <bibl xml:id="TMC1">
+            <title>Regulations Governing the Minstrels' Court</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">DL 41/587</idno>
+            </bibl>
+     
+        <bibl xml:id="TMC2">
+            <title>Revised Regulations Governing the Minstrels' Court</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">DL 41/597, item [c]</idno>
+            </bibl>
+   
+        <bibl xml:id="TPAT">
+            <title>Letter Patent of Charles I</title>
+          <idno type="repository" sameAs="#BL" />
+                <idno type="shelfmark">Additional Charter 42681B</idno>
+            </bibl>
+   
+        <bibl xml:id="TPPC">
+            <title>Royal Proclamation re Minstrels' Court</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">C 66/2738</idno>
+            </bibl>
+        
+        <bibl xml:id="TPS1">
+            <title>Agreement re Pasturage for Minstrels' Horses</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">DL 29/1/3</idno>
+            </bibl>
+      
+        <bibl xml:id="TPS2">
+            <title>Agreement re Pasturage for Minstrels' Horses</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">DL 42/109</idno>
+            </bibl>
+       
+        <bibl xml:id="TSC1">
+            <title>Description of Bull-Running Custom</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">SC 11/606</idno>
+            </bibl>
+ 
+        <bibl xml:id="TUT2">
+            <title>Description of the Minstrels' Court and Bull-Running (A)</title>
+          <idno type="repository" sameAs="#BL" />
+                <idno type="shelfmark">Royal MS 18.B.x</idno>
+            </bibl>
+
+        <bibl xml:id="UTT1">
+            <title>Bill of Complaint in Kynnersley v. Tyxall et al</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">STAC 8/192/12</idno>
+            </bibl>
+        
+        <bibl xml:id="UTT2">
+            <title>Reply of Defendant in Kynnersley v. Tyxall et al</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">STAC 8/192/12</idno>
+            </bibl>
+ 
+       <bibl xml:id="WALB">
+            <title>Bailiff's Accounts</title>
+                <idno type="repository">William Salt Library</idno>:
+                <idno type="shelfmark">ms 50/A2/56</idno>
+            </bibl>
+   
+        <bibl xml:id="RBPM">
+            <title>Inquisition Post Mortem re Ralph Basset</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">C 135/132</idno>
+            </bibl>
+      
+        <bibl xml:id="WAL1">
+            <title>Bill of Complaint in Roger Dyngley v. John Beaumont et al</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">STAC 1/2/95</idno>
+            </bibl>
+
+        <bibl xml:id="WAL2">
+            <title>Answer of John Marshal to the Complaint of Roger Dyngley and Thomas Rice</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">STAC 1/2/95</idno>
+            </bibl>
+    
+        <bibl xml:id="WAL3">
+            <title>Answer of John Beaumont to the Complaint of Roger Dyngley and Thomas Rice</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">2/19/101</idno>
+            </bibl>
+   
+        <bibl xml:id="WAL4">
+            <title>Answer of Walter Leverson to the Complaint of Roger Dyngley and Thomas Rice</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">STAC 2/13/247</idno>
+            </bibl>
+    
+        <bibl xml:id="WAL5">
+            <title>Replication by Roger Dyngley and Thomas Rice to the Answer of John Beaumont</title>
+          <idno type="repository" sameAs="#TNA" />
+                <idno type="shelfmark">STAC 2/28/109</idno>
+            </bibl>
+      
+        <bibl xml:id="WCWA">
+            <title>All Saints' Churchwardens' Accounts</title>
+          <idno type="repository" sameAs="#WBRO" />
+                <idno type="shelfmark">276/62*</idno>
+            </bibl>
+
+        <bibl xml:id="WMA1">
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/1</idno>
+            </bibl>
+        
+        <bibl xml:id="WMA2">       
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/4</idno>
+            </bibl>
+ 
+        <bibl xml:id="WMA3">       
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/7</idno>
+            </bibl>
+  
+        <bibl xml:id="WMA4">        
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/8</idno>
+            </bibl>
+        
+        <bibl xml:id="WMA5">   
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/10</idno>
+            </bibl>
+
+        <bibl xml:id="WMA6">       
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/11</idno>
+            </bibl>
+
+        <bibl xml:id="WMA7">      
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/18</idno>
+            </bibl>
+  
+        <bibl xml:id="WMA8">       
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/19</idno>
+            </bibl>
+        
+        <bibl xml:id="WMA9">       
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/20</idno>
+            </bibl>
+
+        <bibl xml:id="WMAA">       
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/21</idno>
+            </bibl>
+        
+        <bibl xml:id="WMAB">        
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/22</idno>
+            </bibl>
+
+        <bibl xml:id="WMAC">       
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/23</idno>
+            </bibl>
+ 
+        <bibl xml:id="WMAD">       
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/24</idno>
+            </bibl>
+
+        <bibl xml:id="WMAE">       
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/25</idno>
+            </bibl>
+
+        <bibl xml:id="WMAF">       
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/29</idno>
+            </bibl>
+
+        <bibl xml:id="WMAG">      
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/30</idno>
+            </bibl>
+
+        <bibl xml:id="WMAH">        
+            <title>Mayors' Accounts</title>
+          <idno type="repository" sameAs="#WLHC" />
+                <idno type="shelfmark">277/13/31</idno>
+            </bibl>
+        
+        <bibl xml:id="V145"> 
+            <title>Archdeaconry of Stafford Visitation Act Book</title>
+          <idno type="repository" sameAs="#LRO" />
+                <idno type="shelfmark">B/V/1/45</idno>
+            </bibl>
+ 
+        <bibl xml:id="V155">       
+            <title>Archdeaconry of Stafford Visitation Act Book</title>
+          <idno type="repository" sameAs="#LRO" />
+                <idno type="shelfmark">B/V/1/55</idno>
+            </bibl>
+
+        <bibl xml:id="QSRS">
+            <title>Stafford Quarter Session Rolls</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">Q/SR/119</idno>
+            </bibl>
+
+        <bibl xml:id="WOCW">       
+            <title>St Peter's Churchwardens' Accounts</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">TP 952</idno>
+            </bibl>
+        
+        <bibl xml:id="YOCW">       
+           <title>St Peter's Churchwardens' Accounts</title>
+          <idno type="repository" sameAs="#LRO" />
+                <idno type="shelfmark">D.(W.)1851/1/13/20</idno>
+            </bibl>
+
+        <bibl xml:id="YX01">        
+            <title>Manorial Court Record</title>
+          <idno type="repository" sameAs="#BL" />
+                <idno type="shelfmark">Additional MS 46,460 vol. A</idno>
+            </bibl>
+        
+        <bibl xml:id="BBL1">       
+            <title>Walter Bagot's Household Accounts</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">D 1721/3/207</idno>
+            </bibl>
+
+        <bibl xml:id="WILS">     
+            <title>Autobiography of Arthur Wilson</title>
+          <idno type="repository" sameAs="#CUL" />
+                <idno type="shelfmark">Add. MS 33</idno>
+            </bibl> 
+ 
+        <bibl xml:id="FHA1">        
+            <title>Sir Humphrey Ferrers' Household Accounts</title>
+                <idno type="repository">Folger Shakespeare Library</idno>:
+                <idno type="shelfmark">MS L.e.313</idno>
+            </bibl>
+  
+        <bibl xml:id="FHA2"> 
+            <title>Sir Humphrey Ferrers' Household Accounts</title>
+                <idno type="repository">Folger Shakespeare Library</idno>
+                <idno type="shelfmark">MS L.e.315</idno>
+            </bibl>
+ 
+        <bibl xml:id="PGH1">      
+            <title>Sir Thomas Paget's Household Accounts</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">D.(W.) 1734/3/3/276</idno>
+            </bibl>
+    
+        <bibl xml:id="PGH2">        
+            <title>Sir Thomas Paget's Household Accounts</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">D.(W.) 1734/3/3/280</idno>
+            </bibl>
+        
+        <bibl xml:id="PGH3">       
+            <title>Inventory of Burton Manor</title>
+          <idno type="repository" sameAs="#STRO" />
+                <idno type="shelfmark">D.(W.) 1734/2/7/8</idno>
+            </bibl>
+        
+        <bibl xml:id="WRIN"> 
+            <title>Inventory of the Effects of Sir Hugh Wrottesley (A)</title>
+                <idno type="author_surname">Wrottesley</idno>:
+                <idno type="short_title">History</idno>
+            </bibl>
+
+        <bibl xml:id="WRLT">
+            <title>Letter from J. Richards to Sir Hugh Wrottesley (A)</title>
+                <idno type="author_surname">Horwood</idno>:
+                <idno type="short_title">'Manuscripts'</idno>
+            </bibl>
+        </listBibl>   
+      </div>
+    </body>
+  </text>
+    
+</TEI>
