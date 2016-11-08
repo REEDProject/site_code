@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="REED.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="records/REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/glossary/" xml:id="staff">
 <teiHeader> 
     <fileDesc>
@@ -12,9 +12,9 @@
         <ab>
             
             
-        <hi rend="bold">balletta</hi> <hi rend="italic">var of</hi> ballada [DML] 
+        <entry xml:id="balletta"><form><orth><hi rend="bold">balletta</hi></orth></form><def><hi rend="italics">var of</hi> ballada [DML]</def></entry>
 
-Bertelinus, -i m St Bettelin (dates unknown), patron of Stafford
+<hi rend="bold">Bertelinus, -i</hi> <hi rend="italic">m</hi> St Bettelin (dates unknown), patron of Stafford
 
 cantalena, -ef var of cantilena [DML] 
 
