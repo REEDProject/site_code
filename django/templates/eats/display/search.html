@@ -1,8 +1,20 @@
 {% extends "eats/display/base.html" %}
+{% load staticfiles %}
 {% load entity_display %}
-{% load ddh_utils_tags %}
 
 {% block eats_title %}{{ block.super }} Search entities{% endblock eats_title %}
+
+{% block eats_style %}
+{{ block.super }}
+<link href="{% static 'css/theme.blue.css' %}" rel="stylesheet" />
+<link href="{% static 'css/filter.formatter.css' %}" rel="stylesheet" />
+{% endblock eats_style %}
+
+{% block eats_js %}
+{{ block.super }}
+<script type="text/javascript" src="{% static 'js/jquery.tablesorter.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.tablesorter.widgets.js' %}"></script>
+{% endblock eats_js %}
 
 {% block eats_content %}
 <h1>Search entities</h1>
@@ -15,28 +27,24 @@
 {% if entities %}
 <h2>Results</h2>
 
-<div id="search-results">
-  <table>
-    <thead>
-      <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Entity types</th>
-        <th scope="col">Dates</th>
-        <th scope="col">Other names</th>
-        <th scope="col">Relationships</th>
-        <th scope="col">Notes</th>
-        <th scope="col">Links</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for entity in entities %}
-      {% display_entity_search_result entity %}
-      {% endfor %}
-    </tbody>
-  </table>
-</div>
-
-{% display_pagination querydict entities %}
+<table class="tablesorter" id="search-results">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Entity types</th>
+      <th scope="col">Dates</th>
+      <th scope="col">Other names</th>
+      <th scope="col">Relationships</th>
+      <th scope="col">Notes</th>
+      <th scope="col">Links</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for entity in entities %}
+    {% display_entity_search_result entity %}
+    {% endfor %}
+  </tbody>
+</table>
 
 {% else %}
 {% if search_form.is_bound %}
@@ -49,3 +57,19 @@
 {% endif %}
 
 {% endblock eats_content %}
+
+{% block eats_end_js %}
+{{ block.super }}
+<script>
+  var sorterOptions = {
+    sortList: [[0,0]],
+    theme: 'blue',
+    widgets: ['zebra', 'filter'],
+    widthFixed: true
+  };
+  $(document).ready(function() {
+    $("#search-results")
+      .tablesorter(sorterOptions);
+  });
+</script>
+{% endblock eats_end_js %}
