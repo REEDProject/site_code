@@ -25,9 +25,9 @@
 </form>
 
 {% if entities %}
-<h2>Results</h2>
+<h2>Results ({{ entities.paginator.count }})</h2>
 
-<table class="tablesorter" id="search-results">
+<table class="tablesorter" id="search-results" style="margin: 0 0 2em 0 !important">
   <thead>
     <tr>
       <th scope="col">Name</th>
@@ -36,7 +36,7 @@
       <th scope="col">Other names</th>
       <th scope="col">Relationships</th>
       <th scope="col">Notes</th>
-      <th scope="col">Links</th>
+      <th scope="col">Subject Identifiers</th>
     </tr>
   </thead>
   <tbody>

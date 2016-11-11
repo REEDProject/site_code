@@ -1,7 +1,8 @@
 {% load entity_display %}
 
 <tr class="entity-search-result" style="vertical-align: top;">
-  <td>{{ preferred_name_form }}</td>
+  <td>{{ preferred_name_form }}<br/>
+  [<a href="{% url 'eats-entity-view' entity.get_id %}">View</a> or <a href="{% url 'eats-entity-change' entity.get_id %}">Edit</a>]</td>
   <td>{% if entity_types %}<ul>{% for entity_type in entity_types %}
       <li>{{ entity_type }}</li>
       {% endfor %}</ul>{% endif %}</td>
@@ -19,5 +20,7 @@
     <p>{{ note_property.note }}</p>
     {% endfor %}
     {% endif %}</td>
-  <td><a href="{% url 'eats-entity-view' entity.get_id %}">View</a> or <a href="{% url 'eats-entity-change' entity.get_id %}">Edit</a></td>
+  <td>{% with sis=entity.get_eats_subject_identifiers %}{% if sis %}<ul>{% for si in sis %}
+      <li>{{ si.subject_identifier }}</li>
+      {% endfor %}</ul>{% endif %}{% endwith %}</td>
 </tr>
