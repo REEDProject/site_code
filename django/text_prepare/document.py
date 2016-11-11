@@ -1,3 +1,5 @@
+"""Module containing the Document class."""
+
 import os.path
 import re
 import shlex
@@ -36,22 +38,30 @@ TEI_SKELETON = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records
 
 class Document:
 
+    """Represents a Word document and provides methods to validate its
+    contents and convert it into TEI XML."""
+
     # The env argument allows for the command to run (and work) while
     # an interactive instance of LibreOffice is open.
     convert_command = '''soffice -env:UserInstallation=file://{} --headless
                          --cat {}'''
 
-    def __init__ (self, file_path, line_length, base_id):
+    def __init__(self, file_path, line_length, base_id):
         self._file_path = file_path
         self._line_length = line_length
         self._base_id = base_id
 
-    def convert (self):
+    def convert(self):
+        """Returns the content of the document converted into TEI XML.
+
+        :rtype: `str`
+
+        """
         text = self._get_text(self._file_path, self._line_length)
         results = self._validate(text)
         return self._convert(results)
 
-    def _convert (self, results):
+    def _convert(self, results):
         text = TEI_SKELETON.format(''.join(results))
         text = unicodedata.normalize('NFC', text)
         text = self._postprocess_text(text)
@@ -61,8 +71,8 @@ class Document:
         text = re.sub(r'[ \t\n\r\f\v]+(</ab>)', r'\1', text)
         return text.encode('utf-8')
 
-    def _get_text (self, file_path, line_length):
-        """Return the plain text conversion of the file at `file_path`.
+    def _get_text(self, file_path, line_length):
+        """Returns the plain text conversion of the file at `file_path`.
 
         The file at `file_path` is converted using LibreOffice, and is
         therefore expected to be in a format that LO can usefully deal
@@ -94,39 +104,49 @@ class Document:
         text = text.decode('utf-8')
         return self._wrap_text(text, line_length)
 
-    def _postprocess_text (self, text):
+    def _postprocess_text(self, text):
+        """Returns `text` modified by applying various XSLT transformations to
+        it.
+
+        :param text: TEI XML to post-process
+        :type text: `str`
+        :rtype: `str`
+
+        """
         tree = etree.ElementTree(etree.fromstring(text))
         tree = self._transform(tree, ADD_AB_XSLT_PATH, ADD_ID_XSLT_PATH,
-                               ADD_HEADER_XSLT_PATH, MASSAGE_FOOTNOTE_XSLT_PATH,
-                               REMOVE_AB_XSLT_PATH)
+                               ADD_HEADER_XSLT_PATH,
+                               MASSAGE_FOOTNOTE_XSLT_PATH, REMOVE_AB_XSLT_PATH)
         return etree.tostring(tree, encoding='unicode', pretty_print=True)
 
-    def _transform (self, tree, *xslt_paths):
+    def _transform(self, tree, *xslt_paths):
         for path in xslt_paths:
             transform = etree.XSLT(etree.parse(path))
             tree = transform(tree, base_id="'{}'".format(self._base_id))
         return tree
 
-    def validate (self):
+    def validate(self):
+
+        """Raises an exception if this document does not conform to the @-code
+        grammar."""
         text = self._get_text(self._file_path, self._line_length)
         self._validate(text)
 
-    def _validate (self, text):
+    def _validate(self, text):
+        """Returns `text` converted into TEI XML according to the rules
+        attached to the @-code grammar. This conversion raises an
+        exception if `text` does not conform to the grammar.
+
+        :param text: textual content to be converted
+        :type text: `str`
+        :rtype: `str`
+
+        """
         try:
             results = document_grammar.parseString(text)
         except (pp.ParseException, pp.ParseSyntaxException) as e:
             # Generate the context of the error, with a pointer to the
-            # column identified as its place, in a way that copes with
-            # a "line" potentially being very long.
-            #
-            # Show up to one line (89 characters) before and after the
-            # main line that has the position marker following it.
-            #
-            # Since many validation errors have the column marked not
-            # where the error occurred (according to a human), but at
-            # the opening code of the range that contains the error,
-            # keep the marker within the first 30 characters of the
-            # main line.
+            # column identified as its place.
             col = e.column
             line = e.line
             line_number = e.lineno
@@ -148,8 +168,16 @@ class Document:
             raise TextPrepareDocumentValidationError(message)
         return results
 
-    def _wrap_text (self, text, line_length):
-        """Returns `text` wrapped to the specified line `length`."""
+    def _wrap_text(self, text, line_length):
+        """Returns `text` wrapped to the specified line `length`.
+
+        :param text: text to wrap
+        :type text: `str`
+        :param line_length: length of line to wrap `text` to
+        :type line_length: `int`
+        :rtype: `str`
+
+        """
         # Due to slight differences in how Word and textwrap wrap
         # lines, it can happen that a closing @-code (eg, "@f \") is
         # split over two lines on the whitespace, which breaks the

@@ -8,18 +8,26 @@ from .word_updater import update_word
 from .document import Document
 from .exceptions import (TextPrepareDocumentError,
                          TextPrepareDocumentValidationError)
-from .forms import UpdateDocumentForm, ValidateDocumentForm, ConvertDocumentForm
+from .forms import UpdateDocumentForm, ValidateDocumentForm, \
+    ConvertDocumentForm
 
 
 @login_required
 @csrf_exempt
-def convert (request):
+def convert(request):
+    """View to convert a supplied Word document into TEI XML.
+
+    Expects the Word document to be in the form returned by
+    `update`.
+
+    """
     # Ensure that any uploaded file is stored as a temporary file.
     request.upload_handlers = [TemporaryFileUploadHandler()]
     return _convert(request)
 
+
 @csrf_protect
-def _convert (request):
+def _convert(request):
     context = {}
     if request.method == 'POST':
         form = ConvertDocumentForm(request.POST, request.FILES)
@@ -28,7 +36,8 @@ def _convert (request):
             base_id = form.cleaned_data['base_id']
             doc = request.FILES['document']
             context['filename'] = doc.name
-            document = Document(doc.temporary_file_path(), line_length, base_id)
+            document = Document(doc.temporary_file_path(), line_length,
+                                base_id)
             try:
                 tei = document.convert()
                 return HttpResponse(tei, content_type='text/xml')
@@ -42,15 +51,19 @@ def _convert (request):
     context['form'] = form
     return render(request, 'text_prepare/convert.html', context)
 
+
 @login_required
 @csrf_exempt
-def update (request):
+def update(request):
+    """View to update a supplied Word document to Word (docx) format with
+    modified @-code syntax."""
     # Ensure that any uploaded file is stored as a temporary file.
     request.upload_handlers = [TemporaryFileUploadHandler()]
     return _update(request)
 
+
 @csrf_protect
-def _update (request):
+def _update(request):
     if request.method == 'POST':
         form = UpdateDocumentForm(request.POST, request.FILES)
         if form.is_valid():
@@ -62,15 +75,24 @@ def _update (request):
     context = {'form': form}
     return render(request, 'text_prepare/update.html', context)
 
+
 @login_required
 @csrf_exempt
-def validate (request):
+def validate(request):
+    """View to validate a supplied Word document against the @-code
+    grammar.
+
+    Expects the Word document to be in the form returned by
+    `update`.
+
+    """
     # Ensure that any uploaded file is stored as a temporary file.
     request.upload_handlers = [TemporaryFileUploadHandler()]
     return _validate(request)
 
+
 @csrf_protect
-def _validate (request):
+def _validate(request):
     context = {'error': None, 'filename': None, 'validated': False}
     if request.method == 'POST':
         form = ValidateDocumentForm(request.POST, request.FILES)

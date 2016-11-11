@@ -38,14 +38,14 @@ import html
 import pyparsing as pp
 
 
-def _define_grammar ():
+def _define_grammar():
     content = pp.Word(pp.alphanums + ' ' + '\n')
     content.setWhitespaceChars('')
     content.setDefaultWhitespaceChars('')
     white = pp.Word(' ' + '\n')
     punctuation = pp.oneOf('. , ; : \' " ( ) * / # $ % + - ? – ‑')
     integer = pp.Word(pp.nums)
-    ignored = pp.oneOf('\ufeff').suppress() # zero width no-break space
+    ignored = pp.oneOf('\ufeff').suppress()  # zero width no-break space
     # This is an awful cludge for < to get around my inability to find
     # a way for pyparsing to handle tables correctly (despite
     # damaged_code working fine). With luck there won't be any < in
@@ -67,8 +67,8 @@ def _define_grammar ():
     circumflex_code.setParseAction(_pa_circumflex)
     collation_ref_number_code = '@r' + pp.OneOrMore(integer) + '\\'
     collation_ref_number_code.setParseAction(_pa_collation_ref_number)
-    damaged_code = pp.Literal('<') + (pp.Word('.', min=1) ^ pp.Literal('…')) + \
-                   pp.Literal('>')
+    damaged_code = pp.Literal('<') + (pp.Word('.', min=1) ^ pp.Literal('…')) \
+        + pp.Literal('>')
     damaged_code.setParseAction(_pa_damaged)
     dot_over_code = pp.Literal('@.') + pp.Regex(r'[A-Za-z]')
     dot_over_code.setParseAction(_pa_dot_over)
@@ -123,7 +123,7 @@ def _define_grammar ():
     deleted_code = pp.nestedExpr('[', ']', content=enclosed)
     deleted_code.setParseAction(_pa_deleted)
     lang_ancient_greek_code = pp.nestedExpr('@grc\\', '@grc/',
-                                           content=enclosed)
+                                            content=enclosed)
     lang_ancient_greek_code.setParseAction(_pa_lang_ancient_greek)
     lang_anglo_norman_code = pp.nestedExpr('@xno\\', '@xno/',
                                            content=enclosed)
@@ -226,28 +226,28 @@ def _define_grammar ():
     record_heading_record = pp.Word(pp.alphanums)
     record_heading_record.setParseAction(_pa_record_heading_record)
     year = pp.Word(pp.nums, min=4, max=4)
-    record_heading_date_century = pp.Word(pp.nums, min=2, max=2).setResultsName('century') + pp.Literal('th Century').setResultsName('label')
+    record_heading_date_century = pp.Word(
+        pp.nums, min=2, max=2).setResultsName('century') + \
+        pp.Literal('th Century').setResultsName('label')
     record_heading_date_century.setParseAction(_pa_record_heading_date_century)
     circa = pp.Literal('c ')
     slash_year = pp.Literal('/') + pp.Word(pp.nums, min=1, max=2)
     start_year = pp.Optional(circa).setResultsName('circa') + \
-                 year.setResultsName('year') + \
-                 pp.Optional(slash_year).setResultsName('slash_year')
+        year.setResultsName('year') + \
+        pp.Optional(slash_year).setResultsName('slash_year')
     end_year = pp.Word(pp.nums, min=1, max=4).setResultsName('end_year') + \
-               pp.Optional(slash_year).setResultsName('slash_end_year')
-    record_heading_date_year = start_year + pp.Optional(pp.oneOf('- –') + \
+        pp.Optional(slash_year).setResultsName('slash_end_year')
+    record_heading_date_year = start_year + pp.Optional(pp.oneOf('- –') +
                                                         end_year)
     record_heading_date_year.setParseAction(_pa_record_heading_date_year)
-    record_heading_date = record_heading_date_century ^ record_heading_date_year
+    record_heading_date = record_heading_date_century ^ \
+        record_heading_date_year
     language_code = pp.oneOf('cnx cor cym deu eng fra gla gmh gml grc ita lat '
                              'por spa wlm xno')
     record_heading_content = record_heading_place - \
-                             pp.Literal('!').suppress() - \
-                             record_heading_date - \
-                             pp.Literal('!').suppress() - \
-                             record_heading_record - \
-                             pp.Literal('!').suppress() - \
-                             language_code
+        pp.Literal('!').suppress() - record_heading_date - \
+        pp.Literal('!').suppress() - record_heading_record - \
+        pp.Literal('!').suppress() - language_code
     record_heading = pp.nestedExpr('@h\\', '\\!',
                                    content=record_heading_content)
     record_heading.setParseAction(_pa_record_heading)
@@ -258,8 +258,8 @@ def _define_grammar ():
     transcription_heading_content = pp.OneOrMore(
         single_codes ^ pp.Word(pp.alphanums + ' []-–') ^ punctuation ^
         xml_escape ^ ignored ^ supplied_code)
-    transcription_heading = pp.nestedExpr('@w\\', '\\!',
-                                          content=transcription_heading_content)
+    transcription_heading = pp.nestedExpr(
+        '@w\\', '\\!', content=transcription_heading_content)
     transcription_heading.setParseAction(_pa_transcription_heading)
     transcription_section = transcription_heading - pp.OneOrMore(
         table ^ enclosed)
@@ -267,32 +267,32 @@ def _define_grammar ():
     transcription = pp.OneOrMore(transcription_section)
     transcription.setParseAction(_pa_transcription)
     collation_note_anchor = pp.Literal('@a') - pp.OneOrMore(integer) - \
-                            pp.Literal('\\')
+        pp.Literal('\\')
     collation_note_anchor.setParseAction(_pa_collation_note_anchor)
     collation_note_content = collation_note_anchor - enclosed
     collation_note = pp.nestedExpr('@c\\', '@c/',
                                    content=collation_note_content)
     collation_note.setParseAction(_pa_collation_note)
     collation_note_wrapper = pp.Suppress(pp.ZeroOrMore(white | ignored)) + \
-                             collation_note + pp.Suppress(
-                                 pp.ZeroOrMore(white | ignored))
+        collation_note + pp.Suppress(pp.ZeroOrMore(white | ignored))
     collation_notes = pp.nestedExpr('@cn\\', '@cn/', content=pp.OneOrMore(
         collation_note_wrapper))
     collation_notes.setParseAction(_pa_collation_notes)
     end_note = pp.nestedExpr('@E\\', '@E/', content=enclosed)
     end_note.setParseAction(_pa_endnote)
     end_note_wrapper = pp.Suppress(pp.ZeroOrMore(white | ignored)) + \
-                       end_note + pp.Suppress(pp.ZeroOrMore(white | ignored))
+        end_note + pp.Suppress(pp.ZeroOrMore(white | ignored))
     end_notes = pp.nestedExpr('@EN\\', '@EN/', content=pp.OneOrMore(
         end_note_wrapper))
     end_notes.setParseAction(_pa_endnotes)
     record = pp.ZeroOrMore(white | ignored) + record_heading + \
-                   pp.ZeroOrMore(white) + transcription + \
-                   pp.Optional(collation_notes) + pp.Optional(end_notes)
+        pp.ZeroOrMore(white) + transcription + \
+        pp.Optional(collation_notes) + pp.Optional(end_notes)
     record.setParseAction(_pa_record)
     return pp.StringStart() + pp.OneOrMore(record) + pp.StringEnd()
 
-def _get_page_type (data):
+
+def _get_page_type(data):
     """Return the expanded page type indicated by the abbreviation `data`,
     or an empty string if not match is found."""
     ptype = ''
@@ -308,244 +308,318 @@ def _get_page_type (data):
         ptype = 'signature'
     return ptype
 
-def _make_foreign (lang_code, toks):
+
+def _make_foreign(lang_code, toks):
     return ['<foreign xml:lang="{}">{}</foreign>'.format(
         lang_code, ''.join(toks[0]))]
 
-def _make_signed (s, loc, toks, rend_value=None):
+
+def _make_signed(s, loc, toks, rend_value=None):
     rend = ''
     if rend_value:
         rend = ' rend="{}"'.format(rend_value)
     return ['<seg type="signed"{}>'.format(rend), ''.join(toks[0]), '</seg>']
 
-def _merge_years (year, replacement):
+
+def _merge_years(year, replacement):
     """Return `year` merged with `replacement`, where `replacement`
     replaces the last digit(s) of `year`."""
     changed = 4 - len(replacement)
     base = year[:changed]
     return base + replacement
 
-def _pa_acute (s, loc, toks):
+
+def _pa_acute(s, loc, toks):
     return ['{}\N{COMBINING ACUTE ACCENT}'.format(toks[1])]
 
-def _pa_ae (s, loc, toks):
+
+def _pa_ae(s, loc, toks):
     return ['\N{LATIN SMALL LETTER AE}']
 
-def _pa_AE (s, loc, toks):
+
+def _pa_AE(s, loc, toks):
     return ['\N{LATIN CAPITAL LETTER AE}']
 
-def _pa_blank (s, loc, toks):
+
+def _pa_blank(s, loc, toks):
     return ['<space />']
 
-def _pa_bold (s, loc, toks):
+
+def _pa_bold(s, loc, toks):
     return ['<hi rend="bold">', ''.join(toks[0]), '</hi>']
 
-def _pa_bold_italic (s, loc, toks):
+
+def _pa_bold_italic(s, loc, toks):
     return ['<hi rend="bold_italic">', ''.join(toks[0]), '</hi>']
 
-def _pa_capitulum (s, loc, toks):
+
+def _pa_capitulum(s, loc, toks):
     # Black Leftwards Bullet is not the correct character, but
     # according to the Fortune white paper it is "as close as we can
     # get for now".
     return ['\N{BLACK LEFTWARDS BULLET}']
 
-def _pa_caret (s, loc, toks):
+
+def _pa_caret(s, loc, toks):
     return ['\N{CARET}']
 
-def _pa_cedilla (s, loc, toks):
+
+def _pa_cedilla(s, loc, toks):
     return ['{}\N{COMBINING CEDILLA}'.format(toks[1])]
 
-def _pa_cell (s, loc, toks):
+
+def _pa_cell(s, loc, toks):
     return ['<cell>', ''.join(toks[0]), '</cell>']
 
-def _pa_cell_right (s, loc, toks):
+
+def _pa_cell_right(s, loc, toks):
     return ['<cell rend="right">', ''.join(toks[0]), '</cell>']
 
-def _pa_centred (s, loc, toks):
+
+def _pa_centred(s, loc, toks):
     return ['<hi rend="center">', ''.join(toks[0]), '</hi>']
 
-def _pa_circumflex (s, loc, toks):
+
+def _pa_circumflex(s, loc, toks):
     return ['{}\N{COMBINING CIRCUMFLEX ACCENT}'.format(toks[1])]
 
-def _pa_closer (s, loc, toks):
+
+def _pa_closer(s, loc, toks):
     return ['<closer>', ''.join(toks[0]), '</closer>']
 
-def _pa_collation_note (s, loc, toks):
+
+def _pa_collation_note(s, loc, toks):
     return ['<div type="collation_note">\n', ''.join(toks[0]), '\n</div>\n']
 
-def _pa_collation_note_anchor (s, loc, toks):
+
+def _pa_collation_note_anchor(s, loc, toks):
     return ['<anchor n="cn{}" />'.format(toks[1])]
 
-def _pa_collation_notes (s, loc, toks):
+
+def _pa_collation_notes(s, loc, toks):
     return ['<div type="collation_notes">\n', ''.join(toks[0]), '</div>\n']
 
-def _pa_collation_ref (s, loc, toks):
+
+def _pa_collation_ref(s, loc, toks):
     return ['<ref target="#cn{}" type="collation-note">{}</ref>'.format(
         toks[0][0], toks[0][1])]
 
-def _pa_collation_ref_number (s, loc, toks):
+
+def _pa_collation_ref_number(s, loc, toks):
     return [toks[1]]
 
-def _pa_comment (s, loc, toks):
+
+def _pa_comment(s, loc, toks):
     return ['<!-- ', ''.join(toks[0]), ' -->']
 
-def _pa_damaged (s, loc, toks):
+
+def _pa_damaged(s, loc, toks):
     return ['<damage><gap unit="chars" extent="{}" /></damage>'.format(
         len(toks[1]))]
 
-def _pa_deleted (s, loc, toks):
+
+def _pa_deleted(s, loc, toks):
     return ['<del>', ''.join(toks[0]), '</del>']
 
-def _pa_dot_over (s, loc, toks):
+
+def _pa_dot_over(s, loc, toks):
     return ['{}\N{COMBINING DOT ABOVE}'.format(toks[1])]
 
-def _pa_dot_under (s, loc, toks):
+
+def _pa_dot_under(s, loc, toks):
     return ['{}\N{COMBINING DOT BELOW}'.format(toks[1])]
 
-def _pa_ellipsis (s, loc, toks):
+
+def _pa_ellipsis(s, loc, toks):
     return ['<gap reason="omitted" />']
 
-def _pa_en_dash (s, loc, toks):
+
+def _pa_en_dash(s, loc, toks):
     return ['\N{EN DASH}']
 
-def _pa_endnote (s, loc, toks):
+
+def _pa_endnote(s, loc, toks):
     return ['<div type="end_note">\n', ''.join(toks[0]), '\n</div>\n']
 
-def _pa_endnotes (s, loc, toks):
+
+def _pa_endnotes(s, loc, toks):
     return ['<div type="end_notes">\n', ''.join(toks[0]), '</div>\n']
 
-def _pa_eng (s, loc, toks):
+
+def _pa_eng(s, loc, toks):
     return ['\N{LATIN SMALL LETTER ENG}']
 
-def _pa_ENG (s, loc, toks):
+
+def _pa_ENG(s, loc, toks):
     return ['\N{LATIN CAPITAL LETTER ENG}']
 
-def _pa_eth (s, loc, toks):
+
+def _pa_eth(s, loc, toks):
     return ['\N{LATIN SMALL LETTER ETH}']
 
-def _pa_exclamation (s, loc, toks):
+
+def _pa_exclamation(s, loc, toks):
     return ['!']
 
-def _pa_exdented (s, loc, toks):
+
+def _pa_exdented(s, loc, toks):
     return ['<ab type="exdent">', ''.join(toks[0]), '</ab>']
 
-def _pa_expansion (s, loc, toks):
+
+def _pa_expansion(s, loc, toks):
     return ['<ex>', ''.join(toks[0]), '</ex>']
 
-def _pa_footnote (s, loc, toks):
+
+def _pa_footnote(s, loc, toks):
     return ['<note type="foot">', ''.join(toks[0]), '</note>']
 
-def _pa_grave (s, loc, toks):
+
+def _pa_grave(s, loc, toks):
     return ['{}\N{COMBINING GRAVE ACCENT}'.format(toks[1])]
 
-def _pa_indented (s, loc, toks):
+
+def _pa_indented(s, loc, toks):
     return ['<ab type="indent">', ''.join(toks[0]), '</ab>']
 
-def _pa_interlineation_above (s, loc, toks):
+
+def _pa_interlineation_above(s, loc, toks):
     return ['<add place="above">', ''.join(toks[0]), '</add>']
 
-def _pa_interlineation_below (s, loc, toks):
+
+def _pa_interlineation_below(s, loc, toks):
     return ['<add place="below">', ''.join(toks[0]), '</add>']
 
-def _pa_interpolation (s, loc, toks):
+
+def _pa_interpolation(s, loc, toks):
     return ['<add><handShift />', ''.join(toks[0]), '</add>']
 
-def _pa_italic_small_caps (s, loc, toks):
+
+def _pa_italic_small_caps(s, loc, toks):
     return ['<hi rend="smallcaps_italic">', ''.join(toks[0]), '</hi>']
 
-def _pa_lang_ancient_greek (s, loc, toks):
+
+def _pa_lang_ancient_greek(s, loc, toks):
     return _make_foreign('grc', toks)
 
-def _pa_lang_anglo_norman (s, loc, toks):
+
+def _pa_lang_anglo_norman(s, loc, toks):
     return _make_foreign('xno', toks)
 
-def _pa_lang_cornish (s, loc, toks):
+
+def _pa_lang_cornish(s, loc, toks):
     return _make_foreign('cor', toks)
 
-def _pa_lang_english (s, loc, toks):
+
+def _pa_lang_english(s, loc, toks):
     return _make_foreign('eng', toks)
 
-def _pa_lang_french (s, loc, toks):
+
+def _pa_lang_french(s, loc, toks):
     return _make_foreign('fra', toks)
 
-def _pa_lang_german (s, loc, toks):
+
+def _pa_lang_german(s, loc, toks):
     return _make_foreign('deu', toks)
 
-def _pa_lang_italian (s, loc, toks):
+
+def _pa_lang_italian(s, loc, toks):
     return _make_foreign('ita', toks)
 
-def _pa_lang_latin (s, loc, toks):
+
+def _pa_lang_latin(s, loc, toks):
     return _make_foreign('lat', toks)
 
-def _pa_lang_middle_cornish (s, loc, toks):
+
+def _pa_lang_middle_cornish(s, loc, toks):
     return _make_foreign('cnx', toks)
 
-def _pa_lang_middle_high_german (s, loc, toks):
+
+def _pa_lang_middle_high_german(s, loc, toks):
     return _make_foreign('gmh', toks)
 
-def _pa_lang_middle_low_german (s, loc, toks):
+
+def _pa_lang_middle_low_german(s, loc, toks):
     return _make_foreign('gml', toks)
 
-def _pa_lang_middle_welsh (s, loc, toks):
+
+def _pa_lang_middle_welsh(s, loc, toks):
     return _make_foreign('wlm', toks)
 
-def _pa_lang_portuguese (s, loc, toks):
+
+def _pa_lang_portuguese(s, loc, toks):
     return _make_foreign('por', toks)
 
-def _pa_lang_scottish_gaelic (s, loc, toks):
+
+def _pa_lang_scottish_gaelic(s, loc, toks):
     return _make_foreign('gla', toks)
 
-def _pa_lang_spanish (s, loc, toks):
+
+def _pa_lang_spanish(s, loc, toks):
     return _make_foreign('spa', toks)
 
-def _pa_lang_welsh (s, loc, toks):
+
+def _pa_lang_welsh(s, loc, toks):
     return _make_foreign('cym', toks)
 
-def _pa_left_marginale (s, loc, toks):
+
+def _pa_left_marginale(s, loc, toks):
     return ['<note type="marginal" place="margin_left">', ''.join(toks[0]),
             '</note>']
 
-def _pa_list_item_code (s, loc, toks):
+
+def _pa_list_item_code(s, loc, toks):
     return ['<item>', ''.join(toks[0]), '</item>']
 
-def _pa_list_code (s, loc, toks):
+
+def _pa_list_code(s, loc, toks):
     return ['<list>', ''.join(toks[0]), '</list>']
 
-def _pa_macron (s, loc, toks):
+
+def _pa_macron(s, loc, toks):
     return ['{}\N{COMBINING MACRON}'.format(toks[1])]
 
-def _pa_oe (s, loc, toks):
+
+def _pa_oe(s, loc, toks):
     return ['\N{LATIN SMALL LIGATURE OE}']
 
-def _pa_OE (s, loc, toks):
+
+def _pa_OE(s, loc, toks):
     return ['\N{LATIN CAPITAL LIGATURE OE}']
 
-def _pa_page_break (s, loc, toks):
+
+def _pa_page_break(s, loc, toks):
     return ['<pb />']
 
-def _pa_paragraph (s, loc, toks):
+
+def _pa_paragraph(s, loc, toks):
     return ['\N{PILCROW SIGN}']
 
-def _pa_pound (s, loc, toks):
+
+def _pa_pound(s, loc, toks):
     return ['\N{POUND SIGN}']
 
-def _pa_raised (s, loc, toks):
+
+def _pa_raised(s, loc, toks):
     return ['\N{MIDDLE DOT}']
 
-def _pa_record (s, loc, toks):
+
+def _pa_record(s, loc, toks):
     return ['<text type="record">\n<body xml:lang="{}">\n{}</body>\n</text>'.format(toks[0], ''.join(toks[1:]))]
 
-def _pa_record_heading (s, loc, toks):
+
+def _pa_record_heading(s, loc, toks):
     place, date, record, language_code = toks[0]
     return [language_code, '<head>{} {} {}</head>'.format(place, date, record)]
 
-def _pa_record_heading_date_century (s, loc, toks):
+
+def _pa_record_heading_date_century(s, loc, toks):
     century = int(toks['century'])
     label = toks['label']
     return ['<date from-iso="{}01" to-iso="{}00">{}{}</date>'.format(
         century-1, century, century, label)]
 
-def _pa_record_heading_date_year (s, loc, toks):
+
+def _pa_record_heading_date_year(s, loc, toks):
     circa = toks.get('circa')
     year = toks['year']
     slash_year = toks.get('slash_year')
@@ -567,76 +641,98 @@ def _pa_record_heading_date_year (s, loc, toks):
     attrs.sort()
     return ['<date {}>{}</date>'.format(' '.join(attrs), ''.join(toks))]
 
-def _pa_record_heading_place (s, loc, toks):
+
+def _pa_record_heading_place(s, loc, toks):
     return ['<name ana="ereed:{}" type="place_region">{}</name>'.format(
         toks[0], toks[0])]
 
-def _pa_record_heading_record (s, loc, toks):
+
+def _pa_record_heading_record(s, loc, toks):
     return ['<seg ana="ereed:{}">{}</seg>'.format(toks[0], toks[0])]
 
-def _pa_return (s, loc, toks):
+
+def _pa_return(s, loc, toks):
     # TODO: Perhaps add newlines here to deal with the case of long
     # lines in the source?
     return ['<lb />']
 
-def _pa_right_marginale (s, loc, toks):
+
+def _pa_right_marginale(s, loc, toks):
     return ['<note type="marginal" place="margin_right">', ''.join(toks[0]),
             '</note>']
 
-def _pa_row (s, loc, toks):
+
+def _pa_row(s, loc, toks):
     return ['<row>', ''.join(toks[0]), '</row>']
 
-def _pa_section (s, loc, toks):
+
+def _pa_section(s, loc, toks):
     return ['\N{SECTION SIGN}']
 
-def _pa_semicolon (s, loc, toks):
+
+def _pa_semicolon(s, loc, toks):
     # Private Use Area; see
     # http://folk.uib.no/hnooh/mufi/specs/MUFI-Alphabetic-3-0.pdf
     return ['\uF161']
 
-def _pa_signed (s, loc, toks):
+
+def _pa_signed(s, loc, toks):
     return _make_signed(s, loc, toks)
 
-def _pa_signed_centre (s, loc, toks):
+
+def _pa_signed_centre(s, loc, toks):
     return _make_signed(s, loc, toks, 'centre')
 
-def _pa_signed_right (s, loc, toks):
+
+def _pa_signed_right(s, loc, toks):
     return _make_signed(s, loc, toks, 'right')
 
-def _pa_small_caps (s, loc, toks):
+
+def _pa_small_caps(s, loc, toks):
     return ['<hi rend="smallcaps">', ''.join(toks[0]), '</hi>']
 
-def _pa_special_v (s, loc, toks):
+
+def _pa_special_v(s, loc, toks):
     return ['\N{LATIN SMALL LETTER MIDDLE-WELSH V}']
 
-def _pa_superscript (s, loc, toks):
+
+def _pa_superscript(s, loc, toks):
     return ['<hi rend="superscript">', ''.join(toks[0]), '</hi>']
 
-def _pa_supplied (s, loc, toks):
+
+def _pa_supplied(s, loc, toks):
     return ['<supplied>', ''.join(toks[0]), '</supplied>']
 
-def _pa_tab (s, loc, toks):
+
+def _pa_tab(s, loc, toks):
     return ['<milestone type="table-cell" />']
 
-def _pa_tab_start (s, loc, toks):
+
+def _pa_tab_start(s, loc, toks):
     return ['<hi rend="right">', ''.join(toks[0]), '</hi>']
 
-def _pa_table (s, loc, toks):
+
+def _pa_table(s, loc, toks):
     return ['<table>', ''.join(toks[0]), '</table>']
 
-def _pa_thorn (s, loc, toks):
+
+def _pa_thorn(s, loc, toks):
     return ['\N{LATIN SMALL LETTER THORN}']
 
-def _pa_THORN (s, loc, toks):
+
+def _pa_THORN(s, loc, toks):
     return ['\N{LATIN CAPITAL LETTER THORN}']
 
-def _pa_tilde (s, loc, toks):
+
+def _pa_tilde(s, loc, toks):
     return ['{}\N{COMBINING TILDE}'.format(toks[1])]
 
-def _pa_transcription (s, loc, toks):
+
+def _pa_transcription(s, loc, toks):
     return ['<div type="transcription">\n', ''.join(toks), '</div>\n']
 
-def _pa_transcription_heading (s, loc, toks):
+
+def _pa_transcription_heading(s, loc, toks):
     try:
         page_details = toks[0][0].strip().split()
     except IndexError:
@@ -665,22 +761,29 @@ def _pa_transcription_heading (s, loc, toks):
         pb = ''
     return ['<head>{}</head>\n{}'.format(''.join(toks[0]), pb)]
 
-def _pa_transcription_section (s, loc, toks):
+
+def _pa_transcription_section(s, loc, toks):
     return ['<div>\n', ''.join(toks), '\n</div>\n']
 
-def _pa_umlaut (s, loc, toks):
+
+def _pa_umlaut(s, loc, toks):
     return ['{}\N{COMBINING DIAERESIS}'.format(toks[1])]
 
-def _pa_wynn (s, loc, toks):
+
+def _pa_wynn(s, loc, toks):
     return ['\N{LATIN LETTER WYNN}']
 
-def _pa_xml_escape (s, loc, toks):
+
+def _pa_xml_escape(s, loc, toks):
     return [html.escape(toks[0])]
 
-def _pa_yogh (s, loc, toks):
+
+def _pa_yogh(s, loc, toks):
     return ['\N{LATIN SMALL LETTER YOGH}']
 
-def _pa_YOGH (s, loc, toks):
+
+def _pa_YOGH(s, loc, toks):
     return ['\N{LATIN CAPITAL LETTER YOGH}']
+
 
 document_grammar = _define_grammar()

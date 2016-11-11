@@ -9,7 +9,18 @@ import docx
 from .exceptions import TextPrepareDocumentUpdateError
 
 
-def convert_at_codes (text):
+def convert_at_codes(text):
+    """Returns `text` with @-code markup converted into the form required
+    by the grammar.
+
+    :param text: text to convert
+    :type text: `str`
+    :rtype: `str`
+
+    """
+    # Change the format of closing @-codes from '@x \' to '@x/'. The
+    # original whitespace can cause problems in the parsing, but the
+    # editors are used to that form.
     codes = ['a', 'b', 'cnx', 'cor', 'cym', 'deu', 'e', 'eng', 'f', 'fra', 'g',
              'gla', 'gmh', 'gml', 'grc', 'i', 'ita', 'j', 'k', 'l', 'lat', 'm',
              'p', 'por', 'q', 'r', 's', 'sn', 'snc', 'snr', 'spa', 'wlm', 'x',
@@ -18,7 +29,8 @@ def convert_at_codes (text):
         text = text.replace('@{} \\'.format(code), '@{}/'.format(code))
     return text
 
-def convert_to_docx (doc_path):
+
+def convert_to_docx(doc_path):
     with tempfile.TemporaryDirectory() as env_fh:
         command = '''soffice -env:UserInstallation=file://{} --headless
                      --convert-to docx {}'''.format(env_fh, doc_path)
@@ -30,7 +42,8 @@ def convert_to_docx (doc_path):
             raise TextPrepareDocumentUpdateError(msg.format(e.output))
     return os.path.splitext(doc_path)[0] + '.docx'
 
-def update_word (doc_path):
+
+def update_word(doc_path):
     try:
         doc = docx.Document(docx=doc_path)
     except ValueError:

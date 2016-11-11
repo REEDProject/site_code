@@ -12,8 +12,8 @@ class TestDocumentConverter (TestCase):
 
     vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u']
 
-    def _check_conversion (self, text, expected, record_heading=True,
-                           subheading=True):
+    def _check_conversion(self, text, expected, record_heading=True,
+                          subheading=True):
         if subheading:
             text = '@w\\f 124 {(19 November)}\\!\n' + text
             expected = '''<div type="transcription">
@@ -34,85 +34,79 @@ class TestDocumentConverter (TestCase):
         actual = ''.join(document_grammar.parseString(text))
         self.assertEqual(actual, expected)
 
-    def test_foo (self):
-        text = 'Item@f\Item: {written in display script}@f/ it is ordered that it shalbe lawfull for the said foure officers called the stewards of the said courte called the min<...>@f\min<...>:  minst<…> {BL: Addit. Ch. 42681A}@f/ Courte and for every or any of them accordinge to the auncient Custome to distreine the Instrument{es} of musick or any <...>@f\<...>: other {BL: Addit. Ch. 42681A}@f/ goodes or Chattells'
-        expected = 'Item<note type="foot">Item: <ex>written in display script</ex></note> it is ordered that it shalbe lawfull for the said foure officers called the stewards of the said courte called the min<damage><gap unit="chars" extent="3" /></damage><note type="foot">min<damage><gap unit="chars" extent="3" /></damage>:  minst<damage><gap unit="chars" extent="1" /></damage> <ex>BL: Addit. Ch. 42681A</ex></note> Courte and for every or any of them accordinge to the auncient Custome to distreine the Instrument<ex>es</ex> of musick or any <damage><gap unit="chars" extent="3" /></damage><note type="foot"><damage><gap unit="chars" extent="3" /></damage>: other <ex>BL: Addit. Ch. 42681A</ex></note> goodes or Chattells'
-        self.maxDiff = None
-        self._check_conversion(text, expected)
-
-    def test_acute (self):
+    def test_acute(self):
         for vowel in self.vowels:
             text = "b@'{}t".format(vowel)
             expected = 'b{}\N{COMBINING ACUTE ACCENT}t'.format(vowel)
             self._check_conversion(text, expected)
 
-    def test_AE (self):
+    def test_AE(self):
         text = 'Vita @AEterna'
         expected = 'Vita \N{LATIN CAPITAL LETTER AE}terna'
         self._check_conversion(text, expected)
 
-    def test_ae (self):
+    def test_ae(self):
         text = 'vita @aeterna'
         expected = 'vita \N{LATIN SMALL LETTER AE}terna'
         self._check_conversion(text, expected)
 
-    def test_blank (self):
+    def test_blank(self):
         text = 'some {(blank)} text'
         expected = 'some <space /> text'
         self._check_conversion(text, expected)
 
-    def test_bold (self):
+    def test_bold(self):
         text = 'some @e\\bold@e/ text'
         expected = 'some <hi rend="bold">bold</hi> text'
         self._check_conversion(text, expected)
 
-    def test_bold_italic (self):
+    def test_bold_italic(self):
         text = 'some @j\\bold italic@j/ text'
         expected = 'some <hi rend="bold_italic">bold italic</hi> text'
         self._check_conversion(text, expected)
 
-    def test_capitulum (self):
+    def test_capitulum(self):
         text = '@Ca'
         expected = '\N{BLACK LEFTWARDS BULLET}a'
         self._check_conversion(text, expected)
 
-    def test_caret (self):
+    def test_caret(self):
         text = 'a^e'
         expected = 'a\N{CARET}e'
         self._check_conversion(text, expected)
 
-    def test_cedilla (self):
+    def test_cedilla(self):
         text = 'gar@?con'
         expected = 'garc\N{COMBINING CEDILLA}on'
         self._check_conversion(text, expected)
 
-    def test_cell_right (self):
+    def test_cell_right(self):
         text = '<t><r><c>Some</c><cr>text</cr></r></t>'
         expected = '<table><row><cell>Some</cell><cell rend="right">text</cell></row></table>'
         self._check_conversion(text, expected)
 
-    def test_centred (self):
+    def test_centred(self):
         text = 'some @m\\centred@m/ text'
         expected = 'some <hi rend="center">centred</hi> text'
         self._check_conversion(text, expected)
 
-    def test_circumflex (self):
+    def test_circumflex(self):
         for vowel in self.vowels:
             text = 'b@^{}t'.format(vowel)
             expected = 'b{}\N{COMBINING CIRCUMFLEX ACCENT}t'.format(vowel)
             self._check_conversion(text, expected)
 
-    def test_closer (self):
+    def test_closer(self):
         text = '@cl\\TTFN, Jamie@cl/'
         expected = '<closer>TTFN, Jamie</closer>'
         self._check_conversion(text, expected)
 
-    def test_collation_note_ref (self):
+    def test_collation_note_ref(self):
         text = 'Some @cr\\@r1\\interesting text@cr/ content'
         expected = 'Some <ref target="#cn1" type="collation-note">interesting text</ref> content'
         self._check_conversion(text, expected)
 
-    def test_collation_notes (self):
+    def test_collation_notes(self):
         text = '''@h\\BPA!1532!DOU2!eng\\!
 @w\\f 124 {(19 November)}\\!
 Test.
@@ -144,44 +138,44 @@ Test.
         self.maxDiff = None
         self._check_conversion(text, expected, False, False)
 
-    def test_comment (self):
+    def test_comment(self):
         text = 'some @xc\\commented out@xc/ text'
         expected = 'some <!-- commented out --> text'
         self._check_conversion(text, expected)
 
-    def test_damaged (self):
+    def test_damaged(self):
         for i in range(1, 5):
             text = 'dam<{}> text'.format('.' * i)
             expected = 'dam<damage><gap unit="chars" extent="{}" /></damage>' \
                        ' text'.format(i)
             self._check_conversion(text, expected)
 
-    def test_deleted (self):
+    def test_deleted(self):
         text = 'some [deleted] text'
         expected = 'some <del>deleted</del> text'
         self._check_conversion(text, expected)
 
-    def test_dot_over (self):
+    def test_dot_over(self):
         text = 'ove@.rdot'
         expected = 'over\N{COMBINING DOT ABOVE}dot'
         self._check_conversion(text, expected)
 
-    def test_dot_under (self):
+    def test_dot_under(self):
         text = 'unde@#rdot'
         expected = 'under\N{COMBINING DOT BELOW}dot'
         self._check_conversion(text, expected)
 
-    def test_ellipsis (self):
+    def test_ellipsis(self):
         text = 'some ... text'
         expected = 'some <gap reason="omitted" /> text'
         self._check_conversion(text, expected)
 
-    def test_en_dash (self):
+    def test_en_dash(self):
         text = '1651--1653'
         expected = '1651\N{EN DASH}1653'
         self._check_conversion(text, expected)
 
-    def test_end_notes (self):
+    def test_end_notes(self):
         text = '''@h\\BPA!1532!DOU2!eng\\!
 @w\\f 124 {(19 November)}\\!
 Test.
@@ -212,63 +206,63 @@ Another note.
 </text>'''
         self._check_conversion(text, expected, False, False)
 
-    def test_ENG (self):
+    def test_ENG(self):
         text = '@Nati'
         expected = '\N{LATIN CAPITAL LETTER ENG}ati'
         self._check_conversion(text, expected)
 
-    def test_eng (self):
+    def test_eng(self):
         text = 'Fi@nal'
         expected = 'Fi\N{LATIN SMALL LETTER ENG}al'
         self._check_conversion(text, expected)
 
-    def test_eth (self):
+    def test_eth(self):
         text = 'Gala@don'
         expected = 'Gala\N{LATIN SMALL LETTER ETH}on'
         self._check_conversion(text, expected)
 
-    def test_exclamation (self):
+    def test_exclamation(self):
         text = 'Zounds@!'
         expected = 'Zounds!'
         self._check_conversion(text, expected)
 
-    def test_exdented (self):
+    def test_exdented(self):
         text = '@g\\Exdented block of text.@g/'
         expected = '<ab type="exdent">Exdented block of text.</ab>'
         self._check_conversion(text, expected)
 
-    def test_expansion (self):
+    def test_expansion(self):
         text = 'some {expanded} text'
         expected = 'some <ex>expanded</ex> text'
         self._check_conversion(text, expected)
 
-    def test_footnote (self):
+    def test_footnote(self):
         text = '@f\\our Churche: {St Nicholas}@f/'
         expected = '<note type="foot">our Churche: <ex>St Nicholas</ex></note>'
         self._check_conversion(text, expected)
 
-    def test_grave (self):
+    def test_grave(self):
         for vowel in self.vowels:
             text = "b@,{}t".format(vowel)
             expected = 'b{}\N{COMBINING GRAVE ACCENT}t'.format(vowel)
             self._check_conversion(text, expected)
 
-    def test_indented (self):
+    def test_indented(self):
         text = '@p\\Indented block of text.@p/'
         expected = '<ab type="indent">Indented block of text.</ab>'
         self._check_conversion(text, expected)
 
-    def test_interlineation_above (self):
+    def test_interlineation_above(self):
         text = 'Some @a\\interlinearly above@a/ text'
         expected = 'Some <add place="above">interlinearly above</add> text'
         self._check_conversion(text, expected)
 
-    def test_interlineation_below (self):
+    def test_interlineation_below(self):
         text = 'Some @b\\interlinearly below@b/ text'
         expected = 'Some <add place="below">interlinearly below</add> text'
         self._check_conversion(text, expected)
 
-    def test_interpolation (self):
+    def test_interpolation(self):
         text = 'Some @i\\interpolated@i/ text'
         expected = 'Some <add><handShift />interpolated</add> text'
         self._check_conversion(text, expected)
@@ -276,53 +270,53 @@ Another note.
         nested_expected = 'Some <add><handShift /><add><handShift />really</add> interpolated</add> text'
         self._check_conversion(nested_text, nested_expected)
 
-    def test_italic_small_caps (self):
+    def test_italic_small_caps(self):
         text = 'Some @q\\italic small caps@q/ text'
         expected = 'Some <hi rend="smallcaps_italic">italic small caps</hi> text'
         self._check_conversion(text, expected)
 
-    def test_lang_anglo_norman (self):
+    def test_lang_anglo_norman(self):
         text = 'The king said, "@xno\\Bon soir.@xno/"'
         expected = 'The king said, "<foreign xml:lang="xno">Bon soir.</foreign>"'
         self._check_conversion(text, expected)
 
-    def test_lang_english (self):
+    def test_lang_english(self):
         text = 'rex "@eng\\Hi.@eng/" dixit'
         expected = 'rex "<foreign xml:lang="eng">Hi.</foreign>" dixit'
         self._check_conversion(text, expected)
 
-    def test_lang_latin (self):
+    def test_lang_latin(self):
         text = 'The king said, "@lat\\Salve.@lat/"'
         expected = 'The king said, "<foreign xml:lang="lat">Salve.</foreign>"'
         self._check_conversion(text, expected)
 
-    def test_left_marginale (self):
+    def test_left_marginale(self):
         text = 'Hark, a @l\\left marginale note@l/ appears'
         expected = 'Hark, a <note type="marginal" place="margin_left">left marginale note</note> appears'
         self._check_conversion(text, expected)
 
-    def test_list (self):
+    def test_list(self):
         text = '@ul\\ @li\\List item@li/ @li\\Another@li/ @ul/'
         expected = '<list><item>List item</item><item>Another</item></list>'
         self._check_conversion(text, expected)
 
-    def test_macron (self):
+    def test_macron(self):
         for vowel in self.vowels:
             text = 'b@-{}t'.format(vowel)
             expected = 'b{}\N{COMBINING MACRON}t'.format(vowel)
             self._check_conversion(text, expected)
 
-    def test_OE (self):
+    def test_OE(self):
         text = 'd@OEr'
         expected = 'd\N{LATIN CAPITAL LIGATURE OE}r'
         self._check_conversion(text, expected)
 
-    def test_oe (self):
+    def test_oe(self):
         text = 'd@oer'
         expected = 'd\N{LATIN SMALL LIGATURE OE}r'
         self._check_conversion(text, expected)
 
-    def test_page_break (self):
+    def test_page_break(self):
         text = '@w\\f 1\\!\nText that |crosses a page.'
         expected = '''<div type="transcription">
 <div>
@@ -333,22 +327,22 @@ Text that <pb />crosses a page.
 </div>'''
         self._check_conversion(text, expected, True, False)
 
-    def test_paragraph (self):
+    def test_paragraph(self):
         text = '@P Lo, a paragraph.'
         expected = '\N{PILCROW SIGN} Lo, a paragraph.'
         self._check_conversion(text, expected)
 
-    def test_pound (self):
+    def test_pound(self):
         text = '@$20 thousand I never knew I had'
         expected = '\N{POUND SIGN}20 thousand I never knew I had'
         self._check_conversion(text, expected)
 
-    def test_raised (self):
+    def test_raised(self):
         text = 'mid@*dot'
         expected = 'mid\N{MIDDLE DOT}dot'
         self._check_conversion(text, expected)
 
-    def test_record_heading (self):
+    def test_record_heading(self):
         base_input = '@h\\{place}!{year}!{record}!{lang}\\!\n@w\\Test\\!\nText'
         base_expected = '''<text type="record">
 <body xml:lang="{lang}">
@@ -367,7 +361,8 @@ Text
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), False, False)
         data = {'lang': 'lat', 'place': 'LEE', 'record': 'V151',
-                'date': '<date when-iso="1631">1630/1</date>', 'year': '1630/1'}
+                'date': '<date when-iso="1631">1630/1</date>',
+                'year': '1630/1'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), False, False)
         data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
@@ -401,83 +396,83 @@ Text
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), False, False)
 
-    def test_return (self):
+    def test_return(self):
         text = 'Bam! new line'
         expected = 'Bam<lb /> new line'
         self._check_conversion(text, expected)
 
-    def test_right_marginale (self):
+    def test_right_marginale(self):
         text = 'Hark, a @r\\right marginale note@r/ appears'
         expected = 'Hark, a <note type="marginal" place="margin_right">right marginale note</note> appears'
         self._check_conversion(text, expected)
 
-    def test_section (self):
+    def test_section(self):
         text = 'A new section? @% Yes.'
         expected = 'A new section? \N{SECTION SIGN} Yes.'
         self._check_conversion(text, expected)
 
-    def test_semicolon (self):
+    def test_semicolon(self):
         text = 'PUA @; punctus elevatus'
         expected = 'PUA \uF161 punctus elevatus'
         self._check_conversion(text, expected)
 
-    def test_signed (self):
+    def test_signed(self):
         text = '@sn\\Thomas dyckes@sn/'
         expected = '<seg type="signed">Thomas dyckes</seg>'
         self._check_conversion(text, expected)
 
-    def test_signed_centre (self):
+    def test_signed_centre(self):
         text = '@snc\\Thomas dyckes@snc/'
         expected = '<seg type="signed" rend="centre">Thomas dyckes</seg>'
         self._check_conversion(text, expected)
 
-    def test_signed_right (self):
+    def test_signed_right(self):
         text = '@snr\\Thomas dyckes@snr/'
         expected = '<seg type="signed" rend="right">Thomas dyckes</seg>'
         self._check_conversion(text, expected)
 
-    def test_small_caps (self):
+    def test_small_caps(self):
         text = 'Some @k\\small caps@k/ text'
         expected = 'Some <hi rend="smallcaps">small caps</hi> text'
         self._check_conversion(text, expected)
 
-    def test_special_v (self):
+    def test_special_v(self):
         text = 'Special @v, not k'
         expected = 'Special \N{LATIN SMALL LETTER MIDDLE-WELSH V}, not k'
         self._check_conversion(text, expected)
 
-    def test_superscript (self):
+    def test_superscript(self):
         text = 'Some @s\\superscripted@s/ text'
         expected = 'Some <hi rend="superscript">superscripted</hi> text'
         self._check_conversion(text, expected)
 
-    def test_table (self):
+    def test_table(self):
         text = '<t>\n<r>\n<c></c>\n<c>Some</c>\n<c>text</c>\n</r>\n</t>'
         expected = '<table>\n<row>\n<cell></cell>\n<cell>Some</cell>\n<cell>text</cell>\n</row>\n</table>'
         self._check_conversion(text, expected)
 
-    def test_table_with_comment (self):
+    def test_table_with_comment(self):
         text = '<t>\n<r>\n<c></c>\n<c>Some</c>\n@xc\\A comment@xc/\n<c>text</c>\n</r>\n</t>'
         expected = '<table>\n<row>\n<cell></cell>\n<cell>Some</cell>\n<!-- A comment -->\n<cell>text</cell>\n</row>\n</table>'
         self._check_conversion(text, expected)
 
-    def test_THORN (self):
+    def test_THORN(self):
         text = '@THat is silly and wrong'
         expected = '\N{LATIN CAPITAL LETTER THORN}at is silly and wrong'
         self._check_conversion(text, expected)
 
-    def test_thorn (self):
+    def test_thorn(self):
         text = 'A @thin man'
         expected = 'A \N{LATIN SMALL LETTER THORN}in man'
         self._check_conversion(text, expected)
 
-    def test_tilde (self):
+    def test_tilde(self):
         for char in self.vowels + ['n']:
             text = 'pa@"{}a'.format(char)
             expected = 'pa{}\N{COMBINING TILDE}a'.format(char)
             self._check_conversion(text, expected)
 
-    def test_transcription (self):
+    def test_transcription(self):
         text = '@w\\ f.40* {(12 January) (Fortune: Warrant)}\!\nText'
         expected = '''<div type="transcription">
 <div>
@@ -516,35 +511,35 @@ Text
 </div>'''
         self._check_conversion(text, expected, True, False)
 
-    def test_umlaut (self):
+    def test_umlaut(self):
         for vowel in self.vowels:
             text = 'b@:{}t'.format(vowel)
             expected = 'b{}\N{COMBINING DIAERESIS}t'.format(vowel)
             self._check_conversion(text, expected)
 
-    def test_wynn (self):
+    def test_wynn(self):
         text = 'All I do is @y'
         expected = 'All I do is \N{LATIN LETTER WYNN}'
         self._check_conversion(text, expected)
 
-    def test_xml_escape (self):
+    def test_xml_escape(self):
         data = {'&': '&amp;', '<': '&lt;', '>': '&gt;'}
         for char, expected in data.items():
             text = 'a {} b'.format(char)
             expected = 'a {} b'.format(expected)
             self._check_conversion(text, expected)
 
-    def test_YOGH (self):
+    def test_YOGH(self):
         text = 'Not @Z Sothoth'
         expected = 'Not \N{LATIN CAPITAL LETTER YOGH} Sothoth'
         self._check_conversion(text, expected)
 
-    def test_yogh (self):
+    def test_yogh(self):
         text = 'cummings invokes @z sothoth'
         expected = 'cummings invokes \N{LATIN SMALL LETTER YOGH} sothoth'
         self._check_conversion(text, expected)
 
-    def test_nesting (self):
+    def test_nesting(self):
         # This is impossible to comprehensively test. Start with a few
         # examples and add more as problems are discovered.
         text = '@l\\@k\\ac@k/or @k\\a@k/@l/!'
@@ -554,17 +549,17 @@ Text
 
 class TestXSLT (TestCase):
 
-    def setUp (self):
+    def setUp(self):
         self._doc = Document(None, 0, 'staff')
         self.maxDiff = None
 
-    def _transform (self, text, *xslt_paths):
+    def _transform(self, text, *xslt_paths):
         tree = etree.ElementTree(etree.fromstring(text))
         result_tree = self._doc._transform(tree, *xslt_paths)
         return etree.tostring(result_tree, encoding='unicode',
                               pretty_print=True)
 
-    def test_add_ab (self):
+    def test_add_ab(self):
         text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group>
@@ -664,7 +659,7 @@ After table text.
         actual = self._transform(text, ADD_AB_XSLT_PATH)
         self.assertEqual(actual, expected)
 
-    def test_add_header (self):
+    def test_add_header(self):
         text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff">
 <text>
 <group>
@@ -703,7 +698,7 @@ After table text.
         actual = self._transform(text, ADD_HEADER_XSLT_PATH)
         self.assertEqual(actual, expected)
 
-    def test_add_id (self):
+    def test_add_id(self):
         text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group>
@@ -798,7 +793,7 @@ After table text.
         actual = self._transform(text, ADD_ID_XSLT_PATH)
         self.assertEqual(actual, expected)
 
-    def test_massage_footnote (self):
+    def test_massage_footnote(self):
         text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group>
@@ -837,7 +832,7 @@ After table text.
         actual = self._transform(text, MASSAGE_FOOTNOTE_XSLT_PATH)
         self.assertEqual(actual, expected)
 
-    def test_remove_ab (self):
+    def test_remove_ab(self):
         text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group>

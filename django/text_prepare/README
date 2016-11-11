@@ -1,0 +1,40 @@
+        ABOUT
+
+This Django app is responsible for operating on eREED Word documents
+containing records marked up with @-codes. It provides the following
+three functions (corresponding to three views in views.py):
+
+* Update the Word document to match the required format. A Word
+  document is supplied, and a Word (docx) file is returned, that must
+  then be saved and used as input for the next two functions.
+
+* Validate the content of the Word document, providing feedback on the
+  position of any errors. Validity is defined as conformance to the
+  @-code grammar that is specified in document_parser.py.
+
+* Convert the Word document to TEI XML. Automatically validates the
+  input, and provides the same output in the case of errors as the
+  validation function.
+
+The generated TEI XML includes xml:id attributes that are guaranteed
+to be unique within the document, and make use of a supplied prefix so
+that (if the same prefix is not used more than once) they are unique
+across the whole corpus.
+
+It is important for the Word file that is converted to represent the
+full set of records for a collection. Trying to merge the results of
+two separate conversions into one TEI document is a manual process
+that may require alteration of duplicate xml:ids.
+
+
+        INSTALLATION
+
+This app makes use of headless LibreOffice to extract text from the
+supplied Word document, and the Python packages lxml, python_docx, and
+pyparsing.
+
+
+        TESTS
+
+This app comes with tests of the conversion process, going from text
+to text.
