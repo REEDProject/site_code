@@ -59,6 +59,9 @@
           <map:part src="cocoon://_internal/menu/main.xml?url=search/" />
           <map:part src="cocoon://internal/search/facet_query.xml" />
           <map:part src="cocoon://_internal/request.xml" />
+          <map:part src="cocoon://internal/eatsml/preprocess.xml" />
+          <map:part element="code_list"
+                    src="cocoon://internal/code_list/preprocess.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/search.xsl" />
         <map:serialize />
@@ -89,18 +92,9 @@
         <map:serialize />
       </map:match>
 
-      <map:match id="local-tei-display-html" pattern="text/**.html">
-        <map:aggregate element="aggregation" label="content">
-          <map:part label="tei" src="cocoon://internal/tei/preprocess/{1}.xml" />
-          <map:part src="cocoon://_internal/menu/main.xml?url=text/{1}.html" />
-        </map:aggregate>
-        <map:transform src="cocoon://_internal/template/tei.xsl" />
-        <map:serialize />
-      </map:match>
-
-      <map:match id="local-tei-display-xml" pattern="text/**.xml">
+      <map:match id="ereed-record-display-xml" pattern="records/**.xml">
         <map:read mime-type="application/tei+xml"
-                  src="../content/xml/tei/{1}.xml" />
+                  src="cocoon://internal/tei/preprocess-record/{1}.xml" />
       </map:match>
 
       <map:match id="local-tei-display-pdf" pattern="text/**.pdf">
@@ -111,23 +105,16 @@
       </map:match>
 
       <map:match id="local-tei-display-epub" pattern="text/**.epub">
-        <map:generate src="cocon://internal/tei/preprocess/{1}/{2}.xml"
+        <map:generate src="cocoon://internal/tei/preprocess/{1}/{2}.xml"
                       label="tei" />
         <map:transform src="cocoon://_internal/template/epub.xsl" />
         <map:serialize type="xhtml" />
       </map:match>
 
-      <!-- Example of providing content in more than one language. -->
-      <map:match id="local-generic-multilingual-html" pattern="*/**.html">
-        <!-- {1} is a language code. -->
-        <map:aggregate element="aggregation" label="content">
-          <map:part src="cocoon://_internal/menu/{1}/{1}-main.xml?url={2}.html" />
-          <map:part src="cocoon://internal/metadata/files.xml" />
-          <map:part src="cocoon://internal/tei/preprocess/{1}/{2}.xml"
-                    label="tei" />
-        </map:aggregate>
-        <map:transform src="cocoon://_internal/template/tei.xsl" />
-        <map:serialize />
+      <map:match id="local-test" pattern="test/">
+        <map:generate src="https://ereed.library.utoronto.ca/eats/entity/15539/eatsml/" />
+        <map:transform src="../stylesheets/rdf/eatsml-to-rdf.xsl" />
+        <map:serialize type="xml" />
       </map:match>
     </map:pipeline>
 

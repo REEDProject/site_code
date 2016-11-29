@@ -126,6 +126,106 @@
    <field indexed="true" multiValued="True" name="mentioned_entities"
           required="false" stored="true" type="string" />
 
+   <!-- Facet fields. -->
+   <field indexed="true" multiValued="true" name="facet_record_type"
+          required="false" stored="true" type="string" />
+   <field indexed="true" multiValued="true"
+          name="facet_collectives_guild" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_collectives_occupation" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_collectives_clergy" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_crimes_crime" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_days_secular" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_days_liturgical" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_drama_type" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_drama_work" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_drama_status" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_drama_character" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_entertainers_type" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_entertainers_patronised" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_entertainers_status" required="false" stored="true"
+          type="string" />
+   <field indexed="true" multiValued="true"
+          name="facet_entertainments_type" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_entertainments_custom" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_entertainments_animal" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_country" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_county" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_settlement" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_materials_instrument" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_materials_book" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_materials_property" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_materials_set" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_materials_wagon" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_materials_cloth" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_materials_costume" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_materials_regalia" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_materials_food" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_people_named" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_people_gender" required="false" stored="true"
+          type="string" />
+   <field indexed="true" multiValued="true"
+          name="facet_people_status" required="false" stored="true"
+          type="string" />
+
    <!-- catchall field, containing all other searchable text fields
         (implemented via copyField further on in this schema -->
    <field name="text" type="text_general" indexed="true"
