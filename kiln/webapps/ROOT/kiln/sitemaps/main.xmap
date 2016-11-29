@@ -86,14 +86,14 @@
     <map:pipeline id="kiln-eats" internal-only="true">
       <!-- Exports all the entities in EATSML. -->
       <map:match pattern="_internal/eats/entities.xml">
-        <map:generate src="{global:eats-server}edit/export/eatsml/" />
+        <map:generate src="{global:eats-server}export/eatsml/entities/" />
         <map:serialize type="xml" />
       </map:match>
 
       <!-- Exports all the entities that are associated with an
            authority (id) in EATSML. -->
       <map:match pattern="_internal/eats/*/entities.xml">
-        <map:generate src="{global:eats-server}edit/export/eatsml/{1}/" />
+        <map:generate src="{global:eats-server}export/eatsml/{1}/" />
         <map:serialize type="xml" />
       </map:match>
     </map:pipeline>
