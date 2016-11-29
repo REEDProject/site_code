@@ -2,9 +2,40 @@
 <query>
   <df>text</df>
   <facet>true</facet>
-  <facet.field>author</facet.field>
-  <facet.field>publication_date</facet.field>
+  <facet.field>facet_locations_country</facet.field>
+  <facet.field>facet_locations_county</facet.field>
+  <facet.field>facet_locations_settlement</facet.field>
+  <facet.field>facet_locations_feature</facet.field>
+  <facet.field>facet_days_secular</facet.field>
+  <facet.field>facet_days_liturgical</facet.field>
+  <facet.field>facet_people_named</facet.field>
+  <facet.field>facet_people_gender</facet.field>
+  <facet.field>facet_people_status</facet.field>
+  <facet.field>facet_collectives_guild</facet.field>
+  <facet.field>facet_collectives_occupation</facet.field>
+  <facet.field>facet_collectives_clergy</facet.field>
+  <facet.field>facet_entertainers_type</facet.field>
+  <facet.field>facet_entertainers_patronised</facet.field>
+  <facet.field>facet_entertainers_status</facet.field>
+  <facet.field>facet_entertainments_type</facet.field>
+  <facet.field>facet_entertainments_custom</facet.field>
+  <facet.field>facet_entertainments_animal</facet.field>
+  <facet.field>facet_drama_type</facet.field>
+  <facet.field>facet_drama_work</facet.field>
+  <facet.field>facet_drama_status</facet.field>
+  <facet.field>facet_drama_character</facet.field>
+  <facet.field>facet_materials_instrument</facet.field>
+  <facet.field>facet_materials_book</facet.field>
+  <facet.field>facet_materials_property</facet.field>
+  <facet.field>facet_materials_set</facet.field>
+  <facet.field>facet_materials_wagon</facet.field>
+  <facet.field>facet_materials_cloth</facet.field>
+  <facet.field>facet_materials_costume</facet.field>
+  <facet.field>facet_materials_regalia</facet.field>
+  <facet.field>facet_materials_food</facet.field>
+  <facet.field>facet_crimes_crime</facet.field>
+  <facet.field>facet_record_type</facet.field>
   <facet.mincount>1</facet.mincount>
-  <facet.sort>index</facet.sort>
+  <facet.sort>count</facet.sort>
   <rows>20</rows>
 </query>

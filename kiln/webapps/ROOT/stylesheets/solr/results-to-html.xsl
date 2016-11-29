@@ -10,7 +10,7 @@
        ANDed or ORed together; this is controlled by which of
        display-unselected-and-facet/display-unselected-or-facet and
        display-selected-and-facet/display-selected-or-facet pairs are
-       used. Addition xsl:templates can be added to allow for some
+       used. Additional xsl:templates can be added to allow for some
        facets to be ORed and some to be ANDed.
 
        Note that ORed facets require that the facet.field value(s) of
@@ -22,6 +22,8 @@
   <xsl:import href="../defaults.xsl" />
   <xsl:include href="cocoon://_internal/url/reverse.xsl" />
   <xsl:include href="results-pagination.xsl" />
+
+  <xsl:key name="item-by-eats-id" match="*[@eats_id]" use="@eats_id" />
 
   <!-- Using the XML from a request generator is much simpler than
        using the value of {request:queryString}, because the former
@@ -46,7 +48,7 @@
          then call display-unselected-and-facet. If a facet is ORed
          together in a single parameter, call
          display-unselected-or-facet. -->
-    <xsl:call-template name="display-unselected-and-facet" />
+    <xsl:call-template name="display-unselected-or-facet" />
   </xsl:template>
 
   <xsl:template match="lst[@name='facet_fields']" mode="search-results">
@@ -88,19 +90,7 @@
   </xsl:template>
 
   <xsl:template match="result/doc" mode="search-results">
-    <xsl:variable name="filepath-prefix"
-                  select="substring-before(str[@name='file_path'], '/')" />
-    <xsl:variable name="short-filepath"
-                  select="substring-after(str[@name='file_path'], 'tei/')" />
-    <xsl:variable name="result-url">
-      <!-- Use the filepath-prefix to determine what URL to use to
-           display the document from which this result came. -->
-      <xsl:choose>
-        <xsl:when test="$filepath-prefix = 'tei'">
-          <xsl:value-of select="kiln:url-for-match('local-tei-display-html', ($short-filepath))" />
-        </xsl:when>
-      </xsl:choose>
-    </xsl:variable>
+    <xsl:variable name="result-url" select="kiln:url-for-match('ereed-record-display-html', (str[@name='document_id']))" />
     <li>
       <a href="{$result-url}">
         <xsl:value-of select="arr[@name='document_title']/str[1]" />
@@ -145,7 +135,7 @@
          then call display-selected-and-facet. If a facet is ORed
          together in a single parameter, call
          display-selected-or-facet. -->
-    <xsl:call-template name="display-selected-and-facet" />
+    <xsl:call-template name="display-selected-or-facet" />
   </xsl:template>
 
   <xsl:template match="text()" mode="search-results" />
@@ -185,6 +175,7 @@
     <xsl:variable name="facets"
                   select="tokenize(substring-before(
                           substring-after(., '('), ')'), ' OR ')" />
+    <xsl:variable name="context" select="." />
     <xsl:for-each select="$facets">
       <xsl:variable name="new-fq">
         <xsl:if test="count($facets) &gt; 1">
@@ -200,8 +191,12 @@
         </xsl:if>
       </xsl:variable>
       <li>
-      <!-- Display the facet name without the surrounding quotes. -->
-        <xsl:value-of select="substring(., 2, string-length(.)-2)" />
+        <!-- Display the facet name without the surrounding quotes. -->
+        <xsl:call-template name="lookup-facet-id">
+          <xsl:with-param name="context" select="$context" />
+          <xsl:with-param name="id"
+                          select="substring(., 2, string-length(.)-2)" />
+        </xsl:call-template>
         <xsl:text> (</xsl:text>
         <!-- Create a link to unapply the facet. -->
         <a>
@@ -283,7 +278,9 @@
               </xsl:otherwise>
             </xsl:choose>
           </xsl:attribute>
-          <xsl:value-of select="@name" />
+          <xsl:call-template name="lookup-facet-id">
+            <xsl:with-param name="id" select="@name" />
+          </xsl:call-template>
         </a>
         <xsl:call-template name="display-facet-count" />
       </li>
@@ -294,6 +291,22 @@
     <xsl:text> (</xsl:text>
     <xsl:value-of select="." />
     <xsl:text>)</xsl:text>
+  </xsl:template>
+
+  <xsl:template name="lookup-facet-id">
+    <xsl:param name="context" select="." />
+    <xsl:param name="id" />
+    <xsl:for-each select="$context">
+      <xsl:variable name="item" select="key('item-by-eats-id', $id)" />
+      <xsl:choose>
+        <xsl:when test="$item">
+          <xsl:value-of select="$item" />
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="$id" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:function name="kiln:string-replace" as="xs:string">
