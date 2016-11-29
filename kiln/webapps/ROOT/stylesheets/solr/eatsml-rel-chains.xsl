@@ -40,7 +40,6 @@
 
   <xsl:template match="eats:entity_relationship" mode="recursed">
     <xsl:param name="domain_id" />
-    <xsl:variable name="entity_id" select="../../@xml:id" />
     <eats:entity_relationship>
       <xsl:attribute name="domain_entity" select="$domain_id" />
       <xsl:copy-of select="@authority" />
@@ -51,7 +50,7 @@
     <xsl:variable name="range_id" select="@range_entity" />
     <xsl:apply-templates select="id($range_id)/eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$contains_id][@domain_entity=$range_id]"
                          mode="recursed">
-        <xsl:with-param name="domain_id" select="$entity_id" />
+        <xsl:with-param name="domain_id" select="$domain_id" />
       </xsl:apply-templates>
   </xsl:template>
 
