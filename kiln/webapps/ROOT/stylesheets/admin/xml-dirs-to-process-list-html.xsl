@@ -31,12 +31,13 @@
             <th colspan="2" scope="col">Reports</th>
             <th scope="col">Search</th>
             <th scope="col">RDF</th>
-            <th scope="col">View</th>
           </tr>
         </thead>
         <tbody>
           <xsl:apply-templates mode="tei"
-                               select=".//dir:directory[@name='tei']" />
+                               select=".//dir:directory[@name='records']">
+            <xsl:with-param name="path" select="'tei/'" />
+          </xsl:apply-templates>
         </tbody>
       </table>
       <p>
@@ -114,13 +115,6 @@
            href="{kiln:url-for-match('local-rdf-harvest-display',
                                      ($filepath))}">
           <xsl:text>Harvest</xsl:text>
-        </a>
-      </td>
-      <!-- View on site. -->
-      <td>
-        <a href="{kiln:url-for-match('local-tei-display-html',
-                 ($short-filepath))}">
-          <xsl:text>View</xsl:text>
         </a>
       </td>
     </tr>

@@ -48,9 +48,10 @@
 
       <!-- Adding all TEI documents as XIncludes. -->
       <map:match id="local-solr-add-all" pattern="add/">
-        <map:generate src="cocoon://_internal/dirlist/content/xml/tei.xml" />
+        <map:generate src="cocoon://_internal/dirlist/content/xml/tei/records.xml" />
         <map:transform src="../stylesheets/admin/dir-to-xinclude.xsl">
-          <map:parameter name="prefix" value="cocoon://admin/solr/add/tei/tei/" />
+          <map:parameter name="prefix"
+                         value="cocoon://admin/solr/add/tei-records/tei/" />
         </map:transform>
         <map:transform type="xinclude" />
         <map:serialize type="xml" />
