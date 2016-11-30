@@ -72,7 +72,13 @@
       </p>
       <div class="content" data-section-content="">
         <ul class="no-bullet">
-          <xsl:apply-templates mode="search-results" />
+          <xsl:variable name="facet-values">
+            <xsl:apply-templates mode="search-results" />
+          </xsl:variable>
+          <xsl:for-each select="$facet-values/li">
+            <xsl:sort select="." />
+            <xsl:copy-of select="." />
+          </xsl:for-each>
         </ul>
       </div>
     </section>
