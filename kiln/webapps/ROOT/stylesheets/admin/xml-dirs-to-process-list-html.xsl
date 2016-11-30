@@ -40,11 +40,18 @@
           </xsl:apply-templates>
         </tbody>
       </table>
-      <p>
-        <button name="format" type="submit" value="html">Generate concordance</button>
-        <xsl:text> </xsl:text>
-        <button name="format" type="submit" value="csv">Generate CSV concordance</button>
-      </p>
+
+      <div class="row">
+        <div class="large-8 columns">
+          <select id="format_select" name="format">
+            <option value="html">HTML</option>
+            <option value="csv">CSV</option>
+          </select>
+        </div>
+        <div class="large-4 columns">
+          <input type="submit" value="Generate concordance" />
+        </div>
+      </div>
     </form>
   </xsl:template>
 
