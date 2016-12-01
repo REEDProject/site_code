@@ -36,7 +36,7 @@
                 </entry>
                 <entry>
                     <form><orth><hi rend="bold">Bertelinus, -i</hi></orth>
-                        <hi rend="italic">m</hi>
+                        <gram><hi rend="italic">m</hi></gram>
                     </form>
                     <sense xml:id="Bertelinus-1">St Bettelin (dates unknown), patron of Stafford
                     </sense>
@@ -47,27 +47,28 @@
             </div>
             <div xml:id="gloss-C">
                 <entry>
-                    <form><orth><hi rend="bold">cantalena, -e</hi></orth><hi rend="italics"
-                        >f</hi></form>
+                    <form><orth><hi rend="bold">cantalena, -e</hi></orth><gram><hi rend="italics"
+                                >f</hi></gram></form>
                     <sense xml:id="cantalena-1"><hi rend="italics">var of</hi> cantilena [<hi
                             rend="italics"><hi rend="small-caps">DML</hi></hi>] </sense>
                 </entry>
-                <!-- PG to here marking up rend etc-->
                 <entry>
                     <form><orth><hi rend="bold">carectata, -e</hi></orth>
-                        <hi rend="italics">f</hi></form>
-                    <sense xml:id="carectata-1">var of carrettata [DML]</sense>
+                        <gram><hi rend="italics">f</hi></gram></form>
+                    <sense xml:id="carectata-1">var of carrettata [<hi rend="italics"><hi
+                                rend="small-caps">DML</hi></hi>]</sense>
                 </entry>
                 <entry>
                     <form><orth><hi rend="bold">cestra, -e</hi></orth>
-                        <hi rend="italics">f</hi></form>
-                    <sense xml:id="cestra-1">var of chestra [DML]</sense>
+                        <gram><hi rend="italics">f</hi></gram></form>
+                    <sense xml:id="cestra-1"><hi rend="italics">var of</hi> chestra [<hi
+                            rend="italics"><hi rend="small-caps">DML</hi></hi>]</sense>
                 </entry>
             </div>
             <div xml:id="gloss-E">
                 <entry>
                     <form><orth><hi rend="bold">episcopus, -i</hi></orth>
-                        <hi rend="italic">m</hi></form>
+                        <gram><hi rend="italic">m</hi></gram></form>
                     <sense xml:id="episcopus-1">bishop;</sense>
                     <form><orth><hi rend="bold">~ puerorum</hi></orth></form>
                     <sense xml:id="episcopus_puerorum-1">boy bishop, a boy, originally a choirboy in
@@ -79,39 +80,47 @@
             <div xml:id="gloss-L">
                 <entry>
                     <form><orth><hi rend="bold">ludus, -i</hi></orth>
-                        <hi xml:id="italics">m</hi></form>
+                        <gram><hi xml:id="italics">m</hi></gram></form>
                     <sense xml:id="ludus-1">entertainment, ‘play,’ of an unspecified kind, not
-                        necessarily dramatic [see also ludus DML] </sense>
+                        necessarily dramatic [<hi rend="italics">see also</hi> ludus <hi
+                            rend="italics"><hi rend="small-caps">DML</hi></hi>] </sense>
                 </entry>
             </div>
             <div xml:id="gloss-M">
                 <entry>
                     <form><orth><hi rend="bold">Malbanus</hi></orth></form>
-                    <xr>see <hi rend="bold">vicus Malbanus</hi></xr>
+                    <xr><hi rend="italics">see</hi>
+                        <hi rend="bold">vicus Malbanus</hi></xr>
                 </entry>
                 <entry>
-                    <form><orth>Michaelis, -e</orth> adj</form>
+                    <form><orth><hi rend="bold">Michaelis, -e</hi></orth>
+                        <gram><hi rend="italics">adj</hi></gram></form>
                     <sense xml:id="Michaelis-1">of or pertaining to St Michael,</sense>
-                    <xr>see also terminus</xr>
+                    <xr><hi rend="italics">see also</hi> terminus</xr>
                 </entry>
             </div>
             <div xml:id="gloss-N">
                 <entry>
-                    <form><orth>nundine, -arum</orth> f pl</form>
+                    <form><orth><hi rend="bold">nundine, -arum</hi></orth>
+                        <gram><hi rend="italics">f pl</hi></gram></form>
                     <sense>market-day, fair-day</sense>
                 </entry>
             </div>
             <div xml:id="gloss-P">
                 <entry>
-                    <form><orth>parcellum, -i</orth> n</form>
-                    <sense xml:id="parcellem-1">var of parcella [DML]</sense>
+                    <form><orth><hi rend="bold">parcellum, -i</hi></orth>
+                        <gram><hi rend="italics">n</hi></gram></form>
+                    <sense xml:id="parcellem-1"><hi rend="italics">var of</hi> parcella [<hi
+                            rend="italics"><hi rend="small-caps">DML</hi></hi>]</sense>
                 </entry>
                 <entry>
-                    <form><orth>parochialis, -e</orth> adj</form>
+                    <form><orth><hi rend="bold">parochialis, -e</hi></orth>
+                        <gram><hi rend="italics">adj</hi></gram></form>
                     <sense xml:id="parochialis-1">of or pertaining to a parish </sense>
                 </entry>
                 <entry>
-                    <form><orth>promotus, -a, -um</orth> pfp pass</form>
+                    <form><orth><hi rend="bold">promotus, -a, -um</hi></orth>
+                        <gram><hi rend="italics">pfp pass</hi></gram></form>
                     <sense xml:id="promotus-1">promoted, used of a proceeding against a person in a
                         church court moved or initiated by someone other than the court itself or a
                         person authorized to make presentment</sense>
@@ -119,26 +128,29 @@
             </div>
             <div xml:id="gloss-T">
                 <entry>
-                    <form><orth>terminus, -i</orth> m</form>
+                    <form><orth><hi rend="bold">terminus, -i</hi></orth>
+                        <hi rend="italics">m</hi></form>
                     <sense xml:id="terminus-1">term, here a law term;</sense>
-                    <form><orth>~ Michaelis</orth></form>
+                    <form><orth><hi rend="bold">~ Michaelis</hi></orth></form>
                     <sense xml:id="terminus_Michaelis">Michaelmas term </sense>
                 </entry>
             </div>
             <div xml:id="gloss-V">
                 <entry>
-                    <form><orth>vicus, -i</orth> m</form>
+                    <form><orth><hi rend="bold">vicus, -i</hi></orth>
+                        <gram><hi rend="italics">m</hi></gram></form>
                     <sense xml:id="vicus-1">settlement, borough, village, etc;</sense>
-                    <form><orth>~ Malbanus</orth></form>
+                    <form><orth><hi rend="bold">~ Malbanus</hi></orth></form>
                     <sense xml:id="vicus_Malbanus-1">Nantwich, Cheshire </sense>
                 </entry>
             </div>
             <div xml:id="gloss-Y">
                 <entry>
-                    <form><orth>ystrio, -onis</orth> m</form>
+                    <form><orth><hi rend="bold">ystrio, -onis</hi></orth> <gram><hi rend="italics">m</hi></gram></form>
                     <sense xml:id="histrio-1">in CL, an actor; sense widening in ML, here an
-                        entertainer, or performer of some kind unspecified [see histrio DML,
-                        OLD]</sense>
+                        entertainer, or performer of some kind unspecified [<hi rend="italic">see</hi> histrio <hi
+                            rend="italics"><hi rend="small-caps">DML</hi></hi>, <hi rend="italics"
+                                ><hi rend="small-caps">OLD</hi></hi>]</sense>
                 </entry>
             </div>
         </body>
