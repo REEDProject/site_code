@@ -59,26 +59,14 @@
   <!-- Entity relationship types -->
   <xsl:variable name="contains" select="'entity_relationship_type-502'" />
   <xsl:variable name="is_a" select="'entity_relationship_type-22042'" />
+  <xsl:variable name="had_occupation"
+                select="'entity_relationship_type-21008'" />
   <!-- Collections of types -->
   <xsl:variable name="locations"
                 select="($location_borough, $location_church, $location_country,
                         $location_county, $location_ecclesiastical,
                         $location_feature, $location_household,
                         $location_religious_house)" />
-
-  <!--
-
-PROBLEMS:
-
-* How is Dramatic Status facet populated? How do we know what is
-titled and what is untitled?
-
-* Handle unknown (untitled) drama and unknown (patronised)
-entertainers. For entertainers, this is any entity that has an "is a"
-relationship to an entity with an Entertainer_Type entity type, and
-does not have the patronised entity type. How about for Drama?
-
--->
 
   <xsl:template match="/">
     <entities>
@@ -107,7 +95,7 @@ does not have the patronised entity type. How about for Drama?
         <xsl:with-param name="entity_eats_id" select="$range_entity/@eats_id" />
       </xsl:apply-templates>
     </xsl:if>
-    <!-- Entertainers. -->
+    <!-- Entertainers: type and status. -->
     <xsl:if test="@entity_relationship_type=$is_a and $range_entity/eats:entity_types/eats:entity_type/@entity_type=$entertainer_type">
       <field name="facet_entertainers_type">
         <xsl:value-of select="$range_entity/@eats_id" />
@@ -126,6 +114,13 @@ does not have the patronised entity type. How about for Drama?
          $drama_type it is related to via an "is a" relationship. -->
     <xsl:if test="../../eats:entity_types/eats:entity_type/@entity_type=$drama_work and @entity_relationship_type=$is_a and $range_entity/eats:entity_types/eats_entity_type/@entity_type=$drama_type">
       <field name="facet_drama_type">
+        <xsl:value-of select="$range_entity/@eats_id" />
+      </field>
+    </xsl:if>
+    <!-- Person: occupation. -->
+    <xsl:if test="@entity_relationship_type=$had_occupation and
+                  @domain_entity=$entity_id">
+      <field name="facet_collectives_occupation">
         <xsl:value-of select="$range_entity/@eats_id" />
       </field>
     </xsl:if>
