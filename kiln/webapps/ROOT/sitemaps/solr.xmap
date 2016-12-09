@@ -51,7 +51,7 @@
         <map:generate src="cocoon://_internal/dirlist/content/xml/tei/records.xml" />
         <map:transform src="../stylesheets/admin/dir-to-xinclude.xsl">
           <map:parameter name="prefix"
-                         value="cocoon://admin/solr/add/tei-records/tei/" />
+                         value="cocoon://admin/solr/add/tei-records/tei/records/" />
         </map:transform>
         <map:transform type="xinclude" />
         <map:serialize type="xml" />
