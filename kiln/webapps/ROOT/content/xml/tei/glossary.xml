@@ -17,7 +17,6 @@
     </teiHeader>
     <text>
         <body>
-
             <div xml:id="gloss-A">
                 <!-- al of the entries for A -->
             </div>
@@ -49,20 +48,21 @@
                 <entry>
                     <form><orth><hi rend="bold">cantalena, -e</hi></orth><gram><hi rend="italics"
                                 >f</hi></gram></form>
-                    <sense xml:id="cantalena-1"><hi rend="italics">var of</hi> cantilena [<hi
-                            rend="italics"><hi rend="small-caps">DML</hi></hi>] </sense>
+                    <sense xml:id="cantalena-1"><hi rend="italics">var of</hi> cantilena <ref>[<hi
+                                rend="italics"><hi rend="small-caps">DML</hi></hi>]</ref>
+                    </sense>
                 </entry>
                 <entry>
                     <form><orth><hi rend="bold">carectata, -e</hi></orth>
                         <gram><hi rend="italics">f</hi></gram></form>
-                    <sense xml:id="carectata-1">var of carrettata [<hi rend="italics"><hi
-                                rend="small-caps">DML</hi></hi>]</sense>
+                    <sense xml:id="carectata-1">var of carrettata <ref>[<hi rend="italics"><hi
+                                    rend="small-caps">DML</hi></hi>]</ref></sense>
                 </entry>
                 <entry>
                     <form><orth><hi rend="bold">cestra, -e</hi></orth>
                         <gram><hi rend="italics">f</hi></gram></form>
-                    <sense xml:id="cestra-1"><hi rend="italics">var of</hi> chestra [<hi
-                            rend="italics"><hi rend="small-caps">DML</hi></hi>]</sense>
+                    <sense xml:id="cestra-1"><hi rend="italics">var of</hi> chestra <ref>[<hi
+                                rend="italics"><hi rend="small-caps">DML</hi></hi>]</ref></sense>
                 </entry>
             </div>
             <div xml:id="gloss-E">
@@ -82,8 +82,9 @@
                     <form><orth><hi rend="bold">ludus, -i</hi></orth>
                         <gram><hi xml:id="italics">m</hi></gram></form>
                     <sense xml:id="ludus-1">entertainment, ‘play,’ of an unspecified kind, not
-                        necessarily dramatic [<hi rend="italics">see also</hi> ludus <hi
-                            rend="italics"><hi rend="small-caps">DML</hi></hi>] </sense>
+                        necessarily dramatic <ref>[<hi rend="italics">see also</hi> ludus <hi
+                                rend="italics"><hi rend="small-caps">DML</hi></hi>]</ref>
+                    </sense>
                 </entry>
             </div>
             <div xml:id="gloss-M">
@@ -110,8 +111,8 @@
                 <entry>
                     <form><orth><hi rend="bold">parcellum, -i</hi></orth>
                         <gram><hi rend="italics">n</hi></gram></form>
-                    <sense xml:id="parcellem-1"><hi rend="italics">var of</hi> parcella [<hi
-                            rend="italics"><hi rend="small-caps">DML</hi></hi>]</sense>
+                    <sense xml:id="parcellem-1"><hi rend="italics">var of</hi> parcella <ref>[<hi
+                                rend="italics"><hi rend="small-caps">DML</hi></hi>]</ref></sense>
                 </entry>
                 <entry>
                     <form><orth><hi rend="bold">parochialis, -e</hi></orth>
@@ -146,12 +147,53 @@
             </div>
             <div xml:id="gloss-Y">
                 <entry>
-                    <form><orth><hi rend="bold">ystrio, -onis</hi></orth> <gram><hi rend="italics">m</hi></gram></form>
+                    <form><orth><hi rend="bold">ystrio, -onis</hi></orth>
+                        <gram><hi rend="italics">m</hi></gram></form>
                     <sense xml:id="histrio-1">in CL, an actor; sense widening in ML, here an
-                        entertainer, or performer of some kind unspecified [<hi rend="italic">see</hi> histrio <hi
-                            rend="italics"><hi rend="small-caps">DML</hi></hi>, <hi rend="italics"
-                                ><hi rend="small-caps">OLD</hi></hi>]</sense>
+                        entertainer, or performer of some kind unspecified [<hi rend="italic"
+                            >see</hi> histrio <hi rend="italics"><hi rend="small-caps"
+                        >DML</hi></hi>, <hi rend="italics"><hi rend="small-caps"
+                        >OLD</hi></hi>]</sense>
                 </entry>
+            </div>
+            <div>
+                <entry>
+                    <form><orth><hi rend="bold">aderer</hi></orth>
+                        <gram><hi rend="italics">pfp</hi></gram></form>
+                    <sense xml:id="aderer-1">owed <ref>[<hi rend="italics"><hi rend="small-caps"
+                                    >AND</hi></hi> aderere]</ref></sense>
+                </entry>
+                <entry>
+                    <form><orth><hi rend="bold">aenes</hi></orth>
+                        <gram><hi rend="italics">adv</hi></gram></form>
+                    <sense>first, before others <ref>[<hi rend="italics"><hi rend="small-caps"
+                                    >AND</hi></hi> ainz]</ref></sense>
+                </entry>
+                <entry>
+                    <form><orth><hi rend="bold">arrae</hi></orth>
+                        <gram><hi rend="italic">pfp</hi></gram></form>
+                    <sense xml:id="arrae-1">arrayed <ref>[<hi rend="italic"><hi rend="small-caps"
+                                    >AND</hi></hi> arraier] </ref></sense>
+                </entry>
+                <entry> bouche in phr estre a bouche en court, estre a bouche de court to have an
+                    allowance for food [see AND bouche]</entry>
+                <entry>datantz prp giving [OLD dato]</entry>
+                <entry>derreinement adv finally, at last [see AND derrein]</entry>
+                <entry>desouzescrites adv written below</entry>
+                <entry>destrer m charger, horse ridden in charging a combatant, destere [AND
+                    destrer]</entry>
+                <entry>desusescrites adv written above</entry>
+                <entry>deuerwik prep phr of York</entry>
+                <entry>deussiez 2 pl imperfect subj of deveir [AND]</entry>
+                <entry>meuuance prp moving [AND mover]</entry>
+                <entry>nientcontresfecantes, nient contreefieantes postpositive prep
+                    notwithstanding</entry>
+                <entry>ottroiez pfp permitted [AND ottreier]</entry>
+                <entry>pipe m piper</entry>
+                <entry>plerra 3 pl fut of plaisir [AND]</entry>
+                <entry>pouers m/f pl poor needy pourez, [AND povre]</entry>
+                <entry>poier m poer subst inf power authority</entry>
+                <entry>surorez pfp gilded [AND surorrer] </entry>
             </div>
         </body>
     </text>
