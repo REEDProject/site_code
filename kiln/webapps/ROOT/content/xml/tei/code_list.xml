@@ -230,9 +230,6 @@
                   <category xml:id="WSL">
                       <catDesc>William Salt Library</catDesc>
                   </category>
-                  <category xml:id="WBRO">
-                      <catDesc>Walsall Metropolital Borough Central Library</catDesc>
-                  </category>
                   <category xml:id="WLHC">
                       <catDesc>Walsall Local History Centre</catDesc>
                   </category>
@@ -642,7 +639,7 @@
       
         <bibl xml:id="WCWA">
             <title>All Saints' Churchwardens' Accounts</title>
-          <idno type="repository" sameAs="#WBRO" />
+          <idno type="repository" sameAs="#WLHC" />
                 <idno type="shelfmark">276/62*</idno>
             </bibl>
 
