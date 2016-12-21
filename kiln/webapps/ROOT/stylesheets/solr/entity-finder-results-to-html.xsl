@@ -23,26 +23,18 @@
         </xsl:when>
       </xsl:choose>
     </xsl:variable>
-    <li>
-      <a href="{$result-url}">
-        <xsl:value-of select="arr[@name='document_title']/str[1]" />
-      </a>
-    </li>
+    <tr>
+      <td></td>
+      <td class="show-for-small-only"><a href="{$result-url}"><xsl:value-of select="arr[@name='document_title']/str[1]" /></a></td>
+      <td class="show-for-medium"><xsl:value-of select="str[@name='record_date']" /></td>
+      <td class="show-for-medium"><xsl:value-of select="str[@name='record_location']" /></td>
+      <td class="show-for-medium"><a href="{$result-url}"><xsl:value-of select="str[@name='record_title']" /></a></td>
+      <td class="show-for-medium"><xsl:value-of select="str[@name='record_shelfmark']" /></td>
+    </tr>
   </xsl:template>
 
   <xsl:template match="response/result" mode="search-results">
-    <xsl:choose>
-      <xsl:when test="number(@numFound) = 0">
-        <h3>No results found</h3>
-      </xsl:when>
-      <xsl:when test="doc">
-        <ul>
-          <xsl:apply-templates mode="search-results" select="doc" />
-        </ul>
-
-        <xsl:call-template name="add-results-pagination" />
-      </xsl:when>
-    </xsl:choose>
+    <xsl:apply-templates mode="search-results" select="doc" />
   </xsl:template>
 
   <xsl:template match="text()" mode="search-results" />

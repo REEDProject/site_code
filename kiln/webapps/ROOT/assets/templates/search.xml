@@ -6,6 +6,41 @@
   <!-- Imports stylesheet to convert Solr results into HTML. -->
   <xsl:import href="cocoon://_internal/template/xsl/stylesheets/solr/results-to-html.xsl" />
 
+  <!-- Variables defining the sets of facets (in display order) in
+       each collection of facets. -->
+  <xsl:variable name="location_facets"
+                select="('facet_locations_country', 'facet_locations_county',
+                        'facet_locations_settlement',
+                        'facet_locations_feature')" />
+  <xsl:variable name="day_facets"
+                select="('facet_days_secular', 'facet_days_liturgical')" />
+  <xsl:variable name="people_facets"
+                select="('facet_people_named', 'facet_people_gender',
+                        'facet_people_status')" />
+  <xsl:variable name="collective_facets"
+                select="('facet_collectives_guilds',
+                        'facet_collectives_occupation',
+                        'facet_collectives_clergy')" />
+  <xsl:variable name="entertainer_facets"
+                select="('facet_entertainers_type',
+                        'facet_entertainers_patronised',
+                        'facet_entertainers_status')" />
+  <xsl:variable name="entertainment_facets"
+                select="('facet_entertainments_type',
+                        'facet_entertainments_custom',
+                        'facet_entertainments_animal')" />
+  <xsl:variable name="drama_facets"
+                select="('facet_drama_type', 'facet_drama_work',
+                        'facet_drama_status', 'facet_drama_character')" />
+  <xsl:variable name="material_facets"
+                select="('facet_materials_instrument',
+                        'facet_materials_book', 'facet_materials_property',
+                        'facet_materials_set', 'facet_materials_wagon',
+                        'facet_materials_cloth', 'facet_materials_costume',
+                        'facet_materials_regalia', 'facet_materials_foo')" />
+  <xsl:variable name="crime_facets" select="'facet_crimes_crime'" />
+  <xsl:variable name="record_facets" select="'facet_record_type'" />
+
   <kiln:parent>
     <xi:include href="base.xml" />
   </kiln:parent>
@@ -16,30 +51,195 @@
       <xsl:text>Search</xsl:text>
     </kiln:block>
 
-    <kiln:block name="page-heading">
-      <kiln:super />
-      <xsl:text>Search</xsl:text>
-    </kiln:block>
-
     <kiln:block name="content">
-      <div class="row">
-        <div class="large-4 columns">
+      <div class="content white-bg">
+        <div class="row">
           <form action="." method="get">
-            <input name="q" placeholder="Search terms" type="search">
-              <xsl:attribute name="value">
-                <xsl:value-of select="/aggregation/response/lst[@name='responseHeader']/lst[@name='params']/str[@name='q']" />
-              </xsl:attribute>
-            </input>
+            <div class="columns medium-3" style="padding-bottom: 45px;">
+              <h1>Search</h1>
+
+              <div class="search">
+                <input type="search" id="form" class="expanded"
+                       name="q" placeholder="Enter exact term or phrase">
+                  <xsl:attribute name="value">
+                    <xsl:value-of select="/aggregation/response/lst[@name='responseHeader']/lst[@name='params']/str[@name='q']" />
+                  </xsl:attribute>
+                </input>
+                <input class="button expanded" type="submit" value="Search" />
+              </div>
+
+              <div id="filter-container">
+                <div id="filter-toggle">
+                  <a href="#">Show Filters</a>
+                </div>
+                <div class="filter show-for-medium">
+                  <div class="filter-head jump-to-filter">Jump to Filter</div>
+                  <div class="filter-content-wrapper">
+                    <div class="filter-content">
+                      <ul class="open-filters jump-to-filter">
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#dates">Dates</a></li>
+                        <li><a href="#calendar">Calendar Days</a></li>
+                        <li><a href="#people">People</a></li>
+                        <li><a href="#collectives">Collectives</a></li>
+                        <li><a href="#entertainers">Entertainers</a></li>
+                        <li><a href="#entertainments">Entertainments</a></li>
+                        <li><a href="#drama">Drama</a></li>
+                        <li><a href="#objects">Material Objects</a></li>
+                        <li><a href="#crimes">Crimes &amp; Misdemeanors</a></li>
+                        <li><a href="#types">Record Types</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter" id="locations">
+                  <div class="filter-head">Locations</div>
+                  <div class="filter-content-wrapper">
+                    <div class="filter-content">
+                      <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$location_facets]" mode="search-results" />
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter" id="dates">
+                  <div class="filter-head">Dates</div>
+                  <div class="filter-content-wrapper">
+                    <div class="filter-content date">
+                      <div class="date-header">Enter date range</div>
+                      <input type="number" class="date" />
+                      <span class="date-to">to</span>
+                      <input type="number" class="date" />
+                      <input type="submit" class="button expanded" value="Apply Filter" />
+                    </div>
+                  </div>
+                </div>
+                <div class="filter" id="calendar">
+                  <div class="filter-head">Calendar Days</div>
+                  <div class="filter-content-wrapper">
+                    <div class="filter-content">
+                      <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$day_facets]" mode="search-results" />
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter" id="people">
+                  <div class="filter-head">People</div>
+                  <div class="filter-content-wrapper">
+                    <div class="filter-content">
+                      <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$people_facets]" mode="search-results" />
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter" id="collectives">
+                  <div class="filter-head">Collectives</div>
+                  <div class="filter-content-wrapper">
+                    <div class="filter-content">
+                      <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$collective_facets]" mode="search-results" />
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter" id="entertainers">
+                  <div class="filter-head">Entertainers</div>
+                  <div class="filter-content-wrapper">
+                    <div class="filter-content">
+                      <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$entertainer_facets]" mode="search-results" />
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter" id="entertainments">
+                  <div class="filter-head">Entertainments</div>
+                  <div class="filter-content-wrapper">
+                    <div class="filter-content">
+                      <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$entertainment_facets]" mode="search-results" />
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter" id="drama">
+                  <div class="filter-head">Drama</div>
+                  <div class="filter-content-wrapper">
+                    <div class="filter-content">
+                      <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$drama_facets]" mode="search-results" />
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter" id="objects">
+                  <div class="filter-head">Material Objects</div>
+                  <div class="filter-content-wrapper">
+                    <div class="filter-content">
+                      <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$material_facets]" mode="search-results" />
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter" id="crimes">
+                  <div class="filter-head">Crimes &amp; Misdemeanors</div>
+                  <div class="filter-content-wrapper">
+                    <div class="filter-content">
+                      <ul class="open-filters">
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$crime_facets]" mode="search-results" />
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter" id="types">
+                  <div class="filter-head">Record Types</div>
+                  <div class="filter-content-wrapper">
+                    <div class="filter-content">
+                      <ul class="open-filters">
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$record_facets]" mode="search-results" />
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </form>
-          <!-- List of currently applied facets. -->
-          <xsl:apply-templates mode="search-results" select="/aggregation/response/lst[@name='responseHeader']/lst[@name='params']/*[@name='fq']" />
-          <!-- List available facets. -->
-          <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']"
-                               mode="search-results" />
-        </div>
-        <div class="large-8 columns">
-          <xsl:apply-templates select="/aggregation/response/result"
-                               mode="search-results" />
+          <div class="columns medium-9">
+            <h1>Results</h1>
+            <div class="active-filters">
+              <span class="filters">Filters</span>
+              <span class="search-term"><xsl:value-of select="/aggregation/response/lst[@name='responseHeader']/lst[@name='params']/str[@name='q']" /></span>
+              <!-- List of currently applied facets. -->
+              <xsl:apply-templates mode="search-results" select="/aggregation/response/lst[@name='responseHeader']/lst[@name='params']/*[@name='fq']" />
+              <span class="active-filter-clear"><a href="{kiln:url-for-match('ereed-search', ())}">Clear all</a></span>
+            </div>
+            <table id="table" class="display responsive" cellspacing="0" width="100%">
+              <thead>
+                <tr>
+                  <th class="top-checkbox">
+                    <label class="checkbox"><input type="checkbox" name="select_all" id="table-select-all" value="1" /><span class="checkbox-inner"></span></label>
+                    <a href="#" id="checkbox-toggle">T</a>
+                    <ul id="checkbox-options">
+                      <li data-option="all" class="hide">All</li>
+                      <li data-option="none" class="hide">None</li>
+                    </ul>
+                  </th>
+                  <th class="show-for-small-only hide-sortable" width="40px">Records</th>
+                  <th class="show-for-medium">Date</th>
+                  <th class="show-for-medium">Location</th>
+                  <th class="show-for-medium">Record Title</th>
+                  <th class="show-for-medium">Shelfmark</th>
+                </tr>
+              </thead>
+              <tbody>
+                <xsl:apply-templates select="/aggregation/response/result/doc"
+                                     mode="search-results" />
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </kiln:block>

@@ -8,61 +8,64 @@
   </kiln:parent>
 
   <kiln:child>
-    <kiln:block name="title">
-      <xsl:text>Welcome to Kiln!</xsl:text>
-    </kiln:block>
+    <kiln:block name="title">REED Online</kiln:block>
 
-    <kiln:block name="page-header">
-      <div class="row">
-        <div class="large-12 columns text-center">
-          <h1><span class="round label">Welcome to Kiln!</span></h1>
+    <kiln:block name="content">
+      <!-- Hero Image -->
+      <div class="hero">
+        <div class="hero-content">
+          <h2>Welcome to REED Online</h2>
+
+          <p>Here you can search through the surviving records of
+          drama, secular music and other popular entertainment in
+          England from the Middle Ages until 1642, when the Puritans
+          closed the London theatres.</p>
+
+          <p><a href="{kiln:url-for-match('ereed-search', ())}" class="button hero-search-button">Search the
+          Records</a></p>
+        </div>
+
+        <!-- Image Tooltip -->
+        <div class="image-tooltip">
+          <div class="tooltip-content">A Fête at Bermondsey, c. 1570 (oil on panel), Gheeraerts, Marcus, the Elder (c. 1520-90) / Hatfield House, Hertfordshire, UK / Bridgeman Images</div>
+          <span class="tooltip-button"></span>
         </div>
       </div>
-    </kiln:block>
 
-    <kiln:block name="content-section">
-      <main>
-        <div class="row">
-          <div class="small-6 large-centered columns">
-            <p>Now that you have Kiln up and running, it's time to
-            start building your project. Start with one of the options
-            listed below and go from there.</p>
+      <!-- Main Content -->
+      <div class="content home">
+        <div class="row" data-equalizer="outer" data-equalize-on="medium">
+          <div class="columns medium-8" data-equalizer="inner">
+            <div class="how-to-card row collapse card" data-equalizer-watch="outer">
+              <div class="image columns medium-4" data-equalizer-watch="inner">
+                <!-- Image Tooltip -->
+                <div class="image-tooltip small-tooltip">
+                  <div class="tooltip-content">Bearbaiting Woodcut: William Lily (1468-1522), Antibossicon, London. Folger Shakespeare Library.</div>
+                  <span class="tooltip-button"></span>
+                </div>
+              </div>
+              <div class="card-content columns medium-8" data-equalizer-watch="inner">
+                <div class="card-subheading">HOW TO</div>
+                <h2 class="card-heading">New to records research?</h2>
+                <p>These records are only the written traces left behind by the original events but they will help you to answer key questions: who? what? when? where? how? how much? and, perhaps even, why? Try searching in various ways.</p>
+                <a href="{kiln:url-for-match('ereed-howto-section', ())}">View Our Research Tips</a>
+              </div>
+            </div>
+          </div>
+          <div class="columns medium-4">
+            <div class="current-collection-card card" data-equalizer-watch="outer">
+              <div class="background-red card-header">
+                <div class="current-collection-header">CURRENT COLLECTION</div>
+                <div class="collection-name-header">Staffordshire</div>
+              </div>
+              <div class="card-content">Lorem ipsum dolor sit amet, cum maiorum appareat expetenda id, vim no praesent reprehendunt. Illud fugit utroque nec.</div>
+            </div>
+          </div>
+          <div class="columns small-12 hide-for-medium">
+            <a class="back-to-top button expanded transparent" href="#">Back to top</a>
           </div>
         </div>
-        <div class="row">
-        <div class="large-4 columns">
-          <div class="panel radius">
-            <p><strong>Add your TEI</strong></p>
-
-            <p>Put your TEI files in webapps/ROOT/content/xml/tei and
-            see <a href="text/">how they are displayed</a>. Go to the
-            <a href="admin/">admin</a> and index them for
-            searching.</p>
-          </div>
-        </div>
-        <div class="large-4 columns">
-          <div class="panel radius">
-            <p><strong>Customise the templates</strong></p>
-
-            <p>Change the look of this site by modifying the templates
-            in webapps/ROOT/assets/templates. The template for this
-            page is index.xml, and it builds on the base template
-            base.xml.</p>
-          </div>
-        </div>
-        <div class="large-4 columns">
-          <div class="panel radius">
-            <p><strong>Read the documentation</strong></p>
-
-            <p>Kiln comes with documentation both <a
-            href="http://kiln.readthedocs.org/en/latest/">online</a>
-            and, in source form, in the docs directory of your
-            installation. It explains how you can modify everything
-            about your Kiln project.</p>
-          </div>
-        </div>
-        </div>
-      </main>
+      </div>
     </kiln:block>
   </kiln:child>
 </kiln:root>

@@ -13,11 +13,21 @@
 
   <xsl:template match="ul[@type='breadcrumbs']" mode="main-menu" />
 
+  <xsl:template match="ul/li/ul/li/a" mode="main-menu">
+    <xsl:copy>
+      <xsl:apply-templates mode="main-menu" select="@*" />
+      <xsl:call-template name="add-class">
+        <xsl:with-param name="class" select="'dropdown-link'" />
+      </xsl:call-template>
+      <xsl:apply-templates mode="main-menu" />
+    </xsl:copy>
+  </xsl:template>
+
   <xsl:template match="li[ul]" mode="main-menu">
     <xsl:copy>
       <xsl:apply-templates mode="main-menu" select="@*" />
       <xsl:call-template name="add-class">
-        <xsl:with-param name="class" select="'has-dropdown'" />
+        <xsl:with-param name="class" select="'is-dropdown-submenu-parent'" />
       </xsl:call-template>
       <xsl:apply-templates mode="main-menu" />
     </xsl:copy>
@@ -27,8 +37,12 @@
     <xsl:copy>
       <xsl:apply-templates mode="main-menu" select="@*" />
       <xsl:call-template name="add-class">
-        <xsl:with-param name="class" select="'dropdown'" />
+        <xsl:with-param name="class"
+                        select="'menu medium-dropdown mobile-dropdown submenu'" />
       </xsl:call-template>
+      <xsl:attribute name="data-options">
+        <xsl:text>disableHover: true; clickOpen: true;</xsl:text>
+      </xsl:attribute>
       <xsl:apply-templates mode="main-menu" />
     </xsl:copy>
   </xsl:template>

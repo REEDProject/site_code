@@ -45,7 +45,7 @@
     <!-- Main display pipeline. -->
     <map:pipeline type="noncaching">
       <!-- Home page (at /). -->
-      <map:match id="local-home-page" pattern="">
+      <map:match id="ereed-home" pattern="">
         <map:aggregate element="aggregation" label="content">
           <map:part src="cocoon://_internal/menu/main.xml" />
         </map:aggregate>
@@ -54,7 +54,7 @@
       </map:match>
 
       <!-- Search. -->
-      <map:match id="local-search" pattern="search/">
+      <map:match id="ereed-search" pattern="search/">
         <map:aggregate element="aggregation">
           <map:part src="cocoon://_internal/menu/main.xml?url=search/" />
           <map:part src="cocoon://internal/search/facet_query.xml" />
@@ -67,54 +67,157 @@
         <map:serialize />
       </map:match>
 
-      <!-- TEI texts. -->
-      <map:match id="local-tei-index-display" pattern="text/">
-        <map:aggregate element="aggregation">
-          <!-- Use TEI metadata extracted directly from the
-               files. This would be better done with a Solr query
-               after indexing, but for demonstration and quick start
-               purposes, use this method. -->
-          <map:part src="cocoon://internal/metadata/files.xml" />
-          <map:part src="cocoon://_internal/menu/main.xml?url=text/" />
-        </map:aggregate>
-        <map:transform src="cocoon://_internal/template/text-index.xsl" />
-        <map:serialize />
-      </map:match>
-
+      <!-- Records. -->
       <map:match id="ereed-record-display-html"
-                 pattern="records/*.html">
+                 pattern="records/*/">
         <map:aggregate element="aggregation" label="content">
           <map:part label="tei"
                     src="cocoon://internal/tei/preprocess-record/{1}.xml" />
-          <map:part src="cocoon://_internal/menu/main.xml?url=records/{1}.html" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=records/{1}/" />
         </map:aggregate>
-        <map:transform src="cocoon://_internal/template/tei.xsl" />
+        <map:transform src="cocoon://_internal/template/record.xsl" />
         <map:serialize />
       </map:match>
 
-      <map:match id="ereed-record-display-xml" pattern="records/**.xml">
+      <map:match id="ereed-extract-referenced-content"
+                 pattern="extract-referenced-content/**">
+        <map:generate src="../content/xml/{1}" />
+        <map:transform src="../stylesheets/tei/extract-referenced-content.xsl">
+          <map:parameter name="id" value="{request-param:id}" />
+        </map:transform>
+        <map:serialize type="xml" />
+      </map:match>
+
+      <map:match id="ereed-record-display-xml" pattern="records/*/xml/">
         <map:read mime-type="application/tei+xml"
                   src="cocoon://internal/tei/preprocess-record/{1}.xml" />
       </map:match>
 
-      <map:match id="local-tei-display-pdf" pattern="text/**.pdf">
-        <map:generate src="cocoon://internal/tei/preprocess/{1}/{2}.xml"
+      <map:match id="ereed-record-display-pdf" pattern="records/*/pdf/">
+        <map:generate src="cocoon://internal/tei/preprocess-record/{1}.xml"
                       label="tei" />
         <map:transform src="cocoon://_internal/template/pdf.xsl" />
         <map:serialize type="fo2pdf" />
       </map:match>
 
-      <map:match id="local-tei-display-epub" pattern="text/**.epub">
-        <map:generate src="cocoon://internal/tei/preprocess/{1}/{2}.xml"
-                      label="tei" />
-        <map:transform src="cocoon://_internal/template/epub.xsl" />
-        <map:serialize type="xhtml" />
+      <!-- Entities. -->
+      <map:match id="ereed-entity-display-html" pattern="entities/*/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="cocoon://internal/eatsml/entity/{1}.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml" />
+          <!-- Specific queries for records and for editorial
+               content. -->
+          <map:part src="cocoon://internal/search/entity_finder.xml?q={url-encode:{global:eats-base-url}entity/{1}/}" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/entity.xsl" />
+        <map:serialize />
       </map:match>
 
-      <map:match id="local-test" pattern="test/">
-        <map:generate src="https://ereed.library.utoronto.ca/eats/entity/15539/eatsml/" />
-        <map:transform src="../stylesheets/rdf/eatsml-to-rdf.xsl" />
-        <map:serialize type="xml" />
+      <!-- About. -->
+      <map:match id="ereed-about-section" pattern="about/">
+        <map:redirect-to uri="editorial/" permanent="no" />
+      </map:match>
+
+      <!-- About: Editorial Methodology. -->
+      <map:match id="ereed-about-editorial" pattern="about/editorial/">
+        <map:redirect-to uri="intro/" permanent="no" />
+      </map:match>
+
+      <!-- About: Editorial Methodology: part. -->
+      <map:match id="ereed-about-series-part"
+                 pattern="about/series/*/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="../content/xml/tei/editorial.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=about/" />
+        </map:aggregate>
+        <map:transform src="../stylesheets/tei/tei-to-html.xsl" />
+        <map:serialize />
+      </map:match>
+
+      <!-- About: Digital Methodology. -->
+      <map:match id="ereed-about-digital" pattern="about/digital/">
+        <map:redirect-to uri="about/digital/intro.html" permanent="no" />
+      </map:match>
+
+      <!-- About: Editorial Methodology: part. -->
+      <map:match id="ereed-about-digital-part"
+                 pattern="about/digital/*/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="../content/xml/tei/digital.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=about/" />
+        </map:aggregate>
+        <map:transform src="../stylesheets/tei/tei-to-html.xsl" />
+        <map:serialize />
+      </map:match>
+
+      <!-- About: Symbols and Abbreviations -->
+      <map:match id="ereed-about-symbols" pattern="about/symbols/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="../content/xml/tei/symbols.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=about/symbols/" />
+        </map:aggregate>
+        <map:transform src="../stylesheets/tei/tei-to-html.xsl" />
+        <map:serialize />
+      </map:match>
+
+      <!-- About: Bibliography. -->
+      <map:match id="ereed-about-bibliography" pattern="about/bibliography/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="../content/xml/tei/bibliography.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=about/bibliography/" />
+        </map:aggregate>
+        <map:transform src="../stylesheets/tei/tei-to-html.xsl" />
+        <map:serialize />
+      </map:match>
+
+      <!-- About: Glossaries. -->
+      <map:match id="ereed-about-glossaries" pattern="about/glossaries/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="../content/xml/tei/glossary.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=about/glossaries/" />
+        </map:aggregate>
+        <map:transform src="../stylesheets/tei/tei-to-html.xsl" />
+        <map:serialize />
+      </map:match>
+
+      <!-- Explore Collections. -->
+      <map:match id="ereed-collections" pattern="collections">
+        <map:redirect-to uri="collections/staff/" permanent="no" />
+      </map:match>
+
+      <!-- Explore Collections: collection. -->
+      <map:match id="ereed-collections-collection"
+                 pattern="collections/*/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="../content/xml/tei/records/{1}.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=collections/" />
+          <map:part src="cocoon://internal/search/records_by_collection.xml?q={1}" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/collection.xsl" />
+        <map:serialize />
+      </map:match>
+
+      <!-- Howto. -->
+      <map:match id="ereed-howto-section" pattern="howto/">
+        <map:redirect-to uri="intro/" permanent="no" />
+      </map:match>
+
+      <!-- Howto: Introduction to the Rsearch Process. -->
+      <map:match id="ereed-howto-intro" pattern="howto/intro/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="cocoon://_internal/menu/main.xml?url=howto/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/howto-intro.xsl" />
+        <map:serialize />
+      </map:match>
+
+      <!-- Howto: Anatomy of a Record. -->
+      <map:match id="ereed-howto-anatomy" pattern="howto/anatomy/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="cocoon://_internal/menu/main.xml?url=howto/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/howto-anatomy.xsl" />
+        <map:serialize />
       </map:match>
     </map:pipeline>
 

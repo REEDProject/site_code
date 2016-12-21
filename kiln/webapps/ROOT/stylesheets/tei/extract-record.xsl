@@ -4,8 +4,8 @@
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <!-- Remove all non-teiHeader material that is not part of the
-       record specified by the supplied record ID. -->
+  <!-- Extract the TEI header and the identified part, wrapped in a
+       tei:TEI element. -->
 
   <xsl:param name="record-id" />
 
@@ -13,7 +13,7 @@
     <xsl:copy>
       <xsl:copy-of select="@*" />
       <xsl:copy-of select="tei:teiHeader" />
-      <xsl:copy-of select="tei:text/tei:group/tei:text[@xml:id=$record-id]" />
+      <xsl:copy-of select="id($record-id)" />
     </xsl:copy>
   </xsl:template>
 

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
+           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <!-- Imports stylesheet to convert Solr results into HTML. -->
+  <xsl:import href="cocoon://_internal/template/xsl/stylesheets/solr/results-to-html.xsl" />
+
+  <kiln:parent>
+    <xi:include href="base.xml" />
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title">
+      <kiln:super />
+      <xsl:text>Collection: </xsl:text>
+      <!-- QAZ: Name of collection -->
+    </kiln:block>
+
+    <kiln:block name="content">
+      <div class="content no-hero">
+        <div class="row">
+          <div class="column medium-12">
+            <h1 class="entity-header"><!-- QAZ: title of collection --></h1>
+          </div>
+          <div class="column medium-12">
+            <div class="row collapse map-wrapper map small-margin-bottom-25">
+              <div class="columns medium-9">
+                <!-- QAZ: map -->
+              </div>
+              <div class="columns medium-3 map-legend">
+                <div class="legend">Legend</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="entity-tabs">
+          <div class="tabs">
+            <div class="row">
+              <ul class="tabs column" data-tabs="" id="example-tabs">
+                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Records</a></li>
+                <li class="tabs-title"><a href="#panel2">Editors &amp; Acknowledgments</a></li>
+                <li class="tabs-title"><a href="#panel3">Historical Background</a></li>
+                <li class="tabs-title"><a href="#panel4">Performance Traditions</a></li>
+                <li class="tabs-title"><a href="#panel5">Appendices</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabs-content" data-tabs-content="example-tabs">
+            <div class="tabs-panel is-active" id="panel1">
+              <div class="row">
+                <div class="column medium-9">
+                  <h2>Related Records</h2>
+                  <table id="table" class="display responsive" cellspacing="0" width="100%">
+                    <thead>
+                      <tr>
+                        <th class="top-checkbox">
+                          <label class="checkbox"><input type="checkbox" name="select_all" id="table-select-all" value="1" /><span class="checkbox-inner"></span></label>
+                          <a href="#" id="checkbox-toggle">T</a>
+                          <ul id="checkbox-options">
+                            <li data-option="all" class="hide">All</li>
+                            <li data-option="none" class="hide">None</li>
+                          </ul>
+                        </th>
+                        <th class="show-for-small-only hide-sortable" width="40px">Records</th>
+                        <th class="show-for-medium">Date</th>
+                        <th class="show-for-medium">Location</th>
+                        <th class="show-for-medium">Record Title</th>
+                        <th class="show-for-medium">Shelfmark</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <xsl:apply-templates select="/aggregation/response/result/doc"
+                                           mode="search-results" />
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel2">
+              <div class="row">
+                <div class="column medium-9">
+                  <div class="entity-top-content">
+                    <h2>Related Editorial Content</h2>
+                    <div class="record-status" >1 - 5 of 6 records shown </div>
+                  </div>
+                  <div class="row">
+                    <div class="entity-main-content column medium-11">
+                      <div class="related-content">
+                        <h3><!-- QAZ: Title --></h3>
+
+                        <div class="individual-related-content">
+                          <a href="#"><!-- QAZ --></a>
+                          <p><!-- QAZ --></p>
+                        </div>
+                      </div>
+                      <div class="small-margin-top-25 small-margin-bottom-25">
+                        <ul class="pagination">
+                          <li class="paginate_button first unavailable disabled" aria-controls="table" tabindex="0" id="table_first"><svg width="12px" class="inline flip" height="13px" viewBox="12 11 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Group-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(12.000000, 12.000000)">
+                              <path d="M8.5,7.58416803 C8.5,7.6710088 8.46659961,7.74782898 8.39979943,7.81462916 L7.89879779,8.3156314 C7.83199701,8.38243158 7.75517684,8.41583137 7.66833667,8.41583137 C7.58149649,8.41583137 7.50467572,8.38243158 7.43787554,8.3156314 L3.5,4.37775526 L-0.43787554,8.3156314 C-0.504675719,8.38243158 -0.581495895,8.41583137 -0.668336666,8.41583137 C-0.755176839,8.41583137 -0.831997015,8.38243158 -0.898797193,8.3156314 L-1.39979943,7.81462916 C-1.46659961,7.74782898 -1.5,7.6710088 -1.5,7.58416803 C-1.5,7.49732786 -1.46659961,7.42050769 -1.39979943,7.35370751 L3.26953887,2.6843686 C3.33633965,2.61756842 3.41315983,2.58416863 3.5,2.58416863 C3.58684017,2.58416863 3.66366095,2.61756842 3.73046113,2.6843686 L8.39979943,7.35370751 C8.46659961,7.42050769 8.5,7.49732786 8.5,7.58416803 L8.5,7.58416803 Z" id="Shape-Copy-5" fill="#008281" transform="translate(3.500000, 5.500000) scale(-1, 1) rotate(-90.000000) translate(-3.500000, -5.500000) "></path>
+                              <path d="M9.41666667,0.25 L9.41666667,10.75" id="Path-2" stroke="#008281" stroke-width="1.25"></path>
+                            </g>
+                            <style>
+                              #Path-2 {
+                              stroke: "#008281";
+                              }
+                              .unavailable #Path-2, .unavailable #Shape-Copy-5 {
+                              stroke: #E5E7E9;
+                              fill: #E5E7EA;
+                              }
+                            </style>
+                          </svg>
+                          </li>
+                          <li class="paginate_button previous unavailable disabled" aria-controls="table" tabindex="0" id="table_previous">&lt;</li>
+                          <li class="paginate_button current" aria-controls="table" tabindex="0">1</li>
+                          <li class="paginate_button " aria-controls="table" tabindex="0"><a href="#">2</a></li>
+                          <li class="paginate_button next" aria-controls="table" tabindex="0" id="table_next"><a href="#">&gt;</a></li>
+                          <li class="paginate_button last" aria-controls="table" tabindex="0" id="table_last"><a href="#"><svg width="12px" class="inline" height="13px" viewBox="12 11 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Group-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(12.000000, 12.000000)">
+                              <path d="M8.5,7.58416803 C8.5,7.6710088 8.46659961,7.74782898 8.39979943,7.81462916 L7.89879779,8.3156314 C7.83199701,8.38243158 7.75517684,8.41583137 7.66833667,8.41583137 C7.58149649,8.41583137 7.50467572,8.38243158 7.43787554,8.3156314 L3.5,4.37775526 L-0.43787554,8.3156314 C-0.504675719,8.38243158 -0.581495895,8.41583137 -0.668336666,8.41583137 C-0.755176839,8.41583137 -0.831997015,8.38243158 -0.898797193,8.3156314 L-1.39979943,7.81462916 C-1.46659961,7.74782898 -1.5,7.6710088 -1.5,7.58416803 C-1.5,7.49732786 -1.46659961,7.42050769 -1.39979943,7.35370751 L3.26953887,2.6843686 C3.33633965,2.61756842 3.41315983,2.58416863 3.5,2.58416863 C3.58684017,2.58416863 3.66366095,2.61756842 3.73046113,2.6843686 L8.39979943,7.35370751 C8.46659961,7.42050769 8.5,7.49732786 8.5,7.58416803 L8.5,7.58416803 Z" id="Shape-Copy-5" fill="#008281" transform="translate(3.500000, 5.500000) scale(-1, 1) rotate(-90.000000) translate(-3.500000, -5.500000) "></path>
+                              <path d="M9.41666667,0.25 L9.41666667,10.75" id="Path-2" stroke="#008281" stroke-width="1.25"></path>
+                            </g>
+                            <style>
+                              #Path-2 {
+                              stroke: "#008281";
+                              }
+                              .unavailable #Path-2, .unavailable #Shape-Copy-5 {
+                              stroke: #E5E7E9;
+                              fill: #E5E7EA;
+                              }
+                            </style>
+                          </svg>
+                        </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hide-for-medium">
+                    <div class="record-sidebar hide-for-medium" >
+                      <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
+                        <div class="filter-head jump-to-filter">TOOLS</div>
+                        <div class="filter-content-wrapper relative">
+                          <div class="filter-content">
+                            <div class="tools">
+                              <div class="tools-heading show-for-medium">TOOLS</div>
+                              <ul class="tools">
+                                <li class="email"><a href="">Email</a></li>
+                                <li class="print"><a href="">Print</a></li>
+                                <li class="pdf"><a href="">PDF</a></li>
+                                <li class="xml"><a href="">XML</a></li>
+                                <li class="bookmark"><a href="">Bookmark</a></li>
+                                <li class="share"><a href="">Share</a></li>
+                              </ul>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
+                        <div class="filter-head jump-to-filter">HELPFUL LINKS</div>
+                        <div class="filter-content-wrapper relative">
+                          <div class="filter-content">
+                            <xsl:copy-of select="$helpful_links" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column medium-2 show-for-medium">
+                  <div class="tools">
+                    <div class="tools-heading show-for-medium">TOOLS</div>
+                    <ul class="tools">
+                      <li class="email"><a href="">Email</a></li>
+                      <li class="print"><a href="">Print</a></li>
+                      <li class="pdf"><a href="">PDF</a></li>
+                      <li class="xml"><a href="">XML</a></li>
+                      <li class="bookmark"><a href="">Bookmark</a></li>
+                      <li class="share"><a href="">Share</a></li>
+                    </ul>
+                  </div>
+                  <xsl:copy-of select="$helpful_links" />
+                </div>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel3">
+              <div class="bibliography-filter filter hide-for-medium boxed">
+                <div class="filter-head jump-to-filter">Topics In This Section</div>
+                <div class="filter-content-wrapper relative">
+                  <div class="filter-content">
+                    <div class=" toc mobile-toc">
+                      <div class=" ">
+                        <ul class="sub-sections">
+                          <li><a href="">Introduction</a></li>
+                          <li><a href="">Roads &amp; Transport</a></li>
+                          <li class="active"><a href="active">Political &amp; Economic History</a></li>
+                          <li><a href="">County Government</a></li>
+                          <li><a href="">The Bishops of Chichester</a></li>
+                          <li><a href="">Religous Houses</a></li>
+                          <li><a href="">Nobility &amp; Gentry</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column medium-12">
+                  <div class="entity-top-content">
+                    <h2>Historical Background</h2>
+                  </div>
+                  <div class="related-content row">
+                    <div class="columns medium-9">
+                      <div class="show-for-medium">
+                        <div class="row toc">
+                          <div class="column medium-6">
+                            <ul class="sub-sections">
+                              <li><a href="">Introduction</a></li>
+                              <li><a href="">Roads &amp; Transport</a></li>
+                              <li class="active"><a href="active">Political &amp; Economic History</a></li>
+                              <li><a href="">County Government</a></li>
+                              <li><a href="">The Bishops of Chichester</a></li>
+                            </ul>
+                          </div>
+                          <div class="column medium-6">
+                            <ul class="sub-sections">
+                              <li><a href="">Religous Houses</a></li>
+                              <li><a href="">Nobility &amp; Gentry</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="explore-text">
+                        <h3>Political &amp; Economic History</h3>
+                        <p>Postea phaedrum cu mei. Tempor minimum eum et, novum decore cu nec. Aliquip alterum eum ei, quodsi feugait minimum sit in. Salutatus argumentum et duo, utamur tamquam laboramus ex mei. Ea hendrerit sententiae vis, alienum placerat cu pri. Eu iudico munere vis, option ocurreret ad sea, pro qualisque adipiscing scripserit eu. Nostro percipit gubergren his at. Eu insolens delicata nec, ignota honestatis ei pro. Luptatum patrioque euripidis te sit.</p>
+                        <h4>H4 - Sub Section Title</h4>
+                        <p>Amet, ex qui quodsi vocibus. Quas menandri mnesarchum eu eam. Ut eum nusquam eligendi, ut usu quis porro. Vel novum vituperata ne, et pri elit altera. Unum case feugait per ex, est id errem noster, cu mutat scripta constituto cum. Everti reprimique inciderint eu pri, te pri nobis scripta verterem, id nec probo soleat noluisse constituto cum.</p>
+                        <h4>H4 - Sub Section Title</h4>
+                        <p>Amet, ex qui quodsi vocibus. Quas menandri mnesarchum eu eam. Ut eum nusquam eligendi, ut usu quis porro. Vel novum vituperata ne, et pri elit altera. Unum case feugait per ex, est id errem noster, cu mutat scripta constituto:</p>
+                        <ul class="list">
+                          <li><span>Amet, ex qui quodsi vocibus </span></li>
+                          <li><span>Quas menandri mnesarchum eu eam</span></li>
+                          <li><span>Ut eum nusquam eligendi, ut usu quis porro</span></li>
+                          <li><span>Vel novum vituperata ne, et pri elit altera</span></li>
+                          <li><span>Unum case feugait constituto</span></li>
+                        </ul>
+                        <p>Amet, ex qui quodsi vocibus. Quas menandri mnesarchum eu eam. Ut eum nusquam eligendi, ut usu quis porro. Vel novum vituperata ne, et pri elit altera. Unum case feugait per ex, est id errem noster, cu mutat scripta constituto:</p>
+                        <ul class="list numbered">
+                          <li><span>Amet, ex qui quodsi vocibus </span></li>
+                          <li><span>Quas menandri mnesarchum eu eam</span></li>
+                          <li><span>Ut eum nusquam eligendi, ut usu quis porro</span></li>
+                          <li><span>Vel novum vituperata ne, et pri elit altera</span></li>
+                          <li><span>Unum case feugait constituto</span></li>
+                        </ul>
+                      </div>
+                      <div class="row prev-next-buttons">
+                        <div class="columns medium-4">
+                          <div class="previous-button">
+                            <a href="#">
+                              <div class="next">Previous</div>
+                              <div class="next-page">1. Introduction</div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="columns medium-4">
+                          <div class="next-button">
+                            <a href="#">
+                              <div class="next">Next</div>
+                              <div class="next-page">2. Principles of Selection</div>
+
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel4">
+              <div class="row">
+                <div class="column medium-12">
+                  <div class="entity-top-content">
+                    <h2>Performance Traditions</h2>
+                  </div>
+                  <div class="related-content">
+                    <h3>Content TBA</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel5">
+              <div class="row">
+                <div class="column medium-12">
+                  <div class="entity-top-content">
+                    <h2>Appendices</h2>
+                  </div>
+                  <div class="related-content">
+                    <ul class="individual-related-entity numbered list colored">
+                      <li><span><a href="/appendix.html">Undated Records</a></span></li>
+                      <li><span><a>Royal and Noble Visits to Chester</a></span></li>
+                      <li><span><a>Collier’s Letters and the Play of Robert of Sicily</a></span></li>
+                      <li><span><a>The Breviaries of Archdeacon Robert and David Rogers</a></span></li>
+                      <li><span><a>The Development of the Plays</a></span></li>
+                      <li><span><a>Selective List of Musicians and Musical Performers</a></span></li>
+                      <li><span><a>Saints’ Days and Festivals'</a></span></li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row white-bg hide-for-medium">
+          <div class="columns">
+            <a href="" class="button transparent expanded back-to-top small-margin-bottom-25">Back To Top</a>
+          </div>
+        </div>
+      </div>
+    </kiln:block>
+
+  </kiln:child>
+
+</kiln:root>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
+           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <kiln:parent>
+    <xi:include href="base.xml" />
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title">
+      <kiln:super />
+      <xsl:text>Search</xsl:text>
+    </kiln:block>
+
+    <kiln:block name="content">
+      <div class="white-bg">
+
+        <!-- Hero Image -->
+        <div class="title-hero" id="how-to">
+          <div class="hero-content">
+            <h2>How To</h2>
+          </div>
+          <!-- Image Tooltip -->
+          <div class="image-tooltip hide">
+            <div class="tooltip-content">
+              A Fête at Bermondsey, c. 1570 (oil on panel), Gheeraerts, Marcus, the Elder (c. 1520-90) / Hatfield House, Hertfordshire, UK / Bridgeman Images
+            </div>
+            <span class="tooltip-button"></span>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content reduced-padding white-bg">
+          <div class="bibliography-filter filter hide-for-medium boxed">
+            <div class="filter-head jump-to-filter">Topics In This Section</div>
+            <div class="filter-content-wrapper relative">
+              <div class="filter-content">
+                <div class="toc mobile-toc">
+                  <div>
+                    <ul class="sub-sections">
+                      <li><a href="{kiln:url-for-match('ereed-howto-intro', ())}">Introduction to the Research Process</a></li>
+                      <li class="active"><a href="{kiln:url-for-match('ereed-howto-anatomy', ())}">Anatomy of a Record</a></li>
+                      <li><a href="{kiln:url-for-match('ereed-howto-search', ())}">Search Tips</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row show-for-medium">
+            <div class="columns medium-8">
+              <div class="row toc">
+                <div class="column medium-6">
+                  <ul class="sub-sections">
+                    <li><a href="{kiln:url-for-match('ereed-howto-intro', ())}">Introduction to the Research Process</a></li>
+                    <li class="active"><a href="{kiln:url-for-match('ereed-howto-anatomy', ())}">Anatomy of a Record</a></li>
+                    <li><a href="{kiln:url-for-match('ereed-howto-search', ())}">Search Tips</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="column medium-20-percent">
+              <xsl:copy-of select="$helpful_links" />
+            </div>
+          </div>
+          <div class="row small-collapse medium-uncollapse ">
+            <div class="column medium-10  sub-section-content">
+              <div class="anatomy-title">
+                <h2>2. Anatomy of a Record</h2>
+              </div>
+              <div class="anatomy">
+                <div class="record">
+                  <div class="record-info-inner">
+                    <i class="walkthrough" id="step1">England, Staffordshire (Tutury) 1629</i>
+                  </div>
+                  <div class="record-title" id="stepX2">
+                    <h1 class="walkthrough" id="step2">Revised Regulations Governing the Minstrels' Court</h1>
+                  </div>
+                  <div class="shelfmark">
+                    <span class="walkthrough" id="step3">TNA: DL 41/597, item [c]</span>
+                  </div>
+                  <hr />
+                  <div class="record-content">
+                    <p><span class="walkthrough" id="step4">single mb <i>(10 May)</i></span></p>
+                    <p>…</p>
+                    <p>Orders made and <span class="walkthrough" id="step5">sett</span> downe by the Right honorable Edwarde Lord Newbrough Chauncelor <span class="walkthrough" id="step6">&lt;…&gt;</span> Ma<i>ies</i>ties Duchy of
+                    Lancaster and the Counsell of his <span class="walkthrough" id="step7">Ma<i>ies</i>ties</span> honorable Courte of the Duchy Chamber the <i><span class="walkthrough" id="step8">(blank)</span></i> in the fifte
+                    yeare of the Raigne of our Soveraigne Lord Charles by the grace of God kinge of England Scotland ff&lt;…&gt; and
+                    Ireland defender of the Faith &amp;c for the better orderinge and governinge of his Ma<i>ies</i>ties Courte called the
+                    Minstrells courte now &lt;…&gt; from the time whereof the memory of man is not to the contrary yearely holden at
+                    Tutburye vpon the morrowe after the feaste of the as&lt;…&gt;tion of our Lady St Mary the virgin and of the
+                    Musitians and minstrells w<i>i</i>thin the Counties of Stafford &amp; Derbie w<i>hi</i>ch doe owe suite to the same Courte.
+                    </p>
+                    <p>
+                      <span class="walkthrough" id="step9">…</span>
+                    </p>
+                  </div>
+                  <div class="record-accordion">
+                    <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+                      <li class="accordion-item " data-accordion-item="">
+                        <a href="#" class="accordion-title">Marginalia</a>
+                        <div class="accordion-content" data-tab-content="">
+                          123
+                        </div>
+                      </li>
+                      <li class="accordion-item " data-accordion-item="">
+                        <a href="#" class="accordion-title">Footnotes</a>
+                        <div class="accordion-content" data-tab-content="">
+                          123
+                        </div>
+                      </li>
+                      <li class="accordion-item " data-accordion-item="">
+                        <a href="#" class="accordion-title">Record Translation</a>
+                        <div class="accordion-content" data-tab-content="">
+                          123
+                        </div>
+                      </li>
+                      <li class="accordion-item " data-accordion-item="">
+                        <a href="#" class="accordion-title">Collation Notes</a>
+                        <div class="accordion-content" data-tab-content="">
+                          123
+                        </div>
+                      </li>
+                      <li class="accordion-item " data-accordion-item="">
+                        <a href="#" class="accordion-title">Glossed Terms</a>
+                        <div class="accordion-content" data-tab-content="">
+                          123
+                        </div>
+                      </li>
+                      <li class="accordion-item " data-accordion-item="">
+                        <a href="#" class="accordion-title">Endnote</a>
+                        <div class="accordion-content" data-tab-content="">
+                          123
+                        </div>
+                      </li>
+                      <li class="accordion-item " data-accordion-item="">
+                        <a href="#" class="accordion-title">Document Description</a>
+                        <div class="accordion-content" data-tab-content="">
+                          123
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row prev-next-buttons">
+                <div class="columns medium-4">
+                  <div class="previous-button">
+                    <a href="{kiln:url-for-match('ereed-howto-intro', ())}">
+                      <div class="next">Previous</div>
+                      <div class="next-page">1. Introduction to the Research Process</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="columns medium-4">
+                  <div class="next-button">
+                    <a href="{kiln:url-for-match('ereed-howto-search', ())}">
+                      <div class="next">Next</div>
+                      <div class="next-page">3. Search Tips</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </kiln:block>
+
+    <kiln:block name="end-js">
+      <kiln:super />
+      <script src="{$kiln:assets-path}/scripts/pages/intro.js"></script>
+      <script src="{$kiln:assets-path}/scripts/pages/how-to-anatomy.js"></script>
+    </kiln:block>
+  </kiln:child>
+
+</kiln:root>

@@ -7,7 +7,9 @@
        RDF harvesting, annotating search facet results, etc. -->
 
   <xsl:template match="/">
-    <xsl:apply-templates select="eats:collection/eats:entities" />
+    <entities>
+      <xsl:apply-templates select="eats:collection/eats:entities/eats:entity" />
+    </entities>
   </xsl:template>
 
   <xsl:template match="eats:entity">

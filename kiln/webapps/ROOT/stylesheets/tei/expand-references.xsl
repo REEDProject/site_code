@@ -84,7 +84,7 @@
          xi:include/@href (it's useless; the HTTP request does not
          pass the fragment). Convert to a querystring. -->
     <xsl:variable name="final-url" select="replace($full-url, '#', '?id=')" />
-    <xi:include href="{kiln:url-for-match('ereed-extract-referenced-content',
+    <xi:include href="cocoon:/{kiln:url-for-match('ereed-extract-referenced-content',
                       ($final-url))}" />
   </xsl:template>
 

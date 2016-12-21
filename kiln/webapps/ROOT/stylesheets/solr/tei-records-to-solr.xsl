@@ -35,6 +35,24 @@
         <field name="document_title">
           <xsl:value-of select="normalize-space(tei:body/tei:head)" />
         </field>
+        <field name="collection_id">
+          <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id" />
+        </field>
+        <field name="record_title">
+          <xsl:value-of select="normalize-space(tei:body/tei:head/tei:bibl/tei:title)" />
+        </field>
+        <field name="record_location">
+        </field>
+        <field name="record_shelfmark">
+        </field>
+        <field name="record_date">
+          <!-- QAZ: handle date ranges by supplying a date for each
+               year in the range. -->
+          <xsl:value-of select="tei:body/tei:head/tei:date" />
+        </field>
+        <!-- QAZ: support having a display date and a date for
+             indexing. Ties in to need to have the results table
+             sortable on index date in attribute. -->
         <field name="text">
           <xsl:value-of select="normalize-space($free-text)" />
         </field>

@@ -64,76 +64,59 @@
 
   <xsl:template match="lst[@name='facet_fields]/lst"
                 mode="search-results">
-    <section>
-      <p class="title" data-section-title="">
-        <a href="#">
-          <xsl:apply-templates mode="search-results" select="@name" />
-        </a>
-      </p>
-      <div class="content" data-section-content="">
-        <ul class="no-bullet">
-          <xsl:variable name="facet-values">
-            <xsl:apply-templates mode="search-results" />
-          </xsl:variable>
-          <xsl:for-each select="$facet-values/li">
-            <xsl:sort select="." />
-            <xsl:copy-of select="." />
-          </xsl:for-each>
-        </ul>
+    <li class="accordion-item" data-accordion-item="">
+      <a href="#" class="accordion-title">
+        <xsl:apply-templates mode="search-results" select="@name" />
+      </a>
+      <div class="accordion-content" data-tab-content="">
+        <xsl:variable name="facet-values">
+          <xsl:apply-templates mode="search-results" />
+        </xsl:variable>
+        <xsl:for-each select="$facet-values/span">
+          <xsl:sort select="." />
+          <xsl:copy-of select="." />
+        </xsl:for-each>
       </div>
-    </section>
+    </li>
   </xsl:template>
 
   <xsl:template match="lst[@name='facet_fields']/lst/@name"
                 mode="search-results">
     <xsl:for-each select="tokenize(., '_')">
-      <xsl:value-of select="upper-case(substring(., 1, 1))" />
-      <xsl:value-of select="substring(., 2)" />
-      <xsl:if test="not(position() = last())">
-        <xsl:text> </xsl:text>
+      <xsl:if test="position() = last()">
+        <xsl:value-of select="upper-case(substring(., 1, 1))" />
+        <xsl:value-of select="substring(., 2)" />
       </xsl:if>
     </xsl:for-each>
   </xsl:template>
 
   <xsl:template match="result/doc" mode="search-results">
     <xsl:variable name="result-url" select="kiln:url-for-match('ereed-record-display-html', (str[@name='document_id']))" />
-    <li>
-      <a href="{$result-url}">
-        <xsl:value-of select="arr[@name='document_title']/str[1]" />
-      </a>
-    </li>
-  </xsl:template>
-
-  <xsl:template match="response/result" mode="search-results">
-    <xsl:choose>
-      <xsl:when test="number(@numFound) = 0">
-        <h3>No results found</h3>
-      </xsl:when>
-      <xsl:when test="doc">
-        <ul>
-          <xsl:apply-templates mode="search-results" select="doc" />
-        </ul>
-
-        <xsl:call-template name="add-results-pagination" />
-      </xsl:when>
-    </xsl:choose>
+    <tr>
+      <td><input name="select_all" value="1" id="table-select-all" type="checkbox" /></td>
+      <td class="show-for-small-only">
+        <a href="{$result-url}">
+          <xsl:value-of select="arr[@name='document_title']/str[1]" />
+        </a>
+      </td>
+      <td class="show-for-medium"><xsl:value-of select="str[@name='record_date']" /></td>
+      <td class="show-for-medium"><xsl:value-of select="str[@name='record_location']" /></td>
+      <td class="show-for-medium"><a href="{$result-url}"><xsl:value-of select="str[@name='record_title']" /></a></td>
+      <td class="show-for-medium"><xsl:value-of select="str[@name='record_shelfmark']" /></td>
+    </tr>
   </xsl:template>
 
   <xsl:template match="*[@name='fq']" mode="search-results">
-    <h3>Current filters</h3>
-
-    <ul>
-      <xsl:choose>
-        <xsl:when test="local-name(.) = 'str'">
+    <xsl:choose>
+      <xsl:when test="local-name(.) = 'str'">
+        <xsl:apply-templates mode="display-selected-facet" select="." />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:for-each select="str">
           <xsl:apply-templates mode="display-selected-facet" select="." />
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:for-each select="str">
-            <xsl:apply-templates mode="display-selected-facet" select="." />
-          </xsl:for-each>
-        </xsl:otherwise>
-      </xsl:choose>
-    </ul>
+        </xsl:for-each>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="str" mode="display-selected-facet">
@@ -196,14 +179,14 @@
           <xsl:text>)</xsl:text>
         </xsl:if>
       </xsl:variable>
-      <li>
-        <!-- Display the facet name without the surrounding quotes. -->
+      <!-- Display the facet value without the surrounding quotes. -->
+      <span class="active-filter">
         <xsl:call-template name="lookup-facet-id">
           <xsl:with-param name="context" select="$context" />
           <xsl:with-param name="id"
                           select="substring(., 2, string-length(.)-2)" />
         </xsl:call-template>
-        <xsl:text> (</xsl:text>
+        <xsl:text> </xsl:text>
         <!-- Create a link to unapply the facet. -->
         <a>
           <xsl:attribute name="href">
@@ -215,10 +198,10 @@
             <xsl:value-of select="kiln:string-replace($query-string,
                                   $old-fq, $new-fq)" />
           </xsl:attribute>
-          <xsl:text>x</xsl:text>
+          <span class="close"></span>
         </a>
-        <xsl:text>)</xsl:text>
-      </li>
+      </span>
+      <xsl:text> </xsl:text>
     </xsl:for-each>
   </xsl:template>
 
@@ -258,8 +241,8 @@
     <xsl:if test="not(contains($old-fq, @name))">
       <!-- This test is susceptible to a false positive if the facet
            name is a substring of another. -->
-      <li>
-        <!-- Create a link to apply the facet filter. -->
+      <!-- Create a link to apply the facet filter. -->
+      <span class="checkbox">
         <a>
           <xsl:attribute name="href">
             <xsl:text>?</xsl:text>
@@ -289,7 +272,7 @@
           </xsl:call-template>
         </a>
         <xsl:call-template name="display-facet-count" />
-      </li>
+      </span>
     </xsl:if>
   </xsl:template>
 

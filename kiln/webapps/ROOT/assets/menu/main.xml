@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="../schema/menu/menu.rng" type="xml"?>
 <root xmlns="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0">
-  <menu href="text/" label="Texts" />
-  <menu href="search/" label="Search" />
-  <menu href="admin/" label="Admin" />
+  <menu label="Home" match="ereed-home" />
+  <menu label="Search the Records" match="ereed-search" />
+  <menu label="About the Records" match="ereed-about-section">
+    <item label="Editorial Methodology"
+          match="ereed-about-editorial" />
+    <item label="Digital Methodology" match="ereed-about-digital" />
+    <item label="Symbols &amp; Abbreviations"
+          match="ereed-about-symbols" />
+    <item label="Bibliography" match="ereed-about-bibliography" />
+    <item label="Glossaries" match="ereed-about-glossaries" />
+  </menu>
+  <menu label="Explore Collections" match="ereed-collections">
+    <item label="Staffordshire" match="ereed-collections-collection"
+          params="staff" />
+  </menu>
+  <menu label="How To" match="ereed-howto-section" />
 </root>
