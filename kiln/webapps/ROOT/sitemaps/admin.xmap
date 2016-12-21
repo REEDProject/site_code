@@ -27,6 +27,7 @@
     <map:pipeline>
       <map:match id="local-admin-home-page" pattern="">
         <map:aggregate element="aggregation">
+          <map:part src="cocoon://_internal/menu/admin.xml" />
           <map:part src="cocoon://_internal/dirlist/content/xml.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/admin/index.xsl" />
@@ -34,8 +35,12 @@
       </map:match>
 
       <!-- Show Cocoon's system status. -->
-      <map:match id="local-admin-system-status" pattern="system-status.html">
-        <map:generate type="status" />
+      <map:match id="local-admin-system-status"
+                 pattern="system-status.html">
+        <map:aggregate element="aggregation">
+          <map:part src="cocoon://_internal/menu/admin.xml" />
+          <map:part src="cocoon://_internal/system-status.xml" />
+        </map:aggregate>
         <map:transform src="cocoon://_internal/template/admin/system-status.xsl" />
         <map:serialize />
       </map:match>
@@ -45,6 +50,7 @@
         <map:aggregate element="aggregation">
           <map:part src="cocoon://_internal/introspection/pipelines.xml" />
           <map:part src="cocoon://_internal/dirlist/assets/templates.xml" />
+          <map:part src="cocoon://_internal/menu/admin.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/admin/introspection.xsl" />
         <map:serialize />
@@ -55,6 +61,7 @@
                  pattern="introspection/match/*.html">
         <map:aggregate element="aggregation">
           <map:part src="cocoon://_internal/introspection/match/{1}.xml" />
+          <map:part src="cocoon://_internal/menu/admin.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/admin/introspection-match.xsl" />
         <map:serialize />
@@ -65,7 +72,7 @@
                  pattern="introspection/template/**.html">
         <map:aggregate element="aggregation">
           <map:part src="empty:index" />
-          <map:part src="cocoon://_internal/menu/main.xml" />
+          <map:part src="cocoon://_internal/menu/admin.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/{1}.xsl" />
         <map:serialize />
@@ -89,13 +96,16 @@
            URL. -->
       <map:match id="local-admin-introspection-match-url"
                  pattern="introspection/url/">
-        <map:generate type="request" />
+        <map:aggregate element="aggregation">
+          <map:part src="cocoon://_internal/request.xml" />
+          <map:part src="cocoon://_internal/menu/admin.xml" />
+        </map:aggregate>
         <map:transform src="../stylesheets/introspection/url-request-to-xinclude.xsl" />
         <map:transform type="xinclude" />
         <map:transform src="cocoon://_internal/template/admin/introspection-url-match.xsl" />
         <map:serialize />
       </map:match>
-   </map:pipeline>
+    </map:pipeline>
 
     <map:pipeline id="local-schematron">
       <!-- Schematron validation. This is the project-specific
@@ -115,6 +125,7 @@
                assets/schema/tei/tei_all_doc.xml. #ALL means that all
                phases specified in the schema are used. -->
           <map:part src="cocoon://_internal/schematron/validate/#tei_all_doc/#ALL/{1}.xml" />
+          <map:part src="cocoon://_internal/menu/admin.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/admin/schematron.xsl">
           <map:parameter name="file" value="{1}.xml" />
@@ -130,6 +141,7 @@
                  pattern="resource-check/images/**.html">
         <map:aggregate element="aggregation">
           <map:part src="cocoon:/resource-check/images/{1}.xml" />
+          <map:part src="cocoon://_internal/menu/admin.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/admin/resource_check.xsl">
           <map:parameter name="file" value="{1}.xml" />
@@ -148,6 +160,7 @@
         <map:aggregate element="aggregation">
           <map:part src="cocoon:/resource-check/image-refs/{1}.xml" />
           <map:part src="cocoon:/resource-check/image-files.xml" />
+          <map:part src="cocoon://_internal/menu/admin.xml" />
         </map:aggregate>
         <map:transform src="../kiln/stylesheets/resource-check/check-missing-resources.xsl" />
         <map:serialize type="xml" />
@@ -200,13 +213,6 @@
         </map:select>
       </map:match>
 
-      <!-- Generate a CSV document with the concordance word lists
-           arranged in slightly different fashion, and without the
-           exclusion list words excluded. -->
-      <map:match id="local-admin-csv-concordance"
-                 pattern="concordance/word-lists.csv">
-      </map:match>
-
       <!-- Generate an XML document containing annotated word lists
            for all documents specified in the GET request
            parameters. -->
@@ -246,6 +252,7 @@
       <map:match id="local-admin-entity-finder-report"
                  pattern="entity-finder/">
         <map:aggregate element="aggregation" label="content">
+          <map:part src="cocoon://_internal/menu/admin.xml" />
           <map:part src="cocoon://internal/search/entity_finder.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/admin/entity-finder.xsl" />

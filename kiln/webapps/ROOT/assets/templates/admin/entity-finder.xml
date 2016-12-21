@@ -17,13 +17,12 @@
     </kiln:block>
 
     <kiln:block name="header">
-      <kiln:super />
-      <h1>Entity Finder</h1>
+      <h1 class="entity-header">Entity Finder</h1>
     </kiln:block>
 
     <kiln:block name="content">
       <div class="row">
-        <div class="large-4 columns">
+        <div class="medium-12 column">
           <form action="." method="get">
             <input name="q" placeholder="Search terms" type="search">
               <xsl:attribute name="value">
@@ -33,10 +32,31 @@
               </xsl:attribute>
             </input>
           </form>
-        </div>
-        <div class="large-8 columns">
-          <xsl:apply-templates select="/aggregation/response/result"
-                               mode="search-results" />
+
+          <table id="table" class="display responsive" cellspacing="0"
+                 width="100%">
+            <thead>
+              <tr>
+                <th class="top-checkbox">
+                  <label class="checkbox"><input type="checkbox" name="select_all" id="table-select-all" value="1" /><span class="checkbox-inner"></span></label>
+                  <a href="#" id="checkbox-toggle">T</a>
+                  <ul id="checkbox-options">
+                    <li data-option="all" class="hide">All</li>
+                    <li data-option="none" class="hide">None</li>
+                  </ul>
+                </th>
+                <th class="show-for-small-only hide-sortable" width="40px">Records</th>
+                <th class="show-for-medium">Date</th>
+                <th class="show-for-medium">Location</th>
+                <th class="show-for-medium">Record Title</th>
+                <th class="show-for-medium">Shelfmark</th>
+              </tr>
+            </thead>
+            <tbody>
+              <xsl:apply-templates select="/aggregation/response/result"
+                                   mode="search-results" />
+            </tbody>
+          </table>
         </div>
       </div>
     </kiln:block>

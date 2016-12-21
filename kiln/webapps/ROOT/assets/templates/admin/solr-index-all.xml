@@ -20,8 +20,10 @@
 
     <kiln:block name="content">
       <div class="row">
-        <div class="large-12 columns">
-          <xsl:apply-templates select="/aggregation/*" mode="solr" />
+        <div class="medium-12 column">
+          <xsl:apply-templates select="/aggregation/delete" mode="solr" />
+          <xsl:apply-templates select="/aggregation/insert" mode="solr" />
+          <xsl:apply-templates select="/aggregation/optimize" mode="solr" />
         </div>
       </div>
     </kiln:block>

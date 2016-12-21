@@ -1,14 +1,3 @@
-tr, td { vertical-align: top; }
-
-footer {
-         background: none repeat scroll 0 0 #fafafa;
-         border-top: 1px solid #eeeeee;
-         color: #777777;
-         font-size: 80%;
-         margin-top: 3em;
-         padding: 1em;
-}
-
 pre {
       line-height: 1em;
 }
@@ -36,8 +25,3 @@ pre {
 .visualise-indent { margin: 0.25em 0 0.25em 1em; }
 .visualise-indent.visualise-match { margin-left: 2em; }
 .visualise-dedent { position: relative; left: -1em; }
-
-/* Fix for Foundation bug
-https://github.com/zurb/foundation/issues/2332 that is unfixed in
-4.3.1. */
-.accordion > section.active > .content { display: block; position: relative; }
