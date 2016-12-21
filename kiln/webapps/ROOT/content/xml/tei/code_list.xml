@@ -194,7 +194,7 @@
               </category>
               <category xml:id="repositories">
                   <catDesc>Repositories</catDesc>
-                  <category xml:id="Bodl.">
+                  <category xml:id="Bodl.">                   
                       <catDesc>Bodleian</catDesc>
                   </category>
                   <category xml:id="LRO">
@@ -833,7 +833,13 @@
             <title>Letter from J. Richards to Sir Hugh Wrottesley (A)</title>
                 <idno type="author_surname">Horwood</idno>:
                 <idno type="short_title">'Manuscripts'</idno>
-            </bibl>
+           </bibl>
+            
+            <bibl xml:id="TSHL">
+                <title>The Ballad of Richard Sheale</title>
+                    <idno type="repository" sameAs="#Bodl." />
+                <idno type="shelfmark">MS Ashmole 48</idno>
+            </bibl>         
         </listBibl>   
       </div>
     </body>
