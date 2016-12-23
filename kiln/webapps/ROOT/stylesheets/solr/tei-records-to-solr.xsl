@@ -45,9 +45,8 @@
         </field>
         <field name="record_shelfmark">
         </field>
-        <field name="record_date">
-          <!-- QAZ: handle date ranges by supplying a date for each
-               year in the range. -->
+        <xsl:apply-templates select="tei:body/tei:head/tei:date" />
+        <field name="record_date_display">
           <xsl:value-of select="tei:body/tei:head/tei:date" />
         </field>
         <!-- QAZ: support having a display date and a date for
@@ -66,6 +65,25 @@
                                      [@ref]" />
       </doc>
     </xsl:if>
+  </xsl:template>
+
+  <xsl:template match="tei:date">
+    <!-- QAZ: handle date ranges by supplying a date for each
+         year in the range. -->
+    <xsl:choose>
+      <xsl:when test="@when-iso">
+        <field name="record_date">
+          <xsl:value-of select="@when-iso" />
+        </field>
+      </xsl:when>
+      <xsl:when test="@from-iso and @to-iso">
+        <xsl:for-each select="@from-iso to @to-iso">
+          <field name="record_date">
+            <xsl:value-of select="." />
+          </field>
+        </xsl:for-each>
+      </xsl:when>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="tei:term" mode="record_type">
