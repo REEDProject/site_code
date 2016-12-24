@@ -69,13 +69,15 @@
         <xsl:apply-templates mode="search-results" select="@name" />
       </a>
       <div class="accordion-content" data-tab-content="">
-        <xsl:variable name="facet-values">
-          <xsl:apply-templates mode="search-results" />
-        </xsl:variable>
-        <xsl:for-each select="$facet-values/span">
-          <xsl:sort select="." />
-          <xsl:copy-of select="." />
-        </xsl:for-each>
+        <ul class="open-filters">
+          <xsl:variable name="facet-values">
+            <xsl:apply-templates mode="search-results" />
+          </xsl:variable>
+          <xsl:for-each select="$facet-values/li">
+            <xsl:sort select="." />
+            <xsl:copy-of select="." />
+          </xsl:for-each>
+        </ul>
       </div>
     </li>
   </xsl:template>
@@ -93,13 +95,13 @@
   <xsl:template match="result/doc" mode="search-results">
     <xsl:variable name="result-url" select="kiln:url-for-match('ereed-record-display-html', (str[@name='document_id']))" />
     <tr>
-      <td><input name="select_all" value="1" id="table-select-all" type="checkbox" /></td>
+      <td><input name="select_all" value="{str[@name='document_id']}" id="table-select-all" type="checkbox" /></td>
       <td class="show-for-small-only">
         <a href="{$result-url}">
           <xsl:value-of select="arr[@name='document_title']/str[1]" />
         </a>
       </td>
-      <td class="show-for-medium"><xsl:value-of select="str[@name='record_date']" /></td>
+      <td class="show-for-medium"><xsl:value-of select="str[@name='record_date_display']" /></td>
       <td class="show-for-medium"><xsl:value-of select="str[@name='record_location']" /></td>
       <td class="show-for-medium"><a href="{$result-url}"><xsl:value-of select="str[@name='record_title']" /></a></td>
       <td class="show-for-medium"><xsl:value-of select="str[@name='record_shelfmark']" /></td>
@@ -166,19 +168,6 @@
                           substring-after(., '('), ')'), ' OR ')" />
     <xsl:variable name="context" select="." />
     <xsl:for-each select="$facets">
-      <xsl:variable name="new-fq">
-        <xsl:if test="count($facets) &gt; 1">
-          <xsl:value-of select="$prefix" />
-          <xsl:text>(</xsl:text>
-          <xsl:for-each select="remove($facets, position())">
-            <xsl:value-of select="." />
-            <xsl:if test="position() != last()">
-              <xsl:text> OR </xsl:text>
-            </xsl:if>
-          </xsl:for-each>
-          <xsl:text>)</xsl:text>
-        </xsl:if>
-      </xsl:variable>
       <!-- Display the facet value without the surrounding quotes. -->
       <span class="active-filter">
         <xsl:call-template name="lookup-facet-id">
@@ -190,13 +179,12 @@
         <!-- Create a link to unapply the facet. -->
         <a>
           <xsl:attribute name="href">
-            <xsl:text>?</xsl:text>
-            <!-- Since both $old-fq and $new-fq will contain
-                 characters that are meaningful within a regular
-                 expressions, use a string substitution rather than
-                 replace. -->
-            <xsl:value-of select="kiln:string-replace($query-string,
-                                  $old-fq, $new-fq)" />
+            <xsl:call-template name="make-deselect-facet-link">
+              <xsl:with-param name="facet" select="." />
+              <xsl:with-param name="facets" select="$facets" />
+              <xsl:with-param name="prefix" select="$prefix" />
+              <xsl:with-param name="fq" select="$old-fq" />
+            </xsl:call-template>
           </xsl:attribute>
           <span class="close"></span>
         </a>
@@ -230,50 +218,68 @@
   </xsl:template>
 
   <xsl:template name="display-unselected-or-facet">
-    <xsl:variable name="name">
+    <xsl:variable name="facet-name">
       <xsl:text>{!tag=</xsl:text>
       <xsl:value-of select="../@name" />
       <xsl:text>Tag}</xsl:text>
       <xsl:value-of select="../@name" />
     </xsl:variable>
-    <xsl:variable name="old-fq" select="/aggregation/h:request/h:requestParameters/h:parameter[@name='fq']/h:value[starts-with(., concat($name, ':'))]" />
-    <!-- List a facet only if it is not selected. -->
-    <xsl:if test="not(contains($old-fq, @name))">
-      <!-- This test is susceptible to a false positive if the facet
-           name is a substring of another. -->
-      <!-- Create a link to apply the facet filter. -->
-      <span class="checkbox">
-        <a>
-          <xsl:attribute name="href">
-            <xsl:text>?</xsl:text>
-            <xsl:choose>
-              <xsl:when test="not($old-fq)">
-                <xsl:value-of select="$query-string" />
-                <xsl:text>&amp;fq=</xsl:text>
-                <xsl:value-of select="$name" />
-                <xsl:text>:("</xsl:text>
-                <xsl:value-of select="@name" />
-                <xsl:text>")</xsl:text>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:variable name="new-fq">
-                  <xsl:value-of select="substring-before($old-fq, ')')" />
-                  <xsl:text> OR "</xsl:text>
-                  <xsl:value-of select="@name" />
-                  <xsl:text>")</xsl:text>
-                </xsl:variable>
-                <xsl:value-of select="kiln:string-replace($query-string,
-                                      $old-fq, $new-fq)" />
-              </xsl:otherwise>
-            </xsl:choose>
-          </xsl:attribute>
-          <xsl:call-template name="lookup-facet-id">
-            <xsl:with-param name="id" select="@name" />
-          </xsl:call-template>
-        </a>
-        <xsl:call-template name="display-facet-count" />
-      </span>
-    </xsl:if>
+    <xsl:variable name="facet-value"
+                  select="concat('&quot;', @name, '&quot;')" />
+    <!-- Equivalently this could get the information from
+         /aggregation/response. -->
+    <xsl:variable name="old-fq" select="/aggregation/h:request/h:requestParameters/h:parameter[@name='fq']/h:value[starts-with(., concat($facet-name, ':'))]" />
+    <xsl:variable name="selected" select="contains($old-fq, $facet-value)" />
+    <li class="checkbox">
+      <xsl:if test="$selected">
+        <xsl:attribute name="class" select="'checkbox checked'" />
+      </xsl:if>
+      <a>
+        <xsl:attribute name="href">
+          <xsl:choose>
+            <xsl:when test="not($selected)">
+              <!-- Create a link to apply the facet filter. -->
+              <xsl:text>?</xsl:text>
+              <xsl:choose>
+                <xsl:when test="not($old-fq)">
+                  <xsl:value-of select="$query-string" />
+                  <xsl:text>&amp;fq=</xsl:text>
+                  <xsl:value-of select="$facet-name" />
+                  <xsl:text>:(</xsl:text>
+                  <xsl:value-of select="$facet-value" />
+                  <xsl:text>)</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:variable name="new-fq">
+                    <xsl:value-of select="substring-before($old-fq, ')')" />
+                    <xsl:text> OR </xsl:text>
+                    <xsl:value-of select="$facet-value" />
+                    <xsl:text>)</xsl:text>
+                  </xsl:variable>
+                  <xsl:value-of select="kiln:string-replace($query-string,
+                                        $old-fq, $new-fq)" />
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+              <!-- Create a link to remove the facet filter. -->
+              <xsl:call-template name="make-deselect-facet-link">
+                <xsl:with-param name="facet" select="$facet-value" />
+                <xsl:with-param name="facets"
+                                select="tokenize(substring-before(
+                                        substring-after($old-fq, '('), ')'), ' OR ')" />
+                <xsl:with-param name="prefix" select="concat('&amp;fq=', $facet-name, ':')" />
+                <xsl:with-param name="fq" select="concat('&amp;fq=', $old-fq)" />
+              </xsl:call-template>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:attribute>
+        <xsl:call-template name="lookup-facet-id">
+          <xsl:with-param name="id" select="@name" />
+        </xsl:call-template>
+      </a>
+      <xsl:call-template name="display-facet-count" />
+    </li>
   </xsl:template>
 
   <xsl:template name="display-facet-count">
@@ -296,6 +302,38 @@
         </xsl:otherwise>
       </xsl:choose>
     </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template name="make-deselect-facet-link">
+    <!-- Insert the URL for the current search minus the supplied
+         (currently selected) facet value. -->
+    <!-- The facet value to remove. -->
+    <xsl:param name="facet" />
+    <!-- The sequence of facet values for a facet that contains $facet. -->
+    <xsl:param name="facets" />
+    <!-- The part of the query-string for this facet that precedes the
+         list of facet values. -->
+    <xsl:param name="prefix" />
+    <!-- The current part of the query-string for this facet. -->
+    <xsl:param name="fq" />
+    <xsl:variable name="new-fq">
+      <xsl:if test="count($facets) &gt; 1">
+        <xsl:value-of select="$prefix" />
+        <xsl:text>(</xsl:text>
+        <xsl:for-each select="remove($facets, index-of($facets, $facet))">
+          <xsl:value-of select="." />
+          <xsl:if test="position() != last()">
+            <xsl:text> OR </xsl:text>
+          </xsl:if>
+        </xsl:for-each>
+        <xsl:text>)</xsl:text>
+      </xsl:if>
+    </xsl:variable>
+    <xsl:text>?</xsl:text>
+    <!-- Since both $old-fq and $new-fq will contain characters that
+         are meaningful within a regular expressions, use a string
+         substitution rather than replace. -->
+    <xsl:value-of select="kiln:string-replace($query-string, $fq, $new-fq)" />
   </xsl:template>
 
   <xsl:function name="kiln:string-replace" as="xs:string">
