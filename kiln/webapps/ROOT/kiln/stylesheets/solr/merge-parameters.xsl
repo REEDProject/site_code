@@ -21,9 +21,9 @@
              string starting with an &amp; -->
         <xsl:if test="contains(., '=')">
           <xsl:element name="{substring-before(., '=')}">
-            <xsl:call-template name="kiln:escape-value">
+            <xsl:call-template name="handle-querystring-parameter">
+              <xsl:with-param name="key" select="substring-before(., '=')" />
               <xsl:with-param name="value" select="substring-after(., '=')" />
-              <xsl:with-param name="url-escaped" select="1" />
             </xsl:call-template>
           </xsl:element>
         </xsl:if>
@@ -35,6 +35,17 @@
     <xsl:copy>
       <xsl:apply-templates select="@*|node()" />
     </xsl:copy>
+  </xsl:template>
+
+  <xsl:template name="handle-querystring-parameter">
+    <xsl:param name="key" />
+    <xsl:param name="value" />
+    <xsl:element name="{$key}">
+      <xsl:call-template name="kiln:escape-value">
+        <xsl:with-param name="value" select="$value" />
+        <xsl:with-param name="url-escaped" select="1" />
+      </xsl:call-template>
+    </xsl:element>
   </xsl:template>
 
 </xsl:stylesheet>
