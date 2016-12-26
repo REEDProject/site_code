@@ -52,6 +52,16 @@
     </i>
   </xsl:template>
 
+  <xsl:template match="tei:note[@type='foot']">
+    <span class="footnote tag" note="{generate-id()}"></span>
+  </xsl:template>
+
+  <xsl:template match="tei:note[@type='foot']" mode="group">
+    <li note="{generate-id()}">
+      <xsl:apply-templates />
+    </li>
+  </xsl:template>
+
   <xsl:template match="tei:space">
     <i>(blank)</i>
   </xsl:template>
