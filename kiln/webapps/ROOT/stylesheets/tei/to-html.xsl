@@ -62,6 +62,18 @@
     </li>
   </xsl:template>
 
+  <xsl:template match="tei:note[@type='marginal']">
+    <!-- QAZ: icon indicating place of note. -->
+    <span class="marginalia" note="{generate-id()}"></span>
+  </xsl:template>
+
+  <xsl:template match="tei:note[@type='marginal']" mode="group">
+    <li note="{generate-id()}">
+      <!-- QAZ: icon indicating place of note. -->
+      <xsl:apply-templates />
+    </li>
+  </xsl:template>
+
   <xsl:template match="tei:space">
     <i>(blank)</i>
   </xsl:template>

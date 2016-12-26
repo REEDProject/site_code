@@ -66,7 +66,9 @@
                     <li class="accordion-item" data-accordion-item="">
                       <a href="#" class="accordion-title">Marginalia</a>
                       <div class="accordion-content" data-tab-content="">
-
+                        <ul class="marginalia-list">
+                          <xsl:apply-templates mode="group" select="$record_text//tei:note[@type='marginal']" />
+                        </ul>
                       </div>
                     </li>
                   </xsl:if>
@@ -92,7 +94,7 @@
                     <li class="accordion-item" data-accordion-item="">
                       <a href="#" class="accordion-title">Collation Notes</a>
                       <div class="accordion-content" data-tab-content="">
-
+                        <xsl:apply-templates select="$record_text/tei:body/tei:div[@type='collation_notes']" />
                       </div>
                     </li>
                   </xsl:if>
@@ -102,7 +104,7 @@
 
                     </div>
                   </li>
-                  <xsl:if test="$record_text/tei:ody/tei:div[@type='endnote']">
+                  <xsl:if test="$record_text/tei:body/tei:div[@type='endnote']">
                     <li class="accordion-item" data-accordion-item="">
                       <a href="#" class="accordion-title">Endnote</a>
                       <div class="accordion-content" data-tab-content="">
