@@ -122,11 +122,13 @@
           required="false" stored="true" type="string" />
    <field indexed="true" multiValued="false" name="record_shelfmark"
           required="false" stored="true" type="text_general" />
-   <!-- record_date is treated as a string, because Solr's date
-        field type requires a UTC time, and we may wish to store only
-        a year. -->
+   <!-- record_date is treated as an integer, because Solr's date
+        field type requires a UTC time, and we only store years. -->
    <field indexed="true" multiValued="true" name="record_date"
-          required="false" stored="true" type="string" />
+          required="false" stored="true" type="int" />
+   <field indexed="false" multiValued="false"
+          name="record_date_display" required="false" stored="true"
+          type="string" />
    <field indexed="true" multiValued="True" name="mentioned_entities"
           required="false" stored="true" type="string" />
 
