@@ -18,23 +18,167 @@
       <xsl:text>Record: </xsl:text>
       <!-- QAZ: Add record title -->
     </kiln:block>
-  </kiln:child>
 
-  <kiln:block name="content">
-    <div class="white-bg">
-      <div class="row selected relative" >
-        <div class="columns medium-9 record-info" data-equalizer-watch="">
-          <div class="record">
-            <div class="record-info-inner">
-              <i><!-- QAZ: Add record place/date details --></i>
+    <kiln:block name="content">
+      <div class="white-bg">
+        <div class="row selected relative" >
+          <div class="columns medium-9 record-info" data-equalizer-watch="">
+            <div class="record">
+              <div class="record-info-inner">
+                <i><!-- QAZ: Add record place/date details --></i>
+              </div>
+              <div class="record-title">
+                <h1><xsl:value-of select="$record_title" /></h1>
+              </div>
+              <div class="shelfmark"><!-- QAZ: Add shelfmark --></div>
+              <hr />
+              <div class="record-sidebar hide-for-medium">
+                <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
+                  <div class="filter-head jump-to-filter">SHOW OR HIDE</div>
+                  <div class="filter-content-wrapper relative">
+                    <div class="filter-content">
+                      <div class="show-hide">
+                        <label class="checkbox"><input type="checkbox" name="show-tags" /><span class="checkbox-inner"> </span>Tag</label>
+                        <label class="checkbox"><input type="checkbox" name="show-terms" /><span class="checkbox-inner"> </span>Glossed Terms</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
+                  <div class="filter-head jump-to-filter">VIEW TAGS</div>
+                  <div class="filter-content-wrapper relative">
+                    <div class="filter-content">
+                      <ul class="tags">
+                        <!-- QAZ: Add tags -->
+                        <li class="tag"></li>
+                        <li class="close-tags tag">Close</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="record-content">
+                <xsl:apply-templates select="$record_text/tei:body/tei:div[@type='transcription']" />
+              </div>
+              <div class="record-accordion">
+                <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+                  <xsl:if test="$record_text//tei:note[@type='marginal']">
+                    <li class="accordion-item" data-accordion-item="">
+                      <a href="#" class="accordion-title">Marginalia</a>
+                      <div class="accordion-content" data-tab-content="">
+
+                      </div>
+                    </li>
+                  </xsl:if>
+                  <xsl:if test="$record_text//tei:note[@type='foot']">
+                    <li class="accordion-item" data-accordion-item="">
+                      <a href="#" class="accordion-title">Footnotes</a>
+                      <div class="accordion-content" data-tab-content="">
+                        <ul class="footnotes">
+                          <xsl:apply-templates mode="group" select="$record_text//tei:note[@type='foot']" />
+                        </ul>
+                      </div>
+                    </li>
+                  </xsl:if>
+                  <xsl:if test="$record_text/tei:body/tei:div[@type='translation']">
+                    <li class="accordion-item" data-accordion-item="">
+                      <a href="#" class="accordion-title">Record Translation</a>
+                      <div class="accordion-content" data-tab-content="">
+                        <xsl:apply-templates select="$record_text/tei:body/tei:div[@type='translation']" />
+                      </div>
+                    </li>
+                  </xsl:if>
+                  <xsl:if test="$record_text/tei:body/tei:div[@type='collation_notes']">
+                    <li class="accordion-item" data-accordion-item="">
+                      <a href="#" class="accordion-title">Collation Notes</a>
+                      <div class="accordion-content" data-tab-content="">
+
+                      </div>
+                    </li>
+                  </xsl:if>
+                  <li class="accordion-item" data-accordion-item="">
+                    <a href="#" class="accordion-title">Glossed Terms</a>
+                    <div class="accordion-content" data-tab-content="">
+
+                    </div>
+                  </li>
+                  <xsl:if test="$record_text/tei:ody/tei:div[@type='endnote']">
+                    <li class="accordion-item" data-accordion-item="">
+                      <a href="#" class="accordion-title">Endnote</a>
+                      <div class="accordion-content" data-tab-content="">
+                        <xsl:apply-templates select="$record_text/tei:body/tei:div[@type='endnote']" />
+                      </div>
+                    </li>
+                  </xsl:if>
+                  <li class="accordion-item" data-accordion-item="">
+                    <a href="#" class="accordion-title">Document Description</a>
+                    <div class="accordion-content" data-tab-content="">
+
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="record-title">
-              <h1><xsl:value-of select="$record_title" /></h1>
+            <!-- QAZ: Check what next/prev leads to -->
+            <div class="padding-top-45 small-margin-top-25">
+              <div class="pagination">
+                <a href="" class="button previous grey-bg">Previous</a>
+                <a href="" class="button next grey-bg">Next</a>
+              </div>
             </div>
-            <div class="shelfmark"><!-- QAZ: Add shelfmark --></div>
-            <hr />
-            <div class="record-sidebar hide-for-medium">
-              <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
+            <div class="hide-for-medium">
+              <div class="record-sidebar hide-for-medium" >
+                <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
+                  <div class="filter-head jump-to-filter">TOOLS</div>
+                  <div class="filter-content-wrapper relative">
+                    <div class="filter-content">
+                      <div class="tools">
+                        <div class="tools-heading show-for-medium">TOOLS</div>
+                        <ul class="tools">
+                          <li class="email"><a href="">Email</a></li>
+                          <li class="print"><a href="">Print</a></li>
+                          <li class="pdf"><a href="">PDF</a></li>
+                          <li class="xml"><a href="">XML</a></li>
+                          <li class="bookmark"><a href="">Bookmark</a></li>
+                          <li class="share"><a href="">Share</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
+                  <div class="filter-head jump-to-filter">HELPFUL LINKS</div>
+                  <div class="filter-content-wrapper relative">
+                    <div class="filter-content">
+                      <xsl:copy-of select="$helpful_links" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="back-to-top button transparent hide-for-medium sticky-bottom expanded small-margin-bottom-25 small-margin-top-25">Back To Top</a>
+          </div>
+          <div class="columns medium-2 record-sidebar show-for-medium" data-equalizer-watch="">
+            <div class="show-for-medium">
+              <div class="show-hide">
+                <div class="heading">SHOW OR HIDE</div>
+                <label class="checkbox"><input type="checkbox" name="show-tags" /><span class="checkbox-inner"> </span>Tag</label>
+                <label class="checkbox"><input type="checkbox" name="show-terms" /><span class="checkbox-inner"> </span>Glossed Terms</label>
+              </div>
+
+              <div class="view-tags">
+                <div class="heading">
+                  <span>VIEW TAGS</span>
+                </div>
+                <ul class="tags">
+                  <!-- QAZ: Add tags as before -->
+                </ul>
+              </div>
+              <a href="#" class="back-to-top show-for-medium sticky-bottom button expanded transparent small-margin-top-25 small-margin-bottom-25">Back to top</a>
+            </div>
+
+            <div class="hide-for-medium">
+              <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear left full-width">
                 <div class="filter-head jump-to-filter">SHOW OR HIDE</div>
                 <div class="filter-content-wrapper relative">
                   <div class="filter-content">
@@ -45,168 +189,36 @@
                   </div>
                 </div>
               </div>
-              <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
+              <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear left full-width">
                 <div class="filter-head jump-to-filter">VIEW TAGS</div>
                 <div class="filter-content-wrapper relative">
                   <div class="filter-content">
                     <ul class="tags">
-                      <!-- QAZ: Add tags -->
-                      <li class="tag"></li>
                       <li class="close-tags tag">Close</li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="record-content">
-              <xsl:apply-templates select="$record_text/tei:body/tei:div[@type='transcription']" />
-            </div>
-            <div class="record-accordion">
-              <ul class="accordion" data-accordion="" data-allow-all-closed="true">
-                <li class="accordion-item" data-accordion-item="">
-                  <a href="#" class="accordion-title">Marginalia</a>
-                  <div class="accordion-content" data-tab-content="">
 
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item="">
-                  <a href="#" class="accordion-title">Footnotes</a>
-                  <div class="accordion-content" data-tab-content="">
-
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item="">
-                  <a href="#" class="accordion-title">Record Translation</a>
-                  <div class="accordion-content" data-tab-content="">
-                    <xsl:apply-templates select="$record_text/tei:body/tei:div[@type='translation']" />
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item="">
-                  <a href="#" class="accordion-title">Collation Notes</a>
-                  <div class="accordion-content" data-tab-content="">
-
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item="">
-                  <a href="#" class="accordion-title">Glossed Terms</a>
-                  <div class="accordion-content" data-tab-content="">
-
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item="">
-                  <a href="#" class="accordion-title">Endnote</a>
-                  <div class="accordion-content" data-tab-content="">
-                    <xsl:apply-templates select="$record_text/tei:body/tei:div[@type='end_notes']" />
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item="">
-                  <a href="#" class="accordion-title">Document Description</a>
-                  <div class="accordion-content" data-tab-content="">
-
-                  </div>
-                </li>
+            <div class="tools">
+              <div class="tools-heading show-for-medium">TOOLS</div>
+              <ul class="tools">
+                <li class="email"><a href="">Email</a></li>
+                <li class="print"><a href="">Print</a></li>
+                <li class="pdf"><a href="">PDF</a></li>
+                <li class="xml"><a href="">XML</a></li>
+                <li class="bookmark"><a href="">Bookmark</a></li>
+                <li class="share"><a href="">Share</a></li>
               </ul>
             </div>
-          </div>
-          <!-- QAZ: Check what next/prev leads to -->
-          <div class="padding-top-45 small-margin-top-25">
-            <div class="pagination">
-              <a href="" class="button previous grey-bg">Previous</a>
-              <a href="" class="button next grey-bg">Next</a>
+            <div class="padding-top-45">
+              <xsl:copy-of select="$helpful_links" />
             </div>
-          </div>
-          <div class="hide-for-medium">
-            <div class="record-sidebar hide-for-medium" >
-              <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
-                <div class="filter-head jump-to-filter">TOOLS</div>
-                <div class="filter-content-wrapper relative">
-                  <div class="filter-content">
-                    <div class="tools">
-                      <div class="tools-heading show-for-medium">TOOLS</div>
-                      <ul class="tools">
-                        <li class="email"><a href="">Email</a></li>
-                        <li class="print"><a href="">Print</a></li>
-                        <li class="pdf"><a href="">PDF</a></li>
-                        <li class="xml"><a href="">XML</a></li>
-                        <li class="bookmark"><a href="">Bookmark</a></li>
-                        <li class="share"><a href="">Share</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
-                <div class="filter-head jump-to-filter">HELPFUL LINKS</div>
-                <div class="filter-content-wrapper relative">
-                  <div class="filter-content">
-                    <xsl:copy-of select="$helpful_links" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a href="#" class="back-to-top button transparent hide-for-medium sticky-bottom expanded small-margin-bottom-25 small-margin-top-25">Back To Top</a>
-        </div>
-        <div class="columns medium-2 record-sidebar show-for-medium" data-equalizer-watch="">
-          <div class="show-for-medium">
-            <div class="show-hide">
-              <div class="heading">SHOW OR HIDE</div>
-              <label class="checkbox"><input type="checkbox" name="show-tags" /><span class="checkbox-inner"> </span>Tag</label>
-              <label class="checkbox"><input type="checkbox" name="show-terms" /><span class="checkbox-inner"> </span>Glossed Terms</label>
-            </div>
-
-            <div class="view-tags">
-              <div class="heading">
-                <span>VIEW TAGS</span>
-              </div>
-              <ul class="tags">
-                <!-- QAZ: Add tags as before -->
-              </ul>
-            </div>
-            <a href="#" class="back-to-top show-for-medium sticky-bottom button expanded transparent small-margin-top-25 small-margin-bottom-25">Back to top</a>
-          </div>
-
-          <div class="hide-for-medium">
-            <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear left full-width">
-              <div class="filter-head jump-to-filter">SHOW OR HIDE</div>
-              <div class="filter-content-wrapper relative">
-                <div class="filter-content">
-                  <div class="show-hide">
-                    <label class="checkbox"><input type="checkbox" name="show-tags" /><span class="checkbox-inner"> </span>Tag</label>
-                    <label class="checkbox"><input type="checkbox" name="show-terms" /><span class="checkbox-inner"> </span>Glossed Terms</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear left full-width">
-              <div class="filter-head jump-to-filter">VIEW TAGS</div>
-              <div class="filter-content-wrapper relative">
-                <div class="filter-content">
-                  <ul class="tags">
-                    <li class="close-tags tag">Close</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="tools">
-            <div class="tools-heading show-for-medium">TOOLS</div>
-            <ul class="tools">
-              <li class="email"><a href="">Email</a></li>
-              <li class="print"><a href="">Print</a></li>
-              <li class="pdf"><a href="">PDF</a></li>
-              <li class="xml"><a href="">XML</a></li>
-              <li class="bookmark"><a href="">Bookmark</a></li>
-              <li class="share"><a href="">Share</a></li>
-            </ul>
-          </div>
-          <div class="padding-top-45">
-            <xsl:copy-of select="$helpful_links" />
           </div>
         </div>
       </div>
-    </div>
-  </kiln:block>
+    </kiln:block>
+  </kiln:child>
 
 </kiln:root>
