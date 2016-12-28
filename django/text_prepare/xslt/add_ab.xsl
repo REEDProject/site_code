@@ -36,7 +36,7 @@
   </xsl:template>
 
   <!-- Content divs that do not have a tei:head. -->
-  <xsl:template match="tei:div[@type='end_note'] |
+  <xsl:template match="tei:div[@type='endnote'] |
                        tei:div[@type='collation_note']">
     <xsl:copy>
       <xsl:apply-templates select="@*" />

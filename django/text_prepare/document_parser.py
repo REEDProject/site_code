@@ -278,16 +278,13 @@ def _define_grammar():
     collation_notes = pp.nestedExpr('@cn\\', '@cn/', content=pp.OneOrMore(
         collation_note_wrapper))
     collation_notes.setParseAction(_pa_collation_notes)
-    end_note = pp.nestedExpr('@E\\', '@E/', content=enclosed)
+    end_note = pp.nestedExpr('@EN\\', '@EN/', content=enclosed)
     end_note.setParseAction(_pa_endnote)
     end_note_wrapper = pp.Suppress(pp.ZeroOrMore(white | ignored)) + \
         end_note + pp.Suppress(pp.ZeroOrMore(white | ignored))
-    end_notes = pp.nestedExpr('@EN\\', '@EN/', content=pp.OneOrMore(
-        end_note_wrapper))
-    end_notes.setParseAction(_pa_endnotes)
     record = pp.ZeroOrMore(white | ignored) + record_heading + \
         pp.ZeroOrMore(white) + transcription + \
-        pp.Optional(collation_notes) + pp.Optional(end_notes)
+        pp.Optional(collation_notes) + pp.Optional(end_note_wrapper)
     record.setParseAction(_pa_record)
     return pp.StringStart() + pp.OneOrMore(record) + pp.StringEnd()
 
@@ -443,11 +440,7 @@ def _pa_en_dash(s, loc, toks):
 
 
 def _pa_endnote(s, loc, toks):
-    return ['<div type="end_note">\n', ''.join(toks[0]), '\n</div>\n']
-
-
-def _pa_endnotes(s, loc, toks):
-    return ['<div type="end_notes">\n', ''.join(toks[0]), '</div>\n']
+    return ['<div type="endnote">\n', ''.join(toks[0]), '\n</div>\n']
 
 
 def _pa_eng(s, loc, toks):

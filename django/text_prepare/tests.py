@@ -179,10 +179,8 @@ Test.
         text = '''@h\\BPA!1532!DOU2!eng\\!
 @w\\f 124 {(19 November)}\\!
 Test.
-@EN\\
-@E\\A note.@E/
-@E\\Another note.@E/
-@EN/'''
+@EN\\A note.@EN/
+'''
         expected = '''<text type="record">
 <body xml:lang="eng">
 <head><rs ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
@@ -194,13 +192,8 @@ Test.
 
 </div>
 </div>
-<div type="end_notes">
-<div type="end_note">
+<div type="endnote">
 A note.
-</div>
-<div type="end_note">
-Another note.
-</div>
 </div>
 </body>
 </text>'''
@@ -577,10 +570,8 @@ class TestXSLT (TestCase):
 <closer>Bye</closer><lb/>
 </div>
 </div>
-<div type="end_notes">
-<div type="end_note">
+<div type="endnote">
 End note text.<lb/>
-</div>
 </div>
 </body>
 </text>
@@ -623,11 +614,9 @@ After table text.
 <closer>Bye</closer>
 </div>
 </div>
-<div type="end_notes">
-<div type="end_note">
+<div type="endnote">
 <ab>
 End note text.</ab>
-</div>
 </div>
 </body>
 </text>
@@ -731,13 +720,8 @@ After table text.
 <ab>Nothing here but a <note type="marginal" place="margin_left">marginal note</note> and a <note type="foot">footnote</note>.</ab>
 </div>
 </div>
-<div type="end_notes">
-<div type="end_note">
+<div type="endnote">
 <ab>An end note.</ab>
-</div>
-<div type="end_note">
-<ab>Another end note.</ab>
-</div>
 </div>
 </body>
 </text>
@@ -776,13 +760,8 @@ After table text.
 <ab>Nothing here but a <note type="marginal" place="margin_left">marginal note</note> and a <note type="foot">footnote</note>.</ab>
 </div>
 </div>
-<div type="end_notes" xml:id="staff-ridm21-end-notes">
-<div type="end_note">
+<div type="endnote" xml:id="staff-ridm21-end-notes">
 <ab>An end note.</ab>
-</div>
-<div type="end_note">
-<ab>Another end note.</ab>
-</div>
 </div>
 </body>
 </text>
