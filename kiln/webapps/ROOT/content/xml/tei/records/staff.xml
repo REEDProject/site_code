@@ -814,7 +814,7 @@
     <group>
       <text ana="ereed:church" type="record" xml:id="staff-ridm51130848">
         <body xml:lang="eng">
-          <head><name ana="ereed:DOL" type="place_region">DOL</name>
+          <head><rs>Diocese of Lichfield</rs>
             <date when-iso="1635">1635</date>
             <seg ana="ereed:AWAS">AWAS</seg></head>
           <div type="transcription" xml:id="staff-ridm51130848-transcription">
@@ -842,7 +842,7 @@
       </text>
       <text ana="ereed:manor" type="record" xml:id="staff-ridm50946192">
         <body xml:lang="lat">
-          <head><name ana="ereed:BPA" type="place_region">BPA</name>
+          <head><rs>Abbots Bromley</rs>
             <date when-iso="1532">1532</date>
             <seg ana="ereed:DOU2">DOU2</seg></head>
           <div type="transcription" xml:id="staff-ridm50946192-transcription">
@@ -891,7 +891,7 @@
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm60157968">
         <body xml:lang="eng">
-          <head><name ana="ereed:BPA" type="place_region">BPA</name>
+          <head><rs>Abbots Bromley</rs>
             <date when-iso="1584">1584</date>
             <seg ana="ereed:V117">V117</seg></head>
           <div type="transcription" xml:id="staff-ridm60157968-transcription">
@@ -921,7 +921,7 @@
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm60134368">
         <body xml:lang="eng">
-          <head><name ana="ereed:BET" type="place_region">BET</name>
+          <head><rs>Betley</rs>
             <date when-iso="1635">1635</date>
             <seg ana="ereed:CCCR">CCCR</seg></head>
           <div type="transcription" xml:id="staff-ridm60134368-transcription">
@@ -1035,7 +1035,7 @@
       </text>
       <text ana="ereed:rel_community" type="record" xml:id="staff-ridm60127840">
         <body xml:lang="lat">
-          <head><name ana="ereed:BTN" type="place_region">BTN</name>
+          <head><rs>Burton upon Trent</rs>
             <date when-iso="1259">1259</date>
             <seg ana="ereed:ABTA">ABTA</seg></head>
           <div type="transcription" xml:id="staff-ridm60127840-transcription">
@@ -1079,7 +1079,7 @@
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm60068656">
         <body xml:lang="eng">
-          <head><name ana="ereed:BTN" type="place_region">BTN</name>
+          <head><rs>Burton upon Trent</rs>
             <date when-iso="1616">1616</date>
             <seg ana="ereed:V131">V131</seg></head>
           <div type="transcription" xml:id="staff-ridm60068656-transcription">
@@ -1151,7 +1151,7 @@
       </text>
       <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm60050432">
         <body xml:lang="eng">
-          <head><name ana="ereed:BTN" type="place_region">BTN</name>
+          <head><rs>Burton upon Trent</rs>
             <date when-iso="1619">1619</date>
             <seg ana="ereed:BUR1">BUR1</seg></head>
           <div type="transcription" xml:id="staff-ridm60050432-transcription">
@@ -1469,7 +1469,7 @@
       </text>
       <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm60024384">
         <body xml:lang="eng">
-          <head><name ana="ereed:BTN" type="place_region">BTN</name>
+          <head><rs>Burton upon Trent</rs>
             <date when-iso="1619">1619</date>
             <seg ana="ereed:BUR2">BUR2</seg></head>
           <div type="transcription" xml:id="staff-ridm60024384-transcription">
@@ -1611,7 +1611,7 @@
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm59898448">
         <body xml:lang="lat">
-          <head><name ana="ereed:CHC" type="place_region">CHC</name>
+          <head><rs>Checkley</rs>
             <date when-iso="1631">1631</date>
             <seg ana="ereed:V151">V151</seg></head>
           <div type="transcription" xml:id="staff-ridm59898448-transcription">
@@ -1679,7 +1679,7 @@
       </text>
       <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm59879280">
         <body xml:lang="eng">
-          <head><name ana="ereed:DRH" type="place_region">DRH</name>
+          <head><rs>Drayton in Hales</rs>
             <date when-iso="1616">1616</date>
             <seg ana="ereed:DRA1">DRA1</seg></head>
           <div type="transcription" xml:id="staff-ridm59879280-transcription">
@@ -1898,7 +1898,7 @@
       </text>
       <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm59720528">
         <body xml:lang="eng">
-          <head><name ana="ereed:ECC" type="place_region">ECC</name>
+          <head><rs>Eccleshall</rs>
             <date when-iso="1537">1537</date>
             <seg ana="ereed:ECC1">ECC1</seg></head>
           <div type="transcription" xml:id="staff-ridm59720528-transcription">
@@ -1962,7 +1962,7 @@
       </text>
       <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm55415040">
         <body xml:lang="eng">
-          <head><name ana="ereed:ECC" type="place_region">ECC</name>
+          <head><rs>Eccleshall</rs>
             <date when-iso="1537">1537</date>
             <seg ana="ereed:ECC2">ECC2</seg></head>
           <div type="transcription" xml:id="staff-ridm55415040-transcription">
@@ -2068,7 +2068,7 @@
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55378016">
         <body xml:lang="eng">
-          <head><name ana="ereed:ECC" type="place_region">ECC</name>
+          <head><rs>Eccleshall</rs>
             <date when-iso="1599">1599</date>
             <seg ana="ereed:EQSA">EQSA</seg></head>
           <div type="transcription" xml:id="staff-ridm55378016-transcription">
@@ -2324,7 +2324,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55342000">
         <body xml:lang="eng">
-          <head><name ana="ereed:ECC" type="place_region">ECC</name>
+          <head><rs>Eccleshall</rs>
             <date when-iso="1604">1604</date>
             <seg ana="ereed:EQS1">EQS1</seg></head>
           <div type="transcription" xml:id="staff-ridm55342000-transcription">
@@ -2381,7 +2381,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55212720">
         <body xml:lang="eng">
-          <head><name ana="ereed:ECC" type="place_region">ECC</name>
+          <head><rs>Eccleshall</rs>
             <date when-iso="1604">1604</date>
             <seg ana="ereed:EQS2">EQS2</seg></head>
           <div type="transcription" xml:id="staff-ridm55212720-transcription">
@@ -2445,7 +2445,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55207360">
         <body xml:lang="eng">
-          <head><name ana="ereed:ECC" type="place_region">ECC</name>
+          <head><rs>Eccleshall</rs>
             <date when-iso="1604">1604</date>
             <seg ana="ereed:EQS3">EQS3</seg></head>
           <div type="transcription" xml:id="staff-ridm55207360-transcription">
@@ -2493,7 +2493,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm55187152">
         <body xml:lang="eng">
-          <head><name ana="ereed:ELH" type="place_region">ELH</name>
+          <head><rs>Ellenhall</rs>
             <date when-iso="1619">1619</date>
             <seg ana="ereed:V131">V131</seg></head>
           <div type="transcription" xml:id="staff-ridm55187152-transcription">
@@ -2548,7 +2548,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55177728">
         <body xml:lang="eng">
-          <head><name ana="ereed:GFE" type="place_region">GFE</name>
+          <head><rs>Great Fenton</rs>
             <date when-iso="1605">1605</date>
             <seg ana="ereed:GRF1">GRF1</seg></head>
           <div type="transcription" xml:id="staff-ridm55177728-transcription">
@@ -2617,7 +2617,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm55154624">
         <body xml:lang="lat">
-          <head><name ana="ereed:HAN" type="place_region">HAN</name>
+          <head><rs>Handsworth</rs>
             <date when-iso="1619">1619</date>
             <seg ana="ereed:V131">V131</seg></head>
           <div type="transcription" xml:id="staff-ridm55154624-transcription">
@@ -2804,7 +2804,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm55090384">
         <body xml:lang="eng">
-          <head><name ana="ereed:KNV" type="place_region">KNV</name>
+          <head><rs>Kinver</rs>
             <date when-iso="1620">1620</date>
             <seg ana="ereed:V138">V138</seg></head>
           <div type="transcription" xml:id="staff-ridm55090384-transcription">
@@ -2841,7 +2841,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm55069408">
         <body xml:lang="lat">
-          <head><name ana="ereed:LEE" type="place_region">LEE</name>
+          <head><rs>Leek</rs>
             <date when-iso="1631">1630/1</date>
             <seg ana="ereed:V151">V151</seg></head>
           <div type="transcription" xml:id="staff-ridm55069408-transcription">
@@ -2911,7 +2911,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm55095472">
         <body xml:lang="lat">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date from-iso="1188" to-iso="1198">1188–98</date>
             <seg ana="ereed:LBNS">LBNS</seg></head>
           <div type="transcription" xml:id="staff-ridm55095472-transcription">
@@ -2979,7 +2979,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm55010640">
         <body xml:lang="lat">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date when-iso="1306">1306</date>
             <seg ana="ereed:LCHB">LCHB</seg></head>
           <div type="transcription" xml:id="staff-ridm55010640-transcription">
@@ -3013,7 +3013,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm55009232">
         <body xml:lang="lat">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date when-iso="1342">1342</date>
             <seg ana="ereed:LDI1">LDI1</seg></head>
           <div type="transcription" xml:id="staff-ridm55009232-transcription">
@@ -3047,7 +3047,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:manor" type="record" xml:id="staff-ridm54994976">
         <body xml:lang="lat">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date from-iso="1420" to-iso="1421">1420–1</date>
             <seg ana="ereed:LCHX">LCHX</seg></head>
           <div type="transcription" xml:id="staff-ridm54994976-transcription">
@@ -3091,7 +3091,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:manor" type="record" xml:id="staff-ridm58425136">
         <body xml:lang="lat">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date from-iso="1457" to-iso="1458">1457–8</date>
             <seg ana="ereed:LCHA">LCHA</seg></head>
           <div type="transcription" xml:id="staff-ridm58425136-transcription">
@@ -3142,7 +3142,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm58407920">
         <body xml:lang="lat">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date when-iso="1522">1522</date>
             <seg ana="ereed:LDCA">LDCA</seg></head>
           <div type="transcription" xml:id="staff-ridm58407920-transcription">
@@ -3253,7 +3253,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:guild_craft" type="record" xml:id="staff-ridm55223456">
         <body xml:lang="eng">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date from-iso="1562" to-iso="1563">1562–3</date>
             <seg ana="ereed:CORV">CORV</seg></head>
           <div type="transcription" xml:id="staff-ridm55223456-transcription">
@@ -3341,7 +3341,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:guild_craft" type="record" xml:id="staff-ridm55243472">
         <body xml:lang="eng">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date from-iso="1563" to-iso="1564">1563–4</date>
             <seg ana="ereed:CORV">CORV</seg></head>
           <div type="transcription" xml:id="staff-ridm55243472-transcription">
@@ -3419,7 +3419,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:guild_craft" type="record" xml:id="staff-ridm58296192">
         <body xml:lang="eng">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date from-iso="1564" to-iso="1565">1564–5</date>
             <seg ana="ereed:CORV">CORV</seg></head>
           <div type="transcription" xml:id="staff-ridm58296192-transcription">
@@ -3547,7 +3547,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:guild_craft" type="record" xml:id="staff-ridm58243184">
         <body xml:lang="eng">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date from-iso="1570" to-iso="1571">1570–1</date>
             <seg ana="ereed:CORV">CORV</seg></head>
           <div type="transcription" xml:id="staff-ridm58243184-transcription">
@@ -3606,7 +3606,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:guild_craft" type="record" xml:id="staff-ridm58216064">
         <body xml:lang="eng">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date from-iso="1574" to-iso="1575">1574–5</date>
             <seg ana="ereed:CORV">CORV</seg></head>
           <div type="transcription" xml:id="staff-ridm58216064-transcription">
@@ -3685,7 +3685,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:chron_hist" type="record" xml:id="staff-ridm58197920">
         <body xml:lang="eng">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date from-iso="1575" to-iso="1576">1575–6</date>
             <seg ana="ereed:NICH">NICH</seg></head>
           <div type="transcription" xml:id="staff-ridm58197920-transcription">
@@ -3983,7 +3983,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:guild_craft" type="record" xml:id="staff-ridm58166816">
         <body xml:lang="eng">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date from-iso="1577" to-iso="1578">1577–8</date>
             <seg ana="ereed:CORV">CORV</seg></head>
           <div type="transcription" xml:id="staff-ridm58166816-transcription">
@@ -4061,7 +4061,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:guild_craft" type="record" xml:id="staff-ridm58056704">
         <body xml:lang="eng">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date from-iso="1598" to-iso="1599">1598–9</date>
             <seg ana="ereed:CORV">CORV</seg></head>
           <div type="transcription" xml:id="staff-ridm58056704-transcription">
@@ -4102,7 +4102,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm58042800">
         <body xml:lang="eng">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date when-iso="1618">1618</date>
             <seg ana="ereed:JSIN">JSIN</seg></head>
           <div type="transcription" xml:id="staff-ridm58042800-transcription">
@@ -4126,7 +4126,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:chron_hist" type="record" xml:id="staff-ridm58033712">
         <body xml:lang="eng">
-          <head><name ana="ereed:LCH" type="place_region">LCH</name>
+          <head><rs>Lichfield</rs>
             <date when-iso="1634">1634</date>
             <seg ana="ereed:LSRV">LSRV</seg></head>
           <div type="transcription" xml:id="staff-ridm58033712-transcription">
@@ -4160,7 +4160,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm58022720">
         <body xml:lang="eng">
-          <head><name ana="ereed:MAD" type="place_region">MAD</name>
+          <head><rs>Madeley</rs>
             <date when-iso="1631">1631</date>
             <seg ana="ereed:V151">V151</seg></head>
           <div type="transcription" xml:id="staff-ridm58022720-transcription">
@@ -4192,7 +4192,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm58011344">
         <body xml:lang="eng">
-          <head><name ana="ereed:MUC" type="place_region">MUC</name>
+          <head><rs>Mucklestone</rs>
             <date when-iso="1629">1629</date>
             <seg ana="ereed:V152">V152</seg></head>
           <div type="transcription" xml:id="staff-ridm58011344-transcription">
@@ -4221,7 +4221,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm57996544">
         <body xml:lang="fra">
-          <head><name ana="ereed:NUL" type="place_region">NUL</name>
+          <head><rs>Newcastle under Lyme</rs>
             <date when-iso="1372">1372</date>
             <seg ana="ereed:GRB1">GRB1</seg></head>
           <div type="transcription" xml:id="staff-ridm57996544-transcription">
@@ -4290,7 +4290,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm57978960">
         <body xml:lang="eng">
-          <head><name ana="ereed:NUL" type="place_region">NUL</name>
+          <head><rs>Newcastle under Lyme</rs>
             <date when-iso="1610">1610</date>
             <seg ana="ereed:NASM">NASM</seg></head>
           <div type="transcription" xml:id="staff-ridm57978960-transcription">
@@ -4337,7 +4337,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm57964496">
         <body xml:lang="eng">
-          <head><name ana="ereed:NUL" type="place_region">NUL</name>
+          <head><rs>Newcastle under Lyme</rs>
             <date when-iso="1635">1635</date>
             <seg ana="ereed:NASM">NASM</seg></head>
           <div type="transcription" xml:id="staff-ridm57964496-transcription">
@@ -4400,7 +4400,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm57943536">
         <body xml:lang="eng">
-          <head><name ana="ereed:NOR" type="place_region">NOR</name>
+          <head><rs>Norton Canes</rs>
             <date when-iso="1591">1591</date>
             <seg ana="ereed:NQS1">NQS1</seg></head>
           <div type="transcription" xml:id="staff-ridm57943536-transcription">
@@ -4524,7 +4524,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm55947584">
         <body xml:lang="lat">
-          <head><name ana="ereed:ROW" type="place_region">ROW</name>
+          <head><rs>Rowley Regis</rs>
             <date when-iso="1616">1616</date>
             <seg ana="ereed:RVAB">RVAB</seg></head>
           <div type="transcription" xml:id="staff-ridm55947584-transcription">
@@ -4575,7 +4575,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm55907584">
         <body xml:lang="lat">
-          <head><name ana="ereed:RUS" type="place_region">RUS</name>
+          <head><rs>Rushton</rs>
             <date when-iso="1631">1631</date>
             <seg ana="ereed:V151">V151</seg></head>
           <div type="transcription" xml:id="staff-ridm55907584-transcription">
@@ -4639,7 +4639,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm55885872">
         <body xml:lang="eng">
-          <head><name ana="ereed:SHL" type="place_region">SHL</name>
+          <head><rs>Shareshill</rs>
             <date when-iso="1616">1616</date>
             <seg ana="ereed:SHA1">SHA1</seg></head>
           <div type="transcription" xml:id="staff-ridm55885872-transcription">
@@ -4844,7 +4844,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55882688">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1528" to-iso="1529">1528–9</date>
             <seg ana="ereed:SSU2">SSU2</seg></head>
           <div type="transcription" xml:id="staff-ridm55882688-transcription">
@@ -4929,7 +4929,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55746336">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1528" to-iso="1529">1528–9</date>
             <seg ana="ereed:SSUM">SSUM</seg></head>
           <div type="transcription" xml:id="staff-ridm55746336-transcription">
@@ -5101,7 +5101,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55682720">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1574" to-iso="1575">1574–5</date>
             <seg ana="ereed:SSUM">SSUM</seg></head>
           <div type="transcription" xml:id="staff-ridm55682720-transcription">
@@ -5184,7 +5184,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55720944">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date when-iso="1575">1575</date>
             <seg ana="ereed:SMER">SMER</seg></head>
           <div type="transcription" xml:id="staff-ridm55720944-transcription">
@@ -5217,7 +5217,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55632400">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1609" to-iso="1610">1609–10</date>
             <seg ana="ereed:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm55632400-transcription">
@@ -5309,7 +5309,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55599360">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1610" to-iso="1611">1610–11</date>
             <seg ana="ereed:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm55599360-transcription">
@@ -5408,7 +5408,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm55580000">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1610" to-iso="1611">1610–11</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm55580000-transcription">
@@ -5476,7 +5476,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55547440">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1611" to-iso="1612">1611–12</date>
             <seg ana="ereed:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm55547440-transcription">
@@ -5587,7 +5587,7 @@ encompassing the names -->
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm55526752">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1611" to-iso="1612">1611–12</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm55526752-transcription">
@@ -5782,7 +5782,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm59337824">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1612" to-iso="1613">1612–13</date>
             <seg ana="ereed:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm59337824-transcription">
@@ -5845,7 +5845,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm59317200">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1612" to-iso="1613">1612–13</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm59317200-transcription">
@@ -5878,7 +5878,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm59305408">
         <body xml:lang="lat">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date when-iso="1614">1614</date>
             <seg ana="ereed:MCBR">MCBR</seg></head>
           <div type="transcription" xml:id="staff-ridm59305408-transcription">
@@ -5950,7 +5950,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm59296240">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1614" to-iso="1615">1614–15</date>
             <seg ana="ereed:WORS">WORS</seg></head>
           <div type="transcription" xml:id="staff-ridm59296240-transcription">
@@ -6000,7 +6000,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm59270720">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1615" to-iso="1616">1615–16</date>
             <seg ana="ereed:WORS">WORS</seg></head>
           <div type="transcription" xml:id="staff-ridm59270720-transcription">
@@ -6057,7 +6057,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm59257952">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1616" to-iso="1617">1616–17</date>
             <seg ana="ereed:WORS">WORS</seg></head>
           <div type="transcription" xml:id="staff-ridm59257952-transcription">
@@ -6779,7 +6779,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm58923280">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1618" to-iso="1619">1618–19</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm58923280-transcription">
@@ -6846,7 +6846,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm58880672">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1618" to-iso="1619">1618–19</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm58880672-transcription">
@@ -6894,7 +6894,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm58862432">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1619" to-iso="1620">1619–20</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm58862432-transcription">
@@ -6961,7 +6961,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm58836288">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1619" to-iso="1620">1619–20</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm58836288-transcription">
@@ -7011,7 +7011,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53673392">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1620" to-iso="1621">1620–1</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53673392-transcription">
@@ -7101,7 +7101,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53641456">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1621" to-iso="1622">1621–2</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53641456-transcription">
@@ -7192,7 +7192,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm53607136">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1621" to-iso="1622">1621–2</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm53607136-transcription">
@@ -7232,7 +7232,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53596544">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1622" to-iso="1623">1622–3</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53596544-transcription">
@@ -7363,7 +7363,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm53574208">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1622" to-iso="1623">1622–3</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm53574208-transcription">
@@ -7440,7 +7440,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53548784">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1623" to-iso="1625">1623–5</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53548784-transcription">
@@ -7487,7 +7487,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53531024">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1626" to-iso="1627">1626–7</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53531024-transcription">
@@ -7604,7 +7604,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm53488656">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1626" to-iso="1627">1626–7</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm53488656-transcription">
@@ -7648,7 +7648,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53470112">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1627" to-iso="1628">1627–8</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53470112-transcription">
@@ -7727,7 +7727,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53436976">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1628" to-iso="1629">1628–9</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53436976-transcription">
@@ -7757,7 +7757,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm53425888">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1628" to-iso="1629">1628–9</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm53425888-transcription">
@@ -7783,7 +7783,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53415712">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1629" to-iso="1630">1629–30</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53415712-transcription">
@@ -7905,7 +7905,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm53369488">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1629" to-iso="1630">1629–30</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm53369488-transcription">
@@ -7947,7 +7947,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53354256">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1630" to-iso="1631">1630–1</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53354256-transcription">
@@ -8017,7 +8017,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm53333072">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1630" to-iso="1631">1630–1</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm53333072-transcription">
@@ -8044,7 +8044,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53318592">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1631" to-iso="1632">1631–2</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53318592-transcription">
@@ -8113,7 +8113,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm53294400">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1631" to-iso="1632">1631–2</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm53294400-transcription">
@@ -8156,7 +8156,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53280384">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1632" to-iso="1633">1632–3</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53280384-transcription">
@@ -8210,7 +8210,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm53264208">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1632" to-iso="1633">1632–3</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm53264208-transcription">
@@ -8241,7 +8241,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53249520">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1633" to-iso="1634">1633–4</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53249520-transcription">
@@ -8339,7 +8339,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm53221328">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1633" to-iso="1634">1633–4</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm53221328-transcription">
@@ -8377,7 +8377,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm53208768">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1634" to-iso="1635">1634–5</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53208768-transcription">
@@ -8463,7 +8463,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm53179872">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1634" to-iso="1635">1634–5</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm53179872-transcription">
@@ -8509,7 +8509,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53166880">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1635" to-iso="1636">1635–6</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53166880-transcription">
@@ -8565,7 +8565,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm53133968">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1635" to-iso="1636">1635–6</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm53133968-transcription">
@@ -8599,7 +8599,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53125424">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1636" to-iso="1637">1636–7</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53125424-transcription">
@@ -8650,7 +8650,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm53113360">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1636" to-iso="1637">1636–7</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm53113360-transcription">
@@ -8679,7 +8679,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53095088">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1637" to-iso="1638">1637–8</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53095088-transcription">
@@ -8718,7 +8718,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm53081456">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1638" to-iso="1639">1638–9</date>
             <seg ana="ereed:SMAR">SMAR</seg></head>
           <div type="transcription" xml:id="staff-ridm53081456-transcription">
@@ -8750,7 +8750,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53071232">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1639" to-iso="1640">1639–40</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53071232-transcription">
@@ -8784,7 +8784,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53059120">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1640" to-iso="1641">1640–1</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53059120-transcription">
@@ -8845,7 +8845,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53042768">
         <body xml:lang="eng">
-          <head><name ana="ereed:STF" type="place_region">STF</name>
+          <head><rs>Stafford</rs>
             <date from-iso="1641" to-iso="1642">1641–2</date>
             <seg ana="ereed:SMAY">SMAY</seg></head>
           <div type="transcription" xml:id="staff-ridm53042768-transcription">
@@ -9039,7 +9039,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm53021760">
         <body xml:lang="eng">
-          <head><name ana="ereed:SLD" type="place_region">SLD</name>
+          <head><rs>Statfold</rs>
             <date when-iso="1539">1538/9</date>
             <seg ana="ereed:TWYS">TWYS</seg></head>
           <div type="transcription" xml:id="staff-ridm53021760-transcription">
@@ -9084,7 +9084,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm52961792">
         <body xml:lang="eng">
-          <head><name ana="ereed:STN" type="place_region">STN</name>
+          <head><rs>Stone</rs>
             <date when-iso="1614">1614</date>
             <seg ana="ereed:V130">V130</seg></head>
           <div type="transcription" xml:id="staff-ridm52961792-transcription">
@@ -9116,7 +9116,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm52949040">
         <body xml:lang="eng">
-          <head><name ana="ereed:TAM" type="place_region">TAM</name>
+          <head><rs>Tamworth</rs>
             <date when-iso="1537">1536/7</date>
             <seg ana="ereed:TAM1">TAM1</seg></head>
           <div type="transcription" xml:id="staff-ridm52949040-transcription">
@@ -9174,7 +9174,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm58896080">
         <body xml:lang="eng">
-          <head><name ana="ereed:TAM" type="place_region">TAM</name>
+          <head><rs>Tamworth</rs>
             <date when-iso="1537">1536/7</date>
             <seg ana="ereed:TAM2">TAM2</seg></head>
           <div type="transcription" xml:id="staff-ridm58896080-transcription">
@@ -9263,7 +9263,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm52887952">
         <body xml:lang="eng">
-          <head><name ana="ereed:TAM" type="place_region">TAM</name>
+          <head><rs>Tamworth</rs>
             <date when-iso="1537">1536/7</date>
             <seg ana="ereed:TAM3">TAM3</seg></head>
           <div type="transcription" xml:id="staff-ridm52887952-transcription">
@@ -9311,7 +9311,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm52869792">
         <body xml:lang="lat">
-          <head><name ana="ereed:TUT" type="place_region">TUT</name>
+          <head><rs>Tutbury</rs>
             <date from-iso="1314" to-iso="1315">1314–15</date>
             <seg ana="ereed:TPS1">TPS1</seg></head>
           <div type="transcription" xml:id="staff-ridm52869792-transcription">
@@ -9346,7 +9346,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm52854080">
         <body xml:lang="fra">
-          <head><name ana="ereed:TUT" type="place_region">TUT</name>
+          <head><rs>Tutbury</rs>
             <date when-iso="1380">1380</date>
             <seg ana="ereed:GRB2">GRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm52854080-transcription">
@@ -9422,7 +9422,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm52835712">
         <body xml:lang="lat">
-          <head><name ana="ereed:TUT" type="place_region">TUT</name>
+          <head><rs>Tutbury</rs>
             <date when-iso="1382">1382</date>
             <seg ana="ereed:TSC1">TSC1</seg></head>
           <div type="transcription" xml:id="staff-ridm52835712-transcription">
@@ -9474,7 +9474,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm52791120">
         <body xml:lang="lat">
-          <head><name ana="ereed:TUT" type="place_region">TUT</name>
+          <head><rs>Tutbury</rs>
             <date from-iso="1558" to-iso="1559">1558–9</date>
             <seg ana="ereed:TPS2">TPS2</seg></head>
           <div type="transcription" xml:id="staff-ridm52791120-transcription">
@@ -9533,7 +9533,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm52771328">
         <body xml:lang="eng">
-          <head><name ana="ereed:TUT" type="place_region">TUT</name>
+          <head><rs>Tutbury</rs>
             <date from-iso="1617" to-iso="1630">1617–30</date>
             <seg ana="ereed:TUT2">TUT2</seg></head>
           <div type="transcription" xml:id="staff-ridm52771328-transcription">
@@ -9802,7 +9802,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm52758688">
         <body xml:lang="eng">
-          <head><name ana="ereed:TUT" type="place_region">TUT</name>
+          <head><rs>Tutbury</rs>
             <date when-iso="1618">1618</date>
             <seg ana="ereed:TMC1">TMC1</seg></head>
           <div type="transcription" xml:id="staff-ridm52758688-transcription">
@@ -10016,7 +10016,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm52564592">
         <body xml:lang="eng">
-          <head><name ana="ereed:TUT" type="place_region">TUT</name>
+          <head><rs>Tutbury</rs>
             <date when-iso="1629">1629</date>
             <seg ana="ereed:TMC2">TMC2</seg></head>
           <div type="transcription" xml:id="staff-ridm52564592-transcription">
@@ -10270,7 +10270,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm52471456">
         <body xml:lang="eng">
-          <head><name ana="ereed:TUT" type="place_region">TUT</name>
+          <head><rs>Tutbury</rs>
             <date when-iso="1631">1631</date>
             <seg ana="ereed:TLE2">TLE2</seg></head>
           <div type="transcription" xml:id="staff-ridm52471456-transcription">
@@ -10311,7 +10311,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm52179392">
         <body xml:lang="lat">
-          <head><name ana="ereed:TUT" type="place_region">TUT</name>
+          <head><rs>Tutbury</rs>
             <date when-iso="1631">1631</date>
             <seg ana="ereed:TPAT">TPAT</seg></head>
           <div type="transcription" xml:id="staff-ridm52179392-transcription">
@@ -10369,7 +10369,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm52159888">
         <body xml:lang="eng">
-          <head><name ana="ereed:TUT" type="place_region">TUT</name>
+          <head><rs>Tutbury</rs>
             <date when-iso="1637">1637</date>
             <seg ana="ereed:TPPC">TPPC</seg></head>
           <div type="transcription" xml:id="staff-ridm52159888-transcription">
@@ -10429,7 +10429,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm52120192">
         <body xml:lang="eng">
-          <head><name ana="ereed:UTT" type="place_region">UTT</name>
+          <head><rs>Uttoxeter</rs>
             <date when-iso="1616">1616</date>
             <seg ana="ereed:UTT1">UTT1</seg></head>
           <div type="transcription" xml:id="staff-ridm52120192-transcription">
@@ -10688,7 +10688,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm52100656">
         <body xml:lang="eng">
-          <head><name ana="ereed:UTT" type="place_region">UTT</name>
+          <head><rs>Uttoxeter</rs>
             <date when-iso="1616">1616</date>
             <seg ana="ereed:UTT2">UTT2</seg></head>
           <div type="transcription" xml:id="staff-ridm52100656-transcription">
@@ -10748,7 +10748,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:manor" type="record" xml:id="staff-ridm52048128">
         <body xml:lang="lat">
-          <head><name ana="ereed:WLL" type="place_region">WLL</name>
+          <head><rs>Wall</rs>
             <date from-iso="1448" to-iso="1449">1448–9</date>
             <seg ana="ereed:WALB">WALB</seg></head>
           <div type="transcription" xml:id="staff-ridm52048128-transcription">
@@ -12018,7 +12018,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm51358336">
         <body xml:lang="eng">
-          <head><name ana="ereed:WED" type="place_region">WED</name>
+          <head><rs>Wednesbury</rs>
             <date when-iso="1623">1623</date>
             <seg ana="ereed:V145">V145</seg></head>
           <div type="transcription" xml:id="staff-ridm51358336-transcription">
@@ -12047,7 +12047,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm51350672">
         <body xml:lang="lat">
-          <head><name ana="ereed:WED" type="place_region">WED</name>
+          <head><rs>Wednesbury</rs>
             <date when-iso="1635">1635</date>
             <seg ana="ereed:V155">V155</seg></head>
           <div type="transcription" xml:id="staff-ridm51350672-transcription">
@@ -12103,7 +12103,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51335072">
         <body xml:lang="eng">
-          <head><name ana="ereed:WBR" type="place_region">WBR</name>
+          <head><rs>West Bromwich</rs>
             <date when-iso="1611">1611</date>
             <seg ana="ereed:QSRS">QSRS</seg></head>
           <div type="transcription" xml:id="staff-ridm51335072-transcription">
@@ -12148,7 +12148,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm51315136">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1521" to-iso="1522">1521–2</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51315136-transcription">
@@ -12173,7 +12173,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm51292912">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1522" to-iso="1523">1522–3</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51292912-transcription">
@@ -12198,7 +12198,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm51281216">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1523" to-iso="1524">1523–4</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51281216-transcription">
@@ -12223,7 +12223,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm51270816">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1526" to-iso="1527">1526–7</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51270816-transcription">
@@ -12254,7 +12254,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm51260832">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1527" to-iso="1528">1527–8</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51260832-transcription">
@@ -12283,7 +12283,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm51250176">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1528" to-iso="1529">1528–9</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51250176-transcription">
@@ -12314,7 +12314,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm51237536">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1529" to-iso="1530">1529–30</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51237536-transcription">
@@ -12391,7 +12391,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm47175008">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1532" to-iso="1533">1532-3</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47175008-transcription">
@@ -12437,7 +12437,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm47160752">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1533" to-iso="1534">1533–4</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47160752-transcription">
@@ -12467,7 +12467,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm47150832">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1534" to-iso="1535">1534–5</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47150832-transcription">
@@ -12492,7 +12492,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm47141456">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1536" to-iso="1537">1536–7</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47141456-transcription">
@@ -12517,7 +12517,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm47131296">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1537" to-iso="1538">1537–8</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47131296-transcription">
@@ -12542,7 +12542,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm47121200">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1539" to-iso="1540">1539–40</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47121200-transcription">
@@ -12567,7 +12567,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm47111040">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1540" to-iso="1541">1540–1</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47111040-transcription">
@@ -12600,7 +12600,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm47100896">
         <body xml:lang="eng">
-          <head><name ana="ereed:WOL" type="place_region">WOL</name>
+          <head><rs>Wolverhampton</rs>
             <date from-iso="1546" to-iso="1547">1546–7</date>
             <seg ana="ereed:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47100896-transcription">
@@ -12634,7 +12634,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:manor" type="record" xml:id="staff-ridm47090880">
         <body xml:lang="lat">
-          <head><name ana="ereed:YOX" type="place_region">YOX</name>
+          <head><rs>Yoxall</rs>
             <date when-iso="1500">1500</date>
             <seg ana="ereed:YX01">YX01</seg></head>
           <div type="transcription" xml:id="staff-ridm47090880-transcription">
@@ -12667,7 +12667,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm51592784">
         <body xml:lang="eng">
-          <head><name ana="ereed:YOX" type="place_region">YOX</name>
+          <head><rs>Yoxall</rs>
             <date from-iso="1542" to-iso="1543">1542–3</date>
             <seg ana="ereed:YOCW">YOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51592784-transcription">
@@ -12720,7 +12720,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm47056032">
         <body xml:lang="eng">
-          <head><name ana="ereed:YOX" type="place_region">YOX</name>
+          <head><rs>Yoxall</rs>
             <date from-iso="1543" to-iso="1544">1543–4</date>
             <seg ana="ereed:YOCW">YOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47056032-transcription">
@@ -12745,7 +12745,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm47034864">
         <body xml:lang="eng">
-          <head><name ana="ereed:YOX" type="place_region">YOX</name>
+          <head><rs>Yoxall</rs>
             <date from-iso="1544" to-iso="1545">1544–5</date>
             <seg ana="ereed:YOCW">YOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47034864-transcription">
@@ -12778,7 +12778,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm47024768">
         <body xml:lang="eng">
-          <head><name ana="ereed:YOX" type="place_region">YOX</name>
+          <head><rs>Yoxall</rs>
             <date from-iso="1546" to-iso="1547">1546–7</date>
             <seg ana="ereed:YOCW">YOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47024768-transcription">
@@ -12852,7 +12852,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:church" type="record" xml:id="staff-ridm46992912">
         <body xml:lang="eng">
-          <head><name ana="ereed:YOX" type="place_region">YOX</name>
+          <head><rs>Yoxall</rs>
             <date from-iso="1547" to-iso="1548">1547–8</date>
             <seg ana="ereed:YOCW">YOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm46992912-transcription">
@@ -12876,7 +12876,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46982304">
         <body xml:lang="eng">
-          <head><name ana="ereed:BOB" type="place_region">BOB</name>
+          <head><rs type="Place_Household">Bagot of Blithfield</rs>
             <date when-iso="1613">1613</date>
             <seg ana="ereed:BBL1">BBL1</seg></head>
           <div type="transcription" xml:id="staff-ridm46982304-transcription">
@@ -12911,7 +12911,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46968400">
         <body xml:lang="eng">
-          <head><name ana="ereed:BOB" type="place_region">BOB</name>
+          <head><rs type="Place_Household">Bagot of Blithfield</rs>
             <date when-iso="1615">1615</date>
             <seg ana="ereed:BBL1">BBL1</seg></head>
           <div type="transcription" xml:id="staff-ridm46968400-transcription">
@@ -12936,7 +12936,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46957440">
         <body xml:lang="eng">
-          <head><name ana="ereed:BOB" type="place_region">BOB</name>
+          <head><rs type="Place_Household">Bagot of Blithfield</rs>
             <date when-iso="1619">1619</date>
             <seg ana="ereed:BBL1">BBL1</seg></head>
           <div type="transcription" xml:id="staff-ridm46957440-transcription">
@@ -12966,7 +12966,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46944768">
         <body xml:lang="eng">
-          <head><name ana="ereed:DRA" type="place_region">DRA</name>
+          <head><rs type="Place_Household">Drayton Basset</rs>
             <date from-iso="1622" to-iso="1623">1622–3</date>
             <seg ana="ereed:WILS">WILS</seg></head>
           <div type="transcription" xml:id="staff-ridm46944768-transcription">
@@ -12999,7 +12999,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46934096">
         <body xml:lang="eng">
-          <head><name ana="ereed:FHO" type="place_region">FHO</name>
+          <head><rs type="Place_Household">Ferrers of Walton on Trent and Tamworth</rs>
             <date when-iso="1605">1605</date>
             <seg ana="ereed:FHA1">FHA1</seg></head>
           <div type="transcription" xml:id="staff-ridm46934096-transcription">
@@ -13071,7 +13071,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46913456">
         <body xml:lang="eng">
-          <head><name ana="ereed:FHO" type="place_region">FHO</name>
+          <head><rs type="Place_Household">Ferrers of Walton on Trent and Tamworth</rs>
             <date from-iso="1601" to-iso="1700">17th Century</date>
             <seg ana="ereed:FHA2">FHA2</seg></head>
           <div type="transcription" xml:id="staff-ridm46913456-transcription">
@@ -13098,7 +13098,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46888688">
         <body xml:lang="fra">
-          <head><name ana="ereed:GHO" type="place_region">GHO</name>
+          <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1372">1371/2</date>
             <seg ana="ereed:GRB1">GRB1</seg></head>
           <div type="transcription" xml:id="staff-ridm46888688-transcription">
@@ -13156,7 +13156,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46867952">
         <body xml:lang="fra">
-          <head><name ana="ereed:GHO" type="place_region">GHO</name>
+          <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1373">1373</date>
             <seg ana="ereed:GRB1">GRB1</seg></head>
           <div type="transcription" xml:id="staff-ridm46867952-transcription">
@@ -13279,7 +13279,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm51673280">
         <body xml:lang="fra">
-          <head><name ana="ereed:GHO" type="place_region">GHO</name>
+          <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1374">1374</date>
             <seg ana="ereed:GRB1">GRB1</seg></head>
           <div type="transcription" xml:id="staff-ridm51673280-transcription">
@@ -13376,7 +13376,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46771552">
         <body xml:lang="fra">
-          <head><name ana="ereed:GHO" type="place_region">GHO</name>
+          <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1375">1374/5</date>
             <seg ana="ereed:GRB1">GRB1</seg></head>
           <div type="transcription" xml:id="staff-ridm46771552-transcription">
@@ -13516,7 +13516,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46752464">
         <body xml:lang="fra">
-          <head><name ana="ereed:GHO" type="place_region">GHO</name>
+          <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1379">1379</date>
             <seg ana="ereed:GRB2">GRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46752464-transcription">
@@ -13646,7 +13646,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46710736">
         <body xml:lang="fra">
-          <head><name ana="ereed:GHO" type="place_region">GHO</name>
+          <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1380">1379/80</date>
             <seg ana="ereed:GRB2">GRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46710736-transcription">
@@ -13873,7 +13873,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46586720">
         <body xml:lang="fra">
-          <head><name ana="ereed:GHO" type="place_region">GHO</name>
+          <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1381">1380/1</date>
             <seg ana="ereed:GRB2">GRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46586720-transcription">
@@ -14035,7 +14035,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46514960">
         <body xml:lang="fra">
-          <head><name ana="ereed:GHO" type="place_region">GHO</name>
+          <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1382">1381/2</date>
             <seg ana="ereed:GRB2">GRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46514960-transcription">
@@ -14191,7 +14191,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46538640">
         <body xml:lang="fra">
-          <head><name ana="ereed:GHO" type="place_region">GHO</name>
+          <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1383">1383</date>
             <seg ana="ereed:GRB2">GRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46538640-transcription">
@@ -14264,7 +14264,7 @@ brace to: --> Oke</note> ministrals illeoqes de
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46434528">
         <body xml:lang="eng">
-          <head><name ana="ereed:PGB" type="place_region">PGB</name>
+          <head><rs type="Place_Household">Paget of Burton on Trent and Beaudesert</rs>
             <date from-iso="1578" to-iso="1580">1578–80</date>
             <seg ana="ereed:PGH1">PGH1</seg></head>
           <div type="transcription" xml:id="staff-ridm46434528-transcription">
@@ -14436,7 +14436,7 @@ brace to: --> Oke</note> ministrals illeoqes de
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46317152">
         <body xml:lang="eng">
-          <head><name ana="ereed:PGB" type="place_region">PGB</name>
+          <head><rs type="Place_Household">Paget of Burton on Trent and Beaudesert</rs>
             <date when-iso="1580">1579/80</date>
             <seg ana="ereed:PGH2">PGH2</seg></head>
           <div type="transcription" xml:id="staff-ridm46317152-transcription">
@@ -14612,7 +14612,7 @@ brace to: --> Oke</note> ministrals illeoqes de
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46300784">
         <body xml:lang="eng">
-          <head><name ana="ereed:PGB" type="place_region">PGB</name>
+          <head><rs type="Place_Household">Paget of Burton on Trent and Beaudesert</rs>
             <date when-iso="1580">1580</date>
             <seg ana="ereed:PGH3">PGH3</seg></head>
           <div type="transcription" xml:id="staff-ridm46300784-transcription">
@@ -14661,7 +14661,7 @@ brace to: --> Oke</note> ministrals illeoqes de
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46180272">
         <body xml:lang="eng">
-          <head><name ana="ereed:WRT" type="place_region">WRT</name>
+          <head><rs type="Place_Household">Wrottesley of Wrottesley</rs>
             <date when-iso="1617">1616/17</date>
             <seg ana="ereed:WRLT">WRLT</seg></head>
           <div type="transcription" xml:id="staff-ridm46180272-transcription">
@@ -14690,7 +14690,7 @@ brace to: --> Oke</note> ministrals illeoqes de
       </text>
       <text ana="ereed:family" type="record" xml:id="staff-ridm46169824">
         <body xml:lang="eng">
-          <head><name ana="ereed:WRT" type="place_region">WRT</name>
+          <head><rs type="Place_Household">Wrottesley of Wrottesley</rs>
             <date when-iso="1635">1635</date>
             <seg ana="ereed:WRIN">WRIN</seg></head>
           <div type="transcription" xml:id="staff-ridm46169824-transcription">
@@ -14711,7 +14711,6 @@ brace to: --> Oke</note> ministrals illeoqes de
       </text>
     </group>   
     <back>
-      <!--Three-letter place code in <text type="record"> will need to be changed, to follow model of records once implemented there.--> 
       <div type="appendix">
         <head>Appendix 1: ‘o god what a world’ by Richard Sheale, Minstrel of Tamworth</head>
         <div>
@@ -14778,7 +14777,7 @@ brace to: --> Oke</note> ministrals illeoqes de
           <text type="record" xml:id="staff-ridm91664448">
             <body xml:lang="eng">
               <head>
-                <name ana="ereed:TAM" type="place_region">TAM</name>
+                <rs>Tamworth</rs>
                 <date precision="low" when-iso="1550"><hi rend="italic">c</hi> 1550</date>
                 <seg ana="ereed:TSHL">TSHL</seg>
               </head>
