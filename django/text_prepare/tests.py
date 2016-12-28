@@ -381,13 +381,13 @@ Text
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), False, False)
         data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
-                'date': '<date precision="low" when-iso="1631">c 1631</date>',
-                'year': 'c 1631'}
+                'date': '<date precision="low" when-iso="1631"><hi rend="italic">c</hi> 1631</date>',
+                'year': '{c} 1631'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), False, False)
         data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
-                'date': '<date from-iso="1630" precision="low" to-iso="1632">c 1629/30-31/2</date>',
-                'year': 'c 1629/30-31/2'}
+                'date': '<date from-iso="1630" precision="low" to-iso="1632"><hi rend="italic">c</hi> 1629/30-31/2</date>',
+                'year': '{c} 1629/30-31/2'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), False, False)
         data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',

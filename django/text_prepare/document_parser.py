@@ -230,7 +230,7 @@ def _define_grammar():
         pp.nums, min=2, max=2).setResultsName('century') + \
         pp.Literal('th Century').setResultsName('label')
     record_heading_date_century.setParseAction(_pa_record_heading_date_century)
-    circa = pp.Literal('c ')
+    circa = pp.Literal('{c} ').setParseAction(_pa_circa)
     slash_year = pp.Literal('/') + pp.Word(pp.nums, min=1, max=2)
     start_year = pp.Optional(circa).setResultsName('circa') + \
         year.setResultsName('year') + \
@@ -378,6 +378,10 @@ def _pa_cell_right(s, loc, toks):
 
 def _pa_centred(s, loc, toks):
     return ['<hi rend="center">', ''.join(toks[0]), '</hi>']
+
+
+def _pa_circa(s, loc, toks):
+    return ['<hi rend="italic">c</hi> ']
 
 
 def _pa_circumflex(s, loc, toks):
