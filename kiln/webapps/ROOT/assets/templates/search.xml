@@ -68,7 +68,7 @@
                        name="q" placeholder="Enter exact term or phrase"
                        value="{$q_value}">
                 </input>
-                <input class="button expanded" type="submit" value="Search" />
+                <button class="button expanded" type="submit">Search</button>
               </div>
 
               <div id="filter-container">
