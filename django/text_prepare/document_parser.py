@@ -19,14 +19,12 @@ The basic TEI structure generated is:
       </div>
       ...
     </div>
-    <div type="end_notes">
-      <div type="end_note">
-        ...
-      </div>
+    <div type="endnote">
       ...
     </div>
   </body>
 </text>
+...
 
 The grammar does not enforce referential integrity (for collation
 notes), and does not produce xml:ids.
@@ -640,7 +638,7 @@ def _pa_record_heading_date_year(s, loc, toks):
 
 
 def _pa_record_heading_place(s, loc, toks):
-    return ['<rs ana="ereed:{}" type="place_region">{}</name>'.format(
+    return ['<rs ana="ereed:{}" type="place_region">{}</rs>'.format(
         toks[0], toks[0])]
 
 
