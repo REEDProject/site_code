@@ -27,7 +27,7 @@ class TestDocumentConverter (TestCase):
             text = '@h\\BPA!1532!DOU2!eng\\!\n' + text
             expected = '''<text type="record">
 <body xml:lang="eng">
-<head><name ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
+<head><rs ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
 ''' + expected + '''
 </body>
 </text>'''
@@ -116,7 +116,7 @@ Test.
 @cn/'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><name ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
+<head><rs ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -185,7 +185,7 @@ Test.
 @EN/'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><name ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
+<head><rs ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -346,7 +346,7 @@ Text that <pb />crosses a page.
         base_input = '@h\\{place}!{year}!{record}!{lang}\\!\n@w\\Test\\!\nText'
         base_expected = '''<text type="record">
 <body xml:lang="{lang}">
-<head><name ana="ereed:{place}" type="place_region">{place}</name> {date} <seg ana="ereed:{record}">{record}</seg></head>
+<head><rs ana="ereed:{place}" type="place_region">{place}</name> {date} <seg ana="ereed:{record}">{record}</seg></head>
 <div type="transcription">
 <div>
 <head>Test</head>

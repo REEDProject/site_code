@@ -647,7 +647,7 @@ def _pa_record_heading_date_year(s, loc, toks):
 
 
 def _pa_record_heading_place(s, loc, toks):
-    return ['<name ana="ereed:{}" type="place_region">{}</name>'.format(
+    return ['<rs ana="ereed:{}" type="place_region">{}</name>'.format(
         toks[0], toks[0])]
 
 
