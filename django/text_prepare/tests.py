@@ -12,8 +12,7 @@ class TestDocumentConverter (TestCase):
 
     vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u']
 
-    def _check_conversion(self, text, expected, record_heading=True,
-                          subheading=True):
+    def _check_conversion(self, text, expected, heading=True, subheading=True):
         if subheading:
             text = '@w\\f 124 {(19 November)}\\!\n' + text
             expected = '''<div type="transcription">
@@ -23,7 +22,7 @@ class TestDocumentConverter (TestCase):
 ''' + expected + '''
 </div>
 </div>'''
-        if record_heading:
+        if heading:
             text = '@h\\BPA!1532!DOU2!eng\\!\n' + text
             expected = '''<text type="record">
 <body xml:lang="eng">
@@ -136,7 +135,7 @@ Test.
 </body>
 </text>'''
         self.maxDiff = None
-        self._check_conversion(text, expected, False, False)
+        self._check_conversion(text, expected, heading=False, subheading=False)
 
     def test_comment(self):
         text = 'some @xc\\commented out@xc/ text'
@@ -197,7 +196,7 @@ A note.
 </div>
 </body>
 </text>'''
-        self._check_conversion(text, expected, False, False)
+        self._check_conversion(text, expected, heading=False, subheading=False)
 
     def test_ENG(self):
         text = '@Nati'
@@ -318,7 +317,7 @@ A note.
 Text that <pb />crosses a page.
 </div>
 </div>'''
-        self._check_conversion(text, expected, True, False)
+        self._check_conversion(text, expected, subheading=False)
 
     def test_paragraph(self):
         text = '@P Lo, a paragraph.'
@@ -352,42 +351,50 @@ Text
         data = {'lang': 'lat', 'place': 'BPA', 'record': 'DOU2',
                 'date': '<date when-iso="1532">1532</date>', 'year': '1532'}
         self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), False, False)
+                               base_expected.format(**data), heading=False,
+                               subheading=False)
         data = {'lang': 'lat', 'place': 'LEE', 'record': 'V151',
                 'date': '<date when-iso="1631">1630/1</date>',
                 'year': '1630/1'}
         self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), False, False)
+                               base_expected.format(**data), heading=False,
+                               subheading=False)
         data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
                 'date': '<date from-iso="1630" to-iso="1631">1630-1</date>',
                 'year': '1630-1'}
         self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), False, False)
+                               base_expected.format(**data), heading=False,
+                               subheading=False)
         data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
                 'date': '<date from-iso="1629" to-iso="1631">1629-31</date>',
                 'year': '1629-31'}
         self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), False, False)
+                               base_expected.format(**data), heading=False,
+                               subheading=False)
         data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
                 'date': '<date from-iso="1630" to-iso="1632">1629/30-31/2</date>',
                 'year': '1629/30-31/2'}
         self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), False, False)
+                               base_expected.format(**data), heading=False,
+                               subheading=False)
         data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
                 'date': '<date precision="low" when-iso="1631"><hi rend="italic">c</hi> 1631</date>',
                 'year': '{c} 1631'}
         self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), False, False)
+                               base_expected.format(**data), heading=False,
+                               subheading=False)
         data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
                 'date': '<date from-iso="1630" precision="low" to-iso="1632"><hi rend="italic">c</hi> 1629/30-31/2</date>',
                 'year': '{c} 1629/30-31/2'}
         self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), False, False)
+                               base_expected.format(**data), heading=False,
+                               subheading=False)
         data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
                 'date': '<date from-iso="1601" to-iso="1700">17th Century</date>',
                 'year': '17th Century'}
         self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), False, False)
+                               base_expected.format(**data), heading=False,
+                               subheading=False)
 
     def test_return(self):
         text = 'Bam! new line'
@@ -474,7 +481,7 @@ Text
 Text
 </div>
 </div>'''
-        self._check_conversion(text, expected, True, False)
+        self._check_conversion(text, expected, subheading=False)
         base_text = '@w\\{head}\!\nText'
         base_expected = '''<div type="transcription">
 <div>
@@ -492,8 +499,9 @@ Text
             {'head': '', 'pb': ''}
         ]
         for data in all_data:
-            self._check_conversion(base_text.format(**data),
-                                   base_expected.format(**data), True, False)
+            self._check_conversion(
+                base_text.format(**data), base_expected.format(**data),
+                subheading=False)
         text = '@w\\ {(12 January)}\!\nText'
         expected = '''<div type="transcription">
 <div>
@@ -502,7 +510,7 @@ Text
 Text
 </div>
 </div>'''
-        self._check_conversion(text, expected, True, False)
+        self._check_conversion(text, expected, subheading=False)
 
     def test_umlaut(self):
         for vowel in self.vowels:
