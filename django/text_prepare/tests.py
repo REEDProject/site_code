@@ -773,14 +773,14 @@ After table text.
 <div type="transcription" xml:id="staff-ridm21-transcription">
 <div>
 <head>@w head 2.1</head>
-<ab>Nothing here but a <note type="marginal" place="margin_left" xml:id="staff-ridm21-mnidm28">marginal note</note> and a <note type="foot" xml:id="staff-ridm21-fnidm29">footnote</note>.</ab>
+<ab>Nothing here but a <note type="marginal" place="margin_left">marginal note</note> and a <note type="foot">footnote</note>.</ab>
 </div>
 </div>
 <div type="end_notes" xml:id="staff-ridm21-end-notes">
-<div type="end_note" xml:id="staff-ridm21-enidm31">
+<div type="end_note">
 <ab>An end note.</ab>
 </div>
-<div type="end_note" xml:id="staff-ridm21-enidm33">
+<div type="end_note">
 <ab>Another end note.</ab>
 </div>
 </div>

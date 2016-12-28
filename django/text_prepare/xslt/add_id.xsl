@@ -49,15 +49,6 @@
     </xsl:call-template>
   </xsl:template>
 
-  <xsl:template match="tei:div[@type='end_note']">
-    <xsl:param name="id_prefix" />
-    <xsl:call-template name="copy-element-add-id">
-      <xsl:with-param name="id_prefix" select="$id_prefix" />
-      <xsl:with-param name="id" select="concat($id_prefix, '-en',
-                                        generate-id())" />
-    </xsl:call-template>
-  </xsl:template>
-
   <xsl:template match="tei:div[@type='end_notes']">
     <xsl:param name="id_prefix" />
     <xsl:call-template name="copy-element-add-id">
@@ -71,24 +62,6 @@
     <xsl:call-template name="copy-element-add-id">
       <xsl:with-param name="id_prefix" select="$id_prefix" />
       <xsl:with-param name="id" select="concat($id_prefix, '-transcription')" />
-    </xsl:call-template>
-  </xsl:template>
-
-  <xsl:template match="tei:note[@type='foot']">
-    <xsl:param name="id_prefix" />
-    <xsl:call-template name="copy-element-add-id">
-      <xsl:with-param name="id_prefix" select="$id_prefix" />
-      <xsl:with-param name="id" select="concat($id_prefix, '-fn',
-                                        generate-id())" />
-    </xsl:call-template>
-  </xsl:template>
-
-  <xsl:template match="tei:note[@type='marginal']">
-    <xsl:param name="id_prefix" />
-    <xsl:call-template name="copy-element-add-id">
-      <xsl:with-param name="id_prefix" select="$id_prefix" />
-      <xsl:with-param name="id" select="concat($id_prefix, '-mn',
-                                        generate-id())" />
     </xsl:call-template>
   </xsl:template>
 
