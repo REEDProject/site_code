@@ -133,10 +133,12 @@
     <xsl:value-of select="." />
     <xsl:if test="local-name(.) = 'q'">
       <!-- Look for range parameters to add in. -->
-      <xsl:for-each select="../*[@type='range_start']">
-        <xsl:if test="normalize-space(.)">
-          <xsl:text>+AND+</xsl:text>
-        </xsl:if>
+      <xsl:variable name="range_parameters"
+                    select="../*[@type='range_start'][normalize-space() != '']" />
+      <xsl:if test="$range_parameters and normalize-space(.)">
+        <xsl:text>+AND+</xsl:text>
+      </xsl:if>
+      <xsl:for-each select="$range_parameters">
         <xsl:apply-templates mode="range-parameter" select="." />
         <xsl:if test="not(position() = last())">
           <xsl:text>+AND+</xsl:text>
