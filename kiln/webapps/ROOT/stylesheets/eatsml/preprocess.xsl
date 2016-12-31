@@ -16,19 +16,26 @@
     <xsl:copy>
       <xsl:apply-templates select="@*" />
       <xsl:variable name="name">
-        <xsl:apply-templates select="eats:names/eats:name[@is_preferred='true']" />
+        <xsl:apply-templates select="eats:names/eats:name[@is_preferred='true'][1]" />
+      </xsl:variable>
+      <xsl:variable name="primary-name">
+        <xsl:choose>
+          <xsl:when test="normalize-space($name)">
+            <xsl:value-of select="$name" />
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:apply-templates select="eats:names/eats:name[1]" />
+          </xsl:otherwise>
+        </xsl:choose>
       </xsl:variable>
       <primary_name>
         <plain>
-          <xsl:choose>
-            <xsl:when test="normalize-space($name)">
-              <xsl:value-of select="$name" />
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:apply-templates select="eats:names/eats:name[1]" />
-            </xsl:otherwise>
-          </xsl:choose>
+          <xsl:value-of select="$primary-name" />
         </plain>
+        <facet>
+          <xsl:value-of select="$primary-name" />
+          <!-- QAZ: Add date, etc. -->
+        </facet>
       </primary_name>
     </xsl:copy>
   </xsl:template>

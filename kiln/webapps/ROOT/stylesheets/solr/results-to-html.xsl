@@ -93,9 +93,10 @@
   </xsl:template>
 
   <xsl:template match="result/doc" mode="search-results">
-    <xsl:variable name="result-url" select="kiln:url-for-match('ereed-record-display-html', (str[@name='document_id']))" />
+    <xsl:variable name="record-id" select="str[@name='document_id']" />
+    <xsl:variable name="result-url" select="kiln:url-for-match('ereed-record-display-html', ($record-id))" />
     <tr>
-      <td><input name="select_all" value="{str[@name='document_id']}" id="table-select-all" type="checkbox" /></td>
+      <td><input name="ids" value="{$record-id}" type="checkbox" /></td>
       <td class="show-for-small-only">
         <a href="{$result-url}">
           <xsl:value-of select="arr[@name='document_title']/str[1]" />
@@ -294,6 +295,9 @@
     <xsl:for-each select="$context">
       <xsl:variable name="item" select="key('item-by-eats-id', $id)" />
       <xsl:choose>
+        <xsl:when test="$item and local-name($item) = 'entity'">
+          <xsl:value-of select="$item/primary_name/facet" />
+        </xsl:when>
         <xsl:when test="$item">
           <xsl:value-of select="$item" />
         </xsl:when>
