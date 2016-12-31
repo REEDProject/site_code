@@ -8,10 +8,10 @@
 
   <xsl:param name="entity_eats_id" />
 
-  <xsl:template match="entities">
-    <entities>
+  <xsl:template match="eats:entities">
+    <xsl:copy>
       <xsl:apply-templates select="eats:entity[@eats_id=$entity_eats_id]" />
-    </entities>
+    </xsl:copy>
   </xsl:template>
 
   <xsl:template match="eats:entity">

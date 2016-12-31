@@ -8,6 +8,8 @@
   <!-- Imports stylesheet to convert Solr results into HTML. -->
   <xsl:import href="cocoon://_internal/template/xsl/stylesheets/solr/results-to-html.xsl" />
 
+  <xsl:import href="cocoon://_internal/template/xsl/stylesheets/eatsml/entity-to-html.xsl" />
+
   <kiln:parent>
     <xi:include href="base.xml" />
   </kiln:parent>
@@ -15,14 +17,16 @@
   <kiln:child>
     <kiln:block name="title">
       <kiln:super />
-      <xsl:text><!-- QAZ: primary entity name --></xsl:text>
+      <xsl:call-template name="display-entity-primary-name" />
     </kiln:block>
 
     <kiln:block name="content">
       <div class="content no-hero">
         <div class="row ">
           <div class="column medium-12">
-            <h1 class="entity-header"><!-- QAZ: primary entity name --></h1>
+            <h1 class="entity-header">
+              <xsl:call-template name="display-entity-primary-name" />
+            </h1>
           </div>
         </div>
         <div class="entity-tabs">

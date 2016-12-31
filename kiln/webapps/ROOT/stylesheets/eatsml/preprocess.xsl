@@ -7,9 +7,9 @@
        RDF harvesting, annotating search facet results, etc. -->
 
   <xsl:template match="/">
-    <entities>
+    <eats:entities>
       <xsl:apply-templates select="eats:collection/eats:entities/eats:entity" />
-    </entities>
+    </eats:entities>
   </xsl:template>
 
   <xsl:template match="eats:entity">
@@ -18,14 +18,18 @@
       <xsl:variable name="name">
         <xsl:apply-templates select="eats:names/eats:name[@is_preferred='true']" />
       </xsl:variable>
-      <xsl:choose>
-        <xsl:when test="normalize-space($name)">
-          <xsl:value-of select="$name" />
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:apply-templates select="eats:names/eats:name[1]" />
-        </xsl:otherwise>
-      </xsl:choose>
+      <primary_name>
+        <plain>
+          <xsl:choose>
+            <xsl:when test="normalize-space($name)">
+              <xsl:value-of select="$name" />
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:apply-templates select="eats:names/eats:name[1]" />
+            </xsl:otherwise>
+          </xsl:choose>
+        </plain>
+      </primary_name>
     </xsl:copy>
   </xsl:template>
 
