@@ -7,7 +7,177 @@
   <xsl:import href="to-html.xsl" />
 
   <xsl:variable name="record_text"
-                select="/aggregation/tei:TEI/tei:text" />
-  <xsl:variable name="record_title" select="$record_text/tei:body/tei:head/tei:bibl/tei:title" />
+                select="/aggregation/TEICorpus/tei:TEI/tei:text" />
+
+  <!-- The following named templates all assume that the context node
+       is a tei:text[@type='record']. -->
+
+  <xsl:template name="display-record-collation-notes">
+    <xsl:if test="./tei:body/tei:div[@type='collation_notes']">
+      <li class="accordion-item" data-accordion-item="">
+        <a href="#" class="accordion-title">Collation Notes</a>
+        <div class="accordion-content" data-tab-content="">
+          <xsl:apply-templates select="$record_text/tei:body/tei:div[@type='collation_notes']" />
+        </div>
+      </li>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="display-record-data">
+    <div class="record-accordion">
+      <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+        <xsl:call-template name="display-record-marginalia" />
+        <xsl:call-template name="display-record-footnotes" />
+        <xsl:call-template name="display-record-translation" />
+        <xsl:call-template name="display-record-collation-notes" />
+        <li class="accordion-item" data-accordion-item="">
+          <a href="#" class="accordion-title">Glossed Terms</a>
+          <div class="accordion-content" data-tab-content="">
+            <!-- QAZ -->
+          </div>
+        </li>
+        <xsl:call-template name="display-record-endnote" />
+        <li class="accordion-item" data-accordion-item="">
+          <a href="#" class="accordion-title">Document Description</a>
+          <div class="accordion-content" data-tab-content="">
+            <!-- QAZ -->
+          </div>
+        </li>
+      </ul>
+    </div>
+  </xsl:template>
+
+  <xsl:template name="display-record-endnote">
+    <xsl:if test="./tei:body/tei:div[@type='endnote']">
+      <li class="accordion-item" data-accordion-item="">
+        <a href="#" class="accordion-title">Endnote</a>
+        <div class="accordion-content" data-tab-content="">
+          <xsl:apply-templates select="$record_text/tei:body/tei:div[@type='endnote']" />
+        </div>
+      </li>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="display-record-footnotes">
+    <xsl:if test=".//tei:note[@type='foot']">
+      <li class="accordion-item" data-accordion-item="">
+        <a href="#" class="accordion-title">Footnotes</a>
+        <div class="accordion-content" data-tab-content="">
+          <ul class="footnotes">
+            <xsl:apply-templates mode="group" select="$record_text//tei:note[@type='foot']" />
+          </ul>
+        </div>
+      </li>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="display-record-info">
+    <div class="record-info-inner">
+      <i>
+        <!-- QAZ: Add place information. -->
+        <xsl:apply-templates select="tei:body/tei:head/tei:date" />
+      </i>
+    </div>
+  </xsl:template>
+
+  <xsl:template name="display-record-marginalia">
+    <xsl:if test=".//tei:note[@type='marginal']">
+      <li class="accordion-item" data-accordion-item="">
+        <a href="#" class="accordion-title">Marginalia</a>
+        <div class="accordion-content" data-tab-content="">
+          <ul class="marginalia-list">
+            <xsl:apply-templates mode="group" select="$record_text//tei:note[@type='marginal']" />
+          </ul>
+        </div>
+      </li>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="display-record-shelfmark">
+    <div class="shelfmark">
+      <!-- QAZ: Actually do this. -->
+    </div>
+  </xsl:template>
+
+  <xsl:template name="display-record-sidebar">
+    <div class="show-for-medium">
+      <div class="show-hide">
+        <div class="heading">SHOW OR HIDE</div>
+        <label class="checkbox"><input type="checkbox" name="show-tags" /><span class="checkbox-inner"> </span>Tag</label>
+        <label class="checkbox"><input type="checkbox" name="show-terms" /><span class="checkbox-inner"> </span>Glossed Terms</label>
+      </div>
+      <div class="view-tags">
+        <div class="heading">
+          <span>VIEW TAGS</span>
+        </div>
+        <ul class="tags">
+          <!-- QAZ: Add tags -->
+        </ul>
+      </div>
+      <a href="#" class="back-to-top show-for-medium sticky-bottom button expanded transparent small-margin-top-25 small-margin-bottom-25">Back to top</a>
+    </div>
+    <div class="hide-for-medium">
+      <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear left full-width">
+        <div class="filter-head jump-to-filter">SHOW OR HIDE</div>
+        <div class="filter-content-wrapper relative">
+          <div class="filter-content">
+            <div class="show-hide">
+              <label class="checkbox"><input type="checkbox" name="show-tags" /><span class="checkbox-inner"> </span>Tag</label>
+              <label class="checkbox"><input type="checkbox" name="show-terms" /><span class="checkbox-inner"> </span>Glossed Terms</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear left full-width">
+        <div class="filter-head jump-to-filter">VIEW TAGS</div>
+        <div class="filter-content-wrapper relative">
+          <div class="filter-content">
+            <ul class="tags">
+              <li class="close-tags tag">Close</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </xsl:template>
+
+  <xsl:template name="display-record-title">
+    <div class="record-title">
+      <h1>
+        <xsl:apply-templates select="tei:body/tei:head/tei:bibl/tei:title" />
+      </h1>
+    </div>
+  </xsl:template>
+
+  <xsl:template name="display-record-tools">
+    <div class="tools">
+      <div class="tools-heading show-for-medium">TOOLS</div>
+      <ul class="tools">
+        <li class="email"><a href="">Email</a></li>
+        <li class="print"><a href="">Print</a></li>
+        <li class="pdf"><a href="">PDF</a></li>
+        <li class="xml"><a href="">XML</a></li>
+        <li class="bookmark"><a href="">Bookmark</a></li>
+        <li class="share"><a href="">Share</a></li>
+      </ul>
+    </div>
+  </xsl:template>
+
+  <xsl:template name="display-record-transcription">
+    <div class="record-content">
+      <xsl:apply-templates select="tei:body/tei:div[@type='transcription']" />
+    </div>
+  </xsl:template>
+
+  <xsl:template name="display-record-translation">
+    <xsl:if test="./tei:body/tei:div[@type='translation']">
+      <li class="accordion-item" data-accordion-item="">
+        <a href="#" class="accordion-title">Record Translation</a>
+        <div class="accordion-content" data-tab-content="">
+          <xsl:apply-templates select="$record_text/tei:body/tei:div[@type='translation']" />
+        </div>
+      </li>
+    </xsl:if>
+  </xsl:template>
 
 </xsl:stylesheet>

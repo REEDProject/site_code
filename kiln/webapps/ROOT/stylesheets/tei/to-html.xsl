@@ -10,8 +10,6 @@
 
   <xsl:import href="../../kiln/stylesheets/tei/to-html.xsl" />
 
-  <xsl:variable name="record_title" select="/aggregation/tei:TEI/tei:text/tei:body/tei:head/tei:bibl/tei:title" />
-
   <xsl:template match="tei:add[@place='above']">
     <xsl:text>⸢</xsl:text>
     <xsl:apply-templates />

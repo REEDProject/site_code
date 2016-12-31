@@ -24,19 +24,25 @@
 
       <map:match id="ereed-preprocess-record-tei"
                  pattern="tei/preprocess-record/*-*.xml">
-        <map:generate src="../content/xml/tei/records/{1}.xml" />
+        <map:generate src="cocoon:/tei/preprocess-records/{1}.xml" />
         <map:transform src="../stylesheets/tei/extract-record.xsl">
           <map:parameter name="record-id" value="{1}-{2}" />
         </map:transform>
-        <map:transform src="../stylesheets/tei/expand-references.xsl" />
-        <map:transform type="xinclude" />
-        <map:transform src="../stylesheets/tei/tidy-expanded-references.xsl" />
         <map:serialize type="xml" />
       </map:match>
 
       <map:match id="ereed-preprocess-eatsml" pattern="eatsml/preprocess.xml">
         <map:generate src="../content/xml/eatsml/entities.xml" />
         <map:transform src="../stylesheets/eatsml/preprocess.xsl" />
+        <map:serialize type="xml" />
+      </map:match>
+
+      <map:match id="ereed-extract-referenced-content"
+                 pattern="extract-referenced-content/**">
+        <map:generate src="../content/xml/{1}" />
+        <map:transform src="../stylesheets/tei/extract-referenced-content.xsl">
+          <map:parameter name="id" value="{request-param:id}" />
+        </map:transform>
         <map:serialize type="xml" />
       </map:match>
 
