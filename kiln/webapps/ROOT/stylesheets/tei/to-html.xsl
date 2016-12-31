@@ -8,6 +8,8 @@
        HTML. Customisations here override those in the core
        to-html.xsl (which should not be changed). -->
 
+  <xsl:import href="cocoon://_internal/url/reverse.xsl" />
+
   <xsl:import href="../../kiln/stylesheets/tei/to-html.xsl" />
 
   <xsl:template match="tei:add[@place='above']">
@@ -70,6 +72,17 @@
       <!-- QAZ: icon indicating place of note. -->
       <xsl:apply-templates />
     </li>
+  </xsl:template>
+
+  <xsl:template match="tei:rs[@ref]">
+    <a class="tag">
+      <xsl:attribute name="href">
+        <xsl:variable name="entity-id"
+                      select="substring-before(substring-after(@ref, '/entity/'), '/')" />
+        <xsl:value-of select="kiln:url-for-match('ereed-entity-display-html', $entity-id)" />
+      </xsl:attribute>
+      <xsl:apply-templates />
+    </a>
   </xsl:template>
 
   <xsl:template match="tei:space">
