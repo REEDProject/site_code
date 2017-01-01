@@ -45,11 +45,7 @@
                     <div class="filter-head jump-to-filter">VIEW TAGS</div>
                     <div class="filter-content-wrapper relative">
                       <div class="filter-content">
-                        <ul class="tags">
-                          <!-- QAZ: Add tags -->
-                          <li class="tag"></li>
-                          <li class="close-tags tag">Close</li>
-                        </ul>
+                        <xsl:call-template name="display-record-entities" />
                       </div>
                     </div>
                   </div>

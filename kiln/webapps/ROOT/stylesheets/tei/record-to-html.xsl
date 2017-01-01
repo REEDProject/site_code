@@ -100,6 +100,9 @@
   </xsl:template>
 
   <xsl:template name="display-record-sidebar">
+    <xsl:variable name="entities">
+      <xsl:call-template name="display-record-entities" />
+    </xsl:variable>
     <div class="show-for-medium">
       <div class="show-hide">
         <div class="heading">SHOW OR HIDE</div>
@@ -110,9 +113,7 @@
         <div class="heading">
           <span>VIEW TAGS</span>
         </div>
-        <ul class="tags">
-          <!-- QAZ: Add tags -->
-        </ul>
+        <xsl:copy-of select="$entities" />
       </div>
       <a href="#" class="back-to-top show-for-medium sticky-bottom button expanded transparent small-margin-top-25 small-margin-bottom-25">Back to top</a>
     </div>
@@ -132,13 +133,29 @@
         <div class="filter-head jump-to-filter">VIEW TAGS</div>
         <div class="filter-content-wrapper relative">
           <div class="filter-content">
-            <ul class="tags">
-              <li class="close-tags tag">Close</li>
-            </ul>
+            <xsl:copy-of select="$entities" />
           </div>
         </div>
       </div>
     </div>
+  </xsl:template>
+
+  <xsl:template name="display-record-entities">
+    <ul class="tags">
+      <xsl:for-each select=".//tei:rs[@ref]">
+        <li class="tag">
+          <a>
+            <xsl:attribute name="href">
+              <xsl:call-template name="make-entity-url">
+                <xsl:with-param name="@ref" />
+              </xsl:call-template>
+            </xsl:attribute>
+            <!-- QAZ: Use name from EATSML? -->
+            <xsl:value-of select="." />
+          </a>
+        </li>
+      </xsl:for-each>
+    </ul>
   </xsl:template>
 
   <xsl:template name="display-record-title">

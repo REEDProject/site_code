@@ -77,9 +77,9 @@
   <xsl:template match="tei:rs[@ref]">
     <a class="tag">
       <xsl:attribute name="href">
-        <xsl:variable name="entity-id"
-                      select="substring-before(substring-after(@ref, '/entity/'), '/')" />
-        <xsl:value-of select="kiln:url-for-match('ereed-entity-display-html', $entity-id)" />
+        <xsl:call-template name="make-entity-url">
+          <xsl:with-param name="eats-url" select="@ref" />
+        </xsl:call-template>
       </xsl:attribute>
       <xsl:apply-templates />
     </a>
@@ -87,6 +87,13 @@
 
   <xsl:template match="tei:space">
     <i>(blank)</i>
+  </xsl:template>
+
+  <xsl:template name="make-entity-url">
+    <xsl:param name="eats-url" />
+    <xsl:variable name="entity-id"
+                  select="substring-before(substring-after(@ref, '/entity/'), '/')" />
+    <xsl:value-of select="kiln:url-for-match('ereed-entity-display-html', $entity-id)" />
   </xsl:template>
 
 </xsl:stylesheet>
