@@ -46,6 +46,16 @@
     <xsl:text>...</xsl:text>
   </xsl:template>
 
+  <xsl:template match="tei:front/tei:div/tei:head" />
+
+  <xsl:template match="tei:front/tei:div//tei:div/tei:head">
+    <xsl:variable name="level" select="count(ancestor::tei:div)+1" />
+    <xsl:element name="h{$level}">
+      <xsl:attribute name="id" select="generate-id(..)" />
+      <xsl:apply-templates />
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="tei:hi[@rend='italic']">
     <i>
       <xsl:apply-templates />

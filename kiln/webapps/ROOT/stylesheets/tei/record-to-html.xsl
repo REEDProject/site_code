@@ -9,6 +9,10 @@
   <xsl:variable name="record_text"
                 select="/aggregation/TEICorpus/tei:TEI/tei:text" />
 
+  <xsl:template name="display-collection-name">
+    <xsl:value-of select="/aggregation/TEICorpus/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']" />
+  </xsl:template>
+
   <!-- The following named templates all assume that the context node
        is a tei:text[@type='record']. -->
 
@@ -195,6 +199,43 @@
         </div>
       </li>
     </xsl:if>
+  </xsl:template>
+
+  <!-- The following named templates all assume that the context node
+       is a tei:front/tei:div or tei:back. -->
+
+  <xsl:template name="display-section-data">
+    <div class="record-accordion">
+      <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+        <xsl:call-template name="display-record-footnotes" />
+      </ul>
+    </div>
+  </xsl:template>
+
+  <xsl:template name="display-section-toc">
+    <ul class="sub-sections">
+      <xsl:for-each select="tei:div">
+        <li>
+          <a href="#{generate-id()}">
+            <xsl:value-of select="tei:head" />
+          </a>
+        </li>
+      </xsl:for-each>
+    </ul>
+  </xsl:template>
+
+  <xsl:template name="display-appendix-toc">
+    <ul class="individual-related-entity numbered list coloured">
+      <xsl:for-each select="tei:div">
+        <li>
+          <span>
+            <a href="#{generate-id()}">
+              <xsl:value-of select="tei:head" />
+            </a>
+          </span>
+        </li>
+      </xsl:for-each>
+    </ul>
   </xsl:template>
 
 </xsl:stylesheet>

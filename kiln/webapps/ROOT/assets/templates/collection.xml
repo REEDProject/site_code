@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
            xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:tei="http://www.tei-c.org/ns/1.0"
            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- Imports stylesheet to convert Solr results into HTML. -->
   <xsl:import href="cocoon://_internal/template/xsl/stylesheets/solr/results-to-html.xsl" />
+
+  <xsl:import href="cocoon://_internal/template/xsl/stylesheets/tei/record-to-html.xsl" />
 
   <kiln:parent>
     <xi:include href="base.xml" />
@@ -14,14 +17,16 @@
     <kiln:block name="title">
       <kiln:super />
       <xsl:text>Collection: </xsl:text>
-      <!-- QAZ: Name of collection -->
+      <xsl:call-template name="display-collection-name" />
     </kiln:block>
 
     <kiln:block name="content">
       <div class="content no-hero">
         <div class="row">
           <div class="column medium-12">
-            <h1 class="entity-header"><!-- QAZ: title of collection --></h1>
+            <h1 class="entity-header">
+              <xsl:call-template name="display-collection-name" />
+            </h1>
           </div>
           <div class="column medium-12">
             <div class="row collapse map-wrapper map small-margin-bottom-25">
@@ -186,131 +191,94 @@
               </div>
             </div>
             <div class="tabs-panel" id="panel3">
-              <div class="bibliography-filter filter hide-for-medium boxed">
-                <div class="filter-head jump-to-filter">Topics In This Section</div>
-                <div class="filter-content-wrapper relative">
-                  <div class="filter-content">
-                    <div class=" toc mobile-toc">
-                      <div class=" ">
-                        <ul class="sub-sections">
-                          <li><a href="">Introduction</a></li>
-                          <li><a href="">Roads &amp; Transport</a></li>
-                          <li class="active"><a href="active">Political &amp; Economic History</a></li>
-                          <li><a href="">County Government</a></li>
-                          <li><a href="">The Bishops of Chichester</a></li>
-                          <li><a href="">Religous Houses</a></li>
-                          <li><a href="">Nobility &amp; Gentry</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="column medium-12">
-                  <div class="entity-top-content">
-                    <h2>Historical Background</h2>
-                  </div>
-                  <div class="related-content row">
-                    <div class="columns medium-9">
-                      <div class="show-for-medium">
-                        <div class="row toc">
-                          <div class="column medium-6">
-                            <ul class="sub-sections">
-                              <li><a href="">Introduction</a></li>
-                              <li><a href="">Roads &amp; Transport</a></li>
-                              <li class="active"><a href="active">Political &amp; Economic History</a></li>
-                              <li><a href="">County Government</a></li>
-                              <li><a href="">The Bishops of Chichester</a></li>
-                            </ul>
-                          </div>
-                          <div class="column medium-6">
-                            <ul class="sub-sections">
-                              <li><a href="">Religous Houses</a></li>
-                              <li><a href="">Nobility &amp; Gentry</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="explore-text">
-                        <h3>Political &amp; Economic History</h3>
-                        <p>Postea phaedrum cu mei. Tempor minimum eum et, novum decore cu nec. Aliquip alterum eum ei, quodsi feugait minimum sit in. Salutatus argumentum et duo, utamur tamquam laboramus ex mei. Ea hendrerit sententiae vis, alienum placerat cu pri. Eu iudico munere vis, option ocurreret ad sea, pro qualisque adipiscing scripserit eu. Nostro percipit gubergren his at. Eu insolens delicata nec, ignota honestatis ei pro. Luptatum patrioque euripidis te sit.</p>
-                        <h4>H4 - Sub Section Title</h4>
-                        <p>Amet, ex qui quodsi vocibus. Quas menandri mnesarchum eu eam. Ut eum nusquam eligendi, ut usu quis porro. Vel novum vituperata ne, et pri elit altera. Unum case feugait per ex, est id errem noster, cu mutat scripta constituto cum. Everti reprimique inciderint eu pri, te pri nobis scripta verterem, id nec probo soleat noluisse constituto cum.</p>
-                        <h4>H4 - Sub Section Title</h4>
-                        <p>Amet, ex qui quodsi vocibus. Quas menandri mnesarchum eu eam. Ut eum nusquam eligendi, ut usu quis porro. Vel novum vituperata ne, et pri elit altera. Unum case feugait per ex, est id errem noster, cu mutat scripta constituto:</p>
-                        <ul class="list">
-                          <li><span>Amet, ex qui quodsi vocibus </span></li>
-                          <li><span>Quas menandri mnesarchum eu eam</span></li>
-                          <li><span>Ut eum nusquam eligendi, ut usu quis porro</span></li>
-                          <li><span>Vel novum vituperata ne, et pri elit altera</span></li>
-                          <li><span>Unum case feugait constituto</span></li>
-                        </ul>
-                        <p>Amet, ex qui quodsi vocibus. Quas menandri mnesarchum eu eam. Ut eum nusquam eligendi, ut usu quis porro. Vel novum vituperata ne, et pri elit altera. Unum case feugait per ex, est id errem noster, cu mutat scripta constituto:</p>
-                        <ul class="list numbered">
-                          <li><span>Amet, ex qui quodsi vocibus </span></li>
-                          <li><span>Quas menandri mnesarchum eu eam</span></li>
-                          <li><span>Ut eum nusquam eligendi, ut usu quis porro</span></li>
-                          <li><span>Vel novum vituperata ne, et pri elit altera</span></li>
-                          <li><span>Unum case feugait constituto</span></li>
-                        </ul>
-                      </div>
-                      <div class="row prev-next-buttons">
-                        <div class="columns medium-4">
-                          <div class="previous-button">
-                            <a href="#">
-                              <div class="next">Previous</div>
-                              <div class="next-page">1. Introduction</div>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="columns medium-4">
-                          <div class="next-button">
-                            <a href="#">
-                              <div class="next">Next</div>
-                              <div class="next-page">2. Principles of Selection</div>
-
-                            </a>
-                          </div>
+              <xsl:for-each select="$record_text/tei:front/tei:div[@type='background']">
+                <div class="bibliography-filter filter hide-for-medium boxed">
+                  <div class="filter-head jump-to-filter">Topics In This Section</div>
+                  <div class="filter-content-wrapper relative">
+                    <div class="filter-content">
+                      <div class="toc mobile-toc">
+                        <div>
+                          <xsl:call-template name="display-section-toc" />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+                <div class="row">
+                  <div class="column medium-12">
+                    <div class="entity-top-content">
+                      <h2>Historical Background</h2>
+                    </div>
+                    <div class="related-content row">
+                      <div class="columns medium-9">
+                        <div class="show-for-medium">
+                          <div class="row toc">
+                            <div class="column medium-6">
+                              <xsl:call-template name="display-section-toc" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="explore-text">
+                          <xsl:apply-templates select="." />
+                          <xsl:call-template name="display-section-data" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </xsl:for-each>
             </div>
             <div class="tabs-panel" id="panel4">
-              <div class="row">
-                <div class="column medium-12">
-                  <div class="entity-top-content">
-                    <h2>Performance Traditions</h2>
-                  </div>
-                  <div class="related-content">
-                    <h3>Content TBA</h3>
+              <xsl:for-each select="$record_text/tei:front/tei:div[@type='traditions']">
+                <div class="bibliography-filter filter hide-for-medium boxed">
+                  <div class="filter-head jump-to-filter">Topics In This Section</div>
+                  <div class="filter-content-wrapper relative">
+                    <div class="filter-content">
+                      <div class="toc mobile-toc">
+                        <div>
+                          <xsl:call-template name="display-section-toc" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div class="row">
+                  <div class="column medium-12">
+                    <div class="entity-top-content">
+                      <h2>Performance Traditions</h2>
+                    </div>
+                    <div class="related-content row">
+                      <div class="columns medium-9">
+                        <div class="show-for-medium">
+                          <div class="row toc">
+                            <div class="column medium-6">
+                              <xsl:call-template name="display-section-toc" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="explore-text">
+                          <xsl:apply-templates select="." />
+                          <xsl:call-template name="display-section-data" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </xsl:for-each>
             </div>
             <div class="tabs-panel" id="panel5">
-              <div class="row">
-                <div class="column medium-12">
-                  <div class="entity-top-content">
-                    <h2>Appendices</h2>
-                  </div>
-                  <div class="related-content">
-                    <ul class="individual-related-entity numbered list colored">
-                      <li><span><a href="/appendix.html">Undated Records</a></span></li>
-                      <li><span><a>Royal and Noble Visits to Chester</a></span></li>
-                      <li><span><a>Collier’s Letters and the Play of Robert of Sicily</a></span></li>
-                      <li><span><a>The Breviaries of Archdeacon Robert and David Rogers</a></span></li>
-                      <li><span><a>The Development of the Plays</a></span></li>
-                      <li><span><a>Selective List of Musicians and Musical Performers</a></span></li>
-                      <li><span><a>Saints’ Days and Festivals'</a></span></li>
-
-                    </ul>
+              <xsl:for-each select="$record_text/tei:back">
+                <div class="row">
+                  <div class="column medium-12">
+                    <div class="entity-top-content">
+                      <h2>Appendices</h2>
+                    </div>
+                    <div class="related-content">
+                      <xsl:call-template name="display-appendix-toc" />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </xsl:for-each>
             </div>
           </div>
         </div>
