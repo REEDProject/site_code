@@ -78,7 +78,9 @@
   <xsl:template name="display-record-info">
     <div class="record-info-inner">
       <i>
-        <!-- QAZ: Add place information. -->
+        <!-- QAZ: Use EATSML name? -->
+        <xsl:apply-templates select="tei:body/tei:head/tei:rs" />
+        <xsl:text> </xsl:text>
         <xsl:apply-templates select="tei:body/tei:head/tei:date" />
       </i>
     </div>

@@ -42,6 +42,8 @@
           <xsl:value-of select="normalize-space(tei:body/tei:head/tei:bibl/tei:title)" />
         </field>
         <field name="record_location">
+          <!-- QAZ: Use EATSML name? -->
+          <xsl:value-of select="normalize-space(tei:body/tei:head/tei:rs)" />
         </field>
         <field name="record_shelfmark">
         </field>
