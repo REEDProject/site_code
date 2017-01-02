@@ -55,208 +55,85 @@
                             <catDesc>Staffordshire</catDesc>
                         </category>
                     </category>
-                    <category xml:id="records_div">
-                        <catDesc>Records Divisions</catDesc>
-                        <category xml:id="dioceses">
-                            <catDesc>Dioceses</catDesc>
-                            <category xml:id="DOL">
-                                <catDesc>Diocese of Lichfield</catDesc>
-                            </category>
+                    <category xml:id="record_types">
+                        <catDesc>Record types</catDesc>
+                        <category xml:id="central_gvt">
+                            <catDesc>central government</catDesc>
                         </category>
-                        <category xml:id="households">
-                            <catDesc>Households</catDesc>
-                            <category xml:id="BOB">
-                                <catDesc>Bagot of Blithfield</catDesc>
-                            </category>
-                            <category xml:id="DRA">
-                                <catDesc>Drayton Basset</catDesc>
-                            </category>
-                            <category xml:id="FHO">
-                                <catDesc>Ferrers of Walton on Trent and Tamworth</catDesc>
-                            </category>
-                            <category xml:id="GHO">
-                                <catDesc>John of Gaunt of Tutbury</catDesc>
-                            </category>
-                            <category xml:id="PGB">
-                                <catDesc>Paget of Burton on Trent and Beaudesert</catDesc>
-                            </category>
-                            <category xml:id="WRT">
-                                <catDesc>Wrottesley of Wrottesley</catDesc>
-                            </category>
+                        <category xml:id="local_gvt">
+                            <catDesc>local government</catDesc>
                         </category>
-                        <category xml:id="parishes">
-                            <catDesc>Parishes</catDesc>
-                            <category xml:id="BPA">
-                                <catDesc>Abbots Bromley</catDesc>
-                            </category>
-                            <category xml:id="BET">
-                                <catDesc>Betley</catDesc>
-                            </category>
-                            <category xml:id="BTN">
-                                <catDesc>Burton upon Trent</catDesc>
-                            </category>
-                            <category xml:id="CHC">
-                                <catDesc>Checkley</catDesc>
-                            </category>
-                            <category xml:id="DRH">
-                                <catDesc>Drayton in Hales</catDesc>
-                            </category>
-                            <category xml:id="ECC">
-                                <catDesc>Eccleshall</catDesc>
-                            </category>
-                            <category xml:id="ELH">
-                                <catDesc>Ellenhall</catDesc>
-                            </category>
-                            <category xml:id="GFE">
-                                <catDesc>Great Fenton</catDesc>
-                            </category>
-                            <category xml:id="HAN">
-                                <catDesc>Handsworth</catDesc>
-                            </category>
-                            <category xml:id="KNV">
-                                <catDesc>Kinver</catDesc>
-                            </category>
-                            <category xml:id="LEE">
-                                <catDesc>Leek</catDesc>
-                            </category>
-                            <category xml:id="LCH">
-                                <catDesc>Lichfield</catDesc>
-                            </category>
-                            <category xml:id="MAD">
-                                <catDesc>Madeley</catDesc>
-                            </category>
-                            <category xml:id="MUC">
-                                <catDesc>Mucklestone</catDesc>
-                            </category>
-                            <category xml:id="NUL">
-                                <catDesc>Newcastle under Lyme</catDesc>
-                            </category>
-                            <category xml:id="NOR">
-                                <catDesc>Norton Canes</catDesc>
-                            </category>
-                            <category xml:id="ROW">
-                                <catDesc>Rowley Regis</catDesc>
-                            </category>
-                            <category xml:id="RUS">
-                                <catDesc>Rushton</catDesc>
-                            </category>
-                            <category xml:id="SHL">
-                                <catDesc>Shareshill</catDesc>
-                            </category>
-                            <category xml:id="STF">
-                                <catDesc>Stafford</catDesc>
-                            </category>
-                            <category xml:id="SLD">
-                                <catDesc>Statfold</catDesc>
-                            </category>
-                            <category xml:id="STN">
-                                <catDesc>Stone</catDesc>
-                            </category>
-                            <category xml:id="TAM">
-                                <catDesc>Tamworth</catDesc>
-                            </category>
-                            <category xml:id="TUT">
-                                <catDesc>Tutbury</catDesc>
-                            </category>
-                            <category xml:id="UTT">
-                                <catDesc>Uttoxeter</catDesc>
-                            </category>
-                            <category xml:id="WLL">
-                                <catDesc>Wall</catDesc>
-                            </category>
-                            <category xml:id="WED">
-                                <catDesc>Wednesbury</catDesc>
-                            </category>
-                            <category xml:id="WBR">
-                                <catDesc>West Bromwich</catDesc>
-                            </category>
-                            <category xml:id="WOL">
-                                <catDesc>Wolverhampton</catDesc>
-                            </category>
-                            <category xml:id="YOX">
-                                <catDesc>Yoxall</catDesc>
-                            </category>
+                        <category xml:id="church">
+                            <catDesc>church</catDesc>
                         </category>
-                        <category xml:id="record_types">
-                            <catDesc>Record types</catDesc>
-                            <category xml:id="central_gvt">
-                                <catDesc>central government</catDesc>
-                            </category>
-                            <category xml:id="local_gvt">
-                                <catDesc>local government</catDesc>
-                            </category>
-                            <category xml:id="church">
-                                <catDesc>church</catDesc>
-                            </category>
-                            <category xml:id="education">
-                                <catDesc>educational institution</catDesc>
-                            </category>
-                            <category xml:id="guild_craft">
-                                <catDesc>guild, craft/trade</catDesc>
-                            </category>
-                            <category xml:id="guild_rel">
-                                <catDesc>guild, religious</catDesc>
-                            </category>
-                            <category xml:id="rel_community">
-                                <catDesc>religious community</catDesc>
-                            </category>
-                            <category xml:id="manor">
-                                <catDesc>manorial</catDesc>
-                            </category>
-                            <category xml:id="family">
-                                <catDesc>family</catDesc>
-                            </category>
-                            <category xml:id="chron_hist">
-                                <catDesc>chronicles and histories</catDesc>
-                            </category>
+                        <category xml:id="education">
+                            <catDesc>educational institution</catDesc>
                         </category>
-                        <category xml:id="repositories">
-                            <catDesc>Repositories</catDesc>
-                            <category xml:id="Bodl.">
-                                <catDesc>Bodleian</catDesc>
-                            </category>
-                            <category xml:id="LRO">
-                                <catDesc>Lichfield Record Office</catDesc>
-                            </category>
-                            <category xml:id="CRO">
-                                <catDesc>Cheshire Record Office</catDesc>
-                            </category>
-                            <category xml:id="BL">
-                                <catDesc>British Library</catDesc>
-                            </category>
-                            <category xml:id="TNA">
-                                <catDesc>The National Archives</catDesc>
-                            </category>
-                            <category xml:id="STRO">
-                                <catDesc>Staffordshire Record Office</catDesc>
-                            </category>
-                            <category xml:id="CL">
-                                <catDesc>Chetham's Library</catDesc>
-                            </category>
-                            <category xml:id="LA">
-                                <catDesc>Lincolnshire Archives</catDesc>
-                            </category>
-                            <category xml:id="LCL">
-                                <catDesc>Lichfield Cathedral Library</catDesc>
-                            </category>
-                            <category xml:id="NLBM">
-                                <catDesc>Brampton Museum</catDesc>
-                            </category>
-                            <category xml:id="WRO">
-                                <catDesc>Worcester Record Office</catDesc>
-                            </category>
-                            <category xml:id="WSL">
-                                <catDesc>William Salt Library</catDesc>
-                            </category>
-                            <category xml:id="WLHC">
-                                <catDesc>Walsall Local History Centre</catDesc>
-                            </category>
-                            <category xml:id="CUL">
-                                <catDesc>Cambridge University Library</catDesc>
-                            </category>
-                            <category xml:id="FSL">
-                                <catDesc>Folger Shakespeare Library</catDesc>
-                            </category>
+                        <category xml:id="guild_craft">
+                            <catDesc>guild, craft/trade</catDesc>
+                        </category>
+                        <category xml:id="guild_rel">
+                            <catDesc>guild, religious</catDesc>
+                        </category>
+                        <category xml:id="rel_community">
+                            <catDesc>religious community</catDesc>
+                        </category>
+                        <category xml:id="manor">
+                            <catDesc>manorial</catDesc>
+                        </category>
+                        <category xml:id="family">
+                            <catDesc>family</catDesc>
+                        </category>
+                        <category xml:id="chron_hist">
+                            <catDesc>chronicles and histories</catDesc>
+                        </category>
+                    </category>
+                    <category xml:id="repositories">
+                        <catDesc>Repositories</catDesc>
+                        <category xml:id="Bodl.">
+                            <catDesc>Bodleian</catDesc>
+                        </category>
+                        <category xml:id="LRO">
+                            <catDesc>Lichfield Record Office</catDesc>
+                        </category>
+                        <category xml:id="CRO">
+                            <catDesc>Cheshire Record Office</catDesc>
+                        </category>
+                        <category xml:id="BL">
+                            <catDesc>British Library</catDesc>
+                        </category>
+                        <category xml:id="TNA">
+                            <catDesc>The National Archives</catDesc>
+                        </category>
+                        <category xml:id="STRO">
+                            <catDesc>Staffordshire Record Office</catDesc>
+                        </category>
+                        <category xml:id="CL">
+                            <catDesc>Chetham's Library</catDesc>
+                        </category>
+                        <category xml:id="LA">
+                            <catDesc>Lincolnshire Archives</catDesc>
+                        </category>
+                        <category xml:id="LCL">
+                            <catDesc>Lichfield Cathedral Library</catDesc>
+                        </category>
+                        <category xml:id="NLBM">
+                            <catDesc>Brampton Museum</catDesc>
+                        </category>
+                        <category xml:id="WRO">
+                            <catDesc>Worcester Record Office</catDesc>
+                        </category>
+                        <category xml:id="WSL">
+                            <catDesc>William Salt Library</catDesc>
+                        </category>
+                        <category xml:id="WLHC">
+                            <catDesc>Walsall Local History Centre</catDesc>
+                        </category>
+                        <category xml:id="CUL">
+                            <catDesc>Cambridge University Library</catDesc>
+                        </category>
+                        <category xml:id="FSL">
+                            <catDesc>Folger Shakespeare Library</catDesc>
                         </category>
                     </category>
                 </taxonomy>
