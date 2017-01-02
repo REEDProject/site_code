@@ -82,6 +82,17 @@
     </li>
   </xsl:template>
 
+  <xsl:template match="lst[@name='facet_fields]/lst"
+                mode="search-results-no-hierarchy">
+    <xsl:variable name="facet-values">
+      <xsl:apply-templates mode="search-results" />
+    </xsl:variable>
+    <xsl:for-each select="$facet-values/li">
+      <xsl:sort select="." />
+      <xsl:copy-of select="." />
+    </xsl:for-each>
+  </xsl:template>
+
   <xsl:template match="lst[@name='facet_fields']/lst/@name"
                 mode="search-results">
     <xsl:for-each select="tokenize(., '_')">

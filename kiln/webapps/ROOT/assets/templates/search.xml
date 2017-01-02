@@ -192,7 +192,7 @@
                   <div class="filter-content-wrapper">
                     <div class="filter-content">
                       <ul class="open-filters bordered bold-filters">
-                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$crime_facets]" mode="search-results" />
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$crime_facets]" mode="search-results-no-hierarchy" />
                       </ul>
                     </div>
                   </div>
@@ -202,7 +202,7 @@
                   <div class="filter-content-wrapper">
                     <div class="filter-content">
                       <ul class="open-filters bordered bold-filters">
-                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$record_facets]" mode="search-results" />
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$record_facets]" mode="search-results-no-hierarchy" />
                       </ul>
                     </div>
                   </div>
@@ -225,29 +225,31 @@
               <xsl:apply-templates mode="search-results" select="/aggregation/response/lst[@name='responseHeader']/lst[@name='params']/*[@name='fq']" />
               <span class="active-filter-clear"><a href="{kiln:url-for-match('ereed-search', ())}">Clear all</a></span>
             </div>
-            <table id="table" class="display responsive" cellspacing="0" width="100%">
-              <thead>
-                <tr>
-                  <th class="top-checkbox">
-                    <label class="checkbox"><input type="checkbox" name="select_all" id="table-select-all" value="1" /><span class="checkbox-inner"></span></label>
-                    <a href="#" id="checkbox-toggle">T</a>
-                    <ul id="checkbox-options">
-                      <li data-option="all" class="hide">All</li>
-                      <li data-option="none" class="hide">None</li>
-                    </ul>
-                  </th>
-                  <th class="show-for-small-only hide-sortable" width="40px">Records</th>
-                  <th class="show-for-medium">Date</th>
-                  <th class="show-for-medium">Location</th>
-                  <th class="show-for-medium">Record Title</th>
-                  <th class="show-for-medium">Shelfmark</th>
-                </tr>
-              </thead>
-              <tbody>
-                <xsl:apply-templates select="/aggregation/response/result/doc"
-                                     mode="search-results" />
-              </tbody>
-            </table>
+            <form action="{kiln:url-for-match('ereed-records-display-html', ())}" method="get">
+              <table id="table" class="display responsive" cellspacing="0" width="100%">
+                <thead>
+                  <tr>
+                    <th class="top-checkbox">
+                      <label class="checkbox"><input type="checkbox" name="select_all" id="table-select-all" value="1" /><span class="checkbox-inner"></span></label>
+                      <a href="#" id="checkbox-toggle">T</a>
+                      <ul id="checkbox-options">
+                        <li data-option="all" class="hide">All</li>
+                        <li data-option="none" class="hide">None</li>
+                      </ul>
+                    </th>
+                    <th class="show-for-small-only hide-sortable" width="40px">Records</th>
+                    <th class="show-for-medium">Date</th>
+                    <th class="show-for-medium">Location</th>
+                    <th class="show-for-medium">Record Title</th>
+                    <th class="show-for-medium">Shelfmark</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <xsl:apply-templates select="/aggregation/response/result/doc"
+                                       mode="search-results" />
+                </tbody>
+              </table>
+            </form>
           </div>
         </div>
       </div>
