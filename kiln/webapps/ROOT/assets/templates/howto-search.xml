@@ -10,7 +10,7 @@
   <kiln:child>
     <kiln:block name="title">
       <kiln:super />
-      <xsl:text>How To: Introduction to the Research Process</xsl:text>
+      <xsl:text>How To: Search Tips</xsl:text>
     </kiln:block>
 
     <kiln:block name="content">
@@ -38,9 +38,9 @@
                 <div class="toc mobile-toc">
                   <div>
                     <ul class="sub-sections">
-                      <li class="active"><a href="{kiln:url-for-match('ereed-howto-intro', ())}">Introduction to the Research Process</a></li>
+                      <li><a href="{kiln:url-for-match('ereed-howto-intro', ())}">Introduction to the Research Process</a></li>
                       <li><a href="{kiln:url-for-match('ereed-howto-anatomy', ())}">Anatomy of a Record</a></li>
-                      <li><a href="{kiln:url-for-match('ereed-howto-search', ())}">Search Tips</a></li>
+                      <li class="active"><a href="{kiln:url-for-match('ereed-howto-search', ())}">Search Tips</a></li>
                     </ul>
                   </div>
                 </div>
@@ -53,9 +53,9 @@
               <div class="row toc">
                 <div class="column medium-6">
                   <ul class="sub-sections">
-                    <li class="active"><a href="{kiln:url-for-match('ereed-howto-intro', ())}">Introduction to the Research Process</a></li>
+                    <li><a href="{kiln:url-for-match('ereed-howto-intro', ())}">Introduction to the Research Process</a></li>
                     <li><a href="{kiln:url-for-match('ereed-howto-anatomy', ())}">Anatomy of a Record</a></li>
-                    <li><a href="{kiln:url-for-match('ereed-howto-search', ())}">Search Tips</a></li>
+                    <li class="active"><a href="{kiln:url-for-match('ereed-howto-search', ())}">Search Tips</a></li>
                   </ul>
                 </div>
               </div>
@@ -67,25 +67,19 @@
           <div class="row">
             <div class="column medium-9  sub-section-content">
               <div class="text">
-                <h2>1. Introduction to the Research Process</h2>
-                <p>Welcome to an exciting, but also challenging, world. As you read the records of the past you will probably feel closer to the people who created them and recognise from your own experience aspects of the events they record — your imagination will rightly be captured by what you read — but these records are the traces of a world which is irrevocably past. That is precisely what will make your research so interesting.</p>
-                <p>Let's start with the records themselves. What you will find in this database are the records that have survived, and that we have been able to find. Many others have certainly been lost (there are always gaps, sometimes just where you don't want them!) and some we may have missed, though we have worked hard to avoid that, and will add relevant material where you or we find it.</p>
-                <p>Next, each individual record was made for a purpose, and the many records you will encounter represent a wide variety of motives in the people who made or commissioned them. You can be confident that none of those motives was the same as your own in studying them. So, understanding the records means asking, 'Who made or commissioned this record and why?', and remembering that the real purpose may not always be the most apparent one.</p>
-                <p>Closely related to the previous point is the fact that records are not the whole story. They are selections from what could have been said about the real world to which they refer. Sometimes they will provide immediate answers to the questions you want to ask; sometimes they won't. But no matter what real events may lie behind these records, and how confidently the records assert themselves as the truth, they are selections designed to meet the needs of those who first wrote them down. Sometimes, therefore, it may be more useful to ask what they have missed out, and why that might be.</p>
-                <p>However, with these caveats, you will be wanting to get to grips with the records themselves, and so you may find it useful to get a handle on the information they offer, and where you can find it. The next section is therefore called Anatomy of a Record — it might as well be called 'How do I read REED?'</p>
+                <h2>3. Search Tips</h2>
               </div>
 
               <div class="row prev-next-buttons">
                 <div class="columns medium-4">
-                </div>
-                <div class="columns medium-4">
-                  <div class="next-button">
+                  <div class="previous-button">
                     <a href="{kiln:url-for-match('ereed-howto-anatomy', ())}">
-                      <div class="next">Next</div>
-                      <div class="next-page">Anatomy of a Record</div>
+                      <div class="next">Previous</div>
+                      <div class="next-page">2. Anatomy of a Record</div>
                     </a>
                   </div>
                 </div>
+                <div class="columns medium-4"></div>
               </div>
             </div>
           </div>

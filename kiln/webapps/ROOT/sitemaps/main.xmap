@@ -206,7 +206,7 @@
         <map:redirect-to uri="intro/" permanent="no" />
       </map:match>
 
-      <!-- Howto: Introduction to the Rsearch Process. -->
+      <!-- Howto: Introduction to the Research Process. -->
       <map:match id="ereed-howto-intro" pattern="howto/intro/">
         <map:aggregate element="aggregation" label="content">
           <map:part src="cocoon://_internal/menu/main.xml?url=howto/" />
@@ -221,6 +221,15 @@
           <map:part src="cocoon://_internal/menu/main.xml?url=howto/" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/howto-anatomy.xsl" />
+        <map:serialize />
+      </map:match>
+
+      <!-- Howto: Search Tips. -->
+      <map:match id="ereed-howto-search" pattern="howto/search/">
+        <map:aggregate element="aggregation">
+          <map:part src="cocoon://_internal/menu/main.xml?url=howto/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/howto-search.xsl" />
         <map:serialize />
       </map:match>
     </map:pipeline>
