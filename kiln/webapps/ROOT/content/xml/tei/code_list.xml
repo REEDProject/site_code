@@ -154,11 +154,13 @@
                         <idno type="STC_number">10336</idno>
                     </bibl>
 
-                    <bibl xml:id="DOU2">
-                        <title>Manorial Court Roll Excerpt (A)</title>
-                        <idno type="repository" sameAs="#Bodl."/>
+                    <msDesc xml:id="DOU2">
+                      <msIdentifier>
+                        <msName>Manorial Court Roll Excerpt (A)</msName>
+                        <repository sameAs="#Bodl." />
                         <idno type="shelfmark">MS. Douce d.24</idno>
-                    </bibl>
+                      </msIdentifier>
+                    </msDesc>
 
                     <bibl xml:id="V117">
                         <title>Archdeaconry of Stafford Visitation Act Book</title>
