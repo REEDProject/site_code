@@ -103,7 +103,7 @@
                                 <name>Lichfield Record Office</name>
                             </catDesc>
                         </category>
-                        <category xml:id="CRO">
+                        <category xml:id="cheshire-record-office">
                             <catDesc><name>Cheshire Record Office</name></catDesc>
                         </category>
                         <category xml:id="BL">
@@ -124,16 +124,16 @@
                                 <name>Staffordshire Record Office</name>
                             </catDesc>
                         </category>
-                        <category xml:id="CL">
+                        <category xml:id="chetham-library">
                             <catDesc><name>Chetham's Library</name></catDesc>
                         </category>
-                        <category xml:id="LA">
+                        <category xml:id="lincolnshire-archives">
                             <catDesc><name>Lincolnshire Archives</name></catDesc>
                         </category>
-                        <category xml:id="LCL">
+                        <category xml:id="lichfield-cathedral-library">
                             <catDesc><name>Lichfield Cathedral Library</name></catDesc>
                         </category>
-                        <category xml:id="NLBM">
+                        <category xml:id="brampton-museum">
                             <catDesc><name>Brampton Museum</name></catDesc>
                         </category>
                         <category xml:id="WRO">
@@ -142,7 +142,7 @@
                                 <name>Worcester Record Office</name>
                             </catDesc>
                         </category>
-                        <category xml:id="WSL">
+                        <category xml:id="william-salt-library">
                             <catDesc><name>William Salt Library</name></catDesc>
                         </category>
                         <category xml:id="WLHC">
@@ -157,7 +157,7 @@
                                 <name>Cambridge University Library</name>
                             </catDesc>
                         </category>
-                        <category xml:id="FSL">
+                        <category xml:id="folger-shakespeare-library">
                             <catDesc><name>Folger Shakespeare Library</name></catDesc>
                         </category>
                     </category>
@@ -213,7 +213,7 @@
                     <msDesc xml:id="CCCR">
                         <msIdentifier>
                             <settlement>Chester</settlement>
-                            <repository>Cheshire Record Office</repository>
+                            <repository sameAs="#cheshire-record-office"/>
                             <idno type="shelfmark">EDC 5 (1635)/87</idno>
                             <msName>Diocese of Chester Consistory Court Case, Response to Complaint
                                 in Colly v. Dikes</msName>
@@ -387,7 +387,7 @@
                     <msDesc xml:id="CORV">
                         <msIdentifier>
                             <settlement>Manchester</settlement>
-                            <repository>Chetham's Library</repository>
+                            <repository sameAs="#chetham-library"/>
                             <idno type="shelfmark">MUN.A.6.65.A</idno>
                             <msName>Corvisors' and Curriers' Guild Accounts</msName>
                         </msIdentifier>
@@ -423,7 +423,7 @@
                     <msDesc xml:id="LBNS">
                         <msIdentifier>
                             <settlement>Lincoln</settlement>
-                            <repository>Lincolnshire Archives</repository>
+                            <repository sameAs="#lincolnshire-archives"/>
                             <idno type="shelfmark">D&amp;C A/2/3</idno>
                             <msName>Cathedral Statutes of Bishop Hugh Nonant</msName>
                         </msIdentifier>
@@ -482,7 +482,7 @@
                     <msDesc xml:id="LCHX">
                         <msIdentifier>
                             <settlement>Chester</settlement>
-                            <repository>Cheshire Record Office</repository>
+                            <repository sameAs="#cheshire-record-office"/>
                             <idno type="shelfmark">DCH/0/8, item 2</idno>
                             <msName>Account of Robert Blaby, Bishop's Bailiff</msName>
                         </msIdentifier>
@@ -497,7 +497,7 @@
                     <msDesc xml:id="LDCA">
                         <msIdentifier>
                             <settlement>Lichfield</settlement>
-                            <repository>Lichfield Cathedral Library</repository>
+                            <repository sameAs="#lichfield-cathedral-library"/>
                             <idno type="shelfmark">Chapter Act Books No. 3</idno>
                             <msName>Dean and Chapter Act Book</msName>
                         </msIdentifier>
@@ -599,7 +599,7 @@
                     <msDesc xml:id="NASM">
                         <msIdentifier>
                             <settlement>Newcastle under Lyme</settlement>
-                            <repository>Brampton Museum</repository>
+                            <repository sameAs="#brampton-museum"/>
                             <idno type="shelfmark">no shelfmark</idno>
                             <msName>Corporation Minute Book</msName>
                         </msIdentifier>
@@ -710,7 +710,7 @@
                     <msDesc xml:id="SSU2">
                         <msIdentifier>
                             <settlement>Stafford</settlement>
-                            <repository>William Salt Library</repository>
+                            <repository sameAs="#william-salt-library"/>
                             <idno type="shelfmark">S.MS. 366/1/A</idno>
                             <msName>Copies of Summary Accounts (A)</msName>
                         </msIdentifier>
@@ -972,7 +972,7 @@
                     <msDesc xml:id="WALB">
                         <msIdentifier>
                             <settlement>Stafford</settlement>
-                            <repository>William Salt Library</repository>
+                            <repository sameAs="#william-salt-library"/>
                             <idno type="shelfmark">ms 50/A2/56</idno>
                             <msName>Bailiff's Accounts</msName>
                         </msIdentifier>
@@ -1447,7 +1447,7 @@
                     <msDesc xml:id="FHA1">
                         <msIdentifier>
                             <settlement>Washington, DC</settlement>
-                            <repository>Folger Shakespeare Library</repository>
+                            <repository sameAs="#folger-shakespeare-library"/>
                             <idno type="shelfmark">MS L.e.313</idno>
                             <msName>Sir Humphrey Ferrers' Household Accounts</msName>
                         </msIdentifier>
@@ -1462,7 +1462,7 @@
                     <msDesc xml:id="FHA2">
                         <msIdentifier>
                             <settlement>Washington, DC</settlement>
-                            <repository>Folger Shakespeare Library</repository>
+                            <repository sameAs="#folger-shakespeare-library"/>
                             <idno type="shelfmark">MS L.e.315</idno>
                             <msName>Sir Humphrey Ferrers' Household Accounts</msName>
                         </msIdentifier>
