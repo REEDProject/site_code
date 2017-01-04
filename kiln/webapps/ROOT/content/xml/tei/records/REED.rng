@@ -5,10 +5,10 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2016-08-12T23:52:12Z. .
-TEI Edition: Version 3.0.0. Last updated on
-	29th March 2016, revision 89ba24e
-TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
+Schema generated from ODD source 2016-12-21T22:39:42Z. .
+TEI Edition: Version 3.1.0. Last updated on
+	15th December 2016, revision d3f5e70
+TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.1.0/
   
 --><!--[https://creativecommons.org/licenses/by/4.0/] Creative Commons Attribution-->
    <define name="macro.paraContent">
@@ -71,27 +71,6 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             <ref name="model.gLike"/>
          </choice>
       </zeroOrMore>
-   </define>
-   <define name="macro.anyXML">
-      <element>
-         <anyName>
-            <except>
-               <nsName ns="http://www.tei-c.org/ns/1.0"/>
-               <name ns="http://www.tei-c.org/ns/Examples">egXML</name>
-            </except>
-         </anyName>
-         <zeroOrMore>
-            <attribute>
-               <anyName/>
-            </attribute>
-         </zeroOrMore>
-         <zeroOrMore>
-            <choice>
-               <text/>
-               <ref name="macro.anyXML"/>
-            </choice>
-         </zeroOrMore>
-      </element>
    </define>
    <define name="att.ascribed.attributes">
       <ref name="att.ascribed.attribute.who"/>
@@ -402,7 +381,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="REED-att.datable.w3c-att-datable-w3c-when-constraint-1">
+            id="REED-att.datable.w3c-att-datable-w3c-when-constraint-rule-1">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
@@ -411,7 +390,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="REED-att.datable.w3c-att-datable-w3c-from-constraint-2">
+            id="REED-att.datable.w3c-att-datable-w3c-from-constraint-rule-2">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
@@ -420,7 +399,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="REED-att.datable.w3c-att-datable-w3c-to-constraint-3">
+            id="REED-att.datable.w3c-att-datable-w3c-to-constraint-rule-3">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
@@ -499,7 +478,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="REED-att.datable-calendar-calendar-constraint-4">
+            id="REED-att.datable-calendar-calendar-constraint-rule-4">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
@@ -595,7 +574,6 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
    </define>
    <define name="att.editLike.attributes">
       <ref name="att.dimensions.attributes"/>
-      <ref name="att.source.attributes"/>
       <ref name="att.editLike.attribute.instant"/>
    </define>
    <define name="att.editLike.attribute.instant">
@@ -646,12 +624,28 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
          </attribute>
       </optional>
    </define>
+   <define name="att.global.source.attributes">
+      <ref name="att.global.source.attribute.source"/>
+   </define>
+   <define name="att.global.source.attribute.source">
+      <optional>
+         <attribute name="source">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the source from which some aspect of this element is drawn.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI"/>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
    <define name="att.global.attributes">
       <ref name="att.global.rendition.attributes"/>
       <ref name="att.global.linking.attributes"/>
       <ref name="att.global.analytic.attributes"/>
       <ref name="att.global.facs.attributes"/>
       <ref name="att.global.responsibility.attributes"/>
+      <ref name="att.global.source.attributes"/>
       <ref name="att.global.attribute.xmlid"/>
       <ref name="att.global.attribute.n"/>
       <ref name="att.global.attribute.xmllang"/>
@@ -987,7 +981,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="REED-att.typed-subtypeTyped-constraint-5">
+            id="REED-att.typed-subtypeTyped-constraint-rule-5">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
@@ -1068,7 +1062,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="REED-att.spanning-spanTo-spanTo-2-constraint-6">
+            id="REED-att.spanning-spanTo-spanTo-2-constraint-rule-6">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
@@ -1145,17 +1139,10 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
    <define name="att.transcriptional.attribute.cause">
       <optional>
          <attribute name="cause">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">documents the presumed cause for the intervention.
-Suggested values include: 1] fix; 2] unclear</a:documentation>
-            <choice>
-               <value>fix</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">repeated for the purpose of fixation</a:documentation>
-               <value>unclear</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">repeated to clarify a previously illegible or badly written text or mark</a:documentation>
-               <data type="token">
-                  <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
-               </data>
-            </choice>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">documents the presumed cause for the intervention.</a:documentation>
+            <data type="token">
+               <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+            </data>
          </attribute>
       </optional>
    </define>
@@ -2375,6 +2362,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <ref name="seg"/>
          <ref name="ex"/>
          <ref name="am"/>
+         <ref name="supplied"/>
       </choice>
    </define>
    <define name="model.imprintPart">
@@ -2421,6 +2409,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <ref name="model.nameLike.agent"/>
          <ref name="model.offsetLike"/>
          <ref name="model.placeStateLike"/>
+         <ref name="rs"/>
          <ref name="lang"/>
          <ref name="idno"/>
          <ref name="model.persNamePart"/>
@@ -2431,6 +2420,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <ref name="model.nameLike.agent_alternation"/>
          <ref name="model.offsetLike_alternation"/>
          <ref name="model.placeStateLike_alternation"/>
+         <ref name="rs"/>
          <ref name="lang"/>
          <ref name="idno"/>
          <ref name="model.persNamePart_alternation"/>
@@ -2440,6 +2430,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
       <ref name="model.nameLike.agent_sequence"/>
       <ref name="model.offsetLike_sequence"/>
       <ref name="model.placeStateLike_sequence"/>
+      <ref name="rs"/>
       <ref name="lang"/>
       <ref name="idno"/>
       <ref name="model.persNamePart_sequence"/>
@@ -2453,6 +2444,9 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
       </optional>
       <optional>
          <ref name="model.placeStateLike_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="rs"/>
       </optional>
       <optional>
          <ref name="lang"/>
@@ -2475,6 +2469,9 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <ref name="model.placeStateLike_sequenceOptionalRepeatable"/>
       </zeroOrMore>
       <zeroOrMore>
+         <ref name="rs"/>
+      </zeroOrMore>
+      <zeroOrMore>
          <ref name="lang"/>
       </zeroOrMore>
       <zeroOrMore>
@@ -2493,6 +2490,9 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
       </oneOrMore>
       <oneOrMore>
          <ref name="model.placeStateLike_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="rs"/>
       </oneOrMore>
       <oneOrMore>
          <ref name="lang"/>
@@ -2529,6 +2529,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    <define name="model.frontPart">
       <choice>
          <ref name="model.frontPart.drama"/>
+         <ref name="listBibl"/>
       </choice>
    </define>
    <define name="model.addrPart">
@@ -2628,18 +2629,29 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <ref name="calendarDesc"/>
       </choice>
    </define>
-   <define name="att.source.attributes">
-      <ref name="att.source.attribute.source"/>
+   <define name="att.partials.attributes">
+      <ref name="att.partials.attribute.extent"/>
    </define>
-   <define name="att.source.attribute.source">
+   <define name="att.partials.attribute.extent">
       <optional>
-         <attribute name="source">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a pointer to the bibliographical source from which a quotation or citation is drawn.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <data type="anyURI"/>
-               </oneOrMore>
-            </list>
+         <attribute name="extent">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates whether the pronunciation or orthography applies to all or part of a word.
+Suggested values include: 1] full(full form) ; 2] pref(prefix) ; 3] suff(suffix) ; 4] inf(infix) ; 5] part(partial) </a:documentation>
+            <choice>
+               <value>full</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(full form) </a:documentation>
+               <value>pref</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(prefix) </a:documentation>
+               <value>suff</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(suffix) </a:documentation>
+               <value>inf</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(infix) </a:documentation>
+               <value>part</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(partial) </a:documentation>
+               <data type="token">
+                  <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+               </data>
+            </choice>
          </attribute>
       </optional>
    </define>
@@ -2723,7 +2735,7 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(paragraph) marks paragraphs in prose. [3.1. Paragraphs 7.2.5. Speech Contents]</a:documentation>
          <ref name="macro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-p-abstractModel-p-constraint-4">
+                  id="REED-p-abstractModel-p-constraint-report-4">
             <rule context="tei:p">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="(ancestor::tei:p or ancestor::tei:ab)          and not(parent::tei:exemplum                |parent::tei:item                |parent::tei:note                |parent::tei:q                |parent::tei:quote                |parent::tei:remarks                |parent::tei:said                |parent::tei:sp                |parent::tei:stage                |parent::tei:cell                |parent::tei:figure)">
@@ -2732,7 +2744,7 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-p-abstractModel-structure-l-constraint-5">
+                  id="REED-p-abstractModel-structure-l-constraint-report-5">
             <rule context="tei:p">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="ancestor::tei:l[not(.//tei:note//tei:p[. = current()])]">
@@ -2769,7 +2781,6 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
          <ref name="macro.specialPara"/>
          <ref name="att.global.attributes"/>
          <ref name="att.typed.attributes"/>
-         <ref name="att.source.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2815,11 +2826,9 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
    </define>
    <define name="sic">
       <element name="sic">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Latin for thus or so
-   ) contains text reproduced although apparently incorrect or inaccurate. [3.4.1. Apparent Errors]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Latin for thus or so) contains text reproduced although apparently incorrect or inaccurate. [3.4.1. Apparent Errors]</a:documentation>
          <ref name="macro.paraContent"/>
          <ref name="att.global.attributes"/>
-         <ref name="att.source.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2863,7 +2872,6 @@ Normalization 12. Critical Apparatus]</a:documentation>
 Normalization 12. Critical Apparatus]</a:documentation>
          <ref name="macro.paraContent"/>
          <ref name="att.global.attributes"/>
-         <ref name="att.source.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2886,7 +2894,6 @@ Normalization 12. Critical Apparatus]</a:documentation>
          <ref name="att.ranging.attribute.min"/>
          <ref name="att.ranging.attribute.max"/>
          <ref name="att.ranging.attribute.confidence"/>
-         <ref name="att.source.attribute.source"/>
          <optional>
             <attribute name="unit">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">names the unit used for the measurement</a:documentation>
@@ -3040,7 +3047,19 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
       <element name="name">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(name, proper noun) contains a proper noun or noun phrase. [3.5.1. Referring Strings]</a:documentation>
          <ref name="macro.phraseSeq"/>
-         <ref name="att.global.attributes"/>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.attribute.n"/>
+         <ref name="att.global.attribute.xmllang"/>
+         <ref name="att.global.attribute.xmlbase"/>
+         <ref name="att.global.attribute.xmlspace"/>
+         <ref name="att.global.rendition.attribute.rend"/>
+         <ref name="att.global.rendition.attribute.rendition"/>
+         <ref name="att.global.linking.attribute.corresp"/>
+         <ref name="att.global.linking.attribute.sameAs"/>
+         <ref name="att.global.analytic.attribute.ana"/>
+         <ref name="att.global.facs.attribute.facs"/>
+         <ref name="att.global.responsibility.attribute.cert"/>
+         <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.personal.attributes"/>
          <ref name="att.datable.attribute.when-custom"/>
          <ref name="att.datable.attribute.notBefore-custom"/>
@@ -3060,6 +3079,16 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
          <ref name="att.ranging.attribute.min"/>
          <ref name="att.ranging.attribute.max"/>
          <ref name="att.ranging.attribute.confidence"/>
+         <ref name="att.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="rs">
+      <element name="rs">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(referencing string) contains a general purpose name or referring string. [13.2.1. Personal Names 3.5.1. Referring Strings]</a:documentation>
+         <ref name="macro.phraseSeq"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.naming.attributes"/>
          <ref name="att.typed.attributes"/>
          <empty/>
       </element>
@@ -3154,7 +3183,6 @@ Measures]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(abbreviation) contains an abbreviation of any sort. [3.5.5. Abbreviations and Their Expansions]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attributes"/>
-         <ref name="att.source.attributes"/>
          <ref name="att.typed.attribute.subtype"/>
          <empty/>
       </element>
@@ -3163,7 +3191,19 @@ Measures]</a:documentation>
       <element name="expan">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(expansion) contains the expansion of an abbreviation. [3.5.5. Abbreviations and Their Expansions]</a:documentation>
          <ref name="macro.phraseSeq"/>
-         <ref name="att.global.attributes"/>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.attribute.n"/>
+         <ref name="att.global.attribute.xmllang"/>
+         <ref name="att.global.attribute.xmlbase"/>
+         <ref name="att.global.attribute.xmlspace"/>
+         <ref name="att.global.rendition.attribute.rend"/>
+         <ref name="att.global.rendition.attribute.rendition"/>
+         <ref name="att.global.linking.attribute.corresp"/>
+         <ref name="att.global.linking.attribute.sameAs"/>
+         <ref name="att.global.analytic.attribute.ana"/>
+         <ref name="att.global.facs.attribute.facs"/>
+         <ref name="att.global.responsibility.attribute.cert"/>
+         <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.editLike.attribute.instant"/>
          <ref name="att.ranging.attribute.atLeast"/>
          <ref name="att.ranging.attribute.atMost"/>
@@ -3178,7 +3218,7 @@ Measures]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(pointer) defines a pointer to another location. [3.6. Simple Links and Cross-References 16.1. Links]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-ptr-ptrAtts-constraint-6">
+                  id="REED-ptr-ptrAtts-constraint-report-6">
             <rule context="tei:ptr">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@target and @cRef">Only one of the
 attributes @target and @cRef may be supplied on <name/>.</report>
@@ -3196,7 +3236,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) defines a reference to another location, possibly modified by additional text or comment. [3.6. Simple Links and Cross-References 16.1. Links]</a:documentation>
          <ref name="macro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-ref-refAtts-constraint-7">
+                  id="REED-ref-refAtts-constraint-report-7">
             <rule context="tei:ref">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@target and @cRef">Only one of the
 	attributes @target' and @cRef' may be supplied on <name/>
@@ -3291,7 +3331,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
       
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-list-gloss-list-must-have-labels-constraint-7">
+                  id="REED-list-gloss-list-must-have-labels-constraint-rule-7">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -3372,7 +3412,6 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
          <ref name="macro.specialPara"/>
          <ref name="att.global.attributes"/>
          <ref name="att.pointing.attributes"/>
-         <ref name="att.source.attributes"/>
          <ref name="att.typed.attribute.subtype"/>
          <ref name="att.written.attributes"/>
          <optional>
@@ -3422,8 +3461,6 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The note to this REED Record is in the margin</a:documentation>
                   <value>subhead</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The note to this REED Record is a subheading</a:documentation>
-                  <value>court</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The note to this REED Record is a court-related note</a:documentation>
                   <value>editorial</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The note to this REED Record is an editorial note</a:documentation>
                   <value>other</value>
@@ -3597,6 +3634,7 @@ Elements]</a:documentation>
          <ref name="att.global.attributes"/>
          <ref name="att.canonical.attributes"/>
          <ref name="att.typed.attribute.subtype"/>
+         <ref name="att.datable.attributes"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">classifies the title according to some convenient typology.</a:documentation>
@@ -3738,7 +3776,7 @@ Elements]</a:documentation>
             </choice>
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-relatedItem-targetorcontent1-constraint-8">
+                  id="REED-relatedItem-targetorcontent1-constraint-report-8">
             <rule context="tei:relatedItem">
                <sch:report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3749,7 +3787,7 @@ relatedItem element must be empty</sch:report>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-relatedItem-targetorcontent1-constraint-5">
+                  id="REED-relatedItem-targetorcontent1-constraint-assert-5">
             <rule context="tei:relatedItem">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3861,7 +3899,7 @@ relatedItem element must be empty</sch:report>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">associates an interpretative annotation directly with a span of text. [17.3. Spans and Interpretations]</a:documentation>
          <ref name="macro.phraseSeq.limited"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-span-targetfrom-constraint-9">
+                  id="REED-span-targetfrom-constraint-report-9">
             <rule context="tei:span">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@from and @target">
 Only one of the attributes @target and @from may be supplied on <name/>
@@ -3869,7 +3907,7 @@ Only one of the attributes @target and @from may be supplied on <name/>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-span-targetto-constraint-10">
+                  id="REED-span-targetto-constraint-report-10">
             <rule context="tei:span">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@to and @target">
 Only one of the attributes @target and @to may be supplied on <name/>
@@ -3877,14 +3915,14 @@ Only one of the attributes @target and @to may be supplied on <name/>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-span-tonotfrom-constraint-11">
+                  id="REED-span-tonotfrom-constraint-report-11">
             <rule context="tei:span">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@to and not(@from)">
 If @to is supplied on <name/>, @from must be supplied as well</report>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-span-tofrom-constraint-12">
+                  id="REED-span-tofrom-constraint-report-12">
             <rule context="tei:span">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="contains(normalize-space(@to),' ') or contains(normalize-space(@from),' ')">
@@ -4310,20 +4348,10 @@ Suggested values include: 1] simple; 2] lemma; 3] variant; 4] compound; 5] deriv
          <ref name="macro.paraContent"/>
          <ref name="att.global.attributes"/>
          <ref name="att.lexicographic.attributes"/>
+         <ref name="att.partials.attributes"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gives the type of spelling.</a:documentation>
-               <data type="token">
-                  <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
-               </data>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="extent"
-                       a:defaultValue="full">
-               <a:documentation>gives the extent of the orthographic information provided.
-Sample values include: 1] full(full form) ; 2] pref(prefix) ; 3] suff(suffix) ; 4] part(partial) </a:documentation>
                <data type="token">
                   <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
                </data>
@@ -4339,17 +4367,7 @@ Sample values include: 1] full(full form) ; 2] pref(prefix) ; 3] suff(suffix) ; 
          <ref name="att.global.attributes"/>
          <ref name="att.lexicographic.attributes"/>
          <ref name="att.notated.attributes"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="extent"
-                       a:defaultValue="full">
-               <a:documentation>indicates whether the pronunciation is for whole word or part.
-Sample values include: 1] full(full form) ; 2] pref(prefix) ; 3] suff(suffix) ; 4] part(partial) </a:documentation>
-               <data type="token">
-                  <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
-               </data>
-            </attribute>
-         </optional>
+         <ref name="att.partials.attributes"/>
          <empty/>
       </element>
    </define>
@@ -4736,17 +4754,6 @@ Sample values include: 1] syn(synonym) ; 2] etym(etymological) ; 3] cf(compare o
       
          </group>
          <ref name="att.global.attributes"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="type"
-                       a:defaultValue="text">
-               <a:documentation>specifies the kind of document to which the header is attached, for example whether it is a corpus or individual text.
-Sample values include: 1] text; 2] corpus</a:documentation>
-               <data type="token">
-                  <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
-               </data>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -4898,6 +4905,8 @@ Sample values include: 1] text; 2] corpus</a:documentation>
          </zeroOrMore>
          <ref name="att.global.attributes"/>
          <ref name="att.sortable.attributes"/>
+         <ref name="att.datable.attributes"/>
+         <ref name="att.typed.attribute.subtype"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">categorizes the identifier, for example as an ISBN, Social Security number, etc.</a:documentation>
@@ -5076,15 +5085,11 @@ Sample values include: 1] text; 2] corpus</a:documentation>
    <define name="tagsDecl">
       <element name="tagsDecl">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(tagging declaration) provides detailed information about the tagging applied to a document. [2.3.4. The Tagging Declaration 2.3. The Encoding Description]</a:documentation>
-         <group>
-      
-        
-      
+         <group>      
       
             <zeroOrMore>
                <ref name="namespace"/>
             </zeroOrMore>
-      
          </group>
          <ref name="att.global.attributes"/>
          <optional>
@@ -5166,7 +5171,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
    </define>
    <define name="prefixDef">
       <element name="prefixDef">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(prefixing scheme used in data.pointer values) defines a prefixing scheme used in data.pointer values, showing how abbreviated URIs using the scheme may be expanded into full URIs. [16.2.3. Using Abbreviated Pointers]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(prefix definition) defines a prefixing scheme used in data.pointer values, showing how abbreviated URIs using the scheme may be expanded into full URIs. [16.2.3. Using Abbreviated Pointers]</a:documentation>
          <zeroOrMore>
             <ref name="model.pLike"/>
          </zeroOrMore>
@@ -5174,7 +5179,9 @@ Sample values include: 1] text; 2] corpus</a:documentation>
          <ref name="att.patternReplacement.attributes"/>
          <attribute name="ident">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a name which functions as the prefix for an abbreviated pointing scheme such as a private URI scheme. The prefix constitutes the text preceding the first colon.</a:documentation>
-            <data type="Name"/>
+            <data type="token">
+               <param name="pattern">[a-z][a-z0-9\+\.\-]*</param>
+            </data>
          </attribute>
          <empty/>
       </element>
@@ -5207,34 +5214,43 @@ Sample values include: 1] text; 2] corpus</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines a typology either implicitly, by means of a bibliographic citation, or explicitly by a structured taxonomy. [2.3.7. The Classification Declaration]</a:documentation>
          <choice>
       
-            <zeroOrMore>
-               <choice>
-                  <ref name="model.glossLike"/>
-                  <ref name="model.descLike"/>
-               </choice>
-            </zeroOrMore>
       
       
-            <oneOrMore>
-               <choice>
-                  <ref name="category"/>
-                  <ref name="taxonomy"/>
-               </choice>
-            </oneOrMore>
       
+      
+      
+      
+      
+            <choice>
+	              <oneOrMore>
+                  <choice>
+                     <ref name="category"/>
+                     <ref name="taxonomy"/>
+	                 </choice>
+               </oneOrMore>
+	              <group>
+	                 <oneOrMore>
+                     <choice>
+                        <ref name="model.glossLike"/>
+                        <ref name="model.descLike"/>
+	                    </choice>
+                  </oneOrMore>
+	                 <zeroOrMore>
+                     <choice>
+                        <ref name="category"/>
+                        <ref name="taxonomy"/>
+	                    </choice>
+                  </zeroOrMore>
+	              </group>
+            </choice>
             <group>
-        
-          
                <ref name="model.biblLike"/>
-        
-        
                <zeroOrMore>
                   <choice>
                      <ref name="category"/>
                      <ref name="taxonomy"/>
                   </choice>
                </zeroOrMore>
-        
             </group>
          </choice>
          <ref name="att.global.attributes"/>
@@ -5438,7 +5454,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines an association or hypertextual link among elements or passages, of some type not more precisely specifiable by other elements. [16.1. Links]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-link-linkTargets3-constraint-6">
+                  id="REED-link-linkTargets3-constraint-assert-6">
             <rule context="tei:link">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -5458,7 +5474,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(anonymous block) contains any arbitrary component-level unit of text, acting as an anonymous container for phrase or inter level elements analogous to, but without the semantic baggage of, a paragraph. [16.3. Blocks, Segments, and Anchors]</a:documentation>
          <ref name="macro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-ab-abstractModel-structure-p-constraint-13">
+                  id="REED-ab-abstractModel-structure-p-constraint-report-13">
             <rule context="tei:ab">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="(ancestor::tei:p or ancestor::tei:ab)          and not(parent::tei:exemplum         |parent::tei:item         |parent::tei:note         |parent::tei:q         |parent::tei:quote         |parent::tei:remarks         |parent::tei:said         |parent::tei:sp         |parent::tei:stage         |parent::tei:cell         |parent::tei:figure)">
@@ -5467,7 +5483,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-ab-abstractModel-structure-l-constraint-14">
+                  id="REED-ab-abstractModel-structure-l-constraint-report-14">
             <rule context="tei:ab">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="ancestor::tei:l or ancestor::tei:lg">
@@ -5513,7 +5529,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
    </define>
    <define name="anchor">
       <element name="anchor">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(anchor point) attaches an identifier to a point within a text, whether or not it corresponds with a textual element. [8.4.2. Synchronization and Overlap 16.4. Correspondence and Alignment]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(anchor point) attaches an identifier to a point within a text, whether or not it corresponds with a textual element. [8.4.2. Synchronization and Overlap 16.5. Correspondence and Alignment]</a:documentation>
          <empty/>
          <ref name="att.global.attributes"/>
          <ref name="att.typed.attributes"/>
@@ -5524,7 +5540,19 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <element name="seg">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(arbitrary segment) represents any segmentation of text below the chunk level. [16.3. Blocks, Segments, and Anchors 6.2. Components of the Verse Line 7.2.5. Speech Contents]</a:documentation>
          <ref name="macro.paraContent"/>
-         <ref name="att.global.attributes"/>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.attribute.n"/>
+         <ref name="att.global.attribute.xmllang"/>
+         <ref name="att.global.attribute.xmlbase"/>
+         <ref name="att.global.attribute.xmlspace"/>
+         <ref name="att.global.rendition.attribute.rend"/>
+         <ref name="att.global.rendition.attribute.rendition"/>
+         <ref name="att.global.linking.attribute.corresp"/>
+         <ref name="att.global.linking.attribute.sameAs"/>
+         <ref name="att.global.analytic.attribute.ana"/>
+         <ref name="att.global.facs.attribute.facs"/>
+         <ref name="att.global.responsibility.attribute.cert"/>
+         <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.segLike.attributes"/>
          <ref name="att.typed.attribute.subtype"/>
          <ref name="att.written.attributes"/>
@@ -5602,6 +5630,16 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <element name="catchwords">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">describes the system used to ensure correct ordering of the quires making up a codex or incunable, typically by means of annotations at the foot of the page. [10.3.7. Catchwords, Signatures, Secundo Folio]</a:documentation>
          <ref name="macro.phraseSeq"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="REED-catchwords-catchword_in_msDesc-constraint-assert-7">
+            <rule context="tei:catchwords">
+               <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                           xmlns="http://www.tei-c.org/ns/1.0"
+                           test="ancestor::tei:msDesc"
+                           role="nonfatal">WARNING: deprecated use of element — The <sch:name/> element will not be allowed outside of msDesc as of 2018-10-01.</sch:assert>
+            </rule>
+         </pattern>
          <ref name="att.global.attributes"/>
          <empty/>
       </element>
@@ -5616,7 +5654,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-dimensions-duplicateDim-constraint-15">
+                  id="REED-dimensions-duplicateDim-constraint-report-15">
             <rule context="tei:dimensions">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(tei:width)&gt; 1">
 The element <name/> may appear once only
@@ -5624,7 +5662,7 @@ The element <name/> may appear once only
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-dimensions-duplicateDim-constraint-16">
+                  id="REED-dimensions-duplicateDim-constraint-report-16">
             <rule context="tei:dimensions">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(tei:height)&gt; 1">
 The element <name/> may appear once only
@@ -5632,7 +5670,7 @@ The element <name/> may appear once only
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-dimensions-duplicateDim-constraint-17">
+                  id="REED-dimensions-duplicateDim-constraint-report-17">
             <rule context="tei:dimensions">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(tei:depth)&gt; 1">
 The element <name/> may appear once only
@@ -5794,7 +5832,6 @@ Sample values include: 1] leaves; 2] ruled; 3] pricked; 4] written; 5] miniature
          <ref name="att.ranging.attribute.min"/>
          <ref name="att.ranging.attribute.max"/>
          <ref name="att.ranging.attribute.confidence"/>
-         <ref name="att.source.attribute.source"/>
          <ref name="att.typed.attributes"/>
          <empty/>
       </element>
@@ -5815,6 +5852,16 @@ Sample values include: 1] leaves; 2] ruled; 3] pricked; 4] written; 5] miniature
       <element name="secFol">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(second folio) marks the word or words taken from a fixed point in a codex (typically the beginning of the second leaf) in order to provide a unique identifier for it.  [10.3.7. Catchwords, Signatures, Secundo Folio]</a:documentation>
          <ref name="macro.phraseSeq"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="REED-secFol-secFol_in_msDesc-constraint-assert-8">
+            <rule context="tei:secFol">
+               <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                           xmlns="http://www.tei-c.org/ns/1.0"
+                           test="ancestor::tei:msDesc"
+                           role="nonfatal">WARNING: deprecated use of element — The <sch:name/> element will not be allowed outside of msDesc as of 2018-10-01.</sch:assert>
+            </rule>
+         </pattern>
          <ref name="att.global.attributes"/>
          <empty/>
       </element>
@@ -5823,6 +5870,16 @@ Sample values include: 1] leaves; 2] ruled; 3] pricked; 4] written; 5] miniature
       <element name="signatures">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains discussion of the leaf or quire signatures found within a codex. [10.3.7. Catchwords, Signatures, Secundo Folio]</a:documentation>
          <ref name="macro.specialPara"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="REED-signatures-signatures_in_msDesc-constraint-assert-9">
+            <rule context="tei:signatures">
+               <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                           xmlns="http://www.tei-c.org/ns/1.0"
+                           test="ancestor::tei:msDesc"
+                           role="nonfatal">WARNING: deprecated use of element — The <sch:name/> element will not be allowed outside of msDesc as of 2018-10-01.</sch:assert>
+            </rule>
+         </pattern>
          <ref name="att.global.attributes"/>
          <empty/>
       </element>
@@ -5887,7 +5944,7 @@ Sample values include: 1] leaves; 2] ruled; 3] pricked; 4] written; 5] miniature
       
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-msIdentifier-msId_minimal-constraint-18">
+                  id="REED-msIdentifier-msId_minimal-constraint-report-18">
             <rule context="tei:msIdentifier">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="not(parent::tei:msPart) and       (local-name(*[1])='idno' or       local-name(*[1])='altIdentifier' or       normalize-space(.)='')">An msIdentifier must contain either a repository or location of some type, or a manuscript name</report>
@@ -6187,7 +6244,10 @@ Sample values include: 1] leaves; 2] ruled; 3] pricked; 4] written; 5] miniature
                      </choice>
                   </zeroOrMore>
           
-          
+                  <optional>
+                     <ref name="filiation"/>
+                  </optional>
+            
                   <zeroOrMore>
                      <ref name="model.noteLike"/>
                   </zeroOrMore>
@@ -6763,7 +6823,6 @@ Suggested values include: 1] paper; 2] parch(parchment) ; 3] mixed</a:documentat
          <ref name="att.ranging.attribute.min"/>
          <ref name="att.ranging.attribute.max"/>
          <ref name="att.ranging.attribute.confidence"/>
-         <ref name="att.source.attribute.source"/>
          <ref name="att.datable.attribute.when-custom"/>
          <ref name="att.datable.attribute.notBefore-custom"/>
          <ref name="att.datable.attribute.notAfter-custom"/>
@@ -6787,7 +6846,6 @@ Suggested values include: 1] paper; 2] parch(parchment) ; 3] mixed</a:documentat
          <ref name="att.global.attributes"/>
          <ref name="att.datable.attributes"/>
          <ref name="att.typed.attributes"/>
-         <ref name="att.source.attributes"/>
          <empty/>
       </element>
    </define>
@@ -6925,10 +6983,7 @@ Suggested values include: 1] paper; 2] parch(parchment) ; 3] mixed</a:documentat
       <element name="msPart">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(manuscript part) contains information about an originally distinct manuscript or part of a manuscript, which is now part of a composite manuscript. [10.10. Manuscript Parts]</a:documentation>
          <group>
-            <choice>
-               <ref name="altIdentifier"/>
-               <ref name="msIdentifier"/>
-            </choice>
+            <ref name="msIdentifier"/>
             <zeroOrMore>
                <ref name="model.headLike"/>
             </zeroOrMore>
@@ -6955,17 +7010,8 @@ Suggested values include: 1] paper; 2] parch(parchment) ; 3] mixed</a:documentat
                </group>
             </choice>
          </group>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-msPart-deprecate-altIdentifier-child-constraint-19">
-            <rule context="tei:msPart">
-               <sch:report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                           xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                           xmlns="http://www.tei-c.org/ns/1.0"
-                           test="child::tei:altIdentifier"
-                           role="nonfatal">WARNING: use of deprecated method — the use of the altIdentifier element as a direct child of the msPart element will be removed from the TEI on 2016-09-09</sch:report>
-            </rule>
-         </pattern>
          <ref name="att.global.attributes"/>
+         <ref name="att.typed.attributes"/>
          <empty/>
       </element>
    </define>
@@ -7001,6 +7047,7 @@ Suggested values include: 1] paper; 2] parch(parchment) ; 3] mixed</a:documentat
             </choice>
         </group>
          <ref name="att.global.attributes"/>
+         <ref name="att.typed.attributes"/>
          <empty/>
       </element>
    </define>
@@ -7133,7 +7180,19 @@ Suggested values include: 1] paper; 2] parch(parchment) ; 3] mixed</a:documentat
       <element name="orgName">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(organization name) contains an organizational name. [13.2.2. Organizational Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
-         <ref name="att.global.attributes"/>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.attribute.n"/>
+         <ref name="att.global.attribute.xmllang"/>
+         <ref name="att.global.attribute.xmlbase"/>
+         <ref name="att.global.attribute.xmlspace"/>
+         <ref name="att.global.rendition.attribute.rend"/>
+         <ref name="att.global.rendition.attribute.rendition"/>
+         <ref name="att.global.linking.attribute.corresp"/>
+         <ref name="att.global.linking.attribute.sameAs"/>
+         <ref name="att.global.analytic.attribute.ana"/>
+         <ref name="att.global.facs.attribute.facs"/>
+         <ref name="att.global.responsibility.attribute.cert"/>
+         <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.datable.attribute.when-custom"/>
          <ref name="att.datable.attribute.notBefore-custom"/>
          <ref name="att.datable.attribute.notAfter-custom"/>
@@ -7162,7 +7221,19 @@ Suggested values include: 1] paper; 2] parch(parchment) ; 3] mixed</a:documentat
       <element name="persName">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(personal name) contains a proper noun or proper-noun phrase referring to a person, possibly including one or more of the person's forenames, surnames, honorifics, added names, etc. [13.2.1. Personal Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
-         <ref name="att.global.attributes"/>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.attribute.n"/>
+         <ref name="att.global.attribute.xmllang"/>
+         <ref name="att.global.attribute.xmlbase"/>
+         <ref name="att.global.attribute.xmlspace"/>
+         <ref name="att.global.rendition.attribute.rend"/>
+         <ref name="att.global.rendition.attribute.rendition"/>
+         <ref name="att.global.linking.attribute.corresp"/>
+         <ref name="att.global.linking.attribute.sameAs"/>
+         <ref name="att.global.analytic.attribute.ana"/>
+         <ref name="att.global.facs.attribute.facs"/>
+         <ref name="att.global.responsibility.attribute.cert"/>
+         <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.datable.attribute.when-custom"/>
          <ref name="att.datable.attribute.notBefore-custom"/>
          <ref name="att.datable.attribute.notAfter-custom"/>
@@ -7210,7 +7281,19 @@ Suggested values include: 1] paper; 2] parch(parchment) ; 3] mixed</a:documentat
          <ref name="att.ranging.attribute.min"/>
          <ref name="att.ranging.attribute.max"/>
          <ref name="att.ranging.attribute.confidence"/>
-         <ref name="att.global.attributes"/>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.attribute.n"/>
+         <ref name="att.global.attribute.xmllang"/>
+         <ref name="att.global.attribute.xmlbase"/>
+         <ref name="att.global.attribute.xmlspace"/>
+         <ref name="att.global.rendition.attribute.rend"/>
+         <ref name="att.global.rendition.attribute.rendition"/>
+         <ref name="att.global.linking.attribute.corresp"/>
+         <ref name="att.global.linking.attribute.sameAs"/>
+         <ref name="att.global.analytic.attribute.ana"/>
+         <ref name="att.global.facs.attribute.facs"/>
+         <ref name="att.global.responsibility.attribute.cert"/>
+         <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.personal.attributes"/>
          <ref name="att.typed.attributes"/>
          <empty/>
@@ -7601,7 +7684,7 @@ Suggested values include: 1] REED_record_group; 2] abbreviations_symbols; 3] rec
             </optional>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-div-abstractModel-structure-l-constraint-20">
+                  id="REED-div-abstractModel-structure-l-constraint-report-19">
             <rule context="tei:div">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="ancestor::tei:l">
         Abstract model violation: Lines may not contain higher-level structural elements such as div.
@@ -7609,7 +7692,7 @@ Suggested values include: 1] REED_record_group; 2] abbreviations_symbols; 3] rec
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-div-abstractModel-structure-p-constraint-21">
+                  id="REED-div-abstractModel-structure-p-constraint-report-20">
             <rule context="tei:div">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="ancestor::tei:p or ancestor::tei:ab and not(ancestor::tei:floatingText)">
@@ -7623,8 +7706,14 @@ Suggested values include: 1] REED_record_group; 2] abbreviations_symbols; 3] rec
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.
-Suggested values include: 1] document_desc; 2] endnote; 3] repository_abbr; 4] symbols; 5] the_documents; 6] transcription; 7] translation; 8] other</a:documentation>
+Suggested values include: 1] acknowledgments; 2] appendix; 3] background; 4] document_desc; 5] endnote; 6] repository_abbr; 7] symbols; 8] the_documents; 9] traditions; 10] transcription; 11] translation; 12] other</a:documentation>
                <choice>
+                  <value>acknowledgments</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This REED division is for the Acknowledgments section</a:documentation>
+                  <value>appendix</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This REED division is for the Acknowledgments section</a:documentation>
+                  <value>background</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This REED division is for the Historical Background section</a:documentation>
                   <value>document_desc</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This REED division is a document description</a:documentation>
                   <value>endnote</value>
@@ -7635,6 +7724,8 @@ Suggested values include: 1] document_desc; 2] endnote; 3] repository_abbr; 4] s
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This REED division is for symbols</a:documentation>
                   <value>the_documents</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This REED division is for The Documents</a:documentation>
+                  <value>traditions</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This REED division is for the Performance Traditions section</a:documentation>
                   <value>transcription</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This REED division is a transcription</a:documentation>
                   <value>translation</value>
@@ -7702,6 +7793,7 @@ Suggested values include: 1] document_desc; 2] endnote; 3] repository_abbr; 4] s
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(signature) contains the closing salutation, etc., appended to a foreword, dedicatory epistle, or other division of a text. [4.2.2. Openers and Closers]</a:documentation>
          <ref name="macro.paraContent"/>
          <ref name="att.global.attributes"/>
+         <ref name="att.written.attributes"/>
          <empty/>
       </element>
    </define>
@@ -7767,7 +7859,7 @@ Suggested values include: 1] document_desc; 2] endnote; 3] repository_abbr; 4] s
       <element name="back">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(back matter) contains any appendixes, etc. following the main part of a text. [4.7. Back Matter 4. Default Text Structure]</a:documentation>
          <group>
-      
+
             <zeroOrMore>
                <choice>
                   <ref name="model.frontPart"/>
@@ -7777,16 +7869,16 @@ Suggested values include: 1] document_desc; 2] endnote; 3] repository_abbr; 4] s
                   <ref name="model.global"/>
                </choice>
             </zeroOrMore>
-      
-      
-        
+
+
+
             <optional>
                <choice>
                   <group>
-              
+
                      <ref name="model.div1Like"/>
-              
-              
+
+
                      <zeroOrMore>
                         <choice>
                            <ref name="model.frontPart"/>
@@ -7794,13 +7886,13 @@ Suggested values include: 1] document_desc; 2] endnote; 3] repository_abbr; 4] s
                            <ref name="model.global"/>
                         </choice>
                      </zeroOrMore>
-              
+
                   </group>
                   <group>
-              
+
                      <ref name="model.divLike"/>
-              
-              
+
+
                      <zeroOrMore>
                         <choice>
                            <ref name="model.frontPart"/>
@@ -7808,29 +7900,29 @@ Suggested values include: 1] document_desc; 2] endnote; 3] repository_abbr; 4] s
                            <ref name="model.global"/>
                         </choice>
                      </zeroOrMore>
-              
+
                   </group>
                </choice>
             </optional>
-        
-      
-      
+
+
+
             <optional>
                <group>
-          
+
                   <ref name="model.divBottomPart"/>
-          
-          
+
+
                   <zeroOrMore>
                      <choice>
                         <ref name="model.divBottomPart"/>
                         <ref name="model.global"/>
                      </choice>
                   </zeroOrMore>
-          
+
                </group>
             </optional>
-      
+
          </group>
          <ref name="att.global.attributes"/>
          <empty/>
@@ -7856,20 +7948,18 @@ Suggested values include: 1] document_desc; 2] endnote; 3] repository_abbr; 4] s
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(added span of text) marks the beginning of a longer sequence of text added by an author, scribe, annotator or corrector (see also add). [11.3.1.4. Additions and Deletions]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-addSpan-spanTo-constraint-7">
+                  id="REED-addSpan-spanTo-constraint-assert-10">
             <rule context="tei:addSpan">
-               <sch:assert xmlns:s="http://www.ascc.net/xml/schematron"
-                           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
                            xmlns="http://www.tei-c.org/ns/1.0"
                            test="@spanTo">The @spanTo attribute of <sch:name/> is required.</sch:assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-addSpan-spanTo_fr-constraint-8">
+                  id="REED-addSpan-spanTo_fr-constraint-assert-11">
             <rule context="tei:addSpan">
-               <sch:assert xmlns:s="http://www.ascc.net/xml/schematron"
-                           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
                            xmlns="http://www.tei-c.org/ns/1.0"
                            test="@spanTo">L'attribut spanTo est requis.</sch:assert>
@@ -7888,7 +7978,6 @@ Suggested values include: 1] document_desc; 2] endnote; 3] repository_abbr; 4] s
          <ref name="att.ranging.attribute.min"/>
          <ref name="att.ranging.attribute.max"/>
          <ref name="att.ranging.attribute.confidence"/>
-         <ref name="att.source.attribute.source"/>
          <ref name="att.written.attribute.hand"/>
          <ref name="att.placement.attributes"/>
          <ref name="att.typed.attributes"/>
@@ -7968,13 +8057,13 @@ Suggested values include: 1] bookbinding; 2] creasing; 3] creasing_tearing; 4] c
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(deleted span of text) marks the beginning of a longer sequence of text deleted, marked as deleted, or otherwise signaled as superfluous or spurious by an author, scribe, annotator, or corrector. [11.3.1.4. Additions and Deletions]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-delSpan-spanTo-constraint-9">
+                  id="REED-delSpan-spanTo-constraint-assert-12">
             <rule context="tei:delSpan">
                <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@spanTo">The @spanTo attribute of <name/> is required.</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-delSpan-spanTo_fr-constraint-10">
+                  id="REED-delSpan-spanTo_fr-constraint-assert-13">
             <rule context="tei:delSpan">
                <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@spanTo">L'attribut spanTo est requis.</assert>
             </rule>
@@ -8000,7 +8089,6 @@ Suggested values include: 1] bookbinding; 2] creasing; 3] creasing_tearing; 4] c
          <ref name="att.ranging.attribute.min"/>
          <ref name="att.ranging.attribute.max"/>
          <ref name="att.ranging.attribute.confidence"/>
-         <ref name="att.source.attribute.source"/>
          <empty/>
       </element>
    </define>
@@ -8057,7 +8145,6 @@ Suggested values include: 1] catch; 2] other</a:documentation>
          <empty/>
          <ref name="att.global.attributes"/>
          <ref name="att.handFeatures.attributes"/>
-         <ref name="att.source.attributes"/>
          <optional>
             <attribute name="new">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates a handNote element describing the hand concerned.</a:documentation>
@@ -8104,9 +8191,9 @@ Suggested values include: 1] catch; 2] other</a:documentation>
          <ref name="att.global.analytic.attribute.ana"/>
          <ref name="att.global.facs.attribute.facs"/>
          <ref name="att.global.responsibility.attribute.cert"/>
+         <ref name="att.global.source.attribute.source"/>
          <ref name="att.typed.attributes"/>
          <ref name="att.dimensions.attributes"/>
-         <ref name="att.source.attributes"/>
          <optional>
             <attribute name="resp">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsible party) (responsible party) indicates the individual responsible for identifying and measuring the space</a:documentation>
@@ -8142,14 +8229,26 @@ Suggested values include: 1] catch; 2] other</a:documentation>
             </choice>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="REED-subst-substContents1-constraint-11">
+                  id="REED-subst-substContents1-constraint-assert-14">
             <rule context="tei:subst">
                <assert xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="child::tei:add and child::tei:del">
                   <name/> must have at least one child add and at least one child del</assert>
             </rule>
          </pattern>
-         <ref name="att.global.attributes"/>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.attribute.n"/>
+         <ref name="att.global.attribute.xmllang"/>
+         <ref name="att.global.attribute.xmlbase"/>
+         <ref name="att.global.attribute.xmlspace"/>
+         <ref name="att.global.rendition.attribute.rend"/>
+         <ref name="att.global.rendition.attribute.rendition"/>
+         <ref name="att.global.linking.attribute.corresp"/>
+         <ref name="att.global.linking.attribute.sameAs"/>
+         <ref name="att.global.analytic.attribute.ana"/>
+         <ref name="att.global.facs.attribute.facs"/>
+         <ref name="att.global.responsibility.attribute.cert"/>
+         <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.transcriptional.attribute.status"/>
          <ref name="att.transcriptional.attribute.cause"/>
          <ref name="att.transcriptional.attribute.seq"/>
@@ -8180,7 +8279,6 @@ Suggested values include: 1] catch; 2] other</a:documentation>
          <ref name="att.ranging.attribute.min"/>
          <ref name="att.ranging.attribute.max"/>
          <ref name="att.ranging.attribute.confidence"/>
-         <ref name="att.source.attribute.source"/>
          <optional>
             <attribute name="reason">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">one or more words indicating why the text has had to be supplied, e.g. overbinding, faded-ink, lost-folio, omitted-in-original.</a:documentation>
@@ -8210,7 +8308,6 @@ Suggested values include: 1] catch; 2] other</a:documentation>
          <ref name="att.ranging.attribute.min"/>
          <ref name="att.ranging.attribute.max"/>
          <ref name="att.ranging.attribute.confidence"/>
-         <ref name="att.source.attribute.source"/>
          <optional>
             <attribute name="reason">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">one or more words indicating why this text is believed to be superfluous, e.g. repeated, interpolated etc.</a:documentation>
