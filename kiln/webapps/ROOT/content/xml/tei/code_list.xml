@@ -107,13 +107,22 @@
                             <catDesc><name>Cheshire Record Office</name></catDesc>
                         </category>
                         <category xml:id="BL">
-                            <catDesc><name>British Library</name></catDesc>
+                            <catDesc>
+                                <abbr>BL</abbr>
+                                <name>British Library</name>
+                            </catDesc>
                         </category>
                         <category xml:id="TNA">
-                            <catDesc><name>The National Archives</name></catDesc>
+                            <catDesc>
+                                <abbr>TNA</abbr>
+                                <name>The National Archives</name>
+                            </catDesc>
                         </category>
                         <category xml:id="STRO">
-                            <catDesc><name>Staffordshire Record Office</name></catDesc>
+                            <catDesc>
+                                <abbr>STRO</abbr>
+                                <name>Staffordshire Record Office</name>
+                            </catDesc>
                         </category>
                         <category xml:id="CL">
                             <catDesc><name>Chetham's Library</name></catDesc>
@@ -128,16 +137,25 @@
                             <catDesc><name>Brampton Museum</name></catDesc>
                         </category>
                         <category xml:id="WRO">
-                            <catDesc><name>Worcester Record Office</name></catDesc>
+                            <catDesc>
+                                <abbr>WRO</abbr>
+                                <name>Worcester Record Office</name>
+                            </catDesc>
                         </category>
                         <category xml:id="WSL">
                             <catDesc><name>William Salt Library</name></catDesc>
                         </category>
                         <category xml:id="WLHC">
-                            <catDesc><name>Walsall Local History Centre</name></catDesc>
+                            <catDesc>
+                                <abbr>WLHC</abbr>
+                                <name>Walsall Local History Centre</name>
+                            </catDesc>
                         </category>
                         <category xml:id="CUL">
-                            <catDesc><name>Cambridge University Library</name></catDesc>
+                            <catDesc>
+                                <abbr>CUL</abbr>
+                                <name>Cambridge University Library</name>
+                            </catDesc>
                         </category>
                         <category xml:id="FSL">
                             <catDesc><name>Folger Shakespeare Library</name></catDesc>
