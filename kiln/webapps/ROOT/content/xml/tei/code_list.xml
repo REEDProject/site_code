@@ -151,7 +151,7 @@
         <body>
             <head>Abbreviations, symbols and taxonomies used in eREED</head>
 
-            <div>
+            <div xml:id="sources">
                 <head>Sources</head>
 
                 <listBibl>
@@ -553,9 +553,25 @@
                             <idno type="shelfmark">DL 42/13</idno>
                             <msName>Letter from John of Gaunt's Register Book</msName>
                         </msIdentifier>
-                        <p>John of Gaunt's two register books contain various orders, including orders for payments, letters, and many other types of official records concerning the running of the vast duchy of Lancaster. Some of the orders are addressed to borough and other local officials within the duchy, and deal with local arrangements. Two such excerpts deal with Newcastle under Lyme and Tutbury, and hence the register books are fully described above, under those boroughs. The register books also contain a vast amount of material about the running of Gaunt's various households in England, as far-flung as Bamburgh, Leicester, Kenilworth, Kingston Lacy, Hertford, and the Savoy, as well as others in Europe. Records of his payments for minstrels and other entertainers have been transcribed, wherever activities or payments for them may have occurred, because the administrative centres of the duchy appear to have been Tutbury and Kenilworth.
-                            The register books have been published as <title>John of Gaunt's Register, Part I (1371-1375)</title>, Sydney Armitage-Smith (ed), Camden Society, 3rd ser, 20–1, 2 vols (London, 1911); <title>John of Gaunt's Register, Part II (1379–83)</title>, Eleanor C. Lodge and Robert Somerville (eds), Camden Society, 3rd ser, 56–7, 2 vols (London, 1937). 
-                        </p>
+                        <p>John of Gaunt's two register books contain various orders, including
+                            orders for payments, letters, and many other types of official records
+                            concerning the running of the vast duchy of Lancaster. Some of the
+                            orders are addressed to borough and other local officials within the
+                            duchy, and deal with local arrangements. Two such excerpts deal with
+                            Newcastle under Lyme and Tutbury, and hence the register books are fully
+                            described above, under those boroughs. The register books also contain a
+                            vast amount of material about the running of Gaunt's various households
+                            in England, as far-flung as Bamburgh, Leicester, Kenilworth, Kingston
+                            Lacy, Hertford, and the Savoy, as well as others in Europe. Records of
+                            his payments for minstrels and other entertainers have been transcribed,
+                            wherever activities or payments for them may have occurred, because the
+                            administrative centres of the duchy appear to have been Tutbury and
+                            Kenilworth. The register books have been published as <title>John of
+                                Gaunt's Register, Part I (1371-1375)</title>, Sydney Armitage-Smith
+                            (ed), Camden Society, 3rd ser, 20–1, 2 vols (London, 1911); <title>John
+                                of Gaunt's Register, Part II (1379–83)</title>, Eleanor C. Lodge and
+                            Robert Somerville (eds), Camden Society, 3rd ser, 56–7, 2 vols (London,
+                            1937). </p>
                         <p>1372–6; Anglo-Norman and Latin; parchment with paper fly-leaves; ii + 235
                             + ii; 330mm x 230mm; ink foliation; bound in brown cloth boards with
                             leather corners and spine, title on spine: 'Duchy of Lancaster. Miscell.
@@ -780,9 +796,25 @@
                             <idno type="shelfmark">DL 42/14</idno>
                             <msName>Order from John of Gaunt's Register Book</msName>
                         </msIdentifier>
-                        <p>John of Gaunt's two register books contain various orders, including orders for payments, letters, and many other types of official records concerning the running of the vast duchy of Lancaster. Some of the orders are addressed to borough and other local officials within the duchy, and deal with local arrangements. Two such excerpts deal with Newcastle under Lyme and Tutbury, and hence the register books are fully described above, under those boroughs. The register books also contain a vast amount of material about the running of Gaunt's various households in England, as far-flung as Bamburgh, Leicester, Kenilworth, Kingston Lacy, Hertford, and the Savoy, as well as others in Europe. Records of his payments for minstrels and other entertainers have been transcribed, wherever activities or payments for them may have occurred, because the administrative centres of the duchy appear to have been Tutbury and Kenilworth.
-                            The register books have been published as <title>John of Gaunt's Register, Part I (1371-1375)</title>, Sydney Armitage-Smith (ed), Camden Society, 3rd ser, 20–1, 2 vols (London, 1911); <title>John of Gaunt's Register, Part II (1379–83)</title>, Eleanor C. Lodge and Robert Somerville (eds), Camden Society, 3rd ser, 56–7, 2 vols (London, 1937). 
-                        </p>
+                        <p>John of Gaunt's two register books contain various orders, including
+                            orders for payments, letters, and many other types of official records
+                            concerning the running of the vast duchy of Lancaster. Some of the
+                            orders are addressed to borough and other local officials within the
+                            duchy, and deal with local arrangements. Two such excerpts deal with
+                            Newcastle under Lyme and Tutbury, and hence the register books are fully
+                            described above, under those boroughs. The register books also contain a
+                            vast amount of material about the running of Gaunt's various households
+                            in England, as far-flung as Bamburgh, Leicester, Kenilworth, Kingston
+                            Lacy, Hertford, and the Savoy, as well as others in Europe. Records of
+                            his payments for minstrels and other entertainers have been transcribed,
+                            wherever activities or payments for them may have occurred, because the
+                            administrative centres of the duchy appear to have been Tutbury and
+                            Kenilworth. The register books have been published as <title>John of
+                                Gaunt's Register, Part I (1371-1375)</title>, Sydney Armitage-Smith
+                            (ed), Camden Society, 3rd ser, 20–1, 2 vols (London, 1911); <title>John
+                                of Gaunt's Register, Part II (1379–83)</title>, Eleanor C. Lodge and
+                            Robert Somerville (eds), Camden Society, 3rd ser, 56–7, 2 vols (London,
+                            1937). </p>
                         <p>1379–83; French; parchment; ii + 153 + ii (fly leaves part of binding);
                             350mm x 230mm; modern (inaccurate) and antiquarian (accurate) foliation;
                             contemporary repair on f 113; bound in 19th-c. brown cloth with leather
@@ -792,27 +824,27 @@
 
                     <msDesc xml:id="TLE2">
                         <msIdentifier>
-                        <repository sameAs="#TNA"/>
-                        <idno type="shelfmark">DL 41/597, item [d]</idno>
-                            <msName>Letter from Lord Newburgh, Chancellor of the Duchy of Lancaster, to
-                                the Clerk of the Duchy Chamber</msName>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">DL 41/597, item [d]</idno>
+                            <msName>Letter from Lord Newburgh, Chancellor of the Duchy of Lancaster,
+                                to the Clerk of the Duchy Chamber</msName>
                         </msIdentifier>
                     </msDesc>
 
                     <msDesc xml:id="TMC1">
-                      <msIdentifier> 
-                        <repository sameAs="#TNA"/>
-                        <idno type="shelfmark">DL 41/587</idno>
-                          <msName>Regulations Governing the Minstrels' Court</msName>
-                      </msIdentifier>
+                        <msIdentifier>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">DL 41/587</idno>
+                            <msName>Regulations Governing the Minstrels' Court</msName>
+                        </msIdentifier>
                     </msDesc>
 
                     <msDesc xml:id="TMC2">
-                     <msIdentifier>
-                        <repository sameAs="#TNA"/>
-                        <idno type="shelfmark">DL 41/597, item [c]</idno>
-                         <msName>Revised Regulations Governing the Minstrels' Court</msName>
-                     </msIdentifier>
+                        <msIdentifier>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">DL 41/597, item [c]</idno>
+                            <msName>Revised Regulations Governing the Minstrels' Court</msName>
+                        </msIdentifier>
                     </msDesc>
 
                     <msDesc xml:id="TPAT">
@@ -1214,13 +1246,15 @@
                     </msDesc>
 
                     <msDesc xml:id="WMAF">
-                       <msIdentifier>
-                           <settlement>Walsall</settlement>
-                           <repository sameAs="#WLHC"/>
-                        <idno type="shelfmark">277/13/29</idno>
-                        <msName>Mayors' Accounts</msName>
-                       </msIdentifier>
-                        <p>1594–1642; English; paper; booklet composed of 2 folded sheets resulting in 4 leaves; 300mm x 200mm; unfoliated (last 2 leaves blank); stitched.</p>
+                        <msIdentifier>
+                            <settlement>Walsall</settlement>
+                            <repository sameAs="#WLHC"/>
+                            <idno type="shelfmark">277/13/29</idno>
+                            <msName>Mayors' Accounts</msName>
+                        </msIdentifier>
+                        <p>1594–1642; English; paper; booklet composed of 2 folded sheets resulting
+                            in 4 leaves; 300mm x 200mm; unfoliated (last 2 leaves blank);
+                            stitched.</p>
                     </msDesc>
 
                     <msDesc xml:id="WMAG">
@@ -1256,144 +1290,208 @@
                     <msDesc xml:id="V145">
                         <msIdentifier>
                             <settlement>Lichfield</settlement>
-                        <repository sameAs="#LRO"/>
-                        <idno type="shelfmark">B/V/1/45</idno>
+                            <repository sameAs="#LRO"/>
+                            <idno type="shelfmark">B/V/1/45</idno>
                             <msName>Archdeaconry of Stafford Visitation Act Book</msName>
                         </msIdentifier>
-                        <p>1623; Latin and English; 48 leaves (2 disparate quires, 18 and 30 leaves); 310mm x 190mm; unfoliated; much damaged (some folios unreadable); unbound: first quire has on f [1]: 'Newport 16.2,' and on f [18v]: 'Detecta per veteres Economis in com Salop 1623'; second quire has on f [1]: 'Presentm<damage><gap unit="chars" extent="3"/></damage> at Stafford.'</p>
+                        <p>1623; Latin and English; 48 leaves (2 disparate quires, 18 and 30
+                            leaves); 310mm x 190mm; unfoliated; much damaged (some folios
+                            unreadable); unbound: first quire has on f [1]: 'Newport 16.2,' and on f
+                            [18v]: 'Detecta per veteres Economis in com Salop 1623'; second quire
+                            has on f [1]: 'Presentm<damage><gap unit="chars" extent="3"/></damage>
+                            at Stafford.'</p>
                     </msDesc>
 
                     <msDesc xml:id="V155">
-                   <msIdentifier> 
-                       <settlement>Lichfield</settlement>
-                       <repository sameAs="#LRO"/>
-                        <idno type="shelfmark">B/V/1/55</idno>
-                        <msName>Archdeaconry of Stafford Visitation Act Book</msName>
-                   </msIdentifier>
-                        <p>1635; Latin and English; iii + 91 + iii; 320mm x 210mm; modern pencil pagination 1–183 (interleaved smaller leaves follow pp 12, 34, 95, 125, 149: paginated as 12b, 34b, etc); repaired and rebound in blue cloth, no title.</p>
+                        <msIdentifier>
+                            <settlement>Lichfield</settlement>
+                            <repository sameAs="#LRO"/>
+                            <idno type="shelfmark">B/V/1/55</idno>
+                            <msName>Archdeaconry of Stafford Visitation Act Book</msName>
+                        </msIdentifier>
+                        <p>1635; Latin and English; iii + 91 + iii; 320mm x 210mm; modern pencil
+                            pagination 1–183 (interleaved smaller leaves follow pp 12, 34, 95, 125,
+                            149: paginated as 12b, 34b, etc); repaired and rebound in blue cloth, no
+                            title.</p>
                     </msDesc>
 
                     <msDesc xml:id="QSRS">
-                       <msIdentifier>
-                           <settlement>Stafford</settlement>
-                           <repository sameAs="#STRO"/>
-                        <idno type="shelfmark">Q/SR/119</idno>
-                        <msName>Stafford Quarter Session Rolls</msName>
-                       </msIdentifier>
-                        <p>Trinity Term 1611; English; paper; bifolium; 305mm x 200mm; written on rectos of ff [1] and [2], now numbered 45 and 46 in modern pencil, versos blank; contained in a folder of other sessions.</p>
+                        <msIdentifier>
+                            <settlement>Stafford</settlement>
+                            <repository sameAs="#STRO"/>
+                            <idno type="shelfmark">Q/SR/119</idno>
+                            <msName>Stafford Quarter Session Rolls</msName>
+                        </msIdentifier>
+                        <p>Trinity Term 1611; English; paper; bifolium; 305mm x 200mm; written on
+                            rectos of ff [1] and [2], now numbered 45 and 46 in modern pencil,
+                            versos blank; contained in a folder of other sessions.</p>
                     </msDesc>
 
                     <msDesc xml:id="WOCW">
                         <msIdentifier>
                             <settlement>Stafford</settlement>
-                        <repository sameAs="#STRO"/>
-                        <idno type="shelfmark">TP 952</idno>
-                        <msName>St Peter's Churchwardens' Accounts</msName>
+                            <repository sameAs="#STRO"/>
+                            <idno type="shelfmark">TP 952</idno>
+                            <msName>St Peter's Churchwardens' Accounts</msName>
                         </msIdentifier>
-                        <p>The MS contains annual churchwardens' accounts, presented usually at Lady Day or Mid-Lent Sunday each year; in most cases the date of presentation specifies the calendar year. This is assumed to have been in Old Style and the year has been corrected accordingly (for example, 1520 has been given as 1520/1). There are several cases in which both the calendar and regnal year are specified; in these the year appears to be given in New Style and has not been corrected. The handwriting, presumably that of the parish clerk, changes several times in the course of the years covered by the document.</p>
-                            <p>(privately owned, on temporary deposit); 1520–1634; English; paper; iv + 418; 295mm x 208mm; contemporary and modern foliation begins with f 7 (on f 5, as 2 leaves apparently missing at beginning of book, 4 leaves also missing following f 29, 2 leaves missing following f 103), foliation has been followed where found; bound in contemporary dark brown calf; no title.
-                        </p>
+                        <p>The MS contains annual churchwardens' accounts, presented usually at Lady
+                            Day or Mid-Lent Sunday each year; in most cases the date of presentation
+                            specifies the calendar year. This is assumed to have been in Old Style
+                            and the year has been corrected accordingly (for example, 1520 has been
+                            given as 1520/1). There are several cases in which both the calendar and
+                            regnal year are specified; in these the year appears to be given in New
+                            Style and has not been corrected. The handwriting, presumably that of
+                            the parish clerk, changes several times in the course of the years
+                            covered by the document.</p>
+                        <p>(privately owned, on temporary deposit); 1520–1634; English; paper; iv +
+                            418; 295mm x 208mm; contemporary and modern foliation begins with f 7
+                            (on f 5, as 2 leaves apparently missing at beginning of book, 4 leaves
+                            also missing following f 29, 2 leaves missing following f 103),
+                            foliation has been followed where found; bound in contemporary dark
+                            brown calf; no title. </p>
                     </msDesc>
 
                     <msDesc xml:id="YOCW">
                         <msIdentifier>
                             <settlement>Lichfield</settlement>
-                        <repository sameAs="#LRO"/>
-                        <idno type="shelfmark">D.(W.)1851/1/13/20</idno>
+                            <repository sameAs="#LRO"/>
+                            <idno type="shelfmark">D.(W.)1851/1/13/20</idno>
                             <msName>St Peter's Churchwardens' Accounts</msName>
                         </msIdentifier>
-                        <p>The churchwardens' accounting year during this period coincided with the regnal year, 22 April–21 April.</p>
-                        <p>1541–7; English; paper; 11 leaves; 400mm x 155mm, except pp 5--8 which are 285mm x 155mm; modern pencil pagination; preserved and mounted on guard pages in a modern green cloth guard book, dated 1962, no title.
+                        <p>The churchwardens' accounting year during this period coincided with the
+                            regnal year, 22 April–21 April.</p>
+                        <p>1541–7; English; paper; 11 leaves; 400mm x 155mm, except pp 5--8 which
+                            are 285mm x 155mm; modern pencil pagination; preserved and mounted on
+                            guard pages in a modern green cloth guard book, dated 1962, no title.
                         </p>
                     </msDesc>
 
                     <msDesc xml:id="YX01">
                         <msIdentifier>
                             <settlement>London</settlement>
-                        <repository sameAs="#BL"/>
-                        <idno type="shelfmark">Additional MS 46,460 vol. A</idno>
+                            <repository sameAs="#BL"/>
+                            <idno type="shelfmark">Additional MS 46,460 vol. A</idno>
                             <msName>Manorial Court Record</msName>
                         </msIdentifier>
-                        <p>This manuscript is bound in three parts, designated A (ff 1–111), B (ff 112–78), and C (ff 179–213).</p>
-                         <p>16th century; English, Latin; paper; ii + 111 + ii; c 313mm x 204mm; contemporary foliation in ink (293–454) superseded by modern foliation in pencil (used here); leaves variously trimmed at top or bottom, edges and corners reinforced with paper; leaves mounted on guards, usually quires of 8 to each guard though some originally conjugate leaves have become detached and are mounted separately; standard BL binding, on spine: 'Presented by the Rt. Hon. Viscount Fitzalan of Derwent | Wellys Papers. | Shrewsbury (Talbot MSS), VOL. VII.'
-                        </p>
+                        <p>This manuscript is bound in three parts, designated A (ff 1–111), B (ff
+                            112–78), and C (ff 179–213).</p>
+                        <p>16th century; English, Latin; paper; ii + 111 + ii; c 313mm x 204mm;
+                            contemporary foliation in ink (293–454) superseded by modern foliation
+                            in pencil (used here); leaves variously trimmed at top or bottom, edges
+                            and corners reinforced with paper; leaves mounted on guards, usually
+                            quires of 8 to each guard though some originally conjugate leaves have
+                            become detached and are mounted separately; standard BL binding, on
+                            spine: 'Presented by the Rt. Hon. Viscount Fitzalan of Derwent | Wellys
+                            Papers. | Shrewsbury (Talbot MSS), VOL. VII.' </p>
                     </msDesc>
 
                     <msDesc xml:id="BBL1">
                         <msIdentifier>
-                        <settlement>Stafford</settlement>    
-                        <repository sameAs="#STRO"/>
-                        <idno type="shelfmark">D(W)1721/3/207</idno>
+                            <settlement>Stafford</settlement>
+                            <repository sameAs="#STRO"/>
+                            <idno type="shelfmark">D(W)1721/3/207</idno>
                             <msName>Walter Bagot's Household Accounts</msName>
                         </msIdentifier>
-                        <p>Walter Bagot (1557–1622) was holder of the title and estate during this time. The manuscript is very damaged. It consists, in its present form, of a series of preserved and mounted fragmentary leaves and bifolia, some numbered in modern pencil, others not. The order of preservation is not the order in which the leaves originally occurred. The manuscript is partial, the remainder 'cannot be produced' and may have been destroyed as unsalvageable by the record office. Each mounted leaf containing an extract is described below as a separate item from a box of disjunct leaves.</p>
+                        <p>Walter Bagot (1557–1622) was holder of the title and estate during this
+                            time. The manuscript is very damaged. It consists, in its present form,
+                            of a series of preserved and mounted fragmentary leaves and bifolia,
+                            some numbered in modern pencil, others not. The order of preservation is
+                            not the order in which the leaves originally occurred. The manuscript is
+                            partial, the remainder 'cannot be produced' and may have been destroyed
+                            as unsalvageable by the record office. Each mounted leaf containing an
+                            extract is described below as a separate item from a box of disjunct
+                            leaves.</p>
                         <p><hi rend="italic">c</hi> 1574–1619; English; paper:</p>
-<p> Item 1: 1613; conjugate leaf; 310mm x 190mm; foliated in modern pencil as ff 61 and 64 (found within the bifolium is another conjugate leaf, foliated ff 62 and 63); damaged at right edge.</p>                        
-<p>Item 2: dates obliterated on most leaves in group, but conjugate leaf f 85 is dated 1615; conjugate leaf; approximately 310mm x 190mm; foliated ff 85 and 87, part of a group foliated ff 81--92; damaged at top.</p>                         
-<p>Item 3: 1619; conjugate leaf; approximately 310mm x 190mm; foliated ff 126 and 128; damaged at left edge.
-                        </p>
+                        <p> Item 1: 1613; conjugate leaf; 310mm x 190mm; foliated in modern pencil
+                            as ff 61 and 64 (found within the bifolium is another conjugate leaf,
+                            foliated ff 62 and 63); damaged at right edge.</p>
+                        <p>Item 2: dates obliterated on most leaves in group, but conjugate leaf f
+                            85 is dated 1615; conjugate leaf; approximately 310mm x 190mm; foliated
+                            ff 85 and 87, part of a group foliated ff 81--92; damaged at top.</p>
+                        <p>Item 3: 1619; conjugate leaf; approximately 310mm x 190mm; foliated ff
+                            126 and 128; damaged at left edge. </p>
                     </msDesc>
 
                     <msDesc xml:id="WILS">
-                       <msIdentifier>
-                           <settlement>Cambridge</settlement>
-                        <repository sameAs="#CUL"/>
-                        <idno type="shelfmark">Add. MS 33</idno>
-                           <msName>Autobiography of Arthur Wilson</msName>
-                       </msIdentifier>
-                        <p>1602–1710; English; paper; ix + 128; 185mm x 135mm; contemporary and modern pagination (pp i–ix, 172–98, 203–48, and 251–6 blank); modern binding in half calf, original binding survives: full calf, secured with 2 metal clasps (1 remains). Also contains 'Observations of God's Providence in the tract of my life' (pp 1–56, 199–202).</p>
+                        <msIdentifier>
+                            <settlement>Cambridge</settlement>
+                            <repository sameAs="#CUL"/>
+                            <idno type="shelfmark">Add. MS 33</idno>
+                            <msName>Autobiography of Arthur Wilson</msName>
+                        </msIdentifier>
+                        <p>1602–1710; English; paper; ix + 128; 185mm x 135mm; contemporary and
+                            modern pagination (pp i–ix, 172–98, 203–48, and 251–6 blank); modern
+                            binding in half calf, original binding survives: full calf, secured with
+                            2 metal clasps (1 remains). Also contains 'Observations of God's
+                            Providence in the tract of my life' (pp 1–56, 199–202).</p>
                     </msDesc>
 
                     <msDesc xml:id="FHA1">
-                       <msIdentifier>
-                          <settlement>Washington, DC</settlement>
-                        <repository>Folger Shakespeare Library</repository>
-                        <idno type="shelfmark">MS L.e.313</idno>
-                           <msName>Sir Humphrey Ferrers' Household Accounts</msName>
-                       </msIdentifier>
-                        <p>Washington, DC, Folger Shakespeare Library, MS L.e.313; 1605; English; paper; 2 loose sheets; 305mm x 200mm; unnumbered; sheet [2] missing 115mm x 110mm at top right corner (torn away); sheet [1] written on both sides, heading 'At London'; sheet [2v] has 'A note of disbursem<ex>en</ex>t<ex>es</ex> taken the xxvth of Maj 1605' (oriented vertically to the left).</p>
+                        <msIdentifier>
+                            <settlement>Washington, DC</settlement>
+                            <repository>Folger Shakespeare Library</repository>
+                            <idno type="shelfmark">MS L.e.313</idno>
+                            <msName>Sir Humphrey Ferrers' Household Accounts</msName>
+                        </msIdentifier>
+                        <p>Washington, DC, Folger Shakespeare Library, MS L.e.313; 1605; English;
+                            paper; 2 loose sheets; 305mm x 200mm; unnumbered; sheet [2] missing
+                            115mm x 110mm at top right corner (torn away); sheet [1] written on both
+                            sides, heading 'At London'; sheet [2v] has 'A note of
+                                disbursem<ex>en</ex>t<ex>es</ex> taken the xxvth of Maj 1605'
+                            (oriented vertically to the left).</p>
                     </msDesc>
 
                     <msDesc xml:id="FHA2">
-                       <msIdentifier>
-                           <settlement>Washington, DC</settlement>
-                        <repository>Folger Shakespeare Library</repository>
-                        <idno type="shelfmark">MS L.e.315</idno>
-                           <msName>Sir Humphrey Ferrers' Household Accounts</msName>
-                       </msIdentifier>
-                        <p>no date; English; paper; single sheet fragment; 220mm x 260mm; no heading.</p>
+                        <msIdentifier>
+                            <settlement>Washington, DC</settlement>
+                            <repository>Folger Shakespeare Library</repository>
+                            <idno type="shelfmark">MS L.e.315</idno>
+                            <msName>Sir Humphrey Ferrers' Household Accounts</msName>
+                        </msIdentifier>
+                        <p>no date; English; paper; single sheet fragment; 220mm x 260mm; no
+                            heading.</p>
                     </msDesc>
 
                     <msDesc xml:id="PGH1">
-                      <msIdentifier>
-                        <settlement>Stafford</settlement>  
-                        <repository sameAs="#STRO"/>
-                        <idno type="shelfmark">D(W)1734/3/3/276</idno>
-                          <msName>Sir Thomas Paget's Household Accounts</msName>
-                      </msIdentifier>
-                        <p>These are the accounts of Thomas Paget, 3rd Baron Paget. The accounting year of the Paget household was 1 January to 31 December.</p>
-                            <p>1578–80; English; paper; 92 leaves; 290mm x 200mm; modern pencil foliation (numerous blank leaves); finished accounts grouped according to type, under headings; bound in parchment with ties, no title.
-                        </p>
+                        <msIdentifier>
+                            <settlement>Stafford</settlement>
+                            <repository sameAs="#STRO"/>
+                            <idno type="shelfmark">D(W)1734/3/3/276</idno>
+                            <msName>Sir Thomas Paget's Household Accounts</msName>
+                        </msIdentifier>
+                        <p>These are the accounts of Thomas Paget, 3rd Baron Paget. The accounting
+                            year of the Paget household was 1 January to 31 December.</p>
+                        <p>1578–80; English; paper; 92 leaves; 290mm x 200mm; modern pencil
+                            foliation (numerous blank leaves); finished accounts grouped according
+                            to type, under headings; bound in parchment with ties, no title. </p>
                     </msDesc>
 
                     <msDesc xml:id="PGH2">
-                 <msIdentifier>
-                     <settlement>Stafford</settlement>
-                        <repository sameAs="#STRO"/>
-                        <idno type="shelfmark">D(W)1734/3/3/280</idno>
-                     <msName>Sir Thomas Paget's Household Accounts</msName>
-                 </msIdentifier>
-                        <p>These are the accounts of Thomas Paget, 3rd Baron Paget. The accounting year of the Paget household was 1 January to 31 December.</p>
-                        <p>1579–80; English; paper; 167 leaves; 300mm x 200mm; unfoliated; bound in brown leather, much perished, title in ink on front cover, in 18th-c. hand: 'Household Steward's Accounts from 1579,' also titled on f [1]: 'The household book declaringe the daylie and weekelie expences from the xvijth daie of October 1579.'</p>                   </msDesc>
+                        <msIdentifier>
+                            <settlement>Stafford</settlement>
+                            <repository sameAs="#STRO"/>
+                            <idno type="shelfmark">D(W)1734/3/3/280</idno>
+                            <msName>Sir Thomas Paget's Household Accounts</msName>
+                        </msIdentifier>
+                        <p>These are the accounts of Thomas Paget, 3rd Baron Paget. The accounting
+                            year of the Paget household was 1 January to 31 December.</p>
+                        <p>1579–80; English; paper; 167 leaves; 300mm x 200mm; unfoliated; bound in
+                            brown leather, much perished, title in ink on front cover, in 18th-c.
+                            hand: 'Household Steward's Accounts from 1579,' also titled on f [1]:
+                            'The household book declaringe the daylie and weekelie expences from the
+                            xvijth daie of October 1579.'</p>
+                    </msDesc>
 
                     <msDesc xml:id="PGH3">
-                       <msIdentifier>
-                           <settlement>Stafford</settlement>
-                        <repository sameAs="#STRO"/>
-                        <idno type="shelfmark">D(W)1734/2/7/8</idno>
-                           <msName>Inventory of Burton Manor</msName>
-                       </msIdentifier>
-                        <p>4 September 1580; English; paper; 17 leaves; 300mm x 200mm; ink foliation; stitched; no cover, titled in ink on front: 'An Inventorie taken the fourthe of September 1580....'</p>
+                        <msIdentifier>
+                            <settlement>Stafford</settlement>
+                            <repository sameAs="#STRO"/>
+                            <idno type="shelfmark">D(W)1734/2/7/8</idno>
+                            <msName>Inventory of Burton Manor</msName>
+                        </msIdentifier>
+                        <p>4 September 1580; English; paper; 17 leaves; 300mm x 200mm; ink
+                            foliation; stitched; no cover, titled in ink on front: 'An Inventorie
+                            taken the fourthe of September 1580....'</p>
                     </msDesc>
 
                     <bibl xml:id="WRIN">
@@ -1411,11 +1509,13 @@
                     <msDesc xml:id="TSHL">
                         <msIdentifier>
                             <settlement>London</settlement>
-                        <repository sameAs="#Bodl."/>
-                        <idno type="shelfmark">MS Ashmole 48</idno>
+                            <repository sameAs="#Bodl."/>
+                            <idno type="shelfmark">MS Ashmole 48</idno>
                             <msName>The Ballad of Richard Sheale</msName>
                         </msIdentifier>
-                        <p>16th century; English; paper; i + 141 + 1; 190mm x 140mm; modern pencil and (inaccurate) ink foliation; bound in marbled boards with leather spine and corners, title on spine: 'Ash 48.'</p>
+                        <p>16th century; English; paper; i + 141 + 1; 190mm x 140mm; modern pencil
+                            and (inaccurate) ink foliation; bound in marbled boards with leather
+                            spine and corners, title on spine: 'Ash 48.'</p>
                     </msDesc>
                 </listBibl>
             </div>
