@@ -91,49 +91,55 @@
                     <category xml:id="repositories">
                         <catDesc>Repositories</catDesc>
                         <category xml:id="Bodl.">
-                            <catDesc>Bodleian</catDesc>
+                          <catDesc>
+                            <abbr>Bodl.</abbr>
+                            <name>Bodleian</name>
+                          </catDesc>
                         </category>
                         <category xml:id="LRO">
-                            <catDesc>Lichfield Record Office</catDesc>
+                          <catDesc>
+                            <abbr>LRO</abbr>
+                            <name>Lichfield Record Office</name>
+                          </catDesc>
                         </category>
                         <category xml:id="CRO">
-                            <catDesc>Cheshire Record Office</catDesc>
+                            <catDesc><name>Cheshire Record Office</name></catDesc>
                         </category>
                         <category xml:id="BL">
-                            <catDesc>British Library</catDesc>
+                            <catDesc><name>British Library</name></catDesc>
                         </category>
                         <category xml:id="TNA">
-                            <catDesc>The National Archives</catDesc>
+                            <catDesc><name>The National Archives</name></catDesc>
                         </category>
                         <category xml:id="STRO">
-                            <catDesc>Staffordshire Record Office</catDesc>
+                            <catDesc><name>Staffordshire Record Office</name></catDesc>
                         </category>
                         <category xml:id="CL">
-                            <catDesc>Chetham's Library</catDesc>
+                            <catDesc><name>Chetham's Library</name></catDesc>
                         </category>
                         <category xml:id="LA">
-                            <catDesc>Lincolnshire Archives</catDesc>
+                            <catDesc><name>Lincolnshire Archives</name></catDesc>
                         </category>
                         <category xml:id="LCL">
-                            <catDesc>Lichfield Cathedral Library</catDesc>
+                            <catDesc><name>Lichfield Cathedral Library</name></catDesc>
                         </category>
                         <category xml:id="NLBM">
-                            <catDesc>Brampton Museum</catDesc>
+                            <catDesc><name>Brampton Museum</name></catDesc>
                         </category>
                         <category xml:id="WRO">
-                            <catDesc>Worcester Record Office</catDesc>
+                            <catDesc><name>Worcester Record Office</name></catDesc>
                         </category>
                         <category xml:id="WSL">
-                            <catDesc>William Salt Library</catDesc>
+                            <catDesc><name>William Salt Library</name></catDesc>
                         </category>
                         <category xml:id="WLHC">
-                            <catDesc>Walsall Local History Centre</catDesc>
+                            <catDesc><name>Walsall Local History Centre</name></catDesc>
                         </category>
                         <category xml:id="CUL">
-                            <catDesc>Cambridge University Library</catDesc>
+                            <catDesc><name>Cambridge University Library</name></catDesc>
                         </category>
                         <category xml:id="FSL">
-                            <catDesc>Folger Shakespeare Library</catDesc>
+                            <catDesc><name>Folger Shakespeare Library</name></catDesc>
                         </category>
                     </category>
                 </taxonomy>
