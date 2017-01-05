@@ -53,13 +53,6 @@
                 <xsl:call-template name="display-record-transcription" />
                 <xsl:call-template name="display-record-data" />
               </div>
-              <!-- QAZ: Check what next/prev leads to -->
-              <div class="padding-top-45 small-margin-top-25">
-                <div class="pagination">
-                  <a href="" class="button previous grey-bg">Previous</a>
-                  <a href="" class="button next grey-bg">Next</a>
-                </div>
-              </div>
               <div class="hide-for-medium">
                 <div class="record-sidebar hide-for-medium" >
                   <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
