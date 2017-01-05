@@ -109,7 +109,78 @@
     <front>
       <div type="acknowledgments">
         <head>Acknowledgments</head>
-        <p><!--Acknowledgments still to come from Alan. These never have subheadings.--></p>
+        <p>This is the first digital collection published by REED, but the records research upon
+          which it is based has a long history. The project was originally designed and undertaken
+          in 1979, to investigate Shropshire and Staffordshire together, publishing the results as a
+          single collection. Checking and other activities proceeded in tandem for both county
+          collections, and the initial round of review activities was completed; however, at this
+          late stage it was decided that the Shropshire records themselves would be sufficient to
+          form a collection, and this was subsequently published (2 vols, 1994). Staffordshire was
+          laid aside, other priorities intervened, and considerable time has passed.</p>
+        <p>As a result, this Staffordshire collection has lived two separate lives: its original one
+          (1979–92) and its present digital revival. I invite readers to re-read my Acknowledgements
+          to the Shropshire REED volumes, because many of the persons and institutions thanked
+          therein were alike allies and supporters of both the Shropshire and Staffordshire
+          projects, and I here acknowledge them all warmly without naming them again. In particular,
+          the Social Sciences and Humanities Research Council of Canada’s research grant, for which
+          thanks were offered in the Shropshire volumes, was in fact a grant for the project
+          including Staffordshire; now that the latter collection is completed I have the happy
+          opportunity to express, once again, my deep gratitude to the Council for the financial
+          support of its grant. And again I am delighted to thank the Jackman Foundation, by
+          courtesy of Reverend Edward Jackman, OP, for its continued support of the REED
+          enterprise.</p>
+        <p>Two people instrumental in the original stage of this project continue to flourish as
+          sources of inspiration and guidance as we near the publication online of the Staffordshire
+          records. Alexandra Johnston, REED’s founder, continues to inspire, guide, and facilitate
+          as REED moves into new territory undreamed at its beginning. Sally-Beth MacLean and I went
+          on from Shropshire to become (as we continue to be) co-directors of the REED Patrons and
+          Performances website, a project that daily convinces its users that reference data has its
+          true home in digital databases. Sally-Beth continues to oversee the REED staff, to
+          encourage the editors, and to coordinate the project with her amazing energy and wisdom,
+          and I am most grateful for her advice and support.</p>
+        <p>Turning now to the present Staffordshire project, I would like to begin where records
+          research always begins, in the field at the archives, record offices, and other
+          repositories (public and private), in which I have gathered the materials for this
+          collection. In all of these places I have appreciated and profited from the helpful
+          professionalism of their staffs, and I gratefully thank them all. I am happy to formally
+          acknowledge permission to publish excerpts from the documents held by the following
+          repositories: The Bodleian Libraries, University of Oxford; the Brampton Museum; the
+          British Library; Cambridge University Library, with permission of the Syndics of Cambridge
+          University Library; the Cheshire Record Office, with permission of Cheshire Archives &amp;
+          Local Studies; Chetham's Library; Folger Shakespeare Library; the Lichfield Cathedral
+          Library; the Lichfield Record Office (formerly the Lichfield Joint Record Office); the
+          Lincolnshire Archives; The National Archives; the Staffordshire Record Office; the Walsall
+          Local History Centre; the William Salt Library; and the Worcester Record Office.</p>
+        <p>This second phase of Staffordshire has involved re-checking of doubtful issues in various
+          documents, as well as chasing down sometimes tenuous leads to elusive newly uncovered
+          sources of evidence. I am very grateful for the invaluable advice, encouragement, and
+          expertise (always cheerfully offered!) of two experts: Dr Nigel Tringham, County Editor of
+          the Victoria County History of Staffordshire, and Professor Alan Nelson. Working just
+          across the county boundary, on their own collection of the Derbyshire records, have been
+          Barbara Palmer and John Wasson, both (alas) no longer with us. We shared in numerous
+          discussions about the multifarious branches of the Ferrers families in Derbyshire,
+          Staffordshire, and Warwickshire; as well, they were immensely helpful with documents in
+          the Folger Shakespeare Library. On-site re-checking in various English repositories has
+          been cheerfully undertaken by Jessica Freeman, Stephanie Hovland, and Simon Harris.</p>
+        <p>The exacting tasks of re-scrutinizing the record collection, replacing the (now archaic)
+          REED typesetting symbols with TEI encoding, and creating a user-friendly digital interface
+          have occupied the time and talents of many staff members at the REED office. My email
+          inbox has been daily filled with wise suggestions and perceptive requests as this work has
+          gone forward. I am delighted to offer my thanks to them all: Carolyn Black (project
+          management and copy editing), Patrick Gregory (paleographic checking, Latin and
+          Anglo-French glossaries and translations), Abigail Young (paleographic checking), Kathy
+          Chung (data tagging), Janine Harper (English glossary, proofreading, mapping research),
+          Theodore DeWelles and Tanya Hagen (bibliographic research), Byron Moldofsky (creation of
+          maps), Jamie Norrish (software development and programming), and Bill Ingram (creation of
+          readers' package). Finally, James Cummings and Jamie Norrish repeatedly shared their
+          expertise in all things digital, guiding us through the tricky processes of TEI
+          encoding.</p>
+        <p>Finally, in my Shropshire acknowledgements I recorded how that volume progressed as our
+          family grew, and grew up assisting me, with the REED project in their veins. The children,
+          now adults, have departed to their own careers and families and REED is just, for them, a
+          (I hope happy!) memory. Only one remains, Felicity, my dear wife for fifty years, and for
+          all of those fifty a source of staunch support, encouragement, and love. I dedicate this
+          collection, with love, to her.</p>
       </div>
       <div type="background">
         <head>Historical Background</head>
@@ -14034,38 +14105,57 @@ table. The (blank) above is the second cell of that row -->the
               <head>f 50v <supplied>(6 March)</supplied></head>
               <pb n="50v" type="folio"/>
 
-              <ab><rs ref="http://ereed.library.utoronto.ca/eats/entity/13153/" type="Person_Royalty">Iohan</rs> &amp;c A n<ex>ost</ex>re tresch<ex>er</ex> et bien ame Sire <rs ref="http://ereed.library.utoronto.ca/eats/entity/31374/" type="Person_Gentry">William Oke</rs>
-                Clerc de n<ex>ost</ex>re g<ex>r</ex>ande Garderobe..saluz. Nous vous mandons
-                  q<ex>ue</ex> de des issues de v<ex>ost</ex>re Receite en n<ex>ost</ex>re Chambre
-                facez paier as p<ex>er</ex>sones souznommees les sommes souzescrites; Cestassauoir
-                  <gap reason="omitted"/> Et a vj noz <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type">ministralx</rs> et a <rs ref="http://ereed.library.utoronto.ca/eats/entity/32007/" type="Person_Commoner">Iohan Gybeson</rs> le vij<hi
-                  rend="superscript">me</hi> de n<ex>ost</ex>re doun meisme le io<ex>ur</ex> sept
-                marcs Et a vn p<ex>ur</ex>suant darmes le <rs ref="http://ereed.library.utoronto.ca/eats/entity/32056/" type="Person_Commoner">Conte de Douglas</rs> et vn autre <rs ref="http://ereed.library.utoronto.ca/eats/entity/32155/" type="Entertainer_Patronized">ministral</rs> le
-                soen le seconde io<ex>ur</ex> de Ian<ex>uiere</ex> a leycestre quarrante soldz Et a
-                vn Esquier n<ex>ost</ex>re tresame ffrer le <rs ref="http://ereed.library.utoronto.ca/eats/entity/31436/" type="Person_Royalty">Conte de Cantebrug</rs> presentant a
-                  no<ex>us</ex> le io<ex>ur</ex> de lan Renoef susdit quarante soldz Et a vn Esquier
-                  n<ex>ost</ex>re tresamee soere la <rs ref="http://ereed.library.utoronto.ca/eats/entity/32182/" type="Person_Nobility">Contesse de Cantebr<ex>ug</ex></rs>
+              <ab><rs ref="http://ereed.library.utoronto.ca/eats/entity/13153/"
+                  type="Person_Royalty">Iohan</rs> &amp;c A n<ex>ost</ex>re tresch<ex>er</ex> et
+                bien ame Sire <rs ref="http://ereed.library.utoronto.ca/eats/entity/31374/"
+                  type="Person_Gentry">William Oke</rs> Clerc de n<ex>ost</ex>re g<ex>r</ex>ande
+                Garderobe..saluz. Nous vous mandons q<ex>ue</ex> de des issues de v<ex>ost</ex>re
+                Receite en n<ex>ost</ex>re Chambre facez paier as p<ex>er</ex>sones souznommees les
+                sommes souzescrites; Cestassauoir <gap reason="omitted"/> Et a vj noz <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type"
+                  >ministralx</rs> et a <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/32007/" type="Person_Commoner"
+                  >Iohan Gybeson</rs> le vij<hi rend="superscript">me</hi> de n<ex>ost</ex>re doun
+                meisme le io<ex>ur</ex> sept marcs Et a vn p<ex>ur</ex>suant darmes le <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/32056/" type="Person_Commoner"
+                  >Conte de Douglas</rs> et vn autre <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/32155/"
+                  type="Entertainer_Patronized">ministral</rs> le soen le seconde io<ex>ur</ex> de
+                  Ian<ex>uiere</ex> a leycestre quarrante soldz Et a vn Esquier n<ex>ost</ex>re
+                tresame ffrer le <rs ref="http://ereed.library.utoronto.ca/eats/entity/31436/"
+                  type="Person_Royalty">Conte de Cantebrug</rs> presentant a no<ex>us</ex> le
+                  io<ex>ur</ex> de lan Renoef susdit quarante soldz Et a vn Esquier n<ex>ost</ex>re
+                tresamee soere la <rs ref="http://ereed.library.utoronto.ca/eats/entity/32182/"
+                  type="Person_Nobility">Contesse de Cantebr<ex>ug</ex></rs>
                 <ex>pre</ex>sentant a nous meisme le io<ex>ur</ex> deux marcs Et a vn vallet la dame
-                de mohone p<ex>re</ex>sentant a no<ex>us</ex> meisme le io<ex>ur</ex> quarrante <!-- kc: Lady de Mohun, pending reply from Abby -->
-                soldz Et as diu<ex>er</ex>ses heraudes esteantes en n<ex>ost</ex>re
-                p<ex>re</ex>sence le io<ex>ur</ex> del Ephiphanie de n<ex>ost</ex>re doun Cent soldz
-                Et as diu<ex>er</ex>ses ministralx n<ex>ost</ex>re tresame fere de Centebrugg
-                esteant oue no<ex>us</ex> meisme le io<ex>ur</ex> Cynk marcs Et a <rs ref="http://ereed.library.utoronto.ca/eats/entity/32361/" type="Person_Commoner">Herman</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/31896/" type="Collective_Occupation">Goldesmyth</rs>
-                  p<ex>ur</ex> vn dyamande achate &amp; p<ex>ar</ex> lui mys en vn fermail le dit
-                  io<ex>ur</ex> de lan Renoef quatre livres Et facez paier p<ex>ur</ex> atantz
-                deniers mys sur le liure le io<ex>ur</ex> des Esposailes n<ex>ost</ex>re tresame
-                filz le <rs ref="http://ereed.library.utoronto.ca/eats/entity/32283/" type="Person_Royalty">Conte de derby</rs> quarrante soldz Et p<ex>ur</ex> atantz den<ex>iers</ex>
+                de mohone p<ex>re</ex>sentant a no<ex>us</ex> meisme le io<ex>ur</ex> quarrante
+                <!-- kc: Lady de Mohun, pending reply from Abby --> soldz Et as diu<ex>er</ex>ses
+                heraudes esteantes en n<ex>ost</ex>re p<ex>re</ex>sence le io<ex>ur</ex> del
+                Ephiphanie de n<ex>ost</ex>re doun Cent soldz Et as diu<ex>er</ex>ses ministralx
+                  n<ex>ost</ex>re tresame fere de Centebrugg esteant oue no<ex>us</ex> meisme le
+                  io<ex>ur</ex> Cynk marcs Et a <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/32361/" type="Person_Commoner"
+                  >Herman</rs>
+                <rs ref="http://ereed.library.utoronto.ca/eats/entity/31896/"
+                  type="Collective_Occupation">Goldesmyth</rs> p<ex>ur</ex> vn dyamande achate &amp;
+                  p<ex>ar</ex> lui mys en vn fermail le dit io<ex>ur</ex> de lan Renoef quatre
+                livres Et facez paier p<ex>ur</ex> atantz deniers mys sur le liure le io<ex>ur</ex>
+                des Esposailes n<ex>ost</ex>re tresame filz le <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/32283/" type="Person_Royalty"
+                  >Conte de derby</rs> quarrante soldz Et p<ex>ur</ex> atantz den<ex>iers</ex>
                   p<ex>ur</ex> le<ex>ur</ex> offrendre a la messe tresze soldz et quatre deniers Et
-                a dys <rs ref="http://ereed.library.utoronto.ca/eats/entity/32482/" type="Person_Commoner">ministralx</rs> n<ex>ost</ex>re s<ex>eigneur</ex> le Roy esteantz illeoqes meisme
-                le io<ex>ur</ex> de n<ex>ost</ex>re doun dys marcs Et a quatre ministralx
-                  n<ex>ost</ex>re tresame ffrer de Cant<ex>abrug</ex> esteantz illeoque meisme le
-                  io<ex>ur</ex> deux marcs Et facez paier as diu<ex>er</ex>ses offic<ex>er</ex>s
-                  n<ex>ost</ex>re Cosine la Contesse de h<ex>er</ex>tford esteantz a meisme le feste
-                de n<ex>ost</ex>re doun Cynquante marcs Et en meisme la manere as officers &amp;
-                vallets de de<note type="foot">de de: <hi rend="italic">dittography at beginning of
-                    line</hi></note> sa Chambre meisme le io<ex>ur</ex> de n<ex>ost</ex>re doun dys
-                marcs <gap reason="omitted"/> Don<ex>ne</ex> &amp;c a n<ex>ost</ex>re Chastel de
-                leycestre le vj io<ex>ur</ex> de Marcz lan &amp;c quart</ab>
+                a dys <rs ref="http://ereed.library.utoronto.ca/eats/entity/32482/"
+                  type="Person_Commoner">ministralx</rs> n<ex>ost</ex>re s<ex>eigneur</ex> le Roy
+                esteantz illeoqes meisme le io<ex>ur</ex> de n<ex>ost</ex>re doun dys marcs Et a
+                quatre ministralx n<ex>ost</ex>re tresame ffrer de Cant<ex>abrug</ex> esteantz
+                illeoque meisme le io<ex>ur</ex> deux marcs Et facez paier as diu<ex>er</ex>ses
+                  offic<ex>er</ex>s n<ex>ost</ex>re Cosine la Contesse de h<ex>er</ex>tford esteantz
+                a meisme le feste de n<ex>ost</ex>re doun Cynquante marcs Et en meisme la manere as
+                officers &amp; vallets de de<note type="foot">de de: <hi rend="italic">dittography
+                    at beginning of line</hi></note> sa Chambre meisme le io<ex>ur</ex> de
+                  n<ex>ost</ex>re doun dys marcs <gap reason="omitted"/> Don<ex>ne</ex> &amp;c a
+                  n<ex>ost</ex>re Chastel de leycestre le vj io<ex>ur</ex> de Marcz lan &amp;c
+                quart</ab>
 
               <gap reason="omitted"/>
             </div>
@@ -14938,7 +15028,7 @@ brace to: --> Oke</note> ministrals
               >c</hi> 1550, on the assumption that Sheale flourished in this period.</p>
         </div>
         <div>
-          <text type="record" xml:id="staff-ridm91664448">
+          <floatingText type="record" xml:id="staff-ridm91664448">
             <body xml:lang="eng">
               <head>
                 <rs>Tamworth</rs>
@@ -15155,7 +15245,7 @@ brace to: --> Oke</note> ministrals
                 </div>
               </div>
             </body>
-          </text>
+          </floatingText>
         </div>
       </div>
     </back>
