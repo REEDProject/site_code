@@ -62,6 +62,24 @@
     </xsl:if>
   </xsl:template>
 
+  <xsl:template name="display-record-entities">
+    <ul class="tags">
+      <xsl:for-each select=".//tei:rs[@ref]">
+        <li class="tag">
+          <a>
+            <xsl:attribute name="href">
+              <xsl:call-template name="make-entity-url">
+                <xsl:with-param name="eats-url" select="@ref" />
+              </xsl:call-template>
+            </xsl:attribute>
+            <!-- QAZ: Use name from EATSML? -->
+            <xsl:value-of select="." />
+          </a>
+        </li>
+      </xsl:for-each>
+    </ul>
+  </xsl:template>
+
   <xsl:template name="display-record-footnotes">
     <xsl:if test=".//tei:note[@type='foot']">
       <li class="accordion-item" data-accordion-item="">
@@ -101,7 +119,7 @@
 
   <xsl:template name="display-record-shelfmark">
     <div class="shelfmark">
-      <!-- QAZ: Actually do this. -->
+      <xsl:apply-templates select="tei:body/tei:head/tei:span[@type='shelfmark']" />
     </div>
   </xsl:template>
 
@@ -146,28 +164,10 @@
     </div>
   </xsl:template>
 
-  <xsl:template name="display-record-entities">
-    <ul class="tags">
-      <xsl:for-each select=".//tei:rs[@ref]">
-        <li class="tag">
-          <a>
-            <xsl:attribute name="href">
-              <xsl:call-template name="make-entity-url">
-                <xsl:with-param name="@ref" />
-              </xsl:call-template>
-            </xsl:attribute>
-            <!-- QAZ: Use name from EATSML? -->
-            <xsl:value-of select="." />
-          </a>
-        </li>
-      </xsl:for-each>
-    </ul>
-  </xsl:template>
-
   <xsl:template name="display-record-title">
     <div class="record-title">
       <h1>
-        <xsl:apply-templates select="tei:body/tei:head/tei:bibl/tei:title" />
+        <xsl:apply-templates select="tei:body/tei:head/tei:title" />
       </h1>
     </div>
   </xsl:template>

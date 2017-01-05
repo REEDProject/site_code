@@ -20,6 +20,43 @@
     <xsl:copy-of select="tei:catDesc/node()" />
   </xsl:template>
 
+  <!-- Normalise the markup for document descriptions (which differ
+       between MSS and printed sources) into a single format. -->
+
+  <!-- QAZ: Handle printed sources. -->
+
+  <xsl:template match="tei:msDesc">
+    <xsl:apply-templates select="tei:msIdentifier" />
+    <xsl:copy-of select="tei:p" />
+  </xsl:template>
+
+  <xsl:template match="tei:msIdentifier">
+    <tei:title>
+      <xsl:value-of select="tei:msName" />
+    </tei:title>
+    <tei:span type="shelfmark">
+      <xsl:apply-templates select="tei:repository" />
+      <xsl:text>: </xsl:text>
+      <xsl:value-of select="tei:idno[@type='shelfmark']" />
+    </tei:span>
+  </xsl:template>
+
+  <xsl:template match="tei:repository">
+    <xsl:choose>
+      <xsl:when test="tei:abbr">
+        <tei:choice>
+          <tei:expan>
+            <xsl:value-of select="tei:name" />
+          </tei:expan>
+          <xsl:copy-of select="tei:abbr" />
+        </tei:choice>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="tei:name" />
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
   <xsl:template match="@*|node()">
     <xsl:copy>
       <xsl:apply-templates select="@*|node()" />

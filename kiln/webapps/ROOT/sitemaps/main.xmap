@@ -59,9 +59,9 @@
           <map:part src="cocoon://_internal/menu/main.xml?url=search/" />
           <map:part src="cocoon://internal/search/facet_query.xml" />
           <map:part src="cocoon://_internal/request.xml" />
-          <map:part src="cocoon://internal/eatsml/preprocess.xml" />
+          <map:part src="cocoon://internal/preprocess/eatsml.xml" />
           <map:part element="code_list"
-                    src="cocoon://internal/code_list/preprocess.xml" />
+                    src="cocoon://internal/preprocess/tei/code_list.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/search.xsl" />
         <map:serialize />

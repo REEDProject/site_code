@@ -33,19 +33,24 @@
           <xsl:value-of select="@xml:id" />
         </field>
         <field name="document_title">
-          <xsl:value-of select="normalize-space(tei:body/tei:head)" />
+          <xsl:apply-templates select="tei:body/tei:head/tei:span[@type='shelfmark']" />
+          <xsl:text> - </xsl:text>
+          <xsl:value-of select="normalize-space(tei:body/tei:head/tei:title)" />
+          <xsl:text> - </xsl:text>
+          <xsl:value-of select="tei:body/tei:head/tei:date" />
         </field>
         <field name="collection_id">
           <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id" />
         </field>
         <field name="record_title">
-          <xsl:value-of select="normalize-space(tei:body/tei:head/tei:bibl/tei:title)" />
+          <xsl:value-of select="normalize-space(tei:body/tei:head/tei:title)" />
         </field>
         <field name="record_location">
           <!-- QAZ: Use EATSML name? -->
           <xsl:value-of select="normalize-space(tei:body/tei:head/tei:rs)" />
         </field>
         <field name="record_shelfmark">
+          <xsl:apply-templates select="tei:body/tei:head/tei:span[@type='shelfmark']" />
         </field>
         <xsl:apply-templates select="tei:body/tei:head/tei:date" />
         <field name="record_date_display">
@@ -70,8 +75,6 @@
   </xsl:template>
 
   <xsl:template match="tei:date">
-    <!-- QAZ: handle date ranges by supplying a date for each
-         year in the range. -->
     <xsl:choose>
       <xsl:when test="@when-iso">
         <field name="record_date">
@@ -86,6 +89,10 @@
         </xsl:for-each>
       </xsl:when>
     </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="tei:span[@type='shelfmark']/tei:choice">
+    <xsl:value-of select="tei:abbr" />
   </xsl:template>
 
   <xsl:template match="tei:term" mode="record_type">

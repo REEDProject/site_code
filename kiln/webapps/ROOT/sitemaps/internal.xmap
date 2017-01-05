@@ -31,7 +31,7 @@
         <map:serialize type="xml" />
       </map:match>
 
-      <map:match id="ereed-preprocess-eatsml" pattern="eatsml/preprocess.xml">
+      <map:match id="ereed-preprocess-eatsml" pattern="preprocess/eatsml.xml">
         <map:generate src="../content/xml/eatsml/entities.xml" />
         <map:transform src="../stylesheets/eatsml/preprocess.xsl" />
         <map:serialize type="xml" />
@@ -39,15 +39,14 @@
 
       <map:match id="ereed-extract-referenced-content"
                  pattern="extract-referenced-content/**">
-        <map:generate src="../content/xml/{1}" />
+        <map:generate src="cocoon:/preprocess/{1}" />
         <map:transform src="../stylesheets/tei/extract-referenced-content.xsl">
           <map:parameter name="id" value="{request-param:id}" />
         </map:transform>
         <map:serialize type="xml" />
       </map:match>
 
-      <map:match id="ereed-extract-entity"
-                 pattern="eatsml/entity/*.xml">
+      <map:match id="ereed-extract-entity" pattern="eatsml/entity/*.xml">
         <map:generate src="cocoon:/eatsml/preprocess.xml" />
         <map:transform src="../stylesheets/eatsml/extract-entity.xsl">
           <map:parameter name="entity_eats_id" value="{1}" />
@@ -56,9 +55,10 @@
       </map:match>
 
       <map:match id="ereed-preprocess-code-list"
-                 pattern="code_list/preprocess.xml">
+                 pattern="preprocess/tei/code_list.xml">
         <map:generate src="../content/xml/tei/code_list.xml" />
         <map:transform src="../stylesheets/tei/xml-id-to-eats-id.xsl" />
+        <map:transform src="../stylesheets/tei/expand-code-list.xsl" />
         <map:serialize type="xml" />
       </map:match>
 
