@@ -118,15 +118,15 @@
 
       <!-- About. -->
       <map:match id="ereed-about-section" pattern="about/">
-        <map:redirect-to uri="editorial/" permanent="no" />
+        <map:redirect-to uri="series/" permanent="no" />
       </map:match>
 
-      <!-- About: Editorial Methodology. -->
-      <map:match id="ereed-about-editorial" pattern="about/editorial/">
+      <!-- About: Series Methodology. -->
+      <map:match id="ereed-about-series" pattern="about/series/">
         <map:redirect-to uri="intro/" permanent="no" />
       </map:match>
 
-      <!-- About: Editorial Methodology: part. -->
+      <!-- About: Series Methodology: part. -->
       <map:match id="ereed-about-series-part"
                  pattern="about/series/*/">
         <map:aggregate element="aggregation" label="content">
