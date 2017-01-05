@@ -4,11 +4,9 @@
   <menu label="Home" match="ereed-home" />
   <menu label="Search the Records" match="ereed-search" />
   <menu label="About the Records" match="ereed-about-section">
-    <item label="Editorial Methodology"
-          match="ereed-about-editorial" />
+    <item label="Series Methodology" match="ereed-about-series" />
     <item label="Digital Methodology" match="ereed-about-digital" />
-    <item label="Symbols &amp; Abbreviations"
-          match="ereed-about-symbols" />
+    <item label="Symbols &amp; Abbreviations" match="ereed-about-symbols" />
     <item label="Bibliography" match="ereed-about-bibliography" />
     <item label="Glossaries" match="ereed-about-glossaries" />
   </menu>
