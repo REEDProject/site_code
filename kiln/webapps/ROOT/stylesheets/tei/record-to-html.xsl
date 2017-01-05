@@ -41,14 +41,18 @@
           </div>
         </li>
         <xsl:call-template name="display-record-endnote" />
-        <li class="accordion-item" data-accordion-item="">
-          <a href="#" class="accordion-title">Document Description</a>
-          <div class="accordion-content" data-tab-content="">
-            <!-- QAZ -->
-          </div>
-        </li>
+        <xsl:call-template name="display-record-doc-desc" />
       </ul>
     </div>
+  </xsl:template>
+
+  <xsl:template name="display-record-doc-desc">
+    <li class="accordion-item" data-accordion-item="">
+      <a href="#" class="accordion-title">Document Description</a>
+      <div class="accordion-content" data-tab-content="">
+        <xsl:apply-templates select="$record_text/tei:body/tei:head/tei:p" />
+      </div>
+    </li>
   </xsl:template>
 
   <xsl:template name="display-record-endnote">
