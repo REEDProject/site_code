@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:id="staff">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Staffordshire</title>
+                <!-- Still to be tagged in EATS with collection EATS entity page -->
+                <funder><orgName>Andrew W. Mellon Foundation</orgName>, Scholarly Communications and
+                    Information Technology Program. Program Officer: <persName>Donald J.
+                        Waters</persName></funder>
+                <!-- funding info to be checked with SB -->
+                <!-- use <editor> for editor -->
+                <editor>Alan Somerset</editor>
+                <!-- use <respStmt> for things like transcriber, encoder, palaeographer, conversion, schema design, etc.  -->
+                <respStmt>
+                    <persName>Carolyn Black</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Senior Editorial Consultant</resp>
+                </respStmt>
+                <!-- and all the others... -->
+                <respStmt>
+                    <persName xml:id="JC">James Cummings</persName>
+                    <orgName>University of Oxford</orgName>
+                    <resp>TEI Schema Design and Technical Consultation</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="JN">Jamie Norrish</persName>
+                    <resp>Conversion Work</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>version 1, released
+                    <date><!-- use @when attribute for precise YYYY-MM-DD, and content for human readable date --></date>
+                </edition>
+                <!-- publication month day year to be added when known -->
+            </editionStmt>
+            <publicationStmt>
+                <authority><orgName>Records of Early English Drama (REED)</orgName>
+                    <address>
+                        <addrLine>University of Toronto</addrLine>
+                        <addrLine>170 St George Street, Suite 810</addrLine>
+                        <addrLine>Toronto, Ontario, Canada</addrLine>
+                        <addrLine>M5R 2M8</addrLine>
+                    </address>
+                </authority>
+                <availability>
+                    <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
+                        <date>2017</date></p>
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed under a
+                        Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA
+                        4.0) licence.</licence>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title>Records of Early English Drama</title>
+            </seriesStmt>
+            <sourceDesc>
+                <p>Born digital. Information on original sources for transcriptions can be accessed via the
+                    transcriptions.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <listPrefixDef>
+                <prefixDef ident="ereed" matchPattern="([A-Za-z0-9_]+)"
+                    replacementPattern="../code_list.xml#$1">
+                    <p>Private URIs using the <code>ereed</code> prefix are pointers to entities in the
+                        code_list.xml file. For example, <code>ereed:BPA</code> dereferences to
+                        <code>code_list.xml#BPA</code>.</p>
+                </prefixDef>
+                <!-- or something like below for glossary -->
+                <prefixDef ident="ereed-gloss" matchPattern="([A-Za-z0-9_]+)"
+                    replacementPattern="../glossary.xml#$1">
+                    <p>Private URIs using the <code>ereed-gloss</code> prefix are pointers to entities in the
+                        glossary.xml file.</p>
+                </prefixDef>
+            </listPrefixDef>
+            <projectDesc>
+                <p><!-- general description of REED project here --></p>
+            </projectDesc>
+            
+            <!-- encodingDesc/editorialDecl could be expanded with elements I've removed to document editorial principles. -->
+            
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- list all languages used in document -->
+                <language ident="en">English</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <!-- if using not standard calendars... -->
+            <calendarDesc>
+                <calendar xml:id="someCalendarName">
+                    <p><!-- If using dates from non-standard calendards, describe them here and use <date calendar="#someCalendarName"> --></p>
+                </calendar>
+            </calendarDesc>
+        </profileDesc>
+    </teiHeader>
+
+
+<text>
+<body>
+        <div type="series_methodology">
+            <div>
+                <head>Introduction</head>
+                <p>From the start of the REED project, research areas have been defined geographically by
+                    county and major city. Although the progress of several centuries has obscured or
+                    drastically redesigned some county boundaries, REED observes county limits as recognized
+                    by their contemporary, pre-1642 records. Thus, modern Cumbria reverts to its earlier
+                    division into Cumberland and Westmorland.</p>
+                <p>Important families sometimes had more than one residence in a county and occasionally it
+                    has proved difficult to identify the exact location for family entertainments.
+                    Households, therefore, are sorted under family name rather than parish or borough. Other
+                    documents, such as statutes or visitation articles, relate to a diocese as a whole;
+                    these are identified by diocese (as, for example, Diocese of Chester). Similarly, there
+                    are county or quarter session records which cannot be pinpointed to a particular
+                    location.</p>
+            </div>
+            <div>
+                <head>Principles of Selection</head>
+                <p>REED collections of records attempt to include all known references to dramatic, secular
+                    musical, and mimetic ceremonial performances before 1642 by location. Performance has
+                    been broadly defined to encompass nearly every mimetic, musical, or ritualistic form of
+                    play used to entertain or otherwise engage an audience. Entries may record an actual and
+                    identifiable performance or simply provide information that illuminates a performance
+                    tradition. Musical performance includes all forms of secular music by itinerant or local
+                    minstrels, fiddlers, musicians, and town waits in secular performance, as well as
+                    information about musical instruments and practices, but it excludes singing and
+                    instrumental music as part of public worship. Parish ales, wakes, revels, and fairs are
+                    included only when it can be shown that they actually included entertainment such as
+                    music, drama, baitings, or dancing. Liturgical ceremonial and drumming for militia
+                    musters are not part of REED’s mandate.</p>
+            </div>
+            <div>
+                <head>Dating</head>
+                <p>The usefulness of the documents depends in large measure on the accuracy of their dating;
+                    they have therefore been dated with care, by year and, whenever possible, to the month
+                    and day. The writers of the documents nearly all assume that the year began on 25 March,
+                    and for dates between 1 January and 24 March the years have routinely been advanced to
+                    conform with modern practice. This is indicated by using a slash, as in '1 February
+                    1476/7.'</p>
+                <p>Records derived from accounts are dated in the heading according to the accounting year
+                    (eg, 1611–12), with the accounting period or the rendering date, when only that is
+                    known, given in the subheading (eg, <hi rend="italic">(18 October–17 October)</hi> or
+                    <hi rend="italic">(rendered 26 February 1612/13)</hi>).</p>
+                <p>If it can sometimes be difficult to date the account itself, it is often relatively easy
+                    to date its entries at least roughly. Most entries are not dated within the accounts
+                    themselves, but in nearly every account at least a handful of entries are either dated
+                    or datable by day and month. These entries make it possible to determine whether an
+                    account is in fairly good chronological order. Where possible, therefore, a date has
+                    been provided for each relevant entry, giving, where there is not an exact date, the
+                    limits of the date suggested by the chronology of the account. These dates can be
+                    presumed with certainty to be the date on which the performer received payment and the
+                    date of performance is therefore presumed likely to have been on or near that date.
+                    Where the account is not chronological, or there are too few dated entries to tell, the
+                    date given is that of the whole account.</p>
+                <p>Ecclesiastical and civil court records present dating problems as well because the only
+                    truly fixable date is the one on which the court was held. Therefore, the date that is
+                    assigned to extracts from the courts is that of the court proceeding, while the probable
+                    date of the performance, to the extent that it can be derived, is given in an endnote or
+                    footnote to the text. When it is possible to trace the dates on which the case moved
+                    through the several stages of its process, those dates are also given, whether in
+                    subheadings for subsequent extracts concerning the case or in summaries of the process
+                    in endnotes. The process in church courts seems to have remained fairly constant from
+                    diocese to diocese; a full explanation of standard process can be found in David
+                    Klausner (ed), <title>Herefordshire/Worcestershire</title>, REED (Toronto, 1990),
+                    38–40.</p>
+            </div>
+            <div>
+                <head>Editorial Conventions</head>
+                <p>Each record is preceded by a name or descriptive title, along with a brief identification
+                    of its source. On a separate line the precise accounting period of the entry (where
+                    known) and the manuscript account heading (where available) is given. Where folio or
+                    page numbers have been supplied editorially, they are enclosed within square brackets.
+                    The symbol (A) in the left margin indicates documents that are antiquarian.</p>
+                <p>Bibliographic citations are included in full in editorial apparatus, with the exception
+                    of standard reference works or books and articles that contain original transcriptions
+                    of the documents. Such works are cited in short form by author, title, and page number
+                    where they appear but a complete citation for each is included in the Bibliography
+                    section.</p>
+                <p>Place names and surnames are given in modern form in the editorial apparatus, where that
+                    can be ascertained, and titles and family names of nobility and other public figures in
+                    forms commonly used by historians. Succession numbers, where provided, follow the
+                    absolute sequence given in <title>The Complete Peerage</title>. <title>The Complete
+                        Peerage</title> and other standard reference works used for the purpose are listed
+                    in the Bibliography, General section. Other surnames are usually cited in the most
+                    common form for the individual occurring in the Records.</p>
+            </div>
+            <div>
+                <head>Transcription Conventions</head>
+                <p>Within practical limits, the general layout of the originals has been preserved. Headings
+                    and account totals are shown in the approximate position they occupy in the source.
+                    Marginalia are indicated by the circled symbol 'm,' inserted in the text near their
+                    occurrence in the MS; a circled 'r' or 'l' beside the marginale text indicates whether
+                    it is in the right or left margin. Totals are transcribed only when all the amounts
+                    making up the totals are also transcribed. In continuous prose, the paragraph divisions
+                    of the manuscripts have been retained, but not the lineation. Where the layout of the
+                    original is idiosyncratic (eg, a diagonal left margin), no attempt has been made to
+                    reproduce that format.</p>
+                <p>Dittography and other obvious scribal errors are noted. Decay, damage, or other problems
+                    which adversely affect the legibility of the original are either briefly noted in a
+                    footnote or discussed at length in an endnote following the record.</p>
+                <p>Manuscript punctuation has been retained, except that excessive scribal pointing, most
+                    manuscript braces, and all line fillers have been ignored. Virgules are indicated as /
+                    and //.</p>
+                <p>The spelling of the original has been preserved, along with the capitalization. 'ff' has
+                    been retained for 'F'; the standard and elongated forms of 'I' are uniformly transcribed
+                    as 'I.' Minuscules have been preferred where it has been difficult to distinguish
+                    minuscules from majuscules. Ornamental capitals and display letters have been
+                    transcribed as ordinary letters but are footnoted. Arabic '1' has been used for the 'i'
+                    occasionally found in arabic numerals. Majuscule letters appearing in the middle of
+                    words otherwise written in minuscules are presented as minuscules.</p>
+                <p>Abbreviated words have been expanded, with italics to indicate letters supplied by the
+                    editor. Where manuscripts yield insufficient evidence to judge individual scribal
+                    habits, abbreviations are expanded to classical forms in Latin and modern British forms
+                    in English. First names have been expanded wherever possible. However in cases where it
+                    is impossible to determine what the scribe intended – whether, for example, 'minstr'
+                    refers to one or several minstrels – the word has been left unexpanded.</p>
+                <p>Abbreviations for sums of money ('li,' 's,' 'd,' 'ob' (for half-penny)), 'viz,' and 'etc'
+                    or '&amp;c' and abbreviations cumbersome to expand, including those typical for weights
+                    and measures ('lb' for 'pound'), are retained. 'Mr' and 'Dr' are left unexpanded when
+                    introducing a proper name, but expanded when used as nouns or when occurring before
+                    another title (eg, 'M<ex>aste</ex>r Mayor'). 'Xp-' and 'xp-' are expanded as
+                    'Chr<ex>ist</ex>-' and ‘chr<ex>ist</ex>-’. A looped mark of abbreviation has been
+                    expanded as '<ex>es</ex>' except when it follows an 'e': in this case it is expanded as
+                    '<ex>s</ex>.' Where single minims are too many or too few by obvious scribal error,
+                    an editorially corrected version is supplied in the text and the textual oddity is
+                    noted. Otiose flourishes are ignored. Superlinear letters are lowered to the line except
+                    when used with numerals ('x<hi rend="superscript">o</hi>,' 'xxiiij<hi rend="superscript"
+                        >ti</hi>').</p>
+                <p>Where two or more copies of the same document survive, the editor has chosen a base text
+                    and collated significant variants. In all collations differences in capitalization, form
+                    of abbreviation, word-division, and punctuation have been omitted.</p>
+                <p>Editorial symbols and abbreviations used in the records text can be linked to from the
+                    Helpful Links section in the right margin of individual Record pages, or from About the
+                    Records in the upper navigation bar.</p>
+            </div>
+            <div>
+                <head>About the Translations</head>
+                <p>The documents have been translated as literally as possible. Unclear, technical, or
+                    archaic terms, especially those pertaining to canon or common law, performance, and
+                    music, are usually given a stock translation equivalent but receive a fuller treatment
+                    in the glossaries.</p>
+                <p>Capitalization and punctuation are in accordance with modern practice. As in the records
+                    text, diamond brackets indicate obliterations and strike throughs, cancellations.
+                    Cancellations are not always translated; they may be translated when the whole entry is
+                    cancelled or when they seem to be of special interest or relevance. Round brackets
+                    enclose words supplied editorially, most often because they are needed for grammatical
+                    sense in English or to offer an alternative translation of a difficult or ambiguous
+                    phrase.</p>
+                <p>In translated documents also containing English, the English sections are normally
+                    indicated with '<hi rend="italic">(English)</hi>,' but in some cases, in which the
+                    syntax has become entangled, the English text appears in the translation in modern
+                    spelling. All Latin vocabulary not found in the <title>Oxford Latin Dictionary</title>
+                    or the <title>Dictionary of Medieval Latin from British Sources</title> is found in the
+                    Latin Glossary. All Anglo-French vocabulary not found in the electronic edition of the
+                    <title>Anglo-Norman Dictionary</title> (online at the <ref
+                        target="http://www.anglo-norman.net/">Anglo-Norman Hub</ref>) is found in the
+                    Anglo-French Glossary.</p>
+            </div>
+        </div>
+</body>
+</text>
+</TEI>
