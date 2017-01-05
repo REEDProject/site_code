@@ -19,7 +19,7 @@
       <xsl:choose>
         <xsl:when test="$doc-type = 'records'">
           <xsl:value-of select="kiln:url-for-match('ereed-record-display-html',
-                                ($document-id))" />
+                                ($document-id), 0)" />
         </xsl:when>
       </xsl:choose>
     </xsl:variable>

@@ -16,6 +16,7 @@
       <map:match id="ereed-preprocess-records-tei"
                  pattern="tei/preprocess-records/*.xml">
         <map:generate src="../content/xml/tei/records/{1}.xml" />
+        <map:transform src="../stylesheets/tei/normalise.xsl" />
         <map:transform src="../stylesheets/tei/expand-references.xsl" />
         <map:transform type="xinclude" />
         <map:transform src="../stylesheets/tei/tidy-expanded-references.xsl" />
@@ -47,7 +48,7 @@
       </map:match>
 
       <map:match id="ereed-extract-entity" pattern="eatsml/entity/*.xml">
-        <map:generate src="cocoon:/eatsml/preprocess.xml" />
+        <map:generate src="cocoon:/preprocess/eatsml.xml" />
         <map:transform src="../stylesheets/eatsml/extract-entity.xsl">
           <map:parameter name="entity_eats_id" value="{1}" />
         </map:transform>
@@ -57,6 +58,7 @@
       <map:match id="ereed-preprocess-code-list"
                  pattern="preprocess/tei/code_list.xml">
         <map:generate src="../content/xml/tei/code_list.xml" />
+        <map:transform src="../stylesheets/tei/normalise-code-list.xsl" />
         <map:transform src="../stylesheets/tei/xml-id-to-eats-id.xsl" />
         <map:transform src="../stylesheets/tei/expand-code-list.xsl" />
         <map:serialize type="xml" />

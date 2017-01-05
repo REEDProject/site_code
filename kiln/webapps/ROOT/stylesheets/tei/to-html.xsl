@@ -103,7 +103,7 @@
     <xsl:param name="eats-url" />
     <xsl:variable name="entity-id"
                   select="substring-before(substring-after(@ref, '/entity/'), '/')" />
-    <xsl:value-of select="kiln:url-for-match('ereed-entity-display-html', $entity-id)" />
+    <xsl:value-of select="kiln:url-for-match('ereed-entity-display-html', ($entity-id), 0)" />
   </xsl:template>
 
 </xsl:stylesheet>

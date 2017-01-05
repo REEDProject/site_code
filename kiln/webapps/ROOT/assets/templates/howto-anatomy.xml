@@ -39,9 +39,9 @@
                 <div class="toc mobile-toc">
                   <div>
                     <ul class="sub-sections">
-                      <li><a href="{kiln:url-for-match('ereed-howto-intro', ())}">Introduction to the Research Process</a></li>
-                      <li class="active"><a href="{kiln:url-for-match('ereed-howto-anatomy', ())}">Anatomy of a Record</a></li>
-                      <li><a href="{kiln:url-for-match('ereed-howto-search', ())}">Search Tips</a></li>
+                      <li><a href="{kiln:url-for-match('ereed-howto-intro', (), 0)}">Introduction to the Research Process</a></li>
+                      <li class="active"><a href="{kiln:url-for-match('ereed-howto-anatomy', (), 0)}">Anatomy of a Record</a></li>
+                      <li><a href="{kiln:url-for-match('ereed-howto-search', (), 0)}">Search Tips</a></li>
                     </ul>
                   </div>
                 </div>
@@ -53,9 +53,9 @@
               <div class="row toc">
                 <div class="column medium-6">
                   <ul class="sub-sections">
-                    <li><a href="{kiln:url-for-match('ereed-howto-intro', ())}">Introduction to the Research Process</a></li>
-                    <li class="active"><a href="{kiln:url-for-match('ereed-howto-anatomy', ())}">Anatomy of a Record</a></li>
-                    <li><a href="{kiln:url-for-match('ereed-howto-search', ())}">Search Tips</a></li>
+                    <li><a href="{kiln:url-for-match('ereed-howto-intro', (), 0)}">Introduction to the Research Process</a></li>
+                    <li class="active"><a href="{kiln:url-for-match('ereed-howto-anatomy', (), 0)}">Anatomy of a Record</a></li>
+                    <li><a href="{kiln:url-for-match('ereed-howto-search', (), 0)}">Search Tips</a></li>
                   </ul>
                 </div>
               </div>
@@ -65,7 +65,7 @@
             </div>
           </div>
           <div class="row small-collapse medium-uncollapse ">
-            <div class="column medium-10  sub-section-content">
+            <div class="column medium-10 sub-section-content">
               <div class="anatomy-title">
                 <h2>2. Anatomy of a Record</h2>
               </div>
@@ -148,7 +148,7 @@
               <div class="row prev-next-buttons">
                 <div class="columns medium-4">
                   <div class="previous-button">
-                    <a href="{kiln:url-for-match('ereed-howto-intro', ())}">
+                    <a href="{kiln:url-for-match('ereed-howto-intro', (), 0)}">
                       <div class="next">Previous</div>
                       <div class="next-page">1. Introduction to the Research Process</div>
                     </a>
@@ -156,7 +156,7 @@
                 </div>
                 <div class="columns medium-4">
                   <div class="next-button">
-                    <a href="{kiln:url-for-match('ereed-howto-search', ())}">
+                    <a href="{kiln:url-for-match('ereed-howto-search', (), 0)}">
                       <div class="next">Next</div>
                       <div class="next-page">3. Search Tips</div>
                     </a>

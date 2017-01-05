@@ -86,7 +86,7 @@
          pass the fragment). Convert to a querystring. -->
     <xsl:variable name="final-url" select="replace($full-url, '#', '?id=')" />
     <xi:include href="{kiln:url-for-match('ereed-extract-referenced-content',
-                      ($final-url))}" />
+                      ($final-url), 1)}" />
   </xsl:template>
 
   <xsl:template name="expand-url">

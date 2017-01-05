@@ -223,9 +223,9 @@
               </xsl:if>
               <!-- List of currently applied facets. -->
               <xsl:apply-templates mode="search-results" select="/aggregation/response/lst[@name='responseHeader']/lst[@name='params']/*[@name='fq']" />
-              <span class="active-filter-clear"><a href="{kiln:url-for-match('ereed-search', ())}">Clear all</a></span>
+              <span class="active-filter-clear"><a href="{kiln:url-for-match('ereed-search', (), 0)}">Clear all</a></span>
             </div>
-            <form action="{kiln:url-for-match('ereed-records-display-html', ())}" method="get">
+            <form action="{kiln:url-for-match('ereed-records-display-html', (), 0)}" method="get">
               <table id="table" class="display responsive" cellspacing="0" width="100%">
                 <thead>
                   <tr>

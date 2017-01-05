@@ -12,7 +12,7 @@
 
   <xsl:template match="h:request">
     <data>
-      <xi:include href="cocoon:/{kiln:url-for-match('local-admin-concordance-exclude-lists', ())}" />
+      <xi:include href="{kiln:url-for-match('local-admin-concordance-exclude-lists', (), 1)}" />
       <word_lists>
         <xsl:apply-templates select="h:requestParameters/h:parameter[@name='docs']/h:value" />
       </word_lists>
@@ -20,7 +20,7 @@
   </xsl:template>
 
   <xsl:template match="h:value">
-    <xi:include href="cocoon:/{kiln:url-for-match('local-admin-concordance-word-list', (.))}" />
+    <xi:include href="{kiln:url-for-match('local-admin-concordance-word-list', (.), 1)}" />
   </xsl:template>
 
 </xsl:stylesheet>

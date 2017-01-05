@@ -10,9 +10,9 @@
     <div class="tools">
       <div class="tools-heading show-for-medium">HELPFUL LINKS</div>
       <ul class="no-padding">
-        <li><a href="{kiln:url-for-match('ereed-howto-anatomy', ())}">Anatomy of a Record</a></li>
-        <li><a href="{kiln:url-for-match('ereed-about-glossaries', ())}">Glossaries</a></li>
-        <li><a href="{kiln:url-for-match('ereed-about-symbols', ())}">Symbols &amp; Abbreviations</a></li>
+        <li><a href="{kiln:url-for-match('ereed-howto-anatomy', (), 0)}">Anatomy of a Record</a></li>
+        <li><a href="{kiln:url-for-match('ereed-about-glossaries', (), 0)}">Glossaries</a></li>
+        <li><a href="{kiln:url-for-match('ereed-about-symbols', (), 0)}">Symbols &amp; Abbreviations</a></li>
       </ul>
     </div>
   </xsl:variable>

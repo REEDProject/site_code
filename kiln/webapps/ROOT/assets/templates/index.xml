@@ -21,7 +21,7 @@
           England from the Middle Ages until 1642, when the Puritans
           closed the London theatres.</p>
 
-          <p><a href="{kiln:url-for-match('ereed-search', ())}" class="button hero-search-button">Search the
+          <p><a href="{kiln:url-for-match('ereed-search', (), 0)}" class="button hero-search-button">Search the
           Records</a></p>
         </div>
 
@@ -48,7 +48,7 @@
                 <div class="card-subheading">HOW TO</div>
                 <h2 class="card-heading">New to records research?</h2>
                 <p>These records are only the written traces left behind by the original events but they will help you to answer key questions: who? what? when? where? how? how much? and, perhaps even, why? Try searching in various ways.</p>
-                <a href="{kiln:url-for-match('ereed-howto-section', ())}">View Our Research Tips</a>
+                <a href="{kiln:url-for-match('ereed-howto-section', (), 0)}">View Our Research Tips</a>
               </div>
             </div>
           </div>

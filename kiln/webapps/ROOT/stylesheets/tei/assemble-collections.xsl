@@ -21,7 +21,7 @@
            step only, so it's not important to have the namespace. -->
       <TEICorpus>
         <xsl:for-each-group select="h:request/h:requestParameters/h:parameter[@name='ids']/h:value" group-by="substring-before(., '-')">
-          <xi:include href="{kiln:url-for-match('ereed-preprocess-records-tei', (current-grouping-key()))}" />
+          <xi:include href="{kiln:url-for-match('ereed-preprocess-records-tei', (current-grouping-key()), 1)}" />
         </xsl:for-each-group>
       </TEICorpus>
     </xsl:copy>

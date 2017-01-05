@@ -105,7 +105,7 @@
 
   <xsl:template match="result/doc" mode="search-results">
     <xsl:variable name="record-id" select="str[@name='document_id']" />
-    <xsl:variable name="result-url" select="kiln:url-for-match('ereed-record-display-html', ($record-id))" />
+    <xsl:variable name="result-url" select="kiln:url-for-match('ereed-record-display-html', ($record-id), 0)" />
     <tr>
       <td><input name="ids" value="{$record-id}" type="checkbox" /></td>
       <td class="show-for-small-only">

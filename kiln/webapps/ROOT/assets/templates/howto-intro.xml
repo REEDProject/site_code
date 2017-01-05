@@ -38,9 +38,9 @@
                 <div class="toc mobile-toc">
                   <div>
                     <ul class="sub-sections">
-                      <li class="active"><a href="{kiln:url-for-match('ereed-howto-intro', ())}">Introduction to the Research Process</a></li>
-                      <li><a href="{kiln:url-for-match('ereed-howto-anatomy', ())}">Anatomy of a Record</a></li>
-                      <li><a href="{kiln:url-for-match('ereed-howto-search', ())}">Search Tips</a></li>
+                      <li class="active"><a href="{kiln:url-for-match('ereed-howto-intro', (), 0)}">Introduction to the Research Process</a></li>
+                      <li><a href="{kiln:url-for-match('ereed-howto-anatomy', (), 0)}">Anatomy of a Record</a></li>
+                      <li><a href="{kiln:url-for-match('ereed-howto-search', (), 0)}">Search Tips</a></li>
                     </ul>
                   </div>
                 </div>
@@ -53,9 +53,9 @@
               <div class="row toc">
                 <div class="column medium-6">
                   <ul class="sub-sections">
-                    <li class="active"><a href="{kiln:url-for-match('ereed-howto-intro', ())}">Introduction to the Research Process</a></li>
-                    <li><a href="{kiln:url-for-match('ereed-howto-anatomy', ())}">Anatomy of a Record</a></li>
-                    <li><a href="{kiln:url-for-match('ereed-howto-search', ())}">Search Tips</a></li>
+                    <li class="active"><a href="{kiln:url-for-match('ereed-howto-intro', (), 0)}">Introduction to the Research Process</a></li>
+                    <li><a href="{kiln:url-for-match('ereed-howto-anatomy', (), 0)}">Anatomy of a Record</a></li>
+                    <li><a href="{kiln:url-for-match('ereed-howto-search', (), 0)}">Search Tips</a></li>
                   </ul>
                 </div>
               </div>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="columns medium-4">
                   <div class="next-button">
-                    <a href="{kiln:url-for-match('ereed-howto-anatomy', ())}">
+                    <a href="{kiln:url-for-match('ereed-howto-anatomy', (), 0)}">
                       <div class="next">Next</div>
                       <div class="next-page">Anatomy of a Record</div>
                     </a>

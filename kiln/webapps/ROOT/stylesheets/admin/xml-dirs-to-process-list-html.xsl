@@ -12,17 +12,17 @@
 
     <p>
       <a class="button round"
-         href="{kiln:url-for-match('local-solr-index-all', ())}">
+         href="{kiln:url-for-match('local-solr-index-all', (), 0)}">
         <xsl:text>Index all (search)</xsl:text>
       </a>
       <xsl:text> </xsl:text>
       <a class="button round"
-         href="{kiln:url-for-match('local-rdf-harvest-all-display', ())}">
+         href="{kiln:url-for-match('local-rdf-harvest-all-display', (), 0)}">
         <xsl:text>Harvest all (RDF)</xsl:text>
       </a>
     </p>
 
-    <form method="get" action="{kiln:url-for-match('local-admin-concordance-word-lists-report', ())}">
+    <form method="get" action="{kiln:url-for-match('local-admin-concordance-word-lists-report', (), 0)}">
       <table>
         <thead>
           <tr>
@@ -90,14 +90,14 @@
       <td>
         <a title="Schematron validation report"
            href="{kiln:url-for-match('local-admin-schematron-validation',
-                 ($filepath))}">
+                 ($filepath), 0)}">
           <xsl:text>Schematron</xsl:text>
         </a>
       </td>
       <!-- Image checking. -->
       <td>
         <a href="{kiln:url-for-match('local-admin-resource-check',
-                 ($filepath))}">
+                 ($filepath), 0)}">
           <xsl:text>Missing images</xsl:text>
         </a>
       </td>
@@ -112,7 +112,7 @@
         </xsl:variable>
         <a title="Index document in search server"
            href="{kiln:url-for-match('local-solr-index',
-                 ($content-type, $filepath))}">
+                 ($content-type, $filepath), 0)}">
           <xsl:text>Index</xsl:text>
         </a>
       </td>
@@ -120,7 +120,7 @@
       <td>
         <a title="Harvest RDF from document"
            href="{kiln:url-for-match('local-rdf-harvest-display',
-                                     ($filepath))}">
+                                     ($filepath), 0)}">
           <xsl:text>Harvest</xsl:text>
         </a>
       </td>

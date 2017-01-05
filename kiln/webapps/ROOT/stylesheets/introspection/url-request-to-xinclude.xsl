@@ -30,7 +30,7 @@
       </xsl:choose>
     </xsl:variable>
     <xi:include href="{kiln:url-for-match('kiln-introspection-match-url',
-                      (substring-after($value, '/')))}" />
+                      (substring-after($value, '/')), 1)}" />
   </xsl:template>
 
   <xsl:template match="@*|node()">

@@ -20,12 +20,19 @@
       <axsl:function name="kiln:url-for-match" as="xs:string">
         <axsl:param name="match-id" as="xs:string" />
         <axsl:param name="parameters" />
-        <axsl:variable name="url-parts">
+        <axsl:param name="cocoon-context" />
+        <axsl:variable name="url">
           <axsl:choose>
             <xsl:apply-templates select="//map:match[@id][not(map:mount)]" />
           </axsl:choose>
         </axsl:variable>
-        <axsl:sequence select="string-join($url-parts, '')" />
+        <axsl:variable name="full-url">
+          <axsl:if test="$cocoon-context and not(starts-with($url, 'cocoon://'))">
+            <xsl:text>cocoon:/</xsl:text>
+          </axsl:if>
+          <axsl:value-of select="$url" />
+        </axsl:variable>
+        <axsl:value-of select="$full-url" />
       </axsl:function>
     </axsl:stylesheet>
   </xsl:template>
