@@ -126,7 +126,7 @@
         <map:aggregate element="aggregation" label="content">
           <map:part element="TEICorpus"
                     src="../content/xml/tei/series_methodology.xml" />
-          <map:part src="cocoon://_internal/menu/main.xml?url=about/" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=about/series/" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/methodology.xsl" />
         <map:serialize />
@@ -136,7 +136,7 @@
       <map:match id="ereed-about-digital" pattern="about/digital/">
         <map:aggregate element="aggregation" label="content">
           <map:part element="TEICorpus" src="../content/xml/tei/digital_methodology.xml" />
-          <map:part src="cocoon://_internal/menu/main.xml?url=about/" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=about/digital/" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/methodology.xsl" />
         <map:serialize />
@@ -183,7 +183,7 @@
         <map:aggregate element="aggregation" label="content">
           <map:part element="TEICorpus"
                     src="cocoon://internal/tei/preprocess-records/{1}.xml" />
-          <map:part src="cocoon://_internal/menu/main.xml?url=collections/" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=collections/{1}/" />
           <map:part src="cocoon://internal/search/records_by_collection.xml?q={1}" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/collection.xsl" />
@@ -198,7 +198,7 @@
       <!-- Howto: Introduction to the Research Process. -->
       <map:match id="ereed-howto-intro" pattern="howto/intro/">
         <map:aggregate element="aggregation" label="content">
-          <map:part src="cocoon://_internal/menu/main.xml?url=howto/" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=howto/intro/" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/howto-intro.xsl" />
         <map:serialize />
@@ -207,7 +207,7 @@
       <!-- Howto: Anatomy of a Record. -->
       <map:match id="ereed-howto-anatomy" pattern="howto/anatomy/">
         <map:aggregate element="aggregation" label="content">
-          <map:part src="cocoon://_internal/menu/main.xml?url=howto/" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=howto/anatomy/" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/howto-anatomy.xsl" />
         <map:serialize />
@@ -216,7 +216,7 @@
       <!-- Howto: Search Tips. -->
       <map:match id="ereed-howto-search" pattern="howto/search/">
         <map:aggregate element="aggregation">
-          <map:part src="cocoon://_internal/menu/main.xml?url=howto/" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=howto/search/" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/howto-search.xsl" />
         <map:serialize />
