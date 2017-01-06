@@ -101,6 +101,12 @@
     <i>(blank)</i>
   </xsl:template>
 
+  <xsl:template match="tei:title">
+    <i>
+      <xsl:apply-templates select="@*|node()" />
+    </i>
+  </xsl:template>
+
   <xsl:template name="make-entity-url">
     <xsl:param name="eats-url" />
     <xsl:variable name="entity-id"
