@@ -64,8 +64,7 @@
                 <prefixDef ident="ereed" matchPattern="([A-Za-z0-9_]+)"
                     replacementPattern="../code_list.xml#$1">
                     <p>Private URIs using the <code>ereed</code> prefix are pointers to entities in the
-                        code_list.xml file. For example, <code>ereed:BPA</code> dereferences to
-                        <code>code_list.xml#BPA</code>.</p>
+                        code_list.xml file. For example, <code>ereed:V117</code> dereferences to <code>code_list.xml#V117</code>.</p>
                 </prefixDef>
                 <!-- or something like below for glossary -->
                 <prefixDef ident="ereed-gloss" matchPattern="([A-Za-z0-9_]+)"
