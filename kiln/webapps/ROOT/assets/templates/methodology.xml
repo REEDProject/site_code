@@ -60,7 +60,19 @@
           <div class="row show-for-medium">
             <div class="columns medium-3">
               <ul class="sidenav">
-                <!-- QAZ: use a Kiln menu here. -->
+                <xsl:for-each select="/aggregation/kiln:nav//ul[li[@class='active']]/li">
+                  <xsl:copy>
+                    <xsl:copy-of select="@*" />
+                    <xsl:choose>
+                      <xsl:when test="@class='active'">
+                        <xsl:value-of select="a" />
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:copy-of select="a" />
+                      </xsl:otherwise>
+                    </xsl:choose>
+                  </xsl:copy>
+                </xsl:for-each>
               </ul>
             </div>
             <div class="column medium-8 end">
