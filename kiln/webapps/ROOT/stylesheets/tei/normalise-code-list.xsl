@@ -7,7 +7,10 @@
     <xsl:copy>
       <xsl:apply-templates select="@*" />
       <tei:choice>
-        <xsl:apply-templates select="node()" />
+        <xsl:apply-templates select="tei:abbr" />
+        <tei:expan>
+          <xsl:apply-templates select="tei:name" />
+        </tei:expan>
       </tei:choice>
     </xsl:copy>
   </xsl:template>
