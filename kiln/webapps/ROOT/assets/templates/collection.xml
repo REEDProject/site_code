@@ -83,112 +83,42 @@
               </div>
             </div>
             <div class="tabs-panel" id="panel2">
-              <div class="row">
-                <div class="column medium-9">
-                  <div class="entity-top-content">
-                    <h2>Related Editorial Content</h2>
-                    <div class="record-status" >1 - 5 of 6 records shown </div>
-                  </div>
-                  <div class="row">
-                    <div class="entity-main-content column medium-11">
-                      <div class="related-content">
-                        <h3><!-- QAZ: Title --></h3>
-
-                        <div class="individual-related-content">
-                          <a href="#"><!-- QAZ --></a>
-                          <p><!-- QAZ --></p>
+              <xsl:for-each select="$record_text/tei:front/tei:div[@type='acknowledgments']">
+                <div class="bibliography-filter filter hide-for-medium boxed">
+                  <div class="filter-head jump-to-filter">Topics In This Section</div>
+                  <div class="filter-content-wrapper relative">
+                    <div class="filter-content">
+                      <div class="toc mobile-toc">
+                        <div>
+                          <xsl:call-template name="display-section-toc" />
                         </div>
-                      </div>
-                      <div class="small-margin-top-25 small-margin-bottom-25">
-                        <ul class="pagination">
-                          <li class="paginate_button first unavailable disabled" aria-controls="table" tabindex="0" id="table_first"><svg width="12px" class="inline flip" height="13px" viewBox="12 11 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Group-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(12.000000, 12.000000)">
-                              <path d="M8.5,7.58416803 C8.5,7.6710088 8.46659961,7.74782898 8.39979943,7.81462916 L7.89879779,8.3156314 C7.83199701,8.38243158 7.75517684,8.41583137 7.66833667,8.41583137 C7.58149649,8.41583137 7.50467572,8.38243158 7.43787554,8.3156314 L3.5,4.37775526 L-0.43787554,8.3156314 C-0.504675719,8.38243158 -0.581495895,8.41583137 -0.668336666,8.41583137 C-0.755176839,8.41583137 -0.831997015,8.38243158 -0.898797193,8.3156314 L-1.39979943,7.81462916 C-1.46659961,7.74782898 -1.5,7.6710088 -1.5,7.58416803 C-1.5,7.49732786 -1.46659961,7.42050769 -1.39979943,7.35370751 L3.26953887,2.6843686 C3.33633965,2.61756842 3.41315983,2.58416863 3.5,2.58416863 C3.58684017,2.58416863 3.66366095,2.61756842 3.73046113,2.6843686 L8.39979943,7.35370751 C8.46659961,7.42050769 8.5,7.49732786 8.5,7.58416803 L8.5,7.58416803 Z" id="Shape-Copy-5" fill="#008281" transform="translate(3.500000, 5.500000) scale(-1, 1) rotate(-90.000000) translate(-3.500000, -5.500000) "></path>
-                              <path d="M9.41666667,0.25 L9.41666667,10.75" id="Path-2" stroke="#008281" stroke-width="1.25"></path>
-                            </g>
-                            <style>
-                              #Path-2 {
-                              stroke: "#008281";
-                              }
-                              .unavailable #Path-2, .unavailable #Shape-Copy-5 {
-                              stroke: #E5E7E9;
-                              fill: #E5E7EA;
-                              }
-                            </style>
-                          </svg>
-                          </li>
-                          <li class="paginate_button previous unavailable disabled" aria-controls="table" tabindex="0" id="table_previous">&lt;</li>
-                          <li class="paginate_button current" aria-controls="table" tabindex="0">1</li>
-                          <li class="paginate_button " aria-controls="table" tabindex="0"><a href="#">2</a></li>
-                          <li class="paginate_button next" aria-controls="table" tabindex="0" id="table_next"><a href="#">&gt;</a></li>
-                          <li class="paginate_button last" aria-controls="table" tabindex="0" id="table_last"><a href="#"><svg width="12px" class="inline" height="13px" viewBox="12 11 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Group-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(12.000000, 12.000000)">
-                              <path d="M8.5,7.58416803 C8.5,7.6710088 8.46659961,7.74782898 8.39979943,7.81462916 L7.89879779,8.3156314 C7.83199701,8.38243158 7.75517684,8.41583137 7.66833667,8.41583137 C7.58149649,8.41583137 7.50467572,8.38243158 7.43787554,8.3156314 L3.5,4.37775526 L-0.43787554,8.3156314 C-0.504675719,8.38243158 -0.581495895,8.41583137 -0.668336666,8.41583137 C-0.755176839,8.41583137 -0.831997015,8.38243158 -0.898797193,8.3156314 L-1.39979943,7.81462916 C-1.46659961,7.74782898 -1.5,7.6710088 -1.5,7.58416803 C-1.5,7.49732786 -1.46659961,7.42050769 -1.39979943,7.35370751 L3.26953887,2.6843686 C3.33633965,2.61756842 3.41315983,2.58416863 3.5,2.58416863 C3.58684017,2.58416863 3.66366095,2.61756842 3.73046113,2.6843686 L8.39979943,7.35370751 C8.46659961,7.42050769 8.5,7.49732786 8.5,7.58416803 L8.5,7.58416803 Z" id="Shape-Copy-5" fill="#008281" transform="translate(3.500000, 5.500000) scale(-1, 1) rotate(-90.000000) translate(-3.500000, -5.500000) "></path>
-                              <path d="M9.41666667,0.25 L9.41666667,10.75" id="Path-2" stroke="#008281" stroke-width="1.25"></path>
-                            </g>
-                            <style>
-                              #Path-2 {
-                              stroke: "#008281";
-                              }
-                              .unavailable #Path-2, .unavailable #Shape-Copy-5 {
-                              stroke: #E5E7E9;
-                              fill: #E5E7EA;
-                              }
-                            </style>
-                          </svg>
-                        </a>
-                          </li>
-                        </ul>
                       </div>
                     </div>
                   </div>
-                  <div class="hide-for-medium">
-                    <div class="record-sidebar hide-for-medium" >
-                      <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
-                        <div class="filter-head jump-to-filter">TOOLS</div>
-                        <div class="filter-content-wrapper relative">
-                          <div class="filter-content">
-                            <div class="tools">
-                              <div class="tools-heading show-for-medium">TOOLS</div>
-                              <ul class="tools">
-                                <li class="email"><a href="">Email</a></li>
-                                <li class="print"><a href="">Print</a></li>
-                                <li class="pdf"><a href="">PDF</a></li>
-                                <li class="xml"><a href="">XML</a></li>
-                                <li class="bookmark"><a href="">Bookmark</a></li>
-                                <li class="share"><a href="">Share</a></li>
-                              </ul>
+                </div>
+                <div class="row">
+                  <div class="column medium-12">
+                    <div class="entity-top-content">
+                      <h2>Editors &amp; Acknowledgments</h2>
+                    </div>
+                    <div class="related-content row">
+                      <div class="columns medium-9">
+                        <div class="show-for-medium">
+                          <div class="row toc">
+                            <div class="column medium-6">
+                              <xsl:call-template name="display-section-toc" />
                             </div>
-
                           </div>
                         </div>
-                      </div>
-                      <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
-                        <div class="filter-head jump-to-filter">HELPFUL LINKS</div>
-                        <div class="filter-content-wrapper relative">
-                          <div class="filter-content">
-                            <xsl:copy-of select="$helpful_links" />
-                          </div>
+                        <div class="explore-text">
+                          <xsl:apply-templates select="." />
+                          <xsl:call-template name="display-section-data" />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="column medium-2 show-for-medium">
-                  <div class="tools">
-                    <div class="tools-heading show-for-medium">TOOLS</div>
-                    <ul class="tools">
-                      <li class="email"><a href="">Email</a></li>
-                      <li class="print"><a href="">Print</a></li>
-                      <li class="pdf"><a href="">PDF</a></li>
-                      <li class="xml"><a href="">XML</a></li>
-                      <li class="bookmark"><a href="">Bookmark</a></li>
-                      <li class="share"><a href="">Share</a></li>
-                    </ul>
-                  </div>
-                  <xsl:copy-of select="$helpful_links" />
-                </div>
-              </div>
+              </xsl:for-each>
             </div>
             <div class="tabs-panel" id="panel3">
               <xsl:for-each select="$record_text/tei:front/tei:div[@type='background']">
