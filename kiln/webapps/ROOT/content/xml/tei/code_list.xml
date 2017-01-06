@@ -161,6 +161,22 @@
                             <catDesc><name>Folger Shakespeare Library</name></catDesc>
                         </category>
                     </category>
+                    <category xml:id="short_title_catalogues">
+                        <catDesc>Short-Title Catalogues</catDesc>
+                        <category xml:id="STC">
+                            <catDesc>
+                                <abbr>STC</abbr>
+                                <name>Pollard and Redgrave (eds), Short-Title Catalogue</name>
+                            </catDesc>
+                        </category>
+                        
+                        <category xml:id="Wing">
+                            <catDesc>
+                                <abbr>Wing</abbr>
+                                <name>Wing, Short-Title Catalogue</name>
+                            </catDesc>
+                        </category>
+                    </category>
                 </taxonomy>
             </classDecl>
         </encodingDesc>
