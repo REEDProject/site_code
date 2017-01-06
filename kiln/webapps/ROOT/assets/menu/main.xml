@@ -14,5 +14,10 @@
     <item label="Staffordshire" match="ereed-collections-collection"
           params="staff" />
   </menu>
-  <menu label="How To" match="ereed-howto-section" />
+  <menu label="How To" match="ereed-howto-section">
+    <item label="Introduction to the Research Process"
+          match="ereed-howto-intro" />
+    <item label="Anatomy of a Record" match="ereed-howto-anatomy" />
+    <item label="Search Tips" match="ereed-howto-search" />
+  </menu>
 </root>
