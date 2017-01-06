@@ -3,7 +3,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Staffordshire</title>
+                <title type="main">Series Methodology</title>
                 <!-- Still to be tagged in EATS with collection EATS entity page -->
                 <funder><orgName>Andrew W. Mellon Foundation</orgName>, Scholarly Communications and
                     Information Technology Program. Program Officer: <persName>Donald J.
@@ -99,8 +99,7 @@
 
 <text>
 <body>
-        <div type="series_methodology">
-            <div>
+            <div xml:id="introduction">
                 <head>Introduction</head>
                 <p>From the start of the REED project, research areas have been defined geographically by
                     county and major city. Although the progress of several centuries has obscured or
@@ -115,7 +114,7 @@
                     are county or quarter session records which cannot be pinpointed to a particular
                     location.</p>
             </div>
-            <div>
+            <div xml:id="selection">
                 <head>Principles of Selection</head>
                 <p>REED collections of records attempt to include all known references to dramatic, secular
                     musical, and mimetic ceremonial performances before 1642 by location. Performance has
@@ -130,7 +129,7 @@
                     music, drama, baitings, or dancing. Liturgical ceremonial and drumming for militia
                     musters are not part of REED’s mandate.</p>
             </div>
-            <div>
+            <div xml:id="dating">
                 <head>Dating</head>
                 <p>The usefulness of the documents depends in large measure on the accuracy of their dating;
                     they have therefore been dated with care, by year and, whenever possible, to the month
@@ -165,7 +164,7 @@
                     Klausner (ed), <title>Herefordshire/Worcestershire</title>, REED (Toronto, 1990),
                     38–40.</p>
             </div>
-            <div>
+            <div xml:id="editorial">
                 <head>Editorial Conventions</head>
                 <p>Each record is preceded by a name or descriptive title, along with a brief identification
                     of its source. On a separate line the precise accounting period of the entry (where
@@ -185,7 +184,7 @@
                     in the Bibliography, General section. Other surnames are usually cited in the most
                     common form for the individual occurring in the Records.</p>
             </div>
-            <div>
+            <div xml:id="transcription">
                 <head>Transcription Conventions</head>
                 <p>Within practical limits, the general layout of the originals has been preserved. Headings
                     and account totals are shown in the approximate position they occupy in the source.
@@ -234,7 +233,7 @@
                     Helpful Links section in the right margin of individual Record pages, or from About the
                     Records in the upper navigation bar.</p>
             </div>
-            <div>
+            <div xml:id="translations">
                 <head>About the Translations</head>
                 <p>The documents have been translated as literally as possible. Unclear, technical, or
                     archaic terms, especially those pertaining to canon or common law, performance, and
@@ -257,7 +256,7 @@
                         target="http://www.anglo-norman.net/">Anglo-Norman Hub</ref>) is found in the
                     Anglo-French Glossary.</p>
             </div>
-        </div>
+
 </body>
 </text>
 </TEI>
