@@ -175,6 +175,7 @@
                 <listBibl>
                     <bibl xml:id="AWAS">
                         <title>Archdeacon John Fulnetby's Visitation Articles</title>
+                        <note type="docdesc"><p><title>ARTICLES | TO BE | INQUIRED OF | WITHIN THE ARCHDEACONRY | OF STAFFORD | In the Visitation of the Right Worshipfull [blank] | Archdeaconry of Stafford. | <hi rend="italic">Holden in the yeare of our Lord God, 1635</hi> | Printed at <hi rend="italic">London, by Richard Badger,</hi> | <date>1635</date>.</title></p></note>
                         <idno type="publication" sameAs="#STC"/>
                         <idno type="STC_number">10336</idno>
                     </bibl>
@@ -548,6 +549,7 @@
 
                     <bibl xml:id="NICH">
                         <title>Queen Elizabeth's Visit to Lichfield (A)</title>
+                        <note type="docdesc"><p><author>Nichols, John</author>. <title>THE | PROGRESSES | AND | PUBLIC PROCESSIONS | OF | QUEEN ELIZABETH. | ... | A NEW EDITION, IN THREE VOLUMES. | VOLUME I. | [Royal Coat of Arms] | LONDON:  PRINTED BY AND FOR JOHN NICHOLS AND SON, | (PRINTERS TO THE SOCIETY OF ANTIQUARIES,) | 25, PARLIAMENT STREET. | <date>1823</date>.</title></p></note>
                         <idno type="author_surname">Nichols</idno>: <idno type="short_title"
                             >{Progresses}, vol 1</idno>
                     </bibl>
@@ -1520,14 +1522,19 @@
 
                     <bibl xml:id="WRIN">
                         <title>Inventory of the Effects of Sir Hugh Wrottesley (A)</title>
-                        <idno type="author_surname">Wrottesley</idno>: <idno type="short_title"
-                            >History</idno>
+                        <note type="docdesc"><p>Sir Hugh Wrottesley (<hi rend="italic">c</hi> 1570–1633) was father of Walter Wrottesley (1606–59), initially a Parliamentarian, turned Royalist sympathizer, created 1st Baronet of Wrottesley in 1642 (Wrottesley, <title>Family of Wrottesley</title>, pp 295–6, 306, 314–16). Wrottesley Hall, near Tettenhall (now part of Wolverhampton, West Midlands) was a moated Tudor House, destroyed by fire in 1897.</p>
+                            <p>Historical Manuscripts Commission, <title>Guide to the Location of Collections Described in the Reports and Calendars Series 1870-1980</title> (London, 1982), 68, records that the manuscripts of the Wrottesley family at Wrottesley were destroyed in a fire in 1897. What remains are two antiquarian transcriptions from documents of Sir Hugh Wrottesley (1570–1633). The first results from the HMC survey of the MSS before the house burned, while the second gives details of the fire at Wrottesley, 16 December 1897, when the house was completely destroyed, and quotes extensively from transcripts made before that event, including the inventory transcribed here.</p><p><author>Wrottesley, George</author>. <title>History of the Family of Wrottesley of Wrottesely, Co. Stafford</title> (Exeter, <date>1903</date>; rpt Staffordshire Record Society, Collections for a History of Staffordshire ns 6, pt 2, <date>1906</date>), 301–5.</p></note>
+                        <idno type="author_surname">Wrottesley</idno>
+                        <idno type="short_title">History</idno>
                     </bibl>
 
                     <bibl xml:id="WRLT">
                         <title>Letter from J. Richards to Sir Hugh Wrottesley (A)</title>
-                        <idno type="author_surname">Horwood</idno>: <idno type="short_title"
-                            >'Manuscripts'</idno>
+                        <note type="docdesc"><p>Sir Hugh Wrottesley (<hi rend="italic">c</hi> 1570–1633) was father of Walter Wrottesley (1606–59), initially a Parliamentarian, turned Royalist sympathizer, created 1st baronet of Wrottesley in 1642 (Wrottesley, <title>Family of Wrottesley</title>, pp 295–6, 306, 314–16). Wrottesley Hall, near Tettenhall (now part of Wolverhampton, West Midlands) was a moated Tudor House, destroyed by fire in 1897.</p>
+                            <p>Historical Manuscripts Commission, <title>Guide to the Location of Collections Described in the Reports and Calendars Series 1870-1980</title> (London, 1982), 68, records that the manuscripts of the Wrottesley family at Wrottesley were destroyed in a fire in 1897. What remains are two antiquarian transcriptions from documents of Sir Hugh Wrottesley (1570–1633). The first, transcribed here, results from the HMC survey of the MSS before the house burned, while the second gives details of the fire at Wrottesley, 16 December 1897, when the house was completely destroyed, and quotes extensively from transcripts made before that event.</p>
+                            <p>Historical Manuscripts Commission. 'The Manuscripts of the Right Honourable Lord Wrottesley, at Wrottesley, Staffordshire.' Alfred J. Horwood (ed). <title>Second Report</title> (London, <date>1874</date>). 46–9.</p></note>
+                        <idno type="author_surname">Horwood</idno>
+                        <idno type="short_title">'Manuscripts'</idno>
                     </bibl>
 
                     <msDesc xml:id="TSHL">
