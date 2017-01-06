@@ -35,6 +35,11 @@
           <xsl:text>: </xsl:text>
           <xsl:value-of select="tei:idno[@type='STC_number']" />
         </xsl:when>
+        <xsl:when test="tei:idno[@type='author_surname']">
+          <xsl:value-of select="tei:idno[@type='author_surname']" />
+          <xsl:text>: </xsl:text>
+          <xsl:value-of select="tei:idno[@type='short_title']" />
+        </xsl:when>
       </xsl:choose>
     </tei:span>
     <!-- QAZ: typed notes. -->
