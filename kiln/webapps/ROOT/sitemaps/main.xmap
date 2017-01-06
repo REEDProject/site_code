@@ -123,33 +123,22 @@
 
       <!-- About: Series Methodology. -->
       <map:match id="ereed-about-series" pattern="about/series/">
-        <map:redirect-to uri="intro/" permanent="no" />
-      </map:match>
-
-      <!-- About: Series Methodology: part. -->
-      <map:match id="ereed-about-series-part"
-                 pattern="about/series/*/">
         <map:aggregate element="aggregation" label="content">
-          <map:part src="../content/xml/tei/editorial.xml" />
+          <map:part element="TEICorpus"
+                    src="../content/xml/tei/series_methodology.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=about/" />
         </map:aggregate>
-        <map:transform src="../stylesheets/tei/tei-to-html.xsl" />
+        <map:transform src="cocoon://_internal/template/methodology.xsl" />
         <map:serialize />
       </map:match>
 
       <!-- About: Digital Methodology. -->
       <map:match id="ereed-about-digital" pattern="about/digital/">
-        <map:redirect-to uri="intro/" permanent="no" />
-      </map:match>
-
-      <!-- About: Editorial Methodology: part. -->
-      <map:match id="ereed-about-digital-part"
-                 pattern="about/digital/*/">
         <map:aggregate element="aggregation" label="content">
-          <map:part src="../content/xml/tei/digital.xml" />
+          <map:part element="TEICorpus" src="../content/xml/tei/digital_methodology.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=about/" />
         </map:aggregate>
-        <map:transform src="../stylesheets/tei/tei-to-html.xsl" />
+        <map:transform src="cocoon://_internal/template/methodology.xsl" />
         <map:serialize />
       </map:match>
 
