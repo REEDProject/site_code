@@ -84,6 +84,8 @@
     </li>
   </xsl:template>
 
+  <xsl:template match="tei:pb" />
+
   <xsl:template match="tei:rs[@ref]">
     <a class="tag">
       <xsl:attribute name="href">
