@@ -63,15 +63,15 @@
     </fileDesc>
     <encodingDesc>
       <listPrefixDef>
-        <prefixDef ident="ereed" matchPattern="([A-Za-z0-9_]+)"
+        <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_]+)"
           replacementPattern="../code_list.xml#$1">
-          <p>Private URIs using the <code>ereed</code> prefix are pointers to entities in the
-            code_list.xml file. For example, <code>ereed:V117</code> dereferences to <code>code_list.xml#V117</code>.</p>
+          <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the
+            code_list.xml file. For example, <code>taxon:V117</code> dereferences to <code>code_list.xml#V117</code>.</p>
         </prefixDef>
         <!-- or something like below for glossary -->
-        <prefixDef ident="ereed-gloss" matchPattern="([A-Za-z0-9_]+)"
+        <prefixDef ident="gloss" matchPattern="([A-Za-z0-9_]+)"
           replacementPattern="../glossary.xml#$1">
-          <p>Private URIs using the <code>ereed-gloss</code> prefix are pointers to entities in the
+          <p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the
             glossary.xml file.</p>
         </prefixDef>
       </listPrefixDef>
@@ -882,11 +882,11 @@
     </front>
 
     <group>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm51130848">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm51130848">
         <body xml:lang="eng">
           <head><rs>Diocese of Lichfield</rs>
             <date when-iso="1635">1635</date>
-            <seg ana="ereed:AWAS">AWAS</seg></head>
+            <seg ana="taxon:AWAS">AWAS</seg></head>
           <div type="transcription" xml:id="staff-ridm51130848-transcription">
             <div>
               <head>sig B3 <supplied>(Touching the <rs
@@ -910,11 +910,11 @@
           </div>
         </body>
       </text>
-      <text ana="ereed:manor" type="record" xml:id="staff-ridm50946192">
+      <text ana="taxon:manor" type="record" xml:id="staff-ridm50946192">
         <body xml:lang="lat">
           <head><rs>Abbots Bromley</rs>
             <date when-iso="1532">1532</date>
-            <seg ana="ereed:DOU2">DOU2</seg></head>
+            <seg ana="taxon:DOU2">DOU2</seg></head>
           <div type="transcription" xml:id="staff-ridm50946192-transcription">
             <div>
               <head>f 124 <supplied>(19 November)</supplied></head>
@@ -958,11 +958,11 @@
 
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm60157968">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm60157968">
         <body xml:lang="eng">
           <head><rs>Abbots Bromley</rs>
             <date when-iso="1584">1584</date>
-            <seg ana="ereed:V117">V117</seg></head>
+            <seg ana="taxon:V117">V117</seg></head>
           <div type="transcription" xml:id="staff-ridm60157968-transcription">
             <div>
               <head>p 234 <supplied>(September)</supplied></head>
@@ -987,11 +987,11 @@
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm60134368">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm60134368">
         <body xml:lang="eng">
           <head><rs>Betley</rs>
             <date when-iso="1635">1635</date>
-            <seg ana="ereed:CCCR">CCCR</seg></head>
+            <seg ana="taxon:CCCR">CCCR</seg></head>
           <div type="transcription" xml:id="staff-ridm60134368-transcription">
             <div>
               <head>f [1]</head>
@@ -1002,9 +1002,9 @@
                     >Thome dikes</rs> p<ex>ar</ex>ochie<note type="foot">p<hi rend="italic"
                     >ar</hi>ochie: <hi rend="italic">with superscript</hi> a <hi rend="italic">in
                       addition to</hi> p<hi rend="italic">ar abbreviation</hi></note> de <term
-                    ref="glossary-la.xml#vicus_Malbanus-1"><rs
+                    ref="gloss:vicus_Malbanus-1"><rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/15590/"
-                      type="Place_BoroughParish"><term ref="glossary-la.xml#uicus-1">Vico</term>
+                      type="Place_BoroughParish"><term ref="gloss:uicus-1">Vico</term>
                       Malbano</rs></term> fact<ex>um</ex> ar<ex>ticu</ex>lis
                     p<ex>rese</ex>n<ex>tati</ex>s<note type="foot">p<hi rend="italic">rese</hi>n<hi
                       rend="italic">tati</hi>s: <hi rend="italic">abbreviated</hi> pn'ss<hi
@@ -1103,11 +1103,11 @@
           </div>
         </body>
       </text>
-      <text ana="ereed:rel_community" type="record" xml:id="staff-ridm60127840">
+      <text ana="taxon:rel_community" type="record" xml:id="staff-ridm60127840">
         <body xml:lang="lat">
           <head><rs>Burton upon Trent</rs>
             <date when-iso="1259">1259</date>
-            <seg ana="ereed:ABTA">ABTA</seg></head>
+            <seg ana="taxon:ABTA">ABTA</seg></head>
           <div type="transcription" xml:id="staff-ridm60127840-transcription">
             <div>
               <head>f 95v col 2 <supplied>(Articles of enquiry in monasteries)</supplied></head>
@@ -1119,11 +1119,11 @@
                   >rubricated</hi></note>an<note type="foot">an: a <hi rend="italic"
                   >rubricated</hi></note><gap reason="omitted"/>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/1261/" type="Entertainer_Type"
-                    ><term ref="glossary-la.xml#histrio-1">ystrionib<ex>us</ex></term></rs>
+                    ><term ref="gloss:histrio-1">ystrionib<ex>us</ex></term></rs>
                   p<ex>otes</ex>t dari cib<ex>us</ex> quia paup<ex>er</ex>es sunt non q<ex>uia</ex>
-                <term ref="glossary-la.xml#histrio-1">yst<ex>ri</ex>ones</term> &amp;
+                <term ref="gloss:histrio-1">yst<ex>ri</ex>ones</term> &amp;
                   eor<ex>um</ex>
-                <term ref="glossary-la.xml#ludus">ludi</term> non videant<ex>ur</ex> u<ex>e</ex>l
+                <term ref="gloss:ludus">ludi</term> non videant<ex>ur</ex> u<ex>e</ex>l
                   audiantur,u<ex>e</ex>l p<ex>er</ex>mittant<ex>ur</ex> f<ex>ier</ex>i coram <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/10950/"
                   type="Collective_ClergyAndChurchwardens">abb<ex>at</ex>e</rs> u<ex>e</ex>l <rs
@@ -1149,11 +1149,11 @@
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm60068656">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm60068656">
         <body xml:lang="eng">
           <head><rs>Burton upon Trent</rs>
             <date when-iso="1616">1616</date>
-            <seg ana="ereed:V131">V131</seg></head>
+            <seg ana="taxon:V131">V131</seg></head>
           <div type="transcription" xml:id="staff-ridm60068656-transcription">
             <div>
               <head>f 50 <supplied>(14 June)</supplied></head>
@@ -1220,11 +1220,11 @@
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm60050432">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm60050432">
         <body xml:lang="eng">
           <head><rs>Burton upon Trent</rs>
             <date when-iso="1619">1619</date>
-            <seg ana="ereed:BUR1">BUR1</seg></head>
+            <seg ana="taxon:BUR1">BUR1</seg></head>
           <div type="transcription" xml:id="staff-ridm60050432-transcription">
             <div>
               <head>mb 2 <supplied>(13 June) (Bill of complaint)</supplied></head>
@@ -1537,11 +1537,11 @@
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm60024384">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm60024384">
         <body xml:lang="eng">
           <head><rs>Burton upon Trent</rs>
             <date when-iso="1619">1619</date>
-            <seg ana="ereed:BUR1">BUR1</seg></head>
+            <seg ana="taxon:BUR1">BUR1</seg></head>
           <div type="transcription" xml:id="staff-ridm60024384-transcription">
             <div>
               <head>mb [1] <supplied>(3 June) (Answer of defendants)</supplied></head>
@@ -1679,11 +1679,11 @@
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm59898448">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm59898448">
         <body xml:lang="lat">
           <head><rs>Checkley</rs>
             <date when-iso="1631">1631</date>
-            <seg ana="ereed:V151">V151</seg></head>
+            <seg ana="taxon:V151">V151</seg></head>
           <div type="transcription" xml:id="staff-ridm59898448-transcription">
             <div>
               <head>f 148v <supplied>(7 July)</supplied></head>
@@ -1746,11 +1746,11 @@
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm59879280">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm59879280">
         <body xml:lang="eng">
           <head><rs>Drayton in Hales</rs>
             <date when-iso="1616">1616</date>
-            <seg ana="ereed:DRA1">DRA1</seg></head>
+            <seg ana="taxon:DRA1">DRA1</seg></head>
           <div type="transcription" xml:id="staff-ridm59879280-transcription">
             <div>
               <head>mb [2] <supplied>(25 April) (Bill of complaint)</supplied></head>
@@ -1965,11 +1965,11 @@
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm59720528">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm59720528">
         <body xml:lang="eng">
           <head><rs>Eccleshall</rs>
             <date when-iso="1537">1537</date>
-            <seg ana="ereed:ECC1">ECC1</seg></head>
+            <seg ana="taxon:ECC1">ECC1</seg></head>
           <div type="transcription" xml:id="staff-ridm59720528-transcription">
             <div>
               <head>f [1] <supplied>(23 June) (Interrogatories of defendants)</supplied></head>
@@ -2029,11 +2029,11 @@
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm55415040">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm55415040">
         <body xml:lang="eng">
           <head><rs>Eccleshall</rs>
             <date when-iso="1537">1537</date>
-            <seg ana="ereed:ECC1">ECC1</seg></head>
+            <seg ana="taxon:ECC1">ECC1</seg></head>
           <div type="transcription" xml:id="staff-ridm55415040-transcription">
             <div>
               <head>f [1] <supplied>(27 October) (Depositions of defendants, answer of <rs
@@ -2137,11 +2137,11 @@
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55378016">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55378016">
         <body xml:lang="eng">
           <head><rs>Eccleshall</rs>
             <date when-iso="1599">1599</date>
-            <seg ana="ereed:EQSA">EQSA</seg></head>
+            <seg ana="taxon:EQSA">EQSA</seg></head>
           <div type="transcription" xml:id="staff-ridm55378016-transcription">
             <div>
               <head>single sheet–single sheet verso <supplied>(Michaelmas
@@ -2399,11 +2399,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55342000">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55342000">
         <body xml:lang="eng">
           <head><rs>Eccleshall</rs>
             <date when-iso="1604">1604</date>
-            <seg ana="ereed:EQS1">EQS1</seg></head>
+            <seg ana="taxon:EQS1">EQS1</seg></head>
           <div type="transcription" xml:id="staff-ridm55342000-transcription">
             <div>
               <head> f [1] <supplied>(15 April)</supplied></head>
@@ -2455,11 +2455,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55212720">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55212720">
         <body xml:lang="eng">
           <head><rs>Eccleshall</rs>
             <date when-iso="1604">1604</date>
-            <seg ana="ereed:EQS2">EQS2</seg></head>
+            <seg ana="taxon:EQS2">EQS2</seg></head>
           <div type="transcription" xml:id="staff-ridm55212720-transcription">
             <div>
               <head>single sheet</head>
@@ -2519,11 +2519,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55207360">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55207360">
         <body xml:lang="eng">
           <head><rs>Eccleshall</rs>
             <date when-iso="1604">1604</date>
-            <seg ana="ereed:EQS3">EQS3</seg></head>
+            <seg ana="taxon:EQS3">EQS3</seg></head>
           <div type="transcription" xml:id="staff-ridm55207360-transcription">
             <div>
               <head>f [1]</head>
@@ -2567,11 +2567,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm55187152">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm55187152">
         <body xml:lang="eng">
           <head><rs>Ellenhall</rs>
             <date when-iso="1619">1619</date>
-            <seg ana="ereed:V131">V131</seg></head>
+            <seg ana="taxon:V131">V131</seg></head>
           <div type="transcription" xml:id="staff-ridm55187152-transcription">
             <div>
               <head>f [140v] <supplied>(28 May)</supplied></head>
@@ -2621,11 +2621,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55177728">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55177728">
         <body xml:lang="eng">
           <head><rs>Great Fenton</rs>
             <date when-iso="1605">1605</date>
-            <seg ana="ereed:GRF1">GRF1</seg></head>
+            <seg ana="taxon:GRF1">GRF1</seg></head>
           <div type="transcription" xml:id="staff-ridm55177728-transcription">
             <div>
               <head>f [1] <supplied>(1 April)</supplied></head>
@@ -2690,11 +2690,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm55154624">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm55154624">
         <body xml:lang="lat">
           <head><rs>Handsworth</rs>
             <date when-iso="1619">1619</date>
-            <seg ana="ereed:V131">V131</seg></head>
+            <seg ana="taxon:V131">V131</seg></head>
           <div type="transcription" xml:id="staff-ridm55154624-transcription">
             <div>
               <head>ff [151–1v] <supplied>(7 October)</supplied></head>
@@ -2878,11 +2878,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm55090384">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm55090384">
         <body xml:lang="eng">
           <head><rs>Kinver</rs>
             <date when-iso="1620">1620</date>
-            <seg ana="ereed:V138">V138</seg></head>
+            <seg ana="taxon:V138">V138</seg></head>
           <div type="transcription" xml:id="staff-ridm55090384-transcription">
             <div>
               <head>f [24v] <supplied>(12 September)</supplied></head>
@@ -2914,11 +2914,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm55069408">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm55069408">
         <body xml:lang="lat">
           <head><rs>Leek</rs>
             <date when-iso="1631">1630/1</date>
-            <seg ana="ereed:V151">V151</seg></head>
+            <seg ana="taxon:V151">V151</seg></head>
           <div type="transcription" xml:id="staff-ridm55069408-transcription">
             <div>
               <head>f 126v <supplied>(24 March)</supplied></head>
@@ -2982,11 +2982,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm55095472">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm55095472">
         <body xml:lang="lat">
           <head><rs>Lichfield</rs>
             <date from-iso="1188" to-iso="1198">1188–98</date>
-            <seg ana="ereed:LBNS">LBNS</seg></head>
+            <seg ana="taxon:LBNS">LBNS</seg></head>
           <div type="transcription" xml:id="staff-ridm55095472-transcription">
             <div>
               <head>f 46v</head>
@@ -3050,11 +3050,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm55010640">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm55010640">
         <body xml:lang="lat">
           <head><rs>Lichfield</rs>
             <date when-iso="1306">1306</date>
-            <seg ana="ereed:LCHB">LCHB</seg></head>
+            <seg ana="taxon:LCHB">LCHB</seg></head>
           <div type="transcription" xml:id="staff-ridm55010640-transcription">
             <div>
               <head>mb 9</head>
@@ -3063,7 +3063,7 @@ encompassing the names -->
               <gap reason="omitted"/>
 
               <ab><gap reason="omitted"/>It<ex>em</ex> dat<ex>is</ex>
-                <term ref="glossary-la.xml#episcopus_puerorum">Ep<ex>iscop</ex>o
+                <term ref="gloss:episcopus_puerorum">Ep<ex>iscop</ex>o
                     pu<ex>er</ex>or<ex>um</ex></term> ad fest<ex>um</ex>
                   s<ex>an</ex>c<ex>t</ex>or<ex>um</ex> Innocenct<ex>is</ex> ex co<ex>mmu</ex>nis v
                   s<gap reason="omitted"/>.</ab>
@@ -3086,11 +3086,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm55009232">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm55009232">
         <body xml:lang="lat">
           <head><rs>Lichfield</rs>
             <date when-iso="1342">1342</date>
-            <seg ana="ereed:LDI1">LDI1</seg></head>
+            <seg ana="taxon:LDI1">LDI1</seg></head>
           <div type="transcription" xml:id="staff-ridm55009232-transcription">
             <div>
               <head>single mb</head>
@@ -3120,11 +3120,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:manor" type="record" xml:id="staff-ridm54994976">
+      <text ana="taxon:manor" type="record" xml:id="staff-ridm54994976">
         <body xml:lang="lat">
           <head><rs>Lichfield</rs>
             <date from-iso="1420" to-iso="1421">1420–1</date>
-            <seg ana="ereed:LCHX">LCHX</seg></head>
+            <seg ana="taxon:LCHX">LCHX</seg></head>
           <div type="transcription" xml:id="staff-ridm54994976-transcription">
             <div>
               <head>single mb</head>
@@ -3137,7 +3137,7 @@ encompassing the names -->
                   >ministr'</rs> p<ex>ro</ex> l<damage><gap unit="chars" extent="3"/></damage>
                   s<ex>uo</ex> ad dict' <damage><gap unit="chars" extent="3"/></damage> xij d. Et in
                     <damage><gap unit="chars" extent="1"/></damage>
-                <term ref="glossary-la.xml#carectata">carect<ex>at</ex>'</term> de Byrches empt' ad
+                <term ref="gloss:carectata">carect<ex>at</ex>'</term> de Byrches empt' ad
                   faciend<ex>um</ex>
                 <damage><gap unit="chars" extent="3"/></damage> p<ex>ro</ex> Se<ex>neschal</ex>l'
                 &amp; ball' ad eand<ex>em</ex> vig<damage><gap unit="chars" extent="3"/></damage>
@@ -3165,11 +3165,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:manor" type="record" xml:id="staff-ridm58425136">
+      <text ana="taxon:manor" type="record" xml:id="staff-ridm58425136">
         <body xml:lang="lat">
           <head><rs>Lichfield</rs>
             <date from-iso="1457" to-iso="1458">1457–8</date>
-            <seg ana="ereed:LCHA">LCHA</seg></head>
+            <seg ana="taxon:LCHA">LCHA</seg></head>
           <div type="transcription" xml:id="staff-ridm58425136-transcription">
             <div>
               <head>mb [1] <supplied>(29 September–29 September) (Other
@@ -3185,7 +3185,7 @@ encompassing the names -->
                       ref="http://ereed.library.utoronto.ca/eats/entity/10994/"
                       type="Person_Commoner">John Stalker</rs></hi></note> p<ex>er</ex>
                   ip<ex>su</ex>m solut<ex>um</ex> p<ex>ro</ex> vna <term
-                  ref="glossary-la.xml#cestra-1">cestr<ex>a</ex></term> ceruis<ex>ie</ex>
+                  ref="gloss:cestra-1">cestr<ex>a</ex></term> ceruis<ex>ie</ex>
                   empt<ex>a</ex> pro hom<ex>in</ex>ib<ex>us</ex> vigilant<ex>ibus</ex> ad
                   Nundin<ex>as</ex> Pent<ex>ecoste</ex><note type="foot">Pent<hi rend="italic"
                     >ecoste</hi>: <hi rend="italic">21 May 1458</hi></note> ex antiqua
@@ -3217,11 +3217,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm58407920">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm58407920">
         <body xml:lang="lat">
           <head><rs>Lichfield</rs>
             <date when-iso="1522">1522</date>
-            <seg ana="ereed:LDCA">LDCA</seg></head>
+            <seg ana="taxon:LDCA">LDCA</seg></head>
           <div type="transcription" xml:id="staff-ridm58407920-transcription">
             <div>
               <head>f 137v</head>
@@ -3268,14 +3268,14 @@ encompassing the names -->
                   <del>in</del> quatuor denarios<note type="foot">denarios: <hi rend="italic"
                     >corrected from</hi> denarijs</note> Et si cantare contig<ex>er</ex>int
                   cora<ex>m</ex> extraneis cantilenas <ex>ve</ex>l <term
-                  ref="glossary-la.xml#balletta-1">ballett<ex>as</ex></term> &amp;
+                  ref="gloss:balletta-1">ballett<ex>as</ex></term> &amp;
                   d<ex>i</ex>c<ex>t</ex>i extranei dant eisd<ex>em</ex> chorist<ex>is</ex> aliqua
                   mun<ex>er</ex>a tunc decan<ex>us</ex> &amp; capi<ex>tu</ex>lu<ex>m</ex>
                   decreueru<ex>n</ex>t q<ex>uo</ex>d d<ex>i</ex>c<ex>t</ex>a mun<ex>er</ex>a
                   diuidant<ex>ur</ex>
                 <del>modo sequen<ex>te</ex></del> int<ex>er</ex> choristas ita q<ex>uod</ex>
                   m<ex>agiste</ex>r choristar<ex>um</ex> si <del>fore contig<ex>er</ex>it</del>
-                  int<ex>er</ex>fu<ex>er</ex>it <term ref="glossary-la.xml#cantalena"
+                  int<ex>er</ex>fu<ex>er</ex>it <term ref="gloss:cantalena"
                   >cantalenis</term> &amp; cantau<ex>er</ex>it recipiet duplu<ex>m</ex>
                   vni<ex>us</ex> choriste</ab>
 
@@ -3328,11 +3328,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:guild_craft" type="record" xml:id="staff-ridm55223456">
+      <text ana="taxon:guild_craft" type="record" xml:id="staff-ridm55223456">
         <body xml:lang="eng">
           <head><rs>Lichfield</rs>
             <date from-iso="1562" to-iso="1563">1562–3</date>
-            <seg ana="ereed:CORV">CORV</seg></head>
+            <seg ana="taxon:CORV">CORV</seg></head>
           <div type="transcription" xml:id="staff-ridm55223456-transcription">
             <div>
               <head>f 42 <supplied>(25 October)</supplied></head>
@@ -3416,11 +3416,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:guild_craft" type="record" xml:id="staff-ridm55243472">
+      <text ana="taxon:guild_craft" type="record" xml:id="staff-ridm55243472">
         <body xml:lang="eng">
           <head><rs>Lichfield</rs>
             <date from-iso="1563" to-iso="1564">1563–4</date>
-            <seg ana="ereed:CORV">CORV</seg></head>
+            <seg ana="taxon:CORV">CORV</seg></head>
           <div type="transcription" xml:id="staff-ridm55243472-transcription">
             <div>
               <head>f 42v <supplied>(1 June)</supplied></head>
@@ -3492,11 +3492,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:guild_craft" type="record" xml:id="staff-ridm58296192">
+      <text ana="taxon:guild_craft" type="record" xml:id="staff-ridm58296192">
         <body xml:lang="eng">
           <head><rs>Lichfield</rs>
             <date from-iso="1564" to-iso="1565">1564–5</date>
-            <seg ana="ereed:CORV">CORV</seg></head>
+            <seg ana="taxon:CORV">CORV</seg></head>
           <div type="transcription" xml:id="staff-ridm58296192-transcription">
             <div>
               <head>f 43 <supplied>(21 June)</supplied></head>
@@ -3621,11 +3621,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:guild_craft" type="record" xml:id="staff-ridm58243184">
+      <text ana="taxon:guild_craft" type="record" xml:id="staff-ridm58243184">
         <body xml:lang="eng">
           <head><rs>Lichfield</rs>
             <date from-iso="1570" to-iso="1571">1570–1</date>
-            <seg ana="ereed:CORV">CORV</seg></head>
+            <seg ana="taxon:CORV">CORV</seg></head>
           <div type="transcription" xml:id="staff-ridm58243184-transcription">
             <div>
               <head>f 44v <supplied>(25 October)</supplied></head>
@@ -3681,11 +3681,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:guild_craft" type="record" xml:id="staff-ridm58216064">
+      <text ana="taxon:guild_craft" type="record" xml:id="staff-ridm58216064">
         <body xml:lang="eng">
           <head><rs>Lichfield</rs>
             <date from-iso="1574" to-iso="1575">1574–5</date>
-            <seg ana="ereed:CORV">CORV</seg></head>
+            <seg ana="taxon:CORV">CORV</seg></head>
           <div type="transcription" xml:id="staff-ridm58216064-transcription">
             <div>
               <head>f 46 <supplied>(25 October)</supplied></head>
@@ -3762,11 +3762,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:chron_hist" type="record" xml:id="staff-ridm58197920">
+      <text ana="taxon:chron_hist" type="record" xml:id="staff-ridm58197920">
         <body xml:lang="eng">
           <head><rs>Lichfield</rs>
             <date from-iso="1575" to-iso="1576">1575–6</date>
-            <seg ana="ereed:NICH">NICH</seg></head>
+            <seg ana="taxon:NICH">NICH</seg></head>
           <div type="transcription" xml:id="staff-ridm58197920-transcription">
             <div>
               <head>pp 529–31 <supplied>(27 July–3 August)</supplied></head>
@@ -4059,11 +4059,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:guild_craft" type="record" xml:id="staff-ridm58166816">
+      <text ana="taxon:guild_craft" type="record" xml:id="staff-ridm58166816">
         <body xml:lang="eng">
           <head><rs>Lichfield</rs>
             <date from-iso="1577" to-iso="1578">1577–8</date>
-            <seg ana="ereed:CORV">CORV</seg></head>
+            <seg ana="taxon:CORV">CORV</seg></head>
           <div type="transcription" xml:id="staff-ridm58166816-transcription">
             <div>
               <head>f 47 <supplied>(25 October)</supplied></head>
@@ -4137,11 +4137,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:guild_craft" type="record" xml:id="staff-ridm58056704">
+      <text ana="taxon:guild_craft" type="record" xml:id="staff-ridm58056704">
         <body xml:lang="eng">
           <head><rs>Lichfield</rs>
             <date from-iso="1598" to-iso="1599">1598–9</date>
-            <seg ana="ereed:CORV">CORV</seg></head>
+            <seg ana="taxon:CORV">CORV</seg></head>
           <div type="transcription" xml:id="staff-ridm58056704-transcription">
             <div>
               <head>f 52v <supplied>(25 October) (Disbursements)</supplied></head>
@@ -4178,11 +4178,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm58042800">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm58042800">
         <body xml:lang="eng">
           <head><rs>Lichfield</rs>
             <date when-iso="1618">1618</date>
-            <seg ana="ereed:JSIN">JSIN</seg></head>
+            <seg ana="taxon:JSIN">JSIN</seg></head>
           <div type="transcription" xml:id="staff-ridm58042800-transcription">
             <div>
               <head>f [1v]</head>
@@ -4202,11 +4202,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:chron_hist" type="record" xml:id="staff-ridm58033712">
+      <text ana="taxon:chron_hist" type="record" xml:id="staff-ridm58033712">
         <body xml:lang="eng">
           <head><rs>Lichfield</rs>
             <date when-iso="1634">1634</date>
-            <seg ana="ereed:LSRV">LSRV</seg></head>
+            <seg ana="taxon:LSRV">LSRV</seg></head>
           <div type="transcription" xml:id="staff-ridm58033712-transcription">
             <div>
               <head>f 328v</head>
@@ -4236,11 +4236,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm58022720">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm58022720">
         <body xml:lang="eng">
           <head><rs>Madeley</rs>
             <date when-iso="1631">1631</date>
-            <seg ana="ereed:V151">V151</seg></head>
+            <seg ana="taxon:V151">V151</seg></head>
           <div type="transcription" xml:id="staff-ridm58022720-transcription">
             <div>
               <head>f 176 <supplied>(27 October)</supplied></head>
@@ -4268,11 +4268,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm58011344">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm58011344">
         <body xml:lang="eng">
           <head><rs>Mucklestone</rs>
             <date when-iso="1629">1629</date>
-            <seg ana="ereed:V152">V152</seg></head>
+            <seg ana="taxon:V152">V152</seg></head>
           <div type="transcription" xml:id="staff-ridm58011344-transcription">
             <div>
               <head>p 62 <supplied>(List of persons who did not appear to answer
@@ -4297,11 +4297,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm57996544">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm57996544">
         <body xml:lang="fra">
           <head><rs>Newcastle under Lyme</rs>
             <date when-iso="1372">1372</date>
-            <seg ana="ereed:GRB1">GRB1</seg></head>
+            <seg ana="taxon:GRB1">GRB1</seg></head>
           <div type="transcription" xml:id="staff-ridm57996544-transcription">
             <div>
               <head>f 164 <supplied>(21 November)</supplied></head>
@@ -4366,11 +4366,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm57978960">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm57978960">
         <body xml:lang="eng">
           <head><rs>Newcastle under Lyme</rs>
             <date when-iso="1610">1610</date>
-            <seg ana="ereed:NASM">NASM</seg></head>
+            <seg ana="taxon:NASM">NASM</seg></head>
           <div type="transcription" xml:id="staff-ridm57978960-transcription">
             <div>
               <head>f 29v <supplied>(1 May) (Assembly minutes)</supplied></head>
@@ -4414,11 +4414,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm57964496">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm57964496">
         <body xml:lang="eng">
           <head><rs>Newcastle under Lyme</rs>
             <date when-iso="1635">1635</date>
-            <seg ana="ereed:NASM">NASM</seg></head>
+            <seg ana="taxon:NASM">NASM</seg></head>
           <div type="transcription" xml:id="staff-ridm57964496-transcription">
             <div>
               <head>pp 108–9 <supplied>(30 September) (Assembly minutes)</supplied></head>
@@ -4477,11 +4477,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm57943536">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm57943536">
         <body xml:lang="eng">
           <head><rs>Norton Canes</rs>
             <date when-iso="1591">1591</date>
-            <seg ana="ereed:NQS1">NQS1</seg></head>
+            <seg ana="taxon:NQS1">NQS1</seg></head>
           <div type="transcription" xml:id="staff-ridm57943536-transcription">
             <div>
               <head>single sheet</head>
@@ -4601,11 +4601,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm55947584">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm55947584">
         <body xml:lang="lat">
           <head><rs>Rowley Regis</rs>
             <date when-iso="1616">1616</date>
-            <seg ana="ereed:RVAB">RVAB</seg></head>
+            <seg ana="taxon:RVAB">RVAB</seg></head>
           <div type="transcription" xml:id="staff-ridm55947584-transcription">
             <div>
               <head>f 204 <supplied>(15 October)</supplied></head>
@@ -4652,11 +4652,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm55907584">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm55907584">
         <body xml:lang="lat">
           <head><rs>Rushton</rs>
             <date when-iso="1631">1631</date>
-            <seg ana="ereed:V151">V151</seg></head>
+            <seg ana="taxon:V151">V151</seg></head>
           <div type="transcription" xml:id="staff-ridm55907584-transcription">
             <div>
               <head>f 143v <supplied>(7 July)</supplied></head>
@@ -4715,11 +4715,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm55885872">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm55885872">
         <body xml:lang="eng">
           <head><rs>Shareshill</rs>
             <date when-iso="1616">1616</date>
-            <seg ana="ereed:SHA1">SHA1</seg></head>
+            <seg ana="taxon:SHA1">SHA1</seg></head>
           <div type="transcription" xml:id="staff-ridm55885872-transcription">
             <div>
               <head>mb 2</head>
@@ -4920,11 +4920,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55882688">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55882688">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1528" to-iso="1529">1528–9</date>
-            <seg ana="ereed:SSU2">SSU2</seg></head>
+            <seg ana="taxon:SSU2">SSU2</seg></head>
           <div type="transcription" xml:id="staff-ridm55882688-transcription">
             <div>
               <head>p 5 <supplied>(22 April–21 April)</supplied></head>
@@ -5005,11 +5005,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55746336">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55746336">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1528" to-iso="1529">1528–9</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm55746336-transcription">
             <div>
               <head>f 24 <supplied>(Summary of sixteenth-century accounts)</supplied></head>
@@ -5177,11 +5177,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55682720">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55682720">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1574" to-iso="1575">1574–5</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm55682720-transcription">
             <div>
               <head>f 36 <supplied>(9 August) (Summary of sixteenth-century
@@ -5258,11 +5258,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55720944">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55720944">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date when-iso="1575">1575</date>
-            <seg ana="ereed:SMER">SMER</seg></head>
+            <seg ana="taxon:SMER">SMER</seg></head>
           <div type="transcription" xml:id="staff-ridm55720944-transcription">
             <div>
               <head>f 44v</head>
@@ -5291,11 +5291,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55632400">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55632400">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1609" to-iso="1610">1609–10</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm55632400-transcription">
             <div>
               <head>f 52 <supplied>(18 October–18 October) (Bailiffs' accounts)
@@ -5384,11 +5384,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55599360">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55599360">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1610" to-iso="1611">1610–11</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm55599360-transcription">
             <div>
               <head>f 57v <supplied>(18 October–18 October) (Bailiffs' accounts)
@@ -5482,11 +5482,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm55580000">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm55580000">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1610" to-iso="1611">1610–11</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm55580000-transcription">
             <div>
               <head>f 55v <supplied>(21 December) (St Mary's churchwardens' accounts)
@@ -5551,11 +5551,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm55547440">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55547440">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1611" to-iso="1612">1611–12</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm55547440-transcription">
             <div>
               <head>f 63 <supplied>(18 October–18 October) (Bailiffs' accounts)
@@ -5662,11 +5662,11 @@ encompassing the names -->
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm55526752">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm55526752">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1611" to-iso="1612">1611–12</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm55526752-transcription">
             <div>
               <head>f 67v <supplied>(21 December–21 December)</supplied></head>
@@ -5856,11 +5856,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm59337824">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm59337824">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1612" to-iso="1613">1612–13</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm59337824-transcription">
             <div>
               <head>f 72 <supplied>(18 October–18 October) (Bailiffs' accounts)
@@ -5918,11 +5918,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm59317200">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm59317200">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1612" to-iso="1613">1612–13</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm59317200-transcription">
             <div>
               <head>f 75 <supplied>(2 December 1612–21 December 1613) (Payments)</supplied></head>
@@ -5951,11 +5951,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm59305408">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm59305408">
         <body xml:lang="lat">
           <head><rs>Stafford</rs>
             <date when-iso="1614">1614</date>
-            <seg ana="ereed:MCBR">MCBR</seg></head>
+            <seg ana="taxon:MCBR">MCBR</seg></head>
           <div type="transcription" xml:id="staff-ridm59305408-transcription">
             <div>
               <head>p 21 <supplied>(8 May)</supplied></head>
@@ -6023,11 +6023,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm59296240">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm59296240">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1614" to-iso="1615">1614–15</date>
-            <seg ana="ereed:WORS">WORS</seg></head>
+            <seg ana="taxon:WORS">WORS</seg></head>
           <div type="transcription" xml:id="staff-ridm59296240-transcription">
             <div>
               <head>f 101v <supplied>(24 October–23 October)</supplied></head>
@@ -6073,11 +6073,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm59270720">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm59270720">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1615" to-iso="1616">1615–16</date>
-            <seg ana="ereed:WORS">WORS</seg></head>
+            <seg ana="taxon:WORS">WORS</seg></head>
           <div type="transcription" xml:id="staff-ridm59270720-transcription">
             <div>
               <head>f 107v <supplied>(23 October–21 October)</supplied></head>
@@ -6130,11 +6130,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm59257952">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm59257952">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1616" to-iso="1617">1616–17</date>
-            <seg ana="ereed:WORS">WORS</seg></head>
+            <seg ana="taxon:WORS">WORS</seg></head>
           <div type="transcription" xml:id="staff-ridm59257952-transcription">
             <div>
               <head>ff 114–14v <supplied>(Visit of James I)</supplied></head>
@@ -6477,7 +6477,7 @@ table. The (blank) above is the second cell of that row -->the
                   ma<ex>ies</ex>t<ex>ies</ex> poore &amp; auncient burroughe of Stafford The first
                 church therein beinge dedicated to Almighty God by <foreign xml:lang="lat"><rs
                     ref="http://ereed.library.utoronto.ca/eats/entity/23638/" type="Person_Male"
-                      ><term ref="glossary-la.xml#Bertelinus-1">Bertelinus</term></rs>
+                      ><term ref="gloss:Bertelinus-1">Bertelinus</term></rs>
                     minoru<ex>m</ex> gent<ex>ium</ex> diuus</foreign><note type="foot">Bertelinus
                     <gap reason="omitted"/> diuus: <hi rend="italic">'Bertelinus, saint of the
                     lesser peoples'</hi></note> the walls and gat<ex>es</ex> thereof erected by <rs
@@ -6850,11 +6850,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm58923280">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm58923280">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1618" to-iso="1619">1618–19</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm58923280-transcription">
             <div>
               <head>f 99v <supplied>(19 October–25 October) (Mayors' accounts)
@@ -6917,11 +6917,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm58880672">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm58880672">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1618" to-iso="1619">1618–19</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm58880672-transcription">
             <div>
               <head>f 97v <supplied>(21 December–December) (Receipts)</supplied></head>
@@ -6965,11 +6965,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm58862432">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm58862432">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1619" to-iso="1620">1619–20</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm58862432-transcription">
             <div>
               <head>f 104 <supplied>(25 October–23 October) (Mayors' accounts)
@@ -7033,11 +7033,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm58836288">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm58836288">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1619" to-iso="1620">1619–20</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm58836288-transcription">
             <div>
               <head>f 106v <supplied>(21 December–21 December) (Receipts)</supplied></head>
@@ -7084,11 +7084,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53673392">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53673392">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1620" to-iso="1621">1620–1</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53673392-transcription">
             <div>
               <head>f 112 <supplied>(23 October–22 October) (Mayors' accounts)
@@ -7175,11 +7175,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53641456">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53641456">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1621" to-iso="1622">1621–2</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53641456-transcription">
             <div>
               <head>f 117 <supplied>(22 October–21 October) (Mayors' accounts)
@@ -7266,11 +7266,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm53607136">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm53607136">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1621" to-iso="1622">1621–2</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53607136-transcription">
             <div>
               <head>f 130 <supplied>(21 December–21 December) (Disbursements)</supplied></head>
@@ -7306,11 +7306,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53596544">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53596544">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1622" to-iso="1623">1622–3</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53596544-transcription">
             <div>
               <head>f 134v <supplied>(21 October–20 October) (Mayors' accounts)
@@ -7436,11 +7436,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm53574208">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm53574208">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1622" to-iso="1623">1622–3</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53574208-transcription">
             <div>
               <head>f 138v <supplied>(21 December–21 December) (Receipts)</supplied></head>
@@ -7511,11 +7511,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53548784">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53548784">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1623" to-iso="1625">1623–5</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53548784-transcription">
             <div>
               <head>f 114v <supplied>(23 October–22 October) (Mayors' accounts) (Extra
@@ -7559,11 +7559,11 @@ table. The (blank) above is the second cell of that row -->the
           <!-- kc: decide btw majority spelling of "Worswicke" and HPO and Alan without "e" -->
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53531024">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53531024">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1626" to-iso="1627">1626–7</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53531024-transcription">
             <div>
               <head>f 158Av <supplied>(23 October–22 October) (Mayors' accounts)
@@ -7675,11 +7675,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm53488656">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm53488656">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1626" to-iso="1627">1626–7</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53488656-transcription">
             <div>
               <head>f 160 <supplied>(21 December–21 December) (Receipts)</supplied></head>
@@ -7719,11 +7719,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53470112">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53470112">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1627" to-iso="1628">1627–8</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53470112-transcription">
             <div>
               <head>f 162v <supplied>(22 October–20 October) (Mayors' accounts)
@@ -7801,11 +7801,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53436976">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53436976">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1628" to-iso="1629">1628–9</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53436976-transcription">
             <div>
               <head>f 165 <supplied>(20 October–19 October) (Mayors' accounts)
@@ -7832,11 +7832,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm53425888">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm53425888">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1628" to-iso="1629">1628–9</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53425888-transcription">
             <div>
               <head>f 164 <supplied>(21 December–21 December) (Payments)</supplied></head>
@@ -7858,11 +7858,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53415712">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53415712">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1629" to-iso="1630">1629–30</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53415712-transcription">
             <div>
               <head>f 174v <supplied>(19 October 1629–25 October 1630) (Mayors' accounts)
@@ -7983,11 +7983,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm53369488">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm53369488">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1629" to-iso="1630">1629–30</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53369488-transcription">
             <div>
               <head>f 178 <supplied>(21 December–21 December) (Disbursements)</supplied></head>
@@ -8025,11 +8025,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53354256">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53354256">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1630" to-iso="1631">1630–1</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53354256-transcription">
             <div>
               <head>f 181 <supplied>(25 October–24 October) (Mayors' accounts)
@@ -8096,11 +8096,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm53333072">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm53333072">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1630" to-iso="1631">1630–1</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53333072-transcription">
             <div>
               <head>f 186v <supplied>(21 December–21 December) (Disbursements)</supplied></head>
@@ -8123,11 +8123,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53318592">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53318592">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1631" to-iso="1632">1631–2</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53318592-transcription">
             <div>
               <head>f 191 <supplied>(24 October–22 October) (Mayors' accounts)
@@ -8192,11 +8192,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm53294400">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm53294400">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1631" to-iso="1632">1631–2</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53294400-transcription">
             <div>
               <head>f 194v <supplied>(21 December–21 December) (Disbursements)</supplied></head>
@@ -8234,11 +8234,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53280384">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53280384">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1632" to-iso="1633">1632–3</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53280384-transcription">
             <div>
               <head>f 199 <supplied>(22 October–21 October) (Mayors' accounts)
@@ -8289,11 +8289,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm53264208">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm53264208">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1632" to-iso="1633">1632–3</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53264208-transcription">
             <div>
               <head>f 203v <supplied>(21 December–21 December) (Disbursements)</supplied></head>
@@ -8320,11 +8320,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53249520">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53249520">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1633" to-iso="1634">1633–4</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53249520-transcription">
             <div>
               <head>f 207 <supplied>(21 October–20 October) (Mayors' accounts)
@@ -8418,11 +8418,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm53221328">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm53221328">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1633" to-iso="1634">1633–4</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53221328-transcription">
             <div>
               <head>f 210v <supplied>(21 December–21December) (Payments)</supplied></head>
@@ -8456,11 +8456,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm53208768">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm53208768">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1634" to-iso="1635">1634–5</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53208768-transcription">
             <div>
               <head>f 214v <supplied>(20 October–19 October) (Mayors' accounts)
@@ -8543,11 +8543,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm53179872">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm53179872">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1634" to-iso="1635">1634–5</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53179872-transcription">
             <div>
               <head>f 218 <supplied>(21 December–21 December) (Disbursements)</supplied></head>
@@ -8589,11 +8589,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53166880">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53166880">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1635" to-iso="1636">1635–6</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53166880-transcription">
             <div>
               <head>f 221Bv <supplied>(19 October 1635–24 October 1636) (Mayors' accounts)
@@ -8644,11 +8644,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm53133968">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm53133968">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1635" to-iso="1636">1635–6</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53133968-transcription">
             <div>
               <head>f 223 <supplied>(21 December–20 December) (Disbursements)</supplied></head>
@@ -8678,11 +8678,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53125424">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53125424">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1636" to-iso="1637">1636–7</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53125424-transcription">
             <div>
               <head>f 228v <supplied>(24 October–23 October) (Mayors' accounts)
@@ -8730,11 +8730,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm53113360">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm53113360">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1636" to-iso="1637">1636–7</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53113360-transcription">
             <div>
               <head>f 231v <supplied>(21 December–21 December) (Disbursements)</supplied></head>
@@ -8759,11 +8759,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53095088">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53095088">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1637" to-iso="1638">1637–8</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53095088-transcription">
             <div>
               <head>f 237v <supplied>(23 October–22 October) (Mayors' accounts)
@@ -8799,11 +8799,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm53081456">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm53081456">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1638" to-iso="1639">1638–9</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53081456-transcription">
             <div>
               <head>f 235 <supplied>(21 December–21 December) (Receipts)</supplied></head>
@@ -8831,11 +8831,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53071232">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53071232">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1639" to-iso="1640">1639–40</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53071232-transcription">
             <div>
               <head>f 248v <supplied>(21 October–19 October) (Mayors' accounts)
@@ -8866,11 +8866,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53059120">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53059120">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1640" to-iso="1641">1640–1</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53059120-transcription">
             <div>
               <head>f 254 <supplied>(19 October–25 October) (Mayors' accounts)
@@ -8928,11 +8928,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm53042768">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53042768">
         <body xml:lang="eng">
           <head><rs>Stafford</rs>
             <date from-iso="1641" to-iso="1642">1641–2</date>
-            <seg ana="ereed:SBAI">SBAI</seg></head>
+            <seg ana="taxon:SBAI">SBAI</seg></head>
           <div type="transcription" xml:id="staff-ridm53042768-transcription">
             <div>
               <head>f 259v <supplied>(25 October–24 October) (Mayors' accounts)
@@ -9122,11 +9122,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm53021760">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm53021760">
         <body xml:lang="eng">
           <head><rs>Statfold</rs>
             <date when-iso="1539">1538/9</date>
-            <seg ana="ereed:TWYS">TWYS</seg></head>
+            <seg ana="taxon:TWYS">TWYS</seg></head>
           <div type="transcription" xml:id="staff-ridm53021760-transcription">
             <div>
               <head>f 247v <supplied>(1 February; proved 14 October)</supplied></head>
@@ -9167,11 +9167,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm52961792">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm52961792">
         <body xml:lang="eng">
           <head><rs>Stone</rs>
             <date when-iso="1614">1614</date>
-            <seg ana="ereed:V130">V130</seg></head>
+            <seg ana="taxon:V130">V130</seg></head>
           <div type="transcription" xml:id="staff-ridm52961792-transcription">
             <div>
               <head>f [23] <supplied>(Detections from the deanery of Stafford and
@@ -9199,11 +9199,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm52949040">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm52949040">
         <body xml:lang="eng">
           <head><rs>Tamworth</rs>
             <date when-iso="1537">1536/7</date>
-            <seg ana="ereed:TAM1">TAM1</seg></head>
+            <seg ana="taxon:TAM1">TAM1</seg></head>
           <div type="transcription" xml:id="staff-ridm52949040-transcription">
             <div>
               <head>f 177 <supplied>(18 January) (Depositions)</supplied></head>
@@ -9257,11 +9257,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm58896080">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm58896080">
         <body xml:lang="eng">
           <head><rs>Tamworth</rs>
             <date when-iso="1537">1536/7</date>
-            <seg ana="ereed:TAM1">TAM1</seg></head>
+            <seg ana="taxon:TAM1">TAM1</seg></head>
           <div type="transcription" xml:id="staff-ridm58896080-transcription">
             <div>
               <head>f 178 <supplied>(Examination of witnesses)</supplied></head>
@@ -9344,11 +9344,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm52887952">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm52887952">
         <body xml:lang="eng">
           <head><rs>Tamworth</rs>
             <date when-iso="1537">1536/7</date>
-            <seg ana="ereed:TAM3">TAM3</seg></head>
+            <seg ana="taxon:TAM3">TAM3</seg></head>
           <div type="transcription" xml:id="staff-ridm52887952-transcription">
             <div>
               <head>ff 100v–1<supplied>(18 January) (Copy of examination)</supplied></head>
@@ -9394,11 +9394,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm52869792">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm52869792">
         <body xml:lang="lat">
           <head><rs>Tutbury</rs>
             <date from-iso="1314" to-iso="1315">1314–15</date>
-            <seg ana="ereed:TPS1">TPS1</seg></head>
+            <seg ana="taxon:TPS1">TPS1</seg></head>
           <div type="transcription" xml:id="staff-ridm52869792-transcription">
             <div>
               <head>mb 5 <supplied>(15 August)</supplied></head>
@@ -9429,11 +9429,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm52854080">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm52854080">
         <body xml:lang="fra">
           <head><rs>Tutbury</rs>
             <date when-iso="1380">1380</date>
-            <seg ana="ereed:GRB2">GRB2</seg></head>
+            <seg ana="taxon:GRB2">GRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm52854080-transcription">
             <div>
               <head>f 115v <supplied>(22 August)</supplied></head>
@@ -9466,7 +9466,7 @@ table. The (blank) above is the second cell of that row -->the
                     /></damage>: <hi rend="italic">for</hi> annuelment<hi rend="italic">; letter
                     lost in gutter</hi></note> les iours del assumpcion n<ex>ost</ex>re dame. donant
                 &amp; g<ex>r</ex>antant au dit Roy des Ministralx pur le temps esteant plein <term
-                  ref="glossary-af.xml#pouir-1">pouir</term> &amp; mandement de les fair
+                  ref="gloss:pouir-1">pouir</term> &amp; mandement de les fair
                 resonablement iustifier &amp; constreigner de faire le<ex>ur</ex>s s<ex>er</ex>uices
                 &amp; ministralcies en man<ex>er</ex>e come appent &amp; come illeoqes ad este vse
                 &amp; dauncien temps acoustume. En tesmoignance &amp;c<ex>eter</ex>a. Don<ex>e</ex>
@@ -9503,11 +9503,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm52835712">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm52835712">
         <body xml:lang="lat">
           <head><rs>Tutbury</rs>
             <date when-iso="1382">1382</date>
-            <seg ana="ereed:TSC1">TSC1</seg></head>
+            <seg ana="taxon:TSC1">TSC1</seg></head>
           <div type="transcription" xml:id="staff-ridm52835712-transcription">
             <div>
               <head>mb [2]d <supplied>(15 August)</supplied></head>
@@ -9555,11 +9555,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm52791120">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm52791120">
         <body xml:lang="lat">
           <head><rs>Tutbury</rs>
             <date from-iso="1558" to-iso="1559">1558–9</date>
-            <seg ana="ereed:TPS2">TPS2</seg></head>
+            <seg ana="taxon:TPS2">TPS2</seg></head>
           <div type="transcription" xml:id="staff-ridm52791120-transcription">
             <div>
               <head>f 53 <supplied>(14–16 August)</supplied></head>
@@ -9614,11 +9614,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm52771328">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm52771328">
         <body xml:lang="eng">
           <head><rs>Tutbury</rs>
             <date from-iso="1617" to-iso="1630">1617–30</date>
-            <seg ana="ereed:TUT2">TUT2</seg></head>
+            <seg ana="taxon:TUT2">TUT2</seg></head>
           <div type="transcription" xml:id="staff-ridm52771328-transcription">
             <div>
               <head>ff 64–7v</head>
@@ -9878,11 +9878,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm52758688">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm52758688">
         <body xml:lang="eng">
           <head><rs>Tutbury</rs>
             <date when-iso="1618">1618</date>
-            <seg ana="ereed:TMC1">TMC1</seg></head>
+            <seg ana="taxon:TMC1">TMC1</seg></head>
           <div type="transcription" xml:id="staff-ridm52758688-transcription">
             <div>
               <head>single mb <supplied>(12 May)</supplied></head>
@@ -10086,11 +10086,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm52564592">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm52564592">
         <body xml:lang="eng">
           <head><rs>Tutbury</rs>
             <date when-iso="1629">1629</date>
-            <seg ana="ereed:TMC2">TMC2</seg></head>
+            <seg ana="taxon:TMC2">TMC2</seg></head>
           <div type="transcription" xml:id="staff-ridm52564592-transcription">
             <div>
               <head>single mb <supplied>(10 May)</supplied></head>
@@ -10328,11 +10328,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm52471456">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm52471456">
         <body xml:lang="eng">
           <head><rs>Tutbury</rs>
             <date when-iso="1631">1631</date>
-            <seg ana="ereed:TLE2">TLE2</seg></head>
+            <seg ana="taxon:TLE2">TLE2</seg></head>
           <div type="transcription" xml:id="staff-ridm52471456-transcription">
             <div>
               <head>single sheet <supplied>(21 May)</supplied></head>
@@ -10369,11 +10369,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm52179392">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm52179392">
         <body xml:lang="lat">
           <head><rs>Tutbury</rs>
             <date when-iso="1631">1631</date>
-            <seg ana="ereed:TPAT">TPAT</seg></head>
+            <seg ana="taxon:TPAT">TPAT</seg></head>
           <div type="transcription" xml:id="staff-ridm52179392-transcription">
             <div>
               <head>single mb<supplied>(30 June)</supplied></head>
@@ -10428,11 +10428,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm52159888">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm52159888">
         <body xml:lang="eng">
           <head><rs>Tutbury</rs>
             <date when-iso="1637">1637</date>
-            <seg ana="ereed:TPPC">TPPC</seg></head>
+            <seg ana="taxon:TPPC">TPPC</seg></head>
           <div type="transcription" xml:id="staff-ridm52159888-transcription">
             <div>
               <head>single mb d <supplied>(18 July)</supplied></head>
@@ -10488,11 +10488,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm52120192">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm52120192">
         <body xml:lang="eng">
           <head><rs>Uttoxeter</rs>
             <date when-iso="1616">1616</date>
-            <seg ana="ereed:UTT1">UTT1</seg></head>
+            <seg ana="taxon:UTT1">UTT1</seg></head>
           <div type="transcription" xml:id="staff-ridm52120192-transcription">
             <div>
               <head>mb 2 <supplied>(Bill of complaint)</supplied></head>
@@ -10746,11 +10746,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm52100656">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm52100656">
         <body xml:lang="eng">
           <head><rs>Uttoxeter</rs>
             <date when-iso="1616">1616</date>
-            <seg ana="ereed:UTT1">UTT1</seg></head>
+            <seg ana="taxon:UTT1">UTT1</seg></head>
           <div type="transcription" xml:id="staff-ridm52100656-transcription">
             <div>
               <head>mb 1 <supplied>(4 May) (Answer of Godfrey Tixall)</supplied></head>
@@ -10806,11 +10806,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:manor" type="record" xml:id="staff-ridm52048128">
+      <text ana="taxon:manor" type="record" xml:id="staff-ridm52048128">
         <body xml:lang="lat">
           <head><rs>Wall</rs>
             <date from-iso="1448" to-iso="1449">1448–9</date>
-            <seg ana="ereed:WALB">WALB</seg></head>
+            <seg ana="taxon:WALB">WALB</seg></head>
           <div type="transcription" xml:id="staff-ridm52048128-transcription">
             <div>
               <head>single sheet</head>
@@ -10830,7 +10830,7 @@ table. The (blank) above is the second cell of that row -->the
                     i<damage><gap unit="chars" extent="2"/></damage><note type="foot">i<damage><gap
                       unit="chars" extent="2"/></damage>: <hi rend="italic">likely</hi> ib<hi
                     rend="italic">ide</hi>m</note> tent<ex>as</ex> ante ff<ex>estu</ex>m <term
-                  ref="glossary-la.xml#Michaelis-1">">mich<ex>ael</ex>is</term> infra
+                  ref="gloss:Michaelis-1">">mich<ex>ael</ex>is</term> infra
                   temp<ex>orem</ex> comp<ex>ut</ex>i xij d. Et sol<ex>utum</ex>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/1261/" type="Entertainer_Type"
                     >histrionib<ex>us</ex></rs> lich<ex>feldie</ex> per p<ex>re</ex>cept<ex>um</ex>
@@ -10860,11 +10860,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm52164576">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm52164576">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1494" to-iso="1495">1494–5</date>
-            <seg ana="ereed:WCWA">WCWA</seg></head>
+            <seg ana="taxon:WCWA">WCWA</seg></head>
           <div type="transcription" xml:id="staff-ridm52164576-transcription">
             <div>
               <head>p 57</head>
@@ -10907,11 +10907,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm51915856">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm51915856">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date when-iso="1498">1498</date>
-            <seg ana="ereed:WAL1">WAL1</seg></head>
+            <seg ana="taxon:WAL1">WAL1</seg></head>
           <div type="transcription" xml:id="staff-ridm51915856-transcription">
             <div>
               <head>single mb <supplied>(6 June–1 July) (Bill of complaint)</supplied></head>
@@ -11037,8 +11037,8 @@ table. The (blank) above is the second cell of that row -->the
               <pb n="1" type="membrane"/>
 
               <ab><hi rend="center"><foreign xml:lang="lat"><term
-                      ref="glossary-la.xml#terminus_Michaelis">T<ex>erm</ex>i<ex>n</ex>o <term
-                        ref="glossary-la.xml#Michaelis-1">">Mich<ex>ael</ex>is</term></term>
+                      ref="gloss:terminus_Michaelis">T<ex>erm</ex>i<ex>n</ex>o <term
+                        ref="gloss:Michaelis-1">">Mich<ex>ael</ex>is</term></term>
                       a<ex>nn</ex>o xiiij<hi rend="superscript">o</hi></foreign></hi></ab>
 
               <ab><hi rend="center"><foreign xml:lang="lat">Maior et Inh<ex>ab</ex>itantes ville de
@@ -11072,11 +11072,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm51825312">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm51825312">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date when-iso="1499">1499</date>
-            <seg ana="ereed:WAL1">WAL1</seg></head>
+            <seg ana="taxon:WAL1">WAL1</seg></head>
           <div type="transcription" xml:id="staff-ridm51825312-transcription">
             <div>
               <head>single mb <supplied>(Answer of John Marchall to complaint)</supplied></head>
@@ -11148,11 +11148,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm51801568">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm51801568">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date when-iso="1499">1499</date>
-            <seg ana="ereed:WAL3">WAL3</seg></head>
+            <seg ana="taxon:WAL3">WAL3</seg></head>
           <div type="transcription" xml:id="staff-ridm51801568-transcription">
             <div>
               <head>single mb</head>
@@ -11213,11 +11213,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm51753488">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm51753488">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date when-iso="1499">1499</date>
-            <seg ana="ereed:WAL4">WAL4</seg></head>
+            <seg ana="taxon:WAL4">WAL4</seg></head>
           <div type="transcription" xml:id="staff-ridm51753488-transcription">
             <div>
               <head>single mb</head>
@@ -11298,11 +11298,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:central_gvt" type="record" xml:id="staff-ridm51692304">
+      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm51692304">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date when-iso="1499">1499</date>
-            <seg ana="ereed:WAL5">WAL5</seg></head>
+            <seg ana="taxon:WAL5">WAL5</seg></head>
           <div type="transcription" xml:id="staff-ridm51692304-transcription">
             <div>
               <head>single sheet</head>
@@ -11398,11 +11398,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51674688">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51674688">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1594" to-iso="1595">1594–5</date>
-            <seg ana="ereed:WMA1">WMA1</seg></head>
+            <seg ana="taxon:WMA1">WMA1</seg></head>
           <div type="transcription" xml:id="staff-ridm51674688-transcription">
             <div>
               <head>f [2] <supplied>(rendered 23 November 1595)</supplied></head>
@@ -11423,11 +11423,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51620368">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51620368">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1611" to-iso="1612">1611–12</date>
-            <seg ana="ereed:WMA2">WMA2</seg></head>
+            <seg ana="taxon:WMA2">WMA2</seg></head>
           <div type="transcription" xml:id="staff-ridm51620368-transcription">
             <div>
               <head>f [1]</head>
@@ -11449,11 +11449,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51609664">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51609664">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1618" to-iso="1619">1618–19</date>
-            <seg ana="ereed:WMA3">WMA3</seg></head>
+            <seg ana="taxon:WMA3">WMA3</seg></head>
           <div type="transcription" xml:id="staff-ridm51609664-transcription">
             <div>
               <head>f [1]</head>
@@ -11472,11 +11472,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51600448">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51600448">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1620" to-iso="1621">1620–1</date>
-            <seg ana="ereed:WMA4">WMA4</seg></head>
+            <seg ana="taxon:WMA4">WMA4</seg></head>
           <div type="transcription" xml:id="staff-ridm51600448-transcription">
             <div>
               <head>f [1] <supplied>(rendered 23 November 1621)</supplied></head>
@@ -11511,11 +11511,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51586400">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51586400">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1623" to-iso="1624">1623–4</date>
-            <seg ana="ereed:WMA5">WMA5</seg></head>
+            <seg ana="taxon:WMA5">WMA5</seg></head>
           <div type="transcription" xml:id="staff-ridm51586400-transcription">
             <div>
               <head>f [1]</head>
@@ -11537,11 +11537,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51568528">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51568528">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1624" to-iso="1625">1624–5</date>
-            <seg ana="ereed:WMA6">WMA6</seg></head>
+            <seg ana="taxon:WMA6">WMA6</seg></head>
           <div type="transcription" xml:id="staff-ridm51568528-transcription">
             <div>
               <head>f [1]</head>
@@ -11563,11 +11563,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51558832">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51558832">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1629" to-iso="1630">1629–30</date>
-            <seg ana="ereed:WMA7">WMA7</seg></head>
+            <seg ana="taxon:WMA7">WMA7</seg></head>
           <div type="transcription" xml:id="staff-ridm51558832-transcription">
             <div>
               <head>f [1v]</head>
@@ -11624,11 +11624,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51539728">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51539728">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1630" to-iso="1631">1630–1</date>
-            <seg ana="ereed:WMA8">WMA8</seg></head>
+            <seg ana="taxon:WMA8">WMA8</seg></head>
           <div type="transcription" xml:id="staff-ridm51539728-transcription">
             <div>
               <head>f [1v]</head>
@@ -11707,11 +11707,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51502176">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51502176">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1631" to-iso="1632">1631–2</date>
-            <seg ana="ereed:WMA9">WMA9</seg></head>
+            <seg ana="taxon:WMA9">WMA9</seg></head>
           <div type="transcription" xml:id="staff-ridm51502176-transcription">
             <div>
               <head>sheet [2] <supplied>(October 1631–22 November 1632)</supplied></head>
@@ -11757,11 +11757,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51481312">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51481312">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1632" to-iso="1633">1632–3</date>
-            <seg ana="ereed:WMAA">WMAA</seg></head>
+            <seg ana="taxon:WMAA">WMAA</seg></head>
           <div type="transcription" xml:id="staff-ridm51481312-transcription">
             <div>
               <head>f [1v] <supplied>(rendered 16 November 1633)</supplied></head>
@@ -11815,11 +11815,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51466240">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51466240">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1633" to-iso="1634">1633–4</date>
-            <seg ana="ereed:WMAB">WMAB</seg></head>
+            <seg ana="taxon:WMAB">WMAB</seg></head>
           <div type="transcription" xml:id="staff-ridm51466240-transcription">
             <div>
               <head>f [1] <supplied>(rendered 23 November 1634)</supplied></head>
@@ -11843,11 +11843,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51449152">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51449152">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1634" to-iso="1635">1634–5</date>
-            <seg ana="ereed:WMAC">WMAC</seg></head>
+            <seg ana="taxon:WMAC">WMAC</seg></head>
           <div type="transcription" xml:id="staff-ridm51449152-transcription">
             <div>
               <head>f [1v] <supplied>(rendered 23 November 1635)</supplied></head>
@@ -11888,11 +11888,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51430176">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51430176">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1635" to-iso="1636">1635–6</date>
-            <seg ana="ereed:WMAD">WMAD</seg></head>
+            <seg ana="taxon:WMAD">WMAD</seg></head>
           <div type="transcription" xml:id="staff-ridm51430176-transcription">
             <div>
               <head>f [1v] <supplied>(rendered 23 November 1636)</supplied></head>
@@ -11933,11 +11933,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51413664">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51413664">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1636" to-iso="1637">1636–7</date>
-            <seg ana="ereed:WMAE">WMAE</seg></head>
+            <seg ana="taxon:WMAE">WMAE</seg></head>
           <div type="transcription" xml:id="staff-ridm51413664-transcription">
             <div>
               <head>bifolium 2, f [1]</head>
@@ -11987,11 +11987,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51395120">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51395120">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1639" to-iso="1640">1639–40</date>
-            <seg ana="ereed:WMAF">WMAF</seg></head>
+            <seg ana="taxon:WMAF">WMAF</seg></head>
           <div type="transcription" xml:id="staff-ridm51395120-transcription">
             <div>
               <head>f [2v] <supplied>(rendered 21 November 1640)</supplied></head>
@@ -12016,11 +12016,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51384064">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51384064">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1640" to-iso="1641">1640–1</date>
-            <seg ana="ereed:WMAG">WMAG</seg></head>
+            <seg ana="taxon:WMAG">WMAG</seg></head>
           <div type="transcription" xml:id="staff-ridm51384064-transcription">
             <div>
               <head>f [2] <supplied>(rendered 23 November 1641)</supplied></head>
@@ -12046,11 +12046,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51371680">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51371680">
         <body xml:lang="eng">
           <head><rs>Walsall</rs>
             <date from-iso="1641" to-iso="1642">1641–2</date>
-            <seg ana="ereed:WMAH">WMAH</seg></head>
+            <seg ana="taxon:WMAH">WMAH</seg></head>
           <div type="transcription" xml:id="staff-ridm51371680-transcription">
             <div>
               <head>f [1v] <supplied>(rendered 23 November 1642)</supplied></head>
@@ -12075,11 +12075,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm51358336">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm51358336">
         <body xml:lang="eng">
           <head><rs>Wednesbury</rs>
             <date when-iso="1623">1623</date>
-            <seg ana="ereed:V145">V145</seg></head>
+            <seg ana="taxon:V145">V145</seg></head>
           <div type="transcription" xml:id="staff-ridm51358336-transcription">
             <div>
               <head>f [27v] <supplied>(30 August)</supplied></head>
@@ -12103,11 +12103,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm51350672">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm51350672">
         <body xml:lang="lat">
           <head><rs>Wednesbury</rs>
             <date when-iso="1635">1635</date>
-            <seg ana="ereed:V155">V155</seg></head>
+            <seg ana="taxon:V155">V155</seg></head>
           <div type="transcription" xml:id="staff-ridm51350672-transcription">
             <div>
               <head>p 30 <supplied>(28 July)</supplied></head>
@@ -12159,11 +12159,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:local_gvt" type="record" xml:id="staff-ridm51335072">
+      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51335072">
         <body xml:lang="eng">
           <head><rs>West Bromwich</rs>
             <date when-iso="1611">1611</date>
-            <seg ana="ereed:QSRS">QSRS</seg></head>
+            <seg ana="taxon:QSRS">QSRS</seg></head>
           <div type="transcription" xml:id="staff-ridm51335072-transcription">
             <div>
               <head>f [2] <supplied>(27 May–14 July) </supplied></head>
@@ -12204,11 +12204,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm51315136">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm51315136">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1521" to-iso="1522">1521–2</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51315136-transcription">
             <div>
               <head>f 9 <supplied>(Receipts)</supplied></head>
@@ -12229,11 +12229,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm51292912">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm51292912">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1522" to-iso="1523">1522–3</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51292912-transcription">
             <div>
               <head>f 10v <supplied>(Receipts)</supplied></head>
@@ -12254,11 +12254,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm51281216">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm51281216">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1523" to-iso="1524">1523–4</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51281216-transcription">
             <div>
               <head>f 12 <supplied>(Receipts)</supplied></head>
@@ -12279,11 +12279,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm51270816">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm51270816">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1526" to-iso="1527">1526–7</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51270816-transcription">
             <div>
               <head>f 18 <supplied>(Receipts)</supplied></head>
@@ -12310,11 +12310,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm51260832">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm51260832">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1527" to-iso="1528">1527–8</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51260832-transcription">
             <div>
               <head>f 23 <supplied>(Payments)</supplied></head>
@@ -12340,11 +12340,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm51250176">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm51250176">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1528" to-iso="1529">1528–9</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51250176-transcription">
             <div>
               <head>f 26 <supplied>(Payments)</supplied></head>
@@ -12371,11 +12371,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm51237536">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm51237536">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1529" to-iso="1530">1529–30</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51237536-transcription">
             <div>
               <head>f 27v <supplied>(Payments)</supplied></head>
@@ -12448,11 +12448,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm47175008">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm47175008">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1532" to-iso="1533">1532-3</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47175008-transcription">
             <div>
               <head>f 35 <supplied>(Receipts)</supplied></head>
@@ -12494,11 +12494,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm47160752">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm47160752">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1533" to-iso="1534">1533–4</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47160752-transcription">
             <div>
               <head>f 41v <supplied>(Altar warden's charges)</supplied></head>
@@ -12524,11 +12524,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm47150832">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm47150832">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1534" to-iso="1535">1534–5</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47150832-transcription">
             <div>
               <head>f 44</head>
@@ -12549,11 +12549,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm47141456">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm47141456">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1536" to-iso="1537">1536–7</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47141456-transcription">
             <div>
               <head>f 50 <supplied>(Receipts)</supplied></head>
@@ -12574,11 +12574,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm47131296">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm47131296">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1537" to-iso="1538">1537–8</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47131296-transcription">
             <div>
               <head>f 56 <supplied>(Receipts)</supplied></head>
@@ -12599,11 +12599,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm47121200">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm47121200">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1539" to-iso="1540">1539–40</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47121200-transcription">
             <div>
               <head>f 65 <supplied>(Receipts)</supplied></head>
@@ -12624,11 +12624,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm47111040">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm47111040">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1540" to-iso="1541">1540–1</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47111040-transcription">
             <div>
               <head>f 68v <supplied>(Receipts)</supplied></head>
@@ -12657,11 +12657,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm47100896">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm47100896">
         <body xml:lang="eng">
           <head><rs>Wolverhampton</rs>
             <date from-iso="1546" to-iso="1547">1546–7</date>
-            <seg ana="ereed:WOCW">WOCW</seg></head>
+            <seg ana="taxon:WOCW">WOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47100896-transcription">
             <div>
               <head>f 93v <supplied>(Discharges)</supplied></head>
@@ -12696,11 +12696,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:manor" type="record" xml:id="staff-ridm47090880">
+      <text ana="taxon:manor" type="record" xml:id="staff-ridm47090880">
         <body xml:lang="lat">
           <head><rs>Yoxall</rs>
             <date when-iso="1500">1500</date>
-            <seg ana="ereed:YX01">YX01</seg></head>
+            <seg ana="taxon:YX01">YX01</seg></head>
           <div type="transcription" xml:id="staff-ridm47090880-transcription">
             <div>
               <head>f 102 <supplied>(16 May)</supplied></head>
@@ -12730,11 +12730,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm51592784">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm51592784">
         <body xml:lang="eng">
           <head><rs>Yoxall</rs>
             <date from-iso="1542" to-iso="1543">1542–3</date>
-            <seg ana="ereed:YOCW">YOCW</seg></head>
+            <seg ana="taxon:YOCW">YOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm51592784-transcription">
             <div>
               <head>p 3 <supplied>(22 April–21 April)</supplied></head>
@@ -12789,11 +12789,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm47056032">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm47056032">
         <body xml:lang="eng">
           <head><rs>Yoxall</rs>
             <date from-iso="1543" to-iso="1544">1543–4</date>
-            <seg ana="ereed:YOCW">YOCW</seg></head>
+            <seg ana="taxon:YOCW">YOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47056032-transcription">
             <div>
               <head>p 5 <supplied>(22 April–21 April)</supplied></head>
@@ -12814,11 +12814,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm47034864">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm47034864">
         <body xml:lang="eng">
           <head><rs>Yoxall</rs>
             <date from-iso="1544" to-iso="1545">1544–5</date>
-            <seg ana="ereed:YOCW">YOCW</seg></head>
+            <seg ana="taxon:YOCW">YOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47034864-transcription">
             <div>
               <head>p 7 <supplied>(22 April–21 April)</supplied></head>
@@ -12847,11 +12847,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm47024768">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm47024768">
         <body xml:lang="eng">
           <head><rs>Yoxall</rs>
             <date from-iso="1546" to-iso="1547">1546–7</date>
-            <seg ana="ereed:YOCW">YOCW</seg></head>
+            <seg ana="taxon:YOCW">YOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm47024768-transcription">
             <div>
               <head>p 11 <supplied>(22 April–28 January) (Receipts)</supplied></head>
@@ -12930,11 +12930,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:church" type="record" xml:id="staff-ridm46992912">
+      <text ana="taxon:church" type="record" xml:id="staff-ridm46992912">
         <body xml:lang="eng">
           <head><rs>Yoxall</rs>
             <date from-iso="1547" to-iso="1548">1547–8</date>
-            <seg ana="ereed:YOCW">YOCW</seg></head>
+            <seg ana="taxon:YOCW">YOCW</seg></head>
           <div type="transcription" xml:id="staff-ridm46992912-transcription">
             <div>
               <head>p 16 <supplied>(28 January–27 January)</supplied></head>
@@ -12957,11 +12957,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46982304">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46982304">
         <body xml:lang="eng">
           <head><rs type="Place_Household">Bagot of Blithfield</rs>
             <date when-iso="1613">1613</date>
-            <seg ana="ereed:BBL1">BBL1</seg></head>
+            <seg ana="taxon:BBL1">BBL1</seg></head>
           <div type="transcription" xml:id="staff-ridm46982304-transcription">
             <div>
               <head>f 64</head>
@@ -12996,11 +12996,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46968400">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46968400">
         <body xml:lang="eng">
           <head><rs type="Place_Household">Bagot of Blithfield</rs>
             <date when-iso="1615">1615</date>
-            <seg ana="ereed:BBL1">BBL1</seg></head>
+            <seg ana="taxon:BBL1">BBL1</seg></head>
           <div type="transcription" xml:id="staff-ridm46968400-transcription">
             <div>
               <head>f 87</head>
@@ -13023,11 +13023,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46957440">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46957440">
         <body xml:lang="eng">
           <head><rs type="Place_Household">Bagot of Blithfield</rs>
             <date when-iso="1619">1619</date>
-            <seg ana="ereed:BBL1">BBL1</seg></head>
+            <seg ana="taxon:BBL1">BBL1</seg></head>
           <div type="transcription" xml:id="staff-ridm46957440-transcription">
             <div>
               <head>f 128v</head>
@@ -13055,11 +13055,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46944768">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46944768">
         <body xml:lang="eng">
           <head><rs type="Place_Household">Drayton Basset</rs>
             <date from-iso="1622" to-iso="1623">1622–3</date>
-            <seg ana="ereed:WILS">WILS</seg></head>
+            <seg ana="taxon:WILS">WILS</seg></head>
           <div type="transcription" xml:id="staff-ridm46944768-transcription">
             <div>
               <head>p 15</head>
@@ -13099,11 +13099,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46934096">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46934096">
         <body xml:lang="eng">
           <head><rs type="Place_Household">Ferrers of Walton on Trent and Tamworth</rs>
             <date when-iso="1605">1605</date>
-            <seg ana="ereed:FHA1">FHA1</seg></head>
+            <seg ana="taxon:FHA1">FHA1</seg></head>
           <div type="transcription" xml:id="staff-ridm46934096-transcription">
             <div>
               <head>sheet [1] <supplied>(3–5 June) (At London)</supplied></head>
@@ -13178,11 +13178,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46913456">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46913456">
         <body xml:lang="eng">
           <head><rs type="Place_Household">Ferrers of Walton on Trent and Tamworth</rs>
             <date from-iso="1601" to-iso="1700">17th Century</date>
-            <seg ana="ereed:FHA2">FHA2</seg></head>
+            <seg ana="taxon:FHA2">FHA2</seg></head>
           <div type="transcription" xml:id="staff-ridm46913456-transcription">
             <div>
               <head>single sheet</head>
@@ -13206,11 +13206,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46888688">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46888688">
         <body xml:lang="fra">
           <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1372">1371/2</date>
-            <seg ana="ereed:GRB1">GRB1</seg></head>
+            <seg ana="taxon:GRB1">GRB1</seg></head>
           <div type="transcription" xml:id="staff-ridm46888688-transcription">
             <div>
               <head>f 142v <supplied>(28 February)</supplied></head>
@@ -13277,11 +13277,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46867952">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46867952">
         <body xml:lang="fra">
           <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1373">1373</date>
-            <seg ana="ereed:GRB1">GRB1</seg></head>
+            <seg ana="taxon:GRB1">GRB1</seg></head>
           <div type="transcription" xml:id="staff-ridm46867952-transcription">
             <div>
               <head>f 181 <supplied>(20 May)</supplied></head>
@@ -13295,10 +13295,10 @@ table. The (blank) above is the second cell of that row -->the
                   ref="http://ereed.library.utoronto.ca/eats/entity/30406/" type="Person_Commoner"
                     >Rob<ex>er</ex>t de Morton</rs> n<ex>ost</ex>re Receyvour deinz le counte<note
                   type="marginal" place="margin_right">Tyas</note>  <!-- kc: need to revise as patronized entertainer -->
-                <term ref="glossary-af.xml#deuerwik-1">deu<ex>er</ex>wik</term> ou a son lieutenant
+                <term ref="gloss:deuerwik-1">deu<ex>er</ex>wik</term> ou a son lieutenant
                   ‸<add place="above">illeoq<ex>ue</ex>s</add> saluz pour <term
-                  ref="glossary-af.xml#aenes-1">aenes</term> c<ex>er</ex>taines causes nous <term
-                  ref="glossary-af.xml#meuuance-1">meuuance</term> voulons &amp; vous mandons
+                  ref="gloss:aenes-1">aenes</term> c<ex>er</ex>taines causes nous <term
+                  ref="gloss:meuuance-1">meuuance</term> voulons &amp; vous mandons
                   q<ex>ue</ex> vous ne paiez nul fee ne denir a <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/30452/" type="Person_Commoner"
                   >Iohan Tyas</rs> vn de noz <rs
@@ -13326,8 +13326,8 @@ table. The (blank) above is the second cell of that row -->the
                 assauoir le dit Hans s<ex>er</ex>ra tenuz a s<ex>er</ex>uir nostre dit
                   s<ex>eignur</ex> tant en temps de peas come de guerre es quelles p<ex>ar</ex>ties
                 qil plerra a nostre dit s<ex>eignur</ex> et faire son office b<ex>ie</ex>n et
-                couenablement <term ref="glossary-af.xml#arrae-1">arrae</term> &amp; s<ex>er</ex>ra
-                le dit Hans a <term ref="glossary-af.xml#bouche-1">bouche</term> en court/ tant en
+                couenablement <term ref="gloss:arrae-1">arrae</term> &amp; s<ex>er</ex>ra
+                le dit Hans a <term ref="gloss:bouche-1">bouche</term> en court/ tant en
                 temps de peas come de guerre &amp; p<ex>re</ex>ndra tiel liv<ex>e</ex>ree
                   p<ex>ur</ex> ses chiuaux come aut<ex>re</ex>s de sa condicion p<ex>ro</ex>ndront
                 &amp; vn denier le io<ex>ur</ex> p<ex>ur</ex> gagez p<ex>ur</ex> gages<note
@@ -13420,11 +13420,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm51673280">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm51673280">
         <body xml:lang="fra">
           <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1374">1374</date>
-            <seg ana="ereed:GRB1">GRB1</seg></head>
+            <seg ana="taxon:GRB1">GRB1</seg></head>
           <div type="transcription" xml:id="staff-ridm51673280-transcription">
             <div>
               <head>f 203v <supplied>(June)</supplied></head>
@@ -13476,8 +13476,8 @@ table. The (blank) above is the second cell of that row -->the
                     >Rob<ex>er</ex>t de Morton</rs> n<ex>ost</ex>re Receyuour deinz lonour de
                 Pykeryinge ou<note type="marginal" place="margin_left">p<ex>ur</ex> Iohan
                   Tyas</note> <!-- kc: John Tyas is a patronized entertainer -->a son lieutenant illoeques saluz Come nous auant n<ex>ost</ex>re
-                passage ore <term ref="glossary-af.xml#derreinement-1">derreinem<ex>en</ex>t</term>
-                a la meer vous enuoiasmes q<ex>ue</ex> vous ne <term ref="glossary-afxml#deussiez-1"
+                passage ore <term ref="gloss:derreinement-1">derreinem<ex>en</ex>t</term>
+                a la meer vous enuoiasmes q<ex>ue</ex> vous ne <term ref="gloss:deussiez-1"
                   >deussiez</term> paier a n<ex>ost</ex>re b<ex>ie</ex>n ame <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/30452/" type="Person_Commoner"
                   >Iohan Tyas</rs> nulles fees voullons et vous mandons q<ex>ue</ex> vous
@@ -13532,11 +13532,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46771552">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46771552">
         <body xml:lang="fra">
           <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1375">1374/5</date>
-            <seg ana="ereed:GRB1">GRB1</seg></head>
+            <seg ana="taxon:GRB1">GRB1</seg></head>
           <div type="transcription" xml:id="staff-ridm46771552-transcription">
             <div>
               <head>ff 223–3v <supplied>(26 January)</supplied></head>
@@ -13687,11 +13687,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46752464">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46752464">
         <body xml:lang="fra">
           <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1379">1379</date>
-            <seg ana="ereed:GRB2">GRB2</seg></head>
+            <seg ana="taxon:GRB2">GRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46752464-transcription">
             <div>
               <head>f 8 <supplied>(1 November)</supplied></head>
@@ -13711,11 +13711,11 @@ table. The (blank) above is the second cell of that row -->the
                   q<ex>ue</ex> le dit Ioh<ex>a</ex>n serra tenuz a seruir le dit Roy &amp; duc come
                 Clarioner a terme de sa vie tant en temps de pees come de guerre &amp; p<ex>ur</ex>
                 trauailler ovesq<ex>ue</ex> lui as queles parties q<ex>ue</ex>
-                <term ref="glossary-af.xml#plerra-1">plerra</term> au dit Roy &amp; duc bien &amp;
+                <term ref="gloss:plerra-1">plerra</term> au dit Roy &amp; duc bien &amp;
                 couenablement arraiez come hom<ex>m</ex>e darmes p<ex>ur</ex> la guerre Et serra le
                 dit Ioh<ex>a</ex>n en temps de pees cestassauoir a les quatre g<ex>ra</ex>ntz festes
                 de lan &amp; auxint quant il serra enuoiees p<ex>ar</ex> l<ex>ett</ex>res de meisme
-                le Roy &amp; duc a <term ref="glossary-af.xml#bouche-1">bouche</term> de Court &amp;
+                le Roy &amp; duc a <term ref="gloss:bouche-1">bouche</term> de Court &amp;
                   p<ex>re</ex>ndra vij d. ob. le iour p<ex>ur</ex> ses gages deinz Court
                   p<ex>ur</ex> lui ses gentz &amp; chivaux Et comencera le dit Ioh<ex>a</ex>n la
                 table des <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/"
@@ -13761,7 +13761,7 @@ table. The (blank) above is the second cell of that row -->the
                   v<ex>ost</ex>re Receite leur feez &amp; gages a eux duz &amp; acustumez &amp; en
                   man<ex>er</ex>e come vo<ex>uz</ex> solastes en temps passez. Noz autres
                   l<ex>ett</ex>res a vo<ex>uz</ex> nagaires enuoiees au contraire <term
-                  ref="glossary-af.xml#nientcontresfecantes-1">nient contreefieantes</term>.
+                  ref="gloss:nientcontresfecantes-1">nient contreefieantes</term>.
                 Receiuant deu<ex>er</ex>s vo<ex>uz</ex> l<ex>ett</ex>res dacquitances desouz les
                 sealx des ditz Rollekyn Petrekyn Henri &amp; Hankyn tesmoignantes les paiementz
                 queux vo<ex>uz</ex> le<ex>ur</ex> ensi ferrez p<ex>ar</ex> queles l<ex>ett</ex>res
@@ -13833,11 +13833,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46710736">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46710736">
         <body xml:lang="fra">
           <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1380">1379/80</date>
-            <seg ana="ereed:GRB2">GRB2</seg></head>
+            <seg ana="taxon:GRB2">GRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46710736-transcription">
             <div>
               <head>ff 33v–4 <supplied>(2 January)</supplied></head>
@@ -13887,9 +13887,9 @@ table. The (blank) above is the second cell of that row -->the
                   >Pur Iohan Tyes &amp; piers Cook Trumpours.</note> q<ex>ue</ex> des issues de
                   v<ex>ost</ex>re receite facez paier a noz bienamez valletz Iohn Tyes &amp; Piers
                 Cook noz Trumpo<ex>ur</ex>s le<ex>ur</ex>s annueltees queux le<ex>ur</ex>s sont
-                  <term ref="glossary-af.xml#aderer-1">aderer</term> del fest de seint Michel darren
+                  <term ref="gloss:aderer-1">aderer</term> del fest de seint Michel darren
                 passez Noz autres l<ex>ett</ex>res au contraire avons eux ces heures enuoiees <term
-                  ref="glossary-af.xml#nientcontresfecantes-1">nientcontresfecantes</term> Receuant
+                  ref="gloss:nientcontresfecantes-1">nientcontresfecantes</term> Receuant
                   deu<ex>er</ex>s vous l<ex>ett</ex>res daquitance seu<ex>er</ex>ales desouz
                   le<ex>ur</ex>s sealx suffisantes en celle partie Et cestes noz l<ex>ett</ex>res
                 vous en ferront garrant don<ex>ne</ex> souz &amp;c a n<ex>ost</ex>re Chastel de
@@ -14081,11 +14081,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46586720">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46586720">
         <body xml:lang="fra">
           <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1381">1380/1</date>
-            <seg ana="ereed:GRB2">GRB2</seg></head>
+            <seg ana="taxon:GRB2">GRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46586720-transcription">
             <div>
               <head>f 50v <supplied>(6 March)</supplied></head>
@@ -14148,7 +14148,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <ab>Iohan &amp;c A n<ex>ost</ex>re tresch<ex>er</ex> et bien ame Clerc sire William de
                 Chesulden n<ex>ost</ex>re Receiuo<ex>ur</ex> de Leycestre et aillio<ex>ur</ex>s
-                saluz Porce q<ex>u</ex>e nous auons <term ref="glossary-af.xml#ottroiez-1"
+                saluz Porce q<ex>u</ex>e nous auons <term ref="gloss:ottroiez-1"
                   >ottroiez</term> a n<ex>ost</ex>re bien ame Iohan Clyff de Couentre cent soldz
                   p<ex>ar</ex> an p<ex>ur</ex> son fee apprendre annuelment des issues de
                   n<ex>ost</ex>re seign<ex>ur</ex>ie de leycestre p<ex>ar</ex> les mains de
@@ -14180,7 +14180,7 @@ table. The (blank) above is the second cell of that row -->the
                 vn ceynt<ex>ur</ex>e et deux stykkes dargent faitz p<ex>ur</ex> meisme les Nakers.
                 Et volons q<ex>ue</ex> p<ex>ar</ex> cestes vous en eueiez due allouance en
                   v<ex>ost</ex>re aconte des toutes choses <term
-                  ref="glossary-af.xml#desusescrites-1">desusescrites</term>. Don<ex>ne</ex> &amp;c
+                  ref="gloss:desusescrites-1">desusescrites</term>. Don<ex>ne</ex> &amp;c
                 a ffulham le quart io<ex>ur</ex> de Decembre lan &amp;c quart</ab>
 
               <gap reason="omitted"/>
@@ -14258,11 +14258,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46514960">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46514960">
         <body xml:lang="fra">
           <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1382">1381/2</date>
-            <seg ana="ereed:GRB2">GRB2</seg></head>
+            <seg ana="taxon:GRB2">GRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46514960-transcription">
             <div>
               <head>f 60v <supplied>(6 March)</supplied></head>
@@ -14275,7 +14275,7 @@ table. The (blank) above is the second cell of that row -->the
                 la Roigne vynt marcs Et a mons<ex>ire</ex> Rob<ex>er</ex>t lande p<ex>ur</ex> vn
                 eawere oue vn petite triper<note type="foot">triper: <hi rend="italic">for</hi>
                   trivet <hi rend="italics">(?)</hi></note> supportant leawer dargent et <term
-                  ref="glossary-af.xml#surorez-1">s<ex>ur</ex>orez</term> p<ex>ar</ex> nous
+                  ref="gloss:surorez-1">s<ex>ur</ex>orez</term> p<ex>ar</ex> nous
                   don<ex>ez</ex> au Roigne le io<ex>ur</ex> de son mariage ouesq<ex>ue</ex> vn autre
                   gr<ex>an</ex>t triper<note type="foot">triper: <hi rend="italic">for</hi> trivet
                     <hi rend="italics">(?)</hi></note> achate de mons<ex>ire</ex> Iohan Philippot
@@ -14413,11 +14413,11 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46538640">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46538640">
         <body xml:lang="fra">
           <head><rs type="Place_Household">John of Gaunt of Tutbury</rs>
             <date when-iso="1383">1383</date>
-            <seg ana="ereed:GRB2">GRB2</seg></head>
+            <seg ana="taxon:GRB2">GRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46538640-transcription">
             <div>
               <head>f 69v <supplied>(6 May)</supplied></head>
@@ -14429,7 +14429,7 @@ table. The (blank) above is the second cell of that row -->the
                 Oke Clerc de n<ex>ost</ex>re gr<ex>a</ex>nde Garderobe saluz Nous vo<ex>u</ex>s
                 mandons q<ex>ue</ex> des issues de v<ex>ost</ex>re Receite en n<ex>ost</ex>re
                 chambre facez paier as p<ex>er</ex>sones <term
-                  ref="glossary-af.xml#desouzescrites-1">desouzescrites</term> les som<ex>m</ex>es
+                  ref="gloss:desouzescrites-1">desouzescrites</term> les som<ex>m</ex>es
                 souznomees Cestasseuoir <gap reason="omitted"/> Et as diu<ex>er</ex>ses Heroudes a
                 Wyndesore le io<ex>ur</ex> de seint George de n<ex>ost</ex>re doun dys liures Et as
                   diu<ex>er</ex>ses<note type="marginal" place="margin_left">Vne l<ex>ett</ex>re
@@ -14437,18 +14437,18 @@ table. The (blank) above is the second cell of that row -->the
 brace to: --> Oke</note> ministrals
                 illeoqes de n<ex>ost</ex>re doun x marcs. Et a vn vallett mons<ex>ire</ex> Poto
                   Ch<ex>euale</ex>r dalmaigne p<ex>re</ex>sentant a no<ex>u</ex>s vn <term
-                  ref="glossary-af.xml#destrer-1">destrer</term> dep<ex>ar</ex> le dit
+                  ref="gloss:destrer-1">destrer</term> dep<ex>ar</ex> le dit
                   mons<ex>ire</ex> Poto de n<ex>ost</ex>re doun xiij s. iiij d. Et as
                 diu<ex>er</ex>ses Heraudes esteantz ouesque no<ex>u</ex>s a Hertford le
                   io<ex>ur</ex> de may le temps de noz ioustes illeoqes de n<ex>ost</ex>re doun x
                 marcs Et a diu<ex>er</ex>ses ministrals illeoqes de n<ex>ost</ex>re doun x. marcs.
-                Et facez distribucion as <term ref="glossary-af.xml#pouer-1">pouers</term> gentz
-                  <term ref="glossary-af.xml#datantz">datantz</term> deniers de vj nobles pliez
+                Et facez distribucion as <term ref="gloss:pouer-1">pouers</term> gentz
+                  <term ref="gloss:datantz">datantz</term> deniers de vj nobles pliez
                   s<ex>ur</ex> no<ex>u</ex>z et n<ex>ost</ex>re <term ref="glossary-af.#destrer"
                   >destrere</term> as Ioustes de smethefeld Wyndesore et Hertford quarrante soldz
                   <gap reason="omitted"/> Et facez distribucion as pourez gentz en value de deux
                 nobles pliez s<ex>ur</ex> no<ex>us</ex> &amp; n<ex>ost</ex>re <term
-                  ref="glossary-af.xml#destrer">destrer</term> as Iustices<note type="foot"
+                  ref="gloss:destrer">destrer</term> as Iustices<note type="foot"
                   >Iustices: <hi rend="italic">for</hi> Ioustes</note> de Chelmesford xiij s. iiij
                 d. Et as diu<ex>er</ex>ses Heraudes esteantes a meismes les Ioustes de
                 n<ex>ost</ex>re doun. x marcs Et as diu<ex>er</ex>ses ministrall<ex>es</ex> esteantz
@@ -14491,11 +14491,11 @@ brace to: --> Oke</note> ministrals
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46434528">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46434528">
         <body xml:lang="eng">
           <head><rs type="Place_Household">Paget of Burton on Trent and Beaudesert</rs>
             <date from-iso="1578" to-iso="1580">1578–80</date>
-            <seg ana="ereed:PGH1">PGH1</seg></head>
+            <seg ana="taxon:PGH1">PGH1</seg></head>
           <div type="transcription" xml:id="staff-ridm46434528-transcription">
             <div>
               <head>f 9v <supplied>(Necessaries for the lord, lady, and their
@@ -14665,11 +14665,11 @@ brace to: --> Oke</note> ministrals
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46317152">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46317152">
         <body xml:lang="eng">
           <head><rs type="Place_Household">Paget of Burton on Trent and Beaudesert</rs>
             <date when-iso="1580">1579/80</date>
-            <seg ana="ereed:PGH2">PGH2</seg></head>
+            <seg ana="taxon:PGH2">PGH2</seg></head>
           <div type="transcription" xml:id="staff-ridm46317152-transcription">
             <div>
               <head>f [38] <supplied>(6 January)</supplied></head>
@@ -14841,11 +14841,11 @@ brace to: --> Oke</note> ministrals
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46300784">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46300784">
         <body xml:lang="eng">
           <head><rs type="Place_Household">Paget of Burton on Trent and Beaudesert</rs>
             <date when-iso="1580">1580</date>
-            <seg ana="ereed:PGH3">PGH3</seg></head>
+            <seg ana="taxon:PGH3">PGH3</seg></head>
           <div type="transcription" xml:id="staff-ridm46300784-transcription">
             <div>
               <head>f 1 <supplied>(4 September) (Household inventory)</supplied></head>
@@ -14890,11 +14890,11 @@ brace to: --> Oke</note> ministrals
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46180272">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46180272">
         <body xml:lang="eng">
           <head><rs type="Place_Household">Wrottesley of Wrottesley</rs>
             <date when-iso="1617">1616/17</date>
-            <seg ana="ereed:WRLT">WRLT</seg></head>
+            <seg ana="taxon:WRLT">WRLT</seg></head>
           <div type="transcription" xml:id="staff-ridm46180272-transcription">
             <div>
               <head>p 47 <supplied>(9 January)</supplied></head>
@@ -14919,11 +14919,11 @@ brace to: --> Oke</note> ministrals
           </div>
         </body>
       </text>
-      <text ana="ereed:family" type="record" xml:id="staff-ridm46169824">
+      <text ana="taxon:family" type="record" xml:id="staff-ridm46169824">
         <body xml:lang="eng">
           <head><rs type="Place_Household">Wrottesley of Wrottesley</rs>
             <date when-iso="1635">1635</date>
-            <seg ana="ereed:WRIN">WRIN</seg></head>
+            <seg ana="taxon:WRIN">WRIN</seg></head>
           <div type="transcription" xml:id="staff-ridm46169824-transcription">
             <div>
               <head>p 302 <supplied>(In the great parlour)</supplied></head>
@@ -15014,7 +15014,7 @@ brace to: --> Oke</note> ministrals
               <head>
                 <rs>Tamworth</rs>
                 <date precision="low" when-iso="1550"><hi rend="italic">c</hi> 1550</date>
-                <seg ana="ereed:TSHL">TSHL</seg>
+                <seg ana="taxon:TSHL">TSHL</seg>
               </head>
               <div type="transcription" xml:id="staff-ridm91664448-transcription">
                 <div>
