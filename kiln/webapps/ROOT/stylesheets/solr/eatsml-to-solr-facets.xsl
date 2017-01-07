@@ -22,11 +22,11 @@
   <xsl:variable name="collective_clergy" select="'entity_type-9104'" />
   <xsl:variable name="collective_guild" select="'entity_type-517'" />
   <xsl:variable name="collective_occupation" select="'entity_type-519'" />
+  <xsl:variable name="collective_troupe" select="'entity_type-12619'" />
   <xsl:variable name="crimes_misdemeanour" select="'entity_type-21297'" />
   <xsl:variable name="drama_character" select="'entity_type-21227'" />
   <xsl:variable name="drama_type" select="'entity_type-21223'" />
   <xsl:variable name="drama_work" select="'entity_type-21225'" />
-  <xsl:variable name="entertainer_patronised" select="'entity_type-12619'" />
   <xsl:variable name="entertainer_type" select="'entity_type-521'" />
   <xsl:variable name="entertainment_animal" select="'entity_type-4867'" />
   <xsl:variable name="entertainment_custom" select="'entity_type-4941'" />
@@ -61,6 +61,7 @@
   <xsl:variable name="is_a" select="'entity_relationship_type-22042'" />
   <xsl:variable name="had_occupation"
                 select="'entity_relationship_type-21008'" />
+  <xsl:variable name="patronized" select="'entity_relationship_type-12724'" />
   <!-- Collections of types -->
   <xsl:variable name="locations"
                 select="($location_borough, $location_church, $location_country,
@@ -102,13 +103,23 @@
       </field>
       <!-- Unpatronised entertainers. These are any entity that has an
            $is_a relationship with an entity with the
-           $entertainer_type type and does not have the
-           $entertainer_patronised type. -->
-      <xsl:if test="not(../../eats:entity_types/eats:entity_type/@entity_type=$entertainer_patronised)">
+           $entertainer_type type but does not have a $patronised
+           relationship. -->
+      <xsl:if test="not(../eats:entity_relationship[@entity_relationship_type=$patronized][@range_entity=$entity_id])">
         <field name="facet_entertainers_status">
           <xsl:text>Unknown</xsl:text>
         </field>
       </xsl:if>
+    </xsl:if>
+    <!-- Patronised entertainers. These are any entity that has a
+         $patronised relationship. -->
+    <xsl:if test="@entity_relationship_type=$patronized and @range_entity=$entity_id">
+      <field name="facet_entertainers_patronised">
+        <xsl:value-of select="substring-after($entity_id, 'entity-')" />
+      </field>
+      <field name="facet_entertainers_status">
+        <xsl:text>Patronized</xsl:text>
+      </field>
     </xsl:if>
     <!-- Drama type: a $drama_work entity has the type of the
          $drama_type it is related to via an "is a" relationship. -->
@@ -190,19 +201,15 @@
       <field name="facet_entertainers_type">
         <xsl:value-of select="$entity_eats_id" />
       </field>
-      <xsl:if test="not(../../eats:entity_type[@entity_type=$entertainer_patronised])">
+    </xsl:if>
+    <!-- Troupes: are unpatronised if they do not have a patronised
+         relationship. -->
+    <xsl:if test=". = $collective_troupe">
+      <xsl:if test="not(../../eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$patronized][@range_entity=concat('entity-', $entity_eats_id)])">
         <field name="facet_entertainers_status">
           <xsl:text>Unknown</xsl:text>
         </field>
       </xsl:if>
-    </xsl:if>
-    <xsl:if test=". = $entertainer_patronised">
-      <field name="facet_entertainers_patronised">
-        <xsl:value-of select="$entity_eats_id" />
-      </field>
-      <field name="facet_entertainers_status">
-        <xsl:text>Patronized</xsl:text>
-      </field>
     </xsl:if>
     <!-- Entertainments -->
     <xsl:if test=". = $entertainment_type">
