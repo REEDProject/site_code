@@ -67,45 +67,12 @@
   <xsl:template name="make-xinclude">
     <xsl:param name="context" />
     <xsl:param name="url" />
-    <xsl:variable name="full-url">
-      <xsl:choose>
-        <xsl:when test="contains($url, ':')">
-          <xsl:call-template name="expand-url">
-            <xsl:with-param name="context" select="$context" />
-            <xsl:with-param name="prefixDef" select="$tei/tei:teiHeader/tei:encodingDesc/tei:listPrefixDef/tei:prefixDef[@ident=substring-before($url, ':')][1]" />
-            <xsl:with-param name="url" select="substring-after($url, ':')" />
-          </xsl:call-template>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:value-of select="$url" />
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
     <!-- XInclude does not permit fragment identifiers in
          xi:include/@href (it's useless; the HTTP request does not
          pass the fragment). Convert to a querystring. -->
-    <xsl:variable name="final-url" select="replace($full-url, '#', '?id=')" />
+    <xsl:variable name="final-url" select="replace($url, '#', '?id=')" />
     <xi:include href="{kiln:url-for-match('ereed-extract-referenced-content',
                       ($final-url), 1)}" />
-  </xsl:template>
-
-  <xsl:template name="expand-url">
-    <xsl:param name="context" />
-    <xsl:param name="prefixDef" />
-    <xsl:param name="url" />
-    <xsl:variable name="expanded-url"
-                  select="replace($url, $prefixDef/@matchPattern,
-                          $prefixDef/@replacementPattern)" />
-    <xsl:variable name="base"
-                  select="$context/ancestor::*[@xml:base][1]/@xml:base" />
-    <xsl:choose>
-      <xsl:when test="$base">
-        <xsl:value-of select="resolve-uri($expanded-url, $base)" />
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:value-of select="$expanded-url" />
-      </xsl:otherwise>
-    </xsl:choose>
   </xsl:template>
 
 </xsl:stylesheet>
