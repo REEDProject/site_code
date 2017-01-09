@@ -66,7 +66,8 @@
         <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)"
           replacementPattern="../code_list.xml#$1">
           <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the
-            code_list.xml file. For example, <code>taxon:V117</code> dereferences to <code>code_list.xml#V117</code>.</p>
+            code_list.xml file. For example, <code>taxon:V117</code> dereferences to
+              <code>code_list.xml#V117</code>.</p>
         </prefixDef>
         <!-- or something like below for glossary -->
         <prefixDef ident="gloss" matchPattern="([A-Za-z0-9_-]+)"
@@ -1005,7 +1006,7 @@
                     ref="gloss:vicus_Malbanus-1"><rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/15590/"
                       type="Place_BoroughParish"><term ref="gloss:uicus-1">Vico</term>
-                      Malbano</rs></term> fact<ex>um</ex> ar<ex>ticu</ex>lis
+                    Malbano</rs></term> fact<ex>um</ex> ar<ex>ticu</ex>lis
                     p<ex>rese</ex>n<ex>tati</ex>s<note type="foot">p<hi rend="italic">rese</hi>n<hi
                       rend="italic">tati</hi>s: <hi rend="italic">abbreviated</hi> pn'ss<hi
                       rend="italic">; for</hi> presentati</note> Cuiusdam li<ex>bel</ex>li
@@ -1119,10 +1120,9 @@
                   >rubricated</hi></note>an<note type="foot">an: a <hi rend="italic"
                   >rubricated</hi></note><gap reason="omitted"/>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/1261/" type="Entertainer_Type"
-                    ><term ref="gloss:histrio-1">ystrionib<ex>us</ex></term></rs>
-                  p<ex>otes</ex>t dari cib<ex>us</ex> quia paup<ex>er</ex>es sunt non q<ex>uia</ex>
-                <term ref="gloss:histrio-1">yst<ex>ri</ex>ones</term> &amp;
-                  eor<ex>um</ex>
+                    ><term ref="gloss:histrio-1">ystrionib<ex>us</ex></term></rs> p<ex>otes</ex>t
+                dari cib<ex>us</ex> quia paup<ex>er</ex>es sunt non q<ex>uia</ex>
+                <term ref="gloss:histrio-1">yst<ex>ri</ex>ones</term> &amp; eor<ex>um</ex>
                 <term ref="gloss:ludus-1">ludi</term> non videant<ex>ur</ex> u<ex>e</ex>l
                   audiantur,u<ex>e</ex>l p<ex>er</ex>mittant<ex>ur</ex> f<ex>ier</ex>i coram <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/10950/"
@@ -3064,7 +3064,7 @@ encompassing the names -->
 
               <ab><gap reason="omitted"/>It<ex>em</ex> dat<ex>is</ex>
                 <term ref="gloss:episcopus_puerorum-1">Ep<ex>iscop</ex>o
-                    pu<ex>er</ex>or<ex>um</ex></term> ad fest<ex>um</ex>
+                  pu<ex>er</ex>or<ex>um</ex></term> ad fest<ex>um</ex>
                   s<ex>an</ex>c<ex>t</ex>or<ex>um</ex> Innocenct<ex>is</ex> ex co<ex>mmu</ex>nis v
                   s<gap reason="omitted"/>.</ab>
 
@@ -3184,8 +3184,7 @@ encompassing the names -->
                       type="Collective_Occupation">bailiff</rs>, <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/10994/"
                       type="Person_Commoner">John Stalker</rs></hi></note> p<ex>er</ex>
-                  ip<ex>su</ex>m solut<ex>um</ex> p<ex>ro</ex> vna <term
-                  ref="gloss:cestra-1">cestr<ex>a</ex></term> ceruis<ex>ie</ex>
+                  ip<ex>su</ex>m solut<ex>um</ex> p<ex>ro</ex> vna cestr<ex>a</ex> ceruis<ex>ie</ex>
                   empt<ex>a</ex> pro hom<ex>in</ex>ib<ex>us</ex> vigilant<ex>ibus</ex> ad
                   Nundin<ex>as</ex> Pent<ex>ecoste</ex><note type="foot">Pent<hi rend="italic"
                     >ecoste</hi>: <hi rend="italic">21 May 1458</hi></note> ex antiqua
@@ -3267,17 +3266,15 @@ encompassing the names -->
                   chorist<ex>is</ex> soluend<ex>is</ex> p<ex>ro</ex> quali<ex>be</ex>t nocte
                   <del>in</del> quatuor denarios<note type="foot">denarios: <hi rend="italic"
                     >corrected from</hi> denarijs</note> Et si cantare contig<ex>er</ex>int
-                  cora<ex>m</ex> extraneis cantilenas <ex>ve</ex>l <term
-                  ref="gloss:balletta-1">ballett<ex>as</ex></term> &amp;
-                  d<ex>i</ex>c<ex>t</ex>i extranei dant eisd<ex>em</ex> chorist<ex>is</ex> aliqua
-                  mun<ex>er</ex>a tunc decan<ex>us</ex> &amp; capi<ex>tu</ex>lu<ex>m</ex>
-                  decreueru<ex>n</ex>t q<ex>uo</ex>d d<ex>i</ex>c<ex>t</ex>a mun<ex>er</ex>a
-                  diuidant<ex>ur</ex>
+                  cora<ex>m</ex> extraneis cantilenas <ex>ve</ex>l <term ref="gloss:balletta-1"
+                    >ballett<ex>as</ex></term> &amp; d<ex>i</ex>c<ex>t</ex>i extranei dant
+                  eisd<ex>em</ex> chorist<ex>is</ex> aliqua mun<ex>er</ex>a tunc decan<ex>us</ex>
+                &amp; capi<ex>tu</ex>lu<ex>m</ex> decreueru<ex>n</ex>t q<ex>uo</ex>d
+                  d<ex>i</ex>c<ex>t</ex>a mun<ex>er</ex>a diuidant<ex>ur</ex>
                 <del>modo sequen<ex>te</ex></del> int<ex>er</ex> choristas ita q<ex>uod</ex>
                   m<ex>agiste</ex>r choristar<ex>um</ex> si <del>fore contig<ex>er</ex>it</del>
-                  int<ex>er</ex>fu<ex>er</ex>it <term ref="gloss:cantalena-1"
-                  >cantalenis</term> &amp; cantau<ex>er</ex>it recipiet duplu<ex>m</ex>
-                  vni<ex>us</ex> choriste</ab>
+                  int<ex>er</ex>fu<ex>er</ex>it <term ref="gloss:cantalena-1">cantalenis</term>
+                &amp; cantau<ex>er</ex>it recipiet duplu<ex>m</ex> vni<ex>us</ex> choriste</ab>
 
               <gap reason="omitted"/>
             </div>
@@ -4326,15 +4323,15 @@ encompassing the names -->
                   Marg<ex>er</ex>ie soleient et deuoient auoir de temps dont memoire ne court de
                 chescun <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/"
                   type="Entertainer_Type">Ministral</rs> venant a la dite ville en la feste de saint
-                Gile labbe p<ex>ur</ex> faire leur ministralcie iiij d. ob. et de chescun ours   <!-- kc: ask SB if this is patronage by John of Gaunt? -->
-                venant a meisme la ville p<ex>ur</ex> estre chace vn cours Voulons &amp; vous
-                mandons q<ex>ue</ex> p<ex>ri</ex>s de les William &amp; Marg<ex>er</ex>ie seurtee de
-                faire a nous tant a n<ex>ost</ex>re shastel come al sainte esglise deinz la dite
-                ville ce qad este &amp; soleit estre fait en celle cas deuant ces heures leur faites
-                liuree de les choses &amp; lib<ex>er</ex>teez auantditz &amp; ycelles les soeffrez
-                auoir &amp; enioier pesiblement sanz empeschement Et cestes &amp;c Don<ex>ne</ex>
-                &amp;c. a la S<ex>auoye</ex> le xxvj. i<ex>our</ex> de Nou<ex>embre</ex> lan &amp;c
-                xlvj.</ab>
+                Gile labbe p<ex>ur</ex> faire leur ministralcie iiij d. ob. et de chescun ours
+                <!-- kc: ask SB if this is patronage by John of Gaunt? --> venant a meisme la ville
+                  p<ex>ur</ex> estre chace vn cours Voulons &amp; vous mandons q<ex>ue</ex>
+                  p<ex>ri</ex>s de les William &amp; Marg<ex>er</ex>ie seurtee de faire a nous tant
+                a n<ex>ost</ex>re shastel come al sainte esglise deinz la dite ville ce qad este
+                &amp; soleit estre fait en celle cas deuant ces heures leur faites liuree de les
+                choses &amp; lib<ex>er</ex>teez auantditz &amp; ycelles les soeffrez auoir &amp;
+                enioier pesiblement sanz empeschement Et cestes &amp;c Don<ex>ne</ex> &amp;c. a la
+                  S<ex>auoye</ex> le xxvj. i<ex>our</ex> de Nou<ex>embre</ex> lan &amp;c xlvj.</ab>
 
               <gap reason="omitted"/>
             </div>
@@ -6477,10 +6474,10 @@ table. The (blank) above is the second cell of that row -->the
                   ma<ex>ies</ex>t<ex>ies</ex> poore &amp; auncient burroughe of Stafford The first
                 church therein beinge dedicated to Almighty God by <foreign xml:lang="lat"><rs
                     ref="http://ereed.library.utoronto.ca/eats/entity/23638/" type="Person_Male"
-                      ><term ref="gloss:Bertelinus-1">Bertelinus</term></rs>
-                    minoru<ex>m</ex> gent<ex>ium</ex> diuus</foreign><note type="foot">Bertelinus
-                    <gap reason="omitted"/> diuus: <hi rend="italic">'Bertelinus, saint of the
-                    lesser peoples'</hi></note> the walls and gat<ex>es</ex> thereof erected by <rs
+                      ><term ref="gloss:Bertelinus-1">Bertelinus</term></rs> minoru<ex>m</ex>
+                    gent<ex>ium</ex> diuus</foreign><note type="foot">Bertelinus <gap
+                    reason="omitted"/> diuus: <hi rend="italic">'Bertelinus, saint of the lesser
+                    peoples'</hi></note> the walls and gat<ex>es</ex> thereof erected by <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/23708/" type="Person_Royalty"
                   >Elfrda</rs><note type="foot">Elfrda: <hi rend="italic">for</hi> Elfrida</note>
                 duchesse of mercia the Towne encorporated by kinge <rs
@@ -6888,8 +6885,8 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>It<ex>em</ex> to the <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/17474/"
-                      type="Collective_Troupe">Queenes plaiers</rs> the same day<note
-                      type="foot">the same day: <hi rend="italic">18 December</hi></note>
+                      type="Collective_Troupe">Queenes plaiers</rs> the same day<note type="foot"
+                      >the same day: <hi rend="italic">18 December</hi></note>
                   </cell>
                   <cell rend="right">01-00-00</cell>
                 </row>
@@ -6996,8 +6993,8 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>It<ex>e</ex>m p<ex>ai</ex>d the <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/17717/"
-                      type="Collective_Troupe">kings players</rs> 2<hi rend="superscript"
-                      >th</hi> of december</cell>
+                      type="Collective_Troupe">kings players</rs> 2<hi rend="superscript">th</hi> of
+                    december</cell>
                   <cell rend="right">xx s.</cell>
                 </row>
               </table>
@@ -7399,16 +7396,16 @@ table. The (blank) above is the second cell of that row -->the
               day for presentation of the accounts.</p>
             <p><rs ref="http://ereed.library.utoronto.ca/eats/entity/23345/" type="Person_Commoner"
                 >Thomas Swinnerton</rs>'s name is given here with the <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/24519/"
-                type="Collective_Troupe">prince’s players</rs>, but he is named in 1627–8 as a
-                <rs ref="http://ereed.library.utoronto.ca/eats/entity/25345/"
-                type="Collective_Troupe">king's man</rs> and in December 1629 with <rs
+                ref="http://ereed.library.utoronto.ca/eats/entity/24519/" type="Collective_Troupe"
+                >prince’s players</rs>, but he is named in 1627–8 as a <rs
+                ref="http://ereed.library.utoronto.ca/eats/entity/25345/" type="Collective_Troupe"
+                >king's man</rs> and in December 1629 with <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/8782/" type="Entertainer_Type"
                 >unspecified players</rs>.</p>
             <p><rs ref="http://ereed.library.utoronto.ca/eats/entity/24813/" type="Person_Commoner"
                 >Martin Slater</rs> was an <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/25827/"
-                type="Collective_Troupe">admiral's man</rs>
+                ref="http://ereed.library.utoronto.ca/eats/entity/25827/" type="Collective_Troupe"
+                >admiral's man</rs>
               <!-- kc: official name is "lord admiral's players"? -->from 1594–7, and was last
               recorded in London as manager of the <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/25046/" type="Entertainer_Type"
@@ -7425,8 +7422,8 @@ table. The (blank) above is the second cell of that row -->the
                 >Nicholas Hanson</rs> is unidentified, but possibly he was appearing with Slater in
               connection with the children of Bristol. In the mayor’s accounts 1627–8 he was
               rewarded in December 1627 as leader of <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/17835/"
-                type="Collective_Troupe">Lord Dudley’s players</rs>.</p>
+                ref="http://ereed.library.utoronto.ca/eats/entity/17835/" type="Collective_Troupe"
+                >Lord Dudley’s players</rs>.</p>
             <p>The ‘Chamber of Bristoll’ was a children’s company established in 1615 under the
               patronage of Queen Anne; it appears from a complaint that by 1619 the company included
               a number of adults as well as children. They are not found in London (see Chambers,
@@ -7946,8 +7943,8 @@ table. The (blank) above is the second cell of that row -->the
                     <cell>giuen<note type="marginal" place="margin_left">14:<note type="foot">14:
                             <hi rend="italic">ie, of June</hi></note></note> to the <rs
                         ref="http://ereed.library.utoronto.ca/eats/entity/21924/"
-                        type="Collective_Troupe">La<ex>dy</ex> Eliz<ex>abeths</ex> Players</rs>
-                      whoe shewed theire Com<ex>m</ex>iss<ex>ion</ex></cell>
+                        type="Collective_Troupe">La<ex>dy</ex> Eliz<ex>abeths</ex> Players</rs> whoe
+                      shewed theire Com<ex>m</ex>iss<ex>ion</ex></cell>
                     <cell rend="right">0. 6. 8</cell>
                   </row>
                 </table>
@@ -8406,9 +8403,9 @@ table. The (blank) above is the second cell of that row -->the
                   <cell>Given<note type="marginal" place="margin_left">This is not to be paid
                         hereaft<ex>er</ex> but by consent</note> the <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/25475/"
-                      type="Collective_Troupe">Earle of Essexe Musicke</rs> when the Companie
-                    supped at the Highe Sheriff<ex>es</ex> 5 s. &amp; to the porter xij d. in
-                      to<ex>to</ex></cell>
+                      type="Collective_Troupe">Earle of Essexe Musicke</rs> when the Companie supped
+                    at the Highe Sheriff<ex>es</ex> 5 s. &amp; to the porter xij d. in
+                    to<ex>to</ex></cell>
                   <cell rend="right">0 6 0</cell>
                 </row>
               </table>
@@ -8532,8 +8529,8 @@ table. The (blank) above is the second cell of that row -->the
               <table>
                 <row>
                   <cell>Paid to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/25345/"
-                      type="Collective_Troupe">kings player<ex>es</ex></rs> 6<hi
-                      rend="superscript">th</hi> Iuly 1635</cell>
+                      type="Collective_Troupe">kings player<ex>es</ex></rs> 6<hi rend="superscript"
+                      >th</hi> Iuly 1635</cell>
                   <cell rend="right">0 6 8</cell>
                 </row>
               </table>
@@ -9466,10 +9463,10 @@ table. The (blank) above is the second cell of that row -->the
                     /></damage>: <hi rend="italic">for</hi> annuelment<hi rend="italic">; letter
                     lost in gutter</hi></note> les iours del assumpcion n<ex>ost</ex>re dame. donant
                 &amp; g<ex>r</ex>antant au dit Roy des Ministralx pur le temps esteant plein <term
-                  ref="gloss:pouir-1">pouir</term> &amp; mandement de les fair
-                resonablement iustifier &amp; constreigner de faire le<ex>ur</ex>s s<ex>er</ex>uices
-                &amp; ministralcies en man<ex>er</ex>e come appent &amp; come illeoqes ad este vse
-                &amp; dauncien temps acoustume. En tesmoignance &amp;c<ex>eter</ex>a. Don<ex>e</ex>
+                  ref="gloss:pouir-1">pouir</term> &amp; mandement de les fair resonablement
+                iustifier &amp; constreigner de faire le<ex>ur</ex>s s<ex>er</ex>uices &amp;
+                ministralcies en man<ex>er</ex>e come appent &amp; come illeoqes ad este vse &amp;
+                dauncien temps acoustume. En tesmoignance &amp;c<ex>eter</ex>a. Don<ex>e</ex>
                   &amp;c<ex>eter</ex>a. a n<ex>ost</ex>re Chastel de Tuttebury le xxij io<ex>ur</ex>
                   daug<ex>us</ex>te. lan &amp;c<ex>eter</ex>a quart.</ab>
 
@@ -10830,8 +10827,8 @@ table. The (blank) above is the second cell of that row -->the
                     i<damage><gap unit="chars" extent="2"/></damage><note type="foot">i<damage><gap
                       unit="chars" extent="2"/></damage>: <hi rend="italic">likely</hi> ib<hi
                     rend="italic">ide</hi>m</note> tent<ex>as</ex> ante ff<ex>estu</ex>m <term
-                  ref="gloss:Michaelis-1">">mich<ex>ael</ex>is</term> infra
-                  temp<ex>orem</ex> comp<ex>ut</ex>i xij d. Et sol<ex>utum</ex>
+                  ref="gloss:Michaelis-1">">mich<ex>ael</ex>is</term> infra temp<ex>orem</ex>
+                  comp<ex>ut</ex>i xij d. Et sol<ex>utum</ex>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/1261/" type="Entertainer_Type"
                     >histrionib<ex>us</ex></rs> lich<ex>feldie</ex> per p<ex>re</ex>cept<ex>um</ex>
                   d<ex>omi</ex>ni ad idem temp<ex>orem</ex> j s. iij d. Et alloc<ex>atum</ex>
@@ -11036,10 +11033,10 @@ table. The (blank) above is the second cell of that row -->the
               <head>single mb dorse</head>
               <pb n="1" type="membrane"/>
 
-              <ab><hi rend="center"><foreign xml:lang="lat"><term
-                      ref="gloss:terminus_Michaelis">T<ex>erm</ex>i<ex>n</ex>o <term
-                        ref="gloss:Michaelis-1">">Mich<ex>ael</ex>is</term></term>
-                      a<ex>nn</ex>o xiiij<hi rend="superscript">o</hi></foreign></hi></ab>
+              <ab><hi rend="center"><foreign xml:lang="lat"><term ref="gloss:terminus_Michaelis"
+                        >T<ex>erm</ex>i<ex>n</ex>o <term ref="gloss:Michaelis-1"
+                        >">Mich<ex>ael</ex>is</term></term> a<ex>nn</ex>o xiiij<hi
+                      rend="superscript">o</hi></foreign></hi></ab>
 
               <ab><hi rend="center"><foreign xml:lang="lat">Maior et Inh<ex>ab</ex>itantes ville de
                     Walsall cont<ex>r</ex>a Ioh<ex>ann</ex>em Beamond Armig<ex>erum</ex> et
@@ -13012,8 +13009,8 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>26</cell>
                   <cell>Gevento my <rs ref="http://ereed.library.utoronto.ca/eats/entity/18107/"
-                      type="Collective_Troupe">L<ex>ord</ex> mountegle<ex>s</ex> players</rs>
-                    for twoo playes</cell>
+                      type="Collective_Troupe">L<ex>ord</ex> mountegle<ex>s</ex> players</rs> for
+                    twoo playes</cell>
                   <cell rend="right"><damage><gap unit="chars" extent="3"/></damage></cell>
                 </row>
               </table>
@@ -13226,11 +13223,14 @@ table. The (blank) above is the second cell of that row -->the
                 <!-- kc: need to try and find dates for him when I have time or someone else can do it -->
                   gen<ex>er</ex>al salutz.<note type="marginal" place="margin_left">p<ex>ur</ex>
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/30273/"
-                    type="Person_Commoner">Henr<ex>i</ex></rs>  <!-- kc: ask SB about how do deal with a single patronized performer --> <!-- kc: also rev. as "Collective_Troupe" -->
+                    type="Person_Commoner">Henr<ex>i</ex></rs>
+                  <!-- kc: ask SB about how do deal with a single patronized performer -->
+                  <!-- kc: also rev. as "Collective_Troupe" -->
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/"
                     type="Entertainer_Type">Piper</rs> &amp; <rs
                     ref="http://ereed.library.utoronto.ca/eats/entity/30299/" type="Person_Commoner"
-                      >Rog<ex>er</ex></rs>   <!-- kc: Roger is also type=Collective_Troupe. need rev. -->
+                      >Rog<ex>er</ex></rs>
+                  <!-- kc: Roger is also type=Collective_Troupe. need rev. -->
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/"
                     type="Entertainer_Type">Piper</rs></note> Nous voulons et vous mandons que des
                 issues de v<ex>ost</ex>re Receite paiez &amp; deliu<ex>er</ex>ez a noz b<ex>ie</ex>n
@@ -13294,14 +13294,14 @@ table. The (blank) above is the second cell of that row -->the
                   n<ex>ost</ex>re b<ex>ie</ex>n ame <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/30406/" type="Person_Commoner"
                     >Rob<ex>er</ex>t de Morton</rs> n<ex>ost</ex>re Receyvour deinz le counte<note
-                  type="marginal" place="margin_right">Tyas</note>  <!-- kc: need to revise as patronized entertainer -->
-                <term ref="gloss:deuerwik-1">deu<ex>er</ex>wik</term> ou a son lieutenant
-                  ‸<add place="above">illeoq<ex>ue</ex>s</add> saluz pour <term
-                  ref="gloss:aenes-1">aenes</term> c<ex>er</ex>taines causes nous <term
-                  ref="gloss:meuuance-1">meuuance</term> voulons &amp; vous mandons
-                  q<ex>ue</ex> vous ne paiez nul fee ne denir a <rs
-                  ref="http://ereed.library.utoronto.ca/eats/entity/30452/" type="Person_Commoner"
-                  >Iohan Tyas</rs> vn de noz <rs
+                  type="marginal" place="margin_right">Tyas</note>
+                <!-- kc: need to revise as patronized entertainer -->
+                <term ref="gloss:deuerwik-1">deu<ex>er</ex>wik</term> ou a son lieutenant ‸<add
+                  place="above">illeoq<ex>ue</ex>s</add> saluz pour <term ref="gloss:aenes-1"
+                  >aenes</term> c<ex>er</ex>taines causes nous <term ref="gloss:meuuance-1"
+                  >meuuance</term> voulons &amp; vous mandons q<ex>ue</ex> vous ne paiez nul fee ne
+                denir a <rs ref="http://ereed.library.utoronto.ca/eats/entity/30452/"
+                  type="Person_Commoner">Iohan Tyas</rs> vn de noz <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type"
                   >ministralx</rs> tanq<ex>ue</ex> vous aurez autre mandement de nous &amp; cestes
                 &amp;c don<ex>ne</ex> &amp;c don<ex>ne</ex> &amp;c<note type="foot">don<hi
@@ -13318,7 +13318,8 @@ table. The (blank) above is the second cell of that row -->the
               <ab>Ceste endent<ex>ur</ex>e faite p<ex>ar</ex>entre n<ex>os</ex>tre s<ex>eignur</ex>
                 Iohan &amp;c. dune p<ex>ar</ex>t &amp; <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/30501/" type="Person_Commoner"
-                  >Hans Gough</rs>  <!-- kc: Hans Gough, Smeltes, Henry Hultescrane, James Sauche are all patronized entertainers; need revision -->
+                  >Hans Gough</rs>
+                <!-- kc: Hans Gough, Smeltes, Henry Hultescrane, James Sauche are all patronized entertainers; need revision -->
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/" type="Entertainer_Type"
                   >piper</rs> daut<ex>re</ex> p<ex>ar</ex>t tesmoigne que le dit Hans est retenuz
                 &amp; demurez enu<ex>er</ex>s n<ex>ost</ex>re dit s<ex>eignur</ex> p<ex>ur</ex> peas
@@ -13326,18 +13327,18 @@ table. The (blank) above is the second cell of that row -->the
                 assauoir le dit Hans s<ex>er</ex>ra tenuz a s<ex>er</ex>uir nostre dit
                   s<ex>eignur</ex> tant en temps de peas come de guerre es quelles p<ex>ar</ex>ties
                 qil plerra a nostre dit s<ex>eignur</ex> et faire son office b<ex>ie</ex>n et
-                couenablement <term ref="gloss:arrae-1">arrae</term> &amp; s<ex>er</ex>ra
-                le dit Hans a <term ref="gloss:bouche-1">bouche</term> en court/ tant en
-                temps de peas come de guerre &amp; p<ex>re</ex>ndra tiel liv<ex>e</ex>ree
-                  p<ex>ur</ex> ses chiuaux come aut<ex>re</ex>s de sa condicion p<ex>ro</ex>ndront
-                &amp; vn denier le io<ex>ur</ex> p<ex>ur</ex> gagez p<ex>ur</ex> gages<note
-                  type="foot">p<hi rend="italic">ur</hi> gagez p<hi rend="italic">ur</hi> gages: <hi
-                    rend="italic">dittography</hi></note> de son garcon Et p<ex>re</ex>nd<ex>r</ex>a
-                chescun au cent souldz<note type="foot">p<hi rend="italic">re</hi>nd<hi
-                    rend="italic">r</hi>a <gap reason="omitted"/> souldz: <hi rend="italic">for</hi>
-                  prendra cent souldz <hi rend="italic">(?)</hi></note> p<ex>ur</ex> son fee des
-                issus del hon<ex>our</ex> de leycestre p<ex>ar</ex> les mayns de le
-                  receiv<ex>our</ex> illoques qui p<ex>ur</ex> la temps s<ex>er</ex>ra as
+                couenablement <term ref="gloss:arrae-1">arrae</term> &amp; s<ex>er</ex>ra le dit
+                Hans a <term ref="gloss:bouche-1">bouche</term> en court/ tant en temps de peas come
+                de guerre &amp; p<ex>re</ex>ndra tiel liv<ex>e</ex>ree p<ex>ur</ex> ses chiuaux come
+                  aut<ex>re</ex>s de sa condicion p<ex>ro</ex>ndront &amp; vn denier le
+                  io<ex>ur</ex> p<ex>ur</ex> gagez p<ex>ur</ex> gages<note type="foot">p<hi
+                    rend="italic">ur</hi> gagez p<hi rend="italic">ur</hi> gages: <hi rend="italic"
+                    >dittography</hi></note> de son garcon Et p<ex>re</ex>nd<ex>r</ex>a chescun au
+                cent souldz<note type="foot">p<hi rend="italic">re</hi>nd<hi rend="italic">r</hi>a
+                    <gap reason="omitted"/> souldz: <hi rend="italic">for</hi> prendra cent souldz
+                    <hi rend="italic">(?)</hi></note> p<ex>ur</ex> son fee des issus del
+                  hon<ex>our</ex> de leycestre p<ex>ar</ex> les mayns de le receiv<ex>our</ex>
+                illoques qui p<ex>ur</ex> la temps s<ex>er</ex>ra as
                 <!-- kc: identity of receiver if known, do I tag? --> t<ex>er</ex>mes de saint
                 michel &amp; de Pasques p<ex>ar</ex> ovelles porcions En
                   tesm<ex>oi</ex>gn<ex>ance</ex> des quell<ex>es</ex> choses &amp;c
@@ -13439,7 +13440,8 @@ table. The (blank) above is the second cell of that row -->the
                   Rec<ex>eyvour</ex> de Leycestre qore est ou qui pour le temps s<ex>er</ex>ra saluz
                   p<ex>ur</ex>ce q<ex>ue</ex> nous auons donez a <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/30501/" type="Person_Commoner"
-                  >Hans Gough</rs>  <!-- kc: see if I need to revise tags for patronized ministrels sincc I may have to retag so that the inserted type value in the <rs> tags matches with EATS page-->
+                  >Hans Gough</rs>
+                <!-- kc: see if I need to revise tags for patronized ministrels sincc I may have to retag so that the inserted type value in the <rs> tags matches with EATS page-->
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/" type="Entertainer_Type"
                   >piper</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/30587/"
                   type="Person_Commoner">Henr<ex>i</ex> Hultescrane</rs> piper <rs
@@ -13475,16 +13477,18 @@ table. The (blank) above is the second cell of that row -->the
                   ref="http://ereed.library.utoronto.ca/eats/entity/30406/" type="Person_Commoner"
                     >Rob<ex>er</ex>t de Morton</rs> n<ex>ost</ex>re Receyuour deinz lonour de
                 Pykeryinge ou<note type="marginal" place="margin_left">p<ex>ur</ex> Iohan
-                  Tyas</note> <!-- kc: John Tyas is a patronized entertainer -->a son lieutenant illoeques saluz Come nous auant n<ex>ost</ex>re
-                passage ore <term ref="gloss:derreinement-1">derreinem<ex>en</ex>t</term>
-                a la meer vous enuoiasmes q<ex>ue</ex> vous ne <term ref="gloss:deussiez-1"
-                  >deussiez</term> paier a n<ex>ost</ex>re b<ex>ie</ex>n ame <rs
-                  ref="http://ereed.library.utoronto.ca/eats/entity/30452/" type="Person_Commoner"
-                  >Iohan Tyas</rs> nulles fees voullons et vous mandons q<ex>ue</ex> vous
-                  fac<ex>i</ex>es paier au dit Iohan ou a son c<ex>er</ex>tain atto<ex>ur</ex>ne les
-                fees auantditz doresenauant<ex>es</ex> ensemblement ovesq<ex>ue</ex> les arrerages
-                si nulles ly soient a derrier Et cestes noz l<ex>ett</ex>res &amp;c Don<ex>ne</ex>
-                etc. a Wentbrigg<ex>es</ex> le xxj io<ex>ur</ex> de Sept<ex>embre</ex></ab>
+                  Tyas</note>
+                <!-- kc: John Tyas is a patronized entertainer -->a son lieutenant illoeques saluz
+                Come nous auant n<ex>ost</ex>re passage ore <term ref="gloss:derreinement-1"
+                    >derreinem<ex>en</ex>t</term> a la meer vous enuoiasmes q<ex>ue</ex> vous ne
+                  <term ref="gloss:deussiez-1">deussiez</term> paier a n<ex>ost</ex>re b<ex>ie</ex>n
+                ame <rs ref="http://ereed.library.utoronto.ca/eats/entity/30452/"
+                  type="Person_Commoner">Iohan Tyas</rs> nulles fees voullons et vous mandons
+                  q<ex>ue</ex> vous fac<ex>i</ex>es paier au dit Iohan ou a son c<ex>er</ex>tain
+                  atto<ex>ur</ex>ne les fees auantditz doresenauant<ex>es</ex> ensemblement
+                  ovesq<ex>ue</ex> les arrerages si nulles ly soient a derrier Et cestes noz
+                  l<ex>ett</ex>res &amp;c Don<ex>ne</ex> etc. a Wentbrigg<ex>es</ex> le xxj
+                  io<ex>ur</ex> de Sept<ex>embre</ex></ab>
 
               <gap reason="omitted"/>
             </div>
@@ -13559,7 +13563,8 @@ table. The (blank) above is the second cell of that row -->the
                   type="Person_Commoner">Adam Pope</rs> p<ex>ur</ex> un garson <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/21804/" type="Entertainer_Type"
                   >ffauconer</rs> le quelle nous ly auons done de nostre doun xxxv s. ij d. <gap
-                  reason="omitted"/>don<ex>ne</ex> a Sauvoye le xxvj jour de Ianver lan xlix.</ab> <!-- kc: is the boy falconer patronized by J of Gaunt? -->
+                  reason="omitted"/>don<ex>ne</ex> a Sauvoye le xxvj jour de Ianver lan xlix.</ab>
+              <!-- kc: is the boy falconer patronized by J of Gaunt? -->
 
               <gap reason="omitted"/>
             </div>
@@ -13574,7 +13579,8 @@ table. The (blank) above is the second cell of that row -->the
                   vo<ex>us</ex> mandons q<ex>ue</ex> des issues de v<ex>ost</ex>re Receit paiez et
                   deliver<ex>ez</ex> les somes quensuont <gap reason="omitted"/> It<ex>em</ex> a <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/30587/" type="Person_Commoner"
-                  >Henry</rs>   <!-- kc: a bunch of patronized performers; need to re-check tagging -->
+                  >Henry</rs>
+                <!-- kc: a bunch of patronized performers; need to re-check tagging -->
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/30501/" type="Person_Commoner"
                   >Piper</rs> en plaine paiement de sa bille ensealle de meisme le seal v s. viij d.
                   It<ex>em</ex> a <rs ref="http://ereed.library.utoronto.ca/eats/entity/30501/"
@@ -13592,13 +13598,16 @@ table. The (blank) above is the second cell of that row -->the
                 issues de v<ex>ost</ex>re receite paiez a <gap reason="omitted"/>
                 <pb/>
                 <gap reason="omitted"/> It<ex>em</ex> as diu<ex>er</ex>s<ex>es</ex>
-                <rs ref="http://ereed.library.utoronto.ca/eats/entity/32508/" type="Collective_Troupe">mi<ex>ni</ex>strall<ex>es</ex> de n<ex>ost</ex>re
-                  t<ex>re</ex>sch<ex>er</ex> cosyn le Count de fflandr<ex>es</ex></rs> de n<ex>ost</ex>re doun le io<ex>ur</ex> de
-                Chaundelure xvj li. xiij s. iiij d<gap reason="omitted"/>. It<ex>em</ex> as
-                  diu<ex>er</ex>ses heroudes <rs ref="http://ereed.library.utoronto.ca/eats/entity/32552/" type="Collective_Troupe">mi<ex>ni</ex>strall<ex>es</ex> officers n<ex>ostr</ex>e
-                  tr<ex>es</ex>redoute s<ex>eigneur</ex> et piere le Roi</rs> a Eltham &amp; autres Esquiers et vadlets de diu<ex>er</ex>ses
-                  s<ex>eigneur</ex>s et dames apportants a nous novell<ex>es</ex> douns de
-                  n<ex>ost</ex>re doun lxv li.</ab>
+                <rs ref="http://ereed.library.utoronto.ca/eats/entity/32508/"
+                  type="Collective_Troupe">mi<ex>ni</ex>strall<ex>es</ex> de n<ex>ost</ex>re
+                    t<ex>re</ex>sch<ex>er</ex> cosyn le Count de fflandr<ex>es</ex></rs> de
+                  n<ex>ost</ex>re doun le io<ex>ur</ex> de Chaundelure xvj li. xiij s. iiij d<gap
+                  reason="omitted"/>. It<ex>em</ex> as diu<ex>er</ex>ses heroudes <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/32552/" type="Collective_Troupe"
+                    >mi<ex>ni</ex>strall<ex>es</ex> officers n<ex>ostr</ex>e tr<ex>es</ex>redoute
+                    s<ex>eigneur</ex> et piere le Roi</rs> a Eltham &amp; autres Esquiers et vadlets
+                de diu<ex>er</ex>ses s<ex>eigneur</ex>s et dames apportants a nous novell<ex>es</ex>
+                douns de n<ex>ost</ex>re doun lxv li.</ab>
 
               <gap reason="omitted"/>
             </div>
@@ -13612,10 +13621,11 @@ table. The (blank) above is the second cell of that row -->the
                 Iohan de Yerdeburgh clerc de n<ex>ost</ex>re g<ex>ra</ex>nt Garderobe saluz. Nous
                 vuillons et vo<ex>us</ex> maundons q<ex>ue</ex> des issues de v<ex>ost</ex>re Receit
                 paiez et deliver<ex>ez</ex>
-                <gap reason="omitted"/> item a Trumpet <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type">minustralle</rs> en plein paiement de sa bille de
-                ses gages deinz court du temps le dit sire Iohan x s. viij d<gap reason="omitted"/>.
-                  Don<ex>ne</ex> &amp;c a la Sauuoie le xxvlj io<ex>ur</ex> de ffeu<ex>er</ex>er lan
-                xlix.</ab>
+                <gap reason="omitted"/> item a Trumpet <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type"
+                  >minustralle</rs> en plein paiement de sa bille de ses gages deinz court du temps
+                le dit sire Iohan x s. viij d<gap reason="omitted"/>. Don<ex>ne</ex> &amp;c a la
+                Sauuoie le xxvlj io<ex>ur</ex> de ffeu<ex>er</ex>er lan xlix.</ab>
             </div>
           </div>
           <div type="translation">
@@ -13761,11 +13771,11 @@ table. The (blank) above is the second cell of that row -->the
                   v<ex>ost</ex>re Receite leur feez &amp; gages a eux duz &amp; acustumez &amp; en
                   man<ex>er</ex>e come vo<ex>uz</ex> solastes en temps passez. Noz autres
                   l<ex>ett</ex>res a vo<ex>uz</ex> nagaires enuoiees au contraire <term
-                  ref="gloss:nientcontresfecantes-1">nient contreefieantes</term>.
-                Receiuant deu<ex>er</ex>s vo<ex>uz</ex> l<ex>ett</ex>res dacquitances desouz les
-                sealx des ditz Rollekyn Petrekyn Henri &amp; Hankyn tesmoignantes les paiementz
-                queux vo<ex>uz</ex> le<ex>ur</ex> ensi ferrez p<ex>ar</ex> queles l<ex>ett</ex>res
-                &amp; p<ex>ar</ex> cestes nous volons q<ex>ue</ex> vous eueiez due allouance en
+                  ref="gloss:nientcontresfecantes-1">nient contreefieantes</term>. Receiuant
+                  deu<ex>er</ex>s vo<ex>uz</ex> l<ex>ett</ex>res dacquitances desouz les sealx des
+                ditz Rollekyn Petrekyn Henri &amp; Hankyn tesmoignantes les paiementz queux
+                  vo<ex>uz</ex> le<ex>ur</ex> ensi ferrez p<ex>ar</ex> queles l<ex>ett</ex>res &amp;
+                  p<ex>ar</ex> cestes nous volons q<ex>ue</ex> vous eueiez due allouance en
                   v<ex>ost</ex>re aconte Et outre ce vo<ex>uz</ex> mandons q<ex>ue</ex> touz les
                 deniers remenantz en v<ex>ost</ex>re main de v<ex>ost</ex>re Recette portez ou
                 enuoiez a no<ex>uz</ex> a n<ex>ost</ex>re Chastel de kenilleworth p<ex>ur</ex> y
@@ -13855,14 +13865,22 @@ table. The (blank) above is the second cell of that row -->the
                   ref="http://ereed.library.utoronto.ca/eats/entity/31278/" type="Person_Commoner"
                   >hankyn</rs>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/" type="Entertainer_Type"
-                  >Piper</rs> &amp; sept ses compaigno<ex>n</ex>s noz ministralx <!-- kc: SB: need to know how to names these minstrels of John of Gaunt --> &amp; quatre <rs ref="http://ereed.library.utoronto.ca/eats/entity/32578/" type="Collective_Troupe">ministralx n<ex>ost</ex>re tresch<ex>er</ex> ffrere
-                le Conte de Cant<ex>ebrug</ex></rs><!-- kc: check definition of patronage. Are these 4 minstrels patronized by the earl of Cambridge? --> a chescun de eux de
-                  n<ex>ost</ex>re doun meisme le io<ex>ur</ex> a Kenilleworth vj s. viij d. quatre
-                livres Et as ditz hanekyn et vnsze ministralx de doun n<ex>ost</ex>re
-                  tresch<ex>er</ex> Cousin le Conte de Notyngham <!-- kc: likewise, are these eleven minstrels patronzied by anyone? Nottingham? Gaunt? -->a Kenilleworth meisme le io<ex>ur</ex> vynt soldz Et a
-                troys ministralx mons<ex>ire</ex>
-                Baudewyn ffreuille <!-- kc: what name do I give the ministrels of my lord Baldwin Freville? -->de nostre doun meisme le iour vynt soldz..Et a vn
-                estrange <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type">ministrall</rs> esteant sanz compaignon de nostre doun meisme le io<ex>ur</ex> a
+                  >Piper</rs> &amp; sept ses compaigno<ex>n</ex>s noz ministralx
+                <!-- kc: SB: need to know how to names these minstrels of John of Gaunt --> &amp;
+                quatre <rs ref="http://ereed.library.utoronto.ca/eats/entity/32578/"
+                  type="Collective_Troupe">ministralx n<ex>ost</ex>re tresch<ex>er</ex> ffrere le
+                  Conte de
+                Cant<ex>ebrug</ex></rs><!-- kc: check definition of patronage. Are these 4 minstrels patronized by the earl of Cambridge? -->
+                a chescun de eux de n<ex>ost</ex>re doun meisme le io<ex>ur</ex> a Kenilleworth vj
+                s. viij d. quatre livres Et as ditz hanekyn et vnsze ministralx de doun
+                  n<ex>ost</ex>re tresch<ex>er</ex> Cousin le Conte de Notyngham
+                <!-- kc: likewise, are these eleven minstrels patronzied by anyone? Nottingham? Gaunt? -->a
+                Kenilleworth meisme le io<ex>ur</ex> vynt soldz Et a troys ministralx
+                  mons<ex>ire</ex> Baudewyn ffreuille
+                <!-- kc: what name do I give the ministrels of my lord Baldwin Freville? -->de
+                nostre doun meisme le iour vynt soldz..Et a vn estrange <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type"
+                  >ministrall</rs> esteant sanz compaignon de nostre doun meisme le io<ex>ur</ex> a
                 Kenillworth troys soldz &amp; quatre deniers <gap reason="omitted"/> dount la
                   som<ex>m</ex>e totaile des p<ex>ar</ex>celles susdites amontt a cynk Centz quatre
                 vyntz &amp; dousze livres unsze soldz &amp; sept deniers; de quele som<ex>m</ex>e
@@ -13887,8 +13905,8 @@ table. The (blank) above is the second cell of that row -->the
                   >Pur Iohan Tyes &amp; piers Cook Trumpours.</note> q<ex>ue</ex> des issues de
                   v<ex>ost</ex>re receite facez paier a noz bienamez valletz Iohn Tyes &amp; Piers
                 Cook noz Trumpo<ex>ur</ex>s le<ex>ur</ex>s annueltees queux le<ex>ur</ex>s sont
-                  <term ref="gloss:aderer-1">aderer</term> del fest de seint Michel darren
-                passez Noz autres l<ex>ett</ex>res au contraire avons eux ces heures enuoiees <term
+                  <term ref="gloss:aderer-1">aderer</term> del fest de seint Michel darren passez
+                Noz autres l<ex>ett</ex>res au contraire avons eux ces heures enuoiees <term
                   ref="gloss:nientcontresfecantes-1">nientcontresfecantes</term> Receuant
                   deu<ex>er</ex>s vous l<ex>ett</ex>res daquitance seu<ex>er</ex>ales desouz
                   le<ex>ur</ex>s sealx suffisantes en celle partie Et cestes noz l<ex>ett</ex>res
@@ -13941,13 +13959,14 @@ table. The (blank) above is the second cell of that row -->the
                   n<ex>ost</ex>re g<ex>r</ex>ande Garderobe saluz. Nous vous mandons q<ex>ue</ex>
                 des issues de v<ex>ost</ex>re Receite facez paier as p<ex>er</ex>sones
                   souzno<ex>m</ex>mees les somes &amp; deniers souzescrites.. Cestassauoir<gap
-                  reason="omitted"/> Et as ministralx mons<ex>ire</ex>
-                Rob<ex>er</ex>t Beaumaner <!-- kc: what name to give for the ministrels of my lord Robert Beaumaner of Brittany? -->de Bretaigne fesantz le<ex>ur</ex> ministralcies
-                devant no<ex>us</ex> a Sauuioye le xx io<ex>ur</ex> de ffeuer darrein de
-                  n<ex>ost</ex>re doun meisme le iour trente &amp; trois &amp; quatre deniers<gap
-                  reason="omitted"/>. <note type="marginal" place="margin_right">Pur la grande
-                  Gardrobe</note> Et a <rs ref="http://ereed.library.utoronto.ca/eats/entity/31866/"
-                  type="Person_Commoner">henri</rs>
+                  reason="omitted"/> Et as ministralx mons<ex>ire</ex> Rob<ex>er</ex>t Beaumaner
+                <!-- kc: what name to give for the ministrels of my lord Robert Beaumaner of Brittany? -->de
+                Bretaigne fesantz le<ex>ur</ex> ministralcies devant no<ex>us</ex> a Sauuioye le xx
+                  io<ex>ur</ex> de ffeuer darrein de n<ex>ost</ex>re doun meisme le iour trente
+                &amp; trois &amp; quatre deniers<gap reason="omitted"/>. <note type="marginal"
+                  place="margin_right">Pur la grande Gardrobe</note> Et a <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/31866/" type="Person_Commoner"
+                  >henri</rs>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/31896/"
                   type="Collective_Occupation">Goldesmyth</rs> p<ex>ur</ex> un anel dor
                   ouesq<ex>ue</ex> vn Rubie de lui achate &amp; p<ex>ar</ex> nous donez a
@@ -14102,7 +14121,9 @@ table. The (blank) above is the second cell of that row -->the
                   >ministralx</rs> et a <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/32007/" type="Person_Commoner"
                   >Iohan Gybeson</rs> le vij<hi rend="superscript">me</hi> de n<ex>ost</ex>re doun
-                meisme le io<ex>ur</ex> sept marcs Et a vn p<ex>ur</ex>suant darmes le <rs ref="http://ereed.library.utoronto.ca/eats/entity/32155/" type="Collective_Troupe">Conte de Douglas et vn autre ministral le soen</rs> le seconde io<ex>ur</ex> de
+                meisme le io<ex>ur</ex> sept marcs Et a vn p<ex>ur</ex>suant darmes le <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/32155/" type="Collective_Troupe"
+                  >Conte de Douglas et vn autre ministral le soen</rs> le seconde io<ex>ur</ex> de
                   Ian<ex>uiere</ex> a leycestre quarrante soldz Et a vn Esquier n<ex>ost</ex>re
                 tresame ffrer le <rs ref="http://ereed.library.utoronto.ca/eats/entity/31436/"
                   type="Person_Royalty">Conte de Cantebrug</rs> presentant a no<ex>us</ex> le
@@ -14126,7 +14147,8 @@ table. The (blank) above is the second cell of that row -->the
                   ref="http://ereed.library.utoronto.ca/eats/entity/32283/" type="Person_Royalty"
                   >Conte de derby</rs> quarrante soldz Et p<ex>ur</ex> atantz den<ex>iers</ex>
                   p<ex>ur</ex> le<ex>ur</ex> offrendre a la messe tresze soldz et quatre deniers Et
-                a dys <rs ref="http://ereed.library.utoronto.ca/eats/entity/32482/" type="Collective_Troupe">ministralx n<ex>ost</ex>re s<ex>eigneur</ex> le Roy</rs>
+                a dys <rs ref="http://ereed.library.utoronto.ca/eats/entity/32482/"
+                  type="Collective_Troupe">ministralx n<ex>ost</ex>re s<ex>eigneur</ex> le Roy</rs>
                 esteantz illeoqes meisme le io<ex>ur</ex> de n<ex>ost</ex>re doun dys marcs Et a
                 quatre ministralx n<ex>ost</ex>re tresame ffrer de Cant<ex>abrug</ex> esteantz
                 illeoque meisme le io<ex>ur</ex> deux marcs Et facez paier as diu<ex>er</ex>ses
@@ -14146,22 +14168,25 @@ table. The (blank) above is the second cell of that row -->the
 
               <gap reason="omitted"/>
 
-              <ab>Iohan &amp;c A n<ex>ost</ex>re tresch<ex>er</ex> et bien ame Clerc sire William de
-                Chesulden n<ex>ost</ex>re Receiuo<ex>ur</ex> de Leycestre et aillio<ex>ur</ex>s
-                saluz Porce q<ex>u</ex>e nous auons <term ref="gloss:ottroiez-1"
-                  >ottroiez</term> a n<ex>ost</ex>re bien ame Iohan Clyff de Couentre cent soldz
-                  p<ex>ar</ex> an p<ex>ur</ex> son fee apprendre annuelment des issues de
-                  n<ex>ost</ex>re seign<ex>ur</ex>ie de leycestre p<ex>ar</ex> les mains de
-                  n<ex>ost</ex>re Receiuo<ex>ur</ex> illeoqes q<ex>u</ex>i p<ex>ur</ex> le temps
-                serra as termes<note type="marginal" place="margin_left">Pur Iohan Clyff</note> de
-                seint michel &amp; de Pasq<ex>ue</ex> p<ex>ar</ex> oueles porcions vous mandons
-                  q<ex>ue</ex> au dit Iohan facez paier les auantdites Cent soldz annueles de terme
-                en terme &amp; dan en an en munies come vous facez as autres noz ministralx de son
-                estat et condicion Receiuant deu<ex>er</ex>s vo<ex>us</ex> l<ex>ett</ex>res
-                daquitances desouz le seal du dit Iohan tesmoignantes les paiementz queux vous lui
-                ensi ferrez p<ex>ar</ex> queles &amp; p<ex>ar</ex> cestes nous voulons q<ex>ue</ex>
-                vous euez due allouance en v<ex>ot</ex>re aconte don<ex>ne</ex> &amp;c a leycestre
-                le primer iour daug<ex>us</ex>te lan &amp;c quart</ab>
+              <ab>Iohan &amp;c A n<ex>ost</ex>re tresch<ex>er</ex> et bien ame Clerc sire <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/32685/" type="Person_Gentry"
+                  >William de Chesulden</rs> n<ex>ost</ex>re Receiuo<ex>ur</ex> de Leycestre et
+                  aillio<ex>ur</ex>s saluz Porce q<ex>u</ex>e nous auons <term
+                  ref="gloss:ottroiez-1">ottroiez</term> a n<ex>ost</ex>re bien ame <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/32743/" type="Person_Commoner"
+                  >Iohan Clyff</rs> de Couentre cent soldz p<ex>ar</ex> an p<ex>ur</ex> son fee
+                apprendre annuelment des issues de n<ex>ost</ex>re seign<ex>ur</ex>ie de leycestre
+                  p<ex>ar</ex> les mains de n<ex>ost</ex>re Receiuo<ex>ur</ex> illeoqes q<ex>u</ex>i
+                  p<ex>ur</ex> le temps serra as termes<note type="marginal" place="margin_left">Pur
+                  Iohan Clyff</note> de seint michel &amp; de Pasq<ex>ue</ex> p<ex>ar</ex> oueles
+                porcions vous mandons q<ex>ue</ex> au dit Iohan facez paier les auantdites Cent
+                soldz annueles de terme en terme &amp; dan en an en munies come vous facez as autres
+                noz ministralx de son estat et condicion Receiuant deu<ex>er</ex>s vo<ex>us</ex>
+                  l<ex>ett</ex>res daquitances desouz le seal du dit Iohan tesmoignantes les
+                paiementz queux vous lui ensi ferrez p<ex>ar</ex> queles &amp; p<ex>ar</ex> cestes
+                nous voulons q<ex>ue</ex> vous euez due allouance en v<ex>ot</ex>re aconte
+                  don<ex>ne</ex> &amp;c a leycestre le primer iour daug<ex>us</ex>te lan &amp;c
+                quart</ab>
 
               <gap reason="omitted"/>
             </div>
@@ -14171,17 +14196,18 @@ table. The (blank) above is the second cell of that row -->the
 
               <gap reason="omitted"/>
 
-              <ab>Iohan &amp;c a n<ex>ost</ex>re tresch<ex>er</ex> et bien ame clerc sire Iohan de
-                  Norff<ex>olk</ex> Tresorer de n<ex>ost</ex>re houstel saluz.. Nous vous mandons
-                  q<ex>ue</ex>
+              <ab>Iohan &amp;c a n<ex>ost</ex>re tresch<ex>er</ex> et bien ame clerc sire <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/32793/" type="Person_Gentry"
+                  >Iohan de Norff<ex>olk</ex></rs> Tresorer de n<ex>ost</ex>re houstel saluz.. Nous
+                vous mandons q<ex>ue</ex>
                 <gap reason="omitted"/> Et auxynt facez liu<ex>er</ex>er a n<ex>ost</ex>re bien ame
                 ministralle Iohan Cliff de Couentre un eschucsion dargent ouesq<ex>ue</ex> vn coler
                   p<ex>ur</ex> vn ministral &amp; un peir de Nakers ouesq<ex>ue</ex> deux colers et
                 vn ceynt<ex>ur</ex>e et deux stykkes dargent faitz p<ex>ur</ex> meisme les Nakers.
                 Et volons q<ex>ue</ex> p<ex>ar</ex> cestes vous en eueiez due allouance en
-                  v<ex>ost</ex>re aconte des toutes choses <term
-                  ref="gloss:desusescrites-1">desusescrites</term>. Don<ex>ne</ex> &amp;c
-                a ffulham le quart io<ex>ur</ex> de Decembre lan &amp;c quart</ab>
+                  v<ex>ost</ex>re aconte des toutes choses <term ref="gloss:desusescrites-1"
+                  >desusescrites</term>. Don<ex>ne</ex> &amp;c a ffulham le quart io<ex>ur</ex> de
+                Decembre lan &amp;c quart</ab>
 
               <gap reason="omitted"/>
             </div>
@@ -14268,33 +14294,41 @@ table. The (blank) above is the second cell of that row -->the
               <head>f 60v <supplied>(6 March)</supplied></head>
               <pb n="60v" type="folio"/>
 
-              <ab>Iohan &amp;c A n<ex>ost</ex>re t<ex>re</ex>same clerc sire William Oke Clerc de
-                  n<ex>ost</ex>re g<ex>ra</ex>nde Garderobe saluz<gap reason="omitted"/> Et a
-                William de Lincoln sadeler de londres p<ex>ur</ex> vne seel de veluet enbroudez de
-                lyons p<ex>ar</ex> nous donez a n<ex>ost</ex>re fille de Pembrok encontre le mariage
-                la Roigne vynt marcs Et a mons<ex>ire</ex> Rob<ex>er</ex>t lande p<ex>ur</ex> vn
+              <ab><rs ref="http://ereed.library.utoronto.ca/eats/entity/13153/"
+                  type="Person_Royalty">Iohan</rs> &amp;c A n<ex>ost</ex>re t<ex>re</ex>same clerc
+                sire <rs ref="http://ereed.library.utoronto.ca/eats/entity/31374/"
+                  type="Person_Gentry">William Oke</rs> Clerc de n<ex>ost</ex>re g<ex>ra</ex>nde
+                Garderobe saluz<gap reason="omitted"/> Et a <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/32851/" type="Person_Commoner"
+                  >William de Lincoln</rs>
+                <rs ref="http://ereed.library.utoronto.ca/eats/entity/32881/"
+                  type="Collective_Occupation">sadeler</rs> de londres p<ex>ur</ex> vne seel de
+                veluet enbroudez de lyons p<ex>ar</ex> nous donez a n<ex>ost</ex>re <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/31930/" type="Person_Nobility"
+                  >fille de Pembrok</rs> encontre le mariage <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/32929/" type="Person_Royalty">la
+                  Roigne</rs> vynt marcs Et a mons<ex>ire</ex> Rob<ex>er</ex>t lande p<ex>ur</ex> vn
                 eawere oue vn petite triper<note type="foot">triper: <hi rend="italic">for</hi>
                   trivet <hi rend="italics">(?)</hi></note> supportant leawer dargent et <term
-                  ref="gloss:surorez-1">s<ex>ur</ex>orez</term> p<ex>ar</ex> nous
-                  don<ex>ez</ex> au Roigne le io<ex>ur</ex> de son mariage ouesq<ex>ue</ex> vn autre
-                  gr<ex>an</ex>t triper<note type="foot">triper: <hi rend="italic">for</hi> trivet
-                    <hi rend="italics">(?)</hi></note> achate de mons<ex>ire</ex> Iohan Philippot
-                dys livres &amp; as diu<ex>er</ex>ses heraudes esteantz a Westemonstre le
-                  io<ex>ur</ex> del mariage susdit de n<ex>ost</ex>re doun vynt liures Et as
-                  diu<ex>er</ex>ses ministralles esteantes illeoqes<note type="marginal"
-                  place="margin_left">touchant la g<ex>r</ex>ande Gardrobe <!-- brace -->Oke</note>
-                meisme le io<ex>ur</ex> de n<ex>ost</ex>re doun vynt marcs Et as diu<ex>er</ex>ses
-                heraudes esteantz a smethefeld le io<ex>ur</ex> des ioustes illeoqes de
-                  n<ex>ost</ex>re doun vynt marcs. Et as diu<ex>er</ex>ses ministralx esteantz en
-                Smethefeld meisme le io<ex>ur</ex> de n<ex>ost</ex>re doun dys liures <gap
-                  reason="omitted"/> Et a vn ministrall le Roy descoce fesant son ministralcie en
-                  n<ex>ost</ex>re p<ex>re</ex>sence a londres de n<ex>ost</ex>re doun le vij
-                  io<ex>ur</ex> de ffeu<ex>er</ex>er quarante soldz <gap reason="omitted"/> Et as
-                  diu<ex>er</ex>ses ministrall<ex>er</ex> le Roy de Rome esteantz oue no<ex>us</ex>
-                a londres le mois de ffeu<ex>er</ex>er de n<ex>ost</ex>re doun vynt liures Et a
-                troys ministralles le Roy descoce esteantz oue no<ex>us</ex> meisme le temps de
-                  n<ex>ost</ex>re doun sessante soldz <gap reason="omitted"/> don<ex>ne</ex> a
-                Westmonster le vj io<ex>ur</ex> de marcz lan &amp;c quart.</ab>
+                  ref="gloss:surorez-1">s<ex>ur</ex>orez</term> p<ex>ar</ex> nous don<ex>ez</ex> au
+                Roigne le io<ex>ur</ex> de son mariage ouesq<ex>ue</ex> vn autre gr<ex>an</ex>t
+                  triper<note type="foot">triper: <hi rend="italic">for</hi> trivet <hi
+                    rend="italics">(?)</hi></note> achate de mons<ex>ire</ex> Iohan Philippot dys
+                livres &amp; as diu<ex>er</ex>ses heraudes esteantz a Westemonstre le io<ex>ur</ex>
+                del mariage susdit de n<ex>ost</ex>re doun vynt liures Et as diu<ex>er</ex>ses
+                ministralles esteantes illeoqes<note type="marginal" place="margin_left">touchant la
+                    g<ex>r</ex>ande Gardrobe <!-- brace -->Oke</note> meisme le io<ex>ur</ex> de
+                  n<ex>ost</ex>re doun vynt marcs Et as diu<ex>er</ex>ses heraudes esteantz a
+                smethefeld le io<ex>ur</ex> des ioustes illeoqes de n<ex>ost</ex>re doun vynt marcs.
+                Et as diu<ex>er</ex>ses ministralx esteantz en Smethefeld meisme le io<ex>ur</ex> de
+                  n<ex>ost</ex>re doun dys liures <gap reason="omitted"/> Et a vn ministrall le Roy
+                descoce fesant son ministralcie en n<ex>ost</ex>re p<ex>re</ex>sence a londres de
+                  n<ex>ost</ex>re doun le vij io<ex>ur</ex> de ffeu<ex>er</ex>er quarante soldz <gap
+                  reason="omitted"/> Et as diu<ex>er</ex>ses ministrall<ex>er</ex> le Roy de Rome
+                esteantz oue no<ex>us</ex> a londres le mois de ffeu<ex>er</ex>er de n<ex>ost</ex>re
+                doun vynt liures Et a troys ministralles le Roy descoce esteantz oue no<ex>us</ex>
+                meisme le temps de n<ex>ost</ex>re doun sessante soldz <gap reason="omitted"/>
+                  don<ex>ne</ex> a Westmonster le vj io<ex>ur</ex> de marcz lan &amp;c quart.</ab>
 
               <gap reason="omitted"/>
             </div>
@@ -14428,33 +14462,31 @@ table. The (blank) above is the second cell of that row -->the
               <ab>Iohan &amp;c A n<ex>ost</ex>re tresch<ex>er</ex> &amp; bien ame Clerc Sire William
                 Oke Clerc de n<ex>ost</ex>re gr<ex>a</ex>nde Garderobe saluz Nous vo<ex>u</ex>s
                 mandons q<ex>ue</ex> des issues de v<ex>ost</ex>re Receite en n<ex>ost</ex>re
-                chambre facez paier as p<ex>er</ex>sones <term
-                  ref="gloss:desouzescrites-1">desouzescrites</term> les som<ex>m</ex>es
-                souznomees Cestasseuoir <gap reason="omitted"/> Et as diu<ex>er</ex>ses Heroudes a
-                Wyndesore le io<ex>ur</ex> de seint George de n<ex>ost</ex>re doun dys liures Et as
-                  diu<ex>er</ex>ses<note type="marginal" place="margin_left">Vne l<ex>ett</ex>re
-                  touchant la g<ex>ra</ex>nt Gardrobe <!-- MS
-brace to: --> Oke</note> ministrals
-                illeoqes de n<ex>ost</ex>re doun x marcs. Et a vn vallett mons<ex>ire</ex> Poto
-                  Ch<ex>euale</ex>r dalmaigne p<ex>re</ex>sentant a no<ex>u</ex>s vn <term
-                  ref="gloss:destrer-1">destrer</term> dep<ex>ar</ex> le dit
-                  mons<ex>ire</ex> Poto de n<ex>ost</ex>re doun xiij s. iiij d. Et as
-                diu<ex>er</ex>ses Heraudes esteantz ouesque no<ex>u</ex>s a Hertford le
+                chambre facez paier as p<ex>er</ex>sones <term ref="gloss:desouzescrites-1"
+                  >desouzescrites</term> les som<ex>m</ex>es souznomees Cestasseuoir <gap
+                  reason="omitted"/> Et as diu<ex>er</ex>ses Heroudes a Wyndesore le io<ex>ur</ex>
+                de seint George de n<ex>ost</ex>re doun dys liures Et as diu<ex>er</ex>ses<note
+                  type="marginal" place="margin_left">Vne l<ex>ett</ex>re touchant la g<ex>ra</ex>nt
+                  Gardrobe <!-- MS
+brace to: --> Oke</note> ministrals illeoqes de n<ex>ost</ex>re
+                doun x marcs. Et a vn vallett mons<ex>ire</ex> Poto Ch<ex>euale</ex>r dalmaigne
+                  p<ex>re</ex>sentant a no<ex>u</ex>s vn <term ref="gloss:destrer-1">destrer</term>
+                  dep<ex>ar</ex> le dit mons<ex>ire</ex> Poto de n<ex>ost</ex>re doun xiij s. iiij
+                d. Et as diu<ex>er</ex>ses Heraudes esteantz ouesque no<ex>u</ex>s a Hertford le
                   io<ex>ur</ex> de may le temps de noz ioustes illeoqes de n<ex>ost</ex>re doun x
                 marcs Et a diu<ex>er</ex>ses ministrals illeoqes de n<ex>ost</ex>re doun x. marcs.
-                Et facez distribucion as <term ref="gloss:pouer-1">pouers</term> gentz
-                  <term ref="gloss:datantz-1">datantz</term> deniers de vj nobles pliez
-                  s<ex>ur</ex> no<ex>u</ex>z et n<ex>ost</ex>re <term ref="gloss:destrer-1"
-                  >destrere</term> as Ioustes de smethefeld Wyndesore et Hertford quarrante soldz
-                  <gap reason="omitted"/> Et facez distribucion as pourez gentz en value de deux
-                nobles pliez s<ex>ur</ex> no<ex>us</ex> &amp; n<ex>ost</ex>re <term
-                  ref="gloss:destrer-1">destrer</term> as Iustices<note type="foot"
-                  >Iustices: <hi rend="italic">for</hi> Ioustes</note> de Chelmesford xiij s. iiij
-                d. Et as diu<ex>er</ex>ses Heraudes esteantes a meismes les Ioustes de
-                n<ex>ost</ex>re doun. x marcs Et as diu<ex>er</ex>ses ministrall<ex>es</ex> esteantz
-                  illeoq<ex>es</ex> de n<ex>ost</ex>re doun x. marcs<gap reason="omitted"/>.
-                  Don<ex>ne</ex> &amp;c a n<ex>ost</ex>re Chastel de <space/> le vj iour de may lan
-                &amp;c sisme</ab>
+                Et facez distribucion as <term ref="gloss:pouer-1">pouers</term> gentz <term
+                  ref="gloss:datantz-1">datantz</term> deniers de vj nobles pliez s<ex>ur</ex>
+                  no<ex>u</ex>z et n<ex>ost</ex>re <term ref="gloss:destrer-1">destrere</term> as
+                Ioustes de smethefeld Wyndesore et Hertford quarrante soldz <gap reason="omitted"/>
+                Et facez distribucion as pourez gentz en value de deux nobles pliez s<ex>ur</ex>
+                  no<ex>us</ex> &amp; n<ex>ost</ex>re <term ref="gloss:destrer-1">destrer</term> as
+                  Iustices<note type="foot">Iustices: <hi rend="italic">for</hi> Ioustes</note> de
+                Chelmesford xiij s. iiij d. Et as diu<ex>er</ex>ses Heraudes esteantes a meismes les
+                Ioustes de n<ex>ost</ex>re doun. x marcs Et as diu<ex>er</ex>ses
+                  ministrall<ex>es</ex> esteantz illeoq<ex>es</ex> de n<ex>ost</ex>re doun x.
+                  marcs<gap reason="omitted"/>. Don<ex>ne</ex> &amp;c a n<ex>ost</ex>re Chastel de
+                <space/> le vj iour de may lan &amp;c sisme</ab>
 
               <gap reason="omitted"/>
             </div>
