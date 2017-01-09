@@ -63,13 +63,13 @@
     </fileDesc>
     <encodingDesc>
       <listPrefixDef>
-        <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_]+)"
+        <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)"
           replacementPattern="../code_list.xml#$1">
           <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the
             code_list.xml file. For example, <code>taxon:V117</code> dereferences to <code>code_list.xml#V117</code>.</p>
         </prefixDef>
         <!-- or something like below for glossary -->
-        <prefixDef ident="gloss" matchPattern="([A-Za-z0-9_]+)"
+        <prefixDef ident="gloss" matchPattern="([A-Za-z0-9_-]+)"
           replacementPattern="../glossary.xml#$1">
           <p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the
             glossary.xml file.</p>
@@ -1123,7 +1123,7 @@
                   p<ex>otes</ex>t dari cib<ex>us</ex> quia paup<ex>er</ex>es sunt non q<ex>uia</ex>
                 <term ref="gloss:histrio-1">yst<ex>ri</ex>ones</term> &amp;
                   eor<ex>um</ex>
-                <term ref="gloss:ludus">ludi</term> non videant<ex>ur</ex> u<ex>e</ex>l
+                <term ref="gloss:ludus-1">ludi</term> non videant<ex>ur</ex> u<ex>e</ex>l
                   audiantur,u<ex>e</ex>l p<ex>er</ex>mittant<ex>ur</ex> f<ex>ier</ex>i coram <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/10950/"
                   type="Collective_ClergyAndChurchwardens">abb<ex>at</ex>e</rs> u<ex>e</ex>l <rs
@@ -3063,7 +3063,7 @@ encompassing the names -->
               <gap reason="omitted"/>
 
               <ab><gap reason="omitted"/>It<ex>em</ex> dat<ex>is</ex>
-                <term ref="gloss:episcopus_puerorum">Ep<ex>iscop</ex>o
+                <term ref="gloss:episcopus_puerorum-1">Ep<ex>iscop</ex>o
                     pu<ex>er</ex>or<ex>um</ex></term> ad fest<ex>um</ex>
                   s<ex>an</ex>c<ex>t</ex>or<ex>um</ex> Innocenct<ex>is</ex> ex co<ex>mmu</ex>nis v
                   s<gap reason="omitted"/>.</ab>
@@ -3137,7 +3137,7 @@ encompassing the names -->
                   >ministr'</rs> p<ex>ro</ex> l<damage><gap unit="chars" extent="3"/></damage>
                   s<ex>uo</ex> ad dict' <damage><gap unit="chars" extent="3"/></damage> xij d. Et in
                     <damage><gap unit="chars" extent="1"/></damage>
-                <term ref="gloss:carectata">carect<ex>at</ex>'</term> de Byrches empt' ad
+                <term ref="gloss:carectata-1">carect<ex>at</ex>'</term> de Byrches empt' ad
                   faciend<ex>um</ex>
                 <damage><gap unit="chars" extent="3"/></damage> p<ex>ro</ex> Se<ex>neschal</ex>l'
                 &amp; ball' ad eand<ex>em</ex> vig<damage><gap unit="chars" extent="3"/></damage>
@@ -3275,7 +3275,7 @@ encompassing the names -->
                   diuidant<ex>ur</ex>
                 <del>modo sequen<ex>te</ex></del> int<ex>er</ex> choristas ita q<ex>uod</ex>
                   m<ex>agiste</ex>r choristar<ex>um</ex> si <del>fore contig<ex>er</ex>it</del>
-                  int<ex>er</ex>fu<ex>er</ex>it <term ref="gloss:cantalena"
+                  int<ex>er</ex>fu<ex>er</ex>it <term ref="gloss:cantalena-1"
                   >cantalenis</term> &amp; cantau<ex>er</ex>it recipiet duplu<ex>m</ex>
                   vni<ex>us</ex> choriste</ab>
 
@@ -14443,12 +14443,12 @@ brace to: --> Oke</note> ministrals
                   io<ex>ur</ex> de may le temps de noz ioustes illeoqes de n<ex>ost</ex>re doun x
                 marcs Et a diu<ex>er</ex>ses ministrals illeoqes de n<ex>ost</ex>re doun x. marcs.
                 Et facez distribucion as <term ref="gloss:pouer-1">pouers</term> gentz
-                  <term ref="gloss:datantz">datantz</term> deniers de vj nobles pliez
-                  s<ex>ur</ex> no<ex>u</ex>z et n<ex>ost</ex>re <term ref="glossary-af.#destrer"
+                  <term ref="gloss:datantz-1">datantz</term> deniers de vj nobles pliez
+                  s<ex>ur</ex> no<ex>u</ex>z et n<ex>ost</ex>re <term ref="gloss:destrer-1"
                   >destrere</term> as Ioustes de smethefeld Wyndesore et Hertford quarrante soldz
                   <gap reason="omitted"/> Et facez distribucion as pourez gentz en value de deux
                 nobles pliez s<ex>ur</ex> no<ex>us</ex> &amp; n<ex>ost</ex>re <term
-                  ref="gloss:destrer">destrer</term> as Iustices<note type="foot"
+                  ref="gloss:destrer-1">destrer</term> as Iustices<note type="foot"
                   >Iustices: <hi rend="italic">for</hi> Ioustes</note> de Chelmesford xiij s. iiij
                 d. Et as diu<ex>er</ex>ses Heraudes esteantes a meismes les Ioustes de
                 n<ex>ost</ex>re doun. x marcs Et as diu<ex>er</ex>ses ministrall<ex>es</ex> esteantz
