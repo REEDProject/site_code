@@ -34,12 +34,7 @@
         <xsl:call-template name="display-record-footnotes" />
         <xsl:call-template name="display-record-translation" />
         <xsl:call-template name="display-record-collation-notes" />
-        <li class="accordion-item" data-accordion-item="">
-          <a href="#" class="accordion-title">Glossed Terms</a>
-          <div class="accordion-content" data-tab-content="">
-            <!-- QAZ -->
-          </div>
-        </li>
+        <xsl:call-template name="display-record-glossed-terms" />
         <xsl:call-template name="display-record-endnote" />
         <xsl:call-template name="display-record-doc-desc" />
       </ul>
@@ -90,7 +85,23 @@
         <a href="#" class="accordion-title">Footnotes</a>
         <div class="accordion-content" data-tab-content="">
           <ul class="footnotes">
-            <xsl:apply-templates mode="group" select="$record_text//tei:note[@type='foot']" />
+            <xsl:apply-templates mode="group" select=".//tei:note[@type='foot']" />
+          </ul>
+        </div>
+      </li>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="display-record-glossed-terms">
+    <xsl:if test=".//tei:term[@ref]">
+      <li class="accordion-item" data-accordion-item="">
+        <a href="#" class="accordion-title">Glossed Terms</a>
+        <div class="accordion-content" data-tab-content="">
+          <p>Click a term to see the earliest instance of that term in the records.</p>
+          <ul class="glossed-terms">
+            <!-- QAZ: Terms may be repeated within the same entry;
+                 only one instance should be rendered here. -->
+            <xsl:apply-templates mode="group" select=".//tei:term[@ref]" />
           </ul>
         </div>
       </li>

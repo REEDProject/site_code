@@ -71,6 +71,7 @@
       <map:match id="ereed-records-display-html" pattern="records/">
         <map:aggregate element="aggregation">
           <map:part src="cocoon://_internal/menu/main.xml?url=records/" />
+          <map:part src="../content/xml/tei/glossary.xml" />
           <map:part src="cocoon://_internal/request.xml" />
         </map:aggregate>
         <map:transform src="../stylesheets/tei/assemble-collections.xsl" />
@@ -86,6 +87,7 @@
         <map:aggregate element="aggregation" label="content">
           <map:part element="TEICorpus"
                     src="cocoon://internal/tei/preprocess-record/{1}.xml" />
+          <map:part src="../content/xml/tei/glossary.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=records/{1}/" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/record.xsl" />
@@ -183,6 +185,7 @@
         <map:aggregate element="aggregation" label="content">
           <map:part element="TEICorpus"
                     src="cocoon://internal/tei/preprocess-records/{1}.xml" />
+          <map:part src="../content/xml/tei/glossary.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=collections/{1}/" />
           <map:part src="cocoon://internal/search/records_by_collection.xml?q={1}" />
         </map:aggregate>

@@ -46,6 +46,12 @@
     <xsl:text>...</xsl:text>
   </xsl:template>
 
+  <xsl:template match="tei:gram" mode="group">
+    <i>
+      <xsl:value-of select="." />
+    </i>
+  </xsl:template>
+
   <xsl:template match="tei:front/tei:div/tei:head" />
 
   <xsl:template match="tei:front/tei:div//tei:div/tei:head">
@@ -86,6 +92,10 @@
 
   <xsl:template match="tei:pb" />
 
+  <xsl:template match="tei:ref[not(@target)]">
+    <xsl:apply-templates />
+  </xsl:template>
+
   <xsl:template match="tei:rs[@ref]">
     <a class="tag">
       <xsl:attribute name="href">
@@ -97,8 +107,31 @@
     </a>
   </xsl:template>
 
+  <xsl:template match="tei:sense" mode="group">
+    <b class="link-to-instance">
+      <xsl:value-of select="preceding-sibling::tei:form[1]/tei:orth" />
+    </b>
+    <xsl:text> </xsl:text>
+    <xsl:apply-templates mode="group" select="preceding-sibling::tei:gram[1]" />
+    <xsl:text> </xsl:text>
+    <xsl:apply-templates select="node()" />
+  </xsl:template>
+
   <xsl:template match="tei:space">
     <i>(blank)</i>
+  </xsl:template>
+
+  <xsl:template match="tei:term[@ref]">
+    <span class="term" note="{substring-after(@ref, '#')}">
+      <xsl:apply-templates />
+    </span>
+  </xsl:template>
+
+  <xsl:template match="tei:term[@ref]" mode="group">
+    <xsl:variable name="sense-id" select="substring-after(@ref, '#')" />
+    <li note="{$sense-id}">
+      <xsl:apply-templates mode="group" select="id($sense-id)" />
+    </li>
   </xsl:template>
 
   <xsl:template match="tei:title">
