@@ -352,9 +352,9 @@
                             <sense xml:id="barberously-1">barbarously</sense>
                         </entry>
 
-                        <entry xml:id="basons">
-                            <form><orth><hi rend="bold">basons</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="basons-1">basins</sense>
+                        <entry xml:id="bason">
+                            <form><orth><hi rend="bold">bason</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
+                            <sense xml:id="bason-1">basin</sense>
                         </entry>
 
                         <entry xml:id="bauble">
@@ -387,9 +387,9 @@
                             <sense xml:id="beating-1">bear baiting</sense>
                         </entry>
 
-                        <entry xml:id="beeddes">
-                            <form><orth><hi rend="bold">beeddes</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="beeddes-1">beds</sense>
+                        <entry xml:id="beedde">
+                            <form><orth><hi rend="bold">beedde</hi></orth><gram><hi rend="italics">n</hi></gram></form>
+                            <sense xml:id="beedde-1">bed</sense>
                         </entry>
 
                         <entry xml:id="beshrow">
@@ -432,9 +432,9 @@
                             <sense xml:id="bruge-1">bridge</sense>
                         </entry>
 
-                        <entry xml:id="bushoppes">
-                            <form><orth><hi rend="bold">bushoppes</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="bushoppes-1">bishops</sense>
+                        <entry xml:id="bushoppe">
+                            <form><orth><hi rend="bold">bushoppe</hi></orth><gram><hi rend="italics">n</hi></gram></form>
+                            <sense xml:id="bushoppe-1">bishop</sense>
                         </entry>
 
                         <entry xml:id="bynn">
@@ -499,9 +499,9 @@
                             </sense>
                         </entry>
 
-                        <entry xml:id="counteis">
-                            <form><orth><hi rend="bold">counteis</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="counteis-1">counties</sense>
+                        <entry xml:id="countei">
+                            <form><orth><hi rend="bold">countei</hi></orth><gram><hi rend="italics">n</hi></gram></form>
+                            <sense xml:id="countei-1">county</sense>
                         </entry>
 
                         <entry xml:id="coursse">
@@ -548,9 +548,9 @@
                             <sense xml:id="dogge-1">to hunt with a dog</sense>
                         </entry>
 
-                        <entry xml:id="dowckes">
-                            <form><orth><hi rend="bold">dowckes</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="dowckes-1">ducks</sense>
+                        <entry xml:id="dowcke">
+                            <form><orth><hi rend="bold">dowcke</hi></orth><gram><hi rend="italics">n</hi></gram></form>
+                            <sense xml:id="dowcke-1">duck</sense>
                         </entry>
 
                         <entry xml:id="draiton">
@@ -584,9 +584,13 @@
                         <entry xml:id="ers">
                             <form><orth><hi rend="bold">ers</hi></orth><gram><hi rend="italics">n in phr</hi><hi rend="bold">newe ers euen</hi></gram></form>
                             <sense xml:id="ers-1">New Year's Eve</sense>
-                            <!--variant for new year's day goes here; still not sure how exactly to format this as it requires its own sense as well as orth tag. separate entry? -->
                         </entry>
-
+                        
+                        <entry xml:id="erys">
+                            <form><orth><hi rend="bold">erys</hi></orth><gram><hi rend="italics">n in phr</hi><hi rend="bold">new erys daye</hi></gram></form>
+                            <sense xml:id="erys-1">New Year's Day</sense>
+                        </entry>
+                        
                         <entry xml:id="esoined">
                             <form><orth><hi rend="bold">esoined</hi></orth><gram><hi rend="italics">v pa</hi></gram></form>
                             <sense xml:id="esoined-1">essoined, to be excused or exonerated
@@ -670,9 +674,9 @@
                             <sense xml:id="glase-1">glaze, to furnish with glass</sense>
                         </entry>
 
-                        <entry xml:id="glevez">
-                            <form><orth><hi rend="bold">glevez</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="glevez-1">glaives, spears</sense>
+                        <entry xml:id="gleve">
+                            <form><orth><hi rend="bold">gleve</hi></orth><gram><hi rend="italics">n</hi></gram></form>
+                            <sense xml:id="gleve-1">glaive, spear</sense>
                         </entry>
 
                         <entry xml:id="greiuiuous">
@@ -684,6 +688,7 @@
                             <form><orth><hi rend="bold">gysse</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
                             <sense xml:id="gysse-1">geese</sense>
                         </entry>
+                        <!--I hesitate to render "gysse" singular for the sake of consistency because the issue is that the plural form, specifically, is odd. (Does that make sense?)-->
                     </div>
 
                     <div xml:id="gloss-eng-H">
@@ -830,14 +835,14 @@
                             <sense xml:id="mottehall-1">moot hall, a town hall, council chamber, or courtroom</sense>
                         </entry>
 
-                        <entry xml:id="musesens">
-                            <form><orth><hi rend="bold">musesens</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="musesens-1">musicians</sense>
+                        <entry xml:id="musesen">
+                            <form><orth><hi rend="bold">musesen</hi></orth><gram><hi rend="italics">n</hi></gram></form>
+                            <sense xml:id="musesen-1">musician</sense>
                         </entry>
 
-                        <entry xml:id="musitioners">
-                            <form><orth><hi rend="bold">musitioners</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="musitioners-1">musicians</sense>
+                        <entry xml:id="musitioner">
+                            <form><orth><hi rend="bold">musitioner</hi></orth><gram><hi rend="italics">n</hi></gram></form>
+                            <sense xml:id="musitioner-1">musician</sense>
                         </entry>
 
                         <entry xml:id="mysdemeanannte">
@@ -894,9 +899,9 @@
                             <sense xml:id="pesablie-1">peaceably</sense>
                         </entry>
 
-                        <entry xml:id="pettygrees">
-                            <form><orth><hi rend="bold">pettygrees</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="pettygrees-1">pedigrees</sense>
+                        <entry xml:id="pettygree">
+                            <form><orth><hi rend="bold">pettygree</hi></orth><gram><hi rend="italics">n</hi></gram></form>
+                            <sense xml:id="pettygree-1">pedigree</sense>
                         </entry>
 
                         <entry xml:id="pesable">
@@ -925,10 +930,12 @@
 
                         <entry xml:id="querry">
                             <form><orth><hi rend="bold">querry</hi></orth><gram><hi rend="italics">n</hi></gram></form>
-                            <sense xml:id="querry-1">quarry, hunt</sense>
-                            <!-- how to record additional usage and spelling in phrase "gentlemen of the querrye? irrelevant since that's just "gentlemen of the hunt"?-->
+                            <sense xml:id="querry-1">quarry, hunt
+                                <form><orth><hi rend="bold">querrye</hi></orth></form>
+                            </sense>
                         </entry>
                     </div>
+                    <!--Not sure if "gentlemen of the querrye" actually needs its own definition; it's just "gentlemen of the hunt".--> 
 
                     <div xml:id="gloss-eng-R">
 
@@ -950,9 +957,9 @@
                             </sense>
                         </entry>
 
-                        <entry xml:id="rouges">
-                            <form><orth><hi rend="bold">rouges</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="rouges-1">rogues</sense>
+                        <entry xml:id="rouge">
+                            <form><orth><hi rend="bold">rouge</hi></orth><gram><hi rend="italics">n</hi></gram></form>
+                            <sense xml:id="rouge-1">rogue</sense>
                         </entry>
 
                         <entry xml:id="rydgeley">
@@ -974,15 +981,16 @@
                             <sense xml:id="saboath-1">sabbath</sense>
                         </entry>
 
-                        <entry xml:id="saffeteis">
-                            <form><orth><hi rend="bold">saffeteis</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="saffeteis-1">safeties</sense>
+                        <entry xml:id="saffetei">
+                            <form><orth><hi rend="bold">saffetei</hi></orth><gram><hi rend="italics">n</hi></gram></form>
+                            <sense xml:id="saffetei-1">safety</sense>
                         </entry>
 
                         <entry xml:id="salopia">
                             <form><orth><hi rend="bold">salopia</hi></orth><gram><hi rend="italics">n</hi></gram></form>
                             <sense xml:id="salopia-1">Salisbury</sense>
-                            <!-- issue: in "countie of salopia," that's Shropshire-how exactly to tag? As variant? Separate entry, e.g. 'salopia-2'?-->
+                            <sense xml:id="salopia-2"><hi rend="italics">in phr</hi><hi rend="bold">countie of salopia</hi>Shropshire</sense>
+                            <!--Does this way of distinguishing between the two senses and writing them up make sense?-->
                         </entry>
 
                         <entry xml:id="schochoneofarmes">
@@ -1012,9 +1020,9 @@
                             </sense>
                         </entry>
 
-                        <entry xml:id="shewersofthechamber">
-                            <form><orth><hi rend="bold">shewers of the chamber</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="shewersofthechamber-1">attendants responsible for guiding or conducting people to the Great Chamber, Presence Chamber, or other chamber for audience
+                        <entry xml:id="shewerofthechamber">
+                            <form><orth><hi rend="bold">shewer of the chamber</hi></orth><gram><hi rend="italics">n phr</hi></gram></form>
+                            <sense xml:id="shewerofthechamber-1">attendant responsible for guiding or conducting people to the Great Chamber, Presence Chamber, or other chamber for audience
                                         <ref>[<hi rend="italics"><hi rend="small-caps">OED</hi></hi>show<hi rend="italics">v</hi>16]</ref>
                             </sense>
                         </entry>
@@ -1128,6 +1136,7 @@
                             <form><orth><hi rend="bold">vardynes</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
                             <sense xml:id="vardynes-1">wardens</sense>
                         </entry>
+                        <!-- not sure if sg form would properly be "vardyn" or "vardyne"; thoughts? --> 
 
                         <entry xml:id="virginalles">
                             <form><orth><hi rend="bold"/></orth><gram><hi rend="italics">n</hi></gram></form>
@@ -1222,10 +1231,17 @@
                             </sense>
                         </entry>
 
-                        <entry xml:id="yomen">
-                            <form><orth><hi rend="bold">yomen</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="yomen-1">yeomen; household officials, servants, or attendants <ref>[<hi rend="italics"><hi rend="small-caps">OED</hi></hi>yeoman<hi rend="italics">n</hi>C3.a]</ref>
-                                <!-- how exactly to record/tag the two most confusing usages (of the bottles, of the mouth)?-->
+                        <entry xml:id="yomenofthebottells">
+                            <form><orth><hi rend="bold">yomen of the bottells</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
+                            <sense xml:id="yomenofthebottells-1">household officials, servants, or attendants charged with procuring drink   
+                                <ref>[<hi rend="italics"><hi rend="small-caps">OED</hi></hi>yeoman<hi rend="italics">n</hi>C3.a]</ref>
+                            </sense>
+                        </entry>
+                        
+                        <entry xml:id="yomenofthemouthe">
+                            <form><orth><hi rend="bold">yomen of the mouthe</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
+                            <sense xml:id="yomenofthemouthe-1">household officials, servants, or attendants charged with maintaining a pantry, or with providing or serving food and drink   
+                                <ref>[<hi rend="italics"><hi rend="small-caps">OED</hi></hi>yeoman<hi rend="italics">n</hi>C3.a]</ref>
                             </sense>
                         </entry>
 
