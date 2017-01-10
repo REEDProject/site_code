@@ -584,9 +584,13 @@
                         <entry xml:id="ers">
                             <form><orth><hi rend="bold">ers</hi></orth><gram><hi rend="italics">n in phr</hi><hi rend="bold">newe ers euen</hi></gram></form>
                             <sense xml:id="ers-1">New Year's Eve</sense>
-                            <!--variant for new year's day goes here; still not sure how exactly to format this as it requires its own sense as well as orth tag. separate entry? -->
                         </entry>
-
+                        
+                        <entry xml:id="erys">
+                            <form><orth><hi rend="bold">erys</hi></orth><gram><hi rend="italics">n in phr</hi><hi rend="bold">new erys daye</hi></gram></form>
+                            <sense xml:id="erys-1">New Year's Day</sense>
+                        </entry>
+                        
                         <entry xml:id="esoined">
                             <form><orth><hi rend="bold">esoined</hi></orth><gram><hi rend="italics">v pa</hi></gram></form>
                             <sense xml:id="esoined-1">essoined, to be excused or exonerated
@@ -926,10 +930,12 @@
 
                         <entry xml:id="querry">
                             <form><orth><hi rend="bold">querry</hi></orth><gram><hi rend="italics">n</hi></gram></form>
-                            <sense xml:id="querry-1">quarry, hunt</sense>
-                            <!-- how to record additional usage and spelling in phrase "gentlemen of the querrye? irrelevant since that's just "gentlemen of the hunt"?-->
+                            <sense xml:id="querry-1">quarry, hunt
+                                <form><orth><hi rend="bold">querrye</hi></orth></form>
+                            </sense>
                         </entry>
                     </div>
+                    <!--Not sure if "gentlemen of the querrye" actually needs its own definition; it's just "gentlemen of the hunt".--> 
 
                     <div xml:id="gloss-eng-R">
 
@@ -983,7 +989,8 @@
                         <entry xml:id="salopia">
                             <form><orth><hi rend="bold">salopia</hi></orth><gram><hi rend="italics">n</hi></gram></form>
                             <sense xml:id="salopia-1">Salisbury</sense>
-                            <!-- issue: in "countie of salopia," that's Shropshire-how exactly to tag? As variant? Separate entry, e.g. 'salopia-2'?-->
+                            <sense xml:id="salopia-2"><hi rend="italics">in phr</hi><hi rend="bold">countie of salopia</hi>Shropshire</sense>
+                            <!--Does this way of distinguishing between the two senses and writing them up make sense?-->
                         </entry>
 
                         <entry xml:id="schochoneofarmes">
@@ -1224,10 +1231,17 @@
                             </sense>
                         </entry>
 
-                        <entry xml:id="yomen">
-                            <form><orth><hi rend="bold">yomen</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="yomen-1">yeomen; household officials, servants, or attendants <ref>[<hi rend="italics"><hi rend="small-caps">OED</hi></hi>yeoman<hi rend="italics">n</hi>C3.a]</ref>
-                                <!-- how exactly to record/tag the two most confusing usages (of the bottles, of the mouth)?-->
+                        <entry xml:id="yomenofthebottells">
+                            <form><orth><hi rend="bold">yomen of the bottells</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
+                            <sense xml:id="yomenofthebottells-1">household officials, servants, or attendants charged with procuring drink   
+                                <ref>[<hi rend="italics"><hi rend="small-caps">OED</hi></hi>yeoman<hi rend="italics">n</hi>C3.a]</ref>
+                            </sense>
+                        </entry>
+                        
+                        <entry xml:id="yomenofthemouthe">
+                            <form><orth><hi rend="bold">yomen of the mouthe</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
+                            <sense xml:id="yomenofthemouthe-1">household officials, servants, or attendants charged with maintaining a pantry, or with providing or serving food and drink   
+                                <ref>[<hi rend="italics"><hi rend="small-caps">OED</hi></hi>yeoman<hi rend="italics">n</hi>C3.a]</ref>
                             </sense>
                         </entry>
 
