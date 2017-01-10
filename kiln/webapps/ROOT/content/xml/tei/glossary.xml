@@ -304,12 +304,12 @@
                             <sense xml:id="anilye-1">only</sense>
                         </entry>
 
-                        <entry xml:id="aresed">
-                            <form><orth><hi rend="bold">aresed</hi></orth><gram><hi rend="italics">v pa</hi></gram></form>
-                            <sense xml:id="aresed-1">raised or levied (money, troops, etc.)
+                        <entry xml:id="arraysed">
+                            <form><orth><hi rend="bold">arraysed</hi></orth><gram><hi rend="italics">v pa</hi></gram></form>
+                            <sense xml:id="arraysed-1">raised or levied (money, troops, etc.)
                                         <ref>[<hi rend="italics"><hi rend="small-caps"
                                         >OED</hi></hi>araise<hi rend="italics">v</hi>3]</ref>;
-                                        <form><orth><hi rend="bold">arraysed</hi></orth></form>,
+                                        <form><orth><hi rend="bold">aresed</hi></orth></form>,
                                         <form><orth><hi rend="bold">arreised</hi></orth></form>,
                                         <form><orth><hi rend="bold">arreysed</hi></orth></form>
                             </sense>
@@ -328,8 +328,7 @@
                         <entry xml:id="austenfryers">
                             <form><orth><hi rend="bold">austen fryers</hi></orth><gram><hi rend="italics">n</hi></gram></form>
                             <sense xml:id="austenfryers-1">Austen Friary in Stafford;
-                                        <form><orth><hi rend="bold">austen ffryers</hi></orth></form>,
-                                        <form><orth><hi rend="bold">the ffryers</hi></orth></form>
+                                        <form><orth><hi rend="bold">the fryers</hi></orth></form>
                             </sense>
                         </entry>
 
@@ -534,12 +533,12 @@
                             <sense xml:id="demeaynyng-1">demeaning, behaviour</sense>
                         </entry>
 
-                        <entry xml:id="distreane">
-                            <form><orth><hi rend="bold">distreane</hi></orth><gram><hi rend="italics">v</hi></gram></form>
-                            <sense xml:id="distreane-1">distrain, to constrain or punish a person by seizing their goods 
+                        <entry xml:id="distreyne">
+                            <form><orth><hi rend="bold">distreyne</hi></orth><gram><hi rend="italics">v</hi></gram></form>
+                            <sense xml:id="distreyne-1">distrain, to constrain or punish a person by seizing their goods 
                                 <ref>[<hi rend="italics"><hi rend="small-caps">OED</hi></hi>distrain<hi rend="italics">v</hi>II.7.a]</ref>;
-                                <form><orth><hi rend="bold">distreine</hi></orth></form>,
-                                <form><orth><hi rend="bold">distreyne</hi></orth></form>
+                                <form><orth><hi rend="bold">distreane</hi></orth></form>,
+                                <form><orth><hi rend="bold">distreine</hi></orth></form>
                             </sense>
                         </entry>
 
@@ -715,6 +714,7 @@
                                 <form><orth><hi rend="bold">harnesse</hi></orth></form>
                             </sense>
                         </entry>
+                        <!-- 'harnes' and 'harnesse' have the same number of instances (i.e. 2); what feels closer to modern English? I'm leaning toward 'harnes' as the headword just alphabetically.-->
 
                         <entry xml:id="harvenger">
                             <form><orth><hi rend="bold">harvenger</hi></orth><gram><hi rend="italics">n in phr</hi><hi rend="bold">knight harvenger</hi></gram></form>
@@ -1066,10 +1066,10 @@
                             </sense>
                         </entry>
 
-                        <entry xml:id="stottefeld">
-                            <form><orth><hi rend="bold">stottefeld</hi></orth><gram><hi rend="italics">n</hi></gram></form>
-                            <sense xml:id="stottefeld-1">Statfold; 
-                                <form><orth><hi rend="bold">stottfold</hi></orth></form>
+                        <entry xml:id="stottfold">
+                            <form><orth><hi rend="bold">stottfold</hi></orth><gram><hi rend="italics">n</hi></gram></form>
+                            <sense xml:id="stottfold-1">Statfold; 
+                                <form><orth><hi rend="bold">stottefeld</hi></orth></form>
                             </sense>
                         </entry>
 
@@ -1106,7 +1106,6 @@
                         <entry xml:id="togedyr">
                             <form><orth><hi rend="bold">to gedyr</hi></orth><gram><hi rend="italics">adv</hi></gram></form>
                             <sense xml:id="togedyr-1">together</sense>
-                            <!-- double-check the adverbial sense-->
                         </entry>
 
                         <entry xml:id="totalys">
@@ -1162,10 +1161,10 @@
                             <sense xml:id="wayters-1">wages (?)</sense>
                         </entry>
 
-                        <entry xml:id="wedesbury">
-                            <form><orth><hi rend="bold">wedesbury</hi></orth><gram><hi rend="italics">n</hi></gram></form>
-                            <sense xml:id="wedesbury-1">Wednesbury;
-                                <form><orth><hi rend="bold">weddesbury</hi></orth></form>,
+                        <entry xml:id="weddesbury">
+                            <form><orth><hi rend="bold">weddesbury</hi></orth><gram><hi rend="italics">n</hi></gram></form>
+                            <sense xml:id="weddesbury-1">Wednesbury;
+                                <form><orth><hi rend="bold">wedesbury</hi></orth></form>,
                                 <form><orth><hi rend="bold">widdesbur</hi></orth></form>,
                             </sense>
                         </entry>
