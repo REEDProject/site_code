@@ -5,14 +5,18 @@ from lxml import etree
 from .document import (ADD_AB_XSLT_PATH, ADD_HEADER_XSLT_PATH,
                        ADD_ID_XSLT_PATH, Document, MASSAGE_FOOTNOTE_XSLT_PATH,
                        REMOVE_AB_XSLT_PATH)
-from .document_parser import document_grammar
+from .document_parser import DocumentParser
 
 
 class TestDocumentConverter (TestCase):
 
     vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u']
 
-    def _check_conversion(self, text, expected, heading=True, subheading=True):
+    def setUp(self):
+        self.parser = DocumentParser()
+
+    def _check_conversion(self, text, expected, doc_desc=True, heading=True,
+                          subheading=True):
         if subheading:
             text = '@w\\f 124 {(19 November)}\\!\n' + text
             expected = '''<div type="transcription">
@@ -26,11 +30,14 @@ class TestDocumentConverter (TestCase):
             text = '@h\\BPA!1532!DOU2!eng\\!\n' + text
             expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
+<head><rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
 ''' + expected + '''
 </body>
 </text>'''
-        actual = ''.join(document_grammar.parseString(text))
+        if doc_desc:
+            text = '@sd\\@sc\\ABCD@sc/ This is a simple doc desc.! So@sd/\n' + \
+                   '@pc\\@ab\BPA@ab/ @ex\\Boring Place Anyway@ex/@pc/' + text
+        actual = ''.join(self.parser.parse(text))
         self.assertEqual(actual, expected)
 
     def test_acute(self):
@@ -115,7 +122,7 @@ Test.
 @cn/'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
+<head><rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -182,7 +189,7 @@ Test.
 '''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs ana="ereed:BPA" type="place_region">BPA</name> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
+<head><rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -338,7 +345,7 @@ Text that <pb />crosses a page.
         base_input = '@h\\{place}!{year}!{record}!{lang}\\!\n@w\\Test\\!\nText'
         base_expected = '''<text type="record">
 <body xml:lang="{lang}">
-<head><rs ana="ereed:{place}" type="place_region">{place}</name> {date} <seg ana="ereed:{record}">{record}</seg></head>
+<head><rs>{full_place}</rs> {date} <seg ana="ereed:{record}">{record}</seg></head>
 <div type="transcription">
 <div>
 <head>Test</head>
@@ -349,49 +356,50 @@ Text
 </body>
 </text>'''
         data = {'lang': 'lat', 'place': 'BPA', 'record': 'DOU2',
-                'date': '<date when-iso="1532">1532</date>', 'year': '1532'}
+                'date': '<date when-iso="1532">1532</date>', 'year': '1532',
+                'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
-        data = {'lang': 'lat', 'place': 'LEE', 'record': 'V151',
+        data = {'lang': 'lat', 'place': 'BPA', 'record': 'V151',
                 'date': '<date when-iso="1631">1630/1</date>',
-                'year': '1630/1'}
+                'year': '1630/1', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
-        data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
+        data = {'lang': 'eng', 'place': 'BPA', 'record': 'V151',
                 'date': '<date from-iso="1630" to-iso="1631">1630-1</date>',
-                'year': '1630-1'}
+                'year': '1630-1', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
-        data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
+        data = {'lang': 'eng', 'place': 'BPA', 'record': 'V151',
                 'date': '<date from-iso="1629" to-iso="1631">1629-31</date>',
-                'year': '1629-31'}
+                'year': '1629-31', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
-        data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
+        data = {'lang': 'eng', 'place': 'BPA', 'record': 'V151',
                 'date': '<date from-iso="1630" to-iso="1632">1629/30-31/2</date>',
-                'year': '1629/30-31/2'}
+                'year': '1629/30-31/2', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
-        data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
+        data = {'lang': 'eng', 'place': 'BPA', 'record': 'V151',
                 'date': '<date precision="low" when-iso="1631"><hi rend="italic">c</hi> 1631</date>',
-                'year': '{c} 1631'}
+                'year': '{c} 1631', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
-        data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
+        data = {'lang': 'eng', 'place': 'BPA', 'record': 'V151',
                 'date': '<date from-iso="1630" precision="low" to-iso="1632"><hi rend="italic">c</hi> 1629/30-31/2</date>',
-                'year': '{c} 1629/30-31/2'}
+                'year': '{c} 1629/30-31/2', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
-        data = {'lang': 'eng', 'place': 'LEE', 'record': 'V151',
+        data = {'lang': 'eng', 'place': 'BPA', 'record': 'V151',
                 'date': '<date from-iso="1601" to-iso="1700">17th Century</date>',
-                'year': '17th Century'}
+                'year': '17th Century', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
@@ -551,7 +559,7 @@ Text
 class TestXSLT (TestCase):
 
     def setUp(self):
-        self._doc = Document(None, 0, 'staff')
+        self._doc = Document('staff')
         self.maxDiff = None
 
     def _transform(self, text, *xslt_paths):
