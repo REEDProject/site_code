@@ -409,9 +409,9 @@
                             <sense xml:id="brake-1">broke</sense>
                         </entry>
 
-                        <entry xml:id="bredryn">
-                            <form><orth><hi rend="bold">bredryn</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
-                            <sense xml:id="bredryn-1">brethren</sense>
+                        <entry xml:id="bredyrn">
+                            <form><orth><hi rend="bold">bredyrn</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
+                            <sense xml:id="bredyrn-1">brethren</sense>
                         </entry>
 
                         <entry xml:id="broadeeye">
@@ -465,10 +465,10 @@
                             <sense xml:id="chawden-1">chaudon, a kind of sauce containing chopped entrails</sense>
                         </entry>
 
-                        <entry xml:id="chryspanyday">
-                            <form><orth><hi rend="bold">chryspany day</hi></orth><gram><hi rend="italics">n phr</hi></gram></form>
-                            <sense xml:id="chryspanyday-1">St Crispin's Day;
-                                <form><orth><hi rend="bold">chrspiane day</hi></orth></form>,
+                        <entry xml:id="chrispianeday">
+                            <form><orth><hi rend="bold">chrispiane day</hi></orth><gram><hi rend="italics">n phr</hi></gram></form>
+                            <sense xml:id="chrispianeday-1">St Crispin's Day;
+                                <form><orth><hi rend="bold">chryspany day</hi></orth></form>,
                                 <form><orth><hi rend="bold">chryspian day</hi></orth></form>,
                                 <form><orth><hi rend="bold">chryspiane day</hi></orth></form>,
                                 <form><orth><hi rend="bold">crispiany daie</hi></orth></form>,
@@ -486,15 +486,18 @@
                             <sense xml:id="cittei-1">city</sense>
                         </entry>
 
-                        <entry xml:id="comynn">
-                            <form><orth><hi rend="bold">comynn</hi></orth><gram><hi rend="italics">v pa</hi></gram></form>
-                            <sense xml:id="comynn-1">come</sense>
+                        <entry xml:id="comyn">
+                            <form><orth><hi rend="bold">comyn</hi></orth><gram><hi rend="italics">v pa</hi></gram></form>
+                            <sense xml:id="comyn-1">come
+                                <form><orth><hi rend="bold">comynn</hi></orth></form>
+                            </sense>
                         </entry>
 
                         <entry xml:id="coorse">
                             <form><orth><hi rend="bold">coorse</hi></orth><gram><hi rend="italics">n</hi></gram></form>
                             <sense xml:id="coorse-1">course, the pursuit of game 
                                 <ref>[<hi rend="italics"><hi rend="small-caps">OED</hi></hi>course<hi rend="italics">n</hi>7.a]</ref>
+                                <form><orth><hi rend="bold">coorsse</hi></orth></form>
                             </sense>
                         </entry>
 
