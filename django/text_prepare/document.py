@@ -11,7 +11,7 @@ import unicodedata
 import pyparsing as pp
 from lxml import etree
 
-from .document_parser import document_grammar
+from .document_parser import DocumentParser
 from .exceptions import (TextPrepareDocumentTextExtractionError,
                          TextPrepareDocumentValidationError)
 
@@ -46,18 +46,25 @@ class Document:
     convert_command = '''soffice -env:UserInstallation=file://{} --headless
                          --cat {}'''
 
-    def __init__(self, file_path, line_length, base_id):
-        self._file_path = file_path
-        self._line_length = line_length
+    def __init__(self, base_id=''):
         self._base_id = base_id
 
-    def convert(self):
-        """Returns the content of the document converted into TEI XML.
+    def convert(self, word_file_path, line_length, doc_descs_file_path):
+        """Returns the content of the supplied Word document converted into
+        TEI XML, along with a possibly updated version of the supplied
+        document descriptions TEI XML file.
 
+        :param word_file_path: path to Word file to be converted
+        :type file_path: `str`
+        :param line_length: number of characters to wrap lines to
+        :type line_length: `int`
+        :param doc_descs_file_path: path to TEI XML file containing
+                                    document descriptions
+        :type doc_descs_file_path: `str`
         :rtype: `str`
 
         """
-        text = self._get_text(self._file_path, self._line_length)
+        text = self._get_text(word_file_path, line_length)
         results = self._validate(text)
         return self._convert(results)
 
@@ -125,11 +132,10 @@ class Document:
             tree = transform(tree, base_id="'{}'".format(self._base_id))
         return tree
 
-    def validate(self):
-
+    def validate(self, word_file_path, line_length):
         """Raises an exception if this document does not conform to the @-code
         grammar."""
-        text = self._get_text(self._file_path, self._line_length)
+        text = self._get_text(word_file_path, line_length)
         self._validate(text)
 
     def _validate(self, text):
@@ -142,9 +148,11 @@ class Document:
         :rtype: `str`
 
         """
+        parser = DocumentParser()
         try:
-            results = document_grammar.parseString(text)
-        except (pp.ParseException, pp.ParseSyntaxException) as e:
+            results = parser.parse(text)
+        except (pp.ParseException, pp.ParseSyntaxException,
+                pp.ParseFatalException) as e:
             # Generate the context of the error, with a pointer to the
             # column identified as its place.
             col = e.column
@@ -153,7 +161,8 @@ class Document:
             line_index = e.lineno - 1
             split_text = text.splitlines()
             lines = []
-            lines.append('Line: {}\n'.format(line_number))
+            lines.append('Line: {}'.format(line_number))
+            lines.append('Message: {}\n'.format(e))
             if line_number > CONTEXT_LINES_BEFORE:
                 lines.extend(split_text[
                     line_index-CONTEXT_LINES_BEFORE:line_index])

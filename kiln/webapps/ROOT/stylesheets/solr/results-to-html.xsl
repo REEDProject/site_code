@@ -223,8 +223,8 @@
             <xsl:value-of select="$fq" />
           </xsl:attribute>
           <xsl:value-of select="@name" />
+          <xsl:call-template name="display-facet-count" />
         </a>
-        <xsl:call-template name="display-facet-count" />
       </li>
     </xsl:if>
   </xsl:template>
@@ -289,8 +289,8 @@
         <xsl:call-template name="lookup-facet-id">
           <xsl:with-param name="id" select="@name" />
         </xsl:call-template>
+        <xsl:call-template name="display-facet-count" />
       </a>
-      <xsl:call-template name="display-facet-count" />
     </li>
   </xsl:template>
 
