@@ -897,6 +897,14 @@
                             <sense xml:id="pennystone-1">penistone, coarse woollen cloth</sense>
                         </entry>
 
+                        <entry xml:id="pesable">
+                            <form><orth><hi rend="bold">pesable</hi></orth><gram><hi rend="italics">adj</hi></gram></form>
+                            <sense xml:id="pesable-1">peaceable;
+                                <form><orth><hi rend="bold">peysable</hi></orth></form>,
+                                <form><orth><hi rend="bold">peysabull</hi></orth></form>
+                            </sense>
+                        </entry>
+                        
                         <entry xml:id="pesablie">
                             <form><orth><hi rend="bold">pesablie</hi></orth><gram><hi rend="italics">adv</hi></gram></form>
                             <sense xml:id="pesablie-1">peaceably</sense>
@@ -905,14 +913,6 @@
                         <entry xml:id="pettygree">
                             <form><orth><hi rend="bold">pettygree</hi></orth><gram><hi rend="italics">n</hi></gram></form>
                             <sense xml:id="pettygree-1">pedigree</sense>
-                        </entry>
-
-                        <entry xml:id="pesable">
-                            <form><orth><hi rend="bold">pesable</hi></orth><gram><hi rend="italics">adj</hi></gram></form>
-                            <sense xml:id="pesable-1">peaceable;
-                                <form><orth><hi rend="bold">peysable</hi></orth></form>,
-                                <form><orth><hi rend="bold">peysabull</hi></orth></form>
-                            </sense>
                         </entry>
 
                         <entry xml:id="potal">
@@ -993,7 +993,7 @@
                             <form><orth><hi rend="bold">salopia</hi></orth><gram><hi rend="italics">n</hi></gram></form>
                             <sense xml:id="salopia-1">Salisbury</sense>
                             <sense xml:id="salopia-2"><hi rend="italics">in phr</hi><hi rend="bold">countie of salopia</hi>Shropshire</sense>
-                            <!--Does this way of distinguishing between the two senses and writing them up make sense?-->
+                            <!--Suddenly, I'm not sure where salopia-as-salisbury is coming in: the only two refs I see are in references to Shropshire. Am I forgetting/overlooking something?-->
                         </entry>
 
                         <entry xml:id="schochoneofarmes">
@@ -1144,6 +1144,8 @@
                             <form><orth><hi rend="bold"/></orth><gram><hi rend="italics">n</hi></gram></form>
                             <sense xml:id="virginalles-1">usually a keyed musical instrument with plural form refering to one instrument, but here possibly the keyboard(s) to an organ (?)</sense>
                         </entry>
+                        <!-- n.b. There are 3 instances of "virginals" or variants in the records; I've only tagged the one where it's possible that the record's referring ot the keyboard(s). The others could easily just be the instrument--> 
+                        
 
                         <entry xml:id="vtseter">
                             <form><orth><hi rend="bold">vtseter</hi></orth><gram><hi rend="italics">n</hi></gram></form>
@@ -1239,6 +1241,8 @@
                                 <ref>[<hi rend="italics"><hi rend="small-caps">OED</hi></hi>yeoman<hi rend="italics">n</hi>C3.a]</ref>
                             </sense>
                         </entry>
+                        
+                        <!-- If we're going to gloss yeomen of the bottles and mouth, we might consider also looking at "yeoman of the ffeilde"--> 
                         
                         <entry xml:id="yomenofthemouthe">
                             <form><orth><hi rend="bold">yomen of the mouthe</hi></orth><gram><hi rend="italics">n pl</hi></gram></form>
