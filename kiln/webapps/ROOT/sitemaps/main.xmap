@@ -185,11 +185,22 @@
         <map:aggregate element="aggregation" label="content">
           <map:part element="TEICorpus"
                     src="cocoon://internal/tei/preprocess-records/{1}.xml" />
-          <map:part src="../content/xml/tei/glossary.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=collections/{1}/" />
           <map:part src="cocoon://internal/search/records_by_collection.xml?q={1}" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/collection.xsl" />
+        <map:serialize />
+      </map:match>
+
+      <!-- Explore Collections: collection part. -->
+      <map:match id="ereed-collection-part" pattern="collections/*/*/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part element="TEICorpus"
+                    src="cocoon://internal/tei/preprocess-section/{1}/{2}.xml" />
+          <map:part src="../content/xml/tei/glossary.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=collections/{1}/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/collection-part.xsl" />
         <map:serialize />
       </map:match>
 

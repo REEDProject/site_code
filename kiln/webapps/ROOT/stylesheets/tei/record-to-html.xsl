@@ -13,6 +13,28 @@
     <xsl:value-of select="/aggregation/TEICorpus/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']" />
   </xsl:template>
 
+  <xsl:template name="display-collection-editorial-toc">
+    <xsl:variable name="collection"
+                  select="/aggregation/TEICorpus/tei:TEI/@xml:id" />
+    <ul class="sub-sections">
+      <xsl:for-each select="$record_text/tei:*[local-name()=('front', 'back')]/tei:div">
+        <li>
+          <a href="{kiln:url-for-match('ereed-collection-part', ($collection, @xml:id), 0)}">
+            <xsl:if test="@type='appendix'">
+              <xsl:text>Appendix</xsl:text>
+              <xsl:if test="@n">
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="@n" />
+              </xsl:if>
+              <xsl:text>: </xsl:text>
+            </xsl:if>
+            <xsl:value-of select="tei:head" />
+          </a>
+        </li>
+      </xsl:for-each>
+    </ul>
+  </xsl:template>
+
   <!-- The following named templates all assume that the context node
        is a tei:text[@type='record']. -->
 

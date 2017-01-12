@@ -43,16 +43,13 @@
           <div class="tabs">
             <div class="row">
               <ul class="tabs column" data-tabs="" id="example-tabs">
-                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Records</a></li>
-                <li class="tabs-title"><a href="#panel2">Editors &amp; Acknowledgments</a></li>
-                <li class="tabs-title"><a href="#panel3">Historical Background</a></li>
-                <li class="tabs-title"><a href="#panel4">Performance Traditions</a></li>
-                <li class="tabs-title"><a href="#panel5">Appendices</a></li>
+                <li class="tabs-title"><a href="#panel1">Records</a></li>
+                <li class="tabs-title is-active"><a href="#panel2" aria-selected="true">Editorial Materials</a></li>
               </ul>
             </div>
           </div>
           <div class="tabs-content" data-tabs-content="example-tabs">
-            <div class="tabs-panel is-active" id="panel1">
+            <div class="tabs-panel" id="panel1">
               <div class="row">
                 <div class="column medium-9">
                   <h2>Related Records</h2>
@@ -82,133 +79,39 @@
                 </div>
               </div>
             </div>
-            <div class="tabs-panel" id="panel2">
-              <xsl:for-each select="$record_text/tei:front/tei:div[@type='acknowledgments']">
-                <div class="bibliography-filter filter hide-for-medium boxed">
-                  <div class="filter-head jump-to-filter">Topics In This Section</div>
-                  <div class="filter-content-wrapper relative">
-                    <div class="filter-content">
-                      <div class="toc mobile-toc">
-                        <div>
-                          <xsl:call-template name="display-section-toc" />
-                        </div>
+            <div class="tabs-panel is-active" id="panel2">
+              <div class="bibliography-filter filter hide-for-medium boxed">
+                <div class="filter-head jump-to-filter">Topics In This Section</div>
+                <div class="filter-content-wrapper relative">
+                  <div class="filter-content">
+                    <div class="toc mobile-toc">
+                      <div>
+                        <xsl:call-template name="display-collection-editorial-toc" />
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="column medium-12">
-                    <div class="entity-top-content">
-                      <h2>Editors &amp; Acknowledgments</h2>
-                    </div>
-                    <div class="related-content row">
-                      <div class="columns medium-9">
-                        <div class="show-for-medium">
-                          <div class="row toc">
-                            <div class="column medium-6">
-                              <xsl:call-template name="display-section-toc" />
-                            </div>
+              </div>
+              <div class="row">
+                <div class="column medium-12">
+                  <div class="entity-top-content">
+                    <h2>Editorial Materials</h2>
+                  </div>
+                  <div class="related-content row">
+                    <div class="columns medium-9">
+                      <div class="show-for-medium">
+                        <div class="row toc">
+                          <div class="column medium-6">
+                            <xsl:call-template name="display-collection-editorial-toc" />
                           </div>
                         </div>
-                        <div class="explore-text">
-                          <xsl:apply-templates select="." />
-                          <xsl:call-template name="display-section-data" />
-                        </div>
+                      </div>
+                      <div class="explore-text">
                       </div>
                     </div>
                   </div>
                 </div>
-              </xsl:for-each>
-            </div>
-            <div class="tabs-panel" id="panel3">
-              <xsl:for-each select="$record_text/tei:front/tei:div[@type='background']">
-                <div class="bibliography-filter filter hide-for-medium boxed">
-                  <div class="filter-head jump-to-filter">Topics In This Section</div>
-                  <div class="filter-content-wrapper relative">
-                    <div class="filter-content">
-                      <div class="toc mobile-toc">
-                        <div>
-                          <xsl:call-template name="display-section-toc" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column medium-12">
-                    <div class="entity-top-content">
-                      <h2>Historical Background</h2>
-                    </div>
-                    <div class="related-content row">
-                      <div class="columns medium-9">
-                        <div class="show-for-medium">
-                          <div class="row toc">
-                            <div class="column medium-6">
-                              <xsl:call-template name="display-section-toc" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="explore-text">
-                          <xsl:apply-templates select="." />
-                          <xsl:call-template name="display-section-data" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </xsl:for-each>
-            </div>
-            <div class="tabs-panel" id="panel4">
-              <xsl:for-each select="$record_text/tei:front/tei:div[@type='traditions']">
-                <div class="bibliography-filter filter hide-for-medium boxed">
-                  <div class="filter-head jump-to-filter">Topics In This Section</div>
-                  <div class="filter-content-wrapper relative">
-                    <div class="filter-content">
-                      <div class="toc mobile-toc">
-                        <div>
-                          <xsl:call-template name="display-section-toc" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column medium-12">
-                    <div class="entity-top-content">
-                      <h2>Performance Traditions</h2>
-                    </div>
-                    <div class="related-content row">
-                      <div class="columns medium-9">
-                        <div class="show-for-medium">
-                          <div class="row toc">
-                            <div class="column medium-6">
-                              <xsl:call-template name="display-section-toc" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="explore-text">
-                          <xsl:apply-templates select="." />
-                          <xsl:call-template name="display-section-data" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </xsl:for-each>
-            </div>
-            <div class="tabs-panel" id="panel5">
-              <xsl:for-each select="$record_text/tei:back">
-                <div class="row">
-                  <div class="column medium-12">
-                    <div class="entity-top-content">
-                      <h2>Appendices</h2>
-                    </div>
-                    <div class="related-content">
-                      <xsl:call-template name="display-appendix-toc" />
-                    </div>
-                  </div>
-                </div>
-              </xsl:for-each>
+              </div>
             </div>
           </div>
         </div>

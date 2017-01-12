@@ -32,6 +32,15 @@
         <map:serialize type="xml" />
       </map:match>
 
+      <map:match id="ereed-preprocess-section-tei"
+                 pattern="tei/preprocess-section/*/*.xml">
+        <map:generate src="cocoon:/tei/preprocess-records/{1}.xml" />
+        <map:transform src="../stylesheets/tei/extract-part.xsl">
+          <map:parameter name="part-id" value="{2}" />
+        </map:transform>
+        <map:serialize type="xml" />
+      </map:match>
+
       <map:match id="ereed-preprocess-eatsml" pattern="preprocess/eatsml.xml">
         <map:generate src="../content/xml/eatsml/entities.xml" />
         <map:transform src="../stylesheets/eatsml/preprocess.xsl" />

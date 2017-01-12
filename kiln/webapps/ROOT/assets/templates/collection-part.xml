@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
+           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:tei="http://www.tei-c.org/ns/1.0"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:import href="cocoon://_internal/template/xsl/stylesheets/tei/record-to-html.xsl" />
+
+  <kiln:parent>
+    <xi:include href="base.xml" />
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title">
+      <kiln:super />
+      <xsl:text>Collection: </xsl:text>
+      <xsl:call-template name="display-collection-name" />
+      <xsl:text>: </xsl:text>
+      <xsl:value-of select="$record_text/tei:div/tei:head" />
+    </kiln:block>
+
+    <kiln:block name="content">
+      <div class="white-bg">
+        <div class="row selected-record-summary relative">
+          <div class="columns medium-9 record">
+            <div class="record-info-inner">
+              <xsl:call-template name="display-collection-name" />
+              <xsl:text> Collection</xsl:text>
+            </div>
+            <xsl:for-each select="$record_text">
+              <xsl:apply-templates select="tei:div" />
+              <xsl:call-template name="display-section-data" />
+            </xsl:for-each>
+          </div>
+        </div>
+      </div>
+    </kiln:block>
+  </kiln:child>
+
+</kiln:root>
