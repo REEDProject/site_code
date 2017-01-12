@@ -1,40 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="REED.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:id="staff">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title type="main">Staffordshire</title>
-        <!-- Still to be tagged in EATS with collection EATS entity page -->
-        <funder><orgName>Andrew W. Mellon Foundation</orgName>, Scholarly Communications and
-          Information Technology Program. Program Officer: <persName>Donald J.
-          Waters</persName></funder>
-        <!-- funding info to be checked with SB -->
-        <!-- use <editor> for editor -->
-        <editor>Alan Somerset</editor>
-        <!-- use <respStmt> for things like transcriber, encoder, palaeographer, conversion, schema design, etc.  -->
+        <funder><orgName>Jackman Foundation, Toronto, Canada</orgName></funder>
+        <funder><orgName>National Endowment for the Humanities, Washington, DC, United States of America</orgName></funder>
+        <funder><orgName>Social Sciences and Humanities Research Council, Ottawa, Canada</orgName></funder>
+        <editor>J. Alan B. Somerset</editor>
         <respStmt>
           <persName>Carolyn Black</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Senior Editorial Consultant</resp>
+          <resp>Project Manager</resp>
         </respStmt>
-        <!-- and all the others... -->
+        <respStmt>
+          <persName>Kathy Chung</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>Post-doctoral Fellow in Digital Humanities, EATS taxonomy developer and tagger</resp>
+        </respStmt>
         <respStmt>
           <persName xml:id="JC">James Cummings</persName>
           <orgName>University of Oxford</orgName>
-          <resp>TEI Schema Design and Technical Consultation</resp>
+          <resp>TEI Schema Designer, Technical Consultant</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Patrick Gregory</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>Paleographer, Translator, Latin and Anglo-French Glossarian</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Tanya Hagen</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>Bibliographer</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Janine Harper</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>English Glossarian, Proofreader</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Alexandra F. Johnston</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>REED Founder and Senior Consultant</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sally-Beth MacLean</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>Principal Investigator, SSHRC grant; Director of Research and General Editor</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Byron Moldofsky</persName>
+          <orgName>University of Toronto</orgName>
+          <resp>Cartographer</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="JN">Jamie Norrish</persName>
-          <resp>Conversion Work</resp>
+          <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Suzanne Westfall</persName>
+          <resp>Principal Investigator, NEH grant</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Abigail Ann Young</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>Paleographer</resp>
         </respStmt>
       </titleStmt>
       <editionStmt>
-        <edition>version 1, released
-            <date><!-- use @when attribute for precise YYYY-MM-DD, and content for human readable date --></date>
-        </edition>
-        <!-- publication month day year to be added when known -->
+        <edition>version 1, released <date when-iso="2017-02-01">1 February 2017</date></edition>
       </editionStmt>
       <publicationStmt>
         <authority><orgName>Records of Early English Drama (REED)</orgName>
@@ -57,8 +93,7 @@
         <title>Records of Early English Drama</title>
       </seriesStmt>
       <sourceDesc>
-        <p>Born digital. Information on original sources for transcriptions can be accessed via the
-          transcriptions.</p>
+        <p>Born digital. Information on original sources for transcriptions can be accessed via the Document Descriptions.</p>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -66,35 +101,27 @@
         <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)"
           replacementPattern="../code_list.xml#$1">
           <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the
-            code_list.xml file. For example, <code>taxon:V117</code> dereferences to
-              <code>code_list.xml#V117</code>.</p>
+            code_list.xml file.</p>
+          <!--name of code_list.xml file used in line above might be changing before publication-->
         </prefixDef>
-        <!-- or something like below for glossary -->
         <prefixDef ident="gloss" matchPattern="([A-Za-z0-9_-]+)"
           replacementPattern="../glossary.xml#$1">
           <p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the
             glossary.xml file.</p>
+          <!--Add samples, to both <prefixDef>s For example, <code>taxon:V117</code> dereferences to
+              <code>code_list.xml#V117</code>-->
         </prefixDef>
       </listPrefixDef>
       <projectDesc>
-        <p><!-- general description of REED project here --></p>
-      </projectDesc>
-
-      <!-- encodingDesc/editorialDecl could be expanded with elements I've removed to document editorial principles. -->
-
+        <p>Records of Early English Drama (REED) is an international scholarly project that is establishing for the first time the context from which the drama of Shakespeare and his contemporaries grew. Founded in 1976, REED has worked since then to locate, transcribe, and edit historical documents containing evidence of drama, secular music, and other communal entertainment and ceremony from the Middle Ages until 1642, when the Puritans closed the London theatres.</p>
+      </projectDesc> 
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <!-- list all languages used in document -->
-        <language ident="en">English</language>
-        <language ident="la">Latin</language>
+        <language ident="eng">English</language>
+        <language ident="lat">Latin</language>
+        <language ident="fra">Anglo-French</language>
       </langUsage>
-      <!-- if using not standard calendars... -->
-      <calendarDesc>
-        <calendar xml:id="someCalendarName">
-          <p><!-- If using dates from non-standard calendards, describe them here and use <date calendar="#someCalendarName"> --></p>
-        </calendar>
-      </calendarDesc>
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
@@ -103,8 +130,6 @@
         schema</change>
     </revisionDesc>
   </teiHeader>
-
-
   <text>
     <front>
       <div xml:id="acknowledgments">
