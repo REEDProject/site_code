@@ -49,7 +49,7 @@ class Document:
     def __init__(self, base_id=''):
         self._base_id = base_id
 
-    def convert(self, word_file_path, line_length, doc_descs_file_path):
+    def convert(self, word_file_path, line_length):
         """Returns the content of the supplied Word document converted into
         TEI XML, along with a possibly updated version of the supplied
         document descriptions TEI XML file.

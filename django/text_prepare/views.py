@@ -36,10 +36,9 @@ def _convert(request):
             base_id = form.cleaned_data['base_id']
             doc = request.FILES['document']
             context['filename'] = doc.name
-            document = Document(doc.temporary_file_path(), line_length,
-                                base_id)
+            document = Document(base_id)
             try:
-                tei = document.convert()
+                tei = document.convert(doc.temporary_file_path(), line_length)
                 return HttpResponse(tei, content_type='text/xml')
             except TextPrepareDocumentValidationError as error:
                 context['invalid'] = True
@@ -101,9 +100,9 @@ def _validate(request):
             doc = request.FILES['document']
             context['filename'] = doc.name
             context['validated'] = True
-            document = Document(doc.temporary_file_path(), line_length, '')
+            document = Document()
             try:
-                document.validate()
+                document.validate(doc.temporary_file_path(), line_length)
             except TextPrepareDocumentError as error:
                 context['error'] = error
     else:

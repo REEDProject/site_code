@@ -3,7 +3,7 @@ from django import forms
 
 class UpdateDocumentForm (forms.Form):
 
-    document = forms.FileField(label='Document')
+    document = forms.FileField(label='Word document')
 
 
 class ValidateDocumentForm (UpdateDocumentForm):
@@ -17,4 +17,4 @@ class ConvertDocumentForm (ValidateDocumentForm):
 
     base_id = forms.CharField(
         label='Base xml:id', max_length=20, min_length=4,
-        help_text='xml:id for resulting TEI document, used as a base for all other xml:ids; must be unique across the collection, such as the county name')
+        help_text='xml:id for resulting TEI document, used as a base for all other xml:ids; must be unique across the all collections. The saved TEI document must have the same name as this: eg, xml:id of "staff", filename of "staff.xml"')
