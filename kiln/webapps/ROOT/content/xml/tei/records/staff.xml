@@ -107,7 +107,7 @@
 
   <text>
     <front>
-      <div type="acknowledgments">
+      <div xml:id="acknowledgments">
         <head>Acknowledgments</head>
         <p>This is the first digital collection published by REED, but the records research upon
           which it is based has a long history. The project was originally designed and undertaken
@@ -182,7 +182,7 @@
           all of those fifty a source of staunch support, encouragement, and love. I dedicate this
           collection, with love, to her.</p>
       </div>
-      <div type="background">
+      <div xml:id="background">
         <head>Historical Background</head>
         <div>
           <head>Introduction</head>
@@ -353,7 +353,7 @@
             records survive from the city of Lichfield.</p>
         </div>
       </div>
-      <div type="traditions">
+      <div xml:id="traditions">
         <head>Performance Traditions</head>
         <div>
           <head>Introduction</head>
@@ -926,7 +926,7 @@
                 suum &amp;c.</ab>
 
               <ab>Et q<ex>uo</ex>d quil<ex>ibe</ex>t tenens D<ex>omi</ex>ni faciet debitu<ex>m</ex>
-                suu<ex>m</ex> ad <term ref="gloss:hobbyhorse=1">Hobbyhorse</term><note type="foot">ad Hobbyhorse: <hi rend="italic"
+                suu<ex>m</ex> ad <term ref="gloss:hobbyhorse-1">Hobbyhorse</term><note type="foot">ad Hobbyhorse: <hi rend="italic"
                     >underlined in</hi>
                   <hi rend="smallcaps_italic">ms</hi></note>, sicut antiquo tempore
                   consuet<ex>i</ex> fuerunt, sub pena for<ex>isfacture</ex>
@@ -4993,7 +4993,7 @@ encompassing the names -->
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m lost in <term ref="gloss:coursse=1">Coursse</term> money gadred at the <term ref="gloss:hobbyhorse-1">hoby horse</term></cell>
+                  <cell>It<ex>e</ex>m lost in <term ref="gloss:coursse-1">Coursse</term> money gadred at the <term ref="gloss:hobbyhorse-1">hoby horse</term></cell>
                   <cell rend="right">v s.</cell>
                 </row>
               </table>
@@ -11258,7 +11258,7 @@ table. The (blank) above is the second cell of that row -->the
                 the seid Iohn Beamont seid vnto the seid water that he dyd knowe of no hurt that
                 they or any of them willed vnto hym in this behalue Wheruppon the seid Water and hys
                 s<ex>er</ex>u<ex>a</ex>nt<ex>es</ex> <term ref="gloss:pesablie-1">pesablie</term> dep<ex>ar</ex>ted Whom a geyn And as
-                to co<ex>m</ex>myng to the seid feir of <term ref="gloss:willenhale=1">Willenhale</term> the seid Water seith that it hath
+                to co<ex>m</ex>myng to the seid feir of <term ref="gloss:willenhale-1">Willenhale</term> the seid Water seith that it hath
                 byn of olde tymes vsed and accustu<ex>m</ex>med on the seid feire day thatt both the
                 Inhabitant<ex>es</ex> of the seid Townes of Hampton<ex>n</ex> <term ref="gloss:weddesbury-1">Weddesbury</term> and
                 Walsale haue <term ref="gloss:comyn-1">comyn<ex>n</ex></term> to the seid feire W<ex>i</ex>t<ex>h</ex> such capitains
@@ -11324,7 +11324,7 @@ table. The (blank) above is the second cell of that row -->the
                 Vntrouth and by the seid Iohn ffeyned to colo<damage><gap unit="chars" extent="1"
                   /></damage><note type="foot">colo<damage><gap unit="chars" extent="1"/></damage>:
                     <hi rend="italic">letter lost to tear at right edge of leaf</hi></note> his
-                offence <term ref="gloss:mysdemeanannte>-1">mysdemeanannte</term> and Riot/ And also vncerten and insufficient to be replied
+                offence <term ref="gloss:mysdemeanannte-1">mysdemeanannte</term> and Riot/ And also vncerten and insufficient to be replied
                 vnto/ Neuerthelesse for replication and playne declaracion of trouth in that behalf/
                 the seid Roger and Thomas seyen that theire bille of Complaynt is goode sufficiannt
                 and true in eu<ex>er</ex>y thing therof/ and over that seyen that <rs
@@ -12689,7 +12689,7 @@ table. The (blank) above is the second cell of that row -->the
                   <cell>payd <del>for</del> to <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/29410/"
                       type="Person_Commoner">Iohn Hosyar</rs> for pleyng in the est<ex>er</ex>
-                    <!-- kc: 'playing' what? what is JH's occupation? --> <term ref="gloss:wicke=1">wycke</term></cell>
+                    <!-- kc: 'playing' what? what is JH's occupation? --> <term ref="gloss:wicke-1">wycke</term></cell>
                   <cell rend="right">viij d.</cell>
                 </row>
               </table>
@@ -15001,7 +15001,7 @@ brace to: --> Oke</note>
       </text>
     </group>
     <back>
-      <div n="1" type="appendix">
+      <div n="1" type="appendix" xml:id="appendix-1">
         <head>‘o god what a world’ by Richard Sheale, Minstrel of Tamworth</head>
         <div>
           <p>The Ashmolean manuscripts were among the rarities bequeathed to the University of
