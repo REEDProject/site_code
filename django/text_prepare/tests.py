@@ -185,7 +185,7 @@ Test.
         text = '''@h\\BPA!1532!DOU2!eng\\!
 @w\\f 124 {(19 November)}\\!
 Test.
-@EN\\A note.@EN/
+@en\\A note.@en/
 '''
         expected = '''<text type="record">
 <body xml:lang="eng">

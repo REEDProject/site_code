@@ -307,7 +307,7 @@ class DocumentParser:
         collation_notes = pp.nestedExpr('@cn\\', '@cn/', content=pp.OneOrMore(
             collation_note_wrapper))
         collation_notes.setParseAction(self._pa_collation_notes)
-        end_note = pp.nestedExpr('@EN\\', '@EN/', content=enclosed)
+        end_note = pp.nestedExpr('@en\\', '@en/', content=enclosed)
         end_note.setParseAction(self._pa_endnote)
         end_note_wrapper = blank + end_note + blank
         source_code = pp.nestedExpr('@sc\\', '@sc/', content=pp.Word(

@@ -21,10 +21,12 @@ def convert_at_codes(text):
     # Change the format of closing @-codes from '@x \' to '@x/'. The
     # original whitespace can cause problems in the parsing, but the
     # editors are used to that form.
-    codes = ['a', 'b', 'cnx', 'cor', 'cym', 'deu', 'e', 'eng', 'f', 'fra', 'g',
-             'gla', 'gmh', 'gml', 'grc', 'i', 'ita', 'j', 'k', 'l', 'lat', 'm',
-             'p', 'por', 'q', 'r', 's', 'sn', 'snc', 'snr', 'spa', 'wlm', 'x',
-             'xc', 'xno']
+    codes = [
+        'a', 'ab', 'b', 'c', 'cl', 'cn', 'cnx', 'cor', 'cr', 'cym', 'deu', 'e',
+        'en', 'eng', 'ex', 'f', 'fra', 'g', 'gla', 'gmh', 'gml', 'grc', 'i',
+        'ita', 'j', 'k', 'l', 'lat', 'li', 'm', 'p', 'pc', 'por', 'q', 'r',
+        's', 'sc', 'sd', 'sn', 'snc', 'snr', 'spa', 'ul', 'wlm', 'x', 'xc',
+        'xno']
     for code in codes:
         text = text.replace('@{} \\'.format(code), '@{}/'.format(code))
     return text
