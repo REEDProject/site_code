@@ -7,8 +7,10 @@
       <titleStmt>
         <title type="main">Staffordshire</title>
         <funder><orgName>Jackman Foundation, Toronto, Canada</orgName></funder>
-        <funder><orgName>National Endowment for the Humanities, Washington, DC, United States of America</orgName></funder>
-        <funder><orgName>Social Sciences and Humanities Research Council, Ottawa, Canada</orgName></funder>
+        <funder><orgName>National Endowment for the Humanities, Washington, DC, United States of
+            America</orgName></funder>
+        <funder><orgName>Social Sciences and Humanities Research Council, Ottawa,
+          Canada</orgName></funder>
         <editor>J. Alan B. Somerset</editor>
         <respStmt>
           <persName>Carolyn Black</persName>
@@ -18,7 +20,8 @@
         <respStmt>
           <persName>Kathy Chung</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Post-doctoral Fellow in Digital Humanities, EATS taxonomy developer and tagger</resp>
+          <resp>Post-doctoral Fellow in Digital Humanities, EATS taxonomy developer and
+            tagger</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="JC">James Cummings</persName>
@@ -93,7 +96,8 @@
         <title>Records of Early English Drama</title>
       </seriesStmt>
       <sourceDesc>
-        <p>Born digital. Information on original sources for transcriptions can be accessed via the Document Descriptions.</p>
+        <p>Born digital. Information on original sources for transcriptions can be accessed via the
+          Document Descriptions.</p>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -113,8 +117,13 @@
         </prefixDef>
       </listPrefixDef>
       <projectDesc>
-        <p>Records of Early English Drama (REED) is an international scholarly project that is establishing for the first time the context from which the drama of Shakespeare and his contemporaries grew. Founded in 1976, REED has worked since then to locate, transcribe, and edit historical documents containing evidence of drama, secular music, and other communal entertainment and ceremony from the Middle Ages until 1642, when the Puritans closed the London theatres.</p>
-      </projectDesc> 
+        <p>Records of Early English Drama (REED) is an international scholarly project that is
+          establishing for the first time the context from which the drama of Shakespeare and his
+          contemporaries grew. Founded in 1976, REED has worked since then to locate, transcribe,
+          and edit historical documents containing evidence of drama, secular music, and other
+          communal entertainment and ceremony from the Middle Ages until 1642, when the Puritans
+          closed the London theatres.</p>
+      </projectDesc>
     </encodingDesc>
     <profileDesc>
       <langUsage>
@@ -2315,12 +2324,16 @@
                 <row>
                   <cell/>
                   <cell><foreign xml:lang="lat">Rogerus Steventon cl<ex>er</ex>icus<lb/></foreign>
-                    <foreign xml:lang="lat"><rs
+                  </cell>
+                  <cell rend="braced right" rows="2"><foreign xml:lang="lat">Iur<ex>ati</ex>in plena
+                        Cur<ex>ia</ex></foreign></cell>
+                  <cell/>
+                </row>
+                <row>
+                  <cell/>
+                  <cell><foreign xml:lang="lat"><rs
                         ref="http://ereed.library.utoronto.ca/eats/entity/9567/"
                         type="Person_Commoner">Ric<ex>ard</ex>us Addams</rs></foreign></cell>
-                  <cell rend="braced right"><foreign xml:lang="lat">Iur<ex>ati</ex>in plena
-                    Cur<ex>ia</ex></foreign></cell>
-                  <cell/>
                 </row>
               </table>
 
@@ -2358,8 +2371,12 @@
               <table>
                 <row>
                   <cell/>
-                  <cell>Roger Steventon, clerk<lb/> Richard Addams</cell>
-                  <cell rend="braced right">sworn in full court</cell>
+                  <cell>Roger Steventon, clerk</cell>
+                  <cell rend="braced right" rows="2">sworn in full court</cell>
+                </row>
+                <row>
+                  <cell/>
+                  <cell> Richard Addams</cell>
                 </row>
               </table>
 
@@ -5793,12 +5810,10 @@
                   <cell rend="right">xlj s. iij d.</cell>
                 </row>
                 <row>
-                  <cell><rs ref="http://ereed.library.utoronto.ca/eats/entity/19809/"
-                      type="Person_Commoner">Thomas Treuett<lb/>
-                      <!-- Two lines braced. Sum is flush right from point of
-brace -->the
-                      Chamberlen</rs></cell>
-                  <cell rend="right">xlij s. x d.</cell>
+                  <cell rend="braced right"><rs
+                      ref="http://ereed.library.utoronto.ca/eats/entity/19809/"
+                      type="Person_Commoner">Thomas Treuett<lb/> the Chamberlen</rs></cell>
+                  <cell rend="right">xlij s. x d. </cell>
                 </row>
                 <row>
                   <cell><rs ref="http://ereed.library.utoronto.ca/eats/entity/19855/"
