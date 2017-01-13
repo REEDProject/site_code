@@ -25,8 +25,8 @@ def convert_at_codes(text):
         'a', 'ab', 'b', 'c', 'cl', 'cn', 'cnx', 'cor', 'cr', 'cym', 'deu', 'e',
         'en', 'eng', 'ex', 'f', 'fra', 'g', 'gla', 'gmh', 'gml', 'grc', 'i',
         'ita', 'j', 'k', 'l', 'lat', 'li', 'm', 'p', 'pc', 'por', 'q', 'r',
-        's', 'sc', 'sd', 'sn', 'snc', 'snr', 'spa', 'ul', 'wlm', 'x', 'xc',
-        'xno']
+        's', 'sc', 'sd', 'sh', 'sl', 'sn', 'snc', 'snr', 'spa', 'sr', 'ss',
+        'st', 'ul', 'wlm', 'x', 'xc', 'xno']
     for code in codes:
         text = text.replace('@{} \\'.format(code), '@{}/'.format(code))
     return text

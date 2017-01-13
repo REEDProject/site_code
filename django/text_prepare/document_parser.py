@@ -47,7 +47,11 @@ class DocumentParser:
         content.setWhitespaceChars('')
         content.setDefaultWhitespaceChars('')
         white = pp.Word(' ' + '\n')
-        punctuation = pp.oneOf('. , ; : \' " ( ) * / # $ % + - ? – ‑')
+        punctuation_chars = '. , ; : \' " ( ) * / # $ % + - ? – ‑'
+        punctuation = pp.oneOf(punctuation_chars)
+        rich_content = pp.Word(pp.alphanums + ' \n&' + punctuation_chars)
+        rich_content.setWhitespaceChars('')
+        content.setDefaultWhitespaceChars('')
         integer = pp.Word(pp.nums)
         ignored = pp.oneOf('\ufeff').suppress()  # zero width no-break space
         # This is an awful cludge for < to get around my inability to find
@@ -310,10 +314,23 @@ class DocumentParser:
         end_note = pp.nestedExpr('@en\\', '@en/', content=enclosed)
         end_note.setParseAction(self._pa_endnote)
         end_note_wrapper = blank + end_note + blank
-        source_code = pp.nestedExpr('@sc\\', '@sc/', content=pp.Word(
+        source_code = blank + pp.nestedExpr('@sc\\', '@sc/', content=pp.Word(
             pp.srange('[A-Z]'), exact=4))
-        doc_desc = pp.nestedExpr('@sd\\', '@sd/', content=source_code +
-                                 enclosed)
+        source_head = blank + pp.nestedExpr('@sh\\', '@sh/',
+                                            content=rich_content)
+        source_location = blank + pp.nestedExpr('@sl\\', '@sl/',
+                                                content=rich_content)
+        source_repository = blank + pp.nestedExpr('@sr\\', '@sr/',
+                                                  content=rich_content)
+        source_shelfmark = blank + pp.nestedExpr('@ss\\', '@ss/',
+                                                 content=rich_content)
+        source_date = blank + pp.nestedExpr('@st\\', '@st/',
+                                            content=rich_content)
+        source_data = source_code - source_head - source_location - \
+            source_repository - source_shelfmark - source_date
+        doc_desc_contents = pp.Optional(enclosed) + source_data - \
+            enclosed
+        doc_desc = pp.nestedExpr('@sd\\', '@sd/', content=doc_desc_contents)
         doc_desc.setParseAction(self._pa_doc_desc)
         abbreviation = pp.nestedExpr('@ab\\', '@ab/', content=pp.Word(
             pp.alphanums))

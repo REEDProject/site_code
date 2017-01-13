@@ -35,8 +35,15 @@ class TestDocumentConverter (TestCase):
 </body>
 </text>'''
         if doc_desc:
-            text = '@sd\\@sc\\ABCD@sc/ This is a simple doc desc.! So@sd/\n' + \
-                   '@pc\\@ab\BPA@ab/ @ex\\Boring Place Anyway@ex/@pc/' + text
+            text = '''@sd\\Prose document description.!
+
+It spans multiple paragraphs.!
+
+@sc\\ABCD@sc/ @sh\\Source heading.@sh/
+@sl\\Reading@sl/ @sr\\Berkshire Record Office@sr/
+@ss\\D/A2/c.54@ss/
+@st\\Epiphany, 1609@st/; this is the technical paragraph. Latin and English; paper; 0+389+0 leaves.@sd/\n
+@pc\\@ab\\BPA@ab/ @ex\\Boring Place Anyway@ex/@pc/''' + text
         actual = ''.join(self.parser.parse(text))
         self.assertEqual(actual, expected)
 
@@ -160,6 +167,34 @@ Test.
         text = 'some [deleted] text'
         expected = 'some <del>deleted</del> text'
         self._check_conversion(text, expected)
+
+    def test_doc_desc(self):
+        # No prose paragraph.
+        text = '''@sd\\@sc\\ABCD@sc/
+        @sh\\Heading@sh/
+        @sl\\Bognor Regis@sl/
+        @sr\\Boris's Borough Books & Records@sr/
+        @ss\\127.43#61-4/AN@ss/
+        @st\\1609@st/
+        @sd/
+        @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @pc/
+@h\\ABC!1532!ABCD!eng\\!
+@w\\f 124 {(19 November)}\\!
+Test.'''
+        expected = '''<text type="record">
+<body xml:lang="eng">
+<head><rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<div type="transcription">
+<div>
+<head>f 124 <supplied>(19 November)</supplied></head>
+<pb n="124" type="folio" />
+Test.
+</div>
+</div>
+</body>
+</text>'''
+        self._check_conversion(text, expected, doc_desc=False, heading=False,
+                               subheading=False)
 
     def test_dot_over(self):
         text = 'ove@.rdot'
