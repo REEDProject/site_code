@@ -64,10 +64,10 @@
         <map:serialize type="xml" />
       </map:match>
 
-      <map:match id="ereed-preprocess-code-list"
-                 pattern="preprocess/tei/code_list.xml">
-        <map:generate src="../content/xml/tei/code_list.xml" />
-        <map:transform src="../stylesheets/tei/normalise-code-list.xsl" />
+      <map:match id="ereed-preprocess-taxonomy"
+                 pattern="preprocess/tei/taxonomy.xml">
+        <map:generate src="../content/xml/tei/taxonomy.xml" />
+        <map:transform src="../stylesheets/tei/normalise-taxonomy.xsl" />
         <map:transform src="../stylesheets/tei/xml-id-to-eats-id.xsl" />
         <map:transform src="../stylesheets/tei/expand-code-list.xsl" />
         <map:serialize type="xml" />

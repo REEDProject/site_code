@@ -60,8 +60,8 @@
           <map:part src="cocoon://internal/search/facet_query.xml" />
           <map:part src="cocoon://_internal/request.xml" />
           <map:part src="cocoon://internal/preprocess/eatsml.xml" />
-          <map:part element="code_list"
-                    src="cocoon://internal/preprocess/tei/code_list.xml" />
+          <map:part element="taxonomy"
+                    src="cocoon://internal/preprocess/tei/taxonomy.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/search.xsl" />
         <map:serialize />

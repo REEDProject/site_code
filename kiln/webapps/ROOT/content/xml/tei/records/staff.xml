@@ -103,17 +103,16 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)"
-          replacementPattern="../code_list.xml#$1">
+          replacementPattern="../taxonomy.xml#$1">
           <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the
-            code_list.xml file.</p>
-          <!--name of code_list.xml file used in line above might be changing before publication-->
+            taxonomy.xml file.</p>
         </prefixDef>
         <prefixDef ident="gloss" matchPattern="([A-Za-z0-9_-]+)"
           replacementPattern="../glossary.xml#$1">
           <p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the
             glossary.xml file.</p>
           <!--Add samples, to both <prefixDef>s For example, <code>taxon:V117</code> dereferences to
-              <code>code_list.xml#V117</code>-->
+              <code>taxonomy.xml#V117</code>-->
         </prefixDef>
       </listPrefixDef>
       <projectDesc>

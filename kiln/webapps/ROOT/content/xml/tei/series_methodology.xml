@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:id="staff">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/" xml:id="staff">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -62,13 +62,13 @@
         <encodingDesc>
             <listPrefixDef>
                 <prefixDef ident="ereed" matchPattern="([A-Za-z0-9_]+)"
-                    replacementPattern="../code_list.xml#$1">
+                    replacementPattern="taxonomy.xml#$1">
                     <p>Private URIs using the <code>ereed</code> prefix are pointers to entities in the
-                        code_list.xml file. For example, <code>ereed:V117</code> dereferences to <code>code_list.xml#V117</code>.</p>
+                        taxonomy.xml file. For example, <code>ereed:V117</code> dereferences to <code>taxonomy.xml#V117</code>.</p>
                 </prefixDef>
                 <!-- or something like below for glossary -->
                 <prefixDef ident="ereed-gloss" matchPattern="([A-Za-z0-9_]+)"
-                    replacementPattern="../glossary.xml#$1">
+                    replacementPattern="glossary.xml#$1">
                     <p>Private URIs using the <code>ereed-gloss</code> prefix are pointers to entities in the
                         glossary.xml file.</p>
                 </prefixDef>
