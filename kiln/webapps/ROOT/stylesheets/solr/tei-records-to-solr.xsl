@@ -17,7 +17,32 @@
     <add>
       <!-- Treat each eREED record as its own Solr document. -->
       <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:group/tei:text[@type='record']" />
+      <!-- Index front and back matter. -->
+      <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:front/tei:div" mode="editorial" />
+      <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:back/tei:div" mode="editorial" />
     </add>
+  </xsl:template>
+
+  <xsl:template match="tei:div" mode="editorial">
+    <doc>
+      <field name="file_path">
+        <xsl:value-of select="$file-path" />
+      </field>
+      <field name="document_id">
+        <xsl:value-of select="@xml:id" />
+      </field>
+      <field name="document_type">
+        <xsl:text>editorial</xsl:text>
+      </field>
+      <field name="document_title">
+        <xsl:value-of select="tei:head" />
+      </field>
+      <field name="collection_id">
+        <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id" />
+      </field>
+      <xsl:apply-templates mode="entity-mention"
+                           select=".//tei:*[local-name()=('name', 'rs')][@ref]" />
+    </doc>
   </xsl:template>
 
   <xsl:template match="tei:text[@type='record']">
@@ -31,6 +56,9 @@
         </field>
         <field name="document_id">
           <xsl:value-of select="@xml:id" />
+        </field>
+        <field name="document_type">
+          <xsl:text>record</xsl:text>
         </field>
         <field name="document_title">
           <xsl:apply-templates select="tei:body/tei:head/tei:span[@type='shelfmark']" />

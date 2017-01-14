@@ -71,6 +71,15 @@
     </xsl:call-template>
   </xsl:template>
 
+  <xsl:template match="q">
+    <xsl:if test="not(preceding-sibling::q)">
+      <xsl:if test="preceding-sibling::*">
+        <xsl:text>&amp;</xsl:text>
+      </xsl:if>
+      <xsl:call-template name="q-parameter" />
+    </xsl:if>
+  </xsl:template>
+
   <!-- Catch-all for simple query parameters. -->
   <xsl:template match="*">
     <xsl:if test="preceding-sibling::* and
@@ -127,24 +136,31 @@
     </xsl:if>
   </xsl:template>
 
+  <xsl:template name="q-parameter">
+    <xsl:call-template name="simple-parameter" />
+    <!-- Look for extra q parameters to add in. -->
+    <xsl:for-each select="following-sibling::q">
+      <xsl:text>+AND+</xsl:text>
+      <xsl:value-of select="." />
+    </xsl:for-each>
+    <!-- Look for range parameters to add in. -->
+    <xsl:variable name="range_parameters"
+                  select="../*[@type='range_start'][normalize-space() != '']" />
+    <xsl:if test="$range_parameters and normalize-space(.)">
+      <xsl:text>+AND+</xsl:text>
+    </xsl:if>
+    <xsl:for-each select="$range_parameters">
+      <xsl:apply-templates mode="range-parameter" select="." />
+      <xsl:if test="not(position() = last())">
+        <xsl:text>+AND+</xsl:text>
+      </xsl:if>
+    </xsl:for-each>
+  </xsl:template>
+
   <xsl:template name="simple-parameter">
     <xsl:value-of select="local-name(.)" />
     <xsl:text>=</xsl:text>
     <xsl:value-of select="." />
-    <xsl:if test="local-name(.) = 'q'">
-      <!-- Look for range parameters to add in. -->
-      <xsl:variable name="range_parameters"
-                    select="../*[@type='range_start'][normalize-space() != '']" />
-      <xsl:if test="$range_parameters and normalize-space(.)">
-        <xsl:text>+AND+</xsl:text>
-      </xsl:if>
-      <xsl:for-each select="$range_parameters">
-        <xsl:apply-templates mode="range-parameter" select="." />
-        <xsl:if test="not(position() = last())">
-          <xsl:text>+AND+</xsl:text>
-        </xsl:if>
-      </xsl:for-each>
-    </xsl:if>
   </xsl:template>
 
 </xsl:stylesheet>

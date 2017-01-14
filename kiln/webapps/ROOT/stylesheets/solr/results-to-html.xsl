@@ -103,6 +103,22 @@
     </xsl:for-each>
   </xsl:template>
 
+  <xsl:template match="result/doc" mode="editorial-search-results">
+    <xsl:variable name="collection_id" select="str[@name='collection_id']" />
+    <xsl:variable name="part_id" select="str[@name='document_id']" />
+    <xsl:variable name="result-url" select="kiln:url-for-match('ereed-collection-part', ($collection_id, $part_id), 0)" />
+    <tr>
+      <td>
+        <xsl:value-of select="/aggregation/collections/collection[@id=$collection_id]" />
+      </td>
+      <td>
+        <a href="{$result-url}">
+          <xsl:value-of select="arr[@name='document_title']/str[1]" />
+        </a>
+      </td>
+    </tr>
+  </xsl:template>
+
   <xsl:template match="result/doc" mode="search-results">
     <xsl:variable name="record-id" select="str[@name='document_id']" />
     <xsl:variable name="result-url" select="kiln:url-for-match('ereed-record-display-html', ($record-id), 0)" />

@@ -73,6 +73,12 @@
         <map:serialize type="xml" />
       </map:match>
 
+      <map:match id="ereed-collections-list" pattern="collections.xml">
+        <map:generate src="cocoon:/metadata/files.xml" />
+        <map:transform src="../stylesheets/metadata/collections.xsl" />
+        <map:serialize tyoe="xml" />
+      </map:match>
+
       <!-- Get search results. -->
       <map:match id="local-search-query" pattern="search/*.xml">
         <map:generate src="../assets/queries/solr/{1}.xml" />
