@@ -86,6 +86,13 @@
   <xsl:template name="display-record-entities">
     <ul class="tags">
       <xsl:for-each select=".//tei:rs[@ref]">
+        <!-- QAZ: Only display each entity once. -->
+        <xsl:variable name="entity-id">
+          <xsl:text>entity-</xsl:text>
+          <xsl:call-template name="get-entity-id-from-url">
+            <xsl:with-param name="eats-url" select="@ref" />
+          </xsl:call-template>
+        </xsl:variable>
         <li class="tag">
           <a>
             <xsl:attribute name="href">
@@ -93,8 +100,7 @@
                 <xsl:with-param name="eats-url" select="@ref" />
               </xsl:call-template>
             </xsl:attribute>
-            <!-- QAZ: Use name from EATSML? -->
-            <xsl:value-of select="." />
+            <xsl:value-of select="id($entity-id)/primary_name" />
           </a>
         </li>
       </xsl:for-each>

@@ -323,7 +323,7 @@
       <xsl:variable name="item" select="key('item-by-eats-id', $id)" />
       <xsl:choose>
         <xsl:when test="$item and local-name($item) = 'entity'">
-          <xsl:value-of select="$item/primary_name/facet" />
+          <xsl:value-of select="$item/primary_name" />
         </xsl:when>
         <xsl:when test="$item">
           <xsl:value-of select="$item" />

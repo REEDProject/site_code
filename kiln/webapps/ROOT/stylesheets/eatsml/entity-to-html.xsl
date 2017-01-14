@@ -7,7 +7,7 @@
   <xsl:variable name="entity" select="/aggregation/eats:entities/eats:entity" />
 
   <xsl:template name="display-entity-primary-name">
-    <xsl:value-of select="$entity/primary_name/plain" />
+    <xsl:value-of select="$entity/primary_name" />
   </xsl:template>
 
 </xsl:stylesheet>

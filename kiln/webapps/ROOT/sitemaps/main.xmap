@@ -73,6 +73,7 @@
           <map:part src="cocoon://_internal/menu/main.xml?url=records/" />
           <map:part src="../content/xml/tei/glossary.xml" />
           <map:part src="cocoon://_internal/request.xml" />
+          <map:part src="cocoon://internal/preprocess/eatsml.xml" />
         </map:aggregate>
         <map:transform src="../stylesheets/tei/assemble-collections.xsl" />
         <map:transform type="xinclude" />
@@ -89,6 +90,7 @@
                     src="cocoon://internal/tei/preprocess-record/{1}.xml" />
           <map:part src="../content/xml/tei/glossary.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=records/{1}/" />
+          <map:part src="cocoon://internal/preprocess/eatsml.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/record.xsl" />
         <map:serialize />
@@ -202,6 +204,7 @@
                     src="cocoon://internal/tei/preprocess-section/{1}/{2}.xml" />
           <map:part src="../content/xml/tei/glossary.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=collections/{1}/" />
+          <map:part src="cocoon://internal/preprocess/eatsml.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/collection-part.xsl" />
         <map:serialize />

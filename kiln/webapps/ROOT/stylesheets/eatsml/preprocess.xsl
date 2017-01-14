@@ -29,14 +29,10 @@
         </xsl:choose>
       </xsl:variable>
       <primary_name>
-        <plain>
-          <xsl:value-of select="$primary-name" />
-        </plain>
-        <facet>
-          <xsl:value-of select="$primary-name" />
-          <!-- QAZ: Add date, etc. -->
-        </facet>
+        <xsl:value-of select="$primary-name" />
       </primary_name>
+      <title>
+      </title>
     </xsl:copy>
   </xsl:template>
 

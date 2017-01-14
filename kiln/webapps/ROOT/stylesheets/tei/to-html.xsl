@@ -140,10 +140,18 @@
     </i>
   </xsl:template>
 
+  <xsl:template name="get-entity-id-from-url">
+    <xsl:param name="eats-url" />
+    <xsl:value-of select="substring-before(substring-after($eats-url, '/entity/'), '/')" />
+  </xsl:template>
+
   <xsl:template name="make-entity-url">
     <xsl:param name="eats-url" />
-    <xsl:variable name="entity-id"
-                  select="substring-before(substring-after(@ref, '/entity/'), '/')" />
+    <xsl:variable name="entity-id">
+      <xsl:call-template name="get-entity-id-from-url">
+        <xsl:with-param name="eats-url" select="$eats-url" />
+      </xsl:call-template>
+    </xsl:variable>
     <xsl:value-of select="kiln:url-for-match('ereed-entity-display-html', ($entity-id), 0)" />
   </xsl:template>
 
