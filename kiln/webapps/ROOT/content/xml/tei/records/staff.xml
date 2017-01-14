@@ -10460,7 +10460,7 @@ table. The (blank) above is the second cell of that row -->the
               <ab>M<ex>aste</ex>r Clerke of the Dutchye</ab>
 
               <ab>Lett the orders <rs ref="http://ereed.library.utoronto.ca/eats/entity/27382/" type="Person_Nobility">I</rs> send yow herew<ex>i</ex>th subscribed by myself and
-                  M<ex>aste</ex>r Attourney concerning ye Minstrells Courte yearlie by Custome
+                  <rs ref="http://ereed.library.utoronto.ca/eats/entity/35183/" type="Person_Gentry">M<ex>aste</ex>r Attourney</rs> concerning ye Minstrells Courte yearlie by Custome
                 <!-- kc: what about master attorney? Att. gen. of duchy of Lancaster at the time was Edward Mosley -->
                 holden at Tutburie bee kept safe in your office and the same bee exemplyfied vnder
                 the Dutchie seale gratis as I am enformed hath beene vsed, an order beeing added to
@@ -10511,7 +10511,7 @@ table. The (blank) above is the second cell of that row -->the
                   Com<ex>itatem</ex> n<ex>ost</ex>r<ex>um</ex> Stafford<ex>ie</ex> Comuniter
                   vocat<ex>e</ex> le Minstrells Court fecerimus exemplificari tenorem
                   quor<ex>un</ex>dam Ordin<ex>um</ex> nup<ex>er</ex> fact<ex>orum</ex> et
-                  renovat<ex>orum</ex> p<ex>er</ex> Cancellar<ex>ium</ex> et Consiliu<ex>m</ex>
+                  renovat<ex>orum</ex> p<ex>er</ex> <rs ref="http://ereed.library.utoronto.ca/eats/entity/27382/" type="Person_Nobility">Cancellar<ex>ium</ex></rs> et Consiliu<ex>m</ex>
                 Ducatus n<ex>ost</ex>ri Lancastr<ex>ie</ex> in Cam<ex>er</ex>a eiusdem
                   Ducat<ex>us</ex> apud Westm<ex>onasterium</ex> et ib<ex>ide</ex>m
                   remanen<ex>tium</ex> tangen<ex>tium</ex> gubernac<ex>i</ex>onem omniu<ex>m</ex>
@@ -10521,8 +10521,7 @@ table. The (blank) above is the second cell of that row -->the
                 Sigillo Ducat<ex>us</ex> n<ex>ost</ex>ri pred<ex>icti</ex> Tricesimo die Iunij Anno
                 Regni n<ex>ost</ex>ri Septimo/</ab>
 
-              <ab><seg type="signed" rend="right">Gerard</seg></ab>
-              <!-- kc: how to EATS this guy? -->
+              <ab><seg type="signed" rend="right">Gerard</seg></ab><!-- kc: I think he is Sir Gilbert Gerard, Clerk of council, duchy of Lancaster. see HPO -->
             </div>
           </div>
           <div type="translations">
@@ -10829,7 +10828,7 @@ table. The (blank) above is the second cell of that row -->the
                   ma<ex>ies</ex>tie and yo<ex>ur</ex> highnes most honorable Counsell in
                   yo<ex>ur</ex> ma<ex>ies</ex>t<ex>ies</ex> most highe Courte of Starre Chamber<gap
                   reason="omitted"/></ab>
-              <ab><seg type="signed" rend="right">fferrour</seg></ab>
+              <ab><seg type="signed" rend="right"><rs ref="http://ereed.library.utoronto.ca/eats/entity/35247/" type="Person_Commoner">fferrour</rs></seg></ab>
               <!-- kc: assume "Ferrour" is last name? of scribe? check with PG -->
             </div>
           </div>
@@ -11121,7 +11120,7 @@ table. The (blank) above is the second cell of that row -->the
                     <hi rend="italic">ie,</hi> arrayed in manner of warre<hi rend="italic"
                   >(?)</hi></note> com to the seid Towne of <term ref="gloss:willenhale-1"
                   >Wilnall</term> to the seid faire and also on Roger Marchall of <term
-                  ref="gloss:weddesbury-1">weddesbury</term> callyng hym self Robyn Hood and on
+                  ref="gloss:weddesbury-1">weddesbury</term> callyng hym self <rs ref="http://ereed.library.utoronto.ca/eats/entity/35310/" type="Entertainment_SeasonalCustom">Robyn Hood</rs> and on
                     <damage><gap unit="chars" extent="3"/></damage><note type="foot">on <damage><gap
                       unit="chars" extent="3"/></damage> : <hi rend="italic">ie,</hi> on Richard
                     ffoxe<hi rend="italic">(?)</hi></note> prest with diu<ex>er</ex>ce other
@@ -11237,7 +11236,7 @@ table. The (blank) above is the second cell of that row -->the
                 the Inh<ex>ab</ex>itant<ex>es</ex> of the sede Town of Hampton <term
                   ref="gloss:weddesbury-1">Weddesbury</term> and Walshall haue <term
                   ref="gloss:comyn">comyn</term> to the seide ffer<ex>e</ex> w<ex>i</ex>t<ex>h</ex>
-                ther capitanns called the Abot of Marham or Robyn Hodys to
+                ther capitanns called the Abot of Marham or <rs ref="http://ereed.library.utoronto.ca/eats/entity/35310/" type="Entertainment_SeasonalCustom">Robyn Hodys</rs> to
                 <!-- kc: what to do with Abbot of Marham and Robin Hood? --> the intent to gether
                 money w<ex>i</ex>t<ex>h</ex> ther disport<ex>es</ex> to the p<ex>ro</ex>fight of the
                 chirches of the seide lordeship<ex>es</ex> wherby grete p<ex>ro</ex>fet hath growen
@@ -12265,8 +12264,8 @@ table. The (blank) above is the second cell of that row -->the
               <ab><rs ref="http://ereed.library.utoronto.ca/eats/entity/28726/"
                   type="Person_Commoner">Vxor Philippi doonton</rs>
                 <foreign xml:lang="eng">filled out drinke in Eveninge prayer time on the Sonday, to
-                  two Lord<ex>es</ex> of misrule, by her owne
-                  <!-- kc: pending SB decision re. lords of misrule --> confession.</foreign> Quo
+                  two <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">Lord<ex>es</ex> of misrule</rs>, by her owne
+                   confession.</foreign> Quo
                 die comp<ex>aruit</ex> et d<ex>omi</ex>nus<note type="foot">d<hi rend="italic"
                     >omi</hi>nus: d <hi rend="italic">written over</hi> in</note> iniu<ex>n</ex>xit
                 ei p<ex>e</ex>ni<ex>tenci</ex>as vt sup<ex>r</ex>a<note type="foot">vt sup<hi
@@ -12365,8 +12364,8 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>It<ex>em</ex> rec<ex>eyvyd</ex> of the lord of Mysrule</cell>
-                  <!-- kc: pending SB -->
+                  <cell>It<ex>em</ex> rec<ex>eyvyd</ex> of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">lord of Mysrule</rs></cell>
+                  
                   <cell rend="right">xj s.</cell>
                 </row>
               </table>
@@ -12390,8 +12389,8 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>It<ex>em</ex> rec<ex>eyvyd</ex> of the Lord of Mysserule</cell>
-                  <!-- kc: pending SB -->
+                  <cell>It<ex>em</ex> rec<ex>eyvyd</ex> of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">Lord of Mysserule</rs></cell>
+                
                   <cell rend="right">iiij s. vj d.</cell>
                 </row>
               </table>
@@ -12441,8 +12440,8 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>rec<ex>eyvyd</ex> of the lord of Mysrule</cell>
-                  <!-- kc: pending SB decision -->
+                  <cell>rec<ex>eyvyd</ex> of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">lord of Mysrule</rs></cell>
+                  
                   <cell rend="right">iiij s. iiij d.</cell>
                 </row>
               </table>
@@ -12629,8 +12628,8 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>Rec<ex>eyvyd</ex> of the lord of Mysrule</cell>
-                  <!-- kc: pending SB -->
+                  <cell>Rec<ex>eyvyd</ex> of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">lord of Mysrule</rs></cell>
+                  
                   <cell rend="right">vij s.</cell>
                 </row>
               </table>
@@ -12689,7 +12688,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>recevyd of the lord of Mysrule</cell>
+                  <cell>recevyd of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">lord of Mysrule</rs></cell>
                   <!-- kc: again, pending SB -->
                   <cell rend="right">x s.</cell>
                 </row>
@@ -12791,8 +12790,8 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>rec<ex>eyvyd</ex> of <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/29278/"
-                      type="Person_Commoner">vmfrey Tomkys</rs> for the lorde of Mysrule</cell>
-                  <!-- kc: pending SB -->
+                      type="Person_Commoner">vmfrey Tomkys</rs> for the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">lorde of Mysrule</rs></cell>
+                  
                   <cell rend="right">vj s. viij d.</cell>
                 </row>
               </table>
@@ -12826,7 +12825,7 @@ table. The (blank) above is the second cell of that row -->the
                       type="Person_Commoner">H salford</rs> for <term ref="gloss:wating-1"
                       >wating</term> in Est<ex>er</ex>
                     <term ref="gloss:wicke-1">wicke</term></cell>
-                  <!-- kc: check with PG about 'waiting' is this as in waits, musicians? or watchers? what is HS's occupation? -->
+                  <!-- kc: check with PG about 'waiting' is this as in waits, musicians? or watchers? what is Salford's occupation? -->
                   <cell rend="right">vj d.</cell>
                 </row>
               </table>
@@ -12838,7 +12837,7 @@ table. The (blank) above is the second cell of that row -->the
                   <cell>payd <del>for</del> to <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/29410/"
                       type="Person_Commoner">Iohn Hosyar</rs> for pleyng in the est<ex>er</ex>
-                    <!-- kc: 'playing' what? what is JH's occupation? -->
+                    <!-- kc: 'playing' what? what is Hosyar's occupation?  "player"? confirm -->
                     <term ref="gloss:wicke-1">wycke</term></cell>
                   <cell rend="right">viij d.</cell>
                 </row>
@@ -12863,7 +12862,7 @@ table. The (blank) above is the second cell of that row -->the
                   q<ex>uo</ex>d null<ex>us</ex> Colliget tene<ex>n</ex>t<ex>es</ex> ext<ex>r</ex>a
                   d<ex>o</ex>m<ex>u</ex>m durant<ex>e</ex> te<ex>m</ex>p<ex>or</ex>e le
                   Som<ex>er</ex>game sine licent<ex>ia</ex> p<ex>ro</ex>posit<ex>i</ex> sub pena
-                <!-- kc: propositi = 'reeve'. Do we tag reeves? pending SB --> forisfact<ex>ure</ex>
+                 forisfact<ex>ure</ex>
                   d<ex>omi</ex>no iij s. iiij d. &amp; eccl<ex>esi</ex>e iij s. iiij d. &amp; Si
                 aliquis t<ex>r</ex>anseat p<ex>ro</ex>det d<ex>omi</ex>no xij d./ <gap
                   reason="omitted"/></ab>
@@ -13063,10 +13062,8 @@ table. The (blank) above is the second cell of that row -->the
                   <cell rend="right">ij d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m the morres <rs
-                      ref="http://ereed.library.utoronto.ca/eats/entity/18451/"
-                      type="Entertainer_Type">dau<ex>n</ex>sse</rs> of lychffelld</cell>
-                  <!-- kc: what about the Morris part  of morris dance? or do I not do it as "dancers" but just the seasonal? entertainment? ask SB -->
+                  <cell>It<ex>e</ex>m the <rs ref="http://ereed.library.utoronto.ca/eats/entity/35332/" type="Entertainment_Type">morres dau<ex>n</ex>sse</rs> of lychffelld</cell>
+                  
                   <cell rend="right">iiij d.</cell>
                 </row>
                 <row>
@@ -13100,8 +13097,8 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m to Robyn hode <term ref="gloss:marresdaunce-1"
-                        >marresdau<ex>n</ex>ce</term> and <rs
+                  <cell>It<ex>e</ex>m to <rs ref="http://ereed.library.utoronto.ca/eats/entity/35310/" type="Entertainment_SeasonalCustom">Robyn hode</rs> <term ref="gloss:marresdaunce-1"
+                        ><rs ref="http://ereed.library.utoronto.ca/eats/entity/35332/" type="Entertainment_Type">marresdau<ex>n</ex>ce</rs></term> and <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/29587/"
                       type="Person_Commoner">Iohn harden</rs></cell>
                   <!-- kc: need SB decision re. Robin Hood and morris dance -->
@@ -13478,7 +13475,7 @@ table. The (blank) above is the second cell of that row -->the
                 Iohan &amp;c. dune p<ex>ar</ex>t &amp; <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/30501/" type="Person_Commoner"
                   >Hans Gough</rs>
-                <!-- kc: Hans Gough, Smeltes, Henry Hultescrane, James Sauche are all patronized entertainers; need revision -->
+                
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/" type="Entertainer_Type"
                   >piper</rs> daut<ex>re</ex> p<ex>ar</ex>t tesmoigne que le dit Hans est retenuz
                 &amp; demurez enu<ex>er</ex>s n<ex>ost</ex>re dit s<ex>eignur</ex> p<ex>ur</ex> peas
@@ -13498,7 +13495,7 @@ table. The (blank) above is the second cell of that row -->the
                     <hi rend="italic">(?)</hi></note> p<ex>ur</ex> son fee des issus del
                   hon<ex>our</ex> de leycestre p<ex>ar</ex> les mayns de le receiv<ex>our</ex>
                 illoques qui p<ex>ur</ex> la temps s<ex>er</ex>ra as
-                <!-- kc: identity of receiver if known, do I tag? --> t<ex>er</ex>mes de saint
+                <!-- kc: identity of receiver if known, do I tag? my research suggests he is William Chiselden, see Levi Fox's volume--> t<ex>er</ex>mes de saint
                 michel &amp; de Pasques p<ex>ar</ex> ovelles porcions En
                   tesm<ex>oi</ex>gn<ex>ance</ex> des quell<ex>es</ex> choses &amp;c
                   d<ex>o</ex>nn<ex>e</ex> etc a Sauuoy p<ex>re</ex>s de Londr<ex>es</ex> le xiij
@@ -14024,8 +14021,8 @@ table. The (blank) above is the second cell of that row -->the
                   ref="http://ereed.library.utoronto.ca/eats/entity/31278/" type="Person_Commoner"
                   >hankyn</rs>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/" type="Entertainer_Type"
-                  >Piper</rs> &amp; sept ses compaigno<ex>n</ex>s noz ministralx
-                <!-- kc: SB: need to know how to names these minstrels of John of Gaunt --> &amp;
+                  >Piper</rs> &amp; sept ses compaigno<ex>n</ex>s <rs ref="http://ereed.library.utoronto.ca/eats/entity/33546/" type="Collective_Troupe">noz ministralx</rs>
+                 &amp;
                 quatre <rs ref="http://ereed.library.utoronto.ca/eats/entity/32578/"
                   type="Collective_Troupe">ministralx n<ex>ost</ex>re tresch<ex>er</ex> ffrere le
                   Conte de
@@ -14275,9 +14272,7 @@ table. The (blank) above is the second cell of that row -->the
                   type="Person_Gentry">William Oke</rs> Clerc de n<ex>ost</ex>re g<ex>r</ex>ande
                 Garderobe..saluz. Nous vous mandons q<ex>ue</ex> de des issues de v<ex>ost</ex>re
                 Receite en n<ex>ost</ex>re Chambre facez paier as p<ex>er</ex>sones souznommees les
-                sommes souzescrites; Cestassauoir <gap reason="omitted"/> Et a vj noz <rs
-                  ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type"
-                  >ministralx</rs> et a <rs
+                sommes souzescrites; Cestassauoir <gap reason="omitted"/> Et a vj <rs ref="http://ereed.library.utoronto.ca/eats/entity/33546/" type="Collective_Troupe">noz ministralx</rs> et a <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/32007/" type="Person_Commoner"
                   >Iohan Gybeson</rs> le vij<hi rend="superscript">me</hi> de n<ex>ost</ex>re doun
                 meisme le io<ex>ur</ex> sept marcs Et a vn p<ex>ur</ex>suant darmes le <rs
@@ -14293,8 +14288,8 @@ table. The (blank) above is the second cell of that row -->the
                 de mohone p<ex>re</ex>sentant a no<ex>us</ex> meisme le io<ex>ur</ex> quarrante
                 <!-- kc: Lady de Mohun, pending reply from Abby --> soldz Et as diu<ex>er</ex>ses
                 heraudes esteantes en n<ex>ost</ex>re p<ex>re</ex>sence le io<ex>ur</ex> del
-                Ephiphanie de n<ex>ost</ex>re doun Cent soldz Et as diu<ex>er</ex>ses ministralx
-                  n<ex>ost</ex>re tresame fere de Centebrugg esteant oue no<ex>us</ex> meisme le
+                Ephiphanie de n<ex>ost</ex>re doun Cent soldz Et as diu<ex>er</ex>ses <rs ref="http://ereed.library.utoronto.ca/eats/entity/32578/" type="Collective_Troupe">ministralx
+                  n<ex>ost</ex>re tresame fere de Centebrugg</rs> esteant oue no<ex>us</ex> meisme le
                   io<ex>ur</ex> Cynk marcs Et a <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/32361/" type="Person_Commoner"
                   >Herman</rs>
@@ -14340,7 +14335,7 @@ table. The (blank) above is the second cell of that row -->the
                   Iohan Clyff</note> de seint michel &amp; de Pasq<ex>ue</ex> p<ex>ar</ex> oueles
                 porcions vous mandons q<ex>ue</ex> au dit Iohan facez paier les auantdites Cent
                 soldz annueles de terme en terme &amp; dan en an en munies come vous facez as autres
-                noz ministralx de son estat et condicion Receiuant deu<ex>er</ex>s vo<ex>us</ex>
+                <rs ref="http://ereed.library.utoronto.ca/eats/entity/33546/" type="Collective_Troupe">noz ministralx</rs> de son estat et condicion Receiuant deu<ex>er</ex>s vo<ex>us</ex>
                   l<ex>ett</ex>res daquitances desouz le seal du dit Iohan tesmoignantes les
                 paiementz queux vous lui ensi ferrez p<ex>ar</ex> queles &amp; p<ex>ar</ex> cestes
                 nous voulons q<ex>ue</ex> vous euez due allouance en v<ex>ot</ex>re aconte
@@ -14466,13 +14461,13 @@ table. The (blank) above is the second cell of that row -->the
                   ref="http://ereed.library.utoronto.ca/eats/entity/31930/" type="Person_Nobility"
                   >fille de Pembrok</rs> encontre le mariage <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/32929/" type="Person_Royalty">la
-                  Roigne</rs> vynt marcs Et a mons<ex>ire</ex> Rob<ex>er</ex>t lande p<ex>ur</ex> vn
+                  Roigne</rs> vynt marcs Et a mons<ex>ire</ex> <rs ref="http://ereed.library.utoronto.ca/eats/entity/35691/" type="Person_Gentry">Rob<ex>er</ex>t lande</rs> p<ex>ur</ex> vn
                 eawere oue vn petite triper<note type="foot">triper: <hi rend="italic">for</hi>
                   trivet <hi rend="italics">(?)</hi></note> supportant leawer dargent et <term
                   ref="gloss:surorez-1">s<ex>ur</ex>orez</term> p<ex>ar</ex> nous don<ex>ez</ex> au
                 Roigne le io<ex>ur</ex> de son mariage ouesq<ex>ue</ex> vn autre gr<ex>an</ex>t
                   triper<note type="foot">triper: <hi rend="italic">for</hi> trivet <hi
-                    rend="italics">(?)</hi></note> achate de mons<ex>ire</ex> Iohan Philippot dys
+                    rend="italics">(?)</hi></note> achate de mons<ex>ire</ex> <rs ref="http://ereed.library.utoronto.ca/eats/entity/35633/" type="Person_Gentry">Iohan Philippot</rs> dys
                 livres &amp; as diu<ex>er</ex>ses heraudes esteantz a Westemonstre le io<ex>ur</ex>
                 del mariage susdit de n<ex>ost</ex>re doun vynt liures Et as diu<ex>er</ex>ses <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type"
@@ -14482,10 +14477,10 @@ table. The (blank) above is the second cell of that row -->the
                 esteantz a smethefeld le io<ex>ur</ex> des ioustes illeoqes de n<ex>ost</ex>re doun
                 vynt marcs. Et as diu<ex>er</ex>ses ministralx esteantz en Smethefeld meisme le
                   io<ex>ur</ex> de n<ex>ost</ex>re doun dys liures <gap reason="omitted"/> Et a vn
-                ministrall le Roy<!-- kc: troupe name? --> descoce fesant son ministralcie en
+                <rs ref="http://ereed.library.utoronto.ca/eats/entity/33003/" type="Collective_Troupe">ministrall le Roy descoce</rs> fesant son ministralcie en
                   n<ex>ost</ex>re p<ex>re</ex>sence a londres de n<ex>ost</ex>re doun le vij
                   io<ex>ur</ex> de ffeu<ex>er</ex>er quarante soldz <gap reason="omitted"/> Et as
-                  diu<ex>er</ex>ses ministrall<ex>er</ex> le Roy de Rome<!-- kc: troupe name? -->
+                  diu<ex>er</ex>ses <rs ref="http://ereed.library.utoronto.ca/eats/entity/35602/" type="Collective_Troupe">ministrall<ex>er</ex> le Roy de Rome</rs>
                 esteantz oue no<ex>us</ex> a londres le mois de ffeu<ex>er</ex>er de n<ex>ost</ex>re
                 doun vynt liures Et a troys ministralles le Roy descoce esteantz oue no<ex>us</ex>
                 meisme le temps de n<ex>ost</ex>re doun sessante soldz <gap reason="omitted"/>
@@ -14503,9 +14498,7 @@ table. The (blank) above is the second cell of that row -->the
                   ref="http://ereed.library.utoronto.ca/eats/entity/32685/" type="Person_Gentry"
                   >William de Chesulden</rs> n<ex>ost</ex>re Recevo<ex>ur</ex> de leycestre &amp;
                   aillio<ex>ur</ex>s saluz. Come p<ex>ar</ex> noz l<ex>ett</ex>res patentes eions
-                  g<ex>ra</ex>ntez a n<ex>ost</ex>re bien ame ministrall <rs
-                  ref="http://ereed.library.utoronto.ca/eats/entity/33238/" type="Person_Commoner"
-                  >Hankyn</rs> ffryssh cynk marcs p<ex>ar</ex> an ap<ex>re</ex>ndre annuelment des
+                  g<ex>ra</ex>ntez a n<ex>ost</ex>re bien ame ministrall <rs ref="http://ereed.library.utoronto.ca/eats/entity/33238/" type="Person_Commoner">Hankyn ffryss</rs>h cynk marcs p<ex>ar</ex> an ap<ex>re</ex>ndre annuelment des
                 issues de n<ex>ost</ex>re sen<ex>iourie</ex> de leycester p<ex>ar</ex> les mains de
                   n<ex>ost</ex>re Receuio<ex>ur</ex> illeoqes qi p<ex>ur</ex> le temps
                 s<ex>er</ex>ra as termes de Pasq<ex>ues</ex> et de seint michel p<ex>ar</ex> oueles
