@@ -123,7 +123,7 @@
     <xsl:variable name="record-id" select="str[@name='document_id']" />
     <xsl:variable name="result-url" select="kiln:url-for-match('ereed-record-display-html', ($record-id), 0)" />
     <tr>
-      <td><input name="ids" value="{$record-id}" type="checkbox" /></td>
+      <td><label class="checkbox"><input name="ids" value="{$record-id}" type="checkbox" /><span class="checkbox-inner"></span></label></td>
       <td class="show-for-small-only">
         <a href="{$result-url}">
           <xsl:value-of select="arr[@name='document_title']/str[1]" />
