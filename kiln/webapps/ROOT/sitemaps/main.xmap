@@ -112,7 +112,7 @@
       <map:match id="ereed-entity-display-html" pattern="entities/*/">
         <map:aggregate element="aggregation" label="content">
           <map:part src="cocoon://internal/eatsml/entity/{1}.xml" />
-          <map:part src="cocoon://_internal/menu/main.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=entities/" />
           <!-- Query for associated records. -->
           <map:part element="records_results" src="cocoon://internal/search/entity_finder_records.xml?q={url-encode:{global:eats-base-url}entity/{1}/}" />
           <!-- Query for associated editorial material. -->
