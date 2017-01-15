@@ -6,34 +6,138 @@
   <!-- Transform EATSML into a more condensed form suitable for use in
        RDF harvesting, annotating search facet results, etc. -->
 
+  <xsl:variable name="floruit_date_period" select="'date_period-484'" />
+  <xsl:variable name="circa_date_type" select="'date_type-489'" />
+  <xsl:variable name="singular_name_type" select="'name_type-18607'" />
+  <xsl:variable name="has_occupation_relationship_type" select="'entity_relationship_type-21008'" />
+
   <xsl:template match="/">
     <eats:entities>
       <xsl:apply-templates select="eats:collection/eats:entities/eats:entity" />
     </eats:entities>
   </xsl:template>
 
+  <xsl:template match="eats:date" mode="title">
+    <!-- Must handle circa and floruit dates, so the assembled form is
+         sadly insufficient. -->
+    <xsl:text>, </xsl:text>
+    <xsl:if test="@date_period=$floruit_date_period">
+      <xsl:text>fl. </xsl:text>
+    </xsl:if>
+    <xsl:variable name="point">
+      <xsl:apply-templates select="eats:date_parts/eats:date_part[@type='point']" />
+    </xsl:variable>
+    <xsl:variable name="point_tpq">
+      <xsl:apply-templates select="eats:date_parts/eats:date_part[@type='point_tpq']" />
+    </xsl:variable>
+    <xsl:variable name="point_taq">
+      <xsl:apply-templates select="eats:date_parts/eats:date_part[@type='point_taq']" />
+    </xsl:variable>
+    <xsl:choose>
+      <xsl:when test="normalize-space($point) or normalize-space($point_tpq) or normalize-space($point_taq)">
+        <xsl:call-template name="assemble_date">
+          <xsl:with-param name="date" select="$point" />
+          <xsl:with-param name="tpq" select="$point_tpq" />
+          <xsl:with-param name="taq" select="$point_taq" />
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="start">
+          <xsl:apply-templates select="eats:date_parts/eats:date_part[@type='start']" />
+        </xsl:variable>
+        <xsl:variable name="start_tpq">
+          <xsl:apply-templates select="eats:date_parts/eats:date_part[@type='start_tpq']" />
+        </xsl:variable>
+        <xsl:variable name="start_taq">
+          <xsl:apply-templates select="eats:date_parts/eats:date_part[@type='start_taq']" />
+        </xsl:variable>
+        <xsl:variable name="end">
+          <xsl:apply-templates select="eats:date_parts/eats:date_part[@type='end']" />
+        </xsl:variable>
+        <xsl:variable name="end_tpq">
+          <xsl:apply-templates select="eats:date_parts/eats:date_part[@type='end_tpq']" />
+        </xsl:variable>
+        <xsl:variable name="end_taq">
+          <xsl:apply-templates select="eats:date_parts/eats:date_part[@type='end_taq']" />
+        </xsl:variable>
+        <xsl:variable name="start_date">
+          <xsl:call-template name="assemble_date">
+            <xsl:with-param name="date" select="$start" />
+            <xsl:with-param name="tpq" select="$start_tpq" />
+            <xsl:with-param name="taq" select="$start_taq" />
+          </xsl:call-template>
+        </xsl:variable>
+        <xsl:variable name="end_date">
+          <xsl:call-template name="assemble_date">
+            <xsl:with-param name="date" select="$end" />
+            <xsl:with-param name="tpq" select="$end_tpq" />
+            <xsl:with-param name="taq" select="$end_taq" />
+          </xsl:call-template>
+        </xsl:variable>
+        <xsl:variable name="date">
+          <xsl:value-of select="$start_date" />
+          <xsl:text> – </xsl:text>
+          <xsl:value-of select="$end_date" />
+        </xsl:variable>
+        <xsl:value-of select="normalize-space($date)" />
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="eats:date_part">
+    <xsl:choose>
+      <xsl:when test="@type = ('point_tpq', 'start_tpq', 'end_tpq')">
+        <xsl:text>at or after </xsl:text>
+      </xsl:when>
+      <xsl:when test="@type = ('point_taq', 'start_taq', 'end_taq')">
+        <xsl:text>at or before </xsl:text>
+      </xsl:when>
+    </xsl:choose>
+    <xsl:if test="@date_type=$circa_date_type">
+      <xsl:text>c. </xsl:text>
+    </xsl:if>
+    <xsl:value-of select="eats:raw" />
+    <xsl:if test="@certainty != 'full'">
+      <xsl:text>?</xsl:text>
+    </xsl:if>
+  </xsl:template>
+
   <xsl:template match="eats:entity">
     <xsl:copy>
       <xsl:apply-templates select="@*" />
       <xsl:variable name="name">
-        <xsl:apply-templates select="eats:names/eats:name[@is_preferred='true'][1]" />
-      </xsl:variable>
-      <xsl:variable name="primary-name">
-        <xsl:choose>
-          <xsl:when test="normalize-space($name)">
-            <xsl:value-of select="$name" />
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:apply-templates select="eats:names/eats:name[1]" />
-          </xsl:otherwise>
-        </xsl:choose>
+        <xsl:apply-templates mode="name" select="." />
       </xsl:variable>
       <primary_name>
-        <xsl:value-of select="$primary-name" />
+        <xsl:value-of select="$name" />
       </primary_name>
+      <xsl:apply-templates mode="singular" select="eats:names/eats:name[@name_type=$singular_name_type]" />
       <title>
+        <xsl:value-of select="$name" />
+        <!-- QAZ: Handle multiple dates. -->
+        <xsl:apply-templates mode="title" select="eats:existences/eats:existence/eats:dates/eats:date" />
+        <xsl:apply-templates mode="title" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$has_occupation_relationship_type][@domain_entity=current()/@xml:id]" />
       </title>
     </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match="eats:entity" mode="name">
+    <xsl:variable name="name">
+      <xsl:apply-templates select="eats:names/eats:name[@is_preferred='true'][1]" />
+    </xsl:variable>
+    <xsl:choose>
+      <xsl:when test="normalize-space($name)">
+        <xsl:value-of select="$name" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates select="eats:names/eats:name[1]" />
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="eats:entity_relationship" mode="title">
+    <xsl:text>, </xsl:text>
+    <xsl:apply-templates mode="singular" select="id(@range_entity)/eats:names/eats:name[@name_type=$singular_name_type]" />
   </xsl:template>
 
   <xsl:template match="eats:name">
@@ -47,14 +151,36 @@
     </xsl:choose>
   </xsl:template>
 
-  <xsl:template match="eats:existence/eats:dates">
-    <dates>
-      <xsl:apply-templates select="eats:date" />
-    </dates>
+  <xsl:template match="eats:name" mode="singular">
+    <singular>
+      <xsl:apply-templates select="." />
+    </singular>
   </xsl:template>
 
   <xsl:template match="@*">
     <xsl:copy/>
+  </xsl:template>
+
+  <xsl:template name="assemble_date">
+    <xsl:param name="date" />
+    <xsl:param name="tpq" />
+    <xsl:param name="taq" />
+    <xsl:choose>
+      <xsl:when test="$date">
+        <xsl:value-of select="$date" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:if test="$tpq">
+          <xsl:value-of select="$tpq" />
+          <xsl:if test="$taq">
+            <xsl:text> and </xsl:text>
+          </xsl:if>
+        </xsl:if>
+        <xsl:if test="$taq">
+          <xsl:value-of select="$taq" />
+        </xsl:if>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
 </xsl:stylesheet>

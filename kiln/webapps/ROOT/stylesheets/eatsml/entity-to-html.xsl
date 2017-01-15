@@ -10,4 +10,8 @@
     <xsl:value-of select="$entity/primary_name" />
   </xsl:template>
 
+  <xsl:template name="display-entity-title">
+    <xsl:value-of select="$entity/title" />
+  </xsl:template>
+
 </xsl:stylesheet>
