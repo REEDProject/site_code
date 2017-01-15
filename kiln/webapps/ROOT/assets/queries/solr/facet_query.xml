@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <query>
   <df>text</df>
+  <fq>document_type:record</fq>
   <facet>true</facet>
   <facet.field>facet_locations_country</facet.field>
   <facet.field>facet_locations_county</facet.field>
