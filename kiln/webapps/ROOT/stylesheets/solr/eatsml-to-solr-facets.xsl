@@ -131,9 +131,9 @@
     <!-- Person: occupation. -->
     <xsl:if test="@entity_relationship_type=$had_occupation and
                   @domain_entity=$entity_id">
-      <field name="facet_collectives_occupation">
-        <xsl:value-of select="$range_entity/@eats_id" />
-      </field>
+      <xsl:apply-templates select="$range_entity/eats:entity_types/eats:entity_type/@entity_type">
+        <xsl:with-param name="entity_eats_id" select="$range_entity/@eats_id" />
+      </xsl:apply-templates>
     </xsl:if>
   </xsl:template>
 
