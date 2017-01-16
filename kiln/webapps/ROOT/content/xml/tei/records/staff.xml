@@ -914,7 +914,7 @@
     <group>
       <text ana="taxon:church" type="record" xml:id="staff-ridm51130848">
         <body xml:lang="eng">
-          <head><rs>Diocese of Lichfield</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3594/" type="Place_EcclesiasticalArea">Diocese of Lichfield</rs>
             <date when-iso="1635">1635</date>
             <seg ana="taxon:AWAS">AWAS</seg></head>
           <div type="transcription" xml:id="staff-ridm51130848-transcription">
@@ -942,7 +942,7 @@
       </text>
       <text ana="taxon:manor" type="record" xml:id="staff-ridm50946192">
         <body xml:lang="lat">
-          <head><rs>Abbots Bromley</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1026/" type="Place_BoroughParish">Abbots Bromley</rs>
             <date when-iso="1532">1532</date>
             <seg ana="taxon:DOU2">DOU2</seg></head>
           <div type="transcription" xml:id="staff-ridm50946192-transcription">
@@ -991,7 +991,7 @@
       </text>
       <text ana="taxon:church" type="record" xml:id="staff-ridm60157968">
         <body xml:lang="eng">
-          <head><rs>Abbots Bromley</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1026/" type="Place_BoroughParish">Abbots Bromley</rs>
             <date when-iso="1584">1584</date>
             <seg ana="taxon:V117">V117</seg></head>
           <div type="transcription" xml:id="staff-ridm60157968-transcription">
@@ -1020,7 +1020,7 @@
       </text>
       <text ana="taxon:church" type="record" xml:id="staff-ridm60134368">
         <body xml:lang="eng">
-          <head><rs>Betley</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3375/" type="Place_BoroughParish">Betley</rs>
             <date when-iso="1635">1635</date>
             <seg ana="taxon:CCCR">CCCR</seg></head>
           <div type="transcription" xml:id="staff-ridm60134368-transcription">
@@ -1136,7 +1136,7 @@
       </text>
       <text ana="taxon:rel_community" type="record" xml:id="staff-ridm60127840">
         <body xml:lang="lat">
-          <head><rs>Burton upon Trent</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/" type="Place_BoroughParish">Burton upon Trent</rs>
             <date when-iso="1259">1259</date>
             <seg ana="taxon:ABTA">ABTA</seg></head>
           <div type="transcription" xml:id="staff-ridm60127840-transcription">
@@ -1181,7 +1181,7 @@
       </text>
       <text ana="taxon:church" type="record" xml:id="staff-ridm60068656">
         <body xml:lang="eng">
-          <head><rs>Burton upon Trent</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/" type="Place_BoroughParish">Burton upon Trent</rs>
             <date when-iso="1616">1616</date>
             <seg ana="taxon:V131">V131</seg></head>
           <div type="transcription" xml:id="staff-ridm60068656-transcription">
@@ -1252,7 +1252,7 @@
       </text>
       <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm60050432">
         <body xml:lang="eng">
-          <head><rs>Burton upon Trent</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/" type="Place_BoroughParish">Burton upon Trent</rs>
             <date when-iso="1619">1619</date>
             <seg ana="taxon:BUR1">BUR1</seg></head>
           <div type="transcription" xml:id="staff-ridm60050432-transcription">
@@ -1571,7 +1571,7 @@
       </text>
       <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm60024384">
         <body xml:lang="eng">
-          <head><rs>Burton upon Trent</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/" type="Place_BoroughParish">Burton upon Trent</rs>
             <date when-iso="1619">1619</date>
             <seg ana="taxon:BUR1">BUR1</seg></head>
           <div type="transcription" xml:id="staff-ridm60024384-transcription">
@@ -1715,7 +1715,7 @@
       </text>
       <text ana="taxon:church" type="record" xml:id="staff-ridm59898448">
         <body xml:lang="lat">
-          <head><rs>Checkley</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3393/" type="Place_BoroughParish">Checkley</rs>
             <date when-iso="1631">1631</date>
             <seg ana="taxon:V151">V151</seg></head>
           <div type="transcription" xml:id="staff-ridm59898448-transcription">
@@ -13431,13 +13431,13 @@ table. The (blank) above is the second cell of that row -->the
                   gen<ex>er</ex>al salutz.<note type="marginal" place="margin_left">p<ex>ur</ex>
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/30273/"
                     type="Person_Commoner">Henr<ex>i</ex></rs>
-                  <!-- kc: ask SB about how do deal with a single patronized performer -->
-                  <!-- kc: also rev. as "Collective_Troupe" -->
+                  
+                  
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/"
                     type="Entertainer_Type">Piper</rs> &amp; <rs
                     ref="http://ereed.library.utoronto.ca/eats/entity/30299/" type="Person_Commoner"
                       >Rog<ex>er</ex></rs>
-                  <!-- kc: Roger is also type=Collective_Troupe. need rev. -->
+                  
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/"
                     type="Entertainer_Type">Piper</rs></note> Nous voulons et vous mandons que des
                 issues de v<ex>ost</ex>re Receite paiez &amp; deliu<ex>er</ex>ez a noz b<ex>ie</ex>n
