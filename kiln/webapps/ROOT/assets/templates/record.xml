@@ -16,7 +16,7 @@
     <kiln:block name="title">
       <kiln:super />
       <xsl:text>Record: </xsl:text>
-      <xsl:value-of select="$record_text/tei:body/tei:head" />
+      <xsl:value-of select="$record_text/tei:body/tei:head/tei:title" />
     </kiln:block>
 
     <kiln:block name="content">
