@@ -230,7 +230,14 @@
     <xsl:attribute name="url">
       <xsl:value-of select="kiln:url-for-match('ereed-entity-display-html', ($entity/@eats_id), 0)" />
     </xsl:attribute>
-    <xsl:apply-templates mode="name" select="$entity" />
+    <xsl:choose>
+      <xsl:when test="@entity_relationship_type=$has_occupation_relationship_type and @range_entity=$entity/@xml:id">
+        <xsl:apply-templates mode="singular" select="$entity/eats:names/eats:name[@name_type=$singular_name_type]" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates mode="name" select="$entity" />
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
 </xsl:stylesheet>
