@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="2.0"
                 xmlns:eats="http://eats.artefact.org.nz/ns/eatsml/"
+                xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- Transform EATSML into a more condensed form suitable for use in
        RDF harvesting, annotating search facet results, etc. -->
+
+  <xsl:import href="cocoon://_internal/url/reverse.xsl" />
 
   <xsl:variable name="floruit_date_period" select="'date_period-484'" />
   <xsl:variable name="circa_date_type" select="'date_type-489'" />
@@ -35,7 +38,7 @@
     </xsl:variable>
     <xsl:choose>
       <xsl:when test="normalize-space($point) or normalize-space($point_tpq) or normalize-space($point_taq)">
-        <xsl:call-template name="assemble_date">
+        <xsl:call-template name="assemble-date">
           <xsl:with-param name="date" select="$point" />
           <xsl:with-param name="tpq" select="$point_tpq" />
           <xsl:with-param name="taq" select="$point_taq" />
@@ -61,14 +64,14 @@
           <xsl:apply-templates select="eats:date_parts/eats:date_part[@type='end_taq']" />
         </xsl:variable>
         <xsl:variable name="start_date">
-          <xsl:call-template name="assemble_date">
+          <xsl:call-template name="assemble-date">
             <xsl:with-param name="date" select="$start" />
             <xsl:with-param name="tpq" select="$start_tpq" />
             <xsl:with-param name="taq" select="$start_taq" />
           </xsl:call-template>
         </xsl:variable>
         <xsl:variable name="end_date">
-          <xsl:call-template name="assemble_date">
+          <xsl:call-template name="assemble-date">
             <xsl:with-param name="date" select="$end" />
             <xsl:with-param name="tpq" select="$end_tpq" />
             <xsl:with-param name="taq" select="$end_taq" />
@@ -103,6 +106,7 @@
   </xsl:template>
 
   <xsl:template match="eats:entity">
+    <xsl:variable name="entity_id" select="@xml:id" />
     <xsl:copy>
       <xsl:apply-templates select="@*" />
       <xsl:variable name="name">
@@ -116,8 +120,13 @@
         <xsl:value-of select="$name" />
         <!-- QAZ: Handle multiple dates. -->
         <xsl:apply-templates mode="title" select="eats:existences/eats:existence/eats:dates/eats:date" />
-        <xsl:apply-templates mode="title" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$has_occupation_relationship_type][@domain_entity=current()/@xml:id]" />
+        <xsl:apply-templates mode="title" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$has_occupation_relationship_type][@domain_entity=$entity_id]" />
       </title>
+      <relationships>
+        <xsl:apply-templates select="eats:entity_relationships/eats:entity_relationship">
+          <xsl:with-param name="entity_id" select="$entity_id" />
+        </xsl:apply-templates>
+      </relationships>
     </xsl:copy>
   </xsl:template>
 
@@ -133,6 +142,39 @@
         <xsl:apply-templates select="eats:names/eats:name[1]" />
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="eats:entity_relationship">
+    <xsl:param name="entity_id" />
+    <xsl:variable name="relationship" select="id(@entity_relationship_type)" />
+    <relationship>
+      <name>
+        <xsl:choose>
+          <xsl:when test="@domain_entity = $entity_id">
+            <xsl:value-of select="$relationship/eats:name" />
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="$relationship/eats:reverse_name" />
+          </xsl:otherwise>
+        </xsl:choose>
+      </name>
+      <entity>
+        <xsl:choose>
+          <xsl:when test="@domain_entity = $entity_id">
+            <xsl:variable name="related_entity" select="id(@range_entity)" />
+            <xsl:call-template name="process-related-entity">
+              <xsl:with-param name="entity" select="$related_entity" />
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:variable name="related_entity" select="id(@domain_entity)" />
+            <xsl:call-template name="process-related-entity">
+              <xsl:with-param name="entity" select="$related_entity" />
+            </xsl:call-template>
+          </xsl:otherwise>
+        </xsl:choose>
+      </entity>
+    </relationship>
   </xsl:template>
 
   <xsl:template match="eats:entity_relationship" mode="title">
@@ -161,7 +203,7 @@
     <xsl:copy/>
   </xsl:template>
 
-  <xsl:template name="assemble_date">
+  <xsl:template name="assemble-date">
     <xsl:param name="date" />
     <xsl:param name="tpq" />
     <xsl:param name="taq" />
@@ -181,6 +223,14 @@
         </xsl:if>
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="process-related-entity">
+    <xsl:param name="entity" />
+    <xsl:attribute name="url">
+      <xsl:value-of select="kiln:url-for-match('ereed-entity-display-html', ($entity/@eats_id), 0)" />
+    </xsl:attribute>
+    <xsl:apply-templates mode="name" select="$entity" />
   </xsl:template>
 
 </xsl:stylesheet>

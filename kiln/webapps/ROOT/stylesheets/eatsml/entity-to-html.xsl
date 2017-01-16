@@ -14,4 +14,20 @@
     <xsl:value-of select="$entity/title" />
   </xsl:template>
 
+  <xsl:template name="display-related-entities">
+    <table class="display related-entities-table responsive" cellspacing="0" width="100%">
+      <tbody class="related-content">
+        <xsl:for-each select="$entity/relationships/relationship">
+          <tr>
+            <td class="individual-related-entity">
+              <xsl:value-of select="name" />
+              <xsl:text> </xsl:text>
+              <a href="{entity/@url}"><xsl:value-of select="entity" /></a>
+            </td>
+          </tr>
+        </xsl:for-each>
+      </tbody>
+    </table>
+  </xsl:template>
+
 </xsl:stylesheet>
