@@ -84,9 +84,6 @@
         <field name="record_date_display">
           <xsl:value-of select="tei:body/tei:head/tei:date" />
         </field>
-        <!-- QAZ: support having a display date and a date for
-             indexing. Ties in to need to have the results table
-             sortable on index date in attribute. -->
         <field name="text">
           <xsl:value-of select="normalize-space($free-text)" />
         </field>
