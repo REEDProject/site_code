@@ -922,6 +922,13 @@
                         <sense xml:id="hallow-1">hollow, empty</sense>
                     </entry>
 
+                    <entry xml:id="hampton">
+                        <form><orth><hi rend="bold">hampton</hi></orth><gram><hi rend="italics">n</hi></gram></form>
+                        <sense xml:id="hampton-1">likely an abbreviation of Wolverhampton 
+                            <form><orth><hi rend="bold">hamptonn</hi></orth></form>
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="harnes">
                         <form><orth><hi rend="bold">harnes</hi></orth><gram><hi rend="italics"
                                     >n</hi></gram></form>
@@ -1196,8 +1203,8 @@
                     <entry xml:id="querry">
                         <form><orth><hi rend="bold">querry</hi></orth><gram><hi rend="italics"
                                     >n</hi></gram></form>
-                        <sense xml:id="querry-1">quarry, hunt <form><orth><hi rend="bold"
-                                        >querrye</hi></orth></form>
+                        <sense xml:id="querry-1">quarry, hunt 
+                            <form><orth><hi rend="bold">querrye</hi></orth></form>
                         </sense>
                     </entry>
                 </div>
@@ -1322,7 +1329,11 @@
                         </sense>
                     </entry>
 
-                    <!-- somergame goes here if we don't end up giving it an EN-->
+                    <entry xml:id="somergame">
+                        <form><orth><hi rend="bold">somergame</hi></orth><gram><hi rend="italics">n comp</hi></gram></form>
+                        <sense xml:id="somergame-1">summer game; a festival, sport, or entertainment held in the summer</sense>
+                    </entry>
+                    <!-- "summer game" comes up in a translation of a Latin record; should I tag the Latin to refer to this gloss, as it seems to be an English term dumped into the Latin?-->
 
                     <entry xml:id="statebodye">
                         <form><orth><hi rend="bold">statebodye</hi></orth><gram><hi rend="italics">n
