@@ -914,7 +914,8 @@
     <group>
       <text ana="taxon:church" type="record" xml:id="staff-ridm51130848">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3594/" type="Place_EcclesiasticalArea">Diocese of Lichfield</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3594/"
+              type="Place_EcclesiasticalArea">Diocese of Lichfield</rs>
             <date when-iso="1635">1635</date>
             <seg ana="taxon:AWAS">AWAS</seg></head>
           <div type="transcription" xml:id="staff-ridm51130848-transcription">
@@ -942,7 +943,8 @@
       </text>
       <text ana="taxon:manor" type="record" xml:id="staff-ridm50946192">
         <body xml:lang="lat">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1026/" type="Place_BoroughParish">Abbots Bromley</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1026/"
+              type="Place_BoroughParish">Abbots Bromley</rs>
             <date when-iso="1532">1532</date>
             <seg ana="taxon:DOU2">DOU2</seg></head>
           <div type="transcription" xml:id="staff-ridm50946192-transcription">
@@ -991,7 +993,8 @@
       </text>
       <text ana="taxon:church" type="record" xml:id="staff-ridm60157968">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1026/" type="Place_BoroughParish">Abbots Bromley</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1026/"
+              type="Place_BoroughParish">Abbots Bromley</rs>
             <date when-iso="1584">1584</date>
             <seg ana="taxon:V117">V117</seg></head>
           <div type="transcription" xml:id="staff-ridm60157968-transcription">
@@ -1020,7 +1023,8 @@
       </text>
       <text ana="taxon:church" type="record" xml:id="staff-ridm60134368">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3375/" type="Place_BoroughParish">Betley</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3375/"
+              type="Place_BoroughParish">Betley</rs>
             <date when-iso="1635">1635</date>
             <seg ana="taxon:CCCR">CCCR</seg></head>
           <div type="transcription" xml:id="staff-ridm60134368-transcription">
@@ -1136,7 +1140,8 @@
       </text>
       <text ana="taxon:rel_community" type="record" xml:id="staff-ridm60127840">
         <body xml:lang="lat">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/" type="Place_BoroughParish">Burton upon Trent</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/"
+              type="Place_BoroughParish">Burton upon Trent</rs>
             <date when-iso="1259">1259</date>
             <seg ana="taxon:ABTA">ABTA</seg></head>
           <div type="transcription" xml:id="staff-ridm60127840-transcription">
@@ -1181,7 +1186,8 @@
       </text>
       <text ana="taxon:church" type="record" xml:id="staff-ridm60068656">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/" type="Place_BoroughParish">Burton upon Trent</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/"
+              type="Place_BoroughParish">Burton upon Trent</rs>
             <date when-iso="1616">1616</date>
             <seg ana="taxon:V131">V131</seg></head>
           <div type="transcription" xml:id="staff-ridm60068656-transcription">
@@ -1252,7 +1258,8 @@
       </text>
       <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm60050432">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/" type="Place_BoroughParish">Burton upon Trent</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/"
+              type="Place_BoroughParish">Burton upon Trent</rs>
             <date when-iso="1619">1619</date>
             <seg ana="taxon:BUR1">BUR1</seg></head>
           <div type="transcription" xml:id="staff-ridm60050432-transcription">
@@ -1571,7 +1578,8 @@
       </text>
       <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm60024384">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/" type="Place_BoroughParish">Burton upon Trent</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/"
+              type="Place_BoroughParish">Burton upon Trent</rs>
             <date when-iso="1619">1619</date>
             <seg ana="taxon:BUR1">BUR1</seg></head>
           <div type="transcription" xml:id="staff-ridm60024384-transcription">
@@ -1715,7 +1723,8 @@
       </text>
       <text ana="taxon:church" type="record" xml:id="staff-ridm59898448">
         <body xml:lang="lat">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3393/" type="Place_BoroughParish">Checkley</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/3393/"
+              type="Place_BoroughParish">Checkley</rs>
             <date when-iso="1631">1631</date>
             <seg ana="taxon:V151">V151</seg></head>
           <div type="transcription" xml:id="staff-ridm59898448-transcription">
@@ -2335,6 +2344,8 @@
                         type="Person_Commoner">Ric<ex>ard</ex>us Addams</rs></foreign></cell>
                 </row>
               </table>
+              <note type="foot">Rogerus...Addams: <hi rend="italic">braced, pointing to</hi>foreign
+                  xml:lang="lat">Iur<ex>ati</ex>in plena Cur<ex>ia</ex></note>
 
               <ab><foreign xml:lang="lat"><del>f<damage><gap unit="chars" extent="3"/></damage>
                       bre<ex>ve</ex> de</del> ‸<add place="above">Conceditur bene gerend<ex>um</ex>
@@ -2378,6 +2389,8 @@
                   <cell> Richard Addams</cell>
                 </row>
               </table>
+              <note type="foot">Roger...Addams: <hi rend="italic">names braced, pointing
+                to</hi>sworn in full court</note>
 
               <ab><del><damage><gap unit="chars" extent="3"/></damage> a brief concerning</del> (A
                 bond for) good behaviour against the Thomas Jacson of Eccleshall who is named within
@@ -13431,13 +13444,10 @@ table. The (blank) above is the second cell of that row -->the
                   gen<ex>er</ex>al salutz.<note type="marginal" place="margin_left">p<ex>ur</ex>
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/30273/"
                     type="Person_Commoner">Henr<ex>i</ex></rs>
-                  
-                  
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/"
                     type="Entertainer_Type">Piper</rs> &amp; <rs
                     ref="http://ereed.library.utoronto.ca/eats/entity/30299/" type="Person_Commoner"
                       >Rog<ex>er</ex></rs>
-                  
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/"
                     type="Entertainer_Type">Piper</rs></note> Nous voulons et vous mandons que des
                 issues de v<ex>ost</ex>re Receite paiez &amp; deliu<ex>er</ex>ez a noz b<ex>ie</ex>n
@@ -14528,12 +14538,13 @@ table. The (blank) above is the second cell of that row -->the
                 Westemonstre le io<ex>ur</ex> del mariage susdit de n<ex>ost</ex>re doun vynt liures
                 Et as diu<ex>er</ex>ses <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/"
                   type="Entertainer_Type">ministralles</rs> esteantes illeoqes<note type="marginal"
-                  place="margin_left">touchant la g<ex>r</ex>ande Gardrobe <!-- brace -->Oke</note>
-                meisme le io<ex>ur</ex> de n<ex>ost</ex>re doun vynt marcs Et as diu<ex>er</ex>ses
-                heraudes esteantz a smethefeld le io<ex>ur</ex> des ioustes illeoqes de
-                  n<ex>ost</ex>re doun vynt marcs. Et as diu<ex>er</ex>ses ministralx esteantz en
-                Smethefeld meisme le io<ex>ur</ex> de n<ex>ost</ex>re doun dys liures <gap
-                  reason="omitted"/> Et a vn <rs
+                  place="margin_left">touchant la g<ex>r</ex>ande<lb/> Gardrobe<note type="foot"
+                    >touchant...Gardrobe: <hi rend="italic">braced, pointing to</hi>Oke</note>
+                  Oke</note> meisme le io<ex>ur</ex> de n<ex>ost</ex>re doun vynt marcs Et as
+                  diu<ex>er</ex>ses heraudes esteantz a smethefeld le io<ex>ur</ex> des ioustes
+                illeoqes de n<ex>ost</ex>re doun vynt marcs. Et as diu<ex>er</ex>ses ministralx
+                esteantz en Smethefeld meisme le io<ex>ur</ex> de n<ex>ost</ex>re doun dys liures
+                  <gap reason="omitted"/> Et a vn <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/33003/" type="Collective_Troupe"
                   >ministrall le Roy descoce</rs> fesant son ministralcie en n<ex>ost</ex>re
                   p<ex>re</ex>sence a londres de n<ex>ost</ex>re doun le vij io<ex>ur</ex> de
@@ -14615,15 +14626,15 @@ table. The (blank) above is the second cell of that row -->the
                 queen on the day of her marriage with another large trivet bought from my lord John
                 Philipot, £10 and to various heralds being at Westminster the day of the abovesaid
                 marriage of our gift £20, and to various minstrels being there<note type="marginal"
-                  place="margin_left">Regarding the Great Wardrobe <!-- brace --> Oke</note> on the
-                same day, of our gift 20 marks, and to various heralds being at Smithfield on the
-                day of the jousts there of our gift 20 marks, and to various minstrels being in
-                Smithfield the same day, of our gift £10 <gap reason="omitted"/> and to a minstrel
-                of the king of Scotland making his minstrelsy in our presence at London of our gift,
-                7 February, 40s <gap reason="omitted"/> and to various minstrels of the king of Rome
-                being with us at London the month of February, of our gift £420. And to three
-                minstrels (of) the king of Scotland being with us at the same time of our gift, 60s
-                  <gap reason="omitted"/> given at Westminster, 6 March, the fourth year, etc.</ab>
+                  place="margin_left">Regarding the Great Wardrobe</note> Oke on the same day, of
+                our gift 20 marks, and to various heralds being at Smithfield on the day of the
+                jousts there of our gift 20 marks, and to various minstrels being in Smithfield the
+                same day, of our gift £10 <gap reason="omitted"/> and to a minstrel of the king of
+                Scotland making his minstrelsy in our presence at London of our gift, 7 February,
+                40s <gap reason="omitted"/> and to various minstrels of the king of Rome being with
+                us at London the month of February, of our gift £420. And to three minstrels (of)
+                the king of Scotland being with us at the same time of our gift, 60s <gap
+                  reason="omitted"/> given at Westminster, 6 March, the fourth year, etc.</ab>
 
               <gap reason="omitted"/>
             </div>
@@ -14690,8 +14701,8 @@ table. The (blank) above is the second cell of that row -->the
                 souznomees Cestasseuoir <gap reason="omitted"/> Et as diu<ex>er</ex>ses Heroudes a
                 Wyndesore le io<ex>ur</ex> de seint George de n<ex>ost</ex>re doun dys liures Et as
                   diu<ex>er</ex>ses<note type="marginal" place="margin_left">Vne l<ex>ett</ex>re
-                  touchant la g<ex>ra</ex>nt Gardrobe <!-- MS
-brace to: --> Oke</note>
+                  touchant<lb/> la g<ex>ra</ex>nt Gardrobe<note>Vne...Gardrobe: <hi rend="italic"
+                      >braced, pointing to</hi>Oke</note> Oke</note>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type"
                   >ministrals</rs> illeoqes de n<ex>ost</ex>re doun x marcs. Et a vn vallett
                   mons<ex>ire</ex>
@@ -14730,20 +14741,20 @@ brace to: --> Oke</note>
                 our chamber you cause to be paid to the underwritten persons the sums named below,
                 that is to say <gap reason="omitted"/> and to various heralds at Windsor on St
                 George's Day of our gift, £10. And to the various<note type="marginal"
-                  place="margin_left">A letter regarding<lb/> the Great Wardrobe
-                  <!-- MS brace to --><lb/> Oke</note> minstrels there of our gift, 10 marks. And to
-                a valet, my lord Poto, a knight from Germany presenting to us a warhorse belonging
-                to (<hi rend="italic">or</hi> on behalf of) the same my lord Poto, of our gift, 13s
-                4d. And to the various heralds being with us at Hertford (on) May Day, the time of
-                our jousts there, of our gift, 10 marks. And to the various minstrels there of our
-                gift, 10 marks. And (that) you make distribution to poor people giving as much money
-                as the (?) 6 nobles wagered on us and our charger at the jousts of Smithfield,
-                Windsor, and Hertford, 40s<gap reason="omitted"/>. And (that) you make distribution
-                to the poor people to the value of 2 nobles wagered on us and our charger at the
-                jousts of Chelmsford, 14s 4d. And to various heralds being at the same jousts, of
-                our gift, 10 marks. And to various minstrels being there, of our gift, 10 marks<gap
-                  reason="omitted"/>. Given, etc, at our castle of <space/>, 6 May, the sixth year,
-                etc.</ab>
+                  place="margin_left">A letter regarding<lb/> the Great Wardrobe<note type="foot"
+                    >A...Wardrobe: <hi rend="italic">braced, pointing to</hi>Oke</note> Oke</note>
+                minstrels there of our gift, 10 marks. And to a valet, my lord Poto, a knight from
+                Germany presenting to us a warhorse belonging to (<hi rend="italic">or</hi> on
+                behalf of) the same my lord Poto, of our gift, 13s 4d. And to the various heralds
+                being with us at Hertford (on) May Day, the time of our jousts there, of our gift,
+                10 marks. And to the various minstrels there of our gift, 10 marks. And (that) you
+                make distribution to poor people giving as much money as the (?) 6 nobles wagered on
+                us and our charger at the jousts of Smithfield, Windsor, and Hertford, 40s<gap
+                  reason="omitted"/>. And (that) you make distribution to the poor people to the
+                value of 2 nobles wagered on us and our charger at the jousts of Chelmsford, 14s 4d.
+                And to various heralds being at the same jousts, of our gift, 10 marks. And to
+                various minstrels being there, of our gift, 10 marks<gap reason="omitted"/>. Given,
+                etc, at our castle of <space/>, 6 May, the sixth year, etc.</ab>
 
               <gap reason="omitted"/>
             </div>
