@@ -27,7 +27,7 @@
   <!-- QAZ: Handle printed sources. -->
 
   <xsl:template match="tei:bibl" mode="addition">
-    <xsl:copy-of select="tei:title" />
+    <xsl:copy-of select="tei:title[@type='edName']" />
     <tei:span type="shelfmark">
       <xsl:choose>
         <xsl:when test="tei:idno[@type='STC_number']">
@@ -53,6 +53,7 @@
   <xsl:template match="tei:msDesc" mode="addition">
     <xsl:apply-templates mode="addition" select="tei:msIdentifier" />
     <xsl:copy-of select="tei:p" />
+    <xsl:copy-of select="tei:ab[@type='techDesc']" />
   </xsl:template>
 
   <xsl:template match="tei:msIdentifier" mode="addition">

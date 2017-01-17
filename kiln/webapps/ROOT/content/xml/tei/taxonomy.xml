@@ -93,87 +93,107 @@
                         <catDesc>Repositories</catDesc>
                         <category xml:id="Bodl.">
                             <catDesc>
+                              <choice>
                                 <abbr>Bodl.</abbr>
-                                <name>Bodleian</name>
+                                <expan>Bodleian</expan>
+                              </choice>
                             </catDesc>
                         </category>
                         <category xml:id="LRO">
                             <catDesc>
+                              <choice>
                                 <abbr>LRO</abbr>
-                                <name>Lichfield Record Office</name>
+                                <expan>Lichfield Record Office</expan>
+                              </choice>
                             </catDesc>
                         </category>
                         <category xml:id="cheshire-record-office">
-                            <catDesc><name>Cheshire Record Office</name></catDesc>
+                            <catDesc>Cheshire Record Office</catDesc>
                         </category>
                         <category xml:id="BL">
                             <catDesc>
+                              <choice>
                                 <abbr>BL</abbr>
-                                <name>British Library</name>
+                                <expan>British Library</expan>
+                              </choice>
                             </catDesc>
                         </category>
                         <category xml:id="TNA">
                             <catDesc>
+                              <choice>
                                 <abbr>TNA</abbr>
-                                <name>The National Archives</name>
+                                <expan>The National Archives</expan>
+                              </choice>
                             </catDesc>
                         </category>
                         <category xml:id="STRO">
                             <catDesc>
+                              <choice>
                                 <abbr>STRO</abbr>
-                                <name>Staffordshire Record Office</name>
+                                <expan>Staffordshire Record Office</expan>
+                              </choice>
                             </catDesc>
                         </category>
                         <category xml:id="chetham-library">
-                            <catDesc><name>Chetham's Library</name></catDesc>
+                            <catDesc>Chetham's Library</catDesc>
                         </category>
                         <category xml:id="lincolnshire-archives">
-                            <catDesc><name>Lincolnshire Archives</name></catDesc>
+                            <catDesc>Lincolnshire Archives</catDesc>
                         </category>
                         <category xml:id="lichfield-cathedral-library">
-                            <catDesc><name>Lichfield Cathedral Library</name></catDesc>
+                            <catDesc>Lichfield Cathedral Library</catDesc>
                         </category>
                         <category xml:id="brampton-museum">
-                            <catDesc><name>Brampton Museum</name></catDesc>
+                            <catDesc>Brampton Museum</catDesc>
                         </category>
                         <category xml:id="WRO">
                             <catDesc>
+                              <choice>
                                 <abbr>WRO</abbr>
-                                <name>Worcester Record Office</name>
+                                <expan>Worcester Record Office</expan>
+                              </choice>
                             </catDesc>
                         </category>
                         <category xml:id="william-salt-library">
-                            <catDesc><name>William Salt Library</name></catDesc>
+                            <catDesc>William Salt Library</catDesc>
                         </category>
                         <category xml:id="WLHC">
                             <catDesc>
+                              <choice>
                                 <abbr>WLHC</abbr>
-                                <name>Walsall Local History Centre</name>
+                                <expan>Walsall Local History Centre</expan>
+                              </choice>
                             </catDesc>
                         </category>
                         <category xml:id="CUL">
                             <catDesc>
+                              <choice>
                                 <abbr>CUL</abbr>
-                                <name>Cambridge University Library</name>
+                                <expan>Cambridge University Library</expan>
+                              </choice>
                             </catDesc>
                         </category>
                         <category xml:id="folger-shakespeare-library">
-                            <catDesc><name>Folger Shakespeare Library</name></catDesc>
+                            <catDesc>Folger Shakespeare Library</catDesc>
                         </category>
                     </category>
                     <category xml:id="short_title_catalogues">
                         <catDesc>Short-Title Catalogues</catDesc>
                         <category xml:id="STC">
                             <catDesc>
+                              <choice>
                                 <abbr>STC</abbr>
-                                <name>Pollard and Redgrave (eds), Short-Title Catalogue</name>
+                                <expan>Pollard and Redgrave (eds), Short-Title Catalogue</expan>
+                              </choice>
                             </catDesc>
                         </category>
 
                         <category xml:id="Wing">
                             <catDesc>
+                              <choice>
                                 <abbr>Wing</abbr>
-                                <name>Wing, Short-Title Catalogue</name>
+                                <expan>Wing, Short-Title Catalogue</expan>
+                              </choice>
                             </catDesc>
                         </category>
                     </category>
@@ -581,8 +601,8 @@
                                     of Arms] | LONDON: PRINTED BY AND FOR JOHN NICHOLS AND SON, |
                                     (PRINTERS TO THE SOCIETY OF ANTIQUARIES,) | 25, PARLIAMENT
                                     STREET. | <date>1823</date>.</title></p></note>
-                        <idno type="author_surname">Nichols</idno>: <idno type="short_title"
-                            >{Progresses}, vol 1</idno>
+                                    <idno type="author_surname">Nichols</idno>
+                                    <idno type="short_title">{Progresses}, vol 1</idno>
                     </bibl>
 
                     <msDesc xml:id="V152">
@@ -1438,7 +1458,7 @@
                             with f 7 (on f 5, as 2 leaves apparently missing at beginning of book, 4
                             leaves also missing following f 29, 2 leaves missing following f 103),
                             foliation has been followed where found; bound in contemporary dark
-                            brown calf; no title. </ab>
+                            brown calf; no title.</ab>
                     </msDesc>
 
                     <msDesc xml:id="YOCW">

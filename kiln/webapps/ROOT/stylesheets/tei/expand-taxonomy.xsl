@@ -14,7 +14,7 @@
   <xsl:template match="tei:*[@sameAs]">
     <xsl:copy>
       <xsl:apply-templates select="@*" />
-      <xsl:apply-templates select="id(substring-after(@sameAs, '#'))/tei:catDesc/*" />
+      <xsl:apply-templates select="id(substring-after(@sameAs, '#'))/tei:catDesc/node()" />
     </xsl:copy>
   </xsl:template>
 
