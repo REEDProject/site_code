@@ -36,13 +36,26 @@
     </i>
   </xsl:template>
 
-  <xsl:template match="tei:gap[@extent]">
+  <xsl:template match="tei:gap">
+    <xsl:choose>
+      <xsl:when test="ancestor::tei:ab">
+        <xsl:apply-templates mode="actual" select="." />
+      </xsl:when>
+      <xsl:otherwise>
+        <p>
+          <xsl:apply-templates mode="actual" select="." />
+        </p>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="tei:gap[@extent]" mode="actual">
     <xsl:for-each select="1 to @extent">
       <xsl:text>.</xsl:text>
     </xsl:for-each>
   </xsl:template>
 
-  <xsl:template match="tei:gap[@reason='omitted']">
+  <xsl:template match="tei:gap[@reason='omitted']" mode="actual">
     <xsl:text>...</xsl:text>
   </xsl:template>
 
