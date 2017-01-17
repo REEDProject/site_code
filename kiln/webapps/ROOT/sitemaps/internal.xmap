@@ -69,6 +69,7 @@
         <map:generate src="../content/xml/tei/taxonomy.xml" />
         <map:transform src="../stylesheets/tei/xml-id-to-eats-id.xsl" />
         <map:transform src="../stylesheets/tei/expand-taxonomy.xsl" />
+        <map:transform src="../stylesheets/tei/normalise-taxonomy.xsl" />
         <map:serialize type="xml" />
       </map:match>
 

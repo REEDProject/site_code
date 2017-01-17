@@ -61,7 +61,7 @@
           <xsl:text>record</xsl:text>
         </field>
         <field name="document_title">
-          <xsl:apply-templates select="tei:body/tei:head/tei:span[@type='shelfmark']" />
+          <xsl:apply-templates select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='text']" />
           <xsl:text> - </xsl:text>
           <xsl:value-of select="normalize-space(tei:body/tei:head/tei:title)" />
           <xsl:text> - </xsl:text>
@@ -78,7 +78,7 @@
           <xsl:value-of select="normalize-space(tei:body/tei:head/tei:rs)" />
         </field>
         <field name="record_shelfmark">
-          <xsl:apply-templates select="tei:body/tei:head/tei:span[@type='shelfmark']" />
+          <xsl:apply-templates select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='text']" />
         </field>
         <xsl:apply-templates select="tei:body/tei:head/tei:date" />
         <field name="record_date_display">

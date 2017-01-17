@@ -162,7 +162,7 @@
 
   <xsl:template name="display-record-shelfmark">
     <div class="shelfmark">
-      <xsl:apply-templates select="tei:body/tei:head/tei:span[@type='shelfmark']" />
+      <xsl:copy-of select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='html']" />
     </div>
   </xsl:template>
 
