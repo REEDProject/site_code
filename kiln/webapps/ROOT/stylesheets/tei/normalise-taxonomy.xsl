@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="2.0"
+                exclude-result-prefixes="#all"
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
@@ -17,16 +18,16 @@
     <xsl:copy>
       <xsl:apply-templates select="@*|node()" />
       <xsl:choose>
-        <xsl:when test="tei:idno[@type='STC_number']">
+        <xsl:when test="tei:idno[@type='publication_number']">
           <tei:span type="shelfmark" subtype="text">
             <xsl:apply-templates mode="shelfmark-text" select="tei:idno[@type='publication']" />
             <xsl:text>: </xsl:text>
-            <xsl:value-of select="tei:idno[@type='STC_number']" />
+            <xsl:value-of select="tei:idno[@type='publication_number']" />
           </tei:span>
           <tei:span type="shelfmark" subtype="html">
             <xsl:apply-templates mode="shelfmark-html" select="tei:idno[@type='publication']" />
             <xsl:text>: </xsl:text>
-            <xsl:value-of select="tei:idno[@type='STC_number']" />
+            <xsl:value-of select="tei:idno[@type='publication_number']" />
           </tei:span>
         </xsl:when>
         <xsl:when test="tei:idno[@type='author_surname']">
