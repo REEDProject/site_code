@@ -144,7 +144,9 @@
     <li class="accordion-item" data-accordion-item="">
       <a href="#" class="accordion-title">Document Description</a>
       <div class="accordion-content" data-tab-content="">
-        <xsl:apply-templates select="$record_text/tei:body/tei:head/tei:p" />
+        <xsl:apply-templates select="$record_text/tei:body/tei:head/tei:p[@type='edDesc']" />
+        <xsl:apply-templates select="$record_text/tei:body/tei:head/tei:p[@type='docDesc']" />
+        <xsl:apply-templates select="$record_text/tei:body/tei:head/tei:p[@type='techDesc']" />
       </div>
     </li>
   </xsl:template>
