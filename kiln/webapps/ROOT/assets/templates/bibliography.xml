@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
+           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:tei="http://www.tei-c.org/ns/1.0"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:import href="cocoon://_internal/template/xsl/stylesheets/tei/to-html.xsl" />
+
+  <kiln:parent>
+    <xi:include href="base.xml" />
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title">
+      <kiln:super />
+      <xsl:text>Bibliography</xsl:text>
+    </kiln:block>
+
+    <kiln:block name="content">
+      <div class="white-bg">
+        <!-- Hero Image -->
+        <div class="title-hero" id="about-the-record-bibliography">
+          <div class="hero-content">
+            <span class="title">ABOUT THE RECORDS</span>
+            <h2>Bibliography</h2>
+          </div>
+          <!-- Image Tooltip -->
+          <div class="image-tooltip hide">
+            <div class="tooltip-content">A Fête at Bermondsey, c. 1570 (oil on panel), Gheeraerts, Marcus, the Elder (c. 1520-90) / Hatfield House, Hertfordshire, UK / Bridgeman Images</div>
+            <span class="tooltip-button"></span>
+          </div>
+        </div>
+        <!-- Main Content -->
+        <div class="content reduced-padding white-bg">
+          <div class="row">
+            <div class="columns medium-3 show-for-medium">
+              <ul class="sidenav">
+                <xsl:for-each select="/aggregation/kiln:nav//ul[li[@class='active']]/li">
+                  <xsl:copy>
+                    <xsl:copy-of select="@*" />
+                    <xsl:choose>
+                      <xsl:when test="@class='active'">
+                        <xsl:value-of select="a" />
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:copy-of select="a" />
+                      </xsl:otherwise>
+                    </xsl:choose>
+                  </xsl:copy>
+                </xsl:for-each>
+              </ul>
+            </div>
+            <div class="column medium-9 end">
+              <div class="bibliography-results">
+                <h2>Bibliographic Sources</h2>
+
+                <xsl:for-each select="/aggregation/tei:TEI/tei:text/tei:body/tei:div">
+                  <div class="bibliography-result">
+                    <h3>
+                      <xsl:value-of select="tei:head" />
+                    </h3>
+
+                    <ul class="list">
+                      <xsl:apply-templates mode="bibliography" select="tei:listBibl/tei:bibl" />
+                    </ul>
+                  </div>
+                </xsl:for-each>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column medium-9 medium-push-3 sub-section-content small-margin-top-25">
+              <a href="" class="back-to-top button hide-for-medium transparent expanded small-margin-top-25 small-margin-bottom-25">Back To Top</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </kiln:block>
+  </kiln:child>
+</kiln:root>

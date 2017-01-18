@@ -24,6 +24,18 @@
     <xsl:text>⸥</xsl:text>
   </xsl:template>
 
+  <xsl:template match="tei:author">
+    <xsl:apply-templates />
+  </xsl:template>
+
+  <xsl:template match="tei:bibl" mode="bibliography">
+    <li>
+      <span>
+        <xsl:apply-templates />
+      </span>
+    </li>
+  </xsl:template>
+
   <xsl:template match="tei:damage">
     <xsl:text>&lt;</xsl:text>
     <xsl:apply-templates />

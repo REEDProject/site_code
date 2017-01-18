@@ -96,15 +96,10 @@
         <map:serialize />
       </map:match>
 
-      <map:match id="ereed-record-display-xml" pattern="records/*/xml/">
-        <map:read mime-type="application/tei+xml"
-                  src="cocoon://internal/tei/preprocess-record/{1}.xml" />
-      </map:match>
-
       <map:match id="ereed-record-display-pdf" pattern="records/*/pdf/">
         <map:generate src="cocoon://internal/tei/preprocess-record/{1}.xml"
                       label="tei" />
-        <map:transform src="cocoon://_internal/template/pdf.xsl" />
+        <map:transform src="../stylesheets/tei-xsl/fo/fo.xsl" />
         <map:serialize type="fo2pdf" />
       </map:match>
 
@@ -162,10 +157,10 @@
       <!-- About: Bibliography. -->
       <map:match id="ereed-about-bibliography" pattern="about/bibliography/">
         <map:aggregate element="aggregation" label="content">
-          <map:part src="../content/xml/tei/bibliography.xml" />
+          <map:part src="cocoon://internal/preprocess/tei/bibliography.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=about/bibliography/" />
         </map:aggregate>
-        <map:transform src="../stylesheets/tei/tei-to-html.xsl" />
+        <map:transform src="cocoon://_internal/template/bibliography.xsl" />
         <map:serialize />
       </map:match>
 
