@@ -27,12 +27,17 @@
               <xsl:call-template name="display-collection-name" />
               <xsl:text> Collection</xsl:text>
             </div>
-            <xsl:for-each select="$record_text">
-              <xsl:apply-templates select="tei:div" />
-              <xsl:call-template name="display-section-data" />
-            </xsl:for-each>
+            <h1>
+              <xsl:apply-templates select="$record_text/tei:div/tei:head/node()" />
+            </h1>
+          </div>
+          <div class="columns record-sidebar show-for-medium">
           </div>
         </div>
+        <xsl:for-each select="$record_text">
+          <xsl:apply-templates mode="collection" select="tei:div/tei:div" />
+          <xsl:call-template name="display-section-data" />
+        </xsl:for-each>
       </div>
     </kiln:block>
   </kiln:child>

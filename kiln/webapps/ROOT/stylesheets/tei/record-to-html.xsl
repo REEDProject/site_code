@@ -9,6 +9,83 @@
   <xsl:variable name="record_text"
                 select="/aggregation/TEICorpus/tei:TEI/tei:text" />
 
+  <xsl:template match="tei:div" mode="collection">
+    <div class="row selected-record-summary relative">
+      <div class="columns medium-9 record">
+        <xsl:apply-templates />
+        <xsl:if test="not(preceding-sibling::tei:div)">
+          <div class="small-margin-bottom-25">
+            <!-- QAZ: tools-small. -->
+            <div class="hide-for-medium">
+              <div class="record-sidebar hide-for-medium" >
+                <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
+                  <div class="filter-head jump-to-filter">TOOLS</div>
+                  <div class="filter-content-wrapper relative">
+                    <div class="filter-content">
+                      <!-- QAZ: tools. -->
+                      <div class="tools">
+                        <div class="tools-heading show-for-medium">TOOLS</div>
+                        <ul class="tools">
+                          <li class="email"><a href="">Email</a></li>
+                          <li class="print"><a href="">Print</a></li>
+                          <li class="pdf"><a href="">PDF</a></li>
+                          <li class="xml"><a href="">XML</a></li>
+                          <li class="bookmark"><a href="">Bookmark</a></li>
+                          <li class="share"><a href="">Share</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
+                  <div class="filter-head jump-to-filter">HELPFUL LINKS</div>
+                  <div class="filter-content-wrapper relative">
+                    <div class="filter-content">
+                      <xsl:copy-of select="$helpful_links" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </xsl:if>
+      </div>
+      <xsl:if test="not(preceding-sibling::tei:div)">
+        <div class="columns record-sidebar show-for-medium">
+          <!-- QAZ: tools. -->
+          <div class="tools">
+            <div class="tools-heading show-for-medium">TOOLS</div>
+            <ul class="tools">
+              <li class="email"><a href="">Email</a></li>
+              <li class="print"><a href="">Print</a></li>
+              <li class="pdf"><a href="">PDF</a></li>
+              <li class="xml"><a href="">XML</a></li>
+              <li class="bookmark"><a href="">Bookmark</a></li>
+              <li class="share"><a href="">Share</a></li>
+            </ul>
+          </div>
+          <div class="padding-top-45">
+            <xsl:copy-of select="$helpful_links" />
+          </div>
+        </div>
+      </xsl:if>
+    </div>
+  </xsl:template>
+
+  <!-- A tei:div in the editorial matter of a collection that contains
+       record(s) has a different layout. -->
+  <xsl:template match="tei:div[tei:text]" mode="collection">
+    <xsl:apply-templates mode="collection" select="node()" />
+  </xsl:template>
+
+  <xsl:template match="tei:text[@type='record']" mode="collection">
+    <div class="row selected relative">
+      <xsl:call-template name="display-selected-record">
+        <xsl:with-param name="is_collection" select="1" />
+      </xsl:call-template>
+    </div>
+  </xsl:template>
+
   <xsl:template name="display-collection-name">
     <xsl:value-of select="/aggregation/TEICorpus/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']" />
   </xsl:template>
@@ -162,7 +239,7 @@
 
   <xsl:template name="display-record-shelfmark">
     <div class="shelfmark">
-      <xsl:copy-of select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='html']" />
+      <xsl:copy-of select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='html']/node()" />
     </div>
   </xsl:template>
 
@@ -244,6 +321,32 @@
         </div>
       </li>
     </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="display-selected-record">
+    <xsl:param name="is_collection" select="0" />
+    <div class="columns medium-9 record-title" data-equalizer-watch="">
+      <div class="record">
+        <xsl:call-template name="display-record-info" />
+        <xsl:call-template name="display-record-title" />
+        <xsl:call-template name="display-record-shelfmark" />
+        <hr />
+      </div>
+    </div>
+    <div class="columns medium-2 record-sidebar" data-equalizer-watch="">
+      <xsl:call-template name="display-record-sidebar" />
+    </div>
+    <div data-equalizer-watch="">
+      <xsl:attribute name="class">
+        <xsl:text>columns medium-9 record-info</xsl:text>
+        <xsl:if test="$is_collection">
+          <xsl:text> end</xsl:text>
+        </xsl:if>
+      </xsl:attribute>
+      <xsl:call-template name="display-record-transcription" />
+      <xsl:call-template name="display-record-data" />
+      <a href="#" class="back-to-top button transparent hide-for-medium sticky-bottom expanded small-margin-bottom-25 small-margin-top-25">Back To Top</a>
+    </div>
   </xsl:template>
 
   <!-- The following named templates all assume that the context node

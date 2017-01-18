@@ -72,22 +72,7 @@
         </div>
         <xsl:for-each select="$record_text">
           <div class="row selected relative" id="record_{position()}">
-            <div class="columns medium-9 record-title" data-equalizer-watch="">
-              <div class="record">
-                <xsl:call-template name="display-record-info" />
-                <xsl:call-template name="display-record-title" />
-                <xsl:call-template name="display-record-shelfmark" />
-                <hr />
-              </div>
-            </div>
-            <div class="columns medium-2 record-sidebar" data-equalizer-watch="">
-              <xsl:call-template name="display-record-sidebar" />
-            </div>
-            <div class="columns medium-9 record-info" data-equalizer-watch="">
-              <xsl:call-template name="display-record-transcription" />
-              <xsl:call-template name="display-record-data" />
-              <a href="#" class="back-to-top button transparent hide-for-medium sticky-bottom expanded small-margin-bottom-25 small-margin-top-25">Back To Top</a>
-            </div>
+            <xsl:call-template name="display-selected-record" />
             <div class="columns medium-2" data-equalizer-watch=""></div>
           </div>
         </xsl:for-each>

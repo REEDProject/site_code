@@ -38,7 +38,7 @@
 
   <xsl:template match="tei:gap">
     <xsl:choose>
-      <xsl:when test="ancestor::tei:ab">
+      <xsl:when test="ancestor::tei:ab|ancestor::tei:lg">
         <xsl:apply-templates mode="actual" select="." />
       </xsl:when>
       <xsl:otherwise>
