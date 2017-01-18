@@ -44,15 +44,29 @@
                         <xsl:value-of select="position()" />
                       </div>
                     </td>
-                    <td class="show-for-small-only"></td>
+                    <td class="show-for-small-only">
+                      <xsl:value-of select="tei:body/tei:head/tei:date" />
+                      <xsl:text>, </xsl:text>
+                      <!-- QAZ: Use EATSML name? -->
+                      <xsl:value-of select="tei:body/tei:head/tei:rs" />
+                      <xsl:text>. </xsl:text>
+                      <xsl:value-of select="normalize-space(tei:body/tei:head/tei:title)" />
+                      <xsl:text>. </xsl:text>
+                      <xsl:copy-of select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='html']/node()" />
+                    </td>
                     <td class="show-for-medium">
                       <xsl:value-of select="tei:body/tei:head/tei:date" />
                     </td>
-                    <td class="show-for-medium"></td>
                     <td class="show-for-medium">
-                      <xsl:value-of select="tei:body/tei:head/tei:bibl/tei:title" />
+                      <!-- QAZ: Use EATSML name? -->
+                      <xsl:value-of select="tei:body/tei:head/tei:rs" />
                     </td>
-                    <td class="show-for-medium"></td>
+                    <td class="show-for-medium">
+                      <xsl:value-of select="tei:body/tei:head/tei:title" />
+                    </td>
+                    <td class="show-for-medium">
+                      <xsl:copy-of select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='html']/node()" />
+                    </td>
                   </tr>
                 </xsl:for-each>
               </tbody>
