@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/" xml:id="bibliography">
+  <teiHeader>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
 <listBibl>
     <!-- Each bibl in this list should have an ana attribute pointing to
 one or more XML IDs in the taxonomy.xml file, as specified in the
@@ -208,3 +214,7 @@ entry belongs under.... -->
         Terms for Performance,’ <title>REEDN</title> 9.2 (1984), 56–62, and 10.1 (1985),
         9–16.</bibl>
 </listBibl>
+</div>
+</body>
+</text>
+</TEI>
