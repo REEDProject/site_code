@@ -97,7 +97,7 @@
       </xsl:when>
     </xsl:choose>
     <xsl:if test="@date_type=$circa_date_type">
-      <xsl:text>c. </xsl:text>
+      <xsl:text>c.</xsl:text>
     </xsl:if>
     <xsl:value-of select="eats:raw" />
     <xsl:if test="@certainty != 'full'">
