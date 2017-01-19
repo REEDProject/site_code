@@ -48,6 +48,8 @@
               <xsl:value-of select="$value" />
             </xsl:when>
             <xsl:otherwise>
+              <!-- This is sufficiently long before "the Middle Ages"
+                   when REED begins. -->
               <xsl:text>1</xsl:text>
             </xsl:otherwise>
           </xsl:choose>
@@ -66,6 +68,8 @@
               <xsl:value-of select="$value" />
             </xsl:when>
             <xsl:otherwise>
+              <!-- This is suitably long after 1642, the year REED
+                   stops. -->
               <xsl:text>2000</xsl:text>
             </xsl:otherwise>
           </xsl:choose>
