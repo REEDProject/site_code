@@ -25,6 +25,11 @@
        appended to the value of the "q" parameter to make an inclusive
        range query ANDed to the existing value.
 
+       A third exception is a q element, which may have a default
+       attribute. If it does (regardless of the attribute value), then
+       the element will only be added to the query if there is no
+       other non-default q element present.
+
        Multiple elements of the same name can be used where
        appropriate. In such cases, the order of the elements in the
        source document is retained. To produce a query that sorts of
@@ -71,8 +76,14 @@
     </xsl:call-template>
   </xsl:template>
 
+  <xsl:template match="q[@default]">
+    <xsl:if test="not(../q[not(@default)])">
+      <xsl:next-match />
+    </xsl:if>
+  </xsl:template>
+
   <xsl:template match="q">
-    <xsl:if test="not(preceding-sibling::q)">
+    <xsl:if test="not(preceding-sibling::q[not(@default)])">
       <xsl:if test="preceding-sibling::*">
         <xsl:text>&amp;</xsl:text>
       </xsl:if>
