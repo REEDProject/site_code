@@ -93,6 +93,36 @@
     </i>
   </xsl:template>
 
+  <xsl:template match="tei:idno[@type='author_surname']" mode="doc_desc">
+    <br />
+    <xsl:text>Author: </xsl:text>
+    <xsl:value-of select="." />
+  </xsl:template>
+
+  <xsl:template match="tei:idno[@type='publication']" mode="doc_desc">
+    <br />
+    <xsl:text>Publication: </xsl:text>
+    <xsl:value-of select="." />
+  </xsl:template>
+
+  <xsl:template match="tei:idno[@type='publication_number']" mode="doc_desc">
+    <br />
+    <xsl:text>Publication number: </xsl:text>
+    <xsl:value-of select="." />
+  </xsl:template>
+
+  <xsl:template match="tei:idno[@type='shelfmark']" mode="doc_desc">
+    <br />
+    <xsl:text>Shelfmark: </xsl:text>
+    <xsl:value-of select="." />
+  </xsl:template>
+
+  <xsl:template match="tei:idno[@type='short_title']" mode="doc_desc">
+    <br />
+    <xsl:text>Work title: </xsl:text>
+    <xsl:value-of select="." />
+  </xsl:template>
+
   <xsl:template match="tei:note[@type='foot']">
     <span class="footnote tag" note="{generate-id()}"></span>
   </xsl:template>
@@ -121,6 +151,12 @@
     <xsl:apply-templates />
   </xsl:template>
 
+  <xsl:template match="tei:repository" mode="doc_desc">
+    <br />
+    <xsl:text>Repository: </xsl:text>
+    <xsl:apply-templates />
+  </xsl:template>
+
   <xsl:template match="tei:rs[@ref]">
     <a class="tag">
       <xsl:attribute name="href">
@@ -140,6 +176,12 @@
     <xsl:apply-templates mode="group" select="preceding-sibling::tei:gram[1]" />
     <xsl:text> </xsl:text>
     <xsl:apply-templates select="node()" />
+  </xsl:template>
+
+  <xsl:template match="tei:settlement" mode="doc_desc">
+    <br />
+    <xsl:text>Repository location: </xsl:text>
+    <xsl:value-of select="." />
   </xsl:template>
 
   <xsl:template match="tei:space">

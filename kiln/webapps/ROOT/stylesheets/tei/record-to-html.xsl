@@ -144,9 +144,21 @@
     <li class="accordion-item" data-accordion-item="">
       <a href="#" class="accordion-title">Document Description</a>
       <div class="accordion-content" data-tab-content="">
-        <xsl:apply-templates select="$record_text/tei:body/tei:head/tei:p[@type='edDesc']" />
-        <xsl:apply-templates select="$record_text/tei:body/tei:head/tei:p[@type='docDesc']" />
-        <xsl:apply-templates select="$record_text/tei:body/tei:head/tei:p[@type='techDesc']" />
+        <xsl:variable name="head" select="$record_text/tei:body/tei:head" />
+        <p>
+          <xsl:text>Record title: </xsl:text>
+          <xsl:value-of select="$head/tei:title" />
+          <xsl:apply-templates mode="doc_desc" select="$head/tei:repository" />
+          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='shelfmark']" />
+          <xsl:apply-templates mode="doc_desc" select="$head/tei:settlement" />
+          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='publication']" />
+          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='publication_number']" />
+          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='author_surname']" />
+          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='short_title']" />
+        </p>
+        <xsl:apply-templates select="$head/tei:p[@type='edDesc']" />
+        <xsl:apply-templates select="$head/tei:p[@type='docDesc']" />
+        <xsl:apply-templates select="$head/tei:p[@type='techDesc']" />
       </div>
     </li>
   </xsl:template>
