@@ -37,7 +37,7 @@
                 </tr>
               </thead>
               <tbody>
-                <xsl:for-each select="$record_text">
+                <xsl:for-each select="$record_text[position()&lt;11]">
                   <tr>
                     <td class="dt-body-center">
                       <div class="result-num" data-record="record_{position()}">
@@ -84,7 +84,7 @@
             <xsl:call-template name="display-record-tools" />
           </div>
         </div>
-        <xsl:for-each select="$record_text">
+        <xsl:for-each select="$record_text[position()&lt;11]">
           <div class="row selected relative" id="record_{position()}">
             <xsl:call-template name="display-selected-record" />
             <div class="columns medium-2" data-equalizer-watch=""></div>
