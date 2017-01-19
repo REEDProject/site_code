@@ -555,6 +555,54 @@ Text
 </div>'''
         self._check_conversion(text, expected, subheading=False)
 
+    def test_translation(self):
+        text = '''@w\\f.40*\\!\nTextus
+@tr\\@w\\f.40*\\!
+Text@tr/'''
+        expected = '''<div type="transcription">
+<div>
+<head>f.40*</head>
+<pb />
+Textus
+
+</div>
+</div>
+<div type="translation">
+<div>
+<head>f.40*</head>
+<pb />
+Text
+</div>
+</div>'''
+        self._check_conversion(text, expected, subheading=False)
+        text = '''@w\\f.40*\\!\nTextus
+@tr\\@w\\f.40*\\!
+Text
+@w\\f.41\\!
+Totally new.@tr/'''
+        expected = '''<div type="transcription">
+<div>
+<head>f.40*</head>
+<pb />
+Textus
+
+</div>
+</div>
+<div type="translation">
+<div>
+<head>f.40*</head>
+<pb />
+Text
+
+</div>
+<div>
+<head>f.41</head>
+<pb />
+Totally new.
+</div>
+</div>'''
+        self._check_conversion(text, expected, subheading=False)
+
     def test_umlaut(self):
         for vowel in self.vowels:
             text = 'b@:{}t'.format(vowel)

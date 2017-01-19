@@ -300,6 +300,9 @@ class DocumentParser:
         transcription_section.setParseAction(self._pa_transcription_section)
         transcription = pp.OneOrMore(transcription_section)
         transcription.setParseAction(self._pa_transcription)
+        translation = pp.nestedExpr(
+            '@tr\\', '@tr/', content=pp.OneOrMore(transcription_section))
+        translation.setParseAction(self._pa_translation)
         collation_note_anchor = pp.Literal('@a') - pp.OneOrMore(integer) - \
             pp.Literal('\\')
         collation_note_anchor.setParseAction(self._pa_collation_note_anchor)
@@ -343,8 +346,8 @@ class DocumentParser:
         preamble = doc_desc - blank - place_codes
         preamble.setParseAction(self._pa_preamble)
         record = blank + record_heading + pp.ZeroOrMore(white) + \
-            transcription + pp.Optional(collation_notes) + \
-            pp.Optional(end_note_wrapper)
+            transcription + pp.Optional(translation) + \
+            pp.Optional(collation_notes) + pp.Optional(end_note_wrapper)
         record.setParseAction(self._pa_record)
         return pp.StringStart() + blank + preamble + pp.OneOrMore(record) \
             + pp.StringEnd()
@@ -743,6 +746,9 @@ class DocumentParser:
 
     def _pa_transcription_section(self, s, loc, toks):
         return ['<div>\n', ''.join(toks), '\n</div>\n']
+
+    def _pa_translation(self, s, loc, toks):
+        return ['<div type="translation">\n', ''.join(toks[0]), '</div>\n']
 
     def _pa_umlaut(self, s, loc, toks):
         return ['{}\N{COMBINING DIAERESIS}'.format(toks[1])]
