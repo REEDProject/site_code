@@ -516,7 +516,7 @@ Text
             self._check_conversion(text, expected)
 
     def test_transcription(self):
-        text = '@w\\ f.40* {(12 January) (Fortune: Warrant)}\!\nText'
+        text = '@w\\ f.40* {(12 January) (Fortune: Warrant)}\\!\nText'
         expected = '''<div type="transcription">
 <div>
 <head> f.40* <supplied>(12 January) (Fortune: Warrant)</supplied></head>
@@ -525,7 +525,7 @@ Text
 </div>
 </div>'''
         self._check_conversion(text, expected, subheading=False)
-        base_text = '@w\\{head}\!\nText'
+        base_text = '@w\\{head}\\!\nText'
         base_expected = '''<div type="transcription">
 <div>
 <head>{head}</head>
@@ -545,7 +545,7 @@ Text
             self._check_conversion(
                 base_text.format(**data), base_expected.format(**data),
                 subheading=False)
-        text = '@w\\ {(12 January)}\!\nText'
+        text = '@w\\ {(12 January)}\\!\nText'
         expected = '''<div type="transcription">
 <div>
 <head> <supplied>(12 January)</supplied></head>
