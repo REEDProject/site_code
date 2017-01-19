@@ -1,5 +1,6 @@
 import io
 import os
+import re
 import shlex
 import subprocess
 import tempfile
@@ -9,27 +10,16 @@ import docx
 from .exceptions import TextPrepareDocumentUpdateError
 
 
-def convert_at_codes(text):
-    """Returns `text` with @-code markup converted into the form required
-    by the grammar.
-
-    :param text: text to convert
-    :type text: `str`
-    :rtype: `str`
-
-    """
-    # Change the format of closing @-codes from '@x \' to '@x/'. The
-    # original whitespace can cause problems in the parsing, but the
-    # editors are used to that form.
-    codes = [
-        'a', 'ab', 'b', 'c', 'cl', 'cn', 'cnx', 'cor', 'cr', 'cym', 'deu', 'e',
-        'en', 'eng', 'ex', 'f', 'fra', 'g', 'gla', 'gmh', 'gml', 'grc', 'i',
-        'ita', 'j', 'k', 'l', 'lat', 'li', 'm', 'p', 'pc', 'por', 'q', 'r',
-        's', 'sc', 'sd', 'sh', 'sl', 'sn', 'snc', 'snr', 'spa', 'sr', 'ss',
-        'st', 'ul', 'wlm', 'x', 'xc', 'xno']
-    for code in codes:
-        text = text.replace('@{} \\'.format(code), '@{}/'.format(code))
-    return text
+# Change the format of closing @-codes from '@x \' to '@x/'. The
+# original whitespace can cause problems in the parsing, but the
+# editors are used to that form.
+codes = [
+    'a', 'ab', 'b', 'c', 'cl', 'cn', 'cnx', 'cor', 'cr', 'cym', 'deu', 'e',
+    'en', 'eng', 'ex', 'f', 'fra', 'g', 'gla', 'gmh', 'gml', 'grc', 'i',
+    'ita', 'j', 'k', 'l', 'lat', 'li', 'm', 'p', 'pc', 'por', 'q', 'r',
+    's', 'sc', 'sd', 'sh', 'sl', 'sn', 'snc', 'snr', 'spa', 'sr', 'ss',
+    'st', 'ul', 'wlm', 'x', 'xc', 'xno']
+convert_code = re.compile(r'@(({}))\s\\'.format(')|('.join(codes)))
 
 
 def convert_to_docx(doc_path):
@@ -55,7 +45,7 @@ def update_word(doc_path):
         doc = docx.Document(docx=docx_path)
         os.remove(docx_path)
     for paragraph in doc.paragraphs:
-        paragraph.text = convert_at_codes(paragraph.text)
+        paragraph.text = convert_code.sub(r'@\1/', paragraph.text)
     output = io.BytesIO()
     doc.save(output)
     return output.getvalue()
