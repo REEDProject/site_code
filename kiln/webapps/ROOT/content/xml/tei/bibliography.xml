@@ -1,24 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="records/REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/" xml:id="bibliography">
-  <teiHeader>
-    <encodingDesc>
-      <listPrefixDef>
-        <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)"
-                   replacementPattern="taxonomy.xml#$1">
-          <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the
-            taxonomy.xml file.</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-  </teiHeader>
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title type="main">Bibliography</title>
+                    <funder><orgName>Jackman Foundation, Toronto, Canada</orgName></funder>
+                    <funder><orgName>National Endowment for the Humanities, Washington, DC, United States of
+                        America</orgName></funder>
+                    <funder><orgName>Social Sciences and Humanities Research Council, Ottawa,
+                        Canada</orgName></funder>
+                    <editor>J. Alan B. Somerset</editor>
+                    <respStmt>
+                        <persName>C. Black</persName>
+                        <orgName>Records of Early English Drama (REED)</orgName>
+                        <resp>Project Manager</resp>
+                    </respStmt>
+                    <respStmt>
+                        <persName>Kathy Chung</persName>
+                        <orgName>Records of Early English Drama (REED)</orgName>
+                        <resp>Post-doctoral Fellow in Digital Humanities, EATS taxonomy developer and
+                            tagger</resp>
+                    </respStmt>
+                    <respStmt>
+                        <persName xml:id="JC">James Cummings</persName>
+                        <orgName>University of Oxford</orgName>
+                        <resp>TEI Schema Designer, Technical Consultant</resp>
+                    </respStmt>
+                    <respStmt>
+                        <persName>Patrick Gregory</persName>
+                        <orgName>Records of Early English Drama (REED)</orgName>
+                        <resp>Paleographer, Translator, Latin and Anglo-French Glossarian</resp>
+                    </respStmt>
+                    <respStmt>
+                        <persName>Tanya Hagen</persName>
+                        <orgName>Records of Early English Drama (REED)</orgName>
+                        <resp>Bibliographer</resp>
+                    </respStmt>
+                    <respStmt>
+                        <persName>Janine Harper</persName>
+                        <orgName>Records of Early English Drama (REED)</orgName>
+                        <resp>English Glossarian, Proofreader</resp>
+                    </respStmt>
+                    <respStmt>
+                        <persName>Alexandra F. Johnston</persName>
+                        <orgName>Records of Early English Drama (REED)</orgName>
+                        <resp>REED Founder and Senior Consultant</resp>
+                    </respStmt>
+                    <respStmt>
+                        <persName>Sally-Beth MacLean</persName>
+                        <orgName>Records of Early English Drama (REED)</orgName>
+                        <resp>Principal Investigator, SSHRC grant; Director of Research and General Editor</resp>
+                    </respStmt>
+                    <respStmt>
+                        <persName>Byron Moldofsky</persName>
+                        <orgName>University of Toronto</orgName>
+                        <resp>Cartographer</resp>
+                    </respStmt>
+                    <respStmt>
+                        <persName xml:id="JN">Jamie Norrish</persName>
+                        <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
+                    </respStmt>
+                    <respStmt>
+                        <persName>Suzanne Westfall</persName>
+                        <resp>Principal Investigator, NEH grant</resp>
+                    </respStmt>
+                    <respStmt>
+                        <persName>Abigail Ann Young</persName>
+                        <orgName>Records of Early English Drama (REED)</orgName>
+                        <resp>Paleographer</resp>
+                    </respStmt>
+                </titleStmt>
+                <editionStmt>
+                    <edition>version 1, released <date when-iso="2017-02-01">1 February 2017</date></edition>
+                </editionStmt>
+                <publicationStmt>
+                    <authority><orgName>Records of Early English Drama (REED)</orgName>
+                        <address>
+                            <addrLine>University of Toronto</addrLine>
+                            <addrLine>170 St George Street, Suite 810</addrLine>
+                            <addrLine>Toronto, Ontario, Canada</addrLine>
+                            <addrLine>M5R 2M8</addrLine>
+                        </address>
+                    </authority>
+                    <availability>
+                        <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
+                            <date>2017</date></p>
+                        <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed under a
+                            Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA
+                            4.0) licence.</licence>
+                    </availability>
+                </publicationStmt>
+                <seriesStmt>
+                    <title>Records of Early English Drama</title>
+                </seriesStmt>
+                <sourceDesc>
+                    <p>Born digital. Information on original sources for transcriptions can be accessed via the
+                        Document Descriptions.</p>
+                </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+                <listPrefixDef>
+                    <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)"
+                        replacementPattern="../taxonomy.xml#$1">
+                        <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the
+                            taxonomy.xml file. For example, <code>taxon:generalBib</code> dereferences to
+                            <code>taxonomy.xml#generalBib</code>.</p>
+                    </prefixDef>
+                </listPrefixDef>
+                <projectDesc>
+                    <p>Records of Early English Drama (REED) is an international scholarly project that is
+                        establishing for the first time the context from which the drama of Shakespeare and his
+                        contemporaries grew. Founded in 1976, REED has worked since then to locate, transcribe,
+                        and edit historical documents containing evidence of drama, secular music, and other
+                        communal entertainment and ceremony from the Middle Ages until 1642, when the Puritans
+                        closed the London theatres.</p>
+                </projectDesc>
+            </encodingDesc>
+            <profileDesc>
+                <langUsage>
+                    <language ident="eng">English</language>
+                    <language ident="lat">Latin</language>
+                    <language ident="fra">Anglo-French</language>
+                </langUsage>
+            </profileDesc>
+            <revisionDesc>
+                <change></change>
+                <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
+            </revisionDesc>
+        </teiHeader>
+
+
   <text>
     <body>
       <div>
 <listBibl>
-    <!-- Each bibl in this list should have an ana attribute pointing to
-one or more XML IDs in the taxonomy.xml file, as specified in the
-prefix in the header. These specify which section(s) the bibliography
-entry belongs under.... -->
     <bibl ana="taxon:generalBib"><title>Anglo-Norman Dictionary Online</title>. <editor>William
             Rothwell</editor> (gen ed). <ref target="http://www.anglo-norman.net/gate/">http://www.anglo-norman.net/gate/</ref>. [AND]</bibl>
     <bibl ana="taxon:staffBib"><editor>Black, William Henry</editor> (comp). <title>A Descriptive,
@@ -227,4 +343,5 @@ entry belongs under.... -->
 </div>
 </body>
 </text>
+
 </TEI>
