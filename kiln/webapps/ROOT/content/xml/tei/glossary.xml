@@ -200,10 +200,13 @@
                 </div>
                 <div xml:id="gloss-la-E">
                     <entry>
-                        <form><orth><hi rend="bold">episcopus, -i</hi></orth>
+                        <form>
+                            <orth><hi rend="bold">episcopus, -i</hi></orth>
                             <gram><hi rend="italic">n m</hi></gram></form>
                         <sense xml:id="episcopus-1">bishop;</sense>
-                        <form><orth><hi rend="bold">~ puerorum</hi></orth></form>
+                        <form>
+                            <orth><hi rend="bold">~ puerorum</hi></orth> <!-- gram tag here?--> 
+                        </form>
                         <sense xml:id="episcopus_puerorum-1">boy bishop, a boy, originally a
                             choirboy in a cathedral or other collegiate church or a student in an
                             almonry school, chosen to act as a mock bishop in liturgical and other
@@ -212,7 +215,8 @@
                 </div>
                 <div xml:id="gloss-la-L">
                     <entry>
-                        <form><orth><hi rend="bold">ludus, -i</hi></orth>
+                        <form>
+                            <orth><hi rend="bold">ludus, -i</hi></orth>
                             <gram><hi xml:id="italics">n m</hi></gram></form>
                         <sense xml:id="ludus-1">entertainment, ‘play,’ of an unspecified kind, not
                             necessarily dramatic <ref>[<hi rend="italics">see also</hi>
