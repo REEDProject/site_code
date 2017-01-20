@@ -102,7 +102,7 @@
             <encodingDesc>
                 <listPrefixDef>
                     <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)"
-                        replacementPattern="../taxonomy.xml#$1">
+                        replacementPattern="taxonomy.xml#$1">
                         <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the
                             taxonomy.xml file. For example, <code>taxon:generalBib</code> dereferences to
                             <code>taxonomy.xml#generalBib</code>.</p>
