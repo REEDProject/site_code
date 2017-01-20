@@ -806,22 +806,23 @@
                     </entry>
 
                     <entry xml:id="countei">
-                        <form><orth><hi rend="bold">countei</hi></orth><gram><hi rend="italics"
-                                    >n</hi></gram></form>
+                        <form>
+                            <orth><hi rend="bold">countei</hi></orth>
+                            <gram><hi rend="italics">n</hi></gram>
+                        </form>
                         <sense xml:id="countei-1">county</sense>
                     </entry>
 
                     <entry xml:id="coursse">
-                        <form><orth><hi rend="bold">coursse</hi></orth><gram><hi rend="italics"
-                                    >adj</hi></gram></form>
-                        <sense xml:id="coursse-1">of little or no account, ordinary; <hi
-                                rend="italics">in phr</hi><hi rend="bold">coursse money</hi>petty
-                            cash (?) <ref>[<hi rend="italics"><hi rend="small-caps">OEDO</hi></hi>
-                                coarse <hi rend="italics">adj</hi> 1.a, b]</ref>
-                            <ref>[<hi rend="italics"><hi rend="small-caps">MED</hi></hi> cours <hi
-                                    rend="italics">adj</hi> (a)]</ref>
-                            <!-- thinking about a way to render multiple dictionary references-->
-                            <!-- course money from STRO: D1323/E/1 needs to be added (a variant spelling)--> 
+                        <form>
+                            <orth><hi rend="bold">coursse</hi></orth>
+                            <gram><hi rend="italics">adj</hi></gram>
+                        </form>
+                        <sense xml:id="coursse-1">of little or no account, ordinary; <hi rend="italics">in phr</hi> <hi rend="bold">coursse money</hi> petty cash (?)
+                            <ref>[<hi rend="italics"><hi rend="small-caps">OEDO</hi></hi> coarse <hi rend="italics">adj</hi> 1.a, b]</ref>,
+                            <ref>[<hi rend="italics"><hi rend="small-caps">MED</hi></hi> cours <hi rend="italics">adj</hi> (a)]</ref>;
+                            <form><orth><hi rend="bold">course money</hi></orth></form>
+                            <!-- course money from STRO: D1323/E/1 needs to be tagged (a variant spelling)--> 
                         </sense>
                     </entry>
 
