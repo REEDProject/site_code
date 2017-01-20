@@ -57,7 +57,7 @@
                     of the nominative singular or, in the case of adjectives of one ending, by the
                     nominative and genitive; verbs by their principal parts.</p>
             </div>
-            <div xml:id="anglo-french_headnote" corresp="#anglo-french">
+            <div xml:id="anglo-french_headnote" corresp="#anglo-french"> <!-- JH: Should we give an abbreviation for the Anglo-Norman Dictionary here? (AND) Also: is this an online dictionary specifically that we're using? (If so: ANDO?)--> 
                 <p>Words have been included in the Anglo-French Glossary if they are not found with
                     the required sense in either the <title>Collins-Robert French Dictionary</title>
                     or in the <ref target="http://www.anglo-norman.net">Anglo-Norman Dictionary
@@ -157,7 +157,7 @@
                     <entry xml:id="balletta">
                         <form>
                             <orth><hi rend="bold">balletta</hi></orth>
-                        </form>
+                        </form> <!-- JH: just realized: should there not be a <gram> tag in here?-->
                         <sense xml:id="balletta-1">
                             <def><hi rend="italics">var of</hi> ballada <ref>[<hi rend="italics"><hi
                                             rend="small-caps">DML</hi></hi>]</ref></def>
@@ -168,11 +168,11 @@
                         </sense>
                     </entry>
                     <entry>
-                        <form><orth><hi rend="bold">Bertelinus, -i</hi></orth>
+                        <form>
+                            <orth><hi rend="bold">Bertelinus, -i</hi></orth> 
                             <gram><hi rend="italic">n m</hi></gram>
                         </form>
-                        <sense xml:id="Bertelinus-1">St Bettelin (dates unknown), patron of Stafford
-                        </sense>
+                        <sense xml:id="Bertelinus-1">St Bettelin (dates unknown), patron of Stafford</sense>
                     </entry>
                     <!-- in record text or notes (id only needed if pointing to it from glossary) 
                 <p> Canto <term xml:id="term-abc123" ref="glossary-la.xml#balletta-1"
@@ -180,18 +180,21 @@
                 </div>
                 <div xml:id="gloss-la-C">
                     <entry>
-                        <form><orth><hi rend="bold">cantalena, -e</hi></orth><gram><hi
-                                    rend="italics">n f</hi></gram></form>
+                        <form>
+                            <orth><hi rend="bold">cantalena, -e</hi></orth>
+                            <gram><hi rend="italics">n f</hi></gram>
+                        </form>
                         <sense xml:id="cantalena-1"><hi rend="italics">var of</hi> cantilena
-                                    <ref>[<hi rend="italics"><hi rend="small-caps"
-                                >DML</hi></hi>]</ref>
+                            <ref>[<hi rend="italics"><hi rend="small-caps">DML</hi></hi>]</ref>
                         </sense>
                     </entry>
                     <entry>
-                        <form><orth><hi rend="bold">carectata, -e</hi></orth>
-                            <gram><hi rend="italics">n f</hi></gram></form>
-                        <sense xml:id="carectata-1">var of carrettata <ref>[<hi rend="italics"><hi
-                                        rend="small-caps">DML</hi></hi>]</ref></sense>
+                        <form>
+                            <orth><hi rend="bold">carectata, -e</hi></orth>
+                            <gram><hi rend="italics">n f</hi></gram>
+                        </form>
+                        <sense xml:id="carectata-1">var of carrettata
+                            <ref>[<hi rend="italics"><hi rend="small-caps">DML</hi></hi>]</ref></sense>
                     </entry>
                 </div>
                 <div xml:id="gloss-la-E">
