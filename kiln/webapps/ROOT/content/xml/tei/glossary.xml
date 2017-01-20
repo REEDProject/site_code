@@ -601,27 +601,33 @@
                     </entry>
 
                     <entry xml:id="bauble">
-                        <form><orth><hi rend="bold">bauble</hi></orth><gram><hi rend="italics">n in
-                                    phr</hi><hi rend="bold">coat and bauble</hi></gram></form>
-                        <sense xml:id="bauble-1">part of a fool's attire, a baton used as a mock
-                            emblem of office <ref>[<hi rend="italics"><hi rend="small-caps"
-                                        >OEDO</hi></hi> bauble <hi rend="italics">n</hi> 4]</ref>
+                        <form>
+                            <orth><hi rend="bold">bauble</hi></orth>
+                            <gram><hi rend="italics">n in phr</hi> <hi rend="bold">coat and bauble</hi></gram>
+                        </form>
+                        <sense xml:id="bauble-1">part of a fool's attire, a baton used as a mock emblem of office 
+                            <ref>[<hi rend="italics"><hi rend="small-caps">OEDO</hi></hi> bauble <hi rend="italics">n</hi> 4]</ref>
                         </sense>
                     </entry>
 
                     <entry xml:id="bayly">
-                        <form><orth><hi rend="bold">bayly</hi></orth><gram><hi rend="italics"
-                                >n</hi></gram></form>
-                        <sense xml:id="bayly-1">bailiff; <form><orth><hi rend="bold"
-                                    >baylyes</hi></orth><gram><hi rend="italics"
-                                >pl</hi></gram></form>
+                        <form>
+                            <orth><hi rend="bold">bayly</hi></orth>
+                            <gram><hi rend="italics">n</hi></gram>
+                        </form>
+                        <sense xml:id="bayly-1">bailiff; 
+                            <form>
+                                <orth><hi rend="bold">baylyes</hi></orth>
+                                <gram><hi rend="italics">pl</hi></gram>
+                            </form>
                         </sense>
                     </entry>
 
                     <entry xml:id="beated">
-                        <form><orth><hi rend="bold">beated</hi></orth><gram><hi rend="italics">v
-                                    pass 3 sg</hi></gram></form>
-                        <!--I'm assuming that the "passive" abbreviation is the one we want here, right? A bear to be "beated," i.e. baited.)pg: yes-->
+                        <form>
+                            <orth><hi rend="bold">beated</hi></orth>
+                            <gram><hi rend="italics">v pass</hi></gram>
+                        </form>
                         <sense xml:id="beated-1">baited</sense>
                     </entry>
 
