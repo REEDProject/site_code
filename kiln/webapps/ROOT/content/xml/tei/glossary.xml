@@ -388,14 +388,16 @@
                     </entry>
                     <entry>
                         <form><orth><hi rend="bold">pouers</hi></orth> m/f pl</form>
-                        <sense xml:id="pouer-1">poor needy pourez, [AND povre]</sense>
+                        <sense xml:id="pouer-1">poor, needy <hi rend="bold">pourez</hi> [AND
+                            povre]</sense>
                         <!-- not sure I get this def'n; what is "pourez" here? another AND ref?-->
-                        <!--is there a reason for the comma after "pourez"? usually we don't punctuate before a dictionary ref (as with the comma here) unless it's one of the "see also" instances-->
+                        <!--fix ref tag-->
+
                     </entry>
                     <entry>
                         <form><orth><hi rend="bold">pouir</hi></orth>
-                            <gram><hi rend="italics">m subst inf</hi></gram></form>
-                        <!-- not sure I parse these abbreviations (also "subst" isn't in our list)-->
+                            <gram><hi rend="italics">n m</hi></gram></form>
+
                         <sense xml:id="pouir-1"> power, authority <ref>[<hi xml:id="small-caps"><hi
                                         rend="italics">AND</hi></hi> poer]</ref></sense>
                     </entry>
@@ -528,7 +530,7 @@
                     <entry xml:id="beated">
                         <form><orth><hi rend="bold">beated</hi></orth><gram><hi rend="italics">v
                                     pass 3 sg</hi></gram></form>
-                        <!--I'm assuming that the "passive" abbreviation is the one we want here, right? A bear to be "beated," i.e. baited.)-->
+                        <!--I'm assuming that the "passive" abbreviation is the one we want here, right? A bear to be "beated," i.e. baited.)pg: yes-->
                         <sense xml:id="beated-1">baited</sense>
                     </entry>
 
@@ -722,7 +724,8 @@
                     <entry xml:id="distreyne">
                         <form><orth><hi rend="bold">distreyne</hi></orth><gram><hi rend="italics">v
                                     pr</hi></gram></form>
-                        <!-- abbreviation for infinitives?, e.g. it being lawful "to distreyne" goods?--><!--since the infinitive is the typical dictionary headword form we don't need it here anyway--> 
+                        <!-- abbreviation for infinitives?, e.g. it being lawful "to distreyne" goods?-->
+                        <!--since the infinitive is the typical dictionary headword form we don't need it here, anyway-->
                         <sense xml:id="distreyne-1">distrain, to constrain or punish a person by
                             seizing their goods <ref>[<hi rend="italics"><hi rend="small-caps"
                                         >OEDO</hi></hi> distrain<hi rend="italics"
@@ -801,7 +804,8 @@
                     <entry xml:id="extreated">
                         <form><orth><hi rend="bold">extreated</hi></orth><gram><hi rend="italics">v
                                     pass</hi></gram></form>
-                        <!--more passives(?): "perquisites shall be extreated unto them"--><!--yes-->
+                        <!--more passives(?): "perquisites shall be extreated unto them"-->
+                        <!--yes-->
                         <sense xml:id="extreated-1">estreated, to extract a fine, bail, or
                             forfeiture and give it to an exchequer; loosely, to exact a fine or
                             enforce a forfeiture <ref>[<hi rend="italics"><hi rend="small-caps"
@@ -817,7 +821,7 @@
                     <entry xml:id="fache">
                         <form><orth><hi rend="bold">fache</hi></orth><gram><hi rend="italics"
                                 >v</hi></gram></form>
-                        <!--Men reported to have gathered in Walsall and said they would fache [men] out of prison: subjunctive?-->
+
                         <sense xml:id="fache-1">fetch</sense>
                     </entry>
 
@@ -883,7 +887,8 @@
 
                     <entry xml:id="gingelinge">
                         <form><orth><hi rend="bold">gingelinge</hi></orth><gram><hi rend="italics"
-                                    >vb n</hi></gram></form><!--if vb = verbal so I think we need this-->
+                                    >vb n</hi></gram></form>
+                        <!--if vb = verbal so I think we need this-->
                         <sense xml:id="gingelinge-1">jingling</sense>
                     </entry>
 
@@ -913,7 +918,7 @@
                         <sense xml:id="gysse-1">geese</sense>
                     </entry>
                     <!--I hesitate to render "gysse" singular for the sake of consistency because the issue is that the plural form, specifically, is odd. (Does that make sense?)-->
-                    <!--I think it might; this looks fine to me-->
+                    <!-- this looks fine to me-->
                 </div>
 
                 <div xml:id="gloss-eng-H">
@@ -939,8 +944,8 @@
                     <entry xml:id="hampton">
                         <form><orth><hi rend="bold">hampton</hi></orth><gram><hi rend="italics"
                                     >n</hi></gram></form>
-                        <sense xml:id="hampton-1">likely an abbreviation of Wolverhampton;<!--not an aabbreviation but...-->
-                            <form><orth><hi rend="bold">hamptonn</hi></orth></form>
+                        <sense xml:id="hampton-1">likely a shortening of Wolverhampton;
+                                        <form><orth><hi rend="bold">hamptonn</hi></orth></form>
                         </sense>
                     </entry>
 
@@ -958,8 +963,9 @@
                     <!--seems fine to me-->
 
                     <entry xml:id="harvenger">
-                        <form><orth><hi rend="bold">harvenger</hi></orth><gram><hi rend="italics">n
-                                    in phr</hi><hi rend="bold">knight harvenger</hi></gram></form>
+                        <form><orth><hi rend="bold">harvenger</hi></orth>
+                            <gram><hi rend="italics">n in phr</hi><hi rend="bold">knight
+                                    harvenger</hi></gram></form>
                         <sense xml:id="harvenger-1">knight harbinger, a title given to one
                             responsible for purveying lodgings for an army, royal procession, etc.,
                             or for setting up a campground</sense>
@@ -1153,7 +1159,7 @@
                         <form><orth><hi rend="bold">oye yees</hi></orth><gram><hi rend="italics"
                                     >interj</hi></gram></form>
                         <!-- should we have an abbreviation for interjections? it exists in other edns-->
-                        <!--yes-->
+                        <!--yes; please add-->
                         <sense xml:id="oyeyees-1">oh yes</sense>
                     </entry>
 
@@ -1302,8 +1308,7 @@
                         <sense xml:id="salopia-1">Salisbury</sense>
                         <sense xml:id="salopia-2"><hi rend="italics">in phr</hi><hi rend="bold"
                                 >countie of salopia</hi>Shropshire</sense>
-                        <!--Suddenly, I'm not sure where salopia-as-salisbury is coming in: the only two refs I see are in references to Shropshire. Am I forgetting/overlooking something? -->
-                        <!--right, the first part is only by way of explanation, doesn't need tagging-->
+
                     </entry>
 
                     <entry xml:id="schochoneofarmes">
@@ -1462,8 +1467,7 @@
                         <form><orth><hi rend="bold">totalys</hi></orth><gram><hi rend="italics"
                                     >n</hi></gram></form>
                         <sense xml:id="totalys-1">total; possibly from ML</sense>
-                        <!-- The way that this speculation is recorded doesn't look right to me. What's the convention? (Brackets?)-->
-                        <!--actually I think 'possibly' covers it-->
+
                     </entry>
 
                     <entry xml:id="trobull">
@@ -1492,8 +1496,6 @@
                                 </hi></gram></form>
                         <sense xml:id="vardynes-1">wardens</sense>
                     </entry>
-                    <!-- not sure if sg form would properly be "vardyn" or "vardyne"; thoughts?-->
-                    <!--since s is the plural marker, let's do it with the -e-->
 
                     <entry xml:id="virginalles">
                         <form><orth><hi rend="bold"/></orth><gram><hi rend="italics"
@@ -1502,8 +1504,6 @@
                             form refering to one instrument, but here possibly the keyboard(s) to an
                             organ (?)</sense>
                     </entry>
-                    <!-- n.b. There are 3 instances of "virginals" or variants in the records; I've only tagged the one where it's possible that the record's referring ot the keyboard(s). The others could easily just be the instrument -->
-                    <!--yes, the keyboard is a special sense.  OEDO covers the others-->
 
                     <entry xml:id="vtseter">
                         <form><orth><hi rend="bold">vtseter</hi></orth><gram><hi rend="italics"
@@ -1586,8 +1586,6 @@
                                 prp</hi></gram></form>
                         </sense>
                     </entry>
-                    <!-- Does this look OK? ("yealdinge" as a sub-form of "yeald" in same entry?) Also: abbreviation for infinitive forms?-->
-                    <!--yes, this looks fine.  Don't understand second part of question-->
 
 
                     <entry xml:id="yees">
