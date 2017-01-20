@@ -18,7 +18,7 @@ codes = [
     'en', 'eng', 'ex', 'f', 'fra', 'g', 'gla', 'gmh', 'gml', 'grc', 'i',
     'ita', 'j', 'k', 'l', 'lat', 'li', 'm', 'p', 'pc', 'por', 'q', 'r',
     's', 'sc', 'sd', 'sh', 'sl', 'sn', 'snc', 'snr', 'spa', 'sr', 'ss',
-    'st', 'ul', 'wlm', 'x', 'xc', 'xno']
+    'st', 'tr', 'ul', 'wlm', 'x', 'xc', 'xno']
 convert_code = re.compile(r'@(({}))\s\\'.format(')|('.join(codes)))
 
 
