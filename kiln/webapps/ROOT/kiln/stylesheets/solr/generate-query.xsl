@@ -86,20 +86,17 @@
     </xsl:if>
   </xsl:template>
 
+  <!-- Range fields are handled by the first q field. -->
+  <xsl:template match="*[@type=('range_start', 'range_end')]" />
+
   <!-- Catch-all for simple query parameters. -->
   <xsl:template match="*">
     <!-- Add a parameter separator if we've already processed a
          parameter. -->
-    <xsl:if test="preceding-sibling::*[not(@type = ('range_start', 'range_end'))]
-                  and not(@type = ('range_start', 'range_end'))">
+    <xsl:if test="preceding-sibling::*[not(@type = ('range_start', 'range_end'))]">
       <xsl:text>&amp;</xsl:text>
     </xsl:if>
-    <xsl:choose>
-      <xsl:when test="@type = ('range_start', 'range_end')"></xsl:when>
-      <xsl:otherwise>
-        <xsl:call-template name="simple-parameter" />
-      </xsl:otherwise>
-    </xsl:choose>
+    <xsl:call-template name="simple-parameter" />
   </xsl:template>
 
   <xsl:template match="*" mode="range-parameter">
