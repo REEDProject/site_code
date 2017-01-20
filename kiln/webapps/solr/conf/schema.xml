@@ -131,8 +131,12 @@
    <field indexed="false" multiValued="false"
           name="record_date_display" required="false" stored="true"
           type="string" />
-   <field indexed="true" multiValued="True" name="mentioned_entities"
+   <field indexed="true" multiValued="true" name="mentioned_entities"
           required="false" stored="true" type="string" />
+   <field indexed="true" multiValued="true" name="bibl_author"
+          required="false" stored="false" type="text_general" />
+   <field indexed="true" multiValued="true" name="bibl_title"
+          required="false" stored="false" type="text_general" />
 
    <!-- Facet fields. -->
    <field indexed="true" multiValued="true" name="facet_record_type"
