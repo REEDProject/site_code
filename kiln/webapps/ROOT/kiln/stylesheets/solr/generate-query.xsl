@@ -25,14 +25,9 @@
        appended to the value of the "q" parameter to make an inclusive
        range query ANDed to the existing value.
 
-       A third exception is a q element, which may have a type
-       attribute value of 'default'. If it does, then the element will
-       only be added to the query if there is no other non-default q
-       element present.
-
        Multiple elements of the same name can be used where
        appropriate. In such cases, the order of the elements in the
-       source document is retained. To produce a query that sorts of
+       source document is retained. To produce a query that sorts on
        the fields "score" (descending) and "price" (ascending), use:
 
           <sort @ordering="desc">score</sort>
@@ -76,21 +71,15 @@
     </xsl:call-template>
   </xsl:template>
 
-  <xsl:template match="q[@type='default']">
-    <xsl:if test="not(../q[not(@type='default')])">
-      <xsl:next-match />
-    </xsl:if>
-  </xsl:template>
-
   <xsl:template match="q">
-    <!-- q parameters are bundled together and handled by the first
-         non-default q element, so do not process this at all if if it
-         is preceded by a non-default q. -->
-    <xsl:if test="not(preceding-sibling::q[not(@type='default')])">
+    <!-- q parameters are bundled together and handled by the first q
+         element, so do not process this at all if if it is preceded
+         by a q. -->
+    <xsl:if test="not(preceding-sibling::q)">
       <!-- Only add a parameter separator if there is a preceding
            parameter that is not one that will be dealt with in the
            processing of another element. -->
-      <xsl:if test="preceding-sibling::*[not(@type = ('default', 'range_start', 'range_end'))]">
+      <xsl:if test="preceding-sibling::*[not(@type = ('range_start', 'range_end'))]">
         <xsl:text>&amp;</xsl:text>
       </xsl:if>
       <xsl:call-template name="q-parameter" />
@@ -100,9 +89,7 @@
   <!-- Catch-all for simple query parameters. -->
   <xsl:template match="*">
     <!-- Add a parameter separator if we've already processed a
-         parameter. The following test does not handle the case where
-         the only preceding parameter is a default q and there is a
-         non-default q later. -->
+         parameter. -->
     <xsl:if test="preceding-sibling::*[not(@type = ('range_start', 'range_end'))]
                   and not(@type = ('range_start', 'range_end'))">
       <xsl:text>&amp;</xsl:text>
@@ -169,8 +156,9 @@
       <!-- Look for extra q parameters to add in. -->
       <xsl:for-each select="following-sibling::q">
         <xsl:if test="normalize-space()">
-          <xsl:text>%20AND%20(</xsl:text>
+          <xsl:text>%20AND%20</xsl:text>
         </xsl:if>
+        <xsl:text>(</xsl:text>
         <xsl:value-of select="." />
         <xsl:text>)</xsl:text>
       </xsl:for-each>
