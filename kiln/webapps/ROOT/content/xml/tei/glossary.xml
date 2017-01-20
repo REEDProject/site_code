@@ -1581,39 +1581,47 @@
                     </entry>
 
                     <entry xml:id="shareshull">
-                        <form><orth><hi rend="bold">shareshull</hi></orth><gram><hi rend="italic"
-                                    >n</hi></gram></form>
-                        <sense xml:id="shareshull-1">Shareshill; <form><orth><hi rend="bold"
-                                        >sharesull</hi></orth></form>
+                        <form>
+                            <orth><hi rend="bold">shareshull</hi></orth>
+                            <gram><hi rend="italic">n</hi></gram>
+                        </form>
+                        <sense xml:id="shareshull-1">Shareshill; 
+                            <form><orth><hi rend="bold">sharesull</hi></orth></form>
                         </sense>
                     </entry>
 
                     <entry xml:id="shewerofthechamber">
-                        <form><orth><hi rend="bold">shewer of the chamber</hi></orth><gram><hi
-                                    rend="italic">n phr</hi></gram></form>
+                        <form>
+                            <orth><hi rend="bold">shewer of the chamber</hi></orth>
+                            <gram><hi rend="italic">n phr</hi></gram>
+                        </form>
                         <sense xml:id="shewerofthechamber-1">attendant responsible for guiding or
                             conducting people to the Great Chamber, Presence Chamber, or other
-                            chamber for audience <ref>[<hi rend="italic"><hi rend="small-caps"
-                                        >OEDO</hi></hi> show <hi rend="italic">v</hi> 16]</ref>
+                            chamber for audience 
+                            <ref>[<hi rend="italic">OEDO</hi> show <hi rend="italic">v</hi> 16]</ref>
                         </sense>
                     </entry>
 
                     <entry xml:id="shueterooll">
-                        <form><orth><hi rend="bold">shuete rooll</hi></orth><gram><hi rend="italic"
-                                    >n</hi></gram></form>
-                        <sense xml:id="shueterooll-1">sheet roll (?), a record or list <ref>[<hi rend="italic">OEDO</hi> roll <hi
-                                    rend="italic">n.1</hi> I.1.a, b]</ref>
+                        <form>
+                            <orth><hi rend="bold">shuete rooll</hi></orth><gram>
+                                <hi rend="italic">n</hi></gram>
+                        </form>
+                        <sense xml:id="shueterooll-1">sheet roll (?), a record or list 
+                            <ref>[<hi rend="italic">OEDO</hi> roll <hi rend="italic">n.1</hi> I.1.a, b]</ref>
                         </sense>
                     </entry>
 
                     <entry xml:id="somergame">
-                        <form><orth><hi rend="bold">somergame</hi></orth><gram><hi rend="italic">n
-                                    comp</hi></gram></form>
+                        <form>
+                            <orth><hi rend="bold">somergame</hi></orth>
+                            <gram><hi rend="italic">n comp</hi></gram>
+                        </form>
                         <sense xml:id="somergame-1">summer game; a festival, sport, or entertainment
                             held in the summer</sense>
                     </entry>
-                    <!-- "summer game" comes up in a translation of a Latin record; should I tag the Latin to refer to this gloss, as it seems to be an English term dumped into the Latin? -->
-                    <!-- yes, tag away-->
+                    <!--JH: tag the instance of "somergame in the latin record--> 
+                    
                     <entry xml:id="statebodye">
                         <form><orth><hi rend="bold">statebodye</hi></orth><gram><hi rend="italic">n
                                     comp</hi></gram></form>
