@@ -1782,8 +1782,10 @@
                     <!-- check staffs. records to ensure that "vardynes" points to "vardyne-1--> 
 
                     <entry xml:id="virginalles">
-                        <form><orth><hi rend="bold"/></orth><gram><hi rend="italic"
-                            >n</hi></gram></form>
+                        <form>
+                            <orth><hi rend="bold">virginalles</hi></orth>
+                            <gram><hi rend="italic">n</hi></gram>
+                        </form>
                         <sense xml:id="virginalles-1">usually a keyed musical instrument with plural
                             form refering to one instrument, but here possibly the keyboard(s) to an
                             organ (?)</sense>
