@@ -148,11 +148,15 @@
   </xsl:template>
 
   <xsl:template name="q-parameter">
-    <xsl:call-template name="simple-parameter" />
+    <xsl:value-of select="local-name(.)" />
+    <xsl:text>=(</xsl:text>
+    <xsl:value-of select="." />
+    <xsl:text>)</xsl:text>
     <!-- Look for extra q parameters to add in. -->
     <xsl:for-each select="following-sibling::q">
-      <xsl:text>+AND+</xsl:text>
+      <xsl:text>+AND+(</xsl:text>
       <xsl:value-of select="." />
+      <xsl:text>)</xsl:text>
     </xsl:for-each>
     <!-- Look for range parameters to add in. -->
     <xsl:variable name="range_parameters"
