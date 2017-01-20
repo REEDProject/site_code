@@ -278,7 +278,7 @@
                         <form>
                             <orth><hi rend="bold">~ Michaelis</hi></orth>
                         </form>
-                        <sense xml:id="terminus_Michaelis-1">Michaelmas term </sense>
+                        <sense xml:id="terminus_Michaelis-1">Michaelmas term</sense>
                     </entry>
                 </div>
                 <div xml:id="gloss-la-V">
@@ -291,7 +291,7 @@
                         <form>
                             <orth><hi rend="bold">~ Malbanus</hi></orth>
                         </form>
-                        <sense xml:id="vicus_Malbanus-1">Nantwich, Cheshire </sense>
+                        <sense xml:id="vicus_Malbanus-1">Nantwich, Cheshire</sense>
                     </entry>
                 </div>
                 <div xml:id="gloss-la-Y">
@@ -303,7 +303,8 @@
                         <sense xml:id="histrio-1">in CL, an actor; sense widening in ML, here an
                             entertainer, or performer of some kind unspecified 
                             <ref>[<hi rend="italic">see</hi> histrio <hi rend="italics">
-                                <hi rend="small-caps">DML</hi></hi>, <hi rend="italics"><hi rend="small-caps">OLD</hi></hi>]</ref></sense>
+                                <hi rend="small-caps">DML</hi></hi>, <hi rend="italics"><hi rend="small-caps">OLD</hi></hi>]</ref>
+                        </sense>
                     </entry>
                 </div>
             </div>
@@ -311,33 +312,43 @@
                 <head>Anglo-French Glossary</head>
                 <div xml:id="gloss-af-A">
                     <entry>
-                        <form><orth><hi rend="bold">aderer</hi></orth>
-                            <gram><hi rend="italics">pfp</hi></gram></form>
-                        <sense xml:id="aderer-1">owed <ref>[<hi rend="italics"><hi rend="small-caps"
-                                        >AND</hi></hi> aderere]</ref></sense>
+                        <form>
+                            <orth><hi rend="bold">aderer</hi></orth>
+                            <gram><hi rend="italics">pfp</hi></gram>
+                        </form>
+                        <sense xml:id="aderer-1">owed 
+                            <ref>[<hi rend="italics"><hi rend="small-caps">AND</hi></hi> aderere]</ref>
+                        </sense>
                     </entry>
                     <entry>
-                        <form><orth><hi rend="bold">aenes</hi></orth>
-                            <gram><hi rend="italics">adv</hi></gram></form>
-                        <sense xml:id="aenes-1">first, before others <ref>[<hi rend="italics"><hi
-                                        rend="small-caps">AND</hi></hi> ainz]</ref></sense>
+                        <form>
+                            <orth><hi rend="bold">aenes</hi></orth>
+                            <gram><hi rend="italics">adv</hi></gram>
+                        </form>
+                        <sense xml:id="aenes-1">first, before others 
+                            <ref>[<hi rend="italics"><hi rend="small-caps">AND</hi></hi> ainz]</ref>
+                        </sense>
                     </entry>
                     <entry>
-                        <form><orth><hi rend="bold">arrae</hi></orth>
-                            <gram><hi rend="italic">pfp</hi></gram></form>
-                        <sense xml:id="arrae-1">arrayed <ref>[<hi rend="italic"><hi
-                                        rend="small-caps">AND</hi></hi> arraier] </ref></sense>
+                        <form>
+                            <orth><hi rend="bold">arrae</hi></orth>
+                            <gram><hi rend="italic">pfp</hi></gram>
+                        </form>
+                        <sense xml:id="arrae-1">arrayed 
+                            <ref>[<hi rend="italic"><hi rend="small-caps">AND</hi></hi> arraier]</ref>
+                        </sense>
                     </entry>
                 </div>
                 <div xml:id="gloss-af-B">
                     <entry>
-                        <form><orth><hi rend="bold">bouche</hi></orth>
+                        <form>
+                            <orth><hi rend="bold">bouche</hi></orth>
                             <gram><hi rend="italics">in phr</hi></gram>
-                            <orth><hi rend="bold">estre a bouche en court</hi></orth>, <orth><hi
-                                    rend="bold">estre a bouche de cour</hi>t</orth></form>
-                        <sense xml:id="bouche-1">to have an allowance for food; <ref>[<hi
-                                    rend="italics">see <hi rend="small-caps">AND</hi></hi>
-                                bouche]</ref></sense>
+                            <orth><hi rend="bold">estre a bouche en court</hi></orth>, 
+                            <orth><hi rend="bold">estre a bouche de court</hi></orth>
+                        </form>
+                        <sense xml:id="bouche-1">to have an allowance for food 
+                            <ref>[<hi rend="italics">see <hi rend="small-caps">AND</hi></hi> bouche]</ref></sense>
                     </entry>
                 </div>
                 <div xml:id="gloss-af-D">
