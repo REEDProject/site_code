@@ -159,6 +159,8 @@
         <map:aggregate element="aggregation" label="content">
           <map:part src="cocoon://internal/preprocess/tei/bibliography.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=about/bibliography/" />
+          <map:part src="cocoon://internal/search/bibliography_query.xml" />
+          <map:part src="cocoon://_internal/request.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/bibliography.xsl" />
         <map:serialize />

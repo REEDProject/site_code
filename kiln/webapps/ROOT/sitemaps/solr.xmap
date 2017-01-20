@@ -78,6 +78,19 @@
         <map:serialize type="xml" />
       </map:match>
 
+      <!-- Adding eREED bibliography. -->
+      <map:match id="ereed-solr-add-bibliography"
+                 pattern="add/tei-bibliography/tei/bibliography.xml">
+        <map:generate src="cocoon://internal/preprocess/tei/bibliography.xml" />
+        <map:transform src="../stylesheets/solr/tei-bibliography-to-solr.xsl">
+          <map:parameter name="file-path" value="tei/bibliography" />
+        </map:transform>
+        <map:transform type="solr">
+          <map:parameter name="url" value="{global:solr-server}" />
+        </map:transform>
+        <map:serialize type="xml" />
+      </map:match>
+
       <!-- Preprocessing of material before indexing. -->
 
       <!-- TEI preprocessed for use with EATS data. -->

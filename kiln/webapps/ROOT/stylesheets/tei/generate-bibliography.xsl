@@ -26,7 +26,7 @@
         </listBibl>
       </xsl:variable>
       <xsl:if test="normalize-space($items)">
-        <div>
+        <div xml:id="{@xml:id}">
           <head>
             <xsl:value-of select="tei:catDesc" />
           </head>
@@ -38,6 +38,7 @@
 
   <xsl:template match="tei:bibl">
     <xsl:copy>
+      <xsl:attribute name="xml:id" select="generate-id()" />
       <xsl:apply-templates select="node()" />
     </xsl:copy>
   </xsl:template>

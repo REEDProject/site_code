@@ -13,7 +13,7 @@
     <p>
       <a class="button round"
          href="{kiln:url-for-match('local-solr-index-all', (), 0)}">
-        <xsl:text>Index all (search)</xsl:text>
+        <xsl:text>Index all records (search)</xsl:text>
       </a>
       <xsl:text> </xsl:text>
       <a class="button round"
@@ -34,6 +34,26 @@
           </tr>
         </thead>
         <tbody>
+          <!-- The bibliography.xml file must be present, with that
+               name, in the tei directory, so just record it here. -->
+          <tr>
+            <td></td>
+            <!-- File path. -->
+            <td>
+              <xsl:text>bibliography.xml</xsl:text>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <a title="Index document in search server"
+                 href="{kiln:url-for-match('local-solr-index', ('tei-bibliography', 'tei/bibliography'), 0)}">
+                <xsl:text>Index</xsl:text>
+              </a>
+            </td>
+            <td></td>
+          </tr>
+          <!-- Records are the dynamic files (in that it's not know
+               how many there are or what they are called). -->
           <xsl:apply-templates mode="tei"
                                select=".//dir:directory[@name='records']">
             <xsl:with-param name="path" select="'tei/'" />

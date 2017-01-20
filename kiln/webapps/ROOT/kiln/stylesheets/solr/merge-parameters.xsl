@@ -20,6 +20,7 @@
   <xsl:param name="query-string" />
 
   <xsl:template match="query">
+    <xsl:variable name="q_fields" select="tokenize(@q_fields, '\s+')" />
     <xsl:copy>
       <xsl:apply-templates select="@*" />
       <xsl:variable name="processed-query-string">
@@ -31,6 +32,7 @@
             <xsl:call-template name="handle-querystring-parameter">
               <xsl:with-param name="key" select="substring-before(., '=')" />
               <xsl:with-param name="value" select="substring-after(., '=')" />
+              <xsl:with-param name="q_fields" select="$q_fields" />
             </xsl:call-template>
           </xsl:if>
         </xsl:for-each>
@@ -57,7 +59,9 @@
     </xsl:choose>
   </xsl:template>
 
-  <xsl:template match="@type[. = 'default']" />
+  <xsl:template match="query/@q_fields" />
+
+  <xsl:template match="q/@type[. = 'default']" />
 
   <xsl:template match="@*|node()">
     <xsl:copy>
@@ -68,13 +72,28 @@
   <xsl:template name="handle-querystring-parameter">
     <xsl:param name="key" />
     <xsl:param name="value" />
+    <xsl:param name="q_fields" />
     <xsl:if test="normalize-space($value)">
-      <xsl:element name="{$key}">
-        <xsl:call-template name="kiln:escape-value">
-          <xsl:with-param name="value" select="$value" />
-          <xsl:with-param name="url-escaped" select="1" />
-        </xsl:call-template>
-      </xsl:element>
+      <xsl:choose>
+        <xsl:when test="$key = $q_fields">
+          <xsl:element name="q">
+            <xsl:value-of select="$key" />
+            <xsl:text>:</xsl:text>
+            <xsl:call-template name="kiln:escape-value">
+              <xsl:with-param name="value" select="$value" />
+              <xsl:with-param name="url-escaped" select="1" />
+            </xsl:call-template>
+          </xsl:element>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:element name="{$key}">
+            <xsl:call-template name="kiln:escape-value">
+              <xsl:with-param name="value" select="$value" />
+              <xsl:with-param name="url-escaped" select="1" />
+            </xsl:call-template>
+          </xsl:element>
+        </xsl:otherwise>
+      </xsl:choose>
     </xsl:if>
   </xsl:template>
 

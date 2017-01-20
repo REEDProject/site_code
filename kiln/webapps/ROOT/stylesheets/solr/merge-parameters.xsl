@@ -23,6 +23,7 @@
   <xsl:template name="handle-querystring-parameter">
     <xsl:param name="key" />
     <xsl:param name="value" />
+    <xsl:param name="q_fields" />
     <xsl:choose>
       <xsl:when test="$key = 'date_from'">
         <xsl:variable name="real_value">
@@ -65,12 +66,26 @@
         </record_date>
       </xsl:when>
       <xsl:when test="normalize-space($value)">
-        <xsl:element name="{$key}">
-          <xsl:call-template name="kiln:escape-value">
-            <xsl:with-param name="value" select="$value" />
-            <xsl:with-param name="url-escaped" select="1" />
-          </xsl:call-template>
-        </xsl:element>
+        <xsl:choose>
+          <xsl:when test="$key = $q_fields">
+            <xsl:element name="q">
+              <xsl:value-of select="$key" />
+              <xsl:text>:</xsl:text>
+              <xsl:call-template name="kiln:escape-value">
+                <xsl:with-param name="value" select="$value" />
+                <xsl:with-param name="url-escaped" select="1" />
+              </xsl:call-template>
+            </xsl:element>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:element name="{$key}">
+              <xsl:call-template name="kiln:escape-value">
+                <xsl:with-param name="value" select="$value" />
+                <xsl:with-param name="url-escaped" select="1" />
+              </xsl:call-template>
+            </xsl:element>
+          </xsl:otherwise>
+        </xsl:choose>
       </xsl:when>
     </xsl:choose>
   </xsl:template>
