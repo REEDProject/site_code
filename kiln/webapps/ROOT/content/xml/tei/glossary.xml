@@ -155,9 +155,7 @@
                 </div>
                 <div xml:id="gloss-la-B">
                     <entry xml:id="balletta">
-                        <form>
-                            <orth><hi rend="bold">balletta</hi></orth>
-                        </form>
+                        <form><orth><hi rend="bold">balletta</hi></orth></form> <!-- JH: just realized: should there not be a <gram> tag in here?-->
                         <sense xml:id="balletta-1">
                             <def><hi rend="italics">var of</hi> ballada <ref>[<hi rend="italics"><hi
                                             rend="small-caps">DML</hi></hi>]</ref></def>
