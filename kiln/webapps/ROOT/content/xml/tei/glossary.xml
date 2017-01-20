@@ -451,12 +451,15 @@
                             <ref>[<hi rend="small-=caps"><hi rend="italics">AND</hi></hi>]</ref></sense>
                     </entry>
                     <entry>
-                        <form><orth><hi rend="bold">pouers</hi></orth> m/f pl</form>
-                        <sense xml:id="pouer-1">poor, needy <hi rend="bold">pourez</hi> [AND
-                            povre]</sense>
-                        <!-- not sure I get this def'n; what is "pourez" here? another AND ref?-->
-                        <!--fix ref tag-->
-
+                        <form>
+                            <orth><hi rend="bold">pouers</hi></orth> 
+                            <gram>m/f pl</gram>
+                        </form>
+                        <sense xml:id="pouer-1">poor, needy  
+                            <ref>[<hi rend="small-caps"><hi rend="italics">AND</hi></hi> povre]</ref>;
+                        <form><hi rend="bold">pourez</hi></form>
+                        </sense>
+                        <!--JH: I cleaned this entry up as requested: how does this look? As intended?-->
                     </entry>
                     <entry>
                         <form><orth><hi rend="bold">pouir</hi></orth>
