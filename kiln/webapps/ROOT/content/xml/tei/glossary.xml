@@ -1352,8 +1352,10 @@
                 <div xml:id="gloss-eng-N">
 
                     <entry xml:id="namptwich">
-                        <form><orth><hi rend="bold">namptwich</hi></orth><gram><hi rend="italics"
-                                    >n</hi></gram></form>
+                        <form>
+                            <orth><hi rend="bold">namptwich</hi></orth>
+                            <gram><hi rend="italics">n</hi></gram>
+                        </form>
                         <sense xml:id="namptwich-1">Nantwich</sense>
                     </entry>
 
@@ -1362,10 +1364,10 @@
                 <div xml:id="gloss-eng-O">
 
                     <entry xml:id="oyeyees">
-                        <form><orth><hi rend="bold">oye yees</hi></orth><gram><hi rend="italics"
-                                    >interj</hi></gram></form>
-                        <!-- should we have an abbreviation for interjections? it exists in other edns-->
-                        <!--yes; please add-->
+                        <form>
+                            <orth><hi rend="bold">oye yees</hi></orth>
+                            <gram><hi rend="italics">interj</hi></gram>
+                        </form>
                         <sense xml:id="oyeyees-1">oh yes</sense>
                     </entry>
 
