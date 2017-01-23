@@ -225,8 +225,10 @@
 
   <xsl:template match="eats:subject_identifier[starts-with(., $gis_base_url)]">
     <xsl:variable name="id" select="substring-before(substring-after(., $gis_base_url), '/')" />
+    <xsl:variable name="geojson" select="id($id)" />
     <geojson>
-      <xsl:value-of select="id($id)" />
+      <xsl:copy-of select="$geojson/@type" />
+      <xsl:value-of select="$geojson" />
     </geojson>
   </xsl:template>
 
