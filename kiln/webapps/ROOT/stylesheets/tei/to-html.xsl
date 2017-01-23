@@ -50,7 +50,7 @@
 
   <xsl:template match="tei:gap">
     <xsl:choose>
-      <xsl:when test="ancestor::tei:ab|ancestor::tei:lg">
+      <xsl:when test="ancestor::tei:ab|ancestor::tei:lg|ancestor::tei:p">
         <xsl:apply-templates mode="actual" select="." />
       </xsl:when>
       <xsl:otherwise>
@@ -173,7 +173,7 @@
       <xsl:value-of select="preceding-sibling::tei:form[1]/tei:orth" />
     </b>
     <xsl:text> </xsl:text>
-    <xsl:apply-templates mode="group" select="preceding-sibling::tei:gram[1]" />
+    <xsl:apply-templates mode="group" select="preceding::tei:gram[1]" />
     <xsl:text> </xsl:text>
     <xsl:apply-templates select="node()" />
   </xsl:template>
