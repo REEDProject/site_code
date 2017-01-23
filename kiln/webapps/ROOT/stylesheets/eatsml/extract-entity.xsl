@@ -3,25 +3,26 @@
                 xmlns:eats="http://eats.artefact.org.nz/ns/eatsml/"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <!-- Extract a single entity (and its related entities) from
-       EATSML. -->
+  <!-- Identify a single entity among all entities, by setting the
+       "selected" attribute on it. The other entities remain. -->
 
   <xsl:param name="entity_eats_id" />
 
   <xsl:template match="eats:entities">
     <xsl:copy>
-      <xsl:apply-templates select="eats:entity[@eats_id=$entity_eats_id]" />
+      <xsl:apply-templates select="eats:entity" />
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match="eats:entity[@eats_id=$entity_eats_id]">
+    <xsl:copy>
+      <xsl:copy-of select="@*" />
+      <xsl:attribute name="selected" select="'selected'" />
+      <xsl:copy-of select="node()" />
     </xsl:copy>
   </xsl:template>
 
   <xsl:template match="eats:entity">
-    <xsl:copy-of select="." />
-    <related_entities>
-      <!--<xsl:apply-templates mode="related" select="" />-->
-    </related_entities>
-  </xsl:template>
-
-  <xsl:template match="eats:entity" mode="related">
     <xsl:copy-of select="." />
   </xsl:template>
 

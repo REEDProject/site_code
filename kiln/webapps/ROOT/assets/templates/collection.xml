@@ -10,7 +10,7 @@
   <xsl:import href="cocoon://_internal/template/xsl/stylesheets/tei/record-to-html.xsl" />
 
   <kiln:parent>
-    <xi:include href="base.xml" />
+    <xi:include href="map.xml" />
   </kiln:parent>
 
   <kiln:child>
@@ -31,7 +31,7 @@
           <div class="column medium-12">
             <div class="row collapse map-wrapper map small-margin-bottom-25">
               <div class="columns medium-9">
-                <!-- QAZ: map -->
+                <div id="map"></div>
               </div>
               <div class="columns medium-3 map-legend">
                 <div class="legend">Legend</div>
@@ -121,6 +121,10 @@
           </div>
         </div>
       </div>
+    </kiln:block>
+
+    <kiln:block name="end-js">
+      <kiln:super />
     </kiln:block>
 
   </kiln:child>

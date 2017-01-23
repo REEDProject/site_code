@@ -41,8 +41,12 @@
         <map:serialize type="xml" />
       </map:match>
 
-      <map:match id="ereed-preprocess-eatsml" pattern="preprocess/eatsml.xml">
-        <map:generate src="../content/xml/eatsml/entities.xml" />
+      <map:match id="ereed-preprocess-eatsml"
+                 pattern="preprocess/eatsml.xml">
+        <map:aggregate element="aggregation">
+          <map:part src="../content/xml/eatsml/entities.xml" />
+          <map:part src="../content/xml/geojson.xml" />
+        </map:aggregate>
         <map:transform src="../stylesheets/eatsml/preprocess.xsl" />
         <map:serialize type="xml" />
       </map:match>

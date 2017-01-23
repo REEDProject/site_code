@@ -5,7 +5,27 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- Transform EATSML into a more condensed form suitable for use in
-       RDF harvesting, annotating search facet results, etc. -->
+       RDF harvesting, annotating search facet results, etc.
+
+       Output:
+
+       <eats:entities>
+         <eats:entity xml:id="" eats_id="" url="EATS URL">
+           <primary_name>...</primary_name>
+           <singular>...</singular>
+           <title>...</title>
+           <relationships>
+             <relationship>
+               <name>...</name>
+               <entity url="HTML representation URL">...</entity>
+             </relationship>
+           </relationships>
+           <geojson>...</geojson
+         </eats:entity>
+         ...
+       </eats:entities>
+
+  -->
 
   <xsl:import href="cocoon://_internal/url/reverse.xsl" />
 
@@ -13,8 +33,9 @@
   <xsl:variable name="circa_date_type" select="'date_type-489'" />
   <xsl:variable name="singular_name_type" select="'name_type-18607'" />
   <xsl:variable name="has_occupation_relationship_type" select="'entity_relationship_type-21008'" />
+  <xsl:variable name="gis_base_url" select="'https://ereed.library.utoronto.ca/gis/place/'" />
 
-  <xsl:template match="/">
+  <xsl:template match="aggregation">
     <eats:entities>
       <xsl:apply-templates select="eats:collection/eats:entities/eats:entity" />
     </eats:entities>
@@ -127,6 +148,7 @@
           <xsl:with-param name="entity_id" select="$entity_id" />
         </xsl:apply-templates>
       </relationships>
+      <xsl:apply-templates select="eats:subject_identifiers/eats:subject_identifier" />
     </xsl:copy>
   </xsl:template>
 
@@ -197,6 +219,15 @@
     <singular>
       <xsl:apply-templates select="." />
     </singular>
+  </xsl:template>
+
+  <xsl:template match="eats:subject_identifier" />
+
+  <xsl:template match="eats:subject_identifier[starts-with(., $gis_base_url)]">
+    <xsl:variable name="id" select="substring-before(substring-after(., $gis_base_url), '/')" />
+    <geojson>
+      <xsl:value-of select="id($id)" />
+    </geojson>
   </xsl:template>
 
   <xsl:template match="@*">

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
+           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:tei="http://www.tei-c.org/ns/1.0"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <!-- Template for supporting maps. -->
+
+  <kiln:parent>
+    <xi:include href="base.xml" />
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="css">
+      <kiln:super />
+      <link rel="stylesheet" type="text/css" href="{$kiln:assets-path}/styles/leaflet/leaflet.css" />
+      <link rel="stylesheet" type="text/css" href="{$kiln:assets-path}/styles/leaflet/screen.css" />
+      <link rel="stylesheet" type="text/css" href="{$kiln:assets-path}/styles/leaflet/MarkerCluster.css" />
+      <link rel="stylesheet" type="text/css" href="{$kiln:assets-path}/styles/leaflet/MarkerClusterDefault.css" />
+    </kiln:block>
+
+    <kiln:block name="js">
+      <kiln:super />
+      <script src="{$kiln:assets-path}/scripts/leaflet/leaflet.js"></script>
+      <script src="{$kiln:assets-path}/scripts/leaflet/leaflet.markercluster.js" ></script>
+    </kiln:block>
+
+    <kiln:block name="end-js">
+      <kiln:super />
+      <script src="{$kiln:assets-path}/scripts/leaflet/proj4-compressed.js"></script>
+      <script src="{$kiln:assets-path}/scripts/leaflet/proj4leaflet.js"></script>
+      <script src="{$kiln:assets-path}/scripts/leaflet/map.js"></script>
+    </kiln:block>
+  </kiln:child>
+
+</kiln:root>

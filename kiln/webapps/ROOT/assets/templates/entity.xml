@@ -10,8 +10,10 @@
 
   <xsl:import href="cocoon://_internal/template/xsl/stylesheets/eatsml/entity-to-html.xsl" />
 
+  <xsl:variable name="records" select="/aggregation/records_results/response/result/doc" />
+
   <kiln:parent>
-    <xi:include href="base.xml" />
+    <xi:include href="map.xml" />
   </kiln:parent>
 
   <kiln:child>
@@ -33,10 +35,10 @@
           <div class="tabs">
             <div class="row">
               <ul class="tabs columns" data-tabs="" id="example-tabs">
-                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true"><img src="assets/img/related-records.svg" alt="" />Related Records</a></li>
-                <li class="tabs-title"><a href="#panel2"><img src="assets/img/related-editorial-content.svg" alt="" />Related Editorial Content</a></li>
-                <li class="tabs-title"><a href="#panel3"><img src="assets/img/related-entities.svg" alt="" />Related Entities</a></li>
-                <li class="tabs-title"><a href="#panel4"><img src="assets/img/map.svg" alt="" />Map</a></li>
+                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true"><img src="{$kiln:assets-path}/images/related-records.svg" alt="" />Related Records</a></li>
+                <li class="tabs-title"><a href="#panel2"><img src="{$kiln:assets-path}/images/related-editorial-content.svg" alt="" />Related Editorial Content</a></li>
+                <li class="tabs-title"><a href="#panel3"><img src="{$kiln:assets-path}/images/related-entities.svg" alt="" />Related Entities</a></li>
+                <li class="tabs-title"><a href="#panel4"><img src="{$kiln:assets-path}/images/map.svg" alt="" />Map</a></li>
               </ul>
             </div>
           </div>
@@ -64,8 +66,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <xsl:apply-templates select="/aggregation/records_results/response/result/doc"
-                                           mode="search-results" />
+                      <xsl:apply-templates select="$records" mode="search-results" />
                     </tbody>
                   </table>
                 </div>
@@ -106,7 +107,7 @@
             <div class="tabs-panel" id="panel4">
               <div class="row collapse map-wrapper">
                 <div class="columns medium-9">
-                  <img src="assets/img/map.png" alt="" />
+                  <div id="map"></div>
                 </div>
                 <div class="columns medium-3 map-legend">
                   <div class="legend">Legend</div>
@@ -124,6 +125,16 @@
       </div>
     </kiln:block>
 
+    <kiln:block name="end-js">
+      <script>
+        <xsl:call-template name="create-source-location-variable" />
+        <xsl:call-template name="create-related-location-variable">
+          <xsl:with-param name="records" select="$records" />
+        </xsl:call-template>
+        <xsl:call-template name="create-source-region-variable" />
+      </script>
+      <kiln:super />
+    </kiln:block>
   </kiln:child>
 
 </kiln:root>

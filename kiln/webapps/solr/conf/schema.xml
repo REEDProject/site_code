@@ -122,6 +122,9 @@
           required="false" stored="true" type="string" />
    <field indexed="true" multiValued="false" name="record_location"
           required="false" stored="true" type="string" />
+   <field indexed="false" multiValued="false"
+          name="record_location_id" required="false" stored="true"
+          type="string" />
    <field indexed="true" multiValued="false" name="record_shelfmark"
           required="false" stored="true" type="text_general" />
    <!-- record_date is treated as an integer, because Solr's date

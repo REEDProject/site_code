@@ -4,7 +4,57 @@
                 xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <xsl:variable name="entity" select="/aggregation/eats:entities/eats:entity" />
+  <xsl:variable name="entity" select="/aggregation/eats:entities/eats:entity[@selected='selected']" />
+
+  <xsl:template name="create-related-location-variable">
+    <xsl:param name="records" />
+    <xsl:text>var related_location_geojson = [</xsl:text>
+    <xsl:for-each select="$records">
+      <xsl:if test="position() = 1">
+        <xsl:text>{"type":"FeatureCollection",
+        "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::3857"}},
+        "features":[</xsl:text>
+      </xsl:if>
+      <xsl:value-of select="id(str[@name='record_location_id'])/geojson" />
+      <xsl:choose>
+        <xsl:when test="position() = last()">
+          <xsl:text>]}</xsl:text>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:text>,
+          </xsl:text>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:for-each>
+    <xsl:text>];
+    </xsl:text>
+  </xsl:template>
+
+  <xsl:template name="create-source-location-variable">
+    <xsl:text>var source_location_geojson = [</xsl:text>
+    <xsl:if test="$entity/geojson[@type='Point']">
+      <xsl:text>{"type":"FeatureCollection",
+      "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::3857"}},
+      "features":[</xsl:text>
+      <xsl:value-of select="$entity/geojson" />
+      <xsl:text>]}</xsl:text>
+    </xsl:if>
+    <xsl:text>];
+    </xsl:text>
+  </xsl:template>
+
+  <xsl:template name="create-source-region-variable">
+    <xsl:text>var source_region_geojson = [</xsl:text>
+    <xsl:if test="$entity/geojson[@type!='Point']">
+      <xsl:text>{"type":"FeatureCollection"
+      ,"crs":{"type":"name","properties":{"name":"EPSG:3857"}}
+      ,"features":[</xsl:text>
+      <xsl:value-of select="$entity/geojson" />
+      <xsl:text>]}</xsl:text>
+    </xsl:if>
+    <xsl:text>];
+    </xsl:text>
+  </xsl:template>
 
   <xsl:template name="display-entity-primary-name">
     <xsl:value-of select="$entity/primary_name" />

@@ -80,6 +80,10 @@
           <!-- QAZ: Use EATSML name? -->
           <xsl:value-of select="normalize-space(tei:body/tei:head/tei:rs)" />
         </field>
+        <field name="record_location_id">
+          <xsl:text>entity-</xsl:text>
+          <xsl:value-of select="substring-before(substring-after(tei:body/tei:head/tei:rs/@ref, '/entity/'), '/')" />
+        </field>
         <field name="record_shelfmark">
           <xsl:value-of select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='text']" />
         </field>
