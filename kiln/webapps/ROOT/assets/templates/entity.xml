@@ -134,6 +134,13 @@
         <xsl:call-template name="create-source-region-variable" />
       </script>
       <kiln:super />
+      <!-- Workaround for problem described at
+           https://stackoverflow.com/questions/10762984/leaflet-map-not-displayed-properly-inside-tabbed-panel -->
+      <script>
+        $('body').on('change.zf.tabs', '#example-tabs', function() {
+          map.invalidateSize(false);
+        });
+      </script>
     </kiln:block>
   </kiln:child>
 
