@@ -216,7 +216,6 @@
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Glossed Terms</a>
         <div class="accordion-content" data-tab-content="">
-          <p>Click a term to see the earliest instance of that term in the records.</p>
           <ul class="glossed-terms">
             <xsl:variable name="text-id" select="@xml:id" />
             <!-- QAZ: Terms may be repeated within the same entry;
