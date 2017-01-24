@@ -87,6 +87,12 @@
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="tei:text[@type='record']/tei:body/tei:div/tei:div/tei:head">
+    <p>
+      <xsl:apply-templates />
+    </p>
+  </xsl:template>
+
   <xsl:template match="tei:hi[@rend='italic']">
     <i>
       <xsl:apply-templates />
@@ -201,7 +207,7 @@
     </li>
   </xsl:template>
 
-  <xsl:template match="tei:title">
+  <xsl:template match="tei:ab//tei:title|tei:p//tei:title">
     <i>
       <xsl:apply-templates select="@*|node()" />
     </i>

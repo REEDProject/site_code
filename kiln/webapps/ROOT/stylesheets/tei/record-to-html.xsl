@@ -120,7 +120,7 @@
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Collation Notes</a>
         <div class="accordion-content" data-tab-content="">
-          <xsl:apply-templates select="$record_text/tei:body/tei:div[@type='collation_notes']" />
+          <xsl:apply-templates select="tei:body/tei:div[@type='collation_notes']" />
         </div>
       </li>
     </xsl:if>
@@ -144,7 +144,7 @@
     <li class="accordion-item" data-accordion-item="">
       <a href="#" class="accordion-title">Document Description</a>
       <div class="accordion-content" data-tab-content="">
-        <xsl:variable name="head" select="$record_text/tei:body/tei:head" />
+        <xsl:variable name="head" select="tei:body/tei:head" />
         <p>
           <xsl:text>Record title: </xsl:text>
           <xsl:value-of select="$head/tei:title" />
@@ -168,7 +168,7 @@
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Endnote</a>
         <div class="accordion-content" data-tab-content="">
-          <xsl:apply-templates select="$record_text/tei:body/tei:div[@type='endnote']" />
+          <xsl:apply-templates select="tei:body/tei:div[@type='endnote']" />
         </div>
       </li>
     </xsl:if>
@@ -216,11 +216,9 @@
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Glossed Terms</a>
         <div class="accordion-content" data-tab-content="">
-          <p>Click a term to see the earliest instance of that term in the records.</p>
           <ul class="glossed-terms">
-            <!-- QAZ: Terms may be repeated within the same entry;
-                 only one instance should be rendered here. -->
-            <xsl:apply-templates mode="group" select=".//tei:term[@ref]" />
+            <xsl:variable name="text-id" select="@xml:id" />
+            <xsl:apply-templates mode="group" select=".//tei:term[@ref][not(@ref = preceding::tei:term[@ref][ancestor::tei:text[1]/@xml:id=$text-id]/@ref)]" />
           </ul>
         </div>
       </li>
@@ -244,7 +242,7 @@
         <a href="#" class="accordion-title">Marginalia</a>
         <div class="accordion-content" data-tab-content="">
           <ul class="marginalia-list">
-            <xsl:apply-templates mode="group" select="$record_text//tei:note[@type='marginal']" />
+            <xsl:apply-templates mode="group" select=".//tei:note[@type='marginal']" />
           </ul>
         </div>
       </li>
@@ -331,7 +329,7 @@
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Record Translation</a>
         <div class="accordion-content" data-tab-content="">
-          <xsl:apply-templates select="$record_text/tei:body/tei:div[@type='translation']" />
+          <xsl:apply-templates select="tei:body/tei:div[@type='translation']" />
         </div>
       </li>
     </xsl:if>

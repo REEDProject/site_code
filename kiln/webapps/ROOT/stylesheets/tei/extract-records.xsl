@@ -14,7 +14,7 @@
 
   <xsl:param name="record-ids" />
 
-  <xsl:template match="tei:TEI">
+  <xsl:template match="TEICorpus/tei:TEI">
     <xsl:variable name="id-start">
       <xsl:value-of select="@xml:id" />
       <xsl:text>-</xsl:text>
