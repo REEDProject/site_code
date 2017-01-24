@@ -201,7 +201,7 @@
     </li>
   </xsl:template>
 
-  <xsl:template match="tei:title">
+  <xsl:template match="tei:ab//tei:title|tei:p//tei:title">
     <i>
       <xsl:apply-templates select="@*|node()" />
     </i>
