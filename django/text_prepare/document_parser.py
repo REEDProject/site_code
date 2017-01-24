@@ -329,12 +329,18 @@ class DocumentParser:
                                                  content=rich_content)
         source_date = blank + pp.nestedExpr('@st\\', '@st/',
                                             content=rich_content)
-        source_data = source_code - source_head - source_location - \
+        ms_source_data = source_code - source_head - source_location - \
             source_repository - source_shelfmark - source_date
-        doc_desc_contents = pp.Optional(enclosed) + source_data - \
+        ms_doc_desc_contents = pp.Optional(enclosed) + ms_source_data - \
             enclosed
-        doc_desc = pp.nestedExpr('@sd\\', '@sd/', content=doc_desc_contents)
-        doc_desc.setParseAction(self._pa_doc_desc)
+        ms_doc_desc = pp.nestedExpr('@md\\', '@md/',
+                                    content=ms_doc_desc_contents)
+        ms_doc_desc.setParseAction(self._pa_doc_desc)
+        print_doc_desc_contents = pp.Optional(enclosed) + source_code - \
+            source_head - enclosed
+        print_doc_desc = pp.nestedExpr('@pd\\', '@pd/',
+                                       content=print_doc_desc_contents)
+        print_doc_desc.setParseAction(self._pa_doc_desc)
         abbreviation = pp.nestedExpr('@ab\\', '@ab/', content=pp.Word(
             pp.alphanums))
         expansion = pp.nestedExpr('@ex\\', '@ex/', content=pp.OneOrMore(
@@ -343,7 +349,7 @@ class DocumentParser:
         place_code.setParseAction(self._pa_place_code)
         place_codes = pp.nestedExpr('@pc\\', '@pc/',
                                     content=pp.OneOrMore(place_code))
-        preamble = doc_desc - blank - place_codes
+        preamble = (ms_doc_desc ^ print_doc_desc) - blank - place_codes
         preamble.setParseAction(self._pa_preamble)
         record = blank + record_heading + pp.ZeroOrMore(white) + \
             transcription + pp.Optional(translation) + \

@@ -16,8 +16,8 @@ from .exceptions import TextPrepareDocumentUpdateError
 codes = [
     'a', 'ab', 'b', 'c', 'cl', 'cn', 'cnx', 'cor', 'cr', 'cym', 'deu', 'e',
     'en', 'eng', 'ex', 'f', 'fra', 'g', 'gla', 'gmh', 'gml', 'grc', 'i',
-    'ita', 'j', 'k', 'l', 'lat', 'li', 'm', 'p', 'pc', 'por', 'q', 'r',
-    's', 'sc', 'sd', 'sh', 'sl', 'sn', 'snc', 'snr', 'spa', 'sr', 'ss',
+    'ita', 'j', 'k', 'l', 'lat', 'li', 'm', 'md', 'p', 'pc', 'pd', 'por', 'q',
+    'r', 's', 'sc', 'sh', 'sl', 'sn', 'snc', 'snr', 'spa', 'sr', 'ss',
     'st', 'tr', 'ul', 'wlm', 'x', 'xc', 'xno']
 convert_code = re.compile(r'@(({}))\s\\'.format(')|('.join(codes)))
 
