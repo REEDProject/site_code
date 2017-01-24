@@ -53,29 +53,31 @@
               <div class="row">
                 <div class="column medium-9">
                   <h2>Related Records</h2>
-                  <table id="table" class="display responsive" cellspacing="0" width="100%">
-                    <thead>
-                      <tr>
-                        <th class="top-checkbox">
-                          <label class="checkbox"><input type="checkbox" name="select_all" id="table-select-all" value="1" /><span class="checkbox-inner"></span></label>
-                          <a href="#" id="checkbox-toggle">T</a>
-                          <ul id="checkbox-options">
-                            <li data-option="all" class="hide">All</li>
-                            <li data-option="none" class="hide">None</li>
-                          </ul>
-                        </th>
-                        <th class="show-for-small-only hide-sortable" width="40px">Records</th>
-                        <th class="show-for-medium">Date</th>
-                        <th class="show-for-medium">Location</th>
-                        <th class="show-for-medium">Record Title</th>
-                        <th class="show-for-medium">Shelfmark</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <xsl:apply-templates select="/aggregation/response/result/doc"
-                                           mode="search-results" />
-                    </tbody>
-                  </table>
+                  <form action="{kiln:url-for-match('ereed-records-display-html', (), 0)}" method="get" class="relative">
+                    <table id="table" class="display responsive" cellspacing="0" width="100%">
+                      <thead>
+                        <tr>
+                          <th class="top-checkbox">
+                            <label class="checkbox"><input type="checkbox" name="select_all" id="table-select-all" value="1" /><span class="checkbox-inner"></span></label>
+                            <a href="#" id="checkbox-toggle">T</a>
+                            <ul id="checkbox-options">
+                              <li data-option="all" class="hide">All</li>
+                              <li data-option="none" class="hide">None</li>
+                            </ul>
+                          </th>
+                          <th class="show-for-small-only hide-sortable" width="40px">Records</th>
+                          <th class="show-for-medium">Date</th>
+                          <th class="show-for-medium">Location</th>
+                          <th class="show-for-medium">Record Title</th>
+                          <th class="show-for-medium">Shelfmark</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <xsl:apply-templates select="/aggregation/response/result/doc"
+                                             mode="search-results" />
+                      </tbody>
+                    </table>
+                  </form>
                 </div>
               </div>
             </div>
