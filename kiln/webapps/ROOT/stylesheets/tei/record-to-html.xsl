@@ -218,9 +218,10 @@
         <div class="accordion-content" data-tab-content="">
           <p>Click a term to see the earliest instance of that term in the records.</p>
           <ul class="glossed-terms">
+            <xsl:variable name="text-id" select="@xml:id" />
             <!-- QAZ: Terms may be repeated within the same entry;
                  only one instance should be rendered here. -->
-            <xsl:apply-templates mode="group" select=".//tei:term[@ref]" />
+            <xsl:apply-templates mode="group" select=".//tei:term[@ref][not(@ref = preceding::tei:term[ancestor::tei:text[1][@xml:id=$text-id]]/@ref)]" />
           </ul>
         </div>
       </li>
