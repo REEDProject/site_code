@@ -226,10 +226,20 @@
   <xsl:template match="eats:subject_identifier[starts-with(., $gis_base_url)]">
     <xsl:variable name="id" select="substring-before(substring-after(., $gis_base_url), '/')" />
     <xsl:variable name="geojson" select="id($id)" />
-    <geojson>
-      <xsl:copy-of select="$geojson/@type" />
-      <xsl:value-of select="$geojson" />
-    </geojson>
+    <xsl:choose>
+      <xsl:when test="$geojson">
+        <geojson>
+          <xsl:copy-of select="$geojson/@type" />
+          <xsl:value-of select="$geojson" />
+        </geojson>
+      </xsl:when>
+      <xsl:otherwise>
+        <ERROR>
+          <xsl:text>Missing GIS data for URL: </xsl:text>
+          <xsl:value-of select="." />
+        </ERROR>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="@*">

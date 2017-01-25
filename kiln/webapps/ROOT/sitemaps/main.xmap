@@ -188,10 +188,13 @@
           <map:part element="TEICorpus"
                     src="cocoon://internal/tei/preprocess-records/{1}.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=collections/{1}/" />
-          <map:part src="cocoon://internal/search/records_by_collection.xml?q={1}" />
+          <map:part element="records_results" src="cocoon://internal/search/records_by_collection.xml?q={1}" />
         </map:aggregate>
+        <map:transform src="../stylesheets/tei/include-collection-entities.xsl" />
+        <map:transform type="xinclude" />
         <map:transform src="cocoon://_internal/template/collection.xsl" />
         <map:serialize />
+        <map:serialize type="xml" />
       </map:match>
 
       <!-- Explore Collections: collection part. -->
