@@ -244,6 +244,11 @@
         <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>
+    <xsl:if test=". = $location_feature">
+      <field name="facet_locations_feature">
+        <xsl:value-of select="$entity_eats_id" />
+      </field>
+    </xsl:if>
     <!-- Material Objects -->
     <xsl:if test=". = $material_instrument">
       <field name="facet_materials_instrument">
