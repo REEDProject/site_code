@@ -15,15 +15,19 @@
         "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::3857"}},
         "features":[</xsl:text>
       </xsl:if>
-      <xsl:value-of select="id(str[@name='record_location_id'])/geojson" />
+      <xsl:variable name="geojson" select="id(str[@name='record_location_id'])/geojson" />
+      <xsl:value-of select="$geojson" />
       <xsl:choose>
         <xsl:when test="position() = last()">
           <xsl:text>]}</xsl:text>
         </xsl:when>
-        <xsl:otherwise>
+        <!-- There may not be geoJSON data for a location, in which
+             case don't include stray commas that make the mapping
+             fail entirely. -->
+        <xsl:when test="$geojson">
           <xsl:text>,
           </xsl:text>
-        </xsl:otherwise>
+        </xsl:when>
       </xsl:choose>
     </xsl:for-each>
     <xsl:text>];

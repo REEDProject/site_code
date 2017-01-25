@@ -33,6 +33,8 @@
   <xsl:variable name="circa_date_type" select="'date_type-489'" />
   <xsl:variable name="singular_name_type" select="'name_type-18607'" />
   <xsl:variable name="has_occupation_relationship_type" select="'entity_relationship_type-21008'" />
+  <xsl:variable name="contains_relationship_type" select="'entity_relationship_type-502'" />
+  <xsl:variable name="feature_entity_type" select="'entity_type-21368'" />
   <xsl:variable name="gis_base_url" select="'https://ereed.library.utoronto.ca/gis/place/'" />
 
   <xsl:template match="aggregation">
@@ -135,6 +137,9 @@
       </xsl:variable>
       <primary_name>
         <xsl:value-of select="$name" />
+        <xsl:if test="eats:entity_types/eats:entity_type/@entity_type=$feature_entity_type">
+          <xsl:apply-templates mode="containing" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$contains_relationship_type][@domain_entity=$entity_id]" />
+        </xsl:if>
       </primary_name>
       <xsl:apply-templates mode="singular" select="eats:names/eats:name[@name_type=$singular_name_type]" />
       <title>
@@ -142,6 +147,9 @@
         <!-- QAZ: Handle multiple dates. -->
         <xsl:apply-templates mode="title" select="eats:existences/eats:existence/eats:dates/eats:date" />
         <xsl:apply-templates mode="title" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$has_occupation_relationship_type][@domain_entity=$entity_id]" />
+        <xsl:if test="eats:entity_types/eats:entity_type/@entity_type=$feature_entity_type">
+          <xsl:apply-templates mode="containing" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$contains_relationship_type][@domain_entity=$entity_id]" />
+        </xsl:if>
       </title>
       <relationships>
         <xsl:apply-templates select="eats:entity_relationships/eats:entity_relationship">
@@ -199,6 +207,11 @@
     </relationship>
   </xsl:template>
 
+  <xsl:template match="eats:entity_relationship" mode="containing">
+    <xsl:text>, </xsl:text>
+    <xsl:apply-templates mode="name" select="id(@range_entity)" />
+  </xsl:template>
+
   <xsl:template match="eats:entity_relationship" mode="title">
     <xsl:text>, </xsl:text>
     <xsl:apply-templates mode="singular" select="id(@range_entity)/eats:names/eats:name[@name_type=$singular_name_type]" />
@@ -226,10 +239,20 @@
   <xsl:template match="eats:subject_identifier[starts-with(., $gis_base_url)]">
     <xsl:variable name="id" select="substring-before(substring-after(., $gis_base_url), '/')" />
     <xsl:variable name="geojson" select="id($id)" />
-    <geojson>
-      <xsl:copy-of select="$geojson/@type" />
-      <xsl:value-of select="$geojson" />
-    </geojson>
+    <xsl:choose>
+      <xsl:when test="$geojson">
+        <geojson>
+          <xsl:copy-of select="$geojson/@type" />
+          <xsl:value-of select="$geojson" />
+        </geojson>
+      </xsl:when>
+      <xsl:otherwise>
+        <ERROR>
+          <xsl:text>Missing GIS data for URL: </xsl:text>
+          <xsl:value-of select="." />
+        </ERROR>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="@*">

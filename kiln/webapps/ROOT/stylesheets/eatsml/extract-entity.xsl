@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="2.0"
+<xsl:stylesheet exclude-result-prefixes="#all" version="2.0"
                 xmlns:eats="http://eats.artefact.org.nz/ns/eatsml/"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 

@@ -12,6 +12,8 @@
 
   <xsl:import href="../../kiln/stylesheets/tei/to-html.xsl" />
 
+  <xsl:import href="utils.xsl" />
+
   <xsl:template match="tei:add[@place='above']">
     <xsl:text>⸢</xsl:text>
     <xsl:apply-templates />
@@ -211,11 +213,6 @@
     <i>
       <xsl:apply-templates select="@*|node()" />
     </i>
-  </xsl:template>
-
-  <xsl:template name="get-entity-id-from-url">
-    <xsl:param name="eats-url" />
-    <xsl:value-of select="substring-before(substring-after($eats-url, '/entity/'), '/')" />
   </xsl:template>
 
   <xsl:template name="make-entity-url">

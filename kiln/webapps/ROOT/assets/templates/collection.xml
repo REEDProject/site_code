@@ -9,6 +9,10 @@
 
   <xsl:import href="cocoon://_internal/template/xsl/stylesheets/tei/record-to-html.xsl" />
 
+  <xsl:import href="cocoon://_internal/template/xsl/stylesheets/eatsml/entity-to-html.xsl" />
+
+  <xsl:variable name="records" select="/aggregation/records_results/response/result/doc" />
+
   <kiln:parent>
     <xi:include href="map.xml" />
   </kiln:parent>
@@ -73,8 +77,7 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <xsl:apply-templates select="/aggregation/response/result/doc"
-                                             mode="search-results" />
+                        <xsl:apply-templates select="$records" mode="search-results" />
                       </tbody>
                     </table>
                   </form>
@@ -126,6 +129,13 @@
     </kiln:block>
 
     <kiln:block name="end-js">
+      <script>
+        <xsl:call-template name="create-source-location-variable" />
+        <xsl:call-template name="create-related-location-variable">
+          <xsl:with-param name="records" select="$records" />
+        </xsl:call-template>
+        <xsl:call-template name="create-source-region-variable" />
+      </script>
       <kiln:super />
     </kiln:block>
 
