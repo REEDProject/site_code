@@ -13646,7 +13646,6 @@ table. The (blank) above is the second cell of that row -->the
                   p<ex>ur</ex>ce q<ex>ue</ex> nous auons donez a <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/30501/" type="Person_Commoner"
                   >Hans Gough</rs>
-                <!-- kc: see if I need to revise tags for patronized ministrels sincc I may have to retag so that the inserted type value in the <rs> tags matches with EATS page-->
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/" type="Entertainer_Type"
                   >piper</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/30587/"
                   type="Person_Commoner">Henr<ex>i</ex> Hultescrane</rs> piper <rs
@@ -13658,7 +13657,7 @@ table. The (blank) above is the second cell of that row -->the
                   type="Entertainer_Type">Clarioner</rs> nos <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type"
                   >Minstrals</rs> a chescun C s. p<ex>ar</ex> an a p<ex>re</ex>ndre del
-                  hono<ex>ur</ex> de leyc<ex>stre</ex> p<ex>ar</ex> les mains de le
+                  <rs ref="http://ereed.library.utoronto.ca/eats/entity/37864/" type="Place_BoroughParish">hono<ex>ur</ex> de leyc<ex>stre</ex></rs> p<ex>ar</ex> les mains de le
                   Rec<ex>eyvour</ex> illoq<ex>ue</ex>s qi p<ex>ur</ex> le temps s<ex>er</ex>ra as
                   t<ex>er</ex>mes de sanct Michel &amp; de Pasq<ex>ue</ex>s par ouelles porcions
                 sicome en noz l<ex>ett</ex>res patentes &amp; endentez ent faitz piert plus au plein
@@ -13666,7 +13665,7 @@ table. The (blank) above is the second cell of that row -->the
                 &amp; Iames paiez &amp; deliu<ex>er</ex>ez a chescun deux Cent souldz par an le
                 course de lo<ex>ur</ex> vies durantz p<ex>ar</ex>uant aquitance de ch<ex>es</ex>cun
                 deux de ce q<ex>ue</ex>nsi li paierez p<ex>ar</ex> les quelles &amp;c voulons &amp;c
-                  Don<ex>ne</ex> etc. a la Sauuoye le <space/> io<ex>ur</ex> de Iuy<damage><gap
+                  Don<ex>ne</ex> etc. a la <rs ref="http://ereed.library.utoronto.ca/eats/entity/36237/" type="Place_Feature">Sauuoye</rs> le <space/> io<ex>ur</ex> de Iuy<damage><gap
                     unit="chars" extent="1"/></damage><note type="foot">Iuy<damage><gap unit="chars"
                       extent="1"/></damage>: <hi rend="italic">letter lost in
                 gutter</hi></note>.</ab>
@@ -13680,10 +13679,10 @@ table. The (blank) above is the second cell of that row -->the
               <ab><rs ref="http://ereed.library.utoronto.ca/eats/entity/13153/"
                   type="Person_Royalty">Iohan</rs> &amp;c A n<ex>ost</ex>re b<ex>ie</ex>n ame <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/30406/" type="Person_Commoner"
-                    >Rob<ex>er</ex>t de Morton</rs> n<ex>ost</ex>re Receyuour deinz lonour de
-                Pykeryinge ou<note type="marginal" place="margin_left">p<ex>ur</ex> Iohan
+                    >Rob<ex>er</ex>t de Morton</rs> n<ex>ost</ex>re Receyuour deinz <rs ref="http://ereed.library.utoronto.ca/eats/entity/37891/" type="Place_BoroughParish">lonour de
+                Pykeryinge</rs> ou<note type="marginal" place="margin_left">p<ex>ur</ex> Iohan
                   Tyas</note>
-                <!-- kc: John Tyas is a patronized entertainer -->a son lieutenant illoeques saluz
+                a son lieutenant illoeques saluz
                 Come nous auant n<ex>ost</ex>re passage ore <term ref="gloss:derreinement-1"
                     >derreinem<ex>en</ex>t</term> a la meer vous enuoiasmes q<ex>ue</ex> vous ne
                   <term ref="gloss:deussiez-1">deussiez</term> paier a n<ex>ost</ex>re b<ex>ie</ex>n
@@ -13692,7 +13691,7 @@ table. The (blank) above is the second cell of that row -->the
                   q<ex>ue</ex> vous fac<ex>i</ex>es paier au dit Iohan ou a son c<ex>er</ex>tain
                   atto<ex>ur</ex>ne les fees auantditz doresenauant<ex>es</ex> ensemblement
                   ovesq<ex>ue</ex> les arrerages si nulles ly soient a derrier Et cestes noz
-                  l<ex>ett</ex>res &amp;c Don<ex>ne</ex> etc. a Wentbrigg<ex>es</ex> le xxj
+                  l<ex>ett</ex>res &amp;c Don<ex>ne</ex> etc. a <rs ref="http://ereed.library.utoronto.ca/eats/entity/37914/" type="Place_BoroughParish">Wentbrigg<ex>es</ex></rs> le xxj
                   io<ex>ur</ex> de Sept<ex>embre</ex></ab>
 
               <gap reason="omitted"/>
@@ -13768,7 +13767,7 @@ table. The (blank) above is the second cell of that row -->the
                   type="Person_Commoner">Adam Pope</rs> p<ex>ur</ex> un garson <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/21804/" type="Entertainer_Type"
                   >ffauconer</rs> le quelle nous ly auons done de nostre doun xxxv s. ij d. <gap
-                  reason="omitted"/>don<ex>ne</ex> a Sauvoye le xxvj jour de Ianver lan xlix.</ab>
+                  reason="omitted"/>don<ex>ne</ex> a <rs ref="http://ereed.library.utoronto.ca/eats/entity/36237/" type="Place_Feature">Sauvoye</rs> le xxvj jour de Ianver lan xlix.</ab>
               <!-- kc: is the boy falconer patronized by J of Gaunt? -->
 
               <gap reason="omitted"/>
