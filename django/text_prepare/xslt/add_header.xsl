@@ -19,9 +19,9 @@
         </fileDesc>
         <encodingDesc>
           <listPrefixDef>
-            <prefixDef ident="ereed" matchPattern="([A-Za-z0-9]+)"
-                       replacementPattern="../code_list.xml#$1">
-              <p>Private URIs using the <code>ereed</code> prefix are pointers to entities in the code_list.xml file. For example, <code>ereed:BPA</code> dereferences to <code>code_list.xml#BPA</code>.</p>
+            <prefixDef ident="taxon" matchPattern="([A-Za-z0-9]+)"
+                       replacementPattern="../taxonomy.xml#$1">
+              <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the code_list.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p>
             </prefixDef>
           </listPrefixDef>
         </encodingDesc>
