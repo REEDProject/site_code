@@ -14,15 +14,25 @@
 
   <xsl:import href="utils.xsl" />
 
+  <xsl:template match="tei:add">
+    <xsl:if test="tei:handShift">
+      <xsl:text>°</xsl:text>
+    </xsl:if>
+    <xsl:apply-templates />
+    <xsl:if test="tei:handShift">
+      <xsl:text>°</xsl:text>
+    </xsl:if>
+  </xsl:template>
+
   <xsl:template match="tei:add[@place='above']">
     <xsl:text>⸢</xsl:text>
-    <xsl:apply-templates />
+    <xsl:next-match />
     <xsl:text>⸣</xsl:text>
   </xsl:template>
 
   <xsl:template match="tei:add[@place='below']">
     <xsl:text>⸤</xsl:text>
-    <xsl:apply-templates />
+    <xsl:next-match />
     <xsl:text>⸥</xsl:text>
   </xsl:template>
 
@@ -52,7 +62,7 @@
 
   <xsl:template match="tei:gap">
     <xsl:choose>
-      <xsl:when test="ancestor::tei:ab|ancestor::tei:lg|ancestor::tei:p">
+      <xsl:when test="ancestor::tei:*[local-name()=('ab', 'lg', 'p', 'label')]">
         <xsl:apply-templates mode="actual" select="." />
       </xsl:when>
       <xsl:otherwise>
@@ -79,11 +89,13 @@
     </i>
   </xsl:template>
 
-  <xsl:template match="tei:handShift">
-    <xsl:text>°</xsl:text>
-    <xsl:apply-templates />
-    <xsl:text>°</xsl:text>
+  <xsl:template match="tei:graphic">
+    <img src="{$kiln:assets-path}{@url}" />
   </xsl:template>
+
+  <!-- tei:handShift should occur only at the beginning of a tei:add,
+       and is rendered as part of that element. -->
+  <xsl:template match="tei:handShift" />
 
   <xsl:template match="tei:front/tei:div/tei:head" />
 
@@ -137,6 +149,26 @@
     <xsl:value-of select="." />
   </xsl:template>
 
+  <xsl:template match="tei:list[@type='gloss']">
+    <table>
+      <xsl:apply-templates />
+    </table>
+  </xsl:template>
+
+  <xsl:template match="tei:list[@type='gloss']/tei:item" />
+
+  <xsl:template match="tei:list[@type='gloss']/tei:label">
+    <tr>
+      <td>
+        <xsl:apply-templates select="@*|node()" />
+      </td>
+      <td>
+        <xsl:apply-templates select="following-sibling::tei:item[1]/@*" />
+        <xsl:apply-templates select="following-sibling::tei:item[1]/node()" />
+      </td>
+    </tr>
+  </xsl:template>
+
   <xsl:template match="tei:note[@type='foot']">
     <span class="footnote tag" note="{generate-id()}"></span>
   </xsl:template>
@@ -159,7 +191,9 @@
     </li>
   </xsl:template>
 
-  <xsl:template match="tei:pb" />
+  <xsl:template match="tei:pb">
+    <xsl:text>|</xsl:text>
+  </xsl:template>
 
   <xsl:template match="tei:ref[not(@target)]">
     <xsl:apply-templates />
