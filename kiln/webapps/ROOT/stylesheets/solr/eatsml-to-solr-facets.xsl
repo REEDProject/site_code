@@ -107,7 +107,7 @@
            relationship. -->
       <xsl:if test="not(../eats:entity_relationship[@entity_relationship_type=$patronized][@range_entity=$entity_id])">
         <field name="facet_entertainers_status">
-          <xsl:text>Unknown</xsl:text>
+          <xsl:text>unknown</xsl:text>
         </field>
       </xsl:if>
     </xsl:if>
@@ -118,7 +118,7 @@
         <xsl:value-of select="substring-after($entity_id, 'entity-')" />
       </field>
       <field name="facet_entertainers_status">
-        <xsl:text>Patronized</xsl:text>
+        <xsl:text>patronized</xsl:text>
       </field>
     </xsl:if>
     <!-- Drama type: a $drama_work entity has the type of the
@@ -180,7 +180,7 @@
         <xsl:value-of select="$entity_eats_id" />
       </field>
       <field name="facet_drama_status">
-        <xsl:text>Unknown</xsl:text>
+        <xsl:text>unknown</xsl:text>
       </field>
     </xsl:if>
     <xsl:if test=". = $drama_work">
@@ -188,7 +188,7 @@
         <xsl:value-of select="$entity_eats_id" />
       </field>
       <field name="facet_drama_status">
-        <xsl:text>Titled</xsl:text>
+        <xsl:text>titled</xsl:text>
       </field>
     </xsl:if>
     <xsl:if test=". = $drama_character">
@@ -207,7 +207,7 @@
     <xsl:if test=". = $collective_troupe">
       <xsl:if test="not(../../eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$patronized][@range_entity=concat('entity-', $entity_eats_id)])">
         <field name="facet_entertainers_status">
-          <xsl:text>Unknown</xsl:text>
+          <xsl:text>unknown</xsl:text>
         </field>
       </xsl:if>
     </xsl:if>
@@ -305,42 +305,42 @@
     </xsl:if>
     <xsl:if test=". = $person_female">
       <field name="facet_people_gender">
-        <xsl:text>Female</xsl:text>
+        <xsl:text>female</xsl:text>
       </field>
     </xsl:if>
     <xsl:if test=". = $person_male">
       <field name="facet_people_gender">
-        <xsl:text>Male</xsl:text>
+        <xsl:text>male</xsl:text>
       </field>
     </xsl:if>
     <xsl:if test=". = $person_unknown">
       <field name="facet_people_gender">
-        <xsl:text>Unknown</xsl:text>
+        <xsl:text>unknown</xsl:text>
       </field>
     </xsl:if>
     <xsl:if test=". = $person_royalty">
       <field name="facet_people_status">
-        <xsl:text>Royalty</xsl:text>
+        <xsl:text>royalty</xsl:text>
       </field>
     </xsl:if>
     <xsl:if test=". = $person_nobility">
       <field name="facet_people_status">
-        <xsl:text>Nobility</xsl:text>
+        <xsl:text>nobility</xsl:text>
       </field>
     </xsl:if>
     <xsl:if test=". = $person_gentry">
       <field name="facet_people_status">
-        <xsl:text>Gentry</xsl:text>
+        <xsl:text>gentry</xsl:text>
       </field>
     </xsl:if>
     <xsl:if test=". = $person_clergy">
       <field name="facet_people_status">
-        <xsl:text>Clergy</xsl:text>
+        <xsl:text>clergy</xsl:text>
       </field>
     </xsl:if>
     <xsl:if test=". = $person_commoner">
       <field name="facet_people_status">
-        <xsl:text>Commoner</xsl:text>
+        <xsl:text>commoner</xsl:text>
       </field>
     </xsl:if>
   </xsl:template>
