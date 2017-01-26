@@ -128,9 +128,7 @@
                 <label>(A)</label>
                 <item>antiquarian</item>
                 <label>
-                    <damage>
-                        <gap unit="chars" extent="3"/>
-                    </damage>
+                    <damage><gap unit="chars" extent="3"/></damage>
                 </label>
                 <item>lost or illegible letters in the original</item>
                 <label>
@@ -142,17 +140,15 @@
                 </label>
                 <item>a blank in the original where writing would be expected</item>
                 <label>
-                    <add>
-                        <handShift/>
-                    </add>
+                    <add><handShift/> </add>
                 </label>
                 <item>matter in the original added in another hand</item>
                 <label>
-                    <add place="above"/>
+                    <add place="above"> </add>
                 </label>
                 <item>text written above the line</item>
                 <label>
-                    <add place="below"/>
+                    <add place="below"> </add>
                 </label>
                 <item>text written below the line</item>
                 <label>‸</label>
@@ -169,9 +165,9 @@
                 <item>right-hand marginale</item>
                 <label><!--#JN to insert symbol L in circle--></label>
                 <item>left-hand marginale</item>
-                <label><!--#JN to insert symbol M in circle--></label>
+                <label><graphic url="/images/marginalia.png" /></label>
                 <item>marginale</item>
-                <label><!--#JN to insert footnote symbol--></label>
+                <label><graphic url="/images/footnote.svg" /></label>
                 <item>footnote</item>
             </list>
         </div>
