@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="2.0"
+                xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
@@ -18,6 +19,16 @@
     </xsl:for-each>
     <xsl:text>):</xsl:text>
   </xsl:variable>
+
+  <!-- Wrap a tei:damage and tei:gap in tei:ab if it's a child of a
+       tei:div. -->
+  <xsl:template match="tei:div/tei:damage | tei:div/tei:gap">
+    <ab>
+      <xsl:copy>
+        <xsl:apply-templates select="@*|node()" />
+      </xsl:copy>
+    </ab>
+  </xsl:template>
 
   <!-- Convert a tei:floatingText into tei:text. -->
   <xsl:template match="tei:floatingText">
