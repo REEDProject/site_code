@@ -47,13 +47,13 @@
           <div class="tabs">
             <div class="row">
               <ul class="tabs column" data-tabs="" id="example-tabs">
-                <li class="tabs-title"><a href="#panel1">Records</a></li>
-                <li class="tabs-title is-active"><a href="#panel2" aria-selected="true">Editorial Materials</a></li>
+                <li class="tabs-title is-active"><a href="#panel1">Records</a></li>
+                <li class="tabs-title"><a href="#panel2" aria-selected="true">Editorial Materials</a></li>
               </ul>
             </div>
           </div>
           <div class="tabs-content" data-tabs-content="example-tabs">
-            <div class="tabs-panel" id="panel1">
+            <div class="tabs-panel is-active" id="panel1">
               <div class="row">
                 <div class="column medium-9">
                   <h2>Related Records</h2>
@@ -84,7 +84,7 @@
                 </div>
               </div>
             </div>
-            <div class="tabs-panel is-active" id="panel2">
+            <div class="tabs-panel" id="panel2">
               <div class="bibliography-filter filter hide-for-medium boxed">
                 <div class="filter-head jump-to-filter">Topics In This Section</div>
                 <div class="filter-content-wrapper relative">
