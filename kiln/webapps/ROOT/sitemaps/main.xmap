@@ -147,10 +147,11 @@
       <!-- About: Symbols and Abbreviations -->
       <map:match id="ereed-about-symbols" pattern="about/symbols/">
         <map:aggregate element="aggregation" label="content">
-          <map:part src="../content/xml/tei/symbols.xml" />
+          <map:part element="TEICorpus" src="../content/xml/tei/symbols_abbreviations.xml" />
+          <map:part src="../content/xml/tei/taxonomy.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=about/symbols/" />
         </map:aggregate>
-        <map:transform src="../stylesheets/tei/tei-to-html.xsl" />
+        <map:transform src="cocoon://_internal/template/symbols.xsl" />
         <map:serialize />
       </map:match>
 
