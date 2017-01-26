@@ -73,10 +73,16 @@
     <xsl:text>...</xsl:text>
   </xsl:template>
 
-  <xsl:template match="tei:gram" mode="group">
+  <xsl:template match="tei:gram" mode="#default group">
     <i>
-      <xsl:value-of select="." />
+      <xsl:apply-templates />
     </i>
+  </xsl:template>
+
+  <xsl:template match="tei:handShift">
+    <xsl:text>°</xsl:text>
+    <xsl:apply-templates />
+    <xsl:text>°</xsl:text>
   </xsl:template>
 
   <xsl:template match="tei:front/tei:div/tei:head" />
