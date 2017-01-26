@@ -241,7 +241,7 @@
     <xsl:variable name="geojson" select="id($id)" />
     <xsl:choose>
       <xsl:when test="$geojson">
-        <geojson>
+        <geojson xml:id="{$id}">
           <xsl:copy-of select="$geojson/@type" />
           <xsl:value-of select="$geojson" />
         </geojson>

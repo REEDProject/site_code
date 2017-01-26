@@ -129,13 +129,11 @@
     </kiln:block>
 
     <kiln:block name="end-js">
-      <script>
-        <xsl:call-template name="create-source-location-variable" />
-        <xsl:call-template name="create-related-location-variable">
-          <xsl:with-param name="records" select="$records" />
-        </xsl:call-template>
-        <xsl:call-template name="create-source-region-variable" />
-      </script>
+      <xsl:call-template name="create-source-location-variable" />
+      <xsl:call-template name="create-related-location-variable">
+        <xsl:with-param name="records" select="$records" />
+      </xsl:call-template>
+      <xsl:call-template name="create-source-region-variable" />
       <kiln:super />
     </kiln:block>
 

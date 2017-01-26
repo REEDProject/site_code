@@ -1,63 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="2.0"
+<xsl:stylesheet exclude-result-prefixes="#all" version="2.0"
                 xmlns:eats="http://eats.artefact.org.nz/ns/eatsml/"
                 xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:import href="../defaults.xsl" />
 
   <xsl:variable name="entity" select="/aggregation/eats:entities/eats:entity[@selected='selected']" />
 
   <xsl:template name="create-related-location-variable">
     <xsl:param name="records" />
-    <xsl:text>var related_location_geojson = [</xsl:text>
-    <xsl:for-each select="$records">
-      <xsl:if test="position() = 1">
-        <xsl:text>{"type":"FeatureCollection",
-        "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::3857"}},
-        "features":[</xsl:text>
-      </xsl:if>
-      <xsl:variable name="geojson" select="id(str[@name='record_location_id'])/geojson" />
-      <xsl:value-of select="$geojson" />
-      <xsl:choose>
-        <xsl:when test="position() = last()">
-          <xsl:text>]}</xsl:text>
-        </xsl:when>
-        <!-- There may not be geoJSON data for a location, in which
-             case don't include stray commas that make the mapping
-             fail entirely. -->
-        <xsl:when test="$geojson">
-          <xsl:text>,
-          </xsl:text>
-        </xsl:when>
-      </xsl:choose>
-    </xsl:for-each>
-    <xsl:text>];
-    </xsl:text>
+    <script>
+      <xsl:text>var related_location_geojson = [</xsl:text>
+      <xsl:for-each select="$records">
+        <xsl:if test="position() = 1">
+          <xsl:text>{"type":"FeatureCollection",
+          "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::3857"}},
+          "features":[</xsl:text>
+        </xsl:if>
+        <xsl:variable name="geojson" select="id(str[@name='record_location_id'])/geojson" />
+        <xsl:value-of select="$geojson" />
+        <xsl:choose>
+          <xsl:when test="position() = last()">
+            <xsl:text>]}</xsl:text>
+          </xsl:when>
+          <!-- There may not be geoJSON data for a location, in which
+               case don't include stray commas that make the mapping
+               fail entirely. -->
+          <xsl:when test="$geojson">
+            <xsl:text>,
+            </xsl:text>
+          </xsl:when>
+        </xsl:choose>
+      </xsl:for-each>
+      <xsl:text>];</xsl:text>
+    </script>
   </xsl:template>
 
   <xsl:template name="create-source-location-variable">
-    <xsl:text>var source_location_geojson = [</xsl:text>
-    <xsl:if test="$entity/geojson[@type='Point']">
-      <xsl:text>{"type":"FeatureCollection",
-      "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::3857"}},
-      "features":[</xsl:text>
-      <xsl:value-of select="$entity/geojson" />
-      <xsl:text>]}</xsl:text>
-    </xsl:if>
-    <xsl:text>];
-    </xsl:text>
+    <script>
+      <xsl:text>var source_location_geojson = [</xsl:text>
+      <xsl:if test="$entity/geojson[@type='Point']">
+        <xsl:text>{"type":"FeatureCollection",
+        "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::3857"}},
+        "features":[</xsl:text>
+        <xsl:value-of select="$entity/geojson" />
+        <xsl:text>]}</xsl:text>
+      </xsl:if>
+      <xsl:text>];</xsl:text>
+    </script>
   </xsl:template>
 
   <xsl:template name="create-source-region-variable">
-    <xsl:text>var source_region_geojson = [</xsl:text>
-    <xsl:if test="$entity/geojson[@type!='Point']">
-      <xsl:text>{"type":"FeatureCollection"
-      ,"crs":{"type":"name","properties":{"name":"EPSG:3857"}}
-      ,"features":[</xsl:text>
-      <xsl:value-of select="$entity/geojson" />
-      <xsl:text>]}</xsl:text>
-    </xsl:if>
-    <xsl:text>];
-    </xsl:text>
+    <xsl:choose>
+      <xsl:when test="$entity/geojson[@type!='Point']">
+        <script>
+          <xsl:attribute name="src">
+            <xsl:value-of select="$kiln:assets-path" />
+            <xsl:text>/scripts/leaflet/regions/</xsl:text>
+            <xsl:value-of select="$entity/geojson/@xml:id" />
+            <xsl:text>.js</xsl:text>
+          </xsl:attribute>
+        </script>
+      </xsl:when>
+      <xsl:otherwise>
+        <script>
+          <xsl:text>var source_region_geojson = [];</xsl:text>
+        </script>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template name="display-entity-primary-name">

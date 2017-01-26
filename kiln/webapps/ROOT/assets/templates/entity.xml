@@ -128,13 +128,11 @@
     </kiln:block>
 
     <kiln:block name="end-js">
-      <script>
-        <xsl:call-template name="create-source-location-variable" />
-        <xsl:call-template name="create-related-location-variable">
-          <xsl:with-param name="records" select="$records" />
-        </xsl:call-template>
-        <xsl:call-template name="create-source-region-variable" />
-      </script>
+      <xsl:call-template name="create-source-location-variable" />
+      <xsl:call-template name="create-related-location-variable">
+        <xsl:with-param name="records" select="$records" />
+      </xsl:call-template>
+      <xsl:call-template name="create-source-region-variable" />
       <kiln:super />
       <!-- Workaround for problem described at
            https://stackoverflow.com/questions/10762984/leaflet-map-not-displayed-properly-inside-tabbed-panel -->
