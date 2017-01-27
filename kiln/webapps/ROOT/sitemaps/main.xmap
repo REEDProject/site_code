@@ -242,6 +242,15 @@
         <map:transform src="cocoon://_internal/template/howto-search.xsl" />
         <map:serialize />
       </map:match>
+
+      <!-- Contact. -->
+      <map:match id="ereed-contact" pattern="contact/">
+        <map:aggregate element="aggregation">
+          <map:part src="cocoon://_internal/menu/main.xml?url=contact/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/contact.xsl" />
+        <map:serialize />
+      </map:match>
     </map:pipeline>
 
     <!-- Kiln as backend pipeline. -->

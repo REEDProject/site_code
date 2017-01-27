@@ -77,7 +77,7 @@
                     <span class="footer-heading">CONNECT</span>
                     <div class="footer-info">
                       <div class="social-icon"><object data="{$kiln:assets-path}/images/twitter-icon.svg" alt=""></object> <a href="https://twitter.com/REED_Project" class="footer-social">Follow</a></div>
-                      <div class="social-icon"><object data="{$kiln:assets-path}/images/email-icon.svg" alt=""></object> <a href="" class="footer-social">Contact</a></div>
+                      <div class="social-icon"><object data="{$kiln:assets-path}/images/email-icon.svg" alt=""></object> <a href="{kiln:url-for-match('ereed-contact', (), 0)}" class="footer-social">Contact</a></div>
                     </div>
                   </div>
                 </div>
