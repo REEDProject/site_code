@@ -39,6 +39,11 @@
             <div class="column medium-9 medium-push-3 sub-section-content">
               <div class="text">
                 <xsl:apply-templates select="$record_text/tei:body" />
+                <hr />
+                <table>
+                  <xsl:apply-templates mode="abbreviations" select="id('repositories')/tei:category/tei:catDesc/tei:choice[tei:abbr]" />
+                  <xsl:apply-templates mode="abbreviations" select="id('short_title_catalogues')/tei:category/tei:catDesc/tei:choice[tei:abbr]" />
+                </table>
               </div>
               <a class="back-to-top button expanded transparent small-margin-top-25 hide-for-medium">Back To Top</a>
             </div>

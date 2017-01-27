@@ -42,6 +42,17 @@
     </li>
   </xsl:template>
 
+  <xsl:template match="tei:choice" mode="abbreviations">
+    <tr>
+      <td>
+        <xsl:value-of select="tei:abbr" />
+      </td>
+      <td>
+        <xsl:value-of select="tei:expan" />
+      </td>
+    </tr>
+  </xsl:template>
+
   <xsl:template match="tei:damage">
     <xsl:text>&lt;</xsl:text>
     <xsl:apply-templates />
