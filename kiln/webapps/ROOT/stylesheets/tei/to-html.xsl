@@ -15,24 +15,18 @@
   <xsl:import href="utils.xsl" />
 
   <xsl:template match="tei:add">
-    <xsl:if test="tei:handShift">
-      <xsl:text>°</xsl:text>
-    </xsl:if>
     <xsl:apply-templates />
-    <xsl:if test="tei:handShift">
-      <xsl:text>°</xsl:text>
-    </xsl:if>
   </xsl:template>
 
   <xsl:template match="tei:add[@place='above']">
     <xsl:text>⸢</xsl:text>
-    <xsl:next-match />
+    <xsl:apply-templates />
     <xsl:text>⸣</xsl:text>
   </xsl:template>
 
   <xsl:template match="tei:add[@place='below']">
     <xsl:text>⸤</xsl:text>
-    <xsl:next-match />
+    <xsl:apply-templates />
     <xsl:text>⸥</xsl:text>
   </xsl:template>
 
@@ -80,9 +74,9 @@
     <img src="{$kiln:assets-path}{@url}" />
   </xsl:template>
 
-  <!-- tei:handShift should occur only at the beginning of a tei:add,
-       and is rendered as part of that element. -->
-  <xsl:template match="tei:handShift" />
+  <xsl:template match="tei:handShift">
+    <xsl:text>°</xsl:text>
+  </xsl:template>
 
   <xsl:template match="tei:front/tei:div/tei:head" />
 
