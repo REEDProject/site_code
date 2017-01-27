@@ -10,10 +10,10 @@
     <xsl:param name="url-escaped" select="0" />
     <xsl:choose>
       <xsl:when test="$url-escaped">
-        <xsl:value-of select="replace($value, '%3A', '\\%3A')" />
+        <xsl:value-of select="replace($value, '%3A', '%5C%3A')" />
       </xsl:when>
       <xsl:otherwise>
-        <xsl:value-of select="replace($value, ':', '\\:')" />
+        <xsl:value-of select="replace($value, ':', '%5C%3A')" />
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
