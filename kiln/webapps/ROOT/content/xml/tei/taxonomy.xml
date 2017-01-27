@@ -240,7 +240,7 @@
                             <catDesc>Folger Shakespeare Library</catDesc>
                         </category>
                     </category>
-                    <category xml:id="short_title_catalogues">
+                    <category xml:id="shortTitle_catalogues">
                         <catDesc>Short-Title Catalogues</catDesc>
                         <category xml:id="STC">
                             <catDesc>
@@ -291,7 +291,7 @@
                                     | Printed at <hi rend="italic">London, by Richard Badger,</hi> |
                                         <date>1635</date>.</title></p></note>
                         <idno type="publication" sameAs="#STC"/>
-                        <idno type="publication_number">10336</idno>
+                        <idno type="pubNumber">10336</idno>
                     </bibl>
 
                     <msDesc xml:id="DOU2">
@@ -674,8 +674,8 @@
                                     of Arms] | LONDON: PRINTED BY AND FOR JOHN NICHOLS AND SON, |
                                     (PRINTERS TO THE SOCIETY OF ANTIQUARIES,) | 25, PARLIAMENT
                                     STREET. | <date>1823</date>.</title></p></note>
-                                    <idno type="author_surname">Nichols</idno>
-                                    <idno type="short_title">Progresses, vol 1</idno>
+                                    <idno type="authorSurname">Nichols</idno>
+                                    <idno type="shortTitle">Progresses, vol 1</idno>
                     </bibl>
 
                     <msDesc xml:id="V152">
@@ -1711,8 +1711,8 @@
                                     Stafford</title> (Exeter, <date>1903</date>; rpt Staffordshire
                                 Record Society, Collections for a History of Staffordshire ns 6, pt
                                 2, <date>1906</date>), 301–5.</p></note>
-                        <idno type="author_surname">Wrottesley</idno>
-                        <idno type="short_title">History</idno>
+                        <idno type="authorSurname">Wrottesley</idno>
+                        <idno type="shortTitle">History</idno>
                     </bibl>
 
                     <bibl xml:id="WRLT">
@@ -1738,8 +1738,8 @@
                                 Honourable Lord Wrottesley, at Wrottesley, Staffordshire.' Alfred J.
                                 Horwood (ed). <title type="sourceName">Second Report</title> (London,
                                     <date>1874</date>). 46–9.</p></note>
-                        <idno type="author_surname">Horwood</idno>
-                        <idno type="short_title">'Manuscripts'</idno>
+                        <idno type="authorSurname">Horwood</idno>
+                        <idno type="shortTitle">'Manuscripts'</idno>
                     </bibl>
 
                     <msDesc xml:id="TSHL">

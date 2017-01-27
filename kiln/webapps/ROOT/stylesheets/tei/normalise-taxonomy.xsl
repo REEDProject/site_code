@@ -18,28 +18,28 @@
     <xsl:copy>
       <xsl:apply-templates select="@*|node()" />
       <xsl:choose>
-        <xsl:when test="tei:idno[@type='publication_number']">
+        <xsl:when test="tei:idno[@type='pubNumber']">
           <tei:span type="shelfmark" subtype="text">
             <xsl:apply-templates mode="shelfmark-text" select="tei:idno[@type='publication']" />
             <xsl:text>: </xsl:text>
-            <xsl:value-of select="tei:idno[@type='publication_number']" />
+            <xsl:value-of select="tei:idno[@type='pubNumber']" />
           </tei:span>
           <tei:span type="shelfmark" subtype="html">
             <xsl:apply-templates mode="shelfmark-html" select="tei:idno[@type='publication']" />
             <xsl:text>: </xsl:text>
-            <xsl:value-of select="tei:idno[@type='publication_number']" />
+            <xsl:value-of select="tei:idno[@type='pubNumber']" />
           </tei:span>
         </xsl:when>
-        <xsl:when test="tei:idno[@type='author_surname']">
+        <xsl:when test="tei:idno[@type='authorSurname']">
           <tei:span type="shelfmark" subtype="text">
-            <xsl:value-of select="tei:idno[@type='author_surname']" />
+            <xsl:value-of select="tei:idno[@type='authorSurname']" />
             <xsl:text>: </xsl:text>
-            <xsl:value-of select="tei:idno[@type='short_title']" />
+            <xsl:value-of select="tei:idno[@type='shortTitle']" />
           </tei:span>
           <tei:span type="shelfmark" subtype="html">
-            <xsl:value-of select="tei:idno[@type='author_surname']" />
+            <xsl:value-of select="tei:idno[@type='authorSurname']" />
             <xsl:text>: </xsl:text>
-            <xsl:value-of select="tei:idno[@type='short_title']" />
+            <xsl:value-of select="tei:idno[@type='shortTitle']" />
           </tei:span>
         </xsl:when>
       </xsl:choose>

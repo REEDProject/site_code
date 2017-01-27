@@ -106,7 +106,7 @@
     </i>
   </xsl:template>
 
-  <xsl:template match="tei:idno[@type='author_surname']" mode="doc_desc">
+  <xsl:template match="tei:idno[@type='authorSurname']" mode="doc_desc">
     <br />
     <xsl:text>Author: </xsl:text>
     <xsl:value-of select="." />
@@ -118,7 +118,7 @@
     <xsl:value-of select="." />
   </xsl:template>
 
-  <xsl:template match="tei:idno[@type='publication_number']" mode="doc_desc">
+  <xsl:template match="tei:idno[@type='pubNumber']" mode="doc_desc">
     <br />
     <xsl:text>Publication number: </xsl:text>
     <xsl:value-of select="." />
@@ -130,7 +130,7 @@
     <xsl:value-of select="." />
   </xsl:template>
 
-  <xsl:template match="tei:idno[@type='short_title']" mode="doc_desc">
+  <xsl:template match="tei:idno[@type='shortTitle']" mode="doc_desc">
     <br />
     <xsl:text>Work title: </xsl:text>
     <xsl:value-of select="." />

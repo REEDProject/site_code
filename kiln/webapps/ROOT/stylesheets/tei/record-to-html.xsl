@@ -152,9 +152,9 @@
           <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='shelfmark']" />
           <xsl:apply-templates mode="doc_desc" select="$head/tei:settlement" />
           <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='publication']" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='publication_number']" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='author_surname']" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='short_title']" />
+          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='pubNumber']" />
+          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='authorSurname']" />
+          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='shortTitle']" />
         </p>
         <xsl:apply-templates select="$head/tei:p[@type='edDesc']" />
         <xsl:apply-templates select="$head/tei:p[@type='docDesc']" />
