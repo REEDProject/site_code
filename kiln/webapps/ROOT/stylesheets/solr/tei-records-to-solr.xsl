@@ -125,7 +125,7 @@
 
   <xsl:template match="tei:term" mode="record_type">
     <field name="facet_record_type">
-      <xsl:value-of select="." />
+      <xsl:value-of select="normalize-space()" />
     </field>
   </xsl:template>
 
