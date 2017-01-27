@@ -345,10 +345,10 @@ A note.
 
     def test_interpolation(self):
         text = 'Some @i\\interpolated@i/ text'
-        expected = 'Some <add><handShift />interpolated</add> text'
+        expected = 'Some <handShift />interpolated<handShift /> text'
         self._check_conversion(text, expected)
         nested_text = 'Some @i\\@i\\really@i/ interpolated@i/ text'
-        nested_expected = 'Some <add><handShift /><add><handShift />really</add> interpolated</add> text'
+        nested_expected = 'Some <handShift /><handShift />really<handShift /> interpolated<handShift /> text'
         self._check_conversion(nested_text, nested_expected)
 
     def test_italic_small_caps(self):
@@ -812,7 +812,7 @@ After table text.
 </group>
 </text>
 </TEI>'''
-        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff"><teiHeader><fileDesc><titleStmt/><sourceDesc/></fileDesc><encodingDesc><listPrefixDef><prefixDef ident="ereed" matchPattern="([A-Za-z0-9]+)" replacementPattern="../code_list.xml#$1"><p>Private URIs using the <code>ereed</code> prefix are pointers to entities in the code_list.xml file. For example, <code>ereed:BPA</code> dereferences to <code>code_list.xml#BPA</code>.</p></prefixDef></listPrefixDef></encodingDesc></teiHeader>
+        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff"><teiHeader><fileDesc><titleStmt/><sourceDesc/></fileDesc><encodingDesc><listPrefixDef><prefixDef ident="taxon" matchPattern="([A-Za-z0-9]+)" replacementPattern="../taxonomy.xml#$1"><p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the taxonomy.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p></prefixDef></listPrefixDef></encodingDesc></teiHeader>
 <text>
 <group>
 <text type="record" xml:id="staff-ridm4">

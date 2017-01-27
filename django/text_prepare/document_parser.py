@@ -522,7 +522,7 @@ class DocumentParser:
         return ['<add place="below">', ''.join(toks[0]), '</add>']
 
     def _pa_interpolation(self, s, loc, toks):
-        return ['<add><handShift />', ''.join(toks[0]), '</add>']
+        return ['<handShift />', ''.join(toks[0]), '<handShift />']
 
     def _pa_italic_small_caps(self, s, loc, toks):
         return ['<hi rend="smallcaps_italic">', ''.join(toks[0]), '</hi>']

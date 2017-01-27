@@ -21,7 +21,7 @@
           <listPrefixDef>
             <prefixDef ident="taxon" matchPattern="([A-Za-z0-9]+)"
                        replacementPattern="../taxonomy.xml#$1">
-              <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the code_list.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p>
+              <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the taxonomy.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p>
             </prefixDef>
           </listPrefixDef>
         </encodingDesc>
