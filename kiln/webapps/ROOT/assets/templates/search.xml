@@ -191,7 +191,7 @@
                   <div class="filter-head">Crimes &amp; Misdemeanors</div>
                   <div class="filter-content-wrapper">
                     <div class="filter-content">
-                      <ul class="open-filters bordered bold-filters">
+                      <ul class="open-filters bordered">
                         <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$crime_facets]" mode="search-results-no-hierarchy" />
                       </ul>
                     </div>
@@ -201,7 +201,7 @@
                   <div class="filter-head">Record Types</div>
                   <div class="filter-content-wrapper">
                     <div class="filter-content">
-                      <ul class="open-filters bordered bold-filters">
+                      <ul class="open-filters bordered">
                         <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$record_facets]" mode="search-results-no-hierarchy" />
                       </ul>
                     </div>
