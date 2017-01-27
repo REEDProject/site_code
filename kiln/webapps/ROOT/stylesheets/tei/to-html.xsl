@@ -182,6 +182,8 @@
     <xsl:text>|</xsl:text>
   </xsl:template>
 
+  <xsl:template match="tei:div/tei:pb" />
+
   <xsl:template match="tei:ref[not(@target)]">
     <xsl:apply-templates />
   </xsl:template>
