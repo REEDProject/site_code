@@ -48,7 +48,7 @@
          then call display-unselected-and-facet. If a facet is ORed
          together in a single parameter, call
          display-unselected-or-facet. -->
-    <xsl:call-template name="display-unselected-or-facet" />
+    <xsl:call-template name="display-unselected-and-facet" />
   </xsl:template>
 
   <xsl:template match="lst[@name='facet_fields']" mode="search-results">
@@ -155,7 +155,7 @@
          then call display-selected-and-facet. If a facet is ORed
          together in a single parameter, call
          display-selected-or-facet. -->
-    <xsl:call-template name="display-selected-or-facet" />
+    <xsl:call-template name="display-selected-and-facet" />
   </xsl:template>
 
   <xsl:template match="text()" mode="search-results" />
@@ -164,22 +164,31 @@
     <xsl:variable name="fq">
       <!-- Match the fq parameter as it appears in the query
            string. -->
-      <xsl:text>&amp;fq=</xsl:text>
+      <xsl:text>fq=</xsl:text>
       <xsl:value-of select="." />
     </xsl:variable>
-    <li>
-      <xsl:value-of select="replace(., '[^:]+:&quot;(.*)&quot;$', '$1')" />
-      <xsl:text> (</xsl:text>
-      <!-- Create a link to unapply the facet. -->
-      <a>
-        <xsl:attribute name="href">
-          <xsl:text>?</xsl:text>
-          <xsl:value-of select="replace($query-string, $fq, '')" />
-        </xsl:attribute>
-        <xsl:text>x</xsl:text>
-      </a>
-      <xsl:text>)</xsl:text>
-    </li>
+    <!-- Filter out the document_type fq, as that is set in the
+         underlying query. QAZ: It would be good not to special case
+         this. -->
+    <xsl:if test="not(. = 'document_type:record')">
+      <xsl:variable name="id" select="replace(., '[^:]+:&quot;(.*)&quot;$', '$1')" />
+      <span class="active-filter">
+        <xsl:call-template name="lookup-facet-id">
+          <xsl:with-param name="context" select="." />
+          <xsl:with-param name="id" select="$id" />
+        </xsl:call-template>
+        <xsl:text> </xsl:text>
+        <!-- Create a link to unapply the facet. -->
+        <a>
+          <xsl:attribute name="href">
+            <xsl:text>?</xsl:text>
+            <xsl:value-of select="replace($query-string, $fq, '')" />
+          </xsl:attribute>
+          <span class="close"></span>
+        </a>
+      </span>
+      <xsl:text> </xsl:text>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template name="display-selected-or-facet">
@@ -229,21 +238,32 @@
       <xsl:value-of select="@name" />
       <xsl:text>"</xsl:text>
     </xsl:variable>
-    <!-- List a facet only if it is not selected. -->
-    <xsl:if test="not(/aggregation/h:request/h:requestParameters/h:parameter[@name='fq']/h:value = $fq)">
-      <li>
-        <a>
-          <xsl:attribute name="href">
-            <xsl:text>?</xsl:text>
-            <xsl:value-of select="$query-string" />
-            <xsl:text>&amp;fq=</xsl:text>
-            <xsl:value-of select="$fq" />
-          </xsl:attribute>
-          <xsl:value-of select="@name" />
-          <xsl:call-template name="display-facet-count" />
-        </a>
-      </li>
-    </xsl:if>
+    <xsl:variable name="selected" select="/aggregation/h:request/h:requestParameters/h:parameter[@name='fq']/h:value = $fq" />
+    <li class="checkbox">
+      <xsl:if test="$selected">
+        <xsl:attribute name="class" select="'checkbox checked'" />
+      </xsl:if>
+      <a>
+        <xsl:attribute name="href">
+          <xsl:choose>
+            <xsl:when test="$selected">
+              <xsl:text>?</xsl:text>
+              <xsl:value-of select="replace($query-string, concat('fq=', $fq), '')" />
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text>?</xsl:text>
+              <xsl:value-of select="$query-string" />
+              <xsl:text>&amp;fq=</xsl:text>
+              <xsl:value-of select="$fq" />
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:attribute>
+        <xsl:call-template name="lookup-facet-id">
+          <xsl:with-param name="id" select="@name" />
+        </xsl:call-template>
+        <xsl:call-template name="display-facet-count" />
+      </a>
+    </li>
   </xsl:template>
 
   <xsl:template name="display-unselected-or-facet">
