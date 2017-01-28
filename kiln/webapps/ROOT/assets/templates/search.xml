@@ -24,7 +24,7 @@
                 select="('facet_people_named', 'facet_people_gender',
                         'facet_people_status')" />
   <xsl:variable name="collective_facets"
-                select="('facet_collectives_guilds',
+                select="('facet_collectives_guild',
                         'facet_collectives_occupation',
                         'facet_collectives_clergy')" />
   <xsl:variable name="entertainer_facets"
