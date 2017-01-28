@@ -7,12 +7,15 @@
   <xsl:import href="cocoon://_internal/template/xsl/stylesheets/tei/record-to-html.xsl" />
 
   <xsl:variable name="text" select="/aggregation/TEICorpus/tei:TEI/tei:text" />
+  <xsl:variable name="body-div" select="$text/tei:body/tei:div" />
+  <xsl:variable name="current-id" select="$body-div/@xml:id" />
+  <xsl:variable name="back-div" select="$text/tei:back/tei:div[@id=$current-id]" />
 
   <xsl:variable name="toc">
     <ul class="sub-sections">
       <xsl:for-each select="$text/tei:back/tei:div">
         <li>
-          <xsl:if test="@id = $text/tei:body/tei:div/@xml:id">
+          <xsl:if test="@id = $current-id">
             <xsl:attribute name="class" select="'active'" />
           </xsl:if>
           <a>
@@ -93,12 +96,12 @@
           <div class="row">
             <div class="column medium-9 medium-push-3 sub-section-content">
               <div class="text">
-                <xsl:apply-templates select="$text/tei:body/tei:div/tei:head" />
+                <xsl:apply-templates select="$body-div/tei:head" />
               </div>
               <div class="glossary">
                 <div class="letters">
                   <ul>
-                    <xsl:for-each select="$text/tei:body/tei:div/tei:div">
+                    <xsl:for-each select="$body-div/tei:div">
                       <li>
                         <xsl:if test="not(tei:entry)">
                           <xsl:attribute name="class" select="'no-results'" />
@@ -108,7 +111,7 @@
                     </xsl:for-each>
                   </ul>
                 </div>
-                <xsl:for-each select="$text/tei:body/tei:div/tei:div">
+                <xsl:for-each select="$body-div/tei:div">
                   <h3><xsl:value-of select="@n" /></h3>
                   <div class="glossary-content">
                     <ul>
@@ -133,11 +136,25 @@
                 </ul>
               </div>
               <div class="row prev-next-buttons">
-                <div class="columns medium-4 hide">
-                  {{>previous-button}}
+                <div class="columns medium-4">
+                  <xsl:for-each select="$back-div/preceding-sibling::tei:div[1]">
+                    <div class="previous-button">
+                      <a href="{kiln:url-for-match('ereed-about-glossary', (@id), 0)}">
+                        <div class="next">Previous</div>
+                        <div class="next-page"><xsl:value-of select="tei:head" /></div>
+                      </a>
+                    </div>
+                  </xsl:for-each>
                 </div>
                 <div class="columns medium-4 small-margin-top-25">
-                  {{>next-button}}
+                  <xsl:for-each select="$back-div/following-sibling::tei:div[1]">
+                    <div class="next-button">
+                      <a href="{kiln:url-for-match('ereed-about-glossary', (@id), 0)}">
+                        <div class="next">Next</div>
+                        <div class="next-page"><xsl:value-of select="tei:head" /></div>
+                      </a>
+                    </div>
+                  </xsl:for-each>
                 </div>
               </div>
             </div>
