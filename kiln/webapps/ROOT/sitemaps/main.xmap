@@ -169,11 +169,15 @@
 
       <!-- About: Glossaries. -->
       <map:match id="ereed-about-glossaries" pattern="about/glossaries/">
+        <map:redirect-to uri="latin/" permanent="no" />
+      </map:match>
+
+      <map:match id="ereed-about-glossary" pattern="about/glossaries/*/">
         <map:aggregate element="aggregation" label="content">
-          <map:part src="../content/xml/tei/glossary.xml" />
+          <map:part element="TEICorpus" src="cocoon://internal/glossary/{1}.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=about/glossaries/" />
         </map:aggregate>
-        <map:transform src="../stylesheets/tei/tei-to-html.xsl" />
+        <map:transform src="cocoon://_internal/template/glossary.xsl" />
         <map:serialize />
       </map:match>
 

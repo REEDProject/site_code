@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
+           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:tei="http://www.tei-c.org/ns/1.0"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:import href="cocoon://_internal/template/xsl/stylesheets/tei/record-to-html.xsl" />
+
+  <xsl:variable name="text" select="/aggregation/TEICorpus/tei:TEI/tei:text" />
+
+  <xsl:variable name="toc">
+    <ul class="sub-sections">
+      <xsl:for-each select="$text/tei:back/tei:div">
+        <li>
+          <xsl:if test="@id = $text/tei:body/tei:div/@xml:id">
+            <xsl:attribute name="class" select="'active'" />
+          </xsl:if>
+          <a>
+            <xsl:attribute name="href">
+              <xsl:value-of select="kiln:url-for-match('ereed-about-glossary', (@id), 0)" />
+            </xsl:attribute>
+            <xsl:value-of select="tei:head" />
+          </a>
+        </li>
+      </xsl:for-each>
+    </ul>
+  </xsl:variable>
+
+  <kiln:parent>
+    <xi:include href="base.xml" />
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title">
+      <kiln:super />
+      <xsl:text>About the Records: Glossaries</xsl:text>
+    </kiln:block>
+
+    <kiln:block name="content">
+      <div class="white-bg">
+        <!-- Hero Image -->
+        <div class="title-hero" id="about-the-record-bibliography">
+          <div class="hero-content">
+            <span class="title">ABOUT THE RECORDS</span>
+            <h2>Glossaries</h2>
+          </div>
+          <!-- Image Tooltip -->
+          <div class="image-tooltip hide">
+            <div class="tooltip-content"></div>
+            <span class="tooltip-button"></span>
+          </div>
+        </div>
+        <!-- Main Content -->
+        <div class="content reduced-padding white-bg">
+          <div class="bibliography-filter filter hide-for-medium boxed">
+            <div class="filter-head jump-to-filter">Topics In This Section</div>
+            <div class="filter-content-wrapper relative">
+              <div class="filter-content">
+                <div class="toc mobile-toc">
+                  <div>
+                    <xsl:copy-of select="$toc" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row show-for-medium">
+            <div class="columns medium-3">
+              <ul class="sidenav">
+                <xsl:for-each select="/aggregation/kiln:nav//ul[li[@class='active']]/li">
+                  <xsl:copy>
+                    <xsl:copy-of select="@*" />
+                    <xsl:choose>
+                      <xsl:when test="@class='active'">
+                        <xsl:value-of select="a" />
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:copy-of select="a" />
+                      </xsl:otherwise>
+                    </xsl:choose>
+                  </xsl:copy>
+                </xsl:for-each>
+              </ul>
+            </div>
+            <div class="column medium-8 end">
+              <div class="row toc">
+                <div class="column medium-6">
+                  <xsl:copy-of select="$toc" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column medium-9 medium-push-3 sub-section-content">
+              <div class="text">
+                <xsl:apply-templates select="$text/tei:body/tei:div/tei:head" />
+              </div>
+              <div class="glossary">
+                <div class="letters">
+                  <ul>
+                    <xsl:for-each select="$text/tei:body/tei:div/tei:div">
+                      <li>
+                        <xsl:if test="not(tei:entry)">
+                          <xsl:attribute name="class" select="'no-results'" />
+                        </xsl:if>
+                        <xsl:value-of select="@n" />
+                      </li>
+                    </xsl:for-each>
+                  </ul>
+                </div>
+                <xsl:for-each select="$text/tei:body/tei:div/tei:div">
+                  <h3><xsl:value-of select="@n" /></h3>
+                  <div class="glossary-content">
+                    <ul>
+                      <xsl:for-each select="tei:entry">
+                        <li>
+                          <xsl:apply-templates select="." />
+                        </li>
+                      </xsl:for-each>
+                    </ul>
+                  </div>
+                </xsl:for-each>
+              </div>
+              <div class="record-accordion glossary-accordion">
+                <ul class="accordion" data-accordion="" data-allow-all-closed="true" data-multi-expand="true">
+                  <li class="accordion" data-accordion-item="">
+                    <a href="#" class="accordion-title">Glossary Notes</a>
+                    <div class="accordion-content" data-tab-content="">
+                      <xsl:apply-templates select="$text/tei:front/tei:div" />
+                    </div>
+                  </li>
+                  <!-- QAZ: accordion for abbreviations. Do we have any? -->
+                </ul>
+              </div>
+              <div class="row prev-next-buttons">
+                <div class="columns medium-4 hide">
+                  {{>previous-button}}
+                </div>
+                <div class="columns medium-4 small-margin-top-25">
+                  {{>next-button}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </kiln:block>
+  </kiln:child>
+</kiln:root>

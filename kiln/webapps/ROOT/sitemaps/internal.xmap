@@ -87,6 +87,14 @@
         <map:serialize type="xml" />
       </map:match>
 
+      <map:match id="ereed-extract-glossary" pattern="glossary/*.xml">
+        <map:generate src="../content/xml/tei/glossary.xml" />
+        <map:transform src="../stylesheets/tei/extract-glossary.xsl">
+          <map:parameter name="glossary-id" value="{1}" />
+        </map:transform>
+        <map:serialize type="xml" />
+      </map:match>
+
       <map:match id="ereed-collections-list" pattern="collections.xml">
         <map:generate src="cocoon:/metadata/files.xml" />
         <map:transform src="../stylesheets/metadata/collections.xsl" />
