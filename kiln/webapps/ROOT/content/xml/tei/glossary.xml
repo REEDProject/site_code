@@ -257,10 +257,10 @@
         <body>
             <div xml:id="latin" corresp="#latin_headnote">
                 <head>Latin Glossary</head>
-                <div xml:id="gloss-la-A">
+                <div n="A" xml:id="gloss-la-A">
                     <!-- al of the entries for A -->
                 </div>
-                <div xml:id="gloss-la-B">
+                <div n="B" xml:id="gloss-la-B">
                     <entry xml:id="balletta">
                         <form>
                             <orth>balletta</orth>
@@ -286,7 +286,7 @@
                 <p> Canto <term xml:id="term-abc123" ref="glossary-la.xml#balletta-1"
                         >ballettae</term> musicae </p>-->
                 </div>
-                <div xml:id="gloss-la-C">
+                <div n="C" xml:id="gloss-la-C">
                     <entry>
                         <form>
                             <orth>cantalena, -e</orth>
@@ -305,7 +305,7 @@
                             <ref>[<hi rend="italic">DML</hi>]</ref></sense>
                     </entry>
                 </div>
-                <div xml:id="gloss-la-E">
+                <div n="E" xml:id="gloss-la-E">
                     <entry>
                         <form>
                             <orth>episcopus, -i</orth>
@@ -320,7 +320,7 @@
                             observances on the feast of St Nicholas or of the Holy Innocents</sense>
                     </entry>
                 </div>
-                <div xml:id="gloss-la-L">
+                <div n="L" xml:id="gloss-la-L">
                     <entry>
                         <form>
                             <orth>ludus, -i</orth>
@@ -331,7 +331,7 @@
                         </sense>
                     </entry>
                 </div>
-                <div xml:id="gloss-la-M">
+                <div n="M" xml:id="gloss-la-M">
                     <entry>
                         <form>
                             <orth>Malbanus</orth>
@@ -349,7 +349,7 @@
                         </sense>
                     </entry>
                 </div>
-                <div xml:id="gloss-la-P">
+                <div n="P" xml:id="gloss-la-P">
                     <entry>
                         <form>
                             <orth>parcellum, -i</orth>
@@ -375,7 +375,7 @@
                             itself or a person authorized to make presentment</sense>
                     </entry>
                 </div>
-                <div xml:id="gloss-la-T">
+                <div n="T" xml:id="gloss-la-T">
                     <entry>
                         <form>
                             <orth>terminus, -i</orth>
@@ -388,7 +388,7 @@
                         <sense xml:id="terminus_Michaelis-1">Michaelmas term</sense>
                     </entry>
                 </div>
-                <div xml:id="gloss-la-V">
+                <div n="V" xml:id="gloss-la-V">
                     <entry>
                         <form>
                             <orth>uicus, -i</orth>
@@ -401,7 +401,7 @@
                         <sense xml:id="vicus_Malbanus-1">Nantwich, Cheshire</sense>
                     </entry>
                 </div>
-                <div xml:id="gloss-la-Y">
+                <div n="Y" xml:id="gloss-la-Y">
                     <entry>
                         <form>
                             <orth>ystrio, -onis</orth>
@@ -416,7 +416,7 @@
             </div>
             <div xml:id="anglo-french" corresp="anglo-french_headnote">
                 <head>Anglo-French Glossary</head>
-                <div xml:id="gloss-af-A">
+                <div n="A" xml:id="gloss-af-A">
                     <entry>
                         <form>
                             <orth>aderer</orth>
@@ -445,7 +445,7 @@
                         </sense>
                     </entry>
                 </div>
-                <div xml:id="gloss-af-B">
+                <div n="B" xml:id="gloss-af-B">
                     <entry>
                         <form>
                             <orth>bouche</orth>
@@ -458,7 +458,7 @@
                         </sense>
                     </entry>
                 </div>
-                <div xml:id="gloss-af-D">
+                <div n="D" xml:id="gloss-af-D">
                     <entry>
                         <form>
                             <orth>datantz</orth>
@@ -516,7 +516,7 @@
                             <ref>[<hi rend="italic">AND</hi>]</ref></sense>
                     </entry>
                 </div>
-                <div xml:id="gloss-af-M">
+                <div n="M" xml:id="gloss-af-M">
                     <entry>
                         <form>
                             <orth>meuuance</orth>
@@ -526,7 +526,7 @@
                             <ref>[<hi rend="italic">AND</hi> mover]</ref></sense>
                     </entry>
                 </div>
-                <div xml:id="gloss-af-N">
+                <div n="N" xml:id="gloss-af-N">
                     <entry>
                         <form>
                             <orth>nientcontresfecantes</orth>, 
@@ -536,7 +536,7 @@
                         <sense xml:id="nientcontresfecantes-1">notwithstanding</sense>
                     </entry>
                 </div>
-                <div xml:id="gloss-af-O">
+                <div n="O" xml:id="gloss-af-O">
                     <entry>
                         <form>
                             <orth>ottroiez</orth>
@@ -546,7 +546,7 @@
                             <ref>[<hi rend="italic">AND</hi> ottreier]</ref></sense>
                     </entry>
                 </div>
-                <div xml:id="gloss-af-P">
+                <div n="P" xml:id="gloss-af-P">
                     <entry>
                         <form>
                             <orth>plerra</orth>
@@ -575,7 +575,7 @@
                             <ref>[<hi xml:id="small-caps"><hi rend="italic">AND</hi></hi> poer]</ref></sense>
                     </entry>
                 </div>
-                <div xml:id="gloss-af-S">
+                <div n="S" xml:id="gloss-af-S">
                     <entry>
                         <form>
                             <orth>surorez</orth>
@@ -589,7 +589,7 @@
             </div>
             <div xml:id="english" corresp="english_headnote">
                 <head>English Glossary</head>
-                <div xml:id="gloss-eng-A">
+                <div n="A" xml:id="gloss-eng-A">
                     <entry xml:id="aboef">
                         <form>
                             <orth>aboef</orth>
@@ -680,7 +680,7 @@
 
                 </div>
 
-                <div xml:id="gloss-eng-B">
+                <div n="B" xml:id="gloss-eng-B">
 
                     <entry xml:id="bankitt">
                         <form>
@@ -840,7 +840,7 @@
                     </entry>
                 </div>
 
-                <div xml:id="gloss-eng-C">
+                <div n="C" xml:id="gloss-eng-C">
 
                     <entry xml:id="cappes">
                         <form>
@@ -961,7 +961,7 @@
 
                 </div>
 
-                <div xml:id="gloss-eng-D">
+                <div n="D" xml:id="gloss-eng-D">
 
                     <entry xml:id="demeaynyng">
                         <form>
@@ -1023,7 +1023,7 @@
                     </entry>
                 </div>
 
-                <div xml:id="gloss-eng-E">
+                <div n="E" xml:id="gloss-eng-E">
 
                     <entry xml:id="eale">
                         <form>
@@ -1079,7 +1079,7 @@
                     </entry>
                 </div>
 
-                <div xml:id="gloss-eng-F">
+                <div n="F" xml:id="gloss-eng-F">
 
                     <entry xml:id="fache">
                         <form>
@@ -1117,7 +1117,7 @@
                     </entry>
                 </div>
 
-                <div xml:id="gloss-eng-G">
+                <div n="G" xml:id="gloss-eng-G">
 
                     <entry xml:id="gane">
                         <form>
@@ -1212,7 +1212,7 @@
                     </entry>
                 </div>
 
-                <div xml:id="gloss-eng-H">
+                <div n="H" xml:id="gloss-eng-H">
 
                     <entry xml:id="haey">
                         <form>
@@ -1322,7 +1322,7 @@
                     </entry>
                 </div>
 
-                <div xml:id="gloss-eng-I">
+                <div n="I" xml:id="gloss-eng-I">
 
                     <entry xml:id="ihons">
                         <form>
@@ -1362,7 +1362,7 @@
 
                 </div>
 
-                <div xml:id="gloss-eng-L">
+                <div n="L" xml:id="gloss-eng-L">
 
                     <entry xml:id="lame">
                         <form>
@@ -1402,7 +1402,7 @@
 
                 </div>
 
-                <div xml:id="gloss-eng-M">
+                <div n="M" xml:id="gloss-eng-M">
 
                     <entry xml:id="marresdaunce">
                         <form>
@@ -1471,7 +1471,7 @@
 
                 </div>
 
-                <div xml:id="gloss-eng-N">
+                <div n="N" xml:id="gloss-eng-N">
 
                     <entry xml:id="namptwich">
                         <form>
@@ -1483,7 +1483,7 @@
 
                 </div>
 
-                <div xml:id="gloss-eng-O">
+                <div n="O" xml:id="gloss-eng-O">
 
                     <entry xml:id="oyeyees">
                         <form>
@@ -1495,7 +1495,7 @@
 
                 </div>
 
-                <div xml:id="gloss-eng-P">
+                <div n="P" xml:id="gloss-eng-P">
 
                     <entry xml:id="parachiall">
                         <form>
@@ -1576,7 +1576,7 @@
 
                 </div>
 
-                <div xml:id="gloss-eng-Q">
+                <div n="Q" xml:id="gloss-eng-Q">
 
                     <entry xml:id="querry">
                         <form>
@@ -1589,7 +1589,7 @@
                     </entry>
                 </div>
                 
-                <div xml:id="gloss-eng-R">
+                <div n="R" xml:id="gloss-eng-R">
 
                     <entry xml:id="reddere">
                         <form>
@@ -1643,7 +1643,7 @@
 
                 </div>
 
-                <div xml:id="gloss-eng-S">
+                <div n="S" xml:id="gloss-eng-S">
 
                     <entry xml:id="saboath">
                         <form>
@@ -1831,7 +1831,7 @@
                     </entry>
                 </div>
 
-                <div xml:id="gloss-eng-T">
+                <div n="T" xml:id="gloss-eng-T">
 
                     <entry xml:id="tabberinge">
                         <form>
@@ -1883,7 +1883,7 @@
                     </entry>
                 </div>
 
-                <div xml:id="gloss-eng-V">
+                <div n="V" xml:id="gloss-eng-V">
 
                     <entry xml:id="vaponn">
                         <form>
@@ -1921,7 +1921,7 @@
 
                 </div>
 
-                <div xml:id="gloss-eng-W">
+                <div n="W" xml:id="gloss-eng-W">
 
                     <entry xml:id="wating">
                         <form>
@@ -2001,7 +2001,7 @@
 
                 </div>
 
-                <div xml:id="gloss-eng-Y">
+                <div n="Y" xml:id="gloss-eng-Y">
 
                     <entry xml:id="yeald">
                         <form>
