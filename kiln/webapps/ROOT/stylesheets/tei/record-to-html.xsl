@@ -74,15 +74,17 @@
 
   <!-- A tei:div in the editorial matter of a collection that contains
        record(s) has a different layout. -->
-  <xsl:template match="tei:div[tei:text]" mode="collection">
+  <xsl:template match="tei:div[record]" mode="collection">
     <xsl:apply-templates mode="collection" select="node()" />
   </xsl:template>
 
-  <xsl:template match="tei:text[@type='record']" mode="collection">
+  <xsl:template match="record" mode="collection">
     <div class="row selected relative">
-      <xsl:call-template name="display-selected-record">
-        <xsl:with-param name="is_collection" select="1" />
-      </xsl:call-template>
+      <xsl:for-each select="id(substring-after(@corresp, '#'))">
+        <xsl:call-template name="display-selected-record">
+          <xsl:with-param name="is_collection" select="1" />
+        </xsl:call-template>
+      </xsl:for-each>
     </div>
   </xsl:template>
 

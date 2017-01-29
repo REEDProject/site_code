@@ -9,17 +9,37 @@
 
        This is very similar to extract-record.xsl, but is for use with
        front and back divs, hence the slightly different wrapping.
-  -->
+
+       Records that are within a part are moved into an entirely new
+       section (tei:TEI/records), leaving an element pointing to the
+       new location. This is to avoid any footnotes, collation notes,
+       etc in the records being displayed at the end of the part as
+       well as at the end of each record. -->
 
   <xsl:param name="part-id" />
+
+  <xsl:variable name="part" select="id($part-id)" />
 
   <xsl:template match="tei:TEI">
     <xsl:copy>
       <xsl:copy-of select="@*" />
       <xsl:copy-of select="tei:teiHeader" />
       <tei:text>
-        <xsl:copy-of select="id($part-id)" />
+        <xsl:apply-templates select="$part" />
       </tei:text>
+    </xsl:copy>
+    <records>
+      <xsl:copy-of select="$part//tei:text[@type='record']" />
+    </records>
+  </xsl:template>
+
+  <xsl:template match="tei:text[@type='record']">
+    <record corresp="#{@xml:id}" />
+  </xsl:template>
+
+  <xsl:template match="@*|node()">
+    <xsl:copy>
+      <xsl:apply-templates select="@*|node()" />
     </xsl:copy>
   </xsl:template>
 
