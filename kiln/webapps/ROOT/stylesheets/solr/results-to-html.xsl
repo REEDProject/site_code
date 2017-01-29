@@ -95,12 +95,34 @@
 
   <xsl:template match="lst[@name='facet_fields']/lst/@name"
                 mode="search-results">
-    <xsl:for-each select="tokenize(., '_')">
-      <xsl:if test="position() = last()">
-        <xsl:value-of select="upper-case(substring(., 1, 1))" />
-        <xsl:value-of select="substring(., 2)" />
-      </xsl:if>
-    </xsl:for-each>
+    <xsl:choose>
+      <xsl:when test=". = 'facet_entertainments_custom'">
+        <xsl:text>Seasonal Custom</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_entertainments_animal'">
+        <xsl:text>Animal Sport</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_materials_property'">
+        <xsl:text>Prop &amp; Machinery</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_materials_set'">
+        <xsl:text>Set</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_materials_wagon'">
+        <xsl:text>Pageant Wagon</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_materials_food'">
+        <xsl:text>Food &amp; Drink</xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:for-each select="tokenize(., '_')">
+          <xsl:if test="position() = last()">
+            <xsl:value-of select="upper-case(substring(., 1, 1))" />
+            <xsl:value-of select="substring(., 2)" />
+          </xsl:if>
+        </xsl:for-each>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="result/doc" mode="editorial-search-results">
