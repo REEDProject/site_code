@@ -271,5 +271,19 @@
         <map:serialize />
       </map:match>
     </map:pipeline>
+
+    <!-- Pipeline for showing all records in a collection. -->
+    <map:pipeline>
+      <map:match id="local-admin-collection-records" pattern="collection/records/*.xml">
+        <map:aggregate element="aggregation">
+          <map:part src="cocoon://_internal/menu/main.xml?url=records/" />
+          <map:part src="../content/xml/tei/glossary.xml" />
+          <map:part src="cocoon://internal/preprocess/collection-records/{1}.xml" />
+          <map:part src="cocoon://internal/preprocess/eatsml.xml" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/admin/records.xsl" />
+        <map:serialize />
+      </map:match>
+    </map:pipeline>
   </map:pipelines>
 </map:sitemap>

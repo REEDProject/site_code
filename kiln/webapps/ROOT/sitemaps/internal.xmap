@@ -41,6 +41,16 @@
         <map:serialize type="xml" />
       </map:match>
 
+      <!-- Create an XML file consisting of every record in a
+           collection in its own TEI document for easy display
+           processing in a single page. -->
+      <map:match id="ereed-preprocess-collection-records"
+                 pattern="preprocess/collection-records/*.xml">
+        <map:generate src="cocoon:/tei/preprocess-records/{1}.xml" />
+        <map:transform src="../stylesheets/tei/extract-all-records.xsl" />
+        <map:serialize type="xml" />
+      </map:match>
+
       <map:match id="ereed-preprocess-eatsml"
                  pattern="preprocess/eatsml.xml">
         <map:aggregate element="aggregation">

@@ -130,11 +130,10 @@
           <xsl:text>Schematron</xsl:text>
         </a>
       </td>
-      <!-- Image checking. -->
       <td>
-        <a href="{kiln:url-for-match('local-admin-resource-check',
-                 ($filepath), 0)}">
-          <xsl:text>Missing images</xsl:text>
+        <a href="{kiln:url-for-match('local-admin-collection-records',
+                 ($short-filepath), 0)}">
+          <xsl:text>All records</xsl:text>
         </a>
       </td>
       <!-- Search indexing. -->

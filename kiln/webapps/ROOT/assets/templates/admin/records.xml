@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
+           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:tei="http://www.tei-c.org/ns/1.0"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <!-- Template to display multiple records. -->
+
+  <xsl:import href="cocoon://_internal/template/xsl/stylesheets/tei/record-to-html.xsl" />
+
+  <kiln:parent>
+    <xi:include href="base.xml" />
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title">
+      <kiln:super />
+      <xsl:text>Selected Records</xsl:text>
+    </kiln:block>
+
+    <kiln:block name="content">
+      <div class="content white-bg">
+        <xsl:for-each select="$record_text">
+          <div class="row selected relative" id="record_{position()}">
+            <xsl:call-template name="display-selected-record" />
+            <div class="columns medium-2" data-equalizer-watch=""></div>
+          </div>
+        </xsl:for-each>
+      </div>
+    </kiln:block>
+  </kiln:child>
+
+</kiln:root>
