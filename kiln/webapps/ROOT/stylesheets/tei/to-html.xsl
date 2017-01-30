@@ -178,7 +178,9 @@
 
   <xsl:template match="tei:note[@type='marginal']" mode="group">
     <li note="{generate-id()}">
-      <!-- QAZ: icon indicating place of note. -->
+      <xsl:variable name="side" select="substring-after(@place, 'margin_')" />
+      <img src="{$kiln:assets-path}/images/marginalia-{$side}.png" />
+      <xsl:text> </xsl:text>
       <xsl:apply-templates />
     </li>
   </xsl:template>
