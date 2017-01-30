@@ -259,5 +259,17 @@
         <map:serialize />
       </map:match>
     </map:pipeline>
+
+    <!-- Pipeline for reporting on the glossary. -->
+    <map:pipeline id="local-admin-glossary">
+      <map:match id="local-admin-glossary-report" pattern="glossary/">
+        <map:aggregate element="aggregation">
+          <map:part src="../content/xml/tei/glossary.xml" />
+          <map:part src="cocoon://_internal/menu/admin.xml?url=admin/glossary/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/admin/glossary.xsl" />
+        <map:serialize />
+      </map:match>
+    </map:pipeline>
   </map:pipelines>
 </map:sitemap>
