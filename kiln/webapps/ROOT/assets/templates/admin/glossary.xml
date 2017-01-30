@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:tei="http://www.tei-c.org/ns/1.0"
+           xmlns:xi="http://www.w3.org/2001/XInclude"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <!-- Generate an HTML report noting problems in the glossary. -->
+
+  <xsl:import href="cocoon://_internal/template/xsl/stylesheets/admin/glossary-report.xsl" />
+
+  <kiln:parent>
+    <xi:include href="base.xml" />
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title"><kiln:super/>Glossary Report</kiln:block>
+
+    <kiln:block name="css">
+      <kiln:super/>
+      <style type="text/css">
+        table { border: 1px solid black; }
+        tr { vertical-align: top; }
+        th { border: 1px solid black; padding: 1em; }
+        td { border: 1px solid black !important; padding: 1em !important; }
+        td ul { list-style-type: none; }
+      </style>
+    </kiln:block>
+
+    <kiln:block name="header">
+      <h1 class="entity-header">Glossary Report</h1>
+    </kiln:block>
+
+    <kiln:block name="content">
+      <div class="row">
+        <div class="medium-12 column">
+          <table>
+            <thead>
+              <tr>
+                <th>Sense</th>
+                <th>Issue</th>
+                <th>Display</th>
+              </tr>
+            </thead>
+            <tbody>
+              <xsl:apply-templates select="//tei:sense" />
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </kiln:block>
+  </kiln:child>
+
+</kiln:root>

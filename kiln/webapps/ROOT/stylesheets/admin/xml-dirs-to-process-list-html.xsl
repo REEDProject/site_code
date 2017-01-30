@@ -52,6 +52,22 @@
             </td>
             <td></td>
           </tr>
+          <!-- The glossary.xml file must be present, with that name,
+               in the tei directory, so just record it here. -->
+          <tr>
+            <td></td>
+            <td>
+              <xsl:text>glossary.xml</xsl:text>
+            </td>
+            <td></td>
+            <td>
+              <a href="{kiln:url-for-match('local-admin-glossary-report', (), 0)}" title="Report on missing orth and gram elements">
+                <xsl:text>Missing orth/gram</xsl:text>
+              </a>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
           <!-- Records are the dynamic files (in that it's not know
                how many there are or what they are called). -->
           <xsl:apply-templates mode="tei"
@@ -114,11 +130,10 @@
           <xsl:text>Schematron</xsl:text>
         </a>
       </td>
-      <!-- Image checking. -->
       <td>
-        <a href="{kiln:url-for-match('local-admin-resource-check',
-                 ($filepath), 0)}">
-          <xsl:text>Missing images</xsl:text>
+        <a href="{kiln:url-for-match('local-admin-collection-records',
+                 ($short-filepath), 0)}">
+          <xsl:text>All records</xsl:text>
         </a>
       </td>
       <!-- Search indexing. -->
