@@ -154,6 +154,14 @@
                     </category>
                     <category xml:id="repositories">
                         <catDesc>Repositories</catDesc>
+                        <category xml:id="BL">
+                            <catDesc>
+                                <choice>
+                                    <abbr>BL</abbr>
+                                    <expan>British Library</expan>
+                                </choice>
+                            </catDesc>
+                        </category>
                         <category xml:id="Bodl.">
                             <catDesc>
                               <choice>
@@ -162,23 +170,46 @@
                               </choice>
                             </catDesc>
                         </category>
-                        <category xml:id="LRO">
-                            <catDesc>
-                              <choice>
-                                <abbr>LRO</abbr>
-                                <expan>Lichfield Record Office</expan>
-                              </choice>
-                            </catDesc>
+                        <category xml:id="brampton-museum">
+                            <catDesc>Brampton Museum</catDesc>
                         </category>
                         <category xml:id="cheshire-record-office">
                             <catDesc>Cheshire Record Office</catDesc>
                         </category>
-                        <category xml:id="BL">
+                        <category xml:id="chetham-library">
+                            <catDesc>Chetham's Library</catDesc>
+                        </category>
+                        <category xml:id="CUL">
                             <catDesc>
-                              <choice>
-                                <abbr>BL</abbr>
-                                <expan>British Library</expan>
-                              </choice>
+                                <choice>
+                                    <abbr>CUL</abbr>
+                                    <expan>Cambridge University Library</expan>
+                                </choice>
+                            </catDesc>
+                        </category>
+                        <category xml:id="folger-shakespeare-library">
+                            <catDesc>Folger Shakespeare Library</catDesc>
+                        </category>
+                        <category xml:id="lichfield-cathedral-library">
+                            <catDesc>Lichfield Cathedral Library</catDesc>
+                        </category>
+                        <category xml:id="lincolnshire-archives">
+                            <catDesc>Lincolnshire Archives</catDesc>
+                        </category>
+                        <category xml:id="LRO">
+                            <catDesc>
+                                <choice>
+                                    <abbr>LRO</abbr>
+                                    <expan>Lichfield Record Office</expan>
+                                </choice>
+                            </catDesc>
+                        </category>
+                        <category xml:id="STRO">
+                            <catDesc>
+                                <choice>
+                                    <abbr>STRO</abbr>
+                                    <expan>Staffordshire Record Office</expan>
+                                </choice>
                             </catDesc>
                         </category>
                         <category xml:id="TNA">
@@ -186,34 +217,6 @@
                               <choice>
                                 <abbr>TNA</abbr>
                                 <expan>The National Archives</expan>
-                              </choice>
-                            </catDesc>
-                        </category>
-                        <category xml:id="STRO">
-                            <catDesc>
-                              <choice>
-                                <abbr>STRO</abbr>
-                                <expan>Staffordshire Record Office</expan>
-                              </choice>
-                            </catDesc>
-                        </category>
-                        <category xml:id="chetham-library">
-                            <catDesc>Chetham's Library</catDesc>
-                        </category>
-                        <category xml:id="lincolnshire-archives">
-                            <catDesc>Lincolnshire Archives</catDesc>
-                        </category>
-                        <category xml:id="lichfield-cathedral-library">
-                            <catDesc>Lichfield Cathedral Library</catDesc>
-                        </category>
-                        <category xml:id="brampton-museum">
-                            <catDesc>Brampton Museum</catDesc>
-                        </category>
-                        <category xml:id="WRO">
-                            <catDesc>
-                              <choice>
-                                <abbr>WRO</abbr>
-                                <expan>Worcester Record Office</expan>
                               </choice>
                             </catDesc>
                         </category>
@@ -228,17 +231,14 @@
                               </choice>
                             </catDesc>
                         </category>
-                        <category xml:id="CUL">
+                        <category xml:id="WRO">
                             <catDesc>
-                              <choice>
-                                <abbr>CUL</abbr>
-                                <expan>Cambridge University Library</expan>
-                              </choice>
+                                <choice>
+                                    <abbr>WRO</abbr>
+                                    <expan>Worcester Record Office</expan>
+                                </choice>
                             </catDesc>
-                        </category>
-                        <category xml:id="folger-shakespeare-library">
-                            <catDesc>Folger Shakespeare Library</catDesc>
-                        </category>
+                        </category>                  
                     </category>
                     <category xml:id="short_title_catalogues">
                         <catDesc>Short-Title Catalogues</catDesc>
@@ -250,7 +250,6 @@
                               </choice>
                             </catDesc>
                         </category>
-
                         <category xml:id="Wing">
                             <catDesc>
                               <choice>

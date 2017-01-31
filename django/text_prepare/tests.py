@@ -43,7 +43,7 @@ It spans multiple paragraphs.!
 @sl\\Reading@sl/ @sr\\Berkshire Record Office@sr/
 @ss\\D/A2/c.54@ss/
 @st\\Epiphany, 1609@st/; this is the technical paragraph. Latin and English; paper; 0+389+0 leaves.@md/\n
-@pc\\@ab\\BPA@ab/ @ex\\Boring Place Anyway@ex/@pc/''' + text
+@pc\\@ab\\BPA@ab/ @ex\\Boring Place Anyway@ex/ @ct\\Staffordshire@ct/@pc/''' + text
         actual = ''.join(self.parser.parse(text))
         self.assertEqual(actual, expected)
 
@@ -177,7 +177,7 @@ Test.
         @ss\\127.43#61-4/AN@ss/
         @st\\1609@st/
         @md/
-        @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @pc/
+        @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/@pc/
 @h\\ABC!1532!ABCD!eng\\!
 @w\\f 124 {(19 November)}\\!
 Test.'''
@@ -202,7 +202,7 @@ Test.
         @sh\\Heading@sh/
         Technical paragraph.
         @pd/
-        @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @pc/
+        @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/ @pc/
 @h\\ABC!1532!ABCD!eng\\!
 @w\\f 124 {(19 November)}\\!
 Test.'''
@@ -226,7 +226,7 @@ Test.
         @sh\\Heading@sh/
         Technical paragraph.
         @pd/
-        @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @pc/
+        @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/ @pc/
 @h\\ABC!1532!ABCD!eng\\!
 @w\\f 124 {(19 November)}\\!
 Test.'''

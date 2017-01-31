@@ -340,7 +340,7 @@
     </xsl:if>
     <xsl:if test=". = $person_commoner">
       <field name="facet_people_status">
-        <xsl:text>commoner</xsl:text>
+        <xsl:text>commoners</xsl:text>
       </field>
     </xsl:if>
   </xsl:template>

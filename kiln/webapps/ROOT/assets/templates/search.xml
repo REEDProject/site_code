@@ -43,7 +43,7 @@
                         'facet_materials_book', 'facet_materials_property',
                         'facet_materials_set', 'facet_materials_wagon',
                         'facet_materials_cloth', 'facet_materials_costume',
-                        'facet_materials_regalia', 'facet_materials_foo')" />
+                        'facet_materials_regalia', 'facet_materials_food')" />
   <xsl:variable name="crime_facets" select="'facet_crimes_crime'" />
   <xsl:variable name="record_facets" select="'facet_record_type'" />
 
