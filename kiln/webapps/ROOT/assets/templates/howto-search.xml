@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
-           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
-           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <kiln:parent>
-    <xi:include href="base.xml" />
+    <xi:include href="base.xml"/>
   </kiln:parent>
 
   <kiln:child>
     <kiln:block name="title">
-      <kiln:super />
+      <kiln:super/>
       <xsl:text>How To: Search Tips</xsl:text>
     </kiln:block>
 
@@ -22,10 +22,9 @@
           </div>
           <!-- Image Tooltip -->
           <div class="image-tooltip hide">
-            <div class="tooltip-content">
-              A Fête at Bermondsey, c. 1570 (oil on panel), Gheeraerts, Marcus, the Elder (c. 1520-90) / Hatfield House, Hertfordshire, UK / Bridgeman Images
-            </div>
-            <span class="tooltip-button"></span>
+            <div class="tooltip-content"> A Fête at Bermondsey, c. 1570 (oil on panel), Gheeraerts,
+              Marcus, the Elder (c. 1520-90) / Hatfield House, Hertfordshire, UK / Bridgeman Images </div>
+            <span class="tooltip-button"/>
           </div>
         </div>
 
@@ -38,9 +37,17 @@
                 <div class="toc mobile-toc">
                   <div>
                     <ul class="sub-sections">
-                      <li><a href="{kiln:url-for-match('ereed-howto-intro', (), 0)}">Introduction to the Research Process</a></li>
-                      <li><a href="{kiln:url-for-match('ereed-howto-anatomy', (), 0)}">Anatomy of a Record</a></li>
-                      <li class="active"><a href="{kiln:url-for-match('ereed-howto-search', (), 0)}">Search Tips</a></li>
+                      <li>
+                        <a href="{kiln:url-for-match('ereed-howto-intro', (), 0)}">Introduction to
+                          the Research Process</a>
+                      </li>
+                      <li>
+                        <a href="{kiln:url-for-match('ereed-howto-anatomy', (), 0)}">Anatomy of a
+                          Record</a>
+                      </li>
+                      <li class="active">
+                        <a href="{kiln:url-for-match('ereed-howto-search', (), 0)}">Search Tips</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -53,23 +60,76 @@
               <div class="row toc">
                 <div class="column medium-6">
                   <ul class="sub-sections">
-                    <li><a href="{kiln:url-for-match('ereed-howto-intro', (), 0)}">Introduction to the Research Process</a></li>
-                    <li><a href="{kiln:url-for-match('ereed-howto-anatomy', (), 0)}">Anatomy of a Record</a></li>
-                    <li class="active"><a href="{kiln:url-for-match('ereed-howto-search', (), 0)}">Search Tips</a></li>
+                    <li>
+                      <a href="{kiln:url-for-match('ereed-howto-intro', (), 0)}">Introduction to the
+                        Research Process</a>
+                    </li>
+                    <li>
+                      <a href="{kiln:url-for-match('ereed-howto-anatomy', (), 0)}">Anatomy of a
+                        Record</a>
+                    </li>
+                    <li class="active">
+                      <a href="{kiln:url-for-match('ereed-howto-search', (), 0)}">Search Tips</a>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="column medium-20-percent show-for-medium">
-              <xsl:copy-of select="$helpful_links" />
+              <xsl:copy-of select="$helpful_links"/>
             </div>
           </div>
           <div class="row">
             <div class="column medium-9  sub-section-content">
               <div class="text">
                 <h2>3. Search Tips</h2>
+                <ul>
+                  <li><p>By default, all records in the database are displayed on the <strong>Search
+                      the Records page</strong>. You can use the filters along the left side of the
+                    page, as well as the search box above them, to refine the results.</p></li>
+                  <li><p>Select terms within the <strong>filters</strong> to narrow the results.
+                    Selecting multiple terms will find records containing all the selected terms.
+                    For example, selecting 'Stafford' and 'minstrels' will find records relating to
+                    both Stafford and minstrels, rather than one or the other.</p></li>
+                  <li><p>The display will reload with each selection, and the <strong>numbers in
+                      parentheses</strong> beside the terms within the filters will change. These
+                    numbers indicate the number of records related to the term. As you select more
+                    terms, the numbers beside unselected terms will often decrease or terms might
+                    disappear entirely if they do not appear in records containing the selected
+                    terms.</p></li>
+                  <li><p>The <strong>search box</strong> above the filters allows you to search for an
+                    exact term or phrase (in quotation marks) only. Spelling varied wildly during
+                    this period, so a search for the term 'minstrels' will not produce all records
+                    that mention minstrels, only records with that spelling of minstrels. For a more
+                    comprehensive search, use a filter, if one is available, or try entering
+                    wildcards and Boolean operators into the search box.</p></li>
+                  <li><p>Single <strong>wildcard characters</strong> can be used to represent one or
+                    more characters: </p>
+                    <ul>
+                      <li><p><em>?</em> represents a single character. For example, <em>?sages</em>
+                        finds both <em>usages</em> and <em>vsages</em>. <em>m?nstrel</em> finds both
+                          <em>mynstrel</em> and <em>minstrel</em>.</p></li>
+                      <li><p>* represents zero or more characters. For example, <em>play*</em> finds
+                          <em>play</em>, <em>plays</em>, <em>player</em>, and <em>players</em>.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><strong>Boolean operators</strong>: The search box ORs each keyword or phrase,
+                    unless you type an AND (in capital letters) between them: </p>
+                    <ul>
+                      <li><p><em>minstrel piper</em> finds every document containing one or the other
+                        word.</p></li>
+                      <li><p><em>minstrel AND piper</em> finds every document containing both
+                        words.</p></li>
+                    </ul>
+                  </li>
+                  <li><p>Use <strong>parentheses</strong> for grouping. For example, <em>(king players)
+                      AND night</em> finds documents containing <em>night</em> and one or both of
+                      <em>king</em> and <em>players</em>.</p></li>
+                  <li><p>Changing search terms or setting a date will <strong>reset</strong> the filters, so always
+                    start a more complex search with the desired date and/or the search term, rather
+                    than trying to filter by date or term partway through your search.</p></li>
+                </ul>
               </div>
-
               <div class="row prev-next-buttons">
                 <div class="columns medium-4">
                   <div class="previous-button">
@@ -79,7 +139,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="columns medium-4"></div>
+                <div class="columns medium-4"/>
               </div>
             </div>
           </div>
@@ -87,13 +147,15 @@
             <div class="filter-head jump-to-filter">HELPFUL LINKS</div>
             <div class="filter-content-wrapper relative">
               <div class="filter-content">
-                <xsl:copy-of select="$helpful_links" />
+                <xsl:copy-of select="$helpful_links"/>
               </div>
             </div>
           </div>
           <div class="row hide-for-medium">
             <div class="column">
-              <a href="#" class="button back-to-top transparent expanded small-margin-top-25 small-margin-bottom-25">Back To Top</a>
+              <a href="#"
+                class="button back-to-top transparent expanded small-margin-top-25 small-margin-bottom-25"
+                >Back To Top</a>
             </div>
           </div>
         </div>
