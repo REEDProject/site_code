@@ -96,20 +96,35 @@
   <xsl:template match="lst[@name='facet_fields']/lst/@name"
                 mode="search-results">
     <xsl:choose>
+      <xsl:when test=". = 'facet_entertainers_patronised'">
+        <xsl:text>Patronized</xsl:text>
+      </xsl:when>
       <xsl:when test=". = 'facet_entertainments_custom'">
         <xsl:text>Seasonal Custom</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_entertainments_animal'">
         <xsl:text>Animal Sport</xsl:text>
       </xsl:when>
+      <xsl:when test=". = 'facet_drama_work'">
+        <xsl:text>Titled Work</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_materials_instrument'">
+        <xsl:text>Instruments</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_materials_book'">
+        <xsl:text>Books</xsl:text>
+      </xsl:when>
       <xsl:when test=". = 'facet_materials_property'">
-        <xsl:text>Prop &amp; Machinery</xsl:text>
+        <xsl:text>Props &amp; Machinery</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_materials_set'">
-        <xsl:text>Set</xsl:text>
+        <xsl:text>Sets</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_materials_wagon'">
-        <xsl:text>Pageant Wagon</xsl:text>
+        <xsl:text>Pageant Wagons</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_materials_costume'">
+        <xsl:text>Costumes</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_materials_food'">
         <xsl:text>Food &amp; Drink</xsl:text>
