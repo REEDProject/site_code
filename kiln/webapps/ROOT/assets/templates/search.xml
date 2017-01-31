@@ -68,6 +68,10 @@
                        name="q" placeholder="Enter exact term or phrase"
                        value="{$q_value}">
                 </input>
+                <div class="date-header">Enter date range:</div>
+                <input type="number" class="date" name="date_from" value="{$date_from_value}"/>
+                <span class="date-to">to</span>
+                <input type="number" class="date" name="date_to" value="{$date_to_value}" />
                 <button class="button expanded" type="submit">Search</button>
               </div>
 
@@ -81,7 +85,6 @@
                     <div class="filter-content">
                       <ul class="jump-to-filter bordered">
                         <li><a href="#locations">Locations</a></li>
-                        <li><a href="#dates">Dates</a></li>
                         <li><a href="#calendar">Calendar Days</a></li>
                         <li><a href="#people">People</a></li>
                         <li><a href="#collectives">Collectives</a></li>
@@ -102,18 +105,6 @@
                       <ul class="accordion" data-accordion="" data-allow-all-closed="true">
                         <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$location_facets]" mode="search-results" />
                       </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="filter" id="dates">
-                  <div class="filter-head">Dates</div>
-                  <div class="filter-content-wrapper">
-                    <div class="filter-content date">
-                      <div class="date-header">Enter date range</div>
-                      <input type="number" class="date" name="date_from" value="{$date_from_value}"/>
-                      <span class="date-to">to</span>
-                      <input type="number" class="date" name="date_to" value="{$date_to_value}" />
-                      <input type="submit" class="button expanded" value="Apply Filter" />
                     </div>
                   </div>
                 </div>
