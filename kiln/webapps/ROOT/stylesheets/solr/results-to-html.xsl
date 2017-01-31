@@ -64,22 +64,24 @@
 
   <xsl:template match="lst[@name='facet_fields]/lst"
                 mode="search-results">
-    <li class="accordion-item" data-accordion-item="">
-      <a href="#" class="accordion-title">
-        <xsl:apply-templates mode="search-results" select="@name" />
-      </a>
-      <div class="accordion-content" data-tab-content="">
-        <ul class="open-filters">
-          <xsl:variable name="facet-values">
-            <xsl:apply-templates mode="search-results" />
-          </xsl:variable>
-          <xsl:for-each select="$facet-values/li">
-            <xsl:sort select="." />
-            <xsl:copy-of select="." />
-          </xsl:for-each>
-        </ul>
-      </div>
-    </li>
+    <xsl:variable name="facet-values">
+      <xsl:apply-templates mode="search-results" />
+    </xsl:variable>
+    <xsl:if test="normalize-space($facet-values)">
+      <li class="accordion-item" data-accordion-item="">
+        <a href="#" class="accordion-title">
+          <xsl:apply-templates mode="search-results" select="@name" />
+        </a>
+        <div class="accordion-content" data-tab-content="">
+          <ul class="open-filters">
+            <xsl:for-each select="$facet-values/li">
+              <xsl:sort select="." />
+              <xsl:copy-of select="." />
+            </xsl:for-each>
+          </ul>
+        </div>
+      </li>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="lst[@name='facet_fields]/lst"
