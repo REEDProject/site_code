@@ -345,7 +345,9 @@ class DocumentParser:
             pp.alphanums))
         expansion = pp.nestedExpr('@ex\\', '@ex/', content=pp.OneOrMore(
             content ^ punctuation))
-        place_code = blank + abbreviation + blank + expansion + blank
+        county = pp.nestedExpr('@ct\\', '@ct/', content=content)
+        place_code = blank + abbreviation + blank + expansion + blank + \
+            county + blank
         place_code.setParseAction(self._pa_place_code)
         place_codes = pp.nestedExpr('@pc\\', '@pc/',
                                     content=pp.OneOrMore(place_code))
