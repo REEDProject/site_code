@@ -14,8 +14,8 @@ from .exceptions import TextPrepareDocumentUpdateError
 # original whitespace can cause problems in the parsing, but the
 # editors are used to that form.
 codes = [
-    'a', 'ab', 'b', 'c', 'cl', 'cn', 'cnx', 'cor', 'cr', 'cym', 'deu', 'e',
-    'en', 'eng', 'ex', 'f', 'fra', 'g', 'gla', 'gmh', 'gml', 'grc', 'i',
+    'a', 'ab', 'b', 'c', 'cl', 'cn', 'cnx', 'cor', 'cr', 'ct', 'cym', 'deu',
+    'e', 'en', 'eng', 'ex', 'f', 'fra', 'g', 'gla', 'gmh', 'gml', 'grc', 'i',
     'ita', 'j', 'k', 'l', 'lat', 'li', 'm', 'md', 'p', 'pc', 'pd', 'por', 'q',
     'r', 's', 'sc', 'sh', 'sl', 'sn', 'snc', 'snr', 'spa', 'sr', 'ss',
     'st', 'tr', 'ul', 'wlm', 'x', 'xc', 'xno']
