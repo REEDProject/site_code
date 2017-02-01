@@ -605,14 +605,6 @@
                         <sense xml:id="altogaether-1">all together</sense>
                     </entry>
 
-                    <entry xml:id="andernes">
-                        <form>
-                            <orth>Andernes</orth>
-                            <gram>n</gram>
-                        </form>
-                        <sense xml:id="andernes-1">the hundred of Amounderness in Lancashire</sense>
-                    </entry>
-
                     <entry xml:id="anenst">
                         <form>
                             <orth>anenst</orth>
@@ -658,16 +650,6 @@
                             <gram>n</gram>
                         </form>
                         <sense xml:id="aucthoritei-1">authority</sense>
-                    </entry>
-
-                    <entry xml:id="austenfryers">
-                        <form>
-                            <orth>austen fryers</orth>
-                            <gram>n</gram>
-                        </form>
-                        <sense xml:id="austenfryers-1">Austen Friary in Stafford; 
-                            <form><orth>the fryers</orth></form>
-                        </sense>
                     </entry>
 
                     <entry xml:id="axid">
@@ -998,14 +980,6 @@
                         <sense xml:id="dowcke-1">duck</sense>
                     </entry>
 
-                    <entry xml:id="draiton">
-                        <form>
-                            <orth>draiton</orth>
-                            <gram>n</gram>
-                        </form>
-                        <sense xml:id="draiton-1">Drayton Manor</sense>
-                    </entry>
-
                     <entry xml:id="droncnes">
                         <form>
                             <orth>droncnes</orth>
@@ -1013,14 +987,7 @@
                         </form>
                         <sense xml:id="droncnes-1">drunkness, drunkenness</sense>
                     </entry>
-
-                    <entry xml:id="dudely">
-                        <form>
-                            <orth>dudely</orth>
-                            <gram>n</gram>
-                        </form>
-                        <sense xml:id="dudely-1">Dudley</sense>
-                    </entry>
+                    
                 </div>
 
                 <div n="E" xml:id="gloss-eng-E">
@@ -1139,22 +1106,6 @@
                         <sense xml:id="geddred-1">gathered; 
                             <form><orth>gedyryd</orth></form>
                         </sense>
-                    </entry>
-
-                    <entry xml:id="geraldbromley">
-                        <form>
-                            <orth>gerald bromley</orth>
-                            <gram>n</gram>
-                        </form>
-                        <sense xml:id="geraldbromley-1">Gerards Bromley</sense>
-                    </entry>
-
-                    <entry xml:id="geylehall">
-                        <form>
-                            <orth>geylehall</orth>
-                            <gram>n comp</gram>
-                        </form>
-                        <sense xml:id="geylehall-1">guildhall (?)</sense>
                     </entry>
 
                     <entry xml:id="geyre">
@@ -1435,14 +1386,6 @@
                         <sense xml:id="moo-1">more</sense>
                     </entry>
 
-                    <entry xml:id="mottehall">
-                        <form>
-                            <orth>motte hall</orth>
-                            <gram>n</gram>
-                        </form>
-                        <sense xml:id="mottehall-1">moot hall, a town hall, council chamber, or courtroom</sense>
-                    </entry>
-
                     <entry xml:id="musesen">
                         <form>
                             <orth>musesen</orth>
@@ -1511,14 +1454,6 @@
                             <gram>v pasp</gram>
                         </form>
                         <sense xml:id="pead-1">paid</sense>
-                    </entry>
-
-                    <entry xml:id="penckriche">
-                        <form>
-                            <orth>penckriche</orth>
-                            <gram>n</gram>
-                        </form>
-                        <sense xml:id="penckriche-1">Penkridge</sense>
                     </entry>
 
                     <entry xml:id="pennystone">
@@ -1626,20 +1561,12 @@
                         <sense xml:id="rouge-1">rogue</sense>
                     </entry>
 
-                    <entry xml:id="rydgeley">
-                        <form>
-                            <orth>rydgeley</orth>
-                            <gram>n</gram>
-                        </form>
-                        <sense xml:id="rydgeley-1">Rugeley</sense>
-                    </entry>
-
                     <entry xml:id="rydware">
                         <form>
                             <orth>rydware</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="rydware-1">likely one of several hamlets known as Ridware: Pipe Ridware, Mavesyn Ridware, or Hamstall Ridware</sense>
+                        <sense xml:id="rydware-1">likely one of several hamlets known as Ridware: Pipe Ridware, Mavesyn Ridware, or Hamstall Ridware</sense> <!-- Does "rydware" not have an EATS page? We're definitely not sure which Rydware this is, so maybe it's not worth having a page?--> 
                     </entry>
 
                 </div>
@@ -1673,7 +1600,7 @@
                             <gram>n in phr</gram>
                             <orth>countie of salopia</orth>
                         </form>
-                        <sense xml:id="salopia-2">Shropshire</sense>
+                        <sense xml:id="salopia-2">Shropshire</sense> <!-- there are two instances of "Salopia" in one record; the first is EATS tagged. Is it overkill to gloss the untagged instance? Same thing with Shareshill and Statfold and Wednesbury below--> 
                     </entry>
 
                     <entry xml:id="schochoneofarmes">
@@ -1916,14 +1843,6 @@
                             organ (?)</sense>
                     </entry>
 
-                    <entry xml:id="vtseter">
-                        <form>
-                            <orth>vtseter</orth>
-                            <gram>n</gram>
-                        </form>
-                        <sense xml:id="vtseter-1">Uttoxeter</sense>
-                    </entry>
-
                 </div>
 
                 <div n="W" xml:id="gloss-eng-W">
@@ -1953,14 +1872,6 @@
                             <form><orth>wedesbury</orth></form>; 
                             <form><orth>widdesbur</orth></form>
                         </sense>
-                    </entry>
-
-                    <entry xml:id="whorecrosse">
-                        <form>
-                            <orth>whorecrosse</orth>
-                            <gram>n</gram>
-                        </form>
-                        <sense xml:id="whorecrosse-1">Hoar Cross</sense>
                     </entry>
 
                     <entry xml:id="wicke">
