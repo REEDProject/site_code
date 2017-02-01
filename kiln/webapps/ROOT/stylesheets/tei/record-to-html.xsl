@@ -177,9 +177,9 @@
   </xsl:template>
 
   <xsl:template name="display-record-entities">
+    <xsl:variable name="record-id" select="@xml:id" />
     <ul class="tags">
-      <xsl:for-each select=".//tei:rs[@ref]">
-        <!-- QAZ: Only display each entity once. -->
+      <xsl:for-each select=".//tei:rs[@ref][not(@ref=preceding::tei:rs[ancestor::tei:text/@xml:id=$record-id]/@ref)]">
         <xsl:variable name="entity-id">
           <xsl:text>entity-</xsl:text>
           <xsl:call-template name="get-entity-id-from-url">
