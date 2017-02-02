@@ -282,7 +282,7 @@
 
                 <listBibl>
                     <bibl xml:id="AWAS">
-                        <title type="edName">Archdeacon John Fulnetby's Visitation Articles</title>
+                        <title type="edName">Archdeacon <rs ref="http://ereed.library.utoronto.ca/eats/entity/39341/" type="Person_Clergy">John Fulnetby's</rs> Visitation Articles</title>
                         <note type="docDesc"><p><title type="sourceName">ARTICLES | TO BE | INQUIRED OF | WITHIN THE
                                     ARCHDEACONRY | OF STAFFORD | In the Visitation of the Right
                                     Worshipfull [blank] | Archdeaconry of Stafford. | <hi
@@ -329,8 +329,8 @@
                             <settlement>Chester</settlement>
                             <repository sameAs="#cheshire-record-office"/>
                             <idno type="shelfmark">EDC 5 (1635)/87</idno>
-                            <msName>Diocese of Chester Consistory Court Case, Response to Complaint
-                                in Colly v. Dikes</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/15612/" type="Place_EcclesiasticalArea">Diocese of Chester</rs> Consistory Court Case, Response to Complaint
+                                in <rs ref="http://ereed.library.utoronto.ca/eats/entity/1573/" type="Person_Female">Colly</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/1478/" type="Person_Male">Dikes</rs></msName><!-- kc: check this with Carolyn re. Diocese of Chester tagging -->
                         </msIdentifier>
                         <ab type="techDesc"><date>1635</date>; English and Latin; paper; bifolium, folded in 2 to
                             make 2 leaves, subsequently folded in 4 vertically; 302mm x 374mm;
@@ -343,7 +343,7 @@
                             <settlement>London</settlement>
                             <repository sameAs="#BL"/>
                             <idno type="shelfmark">Cotton MS Vespas. E. iii</idno>
-                            <msName>Annals of Burton upon Trent Abbey</msName>
+                            <msName>Annals of Burton upon Trent Abbey</msName><!-- kc: do I tag Burton upon Trent or the Abbey? -->
                         </msIdentifier>
                         <ab type="techDesc"><date>1263</date>; Latin; parchment; vi +214+ v; 220mm x 160mm; modern
                             pencil foliation supersedes several earlier foliations in ink; composite
@@ -356,7 +356,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">STAC 8/104/20</idno>
-                            <msName>Criples v. Lambe</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/5448/ http://ereed.library.utoronto.ca/eats/entity/5544/" type="Person_Commoner">Criples</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/5605/" type="Person_Male">Lambe</rs></msName><!-- kc: ask Carolyn about name spelling; majority spelling is "Crippell" -->
                         </msIdentifier>
                         <ab type="techDesc"><date>1619</date>; English; parchment; 2 membranes, sewn together at the
                             upper left corner; mb [1] (Answer): 335mm x 645mm, mb 2 (Bill): 280mm x
@@ -400,7 +400,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">STAC 8/20/24</idno>
-                            <msName>Bill of Complaint in Gillam v. Church</msName>
+                            <msName>Bill of Complaint in <rs ref="http://ereed.library.utoronto.ca/eats/entity/7513/" type="Person_Male">Gillam</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/7631/" type="Person_Male">Church</rs></msName><!-- kc: there are two Gilliams in the record, William and his wife Alice; it's singiular here. Here, assume it's William? -->
                         </msIdentifier>
                         <ab type="techDesc"><date>1616</date>; English; parchment; 2 membranes stitched together at
                             top left; unnumbered; mb [1] (Answer): 320mm x 545mm, mb 2 (Bill): 350mm
@@ -416,7 +416,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">STAC 2/1</idno>
-                            <msName>Alkyn v. Pursall</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/8870/" type="Person_Male">Alkyn</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/8317/" type="Person_Male">Pursall</rs></msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1537</date>; English; paper; a collection of documents of various
                             sizes in a volume titled on the spine: 'Star Chamber Proceedings Hen.
@@ -430,7 +430,7 @@
                             <settlement>Stafford</settlement>
                             <repository sameAs="#STRO"/>
                             <idno type="shelfmark">Q/SR/72, item 36</idno>
-                            <msName>Complaints against Thomas Jacson, Victualler</msName>
+                            <msName>Complaints against <rs ref="http://ereed.library.utoronto.ca/eats/entity/8942/" type="Person_Male">Thomas Jacson</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/21077/" type="Collective_Occupation">Victualler</rs></msName>
                         </msIdentifier>
                         <ab type="techDesc">Michaelmas <date>1599</date>; English; paper; single sheet; 305mm x
                             200mm; written on both sides, no internal date to identify session or
@@ -442,7 +442,7 @@
                             <settlement>Stafford</settlement>
                             <repository sameAs="#STRO"/>
                             <idno type="shelfmark">Q/SR/91, items 61-2</idno>
-                            <msName>Information Lodged against Thomas Jacson, Victualler</msName>
+                            <msName>Information Lodged against <rs ref="http://ereed.library.utoronto.ca/eats/entity/8942/" type="Person_Male">Thomas Jacson</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/21077/" type="Collective_Occupation">Victualler</rs></msName>
                         </msIdentifier>
                         <ab type="techDesc">Easter <date>1604</date>; English; paper; bifolium; 310mm x 205mm (folios
                             given separate item numbers); written on 1 side; mounted on guard stub
@@ -454,7 +454,7 @@
                             <settlement>Stafford</settlement>
                             <repository sameAs="#STRO"/>
                             <idno type="shelfmark">Q/SR/91, item 63</idno>
-                            <msName>Charges Alleged against Thomas Jacson, Victualler</msName>
+                            <msName>Charges Alleged against <rs ref="http://ereed.library.utoronto.ca/eats/entity/8942/" type="Person_Male">Thomas Jacson</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/21077/" type="Collective_Occupation">Victualler</rs></msName>
                         </msIdentifier>
                         <ab type="techDesc">Easter <date>1604</date>; English; paper; single sheet; 305mm x 205mm,
                             written on 1 side; mounted on guard stub and preserved within blue
@@ -466,7 +466,7 @@
                             <settlement>Stafford</settlement>
                             <repository sameAs="#STRO"/>
                             <idno type="shelfmark">Q/SR/94, items 69-70</idno>
-                            <msName>Complaint against Thomas Jacson, Victualler, by Roger Steventon,
+                            <msName>Complaint against <rs ref="http://ereed.library.utoronto.ca/eats/entity/8942/" type="Person_Male">Thomas Jacson</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/21077/" type="Collective_Occupation">Victualler</rs>, by Roger Steventon,
                                 Vicar</msName>
                         </msIdentifier>
                         <ab type="techDesc">Epiphany <date>1604–5</date>; English; paper; bifolium; 310mm x 205mm
@@ -479,7 +479,7 @@
                             <settlement>Stafford</settlement>
                             <repository sameAs="#STRO"/>
                             <idno type="shelfmark">Q/SR/95, items 37-8</idno>
-                            <msName>Court Order against William Johnson</msName>
+                            <msName>Court Order against <rs ref="http://ereed.library.utoronto.ca/eats/entity/9839/" type="Person_Male">William Johnson</rs></msName>
                         </msIdentifier>
                         <ab type="techDesc">Easter <date>1605</date>; English; paper; bifolium; 315mm x 205mm (folios
                             given separate item numbers); written on f [1] only (item 37, recto);
@@ -666,7 +666,7 @@
                     </msDesc>
 
                     <bibl xml:id="NICH">
-                        <title type="edName">Queen Elizabeth's Visit to Lichfield (A)</title>
+                        <title type="edName">Queen <rs ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Person_Royalty">Elizabeth's</rs> Visit to <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_BoroughParish">Lichfield</rs> (A)</title>
                         <note type="docDesc"><p>Nichols, John. <title type="sourceName">THE |
                                     PROGRESSES | AND | PUBLIC PROCESSIONS | OF | QUEEN ELIZABETH. |
                                     ... | A NEW EDITION, IN THREE VOLUMES. | VOLUME I. | [Royal Coat
@@ -1686,7 +1686,7 @@
                     </msDesc>
 
                     <bibl xml:id="WRIN">
-                        <title type="edName">Inventory of the Effects of Sir Hugh Wrottesley (A)</title>
+                        <title type="edName">Inventory of the Effects of Sir <rs ref="http://ereed.library.utoronto.ca/eats/entity/34657/" type="Person_Male">Hugh Wrottesley</rs> (A)</title>
                         <note type="edDesc"><p>Sir Hugh Wrottesley (<hi rend="italic">c</hi>
                                 1570–1633) was father of Walter Wrottesley (1606–59), initially a
                                 Parliamentarian, turned Royalist sympathizer, created 1st Baronet of
@@ -1715,7 +1715,7 @@
                     </bibl>
 
                     <bibl xml:id="WRLT">
-                        <title type="edName">Letter from J. Richards to Sir Hugh Wrottesley (A)</title>
+                        <title type="edName">Letter from <rs ref="http://ereed.library.utoronto.ca/eats/entity/34611/" type="Person_Male">J. Richards</rs> to Sir <rs ref="http://ereed.library.utoronto.ca/eats/entity/34657/" type="Person_Male">Hugh Wrottesley</rs> (A)</title>
                         <note type="edDesc"><p>Sir Hugh Wrottesley (<hi rend="italic">c</hi>
                                 1570–1633) was father of Walter Wrottesley (1606–59), initially a
                                 Parliamentarian, turned Royalist sympathizer, created 1st baronet of
