@@ -164,11 +164,11 @@
                     of the nominative singular or, in the case of adjectives of one ending, by the
                     nominative and genitive; verbs by their principal parts.</p>
             </div>
-            <div xml:id="anglo-french_headnote" corresp="#anglo-french"> <!-- JH: Should we give an abbreviation for the Anglo-Norman Dictionary here? (AND) Also: is this an online dictionary specifically that we're using? (If so: ANDO?)--> 
+            <div xml:id="anglo-french_headnote" corresp="#anglo-french">  
                 <p>Words have been included in the Anglo-French Glossary if they are not found with
                     the required sense in either the <title>Collins-Robert French Dictionary</title>
                     or in the <ref target="http://www.anglo-norman.net">Anglo-Norman Dictionary
-                        Online</ref> or cannot be easily found there in the spelling in which they
+                        Online</ref> (AND) or cannot be easily found there in the spelling in which they
                     occur in the text. Words with unusual spellings have been not been included if
                     they are treated in the text as scribal errors and footnoted, or if they are the
                     result of the following common spelling variations alone:</p>
@@ -264,11 +264,10 @@
                     <entry xml:id="balletta">
                         <form>
                             <orth>balletta</orth>
-                        </form> <!-- JH: just realized: should there not be a <gram> tag in here?-->
-                        <sense xml:id="balletta-1">
-                            <def><hi rend="italic">var of</hi> ballada
-                                <ref>[<hi rend="italic">DML</hi>]</ref>
-                            </def>
+                            <gram>var of</gram>
+                        </form> 
+                        <sense xml:id="balletta-1">ballada
+                            <ref>[<hi rend="italic">DML</hi>]</ref>
                             <!-- <cit>
                         <quote>Canto ballettae</quote>
                         <ptr target="staffs.xml#term-abc123"/>
@@ -309,10 +308,11 @@
                     <entry>
                         <form>
                             <orth>episcopus, -i</orth>
-                            <gram>n m</gram></form>
+                            <gram>n m</gram>
+                        </form>
                         <sense xml:id="episcopus-1">bishop;
                         <form>
-                            <orth>~ puerorum</orth> <!-- gram tag here?--> 
+                            <orth>~ puerorum</orth>  
                         </form>
                         boy bishop, a boy, originally a choirboy in a cathedral or other collegiate church or a student in an
                             almonry school, chosen to act as a mock bishop in liturgical and other
@@ -326,8 +326,8 @@
                             <orth>ludus, -i</orth>
                             <gram>n m</gram></form>
                         <sense xml:id="ludus-1">entertainment, ‘play,’ of an unspecified kind, not
-                            necessarily dramatic <ref>[<hi rend="italic">see also</hi>
-                                <hi rend="italic">DML</hi> ludus]</ref>
+                            necessarily dramatic 
+                            <ref>[<hi rend="italic">see also</hi> <hi rend="italic">DML</hi> ludus]</ref>
                         </sense>
                     </entry>
                 </div>
@@ -337,7 +337,7 @@
                             <orth>Malbanus</orth>
                         </form>
                         <xr><hi rend="italic">see</hi>
-                            <hi rend="bold">vicus Malbanus</hi></xr> <!-- do we need this xr when "vicus malbanus" is in here? in what scenario will someone come to "malbanus" first?--> 
+                            <hi rend="bold">vicus Malbanus</hi></xr>  
                     </entry>
                     <entry>
                         <form>
@@ -345,7 +345,7 @@
                             <gram>adj</gram>
                         </form>
                         <sense xml:id="Michaelis-1">of or pertaining to St Michael;
-                        <xr><hi rend="italic">see also</hi> terminus</xr> <!-- I see we do have one instance of "michaelis" with no "terminus" but do we need the xr here? will the record not just point to the proper gloss?--> 
+                        <xr><hi rend="italic">see also</hi> terminus</xr>  
                         </sense>
                     </entry>
                 </div>
@@ -385,7 +385,7 @@
                         <form>
                             <orth>~ Michaelis</orth>
                         </form>
-                        <sense xml:id="terminus_Michaelis-1">Michaelmas term</sense> <!-- Is there an instance where "terminus" needs to be glossed without reference to Michaelmas? In staff.xml these glossary refs overlap and that may not be desirable on the front end --> 
+                        <sense xml:id="terminus_Michaelis-1">Michaelmas term</sense>  
                     </entry>
                 </div>
                 <div n="V" xml:id="gloss-la-V">
