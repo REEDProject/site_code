@@ -274,7 +274,7 @@
                     </cit> -->
                         </sense>
                     </entry>
-                    <entry>
+                    <entry xml:id="Bertelinus">
                         <form>
                             <orth>Bertelinus, -i</orth>
                             <gram>n m</gram>
@@ -286,7 +286,7 @@
                         >ballettae</term> musicae </p>-->
                 </div>
                 <div n="C" xml:id="gloss-la-C">
-                    <entry>
+                    <entry xml:id="cantalena">
                         <form>
                             <orth>cantalena, -e</orth>
                             <gram>n f</gram>
@@ -295,7 +295,7 @@
                             <ref>[<hi rend="italic">DML</hi>]</ref>
                         </sense>
                     </entry>
-                    <entry>
+                    <entry xml:id="carectata">
                         <form>
                             <orth>carectata, -e</orth>
                             <gram>n f</gram>
@@ -305,7 +305,7 @@
                     </entry>
                 </div>
                 <div n="E" xml:id="gloss-la-E">
-                    <entry>
+                    <entry xml:id="episcopus">
                         <form>
                             <orth>episcopus, -i</orth>
                             <gram>n m</gram>
@@ -321,7 +321,7 @@
                     </entry>
                 </div>
                 <div n="L" xml:id="gloss-la-L">
-                    <entry>
+                    <entry xml:id="ludus">
                         <form>
                             <orth>ludus, -i</orth>
                             <gram>n m</gram></form>
@@ -332,14 +332,14 @@
                     </entry>
                 </div>
                 <div n="M" xml:id="gloss-la-M">
-                    <entry>
+                    <entry xml:id="malbanus">
                         <form>
                             <orth>Malbanus</orth>
                         </form>
                         <xr><hi rend="italic">see</hi>
                             <hi rend="bold">vicus Malbanus</hi></xr>  
                     </entry>
-                    <entry>
+                    <entry xml:id="michaelis">
                         <form>
                             <orth>Michaelis, -e</orth>
                             <gram>adj</gram>
@@ -350,7 +350,7 @@
                     </entry>
                 </div>
                 <div n="P" xml:id="gloss-la-P">
-                    <entry>
+                    <entry xml:id="parcellum">
                         <form>
                             <orth>parcellum, -i</orth>
                             <gram>n n</gram>
@@ -359,14 +359,14 @@
                             <ref>[<hi rend="italic">DML</hi>]</ref>
                         </sense>
                     </entry>
-                    <entry>
+                    <entry xml:id="parochialis">
                         <form>
                             <orth>parochialis, -e</orth>
                             <gram>adj</gram>
                         </form>
                         <sense xml:id="parochialis-1">of or pertaining to a parish</sense>
                     </entry>
-                    <entry>
+                    <entry xml:id="promotus">
                         <form>
                             <orth>promotus, -a, -um</orth>
                             <gram>pfp pass</gram></form>
@@ -376,7 +376,7 @@
                     </entry>
                 </div>
                 <div n="T" xml:id="gloss-la-T">
-                    <entry>
+                    <entry xml:id="terminus">
                         <form>
                             <orth>terminus, -i</orth>
                             <gram>n m</gram>
@@ -390,7 +390,7 @@
                     </entry>
                 </div>
                 <div n="V" xml:id="gloss-la-V">
-                    <entry>
+                    <entry xml:id="uicus">
                         <form>
                             <orth>uicus, -i</orth>
                             <gram>n m</gram>
@@ -403,7 +403,7 @@
                     </entry>
                 </div>
                 <div n="Y" xml:id="gloss-la-Y">
-                    <entry>
+                    <entry xml:id="ystrio">
                         <form>
                             <orth>ystrio, -onis</orth>
                             <gram>n m</gram>
@@ -418,7 +418,7 @@
             <div xml:id="anglo-french" corresp="#anglo-french_headnote">
                 <head>Anglo-French Glossary</head>
                 <div n="A" xml:id="gloss-af-A">
-                    <entry>
+                    <entry xml:id="aderer">
                         <form>
                             <orth>aderer</orth>
                             <gram>pfp</gram>
@@ -427,7 +427,7 @@
                             <ref>[<hi rend="italic">AND</hi> aderere]</ref>
                         </sense>
                     </entry>
-                    <entry>
+                    <entry xml:id="aenes">
                         <form>
                             <orth>aenes</orth>
                             <gram>adv</gram>
@@ -436,7 +436,7 @@
                             <ref>[<hi rend="italic">AND</hi> ainz]</ref>
                         </sense>
                     </entry>
-                    <entry>
+                    <entry xml:id="arrae">
                         <form>
                             <orth>arrae</orth>
                             <gram>pfp</gram>
@@ -447,7 +447,7 @@
                     </entry>
                 </div>
                 <div n="B" xml:id="gloss-af-B">
-                    <entry>
+                    <entry xml:id="bouche">
                         <form>
                             <orth>bouche</orth>
                             <gram>in phr</gram>
@@ -460,7 +460,7 @@
                     </entry>
                 </div>
                 <div n="D" xml:id="gloss-af-D">
-                    <entry>
+                    <entry xml:id="datantz">
                         <form>
                             <orth>datantz</orth>
                             <gram>prp</gram>
@@ -469,7 +469,7 @@
                             <ref>[<hi rend="italic">OLD</hi> dato]</ref>
                         </sense>
                     </entry>
-                    <entry>
+                    <entry xml:id="derreinement">
                         <form>
                             <orth>derreinement</orth>
                             <gram>adv</gram>
@@ -478,14 +478,14 @@
                             <ref>[see <hi rend="italic">AND</hi> derrein]</ref>
                         </sense>
                     </entry>
-                    <entry>
+                    <entry xml:id="desouzescrites">
                         <form>
                             <orth>desouzescrites</orth>
                             <gram>adv</gram>
                         </form>
                         <sense xml:id="desouzescrites-1">written below</sense>
                     </entry>
-                    <entry>
+                    <entry xml:id="destrer">
                         <form>
                             <orth>destrer</orth>,
                             <orth>destere</orth>
@@ -495,21 +495,21 @@
                             <ref>[<hi rend="italic">AND</hi> destrer]</ref>
                         </sense>
                     </entry>
-                    <entry>
+                    <entry xml:id="desusescrites">
                         <form>
                             <orth>desusescrites</orth>
                             <gram>adv</gram>
                         </form>
                         <sense xml:id="desusescrites-1">written above</sense>
                     </entry>
-                    <entry>
+                    <entry xml:id="deuerwik">
                         <form>
                             <orth>deuerwik</orth>
                             <gram>prep phr</gram>
                         </form>
                         <sense xml:id="deuerwik-1"> of York</sense>
                     </entry>
-                    <entry>
+                    <entry xml:id="deussiez">
                         <form><orth>deussiez</orth>
                             <gram>2 pl imperfect subj of</gram>
                         </form>
@@ -518,7 +518,7 @@
                     </entry>
                 </div>
                 <div n="M" xml:id="gloss-af-M">
-                    <entry>
+                    <entry xml:id="meuuance">
                         <form>
                             <orth>meuuance</orth>
                             <gram>prp</gram>
@@ -528,7 +528,7 @@
                     </entry>
                 </div>
                 <div n="N" xml:id="gloss-af-N">
-                    <entry>
+                    <entry xml:id="nientcontresfecantes">
                         <form>
                             <orth>nientcontresfecantes</orth>, 
                             <orth>nient contreefieantes</orth>
@@ -538,7 +538,7 @@
                     </entry>
                 </div>
                 <div n="O" xml:id="gloss-af-O">
-                    <entry>
+                    <entry xml:id="ottroiez">
                         <form>
                             <orth>ottroiez</orth>
                             <gram>pfp</gram>
@@ -548,7 +548,7 @@
                     </entry>
                 </div>
                 <div n="P" xml:id="gloss-af-P">
-                    <entry>
+                    <entry xml:id="plerra">
                         <form>
                             <orth>plerra</orth>
                             <gram>fut 3 pl</gram>
@@ -556,7 +556,7 @@
                         <sense xml:id="plerra-1">of plaisir 
                             <ref>[<hi rend="small-=caps"><hi rend="italic">AND</hi></hi>]</ref></sense>
                     </entry>
-                    <entry>
+                    <entry xml:id="pouers">
                         <form>
                             <orth>pouers</orth> 
                             <gram>m/f pl</gram>
@@ -566,7 +566,7 @@
                             <form><orth>pourez</orth></form>
                         </sense>
                     </entry>
-                    <entry>
+                    <entry xml:id="pouir">
                         <form>
                             <orth>pouir</orth>
                             <gram>n m</gram>
@@ -576,7 +576,7 @@
                     </entry>
                 </div>
                 <div n="S" xml:id="gloss-af-S">
-                    <entry>
+                    <entry xml:id="surorez">
                         <form>
                             <orth>surorez</orth>
                             <gram>pfp</gram>
