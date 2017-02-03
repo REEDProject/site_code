@@ -75,11 +75,12 @@ var related_geoJsonLayer = L.Proj.geoJson(null, {
     onEachFeature: function(feature, layer) {
         var popupContent;
         if (feature.properties.LOC_NAME == feature.properties.LABELS) {
-            popupContent = 'Location: ' + feature.properties.LOC_NAME;
+            //popupContent = 'Location: ' + feature.properties.LOC_NAME;
+            popupContent = 'Location: <a href="' + feature.properties.eats_url + '">' + feature.properties.eats_name + '</a><br>Record: <a href="' + feature.properties.record_url + '">' + feature.properties.record_title + '</a>';
         }
         else {
             popupContent = 'Site: ' + feature.properties.LABELS +
-                '<br>' + 'Location: ' + feature.properties.LOC_NAME;
+                '<br>' + 'Location: <a href="' + feature.properties.eats_url + '">' + feature.properties.eats_name + '</a><br>Record: <a href="' + feature.properties.record_url + '">' + feature.properties.record_title + '</a>';
         }
         layer.bindPopup(popupContent);
     }
