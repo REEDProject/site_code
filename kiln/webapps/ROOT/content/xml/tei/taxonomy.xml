@@ -317,7 +317,7 @@
                             <settlement>Lichfield</settlement>
                             <repository sameAs="#LRO"/>
                             <idno type="shelfmark">B/V/1/17</idno>
-                            <msName>Archdeaconry of Stafford Visitation Act Book</msName>
+                            <msName>Archdeaconry of Stafford Visitation Act Book</msName><!-- kc: do we tag 'Archdeconry of Safford' as an ecclesiastical area? -->
                         </msIdentifier>
                         <ab type="techDesc"><date>1584</date>; English and Latin; paper; iii + 264; 310mm x 210mm;
                             modern pencil pagination; bound in worn parchment covers, title on
@@ -602,7 +602,7 @@
                             <settlement>Chester</settlement>
                             <repository sameAs="#cheshire-record-office"/>
                             <idno type="shelfmark">DCH/0/8, item 2</idno>
-                            <msName>Account of Robert Blaby, Bishop's Bailiff</msName>
+                            <msName>Account of <rs ref="http://ereed.library.utoronto.ca/eats/entity/39689/" type="Person_Commoner">Robert Blaby</rs>, Bishop's <rs ref="http://ereed.library.utoronto.ca/eats/entity/10976/" type="Collective_Occupation">Bailiff</rs></msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1420–1</date>; Latin; single membrane; part of a group of 12
                             unbound membranes for the same date, probably originally joined at the
@@ -618,7 +618,7 @@
                             <settlement>Lichfield</settlement>
                             <repository sameAs="#lichfield-cathedral-library"/>
                             <idno type="shelfmark">Chapter Act Books No. 3</idno>
-                            <msName>Dean and Chapter Act Book</msName>
+                            <msName>Dean and Chapter Act Book</msName><!-- kc: not sure about "dean and chapter" -->
                         </msIdentifier>
                         <ab type="techDesc"><date>1490–1523</date>; Latin; parchment and paper; ii (parchment,
                             contains title page) + 142 (paper) + v (parchment, contains index);
@@ -632,7 +632,7 @@
                             <settlement>Lichfield</settlement>
                             <repository sameAs="#LRO"/>
                             <idno type="shelfmark">D 30/7/1/1</idno>
-                            <msName>Lichfield Cathedral Sacrist's Roll</msName>
+                            <msName>Lichfield Cathedral Sacrist's Roll</msName><!-- kc: pending reply from SB -->
                         </msIdentifier>
                         <ab type="techDesc"><date>1342</date>; Latin; parchment; single membrane; 700mm x 280mm.</ab>
                     </msDesc>
@@ -694,7 +694,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">DL 42/13</idno>
-                            <msName>Letter from John of Gaunt's Register Book</msName>
+                            <msName>Letter from <rs ref="http://ereed.library.utoronto.ca/eats/entity/13153/" type="Person_Royalty">John of Gaunt's</rs> Register Book</msName>
                         </msIdentifier>
                         <ab type="edDesc">John of Gaunt's two register books contain various orders, including
                             orders for payments, letters, and many other types of official records
@@ -745,7 +745,7 @@
                             <settlement>Stafford</settlement>
                             <repository sameAs="#STRO"/>
                             <idno type="shelfmark">Q/SR/26, item 1</idno>
-                            <msName>Information Lodged against Thomas Greene, Tailor</msName>
+                            <msName>Information Lodged against <rs ref="http://ereed.library.utoronto.ca/eats/entity/14017/" type="Person_Male">Thomas Greene</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/14062/" type="Collective_Occupation">Tailor</rs></msName>
                         </msIdentifier>
                         <ab type="techDesc">Epiphany <date>1590–1</date>; English; paper; single sheet; 405mm x
                             295mm; damaged at right edge resulting in loss of text; repaired and
@@ -758,7 +758,7 @@
                         <settlement>Stafford</settlement>
                         <repository sameAs="#STRO"/>
                         <idno type="shelfmark">D1399/1</idno>
-                        <msName>St Mary's Parish Register</msName>
+                        <msName>St Mary's Parish Register</msName><!-- kc: do I tag "St Mary's parish" as an ecclesiatical area? -->
                     </msIdentifier>
                     <ab type="techDesc"><date>1559—1667</date>; Latin, English; parchment; ii + 198 + ii; 322mm x 220mm; modern pencil foliation; original calfskin binding repaired; rebound in the 20th century with new fly leaves; '1559—1666' on spine and front cover.</ab>          
                 </msDesc>
@@ -768,7 +768,7 @@
                             <settlement>Worcester</settlement>
                             <repository sameAs="#WRO"/>
                             <idno type="shelfmark">BA 2760</idno>
-                            <msName>Diocese of Worcester Visitation Act Book</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/39739/" type="Place_EcclesiasticalArea">Diocese of Worcester</rs> Visitation Act Book</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1613–17</date>; Latin, some English; paper; x + 444 + x; 310mm x
                             190mm; foliated 1–444; modern half-leather binding (1963), title on
