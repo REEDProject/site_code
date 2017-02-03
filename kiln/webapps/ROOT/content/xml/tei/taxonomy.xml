@@ -343,7 +343,7 @@
                             <settlement>London</settlement>
                             <repository sameAs="#BL"/>
                             <idno type="shelfmark">Cotton MS Vespas. E. iii</idno>
-                            <msName>Annals of Burton upon Trent Abbey</msName><!-- kc: do I tag Burton upon Trent or the Abbey? -->
+                            <msName>Annals of <rs ref="http://ereed.library.utoronto.ca/eats/entity/39449/" type="Place_Feature">Burton upon Trent Abbey</rs></msName><!-- kc: do I tag Burton upon Trent or the Abbey? -->
                         </msIdentifier>
                         <ab type="techDesc"><date>1263</date>; Latin; parchment; vi +214+ v; 220mm x 160mm; modern
                             pencil foliation supersedes several earlier foliations in ink; composite
@@ -356,7 +356,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">STAC 8/104/20</idno>
-                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/5448/ http://ereed.library.utoronto.ca/eats/entity/5544/" type="Person_Commoner">Criples</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/5605/" type="Person_Male">Lambe</rs></msName><!-- kc: ask Carolyn about name spelling; majority spelling is "Crippell" -->
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/5448/ http://ereed.library.utoronto.ca/eats/entity/5544/" type="Person_Commoner">Crippells</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/5605/" type="Person_Male">Lambe</rs></msName><!-- kc: ask Carolyn about name spelling; majority spelling is "Crippell" -->
                         </msIdentifier>
                         <ab type="techDesc"><date>1619</date>; English; parchment; 2 membranes, sewn together at the
                             upper left corner; mb [1] (Answer): 335mm x 645mm, mb 2 (Bill): 280mm x
