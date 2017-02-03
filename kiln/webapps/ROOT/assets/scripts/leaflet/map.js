@@ -1,3 +1,27 @@
+function getRelatedPopupContent(feature) {
+    /* Returns the HTML content of the popup for the supplied feature,
+     * that is a the source of a related record. */
+    var content = 'Location: <a href="' + feature.properties.eats_url +
+        '">' + feature.properties.eats_name + '</a><br>Record: <a href="' +
+        feature.properties.record_url + '">' + feature.properties.record_title
+        + '</a>';
+    if (feature.properties.LOC_NAME != feature.properties.LABELS) {
+        content = 'Site: ' + feature.properties.LABELS + '<br>' + content;
+    }
+    return content;
+}
+
+function getSourcePopupContent(feature) {
+    /* Returns the HTML content of the popup for the supplied feature,
+     * that is the source location. */
+    var content = 'Location: ' + feature.properties.LOC_NAME;
+    if (feature.properties.LOC_NAME != feature.properties.LABELS) {
+        content = 'Site: ' + feature.properties.LABELS + '<br>' + content;
+    }
+    return content;
+}
+
+
 var map = L.map('map', {
     center: [52.7, -1.77],
     maxBounds: [[46.5, -20.5], [62.0, 7.0]],
@@ -73,16 +97,7 @@ var related_geoJsonLayer = L.Proj.geoJson(null, {
         return L.marker(latlng, {icon: related_location_Icon})
     },
     onEachFeature: function(feature, layer) {
-        var popupContent;
-        if (feature.properties.LOC_NAME == feature.properties.LABELS) {
-            //popupContent = 'Location: ' + feature.properties.LOC_NAME;
-            popupContent = 'Location: <a href="' + feature.properties.eats_url + '">' + feature.properties.eats_name + '</a><br>Record: <a href="' + feature.properties.record_url + '">' + feature.properties.record_title + '</a>';
-        }
-        else {
-            popupContent = 'Site: ' + feature.properties.LABELS +
-                '<br>' + 'Location: <a href="' + feature.properties.eats_url + '">' + feature.properties.eats_name + '</a><br>Record: <a href="' + feature.properties.record_url + '">' + feature.properties.record_title + '</a>';
-        }
-        layer.bindPopup(popupContent);
+        layer.bindPopup(getRelatedPopupContent(feature));
     }
 });
 
@@ -95,15 +110,7 @@ var source_geoJsonLayer = L.Proj.geoJson(null, {
         return L.marker(latlng, {icon: source_location_Icon})
     },
     onEachFeature: function(feature, layer) {
-        var popupContent;
-        if (feature.properties.LOC_NAME == feature.properties.LABELS) {
-            popupContent = 'Location: ' + feature.properties.LOC_NAME;
-        }
-        else {
-            popupContent = 'Site: ' + feature.properties.LABELS +
-                '<br>' + 'Location: ' + feature.properties.LOC_NAME;
-        }
-        layer.bindPopup(popupContent);
+        layer.bindPopup(getSourcePopupContent(feature));
     }
 });
 
@@ -118,8 +125,7 @@ var region_geoJsonLayer = L.Proj.geoJson(null, {
         var popupContent;
         if (feature.properties && feature.properties.regiontype) {
             var popupContent = 'Source Region: ' + feature.properties.NAME +
-                '<br>' +
-                'Region Type: ' + feature.properties.regiontype;
+                '<br>Region Type: ' + feature.properties.regiontype;
         }
         layer.bindPopup(popupContent);
     }
