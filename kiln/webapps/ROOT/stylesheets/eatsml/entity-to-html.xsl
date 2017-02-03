@@ -6,7 +6,29 @@
 
   <xsl:import href="../defaults.xsl" />
 
+  <xsl:import href="cocoon://_internal/url/reverse.xsl" />
+
   <xsl:variable name="entity" select="/aggregation/eats:entities/eats:entity[@selected='selected']" />
+
+  <xsl:template match="feature|geojson" mode="geojson">
+    <xsl:apply-templates mode="geojson" />
+  </xsl:template>
+
+  <xsl:template match="record_title" mode="geojson">
+    <xsl:param name="record-title" tunnel="yes" />
+    <xsl:value-of select="$record-title" />
+  </xsl:template>
+
+  <xsl:template match="record_url" mode="geojson">
+    <xsl:param name="record-id" tunnel="yes" />
+    <xsl:value-of select="kiln:url-for-match('ereed-record-display-html', ($record-id), 0)" />
+  </xsl:template>
+
+  <xsl:template match="@*|node()" mode="geojson">
+    <xsl:copy>
+      <xsl:apply-templates mode="geojson" select="@*|node()" />
+    </xsl:copy>
+  </xsl:template>
 
   <xsl:template name="create-related-location-variable">
     <xsl:param name="records" />
@@ -19,7 +41,10 @@
           "features":[</xsl:text>
         </xsl:if>
         <xsl:variable name="geojson" select="id(str[@name='record_location_id'])/geojson" />
-        <xsl:value-of select="$geojson" />
+        <xsl:apply-templates mode="geojson" select="$geojson">
+          <xsl:with-param name="record-id" select="str[@name='document_id']" tunnel="yes" />
+          <xsl:with-param name="record-title" select="arr[@name='document_title']/str[1]" tunnel="yes" />
+        </xsl:apply-templates>
         <xsl:choose>
           <xsl:when test="position() = last()">
             <xsl:text>]}</xsl:text>

@@ -156,7 +156,10 @@
           <xsl:with-param name="entity_id" select="$entity_id" />
         </xsl:apply-templates>
       </relationships>
-      <xsl:apply-templates select="eats:subject_identifiers/eats:subject_identifier" />
+      <xsl:apply-templates select="eats:subject_identifiers/eats:subject_identifier">
+        <xsl:with-param name="name" select="$name" tunnel="yes" />
+        <xsl:with-param name="eats-id" select="@eats_id" tunnel="yes" />
+      </xsl:apply-templates>
     </xsl:copy>
   </xsl:template>
 
@@ -243,7 +246,7 @@
       <xsl:when test="$geojson">
         <geojson xml:id="{$id}">
           <xsl:copy-of select="$geojson/@type" />
-          <xsl:value-of select="$geojson" />
+          <xsl:apply-templates mode="geojson" select="$geojson" />
         </geojson>
       </xsl:when>
       <xsl:otherwise>
@@ -255,8 +258,24 @@
     </xsl:choose>
   </xsl:template>
 
+  <xsl:template match="eats_name" mode="geojson">
+    <xsl:param name="name" tunnel="yes" />
+    <xsl:value-of select="$name" />
+  </xsl:template>
+
+  <xsl:template match="eats_url" mode="geojson">
+    <xsl:param name="eats-id" tunnel="yes" />
+    <xsl:value-of select="kiln:url-for-match('ereed-entity-display-html', ($eats-id), 0)" />
+  </xsl:template>
+
   <xsl:template match="@*">
     <xsl:copy/>
+  </xsl:template>
+
+  <xsl:template match="@*|node()" mode="geojson">
+    <xsl:copy>
+      <xsl:apply-templates mode="geojson" select="@*|node()" />
+    </xsl:copy>
   </xsl:template>
 
   <xsl:template name="assemble-date">
