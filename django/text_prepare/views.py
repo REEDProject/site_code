@@ -4,12 +4,10 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt, csrf_protect
 
-from .word_updater import update_word
 from .document import Document
 from .exceptions import (TextPrepareDocumentError,
                          TextPrepareDocumentValidationError)
-from .forms import UpdateDocumentForm, ValidateDocumentForm, \
-    ConvertDocumentForm
+from .forms import ValidateDocumentForm, ConvertDocumentForm
 
 
 @login_required
@@ -34,11 +32,13 @@ def _convert(request):
         if form.is_valid():
             line_length = form.cleaned_data['line_length']
             base_id = form.cleaned_data['base_id']
-            doc = request.FILES['document']
-            context['filename'] = doc.name
+            docs = request.FILES.getlist('documents')
             document = Document(base_id)
             try:
-                tei = document.convert(doc.temporary_file_path(), line_length)
+                for doc in docs:
+                    context['filename'] = doc.name
+                    document.convert(doc.temporary_file_path(), line_length)
+                    tei = document.generate()
                 return HttpResponse(tei, content_type='text/xml')
             except TextPrepareDocumentValidationError as error:
                 context['invalid'] = True
@@ -49,30 +49,6 @@ def _convert(request):
         form = ConvertDocumentForm()
     context['form'] = form
     return render(request, 'text_prepare/convert.html', context)
-
-
-@login_required
-@csrf_exempt
-def update(request):
-    """View to update a supplied Word document to Word (docx) format with
-    modified @-code syntax."""
-    # Ensure that any uploaded file is stored as a temporary file.
-    request.upload_handlers = [TemporaryFileUploadHandler()]
-    return _update(request)
-
-
-@csrf_protect
-def _update(request):
-    if request.method == 'POST':
-        form = UpdateDocumentForm(request.POST, request.FILES)
-        if form.is_valid():
-            doc = request.FILES['document']
-            updated_doc = update_word(doc.temporary_file_path())
-            return HttpResponse(updated_doc, content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
-    else:
-        form = UpdateDocumentForm()
-    context = {'form': form}
-    return render(request, 'text_prepare/update.html', context)
 
 
 @login_required
@@ -97,12 +73,13 @@ def _validate(request):
         form = ValidateDocumentForm(request.POST, request.FILES)
         if form.is_valid():
             line_length = form.cleaned_data['line_length']
-            doc = request.FILES['document']
-            context['filename'] = doc.name
+            docs = request.FILES.getlist('documents')
             context['validated'] = True
             document = Document()
             try:
-                document.validate(doc.temporary_file_path(), line_length)
+                for doc in docs:
+                    context['filename'] = doc.name
+                    document.validate(doc.temporary_file_path(), line_length)
             except TextPrepareDocumentError as error:
                 context['error'] = error
     else:

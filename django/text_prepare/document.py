@@ -8,11 +8,12 @@ import tempfile
 import textwrap
 import unicodedata
 
-import pyparsing as pp
+import docx
 from lxml import etree
+import pyparsing as pp
 
 from .document_parser import DocumentParser
-from .exceptions import (TextPrepareDocumentTextExtractionError,
+from .exceptions import (TextPrepareDocumentUpdateError,
                          TextPrepareDocumentValidationError)
 
 
@@ -38,16 +39,12 @@ TEI_SKELETON = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records
 
 class Document:
 
-    """Represents a Word document and provides methods to validate its
-    contents and convert it into TEI XML."""
-
-    # The env argument allows for the command to run (and work) while
-    # an interactive instance of LibreOffice is open.
-    convert_command = '''soffice -env:UserInstallation=file://{} --headless
-                         --cat {}'''
+    """Represents a complete records TEI XML document and provides methods to
+    validate and convert one or more Word documents into XML."""
 
     def __init__(self, base_id=''):
         self._base_id = base_id
+        self._results = []
 
     def convert(self, word_file_path, line_length):
         """Returns the content of the supplied Word document converted into
@@ -65,11 +62,45 @@ class Document:
 
         """
         text = self._get_text(word_file_path, line_length)
-        results = self._validate(text)
-        return self._convert(results)
+        self._results.append(''.join(self._validate(text)))
 
-    def _convert(self, results):
-        text = TEI_SKELETON.format(''.join(results))
+    def _convert_at_codes(self, text):
+        """Returns `text` with @-code markup converted into the form required
+        by the grammar.
+
+        :param text: text to convert
+        :type text: `str`
+        :rtype: `str`
+
+        """
+        # Change the format of closing @-codes from '@x \' to '@x/'. The
+        # original whitespace can cause problems in the parsing, but the
+        # editors are used to that form.
+        codes = [
+            'a', 'ab', 'b', 'c', 'cl', 'cn', 'cnx', 'cor', 'cr', 'ct', 'cym',
+            'deu', 'e', 'en', 'eng', 'ex', 'f', 'fra', 'g', 'gla', 'gmh',
+            'gml', 'grc', 'i', 'ita', 'j', 'k', 'l', 'lat', 'li', 'm', 'md',
+            'p', 'pc', 'pd', 'por', 'q', 'r', 's', 'sc', 'sd', 'sh', 'sl',
+            'sn', 'snc', 'snr', 'spa', 'sr', 'ss', 'st', 'tr', 'ul', 'wlm',
+            'x', 'xc', 'xno']
+        for code in codes:
+            text = text.replace('@{} \\'.format(code), '@{}/'.format(code))
+        return text
+
+    def _convert_to_docx(self, doc_path):
+        with tempfile.TemporaryDirectory() as env_fh:
+            command = '''soffice -env:UserInstallation=file://{} --headless
+                         --convert-to docx {}'''.format(env_fh, doc_path)
+            try:
+                subprocess.check_call(shlex.split(command),
+                                      cwd=os.path.dirname(doc_path))
+            except subprocess.CalledProcessError as e:
+                msg = 'Failed to convert Word document to docx format: {}'
+                raise TextPrepareDocumentUpdateError(msg.format(e.output))
+        return os.path.splitext(doc_path)[0] + '.docx'
+
+    def generate(self):
+        text = TEI_SKELETON.format(''.join(self._results))
         text = unicodedata.normalize('NFC', text)
         text = self._postprocess_text(text)
         # Do some cosmetic changes that are too hard to do with XSLT
@@ -79,11 +110,7 @@ class Document:
         return text.encode('utf-8')
 
     def _get_text(self, file_path, line_length):
-        """Returns the plain text conversion of the file at `file_path`.
-
-        The file at `file_path` is converted using LibreOffice, and is
-        therefore expected to be in a format that LO can usefully deal
-        with.
+        """Returns the plain text conversion of the Word file at `file_path`.
 
         :param file_path: path to file to extract text from
         :type file_path: `str`
@@ -92,24 +119,18 @@ class Document:
         :rtype: `str`
 
         """
-        with tempfile.TemporaryDirectory() as env_fh:
-            command = self.convert_command.format(env_fh, file_path)
-            env = {'LC_ALL': 'en_US.UTF-8', 'LANGUAGE': 'en_US.UTF-8'}
-            message = 'Failed to extract text from the document: {}'
-            try:
-                text = subprocess.check_output(shlex.split(command), env=env)
-            except subprocess.CalledProcessError as e:
-                raise TextPrepareDocumentTextExtractionError(message.format(
-                    e.output))
-            except Exception as e:
-                # In addition to subprocess.CalledProcessError,
-                # FileNotFoundError might be raised (if the command is
-                # not available) and quite possibly others. Given that
-                # any failure here should be handled and reported in
-                # the same way, just catch Exception.
-                raise TextPrepareDocumentTextExtractionError(message.format(e))
-        text = text.decode('utf-8')
-        return self._wrap_text(text, line_length)
+        text = []
+        try:
+            doc = docx.Document(docx=file_path)
+        except ValueError:
+            # doc_file may point to a non-docx file, in which case try to
+            # convert it.
+            docx_path = self._convert_to_docx(file_path)
+            doc = docx.Document(docx=docx_path)
+            os.remove(docx_path)
+        for paragraph in doc.paragraphs:
+            text.append(self._update_text(paragraph.text))
+        return self._wrap_text('\n'.join(text), line_length)
 
     def _postprocess_text(self, text):
         """Returns `text` modified by applying various XSLT transformations to
@@ -126,11 +147,25 @@ class Document:
                                MASSAGE_FOOTNOTE_XSLT_PATH, REMOVE_AB_XSLT_PATH)
         return etree.tostring(tree, encoding='unicode', pretty_print=True)
 
+    def _replace_word_chars(self, text):
+        text = text.replace('‑', '-')
+        text = text.replace(' ', ' ')
+        text = text.replace('‘', "'")
+        text = text.replace('’', "'")
+        text = text.replace('“', '"')
+        text = text.replace('”', '"')
+        return text
+
     def _transform(self, tree, *xslt_paths):
         for path in xslt_paths:
             transform = etree.XSLT(etree.parse(path))
             tree = transform(tree, base_id="'{}'".format(self._base_id))
         return tree
+
+    def _update_text(self, text):
+        text = self._replace_word_chars(text)
+        text = self._convert_at_codes(text)
+        return text
 
     def validate(self, word_file_path, line_length):
         """Raises an exception if this document does not conform to the @-code
