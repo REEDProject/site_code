@@ -47,7 +47,7 @@ class DocumentParser:
         content.setWhitespaceChars('')
         content.setDefaultWhitespaceChars('')
         white = pp.Word(' ' + '\n')
-        punctuation_chars = '. , ; : \' " ( ) * / # $ % + - ? – ‑'
+        punctuation_chars = '. , ; : \' " ( ) * / # $ % + - ? –'
         punctuation = pp.oneOf(punctuation_chars)
         rich_content = pp.Word(pp.alphanums + ' \n&' + punctuation_chars)
         rich_content.setWhitespaceChars('')
@@ -70,7 +70,7 @@ class DocumentParser:
         blank_code = pp.Literal('{(blank)}').setParseAction(self._pa_blank)
         capitulum_code = pp.Literal('@C').setParseAction(self._pa_capitulum)
         caret_code = pp.Literal('^').setParseAction(self._pa_caret)
-        cedilla_code = pp.Literal('@?') + pp.oneOf('c')
+        cedilla_code = pp.Literal('@?') + vowels
         cedilla_code.setParseAction(self._pa_cedilla)
         circumflex_code = pp.Literal('@^') + vowels
         circumflex_code.setParseAction(self._pa_circumflex)
@@ -343,15 +343,15 @@ class DocumentParser:
         print_doc_desc.setParseAction(self._pa_doc_desc)
         abbreviation = pp.nestedExpr('@ab\\', '@ab/', content=pp.Word(
             pp.alphanums))
-        expansion = pp.nestedExpr('@ex\\', '@ex/', content=pp.OneOrMore(
-            content ^ punctuation))
+        expansion = pp.nestedExpr('@ex\\', '@ex/', content=rich_content)
         county = pp.nestedExpr('@ct\\', '@ct/', content=content)
         place_code = blank + abbreviation + blank + expansion + blank + \
             county + blank
         place_code.setParseAction(self._pa_place_code)
         place_codes = pp.nestedExpr('@pc\\', '@pc/',
                                     content=pp.OneOrMore(place_code))
-        preamble = (ms_doc_desc ^ print_doc_desc) - blank - place_codes
+        preamble = (ms_doc_desc ^ print_doc_desc) - blank - pp.Optional(
+            comment_code + blank) - place_codes
         preamble.setParseAction(self._pa_preamble)
         record = blank + record_heading + pp.ZeroOrMore(white) + \
             transcription + pp.Optional(translation) + \
