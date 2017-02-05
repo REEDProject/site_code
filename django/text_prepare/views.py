@@ -38,8 +38,9 @@ def _convert(request):
                 for doc in docs:
                     context['filename'] = doc.name
                     document.convert(doc.temporary_file_path(), line_length)
-                    tei = document.generate()
-                return HttpResponse(tei, content_type='text/xml')
+                    zip_archive = document.generate()
+                return HttpResponse(zip_archive,
+                                    content_type='application/zip')
             except TextPrepareDocumentValidationError as error:
                 context['invalid'] = True
                 context['error'] = error

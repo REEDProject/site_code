@@ -1,5 +1,6 @@
 """Module containing the Document class."""
 
+import io
 import os.path
 import re
 import shlex
@@ -7,6 +8,7 @@ import subprocess
 import tempfile
 import textwrap
 import unicodedata
+import zipfile
 
 import docx
 from lxml import etree
@@ -29,8 +31,12 @@ ADD_HEADER_XSLT_PATH = os.path.join(XSLT_DIR, 'add_header.xsl')
 ADD_ID_XSLT_PATH = os.path.join(XSLT_DIR, 'add_id.xsl')
 MASSAGE_FOOTNOTE_XSLT_PATH = os.path.join(XSLT_DIR, 'massage_footnote.xsl')
 REMOVE_AB_XSLT_PATH = os.path.join(XSLT_DIR, 'remove_ab.xsl')
+TIDY_BIBLS_XSLT_PATH = os.path.join(XSLT_DIR, 'tidy_bibls.xsl')
 
-TEI_SKELETON = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/">
+BIBL_SKELETON = '''<listBibl xmlns="http://www.tei-c.org/ns/1.0">
+{}
+</listBibl>'''
+RECORDS_SKELETON = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/">
   <text>
     <group>{}</group>
   </text>
@@ -44,7 +50,8 @@ class Document:
 
     def __init__(self, base_id=''):
         self._base_id = base_id
-        self._results = []
+        self._doc_descs = []
+        self._records = []
 
     def convert(self, word_file_path, line_length):
         """Returns the content of the supplied Word document converted into
@@ -62,7 +69,9 @@ class Document:
 
         """
         text = self._get_text(word_file_path, line_length)
-        self._results.append(''.join(self._validate(text)))
+        results = self._validate(text)
+        self._doc_descs.append(''.join(results.doc_desc))
+        self._records.append(''.join(results.record))
 
     def _convert_at_codes(self, text):
         """Returns `text` with @-code markup converted into the form required
@@ -100,14 +109,32 @@ class Document:
         return os.path.splitext(doc_path)[0] + '.docx'
 
     def generate(self):
-        text = TEI_SKELETON.format(''.join(self._results))
+        bibls = self._generate_bibls()
+        records = self._generate_tei()
+        archive = io.BytesIO()
+        bibl_filename = 'taxonomy-excerpt.xml'
+        records_filename = '{}.xml'.format(self._base_id)
+        with zipfile.ZipFile(archive, 'w') as zip_file:
+            zip_file.writestr(bibl_filename, bibls.encode('utf-8'))
+            zip_file.writestr(records_filename, records.encode('utf-8'))
+        return archive.getvalue()
+
+    def _generate_bibls(self):
+        text = BIBL_SKELETON.format('\n'.join(self._doc_descs))
+        tree = etree.ElementTree(etree.fromstring(text))
+        tree = self._transform(tree, TIDY_BIBLS_XSLT_PATH)
+        return etree.tostring(tree, encoding='unicode', pretty_print=True)
+        return text
+
+    def _generate_tei(self):
+        text = RECORDS_SKELETON.format(''.join(self._records))
         text = unicodedata.normalize('NFC', text)
         text = self._postprocess_text(text)
         # Do some cosmetic changes that are too hard to do with XSLT
         # 1. This is rather dirty!
         text = re.sub(r'(<ab[^>]*>)[ \t\n\r\f\v]+', r'\1', text)
         text = re.sub(r'[ \t\n\r\f\v]+(</ab>)', r'\1', text)
-        return text.encode('utf-8')
+        return text
 
     def _get_text(self, file_path, line_length):
         """Returns the plain text conversion of the Word file at `file_path`.

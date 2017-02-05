@@ -51,6 +51,7 @@ class DocumentParser:
         punctuation = pp.oneOf(punctuation_chars)
         rich_content = pp.Word(pp.alphanums + ' \n&' + punctuation_chars)
         rich_content.setWhitespaceChars('')
+        rich_content.setParseAction(self._pa_rich_content)
         content.setDefaultWhitespaceChars('')
         integer = pp.Word(pp.nums)
         ignored = pp.oneOf('\ufeff').suppress()  # zero width no-break space
@@ -70,7 +71,7 @@ class DocumentParser:
         blank_code = pp.Literal('{(blank)}').setParseAction(self._pa_blank)
         capitulum_code = pp.Literal('@C').setParseAction(self._pa_capitulum)
         caret_code = pp.Literal('^').setParseAction(self._pa_caret)
-        cedilla_code = pp.Literal('@?') + vowels
+        cedilla_code = pp.Literal('@?') + (vowels ^ 'c')
         cedilla_code.setParseAction(self._pa_cedilla)
         circumflex_code = pp.Literal('@^') + vowels
         circumflex_code.setParseAction(self._pa_circumflex)
@@ -319,28 +320,46 @@ class DocumentParser:
         end_note_wrapper = blank + end_note + blank
         source_code = blank + pp.nestedExpr('@sc\\', '@sc/', content=pp.Word(
             pp.srange('[A-Z]'), exact=4))
+        source_code.setParseAction(self._pa_source_data)
         source_head = blank + pp.nestedExpr('@sh\\', '@sh/',
                                             content=rich_content)
+        source_head.setParseAction(self._pa_source_data)
         source_location = blank + pp.nestedExpr('@sl\\', '@sl/',
                                                 content=rich_content)
+        source_location.setParseAction(self._pa_source_data)
         source_repository = blank + pp.nestedExpr('@sr\\', '@sr/',
                                                   content=rich_content)
+        source_repository.setParseAction(self._pa_source_data)
         source_shelfmark = blank + pp.nestedExpr('@ss\\', '@ss/',
                                                  content=rich_content)
+        source_shelfmark.setParseAction(self._pa_source_data)
         source_date = blank + pp.nestedExpr('@st\\', '@st/',
                                             content=rich_content)
+        source_date.setParseAction(self._pa_source_data)
         ms_source_data = source_code - source_head - source_location - \
-            source_repository - source_shelfmark - source_date
-        ms_doc_desc_contents = pp.Optional(enclosed) + ms_source_data - \
-            enclosed
+            source_repository - source_shelfmark - pp.Suppress(source_date)
+        ms_source_data.setParseAction(self._pa_ms_source_data)
+        ms_ed_desc = enclosed.copy().setParseAction(self._pa_ms_ed_desc)
+        ms_tech_desc = enclosed.copy().setParseAction(self._pa_ms_tech_desc)
+        ms_doc_desc_contents = pp.Optional(ms_ed_desc) + ms_source_data - \
+            ms_tech_desc
         ms_doc_desc = pp.nestedExpr('@md\\', '@md/',
                                     content=ms_doc_desc_contents)
-        ms_doc_desc.setParseAction(self._pa_doc_desc)
-        print_doc_desc_contents = pp.Optional(enclosed) + source_code - \
-            source_head - enclosed
+        ms_doc_desc = ms_doc_desc.setResultsName('doc_desc',
+                                                 listAllMatches=True)
+        ms_doc_desc.setParseAction(self._pa_ms_doc_desc)
+        print_source_data = source_code - source_head
+        print_source_data.setParseAction(self._pa_print_source_data)
+        print_ed_desc = enclosed.copy().setParseAction(self._pa_print_ed_desc)
+        print_tech_desc = enclosed.copy().setParseAction(
+            self._pa_print_tech_desc)
+        print_doc_desc_contents = pp.Optional(print_ed_desc) + \
+            print_source_data - print_tech_desc
         print_doc_desc = pp.nestedExpr('@pd\\', '@pd/',
                                        content=print_doc_desc_contents)
-        print_doc_desc.setParseAction(self._pa_doc_desc)
+        print_doc_desc = print_doc_desc.setResultsName('doc_desc',
+                                                       listAllMatches=True)
+        print_doc_desc.setParseAction(self._pa_print_doc_desc)
         abbreviation = pp.nestedExpr('@ab\\', '@ab/', content=pp.Word(
             pp.alphanums))
         expansion = pp.nestedExpr('@ex\\', '@ex/', content=rich_content)
@@ -352,10 +371,11 @@ class DocumentParser:
                                     content=pp.OneOrMore(place_code))
         preamble = (ms_doc_desc ^ print_doc_desc) - blank - pp.Optional(
             comment_code + blank) - place_codes
-        preamble.setParseAction(self._pa_preamble)
-        record = blank + record_heading + pp.ZeroOrMore(white) + \
+        record = (blank + record_heading + pp.ZeroOrMore(white) + \
             transcription + pp.Optional(translation) + \
-            pp.Optional(collation_notes) + pp.Optional(end_note_wrapper)
+            pp.Optional(collation_notes) + \
+            pp.Optional(end_note_wrapper)).setResultsName('record',
+                                                          listAllMatches=True)
         record.setParseAction(self._pa_record)
         return pp.StringStart() + blank + preamble + pp.OneOrMore(record) \
             + pp.StringEnd()
@@ -472,9 +492,6 @@ class DocumentParser:
     def _pa_deleted(self, s, loc, toks):
         return ['<del>', ''.join(toks[0]), '</del>']
 
-    def _pa_doc_desc(self, s, loc, toks):
-        return []
-
     def _pa_dot_over(self, s, loc, toks):
         return ['{}\N{COMBINING DOT ABOVE}'.format(toks[1])]
 
@@ -590,6 +607,34 @@ class DocumentParser:
     def _pa_macron(self, s, loc, toks):
         return ['{}\N{COMBINING MACRON}'.format(toks[1])]
 
+    def _pa_ms_doc_desc(self, s, loc, toks):
+        if len(toks[0]) < 4:
+            toks[0].insert(0, '')
+        ed_desc, source_code, ms_identifier, tech_desc = toks[0]
+        return '''<msDesc xml:id="{}">
+{}
+{}{}
+</msDesc>'''.format(source_code, ms_identifier, ed_desc, tech_desc)
+
+    def _pa_ms_ed_desc(self, s, loc, toks):
+        text = ''.join(toks).strip()
+        output = ['']
+        if text:
+            output = ['<ab type="edDesc">{}</ab>\n'.format(text)]
+        return output
+
+    def _pa_ms_source_data(self, s, loc, toks):
+        source_code, ms_name, settlement, repository, shelfmark = toks
+        return [source_code, '''<msIdentifier>
+<settlement>{}</settlement>
+<repository>{}</repository>
+<idno type="shelfmark">{}</idno>
+<msName>{}</msName>
+</msIdentifier>'''.format(settlement, repository, shelfmark, ms_name)]
+
+    def _pa_ms_tech_desc(self, s, loc, toks):
+        return '<ab type="techDesc">{}</ab>'.format(''.join(toks).strip())
+
     def _pa_oe(self, s, loc, toks):
         return ['\N{LATIN SMALL LIGATURE OE}']
 
@@ -606,18 +651,38 @@ class DocumentParser:
         self._place_codes[toks[0][0]] = toks[1][0]
         return []
 
+    def _pa_print_doc_desc(self, s, loc, toks):
+        if len(toks[0]) < 4:
+            toks[0].insert(0, '')
+        ed_desc, source_code, ed_title, tech_desc = toks[0]
+        return '''<bibl xml:id="{}">
+{}
+{}{}
+</bibl>'''.format(source_code, ed_title, ed_desc, tech_desc)
+
+    def _pa_print_ed_desc(self, s, loc, toks):
+        text = ''.join(toks).strip()
+        output = ['']
+        if text:
+            output = ['<note type="edDesc"><p>{}</p></note>\n'.format(text)]
+        return output
+
+    def _pa_print_source_data(self, s, loc, toks):
+        return [toks[0], '<title type="edName">{}</title>'.format(toks[1])]
+
+    def _pa_print_tech_desc(self, s, loc, toks):
+        return '<note type="techDesc"><p>{}</p></note>'.format(
+            ''.join(toks).strip())
+
     def _pa_pound(self, s, loc, toks):
         return ['\N{POUND SIGN}']
-
-    def _pa_preamble(self, s, loc, toks):
-        return []
 
     def _pa_raised(self, s, loc, toks):
         return ['\N{MIDDLE DOT}']
 
     def _pa_record(self, s, loc, toks):
-        return ['<text type="record">\n<body xml:lang="{}">'
-                '\n{}</body>\n</text>'.format(toks[0], ''.join(toks[1:]))]
+        return '<text type="record">\n<body xml:lang="{}">' \
+            '\n{}</body>\n</text>'.format(toks[0], ''.join(toks[1:]))
 
     def _pa_record_heading(self, s, loc, toks):
         place, date, record, language_code = toks[0]
@@ -666,6 +731,9 @@ class DocumentParser:
         # lines in the source?
         return ['<lb />']
 
+    def _pa_rich_content(self, s, loc, toks):
+        return [toks[0].replace('&', '&amp;')]
+
     def _pa_right_marginale(self, s, loc, toks):
         return ['<note type="marginal" place="margin_right">',
                 ''.join(toks[0]), '</note>']
@@ -692,6 +760,9 @@ class DocumentParser:
 
     def _pa_small_caps(self, s, loc, toks):
         return ['<hi rend="smallcaps">', ''.join(toks[0]), '</hi>']
+
+    def _pa_source_data(self, s, loc, toks):
+        return ''.join(toks[0]).strip()
 
     def _pa_special_v(self, s, loc, toks):
         return ['\N{LATIN SMALL LETTER MIDDLE-WELSH V}']

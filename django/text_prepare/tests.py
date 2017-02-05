@@ -1,10 +1,12 @@
+import os.path
+
 from django.test import TestCase
 
 from lxml import etree
 
 from .document import (ADD_AB_XSLT_PATH, ADD_HEADER_XSLT_PATH,
                        ADD_ID_XSLT_PATH, Document, MASSAGE_FOOTNOTE_XSLT_PATH,
-                       REMOVE_AB_XSLT_PATH)
+                       REMOVE_AB_XSLT_PATH, TIDY_BIBLS_XSLT_PATH)
 from .document_parser import DocumentParser
 
 
@@ -44,7 +46,7 @@ It spans multiple paragraphs.!
 @ss\\D/A2/c.54@ss/
 @st\\Epiphany, 1609@st/; this is the technical paragraph. Latin and English; paper; 0+389+0 leaves.@md/\n
 @pc\\@ab\\BPA@ab/ @ex\\Boring Place Anyway@ex/ @ct\\Staffordshire@ct/@pc/''' + text
-        actual = ''.join(self.parser.parse(text))
+        actual = ''.join(self.parser.parse(text).record)
         self.assertEqual(actual, expected)
 
     def test_acute(self):
@@ -167,81 +169,6 @@ Test.
         text = 'some [deleted] text'
         expected = 'some <del>deleted</del> text'
         self._check_conversion(text, expected)
-
-    def test_ms_doc_desc(self):
-        # No prose paragraph.
-        text = '''@md\\@sc\\ABCD@sc/
-        @sh\\Heading@sh/
-        @sl\\Bognor Regis@sl/
-        @sr\\Boris's Borough Books & Records@sr/
-        @ss\\127.43#61-4/AN@ss/
-        @st\\1609@st/
-        @md/
-        @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/@pc/
-@h\\ABC!1532!ABCD!eng\\!
-@w\\f 124 {(19 November)}\\!
-Test.'''
-        expected = '''<text type="record">
-<body xml:lang="eng">
-<head><rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
-<div type="transcription">
-<div>
-<head>f 124 <supplied>(19 November)</supplied></head>
-<pb n="124" type="folio" />
-Test.
-</div>
-</div>
-</body>
-</text>'''
-        self._check_conversion(text, expected, doc_desc=False, heading=False,
-                               subheading=False)
-
-    def test_print_doc_desc(self):
-        # No prose paragraph.
-        text = '''@pd\\@sc\\ABCD@sc/
-        @sh\\Heading@sh/
-        Technical paragraph.
-        @pd/
-        @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/ @pc/
-@h\\ABC!1532!ABCD!eng\\!
-@w\\f 124 {(19 November)}\\!
-Test.'''
-        expected = '''<text type="record">
-<body xml:lang="eng">
-<head><rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
-<div type="transcription">
-<div>
-<head>f 124 <supplied>(19 November)</supplied></head>
-<pb n="124" type="folio" />
-Test.
-</div>
-</div>
-</body>
-</text>'''
-        self._check_conversion(text, expected, doc_desc=False, heading=False,
-                               subheading=False)
-        # Prose paragraph.
-        text = '''@pd\\Prose paragraph.
-        @sc\\ABCD@sc/
-        @sh\\Heading@sh/
-        Technical paragraph.
-        @pd/
-        @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/ @pc/
-@h\\ABC!1532!ABCD!eng\\!
-@w\\f 124 {(19 November)}\\!
-Test.'''
-        expected = '''<text type="record">
-<body xml:lang="eng">
-<head><rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
-<div type="transcription">
-<div>
-<head>f 124 <supplied>(19 November)</supplied></head>
-<pb n="124" type="folio" />
-Test.
-</div>
-</div>
-</body>
-</text>'''
 
     def test_dot_over(self):
         text = 'ove@.rdot'
@@ -387,6 +314,87 @@ A note.
             expected = 'b{}\N{COMBINING MACRON}t'.format(vowel)
             self._check_conversion(text, expected)
 
+    def test_ms_doc_desc(self):
+        # No prose paragraph.
+        text = '''@md\\@sc\\ABCD@sc/
+        @sh\\Heading@sh/
+        @sl\\Bognor Regis@sl/
+        @sr\\Boris's Borough Books & Records@sr/
+        @ss\\127.43#61-4/AN@ss/
+        @st\\1609@st/
+        Technical paragraph.
+        @md/
+        @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/@pc/
+@h\\ABC!1532!ABCD!eng\\!
+@w\\f 124 {(19 November)}\\!
+Test.'''
+        expected = '''<text type="record">
+<body xml:lang="eng">
+<head><rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<div type="transcription">
+<div>
+<head>f 124 <supplied>(19 November)</supplied></head>
+<pb n="124" type="folio" />
+Test.
+</div>
+</div>
+</body>
+</text>'''
+        self._check_conversion(text, expected, doc_desc=False, heading=False,
+                               subheading=False)
+        actual_desc = ''.join(self.parser.parse(text).doc_desc)
+        expected_desc = '''<msDesc xml:id="ABCD">
+<msIdentifier>
+<settlement>Bognor Regis</settlement>
+<repository>Boris's Borough Books &amp; Records</repository>
+<idno type="shelfmark">127.43#61-4/AN</idno>
+<msName>Heading</msName>
+</msIdentifier>
+<ab type="techDesc">Technical paragraph.</ab>
+</msDesc>'''
+        self.assertEqual(actual_desc, expected_desc)
+        # Prose paragraph.
+        text = '''@md\\
+        Prose paragraph.
+        @sc\\ABCD@sc/
+        @sh\\Heading@sh/
+        @sl\\Bognor Regis@sl/
+        @sr\\Boris's Borough Books & Records@sr/
+        @ss\\127.43#61-4/AN@ss/
+        @st\\1609@st/
+        Technical paragraph.
+        @md/
+        @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/@pc/
+@h\\ABC!1532!ABCD!eng\\!
+@w\\f 124 {(19 November)}\\!
+Test.'''
+        expected = '''<text type="record">
+<body xml:lang="eng">
+<head><rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<div type="transcription">
+<div>
+<head>f 124 <supplied>(19 November)</supplied></head>
+<pb n="124" type="folio" />
+Test.
+</div>
+</div>
+</body>
+</text>'''
+        self._check_conversion(text, expected, doc_desc=False, heading=False,
+                               subheading=False)
+        actual_desc = ''.join(self.parser.parse(text).doc_desc)
+        expected_desc = '''<msDesc xml:id="ABCD">
+<msIdentifier>
+<settlement>Bognor Regis</settlement>
+<repository>Boris's Borough Books &amp; Records</repository>
+<idno type="shelfmark">127.43#61-4/AN</idno>
+<msName>Heading</msName>
+</msIdentifier>
+<ab type="edDesc">Prose paragraph.</ab>
+<ab type="techDesc">Technical paragraph.</ab>
+</msDesc>'''
+        self.assertEqual(actual_desc, expected_desc)
+
     def test_OE(self):
         text = 'd@OEr'
         expected = 'd\N{LATIN CAPITAL LIGATURE OE}r'
@@ -417,6 +425,68 @@ Text that <pb />crosses a page.
         text = '@$20 thousand I never knew I had'
         expected = '\N{POUND SIGN}20 thousand I never knew I had'
         self._check_conversion(text, expected)
+
+    def test_print_doc_desc(self):
+        # No prose paragraph.
+        text = '''@pd\\@sc\\ABCD@sc/
+        @sh\\Heading@sh/
+        Technical paragraph.
+        @pd/
+        @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/ @pc/
+@h\\ABC!1532!ABCD!eng\\!
+@w\\f 124 {(19 November)}\\!
+Test.'''
+        expected = '''<text type="record">
+<body xml:lang="eng">
+<head><rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<div type="transcription">
+<div>
+<head>f 124 <supplied>(19 November)</supplied></head>
+<pb n="124" type="folio" />
+Test.
+</div>
+</div>
+</body>
+</text>'''
+        self._check_conversion(text, expected, doc_desc=False, heading=False,
+                               subheading=False)
+        actual_desc = ''.join(self.parser.parse(text).doc_desc)
+        expected_desc = '''<bibl xml:id="ABCD">
+<title type="edName">Heading</title>
+<note type="techDesc"><p>Technical paragraph.</p></note>
+</bibl>'''
+        self.assertEqual(actual_desc, expected_desc)
+        # Prose paragraph.
+        text = '''@pd\\Prose paragraph.
+        @sc\\ABCD@sc/
+        @sh\\Heading@sh/
+        Technical paragraph.
+        @pd/
+        @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/ @pc/
+@h\\ABC!1532!ABCD!eng\\!
+@w\\f 124 {(19 November)}\\!
+Test.'''
+        expected = '''<text type="record">
+<body xml:lang="eng">
+<head><rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<div type="transcription">
+<div>
+<head>f 124 <supplied>(19 November)</supplied></head>
+<pb n="124" type="folio" />
+Test.
+</div>
+</div>
+</body>
+</text>'''
+        self._check_conversion(text, expected, doc_desc=False, heading=False,
+                               subheading=False)
+        actual_desc = ''.join(self.parser.parse(text).doc_desc)
+        expected_desc = '''<bibl xml:id="ABCD">
+<title type="edName">Heading</title>
+<note type="edDesc"><p>Prose paragraph.</p></note>
+<note type="techDesc"><p>Technical paragraph.</p></note>
+</bibl>'''
+        self.assertEqual(actual_desc, expected_desc)
 
     def test_raised(self):
         text = 'mid@*dot'
@@ -996,4 +1066,33 @@ After table text.
 </TEI>
 '''
         actual = self._transform(text, REMOVE_AB_XSLT_PATH)
+        self.assertEqual(actual, expected)
+
+    def test_tidy_bibls(self):
+        text = '''<listBibl xmlns="http://www.tei-c.org/ns/1.0">
+<msDesc xml:id="ABCD">
+<msIdentifier>
+<settlement>Bognor Regis</settlement>
+<repository>Boris's Borough Books &amp; Records</repository>
+<idno type="shelfmark">127.43#61-4/AN</idno>
+<msName>Heading</msName>
+</msIdentifier>
+<ab type="edDesc">Prose<pb/>paragraph.</ab>
+<ab type="techDesc">Technical<pb />paragraph.</ab>
+</msDesc>
+</listBibl>'''
+        expected = '''<listBibl xmlns="http://www.tei-c.org/ns/1.0">
+<msDesc xml:id="ABCD">
+<msIdentifier>
+<settlement>Bognor Regis</settlement>
+<repository>Boris's Borough Books &amp; Records</repository>
+<idno type="shelfmark">127.43#61-4/AN</idno>
+<msName>Heading</msName>
+</msIdentifier>
+<ab type="edDesc">Prose|paragraph.</ab>
+<ab type="techDesc">Technical|paragraph.</ab>
+</msDesc>
+</listBibl>
+'''
+        actual = self._transform(text, TIDY_BIBLS_XSLT_PATH)
         self.assertEqual(actual, expected)
