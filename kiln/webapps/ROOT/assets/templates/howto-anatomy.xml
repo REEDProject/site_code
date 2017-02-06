@@ -60,9 +60,7 @@
                 </div>
               </div>
             </div>
-            <div class="column medium-20-percent">
-              <xsl:copy-of select="$helpful_links" />
-            </div>
+            <div class="column medium-20-percent"></div>
           </div>
           <div class="row small-collapse medium-uncollapse ">
             <div class="column medium-10 sub-section-content">
