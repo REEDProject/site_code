@@ -618,7 +618,7 @@
                             <settlement>Lichfield</settlement>
                             <repository sameAs="#lichfield-cathedral-library"/>
                             <idno type="shelfmark">Chapter Act Books No. 3</idno>
-                            <msName>Dean and Chapter Act Book</msName><!-- kc: not sure about "dean and chapter" -->
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/35059/" type="Collective_ClergyAndChurchwardens">Dean</rs> and Chapter Act Book</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1490–1523</date>; Latin; parchment and paper; ii (parchment,
                             contains title page) + 142 (paper) + v (parchment, contains index);
@@ -632,7 +632,7 @@
                             <settlement>Lichfield</settlement>
                             <repository sameAs="#LRO"/>
                             <idno type="shelfmark">D 30/7/1/1</idno>
-                            <msName>Lichfield Cathedral Sacrist's Roll</msName><!-- kc: pending reply from SB -->
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/36465/" type="Place_Feature">Lichfield Cathedral</rs> Sacrist's Roll</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1342</date>; Latin; parchment; single membrane; 700mm x 280mm.</ab>
                     </msDesc>
@@ -712,7 +712,7 @@
                             (ed), Camden Society, 3rd ser, 20–1, 2 vols (London, 1911); <title>John
                                 of Gaunt's Register, Part II (1379–83)</title>, Eleanor C. Lodge and
                             Robert Somerville (eds), Camden Society, 3rd ser, 56–7, 2 vols (London,
-                            1937).</ab>
+                            1937).</ab><!-- kc: ask CB about locations in this doc description  -->
                         <ab type="techDesc"><date>1372–6</date>; Anglo-Norman and Latin; parchment with paper
                             fly-leaves; ii + 235 + ii; 330mm x 230mm; ink foliation; bound in brown
                             cloth boards with leather corners and spine, title on spine: 'Duchy of
@@ -780,7 +780,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">STAC 8/67/11</idno>
-                            <msName>Bill of Complaint in Bourne v. Cole et al</msName>
+                            <msName>Bill of Complaint in <rs ref="http://ereed.library.utoronto.ca/eats/entity/14762/" type="Person_Female">Bourne</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/14928/" type="Person_Male">Cole</rs> et al</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1616</date>; English; parchment; 2 membranes; 170mm x 440mm and
                             453mm x 500mm; modern numbering in pencil on lower right corner but not
@@ -795,7 +795,7 @@
                             <settlement>Stafford</settlement>
                             <repository sameAs="#STRO"/>
                             <idno type="shelfmark">D1287/10/2 (O/250)</idno>
-                            <msName>Matthew Cradock's Book of Remembrance</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/19671/" type="Person_Male">Matthew Cradock's</rs> Book of Remembrance</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>July 1614–June 1615</date>; English and Latin; paper; 305mm x
                             200mm; modern pencil paginated 1–283; p 260 onwards blank and occasional
@@ -808,7 +808,7 @@
                             <settlement>Stafford</settlement>
                             <repository sameAs="#STRO"/>
                             <idno type="shelfmark">D1323/E/1</idno>
-                            <msName>Bailiffs', Churchwardens', and Mayors' Accounts</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/10976/" type="Collective_Occupation">Bailiffs'</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs>, and <rs ref="http://ereed.library.utoronto.ca/eats/entity/1140/" type="Collective_Occupation">Mayors'</rs> Accounts</msName>
                         </msIdentifier>
                         <ab type="edDesc">This volume contains (a) copies of earlier accounts, beginning in 1519,
                             which are in the same hand as entries for the years 1611 onwards, so
@@ -849,7 +849,7 @@
                             <msName>Copies of Summary Accounts (A)</msName>
                         </msIdentifier>
                         <ab type="edDesc">This is a collection of brief annual summaries of receipts and expenses
-                            for the schoolwardens, churchwardens, chamberlains, and bailiffs. Not
+                            for the schoolwardens, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">churchwardens</rs>, chamberlains, and <rs ref="http://ereed.library.utoronto.ca/eats/entity/10976/" type="Collective_Occupation">bailiffs</rs>. Not
                             all years are represented, nor all officers within a given year. Near
                             the beginning of the volume there occur some more detailed accounts, in
                             which the transcribed record is found.</ab>
@@ -863,7 +863,7 @@
                             <settlement>Stafford</settlement>
                             <repository sameAs="#STRO"/>
                             <idno type="shelfmark">D(W)1721/1/4</idno>
-                            <msName>Thomas Worswicke's Book</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/19579/" type="Person_Male">Thomas Worswicke's</rs> Book</msName>
                         </msIdentifier>
                         <ab type="edDesc">Thomas Worswicke was steward to Edward Stafford, 13th Baron Stafford,
                             town clerk of Stafford, and eventually (<hi rend="italic">c</hi> 1625)
@@ -887,7 +887,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">PROB 11/27</idno>
-                            <msName>Will of John Wistowe</msName>
+                            <msName>Will of <rs ref="http://ereed.library.utoronto.ca/eats/entity/26580/" type="Person_Male">John Wistowe</rs></msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1539</date>; English (wills) and Latin (probates); parchment; 375
                             leaves; 420mm x 340mm (310mm x 240mm); modern stamped foliation; bound
@@ -914,7 +914,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">STAC 2/4</idno>
-                            <msName>Bett v. Ferrers</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/39761/" type="Person_Commoner">Bett</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/26891/" type="Person_Male">Ferrers</rs></msName>
                         </msIdentifier>
                         <ab type="edDesc">This volume of Star Chamber proceedings contains a variety of documents,
                             including the depositions, examination of witnesses, and examination of
@@ -925,7 +925,7 @@
                             420mm x 295mm, 370mm x 300mm, and 261mm x 300mm. Now foliated 177–9 and
                             bound in a 19th century volume: vi + 1–228 + vi; binding damaged, spine
                             separating from boards, title on spine 'Star Chamber Proceedings Hen.
-                            VIII 4.'</ab>
+                            VIII 4.'</ab><!-- kc: did not tag Sir George Greysley and James Leveson, confirm -->
                     </msDesc>
 
                     <msDesc xml:id="TAM3">
@@ -933,7 +933,7 @@
                             <settlement>London</settlement>
                             <repository sameAs="#BL"/>
                             <idno type="shelfmark">Additional MS 28177</idno>
-                            <msName>Examination of Defendant in Bett v. Ferrers (A)</msName>
+                            <msName>Examination of Defendant in <rs ref="http://ereed.library.utoronto.ca/eats/entity/39761/" type="Person_Commoner">Bett</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/26891/" type="Person_Male">Ferrers</rs> (A)</msName><!-- kc: who is "Bett"? not in record text excerpted. no info in Intro.  -->
                         </msIdentifier>
                         <ab type="techDesc"><date>30 November 1860–27 September 1862</date>; English; paper; 340
                             leaves; ii + 228 + cx; 325mm x 250mm; foliation by British Library,
@@ -947,7 +947,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">DL 42/14</idno>
-                            <msName>Order from John of Gaunt's Register Book</msName>
+                            <msName>Order from <rs ref="http://ereed.library.utoronto.ca/eats/entity/13153/" type="Person_Royalty">John of Gaunt's</rs> Register Book</msName>
                         </msIdentifier>
                         <ab type="edDesc">John of Gaunt's two register books contain various orders, including
                             orders for payments, letters, and many other types of official records
@@ -980,10 +980,10 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">DL 41/597, item [d]</idno>
-                            <msName>Letter from Lord Newburgh, Chancellor of the Duchy of Lancaster,
+                            <msName>Letter from <rs ref="http://ereed.library.utoronto.ca/eats/entity/27382/" type="Person_Male">Lord Newburgh</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/28574/" type="Collective_Office">Chancellor of the Duchy of Lancaster</rs>,
                                 to the Clerk of the Duchy Chamber</msName>
                         </msIdentifier>
-                        <ab type="edDesc">These two sets of orders for the minstrels' court contain, in items [a/b]
+                        <ab type="edDesc">These two sets of orders for the <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type">minstrels</rs>' court contain, in items [a/b]
                             and [c/d], the two variant versions of the orders. It is assumed that
                             [a], the version of the orders which cannot be precisely dated, is
                             earlier because it is a re-issue (with minor changes, errors, and
@@ -992,8 +992,8 @@
                             orders. It could not have been intended for the orders dated later, the
                             revised orders of 10 May 1630 (1631?), item [c]. These revised orders
                             presumably reflect changes ordered by the new chancellor of the duchy of
-                            Lancaster, Edward Barrett, Lord Newburgh, who held office from April
-                            1629 concurrently with his predecessor, Sir Humphrey May, or perhaps by
+                            Lancaster, <rs ref="http://ereed.library.utoronto.ca/eats/entity/27382/" type="Person_Male">Edward Barrett</rs>, Lord Newburgh, who held office from April
+                            1629 concurrently with his predecessor, Sir <rs ref="http://ereed.library.utoronto.ca/eats/entity/27295/" type="Person_Male">Humphrey May</rs>, or perhaps by
                             May himself. May's death in June 1630 likely caused some upheaval in the
                             workings of the Chancery office, and may account for the confusion in
                             dates with this version of the orders. In any case there appears to have
@@ -1014,7 +1014,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">DL 41/587</idno>
-                            <msName>Regulations Governing the Minstrels' Court</msName>
+                            <msName>Regulations Governing the <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type">Minstrels'</rs> Court</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1618</date>; English; parchment; single membrane; 670mm x 312mm;
                             written on 1 side; ink worn in many places, staining at top 95mm x
@@ -1028,7 +1028,7 @@
                         <msIdentifier>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">DL 41/597, item [c]</idno>
-                            <msName>Revised Regulations Governing the Minstrels' Court</msName>
+                            <msName>Revised Regulations Governing the <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type">Minstrels'</rs> Court</msName>
                         </msIdentifier>
                         <ab type="techDesc">10 May 1629; English; parchment; 575mm x 375mm; written over onto fold at
                             foot (dorse) with final order and exemplification; folded at bottom with
@@ -1040,7 +1040,7 @@
                             <settlement>London</settlement>
                             <repository sameAs="#BL"/>
                             <idno type="shelfmark">Additional Charter 42681B</idno>
-                            <msName>Letter Patent of Charles I</msName>
+                            <msName>Letter Patent of <rs ref="http://ereed.library.utoronto.ca/eats/entity/24537/" type="Person_Royalty">Charles I</rs></msName>
                         </msIdentifier>
                         <ab type="edDesc">Letter patent accompanying BL: Additional Charter 42681A, likely a copy
                             of TNA: DL 41/597, item [c].</ab>
@@ -1053,7 +1053,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">C 66/2738</idno>
-                            <msName>Royal Proclamation re Minstrels' Court</msName>
+                            <msName>Royal Proclamation re <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type">Minstrels'</rs> Court</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1637</date>; English; parchment; single membrane; 635mm x 255mm.
                             Membrane 6 dors is in a large Chancery patent roll containing over 150
@@ -1065,7 +1065,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">DL 29/1/3</idno>
-                            <msName>Agreement re Pasturage for Minstrels' Horses</msName>
+                            <msName>Agreement re Pasturage for <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type">Minstrels'</rs> Horses</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1313–15</date>; Latin; parchment; 28 membranes; 750–825mm x 380mm
                             (mbs 27 and 28 considerably smaller: mb 27, 830mm x 235mm, mb 28, 420mm
@@ -1079,7 +1079,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">DL 42/109</idno>
-                            <msName>Agreement re Pasturage for Minstrels' Horses</msName>
+                            <msName>Agreement re Pasturage for <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type">Minstrels'</rs> Horses</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1558–9</date>; Latin and English; vellum; i + 160 + 1; 400mm x
                             285mm (290mm x 185mm); later foliation 1–151 (ff 152–60 blank,
@@ -1094,7 +1094,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">SC 11/606</idno>
-                            <msName>Description of Bull-Running Custom</msName>
+                            <msName>Description of <rs ref="http://ereed.library.utoronto.ca/eats/entity/37400/" type="Entertainment_AnimalSport">Bull-Running</rs> Custom</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1382</date>; parchment; 2 mbs, sewn at top; mb [1]: 560mm x 200mm,
                             mb [2]r: 610mm x 200mm, mb [2]d is pasted onto backing of mb [2]r and is
@@ -1109,7 +1109,7 @@
                             <settlement>London</settlement>
                             <repository sameAs="#BL"/>
                             <idno type="shelfmark">Royal MS 18.B.x</idno>
-                            <msName>Description of the Minstrels' Court and Bull-Running
+                            <msName>Description of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type">Minstrels'</rs> Court and <rs ref="http://ereed.library.utoronto.ca/eats/entity/37400/" type="Entertainment_AnimalSport">Bull-Running</rs>
                                 (A)</msName>
                         </msIdentifier>
                         <ab type="edDesc">Contains a 'trewe copie of the antient franchisses priviledges and
