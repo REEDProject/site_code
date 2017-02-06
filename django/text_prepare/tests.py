@@ -684,7 +684,7 @@ Textus
 
 </div>
 </div>
-<div type="translation">
+<div xml:lang="eng" type="translation">
 <div>
 <head>f.40*</head>
 <pb />
@@ -705,7 +705,7 @@ Textus
 
 </div>
 </div>
-<div type="translation">
+<div xml:lang="eng" type="translation">
 <div>
 <head>f.40*</head>
 <pb />

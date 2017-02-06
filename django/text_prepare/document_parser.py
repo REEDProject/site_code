@@ -831,7 +831,8 @@ class DocumentParser:
         return ['<div>\n', ''.join(toks), '\n</div>\n']
 
     def _pa_translation(self, s, loc, toks):
-        return ['<div type="translation">\n', ''.join(toks[0]), '</div>\n']
+        return ['<div xml:lang="eng" type="translation">\n',
+                ''.join(toks[0]), '</div>\n']
 
     def _pa_umlaut(self, s, loc, toks):
         return ['{}\N{COMBINING DIAERESIS}'.format(toks[1])]
