@@ -36,7 +36,7 @@ TIDY_BIBLS_XSLT_PATH = os.path.join(XSLT_DIR, 'tidy_bibls.xsl')
 BIBL_SKELETON = '''<listBibl xmlns="http://www.tei-c.org/ns/1.0">
 {}
 </listBibl>'''
-RECORDS_SKELETON = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/">
+RECORDS_SKELETON = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng">
   <text>
     <group>{}</group>
   </text>
