@@ -172,7 +172,6 @@
   </xsl:template>
 
   <xsl:template match="tei:note[@type='marginal']">
-    <!-- QAZ: icon indicating place of note. -->
     <span class="marginalia" note="{generate-id()}"></span>
   </xsl:template>
 
