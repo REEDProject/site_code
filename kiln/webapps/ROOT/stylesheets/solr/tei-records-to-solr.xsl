@@ -64,7 +64,11 @@
           <xsl:value-of select="tei:body/tei:head/tei:date" />
           <xsl:text>, </xsl:text>
           <!-- QAZ: Use EATSML name? -->
-          <xsl:value-of select="tei:body/tei:head/tei:rs" />
+          <xsl:value-of select="tei:body/tei:head/tei:rs[1]" />
+          <xsl:if test="tei:body/tei:head/tei:rs[2]">
+            <xsl:text>, </xsl:text>
+            <xsl:value-of select="tei:body/tei:head/tei:rs[2]" />
+          </xsl:if>
           <xsl:text>. </xsl:text>
           <xsl:value-of select="normalize-space(tei:body/tei:head/tei:title)" />
           <xsl:text>. </xsl:text>
@@ -78,11 +82,16 @@
         </field>
         <field name="record_location">
           <!-- QAZ: Use EATSML name? -->
-          <xsl:value-of select="normalize-space(tei:body/tei:head/tei:rs)" />
+          <xsl:for-each select="tei:body/tei:head/tei:rs">
+            <xsl:value-of select="normalize-space()" />
+            <xsl:if test="position() != last()">
+              <xsl:text>, </xsl:text>
+            </xsl:if>
+          </xsl:for-each>
         </field>
         <field name="record_location_id">
           <xsl:text>entity-</xsl:text>
-          <xsl:value-of select="substring-before(substring-after(tei:body/tei:head/tei:rs/@ref, '/entity/'), '/')" />
+          <xsl:value-of select="substring-before(substring-after(tei:body/tei:head/tei:rs[position()=last()]/@ref, '/entity/'), '/')" />
         </field>
         <field name="record_shelfmark">
           <xsl:value-of select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='text']" />

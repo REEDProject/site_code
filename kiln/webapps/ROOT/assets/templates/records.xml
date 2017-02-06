@@ -48,7 +48,11 @@
                       <xsl:value-of select="tei:body/tei:head/tei:date" />
                       <xsl:text>, </xsl:text>
                       <!-- QAZ: Use EATSML name? -->
-                      <xsl:value-of select="tei:body/tei:head/tei:rs" />
+                      <xsl:value-of select="tei:body/tei:head/tei:rs[1]" />
+                      <xsl:if test="tei:body/tei:head/tei:rs[2]">
+                        <xsl:text>, </xsl:text>
+                        <xsl:apply-templates select="tei:body/tei:head/tei:rs[2]" />
+                      </xsl:if>
                       <xsl:text>. </xsl:text>
                       <xsl:value-of select="normalize-space(tei:body/tei:head/tei:title)" />
                       <xsl:text>. </xsl:text>
@@ -59,7 +63,11 @@
                     </td>
                     <td class="show-for-medium">
                       <!-- QAZ: Use EATSML name? -->
-                      <xsl:value-of select="tei:body/tei:head/tei:rs" />
+                      <xsl:value-of select="tei:body/tei:head/tei:rs[1]" />
+                      <xsl:if test="tei:body/tei:head/tei:rs[2]">
+                        <xsl:text>, </xsl:text>
+                        <xsl:apply-templates select="tei:body/tei:head/tei:rs[2]" />
+                      </xsl:if>
                     </td>
                     <td class="show-for-medium">
                       <xsl:value-of select="tei:body/tei:head/tei:title" />

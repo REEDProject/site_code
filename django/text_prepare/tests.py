@@ -32,7 +32,7 @@ class TestDocumentConverter (TestCase):
             text = '@h\\BPA!1532!DOU2!eng\\!\n' + text
             expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
 ''' + expected + '''
 </body>
 </text>'''
@@ -131,7 +131,7 @@ Test.
 @cn/'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -198,7 +198,7 @@ Test.
 '''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -330,7 +330,7 @@ A note.
 Test.'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -370,7 +370,7 @@ Test.
 Test.'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -438,7 +438,7 @@ Text that <pb />crosses a page.
 Test.'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -468,7 +468,7 @@ Test.
 Test.'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -497,7 +497,7 @@ Test.
         base_input = '@h\\{place}!{year}!{record}!{lang}\\!\n@w\\Test\\!\nText'
         base_expected = '''<text type="record">
 <body xml:lang="{lang}">
-<head><rs>{full_place}</rs> {date} <seg ana="ereed:{record}">{record}</seg></head>
+<head><rs>Staffordshire</rs>, <rs>{full_place}</rs> {date} <seg ana="ereed:{record}">{record}</seg></head>
 <div type="transcription">
 <div>
 <head>Test</head>

@@ -231,8 +231,12 @@
     <div class="record-info-inner">
       <i>
         <!-- QAZ: Use EATSML name? -->
-        <xsl:apply-templates select="tei:body/tei:head/tei:rs" />
-        <xsl:text> </xsl:text>
+        <xsl:apply-templates select="tei:body/tei:head/tei:rs[1]" />
+        <xsl:if test="tei:body/tei:head/tei:rs[2]">
+          <xsl:text>, </xsl:text>
+          <xsl:apply-templates select="tei:body/tei:head/tei:rs[2]" />
+        </xsl:if>
+        <xsl:text>, </xsl:text>
         <xsl:apply-templates select="tei:body/tei:head/tei:date" />
       </i>
     </div>

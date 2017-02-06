@@ -648,7 +648,10 @@ class DocumentParser:
         return ['\N{PILCROW SIGN}']
 
     def _pa_place_code(self, s, loc, toks):
-        self._place_codes[toks[0][0]] = toks[1][0]
+        abbr = toks[0][0]
+        name = toks[1][0]
+        county = toks[2][0]
+        self._place_codes[abbr] = (county, name)
         return []
 
     def _pa_print_doc_desc(self, s, loc, toks):
@@ -721,7 +724,8 @@ class DocumentParser:
         if toks[0] not in self._place_codes:
             raise pp.ParseFatalException(
                 'Place code {} used but not defined'.format(toks[0]))
-        return ['<rs>{}</rs>'.format(self._place_codes[toks[0]])]
+        name, county = self._place_codes[toks[0]]
+        return ['<rs>{}</rs>, <rs>{}</rs>'.format(name, county)]
 
     def _pa_record_heading_record(self, s, loc, toks):
         return ['<seg ana="ereed:{}">{}</seg>'.format(toks[0], toks[0])]
