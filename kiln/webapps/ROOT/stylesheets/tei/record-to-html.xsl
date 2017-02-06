@@ -15,25 +15,13 @@
         <xsl:apply-templates />
         <xsl:if test="not(preceding-sibling::tei:div)">
           <div class="small-margin-bottom-25">
-            <!-- QAZ: tools-small. -->
             <div class="hide-for-medium">
               <div class="record-sidebar hide-for-medium" >
                 <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
                   <div class="filter-head jump-to-filter">TOOLS</div>
                   <div class="filter-content-wrapper relative">
                     <div class="filter-content">
-                      <!-- QAZ: tools. -->
-                      <div class="tools">
-                        <div class="tools-heading show-for-medium">TOOLS</div>
-                        <ul class="tools">
-                          <li class="email"><a href="">Email</a></li>
-                          <li class="print"><a href="">Print</a></li>
-                          <li class="pdf"><a href="">PDF</a></li>
-                          <li class="xml"><a href="">XML</a></li>
-                          <li class="bookmark"><a href="">Bookmark</a></li>
-                          <li class="share"><a href="">Share</a></li>
-                        </ul>
-                      </div>
+                      <xsl:call-template name="display-record-tools" />
                     </div>
                   </div>
                 </div>
@@ -52,18 +40,7 @@
       </div>
       <xsl:if test="not(preceding-sibling::tei:div)">
         <div class="columns record-sidebar show-for-medium">
-          <!-- QAZ: tools. -->
-          <div class="tools">
-            <div class="tools-heading show-for-medium">TOOLS</div>
-            <ul class="tools">
-              <li class="email"><a href="">Email</a></li>
-              <li class="print"><a href="">Print</a></li>
-              <li class="pdf"><a href="">PDF</a></li>
-              <li class="xml"><a href="">XML</a></li>
-              <li class="bookmark"><a href="">Bookmark</a></li>
-              <li class="share"><a href="">Share</a></li>
-            </ul>
-          </div>
+          <xsl:call-template name="display-record-tools" />
           <div class="padding-top-45">
             <xsl:copy-of select="$helpful_links" />
           </div>
@@ -314,12 +291,12 @@
     <div class="tools">
       <div class="tools-heading show-for-medium">TOOLS</div>
       <ul class="tools">
-        <li class="email"><a href="">Email</a></li>
+        <!--<li class="email"><a href="">Email</a></li>
         <li class="print"><a href="">Print</a></li>
-        <li class="pdf"><a href="">PDF</a></li>
-        <li class="xml"><a href="">XML</a></li>
-        <li class="bookmark"><a href="">Bookmark</a></li>
-        <li class="share"><a href="">Share</a></li>
+        <li class="pdf"><a href="">PDF</a></li>-->
+        <li class="xml"><a href="https://github.com/REEDProject/Collections">XML</a></li>
+        <!--<li class="bookmark"><a href="">Bookmark</a></li>
+        <li class="share"><a href="">Share</a></li>-->
       </ul>
     </div>
   </xsl:template>
