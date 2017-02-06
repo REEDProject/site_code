@@ -25,6 +25,35 @@
             </prefixDef>
           </listPrefixDef>
         </encodingDesc>
+        <profileDesc>
+          <langUsage>
+            <xsl:for-each select="//tei:*[@xml:lang]">
+              <xsl:if test="not(preceding::tei:*[@xml:lang=current()/@xml:lang] or ancestor::tei:*[@xml:lang=current()/@xml:lang])">
+                <language ident="{@xml:lang}">
+                  <xsl:choose>
+                    <xsl:when test="@xml:lang = 'cnx'">Middle Cornish</xsl:when>
+                    <xsl:when test="@xml:lang = 'cor'">Cornish</xsl:when>
+                    <xsl:when test="@xml:lang = 'cym'">Welsh</xsl:when>
+                    <xsl:when test="@xml:lang = 'deu'">German</xsl:when>
+                    <xsl:when test="@xml:lang = 'eng'">English</xsl:when>
+                    <xsl:when test="@xml:lang = 'fra'">French</xsl:when>
+                    <xsl:when test="@xml:lang = 'gla'">Scottish Gaelic</xsl:when>
+                    <xsl:when test="@xml:lang = 'gmh'">Middle High German</xsl:when>
+                    <xsl:when test="@xml:lang = 'gml'">Middle Low German</xsl:when>
+                    <xsl:when test="@xml:lang = 'grc'">Ancient Greek</xsl:when>
+                    <xsl:when test="@xml:lang = 'ita'">Italian</xsl:when>
+                    <xsl:when test="@xml:lang = 'lat'">Latin</xsl:when>
+                    <xsl:when test="@xml:lang = 'por'">Portuguese</xsl:when>
+                    <xsl:when test="@xml:lang = 'spa'">Spanish</xsl:when>
+                    <xsl:when test="@xml:lang = 'wlm'">Middle Welsh</xsl:when>
+                    <xsl:when test="@xml:lang = 'xno'">Anglo-Norman</xsl:when>
+                    <xsl:otherwise>ERROR: Word converter XSLT add_header.xsl needs to be updated to have a name for this language code, to be in sync with the codes allowed in the @-code grammar!</xsl:otherwise>
+                  </xsl:choose>
+                </language>
+              </xsl:if>
+            </xsl:for-each>
+          </langUsage>
+        </profileDesc>
       </teiHeader>
       <xsl:apply-templates select="node()" />
     </xsl:copy>

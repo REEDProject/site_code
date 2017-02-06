@@ -865,16 +865,22 @@ After table text.
         self.assertEqual(actual, expected)
 
     def test_add_header(self):
-        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff">
+        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff" xml:lang="eng">
 <text>
 <group>
 <text type="record" xml:id="staff-ridm4">
-<body>
+<body xml:lang="lat">
 <head>@h head 1</head>
 <div type="transcription" xml:id="staff-ridm4-transcription">
 <div>
 <head>@w head 1.1</head>
-<ab>Some text.</ab>
+<ab>Histrio non sum.</ab>
+</div>
+</div>
+<div xml:lang="eng" type="translation">
+<div>
+<head>@w head 1.1</head>
+<ab>I am not an actor.</ab>
 </div>
 </div>
 </body>
@@ -882,16 +888,22 @@ After table text.
 </group>
 </text>
 </TEI>'''
-        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff"><teiHeader><fileDesc><titleStmt/><sourceDesc/></fileDesc><encodingDesc><listPrefixDef><prefixDef ident="taxon" matchPattern="([A-Za-z0-9]+)" replacementPattern="../taxonomy.xml#$1"><p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the taxonomy.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p></prefixDef></listPrefixDef></encodingDesc></teiHeader>
+        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff" xml:lang="eng"><teiHeader><fileDesc><titleStmt/><sourceDesc/></fileDesc><encodingDesc><listPrefixDef><prefixDef ident="taxon" matchPattern="([A-Za-z0-9]+)" replacementPattern="../taxonomy.xml#$1"><p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the taxonomy.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p></prefixDef></listPrefixDef></encodingDesc><profileDesc><langUsage><language ident="eng">English</language><language ident="lat">Latin</language></langUsage></profileDesc></teiHeader>
 <text>
 <group>
 <text type="record" xml:id="staff-ridm4">
-<body>
+<body xml:lang="lat">
 <head>@h head 1</head>
 <div type="transcription" xml:id="staff-ridm4-transcription">
 <div>
 <head>@w head 1.1</head>
-<ab>Some text.</ab>
+<ab>Histrio non sum.</ab>
+</div>
+</div>
+<div xml:lang="eng" type="translation">
+<div>
+<head>@w head 1.1</head>
+<ab>I am not an actor.</ab>
 </div>
 </div>
 </body>
