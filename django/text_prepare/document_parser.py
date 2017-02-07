@@ -296,7 +296,7 @@ class DocumentParser:
         transcription_heading = pp.nestedExpr(
             '@w\\', '\\!', content=transcription_heading_content)
         transcription_heading.setParseAction(self._pa_transcription_heading)
-        transcription_section = transcription_heading - pp.OneOrMore(
+        transcription_section = blank + transcription_heading - pp.OneOrMore(
             table ^ enclosed)
         transcription_section.setParseAction(self._pa_transcription_section)
         transcription = pp.OneOrMore(transcription_section)
@@ -371,11 +371,10 @@ class DocumentParser:
                                     content=pp.OneOrMore(place_code))
         preamble = (ms_doc_desc ^ print_doc_desc) - blank - pp.Optional(
             comment_code + blank) - place_codes
-        record = (blank + record_heading + pp.ZeroOrMore(white) + \
-            transcription + pp.Optional(translation) + \
-            pp.Optional(collation_notes) + \
-            pp.Optional(end_note_wrapper)).setResultsName('record',
-                                                          listAllMatches=True)
+        record = (blank + record_heading + transcription +
+                  pp.Optional(translation) + pp.Optional(collation_notes) +
+                  pp.Optional(end_note_wrapper)).setResultsName(
+                      'record', listAllMatches=True)
         record.setParseAction(self._pa_record)
         return pp.StringStart() + blank + preamble + pp.OneOrMore(record) \
             + pp.StringEnd()
@@ -689,7 +688,7 @@ class DocumentParser:
 
     def _pa_record_heading(self, s, loc, toks):
         place, date, record, language_code = toks[0]
-        return [language_code, '<head>{} {} {}</head>'.format(
+        return [language_code, '<head>{} {} {}</head>\n'.format(
             place, date, record)]
 
     def _pa_record_heading_date_century(self, s, loc, toks):
