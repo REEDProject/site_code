@@ -31,6 +31,7 @@ ADD_HEADER_XSLT_PATH = os.path.join(XSLT_DIR, 'add_header.xsl')
 ADD_ID_XSLT_PATH = os.path.join(XSLT_DIR, 'add_id.xsl')
 MASSAGE_FOOTNOTE_XSLT_PATH = os.path.join(XSLT_DIR, 'massage_footnote.xsl')
 REMOVE_AB_XSLT_PATH = os.path.join(XSLT_DIR, 'remove_ab.xsl')
+SORT_RECORDS_XSLT_PATH = os.path.join(XSLT_DIR, 'sort_records.xsl')
 TIDY_BIBLS_XSLT_PATH = os.path.join(XSLT_DIR, 'tidy_bibls.xsl')
 
 BIBL_SKELETON = '''<listBibl xmlns="http://www.tei-c.org/ns/1.0">
@@ -171,7 +172,8 @@ class Document:
         tree = etree.ElementTree(etree.fromstring(text))
         tree = self._transform(tree, ADD_AB_XSLT_PATH, ADD_ID_XSLT_PATH,
                                ADD_HEADER_XSLT_PATH,
-                               MASSAGE_FOOTNOTE_XSLT_PATH, REMOVE_AB_XSLT_PATH)
+                               MASSAGE_FOOTNOTE_XSLT_PATH, REMOVE_AB_XSLT_PATH,
+                               SORT_RECORDS_XSLT_PATH)
         return etree.tostring(tree, encoding='unicode', pretty_print=True)
 
     def _replace_word_chars(self, text):
