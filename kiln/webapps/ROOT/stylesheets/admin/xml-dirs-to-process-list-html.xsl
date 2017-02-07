@@ -132,8 +132,8 @@
       </td>
       <td>
         <a href="{kiln:url-for-match('local-admin-collection-records',
-                 ($short-filepath), 0)}">
-          <xsl:text>All records</xsl:text>
+                 (substring-after($short-filepath, '/')), 0)}">
+          <xsl:text>View all records</xsl:text>
         </a>
       </td>
       <!-- Search indexing. -->
