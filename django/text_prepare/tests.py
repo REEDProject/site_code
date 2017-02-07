@@ -6,7 +6,8 @@ from lxml import etree
 
 from .document import (ADD_AB_XSLT_PATH, ADD_HEADER_XSLT_PATH,
                        ADD_ID_XSLT_PATH, Document, MASSAGE_FOOTNOTE_XSLT_PATH,
-                       REMOVE_AB_XSLT_PATH, TIDY_BIBLS_XSLT_PATH)
+                       REMOVE_AB_XSLT_PATH, SORT_RECORDS_XSLT_PATH,
+                       TIDY_BIBLS_XSLT_PATH)
 from .document_parser import DocumentParser
 
 
@@ -1078,6 +1079,85 @@ After table text.
 </TEI>
 '''
         actual = self._transform(text, REMOVE_AB_XSLT_PATH)
+        self.assertEqual(actual, expected)
+
+    def test_sort_records(self):
+        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<text>
+<group>
+<text type="record">
+<body>
+<head><rs>Staffordshire</rs>, <rs>Stafford</rs> <date when-iso="1540">1540</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<div type="transcription">
+<div>
+<head>Heading</head>
+<ab>Text</ab>
+</div>
+</div>
+</body>
+</text>
+<text type="record">
+<body>
+<head><rs>Staffordshire</rs>, <rs>Stafford</rs> <date from-iso="1501" to-iso="160">16th Century</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<div type="transcription">
+<div>
+<head>Heading</head>
+<ab>Text</ab>
+</div>
+</div>
+</body>
+</text>
+<text type="record">
+<body>
+<head><rs>Staffordshire</rs>, <rs>Burton on Trent</rs> <date when-iso="1535">1535</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<div type="transcription">
+<div>
+<head>Heading</head>
+<ab>Text</ab>
+</div>
+</div>
+</body>
+</text>
+</group>
+</text>
+</TEI>'''
+        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<text>
+<group><text type="record">
+<body>
+<head><rs>Staffordshire</rs>, <rs>Burton on Trent</rs> <date when-iso="1535">1535</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<div type="transcription">
+<div>
+<head>Heading</head>
+<ab>Text</ab>
+</div>
+</div>
+</body>
+</text><text type="record">
+<body>
+<head><rs>Staffordshire</rs>, <rs>Stafford</rs> <date from-iso="1501" to-iso="160">16th Century</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<div type="transcription">
+<div>
+<head>Heading</head>
+<ab>Text</ab>
+</div>
+</div>
+</body>
+</text><text type="record">
+<body>
+<head><rs>Staffordshire</rs>, <rs>Stafford</rs> <date when-iso="1540">1540</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<div type="transcription">
+<div>
+<head>Heading</head>
+<ab>Text</ab>
+</div>
+</div>
+</body>
+</text></group>
+</text>
+</TEI>
+'''
+        actual = self._transform(text, SORT_RECORDS_XSLT_PATH)
         self.assertEqual(actual, expected)
 
     def test_tidy_bibls(self):
