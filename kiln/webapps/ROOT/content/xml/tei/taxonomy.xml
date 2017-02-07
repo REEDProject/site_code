@@ -317,7 +317,7 @@
                             <settlement>Lichfield</settlement>
                             <repository sameAs="#LRO"/>
                             <idno type="shelfmark">B/V/1/17</idno>
-                            <msName>Archdeaconry of Stafford Visitation Act Book</msName><!-- kc: do we tag 'Archdeconry of Safford' as an ecclesiastical area? -->
+                            <msName>Archdeaconry of Stafford Visitation Act Book</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1584</date>; English and Latin; paper; iii + 264; 310mm x 210mm;
                             modern pencil pagination; bound in worn parchment covers, title on
@@ -330,7 +330,7 @@
                             <repository sameAs="#cheshire-record-office"/>
                             <idno type="shelfmark">EDC 5 (1635)/87</idno>
                             <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/15612/" type="Place_EcclesiasticalArea">Diocese of Chester</rs> Consistory Court Case, Response to Complaint
-                                in <rs ref="http://ereed.library.utoronto.ca/eats/entity/1573/" type="Person_Female">Colly</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/1478/" type="Person_Male">Dikes</rs></msName><!-- kc: check this with Carolyn re. Diocese of Chester tagging -->
+                                in <rs ref="http://ereed.library.utoronto.ca/eats/entity/1573/" type="Person_Female">Colly</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/1478/" type="Person_Male">Dikes</rs></msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1635</date>; English and Latin; paper; bifolium, folded in 2 to
                             make 2 leaves, subsequently folded in 4 vertically; 302mm x 374mm;
@@ -400,7 +400,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">STAC 8/20/24</idno>
-                            <msName>Bill of Complaint in <rs ref="http://ereed.library.utoronto.ca/eats/entity/7513/" type="Person_Male">Gillam</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/7631/" type="Person_Male">Church</rs></msName><!-- kc: there are two Gilliams in the record, William and his wife Alice; it's singiular here. Here, assume it's William? -->
+                            <msName>Bill of Complaint in <rs ref="http://ereed.library.utoronto.ca/eats/entity/7513/" type="Person_Male">Gillam</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/7631/" type="Person_Male">Church</rs></msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1616</date>; English; parchment; 2 membranes stitched together at
                             top left; unnumbered; mb [1] (Answer): 320mm x 545mm, mb 2 (Bill): 350mm
@@ -758,7 +758,7 @@
                         <settlement>Stafford</settlement>
                         <repository sameAs="#STRO"/>
                         <idno type="shelfmark">D1399/1</idno>
-                        <msName>St Mary's Parish Register</msName><!-- kc: do I tag "St Mary's parish" as an ecclesiatical area? -->
+                        <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/36054/" type="Place_Feature">St Mary's</rs> Parish Register</msName>
                     </msIdentifier>
                     <ab type="techDesc"><date>1559—1667</date>; Latin, English; parchment; ii + 198 + ii; 322mm x 220mm; modern pencil foliation; original calfskin binding repaired; rebound in the 20th century with new fly leaves; '1559—1666' on spine and front cover.</ab>          
                 </msDesc>
@@ -933,7 +933,7 @@
                             <settlement>London</settlement>
                             <repository sameAs="#BL"/>
                             <idno type="shelfmark">Additional MS 28177</idno>
-                            <msName>Examination of Defendant in <rs ref="http://ereed.library.utoronto.ca/eats/entity/39761/" type="Person_Commoner">Bett</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/26891/" type="Person_Male">Ferrers</rs> (A)</msName><!-- kc: who is "Bett"? not in record text excerpted. no info in Intro.  -->
+                            <msName>Examination of Defendant in <rs ref="http://ereed.library.utoronto.ca/eats/entity/39761/" type="Person_Commoner">Bett</rs> v. <rs ref="http://ereed.library.utoronto.ca/eats/entity/26891/" type="Person_Male">Ferrers</rs> (A)</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>30 November 1860–27 September 1862</date>; English; paper; 340
                             leaves; ii + 228 + cx; 325mm x 250mm; foliation by British Library,
@@ -1561,7 +1561,7 @@
                             <settlement>London</settlement>
                             <repository sameAs="#BL"/>
                             <idno type="shelfmark">Additional MS 46,460 vol. A</idno>
-                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/38496/" type="Place_Feature">Manorial</rs> Court Record</msName><!-- kc: confirm I've got this right as Yoxall Manor House, a Place_Feature -->
+                            <msName>Manorial Court Record</msName>
                         </msIdentifier>
                         <ab type="edDesc">This manuscript is bound in three parts, designated A (ff 1–111), B (ff
                             112–78), and C (ff 179–213).</ab>
@@ -1607,7 +1607,7 @@
                             <settlement>Cambridge</settlement>
                             <repository sameAs="#CUL"/>
                             <idno type="shelfmark">Add. MS 33</idno>
-                            <msName>Autobiography of <rs ref="http://ereed.library.utoronto.ca/eats/entity/39954/" type="Person_Commoner">Arthur Wilson</rs></msName><!-- kc: who is Wilson? need info and update EATS page if we get info -->
+                            <msName>Autobiography of <rs ref="http://ereed.library.utoronto.ca/eats/entity/39954/" type="Person_Commoner">Arthur Wilson</rs></msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1602–1710</date>; English; paper; ix + 128; 185mm x 135mm;
                             contemporary and modern pagination (pp i–ix, 172–98, 203–48, and 251–6
@@ -1746,7 +1746,7 @@
                             <settlement>London</settlement>
                             <repository sameAs="#Bodl."/>
                             <idno type="shelfmark">MS Ashmole 48</idno>
-                            <msName>The Ballad of <rs ref="http://ereed.library.utoronto.ca/eats/entity/40099/" type="Person_Commoner">Richard Sheale</rs></msName><!-- kc: I've tagged Sheale but do I do anything with "Ballad of Richard Sheale"? -->
+                            <msName>The Ballad of <rs ref="http://ereed.library.utoronto.ca/eats/entity/40099/" type="Person_Commoner">Richard Sheale</rs></msName><!-- kc: I've tagged Sheale but do I do anything with "Ballad of Richard Sheale"? pending SB bringing in book-->
                         </msIdentifier>
                         <ab type="techDesc"><date>16th century</date>; English; paper; i + 141 + 1; 190mm x 140mm;
                             modern pencil and (inaccurate) ink foliation; bound in marbled boards
