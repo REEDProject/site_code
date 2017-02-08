@@ -1,5 +1,3 @@
-import os.path
-
 from django.test import TestCase
 
 from lxml import etree
@@ -989,7 +987,7 @@ After table text.
 <ab>Nothing here but a <note type="marginal" place="margin_left">marginal note</note> and a <note type="foot">footnote</note>.</ab>
 </div>
 </div>
-<div type="endnote" xml:id="staff-ridm21-end-notes">
+<div type="endnote">
 <ab>An end note.</ab>
 </div>
 </body>
