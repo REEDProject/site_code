@@ -59,6 +59,12 @@
     <xsl:text>&gt;</xsl:text>
   </xsl:template>
 
+  <xsl:template match="tei:div[@type='collation_note']" mode="group">
+    <li>
+      <xsl:apply-templates select="." />
+    </li>
+  </xsl:template>
+
   <xsl:template match="tei:ex">
     <i>
       <xsl:apply-templates />
