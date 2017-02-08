@@ -49,14 +49,6 @@
     </xsl:call-template>
   </xsl:template>
 
-  <xsl:template match="tei:div[@type='endnote']">
-    <xsl:param name="id_prefix" />
-    <xsl:call-template name="copy-element-add-id">
-      <xsl:with-param name="id_prefix" select="$id_prefix" />
-      <xsl:with-param name="id" select="concat($id_prefix, '-end-notes')" />
-    </xsl:call-template>
-  </xsl:template>
-
   <xsl:template match="tei:div[@type='transcription']">
     <xsl:param name="id_prefix" />
     <xsl:call-template name="copy-element-add-id">
