@@ -335,12 +335,13 @@ class DocumentParser:
         source_shelfmark.setParseAction(self._pa_source_data)
         source_date = blank + pp.nestedExpr('@st\\', '@st/',
                                             content=rich_content)
-        source_date.setParseAction(self._pa_source_data)
+        source_date.setParseAction(self._pa_source_date)
         ms_source_data = source_code - source_head - source_location - \
-            source_repository - source_shelfmark - pp.Suppress(source_date)
+            source_repository - source_shelfmark
         ms_source_data.setParseAction(self._pa_ms_source_data)
         ms_ed_desc = enclosed.copy().setParseAction(self._pa_ms_ed_desc)
-        ms_tech_desc = enclosed.copy().setParseAction(self._pa_ms_tech_desc)
+        ms_tech_desc = source_date + enclosed.copy()
+        ms_tech_desc.setParseAction(self._pa_ms_tech_desc)
         ms_doc_desc_contents = pp.Optional(ms_ed_desc) + ms_source_data - \
             ms_tech_desc
         ms_doc_desc = pp.nestedExpr('@md\\', '@md/',
@@ -766,6 +767,9 @@ class DocumentParser:
 
     def _pa_source_data(self, s, loc, toks):
         return ''.join(toks[0]).strip()
+
+    def _pa_source_date(self, s, loc, toks):
+        return '<date>{}</date>'.format(''.join(toks[0]).strip())
 
     def _pa_special_v(self, s, loc, toks):
         return ['\N{LATIN SMALL LETTER MIDDLE-WELSH V}']

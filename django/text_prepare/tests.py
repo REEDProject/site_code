@@ -320,8 +320,7 @@ A note.
         @sl\\Bognor Regis@sl/
         @sr\\Boris's Borough Books & Records@sr/
         @ss\\127.43#61-4/AN@ss/
-        @st\\1609@st/
-        Technical paragraph.
+        @st\\1609@st/ Technical paragraph.
         @md/
         @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/@pc/
 @h\\ABC!1532!ABCD!eng\\!
@@ -349,7 +348,7 @@ Test.
 <idno type="shelfmark">127.43#61-4/AN</idno>
 <msName>Heading</msName>
 </msIdentifier>
-<ab type="techDesc">Technical paragraph.</ab>
+<ab type="techDesc"><date>1609</date> Technical paragraph.</ab>
 </msDesc>'''
         self.assertEqual(actual_desc, expected_desc)
         # Prose paragraph.
@@ -360,8 +359,7 @@ Test.
         @sl\\Bognor Regis@sl/
         @sr\\Boris's Borough Books & Records@sr/
         @ss\\127.43#61-4/AN@ss/
-        @st\\1609@st/
-        Technical paragraph.
+        @st\\1609@st/ Technical paragraph.
         @md/
         @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/@pc/
 @h\\ABC!1532!ABCD!eng\\!
@@ -390,7 +388,7 @@ Test.
 <msName>Heading</msName>
 </msIdentifier>
 <ab type="edDesc">Prose paragraph.</ab>
-<ab type="techDesc">Technical paragraph.</ab>
+<ab type="techDesc"><date>1609</date> Technical paragraph.</ab>
 </msDesc>'''
         self.assertEqual(actual_desc, expected_desc)
 
