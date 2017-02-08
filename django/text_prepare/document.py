@@ -26,6 +26,7 @@ CONTEXT_LINES_AFTER = 2
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 XSLT_DIR = os.path.join(BASE_DIR, 'xslt')
+AB_TO_P_XSLT_PATH = os.path.join(XSLT_DIR, 'ab_to_p.xsl')
 ADD_AB_XSLT_PATH = os.path.join(XSLT_DIR, 'add_ab.xsl')
 ADD_HEADER_XSLT_PATH = os.path.join(XSLT_DIR, 'add_header.xsl')
 ADD_ID_XSLT_PATH = os.path.join(XSLT_DIR, 'add_id.xsl')
@@ -170,10 +171,10 @@ class Document:
 
         """
         tree = etree.ElementTree(etree.fromstring(text))
-        tree = self._transform(tree, ADD_AB_XSLT_PATH, ADD_ID_XSLT_PATH,
-                               ADD_HEADER_XSLT_PATH,
-                               MASSAGE_FOOTNOTE_XSLT_PATH, REMOVE_AB_XSLT_PATH,
-                               SORT_RECORDS_XSLT_PATH)
+        tree = self._transform(
+            tree, ADD_AB_XSLT_PATH, ADD_ID_XSLT_PATH, ADD_HEADER_XSLT_PATH,
+            MASSAGE_FOOTNOTE_XSLT_PATH, REMOVE_AB_XSLT_PATH,
+            AB_TO_P_XSLT_PATH, SORT_RECORDS_XSLT_PATH)
         return etree.tostring(tree, encoding='unicode', pretty_print=True)
 
     def _replace_word_chars(self, text):

@@ -2,10 +2,10 @@ from django.test import TestCase
 
 from lxml import etree
 
-from .document import (ADD_AB_XSLT_PATH, ADD_HEADER_XSLT_PATH,
-                       ADD_ID_XSLT_PATH, Document, MASSAGE_FOOTNOTE_XSLT_PATH,
-                       REMOVE_AB_XSLT_PATH, SORT_RECORDS_XSLT_PATH,
-                       TIDY_BIBLS_XSLT_PATH)
+from .document import (
+    AB_TO_P_XSLT_PATH, ADD_AB_XSLT_PATH, ADD_HEADER_XSLT_PATH,
+    ADD_ID_XSLT_PATH, Document, MASSAGE_FOOTNOTE_XSLT_PATH,
+    REMOVE_AB_XSLT_PATH, SORT_RECORDS_XSLT_PATH, TIDY_BIBLS_XSLT_PATH)
 from .document_parser import DocumentParser
 
 
@@ -766,6 +766,124 @@ class TestXSLT (TestCase):
         result_tree = self._doc._transform(tree, *xslt_paths)
         return etree.tostring(result_tree, encoding='unicode',
                               pretty_print=True)
+
+    def test_ab_to_p(self):
+        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<text>
+<group>
+<text type="record">
+<body>
+<head>@h head 1</head>
+<div type="transcription">
+<div><head>@w head 1.1</head>
+<pb/>
+
+<ab>Some text.</ab>
+
+<ab>More text.</ab>
+
+<list><item>Item.</item></list>
+
+<closer>Bye</closer>
+</div>
+</div>
+<div type="endnote">
+<ab>
+End note text.</ab>
+</div>
+</body>
+</text>
+<text type="record">
+<body>
+<head>@h head 2</head>
+<div type="transcription">
+<div><head>@w head 2.1</head>
+<ab>
+Transcription text.</ab>
+
+<table><r><c>Cell text 1</c><c>Cell text 2</c></r></table>
+
+<ab>
+After table text.
+</ab>
+</div>
+<div><head>@w head 2.2</head>
+<ab>More transcription text.
+</ab>
+</div>
+</div>
+<div type="translation">
+<div><head>@w head 2.1</head>
+<pb/>
+
+<ab>Translation text.</ab>
+</div>
+</div>
+</body>
+</text>
+</group>
+</text>
+</TEI>'''
+        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<text>
+<group>
+<text type="record">
+<body>
+<head>@h head 1</head>
+<div type="transcription">
+<div><head>@w head 1.1</head>
+<pb/>
+
+<ab>Some text.</ab>
+
+<ab>More text.</ab>
+
+<list><item>Item.</item></list>
+
+<closer>Bye</closer>
+</div>
+</div>
+<div type="endnote">
+<p>
+End note text.</p>
+</div>
+</body>
+</text>
+<text type="record">
+<body>
+<head>@h head 2</head>
+<div type="transcription">
+<div><head>@w head 2.1</head>
+<ab>
+Transcription text.</ab>
+
+<table><r><c>Cell text 1</c><c>Cell text 2</c></r></table>
+
+<ab>
+After table text.
+</ab>
+</div>
+<div><head>@w head 2.2</head>
+<ab>More transcription text.
+</ab>
+</div>
+</div>
+<div type="translation">
+<div><head>@w head 2.1</head>
+<pb/>
+
+<ab>Translation text.</ab>
+</div>
+</div>
+</body>
+</text>
+</group>
+</text>
+</TEI>
+'''
+        actual = self._transform(text, AB_TO_P_XSLT_PATH)
+        self.assertEqual(actual, expected)
+
 
     def test_add_ab(self):
         text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
