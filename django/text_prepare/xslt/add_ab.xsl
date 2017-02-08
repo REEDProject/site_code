@@ -20,7 +20,7 @@
   </xsl:template>
 
   <!-- Transcription section divs. -->
-  <xsl:template match="tei:div[../@type='transcription']">
+  <xsl:template match="tei:div[../@type='transcription' or ../@type='translation']">
     <xsl:copy>
       <xsl:apply-templates select="@*" />
       <xsl:apply-templates select="tei:head" />

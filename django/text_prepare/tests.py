@@ -805,6 +805,14 @@ After table text.
 <lb/><lb/>More transcription text.
 </div>
 </div>
+<div type="translation">
+<div>
+<head>@w head 2.1</head>
+<pb />
+<lb/>Translation text.<lb/>
+<lb/>
+</div>
+</div>
 </body>
 </text>
 </group>
@@ -852,6 +860,13 @@ After table text.
 <div><head>@w head 2.2</head>
 <ab>More transcription text.
 </ab>
+</div>
+</div>
+<div type="translation">
+<div><head>@w head 2.1</head>
+<pb/>
+
+<ab>Translation text.</ab>
 </div>
 </div>
 </body>
