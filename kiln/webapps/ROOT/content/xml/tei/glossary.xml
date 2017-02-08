@@ -6,10 +6,10 @@
             <titleStmt>
                 <title type="main">Glossary</title>
                 <funder><orgName>Jackman Foundation, Toronto, Canada</orgName></funder>
-                <funder><orgName>National Endowment for the Humanities, Washington, DC, United States of
-                    America</orgName></funder>
+                <funder><orgName>National Endowment for the Humanities, Washington, DC, United
+                        States of America</orgName></funder>
                 <funder><orgName>Social Sciences and Humanities Research Council, Ottawa,
-                    Canada</orgName></funder>
+                        Canada</orgName></funder>
                 <editor>J. Alan B. Somerset</editor>
                 <respStmt>
                     <persName>C. Black</persName>
@@ -50,7 +50,8 @@
                 <respStmt>
                     <persName>Sally-Beth MacLean</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Principal Investigator, SSHRC grant; Director of Research and General Editor</resp>
+                    <resp>Principal Investigator, SSHRC grant; Director of Research and General
+                        Editor</resp>
                 </respStmt>
                 <respStmt>
                     <persName>Byron Moldofsky</persName>
@@ -72,7 +73,8 @@
                 </respStmt>
             </titleStmt>
             <editionStmt>
-                <edition>version 1, released <date when-iso="2017-02-01">1 February 2017</date></edition>
+                <edition>version 1, released <date when-iso="2017-02-01">1 February
+                    2017</date></edition>
             </editionStmt>
             <publicationStmt>
                 <authority><orgName>Records of Early English Drama (REED)</orgName>
@@ -85,28 +87,28 @@
                 </authority>
                 <availability>
                     <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
-                        <date>2017</date></p>
-                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed under a
-                        Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA
-                        4.0) licence.</licence>
+                            <date>2017</date></p>
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed
+                        under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+                        International (CC BY-NC-SA 4.0) licence.</licence>
                 </availability>
             </publicationStmt>
             <seriesStmt>
                 <title>Records of Early English Drama</title>
             </seriesStmt>
             <sourceDesc>
-                <p>Born digital. Information on original sources for transcriptions can be accessed via the
-                    Document Descriptions.</p>
+                <p>Born digital. Information on original sources for transcriptions can be accessed
+                    via the Document Descriptions.</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
             <projectDesc>
-                <p>Records of Early English Drama (REED) is an international scholarly project that is
-                    establishing for the first time the context from which the drama of Shakespeare and his
-                    contemporaries grew. Founded in 1976, REED has worked since then to locate, transcribe,
-                    and edit historical documents containing evidence of drama, secular music, and other
-                    communal entertainment and ceremony from the Middle Ages until 1642, when the Puritans
-                    closed the London theatres.</p>
+                <p>Records of Early English Drama (REED) is an international scholarly project that
+                    is establishing for the first time the context from which the drama of
+                    Shakespeare and his contemporaries grew. Founded in 1976, REED has worked since
+                    then to locate, transcribe, and edit historical documents containing evidence of
+                    drama, secular music, and other communal entertainment and ceremony from the
+                    Middle Ages until 1642, when the Puritans closed the London theatres.</p>
             </projectDesc>
         </encodingDesc>
         <profileDesc>
@@ -117,13 +119,139 @@
             </langUsage>
         </profileDesc>
         <revisionDesc>
-            <change></change>
+            <change/>
             <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
         </revisionDesc>
     </teiHeader>
-    
+
     <text>
         <front>
+            <div xml:id="gloss_abbreviations">
+                <list type="gloss">
+                    <label>abbr</label>
+                    <item>abbreviation</item>
+                    <label>abl</label>
+                    <item>ablative</item>
+                    <label>abs</label>
+                    <item>absolute</item>
+                    <label>adj</label>
+                    <item>adjective</item>
+                    <label>adv</label>
+                    <item>adverb(ial)</item>
+                    <label>AL</label>
+                    <item>Anglo-Latin</item>
+                    <label>art</label>
+                    <item>article</item>
+                    <label>attr</label>
+                    <item>attributive</item>
+                    <label>CL</label>
+                    <item>Classical Latin</item>
+                    <label>coll</label>
+                    <item>collective</item>
+                    <label>comp</label>
+                    <item>compound</item>
+                    <label>compar</label>
+                    <item>comparative</item>
+                    <label>conj</label>
+                    <item>conjunction</item>
+                    <label>cp</label>
+                    <item>compare</item>
+                    <label>dat</label>
+                    <item>dative</item>
+                    <label>def</label>
+                    <item>definite</item>
+                    <label>E</label>
+                    <item>English</item>
+                    <label>EG</label>
+                    <item>English Glossary</item>
+                    <label>F</label>
+                    <item>French</item>
+                    <label>f</label>
+                    <item>feminine</item>
+                    <label>fut</label>
+                    <item>future tense</item>
+                    <label>gen</label>
+                    <item>genitive</item>
+                    <label>Gk</label>
+                    <item>Greek</item>
+                    <label>imper</label>
+                    <item>imperative</item>
+                    <label>indecl</label>
+                    <item>indeclinable</item>
+                    <label>inf</label>
+                    <item>infinitive</item>
+                    <label>interj</label>
+                    <item>interjection</item>
+                    <label>intr</label>
+                    <item>intransitive</item>
+                    <label>L</label>
+                    <item>Latin</item>
+                    <label>LL</label>
+                    <item>Late Latin</item>
+                    <label>m</label>
+                    <item>masculine</item>
+                    <label>ML</label>
+                    <item>Medieval Latin</item>
+                    <label>n</label>
+                    <item>noun</item>
+                    <label>nom</label>
+                    <item>nominative</item>
+                    <label>nt</label>
+                    <item>neuter</item>
+                    <label>obj</label>
+                    <item>objective</item>
+                    <label>OE</label>
+                    <item>Old English</item>
+                    <label>OT</label>
+                    <item>Old Testament</item>
+                    <label>pa</label>
+                    <item>past tense</item>
+                    <label>pasp</label>
+                    <item>passive participle</item>
+                    <label>pass</label>
+                    <item>passive</item>
+                    <label>per</label>
+                    <item>person</item>
+                    <label>pfp</label>
+                    <item>perfect participle</item>
+                    <label>phr</label>
+                    <item>phrase</item>
+                    <label>pl</label>
+                    <item>plural</item>
+                    <label>poss</label>
+                    <item>possessive</item>
+                    <label>pp</label>
+                    <item>past participle</item>
+                    <label>ppl</label>
+                    <item>participial</item>
+                    <label>pr</label>
+                    <item>present tense</item>
+                    <label>prep</label>
+                    <item>preposition</item>
+                    <label>pron</label>
+                    <item>pronoun</item>
+                    <label>prp</label>
+                    <item>present participle</item>
+                    <label>rel</label>
+                    <item>relative</item>
+                    <label>sbst</label>
+                    <item>substantive</item>
+                    <label>sg</label>
+                    <item>singular</item>
+                    <label>subj</label>
+                    <item>subjunctive</item>
+                    <label>superl</label>
+                    <item>superlative</item>
+                    <label>tr</label>
+                    <item>transitive</item>
+                    <label>v</label>
+                    <item>verb</item>
+                    <label>var</label>
+                    <item>variant</item>
+                    <label>vb</label>
+                    <item>verbal</item>
+                </list>
+            </div>
             <div xml:id="latin_headnote" corresp="#latin">
                 <p>Words are included in the Latin Glossary if they are not found with the required
                     sense in the <title>Oxford Latin Dictionary</title> (OLD), as supplemented where
@@ -135,19 +263,18 @@
                     alone:</p>
                 <p><hi rend="italic">c</hi> for <hi rend="italic">t</hi> before <hi rend="italic"
                         >i</hi></p>
-                <p><hi rend="italic">cc</hi> for <hi rend="italic">ct</hi> before <hi
-                        rend="italic">i</hi></p>
+                <p><hi rend="italic">cc</hi> for <hi rend="italic">ct</hi> before <hi rend="italic"
+                        >i</hi></p>
                 <p><hi rend="italic">-d</hi> for <hi rend="italic">-t</hi> in final position</p>
                 <p><hi rend="italic">e</hi> for <hi rend="italic">ae</hi> or <hi rend="italic"
                         >oe</hi></p>
-                <p><hi rend="italic">ff-</hi> for <hi rend="italic">f-</hi> in initial
-                    position</p>
+                <p><hi rend="italic">ff-</hi> for <hi rend="italic">f-</hi> in initial position</p>
                 <p>addition or omission of <hi rend="italic">h</hi></p>
                 <p>variation between <hi rend="italic">i</hi> and <hi rend="italic">e</hi> or <hi
                         rend="italic">ar</hi> and <hi rend="italic">er</hi> in medial positions,
                     especially before another vowel</p>
-                <p>variation between <hi rend="italic">de-</hi> and <hi rend="italic">di-</hi> as
-                    a prefix</p>
+                <p>variation between <hi rend="italic">de-</hi> and <hi rend="italic">di-</hi> as a
+                    prefix</p>
                 <p><hi rend="italic">n</hi> for <hi rend="italic">m</hi> before another nasal or a
                     stop (eg, <hi rend="italic">inp-</hi> for <hi rend="italic">imp-</hi>)</p>
                 <p>intrusion of <hi rend="italic">p</hi> in consonant clusters <hi rend="italic"
@@ -164,14 +291,14 @@
                     of the nominative singular or, in the case of adjectives of one ending, by the
                     nominative and genitive; verbs by their principal parts.</p>
             </div>
-            <div xml:id="anglo-french_headnote" corresp="#anglo-french">  
+            <div xml:id="anglo-french_headnote" corresp="#anglo-french">
                 <p>Words have been included in the Anglo-French Glossary if they are not found with
                     the required sense in either the <title>Collins-Robert French Dictionary</title>
                     or in the <ref target="http://www.anglo-norman.net">Anglo-Norman Dictionary
-                        Online</ref> (AND) or cannot be easily found there in the spelling in which they
-                    occur in the text. Words with unusual spellings have been not been included if
-                    they are treated in the text as scribal errors and footnoted, or if they are the
-                    result of the following common spelling variations alone:</p>
+                        Online</ref> (AND) or cannot be easily found there in the spelling in which
+                    they occur in the text. Words with unusual spellings have been not been included
+                    if they are treated in the text as scribal errors and footnoted, or if they are
+                    the result of the following common spelling variations alone:</p>
                 <p>doubling of single consonants</p>
                 <p>singling of double consonants</p>
                 <p>elision of preceding <hi rend="italic">de</hi>, <hi rend="italic">la</hi>, <hi
@@ -184,10 +311,10 @@
                 <p><hi rend="italic">au</hi> for <hi rend="italic">a</hi> or <hi rend="italic"
                         >al</hi></p>
                 <p>addition or omission of final <hi rend="italic">e</hi></p>
-                <p><hi rend="italic">-ent</hi> for <hi rend="italic">-ant</hi> in final position
-                    and vice versa</p>
-                <p><hi rend="italic">-es</hi> for <hi rend="italic">-ez</hi> or vice versa in
-                    final position</p>
+                <p><hi rend="italic">-ent</hi> for <hi rend="italic">-ant</hi> in final position and
+                    vice versa</p>
+                <p><hi rend="italic">-es</hi> for <hi rend="italic">-ez</hi> or vice versa in final
+                    position</p>
                 <p><hi rend="italic">oe</hi> or <hi rend="italic">oi</hi> for <hi rend="italic"
                         >e</hi> or <hi rend="italic">ei</hi></p>
                 <p><hi rend="italic">ou</hi> for <hi rend="italic">o</hi></p>
@@ -208,19 +335,16 @@
                     they have been treated in the text as scribal errors and footnoted, or if they
                     are the result of the following common spelling variations alone:</p>
                 <p>doubling of single consonants and vice versa</p>
-                <p><hi rend="italic">a</hi>/<hi rend="italic">ai</hi>/<hi rend="italic"
-                    >ay</hi></p>
+                <p><hi rend="italic">a</hi>/<hi rend="italic">ai</hi>/<hi rend="italic">ay</hi></p>
                 <p><hi rend="italic">a</hi>/<hi rend="italic">au</hi></p>
                 <p><hi rend="italic">ar</hi>/<hi rend="italic">er</hi></p>
                 <p><hi rend="italic">c</hi>/<hi rend="italic">s</hi></p>
-                <p><hi rend="italic">ea</hi>/<hi rend="italic">e</hi>/<hi rend="italic"
-                    >ei</hi></p>
+                <p><hi rend="italic">ea</hi>/<hi rend="italic">e</hi>/<hi rend="italic">ei</hi></p>
                 <p><hi rend="italic">e</hi>/<hi rend="italic">i</hi></p>
                 <p><hi rend="italic">ie</hi>/<hi rend="italic">e(e)</hi></p>
                 <p><hi rend="italic">i</hi>/<hi rend="italic">j</hi></p>
                 <p><hi rend="italic">i</hi>/<hi rend="italic">y</hi></p>
-                <p><hi rend="italic">oa</hi>/<hi rend="italic">o</hi>/<hi rend="italic"
-                    >oo</hi></p>
+                <p><hi rend="italic">oa</hi>/<hi rend="italic">o</hi>/<hi rend="italic">oo</hi></p>
                 <p><hi rend="italic">o</hi>/<hi rend="italic">ou</hi></p>
                 <p><hi rend="italic">o</hi>/<hi rend="italic">u</hi></p>
                 <p><hi rend="italic">s</hi>/<hi rend="italic">z</hi></p>
@@ -231,12 +355,12 @@
                 <p>presence or absence of final <hi rend="italic">-e</hi></p>
                 <p>medial <hi rend="italic">d</hi> for <hi rend="italic">th</hi> (eg, <hi
                         rend="italic">fader</hi> for <hi rend="italic">father</hi>)</p>
-                <p>plurals ending in <hi rend="italic">-n</hi> (eg, <hi rend="italic">shoon</hi>
-                    for <hi rend="italic">shoes</hi>)</p>
+                <p>plurals ending in <hi rend="italic">-n</hi> (eg, <hi rend="italic">shoon</hi> for
+                        <hi rend="italic">shoes</hi>)</p>
                 <p><hi rend="italic">3</hi>/<hi rend="italic">y</hi></p>
                 <p>elision of <hi rend="italic">the</hi> with words beginning with a vowel or <hi
-                        rend="italic">h</hi> (<hi rend="italic">thandes</hi> for <hi
-                        rend="italic">the hands</hi>)</p>
+                        rend="italic">h</hi> (<hi rend="italic">thandes</hi> for <hi rend="italic"
+                        >the hands</hi>)</p>
                 <p>fusion of indefinite article with following noun or adjective (eg, <hi
                         rend="italic">aboke</hi> for <hi rend="italic">a book</hi>)</p>
                 <p>The capitalization of headwords conforms to modern usage. A word appearing in
@@ -265,9 +389,8 @@
                         <form>
                             <orth>balletta</orth>
                             <gram>var of</gram>
-                        </form> 
-                        <sense xml:id="balletta-1">ballada
-                            <ref>[<hi rend="italic">DML</hi>]</ref>
+                        </form>
+                        <sense xml:id="balletta-1">ballada <ref>[<hi rend="italic">DML</hi>]</ref>
                             <!-- <cit>
                         <quote>Canto ballettae</quote>
                         <ptr target="staffs.xml#term-abc123"/>
@@ -279,7 +402,8 @@
                             <orth>Bertelinus, -i</orth>
                             <gram>n m</gram>
                         </form>
-                        <sense xml:id="Bertelinus-1">St Bettelin (dates unknown), patron of Stafford</sense>
+                        <sense xml:id="Bertelinus-1">St Bettelin (dates unknown), patron of
+                            Stafford</sense>
                     </entry>
                     <!-- in record text or notes (id only needed if pointing to it from glossary) 
                 <p> Canto <term xml:id="term-abc123" ref="glossary-la.xml#balletta-1"
@@ -292,7 +416,7 @@
                             <gram>n f</gram>
                         </form>
                         <sense xml:id="cantalena-1"><hi rend="italic">var of</hi> cantilena
-                            <ref>[<hi rend="italic">DML</hi>]</ref>
+                                    <ref>[<hi rend="italic">DML</hi>]</ref>
                         </sense>
                     </entry>
                     <entry xml:id="carectata">
@@ -300,8 +424,8 @@
                             <orth>carectata, -e</orth>
                             <gram>n f</gram>
                         </form>
-                        <sense xml:id="carectata-1">var of carrettata
-                            <ref>[<hi rend="italic">DML</hi>]</ref></sense>
+                        <sense xml:id="carectata-1">var of carrettata <ref>[<hi rend="italic"
+                                    >DML</hi>]</ref></sense>
                     </entry>
                 </div>
                 <div n="E" xml:id="gloss-la-E">
@@ -310,14 +434,12 @@
                             <orth>episcopus, -i</orth>
                             <gram>n m</gram>
                         </form>
-                        <sense xml:id="episcopus-1">bishop;
-                        <form>
-                            <orth>~ puerorum</orth>  
-                        </form>
-                        boy bishop, a boy, originally a choirboy in a cathedral or other collegiate church or a student in an
-                            almonry school, chosen to act as a mock bishop in liturgical and other
-                            observances on the feast of St Nicholas or of the Holy Innocents
-                        </sense>
+                        <sense xml:id="episcopus-1">bishop; <form>
+                                <orth>~ puerorum</orth>
+                            </form> boy bishop, a boy, originally a choirboy in a cathedral or other
+                            collegiate church or a student in an almonry school, chosen to act as a
+                            mock bishop in liturgical and other observances on the feast of St
+                            Nicholas or of the Holy Innocents </sense>
                     </entry>
                 </div>
                 <div n="L" xml:id="gloss-la-L">
@@ -326,8 +448,8 @@
                             <orth>ludus, -i</orth>
                             <gram>n m</gram></form>
                         <sense xml:id="ludus-1">entertainment, ‘play,’ of an unspecified kind, not
-                            necessarily dramatic 
-                            <ref>[<hi rend="italic">see also</hi> <hi rend="italic">DML</hi> ludus]</ref>
+                            necessarily dramatic <ref>[<hi rend="italic">see also</hi>
+                                <hi rend="italic">DML</hi> ludus]</ref>
                         </sense>
                     </entry>
                 </div>
@@ -337,15 +459,15 @@
                             <orth>Malbanus</orth>
                         </form>
                         <xr><hi rend="italic">see</hi>
-                            <hi rend="bold">vicus Malbanus</hi></xr>  
+                            <hi rend="bold">vicus Malbanus</hi></xr>
                     </entry>
                     <entry xml:id="michaelis">
                         <form>
                             <orth>Michaelis, -e</orth>
                             <gram>adj</gram>
                         </form>
-                        <sense xml:id="Michaelis-1">of or pertaining to St Michael;
-                        <xr><hi rend="italic">see also</hi> terminus</xr>  
+                        <sense xml:id="Michaelis-1">of or pertaining to St Michael; <xr><hi
+                                    rend="italic">see also</hi> terminus</xr>
                         </sense>
                     </entry>
                 </div>
@@ -355,8 +477,8 @@
                             <orth>parcellum, -i</orth>
                             <gram>n n</gram>
                         </form>
-                        <sense xml:id="parcellum-1"><hi rend="italic">var of</hi> parcella
-                            <ref>[<hi rend="italic">DML</hi>]</ref>
+                        <sense xml:id="parcellum-1"><hi rend="italic">var of</hi> parcella <ref>[<hi
+                                    rend="italic">DML</hi>]</ref>
                         </sense>
                     </entry>
                     <entry xml:id="parochialis">
@@ -381,12 +503,9 @@
                             <orth>terminus, -i</orth>
                             <gram>n m</gram>
                         </form>
-                        <sense xml:id="terminus-1">term, here a law term;
-                            <form>
+                        <sense xml:id="terminus-1">term, here a law term; <form>
                                 <orth>~ Michaelis</orth>
-                            </form>
-                            Michaelmas term
-                        </sense>  
+                            </form> Michaelmas term </sense>
                     </entry>
                 </div>
                 <div n="V" xml:id="gloss-la-V">
@@ -409,8 +528,9 @@
                             <gram>n m</gram>
                         </form>
                         <sense xml:id="histrio-1">in CL, an actor; sense widening in ML, here an
-                            entertainer, or performer of some kind unspecified 
-                            <ref>[<hi rend="italic">see</hi> histrio <hi rend="italic">DML</hi>, <hi rend="italic">OLD</hi>]</ref>
+                            entertainer, or performer of some kind unspecified <ref>[<hi
+                                    rend="italic">see</hi> histrio <hi rend="italic">DML</hi>, <hi
+                                    rend="italic">OLD</hi>]</ref>
                         </sense>
                     </entry>
                 </div>
@@ -423,8 +543,8 @@
                             <orth>aderer</orth>
                             <gram>pfp</gram>
                         </form>
-                        <sense xml:id="aderer-1">owed 
-                            <ref>[<hi rend="italic">AND</hi> aderere]</ref>
+                        <sense xml:id="aderer-1">owed <ref>[<hi rend="italic">AND</hi>
+                                aderere]</ref>
                         </sense>
                     </entry>
                     <entry xml:id="aenes">
@@ -432,8 +552,8 @@
                             <orth>aenes</orth>
                             <gram>adv</gram>
                         </form>
-                        <sense xml:id="aenes-1">first, before others 
-                            <ref>[<hi rend="italic">AND</hi> ainz]</ref>
+                        <sense xml:id="aenes-1">first, before others <ref>[<hi rend="italic"
+                                    >AND</hi> ainz]</ref>
                         </sense>
                     </entry>
                     <entry xml:id="arrae">
@@ -441,8 +561,8 @@
                             <orth>arrae</orth>
                             <gram>pfp</gram>
                         </form>
-                        <sense xml:id="arrae-1">arrayed 
-                            <ref>[<hi rend="italic">AND</hi> arraier]</ref>
+                        <sense xml:id="arrae-1">arrayed <ref>[<hi rend="italic">AND</hi>
+                                arraier]</ref>
                         </sense>
                     </entry>
                 </div>
@@ -451,11 +571,11 @@
                         <form>
                             <orth>bouche</orth>
                             <gram>in phr</gram>
-                            <orth>estre a bouche en court</orth>, 
-                            <orth>estre a bouche de court</orth>
+                            <orth>estre a bouche en court</orth>, <orth>estre a bouche de
+                                court</orth>
                         </form>
-                        <sense xml:id="bouche-1">to have an allowance for food 
-                            <ref>[see <hi rend="italic">AND</hi> bouche]</ref>
+                        <sense xml:id="bouche-1">to have an allowance for food <ref>[see <hi
+                                    rend="italic">AND</hi> bouche]</ref>
                         </sense>
                     </entry>
                 </div>
@@ -465,8 +585,8 @@
                             <orth>datantz</orth>
                             <gram>prp</gram>
                         </form>
-                        <sense xml:id="datantz-1">giving 
-                            <ref>[<hi rend="italic">OLD</hi> dato]</ref>
+                        <sense xml:id="datantz-1">giving <ref>[<hi rend="italic">OLD</hi>
+                                dato]</ref>
                         </sense>
                     </entry>
                     <entry xml:id="derreinement">
@@ -474,8 +594,8 @@
                             <orth>derreinement</orth>
                             <gram>adv</gram>
                         </form>
-                        <sense xml:id="derreinement-1">finally, at last 
-                            <ref>[see <hi rend="italic">AND</hi> derrein]</ref>
+                        <sense xml:id="derreinement-1">finally, at last <ref>[see <hi rend="italic"
+                                    >AND</hi> derrein]</ref>
                         </sense>
                     </entry>
                     <entry xml:id="desouzescrites">
@@ -487,12 +607,11 @@
                     </entry>
                     <entry xml:id="destrer">
                         <form>
-                            <orth>destrer</orth>,
-                            <orth>destere</orth>
+                            <orth>destrer</orth>, <orth>destere</orth>
                             <gram>n m</gram>
                         </form>
                         <sense xml:id="destrer-1">charger, horse ridden in charging a combatant
-                            <ref>[<hi rend="italic">AND</hi> destrer]</ref>
+                                    <ref>[<hi rend="italic">AND</hi> destrer]</ref>
                         </sense>
                     </entry>
                     <entry xml:id="desusescrites">
@@ -513,8 +632,8 @@
                         <form><orth>deussiez</orth>
                             <gram>2 pl imperfect subj of</gram>
                         </form>
-                        <sense xml:id="deussiez-1">deveir 
-                            <ref>[<hi rend="italic">AND</hi>]</ref></sense>
+                        <sense xml:id="deussiez-1">deveir <ref>[<hi rend="italic"
+                            >AND</hi>]</ref></sense>
                     </entry>
                 </div>
                 <div n="M" xml:id="gloss-af-M">
@@ -523,15 +642,14 @@
                             <orth>meuuance</orth>
                             <gram>prp</gram>
                         </form>
-                        <sense xml:id="meuuance-1">moving 
-                            <ref>[<hi rend="italic">AND</hi> mover]</ref></sense>
+                        <sense xml:id="meuuance-1">moving <ref>[<hi rend="italic">AND</hi>
+                                mover]</ref></sense>
                     </entry>
                 </div>
                 <div n="N" xml:id="gloss-af-N">
                     <entry xml:id="nientcontresfecantes">
                         <form>
-                            <orth>nientcontresfecantes</orth>, 
-                            <orth>nient contreefieantes</orth>
+                            <orth>nientcontresfecantes</orth>, <orth>nient contreefieantes</orth>
                             <gram>postpositive prep</gram>
                         </form>
                         <sense xml:id="nientcontresfecantes-1">notwithstanding</sense>
@@ -543,8 +661,7 @@
                             <orth>ottroiez</orth>
                             <gram>pfp</gram>
                         </form>
-                        <sense>permitted 
-                            <ref>[<hi rend="italic">AND</hi> ottreier]</ref></sense>
+                        <sense>permitted <ref>[<hi rend="italic">AND</hi> ottreier]</ref></sense>
                     </entry>
                 </div>
                 <div n="P" xml:id="gloss-af-P">
@@ -553,17 +670,16 @@
                             <orth>plerra</orth>
                             <gram>fut 3 pl</gram>
                         </form>
-                        <sense xml:id="plerra-1">of plaisir 
-                            <ref>[<hi rend="small-=caps"><hi rend="italic">AND</hi></hi>]</ref></sense>
+                        <sense xml:id="plerra-1">of plaisir <ref>[<hi rend="small-=caps"><hi
+                                        rend="italic">AND</hi></hi>]</ref></sense>
                     </entry>
                     <entry xml:id="pouers">
                         <form>
-                            <orth>pouers</orth> 
+                            <orth>pouers</orth>
                             <gram>m/f pl</gram>
                         </form>
-                        <sense xml:id="pouer-1">poor, needy  
-                            <ref>[<hi rend="italic">AND</hi> povre]</ref>;
-                            <form><orth>pourez</orth></form>
+                        <sense xml:id="pouer-1">poor, needy <ref>[<hi rend="italic">AND</hi>
+                                povre]</ref>; <form><orth>pourez</orth></form>
                         </sense>
                     </entry>
                     <entry xml:id="pouir">
@@ -571,8 +687,8 @@
                             <orth>pouir</orth>
                             <gram>n m</gram>
                         </form>
-                        <sense xml:id="pouir-1"> power, authority 
-                            <ref>[<hi xml:id="small-caps"><hi rend="italic">AND</hi></hi> poer]</ref></sense>
+                        <sense xml:id="pouir-1"> power, authority <ref>[<hi xml:id="small-caps"><hi
+                                        rend="italic">AND</hi></hi> poer]</ref></sense>
                     </entry>
                 </div>
                 <div n="S" xml:id="gloss-af-S">
@@ -581,8 +697,8 @@
                             <orth>surorez</orth>
                             <gram>pfp</gram>
                         </form>
-                        <sense xml:id="surorez-1">gilded
-                            <ref>[<hi rend="italic">AND</hi> surorrer]</ref>
+                        <sense xml:id="surorez-1">gilded <ref>[<hi rend="italic">AND</hi>
+                                surorrer]</ref>
                         </sense>
                     </entry>
                 </div>
@@ -611,8 +727,9 @@
                             <orth>anenst</orth>
                             <gram>prep</gram>
                         </form>
-                        <sense xml:id="anenst-1">anent, before, in the sight of
-                            <ref>[<hi rend="italic">OEDO</hi> anent <hi rend="italic">prep</hi> II]</ref>
+                        <sense xml:id="anenst-1">anent, before, in the sight of <ref>[<hi
+                                    rend="italic">OEDO</hi> anent <hi rend="italic">prep</hi>
+                                II]</ref>
                         </sense>
                     </entry>
 
@@ -629,11 +746,11 @@
                             <orth>arraysed</orth>
                             <gram>v pa</gram>
                         </form>
-                        <sense xml:id="arraysed-1">raised or levied (money, troops, etc) 
-                            <ref>[<hi rend="italic">OEDO</hi> araise <hi rend="italic">v</hi> 3]</ref>; 
-                            <form><orth>aresed</orth></form>;
-                            <form><orth>arreised</orth></form>;
-                            <form><orth>arreysed</orth></form>
+                        <sense xml:id="arraysed-1">raised or levied (money, troops, etc) <ref>[<hi
+                                    rend="italic">OEDO</hi> araise <hi rend="italic">v</hi>
+                            3]</ref>; <form><orth>aresed</orth></form>;
+                                <form><orth>arreised</orth></form>;
+                                <form><orth>arreysed</orth></form>
                         </sense>
                     </entry>
 
@@ -695,8 +812,9 @@
                             <gram>n in phr</gram>
                             <orth>coat and bauble</orth>
                         </form>
-                        <sense xml:id="bauble-1">part of a fool's attire, a baton used as a mock emblem of office 
-                            <ref>[<hi rend="italic">OEDO</hi> bauble <hi rend="italic">n</hi> 4]</ref>
+                        <sense xml:id="bauble-1">part of a fool's attire, a baton used as a mock
+                            emblem of office <ref>[<hi rend="italic">OEDO</hi> bauble <hi
+                                    rend="italic">n</hi> 4]</ref>
                         </sense>
                     </entry>
 
@@ -705,8 +823,7 @@
                             <orth>bayly</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="bayly-1">bailiff; 
-                            <form>
+                        <sense xml:id="bayly-1">bailiff; <form>
                                 <orth>baylyes</orth>
                                 <gram>pl</gram>
                             </form>
@@ -742,8 +859,8 @@
                             <orth>beshrow</orth>
                             <gram>v</gram>
                         </form>
-                        <sense xml:id="beshrow-1">beshrew 
-                            <ref>[<hi rend="italic">OEDO</hi> beshrew <hi rend="italic">v</hi> 3.b]</ref>
+                        <sense xml:id="beshrow-1">beshrew <ref>[<hi rend="italic">OEDO</hi> beshrew
+                                    <hi rend="italic">v</hi> 3.b]</ref>
                         </sense>
                     </entry>
 
@@ -752,18 +869,21 @@
                             <orth>blacke gards</orth>
                             <gram>n pl</gram>
                         </form>
-                        <sense xml:id="blackegards-1">scullions or kitchen servants, or a group of servants holding a similar position in an army (?)
-                            <ref>[<hi rend="italic">OEDO</hi> blackguards <hi rend="italic">n</hi> A.I.2.a, b]</ref>
+                        <sense xml:id="blackegards-1">scullions or kitchen servants, or a group of
+                            servants holding a similar position in an army (?) <ref>[<hi
+                                    rend="italic">OEDO</hi> blackguards <hi rend="italic">n</hi>
+                                A.I.2.a, b]</ref>
                         </sense>
                     </entry>
 
                     <entry xml:id="blast">
                         <form>
                             <orth>blast</orth>
-                            <gram>n in phr</gram> 
+                            <gram>n in phr</gram>
                             <orth>staie a faire blast</orth>
                         </form>
-                        <sense xml:id="blast-1">to remain somewhere for a long period of time (?)</sense>
+                        <sense xml:id="blast-1">to remain somewhere for a long period of time
+                            (?)</sense>
                     </entry>
 
                     <entry xml:id="brake">
@@ -788,7 +908,7 @@
                             <gram>n</gram>
                         </form>
                         <sense xml:id="broadeeye-1">the Broad Eye, a windmill in Stafford;
-                            <form><orth>broadey</orth></form>
+                                    <form><orth>broadey</orth></form>
                         </sense>
                     </entry>
 
@@ -825,10 +945,9 @@
                             <orth>capping</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="capping-1">cap-making, the cap maker's trade 
-                            <ref>[<hi rend="italic">OEDO</hi> capping <hi
-                                    rend="italic">n</hi> 2]</ref>; 
-                            <form><orth>cappinge</orth></form>
+                        <sense xml:id="capping-1">cap-making, the cap maker's trade <ref>[<hi
+                                    rend="italic">OEDO</hi> capping <hi rend="italic">n</hi>
+                                2]</ref>; <form><orth>cappinge</orth></form>
                         </sense>
                     </entry>
 
@@ -837,7 +956,8 @@
                             <orth>chawden</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="chawden-1">chaudon, a kind of sauce containing chopped entrails</sense>
+                        <sense xml:id="chawden-1">chaudon, a kind of sauce containing chopped
+                            entrails</sense>
                     </entry>
 
                     <entry xml:id="chrispianeday">
@@ -845,19 +965,17 @@
                             <orth>chrispiane day</orth>
                             <gram>n phr</gram>
                         </form>
-                        <sense xml:id="chrispianeday-1">St Crispin's Day; 
-                            <form><orth>chryspany day</orth></form>;
-                            <form><orth>chryspian day</orth></form>;
-                            <form><orth>chryspiane day</orth></form>;
-                            <form><orth>crispiany daie</orth></form>;
-                            <form><orth>cryspyany day</orth></form>
+                        <sense xml:id="chrispianeday-1">St Crispin's Day; <form><orth>chryspany
+                                    day</orth></form>; <form><orth>chryspian day</orth></form>;
+                                    <form><orth>chryspiane day</orth></form>; <form><orth>crispiany
+                                    daie</orth></form>; <form><orth>cryspyany day</orth></form>
                         </sense>
                     </entry>
 
                     <entry xml:id="chyrstei">
                         <form>
                             <orth>chyrstei</orth>
-                            <gram>n in phr</gram> 
+                            <gram>n in phr</gram>
                             <orth>corpus chyrstei day</orth>
                         </form>
                         <sense xml:id="chyrstei-1">Corpus Christi Day</sense>
@@ -876,8 +994,7 @@
                             <orth>comyn</orth>
                             <gram>v pp</gram>
                         </form>
-                        <sense xml:id="comyn-1">come;
-                            <form><orth>comynn</orth></form>
+                        <sense xml:id="comyn-1">come; <form><orth>comynn</orth></form>
                         </sense>
                     </entry>
 
@@ -886,9 +1003,9 @@
                             <orth>coorse</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="coorse-1">course, the pursuit of game 
-                            <ref>[<hi rend="italic">OEDO</hi> course <hi rend="italic">n</hi> 7.a]</ref>;
-                            <form><orth>coorsse</orth></form>
+                        <sense xml:id="coorse-1">course, the pursuit of game <ref>[<hi rend="italic"
+                                    >OEDO</hi> course <hi rend="italic">n</hi> 7.a]</ref>;
+                                    <form><orth>coorsse</orth></form>
                         </sense>
                     </entry>
 
@@ -905,13 +1022,11 @@
                             <orth>coursse</orth>
                             <gram>adj</gram>
                         </form>
-                        <sense xml:id="coursse-1">of little or no account, ordinary;
-                            <form>
-                                <orth>~ money</orth></form>
-                            petty cash (?);
-                            <ref>[<hi rend="italic">OEDO</hi> coarse <hi rend="italic">adj</hi> 1.a, b]</ref>,
-                            <ref>[<hi rend="italic">MED</hi> cours <hi rend="italic">adj</hi> (a)]</ref>;
-                            <form><orth>course money</orth></form>
+                        <sense xml:id="coursse-1">of little or no account, ordinary; <form>
+                                <orth>~ money</orth></form> petty cash (?); <ref>[<hi rend="italic"
+                                    >OEDO</hi> coarse <hi rend="italic">adj</hi> 1.a, b]</ref>,
+                                    <ref>[<hi rend="italic">MED</hi> cours <hi rend="italic"
+                                    >adj</hi> (a)]</ref>; <form><orth>course money</orth></form>
                         </sense>
                     </entry>
 
@@ -928,8 +1043,9 @@
                             <orth>curle</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="curle-1">curl; here, possibly a wig (?) 
-                            <ref>[<hi rend="italic">OEDO</hi> curle <hi rend="italic">v.1</hi> 2]</ref>
+                        <sense xml:id="curle-1">curl; here, possibly a wig (?) <ref>[<hi
+                                    rend="italic">OEDO</hi> curle <hi rend="italic">v.1</hi>
+                                2]</ref>
                         </sense>
                     </entry>
 
@@ -950,10 +1066,11 @@
                             <orth>distreyne</orth>
                             <gram>v</gram>
                         </form>
-                        <sense xml:id="distreyne-1">distrain, to constrain or punish a person by seizing their goods 
-                            <ref>[<hi rend="italic">OEDO</hi> distrain <hi rend="italic">v</hi> II.7.a]</ref>; 
-                            <form><orth>distreane</orth></form>;
-                            <form><orth>distreine</orth></form>
+                        <sense xml:id="distreyne-1">distrain, to constrain or punish a person by
+                            seizing their goods <ref>[<hi rend="italic">OEDO</hi> distrain <hi
+                                    rend="italic">v</hi> II.7.a]</ref>;
+                                <form><orth>distreane</orth></form>;
+                                <form><orth>distreine</orth></form>
                         </sense>
                     </entry>
 
@@ -981,7 +1098,7 @@
                         </form>
                         <sense xml:id="droncnes-1">drunkness, drunkenness</sense>
                     </entry>
-                    
+
                 </div>
 
                 <div n="E" xml:id="gloss-eng-E">
@@ -1005,7 +1122,7 @@
                     <entry xml:id="ers">
                         <form>
                             <orth>ers</orth>
-                            <gram>n in phr</gram> 
+                            <gram>n in phr</gram>
                             <orth>newe ers euen</orth>
                         </form>
                         <sense xml:id="ers-1">New Year's Eve</sense>
@@ -1024,8 +1141,8 @@
                         <form>
                             <orth>esoined</orth>
                             <gram>v pa</gram></form>
-                        <sense xml:id="esoined-1">essoined, to be excused or exonerated 
-                            <ref>[<hi rend="italic">OEDO</hi> essoin <hi rend="italic">v</hi> 2]</ref>
+                        <sense xml:id="esoined-1">essoined, to be excused or exonerated <ref>[<hi
+                                    rend="italic">OEDO</hi> essoin <hi rend="italic">v</hi> 2]</ref>
                         </sense>
                     </entry>
 
@@ -1036,8 +1153,8 @@
                         </form>
                         <sense xml:id="extreated-1">estreated, to extract a fine, bail, or
                             forfeiture and give it to an exchequer; loosely, to exact a fine or
-                            enforce a forfeiture 
-                            <ref>[<hi rend="italic">OEDO</hi> estreat <hi rend="italic">v</hi> 1, 2]</ref>
+                            enforce a forfeiture <ref>[<hi rend="italic">OEDO</hi> estreat <hi
+                                    rend="italic">v</hi> 1, 2]</ref>
                         </sense>
                     </entry>
                 </div>
@@ -1058,11 +1175,11 @@
                             <gram>n phr</gram>
                         </form>
                         <sense xml:id="flattcappe-1">flat-cap, one who wears a flat cap; perhaps
-                            here an apprentice (?) 
-                            <ref>[<hi rend="italic">OEDO</hi> flat-cap <hi rend="italic">n</hi> 2]</ref>
+                            here an apprentice (?) <ref>[<hi rend="italic">OEDO</hi> flat-cap <hi
+                                    rend="italic">n</hi> 2]</ref>
                         </sense>
                     </entry>
-                    
+
                     <entry xml:id="flonge">
                         <form>
                             <orth>flonge</orth>
@@ -1070,7 +1187,7 @@
                         </form>
                         <sense xml:id="flonge-1">flung</sense>
                     </entry>
-                
+
                     <entry xml:id="foynes">
                         <form>
                             <orth>foynes</orth>
@@ -1087,8 +1204,8 @@
                             <orth>gane</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="gane-1">gain, a quantity (?) 
-                            <ref>[<hi rend="italic">OEDO</hi> gain <hi rend="italic">n.2</hi> 2.a]</ref>
+                        <sense xml:id="gane-1">gain, a quantity (?) <ref>[<hi rend="italic"
+                                    >OEDO</hi> gain <hi rend="italic">n.2</hi> 2.a]</ref>
                         </sense>
                     </entry>
 
@@ -1097,8 +1214,7 @@
                             <orth>geddred</orth>
                             <gram>v pa</gram>
                         </form>
-                        <sense xml:id="geddred-1">gathered; 
-                            <form><orth>gedyryd</orth></form>
+                        <sense xml:id="geddred-1">gathered; <form><orth>gedyryd</orth></form>
                         </sense>
                     </entry>
 
@@ -1107,7 +1223,8 @@
                             <orth>geyre</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="geyre-1">gear, here equipment used in the performance of a play</sense>
+                        <sense xml:id="geyre-1">gear, here equipment used in the performance of a
+                            play</sense>
                     </entry>
 
                     <entry xml:id="gingelinge">
@@ -1123,8 +1240,7 @@
                             <orth>glase</orth>
                             <gram>v</gram>
                         </form>
-                        <sense xml:id="glase-1">glaze, to furnish with glass
-                            <form>
+                        <sense xml:id="glase-1">glaze, to furnish with glass <form>
                                 <orth>glasinge</orth>
                                 <gram>vb n</gram>
                             </form>
@@ -1169,7 +1285,7 @@
                     <entry xml:id="hale">
                         <form>
                             <orth>hale</orth>
-                            <gram>n in phr</gram> 
+                            <gram>n in phr</gram>
                             <orth>toke hale</orth>
                         </form>
                         <sense xml:id="hale-1">took hold</sense>
@@ -1189,7 +1305,7 @@
                             <gram>n</gram>
                         </form>
                         <sense xml:id="hampton-1">likely a shortening of Wolverhampton;
-                            <form><orth>hamptonn</orth></form>
+                                    <form><orth>hamptonn</orth></form>
                         </sense>
                     </entry>
 
@@ -1198,11 +1314,11 @@
                             <orth>harnes</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="harnes-1">harness, gear, equipment, especially military equipment
-                            or accoutrement 
-                            <ref>[<hi rend="italic">OEDO</hi> harness <hi rend="italic">n</hi> 2.a]</ref>;
-                            <form><orth>harnese</orth></form>;
-                            <form><orth>harnesse</orth></form>
+                        <sense xml:id="harnes-1">harness, gear, equipment, especially military
+                            equipment or accoutrement <ref>[<hi rend="italic">OEDO</hi> harness <hi
+                                    rend="italic">n</hi> 2.a]</ref>;
+                                <form><orth>harnese</orth></form>;
+                                <form><orth>harnesse</orth></form>
                         </sense>
                     </entry>
 
@@ -1223,10 +1339,9 @@
                             <gram>n</gram>
                         </form>
                         <sense xml:id="heuynge-1">heaving, the Easter custom of lifting members of
-                            the opposite sex into the air; 
-                            <form><orth>heyveng</orth></form>;
-                            <form><orth>heywyng</orth></form>;
-                            <form><orth>heywynge</orth></form>
+                            the opposite sex into the air; <form><orth>heyveng</orth></form>;
+                                    <form><orth>heywyng</orth></form>;
+                                <form><orth>heywynge</orth></form>
                         </sense>
                     </entry>
 
@@ -1245,17 +1360,14 @@
                         </form>
                         <sense xml:id="hobbyhorse-1">hobby-horse, a figure of a horse made of wicker
                             or other light material worn about the waist by a performer, typically
-                            at a morris dance; 
-                            <form><orth>hobbe horsse</orth></form>;
-                            <form><orth>hobbey horse</orth></form>;
-                            <form><orth>hobbie horse</orth></form>;
-                            <form><orth>hobbiehorse</orth></form>;
-                            <form><orth>hobbihorse</orth></form>;
-                            <form><orth>hobbyhorse</orth></form>;
-                            <form><orth>hobby horsse</orth></form>;
-                            <form><orth>hobbyhorsse</orth></form>;
-                            <form><orth>hoby horse</orth></form>;
-                            <form><orth>hobyhorse</orth></form>
+                            at a morris dance; <form><orth>hobbe horsse</orth></form>;
+                                    <form><orth>hobbey horse</orth></form>; <form><orth>hobbie
+                                    horse</orth></form>; <form><orth>hobbiehorse</orth></form>;
+                                    <form><orth>hobbihorse</orth></form>;
+                                    <form><orth>hobbyhorse</orth></form>; <form><orth>hobby
+                                    horsse</orth></form>; <form><orth>hobbyhorsse</orth></form>;
+                                    <form><orth>hoby horse</orth></form>;
+                                    <form><orth>hobyhorse</orth></form>
                         </sense>
                     </entry>
 
@@ -1273,7 +1385,7 @@
                     <entry xml:id="ihons">
                         <form>
                             <orth>ihons</orth>
-                            <gram>n poss in phr</gram> 
+                            <gram>n poss in phr</gram>
                             <orth>s ihons day</orth>
                         </form>
                         <sense xml:id="ihons-1">St John's Day, possibly in error for 'Iohns'</sense>
@@ -1292,8 +1404,8 @@
                             <orth>inpannill</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="inpannill-1">empanel, a list of members of a jury 
-                            <ref>[<hi rend="italic">OEDO</hi> empanel <hi rend="italic">n</hi>]</ref>
+                        <sense xml:id="inpannill-1">empanel, a list of members of a jury <ref>[<hi
+                                    rend="italic">OEDO</hi> empanel <hi rend="italic">n</hi>]</ref>
                         </sense>
                     </entry>
 
@@ -1302,8 +1414,9 @@
                             <orth>iurkes</orth>
                             <gram>v pr</gram>
                         </form>
-                        <sense xml:id="iurkes-1">jerks; thrusts, pushes, pulls, or twists with sudden movements 
-                            <ref>[<hi rend="italic">OEDO</hi> jerk <hi rend="italic">v.1</hi> 2.a]</ref>
+                        <sense xml:id="iurkes-1">jerks; thrusts, pushes, pulls, or twists with
+                            sudden movements <ref>[<hi rend="italic">OEDO</hi> jerk <hi
+                                    rend="italic">v.1</hi> 2.a]</ref>
                         </sense>
                     </entry>
 
@@ -1325,8 +1438,11 @@
                             <orth>liberall sciences</orth>
                             <gram>n pl</gram>
                         </form>
-                        <sense xml:id="liberallsciences-1">liberal arts, the branches of learning forming the trivium (grammar, logic, rhetoric) and quadrivium (arithmetic, geometry, music, astronomy) in medieval education 
-                            <ref>[<hi rend="italic">OEDO</hi> science <hi rend="italic">n</hi> 3.a]</ref>
+                        <sense xml:id="liberallsciences-1">liberal arts, the branches of learning
+                            forming the trivium (grammar, logic, rhetoric) and quadrivium
+                            (arithmetic, geometry, music, astronomy) in medieval education <ref>[<hi
+                                    rend="italic">OEDO</hi> science <hi rend="italic">n</hi>
+                                3.a]</ref>
                         </sense>
                     </entry>
 
@@ -1343,8 +1459,8 @@
                             <orth>lyth</orth>
                             <gram>adv</gram>
                         </form>
-                        <sense xml:id="lyth-1">lithe, readily, quickly 
-                            <ref>[<hi rend="italic">MED</hi> lithe <hi rend="italic">adv</hi>]</ref>
+                        <sense xml:id="lyth-1">lithe, readily, quickly <ref>[<hi rend="italic"
+                                    >MED</hi> lithe <hi rend="italic">adv</hi>]</ref>
                         </sense>
                     </entry>
 
@@ -1363,10 +1479,11 @@
                     <entry xml:id="mawkin">
                         <form>
                             <orth>mawkin</orth>
-                            <gram>n in phr</gram> 
+                            <gram>n in phr</gram>
                             <orth>atyred mawkin</orth>
                         </form>
-                        <sense xml:id="mawkin-1">in malkin attire, dressed untidily; used here quasi-adverbially</sense>
+                        <sense xml:id="mawkin-1">in malkin attire, dressed untidily; used here
+                            quasi-adverbially</sense>
                     </entry>
 
                     <entry xml:id="monssall">
@@ -1406,8 +1523,10 @@
                             <orth>mysdemeanannte</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="mysdemeanannte-1">an act of misdemeanour, an actionable offense of misconduct committed by a misdemeanant 
-                            <ref>[<hi rend="italic">OEDO</hi> misdemeanant <hi rend="italic">n</hi> 1]</ref>
+                        <sense xml:id="mysdemeanannte-1">an act of misdemeanour, an actionable
+                            offense of misconduct committed by a misdemeanant <ref>[<hi
+                                    rend="italic">OEDO</hi> misdemeanant <hi rend="italic">n</hi>
+                                1]</ref>
                         </sense>
                     </entry>
 
@@ -1468,9 +1587,8 @@
                             <orth>pesable</orth>
                             <gram>adj</gram>
                         </form>
-                        <sense xml:id="pesable-1">peaceable; 
-                            <form><orth>peysable</orth></form>; 
-                            <form><orth>peysabull</orth></form>
+                        <sense xml:id="pesable-1">peaceable; <form><orth>peysable</orth></form>;
+                                    <form><orth>peysabull</orth></form>
                         </sense>
                     </entry>
 
@@ -1495,7 +1613,8 @@
                             <orth>potal</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="potal-1">pottle; as a unit of capacity, equal to half a gallon</sense>
+                        <sense xml:id="potal-1">pottle; as a unit of capacity, equal to half a
+                            gallon</sense>
                     </entry>
 
                     <entry xml:id="pydecoote">
@@ -1503,8 +1622,9 @@
                             <orth>pyde coote</orth>
                             <gram>n phr</gram>
                         </form>
-                        <sense xml:id="pydecoote-1">pied coat, a fool's coat, typically a coat with variegated colour 
-                            <ref>[<hi rend="italic">OEDO</hi> pied <hi rend="italic">adj</hi> A.1.b and S2]</ref>
+                        <sense xml:id="pydecoote-1">pied coat, a fool's coat, typically a coat with
+                            variegated colour <ref>[<hi rend="italic">OEDO</hi> pied <hi
+                                    rend="italic">adj</hi> A.1.b and S2]</ref>
                         </sense>
                     </entry>
 
@@ -1517,12 +1637,11 @@
                             <orth>querry</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="querry-1">quarry, hunt; 
-                            <form><orth>querrye</orth></form>
+                        <sense xml:id="querry-1">quarry, hunt; <form><orth>querrye</orth></form>
                         </sense>
                     </entry>
                 </div>
-                
+
                 <div n="R" xml:id="gloss-eng-R">
 
                     <entry xml:id="reddere">
@@ -1544,11 +1663,11 @@
                     <entry xml:id="rime">
                         <form>
                             <orth>rime</orth>
-                            <gram>n in phr</gram> 
+                            <gram>n in phr</gram>
                             <orth>rime of the ... bellie</orth>
                         </form>
-                        <sense xml:id="rime-1">the peritoneum 
-                            <ref>[<hi rend="italic">OEDO</hi> rim <hi rend="italic">n.2</hi> 1.b]</ref>
+                        <sense xml:id="rime-1">the peritoneum <ref>[<hi rend="italic">OEDO</hi> rim
+                                    <hi rend="italic">n.2</hi> 1.b]</ref>
                         </sense>
                     </entry>
 
@@ -1565,7 +1684,9 @@
                             <orth>rydware</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="rydware-1">likely one of several hamlets known as Ridware: Pipe Ridware, Mavesyn Ridware, or Hamstall Ridware</sense> <!-- Does "rydware" not have an EATS page? We're definitely not sure which Rydware this is, so maybe it's not worth having a page?--> 
+                        <sense xml:id="rydware-1">likely one of several hamlets known as Ridware:
+                            Pipe Ridware, Mavesyn Ridware, or Hamstall Ridware</sense>
+                        <!-- Does "rydware" not have an EATS page? We're definitely not sure which Rydware this is, so maybe it's not worth having a page?-->
                     </entry>
 
                 </div>
@@ -1599,7 +1720,7 @@
                             <gram>n in phr</gram>
                             <orth>countie of salopia</orth>
                         </form>
-                        <sense xml:id="salopia-2">Shropshire</sense>  
+                        <sense xml:id="salopia-2">Shropshire</sense>
                     </entry>
 
                     <entry xml:id="schochoneofarmes">
@@ -1638,8 +1759,7 @@
                             <orth>shareshull</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="shareshull-1">Shareshill; 
-                            <form><orth>sharesull</orth></form>
+                        <sense xml:id="shareshull-1">Shareshill; <form><orth>sharesull</orth></form>
                         </sense>
                     </entry>
 
@@ -1650,18 +1770,19 @@
                         </form>
                         <sense xml:id="shewerofthechamber-1">attendant responsible for guiding or
                             conducting people to the Great Chamber, Presence Chamber, or other
-                            chamber for audience 
-                            <ref>[<hi rend="italic">OEDO</hi> show <hi rend="italic">v</hi> 16]</ref>
+                            chamber for audience <ref>[<hi rend="italic">OEDO</hi> show <hi
+                                    rend="italic">v</hi> 16]</ref>
                         </sense>
                     </entry>
 
                     <entry xml:id="shueterooll">
                         <form>
-                          <orth>shuete rooll</orth>
-                          <gram>n</gram>
+                            <orth>shuete rooll</orth>
+                            <gram>n</gram>
                         </form>
-                        <sense xml:id="shueterooll-1">sheet roll (?), a record or list 
-                            <ref>[<hi rend="italic">OEDO</hi> roll <hi rend="italic">n.1</hi> I.1.a, b]</ref>
+                        <sense xml:id="shueterooll-1">sheet roll (?), a record or list <ref>[<hi
+                                    rend="italic">OEDO</hi> roll <hi rend="italic">n.1</hi> I.1.a,
+                                b]</ref>
                         </sense>
                     </entry>
 
@@ -1673,14 +1794,16 @@
                         <sense xml:id="somergame-1">summer game; a festival, sport, or entertainment
                             held in the summer</sense>
                     </entry>
-                    
+
                     <entry xml:id="statebodye">
                         <form>
                             <orth>statebodye</orth>
                             <gram>n comp</gram>
                         </form>
-                        <sense xml:id="statebodye-1">state body, the collective population of a town, city, state, etc; especially that portion of the population involved in its government 
-                            <ref>[<hi rend="italic">OEDO</hi> body <hi rend="italic">n</hi> 13.a]</ref>
+                        <sense xml:id="statebodye-1">state body, the collective population of a
+                            town, city, state, etc; especially that portion of the population
+                            involved in its government <ref>[<hi rend="italic">OEDO</hi> body <hi
+                                    rend="italic">n</hi> 13.a]</ref>
                         </sense>
                     </entry>
 
@@ -1713,7 +1836,8 @@
                             <gram>n pl</gram>
                         </form>
                         <sense xml:id="stoopes-1">stoops, pillars or posts used by performers (?)
-                            <ref>[<hi rend="italic">OEDO</hi> stoop <hi rend="italic">n.1</hi> 1.a]</ref>
+                                    <ref>[<hi rend="italic">OEDO</hi> stoop <hi rend="italic"
+                                    >n.1</hi> 1.a]</ref>
                         </sense>
                     </entry>
 
@@ -1722,8 +1846,7 @@
                             <orth>stottfold</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="stottfold-1">Statfold; 
-                            <form><orth>stottefeld</orth></form>
+                        <sense xml:id="stottfold-1">Statfold; <form><orth>stottefeld</orth></form>
                         </sense>
                     </entry>
 
@@ -1740,8 +1863,8 @@
                             <orth>styke</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="styke-1">stick, a length of fabric 
-                            <ref>[<hi rend="italic">OEDO</hi> stick <hi rend="italic">n.3</hi> 1]</ref>
+                        <sense xml:id="styke-1">stick, a length of fabric <ref>[<hi rend="italic"
+                                    >OEDO</hi> stick <hi rend="italic">n.3</hi> 1]</ref>
                         </sense>
                     </entry>
 
@@ -1867,9 +1990,8 @@
                             <orth>weddesbury</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="weddesbury-1">Wednesbury; 
-                            <form><orth>wedesbury</orth></form>; 
-                            <form><orth>widdesbur</orth></form>
+                        <sense xml:id="weddesbury-1">Wednesbury;
+                            <form><orth>wedesbury</orth></form>; <form><orth>widdesbur</orth></form>
                         </sense>
                     </entry>
 
@@ -1880,15 +2002,14 @@
                         </form>
                         <sense xml:id="whom-1">home</sense>
                     </entry>
-                    
+
 
                     <entry xml:id="wicke">
                         <form>
                             <orth>wicke</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="wicke-1">week; 
-                            <form><orth>wycke</orth></form>
+                        <sense xml:id="wicke-1">week; <form><orth>wycke</orth></form>
                         </sense>
                     </entry>
 
@@ -1897,11 +2018,10 @@
                             <orth>willenhale</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="willenhale-1">Willenhall; 
-                            <form><orth>wilnale</orth></form>; 
-                            <form><orth>wilnall</orth></form>; 
-                            <form><orth>wilnehale</orth></form>; 
-                            <form><orth>wylnehale</orth></form>
+                        <sense xml:id="willenhale-1">Willenhall; <form><orth>wilnale</orth></form>;
+                                    <form><orth>wilnall</orth></form>;
+                                <form><orth>wilnehale</orth></form>;
+                                <form><orth>wylnehale</orth></form>
                         </sense>
                     </entry>
 
@@ -1914,32 +2034,30 @@
                             <orth>yeald</orth>
                             <gram>v</gram>
                         </form>
-                        <sense xml:id="yeald-1">yield; 
-                            <form>
+                        <sense xml:id="yeald-1">yield; <form>
                                 <orth>yealdinge</orth>
                                 <gram>v prp</gram>
                             </form>
                         </sense>
                     </entry>
-                    
+
                     <entry xml:id="yeomanofthefeilde">
                         <form>
                             <orth>yeoman of the feilde</orth>
                             <gram>n</gram>
                         </form>
                         <sense xml:id="yeomanofthefeilde-1">a household official, servant, or
-                            attendant; specific duties are unknown 
-                        </sense>
+                            attendant; specific duties are unknown </sense>
                     </entry>
-                    <!-- Possibly an area for future research. --> 
+                    <!-- Possibly an area for future research. -->
 
                     <entry xml:id="ynto">
                         <form>
                             <orth>ynto</orth>
                             <gram>prep</gram>
                         </form>
-                        <sense xml:id="ynto-1">into, unto 
-                            <ref>[<hi rend="italic">OEDO</hi> into <hi rend="italic">prep and adj</hi> 16]</ref>
+                        <sense xml:id="ynto-1">into, unto <ref>[<hi rend="italic">OEDO</hi> into <hi
+                                    rend="italic">prep and adj</hi> 16]</ref>
                         </sense>
                     </entry>
 
@@ -1948,11 +2066,12 @@
                             <orth>yomen of the bottells</orth>
                             <gram>n pl</gram>
                         </form>
-                        <sense xml:id="yomenofthebottells-1">household officials, servants, or attendants charged with procuring drink 
-                            <ref>[<hi rend="italic">OEDO</hi> yeoman <hi rend="italic">n</hi> C3.a]</ref>
+                        <sense xml:id="yomenofthebottells-1">household officials, servants, or
+                            attendants charged with procuring drink <ref>[<hi rend="italic"
+                                    >OEDO</hi> yeoman <hi rend="italic">n</hi> C3.a]</ref>
                         </sense>
                     </entry>
-                    
+
                     <entry xml:id="yomenofthemouthe">
                         <form>
                             <orth>yomen of the mouthe</orth>
@@ -1960,8 +2079,8 @@
                         </form>
                         <sense xml:id="yomenofthemouthe-1">household officials, servants, or
                             attendants charged with maintaining a pantry, or with providing or
-                            serving food and drink 
-                            <ref>[<hi rend="italic">OEDO</hi> yeoman <hi rend="italic">n</hi> C3.a]</ref>
+                            serving food and drink <ref>[<hi rend="italic">OEDO</hi> yeoman <hi
+                                    rend="italic">n</hi> C3.a]</ref>
                         </sense>
                     </entry>
                 </div>
