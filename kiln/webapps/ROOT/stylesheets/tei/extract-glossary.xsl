@@ -18,6 +18,7 @@
       <text>
         <front>
           <xsl:copy-of select="id(substring-after($glossary/@corresp, '#'))" />
+          <xsl:copy-of select="id('gloss_abbreviations')" />
         </front>
         <body>
           <xsl:copy-of select="$glossary" />

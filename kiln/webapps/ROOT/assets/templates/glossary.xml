@@ -129,10 +129,15 @@
                   <li class="accordion" data-accordion-item="">
                     <a href="#" class="accordion-title">Glossary Notes</a>
                     <div class="accordion-content" data-tab-content="">
-                      <xsl:apply-templates select="$text/tei:front/tei:div" />
+                      <xsl:apply-templates select="$text/tei:front/tei:div[not(@xml:id='gloss_abbreviations')]" />
                     </div>
                   </li>
-                  <!-- QAZ: accordion for abbreviations. Do we have any? -->
+                  <li class="accordion" data-accordion-item="">
+                    <a href="#" class="accordion-title">Glossary Abbreviations</a>
+                    <div class="accordion-content" data-tab-content="">
+                      <xsl:apply-templates select="$text/tei:front/tei:div[@xml:id='gloss_abbreviations']" />
+                    </div>
+                  </li>
                 </ul>
               </div>
               <div class="row prev-next-buttons">
