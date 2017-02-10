@@ -13,7 +13,9 @@
          <eats:entity xml:id="" eats_id="" url="EATS URL">
            <primary_name>...</primary_name>
            <singular>...</singular>
-           <title>...</title>
+           <date type="details">...</date>
+           <occupation type="details">...</occupation>
+           <container type="details">...</container>
            <relationships>
              <relationship>
                <name>...</name>
@@ -24,6 +26,9 @@
          </eats:entity>
          ...
        </eats:entities>
+
+       Elements with @type="details" are used as extra information
+       when displaying an entity name.
 
   -->
 
@@ -46,7 +51,6 @@
   <xsl:template match="eats:date" mode="title">
     <!-- Must handle circa and floruit dates, so the assembled form is
          sadly insufficient. -->
-    <xsl:text>, </xsl:text>
     <xsl:if test="@date_period=$floruit_date_period">
       <xsl:text>fl. </xsl:text>
     </xsl:if>
@@ -142,15 +146,16 @@
         </xsl:if>
       </primary_name>
       <xsl:apply-templates mode="singular" select="eats:names/eats:name[@name_type=$singular_name_type]" />
-      <title>
-        <xsl:value-of select="$name" />
+      <date type="details">
         <!-- QAZ: Handle multiple dates. -->
         <xsl:apply-templates mode="title" select="eats:existences/eats:existence/eats:dates/eats:date" />
+      </date>
+      <occupation type="details">
         <xsl:apply-templates mode="title" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$has_occupation_relationship_type][@domain_entity=$entity_id]" />
-        <xsl:if test="eats:entity_types/eats:entity_type/@entity_type=$feature_entity_type">
-          <xsl:apply-templates mode="containing" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$contains_relationship_type][@domain_entity=$entity_id]" />
-        </xsl:if>
-      </title>
+      </occupation>
+      <container type="details">
+        <xsl:apply-templates mode="containing" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$contains_relationship_type][@domain_entity=$entity_id]" />
+      </container>
       <relationships>
         <xsl:apply-templates select="eats:entity_relationships/eats:entity_relationship">
           <xsl:with-param name="entity_id" select="$entity_id" />
@@ -211,12 +216,10 @@
   </xsl:template>
 
   <xsl:template match="eats:entity_relationship" mode="containing">
-    <xsl:text>, </xsl:text>
     <xsl:apply-templates mode="name" select="id(@range_entity)" />
   </xsl:template>
 
   <xsl:template match="eats:entity_relationship" mode="title">
-    <xsl:text>, </xsl:text>
     <xsl:apply-templates mode="singular" select="id(@range_entity)/eats:names/eats:name[@name_type=$singular_name_type]" />
   </xsl:template>
 

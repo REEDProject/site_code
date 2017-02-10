@@ -100,8 +100,23 @@
     <xsl:value-of select="$entity/primary_name" />
   </xsl:template>
 
-  <xsl:template name="display-entity-title">
-    <xsl:value-of select="$entity/title" />
+  <xsl:template name="display-entity-details">
+    <xsl:for-each select="$entity/*[@type='details'][normalize-space()]">
+      <span style="font-size: smaller">
+        <xsl:if test="position() = 1">
+          <br/><xsl:text>(</xsl:text>
+        </xsl:if>
+        <xsl:value-of select="." />
+        <xsl:choose>
+          <xsl:when test="position() = last()">
+            <xsl:text>)</xsl:text>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:text>, </xsl:text>
+          </xsl:otherwise>
+        </xsl:choose>
+      </span>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template name="display-related-entities">
