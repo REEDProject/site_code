@@ -698,7 +698,7 @@ class DocumentParser:
 
     def _pa_record_heading(self, s, loc, toks):
         place, date, language_code = toks[0]
-        record = '<seg ana="ereed:{code}">{code}</seg>'.format(
+        record = '<seg ana="taxon:{code}">{code}</seg>'.format(
             code=self._source_code)
         return [language_code, '<head>{} {} {}</head>\n'.format(
             place, date, record)]

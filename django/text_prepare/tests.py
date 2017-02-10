@@ -31,7 +31,7 @@ class TestDocumentConverter (TestCase):
             text = '@h\\BPA!1532!lat\\!\n' + text
             expected = '''<text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
 ''' + expected + '''
 </body>
 </text>'''
@@ -130,7 +130,7 @@ Test.
 @cn/'''
         expected = '''<text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
 <div xml:lang="eng" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -197,7 +197,7 @@ Test.
 '''
         expected = '''<text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
 <div xml:lang="eng" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -328,7 +328,7 @@ A note.
 Test.'''
         expected = '''<text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
+<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
 <div xml:lang="eng" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -367,7 +367,7 @@ Test.
 Test.'''
         expected = '''<text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
+<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
 <div xml:lang="eng" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -435,7 +435,7 @@ Text that <pb />crosses a page.
 Test.'''
         expected = '''<text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDE1">ABCDE1</seg></head>
+<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDE1">ABCDE1</seg></head>
 <div xml:lang="eng" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -465,7 +465,7 @@ Test.
 Test.'''
         expected = '''<text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
+<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
 <div xml:lang="eng" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -494,7 +494,7 @@ Test.
         base_input = '@h\\{place}!{year}!{lang}\\!\n@w\\Test\\!\nText'
         base_expected = '''<text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>{full_place}</rs> {date} <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
+<head><rs>Staffordshire</rs>, <rs>{full_place}</rs> {date} <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
 <div xml:lang="{lang}" type="transcription">
 <div>
 <head>Test</head>
@@ -1216,7 +1216,7 @@ After table text.
 <group>
 <text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>Stafford</rs> <date when-iso="1540">1540</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Stafford</rs> <date when-iso="1540">1540</date> <seg ana="taxon:ABCD">ABCD</seg></head>
 <div type="transcription">
 <div>
 <head>Heading</head>
@@ -1227,7 +1227,7 @@ After table text.
 </text>
 <text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>Stafford</rs> <date from-iso="1501" to-iso="160">16th Century</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Stafford</rs> <date from-iso="1501" to-iso="160">16th Century</date> <seg ana="taxon:ABCD">ABCD</seg></head>
 <div type="transcription">
 <div>
 <head>Heading</head>
@@ -1238,7 +1238,7 @@ After table text.
 </text>
 <text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>Burton on Trent</rs> <date when-iso="1535">1535</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Burton on Trent</rs> <date when-iso="1535">1535</date> <seg ana="taxon:ABCD">ABCD</seg></head>
 <div type="transcription">
 <div>
 <head>Heading</head>
@@ -1254,7 +1254,7 @@ After table text.
 <text>
 <group><text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>Burton on Trent</rs> <date when-iso="1535">1535</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Burton on Trent</rs> <date when-iso="1535">1535</date> <seg ana="taxon:ABCD">ABCD</seg></head>
 <div type="transcription">
 <div>
 <head>Heading</head>
@@ -1264,7 +1264,7 @@ After table text.
 </body>
 </text><text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>Stafford</rs> <date from-iso="1501" to-iso="160">16th Century</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Stafford</rs> <date from-iso="1501" to-iso="160">16th Century</date> <seg ana="taxon:ABCD">ABCD</seg></head>
 <div type="transcription">
 <div>
 <head>Heading</head>
@@ -1274,7 +1274,7 @@ After table text.
 </body>
 </text><text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>Stafford</rs> <date when-iso="1540">1540</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Stafford</rs> <date when-iso="1540">1540</date> <seg ana="taxon:ABCD">ABCD</seg></head>
 <div type="transcription">
 <div>
 <head>Heading</head>
