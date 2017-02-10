@@ -47,8 +47,9 @@ RECORDS_SKELETON = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/rec
 
 class Document:
 
-    """Represents a complete records TEI XML document and provides methods to
-    validate and convert one or more Word documents into XML."""
+    """Represents a complete records TEI XML document combined with a
+    snippet of document descriptions, and provides methods to validate
+    and convert one or more Word documents into XML."""
 
     def __init__(self, base_id=''):
         self._base_id = base_id
@@ -56,18 +57,12 @@ class Document:
         self._records = []
 
     def convert(self, word_file_path, line_length):
-        """Returns the content of the supplied Word document converted into
-        TEI XML, along with a possibly updated version of the supplied
-        document descriptions TEI XML file.
+        """Converts the content of the supplied Word document into TEI XML.
 
         :param word_file_path: path to Word file to be converted
         :type file_path: `str`
         :param line_length: number of characters to wrap lines to
         :type line_length: `int`
-        :param doc_descs_file_path: path to TEI XML file containing
-                                    document descriptions
-        :type doc_descs_file_path: `str`
-        :rtype: `str`
 
         """
         text = self._get_text(word_file_path, line_length)
@@ -111,6 +106,9 @@ class Document:
         return os.path.splitext(doc_path)[0] + '.docx'
 
     def generate(self):
+        """Returns the binary content of a ZIP file containing the TEI XML
+        records file and a TEI XML fragment containing document
+        descriptions."""
         bibls = self._generate_bibls()
         records = self._generate_tei()
         archive = io.BytesIO()
@@ -122,17 +120,18 @@ class Document:
         return archive.getvalue()
 
     def _generate_bibls(self):
+        """Returns the TEI XML fragment containing document descriptions."""
         text = BIBL_SKELETON.format('\n'.join(self._doc_descs))
         tree = etree.ElementTree(etree.fromstring(text))
         tree = self._transform(tree, TIDY_BIBLS_XSLT_PATH)
         return etree.tostring(tree, encoding='unicode', pretty_print=True)
-        return text
 
     def _generate_tei(self):
+        """Returns the TEI XML records text."""
         text = RECORDS_SKELETON.format(''.join(self._records))
         text = unicodedata.normalize('NFC', text)
         text = self._postprocess_text(text)
-        # Do some cosmetic changes that are too hard to do with XSLT
+        # Make some cosmetic changes that are too hard to do with XSLT
         # 1. This is rather dirty!
         text = re.sub(r'(<ab[^>]*>)[ \t\n\r\f\v]+', r'\1', text)
         text = re.sub(r'[ \t\n\r\f\v]+(</ab>)', r'\1', text)
@@ -178,6 +177,8 @@ class Document:
         return etree.tostring(tree, encoding='unicode', pretty_print=True)
 
     def _replace_word_chars(self, text):
+        """Returns `text` with certain characters replaced with their
+        preferred alternates."""
         text = text.replace('‑', '-')
         text = text.replace(' ', ' ')
         text = text.replace('‘', "'")

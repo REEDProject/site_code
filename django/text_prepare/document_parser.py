@@ -29,6 +29,9 @@ The basic TEI structure generated is:
 The grammar does not enforce referential integrity (for collation
 notes), and does not produce xml:ids.
 
+It also produces document descriptions in the form of tei:bibl and
+tei:msDesc elements.
+
 """
 
 import html
