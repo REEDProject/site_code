@@ -20,7 +20,7 @@ class TestDocumentConverter (TestCase):
                           subheading=True):
         if subheading:
             text = '@w\\f 124 {(19 November)}\\!\n' + text
-            expected = '''<div type="transcription">
+            expected = '''<div xml:lang="lat" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
 <pb n="124" type="folio" />
@@ -28,9 +28,9 @@ class TestDocumentConverter (TestCase):
 </div>
 </div>'''
         if heading:
-            text = '@h\\BPA!1532!eng\\!\n' + text
+            text = '@h\\BPA!1532!lat\\!\n' + text
             expected = '''<text type="record">
-<body xml:lang="eng">
+<body>
 <head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
 ''' + expected + '''
 </body>
@@ -129,9 +129,9 @@ Test.
 @c\\@a2\\Another note.@c/
 @cn/'''
         expected = '''<text type="record">
-<body xml:lang="eng">
+<body>
 <head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
-<div type="transcription">
+<div xml:lang="eng" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
 <pb n="124" type="folio" />
@@ -196,9 +196,9 @@ Test.
 @en\\A note.@en/
 '''
         expected = '''<text type="record">
-<body xml:lang="eng">
+<body>
 <head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
-<div type="transcription">
+<div xml:lang="eng" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
 <pb n="124" type="folio" />
@@ -327,9 +327,9 @@ A note.
 @w\\f 124 {(19 November)}\\!
 Test.'''
         expected = '''<text type="record">
-<body xml:lang="eng">
+<body>
 <head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
-<div type="transcription">
+<div xml:lang="eng" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
 <pb n="124" type="folio" />
@@ -366,9 +366,9 @@ Test.
 @w\\f 124 {(19 November)}\\!
 Test.'''
         expected = '''<text type="record">
-<body xml:lang="eng">
+<body>
 <head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
-<div type="transcription">
+<div xml:lang="eng" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
 <pb n="124" type="folio" />
@@ -404,7 +404,7 @@ Test.
 
     def test_page_break(self):
         text = '@w\\f 1\\!\nText that |crosses a page.'
-        expected = '''<div type="transcription">
+        expected = '''<div xml:lang="lat" type="transcription">
 <div>
 <head>f 1</head>
 <pb n="1" type="folio" />
@@ -434,9 +434,9 @@ Text that <pb />crosses a page.
 @w\\f 124 {(19 November)}\\!
 Test.'''
         expected = '''<text type="record">
-<body xml:lang="eng">
+<body>
 <head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDE1">ABCDE1</seg></head>
-<div type="transcription">
+<div xml:lang="eng" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
 <pb n="124" type="folio" />
@@ -464,9 +464,9 @@ Test.
 @w\\f 124 {(19 November)}\\!
 Test.'''
         expected = '''<text type="record">
-<body xml:lang="eng">
+<body>
 <head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
-<div type="transcription">
+<div xml:lang="eng" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
 <pb n="124" type="folio" />
@@ -493,9 +493,9 @@ Test.
     def test_record_heading(self):
         base_input = '@h\\{place}!{year}!{lang}\\!\n@w\\Test\\!\nText'
         base_expected = '''<text type="record">
-<body xml:lang="{lang}">
+<body>
 <head><rs>Staffordshire</rs>, <rs>{full_place}</rs> {date} <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
-<div type="transcription">
+<div xml:lang="{lang}" type="transcription">
 <div>
 <head>Test</head>
 <pb />
@@ -631,7 +631,7 @@ Text
 
     def test_transcription(self):
         text = '@w\\ f.40* {(12 January) (Fortune: Warrant)}\\!\nText'
-        expected = '''<div type="transcription">
+        expected = '''<div xml:lang="lat" type="transcription">
 <div>
 <head> f.40* <supplied>(12 January) (Fortune: Warrant)</supplied></head>
 <pb />
@@ -640,7 +640,7 @@ Text
 </div>'''
         self._check_conversion(text, expected, subheading=False)
         base_text = '@w\\{head}\\!\nText'
-        base_expected = '''<div type="transcription">
+        base_expected = '''<div xml:lang="lat" type="transcription">
 <div>
 <head>{head}</head>
 {pb}
@@ -660,7 +660,7 @@ Text
                 base_text.format(**data), base_expected.format(**data),
                 subheading=False)
         text = '@w\\ {(12 January)}\\!\nText'
-        expected = '''<div type="transcription">
+        expected = '''<div xml:lang="lat" type="transcription">
 <div>
 <head> <supplied>(12 January)</supplied></head>
 
@@ -673,7 +673,7 @@ Text
         text = '''@w\\f.40*\\!\nTextus
 @tr\\@w\\f.40*\\!
 Text@tr/'''
-        expected = '''<div type="transcription">
+        expected = '''<div xml:lang="lat" type="transcription">
 <div>
 <head>f.40*</head>
 <pb />
@@ -694,7 +694,7 @@ Text
 Text
 @w\\f.41\\!
 Totally new.@tr/'''
-        expected = '''<div type="transcription">
+        expected = '''<div xml:lang="lat" type="transcription">
 <div>
 <head>f.40*</head>
 <pb />

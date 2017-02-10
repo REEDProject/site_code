@@ -4,9 +4,16 @@ up using various @-codes and converting it to TEI.
 The basic TEI structure generated is:
 
 <text type="record">
-  <body xml:lang="...">
+  <body>
     <head>...</head>
-    <div type="transcription">
+    <div xml:lang="..." type="transcription">
+      <div>
+        <head>...</head>
+        ...
+      </div>
+      ...
+    </div>
+    <div type="translation">
       <div>
         <head>...</head>
         ...
@@ -685,8 +692,9 @@ class DocumentParser:
         return ['\N{MIDDLE DOT}']
 
     def _pa_record(self, s, loc, toks):
-        return '<text type="record">\n<body xml:lang="{}">' \
-            '\n{}</body>\n</text>'.format(toks[0], ''.join(toks[1:]))
+        language_code = toks[0]
+        return '<text type="record">\n<body>\n{}</body>\n</text>'.format(
+            ''.join(toks[1:])).format(language_code)
 
     def _pa_record_heading(self, s, loc, toks):
         place, date, language_code = toks[0]
@@ -804,7 +812,10 @@ class DocumentParser:
         return ['{}\N{COMBINING TILDE}'.format(toks[1])]
 
     def _pa_transcription(self, s, loc, toks):
-        return ['<div type="transcription">\n', ''.join(toks), '</div>\n']
+        # Leave the xml:lang code with formatting characters, to be
+        # filled in later.
+        return ['<div xml:lang="{}" type="transcription">' +
+                '\n{}</div>\n'.format(''.join(toks))]
 
     def _pa_transcription_heading(self, s, loc, toks):
         try:
