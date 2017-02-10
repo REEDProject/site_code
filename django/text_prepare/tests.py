@@ -28,10 +28,10 @@ class TestDocumentConverter (TestCase):
 </div>
 </div>'''
         if heading:
-            text = '@h\\BPA!1532!DOU2!eng\\!\n' + text
+            text = '@h\\BPA!1532!eng\\!\n' + text
             expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
 ''' + expected + '''
 </body>
 </text>'''
@@ -40,7 +40,7 @@ class TestDocumentConverter (TestCase):
 
 It spans multiple paragraphs.!
 
-@sc\\ABCD@sc/ @sh\\Source heading.@sh/
+@sc\\ABCDEF@sc/ @sh\\Source heading.@sh/
 @sl\\Reading@sl/ @sr\\Berkshire Record Office@sr/
 @ss\\D/A2/c.54@ss/
 @st\\Epiphany, 1609@st/; this is the technical paragraph. Latin and English; paper; 0+389+0 leaves.@md/\n
@@ -121,7 +121,7 @@ It spans multiple paragraphs.!
         self._check_conversion(text, expected)
 
     def test_collation_notes(self):
-        text = '''@h\\BPA!1532!DOU2!eng\\!
+        text = '''@h\\BPA!1532!eng\\!
 @w\\f 124 {(19 November)}\\!
 Test.
 @cn\\
@@ -130,7 +130,7 @@ Test.
 @cn/'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -190,14 +190,14 @@ Test.
         self._check_conversion(text, expected)
 
     def test_end_notes(self):
-        text = '''@h\\BPA!1532!DOU2!eng\\!
+        text = '''@h\\BPA!1532!eng\\!
 @w\\f 124 {(19 November)}\\!
 Test.
 @en\\A note.@en/
 '''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:DOU2">DOU2</seg></head>
+<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -315,7 +315,7 @@ A note.
 
     def test_ms_doc_desc(self):
         # No prose paragraph.
-        text = '''@md\\@sc\\ABCD@sc/
+        text = '''@md\\@sc\\ABCDEF@sc/
         @sh\\Heading@sh/
         @sl\\Bognor Regis@sl/
         @sr\\Boris's Borough Books & Records@sr/
@@ -323,12 +323,12 @@ A note.
         @st\\1609@st/ Technical paragraph.
         @md/
         @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/@pc/
-@h\\ABC!1532!ABCD!eng\\!
+@h\\ABC!1532!eng\\!
 @w\\f 124 {(19 November)}\\!
 Test.'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -341,7 +341,7 @@ Test.
         self._check_conversion(text, expected, doc_desc=False, heading=False,
                                subheading=False)
         actual_desc = ''.join(self.parser.parse(text).doc_desc)
-        expected_desc = '''<msDesc xml:id="ABCD">
+        expected_desc = '''<msDesc xml:id="ABCDEF">
 <msIdentifier>
 <settlement>Bognor Regis</settlement>
 <repository>Boris's Borough Books &amp; Records</repository>
@@ -354,7 +354,7 @@ Test.
         # Prose paragraph.
         text = '''@md\\
         Prose paragraph.
-        @sc\\ABCD@sc/
+        @sc\\ABCDEF@sc/
         @sh\\Heading@sh/
         @sl\\Bognor Regis@sl/
         @sr\\Boris's Borough Books & Records@sr/
@@ -362,12 +362,12 @@ Test.
         @st\\1609@st/ Technical paragraph.
         @md/
         @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/@pc/
-@h\\ABC!1532!ABCD!eng\\!
+@h\\ABC!1532!eng\\!
 @w\\f 124 {(19 November)}\\!
 Test.'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -380,7 +380,7 @@ Test.
         self._check_conversion(text, expected, doc_desc=False, heading=False,
                                subheading=False)
         actual_desc = ''.join(self.parser.parse(text).doc_desc)
-        expected_desc = '''<msDesc xml:id="ABCD">
+        expected_desc = '''<msDesc xml:id="ABCDEF">
 <msIdentifier>
 <settlement>Bognor Regis</settlement>
 <repository>Boris's Borough Books &amp; Records</repository>
@@ -425,17 +425,17 @@ Text that <pb />crosses a page.
 
     def test_print_doc_desc(self):
         # No prose paragraph.
-        text = '''@pd\\@sc\\ABCD@sc/
+        text = '''@pd\\@sc\\ABCDE1@sc/
         @sh\\Heading@sh/
         Technical paragraph.
         @pd/
         @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/ @pc/
-@h\\ABC!1532!ABCD!eng\\!
+@h\\ABC!1532!eng\\!
 @w\\f 124 {(19 November)}\\!
 Test.'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDE1">ABCDE1</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -448,24 +448,24 @@ Test.
         self._check_conversion(text, expected, doc_desc=False, heading=False,
                                subheading=False)
         actual_desc = ''.join(self.parser.parse(text).doc_desc)
-        expected_desc = '''<bibl xml:id="ABCD">
+        expected_desc = '''<bibl xml:id="ABCDE1">
 <title type="edName">Heading</title>
 <note type="techDesc"><p>Technical paragraph.</p></note>
 </bibl>'''
         self.assertEqual(actual_desc, expected_desc)
         # Prose paragraph.
         text = '''@pd\\Prose paragraph.
-        @sc\\ABCD@sc/
+        @sc\\ABCDEF@sc/
         @sh\\Heading@sh/
         Technical paragraph.
         @pd/
         @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/ @pc/
-@h\\ABC!1532!ABCD!eng\\!
+@h\\ABC!1532!eng\\!
 @w\\f 124 {(19 November)}\\!
 Test.'''
         expected = '''<text type="record">
 <body xml:lang="eng">
-<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCD">ABCD</seg></head>
+<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
 <div type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -478,7 +478,7 @@ Test.
         self._check_conversion(text, expected, doc_desc=False, heading=False,
                                subheading=False)
         actual_desc = ''.join(self.parser.parse(text).doc_desc)
-        expected_desc = '''<bibl xml:id="ABCD">
+        expected_desc = '''<bibl xml:id="ABCDEF">
 <title type="edName">Heading</title>
 <note type="edDesc"><p>Prose paragraph.</p></note>
 <note type="techDesc"><p>Technical paragraph.</p></note>
@@ -491,10 +491,10 @@ Test.
         self._check_conversion(text, expected)
 
     def test_record_heading(self):
-        base_input = '@h\\{place}!{year}!{record}!{lang}\\!\n@w\\Test\\!\nText'
+        base_input = '@h\\{place}!{year}!{lang}\\!\n@w\\Test\\!\nText'
         base_expected = '''<text type="record">
 <body xml:lang="{lang}">
-<head><rs>Staffordshire</rs>, <rs>{full_place}</rs> {date} <seg ana="ereed:{record}">{record}</seg></head>
+<head><rs>Staffordshire</rs>, <rs>{full_place}</rs> {date} <seg ana="ereed:ABCDEF">ABCDEF</seg></head>
 <div type="transcription">
 <div>
 <head>Test</head>
@@ -504,49 +504,49 @@ Text
 </div>
 </body>
 </text>'''
-        data = {'lang': 'lat', 'place': 'BPA', 'record': 'DOU2',
+        data = {'lang': 'lat', 'place': 'BPA',
                 'date': '<date when-iso="1532">1532</date>', 'year': '1532',
                 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
-        data = {'lang': 'lat', 'place': 'BPA', 'record': 'V151',
+        data = {'lang': 'lat', 'place': 'BPA',
                 'date': '<date when-iso="1631">1630/1</date>',
                 'year': '1630/1', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA', 'record': 'V151',
+        data = {'lang': 'eng', 'place': 'BPA',
                 'date': '<date from-iso="1630" to-iso="1631">1630-1</date>',
                 'year': '1630-1', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA', 'record': 'V151',
+        data = {'lang': 'eng', 'place': 'BPA',
                 'date': '<date from-iso="1629" to-iso="1631">1629-31</date>',
                 'year': '1629-31', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA', 'record': 'V151',
+        data = {'lang': 'eng', 'place': 'BPA',
                 'date': '<date from-iso="1630" to-iso="1632">1629/30-31/2</date>',
                 'year': '1629/30-31/2', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA', 'record': 'V151',
+        data = {'lang': 'eng', 'place': 'BPA',
                 'date': '<date precision="low" when-iso="1631"><hi rend="italic">c</hi> 1631</date>',
                 'year': '{c} 1631', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA', 'record': 'V151',
+        data = {'lang': 'eng', 'place': 'BPA',
                 'date': '<date from-iso="1630" precision="low" to-iso="1632"><hi rend="italic">c</hi> 1629/30-31/2</date>',
                 'year': '{c} 1629/30-31/2', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA', 'record': 'V151',
+        data = {'lang': 'eng', 'place': 'BPA',
                 'date': '<date from-iso="1601" to-iso="1700">17th Century</date>',
                 'year': '17th Century', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),

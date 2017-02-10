@@ -40,6 +40,7 @@ class DocumentParser:
 
     def __init__(self):
         self._place_codes = {}
+        self._source_code = None
         self._grammar = self._define_grammar()
 
     def _define_grammar(self):
@@ -256,8 +257,6 @@ class DocumentParser:
         table.setParseAction(self._pa_table)
         record_heading_place = pp.Word(pp.alphanums)
         record_heading_place.setParseAction(self._pa_record_heading_place)
-        record_heading_record = pp.Word(pp.alphanums)
-        record_heading_record.setParseAction(self._pa_record_heading_record)
         year = pp.Word(pp.nums, min=4, max=4)
         record_heading_date_century = pp.Word(
             pp.nums, min=2, max=2).setResultsName('century') + \
@@ -281,7 +280,6 @@ class DocumentParser:
             'cnx cor cym deu eng fra gla gmh gml grc ita lat por spa wlm xno')
         record_heading_content = record_heading_place - \
             pp.Literal('!').suppress() - record_heading_date - \
-            pp.Literal('!').suppress() - record_heading_record - \
             pp.Literal('!').suppress() - language_code
         record_heading = pp.nestedExpr('@h\\', '\\!',
                                        content=record_heading_content)
@@ -318,9 +316,9 @@ class DocumentParser:
         end_note = pp.nestedExpr('@en\\', '@en/', content=enclosed)
         end_note.setParseAction(self._pa_endnote)
         end_note_wrapper = blank + end_note + blank
-        source_code = blank + pp.nestedExpr('@sc\\', '@sc/', content=pp.Word(
-            pp.srange('[A-Z]'), exact=4))
-        source_code.setParseAction(self._pa_source_data)
+        source_code = blank + pp.nestedExpr(
+            '@sc\\', '@sc/', content=pp.Word(pp.srange('[A-Z0-9]'), exact=6))
+        source_code.setParseAction(self._pa_source_code)
         source_head = blank + pp.nestedExpr('@sh\\', '@sh/',
                                             content=rich_content)
         source_head.setParseAction(self._pa_source_data)
@@ -688,7 +686,9 @@ class DocumentParser:
             '\n{}</body>\n</text>'.format(toks[0], ''.join(toks[1:]))
 
     def _pa_record_heading(self, s, loc, toks):
-        place, date, record, language_code = toks[0]
+        place, date, language_code = toks[0]
+        record = '<seg ana="ereed:{code}">{code}</seg>'.format(
+            code=self._source_code)
         return [language_code, '<head>{} {} {}</head>\n'.format(
             place, date, record)]
 
@@ -727,9 +727,6 @@ class DocumentParser:
         name, county = self._place_codes[toks[0]]
         return ['<rs>{}</rs>, <rs>{}</rs>'.format(name, county)]
 
-    def _pa_record_heading_record(self, s, loc, toks):
-        return ['<seg ana="ereed:{}">{}</seg>'.format(toks[0], toks[0])]
-
     def _pa_return(self, s, loc, toks):
         # TODO: Perhaps add newlines here to deal with the case of long
         # lines in the source?
@@ -764,6 +761,11 @@ class DocumentParser:
 
     def _pa_small_caps(self, s, loc, toks):
         return ['<hi rend="smallcaps">', ''.join(toks[0]), '</hi>']
+
+    def _pa_source_code(self, s, loc, toks):
+        code = ''.join(toks[0])
+        self._source_code = code
+        return code
 
     def _pa_source_data(self, s, loc, toks):
         return ''.join(toks[0]).strip()
