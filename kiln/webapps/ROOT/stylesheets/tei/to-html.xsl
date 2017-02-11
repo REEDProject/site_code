@@ -187,6 +187,22 @@
       <img src="{$kiln:assets-path}/images/marginalia-{$side}.png" />
       <xsl:text> </xsl:text>
       <xsl:apply-templates />
+      <xsl:if test=".//tei:note[@type='foot']">
+        <p>
+          <xsl:text>[Footnote</xsl:text>
+          <xsl:if test="count(.//tei:note[@type='foot']) &gt; 1">
+            <xsl:text>s</xsl:text>
+          </xsl:if>
+          <xsl:text>: </xsl:text>
+          <xsl:for-each select=".//tei:note[@type='foot']">
+            <xsl:apply-templates />
+            <xsl:if test="position() != last()">
+              <xsl:text>; </xsl:text>
+            </xsl:if>
+          </xsl:for-each>
+          <xsl:text>]</xsl:text>
+        </p>
+      </xsl:if>
     </li>
   </xsl:template>
 
