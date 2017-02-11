@@ -22,6 +22,7 @@
   <xsl:import href="../defaults.xsl" />
   <xsl:include href="cocoon://_internal/url/reverse.xsl" />
   <xsl:include href="results-pagination.xsl" />
+  <xsl:include href="../eatsml/entity-to-html.xsl" />
 
   <xsl:key name="item-by-eats-id" match="*[@eats_id]" use="@eats_id" />
 
@@ -383,7 +384,9 @@
       <xsl:variable name="item" select="key('item-by-eats-id', $id)" />
       <xsl:choose>
         <xsl:when test="$item and local-name($item) = 'entity'">
-          <xsl:value-of select="$item/primary_name" />
+          <xsl:call-template name="display-entity-primary-name-plus">
+            <xsl:with-param name="entity" select="$item" />
+          </xsl:call-template>
         </xsl:when>
         <xsl:when test="$item">
           <xsl:value-of select="$item" />

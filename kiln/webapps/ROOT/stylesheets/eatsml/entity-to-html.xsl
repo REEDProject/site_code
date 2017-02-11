@@ -97,7 +97,20 @@
   </xsl:template>
 
   <xsl:template name="display-entity-primary-name">
+    <xsl:param name="entity" select="$entity" />
     <xsl:value-of select="$entity/primary_name" />
+  </xsl:template>
+
+  <xsl:template name="display-entity-primary-name-plus">
+    <xsl:param name="entity" select="$entity" />
+    <xsl:call-template name="display-entity-primary-name">
+      <xsl:with-param name="entity" select="$entity" />
+    </xsl:call-template>
+    <xsl:if test="$entity/name_extra">
+      <xsl:text> (</xsl:text>
+      <xsl:value-of select="$entity/name_extra" />
+      <xsl:text>)</xsl:text>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template name="display-entity-details">

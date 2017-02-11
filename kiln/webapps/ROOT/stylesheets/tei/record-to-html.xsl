@@ -5,6 +5,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:import href="to-html.xsl" />
+  <xsl:import href="../eatsml/entity-to-html.xsl" />
 
   <xsl:variable name="record_text"
                 select="/aggregation/TEICorpus/tei:TEI/tei:text" />
@@ -172,7 +173,9 @@
                 <xsl:with-param name="eats-url" select="@ref" />
               </xsl:call-template>
             </xsl:attribute>
-            <xsl:value-of select="id($entity-id)/primary_name" />
+            <xsl:call-template name="display-entity-primary-name-plus">
+              <xsl:with-param name="entity" select="id($entity-id)" />
+            </xsl:call-template>
           </a>
         </li>
       </xsl:for-each>

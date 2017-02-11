@@ -12,6 +12,7 @@
        <eats:entities>
          <eats:entity xml:id="" eats_id="" url="EATS URL">
            <primary_name>...</primary_name>
+           <name_extra>...</name_extra>
            <singular>...</singular>
            <date type="details">...</date>
            <occupation type="details">...</occupation>
@@ -28,7 +29,9 @@
        </eats:entities>
 
        Elements with @type="details" are used as extra information
-       when displaying an entity name.
+       when displaying an entity name in its fullest form. The
+       name_extra element contains extra information to include when
+       displaying just the name.
 
   -->
 
@@ -141,10 +144,12 @@
       </xsl:variable>
       <primary_name>
         <xsl:value-of select="$name" />
-        <xsl:if test="eats:entity_types/eats:entity_type/@entity_type=$feature_entity_type">
-          <xsl:apply-templates mode="containing" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$contains_relationship_type][@domain_entity=$entity_id]" />
-        </xsl:if>
       </primary_name>
+      <xsl:if test="eats:entity_types/eats:entity_type/@entity_type=$feature_entity_type">
+        <name_extra>
+          <xsl:apply-templates mode="containing" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$contains_relationship_type][@domain_entity=$entity_id]" />
+        </name_extra>
+      </xsl:if>
       <xsl:apply-templates mode="singular" select="eats:names/eats:name[@name_type=$singular_name_type]" />
       <date type="details">
         <!-- QAZ: Handle multiple dates. -->
