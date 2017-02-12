@@ -28,9 +28,9 @@
           <tr>
             <th scope="col"></th>
             <th scope="col">File</th>
-            <th colspan="2" scope="col">Reports</th>
+            <th scope="col">Reports</th>
             <th scope="col">Search</th>
-            <th scope="col">RDF</th>
+            <th scope="col">View</th>
           </tr>
         </thead>
         <tbody>
@@ -43,14 +43,17 @@
               <xsl:text>bibliography.xml</xsl:text>
             </td>
             <td></td>
-            <td></td>
             <td>
               <a title="Index document in search server"
                  href="{kiln:url-for-match('local-solr-index', ('tei-bibliography', 'tei/bibliography'), 0)}">
                 <xsl:text>Index</xsl:text>
               </a>
             </td>
-            <td></td>
+            <td>
+              <a href="{kiln:url-for-match('ereed-about-bibliography', (), 0)}">
+                <xsl:text>View on site</xsl:text>
+              </a>
+            </td>
           </tr>
           <!-- The glossary.xml file must be present, with that name,
                in the tei directory, so just record it here. -->
@@ -59,16 +62,19 @@
             <td>
               <xsl:text>glossary.xml</xsl:text>
             </td>
-            <td></td>
             <td>
               <a href="{kiln:url-for-match('local-admin-glossary-report', (), 0)}" title="Report on missing orth and gram elements">
                 <xsl:text>Missing orth/gram</xsl:text>
               </a>
             </td>
             <td></td>
-            <td></td>
+            <td>
+              <a href="{kiln:url-for-match('ereed-about-glossaries', (), 0)}">
+                <xsl:text>View on site</xsl:text>
+              </a>
+            </td>
           </tr>
-          <!-- Records are the dynamic files (in that it's not know
+          <!-- Records are the dynamic files (in that it's not known
                how many there are or what they are called). -->
           <xsl:apply-templates mode="tei"
                                select=".//dir:directory[@name='records']">
@@ -85,7 +91,7 @@
           </select>
         </div>
         <div class="large-4 columns">
-          <input type="submit" value="Generate concordance" />
+          <input class="button round" type="submit" value="Generate concordance" />
         </div>
       </div>
     </form>
@@ -130,12 +136,6 @@
           <xsl:text>Schematron</xsl:text>
         </a>
       </td>
-      <td>
-        <a href="{kiln:url-for-match('local-admin-collection-records',
-                 (substring-after($short-filepath, '/')), 0)}">
-          <xsl:text>View all records</xsl:text>
-        </a>
-      </td>
       <!-- Search indexing. -->
       <td>
         <xsl:variable name="content-type">
@@ -151,12 +151,10 @@
           <xsl:text>Index</xsl:text>
         </a>
       </td>
-      <!-- RDF harvesting. -->
       <td>
-        <a title="Harvest RDF from document"
-           href="{kiln:url-for-match('local-rdf-harvest-display',
-                                     ($filepath), 0)}">
-          <xsl:text>Harvest</xsl:text>
+        <a href="{kiln:url-for-match('local-admin-collection-records',
+                 (substring-after($short-filepath, '/')), 0)}">
+          <xsl:text>View all records</xsl:text>
         </a>
       </td>
     </tr>
