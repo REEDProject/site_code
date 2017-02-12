@@ -17,13 +17,17 @@
       </a>
       <xsl:text> </xsl:text>
       <a class="button round"
+         href="{kiln:url-for-match('local-admin-entity-record-dates', (), 0)}">
+        <xsl:text>Show entities by date</xsl:text>
+      </a>
+      <!--<a class="button round"
          href="{kiln:url-for-match('local-rdf-harvest-all-display', (), 0)}">
         <xsl:text>Harvest all (RDF)</xsl:text>
-      </a>
+      </a>-->
     </p>
 
     <form method="get" action="{kiln:url-for-match('local-admin-concordance-word-lists-report', (), 0)}">
-      <table>
+      <table id="table">
         <thead>
           <tr>
             <th scope="col"></th>
@@ -128,14 +132,15 @@
         <xsl:value-of select="$short-filepath"/>
         <xsl:text>.xml</xsl:text>
       </td>
+      <td></td>
       <!-- Default Schematron link. -->
-      <td>
+      <!--<td>
         <a title="Schematron validation report"
            href="{kiln:url-for-match('local-admin-schematron-validation',
                  ($filepath), 0)}">
           <xsl:text>Schematron</xsl:text>
         </a>
-      </td>
+        </td>-->
       <!-- Search indexing. -->
       <td>
         <xsl:variable name="content-type">

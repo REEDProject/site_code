@@ -276,12 +276,29 @@
     <map:pipeline>
       <map:match id="local-admin-collection-records" pattern="collection/records/*.xml">
         <map:aggregate element="aggregation">
-          <map:part src="cocoon://_internal/menu/main.xml?url=records/" />
+          <map:part src="cocoon://_internal/menu/admin.xml?url=records/" />
           <map:part src="../content/xml/tei/glossary.xml" />
           <map:part src="cocoon://internal/preprocess/collection-records/{1}.xml" />
           <map:part src="cocoon://internal/preprocess/eatsml.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/admin/records.xsl" />
+        <map:serialize />
+      </map:match>
+    </map:pipeline>
+
+    <!-- Pipeline for showing entities with the dates of their
+         records. -->
+    <map:pipeline>
+      <map:match id="local-admin-entity-record-dates"
+                 pattern="entity-dates/">
+        <map:aggregate element="aggregation">
+          <map:part src="cocoon://_internal/menu/admin.xml?url=entity-dates/" />
+          <map:part src="cocoon://internal/collections.xml" />
+          <map:part src="cocoon://internal/preprocess/eatsml.xml" />
+        </map:aggregate>
+        <map:transform src="../stylesheets/admin/entity-dates-xinclude.xsl" />
+        <map:transform type="xinclude" />
+        <map:transform src="cocoon://_internal/template/admin/entity-dates.xsl" />
         <map:serialize />
       </map:match>
     </map:pipeline>
