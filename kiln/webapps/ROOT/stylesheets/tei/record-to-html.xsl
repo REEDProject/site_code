@@ -250,8 +250,8 @@
     <div class="show-for-medium">
       <div class="show-hide">
         <div class="heading">SHOW OR HIDE</div>
-        <label class="checkbox"><input type="checkbox" name="show-tags" /><span class="checkbox-inner"> </span>Tag</label>
-        <label class="checkbox"><input type="checkbox" name="show-terms" /><span class="checkbox-inner"> </span>Glossed Terms</label>
+        <label class="checkbox"><input type="checkbox" name="show-tags" autocomplete="off" /><span class="checkbox-inner"> </span>Tag</label>
+        <label class="checkbox"><input type="checkbox" name="show-terms" autocomplete="off" /><span class="checkbox-inner"> </span>Glossed Terms</label>
       </div>
       <div class="view-tags">
         <div class="heading">
@@ -267,8 +267,8 @@
         <div class="filter-content-wrapper relative">
           <div class="filter-content">
             <div class="show-hide">
-              <label class="checkbox"><input type="checkbox" name="show-tags" /><span class="checkbox-inner"> </span>Tag</label>
-              <label class="checkbox"><input type="checkbox" name="show-terms" /><span class="checkbox-inner"> </span>Glossed Terms</label>
+              <label class="checkbox"><input type="checkbox" name="show-tags" autocomplete="off" /><span class="checkbox-inner"> </span>Tag</label>
+              <label class="checkbox"><input type="checkbox" name="show-terms" autocomplete="off" /><span class="checkbox-inner"> </span>Glossed Terms</label>
             </div>
           </div>
         </div>
