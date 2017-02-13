@@ -102,7 +102,7 @@
                 <div class="letters">
                   <ul>
                     <xsl:for-each select="$body-div/tei:div">
-                      <li>
+                      <li letter="{@n}">
                         <xsl:if test="not(tei:entry)">
                           <xsl:attribute name="class" select="'no-results'" />
                         </xsl:if>
@@ -112,15 +112,17 @@
                   </ul>
                 </div>
                 <xsl:for-each select="$body-div/tei:div">
-                  <h3><xsl:value-of select="@n" /></h3>
-                  <div class="glossary-content">
-                    <ul>
-                      <xsl:for-each select="tei:entry">
-                        <li>
-                          <xsl:apply-templates select="." />
-                        </li>
-                      </xsl:for-each>
-                    </ul>
+                  <div class="letter-content" letter="{@n}">
+                    <h3><xsl:value-of select="@n" /></h3>
+                    <div class="glossary-content">
+                      <ul>
+                        <xsl:for-each select="tei:entry">
+                          <li>
+                            <xsl:apply-templates select="." />
+                          </li>
+                        </xsl:for-each>
+                      </ul>
+                    </div>
                   </div>
                 </xsl:for-each>
               </div>

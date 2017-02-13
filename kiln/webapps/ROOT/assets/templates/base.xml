@@ -24,7 +24,8 @@
         <kiln:block name="css">
           <link rel="stylesheet" type="text/css"
                 href="{$kiln:assets-path}/styles/datatables.min.css" />
-          <link rel="stylesheet" href="{$kiln:assets-path}/styles/app.css" />
+          <link rel="stylesheet" href="{$kiln:assets-path}/styles/app.css" type="text/css" media="screen, print" />
+          <link rel="stylesheet" href="{$kiln:assets-path}/styles/print.css" type="text/css" media="print" />
         </kiln:block>
         <kiln:block name="js">
         </kiln:block>
