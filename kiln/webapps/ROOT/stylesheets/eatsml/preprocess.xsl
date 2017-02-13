@@ -15,7 +15,7 @@
            <name_extra>...</name_extra>
            <singular>...</singular>
            <date type="details">...</date>
-           <occupation type="details">...</occupation>
+           <name_extra type="details">...</name_extra>
            <container type="details">...</container>
            <relationships>
              <relationship>
@@ -30,8 +30,11 @@
 
        Elements with @type="details" are used as extra information
        when displaying an entity name in its fullest form. The
-       name_extra element contains extra information to include when
+       name_extra elements contain extra information to include when
        displaying just the name.
+
+       A name_extra[@type='details'] element contains information that
+       should be displayed under both circumstances.
 
   -->
 
@@ -43,6 +46,7 @@
   <xsl:variable name="has_occupation_relationship_type" select="'entity_relationship_type-21008'" />
   <xsl:variable name="contains_relationship_type" select="'entity_relationship_type-502'" />
   <xsl:variable name="feature_entity_type" select="'entity_type-21368'" />
+  <xsl:variable name="guild_entity_type" select="'entity_type-517'" />
   <xsl:variable name="gis_base_url" select="'https://ereed.library.utoronto.ca/gis/place/'" />
 
   <xsl:template match="aggregation">
@@ -145,7 +149,7 @@
       <primary_name>
         <xsl:value-of select="$name" />
       </primary_name>
-      <xsl:if test="eats:entity_types/eats:entity_type/@entity_type=$feature_entity_type">
+      <xsl:if test="eats:entity_types/eats:entity_type/@entity_type=($feature_entity_type, $guild_entity_type)">
         <name_extra>
           <xsl:apply-templates mode="containing" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$contains_relationship_type][@domain_entity=$entity_id]" />
         </name_extra>
@@ -155,9 +159,12 @@
         <!-- QAZ: Handle multiple dates. -->
         <xsl:apply-templates mode="title" select="eats:existences/eats:existence/eats:dates/eats:date" />
       </date>
-      <occupation type="details">
-        <xsl:apply-templates mode="title" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$has_occupation_relationship_type][@domain_entity=$entity_id]" />
-      </occupation>
+      <!-- An entity may have multiple occupations. -->
+      <xsl:for-each select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$has_occupation_relationship_type][@domain_entity=$entity_id]">
+        <name_extra type="details">
+          <xsl:apply-templates mode="title" select="." />
+        </name_extra>
+      </xsl:for-each>
       <container type="details">
         <xsl:apply-templates mode="containing" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$contains_relationship_type][@domain_entity=$entity_id]" />
       </container>

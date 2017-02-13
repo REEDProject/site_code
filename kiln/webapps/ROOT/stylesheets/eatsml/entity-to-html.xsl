@@ -108,7 +108,12 @@
     </xsl:call-template>
     <xsl:if test="$entity/name_extra">
       <xsl:text> (</xsl:text>
-      <xsl:value-of select="$entity/name_extra" />
+      <xsl:for-each select="$entity/name_extra">
+        <xsl:value-of select="." />
+        <xsl:if test="position() != last()">
+          <xsl:text>, </xsl:text>
+        </xsl:if>
+      </xsl:for-each>
       <xsl:text>)</xsl:text>
     </xsl:if>
   </xsl:template>
