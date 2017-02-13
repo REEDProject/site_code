@@ -9,7 +9,7 @@
   <xsl:import href="cocoon://_internal/template/xsl/stylesheets/tei/record-to-html.xsl" />
 
   <kiln:parent>
-    <xi:include href="base.xml" />
+    <xi:include href="../base.xml" />
   </kiln:parent>
 
   <kiln:child>
