@@ -37,6 +37,12 @@
       <field name="document_title">
         <xsl:value-of select="tei:head" />
       </field>
+      <!-- While this isn't a record, it's convenient to have a
+           record_title for search result display that has both record
+           and editorial results. -->
+      <field name="record_title">
+        <xsl:value-of select="tei:head" />
+      </field>
       <field name="collection_id">
         <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id" />
       </field>
