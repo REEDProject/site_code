@@ -113,7 +113,9 @@
                   <div id="map"></div>
                 </div>
                 <div class="columns medium-3 map-legend">
-                  <div class="legend">Legend</div>
+                  <div class="legend">
+                    <img src="{$kiln:assets-path}/images/map/legend.png" />
+                  </div>
                 </div>
               </div>
             </div>
