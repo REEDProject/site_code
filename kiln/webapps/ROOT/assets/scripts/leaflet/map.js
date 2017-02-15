@@ -11,17 +11,6 @@ function getRelatedPopupContent(feature) {
     return content;
 }
 
-function getSourcePopupContent(feature) {
-    /* Returns the HTML content of the popup for the supplied feature,
-     * that is the source location. */
-    var content = 'Location: ' + feature.properties.LOC_NAME;
-    if (feature.properties.LOC_NAME != feature.properties.LABELS) {
-        content = 'Site: ' + feature.properties.LABELS + '<br>' + content;
-    }
-    return content;
-}
-
-
 var map = L.map('map', {
     center: [52.7, -1.77],
     maxBounds: [[46.5, -20.5], [62.0, 7.0]],
