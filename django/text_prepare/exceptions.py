@@ -5,22 +5,6 @@ class TextPrepareDocumentError (Exception):
     pass
 
 
-class TextPrepareDocumentTextExtractionError (TextPrepareDocumentError):
-
-    """Exception class for errors pertaining to extracting the text from
-    an uploaded document."""
-
-    pass
-
-
-class TextPrepareDocumentUpdateError (TextPrepareDocumentError):
-
-    """Exception class for errors pertaining to updating a Word
-    document."""
-
-    pass
-
-
 class TextPrepareDocumentValidationError (TextPrepareDocumentError):
 
     """Exception class for document validation errors."""

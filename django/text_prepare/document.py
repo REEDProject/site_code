@@ -15,7 +15,7 @@ from lxml import etree
 import pyparsing as pp
 
 from .document_parser import DocumentParser
-from .exceptions import (TextPrepareDocumentUpdateError,
+from .exceptions import (TextPrepareDocumentError,
                          TextPrepareDocumentValidationError)
 
 
@@ -102,7 +102,7 @@ class Document:
                                       cwd=os.path.dirname(doc_path))
             except subprocess.CalledProcessError as e:
                 msg = 'Failed to convert Word document to docx format: {}'
-                raise TextPrepareDocumentUpdateError(msg.format(e.output))
+                raise TextPrepareDocumentError(msg.format(e.output))
         return os.path.splitext(doc_path)[0] + '.docx'
 
     def generate(self):
