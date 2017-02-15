@@ -3,7 +3,9 @@
            xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <!-- Imports stylesheet to convert Solr results into HTML. -->
+  <!-- Imports stylesheet to convert Solr results into HTML. This
+       imported XSLT must import kiln/stylesheets/solr/utils.xsl
+       because it is used in this template. -->
   <xsl:import href="cocoon://_internal/template/xsl/stylesheets/solr/entity-finder-results-to-html.xsl" />
 
   <kiln:parent>
