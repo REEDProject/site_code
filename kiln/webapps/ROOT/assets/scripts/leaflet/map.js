@@ -11,17 +11,6 @@ function getRelatedPopupContent(feature) {
     return content;
 }
 
-function getSourcePopupContent(feature) {
-    /* Returns the HTML content of the popup for the supplied feature,
-     * that is the source location. */
-    var content = 'Location: ' + feature.properties.LOC_NAME;
-    if (feature.properties.LOC_NAME != feature.properties.LABELS) {
-        content = 'Site: ' + feature.properties.LABELS + '<br>' + content;
-    }
-    return content;
-}
-
-
 var map = L.map('map', {
     center: [52.7, -1.77],
     maxBounds: [[46.5, -20.5], [62.0, 7.0]],
@@ -75,10 +64,10 @@ var related_location_Icon = L.icon({
 });
 //  Defining an icon to use as the default icon for single SOURCE point
 var source_location_Icon = L.icon({
-    iconUrl: '/assets/images/map/REED_circle_yellow_15.png',
-    iconSize: [15, 15],
-    iconAnchor: [7, 7],
-    popupAnchor: [0, -7]
+    iconUrl: '/assets/images/map/Yellow-Hollow-22.png',
+    iconSize: [22, 22],
+    iconAnchor: [11, 11],
+    popupAnchor: [0, -11]
 });
 
 //  THIS SECTION INITIALIZES THE THREE LAYERS TO BE POPULATED BY
@@ -86,7 +75,15 @@ var source_location_Icon = L.icon({
 
 // This activates the Leaflet.Markercluster plugin for use with lots
 // of markers (related points)
-var related_markers = L.markerClusterGroup();
+var related_markers = L.markerClusterGroup({
+    maxClusterRadius: 20,
+    showCoverageOnHover: true,
+    zoomToBoundsOnClick: true,
+    polygonOptions: {color: '#03f', weight: 2, opacity: 0.5},
+    spiderfyOnMaxZoom: true,
+    spiderfyDistanceMultiplier: 0.4,
+    spiderLegPolylineOptions: {weight: 1.5, color: '#B3B3B3', opacity: 0.6}
+});
 
 // Used this to initialize RELATED POINTS layer without any geoJson
 // data, use addData below
@@ -107,11 +104,9 @@ var source_geoJsonLayer = L.Proj.geoJson(null, {
     // ADDED pointToLayer in this form and it worked to replace
     // default icon
     pointToLayer: function(feature, latlng) {
-        return L.marker(latlng, {icon: source_location_Icon})
+        return L.marker(latlng, {icon: source_location_Icon,
+                                 zIndexOffset: 1000, interactive: false})
     },
-    onEachFeature: function(feature, layer) {
-        layer.bindPopup(getSourcePopupContent(feature));
-    }
 });
 
 // Used this to initialize SOURCE REGION layer without any geoJson
