@@ -170,7 +170,7 @@
           type="int" />
    <field indexed="true" multiValued="true"
           name="facet_drama_status" required="false" stored="true"
-          type="int" />
+          type="string" />
    <field indexed="true" multiValued="true"
           name="facet_drama_character" required="false" stored="true"
           type="int" />
