@@ -1,6 +1,7 @@
 from django.test import TestCase
 
 from lxml import etree
+import pyparsing as pp
 
 from .document import (
     AB_TO_P_XSLT_PATH, ADD_AB_XSLT_PATH, ADD_HEADER_XSLT_PATH,
@@ -17,7 +18,7 @@ class TestDocumentConverter (TestCase):
         self.parser = DocumentParser()
 
     def _check_conversion(self, text, expected, doc_desc=True, heading=True,
-                          subheading=True):
+                          subheading=True, reset_parser=True):
         if subheading:
             text = '@w\\f 124 {(19 November)}\\!\n' + text
             expected = '''<div xml:lang="lat" type="transcription">
@@ -47,6 +48,9 @@ It spans multiple paragraphs.!
 @pc\\@ab\\BPA@ab/ @ex\\Boring Place Anyway@ex/ @ct\\Staffordshire@ct/@pc/''' + text
         actual = ''.join(self.parser.parse(text).record)
         self.assertEqual(actual, expected)
+        # Reset the parser to not fall foul of source code reuse.
+        if reset_parser:
+            self.parser = DocumentParser()
 
     def test_acute(self):
         for vowel in self.vowels:
@@ -178,6 +182,16 @@ Test.
         text = 'unde@#rdot'
         expected = 'under\N{COMBINING DOT BELOW}dot'
         self._check_conversion(text, expected)
+
+    def test_duplicate_source_codes_error(self):
+        # Duplicate source codes should raise an error.
+        text = 'Test'
+        expected = 'Test'
+        self._check_conversion(text, expected, reset_parser=False)
+        text = 'Test'
+        expected = 'Test'
+        self.assertRaises(pp.ParseFatalException, self._check_conversion, text,
+                          expected)
 
     def test_ellipsis(self):
         text = 'some ... text'
@@ -354,7 +368,7 @@ Test.
         # Prose paragraph.
         text = '''@md\\
         Prose paragraph.
-        @sc\\ABCDEF@sc/
+        @sc\\ABCDE1@sc/
         @sh\\Heading@sh/
         @sl\\Bognor Regis@sl/
         @sr\\Boris's Borough Books & Records@sr/
@@ -367,7 +381,7 @@ Test.
 Test.'''
         expected = '''<text type="record">
 <body>
-<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
+<head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDE1">ABCDE1</seg></head>
 <div xml:lang="eng" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -380,7 +394,7 @@ Test.
         self._check_conversion(text, expected, doc_desc=False, heading=False,
                                subheading=False)
         actual_desc = ''.join(self.parser.parse(text).doc_desc)
-        expected_desc = '''<msDesc xml:id="ABCDEF">
+        expected_desc = '''<msDesc xml:id="ABCDE1">
 <msIdentifier>
 <settlement>Bognor Regis</settlement>
 <repository>Boris's Borough Books &amp; Records</repository>

@@ -34,7 +34,8 @@ The basic TEI structure generated is:
 ...
 
 The grammar does not enforce referential integrity (for collation
-notes), and does not produce xml:ids.
+notes), and does not produce xml:ids except for msDesc and bibl
+elements.
 
 It also produces document descriptions in the form of tei:bibl and
 tei:msDesc elements.
@@ -50,6 +51,7 @@ class DocumentParser:
 
     def __init__(self):
         self._place_codes = {}
+        self._source_codes = []
         self._source_code = None
         self._grammar = self._define_grammar()
 
@@ -775,7 +777,11 @@ class DocumentParser:
 
     def _pa_source_code(self, s, loc, toks):
         code = ''.join(toks[0])
+        if code in self._source_codes:
+            raise pp.ParseFatalException(
+                'Source code {} already used'.format(code))
         self._source_code = code
+        self._source_codes.append(code)
         return code
 
     def _pa_source_data(self, s, loc, toks):
