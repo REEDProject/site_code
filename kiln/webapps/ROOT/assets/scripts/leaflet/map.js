@@ -11,6 +11,8 @@ function getRelatedPopupContent(feature) {
     return content;
 }
 
+var map_image_path = '/assets/images/map/';
+
 var map = L.map('map', {
     center: [52.7, -1.77],
     maxBounds: [[46.5, -20.5], [62.0, 7.0]],
@@ -20,7 +22,11 @@ map.options.minZoom = 6;
 map.options.maxZoom = 15;
 
 // Tile layers, base layers underneath with controls
-var tms_EREEDcoverage = L.tileLayer('http://talus.geog.utoronto.ca/1.0.0/EREED_gis_counties_base/{z}/{x}/{-y}.png').addTo(map);
+var tms_EREEDcoverage = L.tileLayer(
+    'http://talus.geog.utoronto.ca/1.0.0/EREED_gis_counties_base/{z}/{x}/{-y}.png', {
+        maxZoom: 15,
+        attribution: '<a href="http://reed.utoronto.ca/">Records of Early English Drama</a>'
+    }).addTo(map);
 
 var tms_REEDgisrelief = L.tileLayer('http://talus.geog.utoronto.ca/1.0.0/REED_gis_relief/{z}/{x}/{-y}.png');
 
@@ -52,19 +58,47 @@ var overlays = {
 };
 
 L.control.layers(baselayers, overlays).addTo(map);
+L.control.scale({position: 'bottomleft', maxWidth: 100}).addTo(map);
+
+var legend = L.control({position: 'bottomright'});
+
+function showLegend() {
+    var div = document.getElementById('info_legend');
+    div.innerHTML = ('<br>' + '<img src="' + map_image_path +
+                     'legend.png" height="341" width="150">' + '<br>');
+}
+
+function hideLegend() {
+    var div = document.getElementById('info_legend')
+    div.innerHTML = ('<br>' + '<img src="' + map_image_path +
+                     'legendicon.png" height="50" width="50">' + '<br>');
+}
+
+legend.onAdd = function(map) {
+    var div = L.DomUtil.create('div', 'info_legend');
+    div.innerHTML = ('<br>' + '<img src="' + map_image_path +
+                     'legendicon.png"  height="50" width="50">' + '<br>');
+    div.setAttribute('onmouseenter', 'showLegend()');
+    div.setAttribute('onclick', 'hideLegend()');
+    div.setAttribute('onmouseleave', 'hideLegend()');
+    div.id = 'info_legend';
+    return div;
+};
+legend.addTo(map);
+
 
 //  Defining an icon to use as the default icon for each RELATED point
 //  when not included in a MARKERCLUSTER
 //  Added below in pointToLayer statement
 var related_location_Icon = L.icon({
-    iconUrl: '/assets/images/map/REED_circle_red_10.png',
+    iconUrl: map_image_path + 'REED_circle_red_10.png',
     iconSize: [10, 10],
     iconAnchor: [5, 5],
     popupAnchor: [0, -5]
 });
 //  Defining an icon to use as the default icon for single SOURCE point
 var source_location_Icon = L.icon({
-    iconUrl: '/assets/images/map/Yellow-Hollow-22.png',
+    iconUrl: map_image_path + 'Yellow-Hollow-22.png',
     iconSize: [22, 22],
     iconAnchor: [11, 11],
     popupAnchor: [0, -11]

@@ -109,13 +109,8 @@
             </div>
             <div class="tabs-panel" id="panel4">
               <div class="row collapse map-wrapper">
-                <div class="columns medium-9">
+                <div class="columns medium-12">
                   <div id="map"></div>
-                </div>
-                <div class="columns medium-3 map-legend">
-                  <div class="legend">
-                    <img src="{$kiln:assets-path}/images/map/legend.png" />
-                  </div>
                 </div>
               </div>
             </div>
