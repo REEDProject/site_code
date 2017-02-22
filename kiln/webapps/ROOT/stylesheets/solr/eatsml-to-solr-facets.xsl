@@ -233,13 +233,18 @@
         <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>
+    <xsl:if test=". = $location_ecclesiastical">
+      <field name="facet_locations_diocese">
+        <xsl:value-of select="$entity_eats_id" />
+      </field>
+    </xsl:if>
     <xsl:if test=". = $location_county">
       <field name="facet_locations_county">
         <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>
-    <xsl:if test=". = ($location_borough, $location_ecclesiastical,
-                  $location_household, $location_religious_house)">
+    <xsl:if test=". = ($location_borough, $location_household,
+                  $location_religious_house)">
       <field name="facet_locations_settlement">
         <xsl:value-of select="$entity_eats_id" />
       </field>

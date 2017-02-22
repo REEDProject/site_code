@@ -15,8 +15,8 @@
   <!-- Variables defining the sets of facets (in display order) in
        each collection of facets. -->
   <xsl:variable name="location_facets"
-                select="('facet_locations_country', 'facet_locations_county',
-                        'facet_locations_settlement',
+                select="('facet_locations_country', 'facet_locations_diocese',
+                        'facet_locations_county', 'facet_locations_settlement',
                         'facet_locations_feature')" />
   <xsl:variable name="day_facets"
                 select="('facet_days_secular', 'facet_days_liturgical')" />

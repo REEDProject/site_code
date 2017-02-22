@@ -196,6 +196,9 @@
           name="facet_locations_country" required="false" stored="true"
           type="int" />
    <field indexed="true" multiValued="true"
+          name="facet_locations_diocese" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
           name="facet_locations_county" required="false" stored="true"
           type="int" />
    <field indexed="true" multiValued="true"
