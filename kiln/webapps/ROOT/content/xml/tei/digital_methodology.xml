@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="records/REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/" xml:id="digital_methodology">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Digital Methodology</title>
+                <funder><orgName>Jackman Foundation, Toronto, Canada</orgName></funder>
+                <funder><orgName>National Endowment for the Humanities, Washington, DC, United
+                        States of America</orgName></funder>
+                <funder><orgName>Social Sciences and Humanities Research Council, Ottawa,
+                        Canada</orgName></funder>
+                <editor>J. Alan B. Somerset</editor>
+                <respStmt>
+                    <persName>C. Black</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Project Manager</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Kathy Chung</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Post-doctoral Fellow in Digital Humanities, EATS taxonomy developer and
+                        tagger</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="JC">James Cummings</persName>
+                    <orgName>University of Oxford</orgName>
+                    <resp>TEI Schema Designer, Technical Consultant</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Patrick Gregory</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Paleographer, Translator, Latin and Anglo-French Glossarian</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Tanya Hagen</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Bibliographer</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Janine Harper</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>English Glossarian, Proofreader</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Alexandra F. Johnston</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>REED Founder and Senior Consultant</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Sally-Beth MacLean</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Principal Investigator, SSHRC grant; Director of Research and General
+                        Editor</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Byron Moldofsky</persName>
+                    <orgName>University of Toronto</orgName>
+                    <resp>Cartographer</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="JN">Jamie Norrish</persName>
+                    <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Suzanne Westfall</persName>
+                    <resp>Principal Investigator, NEH grant</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Abigail Ann Young</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Paleographer</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>version 1, released <date when-iso="2017-02-01">1 February
+                    2017</date></edition>
+            </editionStmt>
+            <publicationStmt>
+                <authority><orgName>Records of Early English Drama (REED)</orgName>
+                    <address>
+                        <addrLine>University of Toronto</addrLine>
+                        <addrLine>170 St George Street, Suite 810</addrLine>
+                        <addrLine>Toronto, Ontario, Canada</addrLine>
+                        <addrLine>M5R 2M8</addrLine>
+                    </address>
+                </authority>
+                <availability>
+                    <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
+                            <date>2017</date></p>
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed
+                        under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+                        International (CC BY-NC-SA 4.0) licence.</licence>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title>Records of Early English Drama</title>
+            </seriesStmt>
+            <sourceDesc>
+                <p>Born digital. Information on original sources for transcriptions can be accessed
+                    via the Document Descriptions.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Records of Early English Drama (REED) is an international scholarly project that
+                    is establishing for the first time the context from which the drama of
+                    Shakespeare and his contemporaries grew. Founded in 1976, REED has worked since
+                    then to locate, transcribe, and edit historical documents containing evidence of
+                    drama, secular music, and other communal entertainment and ceremony from the
+                    Middle Ages until 1642, when the Puritans closed the London theatres.</p>
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+            <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:id="introduction">
+                <head>Introduction</head>
+                <p>The web application EATS (the entity authority tool set) has been used to 'tag'
+                    records with terms of interest to REED users. Each tag can be used to filter
+                    search results. Each tag also has its own page, accessed by clicking on a
+                    highlighted tag in the records or editorial materials.</p>
+                <p>As with REED print indexes, only terms and concepts deemed significant to users
+                    have been tagged. This is why not all occupations, for instance, have been
+                    tagged.</p>
+                <p>At this time, the tagging is not comprehensive. It is, instead, being used as a
+                    pointer to get users to the relevant document. A record may include the word
+                    'piper' more than once but usually the first instance alone has been tagged;
+                    thus, a reader should never assume a tagged word is the only instance of that
+                    word or concept in the record. The first-instance rule, however, is not
+                    absolute. Additional tags may be used to clarify pronouns or other unclear
+                    references.</p>
+                <p>Along with record transcriptions, record headings are always tagged as are
+                    endnotes (first instance). The document descriptions and Introduction are
+                    lightly tagged, with more comprehensive tagging of the Introduction planned for
+                    the future. For now, the web browser's search should help find terms of interest
+                    in the Introduction. Translations are not tagged.</p>
+                <p>Because some tags appear in endnotes, document descriptions, marginalia, or
+                    footnotes, they will not be visible without first opening the accordions
+                    underneath the record transcription. This is a good place to check if a tag is
+                    not immediately apparent within the record transcription itself.</p>
+                <p>As the database grows, terms within the filters will multiply, so the current set
+                    does not represent a model for the entire REED corpus, only the uploaded
+                    collections.</p>
+            </div>
+            <div xml:id="terminology">
+                <head>Tag Terminology</head>
+                <p>Due to the difficulty of classifying musical terms like 'piping,' 'pipe music,'
+                    etc, as either entertainers or entertainments, we have classed all such terms as
+                    entertainers. Therefore, the tag 'pipers' encompasses all kinds of piping
+                    activity, allowing the researcher to search more efficiently. Similarly, records
+                    that mention 'music' have been tagged with 'musicians,' and records that mention
+                    'dancing' have been tagged with 'dancers.'</p>
+                <p>To tag entertainer terms that can mean more than one thing, especially those in
+                    Latin, we have relied on the wording of the record rather than editorial
+                    judgments. Thus, 'histrio, histrionis' and 'mimus, mimi' are tagged as
+                    'entertainers, unspecified.' For more on Latin performance terms and their
+                    meanings, see REED's <ref
+                        target="http://reed.utoronto.ca/principal-terms-relating-to-performance/"
+                        >Anglo-Latin Wordbook</ref>.</p>
+                <p>Under the Collectives, Occupation filter, the 'parish clergy' tag includes
+                    vicars, rectors, ministers, curates, and parsons; 'cathedral clergy' includes
+                    deans and canons; and 'monastic orders' includes abbots, priors, monks, friars,
+                    abbesses, and nuns.</p>
+                <p>The Record Types filter allows users to refine results by the type of source
+                    document. As more collections are added to the database, more varieties will
+                    appear within each category. The Central Government and Royal category will
+                    eventually include records from the courts of law such as the Assizes, Chancery,
+                    Common Pleas, Exchequer, King's/Queen's Bench, and Star Chamber. The Local
+                    Government category will include borough records (such as city accounts, court
+                    records, minutes, and orders) and county records (such as quarter and petty
+                    sessions). The Church category will include diocesan administration (such as
+                    ecclesiastical visitations), records of the ecclesiastical courts, and parish
+                    accounts. The Family category will include acccounts, correspondence, diaries
+                    and commonplace books, wills, and inventories.</p>
+            </div>
+            <div xml:id="filters">
+                <head>How Filters Work</head>
+                <p>By default, all records in the database are displayed on the Search the Records
+                    page. Filters along the left side of the page can be used to refine the results.
+                    See <ref target="http://www.REFNEEDED">Search Tips</ref> for basic instructions
+                    on filters and searching.</p>
+                <p>After a term is selected within the filters, the table of results will reload,
+                    showing only records tagged with that term. The filters will also reload.
+                    Selecting 'Corpus Christi Day' from the Calendar Days, Liturgical filter will
+                    find records tagged with the term 'Corpus Christi Day.' Under the Calendar Days,
+                    Liturgical filter, other days may still be listed because they appear in records
+                    tagged with 'Corpus Christi Day.' Similarly, selecting 'female' under the
+                    People, Gender filter will find records containing female named individuals, but
+                    the list of named individuals under the People, Named filter will include male
+                    and unknown names, as well as female names, because they appear in records with
+                    a female individual.</p>
+                <p>In most instances, selecting a term from the filters will find records tagged
+                    with that term. In the case of four filters, however, the search results will
+                    also include records with associated tags: (1) Location (2) Collectives,
+                    Occupation, (3) Entertainers, Type, and (4) Drama, Type.</p>
+                <p>1) Searching for a location will find not only records tagged with that location,
+                    but also any records tagged with places within that location. A search for the
+                    county of 'Staffordshire' will also find any settlements or features contained
+                    within Staffordshire, even if Staffordshire itself is not tagged in those
+                    records.</p>
+                <p>2) Searching for 'mayors' under Collectives, Occupation will find not only
+                    records with the word 'mayor/s,' but also records with named mayors. A search on
+                    any occupation works like this.</p>
+                <p>3) Searching for 'players' under Entertainers, Type will find records with
+                    generic players, named players, or patronized troupes of players, such as the
+                    15th earl of Derby's players. To refine the results and find only patronized
+                    troupes who are players, select 'patronized' under Entertainers, Status. A
+                    search on any entertainer type works like this.</p>
+                <p>4) Searching for 'plays' under Drama, Type will find records with generic plays
+                    or titled plays such as 'Hamlet.' To refine the results and find only titled
+                    plays, select 'titled' under Drama, Status. A search on any drama type works
+                    like this.</p>
+            </div>
+            <div xml:id="characters">
+                <head>Unusual Characters and Screen Display</head>
+                <p>Some records include characters that are not currently part of Unicode, for
+                    example, the punctus elevatus. In order for these to display properly, users
+                    must install one of three fonts that are provided for free via MUFI at
+                    http://folk.uib.no/hnooh/mufi/fonts/. The fonts we recommend are Cardo,
+                    Junicode, or Palemonas MUFI.</p>
+            </div>
+            <div xml:id="maps">
+                <head>Maps</head>
+            </div>
+        </body>
+    </text>
+</TEI>
