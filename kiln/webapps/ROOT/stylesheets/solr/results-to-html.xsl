@@ -389,7 +389,7 @@
           </xsl:call-template>
         </xsl:when>
         <xsl:when test="$item">
-          <xsl:value-of select="$item" />
+          <xsl:value-of select="normalize-space($item)" />
         </xsl:when>
         <xsl:otherwise>
           <xsl:value-of select="$id" />
