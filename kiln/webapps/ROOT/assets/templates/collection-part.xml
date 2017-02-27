@@ -31,8 +31,6 @@
               <xsl:apply-templates select="$record_text/tei:div/tei:head/node()" />
             </h1>
           </div>
-          <div class="columns record-sidebar show-for-medium">
-          </div>
         </div>
         <xsl:for-each select="$record_text">
           <xsl:apply-templates mode="collection" select="tei:div/tei:div" />
