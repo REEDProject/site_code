@@ -76,7 +76,7 @@
         <div class="accordion-content" data-tab-content="">
           <ul class="open-filters">
             <xsl:for-each select="$facet-values/li">
-              <xsl:sort select="." />
+              <xsl:sort select="lower-case(.)" />
               <xsl:copy-of select="." />
             </xsl:for-each>
           </ul>
@@ -91,7 +91,7 @@
       <xsl:apply-templates mode="search-results" />
     </xsl:variable>
     <xsl:for-each select="$facet-values/li">
-      <xsl:sort select="." />
+      <xsl:sort select="lower-case(.)" />
       <xsl:copy-of select="." />
     </xsl:for-each>
   </xsl:template>
