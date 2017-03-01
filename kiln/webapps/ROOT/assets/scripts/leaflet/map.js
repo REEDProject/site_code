@@ -164,7 +164,7 @@ related_geoJsonLayer.addData(related_location_geojson);
 related_markers.addLayer(related_geoJsonLayer);
 map.addLayer(related_markers);
 // This overrides initial zoom extent set at top in L.map
-map.fitBounds(related_markers.getBounds());
+map.fitBounds(related_markers.getBounds(), {maxZoom: 12});
 
 source_geoJsonLayer.addData(source_location_geojson);
 map.addLayer(source_geoJsonLayer);

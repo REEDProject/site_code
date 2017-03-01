@@ -1389,11 +1389,11 @@ L.MarkerCluster = L.Marker.extend({
 		}
 
 		if (boundsZoom > zoom) {
-			this._group._map.setView(this._latlng, zoom);
+			this._group._map.setView(this._latlng, zoom); 
 		} else if (boundsZoom <= mapZoom) { //If fitBounds wouldn't zoom us down, zoom us down instead
-			this._group._map.setView(this._latlng, mapZoom + 1);
+			this._group._map.setView(this._latlng, mapZoom + 1); 
 		} else {
-			this._group._map.fitBounds(this._bounds);
+			this._group._map.fitBounds(this._bounds, {maxZoom: 13});  // add option maxZoom: 13 to limit zoom in when clicking on cluster
 		}
 	},
 
