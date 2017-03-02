@@ -125,6 +125,13 @@
         <body>
             <div xml:id="introduction">
                 <head>Introduction</head>
+                <p>REED Online records and editorial materials have been marked up using the TEI
+                    encoding scheme. The raw files can be downloaded from REED's <ref
+                        target="https://github.com/REEDProject/Collections">Collections</ref>
+                    repository on GitHub.</p>
+            </div>
+            <div xml:id="tags">
+                <head>EATS Tags</head>
                 <p>The web application EATS (the entity authority tool set) has been used to 'tag'
                     records with terms of interest to REED users. Each tag can be used to filter
                     search results. Each tag also has its own page, accessed by clicking on a
@@ -180,15 +187,15 @@
                     records, minutes, and orders) and county records (such as quarter and petty
                     sessions). The Church category will include diocesan administration (such as
                     ecclesiastical visitations), records of the ecclesiastical courts, and parish
-                    accounts. The Family category will include accounts, correspondence, diaries
-                    and commonplace books, wills, and inventories.</p>
+                    accounts. The Family category will include accounts, correspondence, diaries and
+                    commonplace books, wills, and inventories.</p>
             </div>
             <div xml:id="filters">
                 <head>How Filters Work</head>
                 <p>By default, all records in the database are displayed on the Search the Records
                     page. Filters along the left side of the page can be used to refine the results.
-                    See <ref target="/howto/search/">Search Tips</ref> for basic instructions
-                    on filters and searching.</p>
+                    See <ref target="/howto/search/">Search Tips</ref> for basic instructions on
+                    filters and searching.</p>
                 <p>After a term is selected within the filters, the table of results will reload,
                     showing only records tagged with that term. The filters will also reload.
                     Selecting 'Corpus Christi Day' from the Calendar Days, Liturgical filter will
@@ -231,6 +238,46 @@
             </div>
             <div xml:id="maps">
                 <head>Maps</head>
+                <p>Each record in the REED database has been tagged with locational information to
+                    the extent that this is possible. Locations are hierarchically arranged by
+                    Country, County, and Settlement. Records are tagged with all locations mentioned
+                    or hierarchically implied as explained above under 'How Filters Work.' They
+                    might also be tagged with significant local Features when explicitly named, such
+                    as identified and locatable buildings (for instance, churches or manor houses).
+                    When no such explicit location is mentioned, the record will be mapped to a
+                    generic location within the settlement.</p>
+                <p>The maps for REED Online are designed to show a specific location and all its
+                    related records, that is, records that have been tagged with that location.
+                    Therefore, a search by location for the Settlement 'Stafford' will bring up all
+                    the records tagged with that location. However, the search results do not
+                    include a map of that location. To see it on a map, one must select an
+                    individual record, and then click on the location 'Stafford' in the header for
+                    that record. Clicking on Stafford brings up the Stafford page; click on the
+                    'Map' tab to see the map showing the location of Stafford and all related
+                    records. (Clicking on 'Staffordshire' in the header would bring up the county
+                    page and its map tab.)</p>
+                <p>The 'Map' tab presents an interactive map which shows the selected location
+                    highlighted in yellow, and all related records as circular symbols or clusters
+                    of symbols in red. In the bottom right corner of the map, there is a 'Legend'
+                    icon – click on this for a detailed legend of map symbols. In the top right
+                    corner, there is a 'Layers' icon – click on this for controls to switch the base
+                    map from the map showing EREED coverage by county (the default) to a shaded
+                    relief map, or to a modern street map (<ref
+                        target="http://www.openstreetmap.org/">Openstreetmap.org</ref> as delivered
+                    by <ref target="https://www.mapbox.com/">Mapbox.com</ref>). Here you will also
+                    find checkboxes to control several EREED reference layers, for place symbols,
+                    place labels, and pre-1642 roads. In the top left corner of the map, there is a
+                    'Zoom' control, and in the bottom left corner a 'Scale bar.'</p>
+                <p>For more information about the information and data sources used for the map,
+                    please refer to the REED Patrons and Performances website pages <ref
+                        target="https://reed.library.utoronto.ca/content/about-maps">'About the
+                        maps'</ref> and <ref
+                        target="https://reed.library.utoronto.ca/sources-of-evidence">'Sources of
+                        evidence'</ref>. Much of the same data and methods have been used for the
+                    REED Online maps.</p>
+                <p>These maps have been developed and designed by Byron Moldofsky and Mariange
+                    Beaudry of the GIS and Cartography Office, Department of Geography and Planning,
+                    University of Toronto.</p>
             </div>
         </body>
     </text>
