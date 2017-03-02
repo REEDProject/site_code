@@ -41,15 +41,22 @@
 
   <xsl:import href="cocoon://_internal/url/reverse.xsl" />
 
+  <!-- QAZ: Refactor with variables in solr/eatsml-to-solr-facets.xsl. -->
   <xsl:variable name="floruit_date_period" select="'date_period-484'" />
   <xsl:variable name="circa_date_type" select="'date_type-489'" />
   <xsl:variable name="singular_name_type" select="'name_type-18607'" />
   <xsl:variable name="has_occupation_relationship_type" select="'entity_relationship_type-21008'" />
   <xsl:variable name="contains_relationship_type" select="'entity_relationship_type-502'" />
+  <xsl:variable name="borough_entity_type" select="'entity_type-539'" />
+  <xsl:variable name="church_entity_type" select="'entity_type-4833'" />
+  <xsl:variable name="county_entity_type" select="'entity_type-543'" />
   <xsl:variable name="feature_entity_type" select="'entity_type-21368'" />
   <xsl:variable name="guild_entity_type" select="'entity_type-517'" />
+  <xsl:variable name="household_entity_type" select="'entity_type-547'" />
+  <xsl:variable name="religious_house_entity_type" select="'entity_type-551'" />
   <xsl:variable name="troupe_entity_type" select="'entity_type-12619'" />
   <xsl:variable name="gis_base_url" select="'https://ereed.library.utoronto.ca/gis/place/'" />
+  <xsl:variable name="show_containing" select="($feature_entity_type, guild_entity_type, $borough_entity_type, $church_entity_type, $county_entity_type, $household_entity_type, $religious_house_entity_type)" />
 
   <xsl:template match="aggregation">
     <eats:entities>
@@ -151,7 +158,7 @@
       <primary_name>
         <xsl:value-of select="$name" />
       </primary_name>
-      <xsl:if test="eats:entity_types/eats:entity_type/@entity_type=($feature_entity_type, $guild_entity_type)">
+      <xsl:if test="eats:entity_types/eats:entity_type/@entity_type=$show_containing">
         <name_extra>
           <xsl:apply-templates mode="containing" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$contains_relationship_type][@domain_entity=$entity_id]" />
         </name_extra>
