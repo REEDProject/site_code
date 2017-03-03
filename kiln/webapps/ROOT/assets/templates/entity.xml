@@ -137,6 +137,7 @@
       <script>
         $('body').on('change.zf.tabs', '#example-tabs', function() {
           map.invalidateSize(false);
+          fitBounds(map);
         });
       </script>
     </kiln:block>

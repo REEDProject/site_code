@@ -1,3 +1,13 @@
+function fitBounds(map) {
+    // Zoom to the region if there is one, otherwise to the related markers.
+    // This overrides initial zoom extent.
+    if (source_region_geojson.length > 0) {
+        map.fitBounds(region_geoJsonLayer.getBounds());
+    } else if (related_location_geojson.length > 0) {
+        map.fitBounds(related_markers.getBounds(), {maxZoom: 12});
+    }
+}
+
 function getRelatedPopupContent(feature) {
     /* Returns the HTML content of the popup for the supplied feature,
      * that is a the source of a related record. */
@@ -170,10 +180,4 @@ map.addLayer(source_geoJsonLayer);
 region_geoJsonLayer.addData(source_region_geojson);
 map.addLayer(region_geoJsonLayer);
 
-// Zoom to the region if there is one, otherwise to the related markers.
-// This overrides initial zoom extent set at top in L.map.
-if (source_region_geojson.length > 0) {
-    map.fitBounds(region_geoJsonLayer.getBounds());
-} else if (related_location_geojson.length > 0) {
-    map.fitBounds(related_markers.getBounds(), {maxZoom: 12});
-}
+fitBounds(map);
