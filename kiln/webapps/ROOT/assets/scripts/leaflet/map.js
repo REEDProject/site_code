@@ -163,8 +163,6 @@ var region_geoJsonLayer = L.Proj.geoJson(null, {
 related_geoJsonLayer.addData(related_location_geojson);
 related_markers.addLayer(related_geoJsonLayer);
 map.addLayer(related_markers);
-// This overrides initial zoom extent set at top in L.map
-map.fitBounds(related_markers.getBounds(), {maxZoom: 12});
 
 source_geoJsonLayer.addData(source_location_geojson);
 map.addLayer(source_geoJsonLayer);
@@ -172,6 +170,10 @@ map.addLayer(source_geoJsonLayer);
 region_geoJsonLayer.addData(source_region_geojson);
 map.addLayer(region_geoJsonLayer);
 
-// Uncomment and this should work to zoom to selected region, if we
-// want to do that
-//map.fitBounds(region_geoJsonLayer.getBounds());
+// Zoom to the region if there is one, otherwise to the related markers.
+// This overrides initial zoom extent set at top in L.map.
+if (source_region_geojson.length > 0) {
+    map.fitBounds(region_geoJsonLayer.getBounds());
+} else {
+    map.fitBounds(related_markers.getBounds(), {maxZoom: 12});
+}
