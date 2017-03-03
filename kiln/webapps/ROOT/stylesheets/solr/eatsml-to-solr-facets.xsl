@@ -170,7 +170,7 @@
     </xsl:if>
     <!-- Crimes and Misdemeanours -->
     <xsl:if test=". = $crimes_misdemeanour">
-      <field name="facet_crimes_crim">
+      <field name="facet_crimes_crime">
         <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>
