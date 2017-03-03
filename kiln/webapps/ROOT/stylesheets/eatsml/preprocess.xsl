@@ -57,6 +57,7 @@
   <xsl:variable name="troupe_entity_type" select="'entity_type-12619'" />
   <xsl:variable name="gis_base_url" select="'https://ereed.library.utoronto.ca/gis/place/'" />
   <xsl:variable name="show_containing" select="($feature_entity_type, guild_entity_type, $borough_entity_type, $church_entity_type, $county_entity_type, $household_entity_type, $religious_house_entity_type)" />
+  <xsl:variable name="calendar_entity_types" select="('entity_type-4857', 'entity_type-4855')" />
 
   <xsl:template match="aggregation">
     <eats:entities>
@@ -169,6 +170,12 @@
             <xsl:apply-templates mode="title" select="." />
           </name_extra>
         </xsl:for-each>
+      </xsl:if>
+      <!-- Provide dates for calendar days in short name. -->
+      <xsl:if test="eats:entity_types/eats:entity_type/@entity_type=$calendar_entity_types">
+        <name_extra>
+        <xsl:apply-templates mode="title" select="eats:existences/eats:existence/eats:dates/eats:date" />
+        </name_extra>
       </xsl:if>
       <xsl:apply-templates mode="singular" select="eats:names/eats:name[@name_type=$singular_name_type]" />
       <date type="details">
