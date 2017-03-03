@@ -174,6 +174,6 @@ map.addLayer(region_geoJsonLayer);
 // This overrides initial zoom extent set at top in L.map.
 if (source_region_geojson.length > 0) {
     map.fitBounds(region_geoJsonLayer.getBounds());
-} else {
+} else if (related_location_geojson.length > 0) {
     map.fitBounds(related_markers.getBounds(), {maxZoom: 12});
 }
