@@ -71,6 +71,10 @@
     </i>
   </xsl:template>
 
+  <xsl:template match="tei:figure">
+    <xsl:apply-templates />
+  </xsl:template>
+
   <xsl:template match="tei:gap[@extent]">
     <xsl:for-each select="1 to @extent">
       <xsl:text>.</xsl:text>
