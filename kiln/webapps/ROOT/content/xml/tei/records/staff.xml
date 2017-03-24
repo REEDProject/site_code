@@ -13,12 +13,12 @@
           Canada</orgName></funder>
         <editor>J. Alan B. Somerset</editor>
         <respStmt>
-          <persName>C. Black</persName>
+          <persName xml:id="CB">C. Black</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
           <resp>Project Manager</resp>
         </respStmt>
         <respStmt>
-          <persName>Kathy Chung</persName>
+          <persName xml:id="KC">Kathy Chung</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
           <resp>Post-doctoral Fellow in Digital Humanities, EATS taxonomy developer and
             tagger</resp>
@@ -29,7 +29,7 @@
           <resp>TEI Schema Designer, Technical Consultant</resp>
         </respStmt>
         <respStmt>
-          <persName>Patrick Gregory</persName>
+          <persName xml:id="PG">Patrick Gregory</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
           <resp>Paleographer, Translator, Latin and Anglo-French Glossarian</resp>
         </respStmt>
@@ -139,6 +139,7 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2017-03-24" who="#CB">Added xml:ids for #KC, #PG, #CB; deleted duplicate EATS tag on second instance of 'Gregorye Ballard'</change>
       <change when="2016-08-12" who="#JN">Improved Encoding</change>
       <change when="2016-08-11" who="#JC">Provided suggested header in addition to updated
         schema</change>
@@ -4136,9 +4137,7 @@
                   <cell rend="right">0 0 6</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m, to <rs
-                      ref="http://ereed.library.utoronto.ca/eats/entity/12155/"
-                      type="Person_Commoner">Gregorye Ballard</rs>, for going w<ex>i</ex>th
+                  <cell>It<ex>e</ex>m, to Gregorye Ballard, for going w<ex>i</ex>th
                       l<ex>ette</ex>res to <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/36077/"
                       type="Place_BoroughParish">Kyllyngworthe</rs><note type="foot">Kyllyngworthe:
