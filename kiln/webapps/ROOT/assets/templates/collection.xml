@@ -30,6 +30,13 @@
           <div class="column medium-12">
             <h1 class="entity-header">
               <xsl:call-template name="display-collection-name" />
+              <xsl:text>, edited by </xsl:text>
+              <xsl:for-each select="/aggregation/TEICorpus/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor">
+                <xsl:apply-templates select="." />
+                <xsl:if test="position() != last()">
+                  <xsl:text>, </xsl:text>
+                </xsl:if>
+              </xsl:for-each>
             </h1>
           </div>
           <div class="column medium-12">
