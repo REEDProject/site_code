@@ -139,6 +139,7 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2017-03-24" who="#CB">Deleted editor's name from Acknowledgments head</change>
       <change when="2017-03-24" who="#CB">Added xml:ids for #KC, #PG, #CB; deleted duplicate EATS tag on second instance of 'Gregorye Ballard'</change>
       <change when="2016-08-12" who="#JN">Improved Encoding</change>
       <change when="2016-08-11" who="#JC">Provided suggested header in addition to updated
@@ -148,7 +149,7 @@
   <text>
     <front>
       <div xml:id="acknowledgments">
-        <head>Acknowledgments, J. Alan B. Somerset (ed)</head>
+        <head>Acknowledgments</head>
         <div>
           <p>This is the first digital collection published by REED, but the records research upon
             which it is based has a long history. The project was originally designed and undertaken
@@ -215,7 +216,7 @@
             (creation of readers' package). Finally, James Cummings and Jamie Norrish repeatedly
             shared their expertise in all things digital, guiding us through the tricky processes of
             TEI encoding.</p>
-          <p>Finally, in my Shropshire acknowledgements I recorded how that volume progressed as our
+          <p>Finally, in my Shropshire acknowledgments I recorded how that volume progressed as our
             family grew, and grew up assisting me, with the REED project in their veins. The
             children, now adults, have departed to their own careers and families and REED is just,
             for them, a (I hope happy!) memory. Only one remains, Felicity, my dear wife for fifty
