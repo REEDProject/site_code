@@ -17,6 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 from eats import urls as eats_urls
+from gis import urls as gis_urls
 from records import urls as records_urls
 from text_prepare import urls as text_prepare_urls
 
@@ -24,6 +25,7 @@ from text_prepare import urls as text_prepare_urls
 urlpatterns = [
     url(r'^accounts/', include('account.urls')),
     url(r'^prepare/', include(text_prepare_urls)),
+    url(r'^gis/', include(gis_urls)),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^selectable/', include('selectable.urls')),
     url(r'^eats/', include(eats_urls)),

@@ -49,6 +49,7 @@ INSTALLED_APPS = (
     'django_cache_manager',
     'tmapi',
     'eats',
+    'gis',
 )
 
 MIDDLEWARE_CLASSES = (
