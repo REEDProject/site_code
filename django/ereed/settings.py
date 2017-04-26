@@ -50,6 +50,7 @@ INSTALLED_APPS = (
     'tmapi',
     'eats',
     'gis',
+    'git_update',
 )
 
 MIDDLEWARE_CLASSES = (

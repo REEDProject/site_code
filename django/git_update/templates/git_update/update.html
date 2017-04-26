@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% load git_update_tags %}
+
+{% block content %}
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Update repository clone</h1>
+
+    <p>Submitting the form will update the REED <code>site_code</code>
+    repository clone <em>on the machine serving this web
+    page</em>.</p>
+
+    {% if fetched %}
+    <h2>Results of update</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Ref</th>
+          <th scope="col">Path</th>
+          <th scope="col">Flags</th>
+          <th scope="col">Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for info in fetched %}
+        <tr>
+          <td>{{ info.ref }}</td>
+          <td>{{ info.remote_ref_path }}</td>
+          <td>{{ info|list_flags }}</td>
+          <td>{{ info.note }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+
+    <form method="post" action="">
+      {% csrf_token %}
+      <table>
+        {{ form.as_table }}
+        <tr>
+          <td></td>
+          <td><input class="button" type="submit" value="Update"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+{% endblock content %}
