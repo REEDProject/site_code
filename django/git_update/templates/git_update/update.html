@@ -9,7 +9,9 @@
 
     <p>Submitting the form will update the REED <code>site_code</code>
     repository clone <em>on the machine serving this web
-    page</em>.</p>
+    page</em>. Note that this does not do any reloading of the
+    webserver, so it is suitable only for changes to the REED data
+    (TEI, EATSML, GeoJSON files).</p>
 
     {% if fetched %}
     <h2>Results of update</h2>
