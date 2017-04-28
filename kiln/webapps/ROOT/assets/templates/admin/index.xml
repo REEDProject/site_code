@@ -14,15 +14,35 @@
   </kiln:parent>
 
   <kiln:child>
-    <kiln:block name="title"><kiln:super/>Index</kiln:block>
-    
+    <kiln:block name="title"><kiln:super/>Home</kiln:block>
+
     <kiln:block name="header">
-      <h1 class="entity-header">Documents</h1>
+      <h1 class="entity-header">Admin Home</h1>
     </kiln:block>
-    
+
     <kiln:block name="content">
       <div class="row">
         <div class="medium-12 column">
+          <h2>Updating the Site</h2>
+
+          <ul>
+            <li>EATS data: Save the <a
+            href="https://ereed.library.utoronto.ca/eats/export/eatsml/entities/">EATSML
+            data</a> (warning: takes a long time to generate) to
+            <code>kiln/webapps/ROOT/content/xml/eatsml/entities.xml</code>,
+            commit the change to your local repository, and push to the
+            server (via the link below).</li>
+
+            <li>Fetch, save, and commit the <a
+            href="https://ereed.library.utoronto.ca/gis/">GIS
+            data</a> to your local repository.</li>
+
+            <li><a href="/git/">Update the repository</a> with the
+            committed data.</li>
+          </ul>
+
+          <h2>Documents</h2>
+
           <xsl:apply-templates mode="tei" select="/aggregation/dir:directory" />
         </div>
       </div>
