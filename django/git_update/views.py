@@ -37,7 +37,7 @@ def add_credentials_to_url(url, username, password):
 def update_repository(username, password):
     repo = Repo(settings.GIT_REPOSITORY_PATH)
     remote = repo.remote()
-    old_url = list(remote.urls)[0]
+    old_url = remote.config_reader.get('url')
     fetched = []
     try:
         new_url = add_credentials_to_url(old_url, username, password)
