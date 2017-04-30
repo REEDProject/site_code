@@ -1,0 +1,50 @@
+        Setting Up eREED on a New Server
+
+    Requirements
+
+Python 3.4+
+Django 1.10+
+Apache2
+Tomcat 7+ (libtcnative-1 also)
+Java 7+
+
+
+    Running Kiln Under Tomcat
+
+Set appropriate permissions for the site_code repository so that it
+can be updated via the Django git_update app. Some of these
+permissions will later be changed, for parts that are not in the
+repository (Cocoon log and Solr data directories).
+  $ chown -R www-data:ereed site_code
+
+Link Kiln's webapps directory to Tomcat's webapps directory:
+  $ cd /var/lib/tomcat7
+  $ mv webapps orig-webapps
+  $ ln -s /var/www/ereed/site_code/kiln/webapps/ webapps
+
+Copy solr.xml from kiln/webapps/solr/conf/solr.xml to
+/var/lib/tomcat7/conf/Catalina/localhost/
+
+Ensure that kiln/webapps/ROOT/sitemaps/config.xml has correct values
+for Solr server, RDF server, etc. This should just require a change of
+port from 9999 to 8080 (or changing Tomcat7's port to 9999).
+
+Set appropriate permissions for the Solr data directory:
+  $ cd /var/www/ereed/site_code/kiln/webapps/solr/
+  $ mkdir data
+  $ chown tomcat7:tomcat7 data
+
+Stop Tomcat from trying to turn / into /index.html:
+  $ vi /var/lib/tomcat7/conf/web.xml
+  (Comment out <welcome-file> elements within <welcome-file-list>)
+
+Configure Apache HTTPD to proxy to Tomcat. Exclude all webapps other
+than ROOT from proxying:
+  $ a2enmod proxy_http
+
+Create log directories for Cocoon and OpenSesame. catalina.out will
+give details:
+  $ mkdir -p /usr/share/tomcat7/.aduna/openrdf-sesame/logs
+  $ chown -R tomcat7:tomcat7 /usr/share/tomcat7/.aduna
+  $ mkdir /var/www/ereed/site_code/kiln/webapps/ROOT/WEB-INF/logs
+  $ chown tomcat7:tomcat7 /var/www/ereed/site_code/kiln/webapps/ROOT/WEB-INF/logs
