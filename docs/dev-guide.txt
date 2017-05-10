@@ -1,0 +1,68 @@
+Guide for Developers of REED Online
+===================================
+
+Necessary Skills and Technologies
+---------------------------------
+
+* XSLT (transformations of TEI and EATSML into HTML; this is the
+majority of the code for the site)
+* Python 3 (processing of Word files into TEI, processing of GeoJSON
+into XML; the EATS application)
+* Apache Cocoon and Apache Solr (as bundled in Kiln; mostly what is
+required is familiarity with Cocoon's processing model and how to
+create/modify pipelines, and how to configure Solr for new search
+scenarios)
+* Django (used in EATS, the processing of Word and GeoJSON data, and
+updating the Git repository on servers)
+* Apache Tomcat, Apache HTTPD (used to serve Kiln and Django
+respectively, with Kiln proxied through HTTPD; minor customisation
+here may be required)
+
+
+Repository
+----------
+
+All of the project-specific code for REED Online is stored in the
+site_code repository at https://vc.library.utoronto.ca/reed/site_code.git
+
+
+Site Architecture
+-----------------
+
+The website has a number of components (hierarchy represents
+server/serves relationship):
+
+Apache HTTPD
+   - Django (for administrators only)
+        - EATS
+        - Word to TEI converter
+        - GeoJSON converter
+        - Server updater
+   - Proxy to Apache Tomcat
+        - Kiln (Cocoon, Solr)
+
+
+External Documentation
+----------------------
+
+Kiln's documentation is at https://kiln.readthedocs.io, which also
+links to the Apache Cocoon documentation.
+
+EATS's documentation is at https://eats.readthedocs.io/.
+
+
+Website Overview
+----------------
+
+The public part of the website is built in Kiln from three data sets:
+
+* the REED records and associated materials in TEI XML;
+* the EATS entity data in EATSML XML; and
+* GIS data in GeoJSON.
+
+All three are (in those forms) stored in the Git site_code repository,
+with the EATS and GIS data being downloaded and converted from their
+respective sources via the links in the Kiln admin (/admin/).
+
+In order to understand what steps Kiln is following to produce a given
+page, use the introspection tools at /admin/introspection/.
