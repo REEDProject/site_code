@@ -7,6 +7,22 @@ Django 1.10+
 Apache2
 Tomcat 7+ (libtcnative-1 also)
 Java 7+
+PostgreSQL
+
+
+    Setting up Django
+
+Create database user:
+  $ createuser -E -P ereed
+
+Create database:
+  $ createdb ereed -O ereed
+
+Popuplate site_code/django/ereed/local_settings.py: copy and modify as
+appropriate from existing server. Need to set SECRET_KEY, DATABASES,
+EATS_TOPIC_MAP, and GIT_REPOSITORY_PATH.
+
+Configure Apache HTTPD to serve Django.
 
 
     Running Kiln Under Tomcat
