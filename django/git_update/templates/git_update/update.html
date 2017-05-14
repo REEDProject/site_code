@@ -13,6 +13,12 @@
     webserver, so it is suitable only for changes to the REED data
     (TEI, EATSML, GeoJSON files).</p>
 
+    {% if error %}
+    <h2>Error</h2>
+
+    <p>{{ error }}</p>
+    {% endif %}
+
     {% if fetched %}
     <h2>Results of update</h2>
 

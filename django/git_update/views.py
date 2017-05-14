@@ -15,9 +15,12 @@ def pull(request):
     if request.method == 'POST':
         form = GitLoginForm(request.POST)
         if form.is_valid():
-            fetched = update_repository(form.cleaned_data['username'],
-                                        form.cleaned_data['password'])
-            context['fetched'] = fetched
+            try:
+                context['fetched'] = update_repository(
+                    form.cleaned_data['username'],
+                    form.cleaned_data['password'])
+            except Exception as e:
+                context['error'] = str(e)
     else:
         form = GitLoginForm()
     context['form'] = form
