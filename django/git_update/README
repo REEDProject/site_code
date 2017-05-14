@@ -1,0 +1,26 @@
+        ABOUT
+
+This Django app is responsible for pulling from the remote origin for
+the REED site_code repository on the machine running Django. It uses
+GitPython to perform the operations, using credentials supplied by the
+user.
+
+
+        INSTALLATION
+
+Requires the GitPython library (pip install gitpython).
+
+Requires the Django setting GIT_REPOSITORY_PATH to be set to the root
+of the Git repository to be updated.
+
+
+        POTENTIAL ISSUES
+
+The operation modifies the Git configuration file temporarily in order
+to add the credentials to the remote URL.
+
+The GitPython documentation say that the library is "not suited for
+long-running processes as it tends to leak system resources". It seems
+unlikely that the very limited use of the library, that will not be
+frequently invoked, will cause any perceptible issues, but it is
+possible.
