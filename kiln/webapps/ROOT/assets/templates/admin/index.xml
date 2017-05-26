@@ -30,12 +30,11 @@
             href="https://ereed.library.utoronto.ca/eats/export/eatsml/entities/">EATSML
             data</a> (warning: takes a long time to generate) to
             <code>kiln/webapps/ROOT/content/xml/eatsml/entities.xml</code>,
-            commit the change to your local repository, and push to the
-            server (via the link below).</li>
+            commit the change to your local repository, and push.</li>
 
             <li>Fetch, save, and commit the <a
-            href="https://ereed.library.utoronto.ca/gis/">GIS
-            data</a> to your local repository.</li>
+            href="https://ereed.library.utoronto.ca/gis/">GIS data</a>
+            to your local repository, and push.</li>
 
             <li><a href="/git/">Update the repository</a> with the
             committed data.</li>
