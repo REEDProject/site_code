@@ -32,6 +32,7 @@ ADD_HEADER_XSLT_PATH = os.path.join(XSLT_DIR, 'add_header.xsl')
 ADD_ID_XSLT_PATH = os.path.join(XSLT_DIR, 'add_id.xsl')
 MASSAGE_FOOTNOTE_XSLT_PATH = os.path.join(XSLT_DIR, 'massage_footnote.xsl')
 REMOVE_AB_XSLT_PATH = os.path.join(XSLT_DIR, 'remove_ab.xsl')
+SANITISE_WORD_XSLT_PATH = os.path.join(XSLT_DIR, 'sanitise_word.xsl')
 SORT_RECORDS_XSLT_PATH = os.path.join(XSLT_DIR, 'sort_records.xsl')
 TIDY_BIBLS_XSLT_PATH = os.path.join(XSLT_DIR, 'tidy_bibls.xsl')
 
@@ -149,13 +150,19 @@ class Document:
         """
         text = []
         try:
-            doc = docx.Document(docx=file_path)
+            docx.Document(docx=file_path)
+            docx_path = file_path
         except ValueError:
             # doc_file may point to a non-docx file, in which case try to
             # convert it.
             docx_path = self._convert_to_docx(file_path)
-            doc = docx.Document(docx=docx_path)
-            os.remove(docx_path)
+        # Having ensured that we have a docx file, we must first
+        # manipulate one of its constituent files before opening it
+        # via the third party library, to cope with the fact that
+        # non-breaking hyphens are not treated as text.
+        self._sanitise_word(docx_path)
+        doc = docx.Document(docx=docx_path)
+        os.remove(docx_path)
         for paragraph in doc.paragraphs:
             text.append(self._update_text(paragraph.text))
         return self._wrap_text('\n'.join(text), line_length)
@@ -179,13 +186,26 @@ class Document:
     def _replace_word_chars(self, text):
         """Returns `text` with certain characters replaced with their
         preferred alternates."""
-        text = text.replace('‑', '-')
         text = text.replace(' ', ' ')
         text = text.replace('‘', "'")
         text = text.replace('’', "'")
         text = text.replace('“', '"')
         text = text.replace('”', '"')
         return text
+
+    def _sanitise_word(self, docx_path):
+        """Returns a sanitised form of the XML of the text content of the Word
+        file at `docx_path`."""
+        content_path = 'word/document.xml'
+        transform = etree.XSLT(etree.parse(SANITISE_WORD_XSLT_PATH))
+        with zipfile.ZipFile(docx_path, 'r') as zip_file:
+            with zip_file.open(content_path) as document:
+                tree = etree.parse(document)
+                tree = transform(tree)
+                sanitised = etree.tostring(tree, encoding='utf-8',
+                                           pretty_print=False)
+        with zipfile.ZipFile(docx_path, 'a') as zip_file:
+            zip_file.writestr(content_path, sanitised)
 
     def _transform(self, tree, *xslt_paths):
         for path in xslt_paths:
