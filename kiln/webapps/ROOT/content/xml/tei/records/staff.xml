@@ -139,6 +139,7 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2017-06-29" who="#KC">EATS tagged patron, Earl of Nottingham, who was not tagged in 1379/80 Gaunt record</change>
       <change when="2017-06-23" who="#CB">Replaced "has his headquarters" with "as his headquarters" in xml:id="background"</change>
       <change when="2017-06-23" who="#CB">Replaced "poor" with "posor" in quoted material in xml:id="appendix-1"</change>
       <change when="2017-06-23" who="#CB">Replaced "<del>an</del>" with "[an]" in xml:id="traditions"</change>
@@ -14642,7 +14643,7 @@ table. The (blank) above is the second cell of that row -->the
                   io<ex>ur</ex> a <rs ref="http://ereed.library.utoronto.ca/eats/entity/37937/"
                   type="Place_BoroughParish">Kenilleworth</rs> vj s. viij d. quatre livres Et as
                 ditz hanekyn et vnsze ministralx de doun n<ex>ost</ex>re tresch<ex>er</ex> Cousin le
-                Conte de Notyngham a Kenilleworth meisme le io<ex>ur</ex> vynt soldz Et a troys
+                <rs ref="http://ereed.library.utoronto.ca/eats/entity/31576/" type="Person_Male">Conte de Notyngham</rs> a Kenilleworth meisme le io<ex>ur</ex> vynt soldz Et a troys
                 ministralx mons<ex>ire</ex> Baudewyn ffreuille de nostre doun meisme le iour vynt
                 soldz..Et a vn estrange <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/"
                   type="Entertainer_Type"
