@@ -321,17 +321,17 @@
     <xsl:param name="tpq" />
     <xsl:param name="taq" />
     <xsl:choose>
-      <xsl:when test="$date">
+      <xsl:when test="normalize-space($date)">
         <xsl:value-of select="$date" />
       </xsl:when>
       <xsl:otherwise>
-        <xsl:if test="$tpq">
+        <xsl:if test="normalize-space($tpq)">
           <xsl:value-of select="$tpq" />
-          <xsl:if test="$taq">
+          <xsl:if test="normalize-space($taq)">
             <xsl:text> and </xsl:text>
           </xsl:if>
         </xsl:if>
-        <xsl:if test="$taq">
+        <xsl:if test="normalize-space($taq)">
           <xsl:value-of select="$taq" />
         </xsl:if>
       </xsl:otherwise>
