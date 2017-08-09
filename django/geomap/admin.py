@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.contrib.gis import admin as gis_admin
+from django.contrib.sites.models import Site
 from django.core.serializers import serialize
 
 from leaflet.admin import LeafletGeoAdmin
@@ -27,7 +28,7 @@ class ContainingPlaceListFilter(admin.SimpleListFilter):
 class PlaceAdmin(LeafletGeoAdmin):
 
     list_display = ('name', 'patrons_place_type', 'container',
-                    'patrons_place_code')
+                    'patrons_place_code', 'canonical_url')
     list_filter = ('patrons_place_type', ContainingPlaceListFilter,
                    'patrons_place_code')
     ordering = ('name',)

@@ -10,3 +10,10 @@ var geoData = {{ geodata }};
 <script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
 {{ media }}
 {% endblock %}
+
+{% block after_related_objects %}
+{{ block.super }}
+{% if change %}
+<p>Reference URL: {{ original.canonical_url }}</p>
+{% endif %}
+{% endblock %}

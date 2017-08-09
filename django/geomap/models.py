@@ -1,4 +1,6 @@
 from django.contrib.gis.db import models
+from django.contrib.sites.models import Site
+from django.urls import reverse
 
 from . import constants
 
@@ -68,6 +70,13 @@ class Place(models.Model):
     patrons_label_flag = models.IntegerField(
         choices=constants.PATRONS_LABEL_FLAG_CHOICES, null=True,
         verbose_name=constants.PATRONS_LABEL_FLAG_FIELD_NAME)
+
+    def canonical_url(self):
+        return 'https://{}{}'.format(Site.objects.get_current().domain,
+                                     self.get_absolute_url())
+
+    def get_absolute_url(self):
+        return reverse('geomap:place_detail', args=[str(self.id)])
 
     def __str__(self):
         return self.name

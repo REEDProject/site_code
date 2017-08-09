@@ -1,7 +1,13 @@
 from django.core.serializers import serialize
 from django.http import HttpResponse
+from django.shortcuts import get_object_or_404
 
 from .models import Place
+
+
+def place_detail(request, pk):
+    place = get_object_or_404(Place, pk=pk)
+    return _serialise_as_geojson([place])
 
 
 def _serialise_as_geojson(queryset):
