@@ -197,15 +197,20 @@ class Document:
         """Returns a sanitised form of the XML of the text content of the Word
         file at `docx_path`."""
         content_path = 'word/document.xml'
+        tmp_path = docx_path + '.new'
         transform = etree.XSLT(etree.parse(SANITISE_WORD_XSLT_PATH))
-        with zipfile.ZipFile(docx_path, 'r') as zip_file:
-            with zip_file.open(content_path) as document:
-                tree = etree.parse(document)
-                tree = transform(tree)
-                sanitised = etree.tostring(tree, encoding='utf-8',
-                                           pretty_print=False)
-        with zipfile.ZipFile(docx_path, 'a') as zip_file:
-            zip_file.writestr(content_path, sanitised)
+        with zipfile.ZipFile(docx_path, 'r') as zip_in_file:
+            with zipfile.ZipFile(tmp_path, 'w') as zip_out_file:
+                for document in zip_in_file.infolist():
+                    content = zip_in_file.read(document.filename)
+                    if document.filename == content_path:
+                        tree = etree.parse(io.BytesIO(content))
+                        tree = transform(tree)
+                        content = etree.tostring(tree, encoding='utf-8',
+                                                 pretty_print=False)
+                    zip_out_file.writestr(document, content)
+        os.remove(docx_path)
+        os.rename(tmp_path, docx_path)
 
     def _transform(self, tree, *xslt_paths):
         for path in xslt_paths:
