@@ -202,12 +202,14 @@ class Document:
         with zipfile.ZipFile(docx_path, 'r') as zip_in_file:
             with zipfile.ZipFile(tmp_path, 'w') as zip_out_file:
                 for document in zip_in_file.infolist():
-                    content = zip_in_file.read(document.filename)
-                    if document.filename == content_path:
-                        tree = etree.parse(io.BytesIO(content))
-                        tree = transform(tree)
-                        content = etree.tostring(tree, encoding='utf-8',
-                                                 pretty_print=False)
+                    with zip_in_file.open(document) as document_file:
+                        if document.filename == content_path:
+                            tree = etree.parse(document_file)
+                            tree = transform(tree)
+                            content = etree.tostring(tree, encoding='utf-8',
+                                                     pretty_print=False)
+                        else:
+                            content = document_file.read()
                     zip_out_file.writestr(document, content)
         os.remove(docx_path)
         os.rename(tmp_path, docx_path)
