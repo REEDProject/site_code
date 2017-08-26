@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet exclude-result-prefixes="tei" version="1.0"
+<xsl:stylesheet version="1.0"
                 xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
