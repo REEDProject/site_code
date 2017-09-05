@@ -245,6 +245,8 @@ class DocumentParser:
         tab_start_code = pp.nestedExpr(pp.LineStart() + pp.Literal('@['), '!',
                                        content=enclosed)
         tab_start_code.setParseAction(self._pa_tab_start)
+        title_code = pp.nestedExpr('<title>', '</title>', content=enclosed)
+        title_code.setParseAction(self._pa_title)
         paired_codes = (
             bold_code ^ bold_italic_code ^ centred_code ^ closer_code ^
             collation_ref ^ comment_code ^ deleted_code ^ exdented_code ^
@@ -254,7 +256,7 @@ class DocumentParser:
             language_codes ^ left_marginale_code ^ list_code ^
             right_marginale_code ^ signed_code ^ signed_centre_code ^
             signed_right_code ^ small_caps_code ^ superscript_code ^
-            tab_start_code)
+            tab_start_code ^ title_code)
         enclosed << pp.OneOrMore(single_codes ^ return_code ^ paired_codes ^
                                  content ^ punctuation ^ xml_escape ^ ignored)
         cell = pp.nestedExpr('<c>', '</c>', content=enclosed)
@@ -816,6 +818,9 @@ class DocumentParser:
 
     def _pa_tilde(self, s, loc, toks):
         return ['{}\N{COMBINING TILDE}'.format(toks[1])]
+
+    def _pa_title(self, s, loc, toks):
+        return ['<title>', ''.join(toks[0]), '</title>']
 
     def _pa_transcription(self, s, loc, toks):
         # Leave the xml:lang code with formatting characters, to be

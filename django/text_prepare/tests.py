@@ -643,6 +643,11 @@ Text
             expected = 'pa{}\N{COMBINING TILDE}a'.format(char)
             self._check_conversion(text, expected)
 
+    def test_title(self):
+        text = 'A <title>citation title</title> somewhere'
+        expected = text
+        self._check_conversion(text, expected)
+
     def test_transcription(self):
         text = '@w\\ f.40* {(12 January) (Fortune: Warrant)}\\!\nText'
         expected = '''<div xml:lang="lat" type="transcription">
