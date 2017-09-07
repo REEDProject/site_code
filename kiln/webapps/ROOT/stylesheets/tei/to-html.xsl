@@ -210,6 +210,12 @@
     </li>
   </xsl:template>
 
+  <xsl:template match="tei:orth">
+    <b>
+      <xsl:apply-templates />
+    </b>
+  </xsl:template>
+
   <xsl:template match="tei:pb">
     <xsl:text>|</xsl:text>
   </xsl:template>
@@ -239,7 +245,7 @@
 
   <xsl:template match="tei:sense" mode="group">
     <b class="link-to-instance">
-      <xsl:value-of select="preceding-sibling::tei:form[1]/tei:orth" />
+      <xsl:apply-templates select="preceding-sibling::tei:form[1]/tei:orth" />
     </b>
     <xsl:text> </xsl:text>
     <xsl:apply-templates mode="group" select="preceding::tei:gram[1]" />
