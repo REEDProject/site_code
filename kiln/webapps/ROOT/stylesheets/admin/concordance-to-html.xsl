@@ -37,10 +37,10 @@
 
   <xsl:template match="entry">
     <tr>
-      <td><xsl:apply-templates select="w" /></td>
-      <td><xsl:apply-templates select="lang" /></td>
-      <td><xsl:apply-templates select="count" /></td>
-      <td><xsl:apply-templates select="cits" /></td>
+      <td style="vertical-align: top;"><xsl:apply-templates select="w" /></td>
+      <td style="vertical-align: top;"><xsl:apply-templates select="lang" /></td>
+      <td style="vertical-align: top;"><xsl:apply-templates select="count" /></td>
+      <td style="vertical-align: top;"><xsl:apply-templates select="cits" /></td>
     </tr>
   </xsl:template>
 
