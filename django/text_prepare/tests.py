@@ -20,7 +20,7 @@ class TestDocumentConverter (TestCase):
     def _check_conversion(self, text, expected, doc_desc=True, heading=True,
                           subheading=True, reset_parser=True):
         if subheading:
-            text = '@w\\f 124 {(19 November)}\\!\n' + text
+            text = '@w\\f 124 {{(19 November)}}\\!\n' + text
             expected = '''<div xml:lang="lat" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
@@ -69,7 +69,7 @@ It spans multiple paragraphs.!
         self._check_conversion(text, expected)
 
     def test_blank(self):
-        text = 'some {(blank)} text'
+        text = 'some {{(blank)}} text'
         expected = 'some <space /> text'
         self._check_conversion(text, expected)
 
@@ -126,7 +126,7 @@ It spans multiple paragraphs.!
 
     def test_collation_notes(self):
         text = '''@h\\BPA!1532!eng\\!
-@w\\f 124 {(19 November)}\\!
+@w\\f 124 {{(19 November)}}\\!
 Test.
 @cn\\
 @c\\@a1\\A note.@c/
@@ -205,7 +205,7 @@ Test.
 
     def test_end_notes(self):
         text = '''@h\\BPA!1532!eng\\!
-@w\\f 124 {(19 November)}\\!
+@w\\f 124 {{(19 November)}}\\!
 Test.
 @en\\A note.@en/
 '''
@@ -253,12 +253,12 @@ A note.
         self._check_conversion(text, expected)
 
     def test_expansion(self):
-        text = 'some {expanded} text'
+        text = 'some {{expanded}} text'
         expected = 'some <ex>expanded</ex> text'
         self._check_conversion(text, expected)
 
     def test_footnote(self):
-        text = '@f\\our Churche: {St Nicholas}@f/'
+        text = '@f\\our Churche: {{St Nicholas}}@f/'
         expected = '<note type="foot">our Churche: <ex>St Nicholas</ex></note>'
         self._check_conversion(text, expected)
 
@@ -338,7 +338,7 @@ A note.
         @md/
         @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/@pc/
 @h\\ABC!1532!eng\\!
-@w\\f 124 {(19 November)}\\!
+@w\\f 124 {{(19 November)}}\\!
 Test.'''
         expected = '''<text type="record">
 <body>
@@ -377,7 +377,7 @@ Test.
         @md/
         @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/@pc/
 @h\\ABC!1532!eng\\!
-@w\\f 124 {(19 November)}\\!
+@w\\f 124 {{(19 November)}}\\!
 Test.'''
         expected = '''<text type="record">
 <body>
@@ -445,7 +445,7 @@ Text that <pb />crosses a page.
         @pd/
         @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/ @pc/
 @h\\ABC!1532!eng\\!
-@w\\f 124 {(19 November)}\\!
+@w\\f 124 {{(19 November)}}\\!
 Test.'''
         expected = '''<text type="record">
 <body>
@@ -475,7 +475,7 @@ Test.
         @pd/
         @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/ @pc/
 @h\\ABC!1532!eng\\!
-@w\\f 124 {(19 November)}\\!
+@w\\f 124 {{(19 November)}}\\!
 Test.'''
         expected = '''<text type="record">
 <body>
@@ -550,13 +550,13 @@ Text
                                subheading=False)
         data = {'lang': 'eng', 'place': 'BPA',
                 'date': '<date precision="low" when-iso="1631"><hi rend="italic">c</hi> 1631</date>',
-                'year': '{c} 1631', 'full_place': 'Boring Place Anyway'}
+                'year': '{{c}} 1631', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
         data = {'lang': 'eng', 'place': 'BPA',
                 'date': '<date from-iso="1630" precision="low" to-iso="1632"><hi rend="italic">c</hi> 1629/30-31/2</date>',
-                'year': '{c} 1629/30-31/2', 'full_place': 'Boring Place Anyway'}
+                'year': '{{c}} 1629/30-31/2', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
@@ -649,7 +649,7 @@ Text
         self._check_conversion(text, expected)
 
     def test_transcription(self):
-        text = '@w\\ f.40* {(12 January) (Fortune: Warrant)}\\!\nText'
+        text = '@w\\ f.40* {{(12 January) (Fortune: Warrant)}}\\!\nText'
         expected = '''<div xml:lang="lat" type="transcription">
 <div>
 <head> f.40* <supplied>(12 January) (Fortune: Warrant)</supplied></head>
@@ -678,7 +678,7 @@ Text
             self._check_conversion(
                 base_text.format(**data), base_expected.format(**data),
                 subheading=False)
-        text = '@w\\ {(12 January)}\\!\nText'
+        text = '@w\\ {{(12 January)}}\\!\nText'
         expected = '''<div xml:lang="lat" type="transcription">
 <div>
 <head> <supplied>(12 January)</supplied></head>

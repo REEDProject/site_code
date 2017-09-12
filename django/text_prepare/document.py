@@ -223,6 +223,8 @@ class Document:
     def _update_text(self, text):
         text = self._replace_word_chars(text)
         text = self._convert_at_codes(text)
+        # To avoid problems with Python's .format(), double all curly braces.
+        text = text.replace('{', '{{').replace('}', '}}')
         return text
 
     def validate(self, word_file_path, line_length):
@@ -267,6 +269,8 @@ class Document:
             except:
                 pass
             message = '\n'.join(lines)
+            # Undo doubling of curly braces.
+            message = message.replace('{{', '{').replace('}}', '}')
             raise TextPrepareDocumentValidationError(message)
         return results
 

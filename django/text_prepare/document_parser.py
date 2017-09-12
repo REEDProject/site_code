@@ -81,7 +81,7 @@ class DocumentParser:
         acute_code.setParseAction(self._pa_acute)
         ae_code = pp.Literal('@ae').setParseAction(self._pa_ae)
         AE_code = pp.Literal('@AE').setParseAction(self._pa_AE)
-        blank_code = pp.Literal('{(blank)}').setParseAction(self._pa_blank)
+        blank_code = pp.Literal('{{(blank)}}').setParseAction(self._pa_blank)
         capitulum_code = pp.Literal('@C').setParseAction(self._pa_capitulum)
         caret_code = pp.Literal('^').setParseAction(self._pa_caret)
         cedilla_code = pp.Literal('@?') + (vowels ^ 'c')
@@ -207,7 +207,7 @@ class DocumentParser:
             lang_spanish_code ^ lang_welsh_code)
         exdented_code = pp.nestedExpr('@g\\', '@g/', content=enclosed)
         exdented_code.setParseAction(self._pa_exdented)
-        expansion_code = pp.nestedExpr('{', '}', content=enclosed)
+        expansion_code = pp.nestedExpr('{{', '}}', content=enclosed)
         expansion_code.setParseAction(self._pa_expansion)
         footnote_code = pp.nestedExpr('@f\\', '@f/', content=enclosed)
         footnote_code.setParseAction(self._pa_footnote)
@@ -277,7 +277,7 @@ class DocumentParser:
             pp.Literal('th Century').setResultsName('label')
         record_heading_date_century.setParseAction(
             self._pa_record_heading_date_century)
-        circa = pp.Literal('{c} ').setParseAction(self._pa_circa)
+        circa = pp.Literal('{{c}} ').setParseAction(self._pa_circa)
         slash_year = pp.Literal('/') + pp.Word(pp.nums, min=1, max=2)
         start_year = pp.Optional(circa).setResultsName('circa') + \
             year.setResultsName('year') + \
@@ -300,7 +300,7 @@ class DocumentParser:
         record_heading.setParseAction(self._pa_record_heading)
         # A special content model is required for transcription headings,
         # since [] does not mean deleted material there.
-        supplied_code = pp.nestedExpr('{', '}', content=enclosed)
+        supplied_code = pp.nestedExpr('{{', '}}', content=enclosed)
         supplied_code.setParseAction(self._pa_supplied)
         transcription_heading_content = pp.OneOrMore(
             single_codes ^ pp.Word(pp.alphanums + ' []-–') ^ punctuation ^
