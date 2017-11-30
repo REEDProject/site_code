@@ -63,8 +63,7 @@ class Command(BaseCommand):
             name = 'Yorkshire: West Riding'
         return name
 
-    def _get_container(self, feature):
-        name = self._fix_container_name(feature)
+    def _get_container(self, name):
         try:
             container = Place.objects.get(
                 name=name, patrons_place_type__in=(
@@ -101,7 +100,7 @@ class Command(BaseCommand):
         return region_type
 
     def _import_point(self, feature, name):
-        container = self._get_container(feature)
+        container = self._get_container(self._fix_container_name(feature))
         coordinates = self._make_geometry(feature)
         place_type = self._get_place_type(feature)
         place_data = {

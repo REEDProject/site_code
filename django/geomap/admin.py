@@ -32,7 +32,7 @@ class PlaceAdmin(LeafletGeoAdmin):
     list_filter = ('patrons_place_type', ContainingPlaceListFilter,
                    'patrons_place_code')
     ordering = ('name',)
-    search_fields = ['name', 'container__name']
+    search_fields = ['name', 'container__name', 'container__container__name']
 
     def _add_places_to_context(self, places, context):
         context = context or {}

@@ -53,8 +53,8 @@ class Place(models.Model):
     """
 
     name = models.CharField(max_length=50, help_text=constants.NAME_FIELD_HELP)
-    patrons_place_type = models.ForeignKey(PatronsPlaceType,
-                                           related_name='places')
+    patrons_place_type = models.ForeignKey(PatronsPlaceType, blank=True,
+                                           null=True, related_name='places')
     coordinates = models.GeometryField(blank=True, null=True,
                                        srid=constants.SRID)
     is_approximate = models.BooleanField(
@@ -65,10 +65,10 @@ class Place(models.Model):
     container = models.ForeignKey('Place', null=True,
                                   related_name='contained_places')
     patrons_place_code = models.IntegerField(
-        choices=constants.PATRONS_PLACE_CODE_CHOICES, null=True,
+        blank=True, choices=constants.PATRONS_PLACE_CODE_CHOICES, null=True,
         verbose_name=constants.PATRONS_PLACE_CODE_FIELD_NAME)
     patrons_label_flag = models.IntegerField(
-        choices=constants.PATRONS_LABEL_FLAG_CHOICES, null=True,
+        blank=True, choices=constants.PATRONS_LABEL_FLAG_CHOICES, null=True,
         verbose_name=constants.PATRONS_LABEL_FLAG_FIELD_NAME)
 
     def canonical_url(self):
