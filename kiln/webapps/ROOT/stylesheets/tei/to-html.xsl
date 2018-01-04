@@ -109,6 +109,13 @@
     </xsl:element>
   </xsl:template>
 
+  <!-- Superscript -->
+  <xsl:template match="tei:hi[@rend='superscript']">
+    <sup>
+      <xsl:apply-templates />
+    </sup>
+  </xsl:template>
+
   <xsl:template match="tei:text[@type='record']/tei:body/tei:div/tei:div/tei:head">
     <p>
       <xsl:apply-templates />
