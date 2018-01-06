@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Fetch GIS data</h1>
+
+    <p>Fetch the GeoJSON data from the GIS server, converting into
+    forms suitable for use in the REED Online website. This process
+    generates a ZIP file containing files to be moved to your local
+    clone of the REED <code>site_code</code> repository:</p>
+
+    <ul>
+      <li><code>geojson.xml</code>; move this file
+      to <code>kiln/webapps/ROOT/content/xml/geojson.xml</code></li>
+      <li><code>regions</code>; move this directory
+      to <code>kiln/webapps/ROOT/assets/scripts/leaflet/regions/</code></li>
+    </ul>
+
+    <p>In both cases, replace any existing files/directories with that
+    name, and then commit and push the changes.</p>
+
+    {% if error %}
+    <p>There was an error updating the data:</p>
+
+    <div class="panel callout">
+      <p>{{ error }}</p>
+    </div>
+    {% endif %}
+
+    <form method="post">
+      {% csrf_token %}
+      <input class="button" type="submit" value="Fetch">
+    </form>
+
+    <hr>
+
+    <p>Note that the GIS data is available only from within the
+    University of Toronto network, and that the two sets of data
+    are:</p>
+
+    <ul>
+      <li><a href="{{ places_url }}">Places</a></li>
+      <li><a href="{{ regions_url }}">Regions</a></li>
+    </ul>
+
+  </div>
+</div>
+{% endblock content %}
