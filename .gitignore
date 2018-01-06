@@ -1,5 +1,33 @@
+# Backup files
 *~
-*.pyc
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+sdist/
+wheels/
+*.egg-info/
+*.egg
+
+# Django
+local_settings.py
+
+# Kiln
 /kiln/sw/jetty/logs/
 /kiln/webapps/ROOT/WEB-INF/logs/
 /kiln/webapps/openrdf-sesame/app_dir/
