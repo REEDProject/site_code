@@ -1,0 +1,30 @@
+{% extends "eats/edit/base.html" %}
+
+{% block eats_content %}
+<h1>Possible duplicate entities</h1>
+
+{% if dups %}
+<p>The following names occur more than once, and indicate possible
+duplicate entities. Each name links to a search on that name.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Number of instances</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for dup in dups %}
+    <tr>
+      <td><a href="{% url 'eats-search' %}?name={{ dup.form|urlencode }}">{{ dup.form }}</a></td>
+      <td>{{ dup.count }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p>There are no duplicate names.</p>
+{% endif %}
+
+{% endblock %}

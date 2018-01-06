@@ -1,0 +1,69 @@
+{% load entity_display %}
+
+<div class="entity-search-result">
+  <h1>{{ preferred_name_form }}</h1>
+
+  <table>
+    <tbody>
+      {% if entity_types %}
+      <tr>
+        <th scope="row">Types:</th>
+        <td>
+          <ul>
+            {% for entity_type in entity_types %}
+            <li>{{ entity_type }}</li>
+            {% endfor %}
+          </ul>
+        </td>
+      </tr>
+      {% endif %}
+      {% if dates %}
+      <tr>
+        <th scope="row">Dates:</th>
+        <td>
+          <ul>
+            {% for date in dates %}
+            <li>{{ date.assembled_form }}</li>
+            {% endfor %}
+          </ul>
+        </td>
+      </tr>
+      {% endif %}
+      {% if other_names %}
+      <tr>
+        <th scope="row">Other names:</th>
+        <td>
+          <ul>
+            {% for name in other_names %}
+            <li>{{ name }}</li>
+            {% endfor %}
+          </ul>
+        </td>
+      </tr>
+      {% endif %}
+      {% if entity_relationships %}
+      <tr>
+        <th scope="row">Relationships:</th>
+        <td>
+          <ul>
+            {% for entity_relationship in entity_relationships %}
+            <li>{% display_entity_relationship_property_assertion entity entity_relationship %}</li>
+            {% endfor %}
+          </ul>
+        </td>
+      </tr>
+      {% endif %}
+      {% if notes %}
+      <tr>
+        <th scope="row">Notes:</th>
+        <td>
+          {% for note_property in notes %}
+          <p>{{ note_property.note }}</p>
+          {% endfor %}
+        </td>
+      </tr>
+      {% endif %}
+    </tbody>
+  </table>
+  <p><a href="{% url 'eats-entity-view' entity.get_id %}">View</a> or <a href="{% url 'eats-entity-change' entity.get_id %}">Edit</a></p>
+</div>

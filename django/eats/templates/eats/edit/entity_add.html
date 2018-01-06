@@ -1,0 +1,16 @@
+{% extends "eats/edit/base.html" %}
+
+{% block eats_content %}
+<h1>Create new entity</h1>
+
+<form action="" id="entity-add-form" method="post">
+  {% csrf_token %}
+
+  {{ form.as_p }}
+
+  <div>
+    <input class="button" type="submit" value="Create and edit" name="_save"/>
+  </div>
+</form>
+
+{% endblock eats_content %}

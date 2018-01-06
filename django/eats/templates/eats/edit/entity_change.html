@@ -1,0 +1,460 @@
+{% extends "eats/edit/base.html" %}
+{% load entity_display %}
+
+{% block eats_title %}{{ block.super }} entity {{ preferred_name }}{% endblock %}
+{% block eats_style %}{{ block.super }}
+{{ entity_relationship_formset.media.css }}
+{% endblock eats_style %}
+{% block eats_js %}{{ block.super }}
+{{ entity_relationship_formset.media.js }}
+{% endblock eats_js %}
+
+{% block eats_content %}
+<article class="entity-display">
+<h1>Edit entity {{ preferred_name }}</h1>
+
+<p><abbr title="Published Subject Identifier">PSID</abbr>: <a href="{{ entity.get_eats_subject_identifier }}">{{ entity.get_eats_subject_identifier }}</a></p>
+
+{% if not is_valid %}
+<p class="errors">There are problems in the form which must be
+corrected before it will save.</p>
+{% endif %}
+
+<form action="" method="post">
+  {% csrf_token %}
+
+  <div>
+    {{ current_authority_form.current_authority.label_tag }}
+    {{ current_authority_form.current_authority }}
+    <input class="button" name="_change_authority" type="submit" value="Change authority"/>
+  </div>
+</form>
+
+<form action="" id="entity-change-form" method="post">
+  {% csrf_token %}
+
+  <fieldset>
+    <legend>Existences</legend>
+
+    {{ existence_formset.management_form }}
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Delete?</th>
+          <th scope="col">Authority</th>
+          <th scope="col">Dates</th>
+          <th scope="col">Notes</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="eats-editable-pa">
+        {% for form in existence_formset %}
+        {% with instance=form.instance %}
+        <tr>
+          <td>{% if instance %}{{ form.DELETE }}{% endif %}{{ form.assertion }}</td>
+          <td>{{ form.authority }}</td>
+          <td>{% if instance %}{% display_property_assertion_dates instance user entity_id %}{% endif %}</td>
+          <td>{% if instance %}{% display_property_assertion_notes instance user entity_id %}{% endif %}</td>
+          <td class="errors">{% if form.errors %}<ul>
+          {% for error in form.errors.values %}
+          <li>{{ error }}</li>
+          {% endfor %}
+          </ul>{% endif %}</td>
+        </tr>
+        {% endwith %}
+        {% endfor %}
+      </tbody>
+      <tbody class="eats-non-editable-pa">
+        {% for assertion in existence_non_editable %}
+        <tr>
+          <td></td>
+          <td>{{ assertion.authority.get_admin_name }}</td>
+          <td>{% display_property_assertion_dates assertion user %}</td>
+          <td>{% display_property_assertion_notes assertion user %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </fieldset>
+
+  <fieldset>
+    <legend>Entity types</legend>
+
+    {{ entity_type_formset.management_form }}
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Delete?</th>
+          <th scope="col">Entity type</th>
+          <th scope="col">Dates</th>
+          <th scope="col">Notes</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="eats-editable-pa">
+        {% for form in entity_type_formset %}
+        {% with instance=form.instance %}
+        <tr>
+          <td>{% if instance %}{{ form.DELETE }}{% endif %}{{ form.assertion }}</td>
+          <td>
+            <div>{{ form.entity_type }}</div>
+            {% if form.errors.entity_type %}
+            <div class="errors">{{ form.errors.entity_type }}</div>
+            {% endif %}
+          </td>
+          <td>{% if instance %}{% display_property_assertion_dates instance user entity_id %}{% endif %}</td>
+          <td>{% if instance %}{% display_property_assertion_notes instance user entity_id %}{% endif %}</td>
+          <td class="errors">{{ form.non_field_errors }}</td>
+        </tr>
+        {% endwith %}
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% if entity_type_non_editable %}
+    <section>
+      <p>Other authorities classify this entity as:</p>
+
+      <ul>
+        {% for assertion in entity_type_non_editable %}
+        <li>
+          {{ assertion.entity_type.get_admin_name }}
+          {% display_property_assertion_authority assertion %}
+          {% display_property_assertion_dates assertion user %}
+          {% display_property_assertion_notes assertion user %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </fieldset>
+
+  <fieldset>
+    <legend>Names</legend>
+
+    {{ name_formset.management_form }}
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Delete?</th>
+          <th scope="col"></th>
+          <th scope="col">Name type</th>
+          <th scope="col">Language</th>
+          <th scope="col">Script</th>
+          <th scope="col">Display form</th>
+          <th scope="col">Is preferred?</th>
+          <th scope="col">Dates</th>
+          <th scope="col">Notes</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody class="eats-editable-pa">
+        {% for form in name_formset %}
+        {% with instance=form.instance %}
+        {% if instance %}
+        <tr>
+          <td></td>
+          <td colspan="8">{{ form.instance.name.assembled_form }}</td>
+        </tr>
+        {% endif %}
+        <tr>
+          <td>{% if instance %}{{ form.DELETE }}{% endif %}{{ form.assertion }}</td>
+          <td><span class="name-part-section-toggle">+</span></td>
+          <td>
+            <div>{{ form.name_type }}</div>
+            {% if form.errors.name_type %}
+            <div class="errors">{{ form.errors.name_type }}</div>
+            {% endif %}
+          </td>
+          <td>
+            <div>{{ form.language }}</div>
+            {% if form.errors.language %}
+            <div class="errors">{{ form.errors.language }}</div>
+            {% endif %}
+          </td>
+          <td>
+            <div>{{ form.script }}</div>
+            {% if form.errors.script %}
+            <div class="errors">{{ form.errors.script }}</div>
+            {% endif %}
+          </td>
+          <td>
+            <div>{{ form.display_form }}</div>
+            {% if form.errors.display_form %}
+            <div class="errors">{{ form.errors.display_form }}</div>
+            {% endif %}
+          </td>
+          <td>
+            <div>{{ form.is_preferred }}</div>
+            {% if form.errors.is_preferred %}
+            <div class="errors">{{ form.errors.is_preferred }}</div>
+            {% endif %}
+          </td>
+          <td>{% if instance %}{% display_property_assertion_dates instance user entity_id %}{% endif %}</td>
+          <td>{% if instance %}{% display_property_assertion_notes instance user entity_id %}{% endif %}</td>
+          <td class="errors">{{ form.non_field_errors }}{{ form.name_part_formset.management_form }}</td>
+        </tr>
+        <tr class="name-part-section">
+          <td></td>
+          <td colspan="8">
+            <table class="name-parts">
+              {% for part_form in form.name_part_formset %}
+              <tr>
+                <td>{% if part_form.instance %}{{ part_form.DELETE }}{% endif %}</td>
+                <td>{{ part_form.name_part_type }}
+                {% if part_form.errors.name_part_type %}
+                <div class="errors">{{ part_form.errors.name_part_type }}</div>
+                {% endif %}
+                </td>
+                {% for id, display_form, language, script in part_form.name_part_fieldsets %}
+                <td>{{ id }}{{ display_form }}<span class="npls-toggle">+</span><div class="npls-toggled">Language: {{ language }}<br/>Script: {{ script }}</div></td>
+                {% endfor %}
+                <td class="errors">{{ part_form.non_field_errors }}</td>
+              </tr>
+              {% endfor %}
+            </table>
+          </td>
+        </tr>
+        {% endwith %}
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% if name_non_editable %}
+    <section>
+      <p>Other authorities name this entity:</p>
+
+      <ul>
+        {% for assertion in name_non_editable %}
+        <li>
+          {{ assertion.name.assembled_form }}
+          {% display_property_assertion_authority assertion %}
+          {% display_name_metadata assertion.name %}
+          {% display_property_assertion_dates assertion user %}
+          {% display_property_assertion_notes assertion user %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </fieldset>
+
+  <fieldset>
+    <legend>Relationships</legend>
+
+    {{ entity_relationship_formset.management_form }}
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Delete?</th>
+          <th scope="col">Relationship</th>
+          <th scope="col">Related entity</th>
+          <th scope="col">Certain?</th>
+          <th scope="col">Dates</th>
+          <th scope="col">Notes</th>
+        </tr>
+      </thead>
+      <tbody class="eats-editable-pa">
+        {% for form in entity_relationship_formset %}
+        {% with instance=form.instance %}
+        <tr>
+          <td>{% if instance %}{{ form.DELETE }}{% endif %}{{ form.assertion }}</td>
+          <td>
+            <div>{{ form.relationship_type }}</div>
+            {% if form.errors.relationship_type %}
+            <div class="errors">{{ form.errors.relationship_type }}</div>
+            {% endif %}
+          </td>
+          <td>
+            <div>{{ form.related_entity }} {% if instance and form.related_entity.value %}[<a href="{% url 'eats-entity-view' form.related_entity.value %}">view record</a>]{% endif %}</div>
+            {% if form.errors.related_entity %}
+            <div class="errors">{{ form.errors.related_entity }}</div>
+            {% endif %}
+          </td>
+          <td>
+            <div>{{ form.certainty }}</div>
+            {% if form.errors.certainty %}
+            <div class="errors">{{ form.errors.certainty }}</div>
+            {% endif %}
+          </td>
+          <td>{% if instance %}{% display_property_assertion_dates instance user entity_id %}{% endif %}</td>
+          <td>{% if instance %}{% display_property_assertion_notes instance user entity_id %}{% endif %}</td>
+        </tr>
+        {% endwith %}
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% if entity_relationship_non_editable %}
+    <section>
+      <p>Other authorities state that this entity:</p>
+
+      <ul>
+        {% for assertion in entity_relationship_non_editable %}
+        <li>
+          {% display_entity_relationship_property_assertion entity assertion %}
+          {% display_property_assertion_authority assertion %}
+          {% display_property_assertion_dates assertion user %}
+          {% display_property_assertion_notes assertion user %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </fieldset>
+
+  <fieldset>
+    <legend>Notes</legend>
+
+    {{ note_formset.management_form }}
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Delete?</th>
+          <th scope="col">Note</th>
+          <th scope="col">Is internal?</th>
+        </tr>
+      </thead>
+      <tbody class="eats-editable-pa">
+        {% for form in note_formset %}
+        <tr>
+          <td>{% if form.instance %}{{ form.DELETE }}{% endif %}{{ form.assertion }}</td>
+          <td>
+            <div>{{ form.note }}</div>
+            {% if form.errors.note %}
+            <div class="errors">{{ form.errors.note }}</div>
+            {% endif %}
+          </td>
+          <td>
+            <div>{{ form.is_internal }}</div>
+            {% if form.errors.is_internal %}
+            <div class="errors">{{ form.errors.is_internal }}</div>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% if note_non_editable %}
+    <section>
+      <p>Other authorities say about this entity:</p>
+
+      <ul>
+        {% for assertion in note_non_editable %}
+        <li class="note">
+          <p>{{ assertion.note }}</p>
+          <p class="note-authority">{% display_property_assertion_authority assertion %}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </fieldset>
+
+  <fieldset>
+    <legend>Subject Identifiers</legend>
+
+    <p>Subject identifiers are URLs of resources that are specifically
+    about this entity. For example, the URL
+    http://en.wikipedia.org/wiki/Johann_Sebastian_Bach is an
+    appropriate subject identifier for Johann Sebastian Bach.</p>
+
+    <p>If two entities have a subject identifier in common, that
+    indicates that they are the same entity.</p>
+
+    {{ subject_identifier_formset.management_form }}
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Delete?</th>
+          <th scope="col">URL</th>
+          <th scope="col">Possible duplicate entities</th>
+        </tr>
+      </thead>
+      <tbody class="eats-editable-pa">
+        {% for form in subject_identifier_formset %}
+        <tr>
+          <td>{% if form.instance %}{{ form.DELETE }}{% endif %}{{ form.assertion }}</td>
+          <td>
+            <div>{{ form.subject_identifier }}</div>
+            {% if form.errors.subject_identifier %}
+            <div class="errors">{{ form.errors.subject_identifier }}</div>
+            {% endif %}
+          </td>
+          <td>
+            {% display_duplicate_subject_identifiers entity form.subject_identifier.value %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% if subject_identifier_non_editable %}
+    <section>
+      <p>Other authorities specify the following URLs as representing this entity:</p>
+
+      <ul>
+        {% for assertion in subject_identifier_non_editable %}
+        <li>
+          {% with assertion.subject_identifier as subject_identifier %}
+          <a href="{{ subject_identifier }}">{{ subject_identifier }}</a>
+          {% display_property_assertion_authority assertion %}
+          {% display_duplicate_subject_identifiers entity subject_identifier %}
+          {% endwith %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </fieldset>
+
+  <div class="button-bar">
+    <input class="button" type="submit" value="Save" name="_save" accesskey=";"/>
+    <input class="button" type="submit" value="Save and add another" name="_save_add"/>
+  </div>
+</form>
+
+<p>It may be possible for you to <a href="{% url 'eats-entity-merge' entity_id %}">merge this entity
+  with another</a>.</p>
+
+<p>It may be possible for you to <a href="{% url 'eats-entity-delete' entity_id %}">delete this entity</a>.</p>
+
+</article>
+{% endblock eats_content %}
+
+{% block eats_end_js %}
+{{ block.super }}
+<script type="application/javascript">
+$(document).ready(function() {
+  $('.npls-toggled').hide();
+  $('.npls-toggle').click(function() {
+    if ($(this).text() == '+') {
+      $(this).text('−');
+    } else {
+      $(this).text('+');
+    }
+    $(this).next('.npls-toggled').toggle();
+  });
+});
+</script>
+<script type="application/javascript">
+  $(document).ready(function() {
+    $('.name-part-section').hide();
+    $('.name-part-section-toggle').click(function() {
+      if ($(this).text() == '+') {
+        $(this).text('−');
+      } else {
+        $(this).text('+');
+      }
+      $(this).closest('tr').next('.name-part-section').toggle();
+    });
+  });
+</script>
+{% endblock eats_end_js %}

@@ -1,0 +1,106 @@
+{% extends "eats/admin/base.html" %}
+
+{% block eats_content %}
+<h1>EATS Administration Panel</h1>
+
+{% if tm_create_status %}
+<div>
+  {% if tm_create_status == 'created' %}
+  <p>The EATS topic map has been successfully created.</p>
+  {% endif %}
+  {% if tm_create_status == 'exists' %}
+  <p>The EATS topic map already exists.</p>
+  {% endif %}
+  {% if tm_create_status == 'failed' %}
+  <p>The EATS topic map could not be created.</p>
+  {% endif %}
+</div>
+{% endif %}
+
+{% if tm_status %}
+  {% if tm_status == 'no_setting' %}
+<p>In order to begin using EATS, you must set a value for EATS_TOPIC_MAP in settings.py and refresh this page.</p>
+  {% endif %}
+  {% if tm_status == 'no_tm' %}
+<p>In order to begin using EATS, you must create a database, using the following button.</p>
+
+<form action="create_topic_map/" id="create-topic-map-form" method="post">
+  {% csrf_token %}
+  <input class="button" name="submit" type="submit" value="Create EATS Topic Map">
+</form>
+  {% endif %}
+{% endif %}
+
+{% if has_tm %}
+<p>In order to describe entities, the terms with which they are
+described must be first created and then associated with an
+authority.</p>
+
+<p>While all of the types, languages, scripts, etc are able to be used
+by any authority, they must be explicitly associated with each
+authority by editing that authority and selecting them.</p>
+
+<p>In order to be able to create and edit entities, an existing user
+must first be activated (via the user list) and then selected as an
+editor for an authority (via the authority list).</p>
+
+<table id="admin-panel">
+  <tr>
+    <th scope="row"><a href="{% url 'eats-authority-list' %}">Authorities</a></th>
+    <td><a href="{% url 'eats-authority-add' %}" class="addlink">Add</a></td>
+    <td><a href="{% url 'eats-authority-list' %}" class="changelink">Change</a></td>
+  </tr>
+  <tr>
+    <th scope="row"><a href="{% url 'eats-entitytype-list' %}">Entity types</a></th>
+    <td><a href="{% url 'eats-entitytype-add' %}" class="addlink">Add</a></td>
+    <td><a href="{% url 'eats-entitytype-list' %}" class="changelink">Change</a></td>
+  </tr>
+  <tr>
+    <th scope="row"><a href="{% url 'eats-nametype-list' %}">Name types</a></th>
+    <td><a href="{% url 'eats-nametype-add' %}" class="addlink">Add</a></td>
+    <td><a href="{% url 'eats-nametype-list' %}" class="changelink">Change</a></td>
+  </tr>
+  <tr>
+    <th scope="row"><a href="{% url 'eats-nameparttype-list' %}">Name part types</a></th>
+    <td><a href="{% url 'eats-nameparttype-add' %}" class="addlink">Add</a></td>
+    <td><a href="{% url 'eats-nameparttype-list' %}" class="changelink">Change</a></td>
+  </tr>
+  <tr>
+    <th scope="row"><a href="{% url 'eats-language-list' %}">Languages</a></th>
+    <td><a href="{% url 'eats-language-add' %}" class="addlink">Add</a></td>
+    <td><a href="{% url 'eats-language-list' %}" class="changelink">Change</a></td>
+  </tr>
+  <tr>
+    <th scope="row"><a href="{% url 'eats-script-list' %}">Scripts</a></th>
+    <td><a href="{% url 'eats-script-add' %}" class="addlink">Add</a></td>
+    <td><a href="{% url 'eats-script-list' %}" class="changelink">Change</a></td>
+  </tr>
+  <tr>
+    <th scope="row"><a href="{% url 'eats-entityrelationshiptype-list' %}">Entity relationship types</a></th>
+    <td><a href="{% url 'eats-entityrelationshiptype-add' %}" class="addlink">Add</a></td>
+    <td><a href="{% url 'eats-entityrelationshiptype-list' %}" class="changelink">Change</a></td>
+  </tr>
+  <tr>
+    <th scope="row"><a href="{% url 'eats-calendar-list' %}">Calendars</a></th>
+    <td><a href="{% url 'eats-calendar-add' %}" class="addlink">Add</a></td>
+    <td><a href="{% url 'eats-calendar-list' %}" class="changelink">Change</a></td>
+  </tr>
+  <tr>
+    <th scope="row"><a href="{% url 'eats-dateperiod-list' %}">Date periods</a></th>
+    <td><a href="{% url 'eats-dateperiod-add' %}" class="addlink">Add</a></td>
+    <td><a href="{% url 'eats-dateperiod-list' %}" class="changelink">Change</a></td>
+  </tr>
+  <tr>
+    <th scope="row"><a href="{% url 'eats-datetype-list' %}">Date types</a></th>
+    <td><a href="{% url 'eats-datetype-add' %}" class="addlink">Add</a></td>
+    <td><a href="{% url 'eats-datetype-list' %}" class="changelink">Change</a></td>
+  </tr>
+  <tr>
+    <th scope="row"><a href="{% url 'eats-user-list' %}">Users</a></th>
+    <td></td>
+    <td><a href="{% url 'eats-user-list' %}" class="changelink">Change</a></td>
+  </tr>
+</table>
+{% endif %}
+
+{% endblock eats_content %}

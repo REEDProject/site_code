@@ -1,0 +1,65 @@
+/* Global page layout */
+
+/* Entity search */
+
+#search-results { margin: 0 8em 0 4em; }
+
+.pagination { text-align: center; }
+
+/* Individual entity search results */
+
+.entity-search-result { margin-bottom: 2em; }
+.entity-search-result h1 {
+   font-size: larger;
+   border-bottom: thin solid black;
+   margin-bottom: 0;
+}
+
+.entity-search-result table { padding: 0; }
+.entity-search-result th { text-align: left; }
+.entity-search-result ul { margin: 0; padding: 0 }
+.entity-search-result li {
+   display: inline;
+   padding-right: 3em;
+}
+
+/* Entity display */
+
+.entity-display ul {
+   list-style-type: none;
+   margin-left: 2em;
+   padding-left: 0;
+}
+.entity-display section > ul > li { margin-bottom: 0.5em; }
+.entity-display .name-metadata {
+   padding-left: 2em;
+   font-size: smaller;
+}
+.entity-display .note p { margin-bottom: 0; }
+.entity-display .note .note-authority {
+   margin: 0 0 1em 2em;
+   padding: 0;
+}
+
+#eats-psi-footer {
+   margin: 3em 1em 1em 2em;
+   padding: 1em 2em;
+   border: thin dotted;
+   color: black;
+   background: #E2FDF8;
+}
+
+#eats-psi-footer ul {
+   list-style-type: square;
+}
+
+#eats-psi-footer li {
+   margin: 0 0 0 1em;
+   padding: 0;
+}
+
+.errors, .errorlist { color: red; }
+
+.note-ref {
+    border-bottom: 1px dotted;
+}

@@ -1,0 +1,19 @@
+{% extends "eats/display/base.html" %}
+
+{% block eats_title %}{{ block.super }} Home {{ preferred_name.assembled_form }}{% endblock eats_title %}
+
+{% block eats_content %}
+<nav>
+  <h1>Useful links</h1>
+  <ul>
+    <li><a href="{% url 'eats-statistics' %}">Statistics</a></li>
+    {% if user_is_editor %}
+    <li><a href="{% url 'eats-administration-panel' %}">Administer EATS</a></li>
+    {% endif %}
+  </ul>
+</nav>
+<section>
+  <h1>Entity Authority Tool Set</h1>
+
+</section>
+{% endblock eats_content %}

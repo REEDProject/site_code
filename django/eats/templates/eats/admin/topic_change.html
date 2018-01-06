@@ -1,0 +1,29 @@
+{% extends "eats/admin/base.html" %}
+
+{% block eats_title %}{{ block.super }}: Change {{ opts.verbose_name }} "{{ name }}"{% endblock eats_title %}
+
+{% block eats_content %}
+<h1>Change {{ opts.verbose_name }} "{{ name }}"</h1>
+
+<form action="" id="infrastructure-change-form" method="post">
+  {% csrf_token %}
+
+  {% include help_template %}
+
+  {% if error_message %}
+  <p class="errors">{{ error_message }}</p>
+  {% endif %}
+
+  <table>
+  {{ form.as_table }}
+  </table>
+
+  <div>
+    <input class="button" type="submit" value="Save" name="_save"/>
+    <input class="button" type="submit" value="Save and add another" name="_addanother"/>
+    <input class="button" type="submit" value="Save and continue editing" name="_continue"/>
+  </div>
+</form>
+
+<p><a href="{% url 'eats-administration-panel' %}">Administration Panel</a></p>
+{% endblock eats_content %}

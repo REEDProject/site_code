@@ -1,0 +1,142 @@
+{% extends "eats/display/base.html" %}
+{% load entity_display %}
+
+{% block eats_title %}{{ block.super }} Display entity {{ preferred_name_form }}{% endblock eats_title %}
+
+{% block eats_content %}
+<article class="entity-display">
+  <h1>{{ preferred_name_form }}</h1>
+
+  {% if user_is_editor %}<p>[<a href="{% url 'eats-entity-change' entity.get_id %}">Edit</a>]</p>{% endif %}
+
+  {% if has_existence_dates %}
+  <section>
+    <h1>Dates</h1>
+
+    <p>Dates expressing when this entity existed:</p>
+
+    <ul>
+      {% for existence_pa in existence_pas %}
+      {% if existence_pa.get_dates %}
+      <li>{% display_property_assertion_authority existence_pa %}:
+        {% display_property_assertion_dates existence_pa eats_user %}
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if entity_type_pas %}
+  <section>
+    <h1>Types</h1>
+
+    <p>This entity is classified as:</p>
+
+    <ul>
+      {% for entity_type_pa in entity_type_pas %}
+      <li>
+        {{ entity_type_pa.entity_type.get_admin_name }}
+        {% display_property_assertion_authority entity_type_pa %}
+        {% display_property_assertion_dates entity_type_pa eats_user %}
+        {% display_property_assertion_notes entity_type_pa eats_user %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if name_pas %}
+  <section>
+    <h1>Names</h1>
+
+    <p>This entity is named:</p>
+
+    <ul>
+      {% for name_pa in name_pas %}
+      <li>
+        {{ name_pa.name.assembled_form }}
+        {% display_property_assertion_authority name_pa %}
+        <div class="name-metadata">
+          {% display_name_metadata name_pa.name %}
+          {% display_property_assertion_dates name_pa eats_user %}
+          {% display_property_assertion_notes name_pa eats_user %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if relationship_pas %}
+  <section>
+    <h1>Relationships</h1>
+
+    <p>This entity:</p>
+
+    <ul>
+      {% for relationship_pa in relationship_pas %}
+      <li>
+        {% display_entity_relationship_property_assertion entity relationship_pa %}
+        {% display_property_assertion_authority relationship_pa %}
+        {% display_property_assertion_dates relationship_pa eats_user %}
+        {% display_property_assertion_notes relationship_pa eats_user %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if note_pas %}
+  <section>
+    <h1>Notes</h1>
+
+    <ul>
+      {% for note_pa in note_pas %}
+      <li class="note">
+        <p>{{ note_pa.note }}</p>
+        <p class="note-authority">{% display_property_assertion_authority note_pa %}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if subject_identifier_pas %}
+  <section>
+    <h1>Subject identifiers</h1>
+
+    <p>The following resources identify/are specifically about this entity:</p>
+
+    <ul>
+      {% for subject_identifier_pa in subject_identifier_pas %}
+      {% with subject_identifier_pa.subject_identifier as subject_identifier %}
+      <li>
+        <a href="{{ subject_identifier }}">{{ subject_identifier }}</a>
+        {% display_property_assertion_authority subject_identifier_pa %}
+        {% display_duplicate_subject_identifiers entity subject_identifier %}
+      </li>
+      {% endwith %}
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <section id="eats-psi-footer">
+    <!-- PSI Requirement 1 (PSID is a URI), Requirement 3 (state unique
+         PSID URI), Recommendations 4 (Statement of Purpose) and 5
+         (Publisher Identification) -->
+
+    <p>This resource is intended to be used as a <a href="http://www.oasis-open.org/committees/download.php/1217/wd-pubsubj-introduction-01.htm#s.2.4">Published Subject Indicator</a>. The canonical <abbr title="Published Subject Identifier">PSID</abbr> for this <abbr title="Published Subject Indicator">PSI</abbr> is <a href="{{ entity.get_eats_subject_identifier }}">{{ entity.get_eats_subject_identifier }}</a>. This <abbr title="Published Subject Indicator">PSI</abbr> is published by <a href="http://{{ site.domain }}">{{ site.name }}</a>, although the entity metadata may be drawn from other sources, as identified.</p>
+
+    <!-- PSI Recommendation 2 (machine-processable metadata) -->
+    <p>This record's data is also available in the following
+    machine-processable forms:</p>
+
+    <ul>
+      <li><a href="{% url 'eats-entity-eatsml-view' entity.get_id %}"><abbr title="Entity Authority Tool Set">EATS</abbr> XML</a></li>
+    </ul>
+  </section>
+
+</article>
+{% endblock eats_content %}
