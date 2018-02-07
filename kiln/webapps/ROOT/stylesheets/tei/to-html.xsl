@@ -250,6 +250,16 @@
     </a>
   </xsl:template>
 
+  <xsl:template match="tei:seg[@type='signed']">
+    <span>
+      <xsl:apply-templates select="@*" />
+      <xsl:call-template name="tei-assign-classes" />
+      <i>(signed)</i>
+      <xsl:text> </xsl:text>
+      <xsl:apply-templates select="node()" />
+    </span>
+  </xsl:template>
+
   <xsl:template match="tei:sense" mode="group">
     <b class="link-to-instance">
       <xsl:apply-templates select="preceding-sibling::tei:form[1]/tei:orth" />
