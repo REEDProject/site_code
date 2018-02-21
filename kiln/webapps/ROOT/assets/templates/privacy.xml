@@ -10,7 +10,7 @@
   <kiln:child>
     <kiln:block name="title">
       <kiln:super/>
-      <xsl:text>Privacy</xsl:text><!--#CB: I used contact.xml file as base, so replaced 'Contact' with 'Privacy' here. Flailing guess.-->
+      <xsl:text>Online Privacy and Data Collection</xsl:text>
     </kiln:block>
 
     <kiln:block name="content">
@@ -19,14 +19,14 @@
           <div class="column medium-9">
             <h1>Online Privacy and Data Collection</h1>
             <div class="text">
-              <p>We use data gathered by Google Analytics to ensure that the site is meeting your
+              <p>We use data gathered by <a href="http://www.google.com/analytics/">Google Analytics</a> to ensure that the site is meeting your
                 needs, and to see where there is room for improvement. All user data that we receive
                 is completely anonymous. However, your domain name or IP address may identify you
                 depending on the naming standards followed by your Internet service provider. You
                 may wish to ask them about their policies and practices.</p>
 
               <p>We use Google Analytics to track how you use this website, including information
-                about: </p>
+                about:</p>
               <ul>
                 <li><p>How long you stay on the site</p></li>
                 <li><p>What search terms you use on the site</p></li>
