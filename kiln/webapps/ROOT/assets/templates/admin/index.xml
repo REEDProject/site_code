@@ -26,18 +26,35 @@
           <h2>Updating the Site</h2>
 
           <ul>
-            <li>EATS data: Save the <a
-            href="https://ereed.library.utoronto.ca/eats/export/eatsml/entities/">EATSML
-            data</a> (warning: takes a long time to generate) to
-            <code>kiln/webapps/ROOT/content/xml/eatsml/entities.xml</code>,
-            commit the change to your local repository, and push.</li>
+            <li>
+              <p>EATS data: Save the <a
+              href="https://ereed.library.utoronto.ca/eats/export/eatsml/entities/">EATSML
+              data</a> (warning: takes a long time to generate) to
+              <code>kiln/webapps/ROOT/content/xml/eatsml/entities.xml</code>,
+              commit the change to your local repository, and
+              push.</p>
+            </li>
 
-            <li>Fetch, save, and commit the <a
-            href="https://ereed.library.utoronto.ca/gis/">GIS data</a>
-            to your local repository, and push.</li>
+            <li>
+              <p>Fetch, save, and commit the <a
+              href="https://ereed.library.utoronto.ca/geomap/serialise/all/placeholders/">GIS
+              data</a> to your local repository, and push. The linked
+              resource (warning: takes a long time to generate) is a
+              ZIP file containing files to be moved to your local
+              clone of the REED <code>site_code</code> repository:</p>
 
-            <li><a href="/git/">Update the repository</a> with the
-            committed data.</li>
+              <ul>
+                <li><code>geojson.xml</code>; move this file to <code>kiln/webapps/ROOT/content/xml/geojson.xml</code></li>
+                <li><code>regions</code>; move this directory to <code>kiln/webapps/ROOT/assets/scripts/leaflet/regions/</code></li>
+              </ul>
+
+              <p>In both cases, replace any existing files/directories with that name, and then commit and push the changes.</p>
+            </li>
+
+            <li>
+              <p><a href="/git/">Update the repository</a> with the
+              committed data.</p>
+            </li>
           </ul>
 
           <h2>Documents</h2>

@@ -39,12 +39,12 @@ class Place(models.Model):
     placeholder_coordinates: Optional co-ordinates for unlocated
     places contained within this place. These co-ordinates are used,
     if not null, in preference to co-ordinates for those contained
-    places.  This is primarily to cope with city-counties that have
+    places. This is primarily to cope with city-counties that have
     areal co-ordinates; their contained unlocated places need to use
     point co-ordinates, which this field will contain.
 
     container: Optional reference to a containing place. Unlocated
-    places use the coordinates of their container.
+    places use the co-ordinates of their container.
 
     patrons_place_code: Legacy P&P data.
 
@@ -70,6 +70,25 @@ class Place(models.Model):
     patrons_label_flag = models.IntegerField(
         blank=True, choices=constants.PATRONS_LABEL_FLAG_CHOICES, null=True,
         verbose_name=constants.PATRONS_LABEL_FLAG_FIELD_NAME)
+
+    def get_actual_coordinates(self, include_placeholder=False):
+        """Returns the actual co-ordinates for this place.
+
+        This handles the case when a place is 'unlocated' except
+        generally within another place; in which case the containing
+        place's placeholder co-ordinates (or co-ordinates if there are
+        no placeholder co-ordinates) are used.
+
+        This method recurses up the containment hierarchy.
+
+        """
+        if include_placeholder and self.placeholder_coordinates:
+            coordinates = self.placeholder_coordinates
+        else:
+            coordinates = self.coordinates
+        if coordinates is None and self.container:
+            coordinates = self.container.get_actual_coordinates(True)
+        return coordinates
 
     def canonical_url(self):
         return 'https://{}{}'.format(Site.objects.get_current().domain,
