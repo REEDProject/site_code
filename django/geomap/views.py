@@ -74,24 +74,23 @@ def serialise_all_with_placeholders(request):
         'places_url': reverse('geomap:serialise_points'),
         'regions_url': reverse('geomap:serialise_regions'),
     }
-    if request.method == 'POST':
-        try:
-            points = Place.objects.extra(
-                where=["GeometryType(coordinates) = 'POINT'"])
-            points_geojson = json.loads(serialize('geojson', points))
-            regions = Place.objects.extra(
-                where=["GeometryType(coordinates) != 'POINT'"])
-            regions_geojson = json.loads(serialize('geojson', regions))
-            xml = _assemble_xml(points_geojson, regions_geojson)
-            archive = io.BytesIO()
-            with zipfile.ZipFile(archive, 'w') as zip_file:
-                zip_file.writestr(KILN_PLACES_FILENAME, xml.encode('utf-8'))
-                _convert_geojson_to_js(regions_geojson, zip_file)
-            return HttpResponse(archive.getvalue(),
-                                content_type='application/zip')
-        except Exception as e:
-            context['error'] = str(e)
-            raise e
+    try:
+        points = Place.objects.extra(
+            where=["GeometryType(coordinates) = 'POINT'"])
+        points_geojson = json.loads(serialize('geojson', points))
+        regions = Place.objects.extra(
+            where=["GeometryType(coordinates) != 'POINT'"])
+        regions_geojson = json.loads(serialize('geojson', regions))
+        xml = _assemble_xml(points_geojson, regions_geojson)
+        archive = io.BytesIO()
+        with zipfile.ZipFile(archive, 'w') as zip_file:
+            zip_file.writestr(KILN_PLACES_FILENAME, xml.encode('utf-8'))
+            _convert_geojson_to_js(regions_geojson, zip_file)
+        return HttpResponse(archive.getvalue(),
+                            content_type='application/zip')
+    except Exception as e:
+        context['error'] = str(e)
+        raise e
     return render(request, 'geomap/serialise_all_with_placeholders.html',
                   context)
 
