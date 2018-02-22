@@ -120,6 +120,11 @@ STATICFILES_DIRS = (
 )
 
 
+SERIALIZATION_MODULES = {
+    'geojson': 'geomap.serializers.geojson'
+}
+
+
 # Account settings.
 ACCOUNT_OPEN_SIGNUP = False
 
