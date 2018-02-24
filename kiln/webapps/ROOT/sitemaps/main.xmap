@@ -247,6 +247,15 @@
         <map:serialize />
       </map:match>
 
+      <!-- Privacy statement. -->
+      <map:match id="ereed-privacy" pattern="privacy/">
+        <map:aggregate element="aggregation">
+          <map:part src="cocoon://_internal/menu/main.xml?url=privacy/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/privacy.xsl" />
+        <map:serialize />
+      </map:match>
+
       <!-- Contact. -->
       <map:match id="ereed-contact" pattern="contact/">
         <map:aggregate element="aggregation">
