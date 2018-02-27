@@ -19,9 +19,13 @@
         </fileDesc>
         <encodingDesc>
           <listPrefixDef>
-            <prefixDef ident="taxon" matchPattern="([A-Za-z0-9]+)"
+            <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)"
                        replacementPattern="../taxonomy.xml#$1">
               <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the taxonomy.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p>
+            </prefixDef>
+            <prefixDef ident="gloss" matchPattern="([A-Za-z0-9_-]+)"
+                       replacementPattern="../glossary.xml#$1">
+              <p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the glossary.xml file. For example, <code>gloss:histrio-1</code> dereferences to <code>glossary.xml#histrio-1</code>.</p>
             </prefixDef>
           </listPrefixDef>
         </encodingDesc>
