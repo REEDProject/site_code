@@ -146,6 +146,9 @@
               <xsl:value-of select="name" />
               <xsl:text> </xsl:text>
               <a href="{entity/@url}"><xsl:value-of select="entity" /></a>
+              <xsl:if test="@certainty='none'">
+                <xsl:text> (uncertain)</xsl:text>
+              </xsl:if>
             </td>
           </tr>
         </xsl:for-each>

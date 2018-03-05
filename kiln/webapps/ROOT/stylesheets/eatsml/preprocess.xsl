@@ -221,6 +221,7 @@
     <xsl:param name="entity_id" />
     <xsl:variable name="relationship" select="id(@entity_relationship_type)" />
     <relationship>
+      <xsl:copy-of select="@certainty" />
       <name>
         <xsl:choose>
           <xsl:when test="@domain_entity = $entity_id">
