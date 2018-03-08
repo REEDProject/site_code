@@ -145,8 +145,11 @@
    <field indexed="true" multiValued="true" name="facet_record_type"
           required="false" stored="true" type="string" />
    <field indexed="true" multiValued="true"
-          name="facet_collectives_guild" required="false" stored="true"
-          type="int" />
+          name="facet_collectives_guild_occupational" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_collectives_guild_religious" required="false"
+          stored="true" type="int" />
    <field indexed="true" multiValued="true"
           name="facet_collectives_occupation" required="false" stored="true"
           type="int" />

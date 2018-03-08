@@ -20,7 +20,10 @@
   <xsl:variable name="calendar_liturgical" select="'entity_type-4857'" />
   <xsl:variable name="calendar_secular" select="'entity_type-4855'" />
   <xsl:variable name="collective_clergy" select="'entity_type-9104'" />
-  <xsl:variable name="collective_guild" select="'entity_type-517'" />
+  <xsl:variable name="collective_guild_occupational"
+                select="'entity_type-48092'" />
+  <xsl:variable name="collective_guild_religious"
+                select="'entity_type-48094'" />
   <xsl:variable name="collective_occupation" select="'entity_type-519'" />
   <xsl:variable name="collective_troupe" select="'entity_type-12619'" />
   <xsl:variable name="crimes_misdemeanour" select="'entity_type-21297'" />
@@ -153,8 +156,13 @@
       </field>
     </xsl:if>
     <!-- Collectives -->
-    <xsl:if test=". = $collective_guild">
-      <field name="facet_collectives_guild">
+    <xsl:if test=". = $collective_guild_occupational">
+      <field name="facet_collectives_guild_occupational">
+        <xsl:value-of select="$entity_eats_id" />
+      </field>
+    </xsl:if>
+    <xsl:if test=". = $collective_guild_religious">
+      <field name="facet_collectives_guild_religious">
         <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>

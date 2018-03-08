@@ -100,6 +100,12 @@
   <xsl:template match="lst[@name='facet_fields']/lst/@name"
                 mode="search-results">
     <xsl:choose>
+      <xsl:when test=". = 'facet_collectives_guild_occupational'">
+        <xsl:text>Guild (Occupational)</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_collectives_guild_religious'">
+        <xsl:text>Guild (Religious)</xsl:text>
+      </xsl:when>
       <xsl:when test=". = 'facet_entertainers_patronised'">
         <xsl:text>Patronized</xsl:text>
       </xsl:when>
