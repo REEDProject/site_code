@@ -11,6 +11,8 @@
     <item label="Glossaries" match="ereed-about-glossaries" />
   </menu>
   <menu label="Explore Collections" match="ereed-collections">
+    <item label="Berkshire" match="ereed-collections-collection"
+      params="berks" />
     <item label="Staffordshire" match="ereed-collections-collection"
           params="staff" />
   </menu>
