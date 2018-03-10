@@ -39,6 +39,7 @@
                 href="{$kiln:assets-path}/styles/datatables.min.css" />
           <link rel="stylesheet" href="{$kiln:assets-path}/styles/app.css" type="text/css" media="screen, print" />
           <link rel="stylesheet" href="{$kiln:assets-path}/styles/print.css" type="text/css" media="print" />
+          <link rel="stylesheet" href="{$kiln:assets-path}/styles/tweaks.css" type="text/css" />
         </kiln:block>
         <kiln:block name="js">
         </kiln:block>
