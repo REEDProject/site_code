@@ -8,6 +8,8 @@
        extract-referenced-content.xsl) and massage the included
        content. -->
 
+  <xsl:include href="cocoon://_internal/url/reverse.xsl" />
+
   <xsl:template match="kiln:added">
     <xsl:apply-templates mode="addition" select="node()" />
   </xsl:template>
@@ -21,8 +23,46 @@
     <xsl:value-of select="tei:category/@xml:id" />
   </xsl:template>
 
+  <xsl:template match="tei:ptr[kiln:added/tei:text/@type='record']">
+    <!-- We are here assuming that @target is a single value, because
+         there isn't any good processing we can do if it's not. -->
+    <xsl:variable name="record-id" select="substring-after(@target, '#')" />
+    <xsl:copy>
+      <xsl:apply-templates select="@*[not(local-name='target')]" />
+      <xsl:attribute name="target">
+        <xsl:value-of select="kiln:url-for-match('ereed-record-display-html', $record-id, 0)" />
+      </xsl:attribute>
+      <xsl:apply-templates mode="record-addition" select="kiln:added/tei:text" />
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match="tei:quote[kiln:added/tei:text/@type='record']">
+    <!-- We are here assuming that @source is a single value, because
+         there isn't any good processing we can do if it's not. -->
+    <xsl:variable name="record-id" select="substring-after(@source, '#')" />
+    <xsl:copy>
+      <xsl:apply-templates select="@*[not(local-name='source')]" />
+      <xsl:attribute name="source">
+        <xsl:value-of select="kiln:url-for-match('ereed-record-display-html', $record-id, 0)" />
+      </xsl:attribute>
+      <xsl:attribute name="kiln:title">
+        <xsl:apply-templates mode="record-addition"
+                             select="kiln:added/tei:text" />
+      </xsl:attribute>
+      <xsl:apply-templates select="text()|*[not(tei:text[@type='record'])]" />
+    </xsl:copy>
+  </xsl:template>
+
   <xsl:template match="kiln:added/tei:category">
     <xsl:copy-of select="tei:catDesc/node()" />
+  </xsl:template>
+
+  <xsl:template match="kiln:added/tei:text[@type='record']"
+                mode="record-addition">
+    <!-- A record has been referenced. We want only its title. -->
+    <xsl:value-of select="tei:body/tei:head/kiln:added/tei:bibl/tei:title" />
+    <xsl:text>, </xsl:text>
+    <xsl:value-of select="tei:body/tei:head/tei:date" />
   </xsl:template>
 
   <xsl:template match="@*|node()" mode="#all">

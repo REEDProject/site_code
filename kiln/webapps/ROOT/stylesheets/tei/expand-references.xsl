@@ -18,17 +18,50 @@
 
   <xsl:variable name="tei" select="/tei:TEI" />
 
+  <xsl:template match="tei:quote[@source]">
+    <xsl:variable name="context" select="." />
+    <xsl:copy>
+      <xsl:apply-templates select="@*|node()" />
+      <!-- We are treating this properly at this step (@source
+           allowing multiple references), even though we have no
+           useful processing to handle such a case, and will likely
+           assume that it is a single reference at a later point. -->
+      <xsl:for-each select="tokenize(@source, '\s+')">
+        <xsl:choose>
+          <!-- Internal reference, no need for an XInclude. Copy the
+               referenced element here inside a kiln:added, for
+               processing in tidy-expanded-references.xsl later. -->
+          <xsl:when test="starts-with(., '#')">
+            <kiln:added>
+              <xsl:variable name="source" select="substring-after(., '#')" />
+              <xsl:for-each select="$context">
+                <xsl:apply-templates select="id($source)" />
+              </xsl:for-each>
+            </kiln:added>
+          </xsl:when>
+          <!-- External to entire site reference, just leave as is. -->
+          <xsl:when test="contains(., '://')" />
+          <!-- Reference to another document in the collection.
+
+               QAZ: This is annoying, because if it's a reference to a
+               record, we need to run much this same normalisation
+               step on it in order to get the full title, but we
+               cannot recurse. For now, just leave them be. -->
+          <xsl:otherwise />
+        </xsl:choose>
+      </xsl:for-each>
+    </xsl:copy>
+  </xsl:template>
+
   <xsl:template match="tei:text[@ana]" priority="10">
     <!-- The record types that are attached to the tei:text should not
          replace the content of the element. -->
-    <xsl:variable name="context" select="." />
     <xsl:copy>
       <xsl:apply-templates select="@*" />
       <index indexName="record_type">
         <xsl:for-each select="tokenize(@ana, '\s+')">
           <tei:term>
             <xsl:call-template name="make-xinclude">
-              <xsl:with-param name="context" select="$context" />
               <xsl:with-param name="url" select="." />
             </xsl:call-template>
           </tei:term>
@@ -39,10 +72,8 @@
   </xsl:template>
 
   <xsl:template match="tei:*[@ana]">
-    <xsl:variable name="context" select="." />
     <xsl:for-each select="tokenize(@ana, '\s+')">
       <xsl:call-template name="make-xinclude">
-        <xsl:with-param name="context" select="$context" />
         <xsl:with-param name="url" select="." />
       </xsl:call-template>
     </xsl:for-each>
@@ -50,9 +81,44 @@
 
   <xsl:template match="tei:*[@sameAs]">
     <xsl:call-template name="make-xinclude">
-      <xsl:with-param name="context" select="." />
       <xsl:with-param name="url" select="@sameAs" />
     </xsl:call-template>
+  </xsl:template>
+
+  <xsl:template match="tei:*[@target]">
+    <xsl:variable name="context" select="." />
+    <xsl:copy>
+      <xsl:apply-templates select="@*" />
+      <!-- We are treating this properly at this step (@target
+           allowing multiple references), even though we have no
+           useful processing to handle such a case, and will likely
+           assume that it is a single reference at a later point. -->
+      <xsl:for-each select="tokenize(@target, '\s+')">
+        <xsl:choose>
+          <!-- Internal reference, no need for an XInclude. Copy the
+               referenced element here inside a kiln:added, for
+               processing in tidy-expanded-references.xsl later. -->
+          <xsl:when test="starts-with(., '#')">
+            <kiln:added>
+              <xsl:variable name="target" select="substring-after(., '#')" />
+              <xsl:for-each select="$context">
+                <xsl:apply-templates select="id($target)" />
+              </xsl:for-each>
+            </kiln:added>
+          </xsl:when>
+          <!-- External to entire site reference, just leave as is. -->
+          <xsl:when test="contains(., '://')" />
+          <!-- Reference to another document in the collection.
+
+               QAZ: This is annoying, because if it's a reference to a
+               record, we need to run much this same normalisation
+               step on it in order to get the full title, but we
+               cannot recurse. For now, just leave them be. -->
+          <xsl:otherwise />
+        </xsl:choose>
+      </xsl:for-each>
+      <xsl:apply-templates select="node()" />
+    </xsl:copy>
   </xsl:template>
 
   <xsl:template match="@ana" />
@@ -65,7 +131,6 @@
   </xsl:template>
 
   <xsl:template name="make-xinclude">
-    <xsl:param name="context" />
     <xsl:param name="url" />
     <!-- XInclude does not permit fragment identifiers in
          xi:include/@href (it's useless; the HTTP request does not

@@ -229,6 +229,20 @@
 
   <xsl:template match="tei:div/tei:pb" />
 
+  <xsl:template match="tei:ptr[@target]">
+    <a href="{@target}">
+      <xsl:apply-templates select="@*|node()" />
+    </a>
+  </xsl:template>
+
+  <xsl:template match="tei:quote[@source]">
+    <a href="{@source}">
+      <q cite="{@source}">
+        <xsl:apply-templates select="@*|node()" />
+      </q>
+    </a>
+  </xsl:template>
+
   <xsl:template match="tei:ref[not(@target)]">
     <xsl:apply-templates />
   </xsl:template>
@@ -303,6 +317,10 @@
     <i>
       <xsl:apply-templates select="@*|node()" />
     </i>
+  </xsl:template>
+
+  <xsl:template match="@kiln:title">
+    <xsl:attribute name="title" select="." />
   </xsl:template>
 
   <xsl:template name="make-entity-url">

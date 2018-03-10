@@ -199,7 +199,6 @@
         <map:transform type="xinclude" />
         <map:transform src="cocoon://_internal/template/collection.xsl" />
         <map:serialize />
-        <map:serialize type="xml" />
       </map:match>
 
       <!-- Explore Collections: collection part. -->
