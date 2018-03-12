@@ -668,10 +668,15 @@ Text
 </div>'''
         all_data = [
             {'head': 'single mb', 'pb': '<pb n="1" type="membrane" />'},
+            {'head': 'mbs 2-4', 'pb': '<pb type="membrane" />'},
             {'head': 'sig B3', 'pb': '<pb n="B3" type="signature" />'},
+            {'head': 'sigs B3-C5', 'pb': '<pb type="signature" />'},
             {'head': 'p 234', 'pb': '<pb n="234" type="page" />'},
+            {'head': 'pp 2-4', 'pb': '<pb type="page" />'},
             {'head': 'ff [1v–2]', 'pb': '<pb type="folio" />'},
             {'head': 'f 46v', 'pb': '<pb n="46v" type="folio" />'},
+            {'head': 'sheet 5', 'pb': '<pb n="5" type="sheet" />'},
+            {'head': 'sheets 6-7', 'pb': '<pb type="sheet" />'},
             {'head': '', 'pb': ''}
         ]
         for data in all_data:

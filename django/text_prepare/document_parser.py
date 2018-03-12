@@ -401,13 +401,13 @@ class DocumentParser:
         ptype = ''
         if data in ('f', 'ff'):
             ptype = 'folio'
-        elif data == 'mb':
+        elif data in ('mb', 'mbs'):
             ptype = 'membrane'
-        elif data == 'p':
+        elif data in ('p', 'pp'):
             ptype = 'page'
-        elif data == 'sheet':
+        elif data in ('sheet', 'sheets'):
             ptype = 'sheet'
-        elif data == 'sig':
+        elif data in ('sig', 'sigs'):
             ptype = 'signature'
         return ptype
 
