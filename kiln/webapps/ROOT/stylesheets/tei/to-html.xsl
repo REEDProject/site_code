@@ -85,7 +85,7 @@
     <xsl:text>...</xsl:text>
   </xsl:template>
 
-  <xsl:template match="tei:gram" mode="#default group">
+  <xsl:template match="tei:gram">
     <i>
       <xsl:apply-templates />
     </i>
@@ -275,11 +275,9 @@
   </xsl:template>
 
   <xsl:template match="tei:sense" mode="group">
-    <b class="link-to-instance">
-      <xsl:apply-templates select="preceding-sibling::tei:form[1]/tei:orth" />
-    </b>
-    <xsl:text> </xsl:text>
-    <xsl:apply-templates mode="group" select="preceding::tei:gram[1]" />
+    <span class="link-to-instance">
+      <xsl:apply-templates select="preceding-sibling::tei:form[1]" />
+    </span>
     <xsl:text> </xsl:text>
     <xsl:apply-templates select="node()" />
   </xsl:template>
