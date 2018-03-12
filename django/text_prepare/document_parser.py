@@ -448,10 +448,7 @@ class DocumentParser:
         return ['<hi rend="bold_italic">', ''.join(toks[0]), '</hi>']
 
     def _pa_capitulum(self, s, loc, toks):
-        # Black Leftwards Bullet is not the correct character, but
-        # according to the Fortune white paper it is "as close as we can
-        # get for now".
-        return ['\N{BLACK LEFTWARDS BULLET}']
+        return ['\N{CAPITULUM}']
 
     def _pa_caret(self, s, loc, toks):
         return ['\N{CARET}']

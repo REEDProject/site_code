@@ -85,7 +85,7 @@ It spans multiple paragraphs.!
 
     def test_capitulum(self):
         text = '@Ca'
-        expected = '\N{BLACK LEFTWARDS BULLET}a'
+        expected = '\N{CAPITULUM}a'
         self._check_conversion(text, expected)
 
     def test_caret(self):
