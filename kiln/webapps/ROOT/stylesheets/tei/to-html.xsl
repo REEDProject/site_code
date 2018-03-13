@@ -317,6 +317,21 @@
     </i>
   </xsl:template>
 
+  <xsl:template match="tei:quote">
+    <xsl:choose>
+      <xsl:when test=".//tei:ab | .//tei:p | .//tei:list | .//tei:table | .//tei:lg | .//tei:floatingText">
+        <blockquote>
+          <xsl:apply-templates select="@*|node()" />
+        </blockquote>
+      </xsl:when>
+      <xsl:otherwise>
+        <q>
+          <xsl:apply-templates select="@*|node()" />
+        </q>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
   <xsl:template match="@kiln:title">
     <xsl:attribute name="title" select="." />
   </xsl:template>
