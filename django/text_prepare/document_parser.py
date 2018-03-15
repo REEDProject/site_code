@@ -448,7 +448,9 @@ class DocumentParser:
         return ['<hi rend="bold_italic">', ''.join(toks[0]), '</hi>']
 
     def _pa_capitulum(self, s, loc, toks):
-        return ['\N{CAPITULUM}']
+        # The name CAPITULUM is not recognised in Python 3.4, causing
+        # a syntax error of all things.
+        return ['\u2e3f']
 
     def _pa_caret(self, s, loc, toks):
         return ['\N{CARET}']
