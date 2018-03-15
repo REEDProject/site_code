@@ -24,14 +24,10 @@ class EntityLookup (LookupBase):
             label = name_assertion.name.assembled_form
         else:
             label = UNNAMED_ENTITY_NAME
-        return label
+        return '{} ({})'.format(label, item.get_id())
 
     def get_item_value (self, item):
-        name_assertion = item.get_preferred_name(None, None, None)
-        if name_assertion:
-            label = name_assertion.name.assembled_form
-        else:
-            label = UNNAMED_ENTITY_NAME
-        return label
+        return get_item_label(item)
+
 
 registry.register(EntityLookup)
