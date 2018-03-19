@@ -149,9 +149,10 @@
       <change when="2016-08-12" who="#JN">Improved Encoding</change>
       <change when="2016-08-11" who="#JC">Provided suggested header in addition to updated
         schema</change>
-      <change when="2018-03-19" who="KC">EATS tagged "bucher" for "John Renmer bucher" in 1611 West Bromwich record, staff-ridm51335072/</change>
-      <change when="2018-03-19" who="KC">EATS tagged marginalia on John of Gaunt 1379 record which was omitted,staff-ridm46710736</change>
-      <change when="2018-03-19" who="KC">Changed EATS tagging for 'fool's coat' from one entity to two entities: 'fool' and 'coat'</change> 
+      <change when="2018-03-19" who="#KC">EATS tagged "bucher" for "John Renmer bucher" in 1611 West Bromwich record, staff-ridm51335072/</change>
+      <change when="2018-03-19" who="#KC">EATS tagged marginalia on John of Gaunt 1379 record which was omitted,staff-ridm46710736</change>
+      <change when="2018-03-19" who="#KC">Changed EATS tagging for 'fool's coat' from one entity to two entities: 'fool' and 'coat'</change> 
+      <change when="2018-03-19" who="#KC">Changed EATS tagging for 'lord of misrule's coat' from one entity to two entities: 'misrule, lords and ladies of' and 'coat'</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -13056,7 +13057,7 @@ table. The (blank) above is the second cell of that row -->the
                   <cell>payd to <rs ref="http://ereed.library.utoronto.ca/eats/entity/29141/"
                       type="Person_Commoner">Iohn howlat</rs> for vj yerd<ex>es</ex> of <term
                       ref="gloss:lynyng-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/41121/" type="Thing_ClothFabric">lynyng</rs></term> of v d. A <term ref="gloss:styke-1"
-                      >styke</term> for the <rs ref="http://ereed.library.utoronto.ca/eats/entity/42508/" type="Thing_TheatricalCostume">lord<ex>es</ex> Coote</rs></cell>
+                      >styke</term> for the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">lord<ex>es</ex></rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/71388/" type="Thing_TheatricalCostume">Coote</rs></cell>
                   <cell rend="right">ij s. vj d.</cell>
                 </row>
                 <row>
@@ -13087,7 +13088,7 @@ table. The (blank) above is the second cell of that row -->the
               <table>
                 <row>
                   <cell>It<ex>em</ex> payd for on yard of <term ref="gloss:broderd-1">Broderd</term>
-                    <rs ref="http://ereed.library.utoronto.ca/eats/entity/41121/" type="Thing_ClothFabric">Tuke</rs> to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/42508/" type="Thing_TheatricalCostume">lord<ex>es</ex> Coote</rs> </cell>
+                    <rs ref="http://ereed.library.utoronto.ca/eats/entity/41121/" type="Thing_ClothFabric">Tuke</rs> to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">lord<ex>es</ex></rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/71388/" type="Thing_TheatricalCostume">Coote</rs> </cell>
                   <cell rend="right">viij d.</cell>
                 </row>
               </table>
