@@ -139,6 +139,11 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2018-03-19" who="#KC">EATS tagged "bucher" for "John Renmer bucher" in 1611 West Bromwich record, staff-ridm51335072/</change>
+      <change when="2018-03-19" who="#KC">EATS tagged marginalia on John of Gaunt 1379 record which was omitted,staff-ridm46710736</change>
+      <change when="2018-03-19" who="#KC">Changed EATS tagging for 'fool's coat' from one entity to two entities: 'fool' and 'coat'</change> 
+      <change when="2018-03-19" who="#KC">Changed EATS tagging for 'lord of misrule's coat' from one entity to two entities: 'misrule, lords and ladies of' and 'coat'</change>
+      <change when="2018-03-19" who="#KC">Changed EATS tagging of 'Morris apparels', which used to include Morris bells, to two entities 'Morris'/'dancer' and 'apparel' is tagged as 'costumes, unspecified'. Where it says Morris bells specifically, I've used the new entity 'Morris bells'.</change>
       <change when="2017-06-29" who="#KC">EATS tagged "ministralx mons{ire} Baudewyn ffreuille", a troupe, which was not tagged in 1379/80 Gaunt record</change>
       <change when="2017-06-29" who="#KC">EATS tagged patron, Earl of Nottingham, who was not tagged in 1379/80 Gaunt record</change>
       <change when="2017-06-23" who="#CB">Replaced "has his headquarters" with "as his headquarters" in xml:id="background"</change>
@@ -149,11 +154,7 @@
       <change when="2016-08-12" who="#JN">Improved Encoding</change>
       <change when="2016-08-11" who="#JC">Provided suggested header in addition to updated
         schema</change>
-      <change when="2018-03-19" who="#KC">EATS tagged "bucher" for "John Renmer bucher" in 1611 West Bromwich record, staff-ridm51335072/</change>
-      <change when="2018-03-19" who="#KC">EATS tagged marginalia on John of Gaunt 1379 record which was omitted,staff-ridm46710736</change>
-      <change when="2018-03-19" who="#KC">Changed EATS tagging for 'fool's coat' from one entity to two entities: 'fool' and 'coat'</change> 
-      <change when="2018-03-19" who="#KC">Changed EATS tagging for 'lord of misrule's coat' from one entity to two entities: 'misrule, lords and ladies of' and 'coat'</change>
-      <change when="2018-03-19" who="#KC">Changed EATS tagging of 'Morris apparels', which used to include Morris bells, to two entities 'Morris'/'dancer' and 'apparel' is tagged as 'costumes, unspecified'. Where it says Morris bells specifically, I've used the new entity 'Morris bells'.</change>
+ 
     </revisionDesc>
   </teiHeader>
   <text>
