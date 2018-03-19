@@ -153,6 +153,7 @@
       <change when="2018-03-19" who="#KC">EATS tagged marginalia on John of Gaunt 1379 record which was omitted,staff-ridm46710736</change>
       <change when="2018-03-19" who="#KC">Changed EATS tagging for 'fool's coat' from one entity to two entities: 'fool' and 'coat'</change> 
       <change when="2018-03-19" who="#KC">Changed EATS tagging for 'lord of misrule's coat' from one entity to two entities: 'misrule, lords and ladies of' and 'coat'</change>
+      <change when="2018-03-19" who="#KC">Changed EATS tagging of 'Morris apparels', which used to include Morris bells, to two entities 'Morris'/'dancer' and 'apparel' is tagged as 'costumes, unspecified'. Where it says Morris bells specifically, I've used the new entity 'Morris bells'.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -430,7 +431,7 @@
             such as the <rs ref="http://ereed.library.utoronto.ca/eats/entity/45595/" type="CrimesMisdemeanors">charivari</rs> at <rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/" type="Place_BoroughParish">Burton upon Trent</rs> in 1616, or the continuing troubles with the
             scofflaw, <rs ref="http://ereed.library.utoronto.ca/eats/entity/8942/" type="Person_Male">Thomas Jacson</rs>, at <rs ref="http://ereed.library.utoronto.ca/eats/entity/3612/" type="Place_BoroughParish">Eccleshall</rs> in 1599–1604. A particular favourite is a
             protest at <rs ref="http://ereed.library.utoronto.ca/eats/entity/3684/" type="Place_BoroughParish">Kinver</rs> in 1620, where <rs ref="http://ereed.library.utoronto.ca/eats/entity/10814/" type="Person_Male">Richard Rice</rs> was cited ‘for fartinge &amp; pissinge in
-            the Church in sermon time &amp; gingelinge of <rs ref="http://ereed.library.utoronto.ca/eats/entity/41806/" type="Thing_TheatricalCostume">Morrice dauncers bells</rs>!' Was he protesting
+            the Church in sermon time &amp; gingelinge of <rs ref="http://ereed.library.utoronto.ca/eats/entity/71419/" type="Thing_TheatricalCostume">Morrice dauncers bells</rs>!' Was he protesting
             the requirement to attend church in sermon time? Or the quality of the sermon? Or the
             Kinver minister’s negative attitude to <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">Morris dancing</rs> and merrymaking? One might be
             tempted to correlate cases like this one into a picture of anti-Puritan resistance, but
@@ -7389,7 +7390,7 @@ table. The (blank) above is the second cell of that row -->the
                       ref="http://ereed.library.utoronto.ca/eats/entity/20377/"
                       type="Person_Commoner">Will<ex>iams</ex></rs><note type="foot"
                         >Will<ex>iams</ex>: <hi rend="italic">likely</hi> William Rycrofte's</note>
-                    <rs ref="http://ereed.library.utoronto.ca/eats/entity/41806/" type="Thing_TheatricalCostume">Morrice apparell</rs></cell>
+                    <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">Morrice</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/42274/" type="Thing_TheatricalCostume">apparell</rs></cell>
                   <cell rend="right">ij s. vj d.</cell>
                 </row>
               </table>
