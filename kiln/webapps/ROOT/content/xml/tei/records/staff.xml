@@ -149,6 +149,8 @@
       <change when="2016-08-12" who="#JN">Improved Encoding</change>
       <change when="2016-08-11" who="#JC">Provided suggested header in addition to updated
         schema</change>
+      <change when="2018-03-19" who="KC">EATS tagged "bucher" for "John Renmer bucher" in 1611 West Bromwich record, staff-ridm51335072/</change>
+      <change when="2018-03-19" who="KC">EATS tagged marginalia on John of Gaunt 1379 record which was omitted,staff-ridm46710736</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -4720,7 +4722,7 @@
                 mayntayned A <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/"
                   type="Entertainment_SeasonalCustom">lorde of myssrules</rs>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/14164/"
-                  type="Entertainer_Type">ffoole</rs> in A <term ref="gloss:pydecoote-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/41603/" type="Thing_TheatricalCostume">pyde
+                  type="Entertainer_Type">ffoole</rs> in A <term ref="gloss:pydecoote-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/71388/" type="Thing_TheatricalCostume">pyde
                   coote</rs></term> to make an vnsemelye <rs ref="http://ereed.library.utoronto.ca/eats/entity/41951/" type="Entertainment_Type">Orac<ex>i</ex>on</rs> <damage><gap unit="chars"
                     extent="2"/></damage> <rs ref="http://ereed.library.utoronto.ca/eats/entity/45652/" type="CrimesMisdemeanors">the Pulpitt</rs> at <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/3774/"
@@ -6105,7 +6107,7 @@ table. The (blank) above is the second cell of that row -->the
                 </row>
                 <row>
                   <cell>Inp<ex>ri</ex>mis p<ex>ai</ex>d for 4 y<ex>ar</ex>d<ex>es</ex> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/41121/" type="Thing_ClothFabric">Cotton
-                    &amp; ynckle</rs> for a <rs ref="http://ereed.library.utoronto.ca/eats/entity/41603/" type="Thing_TheatricalCostume">fooles Coate</rs></cell>
+                    &amp; ynckle</rs> for a <rs ref="http://ereed.library.utoronto.ca/eats/entity/14164/" type="Entertainer_Type">fooles</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/71388/" type="Thing_TheatricalCostume">Coate</rs></cell>
                   <cell rend="right">00 14 02</cell>
                 </row>
                 <row>
@@ -6221,7 +6223,7 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>It<ex>e</ex>m to <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/20269/"
-                      type="Person_Commoner">Bamforde</rs> for wearinge the <rs ref="http://ereed.library.utoronto.ca/eats/entity/41603/" type="Thing_TheatricalCostume">fooles cote</rs> at the <term
+                      type="Person_Commoner">Bamforde</rs> for wearinge the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14164/" type="Entertainer_Type">fooles</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/71388/" type="Thing_TheatricalCostume">cote</rs> at the <term
                       ref="gloss:hobbyhorse-1">hobbiehorse</term></cell>
                   <cell rend="right">00 02 00</cell>
                 </row>
@@ -7626,7 +7628,7 @@ table. The (blank) above is the second cell of that row -->the
                 </row>
                 <row>
                   <cell>p<ex>ai</ex>d <rs ref="http://ereed.library.utoronto.ca/eats/entity/20377/"
-                      type="Person_Commoner">william Ricroft</rs> for wearing the <rs ref="http://ereed.library.utoronto.ca/eats/entity/41603/" type="Thing_TheatricalCostume">Cote</rs></cell>
+                      type="Person_Commoner">william Ricroft</rs> for wearing the <rs ref="http://ereed.library.utoronto.ca/eats/entity/71388/" type="Thing_TheatricalCostume">Cote</rs></cell>
                   <cell rend="right">0 2 0</cell>
                 </row>
               </table>
@@ -7635,7 +7637,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>p<ex>ai</ex>d for the fooles Coate</cell>
+                  <cell>p<ex>ai</ex>d for the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14164/" type="Entertainer_Type">fooles</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/71388/" type="Thing_TheatricalCostume">Coate</rs></cell>
                   <cell rend="right">0 11 2</cell>
                 </row>
               </table>
@@ -8579,7 +8581,7 @@ table. The (blank) above is the second cell of that row -->the
                   <cell>Imprimis for 4 yard<ex>es</ex> &amp; anhalfe of <term
                       ref="gloss:pennystone-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/41121/" type="Thing_ClothFabric">pennystone</rs></term> to make <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/20377/"
-                      type="Person_Commoner">Ryecrofte</rs> a <rs ref="http://ereed.library.utoronto.ca/eats/entity/41603/" type="Thing_TheatricalCostume">Coate</rs></cell>
+                      type="Person_Commoner">Ryecrofte</rs> a <rs ref="http://ereed.library.utoronto.ca/eats/entity/71388/" type="Thing_TheatricalCostume">Coate</rs></cell>
                   <cell rend="right">0 10 6</cell>
                 </row>
                 <row>
@@ -12868,7 +12870,7 @@ table. The (blank) above is the second cell of that row -->the
                 passed to the churche yate; from thenc, throwgh a street called Linedon, and at the
                 tyme being the 18th daye of Maye abowt the setting of the sonne the foresayd Iohnson
                 was in the shopp of <rs ref="http://ereed.library.utoronto.ca/eats/entity/28973/"
-                  type="Person_Commoner">Iohn Renmer</rs> Bucher bying of meat and against the
+                  type="Person_Commoner">Iohn Renmer</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/29018/" type="Collective_Occupation">Bucher</rs> bying of meat and against the
                 window they made a stopp crying Iohnson is beaten setting the street on an uprore,
                 to his gret amazement and o<ex>ur</ex> discomfort the dishonor of god and breache of
                 peace, w<ex>hich</ex> we humblye refer to yo<ex>ur</ex> w<ex>orshi</ex>ps censur for
@@ -14671,7 +14673,7 @@ table. The (blank) above is the second cell of that row -->the
                 &amp;
                 
                   aillo<ex>ur</ex>s saluz Nous vous mandons<note type="marginal" place="margin_left"
-                  >Pur Iohan Tyes &amp; piers Cook Trumpours.</note> q<ex>ue</ex> des issues de
+                  >Pur <rs ref="http://ereed.library.utoronto.ca/eats/entity/31769/" type="Person_Male">Iohan Tyes</rs> &amp; <rs ref="http://ereed.library.utoronto.ca/eats/entity/1180/" type="Person_Male">piers Cook</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/1225/" type="Entertainer_Type">Trumpours</rs>.</note> q<ex>ue</ex> des issues de
                   v<ex>ost</ex>re receite facez paier a noz bienamez valletz Iohn Tyes &amp; Piers
                 Cook noz Trumpo<ex>ur</ex>s le<ex>ur</ex>s annueltees queux le<ex>ur</ex>s sont
                   <term ref="gloss:aderer-1">aderer</term> del <rs ref="http://ereed.library.utoronto.ca/eats/entity/42598/" type="CalendarDay_Liturgical">fest de seint Michel</rs> darren passez
@@ -14703,8 +14705,8 @@ table. The (blank) above is the second cell of that row -->the
                   deu<ex>er</ex>s no<ex>us</ex> p<ex>ur</ex> nous s<ex>er</ex>uir sibien en temps de
                 pees come guerre a terme de sa vie et p<ex>re</ex>ndra le dit Iohan en temps de pees
                 Cent soldz p<ex>ar</ex> an p<ex>ar</ex> le mains de n<ex>ost</ex>re
-                  Receiuo<ex>ur</ex><note type="marginal" place="margin_right">Pur Johan de
-                    Bukyngh<ex>a</ex>m Clarion<ex>er</ex></note> gen<ex>er</ex>al qi p<ex>ur</ex> le
+                  Receiuo<ex>ur</ex><note type="marginal" place="margin_right">Pur <rs ref="http://ereed.library.utoronto.ca/eats/entity/31126/" type="Person_Male">Johan de
+                    Bukyngh<ex>a</ex>m</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/30636/" type="Entertainer_Type">Clarion<ex>er</ex></rs></note> gen<ex>er</ex>al qi p<ex>ur</ex> le
                 temps serra as terms de <rs ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">Pasq<ex>ue</ex>z</rs> &amp; de seint Michel p<ex>ar</ex> oueles
                 porcions sicome es endent<ex>ur</ex>es p<ex>ar</ex>entre nous &amp; lui oit<note
                   type="foot">oit: <hi rend="italic">for deletion(?)</hi></note> faites est
@@ -14808,8 +14810,7 @@ table. The (blank) above is the second cell of that row -->the
               <head>f 29 <supplied>(3 January)</supplied></head>
               <pb n="29" type="folio"/>
 
-              <ab><note type="marginal" place="margin_left">Pur Johan Bukyngh<hi rend="italic"
-                    >a</hi>m esq<hi rend="italic">uier</hi></note></ab>
+              <ab><note type="marginal" place="margin_left">Pur <rs ref="http://ereed.library.utoronto.ca/eats/entity/31126/" type="Person_Male">Johan Bukyngh<hi rend="italic">a</hi>m</rs> esq<hi rend="italic">uier</hi></note></ab>
 
               <gap reason="omitted"/>
 
