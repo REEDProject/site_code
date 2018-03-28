@@ -139,6 +139,7 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2018-03-28" who="#KC">Changed type inserted with EATS rs tag for entity #14146 (misrule, lords and ladies of) from 'SeasonalCustom' to 'Drama_Character'</change>
       <change when="2018-03-28" who="#KC">Re-tagged 'maypoles' with two references ('summer games' and 'poles') instead of one (maypoles/poles).</change>
       <change when="2018-03-19" who="#KC">EATS tagged "bucher" for "John Renmer bucher" in 1611 West Bromwich record, staff-ridm51335072/</change>
       <change when="2018-03-19" who="#KC">EATS tagged marginalia on John of Gaunt 1379 record which was omitted,staff-ridm46710736</change>
@@ -4725,7 +4726,7 @@
 
               <ab>It<ex>e</ex>m<note type="marginal" place="margin_left">6</note> the said greene
                 mayntayned A <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/"
-                  type="Entertainment_SeasonalCustom">lorde of myssrules</rs>
+                  type="Drama_Character">lorde of myssrules</rs>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/14164/"
                   type="Entertainer_Type">ffoole</rs> in A <term ref="gloss:pydecoote-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/71388/" type="Thing_TheatricalCostume">pyde
                   coote</rs></term> to make an vnsemelye <rs ref="http://ereed.library.utoronto.ca/eats/entity/41951/" type="Entertainment_Type">Orac<ex>i</ex>on</rs> <damage><gap unit="chars"
@@ -11588,7 +11589,7 @@ table. The (blank) above is the second cell of that row -->the
                 that not withstondyng came on frome a towne called <term ref="gloss:hampton-1"
                   ><rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_BoroughParish">hampton</rs></term> within your seid Counte whos name ys <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/28236/" type="Person_Commoner"
-                  >william Milner</rs> callyng hym selfe the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">abb<damage><gap extent="2" unit="chars"/></damage>
+                  >william Milner</rs> callyng hym selfe the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Drama_Character">abb<damage><gap extent="2" unit="chars"/></damage>
                 <damage><gap extent="1" unit="chars"/></damage>f Marram</rs><note type="foot"
                       >abb<damage><gap unit="chars" extent="2"/></damage>
                   <damage><gap unit="chars" extent="1"/></damage>f Marram: <hi rend="italic"
@@ -11724,7 +11725,7 @@ table. The (blank) above is the second cell of that row -->the
                   type="Place_BoroughParish">Weddesbury</rs> and <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/3936/"
                   type="Place_BoroughParish">Walshall</rs> haue <term ref="gloss:comyn">comyn</term>
-                to the seide ffer<ex>e</ex> w<ex>i</ex>t<ex>h</ex> ther capitanns called the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">Abot of
+                to the seide ffer<ex>e</ex> w<ex>i</ex>t<ex>h</ex> ther capitanns called the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Drama_Character">Abot of
                 Marham</rs> or <rs ref="http://ereed.library.utoronto.ca/eats/entity/35310/"
                   type="Entertainment_SeasonalCustom">Robyn Hodys</rs> to
                  the intent to gether
@@ -11768,7 +11769,7 @@ table. The (blank) above is the second cell of that row -->the
                 by his oth</ab>
             </div>
           </div>
-          <div type="endnote"><p>There are also records of an <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">Abbot of 'Marham'</rs> game – apparently a variety of <rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/" type="Entertainment_SeasonalCustom">May game</rs> – in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2237/" type="Place_County">Shropshire</rs> in 1520–1 and 1532–3, in 1542–3 where the figure is termed Abbot of 'Mayroll' or 'mareall,' in 1547–8 as the Abbot of 'Marall' or 'marrall,' and in 1551–2 as the Abbot of 'marram' (see J. Alan B. Somerset (ed), <title>Shropshire</title>, vol 1, REED (Toronto, 1994), 176, 191, 200–1,  203).</p></div>
+          <div type="endnote"><p>There are also records of an <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Drama_Character">Abbot of 'Marham'</rs> game – apparently a variety of <rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/" type="Entertainment_SeasonalCustom">May game</rs> – in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2237/" type="Place_County">Shropshire</rs> in 1520–1 and 1532–3, in 1542–3 where the figure is termed Abbot of 'Mayroll' or 'mareall,' in 1547–8 as the Abbot of 'Marall' or 'marrall,' and in 1551–2 as the Abbot of 'marram' (see J. Alan B. Somerset (ed), <title>Shropshire</title>, vol 1, REED (Toronto, 1994), 176, 191, 200–1,  203).</p></div>
         </body>
       </text>
       <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm51801568">
@@ -12797,7 +12798,7 @@ table. The (blank) above is the second cell of that row -->the
                   type="Person_Commoner">Vxor Philippi doonton</rs>
                 <foreign xml:lang="eng">filled out <rs ref="http://ereed.library.utoronto.ca/eats/entity/40997/" type="Thing_FoodDrink">drinke</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/45652/" type="CrimesMisdemeanors">in Eveninge prayer time</rs> on the Sonday, to
                   two <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/"
-                    type="Entertainment_SeasonalCustom">Lord<ex>es</ex> of misrule</rs>, by her owne
+                    type="Drama_Character">Lord<ex>es</ex> of misrule</rs>, by her owne
                   confession.</foreign> Quo die comp<ex>aruit</ex> et d<ex>omi</ex>nus<note
                   type="foot">d<ex>omi</ex>nus: d <hi rend="italic">written over</hi> in</note>
                   iniu<ex>n</ex>xit ei p<ex>e</ex>ni<ex>tenci</ex>as vt sup<ex>r</ex>a<note
@@ -12908,7 +12909,7 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>It<ex>em</ex> rec<ex>eyvyd</ex> of the <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/14146/"
-                      type="Entertainment_SeasonalCustom">lord of Mysrule</rs></cell>
+                      type="Drama_Character">lord of Mysrule</rs></cell>
 
                   <cell rend="right">xj s.</cell>
                 </row>
@@ -12936,7 +12937,7 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>It<ex>em</ex> rec<ex>eyvyd</ex> of the <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/14146/"
-                      type="Entertainment_SeasonalCustom">Lord of Mysserule</rs></cell>
+                      type="Drama_Character">Lord of Mysserule</rs></cell>
 
                   <cell rend="right">iiij s. vj d.</cell>
                 </row>
@@ -12964,7 +12965,7 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>R<ex>eceyvyd</ex> of my <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/14146/"
-                      type="Entertainment_SeasonalCustom">lord</rs> of Soche mony as he <term
+                      type="Drama_Character">lord</rs> of Soche mony as he <term
                       ref="gloss:geddred-1">gedyryd</term></cell>
                   
                   <cell rend="right">ij s.</cell>
@@ -12993,7 +12994,7 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>rec<ex>eyvyd</ex> of the <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/14146/"
-                      type="Entertainment_SeasonalCustom">lord of Mysrule</rs></cell>
+                      type="Drama_Character">lord of Mysrule</rs></cell>
 
                   <cell rend="right">iiij s. iiij d.</cell>
                 </row>
@@ -13060,7 +13061,7 @@ table. The (blank) above is the second cell of that row -->the
                   <cell>payd to <rs ref="http://ereed.library.utoronto.ca/eats/entity/29141/"
                       type="Person_Commoner">Iohn howlat</rs> for vj yerd<ex>es</ex> of <term
                       ref="gloss:lynyng-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/41121/" type="Thing_ClothFabric">lynyng</rs></term> of v d. A <term ref="gloss:styke-1"
-                      >styke</term> for the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">lord<ex>es</ex></rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/71388/" type="Thing_TheatricalCostume">Coote</rs></cell>
+                        >styke</term> for the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Drama_Character">lord<ex>es</ex></rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/71388/" type="Thing_TheatricalCostume">Coote</rs></cell>
                   <cell rend="right">ij s. vj d.</cell>
                 </row>
                 <row>
@@ -13091,7 +13092,7 @@ table. The (blank) above is the second cell of that row -->the
               <table>
                 <row>
                   <cell>It<ex>em</ex> payd for on yard of <term ref="gloss:broderd-1">Broderd</term>
-                    <rs ref="http://ereed.library.utoronto.ca/eats/entity/41121/" type="Thing_ClothFabric">Tuke</rs> to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">lord<ex>es</ex></rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/71388/" type="Thing_TheatricalCostume">Coote</rs> </cell>
+                    <rs ref="http://ereed.library.utoronto.ca/eats/entity/41121/" type="Thing_ClothFabric">Tuke</rs> to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Drama_Character">lord<ex>es</ex></rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/71388/" type="Thing_TheatricalCostume">Coote</rs> </cell>
                   <cell rend="right">viij d.</cell>
                 </row>
               </table>
@@ -13168,7 +13169,7 @@ table. The (blank) above is the second cell of that row -->the
               <table>
                 <row>
                   <cell>Recevyd of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/"
-                      type="Entertainment_SeasonalCustom">lord<ex>es</ex></rs> box</cell>
+                    type="Drama_Character">lord<ex>es</ex></rs> box</cell>
 
                   <cell rend="right">xiij s. iiij d.</cell>
                 </row>
@@ -13249,7 +13250,7 @@ table. The (blank) above is the second cell of that row -->the
               <table>
                 <row>
                   <cell>recevyd of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/"
-                      type="Entertainment_SeasonalCustom">lord of Mysrule</rs></cell>
+                    type="Drama_Character">lord of Mysrule</rs></cell>
 
                   <cell rend="right">x s.</cell>
                 </row>
@@ -13277,7 +13278,7 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>Rec<ex>eyvyd</ex> of the <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/14146/"
-                      type="Entertainment_SeasonalCustom">lorde of Mysrules</rs> box</cell>
+                      type="Drama_Character">lorde of Mysrules</rs> box</cell>
 
                   <cell rend="right">ij s. viij d.</cell>
                 </row>
@@ -13305,7 +13306,7 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>Rec<ex>eyvyd</ex> of the <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/14146/"
-                      type="Entertainment_SeasonalCustom">lordes</rs> box</cell>
+                      type="Drama_Character">lordes</rs> box</cell>
 
                   <cell rend="right">v s.</cell>
                 </row>
@@ -13333,7 +13334,7 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>rec<ex>eyvyd</ex> of the <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/14146/"
-                      type="Entertainment_SeasonalCustom">lord of Mysrules</rs> box</cell>
+                      type="Drama_Character">lord of Mysrules</rs> box</cell>
 
                   <cell rend="right">iiij s. viij d.</cell>
                 </row>
@@ -13363,7 +13364,7 @@ table. The (blank) above is the second cell of that row -->the
                       ref="http://ereed.library.utoronto.ca/eats/entity/29278/"
                       type="Person_Commoner">vmfrey Tomkys</rs> for the <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/14146/"
-                      type="Entertainment_SeasonalCustom">lorde of Mysrule</rs></cell>
+                      type="Drama_Character">lorde of Mysrule</rs></cell>
 
                   <cell rend="right">vj s. viij d.</cell>
                 </row>
