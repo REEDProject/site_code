@@ -139,6 +139,7 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2018-03-28" who="#KC">Added ref URI for 'summer games' to rs tag for 'Robin Hood' which is now double tagged with 'summer game' and 'drama character'</change>
       <change when="2018-03-28" who="#KC">Changed type inserted with EATS rs tag for entity #14146 (misrule, lords and ladies of) from 'SeasonalCustom' to 'Drama_Character'</change>
       <change when="2018-03-28" who="#KC">Re-tagged 'maypoles' with two references ('summer games' and 'poles') instead of one (maypoles/poles).</change>
       <change when="2018-03-19" who="#KC">EATS tagged "bucher" for "John Renmer bucher" in 1611 West Bromwich record, staff-ridm51335072/</change>
@@ -11603,7 +11604,7 @@ table. The (blank) above is the second cell of that row -->the
                     illegible</hi></note> of warre com to the seid Towne of <term
                   ref="gloss:willenhale-1">Wilnall</term> to the seid faire and also on Roger
                 Marchall of <term ref="gloss:weddesbury-1">weddesbury</term> callyng hym self <rs
-                  ref="http://ereed.library.utoronto.ca/eats/entity/35310/"
+                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/35310/"
                   type="Entertainment_SeasonalCustom">Robyn Hood</rs> and on <damage><gap
                     unit="chars" extent="3"/></damage><note type="foot">on <damage><gap unit="chars"
                       extent="3"/></damage> : <hi rend="italic">appproximately 14 characters
@@ -11726,7 +11727,7 @@ table. The (blank) above is the second cell of that row -->the
                   ref="http://ereed.library.utoronto.ca/eats/entity/3936/"
                   type="Place_BoroughParish">Walshall</rs> haue <term ref="gloss:comyn">comyn</term>
                 to the seide ffer<ex>e</ex> w<ex>i</ex>t<ex>h</ex> ther capitanns called the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Drama_Character">Abot of
-                Marham</rs> or <rs ref="http://ereed.library.utoronto.ca/eats/entity/35310/"
+                  Marham</rs> or <rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/35310/"
                   type="Entertainment_SeasonalCustom">Robyn Hodys</rs> to
                  the intent to gether
                 money w<ex>i</ex>t<ex>h</ex> ther disport<ex>es</ex> to the p<ex>ro</ex>fight of the
@@ -13685,7 +13686,7 @@ table. The (blank) above is the second cell of that row -->the
               <table>
                 <row>
                   <cell>It<ex>e</ex>m to <rs
-                      ref="http://ereed.library.utoronto.ca/eats/entity/35310/"
+                    ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/35310/"
                       type="Entertainment_SeasonalCustom">Robyn hode</rs>
                     <term ref="gloss:marresdaunce-1"><rs
                         ref="http://ereed.library.utoronto.ca/eats/entity/18451/"
