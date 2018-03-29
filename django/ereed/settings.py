@@ -138,7 +138,8 @@ LEAFLET_CONFIG = {
     'PLUGINS': {
         'forms': {
             'auto-include': True,
-            'js': ['js/admin_map.js'],
+            'css': ['css/leaflet.mousecoordinate.css'],
+            'js': ['js/admin_map.js', 'js/leaflet.mousecoordinate.min.js'],
         },
     },
     'RESET_VIEW': False,
