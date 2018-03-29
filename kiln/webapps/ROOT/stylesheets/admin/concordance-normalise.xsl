@@ -13,7 +13,7 @@
 
   <xsl:template match="tei:head[@type='sub']" />
 
-  <xsl:template match="tei:note" />
+  <xsl:template match="tei:note[not(@type='marginal')]" />
 
   <xsl:template match="tei:teiHeader" />
 
