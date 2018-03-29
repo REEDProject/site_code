@@ -16,6 +16,7 @@
           <meta http-equiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title><kiln:block name="title">Kiln admin: </kiln:block></title>
+          <link rel="icon" href="{$kiln:assets-path}/images/favicon.ico" />
           <kiln:block name="js">
             <script src="{$kiln:assets-path}/scripts/admin.js">&#160;</script>
           </kiln:block>
