@@ -3163,7 +3163,7 @@
               <ab><gap reason="omitted"/>Ite<ex>m</ex> in nocte <rs ref="http://ereed.library.utoronto.ca/eats/entity/41461/" type="CalendarDay_Liturgical">Natal<ex>is</ex></rs>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/40362/" type="Drama_Type">rep<ex>re</ex>sentacio pastor<ex>um</ex></rs> fieri consueuit et in diluculo <rs ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">Pasche</rs>
                   rep<ex>re</ex>sentacio Resurrecc<ex>i</ex>o<ex>n</ex>is d<ex>omi</ex>nice &amp;
-                  rep<ex>re</ex>sentacio p<ex>er</ex>egrinor<ex>um</ex> die <rs ref="http://ereed.library.utoronto.ca/eats/entity/41346/" type="CalendarDay_Liturgical">lune in
+                  rep<ex>re</ex>sentacio p<ex>er</ex>egrinor<ex>um</ex> die <rs ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">lune in
                   septem<ex>an</ex>a pasche</rs> sicut in libris sup<ex>er</ex> hijs ac alijs
                   co<ex>m</ex>positis co<ex>n</ex>tinet<ex>ur</ex></ab>
 
@@ -5190,7 +5190,7 @@
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m r<ex>eceyved</ex> in <rs ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">Est<ex>er</ex></rs> weke for <term
+                  <cell>It<ex>e</ex>m r<ex>eceyved</ex> in <rs ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">Est<ex>er</ex> weke</rs> for <term
                       ref="gloss:heuynge-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/41639/" type="Entertainment_SeasonalCustom">heyveng</rs></term></cell>
                   <cell rend="right">iij s. vj d. ob.</cell>
                 </row>
@@ -6187,7 +6187,7 @@ table. The (blank) above is the second cell of that row -->the
               <table>
                 <row>
                   <cell>p<ex>ai</ex>d <rs ref="http://ereed.library.utoronto.ca/eats/entity/20315/"
-                      type="Person_Commoner">Chrispe</rs> for musicke one <rs ref="http://ereed.library.utoronto.ca/eats/entity/41346/" type="CalendarDay_Liturgical">monday in Ester weeke</rs><note
+                      type="Person_Commoner">Chrispe</rs> for musicke one monday in <rs ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">Ester weeke</rs><note
                       type="foot">monday <gap reason="omitted"/> weeke: <hi rend="italic">5 April
                         1613</hi></note></cell>
                   <cell rend="right">00 03 04</cell>
@@ -13399,8 +13399,8 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>payd to <rs ref="http://ereed.library.utoronto.ca/eats/entity/29365/"
                       type="Person_Commoner">H salford</rs> for <term ref="gloss:wating-1"
-                      >wating</term> in <rs ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">Est<ex>er</ex></rs>
-                    <term ref="gloss:wicke-1">wicke</term></cell>
+                        >wating</term> in <rs xml:id="rs-41327-1" next="#rs-41327-2" ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">Est<ex>er</ex></rs>
+                    <term ref="gloss:wicke-1"><rs xml:id="rs-41327-2" prev="#rs-41327-1" ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">wicke</rs></term></cell>
                   
                   <cell rend="right">vj d.</cell>
                 </row>
