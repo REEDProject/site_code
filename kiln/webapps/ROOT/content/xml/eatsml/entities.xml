@@ -1220,6 +1220,8 @@
         <entity_relationship authority="authority-594" certainty="full" eats_id="47895" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-47877" range_entity="entity-1751"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="71210" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-71191" range_entity="entity-1751"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="71588" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-71569" range_entity="entity-1751"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73308" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73289" range_entity="entity-1751"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73331" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73312" range_entity="entity-1751"/>
       </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="1752" entity_type="entity_type-543"/>
@@ -1239,6 +1241,8 @@
     </entity>
     <entity xml:id="entity-1769" eats_id="1769" url="http://ereed.library.utoronto.ca/eats/entity/1769/">
       <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73540" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73521" range_entity="entity-1769"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73563" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73544" range_entity="entity-1769"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="47763" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-47745" range_entity="entity-1769"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="70920" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-70901" range_entity="entity-1769"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="4246" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-1769" range_entity="entity-1715"/>
@@ -1262,6 +1266,7 @@
     <entity xml:id="entity-1787" eats_id="1787" url="http://ereed.library.utoronto.ca/eats/entity/1787/">
       <entity_relationships>
         <entity_relationship authority="authority-594" certainty="full" eats_id="4250" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-1787" range_entity="entity-1715"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73492" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73473" range_entity="entity-1787"/>
       </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="1788" entity_type="entity_type-543"/>
@@ -1558,6 +1563,7 @@
     </entity>
     <entity xml:id="entity-2039" eats_id="2039" url="http://ereed.library.utoronto.ca/eats/entity/2039/">
       <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73609" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73590" range_entity="entity-2039"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="4306" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-2039" range_entity="entity-1715"/>
       </entity_relationships>
       <entity_types>
@@ -1864,6 +1870,7 @@
       <entity_relationships>
         <entity_relationship authority="authority-594" certainty="full" eats_id="4362" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-2291" range_entity="entity-1715"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="36984" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-36966" range_entity="entity-2291"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73586" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73567" range_entity="entity-2291"/>
       </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="2292" entity_type="entity_type-543"/>
@@ -5487,6 +5494,7 @@
     </entity>
     <entity xml:id="entity-9186" eats_id="9186" url="http://ereed.library.utoronto.ca/eats/entity/9186/">
       <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="59088" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-58840" range_entity="entity-9186"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="70362" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-9186" range_entity="entity-70028"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="28969" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-28923" range_entity="entity-9186"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="9251" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-9205" range_entity="entity-9186"/>
@@ -5500,7 +5508,6 @@
         <entity_relationship authority="authority-594" certainty="full" eats_id="59084" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-58983" range_entity="entity-9186"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="59149" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-59092" range_entity="entity-9186"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="59235" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-59189" range_entity="entity-9186"/>
-        <entity_relationship authority="authority-594" certainty="full" eats_id="59088" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-58840" range_entity="entity-9186"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="59967" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-59921" range_entity="entity-9186"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="62951" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-62889" range_entity="entity-9186"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="69757" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-69695" range_entity="entity-9186"/>
@@ -6323,13 +6330,13 @@
         <existence authority="authority-594" eats_id="10980"/>
       </existences>
       <names>
-        <name authority="authority-594" eats_id="10984" is_preferred="true" language="language-572" name_type="name_type-18609" script="script-588">
-          <assembled_form>bailiffs</assembled_form>
-          <display_form>bailiffs</display_form>
-        </name>
         <name authority="authority-594" eats_id="18742" is_preferred="false" language="language-572" name_type="name_type-18607" script="script-588">
           <assembled_form>bailiff</assembled_form>
           <display_form>bailiff</display_form>
+        </name>
+        <name authority="authority-594" eats_id="10984" is_preferred="true" language="language-572" name_type="name_type-18609" script="script-588">
+          <assembled_form>bailiffs</assembled_form>
+          <display_form>bailiffs</display_form>
         </name>
       </names>
     </entity>
@@ -7297,7 +7304,6 @@
     </entity>
     <entity xml:id="entity-13153" eats_id="13153" url="http://ereed.library.utoronto.ca/eats/entity/13153/">
       <entity_relationships>
-        <entity_relationship authority="authority-594" certainty="full" eats_id="31122" entity_relationship_type="entity_relationship_type-505" domain_entity="entity-30996" range_entity="entity-13153"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="31537" entity_relationship_type="entity_relationship_type-508" domain_entity="entity-13153" range_entity="entity-31436"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="33568" entity_relationship_type="entity_relationship_type-12724" domain_entity="entity-13153" range_entity="entity-33546"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="13268" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-13153" range_entity="entity-13250"/>
@@ -7306,10 +7312,11 @@
         <entity_relationship authority="authority-594" certainty="full" eats_id="33680" entity_relationship_type="entity_relationship_type-12724" domain_entity="entity-13153" range_entity="entity-33642"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="33684" entity_relationship_type="entity_relationship_type-12724" domain_entity="entity-13153" range_entity="entity-33608"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="46087" entity_relationship_type="entity_relationship_type-505" domain_entity="entity-13153" range_entity="entity-32283"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="31122" entity_relationship_type="entity_relationship_type-505" domain_entity="entity-30996" range_entity="entity-13153"/>
       </entity_relationships>
       <entity_types>
-        <entity_type authority="authority-594" eats_id="13154" entity_type="entity_type-535"/>
         <entity_type authority="authority-594" eats_id="13247" entity_type="entity_type-531"/>
+        <entity_type authority="authority-594" eats_id="13154" entity_type="entity_type-535"/>
       </entity_types>
       <existences>
         <existence authority="authority-594" eats_id="13157">
@@ -9142,8 +9149,8 @@
         <entity_relationship authority="authority-594" certainty="full" eats_id="68519" entity_relationship_type="entity_relationship_type-12724" domain_entity="entity-17496" range_entity="entity-68500"/>
       </entity_relationships>
       <entity_types>
-        <entity_type authority="authority-594" eats_id="17519" entity_type="entity_type-531"/>
         <entity_type authority="authority-594" eats_id="17516" entity_type="entity_type-535"/>
+        <entity_type authority="authority-594" eats_id="17519" entity_type="entity_type-531"/>
       </entity_types>
       <existences>
         <existence authority="authority-594" eats_id="17497">
@@ -9165,13 +9172,15 @@
         </existence>
       </existences>
       <names>
-        <name authority="authority-594" eats_id="17605" is_preferred="false" language="language-572" name_type="name_type-50901" script="script-588">
-          <assembled_form>James VI, king of Scotland</assembled_form>
-          <display_form>James VI, king of Scotland</display_form>
+        <name authority="authority-594" eats_id="17523" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>James I, king of England and Scotland</assembled_form>
+          <display_form>James I, king of England and Scotland</display_form>
           <name_parts>
             <name_part name_part_type="name_part_type-564" language="language-572" script="script-588">James</name_part>
-            <name_part name_part_type="name_part_type-562" language="language-572" script="script-588">VI</name_part>
+            <name_part name_part_type="name_part_type-562" language="language-572" script="script-588">I</name_part>
+            <name_part name_part_type="name_part_type-570" language="language-572" script="script-588">king of England</name_part>
             <name_part name_part_type="name_part_type-570" language="language-572" script="script-588">king of Scotland</name_part>
+            <name_part name_part_type="name_part_type-570" language="language-572" script="script-588">king of Ireland</name_part>
           </name_parts>
         </name>
         <name authority="authority-594" eats_id="17570" is_preferred="false" language="language-572" name_type="name_type-50899" script="script-588">
@@ -9182,15 +9191,13 @@
             <name_part name_part_type="name_part_type-564" language="language-572" script="script-588">James</name_part>
           </name_parts>
         </name>
-        <name authority="authority-594" eats_id="17523" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
-          <assembled_form>James I, king of England and Scotland</assembled_form>
-          <display_form>James I, king of England and Scotland</display_form>
+        <name authority="authority-594" eats_id="17605" is_preferred="false" language="language-572" name_type="name_type-50901" script="script-588">
+          <assembled_form>James VI, king of Scotland</assembled_form>
+          <display_form>James VI, king of Scotland</display_form>
           <name_parts>
             <name_part name_part_type="name_part_type-564" language="language-572" script="script-588">James</name_part>
-            <name_part name_part_type="name_part_type-562" language="language-572" script="script-588">I</name_part>
-            <name_part name_part_type="name_part_type-570" language="language-572" script="script-588">king of England</name_part>
+            <name_part name_part_type="name_part_type-562" language="language-572" script="script-588">VI</name_part>
             <name_part name_part_type="name_part_type-570" language="language-572" script="script-588">king of Scotland</name_part>
-            <name_part name_part_type="name_part_type-570" language="language-572" script="script-588">king of Ireland</name_part>
           </name_parts>
         </name>
       </names>
@@ -9206,17 +9213,17 @@
         <entity_relationship authority="authority-594" certainty="full" eats_id="24598" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-24537" range_entity="entity-17651"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="32477" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-32403" range_entity="entity-17651"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="17713" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-17496" range_entity="entity-17651"/>
-        <entity_relationship authority="authority-594" certainty="full" eats_id="31069" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-30996" range_entity="entity-17651"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="32355" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-32283" range_entity="entity-17651"/>
-        <entity_relationship authority="authority-594" certainty="full" eats_id="44253" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-44180" range_entity="entity-17651"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="44257" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-44102" range_entity="entity-17651"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="44265" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-43591" range_entity="entity-17651"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="44269" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-43967" range_entity="entity-17651"/>
-        <entity_relationship authority="authority-594" certainty="full" eats_id="44351" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-44278" range_entity="entity-17651"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="44517" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-44444" range_entity="entity-17651"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="70553" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-70458" range_entity="entity-17651"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="24080" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-23984" range_entity="entity-17651"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="44351" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-44278" range_entity="entity-17651"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="26461" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-26369" range_entity="entity-17651"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="44253" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-44180" range_entity="entity-17651"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="31069" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-30996" range_entity="entity-17651"/>
       </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="17655" entity_type="entity_type-555"/>
@@ -11539,8 +11546,8 @@
         <entity_relationship authority="authority-594" certainty="full" eats_id="65196" entity_relationship_type="entity_relationship_type-505" domain_entity="entity-43591" range_entity="entity-23984"/>
       </entity_relationships>
       <entity_types>
-        <entity_type authority="authority-594" eats_id="24018" entity_type="entity_type-531"/>
-        <entity_type authority="authority-594" eats_id="23985" entity_type="entity_type-535"/>
+        <entity_type authority="authority-594" eats_id="24018" entity_type="entity_type-535"/>
+        <entity_type authority="authority-594" eats_id="23985" entity_type="entity_type-531"/>
       </entity_types>
       <existences>
         <existence authority="authority-594" eats_id="23988">
@@ -14724,8 +14731,8 @@
         <entity_relationship authority="authority-594" certainty="full" eats_id="31069" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-30996" range_entity="entity-17651"/>
       </entity_relationships>
       <entity_types>
-        <entity_type authority="authority-594" eats_id="31019" entity_type="entity_type-531"/>
-        <entity_type authority="authority-594" eats_id="31016" entity_type="entity_type-535"/>
+        <entity_type authority="authority-594" eats_id="31019" entity_type="entity_type-535"/>
+        <entity_type authority="authority-594" eats_id="31016" entity_type="entity_type-531"/>
       </entity_types>
       <existences>
         <existence authority="authority-594" eats_id="30997">
@@ -14927,11 +14934,11 @@
     <entity xml:id="entity-31436" eats_id="31436" url="http://ereed.library.utoronto.ca/eats/entity/31436/">
       <entity_relationships>
         <entity_relationship authority="authority-594" certainty="full" eats_id="31512" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-31436" range_entity="entity-31494"/>
-        <entity_relationship authority="authority-594" certainty="full" eats_id="31533" entity_relationship_type="entity_relationship_type-505" domain_entity="entity-30996" range_entity="entity-31436"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="31537" entity_relationship_type="entity_relationship_type-508" domain_entity="entity-13153" range_entity="entity-31436"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="32252" entity_relationship_type="entity_relationship_type-511" domain_entity="entity-32182" range_entity="entity-31436"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="31572" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-31436" range_entity="entity-31554"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="35481" entity_relationship_type="entity_relationship_type-12724" domain_entity="entity-31436" range_entity="entity-32578"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="31533" entity_relationship_type="entity_relationship_type-505" domain_entity="entity-30996" range_entity="entity-31436"/>
       </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="31437" entity_type="entity_type-535"/>
@@ -15542,8 +15549,8 @@
     </entity>
     <entity xml:id="entity-32552" eats_id="32552" url="http://ereed.library.utoronto.ca/eats/entity/32552/">
       <entity_relationships>
-        <entity_relationship authority="authority-594" certainty="full" eats_id="32570" entity_relationship_type="entity_relationship_type-12724" domain_entity="entity-30996" range_entity="entity-32552"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="32574" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-32552" range_entity="entity-8709"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="32570" entity_relationship_type="entity_relationship_type-12724" domain_entity="entity-30996" range_entity="entity-32552"/>
       </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="32553" entity_type="entity_type-12619"/>
@@ -16924,6 +16931,10 @@
         <existence authority="authority-594" eats_id="35780"/>
       </existences>
       <names>
+        <name authority="authority-594" eats_id="73171" is_preferred="false" language="language-572" name_type="name_type-18609" script="script-588">
+          <assembled_form>king games</assembled_form>
+          <display_form>king games</display_form>
+        </name>
         <name authority="authority-594" eats_id="70815" is_preferred="false" language="language-572" name_type="name_type-18609" script="script-588">
           <assembled_form>May games</assembled_form>
           <display_form>May games</display_form>
@@ -17696,6 +17707,7 @@
     </entity>
     <entity xml:id="entity-36947" eats_id="36947" url="http://ereed.library.utoronto.ca/eats/entity/36947/">
       <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73396" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73377" range_entity="entity-36947"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="38572" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-38331" range_entity="entity-36947"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="37887" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-36947" range_entity="entity-1715"/>
       </entity_relationships>
@@ -20393,11 +20405,11 @@
         <existence authority="authority-594" eats_id="41331">
           <dates>
             <date date_period="date_period-486">
-              <assembled_form>Sunday after the full moon on or next following 21 March</assembled_form>
+              <assembled_form>week beginning Easter Day, the Sunday after the full moon on or next following 21 March</assembled_form>
               <date_parts>
                 <date_part type="point" calendar="calendar-481" date_type="date_type-491" certainty="full">
-                  <raw>Sunday after the full moon on or next following 21 March</raw>
-                  <normalised>Sunday after the full moon on or next following 21 March</normalised>
+                  <raw>week beginning Easter Day, the Sunday after the full moon on or next following 21 March</raw>
+                  <normalised>week beginning Easter Day, the Sunday after the full moon on or next following 21 March</normalised>
                 </date_part>
               </date_parts>
             </date>
@@ -20406,8 +20418,8 @@
       </existences>
       <names>
         <name authority="authority-594" eats_id="41335" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
-          <assembled_form>Easter Day</assembled_form>
-          <display_form>Easter Day</display_form>
+          <assembled_form>Easter week</assembled_form>
+          <display_form>Easter week</display_form>
         </name>
       </names>
     </entity>
@@ -20432,8 +20444,8 @@
       </existences>
       <names>
         <name authority="authority-594" eats_id="41354" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
-          <assembled_form>Easter Monday</assembled_form>
-          <display_form>Easter Monday</display_form>
+          <assembled_form>DEPRECATED Easter Monday</assembled_form>
+          <display_form>DEPRECATED Easter Monday</display_form>
         </name>
       </names>
     </entity>
@@ -21467,6 +21479,10 @@
         </existence>
       </existences>
       <names>
+        <name authority="authority-594" eats_id="73671" is_preferred="false" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Holy Thursday</assembled_form>
+          <display_form>Holy Thursday</display_form>
+        </name>
         <name authority="authority-594" eats_id="42976" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
           <assembled_form>Ascension Day</assembled_form>
           <display_form>Ascension Day</display_form>
@@ -21913,8 +21929,8 @@
         <entity_relationship authority="authority-594" certainty="full" eats_id="44253" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-44180" range_entity="entity-17651"/>
       </entity_relationships>
       <entity_types>
-        <entity_type authority="authority-594" eats_id="44214" entity_type="entity_type-531"/>
-        <entity_type authority="authority-594" eats_id="44181" entity_type="entity_type-535"/>
+        <entity_type authority="authority-594" eats_id="44214" entity_type="entity_type-535"/>
+        <entity_type authority="authority-594" eats_id="44181" entity_type="entity_type-531"/>
       </entity_types>
       <existences>
         <existence authority="authority-594" eats_id="44184">
@@ -21958,8 +21974,8 @@
         <entity_relationship authority="authority-594" certainty="full" eats_id="44351" entity_relationship_type="entity_relationship_type-494" domain_entity="entity-44278" range_entity="entity-17651"/>
       </entity_relationships>
       <entity_types>
-        <entity_type authority="authority-594" eats_id="44312" entity_type="entity_type-531"/>
-        <entity_type authority="authority-594" eats_id="44279" entity_type="entity_type-535"/>
+        <entity_type authority="authority-594" eats_id="44312" entity_type="entity_type-535"/>
+        <entity_type authority="authority-594" eats_id="44279" entity_type="entity_type-531"/>
       </entity_types>
       <existences>
         <existence authority="authority-594" eats_id="44282">
@@ -28435,6 +28451,7 @@
       <entity_relationships>
         <entity_relationship authority="authority-594" certainty="full" eats_id="57115" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-57054" range_entity="entity-56779"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="57180" entity_relationship_type="entity_relationship_type-511" domain_entity="entity-57054" range_entity="entity-57119"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73277" entity_relationship_type="entity_relationship_type-514" domain_entity="entity-57054" range_entity="entity-73254"/>
       </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="57076" entity_type="entity_type-525"/>
@@ -28470,6 +28487,7 @@
       <entity_relationships>
         <entity_relationship authority="authority-594" certainty="full" eats_id="57180" entity_relationship_type="entity_relationship_type-511" domain_entity="entity-57054" range_entity="entity-57119"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="57245" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-57119" range_entity="entity-56779"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73281" entity_relationship_type="entity_relationship_type-514" domain_entity="entity-57119" range_entity="entity-73254"/>
       </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="57141" entity_type="entity_type-525"/>
@@ -28502,6 +28520,9 @@
       </names>
     </entity>
     <entity xml:id="entity-57184" eats_id="57184" url="http://ereed.library.utoronto.ca/eats/entity/57184/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73273" entity_relationship_type="entity_relationship_type-514" domain_entity="entity-57184" range_entity="entity-73254"/>
+      </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="57206" entity_type="entity_type-525"/>
         <entity_type authority="authority-594" eats_id="57203" entity_type="entity_type-531"/>
@@ -28535,6 +28556,7 @@
     <entity xml:id="entity-57249" eats_id="57249" url="http://ereed.library.utoronto.ca/eats/entity/57249/">
       <entity_relationships>
         <entity_relationship authority="authority-594" certainty="full" eats_id="57310" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-57249" range_entity="entity-56779"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73285" entity_relationship_type="entity_relationship_type-514" domain_entity="entity-57249" range_entity="entity-73254"/>
       </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="57271" entity_type="entity_type-525"/>
@@ -29259,8 +29281,8 @@
     </entity>
     <entity xml:id="entity-58886" eats_id="58886" url="http://ereed.library.utoronto.ca/eats/entity/58886/">
       <entity_relationships>
-        <entity_relationship authority="authority-594" certainty="full" eats_id="59080" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-58886" range_entity="entity-9186"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="58967" entity_relationship_type="entity_relationship_type-34835" domain_entity="entity-58886" range_entity="entity-58840"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="59080" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-58886" range_entity="entity-9186"/>
       </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="58893" entity_type="entity_type-523"/>
@@ -29291,8 +29313,8 @@
     </entity>
     <entity xml:id="entity-58983" eats_id="58983" url="http://ereed.library.utoronto.ca/eats/entity/58983/">
       <entity_relationships>
-        <entity_relationship authority="authority-594" certainty="full" eats_id="59084" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-58983" range_entity="entity-9186"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="59064" entity_relationship_type="entity_relationship_type-34835" domain_entity="entity-58983" range_entity="entity-58840"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="59084" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-58983" range_entity="entity-9186"/>
       </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="58990" entity_type="entity_type-523"/>
@@ -29551,8 +29573,8 @@
     </entity>
     <entity xml:id="entity-59576" eats_id="59576" url="http://ereed.library.utoronto.ca/eats/entity/59576/">
       <entity_relationships>
-        <entity_relationship authority="authority-594" certainty="full" eats_id="62835" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-62351" range_entity="entity-59576"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="59606" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-58840" range_entity="entity-59576"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="62835" entity_relationship_type="entity_relationship_type-21008" domain_entity="entity-62351" range_entity="entity-59576"/>
       </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="59580" entity_type="entity_type-519"/>
@@ -35070,32 +35092,6 @@
         </name>
       </names>
     </entity>
-    <entity xml:id="entity-71305" eats_id="71305" url="http://ereed.library.utoronto.ca/eats/entity/71305/">
-      <entity_types>
-        <entity_type authority="authority-594" eats_id="71306" entity_type="entity_type-4857"/>
-      </entity_types>
-      <existences>
-        <existence authority="authority-594" eats_id="71309">
-          <dates>
-            <date date_period="date_period-486">
-              <assembled_form>25 Mar</assembled_form>
-              <date_parts>
-                <date_part type="point" calendar="calendar-481" date_type="date_type-491" certainty="full">
-                  <raw>25 Mar</raw>
-                  <normalised>25 Mar</normalised>
-                </date_part>
-              </date_parts>
-            </date>
-          </dates>
-        </existence>
-      </existences>
-      <names>
-        <name authority="authority-594" eats_id="71313" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
-          <assembled_form>Lady Day</assembled_form>
-          <display_form>Lady Day</display_form>
-        </name>
-      </names>
-    </entity>
     <entity xml:id="entity-71354" eats_id="71354" url="http://ereed.library.utoronto.ca/eats/entity/71354/">
       <entity_types>
         <entity_type authority="authority-594" eats_id="71355" entity_type="entity_type-4857"/>
@@ -35149,8 +35145,8 @@
       </existences>
       <names>
         <name authority="authority-594" eats_id="71427" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
-          <assembled_form>Morris bells</assembled_form>
-          <display_form>Morris bells</display_form>
+          <assembled_form>DEPRECATED morris bells</assembled_form>
+          <display_form>DEPRECATED morris bells</display_form>
         </name>
       </names>
     </entity>
@@ -35579,6 +35575,10 @@
         </existence>
       </existences>
       <names>
+        <name authority="authority-594" eats_id="73401" is_preferred="false" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Lady Day</assembled_form>
+          <display_form>Lady Day</display_form>
+        </name>
         <name authority="authority-594" eats_id="72122" is_preferred="false" language="language-572" name_type="name_type-584" script="script-588">
           <assembled_form>Annunciatio of the Blessed Virgin Mary</assembled_form>
           <display_form>Annunciatio of the Blessed Virgin Mary</display_form>
@@ -36042,6 +36042,357 @@
         <name authority="authority-594" eats_id="73105" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
           <assembled_form>Good Friday</assembled_form>
           <display_form>Good Friday</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73132" eats_id="73132" url="http://ereed.library.utoronto.ca/eats/entity/73132/">
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73133" entity_type="entity_type-21227"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73136"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73140" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>giants</assembled_form>
+          <display_form>giants</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73151" eats_id="73151" url="http://ereed.library.utoronto.ca/eats/entity/73151/">
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73152" entity_type="entity_type-4957"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73155"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73159" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>nails</assembled_form>
+          <display_form>nails</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73181" eats_id="73181" url="http://ereed.library.utoronto.ca/eats/entity/73181/">
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73204" entity_type="entity_type-525"/>
+        <entity_type authority="authority-594" eats_id="73201" entity_type="entity_type-531"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73182">
+          <dates>
+            <date date_period="date_period-484">
+              <assembled_form>1519 – 1520</assembled_form>
+              <date_parts>
+                <date_part type="start" calendar="calendar-481" date_type="date_type-491" certainty="full">
+                  <raw>1519</raw>
+                  <normalised>1519</normalised>
+                </date_part>
+                <date_part type="end" calendar="calendar-481" date_type="date_type-491" certainty="full">
+                  <raw>1520</raw>
+                  <normalised>1520</normalised>
+                </date_part>
+              </date_parts>
+            </date>
+          </dates>
+        </existence>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73243" is_preferred="false" language="language-572" name_type="name_type-36556" script="script-588">
+          <assembled_form>Barbour, Thomas, Reading mayor's servant</assembled_form>
+          <display_form>Barbour, Thomas, Reading mayor's servant</display_form>
+        </name>
+        <name authority="authority-594" eats_id="73208" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Barbour, Thomas</assembled_form>
+          <display_form></display_form>
+          <name_parts>
+            <name_part name_part_type="name_part_type-560" language="language-572" script="script-588">Barbour</name_part>
+            <name_part name_part_type="name_part_type-564" language="language-572" script="script-588">Thomas</name_part>
+          </name_parts>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73254" eats_id="73254" url="http://ereed.library.utoronto.ca/eats/entity/73254/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73273" entity_relationship_type="entity_relationship_type-514" domain_entity="entity-57184" range_entity="entity-73254"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73277" entity_relationship_type="entity_relationship_type-514" domain_entity="entity-57054" range_entity="entity-73254"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73281" entity_relationship_type="entity_relationship_type-514" domain_entity="entity-57119" range_entity="entity-73254"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73285" entity_relationship_type="entity_relationship_type-514" domain_entity="entity-57249" range_entity="entity-73254"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73258" entity_type="entity_type-23416"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73255"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73262" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Paynter family</assembled_form>
+          <display_form>Paynter family</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73289" eats_id="73289" url="http://ereed.library.utoronto.ca/eats/entity/73289/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73308" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73289" range_entity="entity-1751"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73290" entity_type="entity_type-539"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73293"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73297" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Whitley manor</assembled_form>
+          <display_form>Whitley manor</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73312" eats_id="73312" url="http://ereed.library.utoronto.ca/eats/entity/73312/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73331" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73312" range_entity="entity-1751"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73313" entity_type="entity_type-539"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73316"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73336" is_preferred="false" language="language-572" name_type="name_type-36556" script="script-588">
+          <assembled_form>St Giles, parish of</assembled_form>
+          <display_form>St Giles, parish of</display_form>
+        </name>
+        <name authority="authority-594" eats_id="73320" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>St Giles</assembled_form>
+          <display_form>St Giles</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73347" eats_id="73347" url="http://ereed.library.utoronto.ca/eats/entity/73347/">
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73351" entity_type="entity_type-4961"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73348"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73366" is_preferred="false" language="language-572" name_type="name_type-18607" script="script-588">
+          <assembled_form>hat</assembled_form>
+          <display_form>hat</display_form>
+        </name>
+        <name authority="authority-594" eats_id="73355" is_preferred="true" language="language-572" name_type="name_type-18609" script="script-588">
+          <assembled_form>hats</assembled_form>
+          <display_form>hats</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73377" eats_id="73377" url="http://ereed.library.utoronto.ca/eats/entity/73377/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73396" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73377" range_entity="entity-36947"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73378" entity_type="entity_type-539"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73381"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73385" is_preferred="true" language="language-572" name_type="name_type-582" script="script-588">
+          <assembled_form>St Benet Gracechurch</assembled_form>
+          <display_form>St Benet Gracechurch</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73412" eats_id="73412" url="http://ereed.library.utoronto.ca/eats/entity/73412/">
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73416" entity_type="entity_type-21227"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73413"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73420" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Cain</assembled_form>
+          <display_form>Cain</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73431" eats_id="73431" url="http://ereed.library.utoronto.ca/eats/entity/73431/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73469" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73431" range_entity="entity-73450"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73432" entity_type="entity_type-21368"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73435"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73439" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>St John’s College</assembled_form>
+          <display_form>St John’s College</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73450" eats_id="73450" url="http://ereed.library.utoronto.ca/eats/entity/73450/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73469" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73431" range_entity="entity-73450"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73496" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73450" range_entity="entity-73473"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73454" entity_type="entity_type-21368"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73451"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73458" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Cambridge University</assembled_form>
+          <display_form>Cambridge University</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73473" eats_id="73473" url="http://ereed.library.utoronto.ca/eats/entity/73473/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73492" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73473" range_entity="entity-1787"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73496" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73450" range_entity="entity-73473"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73477" entity_type="entity_type-539"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73474"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73481" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Cambridge</assembled_form>
+          <display_form>Cambridge</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73500" eats_id="73500" url="http://ereed.library.utoronto.ca/eats/entity/73500/">
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73501" entity_type="entity_type-4957"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73504"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73508" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>paper</assembled_form>
+          <display_form>paper</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73521" eats_id="73521" url="http://ereed.library.utoronto.ca/eats/entity/73521/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73540" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73521" range_entity="entity-1769"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73522" entity_type="entity_type-539"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73525"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73529" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Farnham</assembled_form>
+          <display_form>Farnham</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73544" eats_id="73544" url="http://ereed.library.utoronto.ca/eats/entity/73544/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73563" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73544" range_entity="entity-1769"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73545" entity_type="entity_type-539"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73548"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73552" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Slough</assembled_form>
+          <display_form>Slough</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73567" eats_id="73567" url="http://ereed.library.utoronto.ca/eats/entity/73567/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73586" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73567" range_entity="entity-2291"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73568" entity_type="entity_type-539"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73571"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73575" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Oatlands Palace</assembled_form>
+          <display_form>Oatlands Palace</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73590" eats_id="73590" url="http://ereed.library.utoronto.ca/eats/entity/73590/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="73609" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73590" range_entity="entity-2039"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73591" entity_type="entity_type-539"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73594"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73598" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Greenwich</assembled_form>
+          <display_form>Greenwich</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73613" eats_id="73613" url="http://ereed.library.utoronto.ca/eats/entity/73613/">
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73614" entity_type="entity_type-4961"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73617"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73621" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>shoes</assembled_form>
+          <display_form>shoes</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73632" eats_id="73632" url="http://ereed.library.utoronto.ca/eats/entity/73632/">
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73633" entity_type="entity_type-4961"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73636"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73640" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>surplices</assembled_form>
+          <display_form>surplices</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-73651" eats_id="73651" url="http://ereed.library.utoronto.ca/eats/entity/73651/">
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="73652" entity_type="entity_type-21227"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="73655"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="73659" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>frair</assembled_form>
+          <display_form>frair</display_form>
         </name>
       </names>
     </entity>
