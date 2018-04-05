@@ -27,7 +27,7 @@ class EntityLookup (LookupBase):
         return '{} ({})'.format(label, item.get_id())
 
     def get_item_value (self, item):
-        return get_item_label(item)
+        return self.get_item_label(item)
 
 
 registry.register(EntityLookup)
