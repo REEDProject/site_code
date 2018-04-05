@@ -18,7 +18,7 @@ XML_NAMESPACE = 'http://www.w3.org/XML/1998/namespace'
 XML = '{%s}' % XML_NAMESPACE
 BASE_JS = '''var source_region_geojson = [{
 "type":"FeatureCollection"
-,"crs":{"type":"name","properties":{"name":"EPSG:3857"}}
+,"crs":{"type":"name","properties":{"name":"EPSG:4326"}}
 ,"features":[
 %s
 ]}];'''
@@ -47,7 +47,7 @@ def _convert_geojson_to_xml(element, geo_data, output):
     by XSLT within Kiln (which has access to the EATS data)."""
     for item in geo_data['features']:
         feature = etree.SubElement(element, 'feature')
-        feature.set(XML + 'id', item['properties']['pk'])
+        feature.set(XML + 'id', 'id-{}'.format(item['properties']['pk']))
         feature.set('type', item['geometry']['type'])
         if output:
             # Add in placeholders for material to be added during Kiln
