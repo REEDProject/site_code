@@ -1,0 +1,16 @@
+{% extends "eats/admin/base.html" %}
+
+{% block eats_content %}
+<h1>Unnamed Entities</h1>
+
+<p>The following entities have no name property assertions. Note that
+this does not mean that they do not have any other information!</p>
+
+<ul>
+  {% for entity in entities %}
+  <li>
+    <a href="{% url 'eats-entity-change' entity.get_id %}">Entity</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock eats_content %}

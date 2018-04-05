@@ -503,6 +503,12 @@ class EATSTopicMap (TopicMap):
         url = 'http://%s%s' % (Site.objects.get_current().domain, view_url)
         return Locator(url)
 
+    def get_unnamed_entities (self):
+        """Returns a `QuerySet` of entities that have no name property
+        assertions."""
+        return Entity.objects.exclude(
+            roles__association__type=self.name_assertion_type)
+
     @property
     def infrastructure_role_type (self):
         return self.create_topic_by_subject_identifier(Locator(
