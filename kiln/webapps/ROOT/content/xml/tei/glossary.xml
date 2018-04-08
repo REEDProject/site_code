@@ -148,6 +148,9 @@
                     <item>adverb(ial)</item>
                     <label>AL</label>
                     <item>Anglo-Latin</item>
+                    <label><title>AND</title></label>
+                    <item><title><ref target="http://www.anglo-norman.net">Anglo-Norman Dictionary
+                        Online</ref></title></item>
                     <label>art</label>
                     <item>article</item>
                     <label>attr</label>
@@ -168,6 +171,12 @@
                     <item>dative</item>
                     <label>def</label>
                     <item>definite</item>
+                    <label><title>DML</title></label>
+                    <item><title>Dictionary of Medieval Latin from British
+                        Sources</title></item>
+                    <label>DuCange</label>
+                    <item><title><ref target="http://ducange.enc.sorbonne.fr/">Glossarium Mediæ et Infimæ
+                        Latinitatis</ref></title></item>
                     <label>E</label>
                     <item>English</item>
                     <label>EG</label>
@@ -196,8 +205,12 @@
                     <item>Latin</item>
                     <label>LL</label>
                     <item>Late Latin</item>
+                    <label>Latham</label>
+                    <item><title>Revised Medieval Latin Word-List</title></item>
                     <label>m</label>
                     <item>masculine</item>
+                    <label><title>MED</title></label>
+                    <item><title>Middle English Dictionary</title></item>
                     <label>ML</label>
                     <item>Medieval Latin</item>
                     <label>mod</label>
@@ -212,6 +225,11 @@
                     <item>objective</item>
                     <label>OE</label>
                     <item>Old English</item>
+                    <label><title>OEDO</title></label>
+                    <item><title><ref target="http://www.oed.com">Oxford English Dictionary
+                        Online</ref></title></item>
+                    <label><title>OLD</title></label>
+                    <item><title>Oxford Latin Dictionary</title></item>
                     <label>OT</label>
                     <item>Old Testament</item>
                     <label>pa</label>
@@ -264,9 +282,9 @@
             </div>
             <div xml:id="latin_headnote" corresp="#latin">
                 <p>Words are included in the Latin Glossary if they are not found with the required
-                    sense in the <title>Oxford Latin Dictionary</title> (OLD), as supplemented where
+                    sense in the <title>Oxford Latin Dictionary</title> (<title>OLD</title>), as supplemented where
                     appropriate by the <title>Dictionary of Medieval Latin from British
-                        Sources</title> (DML). Adverbs that are formed regularly from adjectives
+                        Sources</title> (<title>DML</title>). Other works consulted can be found in the <ref target="https://ereed.library.utoronto.ca/about/bibliography/?collection_id=generalBib&amp;bibl_author=&amp;bibl_title=">General Bibliography</ref>. Adverbs that are formed regularly from adjectives
                     found in the OLD and DML are not included. Words with unusual spellings have
                     been not been included if they are treated in the text as scribal errors and
                     footnoted, or if they are the result of the following common spelling variations
@@ -304,9 +322,9 @@
             <div xml:id="anglo-french_headnote" corresp="#anglo-french">
                 <p>Words have been included in the Anglo-French Glossary if they are not found with
                     the required sense in either the <title>Collins-Robert French Dictionary</title>
-                    or in the <ref target="http://www.anglo-norman.net">Anglo-Norman Dictionary
-                        Online</ref> (AND) or cannot be easily found there in the spelling in which
-                    they occur in the text. Words with unusual spellings have been not been included
+                    or in the <title><ref target="http://www.anglo-norman.net">Anglo-Norman Dictionary
+                        Online</ref></title> (<title>AND</title>) or cannot be easily found there in the spelling in which
+                    they occur in the text. Other works consulted can be found in the <ref target="https://ereed.library.utoronto.ca/about/bibliography/?collection_id=generalBib&amp;bibl_author=&amp;bibl_title=">General Bibliography</ref>. Words with unusual spellings have been not been included
                     if they are treated in the text as scribal errors and footnoted, or if they are
                     the result of the following common spelling variations alone:</p>
                 <p>doubling of single consonants</p>
@@ -339,9 +357,9 @@
             </div>
             <div xml:id="english_headnote" corresp="#english">
                 <p>Words have been included in the English Glossary if they are not found with the
-                    required sense in the <ref target="http://www.oed.com">Oxford English Dictionary
-                        Online</ref> (OEDO) or cannot be easily found there in the spelling in which
-                    they appear in the text. Words with unusual spellings have not been included if
+                    required sense in the <title><ref target="http://www.oed.com">Oxford English Dictionary
+                        Online</ref></title> (<title>OEDO</title>) or cannot be easily found there in the spelling in which
+                    they appear in the text. Other works consulted can be found in the <ref target="https://ereed.library.utoronto.ca/about/bibliography/?collection_id=generalBib&amp;bibl_author=&amp;bibl_title=">General Bibliography</ref>. Words with unusual spellings have not been included if
                     they have been treated in the text as scribal errors and footnoted, or if they
                     are the result of the following common spelling variations alone:</p>
                 <p>doubling of single consonants and vice versa</p>
