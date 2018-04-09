@@ -223,3 +223,93 @@ class EATSTopicMapTestCase (ModelTestCase):
                          [entity2])
         self.assertEqual(set(self.tm.lookup_entities(
             'Paris', [entity_type1, entity_type2])), set([entity1, entity2]))
+
+    def test_lookup_entities_entity_relationship_type (self):
+        # Test lookups with an entity relationship type specified.
+        language = self.create_language('English', 'en')
+        name_part_type1 = self.create_name_part_type('given')
+        name_part_type2 = self.create_name_part_type('family')
+        name_type = self.create_name_type('regular')
+        script = self.create_script('Latin', 'Latn', ' ')
+        entity_relationship_type1 = self.create_entity_relationship_type(
+            'is child of', 'is parent of')
+        entity_relationship_type2 = self.create_entity_relationship_type(
+            'is friend of', 'is friend of')
+        self.authority.set_languages([language])
+        self.authority.set_name_part_types([name_part_type1, name_part_type2])
+        self.authority.set_name_types([name_type])
+        self.authority.set_scripts([script])
+        self.authority.set_entity_relationship_types(
+            [entity_relationship_type1, entity_relationship_type2])
+        entity1 = self.tm.create_entity(self.authority)
+        entity1.create_name_property_assertion(
+            self.authority, name_type, language, script, 'Paris')
+        entity2 = self.tm.create_entity(self.authority)
+        entity2.create_name_property_assertion(
+            self.authority, name_type, language, script, 'Paris')
+        entity3 = self.tm.create_entity(self.authority)
+        entity3.create_name_property_assertion(
+            self.authority, name_type, language, script, 'Priam')
+        entity1.create_entity_relationship_property_assertion(
+            self.authority, entity_relationship_type1, entity1, entity3,
+            self.tm.property_assertion_full_certainty)
+        entity2.create_entity_relationship_property_assertion(
+            self.authority, entity_relationship_type2, entity3, entity2,
+            self.tm.property_assertion_full_certainty)
+        self.assertEqual(set(self.tm.lookup_entities('Paris')),
+                         set([entity1, entity2]))
+        self.assertEqual(set(self.tm.lookup_entities(
+            'Paris', entity_relationship_types=[entity_relationship_type1])),
+                         set([entity1]))
+        self.assertEqual(set(self.tm.lookup_entities(
+            '*', entity_relationship_types=[entity_relationship_type2])),
+                         set([entity2, entity3]))
+
+    def test_lookup_entities_all (self):
+        # Test lookups with entity relationship type and entity type
+        # specified.
+        language = self.create_language('English', 'en')
+        name_part_type1 = self.create_name_part_type('given')
+        name_part_type2 = self.create_name_part_type('family')
+        name_type = self.create_name_type('regular')
+        script = self.create_script('Latin', 'Latn', ' ')
+        entity_type1 = self.create_entity_type('person')
+        entity_type2 = self.create_entity_type('place')
+        entity_relationship_type1 = self.create_entity_relationship_type(
+            'is child of', 'is parent of')
+        entity_relationship_type2 = self.create_entity_relationship_type(
+            'is friend of', 'is friend of')
+        self.authority.set_languages([language])
+        self.authority.set_name_part_types([name_part_type1, name_part_type2])
+        self.authority.set_name_types([name_type])
+        self.authority.set_scripts([script])
+        self.authority.set_entity_types([entity_type1, entity_type2])
+        self.authority.set_entity_relationship_types(
+            [entity_relationship_type1, entity_relationship_type2])
+        entity1 = self.tm.create_entity(self.authority)
+        entity1.create_name_property_assertion(
+            self.authority, name_type, language, script, 'Paris')
+        entity1.create_entity_type_property_assertion(
+            self.authority, entity_type1)
+        entity2 = self.tm.create_entity(self.authority)
+        entity2.create_name_property_assertion(
+            self.authority, name_type, language, script, 'Paris')
+        entity2.create_entity_type_property_assertion(
+            self.authority, entity_type2)
+        entity3 = self.tm.create_entity(self.authority)
+        entity3.create_name_property_assertion(
+            self.authority, name_type, language, script, 'Paris')
+        entity3.create_entity_type_property_assertion(
+            self.authority, entity_type1)
+        entity1.create_entity_relationship_property_assertion(
+            self.authority, entity_relationship_type1, entity1, entity2,
+            self.tm.property_assertion_full_certainty)
+        entity2.create_entity_relationship_property_assertion(
+            self.authority, entity_relationship_type2, entity2, entity3,
+            self.tm.property_assertion_full_certainty)
+        self.assertEqual(set(self.tm.lookup_entities('Paris')),
+                         set([entity1, entity2, entity3]))
+        self.assertEqual(set(self.tm.lookup_entities(
+            'Paris', entity_types=[entity_type1],
+            entity_relationship_types=[entity_relationship_type1])),
+                         set([entity1]))
