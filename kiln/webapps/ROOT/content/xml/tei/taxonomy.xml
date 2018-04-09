@@ -159,7 +159,7 @@
                         </category>
                     </category>
                     <category xml:id="repositories">
-                        <catDesc>Repositories</catDesc>                       
+                        <catDesc>Repositories</catDesc>
                         <category xml:id="BRO">
                             <catDesc>
                                 <choice>
@@ -167,7 +167,7 @@
                                     <expan>Berkshire Record Office</expan>
                                 </choice>
                             </catDesc>
-                        </category>    
+                        </category>
                         <category xml:id="BL">
                             <catDesc>
                                 <choice>
@@ -206,7 +206,7 @@
                         </category>
                         <category xml:id="folger-shakespeare-library">
                             <catDesc>Folger Shakespeare Library</catDesc>
-                        </category>                                    
+                        </category>
                         <category xml:id="lichfield-cathedral-library">
                             <catDesc>Lichfield Cathedral Library</catDesc>
                         </category>
@@ -227,7 +227,7 @@
                         <category xml:id="record-office-leicestershire-leicester-rutland">
                             <catDesc>Record Office of Leicestershire, Leicester, and
                                 Rutland</catDesc>
-                        </category> 
+                        </category>
                         <category xml:id="st-george-chapel">
                             <catDesc>St George's Chapel Archives and Chapter Library</catDesc>
                         </category>
@@ -300,7 +300,8 @@
         </profileDesc>
         <revisionDesc>
             <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
-            <change when="2018-02-23" who="#CB">Added all data from Berkshire taxonomy-excerpt.xml</change>
+            <change when="2018-02-23" who="#CB">Added all data from Berkshire
+                taxonomy-excerpt.xml</change>
         </revisionDesc>
     </teiHeader>
     <text>
@@ -2072,13 +2073,12 @@
                                 has been speculation that the disappearance was as a result of enemy
                                 action during the Second World War when Reading, by then an
                                 important railway centre, was heavily bombed.</p></note>
-                        <note type="techDesc"><p>Macray, <title type="sourceName">
-                            'Corporation of Reading,'</title> pp
-                            167–227.</p></note>
+                        <note type="techDesc"><p>Macray, <title type="sourceName"> 'Corporation of
+                                    Reading,'</title> pp 167–227.</p></note>
                         <idno type="authorSurname">Macray</idno>
                         <idno type="shortTitle">'Corporation of Reading'</idno>
                     </bibl>
-                    
+
                     <msDesc xml:id="BRRCOK">
                         <msIdentifier>
                             <settlement>Reading</settlement>
@@ -2395,12 +2395,13 @@
                     <bibl xml:id="BRMPEE">
                         <title type="edName">Lady Russell's Entertainment for Queen Elizabeth at
                             Bisham</title>
-                        <note type="techDesc"><p><title type="sourceName">SPEECHES | DELIVERED TO | HER MAIESTIE THIS | LAST
-                                PROGRESSE, AT THE | Right Honorable the Lady R<hi rend="smallcaps"
-                                    >vssels</hi>, at | Bissam, the Right Honorable the Lorde | C<hi
-                                    rend="smallcaps">handos</hi> at Sudley, at the Right | Honorable
-                                the Lord N<hi rend="smallcaps">orris</hi>, at | Ricorte. | [McKerrow
-                                336] | At Oxforde, Printed by Ioseph Barnes. | 1592.</title></p></note>
+                        <note type="techDesc"><p><title type="sourceName">SPEECHES | DELIVERED TO |
+                                    HER MAIESTIE THIS | LAST PROGRESSE, AT THE | Right Honorable the
+                                    Lady R<hi rend="smallcaps">vssels</hi>, at | Bissam, the Right
+                                    Honorable the Lorde | C<hi rend="smallcaps">handos</hi> at
+                                    Sudley, at the Right | Honorable the Lord N<hi rend="smallcaps"
+                                        >orris</hi>, at | Ricorte. | [McKerrow 336] | At Oxforde,
+                                    Printed by Ioseph Barnes. | 1592.</title></p></note>
                         <idno type="publication" sameAs="#STC"/>
                         <idno type="pubNumber">7600</idno>
                     </bibl>
@@ -2442,7 +2443,7 @@
                     <msDesc xml:id="BRDSDD">
                         <msIdentifier>
                             <settlement>Chippenham</settlement>
-                            <repository sameAs="#wiltshire-swindon-archives"/>                            
+                            <repository sameAs="#wiltshire-swindon-archives"/>
                             <idno type="shelfmark">D1/42/10</idno>
                             <msName>Bishop's Act Book</msName>
                         </msIdentifier>
@@ -2472,12 +2473,13 @@
                                 compilations, numbered consecutively. An entry dated 1447 includes
                                 'playes' among the activities of the guild of the Holy Cross in
                                 Abingdon.</p></note>
-                        <note type="techDesc"><p>Hearne, Thomas (ed). <title type="sourceName">Liber Niger Scaccarii, e
-                                codice, calamo exarato, sibique ipsi à Richardo Gravesio
-                                Mickletoniensi donato, descripsit &amp; nunc primus edidit . . . Qui
-                                &amp; cum duobus aliis Codicibus MSS contulit, Wilhelmi que etiam
-                                Worcestrii Annales Rerum Anglicarum (antehac ineditem ineditos)
-                                subjecit. Vol 2</title> (Oxford, 1728).</p></note>
+                        <note type="techDesc"><p>Hearne, Thomas (ed). <title type="sourceName">Liber
+                                    Niger Scaccarii, e codice, calamo exarato, sibique ipsi à
+                                    Richardo Gravesio Mickletoniensi donato, descripsit &amp; nunc
+                                    primus edidit . . . Qui &amp; cum duobus aliis Codicibus MSS
+                                    contulit, Wilhelmi que etiam Worcestrii Annales Rerum Anglicarum
+                                    (antehac ineditem ineditos) subjecit. Vol 2</title> (Oxford,
+                                1728).</p></note>
                         <idno type="authorSurname">Hearne</idno>
                         <idno type="shortTitle">Liber Niger, vol 2</idno>
                     </bibl>
@@ -2567,6 +2569,9 @@
                             <idno type="shelfmark">Additional Ch. 19641</idno>
                             <msName>Account Roll of Brother John de Chippenham</msName>
                         </msIdentifier>
+                        <ab type="edDesc">The account runs from Michaelmas to Michaelmas.</ab>
+
+
                         <ab type="techDesc"><date>1345–6</date>; Latin; parchment; 2 membranes, tied
                             sequentially; mb [1]: 500mm x 269mm (495mm x 225mm), mb [2]: 485mm x
                             280mm (380mm x 230mm); unnumbered; some writing on dorse but complete
@@ -2740,7 +2745,8 @@
                             157mm; modern foliation, foliated 1c–18c, last folio unnumbered; some
                             decorated capitals; folios conserved and tied into grey cardboard
                             untitled covers with green cloth spine, on f 1c is the title: 'The Booke
-                            of the names and | mannes of the Tanners &amp; Lethersellers Companye.'</ab>
+                            of the names and | mannes of the Tanners &amp; Lethersellers
+                            Companye.'</ab>
                     </msDesc>
                     <msDesc xml:id="BRSMCC">
                         <msIdentifier>
@@ -2973,11 +2979,12 @@
                     <bibl xml:id="BRWHWW">
                         <title type="edName">History of Wallingford (A)</title>
                         <note type="techDesc"><p>Hedges, <title type="sourceName">History of
-                            Wallingford</title>.</p></note>
+                                    Wallingford</title>.</p></note>
                         <idno type="authorSurname">Hedges</idno>
                         <idno type="shortTitle">Wallingford</idno>
                     </bibl>
                     <msDesc xml:id="BRWBBB">
+
                         <msIdentifier>
                             <settlement>Reading</settlement>
                             <repository sameAs="#BRO"/>
@@ -2995,6 +3002,7 @@
                             <idno type="shelfmark">WI/FA1/2</idno>
                             <msName>Chamberlains' Accounts</msName>
                         </msIdentifier>
+                        <ab type="edDesc">The account runs from Michaelmas to Michaelmas.</ab>
                         <ab type="techDesc"><date>1635–1735</date>; English; paper; v + 286 + iv
                             (first and final leaves modern); 362mm x 210mm; modern foliation; bound
                             in white boards, old parchment cover pasted inside new binding, title
@@ -3036,8 +3044,8 @@
                         <note type="edDesc"><p>The records were lost some time after their
                                 publication in the first issue of <title>Archaeologia</title> in
                                 1770.</p></note>
-                        <note type="techDesc"><p>Ward, <title type="sourceName">'Parish of St Helen's,'</title> pp
-                                11–23.</p></note>
+                        <note type="techDesc"><p>Ward, <title type="sourceName">'Parish of St
+                                    Helen's,'</title> pp 11–23.</p></note>
                         <idno type="authorSurname">Ward</idno>
                         <idno type="shortTitle">'St Helen's''</idno>
                     </bibl>
@@ -3121,7 +3129,7 @@
                     <msDesc xml:id="BREXTB">
                         <msIdentifier>
                             <settlement>Oxford</settlement>
-                            <repository sameAs="#exeter-college-archives"/>                            
+                            <repository sameAs="#exeter-college-archives"/>
                             <idno type="shelfmark">ECB/RA1/21</idno>
                             <msName>Exeter College Archives Rectors' Accounts</msName>
                         </msIdentifier>
@@ -3133,8 +3141,9 @@
                             advowson of the parish of West Wittenham.</ab>
                         <ab type="techDesc"><date>1361</date>; Latin; parchment; single sheet; 695mm
                             x 276mm; damaged in bottom right-hand corner by a tear or rodent, 60mm x
-                            100mm missing; dated in modern pencil. Flat in box with other sheets of accounts removed from guardbook with brown
-                            morocco cover, tooled leather corners and spine.</ab>
+                            100mm missing; dated in modern pencil. Flat in box with other sheets of
+                            accounts removed from guardbook with brown morocco cover, tooled leather
+                            corners and spine.</ab>
                     </msDesc>
                     <msDesc xml:id="BRDCAA">
                         <msIdentifier>
@@ -3272,8 +3281,8 @@
                             <msName>Churchwardens' Presentments</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1576</date>; English; paper; single sheet; 320mm x
-                            214mm; numbered 4 in the group of 86 presentments; tattered top and right edge; no endorsement, decoration, or
-                            seal.</ab>
+                            214mm; numbered 4 in the group of 86 presentments; tattered top and
+                            right edge; no endorsement, decoration, or seal.</ab>
                     </msDesc>
                     <msDesc xml:id="BRRDDD">
                         <msIdentifier>
@@ -3296,8 +3305,9 @@
                             <idno type="shelfmark">D/P5/25/16</idno>
                             <msName>St Laurence's Deeds and Indentures</msName>
                         </msIdentifier>
-                        <ab type="techDesc"><date>1571</date>; Latin; parchment; single membrane; 250mm x 510mm
-                            (242mm x 510mm); display capitals; indented tabs but no seals.<lb/></ab>
+                        <ab type="techDesc"><date>1571</date>; Latin; parchment; single membrane;
+                            250mm x 510mm (242mm x 510mm); display capitals; indented tabs but no
+                            seals.<lb/></ab>
                     </msDesc>
                     <msDesc xml:id="BRSLPQ">
                         <msIdentifier>
@@ -3306,8 +3316,9 @@
                             <idno type="shelfmark">D/P5/6/2</idno>
                             <msName>St Laurence's Deeds and Indentures</msName>
                         </msIdentifier>
-                        <ab type="techDesc"><date>1603</date>; English; parchment; single membrane; 313mm x 583mm
-                            (302mm x 583mm); display capitals; indented, one seal.<lb/></ab>
+                        <ab type="techDesc"><date>1603</date>; English; parchment; single membrane;
+                            313mm x 583mm (302mm x 583mm); display capitals; indented, one
+                            seal.<lb/></ab>
                     </msDesc>
                     <msDesc xml:id="BRAHAA">
                         <msIdentifier>
@@ -3316,14 +3327,14 @@
                             <idno type="shelfmark">Cotton Cleopatra F.iv</idno>
                             <msName>Household Accounts of Henry VI</msName>
                         </msIdentifier>
-                        <ab type="techDesc"><date>1422–41</date>; Latin; parchment, some paper; iv + 149 + iii;
-                            270mm x 196mm pasted on larger sheet of parchment 282mm x 205mm;
-                            modern foliation (followed here) in pencil; no decoration.
-                            Miscellaneous collection of documents with individual documents
-                            bound on stubs and bound in brown cloth with leather edges and
-                            tooled leather spine; stamped in gold on black patch on the
-                            spine: 'Acts of the | Privy Council | 1–19 Henry VI | Brit Mus |
-                            Cotton MS | Cleopatra f iv.'<lb/></ab>
+                        <ab type="techDesc"><date>1422–41</date>; Latin; parchment, some paper; iv +
+                            149 + iii; 270mm x 196mm pasted on larger sheet of parchment 282mm x
+                            205mm; modern foliation (followed here) in pencil; no decoration.
+                            Miscellaneous collection of documents with individual documents bound on
+                            stubs and bound in brown cloth with leather edges and tooled leather
+                            spine; stamped in gold on black patch on the spine: 'Acts of the | Privy
+                            Council | 1–19 Henry VI | Brit Mus | Cotton MS | Cleopatra f
+                            iv.'<lb/></ab>
                     </msDesc>
                     <msDesc xml:id="BRAHBB">
                         <msIdentifier>
@@ -3332,8 +3343,9 @@
                             <idno type="shelfmark">E 28/50</idno>
                             <msName>Household Accounts of Henry VI</msName>
                         </msIdentifier>
-                        <ab type="techDesc"><date>1428</date>; Anglo-Norman; parchment; single mb; 272mm x 278mm.
-                            Now bound with others in green cardboard-covered binder.</ab>
+                        <ab type="techDesc"><date>1428</date>; Anglo-Norman; parchment; single mb;
+                            272mm x 278mm. Now bound with others in green cardboard-covered
+                            binder.</ab>
                     </msDesc>
                     <msDesc xml:id="BRQADD">
                         <msIdentifier>
@@ -3342,16 +3354,15 @@
                             <idno type="shelfmark">E 315/107</idno>
                             <msName>Household Accounts of Anne of Denmark</msName>
                         </msIdentifier>
-                        <ab type="techDesc"><date>1615</date>; English; paper; ii + 40 + ii with 1 small leaf of
-                            additional expenses bound in at the end; 451mm x 371mm (414mm x
-                            200mm); modern foliation; originally written on folios top to
-                            bottom and bottom to top as a roll (the MS must be reversed to
-                            consult the accounts sequentially); 5 ruled columns, only right
-                            3 written in; ink used for ruling has eaten through many pages,
-                            condition fragile; bound in brown cloth with kid corners and
-                            spine, stamped on spine in gold: 'E/315 | AUGMN | OFFICE |
-                            ACCOUNT | OF | RECEIVER | GENERAL | OF | QUEEN ANNE | A.D.1615 |
-                            107 | 107.'</ab>
+                        <ab type="techDesc"><date>1615</date>; English; paper; ii + 40 + ii with 1
+                            small leaf of additional expenses bound in at the end; 451mm x 371mm
+                            (414mm x 200mm); modern foliation; originally written on folios top to
+                            bottom and bottom to top as a roll (the MS must be reversed to consult
+                            the accounts sequentially); 5 ruled columns, only right 3 written in;
+                            ink used for ruling has eaten through many pages, condition fragile;
+                            bound in brown cloth with kid corners and spine, stamped on spine in
+                            gold: 'E/315 | AUGMN | OFFICE | ACCOUNT | OF | RECEIVER | GENERAL | OF |
+                            QUEEN ANNE | A.D.1615 | 107 | 107.'</ab>
                     </msDesc>
                 </listBibl>
             </div>
