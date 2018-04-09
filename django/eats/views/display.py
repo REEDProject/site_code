@@ -78,16 +78,25 @@ def entity_eatsml_view (request, topic_map, entity_id):
 def search (request, topic_map):
     form_data = request.GET or None
     entity_types = EntityType.objects.filter_by_used_by_authority()
-    form = EntitySearchForm(topic_map, data=form_data,
-                            entity_types=entity_types)
+    entity_relationship_types = EntityRelationshipType.objects.filter_by_used_by_authority()
+    form = EntitySearchForm(
+        topic_map, data=form_data, entity_types=entity_types,
+        entity_relationship_types=entity_relationship_types)
     entities = []
     user_preferences = {}
     if form.is_valid():
         name = form.cleaned_data['name']
         entity_type_ids = form.cleaned_data['entity_types']
-        entity_types = [EntityType.objects.get_by_identifier(entity_type_id) for
-                        entity_type_id in entity_type_ids]
-        results = topic_map.lookup_entities(name, entity_types)
+        entity_types = [EntityType.objects.get_by_identifier(entity_type_id)
+                        for entity_type_id in entity_type_ids]
+        entity_relationship_type_ids = form.cleaned_data[
+            'entity_relationship_types']
+        entity_relationship_types = [
+            EntityRelationshipType.objects.get_by_identifier(type_id)
+            for type_id in entity_relationship_type_ids]
+        results = topic_map.lookup_entities(
+            name, entity_types=entity_types,
+            entity_relationship_types=entity_relationship_types)
         page_number = request.GET.get('page')
         try:
             results_per_page = settings.EATS_RESULTS_PER_PAGE

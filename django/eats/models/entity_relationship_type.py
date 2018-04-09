@@ -12,6 +12,10 @@ class EntityRelationshipTypeManager (InfrastructureManager):
         return super(EntityRelationshipTypeManager, self).filter_by_authority(
             authority, association_type)
 
+    def filter_by_used_by_authority (self):
+        association_type = self.eats_topic_map.authority_has_entity_relationship_type_association_type
+        return super().filter_by_used_by_authority(association_type)
+
     def get_by_admin_name (self, name, reverse_name):
         for ert in self.all():
             existing_name = ert.get_admin_forward_name()

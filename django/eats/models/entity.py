@@ -1,5 +1,6 @@
+from django.conf import settings
 from django.core.urlresolvers import NoReverseMatch
-from django.db import transaction
+from django.db import models, transaction
 
 from tmapi.models import Association, Topic
 
@@ -18,48 +19,6 @@ from .subject_identifier_property_assertion import SubjectIdentifierPropertyAsse
 
 
 class EntityManager (BaseManager):
-
-    def filter_by_duplicate_subject_identifiers (self, entity,
-                                                 subject_indicator, authority):
-        """Returns entities, excluding `entity`, that have a subject
-        identifier property assertion matching `subject_identifier`.
-
-        If `authority` is not None, only those entities that have
-        `subject_identifier` asserted by `authority` are returned.
-
-        :param entity: entity to exclude from the results
-        :type entity: `Entity`
-        :param subject_identifier: the subject identifier to find
-        :type subject_identifier: `str`
-        :param authority: authority to restrict search
-        :type authority: `Authority` or None
-        :rtype: `QuerySet` of `Entity`s
-
-        """
-        occurrence_type = self.eats_topic_map.subject_identifier_assertion_type
-        if authority is None:
-            entities = self.filter(occurrences__type=occurrence_type,
-                                   occurrences__value=subject_indicator)
-        else:
-            entities = self.filter(occurrences__type=occurrence_type,
-                                   occurrences__value=subject_indicator,
-                                   occurrences__scope=authority)
-        return entities.exclude(id=entity.id)
-
-    def filter_by_entity_types (self, entity_types):
-        """Return this manager's queryset filtered by `entity_types`.
-
-        :param entity_types: entity types to filter by
-        :type entity_types: `list` of `EntityType`
-        :rtype: `QuerySet` of `Entity`s
-
-        """
-        assertion_type = self.eats_topic_map.entity_type_assertion_type
-        role_type = self.eats_topic_map.property_role_type
-        return self.filter(
-            roles__association__type=assertion_type,
-            roles__association__roles__type=role_type,
-            roles__association__roles__player__in=entity_types)
 
     def get_by_identifier (self, identifier):
         # This method actually retrieves by Subject Identifier (based
@@ -100,9 +59,79 @@ class EntityManager (BaseManager):
             types=self.eats_topic_map.entity_type)
 
 
+class EntityQuerySet (models.QuerySet):
+
+    @property
+    def eats_topic_map (self):
+        if not hasattr(self, '_eats_topic_map'):
+            from .eats_topic_map import EATSTopicMap
+            self._eats_topic_map = EATSTopicMap.objects.get(
+                iri=settings.EATS_TOPIC_MAP)
+        return self._eats_topic_map
+
+    def filter_by_duplicate_subject_identifiers (self, entity,
+                                                 subject_indicator, authority):
+        """Returns entities, excluding `entity`, that have a subject
+        identifier property assertion matching `subject_identifier`.
+
+        If `authority` is not None, only those entities that have
+        `subject_identifier` asserted by `authority` are returned.
+
+        :param entity: entity to exclude from the results
+        :type entity: `Entity`
+        :param subject_identifier: the subject identifier to find
+        :type subject_identifier: `str`
+        :param authority: authority to restrict search
+        :type authority: `Authority` or None
+        :rtype: `QuerySet` of `Entity`s
+
+        """
+        occurrence_type = self.eats_topic_map.subject_identifier_assertion_type
+        if authority is None:
+            entities = self.filter(occurrences__type=occurrence_type,
+                                   occurrences__value=subject_indicator)
+        else:
+            entities = self.filter(occurrences__type=occurrence_type,
+                                   occurrences__value=subject_indicator,
+                                   occurrences__scope=authority)
+        return entities.exclude(id=entity.id)
+
+    def filter_by_entity_relationship_types (self, entity_relationship_types):
+        """Return this manager's queryset filtered by
+        `entity_relationship_types`.
+
+        :param entity_relationship_types: entity relationship types to filter
+                                          by
+        :type entity_relationship_types: `list` of `EntityRelationshipType`
+        :rtype: `QuerySet` of `Entity`s
+
+        """
+        assertion_type = self.eats_topic_map.entity_relationship_assertion_type
+        role_type = self.eats_topic_map.entity_relationship_type_role_type
+        return self.filter(
+            roles__association__type=assertion_type,
+            roles__association__roles__type=role_type,
+            roles__association__roles__player__in=entity_relationship_types)
+
+    def filter_by_entity_types (self, entity_types):
+        """Return this manager's queryset filtered by `entity_types`.
+
+        :param entity_types: entity types to filter by
+        :type entity_types: `list` of `EntityType`
+        :rtype: `QuerySet` of `Entity`s
+
+        """
+        assertion_type = self.eats_topic_map.entity_type_assertion_type
+        role_type = self.eats_topic_map.property_role_type
+        return self.filter(
+            roles__association__type=assertion_type,
+            roles__association__roles__type=role_type,
+            roles__association__roles__player__in=entity_types)
+
+
 class Entity (Topic):
 
-    objects = EntityManager()
+    objects = EntityManager.from_queryset(EntityQuerySet)()
 
     class Meta:
         proxy = True

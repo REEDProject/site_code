@@ -561,7 +561,8 @@ class EATSTopicMap (TopicMap):
         return self.create_topic_by_subject_identifier(Locator(
                 LANGUAGE_TYPE_IRI), '_language_type')
 
-    def lookup_entities (self, query, entity_types=None):
+    def lookup_entities (self, query, entity_types=None,
+                         entity_relationship_types=None):
         """Returns entities that match `query` that are of the supplied entity
         types.
 
@@ -571,6 +572,9 @@ class EATSTopicMap (TopicMap):
         :type query: `str`
         :param entity_types: entity types to restrict search to
         :type entity_types: `list`
+        :param entity_relationship_types: entity relationship types to
+                                          restrict search to
+        :type entity_relationship_types: `list`
         :rtype: `QuerySet` of `Entity`
 
         """
@@ -579,10 +583,12 @@ class EATSTopicMap (TopicMap):
         for name in names:
             query = self._create_lookup_query(str(name))
             queries.append(query)
+        results = Entity.objects.all()
         if entity_types:
-            results = Entity.objects.filter_by_entity_types(entity_types)
-        else:
-            results = Entity.objects.all()
+            results = results.filter_by_entity_types(entity_types)
+        if entity_relationship_types:
+            results = results.filter_by_entity_relationship_types(
+                entity_relationship_types)
         for query in queries:
             results = results.filter(query)
         return results.distinct()

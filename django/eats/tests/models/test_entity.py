@@ -190,6 +190,89 @@ class EntityTestCase (ModelTestCase):
             self.authority, self.language1, self.script1)
         self.assertEqual(name5, preferred_name)
 
+    def test_manager_filter_by_entity_relationship_type (self):
+        entity_relationship_type1 = self.create_entity_relationship_type(
+            'is child of', 'is parent of')
+        entity_relationship_type2 = self.create_entity_relationship_type(
+            'is spouse of', 'is spouse of')
+        self.authority.set_entity_relationship_types(
+            [entity_relationship_type1, entity_relationship_type2])
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type1]).count(), 0)
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type2]).count(), 0)
+        entity1 = self.tm.create_entity(self.authority)
+        entity2 = self.tm.create_entity(self.authority)
+        entity3 = self.tm.create_entity(self.authority)
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type1]).count(), 0)
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type2]).count(), 0)
+        assertion1 = entity1.create_entity_relationship_property_assertion(
+            self.authority, entity_relationship_type1, entity1, entity2,
+            self.tm.property_assertion_full_certainty)
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type1]).count(), 2)
+        self.assertEqual(set(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type1])), set([entity1, entity2]))
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type2]).count(), 0)
+        assertion2 = entity1.create_entity_relationship_property_assertion(
+            self.authority, entity_relationship_type2, entity1, entity3,
+            self.tm.property_assertion_full_certainty)
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type1]).count(), 2)
+        self.assertEqual(set(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type1])), set([entity1, entity2]))
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type2]).count(), 2)
+        self.assertEqual(set(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type2])), set([entity1, entity3]))
+        assertion1.remove()
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type1]).count(), 0)
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type2]).count(), 2)
+        self.assertEqual(set(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type2])), set([entity1, entity3]))
+        assertion2.remove()
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type1]).count(), 0)
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type2]).count(), 0)
+
+    def test_manager_filter_by_entity_relationship_type_multiple (self):
+        self.assertEqual(Entity.objects.count(), 0)
+        entity_relationship_type1 = self.create_entity_relationship_type(
+            'is child of', 'is parent of')
+        entity_relationship_type2 = self.create_entity_relationship_type(
+            'is spouse of', 'is spouse of')
+        self.authority.set_entity_relationship_types(
+            [entity_relationship_type1, entity_relationship_type2])
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type1, entity_relationship_type2]).count(), 0)
+        entity1 = self.tm.create_entity(self.authority)
+        entity2 = self.tm.create_entity(self.authority)
+        entity3 = self.tm.create_entity(self.authority)
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type1, entity_relationship_type2]).count(), 0)
+        entity1.create_entity_relationship_property_assertion(
+            self.authority, entity_relationship_type1, entity1, entity2,
+            self.tm.property_assertion_full_certainty)
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type1, entity_relationship_type2]).count(), 2)
+        self.assertEqual(set(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type1, entity_relationship_type2])),
+                         set([entity1, entity2]))
+        entity1.create_entity_relationship_property_assertion(
+            self.authority, entity_relationship_type2, entity1, entity3,
+            self.tm.property_assertion_full_certainty)
+        self.assertEqual(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type1, entity_relationship_type2]).distinct().count(), 3)
+        self.assertEqual(set(Entity.objects.filter_by_entity_relationship_types(
+            [entity_relationship_type1, entity_relationship_type2])),
+                         set([entity1, entity2, entity3]))
+
     def test_manager_filter_by_entity_type (self):
         self.assertEqual(Entity.objects.count(), 0)
         entity_type_1 = self.create_entity_type('person')
