@@ -57,7 +57,7 @@
   <xsl:variable name="material_instrument" select="'entity_type-553'" />
   <xsl:variable name="material_property" select="'entity_type-4953'" />
   <xsl:variable name="material_regalia" select="'entity_type-4963'" />
-  <xsl:variable name="material_set" select="'entity_type-4967'" />
+  <xsl:variable name="material_set" select="'entity_type-4957'" />
   <xsl:variable name="material_wagon" select="'entity_type-4955'" />
   <!-- Entity relationship types -->
   <xsl:variable name="contains" select="'entity_relationship_type-502'" />

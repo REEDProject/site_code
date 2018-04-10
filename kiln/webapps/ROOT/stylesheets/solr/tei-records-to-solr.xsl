@@ -67,18 +67,21 @@
           <xsl:text>record</xsl:text>
         </field>
         <field name="document_title">
-          <xsl:value-of select="tei:body/tei:head/tei:date" />
-          <xsl:text>, </xsl:text>
-          <!-- QAZ: Use EATSML name? -->
-          <xsl:value-of select="tei:body/tei:head/tei:rs[1]" />
-          <xsl:if test="tei:body/tei:head/tei:rs[2]">
+          <xsl:variable name="document_title">
+            <xsl:value-of select="tei:body/tei:head/tei:date" />
             <xsl:text>, </xsl:text>
-            <xsl:value-of select="tei:body/tei:head/tei:rs[2]" />
-          </xsl:if>
-          <xsl:text>. </xsl:text>
-          <xsl:value-of select="normalize-space(tei:body/tei:head/tei:title)" />
-          <xsl:text>. </xsl:text>
-          <xsl:value-of select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='text']" />
+            <!-- QAZ: Use EATSML name? -->
+            <xsl:value-of select="tei:body/tei:head/tei:rs[1]" />
+            <xsl:if test="tei:body/tei:head/tei:rs[2]">
+              <xsl:text>, </xsl:text>
+              <xsl:value-of select="tei:body/tei:head/tei:rs[2]" />
+            </xsl:if>
+            <xsl:text>. </xsl:text>
+            <xsl:value-of select="tei:body/tei:head/tei:title" />
+            <xsl:text>. </xsl:text>
+            <xsl:value-of select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='text']" />
+          </xsl:variable>
+          <xsl:value-of select="normalize-space($document_title)" />
         </field>
         <field name="collection_id">
           <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id" />

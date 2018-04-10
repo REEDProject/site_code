@@ -10,11 +10,11 @@
   <kiln:child>
     <kiln:block name="title">
       <kiln:super/>
-      <xsl:text>Online Privacy and Data Collection</xsl:text><!--I put full title here, but is one-word ref better in this position?-->
+      <xsl:text>Terms of Use and Online Privacy</xsl:text>
     </kiln:block>
 
     <kiln:block name="content">
-      <div class="content no-hero contact white-bg"><!--replace 'contact' here with thing in xsl:text? What should properly go here?-->
+      <div class="content no-hero contact white-bg">
         <div class="row">
           <div class="column medium-9">
             <h1>Terms of Use and Online Privacy</h1>
@@ -34,7 +34,7 @@
             <p>The REED Online website and all content provided on it is protected by copyright and other applicable intellectual property and proprietary rights laws.</p>
             <p>The name REED Online and the associated logos <img src="{$kiln:assets-path}/images/terms-reed-logo-small.png" alt="REED logo" /> and <img src="{$kiln:assets-path}/images/terms-reedonline-logo-small.png" alt="REED Online logo" /> may not be used without permission of the REED project.</p>
         <br/>
-            <h3>Online Privacy and Data Collection</h3><!--I used h1 and h3 because that's what we do with the HTML for Historical Background and Performance Traditions. But these shouldn't be in a TEI document, right?-->
+            <h3>Online Privacy and Data Collection</h3>
         
               <p>We use data gathered by <a href="http://www.google.com/analytics/">Google Analytics</a> to ensure that the site is meeting your
                 needs, and to see where there is room for improvement. All user data that we receive

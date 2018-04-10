@@ -84,7 +84,7 @@
                   <div class="columns medium-5">
                     <span class="footer-heading">REED ONLINE</span>
                     <div class="footer-info">
-                      <p>REED Online is powered by <a href="https://github.com/kcl-ddh/kiln/">Kiln</a> and <a href="https://github.com/ajenhl/eats/">EATS</a>. Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Learn more about our <a href="{kiln:url-for-match('ereed-privacy', (), 0)}">terms of use and online privacy</a>.</p>
+                      <p>REED Online is powered by <a href="https://github.com/kcl-ddh/kiln/">Kiln</a> and <a href="https://github.com/ajenhl/eats/">EATS</a>. Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Learn more about our <a href="{kiln:url-for-match('ereed-terms', (), 0)}">terms of use and online privacy</a>.</p>
                       <img src="{$kiln:assets-path}/images/cc-footer.svg" alt="" />
                     </div>
                   </div>
