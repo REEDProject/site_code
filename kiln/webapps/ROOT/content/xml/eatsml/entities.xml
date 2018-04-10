@@ -1143,6 +1143,8 @@
         <entity_relationship authority="authority-594" certainty="full" eats_id="43587" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-43568" range_entity="entity-1715"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="73881" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73862" range_entity="entity-1715"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="74008" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73989" range_entity="entity-1715"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="74481" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-74462" range_entity="entity-1715"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="74504" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-74485" range_entity="entity-1715"/>
       </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="1716" entity_type="entity_type-541"/>
@@ -1224,6 +1226,7 @@
         <entity_relationship authority="authority-594" certainty="full" eats_id="71588" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-71569" range_entity="entity-1751"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="73308" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73289" range_entity="entity-1751"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="73331" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73312" range_entity="entity-1751"/>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="74580" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-74561" range_entity="entity-1751"/>
       </entity_relationships>
       <entity_types>
         <entity_type authority="authority-594" eats_id="1752" entity_type="entity_type-543"/>
@@ -1565,6 +1568,7 @@
     </entity>
     <entity xml:id="entity-2039" eats_id="2039" url="http://ereed.library.utoronto.ca/eats/entity/2039/">
       <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="74527" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-74508" range_entity="entity-2039"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="73609" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-73590" range_entity="entity-2039"/>
         <entity_relationship authority="authority-594" certainty="full" eats_id="4306" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-2039" range_entity="entity-1715"/>
       </entity_relationships>
@@ -36845,6 +36849,138 @@
         <name authority="authority-594" eats_id="74351" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
           <assembled_form>St Fides, Translation of</assembled_form>
           <display_form>St Fides, Translation of</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-74395" eats_id="74395" url="http://ereed.library.utoronto.ca/eats/entity/74395/">
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="74396" entity_type="entity_type-4961"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="74399"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="74403" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>points</assembled_form>
+          <display_form>points</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-74414" eats_id="74414" url="http://ereed.library.utoronto.ca/eats/entity/74414/">
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="74415" entity_type="entity_type-4961"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="74418"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="74433" is_preferred="false" language="language-572" name_type="name_type-18607" script="script-588">
+          <assembled_form>shirt</assembled_form>
+          <display_form>shirt</display_form>
+        </name>
+        <name authority="authority-594" eats_id="74422" is_preferred="true" language="language-572" name_type="name_type-18609" script="script-588">
+          <assembled_form>shirts</assembled_form>
+          <display_form>shirts</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-74444" eats_id="74444" url="http://ereed.library.utoronto.ca/eats/entity/74444/">
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="74445" entity_type="entity_type-539"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="74448"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="74452" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Wadley</assembled_form>
+          <display_form>Wadley</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-74462" eats_id="74462" url="http://ereed.library.utoronto.ca/eats/entity/74462/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="74481" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-74462" range_entity="entity-1715"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="74463" entity_type="entity_type-539"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="74466"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="74470" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Wallingford, honour of</assembled_form>
+          <display_form>Wallingford, honour of</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-74485" eats_id="74485" url="http://ereed.library.utoronto.ca/eats/entity/74485/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="74504" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-74485" range_entity="entity-1715"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="74486" entity_type="entity_type-539"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="74489"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="74493" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Ewelme, honour of</assembled_form>
+          <display_form>Ewelme, honour of</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-74508" eats_id="74508" url="http://ereed.library.utoronto.ca/eats/entity/74508/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="74527" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-74508" range_entity="entity-2039"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="74509" entity_type="entity_type-539"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="74512"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="74516" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Canterbury</assembled_form>
+          <display_form>Canterbury</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-74531" eats_id="74531" url="http://ereed.library.utoronto.ca/eats/entity/74531/">
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="74532" entity_type="entity_type-519"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="74535"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="74550" is_preferred="false" language="language-572" name_type="name_type-18607" script="script-588">
+          <assembled_form>plumbers</assembled_form>
+          <display_form>plumbers</display_form>
+        </name>
+        <name authority="authority-594" eats_id="74539" is_preferred="true" language="language-572" name_type="name_type-18609" script="script-588">
+          <assembled_form>plumbers</assembled_form>
+          <display_form>plumbers</display_form>
+        </name>
+      </names>
+    </entity>
+    <entity xml:id="entity-74561" eats_id="74561" url="http://ereed.library.utoronto.ca/eats/entity/74561/">
+      <entity_relationships>
+        <entity_relationship authority="authority-594" certainty="full" eats_id="74580" entity_relationship_type="entity_relationship_type-502" domain_entity="entity-74561" range_entity="entity-1751"/>
+      </entity_relationships>
+      <entity_types>
+        <entity_type authority="authority-594" eats_id="74562" entity_type="entity_type-539"/>
+      </entity_types>
+      <existences>
+        <existence authority="authority-594" eats_id="74565"/>
+      </existences>
+      <names>
+        <name authority="authority-594" eats_id="74569" is_preferred="true" language="language-572" name_type="name_type-584" script="script-588">
+          <assembled_form>Vale of the White Horse</assembled_form>
+          <display_form>Vale of the White Horse</display_form>
         </name>
       </names>
     </entity>
