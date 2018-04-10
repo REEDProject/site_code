@@ -10,15 +10,32 @@
   <kiln:child>
     <kiln:block name="title">
       <kiln:super/>
-      <xsl:text>Online Privacy and Data Collection</xsl:text>
+      <xsl:text>Online Privacy and Data Collection</xsl:text><!--I put full title here, but is one-word ref better in this position?-->
     </kiln:block>
 
     <kiln:block name="content">
-      <div class="content no-hero contact white-bg"><!--#CB: replace 'contact' here?-->
+      <div class="content no-hero contact white-bg"><!--replace 'contact' here with thing in xsl:text? What should properly go here?-->
         <div class="row">
           <div class="column medium-9">
-            <h1>Online Privacy and Data Collection</h1>
-            <div class="text">
+            <h1>Terms of Use and Online Privacy</h1>
+          </div>
+        </div>
+        
+        
+        <div class="row selected-record-summary relative">
+          <div class="columns medium-9 record">
+            
+            <h3>Terms of Use</h3>
+            
+            <p>The content of the REED collections on this website, including the glossaries and bibliography, is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. This means that you may copy and redistribute the material in any medium or format, as well as remix, transform, and build upon the material, but only under the following terms: you may not use the material for commercial purposes, and you must distribute it under the same license as the original. You must also credit <em>REED Online</em> as the original source, provide a link to the license, and state whether any changes were made to the content.</p>
+            <p>To cite <em>REED Online</em>  please include the website name <em>REED Online</em> and the URL of the website home page or, when relevant, the individual record, as well as the date of access. If you are citing an individual record, please also include the editor's name and name of the collection. For citing an individual record, using MLA 8, we recommend the following format:</p>
+            <p>  Somerset, J. Alan B. (ed). "Staffordshire." <em>REED Online</em>, <a href="https://ereed.library.utoronto.ca/records/staff-ridm55010640/">https://ereed.library.utoronto.ca/records/staff-ridm55010640/</a>. Accessed 29 Mar. 2018.</p>
+            
+            <p>The <em>REED Online</em> website and all content provided on it is protected by copyright and other applicable intellectual property and proprietary rights laws.</p>
+            <p>The name <em>REED Online</em> and the associated logos <img src="{$kiln:assets-path}/images/terms-reed-logo-small.png" alt="REED logo" /> and <img src="{$kiln:assets-path}/images/terms-reedonline-logo-small.png" alt="REED Online logo" /> may not be used without permission of the REED project.</p>
+        <br/>
+            <h3>Online Privacy and Data Collection</h3><!--I used h1 and h3 because that's what we do with the HTML for Historical Background and Performance Traditions. But these shouldn't be in a TEI document, right?-->
+        
               <p>We use data gathered by <a href="http://www.google.com/analytics/">Google Analytics</a> to ensure that the site is meeting your
                 needs, and to see where there is room for improvement. All user data that we receive
                 is completely anonymous. However, your domain name or IP address may identify you
@@ -38,7 +55,7 @@
                 out by using this <a href="https://tools.google.com/dlpage/gaoptout">browser
                   extension</a> or setting your browser to private mode.</p>
               <hr/>
-            </div>
+            
           </div>
         </div>
       </div>
