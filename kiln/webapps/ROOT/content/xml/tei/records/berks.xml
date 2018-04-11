@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/.0" xml:base="tei/records/" xml:lang="eng" xml:id="berks">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="berks">
         <teiHeader>
                 <fileDesc>
                         <titleStmt>
@@ -5111,8 +5111,7 @@
                                                 </div>
                                         </div>
                                         <div type="endnote">
-                                                <p>‘my lorde of laysyter’ is Robert Dudley, earl of Leicester, the queen’s favourite and an important connection between the Berkshire gentry and the court (see Introduction).
-                                                        Riley has mistaken the sum on f 115 for the
+                                                <p> Riley has mistaken the sum on f 115 for the
                                                   entry on f 114v ('Corporation of Abingdon,' p
                                                   150). In this same year the chamberlains of <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/37701/"
@@ -18000,7 +17999,7 @@ sum total flush right of all other sums. --></ab>
                                                   <cell>iij s. iiij d.</cell>
                                                   <cell rend="right"/>
                                                   </row>
-                                                          <row><note type="foot">In p<ex>ri</ex>mis<gap reason="omitted"/>iiij d.: <hi rend="italic">Entries encompassed by brace pointing to sum total on far right</hi></note>
+                                                  <row>
                                                   <cell/>
                                                   <cell/>
                                                   <cell rend="right">lxx s.</cell>
@@ -21849,6 +21848,7 @@ sum total flush right of all other sums. --></ab>
                                                   vi<ex>delice</ex>t</ab>
 
                                                   <table>
+                                                  <!-- first cell enclosed with brace pointing to the right -->
                                                   <row>
                                                   <cell><rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/61251/"
@@ -21858,7 +21858,7 @@ sum total flush right of all other sums. --></ab>
                                                   type="Person_Commoner">Phillip Shiler</rs><lb/>
                                                   <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/61502/"
-                                                  type="Person_Commoner">Iohn Ierrard</rs></cell><note type="foot">James <gap reason="omitted"/>Ierrard: <hi rend="italic">Encompassed by a brace pointing to the right</hi></note>
+                                                  type="Person_Commoner">Iohn Ierrard</rs></cell>
                                                   <cell>against <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/61413/"
                                                   type="Person_Commoner">Iames Belgrove</rs>/ fore
@@ -21894,8 +21894,9 @@ sum total flush right of all other sums. --></ab>
                                                   <row>
                                                   <cell>Iames Shiler and his boy<lb/> Phillip Shiler
                                                   and his boy<lb/> Iohn Iarrard and his boy<lb/>
-                                                  Iames Belgrove &amp; his boy</cell><note type="foot">Iames <gap reason="omitted"/>boy: <hi rend="italic">Encompassed by brace pointing to the right</hi></note>
-                                                 
+                                                  Iames Belgrove &amp; his boy</cell>
+                                                  <!-- first cell enclosed with brace
+pointing to the right -->
                                                   <cell>eu<ex>er</ex>y of them sh<damage><gap
                                                   unit="chars" extent="3"/></damage><note
                                                   type="foot">sh<damage><gap unit="chars" extent="3"
@@ -21918,9 +21919,10 @@ sum total flush right of all other sums. --></ab>
                                                   <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/61602/"
                                                   type="Person_Commoner">Rich<ex>ard</ex>
-                                                          Burren</rs></cell><note type="foot">W<ex>illia</ex>m <gap reason="omitted"/>Burren: <hi reand="italic">Encompassed by brace pointing to the right</hi></note>
-                                               
-                                                 <cell>And the iiij<hi rend="superscript">or</hi>
+                                                  Burren</rs></cell>
+                                                  <!-- first cell enclosed with brace
+pointing to the right -->
+                                                  <cell>And the iiij<hi rend="superscript">or</hi>
                                                   master<damage><gap unit="chars" extent="1"
                                                   /></damage><lb/> ‸<add place="above">first
                                                   named</add> shall yerely paye to<lb/>
@@ -23241,7 +23243,7 @@ sum total flush right of all other sums. --></ab>
                                                 </div>
                                         </div>
                                         <div type="endnote">
-                                                <p>This entry is an excerpt from the judgment of John Waltham, bishop of Salisbury (1388–95) on William Rammesbury of the parish of Sonning (a village north-east of Reading) for Lollardy. William confessed to impersonating a priest and ‘celebrating’ mass in many churches in the area, mocking the sacrament. For a more detailed discussion of the significance of this judgment see the Introduction.</p>
+                                                <p>This entry is an excerpt from the judgment of <rs ref="http://ereed.library.utoronto.ca/eats/entity/65115/" type="Person_Clergy">John Waltham, bishop of Salisbury</rs> (1388–95) on <rs ref="http://ereed.library.utoronto.ca/eats/entity/75878/" type="Person_Commoner">William Rammesbury</rs> of the parish of <rs ref="http://ereed.library.utoronto.ca/eats/entity/47477/" type="Place_BoroughParish">Sonning</rs> (a village north-east of <rs ref="http://ereed.library.utoronto.ca/eats/entity/46700/" type="Place_BoroughParish">Reading</rs>) for <rs ref="http://ereed.library.utoronto.ca/eats/entity/45652/" type="CrimesMisdemeanors">Lollardy</rs>. William confessed to impersonating a priest and ‘celebrating’ mass in many churches in the area, mocking the sacrament. For a more detailed discussion of the significance of this judgment see the Introduction.</p>
                                         </div>
                                 </body>
                         </text>
