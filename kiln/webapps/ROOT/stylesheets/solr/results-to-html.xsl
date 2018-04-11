@@ -177,7 +177,7 @@
         </a>
       </td>
       <!-- QAZ: Put record_date in an attribute to use for sorting. -->
-      <td class="show-for-medium"><xsl:value-of select="str[@name='record_date_display']" /></td>
+      <td class="show-for-medium" data-order="{arr[@name='record_date']/int[1]}"><xsl:value-of select="str[@name='record_date_display']" /></td>
       <td class="show-for-medium"><xsl:value-of select="str[@name='record_location']" /></td>
       <td class="show-for-medium"><a href="{$result-url}"><xsl:value-of select="str[@name='record_title']" /></a></td>
       <td class="show-for-medium"><xsl:value-of select="str[@name='record_shelfmark']" /></td>
