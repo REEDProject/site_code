@@ -35,7 +35,7 @@
             <kiln:added>
               <xsl:variable name="source" select="substring-after(., '#')" />
               <xsl:for-each select="$context">
-                <xsl:apply-templates select="id($source)" />
+                <xsl:apply-templates select="id($source)" mode="referenced" />
               </xsl:for-each>
             </kiln:added>
           </xsl:when>
@@ -102,7 +102,7 @@
             <kiln:added>
               <xsl:variable name="target" select="substring-after(., '#')" />
               <xsl:for-each select="$context">
-                <xsl:apply-templates select="id($target)" />
+                <xsl:apply-templates select="id($target)" mode="referenced" />
               </xsl:for-each>
             </kiln:added>
           </xsl:when>
@@ -123,6 +123,21 @@
 
   <xsl:template match="@ana" />
   <xsl:template match="@sameAs" />
+
+  <!-- Referenced records just need to be copied across. -->
+  <xsl:template match="tei:text[@type='record']" mode="referenced">
+    <xsl:copy-of select="." />
+  </xsl:template>
+
+  <!-- References to things other than records only need an element
+       carrying the referenced xml:id along with the containing
+       [front|body]/div's xml:id. -->
+  <xsl:template match="tei:*" mode="referenced">
+    <xsl:copy>
+      <xsl:apply-templates select="@xml:id" />
+      <xsl:attribute name="section-id" select="ancestor-or-self::tei:div[local-name(parent::*)=('back', 'front')]/@xml:id" />
+    </xsl:copy>
+  </xsl:template>
 
   <xsl:template match="@*|node()">
     <xsl:copy>
