@@ -53,6 +53,25 @@
     </xsl:copy>
   </xsl:template>
 
+  <!-- Reference pointing to something that is not a record (ie, a
+       'collection part'). -->
+  <xsl:template match="tei:ref[kiln:added/tei:*[normalize-space(@section-id)]]">
+    <xsl:variable name="doc" select="/*/@xml:id" />
+    <xsl:variable name="part-id" select="kiln:added/tei:*/@section-id" />
+    <xsl:variable name="anchor" select="kiln:added/tei:*/@xml:id" />
+    <xsl:copy>
+      <xsl:apply-templates select="@*[not(local-name='target')]" />
+      <xsl:attribute name="target">
+        <xsl:value-of select="kiln:url-for-match('ereed-collection-part', ($doc, $part-id), 0)" />
+        <xsl:if test="$part-id != $anchor">
+          <xsl:text>#</xsl:text>
+          <xsl:value-of select="$anchor" />
+        </xsl:if>
+      </xsl:attribute>
+      <xsl:apply-templates select="node()[local-name()!='added']" />
+    </xsl:copy>
+  </xsl:template>
+
   <xsl:template match="kiln:added/tei:category">
     <xsl:copy-of select="tei:catDesc/node()" />
   </xsl:template>

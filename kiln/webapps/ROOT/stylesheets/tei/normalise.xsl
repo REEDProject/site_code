@@ -40,7 +40,7 @@
   <!-- Expand URLs with a prefix into a full URL. -->
   <xsl:template match="@ana|@ref|@sameAs|@target">
     <xsl:variable name="context" select="parent::*" />
-    <xsl:attribute name="{local-name()}">
+    <xsl:variable name="refs">
       <xsl:for-each select="tokenize(., '\s+')">
         <xsl:choose>
           <xsl:when test="matches(., $prefixes)">
@@ -56,8 +56,10 @@
             <xsl:value-of select="." />
           </xsl:otherwise>
         </xsl:choose>
+        <xsl:text> </xsl:text>
       </xsl:for-each>
-    </xsl:attribute>
+    </xsl:variable>
+    <xsl:attribute name="{local-name()}" select="normalize-space($refs)" />
   </xsl:template>
 
   <xsl:template match="@*|node()">
