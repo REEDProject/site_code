@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="berks">
+<TEI xmlns="http://www.tei-c.org/ns/.0" xml:base="tei/records/" xml:lang="eng" xml:id="berks">
         <teiHeader>
                 <fileDesc>
                         <titleStmt>
@@ -17999,7 +17999,7 @@ sum total flush right of all other sums. --></ab>
                                                   <cell>iij s. iiij d.</cell>
                                                   <cell rend="right"/>
                                                   </row>
-                                                  <row>
+                                                          <row><note type="foot">In p<ex>ri</ex>mis<gap reason="omitted"/>iiij d.: <hi rend="italic">Entries encompassed by brace pointing to sum total on far right</hi></note>
                                                   <cell/>
                                                   <cell/>
                                                   <cell rend="right">lxx s.</cell>
@@ -21848,7 +21848,6 @@ sum total flush right of all other sums. --></ab>
                                                   vi<ex>delice</ex>t</ab>
 
                                                   <table>
-                                                  <!-- first cell enclosed with brace pointing to the right -->
                                                   <row>
                                                   <cell><rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/61251/"
@@ -21858,7 +21857,7 @@ sum total flush right of all other sums. --></ab>
                                                   type="Person_Commoner">Phillip Shiler</rs><lb/>
                                                   <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/61502/"
-                                                  type="Person_Commoner">Iohn Ierrard</rs></cell>
+                                                  type="Person_Commoner">Iohn Ierrard</rs></cell><note type="foot">James <gap reason="omitted"/>Ierrard: <hi rend="italic">Encompassed by a brace pointing to the right</hi></note>
                                                   <cell>against <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/61413/"
                                                   type="Person_Commoner">Iames Belgrove</rs>/ fore
@@ -21894,9 +21893,8 @@ sum total flush right of all other sums. --></ab>
                                                   <row>
                                                   <cell>Iames Shiler and his boy<lb/> Phillip Shiler
                                                   and his boy<lb/> Iohn Iarrard and his boy<lb/>
-                                                  Iames Belgrove &amp; his boy</cell>
-                                                  <!-- first cell enclosed with brace
-pointing to the right -->
+                                                  Iames Belgrove &amp; his boy</cell><note type="foot">Iames <gap reason="omitted"/>boy: <hi rend="italic">Encompassed by brace pointing to the right</hi></note>
+                                                 
                                                   <cell>eu<ex>er</ex>y of them sh<damage><gap
                                                   unit="chars" extent="3"/></damage><note
                                                   type="foot">sh<damage><gap unit="chars" extent="3"
@@ -21919,10 +21917,9 @@ pointing to the right -->
                                                   <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/61602/"
                                                   type="Person_Commoner">Rich<ex>ard</ex>
-                                                  Burren</rs></cell>
-                                                  <!-- first cell enclosed with brace
-pointing to the right -->
-                                                  <cell>And the iiij<hi rend="superscript">or</hi>
+                                                          Burren</rs></cell><note type="foot">W<ex>illia</ex>m <gap reason="omitted"/>Burren: <hi reand="italic">Encompassed by brace pointing to the right</hi></note>
+                                               
+                                                 <cell>And the iiij<hi rend="superscript">or</hi>
                                                   master<damage><gap unit="chars" extent="1"
                                                   /></damage><lb/> ‸<add place="above">first
                                                   named</add> shall yerely paye to<lb/>
