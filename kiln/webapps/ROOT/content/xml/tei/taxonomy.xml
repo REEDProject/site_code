@@ -2401,8 +2401,8 @@
                             Laurence.'</ab>
                     </msDesc>
                     <bibl xml:id="BRMPEE">
-                        <title type="edName"><rs ref="http://ereed.library.utoronto.ca/eats/entity/54169/" type="Person_Nobility">Lady Russell's</rs> Entertainment for <rs ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Person_Royalty">Queen Elizabeth</rs> at
-                            Bisham</title>
+                        <title type="edName"><rs ref="http://ereed.library.utoronto.ca/eats/entity/54169/" type="Person_Nobility">Lady Russell's</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/40416/" type="Drama_Type">Entertainment</rs> for <rs ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Person_Royalty">Queen Elizabeth</rs> at
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/71569/" type="Place_BoroughParish">Bisham</rs></title>
                         <note type="techDesc"><p><title type="sourceName">SPEECHES | DELIVERED TO |
                                     HER MAIESTIE THIS | LAST PROGRESSE, AT THE | Right Honorable the
                                     Lady R<hi rend="smallcaps">vssels</hi>, at | Bissam, the Right
@@ -2434,7 +2434,7 @@
                             <settlement>Reading</settlement>
                             <repository sameAs="#BRO"/>
                             <idno type="shelfmark">D/P 78/5/1</idno>
-                            <msName>St Mary's Churchwardens' Accounts</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/47389/" type="Place_Feature">St Mary's</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs> Accounts</msName>
                         </msIdentifier>
                         <ab type="edDesc">This book is not only an account book. The manuscript is
                             extensively damaged with leaves now missing. It was paginated in ink
@@ -2452,7 +2452,7 @@
                             <settlement>Chippenham</settlement>
                             <repository sameAs="#wiltshire-swindon-archives"/>
                             <idno type="shelfmark">D1/42/10</idno>
-                            <msName>Bishop's Act Book</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/3558/" type="Collective_ClergyAndChurchwardens">Bishop's</rs> Act Book</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>November 1587–June 1589</date>; English and Latin;
                             paper; 58 leaves; 312mm x 215mm; modern foliation; first 5 folios
@@ -2465,7 +2465,7 @@
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
                             <idno type="shelfmark">SP 16/260</idno>
-                            <msName>Examination of Thomas Hellyar, Gardener and Minstrel</msName>
+                            <msName>Examination of <rs ref="http://ereed.library.utoronto.ca/eats/entity/51324/" type="Person_Commoner">Thomas Hellyar</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/76258/" type="Collective_Occupation">Gardener</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type">Minstrel</rs></msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>20 February 1633/4</date>; English; paper;
                             bifolium; 350mm x 195mm; repaired; originally folded twice. Now mounted
@@ -2495,13 +2495,13 @@
                             <settlement>Oxford</settlement>
                             <repository sameAs="#Bodl."/>
                             <idno type="shelfmark">Ashmole 1126</idno>
-                            <msName>'Ashmole's Antiquities of Berkshire' (A)</msName>
+                            <msName>'<rs ref="http://ereed.library.utoronto.ca/eats/entity/70393/" type="Person_Commoner">Ashmole's</rs> Antiquities of <rs ref="http://ereed.library.utoronto.ca/eats/entity/1751/" type="Place_County">Berkshire</rs>' (A)</msName>
                         </msIdentifier>
-                        <ab type="edDesc">Elias Ashmole (1617–92) was appointed Windsor Herald in
-                            1660 and, as he records, 'had Henry <hi rend="smallcaps">viii</hi>
+                        <ab type="edDesc"><rs ref="http://ereed.library.utoronto.ca/eats/entity/70393/" type="Person_Commoner">Elias Ashmole</rs> (1617–92) was appointed Windsor Herald in
+                            1660 and, as he records, 'had <rs ref="http://ereed.library.utoronto.ca/eats/entity/43591/" type="Person_Royalty">Henry <hi rend="smallcaps">viii</hi></rs>
                             closet assigned for my use.' During the twelve years until his
                             retirement from the post in 1672, Ashmole compiled this book of excerpts
-                            from Windsor material dated 1474–1659. It was used as the source of his
+                            from <rs ref="http://ereed.library.utoronto.ca/eats/entity/38787/" type="Place_BoroughParish">Windsor</rs> material dated 1474–1659. It was used as the source of his
                             posthumously published <title>Antiquities of
                             Berkshire</title>.<lb/></ab>
                         <ab type="techDesc"><date>1660–72</date>; English and Latin; paper; ii + 247
@@ -2535,7 +2535,7 @@
                             <settlement>Reading</settlement>
                             <repository sameAs="#BRO"/>
                             <idno type="shelfmark">D/P 130/5/1A</idno>
-                            <msName>St Mary's Churchwardens' Accounts</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/47657/" type="Place_Feature">St Mary's</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs> Accounts</msName>
                         </msIdentifier>
                         <ab type="edDesc">This book also contains the accounts of the almshouse. The
                             accounts were rendered on Low Sunday.</ab>
@@ -2551,14 +2551,14 @@
                             <settlement>Oxford</settlement>
                             <repository sameAs="#Bodl."/>
                             <idno type="shelfmark">MS. Top. Berks c.44</idno>
-                            <msName>St Peter and St Paul's Churchwardens' Accounts</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/47290/" type="Place_Feature">St Peter and St Paul's</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs> Accounts</msName>
                         </msIdentifier>
                         <ab type="edDesc">The rendering dates of the accounts are not tied to feast
                             days. Before 1600 they were rendered mostly in April but in the
                             seventeenth century they were sometimes rendered later in the year. Four
-                            churchwardens were elected each year – two from Wantage and one each
-                            from the village of Groves and the combined communities of Charlton and
-                            (West) Locking. The date when the new wardens were elected and the date
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">churchwardens</rs> were elected each year – two from <rs ref="http://ereed.library.utoronto.ca/eats/entity/47268/" type="Place_BoroughParish">Wantage</rs> and one each
+                            from the village of <rs ref="http://ereed.library.utoronto.ca/eats/entity/74602/" type="Place_BoroughParish">Groves</rs> and the combined communities of <rs ref="http://ereed.library.utoronto.ca/eats/entity/74625/" type="Place_BoroughParish">Charlton</rs> and
+                            (West) <rs ref="http://ereed.library.utoronto.ca/eats/entity/74648/" type="Place_BoroughParish">Locking</rs>. The date when the new wardens were elected and the date
                             when they received the accounts for the preceding year from the old
                             wardens is often not the same, so it is not always possible to provide
                             exact accounting years. The dates of the election of the chuchwardens
@@ -2618,7 +2618,7 @@
                             <settlement>Reading</settlement>
                             <repository sameAs="#BRO"/>
                             <idno type="shelfmark">D/P 96/5/1</idno>
-                            <msName>St Giles' Churchwardens' Accounts</msName>
+                            <msName>St Giles' <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs> Accounts</msName>
                         </msIdentifier>
                         <ab type="edDesc">These accounts begin with an accounting year based on
                             Easter. The first three accounts run from Good Friday to Good Friday.
@@ -2651,7 +2651,7 @@
                             <settlement>Reading</settlement>
                             <repository sameAs="#BRO"/>
                             <idno type="shelfmark">D/XP 149/1/1</idno>
-                            <msName>St John the Baptist's Churchwardens' Accounts</msName>
+                            <msName>St John the Baptist's <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs> Accounts</msName>
                         </msIdentifier>
                         <ab type="edDesc">This volume was used by Elias Ashmole for his antiquarian
                             work but then was lost. At the beginning of research for this
@@ -2674,7 +2674,7 @@
                             <settlement>Reading</settlement>
                             <repository sameAs="#BRO"/>
                             <idno type="shelfmark">D/P 35/5/1</idno>
-                            <msName>St Mary's Churchwardens' Accounts</msName>
+                            <msName>St Mary's <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs> Accounts</msName>
                         </msIdentifier>
                         <ab type="edDesc">The normal accounting year was from Low Sunday (the first
                             Sunday after Easter) to Low Sunday. The book served the parish for many
@@ -2690,7 +2690,7 @@
                             <settlement>Reading</settlement>
                             <repository sameAs="#BRO"/>
                             <idno type="shelfmark">D/P 98/5/1</idno>
-                            <msName>St Mary's Churchwardens' Accounts</msName>
+                            <msName>St Mary's <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs> Accounts</msName>
                         </msIdentifier>
                         <ab type="edDesc">The yearly accounts, in our period rendered on Good
                             Friday, begin on p 33 with the accounts for 1555–6. The accounts to 1675
@@ -2759,7 +2759,7 @@
                             <settlement>Reading</settlement>
                             <repository sameAs="#BRO"/>
                             <idno type="shelfmark">D/P 23/5/1</idno>
-                            <msName>St Michael's Churchwardens' Accounts</msName>
+                            <msName>St Michael's <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs> Accounts</msName>
                         </msIdentifier>
                         <ab type="edDesc">This account book is haphazardly kept. No accounting years
                             are given.</ab>
@@ -2773,7 +2773,7 @@
                             <settlement>Reading</settlement>
                             <repository sameAs="#BRO"/>
                             <idno type="shelfmark">D/P 8/5/1</idno>
-                            <msName>St Clements' Churchwardens' Accounts</msName>
+                            <msName>St Clements' <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs> Accounts</msName>
                         </msIdentifier>
                         <ab type="edDesc">The accounting year was from Easter to Easter.</ab>
                         <ab type="techDesc"><date>1611–1888</date>; English; paper; ii + 137; 2
@@ -3047,7 +3047,7 @@
                             Berks | c. 58.'</ab>
                     </msDesc>
                     <bibl xml:id="BRSHCC">
-                        <title type="edName">St Helen's Churchwardens' Accounts (A)</title>
+                        <title type="edName">St Helen's <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs> Accounts (A)</title>
                         <note type="edDesc"><p>The records were lost some time after their
                                 publication in the first issue of <title>Archaeologia</title> in
                                 1770.</p></note>
@@ -3061,7 +3061,7 @@
                             <settlement>Chippenham</settlement>
                             <repository sameAs="#wiltshire-swindon-archives"/>
                             <idno type="shelfmark">D5/28/4 [sheet 9]</idno>
-                            <msName>Churchwardens' Presentments</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs> Presentments</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1576</date>; English; paper; single sheet; 308mm x
                             200mm; numbered 9 in the group of 86 presentments; crumpled in top right
@@ -3157,7 +3157,7 @@
                             <settlement>Reading</settlement>
                             <repository sameAs="#BRO"/>
                             <idno type="shelfmark">D/P 118/5/1</idno>
-                            <msName>St Deny's Churchwardens' Accounts</msName>
+                            <msName>St Deny's <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs> Accounts</msName>
                         </msIdentifier>
                         <ab type="edDesc">This is a very tidy and well-kept book. On the end-papers
                             are various handwritten notes about the church and a printed version of
@@ -3285,7 +3285,7 @@
                             <settlement>Chippenham</settlement>
                             <repository sameAs="#wiltshire-swindon-archives"/>
                             <idno type="shelfmark">D5/28/4 [sheet 4]</idno>
-                            <msName>Churchwardens' Presentments</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs> Presentments</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1576</date>; English; paper; single sheet; 320mm x
                             214mm; numbered 4 in the group of 86 presentments; tattered top and
