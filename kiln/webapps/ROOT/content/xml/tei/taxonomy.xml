@@ -2378,9 +2378,9 @@
                             <settlement>Reading</settlement>
                             <repository sameAs="#BRO"/>
                             <idno type="shelfmark">D/P 97/5/2</idno>
-                            <msName>St Laurence's Churchwardens' Accounts</msName>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/46722/" type="Place_Feature">St Laurence's</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs> Accounts</msName>
                         </msIdentifier>
-                        <ab type="edDesc">The churchwardens rendered their accounts on the feast of
+                        <ab type="edDesc">The <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">churchwardens</rs> rendered their accounts on the feast of
                             the Annunciation (25 March) until 1516 when they adopted the
                             Michaelmas–Michaelmas pattern rendering their accounts on 29
                             September.</ab>
@@ -2392,7 +2392,7 @@
                             Laurence.'</ab>
                     </msDesc>
                     <bibl xml:id="BRMPEE">
-                        <title type="edName">Lady Russell's Entertainment for Queen Elizabeth at
+                        <title type="edName"><rs ref="http://ereed.library.utoronto.ca/eats/entity/54169/" type="Person_Nobility">Lady Russell's</rs> Entertainment for <rs ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Person_Royalty">Queen Elizabeth</rs> at
                             Bisham</title>
                         <note type="techDesc"><p><title type="sourceName">SPEECHES | DELIVERED TO |
                                     HER MAIESTIE THIS | LAST PROGRESSE, AT THE | Right Honorable the
