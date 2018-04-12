@@ -170,8 +170,19 @@
     </xsl:for-each>
   </xsl:template>
 
-  <xsl:template match="node()" mode="free-text">
-    <xsl:apply-templates />
+  <!-- Do not index material brought in about the repository etc of a
+       record. -->
+  <xsl:template match="tei:body/tei:head/tei:idno" mode="free-text" />
+  <xsl:template match="tei:body/tei:head/tei:p" mode="free-text" />
+  <xsl:template match="tei:index[@indexName='record_type']" mode="free-text" />
+  <xsl:template match="tei:body/tei:head/tei:repository" mode="free-text" />
+  <xsl:template match="tei:body/tei:head/tei:settlement" mode="free-text" />
+  <xsl:template match="tei:body/tei:head/tei:span[@type='shelfmark']"
+                mode="free-text" />
+  <xsl:template match="tei:body/tei:head/tei:title" mode="free-text" />
+
+  <xsl:template match="*" mode="free-text">
+    <xsl:apply-templates mode="free-text" />
   </xsl:template>
 
 </xsl:stylesheet>
