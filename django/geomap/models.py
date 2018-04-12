@@ -14,6 +14,9 @@ class PatronsPlaceType(models.Model):
     class Meta:
         verbose_name = 'P&P Place Type'
 
+    def natural_key(self):
+        return self.name
+
     def __str__(self):
         return self.name
 

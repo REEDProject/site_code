@@ -65,7 +65,7 @@ def place_detail(request, pk):
 
 
 def _serialise_as_geojson(queryset):
-    geojson = serialize('geojson', queryset)
+    geojson = serialize('geojson', queryset, use_natural_foreign_keys=True)
     return HttpResponse(geojson, content_type='application/json')
 
 
@@ -77,10 +77,12 @@ def serialise_all_with_placeholders(request):
     try:
         points = Place.objects.extra(
             where=["GeometryType(coordinates) = 'POINT'"])
-        points_geojson = json.loads(serialize('geojson', points))
+        points_geojson = json.loads(serialize('geojson', points,
+                                              use_natural_foreign_keys=True))
         regions = Place.objects.extra(
             where=["GeometryType(coordinates) != 'POINT'"])
-        regions_geojson = json.loads(serialize('geojson', regions))
+        regions_geojson = json.loads(serialize('geojson', regions,
+                                               use_natural_foreign_keys=True))
         xml = _assemble_xml(points_geojson, regions_geojson)
         archive = io.BytesIO()
         with zipfile.ZipFile(archive, 'w') as zip_file:

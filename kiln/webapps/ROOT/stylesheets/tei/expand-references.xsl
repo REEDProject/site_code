@@ -71,7 +71,7 @@
     </xsl:copy>
   </xsl:template>
 
-  <xsl:template match="tei:*[@ana]">
+  <xsl:template match="tei:*[@ana]" mode="#default #referenced-record">
     <xsl:for-each select="tokenize(@ana, '\s+')">
       <xsl:call-template name="make-xinclude">
         <xsl:with-param name="url" select="." />
@@ -124,9 +124,25 @@
   <xsl:template match="@ana" />
   <xsl:template match="@sameAs" />
 
-  <!-- Referenced records just need to be copied across. -->
+  <!-- Referenced records just need the tei:body/tei:head to be copied
+       across. We also need to expand the tei:seg in the tei:head in
+       order to get the title.
+
+       We want to avoid potential infinite loops, where one record
+       references a second record which in turn references the
+       first. -->
   <xsl:template match="tei:text[@type='record']" mode="referenced">
-    <xsl:copy-of select="." />
+    <xsl:copy>
+      <xsl:apply-templates mode="referenced-record" select="@*|node()" />
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match="tei:div" mode="referenced-record" />
+
+  <xsl:template match="@*|node()" mode="referenced-record">
+    <xsl:copy>
+      <xsl:apply-templates select="@*|node()" />
+    </xsl:copy>
   </xsl:template>
 
   <!-- References to things other than records only need an element
