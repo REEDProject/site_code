@@ -4,6 +4,8 @@
   <fq>document_type:record</fq>
   <q type="default">*</q>
   <facet>true</facet>
+  <!-- The order of the facet.field elements determines the order of
+       display (within categories defined in templates/search.xml. -->
   <facet.field>facet_locations_country</facet.field>
   <facet.field>facet_locations_diocese</facet.field>
   <facet.field>facet_locations_county</facet.field>
@@ -14,10 +16,10 @@
   <facet.field>facet_people_named</facet.field>
   <facet.field>facet_people_gender</facet.field>
   <facet.field>facet_people_status</facet.field>
+  <facet.field>facet_collectives_clergy</facet.field>
+  <facet.field>facet_collectives_occupation</facet.field>
   <facet.field>facet_collectives_guild_occupational</facet.field>
   <facet.field>facet_collectives_guild_religious</facet.field>
-  <facet.field>facet_collectives_occupation</facet.field>
-  <facet.field>facet_collectives_clergy</facet.field>
   <facet.field>facet_entertainers_type</facet.field>
   <facet.field>facet_entertainers_patronised</facet.field>
   <facet.field>facet_entertainers_status</facet.field>
