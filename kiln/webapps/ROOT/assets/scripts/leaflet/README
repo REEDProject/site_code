@@ -1,0 +1,53 @@
+Customisations to MarkerCluster plugin for REED
+
+* Reduce size of clusters/icons
+
+* Change distinct colours for size of cluster to shades of red because
+Byron thinks that's better for quickly seeing the difference between a
+cluster of two markers and a cluster of 150.
+
+
+In leaflet.markercluster.js:
+
+* Change maxClusterRadius:
+
+    options: {
+      maxClusterRadius: 20
+    }
+
+* Change size of icon:
+
+    return new L.DivIcon({ html: '<div><span>' + childCount + '</span></div>', className: 'marker-cluster' + c, iconSize: new L.Point(30, 30) });
+
+
+In MarkerClusterDefault.css:
+
+* Change colours:
+
+    .marker-cluster-small {
+      background-color: rgba(235, 143, 143, 0.5);
+    }
+    .marker-cluster-small div {
+      background-color: rgba(227, 100, 100, 0.7);
+    }
+    .marker-cluster-medium {
+      background-color: rgba(231, 105, 113, 0.5);
+    }
+    .marker-cluster-medium div {
+      background-color: rgba(227, 51, 65, 0.7);
+    }
+    .marker-cluster-large {
+      background-color: rgba(253, 156, 115, 0.4);
+    }
+
+* Change size of cluster symbols:
+
+    .marker-cluster div {
+      width: 20px;
+      height: 20px;
+      border-radius: 8px;
+      font: 10px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    }
+    .marker-cluster span {
+      line-height: 20px;
+    }

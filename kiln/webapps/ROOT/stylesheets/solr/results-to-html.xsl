@@ -100,6 +100,12 @@
   <xsl:template match="lst[@name='facet_fields']/lst/@name"
                 mode="search-results">
     <xsl:choose>
+      <xsl:when test=". = 'facet_collectives_guild_occupational'">
+        <xsl:text>Occupational Guild</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_collectives_guild_religious'">
+        <xsl:text>Religious Guild</xsl:text>
+      </xsl:when>
       <xsl:when test=". = 'facet_entertainers_patronised'">
         <xsl:text>Patronized</xsl:text>
       </xsl:when>
@@ -171,7 +177,7 @@
         </a>
       </td>
       <!-- QAZ: Put record_date in an attribute to use for sorting. -->
-      <td class="show-for-medium"><xsl:value-of select="str[@name='record_date_display']" /></td>
+      <td class="show-for-medium" data-order="{arr[@name='record_date']/int[1]}"><xsl:value-of select="str[@name='record_date_display']" /></td>
       <td class="show-for-medium"><xsl:value-of select="str[@name='record_location']" /></td>
       <td class="show-for-medium"><a href="{$result-url}"><xsl:value-of select="str[@name='record_title']" /></a></td>
       <td class="show-for-medium"><xsl:value-of select="str[@name='record_shelfmark']" /></td>

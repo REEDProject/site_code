@@ -130,6 +130,8 @@ urlpatterns += [
         name='eats-script-add'),
     url(r'^administer/script/(?P<topic_id>\d+)/$', admin.topic_change,
         script_data, name='eats-script-change'),
+    url(r'^administer/unnamed_entities/$', admin.list_unnamed_entities,
+        name='eats-unnamed-entities'),
     url(r'^administer/user/$', admin.user_list, name='eats-user-list'),
     url(r'^administer/user/(?P<eats_user_id>\d+)/$', admin.user_change,
         name='eats-user-change'),

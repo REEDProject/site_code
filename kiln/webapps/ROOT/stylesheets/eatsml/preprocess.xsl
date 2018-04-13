@@ -55,7 +55,7 @@
   <xsl:variable name="household_entity_type" select="'entity_type-547'" />
   <xsl:variable name="religious_house_entity_type" select="'entity_type-551'" />
   <xsl:variable name="troupe_entity_type" select="'entity_type-12619'" />
-  <xsl:variable name="gis_base_url" select="'https://ereed.library.utoronto.ca/gis/place/'" />
+  <xsl:variable name="gis_base_url" select="'https://ereed.library.utoronto.ca/geomap/places/'" />
   <xsl:variable name="show_containing" select="($feature_entity_type, guild_entity_type, $borough_entity_type, $church_entity_type, $county_entity_type, $household_entity_type, $religious_house_entity_type)" />
   <xsl:variable name="calendar_entity_types" select="('entity_type-4857', 'entity_type-4855')" />
 
@@ -221,6 +221,7 @@
     <xsl:param name="entity_id" />
     <xsl:variable name="relationship" select="id(@entity_relationship_type)" />
     <relationship>
+      <xsl:copy-of select="@certainty" />
       <name>
         <xsl:choose>
           <xsl:when test="@domain_entity = $entity_id">
@@ -279,10 +280,10 @@
 
   <xsl:template match="eats:subject_identifier[starts-with(., $gis_base_url)]">
     <xsl:variable name="id" select="substring-before(substring-after(., $gis_base_url), '/')" />
-    <xsl:variable name="geojson" select="id($id)" />
+    <xsl:variable name="geojson" select="id(concat('id-', $id))" />
     <xsl:choose>
       <xsl:when test="$geojson">
-        <geojson xml:id="{$id}">
+        <geojson idno="{$id}">
           <xsl:copy-of select="$geojson/@type" />
           <xsl:apply-templates mode="geojson" select="$geojson" />
         </geojson>

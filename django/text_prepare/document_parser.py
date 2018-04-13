@@ -401,13 +401,13 @@ class DocumentParser:
         ptype = ''
         if data in ('f', 'ff'):
             ptype = 'folio'
-        elif data == 'mb':
+        elif data in ('mb', 'mbs'):
             ptype = 'membrane'
-        elif data == 'p':
+        elif data in ('p', 'pp'):
             ptype = 'page'
-        elif data == 'sheet':
+        elif data in ('sheet', 'sheets'):
             ptype = 'sheet'
-        elif data == 'sig':
+        elif data in ('sig', 'sigs'):
             ptype = 'signature'
         return ptype
 
@@ -448,10 +448,9 @@ class DocumentParser:
         return ['<hi rend="bold_italic">', ''.join(toks[0]), '</hi>']
 
     def _pa_capitulum(self, s, loc, toks):
-        # Black Leftwards Bullet is not the correct character, but
-        # according to the Fortune white paper it is "as close as we can
-        # get for now".
-        return ['\N{BLACK LEFTWARDS BULLET}']
+        # The name CAPITULUM is not recognised in Python 3.4, causing
+        # a syntax error of all things.
+        return ['\u2e3f']
 
     def _pa_caret(self, s, loc, toks):
         return ['\N{CARET}']

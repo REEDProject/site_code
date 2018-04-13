@@ -85,7 +85,7 @@
     <xsl:text>...</xsl:text>
   </xsl:template>
 
-  <xsl:template match="tei:gram" mode="#default group">
+  <xsl:template match="tei:gram">
     <i>
       <xsl:apply-templates />
     </i>
@@ -229,6 +229,20 @@
 
   <xsl:template match="tei:div/tei:pb" />
 
+  <xsl:template match="tei:ptr[@target]">
+    <a href="{@target}">
+      <xsl:apply-templates select="@*|node()" />
+    </a>
+  </xsl:template>
+
+  <xsl:template match="tei:quote[@source]">
+    <a href="{@source}">
+      <q cite="{@source}">
+        <xsl:apply-templates select="@*|node()" />
+      </q>
+    </a>
+  </xsl:template>
+
   <xsl:template match="tei:ref[not(@target)]">
     <xsl:apply-templates />
   </xsl:template>
@@ -250,12 +264,20 @@
     </a>
   </xsl:template>
 
+  <xsl:template match="tei:seg[@type='signed']">
+    <span>
+      <xsl:apply-templates select="@*" />
+      <xsl:call-template name="tei-assign-classes" />
+      <i>(signed)</i>
+      <xsl:text> </xsl:text>
+      <xsl:apply-templates select="node()" />
+    </span>
+  </xsl:template>
+
   <xsl:template match="tei:sense" mode="group">
-    <b class="link-to-instance">
-      <xsl:apply-templates select="preceding-sibling::tei:form[1]/tei:orth" />
-    </b>
-    <xsl:text> </xsl:text>
-    <xsl:apply-templates mode="group" select="preceding::tei:gram[1]" />
+    <span class="link-to-instance">
+      <xsl:apply-templates select="preceding-sibling::tei:form[1]" />
+    </span>
     <xsl:text> </xsl:text>
     <xsl:apply-templates select="node()" />
   </xsl:template>
@@ -289,10 +311,29 @@
     </li>
   </xsl:template>
 
-  <xsl:template match="tei:ab//tei:title|tei:p//tei:title">
+  <xsl:template match="tei:ab//tei:title|tei:bibl//tei:title|tei:p//tei:title">
     <i>
       <xsl:apply-templates select="@*|node()" />
     </i>
+  </xsl:template>
+
+  <xsl:template match="tei:quote">
+    <xsl:choose>
+      <xsl:when test=".//tei:ab | .//tei:p | .//tei:list | .//tei:table | .//tei:lg | .//tei:floatingText">
+        <blockquote>
+          <xsl:apply-templates select="@*|node()" />
+        </blockquote>
+      </xsl:when>
+      <xsl:otherwise>
+        <q>
+          <xsl:apply-templates select="@*|node()" />
+        </q>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="@kiln:title">
+    <xsl:attribute name="title" select="." />
   </xsl:template>
 
   <xsl:template name="make-entity-url">

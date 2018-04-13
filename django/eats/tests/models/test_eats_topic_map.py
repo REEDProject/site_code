@@ -108,6 +108,26 @@ class EATSTopicMapTestCase (ModelTestCase):
         self.assertTrue(script in Script.objects.all())
         self.assertEqual(script.get_admin_name(), 'Latin')
 
+    def test_get_unnamed_entities (self):
+        self.assertEqual(Entity.objects.count(), 0)
+        self.assertEqual(self.tm.get_unnamed_entities().count(), 0)
+        language = self.create_language('English', 'en')
+        name_type = self.create_name_type('regular')
+        script = self.create_script('Latin', 'Latn', ' ')
+        self.authority.set_languages([language])
+        self.authority.set_name_types([name_type])
+        self.authority.set_scripts([script])
+        entity1 = self.tm.create_entity(self.authority)
+        self.assertEqual(Entity.objects.count(), 1)
+        self.assertEqual(self.tm.get_unnamed_entities().count(), 1)
+        self.assertEqual(self.tm.get_unnamed_entities()[0], entity1)
+        entity2 = self.tm.create_entity(self.authority)
+        entity2.create_name_property_assertion(
+            self.authority, name_type, language, script, 'Duns Scotus')
+        self.assertEqual(Entity.objects.count(), 2)
+        self.assertEqual(self.tm.get_unnamed_entities().count(), 1)
+        self.assertEqual(self.tm.get_unnamed_entities()[0], entity1)
+
     def test_lookup_entities (self):
         self.assertEqual(Entity.objects.count(), 0)
         self.assertEqual(list(self.tm.lookup_entities('Johann')), [])

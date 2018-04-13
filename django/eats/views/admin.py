@@ -64,6 +64,13 @@ def create_topic_map (request):
                            status)
     return HttpResponseRedirect(redirect_url)
 
+
+@staff_member_required(login_url=settings.LOGIN_URL)
+@add_topic_map
+def list_unnamed_entities (request, topic_map):
+    context_data = {'entities': topic_map.get_unnamed_entities()}
+    return render(request, 'eats/admin/unnamed_entities.html', context_data)
+
 @staff_member_required(login_url=settings.LOGIN_URL)
 @add_topic_map
 def topic_list (request, topic_map, model):

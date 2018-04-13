@@ -85,7 +85,7 @@ It spans multiple paragraphs.!
 
     def test_capitulum(self):
         text = '@Ca'
-        expected = '\N{BLACK LEFTWARDS BULLET}a'
+        expected = '\N{CAPITULUM}a'
         self._check_conversion(text, expected)
 
     def test_caret(self):
@@ -668,10 +668,15 @@ Text
 </div>'''
         all_data = [
             {'head': 'single mb', 'pb': '<pb n="1" type="membrane" />'},
+            {'head': 'mbs 2-4', 'pb': '<pb type="membrane" />'},
             {'head': 'sig B3', 'pb': '<pb n="B3" type="signature" />'},
+            {'head': 'sigs B3-C5', 'pb': '<pb type="signature" />'},
             {'head': 'p 234', 'pb': '<pb n="234" type="page" />'},
+            {'head': 'pp 2-4', 'pb': '<pb type="page" />'},
             {'head': 'ff [1v–2]', 'pb': '<pb type="folio" />'},
             {'head': 'f 46v', 'pb': '<pb n="46v" type="folio" />'},
+            {'head': 'sheet 5', 'pb': '<pb n="5" type="sheet" />'},
+            {'head': 'sheets 6-7', 'pb': '<pb type="sheet" />'},
             {'head': '', 'pb': ''}
         ]
         for data in all_data:
@@ -1037,7 +1042,7 @@ After table text.
 </group>
 </text>
 </TEI>'''
-        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff" xml:lang="eng"><teiHeader><fileDesc><titleStmt/><sourceDesc/></fileDesc><encodingDesc><listPrefixDef><prefixDef ident="taxon" matchPattern="([A-Za-z0-9]+)" replacementPattern="../taxonomy.xml#$1"><p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the taxonomy.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p></prefixDef></listPrefixDef></encodingDesc><profileDesc><langUsage><language ident="eng">English</language><language ident="lat">Latin</language></langUsage></profileDesc></teiHeader>
+        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff" xml:lang="eng"><teiHeader><fileDesc><titleStmt/><sourceDesc/></fileDesc><encodingDesc><listPrefixDef><prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../taxonomy.xml#$1"><p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the taxonomy.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p></prefixDef><prefixDef ident="gloss" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../glossary.xml#$1"><p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the glossary.xml file. For example, <code>gloss:histrio-1</code> dereferences to <code>glossary.xml#histrio-1</code>.</p></prefixDef></listPrefixDef></encodingDesc><profileDesc><langUsage><language ident="eng">English</language><language ident="lat">Latin</language></langUsage></profileDesc></teiHeader>
 <text>
 <group>
 <text type="record" xml:id="staff-ridm4">

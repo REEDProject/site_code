@@ -4,13 +4,13 @@
 .marker-cluster-small div {
 	background-color: rgba(227, 100, 100, 0.7);
 	}
-	
+
 .marker-cluster-medium {
 	background-color: rgba(231, 105, 113, 0.5);
 	}
 .marker-cluster-medium div {
 	background-color: rgba(227, 51, 65, 0.7);
-	}	
+	}
 
 .marker-cluster-large {
 	background-color: rgba(253, 156, 115, 0.4);
@@ -18,7 +18,6 @@
 .marker-cluster-large div {
 	background-color: rgba(241, 128, 23, 0.6);
 	}
-	
 
 	/* IE 6-8 fallback colors */
 .leaflet-oldie .marker-cluster-small {
@@ -41,13 +40,11 @@
 .leaflet-oldie .marker-cluster-large div {
 	background-color: rgb(241, 128, 23);
 }
+
 .marker-cluster {
 	background-clip: padding-box;
 	border-radius: 20px;
 	}
-	
-/* Changed size of cluster symbols below. For cluster background icon change in markercluster-src.js */
-
 .marker-cluster div {
 	width: 20px;
 	height: 20px;
@@ -59,5 +56,5 @@
 	font: 10px "Helvetica Neue", Arial, Helvetica, sans-serif;
 	}
 .marker-cluster span {
-	line-height: 20px;
+	line-height: 30px;
 	}

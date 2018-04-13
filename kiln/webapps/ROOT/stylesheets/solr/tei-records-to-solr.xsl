@@ -67,18 +67,21 @@
           <xsl:text>record</xsl:text>
         </field>
         <field name="document_title">
-          <xsl:value-of select="tei:body/tei:head/tei:date" />
-          <xsl:text>, </xsl:text>
-          <!-- QAZ: Use EATSML name? -->
-          <xsl:value-of select="tei:body/tei:head/tei:rs[1]" />
-          <xsl:if test="tei:body/tei:head/tei:rs[2]">
+          <xsl:variable name="document_title">
+            <xsl:value-of select="tei:body/tei:head/tei:date" />
             <xsl:text>, </xsl:text>
-            <xsl:value-of select="tei:body/tei:head/tei:rs[2]" />
-          </xsl:if>
-          <xsl:text>. </xsl:text>
-          <xsl:value-of select="normalize-space(tei:body/tei:head/tei:title)" />
-          <xsl:text>. </xsl:text>
-          <xsl:value-of select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='text']" />
+            <!-- QAZ: Use EATSML name? -->
+            <xsl:value-of select="tei:body/tei:head/tei:rs[1]" />
+            <xsl:if test="tei:body/tei:head/tei:rs[2]">
+              <xsl:text>, </xsl:text>
+              <xsl:value-of select="tei:body/tei:head/tei:rs[2]" />
+            </xsl:if>
+            <xsl:text>. </xsl:text>
+            <xsl:value-of select="tei:body/tei:head/tei:title" />
+            <xsl:text>. </xsl:text>
+            <xsl:value-of select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='text']" />
+          </xsl:variable>
+          <xsl:value-of select="normalize-space($document_title)" />
         </field>
         <field name="collection_id">
           <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id" />
@@ -167,8 +170,19 @@
     </xsl:for-each>
   </xsl:template>
 
-  <xsl:template match="node()" mode="free-text">
-    <xsl:apply-templates />
+  <!-- Do not index material brought in about the repository etc of a
+       record. -->
+  <xsl:template match="tei:body/tei:head/tei:idno" mode="free-text" />
+  <xsl:template match="tei:body/tei:head/tei:p" mode="free-text" />
+  <xsl:template match="tei:index[@indexName='record_type']" mode="free-text" />
+  <xsl:template match="tei:body/tei:head/tei:repository" mode="free-text" />
+  <xsl:template match="tei:body/tei:head/tei:settlement" mode="free-text" />
+  <xsl:template match="tei:body/tei:head/tei:span[@type='shelfmark']"
+                mode="free-text" />
+  <xsl:template match="tei:body/tei:head/tei:title" mode="free-text" />
+
+  <xsl:template match="*" mode="free-text">
+    <xsl:apply-templates mode="free-text" />
   </xsl:template>
 
 </xsl:stylesheet>

@@ -37,7 +37,7 @@
       <xsl:for-each select="$records">
         <xsl:if test="position() = 1">
           <xsl:text>{"type":"FeatureCollection",
-          "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::3857"}},
+          "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::4326"}},
           "features":[</xsl:text>
         </xsl:if>
         <xsl:variable name="geojson" select="id(str[@name='record_location_id'])/geojson" />
@@ -83,7 +83,7 @@
           <xsl:attribute name="src">
             <xsl:value-of select="$kiln:assets-path" />
             <xsl:text>/scripts/leaflet/regions/</xsl:text>
-            <xsl:value-of select="$entity/geojson/@xml:id" />
+            <xsl:value-of select="$entity/geojson/@idno" />
             <xsl:text>.js</xsl:text>
           </xsl:attribute>
         </script>
@@ -146,6 +146,9 @@
               <xsl:value-of select="name" />
               <xsl:text> </xsl:text>
               <a href="{entity/@url}"><xsl:value-of select="entity" /></a>
+              <xsl:if test="@certainty='none'">
+                <xsl:text> (uncertain)</xsl:text>
+              </xsl:if>
             </td>
           </tr>
         </xsl:for-each>

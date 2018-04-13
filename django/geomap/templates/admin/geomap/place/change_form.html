@@ -14,6 +14,6 @@ var geoData = {{ geodata }};
 {% block after_related_objects %}
 {{ block.super }}
 {% if change %}
-<p>Reference URL: {{ original.canonical_url }}</p>
+<p>Canonical URL: {{ original.canonical_url }}</p>
 {% endif %}
 {% endblock %}
