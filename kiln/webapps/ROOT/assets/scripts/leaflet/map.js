@@ -4,7 +4,7 @@ function fitBounds(map) {
     if (source_region_geojson.length > 0) {
         map.fitBounds(region_geoJsonLayer.getBounds());
     } else if (related_location_geojson.length > 0) {
-        map.fitBounds(related_markers.getBounds(), {maxZoom: 12});
+        map.fitBounds(related_geoJsonLayer.getBounds(), {maxZoom: 12});
     }
 }
 
@@ -15,9 +15,6 @@ function getRelatedPopupContent(feature) {
         '">' + feature.properties.eats_name + '</a><br>Record: <a href="' +
         feature.properties.record_url + '">' + feature.properties.record_title
         + '</a>';
-    if (feature.properties.LOC_NAME != feature.properties.LABELS) {
-        content = 'Site: ' + feature.properties.LABELS + '<br>' + content;
-    }
     return content;
 }
 
@@ -162,9 +159,10 @@ var region_geoJsonLayer = L.Proj.geoJson(null, {
     },
     onEachFeature: function(feature, layer) {
         var popupContent;
-        if (feature.properties && feature.properties.regiontype) {
-            var popupContent = 'Source Region: ' + feature.properties.NAME +
-                '<br>Region Type: ' + feature.properties.regiontype;
+        if (feature.properties && feature.properties.patrons_place_type) {
+            var popupContent = 'Source Region: ' +
+                feature.properties.name +
+                '<br>Region Type: ' + feature.properties.patrons_place_type;
         }
         layer.bindPopup(popupContent);
     }
