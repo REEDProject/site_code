@@ -107,7 +107,7 @@
         <xsl:text>Religious Guild</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_entertainers_patronised'">
-        <xsl:text>Patronized</xsl:text>
+        <xsl:text>Troupe</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_entertainments_custom'">
         <xsl:text>Seasonal Custom</xsl:text>
