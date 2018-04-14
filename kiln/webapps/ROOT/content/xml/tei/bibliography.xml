@@ -13,7 +13,7 @@
                         Canada</orgName></funder>
                     <editor>J. Alan B. Somerset</editor>
                     <respStmt>
-                        <persName>C. Black</persName>
+                        <persName xml:id="CB">C. Black</persName>
                         <orgName>Records of Early English Drama (REED)</orgName>
                         <resp>Project Manager</resp>
                     </respStmt>
@@ -54,11 +54,6 @@
                         <resp>Principal Investigator, SSHRC grant; Director of Research and General Editor</resp>
                     </respStmt>
                     <respStmt>
-                        <persName>Byron Moldofsky</persName>
-                        <orgName>University of Toronto</orgName>
-                        <resp>Cartographer</resp>
-                    </respStmt>
-                    <respStmt>
                         <persName xml:id="JN">Jamie Norrish</persName>
                         <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
                     </respStmt>
@@ -66,14 +61,9 @@
                         <persName>Suzanne Westfall</persName>
                         <resp>Principal Investigator, NEH grant</resp>
                     </respStmt>
-                    <respStmt>
-                        <persName>Abigail Ann Young</persName>
-                        <orgName>Records of Early English Drama (REED)</orgName>
-                        <resp>Paleographer</resp>
-                    </respStmt>
                 </titleStmt>
                 <editionStmt>
-                    <edition>version 1, released <date when-iso="2017-03-03">3 March 2017</date></edition>
+                    <edition>version 2, released <date when-iso="2018-04-16">16 April 2018</date></edition>
                 </editionStmt>
                 <publicationStmt>
                     <authority><orgName>Records of Early English Drama (REED)</orgName>
@@ -86,7 +76,7 @@
                     </authority>
                     <availability>
                         <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
-                            <date>2017</date></p>
+                            <date>2018</date></p>
                         <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed under a
                             Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA
                             4.0) licence.</licence>
@@ -124,8 +114,9 @@
                 </langUsage>
             </profileDesc>
             <revisionDesc>
-                <change></change>
                 <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
+                <change when="2018-04-16" who="#CB">Published version 2 of bibliography.xml</change>
+                <change when="2017-03-03" who="#CB">Published version 1 of bibliography.xml</change>
             </revisionDesc>
         </teiHeader>
 
