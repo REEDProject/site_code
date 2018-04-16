@@ -30,7 +30,7 @@
                         'facet_collectives_guild_religious')" />
   <xsl:variable name="entertainer_facets"
                 select="('facet_entertainers_type',
-                        'facet_entertainers_patronised',
+                        'facet_entertainers_troupe',
                         'facet_entertainers_status')" />
   <xsl:variable name="entertainment_facets"
                 select="('facet_entertainments_type',

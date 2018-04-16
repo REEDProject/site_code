@@ -181,7 +181,7 @@
           name="facet_entertainers_type" required="false" stored="true"
           type="int" />
    <field indexed="true" multiValued="true"
-          name="facet_entertainers_patronised" required="false" stored="true"
+          name="facet_entertainers_troupe" required="false" stored="true"
           type="int" />
    <field indexed="true" multiValued="true"
           name="facet_entertainers_status" required="false" stored="true"

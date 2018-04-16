@@ -210,7 +210,7 @@
     <!-- Troupes: are unpatronised if they do not have a patronised
          relationship. -->
     <xsl:if test=". = $collective_troupe">
-      <field name="facet_entertainers_patronised">
+      <field name="facet_entertainers_troupe">
         <xsl:value-of select="$entity_eats_id" />
       </field>
       <xsl:if test="not(../../eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$patronized][@range_entity=concat('entity-', $entity_eats_id)])">
