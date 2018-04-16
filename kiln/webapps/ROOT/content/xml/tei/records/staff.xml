@@ -139,6 +139,7 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2018-04-16" who="#KC">Changed EATS tag type="Person_Female" to approrpiate social rank. E.g. type="Person_Commoner" or "Person_Nobility"</change>
       <change when="2018-04-16" who="#KC">Changed EATS tag type="Person_Male" to approrpiate social rank. E.g. type="Person_Commoner" or "Person_Nobility"</change>
       <change when="2018-04-16" who="#KC">minor EATS tagging corrections, often related to tagging marginalia that was missed</change>
       <change when="2018-04-10" who="#PG">subhead (1 January 1578–31 December 1580) added to staff-ridm46434528</change>
@@ -677,7 +678,7 @@
             <p>Located on the River Sow, at the geographical centre of Staffordshire twenty-four
               miles north-west of <rs ref="http://ereed.library.utoronto.ca/eats/entity/44381/"
                 type="Place_BoroughParish">Birmingham</rs>, Stafford was founded in 913 by <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/23708/" type="Person_Female"
+                ref="http://ereed.library.utoronto.ca/eats/entity/23708/" type="Person_Royalty"
                 >Æthelflæd</rs>, and Domesday records that the town had 128 occupied houses. It grew
               slowly to the end of our period, and was several times noted to be in economic
               difficulties. In 1540 Stafford was listed ‘among a number of towns where many houses
