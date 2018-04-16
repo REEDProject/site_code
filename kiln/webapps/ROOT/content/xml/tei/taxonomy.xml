@@ -11,9 +11,10 @@
                         States of America</orgName></funder>
                 <funder><orgName>Social Sciences and Humanities Research Council, Ottawa,
                         Canada</orgName></funder>
+                <editor>Alexandra F. Johnston</editor>
                 <editor>J. Alan B. Somerset</editor>
                 <respStmt>
-                    <persName>C. Black</persName>
+                    <persName xml:id="CB">C. Black</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
                     <resp>Project Manager</resp>
                 </respStmt>
@@ -55,11 +56,6 @@
                         Editor</resp>
                 </respStmt>
                 <respStmt>
-                    <persName>Byron Moldofsky</persName>
-                    <orgName>University of Toronto</orgName>
-                    <resp>Cartographer</resp>
-                </respStmt>
-                <respStmt>
                     <persName xml:id="JN">Jamie Norrish</persName>
                     <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
                 </respStmt>
@@ -74,8 +70,8 @@
                 </respStmt>
             </titleStmt>
             <editionStmt>
-                <edition>version 1, released <date when-iso="2017-03-03">3 March
-                    2017</date></edition>
+                <edition>version 2, released <date when-iso="2018-04-16">16 April
+                    2018</date></edition>
             </editionStmt>
             <publicationStmt>
                 <authority><orgName>Records of Early English Drama (REED)</orgName>
@@ -88,7 +84,7 @@
                 </authority>
                 <availability>
                     <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
-                            <date>2017</date></p>
+                            <date>2018</date></p>
                     <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed
                         under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
                         International (CC BY-NC-SA 4.0) licence.</licence>
@@ -300,8 +296,10 @@
         </profileDesc>
         <revisionDesc>
             <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
+            <change when="2018-04-16" who="#CB">Published version 2 of taxonomy.xml</change>
             <change when="2018-02-23" who="#CB">Added all data from Berkshire
                 taxonomy-excerpt.xml</change>
+            <change when="2017-03-03" who="#CB">Published version 1 of taxonomy.xml</change>
         </revisionDesc>
     </teiHeader>
     <text>
@@ -720,8 +718,7 @@
                             <settlement>Lichfield</settlement>
                             <repository sameAs="#lichfield-cathedral-library"/>
                             <idno type="shelfmark">Chapter Act Books No. 3</idno>
-                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/35059/"
-                                    type="Collective_ClergyAndChurchwardens">Dean</rs> and Chapter
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/10928/" type="Collective_ClergyAndChurchwardens">Dean</rs> and Chapter
                                 Act Book</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1490–1523</date>; Latin; parchment and paper; ii
@@ -2557,7 +2554,7 @@
                             days. Before 1600 they were rendered mostly in April but in the
                             seventeenth century they were sometimes rendered later in the year. Four
                             <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">churchwardens</rs> were elected each year – two from <rs ref="http://ereed.library.utoronto.ca/eats/entity/47268/" type="Place_BoroughParish">Wantage</rs> and one each
-                            from the village of <rs ref="http://ereed.library.utoronto.ca/eats/entity/74602/" type="Place_BoroughParish">Groves</rs> and the combined communities of <rs ref="http://ereed.library.utoronto.ca/eats/entity/74625/" type="Place_BoroughParish">Charlton</rs> and
+                            from the village of <rs ref="http://ereed.library.utoronto.ca/eats/entity/74602/" type="Place_BoroughParish">Grove</rs> and the combined communities of <rs ref="http://ereed.library.utoronto.ca/eats/entity/74625/" type="Place_BoroughParish">Charlton</rs> and
                             (West) <rs ref="http://ereed.library.utoronto.ca/eats/entity/74648/" type="Place_BoroughParish">Lockinge</rs>. The date when the new wardens were elected and the date
                             when they received the accounts for the preceding year from the old
                             wardens is often not the same, so it is not always possible to provide
@@ -2960,8 +2957,8 @@
                             <idno type="shelfmark">XV 34 44</idno>
                             <msName>Accounts of <rs ref="http://ereed.library.utoronto.ca/eats/entity/75610/" type="Place_Feature">St George's Chapel</rs></msName>
                         </msIdentifier>
-                        <ab type="edDesc">The early membranes of this document that would have provided the dating information are missing. The year date has been provided by the archivists from contextual evidence. The dates of the accounting year are not provided.</ab>
-                        <ab type="techDesc"><date>1449–50</date>; Latin; parchment; 2 mbs; 295mm x
+                        <ab type="edDesc">The early membranes of this document that would have provided the dates of the accounting year are missing.</ab>
+                        <ab type="techDesc"><date>1451–2</date>; Latin; parchment; 2 mbs; 295mm x
                             140mm; earlier membranes missing; faded, ink has run in places causing
                             obliteration of words, patch at the top edge.</ab>
                     </msDesc>

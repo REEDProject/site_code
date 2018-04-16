@@ -37,7 +37,10 @@ In MarkerClusterDefault.css:
       background-color: rgba(227, 51, 65, 0.7);
     }
     .marker-cluster-large {
-      background-color: rgba(253, 156, 115, 0.4);
+      background-color: rgba(227, 92, 92, 0.5);
+    }
+    .marker-cluster-large div {
+      background-color: rgba(222, 0, 0, 0.7);
     }
 
 * Change size of cluster symbols:

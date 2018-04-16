@@ -51,13 +51,18 @@
   <xsl:variable name="church_entity_type" select="'entity_type-4833'" />
   <xsl:variable name="county_entity_type" select="'entity_type-543'" />
   <xsl:variable name="feature_entity_type" select="'entity_type-21368'" />
-  <xsl:variable name="guild_entity_type" select="'entity_type-517'" />
+  <xsl:variable name="occupational_guild_entity_type"
+                select="'entity_type-48092'" />
+  <xsl:variable name="religious_guild_entity_type"
+                select="'entity_type-48094'" />
   <xsl:variable name="household_entity_type" select="'entity_type-547'" />
   <xsl:variable name="religious_house_entity_type" select="'entity_type-551'" />
   <xsl:variable name="troupe_entity_type" select="'entity_type-12619'" />
   <xsl:variable name="gis_base_url" select="'https://ereed.library.utoronto.ca/geomap/places/'" />
-  <xsl:variable name="show_containing" select="($feature_entity_type, guild_entity_type, $borough_entity_type, $church_entity_type, $county_entity_type, $household_entity_type, $religious_house_entity_type)" />
+  <xsl:variable name="show_containing" select="($feature_entity_type, $occupational_guild_entity_type, $religious_guild_entity_type, $borough_entity_type, $church_entity_type, $county_entity_type, $household_entity_type, $religious_house_entity_type)" />
   <xsl:variable name="calendar_entity_types" select="('entity_type-4857', 'entity_type-4855')" />
+  <xsl:variable name="no_occupation_in_name_types"
+                select="($troupe_entity_type, $occupational_guild_entity_type)" />
 
   <xsl:template match="aggregation">
     <eats:entities>
@@ -164,7 +169,7 @@
           <xsl:apply-templates mode="containing" select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$contains_relationship_type][@domain_entity=$entity_id]" />
         </name_extra>
       </xsl:if>
-      <xsl:if test="not(eats:entity_types/eats:entity_type/@entity_type=$troupe_entity_type)">
+      <xsl:if test="not(eats:entity_types/eats:entity_type/@entity_type=$no_occupation_in_name_types)">
         <xsl:for-each select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$has_occupation_relationship_type][@domain_entity=$entity_id]">
           <name_extra>
             <xsl:apply-templates mode="title" select="." />
