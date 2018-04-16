@@ -139,7 +139,9 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
-      <change when="2018-04-16" who="#KC">minor EATS tagging corrections, often related to tagging marginalia that was missed</change>"
+      <change when="2018-04-16" who="#KC">Changed EATS tag type="Person_Female" to approrpiate social rank. E.g. type="Person_Commoner" or "Person_Nobility"</change>
+      <change when="2018-04-16" who="#KC">Changed EATS tag type="Person_Male" to approrpiate social rank. E.g. type="Person_Commoner" or "Person_Nobility"</change>
+      <change when="2018-04-16" who="#KC">minor EATS tagging corrections, often related to tagging marginalia that was missed</change>
       <change when="2018-04-10" who="#PG">subhead (1 January 1578–31 December 1580) added to staff-ridm46434528</change>
       <change when="2018-04-10" who="#PG">subhead (25 October–25 October) added to staff-ridm55223456</change>
       <change when="2018-04-10" who="#PG">subhead (25 October–25 October) added to staff-ridm55243472</change>
@@ -544,12 +546,12 @@
               type="CrimesMisdemeanors">charivari</rs> at <rs
               ref="http://ereed.library.utoronto.ca/eats/entity/3411/" type="Place_BoroughParish"
               >Burton upon Trent</rs> in 1616, or the continuing troubles with the scofflaw, <rs
-              ref="http://ereed.library.utoronto.ca/eats/entity/8942/" type="Person_Male">Thomas
+              ref="http://ereed.library.utoronto.ca/eats/entity/8942/" type="Person_Commoner">Thomas
               Jacson</rs>, at <rs ref="http://ereed.library.utoronto.ca/eats/entity/3612/"
               type="Place_BoroughParish">Eccleshall</rs> in 1599–1604. A particular favourite is a
             protest at <rs ref="http://ereed.library.utoronto.ca/eats/entity/3684/"
               type="Place_BoroughParish">Kinver</rs> in 1620, where <rs
-              ref="http://ereed.library.utoronto.ca/eats/entity/10814/" type="Person_Male">Richard
+              ref="http://ereed.library.utoronto.ca/eats/entity/10814/" type="Person_Commoner">Richard
               Rice</rs> was cited ‘for fartinge &amp; pissinge in the Church in sermon time &amp;
             gingelinge of <rs
               ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/18451/"
@@ -676,7 +678,7 @@
             <p>Located on the River Sow, at the geographical centre of Staffordshire twenty-four
               miles north-west of <rs ref="http://ereed.library.utoronto.ca/eats/entity/44381/"
                 type="Place_BoroughParish">Birmingham</rs>, Stafford was founded in 913 by <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/23708/" type="Person_Female"
+                ref="http://ereed.library.utoronto.ca/eats/entity/23708/" type="Person_Royalty"
                 >Æthelflæd</rs>, and Domesday records that the town had 128 occupied houses. It grew
               slowly to the end of our period, and was several times noted to be in economic
               difficulties. In 1540 Stafford was listed ‘among a number of towns where many houses
@@ -767,9 +769,9 @@
               records, so one cannot be sure. However, a clue is afforded by a petition to the
               borough <rs ref="http://ereed.library.utoronto.ca/eats/entity/1140/"
                 type="Collective_Occupation">mayor</rs>, <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/19671/" type="Person_Male">Matthew
+                ref="http://ereed.library.utoronto.ca/eats/entity/19671/" type="Person_Commoner">Matthew
                 Cradock</rs>, in 1614. A townsman, <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/20377/" type="Person_Male">William
+                ref="http://ereed.library.utoronto.ca/eats/entity/20377/" type="Person_Commoner">William
                 Rycrofte</rs>, was granted permission to keep one bear, on condition that he hand
               over the bear to the mayor when required. Rycrofte appears a number of times in the
               records in connection with entertainments but is not rewarded for <rs
@@ -1097,9 +1099,9 @@
               type="Place_BoroughParish">Preston</rs>, <rs
               ref="http://ereed.library.utoronto.ca/eats/entity/2057/" type="Place_County"
               >Lancashire</rs> (on James’s journey north) because <rs
-              ref="http://ereed.library.utoronto.ca/eats/entity/19256/" type="Person_Male">Richard
+              ref="http://ereed.library.utoronto.ca/eats/entity/19256/" type="Person_Commoner">Richard
               Dorington</rs> flatly refused to make the trip, and <rs
-              ref="http://ereed.library.utoronto.ca/eats/entity/22359/" type="Person_Male">Francis
+              ref="http://ereed.library.utoronto.ca/eats/entity/22359/" type="Person_Commoner">Francis
               Dorington</rs> demanded to have travelling expense money paid up front. Thwarted of
             his plan to gain experience of a royal welcome to this much larger centre, the mayor had
             to be content to send townsmen to <rs
@@ -1119,7 +1121,7 @@
             whose attempt at a speech was rejected when he presented it the day before the visit
             because, among other things, it was ‘a little too tedious.’ So the speech had to be
             re-written the night before, to <rs
-              ref="http://ereed.library.utoronto.ca/eats/entity/19579/" type="Person_Male">Thomas
+              ref="http://ereed.library.utoronto.ca/eats/entity/19579/" type="Person_Commoner">Thomas
               Worswicke’s</rs> specifications, containing the memorable opening line: ‘Most gracious
               sou<ex>er</ex>aigne vnto the great Comaunder of all king<ex>es</ex>, we bend the knees
             of o<ex>u</ex>r hart<ex>es</ex>….’</p>
@@ -1204,7 +1206,7 @@
           <div>
             <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/4098/"
                 type="Place_Household">Paget of Burton upon Trent and Beaudesert</rs></head>
-            <p><rs ref="http://ereed.library.utoronto.ca/eats/entity/33321/" type="Person_Male"
+            <p><rs ref="http://ereed.library.utoronto.ca/eats/entity/33321/" type="Person_Nobility"
                 >Thomas, 4th Baron Paget</rs> (<hi rend="italic">c</hi> 1544–90), succeeded to the
               family estates on the death of his <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/45148/" type="Person_Nobility"
@@ -1225,7 +1227,7 @@
               difficult to locate the venues for these entertainments as either Burton Manor or
               Beaudesert. A guest at meals (dinner and/or supper) named in the accounts between 2
               August and 15 August 1580 was <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/34466/" type="Person_Male">William
+                ref="http://ereed.library.utoronto.ca/eats/entity/34466/" type="Person_Commoner">William
                 Byrd</rs>, the composer and <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/34508/" type="Entertainer_Type"
                 >lutenist</rs>, whose association with Paget got him into trouble after 1583. In
@@ -15194,10 +15196,10 @@ table. The (blank) above is the second cell of that row -->the
                     type="Entertainer_Type">Piper</rs></note> Nous voulons et vous mandons que des
                 issues de v<ex>ost</ex>re Receite paiez &amp; deliu<ex>er</ex>ez a noz b<ex>ie</ex>n
                 amez <rs ref="http://ereed.library.utoronto.ca/eats/entity/30273/"
-                  type="Person_Male">Henr<ex>i</ex></rs>
+                  type="Person_Commoner">Henr<ex>i</ex></rs>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/" type="Entertainer_Type"
                   >Piper</rs> oct liures et vn denir dest<ex>er</ex>linges, et a <rs
-                  ref="http://ereed.library.utoronto.ca/eats/entity/30299/" type="Person_Male"
+                    ref="http://ereed.library.utoronto.ca/eats/entity/30299/" type="Person_Commoner"
                   >Roger</rs> Piper son compaignon six liures tresze souldz et deux deniers
                   d'est<ex>er</ex>linges, en quelles nous sumes tenuz as eux pour leur gages de
                 guerre de n<ex>ost</ex>re darrier viage es p<ex>ar</ex>ties de Gascoinge, dount ils
@@ -15263,7 +15265,7 @@ table. The (blank) above is the second cell of that row -->the
                   xml:id="rs-2417-1" next="#rs-2417-2"
                   ref="http://ereed.library.utoronto.ca/eats/entity/2417/"
                   type="Place_BoroughParish">le counte</rs><note type="marginal"
-                  place="margin_right"><rs ref="http://ereed.library.utoronto.ca/eats/entity/30452/" type="Person_Male">Tyas</rs></note>
+                    place="margin_right"><rs ref="http://ereed.library.utoronto.ca/eats/entity/30452/" type="Person_Commoner">Tyas</rs></note>
                 <term ref="gloss:deuerwik-1"><rs xml:id="rs-2417-2" prev="#rs-2417-1"
                     ref="http://ereed.library.utoronto.ca/eats/entity/2417/"
                     type="Place_BoroughParish">deu<ex>er</ex>wik</rs></term> ou a son lieutenant
@@ -15459,7 +15461,7 @@ table. The (blank) above is the second cell of that row -->the
                     >Rob<ex>er</ex>t de Morton</rs> n<ex>ost</ex>re Receyuour deinz <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/37891/"
                   type="Place_BoroughParish">lonour de Pykeryinge</rs> ou<note type="marginal"
-                  place="margin_left">p<ex>ur</ex> <rs ref="http://ereed.library.utoronto.ca/eats/entity/30452/" type="Person_Male">Iohan Tyas</rs></note> a son lieutenant illoeques
+                    place="margin_left">p<ex>ur</ex> <rs ref="http://ereed.library.utoronto.ca/eats/entity/30452/" type="Person_Commoner">Iohan Tyas</rs></note> a son lieutenant illoeques
                 saluz Come nous auant n<ex>ost</ex>re passage ore <term ref="gloss:derreinement-1"
                     >derreinem<ex>en</ex>t</term> a la meer vous enuoiasmes q<ex>ue</ex> vous ne
                   <term ref="gloss:deussiez-1">deussiez</term> paier a n<ex>ost</ex>re b<ex>ie</ex>n
@@ -15759,11 +15761,11 @@ table. The (blank) above is the second cell of that row -->the
                   >William de Chuseldon</rs> n<ex>ost</ex>re Receuo<ex>ur</ex> de leycestre &amp;
                   aillo<ex>ur</ex>s saluz Nous vous mandons q<ex>ue</ex> des issues de
                 v<ex>ost</ex>re Receite facez paier facez paier a noz bien amez <rs
-                  ref="http://ereed.library.utoronto.ca/eats/entity/31164/" type="Person_Male"
+                  ref="http://ereed.library.utoronto.ca/eats/entity/31164/" type="Person_Commoner"
                   >Rollekyn</rs>
-                <rs ref="http://ereed.library.utoronto.ca/eats/entity/31202/" type="Person_Male"
+                <rs ref="http://ereed.library.utoronto.ca/eats/entity/31202/" type="Person_Commoner"
                   >Petrekyn</rs>
-                <rs ref="http://ereed.library.utoronto.ca/eats/entity/31240/" type="Person_Male"
+                <rs ref="http://ereed.library.utoronto.ca/eats/entity/31240/" type="Person_Commoner"
                   >henri</rs> &amp; <rs ref="http://ereed.library.utoronto.ca/eats/entity/31278/"
                   type="Person_Commoner">hankyn</rs> noz ministralx le<ex>ur</ex> annueltees destine
                 de seint Michel darein passez Et aussint facez paier a touz noz ministres &amp;
@@ -15875,7 +15877,7 @@ table. The (blank) above is the second cell of that row -->the
                   io<ex>ur</ex> a <rs ref="http://ereed.library.utoronto.ca/eats/entity/37937/"
                   type="Place_BoroughParish">Kenilleworth</rs> vj s. viij d. quatre livres Et as
                 ditz hanekyn et vnsze ministralx de doun n<ex>ost</ex>re tresch<ex>er</ex> Cousin le
-                  <rs ref="http://ereed.library.utoronto.ca/eats/entity/31576/" type="Person_Male"
+                  <rs ref="http://ereed.library.utoronto.ca/eats/entity/31576/" type="Person_Nobility"
                   >Conte de Notyngham</rs> a Kenilleworth meisme le io<ex>ur</ex> vynt soldz Et a
                 troys <rs ref="http://ereed.library.utoronto.ca/eats/entity/37960/"
                   type="Collective_Troupe">ministralx mons<ex>ire</ex> Baudewyn ffreuille</rs> de
@@ -15902,13 +15904,13 @@ table. The (blank) above is the second cell of that row -->the
                     >Rob<ex>er</ex>t de morton</rs> n<ex>ost</ex>re Receuo<ex>ur</ex> de Pontefrect
                 &amp; aillo<ex>ur</ex>s saluz Nous vous mandons<note type="marginal"
                   place="margin_left">Pur <rs
-                    ref="http://ereed.library.utoronto.ca/eats/entity/31769/" type="Person_Male"
+                    ref="http://ereed.library.utoronto.ca/eats/entity/31769/" type="Person_Commoner"
                     >Iohan Tyes</rs> &amp; <rs
-                    ref="http://ereed.library.utoronto.ca/eats/entity/1180/" type="Person_Male"
+                      ref="http://ereed.library.utoronto.ca/eats/entity/1180/" type="Person_Commoner"
                     >piers Cook</rs>
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/1225/"
                     type="Entertainer_Type">Trumpours</rs>.</note> q<ex>ue</ex> des issues de
-                  v<ex>ost</ex>re receite facez paier a noz bienamez valletz <rs ref="http://ereed.library.utoronto.ca/eats/entity/31769/" type="Person_Male">Iohn Tyes</rs> &amp; <rs ref="http://ereed.library.utoronto.ca/eats/entity/1180/" type="Person_Male">Piers
+                v<ex>ost</ex>re receite facez paier a noz bienamez valletz <rs ref="http://ereed.library.utoronto.ca/eats/entity/31769/" type="Person_Commoner">Iohn Tyes</rs> &amp; <rs ref="http://ereed.library.utoronto.ca/eats/entity/1180/" type="Person_Commoner">Piers
                 Cook</rs> noz <rs ref="http://ereed.library.utoronto.ca/eats/entity/1225/" type="Entertainer_Type">Trumpo<ex>ur</ex>s</rs> le<ex>ur</ex>s annueltees queux le<ex>ur</ex>s sont
                   <term ref="gloss:aderer-1">aderer</term> del <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/42598/"
@@ -15942,7 +15944,7 @@ table. The (blank) above is the second cell of that row -->the
                 pees come guerre a terme de sa vie et p<ex>re</ex>ndra le dit Iohan en temps de pees
                 Cent soldz p<ex>ar</ex> an p<ex>ar</ex> le mains de n<ex>ost</ex>re
                   Receiuo<ex>ur</ex><note type="marginal" place="margin_right">Pur <rs
-                    ref="http://ereed.library.utoronto.ca/eats/entity/31126/" type="Person_Male"
+                    ref="http://ereed.library.utoronto.ca/eats/entity/31126/" type="Person_Commoner"
                     >Johan de Bukyngh<ex>a</ex>m</rs>
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/30636/"
                     type="Entertainer_Type">Clarion<ex>er</ex></rs></note> gen<ex>er</ex>al qi
@@ -16052,7 +16054,7 @@ table. The (blank) above is the second cell of that row -->the
               <pb n="29" type="folio"/>
 
               <ab><note type="marginal" place="margin_left">Pur <rs
-                    ref="http://ereed.library.utoronto.ca/eats/entity/31126/" type="Person_Male"
+                ref="http://ereed.library.utoronto.ca/eats/entity/31126/" type="Person_Commoner"
                     >Johan Bukyngh<hi rend="italic">a</hi>m</rs> esq<hi rend="italic"
                   >uier</hi></note></ab>
 
