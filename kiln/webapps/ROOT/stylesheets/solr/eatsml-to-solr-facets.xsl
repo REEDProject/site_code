@@ -117,9 +117,6 @@
     <!-- Patronised entertainers. These are any entity that has a
          $patronised relationship. -->
     <xsl:if test="@entity_relationship_type=$patronized and @range_entity=$entity_id">
-      <field name="facet_entertainers_patronised">
-        <xsl:value-of select="substring-after($entity_id, 'entity-')" />
-      </field>
       <field name="facet_entertainers_status">
         <xsl:text>patronized</xsl:text>
       </field>
@@ -213,6 +210,9 @@
     <!-- Troupes: are unpatronised if they do not have a patronised
          relationship. -->
     <xsl:if test=". = $collective_troupe">
+      <field name="facet_entertainers_patronised">
+        <xsl:value-of select="$entity_eats_id" />
+      </field>
       <xsl:if test="not(../../eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$patronized][@range_entity=concat('entity-', $entity_eats_id)])">
         <field name="facet_entertainers_status">
           <xsl:text>unknown</xsl:text>
