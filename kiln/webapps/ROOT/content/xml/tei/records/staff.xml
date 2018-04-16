@@ -139,6 +139,7 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2018-04-16" who="#KC">minor EATS tagging corrections, often related to tagging marginalia that was missed</change>"
       <change when="2018-04-10" who="#PG">subhead (1 January 1578–31 December 1580) added to staff-ridm46434528</change>
       <change when="2018-04-10" who="#PG">subhead (25 October–25 October) added to staff-ridm55223456</change>
       <change when="2018-04-10" who="#PG">subhead (25 October–25 October) added to staff-ridm55243472</change>
@@ -10824,7 +10825,7 @@ table. The (blank) above is the second cell of that row -->the
                   >le Roy des Ministralx</rs> deinz n<damage><gap unit="chars" extent="2"
                   /></damage><note type="foot">n<damage><gap unit="chars" extent="2"/></damage>: <hi
                     rend="italic">for</hi> nostre<hi rend="italic">; letters lost in
-                  gutter</hi></note> hono<ex>ur</ex> de Tutteby<note type="foot">Tutteby: <hi
+                  gutter</hi></note> <rs ref="http://ereed.library.utoronto.ca/eats/entity/37242/" type="Place_BoroughParish">hono<ex>ur</ex> de Tutteby</rs><note type="foot">Tutteby: <hi
                     rend="italic">for</hi> Tuttebury<hi rend="italic">; abbreviation mark
                     missing</hi></note> qoie est ou q<ex>u</ex>i p<ex>ur</ex> le temps serra
                   p<ex>ur</ex> prendre et arester touz les Ministralx deinz meisme n<ex>ost</ex>re
@@ -12511,7 +12512,7 @@ table. The (blank) above is the second cell of that row -->the
               <ab>Humble shoeth <term ref="gloss:ynto-1">ynto</term> your Highnesse your faithfull
                   subgett<ex>es</ex> and trewe legemen <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/27793/" type="Person_Commoner"
-                  >Roger Dyngley</rs> Maire of your towne of <rs
+                  >Roger Dyngley</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/1140/" type="Collective_Occupation">Maire</rs> of your towne of <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/3936/"
                   type="Place_BoroughParish">walsall</rs> ‸<add place="above">in the <rs
                     ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County"
@@ -12544,9 +12545,9 @@ table. The (blank) above is the second cell of that row -->the
                   ref="http://ereed.library.utoronto.ca/eats/entity/27957/" type="Person_Gentry"
                   >Iohn Beamonde</rs> Squyer <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/28003/" type="Person_Commoner"
-                  >walter leveson</rs> of wolu<ex>er</ex>hampton <rs
+                  >walter leveson</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_BoroughParish">wolu<ex>er</ex>hampton</rs> <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/28048/" type="Person_Commoner"
-                  >Richard ffoxe</rs> prest of the same Towne and on <rs
+                  >Richard ffoxe</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/9186/" type="Collective_ClergyAndChurchwardens">prest</rs> of the same Towne and on <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/28098/" type="Person_Commoner"
                   >Roger Marshall</rs> of <term ref="gloss:weddesbury-1">wedesbury</term>
                 <term ref="gloss:arraysed-1">arreysed</term> and <rs
@@ -15262,7 +15263,7 @@ table. The (blank) above is the second cell of that row -->the
                   xml:id="rs-2417-1" next="#rs-2417-2"
                   ref="http://ereed.library.utoronto.ca/eats/entity/2417/"
                   type="Place_BoroughParish">le counte</rs><note type="marginal"
-                  place="margin_right">Tyas</note>
+                  place="margin_right"><rs ref="http://ereed.library.utoronto.ca/eats/entity/30452/" type="Person_Male">Tyas</rs></note>
                 <term ref="gloss:deuerwik-1"><rs xml:id="rs-2417-2" prev="#rs-2417-1"
                     ref="http://ereed.library.utoronto.ca/eats/entity/2417/"
                     type="Place_BoroughParish">deu<ex>er</ex>wik</rs></term> ou a son lieutenant
@@ -15407,7 +15408,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <gap reason="omitted"/>
 
-              <ab><note type="marginal" place="margin_left">p<ex>ur</ex> minstrals</note></ab>
+              <ab><note type="marginal" place="margin_left">p<ex>ur</ex> <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type">minstrals</rs></note></ab>
 
               <ab><rs ref="http://ereed.library.utoronto.ca/eats/entity/13153/"
                   type="Person_Royalty">Ioh<ex>an</ex></rs> &amp;c a n<ex>ost</ex>re
@@ -15458,7 +15459,7 @@ table. The (blank) above is the second cell of that row -->the
                     >Rob<ex>er</ex>t de Morton</rs> n<ex>ost</ex>re Receyuour deinz <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/37891/"
                   type="Place_BoroughParish">lonour de Pykeryinge</rs> ou<note type="marginal"
-                  place="margin_left">p<ex>ur</ex> Iohan Tyas</note> a son lieutenant illoeques
+                  place="margin_left">p<ex>ur</ex> <rs ref="http://ereed.library.utoronto.ca/eats/entity/30452/" type="Person_Male">Iohan Tyas</rs></note> a son lieutenant illoeques
                 saluz Come nous auant n<ex>ost</ex>re passage ore <term ref="gloss:derreinement-1"
                     >derreinem<ex>en</ex>t</term> a la meer vous enuoiasmes q<ex>ue</ex> vous ne
                   <term ref="gloss:deussiez-1">deussiez</term> paier a n<ex>ost</ex>re b<ex>ie</ex>n
@@ -15907,8 +15908,8 @@ table. The (blank) above is the second cell of that row -->the
                     >piers Cook</rs>
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/1225/"
                     type="Entertainer_Type">Trumpours</rs>.</note> q<ex>ue</ex> des issues de
-                  v<ex>ost</ex>re receite facez paier a noz bienamez valletz Iohn Tyes &amp; Piers
-                Cook noz Trumpo<ex>ur</ex>s le<ex>ur</ex>s annueltees queux le<ex>ur</ex>s sont
+                  v<ex>ost</ex>re receite facez paier a noz bienamez valletz <rs ref="http://ereed.library.utoronto.ca/eats/entity/31769/" type="Person_Male">Iohn Tyes</rs> &amp; <rs ref="http://ereed.library.utoronto.ca/eats/entity/1180/" type="Person_Male">Piers
+                Cook</rs> noz <rs ref="http://ereed.library.utoronto.ca/eats/entity/1225/" type="Entertainer_Type">Trumpo<ex>ur</ex>s</rs> le<ex>ur</ex>s annueltees queux le<ex>ur</ex>s sont
                   <term ref="gloss:aderer-1">aderer</term> del <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/42598/"
                   type="CalendarDay_Liturgical">fest de seint Michel</rs> darren passez Noz autres
@@ -16366,21 +16367,18 @@ table. The (blank) above is the second cell of that row -->the
                   ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type"
                   >ministralles</rs> esteantes illeoqes<note type="marginal" place="margin_left"
                   >touchant la g<ex>r</ex>ande<lb/> Gardrobe<note type="foot">touchant...Gardrobe:
-                      <hi rend="italic">braced, pointing to</hi>Oke</note> Oke</note> meisme le
+                      <hi rend="italic">braced, pointing to</hi> Oke</note> Oke</note> meisme le
                   io<ex>ur</ex> de n<ex>ost</ex>re doun vynt marcs Et as diu<ex>er</ex>ses heraudes
-                esteantz a smethefeld le io<ex>ur</ex> des ioustes illeoqes de n<ex>ost</ex>re doun
-                vynt marcs. Et as diu<ex>er</ex>ses ministralx esteantz en <rs
-                  ref="http://ereed.library.utoronto.ca/eats/entity/38221/"
-                  type="Place_BoroughParish">Smethefeld</rs> meisme le io<ex>ur</ex> de
+                esteantz a <rs ref="http://ereed.library.utoronto.ca/eats/entity/38221/" type="Place_BoroughParish">smethefeld</rs> le io<ex>ur</ex> des ioustes illeoqes de n<ex>ost</ex>re doun
+                vynt marcs. Et as diu<ex>er</ex>ses ministralx esteantz en Smethefeld meisme le io<ex>ur</ex> de
                   n<ex>ost</ex>re doun dys liures <gap reason="omitted"/> Et a vn <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/33003/" type="Collective_Troupe"
                   >ministrall le Roy descoce</rs> fesant son ministralcie en n<ex>ost</ex>re
-                  p<ex>re</ex>sence a londres de n<ex>ost</ex>re doun le vij io<ex>ur</ex> de
+                  p<ex>re</ex>sence a <rs ref="http://ereed.library.utoronto.ca/eats/entity/36947/" type="Place_BoroughParish">londres</rs> de n<ex>ost</ex>re doun le vij io<ex>ur</ex> de
                   ffeu<ex>er</ex>er quarante soldz <gap reason="omitted"/> Et as diu<ex>er</ex>ses
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/35602/"
                   type="Collective_Troupe">ministrall<ex>er</ex> le Roy de Rome</rs> esteantz oue
-                  no<ex>us</ex> a <rs ref="http://ereed.library.utoronto.ca/eats/entity/36947/"
-                  type="Place_BoroughParish">londres</rs> le mois de ffeu<ex>er</ex>er de
+                  no<ex>us</ex> a londres le mois de ffeu<ex>er</ex>er de
                   n<ex>ost</ex>re doun vynt liures Et a troys ministralles le Roy descoce esteantz
                 oue no<ex>us</ex> meisme le temps de n<ex>ost</ex>re doun sessante soldz <gap
                   reason="omitted"/> don<ex>ne</ex> a Westmonster le vj io<ex>ur</ex> de marcz lan
