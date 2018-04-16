@@ -28,7 +28,7 @@ urlpatterns = [
     url(r'^prepare/', include(text_prepare_urls)),
     url(r'^geomap/', include(geomap_urls)),
     url(r'^git/', include(git_urls)),
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^djadmin/', include(admin.site.urls)),
     url(r'^selectable/', include('selectable.urls')),
     url(r'^eats/', include(eats_urls)),
     url(r'^', include(records_urls)),
