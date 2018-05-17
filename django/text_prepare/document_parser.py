@@ -621,6 +621,21 @@ class DocumentParser:
     def _pa_ms_doc_desc(self, s, loc, toks):
         if len(toks[0]) < 4:
             toks[0].insert(0, '')
+        elif len(toks[0]) == 5:
+            # This is a bizarre problem I do not understand when an
+            # apostrophe occurs at the start of the @md and it
+            # contains at least one other apostrophe, in which case
+            # the ed desc skips to after the second apostrophe, and we
+            # end up with the skipped text as an extra token
+            # here. WTF?
+            #
+            # So instead of dealing with the problem properly in the
+            # grammar, since I don't have a clue what is going on,
+            # just alert that the initial apostrophe needs to be
+            # removed and then added back later. I can't just cludge
+            # the skipped text in because it throws out some
+            # whitespace too ("'text' foo" -> ["'text'", "foo"]).
+            raise pp.ParseFatalException('@md begins with an apostrophe. For reasons unknown, this causes a problem. Please remove that initial apostrophe, validate/convert, and then add it back (to the Word document and TEI)')
         ed_desc, source_code, ms_identifier, tech_desc = toks[0]
         return '''<msDesc xml:id="{}">
 {}
