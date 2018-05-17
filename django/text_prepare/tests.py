@@ -499,6 +499,14 @@ Test.
 </bibl>'''
         self.assertEqual(actual_desc, expected_desc)
 
+    def test_punctuation(self):
+        punctuation = ['.', ',', ';', ':', "'", '"', '(', ')', '*', '/', '#',
+                       '$', '%', '+', '-', '?', '–', '_', '=']
+        for item in punctuation:
+            text = item
+            expected = item
+            self._check_conversion(text, expected)
+
     def test_raised(self):
         text = 'mid@*dot'
         expected = 'mid\N{MIDDLE DOT}dot'
