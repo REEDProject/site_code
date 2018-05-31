@@ -38,7 +38,7 @@ def _convert(request):
                 for doc in docs:
                     context['filename'] = doc.name
                     document.convert(doc.temporary_file_path(), line_length)
-                    zip_archive = document.generate()
+                zip_archive = document.generate()
                 return HttpResponse(zip_archive,
                                     content_type='application/zip')
             except TextPrepareDocumentValidationError as error:
