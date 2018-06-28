@@ -162,6 +162,7 @@
                 </profileDesc>
                 <revisionDesc>
                         <!-- Add new major milestone changes to top -->
+                        <change when="2018-06-28" who="#KC">For "boy bishops" entity ID 21537, changed type from "Entertainment_SeasonalCustoms" to "Drama_Character"</change>
                         <change when="2017-09-14" who="#CB">Added collection data to
                                 teiHeader</change>
                 </revisionDesc>
@@ -2946,7 +2947,7 @@
                                         </p>
                                 </div>
                                 <div>
-                                        <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/21537/" type="Entertainment_SeasonalCustom">Boy Bishops</rs></head>
+                                        <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/21537/" type="Drama_Character">Boy Bishops</rs></head>
 
                                         <p>Although several English cathedrals – York, Exeter,
                                                 Hereford, Lincoln, London, and Salisbury, as well as
