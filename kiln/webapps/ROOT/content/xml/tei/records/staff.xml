@@ -139,6 +139,7 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2018-06-28" who="#KC">For "boy bishops" entity ID 21537, changed type from "Entertainment_SeasonalCustoms" to "Drama_Character"</change>
       <change when="2018-04-16" who="#KC">Changed EATS tag type="Person_Female" to approrpiate social rank. E.g. type="Person_Commoner" or "Person_Nobility"</change>
       <change when="2018-04-16" who="#KC">Changed EATS tag type="Person_Male" to approrpiate social rank. E.g. type="Person_Commoner" or "Person_Nobility"</change>
       <change when="2018-04-16" who="#KC">minor EATS tagging corrections, often related to tagging marginalia that was missed</change>
@@ -3724,7 +3725,7 @@
               <ab><gap reason="omitted"/>It<ex>em</ex> dat<ex>is</ex>
                 <term ref="gloss:episcopus-1"><rs
                     ref="http://ereed.library.utoronto.ca/eats/entity/21537/"
-                    type="Entertainment_SeasonalCustom">Ep<ex>iscop</ex>o
+                    type="Drama_Character">Ep<ex>iscop</ex>o
                     pu<ex>er</ex>or<ex>um</ex></rs></term> ad <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/41365/"
                   type="CalendarDay_Liturgical">fest<ex>um</ex> s<ex>an</ex>c<ex>t</ex>or<ex>um</ex>
@@ -3766,7 +3767,7 @@
                   ref="http://ereed.library.utoronto.ca/eats/entity/41918/"
                   type="Thing_TheatricalCostume">cape</rs> chori p<ex>ro</ex>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/21537/"
-                  type="Entertainment_SeasonalCustom">pu<ex>er</ex>is</rs> in<rs
+                  type="Drama_Character">pu<ex>er</ex>is</rs> in<rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/41365/"
                   type="CalendarDay_Liturgical"> f<ex>est</ex>o Innoce<ex>n</ex>t<ex>u</ex>m</rs>
                   antiq<ex>ue</ex> &amp; debiles<gap reason="omitted"/></ab>
@@ -3993,7 +3994,7 @@
                 ref="http://ereed.library.utoronto.ca/eats/entity/10906/" type="Entertainer_Type"
                 >choristers</rs> is supplemented by a reference to a payment to a <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/21537/"
-                type="Entertainment_SeasonalCustom">boy bishop</rs> of <rs
+                type="Drama_Character">boy bishop</rs> of <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_BoroughParish"
                 >Lichfield</rs> in <hi rend="italic">Valor ecclesiasticus</hi>, vol 3, pp 154 –
                 'It<ex>e</ex>m episcopo pueril<ex>i</ex> Lich<ex>feldis</ex> ad <rs
