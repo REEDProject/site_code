@@ -162,6 +162,7 @@
                 </profileDesc>
                 <revisionDesc>
                         <!-- Add new major milestone changes to top -->
+                        <change when="2018-06-29" who="#KC">For "Robin Hood" (entity ID 35310) tagging, changed order of two rs URLs so "Robin Hood" is first, "summer games (35779) is second. Also revised type attribute to "Drama_Character" from "Entertainment_SeasonalCustom"</change>
                         <change when="2018-06-29" who="#KC">For "summer lords" tagging (entity ID 59852), changed order of the two rs IDs so the summer lord ID is first and seasonal 
                                 custom ID second. This allows HTML display to take users to summer lord entity page. Also changed type attribute to "Drama_Character" from "Entertainment_SeasonalCustoms" to match new order of IDs</change>
                         <change when="2018-06-28" who="#KC">For "boy bishops" tagging (entity ID 21537), changed type from "Entertainment_SeasonalCustoms" to "Drama_Character"</change>
@@ -3284,7 +3285,7 @@
                                                   at St Giles’ and St Laurence’s, Reading – ‘king
                                                   games,’ although it is dangerous to assume that
                                                   such specific terminology precluded other
-                                                  activities such as <rs ref="http://ereed.library.utoronto.ca/eats/entity/35310/" type="Drama_Character">Robin Hood</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/" type="Entertainment_SeasonalCustom">games</rs>. David Wiles,
+                                                  activities such as <rs ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/" type="Drama_Character">Robin Hood</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/" type="Entertainment_SeasonalCustom">games</rs>. David Wiles,
                                                   in <title>The Early Plays of Robin Hood</title>,
                                                   argued that Robin Hood and the mock king or summer
                                                   lord were the same figure.<note type="foot">David
@@ -4880,8 +4881,8 @@
                                                   <row>
                                                   <cell>Anno MDLXVI or 9 of Eliz<ex>abeth</ex> payde
                                                   for setting up <rs
-                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/35310/"
-                                                  type="Entertainment_SeasonalCustom">Robin
+                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/"
+                                                  type="Drama_Character">Robin
                                                   Hoodes</rs>
                                                   <term ref="gloss:bowerrye-1"><rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/70882/"
@@ -11011,8 +11012,8 @@
                                                   <row>
                                                   <cell>It<ex>em</ex> rec<ex>eyved</ex> of the <term
                                                   ref="gloss:gatheryng-1">gaderyng</term> of <rs
-                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/35310/"
-                                                  type="Entertainment_SeasonalCustom">Robyn
+                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/"
+                                                  type="Drama_Character">Robyn
                                                   hod</rs></cell>
                                                   <cell rend="right">xix s.</cell>
                                                   </row>
@@ -11124,8 +11125,8 @@
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/41230/"
                                                   type="CalenderDay_Secular">may</rs> play
                                                   <del>of</del> callyd <rs
-                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/35310/"
-                                                  type="Entertainment_SeasonalCustom">Roby<ex>n</ex>
+                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/"
+                                                  type="Drama_Character">Roby<ex>n</ex>
                                                   hod</rs> on the <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/43457/"
                                                   type="Entertainment_Type">fayre</rs> day</cell>
@@ -11337,8 +11338,8 @@
                                                   <row>
                                                   <cell>It<ex>em</ex> rec<ex>eyued</ex> of the <term
                                                   ref="gloss:gatheryng-1">gaderyng</term> of <rs
-                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/35310/"
-                                                  type="Entertainment_SeasonalCustom">Robyn hod</rs>
+                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/"
+                                                  type="Drama_Character">Robyn hod</rs>
                                                   &amp; busshell<ex>es</ex> malt
                                                   p<ex>r</ex>ic<ex>e</ex></cell>
                                                   <cell rend="right">v s.</cell>
@@ -11577,8 +11578,8 @@
                                                   <row>
                                                   <cell>It<ex>em</ex> rec<ex>eyvid</ex> of the <term
                                                   ref="gloss:gatheryng-1">gadering</term> of <rs
-                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/35310/"
-                                                  type="Entertainment_SeasonalCustom">Robyn
+                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/"
+                                                  type="Drama_Character">Robyn
                                                   hod</rs></cell>
                                                   <cell rend="right">xviij s. xj d. ob.</cell>
                                                   </row>
@@ -11864,8 +11865,8 @@
                                                   <row>
                                                   <cell>It<ex>em</ex> rec<ex>eyued</ex> of the <term
                                                   ref="gloss:gatheryng-1">gadering</term> of <rs
-                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/35310/"
-                                                  type="Entertainment_SeasonalCustom">Robyn hod</rs>
+                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/"
+                                                  type="Drama_Character">Robyn hod</rs>
                                                   at witsontyde</cell>
                                                   <cell rend="right">v li. x s. v d.</cell>
                                                   </row>
@@ -12522,8 +12523,8 @@
                                                   <cell><add place="above">It<ex>em</ex>
                                                   rec<ex>eyvid</ex> of the <term
                                                   ref="gloss:gatheryng-1">gaderyng</term> of <rs
-                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/  http://ereed.library.utoronto.ca/eats/entity/35310/"
-                                                  type="Entertainment_SeasonalCustom">Robyn hod
+                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/"
+                                                  type="Drama_Character">Robyn hod
                                                   play</rs></add></cell>
                                                   <cell rend="right"><add place="above">xvij s. ix
                                                   d.</add></cell>
@@ -13025,8 +13026,8 @@
                                                   <row>
                                                   <cell>It<ex>e</ex>m Rec<ex>eyvyd</ex> of the <term
                                                   ref="gloss:gatheryng-1">gatheryng</term> of <rs
-                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/35310/"
-                                                  type="Entertainment_SeasonalCustom">Robyn
+                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/"
+                                                  type="Drama_Character">Robyn
                                                   hoode</rs> &amp; all Cost<ex>es</ex> alowyd</cell>
                                                   <cell rend="right">viij li. ij s. v d.</cell>
                                                   </row>
@@ -26801,7 +26802,7 @@
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/35779/"
                                                   type="Entertainment_SeasonalCustom">summer
                                                   festival</rs> often assuming the character of <rs
-                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35310/"
+                                                          ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/"
                                                   type="Drama_Character">Robin Hood</rs>. See
                                                   Johnston, 'Robin Hood,' p 38. </p>
                                         </div>
