@@ -139,6 +139,7 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2018-06-29" who="#KC">For "Robin Hood" (entity ID 35310) tagging, changed order of two rs URLs so "Robin Hood" is first, "summer games (35779) is second. Also revised type attribute to "Drama_Character" from "Entertainment_SeasonalCustom"</change>
       <change when="2018-06-28" who="#KC">For "boy bishops" entity ID 21537, changed type from "Entertainment_SeasonalCustoms" to "Drama_Character"</change>
       <change when="2018-04-16" who="#KC">Changed EATS tag type="Person_Female" to approrpiate social rank. E.g. type="Person_Commoner" or "Person_Nobility"</change>
       <change when="2018-04-16" who="#KC">Changed EATS tag type="Person_Male" to approrpiate social rank. E.g. type="Person_Commoner" or "Person_Nobility"</change>
@@ -12610,8 +12611,8 @@ table. The (blank) above is the second cell of that row -->the
                 warre com to the seid Towne of <term ref="gloss:willenhale-1">Wilnall</term> to the
                 seid faire and also on Roger Marchall of <term ref="gloss:weddesbury-1"
                   >weddesbury</term> callyng hym self <rs
-                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/35310/"
-                  type="Entertainment_SeasonalCustom">Robyn Hood</rs> and on <damage><gap
+                    ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/"
+                  type="Drama_Character">Robyn Hood</rs> and on <damage><gap
                     unit="chars" extent="3"/></damage><note type="foot">on <damage><gap unit="chars"
                       extent="3"/></damage> : <hi rend="italic">appproximately 14 characters
                     missing</hi></note> prest with diu<ex>er</ex>ce other p<ex>er</ex>sones to the
@@ -12742,8 +12743,8 @@ table. The (blank) above is the second cell of that row -->the
                 to the seide ffer<ex>e</ex> w<ex>i</ex>t<ex>h</ex> ther capitanns called the <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Drama_Character"
                   >Abot of Marham</rs> or <rs
-                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/35310/"
-                  type="Entertainment_SeasonalCustom">Robyn Hodys</rs> to the intent to gether money
+                    ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/"
+                    type="Drama_Character">Robyn Hodys</rs> to the intent to gether money
                   w<ex>i</ex>t<ex>h</ex> ther disport<ex>es</ex> to the p<ex>ro</ex>fight of the
                 chirches of the seide lordeship<ex>es</ex> wherby grete p<ex>ro</ex>fet hath growen
                 and cu<ex>m</ex>myn to the seide Chirches in tymes past Wheropon the seide Roger
@@ -14866,8 +14867,8 @@ table. The (blank) above is the second cell of that row -->the
               <table>
                 <row>
                   <cell>It<ex>e</ex>m to <rs
-                      ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/35310/"
-                      type="Entertainment_SeasonalCustom">Robyn hode</rs>
+                    ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/"
+                    type="Drama_Character">Robyn hode</rs>
                     <term ref="gloss:marresdaunce-1"><rs
                         ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/18451/"
                         type="Entertainer_Type">marresdau<ex>n</ex>ce</rs></term> and <rs
