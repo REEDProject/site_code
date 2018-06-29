@@ -162,7 +162,9 @@
                 </profileDesc>
                 <revisionDesc>
                         <!-- Add new major milestone changes to top -->
-                        <change when="2018-06-28" who="#KC">For "boy bishops" entity ID 21537, changed type from "Entertainment_SeasonalCustoms" to "Drama_Character"</change>
+                        <change when="2018-06-29" who="#KC">For "summer lords" tagging (entity ID 59852), changed order of the two rs IDs so the summer lord ID is first and seasonal 
+                                custom ID second. This allows HTML display to take users to summer lord entity page. Also changed type attribute to "Drama_Character" from "Entertainment_SeasonalCustoms" to match new order of IDs</change>
+                        <change when="2018-06-28" who="#KC">For "boy bishops" tagging (entity ID 21537), changed type from "Entertainment_SeasonalCustoms" to "Drama_Character"</change>
                         <change when="2017-09-14" who="#CB">Added collection data to
                                 teiHeader</change>
                 </revisionDesc>
@@ -18573,8 +18575,8 @@
                                                   <table>
                                                   <row>
                                                   <cell>paid when the Churche <rs
-                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/59852/"
-                                                  type="Entertainment_SeasonalCustom">lord</rs> was
+                                                          ref="http://ereed.library.utoronto.ca/eats/entity/59852/ http://ereed.library.utoronto.ca/eats/entity/35779/"
+                                                  type="Drama_Character">lord</rs> was
                                                   chosen in charg<ex>es</ex></cell>
                                                   <cell rend="right">ij d.</cell>
                                                   </row>
@@ -19473,8 +19475,8 @@
                                                   type="CalendarDay_Liturgical">holly
                                                   thursday</rs><note type="foot">holly thursday: <hi
                                                   rend="italic">14 May 1556</hi></note> for the <rs
-                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/59852/"
-                                                  type="Entertainment_SeasonalCustom">lords</rs>
+                                                  ref="http://ereed.library.utoronto.ca/eats/entity/59852/ http://ereed.library.utoronto.ca/eats/entity/35779/"
+                                                          type="Drama_Character">lords</rs>
                                                   brekfast</cell>
                                                   <cell rend="right">ij s. j d.</cell>
                                                   </row>
@@ -19604,8 +19606,8 @@
                                                   type="CalendarDay_Liturgical">Whitsun</rs> (24
                                                   May). Ascension Day was 14 May in 1556. This is
                                                   the only reference to a <rs
-                                                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/59852/"
-                                                  type="Entertainment_SeasonalCustom">summer
+                                                  ref="http://ereed.library.utoronto.ca/eats/entity/59852/ http://ereed.library.utoronto.ca/eats/entity/35779/"
+                                                  type="Drama_Character">summer
                                                   lord</rs> associated with the <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/47389/"
                                                   type="Place_Feature">St Mary's</rs> festivities.
