@@ -73,16 +73,6 @@ It spans multiple paragraphs.!
         expected = 'some <space /> text'
         self._check_conversion(text, expected)
 
-    def test_bold(self):
-        text = 'some @e\\bold@e/ text'
-        expected = 'some <hi rend="bold">bold</hi> text'
-        self._check_conversion(text, expected)
-
-    def test_bold_italic(self):
-        text = 'some @j\\bold italic@j/ text'
-        expected = 'some <hi rend="bold_italic">bold italic</hi> text'
-        self._check_conversion(text, expected)
-
     def test_capitulum(self):
         text = '@Ca'
         expected = '\N{CAPITULUM}a'
@@ -290,11 +280,6 @@ A note.
         nested_text = 'Some @i\\@i\\really@i/ interpolated@i/ text'
         nested_expected = 'Some <handShift /><handShift />really<handShift /> interpolated<handShift /> text'
         self._check_conversion(nested_text, nested_expected)
-
-    def test_italic_small_caps(self):
-        text = 'Some @q\\italic small caps@q/ text'
-        expected = 'Some <hi rend="smallcaps_italic">italic small caps</hi> text'
-        self._check_conversion(text, expected)
 
     def test_lang_anglo_norman(self):
         text = 'The king said, "@xno\\Bon soir.@xno/"'
@@ -610,11 +595,6 @@ Text
         expected = '<seg type="signed" rend="right">Thomas dyckes</seg>'
         self._check_conversion(text, expected)
 
-    def test_small_caps(self):
-        text = 'Some @k\\small caps@k/ text'
-        expected = 'Some <hi rend="smallcaps">small caps</hi> text'
-        self._check_conversion(text, expected)
-
     def test_special_v(self):
         text = 'Special @v, not k'
         expected = 'Special \N{LATIN SMALL LETTER MIDDLE-WELSH V}, not k'
@@ -780,8 +760,8 @@ Totally new.
     def test_nesting(self):
         # This is impossible to comprehensively test. Start with a few
         # examples and add more as problems are discovered.
-        text = '@l\\@k\\ac@k/or @k\\a@k/@l/!'
-        expected = '<note type="marginal" place="margin_left"><hi rend="smallcaps">ac</hi>or <hi rend="smallcaps">a</hi></note><lb />'
+        text = '@l\\@m\\ac@m/or @m\\a@m/@l/!'
+        expected = '<note type="marginal" place="margin_left"><hi rend="center">ac</hi>or <hi rend="center">a</hi></note><lb />'
         self._check_conversion(text, expected)
 
 

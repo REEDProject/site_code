@@ -119,7 +119,6 @@ class DocumentParser:
         section_code = pp.Literal('@%').setParseAction(self._pa_section)
         semicolon_code = pp.Literal('@;').setParseAction(self._pa_semicolon)
         special_v_code = pp.Literal('@v').setParseAction(self._pa_special_v)
-        tab_code = pp.Literal('@[').setParseAction(self._pa_tab)
         thorn_code = pp.Literal('@th').setParseAction(self._pa_thorn)
         THORN_code = pp.Literal('@TH').setParseAction(self._pa_THORN)
         tilde_code = pp.Literal('@"') + (vowels | pp.Literal('n'))
@@ -137,13 +136,9 @@ class DocumentParser:
             ENG_code ^ eth_code ^ exclamation_code ^ grave_code ^ macron_code ^
             oe_code ^ OE_code ^ page_break_code ^ paragraph_code ^ pound_code ^
             raised_code ^ section_code ^ semicolon_code ^ special_v_code ^
-            tab_code ^ thorn_code ^ THORN_code ^ tilde_code ^ umlaut_code ^
-            wynn_code ^ yogh_code ^ YOGH_code)
+            thorn_code ^ THORN_code ^ tilde_code ^ umlaut_code ^ wynn_code ^
+            yogh_code ^ YOGH_code)
         enclosed = pp.Forward()
-        bold_code = pp.nestedExpr('@e\\', '@e/', content=enclosed)
-        bold_code.setParseAction(self._pa_bold)
-        bold_italic_code = pp.nestedExpr('@j\\', '@j/', content=enclosed)
-        bold_italic_code.setParseAction(self._pa_bold_italic)
         centred_code = pp.nestedExpr('@m\\', '@m/', content=enclosed)
         centred_code.setParseAction(self._pa_centred)
         closer_code = pp.nestedExpr('@cl\\', '@cl/', content=enclosed)
@@ -221,8 +216,6 @@ class DocumentParser:
         interlineation_below_code.setParseAction(self._pa_interlineation_below)
         interpolation_code = pp.nestedExpr('@i\\', '@i/', content=enclosed)
         interpolation_code.setParseAction(self._pa_interpolation)
-        italic_small_caps_code = pp.nestedExpr('@q\\', '@q/', content=enclosed)
-        italic_small_caps_code.setParseAction(self._pa_italic_small_caps)
         left_marginale_code = pp.nestedExpr('@l\\', '@l/', content=enclosed)
         left_marginale_code.setParseAction(self._pa_left_marginale)
         list_item_code = pp.nestedExpr('@li\\', '@li/', content=enclosed)
@@ -238,8 +231,6 @@ class DocumentParser:
         signed_centre_code.setParseAction(self._pa_signed_centre)
         signed_right_code = pp.nestedExpr('@snr\\', '@snr/', content=enclosed)
         signed_right_code.setParseAction(self._pa_signed_right)
-        small_caps_code = pp.nestedExpr('@k\\', '@k/', content=enclosed)
-        small_caps_code.setParseAction(self._pa_small_caps)
         superscript_code = pp.nestedExpr('@s\\', '@s/', content=enclosed)
         superscript_code.setParseAction(self._pa_superscript)
         tab_start_code = pp.nestedExpr(pp.LineStart() + pp.Literal('@['), '!',
@@ -248,14 +239,12 @@ class DocumentParser:
         title_code = pp.nestedExpr('<title>', '</title>', content=enclosed)
         title_code.setParseAction(self._pa_title)
         paired_codes = (
-            bold_code ^ bold_italic_code ^ centred_code ^ closer_code ^
-            collation_ref ^ comment_code ^ deleted_code ^ exdented_code ^
-            expansion_code ^ footnote_code ^ indented_code ^
-            interpolation_code ^ interlineation_above_code ^
-            interlineation_below_code ^ italic_small_caps_code ^
-            language_codes ^ left_marginale_code ^ list_code ^
-            right_marginale_code ^ signed_code ^ signed_centre_code ^
-            signed_right_code ^ small_caps_code ^ superscript_code ^
+            centred_code ^ closer_code ^ collation_ref ^ comment_code ^
+            deleted_code ^ exdented_code ^ expansion_code ^ footnote_code ^
+            indented_code ^ interpolation_code ^ interlineation_above_code ^
+            interlineation_below_code ^ language_codes ^ left_marginale_code ^
+            list_code ^ right_marginale_code ^ signed_code ^
+            signed_centre_code ^ signed_right_code ^ superscript_code ^
             tab_start_code ^ title_code)
         enclosed << pp.OneOrMore(single_codes ^ return_code ^ paired_codes ^
                                  content ^ punctuation ^ xml_escape ^ ignored)
@@ -441,12 +430,6 @@ class DocumentParser:
     def _pa_blank(self, s, loc, toks):
         return ['<space />']
 
-    def _pa_bold(self, s, loc, toks):
-        return ['<hi rend="bold">', ''.join(toks[0]), '</hi>']
-
-    def _pa_bold_italic(self, s, loc, toks):
-        return ['<hi rend="bold_italic">', ''.join(toks[0]), '</hi>']
-
     def _pa_capitulum(self, s, loc, toks):
         # The name CAPITULUM is not recognised in Python 3.4, causing
         # a syntax error of all things.
@@ -553,9 +536,6 @@ class DocumentParser:
 
     def _pa_interpolation(self, s, loc, toks):
         return ['<handShift />', ''.join(toks[0]), '<handShift />']
-
-    def _pa_italic_small_caps(self, s, loc, toks):
-        return ['<hi rend="smallcaps_italic">', ''.join(toks[0]), '</hi>']
 
     def _pa_lang_ancient_greek(self, s, loc, toks):
         return self._make_foreign('grc', toks)
@@ -788,9 +768,6 @@ class DocumentParser:
     def _pa_signed_right(self, s, loc, toks):
         return self._make_signed(s, loc, toks, 'right')
 
-    def _pa_small_caps(self, s, loc, toks):
-        return ['<hi rend="smallcaps">', ''.join(toks[0]), '</hi>']
-
     def _pa_source_code(self, s, loc, toks):
         code = ''.join(toks[0])
         if code in self._source_codes:
@@ -814,9 +791,6 @@ class DocumentParser:
 
     def _pa_supplied(self, s, loc, toks):
         return ['<supplied>', ''.join(toks[0]), '</supplied>']
-
-    def _pa_tab(self, s, loc, toks):
-        return ['<milestone type="table-cell" />']
 
     def _pa_tab_start(self, s, loc, toks):
         return ['<hi rend="right">', ''.join(toks[0]), '</hi>']
