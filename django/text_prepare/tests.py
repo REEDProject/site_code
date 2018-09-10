@@ -587,12 +587,27 @@ Text
 
     def test_signed_centre(self):
         text = '@snc\\Thomas dyckes@snc/'
-        expected = '<seg type="signed" rend="centre">Thomas dyckes</seg>'
+        expected = '<seg type="signed" rend="center">Thomas dyckes</seg>'
         self._check_conversion(text, expected)
 
     def test_signed_right(self):
         text = '@snr\\Thomas dyckes@snr/'
         expected = '<seg type="signed" rend="right">Thomas dyckes</seg>'
+        self._check_conversion(text, expected)
+
+    def test_signed_mark(self):
+        text = '@sm\\Who even knows@sm/'
+        expected = '<seg type="signed_mark">Who even knows</seg>'
+        self._check_conversion(text, expected)
+
+    def test_signed_mark_centre(self):
+        text = '@smc\\Who even knows@smc/'
+        expected = '<seg type="signed_mark" rend="center">Who even knows</seg>'
+        self._check_conversion(text, expected)
+
+    def test_signed_mark_right(self):
+        text = '@smr\\Who even knows@smr/'
+        expected = '<seg type="signed_mark" rend="right">Who even knows</seg>'
         self._check_conversion(text, expected)
 
     def test_special_v(self):

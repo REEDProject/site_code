@@ -231,6 +231,14 @@ class DocumentParser:
         signed_centre_code.setParseAction(self._pa_signed_centre)
         signed_right_code = pp.nestedExpr('@snr\\', '@snr/', content=enclosed)
         signed_right_code.setParseAction(self._pa_signed_right)
+        signed_mark_code = pp.nestedExpr('@sm\\', '@sm/', content=enclosed)
+        signed_mark_code.setParseAction(self._pa_signed_mark)
+        signed_mark_centre_code = pp.nestedExpr('@smc\\', '@smc/',
+                                                content=enclosed)
+        signed_mark_centre_code.setParseAction(self._pa_signed_mark_centre)
+        signed_mark_right_code = pp.nestedExpr('@smr\\', '@smr/',
+                                               content=enclosed)
+        signed_mark_right_code.setParseAction(self._pa_signed_mark_right)
         superscript_code = pp.nestedExpr('@s\\', '@s/', content=enclosed)
         superscript_code.setParseAction(self._pa_superscript)
         tab_start_code = pp.nestedExpr(pp.LineStart() + pp.Literal('@['), '!',
@@ -244,8 +252,9 @@ class DocumentParser:
             indented_code ^ interpolation_code ^ interlineation_above_code ^
             interlineation_below_code ^ language_codes ^ left_marginale_code ^
             list_code ^ right_marginale_code ^ signed_code ^
-            signed_centre_code ^ signed_right_code ^ superscript_code ^
-            tab_start_code ^ title_code)
+            signed_centre_code ^ signed_right_code ^ signed_mark_code ^
+            signed_mark_centre_code ^ signed_mark_right_code ^
+            superscript_code ^ tab_start_code ^ title_code)
         enclosed << pp.OneOrMore(single_codes ^ return_code ^ paired_codes ^
                                  content ^ punctuation ^ xml_escape ^ ignored)
         cell = pp.nestedExpr('<c>', '</c>', content=enclosed)
@@ -409,6 +418,13 @@ class DocumentParser:
         if rend_value:
             rend = ' rend="{}"'.format(rend_value)
         return ['<seg type="signed"{}>'.format(rend), ''.join(toks[0]),
+                '</seg>']
+
+    def _make_signed_mark(self, s, loc, toks, rend_value=None):
+        rend = ''
+        if rend_value:
+            rend = ' rend="{}"'.format(rend_value)
+        return ['<seg type="signed_mark"{}>'.format(rend), ''.join(toks[0]),
                 '</seg>']
 
     def _merge_years(self, year, replacement):
@@ -763,10 +779,19 @@ class DocumentParser:
         return self._make_signed(s, loc, toks)
 
     def _pa_signed_centre(self, s, loc, toks):
-        return self._make_signed(s, loc, toks, 'centre')
+        return self._make_signed(s, loc, toks, 'center')
 
     def _pa_signed_right(self, s, loc, toks):
         return self._make_signed(s, loc, toks, 'right')
+
+    def _pa_signed_mark(self, s, loc, toks):
+        return self._make_signed_mark(s, loc, toks)
+
+    def _pa_signed_mark_centre(self, s, loc, toks):
+        return self._make_signed_mark(s, loc, toks, 'center')
+
+    def _pa_signed_mark_right(self, s, loc, toks):
+        return self._make_signed_mark(s, loc, toks, 'right')
 
     def _pa_source_code(self, s, loc, toks):
         code = ''.join(toks[0])
