@@ -241,7 +241,7 @@ class DocumentParser:
         signed_mark_right_code.setParseAction(self._pa_signed_mark_right)
         superscript_code = pp.nestedExpr('@s\\', '@s/', content=enclosed)
         superscript_code.setParseAction(self._pa_superscript)
-        tab_start_code = pp.nestedExpr(pp.LineStart() + pp.Literal('@['), '!',
+        tab_start_code = pp.nestedExpr(pp.LineStart() + '@[', '@]',
                                        content=enclosed)
         tab_start_code.setParseAction(self._pa_tab_start)
         title_code = pp.nestedExpr('<title>', '</title>', content=enclosed)

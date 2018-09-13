@@ -620,6 +620,11 @@ Text
         expected = 'Some <hi rend="superscript">superscripted</hi> text'
         self._check_conversion(text, expected)
 
+    def test_tab_start(self):
+        text = '@[This should be right aligned.@]'
+        expected = '<hi rend="right">This should be right aligned.</hi>'
+        self._check_conversion(text, expected)
+
     def test_table(self):
         text = '<t>\n<r>\n<c></c>\n<c>Some</c>\n<c>text</c>\n</r>\n</t>'
         expected = '<table>\n<row>\n<cell></cell>\n<cell>Some</cell>\n<cell>text</cell>\n</row>\n</table>'
