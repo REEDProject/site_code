@@ -325,6 +325,7 @@ class DocumentParser:
         collation_notes = pp.nestedExpr('@cn\\', '@cn/', content=pp.OneOrMore(
             collation_note_wrapper))
         collation_notes.setParseAction(self._pa_collation_notes)
+        collation_notes_wrapper = blank + collation_notes + blank
         end_note = pp.nestedExpr('@en\\', '@en/', content=enclosed)
         end_note.setParseAction(self._pa_endnote)
         end_note_wrapper = blank + end_note + blank
@@ -383,7 +384,8 @@ class DocumentParser:
         preamble = (ms_doc_desc ^ print_doc_desc) - blank - pp.Optional(
             comment_code + blank) - place_codes
         record = (blank + record_heading + transcription +
-                  pp.Optional(translation) + pp.Optional(collation_notes) +
+                  pp.Optional(translation) +
+                  pp.Optional(collation_notes_wrapper) +
                   pp.Optional(end_note_wrapper)).setResultsName(
                       'record', listAllMatches=True)
         record.setParseAction(self._pa_record)

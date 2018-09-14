@@ -143,6 +143,46 @@ Test.
 </div>
 </body>
 </text>'''
+        self._check_conversion(text, expected, heading=False, subheading=False)
+
+    def test_collation_notes_translation(self):
+        text = '''@h\\BPA!1532!lat\\!
+@w\\f.40*\\!\nTextus
+@tr\\@w\\f.40*\\!
+Text@tr/
+
+@cn\\
+@c\\@a1\\A note.@c/
+@c\\@a2\\Another note.@c/
+@cn/'''
+        expected = '''<text type="record">
+<body>
+<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
+<div xml:lang="lat" type="transcription">
+<div>
+<head>f.40*</head>
+<pb />
+Textus
+
+</div>
+</div>
+<div xml:lang="eng" type="translation">
+<div>
+<head>f.40*</head>
+<pb />
+Text
+</div>
+</div>
+<div type="collation_notes">
+<div type="collation_note">
+<anchor n="cn1" />A note.
+</div>
+<div type="collation_note">
+<anchor n="cn2" />Another note.
+</div>
+</div>
+</body>
+</text>'''
         self.maxDiff = None
         self._check_conversion(text, expected, heading=False, subheading=False)
 
