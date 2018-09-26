@@ -162,6 +162,7 @@
                 </profileDesc>
                 <revisionDesc>
                         <!-- Add new major milestone changes to top -->
+                        <change when="2018-09-26" who="#KC">Checked and retagged where appropriate "corpus christi" (ID #41497) to both "corpus christi" + "summer games"</change>
                         <change when="2018-09-26" who="#KC">Retagged things "whitsun" (entity ID 41139) to doublt tag as Whitsuntide + summer games, where appropriate</change>
                         <change when="2018-09-14" who="#KC">Retagged morris related entities tagged as 'summer game' and revised tag to 'morris'</change>
                         <change when="2018-09-12" who="#KC">Retagged instances of Maid Marion from "Maid Marion" + "summer games" to "Maid Marion" + "morris"</change>
@@ -12106,7 +12107,7 @@
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/72450/"
                                                   type="Thing_TheatricalCostume">hosyn</rs> off
                                                   lethur agaynst <rs
-                                                  ref="http://ereed.library.utoronto.ca/eats/entity/41497/"
+                                                          ref="http://ereed.library.utoronto.ca/eats/entity/41497/ http://ereed.library.utoronto.ca/eats/entity/35779/"
                                                   type="CalendarDay_Liturgical">corp<ex>us</ex>
                                                   <ex>christ</ex>i Day</rs><note type="foot">corp<hi
                                                   rend="italic">us</hi>
@@ -12396,7 +12397,7 @@
                                                         <ref target="#traditions-reading-resurrection">Performance Traditions</ref>), a <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/40453/"
                                                   type="Drama_Type">play</rs> on <rs
-                                                  ref="http://ereed.library.utoronto.ca/eats/entity/41497/"
+                                                          ref="http://ereed.library.utoronto.ca/eats/entity/41497/ http://ereed.library.utoronto.ca/eats/entity/35779/"
                                                   type="CalendarDay_Liturgical">Corpus Christi</rs>,
                                                   and a play on 23 August, the day before <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/41016/"
