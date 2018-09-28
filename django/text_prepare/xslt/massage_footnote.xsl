@@ -27,6 +27,11 @@
     <xsl:text>]</xsl:text>
   </xsl:template>
 
+  <!-- tei:gap[@reason='omitted'] should be converted back to ellipses. -->
+  <xsl:template match="tei:note[@type='foot']//tei:gap[@reason='omitted']">
+    <xsl:text>…</xsl:text>
+  </xsl:template>
+
   <xsl:template match="@*|node()">
     <xsl:copy>
       <xsl:apply-templates select="@*|node()" />
