@@ -139,6 +139,7 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2018-09-28" who="#KC">Re-tagged, things morris from 'summer games' to 'morris'</change>
       <change when="2018-09-26" who="#KC">Retagged, where appropriate, Whitsuntide (ID 41139) to both 'Whitsuntide' + 'summer games'.</change>
       <change when="2018-06-29" who="#KC">For "Robin Hood" (entity ID 35310) tagging, changed order of two rs URLs so "Robin Hood" is first, "summer games (35779) is second. Also revised type attribute to "Drama_Character" from "Entertainment_SeasonalCustom"</change>
       <change when="2018-06-28" who="#KC">For "boy bishops" entity ID 21537, changed type from "Entertainment_SeasonalCustoms" to "Drama_Character"</change>
@@ -556,15 +557,11 @@
               type="Place_BoroughParish">Kinver</rs> in 1620, where <rs
               ref="http://ereed.library.utoronto.ca/eats/entity/10814/" type="Person_Commoner">Richard
               Rice</rs> was cited ‘for fartinge &amp; pissinge in the Church in sermon time &amp;
-            gingelinge of <rs
-              ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/18451/"
-              type="Entertainment_SeasonalCustom">Morrice dauncers</rs>
+            gingelinge of <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_SeasonalCustom">Morrice</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dauncers</rs>
             <rs ref="http://ereed.library.utoronto.ca/eats/entity/42342/"
               type="Thing_MusicalInstrument">bells</rs>!' Was he protesting the requirement to
             attend church in sermon time? Or the quality of the sermon? Or the Kinver minister’s
-            negative attitude to <rs
-              ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/18451/"
-              type="Entertainer_Type">Morris dancing</rs> and merrymaking? One might be tempted to
+            negative attitude to <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_SeasonalCustom">Morris</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dancing</rs> and merrymaking? One might be tempted to
             correlate cases like this one into a picture of anti-Puritan resistance, but this would
             be a dangerous generalization given the small number of scattered examples, which can be
             countered by other records that provide evidence of communities that were solidly and
@@ -3183,9 +3180,7 @@
                     extrahatur./<handShift/></cell>
                   <cell>for <rs ref="http://ereed.library.utoronto.ca/eats/entity/45652/"
                       type="CrimesMisdemeanors">lending</rs> the <term ref="gloss:surplasse-1"
-                      >surplasse</term> to <rs
-                      ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/18451/"
-                      type="Entertainer_Type">daunce the Morrice</rs> vpon <rs
+                      >surplasse</term> to <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">daunce</rs> the <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_SeasonalCustom">Morrice</rs> vpon <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/41230/"
                       type="CalenderDay_Secular">May day</rs> Excom<ex>municatus</ex>./</cell>
                 </row>
@@ -3530,9 +3525,7 @@
                   Church</rs><note type="foot">Church: <hi rend="italic"><rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/36008/" type="Place_Feature"
                       >St Peter's</rs></hi></note> in sermon time &amp; <term
-                  ref="gloss:gingelinge-1">gingelinge</term> of <rs
-                  ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/18451/"
-                  type="Entertainment_SeasonalCustom">Morrice dauncers</rs>
+                  ref="gloss:gingelinge-1">gingelinge</term> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_SeasonalCustom">Morrice</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dauncers</rs>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/42342/"
                   type="Thing_MusicalInstrument">bells</rs></ab>
 
@@ -8166,9 +8159,7 @@ table. The (blank) above is the second cell of that row -->the
                       ref="http://ereed.library.utoronto.ca/eats/entity/20377/"
                       type="Person_Commoner">Will<ex>iams</ex></rs><note type="foot"
                         >Will<ex>iams</ex>: <hi rend="italic">likely</hi> William Rycrofte's</note>
-                    <rs
-                      ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/18451/ "
-                      type="Entertainment_SeasonalCustom">Morrice</rs>
+                    <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_SeasonalCustom">Morrice</rs>
                     <rs ref="http://ereed.library.utoronto.ca/eats/entity/42274/"
                       type="Thing_TheatricalCostume">apparell</rs></cell>
                   <cell rend="right">ij s. vj d.</cell>
@@ -14826,9 +14817,7 @@ table. The (blank) above is the second cell of that row -->the
                   <cell rend="right">ij d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m the <rs
-                      ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/18451/"
-                      type="Entertainer_Type">morres dau<ex>n</ex>sse</rs> of <rs
+                  <cell>It<ex>e</ex>m the <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_SeasonalCustom">morres</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dau<ex>n</ex>sse</rs> of <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/3702/"
                       type="Place_BoroughParish">lychffelld</rs></cell>
 
@@ -14870,9 +14859,7 @@ table. The (blank) above is the second cell of that row -->the
                   <cell>It<ex>e</ex>m to <rs
                     ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/"
                     type="Drama_Character">Robyn hode</rs>
-                    <term ref="gloss:marresdaunce-1"><rs
-                        ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/18451/"
-                        type="Entertainer_Type">marresdau<ex>n</ex>ce</rs></term> and <rs
+                    <term ref="gloss:marresdaunce-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_SeasonalCustom">marres</rs><rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dau<ex>n</ex>ce</rs></term> and <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/29587/"
                       type="Person_Commoner">Iohn harden</rs></cell>
 
