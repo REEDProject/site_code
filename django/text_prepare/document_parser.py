@@ -20,12 +20,6 @@ The basic TEI structure generated is:
       </div>
       ...
     </div>
-    <div type="collation_notes">
-      <div type="collation_note">
-        ...
-      </div>
-      ...
-    </div>
     <div type="endnote">
       ...
     </div>
@@ -33,9 +27,8 @@ The basic TEI structure generated is:
 </text>
 ...
 
-The grammar does not enforce referential integrity (for collation
-notes), and does not produce xml:ids except for msDesc and bibl
-elements.
+The grammar does not enforce referential integrity, and does not
+produce xml:ids except for msDesc and bibl elements.
 
 It also produces document descriptions in the form of tei:bibl and
 tei:msDesc elements.
@@ -88,8 +81,6 @@ class DocumentParser:
         cedilla_code.setParseAction(self._pa_cedilla)
         circumflex_code = pp.Literal('@^') + vowels
         circumflex_code.setParseAction(self._pa_circumflex)
-        collation_ref_number_code = '@r' + pp.OneOrMore(integer) + '\\'
-        collation_ref_number_code.setParseAction(self._pa_collation_ref_number)
         damaged_code = pp.Literal('<') + (pp.Word('.', min=1) ^
                                           pp.Literal('…')) + pp.Literal('>')
         damaged_code.setParseAction(self._pa_damaged)
@@ -131,21 +122,19 @@ class DocumentParser:
         single_codes = (
             acute_code ^ ae_code ^ AE_code ^ blank_code ^ capitulum_code ^
             caret_code ^ cedilla_code ^ circumflex_code ^
-            collation_ref_number_code ^ damaged_code ^ dot_over_code ^
-            dot_under_code ^ ellipsis_code ^ en_dash_code ^ eng_code ^
-            ENG_code ^ eth_code ^ exclamation_code ^ grave_code ^ macron_code ^
-            oe_code ^ OE_code ^ page_break_code ^ paragraph_code ^ pound_code ^
-            raised_code ^ section_code ^ semicolon_code ^ special_v_code ^
-            thorn_code ^ THORN_code ^ tilde_code ^ umlaut_code ^ wynn_code ^
-            yogh_code ^ YOGH_code)
+            damaged_code ^ dot_over_code ^ dot_under_code ^ ellipsis_code ^
+            en_dash_code ^ eng_code ^ ENG_code ^ eth_code ^ exclamation_code ^
+            grave_code ^ macron_code ^ oe_code ^ OE_code ^ page_break_code ^
+            paragraph_code ^ pound_code ^ raised_code ^ section_code ^
+            semicolon_code ^ special_v_code ^ thorn_code ^ THORN_code ^
+            tilde_code ^ umlaut_code ^ wynn_code ^ yogh_code ^ YOGH_code)
         enclosed = pp.Forward()
         centred_code = pp.nestedExpr('@m\\', '@m/', content=enclosed)
         centred_code.setParseAction(self._pa_centred)
         closer_code = pp.nestedExpr('@cl\\', '@cl/', content=enclosed)
         closer_code.setParseAction(self._pa_closer)
-        collation_ref = pp.nestedExpr(
-            '@cr\\', '@cr/', content=collation_ref_number_code - enclosed)
-        collation_ref.setParseAction(self._pa_collation_ref)
+        collation_note = pp.nestedExpr('@c\\', '@c/', content=enclosed)
+        collation_note.setParseAction(self._pa_collation_note)
         comment_code = pp.nestedExpr('@xc\\', '@xc/', content=enclosed)
         comment_code.setParseAction(self._pa_comment)
         deleted_code = pp.nestedExpr('[', ']', content=enclosed)
@@ -247,7 +236,7 @@ class DocumentParser:
         title_code = pp.nestedExpr('<title>', '</title>', content=enclosed)
         title_code.setParseAction(self._pa_title)
         paired_codes = (
-            centred_code ^ closer_code ^ collation_ref ^ comment_code ^
+            centred_code ^ closer_code ^ collation_note ^ comment_code ^
             deleted_code ^ exdented_code ^ expansion_code ^ footnote_code ^
             indented_code ^ interpolation_code ^ interlineation_above_code ^
             interlineation_below_code ^ language_codes ^ left_marginale_code ^
@@ -314,18 +303,6 @@ class DocumentParser:
         translation = pp.nestedExpr(
             '@tr\\', '@tr/', content=pp.OneOrMore(transcription_section))
         translation.setParseAction(self._pa_translation)
-        collation_note_anchor = pp.Literal('@a') - pp.OneOrMore(integer) - \
-            pp.Literal('\\')
-        collation_note_anchor.setParseAction(self._pa_collation_note_anchor)
-        collation_note_content = collation_note_anchor - enclosed
-        collation_note = pp.nestedExpr('@c\\', '@c/',
-                                       content=collation_note_content)
-        collation_note.setParseAction(self._pa_collation_note)
-        collation_note_wrapper = blank + collation_note + blank
-        collation_notes = pp.nestedExpr('@cn\\', '@cn/', content=pp.OneOrMore(
-            collation_note_wrapper))
-        collation_notes.setParseAction(self._pa_collation_notes)
-        collation_notes_wrapper = blank + collation_notes + blank
         end_note = pp.nestedExpr('@en\\', '@en/', content=enclosed)
         end_note.setParseAction(self._pa_endnote)
         end_note_wrapper = blank + end_note + blank
@@ -385,7 +362,6 @@ class DocumentParser:
             comment_code + blank) - place_codes
         record = (blank + record_heading + transcription +
                   pp.Optional(translation) +
-                  pp.Optional(collation_notes_wrapper) +
                   pp.Optional(end_note_wrapper)).setResultsName(
                       'record', listAllMatches=True)
         record.setParseAction(self._pa_record)
@@ -478,21 +454,7 @@ class DocumentParser:
         return ['<closer>', ''.join(toks[0]), '</closer>']
 
     def _pa_collation_note(self, s, loc, toks):
-        return ['<div type="collation_note">\n', ''.join(toks[0]),
-                '\n</div>\n']
-
-    def _pa_collation_note_anchor(self, s, loc, toks):
-        return ['<anchor n="cn{}" />'.format(toks[1])]
-
-    def _pa_collation_notes(self, s, loc, toks):
-        return ['<div type="collation_notes">\n', ''.join(toks[0]), '</div>\n']
-
-    def _pa_collation_ref(self, s, loc, toks):
-        return ['<ref target="#cn{}" type="collation-note">{}</ref>'.format(
-            toks[0][0], toks[0][1])]
-
-    def _pa_collation_ref_number(self, s, loc, toks):
-        return [toks[1]]
+        return ['<note type="collation">', ''.join(toks[0]), '</note>']
 
     def _pa_comment(self, s, loc, toks):
         return ['<!-- ', ''.join(toks[0]), ' -->']

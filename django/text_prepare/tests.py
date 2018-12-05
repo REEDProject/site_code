@@ -109,82 +109,10 @@ It spans multiple paragraphs.!
         expected = '<closer>TTFN, Jamie</closer>'
         self._check_conversion(text, expected)
 
-    def test_collation_note_ref(self):
-        text = 'Some @cr\\@r1\\interesting text@cr/ content'
-        expected = 'Some <ref target="#cn1" type="collation-note">interesting text</ref> content'
+    def test_collation_note(self):
+        text = 'Some text@c\\text: foo@c/ content'
+        expected = 'Some text<note type="collation">text: foo</note> content'
         self._check_conversion(text, expected)
-
-    def test_collation_notes(self):
-        text = '''@h\\BPA!1532!eng\\!
-@w\\f 124 {{(19 November)}}\\!
-Test.
-@cn\\
-@c\\@a1\\A note.@c/
-@c\\@a2\\Another note.@c/
-@cn/'''
-        expected = '''<text type="record">
-<body>
-<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
-<div xml:lang="eng" type="transcription">
-<div>
-<head>f 124 <supplied>(19 November)</supplied></head>
-<pb n="124" type="folio" />
-Test.
-
-</div>
-</div>
-<div type="collation_notes">
-<div type="collation_note">
-<anchor n="cn1" />A note.
-</div>
-<div type="collation_note">
-<anchor n="cn2" />Another note.
-</div>
-</div>
-</body>
-</text>'''
-        self._check_conversion(text, expected, heading=False, subheading=False)
-
-    def test_collation_notes_translation(self):
-        text = '''@h\\BPA!1532!lat\\!
-@w\\f.40*\\!\nTextus
-@tr\\@w\\f.40*\\!
-Text@tr/
-
-@cn\\
-@c\\@a1\\A note.@c/
-@c\\@a2\\Another note.@c/
-@cn/'''
-        expected = '''<text type="record">
-<body>
-<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
-<div xml:lang="lat" type="transcription">
-<div>
-<head>f.40*</head>
-<pb />
-Textus
-
-</div>
-</div>
-<div xml:lang="eng" type="translation">
-<div>
-<head>f.40*</head>
-<pb />
-Text
-</div>
-</div>
-<div type="collation_notes">
-<div type="collation_note">
-<anchor n="cn1" />A note.
-</div>
-<div type="collation_note">
-<anchor n="cn2" />Another note.
-</div>
-</div>
-</body>
-</text>'''
-        self.maxDiff = None
-        self._check_conversion(text, expected, heading=False, subheading=False)
 
     def test_comment(self):
         text = 'some @xc\\commented out@xc/ text'
@@ -1127,16 +1055,7 @@ After table text.
 <div type="transcription">
 <div>
 <head>@w head 1.1</head>
-<ab>Some text with <ref target="#cn1" type="collation-note">collated material</ref>.</ab>
-<ab>More <ref target="#cn2" type="collation-note">material needing a collation note</ref>.</ab>
-</div>
-</div>
-<div type="collation_notes">
-<div type="collation_note">
-<ab><anchor n="cn1" />A note.</ab>
-</div>
-<div type="collation_note">
-<ab><anchor n="cn2" />Another note.</ab>
+<ab>Some text with<note type="collation">collated material</note>.</ab>
 </div>
 </div>
 </body>
@@ -1167,16 +1086,7 @@ After table text.
 <div type="transcription" xml:id="staff-ridm4-transcription">
 <div>
 <head>@w head 1.1</head>
-<ab>Some text with <ref target="#staff-ridm4-cnidm15" type="collation-note">collated material</ref>.</ab>
-<ab>More <ref target="#staff-ridm4-cnidm18" type="collation-note">material needing a collation note</ref>.</ab>
-</div>
-</div>
-<div type="collation_notes" xml:id="staff-ridm4-collation-notes">
-<div type="collation_note" xml:id="staff-ridm4-cnidm15">
-<ab>A note.</ab>
-</div>
-<div type="collation_note" xml:id="staff-ridm4-cnidm18">
-<ab>Another note.</ab>
+<ab>Some text with <note type="collation">collated material</note>.</ab>
 </div>
 </div>
 </body>

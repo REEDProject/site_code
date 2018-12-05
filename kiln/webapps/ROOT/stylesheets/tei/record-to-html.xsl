@@ -96,12 +96,12 @@
        is a tei:text[@type='record']. -->
 
   <xsl:template name="display-record-collation-notes">
-    <xsl:if test="./tei:body/tei:div[@type='collation_notes']">
+    <xsl:if test=".//tei:note[@type='collation]">
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Collation Notes</a>
         <div class="accordion-content" data-tab-content="">
           <ul class="marginalia-list">
-            <xsl:apply-templates mode="group" select="tei:body/tei:div[@type='collation_notes']" />
+            <xsl:apply-templates mode="group" select=".//tei:note[@type='collation]" />
           </ul>
         </div>
       </li>

@@ -59,12 +59,6 @@
     <xsl:text>&gt;</xsl:text>
   </xsl:template>
 
-  <xsl:template match="tei:div[@type='collation_note']" mode="group">
-    <li>
-      <xsl:apply-templates select="." />
-    </li>
-  </xsl:template>
-
   <xsl:template match="tei:ex">
     <i>
       <xsl:apply-templates />
@@ -176,6 +170,16 @@
         <xsl:apply-templates select="following-sibling::tei:item[1]/node()" />
       </td>
     </tr>
+  </xsl:template>
+
+  <xsl:template match="tei:note[@type='collation']">
+    <span class="footnote tag" note="{generate-id()}"></span>
+  </xsl:template>
+
+  <xsl:template match="tei:note[@type='collation']" mode="group">
+    <li note="{generate-id()}">
+      <xsl:apply-templates />
+    </li>
   </xsl:template>
 
   <xsl:template match="tei:note[@type='foot']">
