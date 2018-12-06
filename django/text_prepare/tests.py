@@ -269,6 +269,23 @@ A note.
         expected = 'Hark, a <note type="marginal" place="margin_left">left marginale note</note> appears'
         self._check_conversion(text, expected)
 
+    def test_line_group(self):
+        text = '@lg\\@lni\\Foo@lni/@ln\\Bar@ln/@lg/'
+        expected = '<lg><l rend="indent">Foo</l><l>Bar</l></lg>'
+        self._check_conversion(text, expected)
+        text = '''
+@lg\\
+  @lg\\
+    @lni\\Stanza 1, line 1, indented@lni/
+    @ln\\Stanza 1, line 2@ln/
+  @lg/
+  @lg\\
+    @lni\\Stanza 2, line 1, indented@lni/
+  @lg/
+@lg/'''
+        expected = '\n<lg><lg><l rend="indent">Stanza 1, line 1, indented</l><l>Stanza 1, line 2</l></lg><lg><l rend="indent">Stanza 2, line 1, indented</l></lg></lg>'
+        self._check_conversion(text, expected)
+
     def test_list(self):
         text = '@ul\\ @li\\List item@li/ @li\\Another@li/ @ul/'
         expected = '<list><item>List item</item><item>Another</item></list>'

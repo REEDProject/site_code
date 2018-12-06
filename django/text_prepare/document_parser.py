@@ -207,6 +207,19 @@ class DocumentParser:
         interpolation_code.setParseAction(self._pa_interpolation)
         left_marginale_code = pp.nestedExpr('@l\\', '@l/', content=enclosed)
         left_marginale_code.setParseAction(self._pa_left_marginale)
+        line_group_contents = pp.Forward()
+        line_code = pp.nestedExpr('@ln\\', '@ln/', content=enclosed)
+        line_code.setParseAction(self._pa_line)
+        line_indented_code = pp.nestedExpr('@lni\\', '@lni/', content=enclosed)
+        line_indented_code.setParseAction(self._pa_line_indented)
+        line_group_code = pp.nestedExpr('@lg\\', '@lg/',
+                                        content=line_group_contents)
+        line_group_code.setParseAction(self._pa_line_group)
+        line_group_contents << (
+            pp.OneOrMore(blank + line_group_code + blank) ^
+            pp.OneOrMore((blank + line_code + blank) |
+                         (blank + line_indented_code + blank))
+        )
         list_item_code = pp.nestedExpr('@li\\', '@li/', content=enclosed)
         list_item_code.setParseAction(self._pa_list_item_code)
         list_code = pp.nestedExpr('@ul\\', '@ul/', content=pp.OneOrMore(
@@ -240,7 +253,7 @@ class DocumentParser:
             deleted_code ^ exdented_code ^ expansion_code ^ footnote_code ^
             indented_code ^ interpolation_code ^ interlineation_above_code ^
             interlineation_below_code ^ language_codes ^ left_marginale_code ^
-            list_code ^ right_marginale_code ^ signed_code ^
+            line_group_code ^ list_code ^ right_marginale_code ^ signed_code ^
             signed_centre_code ^ signed_right_code ^ signed_mark_code ^
             signed_mark_centre_code ^ signed_mark_right_code ^
             superscript_code ^ tab_start_code ^ title_code)
@@ -568,6 +581,15 @@ class DocumentParser:
     def _pa_left_marginale(self, s, loc, toks):
         return ['<note type="marginal" place="margin_left">', ''.join(toks[0]),
                 '</note>']
+
+    def _pa_line(self, s, loc, toks):
+        return ['<l>', ''.join(toks[0]), '</l>']
+
+    def _pa_line_group(self, s, loc, toks):
+        return ['<lg>', ''.join(toks[0]), '</lg>']
+
+    def _pa_line_indented(self, s, loc, toks):
+        return ['<l rend="indent">', ''.join(toks[0]), '</l>']
 
     def _pa_list_item_code(self, s, loc, toks):
         return ['<item>', ''.join(toks[0]), '</item>']
