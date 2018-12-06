@@ -84,12 +84,12 @@ class Document:
         # original whitespace can cause problems in the parsing, but the
         # editors are used to that form.
         codes = [
-            'a', 'ab', 'b', 'c', 'cl', 'cn', 'cnx', 'cor', 'cr', 'ct', 'cym',
-            'deu', 'en', 'eng', 'ex', 'f', 'fra', 'g', 'gla', 'gmh', 'gml',
-            'grc', 'i', 'ita', 'l', 'lat', 'li', 'm', 'md', 'p', 'pc', 'pd',
-            'por', 'r', 's', 'sc', 'sd', 'sh', 'sl', 'sm', 'smc', 'smr', 'sn',
-            'snc', 'snr', 'spa', 'sr', 'ss', 'st', 'tr', 'ul', 'wlm', 'x',
-            'xc', 'xno']
+            'a', 'ab', 'b', 'c', 'cl', 'cnx', 'cor', 'ct', 'cym', 'deu', 'en',
+            'eng', 'ex', 'f', 'fra', 'g', 'gla', 'gmh', 'gml', 'grc', 'i',
+            'ita', 'l', 'lat', 'lg', 'li', 'ln', 'lni', 'm', 'md', 'p', 'pc',
+            'pd', 'por', 'r', 's', 'sc', 'sd', 'sh', 'sl', 'sm', 'smc', 'smr',
+            'sn', 'snc', 'snr', 'spa', 'sr', 'ss', 'st', 'tr', 'ul', 'wlm',
+            'x', 'xc', 'xno']
         for code in codes:
             text = text.replace('@{} \\'.format(code), '@{}/'.format(code))
         return text
