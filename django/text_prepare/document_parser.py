@@ -110,6 +110,10 @@ class DocumentParser:
         section_code = pp.Literal('@%').setParseAction(self._pa_section)
         semicolon_code = pp.Literal('@;').setParseAction(self._pa_semicolon)
         special_v_code = pp.Literal('@v').setParseAction(self._pa_special_v)
+        square_bracket_close_code = pp.Literal(']]').setParseAction(
+            self._pa_square_bracket_close)
+        square_bracket_open_code = pp.Literal('[[').setParseAction(
+            self._pa_square_bracket_open)
         thorn_code = pp.Literal('@th').setParseAction(self._pa_thorn)
         THORN_code = pp.Literal('@TH').setParseAction(self._pa_THORN)
         tilde_code = pp.Literal('@"') + (vowels | pp.Literal('n'))
@@ -126,7 +130,8 @@ class DocumentParser:
             en_dash_code ^ eng_code ^ ENG_code ^ eth_code ^ exclamation_code ^
             grave_code ^ macron_code ^ oe_code ^ OE_code ^ page_break_code ^
             paragraph_code ^ pound_code ^ raised_code ^ section_code ^
-            semicolon_code ^ special_v_code ^ thorn_code ^ THORN_code ^
+            semicolon_code ^ special_v_code ^ square_bracket_close_code ^
+            square_bracket_open_code ^ thorn_code ^ THORN_code ^
             tilde_code ^ umlaut_code ^ wynn_code ^ yogh_code ^ YOGH_code)
         enclosed = pp.Forward()
         centred_code = pp.nestedExpr('@m\\', '@m/', content=enclosed)
@@ -796,6 +801,12 @@ class DocumentParser:
 
     def _pa_special_v(self, s, loc, toks):
         return ['\N{LATIN SMALL LETTER MIDDLE-WELSH V}']
+
+    def _pa_square_bracket_close(self, s, loc, toks):
+        return [']']
+
+    def _pa_square_bracket_open(self, s, loc, toks):
+        return ['[']
 
     def _pa_superscript(self, s, loc, toks):
         return ['<hi rend="superscript">', ''.join(toks[0]), '</hi>']

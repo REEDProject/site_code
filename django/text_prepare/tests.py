@@ -600,6 +600,17 @@ Text
         expected = 'Special \N{LATIN SMALL LETTER MIDDLE-WELSH V}, not k'
         self._check_conversion(text, expected)
 
+    def test_square_brackets(self):
+        text = 'Literal [[.'
+        expected = 'Literal [.'
+        self._check_conversion(text, expected)
+        text = 'Literal ]].'
+        expected = 'Literal ].'
+        self._check_conversion(text, expected)
+        text = '[[ no del here ]]'
+        expected = '[ no del here ]'
+        self._check_conversion(text, expected)
+
     def test_superscript(self):
         text = 'Some @s\\superscripted@s/ text'
         expected = 'Some <hi rend="superscript">superscripted</hi> text'
