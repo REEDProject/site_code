@@ -144,6 +144,8 @@ class DocumentParser:
         comment_code.setParseAction(self._pa_comment)
         deleted_code = pp.nestedExpr('[', ']', content=enclosed)
         deleted_code.setParseAction(self._pa_deleted)
+        italic_code = pp.nestedExpr('@it\\', '@it/', content=enclosed)
+        italic_code.setParseAction(self._pa_italic)
         lang_ancient_greek_code = pp.nestedExpr('@grc\\', '@grc/',
                                                 content=enclosed)
         lang_ancient_greek_code.setParseAction(self._pa_lang_ancient_greek)
@@ -257,11 +259,12 @@ class DocumentParser:
             centred_code ^ closer_code ^ collation_note ^ comment_code ^
             deleted_code ^ exdented_code ^ expansion_code ^ footnote_code ^
             indented_code ^ interpolation_code ^ interlineation_above_code ^
-            interlineation_below_code ^ language_codes ^ left_marginale_code ^
-            line_group_code ^ list_code ^ right_marginale_code ^ signed_code ^
-            signed_centre_code ^ signed_right_code ^ signed_mark_code ^
-            signed_mark_centre_code ^ signed_mark_right_code ^
-            superscript_code ^ tab_start_code ^ title_code)
+            interlineation_below_code ^ italic_code ^ language_codes ^
+            left_marginale_code ^ line_group_code ^ list_code ^
+            right_marginale_code ^ signed_code ^ signed_centre_code ^
+            signed_right_code ^ signed_mark_code ^ signed_mark_centre_code ^
+            signed_mark_right_code ^ superscript_code ^ tab_start_code ^
+            title_code)
         enclosed << pp.OneOrMore(single_codes ^ return_code ^ paired_codes ^
                                  content ^ punctuation ^ xml_escape ^ ignored)
         cell = pp.nestedExpr('<c>', '</c>', content=enclosed)
@@ -534,6 +537,9 @@ class DocumentParser:
 
     def _pa_interpolation(self, s, loc, toks):
         return ['<handShift />', ''.join(toks[0]), '<handShift />']
+
+    def _pa_italic(self, s, loc, toks):
+        return ['<hi rend="italic">', ''.join(toks[0]), '</hi>']
 
     def _pa_lang_ancient_greek(self, s, loc, toks):
         return self._make_foreign('grc', toks)

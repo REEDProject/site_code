@@ -249,6 +249,11 @@ A note.
         nested_expected = 'Some <handShift /><handShift />really<handShift /> interpolated<handShift /> text'
         self._check_conversion(nested_text, nested_expected)
 
+    def test_italics(self):
+        text = 'Some @it\\italic@it/ text'
+        expected = 'Some <hi rend="italic">italic</hi> text'
+        self._check_conversion(text, expected)
+
     def test_lang_anglo_norman(self):
         text = 'The king said, "@xno\\Bon soir.@xno/"'
         expected = 'The king said, "<foreign xml:lang="xno">Bon soir.</foreign>"'
