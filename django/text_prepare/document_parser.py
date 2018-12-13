@@ -55,7 +55,7 @@ class DocumentParser:
         white = pp.Word(' ' + '\n')
         punctuation_chars = '. , ; : \' " ( ) * / # $ % + - ? – _ ='
         punctuation = pp.oneOf(punctuation_chars)
-        rich_content = pp.Word(pp.alphanums + ' \\\n&' + punctuation_chars)
+        rich_content = pp.Word(pp.alphanums + ' \\\n&[]' + punctuation_chars)
         rich_content.setWhitespaceChars('')
         rich_content.setParseAction(self._pa_rich_content)
         content.setDefaultWhitespaceChars('')
