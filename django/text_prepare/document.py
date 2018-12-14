@@ -24,6 +24,15 @@ from .exceptions import (TextPrepareDocumentError,
 CONTEXT_LINES_BEFORE = 1
 CONTEXT_LINES_AFTER = 2
 
+# @-codes that need to have their format modified from "@x \" to "@x/".
+CODES = [
+    'a', 'ab', 'b', 'c', 'cl', 'cnx', 'cor', 'ct', 'cym', 'deu', 'en',
+    'eng', 'ex', 'f', 'fra', 'g', 'gla', 'gmh', 'gml', 'grc', 'i', 'it',
+    'ita', 'l', 'lat', 'lg', 'li', 'ln', 'lni', 'm', 'md', 'p', 'pc',
+    'pd', 'por', 'r', 's', 'sc', 'sd', 'sh', 'sl', 'sm', 'smc', 'smr',
+    'sn', 'snc', 'snr', 'spa', 'sr', 'ss', 'st', 'tr', 'ul', 'wlm',
+    'x', 'xc', 'xno']
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 XSLT_DIR = os.path.join(BASE_DIR, 'xslt')
 AB_TO_P_XSLT_PATH = os.path.join(XSLT_DIR, 'ab_to_p.xsl')
@@ -83,14 +92,7 @@ class Document:
         # Change the format of closing @-codes from '@x \' to '@x/'. The
         # original whitespace can cause problems in the parsing, but the
         # editors are used to that form.
-        codes = [
-            'a', 'ab', 'b', 'c', 'cl', 'cnx', 'cor', 'ct', 'cym', 'deu', 'en',
-            'eng', 'ex', 'f', 'fra', 'g', 'gla', 'gmh', 'gml', 'grc', 'i',
-            'ita', 'l', 'lat', 'lg', 'li', 'ln', 'lni', 'm', 'md', 'p', 'pc',
-            'pd', 'por', 'r', 's', 'sc', 'sd', 'sh', 'sl', 'sm', 'smc', 'smr',
-            'sn', 'snc', 'snr', 'spa', 'sr', 'ss', 'st', 'tr', 'ul', 'wlm',
-            'x', 'xc', 'xno']
-        for code in codes:
+        for code in CODES:
             text = text.replace('@{} \\'.format(code), '@{}/'.format(code))
         return text
 
