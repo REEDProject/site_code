@@ -127,20 +127,22 @@
       <a href="#" class="accordion-title">Document Description</a>
       <div class="accordion-content" data-tab-content="">
         <xsl:variable name="head" select="tei:body/tei:head" />
-        <p>
-          <xsl:text>Record title: </xsl:text>
-          <xsl:value-of select="$head/tei:title" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:repository" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='shelfmark']" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:settlement" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='publication']" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='pubNumber']" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='authorSurname']" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='shortTitle']" />
-        </p>
-        <xsl:apply-templates select="$head/tei:p[@type='edDesc']" />
-        <xsl:apply-templates select="$head/tei:p[@type='docDesc']" />
-        <xsl:apply-templates select="$head/tei:p[@type='techDesc']" />
+        <xsl:for-each select="$head/tei:bibl">
+          <p>
+            <xsl:text>Record title: </xsl:text>
+            <xsl:value-of select="tei:title" />
+            <xsl:apply-templates mode="doc_desc" select="tei:repository" />
+            <xsl:apply-templates mode="doc_desc" select="tei:idno[@type='shelfmark']" />
+            <xsl:apply-templates mode="doc_desc" select="tei:settlement" />
+            <xsl:apply-templates mode="doc_desc" select="tei:idno[@type='publication']" />
+            <xsl:apply-templates mode="doc_desc" select="tei:idno[@type='pubNumber']" />
+            <xsl:apply-templates mode="doc_desc" select="tei:idno[@type='authorSurname']" />
+            <xsl:apply-templates mode="doc_desc" select="tei:idno[@type='shortTitle']" />
+          </p>
+          <xsl:apply-templates select="tei:p[@type='edDesc']" />
+          <xsl:apply-templates select="tei:p[@type='docDesc']" />
+          <xsl:apply-templates select="tei:p[@type='techDesc']" />
+        </xsl:for-each>
       </div>
     </li>
   </xsl:template>
@@ -239,7 +241,10 @@
 
   <xsl:template name="display-record-shelfmark">
     <div class="shelfmark">
-      <xsl:copy-of select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='html']/node()" />
+      <xsl:for-each select="tei:body/tei:head/tei:bibl">
+        <xsl:copy-of select="tei:span[@type='shelfmark'][@subtype='html']/node()" />
+        <xsl:if test="position()!=last()"><br /></xsl:if>
+      </xsl:for-each>
     </div>
   </xsl:template>
 
@@ -287,7 +292,7 @@
   <xsl:template name="display-record-title">
     <div class="record-title">
       <h1>
-        <xsl:apply-templates select="tei:body/tei:head/tei:title" />
+        <xsl:apply-templates select="tei:body/tei:head/tei:bibl[1]/tei:title" />
       </h1>
     </div>
   </xsl:template>

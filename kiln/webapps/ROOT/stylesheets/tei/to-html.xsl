@@ -321,6 +321,11 @@
     </i>
   </xsl:template>
 
+  <!-- tei:bibl included in a record heading should not italicise titles. -->
+  <xsl:template match="tei:head/tei:bibl/tei:title" priority="10">
+    <xsl:apply-templates select="@*|node()" />
+  </xsl:template>
+
   <xsl:template match="tei:quote">
     <xsl:choose>
       <xsl:when test=".//tei:ab | .//tei:p | .//tei:list | .//tei:table | .//tei:lg | .//tei:floatingText">

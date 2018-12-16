@@ -15,7 +15,7 @@
   </xsl:template>
 
   <xsl:template match="tei:bibl" mode="addition">
-    <xsl:copy-of select="node()" />
+    <xsl:copy-of select="." />
   </xsl:template>
 
   <xsl:template match="tei:index[@indexName='record_type']/tei:term/kiln:added"
