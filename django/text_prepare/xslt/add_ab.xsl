@@ -31,6 +31,7 @@
       </xsl:variable>
       <xsl:variable name="following"
                     select="tei:head/following-sibling::node()[generate-id(.)=$following-id]" />
+      <xsl:apply-templates select="comment()[following-sibling::node()=$following]" />
       <xsl:apply-templates mode="initial" select="$following" />
     </xsl:copy>
   </xsl:template>
