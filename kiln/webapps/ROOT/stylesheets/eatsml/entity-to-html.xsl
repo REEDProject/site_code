@@ -137,6 +137,7 @@
     <table class="display related-entities-table responsive" cellspacing="0" width="100%">
       <tbody class="related-content">
         <xsl:for-each select="$entity/relationships/relationship">
+          <xsl:sort select="name" />
           <tr>
             <td class="individual-related-entity">
               <xsl:value-of select="name" />
