@@ -173,7 +173,10 @@
   <!-- Do not index material brought in about the repository etc of a
        record. -->
   <xsl:template match="tei:index[@indexName='record_type']" mode="free-text" />
-  <xsl:template match="tei:body/tei:head/tei:bibl" mode="free-text" />
+  <xsl:template match="tei:body/tei:head/tei:bibl" mode="free-text">
+    <xsl:apply-templates select="tei:title" mode="free-text" />
+    <xsl:apply-templates select="tei:p[@type='edDesc']" mode="free-text" />
+  </xsl:template>
 
   <xsl:template match="*" mode="free-text">
     <xsl:apply-templates mode="free-text" />
