@@ -71,7 +71,7 @@
     </xsl:copy>
   </xsl:template>
 
-  <xsl:template match="tei:*[@ana]" mode="#default #referenced-record">
+  <xsl:template match="tei:*[@ana]" mode="#default referenced-record">
     <xsl:for-each select="tokenize(@ana, '\s+')">
       <xsl:call-template name="make-xinclude">
         <xsl:with-param name="url" select="." />

@@ -9,8 +9,8 @@
 
   <!-- Variables defining search parameter values. -->
   <xsl:variable name="q_value" select="normalize-space(/aggregation/h:request/h:requestParameters/h:parameter[@name='q']/h:value)" />
-  <xsl:variable name="date_from_value" select="normalize-space(/aggregation/h:request/h:requestParameters/h:parameter[@name='date_from']/h:value)" />
-  <xsl:variable name="date_to_value" select="normalize-space(/aggregation/h:request/h:requestParameters/h:parameter[@name='date_to']/h:value)" />
+  <xsl:variable name="date_from_value" select="normalize-space(/aggregation/h:request/h:requestParameters/h:parameter[@name='record_date_start']/h:value)" />
+  <xsl:variable name="date_to_value" select="normalize-space(/aggregation/h:request/h:requestParameters/h:parameter[@name='record_date_end']/h:value)" />
 
   <!-- Variables defining the sets of facets (in display order) in
        each collection of facets. -->
@@ -70,9 +70,9 @@
                        value="{$q_value}">
                 </input>
                 <div class="date-header">Enter date range:</div>
-                <input type="number" class="date" name="date_from" value="{$date_from_value}"/>
+                <input type="number" class="date" name="record_date_start" value="{$date_from_value}"/>
                 <span class="date-to">to</span>
-                <input type="number" class="date" name="date_to" value="{$date_to_value}" />
+                <input type="number" class="date" name="record_date_end" value="{$date_to_value}" />
                 <button class="button expanded" type="submit">Search</button>
               </div>
 

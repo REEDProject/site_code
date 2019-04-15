@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<query>
+<query range_fields="record_date">
   <df>text</df>
   <fq>document_type:record</fq>
-  <q type="default">*</q>
+  <q default="true">*</q>
+  <record_date default="true" type="range_start">1</record_date>
+  <record_date default="true" type="range_end">2000</record_date>
   <facet>true</facet>
   <!-- The order of the facet.field elements determines the order of
        display (within categories defined in templates/search.xml. -->

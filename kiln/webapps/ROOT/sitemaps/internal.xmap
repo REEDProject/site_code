@@ -113,10 +113,11 @@
 
       <!-- Get search results. -->
       <map:match id="local-search-query" pattern="search/*.xml">
-        <map:generate src="../assets/queries/solr/{1}.xml" />
-        <map:transform src="../stylesheets/solr/merge-parameters.xsl">
-          <map:parameter name="query-string" value="{request:queryString}" />
-        </map:transform>
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="../assets/queries/solr/{1}.xml" />
+          <map:part src="cocoon://_internal/request.xml" />
+        </map:aggregate>
+        <map:transform src="../kiln/stylesheets/solr/merge-parameters.xsl" />
         <map:transform src="../kiln/stylesheets/solr/generate-query.xsl" />
         <map:transform type="xinclude" />
         <map:serialize type="xml" />

@@ -4,10 +4,6 @@
                 xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <xsl:import href="../defaults.xsl" />
-
-  <xsl:import href="cocoon://_internal/url/reverse.xsl" />
-
   <xsl:variable name="entity" select="/aggregation/eats:entities/eats:entity[@selected='selected']" />
 
   <xsl:template match="feature|geojson" mode="geojson">
