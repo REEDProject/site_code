@@ -9,6 +9,7 @@
   <xsl:template match="tei:TEI">
     <word_list>
       <xsl:apply-templates select="tei:text/tei:group/tei:text[@type='record']/tei:body" />
+      <xsl:apply-templates select="tei:text/tei:back//tei:floatingText[@type='record']/tei:body" />
     </word_list>
   </xsl:template>
 
