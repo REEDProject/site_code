@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import datetime
 
 from eats.models import Authority, Calendar, DatePeriod, DateType, Entity, EntityRelationshipType, EntityType, Language, NameType, Script
 from eats.tests.models.model_test_case import ModelTestCase
@@ -284,6 +285,38 @@ class EATSTopicMapTestCase (ModelTestCase):
         self.assertEqual(set(self.tm.lookup_entities(
             '*', entity_relationship_types=[entity_relationship_type2])),
                          set([entity2, entity3]))
+
+    def test_lookup_entities_date (self):
+        self.assertEqual(Entity.objects.count(), 0)
+        self.assertEqual(list(self.tm.lookup_entities('Johann')), [])
+        language = self.create_language('English', 'en')
+        name_type = self.create_name_type('regular')
+        script = self.create_script('Latin', 'Latn', ' ')
+        self.authority.set_languages([language])
+        self.authority.set_name_types([name_type])
+        self.authority.set_scripts([script])
+        entity1 = self.tm.create_entity(self.authority)
+        entity1_name1 = entity1.create_name_property_assertion(
+            self.authority, name_type, language, script,
+            'Johann Sebastian Bach')
+        past = datetime.date(1000, 1, 1)
+        future = datetime.date(3000, 1, 1)
+        actual = self.tm.lookup_entities('Bach', creation_start_date=past)
+        expected = [entity1]
+        self.assertEqual(list(actual), expected)
+        actual = self.tm.lookup_entities('Bach', creation_end_date=future)
+        expected = [entity1]
+        self.assertEqual(list(actual), expected)
+        actual = self.tm.lookup_entities('Bach', creation_start_date=past,
+                                         creation_end_date=future)
+        expected = [entity1]
+        self.assertEqual(list(actual), expected)
+        actual = self.tm.lookup_entities('Bach', creation_start_date=future)
+        expected = []
+        self.assertEqual(list(actual), expected)
+        actual = self.tm.lookup_entities('Wibble', creation_start_date=past)
+        expected = []
+        self.assertEqual(list(actual), expected)
 
     def test_lookup_entities_all (self):
         # Test lookups with entity relationship type and entity type

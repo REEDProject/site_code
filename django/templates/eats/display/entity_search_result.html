@@ -23,4 +23,5 @@
   <td>{% with sis=entity.get_eats_subject_identifiers %}{% if sis %}<ul>{% for si in sis %}
       <li>{% with uri=si.subject_identifier %}<a href="{{ uri }}">{{ uri }}</a>{% endwith %}</li>
       {% endfor %}</ul>{% endif %}{% endwith %}</td>
+  <td>{{ entity.created }}</td>
 </tr>
