@@ -94,9 +94,13 @@ def search (request, topic_map):
         entity_relationship_types = [
             EntityRelationshipType.objects.get_by_identifier(type_id)
             for type_id in entity_relationship_type_ids]
+        creation_start_date = form.cleaned_data['creation_start_date']
+        creation_end_date = form.cleaned_data['creation_end_date']
         results = topic_map.lookup_entities(
             name, entity_types=entity_types,
-            entity_relationship_types=entity_relationship_types)
+            entity_relationship_types=entity_relationship_types,
+            creation_start_date=creation_start_date,
+            creation_end_date=creation_end_date)
         page_number = request.GET.get('page')
         try:
             results_per_page = settings.EATS_RESULTS_PER_PAGE
