@@ -226,6 +226,14 @@ A note.
             expected = 'b{}\N{COMBINING GRAVE ACCENT}t'.format(vowel)
             self._check_conversion(text, expected)
 
+    def test_illegible(self):
+        text = 'an@1gi1 there?'
+        expected = 'an<gap extent="1" reason="illegible" unit="chars" />1 there?'
+        self._check_conversion(text, expected)
+        text = 'i@18gin'
+        expected = 'i<gap extent="18" reason="illegible" unit="chars" />n'
+        self._check_conversion(text, expected)
+
     def test_indented(self):
         text = '@p\\Indented block of text.@p/'
         expected = '<ab type="indent">Indented block of text.</ab>'
@@ -915,7 +923,6 @@ After table text.
         actual = self._transform(text, AB_TO_P_XSLT_PATH)
         self.assertEqual(actual, expected)
 
-
     def test_add_ab(self):
         text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
@@ -1088,7 +1095,7 @@ After table text.
 <div type="transcription">
 <div>
 <head>@w head 1.1</head>
-<ab>Some text with<note type="collation">collated material</note>.</ab>
+<ab>Some text with <note type="collation">collated material</note>.</ab>
 </div>
 </div>
 </body>
