@@ -35,10 +35,12 @@ class EntityAddViewTestCase (ViewTestCase):
         form['authority'] = self.authority.get_id()
         response = form.submit('_save')
         self.assertEqual(Entity.objects.count(), 1)
-        entity_id = Entity.objects.all()[0].get_id()
+        entity = Entity.objects.all()[0]
+        entity_id = entity.get_id()
         redirect_url = reverse('eats-entity-change',
                                kwargs={'entity_id': entity_id})
         self.assertRedirects(response, redirect_url)
+        self.assertEqual(entity.creator, self.editor.user)
 
     def test_change_current_authority (self):
         authority = self.create_authority('Test2')
