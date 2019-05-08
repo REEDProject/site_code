@@ -17,9 +17,9 @@ class EATSMLImportTestCase (TestCase, BaseTestCase):
         self.reset_managers()
         self.tm = self.create_topic_map()
         self.importer = EATSMLImporter(self.tm)
-        admin_user = self.create_django_user('admin', 'admin@example.org',
-                                             'password')
-        self.admin = self.create_user(admin_user)
+        self.admin_user = self.create_django_user(
+            'admin', 'admin@example.org', 'password')
+        self.admin = self.create_user(self.admin_user)
 
     def _compare_XML (self, import_tree, expected_xml):
         parser = etree.XMLParser(remove_blank_text=True)
@@ -935,6 +935,31 @@ class EATSMLImportTestCase (TestCase, BaseTestCase):
        'entity': entity.get_id()}
         self.importer.import_xml(import_xml, self.admin)[1]
         self.assertEqual(entity.get_existences().count(), 2)
+
+    def test_import_new_entity_creator (self):
+        authority = self.create_authority('Test')
+        import_xml = '''
+<collection xmlns="http://eats.artefact.org.nz/ns/eatsml/">
+  <authorities>
+    <authority xml:id="authority-1" eats_id="%(authority)d">
+      <name>Test</name>
+    </authority>
+  </authorities>
+  <entities>
+    <entity xml:id="entity-1"></entity>
+  </entities>
+</collection>''' % {'authority': authority.get_id()}
+        annotated_import = self.importer.import_xml(import_xml, self.admin)[1]
+        entity = Entity.objects.all()[0]
+        expected_xml = '''
+<collection xmlns="http://eats.artefact.org.nz/ns/eatsml/">
+  <entities>
+    <entity xml:id="entity-1" eats_id="%(entity)d" url="%(entity_url)s"></entity>
+  </entities>
+</collection>''' % {'authority': authority.get_id(), 'entity': entity.get_id(),
+                    'entity_url': entity.get_eats_subject_identifier()}
+        self._compare_XML(annotated_import, expected_xml)
+        self.assertEqual(entity.creator, self.admin_user)
 
     def test_import_new_entity_entity_relationship (self):
         authority = self.create_authority('Test')

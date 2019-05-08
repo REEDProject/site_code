@@ -180,7 +180,7 @@ class EATSTopicMap (TopicMap):
         date_type.create_name(name, name_type=self.admin_name_type)
         return date_type
 
-    def create_entity (self, authority=None):
+    def create_entity (self, authority=None, user=None):
         """Creates a new entity.
 
         If `authority` is specified, create an accompanying existence
@@ -197,6 +197,9 @@ class EATSTopicMap (TopicMap):
         entity.add_type(self.entity_type)
         if authority is not None:
             entity.create_existence_property_assertion(authority)
+        if user is not None:
+            entity.creator = user
+            entity.save()
         return entity
 
     def create_entity_relationship_type (self, name, reverse_name):

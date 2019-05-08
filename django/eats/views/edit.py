@@ -41,7 +41,7 @@ def entity_add (request, topic_map):
             authority = Authority.objects.get_by_identifier(authority_id)
             if authority != editor.get_current_authority():
                 editor.set_current_authority(authority)
-            entity = topic_map.create_entity(authority)
+            entity = topic_map.create_entity(authority, user=request.user)
             redirect_url = reverse('eats-entity-change',
                                    kwargs={'entity_id': entity.get_id()})
             return redirect(redirect_url)

@@ -41,6 +41,22 @@ class EATSTopicMapTestCase (ModelTestCase):
         self.assertEqual(DateType.objects.count(), 1)
         self.assertTrue(date_type in DateType.objects.all())
 
+    def test_create_entity (self):
+        self.assertEqual(Entity.objects.count(), 0)
+        entity_1 = self.tm.create_entity()
+        self.assertEqual(Entity.objects.count(), 1)
+        self.assertEqual(entity_1.get_existences().count(), 0)
+        entity_2 = self.tm.create_entity(authority=self.authority)
+        self.assertEqual(Entity.objects.count(), 2)
+        self.assertEqual(entity_2.get_existences().count(), 1)
+        self.assertEqual(entity_2.get_existences()[0].authority,
+                         self.authority)
+        user = self.create_django_user('clara', 'clara@foo.org', 'cfo#1')
+        entity_3 = self.tm.create_entity(user=user)
+        self.assertEqual(Entity.objects.count(), 3)
+        self.assertEqual(entity_3.get_existences().count(), 0)
+        self.assertEqual(entity_3.creator, user)
+
     def test_create_entity_relationship_type (self):
         self.assertEqual(EntityRelationshipType.objects.count(), 0)
         er_type = self.tm.create_entity_relationship_type('Forward', 'Reverse')

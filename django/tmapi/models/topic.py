@@ -14,6 +14,7 @@
 
 """Module defining the Topic model and its managers."""
 
+from django.contrib.auth.models import User
 from django.db import models
 
 from tmapi.constants import AUTOMERGE_FEATURE_STRING, XSD_ANY_URI, XSD_FLOAT, \
@@ -42,6 +43,7 @@ class Topic (Construct, ConstructFields):
     types = models.ManyToManyField('self', symmetrical=False, blank=True,
                                    related_name='typed_topics')
     created = models.DateTimeField(auto_now_add=True)
+    creator = models.ForeignKey(User, blank=True, null=True)
 
     class Meta:
         app_label = 'tmapi'
