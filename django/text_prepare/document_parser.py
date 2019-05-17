@@ -98,6 +98,8 @@ class DocumentParser:
             self._pa_exclamation)
         grave_code = pp.Literal('@,') + vowels
         grave_code.setParseAction(self._pa_grave)
+        illegible_code = pp.Literal('@') + integer + pp.Literal('gi')
+        illegible_code.setParseAction(self._pa_illegible)
         macron_code = pp.Literal('@-') + vowels
         macron_code.setParseAction(self._pa_macron)
         oe_code = pp.Literal('@oe').setParseAction(self._pa_oe)
@@ -128,7 +130,7 @@ class DocumentParser:
             caret_code ^ cedilla_code ^ circumflex_code ^
             damaged_code ^ dot_over_code ^ dot_under_code ^ ellipsis_code ^
             en_dash_code ^ eng_code ^ ENG_code ^ eth_code ^ exclamation_code ^
-            grave_code ^ macron_code ^ oe_code ^ OE_code ^ page_break_code ^
+            grave_code ^ illegible_code ^ macron_code ^ oe_code ^ OE_code ^ page_break_code ^
             paragraph_code ^ pound_code ^ raised_code ^ section_code ^
             semicolon_code ^ special_v_code ^ square_bracket_close_code ^
             square_bracket_open_code ^ thorn_code ^ THORN_code ^
@@ -525,6 +527,10 @@ class DocumentParser:
 
     def _pa_grave(self, s, loc, toks):
         return ['{}\N{COMBINING GRAVE ACCENT}'.format(toks[1])]
+
+    def _pa_illegible(self, s, loc, toks):
+        return ['<gap extent="{}" reason="illegible" unit="chars" />'.format(
+            toks[1])]
 
     def _pa_indented(self, s, loc, toks):
         return ['<ab type="indent">', ''.join(toks[0]), '</ab>']

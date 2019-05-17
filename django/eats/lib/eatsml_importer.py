@@ -84,6 +84,7 @@ class EATSMLImporter (EATSMLHandler):
         # user's editable authorities - abort the import if the former
         # isn't a subset of the latter. Except in the case of an
         # administrator.
+        self._user = user
         parser = etree.XMLParser(remove_blank_text=True)
         try:
             import_tree = etree.XML(eatsml, parser).getroottree()
@@ -421,11 +422,12 @@ class EATSMLImporter (EATSMLHandler):
         """
         entity_elements = tree.xpath('/e:collection/e:entities/e:entity',
                                      namespaces=NSMAP)
+        user = self._user.user
         for entity_element in entity_elements:
             xml_id = entity_element.get(XML + 'id')
             eats_id = self._get_element_eats_id(entity_element)
             if eats_id is None:
-                entity = self._topic_map.create_entity()
+                entity = self._topic_map.create_entity(user=user)
                 entity_element.set('eats_id', str(entity.get_id()))
                 url = entity.get_eats_subject_identifier().to_external_form()
                 entity_element.set('url', url)

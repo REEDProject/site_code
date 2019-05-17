@@ -180,7 +180,7 @@ class EATSTopicMap (TopicMap):
         date_type.create_name(name, name_type=self.admin_name_type)
         return date_type
 
-    def create_entity (self, authority=None):
+    def create_entity (self, authority=None, user=None):
         """Creates a new entity.
 
         If `authority` is specified, create an accompanying existence
@@ -197,6 +197,9 @@ class EATSTopicMap (TopicMap):
         entity.add_type(self.entity_type)
         if authority is not None:
             entity.create_existence_property_assertion(authority)
+        if user is not None:
+            entity.creator = user
+            entity.save()
         return entity
 
     def create_entity_relationship_type (self, name, reverse_name):
@@ -562,9 +565,11 @@ class EATSTopicMap (TopicMap):
                 LANGUAGE_TYPE_IRI), '_language_type')
 
     def lookup_entities (self, query, entity_types=None,
-                         entity_relationship_types=None):
+                         entity_relationship_types=None,
+                         creation_start_date=None, creation_end_date=None):
         """Returns entities that match `query` that are of the supplied entity
-        types.
+        types, and created between `creation_start_date` and
+        `creation_end_date`.
 
         If no entity types are supplied, any entity type is acceptable.
 
@@ -575,6 +580,12 @@ class EATSTopicMap (TopicMap):
         :param entity_relationship_types: entity relationship types to
                                           restrict search to
         :type entity_relationship_types: `list`
+        :param creation_start_date: date at or after which an entity
+                                    must have been created
+        :type creation_start_date: `datetime.date`
+        :param creation_end_date: date at or before which an entity
+                                  must have been created
+        :type creation_end_date: `datetime.date`
         :rtype: `QuerySet` of `Entity`
 
         """
@@ -589,6 +600,9 @@ class EATSTopicMap (TopicMap):
         if entity_relationship_types:
             results = results.filter_by_entity_relationship_types(
                 entity_relationship_types)
+        if creation_start_date is not None or creation_end_date is not None:
+            results = results.filter_by_creation_date(creation_start_date,
+                                                      creation_end_date)
         for query in queries:
             results = results.filter(query)
         return results.distinct()

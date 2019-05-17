@@ -69,8 +69,26 @@ class EntityQuerySet (models.QuerySet):
                 iri=settings.EATS_TOPIC_MAP)
         return self._eats_topic_map
 
+    def filter_by_creation_date (self, start_date, end_date):
+        """Returns this manager's queryset filtered to include entities
+        created between `start_date` and `end_date`.
+
+        """
+        if start_date is None and end_date is None:
+            return self
+        if start_date is not None:
+            start_query = models.Q(created__date__gte=start_date)
+            if end_date is None:
+                return self.filter(start_query)
+        if end_date is not None:
+            end_query = models.Q(created__date__lte=end_date)
+            if start_date is None:
+                return self.filter(end_query)
+        return self.filter(start_query, end_query)
+
     def filter_by_duplicate_subject_identifiers (self, entity,
                                                  subject_indicator, authority):
+
         """Returns entities, excluding `entity`, that have a subject
         identifier property assertion matching `subject_identifier`.
 
