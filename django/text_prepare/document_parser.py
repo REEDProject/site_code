@@ -398,15 +398,15 @@ class DocumentParser:
         """Return the expanded page type indicated by the abbreviation `data`,
         or an empty string if not match is found."""
         ptype = ''
-        if data in ('f', 'ff'):
+        if data in ('f', 'ff', 'folio', 'folios'):
             ptype = 'folio'
-        elif data in ('mb', 'mbs'):
+        elif data in ('mb', 'mbs', 'membrane', 'membranes'):
             ptype = 'membrane'
-        elif data in ('p', 'pp'):
+        elif data in ('p', 'pp', 'page', 'pages'):
             ptype = 'page'
         elif data in ('sheet', 'sheets'):
             ptype = 'sheet'
-        elif data in ('sig', 'sigs'):
+        elif data in ('sig', 'sigs', 'signature', 'signatures'):
             ptype = 'signature'
         return ptype
 
