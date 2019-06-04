@@ -1162,7 +1162,7 @@ After table text.
 <div type="transcription">
 <div>
 <head>@w head 1.1</head>
-<ab>Some text with <note type="foot">with: <gap reason="omitted" /> <ex>see f <del>1v</del>.</ex></note>.</ab>
+<ab>Some text with <note type="foot">with: <gap reason="omitted" /> <hi rend="italic">see f [1v].</hi></note>.</ab>
 </div>
 </div>
 </body>
