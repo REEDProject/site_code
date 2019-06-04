@@ -70,9 +70,11 @@
   </xsl:template>
 
   <xsl:template match="tei:gap[@extent]">
+    <xsl:text>&lt;</xsl:text>
     <xsl:for-each select="1 to @extent">
       <xsl:text>.</xsl:text>
     </xsl:for-each>
+    <xsl:text>&gt;</xsl:text>
   </xsl:template>
 
   <xsl:template match="tei:gap[@reason='omitted']">
