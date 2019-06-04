@@ -54,6 +54,8 @@
   <xsl:template match="tei:text[@type='record']">
     <xsl:variable name="free-text">
       <xsl:apply-templates mode="free-text" select="." />
+      <xsl:text> </xsl:text>
+      <xsl:apply-templates mode="free-text-notes" select=".//tei:note" />
     </xsl:variable>
     <xsl:if test="normalize-space($free-text)">
       <doc>
@@ -178,7 +180,13 @@
     <xsl:apply-templates select="tei:p[@type='edDesc']" mode="free-text" />
   </xsl:template>
 
+  <xsl:template match="tei:note" mode="free-text" />
+
   <xsl:template match="*" mode="free-text">
+    <xsl:apply-templates mode="free-text" />
+  </xsl:template>
+
+  <xsl:template match="tei:note" mode="free-text-note">
     <xsl:apply-templates mode="free-text" />
   </xsl:template>
 
