@@ -342,7 +342,7 @@ class DocumentParser:
                                                   content=rich_content)
         source_repository.setParseAction(self._pa_source_data)
         source_shelfmark = blank + pp.nestedExpr('@ss\\', '@ss/',
-                                                 content=rich_content)
+                                                 content=enclosed)
         source_shelfmark.setParseAction(self._pa_source_data)
         source_date = blank + pp.nestedExpr('@st\\', '@st/',
                                             content=rich_content)
