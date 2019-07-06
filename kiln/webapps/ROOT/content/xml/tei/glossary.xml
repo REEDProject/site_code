@@ -1059,6 +1059,23 @@
             <div xml:id="english" corresp="#english_headnote">
                 <head>English Glossary</head>
                 <div n="A" xml:id="gloss-eng-A">
+                    <entry xml:id="abhompnacyon">
+                        <form>
+                            <orth>abhompnacyon</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="abhompnacyon-1">abomination</sense>
+                    </entry>
+                    
+                    <entry xml:id="aboade">
+                        <form>
+                            <orth>aboade</orth>
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="aboade-1">to presage, foretell; typically used to denote an ominous foretelling, but here used in a positive sense <ref>[<hi
+                            rend="italic">OEDO</hi> abode <hi rend="italic">v</hi>]</ref></sense>
+                    </entry>
+                    
                     <entry xml:id="aboef">
                         <form>
                             <orth>aboef</orth>
@@ -1066,7 +1083,16 @@
                         </form>
                         <sense xml:id="aboef-1">above</sense>
                     </entry>
-
+                   
+                    <entry xml:id="abridgis">
+                        <form>
+                            <orth>a bridgis</orth>
+                            <gram>adj phr</gram>
+                        </form>
+                        <sense xml:id="abridgis-1">of a type made in Bruges <ref>[<hi
+                            rend="italic">OEDO</hi> a <hi rend="italic">prep.2</hi> 8; Bruges <hi rend="italic">n</hi> 1.b,c]</ref></sense>
+                    </entry>
+                    
                     <entry xml:id="accavnt">
                         <form>
                             <orth>accavnt</orth>
@@ -1084,6 +1110,30 @@
                             kind</sense>
                     </entry>
 
+                    <entry xml:id="adossyne">
+                        <form>
+                            <orth>adossyne</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="adossyne-1">a dozen</sense>
+                    </entry>
+                    
+                    <entry xml:id="affecon">
+                        <form>
+                            <orth>affecon</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="affecon-1">affection</sense>
+                    </entry>
+                    
+                    <entry xml:id="aftorwardes">
+                        <form>
+                            <orth>aftorwardes</orth>
+                            <gram>adv</gram>
+                        </form>
+                        <sense xml:id="aftorwardes-1">afterwards</sense>
+                    </entry>
+
                     <entry xml:id="agayn">
                         <form>
                             <orth>agayn</orth>
@@ -1091,7 +1141,15 @@
                         </form>
                         <sense xml:id="agayn-1">against, in anticipation of</sense>
                     </entry>
-
+                    
+                    <entry xml:id="aggratiuitie">
+                        <form>
+                            <orth>aggratuitie</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="aggratuitie-1">a gratuity(?)</sense>
+                    </entry>
+                    
                     <entry xml:id="aldren">
                         <form>
                             <orth>aldren</orth>
@@ -1127,12 +1185,53 @@
                         </sense>
                     </entry>
 
+                    <entry xml:id="allegennce">
+                        <form>
+                            <orth>allegennce</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="allegennce-1">allegiance</sense>
+                    </entry>
+
+                    <entry xml:id="almannde">
+                        <form>
+                            <orth>almannde</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="almannde-1">almond</sense>
+                    </entry>
+                    
                     <entry xml:id="altogaether">
                         <form>
                             <orth>altogaether</orth>
                             <gram>adv</gram>
                         </form>
                         <sense xml:id="altogaether-1">all together</sense>
+                    </entry>
+
+                    <entry xml:id="amarous">
+                        <form>
+                            <orth>amarous</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="amarous-1">amorous</sense>
+                    </entry>
+                    
+                    <entry xml:id="amoungst">
+                        <form>
+                            <orth>a moungst</orth>
+                            <gram>prep</gram>
+                        </form>
+                        <sense xml:id="amoungst-1">amongst</sense>
+                    </entry>
+
+                    <entry xml:id="andever">
+                        <form>
+                            <orth>andever</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="andever-1">Andover; <form><orth>andeuer</orth></form>
+                        </sense>
                     </entry>
 
                     <entry xml:id="anenst">
@@ -1153,7 +1252,32 @@
                         </form>
                         <sense xml:id="anilye-1">only</sense>
                     </entry>
-
+                    
+                    <entry xml:id="apirithe">
+                        <form>
+                            <orth>apirithe</orth>
+                            <gram>v pr</gram>
+                        </form>
+                        <sense xml:id="apirithe-1">appear</sense>
+                    </entry>
+                    
+                    <entry xml:id="apperell">
+                        <form>
+                            <orth>apperell</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="apperell-1">April; <form><orth>apryell</orth></form>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="armoricall">
+                        <form>
+                            <orth>armoricall</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="armoricall-1">Armorical; an inhabitant of Armorica, likely here a Breton</sense>
+                    </entry>
+                    
                     <entry xml:id="arraysed">
                         <form>
                             <orth>arrayse</orth>
@@ -1169,6 +1293,14 @@
                             </form>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="ascustemyd">
+                        <form>
+                            <orth>ascustemyd</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="ascustemyd-1">accustomed</sense>
+                    </entry>
 
                     <entry xml:id="assertance">
                         <form>
@@ -1177,6 +1309,22 @@
                         </form>
                         <sense xml:id="assertance-1">assurance, certainty</sense>
                     </entry>
+                    
+                    <entry xml:id="assice">
+                        <form>
+                            <orth>assice</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="assice-1">assize</sense>
+                    </entry>
+                    
+                    <entry xml:id="attaynte">
+                        <form>
+                            <orth>attaynte</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="attaynte-1">attainted, convicted, infected</sense>
+                    </entry>
 
                     <entry xml:id="aucthoritei">
                         <form>
@@ -1184,6 +1332,54 @@
                             <gram>n</gram>
                         </form>
                         <sense xml:id="aucthoritei-1">authority</sense>
+                    </entry>
+
+                    <entry xml:id="audicthowse">
+                        <form>
+                            <orth>audict howse</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="audicthowse-1">audit house; <form><orth>auditehouse</orth></form>, <form><orth>audithouse</orth></form></sense>
+                    </entry>
+                    
+                    <entry xml:id="authorishe">
+                        <form>
+                            <orth>authorishe</orth>
+                            <gram>v pr</gram>
+                        </form>
+                        <sense xml:id="authorishe-1">authorize;
+                            <form>
+                                <orth>authorished</orth>
+                                <gram>pa</gram>
+                            </form>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="averstone">
+                        <form>
+                            <orth>averstone</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="averstone-1">Alverstone(?)</sense>
+                    </entry>
+                    
+                    <entry xml:id="awntient">
+                        <form>
+                            <orth>awntient</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="awntient-1">ancient</sense>
+                    </entry>
+                    
+                    <entry xml:id="awntyke">
+                        <form>
+                            <orth>awntyke</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="awntyke-1">antic, fantastic tracery or sculpture(?) <ref>[<hi rend="italic">OEDO</hi> antic <hi
+                            rend="italic">adj and n</hi> B.n.1.a]</ref>, or possibly antique, a relic of ancient art, or of bygone days(?) <ref>[<hi rend="italic">OEDO</hi> antique <hi
+                                rend="italic">adj and n</hi> B.n.2]</ref>
+                        </sense>
                     </entry>
 
                     <entry xml:id="axid">
