@@ -2763,6 +2763,38 @@
                         <sense xml:id="fache-1">fetch</sense>
                     </entry>
 
+                    <entry xml:id="familliarte">
+                        <form>
+                            <orth>familliarte</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="familliarte-1">familiarity</sense>
+                    </entry>
+                    
+                    <entry xml:id="fead">
+                        <form>
+                            <orth>fead</orth>
+                            <gram>v inf, pr</gram>
+                        </form>
+                        <sense xml:id="fead-1">feed</sense>
+                    </entry>
+                    
+                    <entry xml:id="fedelere">
+                        <form>
+                            <orth>fedelere</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="fedelere-1">fiddler</sense>
+                    </entry>
+                    
+                    <entry xml:id="feferme">
+                        <form>
+                            <orth>feferme</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="feferme-1">fee-farm; here likely used to denote document(s) establishing the perpetual fixed rent of an estate for an owner and his heirs <ref>[<hi rend="italic">OEDO</hi> fee-farm <hi rend="italic">n</hi>, fee-simple <hi rend="italic">n</hi>]</ref></sense>
+                    </entry>
+                    
                     <entry xml:id="fett">
                         <form>
                             <orth>fett</orth> <!--headword based on "fett" in Berks Didcot: it's passive in context but could it also double as a present tense form?--> 
@@ -2771,6 +2803,72 @@
                         <sense xml:id="fett-1">to fetch</sense>
                     </entry>
 
+                    <entry xml:id="fewell">
+                        <form>
+                            <orth>fewell</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="fewell-1">fuel</sense>
+                    </entry>
+                    
+                    <entry xml:id="fewellyng">
+                        <form>
+                            <orth>fewell</orth> <!-- dummy headword based on "fewellyng"-->
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="fewellyng-1">fuel;
+                        <form>
+                            <orth>fewellyng</orth>
+                            <gram>prp</gram>
+                        </form>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="feyse">
+                        <form>
+                            <orth>feyse</orth>
+                            <gram>v inf, pr</gram>
+                        </form>
+                        <sense xml:id="feyse-1">feeze, frighten <ref>[<hi rend="italic">OEDO</hi> feeze <hi rend="italic">v.1</hi> 2]</ref></sense>
+                    </entry>
+
+                    <entry xml:id="felenes">
+                        <form>
+                            <orth>felenes</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="felenes-1">feleness, greatness of number or quantity <ref>[<hi rend="italic">OEDO</hi> fele <hi rend="italic">adv (and n.) and adj.2</hi>]</ref></sense> <!--n.b. the markup here is not in error: "adv. (and n.) and adj.2" is the full grammatical designation-->
+                    </entry>
+                    
+                    <entry xml:id="fermour">
+                        <form>
+                            <orth>fermour</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="fermour-1">farmer</sense>
+                    </entry>
+                    
+                    <entry xml:id="feuerell">
+                        <form>
+                            <orth>feuerell</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="feuerell-1">February</sense>
+                    </entry>
+                   
+                    <entry xml:id="fotte">
+                        <form>
+                            <orth>fight</orth>
+                            <gram>v inf</gram> <!-- dummy headword based on "fotte"--> 
+                        </form>
+                        <sense xml:id="fotte-1">to fight;
+                            <form>
+                                <orth>fotte</orth>
+                                <gram>pt</gram>
+                            </form>
+                        </sense>
+                    </entry>
+                   
                     <entry xml:id="flattcappe">
                         <form>
                             <orth>flatt cappe</orth>
@@ -2792,7 +2890,6 @@
                         </sense>
                     </entry>
 
-
                     <entry xml:id="flonge">
                         <form>
                             <orth>fling</orth>
@@ -2806,13 +2903,47 @@
                             </form>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="folo">
+                        <form>
+                            <orth>folo</orth>
+                            <gram>v inf</gram> <!-- dummy headword based on foloythe--> 
+                        </form>
+                        <sense xml:id="folo-1">follow;
+                        <form><orth>foloythe</orth><gram>prp</gram></form>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="forran">
+                        <form>
+                            <orth>forran</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="forran-1">foreign</sense>
+                    </entry>
 
+                    <entry xml:id="forseyd">
+                        <form>
+                            <orth>forseyd</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="forseyd-1">foresaid</sense>
+                    </entry>
+                    
                     <entry xml:id="fostyan">
                         <form>
                             <orth>fostyan</orth>
                             <gram>n</gram>
                         </form>
                         <sense xml:id="fostyan-1">fustian</sense>
+                    </entry>
+                    
+                    <entry xml:id="fouttmen">
+                        <form>
+                            <orth>fouttmen</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="fouttmen-1">footmen</sense>
                     </entry>
 
                     <entry xml:id="foynes">
@@ -2821,6 +2952,32 @@
                             <gram>n pl</gram>
                         </form>
                         <sense xml:id="foynes-1">fines, fine clothing</sense>
+                    </entry>
+                    
+                    <entry xml:id="frise">
+                        <form>
+                            <orth>frise</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="frise-1">frieze</sense>
+                    </entry>
+                    
+                    <entry xml:id="fyld">
+                        <form>
+                            <orth>fyld</orth>
+                            <gram>n in phr</gram>
+                            <orth>fyld peece</orth>
+                        </form>
+                        <sense xml:id="fyld-1">cannon</sense>
+                    </entry>
+                    
+                    <entry xml:id="fylle">
+                        <form>
+                            <orth>fylle</orth>
+                            <gram>adv in phr</gram>
+                            <orth>on the fylle</orth>
+                        </form>
+                        <sense xml:id="fylle-1">in full</sense>
                     </entry>
 
                 </div>
