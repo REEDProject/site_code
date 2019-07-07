@@ -2450,6 +2450,38 @@
 
                 <div n="D" xml:id="gloss-eng-D">
 
+                    <entry xml:id="dallinge">
+                        <form>
+                            <orth>dally</orth> <!--dummy headword based on "dallinge"--> 
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="dallinge-1">to dally;
+                        <form>
+                            <orth>dallinge</orth>
+                            <gram>prp</gram>
+                        </form>
+                        </sense>
+                    </entry>
+
+                    <entry xml:id="dawnsor">
+                        <form>
+                            <orth>dawnsor</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="dawnsor-1">dancer</sense>
+                    </entry>
+                    
+                    <entry xml:id="dawnssyng">
+                        <form>
+                            <orth>dawnssyng</orth>
+                            <gram>vb n in phr</gram>
+                            <orth>dawnssyng siluer</orth>
+                        </form>
+                        <sense xml:id="dawnssyng-1">dancing silver; money paid for dancing;
+                        <form><orth>dawnsyng siluer</orth></form>
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="demeaynyng">
                         <form>
                             <orth>demeaynyng</orth>
@@ -2458,6 +2490,22 @@
                         <sense xml:id="demeaynyng-1">demeaning, behaviour</sense>
                     </entry>
 
+                    <entry xml:id="deryst">
+                        <form>
+                            <orth>deryst</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="deryst-1">dearest</sense>
+                    </entry>
+                    
+                    <entry xml:id="descyfer">
+                        <form>
+                            <orth>descyfer</orth>
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="descyfer-1">decipher</sense>
+                    </entry>
+                    
                     <entry xml:id="despose">
                         <form>
                             <orth>despose</orth>
@@ -2465,6 +2513,16 @@
                             <gram>v inf, pr</gram>
                         </form>
                         <sense xml:id="despose-1">to depose, testify</sense> 
+                    </entry>
+
+                    <entry xml:id="disceipte">
+                        <form>
+                            <orth>disceipte</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="disceipte-1">deceit;
+                        <form><orth>disceyte</orth></form>
+                        </sense>
                     </entry>
 
                     <entry xml:id="distreyne">
@@ -2478,6 +2536,14 @@
                                     rend="italic">v</hi> II.7.a]</ref>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="diuors">
+                        <form>
+                            <orth>diours</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="diuors-1">divers</sense>
+                    </entry>
 
                     <entry xml:id="dogge">
                         <form>
@@ -2488,6 +2554,14 @@
                         <sense xml:id="dogge-1">to hunt with a dog</sense>
                     </entry>
 
+                    <entry xml:id="dotter">
+                        <form>
+                            <orth>dotter</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="dotter-1">a decayed piece of timber <ref>[<hi rend="italic">OEDO</hi> doddered <hi rend="italic">adj</hi> 1.a]</ref></sense>
+                    </entry>
+
                     <entry xml:id="dowcke">
                         <form>
                             <orth>dowcke</orth>
@@ -2495,13 +2569,46 @@
                         </form>
                         <sense xml:id="dowcke-1">duck</sense>
                     </entry>
-
+                    
+                    <entry xml:id="dowellyng">
+                        <form>
+                            <orth>dowellyng</orth>
+                            <gram>vb n in phr</gram>
+                            <orth>dowellyng money</orth>
+                        </form>
+                        <sense xml:id="dowellyng-1">dwelling money, payment for temporary lodging(?)</sense>
+                    </entry>
+                    
+                    <entry xml:id="drierie">
+                        <form>
+                            <orth>drierie</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="drierie-1">dreary</sense>
+                    </entry>
+                    
+                    <entry xml:id="drome">
+                        <form>
+                            <orth>drome</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="drome-1">drum; here used to refer to a drummer</sense>
+                    </entry>
+                    
                     <entry xml:id="droncnes">
                         <form>
                             <orth>droncnes</orth>
                             <gram>n</gram>
                         </form>
                         <sense xml:id="droncnes-1">drunkness, drunkenness</sense>
+                    </entry>
+                    
+                    <entry xml:id="dysarde">
+                        <form>
+                            <orth>dysarde</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="dysarde-1">dizzard; a jester or foolish person</sense>
                     </entry>
 
                 </div>
