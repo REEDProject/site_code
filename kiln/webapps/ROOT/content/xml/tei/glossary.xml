@@ -1399,6 +1399,15 @@
 
                 <div n="B" xml:id="gloss-eng-B">
 
+                    <entry xml:id="bancketeth">
+                        <form>
+                            <orth>bancket</orth>
+                            <gram>v inf</gram><!--dummy infinitive based on "bancketeth" (currently the only instance of this verb)--> 
+                        </form>
+                        <sense xml:id="bancketeth-1">banquet; <form><orth>bancketeth</orth><gram>prp</gram></form>
+                        </sense>
+                    </entry>
+                   
                     <entry xml:id="baner">
                         <form>
                             <orth>baner</orth>
@@ -1410,7 +1419,15 @@
                                     rend="italic">n</hi> 1.2.a]</ref>
                         </sense>
                     </entry>
-
+                    
+                    <entry xml:id="banke">
+                        <form>
+                            <orth>banke</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="banke-1">bank; possibly a bench, or a set or array of similar items <ref>[<hi rend="italic">OEDO</hi> bank <hi rend="italic">n.2</hi> 1, 6.a]</ref></sense>
+                    </entry>
+                    
                     <entry xml:id="bankitt">
                         <form>
                             <orth>bankitt</orth>
@@ -1441,7 +1458,8 @@
                             <orth>barward</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="barward-1">bearward</sense>
+                        <sense xml:id="barward-1">bearward; <form><orth>barod(?)</orth></form>, <form><orth>bererd</orth></form>, <form><orth>berewood</orth></form>, <form><orth>berherd</orth></form>, <form><orth>berode</orth></form>, <form><orth>berrerd</orth></form>
+                        </sense>
                     </entry>
 
                     <entry xml:id="bason">
@@ -1464,6 +1482,14 @@
                         </sense>
                     </entry>
 
+                    <entry xml:id="baudnes">
+                        <form>
+                            <orth>baudnes</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="baudnes-1">bawdiness</sense>
+                    </entry>
+
                     <entry xml:id="bawderyck">
                         <form>
                             <orth>bawderyck</orth>
@@ -1473,15 +1499,12 @@
                             to support items such as swords or musical instruments</sense>
                     </entry>
 
-                    <entry xml:id="bayly">
+                    <entry xml:id="baylie">
                         <form>
-                            <orth>bayly</orth>
+                            <orth>baylie</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="bayly-1">bailiff; <form>
-                                <orth>baylyes</orth>
-                                <gram>pl</gram>
-                            </form>
+                        <sense xml:id="baylie-1">bailiff; <form><orth>baalife</orth></form>, <form><orth>baylef</orth></form>, <form><orth>baylief</orth></form>, <form><orth>bayly</orth></form>; <form><orth>baylyes</orth><gram>pl</gram></form>
                         </sense>
                     </entry>
 
@@ -1493,6 +1516,19 @@
                         <sense xml:id="baysse-1">base, here likely flooring</sense>
                     </entry>
 
+                    <entry xml:id="be">
+                        <form>
+                            <orth>be</orth><!--dummy headword based on "byin"-->
+                            <gram>v pr</gram>
+                        </form>
+                        <sense xml:id="be-1">to be;
+                        <form>
+                            <orth>byin</orth>
+                            <gram>pt</gram>
+                        </form>
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="beated">
                         <form>
                             <orth>beate</orth>
@@ -1534,10 +1570,15 @@
 
                     <entry xml:id="ber">
                         <form>
-                            <orth>ber</orth>
+                            <orth>bear</orth> <!--there is specifically an instance in HASOCC that needs to have this dinstinction clarified-->
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="ber-1">beer; <form>
+                        <sense xml:id="ber-1">beer; <form><orth>ber</orth></form>;  
+                            <form>
+                                <orth>berryes</orth>
+                                <gram>pl</gram> bears, here understood to be accompanied by bearwards;
+                            </form>
+                            <form>
                                 <orth>berman</orth>
                                 <gram>n</gram>
                             </form> beerman, a man who serves beer </sense>
@@ -1551,6 +1592,14 @@
                         <sense xml:id="berde-1">beard, here a false beard</sense>
                     </entry>
 
+                    <entry xml:id="bereafe">
+                        <form>
+                            <orth>bereafe</orth>
+                            <gram>v pr</gram>
+                        </form>
+                        <sense xml:id="bereafe-1">bereave</sense>
+                    </entry>
+
                     <entry xml:id="beshrow">
                         <form>
                             <orth>beshrow</orth>
@@ -1562,16 +1611,46 @@
                                 beshrew <hi rend="italic">v</hi> 3.b]</ref>
                         </sense>
                     </entry>
-
+                    
+                    <entry xml:id="bettenge">
+                        <form>
+                            <orth>bettenge</orth>
+                            <gram>vb n in phr</gram>
+                            <orth>bulle bettenge</orth>
+                        </form>
+                        <sense xml:id="bettenge-1">bull baiting</sense>
+                    </entry>
+                    
+                    <entry xml:id="beyard">
+                        <form>
+                            <orth>beyard</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="beyard-1">bayard <ref>[<hi rend="italic">OEDO</hi> bayard <hi rend="italic">n</hi> 2.c]</ref></sense>
+                    </entry>
+                    
+                    <entry xml:id="beyt">
+                        <form>
+                            <orth>beyt</orth>
+                            <gram>v pr</gram>
+                        </form>
+                        <sense xml:id="beyt-1">bait
+                            <form>
+                                <orth>beytid</orth>
+                                <gram>pt</gram>
+                            </form>
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="blackegards">
                         <form>
-                            <orth>blacke gards</orth>
-                            <gram>n pl</gram>
+                            <orth>blacke garde</orth>
+                            <gram>n</gram>
                         </form>
-                        <sense xml:id="blackegards-1">scullions or kitchen servants, or a group of
-                            servants holding a similar position in an army (?) <ref>[<hi
+                        <sense xml:id="blackegards-1">scullion or kitchen servant, or a 
+                            servant who holds a similar position in an army(?) <ref>[<hi
                                     rend="italic">OEDO</hi> blackguards <hi rend="italic">n</hi>
-                                A.I.2.a, b]</ref>
+                                A.I.2.a, b]</ref>; <form><orth>blacke gards</orth><gram>pl</gram></form>
                         </sense>
                     </entry>
 
@@ -1584,7 +1663,31 @@
                         <sense xml:id="blast-1">to remain somewhere for a long period of time
                             (?)</sense>
                     </entry>
+                    
+                    <entry xml:id="blubbord">
+                        <form>
+                            <orth>blubbord</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="blubbord-1">blubbered; flooded with tears <ref>[<hi rend="italic">OEDO</hi> blubbered <hi rend="italic">adj</hi></ref></sense>
+                    </entry>
 
+                    <entry xml:id="boatehier">
+                        <form>
+                            <orth>boatehier</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="boatehier-1">boat hire; funds paid to hire a boat</sense>
+                    </entry>
+               
+                    <entry xml:id="bocke">
+                        <form>
+                            <orth>bocke</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="bocke-1">book</sense>
+                    </entry>
+               
                     <entry xml:id="bockerham">
                         <form>
                             <orth>bockerham</orth>
@@ -1605,7 +1708,48 @@
                                 <hi rend="bold">king</hi></xr>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="boothies">
+                        <form>
+                            <orth>boothies</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="boothies-1">booths</sense>
+                    </entry>
+                    
+                    <entry xml:id="bose">
+                        <form>
+                            <orth>bose</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="bose-1">bows</sense>
+                    </entry>
+                    
+                    <entry xml:id="bot">
+                        <form>
+                            <orth>bot</orth>
+                            <gram>adv</gram>
+                        </form>
+                        <sense xml:id="bot-1">but</sense> <!--f29v in Hampshire appendix--> 
+                    </entry>
 
+                    <entry xml:id="bovrde">
+                        <form>
+                            <orth>bovrde</orth>
+                            <gram>n in phr</gram>
+                            <orth>an c bovrde</orth>
+                        </form>
+                        <sense xml:id="bovrde-1">a(n) hundred boards</sense>
+                    </entry>
+                    
+                    <entry xml:id="bowe">
+                        <form>
+                            <orth>bowe</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="bowe-1">bough</sense> <!--gloss instances in Hampshire records in which bow/bough distinction is unclear--> 
+                    </entry>
+                    
                     <entry xml:id="bowerrye">
                         <form>
                             <orth>bowrye</orth>
@@ -1619,7 +1763,23 @@
                             </form> a bower constructed during Robin Hood games from which Robin
                             Hood presided </sense>
                     </entry>
+                    
+                    <entry xml:id="bowlde">
+                        <form>
+                            <orth>bowlde</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="bowlde-1">bold</sense>  
+                    </entry>
 
+                    <entry xml:id="brache">
+                        <form>
+                            <orth>brache</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="brache-1">broach; a spit used to cook meat <ref>[<hi rend="italic">OEDO</hi> broach <hi rend="italic">n.1</hi> 2.a]</ref>; <form><orth>broatche</orth></form></sense>
+                    </entry>
+                    
                     <entry xml:id="brake">
                         <form>
                             <orth>brake</orth>
@@ -1635,6 +1795,35 @@
                             <gram>n pl</gram>
                         </form>
                         <sense xml:id="bredyrn-1">brethren</sense>
+                    </entry>
+                    
+                    <entry xml:id="briche">
+                        <form>
+                            <orth>briche</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="briche-1">breech; here, the buttocks</sense>
+                    </entry>
+                    
+                    <entry xml:id="brig">
+                        <form>
+                            <orth>brig</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="brig-1">Brigg, Lincolnshire</sense>
+                    </entry>
+                    
+                    <entry xml:id="bring">
+                        <form>
+                            <orth>bring</orth><!--dummy headword based on "brott" in records-->
+                            <gram>v pr</gram>
+                        </form>
+                        <sense xml:id="bring-1">to bring;
+                            <form>
+                                <orth>brott</orth>
+                                <gram>pt</gram>
+                            </form>
+                        </sense>
                     </entry>
 
                     <entry xml:id="broadeeye">
@@ -1653,6 +1842,14 @@
                             <gram>adj</gram>
                         </form>
                         <sense xml:id="broderd-1">embroidered</sense>
+                    </entry>
+
+                    <entry xml:id="bruar">
+                        <form>
+                            <orth>bruar</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="bruar-1">brewer; <form><orth>bruer</orth></form></sense>
                     </entry>
 
                     <entry xml:id="bruge">
@@ -1705,6 +1902,27 @@
                             <gram>n</gram>
                         </form>
                         <sense xml:id="butte-1">a target for archery practice</sense>
+                    </entry>
+
+                    <entry xml:id="bwyld">
+                        <form>
+                            <orth>bwyld</orth> <!--dummy headword based on "bwylt"-->
+                            <gram>v pr</gram>
+                        </form>
+                        <sense xml:id="bwyld-1">to build;
+                            <form>
+                                <orth>bwylt</orth>
+                                <gram>pt</gram>
+                            </form>
+                        </sense>
+                    </entry>
+
+                    <entry xml:id="bying">
+                        <form>
+                            <orth>bying</orth>
+                            <gram>vb n</gram>
+                        </form>
+                        <sense xml:id="byin-1">buying</sense>
                     </entry>
 
                 </div>
