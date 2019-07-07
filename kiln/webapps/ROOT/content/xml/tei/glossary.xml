@@ -1929,6 +1929,53 @@
 
                 <div n="C" xml:id="gloss-eng-C">
 
+                    <entry xml:id="cade">
+                        <form>
+                            <orth>cade</orth>
+                            <gram>n in phr</gram>
+                            <orth>cade of sprottes</orth>
+                        </form>
+                        <sense xml:id="cade-1">a cask of smelt</sense>
+                    </entry>
+                  
+                    <entry xml:id="callis">
+                        <form>
+                            <orth>callis</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="callis-1">Calais</sense>
+                    </entry>
+                    
+                    <entry xml:id="cam">
+                        <form>
+                            <orth>cam</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="cam-1">calm</sense>
+                    </entry>
+                    
+                    <entry xml:id="camparison">
+                        <form>
+                            <orth>camparison</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="camparison-1">caparison; dress and ornaments, equipment;
+                            <form>
+                                <orth>capharisons</orth>
+                                <gram>pl</gram>
+                            </form>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="canapie">
+                        <form>
+                            <orth>canapie</orth>
+                            <gram>n in phr</gram>
+                            <orth>canapie of estate</orth>
+                        </form>
+                        <sense xml:id="canapie-1">a canopy in a design or colour representative of a particular household, title, etc. <ref>[<hi rend="italic">OEDO</hi> estate <hi rend="italic">n</hi> 4.c]</ref></sense>
+                    </entry>
+
                     <entry xml:id="candall">
                         <form>
                             <orth>candall</orth>
@@ -1947,7 +1994,64 @@
                                 2]</ref>; <form><orth>cappinge</orth></form>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="capytayn">
+                        <form>
+                            <orth>capytayn</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="capytayn-1">captain</sense>
+                    </entry>
 
+                    <entry xml:id="cardes">
+                        <form>
+                            <orth>cardes</orth>
+                            <gram>n pl in phr</gram>
+                            <orth>pair of cardes</orth>
+                        </form>
+                        <sense xml:id="cardes-1">a set of playing cards <ref>[<hi rend="italic">OEDO</hi> pair <hi rend="italic">n.1</hi> II.6]</ref>;
+                            <form><orth>geven to the cardes</orth></form> lost in a game (or games) of cards(?)
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="carege">
+                        <form>
+                            <orth>carege</orth>
+                            <gram>vb n</gram>
+                        </form>
+                        <sense xml:id="carege-1">carriage; the act of carrying; <form><orth>caridge</orth></form>, <form><orth>carrege</orth></form>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="cariing">
+                        <form>
+                            <orth>cari</orth>
+                            <gram>v inf</gram><!--dummy infinitive based on "cariing"--> 
+                        </form>
+                        <sense xml:id="cariing-1">to carry;
+                        <form>
+                            <orth>cariing</orth>, <orth>carriing</orth>
+                            <gram>prp</gram>
+                        </form>; <xr><hi rend="italic">see also</hi> <hi rend="bold">carege</hi>, <hi rend="bold">caryour</hi></xr>
+                        </sense>
+                    </entry>
+                   
+                    <entry xml:id="carkasies">
+                        <form>
+                            <orth>carkasies</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="carkasies-1">carcasses</sense>
+                    </entry>
+                   
+                    <entry xml:id="caryour">
+                        <form>
+                            <orth>caryour</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="caryour-1">carrier</sense>
+                    </entry>
+                   
                     <entry xml:id="cayme">
                         <form>
                             <orth>cayme</orth>
@@ -1957,6 +2061,14 @@
                                     <form><orth>kayme</orth></form>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="chaplyn">
+                        <form>
+                            <orth>chaplyn</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="chaplyn-1">chaplain</sense>
+                    </entry>
 
                     <entry xml:id="chawden">
                         <form>
@@ -1965,6 +2077,14 @@
                         </form>
                         <sense xml:id="chawden-1">chaudon, a kind of sauce containing chopped
                             entrails</sense>
+                    </entry>
+                    
+                    <entry xml:id="cheyfe">
+                        <form>
+                            <orth>cheyfe</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="cheyfe-1">chief</sense>
                     </entry>
 
                     <entry xml:id="chrispianeday">
@@ -1996,6 +2116,15 @@
                         </form>
                         <sense xml:id="cittei-1">city</sense>
                     </entry>
+                    
+                    <entry xml:id="clavicordes">
+                        <form>
+                            <orth>clavicordes</orth>
+                            <gram>n pl in phr</gram>
+                            <orth>paire of clavicordes</orth>
+                        </form>
+                        <sense xml:id="clavicordes-1">clavichord</sense>
+                    </entry>
 
                     <entry xml:id="cleare">
                         <form>
@@ -2005,11 +2134,36 @@
                         <sense xml:id="cleare-1">clear, without encumbrance, liability, debt, etc;
                             net profit <ref>[<hi rend="italic">OEDO</hi> clear <hi rend="italic"
                                     >adj, adv, and n</hi> 16.a]</ref>;
-                                <form><orth>cleare</orth></form>;
-                            <form><orth>clearlie</orth></form>; <form><orth>clearly</orth></form>;
-                                    <form><orth>cler</orth></form>;
+                                <form><orth>cleare</orth></form>; <form><orth>clearely</orth></form>; 
+                            <form><orth>clearlie</orth></form>; <form><orth>clearly</orth></form>; <form><orth>cleere</orth></form>; <form><orth>cleerelye</orth></form>; <form><orth>cleerlye</orth></form>; 
+                                    <form><orth>cler</orth></form>; <form><orth>clerely</orth></form>; <form><orth>clerelye</orth></form>; 
                             <form><orth>clerly</orth></form>; <form><orth>clerlye</orth></form>
                         </sense>
+                    </entry>
+                    
+                    <entry xml:id="cliringe">
+                        <form>
+                            <orth>cliringe</orth>
+                            <gram>vb n</gram>
+                        </form>
+                        <sense xml:id="cliringe-1">clearing</sense>
+                    </entry>
+                    
+                    <entry xml:id="cofor">
+                        <form>
+                            <orth>cofor</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="cofor-1">coffer</sense>
+                    </entry>
+
+                    <entry xml:id="cognizaunce">
+                        <form>
+                            <orth>cognizaunce</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="cognizaunce-1">cognizance, a badge or device of recognition <ref>[<hi rend="italic">OEDO</hi> cognizance | cognisance <hi rend="italic">n</hi> III.5.a]</ref>;
+                        <form><orth>cognizance</orth></form></sense>
                     </entry>
 
                     <entry xml:id="colen">
@@ -2025,6 +2179,32 @@
                         </sense>
                     </entry>
 
+                    <entry xml:id="collayne">
+                        <form>
+                            <orth>collayne</orth>
+                            <gram>n in phr</gram>
+                            <orth>collayne lute</orth>
+                        </form>
+                        <sense xml:id="collayne-1">Cologne lute; a lute made or acquired in Cologne</sense>
+                    </entry>
+                    
+                    <entry xml:id="cominaltie">
+                        <form>
+                            <orth>cominaltie</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="cominaltie-1">commonality; used here in the sense of community, commonweathl and likely also common people <ref>[<hi rend="italic">OEDO</hi> commonality <hi rend="italic">n</hi> 1.a, 2]</ref></sense>
+                    </entry>
+
+                    <entry xml:id="commen">
+                        <form>
+                            <orth>commen</orth>
+                            <gram>n in phr</gram>
+                            <orth>commen of pasture</orth>
+                        </form>
+                        <sense xml:id="commen-1">the legal right to pasture livestock <ref>[<hi rend="italic">OEDO</hi> common <hi rend="italic">n.1</hi> 6]</ref></sense>
+                    </entry>
+
                     <entry xml:id="commidiment">
                         <form>
                             <orth>commidiment</orth>
@@ -2033,6 +2213,35 @@
                         <sense xml:id="commidiment-1">commandment</sense>
                     </entry>
 
+                    <entry xml:id="compest">
+                        <form>
+                            <orth>compest</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="compest-1">comopsition, combination, copound <ref>[<hi rend="italic">OEDO</hi> compost <hi rend="italic">n.1</hi> 1.a]</ref></sense>
+                    </entry>
+
+                    <entry xml:id="complett">
+                        <form>
+                            <orth>complett</orth>
+                            <gram>adv</gram>
+                        </form>
+                        <sense xml:id="complett-1">completely(?)</sense>
+                    </entry>
+
+                    <entry xml:id="compt">
+                        <form>
+                            <orth>compt</orth>
+                            <gram>v pr</gram><!--dummy headword based on "compted"--> 
+                        </form>
+                        <sense xml:id="compt-1">count, account;
+                            <form>
+                                <orth>compted</orth>
+                                <gram>pa</gram>
+                            </form>
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="comyn">
                         <form>
                             <orth>come</orth>
@@ -2044,7 +2253,39 @@
                             </form>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="condicon">
+                        <form>
+                            <orth>condicon</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="condicon-1">condition</sense>
+                    </entry>
+                    
+                    <entry xml:id="conteray">
+                        <form>
+                            <orth>conteray</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="conteray-1">country</sense>
+                    </entry>
 
+                    <entry xml:id="conuaiaunce">
+                        <form>
+                            <orth>conuaiaunce</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="conuaiaunce-1">conveyance</sense>
+                    </entry>
+                    
+                    <entry xml:id="conygge">
+                        <form>
+                            <orth>conygge</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="conygge-1">coney</sense>
+                    </entry>
+                    
                     <entry xml:id="coorse">
                         <form>
                             <orth>coorse</orth>
@@ -2055,6 +2296,22 @@
                                     <form><orth>coorsse</orth></form>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="copell">
+                        <form>
+                            <orth>copell</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="copell-1">couple</sense>
+                    </entry>
+                    
+                    <entry xml:id="coson">
+                        <form>
+                            <orth>coson</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="coson-1">cousin</sense>
+                    </entry>
 
                     <entry xml:id="countei">
                         <form>
@@ -2062,6 +2319,14 @@
                             <gram>n</gram>
                         </form>
                         <sense xml:id="countei-1">county</sense>
+                    </entry>
+                    
+                    <entry xml:id="countrefaict">
+                        <form>
+                            <orth>countrefaict</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="countrefaict-1">counterfeit; here, someone with a physical disability or deformity <ref>[<hi rend="italic">OEDO</hi> counterfeit <hi rend="italic">adj and n</hi> A.8, B.4]</ref></sense>
                     </entry>
 
                     <entry xml:id="course">
@@ -2120,6 +2385,31 @@
                         </sense>
                     </entry>
 
+                    <entry xml:id="crosehowse">
+                        <form>
+                            <orth>crose howse</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="crosehowse-1">cross house, i.e. church house; 
+                        <form><orth>crosse howse</orth></form></sense>
+                    </entry>
+
+                    <entry xml:id="cullar">
+                        <form>
+                            <orth>cullar</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="cullar-1">colour; outward appearance, show, semblance</sense>
+                    </entry>
+                    
+                    <entry xml:id="cund">
+                        <form>
+                            <orth>cund</orth>
+                            <gram>v pr</gram>
+                        </form>
+                        <sense xml:id="cund-1">conduct, steer; here used intransitively to refer to a ship's capacity to be steered rightly <ref>[<hi rend="italic">OEDO</hi> cond | cund <hi rend="italic">v</hi>]</ref></sense>
+                    </entry>
+
                     <entry xml:id="curle">
                         <form>
                             <orth>curle</orth>
@@ -2129,6 +2419,22 @@
                                     rend="italic">OEDO</hi> curle <hi rend="italic">v.1</hi>
                                 2]</ref>
                         </sense>
+                    </entry>
+
+                    <entry xml:id="curtisie">
+                        <form>
+                            <orth>curtisie</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="curtisie-1">courtesy</sense>
+                    </entry>
+
+                    <entry xml:id="cyone">
+                        <form>
+                            <orth>cyone</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="cyone-1">Alcyone</sense>
                     </entry>
 
                     <entry xml:id="cytherin">
