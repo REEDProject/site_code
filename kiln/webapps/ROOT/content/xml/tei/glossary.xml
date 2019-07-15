@@ -1181,7 +1181,7 @@
                             <orth>alle</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="alle-1">ale; <form><orth>aylle</orth></form>
+                        <sense xml:id="alle-1">ale; <form><orth>aylle</orth></form>; <form><orth>hayle</orth></form> <!--I am not convinced that "halle" should be lumped in here even though it is a variant of "ale"; thoughts?--> 
                         </sense>
                     </entry>
 
@@ -2984,6 +2984,22 @@
 
                 <div n="G" xml:id="gloss-eng-G">
 
+                    <entry xml:id="galand">
+                        <form>
+                            <orth>galand</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="galand-1">gallon</sense>
+                    </entry>
+                    
+                    <entry xml:id="galei">
+                        <form>
+                            <orth>galeis</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="galeis-1">galleys</sense>
+                    </entry>
+                                        
                     <entry xml:id="gane">
                         <form>
                             <orth>gane</orth>
@@ -3022,6 +3038,8 @@
                                 <form><orth>gatherynge</orth></form>; </sense>
                         <xr><hi rend="italic">see also</hi> <hi rend="bold">gather</hi></xr>
                     </entry>
+            
+                    <!-- I had flagged gayne/gayned etc. as terms to be added, but I noticed that we ended up *not* glossing gain as in profit for Berkshire (it's easily searchable in OEDO), so I have not added them here.-->
 
                     <entry xml:id="geddred">
                         <form>
@@ -3037,6 +3055,15 @@
                     </entry>
                     <!-- Can I get a second set of eyes on the gather/gatheryng/geddre distinction here? I've created a dummy infinitive form for 'geddre' and given it its own entry since the meaning and spelling are both distinct from the other 'gather's above: PG, I think these should all go under 'gather'; they're the same word etymologically with 2 slightly different senses.  See OED gather 2b (reflexive) and 3, 4.-->
 
+                    <entry xml:id="geve">
+                        <form>
+                            <orth>geve</orth>
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="geve-1">give; <form><orth>gevon</orth><gram>pass</gram></form>
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="geyre">
                         <form>
                             <orth>geyre</orth>
@@ -3045,13 +3072,30 @@
                         <sense xml:id="geyre-1">gear, here likely apparel used in the performance of
                             a play</sense>
                     </entry>
-
+                    
+                    <entry xml:id="ghoahst">
+                        <form>
+                            <orth>ghoahst</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="ghoahst-1">ghost</sense>
+                    </entry>
+                    
                     <entry xml:id="gingelinge">
                         <form>
                             <orth>gingelinge</orth>
                             <gram>vb n</gram>
                         </form>
                         <sense xml:id="gingelinge-1">jingling</sense>
+                    </entry>
+                    
+                    <entry xml:id="gitthorne">
+                        <form>
+                            <orth>gitthorne</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="gitthorne-1">gittern; <form><orth>gyttorne</orth></form>
+                        </sense>
                     </entry>
 
                     <entry xml:id="glase">
@@ -3060,7 +3104,7 @@
                             <gram>v inf</gram>
                         </form>
                         <sense xml:id="glase-1">glaze, to furnish with glass; <form>
-                                <orth>glasinge</orth>
+                                <orth>glasinge, glasyng</orth>
                                 <gram>vb n</gram>
                             </form>
                         </sense>
@@ -3081,6 +3125,14 @@
                         </form>
                         <sense xml:id="greiuiuous-1">grievous</sense>
                     </entry>
+                    
+                    <entry xml:id="gretbell">
+                        <form>
+                            <orth>gretbell</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="gretbell-1">great bell, the largest bell in a church tower</sense>
+                    </entry>
 
                     <entry xml:id="grete">
                         <form>
@@ -3092,7 +3144,40 @@
                                     rend="italic">adj</hi> P2.b.(a)]</ref>; <form><orth>of
                                     greate</orth></form> of the sum total (?) </sense>
                     </entry>
+                    
+                    <entry xml:id="grisly">
+                        <form>
+                            <orth>grisly</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="grisly-1">grizzly, grey</sense>
+                    </entry>
 
+                    <entry xml:id="gyeld">
+                        <form>
+                            <orth>gyeld</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="gyeld-1">guild</sense>
+                    </entry>
+                    
+                    <entry xml:id="gyless">
+                        <form>
+                            <orth>gyless</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="gyless-1">Wimborne St Giles</sense>
+                    </entry>
+                    
+                    <entry xml:id="gyllt">
+                        <form>
+                            <orth>gyllt</orth><!-- dummy headword based on "gylltinge --> 
+                            <gram>v pr</gram>
+                        </form>
+                        <sense xml:id="gyllt-1">gild; <form><orth>gylltinge</orth><gram>prp</gram></form>
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="gysse">
                         <form>
                             <orth>gysse</orth>
@@ -3120,7 +3205,15 @@
                         </form>
                         <sense xml:id="hale-1">took hold</sense>
                     </entry>
-
+                    
+                    <entry xml:id="halewyn">
+                        <form>
+                            <orth>halewyn</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="halewyn-1">hallows, saints; <form><gram>in phr</gram><orth>all halewyn parish</orth> All Hallows parish</form></sense>
+                    </entry>
+                    
                     <entry xml:id="hallow">
                         <form>
                             <orth>hallow</orth>
@@ -3136,7 +3229,7 @@
                         </form>
                         <sense xml:id="halpens-1">halfpenny, halfpence (?); a coin worth half the
                             value of a penny, or a collection of these coins <ref>[<hi rend="italic"
-                                    >OEDO</hi> halfpenny <hi rend="italic">n</hi>]</ref>
+                                    >OEDO</hi> halfpenny <hi rend="italic">n</hi>]</ref>; <form><orth>halpennsse</orth></form>
                         </sense>
                     </entry>
 
@@ -3175,12 +3268,60 @@
                             or for setting up a campground</sense>
                     </entry>
 
+                    <entry xml:id="hatfull">
+                        <form>
+                            <orth>hatfull</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="hatfull-1">hateful</sense>
+                    </entry>
+                    
+                    <entry xml:id="hawkesbell">
+                        <form>
+                            <orth>hawkesbell</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="hawkesbell-1">hawk's bell; a bell fastened on the leg of a hunting hawk <ref>[<hi rend="italic">OEDO</hi>hawk's bell | hawk-bell <hi rend="italic">n</hi>]</ref></sense>
+                    </entry>
+                    
+                    <entry xml:id="hayle"> <!-- not to be confused with "hayle" = "ale" (listed as a variant under "alle"); will this create problems in the future? --> 
+                        <form>
+                            <orth>hayle</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="hayle-1">hall</sense> 
+                    </entry>
+                    
+                    <entry xml:id="haynes">
+                        <form>
+                            <orth>haynes</orth>
+                            <gram>n pl or adj</gram>
+                        </form>
+                        <sense xml:id="haynes-1">mean wretches(?) <ref>[<hi rend="italic">OEDO</hi> hayne <hi rend="italic">n</hi>]</ref>, or heinous(?)</sense>
+                    </entry>
+                    
+                    <entry xml:id="haynous">
+                        <form>
+                            <orth>haynous</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="haynous-1">heinous</sense>
+                    </entry>
+                    
                     <entry xml:id="hedde">
                         <form>
                             <orth>hedde</orth>
                             <gram>n</gram>
                         </form>
                         <sense xml:id="hedde-1">head, here a wig</sense>
+                    </entry>
+                    
+                    <entry xml:id="hellmat">
+                        <form>
+                            <orth>hellmat</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="hellmat-1">helmet</sense>
                     </entry>
 
                     <entry xml:id="here">
@@ -3214,6 +3355,14 @@
                                 <gram>pa</gram>
                             </form>
                         </sense>
+                    </entry>
+                    
+                    <entry xml:id="hower">
+                        <form>
+                            <orth>hower</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="hower-1">our</sense>
                     </entry>
 
                     <entry xml:id="hobbyhorse">
@@ -3276,7 +3425,7 @@
                             <orth>hussher</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="hussher-1">usher</sense>
+                        <sense xml:id="hussher-1">usher; <form><orth>husshire</orth></form></sense>
                     </entry>
 
                 </div>
