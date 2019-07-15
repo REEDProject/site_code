@@ -4194,14 +4194,6 @@
                         <sense xml:id="oues-1">eaves, the edge of a forest; <form><orth>oveis</orth></form>; <form><orth>oves</orth></form></sense>
                     </entry>
 
-                    <entry xml:id="ought">
-                        <form>
-                            <orth>aught</orth>
-                            <gram>n</gram>
-                        </form>
-                        <sense xml:id="nyʒth-1">night</sense>
-                    </entry>
-                    
                     <entry xml:id="overthewest">
                         <form>
                             <orth>overthew</orth><!-- dummy headword based on 'overthewest'--> 
@@ -4230,12 +4222,37 @@
 
                 <div n="P" xml:id="gloss-eng-P">
 
+                    <entry xml:id="pallace">
+                        <form>
+                            <orth>pallace</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="pallace-1">Pallas, i.e. Athena</sense>
+                    </entry>
+                    
                     <entry xml:id="parachiall">
                         <form>
                             <orth>parachiall</orth>
                             <gram>adj</gram>
                         </form>
                         <sense xml:id="parachiall-1">parochial, of a parish</sense>
+                    </entry>
+
+                    <entry xml:id="pard">
+                        <form>
+                            <orth>par</orth><!--dummy headword based on par'd--> 
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="pard-1">pair, damage <ref>[<hi rend="italic">OEDO</hi> pair <hi rend="italic">v.1</hi>]</ref>; <form><orth>par'd</orth><gram>pa</gram></form>
+                        </sense>
+                    </entry>
+
+                    <entry xml:id="parsevaunte">
+                        <form>
+                            <orth>parsevaunte</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="parsevaunte-1">pursuivant; <form><orth>purcyuaunte</orth></form></sense>
                     </entry>
 
                     <entry xml:id="pavyn">
@@ -4247,6 +4264,14 @@
                             written for this dance <ref>[<hi rend="italic">OEDO</hi> pavane <hi
                                     rend="italic">n</hi> 2]</ref>
                         </sense>
+                    </entry>
+                    
+                    <entry xml:id="paws">
+                        <form>
+                            <orth>paws</orth><!--dummy headword based on 'pawsinge'--> 
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="paws-1">pause; <form><orth>pawsinge</orth><gram>prp</gram></form></sense>
                     </entry>
 
                     <entry xml:id="pead">
@@ -4262,13 +4287,53 @@
                             </form>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="pearell">
+                        <form>
+                            <orth>pearell</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="pearell-1">pearl</sense>
+                    </entry>
 
+                    <entry xml:id="pece">
+                        <form>
+                            <orth>pece</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="pece-1">piece, used here to indicate a quantity of fruit(?)<ref>[<hi rend="italic">OEDO</hi> piece <hi rend="italic">n</hi> etymology]</ref></sense>
+                    </entry>
+                    
+                    <entry xml:id="peirce">
+                        <form>
+                            <orth>peirce</orth><!--dummy headword based on 'peirc'd'--> 
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="peirce-1">pierce; <form><orth>peirc'd</orth><gram>pa</gram></form></sense>
+                    </entry>
+                    
                     <entry xml:id="pennystone">
                         <form>
                             <orth>pennystone</orth>
                             <gram>n</gram>
                         </form>
                         <sense xml:id="pennystone-1">penistone, coarse woollen cloth</sense>
+                    </entry>
+                    
+                    <entry xml:id="pernicouse">
+                        <form>
+                            <orth>pernicouse</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="pernicouse-1">pernicious</sense>
+                    </entry>
+                    
+                    <entry xml:id="persuacon">
+                        <form>
+                            <orth>persuacon</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="persuacon-1">persuasion</sense>
                     </entry>
 
                     <entry xml:id="pesable">
@@ -4288,6 +4353,14 @@
                         </form>
                         <sense xml:id="pesablie-1">peaceably</sense>
                     </entry>
+                    
+                    <entry xml:id="pesehalme">
+                        <form>
+                            <orth>pesehalme</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="pesehalme-1">pease-haulm</sense>
+                    </entry>
 
                     <entry xml:id="pettygree">
                         <form>
@@ -4295,6 +4368,14 @@
                             <gram>n</gram>
                         </form>
                         <sense xml:id="pettygree-1">pedigree</sense>
+                    </entry>
+                    
+                    <entry xml:id="pickard">
+                        <form>
+                            <orth>pickard</orth>
+                            <gram>vb n</gram>
+                        </form>
+                        <sense xml:id="pickard-1">picking, used here to refer to wood that people have picked up(?)</sense>
                     </entry>
 
                     <entry xml:id="plad">
@@ -4314,6 +4395,42 @@
                     </entry>
                     <!--new, tidier, system for glossing verbs in action here: how does this look? CB: fine? but did you want to see on front end? JH: yes, eventually!-->
 
+                    <entry xml:id="plaiare">
+                        <form>
+                            <orth>plaiare</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="plaiare-1">player</sense>
+                    </entry>
+                    
+                    <entry xml:id="plesuer">
+                        <form>
+                            <orth>plesuer</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="plesuer-1">pleasure</sense>
+                    </entry>
+                    
+                    <entry xml:id="poynte">
+                        <form>
+                            <orth>pointe</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="poynte-1">point, tagged ribbon or cord used to attach hose to
+                            a doublet, lace a garment, fasten a shoe, etc <ref>[<hi rend="italic"
+                                >OEDO</hi> point <hi rend="italic">n.1</hi> II.23.a]</ref>; <form><orth>poynte</orth></form>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="polron">
+                        <form>
+                            <orth>polron</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="polron-1">pauldren, shoulder armour
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="poole">
                         <form>
                             <orth>poole</orth>
@@ -4330,6 +4447,14 @@
                         <sense xml:id="portinaunce-1">viscera, the interior organs of an
                             animal</sense>
                     </entry>
+                    
+                    <entry xml:id="porttare">
+                        <form>
+                            <orth>porttare</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="porttare-1">porter</sense>
+                    </entry>
 
                     <entry xml:id="potal">
                         <form>
@@ -4339,16 +4464,13 @@
                         <sense xml:id="potal-1">pottle; as a unit of capacity, equal to half a
                             gallon</sense>
                     </entry>
-
-                    <entry xml:id="poynte">
+                    
+                    <entry xml:id="potsugures">
                         <form>
-                            <orth>poynte</orth>
-                            <gram>n</gram>
+                            <orth>potsugures</orth>
+                            <gram>n pl</gram>
                         </form>
-                        <sense xml:id="poynte-1">point, tagged ribbon or cord used to attach hose to
-                            a doublet, lace a garment, fasten a shoe, etc <ref>[<hi rend="italic"
-                                    >OEDO</hi> point <hi rend="italic">n.1</hi> II.23.a]</ref>
-                        </sense>
+                        <sense xml:id="potsugures-1">pot sugars; a form of sugar suitable for dissolving in a pot of liquid(?)</sense>
                     </entry>
 
                     <entry xml:id="prymust">
@@ -4391,7 +4513,7 @@
                         </form>
                         <sense xml:id="quartarne-1">quartern, a quarter of a pound <ref>[<hi
                                     rend="italic">OEDO</hi> quartern <hi rend="italic">n.2</hi>
-                                3.b]</ref>
+                                3.b]</ref>; <form><orth>quartren</orth></form>
                         </sense>
                     </entry>
 
