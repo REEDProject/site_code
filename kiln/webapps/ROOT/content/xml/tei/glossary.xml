@@ -3831,12 +3831,52 @@
                         <sense xml:id="mademaryon-1">Maid Marian</sense>
                     </entry>
 
+                    <entry xml:id="maiar">
+                        <form>
+                            <orth>maiar</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="maiar-1">mayor</sense>
+                    </entry>
+
+                    <entry xml:id="mal">
+                        <form>
+                            <orth>mal</orth><!-- dummy headword based on 'mald'-->
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="mal-1">maul; <form><orth>mald</orth><gram>pa</gram></form></sense>
+                    </entry>
+                    
+                    <entry xml:id="mar">
+                        <form>
+                            <orth>mar</orth><!-- dummy headword based on 'marde'--> 
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="mar-1">mar; <form><orth>marde</orth><gram>pa</gram></form></sense>
+                    </entry>
+                    
+                    <entry xml:id="mariolty">
+                        <form>
+                            <orth>mariolty</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="mariolty-1">mayoralty</sense>
+                    </entry>
+                    
                     <entry xml:id="marresdaunce">
                         <form>
                             <orth>marresdaunce</orth>
                             <gram>n comp</gram>
                         </form>
                         <sense xml:id="marresdaunce-1">morris dance</sense>
+                    </entry>
+                    
+                    <entry xml:id="martij">
+                        <form>
+                            <orth>martij</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="martij-1">March</sense>
                     </entry>
 
                     <entry xml:id="mawkin">
@@ -3848,7 +3888,47 @@
                         <sense xml:id="mawkin-1">in malkin attire, dressed untidily; used here
                             quasi-adverbially</sense>
                     </entry>
+                    
+                    <entry xml:id="mayesgowne">
+                        <form>
+                            <orth>mayes gowne</orth>
+                            <gram>n phr</gram>
+                        </form>
+                        <sense xml:id="mayesgowne-1">May's gown, a gown belonging to a character in a May game(?)</sense>
+                    </entry>
 
+                    <entry xml:id="medswett">
+                        <form>
+                            <orth>medswett</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="medswett-1">meadowsweet</sense>
+                    </entry>
+                    
+                    <entry xml:id="mensterl">
+                        <form>
+                            <orth>mensterl</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="mensterl-1">minstrel; <form><orth>mennystrelle</orth></form>; <form><orth>mensterell</orth></form>; <form><orth>mensterlle</orth></form>; <form><orth>menstreel</orth></form>; <form><orth>mentrelle</orth></form>; <form><orth>minestrell</orth></form>; <form><orth>mynesryle</orth></form>; <form><orth>mystrelle</orth></form></sense>
+                    </entry>
+                    
+                    <entry xml:id="miesre">
+                        <form>
+                            <orth>miesre</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="miesre-1">misery</sense>
+                    </entry>
+                    
+                    <entry xml:id="moer">
+                        <form>
+                            <orth>moer</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="moer-1">mower</sense>
+                    </entry>
+                    
                     <entry xml:id="mone">
                         <form>
                             <orth>mone</orth>
@@ -3881,8 +3961,24 @@
                         </form>
                         <sense xml:id="morec-1">morris; <form><orth>morec</orth></form>;
                                     <form><orth>morece</orth></form>;
-                                <form><orth>moreys</orth></form>
+                                <form><orth>moreys</orth></form>; <form><orth>morreyce</orth></form>
                         </sense>
+                    </entry>
+                    
+                    <entry xml:id="morysplayer">
+                        <form>
+                            <orth>morysplayer</orth>
+                            <gram>n comp</gram>
+                        </form>
+                        <sense xml:id="morysplayer-1">morris player</sense>
+                    </entry>
+
+                    <entry xml:id="museck">
+                        <form>
+                            <orth>museck</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="museck-1">music; here used to refer to a musician or group of musicians</sense>
                     </entry>
 
                     <entry xml:id="musesen">
@@ -3890,7 +3986,7 @@
                             <orth>musesen</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="musesen-1">musician; <form><orth>mosition</orth></form>
+                        <sense xml:id="musesen-1">musician; <form><orth>mosition</orth></form>; <form><orth>muscon</orth></form>; <form><orth>musitan</orth></form>; <form><orth>musithian</orth></form>; <form><orth>mussisione</orth></form>; <form><orth>mussissien</orth></form>; <form><orth>musycan</orth></form>; <form><orth>mysysion</orth></form>; <form><orth>mutitian</orth></form>
                         </sense>
                     </entry>
 
@@ -3901,7 +3997,23 @@
                         </form>
                         <sense xml:id="musitioner-1">musician</sense>
                     </entry>
-
+                    
+                    <entry xml:id="mychlmas">
+                        <form>
+                            <orth>mychlmas</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="mychlmas-1">Michaelmas</sense>
+                    </entry>
+                    
+                    <entry xml:id="myscountance">
+                        <form>
+                            <orth>myscountance</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="myscountance-1">miscontent, used here to refer to an instance of discontent, disstasfaction, or annoyance <ref>[<hi rend="italic">OEDO</hi> miscontent <hi rend="italic">n</hi>]</ref></sense>
+                    </entry>
+                    
                     <entry xml:id="mysdemeanannte">
                         <form>
                             <orth>mysdemeanannte</orth>
@@ -3913,7 +4025,15 @@
                                 1]</ref>
                         </sense>
                     </entry>
-
+                    
+                    <entry xml:id="myserewell">
+                        <form>
+                            <orth>myserewell</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="myserewell-1">misrule; <form><orth>mysrewell</orth></form></sense>
+                    </entry>
+                    
                 </div>
 
                 <div n="N" xml:id="gloss-eng-N">
@@ -3926,6 +4046,14 @@
                         <sense xml:id="namptwich-1">Nantwich</sense>
                     </entry>
 
+                    <entry xml:id="nevor">
+                        <form>
+                            <orth>nevor</orth>
+                            <gram>adv</gram>
+                        </form>
+                        <sense xml:id="nevor-1">never</sense>
+                    </entry>
+                    
                     <entry xml:id="nichil">
                         <form>
                             <orth>nichil</orth>
@@ -3935,6 +4063,14 @@
                             received that year; <form><orth>nichill</orth></form>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="nimp">
+                        <form>
+                            <orth>nimp</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="nimp-1">nymph</sense>
+                    </entry>
 
                     <entry xml:id="note">
                         <form>
@@ -3943,6 +4079,22 @@
                             <orth>by note</orth>
                         </form>
                         <sense xml:id="note-1">according to a bill</sense>
+                    </entry>
+                    
+                    <entry xml:id="nwe">
+                        <form>
+                            <orth>nwe</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="nwe-1">new</sense>
+                    </entry>
+                    
+                    <entry xml:id="nyʒth">
+                        <form>
+                            <orth>nyʒth</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="nyʒth-1">night</sense>
                     </entry>
 
                 </div>
