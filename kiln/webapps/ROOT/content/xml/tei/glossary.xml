@@ -3432,6 +3432,48 @@
 
                 <div n="I" xml:id="gloss-eng-I">
 
+                    <entry xml:id="ianevere">
+                        <form>
+                            <orth>ianevere</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="ianevere-1">January; <form><orth>ianyuery</orth></form>; <form><orth>ianyver</orth></form>; <form><orth>ianyvery</orth></form>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="iayle">
+                        <form>
+                            <orth>iayle</orth>
+                            <gram>n in phr</gram>
+                            <orth>iayle deliverie</orth>
+                        </form>
+                        <sense xml:id="iayle-1">jail delivery, the release of prisoners from jail</sense>
+                    </entry>
+                    
+                    <entry xml:id="ielosie">
+                        <form>
+                            <orth>ielosie</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="ielosie-1">jealousy</sense>
+                    </entry>
+                    
+                    <entry xml:id="ierland">
+                        <form>
+                            <orth>ierland</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="ierland-1">Ireland</sense>
+                    </entry>
+                    
+                    <entry xml:id="iestor">
+                        <form>
+                            <orth>iestor</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="iestor-1">jester</sense>
+                    </entry>
+
                     <entry xml:id="ihons">
                         <form>
                             <orth>ihons</orth>
@@ -3441,6 +3483,22 @@
                         <sense xml:id="ihons-1">St John's Day, possibly in error for 'Iohns'</sense>
                     </entry>
 
+                    <entry xml:id="imbrodered">
+                        <form>
+                            <orth>imbrodered</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="imbrodered-1">embroidered</sense>
+                    </entry>
+                    
+                    <entry xml:id="incontagion">
+                        <form>
+                            <orth>incontagion</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="incontagion-1">contagion, possibly with a play on 'incantation'</sense>
+                    </entry>
+                    
                     <entry xml:id="ingrowenmembers">
                         <form>
                             <orth>ingrowen members</orth>
@@ -3458,6 +3516,22 @@
                                     rend="italic">OEDO</hi> empanel <hi rend="italic">n</hi>]</ref>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="insomutch">
+                        <form>
+                            <orth>insomutch</orth>
+                            <gram>adv</gram>
+                        </form>
+                        <sense xml:id="insomutch-1">insomuch</sense>
+                    </entry>
+                    
+                    <entry xml:id="ioggeler">
+                        <form>
+                            <orth>ioggeler</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="ioggeler-1">juggler</sense>
+                    </entry>
 
                     <entry xml:id="ioyaunt">
                         <form>
@@ -3465,6 +3539,14 @@
                             <gram>n</gram>
                         </form>
                         <sense xml:id="ioyaunt-1">giant</sense>
+                    </entry>
+                    
+                    <entry xml:id="iulj">
+                        <form>
+                            <orth>iulj</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="iulj-1">July</sense>
                     </entry>
 
                     <entry xml:id="iurkes">
@@ -3487,12 +3569,28 @@
                     <!-- all of the entries for J -->
                 </div>
                 <div n="K" xml:id="gloss-eng-K">
+                    
+                    <entry xml:id="karak">
+                        <form>
+                            <orth>karak</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="karak-1">carrack</sense>
+                    </entry>
+                    
+                    <entry xml:id="kaulf">
+                        <form>
+                            <orth>kaulf</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="kaulf-1">calf</sense>
+                    </entry>
 
                     <entry xml:id="king">
                         <form>
                             <orth>kinge</orth>
                             <gram>n in phr</gram>
-                            <orth>kinge ale</orth>, <orth>kynge ale</orth>
+                            <orth>kinge ale</orth>, <orth>kingal</orth>, <orth>kingale</orth>, <orth>kingalle</orth>, <orth>kingeale</orth>, <orth>kyng ale</orth>, <orth>kyngale</orth>, <orth>kyngalle</orth>, <orth>kynge ale</orth>, <orth>kyngeale</orth>
                         </form>
                         <sense xml:id="king-1">king ale, an inversion of order event in which a king
                             — typically a local young man or farmer — was appointed to preside over
@@ -3508,6 +3606,7 @@
                     <!--could I get a second set of eyes especially on this entry? Does it look tidy enough? -->
                     <!--CB: should you be using semicolons rather than commas between variants, as that what I think you've done elsewhere-->
                     <!--JH: I wasn't sure about this one because we're listing a series of forms before a sense, rather than variants after a sense; above in the Latin glossary cases like this are separated with commas (see e.g. some of the terms under C). Any thoughts on whether this needs to be changed to be more consistent?-->
+                    <!-- JH: I think we need to rethink the organization of this one: the long list of variants of "king ale" at the top feels like a bit much. Consider splitting "king ale," "king play," and "king hall" into separate glossary entries?--> 
 
                     <entry xml:id="kyltherkyn">
                         <form>
@@ -3526,7 +3625,63 @@
                             <orth>lame</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="lame-1">lamb</sense>
+                        <sense xml:id="lame-1">lamb; <form><orth>lanb</orth></form>; <form><orth>lanbe</orth></form></sense>
+                    </entry>
+                    
+                    <entry xml:id="lantch">
+                        <form>
+                            <orth>lantch</orth><!-- dummy headword based on "lantch'd"--> 
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="lantch-1">launch; <form><orth>lantch'd</orth><gram>pa</gram></form></sense>
+                    </entry>
+                    
+                    <entry xml:id="larges">
+                        <form>
+                            <orth>larges</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="larges-1">largesse</sense>
+                    </entry>
+                    
+                    <entry xml:id="lavolto">
+                        <form>
+                            <orth>lavolto</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="lavolto-1">lavolta, a popular dance</sense>
+                    </entry>
+                    
+                    <entry xml:id="leades">
+                        <form>
+                            <orth>leades</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="leades-1">leads; sheets or strips of metla used to cover a roof <ref>[<hi rend="italic">OEDO</hi> lead <hi rend="italic">n.1</hi> 7.a]</ref></sense>
+                    </entry>
+
+                    <entry xml:id="leeke">
+                        <form>
+                            <orth>leeke</orth>
+                            <gram>v inf, pr</gram>
+                        </form>
+                        <sense xml:id="leeke-1">like(?)</sense>
+                    </entry>
+                    
+                    <entry xml:id="leese">
+                        <form>
+                            <orth>leese</orth>
+                            <gram>v inf, pr</gram>
+                        </form>
+                        <sense xml:id="leese-1">lose</sense>
+                    </entry>
+
+                    <entry xml:id="letes">
+                        <form>
+                            <orth>letes</orth>
+                            <gram>v imp phr</gram>
+                        </form>
+                        <sense xml:id="letes-1">let's, let us</sense>
                     </entry>
 
                     <entry xml:id="lever">
@@ -3564,6 +3719,22 @@
                                 3.a]</ref>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="limmatt">
+                        <form>
+                            <orth>limmatt</orth>
+                            <gram>v inf, pr</gram>
+                        </form>
+                        <sense xml:id="limmatt-1">limit</sense>
+                    </entry>
+                    
+                    <entry xml:id="linck">
+                        <form>
+                            <orth>linck</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="linck-1">link, torch(?) <ref>[<hi rend="italic">OEDO</hi> link <hi rend="italic">n.3</hi> 1.a]</ref>; <form><orth>linke</orth></form></sense>
+                    </entry>
 
                     <entry xml:id="longyng">
                         <form>
@@ -3573,6 +3744,22 @@
                         <sense xml:id="longyng-1">belonging, here used in the sense of 'attached' to
                             refer to caps with wigs</sense>
                     </entry>
+                    
+                    <entry xml:id="loughty">
+                        <form>
+                            <orth>loughty</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="loughty-1">lofty</sense>
+                    </entry>
+                    
+                    <entry xml:id="lowt">
+                        <form>
+                            <orth>lowt</orth><!--dummy headword based on "lowted" -->
+                            <gram>v pr</gram>
+                        </form>
+                        <sense xml:id="lowt-1">lout; to stoop, bend, and bow <ref>[<hi rend="italic">OEDO</hi> lout <hi rend="italic">v.1</hi>]</ref>; <form><orth>lowted</orth><gram>pa</gram></form></sense>
+                    </entry>
 
                     <entry xml:id="lyneinge">
                         <form>
@@ -3580,6 +3767,30 @@
                             <gram>n</gram>
                         </form>
                         <sense xml:id="lyneinge-1">lining, used here for a doublet</sense>
+                    </entry>
+                    
+                    <entry xml:id="lyffee">
+                        <form>
+                            <orth>lyffee</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="lyffee-1">life</sense>
+                    </entry>
+                    
+                    <entry xml:id="lyme">
+                        <form>
+                            <orth>lyme</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="lyme-1">limb</sense>
+                    </entry>
+                    
+                    <entry xml:id="lynd">
+                        <form>
+                            <orth>lynd</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="lynd-1">lined, used here to indicate that a rudder is equipped with new lines(?)</sense>
                     </entry>
 
                     <entry xml:id="lynyng">
@@ -3598,6 +3809,14 @@
                         <sense xml:id="lyth-1">lithe, readily, quickly <ref>[<hi rend="italic"
                                     >MED</hi> lithe <hi rend="italic">adv</hi>]</ref>
                         </sense>
+                    </entry>
+                    
+                    <entry xml:id="lyvie">
+                        <form>
+                            <orth>lyvie</orth><!--dummy headword based on "lyvied"-->
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="lyvie-1">levy; <form><orth>lyvied</orth><gram>pa</gram></form></sense>
                     </entry>
 
                 </div>
