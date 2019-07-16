@@ -162,6 +162,7 @@
                 </profileDesc>
                 <revisionDesc>
                         <!-- Add new major milestone changes to top -->
+                        <change when="2019-07-" who="#PG">Corrected expansion of 'candel{is} e{m}p{tis}' to 'candel{arum} e{m}p{tarum}' and corrected transtlation to read 'three pounds of candles bought'</change>
                         <change when="2019-04-30" who="#KC">Added 'royal and nobel visit' tag to Lady Russell's Entertainment for the Queen at Bisham, 1592</change>
                         <change when="2019-02-26" who="#KC">Added new entity tag for Ceres' 'nymphs' (entity ID 79118) in Lady Russell's Entertainment for the Queen at Bisham, 1592</change>
                         <change when="2019-01-17" who="#CB">Corrected incorrect 'ex' tags to 'hi rend="italic"'; corrected incorrect 'del' tags to [ ]</change>
@@ -177,6 +178,7 @@
                         <change when="2018-06-28" who="#KC">For "boy bishops" tagging (entity ID 21537), changed type from "Entertainment_SeasonalCustoms" to "Drama_Character"</change>
                         <change when="2017-09-14" who="#CB">Added collection data to
                                 teiHeader</change>
+                   
                 </revisionDesc>
         </teiHeader>
         <text>
@@ -9937,8 +9939,8 @@
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/41406/"
                                                   type="CalendarDay_Liturgical">f<ex>est</ex>o
                                                   S<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex></rs>i .
-                                                  v s. In . iij lib<ex>ris</ex> candel<ex>is</ex>
-                                                  e<ex>m</ex>p<ex>tis</ex> vij s. ob<gap
+                                                  v s. In . iij lib<ex>ris</ex> candel<ex>arum</ex>
+                                                  e<ex>m</ex>p<ex>tarum</ex> vij s. ob<gap
                                                   reason="omitted"/>.</ab>
 
                                                   <gap reason="omitted"/>
@@ -9953,7 +9955,7 @@
                                                   <gap reason="omitted"/>
 
                                                   <ab>On one mitre bought for the bishop on the
-                                                  feast of St Nicholas, 5s. On three pounds candles
+                                                  feast of St Nicholas, 5s. On three pounds of candles
                                                   bought, 7s 1/2d<gap reason="omitted"/>.</ab>
 
                                                   <gap reason="omitted"/>
