@@ -4550,13 +4550,53 @@
                 </div>
 
                 <div n="R" xml:id="gloss-eng-R">
+                    
+                    <entry xml:id="race">
+                        <form>
+                            <orth>race</orth>
+                            <gram>v inf</gram><!-- dummy headword based on 'rac'd'-->
+                        </form>
+                        <sense xml:id="race-1">raze, erase; <form><orth>rac'd</orth><gram>pa</gram></form></sense>
+                    </entry>
 
+                    <entry xml:id="rampeirs">
+                        <form>
+                            <orth>rampeirs</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="rampeirs-1">rampires, i.e. ramparts</sense>
+                    </entry>
+                    
+                    <entry xml:id="rasons">
+                        <form>
+                            <orth>rasons</orth>
+                            <gram>n poss</gram>
+                        </form>
+                        <sense xml:id="rasons-1">reason's</sense>
+                    </entry>
+                    
+                    <entry xml:id="recrese">
+                        <form>
+                            <orth>recrese</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="recrese-1">profit <ref>[<hi rend="italic">OEDO</hi> recrese <hi rend="italic">v</hi>]</ref></sense>
+                    </entry>
+                    
                     <entry xml:id="reddere">
                         <form>
                             <orth>reddere</orth>
                             <gram>n comp</gram>
                         </form>
                         <sense xml:id="reddere-1">red deer</sense>
+                    </entry>
+                    
+                    <entry xml:id="redding">
+                        <form>
+                            <orth>redding</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="redding-1">Reading, Berkshire</sense>
                     </entry>
 
                     <entry xml:id="redelede">
@@ -4579,6 +4619,30 @@
                             </form>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="resinges">
+                        <form>
+                            <orth>resinges</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="resinges-1">raisins</sense>
+                    </entry>
+                    
+                    <entry xml:id="resseve">
+                        <form>
+                            <orth>resseve</orth>
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="resseve-1">receive; <form><orth>resseved, ressyuyd</orth><gram>pa</gram></form></sense>
+                    </entry>
+                    
+                    <entry xml:id="rewytinge">
+                        <form>
+                            <orth>rewytinge</orth>
+                            <gram>vb n</gram>
+                        </form>
+                        <sense xml:id="rewytinge-1">routing; shouting, bellowing, crying out <ref>[<hi rend="italic">OEDO</hi> rout <hi rend="italic">v.4</hi> 1]</ref></sense>
+                    </entry>
 
                     <entry xml:id="riall">
                         <form>
@@ -4588,6 +4652,31 @@
                         <sense xml:id="riall-1">royal</sense>
                     </entry>
 
+                    <entry xml:id="ridleis">
+                        <form>
+                            <orth>ridleis</orth>
+                            <gram>n pl in phr</gram>
+                            <orth>ridleis booke</orth>
+                        </form>
+                        <sense xml:id="ridleis-1">riddle book, a book of riddles(?)</sense>
+                    </entry>
+                    
+                    <entry xml:id="riflinge">
+                        <form>
+                            <orth>riflinge</orth>
+                            <gram>vb n</gram>
+                        </form>
+                        <sense xml:id="riflinge-1">rifling, the act of offering a prize in a raffle <ref>[<hi rend="italic">OEDO</hi> rifle <hi rend="italic">v.2</hi>]</ref></sense>
+                    </entry>
+
+                    <entry xml:id="rigglinge">
+                        <form>
+                            <orth>rigglinge</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="rigglinge-1">wriggling</sense>
+                    </entry>
+                    
                     <entry xml:id="rime">
                         <form>
                             <orth>rime</orth>
@@ -4616,7 +4705,21 @@
                         <sense xml:id="rouge-1">rogue</sense>
                     </entry>
 
+                    <entry xml:id="roule">
+                        <form>
+                            <orth>roule</orth>
+                            <gram>v pr, inf</gram>
+                        </form>
+                        <sense xml:id="roule-1">roll; <form><orth>rowle</orth></form></sense>
+                    </entry>
 
+                    <entry xml:id="rybonding">
+                        <form>
+                            <orth>rybonding</orth>
+                            <gram>vb n</gram>
+                        </form>
+                        <sense xml:id="rybonding-1">ribboning, decoration with ribbons</sense>
+                    </entry>
 
                     <entry xml:id="rydware">
                         <form>
