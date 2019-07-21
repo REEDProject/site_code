@@ -4733,15 +4733,15 @@
                 </div>
 
                 <div n="S" xml:id="gloss-eng-S">
-
+                    
                     <entry xml:id="saboath">
                         <form>
                             <orth>saboath</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="saboath-1">sabbath</sense>
+                        <sense xml:id="saboath-1">sabbath; <form><orth>sabith</orth></form>; <form><orth>sabithe</orth></form></sense>
                     </entry>
-
+                                 
                     <entry xml:id="saffetei">
                         <form>
                             <orth>saffetei</orth>
@@ -4756,7 +4756,15 @@
                             <orth>safurne</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="safurne-1">saffron</sense>
+                        <sense xml:id="safurne-1">saffron; <form><orth>saferane</orth></form></sense>
+                    </entry>
+
+                    <entry xml:id="salfly">
+                        <form>
+                            <orth>salfly</orth>
+                            <gram>adv</gram>
+                        </form>
+                        <sense xml:id="salfly-1">safely</sense>
                     </entry>
 
                     <entry xml:id="salopia">
@@ -4771,6 +4779,30 @@
                             <orth>countie of salopia</orth>
                         </form>
                         <sense xml:id="salopia-2">Shropshire</sense>
+                    </entry>
+                    
+                    <entry xml:id="salysbere">
+                        <form>
+                            <orth>salysbere</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="salysbere-1">Salisbury</sense>
+                    </entry>
+
+                    <entry xml:id="saught">
+                        <form>
+                            <orth>seek</orth><!-- dummy headword based on 'saught'; another situation in which we have to supply a definition but it looks awkward. Thoughts on formatting?--> 
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="saught-1">seek; <form><orth>saught</orth><gram>pa</gram></form></sense>
+                    </entry>
+                    
+                    <entry xml:id="savynge">
+                        <form>
+                            <orth>savynge</orth>
+                            <gram>vb n</gram>
+                        </form>
+                        <sense xml:id="savynge-1">sawing</sense>
                     </entry>
 
                     <entry xml:id="schaphold">
@@ -4812,13 +4844,69 @@
                         </form>
                         <sense xml:id="scituacion-1">situation</sense>
                     </entry>
+                    
+                    <entry xml:id="scuttchin">
+                        <form>
+                            <orth>scuttchin</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="scuttchin-1">scutcheon; <form><orth>skochon</orth></form></sense>
+                    </entry>
+                    
+                    <entry xml:id="seasinge">
+                        <form>
+                            <orth>sease</orth><!-- dummy headword based on 'seasinge'-->
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="seasinge-1">cease; <form><orth>seasinge</orth><gram>prp</gram></form></sense>
+                    </entry>
 
+                    <entry xml:id="seavenight">
+                        <form>
+                            <orth>seavenight</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="seavenight-1">sennight</sense>
+                    </entry>
+                    
+                    <entry xml:id="seet">
+                        <form>
+                            <orth>seet</orth>
+                            <gram>v pr, inf</gram>
+                        </form>
+                        <sense xml:id="seet-1">set</sense>
+                    </entry>
+                    
+                    <entry xml:id="sel">
+                        <form>
+                            <orth>sel</orth><!--dummy headword based on 'selyng'-->
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="selyng-1">seal; <form><orth>selyng</orth><gram>prp</gram></form></sense>
+                    </entry>
+                    
+                    <entry xml:id="sette">
+                        <form>
+                            <orth>sette</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="sette-1">seat</sense>
+                    </entry>
+                    
                     <entry xml:id="seventyn">
                         <form>
                             <orth>seventyn</orth>
                             <gram>adj</gram>
                         </form>
                         <sense xml:id="seventyn-1">seventeenth</sense>
+                    </entry>
+                    
+                    <entry xml:id="shachell">
+                        <form>
+                            <orth>shachell</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="shachell-1">shackle(?)</sense>
                     </entry>
 
                     <entry xml:id="shareshull">
@@ -4828,6 +4916,22 @@
                         </form>
                         <sense xml:id="shareshull-1">Shareshill; <form><orth>sharesull</orth></form>
                         </sense>
+                    </entry>
+                    
+                    <entry xml:id="sheapardes">
+                        <form>
+                            <orth>sheapardes</orth>
+                            <gram>n poss</gram>
+                        </form>
+                        <sense xml:id="sheapardes-1">shepherds'</sense>
+                    </entry>
+                    
+                    <entry xml:id="sherefwyke">
+                        <form>
+                            <orth>sherefwyke</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="sherefwyke-1">sheriffwick</sense>
                     </entry>
 
                     <entry xml:id="shewerofthechamber">
@@ -4841,6 +4945,14 @@
                                     rend="italic">v</hi> 16]</ref>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="shroshere">
+                        <form>
+                            <orth>shroshere</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="shroshere-1">Shropshire</sense>
+                    </entry>
 
                     <entry xml:id="shueterooll">
                         <form>
@@ -4852,6 +4964,14 @@
                                 b]</ref>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="shuing">
+                        <form>
+                            <orth>shuing</orth>
+                            <gram>vb n</gram>
+                        </form>
+                        <sense xml:id="shuing-1">shoeing; <form><orth>shuinge</orth></form></sense>
+                    </entry>
 
                     <entry xml:id="sises">
                         <form>
@@ -4861,6 +4981,22 @@
                         <sense xml:id="sises-1">assizes</sense>
                     </entry>
 
+                    <entry xml:id="smirted">
+                        <form>
+                            <orth>smirt</orth><!--dummy headword based on 'smirted'-->
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="smirted-1">an outburst; possibly an imitative or onomatopoeic nonce word or portmanteau of "smirk" and "snort"; <form><orth>smirted</orth><gram>pa</gram></form></sense>
+                    </entry>
+                    
+                    <entry xml:id="smothed">
+                        <form>
+                            <orth>smothed</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="smothed-1">smoothed</sense>
+                    </entry>
+                    
                     <entry xml:id="soiper">
                         <form>
                             <orth>soiper</orth>
@@ -4885,6 +5021,23 @@
                         </form>
                         <sense xml:id="sonderey-1">sundry</sense>
                     </entry>
+                    
+                    <entry xml:id="sownes">
+                        <form>
+                            <orth>sownes</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="sownes-1">sounds</sense>
+                    </entry>
+                    
+                    <entry xml:id="stall">
+                        <form>
+                            <orth>stall</orth>
+                            <gram>adj in phr</gram>
+                            <orth>stall all</orth>
+                        </form>
+                        <sense xml:id="stall-1">stale ale; old and strong ale <ref>[<hi rend="italic">OEDO</hi> stale <hi rend="italic">adj.1</hi> 1]</ref></sense>
+                    </entry>
 
                     <entry xml:id="statebodye">
                         <form>
@@ -4906,6 +5059,14 @@
                         <sense xml:id="stidde-1">stead</sense>
                     </entry>
 
+                    <entry xml:id="stiers">
+                        <form>
+                            <orth>stier</orth><!--dummy headword based on 'stiers'-->
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="stiers-1">stir <ref>[<hi rend="italic">OEDO</hi> stir <hi rend="italic">v</hi> 7, 8]</ref>; <form><orth>stiers</orth><gram>pr</gram></form></sense>
+                    </entry>
+                    
                     <entry xml:id="stirrippe">
                         <form>
                             <orth>stirrippe</orth>
@@ -4968,6 +5129,54 @@
                             </form>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="straight">
+                        <form>
+                            <orth>straight</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="straight-1">strait, tight</sense>
+                    </entry>
+                    
+                    <entry xml:id="straked">
+                        <form>
+                            <orth>straked</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="straked-1">streaked</sense>
+                    </entry>
+                    
+                    <entry xml:id="strickly">
+                        <form>
+                            <orth>strickly</orth>
+                            <gram>adv</gram>
+                        </form>
+                        <sense xml:id="strickly-1">strictly</sense>
+                    </entry>
+                    
+                    <entry xml:id="strocke">
+                        <form>
+                            <orth>strocke</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="sstrocke-1">stroke</sense>
+                    </entry>
+                    
+                    <entry xml:id="strout">
+                        <form>
+                            <orth>strout</orth>
+                            <gram>v inf, pr</gram>
+                        </form>
+                        <sense xml:id="strout-1">strut <ref><hi rend="italic">OEDO</hi> strut <hi rend="italic">v.1</hi> 2.a]</ref></sense>
+                    </entry>
+                    
+                    <entry xml:id="stuberennesse">
+                        <form>
+                            <orth>stuberennesse</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="stuberennesse-1">stubbornness</sense>
+                    </entry>
 
                     <entry xml:id="styke">
                         <form>
@@ -4979,12 +5188,36 @@
                         </sense>
                     </entry>
 
+                    <entry xml:id="suerly">
+                        <form>
+                            <orth>suerly</orth>
+                            <gram>adv</gram>
+                        </form>
+                        <sense xml:id="suerly-1">surely; <form><orth>surly</orth></form></sense>
+                    </entry>
+                    
                     <entry xml:id="suertis">
                         <form>
                             <orth>suertis</orth>
                             <gram>n pl</gram>
                         </form>
                         <sense xml:id="suertis-1">sureties</sense>
+                    </entry>
+                    
+                    <entry xml:id="sulphurious">
+                        <form>
+                            <orth>sulphurious</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="sulphurious-1">sulfurous</sense>
+                    </entry>
+                    
+                    <entry xml:id="summersawt">
+                        <form>
+                            <orth>summer sawt</orth>
+                            <gram>n phr</gram>
+                        </form>
+                        <sense xml:id="summersawt-1">somersault</sense>
                     </entry>
 
                     <entry xml:id="sumptyous">
@@ -4993,6 +5226,14 @@
                             <gram>adj</gram>
                         </form>
                         <sense xml:id="sumptyous-1">sumptuous</sense>
+                    </entry>
+
+                    <entry xml:id="suppriz">
+                        <form>
+                            <orth>suppriz</orth>
+                            <gram>v inf, pr</gram>
+                        </form>
+                        <sense xml:id="uppriz-1">overcome, surprise <ref>[<hi rend="italic">OEDO</hi> supprise <hi rend="italic">v</hi>]</ref></sense>
                     </entry>
 
                     <entry xml:id="surplasse">
@@ -5011,6 +5252,23 @@
                         </form>
                         <sense xml:id="sute-1">a white suit worn by a player to appear naked</sense>
                     </entry>
+                    
+                    <entry xml:id="syluyr">
+                        <form>
+                            <orth>syluyr</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="syluyr-1">silver</sense>
+                    </entry>
+                    
+                    <entry xml:id="sytann">
+                        <form>
+                            <orth>sytann</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="sytann-1">satin(?)</sense>
+                    </entry>
+                    
                 </div>
 
                 <div n="T" xml:id="gloss-eng-T">
