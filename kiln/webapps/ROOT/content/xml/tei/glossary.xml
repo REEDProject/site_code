@@ -3880,6 +3880,14 @@
                         </form>
                         <sense xml:id="martij-1">March</sense>
                     </entry>
+                    
+                    <entry xml:id="mase">
+                        <form>
+                            <orth>mase</orth>
+                            <gram>m</gram>
+                        </form>
+                        <sense xml:id="mase-1">mace; <form><orth>masse</orth></form></sense>
+                    </entry>
 
                     <entry xml:id="mawkin">
                         <form>
@@ -5709,6 +5717,22 @@
 
                 <div n="Y" xml:id="gloss-eng-Y">
 
+                    <entry xml:id="yate">
+                        <form>
+                            <orth>yate</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="yate-1">gate</sense>
+                    </entry>
+                    
+                    <entry xml:id="yatt">
+                        <form>
+                            <orth>yatt</orth>
+                            <gram>conj</gram>
+                        </form>
+                        <sense xml:id="yatt-1">that</sense>
+                    </entry>
+                    
                     <entry xml:id="yeald">
                         <form>
                             <orth>yeald</orth>
@@ -5731,8 +5755,37 @@
                         <sense xml:id="yelde-1">guild hall; <form><orth>yeld hawle</orth></form>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="yelle">
+                        <form>
+                            <orth>yelle</orth>
+                            <gram>adv</gram>
+                        </form>
+                        <sense xml:id="yelle-1">ill</sense>
+                    </entry>
 
-
+                    <entry xml:id="yemaneofthemalle">
+                        <form>
+                            <orth>yemane of the malle</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="yemaneofthemalle-1">household officials, servants, or
+                            attendants; specific duties are unknown<ref>[<hi rend="italic">OEDO</hi> yeoman <hi
+                                rend="italic">n</hi> C3.a]</ref>; <form><orth>yemen of the mayell</orth></form>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="yemenwatires">
+                        <form>
+                            <orth>yemen watires</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="yemenwatires-1">yeoman waits; household officials, servants, or
+                            attendants charged with keeping watch<ref>[<hi rend="italic">OEDO</hi> yeoman <hi
+                                rend="italic">n</hi> C3.a]</ref> <!--could I please get a second set of eyes on this expanded definition?-->
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="yeomanofthefeilde">
                         <form>
                             <orth>yeoman of the feilde</orth>
@@ -5742,6 +5795,38 @@
                             attendant; specific duties are unknown </sense>
                     </entry>
                     <!-- Possibly an area for future research. -->
+
+                    <entry xml:id="yerell">
+                        <form>
+                            <orth>yerell</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="yerell-1">earl</sense>
+                    </entry>
+                    
+                    <entry xml:id="yes">
+                        <form>
+                            <orth>yes</orth>
+                            <gram>adj poss</gram>
+                        </form>
+                        <sense xml:id="yes-1">his</sense>
+                    </entry>
+                    
+                    <entry xml:id="yeue">
+                        <form>
+                            <orth>yeue</orth>
+                            <gram>v inf, pr, pass</gram>
+                        </form>
+                        <sense xml:id="yeue-1">give; <form><orth>yeuen, yeven, yevyn</orth><gram>pa</gram></form></sense>
+                    </entry>
+                    
+                    <entry xml:id="yewor">
+                        <form>
+                            <orth>yewor</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="yewor-1">ewer</sense>
+                    </entry>
 
                     <entry xml:id="ynto">
                         <form>
@@ -5760,7 +5845,7 @@
                         </form>
                         <sense xml:id="yomenofthebottells-1">household officials, servants, or
                             attendants charged with procuring drink <ref>[<hi rend="italic"
-                                    >OEDO</hi> yeoman <hi rend="italic">n</hi> C3.a]</ref>
+                                    >OEDO</hi> yeoman <hi rend="italic">n</hi> C3.a]</ref>; <form><orth>yemen of the bottells</orth></form>; <form><orth>yemen of the flagenes</orth></form>
                         </sense>
                     </entry>
 
