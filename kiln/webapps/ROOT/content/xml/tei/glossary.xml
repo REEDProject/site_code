@@ -5449,6 +5449,14 @@
                         <sense xml:id="valure-1">value</sense>
                     </entry>
 
+                    <entry xml:id="vantapyr">
+                        <form>
+                            <orth>vantapyr</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="vantapyr-1">font-taper</sense>
+                    </entry>
+
                     <entry xml:id="vaponn">
                         <form>
                             <orth>vaponn</orth>
@@ -5480,19 +5488,43 @@
                         </form>
                         <sense xml:id="virginalles-1">usually a keyed musical instrument with plural
                             form refering to one instrument, but here possibly the keyboard(s) to an
-                            organ (?)</sense>
+                            organ (?); <form><orth>virginalls</orth></form>; <form><orth>virginialls</orth></form></sense>
                     </entry>
 
                 </div>
 
                 <div n="W" xml:id="gloss-eng-W">
 
+                    <entry xml:id="waring">
+                        <form>
+                            <orth>waring</orth>
+                            <gram>vb n</gram>
+                        </form>
+                        <sense xml:id="waring-1">wearing, used here in the sense of use, wear and tear</sense>
+                    </entry>
+                    
                     <entry xml:id="warthrope">
                         <form>
                             <orth>warthrope</orth>
                             <gram>n</gram>
                         </form>
                         <sense xml:id="warthrope-1">wardrobe</sense>
+                    </entry>
+                    
+                    <entry xml:id="wassell">
+                        <form>
+                            <orth>wassell</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="wassell-1">wassail</sense>
+                    </entry>
+                    
+                    <entry xml:id="wasseller">
+                        <form>
+                            <orth>wasseller</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="wasseller-1">wassailer; <form><orth>wasellor</orth></form></sense>
                     </entry>
 
                     <entry xml:id="wating">
@@ -5515,6 +5547,14 @@
                         </form>
                         <sense xml:id="wayters-1">wages (?)</sense>
                     </entry>
+                    
+                    <entry xml:id="weart">
+                        <form>
+                            <orth>wear't</orth>
+                            <gram>contraction of</gram>
+                        </form>
+                        <sense xml:id="weart-1">were it</sense>
+                    </entry>
 
                     <entry xml:id="weddesbury">
                         <form>
@@ -5524,6 +5564,62 @@
                         <sense xml:id="weddesbury-1">Wednesbury;
                             <form><orth>wedesbury</orth></form>; <form><orth>widdesbur</orth></form>
                         </sense>
+                    </entry>
+                    
+                    <entry xml:id="weele">
+                        <form>
+                            <orth>weele</orth>
+                            <gram>contraction of</gram>
+                        </form>
+                        <sense xml:id="weele-1">we will, we'll</sense>
+                    </entry>
+                    
+                    <entry xml:id="weightes">
+                        <form>
+                            <orth>weightes</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="weightes-1">waits</sense>
+                    </entry>
+                    
+                    <entry xml:id="welt">
+                        <form>
+                            <orth>welt</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="welt-1">wealth</sense>
+                    </entry>
+                    
+                    <entry xml:id="wenisday">
+                        <form>
+                            <orth>wenisday</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="wenisday-1">Wednesday</sense>
+                    </entry>
+                    
+                    <entry xml:id="wete">
+                        <form>
+                            <orth>wete</orth>
+                            <gram>v inf</gram>
+                        </form>
+                        <sense xml:id="wete-1">wit, to know; <form><gram>in phr</gram> <orth>to wete</orth></form> to wit, that is to say</sense>
+                    </entry>
+                    
+                    <entry xml:id="wetnes">
+                        <form>
+                            <orth>wetnes</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="wetnes-1">witness</sense>
+                    </entry>
+                    
+                    <entry xml:id="weyne">
+                        <form>
+                            <orth>weyne</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="weyne-1">wine</sense>
                     </entry>
 
                     <entry xml:id="whetesonetyde">
@@ -5544,6 +5640,14 @@
                         </form>
                         <sense xml:id="whightsondaye-1">Whitsunday</sense>
                     </entry>
+                    
+                    <entry xml:id="whitsonhayll">
+                        <form>
+                            <orth>whitsonhayll</orth>
+                            <gram>n comp</gram>
+                        </form>
+                        <sense xml:id="whitsonhayll-1">Whitsun ale</sense>
+                    </entry>
 
                     <entry xml:id="whom">
                         <form>
@@ -5553,6 +5657,13 @@
                         <sense xml:id="whom-1">home</sense>
                     </entry>
 
+                    <entry xml:id="whytlethur">
+                        <form>
+                            <orth>whytlethur</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="whytlethur-1">whitleather</sense>
+                    </entry>
 
                     <entry xml:id="wicke">
                         <form>
@@ -5573,6 +5684,22 @@
                                 <form><orth>wilnehale</orth></form>;
                                 <form><orth>wylnehale</orth></form>
                         </sense>
+                    </entry>
+                    
+                    <entry xml:id="woollkember">
+                        <form>
+                            <orth>woollkember</orth>
+                            <gram>n comp</gram>
+                        </form>
+                        <sense xml:id="woollkember-1">wool comber <ref>[<hi rend="italic">OEDO</hi> kember <hi rend="italic">n</hi>]</ref></sense>
+                    </entry>
+                    
+                    <entry xml:id="wytuall">
+                        <form>
+                            <orth>wytuall</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="wytuall-1">victual</sense>
                     </entry>
 
                 </div>
