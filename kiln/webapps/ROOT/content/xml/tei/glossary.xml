@@ -1521,12 +1521,12 @@
                     <entry xml:id="be">
                         <form>
                             <orth>be</orth><!--dummy headword based on "byin"-->
-                            <gram>v pr</gram>
+                            <gram>v inf</gram>
                         </form>
                         <sense xml:id="be-1">to be;
                         <form>
                             <orth>byin</orth>
-                            <gram>pt</gram>
+                            <gram>pa</gram>
                         </form>
                         </sense>
                     </entry>
@@ -1577,10 +1577,6 @@
                         </form>
                         <sense xml:id="ber-1">beer; <form><orth>ber</orth></form>;  
                             <form>
-                                <orth>berryes</orth>
-                                <gram>pl</gram> bears, here understood to be accompanied by bearwards;
-                            </form>
-                            <form>
                                 <orth>berman</orth>
                                 <gram>n</gram>
                             </form> beerman, a man who serves beer </sense>
@@ -1600,6 +1596,14 @@
                             <gram>v pr</gram>
                         </form>
                         <sense xml:id="bereafe-1">bereave</sense>
+                    </entry>
+
+                    <entry xml:id="berryes">
+                        <form>
+                        <orth>berryes</orth>
+                        <gram>n pl</gram> 
+                        </form>
+                        <sense xml:id="berryes-1">bears, here understood to be accompanied by bearwards</sense>
                     </entry>
 
                     <entry xml:id="beshrow">
@@ -1634,12 +1638,12 @@
                     <entry xml:id="beyt">
                         <form>
                             <orth>beyt</orth>
-                            <gram>v pr</gram>
+                            <gram>v inf</gram><!--dummy headword based on 'beytid'-->
                         </form>
                         <sense xml:id="beyt-1">bait
                             <form>
                                 <orth>beytid</orth>
-                                <gram>pt</gram>
+                                <gram>pa</gram>
                             </form>
                         </sense>
                     </entry>
@@ -1647,7 +1651,7 @@
                     <entry xml:id="blackegards">
                         <form>
                             <orth>blacke garde</orth>
-                            <gram>n</gram>
+                            <gram>n phr</gram>
                         </form>
                         <sense xml:id="blackegards-1">scullion or kitchen servant, or a 
                             servant who holds a similar position in an army(?) <ref>[<hi
@@ -1820,10 +1824,10 @@
                             <orth>bring</orth><!--dummy headword based on "brott" in records-->
                             <gram>v pr</gram>
                         </form>
-                        <sense xml:id="bring-1">to bring;
+                        <sense xml:id="bring-1">bring;
                             <form>
                                 <orth>brott</orth>
-                                <gram>pt</gram>
+                                <gram>pa</gram>
                             </form>
                         </sense>
                     </entry>
@@ -1909,12 +1913,12 @@
                     <entry xml:id="bwyld">
                         <form>
                             <orth>bwyld</orth> <!--dummy headword based on "bwylt"-->
-                            <gram>v pr</gram>
+                            <gram>v inf</gram>
                         </form>
-                        <sense xml:id="bwyld-1">to build;
+                        <sense xml:id="bwyld-1">build;
                             <form>
                                 <orth>bwylt</orth>
-                                <gram>pt</gram>
+                                <gram>pa</gram>
                             </form>
                         </sense>
                     </entry>
