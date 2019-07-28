@@ -1144,7 +1144,7 @@
                         <sense xml:id="agayn-1">against, in anticipation of</sense>
                     </entry>
                     
-                    <entry xml:id="aggratiuitie">
+                    <entry xml:id="aggratuitie">
                         <form>
                             <orth>aggratuitie</orth>
                             <gram>n</gram>
@@ -1183,7 +1183,7 @@
                             <orth>alle</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="alle-1">ale; <form><orth>aylle</orth></form>; <form><orth>hayle</orth></form> <!--I am not convinced that "halle" should be lumped in here even though it is a variant of "ale"; thoughts?--> 
+                        <sense xml:id="alle-1">ale; <form><orth>aylle</orth></form>; <form><orth>hayle</orth></form>  
                         </sense>
                     </entry>
 
@@ -1257,10 +1257,10 @@
                     
                     <entry xml:id="apirithe">
                         <form>
-                            <orth>apirithe</orth>
-                            <gram>v pr</gram>
+                            <orth>apir</orth>
+                            <gram>v inf</gram><!--dummy headword based on 'apirithe'--> 
                         </form>
-                        <sense xml:id="apirithe-1">appear</sense>
+                        <sense xml:id="apirithe-1">appear; <form><orth>apirithe</orth><gram>pr</gram></form></sense>
                     </entry>
                     
                     <entry xml:id="apperell">
@@ -1277,7 +1277,7 @@
                             <orth>armoricall</orth>
                             <gram>adj</gram>
                         </form>
-                        <sense xml:id="armoricall-1">Armorical; an inhabitant of Armorica, likely here a Breton</sense>
+                        <sense xml:id="armoricall-1">Armorical; an inhabitant of Armorica, here likely a Breton</sense>
                     </entry>
                     
                     <entry xml:id="arraysed">
@@ -1347,7 +1347,7 @@
                     <entry xml:id="authorishe">
                         <form>
                             <orth>authorishe</orth>
-                            <gram>v pr</gram>
+                            <gram>v inf, pr</gram>
                         </form>
                         <sense xml:id="authorishe-1">authorize;
                             <form>
