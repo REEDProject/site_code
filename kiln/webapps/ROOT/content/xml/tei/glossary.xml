@@ -515,6 +515,15 @@
                         <sense xml:id="Bertelinus-1">St Bettelin (dates unknown), patron of
                             Stafford</sense>
                     </entry>
+                    <entry xml:id="budellus">
+                        <form>
+                            <orth>budellus, -i</orth>
+                            <gram>n m</gram>
+                        </form>
+                        <sense xml:id="budellus-1"><hi rend="italic">var of</hi> bedellus<ref>[<hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
                     <!-- PG and JC: in record text or notes (id only needed if pointing to it from glossary) 
                 <p> Canto <term xml:id="term-abc123" ref="glossary-la.xml#balletta-1"
                         >ballettae</term> musicae </p>-->
@@ -533,7 +542,17 @@
                                     -e; cantelana, -e</orth></form>
                         </sense>
                     </entry>
-
+                    
+                    <entry xml:id="Cantia">
+                        <form>
+                            <orth>Cantia, -ie</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="Cantia-1">Kent; <orth>Kantia, -e</orth>  
+                        </sense>
+                    </entry>
+                    
+                    
                     <entry xml:id="carectata">
                         <form>
                             <orth>carectata, -e</orth>
@@ -542,7 +561,36 @@
                         <sense xml:id="carectata-1"><hi rend="italic">var of</hi> carrettata <ref>[<hi rend="italic"
                                     >DML</hi>]</ref></sense>
                     </entry>
-
+                    
+                    <entry xml:id="carragium">
+                        <form>
+                            <orth>carragium, -i</orth>
+                            <gram>n nt</gram>
+                        </form>
+                        <sense xml:id="carragium-1"><hi rend="italic">var of</hi> carriagium<ref>[<hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="caryandum">
+                        <form>
+                            <orth>caryandum, -i</orth>
+                            <gram>vb n nt</gram>
+                        </form>
+                        <sense xml:id="caryandum-1"><hi rend="italic">var of</hi> carriandum<ref>[carriare <hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                    
+                    <entry xml:id="celerarius">
+                        <form>
+                            <orth>celerarius, -i</orth>
+                            <gram>n m</gram>
+                        </form>
+                        <sense xml:id="celearius-1"><hi rend="italic">var of</hi> cellararius<ref>[<hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                    
                     <entry xml:id="certifico">
                         <form>
                             <orth>certifico, -are, -aui, -atum</orth>
@@ -552,7 +600,27 @@
                             formally, eg, the truth of a statement, compliance with an order, or
                             the performance of an obligation</sense>
                     </entry>
-
+                    
+                    <entry xml:id="cessio">
+                        <form>
+                            <orth>cessio, -onis</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="cessio-1"><hi rend="italic">var of</hi> sessio<ref>[<hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                    
+                    <entry xml:id="chitherator">
+                        <form>
+                            <orth>chitherator, -oris</orth>
+                            <gram>n m</gram>
+                        </form>
+                        <sense xml:id="chitherator-1">"><hi rend="italic">var of</hi> citherator<ref>[<hi rend="italic">DML</hi>]</ref>; <orth>sitherator, -oris</orth>  
+                        </sense>
+                    </entry>
+                    
+                    
                     <entry xml:id="cimiterium">
                         <form>
                             <orth>cimiterium, -ii</orth>
@@ -561,7 +629,16 @@
                         <sense xml:id="cimiterium-1"><hi rend="italic">var of</hi> coemeterium
                                     <ref>[<hi rend="italic">DML</hi>]</ref></sense>
                     </entry>
-
+                    <entry xml:id="cithardus">
+                        <form>
+                            <orth>cithardus, -i</orth>
+                            <gram>n m</gram>
+                        </form>
+                        <sense xml:id="cithardus-1">one who plays the cithera; <hi rend="italic">here</hi> likely a harper  
+                        </sense>
+                    </entry>
+                    
+                    
                     <entry xml:id="coma">
                         <form>
                             <orth>coma, -e</orth>
@@ -576,24 +653,53 @@
                     </entry>
 
 
+                    <entry xml:id="corea">
+                        <form>
+                            <orth>corea, -ee</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="correa-1"><hi rend="italic">var of</hi> chorea<ref>[<hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                    
 
                 </div>
                 <div n="D" xml:id="gloss-la-D">
-                    <!-- all of the entries for D -->
+                    <entry xml:id="Dublenia">
+                        <form>
+                            <orth>Dublenia, -ie</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="Dublenia-1">Dublin  
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="duplois">
+                        <form>
+                            <orth>duplois, -idis</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="duplois-1"><hi rend="italic">var of</hi> diplois<ref>[<hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                    
                 </div>
                 <div n="E" xml:id="gloss-la-E">
+                    
                     <entry xml:id="episcopus">
                         <form>
                             <orth>episcopus, -i</orth>
                             <gram>n m</gram>
                         </form>
                         <sense xml:id="episcopus-1">bishop; <form>
-                                <orth>~ puerorum</orth>
-                            </form> boy bishop, a boy, originally a choirboy in a cathedral or other
-                            collegiate church or a student in an almonry school, chosen to act as a
-                            mock bishop in liturgical and other observances on the feast of St
-                            Nicholas or of the Holy Innocents </sense>
+                            <orth>~ puerorum, ~ iuuenum</orth>
+                        </form> boy bishop, a boy, originally a choirboy in a cathedral or other collegiate church or a student in an almonry school, chosen to act as a mock bishop in liturgical and other observances on the feast of St Nicholas or of the Holy Innocents </sense>
                     </entry>
+                    
+                    
+                    
 
                     <entry xml:id="es">
                         <form>
@@ -616,7 +722,16 @@
                                 exenium]</ref>
                         </sense>
                     </entry>
-
+                    
+                    <entry xml:id="exhennium">
+                        <form>
+                            <orth>exhennium, -ii</orth>
+                            <gram>n nt</gram>
+                        </form>
+                        <sense xml:id="exhennium-1"><hi rend="italic">var of</hi> exenium<ref>[<hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
                 </div>
 
                 <div n="F" xml:id="gloss-la-F">
@@ -633,25 +748,60 @@
                 </div>
 
                 <div n="G" xml:id="gloss-la-G">
-                    <!-- all of the entries for G -->
+                    <entry xml:id="gentaculum">
+                        <form>
+                            <orth>gentaculum</orth>
+                        </form>
+                        <xr>
+                            <hi rend="italic">see</hi>
+                            <hi rend="bold">ientaculum</hi>
+                        </xr>
+                    </entry>        
+                    <entry xml:id="glocestria">
+                        <form>
+                            <orth>glocestria, -ie</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="glocestria-1">Gloucestershire<orth>gloucestria -e, glowcestria -e</orth>  
+                        </sense>
+                    </entry>   
+                    
+                    
                 </div>
                 <div n="H" xml:id="gloss-la-H">
-                    <!-- all of the entries for H -->
+                    <entry xml:id="haroldus">
+                        <form>
+                            <orth>haroldus, -i</orth>
+                            <gram>n m</gram>
+                        </form>
+                        <sense xml:id="haroldus-1"><hi rend="italic">var of</hi> heraldus<ref>[<hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="hernesiatus">
+                        <form>
+                            <orth>hernesiatus, -a -um</orth>
+                            <gram>pfp</gram>
+                        </form>
+                        <sense xml:id="hernesiatus-1"><hi rend="italic">var of</hi> hernesiastus<ref>[<hi rend="italic">DML</hi>, harnesiare]</ref>
+                        </sense>
+                    </entry>
+                    
+                    
                 </div>
 
                 <div n="I" xml:id="gloss-la-I">
 
+
                     <entry xml:id="ientaculum">
                         <form>
-                            <orth>ientaculum, -i</orth>
-                            <gram>n nt</gram>
+                        <orth>ientaculum, -i</orth>
+                        <gram>n nt</gram>
                         </form>
-                        <sense xml:id="ientaculum-1">in CL, a light early morning refreshment,
-                            breakfast; here, presumably a more substantial, festive meal <ref>[<hi
-                                    rend="italic">DML</hi>, <hi rend="italic">OLD</hi>]</ref>
-                        </sense>
+                        <sense xml:id="ientaculum-1">1. a light early morning refreshment, breakfast <form><orth>gentaculum</orth></form></sense>; <sense xml:id="ientaculum-2">2. in CL, a light early morning refreshment, breakfast; <hi rend="italic">here</hi>likely a more substantial, festive meal</sense>
                     </entry>
-
+                    
+                    
                     <entry xml:id="iusticiarius">
                         <form>
                             <orth>iusticiarius, -ii</orth>
@@ -660,18 +810,54 @@
                         <sense xml:id="iusticiarius-1">justicar, a royal judge, usually of a superior
                             court</sense>
                     </entry>
-
+                    <entry xml:id="iuuenis">
+                        <form>
+                            <orth>iuuenis, -is</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="iuuenis-1"> young; <hi rend="italic">as subst</hi> a youth, young person, <hi rend="italic">in CL</hi> a young adult; <hi rend="italic">here,</hi> a boy; <xr><hi rend="italic">see</hi> episcopus</xr>  
+                        </sense>
+                    </entry>
+                    
+                    
+                    
                 </div>
-
-                <div n="J" xml:id="gloss-la-J">
-                    <!-- all of the entries for J -->
-                </div>
+  
                 <div n="K" xml:id="gloss-la-K">
-                    <!-- all of the entries for K -->
+                    
+                    <entry xml:id="Kantia">
+                        <form>
+                            <orth>Kantia</orth>
+                        </form>
+                        <xr>
+                            <hi rend="italic">see</hi>
+                            <hi rend="bold">Cantia</hi>
+                        </xr>
+                    </entry>
+                                  
                 </div>
 
                 <div n="L" xml:id="gloss-la-L">
-
+                    
+                    <entry xml:id="Lancastria">
+                        <form>
+                            <orth>Lancastria, -ie</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="Lancastria-1">Lancashire
+                        </sense>
+                    </entry>  
+                    
+                    <entry xml:id="Leicestriensis">
+                        <form>
+                            <orth>Leicestriensis, -is</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="Leicestriensis-1">of Leicester
+                        </sense>
+                    </entry>
+                    
+                    
                     <entry xml:id="librata">
                         <form>
                             <orth>librata, -e</orth>
@@ -681,7 +867,16 @@
                                     <ref>[<hi rend="italic">DML</hi> liberare]</ref>
                         </sense>
                     </entry>
-
+                    <entry xml:id="Londonia">
+                        <form>
+                            <orth>Londonia, -ie</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="Londonia-1"><hi rend="italic">var of</hi>Lundonia <ref><hi rend="italic">DML</hi></ref>
+                        </sense>
+                    </entry>
+                    
+                    
                     <entry xml:id="luctor">
                         <form>
                             <orth>luctor, -oris</orth>
@@ -715,6 +910,16 @@
                             <hi rend="bold">vicus Malbanus</hi>
                         </xr>
                     </entry>
+                    <entry xml:id="mencis">
+                        <form>
+                            <orth>mencis, -is</orth>
+                            <gram>n m</gram>
+                        </form>
+                        <sense xml:id="mencis-1"><hi rend="italic">var of</hi>mensis
+                        </sense>
+                    </entry>
+                    
+                    
                     <entry xml:id="michaelis">
                         <form>
                             <orth>Michaelis, -e</orth>
@@ -724,9 +929,36 @@
                             rend="italic">see also</hi> <hi rend="bold">terminus</hi></xr>
                         </sense>
                     </entry>
+                    <entry xml:id="ministralis">
+                        <form>
+                            <orth>ministralis, -is</orth>
+                            <gram>n m</gram>
+                        </form>
+                        <sense xml:id="ministralis-1">a servant; <hi rend="italic">here</hi> likely a minstrel
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="minstrallus">
+                        <form>
+                            <orth>minstrallus, -i</orth>
+                            <gram>n m</gram>
+                        </form>
+                        <sense xml:id="minstrallus-1"><hi rend="italic">var of</hi> ministrallus; <form><orth>monestrallus, -i</orth></form><ref>[<hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
                 </div>
                 <div n="N" xml:id="gloss-la-N">
-                    <!-- all of the entries for N -->
+                    <entry xml:id="Northumberlandia">
+                        <form>
+                            <orth>Northumberlandia, -ie</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="Northumberlandia-1">Northumberland
+                        </sense>
+                    </entry>
+                    
+                    
                 </div>
                 <div n="O" xml:id="gloss-la-O">
                     <!-- all of the entries for O -->
@@ -744,7 +976,17 @@
                             <!--should a note on this abbreviation be added to the headnote? CB: yes, I will add. 2018-02-21: I changed abbreviation above to Latham as that's what we used in previous REED vols for Revised Med Latin Word-list -->
                         </sense>
                     </entry>
-
+                    
+                    <entry xml:id="pandura">
+                        <form>
+                            <orth>pandura, -e</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="pandura-1">in CL a 3 stringed lute<hi rend="italic">, here</hi> likely a fiddle
+                        </sense>
+                    </entry>
+                    
+                    
                     <entry xml:id="par">
                         <form>
                             <orth>par, -is</orth>
@@ -780,7 +1022,17 @@
                         </form>
                         <sense xml:id="parochialis-1">of or pertaining to a parish</sense>
                     </entry>
-
+                    
+                    <entry xml:id="pedotriba">
+                        <form>
+                            <orth>pedotriba, -e</orth>
+                            <gram>n m</gram>
+                        </form>
+                        <sense xml:id="pedotriba-1">a teacher of children [<ref><hi rend="italics">cp DML</hi> paedotribes</ref>]
+                        </sense>
+                    </entry>
+                    
+                    
                     <entry xml:id="perquisitus">
                         <form>
                             <orth>perquisitus, -a, -um</orth>
@@ -819,10 +1071,45 @@
 
                 </div>
                 <div n="R" xml:id="gloss-la-R">
-                    <!-- all of the entries for R -->
+                    <entry xml:id="redeliberacio">
+                        <form>
+                            <orth>redeliberacio, -onis</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="redeliberacio-1">the act of giving back, restoring, delivering again
+                        </sense>
+                    </entry>
+                    
                 </div>
                 <div n="S" xml:id="gloss-la-S">
-                    <!-- all of the entries for S -->
+                    <entry xml:id="sitherator">
+                        <form>
+                            <orth>sitherator</orth>
+                        </form>
+                        <xr>
+                            <hi rend="italic">see</hi>
+                            <hi rend="bold">chitherator</hi>
+                        </xr>
+                    </entry>
+                    
+                    <entry xml:id="suthamptonia">
+                        <form>
+                            <orth>suthamptonia, -ie</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="suthamptonia-1">Southampton
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="suthamptoniensis">
+                        <form>
+                            <orth>suthamptonienis, -is</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="suthamptoniensis-1">of Southampton
+                        </sense>
+                    </entry>
+                    
                 </div>
                 <div n="T" xml:id="gloss-la-T">
                     <entry xml:id="terminus">
@@ -834,11 +1121,16 @@
                                 <orth>~ Michaelis</orth>
                             </form> Michaelmas term </sense>
                     </entry>
+                    <entry xml:id="tripideum">
+                        <form>
+                            <orth>tripideum, -ei</orth>
+                            <gram>n nt</gram>
+                        </form>
+                        <sense xml:id="tripidem-1"><hi rend="italic">var of</hi>tripudium
+                        </sense>
+                    </entry>                  
                 </div>
                 <div n="U" xml:id="gloss-la-U">
-                    <!-- all of the entries for U -->
-                </div>
-                <div n="V" xml:id="gloss-la-V">
                     <entry xml:id="uicus">
                         <form>
                             <orth>uicus, -i</orth>
@@ -852,7 +1144,17 @@
                             Nantwich, Cheshire
                         </sense>
                     </entry>
-                </div>
+                    <entry xml:id="urserarius">
+                        <form>
+                            <orth>urserarius, -ii</orth>
+                            <gram>n m</gram>
+                        </form>
+                        <sense xml:id="urserarius-1">bearward <ref>[<hi rend="italic">cp</hi> ursarius <hi rend="italic">DML</hi>]</ref>; <orth>ursurarius, -ii</orth>  
+                        </sense>
+                    </entry>
+                    
+                    
+                 
                 <div n="W" xml:id="gloss-la-W">
 
                     <entry xml:id="warennarius">
@@ -863,7 +1165,55 @@
                         <sense xml:id="warennarius-1">warrener, here likely an officer employed to
                             protect game on the commons on behalf of the king</sense>
                     </entry>
-
+                    <entry xml:id="Warwicus">
+                        <form>
+                            <orth>Warwicus, -i</orth>
+                            <gram>n m</gram>
+                        </form>
+                        <sense xml:id="Warwicus-1">Warwick
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="Wintonia">
+                        <form>
+                            <orth>Wintonia, -ie</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="Wintonia-1">Winchester; <orth>Wyntonia, -ie</orth>  
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="Wintoniensis">
+                        <form>
+                            <orth>Wintoniensis, -is</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="Wintoniensis-1">of Winchester; <orth>Wyntoniensis, -is</orth>  
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="Wyntonia">
+                        <form>
+                            <orth>Wyntonia, -ie</orth>
+                        </form>
+                        <xr>
+                            <hi rend="italic">see</hi>
+                            <hi rend="bold">Wintonia</hi>
+                        </xr>
+                    </entry>
+                    
+                    
+                    <entry xml:id="Wyntoniensis">
+                        <form>
+                            <orth>Wyntoniensis, -is</orth>
+                        </form>
+                        <xr>
+                            <hi rend="italic">see</hi>
+                            <hi rend="bold">Wintoniensis</hi>
+                        </xr>
+                    </entry>
+                    
+                    
                 </div>
                 <div n="X" xml:id="gloss-la-X">
                     <!-- all of the entries for X -->
