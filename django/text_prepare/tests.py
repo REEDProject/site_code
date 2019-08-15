@@ -557,6 +557,12 @@ Text
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
+        data = {'lang': 'eng', 'place': 'BPA',
+                'date': '<date when-iso="1600">1599/1600</date>',
+                'year': '1599/1600', 'full_place': 'Boring Place Anyway'}
+        self._check_conversion(base_input.format(**data),
+                               base_expected.format(**data), heading=False,
+                               subheading=False)
 
     def test_return(self):
         text = 'Bam! new line'
