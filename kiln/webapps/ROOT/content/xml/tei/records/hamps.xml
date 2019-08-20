@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="REED.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="berks">
   <teiHeader>
     <fileDesc>
@@ -37928,7 +37928,7 @@ cross refs --></p>
                   <cell rend="right">10s</cell>
                 </row>
                 <row>
-                  <cell>The earl of Kent's pipers, and Baron Bartley's with the consent of the lord
+                  <cell>The earl of Kent's pipers, and Baron Berkeley's with the consent of the lord
                     warden</cell>
                   <cell rend="right">2s 6d</cell>
                 </row>
