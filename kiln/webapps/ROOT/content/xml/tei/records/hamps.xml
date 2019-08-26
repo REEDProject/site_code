@@ -490,7 +490,7 @@
       </text>
       <text type="record" xml:id="hamps-ridp219822976">
         <body>
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1967/" type="Place_County">Hampshire</rs>, <rs>Alton</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1967/" type="Place_County">Hampshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/79210/" type="Place_BoroughParish">Alton</rs>
             <date from-iso="1625" to-iso="1626">1625–6</date>
             <seg ana="taxon:HAALAB">HAALAB</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="hamps-ridp219822976-transcription">
@@ -502,7 +502,7 @@
 
               <table>
                 <row>
-                  <cell>Received the same tyme in hockmoney</cell>
+                  <cell>Received the same tyme in <rs ref="http://ereed.library.utoronto.ca/eats/entity/72132/ http://ereed.library.utoronto.ca/eats/entity/40815/" type="CalendarDay_Liturgical">hock</rs>money</cell>
                   <cell rend="right">j li. j s. ij d.</cell>
                 </row>
               </table>
@@ -514,7 +514,7 @@
       </text>
       <text type="record" xml:id="hamps-ridp219903872">
         <body>
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1967/" type="Place_County">Hampshire</rs>, <rs>Alton</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1967/" type="Place_County">Hampshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/79210/" type="Place_BoroughParish">Alton</rs>
             <date from-iso="1626" to-iso="1627">1626–7</date>
             <seg ana="taxon:HAALAB">HAALAB</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="hamps-ridp219903872-transcription">
@@ -526,7 +526,7 @@
 
               <table>
                 <row>
-                  <cell>Received in hockmoney</cell>
+                  <cell>Received in <rs ref="http://ereed.library.utoronto.ca/eats/entity/72132/ http://ereed.library.utoronto.ca/eats/entity/40815/" type="CalendarDay_Liturgical">hock</rs>money</cell>
                   <cell rend="right">j li. j s. 0</cell>
                 </row>
               </table>
@@ -550,8 +550,8 @@
 
               <ab>Inquis<ex>icio</ex><note type="marginal" place="margin_left"
                   >andeu<ex>er</ex>e</note> capt<ex>a</ex> apud andeu<ex>er</ex>e die
-                sab<ex>at</ex>i p<ex>ro</ex>x<ex>imo</ex> post f<ex>estu</ex>m ascenc<ex>ionis</ex>
-                domini anno r<ex>egni</ex> r<ex>egi</ex>s Ric<ex>ardi</ex>
+                sab<ex>at</ex>i p<ex>ro</ex>x<ex>imo</ex> post <rs ref="http://ereed.library.utoronto.ca/eats/entity/42968/" type="CalendarDay_Liturgical">f<ex>estu</ex>m ascenc<ex>ionis</ex>
+                domini</rs> anno r<ex>egni</ex> r<ex>egi</ex>s Ric<ex>ardi</ex>
                   sup<ex>r</ex>adict<ex>o</ex> coram p<ex>re</ex>dict<ex>o</ex> coron<ex>atore</ex>
                   d<ex>omi</ex>ni Regis p<ex>ro</ex> morte Ioh<ex>ann</ex>is Hounte
                   s<ex>er</ex>uient<ex>is</ex> Ioh<ex>annis</ex> Pæker atte M<ex>er</ex>sshe
