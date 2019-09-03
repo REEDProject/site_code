@@ -1674,10 +1674,10 @@
                     
                     <entry xml:id="apirithe">
                         <form>
-                            <orth>apir</orth>
-                            <gram>v inf</gram><!--dummy headword based on 'apirithe'--> 
+                            <orth>apirithe</orth>
+                            <gram>v pr 1 sg</gram>
                         </form>
-                        <sense xml:id="apirithe-1">appear; <form><orth>apirithe</orth><gram>pr</gram></form></sense>
+                        <sense xml:id="apirithe-1">appears</sense>
                     </entry>
                     
                     <entry xml:id="apperell">
@@ -1699,16 +1699,14 @@
                     
                     <entry xml:id="arraysed">
                         <form>
-                            <orth>arrayse</orth>
-                            <!--dummy headword derived from "arraysed" (most common usage)-->
-                            <gram>v inf</gram>
+                            <orth>arraysed</orth>
+                            <gram>v pa t</gram>
                         </form>
-                        <sense xml:id="arraysed-1">to raise or levy (money, troops, etc) <ref>[<hi
+                        <sense xml:id="arraysed-1">raised or levied (money, troops, etc) <ref>[<hi
                                     rend="italic">OEDO</hi> araise <hi rend="italic">v</hi>
                             3]</ref>; <form>
-                                <orth>aresed</orth>, <orth>arraysed</orth>, <orth>arreised</orth>,
+                                <orth>aresed</orth>, <orth>arreised</orth>,
                                     <orth>arreysed</orth>
-                                <gram>pa</gram>
                             </form>
                         </sense>
                     </entry>
@@ -1803,14 +1801,10 @@
 
                     <entry xml:id="axid">
                         <form>
-                            <orth>axe</orth>
-                            <!--dummy infinitive based on "axid" (currently the only instance of this verb)-->
-                            <gram>v inf</gram>
+                            <orth>axid</orth>
+                            <gram>v pa t</gram>
                         </form>
-                        <sense xml:id="axid-1">to ask; <form>
-                                <orth>axid</orth>
-                                <gram>pa</gram>
-                            </form>
+                        <sense xml:id="axid-1">asked 
                         </sense>
                     </entry>
 
@@ -1820,11 +1814,9 @@
 
                     <entry xml:id="bancketeth">
                         <form>
-                            <orth>bancket</orth>
-                            <gram>v inf</gram><!--dummy infinitive based on "bancketeth" (currently the only instance of this verb)--> 
-                        </form>
-                        <sense xml:id="bancketeth-1">banquet; <form><orth>bancketeth</orth><gram>prp</gram></form>
-                        </sense>
+                            <orth>bancketeth</orth>
+                            <gram>v pr 3 pl</gram> </form>
+                        <sense xml:id="bancketeth-1">banquet</sense>
                     </entry>
                    
                     <entry xml:id="baner">
@@ -1937,14 +1929,10 @@
 
                     <entry xml:id="be">
                         <form>
-                            <orth>be</orth><!--dummy headword based on "byin"-->
-                            <gram>v inf</gram>
-                        </form>
-                        <sense xml:id="be-1">to be;
-                        <form>
                             <orth>byin</orth>
-                            <gram>pa</gram>
+                            <gram>v pfp</gram>
                         </form>
+                        <sense xml:id="be-1">been
                         </sense>
                     </entry>
                     
@@ -2345,7 +2333,7 @@
                             <orth>bying</orth>
                             <gram>vb n</gram>
                         </form>
-                        <sense xml:id="byin-1">buying</sense>
+                        <sense xml:id="bying-1">buying</sense>
                     </entry>
 
                 </div>
@@ -2448,12 +2436,12 @@
                     
                     <entry xml:id="cariing">
                         <form>
-                            <orth>cari</orth>
-                            <gram>v inf</gram><!--dummy infinitive based on "cariing"--> 
+                            <orth>cariing</orth>
+                            <gram>vb n</gram> 
                         </form>
-                        <sense xml:id="cariing-1">to carry;
+                        <sense xml:id="cariing-1">carrying
                         <form>
-                            <orth>cariing</orth>, <orth>carriing</orth>
+                        <orth>carriing</orth>
                             <gram>prp</gram>
                         </form>; <xr><hi rend="italic">see also</hi> <hi rend="bold">carege</hi>, <hi rend="bold">caryour</hi></xr>
                         </sense>
