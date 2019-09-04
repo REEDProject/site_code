@@ -2642,14 +2642,10 @@
 
                     <entry xml:id="compt">
                         <form>
-                            <orth>compt</orth>
-                            <gram>v inf</gram><!--dummy headword based on "compted"--> 
+                            <orth>compted</orth>
+                            <gram>v pasp</gram>
                         </form>
-                        <sense xml:id="compt-1">count, account;
-                            <form>
-                                <orth>compted</orth>
-                                <gram>pa</gram>
-                            </form>
+                        <sense xml:id="compt-1">counted, accounted
                         </sense>
                     </entry>
                     
@@ -2765,14 +2761,10 @@
 
                     <entry xml:id="cowde">
                         <form>
-                            <orth>can</orth><!--dummy headword based on "cowde"--> 
-                            <gram>v mod</gram><!--we don't currently have an abbreviation for modals; does this one seem okay?-->
+                            <orth>cowde</orth>
+                            <gram>v pa</gram>
                         </form>
-                        <sense xml:id="cowde-1">to be able, capable; <!--the punctuation of entries will likely break if we don't give a definition of some sort; is this OK?-->
-                            <form>
-                                <orth>cowde</orth>
-                                <gram>pa</gram>
-                            </form>
+                        <sense xml:id="cowde-1">could, was not able
                         </sense>
                     </entry>
 
@@ -2863,14 +2855,10 @@
 
                     <entry xml:id="dallinge">
                         <form>
-                            <orth>dally</orth> <!--dummy headword based on "dallinge"--> 
-                            <gram>v inf</gram>
-                        </form>
-                        <sense xml:id="dallinge-1">dally;
-                        <form>
                             <orth>dallinge</orth>
-                            <gram>prp</gram>
+                            <gram>v prp</gram>
                         </form>
+                        <sense xml:id="dallinge-1">dallying
                         </sense>
                     </entry>
 
@@ -2920,7 +2908,6 @@
                     <entry xml:id="despose">
                         <form>
                             <orth>despose</orth>
-                            <!--headword exists in records-->
                             <gram>v inf, pr</gram>
                         </form>
                         <sense xml:id="despose-1">to depose, testify</sense> 
@@ -2984,10 +2971,10 @@
                     <entry xml:id="dowellyng">
                         <form>
                             <orth>dowellyng</orth>
-                            <gram>vb n in phr</gram>
-                            <orth>dowellyng money</orth>
-                        </form>
-                        <sense xml:id="dowellyng-1">dwelling money, payment for temporary lodging(?)</sense>
+                            <gram>vb n</gram></form><sense xml:id="dowellyng-1">dwelling (?)
+                            <hi rend="italic">in phr</hi>
+                            <form><orth>dowellyng money</orth>
+                        </form> dwelling money, payment for temporary lodging (?)</sense>
                     </entry>
                     
                     <entry xml:id="drierie">
@@ -3109,16 +3096,11 @@
 
                     <entry xml:id="esoined">
                         <form>
-                            <orth>esoin</orth>
-                            <!--headword based on 'esoined'-->
-                            <gram>v inf</gram>
+                            <orth>esoined</orth>
+                            <gram>v pasp</gram>
                         </form>
-                        <sense xml:id="esoined-1">to essoin; to excuse or exonerate <ref>[<hi
+                        <sense xml:id="esoined-1">essoined; excused for absence<ref>[<hi
                                     rend="italic">OEDO</hi> essoin <hi rend="italic">v</hi> 2];</ref> 
-                                <form>
-                                    <orth>esoined</orth>
-                                    <gram>pa</gram>
-                                </form>
                             </sense>
                     </entry>
 
@@ -3141,17 +3123,11 @@
                     
                     <entry xml:id="extreated">
                         <form>
-                            <orth>extreat</orth>
-                            <!--dummy headword based on 'extreated'-->
-                            <gram>v inf</gram>
+                            <orth>extreated</orth>
+                            <gram>v pasp</gram>
                         </form>
-                        <sense xml:id="extreated-1">estreated, to extract a fine, bail, or
-                            forfeiture and give it to an exchequer; loosely, to exact a fine or
-                            enforce a forfeiture <ref>[<hi rend="italic">OEDO</hi> estreat <hi
-                                    rend="italic">v</hi> 1, 2]</ref>; <form>
-                                <orth>extreated</orth>
-                                <gram>pass</gram>
-                            </form>
+                        <sense xml:id="extreated-1">estreated, (of a fine, forfeiture) exacted, enforced <ref>[<hi rend="italic">OEDO</hi> estreat <hi
+                                    rend="italic">v</hi>2]</ref> 
                         </sense>
                     </entry>
                     
@@ -3224,10 +3200,10 @@
                     
                     <entry xml:id="fett">
                         <form>
-                            <orth>fett</orth> <!--headword based on "fett" in Berks Didcot: it's passive in context but could it also double as a present tense form?--> 
-                            <gram>v pr, pass</gram>
+                            <orth>fett</orth> 
+                            <gram>v pasp</gram>
                         </form>
-                        <sense xml:id="fett-1">to fetch</sense>
+                        <sense xml:id="fett-1">fetched</sense>
                     </entry>
 
                     <entry xml:id="feuerell">
@@ -3248,14 +3224,10 @@
                     
                     <entry xml:id="fewellyng">
                         <form>
-                            <orth>fewell</orth> <!-- dummy headword based on "fewellyng"-->
-                            <gram>v inf</gram>
-                        </form>
-                        <sense xml:id="fewellyng-1">fuel;
-                        <form>
                             <orth>fewellyng</orth>
-                            <gram>prp</gram>
+                            <gram>vb n</gram>
                         </form>
+                        <sense xml:id="fewellyng-1">fuelling, feeding with fuel
                         </sense>
                     </entry>
                     
@@ -3267,18 +3239,6 @@
                         <sense xml:id="feyse-1">feeze, frighten <ref>[<hi rend="italic">OEDO</hi> feeze <hi rend="italic">v.1</hi> 2]</ref></sense>
                     </entry>
                    
-                    <entry xml:id="fotte">
-                        <form>
-                            <orth>fight</orth>
-                            <gram>v inf</gram> <!-- dummy headword based on "fotte"--> 
-                        </form>
-                        <sense xml:id="fotte-1">to fight;
-                            <form>
-                                <orth>fotte</orth>
-                                <gram>pa</gram>
-                            </form>
-                        </sense>
-                    </entry>
                    
                     <entry xml:id="flattcappe">
                         <form>
@@ -3303,25 +3263,19 @@
 
                     <entry xml:id="flonge">
                         <form>
-                            <orth>fling</orth>
-                            <!--dummy headword based on 'flonge'--> 
-                            <gram>v inf</gram> 
+                            <orth>flonge</orth>
+                            <gram>v pa</gram> 
                         </form>
-                        <sense xml:id="flonge-1">to fling;
-                            <form>
-                                <orth>flonge</orth>
-                                <gram>pa</gram>
-                            </form>
+                        <sense xml:id="flonge-1">flung                         
                         </sense>
                     </entry>
                     
                     <entry xml:id="folo">
                         <form>
-                            <orth>folo</orth>
-                            <gram>v inf</gram> <!-- dummy headword based on foloythe--> 
+                            <orth>foloythe</orth>
+                            <gram>v pr 3 s</gram>  
                         </form>
-                        <sense xml:id="folo-1">follow;
-                        <form><orth>foloythe</orth><gram>prp</gram></form>
+                        <sense xml:id="folo-1">follows
                         </sense>
                     </entry>
                     
@@ -3582,10 +3536,10 @@
                     
                     <entry xml:id="gyllt">
                         <form>
-                            <orth>gyllt</orth><!-- dummy headword based on "gylltinge --> 
-                            <gram>v inf</gram>
+                            <orth>gylltinge</orth>
+                            <gram>vb n</gram>
                         </form>
-                        <sense xml:id="gyllt-1">gild; <form><orth>gylltinge</orth><gram>prp</gram></form>
+                        <sense xml:id="gyllt-1">gilding 
                         </sense>
                     </entry>
                     
@@ -3758,13 +3712,10 @@
 
                     <entry xml:id="hevyd">
                         <form>
-                            <orth>heve</orth><!--dummy headword based on "hevyd"-->
-                            <gram>v inf</gram>
+                            <orth>hevyd</orth> 
+                            <gram>v pa</gram>
                         </form>
-                        <sense xml:id="hevyd-1">to heave; <form>
-                                <orth>hevyd</orth>
-                                <gram>pa</gram>
-                            </form>
+                        <sense xml:id="hevyd-1">heaved 
                         </sense>
                     </entry>
                     
@@ -3820,14 +3771,10 @@
 
                     <entry xml:id="houlden">
                         <form>
-                            <orth>hould</orth>
-                            <!-- dummy headword based on 'houlden'-->
-                            <gram>v inf</gram>
+                            <orth>houlden</orth> 
+                            <gram>v pasp</gram>
                         </form>
-                        <sense xml:id="houlden-1">held; <form>
-                                <orth>houlden</orth>
-                                <gram>pa</gram>
-                            </form>
+                        <sense xml:id="houlden-1">holden, held
                         </sense>
                     </entry>
 
@@ -3962,15 +3909,12 @@
 
                     <entry xml:id="iurkes">
                         <form>
-                            <orth>iurke</orth>
-                            <!--dummy headword based on iurkes-->
-                            <gram>v inf</gram>
+                            <orth>iurkes</orth>
+ 
+                            <gram>v pr 3 s</gram>
                         </form>
-                        <sense xml:id="iurkes-1">to jerk; to thrust, push, pull, or twist with sudden movements <ref>[<hi rend="italic">OEDO</hi> jerk <hi
-                                    rend="italic">v.1</hi> 2.a]</ref>; <form>
-                                <orth>iurkes</orth>
-                                <gram>pr</gram>
-                            </form>
+                        <sense xml:id="iurkes-1">jerks; thrusts, pushes, pulls, or twists with sudden movements <ref>[<hi rend="italic">OEDO</hi> jerk <hi
+                                    rend="italic">v.1</hi> 2.a]</ref>  
                         </sense>
                     </entry>
 
@@ -4041,10 +3985,10 @@
                     
                     <entry xml:id="lantch">
                         <form>
-                            <orth>lantch</orth><!-- dummy headword based on "lantch'd"--> 
-                            <gram>v inf</gram>
+                            <orth>lantch'd</orth> 
+                            <gram>v pfp</gram>
                         </form>
-                        <sense xml:id="lantch-1">launch; <form><orth>lantch'd</orth><gram>pa</gram></form></sense>
+                        <sense xml:id="lantch-1">launched</sense>
                     </entry>
                     
                     <entry xml:id="larges">
@@ -4166,10 +4110,10 @@
                     
                     <entry xml:id="lowt">
                         <form>
-                            <orth>lowt</orth><!--dummy headword based on "lowted" -->
-                            <gram>v pr</gram>
+                            <orth>lowted</orth>
+                            <gram>v intr pa</gram>
                         </form>
-                        <sense xml:id="lowt-1">lout; to stoop, bend, and bow <ref>[<hi rend="italic">OEDO</hi> lout <hi rend="italic">v.1</hi>]</ref>; <form><orth>lowted</orth><gram>pa</gram></form></sense>
+                        <sense xml:id="lowt-1">louted; stooped, bowed <ref>[<hi rend="italic">OEDO</hi> lout <hi rend="italic">v.1</hi>]</ref></sense>
                     </entry>
 
                     <entry xml:id="lyneinge">
@@ -4224,10 +4168,10 @@
                     
                     <entry xml:id="lyvie">
                         <form>
-                            <orth>lyvie</orth><!--dummy headword based on "lyvied"-->
-                            <gram>v inf</gram>
+                            <orth>lyvied</orth>
+                            <gram>v pasp</gram>
                         </form>
-                        <sense xml:id="lyvie-1">levy; <form><orth>lyvied</orth><gram>pa</gram></form></sense>
+                        <sense xml:id="lyvie-1">levied </sense>
                     </entry>
 
                 </div>
@@ -4252,18 +4196,18 @@
 
                     <entry xml:id="mal">
                         <form>
-                            <orth>mal</orth><!-- dummy headword based on 'mald'-->
+                            <orth>mald</orth>
                             <gram>v inf</gram>
                         </form>
-                        <sense xml:id="mal-1">maul; <form><orth>mald</orth><gram>pa</gram></form></sense>
+                        <sense xml:id="mal-1">mauled, knocked, struck (down)</sense>
                     </entry>
                     
                     <entry xml:id="mar">
                         <form>
-                            <orth>mar</orth><!-- dummy headword based on 'marde'--> 
-                            <gram>v inf</gram>
+                            <orth>marde</orth>
+                            <gram>v intr pa</gram>
                         </form>
-                        <sense xml:id="mar-1">mar; <form><orth>marde</orth><gram>pa</gram></form></sense>
+                        <sense xml:id="mar-1">marred; erred</sense>
                     </entry>
                     
                     <entry xml:id="mariolty">
@@ -4478,8 +4422,7 @@
                             <orth>nichil</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="nichil-1">nihil, nil; a Latinism signifying that nothing was
-                            received that year; <form><orth>nichill</orth></form>
+                        <sense xml:id="nichil-1">nil; <form><orth>nichill</orth></form>
                         </sense>
                     </entry>
                     
@@ -4546,14 +4489,10 @@
                     
                     <entry xml:id="occpyed">
                         <form>
-                            <orth>occpye</orth>
-                            <!--dummy headword based on 'occyped'-->
-                            <gram>v inf</gram>
+                            <orth>occpyed</orth>
+                            <gram>v pasp</gram>
                         </form>
-                        <sense xml:id="occpyed-1">occupied; <form>
-                                <orth>occpyed</orth>
-                                <gram>pa</gram>
-                            </form>
+                        <sense xml:id="occpyed-1">occupied
                         </sense>
                     </entry>
                     
@@ -4612,15 +4551,6 @@
                         </form>
                         <sense xml:id="oues-1">eaves, the edge of a forest; <form><orth>oveis</orth></form>; <form><orth>oves</orth></form></sense>
                     </entry>
-
-                    <entry xml:id="overthewest">
-                        <form>
-                            <orth>overthew</orth><!-- dummy headword based on 'overthewest'--> 
-                            <gram>v inf</gram>
-                        </form>
-                        <sense xml:id="overthewest-1">overthrow; <form><orth>overthewest</orth><gram>pa</gram></form></sense>
-                    </entry>
-                    
                     <entry xml:id="oyeyees">
                         <form>
                             <orth>oye yees</orth>
@@ -4659,10 +4589,10 @@
 
                     <entry xml:id="pard">
                         <form>
-                            <orth>par</orth><!--dummy headword based on par'd--> 
-                            <gram>v inf</gram>
+                            <orth>par'd</orth> 
+                            <gram>v pa</gram>
                         </form>
-                        <sense xml:id="pard-1">pair, damage <ref>[<hi rend="italic">OEDO</hi> pair <hi rend="italic">v.1</hi>]</ref>; <form><orth>par'd</orth><gram>pa</gram></form>
+                        <sense xml:id="pard-1">paired, damaged <ref>[<hi rend="italic">OEDO</hi> pair <hi rend="italic">v.1</hi>]</ref>
                         </sense>
                     </entry>
 
@@ -4687,23 +4617,18 @@
                     
                     <entry xml:id="paws">
                         <form>
-                            <orth>paws</orth><!--dummy headword based on 'pawsinge'--> 
-                            <gram>v inf</gram>
+                            <orth>pawsinge</orth> 
+                            <gram>v prp</gram>
                         </form>
-                        <sense xml:id="paws-1">pause; <form><orth>pawsinge</orth><gram>prp</gram></form></sense>
+                        <sense xml:id="paws-1">pausing</sense>
                     </entry>
 
                     <entry xml:id="pead">
                         <form>
-                            <orth>pay</orth>
-                            <!-- dummy headword based on 'pead'--> 
-                            <gram>v inf</gram>
+                            <orth>pead</orth>
+                            <gram>v pasp</gram>
                         </form>
-                        <sense xml:id="pead-1">to pay; <!--another verb that unfortunately requires a redundant gloss so as not to break punctuation (for now)-->
-                            <form>
-                                <orth>pead</orth>
-                                <gram>pasp</gram>
-                            </form>
+                        <sense xml:id="pead-1">paid
                         </sense>
                     </entry>
                     
@@ -4725,10 +4650,10 @@
                     
                     <entry xml:id="peirce">
                         <form>
-                            <orth>peirce</orth><!--dummy headword based on 'peirc'd'--> 
-                            <gram>v inf</gram>
+                            <orth>peirc'd</orth>
+                            <gram>v pa</gram>
                         </form>
-                        <sense xml:id="peirce-1">pierce; <form><orth>peirc'd</orth><gram>pa</gram></form></sense>
+                        <sense xml:id="peirce-1">pierced</sense>
                     </entry>
                     
                     <entry xml:id="pennystone">
@@ -4970,10 +4895,10 @@
                     
                     <entry xml:id="race">
                         <form>
-                            <orth>race</orth>
-                            <gram>v inf</gram><!-- dummy headword based on 'rac'd'-->
+                            <orth>rac'd</orth>
+                            <gram>v pfp</gram>
                         </form>
-                        <sense xml:id="race-1">raze, erase; <form><orth>rac'd</orth><gram>pa</gram></form></sense>
+                        <sense xml:id="race-1">razed, erased</sense>
                     </entry>
 
                     <entry xml:id="rampeirs">
@@ -5026,13 +4951,10 @@
 
                     <entry xml:id="reseued">
                         <form>
-                            <orth>reseue</orth>
-                            <!--dummy headword based on 'reseued'-->
-                            <gram>v inf</gram>
+                            <orth>reseued</orth>
+                            <gram>v pasp</gram>
                         </form>
-                        <sense xml:id="reseued-1">to receive; <form>
-                                <orth>reseued</orth>, <orth>reseuid</orth>, <orth>resseuyd</orth>
-                                <gram>pa</gram>
+                        <sense xml:id="reseued-1">received; <form><orth>reseuid</orth>, <orth>resseuyd</orth>
                             </form>
                         </sense>
                     </entry>
@@ -5208,10 +5130,10 @@
 
                     <entry xml:id="saught">
                         <form>
-                            <orth>seek</orth><!-- dummy headword based on 'saught'; another situation in which we have to supply a definition but it looks awkward. Thoughts on formatting?--> 
-                            <gram>n</gram>
+                            <orth>saught</orth> 
+                            <gram>pa</gram>
                         </form>
-                        <sense xml:id="saught-1">seek; <form><orth>saught</orth><gram>pa</gram></form></sense>
+                        <sense xml:id="saught-1">sought</sense>
                     </entry>
                     
                     <entry xml:id="savynge">
@@ -5272,10 +5194,10 @@
                     
                     <entry xml:id="seasinge">
                         <form>
-                            <orth>sease</orth><!-- dummy headword based on 'seasinge'-->
-                            <gram>v inf</gram>
+                            <orth>seasinge</orth>
+                            <gram>vb n</gram>
                         </form>
-                        <sense xml:id="seasinge-1">cease; <form><orth>seasinge</orth><gram>prp</gram></form></sense>
+                        <sense xml:id="seasinge-1">ceasing</sense>
                     </entry>
 
                     <entry xml:id="seavenight">
@@ -5296,10 +5218,10 @@
                     
                     <entry xml:id="sel">
                         <form>
-                            <orth>sel</orth><!--dummy headword based on 'selyng'-->
-                            <gram>v inf</gram>
+                            <orth>selyng</orth>
+                            <gram>vb n</gram>
                         </form>
-                        <sense xml:id="selyng-1">seal; <form><orth>selyng</orth><gram>prp</gram></form></sense>
+                        <sense xml:id="selyng-1">sealing</sense>
                     </entry>
                     
                     <entry xml:id="sette">
@@ -5400,10 +5322,10 @@
 
                     <entry xml:id="smirted">
                         <form>
-                            <orth>smirt</orth><!--dummy headword based on 'smirted'-->
-                            <gram>v inf</gram>
+                            <orth>smirted</orth>
+                            <gram>v intr pa</gram>
                         </form>
-                        <sense xml:id="smirted-1">an outburst; possibly an imitative or onomatopoeic nonce word or portmanteau of 'smirk' and 'snort'; <form><orth>smirted</orth><gram>pa</gram></form></sense>
+                        <sense xml:id="smirted-1"><hi rend="italic">precise meaning unclear; possibly an imitative or onomatopoeic nonce word or portmanteau of 'smirked' and 'snorted'</hi></sense>
                     </entry>
                     
                     <entry xml:id="smothed">
@@ -5536,14 +5458,11 @@
 
                     <entry xml:id="stoved">
                         <form>
-                            <orth>stove</orth>
-                            <!--dummy headword based on "stoved"-->
-                            <gram>v inf</gram>
+                            <orth>stoved</orth>
+ 
+                            <gram>v pfp</gram>
                         </form>
-                        <sense xml:id="stoved-1">to stuff (?); <form>
-                                <orth>stoved</orth>
-                                <gram>pass</gram>
-                            </form>
+                        <sense xml:id="stoved-1">stuffed (?) 
                         </sense>
                     </entry>
                     
@@ -5796,10 +5715,10 @@
                     
                     <entry xml:id="trimbd">
                         <form>
-                            <orth>trimb</orth><!--dummy headword based on 'trimbd'-->
-                            <gram>v inf</gram>
+                            <orth>trimbd</orth>
+                            <gram>v pfp</gram>
                         </form>
-                        <sense xml:id="trimbd-1">trim; <form><orth>trimbd</orth><gram>pa</gram></form></sense>
+                        <sense xml:id="trimbd-1">trimmed</sense>
                     </entry>
 
                     <entry xml:id="trobull">
@@ -5946,14 +5865,10 @@
 
                     <entry xml:id="wating">
                         <form>
-                            <orth>wate</orth>
-                            <!--dummy headword based on 'wating'--> 
-                            <gram>v inf</gram>
+                            <orth>wating</orth>
+                            <gram>vb n</gram>
                         </form>
-                        <sense xml:id="wating-1">to wait; <form>
-                                <orth>wating</orth>
-                                <gram>prp</gram>
-                            </form>
+                        <sense xml:id="wating-1">waiting
                         </sense>
                     </entry>
 
