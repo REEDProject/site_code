@@ -4724,19 +4724,20 @@
 
                     <entry xml:id="plad">
                         <form>
-                            <orth>play</orth>
-                            <!-- dummy headword based on "playnge" (most common variant)-->
-                            <gram>v inf</gram>
+                            <orth>plad</orth>
+                            <gram>v pa</gram>
                         </form>
-                        <sense xml:id="plad-1">to play; <form>
-                                <orth>plange</orth>, <orth>playnge</orth>
-                                <gram>prp</gram>; </form>
-                            <form>
-                                <orth>plad</orth>
-                                <gram>pa</gram>
-                            </form>
-                        </sense>
+
+                        <sense xml:id="plad-1">played</sense>
                     </entry>
+                    
+                    <entry xml:id="plange">
+                            <form>
+                            <orth>plange</orth>
+                                <gram>vb n</gram></form>
+                                <sense xml:id="plange-1">playing</sense>
+                    </entry>
+      
                     <!--new, tidier, system for glossing verbs in action here: how does this look? CB: fine? but did you want to see on front end? JH: yes, eventually!-->
 
                     <entry xml:id="plaiare">
