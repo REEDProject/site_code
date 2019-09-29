@@ -3386,7 +3386,7 @@
                             </form>
                         </sense>
                         <xr><hi rend="italic">see also</hi> <hi rend="bold">gatheryng</hi></xr>
-                    </entry> <!--I have been somewhat conservative in tagging this in berks.xml: only in instances to do with "corn money" (where the idea of money is not totally explicit), or other cases where there's confusion between gathering [money] and gathering [people together]--> 
+                    </entry> <!--I have been somewhat conservative in tagging this in berks.xml and hamps.xml: only in instances to do with "corn money" (where the idea of money is not totally explicit), or other cases where there's confusion between gathering [money] and gathering [people together], or where a lack of context makes it unclear that this is a fundraising activity--> 
 
                     <entry xml:id="gatheryng">
                         <form>
@@ -3399,7 +3399,7 @@
                                 <form><orth>gathering</orth></form>;
                                 <form><orth>gatheringe</orth></form>;
                                 <form><orth>gatherynge</orth></form>; </sense>
-                        <xr><hi rend="italic">see also</hi> <hi rend="bold">gather</hi></xr>
+                        <xr><hi rend="italic">see also</hi> <hi rend="bold">gather</hi></xr><!--see "gather" above: tagged only when sense is ambiguous--> 
                     </entry>
             
                     <!-- I had flagged gayne/gayned etc. as terms to be added, but I noticed that we ended up *not* glossing gain as in profit for Berkshire (it's easily searchable in OEDO), so I have not added them here.-->
@@ -3457,7 +3457,7 @@
                             <orth>gitthorne</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="gitthorne-1">gittern; <form><orth>gyttorne</orth></form>
+                        <sense xml:id="gitthorne-1">gittern; <form><orth>gyttorne</orth></form><!--"gyttorne" not tagged in Hamps because term is EATSed-->
                         </sense>
                     </entry>
 
