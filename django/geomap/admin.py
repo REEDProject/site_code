@@ -4,7 +4,7 @@ from django.core.serializers import serialize
 
 from leaflet.admin import LeafletGeoAdmin
 
-from .models import Place, PatronsPlaceType
+from .models import Place, PlaceType
 
 
 class ContainingPlaceListFilter(admin.SimpleListFilter):
@@ -26,10 +26,8 @@ class ContainingPlaceListFilter(admin.SimpleListFilter):
 
 class PlaceAdmin(LeafletGeoAdmin):
 
-    list_display = ('name', 'patrons_place_type', 'container',
-                    'patrons_place_code', 'canonical_url')
-    list_filter = ('patrons_place_type', ContainingPlaceListFilter,
-                   'patrons_place_code')
+    list_display = ('name', 'place_type', 'container', 'canonical_url')
+    list_filter = ('place_type', ContainingPlaceListFilter)
     ordering = ('name',)
     search_fields = ['name', 'container__name', 'container__container__name']
 
@@ -51,5 +49,5 @@ class PlaceAdmin(LeafletGeoAdmin):
                                    extra_context=extra_context)
 
 
-gis_admin.site.register(PatronsPlaceType)
+gis_admin.site.register(PlaceType)
 gis_admin.site.register(Place, PlaceAdmin)
