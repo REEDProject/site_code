@@ -5,14 +5,14 @@ from django.urls import reverse
 from . import constants
 
 
-class PatronsPlaceType(models.Model):
+class PlaceType(models.Model):
 
-    """Mode representing the Patrons and Performances place type."""
+    """Mode representing the place type."""
 
     name = models.CharField(max_length=50, unique=True)
 
     class Meta:
-        verbose_name = 'P&P Place Type'
+        verbose_name = 'Place Type'
 
     def natural_key(self):
         return self.name
@@ -28,7 +28,7 @@ class Place(models.Model):
     name: Descriptive, for use of editors only. The name
     that will be displayed outside this system is taken from EATS.
 
-    patrons_place_type: Descriptive, for use of editors only. The type
+    place_type: Descriptive, for use of editors only. The type
     that is displayed outside this system is taken from EATS.
 
     coordinates: Optional co-ordinates of the place. If null, the
@@ -49,15 +49,17 @@ class Place(models.Model):
     container: Optional reference to a containing place. Unlocated
     places use the co-ordinates of their container.
 
-    patrons_place_code: Legacy P&P data.
+    patrons_label_flag: Specification of at which zoom levels a label
+    should be displayed for the place. The name of this field is
+    legacy, but the data is not.
 
-    patrons_label_flag: Legacy P&P data.
+    notes: Editorial notes on sources and such.
 
     """
 
     name = models.CharField(max_length=50, help_text=constants.NAME_FIELD_HELP)
-    patrons_place_type = models.ForeignKey(PatronsPlaceType, blank=True,
-                                           null=True, related_name='places')
+    place_type = models.ForeignKey(PlaceType, blank=True, null=True,
+                                   related_name='places')
     coordinates = models.GeometryField(blank=True, null=True,
                                        srid=constants.SRID)
     is_approximate = models.BooleanField(
@@ -67,12 +69,10 @@ class Place(models.Model):
         null=True, srid=constants.SRID)
     container = models.ForeignKey('Place', null=True,
                                   related_name='contained_places')
-    patrons_place_code = models.IntegerField(
-        blank=True, choices=constants.PATRONS_PLACE_CODE_CHOICES, null=True,
-        verbose_name=constants.PATRONS_PLACE_CODE_FIELD_NAME)
     patrons_label_flag = models.IntegerField(
-        blank=True, choices=constants.PATRONS_LABEL_FLAG_CHOICES, null=True,
-        verbose_name=constants.PATRONS_LABEL_FLAG_FIELD_NAME)
+        'label flag', blank=True, choices=constants.LABEL_FLAG_CHOICES,
+        null=True)
+    notes = models.TextField(blank=True)
 
     def get_actual_coordinates(self, include_placeholder=False):
         """Returns the actual co-ordinates for this place.
