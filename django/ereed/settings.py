@@ -146,11 +146,14 @@ LEAFLET_CONFIG = {
     'SPATIAL_EXTENT': (-20.5, 46.5, 7.0, 62.0),
     'SRID': 3857,
     'TILES': [
-        ('Counties', 'http://talus.geog.utoronto.ca/1.0.0/EREED_gis_counties_base/{z}/{x}/{-y}.png', {'maxZoom': 15, 'attribution': '<a href="http://reed.utoronto.ca/">Records of Early English Drama</a>'}),
-        ('Relief', 'http://talus.geog.utoronto.ca/1.0.0/REED_gis_relief/{z}/{x}/{-y}.png', {}),
-        ('OpenStreetMap', 'https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicmVlZHVvZnQiLCJhIjoiY2l6aWpiODQ2MDE2NjJ4b2RwZ3MyODl6byJ9.A67HGpPtAeCayuReK1ahtA', {'maxZoom': 15, 'attribution': 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'}),
+        ('OpenStreetMap', 'https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicmVlZHVvZnQiLCJhIjoiY2l6aWpiODQ2MDE2NjJ4b2RwZ3MyODl6byJ9.A67HGpPtAeCayuReK1ahtA', {'maxZoom': 20, 'attribution': 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'}),
+        ('Counties', 'http://talus.geog.utoronto.ca/1.0.0/EREED_gis_counties_base/{z}/{x}/{-y}.png', {'maxZoom': 20, 'attribution': '<a href="http://reed.utoronto.ca/">Records of Early English Drama</a>'}),
+        ('Relief', 'http://talus.geog.utoronto.ca/1.0.0/REED_gis_relief/{z}/{x}/{-y}.png', {'maxZoom': 20}),
     ],
 }
+
+
+ACCOUNT_LOGIN_URL = '/accounts/login/'
 
 
 # Local settings
