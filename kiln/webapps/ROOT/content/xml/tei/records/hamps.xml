@@ -147,6 +147,10 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2019-11-21" who="#PG">John to Iohn in HAWIEK</change>
+      <change when="2019-11-21" who="#PG">lords to lord<ex>es</ex>in HAWIEK</change>
+      <change when="2019-11-21" who="#PG">knights to knight<ex>es</ex>in HAWIEK</change>
+      <change when="2019-11-21" who="#PG">and to And in HAWIEK</change>
       <change when="2018-09-26" who="#KC">Checked and retagged where appropriate "corpus christi"
         (ID #41497) to both "corpus christi" + "summer games"</change>
       <change when="2018-09-26" who="#KC">Retagged things "whitsun" (entity ID 41139) to doublt tag
@@ -5215,8 +5219,8 @@ column and encompassing both rows -->
                 consuetudine on<ex>us</ex> h<ex>u</ex>i<ex>smodo</ex> p<ex>er</ex>tinet honeste
                   claudant<ex>ur</ex> ita q<ex>uod</ex> ab eis per hoc i<ex>m</ex>munda
                   a<ex>n</ex>i<ex>m</ex>alia arceant<ex>ur</ex> &amp; ne in ip<ex>s</ex>is in
-                festo<ex>rum</ex> festiuitatibus aut alias <rs ref="http://ereed.library.utoronto.ca/eats/entity/40677/" type="Entertainment_Type">lucte</rs> fiant <term ref="gloss:corea-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">coree</rs></term> ducant<ex>ur</ex>
-                  u<ex>e</ex>l alii ludi spectabiles h<ex>ab</ex>eant<ex>ur</ex> ne i<ex>n</ex> eis
+                festo<ex>rum</ex> festiuitatibus aut alias<rs ref="http://ereed.library.utoronto.ca/eats/entity/45652/" type="CrimesMisdemeanors"> <rs ref="http://ereed.library.utoronto.ca/eats/entity/40677/" type="Entertainment_Type">lucte fiant <term ref="gloss:corea-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">coree</rs></term></rs> ducant<ex>ur</ex>
+                  u<ex>e</ex>l alii ludi spectabiles</rs> h<ex>ab</ex>eant<ex>ur</ex> ne i<ex>n</ex> eis
                   eo<ex>rum</ex> aut alio<ex>rum</ex> a<ex>n</ex>i<ex>m</ex>alia
                   depascant<ex>ur</ex><gap reason="omitted"/>.</ab>
             </div>
@@ -5224,7 +5228,7 @@ column and encompassing both rows -->
               <head>f 56v</head>
               <pb n="56v" type="folio"/>
 
-              <ab><gap reason="omitted"/>⸿Quoniam cl<ex>er</ex>ico<ex>rum</ex> vita
+              <ab><gap reason="omitted"/>⸿Quoniam <rs ref="http://ereed.library.utoronto.ca/eats/entity/10928/ https://ereed.library.utoronto.ca/eats/entity/9186/" type="Collective_ClergyAndChurchwardens">cl<ex>er</ex>ico<ex>rum</ex></rs> vita
                   exemplu<ex>m</ex> debet esse &amp; informatio laico<ex>rum</ex> De vita &amp;
                 honestate clericorum.<note type="foot">De vita … clericorum: <hi rend="italic"
                     >rubricated</hi></note> ¶sua esse. precipim<ex>us</ex> q<ex>uod</ex>
@@ -5235,7 +5239,7 @@ column and encompassing both rows -->
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/9186/" type="Collective_ClergyAndChurchwardens">Presbit<ex>er</ex>i</rs> v<ex>er</ex>o tam s<ex>upe</ex>rtunicis q<ex>u</ex>a<ex>m</ex>
                 capis clausis vtant<ex>ur</ex> n<ex>e</ex>c ip<ex>s</ex>i n<ex>e</ex>c
                 cl<ex>er</ex>ici quili<ex>bet</ex> tab<ex>er</ex>nas excerceant aut ad talos ludant
-                  u<ex>e</ex>l <rs ref="http://ereed.library.utoronto.ca/eats/entity/62012/" type="Entertainment_Type">publicis presumant spectac<ex>u</ex>lis</rs> int<ex>er</ex>esse<gap
+                  u<ex>e</ex>l <rs ref="http://ereed.library.utoronto.ca/eats/entity/62012/ " type="Entertainment_Type">publicis presumant spectac<ex>u</ex>lis</rs> int<ex>er</ex>esse<gap
                   reason="omitted"/>.</ab>
             </div>
           </div>
@@ -5409,15 +5413,15 @@ column and encompassing both rows -->
 
               <gap reason="omitted"/>
 
-              <ab>Off<ex>iciu</ex>m D<ex>omi</ex>ni con<ex>tra</ex> Will<ex>elm</ex>um
+              <ab>Off<ex>iciu</ex>m D<ex>omi</ex>ni con<ex>tra</ex> <rs ref="http://ereed.library.utoronto.ca/eats/entity/112043/" type="Person_Commoner">Will<ex>elm</ex>um</rs>
                   <del>Barton</del>
-                <add place="above">Reyonold<ex>es</ex></add>‸ de eadem<note type="foot">eadem: <hi
+                <add place="above"><rs ref="http://ereed.library.utoronto.ca/eats/entity/112043/" type="Person_Commoner">Reyonold<ex>es</ex></rs></add>‸ de eadem<note type="foot">eadem: <hi
                     rend="italic">ie,</hi> Havant</note></ab>
 
-              <ab><foreign xml:lang="eng">fidler for playing on the Sabaoth Day with his Crowde in
+              <ab><foreign xml:lang="eng"><rs ref="http://ereed.library.utoronto.ca/eats/entity/12982/" type="Entertainer_Type">fidler</rs> for <rs ref="http://ereed.library.utoronto.ca/eats/entity/45652/" type="CrimesMisdemeanors">playing on the Sabaoth Day</rs> with his Crowde in
                   open assemblie.</foreign></ab>
 
-              <ab>Quo Die Skynner cert<ex>ificauit</ex> vt prius./</ab>
+              <ab>Quo Die <rs ref="http://ereed.library.utoronto.ca/eats/entity/112108/" type="Person_Commoner">Skynner</rs> cert<ex>ificauit</ex> vt prius./</ab>
 
               <ab>Tunc comparuit d<ex>i</ex>c<ex>t</ex>us Reynold<ex>es</ex> et allegat <foreign
                   xml:lang="eng">that he did plaie on the Saboth daie but not in the time of Divine
@@ -5473,7 +5477,7 @@ column and encompassing both rows -->
                   <cell rend="right">ij s.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>em</ex> to Will<ex>ia</ex>m Curges for iij yerys pypyng</cell>
+                  <cell>It<ex>em</ex> to <rs ref="http://ereed.library.utoronto.ca/eats/entity/112157/" type="Person_Commoner">Will<ex>ia</ex>m Curges</rs> for iij yerys <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/" type="Entertainer_Type">pypyng</rs></cell>
                   <cell rend="right">iiij s.</cell>
                 </row>
               </table>
@@ -5485,17 +5489,16 @@ column and encompassing both rows -->
               <ab><hi rend="center"><foreign xml:lang="lat"><damage><gap unit="chars" extent="4"
                       /></damage> R<ex>egno</ex> R<ex>egis</ex> H<ex>enrici</ex> viij <damage><gap
                         unit="chars" extent="4"/></damage></foreign></hi>
-                <hi rend="center">Reseyuyd of <damage><gap unit="chars" extent="1"/></damage>hyr ale
-                  of heryard by Ioh<ex>n</ex> le <damage><gap unit="chars" extent="3"
-                  /></damage></hi>
+                <hi rend="center">Reseyuyd of <damage><gap unit="chars" extent="1"/></damage>hyr <rs ref="http://ereed.library.utoronto.ca/eats/entity/40561/" type="Entertainment_Type">ale</rs>
+                  of heryard by<rs ref="http://ereed.library.utoronto.ca/eats/entity/112689/" type="Person_Commoner"> Ioh<ex>n</ex> le <damage><gap extent="3" unit="chars"/></damage></rs></hi>
                 <table>
                   <row>
-                    <cell>It<ex>em</ex> at <term ref="gloss:tuelfytyde-1">Tuelfytyde</term> of <term ref="gloss:gatheryng-1">Gaderyng</term> mony</cell>
+                    <cell>It<ex>em</ex> at <term ref="gloss:tuelfytyde-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/112749/" type="CalendarDay_Liturgical">Tuelfytyde</rs></term> of <term ref="gloss:gatheryng-1">Gaderyng</term> mony</cell>
                     <cell rend="right">ij s. x <damage><gap unit="chars" extent="1"
                       /></damage></cell>
                   </row>
                   <row>
-                    <cell>It<ex>em</ex> at Ester of <term ref="gloss:vantapyr-1">vantapyr</term> <term ref="gloss:syluyr-1">Syluyr</term></cell>
+                    <cell>It<ex>em</ex> at <rs ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">Ester</rs> of <term ref="gloss:vantapyr-1">vantapyr</term> <term ref="gloss:syluyr-1">Syluyr</term></cell>
                     <cell rend="right">ij s.</cell>
                   </row>
                   <row>
@@ -5503,7 +5506,7 @@ column and encompassing both rows -->
                     <cell rend="right">v s. iij d.</cell>
                   </row>
                   <row>
-                    <cell>It<ex>em</ex> of the Ale more a holy thurrysday</cell>
+                    <cell>It<ex>em</ex> of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/40561/" type="Entertainment_Type">Ale</rs> more a holy thurrysday</cell>
                     <cell rend="right">xxiiij s.</cell>
                   </row>
                 </table>
@@ -5528,16 +5531,16 @@ column and encompassing both rows -->
 
               <table>
                 <row>
-                  <cell>Receyved for hockinge moneye</cell>
+                  <cell>Receyved for <rs ref="http://ereed.library.utoronto.ca/eats/entity/40815/ http://ereed.library.utoronto.ca/eats/entity/72132/" type="Entertainment_SeasonalCustom">hockinge</rs> moneye</cell>
                   <cell rend="right">iiij s. vj d.</cell>
                 </row>
               </table>
 
               <gap reason="omitted"/>
 
-              <ab>But the Churchmen made a <term ref="gloss:king-1">kingale</term> &amp; bought to this aforesaid Divers <add
+              <ab>But the <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchmen</rs> made a <term ref="gloss:king-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/" type="Entertainment_SeasonalCustom">king</rs><rs ref="http://ereed.library.utoronto.ca/eats/entity/40561/" type="Entertainment_Type">ale</rs></term> &amp; bought to this aforesaid Divers <add
                   place="above">other</add> p<ex>ro</ex>visio<ex>n</ex>s vz. And layd out to
-                minstreles &amp; for oth<ex>e</ex>r occasions herevnder apeares Vz. for
+                <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type">minstreles</rs> &amp; for oth<ex>e</ex>r occasions herevnder apeares Vz. for
                   tot<ex>al</ex> disbursed x li. xix s. j d.</ab>
 
               <ab>of this they receyted againe for</ab>
@@ -5552,30 +5555,30 @@ column and encompassing both rows -->
 
               <table>
                 <row>
-                  <cell>Mault of Kember vj b<ex>ushels</ex> at ij s. the b<ex>ushel</ex></cell>
+                  <cell>Mault of <rs ref="http://ereed.library.utoronto.ca/eats/entity/113192/" type="Person_Commoner">Kember</rs> vj b<ex>ushels</ex> at ij s. the b<ex>ushel</ex></cell>
                   <cell>xij s.</cell>
                 </row>
                 <row>
-                  <cell>Mault of Rob<ex>er</ex>t Naishe 7 b<ex>ushels</ex> at that rate</cell>
+                  <cell>Mault of <rs ref="http://ereed.library.utoronto.ca/eats/entity/113263/" type="Person_Commoner">Rob<ex>er</ex>t Naishe</rs> 7 b<ex>ushels</ex> at that rate</cell>
                   <cell>xiiij s.</cell>
                 </row>
                 <row>
-                  <cell>Lambes 2 of S<ex>i</ex>r R<ex>ichard</ex> Poulet<ex>es</ex> shepherd</cell>
+                  <cell><rs ref="http://ereed.library.utoronto.ca/eats/entity/40978/" type="Thing_FoodDrink">Lambes</rs> 2 of <rs ref="http://ereed.library.utoronto.ca/eats/entity/113645/" type="Person_Gentry">S<ex>i</ex>r R<ex>ichard</ex> Poulet<ex>es</ex></rs> shepherd</cell>
                   <cell>x s.</cell>
                 </row>
                 <row>
-                  <cell>Shepe 2 of <del>hack</del> Rob<ex>er</ex>t hack</cell>
+                  <cell>Shepe 2 of <del>hack</del><rs ref="http://ereed.library.utoronto.ca/eats/entity/113425/" type="Person_Commoner"> Rob<ex>er</ex>t hack</rs></cell>
                   <cell>x<del>viij s. vj</del> d.<note type="foot">x<del>viij s. vj</del> d.: <hi
                         rend="italic">entire sum possibly intended for deletion</hi></note></cell>
                 </row>
                 <row>
                   <cell>Sheepe 2 of <del><damage><gap unit="chars" extent="2"
                           /></damage>y<damage><gap unit="chars" extent="1"/></damage>e<damage><gap
-                          unit="chars" extent="1"/></damage></del> woodyson mr loes man</cell>
+                          unit="chars" extent="1"/></damage></del> <rs ref="http://ereed.library.utoronto.ca/eats/entity/113486/" type="Person_Commoner">woodyson</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/113535/" type="Person_Commoner">mr loes</rs> man</cell>
                   <cell>xix s. vj d.</cell>
                 </row>
                 <row>
-                  <cell>Calf<ex>es</ex> i of kneller bought<note type="foot">bought:<hi
+                  <cell>Calf<ex>es</ex> i of <rs ref="http://ereed.library.utoronto.ca/eats/entity/113597/" type="Person_Commoner">kneller</rs> bought<note type="foot">bought:<hi
                         rend="italic">possibly struck out</hi></note>
                   </cell>
                   <cell>vij s.</cell>
@@ -5590,13 +5593,13 @@ column and encompassing both rows -->
                   <cell> iiij s. vj d.</cell>
                 </row>
                 <row>
-                  <cell>To freeborne at <term ref="gloss:twize-1">twize</term></cell>
+                  <cell>To <rs ref="http://ereed.library.utoronto.ca/eats/entity/114321/" type="Person_Commoner">freeborne</rs> at <term ref="gloss:twize-1">twize</term></cell>
                   <cell>xij s. viij d. for 2 <damage><gap unit="chars" extent="3"/></damage>les for
                     those <damage><gap unit="chars" extent="2"/></damage>s<damage><gap unit="chars"
                         extent="2"/></damage>s v s.</cell>
                 </row>
                 <row>
-                  <cell>To Iohn Swayne</cell>
+                  <cell>To <rs ref="http://ereed.library.utoronto.ca/eats/entity/113364/" type="Person_Commoner">Iohn Swayne</rs></cell>
                   <cell>vj s. viij d.</cell>
                 </row>
               </table>
@@ -5611,10 +5614,10 @@ column and encompassing both rows -->
 
               <table>
                 <row>
-                  <cell>Spices bought at <term ref="gloss:redding-1">Redding</term> v s. iij d.<lb/> At Alford by Goodwife wiste ij s.
+                  <cell>Spices bought at <term ref="gloss:redding-1">Redding</term> v s. iij d.<lb/> At Alford by <rs ref="http://ereed.library.utoronto.ca/eats/entity/114370/" type="Person_Commoner">Goodwife wiste</rs> ij s.
                     x d.<lb/> Butter iij d. Currant<ex>es</ex> v d. &amp; spic<ex>es</ex><lb/>
                     bought by Creese &amp; Gd<note type="foot">Gd: <hi rend="italic">possibly
-                        for</hi> goodwife <hi rend="italic">or</hi> goodman</note> welman ij s. vj
+                        for</hi> goodwife <hi rend="italic">or</hi> goodman</note> <rs ref="http://ereed.library.utoronto.ca/eats/entity/114431/" type="Person_Commoner">welman</rs> ij s. vj
                     d.</cell>
                   <cell><handShift/>Thomas Creese his note<handShift/><lb/> xj s. iij d.</cell>
                 </row>
@@ -5669,18 +5672,18 @@ column and encompassing both rows -->
                   <cell>iiij li. i s. iiij d.</cell>
                 </row>
                 <row>
-                  <cell>To Thomas <damage><gap unit="chars" extent="3"/></damage> for s<damage><gap
+                  <cell>To <rs ref="http://ereed.library.utoronto.ca/eats/entity/114139/" type="Person_Commoner">Thomas</rs> <damage><gap unit="chars" extent="3"/></damage> for s<damage><gap
                         unit="chars" extent="1"/></damage>tt<damage><gap unit="chars" extent="1"
                       /></damage>s <damage><gap unit="chars" extent="4"/></damage>
                     <damage><gap unit="chars" extent="3"/></damage></cell>
                   <cell>xij d.</cell>
                 </row>
                 <row>
-                  <cell>Goodwife serrye for <term ref="gloss:gather-1">gathering</term> 4 days</cell>
+                  <cell><rs ref="http://ereed.library.utoronto.ca/eats/entity/114199/" type="Person_Commoner">Goodwife serrye</rs> for <term ref="gloss:gather-1">gathering</term> 4 days</cell>
                   <cell>xvj d.</cell>
                 </row>
                 <row>
-                  <cell>Goodman Edward<ex>es</ex> for <damage><gap unit="chars" extent="4"
+                  <cell><rs ref="http://ereed.library.utoronto.ca/eats/entity/114260/" type="Person_Commoner">Goodman Edward<ex>es</ex></rs> for <damage><gap unit="chars" extent="4"
                       /></damage>s the cl<damage><gap unit="chars" extent="4"/></damage> of
                         <damage><gap unit="chars" extent="3"/></damage>
                     <damage><gap unit="chars" extent="3"/></damage></cell>
@@ -5706,16 +5709,16 @@ column and encompassing both rows -->
                 <term ref="gloss:suthampontiensis-1">Suth<ex>amp</ex>t<ex>oniensis</ex></term> xxix<hi rend="superscript">o</hi>die
                   mens<ex>i</ex>s Decembris Anno Regni D<ex>omi</ex>ne Elizabeth<ex>e</ex> dei
                   gra<ex>cia</ex> Anglie ffrauncie &amp; hibernie Regine fidei defens<ex>oris</ex>
-                &amp;c Sexto Cora<ex>m</ex> Gilb<ex>er</ex>to Mather coronatore Dicte
+                &amp;c Sexto Cora<ex>m</ex> <rs ref="http://ereed.library.utoronto.ca/eats/entity/114492/" type="Person_Commoner">Gilb<ex>er</ex>to Mather</rs> coronatore Dicte
                 D<ex>omi</ex>ne Regine in Com<ex>itatu</ex> pred<ex>icto</ex> sup<ex>er</ex>
-                  visu<ex>m</ex> corporis Ioh<ex>ann</ex>is hypper ‸<add place="above">nuper de
+                  visu<ex>m</ex> corporis <rs ref="http://ereed.library.utoronto.ca/eats/entity/114553/" type="Person_Commoner">Ioh<ex>ann</ex>is hypper</rs> ‸<add place="above">nuper de
                   howghton p<ex>re</ex>d<ex>icta</ex> in com<ex>itatu</ex>
                     p<ex>re</ex>d<ex>icto</ex> husb<ex>ondi</ex></add> ali<ex>qua</ex>n<ex>do</ex>
-                mortui iacen<ex>ti</ex> p<ex>er</ex> sacr<ex>amentu</ex>m Ioh<ex>ann</ex>is Stert
-                Roberti Snowe Thome Mylles Will<ex>el</ex>mi Will<ex>ia</ex>ms Roberti Austen
-                  Ric<ex>ard</ex>i Burkley Will<ex>el</ex>mi Karcas Ricardi Barfoote Michaelis
-                Symmons Thome Purdew Ioh<ex>ann</ex>is Goddard Ioh<ex>ann</ex>is Barfoote
-                  Ioh<ex>ann</ex>is Evans et Ioh<ex>ann</ex>is Colson Iur<ex>atorum</ex> Qui dicunt
+                mortui iacen<ex>ti</ex> p<ex>er</ex> sacr<ex>amentu</ex>m<rs ref="http://ereed.library.utoronto.ca/eats/entity/114615/" type="Person_Commoner"> Ioh<ex>ann</ex>is Stert</rs>
+                <rs ref="http://ereed.library.utoronto.ca/eats/entity/114676/" type="Person_Commoner">Roberti Snowe</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/114737/" type="Person_Commoner">Thome Mylles</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/114798/" type="Person_Commoner">Will<ex>el</ex>mi Will<ex>ia</ex>ms</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/114859/" type="Person_Commoner">Roberti Austen</rs>
+                  <rs ref="http://ereed.library.utoronto.ca/eats/entity/114920/" type="Person_Commoner">Ric<ex>ard</ex>i Burkley</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/114981/" type="Person_Commoner">Will<ex>el</ex>mi Karcas</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/115042/" type="Person_Commoner">Ricardi Barfoote</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/115103/" type="Person_Commoner">Michaelis
+                Symmons</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/115164/" type="Person_Commoner">Thome Purdew</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/115225/" type="Person_Commoner">Ioh<ex>ann</ex>is Goddard</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/115286/" type="Person_Commoner">Ioh<ex>ann</ex>is Barfoote</rs>
+                  <rs ref="http://ereed.library.utoronto.ca/eats/entity/115347/" type="Person_Commoner">Ioh<ex>ann</ex>is Evans</rs> et <rs ref="http://ereed.library.utoronto.ca/eats/entity/115408/" type="Person_Commoner">Ioh<ex>ann</ex>is Colson</rs> Iur<ex>atorum</ex> Qui dicunt
                   sup<ex>er</ex> sacr<ex>a</ex>m<ex>entum</ex> suu<ex>m</ex> q<ex>uo</ex>d xxvj<hi
                   rend="superscript">to</hi> die decembris Anno pred<ex>icto</ex> dicte
                   d<ex>omi</ex>ne Regine circa hora<ex>m</ex> sexta<ex>m</ex> post meridiem
@@ -5724,7 +5727,7 @@ column and encompassing both rows -->
                   type="foot">p<ex>ar</ex>ochianis de howghton: <hi rend="italic">ie, the parish of
                     All Saints' church</hi></note> pred<ex>icto</ex> fuit Ludens ‸<add place="above"
                   >ad quosda<ex>m</ex> ludos vocato</add> lez playnge<note type="foot">lez playnge:
-                    <hi rend="italic">partly erased</hi></note> Chr<ex>ist</ex>enmas games in domo
+                    <hi rend="italic">partly erased</hi></note> <rs ref="http://ereed.library.utoronto.ca/eats/entity/41461/" type="CalendarDay_Liturgical">Chr<ex>ist</ex>enmas</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/40677/" type="Entertainment_Type">games</rs> in domo
                   cuiusd<ex>am</ex> Thome purdew de howghton pred<ex>icto</ex> husbandma<ex>n</ex>
                 Et q<ex>uod</ex> pred<ex>i</ex>c<ex>t</ex>us Ioh<ex>ann</ex>es hypper in
                   ludend<ex>um</ex> et iocand<ex>um</ex> p<ex>er</ex> infortunium et contra
@@ -38811,11 +38814,11 @@ cross refs --></p>
 
             <p> '<gap reason="omitted"/>ffurthermore</p>
 
-            <p> The illustrious John, Lord Marquis, well incites</p>
+            <p> The illustrious Iohn, Lord Marquis, well incites</p>
 
-            <p> Southamptons Erle and many lords and knights</p>
+            <p> Southamptons Erle and many lord<ex>s</ex> and knight<ex>es</ex></p>
 
-            <p> and other generous gentlemen to meet</p>
+            <p> And other generous gentlemen to meet</p>
 
             <p> and heer an horse race keep each Easter weeke<gap reason="omitted"/>' </p>
           </div>
