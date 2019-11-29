@@ -254,6 +254,7 @@
         <map:aggregate element="aggregation" label="content">
           <map:part src="cocoon://_internal/menu/admin.xml?url=admin/" />
           <map:part src="cocoon://internal/search/entity_finder.xml" />
+          <map:part src="cocoon://_internal/request.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/admin/entity-finder.xsl" />
         <map:serialize />

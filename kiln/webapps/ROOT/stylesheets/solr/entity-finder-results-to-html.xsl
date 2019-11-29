@@ -7,8 +7,6 @@
   <xsl:import href="../defaults.xsl" />
   <xsl:include href="cocoon://_internal/url/reverse.xsl" />
   <xsl:include href="results-pagination.xsl" />
-  <!-- Import the Solr utils.xsl for use in the calling template. -->
-  <xsl:include href="../../kiln/stylesheets/solr/utils.xsl" />
 
   <xsl:template match="result/doc" mode="search-results">
     <xsl:variable name="doc-type" select="str[@name='document_type']" />

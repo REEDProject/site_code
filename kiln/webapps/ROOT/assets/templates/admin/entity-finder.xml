@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
+<kiln:root xmlns:h="http://apache.org/cocoon/request/2.0"
+           xmlns:xi="http://www.w3.org/2001/XInclude"
            xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
@@ -27,11 +28,7 @@
         <div class="medium-12 column">
           <form action="." method="get">
             <input name="q" placeholder="Search terms" type="search">
-              <xsl:attribute name="value">
-                <xsl:call-template name="kiln:unescape-value">
-                  <xsl:with-param name="value" select="/aggregation/response/lst[@name='responseHeader']/lst[@name='params']/str[@name='q']" />
-                </xsl:call-template>
-              </xsl:attribute>
+              <xsl:attribute name="value" select="normalize-space(/aggregation/h:request/h:requestParameters/h:parameter[@name='q']/h:value)" />
             </input>
           </form>
 

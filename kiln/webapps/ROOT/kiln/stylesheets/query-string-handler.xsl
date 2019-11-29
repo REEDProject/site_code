@@ -19,14 +19,21 @@
           <xsl:value-of select="." />
         </xsl:matching-substring>
         <xsl:non-matching-substring>
-          <xsl:choose>
-            <xsl:when test=". = ' '">
-              <xsl:text>+</xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:value-of select="encode-for-uri(.)" />
-            </xsl:otherwise>
-          </xsl:choose>
+          <xsl:analyze-string select="." regex=".">
+            <xsl:matching-substring>
+              <xsl:choose>
+                <xsl:when test=". = ' '">
+                  <xsl:text>+</xsl:text>
+                </xsl:when>
+                <xsl:when test=". = ':'">
+                  <xsl:text>\:</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="encode-for-uri(.)" />
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:matching-substring>
+          </xsl:analyze-string>
         </xsl:non-matching-substring>
       </xsl:analyze-string>
     </xsl:variable>
