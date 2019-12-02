@@ -1,4 +1,156 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="rosep"><teiHeader><fileDesc><titleStmt/><sourceDesc/></fileDesc><encodingDesc><listPrefixDef><prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../taxonomy.xml#$1"><p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the taxonomy.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p></prefixDef><prefixDef ident="gloss" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../glossary.xml#$1"><p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the glossary.xml file. For example, <code>gloss:histrio-1</code> dereferences to <code>glossary.xml#histrio-1</code>.</p></prefixDef></listPrefixDef></encodingDesc><profileDesc><langUsage><language ident="eng">English</language></langUsage></profileDesc></teiHeader>
+<?xml version="1.0" encoding="UTF-8"?>
+  <?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+  <?xml-model href="REED.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+  <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="rosep">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title type="main">Rose Playhouse</title>
+          <funder><orgName>Jackman Foundation, Toronto,
+            Canada</orgName></funder>
+          <funder><orgName>National Endowment for the Humanities, Washington,
+            DC, United States of America</orgName></funder>
+          <funder><orgName>Social Sciences and Humanities Research Council,
+            Ottawa, Canada</orgName></funder>
+          <editor>Sally-Beth MacLean</editor>
+          <respStmt>
+            <persName xml:id="CB">C. Black</persName>
+            <orgName>Records of Early English Drama (REED)</orgName>
+            <resp>Project Manager</resp>
+          </respStmt>
+          <respStmt>
+            <persName xml:id="KC">Kathy Chung</persName>
+            <orgName>Records of Early English Drama (REED)</orgName>
+            <resp>Post-doctoral Fellow in Digital Humanities, EATS
+              taxonomy developer and tagger</resp>
+          </respStmt>
+          <respStmt>
+            <persName xml:id="JC">James Cummings</persName>
+            <orgName>University of Oxford</orgName>
+            <resp>TEI Schema Designer, Technical Consultant</resp>
+          </respStmt>
+          <respStmt>
+            <persName xml:id="PG">Patrick Gregory</persName>
+            <orgName>Records of Early English Drama (REED)</orgName>
+            <resp>Paleographer, Co-Translator, Latin and Anglo-French
+              Glossarian</resp>
+          </respStmt>
+          <respStmt>
+            <persName>Tanya Hagen</persName>
+            <orgName>Records of Early English Drama (REED)</orgName>
+            <resp>Bibliographer</resp>
+          </respStmt>
+          <respStmt>
+            <persName>William Ingram</persName>
+            <orgName>University of Michigan</orgName>
+            <resp>Appendixes</resp>
+          </respStmt>
+          <respStmt>
+            <persName>Alexandra F. Johnston</persName>
+            <orgName>Records of Early English Drama (REED)</orgName>
+            <resp>REED Founder and Senior Consultant</resp>
+          </respStmt>
+          <respStmt>
+            <persName>Sally-Beth MacLean</persName>
+            <orgName>Records of Early English Drama (REED)</orgName>
+            <resp>Principal Investigator, SSHRC grant; Director of
+              Research and General Editor</resp>
+          </respStmt>
+          <respStmt>
+            <persName>Byron Moldofsky</persName>
+            <orgName>University of Toronto</orgName>
+            <resp>Cartographer</resp>
+          </respStmt>
+          <respStmt>
+            <persName>Illya Nokhrin</persName>
+            <orgName>University of Toronto</orgName>
+            <resp>Research Assistant</resp>
+          </respStmt>
+          <respStmt>
+            <persName xml:id="JN">Jamie Norrish</persName>
+            <resp>Programmer, TEI Schema Designer, Technical
+              Consultant</resp>
+          </respStmt>
+        </titleStmt>
+        <editionStmt>
+          <edition>version 1, released
+            <date></date></edition>
+        </editionStmt>
+        <publicationStmt>
+          <authority><orgName>Records of Early English Drama (REED)</orgName>
+            <address>
+              <addrLine>University of Toronto</addrLine>
+              <addrLine>170 St George Street, Suite 810</addrLine>
+              <addrLine>Toronto, Ontario, Canada</addrLine>
+              <addrLine>M5R 2M8</addrLine>
+            </address>
+          </authority>
+          <availability>
+            <p>Copyright <orgName>Records of Early English Drama
+              (REED)</orgName>,
+              <date>2018</date></p>
+            <licence
+              target="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+              >Distributed under a Creative Commons
+              Attribution-NonCommercial-ShareAlike 4.0
+              International (CC BY-NC-SA 4.0) licence.</licence>
+          </availability>
+        </publicationStmt>
+        <seriesStmt>
+          <title>Records of Early English Drama</title>
+        </seriesStmt>
+        <sourceDesc>
+          <p>Born digital. Information on original sources for transcriptions
+            can be accessed via taxonomy.xml.</p>
+        </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+        <listPrefixDef>
+          <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)"
+            replacementPattern="../taxonomy.xml#$1">
+            <p>Private URIs using the <code>taxon</code> prefix are
+              pointers to entities in the taxonomy.xml file. For
+              example, <code>taxon:church</code> dereferences to
+              <code>taxonomy.xml#church</code>.</p>
+          </prefixDef>
+          <prefixDef ident="gloss" matchPattern="([A-Za-z0-9_-]+)"
+            replacementPattern="../glossary.xml#$1">
+            <p>Private URIs using the <code>gloss</code> prefix are
+              pointers to entities in the glossary.xml file. For
+              example, <code>gloss:histrio-1</code> dereferences
+              to <code>glossary.xml#histrio-1</code>.</p>
+          </prefixDef>
+        </listPrefixDef>
+        <projectDesc>
+          <p>Records of Early English Drama (REED) is an international
+            scholarly project that is establishing for the first time
+            the context from which the drama of Shakespeare and his
+            contemporaries grew. Founded in 1976, REED has worked since
+            then to locate, transcribe, and edit historical documents
+            containing evidence of drama, secular music, and other
+            communal entertainment and ceremony from the Middle Ages
+            until 1642, when the Puritans closed the London
+            theatres.</p>
+        </projectDesc>
+      </encodingDesc>
+      <profileDesc>
+        <langUsage>
+          <language ident="eng">English</language>
+          <language ident="lat">Latin</language>
+        </langUsage>
+        <settingDesc>
+          <place>
+            <placeName
+              ref="http://ereed.library.utoronto.ca/eats/entity/1751/"
+              >Berkshire</placeName>
+          </place>
+        </settingDesc>
+      </profileDesc>
+      <revisionDesc>
+        <!-- Add new major milestone changes to top -->
+        <change></change>
+      </revisionDesc>
+    </teiHeader>  
   <text>
     <group><text type="record" xml:id="rosep-ridm90656952">
 <body>
@@ -554,7 +706,7 @@ playhouse.
 <head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1589">1589</date> <seg ana="taxon:RSLPCL">RSLPCL</seg></head>
 <div xml:lang="eng" type="transcription" xml:id="rosep-ridm94970728-transcription">
 <div><head>pp 388–9 <supplied>(12 November)</supplied></head>
-<pb type="page"/>
+<pb n="388" type="page"/>
 
 <gap reason="omitted"/>
 
@@ -591,7 +743,7 @@ Iudgem<ex>en</ex>t or Decoru<ex>m</ex> to handle matters of Divinitye and State.
 he is required if he haue not as yet made choice of suche a p<ex>er</ex>sone
 that he will so doe forthw<ex>i</ex>th, and thereof geue knowledge to the
 L<ex>ord</ex> Archeb<ex>ishop</ex>; and the M<ex>aste</ex>r of the Reveles; that they
-may all meet accordingly<pb/></ab>
+may all meet accordingly<pb n="389" type="page"/></ab>
 
 <ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note> l<ex>ettr</ex>e to the m<ex>aste</ex>r of the
 Revelles, requiring him w<ex>i</ex>th two oth<ex>e</ex>rs the one to be appointed
@@ -965,7 +1117,7 @@ grace of the Almightie. ffrom London the 12<hi rend="superscript">th</hi> of Iun
 <head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1592">1592</date> <seg ana="taxon:RSPCL4">RSPCL4</seg></head>
 <div xml:lang="eng" type="transcription" xml:id="rosep-ridm92855896-transcription">
 <div><head>pp 414–15 <supplied>(23 June)</supplied></head>
-<pb type="page"/>
+<pb n="414" type="page"/>
 
 <gap reason="omitted"/>
 
@@ -990,7 +1142,7 @@ in Holborne Clerkenwell St Giles in the feildes &amp;c and other<del>s</del> pla
 nere thereabout<ex>es</ex>, and to chardge and Comaunde them to take
 ordr<note type="foot">to take ordr: <hi rend="italic">written on a separate line in the bottom right
 corner of the page with</hi> ordr<hi rend="italic">, for</hi> order<hi rend="italic">, functioning as
-catchword; abbreviation mark missing</hi></note> <pb/> order that there maye be
+catchword; abbreviation mark missing</hi></note> <pb n="415" type="page"/> order that there maye be
 a stronge and substancyall watche kept bothe on Midsom<ex>m</ex>er Eueninge
 Midsom<ex>m</ex>er night and Sondaye at nighte of housholders and Masters of
 families to Contynue from the begin<ex>n</ex>inge of the Eueninge vntill the
@@ -1076,7 +1228,7 @@ the last row.
 <head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1593">1592/3</date> <seg ana="taxon:RSPCO9">RSPCO9</seg></head>
 <div xml:lang="eng" type="transcription" xml:id="rosep-ridm92826968-transcription">
 <div><head>pp 211–12 <supplied>(28 January) (Hampton Court)</supplied></head>
-<pb type="page"/>
+<pb n="211" type="page"/>
 
 <gap reason="omitted"/>
 
@@ -1096,7 +1248,7 @@ Iurisdiction all plaies baiting of beares, bulls, Bowling and any other
 like occasions to assemble any nombers of people together (preacheing
 and devyne seruice at Churches excepted) wherby no occasions be offred
 to increase the infection w<ex>i</ex>thin the Cittie, w<ex>hi</ex>ch you shall
-doe bothe by <pb/> p<ex>ro</ex>clamac<ex>i</ex>on to be published to that ende and by
+doe bothe by <pb n="212" type="page"/> p<ex>ro</ex>clamac<ex>i</ex>on to be published to that ende and by
 spetiall watche and obseruac<ex>i</ex>on to be had at the places where the
 Plaies bearebaitinges bowlinges and like pastimes are vsually
 frequented and if you shall vpon this publicaon<note type="foot">publicaon:
@@ -1217,7 +1369,7 @@ alleyn.org.uk/images/MSS-7/009r.html -->).
 <head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1595">1595</date> <seg ana="taxon:RSLSPC">RSLSPC</seg></head>
 <div xml:lang="eng" type="transcription" xml:id="rosep-ridm93277208-transcription">
 <div><head>ff 52v–3 <supplied>(13 September)</supplied></head>
-<pb type="folio"/>
+<pb n="52v" type="folio"/>
 
 <ab>Our<note type="foot">Our: O <hi rend="italic">in display script</hi></note> humble duty remembred to
 yo<ex>u</ex>r good L<ex>ordships</ex> &amp; the rest: Wee<note type="marginal" place="margin_left"><handShift/>Toutching the putting
@@ -1250,7 +1402,7 @@ together &amp; to recreate themselfes  Whearof wee begin to haue experienc
 again w<ex>i</ex>thin these few daies since it pleased her highnes to revoke
 her Comission graunted forthe to the Provost Marshall, for fear of home
 they retired themselfes for the time into other part<ex>es</ex> out of his
-p<ex>re</ex>cinct but ar now returned to <pb/> their old<note type="foot">their old: <hi rend="italic">also
+p<ex>re</ex>cinct but ar now returned to <pb n="53" type="folio"/> their old<note type="foot">their old: <hi rend="italic">also
 written as catchwords at the foot of f 52v</hi></note> haunt &amp; frequent the
 Plaies (as their manner is) that ar daily shewed at the Theator &amp;
 Bankside:  Whearof will follow the same inconvenienc<ex>es</ex> whearof wee
@@ -1336,7 +1488,7 @@ the first folio of entries for the court of 8 April 1597.
 <head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1597">1597</date> <seg ana="taxon:RSLBPC">RSLBPC</seg></head>
 <div xml:lang="eng" type="transcription" xml:id="rosep-ridm95040408-transcription">
 <div><head>ff 85–5v <supplied>(28 July)</supplied></head>
-<pb type="folio"/>
+<pb n="85" type="folio"/>
 
 <gap reason="omitted"/>
 
@@ -1376,7 +1528,7 @@ sort of such evell &amp; disordred people in better order then heartofore
 wee haue been. And so most humbly wee take o<ex>u</ex>r leaves ffrom London
 the xxviij<hi rend="superscript">th</hi> of .Iulie.1597.</ab>
 
-<ab><hi rend="right">Yo<ex>u</ex>r H<ex>ighnesses</ex> most humble<pb/></hi></ab>
+<ab><hi rend="right">Yo<ex>u</ex>r H<ex>ighnesses</ex> most humble<pb n="85v" type="folio"/></hi></ab>
 
 <ab>They<note type="marginal" place="margin_left"><handShift/>The inconueniencest that grow by Stage playes abowt the<lb/>Citie
 of London./<handShift/></note> ar a speaciall cause of corrupting their Youth
@@ -1694,7 +1846,7 @@ Saviour's.
 <head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1599">1598/9</date> <seg ana="taxon:RSEMPP">RSEMPP</seg></head>
 <div xml:lang="eng" type="transcription" xml:id="rosep-ridm90487944-transcription">
 <div><head>pp 300–3 <supplied>(10 March)</supplied></head><!-- for EG -->
-<pb type="page"/>
+<pb n="300" type="page"/>
 
 <gap reason="omitted"/>
 
@@ -1733,7 +1885,7 @@ other sewtes, as followeth, 1598, the 10 of March.</ab>
 
 <ab>Item, j sewtte for Nepton; Fierdrackes sewtes for Dobe.</ab>
 
-<ab>Item, iiij genesareyes gownes, and iiij torchberers sewtes.<pb/></ab>
+<ab>Item, iiij genesareyes gownes, and iiij torchberers sewtes.<pb n="301" type="page"/></ab>
 
 <ab>Item, iij payer of red strasers, and iij fares gowne of buckrome.</ab>
 
@@ -1781,7 +1933,7 @@ player</hi></note> layed with whitt lace.</ab>
 <ab>Item, iij payer of canvas hosse for asane, ij payer of black strocers.</ab>
 
 <ab>Item, j yelow leather dublett for a clowne, j Whittcomes dublett
-poke.<pb/></ab>
+poke.<pb n="302" type="page"/></ab>
 
 <ab>Item, Eves bodeyes, j pedante trusser, and iij donnes hattes.</ab>
 
@@ -1851,7 +2003,7 @@ https://lostplays.folger.edu/Phaeton --></hi></note>, the limes dead.</ab>
 
 <ab>Item, j gowlden flece; ij rackets; j baye tree.</ab>
 
-<ab>Item, j wooden hatchett; j lether hatchete.<pb/></ab>
+<ab>Item, j wooden hatchett; j lether hatchete.<pb n="303" type="page"/></ab>
 
 <ab>Item, j wooden canepie; owld Mahemetes head.</ab>
 
@@ -1927,7 +2079,7 @@ https://lostplays.folger.edu/Black_Joan --></hi></note>.</ab>
 Diary, pp 16–26, 34, 36–7, 47, 170</hi></note>.</ab>
 </div>
 <div><head>pp 304–6 <supplied>(13 March)</supplied></head>
-<pb type="page"/>
+<pb n="304" type="page"/>
 
 <ab>"The Enventorey of all the aparell of the Lord Admeralles men, taken
 the 13th of Marche 1598, as followeth:</ab>
@@ -2003,7 +2155,7 @@ tafitie.</ab>
 <ab>Item, j cloth clocke of russete with coper lace, called Guydoes
 clocke.</ab>
 
-<ab>Item, j short clocke of black velvet, with sleves faced with shagg.<pb/></ab>
+<ab>Item, j short clocke of black velvet, with sleves faced with shagg.<pb n="305" type="page"/></ab>
 
 <ab>Item, j short clocke of black vellet, faced with white fore.</ab>
 
@@ -2069,7 +2221,7 @@ Diary, pp 86–8, 101–2</hi></note> sewtte.</ab>
 187; <!-- CB to link to
 https://lostplays.folger.edu/Tasso%27s_Melancholy --></hi></note> robe.</ab>
 
-<ab>Item, j murey robe with sleves.<pb/></ab>
+<ab>Item, j murey robe with sleves.<pb n="306" type="page"/></ab>
 
 <ab>Item, j blewe robe with sleves.</ab>
 
@@ -2436,7 +2588,7 @@ attendance at the privy council meeting on 22 June 1600.
 <head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1600">1600</date> <seg ana="taxon:RSPO11">RSPO11</seg></head>
 <div xml:lang="eng" type="transcription" xml:id="rosep-ridm91010728-transcription">
 <div><head>pp 223–4 <supplied>(22 June)</supplied></head>
-<pb type="page"/>
+<pb n="223" type="page"/>
 
 <ab><hi rend="center">Order<note type="marginal" place="margin_left">At the Courte at Greenwich.</note> of the L<ex>ords</ex> for the
 restrainte of the imoderate vse and Companye<lb/>of Playhowses and
@@ -2519,7 +2671,7 @@ Com<ex>m</ex>on Inne for publique assembly in or neare about the Cittie./</ab>
 <ab>Secondly, forasmuch as these stage plaies, by the multitude of houses
 and company of players haue bin so frequent not servinge for recreation
 but invitinge and callinge the people dayly from their trade and worke
-to misspend their tyme <pb/> it is likewise ordered that the two seuerall
+to misspend their tyme <pb n="224" type="page"/> it is likewise ordered that the two seuerall
 Companies of players assigned vnto the two houses allowed may play each
 of them in their seuerall houses twice a weeke and no oftener, and
 especially that they shall refrayne to play on the Sabbath Day vpon
