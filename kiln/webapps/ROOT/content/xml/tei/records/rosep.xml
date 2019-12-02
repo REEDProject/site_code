@@ -1,0 +1,3056 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="rosep"><teiHeader><fileDesc><titleStmt/><sourceDesc/></fileDesc><encodingDesc><listPrefixDef><prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../taxonomy.xml#$1"><p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the taxonomy.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p></prefixDef><prefixDef ident="gloss" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../glossary.xml#$1"><p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the glossary.xml file. For example, <code>gloss:histrio-1</code> dereferences to <code>glossary.xml#histrio-1</code>.</p></prefixDef></listPrefixDef></encodingDesc><profileDesc><langUsage><language ident="eng">English</language></langUsage></profileDesc></teiHeader>
+  <text>
+    <group><text type="record" xml:id="rosep-ridm90656952">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1585">1584/5</date> <seg ana="taxon:RSALLS">RSALLS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm90656952-transcription">
+<div><head>single mb <supplied>(24 March)</supplied></head>
+<pb n="1" type="membrane"/>
+
+<ab>To all people to whome this<note type="foot">To all … this: <hi rend="italic">in display script,
+with large ornamental initial</hi> T <hi rend="italic">11 lines high</hi></note> preasente
+writinge shall Comme Roberte Withens Cittizen and Vintener of Londonne
+sendeth greetinge In our Lord god euerlastinge Whereas Thamasin
+Symondes late of Londonne widdowe late wiefe of Raphe Symondes late
+Cittizen and ffishmonger of london deceassed by her writinge or deede
+Tripartite Indented bearinge date the Thirde daie of December In the
+Sixte yeare of the reigne of our late soueraigne Lord of ffamous memory
+Kinge Edward the Sixte<note type="foot">Sixte … Sixte: <hi rend="italic">1552</hi></note> knoledged and
+Inrolled in the Queenes Ma<ex>ies</ex>t<ex>es</ex> Courte of Channery did give
+graunte and confirme vnto Ambrose Nicholas William Box Roberte Sowle
+Thomas Hall Salters Iohn Peers Henry Blower the elder Thomas Brian and
+Iohne Welton p<ex>ar</ex>ishioners of the parrishe of Saincte Mildreede in
+Breadstreate of London All that her messuage or Tennement then Called
+the little rose with Twoe gardens to the same adioyninge sett lienge
+and beinge in the parrishe late Called Saincte margarett<ex>es</ex> in
+Southworke in the county of Surry and then and nowe in the parrishe of
+Saincte Savio<ex>u</ex>r in Southworke aforesaide And all her howses shoppes
+Cellers sollers Chambers entries gardens pondes easement<ex>es</ex>
+land<ex>es</ex> soyle and hereditamentes Whatsoeuer w<ex>i</ex>th their
+Appurten<ex>au</ex>nc<ex>es</ex> in the parrishe of Saincte Savio<ex>u</ex>r in
+Southworke aforesaide to the saide messuage or Tennemente belonginge or
+manny wies apperteyninge To haue and to houlde<note type="foot">To haue and to houlde:
+<hi rend="italic">in display script</hi></note> the saide messuage or Tennement and all
+other the premisses w<ex>i</ex>th their appurtenaunc<ex>es</ex> vnto the saide
+Ambrose Nicholas, William Box Roberte Sowle Thomas Hall Iohn Peers
+Henry Blower Thomas Bryan and Iohn Welton and their heires foreuer As
+by the saide Indenture and Inrollemente thereof more playnelie and at
+lardge yt doth and maie appeare And where also <note type="foot">And where also:
+<hi rend="italic">in display script</hi></note> the saide Ambrose Nicholas William Box
+Roberte Sowle Thomas Hall Henry Blower Iohnne Peers Thomas Bryan &amp; Iohn
+Welton by their Indenture of demyse dated the Twentieth daie of
+November In the Seaventennth yeare of the Reigne of our Soueroeigne
+Ladie Elizabeth the Queenes Maiestie<note type="foot">Seaventennth … Maiestie:
+<hi rend="italic">1574</hi></note> for divers god Cawses and concideracons them movinge
+haue with one assente and consente demysed graunted and to fearme
+letten vnto William Griffen cittizen and Vintener of london All the
+same messuage or Tennemente with the same Twoe gardens to the same
+adioyninge setlienge and beinge in the parrishe of Saincte Savio<ex>u</ex>r
+in Southworke aforesaide And allso all their howses shoppes Cellers
+sollers Chambers entries gardens pondes land soyle proffytt Commoditie
+and hereditament<ex>es</ex> whatsoeuer w<ex>i</ex>th their appurtenaunc<ex>es</ex> In
+the parrishe of Saincte Savio<ex>u</ex>r aforesaide to the saide messuage or
+Tennemente belonginge or apperteyninge To haue and to<note type="foot">To haue and to:
+<hi rend="italic">in display script</hi></note> houlde the saide messuage or Tennemente
+gardeine shoppes Cellers sollers Chambers proffytt<ex>es</ex> Commodities
+and hereditament<ex>es</ex> vnto the saide William Griffen his executors
+Adminstreetours and assignes from the ffeaste of Saincte Michaell the
+Archeaungell last past before the date of the same Indenture of Leasse
+vnto the ende and Tearme of Thirtie and one yeares from thence nexte
+ensewinge and fullie to be complete and ended yealdinge<note type="foot">yealdinge:
+<hi rend="italic">written in a more formal script possibly by a different hand</hi></note>
+and payeinge therefore yearelie duringe the saide tearme vnto the saide
+Ambrose Nicholas William Box Roberte Sowle Thomas Hall Iohn Peers Henry
+Blower Thomas Bryan and Iohn Welton their heires or assignes or any of
+them or to the Churchewardens of the saide parrishe church of Saincte
+Mildread for the tyme beinge Seaven poundes of lawfull money of
+englaund at ffower ffeastes or tearmes in the yeare peaceablie as by
+the same Indenture of Leas w<ex>i</ex>th divers other Coven<ex>au</ex>nt<ex>es</ex>
+graunt<ex>es</ex> articles Condicons thing<ex>es</ex> and agreement<ex>es</ex> therein
+conteyned more at lardge maie appeere The estate<note type="foot">The estate: <hi rend="italic">in
+display script</hi></note> right title Intereste and tearme of yeares of
+which saide William Griffen of in and to the same Indenture of lease
+and premisses thereby demysed I the saide Roberte withens nowe haue and
+Inioye by vertue of one poole deede thereof to me made bearinge date
+the elevennth daie of December anno domini 1579 and in the Twoe and
+Twentieth yeare of the reigne of our saide soueraigne Ladie Qweene
+Elizabeth As by the same poole deede more at lardge Likewies Yt doeth
+and maie Appeare Nowe knowe yee<note type="foot">Nowe knowe yee: <hi rend="italic">in display
+script</hi></note> That I the saide Roberte Withens for and In
+conciderac<ex>i</ex>on of a Certeyne competente somme of lawfull money of
+englaund to me in hand paide before thenseallinge hereof by Phillipp
+Hinchley Cittizen and Dyer of london whereof and wherewith I acknoledge
+my selfe fullie satisfied and paide haue bargained soulde assigned and
+setouer and by this my pnte<note type="foot">pnte: <hi rend="italic">for</hi> p<ex>rese</ex>nte<hi rend="italic">;
+abbreviation mark omitted</hi></note> writinge doe fullie cleirlie and
+absolutelie bargaine sell assigne and setover vnto the saide Phillipp
+Hinchley aswell the saide Indenture of lease and poole deede aforesaide
+As also all the estate righte title Intereste Clayme tearme of yeares
+to come and demaund which I the saide Roberte Withens haue maie can
+mighte shoulde or of righte owghte to haue to of and In the saide
+messuage or Tennemente and all other the premisses by the saide
+Indenture of leasse demysed by vertue of the same Indenture of leasse
+and poole deede aforeseide or either of them/ To haue and to
+houlde<note type="foot">To haue and to houlde: <hi rend="italic">in display script</hi></note> the saide
+Indenture of leasse and poole deede aforesaide And all my saide estate
+righte title Interest Clayme tearme of yeares to comme and demaunde of
+in and to the tearme of Thirtie and one yeares graunted by the saide
+Indenture of lease And I the saide<note type="foot">And I the saide: <hi rend="italic">in display
+script</hi></note> Roberte Withens for me my executours and
+admin<ex>i</ex>stratours doe Covenaunte promyse and graunte by theis
+p<ex>rese</ex>nt<ex>es</ex> to and with the saide Phillipp Hinchley his
+executours admin<ex>i</ex>stratours and assignes That the saide Indenture of
+lease and premisses thereby demysed nowe are and ben and so from
+hensforth shall continewe and bee vnto the saide Phillipp Hinchley his
+executours and Assignes ffree Cleire and Cleirlie acquited discharged
+or saved heermeles of and from all and singuler former bargaines sales
+guyft<ex>es</ex> graunt<ex>es</ex> arrereages of rent<ex>es</ex> and
+Incomberaunc<ex>es</ex> whatsoeuer had made Comytted or donne by me the
+saide Roberte Withens (The rent<ex>es</ex> Coven<ex>au</ex>nt<ex>es</ex>
+Condic<ex>i</ex>ons and agreement<ex>es</ex> in the saide Indenture of lease
+specified from hensforth on the Tennauntes behalfe to be paide kepte
+and performed onelie excepte and foreprised And fynallie<note type="foot">And
+fynallie: <hi rend="italic">in display script</hi></note> That he the saide Phillipp
+Hinchley his executours admin<ex>i</ex>stratours and assignes for and vnder
+the saide yearlie rente and Coven<ex>au</ex>nt<ex>es</ex> from hensforth to be
+paide performed and kepte shall or maie peaceablie and quietlie haue
+houlde and Inioye the saide messuage or Tennemente and premisses by the
+saide Indenture of lease demysed and by theis p<ex>rese</ex>nt<ex>es</ex>
+bargained and soulde w<ex>i</ex>thout any lett trouble Interuption or
+eviction of me the saide Roberte Withens myexecutours
+admin<ex>i</ex>stratours or assignes or of any other personne or personnes
+by my meanes or procuremente duringe all the reasidewe nowe to come and
+vnexpired of the saide tearme of Thirtie and one yeares graunted by the
+saide Indenture of lease In witnes<note type="foot">In witnes: <hi rend="italic">in display
+script</hi></note> whereof to this my p<ex>rese</ex>nte writinge I the saide
+Roberte Withens haue put my hand and sealle yeeven the ffower and
+twentieth daie of March Anno D<ex>o</ex>m<ex>ini</ex> 1584 and in the Seaven and
+Twentiethe yeare of the Reigne of our soueraigne Ladie Elizabethe by
+the grace of god Qweene of englaund ffraunce and Irelaund defendour of
+the ffaith &amp;c.</ab>
+
+<ab>Sigill<ex>atur</ex> et delib<ex>eratur</ex> in p<ex>rese</ex>ncia mei Petri Blower</ab>
+
+<ab>s<ex>er</ex>vien<ex>tis</ex> Thome Newman Scr<ex>ibe</ex><note type="foot">Sigill<ex>atur</ex> …
+Scr<ex>ibe</ex>: <hi rend="italic">'Signed and delivered in the presence of me, Peter
+Blower, servant of Thomas Newman, notary'</hi></note></ab>
+
+<ab><seg type="signed" rend="center">by me Robart Wythens</seg></ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+For an image of the original MS, see the <title>Henslowe-Alleyn
+Digitisation Project</title>.<!-- http://www.henslowe-
+alleyn.org.uk/images/Muniments-Series-1/Group-015/01r.html --></p>
+
+<p>
+By the terms of this assignment, Henslowe assumed the remaining twenty
+years (ending in 1605) of the original lease of the Little Rose to
+William Griffen. The assignment was co-signed by Robert Withens and
+Peter Blower, as representatives of the parish of St Mildred Bread
+Street, and the scrivener, Thomas Newman. A later lease document dated
+7 August 1650 between the feoffees of the Thomasyn Symonds Charity, St
+Mildred Bread Street, and John Wallington, turner of London, for Little
+Rose estate for twenty-one years provides more specific details of the
+dimensions of the property: see Appendix 2 for the full record<!-- CB to
+insert cross-ref -->.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm92853384">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1587">1587</date> <seg ana="taxon:RSPCL2">RSPCL2</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm92853384-transcription">
+<div><head>p 477 <supplied>(29 October)</supplied></head>
+<pb n="477" type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>A l<ex>ett</ex>re to the Iustices of Surry: that whereas thinhabitaunts of
+Southwa<damage><gap unit="chars" extent="2"/></damage> had complained vnto their L<ex>ordshipes</ex> declaring that
+thorder by their L<ex>ordshipes</ex> sett downe for the restrayning of
+plaies and enterludes w<ex>i</ex>thin that Countie on the Saboath daies is
+not obserued, and especiallie w<ex>i</ex>thin the libertie of the Clincke
+and in the p<ex>ar</ex>ish of St Sauours in Southwarke: w<ex>hi</ex>ch disordir
+is to be ascribed to the negligence of some of the Iustices of peace in
+y<ex>a</ex>t countie: They are required to take such stricte order for the
+staying of the said disorder, as is allreadie taken by the L<ex>ord</ex>
+Maior w<ex>i</ex>thin the lib<ex>er</ex>ties of the cittie, so as the same be not
+hereafter suffred at the times forbidden in any place of that Countie/</ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+The Rose was probably completed and operating by October at the
+latest this year. As the first playhouse erected on Bankside in the
+liberty of the Clink, it must have attracted the complaints of some
+inhabitants in the neighbourhood.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm92788552">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1587">1587</date> <seg ana="taxon:RSPCL5">RSPCL5</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm92788552-transcription">
+<div><head>p 339 <supplied>(7 May)</supplied></head>
+<pb n="339" type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>A<note type="marginal" place="margin_left">L<ex>ord</ex> Chancelor:<lb/>L<ex>ord</ex> Thr<ex>easur</ex>er:<lb/>E<ex>arl</ex> of
+Warwicke:<lb/>Earl of Leicester:<lb/>L<ex>ord</ex> Admirall:<lb/>L<ex>ord</ex>
+Chamberlaine:<lb/>Mr Secr<ex>etary</ex> Walsingha<ex>m</ex></note> l<ex>ett</ex>re to the
+L<ex>ord</ex> Maior of the citie of London: that whereas their
+l<ex>ordshipes</ex> were giuen to vnderstand that certaine outrages and
+disorders were of late committed in certaine places and Theaters
+erected w<ex>i</ex>thin that Citie of London or the suburbes of the same
+where enterludes &amp; comedies were vsuallie plaied, and for that the
+season of the yeare grew hott<ex>e</ex>r and hott<ex>e</ex>r it was to be doubted
+least by reason of the Concorse of people to such plac<ex>es</ex> of
+co<ex>m</ex>mon assemblies there might some danger of infecc<ex>i</ex>on happen
+in the Citie Their l<ex>ordshipes</ex> thought it expedient to haue the vse
+of the said Interludes inhibited both at the Theaters, and in all
+oth<ex>e</ex>r plac<ex>es</ex> w<ex>i</ex>thin his iurisdicc<ex>i</ex>on And therefore
+required him accordinglie to take p<ex>rese</ex>nte order for the stayinge
+of the same, charginge the plaiers and actors to cease and forbeare the
+vse of the said plac<ex>es</ex> for the purpose of playinge or shewinge of
+anie such Enterlud<ex>es</ex> or Comedies vntill aft<ex>e</ex>r Barthelomew tide
+next ensuinge/</ab>
+
+<ab>A like l<ex>ett</ex>re to the same effecte to the m<ex>aste</ex>r of the Rolles.</ab>
+
+<ab>A like l<ex>ett</ex>re to the like effecte to the <add place="above">Iustic<ex>es</ex></add>
+<del>sheriff<ex>es</ex></del> of Surrie/</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The Rose playhouse on Bankside may not yet have been opened by this
+date but the playhouse at Newington Butts could have been affected by
+this summer inhibition.</p>
+
+<p>
+The privy councillors present at the meeting are listed in the left
+margin as follows: Sir Christopher Hatton, lord chancellor, 1587–91;
+Sir William Cecil, 1st Baron Burghley and lord treasurer, 1572–98;
+Ambrose Dudley, 21st earl of Warwick; Robert Dudley, 14th earl of
+Leicester; Charles Howard, 2nd Baron Howard of Effingham and lord
+admiral, 1585–1618/19; Henry Carey, 1st Baron Hunsdon and lord
+chamberlain of the household, 1585–96; and Sir Francis Walsingham,
+principal secretary, 1573–90.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm90584488">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1587">1586/7</date> <seg ana="taxon:RSDPRH">RSDPRH</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm90584488-transcription">
+<div><head>single mb <supplied>(10 January)</supplied></head>
+<pb n="1" type="membrane"/>
+
+<ab>This Indenture made<note type="foot">This Indenture made: <hi rend="italic">in display script with
+large ornamented initial</hi> T <hi rend="italic">10 lines high</hi></note> the Tenthe daye
+of Ianuarye Anno d<ex>omi</ex>ni 1586 And in the Nine and Twentithe yeare of
+the Raigne of our soueraigne Lady Elizabeth by the grace of God Quene
+of Englande ffraunce and Irelande defendor of the faithe &amp;c Betwene
+Phillippe Hinshley Cittizen and Dyer of London one thonne p<ex>ar</ex>tye
+and Iohn Cholmley Cittizen and grocer of London one thother p<ex>ar</ex>tye
+Witneseth<note type="foot">Witneseth: <hi rend="italic">in display script</hi></note> that the said
+partyes for the greate zeale and good will that is betwene them and
+tothentente that they maye the better increase theire substance are
+entrid into partnershippe and are becoume Copartners togeather aswell
+in the re<damage><gap unit="chars" extent="2"/></damage><note type="foot">re<damage><gap unit="chars" extent="2"/></damage>: <hi rend="italic">for</hi> rest<hi rend="italic">(?)</hi></note> In taking
+posessinge and inioyinge of all that p<ex>ar</ex>cell of grownde or garden
+plotte Contayninge in lenghe <note type="foot">lenghe: <hi rend="italic">for</hi> lengthe</note> and
+bredthe sqare every waye ffoorescore and fourteene foote of assize
+little more or lesse As allso to of and in the havinge takinge and
+receavedge of all the beniffytte somes of moneye proffitte and
+Advauntage of a playe howse now in framinge and shortly to be ereckted
+and sett vppe vpone the same grounde or garden plotte from the daye of
+the date of these p<ex>re</ex>sent<ex>es</ex> for and duringe and vntill the ende
+and terme of Eighte yeares and three monethes from thence nexte
+ensuinge and fully to be Compleate and ended yf the saide p<ex>ar</ex>tyes
+doe so longe Lyve whereuppone<note type="foot">whereuppone: <hi rend="italic">in display
+script</hi></note> yt is Couen<ex>au</ex>nted graunted Condiscended Concluded and
+agreed betwene the saide p<ex>ar</ex>tyes by these p<ex>re</ex>sent<ex>es</ex> And the
+saide Phillippe Hinshley for him his executors and administrators dothe
+Couen<ex>au</ex>nte p<ex>ro</ex>misse and graunte to and w<ex>i</ex>th the saide Iohn
+Cholmley his executors and administrators That yt shall and maye be
+lawfull to and for the saide Iohn Cholmeley his executors and assignes
+duringe the saide space of Eighte yeares and three monethes yf the
+saide Iohn Cholmeleye doe so longe Lyve To have receave take and inioye
+to his and theire owne p<ex>ro</ex>per vse and behooffe The moytie or one
+halfe of all suche some and somes of moneye gaynes profytt and
+Comodytye w<ex>hi</ex>ch shall arysse growe be colectted gathered or become
+due for the saide p<ex>ar</ex>cell of grounde and playe howse when and after
+yt shalbe ereckted and sett vpe by reasonne of any playe or playes that
+shalbe showen or played there or otherwysse howsoever And<note type="foot">And: <hi rend="italic">in
+display script</hi></note> the saide Iohn Cholmley for him his executors and
+Administrators dothe Couen<ex>au</ex>nte promisse and graunte to and
+w<ex>i</ex>th the saide Phillyppe Hinshleye his executors and
+administrato<ex>u</ex>rs by these p<ex>re</ex>sente That yt shall and maye be
+lawfull to and for the saide Phillippe Hynshley his executo<ex>u</ex>rs and
+assignes likewaye duringe the saide terme of Eighte yeares and three
+monethes yf the saide Philliyppe doe so longe lyve To have receave take
+and enioye to his and theire owne proper vse and behooffe The other
+moytie or one hallfe of all suche some and somes of moneye gaynes
+proffyt<ex>es</ex> and Comodytie w<ex>hi</ex>ch shall arrysse growe be colected
+gathered or becoume due for the saide p<ex>ar</ex>cell of grownde and playe
+howse when and after yt shalbe ereckted and sett vppe by reasonne of
+any playe or playes that shalbe showen or playde or otherwyse howsoever
+as afforesaide And<note type="foot">And: <hi rend="italic">in display script</hi></note> further the
+saide Phillype Hinshleye for him his executors and administrato<ex>u</ex>rs
+dothe Couen<ex>au</ex>nte p<ex>ro</ex>misse and graunte to and w<ex>i</ex>th the saide
+Iohn Cholmley his executors and administrators by these
+p<ex>re</ex>sent<ex>es</ex> Thhat<note type="foot">Thhat: <hi rend="italic">for</hi> That</note> he the sayde Iohn
+Cholmley his executors administrators and assignes shall or maye
+lawfully peacablye and quiettly have holde occupye posesse and enioye
+All that smalle ten<ex>emen</ex>te or dwellinge howsse scittuate and
+standinge at the sowthe ende or syde of the saide p<ex>ar</ex>cell of
+grownde or garden plotte to keepe victualinge in or to putt to any
+other vse or vsses whatsoever w<ex>i</ex>th the whole beniffytte proffytte &amp;
+comodytie w<ex>hi</ex>ch he the saide Iohn Cholmleye his executo<ex>u</ex>rs or
+assignes shall or maye receave or make of for or by the same howse
+neare adioyninge vnto a lane there Comonly Called mayden Lane now in
+the tenure of the saide Iohn Cholmley or his assignes w<ex>i</ex>th free
+ingresse egresse and regresse waye and passage to and for the saide
+Iohn Cholmleye his executo<ex>u</ex>rs and assignes and to and for all other
+p<ex>er</ex>sonnes cominge or frequentinge to the saide Iohn Cholmley his
+executo<ex>u</ex>rs or assignes for any p<ex>ro</ex>fytte or comodytie or for any
+other wysse or causes whatsoever aswell in by and throughe the Alleye
+there called Rosse Alleye leadinge from the Ryver of thames into the
+saide p<ex>ar</ex>cell of grownde  As allso in by and throughe the waye
+leadinge into the saide Mayden Lane at all tymes Conveniente at his and
+theire lybertyes and pleasures yf the waye be p<ex>er</ex>mitted and suffred
+by the Lorde<note type="foot">the Lorde: <hi rend="italic">the lord bishop of Winchester, lord of
+the liberty of the Clink where the Rose was situated</hi></note> and
+lybertie w<ex>i</ex>thoute any lett troble suite evicc<ex>i</ex>on expulc<ex>i</ex>on
+or intrups<ex>i</ex>on of the saide Phillyppe hinshleye his execto<ex>u</ex>rs
+administrato<ex>u</ex>rs or assignes or any of them And w<ex>i</ex>thoute any
+lawfull lett troble expulcone or intrupc<ex>i</ex>on of any other
+p<ex>er</ex>sonne or p<ex>er</ex>sones by his or theire meanes consente righte
+tytle intreste or p<ex>ro</ex>curem<ex>en</ex>t duringe the saide terme of Eighte
+yeares and three monethes fully to be compleate and ended And<note type="foot">And:
+<hi rend="italic">in display script</hi></note> likewyse That he the saide Phyllipe his
+executors or assignes shall and will at his and their owne p<ex>ro</ex>per
+Coste and Chargis w<ex>i</ex>th as muche expedic<ex>i</ex>on as maye be ereckte
+fynished and sett vpp or cause to be erected finished and sett vpe by
+Iohn Grygg<ex>es</ex> Carpenter his servant<ex>es</ex> or assignes ‸<add place="above">the saide
+play house</add> w<ex>i</ex>th all furniture thervnto belonginge or
+appartayninge w<ex>i</ex>thoute fraude or guile All w<ex>hi</ex>ch premisses
+above by these p<ex>re</ex>sent<ex>es</ex> menconed ar scittuate Lyenge and
+beinge on the bancke syde in the p<ex>ar</ex>yshe of St Savoyes<note type="foot">Savoyes:
+<hi rend="italic">for</hi> Savyours</note> in Sovthworke in the County of Surr<ex>ey</ex> In
+consideracon<note type="foot">In consideracon: <hi rend="italic">in display script</hi></note> whereof
+the saide Iohn Cholmley for him his executo<ex>u</ex>rs and
+administrato<ex>u</ex>rs dothe Couen<ex>au</ex>nte p<ex>ro</ex>misse and graunte to
+and w<ex>i</ex>th the saide Phillippe Hinshley his executo<ex>u</ex>rs and
+administrato<ex>u</ex>rs by these p<ex>re</ex>sent<ex>es</ex> well and truly to paye
+or Cause to be payde vnto the saide Phillippe Hinshley his
+executo<ex>u</ex>rs administrato<ex>u</ex>rs or assignes for a yerlye amiyttie
+the some of Eighte hundreth and Sixteene Pound<ex>es</ex> of lawfull moneye
+of Englande in mann<ex>er</ex> and forme followinge that is to saye One the
+feaste daye of the Nativitie of St Iohn Baptiste nexte Cominge after
+the date of these p<ex>re</ex>sent<ex>es</ex> Twentie five Pound<ex>es</ex> and Tenne
+shilling<ex>es</ex> on the feaste daye of St Michaell tharchaungell then
+nexte ensuinge other Twentie five Pound<ex>es</ex> and Tenne shilling<ex>es</ex>
+one the feaste daye of the Birthe of our Lorde god then nexte ensuinge
+other Twentie five Pound<ex>es</ex> and tenne shilling<ex>es</ex> one the feaste
+daye of thanunciac<ex>i</ex>on of ou<ex>r</ex> Lady then nexte followenge other
+Twentie five Pound<ex>es</ex> and Tenne shilling<ex>es</ex> And so further after
+that from feaste daye to feaste daye quarter to quarter and yeare vnto
+yeare one consequently insuinge another That is to saye quarterly one
+every of the like feaste dayes of the feaste afforesaide Twentie five
+Pound<ex>es</ex> and Tenne shilling<ex>es</ex> vntill all the saide somme of
+Eight hundreth and Sixteene Pound<ex>es</ex> be so truly Contented and payde
+vnto the saide Phillyppe Hinshley his executors administrato<ex>u</ex>rs or
+assignes And<note type="foot">And: <hi rend="italic">in display script</hi></note> yf yt shall happen the
+saide amytie or quarterly payment of Twentie five Pound<ex>es</ex> Tenne
+shilling<ex>es</ex> to be byinde<note type="foot">byinde: b <hi rend="italic">evidently inserted after
+initial writing</hi></note> and vnpayde in p<ex>ar</ex>te or in all by the space
+of Twentye and one dayes nexte over or after any feaste daye or terme
+of payment thereof abovesaide in w<ex>hi</ex>ch the some oughte to be payde
+beinge lawfully demaunded at the saide playe howse after the same
+shalbe erected and sett up that then and from thencforthe the saide
+Copartnershippe before menconed shalbe voyde seace and be vtterly
+frustrate and of none effecte as yf the same had not byn agreed vppon
+And that yt shall and maye be lawfull to and for the saide Phillipe
+Hinshley his executo<ex>u</ex>rs and assignes to renter And the saide Iohn
+Cholmley his executo<ex>u</ex>rs and assignes and all other occupyers
+thereof oute and from the saide Dwellinge howse playe howse and all
+other the p<ex>re</ex>misses vtterly to expell put oute and amove This
+p<ex>re</ex>sente Indenture or any thinge therin Contayned to the Contrary
+thereof in any wysse notw<ex>i</ex>thstandinge And<note type="foot">And: <hi rend="italic">in display
+script</hi></note> further the saide Phillype Hinshleye and Iohn Cholmle
+fo<ex>u</ex>r them theire executo<ex>u</ex>rs and administrato<ex>u</ex>rs doe
+Couen<ex>au</ex>nt p<ex>ro</ex>misse and graunte eyther w<ex>i</ex>th other by these
+p<ex>re</ex>sent<ex>es</ex> that yf yt happen eyther of the saide p<ex>ar</ex>tyes
+Phillype Hinshley and Iohn Cholmley to dye or desease this mortall
+lyffe before thende of the saide terme of Eighte yeares and three
+monethes that then and in suche Case yt shall and maye be lawfull to
+and for thexecutors <add place="above">or</add><del>and</del> administrato<ex>u</ex>rs of the p<ex>ar</ex>tye
+so deseasinge to have receave take and enioye the p<ex>ar</ex>te and
+porc<ex>i</ex>on of hym so deceassinge as Copartn<ex>er</ex> w<ex>i</ex>th the
+surviver to of and in all and singuler<note type="foot">singuler: r <hi rend="italic">partially
+obscured by ink blot</hi></note> the premisses beffore menconed and
+expressed in as large and ample  mann<ex>er</ex> and forme &amp; in the
+like<note type="foot">like: <hi rend="italic">written over erasure</hi></note> state and Condic<ex>i</ex>on as
+the saide p<ex>ar</ex>tye so deceassed in his lyffe tyme did enioye the same
+w<ex>i</ex>thoute any lett troble suite deniall or<note type="foot">or: <hi rend="italic">almost obscured
+by an ink blot</hi></note> intrupc<ex>i</ex>on of the surviuo<ex>u</ex>r his
+executo<ex>u</ex>rs administrato<ex>u</ex>rs or assignes w<ex>i</ex>thoute fraude or
+guilt And<note type="foot">And: <hi rend="italic">in display script</hi></note> further the saide
+p<ex>ar</ex>tyes Phillippe Hinshleye and Iohn Cholmleye for them theire
+executo<ex>u</ex>rs and administrato<ex>u</ex>rs doe Couen<ex>au</ex>nt p<ex>ro</ex>misse
+and graunte eyther w<ex>i</ex>th other by these p<ex>re</ex>sent<ex>es</ex> that yt
+shall and maye be lawfull to and for the saide Phillype Hinshleye and
+Iohn Cholmley theire executo<ex>u</ex>rs and assignes ioyntly to appoynte
+and p<ex>er</ex>mitte suche p<ex>er</ex>sonne and p<ex>er</ex>sonnes players to vse
+exersyse &amp; playe in the saide playe howse when and after yt shalbe
+erected and sett vpp at theire wills and pleasures beinge for the
+p<ex>ro</ex>fytt and Comodytie of them bothe And likewaye that the saide
+Phillype Hinshley and Iohn Cholmley when any playe or playes shall be
+played or showen in the saide playe howse after the same shalbe erected
+and sett vpp shall and wilbe there p<ex>re</ex>sent them selves or appoynte
+theire sufficiente debutyes or assignes w<ex>i</ex>th them selves or
+otherwysse at theire Choyse to Coleckte gather and  receave all suche
+some and somes of moneye of every p<ex>er</ex>sonne &amp; p<ex>er</ex>sonnes
+resortinge and Cominge to the saide playe howse to vew see and heare
+any playe or enterlude at any tyme or tymes to be shewed and playde
+duringe the saide terme of Eighte yeares and three monethes excepte yt
+please any of the saide p<ex>ar</ex>tyes to suffer theire frend<ex>es</ex> to go
+in for nothinge And that all suche some and somes of moneye gaynes
+p<ex>ro</ex>fytte and comodytie whatsoever as shalbe so colected gathered or
+receaved by them theire debutyes or assignes shall ymediatly that
+nighte after accompte made by them selves theire debutys or assignes be
+equally devided into Twoo p<ex>ar</ex>tes or equall porc<ex>i</ex>ons whereof the
+saide Phillipe Hinshleye his executo<ex>u</ex>rs or assignes to have the one
+halfe moety p<ex>ar</ex>te or equall porcon<ex>es</ex> of the saide some<note type="foot">some:
+o <hi rend="italic">of</hi> some <hi rend="italic">written over another letter</hi></note> and somes of
+moneye And the saide Iohn Cholmley his executors or assignes to have
+the other moyttie p<ex>ar</ex>te or equall porc<ex>i</ex>on thereof duringe the
+terme afforesaide And further<note type="foot">And further: <hi rend="italic">in display
+script</hi></note> the saide Phillipe Hinshleye for him his executo<ex>u</ex>rs
+and administrato<ex>u</ex>rs dothe Coven<ex>au</ex>nt p<ex>ro</ex>misse and graunte to
+and w<ex>i</ex>th the saide Iohn Cholmleye his executo<ex>u</ex>rs and
+administrato<ex>u</ex>rs by thesse p<ex>re</ex>sent<ex>es</ex> That he the saide
+Phillype Hinshleye his executo<ex>u</ex>rs or assignes shall and will at all
+tymes heareafter and from tyme to tyme duringe the saide terme of
+Eighte yeares and three monethes paye or cause to be payde All and all
+mann<ex>er</ex> of quitte rente and other rente Chargis due and payable to
+the Lorde or Lord<ex>es</ex> of the p<ex>re</ex>misses or the cost<ex>es</ex> shall
+acquitte discharge or save harmeles the saide Iohn Cholmleye his
+executo<ex>u</ex>rs administrators or assignes And likewayes shall and will
+at his and theire owne p<ex>ro</ex>per Cost<ex>es</ex> and Chargis repaire and
+amende all the brigges and wharffes belonginge to the saide p<ex>ar</ex>cell
+of grounde and other the p<ex>re</ex>misses w<ex>i</ex>th thapp<ex>ur</ex>tenaunces at
+or before the xxix<hi rend="superscript">th</hi> daye of September nexte cominge after the
+date of these p<ex>re</ex>sent<ex>es</ex> And Likewayes<note type="foot">And Likewayes</note> the
+saide Iohn Cholmleye and Phillipe Hinshleye for them theire executors
+and administrato<ex>u</ex>rs doe Couen<ex>au</ex>nt p<ex>ro</ex>misse and graunte
+eyther w<ex>i</ex>th other by these p<ex>re</ex>sent<ex>es</ex> That they the said
+Iohn Cholmleye &amp; Phillype Hinshleye theire executo<ex>u</ex>rs
+administrato<ex>u</ex>rs or assignes shall and will after the saide
+xxix<hi rend="superscript">th</hi> daye of September nexte Cominge at theire equall
+Cost<ex>es</ex> and Chargis repare amende sustayne mantayne and vpholde the
+saide playe howse <del><damage><gap unit="chars" extent="3"/></damage></del><note type="foot"><del><damage><gap unit="chars" extent="3"/></damage></del>: <hi rend="italic">erasure approximately 18
+characters long (45mm)</hi></note> brigges wharff<ex>es</ex> and all other the
+wayes and brygges now leadinge or w<ex>hi</ex>ch heareafter shalbe made to
+leade or app<ex>ur</ex>tayne into oute and from the saide p<ex>ar</ex>cell of
+grownde and other the p<ex>re</ex>misses w<ex>i</ex>th thapp<ex>ur</ex>ten<ex>au</ex>nces
+thervnto belonginge at all tymes heareafter when and as often as neede
+shall require duringe the saide terme of Eighte yeares &amp; three monethes
+And further<note type="foot">And further: <hi rend="italic">in display script</hi></note> the saide
+Phillipe Hinshley for him his executo<ex>u</ex>rs and administrato<ex>u</ex>rs
+dothe Couen<ex>au</ex>nt p<ex>ro</ex>misse and graunte to and w<ex>i</ex>th the saide
+Iohn Cholmleye his executo<ex>u</ex>rs and administrato<ex>u</ex>rs That he the
+saide Phillipe Hinshleye his executo<ex>u</ex>rs administrato<ex>u</ex>rs or
+assignes shall nott ne will not p<ex>er</ex>mitte or suffer any p<ex>er</ex>sone
+or p<ex>er</ex>sonnes other then the saide Iohn Cholmley his executo<ex>u</ex>rs
+&amp; assignes servant<ex>es</ex> and famyllie to vtter sell or putt to sale in
+or aboute the saide p<ex>ar</ex>cell of grownde playe house or garden plotte
+and other the p<ex>re</ex>misses w<ex>i</ex>th thapp<ex>ur</ex>ten<ex>au</ex>nces any
+breade or drinke other then suche as shalbe solde to and for the vse
+and behoofe of the saide Iohn Cholmley his executo<ex>u</ex>rs
+administrato<ex>u</ex>rs or assignes by his ‸<add place="above">or their</add> consente meanes
+or procuremente In Witnes Whereof the saide p<ex>ar</ex>tyes to theis
+p<ex>re</ex>sente Indentures Interchaungeably haue sett their Seales the day
+and yeres furste aboue Written/</ab>
+
+<ab><hi rend="right">Sigillat<ex>ur</ex> et delib<ex>era</ex>t<ex>ur</ex> in p<ex>rese</ex>nc<ex>ia</ex></hi></ab>
+
+<ab><hi rend="right">mei Cut<ex>hberti</ex> Iones s<ex>er</ex>vien<ex>tis</ex></hi></ab>
+
+<ab><hi rend="right">Edward<ex>i</ex> Pryce<note type="foot">Sigillat<ex>ur</ex> … Pryce: <hi rend="italic">'Signed and
+delivered in the presence of me, Cuthbert Jones, servant of Edward
+Pryce'</hi></note> <damage><gap unit="chars" extent="2"/></damage></hi></ab>
+
+<ab><seg type="signed" rend="right">Edward Pryce<note type="foot">Pryce: <hi rend="italic">followed by a notarial knot</hi></note></seg></ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+For an image of the original MS, see the <title>Henslowe-Alleyn
+Digitisation Project</title><!-- CB to insert http://www.henslowe-
+alleyn.org.uk/images/Muniments-Series-1/Group-016/01r.html -->.</p>
+
+<p>
+From the reference here to the 'playe howse now in framinge' it is
+apparent that the playhouse foundations had been started before 10
+January 1586/7. It is equally clear from the description of the 'smalle
+ten<ex>emen</ex>te or dwellinge howsse scittuate and standinge at the sowthe
+ende' of the property that John Cholmley already held a lease on that
+tenement, which was to become a potentially lucrative victualling house
+for the playhouse. His small building is shown on John Norden's maps of
+1593 and 1600 in the southwest corner of the Little Rose site. For more
+on the late twentieth-century excavation of the site and Cholmley's
+house, see Bowsher and Miller, <title>Rose and the Globe</title>, pp
+24–32, 111.</p>
+
+<p>
+Also mentioned in the deed is the builder John Griggs, who was employed
+again five years later in 1592 to renovate and extend the audience
+capacity of the playhouse.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm90830136">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1588">1588</date> <seg ana="taxon:RSSKCS">RSSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm90830136-transcription">
+<div><head>f 148v <supplied>(12 April)</supplied></head>
+<pb n="148v" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>ffynchley<lb/>Pope &amp;<lb/>Napton</cell><cell>It<ex>e</ex>m we p<ex>re</ex>sent Phillip
+ffinchley<note type="foot">ffinchley: <hi rend="italic">2 minims for</hi> in</note> Morgane Pope &amp; Iohn
+Napton &amp; eu<ex>er</ex>y of them to clense and skower &amp; to lope the Willowes
+y<ex>a</ex>t hang over the common sewer to the great annoysaunce of the same
+cont x pole more or les lyeng against ther grownd at ye new
+plaie<note type="foot">plaie: i <hi rend="italic">written over another letter</hi></note> house to be
+done by the last day of Iuly next cominge vppon paine of xx s. for
+eu<ex>er</ex>y pole then vndone<note type="marginal" place="margin_right"><handShift/>not done<handShift/></note></cell><cell rend="right">xx
+s.</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+Pope and Napton shared responsibility for the Bear Garden side of
+the common sewer while Philip 'ffinchley,' an obvious error for
+'Hinchley' (Henslowe) as he was sometimes referred to, was required to
+clean and clear the sewers running immediately beside his new
+playhouse.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm94970728">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1589">1589</date> <seg ana="taxon:RSLPCL">RSLPCL</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm94970728-transcription">
+<div><head>pp 388–9 <supplied>(12 November)</supplied></head>
+<pb type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note> l<ex>ett</ex>re to the L<ex>ord</ex>
+Archb<ex>ishop</ex> of Canterbury. That wheras there hathe growne some
+inconuenience by Com<ex>m</ex>on playes and enterludes in and about the
+Cyttie of London, in<note type="foot">in: <hi rend="italic">for</hi> in that</note> the players tak vppon
+them to handle in their plaies certen matters of Diuinitye and of State
+vnfitt to be suffred: for redresse whereof their L<ex>ordshipes</ex> haue
+thought good to appointe some p<ex>er</ex>sones of iudgemt and
+vndrstanding<note type="foot">vndrstanding: <hi rend="italic">for</hi> vnderstanding<hi rend="italic">;
+abbreviation mark missing</hi></note> to viewe and examine their playes
+before they be p<ex>er</ex>mitted to p<ex>re</ex>sent them publickly: his
+L<ex>ordship</ex> is desired that some fytt p<ex>er</ex>sone well learned in
+Diuinity be appointed by him to Ioyne w<ex>i</ex>th the M<ex>aste</ex>r of the
+Revells<note type="foot">M<ex>aste</ex>r of the Revells: <hi rend="italic">Edmund Tilney, master of the
+Revels, 1579–1610</hi></note> and one oth<ex>e</ex>r to be nominated by the
+L<ex>ord</ex> Mayor, and they Ioyntly w<ex>i</ex>th some spede to viewe and
+Consider of suche Comedyes and Tragedyes as are and shalbe publickly
+played by the Companies of players in and aboute the Cyttie of London,
+and they to geue allowance of suche as they shall thincke meete to be
+plaied and to forbydd the rest.</ab>
+
+<ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note> l<ex>ett</ex>re to the L<ex>ord</ex> Mayor of
+London, That wheras their l<ex>ordshipes</ex> haue already signifyde vnto
+him to appoint a sufficient p<ex>er</ex>son learned and of
+Iudgemt<note type="foot">Iudgemt: <hi rend="italic">for</hi> Iudgement<hi rend="italic">; abbreviation mark
+missing</hi></note> for the Cyttie of London to Ioyne w<ex>i</ex>th the
+M<ex>aste</ex>r of the Revelles, and w<ex>i</ex>th a divine to be nominated by
+the L<ex>ord</ex> Archeb<ex>ishop</ex> of Cant<ex>erbury</ex> for the reforming of the
+plaies daylie exercised and p<ex>re</ex>sented publickly in and about the
+Cyttie of London, where the players tak vppon them w<ex>i</ex>thout
+Iudgem<ex>en</ex>t or Decoru<ex>m</ex> to handle matters of Divinitye and State.
+he is required if he haue not as yet made choice of suche a p<ex>er</ex>sone
+that he will so doe forthw<ex>i</ex>th, and thereof geue knowledge to the
+L<ex>ord</ex> Archeb<ex>ishop</ex>; and the M<ex>aste</ex>r of the Reveles; that they
+may all meet accordingly<pb/></ab>
+
+<ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note> l<ex>ettr</ex>e to the m<ex>aste</ex>r of the
+Revelles, requiring him w<ex>i</ex>th two oth<ex>e</ex>rs the one to be appointed
+by the L<ex>ord</ex> Archb<ex>ishop</ex> of Canterb<ex>ury</ex> and the oth<ex>e</ex>r by
+the L<ex>ord</ex> mayor of London to be men of Larning and Iudgement and to
+Call before them the seu<ex>er</ex>all Companies of players (whose
+servaunt<ex>es</ex> soever they be) and to require them by authorytie herof
+to delyver vnto them ther booke that they maye Consider of the matters
+of their Comedyes and Tragedyes, and therevppon to sayke oute or
+reforme suche p<ex>ar</ex>t<ex>es</ex> and matters as they shall fynd vnfitt and
+vn<ex>reu</ex>erent to be handled in playes, bothe for divinitie and state,
+comanding the said Companies of players in her Ma<ex>ies</ex>t<ex>es</ex> name,
+that they forbear to present and playe publickly anie Comedy or Tragedy
+other then suche as they there shall haue seene and allowed w<ex>hi</ex>ch
+if they shall not observe they shall lett them knowe from ther
+l<ex>ordshipes</ex> that they shalbe not onely sevearely punished but made
+Capable of the exercise of ther profession forever hereaft<ex>e</ex>r</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+At least two of the companies involved in these controversial
+performances are known to have been the queen's men and John Lyly's boy
+company at Paul's, both of which seem to have come to grief as a result
+of their participation. It is also possible that Will Kemp and his
+company, Lord Strange's men, engaged in satirical stage mockery of
+Martin. Kemp is listed as one of the 'haggling and profane' satirists
+working to ruin Martin in <title>Theses Martinianae</title>, dated 22
+July 1589: see further Manley and MacLean, <title>Lord Strange's Men
+</title>, pp 37–41. Although the date of arrival of Lord Strange's men
+for residence at the Rose has not yet been confirmed, it seems very
+likely that they were there by <hi rend="italic">c</hi> 1590, as their extant petition
+to the privy council and another by the Thames watermen pleading for
+their continuing use of the Rose indicate (see further 'History of the
+Rose Playhouse'<!-- CB insert cross ref -->). The summer of 1589 remains
+a possibility for their early performances at the Rose therefore.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm90811976">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1589">1588/9</date> <seg ana="taxon:RSSKCS">RSSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm90811976-transcription">
+<div><head>f 153v <supplied>(5 March)</supplied></head>
+<pb n="153v" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>henchley.</cell><cell>It<ex>e</ex>m we p<ex>re</ex>sent Phillip Henchley to
+pull vpp all the pylles that stand in ye common sewer against the play
+house to ye stopping of the water course yen to be done by Midsomer
+next vppon paine of x s. yf it be yen vndone<note type="marginal" place="margin_right">done</note></cell><cell rend="right">x
+s.</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm90916024">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date precision="low" when-iso="1590"><hi rend="italic">c</hi> 1590</date> <seg ana="taxon:RSPPCS">RSPPCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm90916024-transcription">
+<div><head>f [1]</head>
+<pb n="[1]" type="folio"/>
+
+<ab><hi rend="center">To<note type="foot">To: T <hi rend="italic">in display script</hi></note> the righte honorable o<ex>u</ex>r
+verie good Lord<ex>es</ex>, the Lord<ex>es</ex> of her<lb/>ma<ex>ies</ex>t<ex>es</ex> moste
+honorable privie Councell/.</hi></ab>
+
+<ab>Our<note type="foot">Our: O <hi rend="italic">in display script</hi></note> dueties in all humblenes
+remembred to yo<ex>u</ex>r hono<ex>u</ex>rs. fforasmuche (righte honorable) oure
+Companie is greate, and thearbie o<ex>u</ex>r chardge intollerable, in
+travellinge the Countrie, and the Contynuaunce thereof, wilbe a meane
+to bringe vs to division and seperac<ex>i</ex>on, whearebie wee shall not
+onelie be vndone, but alsoe vnreadie to serve her ma<ex>ies</ex>tie, when it
+shall please her highenes to com<ex>m</ex>aund vs, And for that the vse of
+o<ex>u</ex>r plaiehowse on the Banckside, by reason <del>by reason</del> of the
+passage to and frome the same by water, is a greate releif to the poore
+watermen theare, And o<ex>u</ex>r dismission thence nowe in this longe
+vacation, is to those poore men a greate hindraunce, and in manner an
+vndoeinge, as they gen<ex>er</ex>allie complaine, Both o<ex>u</ex>r, and theire
+humble petic<ex>i</ex>on and suite thearefore to yo<ex>u</ex>r good honno<ex>u</ex>rs
+is, That yow wilbe pleased of yo<ex>u</ex>r speciall favo<ex>u</ex>r , to recall
+this o<ex>u</ex>r restrainte, And p<ex>er</ex>mitt vs the vse of the said
+Plaiehowse againe/ And not onelie o<ex>u</ex>r selues But alsoe a greate
+nomber of poore men shalbe especiallie bounden to praie for yo<ex>u</ex>r
+Hono<ex>u</ex>rs/<note type="foot">Hono<ex>u</ex>rs: H <hi rend="italic">in display script</hi></note></ab>
+
+<ab><hi rend="right">Yo<ex>u</ex>r hono<ex>u</ex>rs Humble suppl<ex>ian</ex>t<ex>es</ex></hi></ab>
+
+<ab><hi rend="right">The righte honorable the Lord Straunge</hi></ab>
+
+<ab><hi rend="right">his servant<ex>es</ex> and Plaiers/.</hi></ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+The reference to 'this longe vacation' is usually interpreted as
+the summer months. Strange's men are here arguing their case as
+persuasively as possible, with an evident awareness of the economic
+advantage to be gained from long-term residence at the Bankside
+playhouse, conveniently located for presenting London audiences with a
+repertory of plays that were to be documented in detail by Henslowe
+when he began the 'diary' he inherited from his brother in 1591/2. The
+reference to the concern that they be forced to divide and take the
+traditional summer touring roads instead and then as a result be
+'vnreadie to serve her ma<ex>ies</ex>tie, when it shall please her highenes
+to com<ex>m</ex>aund vs' suggests that they expected an invitation to
+perform at court, as indeed they did, twice, during the Christmas
+season, 1590: see further Manley and MacLean, <title>Lord Strange's
+Men</title>, pp 50–4.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm90877112">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date precision="low" when-iso="1590"><hi rend="italic">c</hi> 1590</date> <seg ana="taxon:RSPPCW">RSPPCW</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm90877112-transcription">
+<div><head>f [1]</head>
+<pb n="[1]" type="folio"/>
+
+<ab><hi rend="center">To<note type="foot">To: <hi rend="italic">in display script</hi></note> the right honnorable my Lorde
+Haywarde Lorde highe Admirall<lb/>of Englande and one of her ma<ex>ies</ex>ties
+moste honnorable previe Counsayle/</hi></ab>
+
+<ab>In moste hvmble manner Complayneth and sheweth vnto your good
+Lordeshipp, your poore suppliant<ex>es</ex> and dayly Orato<ex>u</ex>rs Phillipp
+Henslo, and others the poore watermen on the bancke side/ whereas
+yo<ex>u</ex>r good L<ex>ordship</ex> hathe derected your warrant vnto hir
+ma<ex>ies</ex>ties Iustices, for the restraynte of a playe howse <del>beinge</del>
+belonginge vnto the saide Phillipp Henslo <del><damage><gap unit="chars" extent="1"/></damage></del> one of the groomes of
+her ma<ex>ies</ex>ties Chamber So it is if it please your good Lordshipp,
+that wee yo<ex>u</ex>r saide poore watermen have had muche helpe and reliefe
+for vs oure poore wives and Childeren by meanes of the resorte of
+suche<note type="foot">suche: uc <hi rend="italic">partially obscured by smudge or ink blot</hi></note>
+people as come vnto the said playe howse, It maye therefore please your
+good L<ex>ordship</ex> for godes sake and in the waye of Charetie to
+respecte vs your poore water<del><damage><gap unit="chars" extent="1"/></damage></del> men, and to give leave vnto the said
+Phillipp Henslo to have playinge in his saide howse duringe suche tyme
+as others have according as it hathe byne accustomed/ And in yo<ex>u</ex>r
+honnors so doinge yow shall not onely doe a good and a Charitable dede
+but also bynde vs all according to oure dewties, w<ex>i</ex>th oure poore
+wives and Children dayly to praye for your honnor in mvche happynes
+longe to lyve</ab>
+
+<table><row><cell>
+<seg type="signed">Isack Towell</seg><lb/>
+Edward <seg type="signed_mark">X</seg> Robart<ex>es</ex> mark on<note type="foot">on: n <hi rend="italic">corrected over</hi>
+f<hi rend="italic">(?)</hi></note> of her M<ex>aies</ex>ties wattermen<lb/>
+<seg type="signed">Thomes cox</seg><lb/>
+Thomas <seg type="signed_mark">X</seg> Edmanson marke<lb/>
+Edwarde <seg type="signed_mark">X</seg> Adysson on of her M<ex>aies</ex>ties wattermen<lb/>
+<seg type="signed_mark">W T</seg> Ieames <seg type="signed_mark">X</seg> Grainger<lb/>
+Chr<ex>ist</ex>offer <seg type="signed_mark">X</seg> topen marke<lb/></cell><cell>
+<seg type="signed">William dowet</seg> m<ex>aste</ex>r of her Maiestes barge<lb/>
+Gyllam <seg type="signed_mark">X</seg> Rockett marke on of her M<ex>aies</ex>ties wattermen<lb/>
+<seg type="signed">wyll<ex>ia</ex>m hodges</seg> quens man<lb/>
+Thomas <seg type="signed_mark">X</seg> Farmonger on of her M<ex>aies</ex>ties wattermen<lb/>
+william <seg type="signed_mark">X</seg> Tuchenner on of her M<ex>aies</ex>ties mean<lb/>
+<seg type="signed">Iames Russell</seg><lb/>
+<seg type="signed">Henry Droaper</seg><lb/>
+<seg type="signed">Fardinando Blacke</seg><lb/>
+<seg type="signed">Parker Playne</seg><note type="foot">Isack … Playne: <hi rend="italic">signatures placed
+randomly in the MS</hi></note><lb/></cell></row></table>
+</div>
+</div>
+<div type="endnote">
+<p>
+Alan Nelson has identified sixteen of these watermen in Southwark
+parish records and the seventeenth in court of Exchequer documents.
+William 'Tuchenner,' or Tutchener, was buried in the parish church of
+St Saviour's, Southwark, on 6 January 1590/1, while James Grainger was
+buried at the end of the same year on 6 December 1591. The exact reason
+for the temporary restraint of playing, which seems to have been
+specific to the Rose, remains unclear. The letter to the Surrey JPs has
+not survived.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm90800648">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1590">1590</date> <seg ana="taxon:RSSKCS">RSSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm90800648-transcription">
+<div><head>f 161 <supplied>(24 April)</supplied></head>
+<pb n="161" type="folio"/>
+
+<ab>..</ab>
+
+<table><row><cell>ffinchley<lb/>Pope &amp;<lb/>Napton</cell><cell>You shall levye of Phillip
+ffinchley Morgane Pope &amp; Iohn Napton or one of them x l. for that they
+had day geven them to hav clensed and scowred the com<ex>mon</ex> sewer
+lyeng against their groundes in the p<ex>ar</ex>ish of S<ex>ain</ex>ct Saviors &amp;
+to hav topped their willowes hanging over the saied sewer to hav beene
+done by the last day of Iuly last past to the quantytie of x pole vppon
+paine of xx s. every poll then vndone &amp; hav made defaulte.</cell><cell rend="right">x
+l.</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+Pope and Napton shared responsibility for the Bear Garden side of
+the common sewer while Philip 'ffinchley,' an obvious error for
+'Hinchley' (or Henslowe) as he was sometimes referred to, was required
+to clean and clear the sewers running immediately beside his new
+playhouse.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm90700072">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date precision="low" when-iso="1590"><hi rend="italic">c</hi> 1590</date> <seg ana="taxon:RSWPC1">RSWPC1</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm90700072-transcription">
+<div><head>f [1]</head>
+<pb n="[1]" type="folio"/>
+
+<ab>Whereas<note type="foot">Whereas: W <hi rend="italic">in display script</hi></note> not longe since vpon
+some Considerac<ex>i</ex>ons we did restraine the Lorde Straunge his
+s<ex>er</ex>vaunt<ex>es</ex> from playinge at the rose on the banckside, and
+enioyned them to plaie three daies at newington Butts, Now forasmuch as
+wee are satisfied that by reason of the tediousnes of the waie and
+y<ex>a</ex>t of longe tyme plaies haue not there bene vsed on working daies,
+And for that a nomber of poore watermen are therby releeved, Yow shall
+p<ex>er</ex>mitt and suffer them or any other there to exercise yem selues
+in suche sorte as they haue don heretofore, And that the Rose maie be
+at libertie w<ex>i</ex>thout any restrainte, solonge as yt shalbe free from
+infection of sicknes, Any Comaundem<ex>en</ex>t<note type="foot">Comaundem<ex>en</ex>t: <hi rend="italic">3
+minims for</hi> un</note> from vs heretofore to the Contrye
+notw<ex>i</ex>thstanding. ffrom. <space/></ab>
+
+<ab><handShift/>To the Iustices Bayliffes</ab>
+
+<ab>Constables and others to</ab>
+
+<ab>Whome Yt shall
+Apperteyne:<handShift/></ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+The 'tediousnes of the waie' to Newington Butts has been much
+commented on. The old playhouse, dating back to 1576, was about a
+mile's walk from Bankside and so less conveniently placed for London
+playgoers taking the boat or London Bridge to Southwark. The fact that
+'of longe tyme plaies haue not there bene vsed on working daies' is
+worth noting. The leaseholder of the Newington property by this time
+was Peter Honningborne, not known as a theatre manager, so Henslowe
+must have paid for temporary use of the playhouse there, as he probably
+did later in the summer of 1594. Whether others paid for occasional use
+after 1587 when the Rose was opened on Bankside remains an open
+question.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm91625448">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1591">1591</date> <seg ana="taxon:RSPCL6">RSPCL6</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm91625448-transcription">
+<div><head>p 440 <supplied>(25 July) (Greenwich)</supplied></head>
+<pb n="440" type="page"/>
+
+<ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note> Let<ex>t</ex>re to the L<ex>ord</ex> maior of
+the Cyttie of London, and the Iustices of midlesex<note type="foot">midlesex: <hi rend="italic">3
+minims for</hi> mi</note> and Surrey. Whereas heretofore there hathe ben
+order taken to restraine the playinge of Enterludes and playes on the
+Sabothe daie, Notw<ex>i</ex>thstandinge the w<ex>hi</ex>ch (as wee are enformed),
+the same ys neglected to the prophanac<ex>i</ex>on of this daie, and all
+other daies of the weeke in divers places the players doe vse to Recyte
+theire plaies to the great hurt and destruction of the game of Beare
+Baytinge and lyke pastymes w<ex>hi</ex>ch are maynteyned for her
+ma<ex>ies</ex>t<ex>es</ex> pleasure yf occac<ex>i</ex>on require: These shalbe
+therefore to Requiere yow not onlie to take order hereafter that there
+maie no plaies Interludes or Commodyes be vsed or publicklie made and
+shewed either on the Sondaie or on the Thursdaies, because on the
+Thursdayes those other games vsuallie haue ben allwayes accustomed and
+practized. Whereof see yow faile not hereafter to see this o<ex>u</ex>r
+order dulie observed for the avoydinge of the Inconveniences
+aforesaid./</ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+Although authorities in London and Middlesex were also addressed
+here, this letter provides evidence that the proximity – and
+competition – offered to the long-standing Bear Garden in Southwark by
+Henslowe's Rose and the Lord Strange's men, likely resident there by
+this time, was of growing concern.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm93270024">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1592">1592</date> <seg ana="taxon:RSLWWB">RSLWWB</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm93270024-transcription">
+<div><head>f [1] <supplied>(12 June)</supplied></head>
+<pb n="[1]" type="folio"/>
+
+<ab>My humble duety remembred to yo<ex>u</ex>r good L<ex>ordship</ex> Beeing
+infourmed of a great disorder &amp; tumult lyke to grow yesternight about
+viij of the clock w<ex>i</ex>thin the Borough of Southwark I went thither
+w<ex>i</ex>th all speed I could taking w<ex>i</ex>th mee on of the Sherifes,
+whear I found great multitudes of people assembled togither, &amp; the
+principall actours to bee certein servants of the ffeltmakers gathered
+togither out of Barnsey street<note type="foot">Barnsey street: <hi rend="italic">Bermondsey
+Street</hi></note> &amp; the Black fryers w<ex>i</ex>th a great number of lose &amp;
+maisterles men apt for such pourposes. Whearupon having made
+proclamation &amp; dismissed the multitude I apprehended the chief doers
+and authors of the disorder and have co<ex>m</ex>mitted them to prison to
+bee farther punished as they shall bee found to deserve. And having
+this morning sent for the Deputie &amp; Constable of the Borough w<ex>i</ex>th
+divers other of best credit who wear thear present, to examine the
+cause &amp; manner of the disorder, I found that it began vpon the serving
+of a warrant from my L<ex>ord</ex> Chamberlain<note type="foot">L<ex>ord</ex> Chamberlain:
+<hi rend="italic">Henry Carey, 1st Baron Hunsdon (1526–96)</hi></note> by on of the Knight
+Mareschalls men vpon a ffeltmakers servant, who was co<ex>m</ex>mitted to ye
+Mareschalsea <note type="foot">Mareschalsea: <hi rend="italic">the Marshalsea Prison, located just
+east off Borough High Street, Southwark</hi></note> w<ex>i</ex>th certein others
+y<ex>a</ex>t wear accused to his L<ex>ordship</ex> by the sayed Knight
+Mareschalls men w<ex>i</ex>thout cause of offence, as them selves doe
+affirm. ffor rescuing of whome ye sayed companies assembled them selves
+by occasion &amp; pretence of their meeting at a play w<ex>hi</ex>ch bysides the
+breach of ye Sabboth day giveth opportunitie of co<ex>m</ex>mitting these &amp;
+such lyke disorders. The principall doers in this rude tumult I mean to
+punish to the example of others. Whearin also it may please yo<ex>u</ex>r
+L<ex>ordship</ex> to give mee yo<ex>u</ex>r direction, if you shall advise vpon
+any thing meet to bee doon for the farther punishm<ex>en</ex>t of the sayed
+offenders. Hearof I thought good to advertise yo<ex>u</ex>r L<ex>ordship</ex>
+(w<ex>hi</ex>ch I am infourmed by ye inhabitants of Southwark men of best
+reputation ‸<add place="above">among</add> them) that the Knight Mareschalls men in the
+serving of their warrants, do not vse themselves w<ex>i</ex>th that good
+discretion &amp; moderate vsage as wear meet to bee doon in lyke cases but
+after a most rough &amp; violent manner, provoking men by such hard
+dealings to contend w<ex>i</ex>th them w<ex>hi</ex>ch would otherwise obey in all
+duetifull sort. As I vnderstand they did in this case, whear they
+entred the house, whear the warrant was to bee served w<ex>i</ex>th a dagger
+drawen affreyting the goodwyfe who satt by the fire w<ex>i</ex>th a young
+infant in hir armes and afterwards having taken the prisoners &amp;
+co<ex>m</ex>mitted them to the Mareschalsea (whear they lay 5. dayes
+w<ex>i</ex>thout making their answear) these mutinous persons assembling
+them selves in this disordered manner the Knight Mareschalls men beeing
+w<ex>i</ex>thin the Mareschalsea, issued foorth w<ex>i</ex>th their daggers
+drawen, &amp; bastianadoes in their hands beating the people (whearof soom
+passed that way by chance, soom cam but to gaze as the manner is) and
+afterwards drew their swords. Whearby the tumult was more incensed &amp;
+themselves endangered but y<ex>a</ex>t help cam to prevent farther mischief.
+The sayed inhabitants of Southwark do farther complain that the sayed
+Knight Marschalls men beehave themselues very vnneyghbourly &amp;
+disdaynfully among them, refusing to pay scot or lot w<ex>i</ex>th them, or
+any other dueties to Church or co<ex>m</ex>mon Wealth w<ex>hi</ex>ch maketh the
+inhabitants the more to dislyke them. This much I thought good to
+signifie to y<ex>ou</ex>r L<ex>ordship</ex> that (if y<ex>ou</ex>r L<ex>ordship</ex> thinck
+good) they may bee admonished of their beehaviour, &amp; to vse more
+discretion in serving their warrants: for that such tumults beeing once
+raysed by disordered multitudes ar rather to bee quenched &amp; suppressed
+by policie for the present time, then farther to bee kindled by such
+violent means. And thus I co<ex>m</ex>mit y<ex>ou</ex>r good L<ex>ordship</ex> to the
+grace of the Almightie. ffrom London the 12<hi rend="superscript">th</hi> of Iune
+1592<note type="foot">1592: <hi rend="italic">underlined</hi></note></ab>
+
+<ab><hi rend="right">Y<ex>ou</ex>r L<ex>ordships</ex> most humble</hi></ab>
+
+<ab><seg type="signed" rend="right">Wyllyam Webbe maior</seg></ab>
+</div>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm92855896">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1592">1592</date> <seg ana="taxon:RSPCL4">RSPCL4</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm92855896-transcription">
+<div><head>pp 414–15 <supplied>(23 June)</supplied></head>
+<pb type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note> l<ex>ett</ex>re to the<note type="foot">the: th
+<hi rend="italic">written over</hi> S</note> m<ex>aste</ex>r of the Rolles S<ex>i</ex>r Owen Hopton
+knight Iohn Barnes and Richard yonge Esquiors whereas her ma<ex>ies</ex>tie
+is informed that certaine Apprentyces and other idle people theire
+adherent<ex>es</ex> that were authors and p<ex>ar</ex>takers of the late mutynous
+and foule disorder in Southwarke in moste outrageous and tumultuous
+sorte haue a further purpose and meaninge on Midsom<ex>m</ex>er eueninge or
+Midsom<ex>m</ex>er nighte or about that tyme to renewe theire leud assemblye
+togeather by Cullo<ex>u</ex>r of the tyme for some bad and mischeiuous
+intenc<ex>i</ex>on to the disturbance and breache of her ma<ex>ies</ex>t<ex>es</ex>
+peace and Comyttinge some outrage<del>us</del>. To preuente in tyme theis wicked
+and mischeuious purpos<ex>es</ex> wee haue giuen straighte order to the
+maior of London for the Cittye and the liberties therevnto belonginge
+and to all other places nerre to the same to haue regarde herevnto; And
+so likewyse wee are in her ma<ex>ies</ex>t<ex>es</ex> name straightlie to Chardge
+and Comaunde yow presentlye vpon sighte hereof to sende for the
+Constables &amp; some of the Cheifest and descreetest inh<ex>ab</ex>itant<ex>es</ex>
+in Holborne Clerkenwell St Giles in the feildes &amp;c and other<del>s</del> places
+nere thereabout<ex>es</ex>, and to chardge and Comaunde them to take
+ordr<note type="foot">to take ordr: <hi rend="italic">written on a separate line in the bottom right
+corner of the page with</hi> ordr<hi rend="italic">, for</hi> order<hi rend="italic">, functioning as
+catchword; abbreviation mark missing</hi></note> <pb/> order that there maye be
+a stronge and substancyall watche kept bothe on Midsom<ex>m</ex>er Eueninge
+Midsom<ex>m</ex>er night and Sondaye at nighte of housholders and Masters of
+families to Contynue from the begin<ex>n</ex>inge of the Eueninge vntill the
+morninge, and that all m<ex>aste</ex>rs of servau<ex>n</ex>tes and of
+Apprentys<ex>es</ex> be straightlie Chardged as they will answere to the
+Contrarye at theire p<ex>er</ex>ill<ex>es</ex> to keepe theire seruant<ex>es</ex> in
+theire hous<ex>es</ex> for those two night<ex>es</ex>, so as they maie be
+w<ex>i</ex>thin the dores before the Eueninge and not suffered to Come
+forthe nor to haue anye weapons yf they shoulde be so lewdlie disposed
+to execute anye euill purpose And yf notw<ex>i</ex>thstandinge this
+straighte chardge and Comaundm<ex>en</ex>t any seruant<ex>es</ex> apprentyces or
+other suspected p<ex>er</ex>sons shalbe founde in the streetes, to see them
+presentlie Comytted to prison. Especiallie yow shall take order that
+theis watches of housholders, may be of that strengthe w<ex>i</ex>th theire
+weapons as they maie be hable yf there be anie vprore Tumult or
+vnlawfull assemblye to suppresse the same. Moreouer for avoydinge of
+theis vnlawfull assemblies in those quarters yt is thoughte meete yow
+shall take order that there be noe playes vsed in anye place nerre
+thereabout<ex>es</ex> as the Theator, Curtayne or other vsuall places there
+where the same are Comonly vsed nor no other sorte of vnlawfull or
+forbidden Pastymes that drawe togeather the baser sorte of people from
+hence forth vntill the feast of St michaell. Herein wee are to require
+yow yo<ex>u</ex>rselues to Call to yow the head Constables and other
+officers and suche principall men as dwell in those quarters, and to
+take some extraordynarye paines to see theis orders straightlie
+obs<ex>er</ex>ued, and all other thinges effectually p<ex>er</ex>formed that maye
+tende and be necessarye, for the pres<ex>er</ex>uac<ex>i</ex>on of the Peace
+auoydinge of Tumult and suppressinge of suche disordr as maie happen or
+be any waie intended and to ioyne and assyste suche officers of the
+Cittye as shall keepe Watche nerre vnto yow.</ab>
+
+<ab>Sixe other letters of the like Teno<ex>u</ex>r to the p<ex>er</ex>sons and places
+followinge./</ab>
+
+<ab><hi rend="center">Surrey</hi></ab>
+
+<table><row><cell>Mr Gardiner<lb/>Mr Bowier<lb/>Mr Parker<!-- right pointing
+brace --></cell><cell>for ye precincts of</cell><cell><!-- left pointing
+brace -->Newington<lb/>Kentish streete<lb/>Barmondseystreete<lb/>Clinck, Paris
+garden &amp; the banckside.</cell></row></table>
+
+<table><row><cell>Lieutenant of ye Tower.<lb/>M<ex>aste</ex>r of St Katins<!-- right
+pointing brace --></cell><cell>for ye precincts of</cell><cell><!-- left pointing
+brace -->St Catherins<lb/>Estsmithfeilde</cell></row></table>
+
+<table><row><cell>L<ex>ord</ex> Wentworthe<!-- right pointing brace --></cell><cell>for yeis
+precincts</cell><cell><!-- left pointing
+brace -->Ratcliffe<lb/>Shorditch<lb/>Whitechappell.</cell></row></table>
+
+<table><row><cell>L<ex>ord</ex> Cobham<!-- right pointing brace --></cell><cell>for
+ye</cell><cell><!-- left pointing brace -->Blackfriers.</cell></row></table>
+
+<table><row><cell>S<ex>i</ex>r Tho<ex>mas</ex> Sherley<!-- right pointing
+brace --></cell><cell>for the</cell><cell><!-- left pointing
+brace -->Whitefriers.</cell></row></table>
+
+<table><row><cell>Bailiue of Westm<ex>inste</ex>r<!-- right pointing
+brace --></cell><cell/><cell>Westminster<lb/>St Martins<lb/>ye Stronde</cell></row></table>
+</div>
+</div>
+<div type="endnote">
+<p>
+Official anxiety about the potential for further unrest and
+disorder at midsummer triggered by London apprentices was clearly in
+response to the recent riotous events in Southwark when Feltmakers'
+apprentices clashed with the knight marshal's men: see BL: Lansdowne
+71, f <del>1</del><!-- CB to insert cross ref to RSLWWB -->. The letters directed
+to those responsible for the precincts in Newington and Southwark have
+not survived.</p>
+
+<p>
+The items in each cell of the left column are encompassed by a brace
+pointing to the corresponding cell in the middle column, or the far
+right column in the case of the last row; likewise the items in each
+cell of the far right column are encompassed by a brace pointing to the
+corresponding cell in the middle column, or left column in the case of
+the last row.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm92826968">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1593">1592/3</date> <seg ana="taxon:RSPCO9">RSPCO9</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm92826968-transcription">
+<div><head>pp 211–12 <supplied>(28 January) (Hampton Court)</supplied></head>
+<pb type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note> l<ex>ett</ex>re to the l<ex>ord</ex>
+Maio<ex>u</ex>r and Aldermen of the Cittie of london forasmuch as by the
+Certificate of the last weeke, yt appearethe the infection dothe
+increase, w<ex>hi</ex>ch by the favo<ex>u</ex>r of God, and w<ex>i</ex>th  yo<ex>u</ex>r
+dilligent obseruance of her Ma<ex>ies</ex>t<ex>es</ex> Comandement<ex>es</ex> and the
+meanes and orders prescribed to be put in execution w<ex>i</ex>thin the
+Cittie of london maie speedelie cease yeat for the better furderance
+therof we think yt fitt that all manner of concourse and publique
+meetinges of the people at playes, beare baitinges, bowlinges, and
+other like assemblyes for sportes be forbidden, and therefore doe
+hereby requier you and in her Ma<ex>ies</ex>t<ex>es</ex> name straightlie charge
+and co<ex>m</ex>mande you forthw<ex>i</ex>th to inhibite w<ex>i</ex>thin yo<ex>u</ex>r
+Iurisdiction all plaies baiting of beares, bulls, Bowling and any other
+like occasions to assemble any nombers of people together (preacheing
+and devyne seruice at Churches excepted) wherby no occasions be offred
+to increase the infection w<ex>i</ex>thin the Cittie, w<ex>hi</ex>ch you shall
+doe bothe by <pb/> p<ex>ro</ex>clamac<ex>i</ex>on to be published to that ende and by
+spetiall watche and obseruac<ex>i</ex>on to be had at the places where the
+Plaies bearebaitinges bowlinges and like pastimes are vsually
+frequented and if you shall vpon this publicaon<note type="foot">publicaon:
+<hi rend="italic">for</hi> publicacion<hi rend="italic">; abbreviation mark missing</hi></note> finde any
+so vnduitifull and disobedient as they will, notw<ex>i</ex>thstanding this
+p<ex>ro</ex>hibition offer to plaie, beate beares or bulles bowle &amp;c. you
+shall p<ex>rese</ex>ntelie cause them to be apprehended and comitted to
+prison there to remaine vntill by their order they shalbe dismissed
+And to the end the like assemblies w<ex>i</ex>thin the out liberties
+adioyning to the Cittie we haue giuen direction to the Iustices of the
+peace, and other publique officers of the Counties of Middlesex and
+Surrey to hold the like course not onlie w<ex>i</ex>thin the said liberties
+but also w<ex>i</ex>thin the distance of seven myles about the Cittie
+w<ex>hi</ex>ch we doubte not they will carefullie see to be executed as you
+for yo<ex>u</ex>r p<ex>ar</ex>te w<ex>i</ex>thin the Cittie will doe the like, in
+regarde of her Ma<ex>ies</ex>t<ex>es</ex> comandem<ex>en</ex>t the benefitt of the
+Cittie; and for the respectes alreadie signified vnto you.</ab>
+
+<ab>Two other l<ex>ett</ex>res of the like teno<ex>u</ex>r written to the Iustices of
+the peace w<ex>i</ex>thin the Counties of Surrey and Middelsex for the
+p<ex>ro</ex>hibition of like assemblies in the out liberties and w<ex>i</ex>thin
+seven miles of the Cittie of either Countie.</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm90590584">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1593">1593</date> <seg ana="taxon:RSAPPC">RSAPPC</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm90590584-transcription">
+<div><head>single sheet</head>
+<pb n="1" type="sheet"/>
+
+<gap reason="omitted"/>
+
+<ab>That<note type="foot">That: T <hi rend="italic">in display script</hi></note><note type="marginal" place="margin_left">8</note> for avoydinge of
+great concourse of people, W<ex>hi</ex>ch causeth increase of thinfection,
+yt were convenient, that all Playes, Bearebaytinges, Cockpitt<ex>es</ex>,
+co<ex>m</ex>mon Bowlinge alleyes, and suche like vnnecessarie assemblies
+should be suppressed duringe the tyme of infection, for that infected
+people, after theire longe keepinge in, and before they be clered of
+theire disease and infection, beinge desirous of recreac<ex>i</ex>on, vse to
+resort to suche assemblies, where throughe heate and thronge, they
+infecte manie sound personnes./</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm93271400">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1594">1593/4</date> <seg ana="taxon:RSPC03">RSPC03</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm93271400-transcription">
+<div><head>f 5v <supplied>(3 February) (Hampton Court)</supplied></head>
+<pb n="5v" type="folio"/>
+
+<ab>After<note type="foot">After: A <hi rend="italic">in display script</hi></note><note type="marginal" place="margin_left">For restraint of
+playes.</note> o<ex>u</ex>r very hartie co<ex>m</ex>mendations to yo<ex>u</ex>r
+L<ex>ordship</ex> Whearas certein infourmation is given that very great
+multitudes of all sorts of people do daylie frequent &amp; resort to
+co<ex>m</ex>mon playes lately again set vp in &amp; about London. whearby it is
+vpon good cause feared that the dangerous infection of the plague, by
+Gods great mercy and goodnes well slaked, may again very dangerously
+encrease and break foorth to the great losse and preiudice of hir
+Ma<ex>ies</ex>t<ex>es</ex> Subiects in g<ex>ene</ex>rall &amp; especially to those of that
+Citie of whose safetie &amp; well doing hir Highnes hath alwayes had an
+especiall regard as by the last ‸<add place="above">years</add> experience by lyke
+occasions &amp; resort to playes it soddainly encreased from a very little
+number to that greatnes of mortallitie w<ex>hi</ex>ch ensued. Wee thearfore
+thought it very expedient to require yo<ex>u</ex>r L<ex>ordship</ex>
+foorthw<ex>i</ex>th to take strait order that thear bee no more publique
+playes or enterludes exercised by any Companie whatsoever w<ex>i</ex>thin
+the compas of five miles distance from London till vpon better
+lykelyhood and assurance of health farther direction may bee given from
+vs to the contrary. So wee bid yo<ex>u</ex>r L<ex>ordship</ex> very hartily
+farewell. ffrom the Court at Hampton.<note type="foot">Hampton: <hi rend="italic">in a more formal
+script</hi></note> the 3. of February. 1593.</ab>
+
+<ab><hi rend="right">Yo<ex>u</ex>r L<ex>ordships</ex> very loving friend.</hi></ab>
+
+<table><row><cell>Io<ex>hn</ex> Cant<ex>uar</ex><note type="foot">Io<ex>hn</ex> Cant<ex>uar</ex>: <hi rend="italic">John Whitgift
+(1530 or 1531?–1604), archbishop of Canterbury,
+1583–1604</hi></note></cell><cell>Io<ex>hn</ex> Puckering.<note type="foot">Io<ex>hn</ex> Puckering:
+<hi rend="italic">Sir John Puckering (1543 or 1544–96), lord keeper of the Seal,
+1592–6</hi></note></cell><cell>C<ex>harles</ex> Howard<note type="foot">C<ex>harles</ex> Howard:
+<hi rend="italic">Charles Howard (1536–1624), 2nd Baron Howard of Effingham and 10th
+earl of Nottingham, lord admiral, 1585–1618/19</hi></note></cell></row>
+<row><cell>Th<ex>omas</ex> Buckhurst.<note type="foot">Th<ex>omas</ex> Buckhurst: <hi rend="italic">Thomas
+Sackville (c 1536–1608), 1st Baron Buckhurst</hi></note></cell><cell>R<ex>obert</ex>
+Cecyll.<note type="foot"> R<ex>obert</ex> Cecyll: <hi rend="italic">Sir Robert Cecil
+(1563–1612)</hi></note></cell><cell>I<ex>ohn</ex> Fortescue<note type="foot">I<ex>ohn</ex> Fortescue:
+<hi rend="italic">Sir John Fortescue (1533–1607), chancellor of the Exchequer,
+1589–1603</hi></note><note type="foot">Io<ex>hn</ex> Cant<ex>uar</ex> … Fortesue: <hi rend="italic">names of
+signatories in a more formal script</hi></note></cell></row></table>
+
+<ab><hi rend="right">To o<ex>u</ex>r very good L<ex>ord</ex> Mr Alderman Buckle</hi></ab>
+
+<ab><hi rend="right">L<ex>ord</ex> Maior of the Citie of London.</hi></ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+The privy council here revives the restraint of plays for fear of
+plague. Henslowe's diary shows that performances at the Rose had
+resumed, with Sussex's men in residence by 27 December 1593, but there
+was a break between 6 February, shortly after this order, until the
+queen's men in company with Sussex's men began another run on 1 April
+(DC: MS VII, ff 8v–9, see the <title>Henslowe-Alleyn Digitisation
+Project</title><!-- #CB to add link to http://www.henslowe-
+alleyn.org.uk/images/MSS-7/008v.html, http://www.henslowe-
+alleyn.org.uk/images/MSS-7/009r.html -->).
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm93277208">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1595">1595</date> <seg ana="taxon:RSLSPC">RSLSPC</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm93277208-transcription">
+<div><head>ff 52v–3 <supplied>(13 September)</supplied></head>
+<pb type="folio"/>
+
+<ab>Our<note type="foot">Our: O <hi rend="italic">in display script</hi></note> humble duty remembred to
+yo<ex>u</ex>r good L<ex>ordships</ex> &amp; the rest: Wee<note type="marginal" place="margin_left"><handShift/>Toutching the putting
+doune of plaies at the Theater &amp; Bankside w<ex>hi</ex>ch ‸<add place="above">is</add> a great
+cause of disorder in the Citie:<handShift/></note> haue been bold heartofore to
+signify to yo<ex>u</ex>r H<ex>ighnesses</ex> the great inconvenyenc that groweth
+to this Cytie by the Common exercise of Stage Plaies, whearin wee
+pr<ex>e</ex>sumed to be the more often &amp; earnest suters to yo<ex>u</ex>r
+H<ex>ighnesses</ex> ffor the suppressing of the said Stage Plaies aswell in
+respect of the good government of this Cytie/ w<ex>hi</ex>ch wee desire to
+be such as her Highnes &amp; yo<ex>u</ex>r H<ex>ig</ex>h<ex>nesses</ex> might be pleased
+thearw<ex>i</ex>thall as for conscience sake being perswaded (vnder
+correcc<ex>i</ex>on of yo<ex>u</ex>r H<ex>ighnesses</ex> Iudgment) that neither in
+policye nor in religion they ar to be permitted in a Christian Common
+wealthe specially being of that frame &amp; making as vsually they are, &amp;
+conteyning nothing but profane fables, Lascivious matters, cozoning
+devizes, &amp; other vnseemly &amp; scurrilous behaviours, w<ex>hi</ex>ch ar so sett
+forthe; as that they move wholy to imitac<ex>i</ex>on &amp; not to the avoyding
+of those vyces w<ex>hi</ex>ch they represent w<ex>hi</ex>ch wee verely think to
+be the cheef cause aswell of many other disorders &amp; lewd demeanors
+w<ex>hi</ex>ch appeer of late in young people of all degrees, as of the late
+stirr &amp; mutinous attempt of those few apprentic<ex>es</ex> and other
+s<ex>er</ex>vant<ex>es</ex> who wee doubt not driew their infection from these &amp;
+like places Among other inconvenyenc<ex>es</ex> it is not the least that the
+refuse sort of evill disposed &amp; vngodly people about this Cytie haue
+oportunitie hearby to assemble together &amp; to make their matches for all
+their lewd &amp; vngodly practizes: being also the ordinary places for all
+maisterles men &amp; vagabond persons that haunt the high waies to meet
+together &amp; to recreate themselfes  Whearof wee begin to haue experienc
+again w<ex>i</ex>thin these few daies since it pleased her highnes to revoke
+her Comission graunted forthe to the Provost Marshall, for fear of home
+they retired themselfes for the time into other part<ex>es</ex> out of his
+p<ex>re</ex>cinct but ar now returned to <pb/> their old<note type="foot">their old: <hi rend="italic">also
+written as catchwords at the foot of f 52v</hi></note> haunt &amp; frequent the
+Plaies (as their manner is) that ar daily shewed at the Theator &amp;
+Bankside:  Whearof will follow the same inconvenienc<ex>es</ex> whearof wee
+haue had to much experienc heartofore, ffor p<ex>re</ex>venting Whearof wee
+ar humble suters to yo<ex>u</ex>r good L<ex>ordships</ex> &amp; the rest to direct
+yo<ex>u</ex>r l<ex>ett</ex>res to the Iustic<ex>es</ex> of peac of Surrey &amp;
+Midd<ex>lesex</ex> for the p<ex>re</ex>sent stay &amp; finall suppressing of the said
+Plaies aswell at the Theator &amp; Bankside as in all other plac<ex>es</ex>
+about the Cytie Whearby wee doubt not but the oportunytie &amp; very cause
+of so great disorders being taken away wee shalbe able to keepe the
+people of this Cytie in such good order &amp; due obedienc as that her
+highness &amp; yo<ex>u</ex>r H<ex>ighnesses</ex> shalbe well pleased &amp; content
+thearw<ex>i</ex>thall And so most humbly wee take o<ex>u</ex>r Leaue<note type="foot">Leaue:
+<hi rend="italic">final</hi> e <hi rend="italic">written over another letter</hi></note>. ffrom London
+the xiij<hi rend="superscript">th</hi> of Septemb<ex>e</ex>r .1595. <note type="foot">1595 <hi rend="italic">underlined</hi></note></ab>
+
+<ab><hi rend="right">Yo<ex>u</ex>r H<ex>ighnesses</ex> most humble/</hi></ab>
+
+<ab><hi rend="center">To the right honourable the L<ex>ords</ex> &amp; others of her<lb/>Ma<ex>ies</ex>ties
+most honourable privy Counsell</hi></ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The lord mayor probably now had two theatres to worry about on
+Bankside, both the Rose and Francis Langley's new Swan playhouse in
+Paris Garden. The mayor had previously expressed anxiety about
+Langley's intention to erect his playhouse in a letter to Lord Burghley
+on 3 November 1594 (LMA: COL/RMD/PA/01/002, ff 33–3v). The letter will
+be included in the forthcoming Swan Playhouse collection in the REED
+series, but for a previous transcription see Chambers and Greg,
+'Remembrancia,' pp 74–6.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm92864504">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1596">1596</date> <seg ana="taxon:RSPC11">RSPC11</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm92864504-transcription">
+<div><head>p 317 <supplied>(22 July)</supplied></head>
+<pb n="317" type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>L<ex>ett</ex>res to the Iustices of Middlesex and Surrey to restrayne the
+Players from shewing or vsing anie plaies or Interludes in the places
+vsuall about the Citty of London, for that by drawing of muche people
+togeather increase of sicknes is feared./</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm96753192">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1596">1596</date> <seg ana="taxon:RSSKCS">RSSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm96753192-transcription">
+<div><head>f 237 <supplied>(10 December)</supplied></head>
+<pb n="237" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>We present Phillip Henslowe to pile bord and fill vp
+<note type="marginal" place="margin_left">Henslowe<lb/>estreted fol<ex>io</ex> <handShift/>242<handShift/></note> vj pole more or lesse of
+the maiden lane abbutting on the com<ex>m</ex>on sewer before his playhowse
+by Candlemas next vpon paine of eu<ex>er</ex>y pole then vndon<note type="marginal" place="margin_right"><handShift/>not
+done<handShift/></note></cell><cell rend="right">x s./</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+Henslowe was fined, not on f 242 as noted, but on f 241v; 242 is
+the first folio of entries for the court of 8 April 1597.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm95040408">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1597">1597</date> <seg ana="taxon:RSLBPC">RSLBPC</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm95040408-transcription">
+<div><head>ff 85–5v <supplied>(28 July)</supplied></head>
+<pb type="folio"/>
+
+<gap reason="omitted"/>
+
+<ab>O<ex>u</ex>r<note type="foot">O<ex>u</ex>r: O <hi rend="italic">in display script</hi></note><note type="marginal" place="margin_left"><handShift/>To the Lords
+against Stages playes./<handShift/></note> humble dutyes remembred to yo<ex>u</ex>r good
+L<ex>ordships</ex> &amp; the rest. Wee haue signifyed to yo<ex>u</ex>r
+H<ex>ig</ex>h<ex>nesses</ex> many tymes heartofore the great inconvenience
+w<ex>hi</ex>ch wee fynd to grow by the Com<ex>m</ex>on exercise of Stage Playes.
+Wee p<ex>re</ex>sumed to doo aswell in respect of the dutie wee beare
+toward<ex>es</ex> ‸<add place="above">her</add> highnes for the good gou<ex>er</ex>ment of this her
+Citie, as for conscience sake, being perswaded (vnder correction of
+yo<ex>u</ex>r H<ex>ighnesses</ex> iudgment) that neither in politie nor in
+religion they are to be suffered in a Christian Co<ex>m</ex>mon wealth,
+specially beinge of that frame &amp; matter as vsually they are, conteining
+nothinge but p<ex>ro</ex>phane fables, lascivious matters, cozeinge devises,
+&amp; scurrilus beehavio<ex>u</ex>r, w<ex>hi</ex>ch are so set forth as that they
+move wholie to imitation &amp; not totheauoydinge of those fault<ex>es</ex> &amp;
+vices w<ex>hi</ex>ch they rep<ex>re</ex>sent. Amonge other inconveniences it is
+not the least y<ex>a</ex>t that they give opportunity to the refuze sort of
+evill disposed &amp; vngodly people that are w<ex>i</ex>thin and abowte this
+Cytie to assemble themselves &amp; to make their matches for all theire
+lewd and vngodly practices; beinge as heartofore wee haue fownd by
+thexami<ex>n</ex>at<ex>i</ex>on of divers apprentice<ex>s</ex> &amp; other seruant<ex>es</ex>
+whoe have confessed vnto vs that the saide Staige playes were the very
+places of theire Randevous appoynted by them to meete w<ex>i</ex>th such
+otheir as wear to ioigne w<ex>i</ex>th them in theire designes &amp; mutinus
+attempt<ex>es</ex>, beeinge allso the ordinarye places for maisterles men to
+come together &amp; to recreate themselves. ffor avoydinge wheareof wee are
+nowe againe most humble &amp; earnest suito<ex>u</ex>rs to yo<ex>u</ex>r ho<ex>no</ex>r to
+dirrect yo<ex>u</ex>r l<ex>ett</ex>res aswell to o<ex>u</ex>r selves as to the
+Iustices of peace of Surrey &amp; Midlesex for the pr<ex>e</ex>sent staie &amp;
+fynall suppressinge of the saide Stage playes, aswell at the Theatre
+Curten and banckside as in all other places in and abowt the Citie,
+Wheareby wee doubt not but thopportunitie &amp; the very cause of many
+disorders beinge taken away, wee shalbee more able to keepe the worse
+sort of such evell &amp; disordred people in better order then heartofore
+wee haue been. And so most humbly wee take o<ex>u</ex>r leaves ffrom London
+the xxviij<hi rend="superscript">th</hi> of .Iulie.1597.</ab>
+
+<ab><hi rend="right">Yo<ex>u</ex>r H<ex>ighnesses</ex> most humble<pb/></hi></ab>
+
+<ab>They<note type="marginal" place="margin_left"><handShift/>The inconueniencest that grow by Stage playes abowt the<lb/>Citie
+of London./<handShift/></note> ar a speaciall cause of corrupting their Youth
+conteninge nothinge but vnchast matters lascivious devices, shiftes of
+Coozenage, &amp; other lewd &amp; vngodly practizes, beinge so as that they
+impresse the very qualitie &amp; corruption of manners w<ex>hi</ex>ch they
+rep<ex>re</ex>sent Contrary<note type="marginal" place="margin_left">1</note> to the rules &amp; art p<ex>re</ex>scribed for the
+makinge of Comedies eaven amonge the Heathen, who vsed them seldom &amp; at
+certen sett tymes, and not all the year longe as o<ex>u</ex>r manner is.
+Whearby such as frequent them beinge of the base &amp; refuze sort of
+people or such young gentlemen as haue small regard of credit or
+conscience, drawe the same into imitac<ex>i</ex>on and not to the avoydinge
+the like vices w<ex>hi</ex>ch they rep<ex>re</ex>sent./</ab>
+
+<ab>They ar they ordinary places for vagarant persons, Maisterles men,
+thieves, horse stealers, whoremongers, Coozeners, Conycatchers,
+contrivers of treason and other<note type="marginal" place="margin_left">2</note> idole and daungerous persons to
+meet together &amp; to make theire matches to the great displeasure of
+Almightie God &amp; the hurt &amp; annoyance of her Ma<ex>ies</ex>t<ex>es</ex> people,
+w<ex>hi</ex>ch cannot be p<ex>re</ex>vented nor discovered by the Gouerno<ex>u</ex>rs
+of the Citie for that they are owt of the Cities iuridiction./</ab>
+
+<ab>They mayntaine idlenes in such persons as haue no vocation &amp; draw
+apprentic<ex>es</ex> and<note type="marginal" place="margin_left">3</note> other seruant<ex>es</ex> from theire ordinary
+workes and all sort<ex>es</ex> of people from the resort vnto sermons and
+other Christian exercies to the great hinderance of traides &amp;
+p<ex>ro</ex>phanation of religion established by her highnes w<ex>i</ex>thin this
+Realm.</ab>
+
+<ab>In the time of sicknes it is fownd by experience, that many hauinge
+sores and yet not<note type="marginal" place="margin_left">4</note> hart sicke take occasion hearby to walk abroad
+&amp; to recreat themselves by heareinge aplay<note type="foot">aplay: <hi rend="italic">for</hi> a
+play</note>. Whearby others ar infected, and them selves also many things
+miscarry./</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm91627064">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1597">1597</date> <seg ana="taxon:RSPCL7">RSPCL7</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm91627064-transcription">
+<div><head>p 327 <supplied>(28 July)</supplied></head>
+<pb n="327" type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>A<note type="marginal" place="margin_left">Signed by the<lb/>L<ex>ord</ex> Keeper<lb/>L<ex>ord</ex> Treasurer<lb/>L<ex>ord</ex>
+Admirall<lb/>L<ex>ord</ex> Chamberlen<lb/>L<ex>ord</ex> North<lb/>L<ex>ord</ex> Buckhurst<lb/>Mr
+Comptroller<lb/>Mr Secretary</note> L<ex>ett</ex>re to Robert Wrothe, W<ex>illia</ex>m
+ffleetwood, Iohn Barne, Thomas ffowler and Richard Skevington,
+Esq<ex>ui</ex>re and the rest of the Iustices of Midd<ex>lesex</ex> nerest to
+London. Her Ma<ex>ies</ex>tie being informed that there are verie greate
+disorders Comitted in the Com<ex>m</ex>on play hous<ex>es</ex> both by lewd
+matters that are handled on the Stages and by resorte and Confluence of
+bad people, hathe giuen direction that not onlie no plaies shalbe vsed
+w<ex>i</ex>thin London or about the Citty or in any publique place during
+this tyme of Som<ex>m</ex>er, But that also those Play houses that are
+erected and built only for suche purpos<ex>es</ex> shalbe plucked downe
+namelie the Curtayne and the Theatre nere to Shorditch or any other
+w<ex>i</ex>thin that County. Theis are therfore in her Ma<ex>ies</ex>t<ex>es</ex> name
+to Chardge and Com<ex>m</ex>aund you that you take present order there be no
+more plaies vsed in any publique place w<ex>i</ex>thin three myles of the
+Citty vntill Alhalloutide next And likewyse that you do send for the
+owner of the Curtayne, Theatre or anie other Com<ex>m</ex>on playhouse, and
+Inioyne them by virtue hereof forthw<ex>i</ex>th to plucke downe quite the
+Stages, Gallories and Roomes that are made for people to stand in and
+so to deface the same as they maie not be ymploied agayne to suche vse,
+w<ex>hi</ex>ch yf they shall not speedely p<ex>er</ex>forme you shall aduertyse
+vs that order maie be taken to see the same don according to her
+ma<ex>ies</ex>t<ex>es</ex> pleasure and Com<ex>m</ex>aundm<ex>en</ex>t. And hereof praying
+you not to faile me &amp;c./</ab>
+
+<ab>The like to Mr. Bowier, Will<ex>ia</ex>m Gardyner, and Bartholomew Scott,
+Esq<ex>ui</ex>r<ex>es</ex> and the rest of the Iustices of Surry; Requiring them
+to take the like order for the Playhouses on the Banckside, in
+Southwarke, or elswhere in the s<ex>ai</ex>d County w<ex>i</ex>thin iij miles of
+London.</ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+This order was never carried out and may not have been related to
+the performance of <title>The Isle of Dogs</title> during the same
+summer as some have assumed: see William Ingram, 'The Closing of the
+Theaters in 1597: A Dissenting View,' <title>Modern Philology</title>
+69.2 (November 1971), 105–15. Glynne Wickham, while subscribing to the
+view that the order should be seen in the context of the <title>Isle of
+Dogs</title> production, has pointed out that the intention of the
+order was essentially a restraint of public performances in London for
+three months only rather than outright suppression of all theatres. In
+fact, playing resumed at the Curtain and the Rose (but not the Swan) in
+October and November 1597. As he notes, the chamberlain's and admiral's
+men were preparing for performances at Court during the Christmas
+season and both enjoyed the patronage of members of the privy council,
+so rehearsing for a royal audience would have facilitated their return
+to those two public stages in the autumn. See further 'The Privy
+Council Order of 1597 for the Destruction of all London's Theatres,'
+<title>The Elizabethan Theatre: Papers given at the International
+Conference on Elizabethan Theatre held at the University of Waterloo,
+Ontario, in July 1968</title>, David Galloway (ed) (Toronto, 1969),
+21–44.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm96739160">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1597">1596/7</date> <seg ana="taxon:RSSKCS">RSSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm96739160-transcription">
+<div><head>f 239 <supplied>(4 March)</supplied></head>
+<pb n="239" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>Henslowe</cell><cell>We present Phillip Henslowe to pile bord and to
+fill vp vj pole more or lesse of the wharf along Maiden Lane lying
+against his playhowse<note type="marginal" place="margin_left"><handShift/>estreted fol<ex>io</ex> 258<handShift/></note> by the
+iiij<hi rend="superscript">th</hi> daie of Aprill next vpon paine of eu<ex>er</ex>y pole then
+vndon<note type="marginal" place="margin_right"><handShift/>not don<handShift/></note></cell><cell rend="right">xiij s. iiij d./</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+<div><head>f 241v <supplied>(4 March)</supplied></head>
+<pb n="241v" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>Of Phillip Henslowe for that he had daie to pile bord and fill
+vp Sixe pole more or lesse of the maiden lane abbutting on the
+com<ex>m</ex>on sewer before his playhowse w<ex>hi</ex>ch shold have bin don by
+Candlemas last vpon paine of eu<ex>er</ex>y pole then vndon x s. and was not
+don fol<ex>io</ex> 237</cell><cell rend="right">iij li./</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+Henslowe was fined, not on f 258 as noted, but on f 257v. 
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm96718440">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1597">1597</date> <seg ana="taxon:RSSKCS">RSSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm96718440-transcription">
+<div><head>f 247 <supplied>(8 April)</supplied></head>
+<pb n="247" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>Henslowe</cell><cell>It is ordered at this courte that the estrete
+for Phillip Henslowe shall cease from collecting vntill the next
+courte, that the courte maie be better advised concerning the
+same./</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+<div><head>f 249v <supplied>(1 July)</supplied></head>
+<pb n="249v" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>We present Phillip Henslowe to pile bord and to fill vp vj
+pole more<note type="marginal" place="margin_left">Henslowe</note> or lesse of the wharf a longe the maiden laine
+lyvinge againste his playhowse by micheallmas next vpon paine of
+eu<ex>er</ex>ie pole then vndone<note type="marginal" place="margin_right"><handShift/>done<handShift/></note> </cell><cell rend="right">xv s./</cell></row></table>
+</div>
+<div><head>f 257v <supplied>(29 July)</supplied></head>
+<pb n="257v" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>Of Phillipe Henslowe for that he had daie to pile bord and to
+fill vp vj pole more or lesse of the wharf a long maiden lane lyinge
+againste his playhowse by the iiij<hi rend="superscript">th</hi> daie of Aprill last vpon
+payne of eu<ex>er</ex>y pole then vndon xiij s. iiij d. and did not
+fol<ex>io</ex> <handShift/>223<handShift/></cell><cell rend="right">iiij li.</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The previous entry can be found on f 239, not f 223.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm96311064">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1598">1597/8</date> <seg ana="taxon:RSLPCJ">RSLPCJ</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm96311064-transcription">
+<div><head>p 181 <supplied>(19 February) (Whitehall)</supplied></head>
+<pb n="181" type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note> l<ex>ett</ex>re to the M<ex>aste</ex>r of the
+Revell<ex>es</ex><note type="foot">M<ex>aste</ex>r of the Revell<ex>es</ex>: <hi rend="italic">Edmund Tilney,
+master of the Revels, 1579–1610</hi></note> and Iustices of Peace <del>and</del> of
+Middlesex &amp; Surrey. Whereas licence hath bin graunted vnto two
+Companies of Stage Players retayned vnto vs the L<ex>ord</ex>
+Admyral<note type="foot">L<ex>ord</ex> Admyral: <hi rend="italic">Charles Howard, 10th earl of Nottingam
+and lord admiral 1585–1618/19</hi></note> and L<ex>ord</ex> Chamberlain
+<note type="foot">L<ex>ord</ex> Chamberlain: <ex>George Carey, 2nd Baron Hunsdon and lord
+chamberlain of the Household, 1597–1603</ex></note>, to vse and practise Stage
+Playes, whereby they might be the better enhabled and prepared to shew
+such plaies before her Ma<ex>ies</ex>tie as they shalbe required at tymes
+meete and accustomed, to w<ex>hi</ex>ch ende they haue bin Cheefelie
+licensed and tollerated as aforesaid: And whereas there is also a third
+Company who of late (as wee are informed) haue by waie of intrusion
+vsed likewise to play<damage><gap unit="chars" extent="1"/></damage>, having neither prepared any plaie for her
+Ma<ex>ies</ex>tie, nor are bound to yow, the Masters of the Revell<ex>es</ex>,
+for perfourming such orders as haue bin prescribed, and are enioyned to
+be obserued by the other two Companies before menc<ex>i</ex>oned; Wee haue
+therefore thought good to require yow, vpon receipt heereof to take
+order that the aforesaid third Company may be suppressed, and none
+suffered heere after to plaie; but those two formerlie named belonging
+to vs the L<ex>ord</ex> Admyrall and L<ex>ord</ex> Chamberlaine, vnles yow shall
+receaue other direcc<ex>i</ex>on from vs. And so &amp;c./</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The third company that had drawn the ire of the privy council is
+not identified here but this letter provides evidence that attempts to
+limit the number of companies and playhouses in the London area
+continued to be unsuccessful. The lord admiral's company remained based
+at the Rose until 1600 when the Fortune playhouse opened in Clerkenwell
+north of the city wall.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm96581496">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1598">1598</date> <seg ana="taxon:RSSSVM">RSSSVM</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm96581496-transcription">
+<div><head>p 323 <supplied>(20 April)</supplied></head>
+<pb n="323" type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>Item<note type="foot">Item: <hi rend="italic">in display script</hi></note> it is Ordered that a viewe
+shalbe made by the Churchwardens howe manye newe tenem<ex>en</ex>t<ex>es</ex> mr
+Langlye hath builded since the Order sett downe for his Tythes And that
+they shall speake to mr Langlye &amp; mr Henslowe &amp; Iacob Meade for monie
+for the pore, in Regarde of theire plaies/</ab>
+
+<gap reason="omitted"/>
+</div>
+<div><head>p 324 <supplied>(1 May)</supplied></head>
+<pb n="324" type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>Item<note type="foot">Item: <hi rend="italic">in display script</hi></note> it is ordered that mr
+Langlyes newe building<ex>es</ex> shalbe vyewed accordinge to an order the
+last Vestrey And that he, mr Henslowe &amp; Iacob Meade shalbe mooved for
+monie for the pore in regarde of theire playehouses/</ab>
+
+<ab>..</ab>
+</div>
+<div><head>p 325 <supplied>(19 July)</supplied></head>
+<pb n="325" type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>Inprimis<note type="foot">Inprimis: <hi rend="italic">in display script</hi></note> it was ordered at
+this vestrye that a petic<ex>i</ex>on shalbe made to the bodye of the
+Councell concerninge the playehouses in this p<ex>ar</ex>yshe wherein the
+enormyties shalbe shewed that comes therebye to the p<ex>ar</ex>yshe And
+that in respecte thereof they maye be dismissed &amp; putt downe from
+playeinge and that iiij or ij of the Churchwardens, mr Howse<note type="foot">mr
+Howse: <hi rend="italic">Thomas Howse, auditor, 1598</hi></note>, mr Garlonde<note type="foot">mr
+Garlonde: <hi rend="italic">Thomas Garlonde (?), churchwarden, 1597</hi></note>, mr Iohn
+Payne<note type="foot">mr Iohn Payne: <hi rend="italic">auditor, 1597</hi></note>, mr Humble<note type="foot">mr Humble:
+<hi rend="italic">auditor, 1597</hi></note>, or ij of them &amp; mr Russell<note type="foot">mr Russell:
+<hi rend="italic">Oliver Russell (?), churchwarden, 1598</hi></note> &amp; mr Ironmonger<note type="foot">mr
+Ironmonger: <hi rend="italic">Thomas Ironmonger, surveyor of church lands,
+1598</hi></note> or one of them shall p<ex>re</ex>sente the cause w<ex>i</ex>th a
+Collector of the Borowghside &amp; an other of the Bankside/</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+In 1589 Francis Langley had acquired the lordship of the manor of
+Paris Garden, west of Bankside in the parish of St Saviour, Southwark.
+By 1595 he had opened a second theatre there, the Swan, which must have
+increased the traffic of playgoers across the Thames to the area (for
+further details and illustrations, see
+https://reed.library.utoronto.ca/content/swan-theatre). Jacob Meade
+(1557–1624) was a waterman, resident in the Clink liberty and
+Henslowe's partner in the later Hope/Bear Garden enterprise. It seems
+possible from this entry in the vestry minutes that he may have had an
+association with Henslowe for the Rose as well as the Bear Garden by
+1598, around the time when he was appointed keeper of the Royal Game of
+Bears, Bulls and Mastiff Dogs (see further Warner,
+<title>Catalogue</title>, p 234). Meade first appears in 1597 as a
+resident of Rose Alley in the Clink in the St Saviour Token Books<!-- CB
+to insert link to http://tokenbooks.folger.edu/search/snapshot.php?book
+number=246&amp;entrynumber=31906 -->. The playhouses concerned here and
+below are Langley's Swan in Paris Garden manor and Henslowe's Rose in
+the Clink liberty, both within the parish boundaries of St
+Saviour's.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm90487944">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1599">1598/9</date> <seg ana="taxon:RSEMPP">RSEMPP</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm90487944-transcription">
+<div><head>pp 300–3 <supplied>(10 March)</supplied></head><!-- for EG -->
+<pb type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>"The booke of the Inventary of the goods of my Lord Admeralles men,
+tacken the 10 of Marche in the yeare 1598.</ab>
+
+<ab><hi rend="center">Gone and loste.</hi></ab>
+
+<ab>Item, j orenge taney satten dublet, layd thycke with gowld lace.</ab>
+
+<ab>Item, j blew tafetie sewt.</ab>
+
+<ab>Item, j payr of carnatyon satten Venesyons, layd with gold lace.</ab>
+
+<ab>Item, j longe-shanckes<note type="foot">longe-shanckes: <hi rend="italic">Longshanks, Foakes, Diary,
+pp 30–6, 47–8; <!-- CB to link to
+https://lostplays.folger.edu/Longshanks --></hi></note> sewte.</ab>
+
+<ab>Item, j Sponnes dublet pyncket.</ab>
+
+<ab>Item, j Spanerds gyrcken.</ab>
+
+<ab>Item, Harey the fyftes<note type="foot">Harey the fyftes: <hi rend="italic">Henry V: Foakes, Diary,
+pp 33–4, 36–7, 47–8</hi></note> dublet.</ab>
+
+<ab>Item, Harey the fyftes vellet gowne.</ab>
+
+<ab>Item, j fryers gowne.</ab>
+
+<ab>Item, j lyttell dublet for boye.</ab>
+
+<ab>"The Enventary of the Clownes Sewtes and Hermetes Sewtes, with dievers
+other sewtes, as followeth, 1598, the 10 of March.</ab>
+
+<ab>Item, j senetores gowne, j hoode, and 5 senetores capes.</ab>
+
+<ab>Item, j sewtte for Nepton; Fierdrackes sewtes for Dobe.</ab>
+
+<ab>Item, iiij genesareyes gownes, and iiij torchberers sewtes.<pb/></ab>
+
+<ab>Item, iij payer of red strasers, and iij fares gowne of buckrome.</ab>
+
+<ab>Item, iiij Herwodes cottes, and iij sogers cottes, and j green gown for
+Maryan.</ab>
+
+<ab>Item, vj grene cottes for Roben Hoode<note type="foot">Roben Hoode: <hi rend="italic">1 and 2 Robin
+Hood, Foakes, Diary, pp 86-8, 101–2</hi></note>, and iiij knaves sewtes.</ab>
+
+<ab>Item, ij payer of grene hosse, and Andersones sewte. j whitt shepen
+clocke.</ab>
+
+<ab>Item, ij rosset cottes, and j black frese cotte, and iij prestes
+cottes.</ab>
+
+<ab>Item, ij whitt sheperdes cottes, and ij Danes sewtes, and j payer of
+Danes hosse.</ab>
+
+<ab>Item, The Mores lymes, and Hercolles<note type="foot">Hercolles: <hi rend="italic">Hercules, Parts 1
+and 2, Foakes, Diary, pp 28–34, 89, 93, 185</hi></note> lymes, and
+Will<ex>iam</ex> Sommers<note type="foot">Will<ex>iam</ex> Sommers: <hi rend="italic">Henry VIII's fool</hi></note>
+sewtte.</ab>
+
+<ab>Item, ij Orlates sewtes, hates and gorgetts, and vij anteckes cootes.</ab>
+
+<ab>Item, Cathemer sewte, j payer of cloth whitte stockens, iiij Turckes
+hedes.</ab>
+
+<ab>Item, iiij freyers gownes and iiij hoodes to them, and j fooles coate,
+cape, and babell, and branhowlttes bodeys<note type="foot">branhowlttes bodeys:
+<hi rend="italic">for Branholt, Foakes, Diary, p 85</hi></note>, and merlen gowne and
+cape</ab>
+
+<ab>Item, ij black saye gownes, and ij cotton gownes, and j rede saye
+gowne.</ab>
+
+<ab>Item, j mawe gowne of calleco for the quene, j carnowll<!-- for EG -->
+hatte.</ab>
+
+<ab>Item, j red sewt of cloth for pyge<note type="foot">pyge: <hi rend="italic">John Pig, admiral's boy
+player</hi></note> layed with whitt lace.</ab>
+
+<ab>Item, v payer of hosse for the clowne, and v gerkenes for them.</ab>
+
+<ab>Item, iij payer of canvas hosse for asane, ij payer of black strocers.</ab>
+
+<ab>Item, j yelow leather dublett for a clowne, j Whittcomes dublett
+poke.<pb/></ab>
+
+<ab>Item, Eves bodeyes, j pedante trusser, and iij donnes hattes.</ab>
+
+<ab>Item, j payer of yelow cotton sleves, j gostes sewt, and j gostes
+bodeyes.</ab>
+
+<ab>Item, xviij copes and hattes, Verones sonnes hosse.</ab>
+
+<ab>Item, iij trumpettes and a drum, and a trebel viall, a basse viall, a
+bandore, a sytteren, j anshente, j whitt hatte.</ab>
+
+<ab>Item, j hatte for Robin Hoode<note type="foot">Robin Hoode: <hi rend="italic">1 and 2 Robin Hood,
+Foakes, Diary, pp 86–8, 101–2</hi></note>, j hobihorse.</ab>
+
+<ab>Item, v shertes, and j serpelowes, iiij ferdingalles.</ab>
+
+<ab>Item, vj head-tiers, j fane, iiij rebatos, ij gyrketruses.</ab>
+
+<ab>Item, j longe sorde.</ab>
+
+<ab>"The Enventary of all the aparell for my Lord Admeralles men, tacken
+the 10 of marche 1598. Leaft above in the tier-house in the cheast.</ab>
+
+<ab>Item, My Lord Caffes<note type="foot">Caffes: <hi rend="italic">ie, Caiaphas</hi></note> gercken, &amp; his
+hoosse.</ab>
+
+<ab>Item, j payer of hosse for the Dowlfen.</ab>
+
+<ab>Item, j murey lether gyrcken, &amp; j white lether gercken.</ab>
+
+<ab>Item, j black lether gearken, &amp; Nabesathe sewte.</ab>
+
+<ab>Item, j payer of hosse, &amp; a gercken for Valteger<note type="foot">Valteger:
+<hi rend="italic">Vortigern, Foakes, Diary, pp 49, 55–7, 184; <!-- CB to link to
+https://lostplays.folger.edu/Vortigern --></hi></note>.</ab>
+
+<ab>Item, ij leather anteckes cottes with basses, for Fayeton <note type="foot">Fayeton:
+<hi rend="italic">Phaethon, Foakes, Diary, pp 86, 137–8; <!-- CB to link to
+https://lostplays.folger.edu/Phaeton --></hi></note>.</ab>
+
+<ab>Item, j payer of bodeyes for Alles Pearce<note type="foot">Alles Pearce: <hi rend="italic">Alice
+Pierce, Foakes, Diary, pp 73–4, 85; <!-- CB to link to
+https://lostplays.folger.edu/Alice_Pierce --></hi></note>.</ab>
+
+<ab>"The Enventary tacken of all the properties for my Lord Admeralles men,
+the 10 of Marche 1598.</ab>
+
+<ab>Item, j rocke, j cage, j tombe, j Helle mought.</ab>
+
+<ab>Item, j tome of Guido, j tome of Dido<note type="foot">Dido: <hi rend="italic">Dido and Aeneas,
+Foakes, Diary, p 86; <!-- CB to link to
+https://lostplays.folger.edu/Dido --></hi></note> j bedsteade.</ab>
+
+<ab>Item, viij lances, j payer of stayers for Fayeton<note type="foot">Fayeton:
+<hi rend="italic">Phaethon, Foakes, Diary, pp 86, 137–8; <!-- CB to link to
+https://lostplays.folger.edu/Phaeton --></hi></note>.</ab>
+
+<ab>Item, ij stepells, &amp; j chyme of belles, &amp; j beacon.</ab>
+
+<ab>Item, j hecfor for the playe of Faeton<note type="foot">Faeton: <hi rend="italic">Phaethon, Foakes,
+Diary, pp 86, 137–8; <!-- CB to link to
+https://lostplays.folger.edu/Phaeton --></hi></note>, the limes dead.</ab>
+
+<ab>Item, j globe, &amp; j golden scepter; iij clobes.</ab>
+
+<ab>Item, ij marchepanes, &amp; the sittie of Rome.</ab>
+
+<ab>Item, j gowlden flece; ij rackets; j baye tree.</ab>
+
+<ab>Item, j wooden hatchett; j lether hatchete.<pb/></ab>
+
+<ab>Item, j wooden canepie; owld Mahemetes head.</ab>
+
+<ab>Item, j lyone skin; j beares skyne; &amp; Faetones lymes, &amp; Faeton
+<note type="foot">Faeton: <hi rend="italic">Phaethon, Foakes, Diary, pp 86, 137–8; <!-- CB to link to
+https://lostplays.folger.edu/Phaeton --></hi></note>, charete; &amp; Argosse
+heade.</ab>
+
+<ab>Item, Nepun<note type="foot">Nepun: <hi rend="italic">for</hi> Neptune</note> forcke &amp; garland.</ab>
+
+<ab>Item, j crosers stafe; Kentes woden leage.</ab>
+
+<ab>Item, Ierosses<note type="foot">Ierosses: <hi rend="italic">ie, Iris'</hi></note> head, &amp; raynbowe; j
+littell alter.</ab>
+
+<ab>Item, viij viserdes; Tamberlyne<note type="foot">Tamberlyne: <hi rend="italic">Tamburlaine, Parts 1
+and 2, Foakes, Diary, pp 23–9, 31, 33</hi></note> brydell; j wooden matook.</ab>
+
+<ab>Item, Cupedes bowe, &amp; quiver; the clothe of the Sone &amp; Mone.</ab>
+
+<ab>Item, j bores heade &amp; Serberosse iij heades.</ab>
+
+<ab>Item, j Cadeseus; ij mose banckes, &amp; j snake.</ab>
+
+<ab>Item, ij fanes of feathers; Belendon<note type="foot">Belendon: <hi rend="italic">Bellendon, Foakes,
+Diary, pp 21–5, 48, 57–9; <!-- CB to link to
+https://lostplays.folger.edu/Bellendon --></hi></note> stable; j tree of
+gowlden apelles; Tantelouse tre; jx eyorn targates.</ab>
+
+<ab>Item, j copper targate, &amp; xvij foyles.</ab>
+
+<ab>Item, iiij wooden targates; j greve armer.</ab>
+
+<ab>Item, j syne for Mother Readcap<note type="foot">Mother Readcap: <hi rend="italic">Mother Redcap,
+Foakes, Diary, pp 74, 85–6; <!-- CB to link to
+https://lostplays.folger.edu/Mother_Redcap --></hi></note>; j buckler.</ab>
+
+<ab>Item, Mercures wings; Tasso<note type="foot">Tasso: <hi rend="italic">Tasso's Melancholy, Foakes,
+Diary, pp 23–8, 187; <!-- CB to link to
+https://lostplays.folger.edu/Tasso%27s_Melancholy --></hi></note> picter; j
+helmet with a dragon; j shelde, with iij lyones; j elme bowle.</ab>
+
+<ab>Item, j chayne of dragons; j gylte speare.</ab>
+
+<ab>Item, ij coffenes; j bulles head; and j vylter.</ab>
+
+<ab>Item, iij tymbrells; j dragon in fostes<note type="foot">fostes: <hi rend="italic">Doctor Faustus,
+Foakes, Diary, pp 24–8, 30–1, 34, 36, 47, 54–5, 60, 206</hi></note>.</ab>
+
+<ab>Item, j lyone; ij lyon heades; j great horse with his leages; j sack-
+bute.</ab>
+
+<ab>Item, j whell &amp; frame in the Sege of London<note type="foot">Sege of London: <hi rend="italic">The
+Siege of London, Foakes, Diary, pp 26–8, 30–1, 34, 47</hi></note>.</ab>
+
+<ab>Item, j paire of rowghte gloves.</ab>
+
+<ab>Item, j poopes miter<note type="foot">poopes miter: <hi rend="italic">for Pope Joan, Foakes, Diary,
+p 16; <!-- CB to link to
+https://lostplays.folger.edu/Pope_Joan --></hi></note>.</ab>
+
+<ab>Item, iij Imperial crownes; j playne crowne.</ab>
+
+<ab>Item, j gostes crown; j crown with a sone.</ab>
+
+<ab>Item, j frame for the heading in Black Jone<note type="foot">Black Jone: <hi rend="italic">Black
+Joan, otherwise unknown; <!-- CB to link to
+https://lostplays.folger.edu/Black_Joan --></hi></note>.</ab>
+
+<ab>Item, j black dogge.</ab>
+
+<ab>Item, j cauderm for the Jewe<note type="foot">Jewe: <hi rend="italic">The Jew of Malta, Foakes,
+Diary, pp 16–26, 34, 36–7, 47, 170</hi></note>.</ab>
+</div>
+<div><head>pp 304–6 <supplied>(13 March)</supplied></head>
+<pb type="page"/>
+
+<ab>"The Enventorey of all the aparell of the Lord Admeralles men, taken
+the 13th of Marche 1598, as followeth:</ab>
+
+<ab>Item, j payer of whitte saten Venesons cut with coper lace.</ab>
+
+<ab>Item, j ash coller satten doublett, lacyd with gold lace.</ab>
+
+<ab>Item, j peche coller satten doublett.</ab>
+
+<ab>Item, j owld whitte satten dublette,</ab>
+
+<ab>Item, j bleu tafitie sewtte.</ab>
+
+<ab>Item, j Mores cotte.</ab>
+
+<ab>Item, Pyges<note type="foot">Pyges: <hi rend="italic">John Pig, admiral's boy player</hi></note> damask
+gowne.</ab>
+
+<ab>Item, j black satten cotte.</ab>
+
+<ab>Item, j harcoller tafitie sewte of pygges<note type="foot">pygges: <hi rend="italic">John Pig,
+admiral's boy player</hi></note>.</ab>
+
+<ab>Item, j white tafitie sewte of pygges<note type="foot">pygges: <hi rend="italic">John Pig, admiral's
+boy player</hi></note>.</ab>
+
+<ab>Item, Vartemar sewtte.</ab>
+
+<ab>Item, j great pechcoller dublet, with sylver lace.</ab>
+
+<ab>Item, j white satten dublet pynckte.</ab>
+
+<ab>Item, j owld white satten dublet pynckte.</ab>
+
+<ab>Item, j payer of satten Venesyan satten ymbradered.</ab>
+
+<ab>Item, j payer of French hosse, cloth of gowld.</ab>
+
+<ab>Item, j payer of cloth of gowld hosse with sylver paines.</ab>
+
+<ab>Item, j payer of cloth of silver hosse with satten and sylver panes.</ab>
+
+<ab>Item, Tamberlynes<note type="foot">Tamberlynes: <hi rend="italic">Tamburlaine, Parts 1 and 2,
+Foakes, Diary, pp 23–9, 31, 33</hi></note> cotte, with coper lace.</ab>
+
+<ab>Item, j read clock with white coper lace.</ab>
+
+<ab>Item, j read clocke, with read coper lace.</ab>
+
+<ab>Item, j shorte clocke of taney satten with sleves.</ab>
+
+<ab>Item, j shorte clocke of black satten with sleves.</ab>
+
+<ab>Item, Labesyas clocke, with gowld buttenes.</ab>
+
+<ab>Item, j payer of read cloth hosse of Venesyans, with sylver lace of
+coper.</ab>
+
+<ab>Item, Valteger<note type="foot">Valteger: <hi rend="italic">Vortigern, Foakes, Diary, pp 49, 55–7,
+184; <!-- CB to link to
+https://lostplays.folger.edu/Vortigern --></hi></note> robe of rich
+tafitie.</ab>
+
+<ab>Item, Junoes cotte.</ab>
+
+<ab>Item, j hode for the wech.</ab>
+
+<ab>Item, j read stamel clocke with whitte coper lace.</ab>
+
+<ab>Item, j read stamel clocke with read coper lace.</ab>
+
+<ab>Item, j cloth clocke of russete with coper lace, called Guydoes
+clocke.</ab>
+
+<ab>Item, j short clocke of black velvet, with sleves faced with shagg.<pb/></ab>
+
+<ab>Item, j short clocke of black vellet, faced with white fore.</ab>
+
+<ab>Item, j manes gown, faced with whitte fore.</ab>
+
+<ab>Item, Dobes cotte of cloth of sylver.</ab>
+
+<ab>Item, j payer of pechecoler Venesyones uncut, with read coper lace.</ab>
+
+<ab>Item, j read scarllet clocke with sylver buttones.</ab>
+
+<ab>Item, j longe black velvet clock, layd with brod lace black.</ab>
+
+<ab>Item, j black satten sewtte.</ab>
+
+<ab>Item, j blacke velvet clocke, layd with twyst lace blacke.</ab>
+
+<ab>Item, Perowes sewt, which W<ex>illia</ex>m Sley<note type="foot">W<ex>illia</ex>m Sley:
+<hi rend="italic">William Slye,  chamberlain's man, c 1598</hi></note> were.</ab>
+
+<ab>Item, j payer of pechcoler hosse with sylver corlled panes.</ab>
+
+<ab>Item, j payer of black cloth of sylver hosse, drawne owt with tufed
+tafittie.</ab>
+
+<ab>Item, Tamberlanes<note type="foot">Tamberlanes: <hi rend="italic">Tamburlaine, Parts 1 and 2,
+Foakes, Diary, pp 23–9, 31, 33</hi></note> breches, of crymson vellvet.</ab>
+
+<ab>Item, j payer of sylk howse with panes of sylver corlled lace.</ab>
+
+<ab>Item, j Faeytone<note type="foot">Faeytone: <hi rend="italic">Phaethon, Foakes, Diary, pp 86, 137–8;
+<!-- CB to link to https://lostplays.folger.edu/Phaeton --></hi></note>
+sewte.</ab>
+
+<ab>Item, Roben Hoodes<note type="foot">Roben Hoodes: <hi rend="italic">1 and 2 Robin Hood, Foakes,
+Diary, pp 86–8, 101–2</hi></note> sewtte.</ab>
+
+<ab>Item, j payer of cloth of gowld hose with gowld corlle panes.</ab>
+
+<ab>Item, j payer of rowne hosse buffe with gowld lace.</ab>
+
+<ab>Item, j payer of mows coller Venesyans with R. brode gowld lace.</ab>
+
+<ab>Item, j flame collerde dublet pynked.</ab>
+
+<ab>Item, j blacke satten dublet, layd thyck with blacke and gowld lace.</ab>
+
+<ab>Item, j carnacyon dubled cutt, layd with gowld lace.</ab>
+
+<ab>Item, j white satten dublet, faced with read tafetie.</ab>
+
+<ab>Item, j grene gyrcken with sylver lace.</ab>
+
+<ab>Item, j black gyrcken with sylver lace.</ab>
+
+<ab>Item, j read gyrcken with sylver lace.</ab>
+
+<ab>Item, j read Spanes dublett styched.</ab>
+
+<ab>Item, j peche coller satten casse.</ab>
+
+<ab>Item, Tasoes<note type="foot">Tasoes: <hi rend="italic">Tasso's Melancholy, Foakes, Diary, pp 23–8,
+187; <!-- CB to link to
+https://lostplays.folger.edu/Tasso%27s_Melancholy --></hi></note> robe.</ab>
+
+<ab>Item, j murey robe with sleves.<pb/></ab>
+
+<ab>Item, j blewe robe with sleves.</ab>
+
+<ab>Item, j oren taney robe with sleves.</ab>
+
+<ab>Item, j pech collerd hallf robe.</ab>
+
+<ab>Item, j lane<note type="foot">lane: <hi rend="italic">for</hi> lange</note> robe with spangells.</ab>
+
+<ab>Item, j white &amp; orenge taney skarf spangled.</ab>
+
+<ab>Item, Dides<note type="foot">Dides: <hi rend="italic">Dido and Aeneas, Foakes, Diary, p 86; <!-- CB
+to link to https://lostplays.folger.edu/Dido --></hi></note> robe.</ab>
+
+<ab>Item, iij payer of basses.</ab>
+
+<ab>Item, j white tafitie sherte with gowld frenge.</ab>
+
+<ab>Item, the fryers trusse in Roben Hoode<note type="foot">Roben Hoode: <hi rend="italic">1 and 2 Robin
+Hood, Foakes, Diary, pp 86–8, 101–2</hi></note>.</ab>
+
+<ab>Item, j littell gacket for Pygge <note type="foot">Pygge: <hi rend="italic">John Pig, admiral's boy
+player</hi></note>.</ab>
+
+<ab>Item, j womanes gown of cloth of gowld.</ab>
+
+<ab>Item, j orenge taney vellet gowe<note type="foot">gowe: <hi rend="italic">for</hi> gowne</note> with
+sylver lace, for women.</ab>
+
+<ab>Item, j black velvet gowne ymbradered with gowld lace.</ab>
+
+<ab>Item, j yelowe satten gowne ymbradered with sylk &amp; gowld lace, for
+women.</ab>
+
+<ab>Item, j greve armer.</ab>
+
+<ab>Item, Harye the v.<note type="foot">Harye the v.: <hi rend="italic">Henry V, Foakes, Diary, pp 33–4,
+36–7, 47–8</hi></note> velvet gowne.</ab>
+
+<ab>Item, j payer of crymson satten Venysiones, layd with gowld lace.</ab>
+
+<ab>Item, j blew tafitie sewte, layd with sylver lace.</ab>
+
+<ab>Item, j Longeshankes<note type="foot">Longeshankes: <hi rend="italic">Longshanks, Foakes, Diary, pp
+30–6, 47–8; <!-- CB to link to
+https://lostplays.folger.edu/Longshanks --></hi></note> seute.</ab>
+
+<ab>Item, j orange coller satten dublett, layd with gowld lace.</ab>
+
+<ab>Item, Harye the v.<note type="foot">Harye the v.: <hi rend="italic">Henry V: Foakes, Diary, pp 33–4,
+36–7, 47–8</hi></note> satten dublet, layd with gowld lace.</ab>
+
+<ab>Item, j Spanes casse dublet of crymson pyncked.</ab>
+
+<ab>Item, j Spanes gearcken layd with sylver lace.</ab>
+
+<ab>Item, j wattshode tafitie dublet for a boye.</ab>
+
+<ab>Item, ij payer of basses, j whitte, j blewe, of sasnett.</ab>
+
+<ab>Item, j freyers gowne of graye.</ab>
+</div>
+<div><head>p 307 <supplied>(c 3 March)</supplied></head>
+<pb n="307" type="page"/>
+
+<ab>A Note of all suche boockes as belong to the Stocke, and such as I
+have bought since the 3d of March, 1598</ab>
+
+<ab>Blacke Jonne<note type="foot">Blacke Jonne: <hi rend="italic">Black Joan, otherwise unknown; <!-- CB
+to link to https://lostplays.folger.edu/Black_Joan --></hi></note></ab>
+
+<ab>The Umers.<note type="foot">The Umers: <hi rend="italic">The Humours, Foakes, Diary, pp
+58–60</hi></note></ab>
+
+<ab>Hardicanewtes.<note type="foot">Hardicanewtes: <hi rend="italic">Hardicanute, Foakes, Diary, p
+60</hi></note>.</ab>
+
+<ab>Borbonne.<note type="foot">Borbonne: <hi rend="italic">Bourbon, Foakes, Diary, p 60</hi></note></ab>
+
+<ab>Sturgflaterey</ab>
+
+<ab>Brunhowlle.<note type="foot">Brunhowlle: <hi rend="italic">Branholt, Foakes, Diary, p 85</hi></note></ab>
+
+<ab>Cobler quen hive.<note type="foot">Cobler quen hive: <hi rend="italic">The Cobbler of Queenhithe,
+Foakes, Diary, pp 72, 84; <!-- CB to link to
+https://lostplays.folger.edu/Cobbler_of_Queenheath,_The --></hi></note></ab>
+
+<ab>Frier Pendelton.<note type="foot">Frier Pendelton: <hi rend="italic">Friar Pendleton, Foakes, Diary,
+p 60</hi></note></ab>
+
+<ab>Alls Perce.<note type="foot">Alls Perce: <hi rend="italic">Alice Pierce, Foakes, Diary, pp 73–4, 85;
+<!-- CB to link to
+https://lostplays.folger.edu/Alice_Pierce --></hi></note>.</ab>
+
+<ab>Read Cappe.<note type="foot">Read Cappe: <hi rend="italic">Mother Redcap, Foakes, Diary, pp 74,
+85–6; <!-- CB to link to https://lostplays.folger.edu/Mother_Redcap
+ --></hi></note></ab>
+
+<ab>Roben Hode, I.<note type="foot">Roben Hode, I: <hi rend="italic">1 Robin Hood, Foakes, Diary, pp
+86–8, 101–2</hi></note></ab>
+
+<ab>Roben Hode, 2.<note type="foot">Roben Hode, 2: <hi rend="italic">2 Robin Hood, Foakes, Diary, pp
+86–8, 101–2</hi></note></ab>
+
+<ab>Phayeton.<note type="foot">Phayeton: <hi rend="italic">Phaethon, Foakes, Diary, pp 86, 137–8; <!-- CB
+to link to https://lostplays.folger.edu/Phaeton --></hi></note></ab>
+
+<ab>Treangell cockowlls.<note type="foot">Treangell cockowlls: <hi rend="italic">The Triangle (or
+Triplicity) of Cuckolds, Foakes, Diary, p 87; <!-- CB to link to
+https://
+lostplays.folger.edu/Triangle_(or_Triplicity)_of_Cuckolds_The
+ --></hi></note></ab>
+
+<ab>Goodwine.<note type="foot">Goodwine: <hi rend="italic">Earl Godwin and his Three Sons, Parts 1 and
+2, Foakes, Diary, pp 88–90, 92; <!-- CB to link to https://
+lostplays.folger.edu/Earl_Godwin_and_His_Three_Sons_Parts_1_and_2
+ --></hi></note></ab>
+
+<ab>Woman will have her will.<note type="foot">Woman will have her will: <hi rend="italic">A Woman Will
+Have Her Will, Foakes, Diary, pp 87, 89</hi></note></ab>
+
+<ab>Welchmans price.<note type="foot">Welchmans price: <hi rend="italic">The Welshman's Prize, Foakes,
+Diary, p 88; <!-- CB to link to
+https://lostplays.folger.edu/Welshman%27s_Price,_The --></hi></note></ab>
+
+<ab>King Arthur, life and death.<note type="foot">King Arthur, life and death: <hi rend="italic">King
+Arthur, Foakes, Diary, pp 89–90</hi></note></ab>
+
+<ab>I p<ex>ar</ex>t of Hercules,<note type="foot">Hercules: <hi rend="italic">Hercules, Part 1, Foakes,
+Diary, pp 28–34, 89, 93, 185</hi></note>,</ab>
+
+<ab>2 p<ex>ar</ex>te of Hercoles.<note type="foot">Hercoles: <hi rend="italic">Hercules, Part 2, Foakes,
+Diary, pp 29–34, 89, 93, 185</hi></note></ab>
+
+<ab>Pethagores.<note type="foot">Pethagores: <hi rend="italic">Pythagoras, Foakes, Diary, pp 34–7, 47–8,
+89; <!-- CB to link to
+https://lostplays.folger.edu/Pythagoras --></hi></note></ab>
+
+<ab>Focasse.<note type="foot">Focasse: <hi rend="italic">The Tragedy of Phocas, Foakes, Diary, pp 37,
+47–8, 89; <!-- CB to link to
+https://lostplays.folger.edu/Phocasse_(Focas) --></hi></note></ab>
+
+<ab>Elexsander and Lodwicke.<note type="foot">Elexsander and Lodwicke: <hi rend="italic">Alexander and
+Lodowick, Foakes, Diary, pp 51, 56–9, 89, 93, 106</hi></note>
+Blacke Battman.<note type="foot">Blacke Battman: <hi rend="italic">Black Bateman of the North,
+Foakes, Diary, pp 89–93; <!-- CB to link to https://lostplays.folger.edu
+/Black_Bateman_of_the_North,_Parts_1_and_2 --></hi></note></ab>
+
+<ab>2 p<ex>art</ex> black Battman.<note type="foot">2 p<ex>art</ex> black Battman: <hi rend="italic">Black Bateman
+of the North, The Second Part of, Foakes, Diary, pp 92–3; <!-- CB to
+link to https://lostplays.folger.edu/Black_Bateman_of_the_North,_Parts_
+1_and_2 --></hi></note></ab>
+
+<ab>2 p<ex>ar</ex>t of Goodwine.<note type="foot">Goodwine: <hi rend="italic">Earl Godwin and his Three Sons,
+Part 2, Foakes, Diary, pp 88–90, 92; <!-- CB to link to https://lostplay
+s.folger.edu/Earl_Godwin_and_His_Three_Sons,_Parts_1_and_2 --></hi></note></ab>
+
+<ab>Mad mans morris.<note type="foot">Mad mans morris: <hi rend="italic">The Madman's Morris, Foakes,
+Diary, pp 92, 94; <!-- CB to link to
+https://lostplays.folger.edu/Madman%27s_Morris,_The --></hi></note></ab>
+
+<ab>Perce of Winchester.<note type="foot">Perce of Winchester: <hi rend="italic">Piers of Winchester,
+Foakes, Diary, pp 94, 96, 98, 100; <!-- CB to link to
+https://lostplays.folger.edu/Pierce_of_Winchester --></hi></note></ab>
+
+<ab>Vayvode. <note type="foot">Vayvode: <hi rend="italic">Vayvode, Foakes, Diary, pp  97, 103; <!-- CB to
+link to https://lostplays.folger.edu/Vayvode --></hi></note></ab>
+</div>
+<div><head><supplied>(c 3 April)</supplied></head>
+<pb/>
+
+<ab>A Note of all suche goodes as I have bought for the Companey of my Lord
+Admirals men, sence the 3 of Aprell, 1598, as followeth:</ab>
+
+<table><row><cell/><cell rend="right">£</cell><cell rend="right">s.</cell><cell rend="right">d.</cell></row>
+<row><cell>Bowght a damaske casock garded with
+velvett</cell><cell rend="right">0</cell><cell rend="right">18</cell><cell rend="right">0</cell></row>
+<row><cell>Bowght a payer of paned rownd hosse of cloth whiped with sylk,
+drawne out with tafitie,<lb/>Bowght j payer of long black wollen
+stockens,</cell><cell rend="right">0</cell><cell rend="right">8</cell><cell rend="right">0</cell></row>
+<row><cell>Bowght j black satten dublett<lb/>
+Bowght j payer of rownd howsse paned of
+vellevett</cell><cell rend="right">4</cell><cell rend="right">15</cell><cell rend="right">0</cell></row>
+<row><cell>Bowght a robe for to goo invisebell<lb/>
+Bowght a gown for Nembia</cell><cell rend="right">3</cell><cell rend="right">10</cell><cell rend="right">0</cell></row>
+<row><cell>Bowght a dublett of whitt satten layd thicke
+with gowld lace, and a payer of rowne
+pandes hosse of cloth of sylver, the panes
+layd with gowld lace</cell><cell rend="right">7</cell><cell rend="right">0</cell><cell rend="right">0</cell></row>
+<row><cell>Bowght of my sonne v
+sewtes</cell><cell rend="right">20</cell><cell rend="right">0</cell><cell rend="right">0</cell></row>
+<row><cell>Bowght of my sonne iiij
+sewtes</cell><cell rend="right">17</cell><cell rend="right">0</cell><cell rend="right">0</cell></row></table>
+</div>
+</div>
+<div type="endnote">
+<p>
+Most of the plays named in the inventories appear in Henslowe's
+diary and have been noted from the Foakes edition and, where relevant,
+the <title>Lost Plays Database</title>, Roslyn L. Knutson, David
+McInnis, and Matthew Steggle (eds), https://www.lostplays.org/
+<del>accessed <!-- CB to provide date --></del>. For more details on each, see
+Wiggins, <title>British Drama</title>, vols 2–4. Very few of those
+named survive. Wiggins' titles have been followed for each in the
+textual notes.</p>
+
+<p>
+        Carson, <title>Companion</title>, pp 49–50, notes several
+puzzles presented by this document: 'Not the least of these is the
+identity of the author. The phrase "I have bought" sounds suspiciously
+like Henslowe, and if indeed he is the compiler of the list then the
+words probably mean no more than "have lent the actors to buy". The
+fact that one of the plays on the list <title>Vayvode</title>, belonged
+to Edward Alleyn in January 1599 raises the possibility that he may
+have been the "I" in question' (p 49). Carson further outlines other
+anomalies, such as omission on the list of playbooks of some plays
+known from the diary to have been staged or purchased in the same
+period. Gurr, <title>Shakespeare's Opposites</title>, p 103, favours
+Henslowe as the compiler of the list of plays owned by the company, but
+with the exclusion of those still owned by Alleyn.</p>
+
+<p>
+John Pig (Pyg), the boy actor known to have been in the admiral's men,
+1597–9, was previously with Strange's men (1593): see Gurr,
+<title>Shakespeare's Opposites</title>, pp 284–5, and Edwin Nungezer,
+<title>A Dictionary of Actors and of Other Persons Associated with the
+Public Representation of Plays in England before 1642</title> (New
+Haven and London, 1929), 283. For William Slye (d. 1608), see Chambers,
+<title>Elizabethan Stage</title>, vol 2, pp 340–1; Greg,
+<title>Dramatic Documents</title>, vol 1, p 50; Gurr,
+<title>Shakespeare Company</title>, pp 241–2; and Nungezer, <title>
+Dictionary of Actors</title>, p 333. For shorter entries on both actors
+with further bibliographical references, see David Kathman,
+<title>Biographical Index of English Drama before 1660</title>,
+http://shakespeareauthorship.com/bd/.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm96295816">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1600">1599/1600</date> <seg ana="taxon:RSSFMS">RSSFMS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm96295816-transcription">
+<div><head>f 77v <supplied>(4, 15 March)</supplied></head>
+<pb n="77v" type="folio"/>
+
+<gap reason="omitted"/>
+
+<ab type="exdent">It<ex>e</ex>m in the plai of Cox of Cullinton &amp; his 3 sonns henry peter
+and Ihon on St Mark<ex>es</ex> dai Cox him selfe shote an Arrowe thorow his
+vnkells head to haue his Land &amp; had it and the sam dai 7 yers on Mr
+Iaruis shot cox throughe the hed &amp; slue him.  and on saint markes dai a
+year after his elder sonn henry was drowned by peter &amp; Ihon in his Tan
+fate. and on St Mark<ex>es</ex> dai A yere After peter &amp; Ihon both slue them
+sellues for peter being fronted w<ex>i</ex>t<ex>h</ex> the sight of a beare vz. a
+sprite Apering to Ihon &amp; him when they sate vpon deuisio<ex>n</ex> of the
+Land<ex>es</ex> in liknes of a bere &amp; ther with peter fell out of his
+wit<ex>es</ex> and
+was lyed in a darke house &amp; beat out his braines against a post. &amp; Ihon
+stabed him self &amp; all on St mark<ex>es</ex> dai &amp; remember how <note type="foot">how: h
+<hi rend="italic">corrected over another letter</hi></note> mr hammons sonn slue him. &amp;
+when he was sleying of his father his father entreating him for mercy
+to his sonn could find no m<ex>er</ex>cy. whervpon he p<ex>ro</ex>mised that his
+sonn should bewray him selfe by laughing &amp; so he did &amp; was executed for
+yt 1600<note type="foot">1600: <hi rend="italic">for</hi> 1599</note> 4 of march at the Rose<note type="foot">Rose:
+<hi rend="italic">astrological symbol for Mars, ie, Tuesday, follows</hi></note></ab>
+
+<gap reason="omitted"/>
+
+<ab type="exdent">An Sedgwicke alias Catlyn in Aldersgate streat Right against the
+Cocke illa<ex>m</ex> vidi at S<ex>i</ex>r Ihon old castell 1600 15 of march/</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+Forman dates the first entry 4 March 1600 but by 4 March 1600/1 the
+admiral's men had moved from the Rose to the Fortune. Furthermore, the
+astrological symbol for Mars indicates that 4 March fell on a Tuesday,
+as it did in 1599/1600 but not 1600/1 (with thanks to Alan H. Nelson
+for this note and his revision of the date). Rowse, <title>Simon
+Forman</title>, p 15, dated the entry as 4 March but both Cerasano,
+'Philip Henslowe, Simon Forman,' p 158, and Lupic, 'Early
+Performances,' p 99, n 5, misread the date as 9 March.</p>
+
+<p>
+However, as Lupic points out, the entry for 15 March 1599/1600
+indicates that Cerasano (p 158) misdates Forman's attendance at the
+performance of <title>Sir John Oldcastle</title> in the following
+comment: 'On 16 October 1600, in the final performances of the Lord
+Admiral's Men at the Rose, Forman attended <title>Sir John
+Oldcastle</title>, although it is unclear whether Forman saw Part 1 or
+Part 2 of the play.' Lupic (p 99) points out that on '12 March Henslowe
+made a payment to the tailor for his work relating to the production of
+<title>The Second Part of Sir John Oldcastle</title>. Four days later
+Forman saw <title>Sir John Oldcastle</title>, and given the closeness
+of these dates the most plausible interpretation is that the play
+Forman saw was indeed the freshly mounted second part.' In any case
+Forman's primary purpose in noting the performance was to record the
+address of a woman he was interested in pursuing for other
+reasons.<!-- Carolyn to insert acute accent three times over c in
+Lupic --></p>
+
+<p>
+For more details on the lost plays of <title>Cox of Collompton</title>
+and <title>Sir John Oldcastle, Part 2</title> see Foakes,
+<title>Henslowe's Diary</title>, pp 64, 125–6, 129, 132, 213–14, 216;
+Wiggins, <title>British Drama</title>, vol 4: 1598–1602, #1215, pp
+160–1; #1236, pp 210–11,; and the <title>Lost Plays Database</title>
+(https://lostplays.folger.edu/Cox_of_Collumpton and
+https://lostplays.folger.edu/Sir_John_Oldcastle,_Part_2). Wiggins
+follows Cerasano in dating the performance of <title>Sir John
+Oldcastle</title> as Thursday, 16 October, and includes the possibility
+that the play was Part 1 rather than Part 2. 
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm91008152">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1600">1600</date> <seg ana="taxon:RSPL14">RSPL14</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm91008152-transcription">
+<div><head>p 230 <supplied>(22 June)</supplied></head>
+<pb n="230" type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>L<ex>ett</ex>res<note type="marginal" place="margin_left">22. Iune.</note> of this teno<ex>u</ex>r to the L<ex>ord</ex>
+Maio<ex>u</ex>r of London, the Iustices of the peace of the<note type="marginal" place="margin_left">L<ex>ord</ex>
+Keeper. L<ex>ord</ex> North.<lb/>L<ex>ord</ex> Tre<ex>asure</ex>r M<ex>aste</ex>r
+Secretary.<lb/>L<ex>ord</ex> Admyrall. Mr Comptroller.<lb/>S<ex>i</ex>r
+Th<ex>omas</ex>ffortescu:</note> Counties of Midlesex and Surrey. By occasion of
+some Complaintes that of late haue bin made vnto vs of the multitude of
+houses seruinge for Com<ex>m</ex>on stage playes in and aboute the Citty of
+London, and of the greate abuses and disorders growen by the ouermuch
+haunte and resorte of many licentious people vnto those houses and
+places, we haue entred into Considerac<ex>i</ex>on of some fitt course to be
+taken for redresse of thesaide disorders by suppressing dyu<ex>er</ex>s of
+those houses and by some restrainte of the imoderate vse of the plaies.
+ffor w<ex>hi</ex>ch cause wee haue sett downe c<ex>er</ex>taine orders to be
+duely henceforth obserued, and kept, a Copy whereof we sende yow
+hereinclosed and haue sent the like to the L<ex>ord</ex> Maio<ex>u</ex>r of
+London. and to the Iustic<ex>es</ex> of the peace of Middlesex. But as wee
+haue done o<ex>u</ex>r p<ex>ar</ex>tes in pr<ex>e</ex>scribinge the orders so vnlesse
+yow p<ex>er</ex>fourme yo<ex>u</ex>rs in lookinge to the due execution of them.
+we shall loose o<ex>u</ex>r labo<ex>u</ex>r, and the wante of redresse must be
+imputed vnto yow, and others vnto whome it app<ex>er</ex>teyneth. And
+therefore wee doe hereby authorize and req<ex>ui</ex>r<ex>e</ex> yow to see the
+saide orders to be putt in execuc<ex>i</ex>on, and to be Continued as yow do
+wish the Amendem<ex>en</ex>t of the aforesaide abuses; and will remoue the
+blame thereof from yo<ex>u</ex>rselues./. And so &amp;c.</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The list of names in the left marginalia accounts for those in
+attendance at the privy council meeting on 22 June 1600.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm91010728">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1600">1600</date> <seg ana="taxon:RSPO11">RSPO11</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm91010728-transcription">
+<div><head>pp 223–4 <supplied>(22 June)</supplied></head>
+<pb type="page"/>
+
+<ab><hi rend="center">Order<note type="marginal" place="margin_left">At the Courte at Greenwich.</note> of the L<ex>ords</ex> for the
+restrainte of the imoderate vse and Companye<lb/>of Playhowses and
+Players.</hi></ab>
+
+<ab>Whereas<note type="foot">Whereas: W <hi rend="italic">in display script</hi></note><note type="marginal" place="margin_left">.22. of Iune</note>
+diu<ex>er</ex>s Complaint<ex>es</ex> haue bin heretofore made vnto the L<ex>ordes</ex>
+&amp; others of her Ma<ex>ies</ex>t<ex>es</ex> priuye Counsell, of the manyfolde
+abuses and disorders that haue growen and do contynue by occasion of
+many houses erected and employed in and about the Cittie ‸<add place="above">of
+London</add> for Com<ex>m</ex>on stage playes And now verie latelie by reason
+of some Complainte exhibited by sondry p<ex>er</ex>sons againste the
+buyldinge of the like house<note type="foot">the like house: <hi rend="italic">Fortune
+playhouse</hi></note> in or near ‸<add place="above">Golding Lane</add> <del>bouglane</del>, by one
+Edward Allen a Servant of the right ho<ex>norable</ex> the L<ex>ord</ex>
+Admyrall<note type="foot">L<ex>ord</ex> Admyrall: <hi rend="italic">Charles Howard (c 1536–1624), 10th
+earl of Nottingham and lord admiral, 1585–1618/19</hi></note> the matter
+aswell in generaltie touchinge all the saide houses for stage playes
+and the vse of playinge as in p<ex>ar</ex>ticular concerninge the saide
+house now in hand to be buylte in or neare ‸<add place="above">Golding</add> <del>bougl</del> Lane,
+hath bin broughte into question and consultac<ex>i</ex>on amonge their
+L<ex>ordshi</ex>ps.  fforasmuch as it is manifestley knowen and graunted
+that the multitude of the saide houses, and the mysgouerment of them
+hath bin and is dayly occasion, of the ydle ryoutous, and dissolute
+living of great Nombers of people, that leavinge all such honest and
+painefull course of life as they should followe, doe meete and assemble
+there and of many p<ex>ar</ex>ticular abuses and disorders that doe
+therevpon ensue; And yet Neu<ex>er</ex>theles it is considered that the vse
+and excercise of suche playes (not beinge euill in yt self) may
+w<ex>i</ex>th a good order and moderac<ex>i</ex>on be suffered in a well
+gou<ex>er</ex>ned state; and that her Ma<ex>ies</ex>tie beinge pleased at some
+tymes to take delight and recreation in the sight and hearinge of them,
+some order is fitt to be taken for the allowance and mayneten<ex>au</ex>nce
+of such persons as are thought meetest in that kinde to yealde her
+Ma<ex>ies</ex>tie recreation and delighte, and consequently of the houses
+that must serue for publike playinge to keepe them in exercise; To the
+ende therefore that both the greatest abuses of the playes and playinge
+houses may be redressed, and yet the aforesaide vse and moderation of
+them retayned, The L<ex>ordes</ex> and the reste of her Ma<ex>ies</ex>t<ex>es</ex>
+privie Counsell, w<ex>i</ex>th one and full consent haue ordered in manner
+and forme as followeth.</ab>
+
+<ab>ffirste that there shalbe aboute the Cittie two houses and no more,
+allowed to serue for the vse of the Com<ex>m</ex>on stage playes; of the
+w<ex>hi</ex>ch houses one shalbe in Surrey, in that place w<ex>hi</ex>ch is
+Com<ex>m</ex>only called the Banckeside or thereabout<ex>es</ex> and the other in
+Middlesex.<note type="foot">Middlesex: <hi rend="italic">followed by a blank space approximately 7
+characters in length</hi></note> And forasmuch as their L<ex>ordshi</ex>ps haue
+bin enformed by Edmund Tylney esq<ex>uie</ex>r her Ma<ex>ies</ex>t<ex>es</ex> Servante
+and M<ex>aste</ex>r of the Revell<ex>es</ex> that the house nowe in hand to be
+builte by thesaide Edward Allen is not intended to encrease the Nomber
+of the play houses but to be insteede of an other<note type="marginal" place="margin_left"><handShift/>Memora<ex>ndum</ex>,
+that the alterac<ex>i</ex>on and interlying of this order was by reason that
+the said order after the same was entred in the Booke came againe in
+question and debate, and the said interlyninge &amp; amendement<ex>es</ex> were
+sett downe according to the laste determinac<ex>i</ex>on of their
+l<ex>ordshi</ex>p<ex>es</ex>.<handShift/> <seg type="signed">Th<ex>omas</ex>Smith</seg><note type="foot">Th<ex>omas</ex>Smith:
+<hi rend="italic">clerk of the council</hi></note></note> (namely the Curtayne) w<ex>hi</ex>ch is
+ether to be ruyned and plucked downe or to be put to some other good
+vse as also that the scytuation thereof is meete and convenient for
+that p<ex>u</ex>rpose; it is like wise ordered that the saide house of Allen
+shalbe allowed to be one of the two houses, and namely for the house to
+be allowed in Middlesex ‸<add place="above">for the Company of players belonging to the
+L<ex>ord</ex> Admyrall</add> so as the house called the Curtaine be (as it
+‸<add place="above">is</add> <del>hath bin)</del> pretended) either ruynated or applyed to some
+other good vse And for the other house allowed to be on Surrey side
+whereas ‸<add place="above">their l<ex>ordshi</ex>ps are pleased to p<ex>er</ex>mitt</add>
+<del><damage><gap unit="chars" extent="3"/></damage></del><note type="foot"><del><damage><gap unit="chars" extent="3"/></damage></del>: <hi rend="italic">cancelled text approximately 45 characters in
+length</hi></note> to the Company of players that shall play there to make
+their owne Choice w<ex>hi</ex>ch they will haue ‸<add place="above">of diuers houses that
+are there</add> choosing one of them and no more</ab>
+
+<ab>‸<add place="above">And ye said company of plaiers beinge the Servant<ex>es</ex> of the
+l<ex>ord</ex> Chamb<ex>er</ex>lain that are to play there haue made choise of the
+house called the Globe, it is ordered that the said house and none
+other shalbe there allowed.</add> And especially it is forbidden that any
+stage playes shalbe played (as some tymes they haue bin) in any
+Com<ex>m</ex>on Inne for publique assembly in or neare about the Cittie./</ab>
+
+<ab>Secondly, forasmuch as these stage plaies, by the multitude of houses
+and company of players haue bin so frequent not servinge for recreation
+but invitinge and callinge the people dayly from their trade and worke
+to misspend their tyme <pb/> it is likewise ordered that the two seuerall
+Companies of players assigned vnto the two houses allowed may play each
+of them in their seuerall houses twice a weeke and no oftener, and
+especially that they shall refrayne to play on the Sabbath Day vpon
+paine of imprysonment and further penaltie: and that they shall
+forbeare altogether in the tyme of Lent and likewise at such tyme &amp;
+tymes as any extraordinary sicknes or infection of disease shall
+appeare to be in or about the Cittie./</ab>
+
+<ab>Thirdly because the orders wilbe of little force and effecte vnlesse
+they be duely putt in execution, by those vnto whome it appertayneth to
+see them executed; It is ordered that seuerall Copies of these orders
+shalbe sent to the L<ex>ord</ex> Maior of London; and to the Iustic<ex>es</ex> of
+the peace of the Counties of Middlesex and Surrey. and that l<ex>ett</ex>res
+shalbe written vnto them from their L<ex>ordshi</ex>ps, straightly charginge
+them to see to the execuc<ex>i</ex>on of the same, aswell by Comyttinge to
+prison any owners of play houses and players as shall disobey and
+resist these orders, as by any other good and lawfull meanes that in
+their discretion they shall finde expedient, and to c<ex>er</ex>tifie their
+L<ex>ordshi</ex>ps from tyme to tyme, as they shall see cause of their
+p<ex>ro</ex>ceedinges herein.</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The 'diuers houses' on Bankside at this time included the Rose and
+the Swan as well as the Globe, now the recently opened base for the
+lord chamberlain's men. Whether this order had a direct impact on the
+type of entertainment offered henceforth at the Swan is an open
+question but Henslowe's Rose continued its operation for at least three
+more years after the lord admiral's men moved north of the river to the
+Fortune playhouse: see 'History of the Playhouse'<!-- CB to insert
+cross-ref --> and Foakes, <title>Henslowe's Diary</title>, pp 164,
+213–26.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm96548040">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1600">1600</date> <seg ana="taxon:RSSSVM">RSSSVM</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm96548040-transcription">
+<div><head>f 339 <supplied>(28 March)</supplied></head>
+<pb n="339" type="folio"/>
+
+<gap reason="omitted"/>
+
+<ab>Item<note type="foot">Item: <hi rend="italic">in display script</hi></note> it is ordered that the
+Churchwardens shall talke w<ex>i</ex>th the player<ex>es</ex> for tithes for
+theire playhouses &amp; for the Rest of the newe tannehouses neare
+thereabout<ex>es</ex> w<ex>i</ex>thin the libertie of the Clinke &amp; for monie for
+the pore accordinge to the order taken before my Lordes of Canterbury,
+London,<note type="foot">my Lordes of Canterbury, London: <hi rend="italic">John Whitgift,
+archbishop of Canterbury (1583–1604), and Sir William Rider, lord mayor
+of London (1600)</hi></note> &amp; m<ex>aste</ex>r of the Revells<note type="foot">m<ex>aste</ex>r of the
+Revells: <hi rend="italic">Edmund Tilney, master of the Revels, 1579–1610</hi></note>./</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm90723048">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1600">1599/1600</date> <seg ana="taxon:RSWLHA">RSWLHA</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm90723048-transcription">
+<div><head>single sheet <supplied>(12 January)</supplied></head>
+<pb n="1" type="sheet"/>
+
+<ab>Wheareas my Servant . in respect of the dangerous decaye of that
+Howse<note type="foot">Howse: <hi rend="italic">the Rose</hi></note> w<ex>hi</ex>ch he and his Companye<note type="foot">:
+<hi rend="italic">the lord admiral's men</hi></note> haue nowe, on , And for that the same
+standeth verie noisome for resorte of people in the wynter tyme)<note type="foot">And
+for … tyme): <hi rend="italic">opening parenthesis missing, or closing parenthesis
+for deletion</hi></note> Hath thearfore nowe of late, taken a plott of
+grounde neere   (verie fitt and convenient) for the buildinge, of a
+theare, and hath prouided Tymber and other necessaries for theffectinge
+theareof. to his greate chardge: fforasmuche as the place. standethe
+verie convenient, for the ease of. People, And that her Ma<ex>ies</ex>tie
+(in respect of the acceptable Service, w<ex>hi</ex>ch my saide Servant and
+his Companie. haue doen and presented before her Highenes to her greate
+lykeinge and Contentm<ex>en</ex>t; aswell this last Christmas as att sondrie
+other tymes) ys gratiouslie moued toward<ex>es</ex> them. w<ex>i</ex>th a
+speciall regarde of fauor in their proceeding<ex>es</ex>: Theis shalbe
+thearefore to praie and requier yow .and. everie of yow. To permitt and
+suffer my saide Servant to proceede in theffectinge and finishinge of
+the saide Newhowse, w<ex>i</ex>thout anie your lett or molestac<ex>i</ex>on.
+toward<ex>es</ex> him or any of his woorkmen. And soe not doubtinge of
+yo<ex>u</ex>r observac<ex>i</ex>on in this behalf. I bidd yow right hartelie
+farewell. att the Courte. at , the xij<hi rend="superscript">th</hi> of Ianuarye.
+1599.<note type="foot">1599: <hi rend="italic">underlined</hi></note></ab>
+
+<ab><seg type="signed" rend="right"/></ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+For an image of the original MS, see the <title>Henslowe-Alleyn
+Digitisation Project</title>, http://www.henslowe-
+alleyn.org.uk/images/MSS-1/Article-027/01r.html.
+For the contract to build the Fortune, see DC: Mun 22 (<!-- #CB to add
+link to http://www.henslowe-alleyn.org.uk/images/Muniments-
+Series-1/Group-022/01r.html -->). A letter of objection was sent to the
+privy council by Lord Willoughby and other residents in the
+neighbourhood on 9 March 1599/1600 (TNA: PC2/25, p 78) but a subsequent
+letter on 8 April to the Middlesex justices of the peace confirms the
+support of the privy council for the new venture (DC: MS I, Article
+29). For recent discussion and partial transcriptions of these
+documents see also Wickham <hi rend="italic">et al</hi>, <title>English Professional
+Theatre</title>, pp 534–9.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm90676968">
+<body>
+<head><rs>Surrety</rs>, <rs>Southwark</rs> <date when-iso="1600">1600</date> <seg ana="taxon:RSWPC2">RSWPC2</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm90676968-transcription">
+<div><head>single sheet <supplied>(8 April)</supplied></head>
+<pb n="1" type="sheet"/>
+
+<ab>After<note type="foot">After: A <hi rend="italic">in display script</hi></note> our hartie
+comendac<ex>i</ex>ons. Whereas  (haveinge been well pleased heertofore at
+tymes of recreac<ex>i</ex>on w<ex>i</ex>th the services of  and  Servant<ex>es</ex> to
+me the  wheareof, of late he hath made discontynuance) Hath sondrye
+tymes signified her pleasuer, that he should revive the same agayne:
+fforasmuche as he hath bestowed a greate some of money, not onelie for
+the Title of a plott of grounde, scituat in averie remote and exempt
+place neere , theare to Erect a  but alsoe is in good forwardnes aboute
+the frame and warkmanshipp theareof. The conveniencie of w<ex>hi</ex>ch
+place. for that purpose <note type="foot">ys: y <hi rend="italic">written over another letter</hi></note>
+testified vnto vs; vnder the handes of manie of the Inhabitant<ex>es</ex> of
+the Libertie of  wheare it is and recomended by some of the Iustices
+them selves. Wee thearfore haveinge informed her Ma<ex>ies</ex>tie lykewise
+of the decaye of the howse<note type="foot">the howse: <hi rend="italic">the Rose playhouse</hi></note>,
+wherein this Companye Latelie plaied scituate vppon  verie Noysome, for
+the resorte of people in the Wynter tyme. haue receaued order to
+requier yow to Tollerate the proceedinge of the saide Newhowse neere
+Goulding lane. And doe heerbye requier you and everie of yow. To
+permitt and suffer the saied  to proceede in theffectinge and
+finishinge of the same Newehowse, w<ex>i</ex>thout anie yo<ex>u</ex>r Lett or
+interrupc<ex>i</ex>on, toward<ex>es</ex> him, or anye of his woorkmen the rather
+because an other howse<note type="foot">an other howse: <hi rend="italic">the Curtain in Shoreditch,
+not pulled down in the end</hi></note> is pulled downe, insteade of yt. And
+soe not doubtinge of yo<ex>u</ex>r conformitye heerein. Wee comitt yow to
+God, frome the Courte at  the viij<hi rend="superscript">th</hi> of Aprill 1600.<note type="foot">1600:
+<hi rend="italic">underlined</hi></note></ab>
+
+<ab><hi rend="right">Yo<ex>u</ex>r Loveinge freindes/</hi></ab>
+
+<ab><seg type="signed" rend="right">Notingham</seg></ab>
+
+<ab><seg type="signed">G Hunsdon</seg></ab>
+
+<ab><seg type="signed" rend="center">Ro<ex>bert</ex> Cecyll</seg></ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+As Wickham <hi rend="italic">et al</hi> note, the letter indicates that Alleyn,
+having retired from the stage in 1597, may have offered to return to
+perform again with the lord admiral's men at his new theatre if
+permission to proceed was granted (<title>English Professional
+Theatre</title>, p 539).</p>
+
+<p>
+The signatories to the letter were three influential members of the
+privy council: Edward Alleyn's patron, Charles Howard, 10th earl of
+Nottingham and lord admiral, 1585–1618/19; George Carey, 2nd Baron
+Hunsdon and lord chamberlain of the Household, 1597–1603; and Sir
+Robert Cecil, lord secretary, 1596–1612.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm91581784">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1601">1601</date> <seg ana="taxon:RSPCL8">RSPCL8</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm91581784-transcription">
+<div><head>pp 514–15 <supplied>(31 December)</supplied></head>
+<pb type="page"/>
+
+<ab>Two<note type="foot">Two: T <hi rend="italic">in display script</hi></note> L<ex>ett</ex>res of one teno<ex>u</ex>r
+to the Iustices of Middlesex &amp; Surrey. It is in vaine for vs to
+take<note type="marginal" place="margin_left">L<ex>or</ex>d Keeper Mr Comptrol<ex>o</ex>r<lb/>L<ex>or</ex>d Tr<ex>esur</ex>er Mr
+Secret<ex>ary</ex> Cecyll<lb/>L<ex>or</ex>d Admirall. Mr Sec<ex>retary</ex>
+Harb<ex>er</ex>te<lb/>L<ex>or</ex>d Shrewsb<ex>ury</ex><lb/>L<ex>or</ex>d Worcest<ex>er</ex>.</note>
+knowledg of greate abuses &amp; disorders complayned of, and to giue order
+for redresse, if o<ex>u</ex>r directions finde no better execution and
+observation then it seemeth they do: and wee must needes impute the
+fault and blame thereof to yow or some of yow the Iustices of the peace
+that are put in trust to see them executed and perfourmed: whereof wee
+may giue yow a plaine instance in the great abuse contynued or rather
+encreased in the multitude of Plaie howses and Stage Plaies in and
+about the Cittie of London. ffor whereas about a yeare &amp; a half since
+(vpon knowledge taken of the great enormities and disorders by the
+overmuch frequentinge of Plaies) wee did carefullie sett downe and
+p<ex>ro</ex>scribe an order to be observed concerninge the number of
+Playhowses, and the vse and exercise of Stage plaies w<ex>i</ex>th
+lymytac<ex>i</ex>on of tymes and places for the same, (namely that there
+should be but two howses allowed for that vse, one in
+Middlesex<note type="foot">Middlesex: <hi rend="italic">in a more formal script</hi></note> called the
+Fortune,<note type="foot">Fortune: <hi rend="italic">in a more formal script</hi></note> and the other in
+Surrey<note type="foot">Surrey: <hi rend="italic">in a more formal script</hi></note> called the
+Globe<note type="foot">Globe: <hi rend="italic">in a more formal script</hi></note>; and the same
+w<ex>i</ex>th observac<ex>i</ex>on of certaine daies and times as in the said
+order is particularly expressed) in such sorte as a moderate practice
+of them for honest recreation might be contynued, and yet the
+inordinate concourse of dissolute and idle people be restrayned; wee do
+now vnderstande that our said order hath bin so farr from taking dew
+effect, as in steede of restrainte and redresse of the former disorders
+the multitude of play howses is much encreased, and that no daie
+passeth over w<ex>i</ex>thout many Stage plaies in one place or other
+w<ex>i</ex>thin and about the Cittie publiquelie made; The default of
+perfourmance of w<ex>hi</ex>ch <del>said</del> our said order, we must in greate
+parte the rather impute to the Iustices of the peace, because at the
+same tyme wee gaue earnest direction vnto yow to see it streightly
+executed; and to certifie vs of the execution; and yet we haue neither
+vnderstoode of any redresse made by yow nor receaved any Certificate at
+all of yo<ex>u</ex>r p<ex>ro</ex>ceding<ex>es</ex> therein; w<ex>hi</ex>ch default, or
+omission, wee do now pray and require yow foorthw<ex>i</ex>th to amende; and
+to cause our said former order to be putt duely in execution; and
+especiallie to call before yow the Owners of all the other Play howses
+(excepting the two howses in Middlesex,<note type="foot">Middlesex: <hi rend="italic">in a more
+formal script</hi></note> and Surrey<note type="foot">Surrey: <hi rend="italic">in a more formal
+script</hi></note> aforementioned); and to take good and sufficient
+bond<ex>es</ex> of them, not to exercise vse or practice, nor to suffer from
+henceforth to be exercised, vsed or practized any Stage playinge in
+their howses, and if they shall refuse to enter into such Bond<ex>es</ex>,
+then to Comitt them to prison, vntill they shall conforme themselues.
+And so &amp;c.</ab>
+
+<ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note><note type="marginal" place="margin_left">Signed &amp; dated as the former./</note>
+l<ex>ett</ex>re to the L<ex>ord</ex> Maio<ex>u</ex>r &amp; Aldermen of London. Wee haue
+receaued a l<ex>ett</ex>re from yow, renewing a Complaint of the great abuse
+and disorder w<ex>i</ex>thin and about the Cittie of London, by reason of
+the multitude of Play howses, and the inordinate resort and Concourse
+of dissolute and idle people daielie vnto publique Stage plaies; for
+the w<ex>hi</ex>ch information, as wee do com<ex>m</ex>ende yo<ex>u</ex>r l<ex>ordshi</ex>p
+because it betokeneth yo<ex>u</ex>r Care and desire to reforme the disorders
+of the Cittie; So wee must lett yow know, that wee did muche rather
+expect to vnderstand that o<ex>u</ex>r order (sett downe and prescribed
+about a yeare and a half since for reformation of the said disorders
+vpon the like Complaint at that tyme) had bin duelie executed, then to
+finde the same disorders and abuses so muche encreased as they are. The
+blame whereof, as wee cannot but impute in great part to the Iustices
+of the peace or some of them in the Counties of Middlesex and Surrey,
+who had speciall direction and charge from vs to see o<ex>u</ex>r said order
+executed, for the Confines of the Cittie, wherein the most part of
+those Play howses are scituate; So wee do wishe that it might appeare
+vnto vs that any thing hath bin endeavoured by the Predecesso<ex>u</ex>rs of
+yow the L<ex>ord</ex> Maio<ex>u</ex>r and by yow the Aldermen for the redresse of
+the said enormities, and for observation &amp; execution of o<ex>u</ex>r said
+order w<ex>i</ex>thin the Cittie; wee do therefore once againe renew hereby
+o<ex>u</ex>r directions vnto yow (as we haue donne by o<ex>u</ex>r l<ex>ett</ex>res to
+the Iustices of Middlesex and Surrey) conc<ex>er</ex>ninge the observation
+of o<ex>u</ex>r former order: w<ex>hi</ex>ch wee do praie and require yow to
+cause duelie and dilligentlie to be put in execution for all poyntes
+thereof, and especiallie for thexpresse &amp; streight prohibition of any
+more Play howses then those two that are mentioned &amp; allowed in the
+said <pb/> Order: <note type="foot">Order: <hi rend="italic">also written as a catchword at the bottom
+of p 514</hi></note> Charging &amp; streightlie comaunding all such persons as
+are the Owners of any the howses vsed for Stage plaies w<ex>i</ex>thin the
+Cittie; not to permitt any more publique Plaies to be vsed, exercised,
+or shewed from hencefoorth in their said howses, And to take bondes of
+them, (if yow shall finde it needefull) for the perfourmance thereof,
+Or if they shall refuse to enter into bonde, or to obserue o<ex>u</ex>r said
+order, then to comitt them to Prison vntill they shall conforme
+themselues thervnto. And so praying yow as yo<ex>u</ex>rself do make the
+Complaint and finde the enormitie; so to applie yo<ex>u</ex>r best
+endeau<damage><gap unit="chars" extent="2"/></damage><note type="foot">endeau<damage><gap unit="chars" extent="2"/></damage>: <hi rend="italic">binding too tight to read</hi></note> to the
+remedie of the abuse, wee bidd &amp;c.</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The privy councillors present at the meeting on 31 December and
+listed in the left marginalia are as follows: Sir Thomas Egerton, lord
+keeper, 1596–1603; Sir William Knollys, comptrollor of the household,
+1596–nd; Thomas Sackville, Lord Buckhurst and lord treasurer,
+1599–1608; Sir Robert Cecil, principal secretary, 1596–1612; Charles
+Howard, 10th earl of Nottingham and lord admiral, 1585–1618/19; Sir
+John Herbert, second secretary, 1600–17; Gilbert Talbot, 10th earl of
+Shrewsbury; and Edward Somerset, 9th earl of Worcester.</p>
+
+<p>
+        The signatories included not only the privy councillors listed
+in the left marginalia but also John Whitgift, archbishop of
+Canterbury, 1583–1604; Sir John Popham, lord chief justice of the
+Queen's Bench, 1592–1607; and Sir John Stanhope, vice-chamberlain,
+before 1600/1–1616, and treasurer of the chamber, before 1597–1617/18.
+The full text of the Remembrancia letter is printed in Greg and
+Chambers, 'Remembrancia,' pp 83–5.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm92828856">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1603">1602/3</date> <seg ana="taxon:RSPL09">RSPL09</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm92828856-transcription">
+<div><head>f 86 <supplied>(19 March)</supplied></head>
+<pb n="86" type="folio"/>
+
+<gap reason="omitted"/>
+
+<ab>l<ex>ett</ex>res to the Lo<ex>rd</ex> may<ex>o</ex>r and Iustices of midd<ex>lesex</ex> &amp;
+Surrey for the restraint of Stage plaies, till other direction bee
+given./</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm96695080">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1604">1603/4</date> <seg ana="taxon:RSSKCS">RSSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm96695080-transcription">
+<div><head>f 388 <supplied>(25 January)</supplied></head>
+<pb n="388" type="folio"/>
+
+<table><row><cell>Hensloe<lb/>White<lb/>Griffen</cell><cell>It is Ordered that ffrauncis
+Hensloe gent<ex>leman</ex> <space/> white and Edward Griffen before the
+xx<hi rend="superscript">th</hi> day of March next shall cast and clense euery one theire
+seu<ex>er</ex>all p<ex>ar</ex>t<ex>es</ex> of the pisser that leadeth downe to
+maydlane vpon payne to forfeict for eu<ex>e</ex>ry pole then
+vndone<note type="marginal" place="margin_right"><handShift/>done<handShift/></note></cell><cell rend="right">ij s. vj d.</cell></row></table>
+
+<table><row><cell>Hensloe</cell><cell>It is Ordered that ffrauncis Hensloe
+gent<ex>leman</ex> before the xx<hi rend="superscript">th</hi> day of March next shall boarde vp
+two poles more or lesse of his wharfe lyinge against the play house in
+maydlane vpon payne to forfeict for either pole then vndone<note type="marginal" place="margin_right"><handShift/>not
+done extract<ex>a</ex> fact<ex>a</ex> vic<ex>ecomitis</ex> Surr<ex>eie</ex><note type="foot">extract<ex>a</ex>
+… Surr<ex>eie</ex>: <hi rend="italic">'estreat made by the sherrif of
+Surrey'</hi></note>/<handShift/></note></cell><cell rend="right">vj s. viij d./</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+Philip Henslowe's nephew Francis (1566–1606) appears in the St
+Saviour's Token Books as resident along Rose Alley adjacent to the
+playhouse in 1594 (Ingram and Nelson, <title>Token Books</title>,
+http://tokenbooks.folger.edu). By 1594 Francis had joined the queen's
+men (Foakes, <title>Henslowe's Diary</title>, p xxv and n 2) but in
+1595 he was acting at the Swan near where he had relocated to Langley's
+'New Rents' in Paris Garden (1595–8). He cannot be tracked in the Token
+Books in 1603–4 when he shows up here associated with the Rose
+playhouse. See further Mark Eccles, 'Elizabethan Actors II: E-J'
+<title>Notes and Queries</title>, 38.4 (1991), 459; Chambers,
+<title>Elizabethan Stage</title>, vol 2, p 323; Edwin , <title>A
+Dictionary of Actors and of Other Persons Associated with the Public
+Representation of Plays in England before 1642</title> (New Haven and
+London, 1929), 186–7. Griffin and a Thomas White were both listed in
+the Token Books for 1604 as resident in Horseshoe Alley which led down
+to Maid Lane. Francis Henslowe is not listed as a resident that
+year.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm96669016">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1604">1604</date> <seg ana="taxon:RSSKCS">RSSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm96669016-transcription">
+<div><head>f 398v <supplied>(1 August)</supplied></head>
+<pb n="398v" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>Hensloe</cell><cell>It is<note type="foot">It is: <hi rend="italic">in display script</hi></note>
+Ordered that Phillipp Hensloe shall before Bartholomewtide next well
+and sufficiently pyle and boorde two poles more or lesse of the Seware
+in Rose alley vpon payne to forfect for eithere pole then vndone<note type="marginal" place="margin_right">not
+done</note></cell><cell rend="right">v s.</cell></row></table>
+
+<table><row><cell>Hensloe</cell><cell>It is<note type="foot">It is: <hi rend="italic">in display script</hi></note>
+Ordered that Phillipp Hensloe shall before Bartholomewtyd next Clense
+cast and scower the Gulley in Roase Alley vpon payne to forfect for not
+doeinge thereof</cell><cell rend="right">xl s.</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+<div><head>f 406v <supplied>(14 December)</supplied></head>
+<pb n="406v" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>Hensloe</cell><cell>Att this courte appeared Phillipp Hensloe and
+prayd that he might be dischardged of the Order ymposed vpon him the
+first day of August 1604<note type="foot">1604: <hi rend="italic">underlined in MS; see f
+398v</hi></note> for that he hath not any lands against the sewar in Roase
+aley where he was Ordered to pyle and bord two poles more or lesse
+where vpon he is dischardged by this Courte of the sayd Order and of
+the penalty ymposed on hym.//</cell></row></table>
+</div>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm91491816">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1605">1605</date> <seg ana="taxon:RSPL11">RSPL11</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm91491816-transcription">
+<div><head>f 107 <supplied>(5 October)</supplied></head>
+<pb n="107" type="folio"/>
+
+<gap reason="omitted"/>
+
+<ab>A l<ex>ett</ex>re to the Lo<ex>rd</ex> may<ex>o</ex>r to forbidd Stage plaies &amp; to
+take order that the infectede bee kept in their howses. &amp;c.</ab>
+
+<ab>Like l<ex>ett</ex>res to the Iustices of the peace of middlesex &amp; Surrey./</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm96650056">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1605">1605</date> <seg ana="taxon:RSSKCS">RSSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm96650056-transcription">
+<div><head>f 422v <supplied>(6 August)</supplied></head>
+<pb n="422v" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>Hinslowe</cell><cell>It is <note type="foot">It is: <hi rend="italic">display script</hi></note>
+Ordered that Phillip Hinslowe gent<ex>leman</ex> shall before Michelmas next
+well and sufficiently pyle and boorde three poles more or lesse of the
+bancke against his playhouse in Maydlane vpon paine to forfeict for
+every pole then vndone<note type="marginal" place="margin_right"><handShift/>not done<lb/>sisteb<ex>at</ex> et
+exoner<ex>atur</ex><note type="foot">sisteb<ex>at</ex> et exoner<ex>atur</ex>: <hi rend="italic">'he appeared
+(before the judge) and is exonerated'</hi></note><handShift/></note></cell><cell rend="right">xx
+s.</cell></row></table>
+
+<table><row><cell>Hinslowe</cell><cell>It is Ordered that Phillipp Hinslowe
+gent<ex>leman</ex> shall before Michelmas next pullvpp &amp; take cleane awaye
+out of the sewar his two post<ex>es</ex> w<ex>hi</ex>ch stande in the sewar vnder
+his Bridge against the said playe house vpon paine to forfeict<note type="marginal" place="margin_right"><handShift/>not
+done<lb/>sisteb<ex>at</ex> et exoner<ex>atur</ex><note type="foot">sisteb<ex>at</ex> et exoner<ex>atur</ex>:
+<hi rend="italic">'he appeared (before the judge) and is
+exonerated'</hi></note><handShift/></note></cell><cell rend="right">xl s./</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+<div><head>f 426v <supplied>(4 October)</supplied></head>
+<pb n="426v" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>Hinslowe/</cell><cell>It is Ordered that Phillip Hinslow
+gent<ex>leman</ex> shall before St Andrewes day next well and sufficiently
+pile and boorde iij poles more or lesse of the banck against his
+playhouse in Maidelane vpon paine to forfeict for eu<ex>er</ex>y pole then
+vndone<note type="marginal" place="margin_right"><handShift/>not done of his hand<ex>es</ex><handShift/></note></cell><cell rend="right">xl s.</cell></row></table>
+
+<table><row><cell>Hinslowe/</cell><cell>It is Ordered that Phillip Hinslowe shall
+before St Andrewes day next pull vp &amp; take cleane away his ij
+post<ex>es</ex> w<ex>hi</ex>ch stand in the sewar vnder his bridge against the
+said playhouse vpon paine to forfeict<note type="marginal" place="margin_right"><handShift/>not done out of his
+hand<ex>es</ex><handShift/></note></cell><cell rend="right">iiij li.</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+By 29 September 1605 Henslowe's lease of the Little Rose estate had
+expired. For obvious reasons he was unwilling to pay for further
+maintenance costs and the next entry in the Sewer Commissioners'
+Minutes names Box, probably one of the feoffees of the Thomasyn Simonds
+Charity, St Mildred Bread Street, as the person responsible for related
+property costs.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm96613240">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1606">1605/6</date> <seg ana="taxon:RSSKCS">RSSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm96613240-transcription">
+<div><head>f 436 <supplied>(30 January)</supplied></head>
+<pb n="436" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>Box</cell><cell>It is Ordered that <space/> Box of Bredstreete in
+London shall before the xx<hi rend="superscript">th</hi> day of Aprill next pile boorde and
+fill vp fyve poles more or lesse of the bancke against the Sewar by the
+Playhouse in Maidelane called the Roase vpon payne to forfeict for
+every pole then vndone<note type="marginal" place="margin_right"><handShift/>not done decret<ex>a</ex> apud Cur<ex>iam</ex> 17 die
+Octobris 1606./<note type="foot">1606: <hi rend="italic">underlined in MS</hi></note><note type="foot">decret<ex>a</ex> …
+1606: <hi rend="italic">'settled at court, 17 October 1606'</hi></note><handShift/></note></cell><cell rend="right">x
+s.</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The playhouse must have been abandoned by this time but had not yet
+been pulled down.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="rosep-ridm96597384">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1606">1606</date> <seg ana="taxon:RSSKCS">RSSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="rosep-ridm96597384-transcription">
+<div><head>f 441 <supplied>(25 April)</supplied></head>
+<pb n="441" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>Box./</cell><cell>It is Ordered that Edward Box of Bredstreete in
+London shall before the ffirst day of Iune next pyle boorde &amp; fill vp
+fyve poles more or lesse of the bancke against the sewar by the Late
+Playhouse in Maidelane called the Rose vpon paine to forfeict for every
+pole then vndone<note type="marginal" place="margin_right"><handShift/>not done; relaxat<ex>a</ex> apud Cur<ex>iam</ex> 27 die
+Octobr<ex>is</ex> 1606./<note type="foot">relaxt<ex>a</ex> … 1606: <hi rend="italic">'remitted at court, 27
+October 1606'</hi></note><handShift/></note></cell><cell rend="right">xx s./</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The 'Late Playhouse' may or may not have been demolished by this
+time although the archaeological evidence suggests that demolition
+likely happened by 1606. See further extensive detail provided by
+Bowsher and Miller, <title>The Rose and the Globe</title>, pp
+66–70.
+</p>
+</div>
+</body>
+</text></group>
+  </text>
+</TEI>
