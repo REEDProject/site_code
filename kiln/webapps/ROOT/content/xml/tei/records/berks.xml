@@ -162,6 +162,7 @@
                 </profileDesc>
                 <revisionDesc>
                         <!-- Add new major milestone changes to top -->
+                        <change when="2020-01-12" who="#KC">Renamed 'Type=Regalia' to 'Type=LiveryRegalia'</change>
                         <change when="2019-09-11" who="#PG">Changed gloss tag to 'plange' from 'plad-1' to 'plange-a'</change>
                         <change when="2019-07-16" who="#PG">Corrected expansion of 'candel{is} e{m}p{tis}' to 'candel{arum} e{m}p{tarum}' and corrected transtlation to read 'three pounds of candles bought'</change>
                         <change when="2019-04-30" who="#KC">Added 'royal and nobel visit' tag to Lady Russell's Entertainment for the Queen at Bisham, 1592</change>
@@ -10097,7 +10098,7 @@
                                                   rend="italic">HMCR</hi>
                                                   <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/43439/"
-                                                  type="Thing_Regalia">vestura</rs></note>
+                                                  type="Thing_LiveryRegalia">vestura</rs></note>
                                                   Empt<ex>a</ex> p<ex>ro</ex>
                                                   <damage><gap unit="chars" extent="2"
                                                   /></damage><note type="foot"><damage><gap
@@ -10183,7 +10184,7 @@
 
                                                   <ab>Et in <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/43439/"
-                                                  type="Thing_Regalia">uesturis</rs>
+                                                  type="Thing_LiveryRegalia">uesturis</rs>
                                                   <damage><gap unit="chars" extent="3"
                                                   /></damage><note type="foot"><damage><gap
                                                   unit="chars" extent="3"/></damage>:<hi
@@ -10242,7 +10243,7 @@
 
                                                   <ab><gap reason="omitted"/>Et in <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/43439/"
-                                                  type="Thing_Regalia"><term ref="gloss:librata"
+                                                  type="Thing_LiveryRegalia"><term ref="gloss:librata"
                                                   >librata</term></rs> data co<ex>mmun</ex>i <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/1162/"
                                                   type="Entertainer_Type"><term
@@ -10295,7 +10296,7 @@
                                                   <ab><gap reason="omitted"/>Et p<ex>ro</ex>
                                                   <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/43439/"
-                                                  type="Thing_Regalia"><term ref="gloss:librata"
+                                                  type="Thing_LiveryRegalia"><term ref="gloss:librata"
                                                   >librata</term></rs> Co<ex>mmun</ex>is <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/1162/"
                                                   type="Entertainer_Type"><term
@@ -21714,7 +21715,7 @@
                                                   /></damage></add>p<ex>ro</ex>mised Belgrove to
                                                   haue a <rs
                                                   ref="http://ereed.library.utoronto.ca/eats/entity/43439/"
-                                                  type="Thing_Regalia">Cloke</rs> to weare
+                                                  type="Thing_LiveryRegalia">Cloke</rs> to weare
                                                   w<ex>i</ex>thin the towne at all tymes of their
                                                   playe, or ells he shall haue a cloke he payeng vj
                                                   d. a weeke &amp; keepinge company w<ex>i</ex>th
