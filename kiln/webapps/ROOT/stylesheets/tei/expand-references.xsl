@@ -5,6 +5,7 @@
                 xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- Expand @sameAs and @ana references. These typically replace the
@@ -58,15 +59,41 @@
          replace the content of the element. -->
     <xsl:copy>
       <xsl:apply-templates select="@*" />
-      <index indexName="record_type">
-        <xsl:for-each select="tokenize(@ana, '\s+')">
-          <tei:term>
-            <xsl:call-template name="make-xinclude">
-              <xsl:with-param name="url" select="." />
-            </xsl:call-template>
-          </tei:term>
+      <xsl:variable name="eats_prefix" select="/tei:TEI/tei:teiHeader/tei:encodingDesc/tei:listPrefixDef/tei:prefixDef[@ident='eats']" />
+      <xsl:variable name="eats_pattern" select="replace($eats_prefix/@replacementPattern, '\$1', $eats_prefix/@matchPattern)" />
+      <xsl:variable name="ana" select="tokenize(@ana, '\s+')" />
+      <xsl:variable name="record_types" as="xs:string*">
+        <xsl:for-each select="$ana">
+          <xsl:if test="not(matches(., $eats_pattern))">
+            <xsl:sequence select="." />
+          </xsl:if>
         </xsl:for-each>
-      </index>
+      </xsl:variable>
+      <xsl:variable name="associated_entities" as="xs:string*">
+        <xsl:for-each select="$ana">
+          <xsl:if test="matches(., $eats_pattern)">
+            <xsl:sequence select="." />
+          </xsl:if>
+        </xsl:for-each>
+      </xsl:variable>
+      <xsl:if test="count($record_types) &gt; 0">
+        <index indexName="record_type">
+          <xsl:for-each select="$record_types">
+            <tei:term>
+              <xsl:call-template name="make-xinclude">
+                <xsl:with-param name="url" select="." />
+              </xsl:call-template>
+            </tei:term>
+          </xsl:for-each>
+        </index>
+      </xsl:if>
+      <xsl:if test="count($associated_entities) &gt; 0">
+        <index indexName="associated_entity">
+          <xsl:for-each select="$associated_entities">
+            <tei:term ref="{.}" />
+          </xsl:for-each>
+        </index>
+      </xsl:if>
       <xsl:apply-templates select="node()" />
     </xsl:copy>
   </xsl:template>

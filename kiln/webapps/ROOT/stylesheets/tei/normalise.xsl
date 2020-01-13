@@ -78,7 +78,7 @@
     <xsl:variable name="base"
                   select="$context/ancestor::*[@xml:base][1]/@xml:base" />
     <xsl:choose>
-      <xsl:when test="$base">
+      <xsl:when test="$base and not(contains($expanded-url, '://'))">
         <xsl:value-of select="substring-after(resolve-uri($expanded-url, concat('file://', $base)), 'file://')" />
       </xsl:when>
       <xsl:otherwise>

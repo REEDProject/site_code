@@ -95,6 +95,23 @@
   <!-- The following named templates all assume that the context node
        is a tei:text[@type='record']. -->
 
+  <xsl:template name="display-record-associated-entities">
+    <xsl:if test="tei:index[@indexName='associated_entity']/tei:term">
+      <li class="accordion-item" data-accordion-item="">
+        <a href="#" class="accordion-title">Associated Events</a>
+        <div class="accordion-content" data-tab-content="">
+          <ul class="marginalia-list">
+            <xsl:for-each select="tei:index[@indexName='associated_entity']/tei:term">
+              <xsl:call-template name="display-record-entity">
+                <xsl:with-param name="eats-url" select="@ref" />
+              </xsl:call-template>
+            </xsl:for-each>
+          </ul>
+        </div>
+      </li>
+    </xsl:if>
+  </xsl:template>
+
   <xsl:template name="display-record-collation-notes">
     <xsl:if test=".//tei:note[@type='collation']">
       <li class="accordion-item" data-accordion-item="">
@@ -117,6 +134,7 @@
         <xsl:call-template name="display-record-collation-notes" />
         <xsl:call-template name="display-record-glossed-terms" />
         <xsl:call-template name="display-record-endnote" />
+        <xsl:call-template name="display-record-associated-entities" />
         <xsl:call-template name="display-record-doc-desc" />
       </ul>
     </div>
@@ -158,28 +176,40 @@
     </xsl:if>
   </xsl:template>
 
+  <xsl:template name="display-record-entity">
+    <xsl:param name="eats-url" />
+    <xsl:variable name="entity-id">
+      <xsl:text>entity-</xsl:text>
+      <xsl:call-template name="get-entity-id-from-url">
+        <xsl:with-param name="eats-url" select="$eats-url" />
+      </xsl:call-template>
+    </xsl:variable>
+    <li class="tag">
+      <a>
+        <xsl:attribute name="href">
+          <xsl:call-template name="make-entity-url">
+            <xsl:with-param name="eats-url" select="$eats-url" />
+          </xsl:call-template>
+        </xsl:attribute>
+        <xsl:call-template name="display-entity-primary-name-plus">
+          <xsl:with-param name="entity" select="id($entity-id)" />
+        </xsl:call-template>
+      </a>
+    </li>
+  </xsl:template>
+
   <xsl:template name="display-record-entities">
     <xsl:variable name="record-id" select="@xml:id" />
     <ul class="tags">
       <xsl:for-each select=".//tei:rs[@ref][not(@ref=preceding::tei:rs[ancestor::tei:text/@xml:id=$record-id]/@ref)]">
-        <xsl:variable name="entity-id">
-          <xsl:text>entity-</xsl:text>
-          <xsl:call-template name="get-entity-id-from-url">
-            <xsl:with-param name="eats-url" select="@ref" />
-          </xsl:call-template>
-        </xsl:variable>
-        <li class="tag">
-          <a>
-            <xsl:attribute name="href">
-              <xsl:call-template name="make-entity-url">
-                <xsl:with-param name="eats-url" select="@ref" />
-              </xsl:call-template>
-            </xsl:attribute>
-            <xsl:call-template name="display-entity-primary-name-plus">
-              <xsl:with-param name="entity" select="id($entity-id)" />
-            </xsl:call-template>
-          </a>
-        </li>
+        <xsl:call-template name="display-record-entity">
+          <xsl:with-param name="eats-url" select="@ref" />
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="tei:index[@indexName='associated_entity']/tei:term">
+        <xsl:call-template name="display-record-entity">
+          <xsl:with-param name="eats-url" select="@ref" />
+        </xsl:call-template>
       </xsl:for-each>
     </ul>
   </xsl:template>
