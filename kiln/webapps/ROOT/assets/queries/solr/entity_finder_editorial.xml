@@ -2,6 +2,6 @@
 <query>
   <q default="true"></q>
   <df>mentioned_entities</df>
-  <fq>document_type:editorial</fq>
+  <fq escape="false">document_type:editorial</fq>
   <rows>1000</rows>
 </query>
