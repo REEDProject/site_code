@@ -124,6 +124,11 @@
             glossary.xml file. For example, <code>gloss:histrio-1</code> dereferences to
               <code>glossary.xml#histrio-1</code>.</p>
         </prefixDef>
+        <prefixDef ident="eats" matchPattern="([0-9]+)" replacementPattern="
+          http://ereed.library.utoronto.ca/eats/entity/$1/">
+          <p>URIs using the <code>eats</code> prefix are references to EATS
+            entities.</p>
+        </prefixDef>
       </listPrefixDef>
       <projectDesc>
         <p>Records of Early English Drama (REED) is an international scholarly project that is
