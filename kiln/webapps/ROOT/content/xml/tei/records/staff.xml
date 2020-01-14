@@ -144,6 +144,7 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2020-01-14" who="#KC">Changed entity type of 'watis' from 'Type-Entertainer_Type' to Type='Collective_Office'</change>
       <change when="2020-01-12" who="#KC">Renamed 'Type=Regalia' to 'Type=LiveryRegalia'</change>
       <change when="2020-01-12" who="#KC">Retagged, where approriate, 'badges, civic and patron's' as 'badges / escutcheons, civic and patron's.</change>
       <change when="2020-01-12" who="#KC">Retagged, where approriate, 'gowns, costume' as 'coat / cloak / gowns, costume'</change>
@@ -665,9 +666,7 @@
               Lichfield ‘<rs ref="http://ereed.library.utoronto.ca/eats/entity/1261/"
                 type="Entertainer_Type">histriones</rs>’ entertained Sir <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/27714/" type="Person_Gentry"
-                >William Vernon</rs> in 1449, and Lichfield <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/13000/" type="Entertainer_Type"
-                >waits</rs> entertained at <rs
+                >William Vernon</rs> in 1449, and Lichfield <rs ref="http://ereed.library.utoronto.ca/eats/entity/154950/" type="Collective_Office">waits</rs> entertained at <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/44356/" type="Place_Feature"
                 >Wollaton Hall</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/2183/"
                 type="Place_County">Nottinghamshire</rs>, in 1572. <rs
@@ -5025,9 +5024,7 @@
                   ref="http://ereed.library.utoronto.ca/eats/entity/1243/" type="Entertainer_Type"
                   >Musitians</rs>, (for <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/12982/" type="Entertainer_Type"
-                  >ffidlers</rs> I must not call them) were the Gentlemen <rs
-                  ref="http://ereed.library.utoronto.ca/eats/entity/13000/" type="Entertainer_Type"
-                  >Waytes</rs> of the Towne, that wore the <rs ref="http://ereed.library.utoronto.ca/eats/entity/42646/" type="Thing_LiveryRegalia">Badge</rs><note type="marginal" place="margin_left"><rs
+                  >ffidlers</rs> I must not call them) were the Gentleme <rs ref="http://ereed.library.utoronto.ca/eats/entity/154950/" type="Collective_Office">Waytes</rs> of the Towne, that wore the <rs ref="http://ereed.library.utoronto.ca/eats/entity/42646/" type="Thing_LiveryRegalia">Badge</rs><note type="marginal" place="margin_left"><rs
                     ref="http://ereed.library.utoronto.ca/eats/entity/861/" type="Person_Nobility"
                     >Earle of Essex</rs></note> of a Noble braue Lord, and they were of that garb
                 and skil, as they were fitting to play to the nicest eares.</ab>
