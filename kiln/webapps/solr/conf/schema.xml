@@ -156,6 +156,10 @@
    <field indexed="true" multiValued="true"
           name="facet_collectives_clergy" required="false" stored="true"
           type="int" />
+   <field indexed="true" multiValued="true" name="facet_collectives_office"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_collectives_title"
+          required="false" stored="true" type="int" />
    <field indexed="true" multiValued="true"
           name="facet_crimes_crime" required="false" stored="true"
           type="int" />

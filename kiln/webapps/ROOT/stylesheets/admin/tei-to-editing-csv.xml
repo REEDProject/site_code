@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="2.0"
+                xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+                xmlns:tei="http://www.tei-c.org/ns/1.0"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:include href="cocoon://_internal/url/reverse.xsl" />
+
+  <xsl:template match="/">
+    <!-- Generate headings. -->
+    <xsl:text>Record</xsl:text>
+    <xsl:text>,</xsl:text>
+    <xsl:text>Place</xsl:text>
+    <xsl:text>,</xsl:text>
+    <xsl:text>Date</xsl:text>
+    <xsl:text>,</xsl:text>
+    <xsl:text>URL</xsl:text>
+    <xsl:text>,</xsl:text>
+    <xsl:text>Editor's comments</xsl:text>
+    <xsl:text>,</xsl:text>
+    <xsl:text>Responses</xsl:text>
+    <xsl:call-template name="new-line" />
+    <xsl:apply-templates select="/tei:TEI/tei:text/tei:group/tei:text" />
+  </xsl:template>
+
+  <xsl:template match="tei:text">
+    <xsl:value-of select="count(preceding-sibling::tei:text)+1" />
+    <xsl:text>,</xsl:text>
+    <xsl:value-of select="tei:body/tei:head/tei:rs[1]" />
+    <xsl:text>,</xsl:text>
+    <xsl:value-of select="tei:body/tei:head/tei:date" />
+    <xsl:text>,</xsl:text>
+    <xsl:text>https://ereeddev.library.utoronto.ca</xsl:text>
+    <xsl:value-of select="kiln:url-for-match('ereed-record-display-html', (@xml:id), 0)" />
+    <xsl:text>,</xsl:text>
+    <xsl:text>,</xsl:text>
+    <xsl:call-template name="new-line" />
+  </xsl:template>
+
+  <xsl:template name="new-line">
+    <xsl:text>
+</xsl:text>
+  </xsl:template>
+
+</xsl:stylesheet>
