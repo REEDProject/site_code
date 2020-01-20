@@ -125,6 +125,9 @@
     <xsl:variable name="short-filepath">
       <xsl:value-of select="substring-after($filepath, 'tei/')" />
     </xsl:variable>
+    <xsl:variable name="basename">
+      <xsl:value-of select="substring-after($short-filepath, '/')" />
+    </xsl:variable>
     <tr>
       <td><input type="checkbox" name="docs" value="{$filepath}" /></td>
       <!-- File path. -->
@@ -132,7 +135,9 @@
         <xsl:value-of select="$short-filepath"/>
         <xsl:text>.xml</xsl:text>
       </td>
-      <td></td>
+      <td>
+        <a href="{kiln:url-for-match('local-admin-collection-editing-csv', ($basename), 0)}" title="Generate CSV file for capturing editor feedback on individual records">Generate editing CSV</a>
+      </td>
       <!-- Default Schematron link. -->
       <!--<td>
         <a title="Schematron validation report"
@@ -158,7 +163,7 @@
       </td>
       <td>
         <a href="{kiln:url-for-match('local-admin-collection-records',
-                 (substring-after($short-filepath, '/')), 0)}">
+                 ($basename), 0)}">
           <xsl:text>View all records</xsl:text>
         </a>
       </td>
