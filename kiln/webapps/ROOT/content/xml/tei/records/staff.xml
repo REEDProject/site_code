@@ -60,6 +60,11 @@
           <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
         </respStmt>
         <respStmt>
+          <persName>Kaitlin Persaud</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>EATS events taxonomy developer and tagger</resp>
+        </respStmt>
+        <respStmt>
           <persName>Suzanne Westfall</persName>
           <resp>Principal Investigator, NEH grant</resp>
         </respStmt>
@@ -137,6 +142,7 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2020-01-22" who="#CB">Added new respStmt for Kaitlin Persaud</change>
       <change when="2020-01-21" who="#JN">Added references to EATS event entities relating to payments documented in records.</change>
 <change when="2020-01-14" who="#KC">Changed entity number of 'waits' from 13000 to 154950'</change>
       <change when="2020-01-14" who="#KC">Changed entity type of 'waits' from 'Type-Entertainer_Type' to Type='Collective_Office'</change>

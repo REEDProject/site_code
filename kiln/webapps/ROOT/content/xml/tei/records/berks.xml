@@ -50,7 +50,7 @@
                                 <respStmt>
                                         <persName>Cai Henderson</persName>
                                         <orgName>Records of Early English Drama (REED)</orgName>
-                                        <resp>Co-Translator, Paloegrapher</resp>
+                                        <resp>Co-Translator, Paleographer</resp>
                                 </respStmt>
                                 <respStmt>
                                         <persName>Alexandra F. Johnston</persName>
@@ -72,6 +72,11 @@
                                         <persName xml:id="JN">Jamie Norrish</persName>
                                         <resp>Programmer, TEI Schema Designer, Technical
                                                 Consultant</resp>
+                                </respStmt>
+                                <respStmt>
+                                        <persName>Kaitlin Persaud</persName>
+                                        <orgName>Records of Early English Drama (REED)</orgName>
+                                        <resp>EATS events taxonomy developer and tagger</resp>
                                 </respStmt>
                                 <respStmt>
                                         <persName>Jonah Shallit</persName>
@@ -157,6 +162,7 @@
                 </profileDesc>
                 <revisionDesc>
                         <!-- Add new major milestone changes to top -->
+                        <change when="2020-01-22" who="#CB">Added new respStmt for Kaitlin Persaud</change>
                         <change when="2020-01-21" who="#JN">Added references to EATS event entities relating to payments documented in records.</change>
 <change when="2020-01-12" who="#KC">Renamed 'Type=Regalia' to 'Type=LiveryRegalia'</change>
                         <change when="2019-09-11" who="#PG">Changed gloss tag to 'plange' from 'plad-1' to 'plange-a'</change>
