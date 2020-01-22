@@ -25,8 +25,9 @@
                 <xsl:when test=". = ' '">
                   <xsl:text>+</xsl:text>
                 </xsl:when>
+                <!-- This is the escaping that Solr requires for ":". -->
                 <xsl:when test=". = ':'">
-                  <xsl:text>\:</xsl:text>
+                  <xsl:text>%5c:</xsl:text>
                 </xsl:when>
                 <xsl:otherwise>
                   <xsl:value-of select="encode-for-uri(.)" />
