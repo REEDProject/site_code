@@ -5218,6 +5218,16 @@ insert cross ref --><lb/></ab>
                             ii, gathered in 8s; 245m x 170mm, average 25 lines; modern pencil
                             foliation; brown leather binding. The Regularis occupies ff 159–98.</ab>
                     </msDesc>
+                    <msDesc xml:id="HARCW1">
+                        <msIdentifier>
+                            <settlement>London</settlement>
+                            <repository sameAs="#BL"/>
+                            <idno type="shelfmark">Cotton Tiberius A.III</idno>
+                            <msName>Regularis Concordia</msName>
+                        </msIdentifier>
+                        <ab type="techDesc"><date>mid-11th c.</date>; Latin and Old English; parchment; ii + 180 + xv; 295mm x 225mm, average 24 glossed lines; modern pencil foliation; use of rustic capitals for some proper names, as GREGORII on f 21; brown leather binding. The Regularis occupies ff 3–27v; ff 177–7v is the final folio of text missing from the Cotton Faustina B.III text.
+                           </ab>
+                    </msDesc>
                     <msDesc xml:id="HASCAA">
                         <msIdentifier>
                             <settlement>Oxford</settlement>
@@ -5441,10 +5451,17 @@ insert cross ref --><lb/></ab>
                                     of Jane Seymour, which however lacks the motto and upper
                                     section.] | LONDON. | Printed by Iohn Wolfe, and are to bee |
                                     sold at the little Shop ouer against the great South | doore of
-                                    Paules. 1591. Italics are used for the speeches and songs,
+                                    Paules. 1591.</title> Italics are used for the speeches and songs,
                                     though proper names within the speeches are often in normal
                                     type. Italics are also used in the descriptive text for Latin
-                                    phrases and some classical names.</title></p></note>
+                                    phrases and some classical names.</p></note>
+                        <idno type="authorSurname">anonymous</idno>
+                        <idno type="shortTitle">Honorable Entertainement at Elvetham</idno>
+                    </bibl>
+                    <bibl xml:id="HASEA1">
+                        <title type="edName">The Entertainment of <rs ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Person_Royalty">Queen Elizabeth</rs> at
+                            Elvetham</title>
+                        <note type="techDesc"><p><title type="sourceName">THE | HONORABLE | Entertainement gieuen to the | Queenes Maiestie in Progresse, at Elue- | tham in Hampshire, by the right | Honorable the Earle | of Hertford. | 1591 | [[woodcut of a coat of arms, presumably royal or that of the earl, with the following motto: 'A.LAMY FIDELE . POVR .JAMAIS.' A unicorn and lion flank a shield divided into six sections. The shield is topped by a crown, and above that an armoured helm with a crown above that, both in front of a fleur-de-lis. This is not the coat of arms of the earl of Hertford, though it resembles that of Jane Seymour, which however lacks the motto and upper section.]] | LONDON. | Printed by Iohn Wolfe, and are to bee | sold at the little Shop ouer against the great South | dore of Paules. 1591.</title> STC: 7583.</p></note>
                         <idno type="authorSurname">anonymous</idno>
                         <idno type="shortTitle">Honorable Entertainement at Elvetham</idno>
                     </bibl>
