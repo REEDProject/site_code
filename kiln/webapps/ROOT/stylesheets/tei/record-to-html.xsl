@@ -285,12 +285,12 @@
     <div class="show-for-medium">
       <div class="show-hide">
         <div class="heading">SHOW OR HIDE</div>
-        <label class="checkbox"><input type="checkbox" name="show-tags" autocomplete="off" /><span class="checkbox-inner"> </span>Tag</label>
+        <label class="checkbox"><input type="checkbox" name="show-tags" autocomplete="off" /><span class="checkbox-inner"> </span>Entities</label>
         <label class="checkbox"><input type="checkbox" name="show-terms" autocomplete="off" /><span class="checkbox-inner"> </span>Glossed Terms</label>
       </div>
       <div class="view-tags">
         <div class="heading">
-          <span>VIEW TAGS</span>
+          <span>VIEW ENTITIES</span>
         </div>
         <xsl:copy-of select="$entities" />
       </div>
@@ -309,7 +309,7 @@
         </div>
       </div>
       <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear left full-width">
-        <div class="filter-head jump-to-filter">VIEW TAGS</div>
+        <div class="filter-head jump-to-filter">VIEW ENTITIES</div>
         <div class="filter-content-wrapper relative">
           <div class="filter-content">
             <xsl:copy-of select="$entities" />

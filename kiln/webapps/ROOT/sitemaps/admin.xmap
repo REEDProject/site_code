@@ -287,6 +287,16 @@
       </map:match>
     </map:pipeline>
 
+    <!-- Generate CSV for editing comments on each record in a collection. -->
+    <map:pipeline>
+      <map:match id="local-admin-collection-editing-csv"
+                 pattern="collection/editing/*.csv">
+        <map:generate src="cocoon://internal/tei/preprocess-records/{1}.xml" />
+        <map:transform src="../stylesheets/admin/tei-to-editing-csv.xml" />
+        <map:serialize type="text" />
+      </map:match>
+    </map:pipeline>
+
     <!-- Pipeline for showing entities with the dates of their
          records. -->
     <map:pipeline>
