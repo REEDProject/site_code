@@ -11,7 +11,8 @@
             America</orgName></funder>
         <funder><orgName>Social Sciences and Humanities Research Council, Ottawa,
           Canada</orgName></funder>
-        <editor>Alexandra F. Johnston</editor>
+        <editor>Jane Cowling</editor>
+        <editor>Peter Greenfield</editor>
         <respStmt>
           <persName>Alexandra Atiya</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
@@ -51,7 +52,12 @@
         <respStmt>
           <persName>Cai Henderson</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Co-Translator, Paloegrapher</resp>
+          <resp>Co-Translator, Paleographer</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Jané Jacobs</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>mapping locations</resp>
         </respStmt>
         <respStmt>
           <persName>Alexandra F. Johnston</persName>
@@ -61,7 +67,7 @@
         <respStmt>
           <persName>Sally-Beth MacLean</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Principal Investigator, SSHRC grant; Director of Research and General Editor</resp>
+          <resp>Director of Research and General Editor</resp>
         </respStmt>
         <respStmt>
           <persName>Byron Moldofsky</persName>
@@ -69,13 +75,13 @@
           <resp>Cartographer</resp>
         </respStmt>
         <respStmt>
-          <persName xml:id="JN">Jamie Norrish</persName>
-          <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
+          <persName>Morgan Moore</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>Patrons research and patrons entity tagger</resp>
         </respStmt>
         <respStmt>
-          <persName>Jonah Shallit</persName>
-          <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>mapping locations</resp>
+          <persName xml:id="JN">Jamie Norrish</persName>
+          <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
         </respStmt>
         <respStmt>
           <persName>Suzanne Westfall</persName>
@@ -3917,8 +3923,8 @@ column and encompassing both rows -->
                 (<ex>c</ex> 1504–58), <rs ref="http://ereed.library.utoronto.ca/eats/entity/97645/" type="Collective_Title">countess of Devon</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/97523/" type="Collective_Title">marchioness of Exeter</rs>, widow of <rs ref="http://ereed.library.utoronto.ca/eats/entity/97693/" type="Person_Nobility">Henry
               Courtenay</rs> (<ex>c</ex> 1498–1539), 19th earl of Devon and 1st marquess of Exeter, and
               daughter of <rs ref="http://ereed.library.utoronto.ca/eats/entity/101342/" type="Person_Nobility">William Blount</rs> (<ex>c</ex> 1478–1534), 4th Baron Mountjoy. Gertrude
-              Courtenay, who was a great friend of <rs ref="http://ereed.library.utoronto.ca/eats/entity/43849/" type="Person_Royalty">Queen Mary</rs>, kept her primary residence at West
-              Horsley, Surrey. </p>
+              Courtenay, who was a great friend of <rs ref="http://ereed.library.utoronto.ca/eats/entity/43849/" type="Person_Royalty">Queen Mary</rs>, kept her primary residence at <name ref="http://ereed.library.utoronto.ca/eats/entity/157585/" type="Place_BoroughParish">West
+              Horsley</name>, <name ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County">Surrey</name>. </p>
           </div>
         </body>
       </text>
@@ -6761,8 +6767,8 @@ column and encompassing both rows -->
                     script</hi></note> the custome ys &amp; hathe ben owt of mynde aft<ex>er</ex>
                   dy<ex>n</ex>n<ex>er</ex> ye said daie ye bailives wifes w<ex>i</ex>th their
                 sisters ye co<ex>m</ex>burg<ex>es</ex> wifes orderlie in their degree by cooples to
-                walke foorthe to <name ref="http://ereed.library.utoronto.ca/eats/entity/124054/" type="Place_BoroughParish">Bugge berie</name><note type="foot">Bugge berie: <hi rend="italic"
-                    ><name ref="http://ereed.library.utoronto.ca/eats/entity/124054/" type="Place_BoroughParish">Buckbury</name>, on the east side of <name ref="http://ereed.library.utoronto.ca/eats/entity/87076/" type="Place_BoroughParish">Newport</name></hi></note> for custome &amp; pleasure
+                walke foorthe to <name ref="http://ereed.library.utoronto.ca/eats/entity/124054/" type="Place_BoroughParish"><name ref="http://ereed.library.utoronto.ca/eats/entity/124054/" type="Place_BoroughParish">Bugge berie</name></name><note type="foot">Bugge berie: <hi rend="italic"
+                    ><name ref="http://ereed.library.utoronto.ca/eats/entity/124054/" type="Place_BoroughParish"><name ref="http://ereed.library.utoronto.ca/eats/entity/124054/" type="Place_BoroughParish">Buckbury</name></name>, on the east side of <name ref="http://ereed.library.utoronto.ca/eats/entity/87076/" type="Place_BoroughParish">Newport</name></hi></note> for custome &amp; pleasure
                 onlye ye Lorde ye morisse daunc<ex>eres</ex> ye vice &amp; my<ex>n</ex>strell
                 plainge before them<ex>m</ex> w<ex>i</ex>th other pastyme for ye daye
                 p<ex>re</ex>pared. &amp; so to retorne in leeke man<ex>er</ex> so<ex>m</ex>what
@@ -10736,7 +10742,7 @@ later 2nd Baron Hunsdon -->]
 
               <ab type="indent">The same day after dinner, about three of the clocke, tenne of the
                   Earle<note type="collation">the Earle] my L<ex>orde</ex>
-                  <ex>Q1</ex></note> of Hertfords seruants, all Somersetshire men, in a square
+                  <ex>Q1</ex></note> of Hertfords seruants, all <name ref="http://ereed.library.utoronto.ca/eats/entity/2255/" type="Place_County">Somersetshire</name> men, in a square
                 greene court, before hir Maiesties windowe, did lay<note type="collation">lay] hang
                   vp <ex>Q1</ex></note> lines, squaring out the forme of a Tennis-court, and making
                 a crosseline in the midle. In this square they (being stript out of their dublets)
@@ -23224,6 +23230,8 @@ insert HASOCC -->. In the
                 Infirmario &amp; <term ref="gloss:episcopus-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/21537/" type="Drama_Character">Ep<ex>iscop</ex>o <term ref="gloss:iuuenis-1">Iuuenu<ex>m</ex></term></rs></term> <rs ref="http://ereed.library.utoronto.ca/eats/entity/41365/" type="CalendarDay_Liturgical">die Innocentiu<ex>m</ex></rs> v s<gap
                   reason="omitted"/>.</ab>
             </div>
+            </div>
+          <div xml:lang="eng" type="translation">
             <div>
               <head>single membrane <supplied>(29 September–29 September)
                 (Expenses)</supplied></head>
@@ -37630,7 +37638,7 @@ cross refs --></p>
               <table>
                 <row>
                   <cell>Taken out of the Coofers w<ex>hi</ex>ch was paid &amp; deliuered unto James
-                    Beale ‸<add place="above">musition</add> in the Counsell house the day abouesaid
+                    Beale ‸<add place="above">musition</add> in the <name ref="http://ereed.library.utoronto.ca/eats/entity/157414/" type="Place_Feature">Counsell house</name> the day abouesaid
                     for one yeare gratuitie geuen him &amp; his companie at the request of
                       S<ex>i</ex>r Ric<ex>hard</ex> Titchborne Knight</cell>
                   <cell rend="right">xl s.</cell>
