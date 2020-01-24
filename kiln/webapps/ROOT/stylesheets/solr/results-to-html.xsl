@@ -60,8 +60,8 @@
           <xsl:with-param name="facet-field" select="$name" />
           <xsl:with-param name="facet-value" select="$value" />
         </xsl:call-template>
+        <xsl:call-template name="display-facet-count" />
       </a>
-      <xsl:call-template name="display-facet-count" />
     </li>
   </xsl:template>
 
