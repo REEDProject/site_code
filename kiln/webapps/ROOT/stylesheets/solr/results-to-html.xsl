@@ -115,10 +115,10 @@
                 mode="search-results">
     <xsl:choose>
       <xsl:when test=". = 'facet_collectives_guild_occupational'">
-        <xsl:text>Occupational Guild</xsl:text>
+        <xsl:text>Guild, Occupational</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_collectives_guild_religious'">
-        <xsl:text>Religious Guild</xsl:text>
+        <xsl:text>Guild, Religious</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_entertainments_custom'">
         <xsl:text>Seasonal Custom</xsl:text>
