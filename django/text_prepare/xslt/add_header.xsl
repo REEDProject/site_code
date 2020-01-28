@@ -23,7 +23,7 @@
                        replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/">
               <p>URIs using the <code>eats</code> prefix are references to EATS entities.</p>
             </prefixDef>
-            <prefixDef ident="gloss" matchPattern="([A-Za-z0-9_-]+)"
+            <prefixDef ident="gloss" matchPattern="([\S]+)"
                        replacementPattern="../glossary.xml#$1">
               <p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the glossary.xml file. For example, <code>gloss:histrio-1</code> dereferences to <code>glossary.xml#histrio-1</code>.</p>
             </prefixDef>
