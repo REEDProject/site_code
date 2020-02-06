@@ -161,28 +161,6 @@
       <change when="2019-11-21" who="#PG">lords to lord<ex>es</ex>in HAWIEK</change>
       <change when="2019-11-21" who="#PG">knights to knight<ex>es</ex>in HAWIEK</change>
       <change when="2019-11-21" who="#PG">and to And in HAWIEK</change>
-      <change when="2018-09-26" who="#KC">Checked and retagged where appropriate "corpus christi"
-        (ID #41497) to both "corpus christi" + "summer games"</change>
-      <change when="2018-09-26" who="#KC">Retagged things "whitsun" (entity ID 41139) to doublt tag
-        as Whitsuntide + summer games, where appropriate</change>
-      <change when="2018-09-14" who="#KC">Retagged morris related entities tagged as 'summer game'
-        and revised tag to 'morris'</change>
-      <change when="2018-09-12" who="#KC">Retagged instances of Maid Marion from "Maid Marion" +
-        "summer games" to "Maid Marion" + "morris"</change>
-      <change when="2018-09-06" who="#KC">Revised tagging for cases where "ales" has been tagged as
-        "summer games", "ales" now tagged as "ales and dinners"</change>
-      <change when="2018-07-25" who="#KC">For "ffreris" in "ffreris Cote", revised tagging so that
-        it is double tagged as "Friar" (entity ID 73651) + "morris" (entity ID 79074)</change>
-      <change when="2018-06-29" who="#KC">For "Robin Hood" (entity ID 35310) tagging, changed order
-        of two rs URLs so "Robin Hood" is first, "summer games (35779) is second. Also revised type
-        attribute to "Drama_Character" from "Entertainment_SeasonalCustom"</change>
-      <change when="2018-06-29" who="#KC">For "summer lords" tagging (entity ID 59852), changed
-        order of the two rs IDs so the summer lord ID is first and seasonal custom ID second. This
-        allows HTML display to take users to summer lord entity page. Also changed type attribute to
-        "Drama_Character" from "Entertainment_SeasonalCustoms" to match new order of IDs</change>
-      <change when="2018-06-28" who="#KC">For "boy bishops" tagging (entity ID 21537), changed type
-        from "Entertainment_SeasonalCustoms" to "Drama_Character"</change>
-      <change when="2017-09-14" who="#CB">Added collection data to teiHeader</change>
     </revisionDesc>
   </teiHeader>
   <text>
