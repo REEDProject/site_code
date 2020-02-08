@@ -160,15 +160,13 @@
        first. -->
   <xsl:template match="tei:text[@type='record']" mode="referenced">
     <xsl:copy>
-      <xsl:apply-templates mode="referenced-record" select="@*|node()" />
+      <xsl:apply-templates mode="referenced-record" select="@*|tei:body/tei:head" />
     </xsl:copy>
   </xsl:template>
 
-  <xsl:template match="tei:div" mode="referenced-record" />
-
   <xsl:template match="@*|node()" mode="referenced-record">
     <xsl:copy>
-      <xsl:apply-templates select="@*|node()" />
+      <xsl:apply-templates mode="referenced-record" select="@*|node()" />
     </xsl:copy>
   </xsl:template>
 
