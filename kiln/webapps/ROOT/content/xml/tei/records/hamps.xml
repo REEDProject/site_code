@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="hamps">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="hamps"><rs ref="http://ereed.library.utoronto.ca/eats/entity/125079/" type="Collective_Troupe">ministralli d<ex>omi</ex>ni
+                  cardinalis</rs>
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -25690,12 +25691,12 @@ later 2nd Baron Hunsdon -->]
 
               <gap reason="omitted"/>
 
-              <ab><gap reason="omitted"/>In dat<ex>is</ex> ij ministrall<ex>is</ex> d<ex>omi</ex>ni
-                  Cardinal<ex>is</ex><note type="foot">Cardinal<ex>is</ex>: <hi rend="italic">Henry
-                    Beaufort (1375?–1447), bishop of Winchester (1404–47) and cardinal
+              <ab><gap reason="omitted"/>In dat<ex>is</ex> ij <rs ref="http://ereed.library.utoronto.ca/eats/entity/125079/" type="Collective_Troupe">ministrall<ex>is</ex> d<ex>omi</ex>ni
+                Cardinal<ex>is</ex></rs><note type="foot">Cardinal<ex>is</ex>: <hi rend="italic"><rs ref="http://ereed.library.utoronto.ca/eats/entity/108222/" type="Person_Clergy">Henry
+                    Beaufort</rs> (1375?–1447), bishop of Winchester (1404–47) and cardinal
                     (1426/7–47)</hi></note> ve<ex>n</ex>ient<ex>ibus</ex> ad Colleg<ex>ium</ex>
                   xix<hi rend="superscript">o</hi> die Ianuar<ex>ij</ex> cu<ex>m</ex> xij d.
-                  dat<ex>is</ex> ij ministrall<ex>is</ex> duc<ex>is</ex> Gloucestr<ex>ie</ex>
+                  dat<ex>is</ex> ij <rs ref="http://ereed.library.utoronto.ca/eats/entity/55633/" type="Collective_Troupe">ministrall<ex>is</ex> duc<ex>is</ex> Gloucestr<ex>ie</ex></rs>
                   ve<ex>n</ex>ient<ex>ibus</ex> ad Colleg<ex>ium</ex> in crasti<ex>n</ex>o
                  <rs ref="http://ereed.library.utoronto.ca/eats/entity/42245/" type="CalendarDay_Liturgical"> Purificat<ex>ionis</ex> b<ex>ea</ex>te Marie</rs> ij s<gap reason="omitted"/>.</ab>
             </div>
@@ -25838,8 +25839,8 @@ later 2nd Baron Hunsdon -->]
                 expenses)</supplied></head>
               <pb n="[4d]" type="membrane"/>
 
-              <ab><gap reason="omitted"/>In dat<ex>is</ex> ij ministrall<ex>is</ex> d<ex>omi</ex>ni
-                  Duc<ex>is</ex> Gloucestr<ex>ie</ex> ve<ex>n</ex>ient<ex>ibus</ex> ad
+              <ab><gap reason="omitted"/>In dat<ex>is</ex> ij <rs ref="http://ereed.library.utoronto.ca/eats/entity/55633/" type="Collective_Troupe">ministrall<ex>is</ex> d<ex>omi</ex>ni
+                  Duc<ex>is</ex> Gloucestr<ex>ie</ex></rs> ve<ex>n</ex>ient<ex>ibus</ex> ad
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/106806/" type="Place_Feature">Collegiu<ex>m</ex></rs> vij<hi rend="superscript">o</hi> die Octobr<ex>is</ex> xij
                   d<gap reason="omitted"/>.</ab>
 
@@ -25908,9 +25909,9 @@ later 2nd Baron Hunsdon -->]
 
               <gap reason="omitted"/>
 
-              <ab>In donis j ministrall<ex>o</ex> d<ex>omi</ex>no Epi<ex>sc</ex>o<ex>pi</ex>
-                  Wynton<ex>iensis</ex><note type="foot">Epi<ex>sc</ex>o<ex>pi</ex>
-                    Wynton<ex>iensis</ex>: <hi rend="italic">Henry Beaufort (1375?–1447), bishop of
+              <ab>In donis j <rs ref="http://ereed.library.utoronto.ca/eats/entity/125079/" type="Collective_Troupe">ministrall<ex>o</ex> d<ex>omi</ex>no Epi<ex>sc</ex>o<ex>pi</ex>
+                  Wynton<ex>iensis</ex></rs><note type="foot">Epi<ex>sc</ex>o<ex>pi</ex>
+                    Wynton<ex>iensis</ex>: <hi rend="italic"><rs ref="http://ereed.library.utoronto.ca/eats/entity/108222/" type="Person_Clergy">Henry Beaufort</rs> (1375?–1447), bishop of
                     Winchester (1404–47) and cardinal (1426/7–47)</hi></note> .iij. s. iiij. d<gap
                   reason="omitted"/>. In iij <rs ref="http://ereed.library.utoronto.ca/eats/entity/147358/" type="Thing_LiveryRegalia">tog<ex>is</ex></rs> p<ex>ro</ex> iij <rs ref="http://ereed.library.utoronto.ca/eats/entity/156198/" type="Collective_Office">ministrall<ex>is</ex></rs>
                 .xvij. s. viij. d<gap reason="omitted"/>.</ab>
@@ -25951,9 +25952,9 @@ later 2nd Baron Hunsdon -->]
 
               <gap reason="omitted"/>
 
-              <ab><gap reason="omitted"/>In dat<ex>is</ex> ij ministrall<ex>is</ex> d<ex>omi</ex>ni
-                  Cardinal<ex>is</ex><note type="foot">Cardinal<ex>is</ex>: <hi rend="italic">Henry
-                    Beaufort (1375?–1447), bishop of Winchester (1404–47) and cardinal
+              <ab><gap reason="omitted"/>In dat<ex>is</ex> ij <rs ref="http://ereed.library.utoronto.ca/eats/entity/125079/" type="Collective_Troupe">ministrall<ex>is</ex> d<ex>omi</ex>ni
+                Cardinal<ex>is</ex></rs><note type="foot">Cardinal<ex>is</ex>: <hi rend="italic"><rs ref="http://ereed.library.utoronto.ca/eats/entity/108222/" type="Person_Clergy">Henry
+                    Beaufort</rs> (1375?–1447), bishop of Winchester (1404–47) and cardinal
                     (1426/7–47)</hi></note> ve<ex>n</ex>ient<ex>ibus</ex> ad <rs ref="http://ereed.library.utoronto.ca/eats/entity/106806/" type="Place_Feature">Collegiu<ex>m</ex></rs> x<hi
                   rend="superscript">o</hi> die Ianuar<ex>ij</ex> xx d<gap reason="omitted"/>.</ab>
             </div>
@@ -25986,8 +25987,7 @@ later 2nd Baron Hunsdon -->]
 
               <ab>die mart<ex>is</ex><note type="foot">die mart<ex>is</ex>: <hi rend="italic">20
                     February 1434/5</hi></note>
-                <gap reason="omitted"/> Eod<ex>e</ex>m die duo ministralli d<ex>omi</ex>ni
-                  cardinalis<note type="foot">cardinalis: <hi rend="italic">Henry Beaufort, bishop
+                <gap reason="omitted"/> Eod<ex>e</ex>m die duo <note type="foot">cardinalis: <hi rend="italic"><rs ref="http://ereed.library.utoronto.ca/eats/entity/108222/" type="Person_Clergy">Henry Beaufort</rs>, bishop
                     of Winchester (1404–47) and cardinal (1426/7–47)</hi></note> ad ce<ex>nam</ex>
                   cu<ex>m</ex> so<ex>cijs</ex>.</ab>
 
@@ -26001,8 +26001,8 @@ later 2nd Baron Hunsdon -->]
 
               <ab>die m<ex>er</ex>cur<ex>ij</ex><note type="foot">die m<ex>er</ex>cur<ex>ij</ex>:
                     <hi rend="italic">5 September 1435</hi></note>
-                <gap reason="omitted"/> minstrall<ex>us</ex> d<ex>omi</ex>ni duc<ex>is</ex>
-                  Gloucestr<ex>ie</ex> ad p<ex>r</ex>an<ex>dium</ex> cu<ex>m</ex> so<ex>cijs</ex>.
+                <gap reason="omitted"/> <rs ref="http://ereed.library.utoronto.ca/eats/entity/55633/" type="Collective_Troupe">minstrall<ex>us</ex> d<ex>omi</ex>ni duc<ex>is</ex>
+                  Gloucestr<ex>ie</ex></rs> ad p<ex>r</ex>an<ex>dium</ex> cu<ex>m</ex> so<ex>cijs</ex>.
                   ffamul<ex>us</ex> eiusd<ex>e</ex>m ad p<ex>r</ex>an<ex>dium</ex> cu<ex>m</ex>
                   fa<ex>mulis</ex>.</ab>
 
@@ -26173,9 +26173,9 @@ later 2nd Baron Hunsdon -->]
                 expenses)</supplied></head>
               <pb n="[4d]" type="membrane"/>
 
-              <ab><gap reason="omitted"/>In datis cuida<ex>m</ex> ministrallo d<ex>omi</ex>ni
-                  Cardinal<ex>is</ex><note type="foot">Cardinal<ex>is</ex>: <hi rend="italic">Henry
-                    Beaufort (1375?–1447), bishop of Winchester (1404–47) and cardinal
+              <ab><gap reason="omitted"/>In datis cuida<ex>m</ex><rs ref="http://ereed.library.utoronto.ca/eats/entity/125079/" type="Collective_Troupe"> ministrallo d<ex>omi</ex>ni
+                Cardinal<ex>is</ex></rs><note type="foot">Cardinal<ex>is</ex>: <hi rend="italic"><rs ref="http://ereed.library.utoronto.ca/eats/entity/108222/" type="Person_Clergy">Henry
+                    Beaufort</rs> (1375?–1447), bishop of Winchester (1404–47) and cardinal
                     (1426/7–47)</hi></note> venie<ex>n</ex>t<ex>i</ex> ad <rs ref="http://ereed.library.utoronto.ca/eats/entity/106806/" type="Place_Feature">Collegiu<ex>m</ex></rs> xviij
                 die me<ex>n</ex>s<ex>e</ex> Ianuar<ex>ij</ex> xij d<gap reason="omitted"/>.</ab>
 
@@ -26207,11 +26207,11 @@ later 2nd Baron Hunsdon -->]
                 expenses)</supplied></head>
               <pb n="[4d]" type="membrane"/>
 
-              <ab><gap reason="omitted"/>In dat<ex>is</ex> ministrall' Cancellarij Anglie<note
-                  type="foot">Cancellarij Anglie: <hi rend="italic">John Stafford (d. 1452), bishop
+              <ab><gap reason="omitted"/>In dat<ex>is</ex> <rs ref="http://ereed.library.utoronto.ca/eats/entity/156331/" type="Collective_Troupe">ministrall' Cancellarij Anglie</rs><note
+                  type="foot">Cancellarij Anglie: <hi rend="italic"><rs ref="http://ereed.library.utoronto.ca/eats/entity/156231/" type="Person_Clergy">John Stafford</rs> (d. 1452), bishop
                     of Bath and Wells (1424–43) and chancellor of England (1431/2–49/50)</hi></note>
-                &amp; Hugoni ministrall<ex>o</ex> Ep<ex>iscop</ex>i <term ref="gloss:Dubenia-1">Dublen<ex>ie</ex></term><note
-                  type="foot">Ep<ex>iscop</ex>i Dublen<ex>ie</ex>: <hi rend="italic">Richard Talbot
+                &amp; <rs ref="http://ereed.library.utoronto.ca/eats/entity/177544/" type="Person_Commoner">Hugoni</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/177518/" type="Collective_Troupe">ministrall<ex>o</ex> Ep<ex>iscop</ex>i <term ref="gloss:Dubenia-1">Dublen<ex>ie</ex></term></rs><note
+                  type="foot">Ep<ex>iscop</ex>i Dublen<ex>ie</ex>: <hi rend="italic"><rs ref="http://ereed.library.utoronto.ca/eats/entity/177421/" type="Person_Clergy">Richard Talbot</rs>
                     (d. 1449), archbishop of Dublin (1417–49) and lord chancellor of Ireland
                     (1423–41)</hi></note> xx d<gap reason="omitted"/>.</ab>
             </div>
@@ -26242,13 +26242,13 @@ later 2nd Baron Hunsdon -->]
 
               <gap reason="omitted"/>
 
-              <ab><gap reason="omitted"/>In datis mimis D<ex>omi</ex>ni Cardinal<ex>is</ex><note
-                  type="foot">Cardinal<ex>is</ex>: <hi rend="italic">Henry Beaufort(1375?–1447),
+              <ab><gap reason="omitted"/>In datis <rs ref="http://ereed.library.utoronto.ca/eats/entity/177601/" type="Collective_Troupe">mimis D<ex>omi</ex>ni Cardinal<ex>is</ex></rs><note
+                type="foot">Cardinal<ex>is</ex>: <hi rend="italic"><rs ref="http://ereed.library.utoronto.ca/eats/entity/108222/" type="Person_Clergy">Henry Beaufort</rs> (1375?–1447),
                     bishop of Winchester (1404–47) and cardinal (1426/7–47)</hi></note>
                   venientib<ex>us</ex> ad Collegiu<ex>m</ex> in <rs ref="http://ereed.library.utoronto.ca/eats/entity/41365/" type="CalendarDay_Liturgical">festo Innoc<ex>entium</ex></rs>
                   cu<ex>m</ex> xij d. Dat<ex>is</ex> <rs ref="http://ereed.library.utoronto.ca/eats/entity/178103/" type="Person_Commoner">Hogoni mimo</rs> &amp; <rs ref="http://ereed.library.utoronto.ca/eats/entity/1261/" type="Entertainer_Type">soc<ex>io</ex> suo</rs>
                   venient<ex>ibus</ex> ad coll<ex>egium</ex> altera vice ij s<gap reason="omitted"
-                  />. Et in datis mimis Ciuitat<ex>is</ex> <term ref="gloss:Wintonia-1">Wynton<ex>ie</ex></term> ex mandato Custodis xij
+                  />. Et in datis <rs ref="http://ereed.library.utoronto.ca/eats/entity/156198/" type="Collective_Office">mimis Ciuitat<ex>is</ex> Wyntoni<ex>ie</ex></rs><term ref="gloss:Wintonia-1">Wynton<ex>ie</ex></term> ex mandato Custodis xij
                 d<gap reason="omitted"/>. Et in dat<ex>o</ex> vni <rs ref="http://ereed.library.utoronto.ca/eats/entity/1261/" type="Entertainer_Type">mimo</rs> tenenti de <rs ref="http://ereed.library.utoronto.ca/eats/entity/107092/" type="Place_BoroughParish">Elyng</rs> iiij d<gap
                   reason="omitted"/>.</ab>
             </div>
@@ -26271,7 +26271,7 @@ later 2nd Baron Hunsdon -->]
           </div>
           <div type="endnote">
             <p> The manor of <rs ref="http://ereed.library.utoronto.ca/eats/entity/107092/" type="Place_BoroughParish">Eling</rs>, on the west side of Southampton Water, was granted to <rs ref="http://ereed.library.utoronto.ca/eats/entity/106806/" type="Place_Feature">Winchester
-              College</rs> by its founder, William of Wykeham (<hi rend="italic">c</hi> 1324–1404, bishop
+              College</rs> by its founder,<rs ref="http://ereed.library.utoronto.ca/eats/entity/87704/" type="Person_Clergy"> William of Wykeham</rs> (<hi rend="italic">c</hi> 1324–1404, bishop
               of Winchester 1366–1404), in 1385 (<title>VCH: Hampshire</title>, vol 4, pp 546–58,
                 <title>British History Online</title>,
               http://www.british-history.ac.uk/vch/hants/vol4/pp546-558 [accessed 19 June 2018]).
@@ -26293,9 +26293,9 @@ later 2nd Baron Hunsdon -->]
 
               <gap reason="omitted"/>
 
-              <ab><gap reason="omitted"/>In dat<ex>is</ex> ministrall<ex>is</ex> D<ex>omi</ex>ni
-                  Cardinal<ex>is</ex><note type="foot">Cardinal<ex>is</ex>: <hi rend="italic">Henry
-                    Beaufort (1375?–1447), bishop of Winchester (1404–47) and cardinal
+              <ab><gap reason="omitted"/>In dat<ex>is</ex> <rs ref="http://ereed.library.utoronto.ca/eats/entity/125079/" type="Collective_Troupe">ministrall<ex>is</ex> D<ex>omi</ex>ni
+                Cardinal<ex>is</ex></rs><note type="foot">Cardinal<ex>is</ex>: <hi rend="italic"><rs ref="http://ereed.library.utoronto.ca/eats/entity/108222/" type="Person_Clergy">Henry
+                    Beaufort</rs> (1375?–1447), bishop of Winchester (1404–47) and cardinal
                     (1426/7–47)</hi></note> xv die Ianuar<ex>ij</ex> xx d<gap reason="omitted"
                 />.</ab>
             </div>
@@ -26330,8 +26330,8 @@ later 2nd Baron Hunsdon -->]
                 <row>
                   <cell>Lune<note type="foot">Lune: <hi rend="italic">15 January
                     1441/2</hi></note></cell>
-                  <cell>ij ministralli do<ex>min</ex>i Cardinal<ex>is</ex><note type="foot"
-                        >Cardinal<ex>is</ex>: <hi rend="italic">Henry Beaufort (1375?–1447), bishop
+                  <cell>ij <rs ref="http://ereed.library.utoronto.ca/eats/entity/125079/" type="Collective_Troupe">ministralli do<ex>min</ex>i Cardinal<ex>is</ex></rs><note type="foot"
+                    >Cardinal<ex>is</ex>: <hi rend="italic"><rs ref="http://ereed.library.utoronto.ca/eats/entity/108222/" type="Person_Clergy">Henry Beaufort</rs> (1375?–1447), bishop
                         of Winchester (1404–47) and cardinal (1426/7–47)</hi></note> ad
                       p<ex>r</ex>an<ex>dium</ex> cu<ex>m</ex> so<ex>ciis</ex> fa<ex>mulus</ex>
                       eor<ex>um</ex> ad p<ex>r</ex>an<ex>dium</ex> cu<ex>m</ex>
@@ -26407,16 +26407,16 @@ later 2nd Baron Hunsdon -->]
 
               <gap reason="omitted"/>
 
-              <ab><gap reason="omitted"/>Et in dat<ex>is</ex> ij ministrall<ex>is</ex>
-                D<ex>omi</ex>ni Cardinal<ex>is</ex><note type="foot">Cardinal<ex>is</ex>: <hi
-                    rend="italic">Henry Beaufort (1375?–1447), bishop of Winchester (1404–47) and
+              <ab><gap reason="omitted"/>Et in dat<ex>is</ex> ij <rs ref="http://ereed.library.utoronto.ca/eats/entity/125079/" type="Collective_Troupe">ministrall<ex>is</ex>
+                D<ex>omi</ex>ni Cardinal<ex>is</ex></rs><note type="foot">Cardinal<ex>is</ex>: <hi
+                  rend="italic"><rs ref="http://ereed.library.utoronto.ca/eats/entity/108222/" type="Person_Clergy">Henry Beaufort</rs> (1375?–1447), bishop of Winchester (1404–47) and
                     cardinal (1426/7–47)</hi></note> Anglie ve<ex>n</ex>ient<ex>ibus</ex> ad
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/106806/" type="Place_Feature">Colleg<ex>ium</ex></rs> xj<hi rend="superscript">o</hi> die Ianuarij xx d. Et in
-                  dat<ex>is</ex> iiij ministrall<ex>is</ex> Comit<ex>is</ex> Arundell
+                  dat<ex>is</ex> iiij <rs ref="http://ereed.library.utoronto.ca/eats/entity/158667/" type="Collective_Troupe">ministrall<ex>is</ex> Comit<ex>is</ex> Arundell</rs>
                   ve<ex>n</ex>ient<ex>ibus</ex> ad Colleg<ex>ium</ex> xviij<hi rend="superscript"
                   >o</hi> die Ianuarij xx d<gap reason="omitted"/>. Et in dat<ex>is</ex> iij
-                  ministrall<ex>is</ex> Ducis<note type="foot">Ducis: D <hi rend="italic">written
-                    over another letter</hi></note> Som<ex>er</ex>set p<ex>re</ex>d<ex>ic</ex>to
+                  <rs ref="http://ereed.library.utoronto.ca/eats/entity/178014/" type="Collective_Troupe">ministrall<ex>is</ex> Ducis<note type="foot">Ducis: D <hi rend="italic">written
+                    over another letter</hi></note> Som<ex>er</ex>set</rs> p<ex>re</ex>d<ex>ic</ex>to
                   mens<ex>e</ex> Iulij xij d<gap reason="omitted"/>.</ab>
             </div>
           </div>
@@ -26453,8 +26453,8 @@ later 2nd Baron Hunsdon -->]
                 <row>
                   <cell>Ven<ex>er</ex>is<note type="foot">Ven<ex>er</ex>is: <hi rend="italic">18
                         January 1443/4</hi></note></cell>
-                  <cell>Duo mimi d<ex>omi</ex>ni Cardinal<ex>is</ex><note type="foot"
-                        >Cardinal<ex>is</ex>: <hi rend="italic">Henry Beaufort (1375?–1447), bishop
+                  <cell>Duo <rs ref="http://ereed.library.utoronto.ca/eats/entity/177601/" type="Collective_Troupe">mimi d<ex>omi</ex>ni Cardinal<ex>is</ex></rs><note type="foot"
+                    >Cardinal<ex>is</ex>: <hi rend="italic"><rs ref="http://ereed.library.utoronto.ca/eats/entity/108222/" type="Person_Clergy">Henry Beaufort</rs> (1375?–1447), bishop
                         of Winchester (1404–47) and cardinal (1426/7–47)</hi></note> ad
                       p<ex>r</ex>an<ex>dium</ex> cu<ex>m</ex> so<ex>cijs</ex><gap reason="omitted"
                     /></cell>
@@ -26471,8 +26471,8 @@ later 2nd Baron Hunsdon -->]
                 <row>
                   <cell>M<ex>er</ex>cur<ex>ij</ex><note type="foot">M<ex>er</ex>cur<ex>ij</ex>: <hi
                         rend="italic">23 January 1443/4</hi></note></cell>
-                  <cell><gap reason="omitted"/>&amp; iiij ministralli Comit<ex>is</ex> de
-                      Aru<ex>n</ex>dell ad p<ex>r</ex>an<ex>dium</ex> cu<ex>m</ex>
+                  <cell><gap reason="omitted"/>&amp; iiij <rs ref="http://ereed.library.utoronto.ca/eats/entity/158667/" type="Collective_Troupe">ministralli Comit<ex>is</ex> de
+                      Aru<ex>n</ex>dell</rs> ad p<ex>r</ex>an<ex>dium</ex> cu<ex>m</ex>
                       so<ex>cijs</ex><gap reason="omitted"/></cell>
                 </row>
               </table>
@@ -26566,7 +26566,7 @@ later 2nd Baron Hunsdon -->]
                 <row>
                   <cell>Lune<note type="foot">Lune: <hi rend="italic">27 January
                     1443/4</hi></note></cell>
-                  <cell>Duo Ministralli Cardinal<ex>is</ex><note type="foot">Cardinal<ex>is</ex>:
+                  <cell>Duo <rs ref="http://ereed.library.utoronto.ca/eats/entity/125079/" type="Collective_Troupe">Ministralli Cardinal<ex>is</ex></rs><note type="foot">Cardinal<ex>is</ex>:
                         <hi rend="italic">Henry Beaufort (1375?–1447), bishop of Winchester
                         (1404–47) and cardinal (1426/7–47)</hi></note>
                     <gap reason="omitted"/> ad p<ex>r</ex>an<ex>dium</ex> cu<ex>m</ex>
