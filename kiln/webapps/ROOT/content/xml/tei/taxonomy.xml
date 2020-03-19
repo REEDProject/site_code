@@ -14258,7 +14258,21 @@ RSPO11 --> intended to establish only the
                         <idno type="authorSurname">Malone</idno>
                         <idno type="shortTitle">'Progress of the English Stage'</idno>
                     </bibl>
-
+                    <msDesc xml:id="RSLLRE">
+                        <msIdentifier>
+                            <settlement>London</settlement>
+                            <repository sameAs="#LMA"/>
+                            <idno type="shelfmark">CLC/119/MS23737/115, no. 4</idno>
+                            <msName>Lease of the Little Rose Estate</msName>
+                        </msIdentifier>
+                        <ab type="techDesc"><date>7 August 1650</date>; English; parchment; single sheet; 614mm x
+                            450mm; display heading and some display words and phrases; recently
+                            conserved, generally good condition, small tear in personal name of
+                            endorsement; folded 4 times and filed in white envelope, indented
+                            and endorsed at bottom: '<damage><gap unit="chars" extent="3"/></damage> Wallington,' addressed on dorse:
+                            'Sealed subscribed &amp; deliu<ex>er</ex>ed | in the p<ex>re</ex>sence of | Edward
+                            Meredith | Humfrey Lewis Scr<ex>ivenor</ex>.'</ab>
+                    </msDesc>
                 </listBibl>
             </div>
         </body>
