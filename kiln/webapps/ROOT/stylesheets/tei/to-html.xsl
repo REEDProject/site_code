@@ -53,12 +53,6 @@
     </tr>
   </xsl:template>
 
-  <xsl:template match="tei:damage">
-    <xsl:text>&lt;</xsl:text>
-    <xsl:apply-templates />
-    <xsl:text>&gt;</xsl:text>
-  </xsl:template>
-
   <xsl:template match="tei:ex">
     <i>
       <xsl:apply-templates />
