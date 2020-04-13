@@ -24,6 +24,11 @@ class ContainingPlaceListFilter(admin.SimpleListFilter):
             return queryset
 
 
+class PlaceTypeAdmin(admin.ModelAdmin):
+
+    ordering = ('name',)
+
+
 class PlaceAdmin(LeafletGeoAdmin):
 
     list_display = ('name', 'place_type', 'container', 'canonical_url')
@@ -49,5 +54,5 @@ class PlaceAdmin(LeafletGeoAdmin):
                                    extra_context=extra_context)
 
 
-gis_admin.site.register(PlaceType)
+gis_admin.site.register(PlaceType, PlaceTypeAdmin)
 gis_admin.site.register(Place, PlaceAdmin)
