@@ -249,8 +249,8 @@
                         <category xml:id="st-george-chapel">
                             <catDesc>St George's Chapel Archives and Chapter Library</catDesc>
                         </category>
-                        <category xml:id="salisbury-cathedral-library">
-                            <catDesc>Salisbury Cathedral Library</catDesc>
+                        <category xml:id="salisbury-cathedral-archives">
+                            <catDesc>Salisbury Cathedral Archives</catDesc>
                         </category>
                         <category xml:id="southampton-city-archives">
                             <catDesc>Southampton City Archives</catDesc>
@@ -4134,7 +4134,7 @@ through <rs ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Pers
                     <msDesc xml:id="HADIAC">
                         <msIdentifier>
                             <settlement>Salisbury</settlement>
-                            <repository sameAs="#salisbury-cathedral-library"/>
+                            <repository sameAs="#salisbury-cathedral-archives"/>
                             <idno type="shelfmark">FG/1/1</idno>
                             <msName>Synodal Statutes of Bishop <rs ref="http://ereed.library.utoronto.ca/eats/entity/154793/" type="Person_Clergy">William of Raleigh</rs></msName>
                         </msIdentifier>
