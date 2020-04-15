@@ -12,6 +12,7 @@ class PlaceType(models.Model):
     name = models.CharField(max_length=50, unique=True)
 
     class Meta:
+        ordering = ['name']
         verbose_name = 'Place Type'
 
     def natural_key(self):
@@ -67,7 +68,7 @@ class Place(models.Model):
     placeholder_coordinates = models.GeometryField(
         blank=True, help_text=constants.PLACEHOLDER_COORDINATES_FIELD_HELP,
         null=True, srid=constants.SRID)
-    container = models.ForeignKey('Place', null=True,
+    container = models.ForeignKey('Place', blank=True, null=True,
                                   related_name='contained_places')
     patrons_label_flag = models.IntegerField(
         'label flag', blank=True, choices=constants.LABEL_FLAG_CHOICES,
