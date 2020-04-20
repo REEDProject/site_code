@@ -2,6 +2,7 @@
 <?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="hamps">
+              <ab><hi rend="right">Sum<ex>ma</ex> vj lib. xix s. viij d. ob.</hi></ab>
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -40761,7 +40762,6 @@ later 2nd Baron Hunsdon -->]
                 </row>
               </table>
 
-              <ab><hi rend="right">Sum<ex>ma</ex> vj lib. xix s. viij d. ob.</hi></ab>
 
               <ab>the<note type="marginal" place="margin_left">Iune xxiij<hi rend="superscript"
                     >o</hi></note> receipt<ex>es</ex> on monnday next after viz.</ab>
@@ -40816,7 +40816,7 @@ later 2nd Baron Hunsdon -->]
                   <cell rend="right">ix s. iiij d.</cell>
                 </row>
                 <row>
-                  <cell>Rec<ex>eived</ex> for the <rs ref="http://ereed.library.utoronto.ca/eats/entity/40453/" type="Drama_Type">play</rs> at Pewter</cell>
+                  <cell>Rec<ex>eived</ex> for the <rs ref="http://ereed.library.utoronto.ca/eats/entity/40677/" type="Entertainment_Type">play</rs> at Pewter</cell>
                   <cell rend="right">x s. vj d.</cell>
                 </row>
                 <row>
@@ -41043,7 +41043,7 @@ later 2nd Baron Hunsdon -->]
                   <cell rend="right">v s. 0</cell>
                 </row>
                 <row>
-                  <cell>p<ex>ai</ex>d to <rs ref="http://ereed.library.utoronto.ca/eats/entity/206736/" type="Person_Commoner">Whitburne</rs> for his <rs ref="http://ereed.library.utoronto.ca/eats/entity/40453/" type="Drama_Type">play</rs></cell>
+                  <cell>p<ex>ai</ex>d to <rs ref="http://ereed.library.utoronto.ca/eats/entity/206736/" type="Person_Commoner">Whitburne</rs> for his play</cell>
                   <cell rend="right">ij s. 0</cell>
                 </row>
                 <row>
@@ -41437,7 +41437,7 @@ later 2nd Baron Hunsdon -->]
                   <cell rend="right">9 s. 7 d.</cell>
                 </row>
                 <row>
-                  <cell>Item for liveries</cell>
+                  <cell>Item for <rs ref="http://ereed.library.utoronto.ca/eats/entity/42274/" type="Thing_TheatricalCostume">liveries</rs></cell>
                   <cell rend="right">6 s. 10 d.</cell>
                 </row>
                 <row>
@@ -41559,7 +41559,7 @@ later 2nd Baron Hunsdon -->]
                   <cell rend="right">3 s. 4 d.</cell>
                 </row>
                 <row>
-                  <cell>Item gained by the <rs ref="http://ereed.library.utoronto.ca/eats/entity/40677/" type="Entertainment_Type">dice</rs> &amp; the horse</cell>
+                  <cell>Item gained by the <rs ref="http://ereed.library.utoronto.ca/eats/entity/40677/" type="Entertainment_Type">dice &amp; the horse</rs></cell>
                   <cell rend="right">11 s. 0</cell>
                 </row>
                 <row>
@@ -41719,7 +41719,7 @@ later 2nd Baron Hunsdon -->]
 
               <gap reason="omitted"/>
 
-              <ab>It<ex>em</ex> received by the <term ref="gloss:king-1">kingale</term></ab>
+              <ab>It<ex>em</ex> received by the <term ref="gloss:king-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/40561/" type="Entertainment_SeasonalCustom">kingale</rs></term></ab>
 
               <table>
                 <row>
@@ -41762,22 +41762,22 @@ later 2nd Baron Hunsdon -->]
 
               <table>
                 <row>
-                  <cell>In primis for liveries</cell>
+                  <cell>In primis for <rs ref="http://ereed.library.utoronto.ca/eats/entity/42274/" type="Thing_TheatricalCostume">liveries</rs></cell>
                   <cell rend="right">7 s.</cell>
                   <cell rend="right">2 d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>em</ex> payd to the drumplayer</cell>
+                  <cell>It<ex>em</ex> payd to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/29681/" type="Entertainer_Type">drumplayer</rs></cell>
                   <cell rend="right">2</cell>
                   <cell rend="right">0</cell>
                 </row>
                 <row>
-                  <cell>It<ex>em</ex> to the minstrells</cell>
+                  <cell>It<ex>em</ex> to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type">minstrells</rs></cell>
                   <cell rend="right">20</cell>
                   <cell rend="right">0</cell>
                 </row>
                 <row>
-                  <cell>It<ex>em</ex> to the cooke</cell>
+                  <cell>It<ex>em</ex> to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/60088/" type="Collective_Occupation">cooke</rs></cell>
                   <cell rend="right">2</cell>
                   <cell rend="right">6</cell>
                 </row>
@@ -41787,7 +41787,7 @@ later 2nd Baron Hunsdon -->]
                   <cell rend="right">8</cell>
                 </row>
                 <row>
-                  <cell>It<ex>em</ex> for butter &amp; cheese</cell>
+                  <cell>It<ex>em</ex> for <rs ref="http://ereed.library.utoronto.ca/eats/entity/40978/" type="Thing_FoodDrink">butter &amp; cheese</rs></cell>
                   <cell rend="right">6</cell>
                   <cell rend="right">4</cell>
                 </row>
@@ -41832,7 +41832,7 @@ later 2nd Baron Hunsdon -->]
                   <cell rend="right">8</cell>
                 </row>
                 <row>
-                  <cell>It<ex>em</ex> for thre barrells of beere</cell>
+                  <cell>It<ex>em</ex> for thre barrells of <rs ref="http://ereed.library.utoronto.ca/eats/entity/40997/" type="Thing_FoodDrink">beere</rs></cell>
                   <cell rend="right">12</cell>
                   <cell rend="right">0</cell>
                 </row>
@@ -41920,7 +41920,7 @@ later 2nd Baron Hunsdon -->]
                   <cell rend="right"/>
                 </row>
                 <row>
-                  <cell>Received by the <term ref="gloss:king-1">king=al</term></cell>
+                  <cell>Received by the <term ref="gloss:king-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/40561/" type="Entertainment_SeasonalCustom">king=al</rs></term></cell>
                   <cell rend="right">21</cell>
                   <cell rend="right">7</cell>
                   <cell rend="right">11 </cell>
@@ -41974,11 +41974,11 @@ later 2nd Baron Hunsdon -->]
 
               <table>
                 <row>
-                  <cell>It<ex>em</ex> a <term ref="gloss:collayne-1">Collayne</term> lute w<ex>i</ex>th a case, locke &amp; kaye</cell>
+                  <cell>It<ex>em</ex> a <term ref="gloss:collayne-1">Collayne</term> <rs ref="http://ereed.library.utoronto.ca/eats/entity/71682/" type="Thing_MusicalInstrument">lute</rs> w<ex>i</ex>th a case, locke &amp; kaye</cell>
                   <cell rend="right">x s.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>em</ex> a <term ref="gloss:gitthorne-1">Gitthorne</term></cell>
+                  <cell>It<ex>em</ex> a <term ref="gloss:gitthorne-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/71848/" type="Thing_MusicalInstrument">Gitthorne</rs></term></cell>
                   <cell rend="right">v s.</cell>
                 </row>
               </table>
@@ -41998,9 +41998,9 @@ later 2nd Baron Hunsdon -->]
               <head>f [1] <supplied>(1 February)</supplied></head>
               <pb n="[1]" type="folio"/>
 
-              <ab>After my moost bounden duetie remembred vnto yo<ex>u</ex>r good Maistership
+              <ab>After my moost bounden duetie remembred vnto <rs ref="http://ereed.library.utoronto.ca/eats/entity/121946/" type="Person_Nobility">yo<ex>u</ex>r good Maistership</rs>
                 pleasithe it the same to be adu<ex>er</ex>tised that I haue receyved by lambard the
-                <term ref="gloss:caryour-1">Caryo<ex>u</ex>r</term> a barell of Salt Samon a barell of white hering<ex>es</ex> a <term ref="gloss:cade-1">Cade</term>
+                <term ref="gloss:caryour-1">Caryo<ex>u</ex>r</term> a barell of <rs ref="http://ereed.library.utoronto.ca/eats/entity/40978/" type="Thing_FoodDrink">Salt Samon</rs> a barell of white hering<ex>es</ex> a <term ref="gloss:cade-1">Cade</term>
                 of Sprott<ex>es</ex> iij <term ref="gloss:tapenette-1">Tapenett<ex>es</ex></term> of ffigg<ex>es</ex> a <term ref="gloss:pece-1">pece</term> of Reasons
                 lx li. prunes. iij loves of Suger/ ij lib. pep<ex>er</ex> 10 lib. gynger oon
                   q<ex>ua</ex>rter Cynam<ex>m</ex>on. q<ex>u</ex>art<ex>e</ex>r Saffron Corans xx
@@ -42010,11 +42010,11 @@ later 2nd Baron Hunsdon -->]
                 <term ref="gloss:banke-1">banke</term> w<ex>i</ex>t<ex>h</ex> <term ref="gloss:sytann-1">sytann</term> <term ref="gloss:scuttchin-1">Skochons</term> of glasse and lok<ex>es</ex> and
                   bolt<ex>es</ex> whiche Maister Doctor hathe bestowed and at my co<ex>m</ex>myng to
                 micheldeuor I shall send the <term ref="gloss:scuttchin-1">Skochons</term> ther in likewise to <rs ref="http://ereed.library.utoronto.ca/eats/entity/107506/" type="Place_BoroughParish">Tytchefeld</rs>/ My moost
-                singuler good Maistres ys in good helthe thanked be god and soo vsethe bothe Mistres
+                singuler <rs ref="http://ereed.library.utoronto.ca/eats/entity/140094/" type="Person_Nobility">good Maistres</rs> ys in good helthe thanked be god and soo vsethe bothe Mistres
                 Russhe and me that ther can noo creature be more bounde then I: also she handelithe
                 the gentilmen of the Contrey yo<ex>u</ex>r <term ref="gloss:fermour-1">ffermo<ex>u</ex>rs</term> &amp; their
                   wief<ex>es</ex> to yo<ex>u</ex>r grete wo<ex>u</ex>rships/. and eu<ex>er</ex>y
-                night mery as can be w<ex>i</ex>t<ex>h</ex> Cristmas pleys and mask<ex>es</ex>
+                night mery as can be w<ex>i</ex>t<ex>h</ex> <rs ref="http://ereed.library.utoronto.ca/eats/entity/41461/" type="CalendarDay_Liturgical">Cristmas</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/40453/" type="Drama_Type">pleys</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/40416/" type="Drama_Type">mask<ex>es</ex></rs>
                   w<ex>i</ex>t<ex>h</ex> Anthony gedg<ex>es</ex> and other yo<ex>u</ex>r
                   s<ex>er</ex>u<ex>an</ex>t<ex>es</ex> thanked be god who eu<ex>er</ex>
                   p<ex>re</ex>s<ex>er</ex>ue you my moost especiall good Maister and send me longer
@@ -42022,12 +42022,12 @@ later 2nd Baron Hunsdon -->]
                 faithfully and dailly redy to s<ex>er</ex>ue you/ scribbled this first day of
                 ffebruary by yo<ex>u</ex>r moost bounden s<ex>eruan</ex>t</ab>
 
-              <ab><seg type="signed" rend="right">Anthony Roke</seg></ab>
+              <ab><seg type="signed" rend="right"><rs ref="http://ereed.library.utoronto.ca/eats/entity/207135/" type="Person_Commoner">Anthony Roke</rs></seg></ab>
             </div>
           </div>
           <div type="endnote">
             <p> 'micheldeuor' is <rs ref="http://ereed.library.utoronto.ca/eats/entity/107920/" type="Place_BoroughParish">Micheldever</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1967/" type="Place_County">Hampshire</rs>, six miles north of Winchester, where the
-              Wriothesley family had a house. </p>
+              <rs ref="http://ereed.library.utoronto.ca/eats/entity/154681/" type="Person_Family">Wriothesley family</rs> had a house. </p>
           </div>
         </body>
       </text>
