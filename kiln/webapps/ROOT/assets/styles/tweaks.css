@@ -2,3 +2,4 @@ q:before { content: none; }
 q:after { content: none; }
 span.indent { margin-left: 1em; }
 .center { margin-left: auto; margin-right: auto; width: 50%; }
+th, td { vertical-align: top; }
