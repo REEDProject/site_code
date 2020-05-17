@@ -26,7 +26,7 @@ var map = L.map('map', {
     zoom: 6
 });
 map.options.minZoom = 6;
-map.options.maxZoom = 15;
+map.options.maxZoom = 16;
 
 // Tile layers, base layers underneath with controls
 var tms_EREEDcoverage = L.tileLayer(
