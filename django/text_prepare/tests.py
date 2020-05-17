@@ -88,6 +88,11 @@ It spans multiple paragraphs.!
         expected = 'garc\N{COMBINING CEDILLA}on'
         self._check_conversion(text, expected)
 
+    def test_cell_centre(self):
+        text = '<t><r><c>Some</c><cc>text</cc></r></t>'
+        expected = '<table><row><cell>Some</cell><cell rend="center">text</cell></row></table>'
+        self._check_conversion(text, expected)
+
     def test_cell_right(self):
         text = '<t><r><c>Some</c><cr>text</cr></r></t>'
         expected = '<table><row><cell>Some</cell><cell rend="right">text</cell></row></table>'
@@ -95,7 +100,7 @@ It spans multiple paragraphs.!
 
     def test_centred(self):
         text = 'some @m\\centred@m/ text'
-        expected = 'some <hi rend="center">centred</hi> text'
+        expected = 'some <ab rend="center">centred</ab> text'
         self._check_conversion(text, expected)
 
     def test_circumflex(self):
@@ -796,7 +801,7 @@ Totally new.
         # This is impossible to comprehensively test. Start with a few
         # examples and add more as problems are discovered.
         text = '@l\\@m\\ac@m/or @m\\a@m/@l/!'
-        expected = '<note type="marginal" place="margin_left"><hi rend="center">ac</hi>or <hi rend="center">a</hi></note><lb />'
+        expected = '<note type="marginal" place="margin_left"><ab rend="center">ac</ab>or <ab rend="center">a</ab></note><lb />'
         self._check_conversion(text, expected)
 
 

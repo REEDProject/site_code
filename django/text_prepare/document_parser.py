@@ -271,10 +271,12 @@ class DocumentParser:
                                  content ^ punctuation ^ xml_escape ^ ignored)
         cell = pp.nestedExpr('<c>', '</c>', content=enclosed)
         cell.setParseAction(self._pa_cell)
+        cell_centre = pp.nestedExpr('<cc>', '</cc>', content=enclosed)
+        cell_centre.setParseAction(self._pa_cell_centre)
         cell_right = pp.nestedExpr('<cr>', '</cr>', content=enclosed)
         cell_right.setParseAction(self._pa_cell_right)
         row = pp.nestedExpr('<r>', '</r>', content=pp.OneOrMore(
-            cell | cell_right | comment_code | white))
+            cell | cell_centre | cell_right | comment_code | white))
         row.setParseAction(self._pa_row)
         table = pp.nestedExpr('<t>', '</t>', content=pp.OneOrMore(
             row | comment_code | white))
@@ -461,11 +463,14 @@ class DocumentParser:
     def _pa_cell(self, s, loc, toks):
         return ['<cell>', ''.join(toks[0]), '</cell>']
 
+    def _pa_cell_centre(self, s, loc, toks):
+        return ['<cell rend="center">', ''.join(toks[0]), '</cell>']
+
     def _pa_cell_right(self, s, loc, toks):
         return ['<cell rend="right">', ''.join(toks[0]), '</cell>']
 
     def _pa_centred(self, s, loc, toks):
-        return ['<hi rend="center">', ''.join(toks[0]), '</hi>']
+        return ['<ab rend="center">', ''.join(toks[0]), '</ab>']
 
     def _pa_circa(self, s, loc, toks):
         return ['<hi rend="italic">c</hi> ']
