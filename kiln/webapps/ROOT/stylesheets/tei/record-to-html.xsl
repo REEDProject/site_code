@@ -117,7 +117,7 @@
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Collation Notes</a>
         <div class="accordion-content" data-tab-content="">
-          <ul class="marginalia-list">
+          <ul class="collation-list">
             <xsl:apply-templates mode="group" select=".//tei:note[@type='collation']" />
           </ul>
         </div>

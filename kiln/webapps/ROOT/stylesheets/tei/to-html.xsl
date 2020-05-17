@@ -169,7 +169,7 @@
   </xsl:template>
 
   <xsl:template match="tei:note[@type='collation']">
-    <span class="footnote tag" note="{generate-id()}"></span>
+    <span class="collation tag" note="{generate-id()}"></span>
   </xsl:template>
 
   <xsl:template match="tei:note[@type='collation']" mode="group">
