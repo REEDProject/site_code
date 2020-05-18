@@ -13,6 +13,8 @@
   <menu label="Explore Collections" match="ereed-collections">
     <item label="Berkshire" match="ereed-collections-collection"
       params="berks" />
+    <item label="Hampshire" match="ereed-collections-collection"
+      params="hamps" />
     <item label="Staffordshire" match="ereed-collections-collection"
           params="staff" />
   </menu>
