@@ -267,20 +267,19 @@ A note.
         expected = 'Some <hi rend="italic">italic</hi> text'
         self._check_conversion(text, expected)
 
-    def test_lang_anglo_norman(self):
-        text = 'The king said, "@xno\\Bon soir.@xno/"'
-        expected = 'The king said, "<foreign xml:lang="xno">Bon soir.</foreign>"'
+    def test_lang_german(self):
+        text = 'The king said, "@ger\\Guten Tag.@ger/"'
+        expected = 'The king said, "<foreign xml:lang="deu">Guten Tag.</foreign>"'
         self._check_conversion(text, expected)
 
-    def test_lang_english(self):
-        text = 'rex "@eng\\Hi.@eng/" dixit'
-        expected = 'rex "<foreign xml:lang="eng">Hi.</foreign>" dixit'
-        self._check_conversion(text, expected)
-
-    def test_lang_latin(self):
-        text = 'The king said, "@lat\\Salve.@lat/"'
-        expected = 'The king said, "<foreign xml:lang="lat">Salve.</foreign>"'
-        self._check_conversion(text, expected)
+    def test_lang_generic(self):
+        langs = ('ang', 'cnx', 'cor', 'cym', 'eng', 'fra', 'gla', 'gmh',
+                 'gml', 'grc', 'ita', 'lat', 'por', 'spa', 'wlm', 'xno')
+        text = 'Native tones @{}\\Foreign gabble@{}/ judge'
+        expected = 'Native tones <foreign xml:lang="{}">Foreign gabble</foreign> judge'
+        for lang in langs:
+            self._check_conversion(text.format(lang, lang),
+                                   expected.format(lang))
 
     def test_left_marginale(self):
         text = 'Hark, a @l\\left marginale note@l/ appears'

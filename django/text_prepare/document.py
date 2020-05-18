@@ -26,8 +26,8 @@ CONTEXT_LINES_AFTER = 2
 
 # @-codes that need to have their format modified from "@x \" to "@x/".
 CODES = [
-    'a', 'ab', 'b', 'c', 'cl', 'cnx', 'cor', 'ct', 'cym', 'deu', 'en',
-    'eng', 'ex', 'f', 'fra', 'g', 'gla', 'gmh', 'gml', 'grc', 'i', 'it',
+    'a', 'ab', 'ang', 'b', 'c', 'cl', 'cnx', 'cor', 'ct', 'cym', 'en', 'eng',
+    'ex', 'f', 'fra', 'g', 'ger', 'gla', 'gmh', 'gml', 'grc', 'i', 'it',
     'ita', 'l', 'lat', 'lg', 'li', 'ln', 'lni', 'm', 'md', 'p', 'pc',
     'pd', 'por', 'r', 's', 'sc', 'sd', 'sh', 'sl', 'sm', 'smc', 'smr',
     'sn', 'snc', 'snr', 'spa', 'sr', 'ss', 'st', 'tr', 'ul', 'wlm',
