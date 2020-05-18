@@ -160,7 +160,9 @@ class DocumentParser:
         lang_english_code.setParseAction(self._pa_lang_english)
         lang_french_code = pp.nestedExpr('@fra\\', '@fra/', content=enclosed)
         lang_french_code.setParseAction(self._pa_lang_french)
-        lang_german_code = pp.nestedExpr('@deu\\', '@deu/', content=enclosed)
+        # Due to the @d code for eth and my inability to deal usefully
+        # with pyparsing, use @ger for German rather than @deu.
+        lang_german_code = pp.nestedExpr('@ger\\', '@ger/', content=enclosed)
         lang_german_code.setParseAction(self._pa_lang_german)
         lang_italian_code = pp.nestedExpr('@ita\\', '@ita/', content=enclosed)
         lang_italian_code.setParseAction(self._pa_lang_italian)
@@ -180,6 +182,9 @@ class DocumentParser:
         lang_middle_welsh_code = pp.nestedExpr('@wlm\\', '@wlm/',
                                                content=enclosed)
         lang_middle_welsh_code.setParseAction(self._pa_lang_middle_welsh)
+        lang_old_english_code = pp.nestedExpr('@ang\\', '@ang/',
+                                              content=enclosed)
+        lang_old_english_code.setParseAction(self._pa_lang_old_english)
         lang_portuguese_code = pp.nestedExpr('@por\\', '@por/',
                                              content=enclosed)
         lang_portuguese_code.setParseAction(self._pa_lang_portuguese)
@@ -196,8 +201,8 @@ class DocumentParser:
             lang_german_code ^ lang_italian_code ^ lang_latin_code ^
             lang_middle_cornish_code ^ lang_middle_high_german_code ^
             lang_middle_low_german_code ^ lang_middle_welsh_code ^
-            lang_portuguese_code ^ lang_scottish_gaelic_code ^
-            lang_spanish_code ^ lang_welsh_code)
+            lang_old_english_code ^ lang_portuguese_code ^
+            lang_scottish_gaelic_code ^ lang_spanish_code ^ lang_welsh_code)
         exdented_code = pp.nestedExpr('@g\\', '@g/', content=enclosed)
         exdented_code.setParseAction(self._pa_exdented)
         expansion_code = pp.nestedExpr('{{', '}}', content=enclosed)
@@ -303,7 +308,8 @@ class DocumentParser:
         record_heading_date = record_heading_date_century ^ \
             record_heading_date_year
         language_code = pp.oneOf(
-            'cnx cor cym deu eng fra gla gmh gml grc ita lat por spa wlm xno')
+            'ang cnx cor cym deu eng fra gla gmh gml grc ita lat por spa wlm '
+            'xno')
         record_heading_content = record_heading_place - \
             pp.Literal('!').suppress() - record_heading_date - \
             pp.Literal('!').suppress() - language_code
@@ -587,6 +593,9 @@ class DocumentParser:
 
     def _pa_lang_middle_welsh(self, s, loc, toks):
         return self._make_foreign('wlm', toks)
+
+    def _pa_lang_old_english(self, s, loc, toks):
+        return self._make_foreign('ang', toks)
 
     def _pa_lang_portuguese(self, s, loc, toks):
         return self._make_foreign('por', toks)
