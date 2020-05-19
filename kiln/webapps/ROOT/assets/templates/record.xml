@@ -30,7 +30,7 @@
                 <xsl:call-template name="display-record-shelfmark" />
                 <hr />
                 <div class="record-sidebar hide-for-medium">
-                  <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
+                  <div class="bibliography-filter filter hide-for-medium boxed alternate-style clear full-width">
                     <div class="filter-head jump-to-filter">SHOW OR HIDE</div>
                     <div class="filter-content-wrapper relative">
                       <div class="filter-content">
