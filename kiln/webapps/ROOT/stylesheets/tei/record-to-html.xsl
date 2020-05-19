@@ -18,7 +18,15 @@
           <div class="small-margin-bottom-25">
             <div class="hide-for-medium">
               <div class="record-sidebar hide-for-medium" >
-                <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
+                <div class="bibliography-filter filter hide-for-medium boxed alternate-style clear full-width">
+                  <div class="filter-head jump-to-filter">SHOW OR HIDE</div>
+                  <div class="filter-content-wrapper relative">
+                    <div class="filter-content">
+                      <div class="show-hide">
+                        <label class="checkbox"><input type="checkbox" name="show-tags" /><span class="checkbox-inner"> </span>Tag</label>
+                      </div>
+                    </div>
+                  </div>
                   <div class="filter-head jump-to-filter">TOOLS</div>
                   <div class="filter-content-wrapper relative">
                     <div class="filter-content">
@@ -41,6 +49,10 @@
       </div>
       <xsl:if test="not(preceding-sibling::tei:div)">
         <div class="columns record-sidebar show-for-medium">
+          <div class="show-hide">
+            <div class="heading">SHOW OR HIDE</div>
+            <label class="checkbox"><input type="checkbox" name="show-tags" autocomplete="off" /><span class="checkbox-inner"> </span>Entities</label>
+          </div>
           <xsl:call-template name="display-record-tools" />
           <div class="padding-top-45">
             <xsl:copy-of select="$helpful_links" />
