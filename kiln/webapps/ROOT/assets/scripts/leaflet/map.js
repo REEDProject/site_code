@@ -1,122 +1,69 @@
-function fitBounds(map) {
-    // Zoom to the region if there is one, otherwise to the related markers.
-    // This overrides initial zoom extent.
-    if (source_region_geojson.length > 0) {
-        map.fitBounds(region_geoJsonLayer.getBounds());
-    } else if (related_location_geojson.length > 0) {
-        map.fitBounds(related_geoJsonLayer.getBounds(), {maxZoom: 12});
-    }
-}
-
-function getRelatedPopupContent(feature) {
-    /* Returns the HTML content of the popup for the supplied feature,
-     * that is a the source of a related record. */
-    var content = 'Location: <a href="' + feature.properties.eats_url +
-        '">' + feature.properties.eats_name + '</a><br>Record: <a href="' +
-        feature.properties.record_url + '">' + feature.properties.record_title
-        + '</a>';
-    return content;
-}
-
-var map_image_path = '/assets/images/map/';
-
-var map = L.map('map', {
-    center: [52.7, -1.77],
-    maxBounds: [[46.5, -20.5], [62.0, 7.0]],
-    zoom: 6
-});
-map.options.minZoom = 6;
-map.options.maxZoom = 16;
-
-// Tile layers, base layers underneath with controls
-var tms_EREEDcoverage = L.tileLayer(
-    'http://talus.geog.utoronto.ca/1.0.0/EREED_gis_counties_base/{z}/{x}/{-y}.png', {
-        maxZoom: 15,
-        attribution: '<a href="http://reed.utoronto.ca/">Records of Early English Drama</a>'
-    }).addTo(map);
-
-var tms_REEDgisrelief = L.tileLayer('http://talus.geog.utoronto.ca/1.0.0/REED_gis_relief/{z}/{x}/{-y}.png');
-
-var OSM_Mapbox = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicmVlZHVvZnQiLCJhIjoiY2l6aWpiODQ2MDE2NjJ4b2RwZ3MyODl6byJ9.A67HGpPtAeCayuReK1ahtA', {
-    maxZoom: 15,
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-        '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-        'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    id: 'mapbox.streets'
-});
-
-// Tile layers for overlays on top
-
-var tms_REEDroads = L.tileLayer('http://talus.geog.utoronto.ca/1.0.0/REED_gis_roads/{z}/{x}/{-y}.png').addTo(map);
-var tms_EREEDallplaces = L.tileLayer('http://talus.geog.utoronto.ca/1.0.0/EREED_gis_places_points/{z}/{x}/{-y}.png').addTo(map);
-var tms_EREEDplaceslabels = L.tileLayer('http://talus.geog.utoronto.ca/1.0.0/EREED_gis_places_labels/{z}/{x}/{-y}.png').addTo(map);
-
-// Layer controls
-var baselayers = {
-    'EREED coverage by county': tms_EREEDcoverage,
-    'REED relief map': tms_REEDgisrelief,
-    'Openstreetmap (Mapbox)': OSM_Mapbox
-};
-
-var overlays = {
-    'Pre-1642 roads': tms_REEDroads,
-    'EREED Place symbols': tms_EREEDallplaces,
-    'EREED Place labels': tms_EREEDplaceslabels
-};
-
-L.control.layers(baselayers, overlays).addTo(map);
-L.control.scale({position: 'bottomleft', maxWidth: 100}).addTo(map);
-
-var legend = L.control({position: 'bottomright'});
-
-function showLegend() {
-    var div = document.getElementById('info_legend');
-    div.innerHTML = ('<br>' + '<img src="' + map_image_path +
-                     'legend.png" height="341" width="150">' + '<br>');
-}
-
-function hideLegend() {
-    var div = document.getElementById('info_legend')
-    div.innerHTML = ('<br>' + '<img src="' + map_image_path +
-                     'legendicon.png" height="50" width="50">' + '<br>');
-}
-
-legend.onAdd = function(map) {
-    var div = L.DomUtil.create('div', 'info_legend');
-    div.innerHTML = ('<br>' + '<img src="' + map_image_path +
+/**
+ * Add a legend to the map.
+ *
+ * @param {Map} map - map to add legend to
+ * @param {String} baseImagePath - base path for images
+ */
+function addLegend(map, baseImagePath) {
+  let legend = L.control({position: 'bottomright'});
+  legend.onAdd = function(map) {
+    let div = L.DomUtil.create('div', 'info_legend');
+    div.innerHTML = ('<br>' + '<img src="' + baseImagePath +
                      'legendicon.png"  height="50" width="50">' + '<br>');
-    div.setAttribute('onmouseenter', 'showLegend()');
-    div.setAttribute('onclick', 'hideLegend()');
-    div.setAttribute('onmouseleave', 'hideLegend()');
+    div.setAttribute('onmouseenter', "showLegend('" + baseImagePath + "')");
+    div.setAttribute('onclick', "hideLegend('" + baseImagePath + "')");
+    div.setAttribute('onmouseleave', "hideLegend('" + baseImagePath + "')");
     div.id = 'info_legend';
     return div;
-};
-legend.addTo(map);
+  };
+  legend.addTo(map);
+}
 
 
-//  Defining an icon to use as the default icon for each RELATED point
-//  when not included in a MARKERCLUSTER
-//  Added below in pointToLayer statement
-var related_location_Icon = L.icon({
-    iconUrl: map_image_path + 'REED_circle_red_10.png',
+/**
+ * Adda GeoJSON-sourced layer to the map and return it.
+ *
+ * @param {Map} map - map to add layer to
+ * @return {Layer}
+ */
+function addRegionLayer(map) {
+  let region = L.Proj.geoJson(null, {
+    style: function(feature) {
+      return {color: 'yellow', opacity: 0.7, fillColor: 'yellow',
+              fillOpacity: 0.3 };
+    },
+    onEachFeature: function(feature, layer) {
+      var popupContent;
+      if (feature.properties && feature.properties.patrons_place_type) {
+        var popupContent = 'Source Region: ' +
+            feature.properties.name +
+            '<br>Region Type: ' + feature.properties.patrons_place_type;
+      }
+      layer.bindPopup(popupContent);
+    }
+  });
+  region.addData(source_region_geojson);
+  map.addLayer(region);
+  return region;
+}
+
+/**
+ * Add a GeoJSON-sourced layer to the map and return it.
+ *
+ * @param {Map} map - map to add layer to
+ * @param {String} baseImagePath - base path for images
+ * @return {Layer}
+ */
+function addRelatedLayer(map, baseImagePath) {
+  // Define the icon to use as the default icon for each related point
+  // when not included in a marker cluster.
+  let relatedIcon = L.icon({
+    iconUrl: baseImagePath + 'REED_circle_red_10.png',
     iconSize: [10, 10],
     iconAnchor: [5, 5],
     popupAnchor: [0, -5]
-});
-//  Defining an icon to use as the default icon for single SOURCE point
-var source_location_Icon = L.icon({
-    iconUrl: map_image_path + 'Yellow-Hollow-22.png',
-    iconSize: [22, 22],
-    iconAnchor: [11, 11],
-    popupAnchor: [0, -11]
-});
-
-//  THIS SECTION INITIALIZES THE THREE LAYERS TO BE POPULATED BY
-//  GEOJSON LATER VIA ADDDATA STATEMENTS
-
-// This activates the Leaflet.Markercluster plugin for use with lots
-// of markers (related points)
-var related_markers = L.markerClusterGroup({
+  });
+  let relatedMarkers = L.markerClusterGroup({
     maxClusterRadius: 20,
     showCoverageOnHover: true,
     zoomToBoundsOnClick: true,
@@ -124,58 +71,175 @@ var related_markers = L.markerClusterGroup({
     spiderfyOnMaxZoom: true,
     spiderfyDistanceMultiplier: 0.4,
     spiderLegPolylineOptions: {weight: 1.5, color: '#B3B3B3', opacity: 0.6}
-});
-
-// Used this to initialize RELATED POINTS layer without any geoJson
-// data, use addData below
-var related_geoJsonLayer = L.Proj.geoJson(null, {
-    // ADDED pointToLayer in this form and it worked to replace
-    // default icon
+  });
+  let relatedLayer = L.Proj.geoJson(null, {
     pointToLayer: function(feature, latlng) {
-        return L.marker(latlng, {icon: related_location_Icon})
+      return L.marker(latlng, {icon: relatedIcon})
     },
     onEachFeature: function(feature, layer) {
-        layer.bindPopup(getRelatedPopupContent(feature));
+      layer.bindPopup(getRelatedPopupContent(feature));
     }
-});
+  });
+  relatedLayer.addData(related_location_geojson);
+  relatedMarkers.addLayer(relatedLayer);
+  map.addLayer(relatedMarkers);
+  return relatedLayer;
+}
 
-// Used this to initialize SOURCE POINT layer without any geoJson
-// data, use addData below
-var source_geoJsonLayer = L.Proj.geoJson(null, {
-    // ADDED pointToLayer in this form and it worked to replace
-    // default icon
+
+/**
+ * Add a GeoJSON-sourced layer to the map and return it.
+ *
+ * @param {Map} map - map to add layer to
+ * @param {String} baseImagePath - base path for images
+ * @return {Layer}
+ */
+function addSourceLayer(map, baseImagePath) {
+  let sourceIcon = L.icon({
+    iconUrl: baseImagePath + 'Yellow-Hollow-22.png',
+    iconSize: [22, 22],
+    iconAnchor: [11, 11],
+    popupAnchor: [0, -11]
+  });
+  let sourceLayer = L.Proj.geoJson(null, {
     pointToLayer: function(feature, latlng) {
-        return L.marker(latlng, {icon: source_location_Icon,
-                                 zIndexOffset: 1000, interactive: false})
+      return L.marker(latlng, {icon: source_location_Icon,
+                               zIndexOffset: 1000, interactive: false})
     },
-});
+  });
+  sourceLayer.addData(source_location_geojson);
+  map.addLayer(sourceLayer);
+  return sourceLayer;
+}
 
-// Used this to initialize SOURCE REGION layer without any geoJson
-// data, use addData below
-var region_geoJsonLayer = L.Proj.geoJson(null, {
-    style: function(feature) {
-        return {color: 'yellow', opacity: 0.7, fillColor: 'yellow',
-                fillOpacity: 0.3 };
-    },
-    onEachFeature: function(feature, layer) {
-        var popupContent;
-        if (feature.properties && feature.properties.patrons_place_type) {
-            var popupContent = 'Source Region: ' +
-                feature.properties.name +
-                '<br>Region Type: ' + feature.properties.patrons_place_type;
-        }
-        layer.bindPopup(popupContent);
-    }
-});
 
-related_geoJsonLayer.addData(related_location_geojson);
-related_markers.addLayer(related_geoJsonLayer);
-map.addLayer(related_markers);
+/**
+ * Add tile layers (base and overlays) to the map.
+ *
+ * @param {Map} map - map to add layers to
+ */
+function addTileLayers(map) {
+  let county_coverage = L.tileLayer(
+    getREEDLayerURL('EREED_gis_counties_base'), {
+      attribution: '<a href="http://reed.utoronto.ca/">Records of Early English Drama</a>',
+    });
+  let relief = L.tileLayer(getREEDLayerURL('REED_gis_relief'));
+  let osm = L.tileLayer(
+    'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicmVlZHVvZnQiLCJhIjoiY2l6aWpiODQ2MDE2NjJ4b2RwZ3MyODl6byJ9.A67HGpPtAeCayuReK1ahtA', {
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    });
+  let roads = L.tileLayer(getREEDLayerURL('EREED_gis_roads'));
+  let symbols = L.tileLayer(getREEDLayerURL('EREED_places_geojson_points'));
+  let labels = L.tileLayer(getREEDLayerURL('EREED_places_geojson_labels'));
+  let dioceses_pre = L.tileLayer(getREEDLayerURL('EREED_gis_dioceses_pre1541'));
+  let dioceses_post = L.tileLayer(getREEDLayerURL('EREED_gis_dioceses_post1541'));
 
-source_geoJsonLayer.addData(source_location_geojson);
-map.addLayer(source_geoJsonLayer);
+  let baseLayers = {
+    'REED coverage by county': county_coverage,
+    'REED relief map': relief,
+    'OpenStreetMap (Mapbox)': osm
+  };
+  let overlays = {
+    'Pre-1642 roads': roads,
+    'EREED Place symbols': symbols,
+    'EREED Place labels': labels,
+    'Historical dioceses before 1541': dioceses_pre,
+    'Historical dioceses 1541 and after': dioceses_post
+  };
 
-region_geoJsonLayer.addData(source_region_geojson);
-map.addLayer(region_geoJsonLayer);
+  // Set initially active layers.
+  county_coverage.addTo(map);
+  roads.addTo(map);
+  symbols.addTo(map);
+  labels.addTo(map);
 
-fitBounds(map);
+  L.control.layers(baseLayers, overlays).addTo(map);
+}
+
+
+/**
+ * Zoom to the region if there is one, otherwise to the best fit for
+ * the related markers.
+ *
+ * This overrides initial zoom extent.
+ *
+ * @param {Map} map - map to fit bounds on
+ * @param {Layer} regionLayer - layer showing the source region
+ * @param {Layer} relatedLayer - layer showing sources of related records
+ */
+function fitBounds(map, regionLayer, relatedLayer) {
+  if (source_region_geojson.length > 0) {
+    map.fitBounds(regionLayer.getBounds());
+  } else if (related_location_geojson.length > 0) {
+    map.fitBounds(relatedLayer.getBounds(), {maxZoom: 12});
+  }
+}
+
+
+/**
+ * Return the parameterised URL for the specified set of map tiles
+ * hosted by the REED project.
+ *
+ * @param {String} name - name of map tile set
+ * @returns {String}
+ */
+function getREEDLayerURL(name) {
+  return 'http://talus.geog.utoronto.ca/1.0.0/' + name + '/{z}/{x}/{-y}.png';
+}
+
+
+/**
+ * Return the HTML content of the popup for the supplied feature, that
+ * is the source of a related record.
+ *
+ * @param {Object} feature - GeoJSON map feature
+ * @returns {String}
+ */
+function getRelatedPopupContent(feature) {
+  return 'Location: <a href="' + feature.properties.eats_url +
+    '">' + feature.properties.eats_name + '</a><br>Record: <a href="' +
+    feature.properties.record_url + '">' + feature.properties.record_title
+    + '</a>';
+}
+
+
+function hideLegend(baseImagePath) {
+  let div = document.getElementById('info_legend')
+  div.innerHTML = ('<br>' + '<img src="' + baseImagePath +
+                   'legendicon.png" height="50" width="50">' + '<br>');
+}
+
+
+/**
+ * Create the Leaflet map.
+ */
+function makeMap() {
+  let initialZoom = 6;
+  let minZoom = 6;
+  let maxZoom = 16;
+  let baseImagePath = '/assets/images/map/';
+
+  let map = L.map('map', {
+    center: [52.7, -1.77],
+    maxBounds: [[46.5, -20.5], [62.0, 7.0]],
+    maxZoom: maxZoom,
+    minZoom: minZoom,
+    zoom: initialZoom
+  });
+
+  addTileLayers(map);
+  addLegend(map, baseImagePath);
+  L.control.scale({position: 'bottomleft', maxWidth: 100}).addTo(map);
+  addSourceLayer(map, baseImagePath);
+  let relatedLayer = addRelatedLayer(map, baseImagePath);
+  let regionLayer = addRegionLayer(map);
+  fitBounds(map, regionLayer, relatedLayer);
+}
+
+function showLegend(baseImagePath) {
+  let div = document.getElementById('info_legend');
+  div.innerHTML = ('<br>' + '<img src="' + baseImagePath +
+                   'legend.png" height="335" width="150">' + '<br>');
+}
+
+makeMap();
