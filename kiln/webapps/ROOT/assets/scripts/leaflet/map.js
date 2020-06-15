@@ -103,7 +103,7 @@ function addSourceLayer(map, baseImagePath) {
   });
   let sourceLayer = L.Proj.geoJson(null, {
     pointToLayer: function(feature, latlng) {
-      return L.marker(latlng, {icon: source_location_Icon,
+      return L.marker(latlng, {icon: sourceIcon,
                                zIndexOffset: 1000, interactive: false})
     },
   });
@@ -234,6 +234,7 @@ function makeMap() {
   let relatedLayer = addRelatedLayer(map, baseImagePath);
   let regionLayer = addRegionLayer(map);
   fitBounds(map, regionLayer, relatedLayer);
+  return [map, relatedLayer, regionLayer];
 }
 
 function showLegend(baseImagePath) {
@@ -242,4 +243,4 @@ function showLegend(baseImagePath) {
                    'legend.png" height="335" width="150">' + '<br>');
 }
 
-makeMap();
+let [map, relatedLayer, regionLayer] = makeMap();
