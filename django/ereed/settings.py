@@ -121,7 +121,7 @@ STATICFILES_DIRS = (
 
 
 SERIALIZATION_MODULES = {
-    'geojson': 'geomap.serializers.geojson'
+    'geojson_reed': 'geomap.serializers.geojson'
 }
 
 
