@@ -36,7 +36,7 @@
           "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::4326"}},
           "features":[</xsl:text>
         </xsl:if>
-        <xsl:variable name="geojson" select="id(str[@name='record_location_id'])/geojson" />
+        <xsl:variable name="geojson" select="id(str[@name='record_location_id'])/geojson[1]" />
         <xsl:apply-templates mode="geojson" select="$geojson">
           <xsl:with-param name="record-id" select="str[@name='document_id']" tunnel="yes" />
           <xsl:with-param name="record-title" select="arr[@name='document_title']/str[1]" tunnel="yes" />
