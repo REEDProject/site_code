@@ -8,6 +8,8 @@
   <!-- Imports the menu stylesheet -->
   <xsl:import href="cocoon://_internal/template/xsl/stylesheets/menu/menu.xsl" />
 
+  <xsl:import href="cocoon://_internal/url/reverse.xsl" />
+
   <kiln:block name="html">
     <html class="no-js">
       <kiln:block name="head">

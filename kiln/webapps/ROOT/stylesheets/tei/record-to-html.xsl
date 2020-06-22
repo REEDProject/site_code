@@ -18,7 +18,15 @@
           <div class="small-margin-bottom-25">
             <div class="hide-for-medium">
               <div class="record-sidebar hide-for-medium" >
-                <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear full-width">
+                <div class="bibliography-filter filter hide-for-medium boxed alternate-style clear full-width">
+                  <div class="filter-head jump-to-filter">SHOW OR HIDE</div>
+                  <div class="filter-content-wrapper relative">
+                    <div class="filter-content">
+                      <div class="show-hide">
+                        <label class="checkbox"><input type="checkbox" name="show-tags" /><span class="checkbox-inner"> </span>Tag</label>
+                      </div>
+                    </div>
+                  </div>
                   <div class="filter-head jump-to-filter">TOOLS</div>
                   <div class="filter-content-wrapper relative">
                     <div class="filter-content">
@@ -41,6 +49,10 @@
       </div>
       <xsl:if test="not(preceding-sibling::tei:div)">
         <div class="columns record-sidebar show-for-medium">
+          <div class="show-hide">
+            <div class="heading">SHOW OR HIDE</div>
+            <label class="checkbox"><input type="checkbox" name="show-tags" autocomplete="off" /><span class="checkbox-inner"> </span>Entities</label>
+          </div>
           <xsl:call-template name="display-record-tools" />
           <div class="padding-top-45">
             <xsl:copy-of select="$helpful_links" />
@@ -95,13 +107,30 @@
   <!-- The following named templates all assume that the context node
        is a tei:text[@type='record']. -->
 
+  <xsl:template name="display-record-associated-entities">
+    <xsl:if test="tei:index[@indexName='associated_entity']/tei:term">
+      <li class="accordion-item" data-accordion-item="">
+        <a href="#" class="accordion-title">Associated Events</a>
+        <div class="accordion-content" data-tab-content="">
+          <ul class="marginalia-list">
+            <xsl:for-each select="tei:index[@indexName='associated_entity']/tei:term">
+              <xsl:call-template name="display-record-entity">
+                <xsl:with-param name="eats-url" select="@ref" />
+              </xsl:call-template>
+            </xsl:for-each>
+          </ul>
+        </div>
+      </li>
+    </xsl:if>
+  </xsl:template>
+
   <xsl:template name="display-record-collation-notes">
-    <xsl:if test="./tei:body/tei:div[@type='collation_notes']">
+    <xsl:if test=".//tei:note[@type='collation']">
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Collation Notes</a>
         <div class="accordion-content" data-tab-content="">
-          <ul class="marginalia-list">
-            <xsl:apply-templates mode="group" select="tei:body/tei:div[@type='collation_notes']" />
+          <ul class="collation-list">
+            <xsl:apply-templates mode="group" select=".//tei:note[@type='collation']" />
           </ul>
         </div>
       </li>
@@ -117,6 +146,7 @@
         <xsl:call-template name="display-record-collation-notes" />
         <xsl:call-template name="display-record-glossed-terms" />
         <xsl:call-template name="display-record-endnote" />
+        <xsl:call-template name="display-record-associated-entities" />
         <xsl:call-template name="display-record-doc-desc" />
       </ul>
     </div>
@@ -127,20 +157,22 @@
       <a href="#" class="accordion-title">Document Description</a>
       <div class="accordion-content" data-tab-content="">
         <xsl:variable name="head" select="tei:body/tei:head" />
-        <p>
-          <xsl:text>Record title: </xsl:text>
-          <xsl:value-of select="$head/tei:title" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:repository" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='shelfmark']" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:settlement" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='publication']" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='pubNumber']" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='authorSurname']" />
-          <xsl:apply-templates mode="doc_desc" select="$head/tei:idno[@type='shortTitle']" />
-        </p>
-        <xsl:apply-templates select="$head/tei:p[@type='edDesc']" />
-        <xsl:apply-templates select="$head/tei:p[@type='docDesc']" />
-        <xsl:apply-templates select="$head/tei:p[@type='techDesc']" />
+        <xsl:for-each select="$head/tei:bibl">
+          <p>
+            <xsl:text>Record title: </xsl:text>
+            <xsl:value-of select="tei:title" />
+            <xsl:apply-templates mode="doc_desc" select="tei:repository" />
+            <xsl:apply-templates mode="doc_desc" select="tei:idno[@type='shelfmark']" />
+            <xsl:apply-templates mode="doc_desc" select="tei:settlement" />
+            <xsl:apply-templates mode="doc_desc" select="tei:idno[@type='publication']" />
+            <xsl:apply-templates mode="doc_desc" select="tei:idno[@type='pubNumber']" />
+            <xsl:apply-templates mode="doc_desc" select="tei:idno[@type='authorSurname']" />
+            <xsl:apply-templates mode="doc_desc" select="tei:idno[@type='shortTitle']" />
+          </p>
+          <xsl:apply-templates select="tei:p[@type='edDesc']" />
+          <xsl:apply-templates select="tei:p[@type='docDesc']" />
+          <xsl:apply-templates select="tei:p[@type='techDesc']" />
+        </xsl:for-each>
       </div>
     </li>
   </xsl:template>
@@ -156,28 +188,40 @@
     </xsl:if>
   </xsl:template>
 
+  <xsl:template name="display-record-entity">
+    <xsl:param name="eats-url" />
+    <xsl:variable name="entity-id">
+      <xsl:text>entity-</xsl:text>
+      <xsl:call-template name="get-entity-id-from-url">
+        <xsl:with-param name="eats-url" select="$eats-url" />
+      </xsl:call-template>
+    </xsl:variable>
+    <li class="tag">
+      <a>
+        <xsl:attribute name="href">
+          <xsl:call-template name="make-entity-url">
+            <xsl:with-param name="eats-url" select="$eats-url" />
+          </xsl:call-template>
+        </xsl:attribute>
+        <xsl:call-template name="display-entity-primary-name-plus">
+          <xsl:with-param name="entity" select="id($entity-id)" />
+        </xsl:call-template>
+      </a>
+    </li>
+  </xsl:template>
+
   <xsl:template name="display-record-entities">
     <xsl:variable name="record-id" select="@xml:id" />
     <ul class="tags">
       <xsl:for-each select=".//tei:rs[@ref][not(@ref=preceding::tei:rs[ancestor::tei:text/@xml:id=$record-id]/@ref)]">
-        <xsl:variable name="entity-id">
-          <xsl:text>entity-</xsl:text>
-          <xsl:call-template name="get-entity-id-from-url">
-            <xsl:with-param name="eats-url" select="@ref" />
-          </xsl:call-template>
-        </xsl:variable>
-        <li class="tag">
-          <a>
-            <xsl:attribute name="href">
-              <xsl:call-template name="make-entity-url">
-                <xsl:with-param name="eats-url" select="@ref" />
-              </xsl:call-template>
-            </xsl:attribute>
-            <xsl:call-template name="display-entity-primary-name-plus">
-              <xsl:with-param name="entity" select="id($entity-id)" />
-            </xsl:call-template>
-          </a>
-        </li>
+        <xsl:call-template name="display-record-entity">
+          <xsl:with-param name="eats-url" select="@ref" />
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="tei:index[@indexName='associated_entity']/tei:term">
+        <xsl:call-template name="display-record-entity">
+          <xsl:with-param name="eats-url" select="@ref" />
+        </xsl:call-template>
       </xsl:for-each>
     </ul>
   </xsl:template>
@@ -239,7 +283,10 @@
 
   <xsl:template name="display-record-shelfmark">
     <div class="shelfmark">
-      <xsl:copy-of select="tei:body/tei:head/tei:span[@type='shelfmark'][@subtype='html']/node()" />
+      <xsl:for-each select="tei:body/tei:head/tei:bibl">
+        <xsl:copy-of select="tei:span[@type='shelfmark'][@subtype='html']/node()" />
+        <xsl:if test="position()!=last()"><br /></xsl:if>
+      </xsl:for-each>
     </div>
   </xsl:template>
 
@@ -250,12 +297,12 @@
     <div class="show-for-medium">
       <div class="show-hide">
         <div class="heading">SHOW OR HIDE</div>
-        <label class="checkbox"><input type="checkbox" name="show-tags" autocomplete="off" /><span class="checkbox-inner"> </span>Tag</label>
+        <label class="checkbox"><input type="checkbox" name="show-tags" autocomplete="off" /><span class="checkbox-inner"> </span>Entities</label>
         <label class="checkbox"><input type="checkbox" name="show-terms" autocomplete="off" /><span class="checkbox-inner"> </span>Glossed Terms</label>
       </div>
       <div class="view-tags">
         <div class="heading">
-          <span>VIEW TAGS</span>
+          <span>VIEW ENTITIES</span>
         </div>
         <xsl:copy-of select="$entities" />
       </div>
@@ -274,7 +321,7 @@
         </div>
       </div>
       <div class="bibliography-filter filter hide-for-medium boxed alternate-style hide-for-medium clear left full-width">
-        <div class="filter-head jump-to-filter">VIEW TAGS</div>
+        <div class="filter-head jump-to-filter">VIEW ENTITIES</div>
         <div class="filter-content-wrapper relative">
           <div class="filter-content">
             <xsl:copy-of select="$entities" />
@@ -287,7 +334,7 @@
   <xsl:template name="display-record-title">
     <div class="record-title">
       <h1>
-        <xsl:apply-templates select="tei:body/tei:head/tei:title" />
+        <xsl:apply-templates select="tei:body/tei:head/tei:bibl[1]/tei:title" />
       </h1>
     </div>
   </xsl:template>

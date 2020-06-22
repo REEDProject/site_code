@@ -53,18 +53,6 @@
     </tr>
   </xsl:template>
 
-  <xsl:template match="tei:damage">
-    <xsl:text>&lt;</xsl:text>
-    <xsl:apply-templates />
-    <xsl:text>&gt;</xsl:text>
-  </xsl:template>
-
-  <xsl:template match="tei:div[@type='collation_note']" mode="group">
-    <li>
-      <xsl:apply-templates select="." />
-    </li>
-  </xsl:template>
-
   <xsl:template match="tei:ex">
     <i>
       <xsl:apply-templates />
@@ -76,9 +64,11 @@
   </xsl:template>
 
   <xsl:template match="tei:gap[@extent]">
+    <xsl:text>&lt;</xsl:text>
     <xsl:for-each select="1 to @extent">
       <xsl:text>.</xsl:text>
     </xsl:for-each>
+    <xsl:text>&gt;</xsl:text>
   </xsl:template>
 
   <xsl:template match="tei:gap[@reason='omitted']">
@@ -176,6 +166,16 @@
         <xsl:apply-templates select="following-sibling::tei:item[1]/node()" />
       </td>
     </tr>
+  </xsl:template>
+
+  <xsl:template match="tei:note[@type='collation']">
+    <span class="collation tag" note="{generate-id()}"></span>
+  </xsl:template>
+
+  <xsl:template match="tei:note[@type='collation']" mode="group">
+    <li note="{generate-id()}">
+      <xsl:apply-templates />
+    </li>
   </xsl:template>
 
   <xsl:template match="tei:note[@type='foot']">
@@ -315,6 +315,11 @@
     <i>
       <xsl:apply-templates select="@*|node()" />
     </i>
+  </xsl:template>
+
+  <!-- tei:bibl included in a record heading should not italicise titles. -->
+  <xsl:template match="tei:head/tei:bibl/tei:title" priority="10">
+    <xsl:apply-templates select="@*|node()" />
   </xsl:template>
 
   <xsl:template match="tei:quote">

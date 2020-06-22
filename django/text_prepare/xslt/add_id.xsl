@@ -14,8 +14,6 @@
        across the entire collection. -->
   <xsl:param name="base_id" />
 
-  <xsl:template match="tei:div[@type='collation_note']/tei:ab[1]/tei:anchor[1]" />
-
   <xsl:template match="tei:text[@type='record']">
     <xsl:copy>
       <xsl:apply-templates select="@*" />
@@ -33,43 +31,12 @@
     </xsl:copy>
   </xsl:template>
 
-  <xsl:template match="tei:div[@type='collation_note']">
-    <xsl:param name="id_prefix" />
-    <xsl:call-template name="copy-element-add-id">
-      <xsl:with-param name="id_prefix" select="$id_prefix" />
-      <xsl:with-param name="id" select="concat($id_prefix, '-cn', generate-id())" />
-    </xsl:call-template>
-  </xsl:template>
-
-  <xsl:template match="tei:div[@type='collation_notes']">
-    <xsl:param name="id_prefix" />
-    <xsl:call-template name="copy-element-add-id">
-      <xsl:with-param name="id_prefix" select="$id_prefix" />
-      <xsl:with-param name="id" select="concat($id_prefix, '-collation-notes')" />
-    </xsl:call-template>
-  </xsl:template>
-
   <xsl:template match="tei:div[@type='transcription']">
     <xsl:param name="id_prefix" />
     <xsl:call-template name="copy-element-add-id">
       <xsl:with-param name="id_prefix" select="$id_prefix" />
       <xsl:with-param name="id" select="concat($id_prefix, '-transcription')" />
     </xsl:call-template>
-  </xsl:template>
-
-  <xsl:template match="tei:ref[@type='collation-note']">
-    <xsl:param name="id_prefix" />
-    <xsl:variable name="ref" select="substring-after(@target, '#')" />
-    <xsl:variable name="target" select="ancestor::tei:text[@type='record']/tei:body/tei:div[@type='collation_notes']/tei:div[tei:ab[1]/tei:anchor[1][@n=$ref]]" />
-    <xsl:copy>
-      <xsl:apply-templates select="@*" />
-      <xsl:attribute name="target">
-        <xsl:value-of select="concat('#', $id_prefix, '-cn', generate-id($target))" />
-      </xsl:attribute>
-      <xsl:apply-templates select="node()">
-        <xsl:with-param name="id_prefix" select="$id_prefix" />
-      </xsl:apply-templates>
-    </xsl:copy>
   </xsl:template>
 
   <xsl:template match="tei:TEI">

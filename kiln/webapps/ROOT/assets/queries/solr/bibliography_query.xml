@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <query q_fields="bibl_author bibl_title collection_id">
-  <q type="default">*</q>
+  <q default="true">*</q>
   <q.op>AND</q.op>
   <df>collection_id</df>
-  <fq>document_type:bibl</fq>
+  <fq escape="false">document_type:bibl</fq>
   <rows>1000</rows>
 </query>

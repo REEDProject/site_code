@@ -4,10 +4,6 @@
                 xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <xsl:import href="../defaults.xsl" />
-
-  <xsl:import href="cocoon://_internal/url/reverse.xsl" />
-
   <xsl:variable name="entity" select="/aggregation/eats:entities/eats:entity[@selected='selected']" />
 
   <xsl:template match="feature|geojson" mode="geojson">
@@ -40,7 +36,7 @@
           "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::4326"}},
           "features":[</xsl:text>
         </xsl:if>
-        <xsl:variable name="geojson" select="id(str[@name='record_location_id'])/geojson" />
+        <xsl:variable name="geojson" select="id(str[@name='record_location_id'])/geojson[1]" />
         <xsl:apply-templates mode="geojson" select="$geojson">
           <xsl:with-param name="record-id" select="str[@name='document_id']" tunnel="yes" />
           <xsl:with-param name="record-title" select="arr[@name='document_title']/str[1]" tunnel="yes" />
@@ -141,6 +137,7 @@
     <table class="display related-entities-table responsive" cellspacing="0" width="100%">
       <tbody class="related-content">
         <xsl:for-each select="$entity/relationships/relationship">
+          <xsl:sort select="name" />
           <tr>
             <td class="individual-related-entity">
               <xsl:value-of select="name" />

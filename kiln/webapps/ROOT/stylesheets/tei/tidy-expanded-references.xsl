@@ -15,7 +15,7 @@
   </xsl:template>
 
   <xsl:template match="tei:bibl" mode="addition">
-    <xsl:copy-of select="node()" />
+    <xsl:copy-of select="." />
   </xsl:template>
 
   <xsl:template match="tei:index[@indexName='record_type']/tei:term/kiln:added"
@@ -79,9 +79,9 @@
   <xsl:template match="kiln:added/tei:text[@type='record']"
                 mode="record-addition">
     <!-- A record has been referenced. We want only its title. -->
-    <xsl:value-of select="tei:body/tei:head/kiln:added/tei:bibl/tei:title" />
+    <xsl:value-of select="tei:head/kiln:added/tei:bibl/tei:title" />
     <xsl:text>, </xsl:text>
-    <xsl:value-of select="tei:body/tei:head/tei:date" />
+    <xsl:value-of select="tei:head/tei:date" />
   </xsl:template>
 
   <xsl:template match="@*|node()" mode="#all">

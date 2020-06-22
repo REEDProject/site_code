@@ -5,26 +5,11 @@
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <!-- XSLT to convert footnote markup into a more desirable form.
+  <!-- XSLT to convert footnote markup into a more desirable form. -->
 
-       Due to the duplication involved in having a different recursive
-       token content model for footnotes, various bits of @-code
-       markup that the grammar permits within footnotes are not
-       correctly interpreted. Fix those up here. -->
-
-  <!-- tei:ex should be converted to tei:hi. -->
-  <xsl:template match="tei:note[@type='foot']//tei:ex">
-    <hi rend="italic">
-      <xsl:apply-templates />
-    </hi>
-  </xsl:template>
-
-  <!-- Deletions should be converted back to enclosing square
-       parentheses. -->
-  <xsl:template match="tei:note[@type='foot']//tei:del">
-    <xsl:text>[</xsl:text>
-    <xsl:apply-templates />
-    <xsl:text>]</xsl:text>
+  <!-- tei:gap[@reason='omitted'] should be converted back to ellipses. -->
+  <xsl:template match="tei:note[@type='foot']//tei:gap[@reason='omitted']">
+    <xsl:text>…</xsl:text>
   </xsl:template>
 
   <xsl:template match="@*|node()">

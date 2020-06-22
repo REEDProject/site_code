@@ -20,12 +20,6 @@ The basic TEI structure generated is:
       </div>
       ...
     </div>
-    <div type="collation_notes">
-      <div type="collation_note">
-        ...
-      </div>
-      ...
-    </div>
     <div type="endnote">
       ...
     </div>
@@ -33,9 +27,8 @@ The basic TEI structure generated is:
 </text>
 ...
 
-The grammar does not enforce referential integrity (for collation
-notes), and does not produce xml:ids except for msDesc and bibl
-elements.
+The grammar does not enforce referential integrity, and does not
+produce xml:ids except for msDesc and bibl elements.
 
 It also produces document descriptions in the form of tei:bibl and
 tei:msDesc elements.
@@ -60,9 +53,9 @@ class DocumentParser:
         content.setWhitespaceChars('')
         content.setDefaultWhitespaceChars('')
         white = pp.Word(' ' + '\n')
-        punctuation_chars = '. , ; : \' " ( ) * / # $ % + - ? –'
+        punctuation_chars = '. , ; : \' " ( ) * / # $ % + - ? – _ ='
         punctuation = pp.oneOf(punctuation_chars)
-        rich_content = pp.Word(pp.alphanums + ' \\\n&' + punctuation_chars)
+        rich_content = pp.Word(pp.alphanums + ' \\\n&[]' + punctuation_chars)
         rich_content.setWhitespaceChars('')
         rich_content.setParseAction(self._pa_rich_content)
         content.setDefaultWhitespaceChars('')
@@ -88,8 +81,6 @@ class DocumentParser:
         cedilla_code.setParseAction(self._pa_cedilla)
         circumflex_code = pp.Literal('@^') + vowels
         circumflex_code.setParseAction(self._pa_circumflex)
-        collation_ref_number_code = '@r' + pp.OneOrMore(integer) + '\\'
-        collation_ref_number_code.setParseAction(self._pa_collation_ref_number)
         damaged_code = pp.Literal('<') + (pp.Word('.', min=1) ^
                                           pp.Literal('…')) + pp.Literal('>')
         damaged_code.setParseAction(self._pa_damaged)
@@ -107,6 +98,8 @@ class DocumentParser:
             self._pa_exclamation)
         grave_code = pp.Literal('@,') + vowels
         grave_code.setParseAction(self._pa_grave)
+        illegible_code = pp.Literal('@') + integer + pp.Literal('gi')
+        illegible_code.setParseAction(self._pa_illegible)
         macron_code = pp.Literal('@-') + vowels
         macron_code.setParseAction(self._pa_macron)
         oe_code = pp.Literal('@oe').setParseAction(self._pa_oe)
@@ -119,7 +112,10 @@ class DocumentParser:
         section_code = pp.Literal('@%').setParseAction(self._pa_section)
         semicolon_code = pp.Literal('@;').setParseAction(self._pa_semicolon)
         special_v_code = pp.Literal('@v').setParseAction(self._pa_special_v)
-        tab_code = pp.Literal('@[').setParseAction(self._pa_tab)
+        square_bracket_close_code = pp.Literal(']]').setParseAction(
+            self._pa_square_bracket_close)
+        square_bracket_open_code = pp.Literal('[[').setParseAction(
+            self._pa_square_bracket_open)
         thorn_code = pp.Literal('@th').setParseAction(self._pa_thorn)
         THORN_code = pp.Literal('@TH').setParseAction(self._pa_THORN)
         tilde_code = pp.Literal('@"') + (vowels | pp.Literal('n'))
@@ -132,29 +128,26 @@ class DocumentParser:
         single_codes = (
             acute_code ^ ae_code ^ AE_code ^ blank_code ^ capitulum_code ^
             caret_code ^ cedilla_code ^ circumflex_code ^
-            collation_ref_number_code ^ damaged_code ^ dot_over_code ^
-            dot_under_code ^ ellipsis_code ^ en_dash_code ^ eng_code ^
-            ENG_code ^ eth_code ^ exclamation_code ^ grave_code ^ macron_code ^
-            oe_code ^ OE_code ^ page_break_code ^ paragraph_code ^ pound_code ^
-            raised_code ^ section_code ^ semicolon_code ^ special_v_code ^
-            tab_code ^ thorn_code ^ THORN_code ^ tilde_code ^ umlaut_code ^
-            wynn_code ^ yogh_code ^ YOGH_code)
+            damaged_code ^ dot_over_code ^ dot_under_code ^ ellipsis_code ^
+            en_dash_code ^ eng_code ^ ENG_code ^ eth_code ^ exclamation_code ^
+            grave_code ^ illegible_code ^ macron_code ^ oe_code ^ OE_code ^ page_break_code ^
+            paragraph_code ^ pound_code ^ raised_code ^ section_code ^
+            semicolon_code ^ special_v_code ^ square_bracket_close_code ^
+            square_bracket_open_code ^ thorn_code ^ THORN_code ^
+            tilde_code ^ umlaut_code ^ wynn_code ^ yogh_code ^ YOGH_code)
         enclosed = pp.Forward()
-        bold_code = pp.nestedExpr('@e\\', '@e/', content=enclosed)
-        bold_code.setParseAction(self._pa_bold)
-        bold_italic_code = pp.nestedExpr('@j\\', '@j/', content=enclosed)
-        bold_italic_code.setParseAction(self._pa_bold_italic)
         centred_code = pp.nestedExpr('@m\\', '@m/', content=enclosed)
         centred_code.setParseAction(self._pa_centred)
         closer_code = pp.nestedExpr('@cl\\', '@cl/', content=enclosed)
         closer_code.setParseAction(self._pa_closer)
-        collation_ref = pp.nestedExpr(
-            '@cr\\', '@cr/', content=collation_ref_number_code - enclosed)
-        collation_ref.setParseAction(self._pa_collation_ref)
+        collation_note = pp.nestedExpr('@c\\', '@c/', content=enclosed)
+        collation_note.setParseAction(self._pa_collation_note)
         comment_code = pp.nestedExpr('@xc\\', '@xc/', content=enclosed)
         comment_code.setParseAction(self._pa_comment)
         deleted_code = pp.nestedExpr('[', ']', content=enclosed)
         deleted_code.setParseAction(self._pa_deleted)
+        italic_code = pp.nestedExpr('@it\\', '@it/', content=enclosed)
+        italic_code.setParseAction(self._pa_italic)
         lang_ancient_greek_code = pp.nestedExpr('@grc\\', '@grc/',
                                                 content=enclosed)
         lang_ancient_greek_code.setParseAction(self._pa_lang_ancient_greek)
@@ -167,7 +160,9 @@ class DocumentParser:
         lang_english_code.setParseAction(self._pa_lang_english)
         lang_french_code = pp.nestedExpr('@fra\\', '@fra/', content=enclosed)
         lang_french_code.setParseAction(self._pa_lang_french)
-        lang_german_code = pp.nestedExpr('@deu\\', '@deu/', content=enclosed)
+        # Due to the @d code for eth and my inability to deal usefully
+        # with pyparsing, use @ger for German rather than @deu.
+        lang_german_code = pp.nestedExpr('@ger\\', '@ger/', content=enclosed)
         lang_german_code.setParseAction(self._pa_lang_german)
         lang_italian_code = pp.nestedExpr('@ita\\', '@ita/', content=enclosed)
         lang_italian_code.setParseAction(self._pa_lang_italian)
@@ -187,6 +182,9 @@ class DocumentParser:
         lang_middle_welsh_code = pp.nestedExpr('@wlm\\', '@wlm/',
                                                content=enclosed)
         lang_middle_welsh_code.setParseAction(self._pa_lang_middle_welsh)
+        lang_old_english_code = pp.nestedExpr('@ang\\', '@ang/',
+                                              content=enclosed)
+        lang_old_english_code.setParseAction(self._pa_lang_old_english)
         lang_portuguese_code = pp.nestedExpr('@por\\', '@por/',
                                              content=enclosed)
         lang_portuguese_code.setParseAction(self._pa_lang_portuguese)
@@ -203,8 +201,8 @@ class DocumentParser:
             lang_german_code ^ lang_italian_code ^ lang_latin_code ^
             lang_middle_cornish_code ^ lang_middle_high_german_code ^
             lang_middle_low_german_code ^ lang_middle_welsh_code ^
-            lang_portuguese_code ^ lang_scottish_gaelic_code ^
-            lang_spanish_code ^ lang_welsh_code)
+            lang_old_english_code ^ lang_portuguese_code ^
+            lang_scottish_gaelic_code ^ lang_spanish_code ^ lang_welsh_code)
         exdented_code = pp.nestedExpr('@g\\', '@g/', content=enclosed)
         exdented_code.setParseAction(self._pa_exdented)
         expansion_code = pp.nestedExpr('{{', '}}', content=enclosed)
@@ -221,10 +219,21 @@ class DocumentParser:
         interlineation_below_code.setParseAction(self._pa_interlineation_below)
         interpolation_code = pp.nestedExpr('@i\\', '@i/', content=enclosed)
         interpolation_code.setParseAction(self._pa_interpolation)
-        italic_small_caps_code = pp.nestedExpr('@q\\', '@q/', content=enclosed)
-        italic_small_caps_code.setParseAction(self._pa_italic_small_caps)
         left_marginale_code = pp.nestedExpr('@l\\', '@l/', content=enclosed)
         left_marginale_code.setParseAction(self._pa_left_marginale)
+        line_group_contents = pp.Forward()
+        line_code = pp.nestedExpr('@ln\\', '@ln/', content=enclosed)
+        line_code.setParseAction(self._pa_line)
+        line_indented_code = pp.nestedExpr('@lni\\', '@lni/', content=enclosed)
+        line_indented_code.setParseAction(self._pa_line_indented)
+        line_group_code = pp.nestedExpr('@lg\\', '@lg/',
+                                        content=line_group_contents)
+        line_group_code.setParseAction(self._pa_line_group)
+        line_group_contents << (
+            pp.OneOrMore(blank + line_group_code + blank) ^
+            pp.OneOrMore((blank + line_code + blank) |
+                         (blank + line_indented_code + blank))
+        )
         list_item_code = pp.nestedExpr('@li\\', '@li/', content=enclosed)
         list_item_code.setParseAction(self._pa_list_item_code)
         list_code = pp.nestedExpr('@ul\\', '@ul/', content=pp.OneOrMore(
@@ -238,33 +247,41 @@ class DocumentParser:
         signed_centre_code.setParseAction(self._pa_signed_centre)
         signed_right_code = pp.nestedExpr('@snr\\', '@snr/', content=enclosed)
         signed_right_code.setParseAction(self._pa_signed_right)
-        small_caps_code = pp.nestedExpr('@k\\', '@k/', content=enclosed)
-        small_caps_code.setParseAction(self._pa_small_caps)
+        signed_mark_code = pp.nestedExpr('@sm\\', '@sm/', content=enclosed)
+        signed_mark_code.setParseAction(self._pa_signed_mark)
+        signed_mark_centre_code = pp.nestedExpr('@smc\\', '@smc/',
+                                                content=enclosed)
+        signed_mark_centre_code.setParseAction(self._pa_signed_mark_centre)
+        signed_mark_right_code = pp.nestedExpr('@smr\\', '@smr/',
+                                               content=enclosed)
+        signed_mark_right_code.setParseAction(self._pa_signed_mark_right)
         superscript_code = pp.nestedExpr('@s\\', '@s/', content=enclosed)
         superscript_code.setParseAction(self._pa_superscript)
-        tab_start_code = pp.nestedExpr(pp.LineStart() + pp.Literal('@['), '!',
+        tab_start_code = pp.nestedExpr(pp.LineStart() + '@[', '@]',
                                        content=enclosed)
         tab_start_code.setParseAction(self._pa_tab_start)
         title_code = pp.nestedExpr('<title>', '</title>', content=enclosed)
         title_code.setParseAction(self._pa_title)
         paired_codes = (
-            bold_code ^ bold_italic_code ^ centred_code ^ closer_code ^
-            collation_ref ^ comment_code ^ deleted_code ^ exdented_code ^
-            expansion_code ^ footnote_code ^ indented_code ^
-            interpolation_code ^ interlineation_above_code ^
-            interlineation_below_code ^ italic_small_caps_code ^
-            language_codes ^ left_marginale_code ^ list_code ^
+            centred_code ^ closer_code ^ collation_note ^ comment_code ^
+            deleted_code ^ exdented_code ^ expansion_code ^ footnote_code ^
+            indented_code ^ interpolation_code ^ interlineation_above_code ^
+            interlineation_below_code ^ italic_code ^ language_codes ^
+            left_marginale_code ^ line_group_code ^ list_code ^
             right_marginale_code ^ signed_code ^ signed_centre_code ^
-            signed_right_code ^ small_caps_code ^ superscript_code ^
-            tab_start_code ^ title_code)
+            signed_right_code ^ signed_mark_code ^ signed_mark_centre_code ^
+            signed_mark_right_code ^ superscript_code ^ tab_start_code ^
+            title_code)
         enclosed << pp.OneOrMore(single_codes ^ return_code ^ paired_codes ^
                                  content ^ punctuation ^ xml_escape ^ ignored)
         cell = pp.nestedExpr('<c>', '</c>', content=enclosed)
         cell.setParseAction(self._pa_cell)
+        cell_centre = pp.nestedExpr('<cc>', '</cc>', content=enclosed)
+        cell_centre.setParseAction(self._pa_cell_centre)
         cell_right = pp.nestedExpr('<cr>', '</cr>', content=enclosed)
         cell_right.setParseAction(self._pa_cell_right)
         row = pp.nestedExpr('<r>', '</r>', content=pp.OneOrMore(
-            cell | cell_right | comment_code | white))
+            cell | cell_centre | cell_right | comment_code | white))
         row.setParseAction(self._pa_row)
         table = pp.nestedExpr('<t>', '</t>', content=pp.OneOrMore(
             row | comment_code | white))
@@ -277,8 +294,8 @@ class DocumentParser:
             pp.Literal('th Century').setResultsName('label')
         record_heading_date_century.setParseAction(
             self._pa_record_heading_date_century)
-        circa = pp.Literal('{{c}} ').setParseAction(self._pa_circa)
-        slash_year = pp.Literal('/') + pp.Word(pp.nums, min=1, max=2)
+        circa = pp.Literal('@it\\c@it/ ').setParseAction(self._pa_circa)
+        slash_year = pp.Literal('/') + pp.Word(pp.nums, min=1, max=4)
         start_year = pp.Optional(circa).setResultsName('circa') + \
             year.setResultsName('year') + \
             pp.Optional(slash_year).setResultsName('slash_year')
@@ -291,7 +308,8 @@ class DocumentParser:
         record_heading_date = record_heading_date_century ^ \
             record_heading_date_year
         language_code = pp.oneOf(
-            'cnx cor cym deu eng fra gla gmh gml grc ita lat por spa wlm xno')
+            'ang cnx cor cym deu eng fra gla gmh gml grc ita lat por spa wlm '
+            'xno')
         record_heading_content = record_heading_place - \
             pp.Literal('!').suppress() - record_heading_date - \
             pp.Literal('!').suppress() - language_code
@@ -316,17 +334,6 @@ class DocumentParser:
         translation = pp.nestedExpr(
             '@tr\\', '@tr/', content=pp.OneOrMore(transcription_section))
         translation.setParseAction(self._pa_translation)
-        collation_note_anchor = pp.Literal('@a') - pp.OneOrMore(integer) - \
-            pp.Literal('\\')
-        collation_note_anchor.setParseAction(self._pa_collation_note_anchor)
-        collation_note_content = collation_note_anchor - enclosed
-        collation_note = pp.nestedExpr('@c\\', '@c/',
-                                       content=collation_note_content)
-        collation_note.setParseAction(self._pa_collation_note)
-        collation_note_wrapper = blank + collation_note + blank
-        collation_notes = pp.nestedExpr('@cn\\', '@cn/', content=pp.OneOrMore(
-            collation_note_wrapper))
-        collation_notes.setParseAction(self._pa_collation_notes)
         end_note = pp.nestedExpr('@en\\', '@en/', content=enclosed)
         end_note.setParseAction(self._pa_endnote)
         end_note_wrapper = blank + end_note + blank
@@ -343,7 +350,7 @@ class DocumentParser:
                                                   content=rich_content)
         source_repository.setParseAction(self._pa_source_data)
         source_shelfmark = blank + pp.nestedExpr('@ss\\', '@ss/',
-                                                 content=rich_content)
+                                                 content=enclosed)
         source_shelfmark.setParseAction(self._pa_source_data)
         source_date = blank + pp.nestedExpr('@st\\', '@st/',
                                             content=rich_content)
@@ -385,7 +392,7 @@ class DocumentParser:
         preamble = (ms_doc_desc ^ print_doc_desc) - blank - pp.Optional(
             comment_code + blank) - place_codes
         record = (blank + record_heading + transcription +
-                  pp.Optional(translation) + pp.Optional(collation_notes) +
+                  pp.Optional(translation) +
                   pp.Optional(end_note_wrapper)).setResultsName(
                       'record', listAllMatches=True)
         record.setParseAction(self._pa_record)
@@ -399,15 +406,15 @@ class DocumentParser:
         """Return the expanded page type indicated by the abbreviation `data`,
         or an empty string if not match is found."""
         ptype = ''
-        if data in ('f', 'ff'):
+        if data in ('f', 'ff', 'folio', 'folios'):
             ptype = 'folio'
-        elif data in ('mb', 'mbs'):
+        elif data in ('mb', 'mbs', 'membrane', 'membranes'):
             ptype = 'membrane'
-        elif data in ('p', 'pp'):
+        elif data in ('p', 'pp', 'page', 'pages'):
             ptype = 'page'
         elif data in ('sheet', 'sheets'):
             ptype = 'sheet'
-        elif data in ('sig', 'sigs'):
+        elif data in ('sig', 'sigs', 'signature', 'signatures'):
             ptype = 'signature'
         return ptype
 
@@ -420,6 +427,13 @@ class DocumentParser:
         if rend_value:
             rend = ' rend="{}"'.format(rend_value)
         return ['<seg type="signed"{}>'.format(rend), ''.join(toks[0]),
+                '</seg>']
+
+    def _make_signed_mark(self, s, loc, toks, rend_value=None):
+        rend = ''
+        if rend_value:
+            rend = ' rend="{}"'.format(rend_value)
+        return ['<seg type="signed_mark"{}>'.format(rend), ''.join(toks[0]),
                 '</seg>']
 
     def _merge_years(self, year, replacement):
@@ -441,12 +455,6 @@ class DocumentParser:
     def _pa_blank(self, s, loc, toks):
         return ['<space />']
 
-    def _pa_bold(self, s, loc, toks):
-        return ['<hi rend="bold">', ''.join(toks[0]), '</hi>']
-
-    def _pa_bold_italic(self, s, loc, toks):
-        return ['<hi rend="bold_italic">', ''.join(toks[0]), '</hi>']
-
     def _pa_capitulum(self, s, loc, toks):
         # The name CAPITULUM is not recognised in Python 3.4, causing
         # a syntax error of all things.
@@ -461,11 +469,14 @@ class DocumentParser:
     def _pa_cell(self, s, loc, toks):
         return ['<cell>', ''.join(toks[0]), '</cell>']
 
+    def _pa_cell_centre(self, s, loc, toks):
+        return ['<cell rend="center">', ''.join(toks[0]), '</cell>']
+
     def _pa_cell_right(self, s, loc, toks):
         return ['<cell rend="right">', ''.join(toks[0]), '</cell>']
 
     def _pa_centred(self, s, loc, toks):
-        return ['<hi rend="center">', ''.join(toks[0]), '</hi>']
+        return ['<ab rend="center">', ''.join(toks[0]), '</ab>']
 
     def _pa_circa(self, s, loc, toks):
         return ['<hi rend="italic">c</hi> ']
@@ -477,21 +488,7 @@ class DocumentParser:
         return ['<closer>', ''.join(toks[0]), '</closer>']
 
     def _pa_collation_note(self, s, loc, toks):
-        return ['<div type="collation_note">\n', ''.join(toks[0]),
-                '\n</div>\n']
-
-    def _pa_collation_note_anchor(self, s, loc, toks):
-        return ['<anchor n="cn{}" />'.format(toks[1])]
-
-    def _pa_collation_notes(self, s, loc, toks):
-        return ['<div type="collation_notes">\n', ''.join(toks[0]), '</div>\n']
-
-    def _pa_collation_ref(self, s, loc, toks):
-        return ['<ref target="#cn{}" type="collation-note">{}</ref>'.format(
-            toks[0][0], toks[0][1])]
-
-    def _pa_collation_ref_number(self, s, loc, toks):
-        return [toks[1]]
+        return ['<note type="collation">', ''.join(toks[0]), '</note>']
 
     def _pa_comment(self, s, loc, toks):
         return ['<!-- ', ''.join(toks[0]), ' -->']
@@ -542,6 +539,10 @@ class DocumentParser:
     def _pa_grave(self, s, loc, toks):
         return ['{}\N{COMBINING GRAVE ACCENT}'.format(toks[1])]
 
+    def _pa_illegible(self, s, loc, toks):
+        return ['<gap extent="{}" reason="illegible" unit="chars" />'.format(
+            toks[1])]
+
     def _pa_indented(self, s, loc, toks):
         return ['<ab type="indent">', ''.join(toks[0]), '</ab>']
 
@@ -554,8 +555,8 @@ class DocumentParser:
     def _pa_interpolation(self, s, loc, toks):
         return ['<handShift />', ''.join(toks[0]), '<handShift />']
 
-    def _pa_italic_small_caps(self, s, loc, toks):
-        return ['<hi rend="smallcaps_italic">', ''.join(toks[0]), '</hi>']
+    def _pa_italic(self, s, loc, toks):
+        return ['<hi rend="italic">', ''.join(toks[0]), '</hi>']
 
     def _pa_lang_ancient_greek(self, s, loc, toks):
         return self._make_foreign('grc', toks)
@@ -593,6 +594,9 @@ class DocumentParser:
     def _pa_lang_middle_welsh(self, s, loc, toks):
         return self._make_foreign('wlm', toks)
 
+    def _pa_lang_old_english(self, s, loc, toks):
+        return self._make_foreign('ang', toks)
+
     def _pa_lang_portuguese(self, s, loc, toks):
         return self._make_foreign('por', toks)
 
@@ -609,6 +613,15 @@ class DocumentParser:
         return ['<note type="marginal" place="margin_left">', ''.join(toks[0]),
                 '</note>']
 
+    def _pa_line(self, s, loc, toks):
+        return ['<l>', ''.join(toks[0]), '</l>']
+
+    def _pa_line_group(self, s, loc, toks):
+        return ['<lg>', ''.join(toks[0]), '</lg>']
+
+    def _pa_line_indented(self, s, loc, toks):
+        return ['<l rend="indent">', ''.join(toks[0]), '</l>']
+
     def _pa_list_item_code(self, s, loc, toks):
         return ['<item>', ''.join(toks[0]), '</item>']
 
@@ -621,6 +634,21 @@ class DocumentParser:
     def _pa_ms_doc_desc(self, s, loc, toks):
         if len(toks[0]) < 4:
             toks[0].insert(0, '')
+        elif len(toks[0]) == 5:
+            # This is a bizarre problem I do not understand when an
+            # apostrophe occurs at the start of the @md and it
+            # contains at least one other apostrophe, in which case
+            # the ed desc skips to after the second apostrophe, and we
+            # end up with the skipped text as an extra token
+            # here. WTF?
+            #
+            # So instead of dealing with the problem properly in the
+            # grammar, since I don't have a clue what is going on,
+            # just alert that the initial apostrophe needs to be
+            # removed and then added back later. I can't just cludge
+            # the skipped text in because it throws out some
+            # whitespace too ("'text' foo" -> ["'text'", "foo"]).
+            raise pp.ParseFatalException('@md begins with an apostrophe. For reasons unknown, this causes a problem. Please remove that initial apostrophe, validate/convert, and then add it back (to the Word document and TEI)')
         ed_desc, source_code, ms_identifier, tech_desc = toks[0]
         return '''<msDesc xml:id="{}">
 {}
@@ -768,13 +796,19 @@ class DocumentParser:
         return self._make_signed(s, loc, toks)
 
     def _pa_signed_centre(self, s, loc, toks):
-        return self._make_signed(s, loc, toks, 'centre')
+        return self._make_signed(s, loc, toks, 'center')
 
     def _pa_signed_right(self, s, loc, toks):
         return self._make_signed(s, loc, toks, 'right')
 
-    def _pa_small_caps(self, s, loc, toks):
-        return ['<hi rend="smallcaps">', ''.join(toks[0]), '</hi>']
+    def _pa_signed_mark(self, s, loc, toks):
+        return self._make_signed_mark(s, loc, toks)
+
+    def _pa_signed_mark_centre(self, s, loc, toks):
+        return self._make_signed_mark(s, loc, toks, 'center')
+
+    def _pa_signed_mark_right(self, s, loc, toks):
+        return self._make_signed_mark(s, loc, toks, 'right')
 
     def _pa_source_code(self, s, loc, toks):
         code = ''.join(toks[0])
@@ -794,14 +828,17 @@ class DocumentParser:
     def _pa_special_v(self, s, loc, toks):
         return ['\N{LATIN SMALL LETTER MIDDLE-WELSH V}']
 
+    def _pa_square_bracket_close(self, s, loc, toks):
+        return [']']
+
+    def _pa_square_bracket_open(self, s, loc, toks):
+        return ['[']
+
     def _pa_superscript(self, s, loc, toks):
         return ['<hi rend="superscript">', ''.join(toks[0]), '</hi>']
 
     def _pa_supplied(self, s, loc, toks):
         return ['<supplied>', ''.join(toks[0]), '</supplied>']
-
-    def _pa_tab(self, s, loc, toks):
-        return ['<milestone type="table-cell" />']
 
     def _pa_tab_start(self, s, loc, toks):
         return ['<hi rend="right">', ''.join(toks[0]), '</hi>']

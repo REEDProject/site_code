@@ -156,6 +156,10 @@
    <field indexed="true" multiValued="true"
           name="facet_collectives_clergy" required="false" stored="true"
           type="int" />
+   <field indexed="true" multiValued="true" name="facet_collectives_office"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_collectives_title"
+          required="false" stored="true" type="int" />
    <field indexed="true" multiValued="true"
           name="facet_crimes_crime" required="false" stored="true"
           type="int" />
@@ -511,6 +515,7 @@
         <filter class="solr.SynonymFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
         -->
         <filter class="solr.LowerCaseFilterFactory"/>
+	<filter class="solr.EnglishPossessiveFilterFactory"/>
       </analyzer>
       <analyzer type="query">
         <tokenizer class="solr.StandardTokenizerFactory"/>

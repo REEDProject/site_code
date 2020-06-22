@@ -73,16 +73,6 @@ It spans multiple paragraphs.!
         expected = 'some <space /> text'
         self._check_conversion(text, expected)
 
-    def test_bold(self):
-        text = 'some @e\\bold@e/ text'
-        expected = 'some <hi rend="bold">bold</hi> text'
-        self._check_conversion(text, expected)
-
-    def test_bold_italic(self):
-        text = 'some @j\\bold italic@j/ text'
-        expected = 'some <hi rend="bold_italic">bold italic</hi> text'
-        self._check_conversion(text, expected)
-
     def test_capitulum(self):
         text = '@Ca'
         expected = '\N{CAPITULUM}a'
@@ -98,6 +88,11 @@ It spans multiple paragraphs.!
         expected = 'garc\N{COMBINING CEDILLA}on'
         self._check_conversion(text, expected)
 
+    def test_cell_centre(self):
+        text = '<t><r><c>Some</c><cc>text</cc></r></t>'
+        expected = '<table><row><cell>Some</cell><cell rend="center">text</cell></row></table>'
+        self._check_conversion(text, expected)
+
     def test_cell_right(self):
         text = '<t><r><c>Some</c><cr>text</cr></r></t>'
         expected = '<table><row><cell>Some</cell><cell rend="right">text</cell></row></table>'
@@ -105,7 +100,7 @@ It spans multiple paragraphs.!
 
     def test_centred(self):
         text = 'some @m\\centred@m/ text'
-        expected = 'some <hi rend="center">centred</hi> text'
+        expected = 'some <ab rend="center">centred</ab> text'
         self._check_conversion(text, expected)
 
     def test_circumflex(self):
@@ -119,42 +114,10 @@ It spans multiple paragraphs.!
         expected = '<closer>TTFN, Jamie</closer>'
         self._check_conversion(text, expected)
 
-    def test_collation_note_ref(self):
-        text = 'Some @cr\\@r1\\interesting text@cr/ content'
-        expected = 'Some <ref target="#cn1" type="collation-note">interesting text</ref> content'
+    def test_collation_note(self):
+        text = 'Some text@c\\text: foo@c/ content'
+        expected = 'Some text<note type="collation">text: foo</note> content'
         self._check_conversion(text, expected)
-
-    def test_collation_notes(self):
-        text = '''@h\\BPA!1532!eng\\!
-@w\\f 124 {{(19 November)}}\\!
-Test.
-@cn\\
-@c\\@a1\\A note.@c/
-@c\\@a2\\Another note.@c/
-@cn/'''
-        expected = '''<text type="record">
-<body>
-<head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
-<div xml:lang="eng" type="transcription">
-<div>
-<head>f 124 <supplied>(19 November)</supplied></head>
-<pb n="124" type="folio" />
-Test.
-
-</div>
-</div>
-<div type="collation_notes">
-<div type="collation_note">
-<anchor n="cn1" />A note.
-</div>
-<div type="collation_note">
-<anchor n="cn2" />Another note.
-</div>
-</div>
-</body>
-</text>'''
-        self.maxDiff = None
-        self._check_conversion(text, expected, heading=False, subheading=False)
 
     def test_comment(self):
         text = 'some @xc\\commented out@xc/ text'
@@ -268,6 +231,14 @@ A note.
             expected = 'b{}\N{COMBINING GRAVE ACCENT}t'.format(vowel)
             self._check_conversion(text, expected)
 
+    def test_illegible(self):
+        text = 'an@1gi1 there?'
+        expected = 'an<gap extent="1" reason="illegible" unit="chars" />1 there?'
+        self._check_conversion(text, expected)
+        text = 'i@18gin'
+        expected = 'i<gap extent="18" reason="illegible" unit="chars" />n'
+        self._check_conversion(text, expected)
+
     def test_indented(self):
         text = '@p\\Indented block of text.@p/'
         expected = '<ab type="indent">Indented block of text.</ab>'
@@ -291,29 +262,45 @@ A note.
         nested_expected = 'Some <handShift /><handShift />really<handShift /> interpolated<handShift /> text'
         self._check_conversion(nested_text, nested_expected)
 
-    def test_italic_small_caps(self):
-        text = 'Some @q\\italic small caps@q/ text'
-        expected = 'Some <hi rend="smallcaps_italic">italic small caps</hi> text'
+    def test_italics(self):
+        text = 'Some @it\\italic@it/ text'
+        expected = 'Some <hi rend="italic">italic</hi> text'
         self._check_conversion(text, expected)
 
-    def test_lang_anglo_norman(self):
-        text = 'The king said, "@xno\\Bon soir.@xno/"'
-        expected = 'The king said, "<foreign xml:lang="xno">Bon soir.</foreign>"'
+    def test_lang_german(self):
+        text = 'The king said, "@ger\\Guten Tag.@ger/"'
+        expected = 'The king said, "<foreign xml:lang="deu">Guten Tag.</foreign>"'
         self._check_conversion(text, expected)
 
-    def test_lang_english(self):
-        text = 'rex "@eng\\Hi.@eng/" dixit'
-        expected = 'rex "<foreign xml:lang="eng">Hi.</foreign>" dixit'
-        self._check_conversion(text, expected)
-
-    def test_lang_latin(self):
-        text = 'The king said, "@lat\\Salve.@lat/"'
-        expected = 'The king said, "<foreign xml:lang="lat">Salve.</foreign>"'
-        self._check_conversion(text, expected)
+    def test_lang_generic(self):
+        langs = ('ang', 'cnx', 'cor', 'cym', 'eng', 'fra', 'gla', 'gmh',
+                 'gml', 'grc', 'ita', 'lat', 'por', 'spa', 'wlm', 'xno')
+        text = 'Native tones @{}\\Foreign gabble@{}/ judge'
+        expected = 'Native tones <foreign xml:lang="{}">Foreign gabble</foreign> judge'
+        for lang in langs:
+            self._check_conversion(text.format(lang, lang),
+                                   expected.format(lang))
 
     def test_left_marginale(self):
         text = 'Hark, a @l\\left marginale note@l/ appears'
         expected = 'Hark, a <note type="marginal" place="margin_left">left marginale note</note> appears'
+        self._check_conversion(text, expected)
+
+    def test_line_group(self):
+        text = '@lg\\@lni\\Foo@lni/@ln\\Bar@ln/@lg/'
+        expected = '<lg><l rend="indent">Foo</l><l>Bar</l></lg>'
+        self._check_conversion(text, expected)
+        text = '''
+@lg\\
+  @lg\\
+    @lni\\Stanza 1, line 1, indented@lni/
+    @ln\\Stanza 1, line 2@ln/
+  @lg/
+  @lg\\
+    @lni\\Stanza 2, line 1, indented@lni/
+  @lg/
+@lg/'''
+        expected = '\n<lg><lg><l rend="indent">Stanza 1, line 1, indented</l><l>Stanza 1, line 2</l></lg><lg><l rend="indent">Stanza 2, line 1, indented</l></lg></lg>'
         self._check_conversion(text, expected)
 
     def test_list(self):
@@ -499,6 +486,14 @@ Test.
 </bibl>'''
         self.assertEqual(actual_desc, expected_desc)
 
+    def test_punctuation(self):
+        punctuation = ['.', ',', ';', ':', "'", '"', '(', ')', '*', '/', '#',
+                       '$', '%', '+', '-', '?', '–', '_', '=']
+        for item in punctuation:
+            text = item
+            expected = item
+            self._check_conversion(text, expected)
+
     def test_raised(self):
         text = 'mid@*dot'
         expected = 'mid\N{MIDDLE DOT}dot'
@@ -550,19 +545,25 @@ Text
                                subheading=False)
         data = {'lang': 'eng', 'place': 'BPA',
                 'date': '<date precision="low" when-iso="1631"><hi rend="italic">c</hi> 1631</date>',
-                'year': '{{c}} 1631', 'full_place': 'Boring Place Anyway'}
+                'year': '@it\\c@it/ 1631', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
         data = {'lang': 'eng', 'place': 'BPA',
                 'date': '<date from-iso="1630" precision="low" to-iso="1632"><hi rend="italic">c</hi> 1629/30-31/2</date>',
-                'year': '{{c}} 1629/30-31/2', 'full_place': 'Boring Place Anyway'}
+                'year': '@it\\c@it/ 1629/30-31/2', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
         data = {'lang': 'eng', 'place': 'BPA',
                 'date': '<date from-iso="1601" to-iso="1700">17th Century</date>',
                 'year': '17th Century', 'full_place': 'Boring Place Anyway'}
+        self._check_conversion(base_input.format(**data),
+                               base_expected.format(**data), heading=False,
+                               subheading=False)
+        data = {'lang': 'eng', 'place': 'BPA',
+                'date': '<date when-iso="1600">1599/1600</date>',
+                'year': '1599/1600', 'full_place': 'Boring Place Anyway'}
         self._check_conversion(base_input.format(**data),
                                base_expected.format(**data), heading=False,
                                subheading=False)
@@ -594,7 +595,7 @@ Text
 
     def test_signed_centre(self):
         text = '@snc\\Thomas dyckes@snc/'
-        expected = '<seg type="signed" rend="centre">Thomas dyckes</seg>'
+        expected = '<seg type="signed" rend="center">Thomas dyckes</seg>'
         self._check_conversion(text, expected)
 
     def test_signed_right(self):
@@ -602,9 +603,19 @@ Text
         expected = '<seg type="signed" rend="right">Thomas dyckes</seg>'
         self._check_conversion(text, expected)
 
-    def test_small_caps(self):
-        text = 'Some @k\\small caps@k/ text'
-        expected = 'Some <hi rend="smallcaps">small caps</hi> text'
+    def test_signed_mark(self):
+        text = '@sm\\Who even knows@sm/'
+        expected = '<seg type="signed_mark">Who even knows</seg>'
+        self._check_conversion(text, expected)
+
+    def test_signed_mark_centre(self):
+        text = '@smc\\Who even knows@smc/'
+        expected = '<seg type="signed_mark" rend="center">Who even knows</seg>'
+        self._check_conversion(text, expected)
+
+    def test_signed_mark_right(self):
+        text = '@smr\\Who even knows@smr/'
+        expected = '<seg type="signed_mark" rend="right">Who even knows</seg>'
         self._check_conversion(text, expected)
 
     def test_special_v(self):
@@ -612,9 +623,25 @@ Text
         expected = 'Special \N{LATIN SMALL LETTER MIDDLE-WELSH V}, not k'
         self._check_conversion(text, expected)
 
+    def test_square_brackets(self):
+        text = 'Literal [[.'
+        expected = 'Literal [.'
+        self._check_conversion(text, expected)
+        text = 'Literal ]].'
+        expected = 'Literal ].'
+        self._check_conversion(text, expected)
+        text = '[[ no del here ]]'
+        expected = '[ no del here ]'
+        self._check_conversion(text, expected)
+
     def test_superscript(self):
         text = 'Some @s\\superscripted@s/ text'
         expected = 'Some <hi rend="superscript">superscripted</hi> text'
+        self._check_conversion(text, expected)
+
+    def test_tab_start(self):
+        text = '@[This should be right aligned.@]'
+        expected = '<hi rend="right">This should be right aligned.</hi>'
         self._check_conversion(text, expected)
 
     def test_table(self):
@@ -772,8 +799,8 @@ Totally new.
     def test_nesting(self):
         # This is impossible to comprehensively test. Start with a few
         # examples and add more as problems are discovered.
-        text = '@l\\@k\\ac@k/or @k\\a@k/@l/!'
-        expected = '<note type="marginal" place="margin_left"><hi rend="smallcaps">ac</hi>or <hi rend="smallcaps">a</hi></note><lb />'
+        text = '@l\\@m\\ac@m/or @m\\a@m/@l/!'
+        expected = '<note type="marginal" place="margin_left"><ab rend="center">ac</ab>or <ab rend="center">a</ab></note><lb />'
         self._check_conversion(text, expected)
 
 
@@ -905,7 +932,6 @@ After table text.
 '''
         actual = self._transform(text, AB_TO_P_XSLT_PATH)
         self.assertEqual(actual, expected)
-
 
     def test_add_ab(self):
         text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -1042,7 +1068,7 @@ After table text.
 </group>
 </text>
 </TEI>'''
-        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff" xml:lang="eng"><teiHeader><fileDesc><titleStmt/><sourceDesc/></fileDesc><encodingDesc><listPrefixDef><prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../taxonomy.xml#$1"><p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the taxonomy.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p></prefixDef><prefixDef ident="gloss" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../glossary.xml#$1"><p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the glossary.xml file. For example, <code>gloss:histrio-1</code> dereferences to <code>glossary.xml#histrio-1</code>.</p></prefixDef></listPrefixDef></encodingDesc><profileDesc><langUsage><language ident="eng">English</language><language ident="lat">Latin</language></langUsage></profileDesc></teiHeader>
+        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff" xml:lang="eng"><teiHeader><fileDesc><titleStmt/><sourceDesc/></fileDesc><encodingDesc><listPrefixDef><prefixDef ident="eats" matchPattern="([0-9]+)" replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/"><p>URIs using the <code>eats</code> prefix are references to EATS entities.</p></prefixDef><prefixDef ident="gloss" matchPattern="([\S]+)" replacementPattern="../glossary.xml#$1"><p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the glossary.xml file. For example, <code>gloss:histrio-1</code> dereferences to <code>glossary.xml#histrio-1</code>.</p></prefixDef><prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../taxonomy.xml#$1"><p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the taxonomy.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p></prefixDef></listPrefixDef></encodingDesc><profileDesc><langUsage><language ident="eng">English</language><language ident="lat">Latin</language></langUsage></profileDesc></teiHeader>
 <text>
 <group>
 <text type="record" xml:id="staff-ridm4">
@@ -1079,16 +1105,7 @@ After table text.
 <div type="transcription">
 <div>
 <head>@w head 1.1</head>
-<ab>Some text with <ref target="#cn1" type="collation-note">collated material</ref>.</ab>
-<ab>More <ref target="#cn2" type="collation-note">material needing a collation note</ref>.</ab>
-</div>
-</div>
-<div type="collation_notes">
-<div type="collation_note">
-<ab><anchor n="cn1" />A note.</ab>
-</div>
-<div type="collation_note">
-<ab><anchor n="cn2" />Another note.</ab>
+<ab>Some text with <note type="collation">collated material</note>.</ab>
 </div>
 </div>
 </body>
@@ -1119,16 +1136,7 @@ After table text.
 <div type="transcription" xml:id="staff-ridm4-transcription">
 <div>
 <head>@w head 1.1</head>
-<ab>Some text with <ref target="#staff-ridm4-cnidm15" type="collation-note">collated material</ref>.</ab>
-<ab>More <ref target="#staff-ridm4-cnidm18" type="collation-note">material needing a collation note</ref>.</ab>
-</div>
-</div>
-<div type="collation_notes" xml:id="staff-ridm4-collation-notes">
-<div type="collation_note" xml:id="staff-ridm4-cnidm15">
-<ab>A note.</ab>
-</div>
-<div type="collation_note" xml:id="staff-ridm4-cnidm18">
-<ab>Another note.</ab>
+<ab>Some text with <note type="collation">collated material</note>.</ab>
 </div>
 </div>
 </body>
@@ -1164,7 +1172,7 @@ After table text.
 <div type="transcription">
 <div>
 <head>@w head 1.1</head>
-<ab>Some text with <note type="foot">with: <ex>see f <del>1v</del>.</ex></note>.</ab>
+<ab>Some text with <note type="foot">with: <gap reason="omitted" /> <hi rend="italic">see f [1v].</hi></note>.</ab>
 </div>
 </div>
 </body>
@@ -1181,7 +1189,7 @@ After table text.
 <div type="transcription">
 <div>
 <head>@w head 1.1</head>
-<ab>Some text with <note type="foot">with: <hi rend="italic">see f [1v].</hi></note>.</ab>
+<ab>Some text with <note type="foot">with: … <hi rend="italic">see f [1v].</hi></note>.</ab>
 </div>
 </div>
 </body>
