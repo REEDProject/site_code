@@ -34,10 +34,10 @@ function addRegionLayer(map) {
     },
     onEachFeature: function(feature, layer) {
       var popupContent;
-      if (feature.properties && feature.properties.patrons_place_type) {
+      if (feature.properties && feature.properties.place_type) {
         var popupContent = 'Source Region: ' +
             feature.properties.name +
-            '<br>Region Type: ' + feature.properties.patrons_place_type;
+            '<br>Region Type: ' + feature.properties.place_type;
       }
       layer.bindPopup(popupContent);
     }
@@ -243,4 +243,4 @@ function showLegend(baseImagePath) {
                    'legend.png" height="335" width="150">' + '<br>');
 }
 
-let [map, relatedLayer, regionLayer] = makeMap();
+var [map, relatedLayer, regionLayer] = makeMap();
