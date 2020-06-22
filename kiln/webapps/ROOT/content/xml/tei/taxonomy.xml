@@ -72,8 +72,8 @@
                 </respStmt>
             </titleStmt>
             <editionStmt>
-                <edition>version 2, released <date when-iso="2018-04-16">16 April
-                    2018</date></edition>
+                <edition>version 3, released <date when-iso="2020-06-22">22 June
+                    2020</date></edition>
             </editionStmt>
             <publicationStmt>
                 <authority><orgName>Records of Early English Drama (REED)</orgName>
@@ -86,7 +86,7 @@
                 </authority>
                 <availability>
                     <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
-                            <date>2018</date></p>
+                            <date>2020</date></p>
                     <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed
                         under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
                         International (CC BY-NC-SA 4.0) licence.</licence>
@@ -338,6 +338,7 @@
         </profileDesc>
         <revisionDesc>
             <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
+            <change when="2020-06-22" who="#CB">Published version 3 of taxonomy.xml</change>
             <change when="2019-10-28" who="#CB">Corrected Michaaelmas to Michaelmas in BRRCOV</change>
             <change when="2018-04-16" who="#CB">Published version 2 of taxonomy.xml</change>
             <change when="2018-02-23" who="#CB">Added all data from Berkshire
