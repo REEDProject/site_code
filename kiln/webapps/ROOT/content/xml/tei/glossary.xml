@@ -1044,6 +1044,16 @@
                             in a church court moved or initiated by someone other than the court
                             itself or a person authorized to make presentment</sense>
                     </entry>
+                    
+                    <entry xml:id="pylagorae">
+                        <form>
+                            <orth>pylagorae, -arum</orth> 
+                            <gram>n f pl</gram>
+                        </form>
+                        <sense xml:id="pylagorae-1">Athenian deputies in Amphictyonic council <ref>(from Greek πυλαγόραι)</ref>  
+                        </sense>
+                        </entry>
+                        
 
                 </div>
 
@@ -1094,9 +1104,18 @@
                             <hi rend="bold">chitherator</hi>
                         </xr>
                     </entry>
-  
                     
-                    <entry xml:id="suthamptonia">
+                    <entry xml:id="supplotio">
+                        <form>
+                            <orth>supplotio, -nis</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="supplotio-1">stamping (of feet), trampling <ref>[<hi
+                            rend="italic">see</hi> supplodere <hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                     <entry xml:id="suthamptonia">
                         <form>
                             <orth>suthamptonia, -ie</orth>
                             <gram>n f</gram>
@@ -2162,7 +2181,16 @@
                         </sense>
                     </entry>
                     
-                    <entry xml:id="boothier">
+                    <entry xml:id="bootes">
+                        <form>
+                            <orth>boothes</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="bootes-1">boats</sense>
+                    </entry>
+                    
+                    
+                   <entry xml:id="boothier">
                         <form>
                             <orth>boothier</orth>
                             <gram>n</gram>
@@ -2862,8 +2890,10 @@
                             <orth>countrefaict</orth>
                             <gram>adj</gram>
                         </form>
-                        <sense xml:id="countrefaict-1">counterfeit; here, someone with a physical disability or deformity <ref>[<hi rend="italic">OEDO</hi> counterfeit <hi rend="italic">adj and n</hi> A.8, B.4]</ref></sense>
+                        <sense xml:id="countrefaict-1">counterfeit; here, someone pretending to travel as a jester with a noble patron or possibly someone with a physical disability or deformity <ref>[<hi rend="italic">OEDO</hi> counterfeit <hi rend="italic">adj and n</hi> A.8, B.4]</ref></sense>
                     </entry>
+                    
+                    
 
                     <entry xml:id="course">
                         <form>
@@ -4273,15 +4303,16 @@
                         </form>
                         <sense xml:id="king-1">king ale, an inversion of order event in which a king
                             — typically a local young man or farmer — was appointed to preside over
-                            the festival from a bower built for the occasion; <form><orth>kyng
-                                    game</orth></form>, <form><orth>kynges game</orth></form>,
+                            the festival; <form><orth>kyng
+                                game</orth></form>, <form><orth>kynges game</orth></form>,
                             <form><orth>king play</orth></form>, <form><orth>kynges play</orth></form>, <form><orth>kyng
-                                    play</orth></form> synonymous with king ale; <form><gram>in
+                                play</orth></form> synonymous with king ale; <form><gram>in
                                     phr</gram>
-                                <orth>king halle</orth>, <orth>kyng halle</orth>
-                            </form> king hall, likely the bower built for the king of the king ale
+                                    <orth>king halle</orth>, <orth>kyng halle</orth>
+                                </form> king hall, likely a bower built for the king of the king ale
                         </sense>
                     </entry>
+                    
                     <!--could I get a second set of eyes especially on this entry? Does it look tidy enough? -->
                     <!--CB: should you be using semicolons rather than commas between variants, as that what I think you've done elsewhere-->
                     <!--JH: I wasn't sure about this one because we're listing a series of forms before a sense, rather than variants after a sense; above in the Latin glossary cases like this are separated with commas (see e.g. some of the terms under C). Any thoughts on whether this needs to be changed to be more consistent?-->
@@ -4865,7 +4896,7 @@
                     
                     <entry xml:id="obsteynacye">
                         <form>
-                            <orth>obsteynacyeh</orth>
+                            <orth>obsteynacye</orth>
                             <gram>n</gram>
                         </form>
                         <sense xml:id="obsteynacye-1">obstinacy</sense>
@@ -6275,6 +6306,22 @@
                         </form>
                         <sense xml:id="togedyr-1">together</sense>
                     </entry>
+                    
+                    <entry xml:id="too">
+                        <form>
+                            <orth>toe</orth>
+                            <gram>adv</gram>
+                        </form>
+                        <sense xml:id="too-1">too</sense>
+                    </entry>
+                    <entry xml:id="to">
+                        <form>
+                            <orth>toe</orth>
+                            <gram>prep</gram>
+                        </form>
+                        <sense xml:id="to-1">to</sense>
+                    </entry>
+                    
 
                     <entry xml:id="totalys">
                         <form>
@@ -6333,6 +6380,16 @@
                         </form>
                         <sense xml:id="trunk-1">a tree trunk, likely used for a maypole</sense>
                     </entry>
+                    
+                    <entry xml:id="trunkes">
+                        <form>
+                            <orth>trunkes</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="trunkes-1">trunks, a game resembling bagatelle; <form><orth>tronkes</orth></form><ref>[<hi
+                            rend="italic">OEDO</hi>trunk<hi rend="italic">n 16</hi>]</ref></sense>
+                    </entry>
+                    
                     
                     <entry xml:id="trusser">
                         <form>
