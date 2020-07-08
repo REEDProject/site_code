@@ -86,7 +86,8 @@ def serialise_all_with_placeholders(request):
         # We need to include regions with point placeholder
         # coordinates in the generated geojson/XML file.
         fields = ('name', 'place_type', 'container', 'placeholder_coordinates',
-                  'patrons_label_flag', 'is_approximate', 'notes', 'pk')
+                  'patrons_label_flag', 'symbol_flag', 'is_approximate',
+                  'notes', 'pk')
         regions_as_points_geojson = json.loads(
             serialize('geojson', regions,
                       fields=fields, geometry_field='placeholder_coordinates',
