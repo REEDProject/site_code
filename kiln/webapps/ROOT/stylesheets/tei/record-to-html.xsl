@@ -148,6 +148,7 @@
         <xsl:call-template name="display-record-endnote" />
         <xsl:call-template name="display-record-associated-entities" />
         <xsl:call-template name="display-record-doc-desc" />
+        <xsl:call-template name="display-record-images" />
       </ul>
     </div>
   </xsl:template>
@@ -248,6 +249,29 @@
             <xsl:variable name="text-id" select="@xml:id" />
             <xsl:apply-templates mode="group" select=".//tei:term[@ref][not(@ref = preceding::tei:term[@ref][ancestor::tei:text[1]/@xml:id=$text-id]/@ref)]" />
           </ul>
+        </div>
+      </li>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="display-record-images">
+    <xsl:variable name="facs" select=".//tei:pb[normalize-space(@facs)]" />
+    <xsl:if test="$facs">
+      <li class="accordion-item" data-accordion-item="">
+        <a href="#" class="accordion-title">Manuscript Images</a>
+        <div class="accordion-content" data-tab-content="">
+          <p>
+            <xsl:for-each select="$facs">
+              <xsl:variable name="url"
+                            select="id(substring-after(@facs, '#'))/@url" />
+              <xsl:variable name="ref" select="substring-after(substring-before($url, '.'), 'images/')" />
+              <a href="{kiln:url-for-match('local-images-jpeg', ($ref), 0)}">
+                <img src="{kiln:url-for-match('local-images-jpeg-thumbnail', ($ref), 0)}" />
+              </a>
+              <xsl:text> </xsl:text>
+            </xsl:for-each>
+          </p>
+          <p><xsl:value-of select="id(substring-after($facs[1]/@facs, '#'))/tei:desc" /></p>
         </div>
       </li>
     </xsl:if>

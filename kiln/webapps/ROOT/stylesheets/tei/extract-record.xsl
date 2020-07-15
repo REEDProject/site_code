@@ -13,6 +13,7 @@
     <xsl:copy>
       <xsl:copy-of select="@*" />
       <xsl:copy-of select="tei:teiHeader" />
+      <xsl:copy-of select="tei:facsimile" />
       <xsl:copy-of select="id($record-id)" />
     </xsl:copy>
   </xsl:template>
