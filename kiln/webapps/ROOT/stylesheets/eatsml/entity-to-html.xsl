@@ -30,30 +30,29 @@
     <xsl:param name="records" />
     <script>
       <xsl:text>var related_location_geojson = [</xsl:text>
-      <xsl:for-each select="$records">
-        <xsl:if test="position() = 1">
-          <xsl:text>{"type":"FeatureCollection",
-          "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::4326"}},
-          "features":[</xsl:text>
-        </xsl:if>
-        <xsl:variable name="geojson" select="id(str[@name='record_location_id'])/geojson[1]" />
-        <xsl:apply-templates mode="geojson" select="$geojson">
-          <xsl:with-param name="record-id" select="str[@name='document_id']" tunnel="yes" />
-          <xsl:with-param name="record-title" select="arr[@name='document_title']/str[1]" tunnel="yes" />
-        </xsl:apply-templates>
-        <xsl:choose>
-          <xsl:when test="position() = last()">
-            <xsl:text>]}</xsl:text>
-          </xsl:when>
+      <xsl:variable name="record_data">
+        <xsl:for-each select="$records">
+          <xsl:variable name="geojson" select="id(str[@name='record_location_id'])/geojson[1]" />
+          <xsl:apply-templates mode="geojson" select="$geojson">
+            <xsl:with-param name="record-id" select="str[@name='document_id']" tunnel="yes" />
+            <xsl:with-param name="record-title" select="arr[@name='document_title']/str[1]" tunnel="yes" />
+          </xsl:apply-templates>
           <!-- There may not be geoJSON data for a location, in which
                case don't include stray commas that make the mapping
                fail entirely. -->
-          <xsl:when test="$geojson">
+          <xsl:if test="$geojson">
             <xsl:text>,
             </xsl:text>
-          </xsl:when>
-        </xsl:choose>
-      </xsl:for-each>
+          </xsl:if>
+        </xsl:for-each>
+      </xsl:variable>
+      <xsl:if test="normalize-space($record_data)">
+        <xsl:text>{"type":"FeatureCollection",
+        "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::4326"}},
+        "features":[</xsl:text>
+        <xsl:value-of select="$record_data" />
+        <xsl:text>]}</xsl:text>
+      </xsl:if>
       <xsl:text>];</xsl:text>
     </script>
   </xsl:template>
@@ -63,7 +62,7 @@
       <xsl:text>var source_location_geojson = [</xsl:text>
       <xsl:if test="$entity/geojson[@type='Point']">
         <xsl:text>{"type":"FeatureCollection",
-        "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::3857"}},
+        "crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::4326"}},
         "features":[</xsl:text>
         <xsl:value-of select="$entity/geojson" />
         <xsl:text>]}</xsl:text>
