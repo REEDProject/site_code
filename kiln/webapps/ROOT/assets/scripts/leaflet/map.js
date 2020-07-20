@@ -169,10 +169,15 @@ function addTileLayers(map) {
  * @param {Layer} relatedLayer - layer showing sources of related records
  */
 function fitBounds(map, regionLayer, relatedLayer) {
+  let zoom = 12;
   if (source_region_geojson.length > 0) {
     map.fitBounds(regionLayer.getBounds());
   } else if (related_location_geojson.length > 0) {
-    map.fitBounds(relatedLayer.getBounds(), {maxZoom: 12});
+    map.fitBounds(relatedLayer.getBounds(), {maxZoom: zoom});
+  } else if (source_location_geojson.length > 0) {
+    let coordinates = swapCoordinates(
+      source_location_geojson[0].features[0].geometry.coordinates);
+    map.setView(coordinates, zoom);
   }
 }
 
@@ -238,10 +243,24 @@ function makeMap() {
   return [map, relatedLayer, regionLayer];
 }
 
+
 function showLegend(baseImagePath) {
   let div = document.getElementById('info_legend');
   div.innerHTML = ('<br>' + '<img src="' + baseImagePath +
                    'legend.png" height="335" width="150">' + '<br>');
 }
+
+
+/**
+ * Return the supplied coordinates with the values swapped (eg,
+ * lat-long becomes long-lat).
+ *
+ * @param {Array} coordinates - coordinates to swap
+ * @returns {Array}
+ */
+function swapCoordinates(coordinates) {
+  return [coordinates[1], coordinates[0]]
+}
+
 
 var [map, relatedLayer, regionLayer] = makeMap();
