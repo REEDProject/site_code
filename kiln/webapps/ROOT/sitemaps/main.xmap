@@ -33,6 +33,10 @@
         <map:read mime-type="image/gif" src="../content/images/{1}.gif" />
       </map:match>
 
+      <map:match id="local-images-jpeg-thumbnail" pattern="images/**-thumb.jpg">
+        <map:read mime-type="image/jpeg" src="../content/thumbnails/{1}.jpg" />
+      </map:match>
+
       <map:match id="local-images-jpeg" pattern="images/**.jpg">
         <map:read mime-type="image/jpeg" src="../content/images/{1}.jpg" />
       </map:match>

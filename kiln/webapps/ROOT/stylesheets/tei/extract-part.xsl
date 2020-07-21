@@ -18,19 +18,18 @@
 
   <xsl:param name="part-id" />
 
-  <xsl:variable name="part" select="id($part-id)" />
-
   <xsl:template match="tei:TEI">
+    <xsl:variable name="part" select="id($part-id)" />
     <xsl:copy>
       <xsl:copy-of select="@*" />
       <xsl:copy-of select="tei:teiHeader" />
       <tei:text>
         <xsl:apply-templates select="$part" />
       </tei:text>
+      <records>
+        <xsl:copy-of select="$part//tei:text[@type='record']" />
+      </records>
     </xsl:copy>
-    <records>
-      <xsl:copy-of select="$part//tei:text[@type='record']" />
-    </records>
   </xsl:template>
 
   <xsl:template match="tei:text[@type='record']">
