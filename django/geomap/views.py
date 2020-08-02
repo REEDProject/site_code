@@ -110,7 +110,9 @@ def serialise_all_with_placeholders(request):
 
 def serialise_points(request):
     """Serialise all of the point places as GeoJSON."""
-    places = Place.objects.extra(where=["GeometryType(coordinates) = 'POINT'"])
+    places = Place.objects.extra(
+        where=["GeometryType(coordinates) = 'POINT'"]).order_by(
+            'patrons_label_flag', 'place_type__tile_order')
     return _serialise_as_geojson(places)
 
 
