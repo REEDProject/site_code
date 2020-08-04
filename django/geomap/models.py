@@ -10,6 +10,7 @@ class PlaceType(models.Model):
     """Mode representing the place type."""
 
     name = models.CharField(max_length=50, unique=True)
+    tile_order = models.PositiveSmallIntegerField(default=1)
 
     class Meta:
         ordering = ['name']
