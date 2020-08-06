@@ -136,10 +136,10 @@
         <xsl:text>Books</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_materials_property'">
-        <xsl:text>Props &amp; Machinery</xsl:text>
+        <xsl:text>Props</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_materials_set'">
-        <xsl:text>Sets</xsl:text>
+        <xsl:text>Sets &amp; Machinery</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_materials_wagon'">
         <xsl:text>Pageant Wagons</xsl:text>
