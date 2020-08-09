@@ -189,7 +189,10 @@
       </date>
       <!-- An entity may have multiple occupations. -->
       <xsl:for-each select="eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$has_occupation_relationship_type][@domain_entity=$entity_id]">
-        <occupation type="details">
+        <occupation>
+          <xsl:if test="not(../../eats:entity_types/eats:entity_type/@entity_type=$occupational_guild_entity_type)">
+            <xsl:attribute name="type" select="'details'"/>
+          </xsl:if>
           <xsl:apply-templates mode="title" select="." />
         </occupation>
       </xsl:for-each>
