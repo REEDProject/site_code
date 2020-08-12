@@ -28,6 +28,7 @@
           <map:part element="delete"
                     src="cocoon://_internal/solr/delete-all" />
           <map:part element="insert" src="cocoon:/add/" />
+          <map:part element="insert" src="cocoon:/add/tei-bibliography/tei/bibliography.xml" />
           <map:part element="optimize"
                     src="cocoon://_internal/solr/optimize" />
           <map:part src="cocoon://_internal/menu/admin.xml?url=admin/solr/" />
