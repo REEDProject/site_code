@@ -14,6 +14,7 @@
                 <editor>Jane Cowling</editor>
                 <editor>Peter Greenfield</editor>
                 <editor>Alexandra F. Johnston</editor>
+                <editor>Sally-Beth MacLean</editor>
                 <editor>J. Alan B. Somerset</editor>
                 <respStmt>
                     <persName xml:id="CB">C. Black</persName>
@@ -121,7 +122,10 @@
                         </category>
                         <category xml:id="hampsBib">
                             <catDesc>Hampshire</catDesc>
-                        </category>                            
+                        </category>
+                        <category xml:id="rosepBib">
+                            <catDesc>Rose Playhouse Prototype</catDesc>
+                        </category>
                         <category xml:id="staffBib">
                             <catDesc>Staffordshire</catDesc>
                         </category>
@@ -205,6 +209,9 @@
                                 </choice>
                             </catDesc>
                         </category>
+                        <category xml:id="dulwich-college">
+                            <catDesc>Dulwich College</catDesc>
+                        </category>
                         <category xml:id="exeter-college-archives">
                             <catDesc>Exeter College Archives</catDesc>
                         </category>
@@ -247,6 +254,14 @@
                                 </choice>
                             </catDesc>
                         </category>
+                        <category xml:id="LMA">
+                            <catDesc>
+                                <choice>
+                                    <abbr>LMA</abbr>
+                                    <expan>London Metropolitan Archives</expan>
+                                </choice>
+                            </catDesc>
+                        </category>                      
                         <category xml:id="oxfordshire-history-centre">
                             <catDesc>Oxfordshire History Centre</catDesc>
                         </category>
@@ -5340,7 +5355,7 @@ through <rs ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Pers
                     </msDesc>
                     <bibl xml:id="HASEAA">
                         <title type="edName">The Entertainment of <rs ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Person_Royalty">Queen Elizabeth</rs> at
-                            Elvetham</title>
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/155529/" type="Place_BoroughParish">Elvetham</rs></title>
                         <note type="edDesc"><p><rs ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Person_Royalty">Queen Elizabeth</rs> visited <rs ref="http://ereed.library.utoronto.ca/eats/entity/144234/" type="Person_Nobility">Edward Seymour</rs> (1539–1621),
                                 9th <rs ref="http://ereed.library.utoronto.ca/eats/entity/30047/" type="Collective_Title">earl of Hertford</rs>, at <rs ref="http://ereed.library.utoronto.ca/eats/entity/155529/" type="Place_BoroughParish">Elvetham</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1967/" type="Place_County">Hampshire</rs>, from 20–3 September
                                 1591, where she enjoyed elaborate pageantry prepared by the earl.
@@ -7624,7 +7639,7 @@ through <rs ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Pers
                             <settlement>San Marino, California</settlement>
                             <repository sameAs="#huntington-library"/>
                             <idno type="shelfmark">HM 116</idno>
-                            <msName>Poem on a Schoolboy <rs ref="http://ereed.library.utoronto.ca/eats/entity/8782/" type="Entertainer_Type">Actor</rs> Killed Acting a <rs ref="http://ereed.library.utoronto.ca/eats/entity/40453/" type="Drama_Type">Tragedy</rs></msName>
+                            <msName>Poem on a Schoolboy <rs ref="http://ereed.library.utoronto.ca/eats/entity/8782/" type="Entertainer_Type">Actor</rs> Killed Acting a <rs ref="http://ereed.library.utoronto.ca/eats/entity/215119/" type="Drama_Type">Tragedy</rs></msName>
                         </msIdentifier>
                         <ab type="edDesc">A boy called <rs ref="http://ereed.library.utoronto.ca/eats/entity/195031/" type="Person_Commoner">Christopher Longland</rs> was elected to
                             <rs ref="http://ereed.library.utoronto.ca/eats/entity/106806/" type="Place_Feature">Winchester College</rs> at the age of 11 in 1623. Some time between his
@@ -13469,6 +13484,838 @@ through <rs ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Pers
                             leather-covered board binding, Harley crest on front: a shield flanked
                             by angels, with a crown over it, and below the motto 'VIRTUTE ET FIDE',
                             title on spine: '33 //'.</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSSFMS">
+                        <msIdentifier>
+                            <settlement>Oxford</settlement>
+                            <repository sameAs="#Bodl."/>
+                            <idno type="shelfmark">MS Ashmole 236</idno>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/153305/" type="Person_Commoner">Simon Forman</rs>'s Casebook</msName>
+                        </msIdentifier>
+                        <ab type="edDesc">The <rs ref="http://ereed.library.utoronto.ca/eats/entity/164589/" type="Collective_Occupation">astrologer</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/153305/" type="Person_Commoner">Simon Forman</rs> (1552–1611) made note of his
+                            attendance at two performances by the <rs ref="http://ereed.library.utoronto.ca/eats/entity/25827/" type="Collective_Troupe">admiral's men</rs> at <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/" type="Place_Feature">the Rose</rs> in
+                            volume 5 of his six surviving casebooks of astrological practices.
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/129736/" type="Person_Commoner">Henslowe</rs> was a client of Forman and the implications of their
+                            relationship are explored by Susan Cerasano in her article 'Philip
+                            Henslowe, Simon Forman,' pp 145–58. See further Lauren Kassell <hi
+                                rend="italic">et al</hi> (eds), 'Casebooks,' <title>The Casebooks of
+                                Simon Forman and Richard Napier, 1596–1634: A Digital
+                                Edition</title> (<ref target="https://casebooks.lib.cam.ac.uk">https://casebooks.lib.cam.ac.uk</ref>, accessed 25 June
+                            2019).</ab>
+                        <ab type="techDesc"><date>2 January 1599/1600–4 January 1600/1</date>;
+                            English; paper; 299 leaves; first 14 leaves unfoliated and blank except f [14v] (inscribed 'Figures sit vpon Horary Questions | by Mr Symon Forman 1600 | Volume V.'), later ink foliation 1–9a, 2 unfoliated
+                            leaves (repaired), 10–119, 121–264, final 20 leaves
+                            unfoliated blanks; 310mm x 210mm (text
+                            area variable); edges deckled, paper fragile in places, several leaves
+                            repaired; no decoration but individual entries include horoscopes;
+                            leather-covered board binding with metal clasps, hinges cracked, spine
+                            horizontally ridged, with Bodleian stamp between top and second ridges:
+                            'ASH:/236' between second and third.</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSLBPC">
+                        <msIdentifier>
+                            <settlement>London</settlement>
+                            <repository sameAs="#LMA"/>
+                            <idno type="shelfmark">COL/RMD/PA/01/002</idno>
+                            <msName>Letter from the <rs ref="http://ereed.library.utoronto.ca/eats/entity/151102/" type="Person_Gentry">Lord Mayor</rs> to the Privy Council</msName>
+                        </msIdentifier>
+                        <ab type="edDesc">A letter from <rs ref="http://ereed.library.utoronto.ca/eats/entity/151102/" type="Person_Gentry">Sir Richard Saltonstall, the lord mayor of
+                            London </rs>, is preserved in the city's Remembrancia, ff 85–5v.<lb/><lb/> For an
+                            abstract and transcription details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/490/">event 490</ref> and associated
+                            records.</ab>
+                        <ab type="techDesc"><date>January 1593/4–October 1609</date>; English;
+                            paper; 178 leaves; 330mm x 230mm; modern pencil foliation (used here)
+                            over ink foliation 1A, 1B–119, (with later entry numbers); some pages
+                            repaired; bound in white vellum on boards with tooled heraldic shield,
+                            title on spine in black ink (first word written sideways):
+                            'Remembrancia. | II | 1593 | 35 Eliz. | 1609 | 7. Jacob.' Entries were
+                            individually numbered in later pencil: the relevant entry is numbered
+                            171 in the left margin.</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSLPCJ">
+                        <msIdentifier>
+                            <settlement>Kew</settlement>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">PC 2/23</idno>
+                            <msName>Privy Council Letter to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/61914/" type="Collective_Office">Master of the Revels</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/154215/" type="Collective_Office">JPs of
+                                Middlesex</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/160152/" type="Collective_Office">Surrey</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">For an abstract and transcription details, see EMLoT 
+                            <ref target="https://emlot.library.utoronto.ca/db/record/event/3850/">event 3850</ref> and associated records.</ab>
+                        <ab type="techDesc"><date>20 September 1597–30 July 1598</date>; English;
+                            paper; iii + 214 + i; 405mm x 253mm; ink pagination 1–362, unpaginated
+                            index in a different hand (34 leaves); bound in maroon leather over
+                            boards, tooled, title on spine in gilt: 'ELIZABETH. | VOL. XIV. |
+                            COUNCIL | REGISTER.|20. SEP. 1597. | TO | 30.JULY. 1598.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSLPCL">
+                        <msIdentifier>
+                            <settlement>Kew</settlement>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">PC 2/16</idno>
+                            <msName>Privy Council Letters regarding Censorship of Plays</msName>
+                        </msIdentifier>
+                        <ab type="edDesc">The series of letters on pp 388–9 was precipitated by the
+                            ongoing controversies around the unlicensed <rs ref="http://ereed.library.utoronto.ca/eats/entity/132318/" type="Person_Commoner">Martin Marprelate</rs> pamphlets,
+                            first published as a <rs ref="http://ereed.library.utoronto.ca/eats/entity/45540/" type="CrimesMisdemeanors">Puritan diatribe</rs> against the established church in
+                            the autumn of 1588. By the spring of 1589, several performance troupes
+                            and some <rs ref="http://ereed.library.utoronto.ca/eats/entity/59576/" type="Collective_Occupation">playwrights</rs> had joined the battle of words, on page and stage,
+                            mocking the Martinist followers in equally scurrilous terms. The
+                            authorities were therefore roused to control the involvement of <rs ref="http://ereed.library.utoronto.ca/eats/entity/8782/" type="Entertainer_Type">players</rs>
+                            in the debate about 'matters of Diuinitye and of State' by suppressing
+                            such performances in all the public theatres in the London area,
+                            including <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/" type="Place_Feature">the Rose</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/227741/" type="Place_Feature">Newington Butts</rs> south of the Thames.<lb/><lb/> For an
+                            abstract and transcription details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/209/">event 209</ref> and associated
+                            records.</ab>
+                        <ab type="techDesc"><date>15 May 1589–6 April 1590</date>; English; paper;
+                            ii + 292 + ii; 350mm x 220mm; ink pagination 1–586 (pp 2, 585
+                            unnumbered); some repairs but minimal loss of text; bound in worn brown
+                            leather over boards, tooled, title on spine in gilt: 'ELIZABETH. | VOL.
+                            VI. | COUNCIL | REGISTER. | 19. FEB. 1586. | TO | 1.NOV. 1587.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSLSPC">
+                        <msIdentifier>
+                            <settlement>London</settlement>
+                            <repository sameAs="#LMA"/>
+                            <idno type="shelfmark">COL/RMD/PA/01/002</idno>
+                            <msName>Letter from the <rs ref="http://ereed.library.utoronto.ca/eats/entity/150906/" type="Person_Gentry">Lord Mayor</rs> to the Privy Council</msName>
+                        </msIdentifier>
+                        <ab type="edDesc">A copy of a letter from <rs ref="http://ereed.library.utoronto.ca/eats/entity/150906/" type="Person_Gentry">Sir John Spencer, lord mayor of
+                            London</rs> in 1595, is preserved in the city's Remembrancia, ff 52v–3.<lb/><lb/>
+                            For an abstract and transcription details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/1810/">event 1810</ref> and
+                            associated records.</ab>
+                        <ab type="techDesc"><date>January 1593/4–October 1609</date>; English;
+                            paper; 178 leaves; 330mm x 230mm; modern pencil foliation (used here)
+                            over ink foliation 1A, 1B–119, (with later entry numbers); some pages
+                            repaired; bound in white vellum on boards with tooled heraldic shield,
+                            title on spine in black ink (first word written sideways):
+                            'Remembrancia. | II | 1593 | 35 Eliz. | 1609 | 7. Jacob.' Entries
+                            individually numbered in later pencil: the relevant entry is numbered
+                            103.</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSLWWB">
+                        <msIdentifier>
+                            <settlement>London</settlement>
+                            <repository sameAs="#BL"/>
+                            <idno type="shelfmark">Lansdowne 71</idno>
+                            <msName>Letter from the <rs ref="http://ereed.library.utoronto.ca/eats/entity/133707/" type="Person_Commoner">Lord Mayor</rs> to <rs ref="http://ereed.library.utoronto.ca/eats/entity/130613/" type="Person_Nobility">Lord Burghley</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">Although the play that served as the context for the
+                            assembly of <rs ref="http://ereed.library.utoronto.ca/eats/entity/237105/" type="Collective_GuildOccupational">Feltmakers</rs>' <rs ref="http://ereed.library.utoronto.ca/eats/entity/55239/" type="Collective_Occupation">apprentices</rs> in Southwark is not named, <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/" type="Place_Feature">the Rose</rs> would have been the only playhouse available for a performance there. A
+                            copy of this unsigned letter to <rs ref="http://ereed.library.utoronto.ca/eats/entity/130613/" type="Person_Nobility">William Cecil, 1st Baron Burghley,</rs> from
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/133707/" type="Person_Commoner">Sir William Webbe, the lord mayor of London</rs>, is also found in the city's
+                            Remembrancia (LMA: COL/RMD/PA/01/001, ff 341–2), dated 30 May 1592.<lb/><lb/>
+                            For an abstract and transcription details, see EMLoT <ref target="http://emlot.library.utoronto.ca/db/record/event/1857">event 1857</ref> and
+                            associated records.</ab>
+                        <ab type="techDesc"><date>12 June 1592</date>; English; paper; bifolium;
+                            315mm x 212mm; no original foliation; good condition apart from large
+                            stain over most of the document but no loss of text; fragments of
+                            original seal on f [2v] where address appears: 'To the most
+                            honourable my very | good L<ex>ord</ex> the L<ex>ord</ex> high Trea |
+                            surer of England.' Now bound with other Burghley papers, numbered 15,
+                            foliated 28–9, and mounted on binding strips in a brown board and
+                            buckram volume, title gold-stamped on the spine: 'BURGHLEY | PAPERS. |
+                            1592. | BRIT.MUS. | LANSDOWNE |MS. | 71.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPC03">
+                        <msIdentifier>
+                            <settlement>London</settlement>
+                            <repository sameAs="#LMA"/>
+                            <idno type="shelfmark">COL/RMD/PA/01/002</idno>
+                            <msName>Privy Council Letter to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/143192/" type="Person_Gentry">Lord Mayor</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">A letter from the privy council to <rs ref="http://ereed.library.utoronto.ca/eats/entity/143192/" type="Person_Gentry">Sir Cuthbert Buckle,
+                            the lord mayor of London</rs>, is only preserved in the city's Remembrancia,
+                            f 5v.<lb/><lb/> For an abstract and transcription details, see EMLoT <ref target="http://emlot.library.utoronto.ca/db/record/event/1813">event
+                            1813</ref> and associated records.</ab>
+                        <ab type="techDesc"><date>January 1593/4–October 1609</date>; English;
+                            paper; 178 leaves; 330mm x 230mm; modern pencil foliation (used here)
+                            over ink foliation 1A, 1B–119 (with later entry numbers); some pages
+                            repaired; bound in white vellum on boards with tooled heraldic shield,
+                            title on spine in black ink (first word written sideways):
+                            'Remembrancia. | II | 1593 | 35 Eliz. | 1609 | 7. Jacob.' Entries
+                            individually numbered in later pencil: the relevant entry is numbered
+                            6.</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPC11">
+                        <msIdentifier>
+                            <settlement>Kew</settlement>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">PC 2/21</idno>
+                            <msName>Privy Council Letter to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/154215/" type="Collective_Office">JPs of Middlesex</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/160152/" type="Collective_Office">Surrey</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">For an abstract and transcription details, see EMLoT <ref target="http://emlot.library.utoronto.ca/db/record/event/8004">event
+                            8004</ref> and associated records.</ab>
+                        <ab type="techDesc"><date>1 October 1595–22 October 1596</date>; English;
+                            paper; ii + 307 + viii; 374mm x 250mm; ink pagination 1A, 1–454, 1
+                            unnumbered 19th-c. leaf, followed by 28 unnumbered leaves (19th-c. index
+                            in a different hand); good condition; bound in maroon leather over
+                            boards, tooled, title on spine in gilt, partially rubbed: 'E<damage><gap
+                                    unit="chars" extent="7"/></damage>H. | VOL. XII. | COUNCIL |
+                            REGISTER. | 1.OCT. 1595 | TO | 22.OCT. 1596.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPCL2">
+                        <msIdentifier>
+                            <settlement>Kew</settlement>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">PC 2/14</idno>
+                            <msName>Privy Council Letter to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/160152/" type="Collective_Office">JPs of Surrey</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">For an abstract and transcription details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/232/">event
+                            232</ref> and associated records.</ab>
+                        <ab type="techDesc"><date>19 February 1585/6–1 November 1587</date>;
+                            English; paper; ii + 282 + ii; 342mm x 225mm; ink pagination 1A, 1–480
+                                ([481] blank, followed by 6 blank 19th-c. leaves and 36
+                            unnumbered leaves, index in a different hand); good condition; bound in
+                            worn maroon leather over boards, tooled, title on spine in gilt:
+                                    '<damage><gap unit="chars" extent="5"/></damage>BETH. | VOL.
+                                    VIII<damage><gap unit="chars" extent="2"/></damage>. | COUNCIL |
+                            REGISTER. | 15. MAY 1589. | TO | 6 APR. 1590.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPCL4">
+                        <msIdentifier>
+                            <settlement>Kew</settlement>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">PC 2/19</idno>
+                            <msName>Privy Council Letter to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/135267/" type="Person_Gentry">Master of the Rolls </rs>et al</msName>
+                        </msIdentifier>
+                        <ab type="edDesc">For an abstract and transcription details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/228/">event
+                            228</ref> and associated records.</ab>
+                        <ab type="techDesc"><date>1 October 1591–21 August 1592</date>; English;
+                            paper; ii + 340 + ii; 345mm x 245mm; ink pagination 1–557,
+                                [558] unpaginated, followed by unpaginated index in
+                            different hand and paper (30 leaves, probably contemporary) and another
+                            unpaginated index in later hand and paper (30 leaves); bound in worn
+                            maroon leather over boards, tooled, gold-stamped title on spine:
+                            'ELIZABETH. | VOL. X. | COUNCIL | REGISTER. | 1. OCT. 1591. | TO |
+                            1.AUG. 1592.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPCL5">
+                        <msIdentifier>
+                            <settlement>Kew</settlement>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">PC 2/14</idno>
+                            <msName>Privy Council Letter restraining <rs ref="http://ereed.library.utoronto.ca/eats/entity/40453/" type="Drama_Type">Plays</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">For an abstract and transcription details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/8003/">event
+                            8003</ref> and associated records.</ab>
+                        <ab type="techDesc"><date>19 February 1585/6–1 November 1587</date>;
+                            English; paper; ii + 282 + ii; 342mm x 225mm; ink pagination 1A, 1–480
+                                ([481] blank, followed by 6 blank 19th-c. leaves and 36
+                            unnumbered leaves, index in a different hand); good condition; bound in
+                            worn maroon leather over boards, tooled, title on spine in gilt:
+                                    '<damage><gap unit="chars" extent="5"/></damage>BETH. | VOL.
+                                    VIII<damage><gap unit="chars" extent="2"/></damage>. | COUNCIL |
+                            REGISTER. | 15. MAY 1589. | TO | 6 APR. 1590.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPCL6">
+                        <msIdentifier>
+                            <settlement>Kew</settlement>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">PC 2/18</idno>
+                            <msName>Privy Council Letter to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/164715/" type="Person_Gentry">Lord Mayor</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/154215/" type="Collective_Office">JPs of Middlesex</rs> and
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/160152/" type="Collective_Office">Surrey</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">For an abstract and transcription details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/230/">event
+                            230</ref> and associated records.</ab>
+                        <ab type="techDesc"><date>20 December 1590–30 September 1591</date>;
+                            English; paper; ii + 314 + ii; 350mm x 240mm; ink pagination 1–558 (some
+                            numbers covered by repairs), followed by unpaginated index in a
+                            different hand (35 leaves); some leaves repaired along outside edge;
+                            bound in maroon leather over boards, tooled, gold-stamped title on
+                            spine: 'ELIZABETH. | VOL. IX. | COUNCIL | REGISTER. | 20. DEC.1590. | TO
+                            | 30.SEP. 1591.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPCL7">
+                        <msIdentifier>
+                            <settlement>Kew</settlement>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">PC 2/22</idno>
+                            <msName>Privy Council Letter to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/154215/" type="Collective_Office">JPs of Middlesex</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">A similar privy council letter to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/160152/" type="Collective_Office">JPs of Surrey</rs> does
+                            not survive but the version to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/154215/" type="Collective_Office">JPs of Middlesex</rs> on p 327 conveys the
+                            message copied to both sides of the Thames.<lb/><lb/> For an abstract and
+                            transcription details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/226/">event 226</ref> and associated
+                            records.</ab>
+                        <ab type="techDesc"><date>24 October 1596–18 September 1597</date>; English;
+                            paper; i + 228 + i; 403mm x 253mm; ink pagination 1–369 (some numbers
+                            obscured by repairs), followed by 3 unnumbered leaves (with pen trials)
+                            and 40 unnumbered 19th-c. leaves (index in a different hand); good
+                            condition, some repairs at edges; bound in maroon leather over boards,
+                            tooled, gold- stamped title on spine: 'ELIZABETH. | VOL. XIII. | COUNCIL
+                            | REGISTER. | 24. OCT. 1596. | TO | 18.SEP. 1597.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPCL8">
+                        <msIdentifier>
+                            <settlement>Kew</settlement>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">PC 2/26</idno>
+                            <msName>Privy Council Letters to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/154215/" type="Collective_Office">JPs of Middlesex</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/160152/" type="Collective_Office">Surrey </rs>and the
+                               <rs ref="http://ereed.library.utoronto.ca/eats/entity/164808/" type="Person_Gentry"> Lord Mayor</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">The aggrieved letters on pp 514–15 to the apparently lax
+                           <rs ref="http://ereed.library.utoronto.ca/eats/entity/154215/" type="Collective_Office"> justices of the peace for Middlesex</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/160152/" type="Collective_Office">Surrey </rs>and to the more
+                            responsive <rs ref="http://ereed.library.utoronto.ca/eats/entity/164808/" type="Person_Gentry">lord mayor of London</rs> refer to an <ref target="https://ereed.library.utoronto.ca/records/rosep-ridm91010728/">order dated 22 June
+                            1600</ref> intended to establish only <rs ref="http://ereed.library.utoronto.ca/eats/entity/63599/" type="Place_Feature">the
+                            Fortune</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/227836/" type="Place_Feature">the Globe</rs> playhouses as approved operations and to restrain
+                            the continuance or further development of playhouses beyond the city
+                            limits in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2111/" type="Place_County">Middlesex</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County">Surrey</rs>. <rs ref="http://ereed.library.utoronto.ca/eats/entity/227779/" type="Place_Feature">The Swan</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/" type="Place_Feature">the Rose</rs> on Bankside
+                            resisted the restraint and continued operations while <rs ref="http://ereed.library.utoronto.ca/eats/entity/228083/" type="Place_Feature">the Curtain</rs> and
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/227665/" type="Place_Feature">the Boar's Head inn</rs> playhouses maintained activities north of the
+                            city.<lb/><lb/> A copy of the letter to the lord mayor and <rs ref="http://ereed.library.utoronto.ca/eats/entity/168618/" type="Collective_Office">aldermen</rs> was
+                            recorded, with only minor variants in spelling, in the city's
+                            Remembrancia, LMA: COL/RMD/PA/01/002, ff 94v–5 (31 December).<lb/><lb/> For
+                            an abstract and transcription details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/653/">event 653</ref> and
+                            associated records.</ab>
+                        <ab type="techDesc"><date>7 December 1600–2 January 1601/2</date>; English;
+                            paper; i + 307 + i; 405mm x 255mm; ink pagination 1–521, followed by 46
+                            unnumbered 19th-c. leaves (unpaginated index in a different hand); good
+                            condition; bound in maroon leather over boards, tooled, spine partially
+                            loose, gold- stamped title on spine: 'ELIZABETH. | VOL.XVII. | COUNCIL |
+                            REGISTER. | 7. DEC. 1600. | TO | 2.JAN 1602.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPCO9">
+                        <msIdentifier>
+                            <settlement>Kew</settlement>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">PC 2/20</idno>
+                            <msName>Privy Council Order regarding Plague</msName>
+                        </msIdentifier>
+                        <ab type="edDesc">The plague order on pp 211–12 led to closure of <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/" type="Place_Feature">the Rose</rs> for most of the year by 2 February. A further order from the privy
+                            council was passed on 1 July 1593, to direct the <rs ref="http://ereed.library.utoronto.ca/eats/entity/143114/" type="Person_Gentry">lord mayor of London</rs>
+                            and the <rs ref="http://ereed.library.utoronto.ca/eats/entity/240259/" type="Collective_Office">sheriffs of Middlesex</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/240277/" type="Collective_Office">Essex</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/240295/" type="Collective_Office">Hertfordshire</rs>, and <rs ref="http://ereed.library.utoronto.ca/eats/entity/169482/" type="Collective_Office">Surrey</rs> to
+                            restrain people from attending the <rs ref="http://ereed.library.utoronto.ca/eats/entity/43457/" type="Entertainment_Type">annual fairs</rs> at St Bartholomew's,
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/38221/" type="Place_Feature">Smithfield</rs>, and at <rs ref="http://ereed.library.utoronto.ca/eats/entity/36966/" type="Place_BoroughParish">Southwark</rs> because of the increase of plague. Both
+                            fairs were to be cancelled (TNA: PC 2/20, pp 450–1). The copy of this
+                            order directed to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/160152/" type="Collective_Office">JPs of Surrey</rs> mentioned below has not
+                            survived.<lb/><lb/> For an abstract and transcription details, see EMLoT
+                            <ref target="https://emlot.library.utoronto.ca/db/record/event/7761/">event 7761</ref> and associated records.</ab>
+                        <ab type="techDesc"><date>22 August 1592–26 August 1593</date>; English;
+                            paper; ii + 314 + ii; 355mm x 225mm; ink pagination 1–564 (some numbers
+                            obscured by repairs), 2 unnumbered blank leaves, followed by 30
+                            unnumbered 19th-c. leaves (index in a different hand); good condition,
+                            some repairs at edges; bound in maroon leather over boards, tooled,
+                            gold-stamped title on spine: 'ELIZABETH. | VOL. XI. | COUNCIL |
+                            REGISTER. | 22. AUG. 1592. | TO | 26.AUG. 1593.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPL09">
+                        <msIdentifier>
+                            <settlement>London</settlement>
+                            <repository sameAs="#BL"/>
+                            <idno type="shelfmark">Additional MS 11,402</idno>
+                            <msName>Privy Council Letters to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/154215/" type="Collective_Office">JPs of Middlesex</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/160152/" type="Collective_Office">Surrey</rs>
+                                (A)</msName>
+                        </msIdentifier>
+                        <ab type="edDesc">The original Privy Council Registers for 1601/2–13 were
+                            destroyed by fire in 1618. These abstract entries, among many others
+                            from 1550 to 1610, were copied into a volume owned by <rs ref="http://ereed.library.utoronto.ca/eats/entity/170365/" type="Person_Clergy">Gilbert Burnet
+                                (1643–1715), bishop of Salisbury, 1689–1702.</rs><lb/><lb/> The privy council's
+                            letters on 19 March were undoubtedly prompted by rising concerns
+                            relating to the declining health of <rs ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Person_Royalty">Queen Elizabeth</rs>, who died a week
+                            later on 24 March.<lb/><lb/> For an abstract and transcription details, see
+                            EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/8005/">event 8005</ref> and associated
+                            records.</ab>
+                        <ab type="techDesc"><date>early 17th c.</date>; English; paper; iv (modern)
+                            + 163 + iv (modern); 356mm x 220mm; modern pencil foliation 1–163; good
+                            condition; bound in maroon cloth with red leather corners and spine,
+                            gold-stamped title on spine: 'ABSTRACT OF | THE REGISTERS | OF THE |
+                            PRIVY COUNCIL | 1550–1610 | [2 rules] | BRITISH | LIBRARY | [2 rules] |
+                            ADDITIONAL | MS. | 11,402.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPL11">
+                        <msIdentifier>
+                            <settlement>London</settlement>
+                            <repository sameAs="#BL"/>
+                            <idno type="shelfmark">Additional MS 11,402</idno>
+                            <msName>Privy Council Letters to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/157707/" type="Person_Gentry">Lord Mayor</rs> and the <rs ref="http://ereed.library.utoronto.ca/eats/entity/154215/" type="Collective_Office">JPs of Middlesex</rs>
+                                and <rs ref="http://ereed.library.utoronto.ca/eats/entity/160152/" type="Collective_Office">Surrey</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">The original Privy Council Registers for 1601/2–13 were
+                            destroyed by fire in 1618. These abstract entries, among many others
+                            from 1550 to 1610, were copied into a volume owned by <rs ref="http://ereed.library.utoronto.ca/eats/entity/170365/" type="Person_Clergy">Gilbert Burnet
+                            (1643–1715), bishop of Salisbury, 1689–1702.</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/164899/" type="Person_Commoner">John Chamberlain</rs>'s letters
+                            in the fall of 1605 corroborate the return of significant plague deaths
+                            in the city: see Leeds Barroll, <title>Politics, Plague, and
+                                Shakespeare's Theater</title> (Ithaca and London, 1991), 131–2.<lb/><lb/>
+                            For an abstract and transcription details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/1749/">event 1749</ref> and
+                            associated records.</ab>
+                        <ab type="techDesc"><date>early 17th c.</date>; English; paper; iv (modern)
+                            + 163 + iv (modern); 356mm x 220mm; modern pencil foliation 1–163; good
+                            condition; bound in maroon cloth with red leather corners and spine,
+                            gold-stamped title on spine: 'ABSTRACT OF | THE REGISTERS | OF THE |
+                            PRIVY COUNCIL | 1550–1610 | [2 rules] | BRITISH | LIBRARY | [2 rules] |
+                            ADDITIONAL | MS. | 11,402.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPL14">
+                        <msIdentifier>
+                            <settlement>Kew</settlement>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">PC 2/25</idno>
+                            <msName>Privy Council Letter to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/154247/" type="Person_Commoner">Lord Mayor</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/154215/" type="Collective_Office">JPs of Middlesex</rs> and
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/160152/" type="Collective_Office">Surrey</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">The letter on p 230 relates to the <ref target="https://ereed.library.utoronto.ca/records/rosep-ridm91010728/">order by the privy
+                            council</ref> on the same day restricting the number of
+                            playhouses.<lb/><lb/> For an abstract and
+                            transcription details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/8006/">event 8006</ref> and associated
+                            records.</ab>
+                        <ab type="techDesc"><date>23 January 1599/1600–7 December 1600</date>;
+                            English; paper; ii + 261 + ii; 428mm x 283mm; ink pagination 1–447, 38
+                            unnumbered leaves (19th-c. index in a different hand); many leaves
+                            damaged and repaired; bound in maroon leather over boards, tooled,
+                            gold-stamped title on spine: 'ELIZABETH. | VOL. XVI. | COUNCIL |
+                            REGISTER. | 23. JAN. 1600. | TO | 7.DEC 1600.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPO11">
+                        <msIdentifier>
+                            <settlement>Kew</settlement>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">PC 2/25</idno>
+                            <msName>Privy Council Order regarding the Restriction of
+                                Playhouses</msName>
+                        </msIdentifier>
+                        <ab type="edDesc">The order on pp 223–4, with minor differences, is also to
+                            be found in the city's Remembrancia (LMA: COL/RMD/PA/01/002, ff 95–6,
+                            no. 188).<lb/><lb/> For an abstract and transcription details, see EMLoT
+                            <ref target="https://emlot.library.utoronto.ca/db/record/event/215/">event 215</ref> and associated records.</ab>
+                        <ab type="techDesc"><date>23 January 1599/1600–7 December 1600</date>;
+                            English; paper; ii + 261 + ii; 428mm x 283mm; ink pagination 1–447, 38
+                            unnumbered leaves (19th-c. index in a different hand); many leaves
+                            damaged and repaired; bound in maroon leather over boards, tooled,
+                            gold-stamped title on spine: 'ELIZABETH. | VOL. XVI. | COUNCIL |
+                            REGISTER. | 23. JAN. 1600. | TO | 7.DEC 1600.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPPCS">
+                        <msIdentifier>
+                            <settlement>Dulwich</settlement>
+                            <repository sameAs="#dulwich-college"/>
+                            <idno type="shelfmark">MS I, box C</idno>
+                            <msName>Petition to the Privy Council by <rs ref="http://ereed.library.utoronto.ca/eats/entity/153197/" type="Collective_Troupe">Strange's Men</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">This petition can be considered a partner to the <ref target="https://ereed.library.utoronto.ca/records/rosep-ridm90877112/">similarly
+                            undated petition</ref> by the <rs ref="http://ereed.library.utoronto.ca/eats/entity/240313/" type="Collective_GuildOccupational">watermen</rs> to their patron and representative on
+                            privy council, <rs ref="http://ereed.library.utoronto.ca/eats/entity/25845/" type="Person_Nobility">Charles Howard, the lord
+                                admiral.</rs> For many years,
+                            scholars considered these two petitions, together with an <ref target="https://ereed.library.utoronto.ca/records/rosep-ridm90700072/">undated privy
+                            council warrant</ref>, also in <rs ref="http://ereed.library.utoronto.ca/eats/entity/234772/" type="Place_Feature">Dulwich College</rs>, allowing <rs ref="http://ereed.library.utoronto.ca/eats/entity/153197/" type="Collective_Troupe">Strange's men</rs> to
+                            resume performances at the Rose, to have been associated with the
+                            restraint of <rs ref="http://ereed.library.utoronto.ca/eats/entity/40453/" type="Drama_Type">performances</rs> during the plague months of 1592 or 1593.
+                            However, in an as yet unpublished paper 'Philip Henslowe and the
+                            Bankside Watermen: A Fresh Look at Three Familiar Documents,' Alan H.
+                            Nelson has recently studied the seventeen signatures on the watermen's
+                            petition, discovering from his local parish register research that two
+                            of those signing were dead by 1591 (see further <ref target="https://ereed.library.utoronto.ca/collections/rosep/background/#background-playhouse">History of the Rose
+                            Playhouse'</ref>). Given the earliest of the
+                            two death dates, in January 1590/1, the previous summer of 1590 becomes
+                            a more plausible date.</ab>
+                        <ab type="techDesc"><date>c 1590</date>; English; paper; bifolium; 310mm x
+                            205mm; no original foliation; written on f [1] only, damaged in
+                            the centre and repaired; originally folded twice, no endorsement.
+                            Article 16 in Warner's Catalogue; foliated 23–4 in later pencil,
+                            formerly bound in MS I but now mounted separately on acid-free paper
+                            within modern board covers with other documents of the same size in
+                            fascicule 2, box C.</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSPPCW">
+                        <msIdentifier>
+                            <settlement>Dulwich</settlement>
+                            <repository sameAs="#dulwich-college"/>
+                            <idno type="shelfmark">MS I, box C</idno>
+                            <msName>Petition to the Privy Council by the <rs ref="http://ereed.library.utoronto.ca/eats/entity/240313/" type="Collective_GuildOccupational">Watermen</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">This petition by the <rs ref="http://ereed.library.utoronto.ca/eats/entity/240313/" type="Collective_GuildOccupational">watermen</rs> to their patron and
+                            representative on privy council, <rs ref="http://ereed.library.utoronto.ca/eats/entity/25845/" type="Person_Nobility">Charles Howard, the lord admiral</rs>, is
+                            likely connected to the <ref target="https://ereed.library.utoronto.ca/records/rosep-ridm90916024/">undated petition</ref> by <rs ref="http://ereed.library.utoronto.ca/eats/entity/153197/" type="Collective_Troupe">Strange's men</rs>, also in
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/234772/" type="Place_Feature">Dulwich College</rs>.For many
+                            years, scholars considered these two petitions, together with an <ref target="https://ereed.library.utoronto.ca/records/rosep-ridm90700072/">undated
+                            privy council warrant</ref> allowing <rs ref="http://ereed.library.utoronto.ca/eats/entity/153197/" type="Collective_Troupe">Strange's men</rs> to resume performances at
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/" type="Place_Feature">
+                                the Rose</rs>, to have been associated with the restraint of <rs ref="http://ereed.library.utoronto.ca/eats/entity/40453/" type="Drama_Type">performances</rs>
+                            during the plague months of 1592 or 1593. However, in an as yet
+                            unpublished paper 'Philip Henslowe and the Bankside Watermen: A Fresh
+                            Look at Three Familiar Documents,' Alan H. Nelson has recently studied
+                            the seventeen signatures on the watermen's petition, discovering from
+                            his local parish register research that two of those signing were dead
+                            by 1591 (see further <ref target="https://ereed.library.utoronto.ca/collections/rosep/background/#background-playhouse">'History of the
+                            Playhouse'</ref>). Given the earliest of the
+                            two death dates, in January 1590/1, the previous summer of 1590 becomes
+                            a more plausible date.<lb/><lb/> For an abstract and transcription details,
+                            see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/7556/">event 7556</ref> and associated
+                            records.</ab>
+                        <ab type="techDesc"><date>c 1590</date>; English; paper; bifolium; 305mm x
+                            200mm; no original foliation; written on f [1] only, dirty,
+                            badly deteriorated and repaired; originally folded 3 times, no
+                            endorsement. Article 17 in Warner's Catalogue; foliated 25–6 in later
+                            pencil, formerly bound in MS I but now mounted separately on acid-free
+                            paper within modern board covers with other documents of the same size
+                            in fascicule 2, box C.</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSSKCS">
+                        <msIdentifier>
+                            <settlement>London</settlement>
+                            <repository sameAs="#LMA"/>
+                            <idno type="shelfmark">SKCS/018</idno>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County">Surrey</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/2039/" type="Place_County">Kent</rs> Commissioners for Sewers' Court</msName>
+                        </msIdentifier>
+                        <ab type="edDesc">Most of the pre-1642 records of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County">Surrey</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/2039/" type="Place_County">Kent</rs>
+                            commissioners for sewers are now deposited at the London Metropolitan
+                            Archives. The LMA collections catalogue (https://search.lma.gov.uk,
+                            'Surrey and Kent Commission of Sewers') succinctly describes this source
+                            as follows: 'Early Commissioners of Sewers were solely concerned with
+                            land drainage and the prevention of flooding, not with the removal of
+                            sewage in the modern sense. In 1531 an Act of Sewers was passed which
+                            set out in great detail the duties and powers of Commissioners and
+                            governed their work until the 19th century. Gradually a permanent
+                            pattern emerged in the London area of seven commissions, five north and
+                            two south of the Thames, with, after the Great Fire, a separate
+                            commission for the <rs ref="http://ereed.library.utoronto.ca/eats/entity/36947/" type="Place_BoroughParish">City of London</rs><gap reason="omitted"/>. Letters Patent
+                            for the Surrey and Kent Commissioners of Sewers were issued in 1554. Its
+                            minutes begin in 1570 and it was the earliest of the London Commissions
+                            to be established on an organised basis. The area of its jurisdiction
+                            ran from <rs ref="http://ereed.library.utoronto.ca/eats/entity/240351/" type="Place_BoroughParish">East Molesey</rs> in Surrey to the River Ravensbourne, and included
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/237033/" type="Place_BoroughParish">Lambeth</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/36966/" type="Place_BoroughParish">Southwark</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/226373/" type="Place_BoroughParish">Bermondsey</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/231618/" type="Place_BoroughParish">Newington</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/240373/" type="Place_BoroughParish">Deptford</rs>, Rotherhithe,
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/240413/" type="Place_BoroughParish">Clapham</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/240431/" type="Place_BoroughParish">Battersea</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/240449/" type="Place_BoroughParish">Camberwell</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/240467/" type="Place_BoroughParish">Vauxhall</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/240485/" type="Place_BoroughParish">Wandsworth</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/240503/" type="Place_BoroughParish">Putney</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/240521/" type="Place_BoroughParish">Barnes</rs>,
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/240539/" type="Place_BoroughParish">Kew</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/240557/" type="Place_BoroughParish">Lewisham</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/240575/" type="Place_BoroughParish">Walworth</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/240593/" type="Place_BoroughParish">Kennington</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/240611/" type="Place_BoroughParish">Nine Elms</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/240629/" type="Place_BoroughParish">Peckham</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/240647/" type="Place_BoroughParish">New Cross</rs>.
+                            The area of jurisdiction remained the same throughout the three
+                            centuries during which it functioned.' See further Ida Darlington, 'The
+                            London Commissioners of Sewers and their Records,' in <title>Prisca
+                                Munimenta: Studies in Archival &amp; Administrative History
+                                presented to Dr A.E.J. Hollaender</title>, Felicity Ranger (ed)
+                            (London, 1973), 282–98.<lb/><lb/> <rs ref="http://ereed.library.utoronto.ca/eats/entity/235099/" type="Person_Commoner">John Norden</rs>'s 1593 map shows the lines of
+                            the <rs ref="http://ereed.library.utoronto.ca/eats/entity/229072/" type="Place_Feature">Bankside</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/237051/" type="Place_Feature">sewers</rs> (or drainage ditches). There were three running
+                            along the <rs ref="http://ereed.library.utoronto.ca/eats/entity/231675/" type="Place_Feature">Little Rose</rs> property: to the south along <rs ref="http://ereed.library.utoronto.ca/eats/entity/229091/" type="Place_Feature">Maiden Lane</rs> and one
+                            on the west side adjacent to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/227798/" type="Place_Feature">Bear Garden</rs> property.<lb/><lb/> For
+                            abstracts and transcription details, see EMLoT events <ref target="https://emlot.library.utoronto.ca/db/record/event/401/">401</ref> and <ref target="https://emlot.library.utoronto.ca/db/record/event/7830/">7830</ref> and
+                            associated records.</ab>
+                        <ab type="techDesc"><date>3 January 1568/9–25 April 1606</date>; English
+                            with some Latin; paper; i + 520 + i; 410mm x 280mm (text size variable);
+                            index foliated in pencil 1–24 relating to ff 1–210 of the text, ink
+                            foliation follows, 1–444, pencil foliation 445–70 (all blank), a second
+                            index numbered in pencil 1–21, 21b, 22, 22b, 23, 23b follows the text
+                            for ff 211–444; restored, conserved and rebound in beige vellum with
+                            corded bands on spine with leather ties. Now stored in a box; within the
+                            box also are the previous red leather boards and spine with 'SEWERS |
+                            SURREY &amp; KENT | MINUTES | 1 | 1557–1606.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSSSVM">
+                        <msIdentifier>
+                            <settlement>London</settlement>
+                            <repository sameAs="#LMA"/>
+                            <idno type="shelfmark">P92/SAV/450</idno>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/226848/" type="Place_Feature">St Saviour</rs>'s Vestry Minutes</msName>
+                        </msIdentifier>
+                        <ab type="edDesc">The vestry minutes record meetings of the parish vestry to
+                            deal with such issues as church fabric, lands, upkeep, annual elections,
+                            and poor relief. No vestry minutes survive between 1628 and 1670 but
+                            there remains an earlier book running from July 1557 to March 1581/2.
+                            Normalized extracts for both vestry books have been provided by Alan H.
+                            Nelson, <ref target="http://www-personal.umich.edu/~ingram/StSaviour/">'The Parish of St Saviour,
+                                Southwark'</ref>.<lb/><lb/> For abstracts and
+                            transcription details, see EMLoT event <ref target="https://emlot.library.utoronto.ca/db/record/event/639/">639</ref>, and
+                            associated records.</ab>
+                        <ab type="techDesc"><date>1581–1628</date>; English; paper; ii + 257 + ii;
+                            420mm x 280mm (text area variable); ink pagination starts at 169–572
+                            (last 57 leaves blank); some display headings and opening words; good
+                            condition; brown suede and board binding deteriorating at the edges,
+                            with title on worn red leather strip on spine: 'VESTRY | MEETINGS |
+                            1581.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSWLHA">
+                        <msIdentifier>
+                            <settlement>Dulwich</settlement>
+                            <repository sameAs="#dulwich-college"/>
+                            <idno type="shelfmark">MS I, box C</idno>
+                            <msName>Warrant from the <rs ref="http://ereed.library.utoronto.ca/eats/entity/25845/" type="Person_Nobility">Lord Admiral</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc"><rs ref="http://ereed.library.utoronto.ca/eats/entity/25845/" type="Person_Nobility">Charles Howard, the earl of Nottingham and lord high
+                            admiral</rs>, was patron of the acting company whose star had been <rs ref="http://ereed.library.utoronto.ca/eats/entity/153045/" type="Person_Commoner">Edward
+                            Alleyn</rs>, son-in- law of <rs ref="http://ereed.library.utoronto.ca/eats/entity/129736/" type="Person_Commoner">Philip Henslowe</rs>. Here he writes in support of the
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/63599/" type="Place_Feature">new playhouse</rs> that Alleyn, with Henslowe's financial assistance, was
+                            proposing to build across the Thames just outside the London wall to the
+                            north of the city in the liberty of <rs ref="http://ereed.library.utoronto.ca/eats/entity/235872/" type="Place_BoroughParish">Finsbury</rs>. The site between <rs ref="http://ereed.library.utoronto.ca/eats/entity/229319/" type="Place_Feature">Golding
+                            Lane</rs> on the west and <rs ref="http://ereed.library.utoronto.ca/eats/entity/226924/" type="Place_Feature">Whitecross Street</rs> on the east has been identified
+                            although not yet excavated: see further Julian Bowsher,
+                                <title>Shakespeare's London Theatreland: Archaeology, History and
+                                    Drama</title> (London, 2012), 97–101.<lb/><lb/> Just how 'decayed' the
+                            present base of <rs ref="http://ereed.library.utoronto.ca/eats/entity/25827/" type="Collective_Troupe">admiral's men</rs> at <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/" type="Place_Feature">the Rose</rs> was is debatable but Alleyn
+                            had acquired property for the building site of the Fortune in 1599 and
+                            may have been planning the new venture for several years even as he and
+                            Henslowe had set their sights on a joint appointment to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/160515/" type="Collective_Office">mastership
+                            of the Royal Game of Bears, Bulls and Mastiff Dogs</rs>, at the <rs ref="http://ereed.library.utoronto.ca/eats/entity/227798/" type="Place_Feature">Bear Garden</rs>
+                            across the alley from the Rose (see further <ref target="https://ereed.library.utoronto.ca/collections/rosep/background/#background-henslowe">'Philip Henslowe, Theatrical
+                                Entrepreneur and Man of Property'</ref>.<lb/><lb/>
+                            For an abstract and transcription details, see EMLoT event <ref target="https://emlot.library.utoronto.ca/db/record/event/476/">476</ref> and
+                            associated records.</ab>
+                        <ab type="techDesc"><date>12 January 1599/1600</date>; English; paper;
+                            single sheet; 310mm x 205mm; unnumbered; endorsement written in bottom
+                            left panel after sheet folded once vertically and thrice horizontally:
+                            'To all &amp; euery her ma<ex>ies</ex>t<ex>ies</ex> Iustices &amp; other
+                            Ministers. and Officers. w<ex>i</ex>thin the Countye of
+                                Midd<ex>lesex</ex>. &amp; to euery of them. And to all others whome
+                            it shall Concerne.' Article 27 in Warner's Catalogue; foliated 40–40v in
+                            later pencil, formerly bound in MS I but now mounted separately on
+                            acid-free paper with other documents of similar size in fascicule 2, box
+                            C.</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSWPC1">
+                        <msIdentifier>
+                            <settlement>Dulwich</settlement>
+                            <repository sameAs="#dulwich-college"/>
+                            <idno type="shelfmark">MS I, box C</idno>
+                            <msName>Warrant from the Privy Council</msName>
+                        </msIdentifier>
+                        <ab type="edDesc">The undated warrant (of which this is a copy) is likely
+                            connected to the <ref target="https://ereed.library.utoronto.ca/records/rosep-ridm90916024/">undated petition</ref> by <rs ref="http://ereed.library.utoronto.ca/eats/entity/153197/" type="Collective_Troupe">Strange's men</rs> and to the <ref target="https://ereed.library.utoronto.ca/records/rosep-ridm90877112/">undated petition</ref> by the Thames
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/240313/" type="Collective_GuildOccupational">watermen</rs>, both of which are also in <rs ref="http://ereed.library.utoronto.ca/eats/entity/234772/" type="Place_Feature">Dulwich
+                            College</rs>. For many years, scholars considered the warrant allowing <rs ref="http://ereed.library.utoronto.ca/eats/entity/153197/" type="Collective_Troupe">Strange's men</rs> to resume
+                            performances at <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/" type="Place_Feature">the Rose</rs>, together with the two petitions, to have been
+                            associated with the restraint of performances during the plague months
+                            of 1592 or 1593. However, in an as yet unpublished paper 'Philip
+                            Henslowe and the Bankside Watermen: A Fresh Look at Three Familiar
+                            Documents,' Alan H. Nelson has recently studied the seventeen signatures
+                            on the watermen's petition, discovering from his local parish register
+                            research that two of those signing were dead by 1591 (see further
+                            <ref target="https://ereed.library.utoronto.ca/collections/rosep/background/#background-playhouse">'History of the Rose Playhouse'</ref>). Given
+                            the earliest of the two death dates, in January 1590/1, the previous
+                            summer of 1590 becomes a more plausible date for the restraint, the
+                            temporary relocation of Strange's men to <rs ref="http://ereed.library.utoronto.ca/eats/entity/227741/" type="Place_Feature">Newington Butts</rs>, and the
+                            resumption of playing at the Rose.<lb/><lb/> For an abstract and
+                            transcription details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/477/">event 477</ref> and associated
+                            records.</ab>
+                        <ab type="techDesc"><date>c 1590</date>; English; paper; bifolium; 220mm x
+                            320mm; no original foliation; written on f [1] only, dirty,
+                            badly deteriorated and repaired; originally folded twice, no
+                            endorsement. Article 18 in Warner's Catalogue; foliated 27 in later
+                            pencil, formerly bound in MS I but now mounted separately on acid-free
+                            paper within modern board covers with other documents of similar size in
+                            fascicule 2, box C.</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSWPC2">
+                        <msIdentifier>
+                            <settlement>Dulwich</settlement>
+                            <repository sameAs="#dulwich-college"/>
+                            <idno type="shelfmark">MS I, box C</idno>
+                            <msName>Warrant from the Privy Council</msName>
+                        </msIdentifier>
+                        <ab type="edDesc">Members of the privy council are responding here to a
+                            letter of objection sent to the privy council by <rs ref="http://ereed.library.utoronto.ca/eats/entity/155704/" type="Person_Nobility">Lord Willoughby</rs> and
+                            other residents in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/235872/" type="Place_BoroughParish">Finsbury</rs> neighbourhood regarding the proposed new
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/63599/" type="Place_Feature">Fortune playhouse</rs> on 9 March 1599/1600 (TNA: PC 2/25, p 78). For further
+                            discussion and partial transcriptions of these documents, see also
+                            Wickham <hi rend="italic">et al</hi>, <title>English Professional
+                                Theatre</title>, pp 534–9.<lb/><lb/> For an abstract and transcription
+                            details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/475/">event 475</ref> and associated
+                            records.</ab>
+                        <ab type="techDesc"><date>8 April 1600</date>; English; paper; single sheet;
+                            305mm x 204mm; no original foliation; endorsed on the bottom left panel
+                            after sheet folded once vertically and thrice horizontally: 'To the
+                            Iustices of Peace of ye Countye of Midd<ex>lesex</ex> | especially of St
+                            Gyles w<ex>i</ex>thout Creplegate | And to all others. whome it shall |
+                            Concerne.' Article 29 in Warner's Catalogue; foliated 43 in later
+                            pencil, formerly bound in MS I but now mounted separately on acid-free
+                            paper with other documents of similar size in fascicule 3, box C.</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSALLS">
+                        <msIdentifier>
+                            <settlement>Dulwich</settlement>
+                            <repository sameAs="#dulwich-college"/>
+                            <idno type="shelfmark">Mun 15</idno>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/126687/" type="Person_Commoner">Withens</rs>' Assignment of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/231675/" type="Place_Feature">Little Rose</rs> Lease to
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/129736/" type="Person_Commoner">Henslowe</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">This lease assigned by <rs ref="http://ereed.library.utoronto.ca/eats/entity/126687/" type="Person_Commoner">Robert Withens</rs> to <rs ref="http://ereed.library.utoronto.ca/eats/entity/129736/" type="Person_Commoner">Philip Henslowe</rs>
+                            marks the beginning of Henslowe's activities as a theatre impresario on
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/229072/" type="Place_Feature">Bankside</rs>. Henslowe was a long-term resident, as well as owner of
+                            extensive properties in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/223826/" type="Place_BoroughParish">Clink liberty</rs> on Bankside, but his arrival
+                            date there is not yet known. See further the <ref target="https://ereed.library.utoronto.ca/collections/rosep/background/#background-property">'History of the Property'</ref>
+                            section.<lb/><lb/> <rs ref="http://ereed.library.utoronto.ca/eats/entity/129508/" type="Person_Commoner">William Griffen</rs>'s
+                            thirty-one-year lease of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/231675/" type="Place_Feature">Little Rose</rs>, dated 20 November 1574, is
+                            also in the Henslowe-Alleyn collection at Dulwich (see <ref target="https://ereed.library.utoronto.ca/collections/rosep/appendix-1">Appendix
+                            1</ref>). Griffen subsequently transferred the
+                            remaining years of his lease to Robert Withens on 11 December 1579, in a
+                            document also held at Dulwich (DC: Mun 10).<lb/><lb/> For an abstract and
+                            transcription details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/464/">event 464</ref> and associated
+                            records.</ab>
+                        <ab type="techDesc"><date>24 March 1584/5</date>; English; parchment; single
+                            membrane; 474mm x 400mm; unnumbered; written 1 side only, large display
+                            initial, some key phrases in display script, indented with red seal
+                            attached at the bottom; good condition.</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSAPPC">
+                        <msIdentifier>
+                            <settlement>London</settlement>
+                            <repository sameAs="#BL"/>
+                            <idno type="shelfmark">Lansdowne 74</idno>
+                            <msName>Articles regarding the Plague for the Privy Council</msName>
+                        </msIdentifier>
+                        <ab type="edDesc">The Burghley Papers include an undated list of twelve
+                            advisory provisions sent by the privy council to London authorities to
+                            prevent the spread of the plague. The eighth provision suggests that all
+                            <rs ref="http://ereed.library.utoronto.ca/eats/entity/40453/" type="Drama_Type">plays</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/21767/" type="Entertainment_AnimalSport">bearbaitings</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/40942/" type="Entertainment_AnimalSport">cockpits</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/40677/" type="Entertainment_Type">bowling alleys</rs>, and 'suche like
+                            vnnecessarie assemblies' be suppressed. The suggested dating is during
+                            the plague year 1593 but the Privy Council Register needed to confirm
+                            the date is missing from 26 August 1593 to 1 October 1595.<lb/><lb/> For an
+                            abstract and transcription details, see EMLoT <ref target="https://emlot.library.utoronto.ca/db/record/event/1858/">event 1858</ref> and associated
+                            records.</ab>
+                        <ab type="techDesc"><date>c 1593</date>; English; paper; single sheet; 335mm
+                            x 440mm; unnumbered; good condition; endorsed on verso: 'Aduices to
+                            decrease the Plage &amp; to relieve the poore vagarant people.' Now
+                            folded in half, foliated ff 75–6, mounted on a binding strip and bound
+                            with other Burghley papers in a brown cloth binding with brown leather
+                            spine and corners, title on spine: 'BURGHLEY | PAPERS. | 1593| BRIT.
+                            MUS. | LANSDOWNE| MS. | 74.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSDPRH">
+                        <msIdentifier>
+                            <settlement>Dulwich</settlement>
+                            <repository sameAs="#dulwich-college"/>
+                            <idno type="shelfmark">Mun 16</idno>
+                            <msName>Deed of Partnership in the Rose between <rs ref="http://ereed.library.utoronto.ca/eats/entity/129736/" type="Person_Commoner">Henslowe</rs> and
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/130879/" type="Person_Commoner">Cholmley</rs></msName>
+                        </msIdentifier>
+                        <ab type="edDesc">This deed provides the basic dimensions of what was known
+                            as the <rs ref="http://ereed.library.utoronto.ca/eats/entity/231675/" type="Place_Feature">Little Rose</rs> property, described as approximately ninety-four feet
+                            square, but compare the more detailed measurements in the 1650 lease
+                            between the feoffees of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/126857/" type="Person_Commoner">Thomasyn Symonds</rs> Charity, at <rs ref="http://ereed.library.utoronto.ca/eats/entity/225746/" type="Place_BoroughParish">St Mildred
+                            Bread Street</rs> in <rs ref="http://ereed.library.utoronto.ca/eats/entity/36947/" type="Place_BoroughParish">London</rs>, and <rs ref="http://ereed.library.utoronto.ca/eats/entity/130453/" type="Person_Commoner">John Wallington</rs> (<ref target="https://ereed.library.utoronto.ca/collections/rosep/appendix-2">Appendix 2</ref>). See further
+                            the <ref target="https://ereed.library.utoronto.ca/collections/rosep/background/#background-property">'History of the Property'</ref> section.<lb/><lb/> As Julian Bowsher and
+                            Susan Cerasano point out in their joint essay on the document, this is
+                            one of the few surviving manuscripts 'from the early modern period
+                            detailing a theatrical partnership. Slashes were made at the bottom of
+                            the document in preparation for a seal, but there is no evidence that a
+                            seal was ever appended' (<ref target="https://henslowe-alleyn.org.uk/essays/the-deed-of-partnership-in-the-rose-playhouse-january-10-1587/">'The Deed of Partnership in the Rose Playhouse
+                            (January 10, 1587)</ref>,' <title>Henslowe-Alleyn Digitisation
+                            Project</title>).
+                            There were two copies for the partners, the upper part of a single
+                            vellum sheet for Cholmley and this second, lower section kept by
+                            Henslowe.<lb/><lb/> For an abstract and transcription details, see EMLoT
+                            <ref target="https://emlot.library.utoronto.ca/db/record/event/2668/">event 2668</ref> and associated records.</ab>
+                        <ab type="techDesc"><date>10 January 1586/7</date>; English; vellum; single
+                            membrane; unnumbered; 450mm x 630mm; some display script with large
+                            ornate letter 'T' at the start; water damage, some letters very faded;
+                            indented and endorsed by Cholmley on the verso: 'By me Iohn Cholmley
+                            grocer.'</ab>
+                    </msDesc>
+                    <bibl xml:id="RSEMPP">
+                        <title type="edName"><rs ref="http://ereed.library.utoronto.ca/eats/entity/25827/" type="Collective_Troupe">Lord Admiral's Men</rs> Inventories (A)</title>
+                        <note type="edDesc"><p>The original inventories were first discovered in 'a
+                                bundle of loose papers,' presumably at <rs ref="http://ereed.library.utoronto.ca/eats/entity/234772/" type="Place_Feature">Dulwich College</rs>, by Edmond
+                                Malone, who published his transcription in 1790 ('Rise and
+                                Progress,' pp 289, 300–7), subsequently reprinted from Malone by
+                                various successors including Foakes, <title>Henslowe's
+                                Diary</title>, Appendix 2. The manuscript original has not yet
+                                surfaced so Malone's transcript has been used as the source here
+                                also. Others who have quoted Malone, notably Greg, <title>Henslowe
+                                    Papers</title>, pp 113–23, have provided conjectural notes and
+                                identifications for props and titles included in the inventories:
+                                these are noted below only where some certainty exists. Malone
+                                glossed some words in square brackets embedded in the text; these
+                                are not included in this transcription.<lb/><lb/> A second inventory of
+                                theatrical apparel survives in the original, tentatively dated <hi
+                                    rend="italic">c</hi> 1601/2 and therefore related to <rs ref="http://ereed.library.utoronto.ca/eats/entity/25827/" type="Collective_Troupe">admiral's
+                                men</rs> at <rs ref="http://ereed.library.utoronto.ca/eats/entity/63599/" type="Place_Feature">the Fortune</rs> playhouse: see the <title>Henslowe-Alleyn
+                                    Digitisation Project</title>, MSS I, Article 30, and S.P.
+                            Cerasano's digital essay, <ref target="https://henslowe-alleyn.org.uk/essays/an-inventory-of-theatrical-apparel-c-16012/">'An Inventory of Theatrical Apparel (c.
+                                1601/2)'</ref> and Greg, <title>Henslowe Papers</title>, pp 52–5. The date given in
+                                the transcription here places the inventories into the period when
+                                the admiral's men were either resident at the Rose on Bankside or on
+                                the road in the provinces. They did not relocate to the new Fortune
+                                playhouse north of the Thames until 1600.<lb/><lb/> While comparing the
+                                details in the inventories with the loan accounts and the diary
+                                itself, Neil Carson has suggested that the inventories were only a
+                                partial list of the company's resources (<title>Companion</title>,
+                                pp 49–53). Although ownership is not expressed and the handwriting
+                                of the compiler cannot be examined, Carson deduces that by 'whomever
+                                compiled, however, the inventory is most probably (like the
+                                companion inventories of properties and costumes) a list belonging
+                                to the players' of the admiral's company (<title>Companion</title>,
+                            p 49).<lb/><lb/> For abstracts and transcription details, see EMLoT
+                            events <ref target="https://emlot.library.utoronto.ca/db/record/event/8007/">8007</ref>, <ref target="https://emlot.library.utoronto.ca/db/record/event/8008/">8008</ref>, <ref target="https://emlot.library.utoronto.ca/db/record/event/8009/">8009</ref>, <ref target="https://emlot.library.utoronto.ca/db/record/event/8010/">8010</ref>, and associated
+                                records.</p></note>
+                        <note type="techDesc"><p>Edmond Malone. 'An Historical Account of the Rise
+                                and Progress of the English Stage, and of the Economy and Usages of
+                                our Ancient Theatres,' <title type="sourceName">The Plays and Poems
+                                    of William Shakspeare</title>. Vol 1, pt 2 (London, 1790),
+                                1–331.</p></note>
+                        <idno type="authorSurname">Malone</idno>
+                        <idno type="shortTitle">'Progress of the English Stage'</idno>
+                    </bibl>
+                    <msDesc xml:id="RSLLRE">
+                        <msIdentifier>
+                            <settlement>London</settlement>
+                            <repository sameAs="#LMA"/>
+                            <idno type="shelfmark">CLC/119/MS23737/115, no. 4</idno>
+                            <msName>Lease of the Little Rose Estate</msName>
+                        </msIdentifier>
+                        <ab type="techDesc"><date>7 August 1650</date>; English; parchment; single sheet; 614mm x
+                            450mm; display heading and some display words and phrases; recently
+                            conserved, generally good condition, small tear in personal name of
+                            endorsement; folded 4 times and filed in white envelope, indented
+                            and endorsed at bottom: '<damage><gap unit="chars" extent="3"/></damage> Wallington,' addressed on dorse:
+                            'Sealed subscribed &amp; deliu<ex>er</ex>ed | in the p<ex>re</ex>sence of | Edward
+                            Meredith | Humfrey Lewis Scr<ex>ivenor</ex>.'</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSLNDG">
+                        <msIdentifier>
+                            <settlement>Dulwich</settlement>
+                            <repository sameAs="#dulwich-college"/>
+                            <idno type="shelfmark">Mun 8</idno>
+                            <msName>Lease of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/231675/" type="Place_Feature">Little Rose</rs> from <rs ref="http://ereed.library.utoronto.ca/eats/entity/127127/" type="Person_Commoner">Ambrose Nicholas</rs> et al to <rs ref="http://ereed.library.utoronto.ca/eats/entity/129508/" type="Person_Commoner">William
+                                Griffen</rs></msName>
+                        </msIdentifier>
+                        <ab type="techDesc"><date>20 November 1574</date>; English; parchment; single membrane; 490mm
+                            x 635mm; some display text including ornate initial'T; written 1
+                            side only, good condition; indented, 8 tags with 6 seals still
+                            attached, contemporary (?) handwriting on dorse: 'ye Lease of
+                            S<ex>ain</ex>t myldred<ex>es</ex> of ye rose' and 'frome mr gryffyn.' Folded
+                            twice originally.</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSTSLR">
+                        <msIdentifier>
+                            <settlement>Kew</settlement>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">C54/482</idno>
+                            <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/126857/" type="Person_Commoner">Thomasyn Symonds</rs>' Deed of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/231675/" type="Place_Feature">Little Rose</rs> Property to Eighteen
+                                Trustees</msName>
+                        </msIdentifier>
+                        <ab type="techDesc"><date>1552</date>; English and Latin; parchment; 260mm wide x variable
+                            length (mb 13: 600mm); 50 membranes; numbered 1–49 in ink on dorse;
+                            generally good condition, some repairs, mbs 9, 32, and 33 each have
+                            1 small hole, mb 17 has 1 large hole, mbs 49–50 badly stained; Latin
+                            display script; sewn sequentially, mb 50 serves as the cover, titled
+                            'Quinta pars Claus de anno Regni R<ex>egi</ex>s | Edwardi Sexti Sexto.'
+                            Stored in a box with C54/483 and 484.</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSWGRW">
+                        <msIdentifier>
+                            <settlement>Dulwich</settlement>
+                            <repository sameAs="#dulwich-college"/>
+                            <idno type="shelfmark">Mun 10</idno>
+                            <msName>Assignment by <rs ref="http://ereed.library.utoronto.ca/eats/entity/129508/" type="Person_Commoner">William Griffen</rs> of the Lease of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/231675/" type="Place_Feature">Little Rose</rs> to
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/126687/" type="Person_Commoner">Robert Withens</rs></msName>
+                        </msIdentifier>
+                        <ab type="techDesc"><date>11 December 1579</date>; English; parchment; single membrane; 505mm
+                            x 550mm; some display text including ornate initial 'T'; written 1
+                            side only, good condition; seal attached. Originally folded
+                            twice.</ab>
+                    </msDesc>
+                    <msDesc xml:id="RSWTSY">
+                        <msIdentifier>
+                            <settlement>Kew</settlement>
+                            <repository sameAs="#TNA"/>
+                            <idno type="shelfmark">PROB 11/37/319</idno>
+                            <msName>Will of <rs ref="http://ereed.library.utoronto.ca/eats/entity/126857/" type="Person_Commoner">Thomasyn Symonds</rs></msName>
+                        </msIdentifier>
+                        <ab type="techDesc"><date>1554–6</date>; English and Latin; parchment with modern paper
+                            flyleaves; i + 310 + i; 415mm x 360mm; stamped foliation,
+                            occasionally supplemented in pencil, 1–161, 161A, 162–309 (ff 106–8,
+                            275 blank), supersedes older pencil numbering system; display script
+                            and ornate initials throughout; good condition; bound in brown cloth
+                            with brass edges and corners top and bottom, 2 dark brown leather
+                            straps around the spine and leather buckle at the opposite edge,
+                            buff suede spine with remains of fragmentary leather title in gold
+                            letters: '<damage><gap unit="chars" extent="1"/></damage>ORE | <damage><gap unit="chars" extent="2"/></damage>37.'</ab>
                     </msDesc>
                 </listBibl>
             </div>
