@@ -10,6 +10,7 @@ class PlaceType(models.Model):
     """Mode representing the place type."""
 
     name = models.CharField(max_length=50, unique=True)
+    tile_order = models.PositiveSmallIntegerField(default=1)
 
     class Meta:
         ordering = ['name']
@@ -73,6 +74,8 @@ class Place(models.Model):
     patrons_label_flag = models.IntegerField(
         'label flag', blank=True, choices=constants.LABEL_FLAG_CHOICES,
         null=True)
+    symbol_flag = models.IntegerField(
+        blank=True, choices=constants.SYMBOL_FLAG_CHOICES, null=True)
     notes = models.TextField(blank=True)
 
     def get_actual_coordinates(self, include_placeholder=False):
