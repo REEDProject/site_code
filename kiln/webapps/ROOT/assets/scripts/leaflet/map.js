@@ -29,8 +29,7 @@ function addLegend(map, baseImagePath) {
 function addRegionLayer(map) {
   let region = L.Proj.geoJson(null, {
     style: function(feature) {
-      return {color: 'yellow', opacity: 0.7, fillColor: 'yellow',
-              fillOpacity: 0.3 };
+      return {color: 'yellow', opacity: 0.7, fillColor: 'none'};
     },
     onEachFeature: function(feature, layer) {
       var popupContent;
