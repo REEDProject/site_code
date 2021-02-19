@@ -383,6 +383,7 @@
         </profileDesc>
         <revisionDesc>
             <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
+			<change when="2021-02-18" who=#KC">Correction in XML file required after conversion of Word file material to TEI: Changed in Yorkshire North Riding Doc Descriptions all pointy bracket "del" and "\del" tags to square brackets "[...]"</change>
             <change when="2020-06-22" who="#CB">Published version 3 of taxonomy.xml</change>
             <change when="2019-10-28" who="#CB">Corrected Michaaelmas to Michaelmas in
                 BRRCOV</change>
@@ -17366,7 +17367,7 @@ cross-ref to intro -->.</ab>
                                 of White Kennett (1660–1728), bishop of Peterborough, 1718–28, but
                                 not in his hand (Laird Okie, 'Kennett, White, (1660–1728), historian
                                 and bishop of Peterborough,' <title>ODNB</title>
-                                <del>accessed 7 January 2021</del>). The scribe frequently uses
+                                [accessed 7 January 2021]). The scribe frequently uses
                                 square brackets to indicate parenthetical remarks and hashtags to
                                 indicate the position of marginalia.</ab>
                             <ab type="techDesc"><date>1568–1637</date>; paper; English and Latin; ii
@@ -17526,8 +17527,8 @@ add link -->. The memorandum book is not a
                                 miscellaneous sizes, average 320mm x 210mm; occasional modern pencil
                                 foliation 1–12; tooled leather binding, Cecil arms on front, 'NAMES
                                 OF | RECUSANTS | M S.' on spine. Lists of recusants contained only
-                                in first sixteen booklets, ff <del>1–88</del>, diocese of York, ff
-                                    <del>16–30</del> .</ab>
+                                in first sixteen booklets, ff [1–88], diocese of York, ff
+                                    [16–30] .</ab>
                         </msDesc>
                         <msDesc xml:id="YNHAT3">
                             <msIdentifier>
@@ -17554,15 +17555,15 @@ add link -->. The memorandum book is not a
                             <ab type="techDesc"><date>1600</date>; English; paper; 2 bifolia, folded
                                 thrice horizontally and once vertically, bound together with other
                                 single sheets and booklets of miscellaneous sizes; 350 x 250 mm;
-                                originally unnumbered (ff <del>1v–2</del> blank), now foliated 17–18
-                                (enclosure) and 19 (letter); letter (f <del>1</del>) addressed on f
-                                    <del>2v</del>: 'To the Ryght honorable ye | L<ex>ord</ex>s of
+                                originally unnumbered (ff [1v–2] blank), now foliated 17–18
+                                (enclosure) and 19 (letter); letter (f [1]) addressed on f
+                                    [2v]: 'To the Ryght honorable ye | L<ex>ord</ex>s of
                                 her Ma<ex>ies</ex>t<ex>ies</ex> pryvy | Cownsell./' and endorsed in
                                 a different hand: '5. Sept<ex>ember</ex> 1600 | S<ex>i</ex>r
                                     Tho<ex>mas</ex> Posthumus Hobby | to the Lords./ | a Riottous
                                 assualt com<ex>mitted</ex> vpon him in his house, by Mr Evres./,'
-                                enclosure (ff <del>3–4</del>) endorsed in the same hand (f
-                                    <del>4v</del>)'ye Manner of the Riott.'</ab>
+                                enclosure (ff [3–4]) endorsed in the same hand (f
+                                    [4v])'ye Manner of the Riott.'</ab>
                         </msDesc>
                         <bibl xml:id="YNIEAY">
                             <title type="edName">Injunctions of Edwin, Archbishop of York</title>
@@ -17609,10 +17610,10 @@ add link -->. The memorandum book is not a
                                 correspondent, 'H. Tr.' (f 462) has not been identified. The letter
                                 is introduced in a different hand from the main text 'To
                                 S<ex>i</ex>r Tho<ex>mas</ex> Chaloner, as it seems, about
-                                Antiquities in the North parte of England' (f <del>1</del>), and
+                                Antiquities in the North parte of England' (f [1]), and
                                 concludes in the same hand as the main text 'Your
                                     worshipp<ex>es</ex> to comande | H. Tr.' (f
-                                <del>10</del>).<lb/></ab>
+                                [10]).<lb/></ab>
                             <ab type="techDesc"><date>undated</date>; English; paper; 10 leaves;
                                 255mm x 190mm; now foliated 453–62; bound into a volume of 188 items
                                 in a 19th-c. half morocco binding, brown and dark blue panels on
@@ -17707,7 +17708,7 @@ add link -->. The memorandum book is not a
                                 15 items bound together (items 1, 2, 6, 10, 12, 14, 15 relevant),
                                 item 1: 52 leaves (sewn), item 2: single membrane, item 6: 3 leaves,
                                 items 10, 12, 14, 15: single membrane; 210–770mm x 195–360mm; item
-                                1: unfoliated (ff <del>32-52</del> blank), item 6: unfoliated.</ab>
+                                1: unfoliated (ff [32-52] blank), item 6: unfoliated.</ab>
                         </msDesc>
                         <msDesc xml:id="YNNA07">
                             <msIdentifier>
@@ -17721,7 +17722,7 @@ add link -->. The memorandum book is not a
                             <ab type="techDesc"><date>1600–1</date>; English; paper and parchment; 3
                                 items tied together (only items 1–2 transcribed), item 1: 64 leaves
                                 (sewn), item 2: single membrane; 310–1495mm x 200–340mm; item 1
-                                unfoliated (ff <del>33-64</del> blank).</ab>
+                                unfoliated (ff [33-64] blank).</ab>
                         </msDesc>
                         <msDesc xml:id="YNNA08">
                             <msIdentifier>
@@ -17734,8 +17735,8 @@ add link -->. The memorandum book is not a
                                 see the Introduction<!-- #IN to add link -->.</ab>
                             <ab type="techDesc"><date>1600–2</date>; English and Latin; parchment;
                                 13 items tied together at top left corner (items 2–5, 13 relevant),
-                                item 2: 2 membranes (glued, foot of <del>1</del> to head of
-                                    <del>2</del>) written on one side only), item 3: 2 membranes
+                                item 2: 2 membranes (glued, foot of [1] to head of
+                                    [2]) written on one side only), item 3: 2 membranes
                                 (membrane 1 written on both sides), item 4: single membrane (written
                                 on both sides), item 5: single membrane, item 13: single membrane;
                                 400–750mm x 180–680mm; item 13 heavily damaged, tears and holes in
@@ -17890,7 +17891,7 @@ cross-ref to intro, ref. to Statutes, 39 Eliz, c. 4 -->).
                                 reference to the position of boy players.</ab>
                             <ab type="techDesc"><date>17 April 1610–12 January 1615/16</date>;
                                 English and Latin; paper; iv + 254 + iv ; 300mm x 180mm;
-                                contemporary foliation 1-221 (ff <del>4, 6, 12, 19, 22, 27–33</del>
+                                contemporary foliation 1-221 (ff [4, 6, 12, 19, 22, 27–33]
                                 blank, ff 216–21 also blank); contemporary calfskin binding, 2
                                 leather labels on spine, upper red, lower black, with gold
                                 lettering, respectively 'Minutes | and | Orders' and '1610 | to |
@@ -17986,7 +17987,7 @@ Statutes, 39 Eliz, c. 4 -->).
                                 for accuracy</ab>
                             <ab type="techDesc"><date>7 January 1580/1–3 January 1884</date>;
                                 English; paper; v + 335 + ii (ii a paste-in, 2 small paste-ins
-                                between ff <del>18</del> and <del>19</del>); unnumbered; 300mm x
+                                between ff [18] and [19]); unnumbered; 300mm x
                                 200mm; 19th-c. leather binding, title in gold letters on a red
                                 leather rectangle on front: THE ARCHIVES | OF Y<hi
                                     rend="superscript">E</hi> MERCERS| GROCERS AND | HABERDASHERS |
@@ -18025,7 +18026,7 @@ Statutes, 39 Eliz, c. 4 -->).
                                 <msName>Scarborough Borough Court Papers</msName>
                             </msIdentifier>
                             <ab type="techDesc"><date>1582–1636</date>; English; paper; 2 leaves;
-                                310mm x 200mm; unfoliated; folio <del>2v</del> contains (reversed)
+                                310mm x 200mm; unfoliated; folio [2v] contains (reversed)
                                 summary accounts dated 25 June 1634.</ab>
                         </msDesc>
                         <msDesc xml:id="YNSCB2">
@@ -18047,7 +18048,7 @@ Statutes, 39 Eliz, c. 4 -->).
                                 <msName>Scarborough Court of Pleas Books</msName>
                             </msIdentifier>
                             <ab type="techDesc"><date>1597–1601</date>; English and Latin; paper;
-                                206 leaves; 310mm x 205mm; modern foliation; f <del>2v</del>
+                                206 leaves; 310mm x 205mm; modern foliation; f [2v]
                                 contains (reversed) summary accounts dated 25 June 1634; largely
                                 disbound, some remains of original sewing.</ab>
                         </msDesc>
@@ -18124,9 +18125,9 @@ Statutes, 39 Eliz, c. 4 -->).
                             </msIdentifier>
                             <ab type="techDesc"><date>21–2 September 1537</date>; English; paper; 3
                                 leaves; 290mm x 205mm; unnumbered originally, foliated now as 12–14;
-                                bound in red leather volume, 'SP | 1 <del>on paper label</del> |
+                                bound in red leather volume, 'SP | 1 [on paper label] |
                                 LETTERS | AND | PAPERS | HENRY VIII | 125 | XII pt 2 | 722–960' on
-                                spine, addressed on f <del>1v</del>: 'To the right
+                                spine, addressed on f [1v]: 'To the right
                                 hon<ex>or</ex>abyll &amp; my singular good lord &amp;
                                 age<ex>n</ex>st my lord<ex>es</ex> p<ex>ri</ex>vye Seale
                                     delyv<ex>er</ex> this.'</ab>
@@ -18138,7 +18139,7 @@ Statutes, 39 Eliz, c. 4 -->).
                                 <idno type="shelfmark">PR/TW</idno>
                                 <msName>Order for Suppression of Vagabonds</msName>
                             </msIdentifier>
-                            <ab type="edDesc">The statutes controlling 'Roges, Vacabond<del>es</del>
+                            <ab type="edDesc">The statutes controlling 'Roges, Vacabond[es]
                                 and Sturdy Beggers' (collectively known as the 'poor laws') derive
                                 primarily from Henry VIII's statute of 1536 (27 Hen VIII c. 25)
                                 (Great Britain, <title>The Statutes of the Realm</title>, vol 3
@@ -18146,16 +18147,16 @@ Statutes, 39 Eliz, c. 4 -->).
                                 was repealed in the same year but it formed the basis of Elizabeth's
                                 statute, first promulgated in 1572 (14 Eliz I c.5) and repeated in
                                 1597–8 (39 Eliz I c.4) and 1601 (43 Eliz I c. 2). The 1572 act was
-                                particularly severe in its punishments: '<del>A</del>ll Fencers
+                                particularly severe in its punishments: '[A]ll Fencers
                                 Bearewardes Comon Players in Enterludes &amp; and Minstrels, not
-                                belonging to any Baron of this Realme, or toward<del>es</del> any
+                                belonging to any Baron of this Realme, or toward[es] any
                                 other honorable Personage of greater Degree),' wandering abroad
                                 without the license of two justices at the least, were subject 'to
                                 be grevouslye whipped, and burnte through the gristle of the right
                                 Eare with a hot Yron of the compasse of an Ynche about' (Great
                                 Britain, <title>The Statutes of the Realm</title>, vol 4, pt 1
                                 (London, 1819; rpt 1963), 591). These provisions were modified and
-                                lightened in the 1597–8 legislation: '<del>A</del>ll idle
+                                lightened in the 1597–8 legislation: '[A]ll idle
                                     p<ex>e</ex>rsons going about any Cuntry eyther begging or using
                                 any subtile Crafte or unlawfull Games and Playes, or fayning
                                 themselves to have knowledge in Phisiognomye Palmestry or other like
@@ -18196,8 +18197,8 @@ Statutes, 39 Eliz, c. 4 -->).
                                 churchwardens, who were responsible for presenting offenders at the
                                 quarter sessions.</ab>
                             <ab type="techDesc"><date>1574–1722</date>; English and Latin; paper; ii
-                                + 135 + ii, loose page slipped in between ff <del>121</del> and
-                                    <del>122</del>; original leaves 295mm x 185mm, mounted on modern
+                                + 135 + ii, loose page slipped in between ff [121] and
+                                    [122]; original leaves 295mm x 185mm, mounted on modern
                                 paper 390mm x 245mm; unfoliated; last 16 folios fragmentary, often
                                 several fragments to a folio; 19th-c. vellum-covered boards, gold
                                 stamped edging front and back, title on front: 'THORNTON WATLASS |
@@ -18219,8 +18220,8 @@ Statutes, 39 Eliz, c. 4 -->).
                                 court books of the diocese of York (Claire Cross, 'Piers, John
                                 (1522/3–1594),' <title>ODNB</title>, accessed 27 December 2020;
                                 Colin Podmore, 'Dioceses and Episcopal Sees in England: A Background
-                                Report for the Dioceses Commission,' <del>London, Church of
-                                    England,</del> July 2008, 26).</ab>
+                                Report for the Dioceses Commission,' [London, Church of
+                                    England,] July 2008, 26).</ab>
                             <ab type="techDesc"><date>1590–1</date>; English and Latin; paper; ii +
                                 119 + ii; 205mm x 148mm (text area variable); modern pencil
                                 foliation; some words in display text; some repairs, especially
@@ -18243,9 +18244,9 @@ Statutes, 39 Eliz, c. 4 -->).
                                 visitations of the Richmond deaneries were generally recorded in the
                                 court books of the diocese of York (Claire Cross, 'Piers, John
                                 (1522/3–1594),' <title>ODNB</title>
-                                <del>accessed 27 December 2020</del>; Colin Podmore, 'Dioceses and
+                                [accessed 27 December 2020]; Colin Podmore, 'Dioceses and
                                 Episcopal Sees in England: A Background Report for the Dioceses
-                                Commission,' <del>London,</del> July 2008, 26).</ab>
+                                Commission,' [London,] July 2008, 26).</ab>
                             <ab type="techDesc"><date>1590–1</date>; English and Latin; paper; ii +
                                 145 + ii; 280–305mm x 195–200mm (text area variable); modern pencil
                                 foliation; modern white vellum binding, burgundy leather plate on
@@ -18273,7 +18274,7 @@ Statutes, 39 Eliz, c. 4 -->).
                                 128a, 129–43, 143a, 144–53, 153a, 154–167, 167a, 168–71, 171a, 171b,
                                 171c, 172–84, two unfoliated, 185–226, 226a, 227–70, one unfoliated,
                                 271–305, 305a, 305b, 306–27, 328 foliated on verso, 329–30,
-                                    330a<del>v</del>, 331–34, 334a, 335–63, 363a, 364–7, 367a,
+                                    330a[v], 331–34, 334a, 335–63, 363a, 364–7, 367a,
                                 368–75 (the following folios left blank: 2, 11–14, 58–61, 84–6,
                                 118–21, 166–70, 177, 186–87, 214–15, 241, 254, 288–89, 309–11 346,
                                 348–65, 375); modern white vellum binding, leather plate on front
@@ -18297,7 +18298,7 @@ Statutes, 39 Eliz, c. 4 -->).
                                 jurisdictions, and the visitation records combine material from both
                                 Cheshire and the North Riding of Yorkshire (Colin Podmore, 'Dioceses
                                 and Episcopal Sees in England: A Background Report for the Dioceses
-                                Commission,' <del>London,</del> July 2008, 26).</ab>
+                                Commission,' [London,] July 2008, 26).</ab>
                             <ab type="techDesc"><date>1595–6</date>; English and Latin; paper; ii +
                                 175 + ii; 305mm x 200mm; modern pencil foliation; modern white
                                 vellum binding, burgundy leather plate on front with gold lettering:
@@ -18385,9 +18386,9 @@ Statutes, 39 Eliz, c. 4 -->).
                                     Entertainments</msName>
                             </msIdentifier>
                             <ab type="techDesc"><date>7 August 1592</date>; paper; 2 leaves, folded;
-                                300mm x 206mm; unfoliated (f <del>2</del> blank); 'The ordr for
+                                300mm x 206mm; unfoliated (f [2] blank); 'The ordr for
                                 ryshe | beryng<ex>es</ex> may games &amp;c.' written on f
-                                    <del>2v</del> in a contemporary hand.</ab>
+                                    [2v] in a contemporary hand.</ab>
                         </msDesc>
                         <bibl xml:id="YNYONG">
                             <title type="edName">Young, Whitby and Streneshalh (A)</title>
@@ -18556,7 +18557,7 @@ https://reed.library.utoronto.ca/node/317882 -->;
                                 December 2020; Pevsner, <title>North Riding</title>, p 167).</ab>
                             <ab type="techDesc"><date>29 December 1574–5 January 1574/5</date>;
                                 English; paper; 12 leaves; unfoliated; 300mm x 215mm,; ff
-                                    <del>1-2</del>, <del>11-12</del> repaired and mounted on modern
+                                    [1-2], [11-12] repaired and mounted on modern
                                 paper with paper wrapper, '47<hi rend="superscript">th</hi> Book |
                                 19–25 September 1579' on front cover.</ab>
                         </msDesc>
@@ -18733,10 +18734,10 @@ https://reed.library.utoronto.ca/node/317882 -->;
                                 been noted in the subheading when these can be determined with
                                 confidence. There appears to be no regular accounting year.</ab>
                             <ab type="techDesc"><date>1608–12</date>; English; paper; 235 leaves (ff
-                                    <del>66</del>, <del>144</del>, and <del>233</del> pinned or
-                                pasted in); unfoliated (ff <del>45-6</del>, <del>156</del>,
-                                    <del>158</del>, <del>167-8</del>, <del>210-26</del> blank);
-                                290mm x 185mm; ff <del>231-5</del> damaged by mildew and very
+                                    [66], [144], and [233] pinned or
+                                pasted in); unfoliated (ff [45-6], [156],
+                                    [158], [167-8], [210-26] blank);
+                                290mm x 185mm; ff [231-5] damaged by mildew and very
                                 fragile; vellum cover, title on cover: 'The Book of <damage><gap
                                         unit="chars" extent="3"/></damage> |An<ex>n</ex>o
                                     Dom<ex>ini</ex> | 1608 | <damage><gap unit="chars" extent="1"
