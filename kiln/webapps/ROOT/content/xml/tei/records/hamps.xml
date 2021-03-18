@@ -27,8 +27,7 @@
         <respStmt>
           <persName xml:id="KC">Kathy Chung</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Post-doctoral Fellow in Digital Humanities, EATS taxonomy developer and
-            tagger</resp>
+          <resp>Indexer, EATS taxonomy developer and database maintainer</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="JC">James Cummings</persName>
@@ -158,6 +157,8 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2021-03-16" who="#KC">Corrected Kathy Chung's job title</change>
+      <change when="2021-03-09" who="#KC">revised terms tagged with summer lodge as a feature entity type, with summer lodge as a set entity type</change>
       <change when="2021-03-01" who="#KC">re-tagged Winchester common hall and Winchester council house both as Winchester guildhall. They are all names for the same building.</change>
       <change when="2020-08-20" who="#KC">In Elvetham record, HASEAA, Retagged 'squirt' as  'arms/weapons' and retagged 'marine suite' as 'suits'</change>
       <change when="2020-08-07" who="#KC">In Elvatham record HASEAA: retagged "basket of flowers" and "olive branch" entities are entity="greens/trees"</change>
@@ -33627,7 +33628,7 @@ later 2nd Baron Hunsdon -->]
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m for payntynge of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/215895/" type="Thing_SetMachinery">clothe</rs> vpon<ex>n</ex> the <rs ref="https://ereed.library.utoronto.ca/eats/entity/167086/" type="Place_Feature">somerloge</rs> </cell>
+                  <cell>It<ex>e</ex>m for payntynge of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/215895/" type="Thing_SetMachinery">clothe</rs> vpon<ex>n</ex> the <rs ref="http://ereed.library.utoronto.ca/eats/entity/214346/" type="Thing_SetMachinery">somerloge</rs> </cell>
                   <cell rend="right">xj d.</cell>
                 </row>
                 <row>
