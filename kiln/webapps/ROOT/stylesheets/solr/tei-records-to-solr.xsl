@@ -102,7 +102,17 @@
         </field>
         <field name="record_location_id">
           <xsl:text>entity-</xsl:text>
-          <xsl:value-of select="substring-before(substring-after(tei:body/tei:head/tei:rs[position()=last()]/@ref, '/entity/'), '/')" />
+          <xsl:variable name="location_ref">
+            <xsl:choose>
+              <xsl:when test="tei:body/tei:head/tei:rs[@role='recMapLoc']">
+                <xsl:value-of select="tei:body/tei:head/tei:rs[@role='recMapLoc']/@ref" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="tei:body/tei:head/tei:rs[position()=last()]/@ref" />
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:variable>
+          <xsl:value-of select="substring-before(substring-after($location_ref, '/entity/'), '/')" />
         </field>
         <field name="record_shelfmark">
           <xsl:value-of select="tei:body/tei:head/tei:bibl[1]/tei:span[@type='shelfmark'][@subtype='text']" />
