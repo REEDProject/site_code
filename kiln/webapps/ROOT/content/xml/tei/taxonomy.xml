@@ -14656,9 +14656,9 @@ add link -->. The memorandum book is not a
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">STAC 8/12/11</idno>
-                                <msName>Star Chamber Case: Cholmeley v. Hoby</msName>
+                                <msName>Star Chamber Case: <rs ref="eats:entity-258319" type="Person_Gentry">Cholmeley</rs> v. <rs ref="eats:entity-263152" type="Person_Gentry">Hoby</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">For information on Thomas Hoby and Richard Cholmeley
+                            <ab type="edDesc">For information on <rs ref="eats:entity-263152" type="Person_Gentry">Thomas Hoby</rs> and <rs ref="eats:entity-258319" type="Person_Gentry">Richard Cholmeley</rs>
                                 see the Introduction<!-- #IN to add link -->.</ab>
                             <ab type="techDesc"><date>1609</date>; English; parchment; 2 single
                                 membranes bound together; 440–480mm x 600–610mm.</ab>
