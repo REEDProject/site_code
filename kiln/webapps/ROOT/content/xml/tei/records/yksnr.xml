@@ -3864,20 +3864,20 @@ to link to YNNA10 -->. </p>
        <table>
         <row>
          <cell/>
-         <cell>Mr Rose and all the gent<ex>lemen</ex> aforesaid this Daye/</cell>
+         <cell><rs ref="eats:entity-265553" type="Person_Commoner">Mr Rose</rs> and all the gent<ex>lemen</ex> aforesaid this Daye/</cell>
         </row>
         <row>
          <cell>at supp<ex>er</ex></cell>
-         <cell>my Lord mountagle</cell>
+         <cell>my <rs xml:id="rs-265929-1" next="rs-265929-2" ref="eats:entity-265929" type="Collective_Troupe">Lord mountagle</rs></cell>
         </row>
         <row>
          <cell/>
-         <cell>Plaiers viij<!-- IN to insert cross-refP&amp;P
+         <cell><rs xml:id="rs-265929-2" prev="rs-265929-1" ref="eats:entity-265929" type="Collective_Troupe">Plaiers</rs> viij<!-- IN to insert cross-refP&amp;P
 Mounteagle -->.</cell>
         </row>
         <row>
          <cell/>
-         <cell>the ij colyers and ye whelwright</cell>
+         <cell>the ij <rs ref="eats:entity-265956" type="Collective_Occupation">colyers</rs> and ye <rs ref="eats:entity-29231" type="Collective_Occupation">whelwright</rs></cell>
         </row>
        </table>
 
@@ -3885,9 +3885,9 @@ Mounteagle -->.</cell>
       </div>
      </div>
      <div type="endnote">
-      <p> Dinner was provided to five members of the Fairfax family (f 4v): Mr Rafe Fairfax, Mr
-       Nicholas Fairfax, Mr Cuthbert Fairfax, Mr Robert Fairfax, and Mr George Fairfax, as well as
-       to Sir William Bellasis and Mr Rose. </p>
+      <p> Dinner was provided to five members of the <rs ref="eats:entity-265221" type="Person_Family">Fairfax family</rs> (f 4v): Mr <rs ref="eats:entity-265244" type="Person_Commoner">Rafe Fairfax</rs>, Mr
+       <rs ref="eats:entity-265309" type="Person_Commoner">Nicholas Fairfax</rs>, Mr <rs ref="eats:entity-265370" type="Person_Commoner">Cuthbert Fairfax</rs>, Mr <rs ref="eats:entity-265431" type="Person_Commoner">Robert Fairfax</rs>, and Mr <rs ref="eats:entity-265492" type="Person_Commoner">George Fairfax</rs>, as well as
+       to Sir <rs ref="eats:entity-265614" type="Person_Gentry">William Bellasis</rs> and <rs ref="eats:entity-265553" type="Person_Commoner">Mr Rose</rs>. </p>
      </div>
     </body>
    </text>
