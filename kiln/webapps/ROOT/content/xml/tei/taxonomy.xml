@@ -15625,11 +15625,11 @@ https://reed.library.utoronto.ca/node/317882 -->;
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">ZCV (F), Box 4, Book 38</idno>
-                                <msName>Kitchen Accounts of Sir William Fairfax</msName>
+                                <msName>Kitchen Accounts of Sir <rs ref="eats:entity-265156" type="Person_Gentry">William Fairfax</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">For biographical information on the Fairfax family,
+                            <ab type="edDesc">For biographical information on the <rs ref="eats:entity-265221" type="Person_Family">Fairfax family</rs>,
                                 see the Introduction<!-- IN to insert cross-ref Fairfax bio in Intro -->.
-                                Sir William's steward John Woodward kept daily accounts of
+                                <rs ref="eats:entity-265156" type="Person_Gentry">Sir William's</rs> steward <rs ref="eats:entity-266030" type="Person_Commoner">John Woodward</rs> kept daily accounts of
                                 expenditures in the kitchen. The set is virtually complete from July
                                 1571 to March 1582, with breaks between July 1572–October 1574,
                                 October 1575–November 1578, and October 1579–March 1580. In addition
