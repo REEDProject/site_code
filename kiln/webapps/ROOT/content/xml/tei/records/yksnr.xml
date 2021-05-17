@@ -3840,45 +3840,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
      </div>
     </body>
    </text>
-   <text type="record" xml:id="yksnr-ridp279868840">
-    <body>
-     <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">Yorkshire North Riding</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/250931/" type="Place_PA_Settlement">Gilling</rs>
-      <date when-iso="1580">1580</date>
-      <seg ana="taxon:YNZDV5">YNZDV5</seg></head>
-     <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp279868840-transcription">
-      <div>
-       <head>f [5] <supplied>(12 December)</supplied></head>
-       <pb n="[5]" type="folio"/>
-
-       <table>
-        <row>
-         <cell/>
-         <cell><rs ref="eats:entity-265553" type="Person_Commoner">Mr Rose</rs> and all the gent<ex>lemen</ex> aforesaid this Daye/</cell>
-        </row>
-        <row>
-         <cell>at supp<ex>er</ex></cell>
-         <cell>my <rs xml:id="rs-265929-1" next="rs-265929-2" ref="eats:entity-265929" type="Collective_Troupe">Lord mountagle</rs></cell>
-        </row>
-        <row>
-         <cell/>
-         <cell><rs xml:id="rs-265929-2" prev="rs-265929-1" ref="eats:entity-265929" type="Collective_Troupe">Plaiers</rs><note type="foot">See the relevant <title>P&amp;P</title> <ref target="https://reed.library.utoronto.ca/content/lord-monteagles-players-0">page</ref></note> viij.</cell>
-        </row>
-        <row>
-         <cell/>
-         <cell>the ij <rs ref="eats:entity-265956" type="Collective_Occupation">colyers</rs> and ye <rs ref="eats:entity-29231" type="Collective_Occupation">whelwright</rs></cell>
-        </row>
-       </table>
-
-       <gap reason="omitted"/>
-      </div>
-     </div>
-     <div type="endnote">
-      <p> Dinner was provided to five members of the <rs ref="eats:entity-265221" type="Person_Family">Fairfax family</rs> (f 4v): Mr <rs ref="eats:entity-265244" type="Person_Commoner">Rafe Fairfax</rs>, Mr
-       <rs ref="eats:entity-265309" type="Person_Commoner">Nicholas Fairfax</rs>, Mr <rs ref="eats:entity-265370" type="Person_Commoner">Cuthbert Fairfax</rs>, Mr <rs ref="eats:entity-265431" type="Person_Commoner">Robert Fairfax</rs>, and Mr <rs ref="eats:entity-265492" type="Person_Commoner">George Fairfax</rs>, as well as
-       to Sir <rs ref="eats:entity-265614" type="Person_Gentry">William Bellasis</rs> and <rs ref="eats:entity-265553" type="Person_Commoner">Mr Rose</rs>. </p>
-     </div>
-    </body>
-   </text>
+   
    <text type="record" xml:id="yksnr-ridp284439720">
     <body>
      <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">Yorkshire North Riding</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/250931/" type="Place_PA_Settlement">Gilling</rs>
@@ -4138,6 +4100,47 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
      </div>
     </body>
    </text>
+   
+   <text type="record" xml:id="yksnr-ridp279868840">
+    <body>
+     <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">Yorkshire North Riding</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/250931/" type="Place_PA_Settlement">Gilling Castle</rs>
+      <date when-iso="1580">1580</date>
+      <seg ana="taxon:YNZDV5">YNZDV5</seg></head>
+     <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp279868840-transcription">
+      <div>
+       <head>f [5] <supplied>(12 December)</supplied></head>
+       <pb n="[5]" type="folio"/>
+       
+       <table>
+        <row>
+         <cell/>
+         <cell><rs ref="eats:entity-265553" type="Person_Commoner">Mr Rose</rs> and all the gent<ex>lemen</ex> aforesaid this Daye/</cell>
+        </row>
+        <row>
+         <cell>at supp<ex>er</ex></cell>
+         <cell>my <rs xml:id="rs-265929-1" next="rs-265929-2" ref="eats:entity-265929" type="Collective_Troupe">Lord mountagle</rs></cell>
+        </row>
+        <row>
+         <cell/>
+         <cell><rs xml:id="rs-265929-2" prev="rs-265929-1" ref="eats:entity-265929" type="Collective_Troupe">Plaiers</rs><note type="foot">See the relevant <title>P&amp;P</title> <ref target="https://reed.library.utoronto.ca/content/lord-monteagles-players-0">page</ref></note> viij.</cell>
+        </row>
+        <row>
+         <cell/>
+         <cell>the ij <rs ref="eats:entity-265956" type="Collective_Occupation">colyers</rs> and ye <rs ref="eats:entity-29231" type="Collective_Occupation">whelwright</rs></cell>
+        </row>
+       </table>
+       
+       <gap reason="omitted"/>
+      </div>
+     </div>
+     <div type="endnote">
+      <p> Dinner was provided to five members of the <rs ref="eats:entity-265221" type="Person_Family">Fairfax family</rs> (f 4v): Mr <rs ref="eats:entity-265244" type="Person_Commoner">Rafe Fairfax</rs>, Mr
+       <rs ref="eats:entity-265309" type="Person_Commoner">Nicholas Fairfax</rs>, Mr <rs ref="eats:entity-265370" type="Person_Commoner">Cuthbert Fairfax</rs>, Mr <rs ref="eats:entity-265431" type="Person_Commoner">Robert Fairfax</rs>, and Mr <rs ref="eats:entity-265492" type="Person_Commoner">George Fairfax</rs>, as well as
+       to Sir <rs ref="eats:entity-265614" type="Person_Gentry">William Bellasis</rs> and <rs ref="eats:entity-265553" type="Person_Commoner">Mr Rose</rs>. </p>
+     </div>
+    </body>
+   </text>
+   
    <text type="record" xml:id="yksnr-ridp279881208">
     <body>
      <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">Yorkshire North Riding</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/250954/" type="Place_F_Residence">Gilling Castle</rs>
