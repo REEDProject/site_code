@@ -353,8 +353,8 @@
       part of the Cecil papers at Hatfield House.<note type="foot">Simon Adams <hi rend="italic">et
         al</hi>, 'Walsingham, Sir Francis (<hi rend="italic">c</hi>. 1532–1590),
        <title>ODNB</title>, accessed 16 January 2021; Jessica Brain, 'Sir Francis Walsingham,
-       Spymaster General,'
-       https://www.historic-uk.com/HistoryUK/HistoryofEngland/Sir-Francis-Walsingham-Spymaster-General,
+       Spymaster General,' <ref target="https://www.historic-uk.com/HistoryUK/HistoryofEngland/Sir-Francis-Walsingham-Spymaster-General">
+        https://www.historic-uk.com/HistoryUK/HistoryofEngland/Sir-Francis-Walsingham-Spymaster-General</ref>,
        accessed 16 January 2021.</note></p>
     </div>
     <div>
@@ -624,6 +624,10 @@
         127–8; Cliffe, <title>Yorkshire Gentry</title>, pp 369–70.</note></p>
      </div>
      <div xml:id="background-fairfax">
+      <figure>
+       <graphic url="/images/GillingCastleInterior.jpg"/>
+       <head>Gilling Castle, Great Hall, high end. Photo: David Klausner.</head>
+      </figure>
       <head>Fairfax of <rs ref="http://ereed.library.utoronto.ca/eats/entity/250954/" type="Place_F_Residence">Gilling Castle</rs></head>
       <p>The fortified manor house of <rs ref="http://ereed.library.utoronto.ca/eats/entity/250954/" type="Place_F_Residence">Gilling Castle</rs> was built in the fourteenth century by Thomas
        de Etton; the estate went to his wife's family, the Fairfaxes, after Thomas died without an
@@ -782,6 +786,11 @@
       Riding collection, since the border has shifted and Nidderdale, formerly in the <rs ref="eats:entity-2471" type="Place_County">West Riding</rs>,
       moved to the North Riding in the 1974 county reorganization<!---@xc\insert cross ref to WR####,
       1609 when information becomes available@xc \-->.</p>
+     <figure>
+      <graphic url="/images/YorksNRMap1.png"/>
+      <head>Map 1. Simpson company tour, Christmas to Candlemas 1609–10. Cartography: Byron Moldofsky.
+      </head>
+     </figure>
      <p>The site of the performance no longer exists in its original state, since the River Nidd was
       dammed between 1893 and 1900 to form Gouthwaite Reservoir and the hall was rebuilt and
       re-sited as two farmhouses.<note type="foot"><title>Historic England</title>, <hi rend="italic">sv</hi> 'Gouthwaite Hall,'
@@ -789,6 +798,11 @@
       of the hall made for the title page of William Smith's <title>Old Yorkshire</title> shows at
       the right-hand side a substantial great hall, two storeys in height, though whether the hall
       itself occupies one or two storeys is not clear.</p>
+     <figure>
+      <graphic url="/images/GowthwaiteHall.jpg"/>
+      <head>Gouthwaite Hall. Anonymous engraving. William Smith, <hi rend="italic">Old Yorkshire</hi>, ns (London, 1891), title-page.
+      </head>
+     </figure>
      <p>Members of the Simpsons' company identified their repertoire as including 'Perocles, prince
       of Tire, ... And [...] King Lere.'<note type="foot">From the Star Chamber deposition of
        William Harrison, the company's fool.<!--@xc\#link cross ref to YNNA25, 1609@xc \. As of 2021-05-10 YNNA25 is awaiting OS check. Cross-ref may be inserted at a later time--></note> These
@@ -808,10 +822,21 @@
       Hoby against Cholmley<note type="foot">See <ptr target="#yksnr-ridp283540776"/>.</note>. The company's various
       appearances before the quarter sessions permits building up a picture of their touring
       practices, with nine stops on their January tour of 1615.</p>
+     <figure>
+      <graphic url="/images/YorksNRMap2.png"/>
+      <head>Map 2. Simpson company tour, 1 January–13 January 1614/15. Cartography: Byron Moldofsky.       
+      </head>
+     </figure>
      <p>The Simpsons were not the only locally based company. A small company of players based in
       <rs ref="eats:entity-251368" type="Place_PA_Settlement">Hutton Bushell</rs> just west of <rs ref="eats:entity-252519" type="Place_PA_Settlement">Scarborough</rs> was brought before the quarter sessions in April 1616.
       Their winter 1615/16 tour brought the company to thirty-two gentry houses, with locations and
-      dates given in the court records. They appear to have been at least in part a boys' company.
+      dates given in the court records.</p> 
+     <figure>
+      <graphic url="/images/YorksNRMap3.png"/>
+      <head>Map 3. Hutton Bushell company tour, 29 December 1615–18 February 1615/16. Cartography: Byron Moldofsky.      
+      </head>
+     </figure>
+     <p>They appear to have been at least in part a boys' company.
       The quarter sessions records give the ages of those who appeared before the court; two of the
       Hutton Bushell company (the leaders, Richard Hudson and Edward Lister) were over forty, three
       were in their teens, and two were <quote source="#yksnr-ridp287801640">'over seven'</quote>. The
@@ -1957,7 +1982,7 @@
       <p>
        <rs ref="http://ereed.library.utoronto.ca/eats/entity/254017/" type="Place_F_Church">Brandsby
         Church</rs> was dedicated to All Saints (<title>VCH: York North Riding</title>, vol 2, pp
-       103–7, <title>BHO</title>, http://www.british- history.ac.uk/vch/yorks/north/vol2/pp103-107,
+       103–7, <title>BHO</title>, <ref target="http://www.british-history.ac.uk/vch/yorks/north/vol2/pp103-107">http://www.british-history.ac.uk/vch/yorks/north/vol2/pp103-107</ref>,
        accessed 8 February 2020). </p>
      </div>
     </body>
@@ -10252,7 +10277,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
        would likely be Thomas Howard (1473–1554), eighth duke of Norfolk and fourteenth earl of
        Surrey (See the relevant <title>P&amp;P</title> <ref target="https://reed.library.utoronto.ca/node/316122">page</ref>). The abbot of Whitby in 1537 was John
        Hexham alias Topcliffe, who resigned his position the same year (<title>VCH:
-        Yorkshire</title>, vol 3, pp 101–5, <title>BHO</title>, , accessed 28 December 2020). </p>
+        Yorkshire</title>, vol 3, pp 101–5, <title>BHO</title>,<ref target="https://www.british-history.ac.uk/vch/yorks/vol3/pp101-105">https://www.british-history.ac.uk/vch/yorks/vol3/pp101-105</ref>, accessed 28 December 2020).</p>
      </div>
     </body>
    </text>
@@ -14079,7 +14104,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
      <div type="endnote">
       <p> The abbott (p 262) is Thomas of Bolton, who succeeded Peter of Hartlepool as abbott on the
        latter's death, 2 August 1394 (<title>VCH: York</title>, vol 3, pp 101–5, <title>BHO</title>
-       https://www.british- history.ac.uk/vch/yorks/vol3/pp101-105, accessed 31 December 2020). </p>
+       <ref target="https://www.british-history.ac.uk/vch/yorks/vol3/pp101-105">https://www.british-history.ac.uk/vch/yorks/vol3/pp101-105</ref>, accessed 31 December 2020). </p>
      </div>
     </body>
    </text>
