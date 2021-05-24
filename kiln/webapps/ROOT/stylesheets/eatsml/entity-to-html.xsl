@@ -78,7 +78,7 @@
           <xsl:attribute name="src">
             <xsl:value-of select="$kiln:assets-path" />
             <xsl:text>/scripts/leaflet/regions/</xsl:text>
-            <xsl:value-of select="$entity/geojson/@idno" />
+            <xsl:value-of select="$entity/geojson[1]/@idno" />
             <xsl:text>.js</xsl:text>
           </xsl:attribute>
         </script>
