@@ -284,7 +284,9 @@
     </singular>
   </xsl:template>
 
-  <xsl:template match="eats:subject_identifier" />
+  <xsl:template match="eats:subject_identifier">
+    <external_data href="{.}"/>
+  </xsl:template>
 
   <xsl:template match="eats:subject_identifier[starts-with(., $gis_base_url)]">
     <xsl:variable name="id" select="substring-before(substring-after(., $gis_base_url), '/')" />

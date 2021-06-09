@@ -132,6 +132,21 @@
     </xsl:for-each>
   </xsl:template>
 
+  <xsl:template name="display-external-data">
+    <xsl:choose>
+      <xsl:when test="$entity/external_data">
+        <ul>
+          <xsl:for-each select="$entity/external_data">
+            <li><a href="{@href}"><xsl:value-of select="@href"/></a></li>
+          </xsl:for-each>
+        </ul>
+      </xsl:when>
+      <xsl:otherwise>
+        <p>There are no links to external data for this entity at present.</p>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
   <xsl:template name="display-related-entities">
     <table class="display related-entities-table responsive" cellspacing="0" width="100%">
       <tbody class="related-content">
