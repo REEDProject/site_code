@@ -40,6 +40,7 @@
                 <li class="tabs-title"><a href="#panel2"><img src="{$kiln:assets-path}/images/related-editorial-content.svg" alt="" />Related Editorial Content</a></li>
                 <li class="tabs-title"><a href="#panel3"><img src="{$kiln:assets-path}/images/related-entities.svg" alt="" />Related Entities</a></li>
                 <li class="tabs-title"><a href="#panel4"><img src="{$kiln:assets-path}/images/map.svg" alt="" />Map</a></li>
+                <li class="tabs-title"><a href="#panel5">External Data</a></li>
               </ul>
             </div>
           </div>
@@ -111,6 +112,17 @@
               <div class="row collapse map-wrapper">
                 <div class="columns medium-12">
                   <div id="map"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel5">
+              <div class="row">
+                <div class="column medium-12">
+                  <div>
+                    <h2>External Data</h2>
+
+                    <xsl:call-template name="display-external-data" />
+                  </div>
                 </div>
               </div>
             </div>
