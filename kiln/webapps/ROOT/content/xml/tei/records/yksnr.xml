@@ -10382,12 +10382,12 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>I<ex>tem</ex> payd for 1 gallon of wyn</cell>
+         <cell>I<ex>tem</ex> payd for 1 gallon of <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyn</rs></cell>
          <cell rend="right">ij s. ix d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> payd to the wayt<ex>es</ex> at Chr<ex>ist</ex>offer Binck<ex>es</ex>
-          dinner</cell>
+         <cell>I<ex>tem</ex> payd to the wayt<ex>es</ex> at <rs ref="eats:entity-279699" type="Person_Commoner">Chr<ex>ist</ex>offer Binck<ex>es</ex></rs>
+          <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs></cell>
          <cell rend="right">viij d.</cell>
         </row>
         <row>
@@ -10399,7 +10399,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell rend="right">xij d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> to Ralf bink<ex>es</ex> harp<ex>er</ex></cell>
+         <cell>I<ex>tem</ex> to <rs ref="eats:entity-279760" type="Person_Commoner">Ralf bink<ex>es</ex></rs> <rs ref="eats:entity-30189" type="Entertainer_Type">harp<ex>er</ex></rs></cell>
          <cell rend="right">iiij d</cell>
         </row>
        </table>
