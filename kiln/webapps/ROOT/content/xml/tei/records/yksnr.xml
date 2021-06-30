@@ -10466,7 +10466,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp269212264-transcription">
       <div>
-       <head>f [2] <supplied>(7 January) (Accounts of Arthur Hutchinson, warden)</supplied></head>
+       <head>f [2] <supplied>(7 January) (Accounts of <rs ref="eats:entity-280261" type="Person_Commoner">Arthur Hutchinson</rs>, <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[2]" type="folio"/>
 
        <gap reason="omitted"/>
@@ -10474,15 +10474,15 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
        <table>
         <row>
          <cell>I<ex>tem</ex><note type="marginal" place="margin_left">Som<ex>m</ex> rest in the
-           wardens hand xxx s. Iust</note> at Charles Caddys dinner for wyne</cell>
+           <rs ref="eats:entity-280055" type="Collective_Office">wardens</rs> hand xxx s. Iust</note> at <rs ref="eats:entity-280340" type="Person_Commoner">Charles Caddys</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs> for <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyne</rs></cell>
          <cell rend="right">xviij d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> for Iohn foggathwayt &amp; pasmor wyffe dinners</cell>
+         <cell>I<ex>tem</ex> for <rs ref="eats:entity-280405" type="Person_Commoner">Iohn foggathwayt</rs> &amp; <rs ref="eats:entity-280504" type="Person_Commoner">pasmor wyffe</rs> dinners</cell>
          <cell rend="right">viij d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> to the Wayt<ex>es</ex></cell>
+         <cell>I<ex>tem</ex> to the <rs ref="eats:entity-276058" type="Collective_Office">Wayt<ex>es</ex></rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
        </table>
@@ -10491,7 +10491,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       </div>
      </div>
      <div type="endnote">
-      <p> Neither Caddys nor Foggathwayte was warden in 1583. The dinner may have welcomed them as
+      <p> Neither <rs ref="eats:entity-280340" type="Person_Commoner">Caddys</rs> nor <rs ref="eats:entity-280405" type="Person_Commoner">Foggathwayte</rs> was <rs ref="eats:entity-280055" type="Collective_Office">warden</rs> in 1583. The <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs> may have welcomed them as
        new members. </p>
      </div>
     </body>
