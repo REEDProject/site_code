@@ -10503,26 +10503,26 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp269227240-transcription">
       <div>
-       <head>f [3v] <supplied>(7 January) (Accounts of Artur Hutchinson, warden)</supplied></head>
+       <head>f [3v] <supplied>(7 January) (Accounts of <rs ref="eats:entity-280261" type="Person_Commoner">Artur Hutchinson</rs>, <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[3v]" type="folio"/>
 
        <gap reason="omitted"/>
 
-       <ab>Mony disborsed by hime</ab>
+       <ab>Mony disborsed by <rs ref="eats:entity-280261" type="Person_Commoner">hime</rs></ab>
 
        <gap reason="omitted"/>
 
        <table>
         <row>
-         <cell>I<ex>tem</ex> for dinner</cell>
+         <cell>I<ex>tem</ex> for <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs></cell>
          <cell rend="right">xvi s. viij d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> for wyne &amp; suger</cell>
+         <cell>I<ex>tem</ex> for <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyne</rs> &amp; <rs ref="eats:entity-40978" type="Thing_FoodDrink">suger</rs></cell>
          <cell rend="right">iiij s. viij d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> to the wayt<ex>es</ex></cell>
+         <cell>I<ex>tem</ex> to the <rs ref="eats:entity-276058" type="Collective_Office">wayt<ex>es</ex></rs></cell>
          <cell rend="right">xvj d.</cell>
         </row>
         <row>
@@ -10543,18 +10543,18 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp269234120-transcription">
       <div>
-       <head>f [4] <supplied>(7 January) (Accounts of Marmaduke Pearson, warden)</supplied></head>
+       <head>f [4] <supplied>(7 January) (Accounts of <rs ref="eats:entity-280557" type="Person_Commoner">Marmaduke Pearson</rs>, <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[4]" type="folio"/>
 
        <gap reason="omitted"/>
 
-       <ab>Mony disbursed by the saym Warden</ab>
+       <ab>Mony disbursed by the saym <rs ref="eats:entity-280557" type="Person_Commoner">Warden</rs></ab>
 
        <gap reason="omitted"/>
 
        <table>
         <row>
-         <cell>I<ex>tem</ex> payd att Iohn Pratt dinner for Mr Williams, to the wayt<ex>es</ex> and
+         <cell>I<ex>tem</ex> payd att <rs ref="eats:entity-280626" type="Person_Commoner">Iohn Pratt</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs> for <rs ref="eats:entity-280691" type="Person_Commoner">Mr Williams</rs>, to the <rs ref="eats:entity-276058" type="Collective_Office">wayt<ex>es</ex></rs> and
            serga<ex>n</ex>t<ex>es</ex></cell>
          <cell rend="right">vij s. x d.</cell>
         </row>
@@ -10564,8 +10564,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       </div>
      </div>
      <div type="endnote">
-      <p> John Pratt was accepted into the guild in 1587. The dinner may have been to welcome him
-       and/or Williams as new members. </p>
+      <p> <rs ref="eats:entity-280626" type="Person_Commoner">John Pratt</rs> was accepted into <rs ref="eats:entity-279826" type="Collective_GuildOccupational">the guild</rs> in 1587. The <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs> may have been to welcome him
+       and/or <rs ref="eats:entity-280691" type="Person_Commoner">Williams</rs> as new members. </p>
      </div>
     </body>
    </text>
