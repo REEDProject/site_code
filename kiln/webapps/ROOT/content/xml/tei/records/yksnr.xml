@@ -11185,8 +11185,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp281917464-transcription">
       <div>
-       <head>f [19] col 2 <supplied>(6 January) (Accounts of Ralph Bellamy,
-        warden)</supplied></head>
+       <head>f [19] col 2 <supplied>(6 January) (Accounts of <rs ref="eats:entity-281450" type="Person_Commoner">Ralph Bellamy</rs>,
+        <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[19]" type="folio"/>
 
        <gap reason="omitted"/>
@@ -11197,7 +11197,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>Att the warden dinner in wyne, ayle, &amp; the wayt<ex>es</ex></cell>
+         <cell>Att the <rs ref="eats:entity-280055" type="Collective_Office">warden</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs> in <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyne</rs>, ayle, &amp; the <rs ref="eats:entity-276058" type="Collective_Office">wayt<ex>es</ex></rs></cell>
          <cell rend="right">x s. viij d.</cell>
         </row>
         <row>
@@ -11224,7 +11224,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>paid att Chr<ex>ist</ex>offer Handley dinner<note type="foot">dinner: <hi rend="italic">held on 10 June 1618</hi></note> to the wates</cell>
+         <cell>paid att <rs ref="eats:entity-281649" type="Person_Commoner">Chr<ex>ist</ex>offer Handley</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs><note type="foot">dinner: <hi rend="italic">held on 10 June 1618</hi></note> to the <rs ref="eats:entity-276058" type="Collective_Office">wates</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
@@ -11234,11 +11234,11 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>paid for 24 persons being vj meals at Mathew metcalf</cell>
+         <cell>paid for 24 persons being vj <rs ref="eats:entity-40978" type="Thing_FoodDrink">meals</rs> at <rs ref="eats:entity-280825" type="Person_Commoner">Mathew metcalf</rs></cell>
          <cell rend="right">xvj s.</cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> for after shott for drinck same folks</cell>
+         <cell>It<ex>em</ex> for after shott for <rs ref="eats:entity-40997" type="Thing_FoodDrink">drinck</rs> same folks</cell>
          <cell rend="right">iiij s.</cell>
         </row>
         <row>
@@ -11250,7 +11250,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell rend="right">xviij d.</cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> paid to steven metcalf musician</cell>
+         <cell>It<ex>em</ex> paid to <rs ref="eats:entity-281381" type="Person_Commoner">steven metcalf</rs> <rs ref="eats:entity-1243" type="Entertainer_Type">musician</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
        </table>
@@ -11259,11 +11259,11 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       </div>
      </div>
      <div type="endnote">
-      <p> The Metcalf family was closely involved in the administration of the guild; Matthew was a
-       freeman from 1614, John was elder warden in 1615, and Stephen was paid several time as a
-       musician in 1618.</p>
+      <p> The <rs ref="eats:entity-281354" type="Person_Family">Metcalf family</rs> was closely involved in the administration of <rs ref="eats:entity-279826" type="Collective_GuildOccupational">the guild</rs>; <rs ref="eats:entity-280825" type="Person_Commoner">Matthew</rs> was a
+       freeman from 1614, <rs ref="eats:entity-280932" type="Person_Commoner">John</rs> was elder warden in 1615, and <rs ref="eats:entity-281381" type="Person_Commoner">Stephen</rs> was paid several time as a
+       <rs ref="eats:entity-1243" type="Entertainer_Type">musician</rs> in 1618.</p>
 
-      <p> Christopher Handley (f <del>21v</del>) was one of the guild's searchers in 1618. </p>
+      <p> <rs ref="eats:entity-281649" type="Person_Commoner">Christopher Handley</rs> (f <del>21v</del>) was one of the guild's searchers in 1618. </p>
      </div>
     </body>
    </text>
@@ -11278,13 +11278,13 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
        <pb n="135" type="folio"/>
 
        <ab>T<ex>ermin</ex>is Hillar<ex>ij</ex> Anno r<ex>egni</ex> r<ex>egis</ex>
-        <damage><gap unit="chars" extent="8"/></damage> xxxv Ioh<damage><gap unit="chars" extent="3"/></damage> &amp; Ric<ex>ardus</ex> Henrison Ball<damage><gap unit="chars" extent="3"/></damage><note type="foot"><damage><gap unit="chars" extent="8"/></damage> … <damage><gap unit="chars" extent="3"/></damage>: <hi rend="italic">letters lost to trimming at top of
+        <damage><gap unit="chars" extent="8"/></damage> xxxv Ioh<damage><gap unit="chars" extent="3"/></damage> &amp; <rs ref="eats:entity-281802" type="Person_Commoner">Ric<ex>ardus</ex> Henrison</rs> Ball<damage><gap unit="chars" extent="3"/></damage><note type="foot"><damage><gap unit="chars" extent="8"/></damage> … <damage><gap unit="chars" extent="3"/></damage>: <hi rend="italic">letters lost to trimming at top of
           leaf</hi></note></ab>
 
        <ab>Memorand<ex>um</ex> q<ex>uo</ex>d xviij Die Decembr<ex>is</ex> A<ex>nn</ex>o
-         r<ex>egni</ex> r<ex>egis</ex> henr<ex>ici</ex> sexto post conque<ex>stum</ex> xxxv<hi rend="superscript">to</hi> Thomas Wylson mynstrell<ex>us</ex> Iurat<ex>us</ex> est ad
-         p<ex>ro</ex>mend<ex>um</ex> Balliuo<ex>rum</ex> &amp; Co<ex>mmuni</ex>tati<note type="foot">Co<ex>mmuni</ex>ati: <hi rend="italic">for</hi> communitatis <hi rend="italic">(?)</hi></note> ville de <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scareburgh</rs> videl<ex>i</ex>c<ex>et</ex> Ioh<ex>anni</ex> lambert &amp;
-        Ric<ex>ard</ex>i Henryson in Offic<ex>ium</ex> de le Wayte d<ex>i</ex>c<ex>t</ex>i ville
+        r<ex>egni</ex> r<ex>egis</ex> henr<ex>ici</ex> sexto post conque<ex>stum</ex> xxxv<hi rend="superscript">to</hi> <rs ref="eats:entity-281898" type="Person_Commoner">Thomas Wylson</rs> <rs ref="eats:entity-8709" type="Entertainer_Type">mynstrell<ex>us</ex></rs> Iurat<ex>us</ex> est ad
+         p<ex>ro</ex>mend<ex>um</ex> Balliuo<ex>rum</ex> &amp; Co<ex>mmuni</ex>tati<note type="foot">Co<ex>mmuni</ex>ati: <hi rend="italic">for</hi> communitatis <hi rend="italic">(?)</hi></note> ville de <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scareburgh</rs> videl<ex>i</ex>c<ex>et</ex> <rs ref="eats:entity-281741" type="Person_Commoner">Ioh<ex>anni</ex> lambert</rs> &amp;
+        Ric<ex>ard</ex>i Henryson in Offic<ex>ium</ex> de le <rs ref="eats:entity-281714" type="Collective_Office">Wayte</rs> d<ex>i</ex>c<ex>t</ex>i ville
         bene &amp; fidelit<ex>er</ex> p<ex>er</ex> annu<ex>m</ex> p<ex>ro</ex>x<ex>imum</ex>
          seruient<ex>es</ex><note type="foot">seruient<ex>es</ex>: <hi rend="italic">for</hi>
          seruiens</note> Et matheus alleston de Scareburgh coram d<ex>i</ex>c<ex>t</ex>is
@@ -11329,9 +11329,9 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell> Christofer Jenyson<lb/> Chr<ex>istof</ex>er Jackson<lb/> henry Robynson<note type="foot">Chrisofer … Robynson: <hi rend="italic">names bracketed on the
+         <cell> Christofer Jenyson<lb/> <rs ref="eats:entity-281967" type="Person_Commoner">Chr<ex>istof</ex>er Jackson</rs><lb/> <rs ref="eats:entity-282036" type="Person_Commoner">henry Robynson</rs><note type="foot">Chrisofer … Robynson: <hi rend="italic">names bracketed on the
            right</hi></note></cell>
-         <cell>appoynted to be the Wates at <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scareburgh</rs> for this year and to Dewid the wag<ex>es</ex> in ther
+         <cell>appoynted to be the <rs ref="eats:entity-281714" type="Collective_Office">Wates</rs> at <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scareburgh</rs> for this year and to Dewid the wag<ex>es</ex> in ther
            p<ex>ar</ex>t<ex>es</ex>.</cell>
         </row>
        </table>
@@ -11353,12 +11353,12 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <gap reason="omitted"/>
 
-       <ab>M<ex>emoran</ex>d<ex>um</ex> that Mr Robart lacy do<note type="foot">do: <hi rend="italic">for</hi> doth</note> stand bound for Christofer Johnson one of the wates of
-        Scareburgh that he shall trewly do his s<ex>er</ex>vice and to delyu<ex>er</ex> his
-         congnissat<ex>es</ex> or badge to the sa<ex>i</ex>d Bailiff<ex>es</ex> agane. at mychelmes
+       <ab>M<ex>emoran</ex>d<ex>um</ex> that Mr <rs ref="eats:entity-282105" type="Person_Commoner">Robart lacy</rs> do<note type="foot">do: <hi rend="italic">for</hi> doth</note> stand bound for <rs ref="eats:entity-282166" type="Person_Commoner">Christofer Johnson</rs> one of the <rs ref="eats:entity-281714" type="Collective_Office">wates of
+        Scareburgh</rs> that he shall trewly do his s<ex>er</ex>vice and to delyu<ex>er</ex> his
+         <rs ref="eats:entity-42646" type="Thing_LiveryRegalia">congnissat<ex>es</ex> or badge</rs> to the sa<ex>i</ex>d Bailiff<ex>es</ex> agane. at mychelmes
         next/</ab>
 
-       <ab>M<ex>emoran</ex>d<ex>um</ex> that Iohn Wolf doth stand bond for henry Robynson wate that
+       <ab>M<ex>emoran</ex>d<ex>um</ex> that <rs ref="eats:entity-282235" type="Person_Commoner">Iohn Wolf</rs> doth stand bond for <rs ref="eats:entity-282036" type="Person_Commoner">henry Robynson</rs> wate that
         shall trewly do his s<ex>er</ex>vice and that he shall delyu<ex>er</ex> in his badge at
         mychelmes next to the Bailiff<ex>es</ex></ab>
 
