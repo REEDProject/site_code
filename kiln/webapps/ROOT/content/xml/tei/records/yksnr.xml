@@ -11649,7 +11649,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex> more for a dromme stringe</cell>
+         <cell>It<ex>em</ex> more for a <rs ref="eats:entity-41063" type="Thing_MusicalInstrument">dromme</rs> stringe</cell>
          <cell rend="right"> 00</cell>
          <cell> 00</cell>
          <cell> 04</cell>
@@ -11675,7 +11675,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex> payed to Christo<ex>pher</ex> Thompson for ye waites Lyveries</cell>
+         <cell>It<ex>em</ex> payed to <rs ref="eats:entity-282515" type="Person_Commoner">Christo<ex>pher</ex> Thompson</rs> for ye <rs ref="eats:entity-281714" type="Collective_Office">waites</rs> <rs ref="eats:entity-43439" type="Thing_LiveryRegalia">Lyveries</rs></cell>
          <cell rend="right">02 - 11 - 00</cell>
         </row>
        </table>
@@ -11695,7 +11695,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
        <head>single sheet <supplied>(29 September–29 September)</supplied></head>
        <pb n="1" type="sheet"/>
 
-       <ab>A not off wyn &amp; other Chargdes Delyvered to <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Towne</rs> &amp; in Baylffes house the 5<hi rend="superscript">th</hi> off November
+       <ab>A not off <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyn</rs> &amp; other Chargdes Delyvered to <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Towne</rs> &amp; in Baylffes house the 5<hi rend="superscript">th</hi> off November
         1633</ab>
 
        <table>
@@ -11705,12 +11705,12 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell rend="right">ij li. ij s. 0 d.</cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> after Dyner in the after Nown in Win &amp; a q<ex>uar</ex>t off
+         <cell>It<ex>em</ex> after <rs ref="eats:entity-40561" type="Entertainment_Type">Dyner</rs> in the after Nown in Win &amp; a q<ex>uar</ex>t off
           sayk</cell>
          <cell rend="right">0 iii s. vj d.</cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> more giuen to the Meusyck in Mony <del>&amp; wyne</del>
+         <cell>It<ex>em</ex> more giuen to the <rs ref="eats:entity-1243" type="Entertainer_Type">Meusyck</rs> in Mony <del>&amp; wyne</del>
           <add place="above">to the Seargent<ex>es</ex></add></cell>
          <cell rend="right">iij<note type="foot">iij: <hi rend="italic">ie, </hi>iij s.</note> vj
           d.</cell>
@@ -11719,7 +11719,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> mor the waytts Lyver<ex>es</ex> ffor Clook<ex>es</ex></cell>
+         <cell>It<ex>em</ex> mor the <rs ref="eats:entity-281714" type="Collective_Office">waytts</rs> <rs ref="eats:entity-43439" type="Thing_LiveryRegalia">Lyver<ex>es</ex></rs> ffor Clook<ex>es</ex></cell>
          <cell rend="right">ij li. ix s. vj d.</cell>
         </row>
        </table>
@@ -11743,8 +11743,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>p<ex>ai</ex>d to chr<ex>ist</ex>o<ex>pher</ex> for the waites
-          lyu<ex>er</ex>yes</cell>
+         <cell>p<ex>ai</ex>d to <rs ref="eats:entity-282515" type="Person_Commoner">chr<ex>ist</ex>o<ex>pher</ex></rs> for the <rs ref="eats:entity-281714" type="Collective_Office">waites</rs>
+          <rs ref="eats:entity-43439" type="Thing_LiveryRegalia">lyu<ex>er</ex>yes</rs></cell>
          <cell rend="right"><add place="above">2 li.</add> 10 s.</cell>
         </row>
        </table>
@@ -11753,8 +11753,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       </div>
      </div>
      <div type="endnote">
-      <p> Christopher Thompson, draper and merchant tailor, served as senior bailiff in 1637 and
-       1644, but it seems more likely that he is being paid for making the waits' liveries than in
+      <p> <rs ref="eats:entity-282515" type="Person_Commoner">Christopher Thompson</rs>, <rs ref="eats:entity-39060" type="Collective_Occupation">draper</rs> and merchant <rs ref="eats:entity-14062" type="Collective_Occupation">tailor</rs>, served as senior bailiff in 1637 and
+       1644, but it seems more likely that he is being paid for making the <rs ref="eats:entity-281714" type="Collective_Office">waits</rs>' <rs ref="eats:entity-43439" type="Thing_LiveryRegalia">liveries</rs> than in
        his administrative capacity (Corporation Minute Book 1621–49, NYCRO DC/SCB II/1/1/1). </p>
      </div>
     </body>
