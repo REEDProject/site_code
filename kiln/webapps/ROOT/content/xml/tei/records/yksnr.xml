@@ -3545,7 +3545,7 @@
        <pb n="1"/>
 
        <ab rend="center">The<note type="marginal" place="margin_left">Iurat<ex>us</ex> 23 die maij
-         Anno septimo Iacobi Regis<lb/>
+         Anno septimo Iacobi Regis<note type="marginal" place="foot">Iurat<ex>us</ex>...Regis: <hi rend="italic">'Sworn on 23 May in the seventh year (of the reign) of King James'</hi></note><lb/>
          <seg type="signed"><rs ref="eats:entity-263871" type="Person_Commoner">Edw<ex>ard</ex> Iones</rs></seg></note> Aunswere of S<ex>i</ex>r <rs ref="eats:entity-258319" type="Person_Gentry">Richard
         Cholmeley</rs> knight defendant to the Informac<ex>i</ex>on<lb/> of S<ex>i</ex>r <rs ref="eats:entity-263058" type="Person_Gentry">Henry Hobbard</rs>
         knight his highnesse <rs ref="eats:entity-273751" type="Collective_Office">Attorney Generall</rs></ab> <!-- KC: review office for indexing? -->
@@ -8373,7 +8373,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex> to the waites of yorke</cell>
+         <cell>It<ex>em</ex> to the <rs ref="eats:entity-275786" type="Collective_Office">waites of yorke</rs></cell>
          <cell rend="right">ij s.</cell>
         </row>
        </table>
@@ -8542,7 +8542,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> <rs ref="eats:entity-1243" type="Entertainer_Type">musicke</rs> at Newarke</cell>
+         <cell>It<ex>em</ex> <rs ref="eats:entity-1243" type="Entertainer_Type">musicke</rs> at <rs ref="eats:entity-252105" type="Place_PA_Settlement">Newarke</rs></cell>
          <cell rend="right">ij s.</cell>
         </row>
         <row>
@@ -8561,7 +8561,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex> to the waytes of westm<ex>orland</ex></cell>
+         <cell>It<ex>em</ex> to the <rs ref="eats:entity-280895" type="Collective_Office">waytes of westm<ex>orland</ex></rs></cell>
          <cell rend="right">ij s.</cell>
         </row>
        </table>
@@ -8634,7 +8634,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex><note type="marginal" place="margin_left">Buntingford</note> satterday
+         <cell>It<ex>em</ex><note type="marginal" place="margin_left"><rs ref="eats:entity-250185" type="Place_PA_Settlement">Buntingford</rs></note> satterday
           night and sunday morning at Buntinford</cell>
          <cell rend="right">xiij s. vij d.</cell>
         </row>
@@ -8654,7 +8654,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex> to the waites at york</cell>
+         <cell>It<ex>em</ex> to the <rs ref="eats:entity-275786" type="Collective_Office">waites at york</rs></cell>
          <cell rend="right">ij s.</cell>
         </row>
        </table>
@@ -8694,18 +8694,18 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNZDV8">YNZDV8</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp280150392-transcription">
       <div>
-       <head>f [197] <supplied>(16 December) (<rs ref="http://ereed.library.utoronto.ca/eats/entity/250463/" type="Place_PA_Settlement">Doncaster</rs>, Newark-on-Trent) (<rs ref="eats:entity-276521" type="Person_Commoner">John Seaton</rs>'s disbursements)</supplied></head>
+       <head>f [197] <supplied>(16 December) (<rs ref="http://ereed.library.utoronto.ca/eats/entity/250463/" type="Place_PA_Settlement">Doncaster</rs>, <rs ref="eats:entity-252105" type="Place_PA_Settlement">Newark-on-Trent</rs>) (<rs ref="eats:entity-276521" type="Person_Commoner">John Seaton</rs>'s disbursements)</supplied></head>
        <pb n="[197]" type="folio"/>
 
        <gap reason="omitted"/>
 
        <table>
         <row>
-         <cell>It<ex>em</ex> to the wayts at Doncaster</cell>
+         <cell>It<ex>em</ex> to the <rs ref="eats:entity-276180" type="Collective_Office">wayts at Doncaster</rs></cell>
          <cell rend="right">ij s.</cell>
         </row>
         <row>
-         <cell><gap reason="omitted"/><note type="marginal" place="margin_left">Newarke.</note></cell>
+         <cell><gap reason="omitted"/><note type="marginal" place="margin_left"><rs ref="eats:entity-252105" type="Place_PA_Settlement">Newarke</rs>.</note></cell>
         </row>
         <row>
          <cell>to the <rs ref="eats:entity-1243" type="Entertainer_Type">Musytiones</rs></cell>
@@ -8748,7 +8748,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex><note type="marginal" place="margin_left">grantha<ex>m</ex></note> to
+         <cell>It<ex>em</ex><note type="marginal" place="margin_left"><rs ref="eats:entity-123925" type="Place_PA_Settlement">grantha<ex>m</ex></rs></note> to
           the Musytioners</cell>
          <cell rend="right">ij s.</cell>
         </row>
@@ -10517,7 +10517,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell rend="right">xvi s. viij d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> for <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyne</rs> &amp; <rs ref="eats:entity-40978" type="Thing_FoodDrink">suger</rs></cell>
+         <cell>I<ex>tem</ex> for <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyne</rs> &amp; suger</cell>
          <cell rend="right">iiij s. viij d.</cell>
         </row>
         <row>
@@ -10588,7 +10588,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell rend="right">xvj s.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyn</rs> and <rs ref="eats:entity-40978" type="Thing_FoodDrink">suger</rs></cell>
+         <cell>I<ex>tem</ex> <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyn</rs> and suger</cell>
          <cell rend="right">v s. iiij d.</cell>
         </row>
         <row>
@@ -10613,20 +10613,20 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp269270008-transcription">
       <div>
-       <head>f [7] <supplied>(7 January) (Accounts of Matthew Metcalf)</supplied></head>
+       <head>f [7] <supplied>(7 January) (Accounts of <rs ref="eats:entity-280825" type="Person_Commoner">Matthew Metcalf</rs>, warden)</supplied></head>
        <pb n="[7]" type="folio"/>
 
        <gap reason="omitted"/>
 
-       <ab>Mony disborsed by the sayd Warden</ab>
+       <ab>Mony disborsed by the sayd <rs ref="eats:entity-280825" type="Person_Commoner">Warden</rs></ab>
 
        <table>
         <row>
-         <cell>I<ex>tem</ex> payd att the Warden din<ex>n</ex>er</cell>
+         <cell>I<ex>tem</ex> payd att the <rs ref="eats:entity-280055" type="Collective_Office">Warden</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">din<ex>n</ex>er</rs></cell>
          <cell rend="right">xvij s. iiij d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> for wyne <del>after</del> at dinner</cell>
+         <cell>I<ex>tem</ex> for <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyne</rs> <del>after</del> at dinner</cell>
          <cell rend="right">ij s.</cell>
         </row>
         <row>
@@ -10634,11 +10634,11 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell rend="right">iij s. iiij d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> to the wayt<ex>es</ex></cell>
+         <cell>I<ex>tem</ex> to the <rs ref="eats:entity-276058" type="Collective_Office">wayt<ex>es</ex></rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> to the harp<ex>er</ex></cell>
+         <cell>I<ex>tem</ex> to the <rs ref="eats:entity-30189" type="Entertainer_Type">harp<ex>er</ex></rs></cell>
          <cell rend="right"><del><damage><gap unit="chars" extent="1"/></damage></del> iiij
           d.</cell>
         </row>
@@ -10648,7 +10648,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       </div>
      </div>
      <div type="endnote">
-      <p> 1597–8 were plague years, with 1076 deaths in <rs ref="http://ereed.library.utoronto.ca/eats/entity/252312/" type="Place_PA_Settlement">Richmond</rs>, so the annual guild feast was not held (Waggett, 'Minute Books,' p ii). </p>
+      <p> 1597–8 were plague years, with 1076 deaths in <rs ref="http://ereed.library.utoronto.ca/eats/entity/252312/" type="Place_PA_Settlement">Richmond</rs>, so the annual guild <rs ref="eats:entity-40561" type="Entertainment_Type">feast</rs> was not held (Waggett, 'Minute Books,' p ii). </p>
      </div>
     </body>
    </text>
@@ -10659,7 +10659,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp269290744-transcription">
       <div>
-       <head>f [8] col 2 <supplied>(7 January) (Accounts of John Metcalf, warden)</supplied></head>
+       <head>f [8] col 2 <supplied>(7 January) (Accounts of <rs ref="eats:entity-280932" type="Person_Commoner">John Metcalf</rs>, <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[8]" type="folio"/>
 
        <gap reason="omitted"/>
@@ -10668,11 +10668,11 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>I<ex>tem</ex> at Tho<ex>mas</ex> Lodg dinner to the wayt<ex>es</ex></cell>
+         <cell>I<ex>tem</ex> at <rs ref="eats:entity-281002" type="Person_Commoner">Tho<ex>mas</ex> Lodg</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs> to the <rs ref="eats:entity-276058" type="Collective_Office">wayt<ex>es</ex></rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> for wyne</cell>
+         <cell>I<ex>tem</ex> for <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyne</rs></cell>
          <cell rend="right">xvj d.</cell>
         </row>
         <row>
@@ -10685,7 +10685,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       </div>
      </div>
      <div type="endnote">
-      <p> Thomas Lodge was one of the guild's searchers. </p>
+      <p> <rs ref="eats:entity-281002" type="Person_Commoner">Thomas Lodge</rs> was one of the <rs ref="eats:entity-279826" type="Collective_GuildOccupational">guild</rs>'s searchers. </p>
      </div>
     </body>
    </text>
@@ -10696,22 +10696,22 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp269305704-transcription">
       <div>
-       <head>f [8v] <supplied>(7 January) (Accounts of Matthew Bellamy, warden)</supplied></head>
+       <head>f [8v] <supplied>(7 January) (Accounts of <rs ref="eats:entity-281067" type="Person_Commoner">Matthew Bellamy</rs>, <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[8v]" type="folio"/>
 
        <gap reason="omitted"/>
 
-       <ab>Mony disborsed by hime</ab>
+       <ab>Mony disborsed by <rs ref="eats:entity-281067" type="Person_Commoner">hime</rs></ab>
 
        <gap reason="omitted"/>
 
        <table>
         <row>
-         <cell>I<ex>tem</ex> payd for Warden dinners</cell>
+         <cell>I<ex>tem</ex> payd for <rs ref="eats:entity-280055" type="Collective_Office">Warden</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">dinners</rs></cell>
          <cell rend="right">xiij s. iiij d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> for an After shott</cell>
+         <cell>I<ex>tem</ex> for an <rs ref="eats:entity-40997" type="Thing_FoodDrink">After shott</rs></cell>
          <cell rend="right">iij s.</cell>
         </row>
         <row>
@@ -10719,7 +10719,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell rend="right">iiij s. vj d.</cell>
         </row>
         <row>
-         <cell>Item payd the wayt<ex>es</ex></cell>
+         <cell>Item payd the <rs ref="eats:entity-276058" type="Collective_Office">wayt<ex>es</ex></rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
        </table>
@@ -10736,8 +10736,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp269312424-transcription">
       <div>
-       <head>f [9] col 2 <supplied>(8 January) (Accounts of William Skayff,
-        warden)</supplied></head>
+       <head>f [9] col 2 <supplied>(8 January) (Accounts of <rs ref="eats:entity-281137" type="Person_Commoner">William Skayff</rs>,
+        <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[9]" type="folio"/>
 
        <gap reason="omitted"/>
@@ -10748,11 +10748,11 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>I<ex>tem</ex> at Warden dinner</cell>
+         <cell>I<ex>tem</ex> at <rs ref="eats:entity-280055" type="Collective_Office">Warden</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs></cell>
          <cell rend="right">xiij s. iiij d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> to the wayt<ex>es</ex></cell>
+         <cell>I<ex>tem</ex> to the <rs ref="eats:entity-276058" type="Collective_Office">wayt<ex>es</ex></rs>ß</cell>
          <cell rend="right">ij s. ij d.</cell>
         </row>
        </table>
@@ -10769,31 +10769,31 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp269271256-transcription">
       <div>
-       <head>f [9v] <supplied>(11 January) (Accounts of Marmaduke Pearson, warden)</supplied></head>
+       <head>f [9v] <supplied>(11 January) (Accounts of <rs ref="eats:entity-280557" type="Person_Commoner">Marmaduke Pearson</rs>, <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[9v]" type="folio"/>
 
        <gap reason="omitted"/>
 
        <ab><add place="above">Disborsed</add><note type="foot">Disborsed: <hi rend="italic">written
           partly in left margin</hi></note>
-        <del><damage><gap unit="chars" extent="4"/></damage></del> mor by the sayd warden
-         w<ex>hi</ex>ch he payd in over plus mor than his recept of his quarteridges att the warden
-        dinner w<ex>hi</ex>ch he is to have repayd agayn by the Companye</ab>
+        <del><damage><gap unit="chars" extent="4"/></damage></del> mor by <rs ref="eats:entity-280557" type="Person_Commoner">the sayd warden</rs>
+         w<ex>hi</ex>ch he payd in over plus mor than his recept of his quarteridges att the <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>
+        <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs> w<ex>hi</ex>ch he is to have repayd agayn by the Companye</ab>
 
        <table>
         <row>
          <cell>viz.</cell>
-         <cell> I<ex>tem</ex> to the wayt<ex>es</ex></cell>
+         <cell> I<ex>tem</ex> to <rs ref="eats:entity-276058" type="Collective_Office">the wayt<ex>es</ex></rs></cell>
          <cell>xij d.</cell>
         </row>
         <row>
          <cell/>
-         <cell>I<ex>tem</ex> to henry Crook</cell>
+         <cell>I<ex>tem</ex> to <rs ref="eats:entity-281208" type="Person_Commoner">henry Crook</rs></cell>
          <cell>xij d.</cell>
         </row>
         <row>
          <cell/>
-         <cell>I<ex>tem</ex> anenst wyne</cell>
+         <cell>I<ex>tem</ex> anenst <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyne</rs></cell>
          <cell>iiij d.</cell>
         </row>
         <row>
@@ -10803,8 +10803,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       </div>
      </div>
      <div type="endnote">
-      <p> Since Crook was neither a new member nor a warden in the three years in which he is
-       reimbursed for dinner, he may have been involved in providing food and drink for the
+      <p> Since <rs ref="eats:entity-281208" type="Person_Commoner">Crook</rs> was neither a new member nor a <rs ref="eats:entity-280055" type="Collective_Office">warden</rs> in the three years in which he is
+       reimbursed for <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs>, he may have been involved in providing <rs ref="eats:entity-40978" type="Thing_FoodDrink">food</rs> and <rs ref="eats:entity-40997" type="Thing_FoodDrink">drink</rs>ß for the
        occasion. </p>
      </div>
     </body>
@@ -10816,7 +10816,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp281783144-transcription">
       <div>
-       <head>f [10] <supplied>(11 January) (Accounts of Thomas Cotes, warden)</supplied></head>
+       <head>f [10] <supplied>(11 January) (Accounts of <rs ref="eats:entity-281270" type="Person_Commoner">Thomas Cotes</rs>, <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[10]" type="folio"/>
 
        <gap reason="omitted"/>
@@ -10827,15 +10827,15 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>I<ex>tem</ex> payd att warden dinner mor than the quarteridg</cell>
+         <cell>I<ex>tem</ex> payd att <rs ref="eats:entity-280055" type="Collective_Office">warden</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs> mor than the quarteridg</cell>
          <cell rend="right">xvj d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> payd the wayt<ex>es</ex></cell>
+         <cell>I<ex>tem</ex> payd <rs ref="eats:entity-276058" type="Collective_Office">the wayt<ex>es</ex></rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> payd for wyne</cell>
+         <cell>I<ex>tem</ex> payd for <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyne</rs></cell>
          <cell rend="right">ij s</cell>
         </row>
         <row>
@@ -10856,25 +10856,25 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp281790440-transcription">
       <div>
-       <head>f [11] <supplied>(11 January) (Accounts of Matthew Bellamy, warden)</supplied></head>
+       <head>f [11] <supplied>(11 January) (Accounts of <rs ref="eats:entity-281067" type="Person_Commoner">Matthew Bellamy</rs>, <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[11]" type="folio"/>
 
-       <ab>Monye disbursed by the sayd Warden</ab>
+       <ab>Monye disbursed by <rs ref="eats:entity-281067" type="Person_Commoner">the sayd Warden</rs></ab>
 
        <gap reason="omitted"/>
 
        <table>
         <row>
-         <cell>I<ex>tem</ex> payd at thomas browels for the warden dinner</cell>
+        <cell>I<ex>tem</ex> payd at <rs ref="eats:entity-279649" type="Person_Commoner">thomas browels</rs> for the <rs ref="eats:entity-280055" type="Collective_Office">warden</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs></cell>
          <cell rend="right">xiiij s.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> payd for wyne the saym tyme</cell>
+         <cell>I<ex>tem</ex> payd for <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyne</rs> the saym tyme</cell>
          <cell rend="right">viij s.</cell>
         </row>
         <row>
          <cell>I<ex>tem</ex>
-          <del>pay</del> given the waytes</cell>
+          <del>pay</del> given <rs ref="eats:entity-276058" type="Collective_Office">the waytes</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
@@ -10887,9 +10887,9 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       </div>
      </div>
      <div type="endnote">
-      <p> The prominent Browle (Browell, Borrell, Borrele) family appears frequently in the accounts
-       of the 1580s and 1590s. Richard and Thomas Browle were both hatmakers; although <rs ref="http://ereed.library.utoronto.ca/eats/entity/252312/" type="Place_PA_Settlement">Richmond</rs> had a Cappers' guild, the Browles may have been working under the auspices of
-       the Haberdashers, Mercers, and Grocers. Thomas Browle hosted the warden's dinner on more than
+      <p> The prominent <rs ref="eats:entity-279547" type="Person_Family">Browle (Browell, Borrell, Borrele) family</rs> appears frequently in the accounts
+       of the 1580s and 1590s. <rs ref="eats:entity-279599" type="Person_Commoner">Richard</rs> and <rs ref="eats:entity-279649" type="Person_Commoner">Thomas Browle</rs> were both <rs ref="eats:entity-57919" type="Collective_Occupation">hatmakers</rs>; although <rs ref="http://ereed.library.utoronto.ca/eats/entity/252312/" type="Place_PA_Settlement">Richmond</rs> had a <rs ref="eats:entity-279872" type="Collective_GuildOccupational">Cappers' guild</rs>, the Browles may have been working under the auspices of
+       the <rs ref="eats:entity-279826" type="Collective_GuildOccupational">Mercers, Grocers and Haberdashers</rs>. Thomas Browle hosted the <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>'s <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs> on more than
        one occasion. </p>
      </div>
     </body>
@@ -10901,8 +10901,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp281815656-transcription">
       <div>
-       <head>f [11v] col 2 <supplied>(22 January) (Accounts of Matthew Bellamy,
-        warden)</supplied></head>
+       <head>f [11v] col 2 <supplied>(22 January) (Accounts of <rs ref="eats:entity-281067" type="Person_Commoner">Matthew Bellamy</rs>,
+        <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[11v]" type="folio"/>
 
        <gap reason="omitted"/>
@@ -10913,19 +10913,19 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex> to the wayt<ex>es</ex></cell>
+         <cell>It<ex>em</ex> to <rs ref="eats:entity-276058" type="Collective_Office">the wayt<ex>es</ex></rs></cell>
          <cell rend="right">xiij d</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> to Henry Crook fee</cell>
+         <cell>I<ex>tem</ex> to <rs ref="eats:entity-281208" type="Person_Commoner">Henry Crook</rs> fee</cell>
          <cell rend="right">ij s.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> to the wayt<ex>es</ex> att the warden dinner</cell>
+         <cell>I<ex>tem</ex> to <rs ref="eats:entity-276058" type="Collective_Office">the wayt<ex>es</ex></rs> att the <rs ref="eats:entity-280055" type="Collective_Office">warden</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs></cell>
          <cell rend="right">ij s.</cell>
         </row>
         <row>
-         <cell>I<ex>tem</ex> v q<ex>uar</ex>t<ex>es</ex> of sacke</cell>
+         <cell>I<ex>tem</ex> v q<ex>uar</ex>t<ex>es</ex> of <rs ref="eats:entity-40997" type="Thing_FoodDrink">sacke</rs></cell>
          <cell rend="right">v s.</cell>
         </row>
         <row>
@@ -10958,18 +10958,18 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp281822216-transcription">
       <div>
-       <head>f [12] <supplied>(30 January) (Accounts of John Metcalf, warden)</supplied></head>
+       <head>f [12] <supplied>(30 January) (Accounts of <rs ref="eats:entity-280932" type="Person_Commoner">John Metcalf</rs>, <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[12]" type="folio"/>
 
        <gap reason="omitted"/>
 
-       <ab>Mony disborsed by the sayd Warden</ab>
+       <ab>Mony disborsed by <rs ref="eats:entity-280932" type="Person_Commoner">the sayd Warden</rs></ab>
 
        <gap reason="omitted"/>
 
        <table>
         <row>
-         <cell>It<ex>em</ex> payd att our warden dinn<ex>er</ex></cell>
+         <cell>It<ex>em</ex> payd att our <rs ref="eats:entity-280055" type="Collective_Office">warden</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">dinn<ex>er</ex></rs></cell>
          <cell rend="right">xvj s.</cell>
         </row>
         <row>
@@ -10977,11 +10977,11 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell rend="right">xvj d.</cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> to the Musitions</cell>
+         <cell>It<ex>em</ex> to the <rs ref="eats:entity-1243" type="Entertainer_Type">Musitions</rs></cell>
          <cell rend="right">xij d</cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> for wyn and suger</cell>
+         <cell>It<ex>em</ex> for <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyn</rs> and suger</cell>
          <cell rend="right">iij s. x d.</cell>
         </row>
        </table>
@@ -10998,19 +10998,19 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp281847400-transcription">
       <div>
-       <head>ff [13v–14] <supplied>(7 January) (Accounts of Matthew Metcalf,
-        warden)</supplied></head>
+       <head>ff [13v–14] <supplied>(7 January) (Accounts of <rs ref="eats:entity-280825" type="Person_Commoner">Matthew Metcalf</rs>,
+        <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[13v]" type="folio"/>
 
        <gap reason="omitted"/>
 
-       <ab>Mony disborsed by hime the sayd ij yeares</ab>
+       <ab>Mony disborsed by <rs ref="eats:entity-280825" type="Person_Commoner">hime</rs> the sayd ij yeares</ab>
 
        <ab><gap reason="omitted"/><pb n="[14]" type="folio"/></ab>
 
        <table>
         <row>
-         <cell>payd att the former Warden dinner</cell>
+         <cell>payd att the former <rs ref="eats:entity-280055" type="Collective_Office">Warden</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs></cell>
          <cell rend="right">xiiij s. viij d.</cell>
         </row>
         <row>
@@ -11018,7 +11018,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell rend="right">iiij s. viij d.</cell>
         </row>
         <row>
-         <cell>payd for vij q<ex>uar</ex>t<ex>es</ex> of sacke</cell>
+         <cell>payd for vij q<ex>uar</ex>t<ex>es</ex> of <rs ref="eats:entity-40997" type="Thing_FoodDrink">sacke</rs></cell>
          <cell rend="right">vij s.</cell>
         </row>
         <row>
@@ -11026,7 +11026,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell rend="right">vij s.</cell>
         </row>
         <row>
-         <cell>given the wayt<ex>es</ex></cell>
+         <cell>given <rs ref="eats:entity-276058" type="Collective_Office">the wayt<ex>es</ex></rs></cell>
          <cell rend="right">ij s.</cell>
         </row>
         <row>
@@ -11052,7 +11052,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell rend="right">xij d.</cell>
         </row>
         <row>
-         <cell>given henry Crook for his fee</cell>
+         <cell>given <rs ref="eats:entity-281208" type="Person_Commoner">henry Crook</rs> for his fee</cell>
          <cell rend="right">iiij s.</cell>
         </row>
        </table>
@@ -11061,9 +11061,9 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       </div>
      </div>
      <div type="endnote">
-      <p> The Metcalf family was prominent in the guild's administration: Matthew served as warden
-       in 1608/9–1609/10 and was reimbursed for twenty- four meals in 1615, John was elder warden in
-       1611 and 1615, and Steven was paid as a musician in 1618. </p>
+      <p> The <rs ref="eats:entity-281354" type="Person_Family">Metcalf family</rs> was prominent in <rs ref="eats:entity-279826" type="Collective_GuildOccupational">the guild</rs>'s administration: <rs ref="eats:entity-280825" type="Person_Commoner">Matthew</rs> served as <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>
+       in 1608/9–1609/10 and was reimbursed for twenty- four meals in 1615, <rs ref="eats:entity-280932" type="Person_Commoner">John</rs> was elder warden in
+       1611 and 1615, and <rs ref="eats:entity-281381" type="Person_Commoner">Steven</rs> was paid as a <rs ref="eats:entity-1243" type="Entertainer_Type">musician</rs> in 1619. </p>
      </div>
     </body>
    </text>
@@ -11074,7 +11074,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp281882616-transcription">
       <div>
-       <head>f [15v] <supplied>(Accounts of George Skott, warden) (15 September)</supplied></head>
+       <head>f [15v] <supplied>(Accounts of <rs ref="eats:entity-281519" type="Person_Commoner">George Skott</rs>, <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>) (15 September)</supplied></head>
        <pb n="[15v]" type="folio"/>
 
        <gap reason="omitted"/>
@@ -11083,11 +11083,11 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>payd att our warden din<ex>ner</ex></cell>
+         <cell>payd att our <rs ref="eats:entity-280055" type="Collective_Office">warden</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">din<ex>ner</ex></rs></cell>
          <cell rend="right">xvj s</cell>
         </row>
         <row>
-         <cell>payd the saym tym for wyne</cell>
+         <cell>payd the saym tym for <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyne</rs></cell>
          <cell rend="right">iiij s. viij d.</cell>
         </row>
         <row>
@@ -11095,7 +11095,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell rend="right">iiij s. ij d.</cell>
         </row>
         <row>
-         <cell>payd the wayt<ex>es</ex></cell>
+         <cell>payd <rs ref="eats:entity-276058" type="Collective_Office">the wayt<ex>es</ex></rs></cell>
          <cell rend="right">ij s.</cell>
         </row>
        </table>
@@ -11112,30 +11112,30 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp281789752-transcription">
       <div>
-       <head>f [17v] col 1 <supplied>(7 January) (Accounts of John Metcalf,
-        warden)</supplied></head>
+       <head>f [17v] col 1 <supplied>(7 January) (Accounts of <rs ref="eats:entity-280932" type="Person_Commoner">John Metcalf</rs>,
+        <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[17v]" type="folio"/>
 
        <gap reason="omitted"/>
 
-       <ab>Mony Disborsed by the sayd Warden/ the yeare above sayd</ab>
+       <ab>Mony Disborsed by <rs ref="eats:entity-280932" type="Person_Commoner">the sayd Warden</rs>/ the yeare above sayd</ab>
 
        <gap reason="omitted"/>
 
        <table>
         <row>
-         <cell>payd for Drinke att Charles Cowling<ex>es</ex></cell>
+         <cell>payd for <rs ref="eats:entity-40997" type="Thing_FoodDrink">Drinke</rs> att <rs ref="eats:entity-281588" type="Person_Commoner">Charles Cowling<ex>es</ex></rs></cell>
          <cell rend="right">iiii s.</cell>
         </row>
         <row>
-         <cell>payd the wayt<ex>es</ex></cell>
+         <cell>payd the <rs ref="eats:entity-276058" type="Collective_Office">wayt<ex>es</ex></rs></cell>
          <cell rend="right">iiii d.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>payd the Minstrels &amp; for ayle</cell>
+         <cell>payd the <rs ref="eats:entity-8709" type="Entertainer_Type">Minstrels</rs> &amp; for ayle</cell>
          <cell rend="right">ij s</cell>
         </row>
         <row>
@@ -11151,7 +11151,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>payd att the warden din<ex>ner</ex></cell>
+         <cell>payd att the <rs ref="eats:entity-280055" type="Collective_Office">warden</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">din<ex>ner</ex></rs></cell>
          <cell rend="right">xiij s. iiij d.</cell>
         </row>
         <row>
@@ -11184,8 +11184,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <seg ana="taxon:YNRMGH">YNRMGH</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp281917464-transcription">
       <div>
-       <head>f [19] col 2 <supplied>(6 January) (Accounts of Ralph Bellamy,
-        warden)</supplied></head>
+       <head>f [19] col 2 <supplied>(6 January) (Accounts of <rs ref="eats:entity-281450" type="Person_Commoner">Ralph Bellamy</rs>,
+        <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>)</supplied></head>
        <pb n="[19]" type="folio"/>
 
        <gap reason="omitted"/>
@@ -11196,7 +11196,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>Att the warden dinner in wyne, ayle, &amp; the wayt<ex>es</ex></cell>
+         <cell>Att the <rs ref="eats:entity-280055" type="Collective_Office">warden</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs> in <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyne</rs>, ayle, &amp; the <rs ref="eats:entity-276058" type="Collective_Office">wayt<ex>es</ex></rs></cell>
          <cell rend="right">x s. viij d.</cell>
         </row>
         <row>
@@ -11223,7 +11223,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>paid att Chr<ex>ist</ex>offer Handley dinner<note type="foot">dinner: <hi rend="italic">held on 10 June 1618</hi></note> to the wates</cell>
+         <cell>paid att <rs ref="eats:entity-281649" type="Person_Commoner">Chr<ex>ist</ex>offer Handley</rs> <rs ref="eats:entity-40561" type="Entertainment_Type">dinner</rs><note type="foot">dinner: <hi rend="italic">held on 10 June 1618</hi></note> to the <rs ref="eats:entity-276058" type="Collective_Office">wates</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
@@ -11233,11 +11233,11 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>paid for 24 persons being vj meals at Mathew metcalf</cell>
+         <cell>paid for 24 persons being vj <rs ref="eats:entity-40978" type="Thing_FoodDrink">meals</rs> at <rs ref="eats:entity-280825" type="Person_Commoner">Mathew metcalf</rs></cell>
          <cell rend="right">xvj s.</cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> for after shott for drinck same folks</cell>
+         <cell>It<ex>em</ex> for after shott for <rs ref="eats:entity-40997" type="Thing_FoodDrink">drinck</rs> same folks</cell>
          <cell rend="right">iiij s.</cell>
         </row>
         <row>
@@ -11249,7 +11249,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell rend="right">xviij d.</cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> paid to steven metcalf musician</cell>
+         <cell>It<ex>em</ex> paid to <rs ref="eats:entity-281381" type="Person_Commoner">steven metcalf</rs> <rs ref="eats:entity-1243" type="Entertainer_Type">musician</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
        </table>
@@ -11258,11 +11258,11 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       </div>
      </div>
      <div type="endnote">
-      <p> The Metcalf family was closely involved in the administration of the guild; Matthew was a
-       freeman from 1614, John was elder warden in 1615, and Stephen was paid several time as a
-       musician in 1618.</p>
+      <p> The <rs ref="eats:entity-281354" type="Person_Family">Metcalf family</rs> was closely involved in the administration of <rs ref="eats:entity-279826" type="Collective_GuildOccupational">the guild</rs>; <rs ref="eats:entity-280825" type="Person_Commoner">Matthew</rs> was a
+       freeman from 1614, <rs ref="eats:entity-280932" type="Person_Commoner">John</rs> was elder warden in 1615, and <rs ref="eats:entity-281381" type="Person_Commoner">Steven</rs> was paid several time as a
+       <rs ref="eats:entity-1243" type="Entertainer_Type">musician</rs> in 1619.</p>
 
-      <p> Christopher Handley (f <del>21v</del>) was one of the guild's searchers in 1618. </p>
+      <p> <rs ref="eats:entity-281649" type="Person_Commoner">Christopher Handley</rs> (f <del>21v</del>) was one of the guild's searchers in 1618. </p>
      </div>
     </body>
    </text>
@@ -11277,18 +11277,18 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
        <pb n="135" type="folio"/>
 
        <ab>T<ex>ermin</ex>is Hillar<ex>ij</ex> Anno r<ex>egni</ex> r<ex>egis</ex>
-        <damage><gap unit="chars" extent="8"/></damage> xxxv Ioh<damage><gap unit="chars" extent="3"/></damage> &amp; Ric<ex>ardus</ex> Henrison Ball<damage><gap unit="chars" extent="3"/></damage><note type="foot"><damage><gap unit="chars" extent="8"/></damage> … <damage><gap unit="chars" extent="3"/></damage>: <hi rend="italic">letters lost to trimming at top of
+        <damage><gap unit="chars" extent="8"/></damage> xxxv Ioh<damage><gap unit="chars" extent="3"/></damage> &amp; <rs ref="eats:entity-281802" type="Person_Commoner">Ric<ex>ardus</ex> Henrison</rs> Ball<damage><gap unit="chars" extent="3"/></damage><note type="foot"><damage><gap unit="chars" extent="8"/></damage> … <damage><gap unit="chars" extent="3"/></damage>: <hi rend="italic">letters lost to trimming at top of
           leaf</hi></note></ab>
 
        <ab>Memorand<ex>um</ex> q<ex>uo</ex>d xviij Die Decembr<ex>is</ex> A<ex>nn</ex>o
-         r<ex>egni</ex> r<ex>egis</ex> henr<ex>ici</ex> sexto post conque<ex>stum</ex> xxxv<hi rend="superscript">to</hi> Thomas Wylson mynstrell<ex>us</ex> Iurat<ex>us</ex> est ad
-         p<ex>ro</ex>mend<ex>um</ex> Balliuo<ex>rum</ex> &amp; Co<ex>mmuni</ex>tati<note type="foot">Co<ex>mmuni</ex>ati: <hi rend="italic">for</hi> communitatis <hi rend="italic">(?)</hi></note> ville de <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scareburgh</rs> videl<ex>i</ex>c<ex>et</ex> Ioh<ex>anni</ex> lambert &amp;
-        Ric<ex>ard</ex>i Henryson in Offic<ex>ium</ex> de le Wayte d<ex>i</ex>c<ex>t</ex>i ville
+        r<ex>egni</ex> r<ex>egis</ex> henr<ex>ici</ex> sexto post conque<ex>stum</ex> xxxv<hi rend="superscript">to</hi> <rs ref="eats:entity-281898" type="Person_Commoner">Thomas Wylson</rs> <rs ref="eats:entity-8709" type="Entertainer_Type">mynstrell<ex>us</ex></rs> Iurat<ex>us</ex> est ad
+         p<ex>ro</ex>mend<ex>um</ex> Balliuo<ex>rum</ex> &amp; Co<ex>mmuni</ex>tati<note type="foot">Co<ex>mmuni</ex>ati: <hi rend="italic">for</hi> communitatis <hi rend="italic">(?)</hi></note> ville de <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scareburgh</rs> videl<ex>i</ex>c<ex>et</ex> <rs ref="eats:entity-281741" type="Person_Commoner">Ioh<ex>anni</ex> lambert</rs> &amp;
+        Ric<ex>ard</ex>i Henryson in Offic<ex>ium</ex> de le <rs ref="eats:entity-281714" type="Collective_Office">Wayte</rs> d<ex>i</ex>c<ex>t</ex>i ville
         bene &amp; fidelit<ex>er</ex> p<ex>er</ex> annu<ex>m</ex> p<ex>ro</ex>x<ex>imum</ex>
          seruient<ex>es</ex><note type="foot">seruient<ex>es</ex>: <hi rend="italic">for</hi>
          seruiens</note> Et matheus alleston de Scareburgh coram d<ex>i</ex>c<ex>t</ex>is
          Ball<ex>iu</ex>is donauit plegiu<ex>m</ex> p<ex>re</ex>d<ex>ict</ex>o Thome p<ex>ro</ex>
-        colerio suo sub pena xli s. soluend<ex>a</ex> d<ex>i</ex>c<ex>t</ex>is Ball<ex>iu</ex>is
+        <rs ref="eats:entity-42646" type="Thing_LiveryRegalia">colerio</rs> suo sub pena xli s. soluend<ex>a</ex> d<ex>i</ex>c<ex>t</ex>is Ball<ex>iu</ex>is
         &amp; Co<ex>mmuni</ex>tati &amp;c</ab>
 
        <gap reason="omitted"/>
@@ -11328,9 +11328,9 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell> Christofer Jenyson<lb/> Chr<ex>istof</ex>er Jackson<lb/> henry Robynson<note type="foot">Chrisofer … Robynson: <hi rend="italic">names bracketed on the
+         <cell> <rs ref="eats:entity-283267" type="Person_StatusOther">Christofer Jenyson</rs><lb/> <rs ref="eats:entity-281967" type="Person_Commoner">Chr<ex>istof</ex>er Jackson</rs><lb/> <rs ref="eats:entity-282036" type="Person_Commoner">henry Robynson</rs><note type="foot">Christofer … Robynson: <hi rend="italic">names bracketed on the
            right</hi></note></cell>
-         <cell>appoynted to be the Wates at <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scareburgh</rs> for this year and to Dewid the wag<ex>es</ex> in ther
+         <cell>appoynted to be the <rs ref="eats:entity-281714" type="Collective_Office">Wates</rs> at <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scareburgh</rs> for this year and to Dewid the wag<ex>es</ex> in ther
            p<ex>ar</ex>t<ex>es</ex>.</cell>
         </row>
        </table>
@@ -11352,12 +11352,12 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <gap reason="omitted"/>
 
-       <ab>M<ex>emoran</ex>d<ex>um</ex> that Mr Robart lacy do<note type="foot">do: <hi rend="italic">for</hi> doth</note> stand bound for Christofer Johnson one of the wates of
-        Scareburgh that he shall trewly do his s<ex>er</ex>vice and to delyu<ex>er</ex> his
-         congnissat<ex>es</ex> or badge to the sa<ex>i</ex>d Bailiff<ex>es</ex> agane. at mychelmes
+       <ab>M<ex>emoran</ex>d<ex>um</ex> that Mr <rs ref="eats:entity-282105" type="Person_Commoner">Robart lacy</rs> do<note type="foot">do: <hi rend="italic">for</hi> doth</note> stand bound for <rs ref="eats:entity-282166" type="Person_Commoner">Christofer Johnson</rs> one of the <rs ref="eats:entity-281714" type="Collective_Office">wates of
+        Scareburgh</rs> that he shall trewly do his s<ex>er</ex>vice and to delyu<ex>er</ex> his
+         <rs ref="eats:entity-42646" type="Thing_LiveryRegalia">congnissat<ex>es</ex> or badge</rs> to the sa<ex>i</ex>d Bailiff<ex>es</ex> agane. at mychelmes
         next/</ab>
 
-       <ab>M<ex>emoran</ex>d<ex>um</ex> that Iohn Wolf doth stand bond for henry Robynson wate that
+       <ab>M<ex>emoran</ex>d<ex>um</ex> that <rs ref="eats:entity-282235" type="Person_Commoner">Iohn Wolf</rs> doth stand bond for <rs ref="eats:entity-282036" type="Person_Commoner">henry Robynson</rs> wate that
         shall trewly do his s<ex>er</ex>vice and that he shall delyu<ex>er</ex> in his badge at
         mychelmes next to the Bailiff<ex>es</ex></ab>
 
@@ -11380,7 +11380,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>paid to the olde wayte</cell>
+         <cell>paid to the olde <rs ref="eats:entity-281714" type="Collective_Office">wayte</rs></cell>
          <cell rend="right">0 - 12 - 0</cell>
         </row>
        </table>
@@ -11404,9 +11404,9 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>To him <del>Thomas Chappell</del> for 4 ya<ex>rds</ex> and a half, of broad
-            <damage><gap unit="chars" extent="1"/></damage>ead for 3 lyu<ex>er</ex>ies for the
-          Waites, at 8<hi rend="superscript">s</hi> p<ex>er</ex> yard</cell>
+         <cell>To him <del><rs ref="eats:entity-282296" type="Person_Commoner">Thomas Chappell</rs></del> for 4 ya<ex>rds</ex> and a half, of broad
+            <damage><gap unit="chars" extent="1"/></damage>ead for 3 <rs ref="eats:entity-43439" type="Thing_LiveryRegalia">lyu<ex>er</ex>ies</rs> for the
+          <rs ref="eats:entity-281714" type="Collective_Office">Waites</rs>, at 8<hi rend="superscript">s</hi> p<ex>er</ex> yard</cell>
          <cell rend="right">01. 16. 00</cell>
         </row>
        </table>
@@ -11430,8 +11430,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex> payd to Richard Thompson for a remander of a reckoning for the wayts
-          Cotes</cell>
+         <cell>It<ex>em</ex> payd to <rs ref="eats:entity-282357" type="Person_Commoner">Richard Thompson</rs> for a remander of a reckoning for the <rs ref="eats:entity-281714" type="Collective_Office">wayts</rs>
+          <rs ref="eats:entity-147358" type="Thing_LiveryRegalia">Cotes</rs></cell>
          <cell rend="right">00 - 08 - 08</cell>
         </row>
        </table>
@@ -11455,7 +11455,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex> p<ex>ai</ex>d for mending the drum</cell>
+         <cell>It<ex>em</ex> p<ex>ai</ex>d for mending the <rs ref="eats:entity-41063" type="Thing_MusicalInstrument">drum</rs></cell>
          <cell rend="right">0 - 4 - 0</cell>
         </row>
        </table>
@@ -11479,7 +11479,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>Ite<ex>m</ex> paid for the waites Liueries to Edward Hurst</cell>
+         <cell>Ite<ex>m</ex> paid for the <rs ref="eats:entity-281714" type="Collective_Office">waites</rs> <rs ref="eats:entity-43439" type="Thing_LiveryRegalia">Liueries</rs> to <rs ref="eats:entity-282418" type="Person_Commoner">Edward Hurst</rs></cell>
          <cell rend="right">1 - 1 - 0</cell>
         </row>
        </table>
@@ -11503,7 +11503,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex> for the waytes Cotes to Edward Hurste</cell>
+         <cell>It<ex>em</ex> for the <rs ref="eats:entity-281714" type="Collective_Office">waytes</rs> <rs ref="eats:entity-147358" type="Thing_LiveryRegalia">Cotes</rs> to <rs ref="eats:entity-282418" type="Person_Commoner">Edward Hurste</rs></cell>
          <cell rend="right">1 - 4 - 0</cell>
         </row>
        </table>
@@ -11527,7 +11527,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>p<ex>ai</ex>d for the wait<ex>es</ex> cotes, an old remaynd<ex>er</ex></cell>
+         <cell>p<ex>ai</ex>d for the <rs ref="eats:entity-281714" type="Collective_Office">wait<ex>es</ex></rs> <rs ref="eats:entity-147358" type="Thing_LiveryRegalia">cotes</rs>, an old remaynd<ex>er</ex></cell>
          <cell rend="right">00 - 04. - 00</cell>
         </row>
        </table>
@@ -11551,7 +11551,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>paid for the Wattes Coats</cell>
+         <cell>paid for the <rs ref="eats:entity-281714" type="Collective_Office">Wattes</rs> <rs ref="eats:entity-147358" type="Thing_LiveryRegalia">Coats</rs></cell>
          <cell rend="right">00 - 19 - 10</cell>
         </row>
        </table>
@@ -11575,7 +11575,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>p<ex>ai</ex>d for the Waites Lyueries</cell>
+         <cell>p<ex>ai</ex>d for the <rs ref="eats:entity-281714" type="Collective_Office">Waites</rs> <rs ref="eats:entity-43439" type="Thing_LiveryRegalia">Lyueries</rs></cell>
          <cell rend="right">xxiiij s.</cell>
         </row>
        </table>
@@ -11599,8 +11599,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex> paid for ye Sergant<ex>es</ex> clookes and ye wait<ex>es</ex>
-           coot<ex>es</ex></cell>
+         <cell>It<ex>em</ex> paid for ye Sergant<ex>es</ex> <rs ref="eats:entity-147358" type="Thing_LiveryRegalia">clookes</rs> and ye <rs ref="eats:entity-281714" type="Collective_Office">wait<ex>es</ex></rs>
+           <rs ref="eats:entity-147358" type="Thing_LiveryRegalia">coot<ex>es</ex></rs></cell>
          <cell rend="right">5 - 7 - 9</cell>
         </row>
        </table>
@@ -11624,7 +11624,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex> for a drum stringe</cell>
+         <cell>It<ex>em</ex> for a <rs ref="eats:entity-41063" type="Thing_MusicalInstrument">drum</rs> stringe</cell>
          <cell rend="right">0 - 0 - 4</cell>
         </row>
        </table>
@@ -11648,7 +11648,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex> more for a dromme stringe</cell>
+         <cell>It<ex>em</ex> more for a <rs ref="eats:entity-41063" type="Thing_MusicalInstrument">dromme</rs> stringe</cell>
          <cell rend="right"> 00</cell>
          <cell> 00</cell>
          <cell> 04</cell>
@@ -11674,7 +11674,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>It<ex>em</ex> payed to Christo<ex>pher</ex> Thompson for ye waites Lyveries</cell>
+         <cell>It<ex>em</ex> payed to <rs ref="eats:entity-282515" type="Person_Commoner">Christo<ex>pher</ex> Thompson</rs> for ye <rs ref="eats:entity-281714" type="Collective_Office">waites</rs> <rs ref="eats:entity-43439" type="Thing_LiveryRegalia">Lyveries</rs></cell>
          <cell rend="right">02 - 11 - 00</cell>
         </row>
        </table>
@@ -11682,6 +11682,12 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
        <gap reason="omitted"/>
       </div>
      </div>
+     <div type="endnote">
+      <p> <rs ref="eats:entity-282515" type="Person_Commoner">Christopher Thompson</rs>, <rs ref="eats:entity-39060" type="Collective_Occupation">draper</rs> and merchant <rs ref="eats:entity-14062" type="Collective_Occupation">tailor</rs>, served as senior bailiff in 1637 and
+       1644, but it seems more likely that he is being paid for making the <rs ref="eats:entity-281714" type="Collective_Office">waits</rs>' <rs ref="eats:entity-43439" type="Thing_LiveryRegalia">liveries</rs> than in
+       his administrative capacity (Corporation Minute Book 1621–49, NYCRO DC/SCB II/1/1/1). </p>
+     </div>
+     
     </body>
    </text>
    <text type="record" xml:id="yksnr-ridp282287064">
@@ -11694,7 +11700,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
        <head>single sheet <supplied>(29 September–29 September)</supplied></head>
        <pb n="1" type="sheet"/>
 
-       <ab>A not off wyn &amp; other Chargdes Delyvered to <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Towne</rs> &amp; in Baylffes house the 5<hi rend="superscript">th</hi> off November
+       <ab>A not off <rs ref="eats:entity-40997" type="Thing_FoodDrink">wyn</rs> &amp; other Chargdes Delyvered to <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Towne</rs> &amp; in Baylffes house the 5<hi rend="superscript">th</hi> off November
         1633</ab>
 
        <table>
@@ -11704,12 +11710,12 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell rend="right">ij li. ij s. 0 d.</cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> after Dyner in the after Nown in Win &amp; a q<ex>uar</ex>t off
+         <cell>It<ex>em</ex> after <rs ref="eats:entity-40561" type="Entertainment_Type">Dyner</rs> in the after Nown in Win &amp; a q<ex>uar</ex>t off
           sayk</cell>
          <cell rend="right">0 iii s. vj d.</cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> more giuen to the Meusyck in Mony <del>&amp; wyne</del>
+         <cell>It<ex>em</ex> more giuen to the <rs ref="eats:entity-1243" type="Entertainer_Type">Meusyck</rs> in Mony <del>&amp; wyne</del>
           <add place="above">to the Seargent<ex>es</ex></add></cell>
          <cell rend="right">iij<note type="foot">iij: <hi rend="italic">ie, </hi>iij s.</note> vj
           d.</cell>
@@ -11718,7 +11724,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> mor the waytts Lyver<ex>es</ex> ffor Clook<ex>es</ex></cell>
+         <cell>It<ex>em</ex> mor the <rs ref="eats:entity-281714" type="Collective_Office">waytts</rs> <rs ref="eats:entity-43439" type="Thing_LiveryRegalia">Lyver<ex>es</ex></rs> ffor <rs ref="eats:entity-147358" type="Thing_LiveryRegalia">Clook<ex>es</ex></rs></cell>
          <cell rend="right">ij li. ix s. vj d.</cell>
         </row>
        </table>
@@ -11742,8 +11748,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <table>
         <row>
-         <cell>p<ex>ai</ex>d to chr<ex>ist</ex>o<ex>pher</ex> for the waites
-          lyu<ex>er</ex>yes</cell>
+         <cell>p<ex>ai</ex>d to <rs ref="eats:entity-282515" type="Person_Commoner">chr<ex>ist</ex>o<ex>pher</ex></rs> for the <rs ref="eats:entity-281714" type="Collective_Office">waites</rs>
+          <rs ref="eats:entity-43439" type="Thing_LiveryRegalia">lyu<ex>er</ex>yes</rs></cell>
          <cell rend="right"><add place="above">2 li.</add> 10 s.</cell>
         </row>
        </table>
@@ -11752,8 +11758,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       </div>
      </div>
      <div type="endnote">
-      <p> Christopher Thompson, draper and merchant tailor, served as senior bailiff in 1637 and
-       1644, but it seems more likely that he is being paid for making the waits' liveries than in
+      <p> <rs ref="eats:entity-282515" type="Person_Commoner">Christopher Thompson</rs>, <rs ref="eats:entity-39060" type="Collective_Occupation">draper</rs> and merchant <rs ref="eats:entity-14062" type="Collective_Occupation">tailor</rs>, served as senior bailiff in 1637 and
+       1644, but it seems more likely that he is being paid for making the <rs ref="eats:entity-281714" type="Collective_Office">waits</rs>' <rs ref="eats:entity-43439" type="Thing_LiveryRegalia">liveries</rs> than in
        his administrative capacity (Corporation Minute Book 1621–49, NYCRO DC/SCB II/1/1/1). </p>
      </div>
     </body>
