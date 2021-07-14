@@ -12554,8 +12554,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
        <table>
         <row>
          <cell><foreign xml:lang="lat">Officiu<ex>m</ex> d<ex>omi</ex>ni Con<ex>tra</ex>
-            ffran<ex>cis</ex>cu<ex>m</ex> Boyes</foreign><note type="foot">Officiu<ex>m</ex> …
-           Boyes: <hi rend="italic">Office of the lord (judge) against Francis Boyes'</hi></note>
+            <rs ref="eats:entity-284259" type="Person_StatusOther">ffran<ex>cis</ex>cu<ex>m</ex> Boyes</rs></foreign><note type="foot">Officiu<ex>m</ex> …
+           Boyes: <hi rend="italic">Office of the lord (judge) against <rs ref="eats:entity-284259" type="Person_StatusOther">Francis Boyes</rs>'</hi></note>
           for keeping Company to drinck Revell and make much disorder in his house vpon the Saboath
           Day in <del>at</del> morning praier time being the x of Iuly Last<note type="foot">x …
            Last: <hi rend="italic">10 July 1615 fell on a Monday</hi></note></cell>
@@ -12583,21 +12583,21 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
        <ab>Iurat<ex>ores</ex><note type="foot">Iurat<ex>ores</ex>: <hi rend="italic">in display
           script</hi></note> p<ex>ro</ex> d<ex>omi</ex>no Rege sup<ex>er</ex>
          Sacr<ex>a</ex>m<ex>entum</ex> suu<ex>m</ex> p<ex>rese</ex>ntant q<ex>uo</ex>d
-         Ric<ex>ard</ex>us dawson de<note type="marginal" place="margin_left">Ric<ex>ard</ex>us
-         Dawson<lb/><handShift/>finis <damage><gap unit="chars" extent="2"/></damage>
-          infra:<handShift/><lb/>Rob<ex>ertus</ex> Simpson<lb/> Ric<ex>ardus</ex> Hudson<lb/>
-          Ed<ex>wa</ex>r<ex>dus</ex> Lister<note type="foot">Ric<ex>ardus</ex> … Lister: <hi rend="italic">2 names joined by right bracket</hi></note><note type="foot">Ric<ex>ardus</ex> … Lister: <hi rend="italic">all names in display script</hi></note><lb/>
-         <handShift/><foreign xml:lang="eng">these 2 Last bound by Recogniz<ex>ance</ex> annexed to the Roll not to play
-         Interludes any more &amp;c./</foreign><handShift/></note>
+         <rs ref="eats:entity-284320" type="Person_StatusOther">Ric<ex>ard</ex>us dawson</rs> de<note type="marginal" place="margin_left"><rs ref="eats:entity-284320" type="Person_StatusOther">Ric<ex>ard</ex>us
+         Dawson</rs><lb/><handShift/>finis <damage><gap unit="chars" extent="2"/></damage>
+          infra:<handShift/><lb/><rs ref="eats:entity-256190" type="Person_Commoner">Rob<ex>ertus</ex> Simpson</rs><lb/> <rs ref="eats:entity-254255" type="Person_Commoner">Ric<ex>ardus</ex> Hudson</rs><lb/>
+          <rs ref="eats:entity-254518" type="Person_Commoner">Ed<ex>wa</ex>r<ex>dus</ex> Lister</rs><note type="foot">Ric<ex>ardus</ex> … Lister: <hi rend="italic">2 names joined by right bracket</hi></note><note type="foot">Ric<ex>ardus</ex> … Lister: <hi rend="italic">all names in display script</hi></note><lb/>
+          <handShift/><foreign xml:lang="eng">these 2 Last bound by Recogniz<ex>ance</ex> annexed to the Roll not <rs ref="eats:entity-8782" type="Entertainer_Type">to play</rs>
+         <rs ref="eats:entity-40398" type="Drama_Type">Interludes</rs> any more &amp;c./</foreign><handShift/></note>
         <rs ref="http://ereed.library.utoronto.ca/eats/entity/253080/" type="Place_PA_Settlement">Stokesley</rs> in Le <foreign xml:lang="eng"><rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">Northr<ex>iding</ex></rs></foreign>
          Com<ex>itatus</ex> Ebor<ex>aci</ex>
-        <foreign xml:lang="eng">Tanner</foreign> Constabular<ex>ius</ex> eiusd<ex>e</ex>m ville de
-        Stokesley tunc existens et sciens Rob<ex>er</ex>tum Simpson de <rs ref="http://ereed.library.utoronto.ca/eats/entity/253034/" type="Place_PA_Settlement">Staythes</rs> in d<ex>i</ex>c<ex>t</ex>o <foreign xml:lang="eng">Northridd<ex>ing</ex></foreign> Com<ex>itatus</ex> p<ex>re</ex>d<ex>icti</ex> shomaker
-         Ric<ex>ard</ex>um hudson de <rs ref="http://ereed.library.utoronto.ca/eats/entity/251368/" type="Place_PA_Settlement">hutton bushell</rs> in d<ex>i</ex>c<ex>t</ex>o <foreign xml:lang="eng">Northr<ex>iding</ex></foreign> Com<ex>itatus</ex> Ebor<ex>aci</ex>
-        <foreign xml:lang="eng">weaver</foreign> Ed<ex>wa</ex>r<ex>d</ex>um Lister de <rs ref="http://ereed.library.utoronto.ca/eats/entity/249479/" type="Place_PA_Settlement">Allerston</rs> in d<ex>i</ex>c<ex>t</ex>o <foreign xml:lang="eng">Northr<ex>iding</ex></foreign> d<ex>i</ex>c<ex>t</ex>i Com<ex>itatus</ex> Ebor<ex>aci</ex>
-        <foreign xml:lang="eng">weaver</foreign> esse co<ex>mmun</ex>es histriones multis in Locis,
-        hac illac passim vagantes, Ludicra<note type="foot">Ludicra: i <hi rend="italic">and</hi> r
-          <hi rend="italic">written over other letters</hi></note> Ludentes, anglice <foreign xml:lang="eng">Com<ex>m</ex>on players of Interludes wandering vp &amp; downe in many
+        <foreign xml:lang="eng"><rs ref="eats:entity-38973" type="Collective_Occupation">Tanner</rs></foreign> Constabular<ex>ius</ex> eiusd<ex>e</ex>m ville de
+        Stokesley tunc existens et sciens <rs ref="eats:entity-256190" type="Person_Commoner">Rob<ex>er</ex>tum Simpson</rs> de <rs ref="http://ereed.library.utoronto.ca/eats/entity/253034/" type="Place_PA_Settlement">Staythes</rs> in d<ex>i</ex>c<ex>t</ex>o <foreign xml:lang="eng">Northridd<ex>ing</ex></foreign> Com<ex>itatus</ex> p<ex>re</ex>d<ex>icti</ex> <rs ref="eats:entity-54884" type="Collective_Occupation">shomaker</rs>
+         <rs ref="eats:entity-254255" type="Person_Commoner">Ric<ex>ard</ex>um hudson</rs> de <rs ref="http://ereed.library.utoronto.ca/eats/entity/251368/" type="Place_PA_Settlement">hutton bushell</rs> in d<ex>i</ex>c<ex>t</ex>o <foreign xml:lang="eng">Northr<ex>iding</ex></foreign> Com<ex>itatus</ex> Ebor<ex>aci</ex>
+        <foreign xml:lang="eng"><rs ref="eats:entity-5732" type="Collective_Occupation">weaver</rs></foreign> <rs ref="eats:entity-254518" type="Person_Commoner">Ed<ex>wa</ex>r<ex>d</ex>um Lister</rs> de <rs ref="http://ereed.library.utoronto.ca/eats/entity/249479/" type="Place_PA_Settlement">Allerston</rs> in d<ex>i</ex>c<ex>t</ex>o <foreign xml:lang="eng">Northr<ex>iding</ex></foreign> d<ex>i</ex>c<ex>t</ex>i Com<ex>itatus</ex> Ebor<ex>aci</ex>
+        <foreign xml:lang="eng">weaver</foreign> esse co<ex>mmun</ex>es <rs ref="eats:entity-1261" type="Entertainer_Type">histriones</rs> multis in Locis,
+        hac illac passim <rs ref="eats:entity-194093" type="CrimesMisdemeanors">vagantes</rs>, <rs ref="eats:entity-8782" type="Entertainer_Type">Ludicra</rs><note type="foot">Ludicra: i <hi rend="italic">and</hi> r
+         <hi rend="italic">written over other letters</hi></note> <rs ref="eats:entity-40398" type="Drama_Type">Ludentes</rs>, anglice <foreign xml:lang="eng">Com<ex>m</ex>on players of Interludes wandering vp &amp; downe in many
           plac<ex>es</ex> playing of Interludes</foreign> Et q<ex>uo</ex>d ip<ex>s</ex>i
          Rob<ex>er</ex>tus Simpson Ric<ex>ard</ex>us Hudson Ed<ex>wa</ex>r<ex>d</ex>us Lister
          cu<ex>m</ex> multis alijs ignot<ex>is</ex> ludicra ludebant ap<ex>u</ex>d Stokesley
@@ -12607,7 +12607,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
          hib<ex>er</ex>nie Regis fidei defensor<ex>is</ex> &amp;c. Nono et Scotie xlv<hi rend="superscript">to</hi>.<note type="foot">vicesimo … xlv<hi rend="superscript">to</hi>.:
           <hi rend="italic">ie, 25 February 1611/12</hi></note> eosdem Rob<ex>er</ex>tum Simpson
          Ric<ex>ard</ex>um Hudson Ed<ex>wa</ex>r<ex>d</ex>um Lister effugere sinebat sine
-         dep<ex>re</ex>henc<ex>i</ex>one sive supplicio in Contempt<ex>u</ex>
+         dep<ex>re</ex>henc<ex>i</ex>one sive supplicio in <rs ref="eats:entity-173156" type="CrimesMisdemeanors">Contempt<ex>u</ex></rs>
         d<ex>i</ex>c<ex>t</ex>i d<ex>o</ex>m<ex>ini</ex> Reg<ex>is</ex> et con<ex>tr</ex>a
          forma<ex>m</ex> diu<ex>er</ex>sor<ex>um</ex> Statut<ex>orum</ex> inde
          p<ex>ro</ex>viso<ex>rum</ex> et edito<ex>rum</ex>./</ab>
@@ -12616,7 +12616,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <ab>Iurator<ex>es</ex><note type="foot">Iurator<ex>es</ex>: <hi rend="italic">in display
           script</hi></note> p<ex>ro</ex> D<ex>omi</ex>no Rege p<ex>rese</ex>ntant q<ex>uo</ex>d
-         Chr<ex>ist</ex>oferus Simpson nup<ex>er</ex> de <rs ref="http://ereed.library.utoronto.ca/eats/entity/250670/" type="Place_PA_Settlement">Egton</rs><note type="marginal" place="margin_left"> Chr<ex>istoferus</ex> Simpson<note type="foot">Chr<ex>istoferus</ex> Simpson: <hi rend="italic">in display
+         <rs ref="eats:entity-256058" type="Person_Commoner">Chr<ex>ist</ex>oferus Simpson</rs> nup<ex>er</ex> de <rs ref="http://ereed.library.utoronto.ca/eats/entity/250670/" type="Place_PA_Settlement">Egton</rs><note type="marginal" place="margin_left"> <rs ref="eats:entity-256058" type="Person_Commoner">Chr<ex>istoferus</ex> Simpson</rs><note type="foot">Chr<ex>istoferus</ex> Simpson: <hi rend="italic">in display
          script</hi></note></note> in <foreign xml:lang="eng">Northr<ex>iding</ex></foreign>
          Com<ex>itatus</ex> Ebor<ex>aci</ex>
         <foreign xml:lang="eng">shoemaker</foreign> est co<ex>mmun</ex>is histrio multis in Locis,
@@ -12634,7 +12634,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
         illac, passim vagatus fuit cu<ex>m</ex> multis alijs ignotis et Ludicra Ludebat
          con<ex>tr</ex>a pacem d<ex>i</ex>c<ex>t</ex>i d<ex>omi</ex>ni Regis et con<ex>tr</ex>a
          forma<ex>m</ex> diu<ex>er</ex>sor<ex>um</ex> Statutor<ex>um</ex> inde edit<ex>orum</ex> et
-         p<ex>ro</ex>uis<ex>orum</ex> Et q<ex>uo</ex>d<note type="foot">Et q<ex>uo</ex>d: <hi rend="italic">in display script</hi></note>Ric<ex>ard</ex>us dawson<note type="marginal" place="margin_left">Ric<ex>ardus</ex> dawson.<lb/>
+         p<ex>ro</ex>uis<ex>orum</ex> Et q<ex>uo</ex>d<note type="foot">Et q<ex>uo</ex>d: <hi rend="italic">in display script</hi></note>Ric<ex>ard</ex>us dawson<note type="marginal" place="margin_left"><rs ref="eats:entity-284320" type="Person_StatusOther">Ric<ex>ardus</ex> dawson</rs>.<lb/>
          <handShift/>finis .v.<hi rend="superscript">s</hi> paup<ex>er</ex>ib<ex>us</ex>
           sol<ex>vetur</ex>
          <lb/>no<ex>n</ex> ex<ex>tr</ex>ahet<ex>ur</ex>/<handShift/></note> de Stokesley
@@ -12661,8 +12661,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
        <gap reason="omitted"/>
 
        <ab>Jurors for the lord king present on their oath that Richard Dawson of<note type="marginal" place="margin_left"> Richard Dawson <lb/><handShift/>fine <damage><gap unit="chars" extent="2"/></damage> below<handShift/><lb/>Robert Simpson Richard Hudson
-         <lb/>Edward Lister <lb/>these two last bound by recognizance annexed to the roll not to
-         play interludes anymore etc.</note> Stokesley in the North Riding of Yorkshire, tanner,
+         <lb/>Edward Lister <lb/><handShift/>these two last bound by recognizance annexed to the roll not to
+         play interludes anymore etc.<handShift/></note> Stokesley in the North Riding of Yorkshire, tanner,
         being at that time constable of the same town of Stokesley and knowing Robert Simpson of
         Staythes in the said North Riding of the aforesaid county, shoemaker, Richard Hudson of
         Hutton Bushell in the said North Riding of Yorkshire, weaver, (and) Edward Lister of
@@ -12689,7 +12689,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
         everywhere and with many others unknown played interludes contrary to the peace of the said
         lord king and against the form of various statutes established and ordained concerning that
         (sort of thing). And that Richard Dawson<note type="marginal" place="margin_left">Richard
-         Dawson <lb/>A fine of 5s is paid to the poor <lb/>Not estreated</note> of Stokesley
+         Dawson <lb/><handShift/>A fine of 5s is paid to the poor <lb/>Not estreated<handShift/></note> of Stokesley
         aforesaid in the North Riding of the aforesaid county, tanner, being at that time constable
         of the same town of Stokesley and knowing the aforesaid Christopher Simpson to be a common
         entertainer, wandering here, there, (and) everywhere, playing interludes, on the said 25
@@ -12714,22 +12714,22 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
        <ab>Iurator<ex>es</ex><note type="foot">Iurator<ex>es</ex>: <hi rend="italic">in display
           script</hi></note> p<ex>ro</ex> d<ex>omi</ex>no rege super sacram<ex>entum</ex>
-         suu<ex>m</ex> p<ex>resen</ex>tant q<ex>uo</ex>d Robertus<note type="marginal" place="margin_left">Robertus Anderson<note type="foot">Robertus Anderson: <hi rend="italic">in display script</hi></note></note>Anderson de <rs ref="http://ereed.library.utoronto.ca/eats/entity/253080/" type="Place_PA_Settlement">Stokesley</rs> in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">Northridd<ex>ing</ex></rs> com<ex>itatus</ex> Ebor<ex>aci</ex>
-        <foreign xml:lang="eng">vintner</foreign> sciens Edwardu<ex>m</ex> Lister de <rs ref="http://ereed.library.utoronto.ca/eats/entity/249479/" type="Place_PA_Settlement">Allerston</rs> in in<note type="foot">in in: <hi rend="italic">dittography at beginning of
+        suu<ex>m</ex> p<ex>resen</ex>tant q<ex>uo</ex>d <rs xml:id="rs-284381-1" next="#rs-284381-2" ref="eats:entity-284381" type="Person_StatusOther">Robertus</rs><note type="marginal" place="margin_left"><rs ref="eats:entity-284381" type="Person_StatusOther">Robertus Anderson</rs><note type="foot">Robertus Anderson: <hi rend="italic">in display script</hi></note></note><rs xml:id="rs-284381-2" prev="#rs-284381-1" ref="eats:entity-284381" type="Person_StatusOther">Anderson</rs> de <rs ref="http://ereed.library.utoronto.ca/eats/entity/253080/" type="Place_PA_Settlement">Stokesley</rs> in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">Northridd<ex>ing</ex></rs> com<ex>itatus</ex> Ebor<ex>aci</ex>
+        <foreign xml:lang="eng"><rs ref="eats:entity-73720" type="Collective_Occupation">vintner</rs></foreign> sciens <rs ref="eats:entity-254518" type="Person_Commoner">Edwardu<ex>m</ex> Lister</rs> de <rs ref="http://ereed.library.utoronto.ca/eats/entity/249479/" type="Place_PA_Settlement">Allerston</rs> in in<note type="foot">in in: <hi rend="italic">dittography at beginning of
           line</hi></note> Northridd<ex>ing</ex> com<ex>itatus</ex> Ebor<ex>aci</ex>
-        <add place="below"><foreign xml:lang="eng">weaver</foreign></add> etatis quinquaginta et
-         duoru<ex>m</ex> Annoru<ex>m</ex> Rogeru<ex>m</ex> Lister de <rs ref="http://ereed.library.utoronto.ca/eats/entity/250231/" type="Place_PA_Settlement">Buttercrambe</rs> in d<ex>i</ex>c<ex>t</ex>o <foreign xml:lang="eng">Northr<ex>iding</ex></foreign> com<ex>itatus</ex> p<ex>re</ex>d<ex>icti</ex>
+        <add place="below"><foreign xml:lang="eng"><rs ref="eats:entity-5732" type="Collective_Occupation">weaver</rs></foreign></add> etatis quinquaginta et
+         duoru<ex>m</ex> Annoru<ex>m</ex> <rs ref="eats:entity-254584" type="Person_Commoner">Rogeru<ex>m</ex> Lister</rs> de <rs ref="http://ereed.library.utoronto.ca/eats/entity/250231/" type="Place_PA_Settlement">Buttercrambe</rs> in d<ex>i</ex>c<ex>t</ex>o <foreign xml:lang="eng">Northr<ex>iding</ex></foreign> com<ex>itatus</ex> p<ex>re</ex>d<ex>icti</ex>
         <foreign xml:lang="eng">weaver</foreign> etatis septem annoru<ex>m</ex> et amplius:
-         Thoma<ex>m</ex> Burdsall de <rs ref="http://ereed.library.utoronto.ca/eats/entity/253241/" type="Place_PA_Settlement">Thornton</rs> infra Lib<ex>er</ex>tat<ex>em</ex> de <rs ref="http://ereed.library.utoronto.ca/eats/entity/254147/" type="Place_PA_Liberty">Pickeringlieth</rs> in Northridd<ex>ing</ex> com<ex>itatus</ex> p<ex>re</ex>d<ex>icti</ex>
-        <foreign xml:lang="eng">weaver</foreign> etatis septem annoru<ex>m</ex> et amplius: Lucam
-        Burdsall de ead<ex>em</ex>
+         <rs ref="eats:entity-260456" type="Person_Commoner">Thoma<ex>m</ex> Burdsall</rs> de <rs ref="http://ereed.library.utoronto.ca/eats/entity/253241/" type="Place_PA_Settlement">Thornton</rs> infra Lib<ex>er</ex>tat<ex>em</ex> de <rs ref="http://ereed.library.utoronto.ca/eats/entity/254147/" type="Place_PA_Liberty">Pickeringlieth</rs> in Northridd<ex>ing</ex> com<ex>itatus</ex> p<ex>re</ex>d<ex>icti</ex>
+        <foreign xml:lang="eng">weaver</foreign> etatis septem annoru<ex>m</ex> et amplius: <rs ref="eats:entity-260589" type="Person_Commoner">Lucam
+        Burdsall</rs> de ead<ex>em</ex>
         <foreign xml:lang="eng">weaver</foreign> etatis septem annoru<ex>m</ex> et amplius:
-         Marmaducu<ex>m</ex> Paley de <rs ref="http://ereed.library.utoronto.ca/eats/entity/250139/" type="Place_PA_Settlement">Bridlington</rs> in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2435/" type="Place_County">Eastridd<ex>ing</ex></rs> com<ex>itatus</ex> Ebor<ex>aci</ex> Tailor etatis septem
-         annoru<ex>m</ex> et amplius, Robertu<ex>m</ex> Marchant de ead<ex>em</ex> Tailor etatis
-        septem annoru<ex>m</ex> et amplius et will<ex>elm</ex>u<ex>m</ex> dickonson de
-         ead<ex>em</ex> Tailor etatis septem anno<ex>rum</ex> et amplius, esse communes histriones
-        vagabundos et mendicos validos (anglice <foreign xml:lang="eng">com<ex>m</ex>on playors of
-         Enterludes vagabund<ex>es</ex> &amp; sturdie Beggars</foreign>) hac illac passim vagantes
+         <rs ref="eats:entity-260662" type="Person_Commoner">Marmaducu<ex>m</ex> Paley</rs> de <rs ref="http://ereed.library.utoronto.ca/eats/entity/250139/" type="Place_PA_Settlement">Bridlington</rs> in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2435/" type="Place_County">Eastridd<ex>ing</ex></rs> com<ex>itatus</ex> Ebor<ex>aci</ex> <rs ref="eats:entity-14062" type="Collective_Occupation">Tailor</rs> etatis septem
+         annoru<ex>m</ex> et amplius, <rs ref="eats:entity-260735" type="Person_Commoner">Robertu<ex>m</ex> Marchant</rs> de ead<ex>em</ex> Tailor etatis
+        septem annoru<ex>m</ex> et amplius et <rs ref="eats:entity-260808" type="Person_Commoner">will<ex>elm</ex>u<ex>m</ex> dickonson</rs> de
+        ead<ex>em</ex> Tailor etatis septem anno<ex>rum</ex> et amplius, esse communes <rs ref="eats:entity-1261" type="Entertainer_Type">histriones</rs>
+        <rs ref="eats:entity-194093" type="CrimesMisdemeanors">vagabundos et mendicos validos</rs> (anglice <foreign xml:lang="eng">com<ex>m</ex>on <rs ref="eats:entity-8782" type="Entertainer_Type">playors</rs> of
+         <rs ref="eats:entity-40398" type="Drama_Type">Enterludes</rs> vagabund<ex>es</ex> &amp; sturdie Beggars</foreign>) hac illac passim vagantes
         ludicra ludentes (anglice <foreign xml:lang="eng">playinge of Enterludes</foreign>) xxiij<hi rend="superscript">o</hi> die Ianuar<ex>ij</ex> Anno regni d<ex>omi</ex>ni n<ex>ost</ex>ri
         Iacobi dei gra<ex>cia</ex> Angli<ex>e</ex> ffranc<ex>ie</ex> et Hib<ex>er</ex>nie regis
         fidei defensor<ex>is</ex> &amp;c. decimo sexto et Scotie quinquagesimo secundo:<note type="foot">xxiij<hi rend="superscript">o</hi> … secundo: <hi rend="italic">ie, 23 January
@@ -12742,7 +12742,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
         Burdsall Marmaduco Paley, Rob<ex>er</ex>to Marchant et will<ex>elm</ex>o dickonson, adtunc
         et ib<ex>ide</ex>m pane<ex>m</ex>, et potu<ex>m</ex> voluntarie dedit et sinebat eos
         effugere sine dep<ex>re</ex>henc<ex>i</ex>one et sine supplicio in in<note type="foot">in
-         in: <hi rend="italic">dittography at beginning of line</hi></note> contempt<ex>u</ex>
+         in: <hi rend="italic">dittography at beginning of line</hi></note> <rs ref="eats:entity-173156" type="CrimesMisdemeanors">contempt<ex>u</ex></rs>
          d<ex>i</ex>c<ex>t</ex>i d<ex>omi</ex>ni regis: et cont<ex>ra</ex> forma<ex>m</ex>
          diversoru<ex>m</ex> statut<ex>orum</ex> in h<ex>uius</ex>modi casu
          p<ex>ro</ex>vis<ex>orum</ex> et edit<ex>orum</ex>./</ab>
