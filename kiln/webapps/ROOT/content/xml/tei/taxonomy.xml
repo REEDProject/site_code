@@ -14450,8 +14450,8 @@
                                 first <rs ref="eats:entity-289199" type="Collective_Title">Baronet Cholmley</rs>, was born at Thornton-on-the-Hill, <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North
                                 Riding</rs>, the son of <rs ref="eats:entity-258319" type="Person_Gentry">Sir Richard Cholmley</rs> (1580–1631) and his first wife <rs ref="eats:entity-287630" type="Person_StatusOther">Susanna</rs> (1578–1611), daughter of <rs ref="eats:entity-289335" type="Person_StatusOther">John Legard</rs> of Ganton.
                                 He was educated at Beverley Free School and <rs ref="http://ereed.library.utoronto.ca/eats/entity/249612/" type="Place_F_School">Jesus College</rs>,
-                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/73450/" type="Place_F_School">Cambridge</rs>. In 1624 he was elected one of the Members of Parliament
-                                for <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> and was re-elected in 1625 and 1626. He was knighted
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/73450/" type="Place_F_School">Cambridge</rs>. In 1624 he was elected one of the <rs ref="eats:entity-271857" type="Collective_Office">Members of Parliament
+                                for Scarborough</rs> and was re-elected in 1625 and 1626. He was knighted
                                 in 1626. During the following eleven years, when <rs ref="eats:entity-24537" type="Person_Royalty">Charles I</rs> ruled
                                 without Parliament, Cholmley became one of the leaders of resistance
                                 among the Yorkshire gentry. He organised a number of petitions and
@@ -14483,7 +14483,7 @@
                                 <settlement>Durham</settlement>
                                 <repository sameAs="#durham-cathedral-library"/>
                                 <idno type="shelfmark">DCD/D/SJC/2</idno>
-                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/1913/" type="Place_County">Durham</rs> Dean and Chapter Act and Visitation Book</msName>
+                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/1913/" type="Place_County">Durham</rs> <rs ref="eats:entity-10928" type="Collective_ClergyAndChurchwardens">Dean</rs> and Chapter Act and Visitation Book</msName>
                             </msIdentifier>
                             <ab type="techDesc"><date>17 December 1595–9 October 1606</date>;
                                 English and Latin; paper; i + 176 + i, 42 leaves in eight booklets
@@ -14507,11 +14507,11 @@
                                 1575–1636) divided his time between his primary residence at <rs ref="http://ereed.library.utoronto.ca/eats/entity/250954/" type="Place_F_Residence">Gilling
                                 Castle</rs> and a secondary home at <rs ref="http://ereed.library.utoronto.ca/eats/entity/253402/" type="Place_PA_Settlement">Walton</rs>, two miles east of <rs ref="http://ereed.library.utoronto.ca/eats/entity/253540/" type="Place_PA_Settlement">Wetherby</rs>.
                                 Though Fairfax himself conformed, his wife Catherine Constable (d.
-                                1626) was a life-long recusant, and it is probably for this reason
+                                1626) was a life-long <rs ref="eats:entity-45671" type="CrimesMisdemeanors">recusant</rs>, and it is probably for this reason
                                 that Fairfax was not a member of the High Commission, nor was he
                                 ever appointed <rs ref="eats:entity-271331" type="Collective_Office">knight of the shire</rs>. He was <rs ref="eats:entity-274309" type="Collective_Office">MP for Boroughbridge</rs> in
                                 1601 (<title>HPO</title>,
-                                https://www.historyofparliamentonline.org/volume/1558-1603/member/fairfax-thomas-ii-1575-1636, accessed 31 December 2020). See also the
+                                <ref target="https://www.historyofparliamentonline.org/volume/1558-1603/member/fairfax-thomas-ii-1575-1636">'Fairfax, Thomas II'</ref>, accessed 31 December 2020). See also the
                                 <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-fairfax">Introduction</ref>.</ab>
                             <ab type="techDesc"><date>1590–1624</date>; English; paper; 295 leaves;
                                 410mm x 270mm; contemporary foliation 1–295; ff 8–12, 82–240, 252–5
@@ -14555,12 +14555,12 @@
                                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of Sir Thomas on the pretext of
                                 being on a hunting expedition. Sir Thomas received them with what
                                 may have been perceived as ill grace. The company spent the evening
-                                drinking and dicing, to Sir Thomas' disgust, to the extent that he
+                                <!--drunkenness?-->drinking and dicing, to Sir Thomas' disgust, to the extent that he
                                 eventually locked the wine cellar. When the family sat down to
                                 evening prayers the interlopers attempted to disrupt the service by
-                                stamping of feet and singing. Upon leaving in the morning some
-                                damage was done including several broken windows. Hoby wrote a
-                                letter of complaint to the privy council and the case eventually
+                                <rs ref="eats:entity-45595" type="CrimesMisdemeanors">stamping of feet and singing</rs>. Upon leaving in the morning some
+                                <rs ref="eats:entity-45558" type="CrimesMisdemeanors">damage</rs> was done including several broken windows. Hoby wrote a
+                                letter of complaint to the privy council<note type="foot">See <ptr target="yksnr-ridp272949960"/>.</note> and the case eventually
                                 went to Star Chamber where Eure was fined £100 annually.
                                 <!-- IN to insert cross-ref to STAC docs --></ab>
                             <ab type="techDesc"><date>1600</date>; English; paper; 2 bifolia, folded
@@ -14604,7 +14604,7 @@
                                 of William Camden (1551–1623), is a copy of a letter from 'H. Tr.'
                                 to Sir Thomas Chaloner concerning antiquities in the area of
                                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/251069/" type="Place_PA_Settlement">Guisborough</rs>. Camden began his survey of the history, topography, and
-                                customs of the counties of England, <title>Britannia</title>, around
+                                customs of the counties of <rs ref="http://ereed.library.utoronto.ca/eats/entity/1715/" type="Place_Country">England</rs>, <title>Britannia</title>, around
                                 1577, with the first edition appearing in 1586. Camden continued
                                 throughout his life to assemble relevant material (Wyman H.
                                 Herenden, 'Camden, William (1551–1623),' <title>ODNB</title>,
@@ -14690,12 +14690,12 @@
                                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of Sir Thomas on the pretext of
                                 being on a hunting expedition. Sir Thomas received them with what
                                 may have been perceived as ill grace. The company spent the evening
-                                drinking and dicing, to Sir Thomas' disgust, to the extent that he
+                                <!--drunkenness?-->drinking and dicing, to Sir Thomas' disgust, to the extent that he
                                 eventually locked the wine cellar. When the family sat down to
                                 evening prayers the interlopers attempted to disrupt the service by
-                                stamping of feet and singing. Upon leaving in the morning some
-                                damage was done including several broken windows. Hoby wrote a
-                                letter of complaint to the privy council <!-- IN to insert cross-ref to Cecil letter --> and the case eventually
+                                <rs ref="eats:entity-45595" type="CrimesMisdemeanors">stamping of feet and singing</rs>. Upon leaving in the morning some
+                                <rs ref="eats:entity-45558" type="CrimesMisdemeanors">damage</rs> was done including several broken windows. Hoby wrote a
+                                letter of complaint to the privy council<note type="foot">See <ptr target="yksnr-ridp272949960"/>.</note> and the case eventually
                                 went to Star Chamber where Eure was fined £100 annually. For more information on Thomas Hoby and Henry and Richard
                                 Cholmley see the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-cholmley">Introduction</ref>.</ab>
                             <ab type="techDesc"><date>1600</date>; English; parchment; single
@@ -14715,12 +14715,12 @@
                                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of Sir Thomas on the pretext of
                                 being on a hunting expedition. Sir Thomas received them with what
                                 may have been perceived as ill grace. The company spent the evening
-                                drinking and dicing, to Sir Thomas' disgust, to the extent that he
+                                <!--drunkenness?-->drinking and dicing, to Sir Thomas' disgust, to the extent that he
                                 eventually locked the wine cellar. When the family sat down to
                                 evening prayers the interlopers attempted to disrupt the service by
-                                stamping of feet and singing. Upon leaving in the morning some
-                                damage was done including several broken windows. Hoby wrote a
-                                letter of complaint to the privy council <!-- IN to insert cross-ref to Cecil letter --> and the case eventually
+                                <rs ref="eats:entity-45595" type="CrimesMisdemeanors">stamping of feet and singing</rs>. Upon leaving in the morning some
+                                <rs ref="eats:entity-45558" type="CrimesMisdemeanors">damage</rs> was done including several broken windows. Hoby wrote a
+                                letter of complaint to the privy council<note type="foot">See <ptr target="yksnr-ridp272949960"/>.</note> and the case eventually
                                 went to Star Chamber where Eure was fined £100 annually. For more information on Thomas Hoby and William Eure see
                                 the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-hoby">Introduction</ref>.</ab>
                             <ab type="techDesc"><date>1601–2</date>; English; parchment; 6 items
