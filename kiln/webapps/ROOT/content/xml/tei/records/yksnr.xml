@@ -15868,9 +15868,9 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       Riding has not included a comprehensive survey of documents deriving from the royal household,
       a collection so extensive that it would significantly extend the time required to complete it.
       Documents have surfaced, however, which cast light on the royal household’s participation in
-      local festivities and ceremonies, principally in the form of financial support. These records
+      local <rs ref="eats:entity-62012" type="Entertainment_Type">festivities and ceremonies</rs>, principally in the form of financial support. These records
       are invaluable indications of the existence of such events, as well as pointing out the hiring
-      of local and international performers in the county by members of the royal household, and for
+      of local and international <rs ref="eats:entity-1261" type="Entertainer_Type">performers</rs> in the county by members of the royal household, and for
       these reasons they are presented here in an appendix.</p>
     </div>
     <div>
@@ -15943,7 +15943,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
          <ab><gap reason="omitted"/><note type="marginal" place="margin_left">p<ex>r</ex>im<damage><gap unit="chars" extent="1"/></damage> de Septembre</note></ab>
 
-         <ab><gap reason="omitted"/>A <rs ref="eats:entity-291562" type="Person_Commoner">Anneys la Rede</rs> &amp; Alis de Wherelton <rs ref="eats:entity-10906" type="Entertainer_Type">chauntantz</rs> deuant <rs ref="eats:entity-44180" type="Person_Male">le
+         <ab><gap reason="omitted"/>A <rs ref="eats:entity-291562" type="Person_Commoner">Anneys la Rede</rs> &amp; <rs ref="eats:entity-292457" type="Person_Commoner">Alis de Wherelton</rs> <rs ref="eats:entity-10906" type="Entertainer_Type">chauntantz</rs> deuant <rs ref="eats:entity-44180" type="Person_Male">le
           Roi</rs> de mons<ex>ieur</ex> <rs ref="eats:entity-291740" type="Person_StatusOther">Simoun de Montfort</rs> &amp; autres <rs ref="eats:entity-40706" type="Entertainment_Type">chaunsons</rs> de don iiij s<gap reason="omitted"/>.</ab>
 
          <gap reason="omitted"/>
@@ -16037,8 +16037,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
          <gap reason="omitted"/>
 
-         <ab>Warr<ex>ant</ex><note type="marginal" place="margin_left">Geoffrey ffraunke</note> to
-           Thaudito<ex>u</ex>rs of Middleh<ex>a</ex>m to allowe Geoffrey ffraunke Rec<ex>eiver</ex>
+         <ab>Warr<ex>ant</ex><note type="marginal" place="margin_left"><rs ref="eats:entity-292558" type="Person_StatusOther">Geoffrey ffraunke</rs></note> to
+           Thaudito<ex>u</ex>rs of Middleh<ex>a</ex>m to allowe <rs ref="eats:entity-292558" type="Person_StatusOther">Geoffrey ffraunke</rs> Rec<ex>eiver</ex>
           of ye same <del>t</del> in his accompt<ex>es</ex> the sum<ex>m</ex>e of Ciiij<hi rend="superscript">xx</hi>xvj li. x s. yat is to Wit/ <gap reason="omitted"/>to ye Gild
           of Alverton v s.<note type="foot">v s.: <hi rend="italic">underlined</hi></note> for
           chesing of ye king of Westwitton / v s. xj d.<note type="foot">v s. xj d.: <hi rend="italic">underlined</hi></note>
@@ -16049,13 +16049,13 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
         </div>
        </div>
        <div type="endnote">
-        <p> Richard III (1452–1485), king of England and lord of Ireland, had a special interest in
+        <p> <rs ref="eats:entity-162135" type="Person_Royalty">Richard III</rs> (1452–1485), <rs ref="eats:entity-17651" type="Collective_Title">king of England</rs> and lord of Ireland, had a special interest in
          Middleham: he had spent much of his early life in Middleham Castle. The castle was in the
-         hands of the Neville family, and following the death of his father, Richard, duke of York,
-         in December 1460, Richard, the prince of Wales, then aged 8, lived at Middleham with the
-         family of Richard Neville, duke of Warwick. On his marriage to Warwick's daughter, Anne, in
+         hands of the Neville family, and following the death of his father, <rs ref="eats:entity-125191" type="Person_Nobility">Richard</rs>, <rs ref="eats:entity-31494" type="Collective_Title">duke of York</rs>,
+         in December 1460, Richard, the <rs ref="eats:entity-160042" type="Collective_Title">prince of Wales</rs>, then aged 8, lived at Middleham with the
+         family of <rs ref="eats:entity-136480" type="Person_Nobility">Richard Neville</rs>, duke of Warwick. On his marriage to Warwick's daughter, <rs ref="eats:entity-163683" type="Person_Royalty">Anne</rs>, in
          1471, the couple continued to live in Middleham Castle until Richard's accession to the
-         throne in 1483. Their son Edward was born and died in the Castle (Rosemary Horrox, 'Richard
+         throne in 1483. Their son <rs ref="eats:entity-292705" type="Person_Royalty">Edward</rs> was born and died in the Castle (Rosemary Horrox, 'Richard
          III (1452–1485),' <title>ODNB</title>, accessed 7 January 2021). </p>
        </div>
       </body>
