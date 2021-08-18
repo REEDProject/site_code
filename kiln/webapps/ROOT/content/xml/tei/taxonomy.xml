@@ -14264,16 +14264,16 @@
                                 <settlement>Oxford</settlement>
                                 <repository sameAs="#Bodl."/>
                                 <idno type="shelfmark">Tanner 10</idno>
-                                <msName>Bede's Historia Ecclesiastica (Old English)</msName>
+                                <msName><rs ref="eats:entity-285799" type="Person_Clergy">Bede</rs>'s Historia Ecclesiastica (Old English)</msName>
                             </msIdentifier>
-                            <ab type="edDesc">Bede was born in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2165/" type="Place_County">Northumbria</rs> around 672–3 and was sent
+                            <ab type="edDesc"><rs ref="eats:entity-285799" type="Person_Clergy">Bede</rs> was born in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2165/" type="Place_County">Northumbria</rs> around 672–3 and was sent
                                 at the age of seven to the Benedictine house of Wearmouth, where he
                                 lived until his death at the sister monastery of Jarrow on 26 May
                                 735. His <title>Historia Ecclesiastica Gentis Anglorum</title>
                                 (History of the English Church and People) was completed around 731
                                 and provided a well-documented narrative of the conversion of the
                                 Anglo-Saxon settlers to Christianity. Bede places the story of
-                                Cædmon late in the life of <!--IN: not sure if abbess should be tagged?-->abbess Hild and late in Cædmon's life as
+                                <rs ref="eats:entity-285694" type="Person_Clergy">Cædmon</rs> late in the life of <!--IN: not sure if abbess should be tagged? KC 2021-08-18: I've tagged it as monastic order--><rs ref="eats:entity-27258" type="Collective_ClergyAndChurchwardens">abbess</rs> <rs ref="eats:entity-285734" type="Person_Clergy">Hild</rs> and late in Cædmon's life as
                                 well. Hild died in 680, giving a terminus ad quem for the
                                 composition of 'Cædmon's Hymn.' The poem survives in both Latin and
                                 West Saxon versions of Bede's <title>Historia Ecclesiastica</title>,
@@ -14293,16 +14293,16 @@
                                 <settlement>Cambridge</settlement>
                                 <repository sameAs="#CUL"/>
                                 <idno type="shelfmark">Kk.5.16</idno>
-                                <msName>Bede's Historia Ecclesiastica</msName>
+                                <msName><rs ref="eats:entity-285799" type="Person_Clergy">Bede</rs>'s Historia Ecclesiastica</msName>
                             </msIdentifier>
-                            <ab type="edDesc">Bede was born in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2165/" type="Place_County">Northumbria</rs> around 672–3 and was sent
+                            <ab type="edDesc"><rs ref="eats:entity-285799" type="Person_Clergy">Bede</rs> was born in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2165/" type="Place_County">Northumbria</rs> around 672–3 and was sent
                                 at the age of seven to the Benedictine house of Wearmouth, where he
                                 lived until his death at the sister monastery of Jarrow on 26 May
                                 735. His <title>Historia Ecclesiastica Gentis Anglorum</title>
                                 (History of the English Church and People) was completed around 731
                                 and provided a well-documented narrative of the conversion of the
                                 Anglo-Saxon settlers to Christianity. Bede places the story of
-                                Cædmon late in the life of <!--IN: not sure if abbess should be tagged?-->abbess Hild and late in Cædmon's life as
+                                <rs ref="eats:entity-285694" type="Person_Clergy">Cædmon</rs> late in the life of <!--IN: not sure if abbess should be tagged? KC 2021-08-18: I've tagged it as monastic orde--><rs ref="eats:entity-27258" type="Collective_ClergyAndChurchwardens">abbess</rs> <rs ref="eats:entity-285734" type="Person_Clergy">Hild</rs> and late in Cædmon's life as
                                 well. Hild died in 680, giving a terminus ad quem for the
                                 composition of 'Cædmon's Hymn.' The poem survives in both Latin and
                                 West Saxon versions of Bede's <title>Historia Ecclesiastica</title>,
