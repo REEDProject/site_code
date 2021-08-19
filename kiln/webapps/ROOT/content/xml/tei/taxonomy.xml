@@ -15116,6 +15116,7 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">DC/SCB IV/1</idno>
+                                <!--IN: Need to tag churchwardens here and in following records-->
                                 <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains</rs>' and Churchwardens'
                                     Accounts</msName>
                             </msIdentifier>
@@ -15130,12 +15131,12 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">DC/SCB IV/1</idno>
-                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> Chamberlains' and Churchwardens'
+                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains</rs>' and Churchwardens'
                                     Accounts</msName>
                             </msIdentifier>
                             <ab type="edDesc">The chamberlains and the wardens of <rs ref="http://ereed.library.utoronto.ca/eats/entity/252818/" type="Place_F_Church">St Mary's church</rs>
-                                submitted their accounts together on Michaelmas. Dr Jack Binns has
-                                confirmed the accounting year for the chamberlains and churchwardens
+                                submitted their accounts together on <rs ref="eats:entity-42598" type="CalendarDay_Liturgical">Michaelmas</rs>. Dr Jack Binns has
+                                confirmed the accounting year for the <rs ref="eats:entity-292161" type="Collective_Office">chamberlains</rs> and churchwardens
                                 (letter to editor, 21 October 2019).</ab>
                             <ab type="techDesc"><date>1633–4</date>; English; paper; single sheet;
                                 220mm x 200mm.</ab>
