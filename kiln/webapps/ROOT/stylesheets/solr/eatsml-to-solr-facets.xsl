@@ -63,6 +63,7 @@
   <xsl:variable name="material_wagon" select="'entity_type-4955'" />
   <!-- Entity relationship types -->
   <xsl:variable name="contains" select="'entity_relationship_type-502'" />
+  <xsl:variable name="holds_title" select="'entity_relationship_type-494'" />
   <xsl:variable name="is_a" select="'entity_relationship_type-22042'" />
   <xsl:variable name="is_subset_of" select="'entity_relationship_type-499'" />
   <xsl:variable name="had_occupation"
@@ -101,6 +102,7 @@
     <xsl:if test="@entity_relationship_type=$contains and @domain_entity=$entity_id and ../../eats:entity_types/eats:entity_type[@entity_type=$locations]">
       <xsl:apply-templates select="$range_entity/eats:entity_types/eats:entity_type[@entity_type=$locations]/@entity_type">
         <xsl:with-param name="entity_eats_id" select="$range_entity/@eats_id" />
+        <xsl:with-param name="entity_id" select="$range_entity/@xml:id" />
       </xsl:apply-templates>
     </xsl:if>
     <!-- Entertainers: type and status. -->
@@ -137,6 +139,15 @@
                   @domain_entity=$entity_id">
       <xsl:apply-templates select="$range_entity/eats:entity_types/eats:entity_type/@entity_type">
         <xsl:with-param name="entity_eats_id" select="$range_entity/@eats_id" />
+        <xsl:with-param name="entity_id" select="$range_entity/@xml:id" />
+      </xsl:apply-templates>
+    </xsl:if>
+    <!-- Person: title. -->
+    <xsl:if test="@entity_relationship_type=$holds_title and
+                  @domain_entity=$entity_id">
+      <xsl:apply-templates select="$range_entity/eats:entity_types/eats:entity_type/@entity_type">
+        <xsl:with-param name="entity_eats_id" select="$range_entity/@eats_id" />
+        <xsl:with-param name="entity_id" select="$range_entity/@xml:id" />
       </xsl:apply-templates>
     </xsl:if>
   </xsl:template>
