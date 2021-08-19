@@ -14762,18 +14762,18 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">STAC 5/H42/12</idno>
-                                <msName>Star Chamber Case: Hoby v. Eure</msName>
+                                <msName>Star Chamber Case: <rs ref="eats:entity-263152" type="Person_Gentry">Hoby</rs> v. <rs ref="eats:entity-268461" type="Person_Nobility">Eure</rs></msName>
                             </msIdentifier>
                             <ab type="edDesc">On 26 August 1600 a group of young <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> gentry
-                                led by William Eure (1579–1646), son of Ralph Eure (1558–1617),
-                                third Baron Eure, and Ralph's brother, Sir William, arrived at
-                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of Sir Thomas on the pretext of
+                                led by <rs ref="eats:entity-268461" type="Person_Nobility">William Eure</rs> (1579–1646), son of <rs ref="eats:entity-268329" type="Person_Nobility">Ralph Eure</rs> (1558–1617),
+                                third <rs ref="eats:entity-268439" type="Collective_Title">Baron Eure</rs>, and Ralph's brother, <rs ref="eats:entity-268686" type="Person_Gentry">Sir William</rs>, arrived at
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of <rs ref="eats:entity-263152" type="Person_Gentry">Sir Thomas</rs> on the pretext of
                                 being on a hunting expedition. Sir Thomas received them with what
                                 may have been perceived as ill grace. The company spent the evening
-                                drinking and dicing, to Sir Thomas' disgust, to the extent that he
+                                <rs ref="eats:entity-40997" type="Thing_FoodDrink">drinking</rs> and <rs ref="eats:entity-40677" type="Entertainment_Type">dicing</rs>, to Sir Thomas' disgust, to the extent that he
                                 eventually locked the wine cellar. When the family sat down to
                                 evening prayers the interlopers attempted to disrupt the service by
-                                <rs ref="eats:entity-45595" type="CrimesMisdemeanors">stamping of feet and singing</rs>. Upon leaving in the morning some
+                                <rs ref="eats:entity-45595" type="CrimesMisdemeanors">stamping of feet and <rs ref="eats:entity-10906" type="Entertainer_Type">singing</rs></rs>. Upon leaving in the morning some
                                 <rs ref="eats:entity-45558" type="CrimesMisdemeanors">damage</rs> was done including several broken windows. Hoby wrote a
                                 letter of complaint to the privy council<note type="foot">See <ptr target="yksnr-ridp272949960"/></note> and the case eventually
                                 went to Star Chamber where Eure was fined £100 annually. For more information on Thomas Hoby and William Eure see
