@@ -14850,9 +14850,9 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">STAC 8/267/28</idno>
-                                <msName>Star Chamber Case: Skarth v. Glover</msName>
+                                <msName>Star Chamber Case: <rs ref="eats:entity-287757" type="Person_StatusOther">Skarth</rs> v. <rs ref="eats:entity-287857" type="Person_StatusOther">Glover</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">Skarth and Glover were both common names in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/249567/" type="Place_PA_Settlement">Whitby</rs>
+                            <ab type="edDesc"><rs ref="eats:entity-287757" type="Person_StatusOther">Skarth</rs> and <rs ref="eats:entity-287857" type="Person_StatusOther">Glover</rs> were both common names in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/249567/" type="Place_PA_Settlement">Whitby</rs>
                                 area.</ab>
                             <ab type="techDesc"><date>11 July 1623</date>; English and Latin;
                                 parchment; 2 items, both single membranes, sewn together on a tag;
