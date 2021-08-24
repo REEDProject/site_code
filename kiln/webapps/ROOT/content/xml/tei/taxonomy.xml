@@ -15057,7 +15057,7 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">DC/SCB IV/1</idno>
-                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains</rs>' and Churchwardens'
+                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains'</rs> and <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs>
                                     Accounts</msName>
                             </msIdentifier>
                             <ab type="edDesc">The financial officers of the town (<rs ref="eats:entity-292161" type="Collective_Office">chamberlains</rs>) and
@@ -15116,12 +15116,11 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">DC/SCB IV/1</idno>
-                                <!--IN: Need to tag churchwardens here and in following records-->
-                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains</rs>' and Churchwardens'
+                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains</rs>' and <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs>
                                     Accounts</msName>
                             </msIdentifier>
                             <ab type="edDesc">The officers (<rs ref="eats:entity-292161" type="Collective_Office">chamberlains</rs>) of the town and the
-                                officers (churchwardens) of the parish church of <rs ref="http://ereed.library.utoronto.ca/eats/entity/252818/" type="Place_F_Church">St Mary</rs> submitted
+                                officers (<rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">churchwardens</rs>) of the parish church of <rs ref="http://ereed.library.utoronto.ca/eats/entity/252818/" type="Place_F_Church">St Mary</rs> submitted
                                 their accounts jointly at <rs ref="eats:entity-42598" type="CalendarDay_Liturgical">Michaelmas</rs>.</ab>
                             <ab type="techDesc"><date>1632–3</date>; English; paper; 4 leaves; 300mm
                                 x 200mm; unfoliated.</ab>
@@ -15131,12 +15130,12 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">DC/SCB IV/1</idno>
-                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains</rs>' and Churchwardens'
+                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains'</rs> and <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs>
                                     Accounts</msName>
                             </msIdentifier>
-                            <ab type="edDesc">The chamberlains and the wardens of <rs ref="http://ereed.library.utoronto.ca/eats/entity/252818/" type="Place_F_Church">St Mary's church</rs>
+                            <ab type="edDesc">The <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">chamberlains</rs> and the <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">wardens</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/252818/" type="Place_F_Church">St Mary's church</rs>
                                 submitted their accounts together on <rs ref="eats:entity-42598" type="CalendarDay_Liturgical">Michaelmas</rs>. Dr Jack Binns has
-                                confirmed the accounting year for the <rs ref="eats:entity-292161" type="Collective_Office">chamberlains</rs> and churchwardens
+                                confirmed the accounting year for the chamberlains and churchwardens
                                 (letter to editor, 21 October 2019).</ab>
                             <ab type="techDesc"><date>1633–4</date>; English; paper; single sheet;
                                 220mm x 200mm.</ab>
@@ -15157,7 +15156,7 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">DC/SCB IV/1</idno>
-                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> Chamberlains' and Churchwardens'
+                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains'</rs> and <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs>
                                     Accounts</msName>
                             </msIdentifier>
                             <ab type="techDesc"><date>1633–4</date>; English ; paper; single sheet;
@@ -15168,10 +15167,10 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">DC/SCB VI/1</idno>
-                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> Chamberlains' Accounts</msName>
+                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains</rs>' Accounts</msName>
                             </msIdentifier>
-                            <ab type="edDesc">The chamberlains and the wardens of <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">St Mary's Church</rs>
-                                submitted their accounts together on Michaelmas.</ab>
+                            <ab type="edDesc">The <rs ref="eats:entity-292161" type="Collective_Office">chamberlains</rs> and the <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">wardens</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">St Mary's Church</rs>
+                                submitted their accounts together on <rs ref="eats:entity-42598" type="CalendarDay_Liturgical">Michaelmas</rs>.</ab>
                             <ab type="techDesc"><date>1638–9</date>; English; paper; 2 leaves; 300mm
                                 x 200mm; unfoliated.</ab>
                         </msDesc>
@@ -15180,10 +15179,13 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">SP1/125/733</idno>
-                                <msName>Letter from Edmond Wright to Lord Privy Seal, <rs ref="eats:entity-58060" type="Person_Male">Thomas
+                                <msName>Letter from Edmond Wright to <rs ref="eats:entity-172723" type="Collective_Office">Lord Privy Seal</rs>, <rs ref="eats:entity-58060" type="Person_Male">Thomas
                                     Cromwell</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">In February 1543/4 Edmond Wright, who had distinguished himself as a captain in the Scottish wars, was granted Grosmont priory in Egton parish, which had been surrendered in 1539. Wright alienated the property to Sir <rs ref="eats:entity-268836" type="Person_Gentry">Richard Cholmley</rs> of Whitby in 1545/6 and it remained in possession of the <rs ref="eats:entity-258383" type="Person_Family">Cholmley family</rs> and its successors until 1683/4 (<title>VCH: Yorkshire</title>, vol 2, pp 343–8, <title>BHO</title>, https://www.british-history.ac.uk/vch/yorks/north/vol2/pp343-348, accessed 9 April 2021).</ab>
+                            <ab type="edDesc">In February 1543/4 Edmond Wright, who had distinguished himself as a captain in the Scottish wars, was granted <rs ref="eats:entity-251046" type="Place_F_ReligiousHouse">Grosmont priory</rs>
+                                in <rs ref="eats:entity-250670" type="Place_PA_Settlement">Egton</rs> parish, which had been surrendered in 1539. Wright alienated the property 
+                                to Sir <rs ref="eats:entity-268836" type="Person_Gentry">Richard Cholmley</rs> of <rs ref="eats:entity-249567" type="Place_PA_Settlement">Whitby</rs> in 1545/6 and it remained in possession of the <rs ref="eats:entity-258383" type="Person_Family">Cholmley family</rs> and its successors until 
+                                1683/4 (<title>VCH: Yorkshire</title>, vol 2, pp 343–8, <title>BHO</title>, https://www.british-history.ac.uk/vch/yorks/north/vol2/pp343-348, accessed 9 April 2021).</ab>
                             <ab type="techDesc"><date>21–2 September 1537</date>; English; paper; 3
                                 leaves; 290mm x 205mm; unnumbered originally, foliated now as 12–14;
                                 bound in red leather volume, 'SP | 1 [on paper label] |
@@ -15211,8 +15213,8 @@
                                 particularly severe in its punishments: '[A]ll Fencers
                                 Bearewardes Comon Players in Enterludes &amp; and Minstrels, not
                                 belonging to any Baron of this Realme, or toward[es] any
-                                other honorable Personage of greater Degree),' wandering abroad
-                                without the license of two justices at the least, were subject 'to
+                                other honorable Personage of greater Degree),' <rs ref="eats:entity-194093" type="CrimesMisdemeanors">wandering abroad</rs>
+                                without the license of two <rs ref="eats:entity-235838" type="Collective_Office">justices</rs> at the least, were subject 'to
                                 be grevouslye whipped, and burnte through the gristle of the right
                                 Eare with a hot Yron of the compasse of an Ynche about' (Great
                                 Britain, <title>The Statutes of the Realm</title>, vol 4, pt 1
@@ -15255,7 +15257,7 @@
                                 statute is clarified by its appearance in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/253287/" type="Place_PA_Settlement">Thornton Watlass</rs>
                                 parish register, indicating that the contents of the statute were
                                 filtered down through the hierarchy of the church to the
-                                churchwardens, who were responsible for presenting offenders at the
+                                <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">churchwardens</rs>, who were responsible for presenting offenders at the
                                 quarter sessions.</ab>
                             <ab type="techDesc"><date>1574–1722</date>; English and Latin; paper; ii
                                 + 135 + ii, loose page slipped in between ff [121] and
