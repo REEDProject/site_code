@@ -15517,13 +15517,13 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">ZAZ 75-76</idno>
-                                <msName>Accounts of Matthew Hutton</msName>
+                                <msName>Accounts of <rs ref="eats:entity-274593" type="Person_Commoner">Matthew Hutton</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">Matthew Hutton (b. 1597) was the son of Sir Timothy Hutton (1569–1629), grandson of Matthew
-                                Hutton (1529?–1606), <rs ref="eats:entity-220215" type="Collective_Office">archbishop of York</rs>, 1594/5–1606. There is no
+                            <ab type="edDesc">Matthew Hutton (b. 1597) was the son of <rs ref="eats:entity-274466" type="Person_Gentry">Sir Timothy Hutton</rs> (1569–1629), grandson of <rs ref="eats:entity-261914" type="Person_Clergy">Matthew
+                                Hutton</rs> (1529?–1606), <rs ref="eats:entity-220215" type="Collective_Office">archbishop of York</rs>, 1594/5–1606. There is no
                                 accounting year for Matthew's accounts during his studies at
                                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/73450/" type="Place_F_School">Cambridge</rs>; he sent a list of expenses to his father and the
-                                household steward, John Ellowe, at <rs ref="http://ereed.library.utoronto.ca/eats/entity/251732/" type="Place_PA_Settlement">Marske</rs> for reimbursement on a
+                                household steward, <!-- [2021-08-26] KC: 'household steward' #406 --> <rs ref="eats:entity-274532" type="Person_Commoner">John Ellowe</rs>, at <rs ref="http://ereed.library.utoronto.ca/eats/entity/251732/" type="Place_PA_Settlement">Marske</rs> for reimbursement on a
                                 miscellaneous basis. The accounts are printed in Hutton, <title>Correspondence</title>, pp 210–17.</ab>
                             <ab type="techDesc"><date>24 June 1615</date>; English; single sheet;
                                 paper; 305mm x 200mm.</ab>
