@@ -15754,9 +15754,9 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">ZDV V 10</idno>
-                                <msName>Accounts of Sir Henry and Sir Thomas Bellasis</msName>
+                                <msName>Accounts of <rs ref="eats:entity-265676" type="Person_Gentry">Sir Henry</rs> and <rs ref="eats:entity-265784" type="Person_Nobility">Sir Thomas Bellasis</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">For information on Sir Henry and Sir Thomas Bellasis
+                            <ab type="edDesc">For information on Sir <rs ref="eats:entity-265676" type="Person_Gentry">Henry</rs> and Sir <rs ref="eats:entity-265784" type="Person_Nobility">Thomas Bellasis</rs>
                                 see the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-bellasis">Introduction</ref>. <lb/> The
                                 locations of payments made while the household was travelling have
                                 been noted in the subheading when these can be determined with
