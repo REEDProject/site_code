@@ -4,4 +4,4 @@ span.indent { margin-left: 1em; }
 .center { margin-left: auto; margin-right: auto; width: 50%; }
 th, td { vertical-align: top; }
 td.center { text-align: center; }
-td.right { text-align: right; }
+td.right { text-align: right; vertical-align: bottom; white-space: nowrap; }

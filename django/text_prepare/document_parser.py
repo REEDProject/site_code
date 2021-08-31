@@ -288,7 +288,7 @@ class DocumentParser:
         table.setParseAction(self._pa_table)
         record_heading_place = pp.Word(pp.alphanums)
         record_heading_place.setParseAction(self._pa_record_heading_place)
-        year = pp.Word(pp.nums, min=4, max=4)
+        year = pp.Word(pp.nums, min=3, max=4)
         record_heading_date_century = pp.Word(
             pp.nums, min=2, max=2).setResultsName('century') + \
             pp.Literal('th Century').setResultsName('label')
@@ -306,7 +306,7 @@ class DocumentParser:
         record_heading_date_year.setParseAction(
             self._pa_record_heading_date_year)
         record_heading_date = record_heading_date_century ^ \
-            record_heading_date_year
+            record_heading_date_year ^ pp.Literal('Undated')
         language_code = pp.oneOf(
             'ang cnx cor cym deu eng fra gla gmh gml grc ita lat por spa wlm '
             'xno')
@@ -742,7 +742,7 @@ class DocumentParser:
 
     def _pa_record_heading_date_year(self, s, loc, toks):
         circa = toks.get('circa')
-        year = toks['year']
+        year = '{:04}'.format(int(toks['year']))
         slash_year = toks.get('slash_year')
         end_year = toks.get('end_year')
         slash_end_year = toks.get('slash_end_year')
