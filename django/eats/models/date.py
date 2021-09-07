@@ -4,6 +4,7 @@ from .base_manager import BaseManager
 from .date_part import DatePart
 from .date_period import DatePeriod
 from .note_bearing import NoteBearing
+from ..constants import FLOURISHED_DATE_PERIOD_NAME
 
 
 class DateManager (BaseManager):
@@ -78,6 +79,8 @@ class Date (Topic, NoteBearing):
             end_date = self._assemble_segment(end, end_tpq, end_taq)
             if start_date or end_date:
                 form = '%s \N{EN DASH} %s' % (start_date, end_date)
+        if self.period.get_admin_name() == FLOURISHED_DATE_PERIOD_NAME:
+            form = 'fl. %s' % (form)
         return form.strip()
 
     def _assemble_segment (self, date, tpq, taq):

@@ -2,6 +2,7 @@ from tmapi.models import Name
 
 from .calendar import Calendar
 from .date_type import DateType
+from ..constants import CIRCA_DATE_PART_TYPE_NAME
 
 
 class DatePart (Name):
@@ -16,6 +17,8 @@ class DatePart (Name):
         if form:
             if self.certainty == self.eats_topic_map.date_no_certainty:
                 form = form + '?'
+            if self.date_type.get_admin_name() == CIRCA_DATE_PART_TYPE_NAME:
+                form = 'c.' + form
             if self.get_type() in (self.eats_topic_map.point_tpq_date_type,
                                    self.eats_topic_map.start_tpq_date_type,
                                    self.eats_topic_map.end_tpq_date_type):

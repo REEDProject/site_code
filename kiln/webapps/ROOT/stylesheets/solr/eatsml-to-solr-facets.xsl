@@ -63,7 +63,9 @@
   <xsl:variable name="material_wagon" select="'entity_type-4955'" />
   <!-- Entity relationship types -->
   <xsl:variable name="contains" select="'entity_relationship_type-502'" />
+  <xsl:variable name="holds_title" select="'entity_relationship_type-494'" />
   <xsl:variable name="is_a" select="'entity_relationship_type-22042'" />
+  <xsl:variable name="is_subset_of" select="'entity_relationship_type-499'" />
   <xsl:variable name="had_occupation"
                 select="'entity_relationship_type-21008'" />
   <xsl:variable name="patronized" select="'entity_relationship_type-12724'" />
@@ -84,6 +86,7 @@
     <entity url="{@url}">
       <xsl:apply-templates select="eats:entity_types/eats:entity_type/@entity_type">
         <xsl:with-param name="entity_eats_id" select="@eats_id" />
+        <xsl:with-param name="entity_id" select="@xml:id" />
       </xsl:apply-templates>
       <xsl:apply-templates select="eats:entity_relationships/eats:entity_relationship">
         <xsl:with-param name="entity_id" select="@xml:id" />
@@ -99,6 +102,7 @@
     <xsl:if test="@entity_relationship_type=$contains and @domain_entity=$entity_id and ../../eats:entity_types/eats:entity_type[@entity_type=$locations]">
       <xsl:apply-templates select="$range_entity/eats:entity_types/eats:entity_type[@entity_type=$locations]/@entity_type">
         <xsl:with-param name="entity_eats_id" select="$range_entity/@eats_id" />
+        <xsl:with-param name="entity_id" select="$range_entity/@xml:id" />
       </xsl:apply-templates>
     </xsl:if>
     <!-- Entertainers: type and status. -->
@@ -135,12 +139,22 @@
                   @domain_entity=$entity_id">
       <xsl:apply-templates select="$range_entity/eats:entity_types/eats:entity_type/@entity_type">
         <xsl:with-param name="entity_eats_id" select="$range_entity/@eats_id" />
+        <xsl:with-param name="entity_id" select="$range_entity/@xml:id" />
+      </xsl:apply-templates>
+    </xsl:if>
+    <!-- Person: title. -->
+    <xsl:if test="@entity_relationship_type=$holds_title and
+                  @domain_entity=$entity_id">
+      <xsl:apply-templates select="$range_entity/eats:entity_types/eats:entity_type/@entity_type">
+        <xsl:with-param name="entity_eats_id" select="$range_entity/@eats_id" />
+        <xsl:with-param name="entity_id" select="$range_entity/@xml:id" />
       </xsl:apply-templates>
     </xsl:if>
   </xsl:template>
 
   <xsl:template match="eats:entity/eats:entity_types/eats:entity_type/@entity_type">
     <xsl:param name="entity_eats_id" />
+    <xsl:param name="entity_id" />
     <!-- Create and assign values to zero or more facet fields based
          on the entity type. -->
     <!-- Calendar Days -->
@@ -179,6 +193,11 @@
       <field name="facet_collectives_office">
         <xsl:value-of select="$entity_eats_id" />
       </field>
+      <xsl:for-each select="../../../eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$is_subset_of][@domain_entity=$entity_id]">
+        <field name="facet_collectives_office">
+          <xsl:value-of select="id(@range_entity)/@eats_id" />
+        </field>
+      </xsl:for-each>
     </xsl:if>
     <xsl:if test=". = $collective_title">
       <field name="facet_collectives_title">
