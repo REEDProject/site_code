@@ -150,6 +150,26 @@
       <xsl:when test=". = 'facet_materials_food'">
         <xsl:text>Food &amp; Drink</xsl:text>
       </xsl:when>
+      <xsl:when test="starts-with(., 'facet_locations_feature_')">
+        <xsl:for-each select="tokenize(substring-after(., 'facet_locations_feature_'), '_')">
+          <xsl:value-of select="upper-case(substring(., 1, 1))" />
+          <xsl:value-of select="substring(., 2)" />
+          <xsl:text> </xsl:text>
+        </xsl:for-each>
+      </xsl:when>
+      <xsl:when test="starts-with(., 'facet_people_named_')">
+        <xsl:for-each select="tokenize(substring-after(., 'facet_people_named_'), '_')">
+          <xsl:choose>
+            <xsl:when test="position() = (1, 3)">
+              <xsl:value-of select="upper-case(substring(., 1, 1))" />
+              <xsl:value-of select="substring(., 2)" />
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text>–</xsl:text>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:for-each>
+      </xsl:when>
       <xsl:otherwise>
         <xsl:for-each select="tokenize(., '_')">
           <xsl:if test="position() = last()">

@@ -212,8 +212,68 @@
           name="facet_locations_settlement" required="false" stored="true"
           type="int" />
    <field indexed="true" multiValued="true"
-          name="facet_locations_feature" required="false" stored="true"
+          name="facet_locations_feature_type" required="false" stored="true"
+          type="string" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_arena" required="false" stored="true"
           type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_bridge" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_church" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_church_house" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_gate" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_guild_hall" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_hospital" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_inn_of_court" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_open_area" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_other" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_place_of_punishment" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_playhouse" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_property" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_religious_house" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_residence" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_school" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_street" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_town_hall" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_victualling_house" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_feature_water_feature" required="false"
+          stored="true" type="int" />
    <field indexed="true" multiValued="true"
           name="facet_materials_instrument" required="false" stored="true"
           type="int" />
@@ -242,7 +302,31 @@
           name="facet_materials_food" required="false" stored="true"
           type="int" />
    <field indexed="true" multiValued="true"
-          name="facet_people_named" required="false" stored="true"
+          name="facet_people_named_a_to_c" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_people_named_d_to_f" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_people_named_g_to_i" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_people_named_j_to_l" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_people_named_m_to_o" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_people_named_p_to_r" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_people_named_s_to_u" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_people_named_v_to_z" required="false" stored="true"
+          type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_people_named_other" required="false" stored="true"
           type="int" />
    <field indexed="true" multiValued="true"
           name="facet_people_gender" required="false" stored="true"

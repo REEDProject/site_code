@@ -17,12 +17,13 @@
   <xsl:variable name="location_facets"
                 select="('facet_locations_country', 'facet_locations_diocese',
                         'facet_locations_county', 'facet_locations_settlement',
-                        'facet_locations_feature')" />
+                        'facet_locations_feature_type')" />
+  <xsl:variable name="location_feature_facets"
+                select="('facet_locations_feature_arena', 'facet_locations_feature_bridge', 'facet_locations_feature_church', 'facet_locations_feature_church_house', 'facet_locations_feature_gate', 'facet_locations_feature_guild_hall', 'facet_locations_feature_hospital', 'facet_locations_feature_inn_of_court', 'facet_locations_feature_open_area', 'facet_locations_feature_other', 'facet_locations_feature_place_of_punishment', 'facet_locations_feature_playhouse', 'facet_locations_feature_property', 'facet_locations_feature_religious_house', 'facet_locations_feature_residence', 'facet_locations_feature_school', 'facet_locations_feature_street', 'facet_locations_feature_town_hall', 'facet_locations_feature_victualling_house', 'facet_locations_feature_water_feature')" />
   <xsl:variable name="day_facets"
                 select="('facet_days_secular', 'facet_days_liturgical')" />
   <xsl:variable name="people_facets"
-                select="('facet_people_named', 'facet_people_gender',
-                        'facet_people_status')" />
+                select="('facet_people_named_a_to_c', 'facet_people_named_d_to_f', 'facet_people_named_g_to_i', 'facet_people_named_j_to_l', 'facet_people_named_m_to_o', 'facet_people_named_p_to_r', 'facet_people_named_s_to_u', 'facet_people_named_v_to_z', 'facet_people_named_other', 'facet_people_gender')" />
   <xsl:variable name="collective_facets"
                 select="('facet_collectives_clergy',
                         'facet_collectives_occupation',
@@ -40,7 +41,7 @@
                         'facet_entertainments_animal')" />
   <xsl:variable name="drama_facets"
                 select="('facet_drama_type', 'facet_drama_work',
-                        'facet_drama_status', 'facet_drama_character')" />
+                        'facet_drama_character')" />
   <xsl:variable name="material_facets"
                 select="('facet_materials_instrument',
                         'facet_materials_book', 'facet_materials_property',
@@ -107,6 +108,7 @@
                     <div class="filter-content">
                       <ul class="accordion" data-accordion="" data-allow-all-closed="true">
                         <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$location_facets]" mode="search-results" />
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$location_feature_facets]" mode="search-results" />
                       </ul>
                     </div>
                   </div>
