@@ -44,10 +44,12 @@
   <xsl:variable name="person_male" select="'entity_type-531'" />
   <xsl:variable name="person_nobility" select="'entity_type-533'" />
   <xsl:variable name="person_royalty" select="'entity_type-535'" />
-  <xsl:variable name="location_borough" select="'entity_type-539'" />
   <xsl:variable name="location_country" select="'entity_type-541'" />
   <xsl:variable name="location_county" select="'entity_type-543'" />
-  <xsl:variable name="location_ecclesiastical" select="'entity_type-545'" />
+  <xsl:variable name="location_duchy" select="'entity_type-259881'" />
+  <xsl:variable name="location_ea_archdeaconry" select="'entity_type-249050'" />
+  <xsl:variable name="location_ea_diocese" select="'entity_type-249052'" />
+  <xsl:variable name="location_ea_province" select="'entity_type-249054'" />
   <xsl:variable name="location_feature" select="'entity_type-21368'" />
   <xsl:variable name="location_feature_arena" select="'entity_type-4831'" />
   <xsl:variable name="location_feature_bridge" select="'entity_type-247662'" />
@@ -63,7 +65,6 @@
                 select="'entity_type-4843'" />
   <xsl:variable name="location_feature_open_area"
                 select="'entity_type-4845'" />
-  <xsl:variable name="location_feature_other" select="'entity_type-247668'" />
   <xsl:variable name="location_feature_place_of_punishment"
                 select="'entity_type-247670'" />
   <xsl:variable name="location_feature_playhouse"
@@ -82,7 +83,10 @@
                 select="'entity_type-4841'" />
   <xsl:variable name="location_feature_water_feature"
                 select="'entity_type-247678'" />
-  <xsl:variable name="location_household" select="'entity_type-547'" />
+  <xsl:variable name="location_pa_liberty" select="'entity_type-248915'" />
+  <xsl:variable name="location_pa_manor" select="'entity_type-248917'" />
+  <xsl:variable name="location_pa_settlement" select="'entity_type-248913'" />
+  <xsl:variable name="location_pa_ward" select="'entity_type-248919'" />
   <xsl:variable name="material_book" select="'entity_type-4951'" />
   <xsl:variable name="material_cloth" select="'entity_type-4959'" />
   <xsl:variable name="material_costume" select="'entity_type-4961'" />
@@ -101,12 +105,14 @@
                 select="'entity_relationship_type-21008'" />
   <xsl:variable name="patronized" select="'entity_relationship_type-12724'" />
   <!-- Collections of types -->
+  <xsl:variable name="location_ecclesiastical_areas"
+                select="($location_ea_archdeaconry, $location_ea_diocese, $location_ea_province)" />
   <xsl:variable name="location_features"
-                select="($location_feature_arena, $location_feature_bridge, $location_feature_church, $location_feature_church_house, $location_feature_gate, $location_feature_guild_hall, $location_feature_hospital, $location_feature_inn_of_court, $location_feature_open_area, $location_feature_other, $location_feature_place_of_punishment, $location_feature_playhouse, $location_feature_property, $location_feature_religious_house, $location_feature_residence, $location_feature_school, $location_feature_street, $location_feature_town_hall, $location_feature_victualling_house, $location_feature_water_feature)" />
+                select="($location_feature_arena, $location_feature_bridge, $location_feature_church, $location_feature_church_house, $location_feature_gate, $location_feature_guild_hall, $location_feature_hospital, $location_feature_inn_of_court, $location_feature_open_area, $location_feature_place_of_punishment, $location_feature_playhouse, $location_feature_property, $location_feature_religious_house, $location_feature_residence, $location_feature_school, $location_feature_street, $location_feature_town_hall, $location_feature_victualling_house, $location_feature_water_feature)" />
+  <xsl:variable name="location_populated_areas"
+                select="($location_pa_liberty, $location_pa_manor, $location_pa_settlement, $location_pa_ward)" />
   <xsl:variable name="locations"
-                select="($location_borough, $location_country,
-                        $location_county, $location_ecclesiastical,
-                        $location_features, $location_household)" />
+                select="($location_country, $location_county, $location_duchy, $location_ecclesiastical_areas, $location_populated_areas, $location_features)" />
 
   <xsl:template match="/">
     <entities>
@@ -304,8 +310,25 @@
         <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>
-    <xsl:if test=". = $location_ecclesiastical">
-      <field name="facet_locations_diocese">
+    <xsl:if test=". = $location_ecclesiastical_areas">
+      <xsl:variable name="field">
+        <xsl:choose>
+          <xsl:when test=". = $location_ea_archdeaconry">
+            <xsl:text>archdeaconry</xsl:text>
+          </xsl:when>
+        </xsl:choose>
+        <xsl:choose>
+          <xsl:when test=". = $location_ea_diocese">
+            <xsl:text>diocese</xsl:text>
+          </xsl:when>
+        </xsl:choose>
+        <xsl:choose>
+          <xsl:when test=". = $location_ea_province">
+            <xsl:text>province</xsl:text>
+          </xsl:when>
+        </xsl:choose>
+      </xsl:variable>
+      <field name="facet_locations_{$field}">
         <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>
@@ -314,8 +337,29 @@
         <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>
-    <xsl:if test=". = ($location_borough, $location_household)">
-      <field name="facet_locations_settlement">
+    <xsl:if test=". = $location_duchy">
+      <field name="facet_locations_duchy">
+        <xsl:value-of select="$entity_eats_id" />
+      </field>
+    </xsl:if>
+    <xsl:if test=". = $location_populated_areas">
+      <xsl:variable name="field">
+        <xsl:choose>
+          <xsl:when test=". = $location_pa_liberty">
+            <xsl:text>liberty</xsl:text>
+          </xsl:when>
+          <xsl:when test=". = $location_pa_manor">
+            <xsl:text>manor</xsl:text>
+          </xsl:when>
+          <xsl:when test=". = $location_pa_settlement">
+            <xsl:text>settlement</xsl:text>
+          </xsl:when>
+          <xsl:when test=". = $location_pa_ward">
+            <xsl:text>ward</xsl:text>
+          </xsl:when>
+        </xsl:choose>
+      </xsl:variable>
+      <field name="facet_locations_{$field}">
         <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>
@@ -383,13 +427,6 @@
             <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
             <xsl:with-param name="name" select="'Open Area'" />
             <xsl:with-param name="type" select="'open_area'" />
-          </xsl:call-template>
-        </xsl:when>
-        <xsl:when test=". = $location_feature_other">
-          <xsl:call-template name="add_location_feature_fields">
-            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
-            <xsl:with-param name="name" select="'Other" />
-            <xsl:with-param name="type" select="'other" />
           </xsl:call-template>
         </xsl:when>
         <xsl:when test=". = $location_feature_place_of_punishment">

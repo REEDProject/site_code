@@ -9,9 +9,15 @@
   <!-- The order of the facet.field elements determines the order of
        display (within categories defined in templates/search.xml. -->
   <facet.field>facet_locations_country</facet.field>
+  <facet.field>facet_locations_archdeaconry</facet.field>
   <facet.field>facet_locations_diocese</facet.field>
+  <facet.field>facet_locations_province</facet.field>
   <facet.field>facet_locations_county</facet.field>
+  <facet.field>facet_locations_duchy</facet.field>
+  <facet.field>facet_locations_liberty</facet.field>
+  <facet.field>facet_locations_manor</facet.field>
   <facet.field>facet_locations_settlement</facet.field>
+  <facet.field>facet_locations_ward</facet.field>
   <facet.field>facet_locations_feature_type</facet.field>
   <facet.field>facet_locations_feature_arena</facet.field>
   <facet.field>facet_locations_feature_bridge</facet.field>
@@ -22,7 +28,6 @@
   <facet.field>facet_locations_feature_hospital</facet.field>
   <facet.field>facet_locations_feature_inn_of_court</facet.field>
   <facet.field>facet_locations_feature_open_area</facet.field>
-  <facet.field>facet_locations_feature_other</facet.field>
   <facet.field>facet_locations_feature_place_of_punishment</facet.field>
   <facet.field>facet_locations_feature_playhouse</facet.field>
   <facet.field>facet_locations_feature_property</facet.field>

@@ -100,6 +100,28 @@
   </xsl:template>
 
   <xsl:template match="lst[@name='facet_fields']/lst"
+                mode="search-results-nested">
+    <xsl:variable name="facet-values">
+      <xsl:apply-templates mode="search-results" />
+    </xsl:variable>
+    <xsl:if test="normalize-space($facet-values)">
+      <li class="accordion-inner-item" data-accordion-item="">
+        <a href="#" class="accordion-inner-title">
+          <xsl:apply-templates mode="search-results" select="@name" />
+        </a>
+        <div class="accordion-inner-content" data-tab-content="">
+          <ul class="open-filters">
+            <xsl:for-each select="$facet-values/li">
+              <xsl:sort select="lower-case(.)" />
+              <xsl:copy-of select="." />
+            </xsl:for-each>
+          </ul>
+        </div>
+      </li>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template match="lst[@name='facet_fields']/lst"
                 mode="search-results-no-hierarchy">
     <xsl:variable name="facet-values">
       <xsl:apply-templates mode="search-results" />
@@ -323,6 +345,49 @@
         <xsl:value-of select="$facet-value" />
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="display-nested-facets">
+    <xsl:param name="facets" />
+    <xsl:param name="inner" select="false()" />
+    <xsl:param name="title" />
+    <xsl:variable name="title-class">
+      <xsl:choose>
+        <xsl:when test="$inner">
+          <xsl:text>accordion-inner-title</xsl:text>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:text>accordion-title</xsl:text>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <li class="accordion-item" data-accordion-item="">
+      <a href="#" class="{$title-class}">
+        <xsl:value-of select="$title" />
+      </a>
+      <xsl:choose>
+        <xsl:when test="count($facets) = 1">
+          <xsl:variable name="facet-values">
+            <xsl:apply-templates select="$facets/*" mode="search-results" />
+          </xsl:variable>
+          <div class="accordion-inner-content" data-tab-content="">
+            <ul class="open-filters">
+              <xsl:for-each select="$facet-values/li">
+                <xsl:sort select="lower-case(.)" />
+                <xsl:copy-of select="." />
+              </xsl:for-each>
+            </ul>
+          </div>
+        </xsl:when>
+        <xsl:otherwise>
+          <div class="accordion-content" data-tab-content="">
+            <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+              <xsl:apply-templates select="$facets" mode="search-results-nested" />
+            </ul>
+          </div>
+        </xsl:otherwise>
+      </xsl:choose>
+    </li>
   </xsl:template>
 
   <xsl:template name="make-deselect-facet-url">

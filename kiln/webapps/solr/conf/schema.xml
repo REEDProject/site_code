@@ -203,14 +203,32 @@
           name="facet_locations_country" required="false" stored="true"
           type="int" />
    <field indexed="true" multiValued="true"
+          name="facet_locations_archdeaconry" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
           name="facet_locations_diocese" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_province" required="false"
           stored="true" type="int" />
    <field indexed="true" multiValued="true"
           name="facet_locations_county" required="false" stored="true"
           type="int" />
    <field indexed="true" multiValued="true"
+          name="facet_locations_duchy" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_liberty" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_manor" required="false"
+          stored="true" type="int" />
+   <field indexed="true" multiValued="true"
           name="facet_locations_settlement" required="false" stored="true"
           type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_locations_ward" required="false"
+          stored="true" type="int" />
    <field indexed="true" multiValued="true"
           name="facet_locations_feature_type" required="false" stored="true"
           type="string" />
@@ -241,9 +259,6 @@
    <field indexed="true" multiValued="true"
           name="facet_locations_feature_open_area" required="false"
           stored="true" type="int" />
-   <field indexed="true" multiValued="true"
-          name="facet_locations_feature_other" required="false" stored="true"
-          type="int" />
    <field indexed="true" multiValued="true"
           name="facet_locations_feature_place_of_punishment" required="false"
           stored="true" type="int" />
