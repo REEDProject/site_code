@@ -9,15 +9,47 @@
   <!-- The order of the facet.field elements determines the order of
        display (within categories defined in templates/search.xml. -->
   <facet.field>facet_locations_country</facet.field>
+  <facet.field>facet_locations_archdeaconry</facet.field>
   <facet.field>facet_locations_diocese</facet.field>
+  <facet.field>facet_locations_province</facet.field>
   <facet.field>facet_locations_county</facet.field>
+  <facet.field>facet_locations_duchy</facet.field>
+  <facet.field>facet_locations_liberty</facet.field>
+  <facet.field>facet_locations_manor</facet.field>
   <facet.field>facet_locations_settlement</facet.field>
-  <facet.field>facet_locations_feature</facet.field>
+  <facet.field>facet_locations_ward</facet.field>
+  <facet.field>facet_locations_feature_type</facet.field>
+  <facet.field>facet_locations_feature_arena</facet.field>
+  <facet.field>facet_locations_feature_bridge</facet.field>
+  <facet.field>facet_locations_feature_church</facet.field>
+  <facet.field>facet_locations_feature_church_house</facet.field>
+  <facet.field>facet_locations_feature_gate</facet.field>
+  <facet.field>facet_locations_feature_guild_hall</facet.field>
+  <facet.field>facet_locations_feature_hospital</facet.field>
+  <facet.field>facet_locations_feature_inn_of_court</facet.field>
+  <facet.field>facet_locations_feature_open_area</facet.field>
+  <facet.field>facet_locations_feature_place_of_punishment</facet.field>
+  <facet.field>facet_locations_feature_playhouse</facet.field>
+  <facet.field>facet_locations_feature_property</facet.field>
+  <facet.field>facet_locations_feature_religious_house</facet.field>
+  <facet.field>facet_locations_feature_residence</facet.field>
+  <facet.field>facet_locations_feature_school</facet.field>
+  <facet.field>facet_locations_feature_street</facet.field>
+  <facet.field>facet_locations_feature_town_hall</facet.field>
+  <facet.field>facet_locations_feature_victualling_house</facet.field>
+  <facet.field>facet_locations_feature_water_feature</facet.field>
   <facet.field>facet_days_secular</facet.field>
   <facet.field>facet_days_liturgical</facet.field>
-  <facet.field>facet_people_named</facet.field>
+  <facet.field>facet_people_named_a_to_c</facet.field>
+  <facet.field>facet_people_named_d_to_f</facet.field>
+  <facet.field>facet_people_named_g_to_i</facet.field>
+  <facet.field>facet_people_named_j_to_l</facet.field>
+  <facet.field>facet_people_named_m_to_o</facet.field>
+  <facet.field>facet_people_named_p_to_r</facet.field>
+  <facet.field>facet_people_named_s_to_u</facet.field>
+  <facet.field>facet_people_named_v_to_z</facet.field>
+  <facet.field>facet_people_named_other</facet.field>
   <facet.field>facet_people_gender</facet.field>
-  <facet.field>facet_people_status</facet.field>
   <facet.field>facet_collectives_clergy</facet.field>
   <facet.field>facet_collectives_guild_occupational</facet.field>
   <facet.field>facet_collectives_guild_religious</facet.field>
@@ -32,7 +64,6 @@
   <facet.field>facet_entertainments_animal</facet.field>
   <facet.field>facet_drama_type</facet.field>
   <facet.field>facet_drama_work</facet.field>
-  <facet.field>facet_drama_status</facet.field>
   <facet.field>facet_drama_character</facet.field>
   <facet.field>facet_materials_book</facet.field>
   <facet.field>facet_materials_cloth</facet.field>

@@ -44,14 +44,49 @@
   <xsl:variable name="person_male" select="'entity_type-531'" />
   <xsl:variable name="person_nobility" select="'entity_type-533'" />
   <xsl:variable name="person_royalty" select="'entity_type-535'" />
-  <xsl:variable name="location_borough" select="'entity_type-539'" />
-  <xsl:variable name="location_church" select="'entity_type-4833'" />
   <xsl:variable name="location_country" select="'entity_type-541'" />
   <xsl:variable name="location_county" select="'entity_type-543'" />
-  <xsl:variable name="location_ecclesiastical" select="'entity_type-545'" />
+  <xsl:variable name="location_duchy" select="'entity_type-259881'" />
+  <xsl:variable name="location_ea_archdeaconry" select="'entity_type-249050'" />
+  <xsl:variable name="location_ea_diocese" select="'entity_type-249052'" />
+  <xsl:variable name="location_ea_province" select="'entity_type-249054'" />
   <xsl:variable name="location_feature" select="'entity_type-21368'" />
-  <xsl:variable name="location_household" select="'entity_type-547'" />
-  <xsl:variable name="location_religious_house" select="'entity_type-551'" />
+  <xsl:variable name="location_feature_arena" select="'entity_type-4831'" />
+  <xsl:variable name="location_feature_bridge" select="'entity_type-247662'" />
+  <xsl:variable name="location_feature_church" select="'entity_type-4833'" />
+  <xsl:variable name="location_feature_church_house"
+                select="'entity_type-4835'" />
+  <xsl:variable name="location_feature_gate" select="'entity_type-247664'" />
+  <xsl:variable name="location_feature_guild_hall"
+                select="'entity_type-4839'" />
+  <xsl:variable name="location_feature_hospital"
+                select="'entity_type-247666'" />
+  <xsl:variable name="location_feature_inn_of_court"
+                select="'entity_type-4843'" />
+  <xsl:variable name="location_feature_open_area"
+                select="'entity_type-4845'" />
+  <xsl:variable name="location_feature_place_of_punishment"
+                select="'entity_type-247670'" />
+  <xsl:variable name="location_feature_playhouse"
+                select="'entity_type-4851'" />
+  <xsl:variable name="location_feature_property"
+                select="'entity_type-247674'" />
+  <xsl:variable name="location_feature_religious_house"
+                select="'entity_type-551'" />
+  <xsl:variable name="location_feature_residence"
+                select="'entity_type-247672'" />
+  <xsl:variable name="location_feature_school" select="'entity_type-4847'" />
+  <xsl:variable name="location_feature_street" select="'entity_type-247676'" />
+  <xsl:variable name="location_feature_town_hall"
+                select="'entity_type-4853'" />
+  <xsl:variable name="location_feature_victualling_house"
+                select="'entity_type-4841'" />
+  <xsl:variable name="location_feature_water_feature"
+                select="'entity_type-247678'" />
+  <xsl:variable name="location_pa_liberty" select="'entity_type-248915'" />
+  <xsl:variable name="location_pa_manor" select="'entity_type-248917'" />
+  <xsl:variable name="location_pa_settlement" select="'entity_type-248913'" />
+  <xsl:variable name="location_pa_ward" select="'entity_type-248919'" />
   <xsl:variable name="material_book" select="'entity_type-4951'" />
   <xsl:variable name="material_cloth" select="'entity_type-4959'" />
   <xsl:variable name="material_costume" select="'entity_type-4961'" />
@@ -70,11 +105,14 @@
                 select="'entity_relationship_type-21008'" />
   <xsl:variable name="patronized" select="'entity_relationship_type-12724'" />
   <!-- Collections of types -->
+  <xsl:variable name="location_ecclesiastical_areas"
+                select="($location_ea_archdeaconry, $location_ea_diocese, $location_ea_province)" />
+  <xsl:variable name="location_features"
+                select="($location_feature_arena, $location_feature_bridge, $location_feature_church, $location_feature_church_house, $location_feature_gate, $location_feature_guild_hall, $location_feature_hospital, $location_feature_inn_of_court, $location_feature_open_area, $location_feature_place_of_punishment, $location_feature_playhouse, $location_feature_property, $location_feature_religious_house, $location_feature_residence, $location_feature_school, $location_feature_street, $location_feature_town_hall, $location_feature_victualling_house, $location_feature_water_feature)" />
+  <xsl:variable name="location_populated_areas"
+                select="($location_pa_liberty, $location_pa_manor, $location_pa_settlement, $location_pa_ward)" />
   <xsl:variable name="locations"
-                select="($location_borough, $location_church, $location_country,
-                        $location_county, $location_ecclesiastical,
-                        $location_feature, $location_household,
-                        $location_religious_house)" />
+                select="($location_country, $location_county, $location_duchy, $location_ecclesiastical_areas, $location_populated_areas, $location_features)" />
 
   <xsl:template match="/">
     <entities>
@@ -272,8 +310,25 @@
         <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>
-    <xsl:if test=". = $location_ecclesiastical">
-      <field name="facet_locations_diocese">
+    <xsl:if test=". = $location_ecclesiastical_areas">
+      <xsl:variable name="field">
+        <xsl:choose>
+          <xsl:when test=". = $location_ea_archdeaconry">
+            <xsl:text>archdeaconry</xsl:text>
+          </xsl:when>
+        </xsl:choose>
+        <xsl:choose>
+          <xsl:when test=". = $location_ea_diocese">
+            <xsl:text>diocese</xsl:text>
+          </xsl:when>
+        </xsl:choose>
+        <xsl:choose>
+          <xsl:when test=". = $location_ea_province">
+            <xsl:text>province</xsl:text>
+          </xsl:when>
+        </xsl:choose>
+      </xsl:variable>
+      <field name="facet_locations_{$field}">
         <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>
@@ -282,16 +337,169 @@
         <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>
-    <xsl:if test=". = ($location_borough, $location_household,
-                  $location_religious_house)">
-      <field name="facet_locations_settlement">
+    <xsl:if test=". = $location_duchy">
+      <field name="facet_locations_duchy">
         <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>
-    <xsl:if test=". = $location_feature">
-      <field name="facet_locations_feature">
+    <xsl:if test=". = $location_populated_areas">
+      <xsl:variable name="field">
+        <xsl:choose>
+          <xsl:when test=". = $location_pa_liberty">
+            <xsl:text>liberty</xsl:text>
+          </xsl:when>
+          <xsl:when test=". = $location_pa_manor">
+            <xsl:text>manor</xsl:text>
+          </xsl:when>
+          <xsl:when test=". = $location_pa_settlement">
+            <xsl:text>settlement</xsl:text>
+          </xsl:when>
+          <xsl:when test=". = $location_pa_ward">
+            <xsl:text>ward</xsl:text>
+          </xsl:when>
+        </xsl:choose>
+      </xsl:variable>
+      <field name="facet_locations_{$field}">
         <xsl:value-of select="$entity_eats_id" />
       </field>
+    </xsl:if>
+    <!-- Feature locations. -->
+    <xsl:if test=". = $location_features">
+      <xsl:choose>
+        <xsl:when test=". = $location_feature_arena">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Arena'" />
+            <xsl:with-param name="type" select="'arena'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_bridge">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Bridge'" />
+            <xsl:with-param name="type" select="'bridge'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_church">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Church'" />
+            <xsl:with-param name="type" select="'church'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_church_house">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Church House'" />
+            <xsl:with-param name="type" select="'church_house'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_gate">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Gate'" />
+            <xsl:with-param name="type" select="'gate'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_guild_hall">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Guild Hall'" />
+            <xsl:with-param name="type" select="'guild_hall'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_hospital">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Hospital'" />
+            <xsl:with-param name="type" select="'hospital'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_inn_of_court">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Inn of Court'" />
+            <xsl:with-param name="type" select="'inn_of_court'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_open_area">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Open Area'" />
+            <xsl:with-param name="type" select="'open_area'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_place_of_punishment">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Place of Punishment'" />
+            <xsl:with-param name="type" select="'place_of_punishment'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_playhouse">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Playhouse'" />
+            <xsl:with-param name="type" select="'playhouse'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_property">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Property'" />
+            <xsl:with-param name="type" select="'property'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_religious_house">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Religious House'" />
+            <xsl:with-param name="type" select="'religious_house'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_residence">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Residence'" />
+            <xsl:with-param name="type" select="'residence'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_school">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'School'" />
+            <xsl:with-param name="type" select="'school'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_street">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Street'" />
+            <xsl:with-param name="type" select="'street'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_town_hall">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Town Hall'" />
+            <xsl:with-param name="type" select="'town_hall'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_victualling_house">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Victualling House'" />
+            <xsl:with-param name="type" select="'victualling_house'" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test=". = $location_feature_water_feature">
+          <xsl:call-template name="add_location_feature_fields">
+            <xsl:with-param name="entity_eats_id" select="$entity_eats_id" />
+            <xsl:with-param name="name" select="'Water Feature'" />
+            <xsl:with-param name="type" select="'water_feature'" />
+          </xsl:call-template>
+        </xsl:when>
+      </xsl:choose>
     </xsl:if>
     <!-- Material Objects -->
     <xsl:if test=". = $material_instrument">
@@ -343,7 +551,39 @@
     <xsl:if test=". = ($person_clergy, $person_commoner, $person_female,
                   $person_gentry, $person_unknown, $person_male,
                   $person_nobility, $person_royalty)">
-      <field name="facet_people_named">
+      <xsl:variable name="name-initial" select="lower-case(substring(normalize-unicode(ancestor::eats:entity/eats:names/eats:name[@is_preferred='true'][1]/eats:assembled_form, 'NFD'), 1, 1))" />
+      <xsl:variable name="initial-field">
+        <xsl:choose>
+          <xsl:when test="$name-initial = ('a', 'b', 'c', 'æ')">
+            <xsl:text>a_to_c</xsl:text>
+          </xsl:when>
+          <xsl:when test="$name-initial = ('d', 'e', 'f')">
+            <xsl:text>d_to_f</xsl:text>
+          </xsl:when>
+          <xsl:when test="$name-initial = ('g', 'h', 'i')">
+            <xsl:text>g_to_i</xsl:text>
+          </xsl:when>
+          <xsl:when test="$name-initial = ('j', 'k', 'l')">
+            <xsl:text>j_to_l</xsl:text>
+          </xsl:when>
+          <xsl:when test="$name-initial = ('m', 'n', 'o')">
+            <xsl:text>m_to_o</xsl:text>
+          </xsl:when>
+          <xsl:when test="$name-initial = ('p', 'q', 'r')">
+            <xsl:text>p_to_r</xsl:text>
+          </xsl:when>
+          <xsl:when test="$name-initial = ('s', 't', 'u')">
+            <xsl:text>s_to_u</xsl:text>
+          </xsl:when>
+          <xsl:when test="$name-initial = ('v', 'w', 'x', 'y', 'z')">
+            <xsl:text>v_to_z</xsl:text>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:text>other</xsl:text>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+      <field name="facet_people_named_{$initial-field}">
         <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>
@@ -387,6 +627,18 @@
         <xsl:text>commoners</xsl:text>
       </field>
     </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="add_location_feature_fields">
+    <xsl:param name="entity_eats_id"/>
+    <xsl:param name="name"/>
+    <xsl:param name="type"/>
+    <field name="facet_locations_feature_{$type}">
+      <xsl:value-of select="$entity_eats_id" />
+    </field>
+    <field name="facet_locations_feature_type">
+      <xsl:value-of select="$name" />
+    </field>
   </xsl:template>
 
 </xsl:stylesheet>
