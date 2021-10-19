@@ -14,15 +14,16 @@
 
   <!-- Variables defining the sets of facets (in display order) in
        each collection of facets. -->
-  <xsl:variable name="location_facets"
-                select="('facet_locations_country', 'facet_locations_diocese',
-                        'facet_locations_county', 'facet_locations_settlement',
-                        'facet_locations_feature')" />
+  <xsl:variable name="location_ecclesiastical_area_facets"
+                select="('facet_locations_archdeaconry', 'facet_locations_diocese', 'facet_locations_province')" />
+  <xsl:variable name="location_populated_area_facets"
+                select="('facet_locations_liberty', 'facet_locations_manor', 'facet_locations_settlement', 'facet_locations_ward')" />
+  <xsl:variable name="location_feature_facets"
+                select="('facet_locations_feature_arena', 'facet_locations_feature_bridge', 'facet_locations_feature_church', 'facet_locations_feature_church_house', 'facet_locations_feature_gate', 'facet_locations_feature_guild_hall', 'facet_locations_feature_hospital', 'facet_locations_feature_inn_of_court', 'facet_locations_feature_open_area', 'facet_locations_feature_place_of_punishment', 'facet_locations_feature_playhouse', 'facet_locations_feature_property', 'facet_locations_feature_religious_house', 'facet_locations_feature_residence', 'facet_locations_feature_school', 'facet_locations_feature_street', 'facet_locations_feature_town_hall', 'facet_locations_feature_victualling_house', 'facet_locations_feature_water_feature')" />
   <xsl:variable name="day_facets"
                 select="('facet_days_secular', 'facet_days_liturgical')" />
-  <xsl:variable name="people_facets"
-                select="('facet_people_named', 'facet_people_gender',
-                        'facet_people_status')" />
+  <xsl:variable name="people_named_facets"
+                select="('facet_people_named_a_to_c', 'facet_people_named_d_to_f', 'facet_people_named_g_to_i', 'facet_people_named_j_to_l', 'facet_people_named_m_to_o', 'facet_people_named_p_to_r', 'facet_people_named_s_to_u', 'facet_people_named_v_to_z', 'facet_people_named_other')" />
   <xsl:variable name="collective_facets"
                 select="('facet_collectives_clergy',
                         'facet_collectives_occupation',
@@ -40,7 +41,7 @@
                         'facet_entertainments_animal')" />
   <xsl:variable name="drama_facets"
                 select="('facet_drama_type', 'facet_drama_work',
-                        'facet_drama_status', 'facet_drama_character')" />
+                        'facet_drama_character')" />
   <xsl:variable name="material_facets"
                 select="('facet_materials_instrument',
                         'facet_materials_book', 'facet_materials_property',
@@ -106,7 +107,40 @@
                   <div class="filter-content-wrapper">
                     <div class="filter-content">
                       <ul class="accordion" data-accordion="" data-allow-all-closed="true">
-                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$location_facets]" mode="search-results" />
+                        <!-- Country -->
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name='facet_locations_country']" mode="search-results" />
+                        <!-- Ecclesiastical Area nested facets -->
+                        <xsl:call-template name="display-nested-facets">
+                          <xsl:with-param name="facets" select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$location_ecclesiastical_area_facets]" />
+                          <xsl:with-param name="title" select="'Ecclesiastical Area'" />
+                        </xsl:call-template>
+                        <!-- County -->
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name='facet_locations_county']" mode="search-results" />
+                        <!-- Duchy -->
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name='facet_locations_duchy']" mode="search-results" />
+                        <!-- Populated Area nested facets -->
+                        <xsl:call-template name="display-nested-facets">
+                          <xsl:with-param name="facets" select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$location_populated_area_facets]" />
+                          <xsl:with-param name="title" select="'Populated Area'" />
+                        </xsl:call-template>
+                        <!-- Feature nested facets -->
+                        <li class="accordion-item" data-accordion-item="">
+                          <a href="#" class="accordion-title">Feature</a>
+                          <div class="accordion-content" data-tab-content="">
+                            <ul class="accordion" data-accordion="" data-allow-all-closed="true" role="tablist">
+                              <xsl:call-template name="display-nested-facets">
+                                <xsl:with-param name="facets" select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name='facet_locations_feature_type']" />
+                                <xsl:with-param name="inner" select="true()" />
+                                <xsl:with-param name="title" select="'Filter by feature type'" />
+                              </xsl:call-template>
+                              <xsl:call-template name="display-nested-facets">
+                                <xsl:with-param name="facets" select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$location_feature_facets]" />
+                                <xsl:with-param name="inner" select="true()" />
+                                <xsl:with-param name="title" select="'Filter by specific feature'" />
+                              </xsl:call-template>
+                            </ul>
+                          </div>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -126,7 +160,11 @@
                   <div class="filter-content-wrapper">
                     <div class="filter-content">
                       <ul class="accordion" data-accordion="" data-allow-all-closed="true">
-                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$people_facets]" mode="search-results" />
+                        <xsl:call-template name="display-nested-facets">
+                          <xsl:with-param name="facets" select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$people_named_facets]" />
+                          <xsl:with-param name="title" select="'Named'" />
+                        </xsl:call-template>
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name='facet_people_gender']" mode="search-results" />
                       </ul>
                     </div>
                   </div>
