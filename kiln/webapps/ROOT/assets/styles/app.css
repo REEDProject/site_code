@@ -8854,3 +8854,7 @@ table:not(#table):not(#result-table):not(.related-entities-table) tbody tr td, t
 .filter .filter-content-wrapper .filter-content .accordion>li>.accordion-content>.accordion>li>.accordion>li.is-active {
     border: none;
 }
+
+#result-table tbody a:visited, #table tbody a:visited {
+    color: #94bfbc;
+}
