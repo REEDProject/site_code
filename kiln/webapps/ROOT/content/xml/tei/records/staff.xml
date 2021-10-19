@@ -11413,7 +11413,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46934096">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4062/" type="Place_Household">Ferrers of Walton on Trent and Tamworth</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:entity-298148" type="Person_Family">Ferrers</rs> of <rs ref="eats:entity-297118" type="Place_F_Residence">Walton on Trent</rs> and <rs ref="eats:entity-297979" type="Place_F_Residence">Tamworth</rs>
             <date when-iso="1605">1605</date>
             <seg ana="taxon:STFHA1">STFHA1</seg></head>
           <div type="transcription" xml:id="staff-ridm46934096-transcription">
@@ -11485,7 +11485,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46913456">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4062/" type="Place_Household">Ferrers of Walton on Trent and Tamworth</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:entity-298148" type="Person_Family">Ferrers</rs> of <rs ref="eats:entity-297118" type="Place_F_Residence">Walton on Trent</rs> and <rs ref="eats:entity-297979" type="Place_F_Residence">Tamworth</rs>
             <date from-iso="1601" to-iso="1700">17th Century</date>
             <seg ana="taxon:STFHA2">STFHA2</seg></head>
           <div type="transcription" xml:id="staff-ridm46913456-transcription">
