@@ -156,8 +156,11 @@
    <field indexed="true" multiValued="true"
           name="facet_collectives_clergy" required="false" stored="true"
           type="int" />
-   <field indexed="true" multiValued="true" name="facet_collectives_office"
+   <field indexed="true" multiValued="true" name="facet_collectives_office_type"
           required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true"
+          name="facet_collectives_office_specific" required="false"
+          stored="true" type="int" />
    <field indexed="true" multiValued="true" name="facet_collectives_title"
           required="false" stored="true" type="int" />
    <field indexed="true" multiValued="true"

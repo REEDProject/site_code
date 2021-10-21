@@ -228,11 +228,20 @@
       </field>
     </xsl:if>
     <xsl:if test=". = $collective_office">
-      <field name="facet_collectives_office">
-        <xsl:value-of select="$entity_eats_id" />
-      </field>
+      <xsl:choose>
+        <xsl:when test="../../../eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$is_subset_of][@range_entity=$entity_id]">
+          <field name="facet_collectives_office_type">
+            <xsl:value-of select="$entity_eats_id" />
+          </field>
+        </xsl:when>
+        <xsl:otherwise>
+          <field name="facet_collectives_office_specific">
+            <xsl:value-of select="$entity_eats_id" />
+          </field>
+        </xsl:otherwise>
+      </xsl:choose>
       <xsl:for-each select="../../../eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$is_subset_of][@domain_entity=$entity_id]">
-        <field name="facet_collectives_office">
+        <field name="facet_collectives_office_type">
           <xsl:value-of select="id(@range_entity)/@eats_id" />
         </field>
       </xsl:for-each>
