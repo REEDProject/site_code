@@ -142,6 +142,12 @@
       <xsl:when test=". = 'facet_collectives_guild_religious'">
         <xsl:text>Guild, Religious</xsl:text>
       </xsl:when>
+      <xsl:when test=". = 'facet_collectives_office_specific'">
+        <xsl:text>Filter by specific office</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_collectives_office_type'">
+        <xsl:text>Filter by office type</xsl:text>
+      </xsl:when>
       <xsl:when test=". = 'facet_entertainments_custom'">
         <xsl:text>Seasonal Custom</xsl:text>
       </xsl:when>
