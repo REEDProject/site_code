@@ -24,13 +24,16 @@
                 select="('facet_days_secular', 'facet_days_liturgical')" />
   <xsl:variable name="people_named_facets"
                 select="('facet_people_named_a_to_c', 'facet_people_named_d_to_f', 'facet_people_named_g_to_i', 'facet_people_named_j_to_l', 'facet_people_named_m_to_o', 'facet_people_named_p_to_r', 'facet_people_named_s_to_u', 'facet_people_named_v_to_z', 'facet_people_named_other')" />
-  <xsl:variable name="collective_facets"
+  <xsl:variable name="collective_facets_pre_offices"
                 select="('facet_collectives_clergy',
                         'facet_collectives_occupation',
                         'facet_collectives_guild_occupational',
-                        'facet_collectives_guild_religious',
-                        'facet_collectives_office',
-                        'facet_collectives_title')" />
+                        'facet_collectives_guild_religious')" />
+  <xsl:variable name="collective_facets_post_offices"
+                select="('facet_collectives_title')" />
+  <xsl:variable name="collective_offices_facets"
+                select="('facet_collectives_office_type',
+                        'facet_collectives_office_specific')" />
   <xsl:variable name="entertainer_facets"
                 select="('facet_entertainers_type',
                         'facet_entertainers_troupe',
@@ -174,7 +177,12 @@
                   <div class="filter-content-wrapper">
                     <div class="filter-content">
                       <ul class="accordion" data-accordion="" data-allow-all-closed="true">
-                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$collective_facets]" mode="search-results" />
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$collective_facets_pre_offices]" mode="search-results" />
+                        <xsl:call-template name="display-nested-facets">
+                          <xsl:with-param name="facets" select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$collective_offices_facets]" />
+                          <xsl:with-param name="title" select="'Offices'" />
+                        </xsl:call-template>
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$collective_facets_post_offices]" mode="search-results" />
                       </ul>
                     </div>
                   </div>
