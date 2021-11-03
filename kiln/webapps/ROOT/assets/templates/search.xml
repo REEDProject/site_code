@@ -168,6 +168,7 @@
                           <xsl:with-param name="title" select="'Named'" />
                         </xsl:call-template>
                         <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name='facet_people_gender']" mode="search-results" />
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name='facet_people_family']" mode="search-results" />
                       </ul>
                     </div>
                   </div>

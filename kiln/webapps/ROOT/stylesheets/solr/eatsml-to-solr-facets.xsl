@@ -36,6 +36,7 @@
   <xsl:variable name="entertainment_animal" select="'entity_type-4867'" />
   <xsl:variable name="entertainment_custom" select="'entity_type-4941'" />
   <xsl:variable name="entertainment_type" select="'entity_type-21440'" />
+  <xsl:variable name="person_family" select="'entity_type-23416'" />
   <xsl:variable name="person_clergy" select="'entity_type-523'" />
   <xsl:variable name="person_commoner" select="'entity_type-525'" />
   <xsl:variable name="person_female" select="'entity_type-537'" />
@@ -634,6 +635,11 @@
     <xsl:if test=". = $person_commoner">
       <field name="facet_people_status">
         <xsl:text>commoners</xsl:text>
+      </field>
+    </xsl:if>
+    <xsl:if test=". = $person_family">
+      <field name="facet_people_family">
+        <xsl:value-of select="$entity_eats_id" />
       </field>
     </xsl:if>
   </xsl:template>
