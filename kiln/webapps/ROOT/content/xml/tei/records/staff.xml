@@ -18,18 +18,25 @@
         <respStmt>
           <persName xml:id="KC">Kathy Chung</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Post-doctoral Fellow in Digital Humanities, EATS taxonomy developer and
-            tagger</resp>
+          <!--<resp>1st ed.: Post-doctoral Fellow in Digital Humanities</resp>-->
+          <resp>Research Associate</resp>
+          <resp>Indexer, Entity Tagger</resp>
+          <resp>REED EATS Taxonomy Developer</resp>
+          <resp>REED EATS Database Maintainer</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="JC">James Cummings</persName>
-          <orgName>University of Oxford</orgName>
-          <resp>TEI Schema Designer, Technical Consultant</resp>
+          <!--<orgName>1st ed.:University of Oxford</orgName>-->
+          <resp>Newcastle University</resp>
+          <resp>TEI Schema Designer</resp>
+          <resp>Technical Consultant</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="PG">Patrick Gregory</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Paleographer, Translator, Latin and Anglo-French Glossarian</resp>
+          <resp>Paleographer</resp>
+          <resp>Translator</resp>
+          <resp>Latin and Anglo-French Glossarian</resp>
         </respStmt>
         <respStmt>
           <persName>Tanya Hagen</persName>
@@ -39,17 +46,24 @@
         <respStmt>
           <persName>Janine Harper</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>English Glossarian, Proofreader</resp>
+          <resp>English Glossarian</resp>
+          <resp>Proofreader</resp>
         </respStmt>
         <respStmt>
-          <persName>Alexandra F. Johnston</persName>
+          <persName>Cai Henderson  </persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>REED Founder and Senior Consultant</resp>
+          <resp>Bibliographic Assistant</resp>
         </respStmt>
+        <respStmt>
+          <persName>Stephanie Hovland </persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>UK Paleographer</resp>
+        </respStmt> 
         <respStmt>
           <persName>Sally-Beth MacLean</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Principal Investigator, SSHRC grant; Director of Research and General Editor</resp>
+          <resp>Principal Investigator, SSHRC grant</resp>
+          <resp>Director of Research and General Editor</resp>
         </respStmt>
         <respStmt>
           <persName>Byron Moldofsky</persName>
@@ -58,12 +72,9 @@
         </respStmt>
         <respStmt>
           <persName xml:id="JN">Jamie Norrish</persName>
-          <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Kaitlin Persaud</persName>
-          <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>EATS events taxonomy developer and tagger</resp>
+          <resp>Programmer</resp>
+          <resp>TEI Schema Designer</resp>
+          <resp>Technical Consultant</resp>
         </respStmt>
         <respStmt>
           <persName>Suzanne Westfall</persName>
@@ -76,7 +87,10 @@
         </respStmt>
       </titleStmt>
       <editionStmt>
-        <edition>version 1, released <date when-iso="2017-03-03">3 March 2017</date></edition>
+        <edition>
+          version 2, <date when-iso="2021-11-30">30 Nov 2021</date>
+        </edition>
+        <!--<edition>version 1, released <date when-iso="2017-03-03">3 March 2017</date></edition>-->
       </editionStmt>
       <publicationStmt>
         <authority><orgName>Records of Early English Drama (REED)</orgName>
