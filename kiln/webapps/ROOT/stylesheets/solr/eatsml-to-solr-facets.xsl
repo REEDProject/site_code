@@ -362,7 +362,16 @@
             <xsl:text>manor</xsl:text>
           </xsl:when>
           <xsl:when test=". = $location_pa_settlement">
-            <xsl:text>settlement</xsl:text>
+            <xsl:variable name="name-initial" select="lower-case(substring(normalize-unicode(ancestor::eats:entity/eats:names/eats:name[@is_preferred='true'][1]/eats:assembled_form, 'NFD'), 1, 1))" />
+            <xsl:text>settlement_</xsl:text>
+            <xsl:choose>
+              <xsl:when test="matches($name-initial, '[a-z]')">
+                <xsl:value-of select="$name-initial" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:text>other</xsl:text>
+              </xsl:otherwise>
+            </xsl:choose>
           </xsl:when>
           <xsl:when test=". = $location_pa_ward">
             <xsl:text>ward</xsl:text>
@@ -564,29 +573,11 @@
       <xsl:variable name="name-initial" select="lower-case(substring(normalize-unicode(ancestor::eats:entity/eats:names/eats:name[@is_preferred='true'][1]/eats:assembled_form, 'NFD'), 1, 1))" />
       <xsl:variable name="initial-field">
         <xsl:choose>
-          <xsl:when test="$name-initial = ('a', 'b', 'c', 'æ')">
-            <xsl:text>a_to_c</xsl:text>
+          <xsl:when test="$name-initial = 'æ'">
+            <xsl:text>a</xsl:text>
           </xsl:when>
-          <xsl:when test="$name-initial = ('d', 'e', 'f')">
-            <xsl:text>d_to_f</xsl:text>
-          </xsl:when>
-          <xsl:when test="$name-initial = ('g', 'h', 'i')">
-            <xsl:text>g_to_i</xsl:text>
-          </xsl:when>
-          <xsl:when test="$name-initial = ('j', 'k', 'l')">
-            <xsl:text>j_to_l</xsl:text>
-          </xsl:when>
-          <xsl:when test="$name-initial = ('m', 'n', 'o')">
-            <xsl:text>m_to_o</xsl:text>
-          </xsl:when>
-          <xsl:when test="$name-initial = ('p', 'q', 'r')">
-            <xsl:text>p_to_r</xsl:text>
-          </xsl:when>
-          <xsl:when test="$name-initial = ('s', 't', 'u')">
-            <xsl:text>s_to_u</xsl:text>
-          </xsl:when>
-          <xsl:when test="$name-initial = ('v', 'w', 'x', 'y', 'z')">
-            <xsl:text>v_to_z</xsl:text>
+          <xsl:when test="matches($name-initial, '[a-z]')">
+            <xsl:value-of select="$name-initial" />
           </xsl:when>
           <xsl:otherwise>
             <xsl:text>other</xsl:text>

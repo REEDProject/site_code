@@ -226,9 +226,61 @@
    <field indexed="true" multiValued="true"
           name="facet_locations_manor" required="false"
           stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_a"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_b"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_c"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_d"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_e"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_f"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_g"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_h"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_i"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_j"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_k"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_l"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_m"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_n"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_o"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_p"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_q"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_r"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_s"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_t"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_u"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_v"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_w"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_x"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_y"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_locations_settlement_z"
+          required="false" stored="true" type="int" />
    <field indexed="true" multiValued="true"
-          name="facet_locations_settlement" required="false" stored="true"
-          type="int" />
+          name="facet_locations_settlement_other" required="false"
+          stored="true" type="int" />
    <field indexed="true" multiValued="true"
           name="facet_locations_ward" required="false"
           stored="true" type="int" />
@@ -319,28 +371,57 @@
    <field indexed="true" multiValued="true"
           name="facet_materials_food" required="false" stored="true"
           type="int" />
-   <field indexed="true" multiValued="true"
-          name="facet_people_named_a_to_c" required="false" stored="true"
-          type="int" />
-   <field indexed="true" multiValued="true"
-          name="facet_people_named_d_to_f" required="false" stored="true"
-          type="int" />
-   <field indexed="true" multiValued="true"
-          name="facet_people_named_g_to_i" required="false" stored="true"
-          type="int" />
-   <field indexed="true" multiValued="true"
-          name="facet_people_named_j_to_l" required="false" stored="true"
-          type="int" />
-   <field indexed="true" multiValued="true"
-          name="facet_people_named_m_to_o" required="false" stored="true"
-          type="int" />
-   <field indexed="true" multiValued="true"
-          name="facet_people_named_p_to_r" required="false" stored="true"
-          type="int" />
-   <field indexed="true" multiValued="true"
-          name="facet_people_named_s_to_u" required="false" stored="true"
-          type="int" />
-   <field indexed="true" multiValued="true" name="facet_people_named_v_to_z"
+   <field indexed="true" multiValued="true" name="facet_people_named_a"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_b"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_c"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_d"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_e"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_f"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_g"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_h"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_i"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_j"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_k"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_l"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_m"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_n"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_o"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_p"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_q"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_r"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_s"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_t"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_u"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_v"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_w"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_x"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_y"
+          required="false" stored="true" type="int" />
+   <field indexed="true" multiValued="true" name="facet_people_named_z"
           required="false" stored="true" type="int" />
    <field indexed="true" multiValued="true" name="facet_people_named_other"
           required="false" stored="true" type="int" />
