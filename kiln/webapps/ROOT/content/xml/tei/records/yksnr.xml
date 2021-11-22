@@ -10,7 +10,79 @@
     <funder><orgName>Social Sciences and Humanities Research Council, Ottawa,
      Canada</orgName></funder>
     <editor>David N. Klausner</editor>
+    <respStmt>
+     <persName xml:id="KC">Kathy Chung</persName>
+     <orgName>Records of Early English Drama (REED)</orgName>
+     <resp>Indexer, Entity Tagger</resp>
+     <resp>REED EATS Taxonomy Developer</resp>
+     <resp>REED EATS Database Maintainer</resp>
+    </respStmt>
+    <respStmt>
+     <persName xml:id="JC">James Cummings</persName>
+     <!--<orgName>1st ed.: University of Oxford</orgName>-->
+     <orgName>Newcastle University</orgName>
+     <resp>TEI Schema Designer</resp>
+     <resp>Technical Consultant</resp>
+    </respStmt>
+    <respStmt>
+     <persName xml:id="PG">Patrick Gregory</persName>
+     <orgName>Records of Early English Drama (REED)</orgName>
+     <resp>Paleographer</resp>
+     <resp>Translator</resp>
+     <resp>Glossarian</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Tanya Hagen</persName>
+     <orgName>Records of Early English Drama (REED)</orgName>
+     <resp>Bibliographer</resp>
+     <resp>Copy Editor</resp>
+     <resp>Proofreader</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Stephanie Hovland</persName>
+     <orgName>Records of Early English Drama (REED)</orgName>
+     <resp>UK Paleographer</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Sally-Beth MacLean</persName>
+     <orgName>Records of Early English Drama (REED)</orgName>
+     <resp>Principal Investigator, SSHRC grant</resp>
+     <resp>Director of Research</resp>
+     <resp>General Editor</resp>
+     <resp>Interim Project Manager</resp>
+    </respStmt> 
+    <respStmt>
+     <persName>Byron Moldofsky</persName>
+     <orgName>University of Toronto</orgName>
+     <resp>Cartographer</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Illya Nokhrin</persName>
+     <orgName>Records of Early English Drama (REED)</orgName>
+     <resp>Research Assistant</resp>
+     <resp>Indexer, Entity Tagger</resp>
+     <resp>REED EATS taxonomy developer</resp>
+     <resp>REED EATS database maintainer</resp>
+    </respStmt>
+    <respStmt>
+     <persName xml:id="JN">Jamie Norrish</persName>
+     <resp>Programmer</resp>
+     <resp>TEI Schema Designer</resp>
+     <resp>Technical Consultant</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Sim Ong</persName>
+     <orgName>Records of Early English Drama (REED)</orgName>
+     <resp>Bibliographic Assistant</resp> 
+    </respStmt>
    </titleStmt>
+   
+   <editionStmt>
+    <edition>
+     Version 1, released <date when-iso="2021-11-30">30 November 2021.</date>
+    </edition>
+   </editionStmt>
+    
    <publicationStmt>
     <authority><orgName>Records of Early English Drama (REED)</orgName>
      <address>
@@ -27,14 +99,17 @@
       licence.</licence>
     </availability>
    </publicationStmt>
+    
    <seriesStmt>
     <title>Records of Early English Drama</title>
    </seriesStmt>
+    
    <sourceDesc>
     <p>Born digital. Information on original sources for transcriptions can be accessed via
      taxonomy.xml.</p>
-   </sourceDesc>
+   </sourceDesc>    
   </fileDesc>
+  
   <encodingDesc>
    <listPrefixDef>
     <prefixDef ident="eats" matchPattern="([0-9]+)" replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/">
@@ -53,13 +128,16 @@
    </listPrefixDef>
   </encodingDesc>
   <profileDesc>
-   <langUsage>
+    <langUsage>
     <language ident="eng">English</language>
     <language ident="lat">Latin</language>
     <language ident="ang">Anglo-Saxon</language>
     <language ident="fra">French</language>
    </langUsage>
   </profileDesc>
+  <revisionDesc>
+   <change when="2021-11-30" who="#IN">Published version 1 of yksnr.xml</change>
+  </revisionDesc>
  </teiHeader>
  <text>
   <front>
