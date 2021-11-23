@@ -24,19 +24,23 @@
                                 <respStmt>
                                         <persName xml:id="KC">Kathy Chung</persName>
                                         <orgName>Records of Early English Drama (REED)</orgName>
-                                        <resp>Indexer, EATS taxonomy developer and database
-                                                maintainer</resp>
+                                        <resp>Indexer, Entity Tagger</resp>
+                                        <resp>REED EATS Taxonomy Developer</resp>
+                                        <resp>REED EATS Database Maintainer</resp>
                                 </respStmt>
                                 <respStmt>
                                         <persName xml:id="JC">James Cummings</persName>
-                                        <orgName>University of Oxford</orgName>
-                                        <resp>TEI Schema Designer, Technical Consultant</resp>
+                                        <!--<orgName>1st ed.: University of Oxford</orgName>-->
+                                        <orgName>Newcastle University</orgName>
+                                        <resp>TEI Schema Designer</resp>
+                                        <resp>Technical Consultant</resp>
                                 </respStmt>
                                 <respStmt>
                                         <persName xml:id="PG">Patrick Gregory</persName>
                                         <orgName>Records of Early English Drama (REED)</orgName>
-                                        <resp>Paleographer, Co-Translator, Latin and Anglo-French
-                                                Glossarian</resp>
+                                        <resp>Paleographer</resp>
+                                        <resp>Co-Translator</resp>
+                                        <resp>Latin and Anglo-French Glossarian</resp>
                                 </respStmt>
                                 <respStmt>
                                         <persName>Tanya Hagen</persName>
@@ -46,23 +50,26 @@
                                 <respStmt>
                                         <persName>Janine Harper</persName>
                                         <orgName>Records of Early English Drama (REED)</orgName>
-                                        <resp>English Glossarian, Proofreader</resp>
+                                        <resp>English Glossarian</resp>
+                                        <resp>Proofreader</resp>
                                 </respStmt>
                                 <respStmt>
                                         <persName>Cai Henderson</persName>
                                         <orgName>Records of Early English Drama (REED)</orgName>
-                                        <resp>Co-Translator, Paleographer</resp>
+                                        <resp>Co-Translator</resp>
+                                        <resp>Paleographer</resp>
                                 </respStmt>
                                 <respStmt>
-                                        <persName>Alexandra F. Johnston</persName>
+                                        <persName>Stephanie Hovland</persName>
                                         <orgName>Records of Early English Drama (REED)</orgName>
-                                        <resp>REED Founder and Senior Consultant</resp>
+                                        <resp>UK Paleographer</resp>
                                 </respStmt>
                                 <respStmt>
                                         <persName>Sally-Beth MacLean</persName>
                                         <orgName>Records of Early English Drama (REED)</orgName>
-                                        <resp>Principal Investigator, SSHRC grant; Director of
-                                                Research and General Editor</resp>
+                                        <resp>Principal Investigator, SSHRC grant</resp>
+                                        <resp>Director of Research</resp>
+                                        <resp>General Editor</resp>
                                 </respStmt>
                                 <respStmt>
                                         <persName>Byron Moldofsky</persName>
@@ -71,27 +78,22 @@
                                 </respStmt>
                                 <respStmt>
                                         <persName xml:id="JN">Jamie Norrish</persName>
-                                        <resp>Programmer, TEI Schema Designer, Technical
-                                                Consultant</resp>
-                                </respStmt>
-                                <respStmt>
-                                        <persName>Kaitlin Persaud</persName>
-                                        <orgName>Records of Early English Drama (REED)</orgName>
-                                        <resp>EATS events taxonomy developer and tagger</resp>
+                                        <resp>Programmer</resp>
+                                        <resp>TEI Schema Designer</resp>
+                                        <resp>Technical Consultant</resp>
                                 </respStmt>
                                 <respStmt>
                                         <persName>Jonah Shallit</persName>
                                         <orgName>Records of Early English Drama (REED)</orgName>
                                         <resp>mapping locations</resp>
                                 </respStmt>
-                                <respStmt>
-                                        <persName>Suzanne Westfall</persName>
-                                        <resp>Principal Investigator, NEH grant</resp>
-                                </respStmt>
                         </titleStmt>
                         <editionStmt>
-                                <edition>version 1, released
-                                        <date when-iso="2018-04-16">16 April 2018</date></edition>
+                                <edition>
+                                        Version 2, released <date when-iso="2021-11-30">30 November 2021.</date>
+                                </edition>
+                                <!--<edition>version 1, released
+                                        <date when-iso="2018-04-16">16 April 2018</date></edition>-->
                         </editionStmt>
                         <publicationStmt>
                                 <authority><orgName>Records of Early English Drama (REED)</orgName>
@@ -163,7 +165,10 @@
                 </profileDesc>
                 <revisionDesc>
                         <!-- Add new major milestone changes to top -->
-                        <change when="2021-10-20" who="#KC">Replaced Place_Household tags with Family+Residence tags in supplied headers.</change>
+                        <change when="2021-11-30" who="#IN">Published version 2 of berks.xml</change>
+                        <change when="2021-11-22" who="#KC">Updated Responsibility Statements in File Description and edition number</change>
+                        
+                        <change when="2021-10-20" who="#KC">Replaced Place_Household tags with Residence tags in supplied headers.</change>
                         <change when="2021-03-06" who="#KC">Corrected Kathy Chung's job title.</change>
                         <change when="2020-08-05" who="#KC">Retagged 'Club' in Hoby of Bisham, 1592, BRMPEE record from entity="clubs" to entity="arms/weapons"</change>
                         <change when="2020-01-22" who="#CB">Added new respStmt for Kaitlin Persaud</change>
@@ -2706,7 +2711,7 @@
                                                 Coventry chamberlains. He has been identified as
                                                 Francis Smyth, a local Warwickshire landlord.<note type="foot">Elza C. Tiner, ‘Patrons and Travelling
                                                   Companies in Coventry,’ <title>REED
-                                                  Newsletter</title> 21.1 (1996), 30; REED, <ref target=" https://reed.library.utoronto.ca/"><title>Patrons and
+                                                  Newsletter</title> 21.1 (1996), 30; REED, <ref target=" https://library2.utm.utoronto.ca/otra/reed/"><title>Patrons and
                                                   Performances</title></ref>.</note> The second
                                                 local company was paid the previous year. These were
                                                 to players of ‘<quote source="#berks-ridm253937696">master waynema<ex>n</ex></quote>’ – Richard
@@ -3910,10 +3915,10 @@
                                                 service time. </p>
                                 </div>
                                 <div>
-                                        <head xml:id="traditions-household"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40416/" type="Drama_Type">Household Entertainments</rs></head>
+                                        <head xml:id="traditions-household">Household Entertainments</head>
 
                                         <p>The text of only one household entertainment survives
-                                                from Berkshire – the 1592 entertainment of Queen
+                                                from Berkshire – the 1592 <rs ref="http://ereed.library.utoronto.ca/eats/entity/40416/" type="Drama_Type">entertainment</rs> of Queen
                                                 Elizabeth by her old friend <rs ref="http://ereed.library.utoronto.ca/eats/entity/54169/" type="Person_Nobility">Elizabeth Cooke</rs>, Lady
                                                 Russell, at Bisham. This charming piece seems to
                                                 have been written by Lady Russell herself as a
@@ -7192,7 +7197,7 @@
                         </text>
                         <text ana="taxon:family" type="record" xml:id="berks-ridm252274736">
                                 <body>
-                                        <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1751/" type="Place_County">Berkshire</rs>, <rs ref="eats:entity-78637" type="Person_Family">Hoby</rs> of <rs ref="eats:entity-71569" type="Place_F_Residence">Bisham</rs>
+                                        <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1751/" type="Place_County">Berkshire</rs>, Hoby of <rs ref="eats:71569" type="Place_F_Residence">Bisham</rs>
                                                 <date when-iso="1592">1592</date>
                                                 <seg ana="taxon:BRMPEE">BRMPEE</seg></head>
                                         <div xml:lang="eng" type="transcription" xml:id="berks-ridm252274736-transcription">
@@ -17514,7 +17519,7 @@
                                                   <pb n="223v" type="folio"/>
 
                                                   <ab><gap reason="omitted"/>tandem primo die
-                                                  men<ex>sis</ex> Iulij apud <rs ref="eats:entity-73989" type="Place_PA_Manor">man<ex>er</ex>iu<ex>m</ex> de Sonnyng</rs> Anno
+                                                  men<ex>sis</ex> Iulij apud <rs ref="eats:73989" type="Place_PA_Manor">man<ex>er</ex>iu<ex>m</ex> de Sonnyng</rs> Anno
                                                   d<ex>omi</ex>ni sup<ex>r</ex>ascripto <note type="foot">Anno <gap reason="omitted"/> sup<hi rend="italic">r</hi>ascripto: <hi rend="italic">1389</hi></note> p<ex>re</ex>fatus <rs ref="http://ereed.library.utoronto.ca/eats/entity/65115/" type="Person_Clergy">Reu<ex>er</ex>end<ex>us</ex>
                                                   p<ex>ate</ex>r</rs> p<ex>re</ex>fato <rs ref="http://ereed.library.utoronto.ca/eats/entity/65066/" type="Person_Commoner">Will<ex>el</ex>mo</rs>
                                                   <gap reason="omitted"/> iniunxit q<ex>uo</ex>d
@@ -20532,7 +20537,7 @@
                         </text>
                         <text ana="taxon:family" type="record" xml:id="berks-ridm243804640">
                                 <body>
-                                        <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1751/" type="Place_County">Berkshire</rs>, <rs ref="eats:entity-78660" type="Person_Family">Unton</rs> of <rs ref="eats:entity-74444" type="Place_F_Residence">Wadley</rs> <date when-iso="1596">1596</date>
+                                        <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1751/" type="Place_County">Berkshire</rs>, Unton of <rs ref="eats:74444" type="Place_F_Residence">Wadley</rs> <date when-iso="1596">1596</date>
                                                 <seg ana="taxon:BRUNTO">BRUNTO</seg></head>
                                         <div xml:lang="eng" type="transcription" xml:id="berks-ridm243804640-transcription">
                                                 <div>
@@ -20592,8 +20597,8 @@
                                         </div>
                                         <div type="endnote">
                                                 <p> The notation from Hedges is part of a list of
-                                                  <rs ref="eats:entity-41680" type="CalendarDay_Secular">New Year's</rs> gifts for that year, which also
-                                                  included 20s to the <rs ref="eats:entity-296766" type="Collective_Office">dean</rs>
+                                                  <rs ref="eats:41680" type="CalendarDay_Secular">New Year's</rs> gifts for that year, which also
+                                                  included 20s to the <rs ref="eats:296766" type="Collective_Office">dean</rs>
                                                   of <rs ref="http://ereed.library.utoronto.ca/eats/entity/47591/" type="Place_PA_Settlement">Wallingford</rs> 'for
                                                   going to <rs ref="http://ereed.library.utoronto.ca/eats/entity/74508/" type="Place_PA_Settlement">Canterbury</rs>,' a
                                                   payment to <rs ref="http://ereed.library.utoronto.ca/eats/entity/67932/" type="Person_Commoner">Dr Fairfax</rs> of £13 6s
@@ -21254,7 +21259,7 @@
                                         </div>
                                         <div type="endnote">
                                                 <p> The attempt to disguise the <rs ref="http://ereed.library.utoronto.ca/eats/entity/41139/" type="CalendarDay_Liturgical">Whitsun</rs>
-                                                  <rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/" type="Entertainment_SeasonalCustom">celebration</rs> from the visiting <rs ref="eats:entity-296889" type="Collective_Occupation">dean
+                                                  <rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/" type="Entertainment_SeasonalCustom">celebration</rs> from the visiting <rs ref="eats:296889" type="Collective_Occupation">dean
                                                   of Windsor</rs> by
                                                   including mention of '<rs ref="http://ereed.library.utoronto.ca/eats/entity/40978/" type="Thing_FoodDrink">corne</rs> gathered' was
                                                   clearly unsuccessful. Payment to a 'parrator' or
@@ -21371,7 +21376,7 @@
                                                   bells, argue an extensive building project that
                                                   year that the wardens may have considered
                                                   sufficient reason to revive the historic practice,
-                                                  despite the earlier objection of the <rs ref="eats:entity-296889" type="Collective_Occupation">dean
+                                                  despite the earlier objection of the <rs ref="eats:296889" type="Collective_Occupation">dean
                                                   of Windsor</rs>. It is the
                                                   unvarying custom for the churchwardens of <rs ref="http://ereed.library.utoronto.ca/eats/entity/47268/" type="Place_PA_Settlement">Wantage</rs> to refer
                                                   to the 'summoner' of the dean as a 'parrator.' It
@@ -21446,7 +21451,7 @@
 
                                                 <p> The receipts from taxation this year rose to 36s
                                                   11d. In 1592 when no <rs ref="http://ereed.library.utoronto.ca/eats/entity/40561/" type="Entertainment_Type">ale</rs> was
-                                                  held they totalled £4 6s 3 1/2d (f 36). The <rs ref="eats:entity-296766" type="Collective_Office">dean</rs>'s 'parrator' was in Wantage probably
+                                                  held they totalled £4 6s 3 1/2d (f 36). The <rs ref="eats:296766" type="Collective_Office">dean</rs>'s 'parrator' was in Wantage probably
                                                   before the festive season in 1592. </p>
                                         </div>
                                 </body>
@@ -21505,7 +21510,7 @@
 
                                                 <p> It is the unvarying custom for the churchwardens
                                                   of <rs ref="http://ereed.library.utoronto.ca/eats/entity/47268/" type="Place_PA_Settlement">Wantage</rs> to refer
-                                                  to the 'summoner' of the <rs ref="eats:entity-296766" type="Collective_Office">dean</rs>
+                                                  to the 'summoner' of the <rs ref="eats:296766" type="Collective_Office">dean</rs>
                                                   as a 'parrator' and the sum indicates more than a
                                                   gratuity paid to someone else's employee. The
                                                   parish seems again to be making an effort to bring
@@ -21558,7 +21563,7 @@
                                         </div>
                                         <div type="endnote">
                                                 <p> The taxation this year was£1 18s 10 d. There was
-                                                  a visitation from the <rs ref="eats:entity-296766" type="Collective_Office">dean</rs>.</p>
+                                                  a visitation from the <rs ref="eats:296766" type="Collective_Office">dean</rs>.</p>
 
                                                 <p>
                                                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/65706/" type="Person_Commoner">John Rowland</rs> was a <rs ref="http://ereed.library.utoronto.ca/eats/entity/29681/" type="Entertainer_Type">taborer</rs> who was
@@ -21653,7 +21658,7 @@
                                                   Vale</rs> in 1605–6.</p>
 
                                                 <p> Before the festive season in 1596 there were two
-                                                  visitations from the <rs ref="eats:entity-296766" type="Collective_Office">dean</rs>
+                                                  visitations from the <rs ref="eats:296766" type="Collective_Office">dean</rs>
                                                   and there were no <rs ref="http://ereed.library.utoronto.ca/eats/entity/41139/" type="CalendarDay_Liturgical">Whitsun</rs>
                                                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/" type="Entertainment_SeasonalCustom">events</rs>
                                                   for the next seven years. </p>

@@ -45,21 +45,64 @@
   <xsl:variable name="floruit_date_period" select="'date_period-484'" />
   <xsl:variable name="circa_date_type" select="'date_type-489'" />
   <xsl:variable name="singular_name_type" select="'name_type-18607'" />
-  <xsl:variable name="has_occupation_relationship_type" select="'entity_relationship_type-21008'" />
-  <xsl:variable name="contains_relationship_type" select="'entity_relationship_type-502'" />
-  <xsl:variable name="borough_entity_type" select="'entity_type-539'" />
-  <xsl:variable name="church_entity_type" select="'entity_type-4833'" />
-  <xsl:variable name="county_entity_type" select="'entity_type-543'" />
-  <xsl:variable name="feature_entity_type" select="'entity_type-21368'" />
+  <xsl:variable name="has_occupation_relationship_type"
+                select="'entity_relationship_type-21008'" />
+  <xsl:variable name="contains_relationship_type"
+                select="'entity_relationship_type-502'" />
   <xsl:variable name="occupational_guild_entity_type"
                 select="'entity_type-48092'" />
   <xsl:variable name="religious_guild_entity_type"
                 select="'entity_type-48094'" />
-  <xsl:variable name="household_entity_type" select="'entity_type-547'" />
-  <xsl:variable name="religious_house_entity_type" select="'entity_type-551'" />
+  <xsl:variable name="location_county_entity_type" select="'entity_type-543'" />
+  <xsl:variable name="location_duchy_entity_type"
+                select="'entity_type-259881'" />
+  <xsl:variable name="location_ea_archdeaconry_entity_type"
+                select="'entity_type-249050'" />
+  <xsl:variable name="location_ea_diocese_entity_type" select="'entity_type-249052'" />
+  <xsl:variable name="location_ea_province_entity_type" select="'entity_type-249054'" />
+  <xsl:variable name="location_feature_entity_type" select="'entity_type-21368'" />
+  <xsl:variable name="location_feature_arena_entity_type" select="'entity_type-4831'" />
+  <xsl:variable name="location_feature_bridge_entity_type" select="'entity_type-247662'" />
+  <xsl:variable name="location_feature_church_entity_type" select="'entity_type-4833'" />
+  <xsl:variable name="location_feature_church_house_entity_type"
+                select="'entity_type-4835'" />
+  <xsl:variable name="location_feature_gate_entity_type" select="'entity_type-247664'" />
+  <xsl:variable name="location_feature_guild_hall_entity_type"
+                select="'entity_type-4839'" />
+  <xsl:variable name="location_feature_hospital_entity_type"
+                select="'entity_type-247666'" />
+  <xsl:variable name="location_feature_inn_of_court_entity_type"
+                select="'entity_type-4843'" />
+  <xsl:variable name="location_feature_open_area_entity_type"
+                select="'entity_type-4845'" />
+  <xsl:variable name="location_feature_place_of_punishment_entity_type"
+                select="'entity_type-247670'" />
+  <xsl:variable name="location_feature_playhouse_entity_type"
+                select="'entity_type-4851'" />
+  <xsl:variable name="location_feature_property_entity_type"
+                select="'entity_type-247674'" />
+  <xsl:variable name="location_feature_religious_house_entity_type"
+                select="'entity_type-551'" />
+  <xsl:variable name="location_feature_residence_entity_type"
+                select="'entity_type-247672'" />
+  <xsl:variable name="location_feature_school_entity_type" select="'entity_type-4847'" />
+  <xsl:variable name="location_feature_street_entity_type"
+                select="'entity_type-247676'" />
+  <xsl:variable name="location_feature_town_hall_entity_type"
+                select="'entity_type-4853'" />
+  <xsl:variable name="location_feature_victualling_house_entity_type"
+                select="'entity_type-4841'" />
+  <xsl:variable name="location_feature_water_feature_entity_type"
+                select="'entity_type-247678'" />
+  <xsl:variable name="location_pa_liberty_entity_type" select="'entity_type-248915'" />
+  <xsl:variable name="location_pa_manor_entity_type" select="'entity_type-248917'" />
+  <xsl:variable name="location_pa_settlement_entity_type" select="'entity_type-248913'" />
+  <xsl:variable name="location_pa_ward_entity_type" select="'entity_type-248919'" />
+  <xsl:variable name="container_location_entity_types"
+                select="($location_county_entity_type, $location_duchy_entity_type, $location_ea_archdeaconry_entity_type, $location_ea_diocese_entity_type, $location_ea_province_entity_type, $location_feature_entity_type, $location_feature_arena_entity_type, $location_feature_bridge_entity_type, $location_feature_church_entity_type, $location_feature_church_house_entity_type, $location_feature_gate_entity_type, $location_feature_guild_hall_entity_type, $location_feature_hospital_entity_type, $location_feature_inn_of_court_entity_type, $location_feature_open_area_entity_type, $location_feature_place_of_punishment_entity_type, $location_feature_playhouse_entity_type, $location_feature_property_entity_type, $location_feature_religious_house_entity_type, $location_feature_residence_entity_type, $location_feature_school_entity_type, $location_feature_street_entity_type, $location_feature_town_hall_entity_type, $location_feature_victualling_house_entity_type, $location_feature_water_feature_entity_type, $location_pa_liberty_entity_type, $location_pa_manor_entity_type, $location_pa_settlement_entity_type, $location_pa_ward_entity_type)" />
   <xsl:variable name="troupe_entity_type" select="'entity_type-12619'" />
   <xsl:variable name="gis_base_url" select="'https://ereed.library.utoronto.ca/geomap/places/'" />
-  <xsl:variable name="show_containing" select="($feature_entity_type, $occupational_guild_entity_type, $religious_guild_entity_type, $borough_entity_type, $church_entity_type, $county_entity_type, $household_entity_type, $religious_house_entity_type)" />
+  <xsl:variable name="show_containing" select="($occupational_guild_entity_type, $religious_guild_entity_type, $container_location_entity_types)" />
   <xsl:variable name="calendar_entity_types" select="('entity_type-4857', 'entity_type-4855')" />
   <xsl:variable name="no_occupation_in_name_types"
                 select="($troupe_entity_type, $occupational_guild_entity_type)" />

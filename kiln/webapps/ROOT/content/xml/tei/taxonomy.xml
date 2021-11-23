@@ -12,6 +12,7 @@
                 <editor>Jane Cowling</editor>
                 <editor>Peter Greenfield</editor>
                 <editor>Alexandra F. Johnston</editor>
+                <editor>David N. Klausner</editor>
                 <editor>Sally-Beth MacLean</editor>
                 <editor>J. Alan B. Somerset</editor>
                 <respStmt>
@@ -20,58 +21,61 @@
                     <resp>Project Manager</resp>
                 </respStmt>
                 <respStmt>
-                    <persName>Kathy Chung</persName>
+                    <persName xml:id="KC">Kathy Chung</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Indexer, EATS taxonomy developer and database maintainer</resp>
+                    <resp>Indexer, Entity Tagger</resp>
+                    <resp>REED EATS Taxonomy Developer</resp>
+                    <resp>REED EATS Database Maintainer</resp>
                 </respStmt>
                 <respStmt>
                     <persName xml:id="JC">James Cummings</persName>
-                    <orgName>University of Oxford</orgName>
-                    <resp>TEI Schema Designer, Technical Consultant</resp>
+                    <!--<orgName>1st-3rd ed.: University of Oxford</orgName>-->
+                    <orgName>Newcastle University</orgName>
+                    <resp>TEI Schema Designer</resp>
+                    <resp>Technical Consultant</resp>
                 </respStmt>
                 <respStmt>
-                    <persName>Patrick Gregory</persName>
+                    <persName xml:id="PG">Patrick Gregory</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Paleographer, Translator, Latin and Anglo-French Glossarian</resp>
+                    <resp>Paleographer</resp>
+                    <resp>Translator</resp>
+                    <resp>Glossarian</resp>
                 </respStmt>
                 <respStmt>
                     <persName>Tanya Hagen</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
                     <resp>Bibliographer</resp>
+                    <resp>Copy Editor</resp>
                 </respStmt>
                 <respStmt>
                     <persName>Janine Harper</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>English Glossarian, Proofreader</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Alexandra F. Johnston</persName>
-                    <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>REED Founder and Senior Consultant</resp>
+                    <resp>English Glossarian</resp>
+                    <resp>Proofreader</resp>
                 </respStmt>
                 <respStmt>
                     <persName>Sally-Beth MacLean</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Principal Investigator, SSHRC grant; Director of Research and General
-                        Editor</resp>
-                </respStmt>
+                    <resp>Director of Research</resp>
+                    <resp>General Editor</resp>
+                </respStmt> 
                 <respStmt>
                     <persName xml:id="JN">Jamie Norrish</persName>
-                    <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Suzanne Westfall</persName>
-                    <resp>Principal Investigator, NEH grant</resp>
+                    <resp>Programmer</resp>
+                    <resp>TEI Schema Designer</resp>
+                    <resp>Technical Consultant</resp>
                 </respStmt>
                 <respStmt>
                     <persName>Abigail Ann Young</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
                     <resp>Paleographer</resp>
                 </respStmt>
+                
             </titleStmt>
             <editionStmt>
-                <edition>version 3, released <date when-iso="2020-06-22">22 June
-                    2020</date></edition>
+                <edition>Version 4, released <date when-iso="2021-11-30">30 November 2021.</date></edition>
+                <!--<edition>version 3, released <date when-iso="2020-06-22">22 June
+                    2020</date></edition>-->
             </editionStmt>
             <publicationStmt>
                 <authority><orgName>Records of Early English Drama (REED)</orgName>
@@ -384,6 +388,8 @@
         </profileDesc>
         <revisionDesc>
             <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
+            <change when="2021-11-30" who="#IN">Published version 4 of taxonomy.xml</change>
+            <change when="2021-11-22" who="#KC">Updated Responsibility Statements in File Description and edition number</change>
             <change when="2021-03-16" who="#KC">Updated Kathy Chung's job title.</change>
             <change when="2021-03-01" who="#KC">Re-tagged Winchester council house as Winchester guildhall. They are different names for the same building.</change>
 			<change when="2021-02-18" who="#KC">Correction in XML file required after conversion of Word file material to TEI: Changed in Yorkshire North Riding Doc Descriptions all pointy bracket "del" and "\del" tags to square brackets "[...]"</change>
@@ -753,7 +759,7 @@
                             <settlement>Lichfield</settlement>
                             <repository sameAs="#lichfield-cathedral-library"/>
                             <idno type="shelfmark">Chapter Act Books No. 3</idno>
-                            <msName><rs ref="eats:entity-296811" type="Collective_Office">Dean</rs> and Chapter
+                            <msName><rs ref="eats:296811" type="Collective_Office">Dean</rs> and Chapter
                                 Act Book</msName>
                         </msIdentifier>
                         <ab type="techDesc"><date>1490–1523</date>; Latin; parchment and paper; ii
@@ -3718,7 +3724,7 @@
                             Crondall until the Dissolution, when it passed to the dean and chapter
                             of <rs ref="http://ereed.library.utoronto.ca/eats/entity/107876/" type="Place_F_Church">Winchester Cathedral</rs> and was leased to
                             George Paulet, younger brother of William Paulet, the first marquess of
-                            Winchester, and great uncle to Sir <rs ref="http://ereed.library.utoronto.ca/eats/entity/113645/" type="Person_Gentry">Richard Paulet</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/87010/" type="Place_PA_Settlement">Herriard</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/106707/" type="Place_F_Residence">Freefolk</rs>. The <rs ref="http://ereed.library.utoronto.ca/eats/entity/154681/" type="Person_Family">Wriothesleys</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/83892/" type="Collective_Title">earls of Southampton</rs>, purchased the
+                            Winchester, and great uncle to Sir Richard Paulet of <rs ref="http://ereed.library.utoronto.ca/eats/entity/87010/" type="Place_PA_Settlement">Herriard</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/106707/" type="Place_F_Residence">Freefolk</rs>. The <rs ref="http://ereed.library.utoronto.ca/eats/entity/154681/" type="Person_Family">Wriothesleys</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/83892/" type="Collective_Title">earls of Southampton</rs>, purchased the
                             manors of Itchel and Ewshott from the Giffard family in 1579 and sold
                             them again in 1624 ('Parishes: Crondall,' in <title>VCH:
                                 Hampshire</title>, vol 4, pp 5–14, <title>British History
@@ -13018,7 +13024,7 @@
                             failing to collect fines from other offenders, fines that should have
                             gone to Coleman and others, letting the offenders go unpunished, as in
                             the case of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/8782/" type="Entertainer_Type">players</rs>. For another attempt to
-                            suppress <rs ref="http://ereed.library.utoronto.ca/eats/entity/40677/" type="Entertainment_Type">games</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dancing</rs>, and the like in <rs ref="eats:entity-111630" type="Place_PA_Liberty">the Soke</rs>, see the quarter sessions
+                            suppress <rs ref="http://ereed.library.utoronto.ca/eats/entity/40677/" type="Entertainment_Type">games</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dancing</rs>, and the like in <rs ref="eats:111630" type="Place_PA_Liberty">the Soke</rs>, see the quarter sessions
                             order of 24 June 1621 (see <ref target="https://ereed.library.utoronto.ca/records/hamps-ridp248346848/">Quarter Sessions Order Book, 1621</ref>).</ab>
                         <ab type="edDesc">Membrane 1 is Thorpe's reply to the charges, dated 4
                             February 1616/17; he merely denies all the charges.<lb/></ab>
@@ -13291,7 +13297,7 @@
                         <ab type="edDesc">The village of <rs ref="http://ereed.library.utoronto.ca/eats/entity/87318/" type="Place_PA_Settlement">Wootton St Lawrence</rs> is located about
                             three miles west of the centre of <rs ref="http://ereed.library.utoronto.ca/eats/entity/123118/" type="Place_PA_Settlement">Basingstoke</rs>. In the sixteenth and
                             early seventeenth centuries the <rs ref="http://ereed.library.utoronto.ca/eats/entity/207065/" type="Person_Family">Wither family</rs> held the lease of the manor
-                            of Wootton (or Manydown) from the <rs ref="eats:entity-296848" type="Collective_Office">dean</rs> and chapter of
+                            of Wootton (or Manydown) from the <rs ref="eats:296848" type="Collective_Office">dean</rs> and chapter of
                                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/107876/" type="Place_F_Church">Winchester</rs> . Other important landowners in
                             the parish were the <rs ref="http://ereed.library.utoronto.ca/eats/entity/207029/" type="Person_Family">Kingsmills</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/207002/" type="Person_Family">Ayliffes</rs> (<title>VCH: Hampshire</title>,
                             vol 4, pp 239–42, <title>British History Online</title>,
@@ -14228,7 +14234,7 @@
                                 <settlement>York</settlement>
                                 <repository sameAs="#borthwick-institute"/>
                                 <idno type="shelfmark">C.V/CB2</idno>
-                                <msName><rs ref="eats:entity-249502" type="Place_EA_Archdeaconry">Archdeaconry of Cleveland</rs> Court Book</msName>
+                                <msName><rs ref="eats:249502" type="Place_EA_Archdeaconry">Archdeaconry of Cleveland</rs> Court Book</msName>
                             </msIdentifier>
                             <ab type="techDesc"><date>1634</date>; English and Latin; paper; 148 +
                                 i; 290mm x 180mm; modern pencil foliation 1–148 (ff 127–48 blank);
@@ -14239,16 +14245,16 @@
                                 <settlement>Oxford</settlement>
                                 <repository sameAs="#Bodl."/>
                                 <idno type="shelfmark">Tanner 10</idno>
-                                <msName><rs ref="eats:entity-285799" type="Person_Clergy">Bede</rs>'s Historia Ecclesiastica (Old English)</msName>
+                                <msName><rs ref="eats:285799" type="Person_Clergy">Bede</rs>'s Historia Ecclesiastica (Old English)</msName>
                             </msIdentifier>
-                            <ab type="edDesc"><rs ref="eats:entity-285799" type="Person_Clergy">Bede</rs> was born in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2165/" type="Place_County">Northumbria</rs> around 672–3 and was sent
+                            <ab type="edDesc"><rs ref="eats:285799" type="Person_Clergy">Bede</rs> was born in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2165/" type="Place_County">Northumbria</rs> around 672–3 and was sent
                                 at the age of seven to the Benedictine house of Wearmouth, where he
                                 lived until his death at the sister monastery of Jarrow on 26 May
                                 735. His <title>Historia Ecclesiastica Gentis Anglorum</title>
                                 (History of the English Church and People) was completed around 731
                                 and provided a well-documented narrative of the conversion of the
                                 Anglo-Saxon settlers to Christianity. Bede places the story of
-                                <rs ref="eats:entity-285694" type="Person_Clergy">Cædmon</rs> late in the life of <!--IN: not sure if abbess should be tagged? KC 2021-08-18: I've tagged it as monastic order--><rs ref="eats:entity-27258" type="Collective_ClergyAndChurchwardens">abbess</rs> <rs ref="eats:entity-285734" type="Person_Clergy">Hild</rs> and late in Cædmon's life as
+                                <rs ref="eats:285694" type="Person_Clergy">Cædmon</rs> late in the life of <!--IN: not sure if abbess should be tagged? KC 2021-08-18: I've tagged it as monastic order--><rs ref="eats:27258" type="Collective_ClergyAndChurchwardens">abbess</rs> <rs ref="eats:285734" type="Person_Clergy">Hild</rs> and late in Cædmon's life as
                                 well. Hild died in 680, giving a terminus ad quem for the
                                 composition of 'Cædmon's Hymn.' The poem survives in both Latin and
                                 West Saxon versions of Bede's <title>Historia Ecclesiastica</title>,
@@ -14258,7 +14264,7 @@
                                 https://www.catholic.com/encyclopedia/bede-venerable, accessed 31
                                 December 2020; Bede, <title>Ecclesiastical History</title>, pp
                                 xix–xxxvii).<lb/></ab>
-                            <ab type="techDesc"><date>early 10th c.</date>; Old English; parchment;
+                            <ab type="techDesc"><date>early 10th-c.</date>; Old English; parchment;
                                 139 leaves (2 + 2 parchment flyleaves, now removed); 250mm x 165mm;
                                 modern pagination and foliation; gilt line decorations on spine;
                                 18th-c. calf binding.</ab>
@@ -14268,16 +14274,16 @@
                                 <settlement>Cambridge</settlement>
                                 <repository sameAs="#CUL"/>
                                 <idno type="shelfmark">Kk.5.16</idno>
-                                <msName><rs ref="eats:entity-285799" type="Person_Clergy">Bede</rs>'s Historia Ecclesiastica</msName>
+                                <msName><rs ref="eats:285799" type="Person_Clergy">Bede</rs>'s Historia Ecclesiastica</msName>
                             </msIdentifier>
-                            <ab type="edDesc"><rs ref="eats:entity-285799" type="Person_Clergy">Bede</rs> was born in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2165/" type="Place_County">Northumbria</rs> around 672–3 and was sent
+                            <ab type="edDesc"><rs ref="eats:285799" type="Person_Clergy">Bede</rs> was born in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2165/" type="Place_County">Northumbria</rs> around 672–3 and was sent
                                 at the age of seven to the Benedictine house of Wearmouth, where he
                                 lived until his death at the sister monastery of Jarrow on 26 May
                                 735. His <title>Historia Ecclesiastica Gentis Anglorum</title>
                                 (History of the English Church and People) was completed around 731
                                 and provided a well-documented narrative of the conversion of the
                                 Anglo-Saxon settlers to Christianity. Bede places the story of
-                                <rs ref="eats:entity-285694" type="Person_Clergy">Cædmon</rs> late in the life of <!--IN: not sure if abbess should be tagged? KC 2021-08-18: I've tagged it as monastic orde--><rs ref="eats:entity-27258" type="Collective_ClergyAndChurchwardens">abbess</rs> <rs ref="eats:entity-285734" type="Person_Clergy">Hild</rs> and late in Cædmon's life as
+                                <rs ref="eats:285694" type="Person_Clergy">Cædmon</rs> late in the life of <!--IN: not sure if abbess should be tagged? KC 2021-08-18: I've tagged it as monastic orde--><rs ref="eats:27258" type="Collective_ClergyAndChurchwardens">abbess</rs> <rs ref="eats:285734" type="Person_Clergy">Hild</rs> and late in Cædmon's life as
                                 well. Hild died in 680, giving a terminus ad quem for the
                                 composition of 'Cædmon's Hymn.' The poem survives in both Latin and
                                 West Saxon versions of Bede's <title>Historia Ecclesiastica</title>,
@@ -14287,7 +14293,7 @@
                                 https://www.catholic.com/encyclopedia/bede-venerable, accessed 31
                                 December 2020; Bede, <title>Ecclesiastical History</title>, pp
                                 xix–xxxvii).<lb/></ab>
-                            <ab type="techDesc"><date>c 737</date>; Latin; parchment; iii + 128 + i;
+                            <ab type="techDesc"><date><hi rend="italic">c</hi> 737</date>; Latin; parchment; iii + 128 + i;
                                 290mm x 215mm; modern pencil foliation 1–128; f 129 a stub; 18th-c.
                                 leather binding, 'BEDA | Kk.v.16' on spine.</ab>
                         </msDesc>
@@ -14296,9 +14302,9 @@
                                 <settlement>London</settlement>
                                 <repository sameAs="#BL"/>
                                 <idno type="shelfmark">Egerton 2614</idno>
-                                <msName><rs ref="eats:entity-263427" type="Person_Gentry">Margaret Hoby</rs>'s Diary</msName>
+                                <msName><rs ref="eats:263427" type="Person_Gentry">Margaret Hoby</rs>'s Diary</msName>
                             </msIdentifier>
-                            <ab type="edDesc">For information on <rs ref="eats:entity-263427" type="Person_Gentry">Margaret Hoby</rs> see the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-hoby">Introduction</ref>.</ab>
+                            <ab type="edDesc">For information on <rs ref="eats:263427" type="Person_Gentry">Margaret Hoby</rs> see the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-hoby">Introduction</ref>.</ab>
                             <ab type="techDesc"><date>1599–1605</date>; English; paper; i + 118 +
                                 ii; 190mm x 150mm; modern pencil foliation 1–118; 19th-c. green
                                 leather binding, '438 | LADY HOBY'S | DIARY | 1599–1605 | BRIT. MUS.
@@ -14309,8 +14315,8 @@
                                 <settlement>London</settlement>
                                 <repository sameAs="#BL"/>
                                 <idno type="shelfmark">Stowe 553</idno>
-                                <msName>Accounts of <rs ref="eats:entity-292900" type="Person_StatusOther">Roger de Waltham</rs>, <rs ref="eats:entity-290686" type="Collective_Office">keeper of the Wardrobe</rs> to
-                                    <rs ref="eats:entity-44180" type="Person_Male">Edward II</rs></msName>
+                                <msName>Accounts of <rs ref="eats:292900" type="Person_StatusOther">Roger de Waltham</rs>, <rs ref="eats:290686" type="Collective_Office">keeper of the Wardrobe</rs> to
+                                    <rs ref="eats:44180" type="Person_Male">Edward II</rs></msName>
                             </msIdentifier>
 
                             <ab type="techDesc"><date>1 May 1322–19 October 1323</date>; Latin;
@@ -14323,10 +14329,10 @@
                                 <settlement>London</settlement>
                                 <repository sameAs="#BL"/>
                                 <idno type="shelfmark">Harleian 433</idno>
-                                <msName>Abstracts of <rs ref="eats:entity-162135" type="Person_Royalty">Richard III</rs>'s Second Register</msName>
+                                <msName>Abstracts of <rs ref="eats:162135" type="Person_Royalty">Richard III</rs>'s Second Register</msName>
                             </msIdentifier>
                             <ab type="edDesc">This manuscript contains excerpts and abstracts from
-                                four registers of the signet archives of <rs ref="eats:entity-159956" type="Person_Royalty">Edward V</rs> and <rs ref="eats:entity-162135" type="Person_Royalty">Richard III</rs>,
+                                four registers of the signet archives of <rs ref="eats:159956" type="Person_Royalty">Edward V</rs> and <rs ref="eats:162135" type="Person_Royalty">Richard III</rs>,
                                 including a variety of memoranda and letters.</ab>
                             <ab type="techDesc"><date>1483</date>; English and Latin; paper; iii +
                                 340 + iv; 307mm x 220mm; modern pencil foliation; spine has 2 red
@@ -14341,22 +14347,22 @@
                                 <settlement>London</settlement>
                                 <repository sameAs="#BL"/>
                                 <idno type="shelfmark">MS Lansdowne 231/3</idno>
-                                <msName><rs ref="eats:entity-290460" type="Person_StatusOther">John Aubrey</rs>'s Remains of Gentilism and Judaism</msName>
+                                <msName><rs ref="eats:290460" type="Person_StatusOther">John Aubrey</rs>'s Remains of Gentilism and Judaism</msName>
                             </msIdentifier>
                             <ab type="edDesc">The Lyke Wake Walk is a pilgrimage route crossing the
                                 full extent of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Yorkshire</rs> Moors from <rs ref="http://ereed.library.utoronto.ca/eats/entity/252174/" type="Place_PA_Settlement">Osmotherley</rs>, northeast
                                 of <rs ref="http://ereed.library.utoronto.ca/eats/entity/249456/" type="Place_PA_Settlement">Northallerton</rs> to Ravenscar, just south of Teesmouth. The
-                                <rs ref="eats:entity-293079" type="Collective_Occupation">antiquarian</rs> <rs ref="eats:entity-290460" type="Person_StatusOther">John Aubrey</rs> (1626–97) is best known for his biographical
+                                <rs ref="eats:293079" type="Collective_Occupation">antiquarian</rs> <rs ref="eats:290460" type="Person_StatusOther">John Aubrey</rs> (1626–97) is best known for his biographical
                                 sketches, 'Brief Lives' (1680–93), but he was also an important
                                 archaeologist and folklorist. He assembled many of his researches on
                                 popular customs and folklore in the 'Remains of Gentilism and
                                 Judaism' (1686–7). The manuscript includes four miscellaneous items
                                 bound together: a letter of 25 August 1637, Scots gentry to privy
-                                council (ff 1–10); letters of <rs ref="eats:entity-121275" type="Person_Gentry">Sir Francis Walsingham</rs>, 1570–1 (ff
+                                council (ff 1–10); letters of <rs ref="eats:121275" type="Person_Gentry">Sir Francis Walsingham</rs>, 1570–1 (ff
                                 11–100); John Aubrey's 'Remains of Gentilism and Judaism' (ff
-                                101–243); and <rs ref="eats:entity-290525" type="Person_Clergy">John Lesley</rs>, bishop of Ross' negotiations with <rs ref="eats:entity-44850" type="Person_Royalty">Mary
+                                101–243); and <rs ref="eats:290525" type="Person_Clergy">John Lesley</rs>, bishop of Ross' negotiations with <rs ref="eats:44850" type="Person_Royalty">Mary
                                 Queen of Scots</rs> (ff 244–322). The manuscript is from the collection
-                                of <rs ref="eats:entity-290623" type="Person_Clergy">White Kennett</rs> (1660–1728), bishop of Peterborough, 1718–28, but
+                                of <rs ref="eats:290623" type="Person_Clergy">White Kennett</rs> (1660–1728), bishop of Peterborough, 1718–28, but
                                 not in his hand (Laird Okie, 'Kennett, White, (1660–1728), historian
                                 and bishop of Peterborough,' <title>ODNB</title>, accessed 7 January 2021). The scribe frequently uses
                                 square brackets to indicate parenthetical remarks and hashtags to
@@ -14369,12 +14375,12 @@
                         <bibl xml:id="YNCHA1">
                             <title type="edName"><rs ref="http://ereed.library.utoronto.ca/eats/entity/249547/" type="Place_F_ReligiousHouse">Whitby Abbey</rs>, Bursar's Account Rolls (A)</title>
                             <note type="edDesc"><p>Although three <rs ref="http://ereed.library.utoronto.ca/eats/entity/249567/" type="Place_PA_Settlement">Whitby</rs> account rolls are in the
-                                    county Record Office in <rs ref="http://ereed.library.utoronto.ca/eats/entity/249456/" type="Place_PA_Settlement">Northallerton</rs>, none of them are among
+                                    county record office in <rs ref="http://ereed.library.utoronto.ca/eats/entity/249456/" type="Place_PA_Settlement">Northallerton</rs>, none of them are among
                                     those cited by Lionel Charlton, <title>The History of Whitby,
                                         and of Whitby Abbey</title> (York, 1779), 260–263 (excerpted
                                     here), or J.C. Atkinson (ed), <title>Cartularium Abbathiæ de
                                         Whiteby, Ordinis S. Benedicti, Fundatæ Anno
-                                    MLXXVIII</title>, Publications of the Surtees Society 72, Vol 2
+                                    MLXXVIII</title>, Surtees Society 72, vol 2
                                     (Durham, 1881), 606–624.</p></note>
                             <note type="techDesc"><p>Lionel Charlton, <title type="sourceName">The History of Whitby,
                                         and of Whitby Abbey</title> (York, 1779).</p></note>
@@ -14386,7 +14392,7 @@
                                 <settlement>Chester</settlement>
                                 <repository sameAs="#chester-archives-and-library"/>
                                 <idno type="shelfmark">Aldersey papers ZCR 469/550</idno>
-                                <msName><rs ref="eats:entity-200864" type="Person_Commoner">Ben Jonson</rs>'s Walk to <rs ref="http://ereed.library.utoronto.ca/eats/entity/2741/" type="Place_Country">Scotland</rs></msName>
+                                <msName><rs ref="eats:200864" type="Person_Commoner">Ben Jonson</rs>'s Walk to <rs ref="http://ereed.library.utoronto.ca/eats/entity/2741/" type="Place_Country">Scotland</rs></msName>
                             </msIdentifier>
                             <ab type="edDesc">The manuscript has been described below and foliation
                                 cited according to the system used by James Loxley <hi rend="italic">et al</hi> in their edition (<title>Ben Jonson's Walk to
@@ -14400,7 +14406,7 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">ZQG XII 3/1</idno>
-                                <msName><rs ref="eats:entity-269655" type="Person_Commoner">Richard Cholmeley</rs>'s Memorandum Book</msName>
+                                <msName><rs ref="eats:269655" type="Person_Commoner">Richard Cholmeley</rs>'s Memorandum Book</msName>
                             </msIdentifier>
                             <ab type="edDesc">On the <rs ref="http://ereed.library.utoronto.ca/eats/entity/258383/" type="Person_Family">Cholmeley family</rs> and their documents, see the
                                 <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-cholmley">Introduction</ref>. The memorandum book is not a
@@ -14419,21 +14425,21 @@
                                 <settlement>York</settlement>
                                 <repository sameAs="#york-minister-library"/>
                                 <idno type="shelfmark">Add. 343</idno>
-                                <msName>Sir <rs ref="eats:entity-260029" type="Person_Gentry">Hugh Cholmley</rs>'s Memoirs</msName>
+                                <msName>Sir <rs ref="eats:260029" type="Person_Gentry">Hugh Cholmley</rs>'s Memoirs</msName>
                             </msIdentifier>
-                            <ab type="edDesc"><rs ref="eats:entity-260029" type="Person_Gentry">Sir <rs ref="eats:entity-260029" type="Person_Gentry">Hugh Cholmley</rs></rs> (1600–1657),
-                                first <rs ref="eats:entity-289199" type="Collective_Title">Baronet Cholmley</rs>, was born at Thornton-on-the-Hill, <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North
-                                Riding</rs>, the son of <rs ref="eats:entity-258319" type="Person_Gentry">Sir Richard Cholmley</rs> (1580–1631) and his first wife <rs ref="eats:entity-287630" type="Person_StatusOther">Susanna</rs> (1578–1611), daughter of <rs ref="eats:entity-289335" type="Person_StatusOther">John Legard</rs> of Ganton.
+                            <ab type="edDesc"><rs ref="eats:260029" type="Person_Gentry">Sir <rs ref="eats:260029" type="Person_Gentry">Hugh Cholmley</rs></rs> (1600–1657),
+                                first <rs ref="eats:289199" type="Collective_Title">Baronet Cholmley</rs>, was born at Thornton-on-the-Hill, <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North
+                                Riding</rs>, the son of <rs ref="eats:258319" type="Person_Gentry">Sir Richard Cholmley</rs> (1580–1631) and his first wife <rs ref="eats:287630" type="Person_StatusOther">Susanna</rs> (1578–1611), daughter of <rs ref="eats:289335" type="Person_StatusOther">John Legard</rs> of Ganton.
                                 He was educated at Beverley Free School and <rs ref="http://ereed.library.utoronto.ca/eats/entity/249612/" type="Place_F_School">Jesus College</rs>,
-                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/73450/" type="Place_F_School">Cambridge</rs>. In 1624 he was elected one of the <rs ref="eats:entity-271857" type="Collective_Office">Members of Parliament
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/73450/" type="Place_F_School">Cambridge</rs>. In 1624 he was elected one of the <rs ref="eats:271857" type="Collective_Office">MPs
                                 for Scarborough</rs> and was re-elected in 1625 and 1626. He was knighted
-                                in 1626. During the following eleven years, when <rs ref="eats:entity-24537" type="Person_Royalty">Charles I</rs> ruled
+                                in 1626. During the following eleven years, when <rs ref="eats:24537" type="Person_Royalty">Charles I</rs> ruled
                                 without Parliament, Cholmley became one of the leaders of resistance
                                 among the Yorkshire gentry. He organised a number of petitions and
                                 protests, and in 1639 he refused to pay ship money. As a result, he
                                 was dismissed from his posts and was called before the Council of
                                 State; the king reportedly told him that if he interfered again he
-                                would hang him. In April 1640 Cholmley was again elected a member
+                                would hang him. In April 1640 Cholmley was again elected MP
                                 for Scarborough in the Short Parliament. He was re-elected for
                                 Scarborough for the Long Parliament in November 1640 and was created
                                 a baronet in 1641, but was prevented from sitting in 1643. His
@@ -14441,7 +14447,7 @@
                                 published edition of 1787 – 'Addressed to his Two Sons, in which He
                                 gives some Account of his FAMILY, and the distresses they underwent
                                 in the CIVIL WARS; and how far he himself was engaged in
-                                    them.'(Binns, Jack, 'Cholmley, Sir Hugh, first baronet (1600–1657),' <title>ODNB</title>, accessed 31 July 2021; <title>HPO</title>,
+                                    them' (Jack Binns, 'Cholmley, Sir Hugh, first baronet (1600–1657),' <title>ODNB</title>, accessed 31 July 2021; <title>HPO</title>,
                                 <ref target="https://www.historyofparliamentonline.org/volume/1604-1629/member/cholmley-hugh-1600-1657">'Cholmley, Hugh (1600–1657),'</ref> accessed 31 December
                                 2020; Cholmley, <title>Memoirs and Memorials</title>, 14–29;
                                 Cholmley, <title>Memoirs</title>, title-page). Cholmley's principal
@@ -14458,7 +14464,7 @@
                                 <settlement>Durham</settlement>
                                 <repository sameAs="#durham-cathedral-library"/>
                                 <idno type="shelfmark">DCD/D/SJC/2</idno>
-                                <msName><rs ref="eats:entity-214508" type="Place_EcclesiasticalArea">Durham</rs> <rs ref="eats:entity-296695" type="Collective_Office">Dean</rs> and <rs ref="eats:entity-296926" type="Collective_Office">Chapter</rs> Act and Visitation Book</msName>
+                                <msName><rs ref="eats:214508" type="Place_EcclesiasticalArea">Durham</rs> <rs ref="eats:296695" type="Collective_Office">Dean</rs> and <rs ref="eats:296926" type="Collective_Office">Chapter</rs> Act and Visitation Book</msName>
                             </msIdentifier>
                             <ab type="techDesc"><date>17 December 1595–9 October 1606</date>;
                                 English and Latin; paper; i + 176 + i, 42 leaves in eight booklets
@@ -14476,22 +14482,22 @@
                                 <settlement>Wakefield</settlement>
                                 <repository sameAs="#WYAS"/>
                                 <idno type="shelfmark">WYL1352/D1/5</idno>
-                                <msName>Household Inventory of Sir <rs ref="eats:entity-266301" type="Person_Gentry">Thomas Fairfax</rs></msName>
+                                <msName>Household Inventory of Sir <rs ref="eats:266301" type="Person_Gentry">Thomas Fairfax</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">Sir <rs ref="eats:entity-266301" type="Person_Gentry">Thomas Fairfax II</rs> (<hi rend="italic">c</hi>
+                            <ab type="edDesc">Sir <rs ref="eats:266301" type="Person_Gentry">Thomas Fairfax II</rs> (<hi rend="italic">c</hi>
                                 1575–1636) divided his time between his primary residence at <rs ref="http://ereed.library.utoronto.ca/eats/entity/250954/" type="Place_F_Residence">Gilling
                                 Castle</rs> and a secondary home at <rs ref="http://ereed.library.utoronto.ca/eats/entity/253402/" type="Place_PA_Settlement">Walton</rs>, two miles east of <rs ref="http://ereed.library.utoronto.ca/eats/entity/253540/" type="Place_PA_Settlement">Wetherby</rs>.
-                                Though Fairfax himself conformed, his wife <rs ref="eats:entity-266428" type="Person_Gentry">Catherine Constable</rs> (d.
-                                1626) was a life-long <rs ref="eats:entity-45671" type="CrimesMisdemeanors">recusant</rs>, and it is probably for this reason
-                                that Fairfax was not a <rs ref="eats:entity-291049" type="Collective_Office">member of the High Commission</rs>, nor was he
-                                ever appointed <rs ref="eats:entity-271331" type="Collective_Office">knight of the shire</rs>. He was <rs ref="eats:entity-274309" type="Collective_Office">MP for Boroughbridge</rs> in
+                                Though Fairfax himself conformed, his wife <rs ref="eats:266428" type="Person_Gentry">Catherine Constable</rs> (d.
+                                1626) was a life-long <rs ref="eats:45671" type="CrimesMisdemeanors">recusant</rs>, and it is probably for this reason
+                                that Fairfax was not a <rs ref="eats:291049" type="Collective_Office">member of the High Commission</rs>, nor was he
+                                ever appointed <rs ref="eats:271331" type="Collective_Office">knight of the shire</rs>. He was <rs ref="eats:274309" type="Collective_Office">MP for Boroughbridge</rs> in
                                 1601 (<title>HPO</title>,
                                 <ref target="https://www.historyofparliamentonline.org/volume/1558-1603/member/fairfax-thomas-ii-1575-1636">'Fairfax, Thomas II,'</ref> accessed 31 December 2020). See also the
                                 <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-fairfax">Introduction</ref>.</ab>
                             <ab type="techDesc"><date>1590–1624</date>; English; paper; 295 leaves;
-                                410mm x 270mm; contemporary foliation 1–295; ff 8–12, 82–240, 252–5
-                                blank; 271–2 stubs, 2 unfoliated leaves 305mm x 20 bound in between
-                                ff 272–3; heavily damaged by woodworm; contemporary leather on wood
+                                410mm x 270mm; contemporary foliation 1–295 (ff 8–12, 82–240, 252–5
+                                blank, 271–2 stubs, 2 unfoliated leaves 305mm x 20 bound in between
+                                ff 272–3); heavily damaged by woodworm; contemporary leather on wood
                                 binding, remains of gilt emblem on front cover with initials 'W
                                 F.'</ab>
                         </msDesc>
@@ -14504,7 +14510,7 @@
                             </msIdentifier>
                             <ab type="edDesc"><rs ref="http://ereed.library.utoronto.ca/eats/entity/130613/" type="Person_Nobility">Cecil</rs>'s list of <rs ref="http://ereed.library.utoronto.ca/eats/entity/45671/" type="CrimesMisdemeanors">recusants</rs> provides the clearest
                                 evidence that the <rs ref="http://ereed.library.utoronto.ca/eats/entity/255611/" type="Collective_Troupe">Simpsons' company</rs> <!-- [2021-08-30] KC: #759 -->was family-based, citing in two
-                                cases the wives of <rs ref="eats:entity-8782" type="Entertainer_Type">players</rs> as members of the company. <lb/> Because
+                                cases the wives of <rs ref="eats:8782" type="Entertainer_Type">players</rs> as members of the company. <lb/> Because
                                 the archives at <rs ref="http://ereed.library.utoronto.ca/eats/entity/38244/" type="Place_F_Residence">Hatfield House</rs> have been closed due the Covid-19
                                 pandemic, the transcriptions have not yet been checked for
                                 accuracy.</ab>
@@ -14521,21 +14527,21 @@
                                 <settlement>Hertfordshire</settlement>
                                 <repository sameAs="#hatfield-house"/>
                                 <idno type="shelfmark">Cecil Papers 88</idno>
-                                <msName>Sir <rs ref="eats:entity-263152" type="Person_Gentry">Thomas Hoby</rs>'s Letter to Sir <rs ref="eats:entity-145932" type="Person_Nobility">Robert Cecil</rs> with
+                                <msName>Sir <rs ref="eats:263152" type="Person_Gentry">Thomas Hoby</rs>'s Letter to Sir <rs ref="eats:145932" type="Person_Nobility">Robert Cecil</rs> with
                                     Enclosure</msName>
                             </msIdentifier>
                             <ab type="edDesc">On 26 August 1600 a group of young <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> gentry
-                                led by <rs ref="eats:entity-268461" type="Person_Nobility">William Eure</rs> (1579–1646), son of <rs ref="eats:entity-268329" type="Person_Nobility">Ralph Eure</rs> (1558–1617),
-                                third Baron Eure, and Ralph's brother, <rs ref="eats:entity-268686" type="Person_Gentry">Sir William</rs>, arrived at
-                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of <rs ref="eats:entity-263152" type="Person_Gentry">Sir Thomas</rs> on the pretext of
+                                led by <rs ref="eats:268461" type="Person_Nobility">William Eure</rs> (1579–1646), son of <rs ref="eats:268329" type="Person_Nobility">Ralph Eure</rs> (1558–1617),
+                                third Baron Eure, and Ralph's brother, <rs ref="eats:268686" type="Person_Gentry">Sir William</rs>, arrived at
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of <rs ref="eats:263152" type="Person_Gentry">Sir Thomas</rs> on the pretext of
                                 being on a hunting expedition. Sir Thomas received them with what
                                 may have been perceived as ill grace. The company spent the evening
-                                <rs ref="eats:entity-40997" type="Thing_FoodDrink">drinking</rs> and <rs ref="eats:entity-40677" type="Entertainment_Type">dicing</rs>, to Sir Thomas' disgust, to the extent that he
+                                <rs ref="eats:40997" type="Thing_FoodDrink">drinking</rs> and <rs ref="eats:40677" type="Entertainment_Type">dicing</rs>, to Sir Thomas' disgust, to the extent that he
                                 eventually locked the wine cellar. When the family sat down to
                                 evening prayers the interlopers attempted to disrupt the service by
-                                <rs ref="eats:entity-45595" type="CrimesMisdemeanors">stamping of feet and <rs ref="eats:entity-10906" type="Entertainer_Type">singing</rs></rs>. Upon leaving in the morning some
-                                <rs ref="eats:entity-45558" type="CrimesMisdemeanors">damage</rs> was done including several broken windows. Hoby wrote a
-                                letter of complaint to the privy council<note type="foot">See <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp272949960/">Sir Thomas Hoby's Letter to Sir Robert Cecil</ref>.</note> and the case eventually
+                                <rs ref="eats:45595" type="CrimesMisdemeanors">stamping of feet and <rs ref="eats:10906" type="Entertainer_Type">singing</rs></rs>. Upon departure in the morning, some
+                                <rs ref="eats:45558" type="CrimesMisdemeanors">damage</rs> was done, including several broken windows. Hoby wrote a
+                                letter of complaint to the privy council (see <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp272949960/">Sir Thomas Hoby's Letter to Sir Robert Cecil</ref>) and the case eventually
                                 went to Star Chamber where Eure was fined £100 annually.
                                 <!-- IN to insert cross-ref to STAC docs --></ab>
                             <ab type="techDesc"><date>1600</date>; English; paper; 2 bifolia, folded
@@ -14552,7 +14558,7 @@
                                     [4v])'ye Manner of the Riott.'</ab>
                         </msDesc>
                         <bibl xml:id="YNIEAY">
-                            <title type="edName">Injunctions of <rs ref="http://ereed.library.utoronto.ca/eats/entity/261265/" type="Person_Clergy">Edwin</rs>, <rs ref="eats:entity-220215" type="Collective_Office">Archbishop of York</rs></title>
+                            <title type="edName">Injunctions of <rs ref="http://ereed.library.utoronto.ca/eats/entity/261265/" type="Person_Clergy">Edwin</rs>, <rs ref="eats:220215" type="Collective_Office">Archbishop of York</rs></title>
                             <note type="edDesc"><p>We are grateful to Dr John Craig for bringing
                                     this unknown set of injunctions to our attention. Dr Craig's
                                     edition, 'The Injunctions of Archbishop Sandys for the Diocese
@@ -14572,31 +14578,31 @@
                                 <settlement>London</settlement>
                                 <repository sameAs="#BL"/>
                                 <idno type="shelfmark">Cotton MS Julius F VI, item 185</idno>
-                                <msName><rs ref="eats:entity-267370" type="Person_Commoner">William Camden</rs>'s Description of the Lyke Wake Ceremony
+                                <msName><rs ref="eats:267370" type="Person_Commoner">William Camden</rs>'s Description of the Lyke Wake Ceremony
                                     (A)</msName>
                             </msIdentifier>
                             <ab type="edDesc">This record, from the miscellaneous letters and papers
-                                of <rs ref="eats:entity-267370" type="Person_Commoner">William Camden</rs> (1551–1623), is a copy of a letter from 'H. Tr.'
-                                to Sir <rs ref="eats:entity-267433" type="Person_Gentry">Thomas Chaloner</rs> concerning antiquities in the area of
+                                of <rs ref="eats:267370" type="Person_Commoner">William Camden</rs> (1551–1623), is a copy of a letter from 'H. Tr.'
+                                to Sir <rs ref="eats:267433" type="Person_Gentry">Thomas Chaloner</rs> concerning antiquities in the area of
                                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/251069/" type="Place_PA_Settlement">Guisborough</rs>. Camden began his survey of the history, topography, and
                                 customs of the counties of <rs ref="http://ereed.library.utoronto.ca/eats/entity/1715/" type="Place_Country">England</rs>, <title>Britannia</title>, around
                                 1577, with the first edition appearing in 1586. Camden continued
                                 throughout his life to assemble relevant material (Wyman H.
                                 Herenden, 'Camden, William (1551–1623),' <title>ODNB</title>,
                                 accessed 31 December 2020). Sir Thomas Chaloner, naturalist, is
-                                often confused with his first cousin, <rs ref="eats:entity-267510" type="Person_Gentry">Sir Thomas Chaloner the
+                                often confused with his first cousin, <rs ref="eats:267510" type="Person_Gentry">Sir Thomas Chaloner the
                                 younger</rs> (1563/4–1615), a courtier who was in charge of the household
-                                of <rs ref="eats:entity-132168" type="Person_Royalty">Prince Henry</rs>, son of <rs ref="eats:entity-17496" type="Person_Royalty">James I</rs> (John Westby-Gibson and Kenneth L.
+                                of <rs ref="eats:132168" type="Person_Royalty">Prince Henry</rs>, son of <rs ref="eats:17496" type="Person_Royalty">James I</rs> (John Westby-Gibson and Kenneth L.
                                 Campbell (rev), 'Chaloner, Sir Thomas, the younger (1563/4–1615),'
                                     <title>ODNB</title>, accessed 28 December 2020). The courtier
                                 Chaloner held estates in the vicinity of Guisborough, <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs>,
-                                where his cousin spent time studying the effects of presence of alum
+                                where his cousin spent time studying the effects of the presence of alum
                                 in the soil on plant growth. Chaloner's interests as a naturalist
                                 led him to collect information on local customs as well. His
                                 correspondent, 'H. Tr.' (f 462) has not been identified. The letter
                                 is introduced in a different hand from the main text 'To
                                 S<ex>i</ex>r Tho<ex>mas</ex> Chaloner, as it seems, about
-                                Antiquities in the North parte of England' (f [1]), and
+                                Antiquities in the North parte of England' (f [1]) and
                                 concludes in the same hand as the main text 'Your
                                     worshipp<ex>es</ex> to comande | H. Tr.' (f
                                 [10]).<lb/></ab>
@@ -14613,9 +14619,9 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">STAC 5/S30/16</idno>
-                                <msName>Star Chamber Case: <rs ref="eats:entity-276689" type="Person_Commoner">Steill</rs> v. <rs ref="eats:entity-276875" type="Person_Commoner">Mitchell</rs> et al</msName>
+                                <msName>Star Chamber Case: <rs ref="eats:276689" type="Person_Commoner">Steill</rs> v. <rs ref="eats:276875" type="Person_Commoner">Mitchell</rs> et al</msName>
                             </msIdentifier>
-                            <ab type="edDesc">Although a number of <rs ref="eats:entity-40706" type="Entertainment_Type">jigs</rs> survive from the period,
+                            <ab type="edDesc">Although a number of <rs ref="eats:40706" type="Entertainment_Type">jigs</rs> survive from the period,
                                 this appears to be the only example directed at an individual (see
                                 Clegg and Skeaping, <title>Singing Simpkin</title>, pp 182–198, and
                                 also the
@@ -14632,12 +14638,12 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">STAC 8/276/26</idno>
-                                <msName>Star Chamber Case: <rs ref="eats:entity-276689" type="Person_Commoner">Steill</rs> v. <rs ref="eats:entity-276875" type="Person_Commoner">Mitchell</rs> et al</msName>
+                                <msName>Star Chamber Case: <rs ref="eats:276689" type="Person_Commoner">Steill</rs> v. <rs ref="eats:276875" type="Person_Commoner">Mitchell</rs> et al</msName>
                             </msIdentifier>
                             <ab type="techDesc"><date>10 October 1603–24 January 1603/4</date>;
                                 English; parchment; items 1–3 of 5 items, tied together: item 1: 3
                                 membranes, item 2: single membrane, item 3: single membrane;
-                                370–780mm x 250–520mm; modern pencil numbering, item 1: 1-4
+                                370–780mm x 250–520mm; modern pencil numbering, item 1: 1–4
                                 (membrane 2 is the dorse of membrane 1), item 2: 5, item 3: 6.</ab>
                         </msDesc>
                         <msDesc xml:id="YNNA03">
@@ -14645,9 +14651,9 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">STAC 8/12/11</idno>
-                                <msName>Star Chamber Case: <rs ref="eats:entity-258319" type="Person_Gentry">Cholmley</rs> v. <rs ref="eats:entity-263152" type="Person_Gentry">Hoby</rs></msName>
+                                <msName>Star Chamber Case: <rs ref="eats:258319" type="Person_Gentry">Cholmley</rs> v. <rs ref="eats:263152" type="Person_Gentry">Hoby</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">For information on <rs ref="eats:entity-263152" type="Person_Gentry">Thomas Hoby</rs> and <rs ref="eats:entity-258319" type="Person_Gentry">Richard Cholmley</rs>
+                            <ab type="edDesc">For information on <rs ref="eats:263152" type="Person_Gentry">Thomas Hoby</rs> and <rs ref="eats:258319" type="Person_Gentry">Richard Cholmley</rs>
                                 see the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-cholmley">Introduction</ref>.</ab>
                             <ab type="techDesc"><date>1609</date>; English; parchment; 2 single
                                 membranes bound together; 440–480mm x 600–610mm.</ab>
@@ -14657,21 +14663,21 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">STAC 5/H16/2</idno>
-                                <msName>Star Chamber Case: <rs ref="eats:entity-263152" type="Person_Gentry">Hoby</rs> v. <rs ref="eats:entity-263235" type="Person_Gentry">Cholmley</rs></msName>
+                                <msName>Star Chamber Case: <rs ref="eats:263152" type="Person_Gentry">Hoby</rs> v. <rs ref="eats:263235" type="Person_Gentry">Cholmley</rs></msName>
                             </msIdentifier>
                             <ab type="edDesc">On 26 August 1600 a group of young <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> gentry
-                                led by <rs ref="eats:entity-268461" type="Person_Nobility">William Eure</rs> (1579–1646), son of <rs ref="eats:entity-268329" type="Person_Nobility">Ralph Eure</rs> (1558–1617),
-                                third <rs ref="eats:entity-268439" type="Collective_Title">Baron Eure</rs>, and Ralph's brother, <rs ref="eats:entity-268686" type="Person_Gentry">Sir William</rs>, arrived at
-                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of <rs ref="eats:entity-263152" type="Person_Gentry">Sir Thomas</rs> on the pretext of
+                                led by <rs ref="eats:268461" type="Person_Nobility">William Eure</rs> (1579–1646), son of <rs ref="eats:268329" type="Person_Nobility">Ralph Eure</rs> (1558–1617),
+                                third <rs ref="eats:268439" type="Collective_Title">Baron Eure</rs>, and Ralph's brother, <rs ref="eats:268686" type="Person_Gentry">Sir William</rs>, arrived at
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of <rs ref="eats:263152" type="Person_Gentry">Sir Thomas</rs> on the pretext of
                                 being on a hunting expedition. Sir Thomas received them with what
                                 may have been perceived as ill grace. The company spent the evening
-                                <rs ref="eats:entity-40997" type="Thing_FoodDrink">drinking</rs> and <rs ref="eats:entity-40677" type="Entertainment_Type">dicing</rs>, to Sir Thomas' disgust, to the extent that he
+                                <rs ref="eats:40997" type="Thing_FoodDrink">drinking</rs> and <rs ref="eats:40677" type="Entertainment_Type">dicing</rs>, to Sir Thomas' disgust, to the extent that he
                                 eventually locked the wine cellar. When the family sat down to
                                 evening prayers the interlopers attempted to disrupt the service by
-                                <rs ref="eats:entity-45595" type="CrimesMisdemeanors">stamping of feet and <rs ref="eats:entity-10906" type="Entertainer_Type">singing</rs></rs>. Upon leaving in the morning some
-                                <rs ref="eats:entity-45558" type="CrimesMisdemeanors">damage</rs> was done including several broken windows. Hoby wrote a
-                                letter of complaint to the privy council<note type="foot">See <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp272949960/">Sir Thomas Hoby's Letter to Sir Robert Cecil</ref>.</note> and the case eventually
-                                went to Star Chamber where Eure was fined £100 annually. For more information on Thomas Hoby and <rs ref="eats:entity-263235" type="Person_Gentry">Henry</rs> and <rs ref="eats:entity-258319" type="Person_Gentry">Richard
+                                <rs ref="eats:45595" type="CrimesMisdemeanors">stamping of feet and <rs ref="eats:10906" type="Entertainer_Type">singing</rs></rs>. Upon departure in the morning, some
+                                <rs ref="eats:45558" type="CrimesMisdemeanors">damage</rs> was done, including several broken windows. Hoby wrote a
+                                letter of complaint to the privy council (see <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp272949960/">Sir Thomas Hoby's Letter to Sir Robert Cecil</ref>) and the case eventually
+                                went to Star Chamber where Eure was fined £100 annually. For more information on Thomas Hoby and <rs ref="eats:263235" type="Person_Gentry">Henry</rs> and <rs ref="eats:258319" type="Person_Gentry">Richard
                                 Cholmley</rs> see the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-cholmley">Introduction</ref>.</ab>
                             <ab type="techDesc"><date>1600</date>; English; parchment; single
                                 membrane; 500mm x 610mm; poor condition, with a large hole in lower
@@ -14682,20 +14688,20 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">STAC 5/H22/21</idno>
-                                <msName>Star Chamber Case: <rs ref="eats:entity-263152" type="Person_Gentry">Hoby</rs> v. <rs ref="eats:entity-268461" type="Person_Nobility">Eure</rs></msName>
+                                <msName>Star Chamber Case: <rs ref="eats:263152" type="Person_Gentry">Hoby</rs> v. <rs ref="eats:268461" type="Person_Nobility">Eure</rs></msName>
                             </msIdentifier>
                             <ab type="edDesc">On 26 August 1600 a group of young <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> gentry
-                                led by <rs ref="eats:entity-268461" type="Person_Nobility">William Eure</rs> (1579–1646), son of <rs ref="eats:entity-268329" type="Person_Nobility">Ralph Eure</rs> (1558–1617),
-                                third <rs ref="eats:entity-268439" type="Collective_Title">Baron Eure</rs>, and Ralph's brother, Sir William, arrived at
-                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of <rs ref="eats:entity-263152" type="Person_Gentry">Sir Thomas</rs> on the pretext of
+                                led by <rs ref="eats:268461" type="Person_Nobility">William Eure</rs> (1579–1646), son of <rs ref="eats:268329" type="Person_Nobility">Ralph Eure</rs> (1558–1617),
+                                third <rs ref="eats:268439" type="Collective_Title">Baron Eure</rs>, and Ralph's brother, Sir William, arrived at
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of <rs ref="eats:263152" type="Person_Gentry">Sir Thomas</rs> on the pretext of
                                 being on a hunting expedition. Sir Thomas received them with what
                                 may have been perceived as ill grace. The company spent the evening
-                                <rs ref="eats:entity-40997" type="Thing_FoodDrink">drinking</rs> and <rs ref="eats:entity-40677" type="Entertainment_Type">dicing</rs>, to Sir Thomas' disgust, to the extent that he
+                                <rs ref="eats:40997" type="Thing_FoodDrink">drinking</rs> and <rs ref="eats:40677" type="Entertainment_Type">dicing</rs>, to Sir Thomas' disgust, to the extent that he
                                 eventually locked the wine cellar. When the family sat down to
                                 evening prayers the interlopers attempted to disrupt the service by
-                                <rs ref="eats:entity-45595" type="CrimesMisdemeanors">stamping of feet and <rs ref="eats:entity-10906" type="Entertainer_Type">singing</rs></rs>. Upon leaving in the morning some
-                                <rs ref="eats:entity-45558" type="CrimesMisdemeanors">damage</rs> was done including several broken windows. Hoby wrote a
-                                letter of complaint to the privy council<note type="foot">See <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp272949960/">Sir Thomas Hoby's Letter to Sir Robert Cecil</ref>.</note> and the case eventually
+                                <rs ref="eats:45595" type="CrimesMisdemeanors">stamping of feet and <rs ref="eats:10906" type="Entertainer_Type">singing</rs></rs>. Upon departure in the morning, some
+                                <rs ref="eats:45558" type="CrimesMisdemeanors">damage</rs> was done, including several broken windows. Hoby wrote a
+                                letter of complaint to the privy council (see <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp272949960/">Sir Thomas Hoby's Letter to Sir Robert Cecil</ref>) and the case eventually
                                 went to Star Chamber where Eure was fined £100 annually. For more information on Thomas Hoby and William Eure see
                                 the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-hoby">Introduction</ref>.</ab>
                             <ab type="techDesc"><date>1601–2</date>; English; parchment; 6 items
@@ -14710,19 +14716,19 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">STAC 5/H50/4</idno>
-                                <msName>Star Chamber Case: <rs ref="eats:entity-263152" type="Person_Gentry">Hoby</rs> v. <rs ref="eats:entity-268461" type="Person_Nobility">Eure</rs></msName>
+                                <msName>Star Chamber Case: <rs ref="eats:263152" type="Person_Gentry">Hoby</rs> v. <rs ref="eats:268461" type="Person_Nobility">Eure</rs></msName>
                             </msIdentifier>
                             <ab type="edDesc">On 26 August 1600 a group of young <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> gentry
-                                led by <rs ref="eats:entity-268461" type="Person_Nobility">William Eure</rs> (1579–1646), son of <rs ref="eats:entity-268329" type="Person_Nobility">Ralph Eure</rs> (1558–1617),
-                                third <rs ref="eats:entity-268439" type="Collective_Title">Baron Eure</rs>, and Ralph's brother, <rs ref="eats:entity-268686" type="Person_Gentry">Sir William</rs>, arrived at
-                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of <rs ref="eats:entity-263152" type="Person_Gentry">Sir Thomas</rs> on the pretext of
+                                led by <rs ref="eats:268461" type="Person_Nobility">William Eure</rs> (1579–1646), son of <rs ref="eats:268329" type="Person_Nobility">Ralph Eure</rs> (1558–1617),
+                                third <rs ref="eats:268439" type="Collective_Title">Baron Eure</rs>, and Ralph's brother, <rs ref="eats:268686" type="Person_Gentry">Sir William</rs>, arrived at
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of <rs ref="eats:263152" type="Person_Gentry">Sir Thomas</rs> on the pretext of
                                 being on a hunting expedition. Sir Thomas received them with what
                                 may have been perceived as ill grace. The company spent the evening
-                                <rs ref="eats:entity-40997" type="Thing_FoodDrink">drinking</rs> and <rs ref="eats:entity-40677" type="Entertainment_Type">dicing</rs>, to Sir Thomas' disgust, to the extent that he
+                                <rs ref="eats:40997" type="Thing_FoodDrink">drinking</rs> and <rs ref="eats:40677" type="Entertainment_Type">dicing</rs>, to Sir Thomas' disgust, to the extent that he
                                 eventually locked the wine cellar. When the family sat down to
                                 evening prayers the interlopers attempted to disrupt the service by
-                                <rs ref="eats:entity-45595" type="CrimesMisdemeanors">stamping of feet and <rs ref="eats:entity-10906" type="Entertainer_Type">singing</rs></rs>. Upon leaving in the morning some
-                                <rs ref="eats:entity-45558" type="CrimesMisdemeanors">damage</rs> was done including several broken windows. Hoby wrote a
+                                <rs ref="eats:45595" type="CrimesMisdemeanors">stamping of feet and <rs ref="eats:10906" type="Entertainer_Type">singing</rs></rs>. Upon departure in the morning, some
+                                <rs ref="eats:45558" type="CrimesMisdemeanors">damage</rs> was done, including several broken windows. Hoby wrote a
                                 letter of complaint to the privy council (see <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp272949960/">Sir Thomas Hoby's Letter to Sir Robert Cecil</ref>) and the case eventually
                                 went to Star Chamber where Eure was fined £100 annually. For more information on Thomas Hoby and William Eure see
                                 the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-hoby">Introduction</ref>.</ab>
@@ -14737,19 +14743,19 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">STAC 5/H42/12</idno>
-                                <msName>Star Chamber Case: <rs ref="eats:entity-263152" type="Person_Gentry">Hoby</rs> v. <rs ref="eats:entity-268461" type="Person_Nobility">Eure</rs></msName>
+                                <msName>Star Chamber Case: <rs ref="eats:263152" type="Person_Gentry">Hoby</rs> v. <rs ref="eats:268461" type="Person_Nobility">Eure</rs></msName>
                             </msIdentifier>
                             <ab type="edDesc">On 26 August 1600 a group of young <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> gentry
-                                led by <rs ref="eats:entity-268461" type="Person_Nobility">William Eure</rs> (1579–1646), son of <rs ref="eats:entity-268329" type="Person_Nobility">Ralph Eure</rs> (1558–1617),
-                                third <rs ref="eats:entity-268439" type="Collective_Title">Baron Eure</rs>, and Ralph's brother, <rs ref="eats:entity-268686" type="Person_Gentry">Sir William</rs>, arrived at
-                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of <rs ref="eats:entity-263152" type="Person_Gentry">Sir Thomas</rs> on the pretext of
+                                led by <rs ref="eats:268461" type="Person_Nobility">William Eure</rs> (1579–1646), son of <rs ref="eats:268329" type="Person_Nobility">Ralph Eure</rs> (1558–1617),
+                                third <rs ref="eats:268439" type="Collective_Title">Baron Eure</rs>, and Ralph's brother, <rs ref="eats:268686" type="Person_Gentry">Sir William</rs>, arrived at
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of <rs ref="eats:263152" type="Person_Gentry">Sir Thomas</rs> on the pretext of
                                 being on a hunting expedition. Sir Thomas received them with what
                                 may have been perceived as ill grace. The company spent the evening
-                                <rs ref="eats:entity-40997" type="Thing_FoodDrink">drinking</rs> and <rs ref="eats:entity-40677" type="Entertainment_Type">dicing</rs>, to Sir Thomas' disgust, to the extent that he
+                                <rs ref="eats:40997" type="Thing_FoodDrink">drinking</rs> and <rs ref="eats:40677" type="Entertainment_Type">dicing</rs>, to Sir Thomas' disgust, to the extent that he
                                 eventually locked the wine cellar. When the family sat down to
                                 evening prayers the interlopers attempted to disrupt the service by
-                                <rs ref="eats:entity-45595" type="CrimesMisdemeanors">stamping of feet and <rs ref="eats:entity-10906" type="Entertainer_Type">singing</rs></rs>. Upon leaving in the morning some
-                                <rs ref="eats:entity-45558" type="CrimesMisdemeanors">damage</rs> was done including several broken windows. Hoby wrote a
+                                <rs ref="eats:45595" type="CrimesMisdemeanors">stamping of feet and <rs ref="eats:10906" type="Entertainer_Type">singing</rs></rs>. Upon departure in the morning, some
+                                <rs ref="eats:45558" type="CrimesMisdemeanors">damage</rs> was done, including several broken windows. Hoby wrote a
                                 letter of complaint to the privy council and the case eventually
                                 went to Star Chamber where Eure was fined £100 annually (see <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp272949960/">Sir Thomas Hoby's Letter to Sir Robert Cecil</ref>). For more information on Thomas Hoby and William Eure see
                                 the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-cholmley">Introduction</ref>.</ab>
@@ -14763,19 +14769,19 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">STAC 5/H67/29</idno>
-                                <msName>Star Chamber Case: <rs ref="eats:entity-263152" type="Person_Gentry">Hoby</rs> v. <rs ref="eats:entity-268461" type="Person_Nobility">Eure</rs></msName>
+                                <msName>Star Chamber Case: <rs ref="eats:263152" type="Person_Gentry">Hoby</rs> v. <rs ref="eats:268461" type="Person_Nobility">Eure</rs></msName>
                             </msIdentifier>
                             <ab type="edDesc">On 26 August 1600 a group of young <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> gentry
-                                led by <rs ref="eats:entity-268461" type="Person_Nobility">William Eure</rs> (1579–1646), son of <rs ref="eats:entity-268329" type="Person_Nobility">Ralph Eure</rs> (1558–1617),
-                                third <rs ref="eats:entity-268439" type="Collective_Title">Baron Eure</rs>, and Ralph's brother, <rs ref="eats:entity-268686" type="Person_Gentry">Sir William</rs>, arrived at
-                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of <rs ref="eats:entity-263152" type="Person_Gentry">Sir Thomas</rs> on the pretext of
+                                led by <rs ref="eats:268461" type="Person_Nobility">William Eure</rs> (1579–1646), son of <rs ref="eats:268329" type="Person_Nobility">Ralph Eure</rs> (1558–1617),
+                                third <rs ref="eats:268439" type="Collective_Title">Baron Eure</rs>, and Ralph's brother, <rs ref="eats:268686" type="Person_Gentry">Sir William</rs>, arrived at
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> and demanded hospitality of <rs ref="eats:263152" type="Person_Gentry">Sir Thomas</rs> on the pretext of
                                 being on a hunting expedition. Sir Thomas received them with what
                                 may have been perceived as ill grace. The company spent the evening
-                                <rs ref="eats:entity-40997" type="Thing_FoodDrink">drinking</rs> and <rs ref="eats:entity-40677" type="Entertainment_Type">dicing</rs>, to Sir Thomas' disgust, to the extent that he
+                                <rs ref="eats:40997" type="Thing_FoodDrink">drinking</rs> and <rs ref="eats:40677" type="Entertainment_Type">dicing</rs>, to Sir Thomas' disgust, to the extent that he
                                 eventually locked the wine cellar. When the family sat down to
                                 evening prayers the interlopers attempted to disrupt the service by
-                                <rs ref="eats:entity-45595" type="CrimesMisdemeanors">stamping of feet and <rs ref="eats:entity-10906" type="Entertainer_Type">singing</rs></rs>. Upon leaving in the morning some
-                                <rs ref="eats:entity-45558" type="CrimesMisdemeanors">damage</rs> was done including several broken windows. Hoby wrote a
+                                <rs ref="eats:45595" type="CrimesMisdemeanors">stamping of feet and <rs ref="eats:10906" type="Entertainer_Type">singing</rs></rs>. Upon departure in the morning, some
+                                <rs ref="eats:45558" type="CrimesMisdemeanors">damage</rs> was done, including several broken windows. Hoby wrote a
                                 letter of complaint to the privy council and the case eventually
                                 went to Star Chamber where Eure was fined £100 annually (see <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp272949960/">Sir Thomas Hoby's Letter to Sir Robert Cecil</ref>). For more information on Sir Thomas Hoby and William Eure,
                                 see the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-cholmley">Introduction</ref>.</ab>
@@ -14793,7 +14799,7 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">E 101/379/17</idno>
-                                <msName><rs ref="eats:entity-44180" type="Person_Royalty">Edward II</rs>'s <rs ref="eats:entity-291878" type="Collective_Office">Remembrancer</rs> Accounts</msName>
+                                <msName><rs ref="eats:44180" type="Person_Royalty">Edward II</rs>'s <rs ref="eats:291878" type="Collective_Office">Remembrancer</rs> Accounts</msName>
                             </msIdentifier>
                             <ab type="techDesc"><date>1323–4</date>; Latin and French; parchment; 6
                                 membranes; 260mm x 350mm; unnumbered; mounted on archival paper and
@@ -14804,17 +14810,17 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">MS E101/386/7</idno>
-                                <msName>Wardrobe Accounts of <rs ref="eats:entity-292103" type="Person_Royalty">Eleanor of Woodstock</rs></msName>
+                                <msName>Wardrobe Accounts of <rs ref="eats:292103" type="Person_Royalty">Eleanor of Woodstock</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc"><rs ref="eats:entity-292103" type="Person_Royalty">Eleanor of Woodstock</rs> (1318–1355) was
-                                the younger sister of <rs ref="eats:entity-30996" type="Person_Royalty">Edward III</rs>. She became <rs ref="eats:entity-292291" type="Collective_Title">countess of Gueldres</rs> by
-                                her marriage to <rs ref="eats:entity-292207" type="Person_Nobility">Reinaud II</rs> ('the Black'), <rs ref="eats:entity-292269" type="Collective_Title">count of Gueldres</rs> and
-                                <rs ref="eats:entity-292313" type="Collective_Title">Zutphen</rs>, in 1332, and at his death in 1343 she became <rs ref="eats:entity-297564" type="Collective_Office">regent</rs> of
-                                Gueldres during the minority of her son, <rs ref="eats:entity-292335" type="Person_Nobility">Reinaud III</rs> (1334–71) (Alison Weir,
+                            <ab type="edDesc"><rs ref="eats:292103" type="Person_Royalty">Eleanor of Woodstock</rs> (1318–1355) was
+                                the younger sister of <rs ref="eats:30996" type="Person_Royalty">Edward III</rs>. She became <rs ref="eats:292291" type="Collective_Title">countess of Gueldres</rs> by
+                                her marriage to <rs ref="eats:292207" type="Person_Nobility">Reinaud II</rs> ('the Black'), <rs ref="eats:292269" type="Collective_Title">count of Gueldres</rs> and
+                                <rs ref="eats:292313" type="Collective_Title">Zutphen</rs>, in 1332, and at his death in 1343 she became <rs ref="eats:297564" type="Collective_Office">regent</rs> of
+                                Gueldres during the minority of her son, <rs ref="eats:292335" type="Person_Nobility">Reinaud III</rs> (1334–71) (Alison Weir,
                                     <title>Britain's Royal Families: The Complete Genealogy</title>
-                                (London, 1989), 90–1). <rs ref="eats:entity-292080" type="Place_F_ReligiousHouse">Rosedale Priory</rs> was a small Cistercian
+                                (London, 1989), 90–1). <rs ref="eats:292080" type="Place_F_ReligiousHouse">Rosedale Priory</rs> was a small Cistercian
                                 convent situated in the heart of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> moors about
-                                fifteen miles southwest of <rs ref="eats:entity-249567" type="Place_PA_Settlement">Whitby</rs>. <lb/></ab>
+                                fifteen miles southwest of <rs ref="eats:249567" type="Place_PA_Settlement">Whitby</rs>. <lb/></ab>
                             <ab type="techDesc"><date>25 January 1332/3–24 January 1333/4</date>;
                                 Latin; parchment; 12 leaves; 347mm x 250mm; modern foliation 1–2,
                                 2a, 3–9, 20 (crossed out), 10, 11; preserved in a paper
@@ -14825,9 +14831,9 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">STAC 8/267/28</idno>
-                                <msName>Star Chamber Case: <rs ref="eats:entity-287757" type="Person_StatusOther">Skarth</rs> v. <rs ref="eats:entity-287857" type="Person_StatusOther">Glover</rs></msName>
+                                <msName>Star Chamber Case: <rs ref="eats:287757" type="Person_StatusOther">Skarth</rs> v. <rs ref="eats:287857" type="Person_StatusOther">Glover</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc"><rs ref="eats:entity-287757" type="Person_StatusOther">Skarth</rs> and <rs ref="eats:entity-287857" type="Person_StatusOther">Glover</rs> were both common names in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/249567/" type="Place_PA_Settlement">Whitby</rs>
+                            <ab type="edDesc"><rs ref="eats:287757" type="Person_StatusOther">Skarth</rs> and <rs ref="eats:287857" type="Person_StatusOther">Glover</rs> were both common names in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/249567/" type="Place_PA_Settlement">Whitby</rs>
                                 area.</ab>
                             <ab type="techDesc"><date>11 July 1623</date>; English and Latin;
                                 parchment; 2 items, both single membranes, sewn together on a tag;
@@ -14837,20 +14843,20 @@
                             <msIdentifier>
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
-                                <idno type="shelfmark">ZAZ 75-76</idno>
+                                <idno type="shelfmark">ZAZ 75–76</idno>
                                 <msName>Satirical Verses on <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> Gentry</msName>
                             </msIdentifier>
-                            <ab type="edDesc">The document is in the hand of Sir <rs ref="eats:entity-274466" type="Person_Gentry">Timothy Hutton</rs>
-                                (1569–1629), son of <rs ref="eats:entity-261914" type="Person_Clergy">Matthew Hutton</rs>, (1529?-1606), <rs ref="eats:entity-220215" type="Collective_Office">archbishop of
+                            <ab type="edDesc">The document is in the hand of Sir <rs ref="eats:274466" type="Person_Gentry">Timothy Hutton</rs>
+                                (1569–1629), son of <rs ref="eats:261914" type="Person_Clergy">Matthew Hutton</rs>, (1529?-1606), <rs ref="eats:220215" type="Collective_Office">archbishop of
                                 York</rs>, 1594/5–1606. There is no proof that the verses were
                                 performance material but it is likely that they represent the same
                                 attitude of class antipathy towards local gentry as is seen in the
-                                <rs ref="eats:entity-276689" type="Person_Commoner">Steel</rs>-<rs ref="eats:entity-276813" type="Person_StatusOther">Mennell</rs> <rs ref="eats:entity-40706" type="Entertainment_Type">jig</rs> of 1602–3 (see <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp273383368/">Star Chamber Case: Steill v. Mitchell et al</ref>). Just as the jig
+                                <rs ref="eats:276689" type="Person_Commoner">Steel</rs>-<rs ref="eats:276813" type="Person_StatusOther">Mennell</rs> <rs ref="eats:40706" type="Entertainment_Type">jig</rs> of 1602–3 (see <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp273383368/">Star Chamber Case: Steill v. Mitchell et al</ref>). Just as the jig
                                 circulated and was performed, most probably privately, as well as
                                 circulating in written form, so it is likely that these satirical
                                 verses were as well. Michael Ashcroft, formerly North Riding county
                                 archivist, suggested the following persons as likely subjects of the
-                                satire: <rs ref="eats:entity-265676" type="Person_Gentry">Henry Bellasis</rs>, William Bamburgh, Francis Boynton, Richard
+                                satire: <rs ref="eats:265676" type="Person_Gentry">Henry Bellasis</rs>, William Bamburgh, Francis Boynton, Richard
                                 Cholmley, Darcy Conyers, Arthur/Anthony Dakins, Thomas Dawney,
                                 Richard Etherington, William Eure, Henry Frankland, Richard
                                 Gargrave, John Gibson (Senior and Junior), Timothy Hutton, Thomas
@@ -14874,21 +14880,19 @@
                                 <idno type="shelfmark">QSM 2/1</idno>
                                 <msName>Quarter Sessions Records</msName>
                             </msIdentifier>
-                            <ab type="edDesc">These prosecutions were brought under the
-                                poor laws, which had existed in some form since <rs ref="eats:entity-43591" type="Person_Royalty">Henry VIII</rs>'s reign
-                                but were expanded and clarified under <rs ref="eats:entity-11772" type="Person_Royalty">Elizabeth</rs>. Itinerant
-                                <rs ref="eats:entity-1261" type="Entertainer_Type">performers</rs> in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> ranged from individual <rs ref="eats:entity-1162" type="Entertainer_Type">pipers</rs>,
-                                <rs ref="eats:entity-12982" type="Entertainer_Type">fiddlers</rs>, <rs ref="eats:entity-150141" type="Entertainer_Type">jugglers</rs>, and others living close to or below the poverty
-                                line to organized <rs ref="eats:entity-254814" type="Collective_Troupe">companies</rs> of travelling <rs ref="eats:entity-8782" type="Entertainer_Type">players</rs>. Most of these
-                                did not play under gentry patronage and so were vulnerable to arrest
-                                and punishment under the Elizabethan and Stuart poor laws governing
-                                '<rs ref="eats:entity-194093" type="CrimesMisdemeanors">rogues, vagabonds, and sturdy beggars</rs>' (see the
-                                <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/traditions/">Introduction</ref>). When these companies were
+                            <ab type="edDesc">Itinerant <rs ref="http://ereed.library.utoronto.ca/eats/entity/1261/" type="Entertainer_Type">performers</rs> in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> ranged from
+                                individual <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/" type="Entertainer_Type">pipers</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/12982/" type="Entertainer_Type">fiddlers</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/150141/" type="Entertainer_Type">jugglers</rs>, and others living close to or
+                                below the poverty line, to organized <rs ref="http://ereed.library.utoronto.ca/eats/entity/254814/" type="Collective_Troupe">companies</rs> of travelling
+                                <rs ref="http://ereed.library.utoronto.ca/eats/entity/8782/" type="Entertainer_Type">players</rs>. Most of these did not play under gentry patronage and so
+                                were vulnerable to arrest and punishment under the Elizabethan and
+                                Stuart poor laws governing <rs ref="http://ereed.library.utoronto.ca/eats/entity/194093/" type="CrimesMisdemeanors">'rogues, vagabonds, and sturdy beggars'</rs>
+                                (see the
+                                <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/traditions/">Introduction</ref> and 39 Eliz c4; Great Britain, <title>Statutes of the Realm</title>, vol 4, pt 2 (London, 1819; rpt 1963), 899–902). When these companies were
                                 apprehended, the court normally recorded not only the names of all
                                 the members but also prosecuted those who provided lodging and
                                 performance space for them, allowing us to map their touring routes.
-                                The <rs ref="eats:entity-255611" type="Collective_Troupe">Simpson company</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/250670/" type="Place_PA_Settlement">Egton</rs> (<rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs>) appeared before the
-                                court on several occasions (see <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp283896808/">Quarter Session Records</ref>).
+                                The <rs ref="eats:255611" type="Collective_Troupe">Simpson company</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/250670/" type="Place_PA_Settlement">Egton</rs> (<rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs>) appeared before the
+                                court on several occasions (see the <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp283896808/">Quarter Session Records</ref>).
                                 <lb/> Because the Record Office has been closed due to the Covid-19
                                 pandemic, the document description has not been checked for
                                 accuracy. The transcription was checked against photographs.</ab>
@@ -14908,18 +14912,18 @@
                             </msIdentifier>
                             <ab type="edDesc">Itinerant <rs ref="http://ereed.library.utoronto.ca/eats/entity/1261/" type="Entertainer_Type">performers</rs> in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> ranged from
                                 individual <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/" type="Entertainer_Type">pipers</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/12982/" type="Entertainer_Type">fiddlers</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/150141/" type="Entertainer_Type">jugglers</rs>, and others living close to or
-                                below the poverty line to organized <rs ref="http://ereed.library.utoronto.ca/eats/entity/254814/" type="Collective_Troupe">companies</rs> of travelling
+                                below the poverty line, to organized <rs ref="http://ereed.library.utoronto.ca/eats/entity/254814/" type="Collective_Troupe">companies</rs> of travelling
                                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/8782/" type="Entertainer_Type">players</rs>. Most of these did not play under gentry patronage and so
                                 were vulnerable to arrest and punishment under the Elizabethan and
                                 Stuart poor laws governing <rs ref="http://ereed.library.utoronto.ca/eats/entity/194093/" type="CrimesMisdemeanors">'rogues, vagabonds, and sturdy beggars'</rs>
                                 (see the
-                                <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/traditions/">Introduction</ref> and 39 Eliz c4; Great Britain, <title>Statutes of the Realm</title>, vol 4, pt 2 (London, 1819; rpt 1963), 899-902).
+                                <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/traditions/">Introduction</ref> and 39 Eliz c4; Great Britain, <title>Statutes of the Realm</title>, vol 4, pt 2 (London, 1819; rpt 1963), 899–902).
                                 When these companies were apprehended, the court normally recorded
                                 not only the names of all the members but also prosecuted those who
                                 provided lodging and performance space for them, allowing us to map
-                                their touring routes. The <rs ref="eats:entity-255611" type="Collective_Troupe">Simpson company</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/250670/" type="Place_PA_Settlement">Egton</rs> (North Riding)
+                                their touring routes. The <rs ref="eats:255611" type="Collective_Troupe">Simpson company</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/250670/" type="Place_PA_Settlement">Egton</rs> (North Riding)
                                 appeared before the court on several
-                                occasions (see <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp283896808/">Quarter Session Records</ref>). These appearances give us considerable information on their local organization. Notably, however, <rs ref="http://ereed.library.utoronto.ca/eats/entity/251000/" type="Place_F_Residence">Gouthwaite Hall</rs> - the site of their best-known performance on 2 February 1608/9 -- was in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/2471/" type="Place_County">West Riding</rs> until 1974, when the county boundaries were redrawn.
+                                occasions (see the <ref target="https://ereed.library.utoronto.ca/records/yksnr-ridp283896808/">Quarter Session Records</ref>). These appearances give us considerable information on their local organization. Notably, however, <rs ref="http://ereed.library.utoronto.ca/eats/entity/251000/" type="Place_F_Residence">Gouthwaite Hall</rs> – the site of their best-known performance on 2 February 1608/9 – was in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/2471/" type="Place_County">West Riding</rs> until 1974, when the county boundaries were redrawn.
                                 That performance brought their host, <rs ref="http://ereed.library.utoronto.ca/eats/entity/256384/" type="Person_Gentry">Sir John Yorke</rs>, before the court of
                                 Star Chamber; the documentation of that case will appear in the
                                 forthcoming Yorkshire West Riding collection. Documents presented
@@ -14927,7 +14931,7 @@
                                 reference to the position of boy players.</ab>
                             <ab type="techDesc"><date>17 April 1610–12 January 1615/16</date>;
                                 English and Latin; paper; iv + 254 + iv ; 300mm x 180mm;
-                                contemporary foliation 1-221 (ff [4, 6, 12, 19, 22, 27–33]
+                                contemporary foliation 1–221 (ff [4, 6, 12, 19, 22, 27–33]
                                 blank, ff 216–21 also blank); contemporary calfskin binding, 2
                                 leather labels on spine, upper red, lower black, with gold
                                 lettering, respectively 'Minutes | and | Orders' and '1610 | to |
@@ -14942,18 +14946,18 @@
                             </msIdentifier>
                             <ab type="edDesc">Itinerant <rs ref="http://ereed.library.utoronto.ca/eats/entity/1261/" type="Entertainer_Type">performers</rs> in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> ranged from
                                 individual <rs ref="http://ereed.library.utoronto.ca/eats/entity/1162/" type="Entertainer_Type">pipers</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/12982/" type="Entertainer_Type">fiddlers</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/150141/" type="Entertainer_Type">jugglers</rs>, and others living close to or
-                                below the poverty line to organized <rs ref="http://ereed.library.utoronto.ca/eats/entity/254814/" type="Collective_Troupe">companies</rs> of travelling
+                                below the poverty line, to organized <rs ref="http://ereed.library.utoronto.ca/eats/entity/254814/" type="Collective_Troupe">companies</rs> of travelling
                                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/8782/" type="Entertainer_Type">players</rs>. Most of these did not play under gentry patronage and so
                                 were vulnerable to arrest and punishment under the Elizabethan and
                                 Stuart poor laws governing 'rogues, vagabonds, and sturdy beggars'
-                                (39 Eliz c4; Great Britain, <title>Statutes of the Realm</title>, vol 4, pt 2 (London, 1819; rpt 1963), 899-902).
+                                (39 Eliz c4; Great Britain, <title>Statutes of the Realm</title>, vol 4, pt 2 (London, 1819; rpt 1963), 899–902).
                                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/254518/" type="Person_Commoner">Edward Lister</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/254255/" type="Person_Commoner">Richard Hudson</rs>, who figure regularly in the
                                 presentments of 1616, were the leaders of the small <rs ref="http://ereed.library.utoronto.ca/eats/entity/255368/" type="Collective_Troupe">playing company</rs>.
                                 They were based in <rs ref="http://ereed.library.utoronto.ca/eats/entity/251368/" type="Place_PA_Settlement">Hutton Buscel</rs>, just over four miles southwest of
                                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs>, but they were active throughout the North Riding. The
                                 seven members of the company included three children, <rs ref="http://ereed.library.utoronto.ca/eats/entity/254584/" type="Person_Commoner">Lister's son</rs>
                                 and <rs ref="http://ereed.library.utoronto.ca/eats/entity/254323/   https://ereed.library.utoronto.ca/eats/entity/254384/" type="Person_Commoner">Hudson's two sons</rs> as well as <rs ref="http://ereed.library.utoronto.ca/eats/entity/254457/" type="Person_Commoner">Christopher Hutchinson</rs>, a boy of
-                                sixteen. The court is careful to note the ages of the boys in the company since those seven and under formed a separate category under the Poor Laws (<title>The Workhouse: The Story of an Institution</title>, http://www.workhouses.org.uk/education, accessed 8 October 2021). Between December 29 and February 18, 1616, the company
+                                sixteen. The court is careful to note the ages of the boys in the company since those seven and under formed a separate category under the poor laws (<title>The Workhouse: The Story of an Institution</title>, http://www.workhouses.org.uk/education, accessed 8 October 2021). Between December 29, 1616, and February 18, 1616/17, the company
                                 played for thirty-two of the North Riding gentry and yeomen farmers,
                                 each of whom was fined 10s following their prosecution in the
                                 quarter sessions. Following this extensive tour, the company was
@@ -15009,13 +15013,13 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">ZZH 1/1</idno>
-                                <msName><rs ref="eats:entity-279826" type="Collective_GuildOccupational">Mercers, Grocers and Haberdashers'</rs> Minute Book</msName>
+                                <msName><rs ref="eats:279826" type="Collective_GuildOccupational">Mercers, Grocers, and Haberdashers'</rs> Minute Book</msName>
                             </msIdentifier>
-                            <ab type="edDesc">The officers of <rs ref="eats:entity-279826" type="Collective_GuildOccupational">the guild</rs> include the elected <rs ref="eats:entity-280055" type="Collective_Office">warden</rs>
-                                and <rs ref="eats:entity-287187" type="Collective_Office">underwarden</rs>, who served for a year, but were eligible for
-                                reelection and a number of '<rs ref="eats:entity-287209" type="Collective_Office">searchers</rs>' (that is, inspectors). Most
+                            <ab type="edDesc">The officers of <rs ref="eats:279826" type="Collective_GuildOccupational">the guild</rs> include the elected <rs ref="eats:280055" type="Collective_Office">warden</rs>
+                                and <rs ref="eats:287187" type="Collective_Office">underwarden</rs>, who served for a year but were eligible for
+                                reelection, and a number of '<rs ref="eats:287209" type="Collective_Office">searchers</rs>' (that is, inspectors). Most
                                 of the payments recorded in the guild's minute book concern the
-                                twice yearly warden's <rs ref="eats:entity-40561" type="Entertainment_Type">dinners</rs>, though dinners were also held to
+                                twice yearly warden's <rs ref="eats:40561" type="Entertainment_Type">dinners</rs>, though dinners were also held to
                                 welcome new guild members. The accounting of disbursements ends in
                                 1619. <lb/> Because the Covid-19 pandemic has made the manuscript
                                 temporarily inaccessible, the transcription has not yet been checked
@@ -15032,12 +15036,12 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">DC/SCB IV/1</idno>
-                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains'</rs> and <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs>
+                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:292161" type="Collective_Office">Chamberlains'</rs> and <rs ref="eats:3576" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs>
                                     Accounts</msName>
                             </msIdentifier>
-                            <ab type="edDesc">The financial officers of the town (<rs ref="eats:entity-292161" type="Collective_Office">chamberlains</rs>) and
+                            <ab type="edDesc">The financial officers of the town (<rs ref="eats:292161" type="Collective_Office">chamberlains</rs>) and
                                 of <rs ref="http://ereed.library.utoronto.ca/eats/entity/252818/" type="Place_F_Church">St Mary's Church</rs> (churchwardens) submitted their annual
-                                accounting together each <rs ref="eats:entity-42598" type="CalendarDay_Liturgical">Michaelmas</rs>. <lb/> Because the Record Office
+                                accounting together each <rs ref="eats:42598" type="CalendarDay_Liturgical">Michaelmas</rs>. <lb/> Because the Record Office
                                 has been closed due to the Covid-19 pandemic, the transcriptions
                                 have not yet been checked for accuracy.</ab>
                             <ab type="techDesc"><date>1612–45</date>; English; paper; 137 + ii,
@@ -15068,18 +15072,18 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">DC/SCB VI/1</idno>
-                                <msName><rs ref="eats:entity-252519" type="Place_PA_Settlement">Scarborough</rs> Court of Pleas Books</msName>
+                                <msName><rs ref="eats:252519" type="Place_PA_Settlement">Scarborough</rs> Court of Pleas Books</msName>
                             </msIdentifier>
                             <ab type="techDesc"><date>1456</date>; Latin and French; paper; 37
                                 leaves; 300mm x 210mm; modern foliation 119–155; sewn in modern grey
-                                paper covers, 'MIC 1355/1203-1280' on front cover.</ab>
+                                paper covers, 'MIC 1355/1203–1280' on front cover.</ab>
                         </msDesc>
                         <msDesc xml:id="YNSCB3">
                             <msIdentifier>
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">DC/SCB VI/1</idno>
-                                <msName><rs ref="eats:entity-252519" type="Place_PA_Settlement">Scarborough</rs> Court of Pleas Books</msName>
+                                <msName><rs ref="eats:252519" type="Place_PA_Settlement">Scarborough</rs> Court of Pleas Books</msName>
                             </msIdentifier>
                             <ab type="techDesc"><date>1597–1601</date>; English and Latin; paper;
                                 206 leaves; 310mm x 205mm; modern foliation; f [2v]
@@ -15091,12 +15095,12 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">DC/SCB IV/1</idno>
-                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains</rs>' and <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs>
+                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:292161" type="Collective_Office">Chamberlains</rs>' and <rs ref="eats:3576" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs>
                                     Accounts</msName>
                             </msIdentifier>
-                            <ab type="edDesc">The officers (<rs ref="eats:entity-292161" type="Collective_Office">chamberlains</rs>) of the town and the
-                                officers (<rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">churchwardens</rs>) of the parish church of <rs ref="http://ereed.library.utoronto.ca/eats/entity/252818/" type="Place_F_Church">St Mary</rs> submitted
-                                their accounts jointly at <rs ref="eats:entity-42598" type="CalendarDay_Liturgical">Michaelmas</rs>.</ab>
+                            <ab type="edDesc">The officers (<rs ref="eats:292161" type="Collective_Office">chamberlains</rs>) of the town and the
+                                officers (<rs ref="eats:3576" type="Collective_ClergyAndChurchwardens">churchwardens</rs>) of the parish church of <rs ref="http://ereed.library.utoronto.ca/eats/entity/252818/" type="Place_F_Church">St Mary</rs> submitted
+                                their accounts jointly at <rs ref="eats:42598" type="CalendarDay_Liturgical">Michaelmas</rs>.</ab>
                             <ab type="techDesc"><date>1632–3</date>; English; paper; 4 leaves; 300mm
                                 x 200mm; unfoliated.</ab>
                         </msDesc>
@@ -15105,11 +15109,11 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">DC/SCB IV/1</idno>
-                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains'</rs> and <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs>
+                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:292161" type="Collective_Office">Chamberlains'</rs> and <rs ref="eats:3576" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs>
                                     Accounts</msName>
                             </msIdentifier>
-                            <ab type="edDesc">The <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">chamberlains</rs> and the <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">wardens</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/252818/" type="Place_F_Church">St Mary's church</rs>
-                                submitted their accounts together on <rs ref="eats:entity-42598" type="CalendarDay_Liturgical">Michaelmas</rs>. Dr Jack Binns has
+                            <ab type="edDesc">The <rs ref="eats:3576" type="Collective_ClergyAndChurchwardens">chamberlains</rs> and the <rs ref="eats:3576" type="Collective_ClergyAndChurchwardens">wardens</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/252818/" type="Place_F_Church">St Mary's church</rs>
+                                submitted their accounts together on <rs ref="eats:42598" type="CalendarDay_Liturgical">Michaelmas</rs>. Dr Jack Binns has
                                 confirmed the accounting year for the chamberlains and churchwardens
                                 (letter to editor, 21 October 2019).</ab>
                             <ab type="techDesc"><date>1633–4</date>; English; paper; single sheet;
@@ -15131,7 +15135,7 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">DC/SCB IV/1</idno>
-                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains'</rs> and <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs>
+                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:292161" type="Collective_Office">Chamberlains'</rs> and <rs ref="eats:3576" type="Collective_ClergyAndChurchwardens">Churchwardens'</rs>
                                     Accounts</msName>
                             </msIdentifier>
                             <ab type="techDesc"><date>1633–4</date>; English ; paper; single sheet;
@@ -15142,10 +15146,10 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">DC/SCB VI/1</idno>
-                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:entity-292161" type="Collective_Office">Chamberlains</rs>' Accounts</msName>
+                                <msName><rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">Scarborough</rs> <rs ref="eats:292161" type="Collective_Office">Chamberlains</rs>' Accounts</msName>
                             </msIdentifier>
-                            <ab type="edDesc">The <rs ref="eats:entity-292161" type="Collective_Office">chamberlains</rs> and the <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">wardens</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">St Mary's Church</rs>
-                                submitted their accounts together on <rs ref="eats:entity-42598" type="CalendarDay_Liturgical">Michaelmas</rs>.</ab>
+                            <ab type="edDesc">The <rs ref="eats:292161" type="Collective_Office">chamberlains</rs> and the <rs ref="eats:3576" type="Collective_ClergyAndChurchwardens">wardens</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/252519/" type="Place_PA_Settlement">St Mary's Church</rs>
+                                submitted their accounts together on <rs ref="eats:42598" type="CalendarDay_Liturgical">Michaelmas</rs>.</ab>
                             <ab type="techDesc"><date>1638–9</date>; English; paper; 2 leaves; 300mm
                                 x 200mm; unfoliated.</ab>
                         </msDesc>
@@ -15154,12 +15158,12 @@
                                 <settlement>Kew</settlement>
                                 <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">SP1/125/733</idno>
-                                <msName>Letter from <rs ref="eats:entity-278318" type="Person_Commoner">Edmond Wryght</rs> to <rs ref="eats:entity-172723" type="Collective_Office">Lord Privy Seal</rs>, <rs ref="eats:entity-58060" type="Person_Male">Thomas
+                                <msName>Letter from <rs ref="eats:278318" type="Person_Commoner">Edmond Wryght</rs> to <rs ref="eats:172723" type="Collective_Office">Lord Privy Seal</rs>, <rs ref="eats:58060" type="Person_Male">Thomas
                                     Cromwell</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">In February 1543/4 <rs ref="eats:entity-278318" type="Person_Commoner">Edmond Wryght</rs>, who had distinguished himself as a captain in the Scottish wars, was granted <rs ref="eats:entity-251046" type="Place_F_ReligiousHouse">Grosmont priory</rs>
-                                in <rs ref="eats:entity-250670" type="Place_PA_Settlement">Egton</rs> parish, which had been surrendered in 1539. Wryght alienated the property 
-                                to Sir <rs ref="eats:entity-268836" type="Person_Gentry">Richard Cholmley</rs> of <rs ref="eats:entity-249567" type="Place_PA_Settlement">Whitby</rs> in 1545/6 and it remained in possession of the <rs ref="eats:entity-258383" type="Person_Family">Cholmley family</rs> and its successors until 
+                            <ab type="edDesc">In February 1543/4 <rs ref="eats:278318" type="Person_Commoner">Edmond Wryght</rs>, who had distinguished himself as a captain in the Scottish wars, was granted <rs ref="eats:251046" type="Place_F_ReligiousHouse">Grosmont priory</rs>
+                                in <rs ref="eats:250670" type="Place_PA_Settlement">Egton</rs> parish, which had been surrendered in 1539. Wryght alienated the property 
+                                to Sir <rs ref="eats:268836" type="Person_Gentry">Richard Cholmley</rs> of <rs ref="eats:249567" type="Place_PA_Settlement">Whitby</rs> in 1545/6 and it remained in possession of the <rs ref="eats:258383" type="Person_Family">Cholmley family</rs> and its successors until 
                                 1683/4 (<title>VCH: Yorkshire</title>, vol 2, pp 343–8, <title>British History Online</title>, https://www.british-history.ac.uk/vch/yorks/north/vol2/pp343-348, accessed 9 April 2021).</ab>
                             <ab type="techDesc"><date>21–2 September 1537</date>; English; paper; 3
                                 leaves; 290mm x 205mm; unnumbered originally, foliated now as 12–14;
@@ -15179,27 +15183,27 @@
                             </msIdentifier>
                             <ab type="edDesc">The statutes controlling 'Roges, Vacabond[es]
                                 and Sturdy Beggers' (collectively known as the 'poor laws') derive
-                                primarily from <rs ref="eats:entity-43591" type="Person_Royalty">Henry VIII</rs>'s statute of 1536 (27 Hen VIII c. 25)
+                                primarily from <rs ref="eats:43591" type="Person_Royalty">Henry VIII</rs>'s statute of 1536 (27 Hen VIII c. 25)
                                 (Great Britain, <title>The Statutes of the Realm</title>, vol 3
                                 (London, 1817; rpt 1963), 558–62). This legislation did not last and
-                                was repealed in the same year but it formed the basis of <rs ref="eats:entity-11772" type="Person_Royalty">Elizabeth's</rs>
+                                was repealed in the same year but it formed the basis of <rs ref="eats:11772" type="Person_Royalty">Elizabeth's</rs>
                                 statute, first promulgated in 1572 (14 Eliz I c.5) and repeated in
                                 1597–8 (39 Eliz I c.4) and 1601 (43 Eliz I c. 2). The 1572 act was
-                                particularly severe in its punishments: '[A]ll <rs ref="eats:entity-289432" type="Entertainer_Type">Fencers</rs>
-                                <rs ref="eats:entity-21804" type="Entertainer_Type">Bearewardes</rs> Comon <rs ref="eats:entity-8782" type="Entertainer_Type">Players</rs> in <rs ref="eats:entity-40398" type="Drama_Type">Enterludes</rs> &amp; and <rs ref="eats:entity-8709" type="Entertainer_Type">Minstrels</rs>, not
+                                particularly severe in its punishments: '[A]ll <rs ref="eats:289432" type="Entertainer_Type">Fencers</rs>
+                                <rs ref="eats:21804" type="Entertainer_Type">Bearewardes</rs> Comon <rs ref="eats:8782" type="Entertainer_Type">Players</rs> in <rs ref="eats:40398" type="Drama_Type">Enterludes</rs> &amp; and <rs ref="eats:8709" type="Entertainer_Type">Minstrels</rs>, not
                                 belonging to any Baron of this Realme, or toward[es] any
-                                other honorable Personage of greater Degree),' <rs ref="eats:entity-194093" type="CrimesMisdemeanors">wandering abroad</rs>
-                                without the license of two <rs ref="eats:entity-235838" type="Collective_Office">justices</rs> at the least, were subject 'to
+                                other honorable Personage of greater Degree),' <rs ref="eats:194093" type="CrimesMisdemeanors">wandering abroad</rs>
+                                without the license of two <rs ref="eats:235838" type="Collective_Office">justices</rs> at the least, were subject 'to
                                 be grevouslye whipped, and burnte through the gristle of the right
                                 Eare with a hot Yron of the compasse of an Ynche about' (Great
                                 Britain, <title>The Statutes of the Realm</title>, vol 4, pt 1
                                 (London, 1819; rpt 1963), 591). These provisions were modified and
                                 lightened in the 1597–8 legislation: '[A]ll idle
                                     p<ex>e</ex>rsons going about any Cuntry eyther begging or using
-                                any subtile Crafte or unlawfull <rs ref="eats:entity-40677" type="Entertainment_Type">Games</rs> and <rs ref="eats:entity-40453" type="Drama_Type">Playes</rs>, or fayning
+                                any subtile Crafte or unlawfull <rs ref="eats:40677" type="Entertainment_Type">Games</rs> and <rs ref="eats:40453" type="Drama_Type">Playes</rs>, or fayning
                                 themselves to have knowledge in Phisiognomye Palmestry or other like
                                 crafty Scyence, or p<ex>re</ex>tending that they can tell Destenyes
-                                Fortunes or such other like fantasticall Y<rs ref="eats:entity-150141" type="Entertainer_Type">magynac<ex>i</ex>ons</rs>; all
+                                Fortunes or such other like fantasticall Y<rs ref="eats:150141" type="Entertainer_Type">magynac<ex>i</ex>ons</rs>; all
                                     p<ex>er</ex>sons that be or utter themselves to be Proctors
                                     P<ex>ro</ex>curors Patent Gatherers or Collectors for Gaoles
                                 Prisons or Hospitall<ex>es</ex>; all Fencers Beareward<ex>es</ex>
@@ -15208,9 +15212,9 @@
                                     Enterlud<ex>es</ex> belonging to any Baron of this Realme, or
                                 any other honorable P<ex>er</ex>sonage of greater Degree, to be
                                 auctoryzed to play, under the Hand and Seale of Armes of such Baron
-                                or P<ex>er</ex>sonage); all <rs ref="eats:entity-150141" type="Entertainer_Type">Juglers</rs> Tynkers Pedlers and Petty
+                                or P<ex>er</ex>sonage); all <rs ref="eats:150141" type="Entertainer_Type">Juglers</rs> Tynkers Pedlers and Petty
                                 Chapmen wandring abroade; all wandering p<ex>er</ex>sons and
-                                    co<ex>m</ex>mon <rs ref="eats:entity-255288" type="Collective_Occupation">Labourers</rs> being p<ex>er</ex>sons able in bodye
+                                    co<ex>m</ex>mon <rs ref="eats:255288" type="Collective_Occupation">Labourers</rs> being p<ex>er</ex>sons able in bodye
                                 using loytering and refusing to worcke for such reasonable Wages as
                                 is taxed or co<ex>m</ex>monly gyven in such Part<ex>es</ex> where
                                 such p<ex>er</ex>sons do or shall happen to dwell or abide, not
@@ -15220,11 +15224,11 @@
                                 wander abroade begging p<ex>re</ex>tending losses by Fyre or
                                 otherwise; and all such p<ex>er</ex>sons not being Fellons wandering
                                     p<ex>re</ex>tending themselves to be Egipcyans, or wandeirng /
-                                in the Habite Forme or Attyre of counterfayte Egipcians.' (Great
+                                in the Habite Forme or Attyre of counterfayte Egipcians' (Great
                                 Britain, <title>Statutes of the Realm</title>, vol 4, pt 2 (London,
                                 1819, rpt 1963), 899). This statute became the basis for the
-                                prosecution of <rs ref="eats:entity-1261" type="Entertainer_Type">entertainers</rs> of all sorts who travelled without
-                                gentry patronage. All the prosecutions of the <rs ref="eats:entity-255611" type="Collective_Troupe">Simpson</rs> and <rs ref="eats:entity-255368" type="Collective_Troupe">Hudson
+                                prosecution of <rs ref="eats:1261" type="Entertainer_Type">entertainers</rs> of all sorts who travelled without
+                                gentry patronage. All the prosecutions of the <rs ref="eats:255611" type="Collective_Troupe">Simpson</rs> and <rs ref="eats:255368" type="Collective_Troupe">Hudson
                                 companies</rs> cite the statute, whose provisions remained in force until
                                 the reign of Queen Anne (13 Anne c.26; Great Britain,
                                     <title>Statutes of the Realm</title>, vol 9 (London, 1822; rpt
@@ -15232,7 +15236,7 @@
                                 statute is clarified by its appearance in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/253287/" type="Place_PA_Settlement">Thornton Watlass</rs>
                                 parish register, indicating that the contents of the statute were
                                 filtered down through the hierarchy of the church to the
-                                <rs ref="eats:entity-3576" type="Collective_ClergyAndChurchwardens">churchwardens</rs>, who were responsible for presenting offenders at the
+                                <rs ref="eats:3576" type="Collective_ClergyAndChurchwardens">churchwardens</rs>, who were responsible for presenting offenders at the
                                 quarter sessions.</ab>
                             <ab type="techDesc"><date>1574–1722</date>; English and Latin; paper; ii
                                 + 135 + ii, loose page slipped in between ff [121] and
@@ -15251,11 +15255,11 @@
                             </msIdentifier>
                             <ab type="edDesc"><rs ref="http://ereed.library.utoronto.ca/eats/entity/254712/" type="Person_Clergy">John Piers</rs> (1522/3–94) was translated to the <rs ref="http://ereed.library.utoronto.ca/eats/entity/214809/" type="Place_EcclesiasticalArea">diocese
                                 of York</rs> from <rs ref="http://ereed.library.utoronto.ca/eats/entity/214715/" type="Place_EcclesiasticalArea">Salisbury</rs> on 19 February 1588/9 and held the see until
-                                his death in 1594. The <rs ref="eats:entity-15612" type="Place_EcclesiasticalArea">see of Chester</rs> was formed in 1541 combining
-                                the archdeaconries of <rs ref="eats:entity-293458" type="Place_EA_Archdeaconry">Chester</rs> and <rs ref="eats:entity-249852" type="Place_EA_Archdeaconry">Richmond</rs> (<rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs>). The
+                                his death in 1594. The <rs ref="eats:15612" type="Place_EcclesiasticalArea">see of Chester</rs> was formed in 1541 combining
+                                the archdeaconries of <rs ref="eats:293458" type="Place_EA_Archdeaconry">Chester</rs> and <rs ref="eats:249852" type="Place_EA_Archdeaconry">Richmond</rs> (<rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs>). The
                                 archdeaconries retained their position in the church hierarchy, so
                                 visitations of the Richmond deaneries were generally recorded in the
-                                court books of the <rs ref="eats:entity-214809" type="Place_EcclesiasticalArea">diocese of York</rs> (Claire Cross, 'Piers, John
+                                court books of the <rs ref="eats:214809" type="Place_EcclesiasticalArea">diocese of York</rs> (Claire Cross, 'Piers, John
                                 (1522/3–1594),' <title>ODNB</title>, accessed 27 December 2020;
                                 Colin Podmore, 'Dioceses and Episcopal Sees in England: A Background
                                 Report for the Dioceses Commission,' [London,] July 2008, 26).</ab>
@@ -15275,11 +15279,11 @@
                             </msIdentifier>
                             <ab type="edDesc"><rs ref="http://ereed.library.utoronto.ca/eats/entity/254712/" type="Person_Clergy">John Piers</rs> (1522/3–94) was translated to the diocese
                                 of <rs ref="http://ereed.library.utoronto.ca/eats/entity/214809/" type="Place_EcclesiasticalArea">York</rs> from <rs ref="http://ereed.library.utoronto.ca/eats/entity/214715/" type="Place_EcclesiasticalArea">Salisbury</rs> on 19 February 1588/9 and held the see until
-                                his death in 1594. The <rs ref="eats:entity-15612" type="Place_EcclesiasticalArea">see of Chester</rs> was formed in 1541 combining
-                                the archdeaconries of <rs ref="eats:entity-293458" type="Place_EA_Archdeaconry">Chester</rs> and <rs ref="eats:entity-249852" type="Place_EA_Archdeaconry">Richmond</rs> (<rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs>). The
+                                his death in 1594. The <rs ref="eats:15612" type="Place_EcclesiasticalArea">see of Chester</rs> was formed in 1541 combining
+                                the archdeaconries of <rs ref="eats:293458" type="Place_EA_Archdeaconry">Chester</rs> and <rs ref="eats:249852" type="Place_EA_Archdeaconry">Richmond</rs> (<rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs>). The
                                 archdeaconries retained their position in the church hierarchy, so
                                 visitations of the Richmond deaneries were generally recorded in the
-                                court books of the <rs ref="eats:entity-214809" type="Place_EcclesiasticalArea">diocese of York</rs> (Claire Cross, 'Piers, John
+                                court books of the <rs ref="eats:214809" type="Place_EcclesiasticalArea">diocese of York</rs> (Claire Cross, 'Piers, John
                                 (1522/3–1594),' <title>ODNB</title>, accessed 27 December 2020; Colin Podmore, 'Dioceses and
                                 Episcopal Sees in England: A Background Report for the Dioceses
                                 Commission,' [London,] July 2008, 26).</ab>
@@ -15293,15 +15297,15 @@
                                 <settlement>York</settlement>
                                 <repository sameAs="#borthwick-institute"/>
                                 <idno type="shelfmark">V.1615/CB</idno>
-                                <msName>Visitation Court Book of Chancellor <rs ref="eats:entity-292838" type="Person_StatusOther">Matthew Dodsworth</rs></msName>
+                                <msName>Visitation Court Book of Chancellor <rs ref="eats:292838" type="Person_StatusOther">Matthew Dodsworth</rs></msName>
                             </msIdentifier>
                             <ab type="edDesc">
-                                <rs ref="eats:entity-292838" type="Person_StatusOther">Matthew Dodsworth</rs> (<hi rend="italic">c</hi> 1547–<hi rend="italic">c</hi> 1628) was appointed as <rs ref="eats:entity-270165" type="Collective_Office">judge</rs> of the court of Admiralty in England's northern counties sometime before 1593. 
-                                He later served as <rs ref="eats:entity-291005" type="Collective_Office">registrar</rs> and <rs ref="eats:entity-291027" type="Collective_Office">chancellor</rs> under <rs ref="eats:entity-278196" type="Person_Clergy">Tobias (Tobie) Matthew</rs> (1554?–1628), <rs ref="eats:entity-220215" type="Collective_Office">archbishop of York</rs>, 1606–28 
+                                <rs ref="eats:292838" type="Person_StatusOther">Matthew Dodsworth</rs> (<hi rend="italic">c</hi> 1547–<hi rend="italic">c</hi> 1628) was appointed as <rs ref="eats:270165" type="Collective_Office">judge</rs> of the court of Admiralty in England's northern counties sometime before 1593. 
+                                He later served as <rs ref="eats:291005" type="Collective_Office">registrar</rs> and <rs ref="eats:291027" type="Collective_Office">chancellor</rs> under <rs ref="eats:278196" type="Person_Clergy">Tobias (Tobie) Matthew</rs> (1554?–1628), <rs ref="eats:220215" type="Collective_Office">archbishop of York</rs>, 1606–28 
                                 (Great Britain, <title>Calendar of State Papers, Domestic Series, of the Reign of Elizabeth, 1591–1594</title>, Mary Anne Everett Green (ed) (London, 1867), 387; 'Matthew Dodsworth,' <title>ACAD: A Cambridge Alumni Database</title>, UI: DDST565M, accessed 28 December 2020). 
                                 The Admiralty court's juridiction comprised all offences committed at sea or on the coast outside of county boundaries. 
-                                It was headed by the <rs ref="eats:entity-25940" type="Collective_Office">lord High Admiral</rs> along with three or four other appropriate persons, as nominated by the <rs ref="eats:entity-156293" type="Collective_Office">lord Chancellor</rs> ('High Court of Admiralty,' <title>Britannica</title>, https://www.britannica.com/topic/High-Court-of-Admiralty, accessed 1 August 2021). 
-                                When the court met in <rs ref="eats:entity-252519" type="Place_PA_Settlement">Scarborough</rs> its membership was hosted at dinner by the city.</ab>
+                                It was headed by the <rs ref="eats:25940" type="Collective_Office">lord High Admiral</rs> along with three or four other appropriate persons, as nominated by the <rs ref="eats:156293" type="Collective_Office">lord Chancellor</rs> ('High Court of Admiralty,' <title>Britannica</title>, https://www.britannica.com/topic/High-Court-of-Admiralty, accessed 1 August 2021). 
+                                When the court met in <rs ref="eats:252519" type="Place_PA_Settlement">Scarborough</rs> its membership was hosted at dinner by the city.</ab>
                             <ab type="techDesc"><date>1614/15</date>; English and Latin; paper; ii +
                                 392 + i (including 17 loose pages slipped or bound in); 305mm x
                                 200mm; modern pencil foliation, 1–63, 63a, 64–126, 126a, 126b, 127–8
@@ -15319,15 +15323,14 @@
                                 <settlement>York</settlement>
                                 <repository sameAs="#borthwick-institute"/>
                                 <idno type="shelfmark">V.1595–6/CB.2</idno>
-                                <msName>Visitation Court Book of <rs ref="eats:entity-293350" type="Person_Clergy">William Chaderton</rs>, <rs ref="eats:entity-293412" type="Collective_Office">Bishop of
+                                <msName>Visitation Court Book of <rs ref="eats:293350" type="Person_Clergy">William Chaderton</rs>, <rs ref="eats:293412" type="Collective_Office">Bishop of
                                     Chester</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc"><rs ref="eats:entity-293350" type="Person_Clergy">William Chaderton</rs> (d. 1608) was consecrated as <rs ref="eats:entity-293412" type="Collective_Office">bishop
-                                of Chester</rs> on 8 November 1579, and was translated to <rs ref="eats:entity-296328" type="Collective_Office">Lincoln</rs> on 24
-                                May 1595 (Christopher Haigh, 'Chaderton, William (<hi rend="italic">d</hi>. 1608), '<title>ODNB</title>, accessed 7 January 2020;
-                                    <title>HBC</title>, p 256). The new <rs ref="eats:entity-15612" type="Place_EcclesiasticalArea">see of Chester</rs> was
-                                established in 1541, joining the <rs ref="eats:entity-293458" type="Place_EA_Archdeaconry">Archdeaconries of Chester</rs> and
-                                <rs ref="eats:entity-249852" type="Place_EA_Archdeaconry">Richmond</rs>. The archidiaconal courts remained in their previous
+                            <ab type="edDesc"><rs ref="eats:293350" type="Person_Clergy">William Chaderton</rs> (d. 1608) was consecrated as <rs ref="eats:293412" type="Collective_Office">bishop
+                                of Chester</rs> on 8 November 1579, and was translated to <rs ref="eats:296328" type="Collective_Office">Lincoln</rs> on 24
+                                May 1595 (Christopher Haigh, 'Chaderton, William (<hi rend="italic">d</hi>. 1608),' <title>ODNB</title>, accessed 7 January 2020). The new <rs ref="eats:15612" type="Place_EcclesiasticalArea">see of Chester</rs> was
+                                established in 1541, joining the <rs ref="eats:293458" type="Place_EA_Archdeaconry">Archdeaconries of Chester</rs> and
+                                <rs ref="eats:249852" type="Place_EA_Archdeaconry">Richmond</rs>. The archidiaconal courts remained in their previous
                                 jurisdictions, and the visitation records combine material from both
                                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/1805/" type="Place_County">Cheshire</rs> and the <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> of Yorkshire (Colin Podmore, 'Dioceses
                                 and Episcopal Sees in England: A Background Report for the Dioceses
@@ -15349,7 +15352,7 @@
                                 (text area variable); modern pencil foliation, some partial older
                                 ink foliation; some enlarged headings; some repairs; modern white
                                 vellum binding, brown leather plate on front, gold lettering
-                                'Visitation | Court Book | 1595-6.'</ab>
+                                'Visitation | Court Book | 1595–6.'</ab>
                         </msDesc>
                         <msDesc xml:id="YNVCB7">
                             <msIdentifier>
@@ -15380,15 +15383,15 @@
                                 <settlement>York</settlement>
                                 <repository sameAs="#borthwick-institute"/>
                                 <idno type="shelfmark">V.1619/CB, vol. 2</idno>
-                                <msName>Visitation Court Book of <rs ref="eats:entity-220215" type="Collective_Office">Archbishop</rs> <rs ref="eats:entity-278196" type="Person_Clergy">Tobias Matthew</rs></msName>
+                                <msName>Visitation Court Book of <rs ref="eats:220215" type="Collective_Office">Archbishop</rs> <rs ref="eats:278196" type="Person_Clergy">Tobias Matthew</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">The tune to which <rs ref="eats:entity-278135" type="Person_Commoner">Simlay</rs> sets the twenty-third psalm
+                            <ab type="edDesc">The tune to which <rs ref="eats:278135" type="Person_Commoner">Simlay</rs> sets the twenty-third psalm
                                 can be identified by the distinctive refrain 'langtie donne dilie'
                                 as the broadside ballad 'Sir Eglamore,' whose 'fa la la' refrain
                                 appears in some sources as 'fa la lanky down dilly' (Ross W. Duffin,
                                     <title>Shakespeare's Songbook</title> (New York and London,
-                                2004), 132–34). <rs ref="eats:entity-278196" type="Person_Clergy">Tobias (Tobie) Matthew</rs> (1544?–1628) was translated
-                                from <rs ref="eats:entity-294885" type="Collective_Office">Durham</rs> in 1606 and held the <rs ref="eats:entity-220215" type="Collective_Office">archbishopric of York</rs> until his
+                                2004), 132–34). <rs ref="eats:278196" type="Person_Clergy">Tobias (Tobie) Matthew</rs> (1544?–1628) was translated
+                                from <rs ref="eats:294885" type="Collective_Office">Durham</rs> in 1606 and held the <rs ref="eats:220215" type="Collective_Office">archbishopric of York</rs> until his
                                 death, 29 March 1628 (William Joseph Sheils, 'Matthew, Tobie
                                 (1544?–1628), <title>ODNB</title>, accessed 27 December 2020).</ab>
                             <ab type="techDesc"><date>1619</date>; English and Latin; paper; ii +
@@ -15405,7 +15408,7 @@
                                 <settlement>Leeds</settlement>
                                 <repository sameAs="#WYAS"/>
                                 <idno type="shelfmark">RD/API/65/15</idno>
-                                <msName>Probate Inventory of <rs ref="eats:entity-296949" type="Person_StatusOther">George Neville</rs></msName> 
+                                <msName>Probate Inventory of <rs ref="eats:296949" type="Person_StatusOther">George Neville</rs></msName> 
                             </msIdentifier>
                             <ab type="techDesc"><date>1567</date>; English; parchment; 3 membranes
                                 stitched head-to-head; 575–750mm x 150mm; unnumbered.</ab>
@@ -15416,7 +15419,7 @@
                                 <repository sameAs="#yorkshire-archaeological-society"/>
                                 <idno type="shelfmark">DD56/S</idno>
                                 <msName>High Commission Order for the Suppression of
-                                    <rs ref="eats:entity-62012" type="Entertainment_Type">Entertainments</rs></msName>
+                                    <rs ref="eats:62012" type="Entertainment_Type">Entertainments</rs></msName>
                             </msIdentifier>
                             <ab type="techDesc"><date>7 August 1592</date>; paper; 2 leaves, folded;
                                 300mm x 206mm; unfoliated (f [2] blank); 'The ordr for
@@ -15424,7 +15427,7 @@
                                     [2v] in a contemporary hand.</ab>
                         </msDesc>
                         <bibl xml:id="YNYONG">
-                            <title type="edName">Young, <rs ref="http://ereed.library.utoronto.ca/eats/entity/249567/" type="Place_PA_Settlement">Whitby</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/249547/" type="Place_F_ReligiousHouse">Streneshalh</rs> (A)</title>
+                            <title type="edName">Young, <rs ref="http://ereed.library.utoronto.ca/eats/entity/249567/" type="Place_PA_Settlement">Whitby</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/249547/" type="Place_F_ReligiousHouse">Streoneshalh</rs> (A)</title>
                             <note type="edDesc"><p>The three <rs ref="http://ereed.library.utoronto.ca/eats/entity/249567/" type="Place_PA_Settlement">Whitby</rs> monastic rolls do not appear to
                                     have survived, so they are printed here as an antiquarian
                                     collection. Although there are three rolls in the collection of
@@ -15441,7 +15444,7 @@
                                     taken as the base text since it appears to be the most
                                     accurate.</p></note>
                             <note type="techDesc"><p>Rev. George Young. <title type="sourceName">A History of Whitby
-                                        and Streneshalh Abbey</title>. 2 vols (Whitby,
+                                        and Streoneshalh Abbey</title>. 2 vols (Whitby,
                                 1817).</p></note>
                             <idno type="authorSurname">Young</idno>
                             <idno type="shortTitle">Whitby and Streoneshalh</idno>
@@ -15451,23 +15454,23 @@
                                 <msIdentifier>
                                     <settlement>Northallerton</settlement>
                                     <repository sameAs="#NYCRO"/>
-                                    <idno type="shelfmark">ZAZ 75-76</idno>
-                                    <msName>Memorandum Book of Sir Timothy Hutton</msName>
+                                    <idno type="shelfmark">ZAZ 75–76</idno>
+                                    <msName>Memorandum Book of <rs ref="eats:274466" type="Person_Gentry">Sir Timothy Hutton</rs></msName>
                                 </msIdentifier>
-                                <ab type="edDesc">The sequence of eight dances which so interested Sir Timothy Hutton
-                                    (1569-1629) that he copied out their choreography had by the early seventeenth
-                                    century become a standard component of the masques, especially those associated
-                                    with the Inns of Court. The sequence came to be known as 'the old measures.' At
+                                <ab type="edDesc">The sequence of eight <rs ref="eats:18451" type="Entertainer_Type">dances</rs> which so interested <rs ref="eats:274466" type="Person_Gentry">Sir Timothy Hutton</rs>
+                                    (1569–1629) that he copied out their choreography had by the early seventeenth
+                                    century become a standard component of the <rs ref="eats:40416" type="Drama_Type">masques</rs>, especially those associated
+                                    with the <rs ref="eats:299209" type="Place_F_InnOfCourt">Inns of Court</rs>. The sequence came to be known as 'the old measures.' At
                                     least eight manuscripts contain the same list, or one very similar to it (Ian
                                     Payne, <title>The Almain in Britain, c.1549-c.1675: A Dance Manual from
-                                        Manuscript Sources</title> (London, 2016), 7-45, 168-210; James Stokes and
+                                        Manuscript Sources</title> (London, 2016), 7–45, 168–210; James Stokes and
                                     Ingrid Brainerd, '"The olde Measures" in the West Country: John Willoughby's
-                                    Manuscript,' <title>REED Newsletter</title> 17.2 (1992), 1-10; John Ward,
-                                    'Apropos "The olde Measures'," <title>REED Newsletter</title> 18.1 (1993),
-                                    2-21; Andrew J. Sabol (ed), <title>Four Hundred Songs and Dances from the
-                                        Stuart Masque</title> (Providence, 1982), 15, 374-75.</ab>
-                                <ab type="techDesc"><date>early 17th century</date>; English; paper; single sheet; 185mm x 135mm;
-                                    unnumbered</ab>
+                                    Manuscript,' <title>REED Newsletter</title> 17.2 (1992), 1–10; John Ward,
+                                    'Apropos "The olde Measures",' <title>REED Newsletter</title> 18.1 (1993),
+                                    2–21; Andrew J. Sabol (ed), <title>Four Hundred Songs and Dances from the
+                                        Stuart Masque</title> (Providence, 1982), 15, 374–75).</ab>
+                                <ab type="techDesc"><date>early 17th-c.</date>; English; paper; single sheet; 185mm x 135mm;
+                                    unnumbered.</ab>
                             </msDesc>
                         </listBibl>
                        
@@ -15475,17 +15478,17 @@
                             <msIdentifier>
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
-                                <idno type="shelfmark">ZAZ 75-76</idno>
-                                <msName>Household Accounts of Sir <rs ref="eats:entity-274466" type="Person_Gentry">Timothy Hutton</rs></msName>
+                                <idno type="shelfmark">ZAZ 75–76</idno>
+                                <msName>Household Accounts of Sir <rs ref="eats:274466" type="Person_Gentry">Timothy Hutton</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">Sir <rs ref="eats:entity-274466" type="Person_Gentry">Timothy Hutton</rs> (1569–1629) was the son of <rs ref="eats:entity-261914" type="Person_Clergy">Matthew
-                                Hutton</rs> (1529?–1606), <rs ref="eats:entity-220215" type="Collective_Office">archbishop of York</rs> from 1594/5 until his death
+                            <ab type="edDesc">Sir <rs ref="eats:274466" type="Person_Gentry">Timothy Hutton</rs> (1569–1629) was the son of <rs ref="eats:261914" type="Person_Clergy">Matthew
+                                Hutton</rs> (1529?–1606), <rs ref="eats:220215" type="Collective_Office">archbishop of York</rs> from 1594/5 until his death
                                 in 1606. Timothy purchased the manor of <rs ref="http://ereed.library.utoronto.ca/eats/entity/251713/" type="Place_F_Residence">Marske Hall</rs>, Swaledale, in
-                                1598. He served as <rs ref="eats:entity-267027" type="Collective_Office">sheriff of Yorkshire</rs> in 1605–6 but was fined £230
+                                1598. He served as <rs ref="eats:267027" type="Collective_Office">sheriff of Yorkshire</rs> in 1605–6 but was fined £230
                                 for neglect of duties (Claire Cross, 'Hutton, Matthew (1529?–1606),'
                                     <title>ODNB</title>, accessed 7 January 2021; Cliffe,
                                     <title>Yorkshire Gentry</title>, pp 372–3). Timothy's accounts
-                                were kept by <rs ref="eats:entity-274532" type="Person_Commoner">John Ellowe</rs>, the <rs ref="eats:entity-297307" type="Collective_Occupation">household steward</rs>. They are printed in
+                                were kept by <rs ref="eats:274532" type="Person_Commoner">John Ellowe</rs>, the <rs ref="eats:297307" type="Collective_Occupation">household steward</rs>. They are printed in
                                 Hutton, <title>Correspondence</title>, pp 197–204.</ab>
                             <ab type="techDesc"><date>1605</date>; English; paper; 2 leaves; 300mm x
                                 200mm; unfoliated.</ab>
@@ -15494,17 +15497,17 @@
                             <msIdentifier>
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
-                                <idno type="shelfmark">ZAZ 75-76</idno>
-                                <msName>Accounts of <rs ref="eats:entity-274593" type="Person_Commoner">Matthew Hutton</rs></msName>
+                                <idno type="shelfmark">ZAZ 75–76</idno>
+                                <msName>Accounts of <rs ref="eats:274593" type="Person_Commoner">Matthew Hutton</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc"><rs ref="eats:entity-274593" type="Person_Commoner">Matthew Hutton</rs> (b. 1597) was the son of <rs ref="eats:entity-274466" type="Person_Gentry">Sir Timothy Hutton</rs> (1569–1629), grandson of <rs ref="eats:entity-261914" type="Person_Clergy">Matthew
-                                Hutton</rs> (1529?–1606), <rs ref="eats:entity-220215" type="Collective_Office">archbishop of York</rs>, 1594/5–1606. These accounts,
+                            <ab type="edDesc"><rs ref="eats:274593" type="Person_Commoner">Matthew Hutton</rs> (b. 1597) was the son of <rs ref="eats:274466" type="Person_Gentry">Sir Timothy Hutton</rs> (1569–1629), grandson of <rs ref="eats:261914" type="Person_Clergy">Matthew
+                                Hutton</rs> (1529?–1606), <rs ref="eats:220215" type="Collective_Office">archbishop of York</rs>, 1594/5–1606. These accounts,
                                 clearly dated in Matthew the younger's hand, refer to his
-                                matriculation at <rs ref="eats:entity-73450" type="Place_F_School">Cambridge</rs>. The accounts were sent to Matthew's father Timothy at his
+                                matriculation at <rs ref="eats:73450" type="Place_F_School">Cambridge</rs>. The accounts were sent to Matthew's father Timothy at his
                                 home at <rs ref="http://ereed.library.utoronto.ca/eats/entity/251732/" type="Place_PA_Settlement">Marske-in-Swaledale</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">North Riding</rs> for settlement. They are
                                 printed in Hutton, <title>Correspondence</title>, pp 210–17). It is possible, but by no means certain,
-                                that the <rs ref="eats:entity-40453" type="Drama_Type">'comedy'</rs> referred to was the performance at <rs ref="eats:entity-293489" type="Place_F_School">Clare College</rs>
-                                of George Ruggle's <title><rs ref="eats:entity-274767" type="Drama_TitledWork">Ignoramus</rs></title>, which James I attended
+                                that the <rs ref="eats:40453" type="Drama_Type">'comedy'</rs> referred to was the performance at <rs ref="eats:293489" type="Place_F_School">Clare College</rs>
+                                of George Ruggle's <title><rs ref="eats:274767" type="Drama_TitledWork">Ignoramus</rs></title>, which James I attended
                                 on 8 March 1614/15 (see Nelson (ed), <title>Cambridge</title>, vol
                                 1, p 518).</ab>
                             <ab type="techDesc"><date>December 1614</date>; English; single sheet;
@@ -15514,14 +15517,14 @@
                             <msIdentifier>
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
-                                <idno type="shelfmark">ZAZ 75-76</idno>
-                                <msName>Accounts of <rs ref="eats:entity-274593" type="Person_Commoner">Matthew Hutton</rs></msName>
+                                <idno type="shelfmark">ZAZ 75–76</idno>
+                                <msName>Accounts of <rs ref="eats:274593" type="Person_Commoner">Matthew Hutton</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">Matthew Hutton (b. 1597) was the son of <rs ref="eats:entity-274466" type="Person_Gentry">Sir Timothy Hutton</rs> (1569–1629), grandson of <rs ref="eats:entity-261914" type="Person_Clergy">Matthew
-                                Hutton</rs> (1529?–1606), <rs ref="eats:entity-220215" type="Collective_Office">archbishop of York</rs>, 1594/5–1606. There is no
+                            <ab type="edDesc">Matthew Hutton (b. 1597) was the son of <rs ref="eats:274466" type="Person_Gentry">Sir Timothy Hutton</rs> (1569–1629), grandson of <rs ref="eats:261914" type="Person_Clergy">Matthew
+                                Hutton</rs> (1529?–1606), <rs ref="eats:220215" type="Collective_Office">archbishop of York</rs>, 1594/5–1606. There is no
                                 accounting year for Matthew's accounts during his studies at
                                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/73450/" type="Place_F_School">Cambridge</rs>; he sent a list of expenses to his father and the
-                                <rs ref="eats:entity-297307" type="Collective_Occupation">household steward</rs>, <rs ref="eats:entity-274532" type="Person_Commoner">John Ellowe</rs>, at <rs ref="http://ereed.library.utoronto.ca/eats/entity/251732/" type="Place_PA_Settlement">Marske</rs> for reimbursement on a
+                                <rs ref="eats:297307" type="Collective_Occupation">household steward</rs>, <rs ref="eats:274532" type="Person_Commoner">John Ellowe</rs>, at <rs ref="http://ereed.library.utoronto.ca/eats/entity/251732/" type="Place_PA_Settlement">Marske</rs> for reimbursement on a
                                 miscellaneous basis. The accounts are printed in Hutton, <title>Correspondence</title>, pp 210–17.</ab>
                             <ab type="techDesc"><date>24 June 1615</date>; English; single sheet;
                                 paper; 305mm x 200mm.</ab>
@@ -15531,23 +15534,23 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">ZCV(F)</idno>
-                                <msName>Kitchen Accounts of <rs ref="eats:entity-265156" type="Person_Gentry">Sir William Fairfax</rs></msName>
+                                <msName>Kitchen Accounts of <rs ref="eats:265156" type="Person_Gentry">Sir William Fairfax</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">For biographical information on the <rs ref="eats:entity-265221" type="Person_Family">Fairfax family</rs>,
+                            <ab type="edDesc">For biographical information on the <rs ref="eats:265221" type="Person_Family">Fairfax family</rs>,
                                 see the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-fairfax">Introduction</ref>.
-                                <rs ref="eats:entity-265156" type="Person_Gentry">Sir William</rs>'s <rs ref="eats:entity-297307" type="Collective_Occupation">steward</rs> <rs ref="eats:entity-266030" type="Person_Commoner">John Woodward</rs> kept daily accounts of
+                                <rs ref="eats:265156" type="Person_Gentry">Sir William</rs>'s <rs ref="eats:297307" type="Collective_Occupation">steward</rs> <rs ref="eats:266030" type="Person_Commoner">John Woodward</rs> kept daily accounts of
                                 expenditures in the kitchen. The set is virtually complete from July
                                 1571 to March 1582, with breaks between July 1572–October 1574,
                                 October 1575–November 1578, and October 1579–March 1580. In addition
-                                to expenditures on <rs ref="eats:entity-40978" type="Thing_FoodDrink">foodstuffs</rs>, the steward records on a daily basis
+                                to expenditures on <rs ref="eats:40978" type="Thing_FoodDrink">foodstuffs</rs>, the steward records on a daily basis
                                 the presence of 'strangers' at breakfast, dinner, or supper. Most of
                                 these are Fairfax family and friends, though there are some guests
-                                of a wider national significance, such as <rs ref="eats:entity-266091" type="Person_Gentry">Walter Devereux</rs> (b. 1569),
-                                first husband of <rs ref="eats:entity-263427" type="Person_Gentry">Margaret Dakins</rs> (later Lady Margaret Hoby) and
-                                brother of <rs ref="eats:entity-772" type="Person_Nobility">Robert Devereux</rs> (1565–1601), nineteenth <rs ref="eats:entity-835" type="Collective_Title">earl of Essex</rs>,
+                                of a wider national significance, such as <rs ref="eats:266091" type="Person_Gentry">Walter Devereux</rs> (b. 1569),
+                                first husband of <rs ref="eats:263427" type="Person_Gentry">Margaret Dakins</rs> (later Lady Margaret Hoby) and
+                                brother of <rs ref="eats:772" type="Person_Nobility">Robert Devereux</rs> (1565–1601), nineteenth <rs ref="eats:835" type="Collective_Title">earl of Essex</rs>,
                                 who visited on several occasions in 1579–80, and (occasionally)
-                                <rs ref="eats:entity-1261" type="Entertainer_Type">performers</rs> as well (<title>P&amp;P</title>, <ref target="https://reed.library.utoronto.ca/node/317882"></ref>; Hoby, <title>Diary</title>, p 5). <rs ref="eats:entity-266539" type="Person_Commoner">Catherine Metham, née Bellasis</rs>,
-                                was Sir William's daughter, who married <rs ref="eats:entity-266639" type="Person_Commoner">Thomas Metham</rs> on 8 September
+                                <rs ref="eats:1261" type="Entertainer_Type">performers</rs> as well (<ref target="https://library2.utm.utoronto.ca/otra/reed/node/317882"><title>P&amp;P</title></ref>; Hoby, <title>Diary</title>, p 5). <rs ref="eats:266539" type="Person_Commoner">Catherine Metham, née Bellasis</rs>,
+                                was Sir William's daughter, who married <rs ref="eats:266639" type="Person_Commoner">Thomas Metham</rs> on 8 September
                                 1553 (J.W. Clay (ed), <title>Dugdale's Visitation of Yorkshire, with
                                     Additions</title>, vol 3 (Exeter, 1917), 85). These lists are
                                 clearly not exhaustive, since most conclude with the phrase
@@ -15561,7 +15564,7 @@
                                 December 2020; Pevsner, <title>North Riding</title>, p 167).</ab>
                             <ab type="techDesc"><date>9–15 September 1571</date>; English; paper; 8
                                 leaves; 300mm x 215mm; unfoliated; repaired and mounted on modern
-                                paper with paper wrapper, titled "'11<hi rend="superscript">th</hi>
+                                paper with paper wrapper, titled '11<hi rend="superscript">th</hi>
                                 Book | 9 - 15 Sept. 1571' on front cover.<lb/></ab>
                         </msDesc>
                         <msDesc xml:id="YNZDV2">
@@ -15569,23 +15572,23 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">ZCV(F)</idno>
-                                <msName>Kitchen Accounts of <rs ref="eats:entity-265156" type="Person_Gentry">Sir William Fairfax</rs></msName>
+                                <msName>Kitchen Accounts of <rs ref="eats:265156" type="Person_Gentry">Sir William Fairfax</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">For biographical information on the <rs ref="eats:entity-265221" type="Person_Family">Fairfax family</rs>,
+                            <ab type="edDesc">For biographical information on the <rs ref="eats:265221" type="Person_Family">Fairfax family</rs>,
                                 see the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-fairfax"></ref>Introduction.
-                                <rs ref="eats:entity-265156" type="Person_Gentry">Sir William</rs>'s <rs ref="eats:entity-297307" type="Collective_Occupation">steward</rs> <rs ref="eats:entity-266030" type="Person_Commoner">John Woodward</rs> kept daily accounts of
+                                <rs ref="eats:265156" type="Person_Gentry">Sir William</rs>'s <rs ref="eats:297307" type="Collective_Occupation">steward</rs> <rs ref="eats:266030" type="Person_Commoner">John Woodward</rs> kept daily accounts of
                                 expenditures in the kitchen. The set is virtually complete from July
                                 1571 to March 1582, with breaks between July 1572–October 1574,
                                 October 1575–November 1578, and October 1579–March 1580. In addition
-                                to expenditures on <rs ref="eats:entity-40978" type="Thing_FoodDrink">foodstuffs</rs>, the steward records on a daily basis
+                                to expenditures on <rs ref="eats:40978" type="Thing_FoodDrink">foodstuffs</rs>, the steward records on a daily basis
                                 the presence of 'strangers' at breakfast, dinner, or supper. Most of
                                 these are Fairfax family and friends, though there are some guests
-                                of a wider national significance, such as <rs ref="eats:entity-266091" type="Person_Gentry">Walter Devereux</rs> (b. 1569),
-                                first husband of <rs ref="eats:entity-263427" type="Person_Gentry">Margaret Dakins</rs> (later Lady Margaret Hoby) and
-                                brother of <rs ref="eats:entity-772" type="Person_Nobility">Robert Devereux</rs> (1565–1601), nineteenth <rs ref="eats:entity-835" type="Collective_Title">earl of Essex</rs>,
+                                of a wider national significance, such as <rs ref="eats:266091" type="Person_Gentry">Walter Devereux</rs> (b. 1569),
+                                first husband of <rs ref="eats:263427" type="Person_Gentry">Margaret Dakins</rs> (later Lady Margaret Hoby) and
+                                brother of <rs ref="eats:772" type="Person_Nobility">Robert Devereux</rs> (1565–1601), nineteenth <rs ref="eats:835" type="Collective_Title">earl of Essex</rs>,
                                 who visited on several occasions in 1579–80, and (occasionally)
                                 performers as well
-                                (<title>P&amp;P</title>, <ref target="https://reed.library.utoronto.ca/node/317882">page</ref>; 
+                                (<ref target="https://library2.utm.utoronto.ca/otra/reed/node/317882"><title>P&amp;P</title></ref>; 
                                 Hoby, <title>Diary</title>, p 5). These lists are clearly not
                                 exhaustive, since most conclude with the phrase 'w<ex>i</ex>th
                                 others.' The Great Hall at <rs ref="http://ereed.library.utoronto.ca/eats/entity/250954/" type="Place_F_Residence">Gilling</rs>, until 2018 the dining hall of
@@ -15597,7 +15600,7 @@
                                 December 2020; Pevsner, <title>North Riding</title>, p 167).</ab>
                             <ab type="techDesc"><date>29 December 1574–5 January 1574/5</date>;
                                 English; paper; 12 leaves; unfoliated; 300mm x 215mm,; ff
-                                    [1-2], [11-12] repaired and mounted on modern
+                                    [1–2], [11–12] repaired and mounted on modern
                                 paper with paper wrapper, '47<hi rend="superscript">th</hi> Book |
                                 19–25 September 1579' on front cover.</ab>
                         </msDesc>
@@ -15606,23 +15609,23 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">ZCV(F)</idno>
-                                <msName>Kitchen Accounts of <rs ref="eats:entity-265156" type="Person_Gentry">Sir William Fairfax</rs></msName>
+                                <msName>Kitchen Accounts of <rs ref="eats:265156" type="Person_Gentry">Sir William Fairfax</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">For biographical information on the <rs ref="eats:entity-265221" type="Person_Family">Fairfax family</rs>,
+                            <ab type="edDesc">For biographical information on the <rs ref="eats:265221" type="Person_Family">Fairfax family</rs>,
                                 see the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-fairfax">Introduction</ref>.
-                                <rs ref="eats:entity-265156" type="Person_Gentry">Sir William</rs>'s <rs ref="eats:entity-297307" type="Collective_Occupation">steward</rs> <rs ref="eats:entity-266030" type="Person_Commoner">John Woodward</rs> kept daily accounts of
+                                <rs ref="eats:265156" type="Person_Gentry">Sir William</rs>'s <rs ref="eats:297307" type="Collective_Occupation">steward</rs> <rs ref="eats:266030" type="Person_Commoner">John Woodward</rs> kept daily accounts of
                                 expenditures in the kitchen. The set is virtually complete from July
                                 1571 to March 1582, with breaks between July 1572–October 1574,
                                 October 1575–November 1578, and October 1579–March 1580. In addition
-                                to expenditures on <rs ref="eats:entity-40978" type="Thing_FoodDrink">foodstuffs</rs>, the steward records on a daily basis
+                                to expenditures on <rs ref="eats:40978" type="Thing_FoodDrink">foodstuffs</rs>, the steward records on a daily basis
                                 the presence of 'strangers' at breakfast, dinner, or supper. Most of
                                 these are Fairfax family and friends, though there are some guests
-                                of a wider national significance, such as <rs ref="eats:entity-266091" type="Person_Gentry">Walter Devereux</rs> (b. 1569),
-                                first husband of <rs ref="eats:entity-263427" type="Person_Gentry">Margaret Dakins</rs> (later Lady Margaret Hoby) and
-                                brother of <rs ref="eats:entity-772" type="Person_Nobility">Robert Devereux</rs> (1565–1601), nineteenth <rs ref="eats:entity-835" type="Collective_Title">earl of Essex</rs>,
+                                of a wider national significance, such as <rs ref="eats:266091" type="Person_Gentry">Walter Devereux</rs> (b. 1569),
+                                first husband of <rs ref="eats:263427" type="Person_Gentry">Margaret Dakins</rs> (later Lady Margaret Hoby) and
+                                brother of <rs ref="eats:772" type="Person_Nobility">Robert Devereux</rs> (1565–1601), nineteenth <rs ref="eats:835" type="Collective_Title">earl of Essex</rs>,
                                 who visited on several occasions in 1579–80, and (occasionally)
                                 performers as well
-                                (<title>P&amp;P</title> <ref target="https://reed.library.utoronto.ca/node/317882 "></ref>; 
+                                (<ref target="https://library2.utm.utoronto.ca/otra/reed/node/317882"><title>P&amp;P</title></ref>; 
                                 Hoby, <title>Diary</title>, p 5). These lists are clearly not
                                 exhaustive, since most conclude with the phrase 'w<ex>i</ex>th
                                 others.' The Great Hall at <rs ref="http://ereed.library.utoronto.ca/eats/entity/250954/" type="Place_F_Residence">Gilling</rs>, until 2018 the dining hall of
@@ -15643,24 +15646,24 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">ZCV(F)</idno>
-                                <msName>Kitchen Accounts of <rs ref="eats:entity-265156" type="Person_Gentry">Sir William Fairfax</rs></msName>
+                                <msName>Kitchen Accounts of <rs ref="eats:265156" type="Person_Gentry">Sir William Fairfax</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">For biographical information on the <rs ref="eats:entity-265221" type="Person_Family">Fairfax family</rs>,
+                            <ab type="edDesc">For biographical information on the <rs ref="eats:265221" type="Person_Family">Fairfax family</rs>,
                                 see the
                                 <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-fairfax">Introduction</ref>.
-                                <rs ref="eats:entity-265156" type="Person_Gentry">Sir William</rs>'s <rs ref="eats:entity-297307" type="Collective_Occupation">steward</rs> <rs ref="eats:entity-266030" type="Person_Commoner">John Woodward</rs> kept daily accounts of
+                                <rs ref="eats:265156" type="Person_Gentry">Sir William</rs>'s <rs ref="eats:297307" type="Collective_Occupation">steward</rs> <rs ref="eats:266030" type="Person_Commoner">John Woodward</rs> kept daily accounts of
                                 expenditures in the kitchen. The set is virtually complete from July
                                 1571 to March 1582, with breaks between July 1572–October 1574,
                                 October 1575–November 1578, and October 1579–March 1580. In addition
-                                to expenditures on <rs ref="eats:entity-40978" type="Thing_FoodDrink">foodstuffs</rs>, the steward records on a daily basis
+                                to expenditures on <rs ref="eats:40978" type="Thing_FoodDrink">foodstuffs</rs>, the steward records on a daily basis
                                 the presence of 'strangers' at breakfast, dinner, or supper. Most of
                                 these are Fairfax family and friends, though there are some guests
-                                of a wider national significance, such as <rs ref="eats:entity-266091" type="Person_Gentry">Walter Devereux</rs> (b. 1569),
-                                first husband of <rs ref="eats:entity-263427" type="Person_Gentry">Margaret Dakins</rs> (later Lady Margaret Hoby) and
-                                brother of <rs ref="eats:entity-772" type="Person_Nobility">Robert Devereux</rs> (1565–1601), nineteenth <rs ref="eats:entity-835" type="Collective_Title">earl of Essex</rs>,
+                                of a wider national significance, such as <rs ref="eats:266091" type="Person_Gentry">Walter Devereux</rs> (b. 1569),
+                                first husband of <rs ref="eats:263427" type="Person_Gentry">Margaret Dakins</rs> (later Lady Margaret Hoby) and
+                                brother of <rs ref="eats:772" type="Person_Nobility">Robert Devereux</rs> (1565–1601), nineteenth <rs ref="eats:835" type="Collective_Title">earl of Essex</rs>,
                                 who visited on several occasions in 1579–80, and (occasionally)
                                 performers as well
-                                (<title>P&amp;P</title> <ref target="https://reed.library.utoronto.ca/node/317882"></ref>; 
+                                (<ref target="https://library2.utm.utoronto.ca/otra/reed/node/317882"><title>P&amp;P</title></ref>; 
                                 Hoby, <title>Diary</title>, p 5). These lists are clearly not
                                 exhaustive, since most conclude with the phrase 'w<ex>i</ex>th
                                 others.' The Great Hall at <rs ref="http://ereed.library.utoronto.ca/eats/entity/250954/" type="Place_F_Residence">Gilling</rs>, until 2018 the dining hall of
@@ -15679,22 +15682,22 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">ZCV(F)</idno>
-                                <msName>Kitchen Accounts of Sir <rs ref="eats:entity-265156" type="Person_Gentry">William Fairfax</rs></msName>
+                                <msName>Kitchen Accounts of Sir <rs ref="eats:265156" type="Person_Gentry">William Fairfax</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">For biographical information on the <rs ref="eats:entity-265221" type="Person_Family">Fairfax family</rs>,
+                            <ab type="edDesc">For biographical information on the <rs ref="eats:265221" type="Person_Family">Fairfax family</rs>,
                                 see the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-fairfax">Introduction</ref>.
-                                <rs ref="eats:entity-265156" type="Person_Gentry">Sir William</rs>'s <rs ref="eats:entity-297307" type="Collective_Occupation">steward</rs> <rs ref="eats:entity-266030" type="Person_Commoner">John Woodward</rs> kept daily accounts of
+                                <rs ref="eats:265156" type="Person_Gentry">Sir William</rs>'s <rs ref="eats:297307" type="Collective_Occupation">steward</rs> <rs ref="eats:266030" type="Person_Commoner">John Woodward</rs> kept daily accounts of
                                 expenditures in the kitchen. The set is virtually complete from July
                                 1571 to March 1582, with breaks between July 1572–October 1574,
                                 October 1575–November 1578, and October 1579–March 1580. In addition
-                                to expenditures on <rs ref="eats:entity-40978" type="Thing_FoodDrink">foodstuffs</rs>, the steward records on a daily basis
+                                to expenditures on <rs ref="eats:40978" type="Thing_FoodDrink">foodstuffs</rs>, the steward records on a daily basis
                                 the presence of 'strangers' at breakfast, dinner, or supper. Most of
                                 these are Fairfax family and friends, though there are some guests
-                                of a wider national significance, such as <rs ref="eats:entity-266091" type="Person_Gentry">Walter Devereux</rs> (b. 1569),
-                                first husband of <rs ref="eats:entity-263427" type="Person_Gentry">Margaret Dakins</rs> (later Lady Margaret Hoby) and
-                                brother of <rs ref="eats:entity-772" type="Person_Male">Robert Devereux</rs> (1565–1601), nineteenth <rs ref="eats:entity-835" type="Collective_Title">earl of Essex</rs>,
+                                of a wider national significance, such as <rs ref="eats:266091" type="Person_Gentry">Walter Devereux</rs> (b. 1569),
+                                first husband of <rs ref="eats:263427" type="Person_Gentry">Margaret Dakins</rs> (later Lady Margaret Hoby) and
+                                brother of <rs ref="eats:772" type="Person_Male">Robert Devereux</rs> (1565–1601), nineteenth <rs ref="eats:835" type="Collective_Title">earl of Essex</rs>,
                                 who visited on several occasions in 1579–80. Occasionally, there were <rs ref="http://ereed.library.utoronto.ca/eats/entity/1261/" type="Entertainer_Type">performers</rs> as well
-                                (<title>P&amp;P</title>, <ref target="https://reed.library.utoronto.ca/node/317882"></ref>; Hoby, <title>Diary</title>, p 5). These lists are clearly not
+                                (<ref target="https://library2.utm.utoronto.ca/otra/reed/node/317882"><title>P&amp;P</title></ref>; Hoby, <title>Diary</title>, p 5). These lists are clearly not
                                 exhaustive, since most conclude with the phrase 'w<ex>i</ex>th
                                 others.' The Great Hall at <rs ref="http://ereed.library.utoronto.ca/eats/entity/250954/" type="Place_F_Residence">Gilling</rs>, until 2018 the dining hall of
                                 Ampleforth Junior School, underwent extensive rebuilding <hi rend="italic">c</hi> 1571–85 ('St Martin's Ampleforth,
@@ -15713,24 +15716,24 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">ZCV(F)</idno>
-                                <msName>Kitchen Accounts of <rs ref="eats:entity-265156" type="Person_Gentry">Sir William Fairfax</rs></msName>
+                                <msName>Kitchen Accounts of <rs ref="eats:265156" type="Person_Gentry">Sir William Fairfax</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">For biographical information on the <rs ref="eats:entity-265221" type="Person_Family">Fairfax family</rs>,
+                            <ab type="edDesc">For biographical information on the <rs ref="eats:265221" type="Person_Family">Fairfax family</rs>,
                                 see the
                                 <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-fairfax">Introduction</ref>.
-                                <rs ref="eats:entity-265156" type="Person_Gentry">Sir William</rs>'s <rs ref="eats:entity-297307" type="Collective_Occupation">steward</rs> <rs ref="eats:entity-266030" type="Person_Commoner">John Woodward</rs> kept daily accounts of
+                                <rs ref="eats:265156" type="Person_Gentry">Sir William</rs>'s <rs ref="eats:297307" type="Collective_Occupation">steward</rs> <rs ref="eats:266030" type="Person_Commoner">John Woodward</rs> kept daily accounts of
                                 expenditures in the kitchen. The set is virtually complete from July
                                 1571 to March 1582, with breaks between July 1572–October 1574,
                                 October 1575–November 1578, and October 1579–March 1580. In addition
-                                to expenditures on <rs ref="eats:entity-40978" type="Thing_FoodDrink">foodstuffs</rs>, the steward records on a daily basis
+                                to expenditures on <rs ref="eats:40978" type="Thing_FoodDrink">foodstuffs</rs>, the steward records on a daily basis
                                 the presence of 'strangers' at breakfast, dinner, or supper. Most of
                                 these are Fairfax family and friends, though there are some guests
-                                of a wider national significance, such as <rs ref="eats:entity-266091" type="Person_Gentry">Walter Devereux</rs> (b. 1576),
-                                first husband of <rs ref="eats:entity-263427" type="Person_Gentry">Margaret Dakins</rs> (later Lady Margaret Hoby) and
-                                brother of <rs ref="eats:entity-772" type="Person_Nobility">Robert Devereux</rs> (1566–1601), nineteenth <rs ref="eats:entity-835" type="Collective_Title">earl of Essex</rs>,
+                                of a wider national significance, such as <rs ref="eats:266091" type="Person_Gentry">Walter Devereux</rs> (b. 1576),
+                                first husband of <rs ref="eats:263427" type="Person_Gentry">Margaret Dakins</rs> (later Lady Margaret Hoby) and
+                                brother of <rs ref="eats:772" type="Person_Nobility">Robert Devereux</rs> (1566–1601), nineteenth <rs ref="eats:835" type="Collective_Title">earl of Essex</rs>,
                                 who visited on several occasions in 1579–80, and (occasionally)
                                 performers as well
-                                (<title>P&amp;P</title>, <ref target="https://reed.library.utoronto.ca/node/317882">page</ref>; 
+                                (<ref target="https://library2.utm.utoronto.ca/otra/reed/node/317882"><title>P&amp;P</title></ref>; 
                                 Hoby, <title>Diary</title>, p 5). These lists are clearly not
                                 exhaustive, since most conclude with the phrase 'w<ex>i</ex>th
                                 others.' The Great Hall at <rs ref="http://ereed.library.utoronto.ca/eats/entity/250954/" type="Place_F_Residence">Gilling</rs>, until 2018 the dining hall of
@@ -15752,18 +15755,18 @@
                                 <settlement>Northallerton</settlement>
                                 <repository sameAs="#NYCRO"/>
                                 <idno type="shelfmark">ZDV V 10</idno>
-                                <msName>Accounts of <rs ref="eats:entity-265676" type="Person_Gentry">Sir Henry</rs> and <rs ref="eats:entity-265784" type="Person_Nobility">Sir Thomas Bellasis</rs></msName>
+                                <msName>Accounts of <rs ref="eats:265676" type="Person_Gentry">Sir Henry</rs> and <rs ref="eats:265784" type="Person_Nobility">Sir Thomas Bellasis</rs></msName>
                             </msIdentifier>
-                            <ab type="edDesc">For information on Sir <rs ref="eats:entity-265676" type="Person_Gentry">Henry</rs> and Sir <rs ref="eats:entity-265784" type="Person_Nobility">Thomas Bellasis</rs>
+                            <ab type="edDesc">For information on Sir <rs ref="eats:265676" type="Person_Gentry">Henry</rs> and Sir <rs ref="eats:265784" type="Person_Nobility">Thomas Bellasis</rs>
                                 see the <ref target="https://ereeddev.library.utoronto.ca/collections/yksnr/background/#background-bellasis">Introduction</ref>. <lb/> The
                                 locations of payments made while the household was travelling have
                                 been noted in the subheading when these can be determined with
                                 confidence. There appears to be no regular accounting year.</ab>
                             <ab type="techDesc"><date>1608–12</date>; English; paper; 235 leaves (ff
                                     [66], [144], and [233] pinned or
-                                pasted in); unfoliated (ff [45-6], [156],
-                                    [158], [167-8], [210-26] blank);
-                                290mm x 185mm; ff [231-5] damaged by mildew and very
+                                pasted in); unfoliated (ff [45–6], [156],
+                                    [158], [167–8], [210–26] blank);
+                                290mm x 185mm; ff [231–5] damaged by mildew and very
                                 fragile; vellum cover, title on cover: 'The Book of <damage><gap unit="chars" extent="3"/></damage> |An<ex>n</ex>o
                                     Dom<ex>ini</ex> | 1608 | <damage><gap unit="chars" extent="1"/></damage>n<ex>n</ex>o Do<damage><gap unit="chars" extent="1"/></damage> | 1609 | An<ex>n</ex>o Dom<ex>ini</ex> | 1610 |
                                         <damage><gap unit="chars" extent="1"/></damage>n<ex>n</ex>o
