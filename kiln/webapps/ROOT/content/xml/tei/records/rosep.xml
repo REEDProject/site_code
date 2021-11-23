@@ -5,8 +5,6 @@
       <titleStmt>
         <title type="main">Rose Playhouse Prototype</title>
         <funder><orgName>Jackman Foundation, Toronto, Canada</orgName></funder>
-        <funder><orgName>National Endowment for the Humanities, Washington, DC, United States of
-            America</orgName></funder>
         <funder><orgName>Social Sciences and Humanities Research Council, Ottawa,
           Canada</orgName></funder>
         <editor>Sally-Beth MacLean</editor>
@@ -16,39 +14,30 @@
           <resp>Project Manager</resp>
         </respStmt>
         <respStmt>
-          <persName xml:id="KC">Kathy Chung</persName>
-          <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Indexer, EATS taxonomy developer and database maintainer</resp>
-        </respStmt>
-        <respStmt>
           <persName xml:id="JC">James Cummings</persName>
-          <orgName>University of Oxford</orgName>
-          <resp>TEI Schema Designer, Technical Consultant</resp>
+          <!--<orgName>1st ed.: University of Oxford</orgName>-->
+          <orgName>Newcastle University</orgName>
+          <resp>TEI Schema Designer</resp>
+          <resp>Technical Consultant</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="PG">Patrick Gregory</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Paleographer, Co-Translator, Latin and Anglo-French Glossarian</resp>
+          <resp>Paleographer</resp>
+          <resp>Translator</resp>
+          <resp>Latin and Anglo-French Glossarian</resp>
         </respStmt>
         <respStmt>
           <persName>Tanya Hagen</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
           <resp>Bibliographer</resp>
-        </respStmt>
-        <respStmt>
-          <persName>William Ingram</persName>
-          <orgName>University of Michigan</orgName>
-          <resp>Appendixes</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Alexandra F. Johnston</persName>
-          <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>REED Founder and Senior Consultant</resp>
+          <resp>Copy Editor</resp>
         </respStmt>
         <respStmt>
           <persName>Sally-Beth MacLean</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Principal Investigator, SSHRC grant; Director of Research and General Editor</resp>
+          <resp>Director of Research</resp>
+          <resp>General Editor</resp>
         </respStmt>
         <respStmt>
           <persName>Byron Moldofsky</persName>
@@ -59,14 +48,18 @@
           <persName>Illya Nokhrin</persName>
           <orgName>University of Toronto</orgName>
           <resp>Research Assistant</resp>
+          <resp>Indexer, Entity Tagger</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="JN">Jamie Norrish</persName>
-          <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
+          <resp>Programmer</resp>
+          <resp>TEI Schema Designer</resp>
+          <resp>Technical Consultant</resp>
         </respStmt>
       </titleStmt>
       <editionStmt>
-        <edition>version 1, released <date when-iso="2020-09-06">06 September 2020</date></edition>
+        <edition>Version 2, released <date when-iso="2021-11-30">30 November 2021.</date></edition>
+        <!--<edition>version 1, released <date when-iso="2020-09-06">06 September 2020</date></edition>-->
       </editionStmt>
       <publicationStmt>
         <authority><orgName>Records of Early English Drama (REED)</orgName>
@@ -131,6 +124,8 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2021-11-30" who="#IN">Published version 2 of rosep.xml</change>
+      <change when="2021-11-22" who="#KC">Updated Responsibility Statements in File Description and edition number</change>
       <change when="2021-03-16" who="#KC">Corrected Kathy Chung's job title</change>
     </revisionDesc>
   </teiHeader>

@@ -20,6 +20,7 @@
                 <editor>Jane Cowling</editor>
                 <editor>Peter Greenfield</editor>
                 <editor>Alexandra F. Johnston</editor>
+                <editor>David N. Klausner</editor>
                 <editor>Sally-Beth MacLean</editor>
                 <editor>J. Alan B. Somerset</editor>
                 <respStmt>
@@ -35,13 +36,17 @@
                 </respStmt>
                 <respStmt>
                     <persName xml:id="JC">James Cummings</persName>
-                    <orgName>University of Oxford</orgName>
-                    <resp>TEI Schema Designer, Technical Consultant</resp>
+                    <!--<orgName>1st-3rd ed.: University of Oxford</orgName>-->
+                    <orgName>Newcastle University</orgName>
+                    <resp>TEI Schema Designer</resp>
+                    <resp>Technical Consultant</resp>
                 </respStmt>
                 <respStmt>
-                    <persName>Patrick Gregory</persName>
+                    <persName xml:id="PG">Patrick Gregory</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Paleographer, Translator, Latin and Anglo-French Glossarian</resp>
+                    <resp>Paleographer</resp>
+                    <resp>Translator</resp>
+                    <resp>Glossarian</resp>
                 </respStmt>
                 <respStmt>
                     <persName>Tanya Hagen</persName>
@@ -51,32 +56,26 @@
                 <respStmt>
                     <persName>Janine Harper</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>English Glossarian, Proofreader</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Alexandra F. Johnston</persName>
-                    <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>REED Founder and Senior Consultant</resp>
+                    <resp>English Glossarian</resp>
                 </respStmt>
                 <respStmt>
                     <persName>Sally-Beth MacLean</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Principal Investigator, SSHRC grant; Director of Research and General
-                        Editor</resp>
+                    <resp>Director of Research</resp>
+                    <resp>General Editor</resp>
                 </respStmt>
                 <respStmt>
                     <persName xml:id="JN">Jamie Norrish</persName>
-                    <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Abigail Ann Young</persName>
-                    <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Paleographer</resp>
+                    <persName xml:id="JN">Jamie Norrish</persName>
+                    <resp>Programmer</resp>
+                    <resp>TEI Schema Designer</resp>
+                    <resp>Technical Consultant</resp>
                 </respStmt>
             </titleStmt>
             <editionStmt>
-                <edition>version 3, released <date when-iso="2020-06-22">22 June
-                    2020</date></edition>
+                <edition>Version 4, released <date when-iso="2020-11-30">30 November 2021</date></edition>
+                <!--<edition>version 3, released <date when-iso="2020-06-22">22 June
+                    2020</date></edition>-->
             </editionStmt>
             <publicationStmt>
                 <authority>
@@ -123,6 +122,8 @@
         </profileDesc>
         <revisionDesc>
             <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
+            <change when="2021-11-30" who="#IN">Published version 4 of glossary.xml</change>
+            <change when="2021-11-22" who="#KC">Updated Responsibility Statements in File Description and edition number</change>
             <change when="2020-06-22" who="#CB">Published version 3 of glossary.xml</change>
             <change when="2018-04-16" who="#CB">Published version 2 of glossary.xml</change>
             <change when="2017-03-03" who="#CB">Published version 1 of glossary.xml</change>

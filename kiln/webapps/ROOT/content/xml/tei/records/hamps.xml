@@ -25,42 +25,50 @@
         <respStmt>
           <persName xml:id="KC">Kathy Chung</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Indexer, EATS taxonomy developer and database maintainer</resp>
+          <resp>Indexer, Entity Tagger</resp>
+          <resp>REED EATS Taxonomy Developer</resp>
+          <resp>REED EATS Database Maintainer</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="JC">James Cummings</persName>
-          <orgName>University of Oxford</orgName>
-          <resp>TEI Schema Designer, Technical Consultant</resp>
+          <!--<orgName>1st ed.: University of Oxford</orgName>-->
+          <orgName>Newcastle University</orgName>
+          <resp>TEI Schema Designer</resp>
+          <resp>Technical Consultant</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="PG">Patrick Gregory</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Paleographer, Co-Translator, Latin and Anglo-French Glossarian</resp>
+          <resp>Paleographer</resp>
+          <resp>Co-Translator</resp>
+          <resp>Latin Glossarian</resp>
         </respStmt>
         <respStmt>
           <persName>Tanya Hagen</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
           <resp>Bibliographer</resp>
+          <resp>Copy Editor</resp>
         </respStmt>
         <respStmt>
           <persName>Janine Harper</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>English Glossarian, Proofreader</resp>
+          <resp>English Glossarian</resp>
         </respStmt>
         <respStmt>
           <persName>Cai Henderson</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Co-Translator, Paleographer</resp>
+          <resp>Co-Translator</resp>
+          <resp>Paleographer</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Stephanie Hovland</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>UK Paleographer</resp>
         </respStmt>
         <respStmt>
           <persName>Jané Jacobs</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
           <resp>mapping locations</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Alexandra F. Johnston</persName>
-          <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>REED Founder and Senior Consultant</resp>
         </respStmt>
         <respStmt>
           <persName>Sally-Beth MacLean</persName>
@@ -75,19 +83,25 @@
         <respStmt>
           <persName>Morgan Moore</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Patrons research and patrons entity tagger</resp>
+          <resp>Patrons Researcher</resp>
+          <resp>Patrons Entity Tagger</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="JN">Jamie Norrish</persName>
-          <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
+          <resp>Programmer</resp>
+          <resp>TEI Schema Designer</resp>
+          <resp>Technical Consultant</resp>
         </respStmt>
         <respStmt>
-          <persName>Suzanne Westfall</persName>
-          <resp>Principal Investigator, NEH grant</resp>
+          <persName>Kaitlin Persaud</persName>
+          <orgName>Records of Early English drama</orgName>
+          <resp>Indexer, Entity Tagger</resp>
         </respStmt>
+
       </titleStmt>
       <editionStmt>
-        <edition>version 1, released <date when-iso="2020-06-22">22 June 2020</date></edition>
+        <edition>Version 2, released <date when-iso="2021-11-30">30 November 2021.</date></edition>
+        <!--<edition>version 1, released <date when-iso="2020-06-22">22 June 2020</date></edition>-->
       </editionStmt>
       <publicationStmt>
         <authority><orgName>Records of Early English Drama (REED)</orgName>
@@ -153,7 +167,9 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
-      <change when="2021-10-20" who="#KC">Replaced Place_Household tags with Family+Residence tags in supplied headers.</change>
+      <change when="2021-11-30" who="#IN">Published version 2 of hamps.xml</change>
+      <change when="2021-11-22" who="#KC">Updated Responsibility Statements in File Description and edition number</change>
+      <change when="2021-10-20" who="#KC">Replaced Place_Household tags with Residence tags in supplied headers.</change>
       <change when="2021-03-16" who="#KC">Corrected Kathy Chung's job title</change>
       <change when="2021-03-09" who="#KC">revised terms tagged with summer lodge as a feature entity type, with summer lodge as a set entity type</change>
       <change when="2021-03-01" who="#KC">re-tagged Winchester common hall and Winchester council house both as Winchester guildhall. They are all names for the same building.</change>
