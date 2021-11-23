@@ -19,7 +19,6 @@
     </respStmt>
     <respStmt>
      <persName xml:id="JC">James Cummings</persName>
-     <!--<orgName>1st ed.: University of Oxford</orgName>-->
      <orgName>Newcastle University</orgName>
      <resp>TEI Schema Designer</resp>
      <resp>Technical Consultant</resp>
@@ -75,14 +74,12 @@
      <orgName>Records of Early English Drama (REED)</orgName>
      <resp>Bibliographic Assistant</resp> 
     </respStmt>
-   </titleStmt>
-   
+   </titleStmt>   
    <editionStmt>
     <edition>
      Version 1, released <date when-iso="2021-11-30">30 November 2021.</date>
     </edition>
-   </editionStmt>
-    
+   </editionStmt>    
    <publicationStmt>
     <authority><orgName>Records of Early English Drama (REED)</orgName>
      <address>
@@ -98,12 +95,10 @@
       Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
       licence.</licence>
     </availability>
-   </publicationStmt>
-    
+   </publicationStmt>    
    <seriesStmt>
     <title>Records of Early English Drama</title>
-   </seriesStmt>
-    
+   </seriesStmt> 
    <sourceDesc>
     <p>Born digital. Information on original sources for transcriptions can be accessed via
      taxonomy.xml.</p>
