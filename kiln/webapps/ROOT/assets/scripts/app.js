@@ -6799,7 +6799,7 @@ $(document).ready(function() {
             },
             pagingType: "full_numbers"
         })),
-
+        
         /********************************************************/
         /********                                        ********/
         /********        Edit this part to update        ********/
@@ -6865,10 +6865,10 @@ $(document).ready(function() {
         }),
 
         $.fn.DataTable.ext.pager.numbers_length = 9,
-
-        $(".page-input").html("<div><span style='margin-right:8px;'>PAGE:</span>"
+        
+        $(".page-input").html("<div class='page-input-div'><span style='margin-right:8px;'>PAGE:</span>"
         + "<input type='number' class='page-input-field' value>"
-        + "<span style='margin:0 8px'>of " + n.page.info().pages + "</span>"
+        + "<span style='margin:0 8px'>of " + (n.page.info() == undefined ? '' : n.page.info().pages) + "</span>"
         + "<button class='go-page-button'>GO</button>"
         + "</div>"),
 
@@ -6878,10 +6878,16 @@ $(document).ready(function() {
             const totalPages = n.page.info().pages;
             if (pageNum > 0 && pageNum <= totalPages) {
                 n.page(Number(pageNum) - 1).draw(false);
-            } else {
-                alert('Please enter a valid page number.')
             }
+            // } else {
+            //     alert('Please enter a valid page number.')
+            // }
             $(".page-input-field").val('')
+        }),
+        $('.page-input-field').keypress(function(e){
+            if(e.which == 13){  //Enter key pressed
+                $(this).siblings(".go-page-button").click();
+            }
         }),
 
         $(".view-records").html("<button type='submit' class='view-records-button button transparent'>View Selected Records</button>"),
@@ -6954,12 +6960,13 @@ $(document).ready(function() {
             t.toggleClass("open"), t.hasClass("open") ? $(this).find("a").html("Hide Filters") : $(this).find("a").html("Show Filters")
         }), $("body").bind("click", function(e) {
             jQuery(e.target).is(".footnote-box, span.footnote, span.marginalia, span.term, span.collation") || jQuery(e.target).closest(".footnote-box").length || $(".footnote-box").removeClass("is-open")
-        }), $(".glossary").length) {
-            var o = $(".letters .active").attr("letter");
-            $(".letters li").on("click", function() {
-                $(".letters .active").removeClass("active"), o = $(this).attr("letter"), $(this).addClass("active"), $(".letter-content").removeClass("active"), $(".letter-content[letter='" + o + "']").addClass("active")
-            }), console.log(o)
-        }
+        }), $(".glossary").length
+    ) {
+        var o = $(".letters .active").attr("letter");
+        $(".letters li").on("click", function() {
+            $(".letters .active").removeClass("active"), o = $(this).attr("letter"), $(this).addClass("active"), $(".letter-content").removeClass("active"), $(".letter-content[letter='" + o + "']").addClass("active")
+        }), console.log(o)
+    }
 }), $(window).load(function() {
     Foundation.reInit("equalizer")
 });

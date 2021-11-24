@@ -5585,7 +5585,9 @@ table.hover tbody tr:hover {
         width: 20%;
         padding: 35px 25px;
         bottom: 0;
-        min-height: 61.25rem;
+        /* min-height: 61.25rem; */
+        height: 100vh;
+        min-height: 38rem;
         float: right
     }
 }
@@ -7176,7 +7178,7 @@ div.bibliography-filter ul:not(.show-or-hide) li.disabled {
 
 #button-container .search .introjs-button, .search #button-container .introjs-button, .search .button {
     padding-top: 10px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 
 .filter {
@@ -8767,6 +8769,7 @@ table:not(#table):not(#result-table):not(.related-entities-table) tbody tr td, t
 #top-paginate {
     padding: 0 15px;
     margin-bottom: 20px;
+    margin-top: 19px;
 }
 
 #top-paginate .pagination {
@@ -8799,6 +8802,18 @@ table:not(#table):not(#result-table):not(.related-entities-table) tbody tr td, t
     color: #4a4a4a;
     text-align: center;
     margin-top: -2px;
+}
+
+/* Remove arrows for browser(s): Chrome, Safari, Edge, Opera */
+.page-input-field::-webkit-outer-spin-button,
+.page-input-field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove arrows for browser(s): Firefox */
+.page-input-field[type=number] {
+    -moz-appearance: textfield;
 }
 
 .go-page-button {
@@ -8857,5 +8872,7 @@ table:not(#table):not(#result-table):not(.related-entities-table) tbody tr td, t
 }
 
 #result-table tbody a:visited, #table tbody a:visited {
-    color: #94bfbc;
+    /* color: #94bfbc; */
+    color: #513cbe;
+    /* color: #be3c3c; */
 }
