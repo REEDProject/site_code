@@ -6461,7 +6461,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
    
    <text ana="taxon:family" type="record" xml:id="yksnr-ridp267231144">
     <body>
-     <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">Yorkshire North Riding</rs>, Hoby of <rs ref="eats:253781" type="Place_F_Residence">Hackness</rs>
+     <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2453/" type="Place_County">Yorkshire North Riding</rs>, <rs ref="eats:253781" type="Place_F_Residence">Hackness</rs>
       <date when-iso="1600">1599/1600</date>
       <seg ana="taxon:YNBL01">YNBL01</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="yksnr-ridp267231144-transcription">
@@ -6479,6 +6479,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       </div>
      </div>
      <div type="endnote">
+      <p>The <rs ref="eats:78637" type="Person_Family">Hoby family</rs> was resident at <rs ref="eats:253781" type="Place_F_Residence">Hackness Manor</rs>.</p>
       <p> The <rs ref="eats:270365" type="Thing_MusicalInstrument">orpharion</rs> (alpherion) is a flat-backed wire-strung instrument in the <rs ref="eats:217909" type="Thing_MusicalInstrument">bandora</rs> family,
        tuned like a <rs ref="eats:71682" type="Thing_MusicalInstrument">lute</rs>. It was popular as an accompaniment to solo <rs ref="eats:10906" type="Entertainer_Type">singing</rs> (Ian Harwood and Lyle
        Nordstrom (rev), 'Orpharion,' <title>Grove Music Online</title>,
@@ -6523,6 +6524,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       </div>
      </div>
      <div type="endnote">
+      <p>The <rs ref="eats:78637" type="Person_Family">Hoby family</rs> was resident at <rs ref="eats:253781" type="Place_F_Residence">Hackness Manor</rs>.</p>
       <p> <rs ref="eats:263427" type="Person_Gentry">Margaret</rs>'s <rs ref="eats:10906" type="Entertainer_Type">singing</rs> (f 72v) was likely predominately psalms or other sacred texts, though
        her ownership of an <rs ref="eats:270365" type="Thing_MusicalInstrument">orpharion</rs> suggests that at least some of her singing was secular,
        accompanied by the instrument. Her diary notes regular attendance at the <rs ref="http://ereed.library.utoronto.ca/eats/entity/251092/" type="Place_PA_Settlement">Hackness</rs> parish <rs ref="http://ereed.library.utoronto.ca/eats/entity/252954/" type="Place_F_Church">church of St Peter</rs> (Hoby, <title>Private Life</title>, pp xxxii,
