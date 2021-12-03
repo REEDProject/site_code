@@ -40873,7 +40873,7 @@ later 2nd Baron Hunsdon -->]
       </text>
       <text ana="taxon:family" type="record" xml:id="hamps-ridp222442544">
         <body>
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1967/" type="Place_County">Hampshire</rs>, Worsley of <rs ref="eats:124274" type="Place_F_Residence">Appuldurcombe</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1967/" type="Place_County">Hampshire</rs>, <rs ref="eats:124274" type="Place_F_Residence">Appuldurcombe House</rs>
             <date when-iso="1566">1566</date>
             <seg ana="taxon:HAIRWA">HAIRWA</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="hamps-ridp222442544-transcription">
@@ -40908,6 +40908,10 @@ later 2nd Baron Hunsdon -->]
 
               <gap reason="omitted"/>
             </div>
+           
+          </div>
+          <div type="endnote">
+            <p>The <rs ref="eats:297998" type="Person_Family">Worsley family</rs> was resident at <rs ref="eats:124274" type="Place_F_Residence">Appuldurcombe House</rs>.</p>
           </div>
         </body>
       </text>
