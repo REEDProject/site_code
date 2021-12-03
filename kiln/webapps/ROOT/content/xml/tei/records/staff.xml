@@ -12655,7 +12655,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="eats:100519 eats:100592 eats:100665 eats:96638 eats:96677 eats:96716 taxon:family" type="record" xml:id="staff-ridm46434528">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, Paget of <rs ref="eats:40000" type="Place_F_Residence">Burton upon Trent</rs> and <rs ref="eats:44969" type="Place_F_Residence">Beaudesert</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>
             <date from-iso="1578" to-iso="1580">1578–80</date>
             <seg ana="taxon:STPGH1">STPGH1</seg></head>
           <div type="transcription" xml:id="staff-ridm46434528-transcription">
@@ -12809,6 +12809,7 @@ table. The (blank) above is the second cell of that row -->the
             </div>
           </div>
           <div type="endnote">
+            <p>The <rs ref="eats:298017" type="Person_Family">Paget family</rs> was resident at <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>.</p>
             <p>On f 64v the scribe begins the calendar year, 1579, on 1 January. Compare f 71, where
               the date, 1 January 1579/80, is given.</p>
           </div>
@@ -12816,7 +12817,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46317152">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, Paget of <rs ref="eats:40000" type="Place_F_Residence">Burton upon Trent</rs> and <rs ref="eats:44969" type="Place_F_Residence">Beaudesert</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>
             <date when-iso="1580">1579/80</date>
             <seg ana="taxon:STPGH2">STPGH2</seg></head>
           <div type="transcription" xml:id="staff-ridm46317152-transcription">
@@ -12972,11 +12973,14 @@ table. The (blank) above is the second cell of that row -->the
               </table>
             </div>
           </div>
+          <div type="endnote">
+            <p>The <rs ref="eats:298017" type="Person_Family">Paget family</rs> was resident at <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46300784">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, Paget of <rs ref="eats:40000" type="Place_F_Residence">Burton upon Trent</rs> and <rs ref="eats:44969" type="Place_F_Residence">Beaudesert</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>
             <date when-iso="1580">1580</date>
             <seg ana="taxon:STPGH3">STPGH3</seg></head>
           <div type="transcription" xml:id="staff-ridm46300784-transcription">
@@ -13015,6 +13019,7 @@ table. The (blank) above is the second cell of that row -->the
             </div>
           </div>
           <div type="endnote">
+            <p>The <rs ref="eats:298017" type="Person_Family">Paget family</rs> was resident at <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>.</p>
             <p>‘M<ex>iste</ex>r Byrdes chamber’ presumably refers to <rs ref="http://ereed.library.utoronto.ca/eats/entity/34466/" type="Person_Commoner">William Byrd</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/34508/" type="Entertainer_Type">lutenist</rs> and composer (1539/40–1623), who is also
               mentioned on each day in guest-lists (not transcribed here) from Saturday, 6 August
               1580 to Monday, 15 August inclusive. His name occurs sometimes at supper, sometimes at
