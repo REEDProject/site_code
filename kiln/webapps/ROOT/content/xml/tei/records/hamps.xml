@@ -9549,8 +9549,7 @@ for other evidence of this company's visits to the Isle
       </text>
       <text ana="taxon:family" type="record" xml:id="hamps-ridp224398640">
         <body>
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1967/" type="Place_County">Hampshire</rs>, Seymour of <rs ref="eats:155525" type="Place_F_Residence">Elvetham</rs> and <rs ref="eats:87054" type="Place_F_Residence">Netley</rs>
-            <date when-iso="1591">1591</date>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1967/" type="Place_County">Hampshire</rs>, <rs ref="eats:155525" type="Place_F_Residence">Elvetham Hall</rs>            <date when-iso="1591">1591</date>
             <seg ana="taxon:HASEAA">HASEAA</seg>
           <seg ana="taxon:HASEA1">HASEA1</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="hamps-ridp224398640-transcription">
@@ -10862,6 +10861,9 @@ later 2nd Baron Hunsdon -->]
             </div>
           </div>
           <div type="endnote">
+            <p>
+              The <rs ref="eats:298055" type="Person_Family">Seymour family</rs> was resident at <rs ref="eats:155525" type="Place_F_Residence">Elvetham Hall</rs>.
+            </p>
             <p>
               <hi rend="italic">Q1</hi> includes the following at the end of the description of the
               third day's entertainment:</p>
