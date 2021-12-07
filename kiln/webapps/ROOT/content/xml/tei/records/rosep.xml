@@ -5,8 +5,6 @@
       <titleStmt>
         <title type="main">Rose Playhouse Prototype</title>
         <funder><orgName>Jackman Foundation, Toronto, Canada</orgName></funder>
-        <funder><orgName>National Endowment for the Humanities, Washington, DC, United States of
-            America</orgName></funder>
         <funder><orgName>Social Sciences and Humanities Research Council, Ottawa,
           Canada</orgName></funder>
         <editor>Sally-Beth MacLean</editor>
@@ -16,39 +14,29 @@
           <resp>Project Manager</resp>
         </respStmt>
         <respStmt>
-          <persName xml:id="KC">Kathy Chung</persName>
-          <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Indexer, EATS taxonomy developer and database maintainer</resp>
-        </respStmt>
-        <respStmt>
           <persName xml:id="JC">James Cummings</persName>
-          <orgName>University of Oxford</orgName>
-          <resp>TEI Schema Designer, Technical Consultant</resp>
+          <orgName>Newcastle University</orgName>
+          <resp>TEI Schema Designer</resp>
+          <resp>Technical Consultant</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="PG">Patrick Gregory</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Paleographer, Co-Translator, Latin and Anglo-French Glossarian</resp>
+          <resp>Paleographer</resp>
+          <resp>Translator</resp>
+          <resp>Latin and Anglo-French Glossarian</resp>
         </respStmt>
         <respStmt>
           <persName>Tanya Hagen</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
           <resp>Bibliographer</resp>
-        </respStmt>
-        <respStmt>
-          <persName>William Ingram</persName>
-          <orgName>University of Michigan</orgName>
-          <resp>Appendixes</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Alexandra F. Johnston</persName>
-          <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>REED Founder and Senior Consultant</resp>
+          <resp>Copy Editor</resp>
         </respStmt>
         <respStmt>
           <persName>Sally-Beth MacLean</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Principal Investigator, SSHRC grant; Director of Research and General Editor</resp>
+          <resp>Director of Research</resp>
+          <resp>General Editor</resp>
         </respStmt>
         <respStmt>
           <persName>Byron Moldofsky</persName>
@@ -59,14 +47,18 @@
           <persName>Illya Nokhrin</persName>
           <orgName>University of Toronto</orgName>
           <resp>Research Assistant</resp>
+          <resp>Indexer, Entity Tagger</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="JN">Jamie Norrish</persName>
-          <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
+          <resp>Programmer</resp>
+          <resp>TEI Schema Designer</resp>
+          <resp>Technical Consultant</resp>
         </respStmt>
       </titleStmt>
       <editionStmt>
-        <edition>version 1, released <date when-iso="2020-09-06">06 September 2020</date></edition>
+        <edition>Version 2, released <date when-iso="2021-12-06">07 December 2021.</date></edition>
+        <!--<edition>version 1, released <date when-iso="2020-09-06">06 September 2020</date></edition>-->
       </editionStmt>
       <publicationStmt>
         <authority><orgName>Records of Early English Drama (REED)</orgName>
@@ -131,6 +123,8 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2021-12-07" who="#IN">Published version 2 of rosep.xml</change>
+      <change when="2021-11-22" who="#KC">Updated Responsibility Statements in File Description and edition number</change>
       <change when="2021-03-16" who="#KC">Corrected Kathy Chung's job title</change>
     </revisionDesc>
   </teiHeader>
@@ -1118,7 +1112,7 @@
               records forthcoming in the REED series. Van Buchell's rather amateur copy of the
               drawing accompanying this letter has been much reproduced and used as an example of
               stage design in the period. See, for example, R.A. Foakes, <title>Illustrations of the
-                English Stage 1580–1642</title> (Stanford, 1985), 52–5, no 26, and REED, <ref target="https://reed.library.utoronto.ca/content/swan-interior"><title>Patrons and
+                English Stage 1580–1642</title> (Stanford, 1985), 52–5, no 26, and REED, <ref target="https://library2.utm.utoronto.ca/otra/reed/content/swan-interior"><title>Patrons and
                   Performances</title></ref>.</note></p>
           <p>Both the Swan and the Rose would have felt the impact of the privy council's letter to
             the Surrey JPs on 22 July 1596 when plays were prohibited once again for fear of the
@@ -2095,7 +2089,7 @@
               inhibition.</p>
 
             <p> The privy councillors present at the meeting are listed in the left margin as
-              follows: <rs ref="http://ereed.library.utoronto.ca/eats/entity/130516/" type="Person_Gentry">Sir Christopher Hatton, lord chancellor, 1587–91</rs>; <rs ref="http://ereed.library.utoronto.ca/eats/entity/130613/" type="Person_Nobility">Sir William Cecil, 1st Baron Burghley and lord treasurer, 1572–98</rs>; <rs ref="http://ereed.library.utoronto.ca/eats/entity/12536/" type="Person_Nobility">Ambrose Dudley, 21st earl of Warwick</rs>; <rs ref="http://ereed.library.utoronto.ca/eats/entity/44753/" type="Person_Nobility">Robert Dudley, 14th earl of Leicester</rs>; <rs ref="eats:entity-25845" type="Person_Male">Charles Howard</rs>, 2nd Baron Howard of
+              follows: <rs ref="http://ereed.library.utoronto.ca/eats/entity/130516/" type="Person_Gentry">Sir Christopher Hatton, lord chancellor, 1587–91</rs>; <rs ref="http://ereed.library.utoronto.ca/eats/entity/130613/" type="Person_Nobility">Sir William Cecil, 1st Baron Burghley and lord treasurer, 1572–98</rs>; <rs ref="http://ereed.library.utoronto.ca/eats/entity/12536/" type="Person_Nobility">Ambrose Dudley, 21st earl of Warwick</rs>; <rs ref="http://ereed.library.utoronto.ca/eats/entity/44753/" type="Person_Nobility">Robert Dudley, 14th earl of Leicester</rs>; <rs ref="eats:25845" type="Person_Male">Charles Howard</rs>, 2nd Baron Howard of
               Effingham and lord admiral, 1585–1618/19; <rs ref="http://ereed.library.utoronto.ca/eats/entity/123685/" type="Person_Nobility">Henry Carey, 1st Baron Hunsdon and lord chamberlain of the household, 1585–96</rs>;
               and <rs ref="http://ereed.library.utoronto.ca/eats/entity/121275/" type="Person_Gentry">Sir Francis Walsingham, principal secretary, 1573–90</rs>. </p>
           </div>
@@ -3058,7 +3052,7 @@ brace --></cell>
               <table>
                 <row>
                   <cell><rs ref="http://ereed.library.utoronto.ca/eats/entity/131578/" type="Person_Clergy">Io<ex>hn</ex> Cant<ex>uar</ex></rs><note type="foot">Io<ex>hn</ex> Cant<ex>uar</ex>: <hi rend="italic">John Whitgift (1530 or
-                        1531?–1604), archbishop of <rs ref="http://ereed.library.utoronto.ca/eats/entity/74508/" type="Place_PA_Settlement">Canterbury</rs>, 1583–1604</hi></note></cell>
+                        1531?–1604), archbishop of Canterbury, 1583–1604</hi></note></cell>
                   <cell><rs ref="http://ereed.library.utoronto.ca/eats/entity/143268/" type="Person_Gentry">Io<ex>hn</ex> Puckering</rs>.<note type="foot">Io<ex>hn</ex> Puckering: <hi rend="italic">Sir John Puckering (1543 or
                         1544–96), lord keeper of the Seal, 1592–6</hi></note></cell>
                   <cell><rs ref="http://ereed.library.utoronto.ca/eats/entity/25845/" type="Person_Nobility">C<ex>harles</ex> Howard</rs><note type="foot">C<ex>harles</ex> Howard: <hi rend="italic">Charles Howard (1536–1624), 2nd
@@ -3231,7 +3225,7 @@ brace --></cell>
                   yo<ex>u</ex>r good L<ex>ordships</ex> &amp; the rest. Wee haue signifyed to
                   yo<ex>u</ex>r H<ex>ig</ex>h<ex>nesses</ex> many tymes heartofore the great
                 inconvenience w<ex>hi</ex>ch wee fynd to grow by the Com<ex>m</ex>on exercise of
-                Stage <rs ref="eats:entity-40453" type="Drama_Type">Playes</rs>. Wee p<ex>re</ex>sumed to doo aswell in respect of the dutie wee beare
+                Stage <rs ref="eats:40453" type="Drama_Type">Playes</rs>. Wee p<ex>re</ex>sumed to doo aswell in respect of the dutie wee beare
                   toward<ex>es</ex> ‸<rs ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Person_Royalty"><add place="above">her</add> highnes</rs> for the good
                   gou<ex>er</ex>ment of this her <rs ref="http://ereed.library.utoronto.ca/eats/entity/36947/" type="Place_PA_Settlement">Citie</rs>, as for conscience sake, being perswaded
                 (vnder correction of yo<ex>u</ex>r H<ex>ighnesses</ex> iudgment) that neither in
@@ -3292,7 +3286,7 @@ brace --></cell>
 
               <ab>In the time of sicknes it is fownd by experience, that many hauinge sores and yet
                   not<note type="marginal" place="margin_left">4</note> hart sicke take occasion
-                hearby to walk abroad &amp; to recreat themselves by heareinge aplay<note type="foot">aplay: <hi rend="italic">for</hi> a <rs ref="eats:entity-40453" type="Drama_Type">play</rs></note>. Whearby others ar
+                hearby to walk abroad &amp; to recreat themselves by heareinge aplay<note type="foot">aplay: <hi rend="italic">for</hi> a <rs ref="eats:40453" type="Drama_Type">play</rs></note>. Whearby others ar
                 infected, and them selves also many things miscarry./</ab>
 
               <gap reason="omitted"/>
@@ -3578,7 +3572,7 @@ brace --></cell>
             <p> In 1589 <rs ref="http://ereed.library.utoronto.ca/eats/entity/151032/" type="Person_Commoner">Francis Langley</rs> had acquired the lordship of the manor
               of <rs ref="http://ereed.library.utoronto.ca/eats/entity/223902/" type="Place_PA_Manor">Paris Garden</rs>, west of <rs ref="http://ereed.library.utoronto.ca/eats/entity/229072/" type="Place_F_Street">Bankside</rs> in the parish of <rs ref="http://ereed.library.utoronto.ca/eats/entity/226221/" type="Place_PA_Settlement">St Saviour</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/36966/" type="Place_PA_Settlement">Southwark</rs>. By 1595 he had opened a second theatre there, <rs ref="http://ereed.library.utoronto.ca/eats/entity/227779/" type="Place_F_Playhouse">the
                 Swan</rs>, which must have increased the traffic of playgoers across the Thames to
-              the area (for further details and illustrations, see <ref target="https://reed.library.utoronto.ca/content/swan-theatre"><title>'Patrons &amp;
+              the area (for further details and illustrations, see <ref target="https://library2.utm.utoronto.ca/otra/reed/content/swan-theatre"><title>'Patrons &amp;
                   Performances'</title> page for the Swan Theatre</ref>). <rs ref="http://ereed.library.utoronto.ca/eats/entity/152268/" type="Person_Commoner">Jacob Meade (1557–1624)</rs> was a <rs ref="http://ereed.library.utoronto.ca/eats/entity/137174/" type="Collective_Occupation">waterman</rs>, resident in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/223826/" type="Place_PA_Liberty">Clink</rs> liberty and <rs ref="http://ereed.library.utoronto.ca/eats/entity/129736/" type="Person_Commoner">Henslowe's</rs> partner in the later <rs ref="http://ereed.library.utoronto.ca/eats/entity/227893/" type="Place_F_Playhouse">Hope</rs>/<rs ref="http://ereed.library.utoronto.ca/eats/entity/227798/" type="Place_F_Arena">Bear Garden</rs> enterprise (see further Honigmann and Brock,
                 <title>Playhouse Wills</title>, pp 134-8). It seems possible from this entry in the
               vestry minutes that he may have had an association with Henslowe for <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/" type="Place_F_Playhouse">the
@@ -3696,7 +3690,7 @@ brace --></cell>
                 j whitt hatte.</ab>
 
               <ab>Item, j hatte for <rs ref="http://ereed.library.utoronto.ca/eats/entity/35310/" type="Drama_Character">Robin Hoode</rs><note type="foot">Robin Hoode: <hi rend="italic">1
-                and 2 Robin Hood, Foakes, <title>Diary</title>, pp 86–8, 101–2</hi></note>, j <rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobihorse</rs>.</ab>
+                and 2 Robin Hood, Foakes, <title>Diary</title>, pp 86–8, 101–2</hi></note>, j <rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobihorse</rs>.</ab>
 
               <ab>Item, v <rs ref="http://ereed.library.utoronto.ca/eats/entity/74414/" type="Thing_TheatricalCostume">shertes</rs>, and j <rs ref="http://ereed.library.utoronto.ca/eats/entity/185281/" type="Thing_TheatricalCostume"><term ref="gloss:ferpelowes-1">serpelowes</term><note type="foot">serpelowes: <hi rend="italic">for</hi>
                     ferpelowes</note></rs>, iiij <rs ref="http://ereed.library.utoronto.ca/eats/entity/185324/" type="Thing_TheatricalCostume"><term ref="gloss:ferdingalles-1">ferdingalles</term></rs>.</ab>

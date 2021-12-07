@@ -19,6 +19,8 @@
         <map:transform src="../stylesheets/tei/normalise.xsl" />
         <map:transform src="../stylesheets/tei/expand-references.xsl" />
         <map:transform type="xinclude" />
+        <!-- Normalise again in order to expand prefixed refs from included documents. -->
+        <map:transform src="../stylesheets/tei/normalise.xsl" />
         <map:transform src="../stylesheets/tei/tidy-expanded-references.xsl" />
         <map:serialize type="xml" />
       </map:match>

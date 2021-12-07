@@ -20,6 +20,7 @@
                 <editor>Jane Cowling</editor>
                 <editor>Peter Greenfield</editor>
                 <editor>Alexandra F. Johnston</editor>
+                <editor>David N. Klausner</editor>
                 <editor>Sally-Beth MacLean</editor>
                 <editor>J. Alan B. Somerset</editor>
                 <respStmt>
@@ -35,13 +36,16 @@
                 </respStmt>
                 <respStmt>
                     <persName xml:id="JC">James Cummings</persName>
-                    <orgName>University of Oxford</orgName>
-                    <resp>TEI Schema Designer, Technical Consultant</resp>
+                    <orgName>Newcastle University</orgName>
+                    <resp>TEI Schema Designer</resp>
+                    <resp>Technical Consultant</resp>
                 </respStmt>
                 <respStmt>
-                    <persName>Patrick Gregory</persName>
+                    <persName xml:id="PG">Patrick Gregory</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Paleographer, Translator, Latin and Anglo-French Glossarian</resp>
+                    <resp>Paleographer</resp>
+                    <resp>Translator</resp>
+                    <resp>Glossarian</resp>
                 </respStmt>
                 <respStmt>
                     <persName>Tanya Hagen</persName>
@@ -51,32 +55,26 @@
                 <respStmt>
                     <persName>Janine Harper</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>English Glossarian, Proofreader</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Alexandra F. Johnston</persName>
-                    <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>REED Founder and Senior Consultant</resp>
+                    <resp>English Glossarian</resp>
                 </respStmt>
                 <respStmt>
                     <persName>Sally-Beth MacLean</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Principal Investigator, SSHRC grant; Director of Research and General
-                        Editor</resp>
+                    <resp>Director of Research</resp>
+                    <resp>General Editor</resp>
                 </respStmt>
                 <respStmt>
                     <persName xml:id="JN">Jamie Norrish</persName>
-                    <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Abigail Ann Young</persName>
-                    <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Paleographer</resp>
+                    <persName xml:id="JN">Jamie Norrish</persName>
+                    <resp>Programmer</resp>
+                    <resp>TEI Schema Designer</resp>
+                    <resp>Technical Consultant</resp>
                 </respStmt>
             </titleStmt>
             <editionStmt>
-                <edition>version 3, released <date when-iso="2020-06-22">22 June
-                    2020</date></edition>
+                <edition>Version 4, released <date when-iso="2020-12-07">07 December 2021</date></edition>
+                <!--<edition>version 3, released <date when-iso="2020-06-22">22 June
+                    2020</date></edition>-->
             </editionStmt>
             <publicationStmt>
                 <authority>
@@ -123,6 +121,8 @@
         </profileDesc>
         <revisionDesc>
             <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
+            <change when="2021-12-07" who="#IN">Published version 4 of glossary.xml</change>
+            <change when="2021-11-22" who="#KC">Updated Responsibility Statements in File Description and edition number</change>
             <change when="2020-06-22" who="#CB">Published version 3 of glossary.xml</change>
             <change when="2018-04-16" who="#CB">Published version 2 of glossary.xml</change>
             <change when="2017-03-03" who="#CB">Published version 1 of glossary.xml</change>
@@ -377,6 +377,8 @@
                 <p><hi rend="italic">s</hi>/<hi rend="italic">z</hi></p>
                 <p><hi rend="italic">sch</hi>/<hi rend="italic">sh</hi></p>
                 <p><hi rend="italic">u</hi>/<hi rend="italic">v</hi></p>
+                <p><hi rend="italic">u</hi>/<hi rend="italic">w</hi></p>
+                <p><hi rend="italic">w</hi> for <hi rend="italic">u</hi> as a vowel</p>
                 <p><hi rend="italic">y-</hi> in initial position for <hi rend="italic">th</hi> or
                         <hi rend="italic">þ</hi></p>
                 <p>presence or absence of final <hi rend="italic">-e</hi></p>
@@ -739,7 +741,6 @@
                         <sense xml:id="fistulator-1">piper, possibly a generic term for one who
                             plays a wind instrument</sense>
                     </entry>
-
                 </div>
 
                 <div n="G" xml:id="gloss-la-G">
@@ -2142,7 +2143,7 @@
                             <orth>blubbord</orth>
                             <gram>adj</gram>
                         </form>
-                        <sense xml:id="blubbord-1">blubbered; flooded with tears <ref>[<hi rend="italic">OEDO</hi> blubbered <hi rend="italic">adj</hi></ref></sense>
+                        <sense xml:id="blubbord-1">blubbered; flooded with tears <ref>[<hi rend="italic">OEDO</hi> blubbered <hi rend="italic">adj</hi></ref>]</sense>
                     </entry>
 
                     <entry xml:id="boatehier">
@@ -2214,7 +2215,14 @@
                         </form>
                         <sense xml:id="bot-1">but</sense> <!--f29v in Hampshire appendix--> 
                     </entry>
-
+                    <entry xml:id="bourden">
+                        <form>
+                            <orth>bourden</orth>
+                            <gram>n in phr</gram>
+                            <orth>bourden case</orth>
+                        </form>
+                        <sense xml:id="bourden-1">carrying case</sense><ref>[<hi rend="italic">OEDO</hi> burden | burthen<hi rend="italic">n.</hi>]</ref>
+                    </entry>
                     <entry xml:id="bovrde">
                         <form>
                             <orth>bovrde</orth>
@@ -3340,7 +3348,13 @@
                         </form>
                         <sense xml:id="fache-1">fetch</sense>
                     </entry>
-
+                    <entry xml:id="falkner">
+                        <form>
+                            <orth>falkner</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="falkner-1">falconer</sense>
+                    </entry>
                     <entry xml:id="familliarte">
                         <form>
                             <orth>familliarte</orth>

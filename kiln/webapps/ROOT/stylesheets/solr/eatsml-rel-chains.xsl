@@ -49,6 +49,19 @@
         <xsl:with-param name="domain_id" select="$entity_id" />
       </xsl:apply-templates>
     </xsl:if>
+    <!-- Office type subsets: an office counts as every office it is a
+         subset of. -->
+    <xsl:if test="../../eats:entity_types/eats:entity_type/@eats_id = $office_types and
+                  @entity_relationship_type = $is_subset_of_id and
+                  @domain_entity = $entity_id">
+      <xsl:apply-templates select="id($range_id)/eats:entity_relationships/eats:entity_relationship[@entity_relationship_type=$is_subset_of_id][@domain_entity=$range_id]"
+                           mode="recursed_subset">
+        <xsl:with-param name="certainty" select="@certainty" />
+        <xsl:with-param name="domain_id" select="$entity_id" />
+        <xsl:with-param name="relationship_type_id"
+                        select="@entity_relationship_type" />
+      </xsl:apply-templates>
+    </xsl:if>
     <!-- Holding office subsets: an entity that holds an office also
          holds every office that is a superset of that office. -->
     <xsl:if test="@entity_relationship_type=$holds_office_id and

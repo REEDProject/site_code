@@ -18,18 +18,23 @@
         <respStmt>
           <persName xml:id="KC">Kathy Chung</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Post-doctoral Fellow in Digital Humanities, EATS taxonomy developer and
-            tagger</resp>
+          <resp>Research Associate</resp>
+          <resp>Indexer, Entity Tagger</resp>
+          <resp>REED EATS Taxonomy Developer</resp>
+          <resp>REED EATS Database Maintainer</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="JC">James Cummings</persName>
-          <orgName>University of Oxford</orgName>
-          <resp>TEI Schema Designer, Technical Consultant</resp>
+          <resp>Newcastle University</resp>
+          <resp>TEI Schema Designer</resp>
+          <resp>Technical Consultant</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="PG">Patrick Gregory</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Paleographer, Translator, Latin and Anglo-French Glossarian</resp>
+          <resp>Paleographer</resp>
+          <resp>Translator</resp>
+          <resp>Latin and Anglo-French Glossarian</resp>
         </respStmt>
         <respStmt>
           <persName>Tanya Hagen</persName>
@@ -39,17 +44,24 @@
         <respStmt>
           <persName>Janine Harper</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>English Glossarian, Proofreader</resp>
+          <resp>English Glossarian</resp>
+          <resp>Proofreader</resp>
         </respStmt>
         <respStmt>
-          <persName>Alexandra F. Johnston</persName>
+          <persName>Cai Henderson  </persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>REED Founder and Senior Consultant</resp>
+          <resp>Bibliographic Assistant</resp>
         </respStmt>
+        <respStmt>
+          <persName>Stephanie Hovland </persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>UK Paleographer</resp>
+        </respStmt> 
         <respStmt>
           <persName>Sally-Beth MacLean</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Principal Investigator, SSHRC grant; Director of Research and General Editor</resp>
+          <resp>Principal Investigator, SSHRC grant</resp>
+          <resp>Director of Research and General Editor</resp>
         </respStmt>
         <respStmt>
           <persName>Byron Moldofsky</persName>
@@ -58,12 +70,9 @@
         </respStmt>
         <respStmt>
           <persName xml:id="JN">Jamie Norrish</persName>
-          <resp>Programmer, TEI Schema Designer, Technical Consultant</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Kaitlin Persaud</persName>
-          <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>EATS events taxonomy developer and tagger</resp>
+          <resp>Programmer</resp>
+          <resp>TEI Schema Designer</resp>
+          <resp>Technical Consultant</resp>
         </respStmt>
         <respStmt>
           <persName>Suzanne Westfall</persName>
@@ -76,7 +85,10 @@
         </respStmt>
       </titleStmt>
       <editionStmt>
-        <edition>version 1, released <date when-iso="2017-03-03">3 March 2017</date></edition>
+        <edition>
+          Version 2, <date when-iso="2021-12-07">07 December 2021.</date>
+        </edition>
+        <!--<edition>version 1, released <date when-iso="2017-03-03">3 March 2017</date></edition>-->
       </editionStmt>
       <publicationStmt>
         <authority><orgName>Records of Early English Drama (REED)</orgName>
@@ -143,6 +155,10 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2021-12-07" who="#IN">Published version 2 of staff.xml</change>
+      <change when="2021-12-06" who="#KC">Revised location supplied header for all the Household records</change>
+      <change when="2021-11-22" who="#KC">Updated Responsibility Statements in File Description and edition number</change>
+      <change when="2021-10-20" who="#KC">Replaced Place_Household tags with Residence tags in supplied headers.</change>
       <change when="2021-03-09" who="#KC">Removed index tags from 'bear hole' instances</change>
       <change when="2020-01-22" who="#CB">Added new respStmt for Kaitlin Persaud</change>
       <change when="2020-01-21" who="#JN">Added references to EATS event entities relating to payments documented in records.</change>
@@ -450,7 +466,7 @@
             survive no records containing material relevant to this collection. The largest abbey in
             Staffordshire, <rs ref="http://ereed.library.utoronto.ca/eats/entity/39449/" type="Place_F_Church">Burton Abbey</rs>, was reckoned by its monks to be the smallest
             and poorest Benedictine establishment in the country. It was dissolved in 1539, and by
-            1546 was owned by the Paget family, whose residency there after 1573 is recounted
+            1546 was owned by the <rs ref="eats:298017" type="Person_Family">Paget family</rs>, whose residency there after 1573 is recounted
             below.</p>
           <p>Attempting to gauge prevailing religious attitudes in Staffordshire is difficult
             because the surviving records are sparse; however, at the Reformation the county was
@@ -502,10 +518,10 @@
               Jacson</rs>, at <rs ref="http://ereed.library.utoronto.ca/eats/entity/3612/" type="Place_PA_Settlement">Eccleshall</rs> in 1599–1604. A particular favourite is a
             protest at <rs ref="http://ereed.library.utoronto.ca/eats/entity/3684/" type="Place_PA_Settlement">Kinver</rs> in 1620, where <rs ref="http://ereed.library.utoronto.ca/eats/entity/10814/" type="Person_Commoner">Richard
               Rice</rs> was cited ‘for fartinge &amp; pissinge in the Church in sermon time &amp;
-            gingelinge of <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_SeasonalCustom">Morrice</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dauncers</rs>
+            gingelinge of <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_Custom">Morrice</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dauncers</rs>
             <rs ref="http://ereed.library.utoronto.ca/eats/entity/42342/" type="Thing_MusicalInstrument">bells</rs>!' Was he protesting the requirement to
             attend church in sermon time? Or the quality of the sermon? Or the Kinver minister’s
-            negative attitude to <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_SeasonalCustom">Morris</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dancing</rs> and merrymaking? One might be tempted to
+            negative attitude to <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_Custom">Morris</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dancing</rs> and merrymaking? One might be tempted to
             correlate cases like this one into a picture of anti-Puritan resistance, but this would
             be a dangerous generalization given the small number of scattered examples, which can be
             countered by other records that provide evidence of communities that were solidly and
@@ -602,7 +618,7 @@
               gives, in its successive pages, accounts of bailiffs or the mayor, chamberlains, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">churchwardens</rs>, and schoolwardens (the
               latter minor officials apparently all reported to the bailiffs or mayor).</p>
             <p>Our earliest record presents an attempt, by the seventeenth-century writer, to make
-              some sense of a <rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobby-horse</rs> record from 1528–9. The
+              some sense of a <rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobby-horse</rs> record from 1528–9. The
               hobby-horse dance was held annually, at the new year, and receipts from it were
               entered by the churchwardens of <rs ref="http://ereed.library.utoronto.ca/eats/entity/36054/" type="Place_F_Church">St
                 Mary's</rs>, first recorded in 1528–9 (the first surviving set of accounts) and last
@@ -919,7 +935,7 @@
             <p>Stafford is not endowed with numerous households, perhaps because of its early
               situation with half of the county being royal forests, subject to forest law with all
               its limitations on permitted activities. As well, it was not a rich shire and (like
-              Shropshire) it was distant enough to be out of the London orbit. One family, the <rs ref="http://ereed.library.utoronto.ca/eats/entity/4116/" type="Place_Household">Wrottesleys of Wrottesley Hall</rs>, near <rs ref="http://ereed.library.utoronto.ca/eats/entity/44947/" type="Place_PA_Settlement">Tettenhall</rs>, suffered misfortune in 1897 when their hall burned to the ground,
+              Shropshire) it was distant enough to be out of the London orbit. One family, the <rs ref="eats:298178" type="Person_Family">Wrottesleys</rs> of <rs ref="eats:40181" type="Place_F_Residence">Wrottesley Hall</rs>, near <rs ref="http://ereed.library.utoronto.ca/eats/entity/44947/" type="Place_PA_Settlement">Tettenhall</rs>, suffered misfortune in 1897 when their hall burned to the ground,
               leading to the loss of all their records (except for those previously catalogued and
               described by the Historical Manuscripts Commission).<note type="foot">Historical
                 Manuscripts Commission, <title>Guide to the Location of Collections Described in the
@@ -947,14 +963,14 @@
               Katherine Swynford became open knowledge, Gaunt visited there no more.</p>
           </div>
           <div>
-            <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/4044/" type="Place_Household">Bagot of Blithfield</rs></head>
+            <head><rs ref="eats:25379" type="Person_Family">Bagot</rs> of <rs ref="eats:40200" type="Place_F_Residence">Blithfield</rs></head>
             <p><rs ref="http://ereed.library.utoronto.ca/eats/entity/22742/" type="Person_Gentry">Walter Bagot</rs> (bap 1557, d. 1623) was holder of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/36924/" type="Place_PA_Settlement">Blithfield</rs> estate during this time. He was an influential member of the county
               gentry, a follower of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/772/" type="Person_Nobility">earl of Essex</rs>, and held various offices in the county.
               These included being MP for <rs ref="http://ereed.library.utoronto.ca/eats/entity/3900/" type="Place_PA_Settlement">Tamworth</rs> in 1586, JP in 1597, and sheriff on two occasions. <rs ref="http://ereed.library.utoronto.ca/eats/entity/40200/" type="Place_F_Residence">Blithfield Hall</rs> is still in the family, although much of the land of the
               estate was sold before 1953 to create a reservoir.</p>
           </div>
           <div>
-            <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/4098/" type="Place_Household">Paget of Burton upon Trent and Beaudesert</rs></head>
+            <head><rs ref="eats:298017" type="Person_Family">Paget</rs> of <rs ref="eats:40000" type="Place_F_Residence">Burton upon Trent</rs> and <rs ref="eats:44969" type="Place_F_Residence">Beaudesert</rs></head>
             <p><rs ref="http://ereed.library.utoronto.ca/eats/entity/33321/" type="Person_Nobility">Thomas, 4th Baron Paget</rs> (<hi rend="italic">c</hi> 1544–90), succeeded to the
               family estates on the death of his <rs ref="http://ereed.library.utoronto.ca/eats/entity/45148/" type="Person_Nobility">elder brother</rs> in 1568, and became the fourth holder of the Paget peerage in
               1570, receiving a summons to parliament in 1571. He resided at the <rs ref="http://ereed.library.utoronto.ca/eats/entity/40000/" type="Place_F_Residence">manor, Burton upon Trent</rs>, a house built by his <rs ref="http://ereed.library.utoronto.ca/eats/entity/45067/" type="Person_Nobility">father</rs> after 1545, using building stone from the dissolved abbey and built
@@ -1015,7 +1031,7 @@
                 suum &amp;c.</ab>
 
               <ab>Et q<ex>uo</ex>d quil<ex>ibe</ex>t tenens D<ex>omi</ex>ni faciet debitu<ex>m</ex>
-                  suu<ex>m</ex> ad <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">Hobbyhorse</rs></term><note type="foot">ad
+                  suu<ex>m</ex> ad <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">Hobbyhorse</rs></term><note type="foot">ad
                   Hobbyhorse: <hi rend="italic">underlined in ms</hi></note>, sicut antiquo tempore
                   consuet<ex>i</ex> fuerunt, sub pena for<ex>isfacture</ex>
                   ten<ex>emen</ex>tor<ex>um</ex> suor<ex>um</ex> ad manus D<ex>omi</ex>ni.</ab>
@@ -2325,7 +2341,7 @@
                   <cell><rs ref="http://ereed.library.utoronto.ca/eats/entity/3630/" type="Place_PA_Settlement">Ellenhall</rs>.</cell>
                   <cell><rs ref="http://ereed.library.utoronto.ca/eats/entity/9793/" type="Person_Commoner">Simon Tayler</rs><lb/><handShift/>ne
                     extrahatur./<handShift/></cell>
-                  <cell>for <rs ref="http://ereed.library.utoronto.ca/eats/entity/45652/" type="CrimesMisdemeanors">lending</rs> the <term ref="gloss:surplasse-1">surplasse</term> to <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">daunce</rs> the <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_SeasonalCustom">Morrice</rs> vpon <rs ref="http://ereed.library.utoronto.ca/eats/entity/41230/" type="CalenderDay_Secular">May day</rs> Excom<ex>municatus</ex>./</cell>
+                  <cell>for <rs ref="http://ereed.library.utoronto.ca/eats/entity/45652/" type="CrimesMisdemeanors">lending</rs> the <term ref="gloss:surplasse-1">surplasse</term> to <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">daunce</rs> the <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_Custom">Morrice</rs> vpon <rs ref="http://ereed.library.utoronto.ca/eats/entity/41230/" type="CalenderDay_Secular">May day</rs> Excom<ex>municatus</ex>./</cell>
                 </row>
               </table>
 
@@ -2373,7 +2389,7 @@
               <ab>Whereas <rs ref="http://ereed.library.utoronto.ca/eats/entity/9839/" type="Person_Commoner">will<ex>ia</ex>m Iohnson</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/3648/" type="Place_PA_Settlement">great fenton</rs> in <rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">the
                   County aforesaid</rs> att the gen<ex>er</ex>all Sessions of the peace holden the
                 daie yeare &amp; place abouesaid before the Iustic<ex>es</ex> there confesseth that
-                he in the night tyme came from <rs ref="http://ereed.library.utoronto.ca/eats/entity/9885/" type="Person_Commoner">Iohn Browne</rs>s howse of fenton aforesaid to a <rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/41249/" type="Entertainment_SeasonalCustom">Maye powle</rs> standing by the house of the
+                he in the night tyme came from <rs ref="http://ereed.library.utoronto.ca/eats/entity/9885/" type="Person_Commoner">Iohn Browne</rs>s howse of fenton aforesaid to a <rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/41249/" type="Entertainment_Custom">Maye powle</rs> standing by the house of the
                 said Browne, and there seeing a pap<ex>er</ex> fyxed vpon the said powle tooke it
                 &amp; deliu<ex>er</ex>ed it to <rs ref="http://ereed.library.utoronto.ca/eats/entity/9931/" type="Person_Commoner">Iohn Hodgskinson</rs>, And that one <rs ref="http://ereed.library.utoronto.ca/eats/entity/9977/" type="Person_Commoner">will<ex>ia</ex>m diche</rs> there being reade ytt, And therevpon he &amp;
                 thesaid Iohnson went to the said Maye powle And there the said Iohnson stowping
@@ -2599,7 +2615,7 @@
               <ab><rs ref="http://ereed.library.utoronto.ca/eats/entity/10814/" type="Person_Commoner"><foreign xml:lang="lat">Rich<ex>ard</ex>us</foreign>
                   Rice</rs>
                 <note type="marginal" place="margin_left"><handShift/><foreign xml:lang="lat">ex<ex>communicatus</ex></foreign><handShift/></note> for <rs ref="http://ereed.library.utoronto.ca/eats/entity/45652/" type="CrimesMisdemeanors">fartinge &amp; pissinge</rs> in <rs ref="http://ereed.library.utoronto.ca/eats/entity/36008/" type="Place_F_Church">the
-                  Church</rs><note type="foot">Church: <hi rend="italic"><rs ref="http://ereed.library.utoronto.ca/eats/entity/36008/" type="Place_F_Church">St Peter's</rs></hi></note> in sermon time &amp; <term ref="gloss:gingelinge-1">gingelinge</term> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_SeasonalCustom">Morrice</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dauncers</rs>
+                  Church</rs><note type="foot">Church: <hi rend="italic"><rs ref="http://ereed.library.utoronto.ca/eats/entity/36008/" type="Place_F_Church">St Peter's</rs></hi></note> in sermon time &amp; <term ref="gloss:gingelinge-1">gingelinge</term> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_Custom">Morrice</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dauncers</rs>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/42342/" type="Thing_MusicalInstrument">bells</rs></ab>
 
               <ab><space/></ab>
@@ -2933,7 +2949,7 @@
                   cantilenas</note> noctib<ex>us</ex> s<ex>an</ex>c<ex>t</ex>or<ex>um</ex>
                   Edmundi<note type="foot">Edmundi: <hi rend="italic">possibly <rs ref="http://ereed.library.utoronto.ca/eats/entity/43376/" type="Place_Feature">St Edmund's Day</rs> or <rs ref="http://ereed.library.utoronto.ca/eats/entity/43342/" type="Place_Feature">St Edmund of Abingdon's Day</rs></hi></note> &amp; <rs ref="http://ereed.library.utoronto.ca/eats/entity/41406/" type="CalendarDay_Liturgical">Nich<ex>ola</ex>i</rs> cu<ex>m</ex>
                   chorist<ex>is</ex> cantare contig<ex>er</ex>int in futur<ex>um</ex> ‸<add place="above">vterq<ex>ue</ex> eor<ex>um</ex></add> recipiet<del><damage><gap unit="chars" extent="2"/></damage></del> de denarijs p<ex>er</ex>
-                <rs ref="http://ereed.library.utoronto.ca/eats/entity/10928/" type="Collective_ClergyAndChurchwardens">cano<ex>ni</ex>cos</rs>
+                <rs ref="eats:296811" type="Collective_Office">cano<ex>ni</ex>cos</rs>
                   d<ex>ic</ex>tos<note type="foot">d<ex>ic</ex>tos: o <hi rend="italic">corrected
                     from</hi> e<hi rend="italic">; for</hi> dictis</note> chorist<ex>is</ex>
                   soluend<ex>is</ex> p<ex>ro</ex> quali<ex>be</ex>t nocte <del>in</del> quatuor
@@ -4357,7 +4373,7 @@
 
               <table>
                 <row>
-                  <cell>In p<ex>ri</ex>mis receyved of <rs ref="http://ereed.library.utoronto.ca/eats/entity/15461/" type="Person_Commoner">Thomas Widder</rs> at the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobby horse</rs></term></cell>
+                  <cell>In p<ex>ri</ex>mis receyved of <rs ref="http://ereed.library.utoronto.ca/eats/entity/15461/" type="Person_Commoner">Thomas Widder</rs> at the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobby horse</rs></term></cell>
                   <cell rend="right">ix s. x d.</cell>
                 </row>
               </table>
@@ -4366,7 +4382,7 @@
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m r<ex>eceyved</ex> in <rs ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">Est<ex>er</ex> weke</rs> for <term ref="gloss:heuynge-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/41639/" type="Entertainment_SeasonalCustom">heyveng</rs></term></cell>
+                  <cell>It<ex>e</ex>m r<ex>eceyved</ex> in <rs ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">Est<ex>er</ex> weke</rs> for <term ref="gloss:heuynge-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/41639/" type="Entertainment_Custom">heyveng</rs></term></cell>
                   <cell rend="right">iij s. vj d. ob.</cell>
                 </row>
               </table>
@@ -4413,7 +4429,7 @@
               <table>
                 <row>
                   <cell>It<ex>e</ex>m lost in <term ref="gloss:coursse-1">Coursse</term> money
-                    gadred at the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hoby horse</rs></term></cell>
+                    gadred at the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hoby horse</rs></term></cell>
                   <cell rend="right">v s.</cell>
                 </row>
               </table>
@@ -4448,7 +4464,7 @@
                   <cell rend="right">li. s. d.</cell>
                 </row>
                 <row>
-                  <cell>Imp<ex>ri</ex>mis rec<ex>eaued</ex> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/15461/" type="Person_Commoner">Thom<ex>a</ex>s wydder</rs> at the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">Hobby Horse</rs></term></cell>
+                  <cell>Imp<ex>ri</ex>mis rec<ex>eaued</ex> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/15461/" type="Person_Commoner">Thom<ex>a</ex>s wydder</rs> at the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">Hobby Horse</rs></term></cell>
                   <cell rend="right">00 09 10</cell>
                 </row>
                 <row>
@@ -4557,7 +4573,7 @@
             </div>
           </div>
           <div type="endnote">
-            <p>It is impossible to ascertain if this record of the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobby horse</rs></term> on f 25 is a copy of
+            <p>It is impossible to ascertain if this record of the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobby horse</rs></term> on f 25 is a copy of
               the one in the preceding entry; however, because they occur under different dates both
               extracts have been included with the caution that the transcriber of this record might
               have confused the date.</p>
@@ -4816,7 +4832,7 @@
             </div>
           </div>
           <div type="endnote">
-            <p><rs ref="http://ereed.library.utoronto.ca/eats/entity/18133/" type="Person_Commoner">Peter Hales</rs> is presumably the 'blind peeter' mentioned as playing at the <rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobby horse</rs> in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">churchwardens</rs>’ accounts for this year;
+            <p><rs ref="http://ereed.library.utoronto.ca/eats/entity/18133/" type="Person_Commoner">Peter Hales</rs> is presumably the 'blind peeter' mentioned as playing at the <rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobby horse</rs> in the <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">churchwardens</rs>’ accounts for this year;
               in the accounts for many other years between 1612 and 1641, Peter Hales received
               payments from the <rs ref="http://ereed.library.utoronto.ca/eats/entity/10976/" type="Collective_Occupation">bailiffs</rs> and the churchwardens for music.</p>
           </div>
@@ -4946,7 +4962,7 @@
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m p<ex>ai</ex>d <rs ref="http://ereed.library.utoronto.ca/eats/entity/18983/" type="Person_Commoner">willson</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/19017/" type="Person_Commoner">Stanley</rs> for makinge two ladders of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/41249/" type="Entertainment_SeasonalCustom">mayepole</rs> &amp; for seasond Timber for
+                  <cell>It<ex>e</ex>m p<ex>ai</ex>d <rs ref="http://ereed.library.utoronto.ca/eats/entity/18983/" type="Person_Commoner">willson</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/19017/" type="Person_Commoner">Stanley</rs> for makinge two ladders of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/ http://ereed.library.utoronto.ca/eats/entity/41249/" type="Entertainment_Custom">mayepole</rs> &amp; for seasond Timber for
                     the staues w<ex>hi</ex>ch ladders are hangd vnder the <rs ref="http://ereed.library.utoronto.ca/eats/entity/36656/" type="Place_F_TownHall">shirehall</rs></cell>
                   <cell rend="right">00 09 02</cell>
                 </row>
@@ -4993,7 +5009,7 @@
                   accounts)</supplied></head>
               <pb n="67v" type="folio"/>
 
-              <ab rend="center">The <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">Hobbyhorsse</rs></term> money Receaued
+              <ab rend="center">The <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">Hobbyhorsse</rs></term> money Receaued
                     by<lb/><rs ref="http://ereed.library.utoronto.ca/eats/entity/19084/" type="Person_Commoner">Will<ex>ia</ex>m Moye</rs>, and <rs ref="http://ereed.library.utoronto.ca/eats/entity/19134/" type="Person_Commoner">Rob<ex>er</ex>t Smyth</rs><lb/>
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/3576/" type="Collective_ClergyAndChurchwardens">Churchwardens</rs> vizt</ab>
 
@@ -5129,7 +5145,7 @@ table. The (blank) above is the second cell of that row -->the
                 </row>
                 <row>
                   <cell>p<ex>ai</ex>d to <rs ref="http://ereed.library.utoronto.ca/eats/entity/20269/" type="Person_Commoner">Iames Bamfford</rs> for wearinge the Coate .2. dayes at
-                    the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobbyhorsse</rs></term></cell>
+                    the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobbyhorsse</rs></term></cell>
                   <cell rend="right">00 02 00</cell>
                 </row>
                 <row>
@@ -5213,7 +5229,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell><foreign xml:lang="lat">Inp<ex>rim</ex>is</foreign> paid to <rs ref="http://ereed.library.utoronto.ca/eats/entity/18133/" type="Person_Commoner">Peter</rs> for playinge at the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobbie horse</rs></term></cell>
+                  <cell><foreign xml:lang="lat">Inp<ex>rim</ex>is</foreign> paid to <rs ref="http://ereed.library.utoronto.ca/eats/entity/18133/" type="Person_Commoner">Peter</rs> for playinge at the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobbie horse</rs></term></cell>
                   <cell rend="right">00 02 00</cell>
                 </row>
                 <row>
@@ -5277,7 +5293,7 @@ table. The (blank) above is the second cell of that row -->the
                 hall</rs>, in entries from 1620–1, 1630–1, and two references from 1631–2. William
               Rycrofte, who here appears to be the <rs ref="http://ereed.library.utoronto.ca/eats/entity/21804/" type="Entertainer_Type">bearward</rs>, recurs in numerous payments for entertainments, often musical in
               nature, usually with <rs ref="http://ereed.library.utoronto.ca/eats/entity/18133/" type="Person_Commoner">Peter Hales</rs> (called ‘blinde Peter’ on two occasions).
-              These took place at the <rs ref="http://ereed.library.utoronto.ca/eats/entity/40561/" type="Entertainment_Type">church banquets</rs>, or at the <rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobby horse</rs>.</p>
+              These took place at the <rs ref="http://ereed.library.utoronto.ca/eats/entity/40561/" type="Entertainment_Type">church banquets</rs>, or at the <rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobby horse</rs>.</p>
           </div>
         </body>
       </text>
@@ -6067,7 +6083,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m R<ex>eceived</ex> more vpon receipt of the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobbihorse</rs></term> money in the
+                  <cell>It<ex>e</ex>m R<ex>eceived</ex> more vpon receipt of the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobbihorse</rs></term> money in the
                     Counsell house p<ex>re</ex>sently after <rs ref="http://ereed.library.utoronto.ca/eats/entity/41680/" type="CalenderDay_Secular">New yeares day</rs> 1619</cell>
                   <cell rend="right">xij li.</cell>
                 </row>
@@ -6173,7 +6189,7 @@ table. The (blank) above is the second cell of that row -->the
               <table>
                 <row>
                   <cell>It<ex>e</ex>m R<ex>eceive</ex>d toward <rs ref="http://ereed.library.utoronto.ca/eats/entity/20377/" type="Person_Commoner">Will<ex>iams</ex></rs><note type="foot">Will<ex>iams</ex>: <hi rend="italic">likely</hi> William Rycrofte's</note>
-                    <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_SeasonalCustom">Morrice</rs>
+                    <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_Custom">Morrice</rs>
                     <rs ref="http://ereed.library.utoronto.ca/eats/entity/42274/" type="Thing_TheatricalCostume">apparell</rs></cell>
                   <cell rend="right">ij s. vj d.</cell>
                 </row>
@@ -6378,7 +6394,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>Impr<ex>imis</ex> payd to <rs ref="http://ereed.library.utoronto.ca/eats/entity/18133/" type="Person_Commoner">Peeter Hales</rs> for playing at the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobby horse</rs></term></cell>
+                  <cell>Impr<ex>imis</ex> payd to <rs ref="http://ereed.library.utoronto.ca/eats/entity/18133/" type="Person_Commoner">Peeter Hales</rs> for playing at the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobby horse</rs></term></cell>
                   <cell rend="right">0 2 0</cell>
                 </row>
                 <row>
@@ -6514,7 +6530,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>Receiued of the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobbyhorse</rs></term> money</cell>
+                  <cell>Receiued of the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobbyhorse</rs></term> money</cell>
                   <cell rend="right">xxx li. xiij s. iiij d.</cell>
                 </row>
               </table>
@@ -6578,7 +6594,7 @@ table. The (blank) above is the second cell of that row -->the
               <table>
                 <row>
                   <cell> Allowed to the said Mr <rs ref="http://ereed.library.utoronto.ca/eats/entity/19302/" type="Person_Commoner">Drakfford</rs> more w<ex>hi</ex>ch was imposed vpon him
-                    because he kept not the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">Hobby horse</rs></term> An<ex>n</ex>o
+                    because he kept not the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">Hobby horse</rs></term> An<ex>n</ex>o
                       d<ex>omi</ex>ni 1624 he then dwelling in <rs ref="http://ereed.library.utoronto.ca/eats/entity/39318/" type="Place_PA_Settlement">fforbridge</rs> the somm of xx s.</cell>
                   <cell rend="right">j li.</cell>
                 </row>
@@ -7023,7 +7039,7 @@ table. The (blank) above is the second cell of that row -->the
               <table>
                 <row>
                   <cell>of Mr. <rs ref="http://ereed.library.utoronto.ca/eats/entity/25397/" type="Person_Commoner">Tho<ex>mas</ex> Aston</rs> w<ex>hi</ex>ch he sent me
-                    for the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">Hobby horse</rs></term> but it came
+                    for the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">Hobby horse</rs></term> but it came
                     after</cell>
                   <cell rend="right">vij d.</cell>
                 </row>
@@ -7510,7 +7526,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m to <rs ref="http://ereed.library.utoronto.ca/eats/entity/18133/" type="Person_Commoner">Peter Hales</rs> &amp; <rs ref="http://ereed.library.utoronto.ca/eats/entity/20377/" type="Person_Commoner">Rycrofte</rs> at the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobbie horse</rs></term></cell>
+                  <cell>It<ex>e</ex>m to <rs ref="http://ereed.library.utoronto.ca/eats/entity/18133/" type="Person_Commoner">Peter Hales</rs> &amp; <rs ref="http://ereed.library.utoronto.ca/eats/entity/20377/" type="Person_Commoner">Rycrofte</rs> at the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobbie horse</rs></term></cell>
                   <cell rend="right">0 4 0</cell>
                 </row>
               </table>
@@ -7730,7 +7746,7 @@ table. The (blank) above is the second cell of that row -->the
                   <cell rend="right">li. s. d.</cell>
                 </row>
                 <row>
-                  <cell>Receaued the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobbey horse</rs></term> money
+                  <cell>Receaued the <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobbey horse</rs></term> money
                     1638.</cell>
                   <cell rend="right">33 13 10</cell>
                 </row>
@@ -8251,7 +8267,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm52854080">
         <body xml:lang="fra">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1044/" type="Place_PA_Settlement">Tutbury</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1380">1380</date>
             <seg ana="taxon:STGRB2">STGRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm52854080-transcription">
@@ -8305,8 +8321,11 @@ table. The (blank) above is the second cell of that row -->the
                 fourth year, etc.</ab>
 
               <gap reason="omitted"/>
-            </div>
+            </div>                     
           </div>
+          <div type="endnote">
+            <p><rs ref="eats:298208" type="Person_Family">John of Gaunt's family by his second wife</rs>, <rs ref="eats:110546" type="Person_Female">Constance</rs>, was resident at <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>.</p>
+          </div>  
         </body>
       </text>
       <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm52835712">
@@ -8382,7 +8401,7 @@ table. The (blank) above is the second cell of that row -->the
                       predict<ex>am</ex> videl<ex>ice</ex>t p<ex>er</ex> duos dies et duos noctes
                     pro qua consuetud<ex>ine</ex> red<ex>er</ex>unt annuatim ad ffest<ex>am</ex>
                       predict<ex>am</ex></cell>
-                  <cell rend="right">xx d.</cell>
+                      <cell>xx d.</cell>
                 </row>
               </table>
 
@@ -9057,9 +9076,7 @@ table. The (blank) above is the second cell of that row -->the
                 governance of all the suitors to the same court as follows. Given at our palace of
                 Westminster under the seal of the aforesaid duchy, 30 June 1631.</ab>
 
-              <ab>
-                <seg type="signed" rend="right">Gerard</seg>
-                <hi rend="italic">(Signed)</hi> Gerard</ab>
+              <ab><seg type="signed" rend="right">Gerard</seg></ab>
             </div>
           </div>
         </body>
@@ -9217,7 +9234,7 @@ table. The (blank) above is the second cell of that row -->the
                 takinge or destroying of deere did att divers and sundrye tymes within three yeares
                 nowe last past, (aswell by daye as by night) riotously routously and vnlawfully with
                 their saide weapons Crosbowes gunnes or fowlinge peec<ex>es</ex> and greyhoundes
-                enter into yo<ex>ur</ex> saide Subiect<ex>es</ex> Parke called <rs ref="http://ereed.library.utoronto.ca/eats/entity/37566/" type="Place_BoroughParish">Loxley Parke</rs> and into his severall groundes neare
+                enter into yo<ex>ur</ex> saide Subiect<ex>es</ex> Parke called <rs ref="eats:37566" type="Place_PA_Manor">Loxley Parke</rs> and into his severall groundes neare
                 therevnto adioyninge, and then and there did in like riotous routous and vnlawfull
                 manner hunte Course take kill and destroye divers of yo<ex>ur</ex> saide
                   Subiect<ex>es</ex> deere in the same Parke and groundes then and there beinge and
@@ -9362,7 +9379,7 @@ table. The (blank) above is the second cell of that row -->the
                   verily thinketh</add> havinge w<ex>i</ex>thin the space of three ‸<add place="above">or fowre</add> yeres now last paste ‸<add place="above">or
                   thereaboutes</add> Conceiued A Causeles Malice and hatred againste <rs ref="http://ereed.library.utoronto.ca/eats/entity/27543/" type="Person_Commoner">Will<ex>ia</ex>m Tixall</rs> one other of the def<ex>endant</ex>s &amp; this
                   def<ex>endant</ex>s brother because the said Will<ex>ia</ex>m Tixall did refuse to
-                lett the Compl<ex>ainan</ex>te take his said Parke Called <rs ref="http://ereed.library.utoronto.ca/eats/entity/37566/" type="Place_BoroughParish">Loxley parke</rs> a p<ex>ar</ex>cell of ground beinge
+                lett the Compl<ex>ainan</ex>te take his said Parke Called <rs ref="eats:37566" type="Place_PA_Manor">Loxley parke</rs> a p<ex>ar</ex>cell of ground beinge
                 the inheritance of the said Will<ex>ia</ex>m Tixall hath devisde framde &amp;
                 Contrived this bill againste this def<ex>endant</ex> ‸<add place="above">and his
                   said brother Will<ex>ia</ex>m Tixall</add> w<ex>i</ex>thout anie Iust Cause of
@@ -9658,7 +9675,7 @@ table. The (blank) above is the second cell of that row -->the
             </div>
           </div>
           <div type="endnote">
-            <p>There are also records of an <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Drama_Character">Abbot of 'Marham'</rs> game – apparently a variety of <rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/" type="Entertainment_SeasonalCustom">May game</rs> – in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2237/" type="Place_County">Shropshire</rs> in 1520–1 and 1532–3, in 1542–3 where the figure is termed Abbot of
+            <p>There are also records of an <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Drama_Character">Abbot of 'Marham'</rs> game – apparently a variety of <rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/" type="Entertainment_Custom">May game</rs> – in <rs ref="http://ereed.library.utoronto.ca/eats/entity/2237/" type="Place_County">Shropshire</rs> in 1520–1 and 1532–3, in 1542–3 where the figure is termed Abbot of
               'Mayroll' or 'mareall,' in 1547–8 as the Abbot of 'Marall' or 'marrall,' and in 1551–2
               as the Abbot of 'marram' (see J. Alan B. Somerset (ed), <title>Shropshire</title>, vol
               1, REED (Toronto, 1994), 176, 191, 200–1, 203).</p>
@@ -10839,7 +10856,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>Rec<ex>eyvyd</ex> of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_SeasonalCustom">lord of Mysrule</rs></cell>
+                  <cell>Rec<ex>eyvyd</ex> of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/14146/" type="Entertainment_Custom">lord of Mysrule</rs></cell>
 
                   <cell rend="right">vij s.</cell>
                 </row>
@@ -11063,7 +11080,7 @@ table. The (blank) above is the second cell of that row -->the
               <ab>It<ex>e</ex>m ordinatu<ex>m</ex> est p<ex>er</ex> ambas Inquisit<ex>iones</ex>
                   q<ex>uo</ex>d null<ex>us</ex> Colliget tene<ex>n</ex>t<ex>es</ex> ext<ex>r</ex>a
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/38496/" type="Place_BoroughParish">d<ex>o</ex>m<ex>u</ex>m</rs> durant<ex>e</ex>
-                  te<ex>m</ex>p<ex>or</ex>e le <term ref="gloss:somergame-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/" type="Entertainment_SeasonalCustom">Som<ex>er</ex>game</rs></term> sine
+                  te<ex>m</ex>p<ex>or</ex>e le <term ref="gloss:somergame-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/" type="Entertainment_Custom">Som<ex>er</ex>game</rs></term> sine
                   licent<ex>ia</ex> p<ex>ro</ex>posit<ex>i</ex> sub pena forisfact<ex>ure</ex>
                   d<ex>omi</ex>no iij s. iiij d. &amp; <rs ref="http://ereed.library.utoronto.ca/eats/entity/38515/" type="Place_F_Church">eccl<ex>esi</ex>e</rs> iij s. iiij d. &amp; Si aliquis t<ex>r</ex>anseat
                   p<ex>ro</ex>det d<ex>omi</ex>no xij d./ <gap reason="omitted"/></ab>
@@ -11096,7 +11113,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m of <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hoby horse</rs></term> money</cell>
+                  <cell>It<ex>e</ex>m of <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hoby horse</rs></term> money</cell>
                   <cell rend="right">vj s. vj d.</cell>
                 </row>
               </table>
@@ -11111,7 +11128,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m payd to <rs ref="http://ereed.library.utoronto.ca/eats/entity/29455/" type="Person_Commoner">Iane myn<ex>er</ex>se</rs> for dysshe lost at ye <term ref="gloss:somergame-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/" type="Entertainment_SeasonalCustom">Som<ex>er</ex>game</rs></term></cell>
+                  <cell>It<ex>e</ex>m payd to <rs ref="http://ereed.library.utoronto.ca/eats/entity/29455/" type="Person_Commoner">Iane myn<ex>er</ex>se</rs> for dysshe lost at ye <term ref="gloss:somergame-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/35779/" type="Entertainment_Custom">Som<ex>er</ex>game</rs></term></cell>
                   <cell rend="right">viij d.</cell>
                 </row>
               </table>
@@ -11122,7 +11139,7 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>M<ex>emoran</ex>d<ex>um</ex> oppon ye accompt of <rs ref="http://ereed.library.utoronto.ca/eats/entity/29500/" type="Person_Commoner">Ric<ex>hard</ex> Cossall</rs> &amp; <rs ref="http://ereed.library.utoronto.ca/eats/entity/29545/" type="Person_Commoner">Tho<ex>ma</ex>s Hogekynson</rs> fynysshed <foreign xml:lang="lat">xiiij<hi rend="superscript">o</hi> die maij an<ex>n</ex>o
                         xxxv<hi rend="superscript">to</hi> R<ex>egis</ex> H<ex>enrici</ex>
-                      Octaui</foreign> remayneth yn ye boxe w<ex>i</ex>t<ex>h</ex> xv s. of <term ref="gloss:heuynge"><rs ref="http://ereed.library.utoronto.ca/eats/entity/41639/" type="Entertainment_SeasonalCustom">heuynge</rs></term> money</cell>
+                      Octaui</foreign> remayneth yn ye boxe w<ex>i</ex>t<ex>h</ex> xv s. of <term ref="gloss:heuynge"><rs ref="http://ereed.library.utoronto.ca/eats/entity/41639/" type="Entertainment_Custom">heuynge</rs></term> money</cell>
                   <cell rend="right">vj li. xviij s. iiij d.</cell>
                 </row>
               </table>
@@ -11146,7 +11163,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m receyved at <rs ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">Est<ex>e</ex>r</rs> the <term ref="gloss:heuynge-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/41639/" type="Entertainment_SeasonalCustom">heywynge</rs></term> of yong men &amp;
+                  <cell>It<ex>e</ex>m receyved at <rs ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">Est<ex>e</ex>r</rs> the <term ref="gloss:heuynge-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/41639/" type="Entertainment_Custom">heywynge</rs></term> of yong men &amp;
                     meydens</cell>
                   <cell rend="right">v s.</cell>
                 </row>
@@ -11171,7 +11188,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m ye <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobyhorse</rs></term> money</cell>
+                  <cell>It<ex>e</ex>m ye <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobyhorse</rs></term> money</cell>
                   <cell rend="right">v s. vj d.</cell>
                 </row>
               </table>
@@ -11180,7 +11197,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m receyvyd of <rs ref="http://ereed.library.utoronto.ca/eats/entity/41639/" type="Entertainment_SeasonalCustom">yong men &amp; yong wemen</rs></cell>
+                  <cell>It<ex>e</ex>m receyvyd of <rs ref="http://ereed.library.utoronto.ca/eats/entity/41639/" type="Entertainment_Custom">yong men &amp; yong wemen</rs></cell>
                   <cell rend="right">v s. viij d.</cell>
                 </row>
               </table>
@@ -11213,7 +11230,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m for goyng w<ex>i</ex>th ye <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_SeasonalCustom">hobyhorse</rs></term></cell>
+                  <cell>It<ex>e</ex>m for goyng w<ex>i</ex>th ye <term ref="gloss:hobbyhorse-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/40786/" type="Entertainment_Custom">hobyhorse</rs></term></cell>
                   <cell rend="right">xiij s. iiij <damage><gap unit="chars" extent="1"/></damage><note type="foot">iiij: <hi rend="italic">letter lost to damage at
                         right margin</hi></note>
                   </cell>
@@ -11224,7 +11241,7 @@ table. The (blank) above is the second cell of that row -->the
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m Receyved of ye yong men &amp; medens at <rs ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">Ester</rs> for <term ref="gloss:heuynge-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/41639/" type="Entertainment_SeasonalCustom">heywyng</rs></term> money</cell>
+                  <cell>It<ex>e</ex>m Receyved of ye yong men &amp; medens at <rs ref="http://ereed.library.utoronto.ca/eats/entity/41327/" type="CalendarDay_Liturgical">Ester</rs> for <term ref="gloss:heuynge-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/41639/" type="Entertainment_Custom">heywyng</rs></term> money</cell>
                   <cell rend="right">ix s.</cell>
                 </row>
               </table>
@@ -11243,7 +11260,7 @@ table. The (blank) above is the second cell of that row -->the
                   <cell rend="right">ij d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m the <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_SeasonalCustom">morres</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dau<ex>n</ex>sse</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">lychffelld</rs></cell>
+                  <cell>It<ex>e</ex>m the <rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_Custom">morres</rs> <rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dau<ex>n</ex>sse</rs> of <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">lychffelld</rs></cell>
 
                   <cell rend="right">iiij d.</cell>
                 </row>
@@ -11277,7 +11294,7 @@ table. The (blank) above is the second cell of that row -->the
               <table>
                 <row>
                   <cell>It<ex>e</ex>m to <rs ref="http://ereed.library.utoronto.ca/eats/entity/35310/ http://ereed.library.utoronto.ca/eats/entity/35779/" type="Drama_Character">Robyn hode</rs>
-                    <term ref="gloss:marresdaunce-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_SeasonalCustom">marres</rs><rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dau<ex>n</ex>ce</rs></term> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/29587/" type="Person_Commoner">Iohn harden</rs></cell>
+                    <term ref="gloss:marresdaunce-1"><rs ref="http://ereed.library.utoronto.ca/eats/entity/79074/" type="Entertainment_Custom">marres</rs><rs ref="http://ereed.library.utoronto.ca/eats/entity/18451/" type="Entertainer_Type">dau<ex>n</ex>ce</rs></term> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/29587/" type="Person_Commoner">Iohn harden</rs></cell>
 
                   <cell rend="right">xij d.</cell>
                 </row>
@@ -11290,7 +11307,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46982304">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4044/" type="Place_Household">Bagot of Blithfield</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40200" type="Place_F_Residence">Blithfield Hall</rs>
             <date when-iso="1613">1613</date>
             <seg ana="taxon:STBBL1">STBBL1</seg></head>
           <div type="transcription" xml:id="staff-ridm46982304-transcription">
@@ -11322,11 +11339,14 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>The <rs ref="eats:25379" type="Person_Family">Bagot family</rs> was resident at <rs ref="eats:40200" type="Place_F_Residence">Blithfield Hall</rs>.</p>
+          </div>
         </body>
       </text>
       <text ana="eats:100387 eats:100445 eats:96121 taxon:family" type="record" xml:id="staff-ridm46968400">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4044/" type="Place_Household">Bagot of Blithfield</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40200" type="Place_F_Residence">Blithfield Hall</rs>
             <date when-iso="1615">1615</date>
             <seg ana="taxon:STBBL1">STBBL1</seg></head>
           <div type="transcription" xml:id="staff-ridm46968400-transcription">
@@ -11348,11 +11368,14 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>The <rs ref="eats:25379" type="Person_Family">Bagot family</rs> was resident at <rs ref="eats:40200" type="Place_F_Residence">Blithfield Hall</rs>.</p>
+          </div>        
         </body>
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46957440">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4044/" type="Place_Household">Bagot of Blithfield</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40200" type="Place_F_Residence">Blithfield Hall</rs>
             <date when-iso="1619">1619</date>
             <seg ana="taxon:STBBL1">STBBL1</seg></head>
           <div type="transcription" xml:id="staff-ridm46957440-transcription">
@@ -11377,11 +11400,14 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>The <rs ref="eats:25379" type="Person_Family">Bagot family</rs> was resident at <rs ref="eats:40200" type="Place_F_Residence">Blithfield Hall</rs>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46944768">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4134/" type="Place_Household">Drayton Basset</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37648" type="Place_F_Residence">Drayton Basset</rs>
             <date from-iso="1622" to-iso="1623">1622–3</date>
             <seg ana="taxon:STWILS">STWILS</seg></head>
           <div type="transcription" xml:id="staff-ridm46944768-transcription">
@@ -11413,7 +11439,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46934096">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4062/" type="Place_Household">Ferrers of Walton on Trent and Tamworth</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:297979" type="Place_F_Residence">Tamworth Castle</rs>
             <date when-iso="1605">1605</date>
             <seg ana="taxon:STFHA1">STFHA1</seg></head>
           <div type="transcription" xml:id="staff-ridm46934096-transcription">
@@ -11481,11 +11507,14 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>The <rs ref="eats:298148" type="Person_Family">Ferrers family</rs> was resident at <rs ref="eats:297979" type="Place_F_Residence">Tamworth Castle</rs>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46913456">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4062/" type="Place_Household">Ferrers of Walton on Trent and Tamworth</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:297979" type="Place_F_Residence">Tamworth Castle</rs>
             <date from-iso="1601" to-iso="1700">17th Century</date>
             <seg ana="taxon:STFHA2">STFHA2</seg></head>
           <div type="transcription" xml:id="staff-ridm46913456-transcription">
@@ -11507,16 +11536,19 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>The <rs ref="eats:298148" type="Person_Family">Ferrers family</rs> was resident at <rs ref="eats:297979" type="Place_F_Residence">Tamworth Castle</rs>.</p>
+          </div>         
         </body>
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46888688">
         <body xml:lang="fra">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4080/" type="Place_Household">John of Gaunt of Tutbury</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1372">1371/2</date>
             <seg ana="taxon:STGRB1">STGRB1</seg></head>
           <div type="transcription" xml:id="staff-ridm46888688-transcription">
             <div>
-              <head>f 142v <supplied>(28 February)</supplied></head>
+              <head>f 142v <supplied>(<rs ref="eats:37794" type="Place_F_Residence">Hertford Castle</rs>, 28 February)</supplied></head>
               <pb n="142v" type="folio"/>
 
               <gap reason="omitted"/>
@@ -11566,16 +11598,19 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p><rs ref="eats:298208" type="Person_Family">John of Gaunt's family by his second wife</rs>, <rs ref="eats:110546" type="Person_Female">Constance</rs>, was resident at <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46867952">
         <body xml:lang="fra">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4080/" type="Place_Household">John of Gaunt of Tutbury</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1373">1373</date>
             <seg ana="taxon:STGRB1">STGRB1</seg></head>
           <div type="transcription" xml:id="staff-ridm46867952-transcription">
             <div>
-              <head>f 181 <supplied>(20 May)</supplied></head>
+              <head>f 181 <supplied>(<rs ref="eats:37794" type="Place_F_Residence">Hertford Castle</rs>, 20 May)</supplied></head>
               <pb n="181" type="folio"/>
 
               <gap reason="omitted"/>
@@ -11593,7 +11628,7 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
             <div>
-              <head>f 133v <supplied>(13 June) (Indentures of servants)</supplied></head>
+              <head>f 133v <supplied>(<rs ref="eats:36237" type="Place_F_Residence">Savoy Palace</rs>, 13 June) (Indentures of servants)</supplied></head>
               <pb n="133v" type="folio"/>
 
               <ab>Ceste endent<ex>ur</ex>e faite p<ex>ar</ex>entre n<ex>os</ex>tre s<ex>eignur</ex>
@@ -11685,16 +11720,19 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p><rs ref="eats:298208" type="Person_Family">John of Gaunt's family by his second wife</rs>, <rs ref="eats:110546" type="Person_Female">Constance</rs>, was resident at <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm51673280">
         <body xml:lang="fra">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4080/" type="Place_Household">John of Gaunt of Tutbury</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1374">1374</date>
             <seg ana="taxon:STGRB1">STGRB1</seg></head>
           <div type="transcription" xml:id="staff-ridm51673280-transcription">
             <div>
-              <head>f 203v <supplied>(June)</supplied></head>
+              <head>f 203v <supplied>(<rs ref="eats:36237" type="Place_F_Residence">Savoy Palace</rs>, June)</supplied></head>
               <pb n="203v" type="folio"/>
 
               <gap reason="omitted"/>
@@ -11721,7 +11759,7 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
             <div>
-              <head>f 210v <supplied>(21 September)</supplied></head>
+              <head>f 210v <supplied>(<rs ref="eats:37914" type="Place_PA_Settlement">Wentbridge</rs>, 21 September)</supplied></head>
               <pb n="210v" type="folio"/>
 
               <ab><rs ref="http://ereed.library.utoronto.ca/eats/entity/13153/" type="Person_Royalty">Iohan</rs> &amp;c A n<ex>ost</ex>re b<ex>ie</ex>n ame <rs ref="http://ereed.library.utoronto.ca/eats/entity/30406/" type="Person_Commoner">Rob<ex>er</ex>t de Morton</rs> n<ex>ost</ex>re Receyuour deinz lonour de Pykeryinge ou<note type="marginal" place="margin_left">p<ex>ur</ex> <rs ref="http://ereed.library.utoronto.ca/eats/entity/30452/" type="Person_Commoner">Iohan Tyas</rs></note> a son lieutenant illoeques
@@ -11772,6 +11810,7 @@ table. The (blank) above is the second cell of that row -->the
             </div>
           </div>
           <div type="endnote">
+            <p><rs ref="eats:298208" type="Person_Family">John of Gaunt's family by his second wife</rs>, <rs ref="eats:110546" type="Person_Female">Constance</rs>, was resident at <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>.</p>
             <p>The year, 1375, is inferred from the first entry on f 203v, which is dated 7 July
               1375. The entry preceding the extract printed here is dated 8 July; the following
               entry on the leaf is undated, and the two after that are both dated 10 July. In none
@@ -11782,12 +11821,12 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="eats:103215 eats:103273 eats:98472 eats:98527 taxon:family" type="record" xml:id="staff-ridm46771552">
         <body xml:lang="fra">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4080/" type="Place_Household">John of Gaunt of Tutbury</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1375">1374/5</date>
             <seg ana="taxon:STGRB1">STGRB1</seg></head>
           <div type="transcription" xml:id="staff-ridm46771552-transcription">
             <div>
-              <head>ff 223–3v <supplied>(26 January)</supplied></head>
+              <head>ff 223–3v <supplied>(<rs ref="eats:36237" type="Place_F_Residence">Savoy Palace</rs>, 26 January)</supplied></head>
               <pb n="223" type="folio"/>
 
               <gap reason="omitted"/>
@@ -11803,7 +11842,7 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
             <div>
-              <head>ff 223v–4 <supplied>(undated)</supplied></head>
+              <head>ff 223v–4 <supplied>(<rs ref="eats:36237" type="Place_F_Residence">Savoy Palace</rs>, undated)</supplied></head>
               <pb n="223v" type="folio"/>
 
               <gap reason="omitted"/>
@@ -11831,7 +11870,7 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
             <div>
-              <head>f 225v <supplied>(27 February)</supplied></head>
+              <head>f 225v <supplied>(<rs ref="eats:36237" type="Place_F_Residence">Savoy Palace</rs>, 27 February)</supplied></head>
               <pb n="225v" type="folio"/>
 
               <gap reason="omitted"/>
@@ -11900,6 +11939,7 @@ table. The (blank) above is the second cell of that row -->the
             </div>
           </div>
           <div type="endnote">
+            <p><rs ref="eats:298208" type="Person_Family">John of Gaunt's family by his second wife</rs>, <rs ref="eats:110546" type="Person_Female">Constance</rs>, was resident at <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>.</p>
             <p>'sire Iohan' may refer to 'sire <rs ref="http://ereed.library.utoronto.ca/eats/entity/30730/" type="Person_Gentry">Iohan
                 de Yerdeburgh</rs>,' clerk of the great wardrobe, to whom this payment order is
               addressed, or to 'sire Iohan de Lyncoln,' formerly treasurer of Gaunt's household, or
@@ -11911,12 +11951,12 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46752464">
         <body xml:lang="fra">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4080/" type="Place_Household">John of Gaunt of Tutbury</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1379">1379</date>
             <seg ana="taxon:STGRB2">STGRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46752464-transcription">
             <div>
-              <head>f 8 <supplied>(1 November)</supplied></head>
+              <head>f 8 <supplied>(Location unknown, 1 November)</supplied></head>
               <pb n="8" type="folio"/>
 
               <gap reason="omitted"/>
@@ -11949,7 +11989,7 @@ table. The (blank) above is the second cell of that row -->the
                 autres de sa condicion En tesmoignance &amp;c don<ex>ne</ex> &amp;c.</ab>
             </div>
             <div>
-              <head>f 15 <supplied>(6 November)</supplied></head>
+              <head>f 15 <supplied>(<rs ref="eats:37937" type="Place_F_Residence">Kenilworth Castle</rs>, 6 November)</supplied></head>
               <pb n="15" type="folio"/>
 
               <gap reason="omitted"/>
@@ -12036,16 +12076,19 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p><rs ref="eats:298208" type="Person_Family">John of Gaunt's family by his second wife</rs>, <rs ref="eats:110546" type="Person_Female">Constance</rs>, was resident at <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>.</p>
+          </div>
         </body>
       </text>
       <text ana="eats:98202 eats:98256 eats:98310 eats:98364 eats:98853 eats:98909 eats:98965 eats:99022 taxon:family" type="record" xml:id="staff-ridm46710736">
         <body xml:lang="fra">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4080/" type="Place_Household">John of Gaunt of Tutbury</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1380">1379/80</date>
             <seg ana="taxon:STGRB2">STGRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46710736-transcription">
             <div>
-              <head>ff 33v–4 <supplied>(2 January)</supplied></head>
+              <head>ff 33v–4 <supplied>(<rs ref="eats:37937" type="Place_F_Residence">Kenilworth Castle</rs>, 2 January)</supplied></head>
               <pb n="33v" type="folio"/>
 
               <ab><rs ref="http://ereed.library.utoronto.ca/eats/entity/13153/" type="Person_Royalty">Iohan</rs> &amp;c A n<ex>ost</ex>re tresch<ex>er</ex> et
@@ -12070,7 +12113,7 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
             <div>
-              <head>f 19v <supplied>(3 January)</supplied></head>
+              <head>f 19v <supplied>(<rs ref="eats:37937" type="Place_F_Residence">Kenilworth Castle</rs>, 3 January)</supplied></head>
               <pb n="19v" type="folio"/>
 
               <gap reason="omitted"/>
@@ -12092,7 +12135,7 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
             <div>
-              <head>f 29 <supplied>(3 January)</supplied></head>
+              <head>f 29 <supplied>(<rs ref="eats:37937" type="Place_F_Residence">Kenilworth Castle</rs>, 3 January)</supplied></head>
               <pb n="29" type="folio"/>
 
               <gap reason="omitted"/>
@@ -12118,7 +12161,7 @@ table. The (blank) above is the second cell of that row -->the
                   io<ex>ur</ex> de Ianuer lan &amp;c tierz.</ab>
             </div>
             <div>
-              <head>f 42 <supplied>(24 June)</supplied></head>
+              <head>f 42 <supplied>(<rs ref="eats:37937" type="Place_F_Residence">Kenilworth Castle</rs>, 24 June)</supplied></head>
               <pb n="42" type="folio"/>
 
               <gap reason="omitted"/>
@@ -12142,7 +12185,7 @@ table. The (blank) above is the second cell of that row -->the
                 n<ex>ost</ex>re doun tresze liures sys soldz &amp; oyt deniers<gap reason="omitted"/>.</ab>
             </div>
             <div>
-              <head>f 42v</head>
+              <head>f 42v <supplied>(<rs ref="eats:37794" type="Place_F_Residence">Hertford Castle</rs>)</supplied></head>
               <pb n="42v" type="folio"/>
 
               <ab><gap reason="omitted"/>don &amp;c a n<ex>ost</ex>re <rs ref="http://ereed.library.utoronto.ca/eats/entity/37794/" type="Place_F_Residence">Chastel de h<ex>er</ex>teford</rs> le xxiiij
@@ -12244,6 +12287,7 @@ table. The (blank) above is the second cell of that row -->the
             </div>
           </div>
           <div type="endnote">
+            <p><rs ref="eats:298208" type="Person_Family">John of Gaunt's family by his second wife</rs>, <rs ref="eats:110546" type="Person_Female">Constance</rs>, was resident at <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>.</p>
             <p>The entry on f 42 may be misdated due to the scribe's incorrect ascription of the
               regnal year, 4 Richard II (22 June 1380–21 June 1381). The date of the entry, 24 June,
               is very close to the change of regnal year, and the scribe may have incorrectly
@@ -12255,12 +12299,12 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="eats:103407 eats:103449 eats:103491 eats:103549 eats:98418 eats:98586 eats:98640 eats:98694 taxon:family" type="record" xml:id="staff-ridm46586720">
         <body xml:lang="fra">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4080/" type="Place_Household">John of Gaunt of Tutbury</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1381">1380/1</date>
             <seg ana="taxon:STGRB2">STGRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46586720-transcription">
             <div>
-              <head>f 50v <supplied>(6 March)</supplied></head>
+              <head>f 50v <supplied>(<rs ref="eats:38098" type="Place_F_Residence">Leicester Castle</rs>, 6 March)</supplied></head>
               <pb n="50v" type="folio"/>
 
               <ab><rs ref="http://ereed.library.utoronto.ca/eats/entity/13153/" type="Person_Royalty">Iohan</rs> &amp;c A n<ex>ost</ex>re tresch<ex>er</ex> et
@@ -12296,7 +12340,7 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
             <div>
-              <head> f 55v <supplied>(1 August)</supplied></head>
+              <head> f 55v <supplied>(<rs ref="eats:38098" type="Place_F_Residence">Leicester Castle</rs>, 1 August)</supplied></head>
               <pb n="55v" type="folio"/>
 
               <gap reason="omitted"/>
@@ -12318,7 +12362,7 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
             <div>
-              <head>f 57v <supplied>(4 December)</supplied></head>
+              <head>f 57v <supplied>(<rs ref="eats:300571" type="Place_F_Residence">Fulham Palace</rs>, 4 December)</supplied></head>
               <pb n="57v" type="folio"/>
 
               <gap reason="omitted"/>
@@ -12405,16 +12449,19 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p><rs ref="eats:298208" type="Person_Family">John of Gaunt's family by his second wife</rs>, <rs ref="eats:110546" type="Person_Female">Constance</rs>, was resident at <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>.</p>
+          </div>
         </body>
       </text>
       <text ana="eats:109874 eats:109928 eats:109985 eats:110039 taxon:family" type="record" xml:id="staff-ridm46514960">
         <body xml:lang="fra">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4080/" type="Place_Household">John of Gaunt of Tutbury</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1382">1381/2</date>
             <seg ana="taxon:STGRB2">STGRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46514960-transcription">
             <div>
-              <head>f 60v <supplied>(6 March)</supplied></head>
+              <head>f 60v <supplied>(<rs ref="eats:37452" type="Place_PA_Settlement">Westminster</rs>, 6 March)</supplied></head>
               <pb n="60v" type="folio"/>
 
               <ab><rs ref="http://ereed.library.utoronto.ca/eats/entity/13153/" type="Person_Royalty">Iohan</rs> &amp;c A n<ex>ost</ex>re t<ex>re</ex>same clerc
@@ -12444,7 +12491,7 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
             <div>
-              <head>f 68v <supplied>(14 December)</supplied></head>
+              <head>f 68v <supplied>(<rs ref="eats:38244" type="Place_F_Residence">Hatfield House</rs>, 14 December)</supplied></head>
               <pb n="68v" type="folio"/>
 
               <gap reason="omitted"/>
@@ -12469,7 +12516,7 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
             <div>
-              <head>f 97v <supplied>(14 December) (Warrant for payment)</supplied></head>
+              <head>f 97v <supplied>(<rs ref="eats:38244" type="Place_F_Residence">Hatfield House</rs>, 14 December) (Warrant for payment)</supplied></head>
               <pb n="97v" type="folio"/>
 
               <gap reason="omitted"/>
@@ -12551,16 +12598,19 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p><rs ref="eats:298208" type="Person_Family">John of Gaunt's family by his second wife</rs>, <rs ref="eats:110546" type="Person_Female">Constance</rs>, was resident at <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46538640">
         <body xml:lang="fra">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4080/" type="Place_Household">John of Gaunt of Tutbury</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1383">1383</date>
             <seg ana="taxon:STGRB2">STGRB2</seg></head>
           <div type="transcription" xml:id="staff-ridm46538640-transcription">
             <div>
-              <head>f 69v <supplied>(6 May)</supplied></head>
+              <head>f 69v <supplied>(Location unknown, 6 May)</supplied></head>
               <pb n="69v" type="folio"/>
 
               <gap reason="omitted"/>
@@ -12621,11 +12671,14 @@ table. The (blank) above is the second cell of that row -->the
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p><rs ref="eats:298208" type="Person_Family">John of Gaunt's family by his second wife</rs>, <rs ref="eats:110546" type="Person_Female">Constance</rs>, was resident at <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>.</p>
+          </div>
         </body>
       </text>
       <text ana="eats:100519 eats:100592 eats:100665 eats:96638 eats:96677 eats:96716 taxon:family" type="record" xml:id="staff-ridm46434528">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4098/" type="Place_Household">Paget of Burton upon Trent and Beaudesert</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>
             <date from-iso="1578" to-iso="1580">1578–80</date>
             <seg ana="taxon:STPGH1">STPGH1</seg></head>
           <div type="transcription" xml:id="staff-ridm46434528-transcription">
@@ -12640,7 +12693,7 @@ table. The (blank) above is the second cell of that row -->the
                 <row>
                   <cell>It<ex>e</ex>m<note type="marginal" place="margin_left">Iune 1579<note type="foot">1579: <hi rend="italic">underlined</hi></note>
                     </note> paid to my younge m<ex>aste</ex>r to geue vnto the <rs ref="http://ereed.library.utoronto.ca/eats/entity/33321/" type="Person_Nobility">Lo<ex>rd</ex> of Burtonn</rs> and ffor <rs ref="http://ereed.library.utoronto.ca/eats/entity/40997/" type="Thing_FoodDrink">drynke</rs> at<note type="marginal" place="margin_left">23.<note type="foot">23: 3 <hi rend="italic">written over</hi>
-                      2</note></note> the <rs ref="http://ereed.library.utoronto.ca/eats/entity/40735/" type="Entertainment_SeasonalCustom">Bonne fyer</rs> on <rs ref="http://ereed.library.utoronto.ca/eats/entity/42682/" type="CalenderDay_Secular">midsomer daye</rs> at night <del><damage><gap unit="chars" extent="3"/></damage></del></cell>
+                      2</note></note> the <rs ref="http://ereed.library.utoronto.ca/eats/entity/40735/" type="Entertainment_Custom">Bonne fyer</rs> on <rs ref="http://ereed.library.utoronto.ca/eats/entity/42682/" type="CalenderDay_Secular">midsomer daye</rs> at night <del><damage><gap unit="chars" extent="3"/></damage></del></cell>
                   <cell rend="right">vj s.</cell>
                 </row>
               </table>
@@ -12779,6 +12832,7 @@ table. The (blank) above is the second cell of that row -->the
             </div>
           </div>
           <div type="endnote">
+            <p>The <rs ref="eats:298017" type="Person_Family">Paget family</rs> was resident at <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>.</p>
             <p>On f 64v the scribe begins the calendar year, 1579, on 1 January. Compare f 71, where
               the date, 1 January 1579/80, is given.</p>
           </div>
@@ -12786,7 +12840,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46317152">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4098/" type="Place_Household">Paget of Burton upon Trent and Beaudesert</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>
             <date when-iso="1580">1579/80</date>
             <seg ana="taxon:STPGH2">STPGH2</seg></head>
           <div type="transcription" xml:id="staff-ridm46317152-transcription">
@@ -12942,11 +12996,14 @@ table. The (blank) above is the second cell of that row -->the
               </table>
             </div>
           </div>
+          <div type="endnote">
+            <p>The <rs ref="eats:298017" type="Person_Family">Paget family</rs> was resident at <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46300784">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4098/" type="Place_Household">Paget of Burton upon Trent and Beaudesert</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>
             <date when-iso="1580">1580</date>
             <seg ana="taxon:STPGH3">STPGH3</seg></head>
           <div type="transcription" xml:id="staff-ridm46300784-transcription">
@@ -12985,6 +13042,7 @@ table. The (blank) above is the second cell of that row -->the
             </div>
           </div>
           <div type="endnote">
+            <p>The <rs ref="eats:298017" type="Person_Family">Paget family</rs> was resident at <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>.</p>
             <p>‘M<ex>iste</ex>r Byrdes chamber’ presumably refers to <rs ref="http://ereed.library.utoronto.ca/eats/entity/34466/" type="Person_Commoner">William Byrd</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/34508/" type="Entertainer_Type">lutenist</rs> and composer (1539/40–1623), who is also
               mentioned on each day in guest-lists (not transcribed here) from Saturday, 6 August
               1580 to Monday, 15 August inclusive. His name occurs sometimes at supper, sometimes at
@@ -12995,7 +13053,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46180272">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4116/" type="Place_Household">Wrottesley of Wrottesley</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40181" type="Place_F_Residence">Wrottesley Hall</rs>
             <date when-iso="1617">1616/17</date>
             <seg ana="taxon:STWRLT">STWRLT</seg></head>
           <div type="transcription" xml:id="staff-ridm46180272-transcription">
@@ -13013,6 +13071,7 @@ table. The (blank) above is the second cell of that row -->the
             </div>
           </div>
           <div type="endnote">
+            <p>The <rs ref="eats:298178" type="Person_Family">Wrottesley family</rs> was resident at <rs ref="eats:40181" type="Place_F_Residence">Wrottesley Hall</rs>.</p>
             <p>Sir <rs ref="http://ereed.library.utoronto.ca/eats/entity/34657/" type="Person_Gentry">Hugh Wrottesley</rs>’s eldest son, <rs ref="http://ereed.library.utoronto.ca/eats/entity/34764/" type="Person_Gentry">Walter</rs>, was born in 1606, so he is presumably the son referred to here
               (Wrottesley, <hi rend="italic">Family of Wrottesley</hi>, p 306). At the age of 11 (or
               at most 12), Walter was undoubtedly at school, which explains why <rs ref="http://ereed.library.utoronto.ca/eats/entity/34611/" type="Person_Commoner">J.
@@ -13023,7 +13082,7 @@ table. The (blank) above is the second cell of that row -->the
       </text>
       <text ana="taxon:family" type="record" xml:id="staff-ridm46169824">
         <body xml:lang="eng">
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4116/" type="Place_Household">Wrottesley of Wrottesley</rs>
+          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40181" type="Place_F_Residence">Wrottesley Hall</rs>
             <date when-iso="1635">1635</date>
             <seg ana="taxon:STWRIN">STWRIN</seg></head>
           <div type="transcription" xml:id="staff-ridm46169824-transcription">
@@ -13040,6 +13099,9 @@ table. The (blank) above is the second cell of that row -->the
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>The <rs ref="eats:298178" type="Person_Family">Wrottesley family</rs> was resident at <rs ref="eats:40181" type="Place_F_Residence">Wrottesley Hall</rs>.</p>
           </div>
         </body>
       </text>

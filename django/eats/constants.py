@@ -103,4 +103,6 @@ XML = '{%s}' % (XML_NAMESPACE)
 EATS_NAMESPACE = 'http://eats.artefact.org.nz/ns/eatsml/'
 EATS = '{%s}' % (EATS_NAMESPACE)
 
+CIRCA_DATE_PART_TYPE_NAME = 'circa'
+FLOURISHED_DATE_PERIOD_NAME = 'flourished'
 UNNAMED_ENTITY_NAME = '[unnamed entity]'
