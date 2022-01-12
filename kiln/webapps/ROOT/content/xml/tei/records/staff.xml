@@ -993,7 +993,7 @@
     </front>
 
     <group>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm51130848">
+      <text ana="taxon:Church_Admin" type="record" xml:id="staff-ridm51130848">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/37206/" type="Place_EcclesiasticalArea">Diocese of Lichfield and Coventry</rs>
             <date when-iso="1635">1635</date>
@@ -1016,7 +1016,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:manor" type="record" xml:id="staff-ridm50946192">
+      <text ana="taxon:Manorial_Courts" type="record" xml:id="staff-ridm50946192">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1026/" type="Place_PA_Settlement">Abbots Bromley</rs>
             <date when-iso="1532">1532</date>
@@ -1062,7 +1062,7 @@
 
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm60157968">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm60157968">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1026/" type="Place_PA_Settlement">Abbots Bromley</rs>
             <date when-iso="1584">1584</date>
@@ -1084,7 +1084,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm60134368">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm60134368">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3375/" type="Place_PA_Settlement">Betley</rs>
             <date when-iso="1635">1635</date>
@@ -1171,7 +1171,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:rel_community" type="record" xml:id="staff-ridm60127840">
+      <text ana="taxon:RelCommunity_Monasteries" type="record" xml:id="staff-ridm60127840">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/" type="Place_PA_Settlement">Burton upon Trent</rs>
             <date when-iso="1259">1259</date>
@@ -1209,7 +1209,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm60068656">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm60068656">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/" type="Place_PA_Settlement">Burton upon Trent</rs>
             <date when-iso="1616">1616</date>
@@ -1263,7 +1263,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm60050432">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm60050432">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/" type="Place_PA_Settlement">Burton upon Trent</rs>
             <date when-iso="1619">1619</date>
@@ -1525,7 +1525,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm60024384">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm60024384">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3411/" type="Place_PA_Settlement">Burton upon Trent</rs>
             <date when-iso="1619">1619</date>
@@ -1637,7 +1637,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm59898448">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm59898448">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3393/" type="Place_PA_Settlement">Checkley</rs>
             <date when-iso="1631">1631</date>
@@ -1697,7 +1697,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm59879280">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm59879280">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3429/" type="Place_PA_Settlement">Drayton in Hales</rs>
             <date when-iso="1616">1616</date>
@@ -1883,7 +1883,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm59720528">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm59720528">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3612/" type="Place_PA_Settlement">Eccleshall</rs>
             <date when-iso="1537">1537</date>
@@ -1931,7 +1931,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm55415040">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm55415040">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3612/" type="Place_PA_Settlement">Eccleshall</rs>
             <date when-iso="1537">1537</date>
@@ -2019,7 +2019,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55378016">
+      <text ana="taxon:LocalGov_County" type="record" xml:id="staff-ridm55378016">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3612/" type="Place_PA_Settlement">Eccleshall</rs>
             <date when-iso="1599">1599</date>
@@ -2217,7 +2217,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55342000">
+      <text ana="taxon:LocalGov_County" type="record" xml:id="staff-ridm55342000">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3612/" type="Place_PA_Settlement">Eccleshall</rs>
             <date when-iso="1604">1604</date>
@@ -2247,7 +2247,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55212720">
+      <text ana="taxon:LocalGov_County" type="record" xml:id="staff-ridm55212720">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3612/" type="Place_PA_Settlement">Eccleshall</rs>
             <date when-iso="1604">1604</date>
@@ -2290,7 +2290,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55207360">
+      <text ana="taxon:LocalGov_County" type="record" xml:id="staff-ridm55207360">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3612/" type="Place_PA_Settlement">Eccleshall</rs>
             <date when-iso="1604">1604</date>
@@ -2324,7 +2324,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm55187152">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm55187152">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3630/" type="Place_PA_Settlement">Ellenhall</rs>
             <date when-iso="1619">1619</date>
@@ -2374,7 +2374,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55177728">
+      <text ana="taxon:LocalGov_County" type="record" xml:id="staff-ridm55177728">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3648/" type="Place_PA_Settlement">Great Fenton</rs>
             <date when-iso="1605">1605</date>
@@ -2436,7 +2436,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm55154624">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm55154624">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3666/" type="Place_PA_Settlement">Handsworth</rs>
             <date when-iso="1619">1619</date>
@@ -2600,7 +2600,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm55090384">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm55090384">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3684/" type="Place_PA_Settlement">Kinver</rs>
             <date when-iso="1620">1620</date>
@@ -2633,7 +2633,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm55069408">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm55069408">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3720/" type="Place_PA_Settlement">Leek</rs>
             <date when-iso="1631">1630/1</date>
@@ -2697,7 +2697,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm55095472">
+      <text ana="taxon:Church_Admin" type="record" xml:id="staff-ridm55095472">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date from-iso="1188" to-iso="1198">1188–98</date>
@@ -2766,7 +2766,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm55010640">
+      <text ana="taxon:Manorial_Courts" type="record" xml:id="staff-ridm55010640">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date when-iso="1306">1306</date>
@@ -2801,7 +2801,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm55009232">
+      <text ana="taxon:Church_Admin" type="record" xml:id="staff-ridm55009232">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date when-iso="1342">1342</date>
@@ -2835,7 +2835,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:manor" type="record" xml:id="staff-ridm54994976">
+      <text ana="taxon:Church_Admin" type="record" xml:id="staff-ridm54994976">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date from-iso="1420" to-iso="1421">1420–1</date>
@@ -2876,7 +2876,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:manor" type="record" xml:id="staff-ridm58425136">
+      <text ana="taxon:Church_Admin" type="record" xml:id="staff-ridm58425136">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date from-iso="1457" to-iso="1458">1457–8</date>
@@ -2920,7 +2920,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm58407920">
+      <text ana="taxon:Church_Admin" type="record" xml:id="staff-ridm58407920">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date when-iso="1522">1522</date>
@@ -3008,7 +3008,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:guild_craft" type="record" xml:id="staff-ridm55223456">
+      <text ana="taxon:Guilds_Craft" type="record" xml:id="staff-ridm55223456">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date from-iso="1562" to-iso="1563">1562–3</date>
@@ -3088,7 +3088,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:guild_craft" type="record" xml:id="staff-ridm55243472">
+      <text ana="taxon:Guilds_Craft" type="record" xml:id="staff-ridm55243472">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date from-iso="1563" to-iso="1564">1563–4</date>
@@ -3159,7 +3159,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:guild_craft" type="record" xml:id="staff-ridm58296192">
+      <text ana="taxon:Guilds_Craft" type="record" xml:id="staff-ridm58296192">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date from-iso="1564" to-iso="1565">1564–5</date>
@@ -3281,7 +3281,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:guild_craft" type="record" xml:id="staff-ridm58243184">
+      <text ana="taxon:Guilds_Craft" type="record" xml:id="staff-ridm58243184">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date from-iso="1570" to-iso="1571">1570–1</date>
@@ -3335,7 +3335,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:guild_craft" type="record" xml:id="staff-ridm58216064">
+      <text ana="taxon:Guilds_Craft" type="record" xml:id="staff-ridm58216064">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date from-iso="1574" to-iso="1575">1574–5</date>
@@ -3405,7 +3405,7 @@
           </div>
         </body>
       </text>
-      <text ana="eats:105375 eats:93485 taxon:chron_hist" type="record" xml:id="staff-ridm58197920">
+      <text ana="eats:105375 eats:93485 taxon:ChronHist_Hist" type="record" xml:id="staff-ridm58197920">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date from-iso="1575" to-iso="1576">1575–6</date>
@@ -3658,7 +3658,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:guild_craft" type="record" xml:id="staff-ridm58166816">
+      <text ana="taxon:Guilds_Craft" type="record" xml:id="staff-ridm58166816">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date from-iso="1577" to-iso="1578">1577–8</date>
@@ -3728,7 +3728,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:guild_craft" type="record" xml:id="staff-ridm58056704">
+      <text ana="taxon:Guilds_Craft" type="record" xml:id="staff-ridm58056704">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date from-iso="1598" to-iso="1599">1598–9</date>
@@ -3767,7 +3767,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm58042800">
+      <text ana="taxon:Family_Personal" type="record" xml:id="staff-ridm58042800">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date when-iso="1618">1618</date>
@@ -3791,7 +3791,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:chron_hist" type="record" xml:id="staff-ridm58033712">
+      <text ana="taxon:ChronHist_Hist" type="record" xml:id="staff-ridm58033712">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3702/" type="Place_PA_Settlement">Lichfield</rs>
             <date when-iso="1634">1634</date>
@@ -3817,7 +3817,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm58022720">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm58022720">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3738/" type="Place_PA_Settlement">Madeley</rs>
             <date when-iso="1631">1631</date>
@@ -3845,7 +3845,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm58011344">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm58011344">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3756/" type="Place_PA_Settlement">Mucklestone</rs>
             <date when-iso="1629">1629</date>
@@ -3873,7 +3873,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm57996544">
+      <text ana="taxon:Family_Estate" type="record" xml:id="staff-ridm57996544">
         <body xml:lang="fra">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3792/" type="Place_PA_Settlement">Newcastle under Lyme</rs>
             <date when-iso="1372">1372</date>
@@ -3935,7 +3935,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm57978960">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm57978960">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3792/" type="Place_PA_Settlement">Newcastle under Lyme</rs>
             <date when-iso="1610">1610</date>
@@ -3969,7 +3969,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm57964496">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm57964496">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3792/" type="Place_PA_Settlement">Newcastle under Lyme</rs>
             <date when-iso="1635">1635</date>
@@ -4018,7 +4018,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm57943536">
+      <text ana="taxon:LocalGov_County" type="record" xml:id="staff-ridm57943536">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3774/" type="Place_PA_Settlement">Norton Canes</rs>
             <date when-iso="1591">1591</date>
@@ -4102,7 +4102,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm55947584">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm55947584">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3810/" type="Place_PA_Settlement">Rowley Regis</rs>
             <date when-iso="1616">1616</date>
@@ -4149,7 +4149,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm55907584">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm55907584">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3828/" type="Place_PA_Settlement">Rushton</rs>
             <date when-iso="1631">1631</date>
@@ -4205,7 +4205,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm55885872">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm55885872">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3846/" type="Place_PA_Settlement">Shareshill</rs>
             <date when-iso="1616">1616</date>
@@ -4359,7 +4359,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55882688">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm55882688">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1528" to-iso="1529">1528–9</date>
@@ -4437,7 +4437,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55746336">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm55746336">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1528" to-iso="1529">1528–9</date>
@@ -4580,7 +4580,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55682720">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm55682720">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1574" to-iso="1575">1574–5</date>
@@ -4645,7 +4645,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm55720944">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm55720944">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date when-iso="1575">1575</date>
@@ -4673,7 +4673,7 @@
           </div>
         </body>
       </text>
-      <text ana="eats:101362 eats:101436 eats:101510 eats:101584 eats:101658 eats:101732 eats:92561 eats:92600 eats:92639 eats:92678 eats:92717 eats:92756 taxon:local_gvt" type="record" xml:id="staff-ridm55632400">
+      <text ana="eats:101362 eats:101436 eats:101510 eats:101584 eats:101658 eats:101732 eats:92561 eats:92600 eats:92639 eats:92678 eats:92717 eats:92756 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm55632400">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1609" to-iso="1610">1609–10</date>
@@ -4754,7 +4754,7 @@
           </div>
         </body>
       </text>
-      <text ana="eats:100738 eats:96160 taxon:local_gvt" type="record" xml:id="staff-ridm55599360">
+      <text ana="eats:100738 eats:96160 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm55599360">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1610" to-iso="1611">1610–11</date>
@@ -4838,7 +4838,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm55580000">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm55580000">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1610" to-iso="1611">1610–11</date>
@@ -4900,7 +4900,7 @@
           </div>
         </body>
       </text>
-      <text ana="eats:96902 eats:96941 eats:99879 eats:99937 taxon:local_gvt" type="record" xml:id="staff-ridm55547440">
+      <text ana="eats:96902 eats:96941 eats:99879 eats:99937 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm55547440">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1611" to-iso="1612">1611–12</date>
@@ -4998,7 +4998,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm55526752">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm55526752">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1611" to-iso="1612">1611–12</date>
@@ -5159,7 +5159,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:108988 eats:94183 taxon:local_gvt" type="record" xml:id="staff-ridm59337824">
+      <text ana="eats:108988 eats:94183 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm59337824">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1612" to-iso="1613">1612–13</date>
@@ -5214,7 +5214,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm59317200">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm59317200">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1612" to-iso="1613">1612–13</date>
@@ -5244,7 +5244,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm59305408">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm59305408">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date when-iso="1614">1614</date>
@@ -5297,7 +5297,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:101025 eats:101103 eats:101201 eats:96517 eats:96556 eats:96595 taxon:family" type="record" xml:id="staff-ridm59296240">
+      <text ana="eats:101025 eats:101103 eats:101201 eats:96517 eats:96556 eats:96595 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm59296240">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1614" to-iso="1615">1614–15</date>
@@ -5345,7 +5345,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:97034 eats:99731 taxon:family" type="record" xml:id="staff-ridm59270720">
+      <text ana="eats:97034 eats:99731 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm59270720">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1615" to-iso="1616">1615–16</date>
@@ -5400,7 +5400,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm59257952">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm59257952">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1616" to-iso="1617">1616–17</date>
@@ -6010,7 +6010,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:100181 eats:100239 eats:95974 eats:96028 taxon:local_gvt" type="record" xml:id="staff-ridm58923280">
+      <text ana="eats:100181 eats:100239 eats:95974 eats:96028 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm58923280">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1618" to-iso="1619">1618–19</date>
@@ -6068,7 +6068,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm58880672">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm58880672">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1618" to-iso="1619">1618–19</date>
@@ -6113,7 +6113,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:109236 eats:109310 eats:109368 eats:95554 eats:95608 eats:95647 taxon:local_gvt" type="record" xml:id="staff-ridm58862432">
+      <text ana="eats:109236 eats:109310 eats:109368 eats:95554 eats:95608 eats:95647 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm58862432">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1619" to-iso="1620">1619–20</date>
@@ -6173,7 +6173,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm58836288">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm58836288">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1619" to-iso="1620">1619–20</date>
@@ -6219,7 +6219,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:100065 eats:100123 eats:96755 eats:96809 taxon:local_gvt" type="record" xml:id="staff-ridm53673392">
+      <text ana="eats:100065 eats:100123 eats:96755 eats:96809 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53673392">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1620" to-iso="1621">1620–1</date>
@@ -6298,7 +6298,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:101852 eats:101942 eats:102016 eats:102986 eats:103060 eats:103134 eats:89519 eats:89572 eats:89610 eats:89648 eats:89686 eats:89840 taxon:local_gvt" type="record" xml:id="staff-ridm53641456">
+      <text ana="eats:101852 eats:101942 eats:102016 eats:102986 eats:103060 eats:103134 eats:89519 eats:89572 eats:89610 eats:89648 eats:89686 eats:89840 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53641456">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1621" to-iso="1622">1621–2</date>
@@ -6379,7 +6379,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm53607136">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53607136">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1621" to-iso="1622">1621–2</date>
@@ -6418,7 +6418,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:103887 eats:103945 eats:104003 eats:88801 eats:88858 eats:88911 taxon:local_gvt" type="record" xml:id="staff-ridm53596544">
+      <text ana="eats:103887 eats:103945 eats:104003 eats:88801 eats:88858 eats:88911 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53596544">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1622" to-iso="1623">1622–3</date>
@@ -6515,7 +6515,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm53574208">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53574208">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1622" to-iso="1623">1622–3</date>
@@ -6578,7 +6578,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53548784">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53548784">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1623" to-iso="1625">1623–5</date>
@@ -6621,7 +6621,7 @@ table. The (blank) above is the second cell of that row -->the
 
         </body>
       </text>
-      <text ana="eats:106023 eats:106081 eats:106139 eats:93632 eats:93686 eats:93740 taxon:local_gvt" type="record" xml:id="staff-ridm53531024">
+      <text ana="eats:106023 eats:106081 eats:106139 eats:93632 eats:93686 eats:93740 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53531024">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1626" to-iso="1627">1626–7</date>
@@ -6716,7 +6716,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm53488656">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53488656">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1626" to-iso="1627">1626–7</date>
@@ -6756,7 +6756,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:111421 eats:111479 eats:93795 eats:93834 taxon:local_gvt" type="record" xml:id="staff-ridm53470112">
+      <text ana="eats:111421 eats:111479 eats:93795 eats:93834 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53470112">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1627" to-iso="1628">1627–8</date>
@@ -6826,7 +6826,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53436976">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53436976">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1628" to-iso="1629">1628–9</date>
@@ -6855,7 +6855,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm53425888">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53425888">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1628" to-iso="1629">1628–9</date>
@@ -6880,7 +6880,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:109742 eats:109816 eats:95857 eats:95896 taxon:local_gvt" type="record" xml:id="staff-ridm53415712">
+      <text ana="eats:109742 eats:109816 eats:95857 eats:95896 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53415712">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1629" to-iso="1630">1629–30</date>
@@ -6982,7 +6982,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm53369488">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53369488">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1629" to-iso="1630">1629–30</date>
@@ -7023,7 +7023,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53354256">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53354256">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1630" to-iso="1631">1630–1</date>
@@ -7090,7 +7090,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm53333072">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53333072">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1630" to-iso="1631">1630–1</date>
@@ -7115,7 +7115,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:108708 eats:94012 taxon:local_gvt" type="record" xml:id="staff-ridm53318592">
+      <text ana="eats:108708 eats:94012 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53318592">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1631" to-iso="1632">1631–2</date>
@@ -7179,7 +7179,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm53294400">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53294400">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1631" to-iso="1632">1631–2</date>
@@ -7217,7 +7217,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:108766 eats:94051 taxon:local_gvt" type="record" xml:id="staff-ridm53280384">
+      <text ana="eats:108766 eats:94051 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53280384">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1632" to-iso="1633">1632–3</date>
@@ -7265,7 +7265,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm53264208">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53264208">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1632" to-iso="1633">1632–3</date>
@@ -7294,7 +7294,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:104119 eats:104193 eats:92795 eats:92849 taxon:local_gvt" type="record" xml:id="staff-ridm53249520">
+      <text ana="eats:104119 eats:104193 eats:92795 eats:92849 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53249520">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1633" to-iso="1634">1633–4</date>
@@ -7385,7 +7385,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm53221328">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53221328">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1633" to-iso="1634">1633–4</date>
@@ -7421,7 +7421,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:104251 eats:92888 taxon:church" type="record" xml:id="staff-ridm53208768">
+      <text ana="eats:104251 eats:92888 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53208768">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1634" to-iso="1635">1634–5</date>
@@ -7502,7 +7502,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm53179872">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53179872">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1634" to-iso="1635">1634–5</date>
@@ -7539,7 +7539,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53166880">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53166880">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1635" to-iso="1636">1635–6</date>
@@ -7586,7 +7586,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm53133968">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53133968">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1635" to-iso="1636">1635–6</date>
@@ -7618,7 +7618,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53125424">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53125424">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1636" to-iso="1637">1636–7</date>
@@ -7664,7 +7664,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm53113360">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53113360">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1636" to-iso="1637">1636–7</date>
@@ -7693,7 +7693,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53095088">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53095088">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1637" to-iso="1638">1637–8</date>
@@ -7727,7 +7727,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm53081456">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53081456">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1638" to-iso="1639">1638–9</date>
@@ -7761,7 +7761,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53071232">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53071232">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1639" to-iso="1640">1639–40</date>
@@ -7791,7 +7791,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53059120">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53059120">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1640" to-iso="1641">1640–1</date>
@@ -7845,7 +7845,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm53042768">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm53042768">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1309/" type="Place_PA_Settlement">Stafford</rs>
             <date from-iso="1641" to-iso="1642">1641–2</date>
@@ -8015,7 +8015,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm53021760">
+      <text ana="taxon:Family_Estate" type="record" xml:id="staff-ridm53021760">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3864/" type="Place_PA_Settlement">Statfold</rs>
             <date when-iso="1539">1538/9</date>
@@ -8053,7 +8053,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm52961792">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm52961792">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3882/" type="Place_PA_Settlement">Stone</rs>
             <date when-iso="1614">1614</date>
@@ -8085,7 +8085,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm52949040">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm52949040">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3900/" type="Place_PA_Settlement">Tamworth</rs>
             <date when-iso="1537">1536/7</date>
@@ -8124,7 +8124,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm58896080">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm58896080">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3900/" type="Place_PA_Settlement">Tamworth</rs>
             <date when-iso="1537">1536/7</date>
@@ -8192,7 +8192,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm52887952">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm52887952">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3900/" type="Place_PA_Settlement">Tamworth</rs>
             <date when-iso="1537">1536/7</date>
@@ -8232,7 +8232,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm52869792">
+      <text ana="taxon:CentralGov_Royal" type="record" xml:id="staff-ridm52869792">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1044/" type="Place_PA_Settlement">Tutbury</rs>
             <date from-iso="1314" to-iso="1315">1314–15</date>
@@ -8265,7 +8265,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm52854080">
+      <text ana="taxon:CentralGov_Royal" type="record" xml:id="staff-ridm52854080">
         <body xml:lang="fra">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1380">1380</date>
@@ -8328,7 +8328,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>  
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm52835712">
+      <text ana="taxon:ChronHist_Hist" type="record" xml:id="staff-ridm52835712">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1044/" type="Place_PA_Settlement">Tutbury</rs>
             <date when-iso="1382">1382</date>
@@ -8378,7 +8378,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm52791120">
+      <text ana="taxon:CentralGov_Royal" type="record" xml:id="staff-ridm52791120">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1044/" type="Place_PA_Settlement">Tutbury</rs>
             <date from-iso="1558" to-iso="1559">1558–9</date>
@@ -8433,7 +8433,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm52771328">
+      <text ana="taxon:ChronHist_Hist" type="record" xml:id="staff-ridm52771328">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1044/" type="Place_PA_Settlement">Tutbury</rs>
             <date from-iso="1617" to-iso="1630">1617–30</date>
@@ -8661,7 +8661,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm52758688">
+      <text ana="taxon:CentralGov_Royal" type="record" xml:id="staff-ridm52758688">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1044/" type="Place_PA_Settlement">Tutbury</rs>
             <date when-iso="1618">1618</date>
@@ -8817,7 +8817,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm52564592">
+      <text ana="taxon:CentralGov_Royal" type="record" xml:id="staff-ridm52564592">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1044/" type="Place_PA_Settlement">Tutbury</rs>
             <date when-iso="1629">1629</date>
@@ -8993,7 +8993,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm52471456">
+      <text ana="taxon:CentralGov_Royal" type="record" xml:id="staff-ridm52471456">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1044/" type="Place_PA_Settlement">Tutbury</rs>
             <date when-iso="1631">1631</date>
@@ -9027,7 +9027,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm52179392">
+      <text ana="taxon:CentralGov_Royal" type="record" xml:id="staff-ridm52179392">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1044/" type="Place_PA_Settlement">Tutbury</rs>
             <date when-iso="1631">1631</date>
@@ -9081,7 +9081,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm52159888">
+      <text ana="taxon:CentralGov_Royal" type="record" xml:id="staff-ridm52159888">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/1044/" type="Place_PA_Settlement">Tutbury</rs>
             <date when-iso="1637">1637</date>
@@ -9132,7 +9132,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm52120192">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm52120192">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3918/" type="Place_PA_Settlement">Uttoxeter</rs>
             <date when-iso="1616">1616</date>
@@ -9360,7 +9360,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm52100656">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm52100656">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3918/" type="Place_PA_Settlement">Uttoxeter</rs>
             <date when-iso="1616">1616</date>
@@ -9409,7 +9409,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:manor" type="record" xml:id="staff-ridm52048128">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm52048128">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3990/" type="Place_PA_Manor">Wall</rs>
             <date from-iso="1448" to-iso="1449">1448–9</date>
@@ -9453,7 +9453,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm52164576">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm52164576">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1494" to-iso="1495">1494–5</date>
@@ -9498,7 +9498,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm51915856">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm51915856">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date when-iso="1498">1498</date>
@@ -9618,7 +9618,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm51825312">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm51825312">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date when-iso="1499">1499</date>
@@ -9682,7 +9682,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm51801568">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm51801568">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date when-iso="1499">1499</date>
@@ -9733,7 +9733,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm51753488">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm51753488">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date when-iso="1499">1499</date>
@@ -9797,7 +9797,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:central_gvt" type="record" xml:id="staff-ridm51692304">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="staff-ridm51692304">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date when-iso="1499">1499</date>
@@ -9870,7 +9870,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51674688">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51674688">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1594" to-iso="1595">1594–5</date>
@@ -9895,7 +9895,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:96995 eats:99805 taxon:local_gvt" type="record" xml:id="staff-ridm51620368">
+      <text ana="eats:96995 eats:99805 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51620368">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1611" to-iso="1612">1611–12</date>
@@ -9919,7 +9919,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51609664">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51609664">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1618" to-iso="1619">1618–19</date>
@@ -9941,7 +9941,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51600448">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51600448">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1620" to-iso="1621">1620–1</date>
@@ -9975,7 +9975,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:109664 eats:95818 taxon:local_gvt" type="record" xml:id="staff-ridm51586400">
+      <text ana="eats:109664 eats:95818 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51586400">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1623" to-iso="1624">1623–4</date>
@@ -9999,7 +9999,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:100007 eats:96863 taxon:local_gvt" type="record" xml:id="staff-ridm51568528">
+      <text ana="eats:100007 eats:96863 taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51568528">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1624" to-iso="1625">1624–5</date>
@@ -10023,7 +10023,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51558832">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51558832">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1629" to-iso="1630">1629–30</date>
@@ -10078,7 +10078,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51539728">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51539728">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1630" to-iso="1631">1630–1</date>
@@ -10149,7 +10149,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51502176">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51502176">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1631" to-iso="1632">1631–2</date>
@@ -10194,7 +10194,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51481312">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51481312">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1632" to-iso="1633">1632–3</date>
@@ -10239,7 +10239,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51466240">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51466240">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1633" to-iso="1634">1633–4</date>
@@ -10265,7 +10265,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51449152">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51449152">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1634" to-iso="1635">1634–5</date>
@@ -10307,7 +10307,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51430176">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51430176">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1635" to-iso="1636">1635–6</date>
@@ -10349,7 +10349,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51413664">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51413664">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1636" to-iso="1637">1636–7</date>
@@ -10399,7 +10399,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51395120">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51395120">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1639" to-iso="1640">1639–40</date>
@@ -10425,7 +10425,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51384064">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51384064">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1640" to-iso="1641">1640–1</date>
@@ -10450,7 +10450,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51371680">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="staff-ridm51371680">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3936/" type="Place_PA_Settlement">Walsall</rs>
             <date from-iso="1641" to-iso="1642">1641–2</date>
@@ -10476,7 +10476,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm51358336">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm51358336">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3972/" type="Place_PA_Settlement">Wednesbury</rs>
             <date when-iso="1623">1623</date>
@@ -10500,7 +10500,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm51350672">
+      <text ana="taxon:Church_Courts" type="record" xml:id="staff-ridm51350672">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3972/" type="Place_PA_Settlement">Wednesbury</rs>
             <date when-iso="1635">1635</date>
@@ -10550,7 +10550,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:local_gvt" type="record" xml:id="staff-ridm51335072">
+      <text ana="taxon:LocalGov_County" type="record" xml:id="staff-ridm51335072">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/3954/" type="Place_PA_Settlement">West Bromwich</rs>
             <date when-iso="1611">1611</date>
@@ -10592,7 +10592,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm51315136">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm51315136">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1521" to-iso="1522">1521–2</date>
@@ -10617,7 +10617,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm51292912">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm51292912">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1522" to-iso="1523">1522–3</date>
@@ -10642,7 +10642,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm51281216">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm51281216">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1523" to-iso="1524">1523–4</date>
@@ -10667,7 +10667,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm51270816">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm51270816">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1526" to-iso="1527">1526–7</date>
@@ -10698,7 +10698,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm51260832">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm51260832">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1527" to-iso="1528">1527–8</date>
@@ -10725,7 +10725,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm51250176">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm51250176">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1528" to-iso="1529">1528–9</date>
@@ -10755,7 +10755,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm51237536">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm51237536">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1529" to-iso="1530">1529–30</date>
@@ -10826,7 +10826,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm47175008">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm47175008">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1532" to-iso="1533">1532-3</date>
@@ -10872,7 +10872,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm47160752">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm47160752">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1533" to-iso="1534">1533–4</date>
@@ -10900,7 +10900,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm47150832">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm47150832">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1534" to-iso="1535">1534–5</date>
@@ -10925,7 +10925,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm47141456">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm47141456">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1536" to-iso="1537">1536–7</date>
@@ -10950,7 +10950,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm47131296">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm47131296">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1537" to-iso="1538">1537–8</date>
@@ -10975,7 +10975,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm47121200">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm47121200">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1539" to-iso="1540">1539–40</date>
@@ -11000,7 +11000,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm47111040">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm47111040">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1540" to-iso="1541">1540–1</date>
@@ -11031,7 +11031,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm47100896">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm47100896">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4008/" type="Place_PA_Settlement">Wolverhampton</rs>
             <date from-iso="1546" to-iso="1547">1546–7</date>
@@ -11067,7 +11067,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:manor" type="record" xml:id="staff-ridm47090880">
+      <text ana="taxon:Manorial_Courts" type="record" xml:id="staff-ridm47090880">
         <body xml:lang="lat">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4026/" type="Place_BoroughParish">Yoxall</rs>
             <date when-iso="1500">1500</date>
@@ -11099,7 +11099,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm51592784">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm51592784">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4026/" type="Place_BoroughParish">Yoxall</rs>
             <date from-iso="1542" to-iso="1543">1542–3</date>
@@ -11149,7 +11149,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm47056032">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm47056032">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4026/" type="Place_BoroughParish">Yoxall</rs>
             <date from-iso="1543" to-iso="1544">1543–4</date>
@@ -11174,7 +11174,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm47034864">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm47034864">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4026/" type="Place_BoroughParish">Yoxall</rs>
             <date from-iso="1544" to-iso="1545">1544–5</date>
@@ -11207,7 +11207,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm47024768">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm47024768">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4026/" type="Place_BoroughParish">Yoxall</rs>
             <date from-iso="1546" to-iso="1547">1546–7</date>
@@ -11279,7 +11279,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:church" type="record" xml:id="staff-ridm46992912">
+      <text ana="taxon:Church_Parish" type="record" xml:id="staff-ridm46992912">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/4026/" type="Place_BoroughParish">Yoxall</rs>
             <date from-iso="1547" to-iso="1548">1547–8</date>
@@ -11305,7 +11305,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm46982304">
+      <text ana="taxon:Family_Household" type="record" xml:id="staff-ridm46982304">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40200" type="Place_F_Residence">Blithfield Hall</rs>
             <date when-iso="1613">1613</date>
@@ -11344,7 +11344,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:100387 eats:100445 eats:96121 taxon:family" type="record" xml:id="staff-ridm46968400">
+      <text ana="eats:100387 eats:100445 eats:96121 taxon:Family_Household" type="record" xml:id="staff-ridm46968400">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40200" type="Place_F_Residence">Blithfield Hall</rs>
             <date when-iso="1615">1615</date>
@@ -11373,7 +11373,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>        
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm46957440">
+      <text ana="taxon:Family_Household" type="record" xml:id="staff-ridm46957440">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40200" type="Place_F_Residence">Blithfield Hall</rs>
             <date when-iso="1619">1619</date>
@@ -11405,7 +11405,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm46944768">
+      <text ana="taxon:Family_Personal" type="record" xml:id="staff-ridm46944768">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37648" type="Place_F_Residence">Drayton Basset</rs>
             <date from-iso="1622" to-iso="1623">1622–3</date>
@@ -11437,7 +11437,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm46934096">
+      <text ana="taxon:Family_Household" type="record" xml:id="staff-ridm46934096">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:297979" type="Place_F_Residence">Tamworth Castle</rs>
             <date when-iso="1605">1605</date>
@@ -11512,7 +11512,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm46913456">
+      <text ana="taxon:Family_Household" type="record" xml:id="staff-ridm46913456">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:297979" type="Place_F_Residence">Tamworth Castle</rs>
             <date from-iso="1601" to-iso="1700">17th Century</date>
@@ -11541,7 +11541,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>         
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm46888688">
+      <text ana="taxon:CentralGov_Royal" type="record" xml:id="staff-ridm46888688">
         <body xml:lang="fra">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1372">1371/2</date>
@@ -11603,7 +11603,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm46867952">
+      <text ana="taxon:CentralGov_Royal" type="record" xml:id="staff-ridm46867952">
         <body xml:lang="fra">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1373">1373</date>
@@ -11725,7 +11725,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm51673280">
+      <text ana="taxon:CentralGov_Royal" type="record" xml:id="staff-ridm51673280">
         <body xml:lang="fra">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1374">1374</date>
@@ -11819,7 +11819,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:103215 eats:103273 eats:98472 eats:98527 taxon:family" type="record" xml:id="staff-ridm46771552">
+      <text ana="eats:103215 eats:103273 eats:98472 eats:98527 taxon:CentralGov_Royal" type="record" xml:id="staff-ridm46771552">
         <body xml:lang="fra">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1375">1374/5</date>
@@ -11949,7 +11949,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm46752464">
+      <text ana="taxon:CentralGov_Royal" type="record" xml:id="staff-ridm46752464">
         <body xml:lang="fra">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1379">1379</date>
@@ -12081,7 +12081,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:98202 eats:98256 eats:98310 eats:98364 eats:98853 eats:98909 eats:98965 eats:99022 taxon:family" type="record" xml:id="staff-ridm46710736">
+      <text ana="eats:98202 eats:98256 eats:98310 eats:98364 eats:98853 eats:98909 eats:98965 eats:99022 taxon:CentralGov_Royal" type="record" xml:id="staff-ridm46710736">
         <body xml:lang="fra">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1380">1379/80</date>
@@ -12297,7 +12297,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:103407 eats:103449 eats:103491 eats:103549 eats:98418 eats:98586 eats:98640 eats:98694 taxon:family" type="record" xml:id="staff-ridm46586720">
+      <text ana="eats:103407 eats:103449 eats:103491 eats:103549 eats:98418 eats:98586 eats:98640 eats:98694 taxon:CentralGov_Royal" type="record" xml:id="staff-ridm46586720">
         <body xml:lang="fra">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1381">1380/1</date>
@@ -12454,7 +12454,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:109874 eats:109928 eats:109985 eats:110039 taxon:family" type="record" xml:id="staff-ridm46514960">
+      <text ana="eats:109874 eats:109928 eats:109985 eats:110039 taxon:CentralGov_Royal" type="record" xml:id="staff-ridm46514960">
         <body xml:lang="fra">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1382">1381/2</date>
@@ -12603,7 +12603,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm46538640">
+      <text ana="taxon:CentralGov_Royal" type="record" xml:id="staff-ridm46538640">
         <body xml:lang="fra">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:37265" type="Place_F_Residence">Tutbury Castle</rs>
             <date when-iso="1383">1383</date>
@@ -12676,7 +12676,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="eats:100519 eats:100592 eats:100665 eats:96638 eats:96677 eats:96716 taxon:family" type="record" xml:id="staff-ridm46434528">
+      <text ana="eats:100519 eats:100592 eats:100665 eats:96638 eats:96677 eats:96716 taxon:Family_Household" type="record" xml:id="staff-ridm46434528">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>
             <date from-iso="1578" to-iso="1580">1578–80</date>
@@ -12838,7 +12838,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm46317152">
+      <text ana="taxon:Family_Household" type="record" xml:id="staff-ridm46317152">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>
             <date when-iso="1580">1579/80</date>
@@ -13001,7 +13001,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm46300784">
+      <text ana="taxon:Family_Estate" type="record" xml:id="staff-ridm46300784">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40000" type="Place_F_Residence">Burton Manor</rs>
             <date when-iso="1580">1580</date>
@@ -13051,7 +13051,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm46180272">
+      <text ana="taxon:Family_Personal" type="record" xml:id="staff-ridm46180272">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40181" type="Place_F_Residence">Wrottesley Hall</rs>
             <date when-iso="1617">1616/17</date>
@@ -13080,7 +13080,7 @@ table. The (blank) above is the second cell of that row -->the
           </div>
         </body>
       </text>
-      <text ana="taxon:family" type="record" xml:id="staff-ridm46169824">
+      <text ana="taxon:Family_Estate" type="record" xml:id="staff-ridm46169824">
         <body xml:lang="eng">
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1008/" type="Place_County">Staffordshire</rs>, <rs ref="eats:40181" type="Place_F_Residence">Wrottesley Hall</rs>
             <date when-iso="1635">1635</date>
