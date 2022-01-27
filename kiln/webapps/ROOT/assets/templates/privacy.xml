@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <kiln:parent>
+    <xi:include href="base.xml"/>
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title">
+      <kiln:super/>
+      <xsl:text>Online Privacy and Data Collection</xsl:text>
+    </kiln:block>
+
+    <kiln:block name="content">
+      <div class="content no-hero contact white-bg"><!--#CB: replace 'contact' here?-->
+        <div class="row">
+          <div class="column medium-9">
+            <h1>Online Privacy and Data Collection</h1>
+            <div class="text">
+              <p>We use data gathered by <a href="http://www.google.com/analytics/">Google Analytics</a> to ensure that the site is meeting your
+                needs, and to see where there is room for improvement. All user data that we receive
+                is completely anonymous. However, your domain name or IP address may identify you
+                depending on the naming standards followed by your Internet service provider. You
+                may wish to ask them about their policies and practices.</p>
+
+              <p>We use Google Analytics to track how you use this website, including information
+                about:</p>
+              <ul>
+                <li><p>How long you stay on the site</p></li>
+                <li><p>What search terms you use on the site</p></li>
+                <li><p>Which, and how many, pages you visit while you’re on the site</p></li>
+                <li><p>What page you’re on when you decide to leave the site</p></li>
+              </ul>
+
+              <p>If you don’t want Google Analytics to record how you use our website, you can opt
+                out by using this <a href="https://tools.google.com/dlpage/gaoptout">browser
+                  extension</a> or setting your browser to private mode.</p>
+              <hr/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </kiln:block>
+  </kiln:child>
+
+</kiln:root>

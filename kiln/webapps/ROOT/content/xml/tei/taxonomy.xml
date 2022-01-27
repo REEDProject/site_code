@@ -136,35 +136,143 @@
                     </category>
                     <category xml:id="record_types">
                         <catDesc>Record types</catDesc>
-                        <category xml:id="central_gvt">
-                            <catDesc>central government and royal</catDesc>
+                        <category xml:id="CentralGov">
+                            <catDesc>central government</catDesc>
+                            <category xml:id="CentralGov_Parliament">
+                                <catDesc>Parliament</catDesc>
+                            </category>
+                            <category xml:id="CentralGov_CNorth">
+                                <catDesc>Council of the North</catDesc>
+                            </category>
+                            <category xml:id="CentralGov_Courts">
+                                <catDesc>Courts of Law</catDesc>
+                            </category>
+                            <category xml:id="CentralGov_Royal">
+                                <catDesc>Royal</catDesc>
+                            </category>
+                            <category xml:id="CentralGov_PC">
+                                <catDesc>Privy Council</catDesc>
+                            </category>
                         </category>
-                        <category xml:id="local_gvt">
-                            <catDesc>local government</catDesc>
+                        <category xml:id="ChronHist">
+                            <catDesc>Chronicles and Histories</catDesc>
+                            <category xml:id="ChronHist_Chron">
+                                <catDesc>Chronicles</catDesc>
+                            </category>
+                            <category xml:id="ChronHist_Hist">
+                                <catDesc>Historiography</catDesc>
+                            </category>
                         </category>
-                        <category xml:id="church">
-                            <catDesc>church</catDesc>
+                        <category xml:id="Church">
+                            <catDesc>Church Records</catDesc>
+                            <category xml:id="Church_Admin">
+                                <catDesc>Archdiocesan/Diocesan Administration</catDesc>
+                            </category>
+                            <category xml:id="Church_Courts">
+                                <catDesc>Ecclesiastical Courts</catDesc>
+                            </category>
+                            <category xml:id="Church_Parish">
+                                <catDesc>Parish</catDesc>
+                            </category>            
                         </category>
-                        <category xml:id="education">
-                            <catDesc>educational institution</catDesc>
+                        <category xml:id="Education">
+                            <catDesc>Educational Institution</catDesc>
+                            <category xml:id="Education_Schools">
+                                <catDesc>Schools</catDesc>
+                            </category>
+                            <category xml:id="Education_Universities">
+                                <catDesc>Universities</catDesc>
+                            </category>
+                            <category xml:id="Education_IoC">
+                                <catDesc>Inns of Court</catDesc>
+                            </category>
                         </category>
-                        <category xml:id="guild_craft">
-                            <catDesc>guild, craft/trade</catDesc>
+                        <category xml:id="Family">
+                            <catDesc>Family</catDesc>
+                            <category xml:id="Family_Household">
+                                <catDesc>Household</catDesc>
+                            </category>
+                            <category xml:id="Family_Personal">
+                                <catDesc>Personal</catDesc>
+                            </category>
+                            <category xml:id="Family_Estate">
+                                <catDesc>Estate</catDesc>
+                            </category>
                         </category>
-                        <category xml:id="guild_rel">
-                            <catDesc>guild, religious</catDesc>
+                        <category xml:id="Guilds">
+                            <catDesc>Guilds</catDesc>
+                            <category xml:id="Guilds_Craft">
+                                <catDesc>Craft/Trade Guilds</catDesc>
+                            </category>
+                            <category xml:id="Guilds_Rel">
+                                <catDesc>Religious Guilds</catDesc>
+                            </category>
                         </category>
-                        <category xml:id="rel_community">
-                            <catDesc>religious community</catDesc>
+                        <category xml:id="LocalGov">
+                            <catDesc>Local Government</catDesc>
+                            <category xml:id="LocalGov_BoroughCity">
+                                <catDesc>Borough/City</catDesc>
+                            </category>
+                            <category xml:id="LocalGov_County">
+                                <catDesc>County</catDesc>
+                            </category>
+                            <category xml:id="LocalGov_CivilParish">
+                                <catDesc>Civil Parish</catDesc>
+                            </category>
                         </category>
-                        <category xml:id="manor">
-                            <catDesc>manorial</catDesc>
+                        <category xml:id="Manorial">
+                            <catDesc>Manorial</catDesc>
+                            <category xml:id="Manorial_Courts">
+                                <catDesc>Courts</catDesc>
+                            </category>
+                            <category xml:id="Manorial_Accounts">
+                                <catDesc>Accounts</catDesc>
+                            </category>
                         </category>
-                        <category xml:id="family">
-                            <catDesc>family</catDesc>
+                        <category xml:id="Playhouse">
+                            <catDesc>Playhouses</catDesc>
+                            <category xml:id="Playhouse_Inventories">
+                                <catDesc>Inventories</catDesc>
+                            </category>
+                            <category xml:id="Playhouse_Advertisements">
+                                <catDesc>Advertisements</catDesc>
+                            </category>
+                            <category xml:id="Playhouse_Memoranda">
+                                <catDesc>Memoranda</catDesc>
+                            </category>
                         </category>
-                        <category xml:id="chron_hist">
-                            <catDesc>chronicles and histories</catDesc>
+                        <category xml:id="RelCommunity">
+                            <catDesc>Religious Community</catDesc>
+                            <category xml:id="RelCommunity_Monasteries">
+                                <catDesc>Monasteries</catDesc>
+                            </category>
+                            <category xml:id="RelCommunity_Nunneries">
+                                <catDesc>Nunneires</catDesc>
+                            </category>
+                            <category xml:id="RelCommunity_Friaries">
+                                <catDesc>Friaries</catDesc>
+                            </category>        
+                        </category>
+                        <category xml:id="SocLit">
+                            <catDesc>Social Commentary/Literary Works</catDesc>
+                            <category xml:id="SocLit_Drama">
+                                <catDesc>Drama</catDesc>
+                            </category>
+                            <category xml:id="SocLit_Entertainments">
+                                <catDesc>Entertainments</catDesc>
+                            </category>
+                            <category xml:id="SocLit_Essays">
+                                <catDesc>Essays</catDesc>
+                            </category>
+                            <category xml:id="SocLit_Poetry">
+                                <catDesc>Poetry</catDesc>
+                            </category>
+                            <category xml:id="SocLit_Satire">
+                                <catDesc>Satire</catDesc>
+                            </category>
+                            <category xml:id="SocLit_Sermons">
+                                <catDesc>Sermons</catDesc>
+                            </category>
                         </category>
                     </category>
                     <category xml:id="repositories">
