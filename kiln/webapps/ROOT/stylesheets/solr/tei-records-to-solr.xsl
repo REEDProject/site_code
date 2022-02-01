@@ -158,9 +158,60 @@
   </xsl:template>
 
   <xsl:template match="tei:term" mode="record_type">
-    <field name="facet_record_type">
-      <xsl:value-of select="normalize-space()" />
-    </field>
+    <!-- This parcelling of values into different fields based on the
+         value is a hack; it should be done via the hierarchy
+         expressed in the record_types category in
+         taxonomy.xml. However, that information is not present at
+         this point in processing, so a more wide-reaching code change
+         is required. -->
+    <xsl:variable name="value" select="normalize-space()" />
+    <xsl:variable name="field_name">
+      <xsl:text>facet_record_type_</xsl:text>
+      <xsl:choose>
+        <xsl:when test="$value = ('Parliament', 'Council of the North', 'Courts of Law', 'Royal', 'Privy Council')">
+          <xsl:text>central_gov</xsl:text>
+        </xsl:when>
+        <xsl:when test="$value = ('Chronicles', 'Historiography')">
+          <xsl:text>chronicles</xsl:text>
+        </xsl:when>
+        <xsl:when test="$value = ('Archdiocesan/Diocesan Administration', 'Ecclesiastical Courts', 'Parish')">
+          <xsl:text>church</xsl:text>
+        </xsl:when>
+        <xsl:when test="$value = ('Schools', 'Universities', 'Inns of Court')">
+          <xsl:text>education</xsl:text>
+        </xsl:when>
+        <xsl:when test="$value = ('Household', 'Personal', 'Estate')">
+          <xsl:text>family</xsl:text>
+        </xsl:when>
+        <xsl:when test="$value = ('Craft/Trade Guilds', 'Religious Guilds')">
+          <xsl:text>guild</xsl:text>
+        </xsl:when>
+        <xsl:when test="$value = ('Borough/City', 'County', 'Civil Parish')">
+          <xsl:text>local_gov</xsl:text>
+        </xsl:when>
+        <xsl:when test="$value = ('Accounts', 'Courts')">
+          <xsl:text>manorial</xsl:text>
+        </xsl:when>
+        <xsl:when test="$value = ('Inventories', 'Advertisements', 'Memoranda')">
+          <xsl:text>playhouse</xsl:text>
+        </xsl:when>
+        <xsl:when test="$value = ('Monasteries', 'Nunneries', 'Friaries')">
+          <xsl:text>rel_community</xsl:text>
+        </xsl:when>
+        <xsl:when test="$value = ('Drama', 'Entertainments', 'Essays',
+                                  'Poetry', 'Satire', 'Sermons')">
+          <xsl:text>soc_lit</xsl:text>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="$value" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:if test="$value">
+      <field name="{$field_name}">
+        <xsl:value-of select="$value" />
+      </field>
+    </xsl:if>
   </xsl:template>
 
   <!-- Used for the entity reference tool in the Oxygen EATS plugin. -->

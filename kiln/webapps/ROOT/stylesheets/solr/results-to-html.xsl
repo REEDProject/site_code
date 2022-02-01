@@ -178,6 +178,39 @@
       <xsl:when test=". = 'facet_materials_food'">
         <xsl:text>Food &amp; Drink</xsl:text>
       </xsl:when>
+      <xsl:when test=". = 'facet_record_type_central_gov'">
+        <xsl:text>Central Government</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_record_type_chronicles'">
+        <xsl:text>Chronicles and Histories</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_record_type_church'">
+        <xsl:text>Church Records</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_record_type_education'">
+        <xsl:text>Educational Institution</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_record_type_family'">
+        <xsl:text>Family</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_record_type_guild'">
+        <xsl:text>Guilds</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_record_type_local_gov'">
+        <xsl:text>Local Government</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_record_type_manorial'">
+        <xsl:text>Manorial</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_record_type_playhouse'">
+        <xsl:text>Playhouses</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_record_type_rel_community'">
+        <xsl:text>Religious Community</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'facet_record_type_soc_lit'">
+        <xsl:text>Social Commentary/Literary Works</xsl:text>
+      </xsl:when>
       <xsl:when test="starts-with(., 'facet_locations_feature_')">
         <xsl:for-each select="tokenize(substring-after(., 'facet_locations_feature_'), '_')">
           <xsl:value-of select="upper-case(substring(., 1, 1))" />

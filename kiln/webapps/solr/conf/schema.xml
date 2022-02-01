@@ -142,8 +142,6 @@
           required="false" stored="false" type="text_general" />
 
    <!-- Facet fields. -->
-   <field indexed="true" multiValued="true" name="facet_record_type"
-          required="false" stored="true" type="string" />
    <field indexed="true" multiValued="true"
           name="facet_collectives_guild_occupational" required="false"
           stored="true" type="int" />
@@ -430,6 +428,28 @@
    <field indexed="true" multiValued="true" name="facet_people_gender"
           required="false" stored="true" type="string" />
    <field indexed="true" multiValued="true" name="facet_people_status"
+          required="false" stored="true" type="string" />
+   <field indexed="true" multiValued="false" name="facet_record_type_central_gov"
+          required="false" stored="true" type="string" />
+   <field indexed="true" multiValued="false" name="facet_record_type_chronicles"
+          required="false" stored="true" type="string" />
+   <field indexed="true" multiValued="false" name="facet_record_type_church"
+          required="false" stored="true" type="string" />
+   <field indexed="true" multiValued="false" name="facet_record_type_education"
+          required="false" stored="true" type="string" />
+   <field indexed="true" multiValued="false" name="facet_record_type_family"
+          required="false" stored="true" type="string" />
+   <field indexed="true" multiValued="false" name="facet_record_type_guild"
+          required="false" stored="true" type="string" />
+   <field indexed="true" multiValued="false" name="facet_record_type_local_gov"
+          required="false" stored="true" type="string" />
+   <field indexed="true" multiValued="false" name="facet_record_type_manorial"
+          required="false" stored="true" type="string" />
+   <field indexed="true" multiValued="false" name="facet_record_type_playhouse"
+          required="false" stored="true" type="string" />
+   <field indexed="true" multiValued="false" name="facet_record_type_rel_community"
+          required="false" stored="true" type="string" />
+   <field indexed="true" multiValued="false" name="facet_record_type_soc_lit"
           required="false" stored="true" type="string" />
 
    <!-- catchall field, containing all other searchable text fields

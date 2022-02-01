@@ -52,7 +52,18 @@
                         'facet_materials_cloth', 'facet_materials_costume',
                         'facet_materials_regalia', 'facet_materials_food')" />
   <xsl:variable name="crime_facets" select="'facet_crimes_crime'" />
-  <xsl:variable name="record_facets" select="'facet_record_type'" />
+  <xsl:variable name="record_type_facets"
+                select="('facet_record_type_central_gov',
+                        'facet_record_type_chronicles',
+                        'facet_record_type_church',
+                        'facet_record_type_education',
+                        'facet_record_type_family',
+                        'facet_record_type_guild',
+                        'facet_record_type_local_gov',
+                        'facet_record_type_manorial',
+                        'facet_record_type_playhouse',
+                        'facet_record_type_rel_community',
+                        'facet_record_type_soc_lit')" />
 
   <kiln:parent>
     <xi:include href="base.xml" />
@@ -265,8 +276,8 @@
                   <div class="filter-head">Record Types</div>
                   <div class="filter-content-wrapper">
                     <div class="filter-content">
-                      <ul class="open-filters bordered">
-                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$record_facets]" mode="search-results-no-hierarchy" />
+                      <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+                        <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$record_type_facets]" mode="search-results" />
                       </ul>
                     </div>
                   </div>
