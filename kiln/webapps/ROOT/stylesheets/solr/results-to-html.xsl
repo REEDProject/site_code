@@ -209,7 +209,7 @@
         <xsl:text>Religious Community</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_record_type_soc_lit'">
-        <xsl:text>Social Commentary/Literary Works</xsl:text>
+        <xsl:text>Social Commentary/ Literary Works</xsl:text>
       </xsl:when>
       <xsl:when test="starts-with(., 'facet_locations_feature_')">
         <xsl:for-each select="tokenize(substring-after(., 'facet_locations_feature_'), '_')">
