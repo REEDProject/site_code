@@ -215,7 +215,7 @@
                         <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$collective_facets_pre_offices]" mode="search-results" />
                         <xsl:call-template name="display-nested-facets">
                           <xsl:with-param name="facets" select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$collective_offices_facets]" />
-                          <xsl:with-param name="title" select="'Offices'" />
+                          <xsl:with-param name="title" select="'Office'" />
                         </xsl:call-template>
                         <xsl:apply-templates select="/aggregation/response/lst[@name='facet_counts']/lst[@name='facet_fields']/lst[@name=$collective_facets_post_offices]" mode="search-results" />
                       </ul>

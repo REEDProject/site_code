@@ -149,7 +149,7 @@
         <xsl:text>Filter by office type</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_entertainments_custom'">
-        <xsl:text>Seasonal Custom</xsl:text>
+        <xsl:text>Folk Custom</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_entertainments_animal'">
         <xsl:text>Animal Sport</xsl:text>
@@ -167,7 +167,7 @@
         <xsl:text>Props</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_materials_set'">
-        <xsl:text>Sets &amp; Machinery</xsl:text>
+        <xsl:text>Sets/Machinery</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_materials_wagon'">
         <xsl:text>Pageant Wagons</xsl:text>
@@ -176,16 +176,16 @@
         <xsl:text>Costumes</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_materials_food'">
-        <xsl:text>Food &amp; Drink</xsl:text>
+        <xsl:text>Food/Drink</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_record_type_central_gov'">
         <xsl:text>Central Government</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_record_type_chronicles'">
-        <xsl:text>Chronicles and Histories</xsl:text>
+        <xsl:text>Chronicle/History</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_record_type_church'">
-        <xsl:text>Church Records</xsl:text>
+        <xsl:text>Church</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_record_type_education'">
         <xsl:text>Educational Institution</xsl:text>
@@ -194,7 +194,7 @@
         <xsl:text>Family</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_record_type_guild'">
-        <xsl:text>Guilds</xsl:text>
+        <xsl:text>Guild</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_record_type_local_gov'">
         <xsl:text>Local Government</xsl:text>
@@ -203,13 +203,13 @@
         <xsl:text>Manorial</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_record_type_playhouse'">
-        <xsl:text>Playhouses</xsl:text>
+        <xsl:text>Playhouse</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_record_type_rel_community'">
         <xsl:text>Religious Community</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_record_type_soc_lit'">
-        <xsl:text>Social Commentary/ Literary Works</xsl:text>
+        <xsl:text>Social Commentary/Literary Work</xsl:text>
       </xsl:when>
       <xsl:when test="starts-with(., 'facet_locations_feature_')">
         <xsl:for-each select="tokenize(substring-after(., 'facet_locations_feature_'), '_')">
