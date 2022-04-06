@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="yksnr">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="cambs">
 <teiHeader>
   <fileDesc>
     <titleStmt>
@@ -78,7 +78,7 @@
     </titleStmt>   
     <editionStmt>
       <edition>
-        Version 1, released <!-- [CHANGE RELEASE DATE HERE --><date when-iso="2021-12-09">09 December 2021.</date>
+        Version 1, released <!-- [CHANGE RELEASE DATE HERE] --><date when-iso="2021-12-09">09 December 2021.</date>
       </edition>
     </editionStmt>    
     <publicationStmt>
@@ -148,7 +148,7 @@
     <group>
       <text type="record" xml:id="cambs-ridp261606472">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Anglesey Priory</rs>
+          <head><rs>Cambridgeshire</rs>, <rs>Anglesey Priory</rs>
             <date from-iso="1356" to-iso="1357">1356–7</date>
             <seg ana="taxon:CAPACR">CAPACR</seg></head>
           <div xml:lang="lat" type="transcription" xml:id="cambs-ridp261606472-transcription">
