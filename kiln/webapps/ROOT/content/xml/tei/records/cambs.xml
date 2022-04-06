@@ -135,18 +135,18 @@
   </teiHeader>
   <text>
     <front>
-      <div xml:id="acknowledgements">
+      <div xml:id="cambs-acknowledgements">
         <!-- Acknowledgements to go here -->
       </div>
-      <div xml:id="background">
+      <div xml:id="cambs-background">
         <!-- Intro-Historical Background to go here-->
       </div>
-       <div xml:id="traditions">
+       <div xml:id="cambs-traditions">
          <!-- Intro-Performance Traditions to go here-->
        </div>
     </front>
     <group>
-      <text ana="taxon:RelCommunity_Monasteries" type="record" xml:id="cambs-ridp261606472">
+      <text type="record" xml:id="cambs-ridp261606472">
         <body>
           <head><rs>Cambridgeshire</rs>, <rs>Anglesey Priory</rs>
             <date from-iso="1356" to-iso="1357">1356–7</date>
