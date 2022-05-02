@@ -3566,14 +3566,14 @@
 
               <gap reason="omitted"/>
 
-              <ab>Marcus Nicholson./ p<ex>rese</ex>ntat<ex>ur</ex>
+              <ab><rs ref="eats:314017" type="Person_Male">Marcus Nicholson</rs>./ p<ex>rese</ex>ntat<ex>ur</ex>
                 <foreign xml:lang="eng">y<ex>a</ex>t he traveled oute of o<ex>u</ex>r Towne with his
-                    Instrument<ex>es</ex> of musicke on the Sabbothe Daye, in the tyme of divine
+                    <rs ref="eats:41840" type="Thing_MusicalInstrument">Instrument<ex>es</ex> of musicke</rs> on the Sabbothe Daye, in the tyme of divine
                   service/</foreign></ab>
 
               <ab>Et<note type="marginal" place="margin_left">+</note> .10. decembr<ex>is</ex>
                   1617.<note type="foot">1617: <hi rend="italic">underlined</hi></note>
-                  exhibit<ex>a</ex> citac<ex>ione</ex> p<ex>er</ex> Will<ex>elmu</ex>m Olcorne
+                  exhibit<ex>a</ex> citac<ex>ione</ex> p<ex>er</ex> <rs ref="eats:304272" type="Person_StatusOther">Will<ex>elmu</ex>m Olcorne</rs>
                   Appar<ex>itorem</ex> &amp;c. citat<ex>ur</ex> qui p<ex>re</ex>co<ex>nizatus</ex>
                   no<ex>n</ex> co<ex>mparuit</ex> exp<ex>ectatur</ex> in
                 p<ex>ro</ex>x<ex>imo</ex>/</ab>
@@ -3666,9 +3666,9 @@
 
               <gap reason="omitted"/>
 
-              <ab>Marcus Nicholson/ p<ex>rese</ex>ntat<ex>ur</ex>
+              <ab><rs ref="eats:314017" type="Person_StatusOther">Marcus Nicholson</rs>/ p<ex>rese</ex>ntat<ex>ur</ex>
                 <foreign xml:lang="eng">for travelinge oute of the Towne w<ex>i</ex>th his
-                    instrument<ex>es</ex> of musicke on the Sabbothe daye in service tyme/</foreign>
+                    <rs ref="eats:41840" type="Thing_MusicalInstrument">instrument<ex>es</ex> of musicke</rs> on the Sabbothe daye in service tyme/</foreign>
                 In non comp<ex>ar</ex>end<ex>um</ex> (monitus in iudicio) ad solvend<ex>um</ex>
                 .17.d. est suspens<ex>us</ex>/ Ema<ex>nui</ex>t./ &amp; sic fuit
                   denu<ex>n</ex>ciat<ex>um</ex> in Eccl<ex>es</ex>ia ib<ex>id</ex>em .30. Augusti
@@ -3997,8 +3997,7 @@
 
               <table>
                 <row>
-                  <cell>To Cambridg Musitians att Ely fayer y<ex>a</ex>t Asent<damage><gap
-                        unit="chars" extent="2"/></damage><note type="foot">Asent<damage><gap
+                  <cell>To Cambridg Musitians att Ely fayer y<ex>a</ex>t <rs ref="eats:42968" type="CalendarDay_Liturgical">Asent<damage><gap extent="2" unit="chars"/></damage></rs><note type="foot">Asent<damage><gap
                           unit="chars" extent="2"/></damage>: <hi rend="italic">for</hi> Asention<hi
                         rend="italic">; ie, 10 May</hi>
                     </note>
@@ -4028,13 +4027,13 @@
             </div>
           </div>
           <div type="endnote">
-            <p> The Ely Ascension Fair (f 144) began on the vigil of the Ascension and lasted for
+            <p> The Ely Ascension Fair (f 144) began on the vigil of the <rs ref="eats:42968" type="CalendarDay_Liturgical">Ascension</rs> and lasted for
               twenty-two days; in 1632, the fair ran from 9–31 May. For further details, see the
               Introduction, 'Historical Background: Travel and Roads.' </p>
 
             <p> The Cambridge waits paid for their performance at the Ely Fair beginning on the
               vigil of the Ascension (f 144) were also paid for an earlier performance at the Reach
-              Fair, held Rogation Monday; see Nelson, <title>Cambridge</title>, vol 1, p 629. On the
+              Fair, held <rs ref="eats:314079" type="CalendarDay_Liturgical">Rogation Monday</rs>; see Nelson, <title>Cambridge</title>, vol 1, p 629. On the
               Cambridge waits, see also Nelson, <title>Cambridge</title>, vol 2, pp 738–45. </p>
           </div>
         </body>
@@ -4072,8 +4071,8 @@
           </div>
           <div type="endnote">
             <p> The Cambridge waits paid for their performance at the new Ely Fair (f 147),
-              beginning on the vigil of the Ascension (f 147) were also paid for an earlier
-              performance at the Reach Fair, held Rogation Monday; see Nelson,
+              beginning on the vigil of the <rs ref="eats:42968" type="CalendarDay_Liturgical">Ascension</rs> (f 147) were also paid for an earlier
+              performance at the Reach Fair, held <rs ref="eats:314079" type="CalendarDay_Liturgical">Rogation</rs> Monday; see Nelson,
                 <title>Cambridge</title>, vol 1, p 652). On the Cambridge waits, see also Nelson,
                 <title>Cambridge</title>, vol 2, pp 738–745. </p>
           </div>
@@ -4170,7 +4169,7 @@
               <table>
                 <row>
                   <cell>Item to the singing Men of Kings Colledge for attending the last yeare at
-                    the Kings commig<note type="foot">commig: <hi rend="italic">for</hi> comming<hi
+                    the <rs ref="eats:24537" type="Person_Royalty">Kings</rs> commig<note type="foot">commig: <hi rend="italic">for</hi> comming<hi
                         rend="italic">; abbreviation mark missing</hi></note></cell>
                   <cell rend="right">02 - 00 - 00</cell>
                 </row>
@@ -4211,8 +4210,8 @@
           </div>
           <div type="endnote">
             <p> The Cambridge waits paid for their performance at the old Ely Fair and at the new
-              fair, beginning on the vigil of the Ascension (f 164v), were also paid for an earlier
-              performance at the Reach Fair, held Rogation Monday; see Nelson,
+              fair, beginning on the vigil of the <rs ref="eats:42968" type="CalendarDay_Liturgical">Ascension</rs> (f 164v), were also paid for an earlier
+              performance at the Reach Fair, held <rs ref="eats:314079" type="CalendarDay_Liturgical">Rogation</rs> Monday; see Nelson,
                 <title>Cambridge</title>, vol 1, p 680. On the Cambridge waits, see also Nelson,
                 <title>Cambridge</title>, vol 2, pp 738–45. </p>
           </div>
