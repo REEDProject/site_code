@@ -6448,7 +6448,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
       </text>
       <text type="record" xml:id="cambs-ridp261618904">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>North of Kirtling</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, North of <rs ref="eats:311819" type="Place_F_Residence">Kirtling</rs>
             <date when-iso="1578">1577/8</date>
             <seg ana="taxon:CAJNPA">CAJNPA</seg></head>
           <div xml:lang="ita" type="transcription" xml:id="cambs-ridp261618904-transcription">
@@ -6460,7 +6460,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
               <table>
                 <row>
-                  <cell>Alla comedia</cell>
+                  <cell>Alla <rs ref="eats:40453" type="Drama_Type">comedia</rs></cell>
                   <cell rend="right">1 s.</cell>
                 </row>
                 <row>
@@ -6482,7 +6482,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
               <table>
                 <row>
-                  <cell>Donaua a' danzatori &amp; sonatori d'una scôla</cell>
+                  <cell>Donaua a' <rs ref="eats:18451" type="Entertainer_Type">danzatori</rs> &amp; <rs ref="eats:10906" type="Entertainer_Type">sonatori</rs> d'una scôla</cell>
                   <cell rend="right">1 s.</cell>
                 </row>
               </table>
@@ -6497,7 +6497,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
               <table>
                 <row>
-                  <cell>per ueder certe cose strane in Fleetstreet</cell>
+                  <cell>per ueder certe cose strane in <rs ref="eats:226563" type="Place_F_Street">Fleetstreet</rs></cell>
                   <cell rend="right">1. s.</cell>
                 </row>
               </table>
@@ -6527,7 +6527,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
               <table>
                 <row>
-                  <cell>Hoggi pagaua á sprignal Barbriere, per certi balli uilanesci, e
+                  <cell>Hoggi pagaua á sprignal Barbriere, per certi <!--IN: worth tagging 'dances' here?-->balli uilanesci, e
                     galiarde</cell>
                   <cell rend="right">7 s.</cell>
                 </row>
@@ -6543,7 +6543,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
               <table>
                 <row>
-                  <cell>A' cinq musici</cell>
+                  <cell>A' cinq <rs ref="eats:1243" type="Entertainer_Type">musici</rs></cell>
                   <cell rend="right">vj s.</cell>
                 </row>
               </table>
@@ -6705,11 +6705,11 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
               <table>
                 <row>
-                  <cell>e da ritornare a Londra</cell>
+                  <cell>e da ritornare a <rs ref="eats:36947" type="Place_PA_Settlement">Londra</rs></cell>
                   <cell rend="right">ij s.</cell>
                 </row>
                 <row>
-                  <cell>E su'la strada u'era 2 nani della Regina leguati medena e diadi</cell>
+                  <cell>E su'la strada u'era 2 <rs ref="eats:313756" type="Entertainer_Type">nani</rs> della Regina leguati medena e diadi</cell>
                   <cell rend="right">xij d.</cell>
                 </row>
               </table>
@@ -6738,7 +6738,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
               <table>
                 <row>
-                  <cell>In libri da cantare</cell>
+                  <cell>In <rs ref="eats:70686" type="Thing_BookPlayMusic">libri</rs> da cantare</cell>
                   <cell rend="right">viij s.</cell>
                 </row>
               </table>
@@ -6780,7 +6780,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
               <table>
                 <row>
-                  <cell>úi uenneró al' disinare i commedianti del' conte di Lester tacendo una
+                  <cell>úi uenneró al' disinare i <rs ref="eats:48635" type="Collective_Troupe">commedianti</rs> del' conte di Lester tacendo una
                     commedia, a'quali il S<ex>igno</ex>r Pad<ex>re</ex> dono</cell>
                   <cell rend="right">xxxx s.</cell>
                 </row>
@@ -6794,8 +6794,8 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
               <gap reason="omitted"/>
 
               <ab>Hoggi la mattina il S<ex>igno</ex>r Pa<ex>dre</ex> solo sene ritornó a casa, io
-                col' S<ex>igno</ex>r Zio andando a Some alla casa del mio cognato Thornton oué
-                disinammó, di capo ritornando ad Isl<ex>eh</ex>am, doue questasera fu' una altra
+                col' S<ex>igno</ex>r Zio andando a <rs ref="eats:313774" type="Place_PA_Settlement">Some</rs> alla casa del mio cognato Thornton oué
+                disinammó, di capo ritornando ad <rs ref="eats:313797" type="Place_PA_Settlement">Isl<ex>eh</ex>am</rs>, doue questasera fu' una altra
                 commedia.</ab>
 
               <gap reason="omitted"/>
@@ -7240,7 +7240,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
           </div>
           <div type="endnote">
             <p> 'Gionsono,' first mentioned in 26 February 1577/8 (f 29v), is probably an
-              Italianized version of 'Johnson,' possibly the court lutenist John Johnson (Gallagher,
+              Italianized version of 'Johnson,' possibly the court <rs ref="eats:34508" type="Entertainer_Type">lutenist</rs> John Johnson (Gallagher,
               'Italian London,' p 103). North records payments to Gionsono for lute lessons and for
               repairs to his lutes from February 1577/8 and subsequently through the year. Since no
               payment is included here (f 29v), the entry may be to aid the calculation of future
@@ -7248,7 +7248,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
               crosses (one above, and one below), suggesting that it describes an event of some
               importance to North, a system used in later entries as well.</p>
 
-            <p> North held a dinner party on 21 February (f 29); the five musicians were probably
+            <p> North held a dinner party on 21 February (f 29); the five <rs ref="eats:1243" type="Entertainer_Type">musicians</rs> were probably
               paid to play during this event. North provides a list of his guests: William Bourchier
               (1557–1623), fourth earl of Bath, Thomas Perrott (1553–97), heir of Sir John Perrott,
               former lord deputy of Ireland, North's uncle Sir Thomas North (1535–<hi rend="italic"
@@ -7262,7 +7262,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
             <p> The boy dancing teacher (f 29v) is not named; a boy, possibly the same person, is
               paid 2s again for dancing lessons on 11 March (f 30).</p>
 
-            <p> Balloon (f 30), sometimes 'balloon ball,' was a game played with an inflated leather
+            <p> <rs ref="eats:40677" type="Entertainment_Type">Balloon</rs> (f 30), sometimes 'balloon ball,' was a game played with an inflated leather
               ball, struck by players either with the fist or with an arm protected by a wooden
               bracer (James Stokes, email correspondence, 2 August 2021). Gervase Markham describes
               balloon as 'a strong &amp; mouing sport in the open fields,' and good for the health
@@ -7275,7 +7275,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
               accounts; they shared interests in Italian and French and possibly also in music. </p>
 
             <p> The dancing teacher (f 32) might be Sprignal the barber, to whom North paid 7s on 20
-              February for country dances and galliards, or the boy to whom North paid 2s on 5 March
+              February for <!-- IN: as above, not sure if it's worth tagging daces/galliards--> country dances and galliards, or the boy to whom North paid 2s on 5 March
               and 11 March for dancing lessons (see ff 28v, 29v, 30, 31), or another unnamed person. </p>
 
             <p> North's father (f 45) is Roger North (1531–1600), second Baron North, who was the
@@ -7290,17 +7290,17 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
       </text>
       <text type="record" xml:id="cambs-ridp287831512">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>North of Kirtling</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, North of <rs ref="eats:311819" type="Place_F_Residence">Kirtling</rs>
             <date when-iso="1578">1578</date>
             <seg ana="taxon:CANHA1">CANHA1</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp287831512-transcription">
             <div>
-              <head>f 3 col 1 <supplied>(28 July) (List of servants' names)</supplied></head>
+              <head>f 3 col 1 <supplied>(28 July) (List of <rs ref="eats:297010" type="Collective_Occupations">servants'</rs> names)</supplied></head>
               <pb n="3" type="folio"/>
 
               <gap reason="omitted"/>
 
-              <ab>64 Foole</ab>
+              <ab>64 <rs ref="eats:14164" type="Entertainer_Type">Foole</rs></ab>
 
               <gap reason="omitted"/>
             </div>
@@ -7309,7 +7309,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
       </text>
       <text type="record" xml:id="cambs-ridp287976584">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>North of Kirtling</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, North of <rs ref="eats:311819" type="Place_F_Residence">Kirtling</rs>
             <date from-iso="1578" to-iso="1579">1578–9</date>
             <seg ana="taxon:CANHA1">CANHA1</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp287976584-transcription">
@@ -7321,8 +7321,8 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
               <table>
                 <row>
-                  <cell>Tailors worke</cell>
-                  <cell>paid to Jeferay for making the fools hose and capp w<ex>i</ex>t<ex>h</ex> a
+                  <cell><rs ref="eats:14062" type="Collective_Occupations">Tailors</rs> worke</cell>
+                  <cell>paid to Jeferay for making the <rs ref="eats:14164" type="Entertainer_Type">fools</rs> hose and capp w<ex>i</ex>t<ex>h</ex> a
                     paire of mittings for my self <del>iiv</del> xj s.</cell>
                   <cell rend="right">xj s.</cell>
                 </row>
@@ -7331,7 +7331,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
               <gap reason="omitted"/>
             </div>
             <div>
-              <head>f 62 col 2 <supplied>(10 March) (Servants' wages)</supplied></head>
+              <head>f 62 col 2 <supplied>(10 March) (<rs ref="eats:297010" type="Collective_Occupations">Servants'</rs> wages)</supplied></head>
               <pb n="62" type="folio"/>
 
               <gap reason="omitted"/>
@@ -7357,7 +7357,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
               <gap reason="omitted"/>
 
-              <ab><gap reason="omitted"/>to moris dansers ij s. ij d<gap reason="omitted"/>.</ab>
+              <ab><gap reason="omitted"/>to <rs ref="eats:79074" type="Entertainment_FolkCustom">moris</rs> dansers ij s. ij d<gap reason="omitted"/>.</ab>
 
               <gap reason="omitted"/>
             </div>
@@ -7390,7 +7390,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
               <table>
                 <row>
-                  <cell>Singer</cell>
+                  <cell><rs ref="eats:10906" type="Entertainer_Type">Singer</rs></cell>
                   <cell rend="right">xvj li. iiij s.</cell>
                 </row>
               </table>
@@ -7424,7 +7424,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
               <gap reason="omitted"/>
 
-              <ab><gap reason="omitted"/>to my L<ex>ord</ex> of lesters plaiers xl s<gap
+              <ab><gap reason="omitted"/>to my L<ex>ord</ex> of lesters <rs ref="eats:48635" type="Collective_Troupe">plaiers</rs> xl s<gap
                   reason="omitted"/>.</ab>
 
               <gap reason="omitted"/>
@@ -7471,8 +7471,8 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
             </div>
           </div>
           <div type="endnote">
-            <p> The gift to a 'foole lackey' (f 36 v), followed by money spent on shoes for a lackey
-              and shoes for a fool, respectively, implies that lackey and fool are two different
+              <p> The gift to a 'foole lackey' (f 36 v), followed by money spent on shoes for a <rs ref="eats:297010" type="Collective_Occupations">lackey</rs>
+              and shoes for a <rs ref="eats:14164" type="Entertainer_Type">fool</rs>, respectively, implies that lackey and fool are two different
               positions – the shoes are filled by two different individuals, so to speak. Further,
               the 'foole lackey' entries (ff 37 and 41) describe clothing which could be for both a
               fool and a lackey, though only a lackey is specifically mentioned. It is difficult to
@@ -7486,7 +7486,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
             <p> The fool is listed this year as a servant (f 44, col 2), but no salary is noted. </p>
 
-            <p> Elizabeth I's visit to Kirtling (f 74) was part of a larger procession through East
+            <p> Elizabeth I's visit to <rs ref="eats:311819" type="Place_F_Residence">Kirtling</rs> (f 74) was part of a larger procession through East
               Anglia beginning in the summer of 1578. Her itinerary began at Greenwich and went
               first to the royal palace at Havering (11 July), then looping through Essex, Suffolk,
               and Norfolk, where she stayed in Norwich, during which time she also visited Cambridge
