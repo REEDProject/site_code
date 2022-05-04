@@ -198,7 +198,7 @@
 
               <table>
                 <row>
-                  <cell><rs ref="eats:302921" type="Person_Female">Anna<ex>m</ex> Petigall</rs>.<lb/> no<ex>n</ex> inv<ex>entam</ex><lb/> vijs et modis<lb/>
+                  <cell><rs ref="eats:302921" type="Person_GenderUnknown">Anna<ex>m</ex> Petigall</rs>.<lb/> no<ex>n</ex> inv<ex>entam</ex><lb/> vijs et modis<lb/>
                     <del>exec<ex>uta</ex> sup<ex>er</ex> ost<ex>ium</ex>
                       d<ex>o</ex>m<ex>us</ex></del><lb/> sup<ex>er</ex> osti<ex>um</ex>
                         s<damage><gap unit="chars" extent="1"/></damage>l<damage><gap unit="chars"
@@ -5129,7 +5129,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
               <table>
                 <row>
-                  <cell>It<ex>em</ex> paid to the pleyars in crystmas tyme</cell>
+                  <cell>It<ex>em</ex> paid to the pleyars in <rs ref="eats:41461" type="CalendarDay_Liturgical">crystmas tyme</rs></cell>
                   <cell rend="right">viij d.</cell>
                 </row>
               </table>
@@ -5209,7 +5209,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
                   <cell rend="right">ij s.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>em</ex> payd to Rychard buschope wyffe ye same tyme</cell>
+                  <cell>It<ex>em</ex> payd to <rs ref="eats:316246" type="Person_Male">Rychard buschope</rs> wyffe ye same tyme</cell>
                   <cell rend="right">iiij d.</cell>
                 </row>
               </table>
