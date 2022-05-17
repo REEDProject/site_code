@@ -4513,7 +4513,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
       </text>
       <text type="record" xml:id="cambs-ridp260096088">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Grantchester</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:322533" type="Place_PA_Settlement">Grantchester</rs>
             <date when-iso="1600">1600</date>
             <seg ana="taxon:CADC17">CADC17</seg></head>
           <div xml:lang="lat" type="transcription" xml:id="cambs-ridp260096088-transcription">
@@ -4523,7 +4523,7 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
 
               <table>
                 <row>
-                  <cell>Grancitter</cell>
+                  <cell><rs ref="eats:322533" type="Place_PA_Settlement">Grancitter</rs></cell>
                 </row>
                 <row>
                   <cell><rs ref="eats:314903" type="Person_StatusOther">Johanna Bigges</rs> <lb/>.142. <del>exp<ex>ectata</ex></del>
@@ -4531,13 +4531,13 @@ https://library2.utm.utoronto.ca/otra/reed/node/317251 --></hi></note>
                     <del>suspen<ex>sa</ex></del></cell>
                   <cell> Ad certific<ex>andum</ex> de p<ex>er</ex>acc<ex>i</ex>o<ex>n</ex>e
                       <del>penitentie</del> confess<ex>ionis</ex> monit<ex>a</ex> est istis,
-                    &amp;c., Quibus, &amp;c., p<ex>re</ex>co<ex>nizata</ex> non co<ex>mparuit</ex>
-                      D<ex>omi</ex>n<ex>u</ex>s exp<ex>ectauit</ex> ea<ex>m</ex> in
+                    &amp;c., Quibus, &amp;c., p<ex>re</ex>co<ex>nizata</ex> <rs ref="eats:173156" type="CrimesMisdemeanors">non co<ex>mparuit</ex></rs>
+                      <rs ref="eats:270165" type="Collective_Office">D<ex>omi</ex>n<ex>u</ex>s</rs> exp<ex>ectauit</ex> ea<ex>m</ex> in
                       p<ex>ro</ex>x<ex>imo</ex> viz. xj<hi rend="superscript">u<ex>m</ex></hi> Diem
                     Aprilis p<ex>ro</ex>x<ex>imum</ex> Quo die p<ex>rae</ex>co<ex>nizata</ex> non
                       co<ex>mparuit</ex> D<ex>omi</ex>n<ex>u</ex>s
                       p<ex>ro</ex>nu<ex>n</ex>c<ex>auit</ex> ea<ex>m</ex> cont<ex>umacem</ex> et in
-                      pena<ex>m</ex> &amp;c. ab ingress<ex>u</ex> Eccl<ex>es</ex>ie
+                      pena<ex>m</ex> &amp;c. ab ingress<ex>u</ex> <rs ref="eats:322556" type="Place_F_Church">Eccl<ex>es</ex>ie</rs>
                       suspen<ex>sio</ex> Ema<ex>naui</ex>t</cell>
                 </row>
               </table>
