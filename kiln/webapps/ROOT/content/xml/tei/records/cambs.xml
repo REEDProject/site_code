@@ -3953,7 +3953,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp261456920">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:322579" type="Place_PA_Settlement">Ely</rs>
             <date from-iso="1628" to-iso="1629">1628–9</date>
             <seg ana="taxon:CADTAC">CADTAC</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp261456920-transcription">
@@ -3965,7 +3965,7 @@
 
               <table>
                 <row>
-                  <cell>Item toe the Musit<ex>i</ex>ons of Cambridge</cell>
+                  <cell>Item toe the <rs ref="eats:322602" type="Collective_Office">Musit<ex>i</ex>ons of Cambridge</rs></cell>
                   <cell rend="right">iij s. iiij d.</cell>
                 </row>
                 <row>
@@ -3978,7 +3978,7 @@
             </div>
           </div>
           <div type="endnote">
-            <p> For details on the Cambridge waits (f 135), see Nelson, <title>Cambridge</title>,
+            <p> For details on the <rs ref="eats:322602" type="Collective_Office">Cambridge waits</rs> (f 135), see Nelson, <title>Cambridge</title>,
               vol 2, pp 738–45. </p>
           </div>
         </body>
