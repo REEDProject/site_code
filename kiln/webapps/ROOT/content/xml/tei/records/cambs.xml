@@ -3411,7 +3411,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp280184168">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:322579" type="Place_PA_Settlement">Ely</rs>
             <date from-iso="1429" to-iso="1430">1429–30</date>
             <seg ana="taxon:CAPHA5">CAPHA5</seg></head>
           <div xml:lang="lat" type="transcription" xml:id="cambs-ridp280184168-transcription">
@@ -3466,7 +3466,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp280220776">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:322579" type="Place_PA_Settlement">Ely</rs>
             <date from-iso="1436" to-iso="1437">1436–7</date>
             <seg ana="taxon:CAPHA6">CAPHA6</seg></head>
           <div xml:lang="lat" type="transcription" xml:id="cambs-ridp280220776-transcription">
@@ -3474,11 +3474,11 @@
               <head>mb 2 <supplied>(29 September–29 September) (Gifts)</supplied></head>
               <pb n="2" type="membrane"/>
 
-              <ab><gap reason="omitted"/>It<ex>e</ex>m ministrall' d<ex>omi</ex>ni <rs ref="eats:44444" type="Person_Male">R<ex>egis</ex></rs>
-                mense Iunij x d. It<ex>e</ex>m ministrall' <rs ref="eats:313820" type="Person_Nobility">d<ex>omi</ex>ni Norf<ex>olk</ex></rs><note
+              <ab><gap reason="omitted"/>It<ex>e</ex>m <rs ref="eats:125146" type="Collective_Troupe">ministrall' d<ex>omi</ex>ni</rs> <rs ref="eats:44444" type="Person_Male">R<ex>egis</ex></rs>
+                mense Iunij x d. It<ex>e</ex>m<rs ref="eats:324182" type="Collective_Troupe"> ministrall'</rs> <rs ref="eats:313820" type="Person_Nobility">d<ex>omi</ex>ni Norf<ex>olk</ex></rs><note
                   type="foot">d<ex>omi</ex>ni Norf<ex>olk</ex>: <hi rend="italic"><rs ref="eats:313820" type="Person_Male">John de Mowbray</rs>
-                    (1415–61), third duke of Norfolk (<hi rend="italic"
-                    >P&amp;P</hi><!-- IN to add link -->)</hi></note> mens<ex>e</ex> Augusti ij
+                    (1415–61), third <rs ref="eats:163187" type="Collective_Titles">duke of Norfolk</rs> (<hi rend="italic"
+                      ><ref target="https://library2.utm.utoronto.ca/otra/reed/node/316182">P&amp;P</ref></hi></hi></note> mens<ex>e</ex> Augusti ij
                   d<gap reason="omitted"/>.</ab>
 
               <gap reason="omitted"/>
@@ -3500,7 +3500,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp261326248">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:322579" type="Place_PA_Settlement">Ely</rs>
             <date from-iso="1596" to-iso="1597">1596–7</date>
             <seg ana="taxon:CADTAC">CADTAC</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp261326248-transcription">
@@ -3512,7 +3512,7 @@
 
               <table>
                 <row>
-                  <cell>Item geven to minstrell<ex>es</ex> at Sutton Court for playinge there in
+                  <cell>Item geven to <rs ref="eats:8709" type="Entertainer_Type">minstrell<ex>es</ex></rs> at <rs ref="eats:324147" type="Place_F_Residence">Sutton Court</rs> for playinge there in
                       dynn<ex>er</ex> tyme</cell>
                   <cell rend="right">xij d.</cell>
                 </row>
@@ -3525,24 +3525,24 @@
       </text>
       <text type="record" xml:id="cambs-ridp288473096">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:322579" type="Place_PA_Settlement">Ely</rs>
             <date when-iso="1609">1609</date>
             <seg ana="taxon:CAPCEL">CAPCEL</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp288473096-transcription">
             <div>
-              <head>p 218 <supplied>(<rs ref="eats:313886" type="Person_Male">Dean Tyndall</rs>'s reasons for firing headmaster
+              <head>p 218 <supplied>(<rs ref="eats:313886" type="Person_Male">Dean Tyndall</rs>'s reasons for firing <rs ref="eats:17037" type="Collective_Occupations">headmaster</rs>
                   <rs ref="eats:313956" type="Person_Male">Pamplyn</rs>)</supplied></head>
               <pb n="218" type="page"/>
 
               <gap reason="omitted"/>
 
               <ab><del>fforthly, <note type="marginal" place="margin_left">N.B. This was
-                    ceass'd</note> in the one End of the Schoole<note type="foot">the Schoole: <hi
-                      rend="italic">The King's School, Ely</hi></note> he kept his Daughter, &amp;
-                  Certen boorders, She beinge Suspected to be of very loose behavio<ex>ur</ex>, as
+                    ceass'd</note> in the one End of the <rs ref="eats:324125" type="Place_F_School">Schoole</rs><note type="foot">the Schoole: <hi
+                      rend="italic"><rs ref="eats:324125" type="Place_F_School">The King's School</rs>, <rs ref="eats:322579" type="Place_PA_Settlement">Ely</rs></hi></note> he kept his Daughter, &amp;
+                  Certen boorders, She beinge Suspected to be of <rs ref="eats:45689" type="CrimesMisdemeanors">very loose behavio<ex>ur</ex></rs>, as
                   the Carriage of her Selfe did p<ex>er</ex>tely shewe, for She would not Stick to
-                  put one boyes apparell, &amp; lett boyes putt one hers, &amp; Com into the
-                  Schoole, in his Absence &amp; daunce amongeste the boyes. And moreover where their
+                  <rs ref="eats:45484" type="CrimesMisdemeanors">put one boyes apparell</rs>, &amp; lett boyes putt one hers, &amp; Com into the
+                  Schoole, in his Absence &amp; <rs ref="eats:18451" type="Entertainer_Type">daunce</rs> amongeste the boyes. And moreover where their
                   Should be a teachinge Schoole in the day tyme for the boyes, by her meanes it was
                   made a dauncinge Schoole at xij a Clock in the Night, &amp; Sometimes all the
                   Night longe. Whither did resorte (&amp; by her meanes sometimes were Called)
@@ -3556,26 +3556,26 @@
       </text>
       <text type="record" xml:id="cambs-ridp261101896">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:322579" type="Place_PA_Settlement">Ely</rs>
             <date when-iso="1617">1617</date>
             <seg ana="taxon:CADC35">CADC35</seg></head>
           <div xml:lang="lat" type="transcription" xml:id="cambs-ridp261101896-transcription">
             <div>
-              <head>f 144a <supplied>(24 September) (Trinity parish)</supplied></head>
+              <head>f 144a <supplied>(24 September) (<rs ref="eats:324087" type="Place_PA_Settlement">Trinity parish</rs>)</supplied></head>
               <pb n="144a" type="folio"/>
 
               <gap reason="omitted"/>
 
               <ab><rs ref="eats:314017" type="Person_Male">Marcus Nicholson</rs>./ p<ex>rese</ex>ntat<ex>ur</ex>
                 <foreign xml:lang="eng">y<ex>a</ex>t he traveled oute of o<ex>u</ex>r Towne with his
-                    <rs ref="eats:41840" type="Thing_MusicalInstrument">Instrument<ex>es</ex> of musicke</rs> on the Sabbothe Daye, in the tyme of divine
-                  service/</foreign></ab>
+                    <rs ref="eats:41840" type="Thing_MusicalInstrument">Instrument<ex>es</ex> of musicke</rs> on the Sabbothe Daye, <rs ref="eats:45671" type="CrimesMisdemeanors">in the tyme of divine
+                  service</rs>/</foreign></ab>
 
               <ab>Et<note type="marginal" place="margin_left">+</note> .10. decembr<ex>is</ex>
                   1617.<note type="foot">1617: <hi rend="italic">underlined</hi></note>
                   exhibit<ex>a</ex> citac<ex>ione</ex> p<ex>er</ex> <rs ref="eats:304272" type="Person_StatusOther">Will<ex>elmu</ex>m Olcorne</rs>
-                  Appar<ex>itorem</ex> &amp;c. citat<ex>ur</ex> qui p<ex>re</ex>co<ex>nizatus</ex>
-                  no<ex>n</ex> co<ex>mparuit</ex> exp<ex>ectatur</ex> in
+                  <rs ref="eats:302857" type="Collective_Office">Appar<ex>itorem</ex></rs> &amp;c. citat<ex>ur</ex> qui p<ex>re</ex>co<ex>nizatus</ex>
+                  <rs ref="eats:173156" type="CrimesMisdemeanors">no<ex>n</ex> co<ex>mparuit</ex></rs> exp<ex>ectatur</ex> in
                 p<ex>ro</ex>x<ex>imo</ex>/</ab>
 
               <ab>Et<note type="marginal" place="margin_left">+</note> .18 Marcij 1617.<note
@@ -3584,7 +3584,7 @@
                   perquis<ex>itus</ex> no<ex>n</ex> invent<ex>us</ex> qui
                   p<ex>re</ex>co<ex>nizatus</ex>
                 <del>no<ex>n</ex></del> co<ex>mparuit</ex> cu<ex>m</ex> pia monic<ex>ione</ex>
-                &amp;c. d<ex>omi</ex>n<ex>u</ex>s eu<ex>m</ex> dimisit ad solvend<ex>um</ex> .17.d
+                &amp;c. <rs ref="eats:270165" type="Collective_Office">d<ex>omi</ex>n<ex>u</ex>s</rs> eu<ex>m</ex> dimisit ad solvend<ex>um</ex> .17.d
                   p<ex>ro</ex>x<ex>ime</ex>/</ab>
 
               <ab>Et<note type="marginal" place="margin_left">+</note> 17 Iunij 1618<note
@@ -3626,7 +3626,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp261344568">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:322579" type="Place_PA_Settlement">Ely</rs>
             <date from-iso="1617" to-iso="1618">1617–18</date>
             <seg ana="taxon:CADTAC">CADTAC</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp261344568-transcription">
@@ -3638,8 +3638,8 @@
 
               <table>
                 <row>
-                  <cell>Item to the Musitions of Cambridge and Lyn<note type="foot">Lyn: <hi
-                        rend="italic">ie, King's Lynn</hi></note>
+                  <cell>Item to the Musitions of <rs ref="eats:322602" type="Collective_Office">Cambridge</rs> and <rs ref="eats:322674" type="Collective_Office">Lyn</rs><note type="foot">Lyn: <hi
+                        rend="italic">ie, <rs ref="eats:322651" type="Place_PA_Settlement">King's Lynn</rs></hi></note>
                   </cell>
                   <cell rend="right">xvj s. viij d.</cell>
                 </row>
@@ -3656,22 +3656,22 @@
       </text>
       <text type="record" xml:id="cambs-ridp261197352">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:322579" type="Place_PA_Settlement">Ely</rs>
             <date when-iso="1618">1618</date>
             <seg ana="taxon:CADC39">CADC39</seg></head>
           <div xml:lang="lat" type="transcription" xml:id="cambs-ridp261197352-transcription">
             <div>
-              <head>f 80v <supplied>(Trinity parish)</supplied></head>
+              <head>f 80v <supplied>(<rs ref="eats:324087" type="Place_PA_Settlement">Trinity parish</rs>)</supplied></head>
               <pb n="80v" type="folio"/>
 
               <gap reason="omitted"/>
 
               <ab><rs ref="eats:314017" type="Person_StatusOther">Marcus Nicholson</rs>/ p<ex>rese</ex>ntat<ex>ur</ex>
-                <foreign xml:lang="eng">for travelinge oute of the Towne w<ex>i</ex>th his
-                    <rs ref="eats:41840" type="Thing_MusicalInstrument">instrument<ex>es</ex> of musicke</rs> on the Sabbothe daye in service tyme/</foreign>
-                In non comp<ex>ar</ex>end<ex>um</ex> (monitus in iudicio) ad solvend<ex>um</ex>
+                <foreign xml:lang="eng">for travelinge oute of the <rs ref="eats:322579" type="Place_PA_Settlement">Towne</rs> w<ex>i</ex>th his
+                    <rs ref="eats:41840" type="Thing_MusicalInstrument">instrument<ex>es</ex> of musicke</rs> on the Sabbothe daye <rs ref="eats:45671" type="CrimesMisdemeanors">in service tyme</rs>/</foreign>
+                In <rs ref="eats:173156" type="CrimesMisdemeanors">non comp<ex>ar</ex>end<ex>um</ex></rs> (monitus in iudicio) ad solvend<ex>um</ex>
                 .17.d. est suspens<ex>us</ex>/ Ema<ex>nui</ex>t./ &amp; sic fuit
-                  denu<ex>n</ex>ciat<ex>um</ex> in Eccl<ex>es</ex>ia ib<ex>id</ex>em .30. Augusti
+                  denu<ex>n</ex>ciat<ex>um</ex> in <rs ref="eats:322628" type="Place_F_Church">Eccl<ex>es</ex>ia</rs> ib<ex>id</ex>em .30. Augusti
                   1618.<note type="foot">1618: <hi rend="italic">underlined</hi></note>
                 p<ex>ro</ex>ut p<ex>atet</ex>./</ab>
 
