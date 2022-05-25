@@ -2960,7 +2960,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp285539608">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Doddington</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:324500" type="Place_PA_Settlement">Doddington</rs>
             <date when-iso="1616">1616</date>
             <seg ana="taxon:CADC35">CADC35</seg></head>
           <div xml:lang="lat" type="transcription" xml:id="cambs-ridp285539608-transcription">
@@ -2968,17 +2968,17 @@
               <head>f 49v–50v <supplied>(20 June 1616)</supplied></head>
               <pb n="49v" type="folio"/>
 
-              <ab><rs ref="eats:305623" type="Person_Male">Hugo Gates</rs> famulus <rs ref="eats:305589" type="Person_Male">Gerardi Hughes</rs>. <del>P<ex>rese</ex>ntat<ex>ur</ex></del>
+              <ab><rs ref="eats:305623" type="Person_Male">Hugo Gates</rs> <rs ref="eats:297010" type="Collective_Occupations">famulus</rs> <rs ref="eats:305589" type="Person_Male">Gerardi Hughes</rs>. <del>P<ex>rese</ex>ntat<ex>ur</ex></del>
                   Notat<ex>ur</ex>
-                <foreign xml:lang="eng">for profaninge of the Churchyard there, by dansinge in the
+                <foreign xml:lang="eng">for <rs ref="eats:45652" type="CrimesMisdemeanors">profaninge</rs> of the <rs ref="eats:324523" type="Place_F_Church">Churchyard</rs> there, by <rs ref="eats:18451" type="Entertainer_Type">dansinge</rs> in the
                   same vpon <rs ref="eats:200104" type="CalendarDay_Liturgical">Shrove tuesdaie</rs>.</foreign></ab>
 
               <ab>Et 20<note type="marginal" place="margin_left">+</note> Iunij 1616.<note
                   type="foot">1616: <hi rend="italic">underlined</hi></note> ex<ex>hibi</ex>ta
                   Citac<ex>i</ex>o<ex>n</ex>e or<ex>igina</ex>li p<ex>er</ex> <rs ref="eats:304272" type="Person_StatusOther">W<ex>illemu</ex>m
-                Olecorne</rs> Appar<ex>itorem</ex> p<ex>er</ex>quisit<ex>us</ex><note type="marginal"
+                Olecorne</rs> <rs ref="eats:302857" type="Collective_Office">Appar<ex>itorem</ex></rs> p<ex>er</ex>quisit<ex>us</ex><note type="marginal"
                   place="margin_left">p<ex>ai</ex>d 17 d.</note> non invent<ex>us</ex> qui
-                  p<ex>rae</ex>co<ex>nizatus</ex> no<ex>n</ex> co<ex>mparuit</ex> cu<ex>m</ex> pia
+                  p<ex>rae</ex>co<ex>nizatus</ex> <rs ref="eats:173156" type="CrimesMisdemeanors">no<ex>n</ex> co<ex>mparuit</ex></rs> cu<ex>m</ex> pia
                   monic<ex>ione</ex> p<ex>er</ex> <rs ref="eats:305682" type="Person_Male">Tho<ex>mam</ex> P<ex>er</ex>ilglyne</rs> ei
                   fiend<ex>a</ex> dimittit<ex>ur</ex>/</ab>
 
@@ -3021,7 +3021,7 @@
               <ab>ei<note type="foot">ei: <hi rend="italic">a pointing hand has been drawn in the
                     left margin by the same scribe</hi></note>
                 <damage><gap unit="chars" extent="3"/></damage> <rs ref="eats:305830" type="Person_Male">m<ex>agiste</ex>r Crewther</rs>
-                  C<ex>u</ex>rat<ex>us</ex> ib<ex>ide</ex>m quia no<ex>n</ex> publicauit nec
+                  <rs ref="eats:9186" type="Collective_Clergy">C<ex>u</ex>rat<ex>us</ex></rs> ib<ex>ide</ex>m quia no<ex>n</ex> publicauit nec
                 certificauit &amp;c. Ema<ex>naui</ex>t</ab>
 
               <ab>Et<note type="marginal" place="margin_left">+</note> .2. Aprilis 1617.<note
@@ -3058,7 +3058,7 @@
                   type="marginal" place="margin_left">p<ex>ai</ex>d 17 d.</note>
                   Appar<ex>itorem</ex> cit<ex>atur</ex> qui p<ex>re</ex>co<ex>nizata</ex>
                   co<ex>mparuit</ex> cu<ex>m</ex> pia monic<ex>ione</ex> &amp;c.
-                  d<ex>omi</ex>n<ex>u</ex>s ea<ex>m</ex> dimisit./</ab>
+                 <rs ref="eats:270165" type="Collective_Office"> d<ex>omi</ex>n<ex>u</ex>s</rs> ea<ex>m</ex> dimisit./</ab>
 
               <ab><rs ref="eats:305941" type="Person_Female">Iana Hewes</rs> Notat<ex>ur</ex> pro consi<ex>m</ex>ili</ab>
 
@@ -3246,7 +3246,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp257732936">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:324390" type="Place_PA_Settlement">Elm</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:324477" type="Place_F_ReligiousHouse">Ely Priory</rs>
             <date from-iso="1517" to-iso="1518">1517-18</date>
             <seg ana="taxon:CAABHA">CAABHA</seg></head>
           <div xml:lang="lat" type="transcription" xml:id="cambs-ridp257732936-transcription">
