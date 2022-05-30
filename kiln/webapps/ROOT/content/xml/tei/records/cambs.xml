@@ -2370,13 +2370,12 @@
       </text>
       <text type="record" xml:id="cambs-ridp280978568">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Diocese of Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:214531" type="Place_EA_Diocese">Diocese of Ely</rs>
             <date when-iso="1479">1479</date>
             <seg ana="taxon:CASIMB">CASIMB</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp280978568-transcription">
             <div>
               <head>ff lxxxxi verso col 1–lxxxxii col 2</head>
-              <!-- IN: Not sure about the folio numbering here. See the empty <pb/> lower down (~ln 2491). PG: fixed here I think.  I don't see what you mean at 2491 -->
               <pb n="lxxxxi verso col 1-lxxxxii col 2" type="folio"/>
 
               <ab>⸿ <foreign xml:lang="fra">Le premere course pur lestates.<lb/>
@@ -2432,7 +2431,7 @@
               <ab rend="center">⸿ The seconde course.</ab>
 
               <ab>⸿ <foreign xml:lang="fra">Un<note type="foot">Un: <hi rend="italic">beginningin of
-                      col 2</hi></note> sotelte le Ile de ely</foreign> rehersall.</ab>
+                      col 2</hi></note> sotelte le Ile de <rs ref="eats:322579" type="Place_PA_Settlement">ely</rs></foreign> rehersall.</ab>
 
               <ab>O mortal man cal to remembrau<ex>n</ex>ce</ab>
 
@@ -2679,7 +2678,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp258006664">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Diocese of Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:214531" type="Place_EA_Diocese">Diocese of Ely</rs>
             <date when-iso="1526">1526</date>
             <seg ana="taxon:CABNWA">CABNWA</seg></head>
           <div xml:lang="lat" type="transcription" xml:id="cambs-ridp258006664-transcription">
@@ -2689,10 +2688,10 @@
 
               <gap reason="omitted"/>
 
-              <ab>Dat<ex>um</ex> inter Histrion<ex>ibus</ex> in <rs ref="eats:305411" type="CalendarDay_Liturgical">Festo Translationis S<ex>anc</ex>te
+              <ab>Dat<ex>um</ex> inter <rs ref="eats:1261" type="Entertainer_Type">Histrion<ex>ibus</ex></rs> in <rs ref="eats:305411" type="CalendarDay_Liturgical">Festo Translationis S<ex>anc</ex>te
                   Etheldrede</rs><note type="foot">S<ex>anc</ex>te Etheldrede: <hi rend="italic"
                     >underlined</hi></note> virg<ex>in</ex>is hoc anno 20 s<gap reason="omitted"/>.
-                Et diversis hominibus ludent<ex>ibus</ex> coram D<ex>omi</ex>no Priore ad duas vices
+                Et diversis <rs ref="eats:8782" type="Entertainer_Type">hominibus ludent<ex>ibus</ex></rs> coram D<ex>omi</ex>no Priore ad duas vices
                 hoc anno 7 s. 4 d<gap reason="omitted"/>.</ab>
 
               <gap reason="omitted"/>
@@ -2717,7 +2716,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp258027464">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Diocese of Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:214531" type="Place_EA_Diocese">Diocese of Ely</rs>
             <date from-iso="1532" to-iso="1533">1532–3</date>
             <seg ana="taxon:CABNWA">CABNWA</seg></head>
           <div xml:lang="lat" type="transcription" xml:id="cambs-ridp258027464-transcription">
@@ -2727,11 +2726,11 @@
 
               <gap reason="omitted"/>
 
-              <ab>Dat<ex>um</ex> Modulatoribus D<ex>omi</ex>ni Regis in <rs ref="eats:305411" type="CalendarDay_Liturgical">festo Transl<ex>ationi</ex>s
+              <ab>Dat<ex>um</ex> <rs ref="eats:325460" type="Collective_Troupe">Modulatoribus</rs> D<ex>omi</ex>ni Regis in <rs ref="eats:305411" type="CalendarDay_Liturgical">festo Transl<ex>ationi</ex>s
                   S<ex>anc</ex>te Etheldrede</rs><note type="foot"> S<ex>anc</ex>te Ethelrede: <hi
                     rend="italic">underlined</hi></note> virg<ex>inis</ex> 20 s. Dat<ex>um</ex>
-                hominibus ludent<ex>ibus</ex> coram D<ex>omi</ex>no Priore infra <rs ref="eats:239365" type="CalendarDay_Liturgical">Nat<ex>alem</ex>
-                  D<ex>omi</ex>ni</rs> 3 s. 4 d. Dat<ex>um</ex> Ministrall' infra Nat<ex>alem</ex>
+                <rs ref="eats:8782" type="Entertainer_Type">hominibus ludent<ex>ibus</ex></rs> coram D<ex>omi</ex>no Priore infra <rs ref="eats:239365" type="CalendarDay_Liturgical">Nat<ex>alem</ex>
+                  D<ex>omi</ex>ni</rs> 3 s. 4 d. Dat<ex>um</ex> <rs ref="eats:8709" type="Entertainer_Type">Ministrall'</rs> infra Nat<ex>alem</ex>
                   D<ex>omi</ex>ni 12 d<gap reason="omitted"/>.</ab>
 
               <gap reason="omitted"/>
@@ -2756,7 +2755,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp257933224">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Diocese of Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:214531" type="Place_EA_Diocese">Diocese of Ely</rs>
             <date precision="low" when-iso="1558"><hi rend="italic">c</hi> 1558</date>
             <seg ana="taxon:CABCXS">CABCXS</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp257933224-transcription">
@@ -2766,9 +2765,9 @@
 
               <gap reason="omitted"/>
 
-              <ab>M<ex>emoran</ex>d<ex>um</ex> to know M<ex>aste</ex>r Chauncello<ex>u</ex>r his
-                  pleas<ex>u</ex>r for order to be takyn for keepyng playes dawnsyng<ex>es</ex> and
-                mayegaymes in Churches and Churche yeard<ex>es</ex> vpon p<ex>re</ex>tense to
+              <ab>M<ex>emoran</ex>d<ex>um</ex> to know <!-- IN: Possible to get an ID for the Master Chancellor here? --> M<ex>aste</ex>r Chauncello<ex>u</ex>r his
+                pleas<ex>u</ex>r for order to be takyn for keepyng <rs ref="eats:40453" type="Drama_Type">playes</rs> <rs ref="eats:18451" type="Entertainer_Type">dawnsyng<ex>es</ex></rs> and
+                <rs ref="eats:35779" type="Entertainment_FolkCustom">mayegaymes</rs> in Churches and Churche yeard<ex>es</ex> vpon p<ex>re</ex>tense to
                 aduantage and p<ex>ro</ex>ffyt the Churche by the same/</ab>
             </div>
           </div>
@@ -2776,7 +2775,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp257976008">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Diocese of Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:214531" type="Place_EA_Diocese">Diocese of Ely</rs>
             <date when-iso="1579">1579</date>
             <seg ana="taxon:CABCXI">CABCXI</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp257976008-transcription">
@@ -2787,12 +2786,12 @@
               <gap reason="omitted"/>
 
               <ab>ITem bicause the Saboth day is so fondly abused in going vnto<note type="marginal"
-                  place="margin_right">44.</note> Fayers and visiting of frendes, and acquaintances,
-                and in feasting and making of good chere, in wanton dawnsing, in lewd maygames
-                sometyme continuing riotously with Piping all whole nightes in barnes and such odde
+                  place="margin_right">44.</note> <rs ref="eats:43457" type="Entertainment_Type">Fayers</rs> and visiting of frendes, and acquaintances,
+                and in <rs ref="eats:40561" type="Entertainment_Type">feasting</rs> and making of good chere, in wanton <rs ref="eats:18451" type="Entertainer_Type">dawnsing</rs>, in lewd <rs ref="eats:35779" type="Entertainment_FolkCustom">maygames</rs>
+                sometyme continuing riotously with <rs ref="eats:1162" type="Entertainer_Type">Piping</rs> all whole nightes in barnes and such odde
                 places, both younge men and women out of their fathers and masters howses, I charge
-                all my parishes, within my Dioces, and charge the Churchwardens, Sidemen, and
-                ministers to see that no such disorders be kept vpon the Sabaoth day, commonly
+                all my parishes, within my Dioces, and charge the <rs ref="eats:3576" type="Collective_Office">Churchwardens</rs>, Sidemen, and
+                <rs ref="eats:9186" type="Collective_Clergy">ministers</rs> to see that no such disorders be kept vpon the Sabaoth day, commonly
                 called the sundayes, as they will aunswere vppon their othe.</ab>
 
               <gap reason="omitted"/>
@@ -2802,7 +2801,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp257933736">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Diocese of Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:214531" type="Place_EA_Diocese">Diocese of Ely</rs>
             <date when-iso="1613">1613</date>
             <seg ana="taxon:CABLVA">CABLVA</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp257933736-transcription">
@@ -2812,11 +2811,11 @@
 
               <gap reason="omitted"/>
 
-              <ab>3. Whether hath there beene any fighting, chiding, brawling, or quarrelling, any
-                plaies, feasts, temporall Courts or Leets, lay Iuries, musters, or other prophane
-                vsage in your Church or Churchyard: any bels superstitiously rung on holy dayes or
-                their Eues, or at any other time, without good cause allowed by the Minister and
-                Churchwardens: haue any trees beene felled in your churchyard, and by whom?</ab>
+              <ab>3. Whether hath there beene any <rs ref="eats:45465" type="CrimesMisdemeanors">fighting</rs>, chiding, brawling, or quarrelling, any
+                <rs ref="eats:40453" type="Drama_Type">plaies</rs>, <rs ref="eats:40561" type="Entertainment_Type">feasts</rs>, temporall Courts or Leets, lay Iuries, musters, or other <rs ref="eats:45652" type="CrimesMisdemeanors">prophane</rs>
+                vsage in your <rs ref="eats:322628" type="Place_F_Church">Church</rs> or Churchyard: any bels superstitiously rung on holy dayes or
+                their Eues, or at any other time, without good cause allowed by the <rs ref="eats:9186" type="Collective_Clergy">Minister</rs> and
+                <rs ref="eats:3576" type="Collective_Office">Churchwardens</rs>: haue any trees beene felled in your churchyard, and by whom?</ab>
 
               <gap reason="omitted"/>
             </div>
@@ -2825,7 +2824,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp292111096">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Diocese of Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:214531" type="Place_EA_Diocese">Diocese of Ely</rs>
             <date when-iso="1638">1638</date>
             <seg ana="taxon:CABWVA">CABWVA</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp292111096-transcription">
@@ -2840,16 +2839,16 @@
                 is the default? Hath any person within your memory, or that you haue credibly heard
                 of, incroached vpon the Church-yard by setting vp any kind of building or fence vpon
                 it, or by opening any doore, gate or stile into it? Hath any vsed that place
-                (consecrated to an holy vse) prophanely or wickedly? Hath any vsed any chiding,
-                brawling or quarrelling words, or strucken any person either in the Church or
+                (consecrated to an holy vse) <rs ref="eats:45652" type="CrimesMisdemeanors">prophanely</rs> or wickedly? Hath any vsed any chiding,
+                <rs ref="eats:45465" type="CrimesMisdemeanors">brawling</rs> or quarrelling words, or strucken any person either in the <rs ref="eats:322628" type="Place_F_Church">Church</rs> or
                 Church-yard? Hath any person behaued himselfe rudely and disorderly in either; or
-                vsed any filthy or prophane talke, or any other rude and immodest behauiour in them?
+                vsed any filthy or prophane talke, or any other rude and <rs ref="eats:45689" type="CrimesMisdemeanors">immodest behauiour</rs> in them?
                 Is there any ordinary passage vsed through the Church, or any common walking
-                therein, or carrying of burdens, or playing of children? Or haue any other Playes,
-                Feasts, Banquets, Suppers, Church-ales, Drinkings, Temporall Courts, Leets, or
-                Lay-iuries, Musters, exercise of dancing<note type="foot">dancing: <hi rend="italic"
-                    >the</hi> i <hi rend="italic">is nearly invisible</hi></note>, stoole-ball,
-                foot- ball, or the like, or any Faires, or Markets, boothes, stalls or standings; or
+                therein, or carrying of burdens, or playing of children? Or haue any other <rs ref="eats:40453" type="Drama_Type">Playes</rs>,
+                <rs ref="eats:40561" type="Entertainment_Type">Feasts</rs>, Banquets, Suppers, Church-ales, Drinkings, Temporall Courts, Leets, or
+                Lay-iuries, Musters, exercise of <rs ref="eats:18451" type="Entertainer_Type">dancing</rs><note type="foot"><rs ref="eats:18451" type="Entertainer_Type">dancing</rs>: <hi rend="italic"
+                    >the</hi> i <hi rend="italic">is nearly invisible</hi></note>, <rs ref="eats:40677" type="Entertainment_Type">stoole-ball</rs>,
+                foot- ball, or the like, or any <rs ref="eats:43457" type="Entertainment_Type">Faires</rs>, or Markets, boothes, stalls or standings; or
                 any other prophane vsage beene suffered to be kept in your Church, Chappell or
                 Church- yard? Haue any annoyed your Church-yard or the fences thereof, by putting in
                 of cattell, by hanging vp of cloathes, or by laying any dust, dung, or any other
@@ -2863,39 +2862,39 @@
             </div>
           </div>
           <div type="endnote">
-            <p> The surviving answers to the inquiry tend to be brief (see the headnote to the
-              'Answers to Bishop <rs ref="eats:305445" type="Person_Male">Matthew Wren</rs>'s Inquiry'<!-- IN to link to CAABWP and CAABWQ -->),
+            <p> The surviving answers to the inquiry tend to be brief (see the headnote to the <ptr target="#cambs-ridp257913144"/> and 
+              'Answers to Bishop <rs ref="eats:305445" type="Person_Male">Matthew Wren</rs>'s Inquiry'<!-- IN to link to CAABWP and CAABWQ. [2022-05-30 IN]: Link to CAABWP inserted. CAABWQ awaiting OS checks. Link to be inserted at later date. -->),
               and the Puritanism of the county does not appear. The visitation itself was not
               unusually strict but Wren tried to insist the articles be answered (Palmer,
                 <title>Episcopal Visitation Returns</title>, p 136). The petition against Bishop
-              Wren was signed by more than 500 citizens of Cambridgeshire, for the most part from
+              Wren was signed by more than 500 citizens of <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, for the most part from
               the west of the county (Spufford, <title>Contrasting Communites</title>, p 235). After
               the first article, transcribed here, the complaints are, in short: two, that Wren sent
-              officers to enforce the visitation and that the churchwardens were forced to take
-              oaths; three, that Wren put a burden on 'the ministers, churchwardens, sidemen,
+              officers to enforce the visitation and that the <rs ref="eats:3576" type="Collective_Office">churchwardens</rs> were forced to take
+              oaths; three, that Wren put a burden on 'the <rs ref="eats:9186" type="Collective_Clergy">ministers</rs>, churchwardens, sidemen,
               assistants, midwives and divers others' by insisting on the visitation; four, that the
               people were burdened financially and temporally by the visitation during a difficult
               time; five, that moving the church furnishings in order to obey the decree was
               expensive; six, that there were too many pluralities and non-residences; seven, that
-              the small vicarages under the bishop or cathedral were not cared for and that many
+              the small vicarages under the bishop or <rs ref="eats:322628" type="Place_F_Church">cathedral</rs> were not cared for and that many
               people were ignorant; eight, that the popish innovations of the bishop led many to
               revolt against the church; nine, that many farmers were leaving the county because
               things were so bad; ten, that being told when to sit and when to stand during divine
-              services was profane and tyrannical; eleven, that probate and wills were costing too
+              services was <rs ref="eats:45652" type="CrimesMisdemeanors">profane</rs> and tyrannical; eleven, that probate and wills were costing too
               much; twelve, that there were too many pictures of the Trinity and the Virgin Mary in
-              the churches; and, thirteen, that the apparitors came and took the keys away and would
+              the churches; and, thirteen, that the <rs ref="eats:302857" type="Collective_Office">apparitors</rs> came and took the keys away and would
               not let women teach school. </p>
           </div>
         </body>
       </text>
       <text type="record" xml:id="cambs-ridp288345752">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Diocese of Ely</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:214531" type="Place_EA_Diocese">Diocese of Ely</rs>
             <date when-iso="1640">1640</date>
             <seg ana="taxon:CAPABW">CAPABW</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp288345752-transcription">
             <div>
-              <head>sheet [1] dorse <supplied>(Bishop's offenses)</supplied></head>
+              <head>sheet [1] dorse <supplied>(<rs ref="eats:305445" type="Person_Clergy">Bishop</rs>'s offenses)</supplied></head>
               <pb n="[1]" type="sheet"/>
 
               <gap reason="omitted"/>
@@ -2906,7 +2905,7 @@
                     <damage><gap unit="chars" extent="3"/></damage><note type="foot"><damage><gap
                       unit="chars" extent="3"/></damage>: <hi rend="italic">remainder of line, as
                     many as 25 characters, illegible</hi></note> <rs ref="eats:305445" type="Person_Clergy">Bishopp of Elie</rs>, wherevpon the
-                Churchwardens &amp; other Officers weare required by <damage><gap unit="chars"
+                <rs ref="eats:3576" type="Collective_Office">Churchwardens</rs> &amp; <rs ref="eats:9186" type="Collective_Clergy">other Officers</rs> weare required by <damage><gap unit="chars"
                     extent="3"/></damage>th to make <damage><gap unit="chars" extent="3"
                   /></damage>tni<note type="foot"><damage><gap unit="chars" extent="3"/></damage>:
                     <hi rend="italic">approximately 9 characters illegible</hi></note> &amp;
@@ -2918,7 +2917,7 @@
                     <damage><gap unit="chars" extent="3"/></damage><note type="foot"><damage><gap
                       unit="chars" extent="3"/></damage>: <hi rend="italic">remainder of line,
                     approximately 21 characters, illegible</hi></note> pressing the reading of the
-                booke of sport<ex>es</ex> &amp; recreac<ex>i</ex>ons strengthened by the
+                booke of <rs ref="eats:40677" type="Entertainment_Type">sport<ex>es</ex></rs> &amp; recreac<ex>i</ex>ons strengthened by the
                   Bishopp<ex>es</ex> owne p<damage><gap unit="chars" extent="8"/></damage> example
                 in bowling &amp; <damage><gap unit="chars" extent="3"/></damage><note type="foot"
                       ><damage><gap unit="chars" extent="3"/></damage>: <hi rend="italic">remainder
@@ -2929,13 +2928,13 @@
                   /></damage><note type="foot"><damage><gap unit="chars" extent="3"/></damage>: <hi
                     rend="italic">remainder of line, approximately 22 characters,
                   illegible</hi></note> of our now dread Sou<ex>er</ex>aigne touching Wakes &amp;
-                such like ffeast<ex>es</ex> (as they are called w<ex>i</ex>th us) &amp; in that
+                such like <rs ref="eats:40561" type="Entertainment_Type">ffeast<ex>es</ex></rs> (as they are called w<ex>i</ex>th us) &amp; in that
                 addition stiled the <damage><gap unit="chars" extent="3"/></damage><note type="foot"
                       ><damage><gap unit="chars" extent="3"/></damage>: <hi rend="italic">remainder
                     of line, approximately 20 characters, illegible</hi></note> whereby the
-                  Com<ex>m</ex>on prophanat<ex>i</ex>on of the Lord<ex>es</ex> daie w<ex>i</ex>th
-                beastlie drunckennes, lacivious Dauncing<ex>es</ex>, quarrelling<ex>es</ex> &amp;
-                  fighting<ex>es</ex> &amp; manie <damage><gap unit="chars" extent="3"/></damage>r
+                  Com<ex>m</ex>on <rs ref="eats:45652" type="CrimesMisdemeanors">prophanat<ex>i</ex>on</rs> of the Lord<ex>es</ex> daie w<ex>i</ex>th
+                beastlie <rs ref="eats:45503" type="CrimesMisdemeanors">drunckennes</rs>, <rs ref="eats:45689" type="CrimesMisdemeanors">lacivious</rs> <rs ref="eats:18451" type="Entertainer_Type">Dauncing<ex>es</ex></rs>, quarrelling<ex>es</ex> &amp;
+                  <rs ref="eats:45465" type="CrimesMisdemeanors">fighting<ex>es</ex></rs> &amp; manie <damage><gap unit="chars" extent="3"/></damage>r
                     gr<damage><gap unit="chars" extent="3"/></damage><note type="foot"
                       >gr<damage><gap unit="chars" extent="3"/></damage>: <hi rend="italic"
                     >remainder of line, approximately 22 characters, illegible</hi></note> of all
