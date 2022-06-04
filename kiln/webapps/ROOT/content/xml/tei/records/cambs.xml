@@ -728,131 +728,131 @@
       </text>
       <text type="record" xml:id="cambs-ridp280339256">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Bassingbourn</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:326134" type="Place_PA_Settlement">Bassingbourn</rs>
             <date when-iso="1511">1511</date>
             <seg ana="taxon:CAPPCA">CAPPCA</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp280339256-transcription">
             <div>
               <head>ff 30v–32 <supplied>(20 July) (St George Play receipts)</supplied></head>
-              <pb n="30v-32" type="folio"/><!-- IN: Not sure about the folio numbering here. PG: fixed, I think-->
+              <pb n="30v-32" type="folio"/>
 
-              <ab>M<ex>emoran</ex>d<ex>um</ex> Rec<ex>eived</ex> atte the playe had on <rs ref="eats:307504" type="CalendarDay_Liturgical">seynte
+              <ab>M<ex>emoran</ex>d<ex>um</ex> Rec<ex>eived</ex> atte the <rs ref="eats:326774" type="Drama_TitledWork">playe</rs> had on <rs ref="eats:307504" type="CalendarDay_Liturgical">seynte
                   Margar<ex>etes</ex> daye</rs> a<ex>nn</ex>o d<ex>omi</ex>ni .M<hi rend="superscript"
                   >l</hi>. v<hi rend="superscript">C</hi>. &amp; xj<hi rend="superscript">mo</hi>.
                 and the iij<hi rend="superscript">de</hi> yer off the Reign off <rs ref="eats:43591" type="Person_Royalty">kyng harrye the
-                  viij</rs><hi rend="superscript">th</hi>. had i<ex>n</ex> bassingburn off the holy
-                  m<ex>ar</ex>tir seynt georg. Att þ<ex>a</ex>t tyme Chirchewardeyns <rs ref="eats:307538" type="Person_Male">Iohn ayworthe</rs>
+                  viij</rs><hi rend="superscript">th</hi>. had i<ex>n</ex> <rs ref="eats:326134" type="Place_PA_Settlement">bassingburn</rs> off the holy
+                m<ex>ar</ex>tir seynt georg. Att þ<ex>a</ex>t tyme <rs ref="eats:3576" type="Collective_Office">Chirchewardeyns</rs> <rs ref="eats:307538" type="Person_Male">Iohn ayworthe</rs>
                 &amp; <rs ref="eats:307603" type="Person_Male">Iohn good than the eld<ex>er</ex></rs> i<ex>n</ex> bass<ex>ingburn</ex> i<ex>n</ex>
                 þe Westend. by theym rec<ex>eived</ex> tha<ex>n</ex> as afft<ex>er</ex>
                 folowith</ab>
 
               <table>
                 <row>
-                  <cell>ffirst rec<ex>eived</ex> off the Townshyppe off Royston<note type="foot"
-                      >Royston: <hi rend="italic">Royston, Hertfordshire</hi></note> S<ex>um</ex>ma </cell>
+                  <cell>ffirst rec<ex>eived</ex> off the Townshyppe off <rs ref="eats:326157" type="Place_PA_Settlement">Royston</rs><note type="foot"
+                      >Royston: <hi rend="italic"><rs ref="eats:326157" type="Place_PA_Settlement">Royston</rs>, <rs ref="eats:2003" type="Place_County">Hertfordshire</rs></hi></note> S<ex>um</ex>ma </cell>
                   <cell rend="right">xij s.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off the townshyppe off Tharffeld<note
-                      type="foot"> Tharffeld: <hi rend="italic">Therfield, Hertfordshire</hi></note>
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off the townshyppe off <rs ref="eats:326191" type="Place_PA_Settlement">Tharffeld</rs><note
+                      type="foot"> Tharffeld: <hi rend="italic"><rs ref="eats:326191" type="Place_PA_Settlement">Therfield</rs>, <rs ref="eats:2003" type="Place_County">Hertfordshire</rs></hi></note>
                       S<ex>um</ex>ma</cell>
                   <cell rend="right">vj s. viij d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off Melb<ex>our</ex>ne<note type="foot"
-                        >Melb<ex>our</ex>ne: <hi rend="italic">Melbourn, Cambridgeshire</hi></note>
-                    v s. iiij d. off lyttyllyngton<note type="foot">lyttyllyngton: <hi rend="italic"
-                        >Litlington, Cambridgeshire</hi></note> v s. ij d. ob. s<ex>um</ex>ma</cell>
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off <rs ref="eats:326214" type="Place_PA_Settlement">Melb<ex>our</ex>ne</rs><note type="foot"
+                        >Melb<ex>our</ex>ne: <hi rend="italic"><rs ref="eats:326214" type="Place_PA_Settlement">Melbourn</rs>, <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note>
+                    v s. iiij d. off <rs ref="eats:326248" type="Place_PA_Settlement">lyttyllyngton</rs><note type="foot">lyttyllyngton: <hi rend="italic"
+                        ><rs ref="eats:326248" type="Place_PA_Settlement">Litlington</rs>, <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> v s. ij d. ob. s<ex>um</ex>ma</cell>
                   <cell rend="right">x s. vj d. ob.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off whaddon<note type="foot">whaddon: <hi
-                        rend="italic">Whaddon, Cambridgeshire</hi></note> iiij s. iiij d. ob. off
-                    Stepulmordon <note type="foot">Stepulmordon: <hi rend="italic">Steeple Morden,
-                        Cambridgeshire</hi></note> iiij s. j d. s<ex>um</ex>ma</cell>
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off <rs ref="eats:326271" type="Place_PA_Settlement">whaddon</rs><note type="foot">whaddon: <hi
+                        rend="italic"><rs ref="eats:326271" type="Place_PA_Settlement">Whaddon</rs>, <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> iiij s. iiij d. ob. off
+                    <rs ref="eats:326294" type="Place_PA_Settlement">Stepulmordon</rs> <note type="foot">Stepulmordon: <hi rend="italic"><rs ref="eats:326294" type="Place_PA_Settlement">Steeple Morden</rs>,
+                        <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> iiij s. j d. s<ex>um</ex>ma</cell>
                   <cell rend="right">viij s. v d. ob.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off Berly<note type="foot">Berly: <hi
-                        rend="italic">Barley, Hertfordshire</hi></note> iiij s. j d. off
-                      asshewell<note type="foot">asshewell: <hi rend="italic">Ashwell,
-                        Hertfordshire</hi></note> iiij s. S<ex>um</ex>ma</cell>
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off <rs ref="eats:326317" type="Place_PA_Settlement">Berly</rs><note type="foot">Berly: <hi
+                        rend="italic"><rs ref="eats:326317" type="Place_PA_Settlement">Barley</rs>, <rs ref="eats:2003" type="Place_County">Hertfordshire</rs></hi></note> iiij s. j d. off
+                      <rs ref="eats:326340" type="Place_PA_Settlement">asshewell</rs><note type="foot">asshewell: <hi rend="italic"><rs ref="eats:326340" type="Place_PA_Settlement">Ashwell</rs>,
+                        <rs ref="eats:2003" type="Place_County">Hertfordshire</rs></hi></note> iiij s. S<ex>um</ex>ma</cell>
                   <cell rend="right">viij s. j d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off Abyngton<note type="foot">Abyngton: <hi
-                        rend="italic">Abington Pigots, Cambridgeshire</hi></note> iij s. iiij d. off
-                    Orwell <note type="foot">Orwell: <hi rend="italic">Orwell,
-                      Cambridgeshire</hi></note> iij s. S<ex>um</ex>ma</cell>
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off <rs ref="eats:326363" type="Place_PA_Settlement">Abyngton</rs><note type="foot">Abyngton: <hi
+                        rend="italic"><rs ref="eats:326363" type="Place_PA_Settlement">Abington Pigotts</rs>, <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> iij s. iiij d. off
+                    <rs ref="eats:326386" type="Place_PA_Settlement">Orwell</rs> <note type="foot">Orwell: <hi rend="italic"><rs ref="eats:326386" type="Place_PA_Settlement">Orwell</rs>,
+                      <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> iij s. S<ex>um</ex>ma</cell>
                   <cell rend="right">vj s. iiij d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off Wendey<note type="foot">Wendey: <hi
-                        rend="italic">Wendy, Cambridgeshire</hi></note> ij s. ix d. Off
-                      wyndpole<note type="foot">wyndpole: <hi rend="italic">Wympole,
-                        Cambridgeshire</hi></note> ij s. vij d. s<ex>um</ex>ma</cell>
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off <rs ref="eats:326409" type="Place_PA_Settlement">Wendey</rs><note type="foot">Wendey: <hi
+                        rend="italic"><rs ref="eats:326409" type="Place_PA_Settlement">Wendy</rs>, <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> ij s. ix d. Off
+                      <rs ref="eats:326432" type="Place_PA_Settlement">wyndpole</rs><note type="foot">wyndpole: <hi rend="italic"><rs ref="eats:326432" type="Place_PA_Settlement">Wympole</rs>,
+                        <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> ij s. vij d. s<ex>um</ex>ma</cell>
                   <cell rend="right">v s. iiij d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off Meldreth<note type="foot">Meldreth: <hi
-                        rend="italic">Meldreth, Cambridgeshire</hi></note> ij s. iiij d. off
-                      Arryngton<note type="foot"> Arryngton: <hi rend="italic">Arrington,
-                        Cambridgeshire</hi></note> ij s. iiij d. S<ex>um</ex>ma</cell>
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off <rs ref="eats:326455" type="Place_PA_Settlement">Meldreth</rs><note type="foot">Meldreth: <hi
+                        rend="italic"><rs ref="eats:326455" type="Place_PA_Settlement">Meldreth</rs>, <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> ij s. iiij d. off
+                      <rs ref="eats:326478" type="Place_PA_Settlement">Arryngton</rs><note type="foot"> Arryngton: <hi rend="italic"><rs ref="eats:326478" type="Place_PA_Settlement">Arrington</rs>,
+                        <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> ij s. iiij d. S<ex>um</ex>ma</cell>
                   <cell rend="right">iiij s. viij d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off shepreth<note type="foot">shepreth: <hi
-                        rend="italic">Shepreth, Cambridgeshire</hi></note> ij s. iiij d. off
-                      kelsey<note type="foot"> kelsey: <hi rend="italic">Kelshall,
-                        Hertfordshire</hi></note> ij s. v d. S<ex>um</ex>ma</cell>
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off <rs ref="eats:326501" type="Place_PA_Settlement">shepreth</rs><note type="foot">shepreth: <hi
+                        rend="italic"><rs ref="eats:326501" type="Place_PA_Settlement">Shepreth</rs>, <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> ij s. iiij d. off
+                      <rs ref="eats:326524" type="Place_PA_Settlement">kelsey</rs><note type="foot"> kelsey: <hi rend="italic"><rs ref="eats:326524" type="Place_PA_Settlement">Kelshall</rs>,
+                        <rs ref="eats:2003" type="Place_County">Hertfordshire</rs></hi></note> ij s. v d. S<ex>um</ex>ma</cell>
                   <cell rend="right">iiijs. ix d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off wyllyngham<note type="foot">wyllyngham:
-                        <hi rend="italic">Willingham, Cambridgeshire</hi></note> xxij d. off
-                      ffulmar<note type="foot">ffulmar: <hi rend="italic">Fowlmere,
-                        Cambridgeshire</hi></note> xx d. s<ex>um</ex>ma</cell>
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off <rs ref="eats:326547" type="Place_PA_Settlement">wyllyngham</rs><note type="foot">wyllyngham:
+                        <hi rend="italic"><rs ref="eats:326547" type="Place_PA_Settlement">Willingham</rs>, <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> xxij d. off
+                      <rs ref="eats:326570" type="Place_PA_Settlement">ffulmar</rs><note type="foot">ffulmar: <hi rend="italic"><rs ref="eats:326570" type="Place_PA_Settlement">Fowlmere</rs>,
+                        <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> xx d. s<ex>um</ex>ma</cell>
                   <cell rend="right">iij s. vj d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off gyldynmordon<note type="foot"
-                      >gyldynmordon: <hi rend="italic">Guilden Mordon, Cambridgeshire</hi></note>
-                    xvj d. off Taddelowe<note type="foot"> Taddelowe: <hi rend="italic">Tadlow,
-                        Cambridgeshire</hi></note> xij d. s<ex>um</ex>ma</cell>
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off <rs ref="eats:326593" type="Place_PA_Settlement">gyldynmordon</rs><note type="foot"
+                      >gyldynmordon: <hi rend="italic"><rs ref="eats:326593" type="Place_PA_Settlement">Guilden Mordon</rs>, <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note>
+                    xvj d. off <rs ref="eats:326616" type="Place_PA_Settlement">Taddelowe</rs><note type="foot"> Taddelowe: <hi rend="italic"><rs ref="eats:326616" type="Place_PA_Settlement">Tadlow</rs>,
+                        <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> xij d. s<ex>um</ex>ma</cell>
                   <cell rend="right">ij s. iiij d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off Crawdeyn<note type="foot"> Crawdeyn: <hi
-                        rend="italic">Croydon, Cambridgeshire</hi></note> xvj d. off hattely<note
-                      type="foot">hattely: <hi rend="italic">Hatley, Cambridgeshire, now Hatley St
-                        George and East Hatley, Cambridgeshire</hi></note> x d.
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off <rs ref="eats:123294" type="Place_PA_Settlement">Crawdeyn</rs><note type="foot"> Crawdeyn: <hi
+                        rend="italic"><rs ref="eats:123294" type="Place_PA_Settlement">Croydon</rs>, <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> xvj d. off <rs ref="eats:326639">hattely</rs><note
+                      type="foot">hattely: <hi rend="italic"><rs ref="eats:326639">Hatley</rs>, <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, now Hatley St
+                        George and East Hatley, <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> x d.
                     S<ex>um</ex>ma</cell>
                   <cell rend="right">ij s. ij d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off wrastlyngworthe<note type="foot"
-                      >wrastlyngworth: <hi rend="italic">Wrestlingworth, Bedfordshire</hi></note> ix
-                    d. off hasselyngffeld<note type="foot">hasselyngffeld: <hi rend="italic"
-                        >Haslingfield, Cambridgeshire</hi></note> ix d. s<ex>um</ex>ma</cell>
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off <rs ref="eats:326659" type="Place_PA_Settlement">wrastlyngworthe</rs><note type="foot"
+                      >wrastlyngworth: <hi rend="italic"><rs ref="eats:326659" type="Place_PA_Settlement">Wrestlingworth</rs>, <rs ref="eats:1733" type="Place_County">Bedfordshire</rs></hi></note> ix
+                    d. off <rs ref="eats:326682" type="Place_PA_Settlement">hasselyngffeld</rs><note type="foot">hasselyngffeld: <hi rend="italic"
+                        ><rs ref="eats:326682" type="Place_PA_Settlement">Haslingfield</rs>, <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> ix d. s<ex>um</ex>ma</cell>
                   <cell rend="right">xviij d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off Barkwey<note type="foot">Barkwey: <hi
-                        rend="italic">Barkway, Hertfordshire</hi></note> viij d. off ffoxtun<note
-                      type="foot">ffoxtun: <hi rend="italic">Foxton, Cambridgeshire</hi></note> iiij
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off <rs ref="eats:326705" type="Place_PA_Settlement">Barkwey</rs><note type="foot">Barkwey: <hi
+                        rend="italic"><rs ref="eats:326705" type="Place_PA_Settlement">Barkway</rs>, <rs ref="eats:2003" type="Place_County">Hertfordshire</rs></hi></note> viij d. off <rs ref="eats:326728" type="Place_PA_Settlement">ffoxtun</rs><note
+                      type="foot">ffoxtun: <hi rend="italic"><rs ref="eats:326728" type="Place_PA_Settlement">Foxton</rs>, <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> iiij
                     d. S<ex>um</ex>ma</cell>
                   <cell rend="right">xij d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m Rec<ex>eived</ex> off kneseworthe<note type="foot"
-                      >kneseworthe: <hi rend="italic">Kneesworth, now part of
+                  <cell>It<ex>e</ex>m Rec<ex>eived</ex> off <rs ref="eats:326751" type="Place_PA_Settlement">kneseworthe</rs><note type="foot"
+                      >kneseworthe: <hi rend="italic"><rs ref="eats:326751" type="Place_PA_Settlement">Kneesworth</rs>, now part of
                         Bassingbourn-cum-Kneesworth</hi></note> w<ex>i</ex>t<ex>h</ex> vj d. of
                     hekys ȝefft þ<ex>er</ex> s<ex>um</ex>ma</cell>
                   <cell rend="right">ij s. vj d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off the townshype off bass<ex>ingbourne</ex>
-                    on the mondaye. and on the Tewysday next afft<ex>er</ex> the playe.
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> off the townshype off <rs ref="eats:326134" type="Place_PA_Settlement">bass<ex>ingbourne</ex></rs>
+                    on the mondaye. and on the Tewysday next afft<ex>er</ex> the <rs ref="eats:326774" type="Drama_TitledWork">playe</rs>.
                     S<ex>um</ex>ma toged<ex>er</ex> w<ex>i</ex>t<ex>h</ex> other
                       com<ex>m</ex>er<ex>es</ex> vn the mondaye</cell>
                   <cell rend="right">xiiij s. v d.</cell>
@@ -871,7 +871,7 @@
                 </row>
                 <row>
                   <cell>It<ex>e</ex>m rec<ex>eived</ex> off <rs ref="eats:307681" type="Person_Male">Tho<ex>m</ex>as taylor</rs> i<ex>n</ex>
-                      bass<ex>ingbourne</ex> bocher i<ex>n</ex> mony of h<ex>is</ex> ȝefft</cell>
+                      bass<ex>ingbourne</ex> <rs ref="eats:29018" type="Collective_Occupations">bocher</rs> i<ex>n</ex> mony of h<ex>is</ex> ȝefft</cell>
                   <cell rend="right">xx d.</cell>
                 </row>
                 <row>
@@ -881,8 +881,8 @@
                 </row>
                 <row>
                   <cell>It<ex>e</ex>m rec<ex>eived</ex> off <rs ref="eats:307948" type="Person_Male">Ioh<ex>n</ex> Dab<ex>er</ex></rs> iiij d. off
-                      <rs ref="eats:308009" type="Person_Male">Tho<ex>m</ex>as m<ex>ar</ex>chall</rs> suant<note type="foot"> suant: <hi
-                        rend="italic">for</hi> seruant<hi rend="italic">; mark of abbreviation
+                      <rs ref="eats:308009" type="Person_Male">Tho<ex>m</ex>as m<ex>ar</ex>chall</rs> <rs ref="eats:297010" type="Collective_Occupations">suant</rs><note type="foot"> suant: <hi
+                        rend="italic">for</hi> <rs ref="eats:297010" type="Collective_Occupations">seruant</rs><hi rend="italic">; mark of abbreviation
                         missing</hi></note> of <rs ref="eats:303367" type="Person_StatusOther">M<ex>aster</ex> Malery</rs> iiij d. s<ex>um</ex>ma</cell>
                   <cell rend="right">viij d.</cell>
                 </row>
@@ -908,8 +908,8 @@
                 <row>
                   <cell>It<ex>em</ex> rec<ex>eived</ex> of <rs ref="eats:308704" type="Person_Male">Rob<ex>er</ex>t bland<ex>es</ex></rs><note
                       type="foot"><rs ref="eats:308704" type="Person_Commoner">bland<ex>es</ex>: <hi rend="italic">Bland</hi></rs></note> ȝefft of
-                      buntfford<note type="foot">buntfford: <hi rend="italic">Buntingford,
-                        Hertfordshire</hi></note> s<ex>um</ex>ma</cell>
+                      <rs ref="eats:250185" type="Place_PA_Settlement">buntfford</rs><note type="foot">buntfford: <hi rend="italic"><rs ref="eats:250185" type="Place_PA_Settlement">Buntingford</rs>,
+                        <rs ref="eats:2003" type="Place_County">Hertfordshire</rs></hi></note> s<ex>um</ex>ma</cell>
                   <cell rend="right">xij d.</cell>
                 </row>
               </table>
@@ -921,7 +921,7 @@
                   </cell>
                   <cell rend="right"><del><damage><gap unit="chars" extent="7"/></damage></del><note
                       type="foot"><del><damage><gap unit="chars" extent="7"/></damage></del>: <hi
-                        rend="italic">Dymond, <title>Churchwardens' Book</title>, p 72, reads</hi>
+                        rend="italic">Dymond, <title><rs ref="eats:3576" type="Collective_Office">Churchwardens</rs>' Book</title>, p 72, reads</hi>
                       <del>…</del> preter ob</note>
                   </cell>
                 </row>
@@ -948,14 +948,14 @@
 
               <table>
                 <row>
-                  <cell>It<ex>em</ex> rec<ex>eived</ex> off <rs ref="eats:308766" type="Person_Male">Ioh<ex>n</ex> good</rs> karpent<ex>er</ex>
-                    &amp; whelewhryght off his ȝefft i<ex>n</ex> w<ex>or</ex>kema<ex>n</ex> shippe
+                  <cell>It<ex>em</ex> rec<ex>eived</ex> off <rs ref="eats:308766" type="Person_Male">Ioh<ex>n</ex> good</rs> <rs ref="eats:39209" type="Collective_Occupations">karpent<ex>er</ex></rs>
+                    &amp; <rs ref="eats:29231" type="Collective_Occupations">whelewhryght</rs> off his ȝefft i<ex>n</ex> w<ex>or</ex>kema<ex>n</ex> shippe
                     off <rs ref="eats:302218" type="Thing_Property">falchons</rs> &amp; tourmentour<ex>es</ex> axis p<ex>ar</ex>te of the stuffyff of
                     his own and ffor a Rymbyll of a whele S<ex>um</ex>ma toged<ex>er</ex></cell>
                   <cell rend="right">xvj d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>em</ex> rec<ex>eived</ex> off <rs ref="eats:308832" type="Person_Male">Ioh<ex>n</ex> hobard</rs> p<ex>re</ex>ste
+                  <cell>It<ex>em</ex> rec<ex>eived</ex> off <rs ref="eats:308832" type="Person_Male">Ioh<ex>n</ex> hobard</rs> <rs ref="eats:9186" type="Collective_Clergy">p<ex>re</ex>ste</rs>
                       toward<ex>es</ex> theys cost<ex>es</ex> i<ex>n</ex> all out of his
                       labo<ex>ur</ex> for berying the <rs ref="eats:70656" type="Thing_BookPlayMusic">play booke</rs> w<ex>i</ex>t<ex>h</ex> iij d. for a
                       bos<ex>hel</ex> of malte s<ex>um</ex>ma</cell>
@@ -1042,9 +1042,9 @@
                   <cell>It<ex>em</ex></cell>
                 </row>
                 <row>
-                  <cell>It<ex>em</ex> rec<ex>eived</ex> off <rs ref="eats:309729" type="Person_Male">morgon gyft</rs> of gylden mordon<note
-                      type="foot">gylden mordon: <hi rend="italic">Guilden Morden,
-                        Cambridgeshire</hi></note> a shepe p<ex>ri</ex>c<ex>e</ex>
+                  <cell>It<ex>em</ex> rec<ex>eived</ex> off <rs ref="eats:309729" type="Person_Male">morgon gyft</rs> of <rs ref="eats:326593" type="Place_PA_Settlement">gylden mordon</rs><note
+                      type="foot">gylden mordon: <hi rend="italic"><rs ref="eats:326593" type="Place_PA_Settlement">Guilden Morden</rs>,
+                        <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note> a shepe p<ex>ri</ex>c<ex>e</ex>
                   </cell>
                   <cell rend="right">xxij d.</cell>
                 </row>
@@ -1099,7 +1099,7 @@
                 <row>
                   <cell>It<ex>em</ex> of <rs ref="eats:310119" type="Person_Male">will<ex>iam</ex> Tho<ex>m</ex>as</rs> of wy<ex>n</ex>dpole<note
                       type="foot">wy<ex>n</ex>dpole: <hi rend="italic">Wympole,
-                      Cambridgeshire</hi></note>
+                      <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note>
                   </cell>
                   <cell rend="right">iiij bos<ex>hels</ex></cell>
                 </row>
@@ -1123,7 +1123,7 @@
                 </row>
                 <row>
                   <cell>It<ex>em</ex> off <rs ref="eats:310312" type="Person_Male">iohn game</rs> of knes<ex>worthe</ex><note type="foot"
-                        >knes<ex>worthe</ex>: <hi rend="italic">Kneesworth, now part of
+                        >knes<ex>worthe</ex>: <hi rend="italic"><rs ref="eats:326751" type="Place_PA_Settlement">Kneesworth</rs>, now part of
                         Bassingbourn-cum-Kneesworth</hi></note>
                   </cell>
                   <cell rend="right">iij bos<ex>hels</ex></cell>
@@ -1228,8 +1228,8 @@
                   bos<ex>hels</ex>. It<ex>em</ex> of gyleȝ assh<ex>ewell</ex> iiij bos<ex>hels</ex>.
                   It<ex>em</ex> of will<ex>iam</ex> soylard of <rs ref="eats:311298" type="Person_StatusOther">w<ex>illiam</ex> waller</rs>. off
                   <rs ref="eats:311316" type="Person_StatusOther">Th<ex>omas</ex> gybbe</rs> i<ex>n</ex> knes<ex>worth</ex><note type="foot"
-                    >knes<ex>worthe</ex>: <hi rend="italic">Kneesworth, now part of
-                    Bassingbourn-cum- Kneesworth</hi></note> of Ioh<ex>n</ex> hobard p<ex>re</ex>st
+                    >knes<ex>worthe</ex>: <hi rend="italic"><rs ref="eats:326751" type="Place_PA_Settlement">Kneesworth</rs>, now part of
+                    Bassingbourn-cum-Kneesworth</hi></note> of Ioh<ex>n</ex> hobard p<ex>re</ex>st
                   ayþ<ex>er</ex> of þe<ex>m</ex> a bos<ex>hel</ex> s<ex>um</ex>ma xij
                   bos<ex>hels</ex>
                 <pb/></ab>
@@ -1244,14 +1244,14 @@
                   <cell rend="right">xx s. ij d.</cell>
                 </row>
                 <row>
-                  <cell>It<ex>e</ex>m payd to mynystrell<ex>es</ex> &amp; iij wayt<ex>es</ex> of
-                      cambrigg<ex>e</ex> for the wednesdaye sondaye &amp; monday. ij off theym þe
+                  <cell>It<ex>e</ex>m payd to <rs ref="eats:8709" type="Entertainer_Type">mynystrell<ex>es</ex></rs> &amp; iij <rs ref="eats:322602" type="Collective_Office">wayt<ex>es</ex> of
+                      cambrigg<ex>e</ex></rs> for the wednesdaye sondaye &amp; monday. ij off theym þe
                     first day &amp; iij þe other days </cell>
                   <cell rend="right">v s. xj d.</cell>
                 </row>
                 <row>
                   <cell>It<ex>e</ex>m i<ex>n</ex> Expe<ex>n</ex>s<ex>es</ex> on the
-                      player<ex>es</ex> whan that þe playe was shewed i<ex>n</ex> <rs ref="eats:40978" type="Thing_FoodDrink">bred</rs> &amp; ale and
+                    <rs ref="eats:8782" type="Entertainer_Type">player<ex>es</ex></rs> whan that þe playe was shewed i<ex>n</ex> <rs ref="eats:40978" type="Thing_FoodDrink">bred</rs> &amp; ale and
                     ffor other vytall<ex>es</ex> att royston on thos<ex>e</ex> player<ex>es</ex>
                   </cell>
                   <cell rend="right">iij s. ij d.</cell>
@@ -1446,7 +1446,7 @@
                 <row>
                   <cell>It<ex>e</ex>m payde ffor ffetti<ex>n</ex>g a q<ex>u</ex>art<ex>er</ex> malt
                       fro<ex>m</ex> wyndpole<note type="foot">wyndpole: <hi rend="italic">Wympole,
-                        Cambridgeshire</hi></note></cell>
+                        <rs ref="eats:1787" type="Place_County">Cambridgeshire</rs></hi></note></cell>
                   <cell rend="right">j d.</cell>
                 </row>
                 <row>
@@ -1636,7 +1636,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp280923992">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Bassingbourn</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:326134" type="Place_PA_Settlement">Bassingbourn</rs>
             <date from-iso="1516" to-iso="1517">1516–17</date>
             <seg ana="taxon:CAPPCA">CAPPCA</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp280923992-transcription">
@@ -1649,7 +1649,7 @@
               <table>
                 <row>
                   <cell>It<ex>e</ex>m rec<ex>eived</ex> this ‸<add place="above">ye<ex>re</ex></add>
-                    yn hokkyng mony gad<ex>er</ex>id to þe <rs ref="eats:302073" type="Thing_SetMachinery">torcheȝ</rs> w<ex>i</ex>t<ex>h</ex> iiij s.
+                    yn <rs ref="eats:40815" type="Entertainment_FolkCustom">hokkyng</rs> mony gad<ex>er</ex>id to þe <rs ref="eats:302073" type="Thing_SetMachinery">torcheȝ</rs> w<ex>i</ex>t<ex>h</ex> iiij s.
                     &amp; viij d. made &amp; inc<ex>re</ex>syd by <rs ref="eats:303732" type="Person_Male">gyleȝ assh<ex>well</ex></rs>
                       w<ex>i</ex>t<ex>h</ex> of þe last yer levi<ex>n</ex>g </cell>
                   <cell rend="right">xv s. iiij d.</cell>
@@ -1663,7 +1663,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp280944664">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Bassingbourn</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:326134" type="Place_PA_Settlement">Bassingbourn</rs>
             <date from-iso="1519" to-iso="1520">1519–20</date>
             <seg ana="taxon:CAPPCA">CAPPCA</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp280944664-transcription">
@@ -1674,7 +1674,7 @@
               <table>
                 <row>
                   <cell>It<ex>e</ex>m rec<ex>eived</ex> <rs ref="eats:303732" type="Person_Male">asshewell</rs> <rs ref="eats:303766" type="Person_Female">wyff</rs><note type="foot">asshewell
-                      wyff: <hi rend="italic"><rs ref="eats:303766" type="Person_StatusOther">Isabell Ashwell</rs></hi></note> for ockyng mony </cell>
+                      wyff: <hi rend="italic"><rs ref="eats:303766" type="Person_StatusOther">Isabell Ashwell</rs></hi></note> for <rs ref="eats:40815" type="Entertainment_FolkCustom">ockyng</rs> mony </cell>
                   <cell rend="right">viij s.</cell>
                 </row>
               </table>
@@ -1686,7 +1686,7 @@
       </text>
       <text type="record" xml:id="cambs-ridp280955624">
         <body>
-          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs>Bassingbourn</rs>
+          <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:326134" type="Place_PA_Settlement">Bassingbourn</rs>
             <date from-iso="1533" to-iso="1534">1533–4</date>
             <seg ana="taxon:CAPPCA">CAPPCA</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp280955624-transcription">
@@ -1698,7 +1698,7 @@
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m rec<ex>eived</ex> of <rs ref="eats:303766" type="Person_Female">Eȝabell asshwell</rs> for hokyng monye </cell>
+                  <cell>It<ex>e</ex>m rec<ex>eived</ex> of <rs ref="eats:303766" type="Person_Female">Eȝabell asshwell</rs> for <rs ref="eats:40815" type="Entertainment_FolkCustom">hokyng</rs> monye </cell>
                   <cell rend="right">vj s.</cell>
                 </row>
                 <row>
@@ -1727,7 +1727,7 @@
             <p> Although the heading for this account notes that it was written on 26 July 1534, it
               also sets this date as 26 Henry VIII, which would be 1535. The dates for this record
               are thus based on period during which <rs ref="eats:303974" type="Person_Male">Thomas Wrotham</rs> and <rs ref="eats:303992" type="Person_Male">Robert Betton</rs>, who composed
-              this account, served as churchwardens (Dymond, <title>Churchwardens' Book</title>, p
+              this account, served as <rs ref="eats:3576" type="Collective_Office">churchwardens</rs> (Dymond, <title>Churchwardens' Book</title>, p
               xxxiii). </p>
           </div>
         </body>
@@ -1781,8 +1781,8 @@
             </div>
           </div>
           <div type="endnote">
-            <p> It is impossible to tell in this entry whether the players referred to are dramatic
-              players or card players. </p>
+            <p> It is impossible to tell in this entry whether the players referred to are <rs ref="eats:8782" type="Entertainer_Type">dramatic
+              players</rs> or <rs ref="eats:40677" type="Entertainment_Type">card players</rs>. </p>
           </div>
         </body>
       </text>
@@ -2361,7 +2361,7 @@
 
               <gap reason="omitted"/>
 
-              <ab>To minstrels of the lord of Morle, staying here on Easter day, 3s 4d [ibid.]</ab>
+              <ab>To minstrels of the lord Morley, staying here on Easter day, 3s 4d [ibid.]</ab>
 
               <gap reason="omitted"/>
             </div>
