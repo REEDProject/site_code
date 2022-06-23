@@ -846,7 +846,7 @@
                 <row>
                   <cell>It<ex>e</ex>m Rec<ex>eived</ex> off <rs ref="eats:326751" type="Place_PA_Settlement">kneseworthe</rs><note type="foot"
                       >kneseworthe: <hi rend="italic"><rs ref="eats:326751" type="Place_PA_Settlement">Kneesworth</rs>, now part of
-                        Bassingbourn-cum-Kneesworth</hi></note> w<ex>i</ex>t<ex>h</ex> vj d. of
+                        <rs ref="eats:326134" type="Place_PA_Settlement">Bassingbourn-cum-Kneesworth</rs></hi></note> w<ex>i</ex>t<ex>h</ex> vj d. of
                     hekys ȝefft þ<ex>er</ex> s<ex>um</ex>ma</cell>
                   <cell rend="right">ij s. vj d.</cell>
                 </row>
@@ -1124,7 +1124,7 @@
                 <row>
                   <cell>It<ex>em</ex> off <rs ref="eats:310312" type="Person_Male">iohn game</rs> of knes<ex>worthe</ex><note type="foot"
                         >knes<ex>worthe</ex>: <hi rend="italic"><rs ref="eats:326751" type="Place_PA_Settlement">Kneesworth</rs>, now part of
-                        Bassingbourn-cum-Kneesworth</hi></note>
+                        <rs ref="eats:326134" type="Place_PA_Settlement">Bassingbourn-cum-Kneesworth</rs></hi></note>
                   </cell>
                   <cell rend="right">iij bos<ex>hels</ex></cell>
                 </row>
@@ -1229,7 +1229,7 @@
                   It<ex>em</ex> of will<ex>iam</ex> soylard of <rs ref="eats:311298" type="Person_StatusOther">w<ex>illiam</ex> waller</rs>. off
                   <rs ref="eats:311316" type="Person_StatusOther">Th<ex>omas</ex> gybbe</rs> i<ex>n</ex> knes<ex>worth</ex><note type="foot"
                     >knes<ex>worthe</ex>: <hi rend="italic"><rs ref="eats:326751" type="Place_PA_Settlement">Kneesworth</rs>, now part of
-                    Bassingbourn-cum-Kneesworth</hi></note> of Ioh<ex>n</ex> hobard p<ex>re</ex>st
+                    <rs ref="eats:326134" type="Place_PA_Settlement">Bassingbourn-cum-Kneesworth</rs></hi></note> of Ioh<ex>n</ex> hobard p<ex>re</ex>st
                   ayþ<ex>er</ex> of þe<ex>m</ex> a bos<ex>hel</ex> s<ex>um</ex>ma xij
                   bos<ex>hels</ex>
                 <pb/></ab>
@@ -1537,9 +1537,9 @@
                 </row>
                 <row>
                   <cell>It<ex>em</ex> the same Tho<ex>m</ex>as soylard &amp; Ioh<ex>n</ex> gosselyn
-                    ffor <rs ref="eats:312215" type="Person_Male">Tho<ex>m</ex>as Roog<ex>er</ex></rs> off kneseworthe<note type="foot"
-                      >kneseworthe: <hi rend="italic">Kneesworth, now part of Bassingbourn-
-                        cum-Kneesworth</hi></note></cell>
+                    ffor <rs ref="eats:312215" type="Person_Male">Tho<ex>m</ex>as Roog<ex>er</ex></rs> off <rs ref="eats:326751" type="Place_PA_Settlement">kneseworthe</rs><note type="foot"
+                      >kneseworthe: <hi rend="italic"><rs ref="eats:326751" type="Place_PA_Settlement">Kneesworth</rs>, now part of <rs ref="eats:326134" type="Place_PA_Settlement">Bassingbourn-
+                        cum-Kneesworth</rs></hi></note></cell>
                   <cell rend="right"> j bo<ex>shel</ex> malte</cell>
                 </row>
                 <row>
@@ -8418,7 +8418,7 @@
           <div xml:lang="eng" type="transcription" xml:id="cambs-ridp288244344-transcription">
             <div>
               <head>f 129v <supplied>(22 January–8 February) (Payments on trip to
-                London)</supplied></head>
+                <rs ref="eats:36947" type="Place_PA_Settlement">London</rs>)</supplied></head>
               <pb n="129v" type="folio"/>
 
               <gap reason="omitted"/>
@@ -8538,7 +8538,7 @@
             </div>
           </div>
           <div type="endnote">
-            <p> Payments to the trumpeter (f 129v) are included in other military expenses for the
+            <p> Payments to the <rs ref="eats:1225" type="Entertainer_Type">trumpeter</rs> (f 129v) are included in other military expenses for the
               war in the Low Countries. </p>
           </div>
         </body>
