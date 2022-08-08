@@ -20953,7 +20953,7 @@ SO content-checked
                     <msDesc xml:id="CADC15">
                         <msIdentifier>
                             <settlement>Cambridge</settlement>
-                            <repository>Cambridge University Library</repository>
+                            <repository sameAs="#CUL"/>
                             <idno type="shelfmark">EDR B/2/15</idno>
                             <msName>Diocesan Court Proceedings</msName>
                         </msIdentifier>
@@ -20968,7 +20968,7 @@ SO content-checked
                     <msDesc xml:id="CADC32">
                         <msIdentifier>
                             <settlement>Cambridge</settlement>
-                            <repository>Cambridge University Library</repository>
+                            <repository sameAs="#CUL"/>
                             <idno type="shelfmark">EDR D/2/32</idno>
                             <msName>Diocesan Court Proceedings</msName>
                         </msIdentifier>
@@ -20983,7 +20983,7 @@ SO content-checked
                     <msDesc xml:id="CAHTGA">
                         <msIdentifier>
                             <settlement>Wisbech</settlement>
-                            <repository>Wisbech and Fenland Museum</repository>
+                            <repository sameAs="#wisbech-fenland-museum"/>
                             <idno type="shelfmark">Guild of the Holy Trinity in Wisbech 1379-1547
                                 &amp; Corporation Records 1564-1566</idno>
                             <msName>Holy Trinity Guild Accounts</msName>
