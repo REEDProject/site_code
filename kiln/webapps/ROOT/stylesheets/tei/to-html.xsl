@@ -85,6 +85,10 @@
     <img src="{$kiln:assets-path}{@url}" />
   </xsl:template>
 
+  <xsl:template match="tei:graphic[@type='smartframe']">
+    <script src="{@url}" data-image-id="{@n}" data-theme="aco" data-width="100%"></script>
+  </xsl:template>
+
   <xsl:template match="tei:handShift">
     <xsl:text>°</xsl:text>
   </xsl:template>
