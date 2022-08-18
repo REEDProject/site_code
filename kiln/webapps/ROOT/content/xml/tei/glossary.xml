@@ -420,6 +420,13 @@
             <div xml:id="latin" corresp="#latin_headnote">
                 <head>Latin Glossary</head>
                 <div n="A" xml:id="gloss-la-A">
+                    <entry xml:id="adrespondeo">
+                        <form>
+                            <orth>adrespondeo, -ere, -di, -sum</orth>
+                            <gram>v intr</gram>
+                        </form>
+                        <sense xml:id="adrespondeo-1">to respond, reply </sense>
+                    </entry>
                     <entry xml:id="alienus">
                         <form>
                             <orth>alienus, -a, -um</orth>
@@ -440,13 +447,7 @@
                         </sense>
                     </entry>
                     
-                    <entry xml:id="adrespondeo">
-                        <form>
-                            <orth>adrespondeo, -ere, -di, -sum</orth>
-                            <gram>v intr</gram>
-                        </form>
-                        <sense xml:id="adrespondeo-1">to respond, reply </sense>
-                    </entry>
+                  
                     <entry xml:id="armorarius">
                         <form>
                             <orth>armorarius, -i</orth>
@@ -456,7 +457,16 @@
                                     armurarius <ref>[<hi rend="italic">DML</hi>]</ref>
                         </sense>
                     </entry>
-
+                    <entry xml:id="assetum">
+                        <form>
+                            <orth>assetum, -i</orth> 
+                            <gram>n nt</gram> 
+                        </form>
+                        <sense xml:id="assetum-1"><hi rend="italic">var of</hi> acetum 
+                            <ref>[<hi rend="italic">OLD, DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="auriferarius">
                         <form>
                             <orth>auriferarius, -i</orth>
@@ -534,6 +544,15 @@
                             usual</hi> berewardus <ref>[<hi rend="italic">DML</hi>]</ref>
                         </sense>
                     </entry>
+                    <entry xml:id="botura">
+                        <form>
+                            <orth>botura, -e</orth> 
+                            <gram>n f</gram> 
+                        </form>
+                        <sense xml:id="botura-1"> butter
+                            <ref>[<hi rend="italic">cp DML</hi>] butyrum]</ref>
+                        </sense>
+                    </entry>
                     
                     <entry xml:id="budellus">
                         <form>
@@ -593,6 +612,34 @@
                         </sense>
                     </entry>
                     
+                    <entry xml:id="casius">
+                        <form>
+                            <orth>casius, -i</orth> 
+                            <gram>n m</gram> 
+                        </form>
+                        <sense xml:id="casius-1"><hi rend="italic">var of</hi> caseus
+                            <ref>[<hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="casus">
+                        <form>
+                            <orth>casus, -us</orth> 
+                            <gram>n m</gram> 
+                        </form>
+                        <sense xml:id="casus-1"><hi rend="italic">in CL</hi> fall, a falling or throwing down; <hi rend="italic">here the form has apparently been confused with</hi><form><orth>caseus, -i</orth> <gram>n m</gram></form> cheese
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="ce">
+                        <form>
+                            <orth>ce</orth> 
+                            <gram>pron</gram> 
+                        </form>
+                        <sense xml:id="ce-1"><hi rend="italic">var of</hi> se
+                            <ref>[<hi rend="italic">OLD, DML</hi>]</ref>
+                        </sense>
+                    </entry>
                     
                     <entry xml:id="celerarius">
                         <form>
@@ -642,7 +689,19 @@
                         <sense xml:id="cimiterium-1"><hi rend="italic">var of</hi> coemeterium
                                     <ref>[<hi rend="italic">DML</hi>]</ref></sense>
                     </entry>
-                    <entry xml:id="cithardus">
+                    
+                    <entry xml:id="cirpus">
+                        <form>
+                            <orth>cirpus, -i</orth> 
+                            <gram>n m</gram> 
+                        </form>
+                        <sense xml:id="cirpus-1"><hi rend="italic">var of</hi> scirpus
+                            <ref>[<hi rend="italic">DML</hi>]</ref>; <form><orth>sirpus</orth></form>
+                        </sense>
+                    </entry>
+                    
+                    
+                   <entry xml:id="cithardus">
                         <form>
                             <orth>cithardus, -i</orth>
                             <gram>n m</gram>
@@ -651,6 +710,15 @@
                         </sense>
                     </entry>
                     
+                    <entry xml:id="cituatum">
+                        <form>
+                            <orth>cituatum</orth> 
+                            <gram>pfp</gram> 
+                        </form>
+                        <sense xml:id="cituatum-1"><hi rend="italic"> var of</hi> situatum
+                            <ref>[<hi rend="italic">DML</hi> situare]</ref>
+                        </sense>
+                    </entry>
                     
                     <entry xml:id="coma">
                         <form>
@@ -675,6 +743,32 @@
                         </sense>
                     </entry>
                     
+                    <entry xml:id="corneria">
+                        <form>
+                            <orth>corneria, -e</orth> 
+                            <gram>n f</gram> 
+                        </form>
+                        <sense xml:id="corneria-1"> corner
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="couus">
+                        <form>
+                            <orth>couus, -i</orth> 
+                            <gram>n m</gram> 
+                        </form>
+                        <sense xml:id="couus-1"> wheatsheaf
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="cumba">
+                        <form>
+                            <orth>cumba, -e</orth> 
+                            <gram>n f</gram> 
+                        </form>
+                        <sense xml:id="cumba-1"> coomb, a dry measure of capacity, equal to four bushels, or half a quarter <ref>[<hi rend="italic">OEDO</hi> coomb | comb, n.1]</ref>
+                        </sense>
+                    </entry>
                     
 
                 </div>
