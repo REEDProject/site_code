@@ -1593,8 +1593,26 @@
                                     rend="italic">AND</hi> bouche]</ref>
                         </sense>
                     </entry>
+                    <entry xml:id="borboyne">
+                        <form>
+                            <orth>borboyne</orth> 
+                            <gram>n and attr</gram> 
+                        </form>
+                        <sense xml:id="borboyne-1"><hi rend="italic">possibly</hi> Bourbon, name of a French aristocratic family, <hi rend="italic">here as attr,</hi> in the style associated with that family or a member of it, or with the historic French province of Bourbonnais
+                        </sense>
+                    </entry>
+                    
                 </div>
                 <div n="C" xml:id="gloss-af-C">
+                    <entry xml:id="creves">
+                        <form>
+                            <orth>creves</orth> 
+                            <gram>n s and pl</gram> 
+                        </form>
+                        <sense xml:id="creves-1"> crayfish
+                        </sense>
+                    </entry>
+                    
                     <!-- all of the entries for C -->
                 </div>
                 <div n="D" xml:id="gloss-af-D">
@@ -1639,6 +1657,16 @@
                         </form>
                         <sense xml:id="desusescrites-1">written above</sense>
                     </entry>
+                    
+                    <entry xml:id="deudose">
+                        <form>
+                            <orth>deodose</orth> 
+                            <gram>adj</gram> 
+                        </form>
+                        <sense xml:id="deudose-1"> freshwater (<hi rend="italics">d'eau douce</hi>)
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="deuerwik">
                         <form>
                             <orth>deuerwik</orth>
@@ -1678,6 +1706,15 @@
                 </div>
                 <div n="L" xml:id="gloss-af-L">
                     <!-- all of the entries for L -->
+                    <entry xml:id="leche">
+                        <form>
+                            <orth>leche</orth> 
+                            <gram>n</gram> 
+                        </form>
+                        <sense xml:id="leche-1"> slice (of bread); <hi rend="italic">as an element in the names of various dishes,</hi> prepared in slices 
+                        </sense>
+                    </entry>
+                    
                 </div>
                 <div n="M" xml:id="gloss-af-M">
                     <entry xml:id="meuuance">
@@ -1733,12 +1770,30 @@
                         <sense xml:id="pouir-1"> power, authority <ref>[<hi xml:id="small-caps"><hi
                                         rend="italic">AND</hi></hi> poer]</ref></sense>
                     </entry>
+                    <entry xml:id="poleyn">
+                        <form>
+                            <orth>poleyn</orth> 
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="poleyn-1"> poultry <ref>[<hi rend="italic">cp AND</hi> pulein 1]</ref>
+                        </sense>
+                    </entry>
+                    
                 </div>
                 <div n="Q" xml:id="gloss-af-Q">
                     <!-- all of the entries for Q -->
                 </div>
                 <div n="R" xml:id="gloss-af-R">
                     <!-- all of the entries for R -->
+                    <entry xml:id="reysyngisdeCoraunce">
+                        <form>
+                            <orth>reysyngis de Coraunce</orth> 
+                            <gram>n phr</gram> 
+                        </form>
+                        <sense xml:id="reysyngisdeCoraunce-1"> raisins of Corinth, <hi rend="italics">ie</hi>, currants <ref>[<hi rend="italic">see OEDO</hi> currant]</ref>
+                        </sense>
+                    </entry>
+                    
                 </div>
                 <div n="S" xml:id="gloss-af-S">
                     <entry xml:id="surorez">
@@ -5783,14 +5838,7 @@
                         <sense xml:id="plesuer-1">pleasure</sense>
                     </entry>
                     
-                    <entry xml:id="poleyn">
-                        <form>
-                            <orth>poleyn</orth> 
-                            <gram>n</gram>
-                        </form>
-                        <sense xml:id="poleyn-1"> poultry <ref>[<hi rend="italic">cp AND</hi> polein 1]</ref>
-                        </sense>
-                    </entry>
+                    
                     
                     <entry xml:id="poynte">
                         <form>
@@ -5820,7 +5868,15 @@
                         <sense xml:id="poole-1">pole</sense>
                     </entry>
 
-                  
+                    <entry xml:id="porpul">
+                        <form>
+                            <orth>porpul</orth> 
+                            <gram>adj</gram> 
+                        </form>
+                        <sense xml:id="porpul-1"> purple
+                        </sense>
+                    </entry>
+                    
                     
                     <entry xml:id="portinaunce">
                         <form>
@@ -5928,6 +5984,16 @@
                         <sense xml:id="querry-1">quarry, hunt; <form><orth>querrye</orth></form>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="qwette">
+                        <form>
+                            <orth>qwette</orth> 
+                            <gram>n</gram> 
+                        </form>
+                        <sense xml:id="qwette-1"> wheat
+                        </sense>
+                    </entry>
+                    
 
                     <entry xml:id="qweyr">
                         <form>
@@ -6092,6 +6158,16 @@
                                     <hi rend="italic">n.2</hi> 1.b]</ref>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="roo">
+                        <form>
+                            <orth>roo</orth> 
+                            <gram>n</gram> 
+                        </form>
+                        <sense xml:id="roo-1"> roe, a species of small deer 
+                        </sense>
+                    </entry>
+                    
 
                     <entry xml:id="rosyn">
                         <form>
@@ -6151,6 +6227,15 @@
                         <sense xml:id="rydware-1">likely one of several hamlets known as Ridware:
                             Pipe Ridware, Mavesyn Ridware, or Hamstall Ridware</sense>
                     </entry>
+                    <entry xml:id="rymbyll">
+                        <form>
+                            <orth>rymbyll</orth> 
+                            <gram>n</gram> 
+                        </form>
+                        <sense xml:id="rymbyll-1"> <hi rend="italic">possibly</hi> rim (of a wheel)
+                        </sense>
+                    </entry>
+                    
 
                 </div>
 
@@ -6210,6 +6295,17 @@
                         </form>
                         <sense xml:id="salysbere-1">Salisbury</sense>
                     </entry>
+                    
+                    <entry xml:id="sarris">
+                        <form>
+                            <orth>sarris</orth> 
+                            <gram>n poss</gram>
+                        </form>
+                        <sense xml:id="sarris-1"> sar's, of sar, a fish of the sparoid genus <hi rend="italic">Sargus</hi> <ref>[<hi rend="italic">OEDO</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                    
                     
                     <entry xml:id="sasnett">
                         <form>
@@ -6325,6 +6421,17 @@
                         </form>
                         <sense xml:id="selyng-1">sealing</sense>
                     </entry>
+                    
+                    <entry xml:id="semeca">
+                        <form>
+                            <orth>semeca</orth> 
+                            <gram>n </gram>
+                        </form>
+                        <sense xml:id="semeca-1"> sambocade, a fritter flavoured with elder flowers <ref>[<hi rend="italic">OEDO</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                    
                     
                     <entry xml:id="Serberosse">
                         <form>
@@ -6488,6 +6595,15 @@
                             <gram>adj</gram>
                         </form>
                         <sense xml:id="sonderey-1">sundry</sense>
+                    </entry>
+                    
+                    <entry xml:id="soppis">
+                        <form>
+                            <orth>soppis</orth> 
+                            <gram>n pl</gram> 
+                        </form>
+                        <sense xml:id="soppis-1"> sops, pieces of soaked bread
+                        </sense>
                     </entry>
                     
                     <entry xml:id="sownes">
