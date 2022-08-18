@@ -820,6 +820,15 @@
                         </xr>
                     </entry>
 
+                    <entry xml:id="escabinus">
+                        <form>
+                            <orth>escabinus, -i</orth> 
+                            <gram>n m</gram> 
+                        </form>
+                        <sense xml:id="escabinus-1"> alderman <ref>[<hi rend="italic">cp DML</hi> scabinus]</ref>
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="exennia">
                         <form>
                             <orth>exennia, -ie</orth>
@@ -843,6 +852,14 @@
 
                 <div n="F" xml:id="gloss-la-F">
 
+                    <entry xml:id="facalis">
+                        <form>
+                            <orth>facalis, -is</orth> 
+                            <gram>n f, m, or nt</gram> 
+                        </form>
+                        <sense xml:id="facalis-1"> <hi rend="italic">var of</hi> focalis <ref>[<hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
                     <entry xml:id="fistulator">
                         <form>
                             <orth>fistulator, -oris</orth>
@@ -892,7 +909,15 @@
                         <sense xml:id="hernesiatus-1"><hi rend="italic">var of</hi> hernesiastus <ref>[<hi rend="italic">DML</hi>, harnesiare]</ref>
                         </sense>
                     </entry>
-                    
+                    <entry xml:id="homagium">
+                        <form>
+                            <orth>homagium, -i</orth> 
+                            <gram>n nt</gram> 
+                        </form>
+                        <sense xml:id="homagiun-1"> homage, <hi rend="italic">here</hi> the jury of a manorial court <ref>[<hi rend="italic">cp OEDO</hi> homage, n. 2.]</ref>
+                        </sense>
+                    </entry>
+                   
                     
                 </div>
 
@@ -973,6 +998,16 @@
                                      <ref>[<hi rend="italic">DML</hi> liberare]</ref>
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="lodix">
+                        <form>
+                            <orth>lodix, -cis</orth> 
+                            <gram>n f</gram> 
+                        </form>
+                        <sense xml:id="lodix-1"> sheet or blanket, <hi rend="italic">here</hi> a sheet worn during ritual penance <ref>[<hi rend="italic">cp OEDO</hi> sheet, n.1 1.c]</ref> 
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="Londinia">
                         <form>
                             <orth>Londinia, -ie</orth>
@@ -1053,6 +1088,15 @@
                         </sense>
                     </entry>
                     
+                    <entry xml:id="moto">
+                        <form>
+                            <orth>moto, -onis</orth> 
+                            <gram>n m</gram> 
+                        </form>
+                        <sense xml:id="moto-1"> mutton, sheep, <hi rend="italic">var of</hi> multo <ref>[<hi rend="italic">DML</hi>]</ref> 
+                        </sense>
+                    </entry>
+                    
                 </div>
                 <div n="N" xml:id="gloss-la-N">
                     <entry xml:id="Northumberlandia">
@@ -1092,6 +1136,24 @@
                         </sense>
                     </entry>
                     
+                    <entry xml:id="panis">
+                        <form>
+                            <orth>panis, -is</orth> 
+                            <gram>n f</gram> 
+                        </form>
+                        <sense xml:id="panis-1"><hi rend="italic">in CL</hi> bread; <hi rend="italic">here the form has apparently been confused with</hi><form><orth>pannus, -i</orth> <gram>n m</gram></form> cloth, tablecloth; <form><orth>panys</orth></form>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="papparus">
+                        <form>
+                            <orth>papparus, -i</orth>
+                            <gram>n m</gram>
+                        </form>
+                        <sense><hi rend="italic">var of</hi> papyrus
+                            <ref>[<hi rend="italic">OLD, DML</hi>]</ref>
+                        </sense>
+                    </entry> 
                     
                     <entry xml:id="par">
                         <form>
@@ -1149,6 +1211,34 @@
                         </sense>
                     </entry>
 
+                    <entry xml:id="plamasti">
+                        <form>
+                            <orth>plamasti</orth> 
+                            <gram>v 2 sg ind act pf</gram> 
+                        </form>
+                        <sense xml:id="plamasti-1"> <hi rend="italic">var of</hi> plasmasti <ref>[<hi rend="italic">DML</hi> plasmare</ref>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="potus">
+                        <form>
+                            <orth>potus, -us</orth> 
+                            <gram>n m</gram> 
+                        </form>
+                        <sense xml:id="potus-1"> drink, <hi rend="italic">here</hi> weak ale<hi rend="italic">as distinct from</hi> ceruisia
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="presium">
+                        <form>
+                            <orth>presium, -i</orth> 
+                            <gram>n nt</gram> 
+                        </form>
+                        <sense xml:id="presium-1"><hi rend="italic">var of</hi> pretium 
+                            <ref>[<hi rend="italic">OLD, DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="promotus">
                         <form>
                             <orth>promotus, -a, -um</orth>
@@ -1199,6 +1289,35 @@
                 </div>
                 <div n="S" xml:id="gloss-la-S">
                     
+                    <entry xml:id="sepes">
+                        <form>
+                            <orth>sepes, -is</orth> 
+                            <gram>n f</gram> 
+                        </form>
+                        <sense xml:id="sepes-1"><hi rend="italic">in CL</hi> hedge or fence; <hi rend="italic">here the form has apparently been confused with</hi><form><orth>caepa, -e</orth> <gram>n f</gram></form> onion
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="seruisa">
+                        <form>
+                            <orth>seruisa, -e</orth> 
+                            <gram>n f</gram> 
+                        </form>
+                        <sense xml:id="seruisa-1"><hi rend="italic">var of</hi> ceruisia
+                            <ref>[<hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="siphus">
+                        <form>
+                            <orth>siphus, -i</orth> 
+                            <gram>n m</gram> 
+                        </form>
+                        <sense xml:id="siphus-1"><hi rend="italic">var of</hi> scyphus
+                            <ref>[<hi rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="sitharista">
                         <form>
                             <orth>sitharista, -e</orth>
@@ -1217,6 +1336,15 @@
                             <hi rend="italic">see</hi>
                             <hi rend="bold">chitherator</hi>
                         </xr>
+                    </entry>
+                    
+                    <entry xml:id="sitrabartha">
+                        <form>
+                            <orth>sitrabartha, -e</orth> 
+                            <gram>n f</gram> 
+                        </form>
+                        <sense xml:id="sitrabartha-1"> <hi rend="italic">likely</hi> harper; <hi rend="italic">perhaps originally in error for</hi> citharista
+                        </sense>
                     </entry>
                     
                     <entry xml:id="supplotio">
@@ -1268,6 +1396,34 @@
                     </entry>                  
                 </div>
                 <div n="U" xml:id="gloss-la-U">
+                    <entry xml:id="ueriuetor">
+                        <form>
+                            <orth>ueriuetor, -oris</orth> 
+                            <gram>n m</gram> 
+                        </form>
+                        <sense xml:id="ueriuetor-1"> turnspit, one who turns a spit, <hi rend="italic">var of</hi> veruvertor
+                            <ref>[<hi rend="italic">DML</hi>]</ref>; <form><orth>ueriueter</orth></form>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="ueru">
+                        <form>
+                            <orth>ueru, -us</orth> 
+                            <gram>n m</gram> 
+                        </form>
+                        <sense xml:id="ueru-1"> spit, broach
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="uessellus">
+                        <form>
+                            <orth>uessellus, -i</orth> 
+                            <gram>n m</gram> 
+                        </form>
+                        <sense xml:id="uessellus-1"> vassal, servant
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="uicus">
                         <form>
                             <orth>uicus, -i</orth>
@@ -1281,6 +1437,18 @@
                             Nantwich, Cheshire
                         </sense>
                     </entry>
+                    
+                    <entry xml:id="uirdis">
+                        <form>
+                            <orth>uirdis, -is</orth> 
+                            <gram>adj</gram> 
+                        </form>
+                        <sense xml:id="uirdis-1"><hi rend="italic">var of</hi> uiridis
+                            <ref>[<hi rend="italic">OLD, DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                    
                     <entry xml:id="urserarius">
                         <form>
                             <orth>urserarius, -ii</orth>
