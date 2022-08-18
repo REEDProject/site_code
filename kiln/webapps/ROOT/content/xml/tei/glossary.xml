@@ -65,7 +65,7 @@
                 </respStmt>
                 <respStmt>
                     <persName xml:id="JN">Jamie Norrish</persName>
-                    <persName xml:id="JN">Jamie Norrish</persName>
+
                     <resp>Programmer</resp>
                     <resp>TEI Schema Designer</resp>
                     <resp>Technical Consultant</resp>
@@ -430,6 +430,16 @@
                                 <orth>alienum es</orth> another's money, ie, debt </form>
                         </sense>
                     </entry>
+                    <entry xml:id="alleatus">
+                        <form>
+                            <orth>alleatus, -i</orth> 
+                            <gram>n m</gram> 
+                        </form>
+                        <sense xml:id="alleatus-1"> garlic
+                            <ref>[<hi rend="italic">cp DML</hi> aliatus]</ref>
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="adrespondeo">
                         <form>
                             <orth>adrespondeo, -ere, -di, -sum</orth>
