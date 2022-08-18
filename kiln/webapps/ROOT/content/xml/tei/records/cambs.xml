@@ -16906,8 +16906,8 @@
 
               <gap reason="omitted"/>
 
-              <ab><rs ref="eats:331973" type="Person_Male">Thomas ffost<ex>er</ex></rs> al<ex>ia</ex>s harper admiss<ex>us</ex> i<ex>n</ex>
-                  fr<ex>ater</ex>nite h<ex>ab</ex>ebit p<ex>ro</ex> stipendio o<ex>mn</ex>i
+              <ab><rs ref="eats:331973" type="Person_Male">Thomas ffost<ex>er</ex></rs> al<ex>ia</ex>s <rs ref="eats:30189" type="Entertainer_Type">harper</rs> admiss<ex>us</ex> i<ex>n</ex>
+                  <rs ref="eats:327612" type="Collective_GuildsReligious">fr<ex>ater</ex>nite</rs> h<ex>ab</ex>ebit p<ex>ro</ex> stipendio o<ex>mn</ex>i
                   an<ex>n</ex>o ij s. <gap reason="omitted"/></ab>
             </div>
             <div>
@@ -16917,21 +16917,21 @@
               <gap reason="omitted"/>
 
               <ab>In p<ex>r</ex>imis p<ex>ro</ex> ad exequias, <rs ref="eats:40978" type="Thing_FoodDrink">pane</rs> s<ex>er</ex>uisia &amp; caseo
-                  pelinctor<ex>i</ex> &amp; cleric<ex>is</ex> x d. Ad die<ex>m</ex>
+                <rs ref="eats:332626" type="Collective_Occupations">pelinctor<ex>i</ex></rs> &amp; <rs ref="eats:9186" type="Collective_Clergy">cleric<ex>is</ex></rs> x d. Ad die<ex>m</ex>
                   p<ex>r</ex>incipal<ex>em</ex> In vj d<ex>u</ex>s<ex>senis</ex> ij <foreign
                   xml:lang="eng">k<ex>ilderkins</ex></foreign> <rs ref="eats:40997" type="Thing_FoodDrink">ceruis<ex>ie</ex></rs> viij s. viij d. ij
                   <foreign xml:lang="eng">k<ex>ilderkins</ex></foreign> tenuis
                   c<ex>er</ex>uis<ex>ie</ex> iij d. It<ex>em</ex> viij busshells ffrume<ex>n</ex>ti
-                ij s. It<ex>em</ex> i<ex>n</ex> grydyng vj d. It<ex>em</ex> i<ex>n</ex> xviij aucis
+                ij s. It<ex>em</ex> i<ex>n</ex> <rs ref="eats:38944" type="Collective_Occupations">grydyng</rs> vj d. It<ex>em</ex> i<ex>n</ex> xviij aucis
                 iij s. It<ex>em</ex> i<ex>n</ex> auenis ordeis xviij d. It<ex>em</ex> ij calvys iiij
                 s. It<ex>em</ex> ij shepe iiij s. It<ex>em</ex> p<ex>ro</ex> xli pip<ex>ionum</ex>
                 pullis iij s. iiij d. It<ex>em</ex> p<ex>ro</ex> butiro ij d. onyons j d. In aceto j
                 d. It<ex>em</ex> p<ex>ro</ex> v porcell<ex>is</ex> xx d. It<ex>em</ex> p<ex>ro</ex>
                 ovis vj d. In creem &amp; lacte <del>x d.</del> xiij d. In terrecid<ex>ijs</ex>
                 &amp; focal<ex>ibus</ex> xij d. It<ex>em</ex> p<ex>ro</ex> melle &amp;
-                  specieb<ex>us</ex> ij s. v d. It<ex>em</ex> turners &amp; squyllers vj d.
-                  It<ex>em</ex> p<ex>ro</ex> vergeows &amp; sale ij d. p<ex>ro</ex> iantaculo coci
-                &amp; loc<ex>i</ex>one mappar<ex>um</ex> iij d. p<ex>ro</ex> stipendio coci xvj d.
+                  specieb<ex>us</ex> ij s. v d. It<ex>em</ex> <rs ref="eats:199744" type="Collective_Occupations">turners</rs> &amp; <rs ref="eats:297010" type="Collective_Occupations">squyllers</rs> vj d.
+                  It<ex>em</ex> p<ex>ro</ex> vergeows &amp; sale ij d. p<ex>ro</ex> iantaculo <rs ref="eats:60088" type="Collective_Occupations">coci</rs>
+                &amp; <rs ref="eats:331883" type="Collective_Occupations">loc<ex>i</ex>one</rs> mappar<ex>um</ex> iij d. p<ex>ro</ex> stipendio coci xvj d.
                   p<ex>ro</ex> stipendio Thome ffost<ex>er</ex> ij s. p<ex>ro</ex> stipendio
                   <rs ref="eats:331991" type="Person_Male">Will<ex>elm</ex>i Minsstralli</rs> ij s.</ab>
 
@@ -16943,7 +16943,7 @@
 
               <gap reason="omitted"/>
 
-              <ab>It<ex>em</ex> ordinant q<ex>uod</ex> h<ex>ab</ex>eant ij mynystralls
+              <ab>It<ex>em</ex> ordinant q<ex>uod</ex> h<ex>ab</ex>eant ij <rs ref="eats:8709" type="Entertainer_Type">mynystralls</rs>
                   Thom<ex>as</ex> ffost<ex>er</ex> &amp; Will<ex>elmus</ex> mynstrall &amp;
                   q<ex>uod</ex> vt<ex>er</ex>q<ex>ue</ex> eor<ex>um</ex> h<ex>ab</ex>eat ij s<gap
                   reason="omitted"/>.</ab>
@@ -17001,7 +17001,7 @@
             </div>
           </div>
           <div type="endnote">
-            <p> The accounts record payments for the guild dinner, 5 June 1463; the 'inquisicio' was
+            <p> The accounts record payments for the <rs ref="eats:327612" type="Collective_GuildsReligious">guild</rs> <rs ref="eats:40561" type="Entertainment_Type">dinner</rs>, 5 June 1463; the 'inquisicio' was
               likely held the same day. </p>
           </div>
         </body>
