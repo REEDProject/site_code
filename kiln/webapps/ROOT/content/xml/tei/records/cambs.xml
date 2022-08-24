@@ -2543,9 +2543,9 @@
                 <p>Few surviving records report household entertainment for many of the notable
                   Cambridgeshire families, including the Scales and Wendys of Haslingfield and the
                   Huddlestons of Sawston; indeed, the only records of secular household
-                  entertainment are found in the accounts of Sir John <!--IN to link to CAJNPA--> and
+                  entertainment are found in the accounts of Sir John and
                     <rs ref="eats:326915" type="Person_Nobility">Dorothy
-                  North</rs><!--IN to link to CANHA1 and CANHA2--> of <rs ref="eats:311819"
+                  North</rs> of <rs ref="eats:311819"
                     type="Place_F_Residence">Kirtling</rs> (see <ref target="https://ereeddev.library.utoronto.ca/search/?facet_locations_feature_residence=311819">associated records</ref> and 'Historical
                   Background: Cambridgeshire Families' <!-- IN to insert xref link-->). John North’s accounts are extensive,
                   detailing his travels across Europe, but containing no record of
@@ -3023,7 +3023,7 @@
                     and Midsummer, but the practice occurred at many times of the year, fixed to no
                     holiday in particular. In Cambridgeshire too, Morris dancing is the performance
                     activity most frequently cited in the diocesan court
-                    proceedings<!--IN to link to CADC14, CADC18, CADC32, CADC35-->, evidence of the
+                    proceedings (see <ref target="https://ereeddev.library.utoronto.ca/search/?facet_record_type_church=Ecclesiastical+Courts&#38;facet_entertainments_custom=79074&#38;start=0&#38;facet_locations_county=1787">associated records</ref>) <!--IN to link to CADC14, CADC18, CADC32, CADC35-->, evidence of the
                     'church’s reversal of policy towards Morris dancing from active support to
                     rigorous prosecution' in the later sixteenth and early seventeenth
                       centuries.<note type="foot">John Forrest, <title>The History of Morris
@@ -3179,7 +3179,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp260128616">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp260128616">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:327734"
               type="Place_PA_Settlement">Babraham</rs>
@@ -5164,7 +5164,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp260300776">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp260300776">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:325669"
               type="Place_PA_Settlement">Carlton cum Willingham</rs>
@@ -5329,7 +5329,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp285483896">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp285483896">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:325646"
               type="Place_PA_Settlement">Chatteris</rs>
@@ -5406,7 +5406,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp259876408">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp259876408">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:325623"
               type="Place_PA_Settlement">Comberton</rs>
@@ -5729,7 +5729,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp258006664">
+      <text ana="taxon:Church_Admin" type="record" xml:id="cambs-ridp258006664">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:214531"
               type="Place_EA_Diocese">Diocese of Ely</rs>
@@ -5772,7 +5772,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp258027464">
+      <text ana="taxon:Church_Admin" type="record" xml:id="cambs-ridp258027464">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:214531"
               type="Place_EA_Diocese">Diocese of Ely</rs>
@@ -6056,7 +6056,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp285539608">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp285539608">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:324500"
               type="Place_PA_Settlement">Doddington</rs>
@@ -6366,7 +6366,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp257732936">
+      <text ana="taxon:RelCommunity_Monasteries" type="record" xml:id="cambs-ridp257732936">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:324477"
               type="Place_F_ReligiousHouse">Ely Priory</rs>
@@ -6431,7 +6431,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp284999400">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp284999400">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:324390"
               type="Place_PA_Settlement">Elm</rs>
@@ -6734,7 +6734,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp261101896">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp261101896">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:322579"
               type="Place_PA_Settlement">Ely</rs>
@@ -6844,7 +6844,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp261197352">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp261197352">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:322579"
               type="Place_PA_Settlement">Ely</rs>
@@ -7475,7 +7475,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp261223608">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp261223608">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:322579"
               type="Place_PA_Settlement">Ely</rs>
@@ -7643,7 +7643,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp257931800">
+      <text ana="taxon:Church_Admin" type="record" xml:id="cambs-ridp257931800">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:214531"
               type="Place_EA_Diocese">Ely Bishopric</rs>
@@ -7747,7 +7747,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp260056888">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp260056888">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:322533"
               type="Place_PA_Settlement">Grantchester</rs>
@@ -7815,7 +7815,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp260096088">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp260096088">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:322533"
               type="Place_PA_Settlement">Grantchester</rs>
@@ -7879,7 +7879,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp292371144">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp292371144">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:321741"
               type="Place_PA_Settlement">Ickleton</rs>
@@ -8301,7 +8301,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp285742456">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp285742456">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:321741"
               type="Place_PA_Settlement">Ickleton</rs>
@@ -8925,7 +8925,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp292282392">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp292282392">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:319716"
               type="Place_PA_Settlement">Leverington</rs>
@@ -9013,7 +9013,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp292328248">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp292328248">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:319716"
               type="Place_PA_Settlement">Leverington</rs>
@@ -9356,7 +9356,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp259983128">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp259983128">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:314238"
               type="Place_PA_Settlement">Little Abington</rs>
@@ -9472,7 +9472,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp284840840">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp284840840">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:314192"
               type="Place_PA_Settlement">March</rs>
@@ -9530,7 +9530,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp261128440">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp261128440">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:314192"
               type="Place_PA_Settlement">March</rs>
@@ -12402,7 +12402,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp268020952">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp268020952">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:311739"
               type="Place_PA_Settlement">Stretchworth</rs>
@@ -12532,7 +12532,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp285885704">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp285885704">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:311716"
               type="Place_PA_Settlement">Stretham</rs>
@@ -12694,7 +12694,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp268575480">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp268575480">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:305566"
               type="Place_PA_Settlement">Sutton</rs>
@@ -12763,7 +12763,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp285163592">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp285163592">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:305566"
               type="Place_PA_Settlement">Sutton</rs>
@@ -12940,7 +12940,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp285355528">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp285355528">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:305566"
               type="Place_PA_Settlement">Sutton</rs>
@@ -12995,7 +12995,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp284737048">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp284737048">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:303894"
               type="Place_PA_Settlement">Little Thetford</rs>
@@ -13098,7 +13098,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp284869544">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp284869544">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:303894"
               type="Place_PA_Settlement">Little Thetford</rs>
@@ -13210,7 +13210,7 @@
 
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp284958104">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp284958104">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:304534"
               type="Place_PA_Settlement">Tydd St Giles</rs>
@@ -13283,7 +13283,7 @@
          
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp285054440">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp285054440">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:304534"
               type="Place_PA_Settlement">Tydd St Giles</rs>
@@ -13426,7 +13426,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp285320968">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp285320968">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:304534"
               type="Place_PA_Settlement">Tydd St Giles</rs>
@@ -13488,7 +13488,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp268078744">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp268078744">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:304511"
               type="Place_PA_Settlement">Waterbeach</rs>
@@ -14018,7 +14018,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp285856952">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp285856952">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:304488"
               type="Place_PA_Settlement">West Wratting</rs>
@@ -14076,7 +14076,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp292105320">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp292105320">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:303917"
               type="Place_PA_Settlement">Whittlesey</rs>
@@ -14130,7 +14130,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp292099224">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp292099224">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:303871"
               type="Place_PA_Settlement">Wilburton</rs>
@@ -14184,7 +14184,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp285421848">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp285421848">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:303814"
               type="Place_PA_Settlement">Wisbech</rs>
@@ -14275,7 +14275,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp285386680">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp285386680">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:302811"
               type="Place_PA_Settlement">Witcham</rs>
@@ -14341,7 +14341,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp268404376">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp268404376">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:302743"
               type="Place_PA_Settlement">Witchford</rs>
@@ -14388,7 +14388,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp268421928">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp268421928">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:302743"
               type="Place_PA_Settlement">Witchford</rs>
@@ -14619,7 +14619,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp261167672">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp261167672">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:302743"
               type="Place_PA_Settlement">Witchford</rs>
@@ -14668,7 +14668,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp296463128">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp296463128">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:326363"
               type="Place_PA_Settlement">Abington Pigotts</rs>
@@ -14795,7 +14795,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp321286168">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp321286168">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:330478"
               type="Place_PA_Settlement">Barrington</rs>
@@ -14892,7 +14892,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp321358136">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp321358136">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:330501"
               type="Place_PA_Settlement">Fen Ditton</rs>
@@ -14958,7 +14958,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp296138104">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp296138104">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:311796"
               type="Place_PA_Settlement">Parson Drove</rs>
@@ -15058,7 +15058,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp296373736">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp296373736">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:311796"
               type="Place_PA_Settlement">Parson Drove</rs>
@@ -18454,7 +18454,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp296409144">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp296409144">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:303814"
               type="Place_PA_Settlement">Wisbech</rs>
@@ -18544,7 +18544,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="cambs-ridp296465272">
+      <text ana="taxon:Church_Courts" type="record" xml:id="cambs-ridp296465272">
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:303814"
               type="Place_PA_Settlement">Wisbech</rs>
