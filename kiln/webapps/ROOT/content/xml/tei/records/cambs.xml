@@ -278,7 +278,7 @@
                 important roads of medieval and early modern Cambridgeshire.</p>
             </div>
 
-            <div>
+            <div xml:id="cambs_hb_travel">
               <head>Travel and Roads</head>
 
               <p>Cambridgeshire is not as well represented among the classic sources for travel in
@@ -683,7 +683,7 @@
                     Cambridgeshire</title>, pp 63–4.</note></p>
             </div>
 
-            <div>
+            <div xml:id="cambs_hb_reformation">
               <head>The Reformation in Cambridgeshire</head>
 
               <p>Some of the most profound effects of the Reformation in the county sprang from the
@@ -1051,7 +1051,7 @@
                 1638–46 and 1660–7.</p>
             </div>
 
-            <div>
+            <div xml:id="cambs_hb_barnwell">
               <head>Barnwell Priory</head>
 
               <p><rs ref="eats:322723" type="Place_F_ReligiousHouse">Barnwell Priory</rs> was one of
@@ -1363,7 +1363,7 @@
                   2021.</note> The records detail the activities of the churchwardens there from
                 1518 to 1566, including regular payments to both local and travelling
                 performers (see the <ref target="https://ereeddev.library.utoronto.ca/search/?facet_locations_feature_church=328496">St Leonard's Churchwardens' Accounts</ref> and
-                ‘Performance Traditions: Civic Entertainment’<!-- IN: insert x-ref -->).</p>
+                <ref target="#cambs_pt_civic">‘Performance Traditions: Civic Entertainment’</ref>).</p>
             </div>
 
             <div>
@@ -1403,7 +1403,7 @@
             </div>
           </div>
 
-          <div>
+          <div xml:id="cambs_hb_schools">
             <head>Schools</head>
             <div>
 
@@ -1640,11 +1640,11 @@
                 was followed by William Pamplyn, whom Tyndall dismissed in 1609 for a variety of
                 offenses, including one that involved one of Pamplyn's daughters, possibly
                 Anna<note type="foot">See <ptr target="#cambs-ridp288473096"/></note>. For a further discussion of these infractions
-                see ‘Performance Traditions: School Drama.’</p>
+                see <ref target="#cambs_pt_school">‘Performance Traditions: School Drama.’</ref></p>
             </div>
           </div>
 
-          <div>
+          <div xml:id="cambs_hb_families">
             <head>Cambridgeshire Families</head>
             <div>
 
@@ -1976,8 +1976,8 @@
                 a resistance to radical puritanism and persisted in traditions of town activities
                 that were often denounced by hardline reformists.<note type="foot">Patrick
                   Collinson, <hi rend="italic">The Elizabethan Puritan Movement</hi> (Oxford, 1990),
-                  122. See also 'Historical Background: The Reformation in
-                  Cambridgeshire.'<!--IN: Do we want a link here? TH: Yes!--></note> They also reveal the
+                  122. See also <ref target="#cambs_hb_reformation">'Historical Background: The Reformation in
+                    Cambridgeshire.'</ref></note> They also reveal the
                 centrality of that other hub of control, Ely, for which records of the bishopric
                 remain, chiefly in the household accounts of the <rs ref="eats:328455"
                   type="Collective_Office">bishops of Ely</rs> (<rs ref="eats:325345"
@@ -2173,7 +2173,7 @@
                 survive, the Midsummer Fair at Barnwell may well also have hosted public
                   performances.<note type="foot">For further discussion of Barnwell’s use as a
                   lodging house for the bishop and the interactions between the priory and the
-                  Midsummer Fair, see ‘Historical Background: Barnwell Priory’; see also
+                  Midsummer Fair, see <ref target="#cambs_hb_barnwell">‘Historical Background: Barnwell Priory’</ref>; see also
                     <title>VCH: Cambridgeshire</title>, vol 2, pp 234-249, <title>British History
                       Online</title>, <ref target="https://www.british-history.ac.uk/vch/cambs/vol2/pp234-249">https://www.british-history.ac.uk/vch/cambs/vol2/pp234-249</ref>,
                   accessed 24 September 2021.</note></p>
@@ -2632,7 +2632,7 @@
                     Spalding payment.</note></p>
               </div>
 
-              <div>
+              <div xml:id="cambs_pt_school">
                 <head>School Drama</head>
 
                 <p>The only evidence for school drama in Cambridgeshire outside of Cambridge and
@@ -2641,7 +2641,7 @@
                     Tyndall</rs> (1549–1614) dismissed Headmaster <rs ref="eats:313956"
                     type="Person_StatusOther">William Pamplyn</rs> from his position at the <rs
                     ref="eats:324125" type="Place_F_School">King’s School of
-                      Ely</rs> (see <ptr target="#cambs-ridp288473096"/>).<note type="foot">See ‘Historical Background: Schools,’ for further context for this
+                      Ely</rs> (see <ptr target="#cambs-ridp288473096"/>).<note type="foot">See <ref target="#cambs_hb_schools">‘Historical Background: Schools,’</ref> for further context for this
                     account.</note> Although little is known about Pamplyn prior to and following
                   his mastership, he seems to be the William Pamplyn of Chesterton (d. <hi
                     rend="italic">c</hi> 1612), 'who
@@ -2775,7 +2775,7 @@
               </div>
 
 
-              <div>
+              <div xml:id="cambs_pt_other">
                 <head>Other Performance Traditions</head>
                 <div>
                   <head>Non-dramatic Cross-Dressing</head>
@@ -3065,7 +3065,7 @@
                       <graphic url="https://embed.smartframe.io/27025fea9afa38753501b02dbd8a40f2.js" n="ioe01_08448_10" type="smartframe"/>
                     </p>
                     </div>
-                  <div>
+                  <div xml:id="cambs_pt_linton">
                     <head>Linton Townhouse</head>
 
                     <p>The St Mary’s churchwardens’ accounts (see the <ref target="https://ereeddev.library.utoronto.ca/search/?facet_locations_feature_church=333257">associated records</ref>) of <rs
@@ -7254,7 +7254,7 @@
           <div type="endnote">
             <p> The Ely Ascension Fair (f 144) began on the vigil of
               the Ascension and lasted for
-              twenty-two days; in 1632, the fair ran from 9–31 May. For further details, see 'Historical Background: Travel and Roads.' </p>
+              twenty-two days; in 1632, the fair ran from 9–31 May. For further details, see <ref target="#cambs_hb_travel">'Historical Background: Travel and Roads.'</ref></p>
 
             <p> The Cambridge waits paid for
               their performance at the Ely Fair beginning on the vigil of the Ascension (f 144) were
@@ -7560,8 +7560,8 @@
             <p> This instance of cat immolation is unusual (and grotesque); while possibly a case of
               general unruliness, it may also have carried religious or ritual significance
               associated with the <rs ref="eats:41680" type="CalendarDay_Secular">New Year's</rs>
-              celebration. See further 'Performance Traditions: Other
-              Performance Traditions.' </p>
+              celebration. See further <ref target="#cambs_pt_other">'Performance Traditions: Other
+                Performance Traditions.'</ref> </p>
           </div>
         </body>
       </text>
@@ -9151,8 +9151,8 @@
                 Townhouse</rs> after the 1530s, following the suppression of the guilds of Our Lady,
               St Lawrence, and Trinity, was used for parish functions (<title>VCH:
                 Cambridgeshire</title>, vol 6, pp 80–105, <title>British History Online</title>,
-              https://www.british-history.ac.uk/vch/cambs/vol6/pp80-105, accessed 15 September 2021;
-              see the Introduction, 'Performance Traditions: Playing Places, Linton Townhouse,' for further details). </p>
+              <ref target="https://www.british-history.ac.uk/vch/cambs/vol6/pp80-105">https://www.british-history.ac.uk/vch/cambs/vol6/pp80-105</ref>, accessed 15 September 2021;
+              see the Introduction, <ref target="#cambs_pt_linton">'Performance Traditions: Playing Places, Linton Townhouse,'</ref> for further details). </p>
           </div>
         </body>
       </text>
@@ -9200,7 +9200,7 @@
               St Lawrence, and Trinity, was used for parish functions (<title>VCH:
                 Cambridgeshire</title>, vol 6, pp 80–105, <title>British History Online</title>,
               https://www.british-history.ac.uk/vch/cambs/vol6/pp80-105, accessed 15 September 2021;
-              see the Introduction 'Performance Traditions: Playing Places, Linton Townhouse,' for further details). </p>
+              see the Introduction <ref target="#cambs_pt_linton">'Performance Traditions: Playing Places, Linton Townhouse,'</ref> for further details). </p>
 
             <p> The Richardsons of <rs ref="eats:314306" type="Place_PA_Settlement">Linton</rs> were
               a 'prosperous yeoman family,' which included Dr<rs ref="eats:327357"
@@ -9257,7 +9257,7 @@
               St Lawrence, and Trinity, was used for parish functions (<title>VCH:
                 Cambridgeshire</title>, vol 6, pp 80–105, <title>British History Online</title>,
               https://www.british-history.ac.uk/vch/cambs/vol6/pp80-105, accessed 15 September 2021;
-              see the Introduction ' Performance Traditions: Playing Places, Linton Townhouse,' for further details). </p>
+              see the Introduction <ref target="#cambs_pt_linton">'Performance Traditions: Playing Places, Linton Townhouse,'</ref> for further details). </p>
 
             <p> The Mylsents were a prominent family in <rs ref="eats:314306"
                 type="Place_PA_Settlement">Linton</rs> and included <rs ref="eats:327420"
@@ -9309,7 +9309,7 @@
               St Lawrence, and Trinity, was used for parish functions (<title>VCH:
                 Cambridgeshire</title>, vol 6, pp 80–105, <title>British History Online</title>,
               https://www.british-history.ac.uk/vch/cambs/vol6/pp80-105, accessed 15 September 2021;
-              see the Introduction, 'Playing Places: Linton Townhouse,' for further details). </p>
+              see the Introduction, <ref target="#cambs_pt_linton">'Performance Traditions: Playing Places, Linton Townhouse,'</ref> for further details). </p>
 
             <p> The Mylsents were a prominent family in <rs ref="eats:314306"
                 type="Place_PA_Settlement">Linton</rs> and included <rs ref="eats:327420"
@@ -11545,8 +11545,8 @@
                 Cambridge</rs> and <rs ref="eats:328384" type="Collective_Office"
                 >Cambridgeshire</rs>, 1584 and 1597 (<title>HPO</title>,
               https://www.historyofparliamentonline.org/volume/1558-1603/member/north-
-              henry-1556-1620, accessed 28 September 2021; see also the Introduction, 'Historical
-              Background: Cambridgeshire Families').</p>
+              henry-1556-1620, accessed 28 September 2021; see also the Introduction, <ref target="#cambs_hb_families">'Historical
+              Background: Cambridgeshire Families'</ref>).</p>
 
             <p> '[T]he town' (f 55v) is probably <rs ref="eats:73473"
                 type="Place_PA_Settlement">Cambridge</rs>: North uses the word 'villa,' which
