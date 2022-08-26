@@ -140,13 +140,13 @@
         <head>Acknowledgements</head>
         <!-- Acknowledgements to go here -->
       </div>
-      <div xml:id="background">
+      <div xml:id="cambs_background">
         <head>Historical Background</head>
         <div>
 
           <div>
            <p>The following essay is a detailed survey of Cambridgeshire from Roman times to 1642. For a more focussed 
-             account of mimetic activity in the county, see 'Performance Traditions.'</p> 
+             account of mimetic activity in the county, see <ref target="#cambs_traditions">'Performance Traditions.'</ref></p> 
              
              <p>The history of Cambridgeshire, as it intersects with the history of performance, 
                is largely dominated by two major centres, 
@@ -322,7 +322,7 @@
                   ref="eats:303814" type="Place_PA_Settlement">Wisbech</rs> paid for performers from
                 Lincolnshire and other Cambridgeshire towns, and that numerous villages around
                 Bassingbourn contributed to the St George’s play, the routes for travel are unknown
-                (see 'Performance Traditions: Travelling Performers').</p>
+                (see <ref target="#cambs_pt_travelling">'Performance Traditions: Travelling Performers')</ref>.</p>
             </div>
 
             <div>
@@ -934,7 +934,7 @@
             </div>
           </div>
 
-          <div>
+          <div xml:id="cambs_hb_religious">
             <head>Religious Institutions</head>
             <div>
 
@@ -1141,7 +1141,7 @@
                   type="Place_PA_Settlement">Leverington</rs>, and <rs ref="eats:314306"
                   type="Place_PA_Settlement">Linton</rs>, Cambridgeshire's thirty-three towns offer
                 little record of performance activities beyond the punishments discussed in the
-                diocesan court records (see ‘Performance Traditions’), and surviving records of
+                diocesan court records (see <ref target="#cambs_traditions">‘Performance Traditions’</ref>), and surviving records of
                 either parish churches or local guilds contain no such records. This is despite the
                 fact that Cambridgeshire, by the sixteenth century, had a number of market towns and
                 villages that were potential sites for performance activity: <rs ref="eats:73473"
@@ -1162,7 +1162,7 @@
                 that of the <rs ref="eats:327612" type="Collective_GuildsReligious">Holy
                   Trinity</rs> in Wisbech. What follows is a general historical overview of the
                 major towns and parishes; for a discussion of known or potential performance sites
-                and buildings, see ‘Performance Traditions: Playing Places’.</p>
+                and buildings, see <ref target="#cambs_pt_playing">‘Performance Traditions: Playing Places’</ref>.</p>
             </div>
 
             <div>
@@ -1944,7 +1944,7 @@
           </div>
         </div>
       </div>
-      <div xml:id="traditions">
+      <div xml:id="cambs_traditions">
         <head>Performance Traditions</head>
         <div>
           <div>
@@ -2581,7 +2581,7 @@
                   to both the fool and his lackey.</p>
               </div>
 
-              <div>
+              <div xml:id="cambs_pt_travelling">
                 <head>Travelling Performers</head>
 
                 <p>Beyond those incidents of travelling performers who performed at the religious
@@ -3040,7 +3040,7 @@
                 </div>
 
 
-                <div>
+                <div xml:id="cambs_pt_playing">
                   <head>Playing Places</head>
                   <div>
 
