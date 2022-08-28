@@ -17681,11 +17681,11 @@
         <body>
           <head><rs ref="eats:1787" type="Place_County">Cambridgeshire</rs>, <rs ref="eats:303814"
               type="Place_PA_Settlement">Wisbech</rs>
-            <date from-iso="1479" to-iso="1480">1479-80</date>
+            <date from-iso="1479" to-iso="1480">1479–80</date>
             <seg ana="taxon:CAHTGA">CAHTGA</seg></head>
           <div xml:lang="lat" type="transcription" xml:id="cambs-ridp302829432-transcription">
             <div>
-              <head>p 44 <supplied>(6 June-28 May) (Expenses for the dinner)</supplied></head>
+              <head>p 44 <supplied>(6 June–28 May) (Expenses for the dinner)</supplied></head>
               <pb n="44" type="page"/>
 
               <gap reason="omitted"/>
@@ -17712,6 +17712,7 @@
 
               <gap reason="omitted"/>
             </div>
+          </div>
             <div xml:lang="eng" type="translation">
               <div>
                 <head>p 44 <supplied>(6 June-28 May) (Expenses for the dinner)</supplied></head>
@@ -17733,7 +17734,6 @@
 
                 <gap reason="omitted"/>
               </div>
-            </div>
           </div>
           <div type="endnote">
             <p> The accounts record payments for the <rs ref="eats:327612" type="Collective_GuildsReligious">guild</rs> <rs ref="eats:40561" type="Entertainment_Type">dinner</rs>, 6 June 1479. </p>
