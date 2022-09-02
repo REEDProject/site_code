@@ -29,6 +29,7 @@
           <orgName>Records of Early English Drama (REED)</orgName>
           <resp>Bibliographer</resp>
           <resp>Copy Editor</resp>
+          <resp>Project Manager</resp>
           <resp>Proofreader</resp>
         </respStmt>
         <respStmt>
@@ -42,7 +43,6 @@
           <resp>Principal Investigator, SSHRC grant</resp>
           <resp>Director of Research</resp>
           <resp>General Editor</resp>
-          <resp>Interim Project Manager</resp>
         </respStmt>
         <respStmt>
           <persName>Emily Mayne</persName>
@@ -9475,7 +9475,7 @@
                 <foreign xml:lang="eng">for that vpon the said xix<hi rend="superscript">th</hi> day
                   of Iuly &amp; the xxx<hi rend="superscript">th</hi> of August last past beinge
                   both Sabboth dayes, he satt all eveninge prayer tyme lookeinge on <rs
-                    ref="eats:18451" type="Entertainer_Type">dauncers</rs> at the Townhowse of<note
+                    ref="eats:18451" type="Entertainer_Type">dauncers</rs> at the <rs ref="eats:333291" type="Place_F_TownHall">Townhowse</rs> of<note
                     type="marginal" place="margin_left">+</note>
                   <rs ref="eats:314192" type="Place_PA_Settlement">Marche</rs>./</foreign> Et 15.
                 Martij 1607<note type="foot">1607: <hi rend="italic">underlined</hi></note>
@@ -9506,11 +9506,11 @@
               was charged with suffering his company to sell wares during the service time in the
               entry above. </p>
 
-            <p> The 'Townehowse of Marche' is difficult to locate. No medieval secular buildings
+            <p> The '<rs ref="eats:333291" type="Place_F_TownHall">Townehowse of Marche</rs>' is difficult to locate. No medieval secular buildings
               remain in the town; the St Wendreda guildhall on High Street, one possible location,
               was sold in 1571 to Richard Hill and Robert Don, but its public use after the sale is
               uncertain (<title>VCH: Cambridgeshire</title>, vol 4, p 120, <title>British History
-                Online</title>, https://www.british-history.ac.uk/vch/cambs/vol4/pp116-123, accessed
+                Online</title>, <ref target="https://www.british-history.ac.uk/vch/cambs/vol4/pp116-123">https://www.british-history.ac.uk/vch/cambs/vol4/pp116-123</ref>, accessed
               31 August 2021). </p>
           </div>
         </body>
@@ -13129,7 +13129,7 @@
                   Rob<ex>er</ex>ti Gonne p<ex>re</ex>d<ex>icti</ex>. P<ex>rese</ex>ntat<ex>ur</ex>
                 <foreign xml:lang="eng">for that she hath made &amp; doth exercise the makeinge of
                     <rs ref="eats:45521" type="CrimesMisdemeanors">libellous</rs> &amp;<note
-                    type="marginal" place="margin_left">+</note> lascivious ballads by
+                    type="marginal" place="margin_left">+</note> lascivious <rs ref="eats:40706" type="Entertainment_Type">ballads</rs> by
                     diu<ex>er</ex>s of her neighbo<ex>u</ex>rs.</foreign> Et 19. Iunij 1606.<note
                   type="foot">1606: <hi rend="italic">underlined</hi></note> exhibita
                   Citac<ex>i</ex>o<ex>n</ex>e originali p<ex>er</ex> W<ex>illelmu</ex>m Olecorne
