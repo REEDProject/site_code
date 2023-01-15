@@ -134,7 +134,7 @@ LEAFLET_CONFIG = {
     'DEFAULT_ZOOM': 6,
     'OVERLAYS': [
         ('Pre-1642 Roads', 'http://talus.geog.utoronto.ca/1.0.0/REED_gis_roads/{z}/{x}/{-y}.png', {}),
-        ('Detailed roads in London area', 'http://talus.geog.utoronto.ca/1.0.0/EREED_gis_roads_wlabels_Z8-18/{z}/{x}/{-y}.png'),
+        ('Detailed roads in London area', 'http://talus.geog.utoronto.ca/1.0.0/EREED_gis_roads_wlabels_Z8-18/{z}/{x}/{-y}.png', {}),
     ],
     'PLUGINS': {
         'forms': {
