@@ -112,9 +112,9 @@ class DocumentParser:
         section_code = pp.Literal('@%').setParseAction(self._pa_section)
         semicolon_code = pp.Literal('@;').setParseAction(self._pa_semicolon)
         special_v_code = pp.Literal('@v').setParseAction(self._pa_special_v)
-        square_bracket_close_code = pp.Literal(']]').setParseAction(
+        square_bracket_close_code = pp.Literal('@DOUBLE_SQUARE_CLOSE').setParseAction(
             self._pa_square_bracket_close)
-        square_bracket_open_code = pp.Literal('[[').setParseAction(
+        square_bracket_open_code = pp.Literal('@DOUBLE_SQUARE_OPEN').setParseAction(
             self._pa_square_bracket_open)
         thorn_code = pp.Literal('@th').setParseAction(self._pa_thorn)
         THORN_code = pp.Literal('@TH').setParseAction(self._pa_THORN)
@@ -130,11 +130,12 @@ class DocumentParser:
             caret_code ^ cedilla_code ^ circumflex_code ^
             damaged_code ^ dot_over_code ^ dot_under_code ^ ellipsis_code ^
             en_dash_code ^ eng_code ^ ENG_code ^ eth_code ^ exclamation_code ^
-            grave_code ^ illegible_code ^ macron_code ^ oe_code ^ OE_code ^ page_break_code ^
-            paragraph_code ^ pound_code ^ raised_code ^ section_code ^
-            semicolon_code ^ special_v_code ^ square_bracket_close_code ^
-            square_bracket_open_code ^ thorn_code ^ THORN_code ^
-            tilde_code ^ umlaut_code ^ wynn_code ^ yogh_code ^ YOGH_code)
+            grave_code ^ illegible_code ^ macron_code ^ oe_code ^ OE_code ^
+            page_break_code ^ paragraph_code ^ pound_code ^ raised_code ^
+            section_code ^ semicolon_code ^ special_v_code ^
+            square_bracket_close_code ^ square_bracket_open_code ^ thorn_code ^
+            THORN_code ^ tilde_code ^ umlaut_code ^ wynn_code ^ yogh_code ^
+            YOGH_code)
         enclosed = pp.Forward()
         centred_code = pp.nestedExpr('@m\\', '@m/', content=enclosed)
         centred_code.setParseAction(self._pa_centred)
