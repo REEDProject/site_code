@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="cambs">
-  <teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="bghop">
+  <teiHeader> <!-- IN: Header is from Cambs.xml file. Will need to be updated for BGHope --> 
     <fileDesc>
       <titleStmt>
         <title type="main">Bear Garden/Hope</title>
@@ -84,7 +84,7 @@
         </respStmt>
       </titleStmt>
       <editionStmt>
-        <edition> Version 1, released <date when-iso="2022-09-22">22 September 2022.</date>
+        <edition> Version 1, released <date when-iso="2022-09-22">22 September 2022.</date> <!-- IN: CHANGE RELEASE DATE HERE -->
         </edition>
       </editionStmt>
       <publicationStmt>
