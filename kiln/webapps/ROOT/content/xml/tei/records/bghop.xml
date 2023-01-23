@@ -141,6 +141,17 @@
     </profileDesc>
   </teiHeader>
   <text>
+    <front>
+      <div xml:id="acknowledgements">
+      <!-- Acknowledgements to go here -->
+      </div>
+      <div xml:id="background">
+      <!-- Historical Background to go here --> 
+      </div>
+      <div xml:id="traditions">
+      <!-- Performance Traditions to go here --> 
+      </div>
+    </front>
     <group>
       <text type="record" xml:id="bghop-ridp269640856">
         <body>
@@ -16137,5 +16148,15 @@ https://stsaviour.folger.edu/SKCS-2.html -->. </p>
         </body>
       </text>
     </group>
+  <back>
+    <div type="appendix" xml:id="appendix-1">
+    </div>
+    <div type="appendix" xml:id="appendix-2">
+    </div>
+    <div type="appendix" xml:id="appendix-3">
+    </div>
+    <div type="appendix" xml:id="appendix-4">
+    </div>
+  </back>
   </text>
 </TEI>
