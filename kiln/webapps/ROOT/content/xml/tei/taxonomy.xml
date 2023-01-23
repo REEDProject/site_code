@@ -415,6 +415,9 @@
                         <category xml:id="oxfordshire-history-centre">
                             <catDesc>Oxfordshire History Centre</catDesc>
                         </category>
+                        <category xml:id="parliamentary-archives">
+                            <catDesc>Parliamentary Archives</catDesc>
+                        </category>
                         <category xml:id="record-office-leicestershire-leicester-rutland">
                             <catDesc>Record Office of Leicestershire, Leicester, and
                                 Rutland</catDesc>
@@ -424,6 +427,9 @@
                         </category>
                         <category xml:id="salisbury-cathedral-archives">
                             <catDesc>Salisbury Cathedral Archives</catDesc>
+                        </category>
+                        <category xml:id="society-antiquaries">
+                            <catDesc>Society of Antiquaries</catDesc>
                         </category>
                         <category xml:id="southampton-city-archives">
                             <catDesc>Southampton City Archives</catDesc>
@@ -21052,7 +21058,7 @@ SO content-checked
                         <msDesc xml:id="BHAGBW">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">E 112/126</idno>
                                 <msName>Court of Exchequer: Attorney General v. the Bishop of
                                     Winchester, William Henslowe and Jacob Meade</msName>
@@ -21062,7 +21068,7 @@ SO content-checked
                                 Yelverton (in office March 1617-June 20), by the relation of Edward
                                 Alleyn. Extensive litigation followed; see Appendix 4: V,
                                 a–q<!-- #IN
-to link to App 4 -->. <lb/> The bill concerned who held the rights
+to link to App 4 -->. with </ab><ab type="edDesc"> The bill concerned who held the rights
                                 and the boundaries of the Bear Garden, then situated in part on the
                                 bishop of Winchester's properties at the Barge, Bell, and Cock on
                                 Bankside and in part on the Crown lands lying to its west and south.
@@ -21075,7 +21081,7 @@ to link to App 4 -->. <lb/> The bill concerned who held the rights
                                 ascertained was not settled in the lifetime of the parties. William
                                 Henslowe died in 1624 (see Appendix 4, IX.). Jacob Meade also died
                                 in that year and Alleyn in 1626; see Honigmann and Brock,
-                                    <title>Playhouse Wills</title> pp 134-8, 150-54. <lb/> For the
+                                    <title>Playhouse Wills</title> pp 134-8, 150-54. </ab><ab type="edDesc"> For the
                                 interrogatories and depositions in this case (see Appendix 4:
                                 VI.)</ab>
                             <ab type="techDesc"><date>1618–20</date>; English; parchment; 6
@@ -21107,7 +21113,7 @@ to link to App 4 -->. <lb/> The bill concerned who held the rights
                         <msDesc xml:id="BHJMAH">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">C 8/30/74</idno>
                                 <msName>Chancery Court Pleadings: Jacob Meade v. Agnes Henslowe,
                                     Mary Moushurst and Elizabeth Moushurst and Edward
@@ -21117,16 +21123,16 @@ to link to App 4 -->. <lb/> The bill concerned who held the rights
                                 May 1624 against Edward Alleyn, Agnes (Anne) Henslowe, the widow of
                                 William Henslowe, and her daughters, Mary Moushurst and Elizabeth
                                 Moushurst. The defendants answered on 7 June; see Appendix 4:
-                                IX<!-- #IN link to App 4: IX -->. <lb/> In his bill Meade claimed
+                                IX<!-- #IN link to App 4: IX -->. </ab><ab type="edDesc"> In his bill Meade claimed
                                 that William had leased to him the Bear Garden on 29 June 1617 for
                                 21 years at £100 per annum and that William had bound himself in the
                                 sum of £500 promising quiet enjoyment of the properties, including
                                 from suits in law that might be raised by Edward Alleyn and John
                                 Henslowe. Meade had therefore, he said, spent £400 on improvements
                                 to the Bear Garden. The defendants were not prepared to stand by
-                                this bond. <lb/> William's widow and stepdaughters answered that the
+                                this bond. </ab><ab type="edDesc"> William's widow and stepdaughters answered that the
                                 Bear Garden had been assigned to them in November 1622 by William in
-                                return for £280, a loan, and board and lodging. <lb/> Edward Alleyn
+                                return for £280, a loan, and board and lodging. </ab><ab type="edDesc"> Edward Alleyn
                                 gave no answer but entered a plea and demurrer on 29 June 1624
                                 challenging the bill on the grounds that a related case in the
                                 Exchequer court, brought by the Attorney General against Meade and
@@ -21147,7 +21153,7 @@ to link to App 4 -->. <lb/> The bill concerned who held the rights
                         <msDesc xml:id="BHJHAH">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">Court of Chancery: Examiners' Office: Town
                                     Depositions, C 24/428/48</idno>
                                 <msName>Chancery Court Interrogatories on behalf of the plaintiff in
@@ -21193,7 +21199,7 @@ to Appendix 4: I. -->. Two breviates with notes from them also
                         <msDesc xml:id="BHEASM">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS II</idno>
                                 <msName>Edward Alleyn's Statement of Matters in Dispute with Jacob
                                     Meade</msName>
@@ -21213,9 +21219,9 @@ to App 4 -->. The notes themselves may have been preparation for
                                 summer of 1617 (see Petition to William Herbert from Edward Alleyn
                                 in answer to a petition against him relating to the baiting of
                                 bears<!-- #IN to link to
-BHPEAH -->). <lb/> For an image of the original manuscript, see
+BHPEAH -->). </ab><ab type="edDesc"> For an image of the original manuscript, see
                                 Ioppolo, <title>Henslowe-Alleyn Digitisation
-                                Project</title><!-- #IN to link to ; s -->. <lb/> For an abstract of
+                                Project</title><!-- #IN to link to ; s -->. </ab><ab type="edDesc"> For an abstract of
                                 this record and details of its transcription in other printed
                                 sources, see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT 7698:
@@ -21232,7 +21238,7 @@ https://emlot.library.utoronto.ca/db/record/event/7698 -->.</ab>
                         <msDesc xml:id="BHDAGH">
                             <msIdentifier>
                                 <settlement>Woking</settlement>
-                                <repository>Surrey History Centre</repository>
+                                <repository sameAs="#surrey-history-centre">Surrey History Centre</repository>
                                 <idno type="shelfmark">LM/1154/2</idno>
                                 <msName>Exchequer Depositions on behalf of the Attorney General v.
                                     Bishop of Winchester, William Henslowe, and Jacob Meade</msName>
@@ -21242,18 +21248,18 @@ https://emlot.library.utoronto.ca/db/record/event/7698 -->.</ab>
                                 behalf of plaintiff and defendants in the suit of the Attorney
                                 General (related by Edward Alleyn) v. the Bishop of Winchester
                                 William Henslowe and Jacob; see Appendix 4: VI.
-                                e<!-- #IN link to Appendix 4: VI -->. <lb/> The copies are held by
+                                e<!-- #IN link to Appendix 4: VI -->. </ab><ab type="edDesc"> The copies are held by
                                 Surrey History Centre in its collection of the papers of the Mores
                                 and More Molyneux family of Loseley (SHC: 1154/1 and 1154/2). They
                                 differ only in minor spellings and phrasing from the documents held
                                 at the National Archives. SHC: 1154/2, however, contains the four
                                 depositions which do not appear in the National Archives record and
-                                are therefore included here. <lb/> The depositions of Joan Furlong
+                                are therefore included here. </ab><ab type="edDesc"> The depositions of Joan Furlong
                                 and Ruth Monday were taken on 23 October 1620. An order in the court
                                 on 15 November gave the counsel for the defendants a week to examine
                                 'twoe witnesses' who had been examined by the prosecutors for the
                                 Crown before publication of all the depositions taken; see Appendix
-                                4: V. l<!-- IN to link to App 4 -->. <lb/> The depositions of Walter
+                                4: V. l<!-- IN to link to App 4 -->. </ab><ab type="edDesc"> The depositions of Walter
                                 Haynes and Lionel Tichbourne were taken on 24 and 29 January 1620/1.
                                 They appear here as witnesses to the authenticity and veracity of a
                                 copy of an original 1537-8 lease of the Bell and Cock granted by the
@@ -21280,7 +21286,7 @@ https://emlot.library.utoronto.ca/db/record/event/7698 -->.</ab>
                         <msDesc xml:id="BHCMRC">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">C 38/27</idno>
                                 <msName>Chancery Court: Master's Report in Edward Alleyn v. William
                                     Henslowe</msName>
@@ -21300,10 +21306,10 @@ link to App 4: II -->. Around the end of October, following John
                                 funeral; see Appendix 4: IV<!-- IN to link to App 4: IV. -->.
                                 Thenceforth, Alleyn's diary (DC: MS IX) reveals the gradual easing
                                 of tension between William Henslowe and Alleyn until, on 1 March
-                                1618/19, Alleyn noted a sealing of peace with Henslowe. <lb/> For an
+                                1618/19, Alleyn noted a sealing of peace with Henslowe. </ab><ab type="edDesc"> For an
                                 image of the original manuscript, see the <title>Henslowe-Alleyn
                                     Digitisation Project</title><!-- IN to link to https://henslowe-
-alleyn.org.uk/catalogue/mss-9/029-recto/ -->. <lb/> For an
+alleyn.org.uk/catalogue/mss-9/029-recto/ -->. </ab><ab type="edDesc"> For an
                                 abstract of this record and details of its transcription in other
                                 printed sources, see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT event
@@ -21320,7 +21326,7 @@ alleyn.org.uk/catalogue/mss-9/029-recto/ -->. <lb/> For an
                         <msDesc xml:id="BHWPHE">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">PROB 10/327</idno>
                                 <msName>Will of Philip Henslowe</msName>
                             </msIdentifier>
@@ -21333,8 +21339,7 @@ alleyn.org.uk/catalogue/mss-9/029-recto/ -->. <lb/> For an
                                 clause is also subscribed. The registered copy of the will is at
                                 TNA: PROB 11/127/14. No inventory of the will seems to have
                                 survived, but for a note of its exhibition see Honigmann and Brock
-                                    <title>Playhouse Wills </title> p, 103, citing TNA: PROB 8/16, f 106v.<lb/>
-                                <lb/> For an abstract of this record and details of its
+                                    <title>Playhouse Wills </title> p, 103, citing TNA: PROB 8/16, f 106v.</ab><ab type="edDesc"> For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT event
                                 and associated records<!-- IN to link to EMLoT 7596:
 https://emlot.library.utoronto.ca/db/record/event/7596/ -->.</ab>
@@ -21348,7 +21353,7 @@ https://emlot.library.utoronto.ca/db/record/event/7596/ -->.</ab>
                         <msDesc xml:id="BHAGHM">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">E 134/18JAS1/MICH10</idno>
                                 <msName>Court of Exchequer: Attorney General v Launcelot, Bishop of
                                     Winchester, William Henslowe and Jacob Meade</msName>
@@ -21361,9 +21366,9 @@ https://emlot.library.utoronto.ca/db/record/event/7596/ -->.</ab>
                                 Meade in around May 1618. The bill concerned the boundaries,
                                 ownership and rents due for the Unicorn and Great Rose, the Barge,
                                 Bell, and Cock, and the Bear Gardens and Hope Playhouse. The bishop
-                                of Winchester also answered the complaint.<lb/>
-                                <lb/> Four depositions were taken in, with four others taken in
-                                later October and January 1620/21 (see Appendix 4. VI. e). <lb/> In
+                                of Winchester also answered the complaint.</ab><ab type="edDesc">
+                                Four depositions were taken in, with four others taken in
+                                later October and January 1620/21 (see Appendix 4. VI. e). </ab><ab type="edDesc"> In
                                 its collection of Loseley papers relating to public offices and
                                 commissions held by the More and More Molyneux family, the Surrey
                                 History Centre also holds copies of both sets of the interrogatories
@@ -21374,7 +21379,7 @@ https://emlot.library.utoronto.ca/db/record/event/7596/ -->.</ab>
                                 textual notes from the SHC: LM/1154/1 version. However, SHC:
                                 LM/1154/2 contains four depositions on behalf of the attorney
                                 general which do not appear in E 134/18JAS1/MICH10, Item 3, and has
-                                therefore been used as the primary source for those witnesses. <lb/>
+                                therefore been used as the primary source for those witnesses. </ab><ab type="edDesc">
                                 For an abstract of this record and details of its transcription in
                                 other printed sources, see the related EMLoT events and associated
                                 records<!-- IN to find a clever way
@@ -21455,7 +21460,7 @@ https://emlot.library.utoronto.ca/db/record/event/7585/ --></ab>
                         <msDesc xml:id="BHEADA">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS IX</idno>
                                 <msName>Edward Alleyn's Diary and Account Book</msName>
                             </msIdentifier>
@@ -21464,9 +21469,9 @@ https://emlot.library.utoronto.ca/db/record/event/7585/ --></ab>
                                 continued this practice in further books, which do not survive. The
                                 'diary,' really an account book, was first transcribed in Young,
                                     <title>Dulwich College</title>, vol 2, pp 51-255, and extracted
-                                in Warner, <title>Catalogue</title>, pp 165-95. <lb/> All notes to
+                                in Warner, <title>Catalogue</title>, pp 165-95. </ab><ab type="edDesc"> All notes to
                                 Alleyn's activities relevant to the Bear Garden in Southwark have
-                                been included here. <lb/> For a fresh transcription, with
+                                been included here. </ab><ab type="edDesc"> For a fresh transcription, with
                                 introduction and glossaries, and an image of the original
                                 manuscript, see the <title>Henslowe-Alleyn Digitisation
                                     Project</title><!-- IN
@@ -21482,7 +21487,7 @@ to link to https://henslowe-alleyn.org.uk/catalogue/mss-9/ -->.</ab>
                         <msDesc xml:id="BHAGPH">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS I</idno>
                                 <msName>Articles of Grievance by Players against Philip
                                     Henslowe</msName>
@@ -21496,18 +21501,18 @@ to link to https://henslowe-alleyn.org.uk/catalogue/mss-9/ -->.</ab>
                                 Prince's Men, joining the company sometime in June 1614 or soon
                                 after, postdates his articles of agreement with Henslowe and Meade
                                 dated 7 April (see Articles of Agreement between Robert Dawes,
-                                player, and Phillip Henslowe and Jacob Meade<!-- #IN to link to BHAARD -->).<lb/>
-                                <lb/> By 1615 Lady Elizabeth's Men had been playing at the Hope for
+                                player, and Phillip Henslowe and Jacob Meade<!-- #IN to link to BHAARD -->).</ab><ab type="edDesc">
+                                    By 1615 Lady Elizabeth's Men had been playing at the Hope for
                                 a year at most under Henslowe and Meade's management, but evidently
                                 not happily. As Herbert Berry notes, 'If <del>as they claim</del>
                                 Henslowe cheated the company of 10s every fourteen days and owed
                                 them £10 altogether, the company played at the Hope forty weeks
                                 until Henslowe "broke" them in February 1615. Hence they began at
                                 the Hope in the spring of 1614' (<title>English Professional
-                                    Theatre</title>, p 603, n 1). <lb/> For an image of the original
+                                    Theatre</title>, p 603, n 1). </ab><ab type="edDesc"> For an image of the original
                                 manuscript, see Ioppolo, <title>Henslowe-Alleyn Digitisation
                                     Project</title><!-- IN to link to https://henslowe-
-alleyn.org.uk/catalogue/mss-1/article-106/01-recto/ -->. <lb/>
+alleyn.org.uk/catalogue/mss-1/article-106/01-recto/ -->. </ab><ab type="edDesc">
                                 For an abstract of this record and details of its transcription in
                                 other printed sources, see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT event
@@ -21523,7 +21528,7 @@ alleyn.org.uk/catalogue/mss-1/article-106/01-recto/ -->. <lb/>
                         <msDesc xml:id="BHCCHH">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">C 24/428/48</idno>
                                 <msName>Chancery Court Depositions in the case of John Henslowe v.
                                     Agnes Henslowe, Edward Alleyn, and Roger Cole</msName>
@@ -21539,7 +21544,7 @@ alleyn.org.uk/catalogue/mss-1/article-106/01-recto/ -->. <lb/>
                                 depositions of seven of the sixteen deponents. Their depositions are
                                 of particular interest for the information they reveal both on the
                                 Bear Gardens and on players' apparel in the possession of Henslowe
-                                at his death. <lb/> Henslowe, in part on the advice of Alleyn, had
+                                at his death. </ab><ab type="edDesc"> Henslowe, in part on the advice of Alleyn, had
                                 chosen Robert Bromfield as one of his overseers along with William
                                 Austen, and Roger Cole. All had been vestrymen and churchwardens at
                                 St Saviour's over the decade prior to Henslowe's death, as had
@@ -21558,7 +21563,7 @@ robert-1575-1642 -->, <title>HPO</title>, accessed 5 December 2022).
                                 closely involved with Henslowe for many years in the operation of
                                 the Bear Garden Edward Griffin had also been a fellow-vestryman, and
                                 with John Picket and Randall Wood was involved in appraising
-                                Henslowe's goods and chattels and leases after his death. <lb/>
+                                Henslowe's goods and chattels and leases after his death. </ab><ab type="edDesc">
                                 Depositions on behalf of the defendants also survive (TNA: C
                                 24/431/48) and were discussed by William Rendle in his 1887 article
                                 on Henslowe, 'Philip Henslowe,' <title>The Genealogist</title>, ns,
@@ -21622,14 +21627,14 @@ BHJFGE -->.<lb/></p></note>
                         <msDesc xml:id="BHSHHA">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">STAC 8/168/18</idno>
                                 <msName>Star Chamber Case: John and William Henslowe v. Edward
                                     Alleyn et al</msName>
                             </msIdentifier>
                             <ab type="edDesc">In May 1617, the dispute between John Henslowe and
-                                Edward Alleyn was taken to Star Chamber.<lb/>
-                                <lb/> There are no records surviving that indicate how the case was
+                                Edward Alleyn was taken to Star Chamber.</ab><ab type="edDesc">
+                                    There are no records surviving that indicate how the case was
                                 processed in Star Chamber, nor of any outcome, but it seems possible
                                 that the death of John in September 1617 (see Appendix 4: I. m)
                                 .(<!-- #IN link to App 4: I -->))may have slowed the process,
@@ -21739,7 +21744,7 @@ E6454: https://emlot.library.utoronto.ca/db/record/event/6454/ -->.</p></note>
                         <msDesc xml:id="BHCCEB">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">C 33/134 B</idno>
                                 <msName>Order in Chancery in the case of Edward Alleyn v. William
                                     Henslowe</msName>
@@ -21751,10 +21756,9 @@ E6454: https://emlot.library.utoronto.ca/db/record/event/6454/ -->.</p></note>
                                 conspired to seize possession of the Bear Garden and its tenements
                                 after Philip's death in January 1615/16(see Appendix 4: II,
                                 e<!-- #IN link to App 4 -->. The order is also inscribed in TNA: C
-                                33/133 A, ff 332v-3. <lb/> For an image of the original manuscript,
+                                33/133 A, ff 332v-3. </ab><ab type="edDesc"> For an image of the original manuscript,
                                 see the Anglo-American Legal Tradition website<!-- #IN link to
-http://aalt.law.uh.edu/AALT4/J1/C33no134/aC33no134recto/IMG_0343.htm -->.<lb/>
-                                <lb/> For an abstract of this record and details of its
+http://aalt.law.uh.edu/AALT4/J1/C33no134/aC33no134recto/IMG_0343.htm -->.</ab><ab type="edDesc"> For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT events
                                 and associated records<!-- IN to link to EMLoT
 E7608, E7609: https://emlot.library.utoronto.ca/db/record/event/7608/,
@@ -21774,7 +21778,7 @@ https://emlot.library.utoronto.ca/db/record/event/7609/ -->.
                         <msDesc xml:id="BHCEWM">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">E 112/126</idno>
                                 <msName>Court of Exchequer: Bishop of Winchester v. Edward Alleyn
                                     and Jacob Meade</msName>
@@ -21791,7 +21795,7 @@ https://emlot.library.utoronto.ca/db/record/event/7609/ -->.
                                 mid-1590s, paying due rent for both and, supported by the testimony
                                 of Jacob Meade, insisted that the Bear Garden, constructed as the
                                 dual purpose Hope theatre and baiting ring was erected on Crown
-                                property. <lb/> For an abstract of this record and details of its
+                                property. </ab><ab type="edDesc"> For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT event
                                 and associated records<!-- IN to link to EMLoT event
 283 https://emlot.library.utoronto.ca/db/record/event/283/ -->.</ab>
@@ -21814,7 +21818,7 @@ https://emlot.library.utoronto.ca/db/record/event/7609/ -->.
                         <msDesc xml:id="BHCRAH">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">Req 2/439: 2 parts: part 2</idno>
                                 <msName>Court of Requests Proceedings Alleyn v. Henslowe</msName>
                             </msIdentifier>
@@ -21824,7 +21828,7 @@ https://emlot.library.utoronto.ca/db/record/event/7609/ -->.
                                 Requests Proceedings of the reign of James I (Wallace, 'Three London
                                 Theatres,' p 3). Eccles cited its TNA reference TNA: Req 2/439
                                 ('Edward Alleyn in London Records,' p 168); see Appendix 4:
-                                VIII<!-- IN to link to App 4 -->. <lb/> From 1610-11 Henslowe
+                                VIII<!-- IN to link to App 4 -->. </ab><ab type="edDesc"> From 1610-11 Henslowe
                                 apparently made no monetary payment towards the £8 annual rent of
                                 the Fortune playhouse north of the city in Finsbury, as agreed for
                                 his share in the property. Instead he allowed Alleyn and his
@@ -21834,7 +21838,7 @@ https://emlot.library.utoronto.ca/db/record/event/7609/ -->.
                                 However, after Agnes Henslowe's death in around April 1617, William
                                 Henslowe inherited the lease of the Bear Garden and thus sought to
                                 deny Alleyn access to the property. Alleyn and William struggled for
-                                control from 1617 to 1624, when William died. <lb/> For an abstract
+                                control from 1617 to 1624, when William died. </ab><ab type="edDesc"> For an abstract
                                 of this record and details of its transcription in other printed
                                 sources, see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT event
@@ -21851,7 +21855,7 @@ https://emlot.library.utoronto.ca/db/record/event/7609/ -->.
                         <msDesc xml:id="BHEBDG">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">REQ 2/177/35</idno>
                                 <msName>Court of Requests case: Edward Bowes v. John Digges and John
                                     Gape</msName>
@@ -21870,11 +21874,11 @@ https://emlot.library.utoronto.ca/db/record/event/7609/ -->.
                                 Southwark Assizes and in the King's Bench. From there the case was
                                 taken to the Court of Requests. It seems the court's decision was in
                                 favour of Pope and Bowes, or there was a settlement, as between
-                                1585–90 Pope retained control of the Bear Garden. <lb/> Related
+                                1585–90 Pope retained control of the Bear Garden. </ab><ab type="edDesc"> Related
                                 records are: Letter from Sir Francis Walsingham to the Lords of the
                                 Privy Council<!-- #IN to link to BHFWPC -->; Court of Requests:
                                 Order in the case of Bowes v. Digges and
-                                Gape<!-- #IN to link to BHCRBD -->. <lb/> Not much is known of
+                                Gape<!-- #IN to link to BHCRBD -->. </ab><ab type="edDesc"> Not much is known of
                                 Digges and Gape. John Digges seems likely to have been the
                                 illegitimate son of Edmund Tilney (1536–1610), master of the Revels,
                                 1579–1610. He was a merchant taylor and an employee of the Revels
@@ -21935,7 +21939,7 @@ https://emlot.library.utoronto.ca/db/record/event/7609/ -->.
                                     1592 (STC: 23334), covering English history from the earliest
                                     times to Elizabeth's reign. Several more continuations followed,
                                     Stow's final edition appearing in 1605 (STC: 23337).<lb/>
-                                    <lb/> The chronicler Edmund Howes (fl. 1602–31) continued Stow's
+                                        The chronicler Edmund Howes (fl. 1602–31) continued Stow's
                                     work, starting <hi rend="italic">circa</hi> 1602 by extending
                                         <title>The Abridgement or Summarie of the English
                                         Chronicle</title> (1607). He published his first
@@ -21965,7 +21969,7 @@ https://emlot.library.utoronto.ca/db/record/event/7609/ -->.
                         <msDesc xml:id="BHHEMD">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>British Library</repository>
+                                <repository sameAs="#BL"/>
                                 <idno type="shelfmark">Cotton Vitellius F.v</idno>
                                 <msName>Henry Machyn's Diary</msName>
                             </msIdentifier>
@@ -21973,14 +21977,14 @@ https://emlot.library.utoronto.ca/db/record/event/7609/ -->.
                                 a merchant taylor of London and parish clerk of Holy Trinity the
                                 Less. Between 1550 and his death in 1563 he kept a chronicle of
                                 heraldic funerals as well as other news and events in the period.
-                                <lb/> The manuscript of his chronicle or diary was one of many badly
+                                </ab><ab type="edDesc"> The manuscript of his chronicle or diary was one of many badly
                                 damaged in the early eighteenth-century fire in the famous library
                                 of the antiquarian Robert Cotton. A complete digital edition, with
                                 manuscript images, transcriptions, and text modernizations, has been
                                 made available on the open access website <title>A London
                                     Provisioner's Chronicle, 1550-1563, by Henry Machyn</title>,
                                 Richard W. Bailey, Marilyn Miller and Colette Moore
-                                (eds)<!-- IN link to https://quod.lib.umich.edu/m/machyn/ -->. <lb/>
+                                (eds)<!-- IN link to https://quod.lib.umich.edu/m/machyn/ -->. </ab><ab type="edDesc">
                                 For an abstract of this record and details of its transcription in
                                 other printed sources, see the related EMLoT events and associated
                                 records<!-- IN to find a clever way
@@ -22003,7 +22007,7 @@ https://emlot.library.utoronto.ca/db/record/event/3789/ -->.</ab>
                         <msDesc xml:id="BHIGKB">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">Muniments 51</idno>
                                 <msName>Indenture between Gilbert Katherens and John Browne</msName>
                             </msIdentifier>
@@ -22017,9 +22021,9 @@ https://emlot.library.utoronto.ca/db/record/event/3789/ -->.</ab>
                                 same name appears in the vestry minutes of St Saviour in July 1616,
                                 leasing some tenements with a view to their rebuilding; see Nelson
                                 and Ingram, <title>Vestry Minutes</title><!-- #IN to link to  -->.
-                                <lb/> For an image of the original manuscript, see Ioppolo,
-                                    <title>Henslowe-Alleyn Digitisation Project</title><!-- #IN to link to  -->.<lb/>
-                                <lb/> For an abstract of this record and details of its
+                                </ab><ab type="edDesc"> For an image of the original manuscript, see Ioppolo,
+                                    <title>Henslowe-Alleyn Digitisation Project</title><!-- #IN to link to  -->.</ab><ab type="edDesc">
+                                        For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT event
                                 and associated records<!-- IN to link to EMLoT:
 E7718: https://emlot.library.utoronto.ca/db/record/event/7718/ -->.</ab>
@@ -22030,7 +22034,7 @@ E7718: https://emlot.library.utoronto.ca/db/record/event/7718/ -->.</ab>
                         <msDesc xml:id="BHJBRB">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">C 146/8579</idno>
                                 <msName>John Bixon's Assignment of Lease to Morgan Pope</msName>
                             </msIdentifier>
@@ -22044,7 +22048,7 @@ E7718: https://emlot.library.utoronto.ca/db/record/event/7718/ -->.</ab>
                                 lease to Morgan Pope, who since December 1579 had held a lease of
                                 the Bear Garden; see Edward Bowes v. John Digges and John
                                 Gape<!-- #IN link to
-BHEBDG -->. <lb/> For an abstract of this record and details of its
+BHEBDG -->. </ab><ab type="edDesc"> For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT event
                                 and associated records<!-- IN to link to EMLoT event
 7574: https://emlot.library.utoronto.ca/db/record/event/7574/ -->.</ab>
@@ -22058,17 +22062,17 @@ BHEBDG -->. <lb/> For an abstract of this record and details of its
                         <msDesc xml:id="BHJNEA">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS II</idno>
                                 <msName>Letter from John Nurse to Edward Alleyn</msName>
                             </msIdentifier>
                             <ab type="edDesc">This letter marks the first appearance of John Nurse
                                 as deputy at the Bear Garden, succeeding Jacob Meade who died in
                                 July 1624 (for Meade's will, see Honigmann and Brock,
-                                    <title>Playhouse Wills</title>, pp 134–8). <lb/> For an image of
+                                    <title>Playhouse Wills</title>, pp 134–8). </ab><ab type="edDesc"> For an image of
                                 the original manuscript, see Ioppolo, <title>Henslowe-Alleyn
                                     Digitisation Project</title><!-- IN to link to https://henslowe-
-alleyn.org.uk/catalogue/mss-2/article-036/01-recto/ -->. <lb/>
+alleyn.org.uk/catalogue/mss-2/article-036/01-recto/ -->. </ab><ab type="edDesc">
                                 For an abstract of this record and details of its transcription in
                                 other printed sources, see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT event
@@ -22081,7 +22085,7 @@ alleyn.org.uk/catalogue/mss-2/article-036/01-recto/ -->. <lb/>
                         <msDesc xml:id="BHJPTW">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">E40/12582</idno>
                                 <msName>Joan Payne's Lease of Bell, Barge and Cock to Thomas
                                     Warram</msName>
@@ -22109,7 +22113,7 @@ alleyn.org.uk/catalogue/mss-2/article-036/01-recto/ -->. <lb/>
                         <msDesc xml:id="BHJPWM">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>British Library</repository>
+                                <repository sameAs="#BL"/>
                                 <idno type="shelfmark">Egerton MS 2623</idno>
                                 <msName>Joan Payne's Lease of the Barge, Bell and Cock to John White
                                     and John Malthouse</msName>
@@ -22123,11 +22127,11 @@ alleyn.org.uk/catalogue/mss-2/article-036/01-recto/ -->. <lb/>
                                 possibly the assignment of 1575; see Joan Payne's Lease of Bell,
                                 Barge and Cock to Thomas Warram<!-- #IN to link to BHJPTW -->. John
                                 White is cited as an oarmaker of Saint Saviour in her will and John
-                                Malthouse as keeper of Freemantle Park in Southampton. <lb/> This
+                                Malthouse as keeper of Freemantle Park in Southampton. </ab><ab type="edDesc"> This
                                 record is a contemporary copy of the original lease (unlocated as
                                 yet), collected by John Payne Collier by 1882 and possibly taken
-                                originally from the Dulwich College archive by Edmund Malone.<lb/>
-                                <lb/> For an abstract of this record and details of its
+                                originally from the Dulwich College archive by Edmund Malone.</ab><ab type="edDesc">
+                                    For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT event
                                 and associated records<!-- IN to link to EMLoT
 E7595: https://emlot.library.utoronto.ca/db/record/event/7595/ -->.</ab>
@@ -22143,7 +22147,7 @@ E7595: https://emlot.library.utoronto.ca/db/record/event/7595/ -->.</ab>
                         <msDesc xml:id="BHLJCS">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">SP/16/334</idno>
                                 <msName>Letter from John Eliot to Sir John Cooke, Secretary of
                                     State</msName>
@@ -22157,10 +22161,9 @@ john-1612-85 -->). The recipient, Sir John Cooke, was secretary
                                 of state (1625–39/40) under Charles I and not to be confused with
                                 John Cook, regicide and first solicitor general of the English
                                 Commonwealth (see F.M. Powicke, <title>The Handbook of British
-                                    Chronology</title>, 3rd ed (Oxford, 1986), 117).<lb/>
-                                <lb/> For rising plague figures in 1636 and related plague orders
-                                that year, see Privy Council Orders regarding Plague<!-- IN to link to BHPC13 -->.<lb/>
-                                <lb/></ab>
+                                    Chronology</title>, 3rd ed (Oxford, 1986), 117).</ab><ab type="edDesc">
+                                        For rising plague figures in 1636 and related plague orders
+                                that year, see Privy Council Orders regarding Plague<!-- IN to link to BHPC13 -->.</ab>
                             <ab type="techDesc"><date>22 October 1636</date>; English; paper;
                                 bifolium; 360mm x 240mm; no original foliation, catchword f
                                     <del>1</del>; no decoration; remains of green seal, f
@@ -22176,7 +22179,7 @@ john-1612-85 -->). The recipient, Sir John Cooke, was secretary
                         <msDesc xml:id="BHLMPC">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">COL/RMD/PA/01/001</idno>
                                 <msName>Letter from the Mayor of London to the Privy
                                     Council</msName>
@@ -22184,7 +22187,7 @@ john-1612-85 -->). The recipient, Sir John Cooke, was secretary
                             <ab type="edDesc">The mayor's previous letter in May, also preserved in
                                 the city's Remembrancia<!-- #IN
 to link to BHLTBW -->, apparently brought no action from the privy
-                                council, and so Sir Thomas Blanke wrote again in July. <lb/> For an
+                                council, and so Sir Thomas Blanke wrote again in July. </ab><ab type="edDesc"> For an
                                 abstract of this record and details of its transcription in other
                                 printed sources, see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT 1819:
@@ -22199,7 +22202,7 @@ https://emlot.library.utoronto.ca/db/record/event/1819/ -->.</ab>
                         <msDesc xml:id="BHLPCS">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">COL/RMD/PA/01/003</idno>
                                 <msName>Privy Council Letter to the Lord Mayor of London</msName>
                             </msIdentifier>
@@ -22220,7 +22223,7 @@ https://emlot.library.utoronto.ca/db/record/event/1819/ -->.</ab>
                         <msDesc xml:id="BHLTBW">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">COL/RMD/PA/01/001</idno>
                                 <msName>Letter from the Lord Mayor to Sir Francis
                                     Walsingham</msName>
@@ -22234,7 +22237,7 @@ https://emlot.library.utoronto.ca/db/record/event/1819/ -->.</ab>
 BHHTVC -->. The appeal to suppress assemblies for entertainment
                                 apparently brought no action from the privy council, and so Blanke
                                 wrote again in July; see Letter from the Mayor of London to the
-                                Privy Council<!-- #IN to link to BHLMPC -->. <lb/> For an abstract
+                                Privy Council<!-- #IN to link to BHLMPC -->. </ab><ab type="edDesc"> For an abstract
                                 of this record and details of its transcription in other printed
                                 sources, see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT event
@@ -22249,7 +22252,7 @@ BHHTVC -->. The appeal to suppress assemblies for entertainment
                         <msDesc xml:id="BHLTFB">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">SP 4/1</idno>
                                 <msName>License granted to Thomas Fluddie to Bait Bears</msName>
                             </msIdentifier>
@@ -22261,7 +22264,7 @@ BHHTVC -->. The appeal to suppress assemblies for entertainment
                                 Saviour's Parish<!-- #IN to link
 BHSRSR -->. Fluddie is cited here as a yeoman of the King's bears
                                 and was confirmed as such on 26 November 1555 by Philip and Mary,
-                                TNA: C 66/900. <lb/> This roll is one of many monthly registers of
+                                TNA: C 66/900. </ab><ab type="edDesc"> This roll is one of many monthly registers of
                                 bills, warrants and letters dry stamped with Henry VIII's signature,
                                 and then submitted to the king for clearance. The king checked each
                                 register and authorized that month's use of the dry stamp by
@@ -22281,7 +22284,7 @@ BHSRSR -->. Fluddie is cited here as a yeoman of the King's bears
                         <msDesc xml:id="BHMRHH">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">C 38/25</idno>
                                 <msName>Master's Report in John Henslowe v. Agnes Henslowe et
                                     al</msName>
@@ -22309,7 +22312,7 @@ to App 4 -->. The report summarises the bill and answers,
                         <msDesc xml:id="BHOCAD">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>LMA</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">COL/CA/01/01/022</idno>
                                 <msName>Order of the Court of Aldermen against Plays and Bearbaiting
                                     on the Sabbath</msName>
@@ -22329,7 +22332,7 @@ to App 4 -->. The report summarises the bill and answers,
                         <msDesc xml:id="BHOCA2">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">COL/CA/01/01/25</idno>
                                 <msName>Order of the Court of Aldermen Suppressing Bearbaiting et
                                     al</msName>
@@ -22347,7 +22350,7 @@ to App 4 -->. The report summarises the bill and answers,
                         <msDesc xml:id="BHPC13">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">PC 2/46</idno>
                                 <msName>Privy Council Orders regarding Plague</msName>
                             </msIdentifier>
@@ -22366,7 +22369,7 @@ to App 4 -->. The report summarises the bill and answers,
                                     <title>The Plays and Poems of William Shakespeare</title>, vol
                                 3, p 239). The privy council's order below for the suppression of
                                 plays, p 144, was therefore reiterated on 1 March 1636/7 and
-                                included rope dancing (see TNA: PC2/47, p 220). <lb/> For an
+                                included rope dancing (see TNA: PC2/47, p 220). </ab><ab type="edDesc"> For an
                                 abstract of this record and details of its transcription in other
                                 printed sources, see the related EMLoT event and associated
                                 records<!-- IN to link to
@@ -22384,7 +22387,7 @@ https://emlot.library.utoronto.ca/db/record/event/1764/ -->.</ab>
                         <msDesc xml:id="BHPDEA">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">C 3/368/80</idno>
                                 <msName>Court of Chancery: Plea and Demurrer of Edward Alleyn in
                                     Meade v. Alleyn</msName>
@@ -22400,7 +22403,7 @@ https://emlot.library.utoronto.ca/db/record/event/1764/ -->.</ab>
                                 the same grounds and the same parties, was as yet proceeding but
                                 undetermined in the Court of Exchequer; see Court of Exchequer:
                                 Attorney General v. the Bishop of Winchester, William Henslowe and
-                                Jacob Meade<!-- #IN to link to, BHAGBW -->. <lb/> In the event,
+                                Jacob Meade<!-- #IN to link to, BHAGBW -->. </ab><ab type="edDesc"> In the event,
                                 Meade made his will two days after this plea and demurrer was lodged
                                 on 1 July 1624, with a codicil added on the 4th. He was buried on 9
                                 July (Honigmann and Brock, <title>Playhouse Wills</title>, pp
@@ -22412,7 +22415,7 @@ https://emlot.library.utoronto.ca/db/record/event/1764/ -->.</ab>
                         <msDesc xml:id="BHPEAH">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS II</idno>
                                 <msName>Petition to William Herbert from Edward Alleyn in answer to
                                     a petition against him relating to the baiting of bears</msName>
@@ -22435,9 +22438,9 @@ IX -->. Moreover both his and apparently also Meade's petitions are
                                 Alleyn's handwriting of the grievances between him and Meade, also
                                 undated (see Edward Alleyn's Statement of Matters in Dispute with
                                 Jacob Meade<!-- #IN to
-link to BHEASM -->). <lb/> For an image of the original manuscript,
+link to BHEASM -->). </ab><ab type="edDesc"> For an image of the original manuscript,
                                 see Ioppolo, <title>Henslowe-Alleyn Digitisation
-                                Project</title><!-- #IN to link to  -->. <lb/> For an abstract of
+                                Project</title><!-- #IN to link to  -->. </ab><ab type="edDesc"> For an abstract of
                                 this record and details of its transcription in other printed
                                 sources, see the related EMLoT event and associated
                                 records<!-- IN to link to
@@ -22453,7 +22456,7 @@ https://emlot.library.utoronto.ca/db/record/event/7565/ -->.</ab>
                         <msDesc xml:id="BHPH8S">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>Society of Antiquaries</repository>
+                                <repository sameAs="#society-antiquaries"/>
                                 <idno type="shelfmark">Proclamations, vol 2</idno>
                                 <msName>Proclamation of Henry VIII against the Stews (A)</msName>
                             </msIdentifier>
@@ -22514,7 +22517,7 @@ https://emlot.library.utoronto.ca/db/record/event/7565/ -->.</ab>
                         <msDesc xml:id="BHPHLE">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS I</idno>
                                 <msName>Philip Henslowe's Letter to Edward Alleyn</msName>
                             </msIdentifier>
@@ -22529,10 +22532,10 @@ https://emlot.library.utoronto.ca/db/record/event/7565/ -->.</ab>
                                 in what proved to be temporary retirement from the stage, staying
                                 with their mutual friend, Arthur Langworth of The Brill, Ringmere,
                                 in Sussex; see the Introduction<!-- IN
-to link to intro -->). <lb/> For an image of the original
+to link to intro -->). </ab><ab type="edDesc"> For an image of the original
                                 manuscript, see Ioppolo, <title>Henslowe-Alleyn Digitisation
                                     Project</title><!-- #IN to link to https://www.henslowe-
-alleyn.org.uk/images/MSS-1/Article-024/01r.html -->. <lb/> For
+alleyn.org.uk/images/MSS-1/Article-024/01r.html -->. </ab><ab type="edDesc"> For
                                 an abstract of this record and details of its transcription in other
                                 printed sources, see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT event
@@ -22551,7 +22554,7 @@ alleyn.org.uk/images/MSS-1/Article-024/01r.html -->. <lb/> For
                         <msDesc xml:id="BHSK08">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">SKCS/035/01</idno>
                                 <msName>Surrey and Kent Commissioners for Sewers' Court Minutes and
                                     Orders</msName>
@@ -22577,8 +22580,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                                 Vauxhall, Wandsworth, Putney, Barnes, Kew, Lewisham, Walworth,
                                 Kennington, Nine Elms, Peckham and New Cross. The area of
                                 jurisdiction remained the same throughout the three centuries during
-                                which it functioned.'<lb/>
-                                <lb/> The membrane with the year date is missing for this roll so
+                                which it functioned.'</ab><ab type="edDesc"> The membrane with the year date is missing for this roll so
                                 the date has been assigned tentatively by the LMA. No day or month
                                 is indicated.</ab>
                             <ab type="techDesc"><date>1638</date>; English; parchment; 2 membranes;
@@ -22588,7 +22590,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                         <msDesc xml:id="BHSKCS">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">SKCS/018</idno>
                                 <msName>Surrey and Kent Commissioners for Sewers' Court Minutes and
                                     Orders</msName>
@@ -22618,12 +22620,10 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                                 Commissioners of Sewers and their Records,' in <title>Prisca
                                     Munimenta: Studies in Archival &amp; Administrative History
                                     presented to Dr A.E.J. Hollaender</title>, Felicity Ranger (ed)
-                                (London, 1973), 282–98.<lb/>
-                                <lb/> John Norden's 1593 map shows the lines of the Bankside sewers
+                                (London, 1973), 282–98.</ab><ab type="edDesc"> John Norden's 1593 map shows the lines of the Bankside sewers
                                 (or drainage ditches). There were three running along the Little
                                 Rose property: to the south along Maiden Lane and one on the west
-                                side adjacent to the Bear Garden property.<lb/>
-                                <lb/> For an abstract of this record and details of its
+                                side adjacent to the Bear Garden property.</ab><ab type="edDesc">For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT event
                                 and associated records<!-- IN to link to EMLoT event
 7831: https://emlot.library.utoronto.ca/db/record/event/7831/ -->.</ab>
@@ -22641,7 +22641,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                         <msDesc xml:id="BHSRSR">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">LR2/190</idno>
                                 <msName>Henry Polsted's Tenants in St Saviour's Parish</msName>
                             </msIdentifier>
@@ -22651,17 +22651,16 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                                 Thomas Fluddie to Bait Bears<!-- #IN link with BHLTFB -->) and John
                                 Allen, yeoman of the prince's bears, in 1546 (see License granted to
                                 John Allen to Bait Bears in Southwark<!-- #IN link with BHLBBS -->).
-                                <lb/> The properties listed had been in Polsted's possession since
+                                </ab><ab type="edDesc"> The properties listed had been in Polsted's possession since
                                 18 January 1538/9 when Ralph Sadler sold him the Crown lease of
                                 lands, messuages, and gardens in 'Stewesside' formerly in the
                                 possession of the Stratford atte Bowe Priory, Middlesex (see TNA: E
                                 326/6853; E 326/12173; and 'The Priory of Stratford at Bow,'
                                     <title>The Religious Houses of London and Middlesex</title>,
-                                Caroline M. Barron and Matthew Davies (eds) (London, 2007), 242–6).<lb/>
-                                <lb/> The volumes of LR 2, Office of the Auditors of Land Revenue
+                                Caroline M. Barron and Matthew Davies (eds) (London, 2007), 242–6).</ab><ab type="edDesc">The volumes of LR 2, Office of the Auditors of Land Revenue
                                 and predecessors: Miscellaneous Books, Surveys and rentals,
                                 generally relate to counties, or groups of counties. LR 2/190 (Vol.
-                                11) Edward VI–Mary relates to Surrey. <lb/> For an abstract of this
+                                11) Edward VI–Mary relates to Surrey. </ab><ab type="edDesc"> For an abstract of this
                                 record and details of its transcription in other printed sources,
                                 see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT event
@@ -22678,7 +22677,7 @@ https://emlot.library.utoronto.ca/db/record/event/7825/ -->.</ab>
                         <msDesc xml:id="BHSSVM">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">P92/SAV/450</idno>
                                 <msName>St Saviour's Vestry Minutes</msName>
                             </msIdentifier>
@@ -22686,8 +22685,8 @@ https://emlot.library.utoronto.ca/db/record/event/7825/ -->.</ab>
                                 vestry to deal with such issues as church fabric, lands, upkeep,
                                 annual elections, and poor relief. No vestry minutes survive between
                                 1628 and 1670 but there remains an earlier book running from July
-                                1557 to March 1581/2, ending on p 169.<lb/>
-                                <lb/> Normalized extracts for both vestry books have been provided
+                                1557 to March 1581/2, ending on p 169.</ab><ab type="edDesc">
+                                Normalized extracts for both vestry books have been provided
                                 by Nelson, 'The Parish of St Saviour,
                                 Southwark'<!-- #IN link to https://stsaviour.folger.edu/vestry-
 minutes-449.html
@@ -22702,7 +22701,7 @@ and https://stsaviour.folger.edu/vestry-minutes-450.html  -->.</ab>
                         <msDesc xml:id="BHAPCB">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">C3/139/4</idno>
                                 <msName>Bill of Complaint Alice Polsted v. Francis
                                     Whitepaine</msName>
@@ -22717,7 +22716,7 @@ and https://stsaviour.folger.edu/vestry-minutes-450.html  -->.</ab>
                                 bear yard of which John Allen had held the farm at £8 per annum in
                                 1552/3 (see Polsted complaint in the Court of
                                 Augmentations<!-- #IN link to BHPCCA -->). By this date in 1559, it
-                                seems the property was farmed by Robert Wistowe. <lb/> Oscar
+                                seems the property was farmed by Robert Wistowe. </ab><ab type="edDesc"> Oscar
                                 Brownstein implied that Robert was an alias for Edward Wistowe, who
                                 managed the bear yard on the Bell, Barge and Cock property from
                                 about 1572-3 (see Court of Requests case: Edward Bowes v. John
@@ -22725,9 +22724,9 @@ and https://stsaviour.folger.edu/vestry-minutes-450.html  -->.</ab>
                                 substantiated and thus the link Brownstein is assuming between the
                                 two Bear Gardens before Henslowe and Alleyn acquired them in the
                                 1590s is tenuous (see Brownstein, 'Burbage,' p 83; 'Popularity,' p
-                                249, n 64). <lb/> The evidence survives in the C3 series, Court of
+                                249, n 64). </ab><ab type="edDesc"> The evidence survives in the C3 series, Court of
                                 Chancery: Six Clerks Office: Pleadings, Series II, Elizabeth I to
-                                Interregnum. <lb/> For an abstract of this record and details of its
+                                Interregnum. </ab><ab type="edDesc"> For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT event
                                 and associated records.<!-- IN to link to EMLoT
 E7586: https://emlot.library.utoronto.ca/db/record/event/7586/ --></ab>
@@ -22740,7 +22739,7 @@ E7586: https://emlot.library.utoronto.ca/db/record/event/7586/ --></ab>
                         <msDesc xml:id="BHWFEA">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS II</idno>
                                 <msName>Letter from Sir William Faunt to Edward Alleyn</msName>
                             </msIdentifier>
@@ -22749,8 +22748,8 @@ E7586: https://emlot.library.utoronto.ca/db/record/event/7586/ --></ab>
                                 royal progress from Edinburgh to London in 1603 (see John Nichols,
                                     <title>The Progresses Processions, and Maginifcent Festivities
                                     of King James the First</title>, vol 1 (London, 1828; rpt Burt
-                                Franklin, 1967), 92.<lb/>
-                                <lb/> There are two more undated letters, also presumably early
+                                Franklin, 1967), 92.</ab><ab type="edDesc">
+                                There are two more undated letters, also presumably early
                                 seventeenth century, from Faunt to Alleyn in the Dulwich College
                                 archive concerning his desire for male bear cubs from Alleyn, as
                                 master of the Bears, Bulls and Mastiff Dogs (1604–26). See Ioppolo,
@@ -22767,7 +22766,7 @@ alleyn.org.uk/catalogue/mss-2/article-040/01-recto/ -->.</ab>
                         <msDesc xml:id="BHTSRB">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">C 146/8584</idno>
                                 <msName>Thomas Stone's Lease of a Plot in the old Bear Garden to
                                     Richard Ballard</msName>
@@ -22780,7 +22779,7 @@ alleyn.org.uk/catalogue/mss-2/article-040/01-recto/ -->.</ab>
                                 Garden') to Richard Ballard, hosier, also of St Saviour's, at 20s
                                 per annum for sixteen years. Nine years later this plot passed into
                                 the hands of Morgan Pope (see John Bixon's Assignment of Lease to
-                                Morgan Pope <!-- #IN link to BHJBRB -->). <lb/> For an abstract of
+                                Morgan Pope <!-- #IN link to BHJBRB -->). </ab><ab type="edDesc"> For an abstract of
                                 this record and details of its transcription in other printed
                                 sources, see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT
@@ -22795,7 +22794,7 @@ E7573: https://emlot.library.utoronto.ca/db/record/event/7573/ -->.</ab>
                         <msDesc xml:id="BHSSOP">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">P92/SAV/1401</idno>
                                 <msName>St Saviour's Overseers of the Poor Accounts</msName>
                             </msIdentifier>
@@ -22805,7 +22804,7 @@ E7573: https://emlot.library.utoronto.ca/db/record/event/7573/ -->.</ab>
                                 General Poor in the parish of St Saviour's, Southwark. St Saviour's
                                 Overseers of the Poor accounts survive only sporadically during this
                                 period, located now either at the London Metropolitan Archives or
-                                The British Library (for Paris Garden). <lb/> Relief of the poor has
+                                The British Library (for Paris Garden). </ab><ab type="edDesc"> Relief of the poor has
                                 been described as one of most important civil functions of the
                                 parish. The act for the relief of the poor enacted in 1597
                                 established the administration of poor relief at the parish level by
@@ -22826,7 +22825,7 @@ E7573: https://emlot.library.utoronto.ca/db/record/event/7573/ -->.</ab>
                         <msDesc xml:id="BHRPMG">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">C66/1648</idno>
                                 <msName>Royal Patent to Henslowe and Alleyn for the Office of Master
                                     of the Royal Game of Bears, Bulls and Mastiff Dogs</msName>
@@ -22834,12 +22833,12 @@ E7573: https://emlot.library.utoronto.ca/db/record/event/7573/ -->.</ab>
                             <ab type="edDesc">The patent granting the long-awaited office,
                                 customarily granted for life, of master of the Royal Game of Bears,
                                 Bulls and Mastiff Dogs to Henslowe and Alleyn was finally enrolled
-                                on 24 November 1604. <lb/> A partial version of the royal patent
+                                on 24 November 1604. </ab><ab type="edDesc"> A partial version of the royal patent
                                 beginning 'and advantages whatsoever<gap reason="omitted"/>'
-                                survives in DC: MS II; the opening section does not survive. <lb/>
+                                survives in DC: MS II; the opening section does not survive. </ab><ab type="edDesc">
                                 For an image of the original manuscript, see Ioppolo,
                                     <title>Henslowe-Alleyn Digitisation
-                                Project</title><!-- #IN to link to  -->. <lb/></ab>
+                                Project</title><!-- #IN to link to  -->.</ab>
                             <ab type="techDesc"><date>24 November 1604</date>; English and Latin;
                                 parchment; 41 membranes, written 1 side only; 265mm x 675–705mm;
                                 unnumbered; dirty, some fading, 1 hole (mb 31); sewn at the top,
@@ -22848,7 +22847,7 @@ E7573: https://emlot.library.utoronto.ca/db/record/event/7573/ -->.</ab>
                         <msDesc xml:id="BHPPHA">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS II</idno>
                                 <msName>Petition of Philip Henslowe and Edward Alleyn to James
                                     I</msName>
@@ -22860,11 +22859,11 @@ E7573: https://emlot.library.utoronto.ca/db/record/event/7573/ -->.</ab>
                                 July and 14 August 1606. Two fair but also undated copies follow
                                 this draft petition, foliated 19 and 20 in MS II. One of these is
                                 printed in Daniel Lysons' <title>The Environs of London, vol 1,
-                                    County of Surrey</title> (London, 1792), 93-5. <lb/> For an
+                                    County of Surrey</title> (London, 1792), 93-5. </ab><ab type="edDesc"> For an
                                 image of the original manuscript, see Ioppolo,
                                     <title>Henslowe-Alleyn Digitisation
                                 Project</title><!-- #IN to link to  https://henslowe-
-alleyn.org.uk/catalogue/mss-2/article-001/01-recto/ -->. <lb/> For
+alleyn.org.uk/catalogue/mss-2/article-001/01-recto/ -->. </ab><ab type="edDesc"> For
                                 an abstract of this record and details of its transcription in other
                                 printed sources, see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT event
@@ -22881,7 +22880,7 @@ alleyn.org.uk/catalogue/mss-2/article-001/01-recto/ -->. <lb/> For
                         <msDesc xml:id="BHOSBB">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">SP 25/69</idno>
                                 <msName>Order to Suppress Bearbaiting et al</msName>
                             </msIdentifier>
@@ -22901,7 +22900,7 @@ alleyn.org.uk/catalogue/mss-2/article-001/01-recto/ -->. <lb/> For
                         <msDesc xml:id="BHLPAG">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">Muniments 174</idno>
                                 <msName>Letters Patent regarding the Dispute between the Attorney
                                     General and William Henslowe and Jacob Meade</msName>
@@ -22922,7 +22921,7 @@ alleyn.org.uk/catalogue/mss-2/article-001/01-recto/ -->. <lb/> For
                         <msDesc xml:id="BHATMA">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">REQ 1/132</idno>
                                 <msName>Affidavit of in v. William in the Court of Requests</msName>
                             </msIdentifier>
@@ -22935,11 +22934,11 @@ alleyn.org.uk/catalogue/mss-2/article-001/01-recto/ -->. <lb/> For
                                 Thomas Mowseherst swore this affidavit that William had been ill
                                 since the previous St Bartholomew's Day, was bedridden and too sick
                                 to answer Alleyn's bill of complaint. William Henslowe had died by
-                                May 1624 (<!-- #IN to link to: Appendix 4: VIII  -->). <lb/> For an
+                                May 1624 (<!-- #IN to link to: Appendix 4: VIII  -->). </ab><ab type="edDesc"> For an
                                 abstract of this record and details of its transcription in other
                                 printed sources, see the related EMLoT event and associated
                                 records<!-- #IN to link to
-EMLoT event 1326  --><lb/></ab>
+EMLoT event 1326  --></ab>
                             <ab type="techDesc"><date>1623–4</date>; English; paper; ii + 208 + ii;
                                 320mm x 203mm; unfoliated; fair condition; vellum binding in poor
                                 condition; handwritten label on front cover: 'Court of Requests. |
@@ -22950,7 +22949,7 @@ EMLoT event 1326  --><lb/></ab>
                         <msDesc xml:id="BHCSHA">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archives</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS II, Article 7</idno>
                                 <msName>Contract for the Bear Garden between Peter Street and
                                     Henslowe and Alleyn</msName>
@@ -22967,23 +22966,22 @@ https://henslowe-alleyn.org.uk/catalogue/muniments-series-1/group-022/ -->).
                                 ft x 16 ft with two storeys of 10 ft high and a smaller storey 4
                                 foot high. Our research indicates that this building became known as
                                 the Dancing Bears and included a gateway to the Bear Garden, which
-                                opened on to a courtyard beyond which was the arena.<lb/>
-                                <lb/> The contract has been analyzed by W.J. Lawrence and Walter H.
+                                opened on to a courtyard beyond which was the arena.</ab><ab type="edDesc">
+                                The contract has been analyzed by W.J. Lawrence and Walter H.
                                 Godfrey, 'The Bear-Garden Contract and what it Implies,'
                                     <title>Architectural Review</title> 47 (1920), 152-5. The
                                 building included a tenement for the bearward and an office for
                                 Henslowe and Alleyn, but the authors determine that 'the greater
                                 portion of the gatehouse proper, with its ample, well-lit spaces,
                                 was devoted to the purposes of a taphouse' to serve the needs of the
-                                Bear Garden audiences ('Bear-Garden Contract,' p 155).<lb/>
-                                <lb/> For details of Peter Street's notable career, including the
+                                Bear Garden audiences ('Bear-Garden Contract,' p 155).</ab><ab type="edDesc"> For details of Peter Street's notable career, including the
                                 building of the Globe playhouse in 1599, see further Mary Edmond,
                                 'Peter Street, 1553-1609: Builder of Playhouses, '
-                                    <title>Shakespeare Survey</title> 45 (1992), 101-14. <lb/> The
+                                    <title>Shakespeare Survey</title> 45 (1992), 101-14. </ab><ab type="edDesc"> The
                                 contract is printed in full by Collier, <title>Memoirs of Edward
                                     Alleyn</title>, pp 78-81, and in part by Greg, <title>Henslowe
                                     Papers</title>, pp 102-3, and Lawrence and Godfrey, 'Bear-Garden
-                                Contract,' (1920), p 153. <lb/> For an abstract of this record and
+                                Contract,' (1920), p 153. </ab><ab type="edDesc"> For an abstract of this record and
                                 details of its transcription in other printed sources, see the
                                 related EMLoT event and associated
                                 records<!-- IN to link to EMLoT
@@ -23002,7 +23000,7 @@ E7551: https://emlot.library.utoronto.ca/db/record/event/7551 -->.</ab>
                         <msDesc xml:id="BHPSBM">
                             <msIdentifier>
                                 <settlement>Winchester</settlement>
-                                <repository>Hampshire Record Office</repository>
+                                <repository sameAs="#HRO"/>
                                 <idno type="shelfmark">11M59/A1/2/14</idno>
                                 <msName>Parliamentary Survey of the Bishop's Manor in
                                     Southwark</msName>
@@ -23082,14 +23080,14 @@ https://emlot.library.utoronto.ca/db/record/event/3787/ -->.</p></note>
                         <msDesc xml:id="BHNEEA">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Library</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS XVIII</idno>
                                 <msName>Edward Alleyn's Notes of Expenditure</msName>
                             </msIdentifier>
                             <ab type="edDesc">This note in Edward Alleyn's hand sums up his
                                 expenditures on the Bear Garden on Bankside and the Fortune Theatre
                                 in Cripplegate. The figures on the back are as yet unexplained.
-                                <lb/> For an abstract of this record and details of its
+                                </ab><ab type="edDesc"> For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT event
                                 and associated records<!-- IN to link to EMLoT event
 465
@@ -23102,7 +23100,7 @@ https://emlot.library.utoronto.ca/db/record/event/465/ -->.</ab>
                         <msDesc xml:id="BHSKC5">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">SKCS/027</idno>
                                 <msName>Surrey and Kent Commissioners for Sewers' Court Minutes and
                                     Orders</msName>
@@ -23132,7 +23130,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                                 Commissioners of Sewers and their Records,' in <title>Prisca
                                     Munimenta: Studies in Archival &amp; Administrative History
                                     presented to Dr A.E.J. Hollaender</title>, Felicity Ranger (ed)
-                                (London, 1973), 282-98. <lb/> Two further Sewer Commission Reports
+                                (London, 1973), 282-98. </ab><ab type="edDesc"> Two further Sewer Commission Reports
                                 for this period, 12 February 1626/7 (SKCS/028) and 30 June 1630
                                 (SKCS/030, mb 6), could not be examined for inclusion because they
                                 are now unfit for production.</ab>
@@ -23146,7 +23144,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                         <msDesc xml:id="BHAPHM">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">Muniment 52</idno>
                                 <msName>Articles of Agreement between Philip Henslowe and Jacob
                                     Meade and their Acting Company</msName>
@@ -23168,7 +23166,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                                 1619/20), actor and playwright,' <title>ODNB</title>, accessed 16
                                 November 2022, and Siobhan Keenan, <title>Acting Companies and their
                                     Plays in Shakespeare's London</title> (London, 2014), 33-51.
-                                <lb/> For an image of the original manuscript, see Ioppolo,
+                                </ab><ab type="edDesc"> For an image of the original manuscript, see Ioppolo,
                                     <title>Henslowe-Alleyn Digitisation
                                 Project</title><!-- IN to link to https://www.henslowe-
 alleyn.org.uk/images/Muniments-Series-1/Group-052/01r.html -->.</ab>
@@ -23240,7 +23238,7 @@ https://emlot.library.utoronto.ca/db/record/event/4079/
                         <msDesc xml:id="BHAAAM">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS I</idno>
                                 <msName>Articles of Agreement between Edward Alleyn, Jacob Meade and
                                     Players at the Hope</msName>
@@ -23252,7 +23250,7 @@ https://emlot.library.utoronto.ca/db/record/event/4079/
                                 Men, a reorganized company including some of Lady Elizabeth's Men as
                                 well as the Prince's Men. This company was managed by Henslowe and
                                 Meade and was using the Hope by 1615. Alleyn and Meade agree here to
-                                settle the £400 claim against them for the sum of £200. <lb/> For an
+                                settle the £400 claim against them for the sum of £200. </ab><ab type="edDesc"> For an
                                 image of the original manuscript, see the <title>Henslowe-Alleyn
                                     Digitisation
                                 Project</title><!-- IN to link to https://henslowe-
@@ -23268,7 +23266,7 @@ alleyn.org.uk/catalogue/mss-1/article-107/01-recto/ -->.</ab>
                         <msDesc xml:id="BHWLBG">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">C 146/8578</idno>
                                 <msName>David Watson's Lease of a Plot next to the Bear Garden to
                                     Thomas Burnaby</msName>
@@ -23283,11 +23281,11 @@ alleyn.org.uk/catalogue/mss-1/article-107/01-recto/ -->.</ab>
                                 was part of the Unicorn land. A month later Burnaby's lease of the
                                 Bear Garden to Richard Reve was confirmed (see Thomas Burnaby's
                                 Lease of the Bear Garden to Richard
-                                Reve<!-- #IN to link to BHBLBG -->). <lb/> For an abstract of this
+                                Reve<!-- #IN to link to BHBLBG -->). </ab><ab type="edDesc"> For an abstract of this
                                 record and details of its transcription in other printed sources,
                                 see the related EMLoT event and associated records<!-- IN to link to EMLoT event
 7576: https://emlot.library.utoronto.ca/db/record/event/7576/ -->
-                                <lb/></ab>
+                                </ab>
                             <ab type="techDesc"><date>10 November 1590</date>; single membrane;
                                 parchment; English; 445mm x 220mm; unnumbered; elaborated first
                                 initial 'T' for 'This,' some words in large black letters for
@@ -23298,7 +23296,7 @@ alleyn.org.uk/catalogue/mss-1/article-107/01-recto/ -->.</ab>
                         <msDesc xml:id="BHLWFB">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>British Library</repository>
+                                <repository sameAs="#BL"/>
                                 <idno type="shelfmark">Lansdowne 37</idno>
                                 <msName>Letter of William Fleetwood to Lord Burghley</msName>
                             </msIdentifier>
@@ -23306,12 +23304,11 @@ alleyn.org.uk/catalogue/mss-1/article-107/01-recto/ -->.</ab>
                                 (1571–91), concerns various matters and encloses 'A 'Dyarie' (ff
                                 11–12) of the previous week's activities, including this note of the
                                 disaster at the Bear Garden on Bankside. For a full transcription of
-                                the letter see Chambers and Greg, 'Lansdowne Manuscripts,' pp 160–3.<lb/>
-                                <lb/> The reference to 'a booke sett downe vpon the same matter' is
+                                the letter see Chambers and Greg, 'Lansdowne Manuscripts,' pp 160–3.</ab><ab type="edDesc"> The reference to 'a booke sett downe vpon the same matter' is
                                 likely to John Field's <title>A Godly Exhortation</title>, published
                                 within a week of the incident with a dedication to the lord mayor,
                                 Fleetwood, and to the aldermen of the City<!-- #IN to link
-to BHJFGE -->. <lb/> For an abstract of this record and details of
+to BHJFGE -->. </ab><ab type="edDesc"> For an abstract of this record and details of
                                 its transcription in other printed sources, see the related EMLoT
                                 event and associated records<!-- IN to link to EMLoT event
 1835
@@ -23330,7 +23327,7 @@ https://emlot.library.utoronto.ca/db/record/event/1835/ -->.</ab>
                         <msDesc xml:id="BHLLBM">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">COL/RMD/PA/01/001</idno>
                                 <msName>Letter from Lord Burghley to the Lord Mayor</msName>
                             </msIdentifier>
@@ -23342,13 +23339,12 @@ link to BHLLB1 -->). The tragic incident at the Bear Garden that
                                 occurred at the site of the Bell and Cock where 'Payne's Standings'
                                 was located, by then sub-leased to Edward Bowes, with William Glover
                                 as his agent. For an account of the tragedy, see Holinshed,
-                                    <title>Third volume of Chronicles</title><!-- #IN link to BHHTVC -->).<lb/>
-                                <lb/> For an abstract of this record and details of its
+                                    <title>Third volume of Chronicles</title><!-- #IN link to BHHTVC -->).</ab><ab type="edDesc"> For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT event
                                 and associated records<!-- IN to link to EMLoT event
 1822: https://emlot.library.utoronto.ca/db/record/event/1822 -->.
-                                <lb/> The letter is preserved, copied into the City of London's
-                                Remembrancia.<lb/></ab>
+                                </ab><ab type="edDesc"> The letter is preserved, copied into the City of London's
+                                Remembrancia.</ab>
                             <ab type="techDesc"><date>April 1580May 1592</date>; English; paper;
                                 viii + 342 + iii (with contemporary entry numbers); 279mm x 195mm;
                                 ink foliation; most pages repaired; rebound 1970 in white vellum on
@@ -23359,7 +23355,7 @@ link to BHLLB1 -->). The tragic incident at the Bear Garden that
                         <msDesc xml:id="BHLLB1">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>British Library</repository>
+                                <repository sameAs="#BL"/>
                                 <idno type="shelfmark">Lansdowne 37</idno>
                                 <msName>Letter from the Lord Mayor to Lord Burghley</msName>
                             </msIdentifier>
@@ -23370,7 +23366,7 @@ link to BHLLB1 -->). The tragic incident at the Bear Garden that
                                 event, <title>Third Volume of
                                 Chronicles</title><!-- #IN to link to BHHTVC -->. A Letterbook copy
                                 is also found in the Remembrancia I (LMA: COL/RMD/PA/01/001, ff
-                                226–6v), wrongly dated 18 January. <lb/> For an abstract of this
+                                226–6v), wrongly dated 18 January. </ab><ab type="edDesc"> For an abstract of this
                                 record and details of its transcription in other printed sources,
                                 see the related EMLoT event and associated
                                 records<!-- IN to link EMLoT event
@@ -23390,7 +23386,7 @@ link to BHLLB1 -->). The tragic incident at the Bear Garden that
                         <msDesc xml:id="BHSKC7">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">SKCS/029</idno>
                                 <msName>Surrey and Kent Commissioners for Sewers' Court Minutes and
                                     Orders</msName>
@@ -23420,7 +23416,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                                 Commissioners of Sewers and their Records,' in <title>Prisca
                                     Munimenta: Studies in Archival &amp; Administrative History
                                     presented to Dr A.E.J. Hollaender</title>, Felicity Ranger (ed)
-                                (London, 1973), 282–98. <lb/> One further Sewer Commission Report
+                                (London, 1973), 282–98. </ab><ab type="edDesc"> One further Sewer Commission Report
                                 for this period, 30 June 1630 (SKCS/030, mb 6), could not be
                                 examined for inclusion because it is now unfit for production.</ab>
                             <ab type="techDesc"><date>17 February 1629/30</date>; English with some
@@ -23432,7 +23428,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                         <msDesc xml:id="BHSKC3">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">SKCS/023</idno>
                                 <msName>Surrey and Kent Commissioners for Sewers' Court Minutes and
                                     Orders</msName>
@@ -23472,7 +23468,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                         <msDesc xml:id="BHLLBS">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">SP4/1</idno>
                                 <msName>License granted to John Allen to Bait Bears in
                                     Southwark</msName>
@@ -23483,7 +23479,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                                 Stews<!-- #IN link to BHPH8S -->). By 1552 he appeared as a tenant
                                 of Henry Polsted at the 'Bearyard and Bearehouse' on the Unicorn
                                 property (see Henry Polsted's Tenants in St Saviour's
-                                Parish<!-- #IN link with BHSRSR -->). <lb/> This roll is one of many
+                                Parish<!-- #IN link with BHSRSR -->). </ab><ab type="edDesc"> This roll is one of many
                                 monthly registers of bills, warrants, and letters dry stamped with
                                 Henry VIII's signature and then submitted to the king for clearance.
                                 The king checked each register and authorized that month's use of
@@ -23503,7 +23499,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                         <msDesc xml:id="BHMMBA">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS VIII</idno>
                                 <msName>Edward Alleyn's Memorandum Book</msName>
                             </msIdentifier>
@@ -23512,10 +23508,10 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                                 building cost of the Fortune Playhouse. Also included is this
                                 extract giving the costs of the purchase of the Bear Garden from
                                 Thomas Burnaby in 1594 and of its sale to Philip Henslowe in 1610.
-                                <lb/> For an image of the original manuscript, see Ioppolo,
+                                </ab><ab type="edDesc"> For an image of the original manuscript, see Ioppolo,
                                     <title>Henslowe-Alleyn Digitisation
                                 Project</title><!-- IN to link to https://henslowe-
-alleyn.org.uk/catalogue/mss-8/005-verso/ -->. <lb/> For an abstract
+alleyn.org.uk/catalogue/mss-8/005-verso/ -->. </ab><ab type="edDesc"> For an abstract
                                 of this record and details of its transcription in other printed
                                 sources, see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT
@@ -23603,7 +23599,7 @@ E7550: https://emlot.library.utoronto.ca/db/record/event/7550/ -->.</ab>
                         <msDesc xml:id="BHHHOB">
                             <msIdentifier>
                                 <settlement>Washington, DC</settlement>
-                                <repository>Folger Shakespeare Library</repository>
+                                <repository sameAs="#folger-shakespeare-library"/>
                                 <idno type="shelfmark">W.b.158</idno>
                                 <msName>Sir Henry Herbert's Office Book</msName>
                             </msIdentifier>
@@ -23617,7 +23613,7 @@ E7550: https://emlot.library.utoronto.ca/db/record/event/7550/ -->.</ab>
                                 of by Sir Henry Herbert (bap. 1594, d. 1673), master of the Revels,
                                 1623-73, who purchased the office from Buck's successor, Sir John
                                 Astley (<hi rend="italic">c</hi> 1569–1640), master of the Revels,
-                                1622–July 1623. <lb/> Herbert continued the office book up to 1642
+                                1622–July 1623. </ab><ab type="edDesc"> Herbert continued the office book up to 1642
                                 but following his death, his records were kept at his family estate
                                 at Ribbesford, near Bewdley, Worcestershire. Edmond Malone published
                                 many records from the office Book in his edition of <title>The Plays
@@ -23637,12 +23633,12 @@ E7550: https://emlot.library.utoronto.ca/db/record/event/7550/ -->.</ab>
                                 paper into notebooks that are now in the Folger Shakespeare Library'
                                 ('Craven Ord Transcripts,' p 84). As a result, the entries below are
                                 quoted from one of Halliwell-Phillipps' scrapbooks rather than the
-                                original office Book. <lb/> See further N.W. Bawcutt, <title>The
+                                original office Book. </ab><ab type="edDesc"> See further N.W. Bawcutt, <title>The
                                     Control and Censorship of Caroline Drama. The Records of Sir
                                     Henry Herbert, Master of the Revels 1623–73</title> (Oxford,
                                 1996), 134-200, and 'Craven Ord Transcripts of Sir Henry Herbert's
                                 Office-Book in the Folger Shakespeare Library,' <title>English
-                                    Literary Renaissance</title> 14.1 (1984), 83–94. <lb/> For an
+                                    Literary Renaissance</title> 14.1 (1984), 83–94. </ab><ab type="edDesc"> For an
                                 abstract of this record and details of its transcription in other
                                 printed sources, see the related EMLoT event and associated
                                 records<!-- #IN to link to
@@ -23657,7 +23653,7 @@ https://emlot.library.utoronto.ca/db/record/event/7486/ -->.</ab>
                         <msDesc xml:id="BHBLBG">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">C 146/8581</idno>
                                 <msName>Thomas Burnaby's Lease of the Bear Garden to Richard
                                     Reve</msName>
@@ -23669,7 +23665,7 @@ https://emlot.library.utoronto.ca/db/record/event/7486/ -->.</ab>
                                 citizen of London but is listed in the oken books of St Saviour's,
                                 Southwark, as resident in Crown Alley in 1593 and less specifically
                                 on Bankside in 1594<!-- #IN to link
-to http://tokenbooks.folger.edu/ -->. <lb/> For an abstract of this
+to http://tokenbooks.folger.edu/ -->. </ab><ab type="edDesc"> For an abstract of this
                                 record and details of its transcription in other printed sources,
                                 see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT 7577:
@@ -23685,7 +23681,7 @@ https://emlot.library.utoronto.ca/db/record/event/7577/ -->.</ab>
                         <msDesc xml:id="BHHAMB">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS II</idno>
                                 <msName>Philip Henslowe's Letter to Edward Alleyn</msName>
                             </msIdentifier>
@@ -23694,11 +23690,11 @@ https://emlot.library.utoronto.ca/db/record/event/7577/ -->.</ab>
                                 Alleyn, as joint successors to Ralph Bowes' lucrative office as
                                 master of Bears, Bulls and Mastiff Dogs. Instead the office passed
                                 firstly to John Dorrington and then to William Stewart and they
-                                would have to wait until 1604 to realize their dream. <lb/> For an
+                                would have to wait until 1604 to realize their dream. </ab><ab type="edDesc"> For an
                                 image of the original manuscript, see Ioppolo,
                                     <title>Henslowe-Alleyn Digitisation
                                 Project</title><!-- #IN to link to https://henslowe-
-alleyn.org.uk/catalogue/mss-2/article-001/01-recto/ -->. <lb/> For
+alleyn.org.uk/catalogue/mss-2/article-001/01-recto/ -->. </ab><ab type="edDesc"> For
                                 an abstract of this record and details of its transcription in other
                                 printed sources, see the related EMLoT event and associated
                                 records<!-- IN to link to event 7558:
@@ -23716,7 +23712,7 @@ https://emlot.library.utoronto.ca/db/record/event/7558/ -->.</ab>
                         <msDesc xml:id="BHGKHM">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">Muniments, Series 1, 49</idno>
                                 <msName>Gilbert Katherens' Contract with Philip Henslowe and Jacob
                                     Meade for Rebuilding the Bear Garden</msName>
@@ -23753,11 +23749,11 @@ link to BHIGKB -->). The bond for £600 from Katherens to Henslowe
                                     <title>Henslowe-Alleyn Digitisation Project</title>, Muniments
                                 1, Group 50<!-- #IN to
 link to https://henslowe-alleyn.org.uk/catalogue/muniments-series-1/group-050 -->.
-                                <lb/> For an image of the original manuscript, see Ioppolo,
+                                </ab><ab type="edDesc"> For an image of the original manuscript, see Ioppolo,
                                     <title>Henslowe-Alleyn Digitisation
                                 Project</title><!-- #IN to link to https://henslowe-
 alleyn.org.uk/catalogue/muniments-series-1/group-049/01-recto/ -->.
-                                <lb/> For an abstract of this record and details of its
+                                </ab><ab type="edDesc"> For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT event
                                 and associated records<!-- IN to link to EMLoT E458:
 https://emlotdev.library.utoronto.ca/db/record/event/458/ -->.</ab>
@@ -23772,7 +23768,7 @@ https://emlotdev.library.utoronto.ca/db/record/event/458/ -->.</ab>
                         <msDesc xml:id="BHAMJE">
                             <msIdentifier>
                                 <settlement>Washington, D.C.</settlement>
-                                <repository>Folger Shakespeare Library</repository>
+                                <repository sameAs="#folger-shakespeare-library"/>
                                 <idno type="shelfmark">V.a.259</idno>
                                 <msName>Alessandro Magno's Journey in England</msName>
                             </msIdentifier>
@@ -23783,7 +23779,7 @@ https://emlotdev.library.utoronto.ca/db/record/event/458/ -->.</ab>
                                 and Brescia (1562). He sailed west from Venice on the <hi
                                     rend="italic">Madonna Santa Maria da Loretto</hi> on Sunday, 1
                                 March 1561/2, reaching the River Thames on the 12th or 13th of
-                                August in the same year. <lb/> The manuscript journal became part of
+                                August in the same year. </ab><ab type="edDesc"> The manuscript journal became part of
                                 Matteo Luigi Canonici's collection by the eighteenth century and was
                                 later purchased by the Rev Walter Sneyd in 1835. After his death in
                                 1888, it was acquired by T. Thorp, the bookseller, who subsequently
@@ -23805,9 +23801,8 @@ https://emlotdev.library.utoronto.ca/db/record/event/458/ -->.</ab>
 garden -->) where images are included from the Agas map and William
                                 Smith's equally impressionistic sketch of two bullbaiting and
                                 bearbaiting arenas on Bankside in <title>The Particular Description
-                                    of England&gt;</title> (1588).<lb/>
-                                <lb/> The transcription of the Italian has been checked and
-                                translated by Emily Mayne.<lb/></ab>
+                                    of England&gt;</title> (1588).</ab><ab type="edDesc"> The transcription of the Italian has been checked and
+                                translated by Emily Mayne.</ab>
                             <ab type="techDesc"><date>1565</date>; Italian; paper; ii + 283; 204mm x
                                 154mm; modern pencil foliation 1–177, 177b, 178–283 (ff 59–64, 195,
                                 246v–83v blank); some ink or watercolour sketches; many leaves
@@ -23822,7 +23817,7 @@ garden -->) where images are included from the Agas map and William
                         <msDesc xml:id="BHSKC2">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">SKCS/020</idno>
                                 <msName>Surrey and Kent Commissioners for Sewers' Court Minutes and
                                     Orders</msName>
@@ -23862,7 +23857,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                         <msDesc xml:id="BHSKC1">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">SKCS/019</idno>
                                 <msName>Surrey and Kent Commissioners for Sewers' Court Minutes and
                                     Orders</msName>
@@ -23902,7 +23897,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                         <msDesc xml:id="BHSK10">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">SKCS/035/02</idno>
                                 <msName>Surrey and Kent Commissioners for Sewers' Court Minutes and
                                     Orders</msName>
@@ -23940,7 +23935,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                         <msDesc xml:id="BHJHCO">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>Parliamentary Archives</repository>
+                                <repository sameAs="#parliamentary-archives"/>
                                 <idno type="shelfmark">HC/CL/JO/1/24</idno>
                                 <msName>Journal of the House of Commons</msName>
                             </msIdentifier>
@@ -23953,7 +23948,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                                 Despite the subsequent parliamentary order against bearbaiting, the
                                 practice continued during the Interregnum until 1655/6, as Hotson
                                 describes (<title>Commonwealth and Restoration Stage</title>, pp
-                                61–9). <lb/> For an abstract of this record and details of its
+                                61–9). </ab><ab type="edDesc"> For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT event
                                 and associated records<!-- IN to link to EMLoT event
 3791: https://emlot.library.utoronto.ca/db/record/event/3791 -->.</ab>
@@ -23972,7 +23967,7 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                         <msDesc xml:id="BHLLMP">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>British Library</repository>
+                                <repository sameAs="#BL"/>
                                 <idno type="shelfmark">Egerton MS 2623</idno>
                                 <msName>Letter from the Lord Mayor to the Privy Council</msName>
                             </msIdentifier>
@@ -23999,17 +23994,17 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                         <msDesc xml:id="BHLEAP">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS I</idno>
                                 <msName>Letter to Edward Alleyn from the Players</msName>
                             </msIdentifier>
                             <ab type="edDesc">The date of the letter is uncertain though it
                                 obviously followed Henslowe's death in early January 1615/16 and
                                 likely also the 20 March 1615/16 Articles of Agreement signed by
-                                Prince Charles' Men, Alleyn and Jacob Meade. <lb/> For an image of
+                                Prince Charles' Men, Alleyn and Jacob Meade. </ab><ab type="edDesc"> For an image of
                                 the original manuscript, see Ioppolo, <title>Henslowe-Alleyn
                                     Digitisation Project</title><!-- IN to link to https://henslowe-
-alleyn.org.uk/catalogue/mss-1/article-110/01-recto/ -->. <lb/>
+alleyn.org.uk/catalogue/mss-1/article-110/01-recto/ -->. </ab><ab type="edDesc">
                                 For an abstract of this record and details of its transcription in
                                 other printed sources, see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT event
@@ -24026,7 +24021,7 @@ alleyn.org.uk/catalogue/mss-1/article-110/01-recto/ -->. <lb/>
                         <msDesc xml:id="BHFDMH">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MSS I</idno>
                                 <msName>Letter from Nathan Field, Robert Daborne, and Philip
                                     Massinger to Henslowe</msName>
@@ -24040,7 +24035,7 @@ alleyn.org.uk/catalogue/mss-1/article-110/01-recto/ -->. <lb/>
                                 approximate date for Field's appeal to Henslowe. The partners'
                                 agreement with Field as sharer in the company survives as Muniment
                                 52 in the Dulwich College Archive<!-- #IN to link to BHAPHM  -->.
-                                The reason for Field's arrest is unknown. <lb/> See further the
+                                The reason for Field's arrest is unknown. </ab><ab type="edDesc"> See further the
                                 digital essay by R.A. Foakes and Grace Ioppolo on the
                                     <title>Henslowe- Alleyn Digitisation Project</title>
                                 website<!-- https://henslowe-
@@ -24051,11 +24046,11 @@ philip-henslowe-c-1614/ -->. As Foakes and Ioppolo note, 'it seems
                                 Other records in the Henslowe- Alleyn Archive suggest that the play
                                 which Daborne refers to as John Fletcher's 'and ours' is <title>The
                                     Honest Man's Fortune</title>, contracted by Henslowe in 1613.'
-                                <lb/> A note in the hand of Robert Davison on the verso of the
+                                </ab><ab type="edDesc"> A note in the hand of Robert Davison on the verso of the
                                 letter confirms that Henslowe responded to the plea as hoped:
                                     'Rec<ex>eued</ex> by mee Robert Dauison <add place="above">of mr
                                     Hinshloe</add> for ye vse of mr Dauboern mr ffeeld mr messenger
-                                the some of v l.' <lb/> For an image of the original manuscript, see
+                                the some of v l.' </ab><ab type="edDesc"> For an image of the original manuscript, see
                                 Ioppolo, <title>Henslowe-Alleyn Digitisation
                                 Project</title><!-- IN to link to https://henslowe-
 alleyn.org.uk/catalogue/mss-1/article-068/ -->.</ab>
@@ -24068,7 +24063,7 @@ alleyn.org.uk/catalogue/mss-1/article-068/ -->.</ab>
                         <msDesc xml:id="BHALCG">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS II</idno>
                                 <msName>Alleyn's Letter to Christopher Goffe</msName>
                             </msIdentifier>
@@ -24076,10 +24071,10 @@ alleyn.org.uk/catalogue/mss-1/article-068/ -->.</ab>
                                 masters of the Bears, Bulls and Mastiff Dogs, is in Alleyn's hand.
                                 On the back of the first leaf are some accounts for bear's meat at
                                 Dartford, Gravesend, Rochester, Maidstone, Sittingborne, Faversham,
-                                Canterbury, Dover, Folkestone, Ashford, and Wye. <lb/> For an image
+                                Canterbury, Dover, Folkestone, Ashford, and Wye. </ab><ab type="edDesc"> For an image
                                 of the original manuscript, see Ioppolo, <title>Henslowe-Alleyn
                                     Digitisation Project</title><!-- IN to link to https://henslowe-
-alleyn.org.uk/catalogue/mss-2/article-008/01-recto/ -->. <lb/>
+alleyn.org.uk/catalogue/mss-2/article-008/01-recto/ -->. </ab><ab type="edDesc">
                                 For an abstract of this record and details of its transcription in
                                 other printed sources, see the related EMLoT events and associated
                                 records. <!-- IN to link to EMLoT
@@ -24096,7 +24091,7 @@ NB please do not cite the event numbers in the text --></ab>
                         <msDesc xml:id="BHALEA">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS II</idno>
                                 <msName>Arthur Langworth's Letter to Edward Alleyn</msName>
                             </msIdentifier>
@@ -24107,13 +24102,10 @@ NB please do not cite the event numbers in the text --></ab>
                                 pressure they were putting on acquaintances at Court and elsewhere
                                 to help them secure the favour of those who might help them.
                                 Although the letter is undated, the reference to Bowes' illness
-                                points to early June 1598 as the date.<lb/>
-                                <lb/> The letter is fully transcribed by Greg in <title>Henslowe
-                                    Papers</title>, pp 99-100.<lb/>
-                                <lb/> For an image of the original manuscript, see Ioppolo,
+                                points to early June 1598 as the date.</ab><ab type="edDesc"> The letter is fully transcribed by Greg in <title>Henslowe
+                                    Papers</title>, pp 99-100.</ab><ab type="edDesc"> For an image of the original manuscript, see Ioppolo,
                                     <title>Henslowe-Alleyn Digitisation Project</title><!-- IN to link to https://henslowe-
-alleyn.org.uk/catalogue/mss-2/article-002/ -->.<lb/>
-                                <lb/> For an abstract of this record and details of its
+alleyn.org.uk/catalogue/mss-2/article-002/ -->.</ab><ab type="edDesc"> For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT event
                                 and associated records.<!-- IN to link to EMLoT
 E7678: https://emlot.library.utoronto.ca/db/record/event/7678/
@@ -24130,7 +24122,7 @@ NB please do not cite the event numbers in the text --></ab>
                         <msDesc xml:id="BHAQBG">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS VII</idno>
                                 <msName>Acquittance for the Bear Garden</msName>
                             </msIdentifier>
@@ -24142,7 +24134,7 @@ NB please do not cite the event numbers in the text --></ab>
                                 is transcribed from DC: MS II, single sheet: Acquittance from
                                 Richard Lefwicke to Philip Henslowe for rent on the Bear Garden, 1
                                 January 1601/2.<!-- #IN to link to BHARLH -->
-                                <lb/> For an image of the original manuscript, see the Ioppolo,
+                                </ab><ab type="edDesc"> For an image of the original manuscript, see the Ioppolo,
                                     <title>Henslowe-Alleyn Digitisation Project</title>, .</ab>
                             <ab type="techDesc"><date>1576-81 (mining accounts), 1591/2–1609</date>;
                                 English; paper; ii + 238 + ii (modern); 295mm x 190mm; 19th-c.
@@ -24158,7 +24150,7 @@ NB please do not cite the event numbers in the text --></ab>
                         <msDesc xml:id="BHARLH">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS II</idno>
                                 <msName>Richard Lefwicke's Acquittance for the Bear Garden</msName>
                             </msIdentifier>
@@ -24166,11 +24158,11 @@ NB please do not cite the event numbers in the text --></ab>
                                 by John Dorrington, is in Henslowe's diary
                                 <!-- #IN to link to BHAQBG -->. The lucrative commission of £40 a
                                 year was paid to Dorrington, as master of the Bears, Bulls and
-                                Mastiff Dogs, for license to bait at the Bear Garden. <lb/> For an
+                                Mastiff Dogs, for license to bait at the Bear Garden. </ab><ab type="edDesc"> For an
                                 image of the original manuscript, see Ioppolo,
                                     <title>Henslowe-Alleyn Digitisation
                                 Project</title><!-- #IN to link to https://henslowe-
-alleyn.org.uk/catalogue/mss-2/article-004/ -->. <lb/> For an
+alleyn.org.uk/catalogue/mss-2/article-004/ -->. </ab><ab type="edDesc"> For an
                                 abstract of this record and details of its transcription in other
                                 printed sources, see the related EMLoT event and associated
                                 records<!-- #IN to link to EMLoT
@@ -24185,7 +24177,7 @@ E7551: https://emlot.library.utoronto.ca/db/record/event/7551 -->.</ab>
                         <msDesc xml:id="BHAWSH">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS II</idno>
                                 <msName>Mastership of Bears, Acquittance from Sir William Stewart to
                                     Philip Henslowe and Edward Alleyn</msName>
@@ -24197,9 +24189,9 @@ E7551: https://emlot.library.utoronto.ca/db/record/event/7551 -->.</ab>
                                 patent of the mastership. This patent had been confirmed four days
                                 earlier (see Royal Patent to Henslowe and Alleyn for the Office of
                                 Master of the Royal Game of Bears, Bulls and Mastiff
-                                Dogs<!-- #IN to link to BHRPMG -->). <lb/> For an image of the
+                                Dogs<!-- #IN to link to BHRPMG -->). </ab><ab type="edDesc"> For an image of the
                                 original manuscript, see Ioppolo, <title>Henslowe-Alleyn
-                                    Digitisation Project</title><!-- IN to link to  -->. <lb/> For
+                                    Digitisation Project</title><!-- IN to link to  -->. </ab><ab type="edDesc"> For
                                 an abstract of this record and details of its transcription in other
                                 printed sources, see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT 7561:
@@ -24217,7 +24209,7 @@ https://emlot.library.utoronto.ca/db/record/event/7561/ -->.</ab>
                         <msDesc xml:id="BHFWPC">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">SP 15/27B</idno>
                                 <msName>Letter from Sir Francis Walsingham to the Lords of the Privy
                                     Council</msName>
@@ -24248,7 +24240,7 @@ https://emlot.library.utoronto.ca/db/record/event/7561/ -->.</ab>
                         <msDesc xml:id="BHJCDC">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">SP 14/148</idno>
                                 <msName>John Chamberlain's Letter to Dudley Carleton</msName>
                             </msIdentifier>
@@ -24275,7 +24267,7 @@ https://emlot.library.utoronto.ca/db/record/event/7561/ -->.</ab>
                         <msDesc xml:id="BHPCO1">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">COL/RMD/PA/01/007</idno>
                                 <msName>Privy Council Order to the Lord Mayor and JPs for Middlesex
                                     and Surrey</msName>
@@ -24287,7 +24279,7 @@ https://emlot.library.utoronto.ca/db/record/event/7561/ -->.</ab>
                                 however, plague that year, in London at least, was 'a small affair'
                                     (<title>A History of Epidemics in Britain</title>, vol 1, 2nd ed
                                 (London, 1965), 527). The letters to the JPs of Middlesex and Surrey
-                                do not survive. <lb/> For an abstract of this record and details of
+                                do not survive. </ab><ab type="edDesc"> For an abstract of this record and details of
                                 its transcription in other printed sources, see the related EMLoT
                                 event and associated records<!-- IN to link to EMLoT event
 1799: https://emlot.library.utoronto.ca/db/record/event/1799/ -->.</ab>
@@ -24305,7 +24297,7 @@ https://emlot.library.utoronto.ca/db/record/event/7561/ -->.</ab>
                         <msDesc xml:id="BHSKC4">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">SKCS/025</idno>
                                 <msName>Surrey and Kent Commissioners for Sewers' Court Minutes and
                                     Orders</msName>
@@ -24346,17 +24338,17 @@ to lma.gov.uk --> succinctly describes the sewer records as follows:
                         <msDesc xml:id="BHMMPH">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MSS II</idno>
                                 <msName>Meredith Morgan's Letter to Philip Henslowe</msName>
                             </msIdentifier>
                             <ab type="edDesc">This undated letter, regarding a wolf, presumably for
                                 the Bear Garden, must have been sent before 1616 (Henslowe died in
                                 January 1615/16). No further information about the sender has been
-                                discovered. <lb/> For an image of the original manuscript, see the
+                                discovered. </ab><ab type="edDesc"> For an image of the original manuscript, see the
                                     <title>Henslowe-Alleyn Digitisation
                                 Project</title><!-- IN to link to https://henslowe-
-alleyn.org.uk/catalogue/mss-2/article-032/01-recto/.html -->. <lb/>
+alleyn.org.uk/catalogue/mss-2/article-032/01-recto/.html -->. </ab><ab type="edDesc">
                                 For an abstract of this record and details of its transcription in
                                 other printed sources, see the related EMLoT event and associated
                                 records<!-- #IN to link to EMLoT
@@ -24376,7 +24368,7 @@ event 7696 https://emlot.library.utoronto.ca/db/record/event/7696/ -->.</ab>
                         <msDesc xml:id="BHPCCA">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">E 321/25/92</idno>
                                 <msName>Polsted Complaint in the Court of Augmentations</msName>
                             </msIdentifier>
@@ -24392,7 +24384,7 @@ event 7696 https://emlot.library.utoronto.ca/db/record/event/7696/ -->.</ab>
                         <msDesc xml:id="BHLWJM">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS IV</idno>
                                 <msName>Assignment of Barge, Bell and Cock Lease by John White to
                                     John Malthouse</msName>
@@ -24462,7 +24454,7 @@ event 7696 https://emlot.library.utoronto.ca/db/record/event/7696/ -->.</ab>
                         <msDesc xml:id="BHPOJP">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">COL/CC/01/01/028</idno>
                                 <msName>Plague Orders made by the Mayor and Aldermen of London and
                                     the JPs of Middlesex and Surrey</msName>
@@ -24475,7 +24467,7 @@ event 7696 https://emlot.library.utoronto.ca/db/record/event/7696/ -->.</ab>
                                 suburbs during time of plague. These undated plague orders precede
                                 an entry for 4 May 1609, with another entry for 3 June 1609
                                 following. The order is copied in the Corporation of London Journal
-                                XXVII. <lb/> For an abstract of this record and details of its
+                                XXVII. </ab><ab type="edDesc"> For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT event
                                 and associated records<!-- IN to link to EMLoT event
 1436: https://emlot.library.utoronto.ca/db/record/event/1436/ -->.</ab>
@@ -24495,7 +24487,7 @@ event 7696 https://emlot.library.utoronto.ca/db/record/event/7696/ -->.</ab>
                         <msDesc xml:id="BHPHAW">
                             <msIdentifier>
                                 <settlement>Dulwich</settlement>
-                                <repository>Dulwich College</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS IV</idno>
                                 <msName>Philip Henslowe's Acquittance from the Bishop of
                                     Winchester</msName>
@@ -24516,7 +24508,7 @@ event 7696 https://emlot.library.utoronto.ca/db/record/event/7696/ -->.</ab>
                         <msDesc xml:id="BHLCWB">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">LC 5/132</idno>
                                 <msName>Lord Chamberlain's Warrant Books: General</msName>
                             </msIdentifier>
@@ -24526,7 +24518,7 @@ event 7696 https://emlot.library.utoronto.ca/db/record/event/7696/ -->.</ab>
                                 follow Edward Alleyn after his death (see TNA: C66/2279). Marsh held
                                 the office until 1635; following Marsh, Thomas Caldwell was
                                 appointed as master 26 February 1635/6 (see TNA: C66/2684, mbs
-                                15–16). <lb/> For an abstract of this record and details of its
+                                15–16). </ab><ab type="edDesc"> For an abstract of this record and details of its
                                 transcription in other printed sources, see the related EMLoT event
                                 and associated records<!-- IN to link to EMLoT 1487:
 https://emlot.library.utoronto.ca/db/record/event/1487/ -->.</ab>
@@ -24540,7 +24532,7 @@ https://emlot.library.utoronto.ca/db/record/event/1487/ -->.</ab>
                         <msDesc xml:id="BHAMKB">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">SP 38/7</idno>
                                 <msName>Appointment of Philip Henslowe and Edward Alleyn as Masters
                                     of the Game</msName>
@@ -24563,7 +24555,7 @@ https://emlot.library.utoronto.ca/db/record/event/1487/ -->.</ab>
                         <msDesc xml:id="BHASSI">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">Assizes 35/21/6, 30 July 1579</idno>
                                 <msName>Assizes Norfolk and South-Eastern Circuits Surrey
                                     Indictments</msName>
@@ -24584,7 +24576,7 @@ to BHEBDG -->) was indicted at Croydon on for organizing a
                         <msDesc xml:id="BHBGAD">
                             <msIdentifier>
                                 <settlement>Surrey</settlement>
-                                <repository>Dulwich College Archive</repository>
+                                <repository sameAs="#dulwich-college"/>
                                 <idno type="shelfmark">MS II</idno>
                                 <msName>Bear Garden Advertisement</msName>
                             </msIdentifier>
@@ -24592,10 +24584,10 @@ to BHEBDG -->) was indicted at Croydon on for organizing a
                                 written in a large hand, possibly an original. Its inclusion in the
                                 Henslowe-Alleyn archive at Dulwich College suggests that it comes
                                 from the period when one or both were operating the Bear Garden.
-                                <lb/> For an image of the original manuscript, see the
+                                </ab><ab type="edDesc"> For an image of the original manuscript, see the
                                     <title>Henslowe-Alleyn Digitisation
                                 Project</title><!-- #IN to link to https://henslowe-
-alleyn.org.uk/catalogue/mss-2/article-041/01-recto/ -->. <lb/> For
+alleyn.org.uk/catalogue/mss-2/article-041/01-recto/ -->. </ab><ab type="edDesc"> For
                                 an abstract of this record and details of its transcription in other
                                 printed sources, see the related EMLoT event and associated
                                 records<!-- #IN to link to EMLoT
@@ -24607,7 +24599,7 @@ E3790: https://emlot.library.utoronto.ca/db/record/event/3790/ -->.</ab>
                         <msDesc xml:id="BHCJ21">
                             <msIdentifier>
                                 <settlement>London</settlement>
-                                <repository>London Metropolitan Archives</repository>
+                                <repository sameAs="#LMA"/>
                                 <idno type="shelfmark">COL/CC/01/01/022</idno>
                                 <msName>Mayor's Order vs Playgoing on the Sabbath</msName>
                             </msIdentifier>
@@ -24628,7 +24620,7 @@ E3790: https://emlot.library.utoronto.ca/db/record/event/3790/ -->.</ab>
                         <msDesc xml:id="BHCRBD">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">REQ 1/13</idno>
                                 <msName>Court of Requests: Order in the case of Bowes v. Digges and
                                     Gape</msName>
@@ -24688,7 +24680,7 @@ E3790: https://emlot.library.utoronto.ca/db/record/event/3790/ -->.</ab>
                         <msDesc xml:id="BHPC12">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">PC2/39</idno>
                                 <msName>Privy Council Order to Restrain Plays due to Plague</msName>
                             </msIdentifier>
@@ -24700,7 +24692,7 @@ E3790: https://emlot.library.utoronto.ca/db/record/event/3790/ -->.</ab>
                                 small affair' (see <title>A History of Epidemics in Britain</title>,
                                 vol 1, 2nd ed (London, 1965), 527). A copy of the privy council's
                                 letter ordering the restraint to the lord mayor of London survives
-                                in the City's Remembrancia <!-- #IN to link to BHPCO1 -->. <lb/> For
+                                in the City's Remembrancia <!-- #IN to link to BHPCO1 -->. </ab><ab type="edDesc"> For
                                 an abstract of this record and details of its transcription in other
                                 printed sources, see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT
@@ -24716,7 +24708,7 @@ E1766: https://emlot.library.utoronto.ca/db/record/event/1766/ -->.</ab>
                         <msDesc xml:id="BHPO12">
                             <msIdentifier>
                                 <settlement>Kew</settlement>
-                                <repository>The National Archives</repository>
+                                <repository sameAs="#TNA"/>
                                 <idno type="shelfmark">PC2/52</idno>
                                 <msName>Privy Council Order for Suppressing All Playhouses</msName>
                             </msIdentifier>
@@ -24724,7 +24716,7 @@ E1766: https://emlot.library.utoronto.ca/db/record/event/1766/ -->.</ab>
                                 plague this year seems not to have been fully justified as mortality
                                 did not reach the levels of either 1625 or 1636. See further Charles
                                 Creighton, <title>A History of Epidemics in Britain</title>, vol 1,
-                                2nd ed (London, 1965), 509, 533. <lb/> For an abstract of this
+                                2nd ed (London, 1965), 509, 533. </ab><ab type="edDesc"> For an abstract of this
                                 record and details of its transcription in other printed sources,
                                 see the related EMLoT event and associated
                                 records<!-- IN to link to EMLoT event
