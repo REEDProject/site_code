@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="bghop">
-  <teiHeader> <!-- IN: Header is from Cambs.xml file. Will need to be updated for BGHope --> 
+  <teiHeader>
+    <!-- IN: Header is from Cambs.xml file. Will need to be updated for BGHope -->
     <fileDesc>
       <titleStmt>
         <title type="main">Bear Gardens/Hope Playhouse</title>
@@ -84,7 +85,8 @@
         </respStmt>
       </titleStmt>
       <editionStmt>
-        <edition> Version 1, released <date when-iso="2022-09-22">22 September 2022.</date> <!-- IN: CHANGE RELEASE DATE HERE -->
+        <edition> Version 1, released <date when-iso="2022-09-22">22 September 2022.</date>
+          <!-- IN: CHANGE RELEASE DATE HERE -->
         </edition>
       </editionStmt>
       <publicationStmt>
@@ -143,13 +145,13 @@
   <text>
     <front>
       <div xml:id="acknowledgements">
-      <!-- Acknowledgements to go here -->
+        <!-- Acknowledgements to go here -->
       </div>
       <div xml:id="background">
-      <!-- Historical Background to go here --> 
+        <!-- Historical Background to go here -->
       </div>
       <div xml:id="traditions">
-      <!-- Performance Traditions to go here --> 
+        <!-- Performance Traditions to go here -->
       </div>
     </front>
     <group>
@@ -185,8 +187,9 @@
       </text>
       <text type="record" xml:id="bghop-ridp266084328">
         <body>
-          <head><rs>Surrey</rs>, <rs>Southwark</rs> <date from-iso="1600" to-iso="1650">Early 17th Century</date><seg ana="taxon:BHMMPH"
-            >BHMMPH</seg></head>
+          <head><rs>Surrey</rs>, <rs>Southwark</rs>
+            <date from-iso="1600" to-iso="1650">Early 17th Century</date><seg ana="taxon:BHMMPH"
+              >BHMMPH</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp266084328-transcription">
             <div>
               <head>single sheet</head>
@@ -5367,7 +5370,9 @@ alleyn.org.uk/catalogue/mss-1/article-024/02-verso/ -->). Langworth 'married Ros
                   <cell> 434 02 11<note type="foot">434 02 11: <hi rend="italic"
                       >underlined</hi></note></cell>
                 </row>
-                <row><cell>&#160;</cell></row>
+                <row>
+                  <cell>&#160;</cell>
+                </row>
                 <row>
                   <cell>1606</cell>
                 </row>
@@ -10472,7 +10477,8 @@ http://aalt.law.uh.edu/ -->. </p>
       <text type="record" xml:id="bghop-ridp267949800">
         <body>
           <head><rs>Surrey</rs>, <rs>Southwark</rs>
-            <date precision="low" from-iso="1617" to-iso="1619"><hi rend="italic">c</hi> 1617–19</date>
+            <date precision="low" from-iso="1617" to-iso="1619"><hi rend="italic">c</hi>
+              1617–19</date>
             <seg ana="taxon:BHPEAH">BHPEAH</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp267949800-transcription">
             <div>
@@ -15599,7 +15605,9 @@ https://stsaviour.folger.edu/SKCS-2.html -->. </p>
                   <cell rend="right">xl s./ <lb/><foreign xml:lang="lat"
                       >ordinat<ex>um</ex></foreign>/</cell>
                 </row>
-                <row><cell>&#160;</cell></row>
+                <row>
+                  <cell>&#160;</cell>
+                </row>
                 <row>
                   <cell>It is<note type="foot">It is: <hi rend="italic">in display
                       script</hi></note> againe ordered That the said Nurce shall before the ffirst
@@ -16148,15 +16156,572 @@ https://stsaviour.folger.edu/SKCS-2.html -->. </p>
         </body>
       </text>
     </group>
-  <back>
-    <div n="1" type="appendix" xml:id="appendix-1">
-    </div>
-    <div n="2" type="appendix" xml:id="appendix-2">
-    </div>
-    <div n="3" type="appendix" xml:id="appendix-3">
-    </div>
-    <div n="4" type="appendix" xml:id="appendix-4">
-    </div>
-  </back>
+    <back>
+      <div n="1" type="appendix" xml:id="appendix-1">
+
+        <head>Appendix 1:</head>
+        <div>
+          <p>Leslie Hotson provides a more detailed outline, with documentary evidence, for the
+            continuation of the game at the Bear Garden under Thomas Godfrey's management beyond the
+            closing of the public playhouses by order of parliament in 1642 ('Bear Gardens and
+            Bear-Baiting,' pp 276–88) . Only a select number of post-1642 records are included in
+            this appendix, starting with the earliest, published in 1643, a complaint by London
+            actors that only plays were singled out for prohibition rather than other entertainments
+            like bearbaiting.</p>
+          <lb/>
+          <p><title>The Actors Remonstrance</title> is followed next by a parliamentary survey of
+            the bishop of Winchester's lands in the liberty of the Clink made in 1647 and showing
+            Thomas Godfrey still in residence at the Bear Garden. Winchester Palace had been turned
+            into a prison after 1642 and the Clink liberty itself was sold to Thomas Walker of
+            Southwark in 1649. The survey includes a reference and valuation of the Bear Garden
+            property, one of the tenements then sub-leased by Thomas Godfrey. See further
+              <title>VCH: Surrey</title>, vol 4, pp 141–51, <title>British History Online</title>
+            https://www.british-history.ac.uk/vch/surrey/vol4/pp141-151, accessed 23 December
+            2022.</p>
+          <lb/>
+          <p>Life as deputy keeper and tenant of the Bear Garden was not easy for Thomas Godfrey, as
+            his Chancery Court pleading in 1652 reveals. In 1642 Thomas Davies, one of the masters
+            of the Bears, Bulls and Mastiff Dogs, attempted to suppress Godfrey's bearbaiting
+            enterprise and withdraw the lease of the Bear Garden. The subsequent order of the
+            council of state, on 55 May 1653, to suppress bearbaiting and prize fencing marks the
+            begin of the end for the Bear Garden, which was demolished by February 1655/6<note
+              type="foot">see further the Introduction: History of
+              Entertainment<!--IN to insert link to intro --></note></p>
+          <lb/>
+          <p>The final record, a 1664 dispute over the lease of the old Bear Garden site, is
+            included here for its detailing of the dimensions of the property.</p>
+        </div>
+      <div>
+        <floatingText type="record" xml:id="bghop-ridp247228808">
+        <body>
+          <head><rs>Surrey</rs>, <rs>Southwark</rs>
+            <date when-iso="1593">1592/3</date>
+            <seg ana="taxon:RSPCO9">RSPCO9</seg></head>
+          <div xml:lang="eng" type="transcription" xml:id="bghop-ridp247228808-transcription">
+            <div>
+              <head>pp 211–12 <supplied>(28 January) (Hampton Court)</supplied></head>
+              <pb type="page"/>
+
+              <gap reason="omitted"/>
+
+              <ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note>
+                  l<ex>ett</ex>re to the l<ex>ord</ex> Maio<ex>u</ex>r and Aldermen of the Cittie of
+                london forasmuch as by the Certificate of the last weeke, yt appearethe the
+                infection dothe increase, w<ex>hi</ex>ch by the favo<ex>u</ex>r of God, and
+                  w<ex>i</ex>th yo<ex>u</ex>r dilligent obseruance of her Ma<ex>ies</ex>t<ex>es</ex>
+                  Comandement<ex>es</ex> and the meanes and orders prescribed to be put in execution
+                  w<ex>i</ex>thin the Cittie of london maie speedelie cease yeat for the better
+                furderance therof we think yt fitt that all manner of concourse and publique
+                meetinges of the people at playes, beare baitinges, bowlinges, and other like
+                assemblyes for sportes be forbidden, and therefore doe hereby requier you and in her
+                  Ma<ex>ies</ex>t<ex>es</ex> name straightlie charge and co<ex>m</ex>mande you
+                  forthw<ex>i</ex>th to inhibite w<ex>i</ex>thin yo<ex>u</ex>r Iurisdiction all
+                plaies baiting of beares, bulls, Bowling and any other like occasions to assemble
+                any nombers of people together (preacheing and devyne seruice at Churches excepted)
+                wherby no occasions be offred to increase the infection w<ex>i</ex>thin the Cittie,
+                  w<ex>hi</ex>ch you shall doe bothe by <pb/> p<ex>ro</ex>clamac<ex>i</ex>on to be
+                published to that ende and by spetiall watche and obseruac<ex>i</ex>on to be had at
+                the places where the Plaies bearebaitinges bowlinges and like pastimes are vsually
+                frequented and if you shall vpon this publicaon<note type="foot">publicaon: <hi
+                    rend="italic">for</hi> publicacion<hi rend="italic">; abbreviation mark
+                    missing</hi></note> finde any so vnduitifull and disobedient as they will,
+                  notw<ex>i</ex>thstanding this p<ex>ro</ex>hibition offer to plaie, beate beares or
+                bulles bowle &amp;c. you shall p<ex>rese</ex>ntelie cause them to be apprehended and
+                comitted to prison there to remaine vntill by their order they shalbe dismissed And
+                to the end the like assemblies w<ex>i</ex>thin the out liberties adioyning to the
+                Cittie we haue giuen direction to the Iustices of the peace, and other publique
+                officers of the Counties of Middlesex and Surrey to hold the like course not onlie
+                  w<ex>i</ex>thin the said liberties but also w<ex>i</ex>thin the distance of seven
+                myles about the Cittie w<ex>hi</ex>ch we doubte not they will carefullie see to be
+                executed as you for yo<ex>u</ex>r p<ex>ar</ex>te w<ex>i</ex>thin the Cittie will doe
+                the like, in regarde of her Ma<ex>ies</ex>t<ex>es</ex> comandem<ex>en</ex>t the
+                benefitt of the Cittie; and for the respectes alreadie signified vnto you.</ab>
+
+              <ab>Two other l<ex>ett</ex>res of the like teno<ex>u</ex>r written to the Iustices of
+                the peace w<ex>i</ex>thin the Counties of Surrey and Middelsex for the
+                p<ex>ro</ex>hibition of like assemblies in the out liberties and w<ex>i</ex>thin
+                seven miles of the Cittie of either Countie.</ab>
+
+              <gap reason="omitted"/>
+            </div>
+          </div>
+        </body>
+      </floatingText>
+      <floatingText type="record" xml:id="bghop-ridp248122424">
+        <body>
+          <head><rs>Surrey</rs>, <rs>Southwark</rs>
+            <date when-iso="1644">1643/4</date>
+            <seg ana="taxon:BHACTR">BHACTR</seg></head>
+          <div xml:lang="eng" type="transcription" xml:id="bghop-ridp248122424-transcription">
+            <div>
+              <head>sigs A2–A4 verso</head>
+              <pb type="signature"/>
+
+              <ab rend="center">The Actors Remonstrance or Com- <lb/>plaint, for the silencing of
+                their Profession, <lb/>and banishment from their severall <lb/>PLAY-HOUSES.</ab>
+
+              <ab>OPpressed<note type="foot">OPpressed: <hi rend="italic">large ornamented display
+                    letter</hi> O</note> with many calamities, and languishing to death under the
+                burthen of a long and (for ought wee know) an everlasting restraint, we the
+                Comedians, Tragedians and Actors of all sorts and sizes belonging to the famous
+                private and publike Houses within the City of London and the Suburbs thereof, to you
+                great Phoebus, and you sacred Sisters, the sole Patronesses of our distressed
+                Calling, doe we in all humility present this our humble and lamentable complaint, by
+                whose intercession to those powers who confined us to silence, wee hope to be
+                restored to our pristine honour and imployment.</ab>
+
+              <ab type="indent">First, it is not unknowne to all the audience that have frequented
+                the private Houses of Black-Friers, the Cock-Pit and Salisbury-Court, without
+                austerity, wee have purged our Stages from all obscene and scurrilous jests; such as
+                might either be guilty of corrupting the manners, or defaming the persons of any men
+                of note in the City or Kingdome; that<pb/> wee have endevoured, as much as in us
+                lies, to instruct one another in the true and genuine Art of acting, to represse
+                bawling and railing, formerly in great request, and for to suite our language and
+                action to the more gentile and naturall garbe of the times; that we have left off
+                for our owne parts, and so have commanded our servants, to forget that ancient
+                custome, which formerly rendred men of our quality infamous, namely, the inveigling
+                in young Gentlemen, Merchants Factors, and Prentizes to spend their patrimonies and
+                Masters estates upon us and our Harlots in Tavernes; we have cleane and quite given
+                over the borrowing money at first sight of punie gallants, or praising their swords,
+                belts and beavers, so to invite them to bestow them upon us; and to our praise be it
+                spoken, we were for the most part very well reformed, few of us keeping, or being
+                rather kept by our Mistresses, betooke our selves wholy to our wives; observing the
+                matrimoniall vow of chastity, yet for all these conformities and reformations, wee
+                were by authority (to which wee in all humility submit) restrained from the practice
+                of our Profession; that Profession which had before maintained us in comely and
+                convenient Equipage; some of us by it meerely being inabled to keepe Horses (though
+                not Whores) is now condemned to a perpetuall, at least a very long temporary
+                silence, and wee left to live upon our shifts, or the expence of our former
+                gettings, to the great impoverishment and utter undoing of our selves, wives,
+                children, and dependants; besides which, is of all other our extremest grievance,
+                that Playes being put downe under the name of publike recreations; other publike
+                recreations of farre more harmfull consequence permitted, still to stand in statu
+                quo prius, namely, that Nurse of barbarisme and beastlinesse, the Beare-Garden,
+                whereupon their usuall dayes, those Demy- Monsters, are baited by bandogs, the
+                Gentlemen of Stave and Taile, namely, boystrous Butchers, cutting Coblers,
+                hard-handed Masons, and the like, rioting companions, resorting thither with as much
+                freedome as formerly, ma-<pb/>king with their sweat and crowding, a farre worse
+                stinck than the ill formed Beasts they persecute with their dogs and whips,
+                Pick-pockets, which in an age are not heard of in any of our Houses, repairing
+                thither, and other disturbers of the publike peace, which dare not be seen in our
+                civill and well-governed Theatres, where none use to come but the best of the
+                Nobility and Gentry; and though some have taxed our Houses unjustly for being the
+                receptacles of Harlots, the exchanges where they meet and make their bargaines with
+                their franck chapmen of the Country and City, yet we may justly excuse our selves of
+                either knowledge or consent in these lewd practices, we having no propheticke soules
+                to know womens honesty by instinct, nor commission to examine them; and if we had,
+                worthy were these wretches of Bridewell, that out of their owne mouthes would
+                convince themselves of lasciviousnesse: Puppit-plays, which are not so much valuable
+                as the very musique betweene each Act at ours, are still up with uncontrolled
+                allowance, witnesse the famous motion of Bell and the Dragon, so frequently visited
+                at Holbourne-bridge; these passed Christmas Holidayes, whither Citizens of all sorts
+                repaire with far more detriment to themselves then ever did to Playes, Comedies and
+                Tragedies being the lively representations of mens actions, in which, vice is
+                alwayes sharply glanced at, and punished, and vertue rewarded and encouraged; the
+                most exact and naturall eloquence of our English language expressed and daily
+                amplified; and yet for all this, we suffer, and are inforced, our selves and our
+                dependants, to tender our complaint in dolefull manner to you great Phoebus, and you
+                inspired Heliconian Virgins: First, our House-keepers, that grew wealthy by our
+                endevours, complaine that they are enforced to pay the grand Land-lords rents,
+                during this long Vacation, out of their former gettings; in stead of ten, twenty,
+                nay, thirty shillings shares, which used nightly to adorne and comfort with their
+                harmonious musique, their large and well-stuffed pockets, they have shares in
+                nothing<pb/> with us now but our mis-fortunes; living meerly out of the stock, out
+                of the interest and principall of their former gotten moneyes, which daily is
+                exhausted by the maintenance of themselves and families.</ab>
+
+              <ab type="indent">For our selves, such as were sharers, are so impoverished, that were
+                it not for some slender helps afforded us in this time of calamitie, by our former
+                providence, we might be enforced to act our Tragedies: our Hired-men are disperst,
+                some turned Souldiers and Trumpetters, others destin'd to meaner courses, or
+                depending upon us, whom in courtesie wee cannot see want, for old acquaintance
+                sakes. Their friends, young Gentlemen, that used to feast and frolick with them at
+                Tavernes, having either quitted the kin in these times of distraction, or their
+                money having quitted them, they are ashamed to look upon their old expensive
+                friends. Nay, their verie Mistresses, those Buxsome and Bountifull Lasses, that
+                usually were enamoured on the persons of the younger sort of Actors, for the good
+                cloaths they wore upon the stage, beleeving them really to be the persons they did
+                only represent, and quite out of sorts themselves, and so disabled for supplying
+                their poore friends necessities. Our Fooles, who had wont to allure and excite
+                laughter with their very countenances, at their first appearance on the stage (hard
+                shifts are better than none) are enforced, some of them at least to maintaine
+                themselves, by vertue of their bables. Our boyes, ere wee shall have libertie to act
+                againe, will be growne out of use like crackt organ-pipes, and have faces as old as
+                our flags.</ab>
+
+              <ab type="indent">Nay, our very Doore-keepers, men and women, most grievously
+                complaine, that by this cessation they are robbed of the priviledge of stealing from
+                of us with licence: they cannot now, as in King Agamemnons dayes, seeme to scratch
+                their heads where they itch not, and drop shillings and half Crowne-pieces in at
+                their collars. Our Musicke that was held so delectable and precious, that they
+                scorned to come to a Taverne under twentie shillings salary for two houres, now<pb/>
+                wander with their Instruments under their cloaks, I meane such as have any, into all
+                houses of good fellowship, saluting every roome where there is company, with Will
+                you have any musike Gentlemen? For our Tire-men, and others that belonged formerly
+                to our ward-robe, with the rest, they are out of service: our stock of cloaths, such
+                as are not in tribulation for the generall use, being a sacrifice to moths. The
+                Tobacco- men, that used to walk up and downe, selling for a penny pipe, that which
+                was not worth twelve-pence an horse-load; Being now bound under Tapsters in Inns and
+                Tippling houses. Nay such a terrible distresse and dissolution hath befallen us, and
+                all those that had dependance on the stage, that it hath quite unmade our hopes of
+                future recoverie. For some of our ablest ordinarie Poets, in stead of their annuall
+                stipends and beneficiall second-dayes, being for meere necessitie compelled to get a
+                living by writing contemptible penny-pamphlets in which they have not so much as
+                poetical licence to use any attribute of their profession; but that of Quid libet
+                audendi? and faining miraculous stories, and relations of unheard of battels. Nay,
+                it is to be feared, that shortly some of them; (if they have not been enforced to do
+                it already) will be encited to enter themselves into Martin Parkers societie, and
+                write ballads. And what a shame this is, great Phoebus, and you sacred Sisters; for
+                your owne Priests thus to be degraded of their ancient dignities. Be your selves
+                righteous Judges, when those who formerly have sung with such elegance the acts of
+                Kings and Potentates, charming like Orpheus the dull and brutish multitude, scarce a
+                degree above stones and forrests into admiration, though not into understanding with
+                their divine raptures, shall be by that tyrant Necessitie reduced to such abject
+                exigents, wandring like grand children of old Erra Paters, those learned
+                Almanack-makers, without any Mæcenas to cherish their loftie conceptions,
+                prostituted by the mis-fortune of our silence, to inexplicable miseries, having no
+                heavenly Castalian Sack to actuate and informe their spirits almost<pb/> confounded
+                with stupiditie and coldnesse, by their frequent drinking (and glad too they gan get
+                it) of fulsome Ale, and hereticall Beere, as their usuall beverage.</ab>
+
+              <ab type="indent">To conclude, this our humble complaint great Phoebus, and you nine
+                sacred Sisters, the Patronesses of Wit, and Protectresses of us poore disrespected
+                Comedians, if for the present, by your powerfull intercessions we may be re-invested
+                in our former Houses, and setled in our former Calling, we shall for the future
+                promise, never to admit into our six-penny-roomes those unwholesome inticing
+                Harlots, that sit there meerely to be taken up by Prentizes or Lawyers Clerks; nor
+                any female of what degree soever, except they come lawfully with their husbands, or
+                neere allies: the abuses in Tobacco shall be reformed, none vended, not so much as
+                in three-penny galleries, unlesse of the pure Spanish leafe. For ribaldry, or any
+                such paltry stuffe, as may scandall the pious, and provoke the wicked to loosenesse,
+                we will utterly expell it with the bawdy and ungracious Poets, the authors to the
+                  Antiodes.<note type="foot">Antiodes: <hi rend="italic">for</hi> Antipodes</note>
+                Finally, we shall hereafter so demeane our selves as none shall esteeme us of the
+                ungodly, or have cause to repine at our action or interludes: we will not entertaine
+                any Comedian that shall speake his part in a tone, as if hee did it in derision of
+                some of the pious, but reforme all our disorders, and amend all our amisses, so
+                prosper us Phoebus and the nine Muses, and be propitious to this our complaint</ab>
+
+              <ab rend="center">F I N I S.</ab>
+            </div>
+          </div>
+          <div type="endnote">
+            <p> For Martin Parker, the 'most distinguished of professional ballad-writers' of the
+              Caroline period and a royalist sympathizer, see further Hyder E. Rollins, 'Martin
+              Parker, Ballad-Monger,' <title>Modern Philology</title>, 16.9 (1919), 449-74 and Joad
+              Raymond, 'Parker, Martin (fl. 1624–1647), ballad writer,' <title>ODNB</title>,
+              accessed 22 December 2022. </p>
+          </div>
+        </body>
+      </floatingText>
+      <floatingText type="record" xml:id="bghop-ridp248472488">
+        <body>
+          <head><rs>Surrety</rs>, <rs>Southwark</rs>
+            <date when-iso="1652">1652</date>
+            <seg ana="taxon:BHTGTD">BHTGTD</seg></head>
+          <div xml:lang="eng" type="transcription" xml:id="bghop-ridp248472488-transcription">
+            <div>
+              <head>single membrane <supplied>(1 December) (Bill of Complaint)</supplied></head>
+              <pb n="1" type="membrane"/>
+
+              <ab>The firste day of december 1652</ab>
+
+              <ab rend="center">To the right hono<ex>ra</ex>ble the Lord<ex>es</ex>
+                  Commission<ex>ers</ex> for the greate Seale of England/</ab>
+
+              <ab><seg type="signed">Smythes</seg></ab>
+
+              <ab>Humbly Complayneing sheweth to yo<ex>u</ex>r hono<ex>u</ex>r yo<ex>u</ex>r daylie
+                  Orato<ex>u</ex>r Thomas Godfrey of the p<ex>ar</ex>ish of St Savyours Southwarke
+                in the County of Surry gent<ex>leman</ex> That whereas aboute the xiiij<hi
+                  rend="superscript">th </hi> yeare of the Late Kinge Charles<note type="foot"
+                    >xiiij<hi rend="superscript">th </hi> … Charles: <hi rend="italic"
+                  >1638/9</hi></note> yo<ex>u</ex>r Orato<ex>u</ex>r being for a Longe tyme before
+                that tyme deputie in the Roome or Office of Cheife Master Overseer and Ruler over
+                all and singuler the Games Pastymes and Sport<ex>es</ex> of the Late Kinge his
+                heires and Successors. that is to say of all and singuler the Beares Bulls and
+                  Mastiff<ex>es</ex> of the said Late Kinge his heires and successors and in the
+                Office of Cheife keep<ex>er</ex> and Ruler of the Bandoggs Mast<damage><gap
+                    unit="chars" extent="1"/></damage>ff<note type="foot">Mast<damage><gap
+                      unit="chars" extent="1"/></damage>ff: <hi rend="italic">letter overwritten and
+                    obscured</hi></note> doggs Mastiff Bitches of the said Late Kinge vnder those
+                who had Letters pattent<ex>es</ex> from the said Late King or his Predecessors for
+                the Roome and Office of the cheife Master and Overseer and Ruler of all and singuler
+                the sports games and Pastymes aforesaid/ Aboute the moneth of ffebruary in the
+                  xiiij<hi rend="superscript">th</hi> yeare<note type="foot">moneth … xiiij<hi
+                    rend="superscript">th</hi> yeare: <hi rend="italic">ie, 1638/9</hi></note> of
+                the said Late king Charles yo<ex>u</ex>r Orato<ex>u</ex>r vnderstanding that one
+                Thomas Davies and Thomas Manley gent<ex>lemen</ex> had procured Letters
+                  Pattent<ex>es</ex> from the said Late Kinge Charles for Lives or yeares of the
+                Roome or office of Cheife Master and Overseer and Ruler of all and singuler the
+                Games Pastymes &amp; sport<ex>es</ex> aforesaid, speech and Communicac<ex>i</ex>on
+                was then had Betweene the said Thomas Davyes &amp; yo<ex>u</ex>r Orato<ex>u</ex>r
+                for yo<ex>u</ex>r Orato<ex>u</ex>r to be theire Deputie in theire Roome or office
+                aforesaid And yo<ex>u</ex>r Orato<ex>u</ex>r further sheweth that aboute the tyme
+                aforesaid, it was agreed by and Betweene the said Thomas Davies for &amp; on the
+                behalfe of him ‸<add place="above">&amp;</add> of the said Thomas Manley that
+                  yo<ex>u</ex>r said Orato<ex>u</ex>r should be theire deputie in the said
+                  Roome<note type="foot">Roome: R <hi rend="italic">written over another
+                  Letter</hi></note> or office of cheife Master Overseer and Ruler of all and
+                singuler the Games pastymes and sport<ex>es</ex> of the said Late Kinge his heires
+                and successors That is to say of all and singuler the Beares Bulls and
+                  Mastiff<ex>es</ex> of the said Late Kinge his heires &amp; successors and in the
+                office of cheife master &amp; keep<ex>er</ex> of the Bandoggs Mastiff doggs and
+                Mastiff bitches And accordinglie they made ‸<add place="above">a</add>
+                  deputac<ex>i</ex>on <del>of</del>‸<add place="above">to</add> yo<ex>u</ex>r
+                  Orato<ex>u</ex>r of the same and for him yo<ex>u</ex>r said Orato<ex>u</ex>r to
+                hold the same from yeare to yeare at there Will &amp; pleasure yo<ex>u</ex>r
+                  Orato<ex>u</ex>r haueing noe certaine terme or number of yeares of the same from
+                them or either of them And it was at the same tyme agreed betweene the said Thomas
+                Davies for and on the behalfe of himselfe &amp; the said Thomas Manley and
+                  yo<ex>u</ex>r Orato<ex>u</ex>r That yo<ex>u</ex>r Orato<ex>u</ex>r should pay the
+                  so<ex>m</ex>me of 40 li. yearelie by quarterlie paym<ex>en</ex>t<ex>es</ex> to
+                them the said Thomas Davies and Thomas Manley and that in Considerac<ex>i</ex>on
+                thereof yo<ex>u</ex>r Orato<ex>u</ex>r should haue as full power &amp; authoritie to
+                act and doe in the said office as they or either of them had by vertue of theire
+                Letters Pattent<ex>es</ex> from the said Late Kinge And hee the said Thomas Davies
+                Lefte and deposites the said Letters Pattent<ex>es</ex> in the hand<ex>es</ex> and
+                Custodie of yo<ex>u</ex>r Orato<ex>u</ex>r to ympower him to Act in the said Office
+                and for p<ex>re</ex>venc<ex>i</ex>on of Disorder and Cumbustions &amp;
+                  tumult<ex>es</ex> and quarrells that might arrise by reason of the said Pastyme
+                sport &amp; recreac<ex>i</ex>on in baiteing of the said Beares and Bulls And
+                  yo<ex>u</ex>r Orato<ex>u</ex>r further sheweth vnto yo<ex>u</ex>r honor<ex>es</ex>
+                that hee constantlie paid vnto the said Thomas Davies the said yearelie rent of 40
+                li. p<ex>er</ex> Ann<ex>um</ex> according as it grewe due &amp; payable by vertue of
+                the afores<ex>ai</ex>d agreem<ex>en</ex>t vntil about the yeare of o<ex>u</ex>r Lord
+                1642 aboute w<ex>hi</ex>ch tyme the Late Wars increasing in this Co<ex>m</ex>mon
+                Wealth the said Thomas Davies (w<ex>hi</ex>ch was the p<ex>er</ex>son that
+                  yo<ex>u</ex>r Orato<ex>u</ex>r always treated w<ex>i</ex>th came vnto
+                yo<ex>u</ex>r Orato<ex>u</ex>r and forbadd him to vse the said sport<ex>es</ex>
+                <damage><gap unit="chars" extent="3"/></damage> pastymes &amp; recreac<ex>i</ex>ons
+                any Longer By vertue of any right or power derived from him alleadging that in the
+                mynoritie of James Davies his sonne hee had power &amp; right from the said Thomas
+                Manley and James Davies his sonne to doe and Act what hee the said Thomas thought
+                fitt and Convenient and then the said Thomas Davies gave yo<ex>u</ex>r
+                  Orato<ex>u</ex>r hard Language and tould him hee should be noe Longer
+                p<ex>ro</ex>tected defended<note type="foot">defended: ed <hi rend="italic"
+                    >overwritten</hi></note> or secured in p<ex>re</ex>servac<ex>i</ex>on of the
+                game aforesaid, neither should yo<ex>u</ex>r Orato<ex>u</ex>r be p<ex>ro</ex>tected
+                in the place of Deputie vnder any of them but take his owne Course And hee the said
+                Thomas Davies did at the same tyme comand from yo<ex>u</ex>r said Orato<ex>u</ex>r
+                the said Letters Pattent<ex>es</ex> &amp; deputac<ex>i</ex>ons &amp; discharged
+                  yo<ex>u</ex>r Orato<ex>u</ex>r from any Longer by vertue of the afores<ex>ai</ex>d
+                power soe given &amp; graunted vnto him Wherev<ex>p</ex>pon yo<ex>u</ex>r
+                  Orato<ex>u</ex>r haueing but a Lease p<ex>ar</ex>oll from yeare to yeare did
+                deliver vp to him the said Thomas Davies the said L<ex>ett</ex>res
+                  Pattent<ex>es</ex> &amp; Deputac<ex>i</ex>ons vp<ex>p</ex>on the delivery of
+                  w<ex>hi</ex>ch yo<ex>u</ex>r Orato<ex>u</ex>r was absolutlie discharged from his
+                said Deputac<ex>i</ex>on hee the said Thomas Davies then declareing to yo<ex>u</ex>r
+                  Orato<ex>u</ex>r that his rent from ‸<add place="above">that</add> tyme should
+                cease &amp; determyne &amp; yo<ex>u</ex>r Orato<ex>u</ex>r further sheweth that at
+                the tyme of the agreement betwixt the said Thomas Davies &amp; yo<ex>u</ex>r
+                  Orato<ex>u</ex>r as aforesaid All the stock of Beares Bulls and Mastiff Doggs
+                Bandoggs and Mastiff bitches at the beare garden where yo<ex>u</ex>r
+                Orato<ex>u</ex>r for a Longe tyme before and yett Liveth <del>where</del> were
+                  yo<ex>u</ex>r Orato<ex>u</ex>rs owne proper good<ex>es</ex> w<ex>hi</ex>ch hee had
+                a Longe tyme before that tyme bought w<ex>i</ex>th his owne money and expended and
+                Layd out the so<ex>m</ex>me of 600 li. and vpward<ex>es</ex> for the same and none
+                of them were the good<ex>es</ex> of them the said Tho<ex>mas</ex> Davies or
+                  Tho<ex>mas</ex> Manley they being then but only cheife m<ex>aste</ex>rs or Rulers
+                of the said Game by vertue of theire said Letters Pattent<ex>es</ex> for
+                  w<ex>hi</ex>ch yo<ex>u</ex>r said Orato<ex>u</ex>r paid them the so<ex>m</ex>me of
+                40 li. yearelie for the tyme aforesaid And yo<ex>u</ex>r Orato<ex>u</ex>r paid the
+                  so<ex>m</ex>me of 60 li. yearelie for the rent of the dwelling howse &amp; yett
+                payes so much yearelie to the Lord or owner of the same And yo<ex>u</ex>r
+                  Orato<ex>u</ex>r further sheweth that shortlie after the said Iohn Davies had so
+                taken away the said Letters Pattent<ex>es</ex> from him and the said
+                  Deputac<ex>i</ex>on there came to yo<ex>u</ex>r Orato<ex>u</ex>r<ex>es</ex>
+                dwelling howse diuers vnruly fellowes and kild aboue 40<hi rend="superscript"
+                  >tie</hi> of yo<ex>u</ex>r Orato<ex>u</ex>rs Beares ‸<add place="above">at
+                  severall tymes &amp; yo<ex>u</ex>r Orato<ex>u</ex>r &amp; his freeinds in great
+                  danger of theire Lyves in and endev<damage><gap unit="chars" extent="3"
+                  /></damage>ing to p<ex>re</ex>serve them</add> w<ex>hi</ex>ch cost yo<ex>u</ex>r
+                  Orato<ex>u</ex>r aboue 500 li. they giveing<note type="foot">giveing: n <hi
+                    rend="italic">partly obscured by smudge</hi></note> forth in speeches that
+                  yo<ex>u</ex>r Orato<ex>u</ex>r had noe power to bayte or play for that they that
+                gave him his Comission had taken it a way againe by reason whereof and of the Late
+                Warrs still increaseing hee did not play his said game for the space of two yeares
+                &amp; an halfe being alsoe p<ex>ro</ex>hibited by the Parliam<ex>en</ex>t by reason
+                alsoe of the publique Calamitie in the Nac<ex>i</ex>on by meanes whereof
+                  yo<ex>u</ex>r ‸<add place="above">Orato<ex>u</ex>r</add> was extreamely
+                  ympou<ex>er</ex>ished haueing for all that tyme beene at very great charges &amp;
+                expenses in feedeing of his Beares Bulls doggs and in paying of his servant wages to
+                attend them besides a very greate yearelie rent for the said howse insoemuch that
+                  yo<ex>u</ex>r Orato<ex>u</ex>r was necessitated to p<ex>re</ex>sent his humble
+                  petic<ex>i</ex>on to the Parliam<ex>en</ex>t for his speedie redresse ‸<add
+                  place="above">being almost vndone &amp; worsted in his estate in 90 li. at
+                  Least</add> w<ex>hi</ex>ch said petic<ex>i</ex>on did not anywayes relate to the
+                said L<ex>ett</ex>res Pattent<ex>es</ex> or deputac<ex>i</ex>ons as by the said
+                  petic<ex>i</ex>on ready to be p<ex>ro</ex>duced may appeare: Vpon w<ex>hi</ex>ch
+                  petitc<ex>i</ex>on it was Ordered by the Parliam<ex>en</ex>t on or aboute the
+                  17<hi rend="superscript">th</hi> day of Aprill 1644 that the said
+                petic<ex>i</ex>on should be referred vnto the Subco<ex>m</ex>mittee for the Burrough
+                of Southwarke for the speedy releefe of yo<ex>u</ex>r Orato<ex>u</ex>r, Since
+                  w<ex>hi</ex>ch tyme the said Co<ex>m</ex>mittee hath some tymes p<ex>er</ex>mitted
+                  yo<ex>u</ex>r Orato<ex>u</ex>r to play his said Games and some tymes prohibite him
+                soe to do according to theire definac<ex>i</ex>on in that behalfe soe that
+                  yo<ex>u</ex>r Orato<ex>u</ex>r hath made very Little or noe benefitt of Late
+                yeares of his said game his charges in that befalfe expended Considered And
+                  yo<ex>u</ex>r Orato<ex>u</ex>r further sheweth that for the space of these Tenn
+                yeares Last past hee was never any wayes countena<ex>u</ex>nced or incorraged in the
+                  p<ex>re</ex>serveing of the said game by them the said Thomas Davies
+                  Tho<ex>mas</ex> Manly or Iames Davies or or ever any way asisted by them or either
+                of them when his game was soe distroyed &amp; spoiled and yo<ex>u</ex>r
+                  Orato<ex>u</ex>r in his deepest misery and necessious<note type="foot">necessious:
+                    <hi rend="italic">for</hi>necessarious <hi rend="italic">(?)</hi></note>
+                  condic<ex>i</ex>on as afores<ex>ai</ex>d Neither did they or either of them ever
+                Looke after yo<ex>u</ex>r Orato<ex>u</ex>r or treate w<ex>i</ex>th him aboute the
+                sayd game or ever asked or demaunded any <del>thing</del> Rent from yo<ex>u</ex>r
+                  Orato<ex>u</ex>r for the same vntill now of Late And yo<ex>u</ex>r
+                Orato<ex>u</ex>r further sheweth that since the tyme of the said Thomas Davies soe
+                takeing away of the said L<ex>ett</ex>res Patent<ex>es</ex> and <damage><gap
+                    unit="chars" extent="3"/></damage> Deputac<ex>i</ex>on as aforesaid hee hath not
+                made any other ageem<ex>en</ex>t w<ex>i</ex>th them the said Thomas or Iames Davies
+                or Thomas Manley nor acted vnder theire or either of there power or any power else
+                but by the p<ex>er</ex>mission aforesaid vntill the ffirst day of Iune Last
+                  yo<ex>u</ex>r Orato<ex>u</ex>r had a tearme of 3 yeares graunted vnto him by one
+                Daniell Gotherson to be deputie as aforesaid by vertue of the same power graunted
+                vnto him as hee informed yo<ex>u</ex>r Orato<ex>u</ex>r And yo<ex>u</ex>r
+                  Orato<ex>u</ex>r humbly conceiveth that of theire power were not extinct at the
+                death of the Late Kinge and theire Letters Pattent<ex>es</ex>
+                <add place="above">then</add> voyde gott from that tyme the said Thomas Davies for
+                badd yo<ex>u</ex>r Orato<ex>u</ex>r to act any more vnder them or by vertue of
+                theire power now arreares are due vnto them from yo<ex>u</ex>r Orato<ex>u</ex>r or
+                recoverable from yo<ex>u</ex>r Orato<ex>u</ex>r ‸<add place="above">Either in Lawe
+                  or equitie</add> in regard the said Thomas Davies nor any <del>our</del> one else
+                ever demaunded the said rent dureing the tyme aforesaid or any wayes soe much as
+                assisted yo<ex>u</ex>r Orato<ex>u</ex>r or tooke any course for the
+                  p<ex>re</ex>servac<ex>i</ex>on of the said Game yett soe it is May it further
+                please yo<ex>u</ex>r hon<ex>ou</ex>rs that of Late the said Thomas Manley and Iames
+                Davies the sonne of the said Thomas Davies hath p<ex>re</ex>ferred theire Bill of
+                  Compl<ex>ain</ex>t into this hono<ex>ra</ex>ble Court against yo<ex>u</ex>r
+                  Orato<ex>u</ex>r for the arreares of the said rent and that yo<ex>u</ex>r
+                  Orato<ex>u</ex>r held the same ever since by vertue of theire power graunted by
+                the said Letters Pattent<ex>es</ex> whereas they the said Thomas Manley and Iames
+                Davies well knowe that yo<ex>u</ex>r Orato<ex>u</ex>r never at all treated
+                  w<ex>i</ex>th them or either of them about being deputie as aforesaid, and that
+                hee the said Thomas Davies forbadd yo<ex>u</ex>r Orato<ex>u</ex>r vseing the said
+                  sport<ex>es</ex> and Games Long since as aforesaid and that yo<ex>u</ex>r
+                  Orato<ex>u</ex>r should not pay any more rent to them or either of them, and that
+                hee the said Thomas Davies tooke from yo<ex>u</ex>r Orato<ex>u</ex>r the said
+                Letters Pattent<ex>es</ex> and deputac<ex>i</ex>on yett questions yo<ex>u</ex>r
+                  Orato<ex>u</ex>r for Tenn yeares rent arreare by practise Combynac<ex>i</ex>on and
+                Confederacy doth w<ex>i</ex>th other and w<ex>i</ex>th one Samuell Warcupp
+                  Esq<ex>uier</ex> the sole and principall Agent that stirrs vp the other
+                  p<ex>ar</ex>ties Confederat<ex>es</ex> to prosecute yo<ex>u</ex>r Orato<ex>u</ex>r
+                where as they all were to knowe what greate Losses yo<ex>u</ex>r said
+                  Orato<ex>u</ex>r hath had by reason of the Late tymes and taxes and
+                  payment<ex>es</ex> imposed on yo<ex>u</ex>r Orato<ex>u</ex>r and hee noe power at
+                all nor any agreem<ex>en</ex>t or deputac<ex>i</ex>on to shewe vnder the
+                  hand<ex>es</ex> of the said Thomas Manley Thomas or Iames Davies to give him power
+                to mayntaine and vphold the said Game w<ex>hi</ex>ch cost him soe much money as
+                aforesaid All w<ex>hi</ex>ch doeings of them the said Thomas Davies Thomas Manley
+                Iames Davies and Samuell Warcup are not only to yo<ex>u</ex>r
+                  Orato<ex>u</ex>r<ex>es</ex> vtter vndoeing but alsoe contrary to Iustice and
+                Equitie In tendre Considerac<ex>i</ex>on whereof And forasmuch as yo<ex>u</ex>r
+                  Orato<ex>u</ex>r is remeadiles at the Co<ex>m</ex>mon Lawe for that the
+                  agreem<ex>en</ex>t &amp; deputac<ex>i</ex>on aforesaid was but from yeare to yeare
+                at theire pleasure and hee hath not any writeings at all to shewe vnder the
+                  hand<ex>es</ex> of either of the said Thomas or Iames Davies or Thomas Manley to
+                the effecte aforesaid and the Witnesses that were p<ex>re</ex>sent when the said
+                Thomas Davies Com<ex>m</ex>au<ex>n</ex>ded the said Letters Pattent<ex>es</ex> and
+                  deputac<ex>i</ex>on from yo<ex>u</ex>r Orato<ex>u</ex>r and wished ‸<add
+                  place="above">him</add> not to act anymore by vertue of that power and promised
+                him that hee should not pay any more rent for the tyme to come are either dead or
+                gon into part<ex>es</ex> vnknowne soe that yo<ex>u</ex>r Orato<ex>u</ex>r is for all
+                the matters hearein complained of <damage><gap unit="chars" extent="2"/></damage>
+                properlie to be releeved before yo<ex>u</ex>r hono<ex>u</ex>rs by the wonted Iustice
+                and Equitie of this hono<ex>ra</ex>ble Court To thend therefore to at all said
+                  p<ex>ar</ex>ties Confederat<ex>es</ex> may sett forth and discover the truth of
+                the p<ex>re</ex>misses vpon theire Corp<ex>or</ex>all Oathes And whether the said
+                Thomas Davies did not aboute the tyme a foresaid forbidd yo<ex>u</ex>r
+                  Orato<ex>u</ex>r to vse the said sporte and game any Longer by vertue of any power
+                derived from them the said Thomas Davies Iames Davies and Thomas Manley and
+                  Co<ex>m</ex>maunded the said Letters Pattent<ex>es</ex> and at a
+                Deputac<ex>i</ex>on from yo<ex>u</ex>r Orato<ex>u</ex>r and receaued the same from
+                him And whether hee did not promise yo<ex>u</ex>r Orato<ex>u</ex>r that hee should
+                not pay any more rent Neither would hee or the said Thomas Manley and Iames Davies
+                expect any more by vertue of the said Letters Pattent<ex>es</ex> And whether
+                  yo<ex>u</ex>r Orato<ex>u</ex>r hath for the space of these Tenn yeares Last past
+                really acted vnder theire or either of theire power by vertue of the said Letters
+                  Pattent<ex>es</ex> And whether they or either of them ever demaunded the said rent
+                dureing all the tyme afore said <del><damage><gap unit="chars" extent="3"
+                  /></damage></del> or ever anywayes assisted or counten<ex>au</ex>nced
+                yo<ex>u</ex>r Orato<ex>u</ex>r or Looked after the p<ex>re</ex>servac<ex>i</ex>on of
+                the said Game dureing all the tyme aforesaid And that they may all of them further
+                sett forth whether they does not knowe or haue heard that yo<ex>u</ex>r
+                  Orato<ex>u</ex>r hath beene at very greate Losse in his said Stock of Beares and
+                Bulls by rude and disorderlie p<ex>er</ex>sons that killed them and at a very greate
+                charge in the mayntaineing of the same when hee made Little or noe proffitt for a
+                Longe tyme And that all the said p<ex>ar</ex>ties Confederat<ex>es</ex> may make a
+                  p<ex>er</ex>fect Answere to all singuler the p<ex>re</ex>misses And yo<ex>u</ex>r
+                  Orato<ex>u</ex>r freed from the arreares of the said 40 li. p<ex>er</ex>
+                  Ann<ex>um</ex> for theis Tenn yeares Last past in Case the said Letters
+                  Pattent<ex>es</ex> are still in force for the reasons aforesaid May it please
+                  yo<ex>u</ex>r hono<ex>u</ex>r<ex>es</ex> the p<ex>re</ex>misses Considered to
+                graunt vnto yo<ex>u</ex>r Orato<ex>u</ex>r a Writt or Writt<ex>es</ex> of Subpena to
+                be directed to them the said Thomas Davies Thomas Manley Iames Davies and Samuell
+                Warcup Co<ex>m</ex>manding them and either of them <del>and either of them</del> at
+                a certaine day and vnder a certaine paine there in to be Lymitted &amp;
+                p<ex>er</ex>sonallie to be and appeare before yo<ex>u</ex>r
+                  Lo<ex>rdshi</ex>pp<ex>es</ex> in the high Court of Chauncery then and there to
+                Answere the p<ex>re</ex>misses And to stand to and a byde such further Order and
+                  dirrec<ex>i</ex>on therein as yo<ex>u</ex>r Lo<ex>rdshi</ex>pp<ex>es</ex> shall
+                seeme meete And yo<ex>u</ex>r Orato<ex>u</ex>r shall praye &amp;c/.</ab>
+            </div>
+          </div>
+        </body>
+      </floatingText>
+      <floatingText type="record" xml:id="bghop-ridp247271816">
+        <body>
+          <head><rs>Surrey</rs>, <rs>Southwark</rs>
+            <date when-iso="1664">1664</date>
+            <seg ana="taxon:BHTDES">BHTDES</seg></head>
+          <div xml:lang="eng" type="transcription" xml:id="bghop-ridp247271816-transcription">
+            <div>
+              <head>sheet 1 <supplied>(1 July)</supplied></head>
+              <pb n="1" type="sheet"/>
+
+              <ab rend="center">To the right hon<ex>ra</ex>ble Edward Earle of Clarendon Lord high
+                Chancellor of England.<note type="foot">Edward … England: <hi rend="italic">Edward
+                    Hyde (1608/9–74/5), first earl of Clarendon, lord chancellor,
+                  1658–67</hi></note></ab>
+
+              <ab>Humbly<note type="foot">Humbly: <hi rend="italic">in display script</hi></note>
+                complayning Sheweth vnto yo<ex>u</ex>r Lordshipp yo<ex>u</ex>r dayly Orator Thomas
+                Davis of Westminster in the County of Middlesex Esqu<ex>uie</ex>r That yo<ex>ur</ex>
+                Orator is interessed and possessed of and in a p<ex>ar</ex>cell of ground on or
+                neare the bankeside in the P<ex>ar</ex>ish of St Savio<ex>u</ex>r Southwark in the
+                County of Surrey comonly called the Beare Garden conteyning in length North and
+                south three hundred and thirty foote or more and in breadth East and West of one
+                hundred and sixty six foote at the least by and vnder a Lease made thereof by King
+                James whereof there are nowe eleven yeares yet to come And that the said ground hath
+                been vsed anciently and continually employed for the vse of beare and Bull baiteing
+                and divers houses and buildings for the conveniency of the said game and sport were
+                erected and continued there till in the late vnhappy troubles the said game there
+                was destroyed the buildings and houseing pulled downe and the ground converted to
+                private vse to yo<ex>u</ex>r orato<ex>u</ex>rs insupportable losse and vndoeing And
+                that yo<ex>u</ex>r Orato<ex>u</ex>rs son Iames Davis Master of his
+                Ma<ex>ies</ex>ties game of Beares and Bulls &amp;c. since his Ma<ex>ies</ex>ties
+                most happy restaurac<ex>i</ex>on for want of the convenience of the said place was
+                necessitated for sometime to keepe the said game in other places and to build for
+                the convenient exercise thereof att his great charge vntill soone after by order of
+                his Ma<ex>ies</ex>tie and his most hono<ex>ra</ex>ble privy Councell yo<ex>u</ex>r
+                  Orato<ex>u</ex>rs said son was for some reasons comanded to remove the game to the
+                accustomed place on the banke side in Southwarke aforesaid and to reduce the said
+                ground to its former vse and service in obedience wherevnto yo<ex>u</ex>r
+                  Orato<ex>u</ex>r for and on the behalfe of his said son vndertooke the same<gap
+                  reason="omitted"/></ab>
+            </div>
+          </div>
+        </body>
+      </floatingText>
+      </div>
+      </div>
+        
+      <div n="2" type="appendix" xml:id="appendix-2"> </div>
+      <div n="3" type="appendix" xml:id="appendix-3"> </div>
+      <div n="4" type="appendix" xml:id="appendix-4"> </div>
+    </back>
   </text>
 </TEI>
