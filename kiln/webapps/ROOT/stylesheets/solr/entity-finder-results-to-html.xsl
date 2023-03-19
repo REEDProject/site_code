@@ -11,7 +11,7 @@
   <xsl:template match="result/doc" mode="search-results">
     <xsl:variable name="doc-type" select="str[@name='document_type']" />
     <xsl:variable name="document-id" select="str[@name='document_id']" />
-    <xsl:variable name="collection-id" select="str[@name='collection_id']" />
+    <xsl:variable name="collection-id" select="arr[@name='collection_id']/str[1]" />
     <xsl:variable name="result-url">
       <!-- Use the doc-type to determine what URL to use to display
            the document from which this result came. -->

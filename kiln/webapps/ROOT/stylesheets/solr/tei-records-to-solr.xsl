@@ -16,7 +16,7 @@
   <xsl:template match="/">
     <add>
       <!-- Treat each eREED record as its own Solr document. -->
-      <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:group/tei:text[@type='record']" />
+      <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:group/tei:text[@type='record'][not(@copyOf)]" />
       <!-- Index front and back matter. -->
       <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:front/tei:div" mode="editorial" />
       <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:back/tei:div" mode="editorial" />
@@ -88,6 +88,11 @@
         <field name="collection_id">
           <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id" />
         </field>
+        <xsl:for-each select="tokenize(@other_collection_ids, '\s+')">
+          <field name="collection_id">
+            <xsl:value-of select="." />
+          </field>
+        </xsl:for-each>
         <field name="record_title">
           <xsl:value-of select="normalize-space(tei:body/tei:head/tei:bibl[1]/tei:title)" />
         </field>

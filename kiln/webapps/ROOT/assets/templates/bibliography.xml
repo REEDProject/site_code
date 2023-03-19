@@ -110,7 +110,7 @@
                 <h2>Bibliographic Sources</h2>
 
                 <xsl:for-each select="/aggregation/tei:TEI/tei:text/tei:body/tei:div">
-                  <xsl:if test="$results/str[@name='collection_id']=@xml:id">
+                  <xsl:if test="$results/arr[@name='collection_id']/str=@xml:id">
                     <div class="bibliography-result">
                       <h3>
                         <xsl:value-of select="tei:head" />
