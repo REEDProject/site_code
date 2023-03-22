@@ -5299,19 +5299,19 @@
               <!-- IN: PG/TH, is the pb n correct here? I thought it should be [1], but there aren't enough pbs for 8 folios PG: part of problem is that written on one side only, but also errors, now fixed-->
 
               <ab><foreign xml:lang="lat">Deposition<ex>es</ex> Capt<ex>e</ex> ap<ex>u</ex>d
-                    Westm<ex>onasterium</ex> xxij<hi rend="superscript">do</hi> die Iunij
+                    <rs ref="eats:37475" type="Place_F_Residence">Westm<ex>onasterium</ex></rs> xxij<hi rend="superscript">do</hi> die Iunij
                     a<ex>nn</ex>o Regni d<ex>omi</ex>ne R<ex>egi</ex>ne Elizabethe nunc &amp;c
                     xxvj<hi rend="superscript">ti</hi> ex p<ex>ar</ex>te <rs ref="eats:338594" type="Person_Commoner">Ioh<ex>ann</ex>is
                     Digg<ex>es</ex></rs> et <rs ref="eats:338612" type="Person_Commoner">Ioh<ex>ann</ex>is Gape</rs> deff<ex>endan</ex>t<ex>es</ex>
                     v<ex>er</ex>s<ex>us</ex> <rs ref="eats:336073" type="Person_Commoner">Edwardu<ex>m</ex> Bowes</rs>
                   Queren<ex>tem</ex>/</foreign><note type="foot">Depostion<ex>es</ex> …
-                    Queren<ex>tem</ex>: <hi rend="italic">'Depositions taken at Westminster on 22
+                    Queren<ex>tem</ex>: <hi rend="italic">'Depositions taken at <rs ref="eats:37452" type="Place_PA_Settlement">Westminster</rs> on 22
                     June in the 26<hi rend="superscript">th</hi> year of the reign of (our) lady
                     Queen Elizabeth, now, etc, on the part of John Digges and John Gape, defendants,
                     against, Edward Bowes, plaintiff.'</hi></note></ab>
 
-              <ab type="exdent"><rs ref="eats:340523" type="Person_Male">Richard Dunkyn</rs> of the p<ex>ar</ex>ishe of whyttington Colledge in
-                London Scryven<ex>er</ex> of the age of Liiij yeres or there abought<ex>es</ex>
+              <ab type="exdent"><rs ref="eats:340523" type="Person_Male">Richard Dunkyn</rs> of the p<ex>ar</ex>ishe of <rs ref="eats:225689" type="Place_PA_Settlement">whyttington Colledge</rs> in
+                <rs ref="eats:36947" type="Place_PA_Settlement">London</rs> <rs ref="eats:199711" type="Collective_Occupations">Scryven<ex>er</ex></rs> of the age of Liiij yeres or there abought<ex>es</ex>
                 sworne and exami<ex>ne</ex>d the day and yere abouesaid deposithe and saiethe</ab>
 
               <ab>To<note type="marginal" place="margin_left">1</note> the ffirst
@@ -5364,7 +5364,7 @@
               <ab>To<note type="marginal" place="margin_left">7</note> the vij<hi rend="superscript"
                   >th</hi> Interr<ex>ogatory</ex> this depoun<ex>en</ex>t saiethe that the said Iohn
                   digg<ex>es</ex> hathe paid the Rent vnto this said depoun<ex>en</ex>t for these
-                iij yeres for the said beare gardein and other the p<ex>re</ex>missis now in
+                iij yeres for the said <rs ref="eats:227798" type="Place_F_Arena">beare gardein</rs> and other the p<ex>re</ex>missis now in
                 question betwene the said Bowes digg<ex>es</ex> and gape and that the Rent of the
                 Beare gardein is vj li. a yere and the tenem<ex>en</ex>t that Iohn napton dwellithe
                 in fortie shilling<ex>es</ex> a yere. for this depoun<ex>en</ex>t saiethe that he is
@@ -5377,8 +5377,8 @@
               <ab><seg type="signed" rend="center">Iohn whyt</seg></ab>
               <pb n="[3]" type="folio"/>
 
-              <ab type="exdent"><rs ref="eats:340649" type="Person_Male">Thomas Sewall</rs> of the p<ex>ar</ex>ishe of St Lawrence in the old Iury
-                in London grocer of the age of xlij yeres or there abought<ex>es</ex> sworne and
+              <ab type="exdent"><rs ref="eats:340649" type="Person_Male">Thomas Sewall</rs> of the <rs ref="eats:225024" type="Place_PA_Settlement">p<ex>ar</ex>ishe of St Lawrence in the old Iury</rs>
+                in London <rs ref="eats:127233" type="Collective_Occupations">grocer</rs> of the age of xlij yeres or there abought<ex>es</ex> sworne and
                   exami<ex>ne</ex>d the day and exami<ex>ne</ex>d the day<note type="foot">and
                     exami<ex>ne</ex>d the day … day: <hi rend="italic">dittography</hi></note> and
                 yere abouesaid deposithe and saieth</ab>
