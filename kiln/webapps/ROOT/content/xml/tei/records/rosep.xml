@@ -88,8 +88,7 @@
     </fileDesc>
     <encodingDesc>
       <listPrefixDef>
-        <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)"
-          replacementPattern="../taxonomy.xml#$1">
+        <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../taxonomy.xml#$1">
           <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the
             taxonomy.xml file. For example, <code>taxon:church</code> dereferences to
               <code>taxonomy.xml#church</code>.</p>
@@ -101,7 +100,7 @@
               <code>glossary.xml#histrio-1</code>.</p>
         </prefixDef>
         <prefixDef ident="eats" matchPattern="([0-9]+)"
-          replacementPattern="           http://ereed.library.utoronto.ca/eats/entity/$1/">
+          replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/">
           <p>URIs using the <code>eats</code> prefix are references to EATS entities.</p>
         </prefixDef>
       </listPrefixDef>
@@ -2991,11 +2990,11 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:CentralGov_PC" type="record" xml:id="rosep-ridm90916024">
+      <text ana="eats:352746 taxon:CentralGov_PC" type="record" xml:id="rosep-ridm90916024">
         <body>
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
               >Surrey</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/"
-              type="Place_F_Playhouse"> Rose Playhouse</rs>
+              type="Place_F_Playhouse">Rose Playhouse</rs>
             <date precision="low" when-iso="1590"><hi rend="italic">c</hi> 1590</date>
             <seg ana="taxon:RSPPCS">RSPPCS</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="rosep-ridm90916024-transcription">
@@ -3072,7 +3071,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:CentralGov_PC" type="record" xml:id="rosep-ridm90877112">
+      <text ana="eats:352611 taxon:CentralGov_PC" type="record" xml:id="rosep-ridm90877112">
         <body>
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
               >Surrey</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/"
