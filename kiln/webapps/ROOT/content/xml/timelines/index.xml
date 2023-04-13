@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<timelines>
+  <title>Playhouse Timelines</title>
+  <!-- The content of the overview element is HTML that is copied
+       directly into the timelines template. -->
+  <overview>
+    <p>REED’s playhouse timelines provide a new way of navigating
+    through our digital playhouse editions. Here, you can explore
+    events relevant to each playhouse collection alongside a map of
+    locations related to each event. You can also find links that will
+    take you to records associated with each event in the timeline. We
+    hope that the timelines provide a way of browsing through the
+    playhouse collections that is complementary to the Explore
+    Collections view. Please see below for a list of currently
+    available and forthcoming timelines.</p>
+  </overview>
+  <live>
+    <timeline xml:id="rosep">
+      <title>Rose Playhouse Timeline</title>
+      <description>Timeline for the Rose Playhouse collection</description>
+    </timeline>
+  </live>
+  <development>
+    <timeline>Bear Gardens/Hope Timeline</timeline>
+  </development>
+  <featured ref="#rosep">
+    <title>Rose Playhouse</title>
+    <!-- Thumbnail is the path of a PNG in content/images, excluding
+         the file extension and relative content/images. Eg,
+         "timelines/rose_timeline_thumbnail" -->
+    <thumbnail>timelines/rose_timeline_thumbnail</thumbnail>
+  </featured>
+</timelines>
