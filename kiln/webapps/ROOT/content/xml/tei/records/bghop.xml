@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="bghop">
   <teiHeader>
     <!-- IN: Header is from Cambs.xml file. Will need to be updated for BGHope -->
@@ -7264,8 +7265,11 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="bghop-ridp265822728" copyOf="rosep.xml#rosep-ridm91625448"/>
-        
+      <text type="record" xml:id="bghop-ridp265822728" copyOf="rosep.xml#rosep-ridm91625448">
+       <body>
+        <p />
+      </body>
+      </text>
       
       <text type="record" xml:id="bghop-ridp268243432">
         <body>
@@ -7647,8 +7651,8 @@
               <ab>ssonne <rs ref="eats:153045" type="Person_Commoner">Edward alleyn</rs> I haue R<ex>eceuyd</ex> your leatter the w<ex>hi</ex>ch you
                 sent vnto me by the careyer wher in I vnderstand of both your good healthes
                   w<ex>hi</ex>ch I praye to god to contenew &amp; forther I vnderstand you haue
-                considered of the wordes w<ex>hi</ex>ch you and I had betwen vs consernynge the
-                beargarden &amp; acordinge to your wordes you and I and all over frendes shall haue
+                considered of the wordes w<ex>hi</ex>ch you and I had betwen vs consernynge <rs ref="eats:227798" type="Place_F_Arena">the
+                beargarden</rs> &amp; acordinge to your wordes you and I and all over frendes shall haue
                 as mvch as we cane do to bring yt vnto a good eand therfore I wold willingeley that
                 you weare at the bancate for then w<ex>i</ex>th our losse I shold be the meryer
                 therfore yf you thincke as I thinck yt weare fytte that we weare both her to do what
@@ -7661,9 +7665,9 @@
                 but yt is for me harde &amp; heavey sence you weare w<ex>i</ex>th me I haue loste
                 one of my company w<ex>hi</ex>ch hurteth me greatley that is <rs ref="eats:340054" type="Person_Male">gabrell</rs><note
                   type="foot">gabrell: <hi rend="italic">Gabriel Spenser</hi></note> for he is
-                slayen in <del><damage><gap unit="chars" extent="1"/></damage></del> hogesden
-                fylldes by the hands of <rs ref="eats:200864" type="Person_Commoner">benge<damage><gap extent="3" unit="chars"/></damage><note type="foot"><damage><gap extent="3" unit="chars"/></damage>: <hi rend="italic">loss of letters due to MS deterioration at the right edge</hi></note> Ionson</rs>
-                bricklayer therfore I wold fayne haue alittell of your cownsell yf I cowld thus
+                slayen in <del><damage><gap unit="chars" extent="1"/></damage></del> <rs ref="eats:356134" type="Place_F_OpenArea">hogesden
+                fylldes</rs> by the hands of <rs ref="eats:200864" type="Person_Commoner">benge<damage><gap extent="3" unit="chars"/></damage><note type="foot"><damage><gap extent="3" unit="chars"/></damage>: <hi rend="italic">loss of letters due to MS deterioration at the right edge</hi></note> Ionson</rs>
+                <rs ref="eats:70168" type="Collective_Occupations">bricklayer</rs> therfore I wold fayne haue alittell of your cownsell yf I cowld thus
                   w<ex>i</ex>th hartie comendations to you &amp; my dawghter &amp; lyckwise to all
                 the Reast of our frends I eande from london the 26 of septemb<ex>er</ex> 1598</ab>
 
@@ -7675,16 +7679,16 @@
             </div>
           </div>
           <div type="endnote">
-            <p> As Henslowe reports here, the Admiral's player, <rs ref="eats:340054" type="Person_Commoner">Gabriel Spencer</rs> (1576-98), was slain
-              on 22 September by <rs ref="eats:200864" type="Person_Commoner">Ben Jonson</rs> in a duel in Hoxton fields. Spencer is known to have
-              been with Pembroke's Men in 1596, moving with others from that company to the
-              Admiral's Men at the Rose by 1597. See further Andrew Gurr, <title>Shakespeare's
+            <p> As Henslowe reports here, the <rs ref="eats:25827" type="Collective_Troupe">Admiral's player</rs>, <rs ref="eats:340054" type="Person_Commoner">Gabriel Spencer</rs> (1576-98), was slain
+              on 22 September by <rs ref="eats:200864" type="Person_Commoner">Ben Jonson</rs> in a duel in <rs ref="eats:356134" type="Place_F_OpenArea">Hoxton fields</rs>. Spencer is known to have
+              been with <rs ref="eats:199956" type="Collective_Troupe">Pembroke's Men</rs> in 1596, moving with others from that company to the
+              Admiral's Men at the <rs ref="eats:157260" type="Place_F_Playhouse">Rose</rs> by 1597. See further Andrew Gurr, <title>Shakespeare's
                 Opposites: The Admiral's Company 1594-1625</title> (Cambridge, 2009), 287. For
               Jonson, see Ian Donaldson, 'Jonson, Benjamin [Ben] (1572–1637), poet and
               playwright,' <title>ODNB</title>, accessed 20 December 2022. </p>
 
             <p> The 'mr pascalle' referred to has been identified as <rs ref="eats:340072" type="Person_Gentry">William Pascal</rs>, gentleman sewer
-              and an officer of the lord chamberlain of the household; see Foakes, <title>Henslowe's
+              and an officer of the <rs ref="eats:37031" type="Collective_Office">lord chamberlain of the household</rs>; see Foakes, <title>Henslowe's
                 Diary</title>, pp 174-5, and Greg, <title>Henslowe Papers</title>, p 48, n to line
               12. </p>
           </div>
@@ -7705,7 +7709,7 @@
               <ab type="indent">Now to returne to the West banke, there be the two
                   Bearegardens,<note type="marginal" place="margin_right">The beare Gardens</note>
                 the old and new places wherein be kept Beares, Bulles, and other beastes, to be
-                bayted. As also Mastives in seuerall kenels are there nourished to bait them. These
+                <rs ref="eats:21767" type="Entertainment_AnimalSport">bayted</rs>. As also Mastives in seuerall kenels are there nourished to bait them. These
                 Beares and other beastes are there bayted in plottes of grounde, <rs ref="eats:302248" type="Thing_SetMachinery">scaffolded</rs> about
                 for the beholders to stand safe.</ab>
 
