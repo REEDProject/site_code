@@ -88,7 +88,8 @@
     </fileDesc>
     <encodingDesc>
       <listPrefixDef>
-        <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../taxonomy.xml#$1">
+        <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)"
+          replacementPattern="../taxonomy.xml#$1">
           <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the
             taxonomy.xml file. For example, <code>taxon:church</code> dereferences to
               <code>taxonomy.xml#church</code>.</p>
@@ -2335,8 +2336,9 @@
                   type="Collective_Office">Iustices of Surry</rs>: that whereas thinhabitaunts of
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/36966/"
                   type="Place_PA_Settlement">Southwa<damage><gap unit="chars" extent="2"
-                  /></damage></rs> had complained vnto <rs ref="eats:351822" type="Collective_Office">their L<ex>ordshipes</ex></rs> declaring that
-                thorder by their L<ex>ordshipes</ex> sett downe for the restrayning of <rs
+                  /></damage></rs> had complained vnto <rs ref="eats:351822"
+                  type="Collective_Office">their L<ex>ordshipes</ex></rs> declaring that thorder by
+                their L<ex>ordshipes</ex> sett downe for the restrayning of <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/40453/" type="Drama_Type"
                   >plaies</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/40398/"
                   type="Drama_Type">enterludes</rs> w<ex>i</ex>thin that Countie on the Saboath
@@ -2356,25 +2358,24 @@
             </div>
           </div>
           <div type="endnote">
-            <p>'The reference to 'thorder by their Lordshipes sett downe for the restrayning of plaies and enterludes within that Countie on the Saboath daies' 
-              undoubtedly refers to the <ptr target="#rosep-ridm92788552"/>.
-              <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/"
-                type="Place_F_Playhouse">The Rose</rs> was probably completed and operating by
-              October at the latest this year. As the first playhouse erected on <rs
+            <p>'The reference to 'thorder by their Lordshipes sett downe for the restrayning of
+              plaies and enterludes within that Countie on the Saboath daies' undoubtedly refers to
+              the <ptr target="#rosep-ridm92788552"/>. <rs
+                ref="http://ereed.library.utoronto.ca/eats/entity/157260/" type="Place_F_Playhouse"
+                >The Rose</rs> was probably completed and operating by October at the latest this
+              year. As the first playhouse erected on <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/229072/" type="Place_F_Street"
                 >Bankside</rs> in the liberty of the <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/223826/" type="Place_PA_Liberty"
                 >Clink</rs>, it must have attracted the complaints of some inhabitants in the
               neighbourhood. </p>
-            <p>
-              The privy councillors listed as present at the meeting (p 474) were <rs ref="eats:131578" type="Person_Clergy">John Whitgift</rs>, Archbishop of Canterbury, 1583-1603/4; 
-              <rs ref="eats:130613" type="Person_Nobility">Sir William Cecil</rs>, Lord Treasurer, 1572–98;  Henry Stanley, 13th Earl of Derby, privy councillor, 1585-93; 
-              Charles Howard, Lord Admiral, 1585–1618/19;  
-              Henry Carey, Lord Chamberlain of the Household, 1585–96;  
-              Sir Francis Knollys (1511/12-96), treasurer of the household; 
-              Mr John Wolley, member of the privy council (1586-96). 
-              
-            </p>
+            <p> The privy councillors listed as present at the meeting (p 474) were <rs
+                ref="eats:131578" type="Person_Clergy">John Whitgift</rs>, Archbishop of Canterbury,
+              1583-1603/4; <rs ref="eats:130613" type="Person_Nobility">Sir William Cecil</rs>, Lord
+              Treasurer, 1572–98; Henry Stanley, 13th Earl of Derby, privy councillor, 1585-93;
+              Charles Howard, Lord Admiral, 1585–1618/19; Henry Carey, Lord Chamberlain of the
+              Household, 1585–96; Sir Francis Knollys (1511/12-96), treasurer of the household; Mr
+              John Wolley, member of the privy council (1586-96). </p>
           </div>
         </body>
       </text>
@@ -2408,9 +2409,10 @@
                     >Mr Secr<ex>etary</ex> Walsingha<ex>m</ex></rs></note> l<ex>ett</ex>re to the
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/165351/"
                   type="Person_Gentry">L<ex>ord</ex> Maior of the citie of London</rs>: that whereas
-                <rs ref="eats:351822" type="Collective_Office">their l<ex>ordshipes</ex></rs> were giuen to vnderstand that certaine outrages and
-                disorders were of late committed in certaine places and Theaters erected
-                w<ex>i</ex>thin that <rs ref="http://ereed.library.utoronto.ca/eats/entity/36947/"
+                  <rs ref="eats:351822" type="Collective_Office">their l<ex>ordshipes</ex></rs> were
+                giuen to vnderstand that certaine outrages and disorders were of late committed in
+                certaine places and Theaters erected w<ex>i</ex>thin that <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/36947/"
                   type="Place_PA_Settlement">Citie of London</rs> or the suburbes of the same where
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/40398/" type="Drama_Type"
                   >enterludes</rs> &amp; <rs
@@ -2445,8 +2447,9 @@
             </div>
           </div>
           <div type="endnote">
-            <p>The copy of this letter to the JPs of Surrey has not survived. <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/"
-                type="Place_F_Playhouse"> The Rose</rs> playhouse on <rs
+            <p>The copy of this letter to the JPs of Surrey has not survived. <rs
+                ref="http://ereed.library.utoronto.ca/eats/entity/157260/" type="Place_F_Playhouse">
+                The Rose</rs> playhouse on <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/229072/" type="Place_F_Street"
                 >Bankside</rs> may not yet have been opened by this date but the <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/227741/" type="Place_F_Playhouse"
@@ -2794,7 +2797,8 @@
               <table>
                 <row>
                   <cell>ffynchley      <lb/>Pope &amp;<lb/>Napton</cell>
-                  <cell>It<ex>e</ex>m <rs ref="eats:352239" type="Collective_Office">we</rs> p<ex>re</ex>sent <rs
+                  <cell>It<ex>e</ex>m <rs ref="eats:352239" type="Collective_Office">we</rs>
+                      p<ex>re</ex>sent <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/129736/"
                       type="Person_Commoner">Phillip ffinchley</rs><note type="foot">ffinchley: <hi
                         rend="italic">2 minims for</hi> in</note>
@@ -2864,15 +2868,15 @@
                   >players</rs> tak vppon them to handle in their plaies certen <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/45652/"
                   type="CrimesMisdemeanors">matters of Diuinitye and of State vnfitt to be
-                  suffred</rs>: for redresse whereof <rs ref="eats:351822" type="Collective_Office">their L<ex>ordshipes</ex></rs> haue thought good to
-                appointe some p<ex>er</ex>sones of iudgemt<note type="foot">iudgemt: <hi
-                    rend="italic">for</hi> iudgement<hi rend="italic">; abbreviation mark
-                    missing</hi></note> and vndrstanding<note type="foot">vndrstanding: <hi
-                    rend="italic">for</hi> vnderstanding<hi rend="italic">; abbreviation mark
-                    missing</hi></note> to viewe and examine their playes before they be
-                  p<ex>er</ex>mitted to p<ex>re</ex>sent them publickly: his L<ex>ordship</ex> is
-                desired that some fytt p<ex>er</ex>sone well learned in Diuinity be appointed by him
-                to Ioyne w<ex>i</ex>th the <rs
+                  suffred</rs>: for redresse whereof <rs ref="eats:351822" type="Collective_Office"
+                  >their L<ex>ordshipes</ex></rs> haue thought good to appointe some
+                p<ex>er</ex>sones of iudgemt<note type="foot">iudgemt: <hi rend="italic">for</hi>
+                    iudgement<hi rend="italic">; abbreviation mark missing</hi></note> and
+                  vndrstanding<note type="foot">vndrstanding: <hi rend="italic">for</hi>
+                    vnderstanding<hi rend="italic">; abbreviation mark missing</hi></note> to viewe
+                and examine their playes before they be p<ex>er</ex>mitted to p<ex>re</ex>sent them
+                publickly: his L<ex>ordship</ex> is desired that some fytt p<ex>er</ex>sone well
+                learned in Diuinity be appointed by him to Ioyne w<ex>i</ex>th the <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/131827/" type="Person_Gentry"
                     >M<ex>aste</ex>r of the Revells</rs><note type="foot">M<ex>aste</ex>r of the
                   Revells: <hi rend="italic">Edmund Tilney, Master of the Revels,
@@ -2966,7 +2970,8 @@
               <table>
                 <row>
                   <cell>henchley.     </cell>
-                  <cell>It<ex>e</ex>m <rs ref="eats:352239" type="Collective_Office">we</rs> p<ex>re</ex>sent <rs
+                  <cell>It<ex>e</ex>m <rs ref="eats:352239" type="Collective_Office">we</rs>
+                      p<ex>re</ex>sent <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/129736/"
                       type="Person_Commoner">Phillip Henchley </rs>to pull vpp all the pylles that
                     stand in ye <rs ref="http://ereed.library.utoronto.ca/eats/entity/231960/"
@@ -2998,9 +3003,9 @@
               <pb n="[1]" type="folio"/>
 
               <ab rend="center">To<note type="foot">To: T <hi rend="italic">in display
-                  script</hi></note> the righte honorable o<ex>u</ex>r verie good <rs ref="eats:351822" type="Collective_Office">Lord<ex>es</ex>,
-                the Lord<ex>es</ex> of her ma<ex>ies</ex>t<ex>es</ex> moste honorable privie
-                Councell/.</rs></ab>
+                  script</hi></note> the righte honorable o<ex>u</ex>r verie good <rs
+                  ref="eats:351822" type="Collective_Office">Lord<ex>es</ex>, the Lord<ex>es</ex> of
+                  her ma<ex>ies</ex>t<ex>es</ex> moste honorable privie Councell/.</rs></ab>
 
               <ab>Our<note type="foot">Our: O <hi rend="italic">in display script</hi></note>
                 dueties in all humblenes remembred to yo<ex>u</ex>r hono<ex>u</ex>rs. fforasmuche
@@ -3082,7 +3087,8 @@
                   script</hi></note> the right honnorable my <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/25845/" type="Person_Nobility"
                   >Lorde Haywarde Lorde highe Admirall of Englande </rs>and one of her
-                  ma<ex>ies</ex>ties moste honnorable <rs ref="eats:351822" type="Collective_Office">previe Counsayle</rs>/</ab>
+                  ma<ex>ies</ex>ties moste honnorable <rs ref="eats:351822" type="Collective_Office"
+                  >previe Counsayle</rs>/</ab>
 
               <ab>In moste hvmble manner Complayneth and sheweth vnto your good Lordeshipp, your
                 poore suppliant<ex>es</ex> and dayly Orato<ex>u</ex>rs <rs
@@ -3267,9 +3273,10 @@
               <pb n="[1]" type="folio"/>
 
               <ab>Whereas<note type="foot">Whereas: W <hi rend="italic">in display
-                  script</hi></note> not longe since vpon some Considerac<ex>i</ex>ons <rs ref="eats:351822" type="Collective_Office">we</rs> did
-                restraine the <rs ref="http://ereed.library.utoronto.ca/eats/entity/45283/"
-                  type="Person_Nobility">Lorde Straunge</rs>
+                  script</hi></note> not longe since vpon some Considerac<ex>i</ex>ons <rs
+                  ref="eats:351822" type="Collective_Office">we</rs> did restraine the <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/45283/" type="Person_Nobility"
+                  >Lorde Straunge</rs>
                 <rs ref="http://ereed.library.utoronto.ca/eats/entity/153197/"
                   type="Collective_Troupe">his s<ex>er</ex>vaunt<ex>es</ex></rs> from playinge at
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/"
@@ -3329,7 +3336,8 @@
           </div>
         </body>
       </text>
-      <text ana="eats:358239 taxon:CentralGov_PC" type="record" xml:id="rosep-ridm91625448" sameAs="bghop.xml#bghop-ridp265822728">
+      <text ana="eats:358239 taxon:CentralGov_PC" type="record" xml:id="rosep-ridm91625448"
+        sameAs="bghop.xml#bghop-ridp265822728">
         <body>
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
               >Surrey</rs>, <rs ref="eats:334708" type="Place_F_Residence">Greenwich Palace</rs>
@@ -3355,10 +3363,12 @@
                   ref="http://ereed.library.utoronto.ca/eats/entity/40398/" type="Drama_Type"
                   >Enterludes</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/40453/"
                   type="Drama_Type">playes</rs> on the Sabothe daie, Notw<ex>i</ex>thstandinge the
-                  w<ex>hi</ex>ch (as <rs ref="eats:351822" type="Collective_Office">wee</rs> are enformed), the same ys neglected to the
-                  <rs ref="eats:45652" type="CrimesMisdemeanors">prophanac<ex>i</ex>on</rs> of this daie, and all other daies of the weeke in divers
-                places the players doe vse to Recyte theire plaies to the great hurt and destruction
-                of the game of <rs ref="http://ereed.library.utoronto.ca/eats/entity/21767/"
+                  w<ex>hi</ex>ch (as <rs ref="eats:351822" type="Collective_Office">wee</rs> are
+                enformed), the same ys neglected to the <rs ref="eats:45652"
+                  type="CrimesMisdemeanors">prophanac<ex>i</ex>on</rs> of this daie, and all other
+                daies of the weeke in divers places the players doe vse to Recyte theire plaies to
+                the great hurt and destruction of the game of <rs
+                  ref="http://ereed.library.utoronto.ca/eats/entity/21767/"
                   type="Entertainment_AnimalSport">Beare Baytinge</rs> and lyke pastymes
                   w<ex>hi</ex>ch are maynteyned for <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Person_Royalty"
@@ -3532,9 +3542,10 @@
                   Cullo<ex>u</ex>r of the tyme for some bad and mischeiuous intenc<ex>i</ex>on to
                 the disturbance and breache of her ma<ex>ies</ex>t<ex>es</ex> peace and Comyttinge
                 some outrage<del>us</del>. To preuente in tyme theis wicked and mischeuious
-                  purpos<ex>es</ex> <rs ref="eats:351822" type="Collective_Office">wee</rs> haue giuen straighte order to <rs
-                  ref="http://ereed.library.utoronto.ca/eats/entity/133707/" type="Person_Commoner"
-                  >the maior of London </rs>for the <rs
+                  purpos<ex>es</ex>
+                <rs ref="eats:351822" type="Collective_Office">wee</rs> haue giuen straighte order
+                to <rs ref="http://ereed.library.utoronto.ca/eats/entity/133707/"
+                  type="Person_Commoner">the maior of London </rs>for the <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/36947/"
                   type="Place_PA_Settlement">Cittye</rs> and the liberties therevnto belonginge and
                 to all other places nerre to the same to haue regarde herevnto; And so likewyse wee
@@ -3732,13 +3743,13 @@ brace --></cell>
                   type="Collective_Office">Aldermen of the Cittie of london </rs>forasmuch as by the
                 Certificate of the last weeke, yt appearethe the infection dothe increase,
                   w<ex>hi</ex>ch by the favo<ex>u</ex>r of God, and w<ex>i</ex>th yo<ex>u</ex>r
-                dilligent obseruance of her Ma<ex>ies</ex>t<ex>es</ex> Comandement<ex>es</ex> and the meanes and
-                orders prescribed to be put in execution w<ex>i</ex>thin the <rs
+                dilligent obseruance of her Ma<ex>ies</ex>t<ex>es</ex> Comandement<ex>es</ex> and
+                the meanes and orders prescribed to be put in execution w<ex>i</ex>thin the <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/36947/"
                   type="Place_PA_Settlement">Cittie of london</rs> maie speedelie cease yeat for the
-                better furderance therof <rs ref="eats:351822" type="Collective_Office">we</rs> think yt fitt that all manner of concourse and publique
-                meetinges of the people at <rs
-                  ref="http://ereed.library.utoronto.ca/eats/entity/40453/" type="Drama_Type"
+                better furderance therof <rs ref="eats:351822" type="Collective_Office">we</rs>
+                think yt fitt that all manner of concourse and publique meetinges of the people at
+                  <rs ref="http://ereed.library.utoronto.ca/eats/entity/40453/" type="Drama_Type"
                   >playes</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/21767/"
                   type="Entertainment_AnimalSport">beare baitinges</rs>, <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/40677/"
@@ -3830,7 +3841,9 @@ brace --></cell>
 
               <ab>After<note type="foot">After: A <hi rend="italic">in display
                   script</hi></note><note type="marginal" place="margin_left">For restraint of
-                  playes.</note> <rs ref="eats:351822" type="Collective_Office">o<ex>u</ex>r</rs> very hartie co<ex>m</ex>mendations to <rs
+                  playes.</note>
+                <rs ref="eats:351822" type="Collective_Office">o<ex>u</ex>r</rs> very hartie
+                  co<ex>m</ex>mendations to <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/143192/" type="Person_Gentry"
                     >yo<ex>u</ex>r L<ex>ordship</ex></rs> Whearas certein infourmation is given that
                 very great multitudes of all sorts of people do daylie frequent &amp; resort to
@@ -4000,7 +4013,8 @@ brace --></cell>
               <ab rend="right">Yo<ex>u</ex>r H<ex>ighnesses</ex> most humble/</ab>
 
               <ab rend="center">To the right honourable the L<ex>ords</ex> &amp; others of
-                  her<lb/>Ma<ex>ies</ex>ties most honourable <rs ref="eats:351822" type="Collective_Office">privy Counsell</rs></ab>
+                  her<lb/>Ma<ex>ies</ex>ties most honourable <rs ref="eats:351822"
+                  type="Collective_Office">privy Counsell</rs></ab>
 
               <gap reason="omitted"/>
             </div>
@@ -4266,8 +4280,9 @@ brace --></cell>
                   type="Place_PA_Settlement">London</rs>. <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Person_Royalty">
                   Her Ma<ex>ies</ex>tie</rs> being informed that there are verie greate disorders
-                Comitted in the Com<ex>m</ex>on play hous<ex>es</ex> both by lewd matters that are handled on the Stages and by
-                resorte and Confluence of bad people, hathe giuen direction that not onlie no <rs
+                Comitted in the Com<ex>m</ex>on play hous<ex>es</ex> both by lewd matters that are
+                handled on the Stages and by resorte and Confluence of bad people, hathe giuen
+                direction that not onlie no <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/40453/" type="Drama_Type"
                   >plaies</rs> shalbe vsed w<ex>i</ex>thin London or about the Citty or in any
                 publique place during this tyme of Som<ex>m</ex>er, But that also those Play houses
@@ -4402,7 +4417,8 @@ brace --></cell>
           </div>
         </body>
       </text>
-      <text ana="eats:359280 eats:359325 taxon:LocalGov_County" type="record" xml:id="rosep-ridm96718440">
+      <text ana="eats:359280 eats:359325 taxon:LocalGov_County" type="record"
+        xml:id="rosep-ridm96718440">
         <body>
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
               >Surrey</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/"
@@ -4526,10 +4542,11 @@ brace --></cell>
                     unit="chars" extent="1"/></damage>, having neither prepared any plaie for her
                   Ma<ex>ies</ex>tie, nor are bound to yow, the Masters of the Revell<ex>es</ex>, for
                 perfourming such orders as haue bin prescribed, and are enioyned to be obserued by
-                the other two Companies before menc<ex>i</ex>oned; <rs ref="eats:351822" type="Collective_Office">Wee</rs> haue therefore thought good
-                to require yow, vpon receipt heereof to take order that the aforesaid third Company
-                may be suppressed, and none suffered heere after to plaie; but those two formerlie
-                named belonging to vs the lord admiral's players <rs
+                the other two Companies before menc<ex>i</ex>oned; <rs ref="eats:351822"
+                  type="Collective_Office">Wee</rs> haue therefore thought good to require yow, vpon
+                receipt heereof to take order that the aforesaid third Company may be suppressed,
+                and none suffered heere after to plaie; but those two formerlie named belonging to
+                vs the lord admiral's players <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/25827/" type="Collective_Troupe"
                   > L<ex>ord</ex> Admyrall</rs> and <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/127834/"
@@ -4555,7 +4572,8 @@ brace --></cell>
           </div>
         </body>
       </text>
-      <text ana="taxon:Church_Parish" type="record" xml:id="rosep-ridm96581496">
+      <text ana="eats:360356 eats:360309 eats:360264 taxon:Church_Parish" type="record"
+        xml:id="rosep-ridm96581496">
         <body>
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
               >Surrey</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/"
@@ -4607,10 +4625,11 @@ brace --></cell>
 
               <ab>Inprimis<note type="foot">Inprimis: <hi rend="italic">in display
                   script</hi></note> it was ordered at this vestrye that a petic<ex>i</ex>on shalbe
-                made to the bodye of the Councell concerninge the playehouses in this
-                p<ex>ar</ex>yshe wherein the enormyties shalbe shewed that comes therebye to the
-                  p<ex>ar</ex>yshe And that in respecte thereof they maye be dismissed &amp; putt
-                downe from playeinge and that iiij or ij of the Churchwardens, <rs
+                made to the bodye of the <rs ref="eats:351822" type="Collective_Office"
+                  >Councell</rs> concerninge the playehouses in this p<ex>ar</ex>yshe wherein the
+                enormyties shalbe shewed that comes therebye to the p<ex>ar</ex>yshe And that in
+                respecte thereof they maye be dismissed &amp; putt downe from playeinge and that
+                iiij or ij of the Churchwardens, <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/152351/" type="Person_Commoner"
                   >mr Howse</rs><note type="foot">mr Howse: <hi rend="italic">Thomas Howse, auditor,
                     1598</hi></note>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/152492/"
@@ -5873,13 +5892,14 @@ Lupic --></p>
                   type="Place_PA_Settlement">Citty of London</rs>, and of the greate <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/45576/"
                   type="CrimesMisdemeanors">abuses and disorders </rs>growen by the ouermuch haunte
-                and resorte of many licentious people vnto those houses and places, <rs ref="eats:351822" type="Collective_Office">we</rs>
-                haue entred into Considerac<ex>i</ex>on of some fitt course to be taken for redresse
-                of thesaide disorders by suppressing dyu<ex>er</ex>s of those houses and by some
-                restrainte of the imoderate vse of the plaies. ffor w<ex>hi</ex>ch cause wee haue
-                sett downe c<ex>er</ex>taine orders to be duely henceforth obserued, and kept, a
-                Copy whereof we sende yow hereinclosed and haue sent the like to the L<ex>ord</ex>
-                  Maio<ex>u</ex>r of London. and to the Iustic<ex>es</ex> of the peace of Middlesex
+                and resorte of many licentious people vnto those houses and places, <rs
+                  ref="eats:351822" type="Collective_Office">we</rs> haue entred into
+                  Considerac<ex>i</ex>on of some fitt course to be taken for redresse of thesaide
+                disorders by suppressing dyu<ex>er</ex>s of those houses and by some restrainte of
+                the imoderate vse of the plaies. ffor w<ex>hi</ex>ch cause wee haue sett downe
+                  c<ex>er</ex>taine orders to be duely henceforth obserued, and kept, a Copy whereof
+                we sende yow hereinclosed and haue sent the like to the L<ex>ord</ex>
+                Maio<ex>u</ex>r of London. and to the Iustic<ex>es</ex> of the peace of Middlesex
                 But as wee haue done o<ex>u</ex>r p<ex>ar</ex>tes in pr<ex>e</ex>scribinge the
                 orders so vnlesse yow p<ex>er</ex>fourme yo<ex>u</ex>rs in lookinge to the due
                 execution of them. we shall loose o<ex>u</ex>r labo<ex>u</ex>r, and the wante of
@@ -5919,8 +5939,9 @@ Lupic --></p>
               <ab>Whereas<note type="foot">Whereas: W <hi rend="italic">in display
                   script</hi></note><note type="marginal" place="margin_left">.22. of Iune</note>
                   diu<ex>er</ex>s Complaint<ex>es</ex> haue bin heretofore made vnto the
-                  L<ex>ordes</ex> &amp; others of her Ma<ex>ies</ex>t<ex>es</ex> <rs ref="eats:351822" type="Collective_Office">priuye Counsell</rs>, of
-                the manyfolde <rs ref="http://ereed.library.utoronto.ca/eats/entity/45576/"
+                  L<ex>ordes</ex> &amp; others of her Ma<ex>ies</ex>t<ex>es</ex>
+                <rs ref="eats:351822" type="Collective_Office">priuye Counsell</rs>, of the
+                manyfolde <rs ref="http://ereed.library.utoronto.ca/eats/entity/45576/"
                   type="CrimesMisdemeanors">abuses and disorders</rs> that haue growen and do
                 contynue by occasion of many houses erected and employed in and about the <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/36947/"
@@ -6201,7 +6222,8 @@ Lupic --></p>
               <pb n="1" type="sheet"/>
 
               <ab>After<note type="foot">After: A <hi rend="italic">in display script</hi></note>
-                <rs ref="eats:351822" type="Collective_Office">our</rs> hartie comendac<ex>i</ex>ons. Whereas <rs
+                <rs ref="eats:351822" type="Collective_Office">our</rs> hartie
+                comendac<ex>i</ex>ons. Whereas <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/11772/" type="Person_Royalty">
                   her Ma{ies}tie </rs>(haveinge been well pleased heertofore at tymes of
                   recreac<ex>i</ex>on w<ex>i</ex>th the services of <rs
@@ -6301,9 +6323,9 @@ Lupic --></p>
                   ref="http://ereed.library.utoronto.ca/eats/entity/154215/"
                   type="Collective_Office">Iustices of Middlesex</rs> &amp; <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/160152/"
-                  type="Collective_Office">Surrey</rs>. It is in vaine for <rs ref="eats:351822" type="Collective_Office">vs</rs> to take<note
-                  type="marginal" place="margin_left"><rs
-                    ref="http://ereed.library.utoronto.ca/eats/entity/151205/"
+                  type="Collective_Office">Surrey</rs>. It is in vaine for <rs ref="eats:351822"
+                  type="Collective_Office">vs</rs> to take<note type="marginal" place="margin_left"
+                    ><rs ref="http://ereed.library.utoronto.ca/eats/entity/151205/"
                     type="Person_Nobility">L<ex>or</ex>d Keeper</rs>
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/151506/"
                     type="Person_Nobility">Mr Comptrol<ex>o</ex>r</rs><lb/><rs
@@ -6680,7 +6702,8 @@ Lupic --></p>
           </div>
         </body>
       </text>
-      <text ana="eats:359468 eats:359513 taxon:LocalGov_County" type="record" xml:id="rosep-ridm96650056">
+      <text ana="eats:359468 eats:359513 taxon:LocalGov_County" type="record"
+        xml:id="rosep-ridm96650056">
         <body>
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
               >Surrey</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/"
@@ -7421,7 +7444,8 @@ Lupic --></p>
               </div>
             </body>
           </floatingText>
-          <floatingText ana="eats:357815 taxon:Family_Estate" type="record" xml:id="rosep-ridm121523464">
+          <floatingText ana="eats:357815 taxon:Family_Estate" type="record"
+            xml:id="rosep-ridm121523464">
             <body>
               <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
                   >Surrey</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/"
@@ -7734,7 +7758,8 @@ Lupic --></p>
               </div>
             </body>
           </floatingText>
-          <floatingText ana="eats:354385 taxon:Family_Estate" type="record" xml:id="rosep-ridm124316664">
+          <floatingText ana="eats:354385 taxon:Family_Estate" type="record"
+            xml:id="rosep-ridm124316664">
             <body>
               <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
                   >Surrey</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/"
@@ -7960,7 +7985,8 @@ Lupic --></p>
               </div>
             </body>
           </floatingText>
-          <floatingText ana="eats:357928 taxon:Family_Estate" type="record" xml:id="rosep-ridm124024952">
+          <floatingText ana="eats:357928 taxon:Family_Estate" type="record"
+            xml:id="rosep-ridm124024952">
             <body>
               <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
                   >Surrey</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/"
@@ -8601,7 +8627,6 @@ Lupic --></p>
             <row>
               <cell><hi rend="underline">Biblical Plays</hi></cell>
             </row>
-
             <row>
               <cell><hi rend="italic"><title>Abraham and Lot</title></hi></cell>
               <cell>unknown</cell>
@@ -8617,36 +8642,44 @@ Lupic --></p>
                   Englande</title></hi></cell>
               <cell>Thomas Lodge<lb/>Robert Greene</cell>
               <cell>Strange's</cell>
-              <cell>Extant</cell>
-              <cell>Vol 2: 1567-1589, 829</cell>
+              <cell>extant </cell>
+              <cell>Vol 2: 1567–1589, no 829 </cell>
             </row>
             <row>
               <cell><lb/></cell>
             </row>
+
             <row>
-              <cell><hi rend="italic"><title>Nebuchadnezzar</title></hi></cell>
+              <cell><hi rend="italic"><title>Nebuchadnezzar</title></hi>
+              </cell>
               <cell>unknown</cell>
-              <cell>Admiral's</cell>
-              <cell>lost</cell>
+              <cell>Admiral's </cell>
+              <cell>lost </cell>
               <cell>Vol 3: 1590–1597, no 1050</cell>
             </row>
             <row>
               <cell><lb/></cell>
             </row>
+
             <row>
               <cell><hi rend="italic"><title>Play of Adam and Eve</title></hi>
               </cell>
               <cell>unknown</cell>
               <cell>Admiral's</cell>
-              <cell>lost</cell>
+              <cell>lost </cell>
               <cell>Vol 3: 1590–1597, no 1093</cell>
             </row>
             <row>
               <cell><lb/></cell>
             </row>
+
             <row>
-              <cell><hi rend="italic"><title>Tragedy of Absalom</title></hi><note type="foot">See
-                  also Tragedies</note></cell>
+              <cell>See also 'Tragedy,'<lb/><hi rend="italic"><title>Tragedy of
+                Absalom</title></hi></cell>
+              <cell/>
+              <cell/>
+              <cell/>
+              <cell/>
             </row>
             <row>
               <cell><lb/></cell>
@@ -8656,20 +8689,2543 @@ Lupic --></p>
               <cell><hi rend="underline">Classical Legend</hi></cell>
             </row>
             <row>
-              <cell><hi rend="italic"><title>Cupid and Psyche</title></hi></cell>
+              <cell><hi rend="italic"><title>Cupid and Psyche</title></hi>
+              </cell>
               <cell>Thomas Dekker<lb/>John Day<lb/>Henry Chettle</cell>
               <cell>Admiral's</cell>
-              <cell>fragmentary</cell>
+              <cell>fragmentary&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
               <cell>Vol 4: 1598–1602, no 1247</cell>
             </row>
-            <row><cell><lb/></cell></row>
             <row>
-              <cell><hi rend="italic"><title>Damon and Pythias</title></hi></cell>
-              <cell>Henry Chettle</cell>
-              <cell>Admiral's</cell>
+              <cell><lb/></cell>
+            </row>
+
+            <row>
+              <cell><hi rend="italic"><title>Damon and Pythias</title></hi>
+              </cell>
+              <cell>Henry Chettle </cell>
+              <cell>Admiral's </cell>
               <cell>lost</cell>
               <cell>Vol 4: 1598–1602, no 1245</cell>
             </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>1 Hercules</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 999</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>2 Hercules</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 1001</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Phaethon</title></hi></cell>
+              <cell>Thomas Dekker </cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1103</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Troy</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1037</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Troy's Revenge</title></hi>
+              </cell>
+              <cell>Henry Chettle</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1201</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Troilus and Cressida</title></hi></cell>
+              <cell>Thomas Dekker<lb/>Henry Chettle</cell>
+              <cell>Admiral's</cell>
+              <cell> lost </cell>
+              <cell>Vol 4: 1598–1602, no 1182</cell>
+            </row>
+            <row>
+              <cell><hi rend="underline">Comedy</hi></cell>
+              <cell/>
+              <cell/>
+              <cell/>
+              <cell/>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>All Fools but the Fool</title></hi></cell>
+              <cell>George Chapman</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1189 </cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>2 The Angry Women of Abingdon</title></hi></cell>
+              <cell>Henry Porter</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1171</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Blind Beggar of <lb/>Bethnal Green</title></hi></cell>
+              <cell>Henry Chettle<lb/>John Day</cell>
+              <cell>Admiral's</cell>
+              <cell>extant </cell>
+              <cell>Vol 4: 1598–1602, no 1250 </cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Comedy of Cosmo</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 946 </cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Comedy of Humours</title></hi></cell>
+              <cell>George Chapman</cell>
+              <cell>Admiral's</cell>
+              <cell>extant</cell>
+              <cell>Vol 3: 1590–1597, no 1073</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Devil and His Dame</title></hi>
+              </cell>
+              <cell>William Haughton</cell>
+              <cell>Admiral's</cell>
+              <cell>extant</cell>
+              <cell>Vol 4: 1598–1602, no 1153</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>A French Comedy</title></hi><lb/>[may be same as
+                below]</cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 1066</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The French Comedy</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 989</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Friar Bacon</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Strange's </cell>
+              <cell>fragmentary</cell>
+              <cell>Vol 2: 1567–1589, no 908</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Friar Bacon and <lb/>Friar Bungay</title></hi></cell>
+              <cell>Robert Greene</cell>
+              <cell>Queen's <lb/>and Sussex's</cell>
+              <cell>extant</cell>
+              <cell>Vol 2: 1567–1589, no 822</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Gentle Craft</title></hi></cell>
+              <cell>Thomas Dekker</cell>
+              <cell>Admiral's</cell>
+              <cell>extant</cell>
+              <cell>Vol 4: 1598–1602, no 1188</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Grecian Comedy</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 2: 1567–1589, no 785</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Hannibal and Hermes</title></hi>
+              </cell>
+              <cell>Robert Wilson<lb/>Michael Drayton<lb/>Thomas Dekker</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1137</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Jealous Comedy</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 945</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>A Knack to Know an Honest Man</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>extant </cell>
+              <cell>Vol 3: 1590–1597, no 969</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Long Meg of Westminster</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 874</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Look About You</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1184</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell>
+                <hi rend="italic"><title>A Medicine for a Curst Wife</title></hi></cell>
+              <cell>Thomas Dekker</cell>
+              <cell>Worcester's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1356</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Patient Grissil</title></hi>
+              </cell>
+              <cell>Henry Chettle<lb/>Thomas Dekker<lb/>William&#160;Haughton</cell>
+              <cell>Admiral's</cell>
+              <cell>extant </cell>
+              <cell>Vol 4: 1598–1602, no 1230</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Ranger's Comedy</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Queen's<lb/>and Sussex's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 869</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Spanish Comedy of <lb/>Don Horatio</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 909</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Triangle of Cuckolds</title></hi>
+              </cell>
+              <cell>Thomas Dekker</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1205</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Two Angry Women of <lb/>Abingdon</title></hi></cell>
+              <cell>Henry Porter</cell>
+              <cell>Admiral's </cell>
+              <cell>extant </cell>
+              <cell>Vol 4: 1598–1602, no 1151</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Two Merry Women of <lb/>Abingdon</title></hi></cell>
+              <cell>Henry Porter</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1130</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Venetian Comedy</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 964</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>A Woman Will Have Her Will</title></hi></cell>
+              <cell>William Haughton</cell>
+              <cell>Admiral's</cell>
+              <cell>extant </cell>
+              <cell>Vol 4: 1598–1602, no 1120</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>'Tis No Deceit to Deceive the
+                Deceiver</title></hi></cell>
+              <cell>Henry Chettle</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1166</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="bold">Possibly:</hi></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Bear a Brain</title></hi>
+              </cell>
+              <cell>Thomas Dekker</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1190</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Disguises</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1010</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Fair Em the Miller's<lb/>Daughter of
+                  Manchester</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>extant </cell>
+              <cell>Vol 3: 1590–1597, no 852</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Fountain of <lb/>New Fashions</title></hi></cell>
+              <cell>George Chapman</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1156</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The French Doctor</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 2: 1567–1589, no 833</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Merchant of Emden</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 961</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Vallia and Antony</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 2: 1567–1589, no 804</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="underline">History</hi></cell>
+            </row>
+
+            <row>
+              <cell><hi rend="italic"><title>Alba Regalis</title></hi>
+              </cell>
+              <cell>Thomas Heywood<lb/>Wentworth Smith</cell>
+              <cell>Worcester's </cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1342</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Alice Perrers</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1091</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Belin Dun</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 956</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Bourbon</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's<lb/>and Pembroke's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1076</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Brunhild</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1089</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Brute Greenshield</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1177</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Buckingham</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Sussex's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 931</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>2 Caesar</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 1004</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Caesar and Pompey</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 972</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Catiline's Conspiracy</title></hi></cell>
+              <cell>Robert Wilson<lb/>Henry Chettle</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1145</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>2 The Civil Wars of France</title></hi></cell>
+              <cell>Michael Drayton<lb/>Thomas Dekker</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1160</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>3 The Civil Wars of France</title></hi></cell>
+              <cell>Thomas Dekker<lb/>Michael Drayton</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1167</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Conan Prince of Cornwall</title></hi>
+              </cell>
+              <cell>Michael Drayton<lb/>Thomas Dekker</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1157</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Conquest of Brute</title></hi></cell>
+              <cell>Henry Chettle<lb/>John Day</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1161</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Earl Godwin and <lb/>His Three Sons</title></hi></cell>
+              <cell>Michael Drayton<lb/>Thomas Dekker<lb/>Henry Chettle<lb/>Robert Wilson</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1117</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Famous Wars of <lb/>Henry I and the <lb/>Prince of
+                    Wales</title></hi></cell>
+              <cell>Michael Drayton<lb/>Henry Chettle<lb/>Thomas Dekker</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1114</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell>
+                <hi rend="italic"><title>Ferrex and Porrex</title></hi>
+              </cell>
+              <cell>William Haughton </cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1244</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The First Civil Wars<lb/> of France</title></hi></cell>
+              <cell>Michael Drayton<lb/>Thomas Dekker</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1152</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The First Introduction of <lb/>The Civil Wars of
+                    France</title></hi></cell>
+              <cell>Thomas Dekker </cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1175</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Funeral of <lb/>Richard Coeur de
+                Lion</title></hi></cell>
+              <cell>Michael Drayton<lb/>Henry Chettle<lb/>Robert Wilson<lb/>Anthony Munday</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1131</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell>
+                <hi rend="italic"><title>2 Godwin</title></hi></cell>
+              <cell>Henry Chettle<lb/>Michael Drayton<lb/>Thomas Dekker<lb/>Robert Wilson</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1130</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Guthlac</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 858</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Hardicanute</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's<lb/>Pembroke's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1069</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Harry of Cornwall</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 905</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Harry the Fifth</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1021</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Harry VI</title></hi><lb/>[ie, First Part of <title><hi rend="italic">Henry VI</hi></title>]
+              </cell>
+              <cell>William Shakespeare<lb/>Thomas Nashe<lb/>collaborator</cell>
+              <cell>Strange's</cell>
+              <cell>extant </cell>
+              <cell>Vol 3: 1590–1597, no 919</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>1 Henry Richmond</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1192</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>2 Henry Richmond</title></hi></cell>
+              <cell>unknown<lb/>Robert Wilson<lb/>collaborator(s)</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1213</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>King Lear and His<lb/> Three Daughters</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Queen's<lb/>and Sussex's</cell>
+              <cell>extant</cell>
+              <cell>Vol 2: 1567–1589, no 838</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Lady Jane</title></hi>
+              </cell>
+              <cell>Henry Chettle<lb/>Thomas Dekker<lb/>Thomas Heywood<lb/>Wentworth Smith<lb/>John Webster</cell>
+              <cell>Worcester's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1365</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>2 Lady Jane</title></hi></cell>
+              <cell>Thomas Dekker</cell>
+              <cell>Worcester's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1369</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Life and Death of <lb/> Harry I</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 1075</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Life and Death of <lb/>Martin Swart</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 953</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Longshanks</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 1007</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Mulmutius Dunwallo</title></hi></cell>
+              <cell>William Rankins</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1153</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Owen Tudor</title></hi></cell>
+              <cell>Michael Drayton<lb/>Anthony Munday<lb/>Richard Hathway<lb/>Robert Wilson</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1229</cell>
+            </row>
+            
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Pierce of Exton</title></hi></cell>
+              <cell>Robert Wilson<lb/>Thomas Dekker<lb/>Michael Drayton<lb/>Henry Chettle</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1118</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Pope Joan</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 894</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Richard the Confessor</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Sussex's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 917</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Roderick</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Pembroke's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 1077</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Siege of London</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 862</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Sir John Oldcastle</title></hi>
+              </cell>
+              <cell>Anthony Munday<lb/>Michael Drayton<lb/>Robert Wilson<lb/>Richard Hathway</cell>
+              <cell>Admiral's </cell>
+              <cell>extant </cell>
+              <cell>Vol 4: 1598–1602, no 1211</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>2 Sir John Oldcastle</title></hi>
+              </cell>
+              <cell>Anthony Munday<lb/>Michael Drayton<lb/>Robert Wilson<lb/>Richard Hathway</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1236</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Stukely</title></hi></cell>
+              <cell>possibly<lb/>Thomas Heywood<lb/>with a collaborator?</cell>
+              <cell>Admiral's</cell>
+              <cell>fragmentary</cell>
+              <cell>Vol 3: 1590–1597, no 1049</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Titus and Vespacian</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Strange's </cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 923</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Uther Pendragon</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1070</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Vortigern</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1048</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>William the Conquerer</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Sussex's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 903</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>William Longsword</title></hi>
+              </cell>
+              <cell>Michael Drayton</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1178</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="bold">Possibly:</hi></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Constantine</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 890</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>King Lud</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Sussex's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 907</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Osric</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 867</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Spencers</title></hi>
+              </cell>
+              <cell>Henry Porter<lb/>Henry Chettle</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1180</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Warlamcester</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 860</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="underline">Moral</hi></cell>
+              <cell/>
+              <cell/>
+              <cell/>
+              <cell/>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>A Knack to Know a Knave</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Strange's </cell>
+              <cell>extant</cell>
+              <cell>Vol 3: 1590–1597, no 930</cell>
+            </row>
+            <row>
+              <cell>See also 'Biblical,'<lb/><hi rend="italic"><title>A Looking Glass for<lb/>London and
+                    Englande</title></hi></cell>
+              <cell/>
+              <cell/>
+              <cell/>
+              <cell/>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="underline">Pastorals</hi></cell>
+            </row>
+            <row>
+              <cell><hi rend="bold">Possibly:</hi> </cell>
+            </row>
+            
+            <row>
+              <cell><hi rend="italic"><title>Cloris &amp; Ergasto</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 878</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="underline">Romance</hi></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Alexander and Lodowick</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1055</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Blind Beggar of Alexandria</title></hi></cell>
+              <cell>George Chapman</cell>
+              <cell>Admiral's</cell>
+              <cell>extant</cell>
+              <cell>Vol 3: 1590–1597, no 1032</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Chinon of England</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1027</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>2 Constance of Rome</title></hi></cell>
+              <cell>Richard Hathway</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1256</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>1 Fair Constance of Rome</title></hi>
+              </cell>
+              <cell>Anthony Munday<lb/>Michael Drayton<lb/>Richard Hathway<lb/>Thomas Dekker<lb/>Robert Wilson</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1254</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Fortunatus</title></hi>
+              </cell>
+              <cell>Thomas Dekker</cell>
+              <cell>Admiral's</cell>
+              <cell>extant </cell>
+              <cell>Vol 4: 1598–1602, no 1217</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>1 Fortunatus</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 843</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>2 Fortunatus</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 851</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>George–a–Greene</title></hi>
+              </cell>
+              <cell>attributed to<lb/>Robert Greene</cell>
+              <cell>Sussex's </cell>
+              <cell>extant</cell>
+              <cell>Vol 3: 1590–1597, no 893</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>2 Godfrey of Bouillon</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 960</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Huon of Bordeaux</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Sussex's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 921</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Jerusalem</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Strange's </cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 892</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Life of Arthur</title></hi>
+              </cell>
+              <cell>Richard Hathway</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1119</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Orlando</title></hi></cell>
+              <cell>Robert Greene</cell>
+              <cell>Admiral's</cell>
+              <cell>extant </cell>
+              <cell>Vol 3: 1590–1597, no 876</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Palamon and Arcite</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 966</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Play of Friar Bacon</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Strange's </cell>
+              <cell>fragmentary </cell>
+              <cell>Vol 3: 1590–1597, no 908</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>1 Robin Hood</title></hi>
+              </cell>
+              <cell>Anthony Munday <lb/>Henry Chettle</cell>
+              <cell>Admiral's</cell>
+              <cell>extant </cell>
+              <cell>Vol 4: 1598–1602, no 1106</cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Seven Wise Masters</title></hi></cell>
+              <cell>Henry Chettle<lb/>John Day<lb/>Thomas Dekker<lb/>William Haughton</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1241</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Sir John Mandeville</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 911 </cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Tasso's Melancholy</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 963</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Tristram de Lyonesse</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1118</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Zenobia</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Strange's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 889</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="bold">Possibly:</hi></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Bindo &amp; Ricciardo</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 900</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Brandimer</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 897</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="underline">Tragedy</hi></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Agamemnon</title></hi>
+              </cell>
+              <cell>Thomas Dekker<lb/>Henry Chettle</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1186</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Battle of Alcazar</title></hi>
+              </cell>
+              <cell>attributed to<lb/>George Peele</cell>
+              <cell>Admiral's </cell>
+              <cell>extant </cell>
+              <cell>Vol 2: 1567–1589, no 811</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Beech's Tragedy</title></hi></cell>
+              <cell>William Haughton<lb/>John Day</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1226</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Biron</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Worcester's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1353</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Cox of Cullompton</title></hi></cell>
+              <cell>William Houghton<lb/>John Day</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1215</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Dido and Aeneas</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1100</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Doctor Faustus</title></hi>
+              </cell>
+              <cell>Christopher Marlowe<lb/>and collaborator</cell>
+              <cell>Admiral's </cell>
+              <cell>extant </cell>
+              <cell>Vol 2: 1567–1589, no 810</cell>
+            </row>
+            
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Friar Francis</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Sussex's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 924</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Italian Tragedy</title></hi></cell>
+              <cell>John Day</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1233</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Jew of Malta</title></hi>
+              </cell>
+              <cell>Christopher Marlowe</cell>
+              <cell>Sussex’s<lb/>and with<lb/>Queen's<lb/>Admiral's<lb/>and with<lb/>Pembroke's</cell>
+              <cell>extant </cell>
+              <cell>Vol 2: 1567–1589, no 828</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Jugurth</title></hi></cell>
+              <cell>William Boyle</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1234</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Massacre at Paris</title></hi>
+              </cell>
+              <cell>Christopher Marlowe</cell>
+              <cell>Strange’s/<lb/>Admiral's</cell>
+              <cell>extant </cell>
+              <cell>Vol 3: 1590–1597, no 947</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The New World's Tragedy</title></hi></cell>
+              <cell> unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 1009</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Padge of Plymouth</title></hi>
+              </cell>
+              <cell>Ben Jonson<lb/>Thomas Dekker</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1199</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>A Pastoral Tragedy</title></hi>
+              </cell>
+              <cell>George Chapman</cell>
+              <cell>Admiral's </cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1197</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Phocas</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1036</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>2 Robin Hood</title></hi>
+              </cell>
+              <cell>Anthony Munday<lb/>Henry Chettle</cell>
+              <cell>Admiral's</cell>
+              <cell>extant</cell>
+              <cell>Vol 4: 1598–1602, no 1107</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Scots Tragedy</title></hi>
+              </cell>
+              <cell>Ben Jonson<lb/>Henry Chettle<lb/>Thomas Dekker <hi rend="italic">et al</hi></cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1204</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Spanish Moor's Tragedy</title></hi></cell>
+              <cell>Thomas Dekker<lb/>William Haughton<lb/>John Day</cell>
+              <cell>Admiral's</cell>
+              <cell>extant </cell>
+              <cell>Vol 4: 1598–1602, no 1235</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Spanish Tragedy</title></hi></cell>
+              <cell>Thomas Kyd</cell>
+              <cell>Strange's/<lb/>Admiral's</cell>
+              <cell>extant </cell>
+              <cell>Vol 2: 1567–1589, no 783</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Stepmother's Tragedy</title></hi></cell>
+              <cell>Henry Chettle<lb/>Thomas Dekker</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1207</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>1 Tamar Cham</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Strange's<lb/>Admiral's<lb/>revived by<lb/>Worcester's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 906</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell>
+                <hi rend="italic"><title>2 Tamar Cham</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Strange's<lb/>Admiral's<lb/>revived by<lb/>Worcester's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 925</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Tamberlaine</title></hi></cell>
+              <cell>Christopher Marlowe</cell>
+              <cell>Admiral's</cell>
+              <cell>extant</cell>
+              <cell>Vol 2: 1567–1589, no 784</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>2 Tamberlaine</title></hi></cell>
+              <cell>Christopher Marlowe</cell>
+              <cell>Admiral's</cell>
+              <cell>extant </cell>
+              <cell>Vol 2: 1567–1589, no 789</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Three Brothers</title></hi>
+              </cell>
+              <cell>Wentworth Smith</cell>
+              <cell>Worcester's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1362</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Titus Andronicus</title></hi></cell>
+              <cell>William Shakespeare</cell>
+              <cell>Sussex's<lb/>possibly with<lb/>Derby's, Pembroke's</cell>
+              <cell>extant</cell>
+              <cell>Vol 3: 1590–1597, no 928</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell>Tragedy (title unknown) </cell>
+              <cell>Henry Chettle</cell>
+              <cell>Worcester's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1349</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Tragedy of Absalom</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Worcester's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1359</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>A Woman's Tragedy</title></hi>
+              </cell>
+              <cell>Henry Chettle</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1138</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell>See also 'History,'<lb/><hi rend="italic"><title>Catiline's
+                Conspiracy</title></hi></cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="bold">Possibly:</hi> </cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Black Joan</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1108</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Diocletian</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 973</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Julian the Apostate</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 1035</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Muly Molocco</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>lost</cell>
+              <cell>Vol 2: 1567–1589, no 918</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="underline">Genre Unknown</hi></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Arcadian Virgin</title></hi>
+              </cell>
+              <cell>Henry Chettle<lb/>William Haughton</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1228</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Barnardo and Philametta</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 1017</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Black Bateman of <lb/>the North</title></hi></cell>
+              <cell>Henry Chettle<lb/>Robert Wilson<lb/>Thomas Dekker<lb/>Michael Drayton</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1126</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>2 Black Bateman of <lb/>the North</title></hi></cell>
+              <cell>Henry Chettle<lb/>Robert Wilson</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1133</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Chance Medley</title></hi>
+              </cell>
+              <cell>Michael Drayton<lb/>Robert Wilson<lb/>Henry Chettle<lb/>Anthony Munday</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1142</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Christmas Comes but<lb/> Once a Year</title></hi>
+              </cell>
+              <cell>Thomas Heywood<lb/>John Webster<lb/>Thomas Dekker<lb/>Henry Chettle</cell>
+              <cell>Worcester's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1373</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Cobbler of Queenhithe</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's<lb/>and Pembroke's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1085</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Crack Me This Nut</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 1008</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Cutting Dick</title></hi>
+              </cell>
+              <cell>Thomas Heywood?</cell>
+              <cell>Worcester's </cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1352</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The English Fugitives</title></hi>
+              </cell>
+              <cell>William Haughton</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1248</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Fair Maid of Italy</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Sussex's<lb/>and Queen's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 926</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Four Kings</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1176</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Frederick and Basilea</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1078</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Friar Fox and <lb/>Gillian of Brentford</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1172</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Friar Spendleton</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's<lb/>and Pembroke's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1084</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Galeazzo</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 958</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>God Speed the Plough</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Sussex's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 910</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Guido</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1062</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Hot Anger Soon Cold</title></hi>
+              </cell>
+              <cell>Henry Porter<lb/>Henry Chettle<lb/>Ben Jonson</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1139</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Ill of a Woman</title></hi>
+              </cell>
+              <cell>George Chapman</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1132</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Joan as Good as My Lady</title></hi></cell>
+              <cell>Thomas Heywood</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1173</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Like unto Like</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Pembroke's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1028</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Love of an English Lady</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 967</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Love Prevented</title></hi>
+              </cell>
+              <cell>Henry Porter?</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1127</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Mack</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 990</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Madman's Morris</title></hi>
+              </cell>
+              <cell>Robert Wilson<lb/>Michael Drayton<lb/>Thomas Dekker</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1134</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Marshal Osric</title></hi>
+              </cell>
+              <cell>Wentworth Smith<lb/>Thomas Heywood<lb/>possibly<lb/>Henry Porter</cell>
+              <cell>Worcester's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1366</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Machiavel</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 899</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Mahamet</title></hi><lb/>[same as <hi rend="italic"><title>Battle of Alacazar</title></hi><lb/>or <hi rend="italic"><title>Muly Molocco</title></hi>?]
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's<lb/>or Strange's</cell>
+              <cell>lost</cell>
+              <cell>Vol 2: 1567–1589, no 812</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Miller</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1104</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Mother Redcap</title></hi>
+              </cell>
+              <cell>Anthony Munday<lb/>Michael Drayton</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1102</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Olympio and Eugenio</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 995</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Overthrow of Rebels</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Worcester's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1367</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Paradox</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1038</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Philippo and Hippolito</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 959</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Pierce of Winchester</title></hi>
+              </cell>
+              <cell>Thomas Dekker<lb/>Michael Drayton<lb/>Robert Wilson</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1147</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell>Play (title unknown)</cell>
+              <cell>John Marston</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1209</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell>Play (title unknown)</cell>
+              <cell>Henry Chettle</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell> Vol 4: 1598–1602, no 1219 </cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Poor Man's Paradise</title></hi>
+              </cell>
+              <cell>William and/or<lb/>Thomas Haughton</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1201</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Pythagoras</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1028</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Second Week</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1029</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Seleo and Olympo</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 994</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Set at Maw</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 977</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Seven Days of the Week</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1003</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Strange News out of Poland</title></hi></cell>
+              <cell>William Haughton<lb/>Mr Pett</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell> Vol 4: 1598–1602, no 1246</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Sturgflatery</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1129</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Tanner of Denmark</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 929</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>That Will Be Shall Be</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1051</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Time's Triumph</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1022</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Tinker of Totnes</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1039</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>A Toy to Please Chaste Ladies</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell> Vol 3: 1590–1597, no 1018</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Truth's Supplication to Candlelight</title></hi></cell>
+              <cell>Thomas Dekker</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1243</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Vaivode</title></hi></cell>
+              <cell>Henry Chettle</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1141</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Valentine and Orson</title></hi></cell>
+              <cell>Robert Wilson<lb/>Michael Drayton<lb/>Thomas Dekker</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1135</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>War Without Blows and <lb/>Love Without
+                  Strife</title></hi></cell>
+              <cell>Thomas Heywood</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1169</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Welshman</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 882</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Welshman's Prize</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1115</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Wise Men of Westchester</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 976</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Witch of Islington</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 978</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>A Woman is Hard to Please</title></hi>
+              </cell>
+              <cell>Henry Porter?</cell>
+              <cell>Admiral's </cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 1056</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Wonder of a Woman</title></hi></cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1013 </cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Worse Afeared than Hurt</title></hi>
+              </cell>
+              <cell>Michael Drayton<lb/>Thomas Dekker</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1146</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="underline">Jig</hi></cell>
+            </row>
+
+            <row>
+              <cell>Two Jigs? </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 1092</cell>
+            </row>
+            <row>
+              <cell><hi rend="underline">Anthology</hi></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Five Plays in One</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's </cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 1063</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Four Plays in One</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Strange's</cell>
+              <cell>lost</cell>
+              <cell>Vol 3: 1590–1597, no 879</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="bold">Possibly at the Rose</hi></cell>
+            </row>
+            <row>
+              <cell><hi rend="underline">Romance</hi></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Four Prentices of London</title></hi></cell>
+              <cell>Thomas Heywood</cell>
+              <cell>Worcester's</cell>
+              <cell>extant</cell>
+              <cell> Vol 4: 1598–1602, no 1351</cell>
+            </row>
+            <row>
+              <cell><hi rend="underline">Tragedy</hi></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Life and Death<lb/> of Heliogabulus</title></hi><lb/>[or history?]</cell>
+              <cell>unknown</cell>
+              <cell>Strange's? </cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 872</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell>Tragedy (untitled)</cell>
+              <cell>Ben Jonson<lb/>George Chapman</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1159</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell>Tragedy (untitled)</cell>
+              <cell>George Chapman</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1168</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="bold">Possibly:</hi></cell>
+              <cell/>
+              <cell/>
+              <cell/>
+              <cell/>
+            </row>
+            <row>
+              <cell>Play (untitled)</cell>
+              <cell>George Chapman </cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1128</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="underline">Jig</hi></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>Jig of Rustic Wooing</title></hi>
+              </cell>
+              <cell>unknown</cell>
+              <cell>Admiral's</cell>
+              <cell>extant </cell>
+              <cell>Vol 3: 1590–1597, no 1000</cell>
+            </row>
+            <row>
+              <cell><hi rend="underline">Genre Unknown</hi></cell>
+            </row>
+            <row>
+              <cell>Play (untitled)</cell>
+              <cell>William Haughton</cell>
+              <cell>Admiral's<lb/>Pembroke's</cell>
+              <cell>lost </cell>
+              <cell>Vol 3: 1590–1597, no 1088</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell>Play (untitled)</cell>
+              <cell>Ben Jonson</cell>
+              <cell>Admiral's</cell>
+              <cell>lost </cell>
+              <cell>Vol 4: 1598–1602, no 1099</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell>Play (untitled) </cell>
+              <cell>George Chapman</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1158</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell>Play (title unknown)</cell>
+              <cell>Henry Chettle<lb/>John Day</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1255</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell>Play (title unknown)</cell>
+              <cell>Thomas Middleton</cell>
+              <cell>Worcester's</cell>
+              <cell> lost </cell>
+              <cell>Vol 4: 1598–1602,no 1364</cell>
+            </row>
+            <row>
+              <cell><lb/></cell>
+            </row>
+            <row>
+              <cell><hi rend="italic"><title>The Wooing of Death</title></hi></cell>
+              <cell>Henry Chettle</cell>
+              <cell>Admiral's</cell>
+              <cell>lost</cell>
+              <cell>Vol 4: 1598–1602, no 1252</cell>
+            </row>
+
           </table>
         </div>
       </div>
