@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
+           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <!-- Template to display a single timeline. -->
+
+  <xsl:param name="timeline" />
+
+  <kiln:parent>
+    <xi:include href="base.xml" />
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title">
+      <kiln:super />
+    </kiln:block>
+
+    <kiln:block name="css">
+      <kiln:super />
+      <link rel="stylesheet" type="text/css" href="{$kiln:assets-path}/styles/leaflet/leaflet.css" />
+      <link rel="stylesheet" type="text/css" href="{$kiln:assets-path}/styles/leaflet/screen.css" />
+      <link rel="stylesheet" type="text/css" href="{$kiln:assets-path}/styles/timeline.css" />
+    </kiln:block>
+
+    <kiln:block name="js">
+      <kiln:super />
+      <script src="{$kiln:assets-path}/scripts/leaflet/leaflet.js"></script>
+    </kiln:block>
+
+    <kiln:block name="content">
+      <div class="content">
+        <div class="row">
+          <div class="column medium-12">
+            <h1 class="event_title column medium-6">
+              Rose Playhouse Timeline
+            </h1>
+
+            <div class="column medium-6 filters">
+              <div class="filter_buttons-container">
+                <span class="filter_buttons-label">
+                  View by:
+                </span>
+                <ul class="filter_buttons">
+                  <li class="filter_button active"><a>Date Range</a></li>
+                  <li class="filter_button inactive"><a>Category</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="column medium-12">
+              <ul class="event_tabs">
+                <li class="event_tab active"><a>Early Days: 1530-1590</a></li>
+                <li class="event_tab inactive"><a>Active Period: 1591-1600</a></li>
+                <li class="event_tab inactive"><a>Final Years: 1601-1606</a></li>
+              </ul>
+            </div>
+
+            <div class="column medium-4">
+              <ul class="events">
+              </ul>
+            </div>
+
+            <div class="column medium-8">
+              <div id="map">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </kiln:block>
+
+    <kiln:block name="end-js">
+      <kiln:super />
+      <script>var timelineJsonPath = "<xsl:value-of select="$kiln:assets-path"/>/timelines/<xsl:value-of select="$timeline"/>.json"</script>
+      <script src="{$kiln:assets-path}/scripts/timeline.js"></script>
+    </kiln:block>
+  </kiln:child>
+
+</kiln:root>

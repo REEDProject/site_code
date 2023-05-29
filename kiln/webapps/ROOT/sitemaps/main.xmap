@@ -137,6 +137,9 @@
         <map:aggregate element="aggregation" label="content">
           <map:part src="cocoon://_internal/menu/main.xml?url=timelines/" />
         </map:aggregate>
+        <map:transform src="cocoon://_internal/template/timeline.xsl">
+          <map:parameter name="timeline" value="{1}" />
+        </map:transform>
         <map:serialize />
       </map:match>
 

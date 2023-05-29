@@ -3,7 +3,7 @@
            xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <!-- Template to display a single record. -->
+  <!-- Template to display a list of timelines. -->
 
   <xsl:import href="cocoon://_internal/template/xsl/stylesheets/timelines/timelines-to-html.xsl" />
 
