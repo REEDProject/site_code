@@ -452,7 +452,7 @@ function getExpandedEventRecord(events, eventID) {
 
   if (event.ereed_url) {
     eventActive.append(
-      `<a target="_blank" href=${event.ereed_url}>
+      `<a target="_blank" href="${event.ereed_url}">
                 See event entity page.
             </a><br>`
     );
