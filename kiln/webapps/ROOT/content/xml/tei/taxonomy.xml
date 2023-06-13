@@ -16347,11 +16347,7 @@
                             <settlement>London</settlement>
                             <repository sameAs="#BL"/>
                             <idno type="shelfmark">Lansdowne 71</idno>
-                            <msName>Letter from the <rs
-                                    ref="http://ereed.library.utoronto.ca/eats/entity/133707/"
-                                    type="Person_Commoner">Lord Mayor</rs> to <rs
-                                    ref="http://ereed.library.utoronto.ca/eats/entity/130613/"
-                                    type="Person_Nobility">Lord Burghley</rs></msName>
+                            <msName><rs ref="eats:361644" type="Event_PublicDisturbance">Letter from the Lord Mayor to Lord Burghley</rs></msName>
                         </msIdentifier>
                         <ab type="edDesc">Although the play that served as the context for the
                             assembly of <rs
