@@ -303,6 +303,19 @@
       <desc>© <ref target="https://www.cityoflondon.gov.uk/lma">London Metropolitan Archives</ref>
         (City of London), SKCS/018</desc>
     </graphic>
+    
+    <graphic url="images/BL/lansdowne_ms_74_f075v_076r.jpg" xml:id="f75">
+      <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, Lansdowne MS74/f75</desc>
+    </graphic>
+    <graphic url="images/BL/lansdowne_ms_71_f028r.jpg" xml:id="f28">
+      <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, Lansdowne MS71/f28</desc>
+    </graphic>
+    <graphic url="images/BL/add_ms_11402_f086r.jpg" xml:id="f86">
+      <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, Additional MS 11402/f86</desc>
+    </graphic>
+    <graphic url="images/BL/add_ms_11402_f107r.jpg" xml:id="f107">
+      <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, Additional MS 11402/f107</desc>
+    </graphic>
   </facsimile>
 
   <text>
@@ -3474,7 +3487,7 @@
                 ref="http://ereed.library.utoronto.ca/eats/entity/153197/" type="Collective_Troupe"
                 >Lord Strange's Men</rs>, likely resident there by this time, was of growing
               concern. </p>
-            <p><!-- Tagigng PC members here? -->The privy councillors listed as present at the meeting (p 436) were John Whitgift
+            <p><!-- Tagging PC members here? -->The privy councillors listed as present at the meeting (p 436) were John Whitgift
                 (<hi rend="italic">c</hi> 1530–1604), archbishop of Canterbury, 1583–1603/4; Sir
               Christopher Hatton (<hi rend="italic">c</hi> 1540–91), lord chancellor, 1587–91; Sir
               William Cecil (<hi rend="italic">c</hi> 1520–98), lord treasurer, 1572–98; Thomas
@@ -3495,7 +3508,7 @@
           <div xml:lang="eng" type="transcription" xml:id="rosep-ridm93270024-transcription">
             <div>
               <head>f [1] <supplied>(12 June)</supplied></head>
-              <pb n="[1]" type="folio"/>
+              <pb n="[1]" type="folio" facs="#f28"/>
 
               <ab>My humble duety remembred to <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/130613/" type="Person_Nobility"
@@ -3897,7 +3910,7 @@ brace --></cell>
           <div xml:lang="eng" type="transcription" xml:id="rosep-ridm90590584-transcription">
             <div>
               <head>single sheet</head>
-              <pb n="1" type="sheet"/>
+              <pb n="1" type="sheet" facs="#f75"/>
 
               <gap reason="omitted"/>
 
@@ -6507,7 +6520,7 @@ brace --></cell>
           <div xml:lang="eng" type="transcription" xml:id="rosep-ridm92828856-transcription">
             <div>
               <head>f 86 <supplied>(19 March)</supplied></head>
-              <pb n="86" type="folio"/>
+              <pb n="86" type="folio" facs="#f86"/>
 
               <gap reason="omitted"/>
 
@@ -6690,7 +6703,7 @@ brace --></cell>
           <div xml:lang="eng" type="transcription" xml:id="rosep-ridm91491816-transcription">
             <div>
               <head>f 107 <supplied>(5 October)</supplied></head>
-              <pb n="107" type="folio"/>
+              <pb n="107" type="folio" facs="#f107"/>
 
               <gap reason="omitted"/>
 
