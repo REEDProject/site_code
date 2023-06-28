@@ -328,8 +328,8 @@ function loadMap() {
  */
 function generateLegend() {
   let legend = $('<div id="legend">');
-  let collapsedLegend = $(`<img src="./images/map/legendicon.png" id="collapsedLegend" style="width: 50px;">`);
-  let expandedLegend = $(`<img src="./images/map/legend.png" id="expandedLegend" style="width: 150px;">`);
+  let collapsedLegend = $(`<img src="../../assets/images/map/legendicon.png" id="collapsedLegend" style="width: 50px;">`);
+  let expandedLegend = $(`<img src="../../assets/images/map/legend.png" id="expandedLegend" style="width: 150px;">`);
   legend.html(collapsedLegend);
 
   legend.on('mouseenter', function () {
