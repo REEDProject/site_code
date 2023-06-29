@@ -110,7 +110,7 @@
   <xsl:template name="display-record-associated-entities">
     <xsl:if test="tei:index[@indexName='associated_entity']/tei:term">
       <li class="accordion-item" data-accordion-item="">
-        <a href="#" class="accordion-title">Associated Events</a>
+        <a href="#" class="accordion-title">Event Entity Pages</a>
         <div class="accordion-content" data-tab-content="">
           <ul class="marginalia-list">
             <xsl:for-each select="tei:index[@indexName='associated_entity']/tei:term">
