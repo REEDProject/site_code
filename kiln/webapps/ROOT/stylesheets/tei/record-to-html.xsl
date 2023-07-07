@@ -143,6 +143,7 @@
         <xsl:call-template name="display-record-marginalia" />
         <xsl:call-template name="display-record-footnotes" />
         <xsl:call-template name="display-record-translation" />
+        <xsl:call-template name="display-record-modernization" />
         <xsl:call-template name="display-record-collation-notes" />
         <xsl:call-template name="display-record-glossed-terms" />
         <xsl:call-template name="display-record-endnote" />
@@ -384,11 +385,22 @@
   </xsl:template>
 
   <xsl:template name="display-record-translation">
-    <xsl:if test="./tei:body/tei:div[@type='translation']">
+    <xsl:if test="./tei:body/tei:div[@type='translation' and not (@subtype)]">
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Record Translation</a>
         <div class="accordion-content" data-tab-content="">
           <xsl:apply-templates select="tei:body/tei:div[@type='translation']" />
+        </div>
+      </li>
+    </xsl:if>
+  </xsl:template>
+  
+  <xsl:template name="display-record-modernization">
+    <xsl:if test="./tei:body/tei:div[@type='translation' and @subtype='modernization']">
+      <li class="accordion-item" data-accordion-item="">
+        <a href="#" class="accordion-title">Modernized Text</a>
+        <div class="accordion-content" data-tab-content="">
+          <xsl:apply-templates select="tei:body/tei:div[@type='translation' and @subtype='modernization']" />
         </div>
       </li>
     </xsl:if>
