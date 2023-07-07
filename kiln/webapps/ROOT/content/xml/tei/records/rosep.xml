@@ -2231,7 +2231,7 @@
       </div>
     </front>
     <group>
-      <text ana="taxon:Family_Estate" type="record" xml:id="rosep-ridm90656952">
+      <text ana="eats:357982 taxon:Family_Estate" type="record" xml:id="rosep-ridm90656952">
         <body>
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
               >Surrey</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/"
@@ -6543,6 +6543,9 @@ brace --></cell>
               of State, 1600-17; <rs ref="eats:155784" type="Person_Male">Gilbert Talbot</rs> (1552-1616), eleventh Earl of Shrewsbury; and <rs ref="eats:155881" type="Person_Nobility">Edward
               Somerset</rs> (c. 1550-1628), ninth Earl of Worcester. The full text of the letter is
               printed in Greg and Chambers, 'Remembrancia,' pp 83–5. </p>
+          </div>
+          <div type="translation" subtype="modernization">
+            <p>This is a test of the modernization accordion</p>
           </div>
         </body>
       </text>
