@@ -2702,6 +2702,32 @@
             <p>The <rs ref="eats:351822" type="Collective_Office">privy councillors</rs> present at
               the meeting are listed in the left margin. </p>
           </div>
+          <div type="translation" subtype="modernization">
+            <div>
+              <head>p 339 <supplied>(7 May) (Nonsuch)</supplied></head>
+              <pb n="339" type="page" facs="#p339"/>
+              <ab> ...<lb/> A<note type="marginal" place="margin_left">Lord Chancellor<lb/>Lord
+                  Treasurer<lb/>Earl of Warwick<lb/>Earl of Leicester<lb/>Lord Admiral<lb/>Lord
+                  Chamberlain<lb/>Mr Secretary Walsingham</note> letter to the lord mayor of the
+                city of London that whereas their lordships were given to understand that certain
+                outrages and disorders were of late committed in certain places and theatres erected
+                within that city of London, or the suburbs of the same where interludes and comedies
+                were usually played, and for that the season of the year grew hotter and hotter, it
+                was to be doubted lest<note type="foot">doubted lest: <hi rend="italic">feared
+                    that</hi></note> by reason of the concourse of people to such places of common
+                assemblies there might some danger of infection happen in the city, their lordships
+                thought it expedient to have the use of the said interludes inhibited both at the
+                theatres and in all other places within his jurisdiction, and therefore required him
+                accordingly to take present order for the staying of the same, charging the players
+                and actors to cease and forbear the use of the said places for the purpose of
+                playing or showing of any such interludes or comedies until after Bartholomewtide
+                next ensuing.<lb/>
+                <lb/> A like letter to the same effect to the master of the Rolls.<lb/> A like
+                letter to the like effect to the <add place="above">justices</add> [sheriffs] of
+                Surrey.<lb/> ...<lb/>
+              </ab>
+            </div>
+          </div>
         </body>
       </text>
       <text ana="eats:354469 taxon:Family_Estate" type="record" xml:id="rosep-ridm90584488">
@@ -3166,7 +3192,7 @@
                   unharmed</note> the said John Cholmley, his executors, administrators, or assigns.
                 And likeways shall and will, at his and their own proper costs and charges, repair
                 and amend all the bridges and wharves belonging to the said parcel of ground and
-                other the premises, with the appurtenances, at or before the 19@<hi
+                other the premises, with the appurtenances, at or before the 19<hi
                   rend="superscript">th</hi> day of September next, coming after the date of these
                 presents. And likeways, the said John Cholmley and Phillip Henslowe, for them, their
                 executors and administrators, do covenant, promise, and grant, either with other, by
@@ -3801,6 +3827,27 @@
               1596); and <rs ref="eats:150828" type="Person_Gentry">Sir John Fortescue</rs>
               (1533–1607).</p>
           </div>
+          <div type="translation" subtype="modernization">
+            <div>
+              <head>p 440 <supplied>(25 July) (Greenwich)</supplied></head>
+              <pb n="440" type="page" facs="#p440"/>
+              <ab>
+                <lb/> A letter to the lord mayor of the city of London, and the justices of
+                Middlesex and Surrey. Whereas heretofore there has been order taken to restrain the
+                playing of interludes and plays on the sabbath day, notwithstanding the which (as we
+                are informed), the same is neglected, to the profanation of this day, and all other
+                days of the week the players do use to recite their plays to the great hurt and
+                destruction of the game of bearbaiting and like pastimes which are maintained for
+                her Majesty’s pleasure, if occasion require, this shall be therefore to require you
+                not only to take order hereafter that there may no plays, interludes, or comedies be
+                used or publically made and shown either on the Sunday or in the Thursdays, because
+                on the Thursdays those other games usually have always been accustomed and
+                practiced, whereof see you fail not hereafter to see this our order duly observed
+                for the avoiding of the inconvenience aforesaid.<lb/>
+                <lb/>
+              </ab>
+            </div>
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="rosep-ridm93270024">
@@ -4223,24 +4270,56 @@ brace --></cell>
                 way intended, and to join and assist such officers of the city as shall keep watch
                 near unto you.<lb/>
                 <lb/> Six other letters of the like tenor to the persons and places following./<lb/>
-                <lb/> <ab rend="center">Surrey</ab><lb/>
                 <lb/>
-                <table><row><cell>Mr Gardiner<lb/>Mr Bowyer<lb/>Mr Parker</cell><cell>for the precincts of</cell><cell>Newington
-                  <lb/>Kentish Street<lb/>Bermondsey Street<lb/>Clink, Paris Garden
-                      and the Bankside.</cell></row></table>
+                <ab rend="center">Surrey</ab><lb/>
                 <lb/>
-                <table><row><cell>Lieutenant of the Tower.<lb/>Master of St Katherine’s</cell><cell>for the precincts of</cell><cell>St
-                      Catherine’s<lb/>East Smithfield</cell></row></table><lb/>
+                <table>
+                  <row>
+                    <cell>Mr Gardiner<lb/>Mr Bowyer<lb/>Mr Parker</cell>
+                    <cell>for the precincts of</cell>
+                    <cell>Newington <lb/>Kentish Street<lb/>Bermondsey Street<lb/>Clink, Paris
+                      Garden and the Bankside.</cell>
+                  </row>
+                </table>
                 <lb/>
-                <table><row><cell>Lord Wentworthe</cell><cell>for these
-                      precincts</cell><cell>Ratcliffe<lb/>Shoreditch<lb/>Whitechapel.</cell></row></table>
+                <table>
+                  <row>
+                    <cell>Lieutenant of the Tower.<lb/>Master of St Katherine’s</cell>
+                    <cell>for the precincts of</cell>
+                    <cell>St Catherine’s<lb/>East Smithfield</cell>
+                  </row>
+                </table><lb/>
                 <lb/>
-                <table><row><cell>Lord Cobham</cell><cell>for ye</cell><cell>Blackfriars.</cell></row></table>
+                <table>
+                  <row>
+                    <cell>Lord Wentworthe</cell>
+                    <cell>for these precincts</cell>
+                    <cell>Ratcliffe<lb/>Shoreditch<lb/>Whitechapel.</cell>
+                  </row>
+                </table>
                 <lb/>
-                <table><row><cell>Sir Thomas Shirley</cell><cell>for
-                      the</cell><cell>Whitefriars.</cell></row></table>
+                <table>
+                  <row>
+                    <cell>Lord Cobham</cell>
+                    <cell>for ye</cell>
+                    <cell>Blackfriars.</cell>
+                  </row>
+                </table>
                 <lb/>
-                <table><row><cell>Bailiff of Westminster</cell><cell>Westminster<lb/>St Martin’s<lb/>the Strand</cell></row></table>
+                <table>
+                  <row>
+                    <cell>Sir Thomas Shirley</cell>
+                    <cell>for the</cell>
+                    <cell>Whitefriars.</cell>
+                  </row>
+                </table>
+                <lb/>
+                <table>
+                  <row>
+                    <cell>Bailiff of Westminster</cell>
+                    <cell>Westminster<lb/>St Martin’s<lb/>the Strand</cell>
+                  </row>
+                </table>
                 <lb/>
               </ab>
             </div>
@@ -4332,6 +4411,42 @@ brace --></cell>
               (1532–95); <rs ref="eats:144756" type="Person_Gentry">Sir John Wolley</rs> (d. 1596);
               and <rs ref="eats:150828" type="Person_Gentry">Sir John Fortescue</rs>
               (1533–1607).</p>
+          </div>
+          <div type="translation" subtype="modernization">
+            <div>
+              <head>pp 211–12 <supplied>(28 January) (Hampton Court)</supplied></head>
+              <pb n="211" type="page" facs="#p211"/>
+              <ab>
+                <lb/> ...<lb/> A letter to the lord mayor and aldermen of the city of London.
+                Forasmuch as by the certificate of the last week it appears the infection does
+                increase, which by the favour of God, and with your diligent observance of her
+                Majesty’s commandments to the means and orders prescribed to be put in execution
+                within the city of London, may speedily cease. Yet for the better furtherance
+                thereof we think it fit that all manner of concourse and public meetings of the
+                people at plays, bear baitings, bowlings, and other like assemblies for sports be
+                forbidden, and therefore do hereby require you in her Majesty’s name, straightly
+                charge and command you forthwith to inhibit within your jurisdiction all plays,
+                baiting of bears, bulls, bowling, and other like occasions to assemble numbers of
+                people together (preaching and divine service at churches excepted), whereby no
+                occasions be offered to increase the infection with the city, which you shall do
+                both by proclamation to be published to that end and by special watch and
+                observation to be had at the places where the plays, bear baitings, bowlings and
+                like pastimes are usually frequented, and if you shall upon this publication find
+                any so undutiful and disobedient as they will notwithstanding this prohibition offer
+                to play, bait bears or bulls, bowl, etc, you shall presently cause them to be
+                apprehended and committed to prison, there to remain until by order they shall be
+                dismissed. And to the end the like assemblies within the out liberties adjoining to
+                the city, we have given direction to the justices of the peace and other public
+                officers of the counties of Middlesex and Surrey, to hold the like course not only
+                within the said liberties, but also within the distance of seven miles about the
+                city, which we doubt not they will carefully see to be executed as you for your part
+                within the city will do the like, in regard of her Majesties commandment, the
+                benefit of the city, and for the respects already signified unto you.</ab>
+              <ab> Two other letters of the like tenor written to the justices of the peace within
+                the counties of Surrey and Middlesex for the prohibition of like assemblies in the
+                out liberties and within seven miles of the city of either county.<lb/> ...<lb/>
+              </ab>
+            </div>
           </div>
         </body>
       </text>
@@ -5053,6 +5168,39 @@ brace --></cell>
                 the International Conference on Elizabethan Theatre held at the University of
                 Waterloo, Ontario, in July 1968</title>, David Galloway (ed) (Toronto, 1969), 21–44.
             </p>
+          </div>
+          <div type="translation" subtype="modernization">
+            <div>
+              <head>p 327 <supplied>(28 July) (Greenwich)</supplied></head>
+              <pb n="327" type="page" facs="#p327"/>
+              <ab> ... <lb/> A<note type="marginal" place="margin_left">Signed by the<lb/>Lord
+                  Keeper<lb/>Lord Treasurer<lb/>Lord Admiral<lb/>Lord Chamberlain<lb/>Lord
+                  North<lb/>Lord Buckhurst<lb/>Mr Comptroller<lb/>Mr Secretary </note> letter to
+                Robert Wroth, William Fleetwood, John Barne, Thomas Fowler, and Richard Skevington,
+                esquire, and the rest of the justices of Middlesex, nearest to London. Her Majesty
+                being informed that there are very great disorders committed in the common
+                playhouses, both by lewd matters that are handled on the stages, and by resort and
+                confluence of bad people, has given direction that not only no plays shall be used
+                within London, or about the city, or in an public place during this time of summer,
+                but also that those playhouses that are erected and built only for such purposes
+                shall be plucked down, namely the Curtain and the Theatre near to Shoreditch, or any
+                other within the county. These<note type="foot">These: <hi rend="italic">ie, these
+                    presents, this letter</hi></note> are therefore in her Majesty’s name to charge
+                and command you that you take present order there be no more plays used in any
+                public place within three miles of the city until Allhallowtide next. And likewise
+                that you do send for the owner of the Curtain, Theatre, or any other common
+                playhouse, and enjoin them by virture hereof forthwith to pluck down quite the
+                stages, galleries, and rooms that are made for people to stand in, and so to deface
+                the same as they may not be employed again to such use, which if they shall not
+                speedily perform, you shall advertise us that order may be taken to see the same
+                done according to her Majesty’s pleasure and commandment. And hereof praying you not
+                to fail me, etc.<lb/></ab>
+              <ab> The like to Mr Bowier, William Gardiner, and Bartholomew Scott, esquires, and the
+                rest of the justices of Surrey, requiring them to take the like order for the
+                playhouses on the Bankside, in Southwark, or elsewhere in the said county, within 3
+                miles of London.<lb/>
+              </ab>
+            </div>
           </div>
         </body>
       </text>
@@ -6451,7 +6599,7 @@ brace --></cell>
                 <pb n="300" type="page"/>
               </head>
 
-              <ab>“The book of the inventory of the goods of my Lord Admiral’s Men, taken the 10 of
+              <ab>"The book of the inventory of the goods of my Lord Admiral’s Men, taken the 10 of
                 March, in the year 1598.</ab>
               <ab rend="center">Gone and lost.</ab>
               <ab>Item, 1 orange tawny satin doublet, laid thick with gold lace.<lb/> Item, 1 blue
@@ -6603,7 +6751,7 @@ brace --></cell>
                 <table>
                   <row>
                     <cell/>
-                    <cell rend="right">@$</cell>
+                    <cell rend="right">&#x00A3;</cell>
                     <cell rend="right">s.</cell>
                     <cell rend="right">d.</cell>
                   </row>
@@ -6838,6 +6986,33 @@ brace --></cell>
                 ref="eats:145932" type="Person_Nobility">Sir Robert Cecil</rs> (1563-1612),
               Secretary of State, 1596-1612; and <rs ref="eats:150828" type="Person_Gentry">Sir John
                 Fortescue</rs> (1533-1607).</p>
+          </div>
+          <div type="translation" subtype="modernization">
+            <div>
+              <head>p 230 <supplied>(22 June) (Greenwich)</supplied></head>
+              <pb n="230" type="page" facs="#p230"/>
+              <ab>
+                <lb/> ...<lb/> Letters<note type="marginal" place="margin_left">22 June</note> of this tenor to the Lord Mayor of London, the
+                Justices of the Peace of the <note type="marginal" place="margin_left">Lord Keeper. Lord North.<lb/>Lord Treasurer, Master
+                Secretary.<lb/>Lord Admiral. Mr Comptroller.<lb/>Sir John Fortescue:</note> counties of
+                Middlesex and Surrey. By occasion of the some complaints that of late have been made
+                unto us of the multitude of houses serving for common stage plays in and about the
+                city of London, and of the great abuses and disorders grown by the overmuch haunt
+                and resort of many licentious people unto those houses and places, we have entered
+                into consideration of some fit course to be taken for redress of the said disorders
+                by suppressing diverse of those houses and by some restraint of the immoderate use
+                of the plays. For which cause we have set down certain orders to be duly henceforth
+                observed and kept, a copy whereof we send you here enclosed, and have sent the like
+                to the Lord Mayor of London and to the Justices of the Peace of Middlesex. But, as
+                we have done our parts in prescribing the orders, so, unless you perform yours in
+                looking to the due execution of them, we shall lose our labour, and the want of
+                redress must be imputed unto you and others unto whom it appertains. And therefore
+                we do hereby authorize and require you to see the said orders to be put in
+                execution, and to be continued as you do wish the amendment of the aforesaid abuses,
+                and it will remove the blame thereof from yourselves. And so etc.
+                <lb/> ...<lb/>
+              </ab>
+            </div>
           </div>
         </body>
       </text>
@@ -7387,7 +7562,78 @@ brace --></cell>
               Greg and Chambers, 'Remembrancia,' pp 83–5. </p>
           </div>
           <div type="translation" subtype="modernization">
-            <p>This is a test of the modernization accordion</p>
+            <div>
+              <head>pp 514–15 <supplied>(31 December) (Whitehall)</supplied></head>
+              <pb n="514" type="page" facs="#p514"/>
+              <ab>
+                <lb/> Two letters of one tenor to the justices of Middlesex and Surrey.<lb/>
+                <lb/> It is in vain for us to take<note type="marginal" place="margin_left">Lord
+                  Keeper, Mr Comptroller<lb/>Lord Treasurer, Mr Secretary Cecil<lb/>Lord Admirall,
+                  Mr Secretary Herbert<lb/>Lord Shrewsbury<lb/>Lord Worcester.</note> knowledge of
+                great abuses and disorders complained of and to give order for redress if our
+                directions find no better execution and observation than it seems they do. And we
+                must need impute the fault and blame thereof to you or some of you, the justices of
+                the peace that are put in trust to see them executed and performed, whereof we may
+                give you a plain instance in the great abuse continued – or rather increased – in
+                the multitude of playhouses and stage plays in and about the city of London. For
+                whereas about a year and half since (upon knowledge taken of the great enormities
+                and disorders by the overmuch frequenting of plays) we did carefully set down and
+                prescribe an order to be observed concerning the number of playhouses, and the use
+                and exercise of the same (namely that there should be but two houses allowed for
+                that use, one in Middlesex called the Fortune, and the other in Surrey called the
+                Globe, and the same with observation of certain days and times as in the said order
+                is particularly expressed) in such sort as a moderate practice of them for honest
+                recreation might be continued and yet the inordinate concourse of dissolute and idle
+                people be restrained, we do now understand that our said order has been so far from
+                taking due effect, as instead of restraint and redress of the former disorders, the
+                multitude of playhouses is much increased, and that no day passes over without many
+                stage plays in one place or other within and about the city publicly made. The
+                default of performance of which our said order<note type="foot">The ... order: <hi
+                    rend="italic">made mention?</hi></note>, we must in great part the rather impute
+                to the justices of the peace, because at the same time we gave earnest direction
+                unto you to see it straightly executed, and to certify us of the execution, and yet
+                we have neither understood of any redress made by you, nor received any certificate
+                at all of your proceedings therein, which default or ommission we do now pray and
+                require you forthwith to amend, and to cause our said former order to be put duly
+                into execution, and especially to call before you the owners of all the other
+                playhouses (excepting the two houses in Middlesex and Surrey aforementioned), and to
+                take good and sufficient bonds of them, not to exercise, use, or practice, nor to
+                suffer from henceforth to be exercised, used, or practiced, any stage playing in
+                their houses, and if they shall refuse to enter into such bonds, then to commit them
+                to prison, until they shall conform themselves. And so etc.<lb/>
+                <lb/> A <note type="marginal" place="margin_left">Signed and dated as the
+                  former.</note> letter to the Lord Mayor and Aldermen of London. We have received a
+                letter from you, renewing a complaint of the great abuse and disorder within and
+                about the city of London, by reason of the multitude of playhouses and the
+                inordinate resort and concourse of dissolute and idle people daily unto public stage
+                plays, for the which information we do commend your Lordship, because it betokens
+                your care and desire to reform the disorders of the City. So we must let you know
+                that we did much rather expect to understand that our order (set down and prescribed
+                about a year and a half since for reformation of the said disorders upon the like
+                complaint at that time) had been duly executed, then to find the same disorders and
+                abuses so much increased as they are, the blame whereof, as we cannot but impute in
+                great part to the justices of the peace, or some of them in the counties of
+                Middlesex and Surrey, who had special direction and charge from us to see our said
+                order executed for the confines of the city wherein the most part of those
+                playhouses are situated. So we do wish that it might appear unto us that any thing
+                has been endeavoured by the precedessors of you, the Lord Mayor, and by you, the
+                Aldermen, for the redress of the said enormities, and for observation and execution
+                of our said order with the city. We do therefore once again renew hereby our
+                directions unto you (as we have done by our letters to the justices of Middlesex and
+                Surrey) concerning the observation of our former order, which we do pray and require
+                you to cause duly and diligently to be put in execution for all points thereof, and
+                especially for the express and straight prohibition of any more playhouses than
+                those two that are mentioned and allowed in the said order, charging and straightly
+                commanding all such persons as are the owners of the houses used for stage plays
+                within the city not to permit any more public plays to be used, exercised, or shown
+                from henceforth in their said houses, and to take take bonds of them (if you shall
+                find it needful) for the performance thereof, or if they shall refuse to enter into
+                bond or to observe our said order, then to commit them to prison until they shall
+                confirm themselves thereunto. And so praying you as yourself do make the complaint
+                and find the enormity, so to apply your best endeavours to the remedy of the abuse,
+                we bid etc.<lb/> ...<lb/>
+              </ab>
+            </div>
           </div>
         </body>
       </text>
@@ -7416,6 +7662,17 @@ brace --></cell>
                   plaies</rs>, till other direction bee given./</ab>
 
               <gap reason="omitted"/>
+            </div>
+          </div>
+          <div type="translation" subtype="modernization">
+            <div>
+              <head>f 86 <supplied>(19 March)</supplied></head>
+              <pb n="86" type="folio" facs="#f86"/>
+              <ab>
+                <lb/> ...<lb/> Letters to the lord mayor and justices of Middlesex and Surrey for
+                the restraint of stage plays, till other direction be given./<lb/> ...<lb/>
+                <lb/>
+              </ab>
             </div>
           </div>
         </body>
@@ -7599,6 +7856,17 @@ brace --></cell>
                   type="Collective_Office">Surrey</rs>./</ab>
 
               <gap reason="omitted"/>
+            </div>
+          </div>
+          <div type="translation" subtype="modernization">
+            <div>
+              <head>f 107 <supplied>(5 October)</supplied></head>
+              <pb n="107" type="folio" facs="#f107"/>
+              <ab>
+                <lb/> ...<lb/> A letter to the lord mayor to forbid stage plays and to take order
+                that the infected be kept in their houses, etc.<lb/> Like letters to the Justices of
+                the Peace of Middlesex and Surrey./<lb/> ...<lb/>
+              </ab>
             </div>
           </div>
         </body>
