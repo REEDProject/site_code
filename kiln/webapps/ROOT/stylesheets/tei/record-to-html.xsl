@@ -248,7 +248,9 @@
         <div class="accordion-content" data-tab-content="">
           <ul class="glossed-terms">
             <xsl:variable name="text-id" select="@xml:id" />
-            <xsl:apply-templates mode="group" select=".//tei:term[@ref][not(@ref = preceding::tei:term[@ref][ancestor::tei:text[1]/@xml:id=$text-id]/@ref)]" />
+            <xsl:apply-templates mode="group" select=".//tei:term[@ref][not(@ref = preceding::tei:term[@ref][ancestor::tei:text[1]/@xml:id=$text-id]/@ref)]">
+              <xsl:sort order="ascending" />
+            </xsl:apply-templates>
           </ul>
         </div>
       </li>
