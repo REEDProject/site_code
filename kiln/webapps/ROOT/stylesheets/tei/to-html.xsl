@@ -304,6 +304,7 @@
 
   <xsl:template match="tei:term[@ref]">
     <span class="term" note="{substring-after(@ref, '#')}">
+      <xsl:attribute name="title" select="normalize-space(id(substring-after(@ref, '#')))" />
       <xsl:apply-templates />
     </span>
   </xsl:template>
