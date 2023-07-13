@@ -249,7 +249,7 @@
           <ul class="glossed-terms">
             <xsl:variable name="text-id" select="@xml:id" />
             <xsl:apply-templates mode="group" select=".//tei:term[@ref][not(@ref = preceding::tei:term[@ref][ancestor::tei:text[1]/@xml:id=$text-id]/@ref)]">
-              <xsl:sort order="ascending" />
+              <xsl:sort order="ascending" select="id(substring-after(@ref, '#'))/ancestor::tei:entry[1]/tei:form/tei:orth" lang="en"/>
             </xsl:apply-templates>
           </ul>
         </div>
