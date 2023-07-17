@@ -24,6 +24,9 @@
           params="staff" />
     <item label="Yorkshire North Riding" match="ereed-collections-collection" params="yksnr" />
   </menu>
+  <menu label="Playhouse Timelines" match="ereed-timelines">
+    <item label="Rose Playhouse" match="ereed-timeline" params="rosep"/>
+  </menu>
   <menu label="How To" match="ereed-howto-section">
     <item label="Introduction to the Research Process"
           match="ereed-howto-intro" />
