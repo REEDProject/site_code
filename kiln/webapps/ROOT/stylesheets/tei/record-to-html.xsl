@@ -229,15 +229,20 @@
   </xsl:template>
 
   <xsl:template name="display-record-footnotes">
-    <xsl:if test=".//tei:note[@type='foot']">
+    <xsl:if test=".//tei:note[@type='foot' and not(ancestor::tei:div/@subtype='modernization')]">
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Footnotes</a>
         <div class="accordion-content" data-tab-content="">
           <ul class="footnotes">
-            <xsl:apply-templates mode="group" select=".//tei:note[@type='foot']" />
+            <xsl:apply-templates mode="group" select=".//tei:note[@type='foot' and not(ancestor::tei:div/@subtype='modernization')]" />
           </ul>
         </div>
       </li>
+    </xsl:if>
+    <xsl:if test=".//tei:note[@type='foot' and ancestor::tei:div/@subtype='modernization']">
+      <ul class="footnotes" style="display: none;">
+        <xsl:apply-templates mode="group" select=".//tei:note[@type='foot' and ancestor::tei:div/@subtype='modernization']" />
+      </ul>
     </xsl:if>
   </xsl:template>
 
