@@ -301,15 +301,20 @@
   </xsl:template>
 
   <xsl:template name="display-record-marginalia">
-    <xsl:if test=".//tei:note[@type='marginal']">
+    <xsl:if test=".//tei:note[@type='marginal' and not(ancestor::tei:div/@subtype='modernization')]">
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Marginalia</a>
         <div class="accordion-content" data-tab-content="">
           <ul class="marginalia-list">
-            <xsl:apply-templates mode="group" select=".//tei:note[@type='marginal']" />
+            <xsl:apply-templates mode="group" select=".//tei:note[@type='marginal' and not(ancestor::tei:div/@subtype='modernization')]" />
           </ul>
         </div>
       </li>
+    </xsl:if>
+    <xsl:if test=".//tei:note[@type='marginal' and ancestor::tei:div/@subtype='modernization']">
+      <ul class="marginalia-list" style="display: none;">
+        <xsl:apply-templates mode="group" select=".//tei:note[@type='marginal' and ancestor::tei:div/@subtype='modernization']" />
+      </ul>
     </xsl:if>
   </xsl:template>
 
