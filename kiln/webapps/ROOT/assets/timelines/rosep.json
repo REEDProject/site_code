@@ -2,6 +2,133 @@
     "rose-01-0002": {
         "title": "Thomasyn Symonds' Deed of the Little Rose Property to Eighteen Trustees",
         "description": "Thomasyn Symonds' Deed of the Little Rose Property to Eighteen Trustees",
+        "record_id": "rosep-ridm121523464",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Little Rose",
+                        "place_type": "property",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 0,
+                        "symbol_flag": 0,
+                        "notes": "",
+                        "pk": "1789"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09518111181154272,
+                                        51.50729114640018
+                                    ],
+                                    [
+                                        -0.09527705457884202,
+                                        51.50710164178863
+                                    ],
+                                    [
+                                        -0.09571376516431944,
+                                        51.50717782113812
+                                    ],
+                                    [
+                                        -0.09556918311597863,
+                                        51.50737521970403
+                                    ],
+                                    [
+                                        -0.09542326257786261,
+                                        51.507561947698086
+                                    ],
+                                    [
+                                        -0.09533047738879423,
+                                        51.50770598782339
+                                    ],
+                                    [
+                                        -0.09523952745786265,
+                                        51.50786407980604
+                                    ],
+                                    [
+                                        -0.09508947287280413,
+                                        51.507827700784425
+                                    ],
+                                    [
+                                        -0.0950171036952029,
+                                        51.50781015564692
+                                    ],
+                                    [
+                                        -0.09493893409581008,
+                                        51.507791060625316
+                                    ],
+                                    [
+                                        -0.09485678046812336,
+                                        51.50773339698863
+                                    ],
+                                    [
+                                        -0.09518111181154272,
+                                        51.50729114640018
+                                    ]
+                                ]
+                            ],
+                            [
+                                [
+                                    [
+                                        -0.0952799076281902,
+                                        51.50787370390168
+                                    ],
+                                    [
+                                        -0.09528973968898856,
+                                        51.50785337493322
+                                    ],
+                                    [
+                                        -0.09537530421978756,
+                                        51.50787260635343
+                                    ],
+                                    [
+                                        -0.09522382760162372,
+                                        51.50812015061804
+                                    ],
+                                    [
+                                        -0.09518779437895071,
+                                        51.50811108736669
+                                    ],
+                                    [
+                                        -0.09518698409856882,
+                                        51.50811088384885
+                                    ],
+                                    [
+                                        -0.09514418296853021,
+                                        51.50810011809048
+                                    ],
+                                    [
+                                        -0.09526400744766532,
+                                        51.50790022900129
+                                    ],
+                                    [
+                                        -0.0952799076281902,
+                                        51.50787370390168
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": 357815.0,
+        "category": "Deeds & Leases",
+        "time_period": "Early Days: 1530-1590",
         "date": {
             "from": null,
             "to": null,
@@ -10,13 +137,19 @@
             "sort": "1552-12-03",
             "display": "1552-12-03"
         },
-        "record_id": "rosep-ridm121523464",
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/357815/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm121523464/"
+    },
+    "rose-01-0003": {
+        "title": "Lease of the Little Rose from Ambrose Nicholas et al to William Griffen ",
+        "description": "Lease of the Little Rose from Ambrose Nicholas et al to William Griffen ",
+        "record_id": "rosep-ridm124316664",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -134,13 +267,9 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/357815/",
+        "ereed_id": 354385.0,
         "category": "Deeds & Leases",
-        "time_period": "Early Days: 1550-1590"
-    },
-    "rose-01-0003": {
-        "title": "Lease of the Little Rose from Ambrose Nicholas et al to William Griffen ",
-        "description": "Lease of the Little Rose from Ambrose Nicholas et al to William Griffen ",
+        "time_period": "Early Days: 1530-1590",
         "date": {
             "from": null,
             "to": null,
@@ -149,13 +278,19 @@
             "sort": "1574-11-20",
             "display": "1574-11-20"
         },
-        "record_id": "rosep-ridm124316664",
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/354385/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm124316664/"
+    },
+    "rose-01-0004": {
+        "title": "Assignment by William Griffen of the Lease of the Little Rose to Robert Withens",
+        "description": "Assignment by William Griffen of the Lease of the Little Rose to Robert Withens",
+        "record_id": "rosep-ridm124024952",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -273,13 +408,9 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/354385/",
+        "ereed_id": 357928.0,
         "category": "Deeds & Leases",
-        "time_period": "Early Days: 1550-1590"
-    },
-    "rose-01-0004": {
-        "title": "Assignment by William Griffen of the Lease of the Little Rose to Robert Withens",
-        "description": "Assignment by William Griffen of the Lease of the Little Rose to Robert Withens",
+        "time_period": "Early Days: 1530-1590",
         "date": {
             "from": null,
             "to": null,
@@ -288,152 +419,19 @@
             "sort": "1579-12-11",
             "display": "1579-12-11"
         },
-        "record_id": "rosep-ridm124024952",
-        "regions": {
-            "type": "FeatureCollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "EPSG:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Little Rose",
-                        "place_type": "property",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 0,
-                        "symbol_flag": 0,
-                        "notes": "",
-                        "pk": "1789"
-                    },
-                    "geometry": {
-                        "type": "MultiPolygon",
-                        "coordinates": [
-                            [
-                                [
-                                    [
-                                        -0.09518111181154272,
-                                        51.50729114640018
-                                    ],
-                                    [
-                                        -0.09527705457884202,
-                                        51.50710164178863
-                                    ],
-                                    [
-                                        -0.09571376516431944,
-                                        51.50717782113812
-                                    ],
-                                    [
-                                        -0.09556918311597863,
-                                        51.50737521970403
-                                    ],
-                                    [
-                                        -0.09542326257786261,
-                                        51.507561947698086
-                                    ],
-                                    [
-                                        -0.09533047738879423,
-                                        51.50770598782339
-                                    ],
-                                    [
-                                        -0.09523952745786265,
-                                        51.50786407980604
-                                    ],
-                                    [
-                                        -0.09508947287280413,
-                                        51.507827700784425
-                                    ],
-                                    [
-                                        -0.0950171036952029,
-                                        51.50781015564692
-                                    ],
-                                    [
-                                        -0.09493893409581008,
-                                        51.507791060625316
-                                    ],
-                                    [
-                                        -0.09485678046812336,
-                                        51.50773339698863
-                                    ],
-                                    [
-                                        -0.09518111181154272,
-                                        51.50729114640018
-                                    ]
-                                ]
-                            ],
-                            [
-                                [
-                                    [
-                                        -0.0952799076281902,
-                                        51.50787370390168
-                                    ],
-                                    [
-                                        -0.09528973968898856,
-                                        51.50785337493322
-                                    ],
-                                    [
-                                        -0.09537530421978756,
-                                        51.50787260635343
-                                    ],
-                                    [
-                                        -0.09522382760162372,
-                                        51.50812015061804
-                                    ],
-                                    [
-                                        -0.09518779437895071,
-                                        51.50811108736669
-                                    ],
-                                    [
-                                        -0.09518698409856882,
-                                        51.50811088384885
-                                    ],
-                                    [
-                                        -0.09514418296853021,
-                                        51.50810011809048
-                                    ],
-                                    [
-                                        -0.09526400744766532,
-                                        51.50790022900129
-                                    ],
-                                    [
-                                        -0.0952799076281902,
-                                        51.50787370390168
-                                    ]
-                                ]
-                            ]
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": null,
         "ereed_url": "https://ereeddev.library.utoronto.ca/entities/357928/",
-        "category": "Deeds & Leases",
-        "time_period": "Early Days: 1550-1590"
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm124024952/"
     },
     "rose-01-0005": {
         "title": "Withens' Assignment of the Little Rose Lease to Henslowe ",
         "description": "Withens' Assignment of the Little Rose Lease to Henslowe ",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1585-03-24",
-            "sort": "1585-03-24",
-            "display": "1584/5-03-24"
-        },
         "record_id": "rosep-ridm90656952",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -553,28 +551,30 @@
         "emlot_id": [
             "464"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/357982/",
+        "ereed_id": 357982.0,
         "category": "Deeds & Leases",
-        "time_period": "Early Days: 1550-1590"
-    },
-    "rose-01-0006": {
-        "title": "Deed of Partnership in the Rose between Henslowe and Cholmley",
-        "description": "Deed of Partnership in the Rose between Henslowe and Cholmley",
+        "time_period": "Early Days: 1530-1590",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1587-01-10",
-            "sort": "1587-01-10",
-            "display": "1586/7-01-10"
+            "when": "1585-03-24",
+            "sort": "1585-03-24",
+            "display": "1584/5-03-24"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/357982/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm90656952/"
+    },
+    "rose-01-0006": {
+        "title": "Deed of Partnership in the Rose between Henslowe and Cholmley",
+        "description": "Deed of Partnership in the Rose between Henslowe and Cholmley",
         "record_id": "rosep-ridm90584488",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -604,28 +604,30 @@
         "emlot_id": [
             "2668"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/354469/",
+        "ereed_id": 354469.0,
         "category": "Deeds & Leases",
-        "time_period": "Early Days: 1550-1590"
-    },
-    "rose-01-0007": {
-        "title": "Rose playhouse built",
-        "description": "Rose playhouse built",
+        "time_period": "Early Days: 1530-1590",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1587",
-            "sort": "1587",
-            "display": "1587"
+            "when": "1587-01-10",
+            "sort": "1587-01-10",
+            "display": "1586/7-01-10"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/354469/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm90584488/"
+    },
+    "rose-01-0007": {
+        "title": "Rose playhouse built",
+        "description": "Rose playhouse built",
         "record_id": null,
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -653,28 +655,30 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/354333/",
+        "ereed_id": 354333.0,
         "category": "Building Works",
-        "time_period": "Early Days: 1550-1590"
-    },
-    "rose-01-0008": {
-        "title": "Privy Council Letter restraining Plays",
-        "description": "Privy Council letter to the Lord Mayor against playing in London and suburbs",
+        "time_period": "Early Days: 1530-1590",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1587-05-07",
-            "sort": "1587-05-07",
-            "display": "1587-05-07"
+            "when": "1587",
+            "sort": "1587",
+            "display": "1587"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/354333/",
+        "record_url": null
+    },
+    "rose-01-0008": {
+        "title": "Privy Council Letter restraining Plays",
+        "description": "Privy Council letter to the Lord Mayor against playing in London and suburbs",
         "record_id": "rosep-ridm92788552",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -788,28 +792,30 @@
         "emlot_id": [
             "8003"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/351957/",
+        "ereed_id": 351957.0,
         "category": "Regulation",
-        "time_period": "Early Days: 1550-1590"
-    },
-    "rose-01-0009": {
-        "title": "Privy Council Letter to the JPs of Surrey",
-        "description": "PC letter regarding restraint of plays in the Clink ",
+        "time_period": "Early Days: 1530-1590",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1587-10-29",
-            "sort": "1587-10-29",
-            "display": "1587-10-29"
+            "when": "1587-05-07",
+            "sort": "1587-05-07",
+            "display": "1587-05-07"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/351957/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm92788552/"
+    },
+    "rose-01-0009": {
+        "title": "Privy Council Letter to the JPs of Surrey",
+        "description": "PC letter regarding restraint of plays in the Clink ",
         "record_id": "rosep-ridm92853384",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -1415,13 +1421,115 @@
         "emlot_id": [
             "232"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/352152/",
+        "ereed_id": 352152.0,
         "category": "Regulation",
-        "time_period": "Early Days: 1550-1590"
+        "time_period": "Early Days: 1530-1590",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1587-10-29",
+            "sort": "1587-10-29",
+            "display": "1587-10-29"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/352152/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm92853384/"
     },
     "rose-01-0010": {
         "title": "Surrey and Kent Commissioners for Sewers' Court",
         "description": "Henslowe to clean the sewer area around the new playhouse",
+        "record_id": "rosep-ridm90830136",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Sewer around Rose Playhouse",
+                        "place_type": "other site",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 0,
+                        "symbol_flag": 0,
+                        "notes": "Buffer drawn around sewer around Rose playhouse for highlighting in Playhouse Timeline - edited to remove interior lines 20220422 by BM",
+                        "pk": "1804"
+                    },
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    -0.09556844822839099,
+                                    51.50740341995145
+                                ],
+                                [
+                                    -0.09570851916180298,
+                                    51.50721421601341
+                                ],
+                                [
+                                    -0.095702558720063,
+                                    51.50719937646063
+                                ],
+                                [
+                                    -0.09539708488375699,
+                                    51.50714094560133
+                                ],
+                                [
+                                    -0.09538516391842199,
+                                    51.50716413248431
+                                ],
+                                [
+                                    -0.09566530578524599,
+                                    51.50721607096351
+                                ],
+                                [
+                                    -0.09553417557583499,
+                                    51.50739229032082
+                                ],
+                                [
+                                    -0.09556844822839099,
+                                    51.50740341995145
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536199,
+                            51.50729173227135
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": [
+            "401"
+        ],
+        "ereed_id": 352187.0,
+        "category": "Regulation",
+        "time_period": "Early Days: 1530-1590",
         "date": {
             "from": null,
             "to": null,
@@ -1430,13 +1538,19 @@
             "sort": "1588-04-12",
             "display": "1588-04-12"
         },
-        "record_id": "rosep-ridm90830136",
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/352187/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm90830136/"
+    },
+    "rose-01-0011": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court",
+        "description": "Henslowe to clean the sewer",
+        "record_id": "rosep-ridm90811976",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -1519,13 +1633,9 @@
         "emlot_id": [
             "401"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/352187/",
+        "ereed_id": 358027.0,
         "category": "Regulation",
-        "time_period": "Early Days: 1550-1590"
-    },
-    "rose-01-0011": {
-        "title": "Surrey and Kent Commissioners for Sewers' Court",
-        "description": "Henslowe to clean the sewer",
+        "time_period": "Early Days: 1530-1590",
         "date": {
             "from": null,
             "to": null,
@@ -1534,117 +1644,19 @@
             "sort": "1589-03-05",
             "display": "1588/9-03-05"
         },
-        "record_id": "rosep-ridm90811976",
-        "regions": {
-            "type": "FeatureCollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "EPSG:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Sewer around Rose Playhouse",
-                        "place_type": "other site",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 0,
-                        "symbol_flag": 0,
-                        "notes": "Buffer drawn around sewer around Rose playhouse for highlighting in Playhouse Timeline - edited to remove interior lines 20220422 by BM",
-                        "pk": "1804"
-                    },
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [
-                            [
-                                [
-                                    -0.09556844822839099,
-                                    51.50740341995145
-                                ],
-                                [
-                                    -0.09570851916180298,
-                                    51.50721421601341
-                                ],
-                                [
-                                    -0.095702558720063,
-                                    51.50719937646063
-                                ],
-                                [
-                                    -0.09539708488375699,
-                                    51.50714094560133
-                                ],
-                                [
-                                    -0.09538516391842199,
-                                    51.50716413248431
-                                ],
-                                [
-                                    -0.09566530578524599,
-                                    51.50721607096351
-                                ],
-                                [
-                                    -0.09553417557583499,
-                                    51.50739229032082
-                                ],
-                                [
-                                    -0.09556844822839099,
-                                    51.50740341995145
-                                ]
-                            ]
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Rose Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 1,
-                        "symbol_flag": 1,
-                        "notes": "",
-                        "pk": "566"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09543165564536199,
-                            51.50729173227135
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": [
-            "401"
-        ],
         "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358027/",
-        "category": "Regulation",
-        "time_period": "Early Days: 1550-1590"
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm90811976/"
     },
     "rose-01-0012": {
         "title": "Privy Council Letters regarding Censorship of Plays",
         "description": "Privy Council Letters regarding Censorship of Plays",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1589-11-12",
-            "sort": "1589-11-12",
-            "display": "1589-11-12"
-        },
         "record_id": "rosep-ridm94970728",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -1758,28 +1770,30 @@
         "emlot_id": [
             "209"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358076/",
+        "ereed_id": 358076.0,
         "category": "Regulation",
-        "time_period": "Early Days: 1550-1590"
-    },
-    "rose-01-0013": {
-        "title": "Surrey and Kent Commissioners for Sewers' Court",
-        "description": "Henslowe to clean the sewer",
+        "time_period": "Early Days: 1530-1590",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1599-04-24",
-            "sort": "1599-04-24",
-            "display": "1590-04-24"
+            "when": "1589-11-12",
+            "sort": "1589-11-12",
+            "display": "1589-11-12"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358076/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm94970728/"
+    },
+    "rose-01-0013": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court",
+        "description": "Henslowe to clean the sewer",
         "record_id": "rosep-ridm90800648",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -1862,28 +1876,30 @@
         "emlot_id": [
             "401"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358141/",
+        "ereed_id": 358141.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
+        "time_period": "Active Period: 1591-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1599-04-24",
+            "sort": "1599-04-24",
+            "display": "1590-04-24"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358141/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm90800648/"
     },
     "rose-01-0014": {
         "title": "Petition to the Privy Council by Strange's Men",
         "description": "Strange's Men petition to re-open the Rose for Strange's Men",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": "low",
-            "when": "1590",
-            "sort": "1590",
-            "display": "c 1590"
-        },
         "record_id": "rosep-ridm90916024",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -1913,13 +1929,9 @@
         "emlot_id": [
             "7555"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/352746/",
+        "ereed_id": 352746.0,
         "category": "Regulation",
-        "time_period": "Early Days: 1550-1590"
-    },
-    "rose-01-0015": {
-        "title": "Petition to the Privy Council by the Watermen ",
-        "description": "Watermen petition to re-open the Rose for Strange's Men",
+        "time_period": "Early Days: 1530-1590",
         "date": {
             "from": null,
             "to": null,
@@ -1928,13 +1940,19 @@
             "sort": "1590",
             "display": "c 1590"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/352746/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm90916024/"
+    },
+    "rose-01-0015": {
+        "title": "Petition to the Privy Council by the Watermen ",
+        "description": "Watermen petition to re-open the Rose for Strange's Men",
         "record_id": "rosep-ridm90877112",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -1964,13 +1982,9 @@
         "emlot_id": [
             "7556"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/352611/",
+        "ereed_id": 352611.0,
         "category": "Regulation",
-        "time_period": "Early Days: 1550-1590"
-    },
-    "rose-01-0016": {
-        "title": "Warrant from the Privy Council ",
-        "description": "PC warrant to re-open the Rose for Strange's Men",
+        "time_period": "Early Days: 1530-1590",
         "date": {
             "from": null,
             "to": null,
@@ -1979,13 +1993,19 @@
             "sort": "1590",
             "display": "c 1590"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/352611/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm90877112/"
+    },
+    "rose-01-0016": {
+        "title": "Warrant from the Privy Council ",
+        "description": "PC warrant to re-open the Rose for Strange's Men",
         "record_id": "rosep-ridm90700072",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -2015,28 +2035,30 @@
         "emlot_id": [
             "477"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358194/",
+        "ereed_id": 358194.0,
         "category": "Regulation",
-        "time_period": "Early Days: 1550-1590"
+        "time_period": "Early Days: 1530-1590",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": "low",
+            "when": "1590",
+            "sort": "1590",
+            "display": "c 1590"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358194/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm90700072/"
     },
     "rose-01-0017": {
         "title": "Privy Council Letter to the Lord Mayor and JPs of Middlesex and Surrey",
         "description": "PC letter regarding restraint of plays on Sundays",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1591-07-25",
-            "sort": "1591-07-25",
-            "display": "1591-07-25"
-        },
         "record_id": "rosep-ridm91625448",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -2171,13 +2193,60 @@
         "emlot_id": [
             "230"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358239/",
+        "ereed_id": 358239.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
+        "time_period": "Active Period: 1591-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1591-07-25",
+            "sort": "1591-07-25",
+            "display": "1591-07-25"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358239/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm91625448/"
     },
     "rose-01-0018": {
         "title": "Rose playhouse renovated",
         "description": "Rose playhouse renovated",
+        "record_id": null,
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536199,
+                            51.50729173227135
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": 358308.0,
+        "category": "Building Works",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
@@ -2186,13 +2255,19 @@
             "sort": "1592",
             "display": "1591/2"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358308/",
+        "record_url": null
+    },
+    "rose-01-0019": {
+        "title": "Strange's men at the Rose ",
+        "description": "Strange's men at the Rose ",
         "record_id": null,
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -2220,13 +2295,9 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358308/",
-        "category": "Building Works",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0019": {
-        "title": "Strange's men at the Rose ",
-        "description": "Strange's men at the Rose ",
+        "ereed_id": 358712.0,
+        "category": "Performance",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": "1592-02-19",
             "to": "1592-06-22",
@@ -2235,62 +2306,19 @@
             "sort": "1592-02-19",
             "display": "1591/2-02-19\u20141591/2-06-22"
         },
-        "record_id": null,
-        "regions": {
-            "type": "FeatureCollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "EPSG:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Rose Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 1,
-                        "symbol_flag": 1,
-                        "notes": "",
-                        "pk": "566"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09543165564536199,
-                            51.50729173227135
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": null,
         "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358712/",
-        "category": "Performance",
-        "time_period": "Active Period: 1591-1600"
+        "record_url": null
     },
     "rose-01-0020": {
         "title": "Letter from the Lord Mayor to Lord Burghley",
         "description": "Lord Mayor's letter  regarding feltmakers' riot in Southwark",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1592-06-12",
-            "sort": "1592-06-12",
-            "display": "1592-06-12"
-        },
         "record_id": "rosep-ridm93270024",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -3551,28 +3579,30 @@
         "emlot_id": [
             "1857"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360390/",
+        "ereed_id": 360390.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0021": {
-        "title": "Privy Council Letter to the Master of the Rolls et al",
-        "description": "PC letter regarding feltmakers' riot in Southwark",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1592-06-23",
-            "sort": "1592-06-23",
-            "display": "1592-06-23"
+            "when": "1592-06-12",
+            "sort": "1592-06-12",
+            "display": "1592-06-12"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360390/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm93270024/"
+    },
+    "rose-01-0021": {
+        "title": "Privy Council Letter to the Master of the Rolls et al",
+        "description": "PC letter regarding feltmakers' riot in Southwark",
         "record_id": "rosep-ridm92855896",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -4917,28 +4947,30 @@
         "emlot_id": [
             "228"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358353/",
+        "ereed_id": 358353.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
+        "time_period": "Active Period: 1591-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1592-06-23",
+            "sort": "1592-06-23",
+            "display": "1592-06-23"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358353/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm92855896/"
     },
     "rose-01-0022": {
         "title": "Strange's men at the Rose ",
         "description": "Strange's men at the Rose ",
-        "date": {
-            "from": "1592-12-29",
-            "to": "1593-02-01",
-            "precision": null,
-            "when": null,
-            "sort": "1592-12-29",
-            "display": "1592-12-29\u20141592/3-02-01"
-        },
         "record_id": null,
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -4966,28 +4998,30 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358754/",
+        "ereed_id": 358754.0,
         "category": "Performance",
-        "time_period": "Active Period: 1591-1600"
+        "time_period": "Active Period: 1591-1600",
+        "date": {
+            "from": "1592-12-29",
+            "to": "1593-02-01",
+            "precision": null,
+            "when": null,
+            "sort": "1592-12-29",
+            "display": "1592-12-29\u20141592/3-02-01"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358754/",
+        "record_url": null
     },
     "rose-01-0023": {
         "title": "Privy Council Order regarding Plague ",
         "description": "Privy Council Order regarding Plague ",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1593-01-28",
-            "sort": "1593-01-28",
-            "display": "1592/3-01-28"
-        },
         "record_id": "rosep-ridm92826968",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -5122,28 +5156,30 @@
         "emlot_id": [
             "7761"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358426/",
+        "ereed_id": 358426.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0024": {
-        "title": "Articles regarding the Plague for the Privy Council",
-        "description": "Articles regarding the Plague for the Privy Council",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1593",
-            "sort": "1593",
-            "display": "1593"
+            "when": "1593-01-28",
+            "sort": "1593-01-28",
+            "display": "1592/3-01-28"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358426/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm92826968/"
+    },
+    "rose-01-0024": {
+        "title": "Articles regarding the Plague for the Privy Council",
+        "description": "Articles regarding the Plague for the Privy Council",
         "record_id": "rosep-ridm90590584",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -5257,28 +5293,30 @@
         "emlot_id": [
             "1858"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358491/",
+        "ereed_id": 358491.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
+        "time_period": "Active Period: 1591-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1593",
+            "sort": "1593",
+            "display": "1593"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358491/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm90590584/"
     },
     "rose-01-0025": {
         "title": "Sussex's men at the Rose",
         "description": "Sussex's men at the Rose",
-        "date": {
-            "from": "1593-12-27",
-            "to": "1594-02-06",
-            "precision": null,
-            "when": null,
-            "sort": "1593-12-27",
-            "display": "1593-12-27\u20141593/4-02-06"
-        },
         "record_id": null,
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -5306,28 +5344,30 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358796/",
+        "ereed_id": 358796.0,
         "category": "Performance",
-        "time_period": "Active Period: 1591-1600"
+        "time_period": "Active Period: 1591-1600",
+        "date": {
+            "from": "1593-12-27",
+            "to": "1594-02-06",
+            "precision": null,
+            "when": null,
+            "sort": "1593-12-27",
+            "display": "1593-12-27\u20141593/4-02-06"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358796/",
+        "record_url": null
     },
     "rose-01-0026": {
         "title": "Privy Council Letter to the Lord Mayor re renewed plague closure",
         "description": "Privy Council Letter to the Lord Mayor re renewed plague closure",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1594-02-03",
-            "sort": "1594-02-03",
-            "display": "1593/4-02-03"
-        },
         "record_id": "rosep-ridm93271400",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -5441,13 +5481,60 @@
         "emlot_id": [
             "1813"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358548/",
+        "ereed_id": 358548.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
+        "time_period": "Active Period: 1591-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1594-02-03",
+            "sort": "1594-02-03",
+            "display": "1593/4-02-03"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358548/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm93271400/"
     },
     "rose-01-0027": {
         "title": "Sussex's and Queen's men at the Rose",
         "description": "Sussex's and Queen's men at the Rose",
+        "record_id": null,
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536199,
+                            51.50729173227135
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": 358838.0,
+        "category": "Performance",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": "1594-04-01",
             "to": "1594-04-08",
@@ -5456,13 +5543,19 @@
             "sort": "1594-04-01",
             "display": "1594-04-01\u20141594-04-08"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358838/",
+        "record_url": null
+    },
+    "rose-01-0028": {
+        "title": "Admiral's men at the Rose",
+        "description": "Admiral's men at the Rose",
         "record_id": null,
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -5490,13 +5583,9 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358838/",
+        "ereed_id": 358884.0,
         "category": "Performance",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0028": {
-        "title": "Admiral's men at the Rose",
-        "description": "Admiral's men at the Rose",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": "1594-05-14",
             "to": "1594-05-15",
@@ -5505,13 +5594,19 @@
             "sort": "1594-05-14",
             "display": "1594-05-14\u20141594-05-15"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358884/",
+        "record_url": null
+    },
+    "rose-01-0029": {
+        "title": "Admiral's men at the Rose",
+        "description": "Admiral's men at the Rose",
         "record_id": null,
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -5539,13 +5634,9 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358884/",
+        "ereed_id": 358926.0,
         "category": "Performance",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0029": {
-        "title": "Admiral's men at the Rose",
-        "description": "Admiral's men at the Rose",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": "1594-06-15",
             "to": "1596-02-27",
@@ -5554,13 +5645,19 @@
             "sort": "1594-06-15",
             "display": "1594-06-15\u20141595/6-02-27"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358926/",
+        "record_url": null
+    },
+    "rose-01-0030": {
+        "title": "Rose Playhouse Repairs",
+        "description": "Rose Playhouse Repairs",
         "record_id": null,
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -5588,13 +5685,9 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358926/",
-        "category": "Performance",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0030": {
-        "title": "Rose Playhouse Repairs",
-        "description": "Rose Playhouse Repairs",
+        "ereed_id": 358605.0,
+        "category": "Building Works",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": "1595-03-05",
             "to": "1595-04-05",
@@ -5603,62 +5696,19 @@
             "sort": "1595-03-05",
             "display": "1595-03-05\u20141595-04-05"
         },
-        "record_id": null,
-        "regions": {
-            "type": "FeatureCollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "EPSG:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Rose Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 1,
-                        "symbol_flag": 1,
-                        "notes": "",
-                        "pk": "566"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09543165564536199,
-                            51.50729173227135
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": null,
         "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358605/",
-        "category": "Building Works",
-        "time_period": "Active Period: 1591-1600"
+        "record_url": null
     },
     "rose-01-0031": {
         "title": "Letter from the Lord Mayor to the Privy Council",
         "description": "Lord Mayor's letter regarding the suppression of playhouses",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1595-09-13",
-            "sort": "1595-09-13",
-            "display": "1595-09-13"
-        },
         "record_id": "rosep-ridm93277208",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -5751,28 +5801,30 @@
         "emlot_id": [
             "1810"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360424/",
+        "ereed_id": 360424.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
+        "time_period": "Active Period: 1591-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1595-09-13",
+            "sort": "1595-09-13",
+            "display": "1595-09-13"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360424/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm93277208/"
     },
     "rose-01-0032": {
         "title": "Admiral's men at the Rose",
         "description": "Admiral's men at the Rose",
-        "date": {
-            "from": "1596-04-12",
-            "to": "1596-07-18",
-            "precision": null,
-            "when": null,
-            "sort": "1596-04-12",
-            "display": "1596-04-12\u20141596-07-18"
-        },
         "record_id": null,
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -5800,28 +5852,30 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358968/",
+        "ereed_id": 358968.0,
         "category": "Performance",
-        "time_period": "Active Period: 1591-1600"
+        "time_period": "Active Period: 1591-1600",
+        "date": {
+            "from": "1596-04-12",
+            "to": "1596-07-18",
+            "precision": null,
+            "when": null,
+            "sort": "1596-04-12",
+            "display": "1596-04-12\u20141596-07-18"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358968/",
+        "record_url": null
     },
     "rose-01-0033": {
         "title": "Privy Council Letter to the JPs of Middlesex and Surrey re plague closure",
         "description": "Privy Council Letter to the JPs of Middlesex and Surrey re plague closure",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1596-07-22",
-            "sort": "1596-07-22",
-            "display": "1596-07-22"
-        },
         "record_id": "rosep-ridm92864504",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -5935,13 +5989,60 @@
         "emlot_id": [
             "8004"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358647/",
+        "ereed_id": 358647.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
+        "time_period": "Active Period: 1591-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1596-07-22",
+            "sort": "1596-07-22",
+            "display": "1596-07-22"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/358647/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm92864504/"
     },
     "rose-01-0034": {
         "title": "Admiral's men at the Rose",
         "description": "Admiral's men at the Rose",
+        "record_id": null,
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536199,
+                            51.50729173227135
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": 359010.0,
+        "category": "Performance",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": "1596-10-27",
             "to": "1597-07-28",
@@ -5950,16 +6051,75 @@
             "sort": "1596-10-27",
             "display": "1596-10-27\u20141597-07-28"
         },
-        "record_id": null,
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359010/",
+        "record_url": null
+    },
+    "rose-01-0035": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court",
+        "description": "Henslowe to do repairs by the playhouse ",
+        "record_id": "rosep-ridm96753192",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Sewer around Rose Playhouse",
+                        "place_type": "other site",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 0,
+                        "symbol_flag": 0,
+                        "notes": "Buffer drawn around sewer around Rose playhouse for highlighting in Playhouse Timeline - edited to remove interior lines 20220422 by BM",
+                        "pk": "1804"
+                    },
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    -0.09556844822839099,
+                                    51.50740341995145
+                                ],
+                                [
+                                    -0.09570851916180298,
+                                    51.50721421601341
+                                ],
+                                [
+                                    -0.095702558720063,
+                                    51.50719937646063
+                                ],
+                                [
+                                    -0.09539708488375699,
+                                    51.50714094560133
+                                ],
+                                [
+                                    -0.09538516391842199,
+                                    51.50716413248431
+                                ],
+                                [
+                                    -0.09566530578524599,
+                                    51.50721607096351
+                                ],
+                                [
+                                    -0.09553417557583499,
+                                    51.50739229032082
+                                ],
+                                [
+                                    -0.09556844822839099,
+                                    51.50740341995145
+                                ]
+                            ]
+                        ]
+                    }
+                },
                 {
                     "type": "Feature",
                     "properties": {
@@ -5980,101 +6140,13 @@
                             51.50729173227135
                         ]
                     }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Theatre Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 58,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1614"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.07982475069439195,
-                            51.52456411521701
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Curtain Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 58,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1606"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.08040249318621442,
-                            51.52301641814104
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Bankside",
-                        "place_type": "street",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 0,
-                        "symbol_flag": 0,
-                        "notes": "Marker representing approximate centre point of street",
-                        "pk": "1659"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.095393276813683,
-                            51.5082015397644
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Swan Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "572"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.10241396289867402,
-                            51.50763416993978
-                        ]
-                    }
                 }
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359010/",
-        "category": "Performance",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0035": {
-        "title": "Surrey and Kent Commissioners for Sewers' Court",
-        "description": "Henslowe to do repairs by the playhouse ",
+        "ereed_id": 359190.0,
+        "category": "Regulation",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
@@ -6083,13 +6155,19 @@
             "sort": "1596-12-10",
             "display": "1596-12-10"
         },
-        "record_id": "rosep-ridm96753192",
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359190/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96753192/"
+    },
+    "rose-01-0036": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court",
+        "description": "Henslowe to clean and repair the sewer",
+        "record_id": "rosep-ridm96739160",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -6170,13 +6248,9 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359190/",
+        "ereed_id": 359235.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0036": {
-        "title": "Surrey and Kent Commissioners for Sewers' Court",
-        "description": "Henslowe to clean and repair the sewer",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
@@ -6185,13 +6259,19 @@
             "sort": "1597-03-04",
             "display": "1596/7-03-04"
         },
-        "record_id": "rosep-ridm96739160",
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359235/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96739160/"
+    },
+    "rose-01-0037": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court",
+        "description": "Henslowe to repair the sewer",
+        "record_id": "rosep-ridm96718440",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -6272,13 +6352,9 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359235/",
+        "ereed_id": 359280.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0037": {
-        "title": "Surrey and Kent Commissioners for Sewers' Court",
-        "description": "Henslowe to repair the sewer",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
@@ -6287,13 +6363,19 @@
             "sort": "1597-07-01",
             "display": "1597-07-01"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359280/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96718440/"
+    },
+    "rose-01-0038": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court",
+        "description": "Henslowe to repair the sewer",
         "record_id": "rosep-ridm96718440",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -6374,13 +6456,9 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359280/",
+        "ereed_id": 359325.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0038": {
-        "title": "Surrey and Kent Commissioners for Sewers' Court",
-        "description": "Henslowe to repair the sewer",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
@@ -6389,115 +6467,19 @@
             "sort": "1597-07-29",
             "display": "1597-07-29"
         },
-        "record_id": "rosep-ridm96718440",
-        "regions": {
-            "type": "FeatureCollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "EPSG:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Sewer around Rose Playhouse",
-                        "place_type": "other site",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 0,
-                        "symbol_flag": 0,
-                        "notes": "Buffer drawn around sewer around Rose playhouse for highlighting in Playhouse Timeline - edited to remove interior lines 20220422 by BM",
-                        "pk": "1804"
-                    },
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [
-                            [
-                                [
-                                    -0.09556844822839099,
-                                    51.50740341995145
-                                ],
-                                [
-                                    -0.09570851916180298,
-                                    51.50721421601341
-                                ],
-                                [
-                                    -0.095702558720063,
-                                    51.50719937646063
-                                ],
-                                [
-                                    -0.09539708488375699,
-                                    51.50714094560133
-                                ],
-                                [
-                                    -0.09538516391842199,
-                                    51.50716413248431
-                                ],
-                                [
-                                    -0.09566530578524599,
-                                    51.50721607096351
-                                ],
-                                [
-                                    -0.09553417557583499,
-                                    51.50739229032082
-                                ],
-                                [
-                                    -0.09556844822839099,
-                                    51.50740341995145
-                                ]
-                            ]
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Rose Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 1,
-                        "symbol_flag": 1,
-                        "notes": "",
-                        "pk": "566"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09543165564536199,
-                            51.50729173227135
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": null,
         "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359325/",
-        "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96718440/"
     },
     "rose-01-0039": {
         "title": "Letter from the Lord Mayor to the Privy Council",
         "description": "Mayor's letter against plays",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1597-07-28",
-            "sort": "1597-07-28",
-            "display": "1597-07-28"
-        },
         "record_id": "rosep-ridm95040408",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -6590,13 +6572,9 @@
         "emlot_id": [
             "490"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359666/",
+        "ereed_id": 359666.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0040": {
-        "title": "Privy Council Letter to the JPs of Middlesex  re disorder in playhouses",
-        "description": "Privy Council Letter to the JPs of Middlesex  re disorder in playhouses",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
@@ -6605,13 +6583,19 @@
             "sort": "1597-07-28",
             "display": "1597-07-28"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359666/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm95040408/"
+    },
+    "rose-01-0040": {
+        "title": "Privy Council Letter to the JPs of Middlesex  re disorder in playhouses",
+        "description": "Privy Council Letter to the JPs of Middlesex  re disorder in playhouses",
         "record_id": "rosep-ridm91627064",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -6725,13 +6709,60 @@
         "emlot_id": [
             "226"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359724/",
+        "ereed_id": 359724.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
+        "time_period": "Active Period: 1591-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1597-07-28",
+            "sort": "1597-07-28",
+            "display": "1597-07-28"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359724/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm91627064/"
     },
     "rose-01-0041": {
         "title": "Admiral's men resumed playing at the Rose",
         "description": "Admiral's men resumed playing at the Rose",
+        "record_id": null,
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536199,
+                            51.50729173227135
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": 359052.0,
+        "category": "Performance",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": "1597-10-21",
             "to": "1600-09-30",
@@ -6740,13 +6771,19 @@
             "sort": "1597-10-21",
             "display": "1597-10-21\u20141600-09-30"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359052/",
+        "record_url": null
+    },
+    "rose-01-0042": {
+        "title": "Pembroke's men performed with Admiral's men at the Rose",
+        "description": "Pembroke's men performed with Admiral's men at the Rose",
         "record_id": null,
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -6774,13 +6811,9 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359052/",
+        "ereed_id": 359094.0,
         "category": "Performance",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0042": {
-        "title": "Pembroke's men performed with Admiral's men at the Rose",
-        "description": "Pembroke's men performed with Admiral's men at the Rose",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": "1597-10-21",
             "to": "1598-03-04",
@@ -6789,62 +6822,19 @@
             "sort": "1597-10-21",
             "display": "1597-10-21\u20141597/8-03-04"
         },
-        "record_id": null,
-        "regions": {
-            "type": "FeatureCollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "EPSG:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Rose Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 1,
-                        "symbol_flag": 1,
-                        "notes": "",
-                        "pk": "566"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09543165564536199,
-                            51.50729173227135
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": null,
         "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359094/",
-        "category": "Performance",
-        "time_period": "Active Period: 1591-1600"
+        "record_url": null
     },
     "rose-01-0043": {
         "title": "Privy Council Letter to the Master of the Revels and the  JPs of Middlesex and Surrey ",
         "description": "PC letter regarding licensing of only two playing companies",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1598-02-19",
-            "sort": "1598-02-19",
-            "display": "1597/8-02-19"
-        },
         "record_id": "rosep-ridm96311064",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -6958,13 +6948,104 @@
         "emlot_id": [
             "3850"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359781/",
+        "ereed_id": 359781.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
+        "time_period": "Active Period: 1591-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1598-02-19",
+            "sort": "1598-02-19",
+            "display": "1597/8-02-19"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359781/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96311064/"
     },
     "rose-01-0044": {
         "title": "St Saviour's Vestry Minutes",
         "description": "Vestry Minutes regarding Bankside playhouse contributions to the poor",
+        "record_id": "rosep-ridm96581496",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "St Saviour's Church",
+                        "place_type": "church",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1554"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.08972035381071099,
+                            51.50607134365255
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536199,
+                            51.50729173227135
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Swan Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "572"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.10241396289867402,
+                            51.50763416993978
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": [
+            "639"
+        ],
+        "ereed_id": 360264.0,
+        "category": "Regulation",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
@@ -6973,13 +7054,19 @@
             "sort": "1598-04-20",
             "display": "1598-04-20"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360264/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96581496/"
+    },
+    "rose-01-0045": {
+        "title": "St Saviour's Vestry Minutes",
+        "description": "Vestry Minutes regarding Bankside playhouse contributions to the poor",
         "record_id": "rosep-ridm96581496",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -7051,13 +7138,9 @@
         "emlot_id": [
             "639"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360264/",
+        "ereed_id": 360309.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0045": {
-        "title": "St Saviour's Vestry Minutes",
-        "description": "Vestry Minutes regarding Bankside playhouse contributions to the poor",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
@@ -7066,13 +7149,19 @@
             "sort": "1598-05-01",
             "display": "1598-05-01"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360309/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96581496/"
+    },
+    "rose-01-0046": {
+        "title": "St Saviour's Vestry Minutes",
+        "description": "Vestry petition to close the playhouses in the parish",
         "record_id": "rosep-ridm96581496",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -7144,13 +7233,9 @@
         "emlot_id": [
             "639"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360309/",
+        "ereed_id": 360356.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0046": {
-        "title": "St Saviour's Vestry Minutes",
-        "description": "Vestry petition to close the playhouses in the parish",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
@@ -7159,106 +7244,19 @@
             "sort": "1598-07-19",
             "display": "1598-07-19"
         },
-        "record_id": "rosep-ridm96581496",
-        "regions": {
-            "type": "FeatureCollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "EPSG:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "St Saviour's Church",
-                        "place_type": "church",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1554"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.08972035381071099,
-                            51.50607134365255
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Rose Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 1,
-                        "symbol_flag": 1,
-                        "notes": "",
-                        "pk": "566"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09543165564536199,
-                            51.50729173227135
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Swan Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "572"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.10241396289867402,
-                            51.50763416993978
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": [
-            "639"
-        ],
         "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360356/",
-        "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96581496/"
     },
     "rose-01-0047": {
         "title": "Lord Admiral's Men Inventories",
         "description": "Inventories of play goods and books, ca. 3 March, 10-13 March, ca. 3 April",
-        "date": {
-            "from": "1599-03-03",
-            "to": "1599-04-03",
-            "precision": "low",
-            "when": null,
-            "sort": "1599-03-03",
-            "display": "c 1598/9-03-03\u2014c 1598/9-04-03"
-        },
         "record_id": "rosep-ridm90487944",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -7291,28 +7289,30 @@
             "8009",
             "8010"
         ],
-        "ereed_url": null,
+        "ereed_id": null,
         "category": "Performance",
-        "time_period": "Active Period: 1591-1600"
+        "time_period": "Active Period: 1591-1600",
+        "date": {
+            "from": "1599-03-03",
+            "to": "1599-04-03",
+            "precision": "low",
+            "when": null,
+            "sort": "1599-03-03",
+            "display": "c 1598/9-03-03\u2014c 1598/9-04-03"
+        },
+        "ereed_url": null,
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm90487944/"
     },
     "rose-01-0048": {
         "title": "Warrant from the Lord Admiral's Letter",
         "description": "Lord Admiral's letter regarding the decay of the Rose",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1600-01-12",
-            "sort": "1600-01-12",
-            "display": "1599/1600-01-12"
-        },
         "record_id": "rosep-ridm90723048",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -7363,13 +7363,60 @@
         "emlot_id": [
             "476"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359838/",
+        "ereed_id": 359838.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
+        "time_period": "Active Period: 1591-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1600-01-12",
+            "sort": "1600-01-12",
+            "display": "1599/1600-01-12"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359838/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm90723048/"
     },
     "rose-01-0049": {
         "title": "Simon Forman's Casebook",
         "description": "Cox of Collompton performed at the Rose",
+        "record_id": "rosep-ridm96295816",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536199,
+                            51.50729173227135
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": 240154.0,
+        "category": "Performance",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
@@ -7378,13 +7425,19 @@
             "sort": "1600-03-04",
             "display": "1599/1600-03-04"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/240154/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96295816/"
+    },
+    "rose-01-0050": {
+        "title": "Simon Forman's Casebook",
+        "description": "Sir John Oldcastle performed at the Rose",
         "record_id": "rosep-ridm96295816",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -7412,13 +7465,9 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/240154/",
+        "ereed_id": 240184.0,
         "category": "Performance",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0050": {
-        "title": "Simon Forman's Casebook",
-        "description": "Sir John Oldcastle performed at the Rose",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
@@ -7427,62 +7476,19 @@
             "sort": "1600-03-15",
             "display": "1599/1600-03-15"
         },
-        "record_id": "rosep-ridm96295816",
-        "regions": {
-            "type": "FeatureCollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "EPSG:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Rose Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 1,
-                        "symbol_flag": 1,
-                        "notes": "",
-                        "pk": "566"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09543165564536199,
-                            51.50729173227135
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": null,
         "ereed_url": "https://ereeddev.library.utoronto.ca/entities/240184/",
-        "category": "Performance",
-        "time_period": "Active Period: 1591-1600"
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96295816/"
     },
     "rose-01-0051": {
         "title": "St Saviour's Vestry Minutes",
         "description": "Vestry order regarding tithes from the playhouses",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1600-03-28",
-            "sort": "1600-03-28",
-            "display": "1600-03-28"
-        },
         "record_id": "rosep-ridm96548040",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -7575,28 +7581,30 @@
         "emlot_id": [
             "639"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359891/",
+        "ereed_id": 359891.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0052": {
-        "title": "Warrant from the Privy Council ",
-        "description": "PC warrant regarding the founding of the Fortune Playhouse",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1600-04-08",
-            "sort": "1600-04-08",
-            "display": "1600-04-08"
+            "when": "1600-03-28",
+            "sort": "1600-03-28",
+            "display": "1600-03-28"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359891/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96548040/"
+    },
+    "rose-01-0052": {
+        "title": "Warrant from the Privy Council ",
+        "description": "PC warrant regarding the founding of the Fortune Playhouse",
         "record_id": "rosep-ridm90676968",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -7689,28 +7697,30 @@
         "emlot_id": [
             "475"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359942/",
+        "ereed_id": 359942.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0053": {
-        "title": "Privy Council Order regarding the Restriction of Playhouses",
-        "description": "Privy Council Order regarding the Restriction of Playhouses",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1600-06-22",
-            "sort": "1600-06-22",
-            "display": "1600-06-22"
+            "when": "1600-04-08",
+            "sort": "1600-04-08",
+            "display": "1600-04-08"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359942/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm90676968/"
+    },
+    "rose-01-0053": {
+        "title": "Privy Council Order regarding the Restriction of Playhouses",
+        "description": "Privy Council Order regarding the Restriction of Playhouses",
         "record_id": "rosep-ridm91010728",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -7845,28 +7855,30 @@
         "emlot_id": [
             "215"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359968/",
+        "ereed_id": 359968.0,
         "category": "Regulation",
-        "time_period": "Active Period: 1591-1600"
-    },
-    "rose-01-0054": {
-        "title": "PC Letters to the JPs of Middlesex and Surrey and the Lord Mayor",
-        "description": "PC letters regarding playhouse disorders",
+        "time_period": "Active Period: 1591-1600",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1601-12-31",
-            "sort": "1601-12-31",
-            "display": "1601-12-31"
+            "when": "1600-06-22",
+            "sort": "1600-06-22",
+            "display": "1600-06-22"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359968/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm91010728/"
+    },
+    "rose-01-0054": {
+        "title": "PC Letters to the JPs of Middlesex and Surrey and the Lord Mayor",
+        "description": "PC letters regarding playhouse disorders",
         "record_id": "rosep-ridm91581784",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -8022,28 +8034,30 @@
         "emlot_id": [
             "653"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360052/",
+        "ereed_id": 360052.0,
         "category": "Regulation",
-        "time_period": "Final Years: 1601-1606"
+        "time_period": "Final Years: 1601-1606",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1601-12-31",
+            "sort": "1601-12-31",
+            "display": "1601-12-31"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360052/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm91581784/"
     },
     "rose-01-0055": {
         "title": "Worcester's men performed at the Rose",
         "description": "Worcester's men performed at the Rose",
-        "date": {
-            "from": "1602-08-17",
-            "to": "1603-05",
-            "precision": null,
-            "when": null,
-            "sort": "1602-08-17",
-            "display": "1602-08-17\u20141603-05"
-        },
         "record_id": null,
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -8071,28 +8085,30 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359148/",
+        "ereed_id": 359148.0,
         "category": "Performance",
-        "time_period": "Final Years: 1601-1606"
+        "time_period": "Final Years: 1601-1606",
+        "date": {
+            "from": "1602-08-17",
+            "to": "1603-05",
+            "precision": null,
+            "when": null,
+            "sort": "1602-08-17",
+            "display": "1602-08-17\u20141603-05"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359148/",
+        "record_url": null
     },
     "rose-01-0056": {
         "title": "Privy Council Letter to the JPs of Middlesex and Surrey ",
         "description": "PC letter regarding restraint of play",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1603-03-19",
-            "sort": "1603-03-19",
-            "display": "1602/3-03-19"
-        },
         "record_id": "rosep-ridm92828856",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -8227,28 +8243,30 @@
         "emlot_id": [
             "8005"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360122/",
+        "ereed_id": 360122.0,
         "category": "Regulation",
-        "time_period": "Final Years: 1601-1606"
-    },
-    "rose-01-0057": {
-        "title": "Henslowe's diary notes proposed increase in lease of the Rose",
-        "description": "Henslowe's diary notes proposed increase in lease of the Rose",
+        "time_period": "Final Years: 1601-1606",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1603-06-25",
-            "sort": "1603-06-25",
-            "display": "1603-06-25"
+            "when": "1603-03-19",
+            "sort": "1603-03-19",
+            "display": "1602/3-03-19"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360122/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm92828856/"
+    },
+    "rose-01-0057": {
+        "title": "Henslowe's diary notes proposed increase in lease of the Rose",
+        "description": "Henslowe's diary notes proposed increase in lease of the Rose",
         "record_id": null,
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -8366,13 +8384,113 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": null,
+        "ereed_id": null,
         "category": "Deeds & Leases",
-        "time_period": "Final Years: 1601-1606"
+        "time_period": "Final Years: 1601-1606",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1603-06-25",
+            "sort": "1603-06-25",
+            "display": "1603-06-25"
+        },
+        "ereed_url": null,
+        "record_url": null
     },
     "rose-01-0058": {
         "title": "Surrey and Kent Commissioners for Sewers' Court",
         "description": "Francis Henslowe to clean and repair the sewer",
+        "record_id": "rosep-ridm96695080",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Sewer around Rose Playhouse",
+                        "place_type": "other site",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 0,
+                        "symbol_flag": 0,
+                        "notes": "Buffer drawn around sewer around Rose playhouse for highlighting in Playhouse Timeline - edited to remove interior lines 20220422 by BM",
+                        "pk": "1804"
+                    },
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    -0.09556844822839099,
+                                    51.50740341995145
+                                ],
+                                [
+                                    -0.09570851916180298,
+                                    51.50721421601341
+                                ],
+                                [
+                                    -0.095702558720063,
+                                    51.50719937646063
+                                ],
+                                [
+                                    -0.09539708488375699,
+                                    51.50714094560133
+                                ],
+                                [
+                                    -0.09538516391842199,
+                                    51.50716413248431
+                                ],
+                                [
+                                    -0.09566530578524599,
+                                    51.50721607096351
+                                ],
+                                [
+                                    -0.09553417557583499,
+                                    51.50739229032082
+                                ],
+                                [
+                                    -0.09556844822839099,
+                                    51.50740341995145
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536199,
+                            51.50729173227135
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": 359370.0,
+        "category": "Regulation",
+        "time_period": "Final Years: 1601-1606",
         "date": {
             "from": null,
             "to": null,
@@ -8381,13 +8499,19 @@
             "sort": "1604-01-25",
             "display": "1603/4-01-25"
         },
-        "record_id": "rosep-ridm96695080",
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359370/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96695080/"
+    },
+    "rose-01-0059": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court",
+        "description": "Philip Henslowe to clean and repair the sewer",
+        "record_id": "rosep-ridm96669016",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -8468,13 +8592,9 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359370/",
+        "ereed_id": 359423.0,
         "category": "Regulation",
-        "time_period": "Final Years: 1601-1606"
-    },
-    "rose-01-0059": {
-        "title": "Surrey and Kent Commissioners for Sewers' Court",
-        "description": "Philip Henslowe to clean and repair the sewer",
+        "time_period": "Final Years: 1601-1606",
         "date": {
             "from": null,
             "to": null,
@@ -8483,13 +8603,19 @@
             "sort": "1604-08-01",
             "display": "1604-08-01"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359423/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96669016/"
+    },
+    "rose-01-0060": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court",
+        "description": "Henslowe appeals the order to clean the sewer",
         "record_id": "rosep-ridm96669016",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -8570,13 +8696,9 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359423/",
+        "ereed_id": 360457.0,
         "category": "Regulation",
-        "time_period": "Final Years: 1601-1606"
-    },
-    "rose-01-0060": {
-        "title": "Surrey and Kent Commissioners for Sewers' Court",
-        "description": "Henslowe appeals the order to clean the sewer",
+        "time_period": "Final Years: 1601-1606",
         "date": {
             "from": null,
             "to": null,
@@ -8585,13 +8707,19 @@
             "sort": "1604-12-14",
             "display": "1604-12-14"
         },
-        "record_id": "rosep-ridm96669016",
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360457/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96669016/"
+    },
+    "rose-01-0061": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court",
+        "description": "Henslowe to clean and repair the sewer",
+        "record_id": "rosep-ridm96650056",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -8672,13 +8800,9 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360457/",
+        "ereed_id": 359468.0,
         "category": "Regulation",
-        "time_period": "Final Years: 1601-1606"
-    },
-    "rose-01-0061": {
-        "title": "Surrey and Kent Commissioners for Sewers' Court",
-        "description": "Henslowe to clean and repair the sewer",
+        "time_period": "Final Years: 1601-1606",
         "date": {
             "from": null,
             "to": null,
@@ -8687,115 +8811,19 @@
             "sort": "1605-08-06",
             "display": "1605-08-06"
         },
-        "record_id": "rosep-ridm96650056",
-        "regions": {
-            "type": "FeatureCollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "EPSG:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Sewer around Rose Playhouse",
-                        "place_type": "other site",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 0,
-                        "symbol_flag": 0,
-                        "notes": "Buffer drawn around sewer around Rose playhouse for highlighting in Playhouse Timeline - edited to remove interior lines 20220422 by BM",
-                        "pk": "1804"
-                    },
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [
-                            [
-                                [
-                                    -0.09556844822839099,
-                                    51.50740341995145
-                                ],
-                                [
-                                    -0.09570851916180298,
-                                    51.50721421601341
-                                ],
-                                [
-                                    -0.095702558720063,
-                                    51.50719937646063
-                                ],
-                                [
-                                    -0.09539708488375699,
-                                    51.50714094560133
-                                ],
-                                [
-                                    -0.09538516391842199,
-                                    51.50716413248431
-                                ],
-                                [
-                                    -0.09566530578524599,
-                                    51.50721607096351
-                                ],
-                                [
-                                    -0.09553417557583499,
-                                    51.50739229032082
-                                ],
-                                [
-                                    -0.09556844822839099,
-                                    51.50740341995145
-                                ]
-                            ]
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Rose Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 1,
-                        "symbol_flag": 1,
-                        "notes": "",
-                        "pk": "566"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09543165564536199,
-                            51.50729173227135
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": null,
         "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359468/",
-        "category": "Regulation",
-        "time_period": "Final Years: 1601-1606"
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96650056/"
     },
     "rose-01-0062": {
         "title": "Henslowe's lease expired, reverting to St Mildred's Bread Street",
         "description": "Henslowe's lease expired, reverting to St Mildred's Bread Street",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1605-09-29",
-            "sort": "1605-09-29",
-            "display": "1605-09-29"
-        },
         "record_id": null,
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -9044,28 +9072,30 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": null,
+        "ereed_id": null,
         "category": "Deeds & Leases",
-        "time_period": "Final Years: 1601-1606"
-    },
-    "rose-01-0063": {
-        "title": "Surrey and Kent Commissioners for Sewers' Court",
-        "description": "Henslowe to clean and repair the sewer",
+        "time_period": "Final Years: 1601-1606",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1605-10-04",
-            "sort": "1605-10-04",
-            "display": "1605-10-04"
+            "when": "1605-09-29",
+            "sort": "1605-09-29",
+            "display": "1605-09-29"
         },
+        "ereed_url": null,
+        "record_url": null
+    },
+    "rose-01-0063": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court",
+        "description": "Henslowe to clean and repair the sewer",
         "record_id": "rosep-ridm96650056",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -9146,28 +9176,30 @@
             ]
         },
         "emlot_id": null,
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359513/",
+        "ereed_id": 359513.0,
         "category": "Regulation",
-        "time_period": "Final Years: 1601-1606"
-    },
-    "rose-01-0064": {
-        "title": "Privy Council Letters to the Lord Mayor and JPs of Middlesex and Surrey",
-        "description": "PC letters regarding restraint of plays",
+        "time_period": "Final Years: 1601-1606",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1605-10-05",
-            "sort": "1605-10-05",
-            "display": "1605-10-05"
+            "when": "1605-10-04",
+            "sort": "1605-10-04",
+            "display": "1605-10-04"
         },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359513/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96650056/"
+    },
+    "rose-01-0064": {
+        "title": "Privy Council Letters to the Lord Mayor and JPs of Middlesex and Surrey",
+        "description": "PC letters regarding restraint of plays",
         "record_id": "rosep-ridm91491816",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -9302,13 +9334,115 @@
         "emlot_id": [
             "1749"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360191/",
+        "ereed_id": 360191.0,
         "category": "Regulation",
-        "time_period": "Final Years: 1601-1606"
+        "time_period": "Final Years: 1601-1606",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1605-10-05",
+            "sort": "1605-10-05",
+            "display": "1605-10-05"
+        },
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/360191/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm91491816/"
     },
     "rose-01-0065": {
         "title": "Surrey and Kent Commissioners for Sewers' Court",
         "description": "Edward Box to clean the sewer",
+        "record_id": "rosep-ridm96613240",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Sewer around Rose Playhouse",
+                        "place_type": "other site",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 0,
+                        "symbol_flag": 0,
+                        "notes": "Buffer drawn around sewer around Rose playhouse for highlighting in Playhouse Timeline - edited to remove interior lines 20220422 by BM",
+                        "pk": "1804"
+                    },
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    -0.09556844822839099,
+                                    51.50740341995145
+                                ],
+                                [
+                                    -0.09570851916180298,
+                                    51.50721421601341
+                                ],
+                                [
+                                    -0.095702558720063,
+                                    51.50719937646063
+                                ],
+                                [
+                                    -0.09539708488375699,
+                                    51.50714094560133
+                                ],
+                                [
+                                    -0.09538516391842199,
+                                    51.50716413248431
+                                ],
+                                [
+                                    -0.09566530578524599,
+                                    51.50721607096351
+                                ],
+                                [
+                                    -0.09553417557583499,
+                                    51.50739229032082
+                                ],
+                                [
+                                    -0.09556844822839099,
+                                    51.50740341995145
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536199,
+                            51.50729173227135
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": [
+            "7830"
+        ],
+        "ereed_id": 359558.0,
+        "category": "Regulation",
+        "time_period": "Final Years: 1601-1606",
         "date": {
             "from": null,
             "to": null,
@@ -9317,13 +9451,19 @@
             "sort": "1606-01-30",
             "display": "1605/6-01-30"
         },
-        "record_id": "rosep-ridm96613240",
+        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359558/",
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96613240/"
+    },
+    "rose-01-0066": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court",
+        "description": "Edward Box to clean the sewer by the 'late playhouse'",
+        "record_id": "rosep-ridm96597384",
         "regions": {
-            "type": "FeatureCollection",
+            "type": "featurecollection",
             "crs": {
                 "type": "name",
                 "properties": {
-                    "name": "EPSG:4326"
+                    "name": "epsg:4326"
                 }
             },
             "features": [
@@ -9406,13 +9546,9 @@
         "emlot_id": [
             "7830"
         ],
-        "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359558/",
+        "ereed_id": 359599.0,
         "category": "Regulation",
-        "time_period": "Final Years: 1601-1606"
-    },
-    "rose-01-0066": {
-        "title": "Surrey and Kent Commissioners for Sewers' Court",
-        "description": "Edward Box to clean the sewer by the 'late playhouse'",
+        "time_period": "Final Years: 1601-1606",
         "date": {
             "from": null,
             "to": null,
@@ -9421,97 +9557,7 @@
             "sort": "1606-04-25",
             "display": "1606-04-25"
         },
-        "record_id": "rosep-ridm96597384",
-        "regions": {
-            "type": "FeatureCollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "EPSG:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Sewer around Rose Playhouse",
-                        "place_type": "other site",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 0,
-                        "symbol_flag": 0,
-                        "notes": "Buffer drawn around sewer around Rose playhouse for highlighting in Playhouse Timeline - edited to remove interior lines 20220422 by BM",
-                        "pk": "1804"
-                    },
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [
-                            [
-                                [
-                                    -0.09556844822839099,
-                                    51.50740341995145
-                                ],
-                                [
-                                    -0.09570851916180298,
-                                    51.50721421601341
-                                ],
-                                [
-                                    -0.095702558720063,
-                                    51.50719937646063
-                                ],
-                                [
-                                    -0.09539708488375699,
-                                    51.50714094560133
-                                ],
-                                [
-                                    -0.09538516391842199,
-                                    51.50716413248431
-                                ],
-                                [
-                                    -0.09566530578524599,
-                                    51.50721607096351
-                                ],
-                                [
-                                    -0.09553417557583499,
-                                    51.50739229032082
-                                ],
-                                [
-                                    -0.09556844822839099,
-                                    51.50740341995145
-                                ]
-                            ]
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Rose Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 1,
-                        "symbol_flag": 1,
-                        "notes": "",
-                        "pk": "566"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09543165564536199,
-                            51.50729173227135
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": [
-            "7830"
-        ],
         "ereed_url": "https://ereeddev.library.utoronto.ca/entities/359599/",
-        "category": "Regulation",
-        "time_period": "Final Years: 1601-1606"
+        "record_url": "https://ereed.library.utoronto.ca/records/rosep-ridm96597384/"
     }
 }
