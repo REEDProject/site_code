@@ -1,6 +1,7 @@
-// Parameters
-const timelineEventsPath = '../timelines/rosep.json';
-const timelineMetadataPath = '../timelines/rosep_metadata.json';
+/**
+ * jQ is used in place of $, since this code requires a more recent
+ * version of jQuery than the rest of the site uses.
+ */
 
 /**
  * Class describing an abstracted version of a point feature for Leaflet which allows for zoom-dependent radii
@@ -62,9 +63,9 @@ class PointFeature {
 
         // This is where we bind the events for the list items with
         // the name of a given region to the corresponding region on the map.
-        $(`#${this.id}`).on('mouseenter', this.mouseOver.bind(this));
-        $(`#${this.id}`).on('mouseleave', this.mouseOut.bind(this));
-        $(`#${this.id}`).on('click', this.click.bind(this));
+        jQ(`#${this.id}`).on('mouseenter', this.mouseOver.bind(this));
+        jQ(`#${this.id}`).on('mouseleave', this.mouseOut.bind(this));
+        jQ(`#${this.id}`).on('click', this.click.bind(this));
     }
 
     /**
@@ -72,7 +73,7 @@ class PointFeature {
      */
     mouseOver() {
         this.highlight = true;
-        $(`#${this.id}`).addClass('feature-item-hover');
+        jQ(`#${this.id}`).addClass('feature-item-hover');
     }
 
     /**
@@ -80,7 +81,7 @@ class PointFeature {
      */
     mouseOut() {
         this.highlight = false;
-        $(`#${this.id}`).removeClass('feature-item-hover');
+        jQ(`#${this.id}`).removeClass('feature-item-hover');
     }
 
     /**
@@ -242,9 +243,9 @@ class PolygonFeature {
             click: this.click.bind(this),
         });
 
-        $(`#${this.id}`).on("mouseenter", this.mouseOver.bind(this));
-        $(`#${this.id}`).on("mouseleave", this.mouseOut.bind(this));
-        $(`#${this.id}`).on("click", this.click.bind(this));
+        jQ(`#${this.id}`).on("mouseenter", this.mouseOver.bind(this));
+        jQ(`#${this.id}`).on("mouseleave", this.mouseOut.bind(this));
+        jQ(`#${this.id}`).on("click", this.click.bind(this));
     }
 
     /**
@@ -252,7 +253,7 @@ class PolygonFeature {
      */
     mouseOver() {
         this.highlight = true;
-        $(`#${this.id}`).addClass("feature-item-hover");
+        jQ(`#${this.id}`).addClass("feature-item-hover");
     }
 
     /**
@@ -260,7 +261,7 @@ class PolygonFeature {
      */
     mouseOut() {
         this.highlight = false;
-        $(`#${this.id}`).removeClass("feature-item-hover");
+        jQ(`#${this.id}`).removeClass("feature-item-hover");
     }
 
     /**
@@ -386,9 +387,9 @@ function loadMap(metadata) {
  * @returns {HTMLElement} The HTML element object containing the legend.
  */
 function generateLegend() {
-    const legend = $('<div id="legend">');
-    const collapsedLegend = $('<img>').attr('src', './media/legendIcon.png').css('width', '50px');
-    const expandedLegend = $('<img>').attr('src', './media/legend.png').css('width', '150px');
+    const legend = jQ('<div id="legend">');
+    const collapsedLegend = jQ('<img>').attr('src', './media/legendIcon.png').css('width', '50px');
+    const expandedLegend = jQ('<img>').attr('src', './media/legend.png').css('width', '150px');
     legend.html(collapsedLegend);
 
     legend.on('mouseenter', function () {
@@ -412,7 +413,7 @@ function generateLegend() {
  */
 function generateEvents(events, regionsGroupLayer, map, jsonFilter = null, jsonFilterValue = null) {
     // Clear the events container
-    $('.events').empty();
+    jQ('.events').empty();
 
     // Apply JSON filter if provided
     if (jsonFilter !== null) {
@@ -422,14 +423,14 @@ function generateEvents(events, regionsGroupLayer, map, jsonFilter = null, jsonF
     // Generate event records and append them to the events container
     for (const eventID in events) {
         const $eventRecord = getEventRecord(events, eventID);
-        $('.events').append($eventRecord);
+        jQ('.events').append($eventRecord);
     }
 
     // Event handler for clicking a collapsed event record
-    $(document).off('click.event');
-    $(document).on('click.event', '.event-collapsed', function () {
+    jQ(document).off('click.event');
+    jQ(document).on('click.event', '.event-collapsed', function () {
         // Expand the clicked event record and collapse others
-        const eventID = $(this).attr('id');
+        const eventID = jQ(this).attr('id');
         collapseAllEventRecords(events);
         expandEventRecord(events, eventID);
 
@@ -447,21 +448,21 @@ function generateEvents(events, regionsGroupLayer, map, jsonFilter = null, jsonF
 function getEventRecord(events, eventID) {
     const event = events[eventID];
 
-    const $eventRecord = $('<li>', {
+    const $eventRecord = jQ('<li>', {
         id: eventID,
         class: 'event-collapsed',
     });
 
-    const $eventLink = $('<a>', {
+    const $eventLink = jQ('<a>', {
         class: 'event',
     }).appendTo($eventRecord);
 
-    $('<div>', {
+    jQ('<div>', {
         class: 'date',
         text: event.date.display,
     }).appendTo($eventLink);
 
-    $('<div>', {
+    jQ('<div>', {
         class: 'description',
         text: event.description,
     }).appendTo($eventLink);
@@ -474,10 +475,10 @@ function getEventRecord(events, eventID) {
  * @param {Object} events - The JSON object containing all of the events
  */
 function collapseAllEventRecords(events) {
-    $('.event-expanded').each(function () {
-        const eventID = $(this).attr('id');
+    jQ('.event-expanded').each(function () {
+        const eventID = jQ(this).attr('id');
         const eventRecord = getEventRecord(events, eventID);
-        $(this).replaceWith(eventRecord);
+        jQ(this).replaceWith(eventRecord);
     });
 }
 
@@ -488,7 +489,7 @@ function collapseAllEventRecords(events) {
  */
 function expandEventRecord(events, eventID) {
     const expandedEventRecord = getExpandedEventRecord(events, eventID);
-    $(`#${eventID}`).replaceWith(expandedEventRecord);
+    jQ(`#${eventID}`).replaceWith(expandedEventRecord);
 }
 
 /**
@@ -500,32 +501,32 @@ function expandEventRecord(events, eventID) {
 function getExpandedEventRecord(events, eventID) {
     const event = events[eventID];
 
-    const $eventExpanded = $('<li>', {
+    const $eventExpanded = jQ('<li>', {
         class: 'event-expanded',
         id: eventID,
     });
 
-    const $eventActive = $('<div>', {
+    const $eventActive = jQ('<div>', {
         class: 'event active',
     }).appendTo($eventExpanded);
 
-    $('<div>', {
+    jQ('<div>', {
         class: 'date',
         text: event.date.display,
     }).appendTo($eventActive);
 
-    $('<div>', {
+    jQ('<div>', {
         class: 'description',
         text: event.description,
     }).appendTo($eventActive);
 
-    const $features = $('<ul>', {
+    const $features = jQ('<ul>', {
         class: 'features',
     }).appendTo($eventActive);
 
     for (const feature of event.regions.features) {
-        $('<li>').append(
-            $('<a>', {
+        jQ('<li>').append(
+            jQ('<a>', {
                 class: 'feature',
                 id: feature.properties.pk,
                 text: feature.properties.name,
@@ -534,7 +535,7 @@ function getExpandedEventRecord(events, eventID) {
     }
 
     if (Object.keys(event.regions.features).length > 1) {
-        $('<a>', {
+        jQ('<a>', {
             class: 'event-extent',
             text: 'Zoom to full extent.',
         }).appendTo($eventActive);
@@ -542,7 +543,7 @@ function getExpandedEventRecord(events, eventID) {
     }
 
     if (event.record_url) {
-        $('<a>', {
+        jQ('<a>', {
             target: '_blank',
             href: event.record_url,
             text: 'See associated record.',
@@ -551,7 +552,7 @@ function getExpandedEventRecord(events, eventID) {
     }
 
     if (event.ereed_url) {
-        $('<a>', {
+        jQ('<a>', {
             target: '_blank',
             href: event.ereed_url,
             text: 'See event entity page.',
@@ -596,11 +597,11 @@ function displayEventRegions(regionsGroupLayer, events, eventID, map) {
  * @returns {jQuery} - The jQuery object representing the filter button element.
  */
 function getFilterButton(filterID, filterTitle) {
-    return $('<li>', {
+    return jQ('<li>', {
         class: 'filter_button',
         id: filterID,
     }).append(
-        $('<a>', {
+        jQ('<a>', {
             text: filterTitle,
         })
     );
@@ -621,11 +622,11 @@ function activateFilterButton(events, regionsGroupLayer, map, filterID, filterTy
     generateEvents(events, regionsGroupLayer, map);
 
     // Replace the clicked filter button with an active filter button
-    $(`#${filterID}`).replaceWith(getActiveFilterButton(filterID, filterTypes[filterID]));
+    jQ(`#${filterID}`).replaceWith(getActiveFilterButton(filterID, filterTypes[filterID]));
 
     // Get event categories and set up event tabs
     const eventCategories = getEventCategories(filterID, events);
-    const $eventTabsContainer = $('.event_tabs');
+    const $eventTabsContainer = jQ('.event_tabs');
     $eventTabsContainer.empty();
     $eventTabsContainer.append(getActiveEventTab('All Events'));
 
@@ -634,23 +635,23 @@ function activateFilterButton(events, regionsGroupLayer, map, filterID, filterTy
     }
 
     // Add click events to event tabs
-    $(document).off('click.tab');
-    $(document).on('click.tab', '.event_tab:not(.active):not(:first-child)', function () {
+    jQ(document).off('click.tab');
+    jQ(document).on('click.tab', '.event_tab:not(.active):not(:first-child)', function () {
         // Reset the map, collapse event tabs, and generate events for the selected tab
         resetMap(regionsGroupLayer, map, initialExtent);
         collapseAllEventTabs();
-        const eventTabText = $(this).children().first().text();
-        $(this).replaceWith(getActiveEventTab(eventTabText));
+        const eventTabText = jQ(this).children().first().text();
+        jQ(this).replaceWith(getActiveEventTab(eventTabText));
         generateEvents(events, regionsGroupLayer, map, filterID, eventTabText);
     });
 
-    $(document).off('click.cancel');
-    $(document).on('click.cancel', '.event_tab:first-child', function () {
+    jQ(document).off('click.cancel');
+    jQ(document).on('click.cancel', '.event_tab:first-child', function () {
         // Collapse all event tabs, generate all events, and reset the map
         resetMap(regionsGroupLayer, map, initialExtent);
         collapseAllEventTabs();
-        const eventTabText = $(this).children().first().text();
-        $(this).replaceWith(getActiveEventTab(eventTabText));
+        const eventTabText = jQ(this).children().first().text();
+        jQ(this).replaceWith(getActiveEventTab(eventTabText));
         generateEvents(events, regionsGroupLayer, map);
     });
 }
@@ -673,10 +674,10 @@ function resetMap(regionsGroupLayer, map, initialExtent) {
  * @returns {jQuery} - The jQuery object representing the active filter button element
  */
 function getActiveFilterButton(filterID, filterTitle) {
-    return $('<li>', {
+    return jQ('<li>', {
         class: 'filter_button active',
         id: filterID,
-    }).append($('<div>').text(filterTitle));
+    }).append(jQ('<div>').text(filterTitle));
 }
 
 /**
@@ -685,9 +686,9 @@ function getActiveFilterButton(filterID, filterTitle) {
  * @returns {jQuery} - The jQuery object representing the event tab element
  */
 function getEventTab(eventCategory) {
-    return $('<li>', {
+    return jQ('<li>', {
         class: 'event_tab',
-    }).append($('<a>').text(eventCategory));
+    }).append(jQ('<a>').text(eventCategory));
 }
 
 /**
@@ -696,9 +697,9 @@ function getEventTab(eventCategory) {
  * @returns {jQuery} - The jQuery object representing the active event tab element
  */
 function getActiveEventTab(eventCategory) {
-    return $('<li>', {
+    return jQ('<li>', {
         class: 'event_tab active',
-    }).append($('<div>').text(eventCategory));
+    }).append(jQ('<div>').text(eventCategory));
 }
 
 /**
@@ -706,9 +707,9 @@ function getActiveEventTab(eventCategory) {
  * @param {Object} filterTypes - The filter types object
  */
 function collapseAllFilterButtons(filterTypes) {
-    $('.filter_button.active').each(function () {
-        const filterID = $(this).attr('id');
-        $(this).replaceWith(getFilterButton(filterID, filterTypes[filterID]));
+    jQ('.filter_button.active').each(function () {
+        const filterID = jQ(this).attr('id');
+        jQ(this).replaceWith(getFilterButton(filterID, filterTypes[filterID]));
     });
 }
 
@@ -716,9 +717,9 @@ function collapseAllFilterButtons(filterTypes) {
  * Collapses all event tabs by replacing active tabs with inactive tabs.
  */
 function collapseAllEventTabs() {
-    $('.event_tab.active').each(function () {
-        const eventTabText = $(this).children().first().text();
-        $(this).replaceWith(getEventTab(eventTabText));
+    jQ('.event_tab.active').each(function () {
+        const eventTabText = jQ(this).children().first().text();
+        jQ(this).replaceWith(getEventTab(eventTabText));
     });
 }
 
@@ -767,30 +768,30 @@ async function main() {
     generateEvents(events, regionsGroupLayer, map);
 
     // Event listener for clicking on "Zoom to Full Extent" button
-    $(document).on('click', '.event-extent', function () {
+    jQ(document).on('click', '.event-extent', function () {
         map.flyToBounds(regionsGroupLayer.getBounds());
     });
 
     // Generate filter buttons based on metadata
-    $('.filter_buttons').empty();
+    jQ('.filter_buttons').empty();
     for (const [filterID, filterType] of Object.entries(filters)) {
         const $filterButton = getFilterButton(filterID, filterType);
-        $('.filter_buttons').append($filterButton);
+        jQ('.filter_buttons').append($filterButton);
     }
 
     // Activate the initial filter button and handle filter button clicks
     activateFilterButton(events, regionsGroupLayer, map, Object.keys(filters)[0], filters, initialExtent);
 
-    $(document).on('click', '.filter_button:not(.active)', function () {
-        const filterID = $(this).attr('id');
+    jQ(document).on('click', '.filter_button:not(.active)', function () {
+        const filterID = jQ(this).attr('id');
         collapseAllFilterButtons(filters);
         activateFilterButton(events, regionsGroupLayer, map, filterID, filters, initialExtent);
     });
 
     // Update the title of the page
-    $('.event_title').text(title);
+    jQ('.event_title').text(title);
     document.title = title;
 }
 
 // Run the "main" function when page is loaded
-$(document).ready(main);
+jQ(document).ready(main);

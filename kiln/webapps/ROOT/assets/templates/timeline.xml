@@ -26,15 +26,15 @@
     <kiln:block name="js">
       <kiln:super />
       <script src="{$kiln:assets-path}/scripts/leaflet/leaflet.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+      <script type="text/javascript">var jQ = $.noConflict(true);</script>
     </kiln:block>
 
     <kiln:block name="content">
       <div class="content">
         <div class="row">
           <div class="column medium-12">
-            <h1 class="event_title column medium-6">
-              Rose Playhouse Timeline
-            </h1>
+            <h1 class="event_title column medium-6"></h1>
 
             <div class="column medium-6 filters">
               <div class="filter_buttons-container">
@@ -50,9 +50,6 @@
 
             <div class="column medium-12">
               <ul class="event_tabs">
-                <li class="event_tab active"><a>Early Days: 1550-1590</a></li>
-                <li class="event_tab inactive"><a>Active Period: 1591-1600</a></li>
-                <li class="event_tab inactive"><a>Final Years: 1601-1606</a></li>
               </ul>
             </div>
 
@@ -72,7 +69,8 @@
 
     <kiln:block name="end-js">
       <kiln:super />
-      <script>var timelineJsonPath = "<xsl:value-of select="$kiln:assets-path"/>/timelines/<xsl:value-of select="$timeline"/>.json"</script>
+      <script>var timelineEventsPath = '<xsl:value-of select="$kiln:assets-path"/>/timelines/<xsl:value-of select="$timeline"/>.json';</script>
+      <script>var timelineMetadataPath = '<xsl:value-of select="$kiln:assets-path"/>/timelines/<xsl:value-of select="$timeline"/>_metadata.json';</script>
       <script src="{$kiln:assets-path}/scripts/timeline.js"></script>
     </kiln:block>
   </kiln:child>
