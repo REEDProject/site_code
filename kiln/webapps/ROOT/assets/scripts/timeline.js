@@ -1,6 +1,6 @@
 // Parameters
-const timelineEventsPath = 'data/rose_events.json';
-const timelineMetadataPath = 'data/rose_metadata.json';
+const timelineEventsPath = '../timelines/rosep.json';
+const timelineMetadataPath = '../timelines/rosep_metadata.json';
 
 /**
  * Class describing an abstracted version of a point feature for Leaflet which allows for zoom-dependent radii
