@@ -388,8 +388,8 @@ function loadMap(metadata) {
  */
 function generateLegend() {
     const legend = jQ('<div id="legend">');
-    const collapsedLegend = jQ('<img>').attr('src', '../images/map/legendIcon.png').css('width', '50px');
-    const expandedLegend = jQ('<img>').attr('src', '../images/timeline-legend.png').css('width', '150px');
+    const collapsedLegend = jQ('<img>').attr('src', '../../assets/images/map/legendicon.png').css('width', '50px');
+    const expandedLegend = jQ('<img>').attr('src', '../../assets/images/timeline-legend.png').css('width', '150px');
     legend.html(collapsedLegend);
 
     legend.on('mouseenter', function () {
