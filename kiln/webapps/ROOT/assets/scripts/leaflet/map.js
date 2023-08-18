@@ -21,7 +21,7 @@ function addLegend(map, baseImagePath) {
 
 
 /**
- * Adda GeoJSON-sourced layer to the map and return it.
+ * Add a GeoJSON-sourced layer to the map and return it.
  *
  * @param {Map} map - map to add layer to
  * @return {Layer}
@@ -34,9 +34,9 @@ function addRegionLayer(map) {
     onEachFeature: function(feature, layer) {
       var popupContent;
       if (feature.properties && feature.properties.place_type) {
-        var popupContent = 'Source Region: ' +
-            feature.properties.name +
-            '<br>Region Type: ' + feature.properties.place_type;
+        popupContent = 'Source Region: ' +
+          feature.properties.name +
+          '<br>Region Type: ' + feature.properties.place_type;
       }
       layer.bindPopup(popupContent);
     }
@@ -73,7 +73,7 @@ function addRelatedLayer(map, baseImagePath) {
   });
   let relatedLayer = L.Proj.geoJson(null, {
     pointToLayer: function(feature, latlng) {
-      return L.marker(latlng, {icon: relatedIcon})
+      return L.marker(latlng, {icon: relatedIcon});
     },
     onEachFeature: function(feature, layer) {
       layer.bindPopup(getRelatedPopupContent(feature));
@@ -103,7 +103,7 @@ function addSourceLayer(map, baseImagePath) {
   let sourceLayer = L.Proj.geoJson(null, {
     pointToLayer: function(feature, latlng) {
       return L.marker(latlng, {icon: sourceIcon,
-                               zIndexOffset: 1000, interactive: false})
+                               zIndexOffset: 1000, interactive: false});
     },
   });
   sourceLayer.addData(source_location_geojson);
@@ -130,6 +130,7 @@ function addTileLayers(map) {
       accessToken: 'pk.eyJ1IjoicmVlZHVvZnQiLCJhIjoiY2l6aWpiODQ2MDE2NjJ4b2RwZ3MyODl6byJ9.A67HGpPtAeCayuReK1ahtA'
     });
   let roads = L.tileLayer(getREEDLayerURL('EREED_gis_roads'));
+  let london_roads = L.tileLayer(getREEDLayerURL('EREED_gis_roads_wlabels_Z8-18'));
   let symbols = L.tileLayer(getREEDLayerURL('EREED_places_geojson_points'));
   let labels = L.tileLayer(getREEDLayerURL('EREED_places_geojson_labels'));
   let dioceses_pre = L.tileLayer(getREEDLayerURL('EREED_gis_dioceses_pre1541'));
@@ -142,6 +143,7 @@ function addTileLayers(map) {
   };
   let overlays = {
     'Pre-1642 roads': roads,
+    'Detailed roads in London area': london_roads,
     'EREED Place symbols': symbols,
     'EREED Place labels': labels,
     'Historical dioceses before 1541': dioceses_pre,

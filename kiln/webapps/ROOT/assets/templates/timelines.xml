@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
+           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <!-- Template to display a list of timelines. -->
+
+  <xsl:import href="cocoon://_internal/template/xsl/stylesheets/timelines/timelines-to-html.xsl" />
+
+  <kiln:parent>
+    <xi:include href="base.xml" />
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title">
+      <kiln:super />
+      <xsl:value-of select="/aggregation/timelines/title" />
+    </kiln:block>
+
+    <kiln:block name="content">
+      <div class="content">
+        <div class="row">
+          <div class="column medium-8">
+            <div class="timelines-overview-title">
+              <xsl:value-of select="/aggregation/timelines/title" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column medium-8">
+            <div class="timelines-overview-subtitle">Overview</div>
+            <div class="timelines-overview-text">
+              <xsl:copy-of select="/aggregation/timelines/overview/*" />
+            </div>
+            <div class="timelines-overview-linebreak"></div>
+            <div class="timelines-overview-subtitle">Timelines to Explore Now</div>
+            <xsl:apply-templates select="/aggregation/timelines/live/timeline" />
+            <div class="timelines-overview-linebreak"></div>
+            <div class="timelines-overview-subtitle">In Development</div>
+            <xsl:apply-templates select="/aggregation/timelines/development/timeline" />
+          </div>
+          <div class="column medium-4">
+            <div class="featured-timelines-card card" data-equalizer-watch="outer">
+              <div class="background-red card-header">
+                <div class="featured-timelines-header">FEATURED TIMELINE</div>
+                <div class="timeline-name-header">
+                  <xsl:value-of select="/aggregation/timelines/featured/title" />
+                </div>
+              </div>
+              <div class="card-content">
+                <xsl:apply-templates select="/aggregation/timelines/featured" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </kiln:block>
+  </kiln:child>
+
+</kiln:root>

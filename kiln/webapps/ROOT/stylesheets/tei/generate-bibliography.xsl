@@ -36,13 +36,6 @@
     </xsl:for-each>
   </xsl:template>
 
-  <xsl:template match="tei:bibl">
-    <xsl:copy>
-      <xsl:attribute name="xml:id" select="generate-id()" />
-      <xsl:apply-templates select="node()" />
-    </xsl:copy>
-  </xsl:template>
-
   <xsl:template match="@*|node()">
     <xsl:copy>
       <xsl:apply-templates select="@*|node()" />

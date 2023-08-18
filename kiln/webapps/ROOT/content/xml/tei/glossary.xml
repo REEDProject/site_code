@@ -2954,7 +2954,13 @@
                         </form>
                         <sense xml:id="caryour-1">carrier</sense>
                     </entry>
-                    
+                    <entry xml:id="cased">
+                        <form>
+                            <orth>cased</orth>
+                            <gram>v pap</gram>
+                        </form>
+                        <sense xml:id="cased-1"> (of an article of clothing) faced or lined </sense>
+                    </entry>
                    
                     
                     <entry xml:id="cauderm">
@@ -3866,10 +3872,10 @@
                     </entry>
                     <entry xml:id="ferpolowes">
                         <form>
-                            <orth>ferpolowes</orth>
+                            <orth>ferpelowes</orth>
                             <gram>n pl</gram>
                         </form>
-                        <sense xml:id="ferpelowes-1"> furbelows, flounces, pleated borders on gowns or petticoats </sense>
+                        <sense xml:id="ferpelowes-1"> furbelows, flounces, pleated borders on gowns or petticoats; <form><orth>serpelowes</orth></form> in error</sense>
                     </entry>
                     
                     <entry xml:id="fett">
@@ -4319,7 +4325,7 @@
                             <orth>gyrketruses</orth>
                             <gram>n pl</gram>
                         </form>
-                        <sense xml:id="gyrketruses-1"> jerkin-trousers (?)</sense>
+                        <sense xml:id="gyrketruses-1"> jerkin trusses; jerken ties</sense>
                     </entry>
                     
                     <entry xml:id="gysse">
@@ -5530,7 +5536,7 @@
                     
                     <entry xml:id="orlates">
                         <form>
-                            <orth>oraltes</orth>
+                            <orth>orlates</orth>
                             <gram>n poss</gram>
                         </form>
                         <sense xml:id="orlates-1">harlot's</sense>
@@ -5840,6 +5846,15 @@
                         <sense xml:id="poynte-1">point, tagged ribbon or cord used to attach hose to
                             a doublet, lace a garment, fasten a shoe, etc <ref>[<hi rend="italic"
                                 >OEDO</hi> point <hi rend="italic">n.1</hi> II.23.a]</ref>; <form><orth>poynte</orth></form>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="poke">
+                        <form>
+                            <orth>poke</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="poke-1">pocket; bag or wallet
                         </sense>
                     </entry>
                     
@@ -6751,7 +6766,7 @@
                             <orth>strasers</orth>
                             <gram>n pl</gram>
                         </form>
-                        <sense xml:id="strasers-1"> trousers <ref>[<hi rend="italics">OEDO</hi> strosser, <hi rend="italics">n.</hi>]</ref></sense>
+                        <sense xml:id="strasers-1"> trousers <ref>[<hi rend="italics">OEDO</hi> strosser, <hi rend="italics">n.</hi>]</ref>; <form><orth>strocers</orth></form></sense>
                     </entry>
                     
                     

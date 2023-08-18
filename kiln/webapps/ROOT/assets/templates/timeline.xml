@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
+           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <!-- Template to display a single timeline. -->
+
+  <xsl:param name="timeline" />
+
+  <kiln:parent>
+    <xi:include href="base.xml" />
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title">
+      <kiln:super />
+    </kiln:block>
+
+    <kiln:block name="css">
+      <kiln:super />
+      <link rel="stylesheet" type="text/css" href="{$kiln:assets-path}/styles/leaflet/leaflet.css" />
+      <link rel="stylesheet" type="text/css" href="{$kiln:assets-path}/styles/leaflet/screen.css" />
+      <link rel="stylesheet" type="text/css" href="{$kiln:assets-path}/styles/timeline.css" />
+    </kiln:block>
+
+    <kiln:block name="js">
+      <kiln:super />
+      <script src="{$kiln:assets-path}/scripts/leaflet/leaflet.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+      <script type="text/javascript">var jQ = $.noConflict(true);</script>
+    </kiln:block>
+
+    <kiln:block name="content">
+      <div class="content">
+        <div class="row">
+          <div class="column medium-12">
+            <h1 class="event_title column medium-6"></h1>
+
+            <div class="column medium-6 filters">
+              <div class="filter_buttons-container">
+                <span class="filter_buttons-label">
+                  View by:
+                </span>
+                <ul class="filter_buttons">
+                  <li class="filter_button active"><a>Date Range</a></li>
+                  <li class="filter_button inactive"><a>Category</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="column medium-12">
+              <ul class="event_tabs">
+              </ul>
+            </div>
+
+            <div class="column medium-4">
+              <ul class="events">
+              </ul>
+            </div>
+
+            <div class="column medium-8">
+              <div id="map">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </kiln:block>
+
+    <kiln:block name="end-js">
+      <kiln:super />
+      <script>var timelineEventsPath = '<xsl:value-of select="$kiln:assets-path"/>/timelines/<xsl:value-of select="$timeline"/>.json';</script>
+      <script>var timelineMetadataPath = '<xsl:value-of select="$kiln:assets-path"/>/timelines/<xsl:value-of select="$timeline"/>_metadata.json';</script>
+      <script src="{$kiln:assets-path}/scripts/timeline.js"></script>
+    </kiln:block>
+  </kiln:child>
+
+</kiln:root>

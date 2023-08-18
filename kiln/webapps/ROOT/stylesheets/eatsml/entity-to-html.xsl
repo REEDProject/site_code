@@ -104,7 +104,7 @@
     <xsl:if test="$entity/name_extra">
       <xsl:text> (</xsl:text>
       <xsl:for-each select="$entity/name_extra">
-        <xsl:value-of select="." />
+        <xsl:copy-of select="*"/>       
         <xsl:if test="position() != last()">
           <xsl:text>, </xsl:text>
         </xsl:if>

@@ -116,7 +116,7 @@
           required="true" stored="true" type="string" />
    <field indexed="false" multiValued="false" name="document_id"
           required="true" stored="true" type="string" />
-   <field indexed="true" multiValued="false" name="collection_id"
+   <field indexed="true" multiValued="true" name="collection_id"
           required="false" stored="true" type="string" />
    <field indexed="true" multiValued="false" name="record_title"
           required="false" stored="true" type="string" />

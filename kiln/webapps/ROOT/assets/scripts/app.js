@@ -6742,7 +6742,7 @@ $(document).ready(function() {
             var t = $(this).attr("note"),
                 n = $(".footnotes li[note='" + t + "']").html();
             e(n, $(this).offset(), $(this).width(), "Footnote")
-        }), $(".term").on("click", function() {
+        }), $(".term").on("mouseover", function() {
             var t = $(this).attr("note"),
                 n = $(".glossed-terms li[note='" + t + "']").html(),
                 i = $(this).attr("numerous-terms");

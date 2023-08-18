@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="REED.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:id="staff" xml:lang="eng">
+<?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="REED.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:id="staff" xml:lang="eng">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -1511,7 +1513,7 @@
                 answer the p<ex>re</ex>misses &amp; to stande to &amp; abide such further Trial
                 &amp; direcc<ex>i</ex>on therein as to yo<ex>ur</ex> Ma<ex>ies</ex>ty &amp; the
                 right hono<ex>ura</ex>ble the lord<ex>es</ex> of yo<ex>ur</ex>
-                  ma<ex>ies</ex>t<ex>ies</ex> most ho<ex>noura</ex>ble prevy counsell shall seeme to
+                ma<ex>ies</ex>t<ex>ies</ex> most ho<ex>noura</ex>ble <rs ref="eats:351822" type="Collective_Office">prevy counsell</rs> shall seeme to
                 bee moste agreeable to lawe &amp; iustice.</ab>
 
               <ab><seg type="signed" rend="right"><damage><gap unit="chars" extent="3"/></damage></seg><note type="foot"><damage><gap unit="chars" extent="3"/></damage>: <hi rend="italic">signature illegible</hi></note></ab>
@@ -1863,7 +1865,7 @@
                 inserted into this informa<ex>c</ex>ion as they shalbe made knowne and discovered,
                 thereby Commanding them and every of them at a Certayne day and vnder a Certayne
                 paine therein to be limitted p<ex>er</ex>sonallie to be and appeare before your
-                  Ma<ex>ies</ex>tie and your most honorable privie Counsell in your
+                  Ma<ex>ies</ex>tie and your most honorable <rs ref="eats:351822" type="Collective_Office">privie Counsell</rs> in your
                 Ma<ex>ies</ex>ties high Court of Star Chamber then and there to answere the
                   p<ex>re</ex>misses and to abide such further order and censure therein as to your
                   Ma<ex>ies</ex>ties sayd honorable Councell shalbe thought fitt and most agreable
@@ -4338,7 +4340,7 @@
                 Com<ex>m</ex>aundinge them ‸<add place="above">and every of them therebye</add> at A
                 certeyne daie and vnder A certeyne payne therein to be limitted p<ex>er</ex>sonally
                 to be and appeare before yo<ex>ur</ex> Ma<ex>ies</ex>tie and ‸<add place="above">the
-                    lord<ex>es</ex> and others of</add> yo<ex>ur</ex> heignes Counsell in
+                  lord<ex>es</ex> and others of</add> yo<ex>ur</ex> heignes <rs ref="eats:351822" type="Collective_Office">Counsell</rs> in
                   yo<ex>ur</ex> most honnorable Cort of Starchamber then and there to make direct
                 Aunsweare to the p<ex>re</ex>misses. And to stande to and abide such further order
                   direcc<ex>i</ex>on and Censure therein for yo<ex>ur</ex> Subiect<ex>es</ex>

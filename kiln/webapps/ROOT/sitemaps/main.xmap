@@ -122,6 +122,27 @@
         <map:serialize />
       </map:match>
 
+      <!-- Timelines index. -->
+      <map:match id="ereed-timelines" pattern="timelines/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="../content/xml/timelines/index.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=timelines/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/timelines.xsl" />
+        <map:serialize />
+      </map:match>
+
+      <!-- Timeline. -->
+      <map:match id="ereed-timeline" pattern="timelines/*/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="cocoon://_internal/menu/main.xml?url=timelines/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/timeline.xsl">
+          <map:parameter name="timeline" value="{1}" />
+        </map:transform>
+        <map:serialize />
+      </map:match>
+
       <!-- About. -->
       <map:match id="ereed-about-section" pattern="about/">
         <map:redirect-to uri="series/" permanent="no" />

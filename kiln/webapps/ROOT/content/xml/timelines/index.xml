@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<timelines>
+  <title>Playhouse Timelines</title>
+  <!-- The content of the overview element is HTML that is copied
+       directly into the timelines template. -->
+  <overview>
+    <p>REED’s playhouse timelines provide a new way of navigating
+    through our digital playhouse editions. Here, you can explore
+    events relevant to each playhouse collection alongside a map of
+    locations related to each event. You can also find links that will
+    take you to records associated with each event in the timeline. We
+    hope that the timelines provide a way of browsing through the
+    playhouse collections that is complementary to the Explore
+    Collections view. Please see below for a list of currently
+    available and forthcoming timelines.</p>
+    <p>
+      On each timeline, you will see a list of events that have been selected by the collection editor(s) alongside a map of the area that is relevant to the events. 
+      This map has properties and features that are drawn from the records of the relevant eREED collection. 
+      Properties and features that are not listed in the collection's records will not appear on the map that accompanies the timeline.
+      Clicking on an event from the list on the left-hand side will highlight locations that are relevant to the selected event and zoom the map to display those locations.
+      The icon on the top-right corner of the map allows you to change the visible layers so that you can select the layers most pertinent to your interests. You can also change the map's base layer. 
+      The default base layer is REED's base. If you wish to see the modern-day context for any of the locations on map, you can switch to the OpenStreetMap base layer.
+      The icon on the bottom-right of the map allows you to see the map's legend, which provides some additional information about the icons you will find on the map.
+    </p>
+  </overview>
+  <live>
+    <timeline xml:id="rosep">
+      <title>Rose Playhouse Timeline</title>
+      <description>Timeline for the Rose Playhouse collection</description>
+    </timeline>
+  </live>
+  <development>
+    <timeline>Bear Gardens/Hope Playhouse Timeline</timeline>
+  </development>
+  <featured ref="#rosep">
+    <title>Rose Playhouse</title>
+    <!-- Thumbnail is the path of a PNG in content/images, excluding
+         the file extension and relative content/images. Eg,
+         "timelines/rose_timeline_thumbnail" -->
+    <thumbnail>timelines/rose_timeline_thumbnail</thumbnail>
+  </featured>
+</timelines>

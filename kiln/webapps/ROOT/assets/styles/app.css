@@ -8247,6 +8247,10 @@ h1 {
     text-decoration: underline
 }
 
+.smallcaps {
+    font-variant: small-caps
+}
+
 .relative {
     position: relative
 }
@@ -8875,4 +8879,83 @@ table:not(#table):not(#result-table):not(.related-entities-table) tbody tr td, t
     /* color: #94bfbc; */
     color: #513cbe;
     /* color: #be3c3c; */
+}
+
+.featured-timelines-thumbnail 
+{
+    height: 200px;
+    width: 250px;
+    padding: 5px;
+    
+}
+.timelines-overview-title
+{
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.timelines-overview-subtitle
+{
+    font-family: Georgia, serif;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.timelines-overview-link a:link
+{
+    font-family: Georgia, serif;
+    text-decoration: underline;
+    font-size: 18px;
+    color: #008281;
+}
+
+.timelines-overview-text p {
+    font-size: inherit;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-rendering: optimizeLegibility;
+}
+
+.timelines-overview-linebreak {   
+border-bottom: 1px solid #4a4a4a;
+margin-bottom: 15px;
+}
+
+.featured-timelines-card .card-content {
+    padding: 10px;
+    color: #000000;
+    font-size: 15px;
+    font-family: Georgia, serif
+}
+
+.featured-timelines-card {
+color: #fefefe;
+border: 1px solid #d7dbdd;
+font-family: HelveticaNeue, sans-serif;
+border-radius: 10px;
+overflow: hidden;
+background: #fefefe;
+margin-bottom: 35px
+}
+
+@media screen and (min-width:767px) {
+.featured-timelines-card {
+margin-bottom: 0
+}
+}
+
+.featured-timelines-card .card-header {
+padding: 20px
+}
+
+.featured-timelines-card .card-header .featured-timelines-header {
+font-size: 12px
+}
+
+.featured-timelines-card .card-header .timeline-name-header {
+font-size: 24px;
+font-family: Georgia, serif
 }

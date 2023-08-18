@@ -110,7 +110,7 @@
   <xsl:template name="display-record-associated-entities">
     <xsl:if test="tei:index[@indexName='associated_entity']/tei:term">
       <li class="accordion-item" data-accordion-item="">
-        <a href="#" class="accordion-title">Associated Events</a>
+        <a href="#" class="accordion-title">Event Entity Pages</a>
         <div class="accordion-content" data-tab-content="">
           <ul class="marginalia-list">
             <xsl:for-each select="tei:index[@indexName='associated_entity']/tei:term">
@@ -143,6 +143,7 @@
         <xsl:call-template name="display-record-marginalia" />
         <xsl:call-template name="display-record-footnotes" />
         <xsl:call-template name="display-record-translation" />
+        <xsl:call-template name="display-record-modernization" />
         <xsl:call-template name="display-record-collation-notes" />
         <xsl:call-template name="display-record-glossed-terms" />
         <xsl:call-template name="display-record-endnote" />
@@ -228,15 +229,20 @@
   </xsl:template>
 
   <xsl:template name="display-record-footnotes">
-    <xsl:if test=".//tei:note[@type='foot']">
+    <xsl:if test=".//tei:note[@type='foot' and not(ancestor::tei:div/@subtype='modernization')]">
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Footnotes</a>
         <div class="accordion-content" data-tab-content="">
           <ul class="footnotes">
-            <xsl:apply-templates mode="group" select=".//tei:note[@type='foot']" />
+            <xsl:apply-templates mode="group" select=".//tei:note[@type='foot' and not(ancestor::tei:div/@subtype='modernization')]" />
           </ul>
         </div>
       </li>
+    </xsl:if>
+    <xsl:if test=".//tei:note[@type='foot' and ancestor::tei:div/@subtype='modernization']">
+      <ul class="footnotes" style="display: none;">
+        <xsl:apply-templates mode="group" select=".//tei:note[@type='foot' and ancestor::tei:div/@subtype='modernization']" />
+      </ul>
     </xsl:if>
   </xsl:template>
 
@@ -247,7 +253,9 @@
         <div class="accordion-content" data-tab-content="">
           <ul class="glossed-terms">
             <xsl:variable name="text-id" select="@xml:id" />
-            <xsl:apply-templates mode="group" select=".//tei:term[@ref][not(@ref = preceding::tei:term[@ref][ancestor::tei:text[1]/@xml:id=$text-id]/@ref)]" />
+            <xsl:apply-templates mode="group" select=".//tei:term[@ref][not(@ref = preceding::tei:term[@ref][ancestor::tei:text[1]/@xml:id=$text-id]/@ref)]">
+              <xsl:sort order="ascending" select="id(substring-after(@ref, '#'))/ancestor::tei:entry[1]/tei:form/tei:orth" lang="en"/>
+            </xsl:apply-templates>
           </ul>
         </div>
       </li>
@@ -293,15 +301,20 @@
   </xsl:template>
 
   <xsl:template name="display-record-marginalia">
-    <xsl:if test=".//tei:note[@type='marginal']">
+    <xsl:if test=".//tei:note[@type='marginal' and not(ancestor::tei:div/@subtype='modernization')]">
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Marginalia</a>
         <div class="accordion-content" data-tab-content="">
           <ul class="marginalia-list">
-            <xsl:apply-templates mode="group" select=".//tei:note[@type='marginal']" />
+            <xsl:apply-templates mode="group" select=".//tei:note[@type='marginal' and not(ancestor::tei:div/@subtype='modernization')]" />
           </ul>
         </div>
       </li>
+    </xsl:if>
+    <xsl:if test=".//tei:note[@type='marginal' and ancestor::tei:div/@subtype='modernization']">
+      <ul class="marginalia-list" style="display: none;">
+        <xsl:apply-templates mode="group" select=".//tei:note[@type='marginal' and ancestor::tei:div/@subtype='modernization']" />
+      </ul>
     </xsl:if>
   </xsl:template>
 
@@ -384,11 +397,22 @@
   </xsl:template>
 
   <xsl:template name="display-record-translation">
-    <xsl:if test="./tei:body/tei:div[@type='translation']">
+    <xsl:if test="./tei:body/tei:div[@type='translation' and not (@subtype)]">
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Record Translation</a>
         <div class="accordion-content" data-tab-content="">
           <xsl:apply-templates select="tei:body/tei:div[@type='translation']" />
+        </div>
+      </li>
+    </xsl:if>
+  </xsl:template>
+  
+  <xsl:template name="display-record-modernization">
+    <xsl:if test="./tei:body/tei:div[@type='translation' and @subtype='modernization']">
+      <li class="accordion-item" data-accordion-item="">
+        <a href="#" class="accordion-title">Modernized Text</a>
+        <div class="accordion-content" data-tab-content="">
+          <xsl:apply-templates select="tei:body/tei:div[@type='translation' and @subtype='modernization']" />
         </div>
       </li>
     </xsl:if>

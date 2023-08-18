@@ -227,6 +227,8 @@ class Document:
         text = self._convert_at_codes(text)
         # To avoid problems with Python's .format(), double all curly braces.
         text = text.replace('{', '{{').replace('}', '}}')
+        text = text.replace('[[', '@DOUBLE_SQUARE_OPEN').replace(
+            ']]', '@DOUBLE_SQUARE_CLOSE')
         return text
 
     def validate(self, word_file_path, line_length):

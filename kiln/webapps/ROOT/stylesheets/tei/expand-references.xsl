@@ -106,6 +106,10 @@
     </xsl:for-each>
   </xsl:template>
 
+  <xsl:template match="tei:text[@sameAs]">
+    <xsl:apply-templates select="@*|node()"/>
+  </xsl:template>
+
   <xsl:template match="tei:*[@sameAs]">
     <xsl:call-template name="make-xinclude">
       <xsl:with-param name="url" select="@sameAs" />
@@ -149,6 +153,16 @@
   </xsl:template>
 
   <xsl:template match="@ana" />
+  <xsl:template match="tei:text/@sameAs">
+    <xsl:attribute name="other_collection_ids">
+      <xsl:for-each select="tokenize(., '\s+')">
+        <xsl:value-of select="substring-before(., '.xml')" />
+        <xsl:if test="position() != last()">
+          <xsl:text> </xsl:text>
+        </xsl:if>
+      </xsl:for-each>
+    </xsl:attribute>
+  </xsl:template>
   <xsl:template match="@sameAs" />
 
   <!-- Referenced records just need the tei:body/tei:head to be copied

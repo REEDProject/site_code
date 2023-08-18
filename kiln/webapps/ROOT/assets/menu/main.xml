@@ -17,10 +17,13 @@
       params="cambs" />
     <item label="Hampshire" match="ereed-collections-collection"
       params="hamps" />
-    <item label="Rose Playhouse Prototype" match="ereed-collections-collection" params="rosep" />
+    <item label="Rose Playhouse" match="ereed-collections-collection" params="rosep" />
     <item label="Staffordshire" match="ereed-collections-collection"
           params="staff" />
     <item label="Yorkshire North Riding" match="ereed-collections-collection" params="yksnr" />
+  </menu>
+  <menu label="Playhouse Timelines" match="ereed-timelines">
+    <item label="Rose Playhouse" match="ereed-timeline" params="rosep"/>
   </menu>
   <menu label="How To" match="ereed-howto-section">
     <item label="Introduction to the Research Process"

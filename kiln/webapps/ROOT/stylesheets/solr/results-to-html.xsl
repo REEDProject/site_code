@@ -244,7 +244,7 @@
 
   <!-- Display an individual search result (entity context). -->
   <xsl:template match="result/doc" mode="editorial-search-results">
-    <xsl:variable name="collection_id" select="str[@name='collection_id']" />
+    <xsl:variable name="collection_id" select="arr[@name='collection_id']/str[1]" />
     <xsl:variable name="part_id" select="str[@name='document_id']" />
     <xsl:variable name="result-url" select="kiln:url-for-match('ereed-collection-part', ($collection_id, $part_id), 0)" />
     <tr>

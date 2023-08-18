@@ -1,0 +1,203 @@
+#map {
+  height: 600px;
+  border: 1px solid #d7dbdd;
+  border-radius: 5px;
+}
+
+.event_title, .filters {
+  margin: 0px 0px;
+  padding-bottom: 20px;
+}
+
+.filter_buttons-container {
+  float: right;
+  margin: 5px 0px;
+}
+
+.filter_buttons-container * {
+  font-size: 14px;
+  font-family: 'Helvetica';
+}
+
+.filter_buttons-label {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0px 5px;
+  padding: 5px 10px;
+}
+
+.filter_buttons {
+  display: inline;
+  float: right;
+  margin: 0;
+}
+
+.filter_button {    
+  float: left;
+  margin: 0px 5px;
+  border: 1px solid #d7dbdd;
+  background: #f8f8f8;
+  border-radius: 5px;
+  overflow: hidden;
+  color: #008281;
+}
+
+.filter_button.active {
+  background-color: #02807F;
+  color: white;
+}
+
+.filter_button:not(.active):hover {
+  color: #008281;
+  background-color: #E5EFEE;
+}
+
+.filter_button a, .filter_button div {
+  padding: 5px 10px;
+  line-height: 21px;
+  display: block;
+  color: inherit;
+}
+
+.event_tabs * {
+  font-size: 14px;
+  font-family: 'Helvetica';
+}
+
+.event_tabs {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #d7dbdd;
+  list-style-type: none;
+  margin: 5px 0px;
+}
+
+.event_tab {    
+  float: left;
+  margin: -0.8px 5px;
+  border: 1px solid #d7dbdd;
+  background: #f8f8f8;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  font-size: 15px;
+  color: #008281;
+}
+
+.event_tab.active {
+  background-color: #02807F;
+  color: white;
+}
+
+.event_tab:not(.active):hover {
+  color: #008281;
+  background-color: #E5EFEE;
+}
+
+.event_tab a, .event_tab div {
+  padding: 5px 10px;
+  line-height: 21px;
+  display: block;
+  color: inherit;
+}
+
+
+.events {
+  margin-left: 0;
+  list-style-type: none;
+  border: 1px solid #d7dbdd;
+  border-radius: 5px;
+  background: #f8f8f8;
+  overflow: hidden;
+  height: 600px;
+  padding-right: 4px;
+}
+
+.events:hover {
+  overflow-y: auto;
+  padding-right: 0px;
+}
+
+
+.events * {
+  font-family: 'Helvetica';
+  font-size: 12px;
+}
+
+.events>li {
+  border-top: 1px solid #d7dbdd;
+}
+
+.event,
+.event:hover {
+  padding: 10px 10px;
+  display: block;
+}
+
+.event:hover {
+  background-color: #E5EFEE;
+}
+
+.event.active {
+  background: #F7FBFA;
+}
+
+.event .date {
+  font-weight: bold;
+  font-size: 15px;
+  color: #008281;
+}
+
+.event .description,
+.feature {
+  color: black;
+}
+
+.features {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+.feature {
+  display: block;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.feature-item-hover, .feature:hover {
+  background-color: #008281;
+  color: white;
+}
+
+
+/* SCROLLBAR: */
+/* Effective padding = ::-webkit-scrollbar-thumb.border */
+/* Effective width = ::-webkit-scrollbar.width - 2*( ::-webkit-scrollbar-thumb.border ) */
+/* Only applied to list elements (not to full page) */
+
+/* Firefox */
+@-moz-document url-prefix() {
+  .events {
+    scrollbar-width: thin;
+    padding-right: 9px;
+  }
+}
+
+/* Chrome/Edge */
+.events::-webkit-scrollbar {
+  width: 4px;
+}
+
+.events::-webkit-scrollbar-track {
+  background-color: #d6dee12a;
+}
+
+.events::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 2px;
+  border-top: 0px solid transparent;
+  background-clip: content-box;
+}
+
+.events::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
