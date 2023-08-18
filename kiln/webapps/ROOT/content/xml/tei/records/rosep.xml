@@ -25,17 +25,20 @@
           <orgName>Records of Early English Drama (REED)</orgName>
           <resp>Paleographer</resp>
           <resp>Translator</resp>
-          <resp>Latin and Anglo-French Glossarian</resp>
+          <resp>Glossarian</resp>
         </respStmt>
         <respStmt>
           <persName>Tanya Hagen</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
           <resp>Bibliographer</resp>
           <resp>Copy Editor</resp>
+          <resp>Project Manager</resp>
+          <resp>Proofreader</resp>
         </respStmt>
         <respStmt>
           <persName>Sally-Beth MacLean</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>Principal Investigator, SSHRC grant</resp>
           <resp>Director of Research</resp>
           <resp>General Editor</resp>
         </respStmt>
@@ -45,10 +48,12 @@
           <resp>Cartographer</resp>
         </respStmt>
         <respStmt>
-          <persName>Illya Nokhrin</persName>
+          <persName xml:id="IN">Illya Nokhrin</persName>
           <orgName>University of Toronto</orgName>
-          <resp>Research Assistant</resp>
+          <resp>Research Associate</resp>
           <resp>Indexer, Entity Tagger</resp>
+          <resp>REED EATS taxonomy developer</resp>
+          <resp>REED EATS database maintainer</resp>
         </respStmt>
         <respStmt>
           <persName xml:id="JN">Jamie Norrish</persName>
@@ -56,9 +61,18 @@
           <resp>TEI Schema Designer</resp>
           <resp>Technical Consultant</resp>
         </respStmt>
+        <respStmt>
+          <persName>Rory McClenagan</persName>
+          <resp>Timeline Developer</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Dave Luxton</persName>
+          <resp>Timeline Designer</resp>
+        </respStmt>
       </titleStmt>
       <editionStmt>
-        <edition>Version 2, released <date when-iso="2021-12-09">09 December 2021.</date></edition>
+        <edition>Version 3, released <date when-iso="2023-08-18">18 August 2023.</date></edition>
+        <!--<edition>Version 2, released <date when-iso="2021-12-09">09 December 2021.</date></edition>-->
         <!--<edition>version 1, released <date when-iso="2020-09-06">06 September 2020</date></edition>-->
       </editionStmt>
       <publicationStmt>
@@ -128,6 +142,7 @@
     </profileDesc>
     <revisionDesc>
       <!-- Add new major milestone changes to top -->
+      <change when="2023-08-18" who="#IN">Published full Rose Playhouse edition</change>
       <change when="2021-12-09" who="#IN">Published version 2 of rosep.xml</change>
       <change when="2021-11-22" who="#KC">Updated Responsibility Statements in File Description and
         edition number</change>
