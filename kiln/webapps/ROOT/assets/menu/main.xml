@@ -11,6 +11,8 @@
     <item label="Glossaries" match="ereed-about-glossaries" />
   </menu>
   <menu label="Explore Collections" match="ereed-collections">
+    <item label="Bear Gardens/Hope Playhouse" match="ereed-collections-collection"
+      params="bghop" />
     <item label="Berkshire" match="ereed-collections-collection"
       params="berks" />
     <item label="Cambridgeshire" match="ereed-collections-collection"
