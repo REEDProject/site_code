@@ -145,11 +145,54 @@
   </teiHeader>
   <facsimile>
     <graphic url="images/bghop/BHASSI.jpg" xml:id="BHASSIms">
-      <desc></desc>
+      <desc>The National Archives (UK), ref. Assizes 35/21/6, 30 July 1579</desc>
     </graphic>
-    <graphic url="iamges/bghop/BHPDEA.jpg" xml:id="BHPDEAms">
-      <desc></desc>
+    <graphic url="images/bghop/BHPDEA.jpg" xml:id="BHPDEAms">
+      <desc>The National Archives (UK), ref. C 3/368/80</desc>
     </graphic>
+    <graphic url="images/bghop/BHJBRB.jpg" xml:id="BHJBRBms">
+      <desc>The National Archives (UK), ref. C 146/8579</desc>
+    </graphic>
+    <graphic url="images/bghop/BHTSRB.jpg" xml:id="BHTSRBms">
+      <desc>The National Archives (UK), ref. C 146/8584</desc>
+    </graphic>
+    <graphic url="images/bghop/BHWPHE.jpg" xml:id="BHWPHEms">
+      <desc>The National Archives (UK), ref. PROB 10/327</desc>
+    </graphic>
+    <graphic url="images/bghop/BHATMA.jpg" xml:id="BHATMAms">
+      <desc>The National Archives (UK), ref. REQ 1/132</desc>
+    </graphic>
+    <graphic url="images/bghop/BHCMRC1.jpg" xml:id="BHCMRCms1">
+      <desc>The National Archives (UK), ref. C 38/27</desc>
+    </graphic>
+    <graphic url="images/bghop/BHCMRC1v.jpg" xml:id="BHCMRCms1v">
+      <desc>The National Archives (UK), ref. C 38/27</desc>
+    </graphic>
+    <graphic url="images/bghop/BHCMRC2.jpg" xml:id="BHCMRCms2">
+      <desc>The National Archives (UK), ref. C 38/27</desc>
+    </graphic>
+    <graphic url="images/bghop/BHLCWB.jpg" xml:id="BHLCWBms">
+      <desc>The National Archives (UK), ref. LC 5/132</desc>
+    </graphic>
+    <graphic url="images/bghop/BHSRSR.jpg" xml:id="BHSRSRms">
+      <desc>The National Archives (UK), ref. LR 2/190</desc>
+    </graphic>
+    <graphic url="images/bghop/BHPC13p143.jpg" xml:id="BHSRSRp143">
+      <desc>The National Archives (UK), ref. LR 2/190</desc>
+    </graphic>
+    <graphic url="images/bghop/BHPC13p144.jpg" xml:id="BHSRSRp144">
+      <desc>The National Archives (UK), ref. PC 2/46</desc>
+    </graphic>
+    <graphic url="images/bghop/BHPO12.jpg" xml:id="BHPO12ms">
+      <desc>The National Archives (UK), ref. PC 2/52</desc>
+    </graphic>
+    <graphic url="images/bghop/BHCRBDf74v.jpg" xml:id="BHCRBDf74v">
+      <desc>The National Archives (UK), ref. REQ 1/13</desc>
+    </graphic>
+    <graphic url="images/bghop/BHCRBDf75.jpg" xml:id="BHCRBDf75">
+      <desc>The National Archives (UK), ref. REQ 1/13</desc>
+    </graphic>
+    
   </facsimile>
   
   <text>
@@ -2361,7 +2404,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp269640856-transcription">
             <div>
               <head>p 725 <supplied>(11 September)</supplied></head>
-              <pb n="725" type="page"/>
+              <pb n="725" type="page" facs="#BHPO12ms"/>
 
               <gap reason="omitted"/>
 
@@ -2698,7 +2741,7 @@
             <div>
               <head>f 98 <supplied>(20 March)</supplied>
                 <supplied>(Crown lands in possession of Henry Polsted)</supplied></head>
-              <pb n="98" type="folio"/>
+              <pb n="98" type="folio" facs="#BHSRSRms"/>
 
               <gap reason="omitted"/>
 
@@ -3253,7 +3296,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp268444744-transcription">
             <div>
               <head>single membrane <supplied>(21 August)</supplied></head>
-              <pb n="1" type="membrane"/>
+              <pb n="1" type="membrane" facs="#BHTSRBms"/>
 
               <ab>This Indenture made<note type="foot">This … made: <hi rend="italic">in display
                     script;</hi> T <hi rend="italic">of</hi> This <hi rend="italic">large elaborated
@@ -5947,7 +5990,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp269518360-transcription">
             <div>
               <head> ff 74v–5 <supplied>(12 February)</supplied></head>
-              <pb n="74v" type="folio"/>
+              <pb n="74v" type="folio" facs="#BHCRBDf74v"/>
 
               <gap reason="omitted"/>
 
@@ -6016,7 +6059,7 @@
                   defendaunt<ex>es</ex> nor either of them nor any other p<ex>er</ex>son or
                   p<ex>er</ex>sons for them or in the name or names of them or either of them shall
                 by vertue meanes or pretence of any verdicte Iudgment or execution <pb n="75"
-                  type="folio"/> or<note type="foot">or: <hi rend="italic">also written as a
+                  type="folio" facs="#BHCRBDf75"/> or<note type="foot">or: <hi rend="italic">also written as a
                     catchword at foot of f 74v</hi></note> vpon the saide action or sute against the
                 saide Glover or other matter or Collour whatsoever enter in or to the
                 p<ex>re</ex>misses or any p<ex>ar</ex>te thereof or expel amove or putt out the
@@ -6073,7 +6116,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp257943400-transcription">
             <div>
               <head>single sheet <supplied>(5 October)</supplied></head>
-              <pb n="1" type="sheet"/>
+              <pb n="1" type="sheet" facs="#BHJBRBms"/>
 
               <ab>To all men to whome this p<ex>re</ex>sent wryting shall co<ex>m</ex>me I <rs ref="eats:338994" type="Person_Male">Iohn
                 Bixon</rs> of the <rs ref="eats:226221" type="Place_PA_Settlement">p<ex>ar</ex>ish of St Saviour</rs> in <rs ref="eats:36966" type="Place_PA_Settlement">Sowthwark</rs> in the countye of <rs ref="eats:2291" type="Place_County">Surrye</rs>
@@ -10383,7 +10426,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp274659880-transcription">
             <div>
               <head>single sheet <supplied>(6 January; probated 7 January)</supplied></head>
-              <pb n="1" type="sheet"/>
+              <pb n="1" type="sheet" facs="#BHWPHEms"/>
 
               <ab>In the name of God amen.<note type="foot">In … amen: <hi rend="italic">display
                     script</hi></note> I <rs ref="eats:129736" type="Person_Commoner">Phillipp Henslowe</rs> of the parrishe of <rs ref="eats:226221" type="Place_PA_Settlement">St Saviours</rs> in the
@@ -11873,7 +11916,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp262526440-transcription">
             <div>
               <head>ff [1-2] <supplied>(16 June)</supplied></head>
-              <pb n="[1]" type="folio"/>
+              <pb n="[1]" type="folio" facs="#BHCMRCms1"/>
 
               <ab rend="center">Inter<note type="marginal" place="margin_left">In
                   Cancellaria/</note> <rs ref="eats:153045" type="Person_Commoner">Edwardu<ex>m</ex> Allen</rs> Armigeru<ex>m</ex> Queren<ex>tem</ex>
@@ -11900,7 +11943,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
                 by good and sufficient conveyance or otherwise, or whether he were possessed euer
                 since the death of the said Agnes Henslow, or whether it be worth a .100. li.
                   p<ex>er</ex> ann<ex>um</ex> at the least, W<ex>hi</ex>ch in my Conceite he ought
-                to haue done. And <pb n="[1v]" type="folio"/> wheras<note type="foot">wheras: <hi
+                to haue done. And <pb n="[1v]" type="folio" facs="#BHCMRCms1v"/> wheras<note type="foot">wheras: <hi
                     rend="italic">also written as as catchword at the foot of f 1</hi></note> in the
                 bill it is said that the defend<ex>an</ex>t combyning himself w<ex>i</ex>th diuerse
                 other p<ex>er</ex>sons his associates &amp; insinuating himself into the companie of
@@ -11918,7 +11961,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
                 hath he deliu<ex>er</ex>ed any such to anie other p<ex>er</ex>son
                 app<ex>er</ex>teyning vnto<note type="foot">vnto: v <hi rend="italic">written over
                     another letter</hi></note> the comp<ex>lainan</ex>t w<ex>i</ex>thout answering
-                whether or noe hee did combine <pb n="[2]" type="folio"/> w<ex>i</ex>th<note
+                whether or noe hee did combine <pb n="[2]" type="folio" facs="#BHCMRCms2"/> w<ex>i</ex>th<note
                   type="foot">w<ex>i</ex>th: with <hi rend="italic">written as a catchword at the
                     foot of f 1v</hi></note> the plaintif<ex>es</ex> tennant<ex>es</ex> and
                   <rs ref="eats:297010" type="Collective_Occupations">servant<ex>es</ex></rs> or other p<ex>er</ex>sons and by that meanes gott the
@@ -17275,7 +17318,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp268742840-transcription">
             <div>
               <head>f [145v] <supplied>(5 February)</supplied></head>
-              <pb n="[145v]" type="folio"/>
+              <pb n="[145v]" type="folio" facs="#BHATMAms"/>
 
               <gap reason="omitted"/>
 
@@ -17694,7 +17737,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp269400152-transcription">
             <div>
               <head>p 182 <supplied>(17 April)</supplied></head>
-              <pb n="182" type="page"/>
+              <pb n="182" type="page" facs="#BHLCWBms"/>
 
               <gap reason="omitted"/>
 
@@ -17875,7 +17918,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp267855480-transcription">
             <div>
               <head>p 143 <supplied>(10 May)</supplied></head>
-              <pb n="143" type="page"/>
+              <pb n="143" type="page" facs="#BHPC13p143"/>
 
               <gap reason="omitted"/>
 
@@ -17892,7 +17935,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
             </div>
             <div>
               <head>p 144</head>
-              <pb n="144" type="page"/>
+              <pb n="144" type="page" facs="#BHPC13p144"/>
 
               <gap reason="omitted"/>
 
