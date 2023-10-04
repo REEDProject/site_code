@@ -474,12 +474,12 @@
                             <ref>[<hi rend="italic">OLD, DML</hi>]</ref>
                         </sense>
                     </entry>
-                    <entry xml:id="aufugere">
+                    <entry xml:id="auffugere">
                         <form>
-                            <orth>aufugere</orth> 
+                            <orth>auffugere</orth> 
                             <gram>v inf</gram> 
                         </form>
-                        <sense xml:id="aufugere-1"> <hi rend="italic">var of</hi> affugere <ref>[<hi rend="italic">DML</hi></ref>] 
+                        <sense xml:id="auffugere-1"> <hi rend="italic">var of</hi> affugere <ref>[<hi rend="italic">DML</hi></ref>] 
                         </sense>
                     </entry>
                     
@@ -872,12 +872,12 @@
                         <sense xml:id="exhennium-1"><hi rend="italic">var of</hi> exenium <ref>[<hi rend="italic">DML</hi>]</ref>
                         </sense>
                     </entry>
-                    <entry xml:id="exiccatam">
+                    <entry xml:id="exiccatus">
                         <form>
-                            <orth>exiccatam</orth> 
+                            <orth>exiccatus, -a, -um</orth> 
                             <gram>pfp</gram> 
                         </form>
-                        <sense xml:id="exiccatam-1"> <hi rend="italic">var of</hi> exiccatam <ref>[<hi rend="italic">DML</hi>, exsiccare</ref>
+                        <sense xml:id="exiccatus-1"> <hi rend="italic">var of</hi> exiccatus <ref>[<hi rend="italic">DML</hi>, exsiccare</ref>
                         </sense>
                     </entry>
                     
@@ -1903,12 +1903,12 @@
                         <sense xml:id="aboef-1">above</sense>
                     </entry>
                     
-                    <entry xml:id="aboughts">
+                    <entry xml:id="aboughtes">
                         <form>
-                            <orth>aboughts</orth> 
+                            <orth>aboughtes</orth> 
                             <gram>prep</gram>
                         </form> 
-                        <sense xml:id="aboughts-1"> about</sense> 
+                        <sense xml:id="aboughtes-1"> about</sense> 
                     </entry>
                     
                     <entry xml:id="abridgis">
@@ -3798,11 +3798,15 @@
                             <orth>eand</orth>
                             <gram>n</gram>
                         </form> 
-                        <sense xml:id="eand-1">end; 
-                            <form>
-                                <orth>eande</orth>
-                            </form>
-                    </sense> 
+                        <sense xml:id="eand-1">end</sense> 
+                    </entry>
+                    <entry xml:id="eande">
+                        <form>
+                            <orth>eande</orth>
+                            <gram>v</gram>
+                        </form> 
+                        <sense xml:id="eande-1">end, conclude
+                        </sense> 
                     </entry>
                     <entry xml:id="easlier"><form><orth>easlier</orth> <gram>adv</gram></form> <sense xml:id="easlier-1">comparative of easily, more easily <ref>[<hi rend="italics">cp OEDO</hi>, easierly]</ref></sense></entry>
                     <entry xml:id="eccerise">
@@ -4749,9 +4753,9 @@
                     <entry xml:id="hey">
                         <form>
                             <orth>hey</orth> 
-                            <gram>adj</gram> 
+                            <gram>adv</gram> 
                         </form>
-                        <sense xml:id="hey-1">high
+                        <sense xml:id="hey-1">high, highly
                         </sense>
                     </entry>
                     
