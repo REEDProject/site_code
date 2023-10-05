@@ -252,6 +252,22 @@
       <desc>© <ref target="https://www.cityoflondon.gov.uk/lma">London Metropolitan Archives</ref>
         (City of London), SKCS 027</desc>
     </graphic>
+    <graphic url="images/bghop/BHSKC4.jpg" xml:id="BHSKC4">
+      <desc>© <ref target="https://www.cityoflondon.gov.uk/lma">London Metropolitan Archives</ref>
+        (City of London), SKCS 025</desc>
+    </graphic>
+    <graphic url="images/bghop/BHSKC3.jpg" xml:id="BHSKC3">
+      <desc>© <ref target="https://www.cityoflondon.gov.uk/lma">London Metropolitan Archives</ref>
+        (City of London), SKCS 023</desc>
+    </graphic>
+    <graphic url="images/bghop/BHSKC2.jpg" xml:id="BHSKC2">
+      <desc>© <ref target="https://www.cityoflondon.gov.uk/lma">London Metropolitan Archives</ref>
+        (City of London), SKCS 020</desc>
+    </graphic>
+    <graphic url="images/bghop/BHSKC1.jpg" xml:id="BHSKC1">
+      <desc>© <ref target="https://www.cityoflondon.gov.uk/lma">London Metropolitan Archives</ref>
+        (City of London), SKCS 019</desc>
+    </graphic>
   </facsimile>
   
   <text>
@@ -3628,7 +3644,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp268143416-transcription">
             <div>
               <head>f 121 <supplied>(25 February)</supplied></head>
-              <pb n="121" type="folio"/>
+              <pb n="121" type="folio" facs="BHSKCSf121"/>
 
               <gap reason="omitted"/>
 
@@ -8403,7 +8419,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp265669656-transcription">
             <div>
               <head>mb 1d <supplied>(12 May)</supplied></head>
-              <pb n="1d" type="membrane"/>
+              <pb n="1d" type="membrane" facs="#BHSKC1"/>
 
               <gap reason="omitted"/>
 
@@ -9071,7 +9087,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp265656328-transcription">
             <div>
               <head>mb 1d <supplied>(16 June)</supplied></head>
-              <pb n="1d" type="membrane"/>
+              <pb n="1d" type="membrane" facs="#BHSKC2"/>
 
               <gap reason="omitted"/>
 
@@ -12665,7 +12681,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp265189448-transcription">
             <div>
               <head>mb 2 <supplied>(8 April)</supplied></head>
-              <pb n="2" type="membrane"/>
+              <pb n="2" type="membrane" facs="#BHSKC3"/>
 
               <gap reason="omitted"/>
 
@@ -17433,7 +17449,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp266006328-transcription">
             <div>
               <head>mbs 2d–3 <supplied>(25 August)</supplied></head>
-              <pb n="2d" type="membrane"/>
+              <pb n="2d" type="membrane" facs="#BHSKC4"/>
 
               <gap reason="omitted"/>
 
