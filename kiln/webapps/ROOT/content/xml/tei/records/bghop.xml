@@ -356,6 +356,22 @@
       <desc>© <ref target="https://www.cityoflondon.gov.uk/lma">London Metropolitan Archives</ref>
         (City of London), COL/RMD/PA/01/001</desc>
     </graphic>
+    <graphic url="images/bghop/BHPOJP.jpg" xml:id="BHPOJP">
+      <desc>© <ref target="https://www.cityoflondon.gov.uk/lma">London Metropolitan Archives</ref>
+        (City of London), COL/CC/01/01/028</desc>
+    </graphic>
+    <graphic url="images/bghop/BHCJ21.jpg" xml:id="BHCJ21">
+      <desc>© <ref target="https://www.cityoflondon.gov.uk/lma">London Metropolitan Archives</ref>
+        (City of London), COL/CC/01/01/022</desc>
+    </graphic>
+    <graphic url="images/bghop/BHOCA2.jpg" xml:id="BHOCA2">
+      <desc>© <ref target="https://www.cityoflondon.gov.uk/lma">London Metropolitan Archives</ref>
+        (City of London), COL/CA/01/01/25</desc>
+    </graphic>
+    <graphic url="images/bghop/BHOCAD.jpg" xml:id="BHOCAD">
+      <desc>© <ref target="https://www.cityoflondon.gov.uk/lma">London Metropolitan Archives</ref>
+        (City of London), COL/CA/01/01/022</desc>
+    </graphic>
   </facsimile>
   
   <text>
@@ -4077,7 +4093,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp267708136-transcription">
             <div>
               <head>f 391 <supplied>(17 January)</supplied></head>
-              <pb n="391" type="folio"/>
+              <pb n="391" type="folio" facs="#BHOCAD"/>
 
               <gap reason="omitted"/>
 
@@ -4449,7 +4465,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp269496296-transcription">
             <div>
               <head>f 255v <supplied>(16 January)</supplied></head>
-              <pb n="255v" type="folio"/>
+              <pb n="255v" type="folio" facs="#BHCJ21"/>
 
               <ab rend="center">By the <rs ref="eats:337186" type="Person_StatusOther">Maior</rs>./</ab>
 
@@ -7039,7 +7055,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp267835640-transcription">
             <div>
               <head>f 50v <supplied>(11 April)</supplied></head>
-              <pb n="50v" type="folio"/>
+              <pb n="50v" type="folio" facs="#BHOCA2"/>
 
               <gap reason="omitted"/>
 
@@ -8544,7 +8560,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp269362936-transcription">
             <div>
               <head>f 366v <supplied>(<ex>c</ex> May)</supplied></head>
-              <pb n="366v" type="folio"/>
+              <pb n="366v" type="folio" facs="#BHPOJP"/>
 
               <gap reason="omitted"/>
 
