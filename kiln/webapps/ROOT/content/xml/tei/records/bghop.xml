@@ -372,6 +372,15 @@
       <desc>© <ref target="https://www.cityoflondon.gov.uk/lma">London Metropolitan Archives</ref>
         (City of London), COL/CA/01/01/022</desc>
     </graphic>
+    <graphic url="images/bghop/BHLLB1.jpg" xml:id="BHLLB1">
+      <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, Lansdowne MS 71/f 8</desc>
+    </graphic>
+  <graphic url="images/bghop/BHLWFB.jpg" xml:id="BHLWFB">
+    <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, Lansdowne MS 71/f 11</desc>
+  </graphic>
+    <graphic url="images/bghop/BHJPWM.jpg" xml:id="BHJPWM">
+      <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, Egerton MS 2623</desc>
+  </graphic>
   </facsimile>
   
   <text>
@@ -3658,7 +3667,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp258390808-transcription">
             <div>
               <head>single sheet <supplied>(1 August)</supplied></head>
-              <pb n="1" type="sheet"/>
+              <pb n="1" type="sheet" facs="#BHJPWM"/>
 
               <ab>To<note type="foot">To: <hi rend="italic">display initial</hi> T</note> all
                 Christeynn People to whome this p<ex>rese</ex>nte writinge shall Come <rs ref="eats:337302" type="Person_Commoner">Iohan Payne</rs> of
@@ -4313,7 +4322,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp265001832-transcription">
             <div>
               <head>f [2] <supplied>(13 January)</supplied></head>
-              <pb n="[2]" type="folio"/>
+              <pb n="[2]" type="folio" facs="#BHLWFB"/>
 
               <gap reason="omitted"/>
 
@@ -4429,7 +4438,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp265137720-transcription">
             <div>
               <head>f [1] <supplied>(14 January)</supplied></head>
-              <pb n="[1]" type="folio"/>
+              <pb n="[1]" type="folio" facs="#BHLLB1"/>
 
               <ab>My duetye humblye don to <rs ref="eats:130613" type="Person_Nobility">yo<ex>u</ex>r L<ex>ordshi</ex>pp</rs>, I haue accordinge to
                   yo<ex>u</ex>r L<ex>ordshi</ex>ps direction by your L<ex>ett</ex>res reformed the
@@ -17689,7 +17698,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
             <div>
               <head>f [1] <supplied>(21 December)</supplied></head>
                
-              <pb n="[1]" type="folio"/>
+              <pb n="[1]" type="folio" facs="#BHLLMP"/>
 
               <ab>Our duetyes to <rs ref="eats:351822" type="Collective_Office">yo<ex>u</ex>r L<ex>ordshi</ex>pps</rs> most humbly remembred/ The
                 remembraunce of the late grevious infecc<ex>i</ex>on and contagion of the plague
