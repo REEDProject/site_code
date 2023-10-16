@@ -378,9 +378,15 @@
   <graphic url="images/bghop/BHLWFB.jpg" xml:id="BHLWFB">
     <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, Lansdowne MS 71/f 11</desc>
   </graphic>
-    <graphic url="images/bghop/BHJPWM.jpg" xml:id="BHJPWM">
+  <graphic url="images/bghop/BHJPWM.jpg" xml:id="BHJPWM">
       <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, Egerton MS 2623</desc>
   </graphic>
+    <graphic url="images/bghop/BHFWPC.jpg" xml:id="BHFWPC">
+      <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, SP 15/27B</desc>
+  </graphic>
+    <graphic url="images/bghop/BHPC12.jpg" xml:id="BHPC12">
+      <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, PC 2/39</desc>
+    </graphic>
   </facsimile>
   
   <text>
@@ -6144,7 +6150,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp265927496-transcription">
             <div>
               <head>f [1] <supplied>(26 May)</supplied></head>
-              <pb n="[1]" type="folio"/>
+              <pb n="[1]" type="folio" facs="#BHFWPC"/>
 
               <ab>After<note type="foot">After: <hi rend="italic">display initial</hi> A</note> my
                 veary hartie comendations wher as by meanes of a do<ex>u</ex>ble conveyence made by
@@ -18034,7 +18040,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp269630360-transcription">
             <div>
               <head>p 752 <supplied>(14 April) (Whitehall)</supplied></head>
-              <pb n="752" type="page"/>
+              <pb n="752" type="page" facs="#BHPC12"/>
 
               <gap reason="omitted"/>
 
