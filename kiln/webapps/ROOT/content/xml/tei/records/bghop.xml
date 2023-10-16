@@ -378,9 +378,15 @@
   <graphic url="images/bghop/BHLWFB.jpg" xml:id="BHLWFB">
     <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, Lansdowne MS 71/f 11</desc>
   </graphic>
-    <graphic url="images/bghop/BHJPWM.jpg" xml:id="BHJPWM">
+  <graphic url="images/bghop/BHJPWM.jpg" xml:id="BHJPWM">
       <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, Egerton MS 2623</desc>
   </graphic>
+    <graphic url="images/bghop/BHFWPC.jpg" xml:id="BHFWPC">
+      <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, SP 15/27B</desc>
+  </graphic>
+    <graphic url="images/bghop/BHPC12.jpg" xml:id="BHPC12">
+      <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, PC 2/39</desc>
+    </graphic>
   </facsimile>
   
   <text>
@@ -3716,9 +3722,9 @@
                 to mee Co<ex>m</ex>mitted for diuers and Sundry good Causses and Ressonable
                 Considerations mee especially mouinge haue giuen granted assigned and set ouer and
                 by this my p<ex>re</ex>sent writinge doe giue graunt assigne and set ouer vnto my
-                welbelowed <rs ref="eats:337733" type="Person_Commoner">Iohn<note type="foot"> Iohn: n <hi rend="italic">written over</hi>
+                welbelowed <rs ref="eats:337733" type="Person_Commoner">Iohn</rs><note type="foot"> Iohn: n <hi rend="italic">written over</hi>
                   a</note>
-                <del>Payne</del> White</rs> of Southwarke afforsaid yeoman and to <rs ref="eats:337795" type="Person_Commoner">Iohn maulthows</rs> of
+                <rs ref="eats:337733" type="Person_Commoner"><del>Payne</del> White</rs> of Southwarke afforsaid yeoman and to <rs ref="eats:337795" type="Person_Commoner">Iohn maulthows</rs> of
                 ffremalt afforsaid yoman aswell the said Indentur of Lease as all my estate right
                 title Intrest demand and terme of yeares w<ex>hi</ex>ch I the said Iohan haue yet to
                 Come of and in the said Capitall meases and Ten<ex>emen</ex>t<ex>es</ex> Called the
@@ -4719,7 +4725,7 @@
                 w<ex>i</ex>th divers ‸<add place="above">other</add> smale howses gardens and
                   wharf<ex>es</ex> and all the commodities and profitt<ex>es</ex> Cominge in and
                 vppon the same or anye p<ex>ar</ex>te therof for the terme of fowerscore and
-                nynteine years to be accompted from the <rs ref="eats:72087" type="CalendarDay_Liturgical">feaste of thanunciac<ex>i</ex>on<note type="foot"> thanunciac<ex>i</ex>on: <hi rend="italic">4 minims for</hi> nun<hi rend="italic">; abbreviation mark omitted</hi></note> of our Ladye</rs>
+                nynteine years to be accompted from the <rs ref="eats:72087" type="CalendarDay_Liturgical">feaste of thanunciac<ex>i</ex>on</rs><note type="foot"> thanunciac<ex>i</ex>on: <hi rend="italic">4 minims for</hi> nun<hi rend="italic">; abbreviation mark omitted</hi></note> of our Ladye
                 S<ex>ai</ex>nt Marye the virgin nexte ensuinge the date of the same Indenture ffor
                 the yearlye Rente of ix s and sixe pence payable yearlye at the <rs ref="eats:42598" type="CalendarDay_Liturgical">ffeaste of
                   S<ex>ai</ex>nt mychaell tharkangell</rs> and thanunciac<ex>i</ex>on<note type="foot">
@@ -6144,7 +6150,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp265927496-transcription">
             <div>
               <head>f [1] <supplied>(26 May)</supplied></head>
-              <pb n="[1]" type="folio"/>
+              <pb n="[1]" type="folio" facs="#BHFWPC"/>
 
               <ab>After<note type="foot">After: <hi rend="italic">display initial</hi> A</note> my
                 veary hartie comendations wher as by meanes of a do<ex>u</ex>ble conveyence made by
@@ -14596,7 +14602,9 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
                 garden grownd or dog yard comonly held taken or esteemed to be the King<ex>es</ex>
                   Ma<ex>ies</ex>t<ex>ies</ex> land<ex>es</ex> as you knowe or belieue and what is
                 the reason of your knowledge or belief herein and how is or ought the said dog yard
-                to be butted or bounded. Item<note type="foot">Item: <hi rend="italic">display
+                to be butted or bounded.</ab>
+              
+              <ab> Item<note type="foot">Item: <hi rend="italic">display
                     script</hi></note><note type="marginal" place="margin_left">9</note> what
                   building<ex>es</ex> haue bene erected and are now standing vpo<ex>n</ex> the said
                 grownd heretofore called the dogg yard, by whome were they built, how much thereof
@@ -18033,7 +18041,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp269630360-transcription">
             <div>
               <head>p 752 <supplied>(14 April) (Whitehall)</supplied></head>
-              <pb n="752" type="page"/>
+              <pb n="752" type="page" facs="#BHPC12"/>
 
               <gap reason="omitted"/>
 
