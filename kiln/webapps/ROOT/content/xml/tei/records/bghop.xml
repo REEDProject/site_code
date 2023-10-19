@@ -390,6 +390,12 @@
     <graphic url="images/bghop/BHLLMP.jpg" xml:id="BHLLMP">
       <desc>© <ref target="https://www.bl.uk/">British Library</ref> Egerton MS 2623</desc>
     </graphic>
+    <graphic url="images/bghop/BHJMAHmb1.jpg" xml:id="BHJMAHmb1">
+      <desc>© <ref target="https://www.bl.uk/">British Library</ref> Egerton MS 2623</desc>
+    </graphic>
+    <graphic url="images/bghop/BHJMAHmb2.jpg" xml:id="BHJMAHmb2">
+      <desc>© <ref target="https://www.bl.uk/">British Library</ref> Egerton MS 2623</desc>
+    </graphic>
   </facsimile>
   
   <text>
@@ -16656,7 +16662,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp261321848-transcription">
             <div>
               <head>single membrane <supplied>(31 May) (Bill of complaint)</supplied></head>
-              <pb n="1" type="membrane"/>
+              <pb n="1" type="membrane" facs="#BHJMAHmb1"/>
 
               <ab rend="center"><handShift/>Ult<ex>imo</ex> Maij 1624 <seg type="signed"
                       ><damage><gap unit="chars" extent="5"/></damage></seg><handShift/>To the right
@@ -17013,7 +17019,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
             <div>
               <head>single membrane <supplied>(7 June) (Answers of Anne Henslowe et
                 al)</supplied></head>
-              <pb n="1" type="membrane"/>
+              <pb n="2" type="membrane" facs="BHJMAHmb2"/>
 
               <ab><handShift/><damage><gap unit="chars" extent="5"/></damage>es tres Iurat<ex>i</ex>
                 7 die Iunij 1624<handShift/>
