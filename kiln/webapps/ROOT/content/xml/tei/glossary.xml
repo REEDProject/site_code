@@ -2625,7 +2625,7 @@
                         <form>
                             <orth>bol</orth> <gram>n</gram>
                         </form>
-                        <sense>
+                        <sense xml:id="bol-1">
                             bull; 
                             <form><orth>boole</orth>; <orth>boles</orth>, <orth>boulles</orth> <gram>pl</gram></form>
                         </sense>
@@ -3681,6 +3681,14 @@
                             <gram>adj</gram>
                         </form>
                         <sense xml:id="diuors-1">divers</sense>
+                    </entry>
+                    
+                    <entry xml:id="dodges">
+                        <form>
+                            <orth>dodges</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="dodges-1">dogs</sense>
                     </entry>
 
                     <entry xml:id="dogge">
