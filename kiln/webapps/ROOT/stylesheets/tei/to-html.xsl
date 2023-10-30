@@ -131,7 +131,17 @@
   <xsl:template match="tei:idno[@type='publication']" mode="doc_desc">
     <br />
     <xsl:text>Publication: </xsl:text>
-    <xsl:value-of select="." />
+    <xsl:choose>
+      <xsl:when test="normalize-space() = 'STC Pollard and Redgrave (eds), Short-Title Catalogue'">
+        <xsl:text>STC</xsl:text>
+      </xsl:when>
+      <xsl:when test="normalize-space() = 'Wing Wing, Short-Title Catalogue'">
+        <xsl:text>Wing</xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="." />
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="tei:idno[@type='pubNumber']" mode="doc_desc">
