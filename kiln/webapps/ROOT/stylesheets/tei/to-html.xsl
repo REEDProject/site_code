@@ -133,7 +133,7 @@
     <xsl:text>Publication: </xsl:text>
     <xsl:choose>
       <xsl:when test="normalize-space() = 'STC Pollard and Redgrave (eds), Short-Title Catalogue'">
-        <xsl:text>STC</xsl:text>
+        <i><xsl:text>STC</xsl:text></i>
       </xsl:when>
       <xsl:when test="normalize-space() = 'Wing Wing, Short-Title Catalogue'">
         <xsl:text>Wing</xsl:text>
