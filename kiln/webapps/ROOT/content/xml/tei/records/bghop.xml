@@ -383,7 +383,7 @@
     <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, Lansdowne MS 37/f 11</desc>
   </graphic>
   <graphic url="images/bghop/BHJPWM.jpg" xml:id="BHJPWM">
-      <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, Egerton MS 2623</desc>
+      <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, Egerton MS 2623 ff 13v-14r</desc>
   </graphic>
     <graphic url="images/bghop/BHFWPC.jpg" xml:id="BHFWPC">
       <desc>© <ref target="https://www.bl.uk/">British Library</ref> Board, SP 15/27B</desc>
@@ -402,6 +402,42 @@
     </graphic>
     <graphic url="images/bghop/BHJHCO.jpg" xml:id="BHJHCO">
       <desc><ref target="https://archives.parliament.uk/">Parliamentary Archives</ref>, London: HC/CL/JO/1/24, f [306v]</desc>
+    </graphic>
+    <graphic url="images/bghop/BHEBDGmb8.jpg" xml:id="BHEBDGmb8">
+      <desc>The National Archives (UK), ref. REQ 2/177/35</desc>
+    </graphic>
+    <graphic url="images/bghop/BHEBDGmb7.jpg" xml:id="BHEBDGmb7">
+      <desc>The National Archives (UK), ref. REQ 2/177/35</desc>
+    </graphic>
+    <graphic url="images/bghop/BHEBDGmb6.jpg" xml:id="BHEBDGmb6">
+      <desc>The National Archives (UK), ref. REQ 2/177/35</desc>
+    </graphic>
+    <graphic url="images/bghop/BHEBDGmb2.jpg" xml:id="BHEBDGmb2">
+      <desc>The National Archives (UK), ref. REQ 2/177/35</desc>
+    </graphic>
+    <graphic url="images/bghop/BHEBDGmb4.jpg" xml:id="BHEBDGmb4">
+      <desc>The National Archives (UK), ref. REQ 2/177/35</desc>
+    </graphic>
+    <graphic url="images/bghop/BHWLBG.jpg" xml:id="BHWLBG">
+      <desc>The National Archives (UK), ref. C 146/8578</desc>
+    </graphic>
+    <graphic url="images/bghop/BHBLBGmb1.jpg" xml:id="BHBLBGmb1">
+      <desc>The National Archives (UK), ref. C 146/8581</desc>
+    </graphic>
+    <graphic url="images/bghop/BHPCCA.jpg" xml:id="BHPCCA">
+      <desc>The National Archives (UK), ref. E 321/25/92</desc>
+    </graphic>
+    <graphic url="images/bghop/BHJHAHmb1.jpg" xml:id="BHJHAHmb1">
+      <desc>The National Archives (UK), Court of Chancery: Examiners' Office: Town Depositions, ref. C 24/428</desc>
+    </graphic>
+    <graphic url="images/bghop/BHJHAHmb2.jpg" xml:id="BHJHAHmb2">
+      <desc>The National Archives (UK), Court of Chancery: Examiners' Office: Town Depositions, ref. C 24/428</desc>
+    </graphic>
+    <graphic url="images/bghop/BHSHHAmb5.jpg" xml:id="BHSHHAmb5">
+      <desc>The National Archives (UK), ref. STAC 8/168/18</desc>
+    </graphic>
+    <graphic url="images/bghop/BHSHHAmb4.jpg" xml:id="BHSHHAmb4">
+      <desc>The National Archives (UK), ref. STAC 8/168/18</desc>
     </graphic>
   </facsimile>
   
@@ -2850,7 +2886,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp266090440-transcription">
             <div>
               <head>single membrane</head>
-              <pb n="1" type="membrane"/>
+              <pb n="1" type="membrane" facs="#BHPCCA"/>
 
               <ab rend="center">To the right worshipfull <rs ref="eats:329990" type="Person_Nobility">Mr Chauncelo<ex>ur</ex></rs> and
                 gen<ex>er</ex>all Surveyo<ex>u</ex>r of the king<ex>es</ex><lb/>M<ex>aiest</ex>ies
@@ -4533,7 +4569,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp251777144-transcription">
             <div>
               <head>Item 8 <supplied>(30 January) (Bill of Complaint)</supplied></head>
-              <pb n="8"/>
+              <pb n="8" facs="#BHEBDGmb8"/>
 
               <ab rend="center">To the <rs ref="eats:11772" type="Person_Royalty">Quenes</rs> most Excellent ma<ex>iest</ex>ie/</ab>
 
@@ -4697,7 +4733,7 @@
             <div>
               <head>Item 7, single membrane <supplied>(11 February 1583/4) (Answer of John Digges
                   and John Gape)</supplied></head>
-              <pb n="7"/>
+              <pb n="7" facs="#BHEBDG"/>
 
               <ab rend="center">The<note type="marginal" place="margin_left"><handShift/>xj<hi
                     rend="superscript">o</hi> die ffebr<ex>uarie</ex> A<ex>nn</ex>o<lb/>
@@ -4810,7 +4846,7 @@
             <div>
               <head>Item 6, single membrane <supplied>(6 May) (Replication of Edward
                   Bowes)</supplied></head>
-              <pb n="6"/>
+              <pb n="6" facs="#BHEBDGmb6"/>
 
               <ab rend="center"><note type="marginal" place="margin_left"><handShift/>Sexto die Maij
                   Anno Regni<lb/> Regine Elizabethe Etc xxvj/<handShift/></note>The
@@ -4966,7 +5002,7 @@
             <div>
               <head>Item 4, single membrane <supplied>(Interrogatories on behalf of John Digges and
                   John Gape)</supplied></head>
-              <pb n="4"/>
+              <pb n="4" facs="#BHEBDGmb4"/>
 
               <ab rend="center">Interrogatories to be mynistred at the p<ex>ar</ex>te and behalf of
                 <rs ref="eats:338594" type="Person_Commoner">Iohn Digg<ex>es</ex></rs> and <rs ref="eats:338612" type="Person_Commoner">Iohn Gape</rs> defendaunt<ex>es</ex> agaynst <rs ref="eats:336073" type="Person_Commoner">Edward Bowes</rs>
@@ -5363,7 +5399,7 @@
             <div>
               <head>Item 2 single membrane <supplied>(Interrogatories on behalf of Edward
                   Bowes)</supplied></head>
-              <pb n="2" type="single_membrane"/>
+              <pb n="2" type="single_membrane" facs="#BHEBDGmb2"/>
               <!-- IN: Not 100% sure about the pb numbering here; TH: ask PG? -->
 
               <ab rend="center">Interrogatoryes to be mynistred on the p<ex>ar</ex>te and behalf of
@@ -6667,7 +6703,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp264914232-transcription">
             <div>
               <head>single membrane <supplied>(10 November)</supplied></head>
-              <pb n="1" type="membrane"/>
+              <pb n="1" type="membrane" facs="#BHWLBG"/>
 
               <ab>This Indenture made<note type="foot">This … made: <hi rend="italic">written in
                     display script</hi></note> the Tenthe daie of november In the two and thirtith
@@ -6846,7 +6882,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp265314616-transcription">
             <div>
               <head>single membrane <supplied>(15 December)</supplied></head>
-              <pb n="1" type="membrane"/>
+              <pb n="1" type="membrane" facs="#BHBLBGmb1"/>
 
               <ab>This Indenture<note type="foot">This Indenture: <hi rend="italic">display script
                     with elaborated initial</hi> T</note> made the ffyftenth daye of December in the
@@ -10395,7 +10431,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp260382120-transcription">
             <div>
               <head>Item 48, mb 1 <supplied>(Interrogatories)</supplied></head>
-              <pb n="1" type="membrane"/>
+              <pb n="1" type="membrane" facs="#BHJHAHmb1"/>
 
               <ab>Inprimis<note type="foot">Inprimis: <hi rend="italic">in display
                   script</hi></note><note type="marginal" place="margin_left">1</note> doe you knowe
@@ -10604,7 +10640,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
             </div>
             <div>
               <head>mb [2]</head>
-              <pb n="[2]" type="membrane"/>
+              <pb n="[2]" type="membrane" facs="#BHJHAHmb2"/>
 
               <ab>Item<note type="marginal" place="margin_left">23</note> were not you one that
                 praised the ‸<add place="above">p<ex>er</ex>sonall</add> estate of Phillipp Henslowe
@@ -12243,7 +12279,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp266920104-transcription">
             <div>
               <head>mb 5 <supplied>(17 May) (Bill of Complaint)</supplied></head>
-              <pb n="5" type="membrane"/>
+              <pb n="5" type="membrane" facs="#BHSHHAmb5"/>
 
               <ab rend="center">To the <rs ref="eats:17496" type="Person_Male">King<ex>es</ex></rs> most excellent Ma<ex>ies</ex>ty</ab>
 
@@ -12635,7 +12671,7 @@ Blowne full of Enuie, bursts it selfe to Rayle, <pb n="B4" type="signature"/><lb
             </div>
             <div>
               <head>mb 4 <supplied>(21 July) (Answer of Edward Alleyn)</supplied></head>
-              <pb n="4" type="membrane"/>
+              <pb n="4" type="membrane" facs="#BHSHHAmb4"/>
 
               <ab rend="center">The aunsweare of Edward Allen Esquire one of the
                   defendant<ex>es</ex> to the scandalous and maliciouse <lb/>bill of Complaynte of
