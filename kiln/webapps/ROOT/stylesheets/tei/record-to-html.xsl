@@ -247,13 +247,13 @@
   </xsl:template>
 
   <xsl:template name="display-record-glossed-terms">
-    <xsl:if test=".//tei:term[@ref]">
+    <xsl:if test="tei:body//tei:term[@ref]">
       <li class="accordion-item" data-accordion-item="">
         <a href="#" class="accordion-title">Glossed Terms</a>
         <div class="accordion-content" data-tab-content="">
           <ul class="glossed-terms">
             <xsl:variable name="text-id" select="@xml:id" />
-            <xsl:apply-templates mode="group" select=".//tei:term[@ref][not(@ref = preceding::tei:term[@ref][ancestor::tei:text[1]/@xml:id=$text-id]/@ref)]">
+            <xsl:apply-templates mode="group" select="tei:body//tei:term[@ref][not(@ref = preceding::tei:term[@ref][ancestor::tei:text[1]/@xml:id=$text-id]/@ref)]">
               <xsl:sort order="ascending" select="id(substring-after(@ref, '#'))/ancestor::tei:entry[1]/tei:form/tei:orth" lang="en"/>
             </xsl:apply-templates>
           </ul>
