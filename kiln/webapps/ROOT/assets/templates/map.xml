@@ -6,6 +6,10 @@
 
   <!-- Template for supporting maps. -->
 
+  <xsl:param name="collection" select="''" />
+
+  <xsl:variable name="playhouse-collections" select="('bghop', 'rosep')" />
+
   <kiln:parent>
     <xi:include href="base.xml" />
   </kiln:parent>
@@ -29,7 +33,17 @@
       <kiln:super />
       <script src="{$kiln:assets-path}/scripts/leaflet/proj4-compressed.js"></script>
       <script src="{$kiln:assets-path}/scripts/leaflet/proj4leaflet.js"></script>
-      <script src="{$kiln:assets-path}/scripts/leaflet/map.js"></script>
+      <xsl:variable name="map-script">
+        <xsl:choose>
+          <xsl:when test="$collection = $playhouse-collections">
+            <xsl:text>playhouse_map.js</xsl:text>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:text>map.js</xsl:text>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+      <script src="{$kiln:assets-path}/scripts/leaflet/{$map-script}"></script>
     </kiln:block>
   </kiln:child>
 

@@ -222,7 +222,9 @@
         </map:aggregate>
         <map:transform src="../stylesheets/tei/include-collection-entities.xsl" />
         <map:transform type="xinclude" />
-        <map:transform src="cocoon://_internal/template/collection.xsl" />
+        <map:transform src="cocoon://_internal/template/collection.xsl">
+          <map:parameter name="collection" value="{1}" />
+        </map:transform>
         <map:serialize />
       </map:match>
 
