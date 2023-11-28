@@ -3,7 +3,7 @@
 <?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="bghop">
   <teiHeader>
-    <!-- IN: Header is from Cambs.xml file. Will need to be updated for BGHope -->
+    <!-- IN: Header is from Cambs.xml file. Will need to be updated for BGHope-->
     <fileDesc>
       <titleStmt>
         <title type="main">Bear Gardens/Hope Playhouse</title>
@@ -4408,7 +4408,7 @@
             </div>
           </div>
           <div type="endnote">
-            <p> Dr John Dee also noted the event in a marginal diary entry for 13 January 1582/3 in
+            <p> <rs ref="eats:365691" type="Person_StatusOther">Dr John Dee</rs> also noted the event in a marginal diary entry for 13 January 1582/3 in
               his copy of Stadius' <title>Ephemerides</title>, 'Annvs Repartae Salvatis 1583'
               (Bodl.: Ashmole 487, sig Lllll). He added the reproving comment: 'The godly expownd it
               as a due plage of God for the wickednes ther usid, and the Sabath day so profanely
@@ -4679,7 +4679,7 @@
                 whereof your saide supplyant did enter in and to the same premysses and was thereof
                 possessed accordinglie and the rent<ex>es</ex> proffytt<ex>es</ex> and Commodyties
                 thereof did receyve and take to your suppl<ex>yan</ex>t<ex>es</ex> owne vse and
-                behouf. And in and aboute the same did place all the beares dogg<ex>es</ex> and
+                behouf. And in and aboute the same did place all the beares <rs ref="eats:357490" type="Entertainer_Type">dogg<ex>es</ex></rs> and
                 other such thinges w<ex>hi</ex>ch your supplyant hath for the better
                 s<ex>er</ex>uice of yo<ex>ur</ex> ma<ex>ies</ex>ty in and concerninge your highnes
                 game and pastyme The gouernement and order whereof by and vnder the graunte or
@@ -5056,8 +5056,8 @@
                 the Queenes ma<ex>ies</ex>tie that nowe is<note type="foot">xxiiij<hi
                     rend="superscript">th</hi> … nowe is: <hi rend="italic">ie, 24 March
                       1578/9</hi></note> of all his Right <term ref="gloss:interst-1">interst</term> in &amp; to certeyn Intentures
-                  ten<ex>emen</ex>t<ex>es</ex> beare howses &amp; bull howses w<ex>hi</ex>ch nowe is
-                called p<ex>ar</ex>ys garden &amp; menc<ex>i</ex>oned in the said Indentures &amp;
+                  <rs ref="eats:227798" type="Place_F_Arena">ten<ex>emen</ex>t<ex>es</ex> beare howses &amp; bull howses w<ex>hi</ex>ch nowe is
+                called p<ex>ar</ex>ys garden</rs> &amp; menc<ex>i</ex>oned in the said Indentures &amp;
                 when was the same sealed &amp; deliu<ex>er</ex>ed and whether was yt <foreign
                   xml:lang="lat">bona fide</foreign> or no</ab>
 
@@ -5188,7 +5188,7 @@
                         >Ric<ex>ardu</ex>m Dunkyn</seg></foreign></hi></ab>
               <pb n="[2]" type="folio"/>
 
-              <ab type="exdent"><rs ref="eats:340588" type="Person_Male">Iohn Whytt</rs> of St Mary Overes in <del>t<damage><gap unit="chars"
+              <ab type="exdent"><rs ref="eats:337733" type="Person_StatusOther">Iohn Whytt</rs> of St Mary Overes in <del>t<damage><gap unit="chars"
                       extent="1"/></damage></del> Southwerk yeoman of the age of Lj yeres or there
                   abought<ex>es</ex> sworne and Exami<ex>ne</ex>d the daye and yere aboue said
                 deposithe and saiethe<lb/> To the ffirst Interr<ex>ogatory</ex> this
@@ -5204,7 +5204,7 @@
               <ab>To<note type="marginal" place="margin_left">7</note> the vij<hi rend="superscript"
                   >th</hi> Interr<ex>ogatory</ex> this depoun<ex>en</ex>t saiethe that the said Iohn
                   digg<ex>es</ex> hathe paid the Rent vnto this said depoun<ex>en</ex>t for these
-                iij yeres for the said <rs ref="eats:227798" type="Place_F_Arena">beare gardein</rs> and other the p<ex>re</ex>missis now in
+                iij yeres for the said beare gardein and other the p<ex>re</ex>missis now in
                 question betwene the said Bowes digg<ex>es</ex> and gape and that the Rent of the
                 Beare gardein is vj li. a yere and the tenem<ex>en</ex>t that Iohn napton dwellithe
                 in fortie shilling<ex>es</ex> a yere. for this depoun<ex>en</ex>t saiethe that he is
@@ -5453,7 +5453,7 @@
                 tyme was the same Conueyance made sealed and delyu<ex>er</ex>ed, and to what intente
                 and purpose was the same Conueyance so made, as you knowe, or haue harde, and for
                 what cause or Considerac<ex>i</ex>on. <handShift/>and what speche was vsed by
-                  will<ex>ia</ex>m Napton grocer or any other when the saide Conueyance was firste
+                  <rs ref="eats:340749" type="Person_StatusOther">will<ex>ia</ex>m Napton</rs> grocer or any other when the saide Conueyance was firste
                 putt to making touching expedicon<note type="foot">expedicon: <hi rend="italic"
                     >for</hi> expedicion<hi rend="italic">; abbreviation mark missing</hi></note> to
                 be made of the same and for what cause the same expedic<ex>i</ex>on sholde be or was
@@ -5473,7 +5473,7 @@
                 Napton the saide Conueyance in his owne hand<ex>es</ex> and custodie after the date
                 of an Indenture of Lease bearinge date the three and twentith daye of December 1579.
                 and in the two and twentith yere of the Quenes ma<ex>ies</ex>t<ex>es</ex> Reigne
-                that nowe is, made by the saide Iohn Napton to Morgan Pope <rs ref="eats:31896" type="Collective_Occupations">Goldsmithe</rs> and howe longe
+                that nowe is, made by the saide Iohn Napton to <rs ref="eats:131384" type="Person_Commoner">Morgan Pope</rs> <rs ref="eats:31896" type="Collective_Occupations">Goldsmithe</rs> and howe longe
                 did the saide Iohn Napton kepe the saide Conueyance in his owne custodye after the
                 date of the saide Lease made to the saide Morgan Pope as is aforesaide:/</ab>
 
@@ -5489,7 +5489,7 @@
                 Conueyance or any other assuraunce of the p<ex>re</ex>mysses or any p<ex>ar</ex>cell
                 thereof made or delyu<ex>er</ex>ed to the saide Digges and Gape or either of them,
                 vpon truste or confidence for the vse comodytie profite releife benefit or
-                aduauntage of the saide Iohn Napton, and of one <rs ref="eats:340749" type="Person_Commoner">willyam Napton</rs> Grocer or of either
+                aduauntage of the saide Iohn Napton, and of one willyam Napton Grocer or of either
                 of them, or of any other the Credyto<ex>ur</ex> or Credyto<ex>ur</ex>s of the saide
                 Iohn Napton to yo<ex>ur</ex> knowledge or as you haue harde tell and howe you knowe
                 this to be true../ <del><damage><gap unit="chars" extent="3"/></damage></del><note
@@ -5572,7 +5572,7 @@
               <ab>Item<note type="marginal" place="margin_left">17</note> whether had the saide Iohn
                 Napton the possession of the saide howse grounde and p<ex>re</ex>misses att the tyme
                 of thensealinge <del>of the ensealinge</del> of the Lease thereof by him made to the
-                saide <rs ref="eats:131384" type="Person_Commoner">Morgan Pope</rs> and did take the proffit<ex>es</ex> thereof yea or no./</ab>
+                saide Morgan Pope and did take the proffit<ex>es</ex> thereof yea or no./</ab>
               <ab>Item<note
                type="marginal" place="margin_left">18</note> whether was the saide Iohn Napton at
                 or aboute the tyme of thensealinge of the saide Lease to the saide Morgan Pope
