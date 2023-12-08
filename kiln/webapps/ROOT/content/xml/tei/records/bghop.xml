@@ -481,6 +481,13 @@
     <graphic url="images/bghop/BHAGHMitem5.jpg" xml:id="BHAGHMitem5">
       <desc>The National Archives (UK), ref. E 134/18JAS1/MICH10 </desc>
     </graphic>
+    <graphic url="images/bghop/BHSK10.jpg" xml:id="BHSK10">
+      <desc>© <ref target="https://www.cityoflondon.gov.uk/lma">London Metropolitan Archives</ref>
+        (City of London), SKCS/035/02</desc>
+    </graphic>
+    <graphic url="images/bghop/BHAPCB.jpg" xml:id="BHAPCB">
+      <desc>The National Archives (UK), ref. C 3/139/4</desc>
+    </graphic>
   </facsimile>
 
   <text>
@@ -3883,7 +3890,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp268422216-transcription">
             <div>
               <head>mb 1</head>
-              <pb n="1" type="membrane"/>
+              <pb n="1" type="membrane" facs="#BHAPCB"/>
 
               <gap reason="omitted"/>
 
@@ -20123,7 +20130,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp265684712-transcription">
             <div>
               <head>mb 1d <supplied>(21 October)</supplied></head>
-              <pb n="1d" type="membrane"/>
+              <pb n="1d" type="membrane" facs="#BHSK10"/>
 
               <gap reason="omitted"/>
 
