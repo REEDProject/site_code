@@ -253,8 +253,13 @@
         <div class="accordion-content" data-tab-content="">
           <ul class="glossed-terms">
             <xsl:variable name="text-id" select="@xml:id" />
+<<<<<<< HEAD
             <xsl:apply-templates mode="group" select=".//tei:term[@ref][not(@ref = preceding::tei:term[@ref][ancestor::tei:text[1]/@xml:id=$text-id]/@ref)]">
               <xsl:sort order="ascending" select="id(substring-after(@ref, '#'))/ancestor::tei:entry[1]/tei:form/tei:orth" lang="en"/>
+=======
+            <xsl:apply-templates mode="group" select="tei:body//tei:term[@ref][not(@ref = preceding::tei:term[@ref][ancestor::tei:text[1]/@xml:id=$text-id]/@ref)]">
+              <xsl:sort order="ascending" select="id(substring-after(@ref, '#'))/ancestor::tei:entry[1]/tei:form[1]/tei:orth[1]" lang="en"/>
+>>>>>>> d0c6fa2c5... Handle sorting glossary entries that have more than one orth in the form.
             </xsl:apply-templates>
           </ul>
         </div>
