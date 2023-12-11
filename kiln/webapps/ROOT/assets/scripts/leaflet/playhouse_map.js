@@ -280,7 +280,7 @@ function makeMap() {
 function showLegend(baseImagePath) {
   let div = document.getElementById('info_legend');
   div.innerHTML = ('<br>' + '<img src="' + baseImagePath +
-                   'legend.png" height="335" width="150">' + '<br>');
+                   'playhouse-legend.png" height="335" width="150">' + '<br>');
 }
 
 
