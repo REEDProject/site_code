@@ -197,7 +197,7 @@
         <xsl:when test="$value = ('Accounts', 'Courts')">
           <xsl:text>manorial</xsl:text>
         </xsl:when>
-        <xsl:when test="$value = ('Inventories', 'Advertisements', 'Memoranda')">
+        <xsl:when test="$value = ('Inventories', 'Advertisements', 'Memoranda', 'Business', 'Correspondence', 'Estate')">
           <xsl:text>playhouse</xsl:text>
         </xsl:when>
         <xsl:when test="$value = ('Monasteries', 'Nunneries', 'Friaries')">
