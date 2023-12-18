@@ -6,14 +6,13 @@
   <!-- IN: Header is from Cambs.xml file. Will need to be updated for BGHope-->
   <fileDesc>
    <titleStmt>
-    <title type="main">Bear Gardens/Hope Playhouse</title>
+    <title type="main">Suffolk</title>
     <funder><orgName>Jackman Foundation, Toronto, Canada</orgName></funder>
     <funder><orgName>National Endowment for the Humanities, Washington, DC, United States of
       America</orgName></funder>
     <funder><orgName>Social Sciences and Humanities Research Council, Ottawa,
      Canada</orgName></funder>
-    <editor>Stephanie Hovland</editor>
-    <editor>Sally-Beth MacLean</editor>
+    <editor>James Stokes</editor>
     <respStmt>
      <persName xml:id="JC">James Cummings</persName>
      <orgName>Newcastle University</orgName>
@@ -68,7 +67,7 @@
     <respStmt>
      <persName>Illya Nokhrin</persName>
      <orgName>Records of Early English Drama (REED)</orgName>
-     <resp>Research Assistant</resp>
+     <resp>Research Associate</resp>
      <resp>Indexer, Entity Tagger</resp>
      <resp>REED EATS taxonomy developer</resp>
      <resp>REED EATS database maintainer</resp>
@@ -78,11 +77,6 @@
      <resp>Programmer</resp>
      <resp>TEI Schema Designer</resp>
      <resp>Technical Consultant</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Sim Ong</persName>
-     <orgName>Records of Early English Drama (REED)</orgName>
-     <resp>Bibliographic Assistant</resp>
     </respStmt>
    </titleStmt>
    <editionStmt>
@@ -2953,7 +2947,7 @@ link to patron/troupe -->. </p>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid155-transcription">
       <div>
        <head>pp 31–3 <supplied>(January–January) (Receipts)</supplied></head>
-       <pb type="page"/>
+       <pb n="31" type="page"/>
 
        <ab>M<ex>emoran</ex>d<ex>um</ex> here after Folowe all the Summes of money receyvyd of a pley
         made in th<damage><gap unit="chars" extent="1"/></damage><note type="foot">th<damage><gap
@@ -3050,7 +3044,7 @@ link to patron/troupe -->. </p>
         </row>
        </table>
 
-       <pb/>
+       <pb n="32" type="page"/>
 
        <table>
         <row>
@@ -3171,7 +3165,7 @@ link to patron/troupe -->. </p>
         </row>
        </table>
 
-       <pb/>
+       <pb n="33" type="page"/>
 
        <ab>And it is to be remembryd that all the p<ex>er</ex>sons ‸<add place="above">of the
          towne</add> beforeseid (which brought in money <del>at</del> to the p<ex>ro</ex>fight of
@@ -3478,7 +3472,8 @@ link to patron/troupe -->. </p>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid165-transcription">
       <div>
        <head>pp 77–8 <supplied>(January–January) (Receipts)</supplied></head>
-       <pb type="page"/>
+       <pb n="77" type="page"/>
+       <!-- IN: Is there a missing <pb> here? -->
 
        <gap reason="omitted"/>
 
@@ -3500,8 +3495,8 @@ link to patron/troupe -->. </p>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid166-transcription">
       <div>
        <head>pp 81–2 <supplied>(Receipts)</supplied></head>
-       <pb type="page"/>
-
+       <pb n="81" type="page"/>
+       <!-- IN: Is there a missing <pb> here? -->
        <gap reason="omitted"/>
 
        <table>
@@ -3526,8 +3521,8 @@ link to patron/troupe -->. </p>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid167-transcription">
       <div>
        <head>pp 85–6 <supplied>(Receipts)</supplied></head>
-       <pb type="page"/>
-
+       <pb n="85" type="page"/>
+       <!-- IN: Is there a missing <pb> here? -->
        <gap reason="omitted"/>
 
        <table>
@@ -4012,7 +4007,7 @@ link to patron/troupe -->. </p>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid72-transcription">
       <div>
        <head>ff [1–1v] <supplied>(16 May) (Confession of Robert Seyman)</supplied></head>
-       <pb type="folio"/>
+       <pb n="[1]" type="folio"/>
 
        <ab>M<ex>emoran</ex>d<ex>um</ex> that the xj<hi rend="superscript">th</hi> day of may
          A<ex>n</ex>no R<ex>egi</ex>s henr<ex>ici</ex> viij xxix<hi rend="superscript">o</hi>
@@ -4035,7 +4030,7 @@ link to patron/troupe -->. </p>
         shuld haue co<ex>m</ex>pa<damage><gap unit="chars" extent="2"/></damage><note type="foot"
           >co<ex>m</ex>pa<damage><gap unit="chars" extent="2"/></damage>: <hi rend="italic">for</hi>
           co<ex>m</ex>pany<hi rend="italic">; last two letters lost at edge of leaf</hi></note>
-        Inoughe to subdue the gentillmen/ but ther <pb/> ys no Companye gatheryd but there ys on
+        Inoughe to subdue the gentillmen/ but ther <pb n="[1v]" type="folio"/> ys no Companye gatheryd but there ys on
         fals knave Among<ex>es</ex> them/ for they warr apoynted/ to haue Rysyne at walsingham but
         there was on falsse knave that discoveryd them/ And Richard said if ye wille mete
          w<ex>i</ex>t<ex>h</ex> me at Bungay/ ye shuld se a prophysey And here yt Redd And than I
@@ -4075,7 +4070,7 @@ link to patron/troupe -->. </p>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid74-transcription">
       <div>
        <head>ff [1–1v] <supplied>(26 May)</supplied></head>
-       <pb/>
+       <pb n="[1]" type="folio"/>
 
        <ab>My very goode lorde in my moste harteyst wyse I comende me vnto yowr good lordeshyyp/
         Sygnyfying yowe the same that I have receavid yo<ex>u</ex>r lettres dated at hampton Court
@@ -4112,7 +4107,7 @@ link to patron/troupe -->. </p>
          p<ex>er</ex>ceyve the co<ex>n</ex>trary but that the most p<ex>ar</ex>te of people her be
         in good conformyte and quyetnes &amp; appliable to be orderid by the worshypfull of the
         Shyre/ So <del>.</del> I cane not suspecte that any daunger is lieke<del>ll</del> to
-         cha<ex>u</ex>nce in these p<ex>ar</ex>ties/ And wher yowre lordeshyp by youre <pb/> Seid
+        cha<ex>u</ex>nce in these p<ex>ar</ex>ties/ And wher yowre lordeshyp by youre <pb n="[1v]" type="folio"/> Seid
          letter<ex>es</ex> hathe adu<ex>er</ex>tised me that the kynge &amp; the Quenes graces be
         mery &amp; yoyouse. I most hartely thank yo<ex>u</ex>r lordshyp of that
         adu<ex>er</ex>tisment for yt ys great comforthe to me to here therof And I pray gode longe
@@ -4426,7 +4421,7 @@ link to patron/troupe -->. </p>
       </div>
       <div>
        <head>pp 34–5</head>
-       <pb type="page"/>
+       <pb n="34" type="page"/>
 
        <table>
         <row>
@@ -4491,7 +4486,7 @@ link to patron/troupe -->. </p>
         </row>
        </table>
 
-       <pb/>
+       <pb n="35" type="page"/>
 
        <table>
         <row>
@@ -4711,7 +4706,7 @@ link to patron/troupe -->. </p>
       </div>
       <div>
        <head>pp 41–3 <supplied>(Payments)</supplied></head>
-       <pb type="page"/>
+       <pb n="41" type="page"/>
 
        <gap reason="omitted"/>
 
@@ -4788,7 +4783,7 @@ link to patron/troupe -->. </p>
         </row>
        </table>
 
-       <pb/>
+       <pb n="42" type="page"/>
 
        <table>
         <row>
@@ -4899,7 +4894,7 @@ link to patron/troupe -->. </p>
         </row>
        </table>
 
-       <pb/>
+       <pb n="43" type="page"/>
 
        <table>
         <row>
@@ -5126,7 +5121,7 @@ link to patron/troupe -->. </p>
       </div>
       <div>
        <head>p 49–51</head>
-       <pb type="page"/>
+       <pb n="49" type="page"/>
 
        <gap reason="omitted"/>
 
@@ -5190,7 +5185,7 @@ link to patron/troupe -->. </p>
         </row>
         <row>
          <cell>It<ex>e</ex>m paid for Bere when the Boothes were made </cell>
-         <cell rend="right">iiij d. <pb/>
+         <cell rend="right">iiij d. <pb n="50" type="page"/>
          </cell>
         </row>
        </table>
@@ -5297,7 +5292,7 @@ link to patron/troupe -->. </p>
         </row>
        </table>
 
-       <pb/>
+       <pb n="51" type="page"/>
 
        <table>
         <row>
@@ -5586,12 +5581,12 @@ link to patron/troupe -->. </p>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid76-transcription">
       <div>
        <head>f 30–30v <supplied>(18 January)</supplied></head>
-       <pb type="folio"/>
+       <pb n="30" type="folio"/>
 
        <gap reason="omitted"/>
 
        <ab><gap reason="omitted"/>Item I doe gyve and bequeathe vnto Richard Kynge my sonne all my
-        disguised apparell otherwyse called Players apparrell, together with all my bookes of <pb/>
+        disguised apparell otherwyse called Players apparrell, together with all my bookes of <pb n="30v" type="folio"/>
          Players,<note type="foot">Players: <hi rend="italic">in display script; also written as
           catchword at the foot of recto</hi></note> bookes of surgerye and all other thinges
         belonginge as well to playes as to surgerye<gap reason="omitted"/>.</ab>
@@ -6742,7 +6737,7 @@ link to patron/troupe -->. </p>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid565-transcription">
       <div>
        <head>sheets [1-2] <supplied>(18 March)</supplied>)</head>
-       <pb type="sheet"/>
+       <pb n="[1]" type="sheet"/>
 
        <ab><gap reason="omitted"/> I Rob<ex>er</ex>t Hobart of S<ex>ain</ex>t Edmond<ex>es</ex> Bury
         in the County of Suff<ex>olk</ex> musicion being in p<ex>er</ex>fett healthe &amp; memory
@@ -6750,7 +6745,7 @@ link to patron/troupe -->. </p>
         knoweing the ffrailtie of mans life &amp; the suddennes of deathe therin &amp; also how
         svdenly death otherwise by the hande of god falls vpon man I doe hereby make &amp; declare
         this to be my last will &amp; Testament <gap reason="omitted"/>
-        <pb/>
+        <pb n="[2]" type="sheet"/>
         <gap reason="omitted"/> It<ex>e</ex>m I giue &amp; bequeath vnto my said sone Iohn Hobart
         all my instrument<ex>es</ex> of musicke both of lowde &amp; still musicke &amp; all my
         bookes of musicke whatsoeu<ex>er</ex> And also all my workinge tooles whatsoeu<ex>er</ex>
@@ -6770,7 +6765,7 @@ link to patron/troupe -->. </p>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid8-transcription">
       <div>
        <head>ff 141–1v <supplied>(18–28 March)</supplied></head>
-       <pb type="folio"/>
+       <pb n="141" type="folio"/>
 
        <gap reason="omitted"/>
 
@@ -6837,7 +6832,7 @@ link to patron/troupe -->. </p>
 
        <ab>It<ex>e</ex>m dat<ex>um</ex> Thom<ex>e</ex> Horn cir<ex>c</ex>a f<ex>estu</ex>m
          s<ex>anct</ex>i marc<ex>i</ex> Evang<ex>e</ex>l<ex>iste</ex> p<ex>er</ex> man<ex>datum</ex>
-         R<ex>icardi</ex> Le Gode. xij d. <pb/></ab>
+        R<ex>icardi</ex> Le Gode. xij d.<pb n="141v" type="folio"/></ab>
 
        <ab>It<ex>e</ex>m dat<ex>um</ex> trib<ex>us</ex> menestrall<ex>is</ex> in festo
          Assenc<ex>ione</ex> d<ex>omi</ex>ni. Xv. D.</ab>
@@ -6848,7 +6843,7 @@ link to patron/troupe -->. </p>
      <div xml:lang="eng" type="translation">
       <div>
        <head>ff 141–1v <supplied>(18–28 March)</supplied></head>
-       <pb type="folio"/>
+       <pb n="141" type="folio"/>
 
        <gap reason="omitted"/>
 
@@ -6892,7 +6887,7 @@ link to patron/troupe -->. </p>
         of R. the Good, 2s</ab>
 
        <ab>Likewise given to Thomas Horn around the feast of St Mark the evangelist by the command
-        of R. the Good, 12d. <pb/></ab>
+        of R. the Good, 12d.<pb n="141v" type="folio"/></ab>
 
        <ab>Likewise given to three minstrels on the feast of the Ascension of the Lord, 15d.</ab>
 
@@ -8059,7 +8054,7 @@ patron/troupe -->.</p>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid187-transcription">
       <div>
        <head>sig Biij–Biij verso</head>
-       <pb type="signature"/>
+       <pb n="Biij" type="signature"/>
 
        <gap reason="omitted"/>
 
@@ -8070,7 +8065,7 @@ patron/troupe -->.</p>
         Suffolke, which surely was a comely troupe, and a noble sight to beholde: and all these
         waited on the Sheriffe Sir William Spring, during the Queenes Maiesties abode in those
         parties, and to the very confynes of Suffolke. But before hir highnesse passed to Norffolke,
-        there was <pb/> in Suffolke such sumptuous feasting and bankets, as seldome in any part of
+        there was <pb n="Biij verso" type="signature"/> in Suffolke such sumptuous feasting and bankets, as seldome in any part of
         the world hath bin seene before. The maister of the Rolles, Sir William Cordall, was one of
         the firste that beganne this great feasting, and did lighte suche a Candle to the rest of
         the Sheere, that many were glad bountifully and franckly to follow the same example, with
@@ -8915,7 +8910,7 @@ patron/troupe -->.</p>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid125-transcription">
       <div>
        <head>ff 55v–6</head>
-       <pb type="folio"/>
+       <pb n="55v" type="folio"/>
 
        <gap reason="omitted"/>
 
@@ -8926,7 +8921,7 @@ patron/troupe -->.</p>
         </row>
        </table>
 
-       <ab><gap reason="omitted"/><pb/></ab>
+       <ab><gap reason="omitted"/><pb n="56" type="folio"/></ab>
 
        <gap reason="omitted"/>
 
