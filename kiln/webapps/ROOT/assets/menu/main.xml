@@ -3,13 +3,6 @@
 <root xmlns="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0">
   <menu label="Home" match="ereed-home" />
   <menu label="Search the Records" match="ereed-search" />
-  <menu label="About the Records" match="ereed-about-section">
-    <item label="Series Methodology" match="ereed-about-series" />
-    <item label="Digital Methodology" match="ereed-about-digital" />
-    <item label="Symbols &amp; Abbreviations" match="ereed-about-symbols" />
-    <item label="Bibliography" match="ereed-about-bibliography" />
-    <item label="Glossaries" match="ereed-about-glossaries" />
-  </menu>
   <menu label="Explore Collections" match="ereed-collections">
     <item label="Bear Gardens/Hope Playhouse" match="ereed-collections-collection"
       params="bghop" />
@@ -23,14 +16,27 @@
     <item label="Staffordshire" match="ereed-collections-collection"
           params="staff" />
     <item label="Yorkshire North Riding" match="ereed-collections-collection" params="yksnr" />
+    <item label="Bibliography" match="ereed-about-bibliography" />
+    <item label="Glossaries" match="ereed-about-glossaries" />
   </menu>
   <menu label="Playhouse Timelines" match="ereed-timelines">
     <item label="Rose Playhouse" match="ereed-timeline" params="rosep"/>
   </menu>
-  <menu label="How To" match="ereed-howto-section">
-    <item label="Introduction to the Research Process"
-          match="ereed-howto-intro" />
-    <item label="Anatomy of a Record" match="ereed-howto-anatomy" />
-    <item label="Search Tips" match="ereed-howto-search" />
+  <menu label="About REED Online" match="ereed-about-section">
+    <item label="How To Use REED Online" match="ereed-howto-section"/>
+    <item label="Series Methodology" match="ereed-about-series" />
+    <item label="Digital Methodology" match="ereed-about-digital" />
+    <item label="People" match="ereed-about-people" />
+    <item label="Visit REED" match="ereed-visit-reed" />
+    <item label="Networks and Sponsors" match="ereed-networks-sponsors" />
+    <item label="Donate" match="ereed-donate" />
+  </menu>
+  <menu label="Other REED Resources" match="ereed-howto-section">
+    <item label="Print REED Collections" match="ereed-print-collections" />
+    <item label="EMLoT" match="ereed-emlot-link" />
+    <item label="Patrons and Performances" match="ereed-pnp-link" />
+    <item label="REED North-East" match="ereed-rne-link" />
+    <item label="REED Pre-Publication Collections" match="ereed-prepub-link" />
+    <item label="Anglo-Latin Wordbook" match="ereed-wordbook-link" />
   </menu>
 </root>
