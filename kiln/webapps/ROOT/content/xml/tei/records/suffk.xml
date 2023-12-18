@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="bghop">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="suffk">
  <teiHeader>
   <!-- IN: Header is from Cambs.xml file. Will need to be updated for BGHope-->
   <fileDesc>
@@ -141,7 +141,7 @@
   <group>
    <text type="record" xml:id="suffk-rid168">
     <body>
-     <head><rs>Suffolk</rs>, <rs> Long Melford</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs> Long Melford</rs>
       <date from-iso="1547" to-iso="1548">1547–8</date>
       <seg ana="taxon:SUCW06">SUCW06</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid168-transcription">
