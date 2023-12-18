@@ -31,12 +31,12 @@
     <item label="Networks and Sponsors" match="ereed-networks-sponsors" />
     <item label="Donate" match="ereed-donate" />
   </menu>
-  <menu label="Other REED Resources" match="ereed-howto-section">
-    <item label="Print REED Collections" match="ereed-print-collections" />
-    <item label="EMLoT" match="ereed-emlot-link" />
-    <item label="Patrons and Performances" match="ereed-pnp-link" />
-    <item label="REED North-East" match="ereed-rne-link" />
-    <item label="REED Pre-Publication Collections" match="ereed-prepub-link" />
-    <item label="Anglo-Latin Wordbook" match="ereed-wordbook-link" />
+  <menu label="Other REED Resources" match="ereed-resources-section">
+    <item label="Print REED Collections" href="https://reed.utoronto.ca/print-collections-2/print-collections/" />
+    <item label="EMLoT" href="https://emlot.library.utoronto.ca/" />
+    <item label="Patrons and Performances" href="https://library2.utm.utoronto.ca/otra/reed/" />
+    <item label="REED North-East" href="https://reed-ne.webspace.durham.ac.uk/" />
+    <item label="REED Pre-Publication Collections" href="https://reedprepub.org/" />
+    <item label="Anglo-Latin Wordbook" href="https://reed.utoronto.ca/wordbook/" />
   </menu>
 </root>
