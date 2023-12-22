@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="records/REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="records/REED.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/" xml:id="donate">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Donate</title>
+                <author>Records of Early English Drama (REED)</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>version 1, released <date when-iso="2024-01-01">1 January
+                    2024</date></edition>
+            </editionStmt>
+            <publicationStmt>
+                <authority><orgName>Records of Early English Drama (REED)</orgName>
+                    <address>
+                        <addrLine>University of Toronto</addrLine>
+                        <addrLine>170 St George Street, Suite 810</addrLine>
+                        <addrLine>Toronto, Ontario, Canada</addrLine>
+                        <addrLine>M5R 2M8</addrLine>
+                    </address>
+                </authority>
+                <availability>
+                    <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
+                            <date>2024</date></p>
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed
+                        under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+                        International (CC BY-NC-SA 4.0) licence.</licence>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title>Records of Early English Drama</title>
+            </seriesStmt>
+            <sourceDesc>
+                <p>Born digital. Information on original sources for transcriptions can be accessed
+                    via the Document Descriptions.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Records of Early English Drama (REED) is an international scholarly project that
+                    is establishing for the first time the context from which the drama of
+                    Shakespeare and his contemporaries grew. Founded in 1976, REED has worked since
+                    then to locate, transcribe, and edit historical documents containing evidence of
+                    drama, secular music, and other communal entertainment and ceremony from the
+                    Middle Ages until 1642, when the Puritans closed the London theatres.</p>
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+            <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:id="donate_overview">
+                <p> REED’s research, publications, and staff continue to be supported by grants and
+                    gifts-in-kind from the Canadian, American, and British governments, various
+                    foundations, the University of Toronto and Victoria University, and from
+                    interested individuals from around the world. Personal donations, however, are
+                    governed by the tax laws of the country of the donor. Donations sent directly to
+                    the University of Toronto receive tax receipts applicable to Canadian tax laws.
+                </p>
+            </div>
+            <div xml:id="canadian_donors">
+                <head>Canadian Donors</head>
+                <p> Canadian donors have two options: </p>
+                <p>
+                    <hi rend="bold">Donating Online</hi></p>
+                <p> If you are interested in making an online donation to REED, please visit the
+                    Faculty of Arts and Science, English Department, giving page. </p>
+                <p>
+                    <hi rend="bold">Donating by Cheque</hi></p>
+                <p> We can accept private gifts by cheque, made out to The University of Toronto
+                    with ‘Records of Early English Drama’ in the memo line. Send your cheque to REED
+                    and we will ensure it reaches the U of T Advancement Office. Our
+                    address:<lb/><lb/> Records of Early English Drama, Jackman Humanities
+                    Building<lb/> 170 St George St, Suite 810<lb/> University of Toronto<lb/>
+                    Toronto, Ontario, Canada<lb/> M5R 2M8 </p>
+            </div>
+            <div xml:id="american_british_donors">
+                <head>American and British Donors</head>
+                <p> American and British donors who wish to take advantage of the arrangements that
+                    the University of Toronto has made with their national tax systems SHOULD NOT
+                    donate online but follow these directions: </p>
+                <p>
+                    <hi rend="bold">American Donors</hi></p>
+                <p> United States donors may make a tax-deductible donation through the Associates
+                    of the University of Toronto, a not-for-profit organization recognized under the
+                    U.S. Internal Revenue Code, Section 501(c)(3), specifying that their gift is for
+                    REED. For information about the Associates and how you may make such a gift,
+                    please see the University’s How to Give page. Scroll down the list to
+                    ‘International Gifts’ and click for further information. </p>
+                <p>
+                    <hi rend="bold">British Donors</hi>
+                </p>
+                <p> Cheques should be made out to ‘CAF University of Toronto Fund T/70139430’ and
+                    sent to:<lb/><lb/> Charities Aid Foundation<lb/> 25 Kings Hill Avenue<lb/> Kings
+                    Hill<lb/> West Malling<lb/> Kent ME19 4TA<lb/><lb/> Please specify that your
+                    donation is for Records of Early English Drama at the University of Toronto.
+                    Transfers are made periodically by the Foundation to the U of T and we have been
+                    assured that the amount donated for REED will be indicated. If you could let us
+                    know that a donation has been made, we can acknowledge it in a timely fashion.
+                </p>
+            </div>
+            <div xml:id="other_donors">
+                <head>Other Nationalities</head>
+                <p> We regret that there are no arrangements in place to allow you to receive
+                    specific tax relief. However, if you donate according to the procedures for
+                    Canadian donors you will receive an official receipt from the University of
+                    Toronto that you may be able to use in your country. </p>
+                <p> Thank you very much for supporting REED. </p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="records/REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="records/REED.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/" xml:id="visit">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Visit REED</title>
+                <author>Records of Early English Drama (REED)</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>version 1, released <date when-iso="2024-01-01">1 January
+                    2024</date></edition>
+            </editionStmt>
+            <publicationStmt>
+                <authority><orgName>Records of Early English Drama (REED)</orgName>
+                    <address>
+                        <addrLine>University of Toronto</addrLine>
+                        <addrLine>170 St George Street, Suite 810</addrLine>
+                        <addrLine>Toronto, Ontario, Canada</addrLine>
+                        <addrLine>M5R 2M8</addrLine>
+                    </address>
+                </authority>
+                <availability>
+                    <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
+                            <date>2024</date></p>
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed
+                        under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+                        International (CC BY-NC-SA 4.0) licence.</licence>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title>Records of Early English Drama</title>
+            </seriesStmt>
+            <sourceDesc>
+                <p>Born digital. Information on original sources for transcriptions can be accessed
+                    via the Document Descriptions.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Records of Early English Drama (REED) is an international scholarly project that
+                    is establishing for the first time the context from which the drama of
+                    Shakespeare and his contemporaries grew. Founded in 1976, REED has worked since
+                    then to locate, transcribe, and edit historical documents containing evidence of
+                    drama, secular music, and other communal entertainment and ceremony from the
+                    Middle Ages until 1642, when the Puritans closed the London theatres.</p>
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+            <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:id="research_reed">
+                <head>Doing Research at REED</head>
+                <p> Resources of the REED office include important microfilm collections of original
+                    documentation used by the REED project, as well as an extensive collection of
+                    books and articles on early drama and music, palaeography, lexicography,
+                    patronage, and topography. If you are interested in visiting REED to consult
+                    these resources, please contact the REED Director of Research and General
+                    Editor, <ref target="mailto:s.maclean@utoronto.ca">Sally-Beth MacLean</ref>. </p>
+                <p> Some of our in-house editorial resources are also available online: the REED
+                    Handbook for Editors (1980; revised 1990) and Palaeographic Checking Guidelines
+                    (revised 2010). </p>
+                <p> Further information about seeking access to unpublished transcripts held by REED
+                    editors is found in the REED Executive Motion on Fair Use, passed on 27 May
+                    2004: ‘All requests to consult unpublished materials (transcriptions and
+                    manuscript facsimile reproductions) must be made directly to the REED collection
+                    editor as copyright holder, who is free to share his or her work as he or she
+                    wishes, rather than to the REED Editorial Office. Before permission to use or
+                    cite unpublished materials can be granted, the collection editor and the
+                    applicant must complete and sign a Memorandum of Fair Use form, which can be
+                    downloaded from the REED website.’ The contact email addresses for appropriate
+                    editors can be found on the Forthcoming Collections page. </p>
+            </div>
+            <div xml:id="reed_address">
+                <head>Address</head>
+                <p> Records of Early English Drama, Jackman Humanities Building<lb/> 170 St George
+                    St, Suite 810<lb/> University of Toronto<lb/> Toronto, Ontario, Canada<lb/> M5R
+                    2M8</p>
+            </div>
+        </body>
+    </text>
+</TEI>

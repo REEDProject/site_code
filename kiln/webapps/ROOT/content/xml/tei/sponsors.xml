@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="records/REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="records/REED.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/" xml:id="sponsors">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Networks and Sponsors</title>
+                <author>Records of Early English Drama (REED)</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>version 1, released <date when-iso="2024-01-01">1 January
+                    2024</date></edition>
+            </editionStmt>
+            <publicationStmt>
+                <authority><orgName>Records of Early English Drama (REED)</orgName>
+                    <address>
+                        <addrLine>University of Toronto</addrLine>
+                        <addrLine>170 St George Street, Suite 810</addrLine>
+                        <addrLine>Toronto, Ontario, Canada</addrLine>
+                        <addrLine>M5R 2M8</addrLine>
+                    </address>
+                </authority>
+                <availability>
+                    <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
+                            <date>2024</date></p>
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed
+                        under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+                        International (CC BY-NC-SA 4.0) licence.</licence>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title>Records of Early English Drama</title>
+            </seriesStmt>
+            <sourceDesc>
+                <p>Born digital. Information on original sources for transcriptions can be accessed
+                    via the Document Descriptions.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Records of Early English Drama (REED) is an international scholarly project that
+                    is establishing for the first time the context from which the drama of
+                    Shakespeare and his contemporaries grew. Founded in 1976, REED has worked since
+                    then to locate, transcribe, and edit historical documents containing evidence of
+                    drama, secular music, and other communal entertainment and ceremony from the
+                    Middle Ages until 1642, when the Puritans closed the London theatres.</p>
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+            <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:id="sponsors_overview">
+                <p> Within the University of Toronto (an institution renowned for its scholarship in
+                    medieval and early modern culture), REED is associated with the Department of
+                    English, the Centre for Medieval Studies, the Centre for Reformation and
+                    Renaissance Studies, and the Poculi Ludique Societas.</p>
+            </div>
+            <div xml:id="reed_partnerships">
+                <head>Our Partnerships</head>
+                <p>
+                    Bucknell University<lb/>
+                    Simon Fraser University<lb/>
+                    University of Toronto Libraries
+                </p>
+            </div>
+            <div xml:id="reed_sponsors">
+                <head>Our Sponsors</head>
+                <p>
+                    The Andrew W. Mellon Foundation<lb/>
+                    The British Academy<lb/>
+                    Social Science and Humanities Research Council of Canada
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

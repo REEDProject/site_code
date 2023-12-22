@@ -179,6 +179,46 @@
         <map:transform src="cocoon://_internal/template/symbols.xsl" />
         <map:serialize />
       </map:match>
+      
+      <!-- About: People. -->
+      <map:match id="ereed-about-people" pattern="about/people/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part element="TEICorpus" src="../content/xml/tei/people.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=about/people/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/about.xsl" />
+        <map:serialize />
+      </map:match>
+      
+      <!-- About: Visit. -->
+      <map:match id="ereed-about-visit" pattern="about/visit/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part element="TEICorpus" src="../content/xml/tei/visit.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=about/visit/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/about.xsl" />
+        <map:serialize />
+      </map:match>
+      
+      <!-- About: Sponsors. -->
+      <map:match id="ereed-about-sponsors" pattern="about/sponsors/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part element="TEICorpus" src="../content/xml/tei/sponsors.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=about/sponsors/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/about.xsl" />
+        <map:serialize />
+      </map:match>
+      
+      <!-- About: Donate. -->
+      <map:match id="ereed-about-donate" pattern="about/donate/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part element="TEICorpus" src="../content/xml/tei/donate.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=about/donate/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/about.xsl" />
+        <map:serialize />
+      </map:match>
 
       <!-- About: Bibliography. -->
       <map:match id="ereed-about-bibliography" pattern="about/bibliography/">
