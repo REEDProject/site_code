@@ -50,7 +50,14 @@
     <xsl:choose>
       <xsl:when test="tei:choice">
         <abbr title="{tei:choice/tei:expan}">
-          <xsl:value-of select="tei:choice/tei:abbr" />
+          <xsl:choose>
+            <xsl:when test="normalize-space()='STC Pollard and Redgrave (eds), Short-Title Catalogue'">
+              <i><xsl:value-of select="tei:choice/tei:abbr" /></i>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="tei:choice/tei:abbr" />    
+            </xsl:otherwise>
+          </xsl:choose>
         </abbr>
       </xsl:when>
       <xsl:otherwise>
