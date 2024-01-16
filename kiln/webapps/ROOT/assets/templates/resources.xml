@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+  xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <!-- Template to display a non-record TEI document. -->
+
+  <xsl:import href="cocoon://_internal/template/xsl/stylesheets/tei/record-to-html.xsl"/>
+
+  <kiln:parent>
+    <xi:include href="base.xml"/>
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title">
+      <kiln:super/>
+      <xsl:text>About the Records: </xsl:text>
+      <xsl:value-of
+        select="$record_text/../tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']"/>
+    </kiln:block>
+
+    <kiln:block name="content">
+      <div class="white-bg">
+        <!-- Hero Image -->
+        <div class="title-hero" id="about-the-record">
+          <div class="hero-content">
+            <span class="title">OTHER REED RESOURCES</span>
+            <h2>
+              <xsl:value-of
+                select="$record_text/../tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']"
+              />
+            </h2>
+          </div>
+          <!-- Image Tooltip -->
+          <div class="image-tooltip hide">
+            <div class="tooltip-content">A Fête at Bermondsey, c. 1570 (oil on panel), Gheeraerts,
+              Marcus, the Elder (c. 1520-90) / Hatfield House, Hertfordshire, UK / Bridgeman
+              Images</div>
+            <span class="tooltip-button"/>
+          </div>
+        </div>
+        <!-- Main Content -->
+        <div class="content reduced-padding white-bg">
+          <div class="bibliography-filter filter hide-for-medium boxed">
+            <div class="filter-head jump-to-filter">Topics In This Section</div>
+            <div class="filter-content-wrapper relative">
+              <div class="filter-content">
+                <div class="toc mobile-toc">
+                  <div>
+                    <ul class="sub-sections">
+                      <xsl:for-each select="$record_text/tei:body/tei:div">
+                        <li>
+                          <a href="#{@xml:id}">
+                            <xsl:value-of select="tei:head"/>
+                          </a>
+                        </li>
+                      </xsl:for-each>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row show-for-medium">
+            <div class="column medium-12 sub-section-content">
+              <div class="text">
+                <xsl:apply-templates select="$record_text/tei:body"/>
+              </div>
+              <a class="back-to-top button expanded transparent small-margin-top-25 hide-for-medium"
+                >Back To Top</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </kiln:block>
+  </kiln:child>
+</kiln:root>

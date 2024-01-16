@@ -312,6 +312,16 @@
         <map:transform src="cocoon://_internal/template/howto-search.xsl" />
         <map:serialize />
       </map:match>
+      
+      <!-- PublishedCollections -->
+      <map:match id="ereed-printcollections" pattern="printtcollections">
+        <map:aggregate element="aggregation" label="content">
+          <map:part element="TEICorpus" src="../content/xml/tei/print.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=printcollections/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/resources.xsl" />
+        <map:serialize />
+      </map:match>
 
       <!-- Terms of Use statement. -->
       <map:match id="ereed-terms" pattern="terms/">
