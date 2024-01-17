@@ -314,7 +314,7 @@
       </map:match>
       
       <!-- PublishedCollections -->
-      <map:match id="ereed-publishedcollections" pattern="publishedtcollections">
+      <map:match id="ereed-publishedcollections" pattern="publishedcollections">
         <map:aggregate element="aggregation" label="content">
           <map:part element="TEICorpus" src="../content/xml/tei/pcollections.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=printcollections/" />
