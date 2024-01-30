@@ -2227,6 +2227,17 @@ to add link to patron/troupe -->. </p>
        <gap reason="omitted"/>
       </div>
      </div>
+     <div type="endnote">
+      <p> The only dated entry on the page (f 138v) is one made on 7 May, but references to
+       <rs ref="eats:314079" type="CalendarDay_Liturgical">perambulation day</rs> occur repeatedly throughout the entries on the page; thus the players very
+       likely performed before midsummer. </p>
+      
+      <p> James Stuart (1566–1625) was crowned James I of England on 24 March 1602/3. See
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315880"><title>P&amp;P</title></ref><!-- IN to add link to patron/troupe -->. </p>
+      
+      <p> The payment on f 139v occurs amidst a cluster of payments of wages that were due at
+       <rs ref="eats:42598" type="CalendarDay_Liturgical">Michaelmas</rs>, thus these players were likely paid near 29 September. </p>
+     </div>
     </body>
    </text>
    <text type="record" xml:id="suffk-rid51">
@@ -2249,7 +2260,7 @@ to add link to patron/troupe -->. </p>
         </row>
         <row>
          <cell>More to him<note type="foot">him: <hi rend="italic">Richard Chapman, drummer for the
-            town</hi></note> of old debt for beating the drum to set the watche</cell>
+            town</hi></note> of old debt for <rs ref="eats:29681" type="Entertainer_Type">beating the drum</rs> to set the watche</cell>
          <cell rend="right">00</cell>
          <cell>05</cell>
          <cell>00</cell>
@@ -2283,7 +2294,7 @@ to add link to patron/troupe -->. </p>
         </row>
         <row>
          <cell>More to him<note type="foot">him: <hi rend="italic">Richard Boone</hi></note> for
-          headinge the Towne drum six seu<ex>er</ex>all tymes and for a head as p<ex>er</ex> bill
+          <rs ref="eats:29681" type="Entertainer_Type">headinge the Towne drum</rs> six seu<ex>er</ex>all tymes and for a head as p<ex>er</ex> bill
           appeereth</cell>
          <cell rend="right">00</cell>
          <cell>14</cell>
@@ -2293,17 +2304,6 @@ to add link to patron/troupe -->. </p>
 
        <gap reason="omitted"/>
       </div>
-     </div>
-     <div type="endnote">
-      <p> The only dated entry on the page (f 138v) is one made on 7 May, but references to
-       perambulation day occur repeatedly throughout the entries on the page; thus the players very
-       likely performed before midsummer. </p>
-
-      <p> James Stuart (1566–1625) was crowned James I of England on 24 March 1602/3. See
-        <title>P&amp;P</title><!-- IN to add link to patron/troupe -->. </p>
-
-      <p> The payment on f 139v occurs amidst a cluster of payments of wages that were due at
-       Michaelmas, thus these players were likely paid near 29 September. </p>
      </div>
     </body>
    </text>
@@ -2328,7 +2328,7 @@ to add link to patron/troupe -->. </p>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>to Richard Chapman for beating the drum</cell>
+         <cell>to Richard Chapman for <rs ref="eats:29681" type="Entertainer_Type">beating the drum</rs></cell>
          <cell rend="right">00</cell>
          <cell>06</cell>
          <cell>00</cell>
@@ -2337,8 +2337,8 @@ to add link to patron/troupe -->. </p>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>p<ex>ai</ex>d Thomas ffaken fo r looking to childen playing in the Church for a
-           q<ex>uarte</ex>r of a yeere due at S<ex>ain</ex>t Michaell</cell>
+         <cell>p<ex>ai</ex>d Thomas ffaken fo r looking to childen <rs ref="eats:8782" type="Entertainer_Type">playing</rs> in the Church for a
+           q<ex>uarte</ex>r of a yeere due at <rs ref="eats:42598" type="CalendarDay_Liturgical">S<ex>ain</ex>t Michaell</rs></cell>
          <cell rend="right">00</cell>
          <cell rend="right">05</cell>
          <cell rend="right">00</cell>
