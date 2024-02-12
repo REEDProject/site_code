@@ -2081,7 +2081,7 @@ to add link to patron/troupe -->. </p>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>Paid S<ex>i</ex>r <rs <rs ref="eats:370703" type="Person_Male">Thomas Glemhames</rs></rs> drum<ex>m</ex>er for tryminge the Towne <rs ref="eats:41063" type="Thing_MusicalInstrument">drum</rs> for
+         <cell>Paid S<ex>i</ex>r <rs ref="eats:370703" type="Person_Male">Thomas Glemhames</rs> drum<ex>m</ex>er for tryminge the Towne <rs  type="Thing_MusicalInstrument">drum</rs> for
            head<ex>es</ex> <rs ref="eats:219750" type="Thing_Property">cord</rs> hoopes and braces and his worke and for bringinge it home</cell>
          <cell rend="right">00</cell>
          <cell rend="right">10</cell>
@@ -2218,7 +2218,7 @@ to add link to patron/troupe -->. </p>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>To George Nun for baies <rs ref="eats:301574" type="Thing_ClothingMaterials">lace</rs> and <rs ref="eats:328134" type="Thing_ClothingMaterials">silke</rs> for a coller for the Towne <rs ref="eats:41063" type="Thing_MusicalInstrument">drum</rs></cell>
+         <cell>To <rs ref="eats:370843" type="Person_Male">George Nun</rs> for baies <rs ref="eats:301574" type="Thing_ClothingMaterials">lace</rs> and <rs ref="eats:328134" type="Thing_ClothingMaterials">silke</rs> for a coller for the Towne <rs ref="eats:41063" type="Thing_MusicalInstrument">drum</rs></cell>
          <cell rend="right">00</cell>
          <cell rend="right">02</cell>
          <cell rend="right">09</cell>
@@ -2260,7 +2260,7 @@ to add link to patron/troupe -->. </p>
          <cell rend="right">d.</cell>
         </row>
         <row>
-         <cell>More to him<note type="foot">him: <hi rend="italic">Richard Chapman, drummer for the
+         <cell>More to him<note type="foot">him: <hi rend="italic"><rs ref="eats:370908" type="Person_Male">Richard Chapman</rs>, drummer for the
             town</hi></note> of old debt for <rs ref="eats:29681" type="Entertainer_Type">beating the drum</rs> to set the watche</cell>
          <cell rend="right">00</cell>
          <cell>05</cell>
@@ -2294,7 +2294,7 @@ to add link to patron/troupe -->. </p>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>More to him<note type="foot">him: <hi rend="italic">Richard Boone</hi></note> for
+         <cell>More to him<note type="foot">him: <hi rend="italic"><rs ref="eats:370973" type="Person_Male">Richard Boone</rs></hi></note> for
           <rs ref="eats:29681" type="Entertainer_Type">headinge the Towne drum</rs> six seu<ex>er</ex>all tymes and for a head as p<ex>er</ex> bill
           appeereth</cell>
          <cell rend="right">00</cell>
@@ -2329,7 +2329,7 @@ to add link to patron/troupe -->. </p>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>to Richard Chapman for <rs ref="eats:29681" type="Entertainer_Type">beating the drum</rs></cell>
+         <cell>to <rs ref="eats:370908" type="Person_Male">Richard Chapman</rs> for <rs ref="eats:29681" type="Entertainer_Type">beating the drum</rs></cell>
          <cell rend="right">00</cell>
          <cell>06</cell>
          <cell>00</cell>
@@ -2338,7 +2338,7 @@ to add link to patron/troupe -->. </p>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>p<ex>ai</ex>d Thomas ffaken fo r looking to childen <rs ref="eats:8782" type="Entertainer_Type">playing</rs> in the Church for a
+         <cell>p<ex>ai</ex>d <rs ref="eats:371034" type="Person_Male">Thomas ffaken</rs> for looking to childen <rs ref="eats:8782" type="Entertainer_Type">playing</rs> in the Church for a
            q<ex>uarte</ex>r of a yeere due at <rs ref="eats:42598" type="CalendarDay_Liturgical">S<ex>ain</ex>t Michaell</rs></cell>
          <cell rend="right">00</cell>
          <cell rend="right">05</cell>
@@ -2388,8 +2388,8 @@ to add link to patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab><gap reason="omitted"/>Item I give vnto Iohanna Cunisby my Yongest daughter the payre of
-        <rs ref="eats:40883" type="Thing_MusicalInstrument">virginalls</rs> that were her ffathers<gap reason="omitted"/></ab>
+       <ab><gap reason="omitted"/>Item I give vnto <rs ref="eats:371160" type="Person_Female">Iohanna Cunisby</rs> <rs ref="eats:371099" type="Person_Female">my</rs> Yongest daughter the payre of
+        <rs ref="eats:40883" type="Thing_MusicalInstrument">virginalls</rs> that were <rs ref="eats:371225" type="Person_Male">her ffathers</rs><gap reason="omitted"/></ab>
 
        <gap reason="omitted"/>
       </div>
