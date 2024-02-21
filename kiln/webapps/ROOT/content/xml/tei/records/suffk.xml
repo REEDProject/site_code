@@ -5738,6 +5738,7 @@ to add link to patron/troupe -->. </p>
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs>Bury St Edmunds</rs>
       <date when-iso="1337">1337</date>
       <seg ana="taxon:SUBU21">SUBU21</seg></head>
+     <!-- IN: DO NOT INDEX YET -->
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid97-transcription">
       <div>
        <head>mb 1 <supplied>(25 December)</supplied></head>
@@ -5883,10 +5884,10 @@ to add link to patron/troupe -->. </p>
         <add place="above">Braburne</add> in Com<ex>itate</ex>
         <add place="above">de</add>Northomerlond po<ex>nit</ex> se ip<ex>s</ex>u<ex>m</ex> in
          app<ex>re</ex>nt<ex>iciatum</ex> Thome lorymer de Bury S<ex>an</ex>c<ex>t</ex>i
-         Ed<ex>mun</ex>di harp<ex>arij</ex> a die dato p<ex>re</ex>s<ex>enti</ex> vsq<ex>ue</ex> ad
+         Ed<ex>mun</ex>di <rs ref="eats:30189" type="Entertainer_Type">harp<ex>arij</ex></rs> a die dato p<ex>re</ex>s<ex>enti</ex> vsq<ex>ue</ex> ad
          t<ex>erminum</ex> vij a<ex>nnorum</ex> &amp; in vlt<ex>imo</ex> anno 1 par
          sotular<ex>ium</ex> 1 par cal<ex>ceorum</ex> sufficient<ex>ium</ex> apparat<ex>us</ex> de
-        nouo <foreign xml:lang="eng">1 harpe 1 lowde pype &amp; a stylle pype</foreign> &amp; xx d.
+        nouo <foreign xml:lang="eng">1 <rs ref="eats:45432" type="Thing_MusicalInstrument">harpe</rs> 1 lowde <rs ref="eats:71712" type="Thing_MusicalInstrument">pype</rs> &amp; a stylle pype</foreign> &amp; xx d.
         in fine t<ex>er</ex>mini p<ex>re</ex>d<ex>i</ex>c<ex>t</ex>i</ab>
 
        <gap reason="omitted"/>
