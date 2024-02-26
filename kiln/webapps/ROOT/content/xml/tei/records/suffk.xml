@@ -7238,7 +7238,7 @@ to add link to patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab><damage><gap unit="chars" extent="9"/></damage> s<ex>an</ex>c<ex>t</ex>i
-        Nich<ex>ola</ex>i Ep<ex>iscop</ex>i in festo s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i xij
+        Nich<ex>ola</ex>i Ep<ex>iscop</ex>i in <rs ref="eats:41406" type="CalendarDay_Liturgical">festo s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i</rs> xij
          d<gap reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
@@ -7315,8 +7315,8 @@ to add link to patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab><gap reason="omitted"/>It<ex>e</ex>m solut<ex>um</ex> ad contribuc<ex>i</ex>o<ex>n</ex>em
-         fact<ex>am</ex> pur lez <foreign xml:lang="eng">mynstrall<ex>es</ex></foreign> in die
-         s<ex>anct</ex>i Ed<ex>mund</ex>i R<ex>egis</ex> &amp; m<ex>arty</ex>ris iij s.</ab>
+        fact<ex>am</ex> pur lez <foreign xml:lang="eng"><rs ref="eats:8709" type="Entertainer_Type">mynstrall<ex>es</ex></rs></foreign> in <rs ref="eats:43376" type="CalendarDay_Liturgical">die
+         s<ex>anct</ex>i Ed<ex>mund</ex>i</rs> R<ex>egis</ex> &amp; m<ex>arty</ex>ris iij s.</ab>
 
        <gap reason="omitted"/>
       </div>
@@ -7349,13 +7349,13 @@ to add link to patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab>It<ex>e</ex>m p<ex>ro</ex> iij oll<ex>is</ex> voc<ex>atis</ex> Crusys empt<ex>is</ex>
-         p<ex>ro</ex> le Trumper<ex>is</ex> iij d<gap reason="omitted"/>.</ab>
+         p<ex>ro</ex> le <rs ref="eats:1225" type="Entertainer_Type">Trumper<ex>is</ex></rs> iij d<gap reason="omitted"/>.</ab>
       </div>
       <div>
        <head>
         <supplied>(Gifts)</supplied></head>
        <gap reason="omitted"/>
-
+       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
        <ab>In dono Ep<ex>iscopo</ex> s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i iiij d<gap
          reason="omitted"/>.</ab>
 
@@ -7383,7 +7383,7 @@ to add link to patron/troupe -->. </p>
       </div>
      </div>
      <div type="endnote">
-      <p> The account also has a payment of 20d for gloves for singers, presumably liturgical. </p>
+      <p> The account also has a payment of 20d for <rs ref="eats:192558" type="Thing_TheatricalCostume">gloves</rs> for <rs ref="eats:10906" type="Entertainer_Type">singers</rs>, presumably liturgical. </p>
      </div>
     </body>
    </text>
@@ -7455,7 +7455,7 @@ patron/troupe -->. </p>
        <pb n="[3]" type="membrane"/>
 
        <gap reason="omitted"/>
-
+       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
        <ab>In p<ex>ri</ex>mis dat<ex>um</ex> est Ep<ex>iscop</ex>o s<ex>an</ex>c<ex>t</ex>i
          Nich<ex>ola</ex>i xij d<gap reason="omitted"/>.</ab>
 
@@ -7488,8 +7488,8 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>Dat<ex>um</ex> minstrallis in die s<ex>an</ex>c<ex>t</ex>i Ed<ex>mund</ex>i in absencia
-         d<ex>omi</ex>ni abb<ex>at</ex>is iij s<gap reason="omitted"/>. It<ex>e</ex>m dat<ex>um</ex>
+       <ab>Dat<ex>um</ex> minstrallis in <rs ref="eats:43376" type="CalendarDay_Liturgical">die s<ex>an</ex>c<ex>t</ex>i Ed<ex>mund</ex>i</rs> in absencia
+         d<ex>omi</ex>ni <rs ref="eats:27258" type="Collective_Clergy">abb<ex>at</ex>is</rs> iij s<gap reason="omitted"/>. It<ex>e</ex>m dat<ex>um</ex>
          Ep<ex>iscop</ex>o s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i xij d<gap reason="omitted"/>.
          It<ex>e</ex>m dat<ex>um</ex> minstrallis d<ex>omi</ex>ni Regis d<ex>omi</ex>ne principis
          d<ex>omi</ex>ni Curson &amp; alijs ludent<ex>ibus</ex> in Aula Con<ex>uen</ex>t<ex>i</ex>
