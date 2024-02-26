@@ -493,7 +493,79 @@
     <front>
       <div xml:id="acknowledgements">
         <head>Acknowledgements</head>
-        <!-- Acknowledgements to go here -->
+        <p>This collection of Bear Gardens/Hope Playhouse records is the second digital edition of
+          London area Renaissance and Jacobean playhouses for the <title>REED Online</title> series.
+          We are delighted to acknowledge here the support and expertise of several members of the
+          REED editorial team. Hovland, in particular, as a ‘new’ editor is especially grateful for
+          their help in understanding the intricacies of the final stages in the production of a
+          REED collection online.</p>
+
+        <p>Tanya Hagen, REED's bibliographer and managing editor, has been an invaluable and
+          supportive companion along the way, first as our research paths converged while she edited
+          the Bear Gardens/Hope bibliographic data for the <title>Early Modern London
+            Theatres</title> website and lately as bibliographic support and production manager of
+          the completed collection. REED's associate editor and paleographer, Patrick Gregory,
+          checked all transcriptions, patiently sorted out our many queries, and contributed Latin
+          translations and glossary entries. REED's research associate, Illya Nokhrin, took primary
+          responsibility for indexing this complex collection and brought initiative to a variety of
+          other technical responsibilities, including the development of the timeline feature. Two
+          graduate research assistants contributed as well: Sara Ameri Mahabadi checked the
+          bibliography and Jenna McKellips did content checking and assisted in indexing. Additional
+          help in the archives was provided by graduate student Michael Powell-Davies, and Professor
+          Sue Wiseman, his supervisor at Birkbeck College, University of London.</p>
+
+        <p>MacLean's long-time collaborator, Byron Moldofsky, deserves special mention for his
+          cartographic skills and ongoing interest in developing a more ambitious project to map not
+          only the Southwark area in historic detail but also the wider London area for more
+          playhouse editions to come. The timeline feature was first developed at his
+          recommendation.</p>
+
+        <p>The <title>Bear Gardens/Hope Playhouse</title> collection, like other REED digital
+          editions, would not appear on our screens without the expertise and advice of our former
+          programmer, the late Jamie Norrish, and his successor, Miguel Vieira, Principal Research
+          Software Engineer at King's Digital Lab, with whom we are privileged to work.</p>
+
+        <p>The inclusion of manuscript digital images has been made possible through permissions
+          granted by the following archives: The National Archives, The British Library, the London
+          Metropolitan Archives (City of London) and the Parliamentary Archives. Our thanks to Paul
+          Johnson (TNA) and Laurence Ward and Wendy Hawke (LMA) for responding to requests for help
+          with permission to publish transcriptions. We are grateful to Justine Horseman Sewell and
+          Southwark Cathedral for permission to include images from the St Saviour's Vestry Minutes
+          now held at LMA. Special thanks go to Calista Lucy, Keeper of the Archives at Dulwich
+          College, and to Grace Ioppolo, Director of the <title>Henslowe-Alleyn Digitisation
+            Project</title>, who granted permission to link our transcriptions to the professional
+          images on the open access <title>Henslowe-Alleyn</title> website. We want to acknowledge
+          warmly Calista Lucy's welcome and assistance when visiting the Archives at Dulwich
+          College, and similarly we are grateful to the staff of The National Archives, especially
+          to Daniel Gosling, Legal Records Specialist (Early Modern), who advised us on the
+          idiosyncrasies of the records of the Exchequer. Thanks are also due to the staff of the
+          London Metropolitan Archives and of the Surrey History Centre for advice given during our
+          research of their collections.</p>
+
+        <p>We are indebted to William Ingram and Alan Nelson, whose generous work on the parish
+          records of St Saviour's Southwark, freely available on the web, has assisted ours in so
+          many ways. Alan also shared with us his spreadsheet of names, dates and occupations culled
+          from St Saviour's parish registers and his transcriptions of letters patent for the
+          Masters of the Bears, Bulls and Mastiff Dogs from 1553 to 1638. We have benefited from
+          encouragement and discussions with many other colleagues over the course of our research
+          and thank them all for their interest and support. This collection has had specific
+          improvements thanks to the helpful suggestions made by our external assessors.</p>
+
+        <p>Research for this publication has been supported by several granting agencies to whom
+          MacLean owes lasting gratitude. An Insight grant from the Social Sciences and Humanities
+          Research Council of Canada (SSHRC) funded the initial research phase for the Bear
+          Gardens/Hope and four other playhouses south of the river. The British Academy's ongoing
+          grants for bibliographic work on the <title>Early Modern London Theatres</title> website
+          contributed to comprehensive study of relevant print sources to be linked with our record
+          transcriptions. MacLean's research travel was enabled by several personal grants from
+          Victoria College at the University of Toronto. We also want to acknowledge the help of
+          Christopher Catling, Director, and the generous funding awarded by the Marc Fitch Fund in
+          support of Hovland's work in the UK. </p>
+
+        <p>Finally, publication has been made possible by a second Insight grant to MacLean from the
+          SSHRC and a Research Publications grant from Victoria College which supported REED staff
+          work for this edition. </p>
+
       </div>
       <div xml:id="properties">
         <head>History of the Properties</head>
@@ -769,11 +841,12 @@
               testament, see TNA: PROB 11/38/39 and for the Inquisition Post Mortem, TNA: C
               142/106/56.</note> There is one other known record of the bear yard on the Polsted
             holdings in St Saviour’s parish. Around 1559 Alice brought a case in Chancery for
-            recovery of debts against the heir of her deceased receiver, merchant-tailor <rs ref="eats:368708" type="Person_Commoner">John
-            Whitepaine</rs>. Among other listed debts was 20s owed by one <rs ref="eats:335717"
-              type="Person_StatusOther">Robert Wystowe</rs> for the bear yard in St Saviour's.<note
-              type="foot">See <ptr target="#bghop-ridp268422216"/>.</note> Sometime after, it seems
-            likely that this bear yard fell out of use.</p>
+            recovery of debts against the heir of her deceased receiver, merchant-tailor <rs
+              ref="eats:368708" type="Person_Commoner">John Whitepaine</rs>. Among other listed
+            debts was 20s owed by one <rs ref="eats:335717" type="Person_StatusOther">Robert
+              Wystowe</rs> for the bear yard in St Saviour's.<note type="foot">See <ptr
+                target="#bghop-ridp268422216"/>.</note> Sometime after, it seems likely that this
+            bear yard fell out of use.</p>
 
           <p>In 1574 the Crown properties of the <rs ref="eats:231732" type="Place_F_Property"
               >Unicorn</rs> and its associated tenements and messuages, leased by Polsted, passed to
@@ -3522,15 +3595,15 @@
                   >king</rs> that nowe is by his l<ex>ett</ex>res patent<ex>es</ex> vnder the Seale
                 of the said honorable Courte bering date at Westm<ex>inster</ex> the xxvj<hi
                   rend="superscript">th</hi> daye of Aprill in the syxth yere of his maiesties
-                raigne did demyse and lett to ffarme vnto your said Orato<ex>ur</ex> among<ex>es</ex> other diuers
-                mesuages gardens sett lyeng and being in the <rs ref="eats:226221"
-                  type="Place_PA_Settlement"> p<ex>ar</ex>yshe of Saynt Savyo<ex>ur</ex></rs> in <rs
-                  ref="eats:36966" type="Place_PA_Settlement">Suthwerke</rs> in the Countye of <rs
-                  ref="eats:2291" type="Place_County">Surrey</rs> To be hadd vnto yo<ex>ur</ex> said
-                  Orato<ex>ur</ex> and his assignes frome the <rs ref="eats:42598"
-                  type="CalendarDay_Liturgical">ffeast of Saynt Michell Thark<ex>a</ex>ungell</rs>
-                last past vnto thende and term of twenty &amp; one yer<ex>es</ex> wyth
-                  res<ex>er</ex>uac<ex>i</ex>ons of rent<ex>es</ex> and other
+                raigne did demyse and lett to ffarme vnto your said Orato<ex>ur</ex>
+                  among<ex>es</ex> other diuers mesuages gardens sett lyeng and being in the <rs
+                  ref="eats:226221" type="Place_PA_Settlement"> p<ex>ar</ex>yshe of Saynt
+                    Savyo<ex>ur</ex></rs> in <rs ref="eats:36966" type="Place_PA_Settlement"
+                  >Suthwerke</rs> in the Countye of <rs ref="eats:2291" type="Place_County"
+                  >Surrey</rs> To be hadd vnto yo<ex>ur</ex> said Orato<ex>ur</ex> and his assignes
+                frome the <rs ref="eats:42598" type="CalendarDay_Liturgical">ffeast of Saynt Michell
+                    Thark<ex>a</ex>ungell</rs> last past vnto thende and term of twenty &amp; one
+                  yer<ex>es</ex> wyth res<ex>er</ex>uac<ex>i</ex>ons of rent<ex>es</ex> and other
                   coven<ex>au</ex>nt<ex>es</ex> as in the same l<ex>ett</ex>res patent<ex>es</ex>
                 being enrolled in this hon<ex>or</ex>able Courte more playnly appereth/ So yt is
                 right worshipfull that diuers p<ex>er</ex>sons whos names are vnderwrytten vnto
@@ -4945,8 +5018,8 @@
 
               <ab rend="center">To the right honorable S<ex>i</ex>r <rs ref="eats:121275"
                   type="Person_Gentry">ffranc<ex>es</ex>
-                <lb/>Walsingham</rs> knight principal <lb/>Secretarie to the Quenes most excellent <lb/>
-                  Ma<ex>ies</ex>tie/</ab>
+                  <lb/>Walsingham</rs> knight principal <lb/>Secretarie to the Quenes most excellent
+                <lb/> Ma<ex>ies</ex>tie/</ab>
             </div>
           </div>
           <div type="endnote">
@@ -7260,7 +7333,8 @@
 
               <gap reason="omitted"/>
 
-              <ab>In the matter of variaunce broughte before the <rs ref="eats:11772" type="Person_Royalty">Quenes Ma<ex>ies</ex>t<ex>ies</ex></rs>
+              <ab>In the matter of variaunce broughte before the <rs ref="eats:11772"
+                  type="Person_Royalty">Quenes Ma<ex>ies</ex>t<ex>ies</ex></rs>
                 <note type="marginal" place="margin_left">Bowes <lb/>Gape./</note> Counesaill<note
                   type="foot">Counesaill: <hi rend="italic">3 minims for</hi> un</note> of her
                 honorable courte of Request<ex>es</ex> At the sute of <rs ref="eats:336073"
@@ -15415,13 +15489,17 @@
             </div>
           </div>
           <div type="endnote">
-            <p> Mr Gerratt was Alleyn’s counsel in 1617 and (written as Gerrard) represented him in 
-              Chancery regarding the case brought against him, <rs ref="eats:344308" type="Person_Female">Agnes Henslowe</rs>, and <rs ref="eats:344693" type="Person_Male">Roger Cole</rs> by <rs ref="eats:344164" type="Person_Male">John Henslowe</rs> 
-              (see <ref target="https://ereeddev.library.utoronto.ca/collections/bghop/appendix-4/">Appendix 4</ref>: 1.k)<!--IN to add link-->. Following this entry of 7 March in his diary, and while compiling his quarterly 
-              accounts at the end of the month, Alleyn listed again the payment to Gerratt of £1 2s 0d under the heading
-              Law. See Ioppolo, <title>Henslowe-Alleyn Digitisation
-                Project</title>, <ref target="https://henslowe-alleyn.org.uk/catalogue/mss-9/011-recto/"></ref>.).
-            </p>
+            <p> Mr Gerratt was Alleyn’s counsel in 1617 and (written as Gerrard) represented him in
+              Chancery regarding the case brought against him, <rs ref="eats:344308"
+                type="Person_Female">Agnes Henslowe</rs>, and <rs ref="eats:344693"
+                type="Person_Male">Roger Cole</rs> by <rs ref="eats:344164" type="Person_Male">John
+                Henslowe</rs> (see <ref
+                target="https://ereeddev.library.utoronto.ca/collections/bghop/appendix-4/">Appendix
+                4</ref>: 1.k)<!--IN to add link-->. Following this entry of 7 March in his diary,
+              and while compiling his quarterly accounts at the end of the month, Alleyn listed
+              again the payment to Gerratt of £1 2s 0d under the heading Law. See Ioppolo,
+                <title>Henslowe-Alleyn Digitisation Project</title>, <ref
+                target="https://henslowe-alleyn.org.uk/catalogue/mss-9/011-recto/"/>.). </p>
           </div>
         </body>
       </text>
@@ -17460,8 +17538,13 @@
             </div>
           </div>
           <div type="endnote">
-            <ab>The Commisson set up by Letters Patent in June 1618 was finally being carried out and witnesses were called. See <ref target="https://ereeddev.library.utoronto.ca/collections/bghop/appendix-4/#bghop-app4-v">Appendix 4: V</ref> e and p and <ref target="https://ereeddev.library.utoronto.ca/collections/bghop/properties/#histprops-allenvhenslowe">Introduction, History of Properties Edward Alleyn vs.
-                William Henslowe and Jacob Meade, 1617-26.</ref></ab>
+            <ab>The Commisson set up by Letters Patent in June 1618 was finally being carried out
+              and witnesses were called. See <ref
+                target="https://ereeddev.library.utoronto.ca/collections/bghop/appendix-4/#bghop-app4-v"
+                >Appendix 4: V</ref> e and p and <ref
+                target="https://ereeddev.library.utoronto.ca/collections/bghop/properties/#histprops-allenvhenslowe"
+                >Introduction, History of Properties Edward Alleyn vs. William Henslowe and Jacob
+                Meade, 1617-26.</ref></ab>
           </div>
         </body>
       </text>
@@ -19609,11 +19692,11 @@
           <div type="endnote">
             <p> At this time John Nurse (Nurce) was operating the Bear Garden as deputy and tenant
               of <rs ref="eats:153045" type="Person_Commoner">Edward Alleyn</rs>'s cousin and
-              executor, <rs ref="eats:212149" type="Person_Male">Matthias Alleyn</rs> (Honigmann and Brock, <title>Playhouse Wills</title>, pp
-              150, 154). A further presentment of Nurse, as well as of Matthias Alleyn, Edward
-              Alleyn's executor and cousin and his tenants, on 12 February 1626/7 could not be
-              examined because the document, LMA: SKCS/028, is unfit for production at this time.
-              For a modernized text see Ingram and Nelson, <ref
+              executor, <rs ref="eats:212149" type="Person_Male">Matthias Alleyn</rs> (Honigmann and
+              Brock, <title>Playhouse Wills</title>, pp 150, 154). A further presentment of Nurse,
+              as well as of Matthias Alleyn, Edward Alleyn's executor and cousin and his tenants, on
+              12 February 1626/7 could not be examined because the document, LMA: SKCS/028, is unfit
+              for production at this time. For a modernized text see Ingram and Nelson, <ref
                 target="https://stsaviour.folger.edu/SKCS-2.html">'Parish of St Saviour.'</ref></p>
           </div>
         </body>
@@ -21133,8 +21216,8 @@
                     target="#bghop-ridp257943400"/>; <ptr target="#bghop-ridp266143704"/>; <ptr
                     target="#bghop-ridp264914232"/>; and <ptr target="#bghop-ridp265314616"/>. </p>
                 <p>For an image of the original manuscript, see Ioppolo, <ref
-                  target="https://henslowe-alleyn.org.uk/catalogue/mss-8/043-verso/"
-                  ><title>Henslowe-Alleyn Digitisation Project</title></ref>.</p>
+                    target="https://henslowe-alleyn.org.uk/catalogue/mss-8/043-verso/"
+                      ><title>Henslowe-Alleyn Digitisation Project</title></ref>.</p>
                 <p>For an abstract of this record and details of its transcription in other printed
                   sources, see the <ref
                     target="https://emlot.library.utoronto.ca/db/record/event/7571/">related EMLoT
@@ -21889,9 +21972,9 @@
               Philip Henslowe’s will, and submitted evidences and leases were retained by the
               court.</p>
 
-            <p>k) 1617, 22 May: TNA: C 33/131 A, f 712; C 33/132 B, ff 828-8v: Alleyn’s counsel, Mr Gerrard,
-              informed the court that John Henslowe had taken the cause to Star Chamber not to
-              Common Law. The court would consider dismissing the case. John was to pay &#163;3
+            <p>k) 1617, 22 May: TNA: C 33/131 A, f 712; C 33/132 B, ff 828-8v: Alleyn’s counsel, Mr
+              Gerrard, informed the court that John Henslowe had taken the cause to Star Chamber not
+              to Common Law. The court would consider dismissing the case. John was to pay &#163;3
               costs to plaintiff.</p>
 
             <p>l) 1617, 20 June: TNA: C 33/131 A, f 900v; C 33/132 B, f 1022: it was affirmed that
@@ -21992,15 +22075,15 @@
               v Bishop of Winchester, William Henslowe, and Jacob Meade</head>
 
             <p>Answers, rejoinder, and replications to an Information by English bill raised in May
-              1616 by relation of Edward Alleyn versus William Henslowe and Meade, who were tenants of the
-              Bishop of Winchester on the property of the Barge Bell and Cock. They were charged with
-              setting false boundaries and encroaching on Crown land when the dual purpose Bear
-              Garden and Hope theatre had been constructed and expanded. They were also charged with
-              non-payment of rent owing to the Crown for this occupation of the land. The Bishop of
-              Winchester was also called as a defendant in 1619. Supporting interrogatories and
-              depositions are extant. See <ptr target="#bghop-ridp262637224"/> and <ptr
-                target="#bghop-ridp274581976"/>. <!-- IN: pls add links to BHAGHM, BHDAGH --> Entry
-              books of orders in the Exchequer (TNA E 124) offer supporting records.</p>
+              1616 by relation of Edward Alleyn versus William Henslowe and Meade, who were tenants
+              of the Bishop of Winchester on the property of the Barge Bell and Cock. They were
+              charged with setting false boundaries and encroaching on Crown land when the dual
+              purpose Bear Garden and Hope theatre had been constructed and expanded. They were also
+              charged with non-payment of rent owing to the Crown for this occupation of the land.
+              The Bishop of Winchester was also called as a defendant in 1619. Supporting
+              interrogatories and depositions are extant. See <ptr target="#bghop-ridp262637224"/>
+              and <ptr target="#bghop-ridp274581976"/>. <!-- IN: pls add links to BHAGHM, BHDAGH -->
+              Entry books of orders in the Exchequer (TNA E 124) offer supporting records.</p>
 
             <p>TNA: E 112/126, no 165: <ptr target="#bghop-ridp267065160"/></p>
 
@@ -22044,7 +22127,8 @@
 
             <p>l) 1620, between 30 June and 18 September: TNA: E 134/18Jas1/Mich10,
               <!--<ptr target="#bghop-ridp262637224"/>,-->Item 2: interrogatories on behalf of the
-              attorney general<note type="foot">An identical copy of these interrogatories, presumably drawn up at the same time, is contained in TNA E 133/148/100</note>.</p>
+              attorney general<note type="foot">An identical copy of these interrogatories,
+                presumably drawn up at the same time, is contained in TNA E 133/148/100</note>.</p>
 
             <p>m) 1620, 19/20 September–10 October: TNA: E 134/18Jas1/Mich10, Item 3: depositions of
               witnesses examined on behalf of the attorney general.</p>
@@ -22090,7 +22174,8 @@
 
             <p>w) 1622, 9 July: E 124/32, f 197v: it was ordered the case should be heard the
               following term. In the margin is inscribed cam{er}a Sc{a}cc{ar}ii suggesting the case
-              might continue there<note type="foot">The editors thank Daniel Gosling for his explanation of this inscription</note>.</p>
+              might continue there<note type="foot">The editors thank Daniel Gosling for his
+                explanation of this inscription</note>.</p>
 
           </div>
 
@@ -22123,8 +22208,9 @@
           </div>
 
           <div xml:id="bghop-app4-viii">
-            <head>VIII. 1624, May–June: Chancery Court Pleadings: Jacob Meade v. Agnes Henslowe, Mary Moushurst and Elizabeth Moushurst, and Edward Alleyn</head>
-            
+            <head>VIII. 1624, May–June: Chancery Court Pleadings: Jacob Meade v. Agnes Henslowe,
+              Mary Moushurst and Elizabeth Moushurst, and Edward Alleyn</head>
+
             <p><ptr target="#bghop-ridp261321848"/></p>
 
             <p>TNA: C 8/30/74.</p>
