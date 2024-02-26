@@ -33,10 +33,34 @@
               <xsl:text>, edited by </xsl:text>
               <xsl:for-each select="/aggregation/TEICorpus/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor">
                 <xsl:apply-templates select="." />
-                <xsl:if test="position() != last()">
-                  <xsl:text>, </xsl:text>
+                <!-- If there is more than one editor -->
+                <xsl:if test="last() &gt; 1">
+                  <xsl:choose>
+                    <!-- If there are exactly two editors -->
+                    <xsl:when test="last() = 2">
+                      <!-- If it's the first editor, add "and" -->
+                      <xsl:if test="position() = 1">
+                        <xsl:text> and </xsl:text>
+                      </xsl:if>
+                      <!-- If it's the second editor, don't add any delimiter -->
+                      <xsl:if test="position() = 2">
+                      </xsl:if>
+                    </xsl:when>
+                    <!-- If there are more than two editors -->
+                    <xsl:otherwise>
+                      <!-- If it's not the last editor, add a comma -->
+                      <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                      </xsl:if>
+                      <!-- If it's the second-last editor, add "and" -->
+                      <xsl:if test="position() = last() - 1">
+                        <xsl:text> and </xsl:text>
+                      </xsl:if>
+                    </xsl:otherwise>
+                  </xsl:choose>
                 </xsl:if>
               </xsl:for-each>
+              
             </h1>
           </div>
           <div class="column medium-12">
