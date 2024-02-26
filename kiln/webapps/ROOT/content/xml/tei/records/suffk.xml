@@ -7487,12 +7487,12 @@ patron/troupe -->. </p>
        <pb n="1" type="membrane"/>
 
        <gap reason="omitted"/>
-
+       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
        <ab>Dat<ex>um</ex> minstrallis in <rs ref="eats:43376" type="CalendarDay_Liturgical">die s<ex>an</ex>c<ex>t</ex>i Ed<ex>mund</ex>i</rs> in absencia
          d<ex>omi</ex>ni <rs ref="eats:27258" type="Collective_Clergy">abb<ex>at</ex>is</rs> iij s<gap reason="omitted"/>. It<ex>e</ex>m dat<ex>um</ex>
          Ep<ex>iscop</ex>o s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i xij d<gap reason="omitted"/>.
-         It<ex>e</ex>m dat<ex>um</ex> minstrallis d<ex>omi</ex>ni Regis d<ex>omi</ex>ne principis
-         d<ex>omi</ex>ni Curson &amp; alijs ludent<ex>ibus</ex> in Aula Con<ex>uen</ex>t<ex>i</ex>
+         It<ex>e</ex>m dat<ex>um</ex> <rs ref="eats:172928" type="Collective_Troupe">minstrallis d<ex>omi</ex>ni Regis</rs> <rs ref="eats:180167" type="Collective_Troupe">d<ex>omi</ex>ne principis</rs>
+         <rs ref="eats:373264" type="Collective_Troupe">d<ex>omi</ex>ni Curson</rs> &amp; alijs <rs ref="eats:40706" type="Entertainment_Type">ludent<ex>ibus</ex></rs> in Aula Con<ex>uen</ex>t<ex>i</ex>
          p<ex>er</ex> p<ex>re</ex>ceptu<ex>m</ex> d<ex>omi</ex>ni p<ex>ri</ex>or<ex>is</ex> ij s.
         iiij d<gap reason="omitted"/>.</ab>
 
@@ -7519,14 +7519,14 @@ patron/troupe -->. </p>
       <p> Sir Robert Curson (1460-1535) was knighted in 1489, and named Baron of the Holy Roman
        Empire in 1500, with residence in Ipswich.</p>
 
-      <p> Catherine of Aragon (1485-1536) was queen of England from 1509 to 1533. She served
+      <p> Katherine of Aragon (1485-1536) was queen of England from 1509 to 1533. She served
        impressively as regent of the kingdom in 1513 while her husband was in France, which may
        explain the use of the term <hi rend="italic">princeps</hi> ('sovereign,' 'ruler') here. It
-       appears that he was permitting that same title for Catherine in 1520 (given the honorific
+       appears that he was permitting that same title for Katherine in 1520 (given the honorific
        used by the scribe at Bury), a year filled with momentous international diplomatic events in
        which she played a central part (C.S.L. Davies and John Edwards, 'Katherine [Catalina,
        Catherine, Katherine of Aragon] (1485-1536),' <title>ODNB</title>, accessed 9 May 2011. For
-       her troupe of minstrels, see <title>P&amp;P</title><!-- #IN to add link to patron/troupe -->.
+       her troupe of minstrels, see <ref target="https://library2.utm.utoronto.ca/otra/reed/content/queens-minstrels-6"><title>P&amp;P</title></ref>.
       </p>
      </div>
     </body>
