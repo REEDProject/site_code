@@ -5523,7 +5523,7 @@ to add link to patron/troupe -->. </p>
 
        <ab>M<ex>emoran</ex>d<ex>um</ex> ther remayne in the churche chest all the Evydenc<ex>es</ex>
         for the ij shopp<ex>es</ex> at <rs ref="eats:373427" type="Place_PA_Settlement">Harliston</rs> &amp; <rs ref="eats:373096" type="Place_PA_Settlement">Becklys</rs> and the ‸ <add place="above"
-         >thre</add> Allmes houses in Bu<ex>n</ex>gay<rs ref="eats:372934" type="Place_PA_Settlement"/> Agaynst <rs ref="eats:373153" type="Place_PA_Settlement">o<ex>u</ex>r Lady churche</rs><note
+         >thre</add> Allmes houses in <rs ref="eats:372934" type="Place_PA_Settlement">Bu<ex>n</ex>gay</rs> Agaynst <rs ref="eats:373153" type="Place_PA_Settlement">o<ex>u</ex>r Lady churche</rs><note
          type="foot">o<ex>u</ex>r Lady churche: <hi rend="italic">Bungay St Mary Parish
          Church</hi></note> / for the twoo churche howses that Ryvet &amp; graygose dwelle in / and
         for <rs ref="eats:373450" type="Place_PA_Settlement">nettylh<ex>a</ex>m medowe</rs> / &amp; a dede of estate Annexed to M<ex>ist</ex>res whartons
@@ -7516,6 +7516,7 @@ patron/troupe -->. </p>
       </div>
      </div>
      <div type="endnote">
+      <!-- IN: Should there be note for Henry VIII's minstrels here --> 
       <p> Sir Robert Curson (1460-1535) was knighted in 1489, and named Baron of the Holy Roman
        Empire in 1500, with residence in Ipswich.</p>
 
@@ -7578,11 +7579,12 @@ patron/troupe -->. </p>
        <table>
         <row>
          <cell>In p<ex>ri</ex>mis donis dat<ex>is</ex> mimis<note type="foot">mimis: <hi
-            rend="italic">4 minims for</hi> mim</note>Tuba Canentib<ex>us</ex> ad festum
-           S<ex>anct</ex>i Ed<ex>mund</ex>i </cell>
+            rend="italic">4 minims for</hi> mim</note><rs ref="eats:1225" type="Entertainer_Type">Tuba</rs> Canentib<ex>us</ex> ad <rs ref="eats:43376" type="CalendarDay_Liturgical">festum
+           S<ex>anct</ex>i Ed<ex>mund</ex>i</rs> </cell>
          <cell rend="right">iij s.</cell>
         </row>
         <row>
+         <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
          <cell>It<ex>em</ex> in donis dat<ex>is</ex> Ep<ex>iscop</ex>o S<ex>anct</ex>i
           Nicholai</cell>
          <cell rend="right">xij s.</cell>
@@ -7591,7 +7593,7 @@ patron/troupe -->. </p>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> dat<ex>is</ex> histrionib<ex>us</ex> in Aula Conuent<ex>i</ex> &amp;
+         <cell>It<ex>em</ex> dat<ex>is</ex> <rs ref="eats:1261" type="Entertainer_Type">histrionib<ex>us</ex></rs> in Aula Conuent<ex>i</ex> &amp;
           alijs</cell>
          <cell rend="right">ij s.</cell>
         </row>
@@ -7664,15 +7666,15 @@ patron/troupe -->. </p>
        <pb n="1" type="membrane"/>
 
        <gap reason="omitted"/>
-
+       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
        <ab>It<ex>e</ex>m datu<ex>m</ex> Ep<ex>isco</ex>po S<ex>an</ex>c<ex>t</ex>i Nicholai iiij
-         d<gap reason="omitted"/>. It<ex>e</ex>m solut<ex>um</ex> vigilia s<ex>an</ex>c<ex>t</ex>i
-         ioh<ex>ann</ex>is Baptiste afferent<ex>ibus</ex> Sirpos viij d. It<ex>e</ex>m
-         datu<ex>m</ex> eod<ex>em</ex> die lusorib<ex>us</ex> do<ex>min</ex>i Reg<ex>is</ex> iiij
+         d<gap reason="omitted"/>. It<ex>e</ex>m solut<ex>um</ex> <rs ref="eats:373472" type="CalendarDay_Liturgical">vigilia s<ex>an</ex>c<ex>t</ex>i
+         ioh<ex>ann</ex>is Baptiste</rs> <rs ref="eats:290814" type="Entertainment_FolkCustom">afferent<ex>ibus</ex> Sirpos</rs> viij d. It<ex>e</ex>m
+         datu<ex>m</ex> eod<ex>em</ex> die <rs ref="eats:69534" type="Collective_Troupe">lusorib<ex>us</ex> do<ex>min</ex>i Reg<ex>is</ex></rs> iiij
          d<gap reason="omitted"/>. It<ex>e</ex>m datu<ex>m</ex> Ioh<ex>ann</ex>i foster
-         mynst<ex>rello</ex> ij d. It<ex>e</ex>m datu<ex>m</ex> lusor<ex>ibus</ex> in aula ij d.
-         It<ex>e</ex>m datu<ex>m</ex> famulo do<ex>min</ex>i Excess<ex>trie</ex> Lvter j d.
-         It<ex>e</ex>m datu<ex>m</ex> Herle of darby lusor<ex>i</ex>b<ex>us</ex> iiij d.
+        <rs ref="eats:8709" type="Entertainer_Type">mynst<ex>rello</ex></rs> ij d. It<ex>e</ex>m datu<ex>m</ex> <rs ref="eats:8782" type="Entertainer_Type">lusor<ex>ibus</ex></rs> in aula ij d.
+         It<ex>e</ex>m datu<ex>m</ex> famulo do<ex>min</ex>i Excess<ex>trie</ex> <rs ref="eats:34508" type="Entertainer_Type">Lvter</rs> j d.
+         It<ex>e</ex>m datu<ex>m</ex> <rs ref="eats:373505" type="Collective_Troupe">Herle of darby lusor<ex>i</ex></rs>b<ex>us</ex> iiij d.
          It<ex>e</ex>m datu<ex>m</ex> lusor<ex>i</ex>b<ex>us</ex> duc<ex>is</ex> norfolchi iiij d.
          It<ex>e</ex>m datu<ex>m</ex> lusor<ex>i</ex>b<ex>us</ex> duc<ex>is</ex> de Somersset iiij
         d. Et datu<ex>m</ex> Minstrellis do<ex>min</ex>i Regis iij d<gap reason="omitted"/>.</ab>
@@ -7699,6 +7701,7 @@ patron/troupe -->. </p>
       </div>
      </div>
      <div type="endnote">
+      <!-- IN: Add a note for duke of Norfolk (Thomas Howard, 8th duke of Norfolk?) here?-->
       <p> Henry Tudor (1491–1546/7) was Henry VIII of England from 22 April 1509.</p>
 
       <p> Henry Courtenay (<hi rend="italic">c</hi> 1498-1538) was first marquess of Exeter from
