@@ -24,7 +24,7 @@
         <!-- Hero Image -->
         <div class="title-hero" id="about-the-record">
           <div class="hero-content">
-            <span class="title">ABOUT THE RECORDS</span>
+            <span class="title">ABOUT REED ONLINE</span>
             <h2>
               <xsl:value-of select="$record_text/../tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']" />
             </h2>

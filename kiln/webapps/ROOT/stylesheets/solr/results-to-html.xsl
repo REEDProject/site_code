@@ -203,7 +203,7 @@
         <xsl:text>Manorial</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_record_type_playhouse'">
-        <xsl:text>Playhouse</xsl:text>
+        <xsl:text>Playhouse/Arena</xsl:text>
       </xsl:when>
       <xsl:when test=". = 'facet_record_type_rel_community'">
         <xsl:text>Religious Community</xsl:text>

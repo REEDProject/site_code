@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="records/REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="records/REED.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/" xml:id="print">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Published Collections</title>
+                <author>Records of Early English Drama (REED)</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>version 1, released <date when-iso="2024-01-01">1 January
+                    2024</date></edition>
+            </editionStmt>
+            <publicationStmt>
+                <authority><orgName>Records of Early English Drama (REED)</orgName>
+                    <address>
+                        <addrLine>University of Toronto</addrLine>
+                        <addrLine>170 St George Street, Suite 810</addrLine>
+                        <addrLine>Toronto, Ontario, Canada</addrLine>
+                        <addrLine>M5R 2M8</addrLine>
+                    </address>
+                </authority>
+                <availability>
+                    <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
+                            <date>2024</date></p>
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed
+                        under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+                        International (CC BY-NC-SA 4.0) licence.</licence>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title>Records of Early English Drama</title>
+            </seriesStmt>
+            <sourceDesc>
+                <p>Born digital. Information on original sources for transcriptions can be accessed
+                    via the Document Descriptions.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Records of Early English Drama (REED) is an international scholarly project that
+                    is establishing for the first time the context from which the drama of
+                    Shakespeare and his contemporaries grew. Founded in 1976, REED has worked since
+                    then to locate, transcribe, and edit historical documents containing evidence of
+                    drama, secular music, and other communal entertainment and ceremony from the
+                    Middle Ages until 1642, when the Puritans closed the London theatres.</p>
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+            <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:id="print_collections">
+                <head>Print Collections</head>
+                <p>
+                    <list>
+                        <item>
+                            1979 York, Alexandra F. Johnston and Margaret Rogerson (eds). 965pp in 2 vols. University of Toronto Press. ISBN: 0-8020-2304-5. OUT OF PRINT.
+                        </item>
+                        <item>    1979 Chester, Lawrence M. Clopper (ed). 591pp. University of Toronto Press and Manchester University Press. ISBN: 0-8020-5460-9. OUT OF PRINT.</item>
+                        <item>1981 Coventry, R.W. Ingram (ed). 712pp. University of Toronto Press and Manchester University Press. ISBN: 0-8020-5542-7. OUT OF PRINT.</item>
+                            <item>1982 Newcastle upon Tyne, J.J. Anderson (ed). 216pp. University of Toronto Press and Manchester University Press. ISBN: 0-8020-5610-5 and ISBN: 0-7190-0892-1. OUT OF PRINT.</item>
+                            <item>1984 Norwich 1540-1642, David Galloway (ed). 501pp. University of Toronto Press. ISBN: 0-8020-5648-2. OUT OF PRINT.</item>
+                            <item>1986 Cumberland/Westmorland/Gloucestershire, Audrey Douglas and Peter Greenfield (eds). 548pp. University of Toronto Press. ISBN: 0-8020-5669-5.</item>
+                            <item>1986 Devon, John Wasson (ed). 623pp. University of Toronto Press. ISBN: 0-8020-5706-3.</item>
+                            <item>1989 Cambridge, Alan H. Nelson (ed). 1502pp in 2 vols. University of Toronto Press. ISBN: 0-8020-5751-9.</item>
+                            <item>1990 Herefordshire/Worcestershire, David N. Klausner (ed). 734pp. University of Toronto Press. ISBN: 0-8020-2758-X.</item>
+                            <item>1991 Lancashire, David George (ed). 600pp. University of Toronto Press. ISBN: 0-8020-2862-4.</item>
+                            <item>1994 Shropshire, J. Alan B. Somerset (ed). 834pp in 2 vols. University of Toronto Press. ISBN 0-8020-0648-5.</item>
+                            <item>1996 Somerset, including Bath, James Stokes with Robert J Alexander (eds). 1142pp in 2 vols. University of Toronto Press. ISBN: 0-8020-0459-8. OUT OF PRINT.</item>
+                            <item>1997 Bristol, Mark C. Pilkinton (ed). 468pp. University of Toronto Press. ISBN: 0-8020-4221-X.</item>
+                            <item>1999 Dorset/Cornwall, Rosalind Conklin Hays and C.E. McGee / Sally L. Joyce and Evelyn S. Newlyn (eds). 720pp. University of Toronto Press and Brepols Publishers. ISBN: 0-8020-4379-8 and ISBN: 2-503-50813-8.</item>
+                            <item>2000 Sussex, Cameron Louis (ed). 404pp. University of Toronto Press and Brepols Publishers. ISBN: 0-8020-4849-8 and ISBN: 2-503-50905-3.</item>
+                            <item>2002 Kent: Diocese of Canterbury, James M Gibson (ed). 1899pp in 3 vols. University of Toronto Press and The British Library. ISBN: 0-8020-8726-4 and ISBN: 0-7123-4803-4.</item>
+                            <item>2004 Oxford, John R Elliott, Jr, and Alan H Nelson (University); Alexandra F Johnston and Diana Wyatt (City) (eds). 1322pp in 2 vols. University of Toronto Press and The British Library. ISBN: 0-8020-3905-7 and ISBN: 0-7123-4856-5.</item>
+                            <item>2005 Wales, David N Klausner (ed). 720pp. University of Toronto Press and The British Library. ISBN: 0-8020-9072-9 and ISBN: 0-7123-4911-1.</item>
+                            <item>2007  Cheshire (including Chester), Elizabeth Baldwin, Lawrence M Clopper, and David Mills (eds). 1504 pp in 2 vols. University of Toronto Press and The British Library. ISBN: 978-0-8020-9326-4 and ISBN: 978-0-7123-0935.</item>
+                            <item>2008 Ecclesiastical London, Mary Erler (ed). 504pp. University of Toronto Press and The British Library. ISBN: 978-0-8020-9858-0 and ISBN: 978-0-7123-5024-2.</item>
+                            <item>2009 Lincolnshire, James Stokes (ed). 913pp in 2 vols. University of Toronto Press and The British Library. ISBN: 978-1-4426-4000-9 and ISBN: 978-0-7123-0948-6.</item>
+                            <item>2009 Lancashire including Isle of Man Addenda, Elizabeth Baldwin, David George, and David Mills (eds). 53pp. Published in PDF form by Records of Early English Drama.</item>
+                            <item>2010 Inns of Court, Alan H. Nelson and John R. Elliott Jr (eds). 1174pp in 3 vols. Boydell &amp; Brewer. ISBN: 978-1-84384-259-0.</item>
+                            <item>2015 Civic London to 1558, Anne Lancashire (ed) with David J. Parkinson (asst ed). 1795pp in 3 vols. Boydell &amp; Brewer. ISBN: 978-1-84384-399-3.</item>
+                    </list>
+                </p>
+            </div>
+            <div xml:id="digital_collections">
+                <head>Digital Collections</head>
+                <p>
+                    <list>
+                        <item>2017 Staffordshire, J. Alan B. Somerset (ed). <ref target="https://ereed.library.utoronto.ca/collections/staff/">https://ereed.library.utoronto.ca/collections/staff/</ref>.</item>
+                        <item>2018 Berkshire, Alexandra F. Johnston (ed). <ref target="https://ereed.library.utoronto.ca/collections/berks/">https://ereed.library.utoronto.ca/collections/berks/</ref>.</item>
+                        <item>2020 Hampshire, Peter Greenfield and Jane Cowling (eds). <ref target="https://ereed.library.utoronto.ca/collections/hamps/">https://ereed.library.utoronto.ca/collections/hamps/</ref>.</item>                         
+                        <item>2021 Yorkshire North Riding, David N. Klausner (ed).  <ref target="https://ereed.library.utoronto.ca/collections/yksnr/">https://ereed.library.utoronto.ca/collections/yksnr/</ref>.</item>
+                        <item>2022 Cambridgeshire, John A. Geck (ed). <ref target="https://ereed.library.utoronto.ca/collections/cambs/">https://ereed.library.utoronto.ca/collections/cambs/</ref>.</item>
+                        <item>2023 Rose Playhouse, Sally-Beth MacLean (ed). <ref target="https://ereed.library.utoronto.ca/collections/rosep/">https://ereed.library.utoronto.ca/collections/rosep/</ref>.</item>
+                    </list>
+                </p>
+            </div>
+ 
+        </body>
+    </text>
+</TEI>
