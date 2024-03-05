@@ -7732,7 +7732,7 @@ patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab><gap reason="omitted"/>It<ex>e</ex>m solut<ex>um</ex> <rs ref="eats:1225" type="Entertainer_Type">le trompett</rs> in absencia
-         abbat<ex>is</ex> ad <rs ref="eats:43376" type="CalendarDay_Liturgical">festu<ex>m</ex> s<ex>an</ex>c<ex>t</ex>i Ed<ex>mund</ex>i</rs> iij s<gap
+         <rs ref="eats:27258" type="Collective_Clergy">abbat<ex>is</ex></rs> ad <rs ref="eats:43376" type="CalendarDay_Liturgical">festu<ex>m</ex> s<ex>an</ex>c<ex>t</ex>i Ed<ex>mund</ex>i</rs> iij s<gap
          reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
@@ -7740,7 +7740,7 @@ patron/troupe -->. </p>
       <div>
        <head><supplied>(Gifts)</supplied></head>
        <gap reason="omitted"/>
-
+       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
        <ab>In p<ex>ri</ex>mis Ep<ex>isco</ex>po s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i iiij d.
          It<ex>e</ex>m dat<ex>um</ex> <rs ref="eats:172928" type="Collective_Troupe">minstrall' d<ex>omi</ex>ni Reg<ex>is</ex></rs> &amp; al<ex>ijs</ex>
         hoc a<ex>nn</ex>o ij s. iiij d.</ab>
@@ -7788,7 +7788,7 @@ patron/troupe -->. </p>
        <pb n="1" type="membrane"/>
 
        <gap reason="omitted"/>
-
+       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
        <ab><gap reason="omitted"/>It<ex>e</ex>m solut<ex>um</ex> <rs ref="eats:8782" type="Entertainer_Type">lusor'</rs> in aula ad
          p<ex>re</ex>cept<ex>um</ex> prior<ex>is</ex> hoc a<ex>nn</ex>o ij s<gap reason="omitted"/>.
          It<ex>e</ex>m dat<ex>um</ex> ep<ex>iscop</ex>o s<ex>an</ex>c<ex>t</ex>i nicholai iiij d<gap
@@ -7824,10 +7824,10 @@ patron/troupe -->. </p>
        <pb n="[3]" type="membrane"/>
 
        <gap reason="omitted"/>
-
+       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
        <table>
         <row>
-         <cell>In p<ex>rim</ex>is dat<ex>um</ex> Cl<ex>er</ex>icis S<ex>an</ex>c<ex>t</ex>i
+         <cell>In p<ex>rim</ex>is dat<ex>um</ex> <rs ref="eats:9186" type="Collective_Clergy">Cl<ex>er</ex>icis</rs> S<ex>an</ex>c<ex>t</ex>i
            Nich<ex>ola</ex>i ep<ex>iscop</ex>i</cell>
          <cell rend="right">vj d</cell>
         </row>
@@ -7835,8 +7835,8 @@ patron/troupe -->. </p>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> dat<ex>um</ex> diu<ex>er</ex>s<ex>is</ex> lusorib<ex>us</ex> et
-           histrionib<ex>us</ex></cell>
+         <cell>It<ex>em</ex> dat<ex>um</ex> diu<ex>er</ex>s<ex>is</ex> <rs ref="eats:8782" type="Entertainer_Type">lusorib<ex>us</ex></rs> et
+           <rs ref="eats:1261" type="Entertainer_Type">histrionib<ex>us</ex></rs></cell>
          <cell rend="right">ij s.</cell>
         </row>
        </table>
@@ -7882,7 +7882,7 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>It<ex>e</ex>m datu<ex>m</ex> mimis regijs &amp; alijs ad p<ex>re</ex>ceptu<ex>m</ex>
+       <ab>It<ex>e</ex>m datu<ex>m</ex> <rs ref="eats:179677" type="Collective_Troupe">mimis regijs</rs> &amp; alijs ad p<ex>re</ex>ceptu<ex>m</ex>
          d<ex>omi</ex>nu<ex>m</ex> p<ex>ri</ex>or<ex>is</ex> diu<ex>er</ex>s<ex>is</ex>
          te<ex>m</ex>porib<ex>us</ex> iij s<gap reason="omitted"/>.</ab>
 
