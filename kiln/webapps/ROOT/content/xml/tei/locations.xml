@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Locations</title>
+                <title type="main">How REED Defines Locations</title>
                 <author>Records of Early English Drama (REED)</author>
             </titleStmt>
             <editionStmt>
@@ -61,8 +61,10 @@
     <text>
         <body>
             <div xml:id="Locations">
-                <head>How eREED Defines Locations</head>
-
+                <head>How REED Defines Locations</head>
+<p>
+    This list of locations and definitions was 
+</p>
                 <table>
                     <row>
                         <cell><hi rend="bold"
@@ -80,7 +82,7 @@
                         <cell><hi rend="italic">arena</hi></cell>
                         <cell>A level area in which sports, entertainments, and other public events
                             are held. Includes cockpits, tiltyards, animal baiting arenas.</cell>
-                        <cell><rs ref="eats:227798" type="Place_F_Arena">Bear Garden 3</rs>, Tiltyard at Whitehall,</cell>
+                        <cell><ref target="https://ereeddev.library.utoronto.ca/entities/227798/">Bear Garden 3</ref>, <lb/>Tiltyard at Whitehall,</cell>
                         <cell>New Oxford American Dictionary, 3rd ed. Amended.</cell>
                         <cell/>
                     </row>
