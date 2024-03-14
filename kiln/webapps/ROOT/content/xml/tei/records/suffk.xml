@@ -217,7 +217,7 @@
         </row>
         <row>
          <cell>Item to <rs ref="eats:367907" type="Person_GenderUnknown">Ha<ex>m</ex>mont</rs> for p<ex>ro</ex>claymy<ex>n</ex>g the games at
-           Bra<ex>n</ex>tre<note type="foot">Bra<ex>n</ex>tre: <hi rend="italic">Braintree,
+           <!-- IN for AW: Missing tag for Braintree here?-->Bra<ex>n</ex>tre<note type="foot">Bra<ex>n</ex>tre: <hi rend="italic">Braintree,
             Essex</hi></note>, &amp; to <rs ref="eats:367956" type="Person_Male">peter</rs> for p<ex>ro</ex>claymyng them at <rs ref="eats:369522" type="Place_PA_Settlement">ypwyche</rs> </cell>
          <cell rend="right">x d.</cell>
         </row>
@@ -239,7 +239,7 @@
         </row>
         <row>
          <cell>Ite<ex>m</ex> to <rs ref="eats:368530" type="Person_GenderUnknown">Bett<ex>es</ex></rs> for setty<ex>n</ex>g of xiij sett<ex>es</ex> in ye
-          <rs ref="eats:368616" type="Place_F_Church">Churche yerd</rs><!-- IN for AW: I expect this would be the churchyard of Holy Trinity church --></cell>
+          <rs ref="eats:368616" type="Place_F_Church">Churche yerd</rs></cell>
          <cell rend="right">vij d.</cell>
         </row>
         <row>
@@ -335,8 +335,9 @@
         &amp; malting howse therevnto adioyning, and a barne w<ex>i</ex>th three bay=steds, all of
         them thacht togither w<ex>i</ex>th a yard , orchard=plot, &amp; to est as they ly betwixt
         the <rs ref="eats:369591" type="Place_F_Church">Church=yard</rs> there in p<ex>ar</ex>t, &amp; the lands of <rs ref="eats:368135" type="Person_Male">Edmund Wittipot</rs> knight in
-         p<ex>ar</ex>t on the Est, and the lands of <rs ref="eats:369545" type="Place_PA_Settlement">Akenham=hall</rs> in the tenure of Io<ex>hn</ex> Rose
-         on<del>.</del> the west abutting vpon Maypole pyghtell south, and vpon the glebe-land of
+         p<ex>ar</ex>t on the Est, and the lands of <!-- IN for AW: I think this should probably be tagged as Akenham Hall rather than just Akenham, unless the former isn't locatable?-->
+          <rs ref="eats:369545" type="Place_PA_Settlement">Akenham=hall</rs> in the tenure of Io<ex>hn</ex> Rose
+         on<del>.</del> the west abutting vpon <!--IN for AW: Is it possible to ID and tag this? Sounds like a location-->Maypole pyghtell south, and vpon the glebe-land of
         the said p<ex>ar</ex>sonage north, Cont<ex>aining</ex> togither by estimacio<ex>n</ex> terce
         acres (more or les).</ab>
 
@@ -402,7 +403,7 @@
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m p<ex>ai</ex>d to ye <rs ref="eats:366737" type="Collective_Troupe">Duk<ex>es</ex> bearwarde</rs> at ye ball<ex>iffs</ex>
+         <cell>It<ex>e</ex>m p<ex>ai</ex>d to ye <rs ref="eats:366737" type="Collective_Troupe">Duk<ex>es</ex> bearwarde</rs> at ye <rs ref="eats:366787" type="Collective_Office">ball<ex>iffs</ex></rs>
           comandement </cell>
          <cell rend="right">iiij s.</cell>
         </row>
@@ -472,7 +473,7 @@
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m for wood for <rs ref="eats:368181" type="Person_Male">Iohn browne</rs> at ye Churche </cell>
+         <cell>It<ex>e</ex>m for wood for <rs ref="eats:368181" type="Person_Male">Iohn browne</rs> at ye <!-- IN for AW: Church to be tagged as location here? -->Churche </cell>
          <cell rend="right">iij s. iiij d.</cell>
         </row>
         <row>
@@ -525,8 +526,7 @@
       </div>
      </div>
      <div type="endnote">
-      <p> The church referred to on f 49v is the Aldeburgh <!--  need to clarify
-relevance of this note (to f 49v)  --> parish church of Saints Peter and Paul. It is built
+      <p> The church referred to on f 49v is the Aldeburgh parish church of Saints Peter and Paul. It is built
        near the site of a Saxon church.</p>
 
       <p> This payment to the Queen's players on f 52v occurs between entries dated 1 November and 1
@@ -566,7 +566,7 @@ relevance of this note (to f 49v)  --> parish church of Saints Peter and Paul. I
 
        <table>
         <row>
-         <cell>To <rs ref="eats:368704" type="Person_Male">Mr Bayly periman</rs> for Riding to ye Sessions w<ex>i</ex>th the blind boye</cell>
+         <cell>To Mr <rs ref="eats:366787" type="Collective_Office">Bayly</rs> <rs ref="eats:368704" type="Person_Male">periman</rs> for Riding to ye Sessions w<ex>i</ex>th the blind boye</cell>
          <cell rend="right">vij s. xj d.</cell>
         </row>
         <row>
@@ -598,7 +598,7 @@ relevance of this note (to f 49v)  --> parish church of Saints Peter and Paul. I
      </div>
      <div type="endnote">
       <p> Mr Periman, who carried the blind boy to the sessions on f 67v, was one of the town's two
-       <rs ref="eats:366787" type="Collective_Office">bailiffs</rs>, the other being <rs ref="eats:368895" type="Person_Male">Mr Bence</rs>, in 1572-3. In 1574 Mr Periman reimbursed the town 6d for
+       bailiffs, the other being <rs ref="eats:368895" type="Person_Male">Mr Bence</rs>, in 1572-3. In 1574 Mr Periman reimbursed the town 6d for
        his seal of office (f 77). In that same year, his fellow bailiff, Mr Bence, received 24s for
        2 cades (half-barrels) of full herrings, and 3 shillings for 2 cades of spratt (smelt) (f
        80). Fishing was the town's principal commercial activity. In the same year the town paid Mr
@@ -702,7 +702,7 @@ relevance of this note (to f 49v)  --> parish church of Saints Peter and Paul. I
          <cell rend="right">vj d.</cell>
         </row>
         <row>
-         <cell>more to him for going to mennes hovss to Bydd them to come to ffremans to ye <rs ref="eats:40453" type="Drama_Type">play</rs> </cell>
+         <cell>more to him for going to mennes hovss to Bydd them to come to <!-- IN for LS: Freman to be tagged here (and given occupation of inn and tavern keeper, as per en-->ffremans to ye <rs ref="eats:40453" type="Drama_Type">play</rs> </cell>
          <cell rend="right">iiij d.</cell>
         </row>
        </table>
@@ -718,7 +718,7 @@ relevance of this note (to f 49v)  --> parish church of Saints Peter and Paul. I
        <table>
         <row>
          <cell>More to him for <note type="foot">him: <hi rend="italic"><rs ref="eats:369086" type="Person_Male">John Foxe</rs>, one of the <rs ref="eats:366764" type="Place_PA_Settlement">town's</rs>
-            two <rs ref="eats:366787" type="Collective_Office">bailiffs</rs></hi></note> Mr caves man for ye blind boy</cell>
+            two <rs ref="eats:366787" type="Collective_Office">bailiffs</rs></hi></note> <!-- IN for LS: Mr cave to be tagged here?-->Mr caves <rs ref="eats:297010" type="Collective_Occupations">man</rs> for ye blind boy</cell>
          <cell rend="right">ij s. vj d.</cell>
         </row>
        </table>
@@ -781,7 +781,7 @@ relevance of this note (to f 49v)  --> parish church of Saints Peter and Paul. I
 
        <table>
         <row>
-         <cell>for carieng of <rs ref="eats:302248" type="Thing_SetMachinery">staging</rs> &amp; <rs ref="eats:219750" type="Thing_Property">Ropes</rs> for ye church </cell>
+         <cell>for carieng of <rs ref="eats:302248" type="Thing_SetMachinery">staging</rs> &amp; <rs ref="eats:219750" type="Thing_Property">Ropes</rs> for ye <!-- IN for AW: church to be tagged here-->church </cell>
          <cell rend="right">x d.</cell>
         </row>
        </table>
@@ -1189,7 +1189,7 @@ relevance of this note (to f 49v)  --> parish church of Saints Peter and Paul. I
        <table>
         <row>
          <cell>p<ex>ai</ex>d to the <rs ref="eats:8782" type="Entertainer_Type">Players</rs> ye iij<hi rend="superscript">d</hi> day of Avgust at mr
-           bayliff<ex>es</ex> com<ex>m</ex>andement</cell>
+           <rs ref="eats:366787" type="Collective_Office">bayliff<ex>es</ex></rs> com<ex>m</ex>andement</cell>
          <cell rend="right">vj s. viij d.</cell>
         </row>
        </table>
@@ -1761,8 +1761,7 @@ relevance of this note (to f 49v)  --> parish church of Saints Peter and Paul. I
        is impossible to know the date of this second visit by those players.</p>
 
       <p> The queen referenced on f 328v and 329 was Elizabeth Tudor (1533–1602/3), crowned
-       Elizabeth I of England 15 January 1558/9. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315890"><title>P&amp;P</title></ref><!-- IN
-to add link to patron/troupe -->. </p>
+       Elizabeth I of England 15 January 1558/9. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315890"><title>P&amp;P</title></ref>. </p>
 
       <p> On f 328v, the patron Lord Morley was <rs ref="eats:173890" type="Person_Male">Edward Parker</rs> (1551–1618), twelfth Baron Morley from
        22 May 1577 and twelfth Lord Morley from 22 October 1577, with residences at Hallingbury
@@ -1790,7 +1789,7 @@ to add link to patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab><rs ref="eats:370061" type="Person_Male">Humphrie Swaine</rs> a Youthe, and seruante to one of <rs ref="eats:17169" type="Collective_Troupe">her Ma<ex>ies</ex>ties players</rs> was
+       <ab><rs ref="eats:370061" type="Person_Male">Humphrie Swaine</rs> a Youthe, and <rs ref="eats:297010" type="Collective_Occupations">seruante</rs> to one of <rs ref="eats:17169" type="Collective_Troupe">her Ma<ex>ies</ex>ties players</rs> was
         buried the same daie 1591.</ab>
 
        <gap reason="omitted"/>
@@ -2418,7 +2417,7 @@ to add link to patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid65">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:371403" type="Place_F_TownHall">Bacon of Redgrave Hall</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <!--IN for AW: I think Redgrave Hall would be residence instead of/in addition to a town hall?--><rs ref="eats:371403" type="Place_F_TownHall">Redgrave Hall</rs>
       <date when-iso="1614">1614</date>
       <seg ana="taxon:SUBC02">SUBC02</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid65-transcription">
@@ -2437,7 +2436,7 @@ to add link to patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid66">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:371403" type="Place_F_TownHall">Bacon of Redgrave Hall</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <!--IN for AW: I think Redgrave Hall would be residence instead of/in addition to a town hall?--><rs ref="eats:371403" type="Place_F_TownHall">Redgrave Hall</rs>
       <date when-iso="1624">1624</date>
       <seg ana="taxon:SUBC03">SUBC03</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid66-transcription">
@@ -2476,7 +2475,7 @@ to add link to patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid67">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:371403" type="Place_F_TownHall">Bacon of Redgrave Hall</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <!--IN for AW: I think Redgrave Hall would be residence instead of/in addition to a town hall?--><rs ref="eats:371403" type="Place_F_TownHall">Bacon of Redgrave Hall</rs>
       <date when-iso="1628">1628</date>
       <seg ana="taxon:SUBC04">SUBC04</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid67-transcription">
@@ -2488,7 +2487,7 @@ to add link to patron/troupe -->. </p>
         by the berry Carriear: this weecke: it is in a barrill Case: and locked: with a pad locke: I
         boought it of one of the <rs ref="eats:29681" type="Entertainer_Type">drumers</rs> of our Artilery gardon: it hath ben <del>all oon</del> his
         drume this nine years to my knowleg: and is estemed to be so good a drume as any is in all
-        England: ther is a small Cracke in the rime: next to the nales: but hee dothe warrantt: that
+        England: ther is a small Cracke in the rime: next to the <rs ref="eats:302489" type="Thing_ClothingMaterials">nales</rs>: but hee dothe warrantt: that
         it shall never goe any further: for it hath bine so: ever since it was made: I Cased him to
         tacke out one of the heads: that I might locke in to the rime: and I found: it to be very
         sound: if I had not had: some great in trust in him: I could not have bought it of him for
@@ -2501,7 +2500,7 @@ to add link to patron/troupe -->. </p>
        <table>
         <row>
          <cell> <rs ref="eats:36947" type="Place_PA_Settlement">London</rs>: this <lb/>14<hi rend="superscript">th</hi> August: <lb/>1628</cell>
-         <cell>Your wor<ex>shipfu</ex>ll to Comand to <lb/>His Power: <seg type="signed">Abraham
+         <cell>Your wor<ex>shipfu</ex>ll to Comand to <lb/>His Power: <!--IN for LS: Abraham Viell to be tagged here--><seg type="signed">Abraham
            Viell</seg></cell>
         </row>
        </table>
@@ -2532,7 +2531,7 @@ to add link to patron/troupe -->. </p>
          <cell rend="right">0</cell>
         </row>
         <row>
-         <cell>for a porter</cell>
+         <cell>for a <rs ref="eats:297010" type="Collective_Occupations">porter</rs></cell>
          <cell rend="right">0</cell>
          <cell rend="right">00</cell>
          <cell rend="right">6</cell>
@@ -2557,7 +2556,7 @@ to add link to patron/troupe -->. </p>
 
        <ab>Wyllia<ex>m</ex> blomeffeld</ab>
 
-       <ab>owre menstrell to</ab>
+       <ab>owre <rs ref="eats:367586" type="Collective_Troupe">menstrell</rs> to</ab>
 
        <ab>to<note type="foot">to to: <hi rend="italic">dittography</hi></note> owre gelde he</ab>
 
@@ -2574,7 +2573,7 @@ to add link to patron/troupe -->. </p>
        <head>p 6</head>
        <pb n="6" type="page"/>
 
-       <ab>Nicholaus plowman <rs ref="eats:367586" type="Collective_Troupe">mynstrall</rs> of the <rs ref="eats:367530" type="Collective_GuildsReligious"><rs ref="eats:367530" type="Collective_GuildsReligious">Gyld of Senyt petre</rs></rs> he havyng to hys wag<ex>es</ex>
+       <ab>Nicholaus plowman mynstrall of the <rs ref="eats:367530" type="Collective_GuildsReligious">Gyld of Senyt petre</rs> he havyng to hys wag<ex>es</ex>
         xvj d.</ab>
 
        <gap reason="omitted"/>
@@ -2960,7 +2959,7 @@ to add link to patron/troupe -->. </p>
         <row>
          <cell>In p<ex>ri</ex>mis of Iohn Gawge by hym receyvid of the township of <rs ref="eats:371629" type="Place_PA_Settlement">lauenham</rs> xx s.
           iij d. of Mr Iohn Spryng ix s. of <rs ref="eats:371678" type="Place_PA_Settlement">Brendylleigh</rs> iiij s. viij d. of M<ex>aster</ex> Crane
-          for Chilton vij s. of Iohn howe of Stowe iiij s. &amp; takyn in his hows vj s. </cell>
+          for Chilton vij s. of Iohn howe of <!-- IN for AW: Stowe to be tagged as location here? I'm guessing this is the same as Stoke mentioned below-->Stowe iiij s. &amp; takyn in his hows vj s. </cell>
          <cell rend="right">l s. xj d.</cell>
         </row>
         <row>
@@ -2986,7 +2985,7 @@ to add link to patron/troupe -->. </p>
         </row>
         <row>
          <cell>It<ex>e</ex>m rec<ex>eyvid</ex> of Thom<ex>a</ex>s Myller &amp; Iohn Balhed for
-           leyh<ex>a</ex>m &amp; shelley iiij s. j d. &amp; of drynkers in ther bothe iiij s. v
+           <!-- IN for AW: Layham to be tagged as location here?-->leyh<ex>a</ex>m &amp; shelley iiij s. j d. &amp; of drynkers in ther bothe iiij s. v
           d.</cell>
          <cell rend="right">viij s. vj d.</cell>
         </row>
@@ -3012,7 +3011,7 @@ to add link to patron/troupe -->. </p>
         <row>
          <cell>It<ex>e</ex>m of <del>Iohn</del>
           <add place="above">Iohan</add>laughlyn wydowe for the township of <rs ref="eats:372017" type="Place_PA_Settlement">Polsted</rs> beside my lady
-          of Oxenford<ex>es</ex><note type="foot">lady of <rs ref="eats:39267" type="Place_PA_Settlement">Oxenford</rs><ex>es</ex>: <hi rend="italic"
+          of Oxenford<ex>es</ex><note type="foot">lady of Oxenford<ex>es</ex>: <hi rend="italic"
             >Elizabeth de Vere, Countess of Oxford</hi></note> howshold</cell>
          <cell rend="right">xij s.</cell>
         </row>
