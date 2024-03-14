@@ -335,8 +335,8 @@
         &amp; malting howse therevnto adioyning, and a barne w<ex>i</ex>th three bay=steds, all of
         them thacht togither w<ex>i</ex>th a yard , orchard=plot, &amp; to est as they ly betwixt
         the <rs ref="eats:369591" type="Place_F_Church">Church=yard</rs> there in p<ex>ar</ex>t, &amp; the lands of <rs ref="eats:368135" type="Person_Male">Edmund Wittipot</rs> knight in
-         p<ex>ar</ex>t on the Est, and the lands of <!-- IN for AW: I think this should probably be tagged as Akenham Hall rather than just Akenham, unless the former isn't locatable?-->
-          <rs ref="eats:369545" type="Place_PA_Settlement">Akenham=hall</rs> in the tenure of Io<ex>hn</ex> Rose
+         p<ex>ar</ex>t on the Est, and the lands of
+          <rs ref="eats:369568" type="Place_F_TownHall">Akenham=hall</rs> in the tenure of Io<ex>hn</ex> Rose
          on<del>.</del> the west abutting vpon <!--IN for AW: Is it possible to ID and tag this? Sounds like a location-->Maypole pyghtell south, and vpon the glebe-land of
         the said p<ex>ar</ex>sonage north, Cont<ex>aining</ex> togither by estimacio<ex>n</ex> terce
         acres (more or les).</ab>
@@ -473,7 +473,7 @@
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m for wood for <rs ref="eats:368181" type="Person_Male">Iohn browne</rs> at ye <!-- IN for AW: Church to be tagged as location here? -->Churche </cell>
+         <cell>It<ex>e</ex>m for wood for <rs ref="eats:368181" type="Person_Male">Iohn browne</rs> at ye <rs ref="eats:369637" type="Place_F_Church">Churche</rs> </cell>
          <cell rend="right">iij s. iiij d.</cell>
         </row>
         <row>
@@ -781,7 +781,7 @@
 
        <table>
         <row>
-         <cell>for carieng of <rs ref="eats:302248" type="Thing_SetMachinery">staging</rs> &amp; <rs ref="eats:219750" type="Thing_Property">Ropes</rs> for ye <!-- IN for AW: church to be tagged here-->church </cell>
+         <cell>for carieng of <rs ref="eats:302248" type="Thing_SetMachinery">staging</rs> &amp; <rs ref="eats:219750" type="Thing_Property">Ropes</rs> for ye <rs ref="eats:369637" type="Place_F_Church">church</rs> </cell>
          <cell rend="right">x d.</cell>
         </row>
        </table>
@@ -2417,7 +2417,7 @@
    </text>
    <text type="record" xml:id="suffk-rid65">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <!--IN for AW: I think Redgrave Hall would be residence instead of/in addition to a town hall?--><rs ref="eats:371403" type="Place_F_TownHall">Redgrave Hall</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:371403" type="Place_F_TownHall">Redgrave Hall</rs>
       <date when-iso="1614">1614</date>
       <seg ana="taxon:SUBC02">SUBC02</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid65-transcription">
@@ -2436,7 +2436,7 @@
    </text>
    <text type="record" xml:id="suffk-rid66">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <!--IN for AW: I think Redgrave Hall would be residence instead of/in addition to a town hall?--><rs ref="eats:371403" type="Place_F_TownHall">Redgrave Hall</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:371403" type="Place_F_Residence">Redgrave Hall</rs>
       <date when-iso="1624">1624</date>
       <seg ana="taxon:SUBC03">SUBC03</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid66-transcription">
@@ -2475,7 +2475,7 @@
    </text>
    <text type="record" xml:id="suffk-rid67">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <!--IN for AW: I think Redgrave Hall would be residence instead of/in addition to a town hall?--><rs ref="eats:371403" type="Place_F_TownHall">Bacon of Redgrave Hall</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:371403" type="Place_F_Residence">Bacon of Redgrave Hall</rs>
       <date when-iso="1628">1628</date>
       <seg ana="taxon:SUBC04">SUBC04</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid67-transcription">
@@ -2959,7 +2959,7 @@
         <row>
          <cell>In p<ex>ri</ex>mis of Iohn Gawge by hym receyvid of the township of <rs ref="eats:371629" type="Place_PA_Settlement">lauenham</rs> xx s.
           iij d. of Mr Iohn Spryng ix s. of <rs ref="eats:371678" type="Place_PA_Settlement">Brendylleigh</rs> iiij s. viij d. of M<ex>aster</ex> Crane
-          for Chilton vij s. of Iohn howe of <!-- IN for AW: Stowe to be tagged as location here? I'm guessing this is the same as Stoke mentioned below-->Stowe iiij s. &amp; takyn in his hows vj s. </cell>
+          for Chilton vij s. of Iohn howe of <rs ref="eats:374417" type="Place_PA_Settlement">Stowe</rs> iiij s. &amp; takyn in his hows vj s. </cell>
          <cell rend="right">l s. xj d.</cell>
         </row>
         <row>
@@ -2985,7 +2985,7 @@
         </row>
         <row>
          <cell>It<ex>e</ex>m rec<ex>eyvid</ex> of Thom<ex>a</ex>s Myller &amp; Iohn Balhed for
-           <!-- IN for AW: Layham to be tagged as location here?-->leyh<ex>a</ex>m &amp; shelley iiij s. j d. &amp; of drynkers in ther bothe iiij s. v
+           <rs ref="eats:374837" type="Place_PA_Settlement">leyh<ex>a</ex>m</rs> &amp; shelley iiij s. j d. &amp; of drynkers in ther bothe iiij s. v
           d.</cell>
          <cell rend="right">viij s. vj d.</cell>
         </row>
