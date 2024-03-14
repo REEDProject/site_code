@@ -180,6 +180,16 @@
         <map:serialize />
       </map:match>
       
+      <!-- About: Locations. -->
+      <map:match id="ereed-about-locations" pattern="about/locations/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part element="TEICorpus" src="../content/xml/tei/locations.xml" />
+          <map:part src="cocoon://_internal/menu/main.xml?url=about/locations/" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/locations.xsl" />
+        <map:serialize />
+      </map:match>
+      
       <!-- About: People. -->
       <map:match id="ereed-about-people" pattern="about/people/">
         <map:aggregate element="aggregation" label="content">

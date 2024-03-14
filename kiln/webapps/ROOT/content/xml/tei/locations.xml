@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="records/REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="records/REED.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/" xml:id="locations">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Locations</title>
+                <author>Records of Early English Drama (REED)</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>version 1, released <date when-iso="2024-03-06">06 March
+                    2024</date></edition>
+            </editionStmt>
+            <publicationStmt>
+                <authority><orgName>Records of Early English Drama (REED)</orgName>
+                    <address>
+                        <addrLine>University of Toronto</addrLine>
+                        <addrLine>170 St George Street, Suite 810</addrLine>
+                        <addrLine>Toronto, Ontario, Canada</addrLine>
+                        <addrLine>M5R 2M8</addrLine>
+                    </address>
+                </authority>
+                <availability>
+                    <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
+                            <date>2024</date></p>
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed
+                        under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+                        International (CC BY-NC-SA 4.0) licence.</licence>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title>Records of Early English Drama</title>
+            </seriesStmt>
+            <sourceDesc>
+                <p>Born digital. Information on original sources for transcriptions can be accessed
+                    via the Document Descriptions.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Records of Early English Drama (REED) is an international scholarly project that
+                    is establishing for the first time the context from which the drama of
+                    Shakespeare and his contemporaries grew. Founded in 1976, REED has worked since
+                    then to locate, transcribe, and edit historical documents containing evidence of
+                    drama, secular music, and other communal entertainment and ceremony from the
+                    Middle Ages until 1642, when the Puritans closed the London theatres.</p>
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+            <!-- Add new major milestone changes to top, within <change> tags. For instance, addition of new collections. -->
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+        <body>
+            <div xml:id="Locations">
+                <head>How REED Defines Locations</head>
+<p>
+    We share the list of terms below to explain our understanding of how places appear in REED Online records that provide context for performance in pre-modern England, Scotland and Wales. These definitions are rooted in the Oxford English and Oxford American Dictionaries and are as etymologically specific as possible to the time frame in which our work deals; where necessary definitions have been amended and are indicated in the Source column. The examples listed are from records in our collections.</p>
+    
+                <p>The list was developed in partnership with Diane Jackaki and her <ref target="https://cwrc.ca/reed">REED London Online project</ref>. Please cite this work as follows:</p>
+    
+                <p>Chung, Kathy K.Y., Diane K. Jakacki, Sally-Beth MacLean, and Illya Nokhrin. 'How REED Defines Locations.' REED Online, 2024. https://ereed.library.utoronto.ca/about/locations/.'</p>
+
+                <table>
+                    <row>
+                        <cell><hi rend="bold"
+                                >Term&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</hi></cell>
+                        <cell><hi rend="bold">REED
+                            Definition</hi>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+                        <cell>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+                        <cell><hi rend="bold"
+                                >Example(s)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</hi></cell>
+                        <cell>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</cell>
+                        <cell><hi rend="bold">Definition
+                                source&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</hi></cell>
+                    </row>
+                    <row><cell><lb/></cell></row>
+                    <row>
+
+                        <cell><hi rend="italic">arena</hi></cell>
+                        <cell>A level area in which sports, entertainments, and other public events
+                            are held. Includes cockpits, tiltyards, animal baiting arenas.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereeddev.library.utoronto.ca/entities/227798/">Bear Garden 3</ref></cell>
+                        <cell/>
+                        <cell>New Oxford American Dictionary, 3rd ed. Amended.</cell>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">bridge</hi></cell>
+                        <cell>A structure forming or carrying a road, path, etc, which spans a body
+                            of water, a roadway, a valley, or some other obstacle or gap, and allows
+                            a person or vehicle to pass unimpeded over or across it.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/229053/">London Bridge</ref></cell>
+                        <cell/>
+                        <cell>OED 1. Amended.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">church</hi></cell>
+                        <cell>A building for public Christian worship or rites such as baptism,
+                            marriage, etc, traditionally cruciform in shape, and typically having a
+                            tower, dome, or spire; distinguished originally from an oratory or place
+                            of private prayer.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/47290/">St Peter and Paul, church of</ref>; <ref target="https://ereed.library.utoronto.ca/entities/231447/">Westminster Abbey</ref></cell>
+                        <cell/>
+                        <cell>OED 1a.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">church <lb/>house</hi></cell>
+                        <cell>A house owned by a church; esp. a building next to a church, in which
+                            social events, meetings, etc, connected with the church are held; a
+                            church hall. Also: a house provided by the church for a member of the
+                            clergy; a parochial.</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell>OED</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">country</hi></cell>
+                        <cell>The territory of a nation</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/1715/">England</ref>, <ref target="https://ereed.library.utoronto.ca/entities/71742/">France</ref></cell>
+                        <cell/>
+                        <cell>OED 5. Amended.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">county</hi></cell>
+                        <cell>An administrative division of England, Scotland, Wales, and
+                            Ireland.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/2111/">Middlesex</ref>, <ref target="https://ereed.library.utoronto.ca/entities/2291/">Surrey</ref></cell>
+                        <cell/>
+                        <cell>OED I.</cell>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">ecclesiastical area</hi></cell>
+                        <cell>A geographic region formally connected to a religious organization,
+                            such as a diocese, archdeaconry, etc. Does not include parishes.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/249852/">Richmond, archdeaconry of</ref>; <ref target="https://ereed.library.utoronto.ca/entities/86900/">Winchester, diocese of</ref></cell>
+                        <cell/>
+                        <cell/>
+
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">gate</hi></cell>
+                        <cell>An opening in a wall, made for the purpose of entrance and exit, and
+                            capable of being closed by a movable barrier, the existence of which is
+                            usually implied; said with reference to a city or other enclosure, or
+                            the enclosure-wall of a large building, formerly also to the building
+                            itself, where door or doors is now commonly employed.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/116227/">Westgate</ref></cell>
+                        <cell/>
+                        <cell>OED 1.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">guildhall</hi></cell>
+                        <cell>The hall in which a guild met. From its use as a meeting-place for the
+                            town and corporation often synonymous with 'town-hall.'</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/314340/">The Townhouse, Linton</ref></cell>
+                        <cell/>
+                        <cell>OED</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">hospital</hi></cell>
+                        <cell>A house or hostel for the reception and entertainment of pilgrims,
+                            travellers, and strangers; a hospice. Hence, one of the establishments
+                            of the Knights Hospitallers; or an institution or establishment for the
+                            care of the sick or wounded, or of those who require medical
+                            treatment.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/106916/">St Cross Hospital, Winchester</ref></cell>
+                        <cell/>
+                        <cell>OED 1 and 3.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">Inn of Court</hi></cell>
+                        <cell>The four sets of buildings in London (the Inner Temple, the Middle
+                            Temple, Lincoln's Inn, and Gray's Inn) belonging to the four legal
+                            societies which have the exclusive right of admitting persons to
+                            practise at the bar, and hold a course of instruction and examination
+                            for that purpose; hence, these four societies themselves.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/226582/">Gray's Inn</ref></cell>
+                        <cell/>
+                        <cell>OED 5c.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">liberty</hi></cell>
+                        <cell>(a) An area of local administration distinct from neighbouring
+                            territory and possessing a degree of independence. In extended use: a
+                            precinct, a domain. Also in plural in same sense. (b) The district
+                            outside a city over which its jurisdiction extends. Also in plural in
+                            same sense. (c) Chiefly in plural and also with capital initial. An area
+                            outside a prison within which, on payment of a security, certain
+                            prisoners, esp. debtors, were permitted to reside.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/223826/">Clink</ref>, <ref target="https://ereed.library.utoronto.ca/entities/111630/">the Soke</ref></cell>
+                        <cell/>
+                        <cell>OED 6c.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">manor</hi></cell>
+                        <cell>An estate of a lord, including both the land and the manor house or
+                            mansion; a landed possession. Note: Manor houses themselves are
+                            categorized as 'residences' and may have different names from the manor
+                            itself. If the name is the same, then the manor house name is
+                            capitalized (eg, Holcombe Burnell Manor)</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/319693/">Great Linton Manor</ref>, <ref target="https://ereed.library.utoronto.ca/entities/223902/">Paris Garden Manor</ref></cell>
+                        <cell/>
+                        <cell>OED 1. Emphasis and note added.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">open area</hi></cell>
+                        <cell>An open space, often with poorly defined boundaries, such as a field,
+                            park, forest, market, etc</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/259394/">Whitby Market</ref></cell>
+                        <cell/>
+                        <cell>OED "area" 1.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">other</hi></cell>
+                        <cell>catch all for misfits; misc.</cell>
+                        <cell/>
+                        <cell></cell>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">parish</hi></cell>
+                        <cell>An area or district having its own priest, vicar, or other incumbent
+                            under the jurisdiction of a bishop (to whom tithes and ecclesiastical
+                            dues were formally paid); a territorial subdivision of a diocese. The
+                            smallest unit of local government in many rural areas.The existing
+                            ecclesiastical parishes were adopted by the Tudor state for civil
+                            purposes in a series of legislative measures beginning in the 1530s.
+                            These involved the parish having local responsibility for vital
+                            registration, highways, militia matters, and, above all, poor relief,
+                            roles which were largely retained until the 1830s. </cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/223940/">All Hallows Bread Street</ref>, <ref target="https://ereed.library.utoronto.ca/entities/226221/">St Saviour Southwark</ref></cell>
+                        <cell/>
+                        <cell>OED 2a. and 3a. Amended.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">place of punishment</hi></cell>
+                        <cell>A building or other location where people are disciplined for a crime
+                            or other offence, where people are held while awaiting trial, or where
+                            people are incarcerated.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/228426/">Marshalsea Prison</ref>, <ref target="https://ereed.library.utoronto.ca/entities/123553/">Tower of London</ref></cell>
+                        <cell/>
+                        <cell>OED 'prison' 1b. Significantly amended.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">playhouse</hi></cell>
+                        <cell>An edifice specially adapted to dramatic representations</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/63599/">Fortune Playhouse</ref>, <ref target="https://ereed.library.utoronto.ca/entities/157260/">Rose Playhouse</ref></cell>
+                        <cell/>
+                        <cell>OED 'theatre' 2a.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">property</hi></cell>
+                        <cell>A piece of land under one ownership. Sometimes a landed estate.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/231675/">Little Rose</ref>, <ref target="https://ereed.library.utoronto.ca/entities/231732/">the Unicorn</ref></cell>
+                        <cell/>
+                        <cell>OED 3c. Slightly amended.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">religious<lb/> house</hi></cell>
+                        <cell>A house or building inhabited by a religious order; an abbey,
+                            monastery, convent, etc; places where the religious orders lived and
+                            includes: priories, friaries, monasteries, nunneries, etc.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/324477/">Ely Priory</ref></cell>
+                        <cell/>
+                        <cell>OED. amended</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">private<lb/> residence</hi></cell>
+                        <cell>The place where a person resides; the dwelling place or home of a
+                            person (esp one of some rank or distinction).</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/250954/">Gilling Castle</ref>, <ref target="https://ereed.library.utoronto.ca/entities/228103/">Hampton Court</ref></cell>
+                        <cell/>
+                        <cell>OED 4a.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">school</hi></cell>
+                        <cell>An establishment or institution for the formal education of children
+                            or young people. Includes colleges and universities as well as grammar
+                            schools, primary schools, etc.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/73450/">Cambridge University</ref></cell>
+                        <cell/>
+                        <cell>OED II. 5a. Amended.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">settlement</hi></cell>
+                        <cell> A collection of dwelling-houses and other buildings identified as a
+                            single geo-political or administrative unit (such as a town or
+                            city).</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/36947/">London</ref>, <ref target="https://ereed.library.utoronto.ca/entities/37840/">York</ref></cell>
+                        <cell/>
+                        <cell>OED 'village' 1a. and TEI def of settlement. Amended.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">street</hi></cell>
+                        <cell>A path or way between different places, or leading to some place
+                            (including lanes, alleys, roads).</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/226563/">Fleet Street</ref>, <ref target="https://ereed.library.utoronto.ca/entities/231466/">Rose Alley</ref></cell>
+                        <cell/>
+                        <cell>OED "road" 4a.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">town hall</hi></cell>
+                        <cell>A building used for the administration of local government, the
+                            holding of court sessions, public meetings, entertainments, etc; (in
+                            early use also) a large hall used for such purposes within a larger
+                            building or set of buildings.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/73932/">town hall, Reading</ref></cell>
+                        <cell/>
+                        <cell>OED 1a.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">victualling<lb/> house</hi></cell>
+                        <cell>A house where victuals are supplied or sold; an eating-house, inn, or
+                            tavern.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/228064/">Boar's Head Inn</ref>, <ref target="https://ereed.library.utoronto.ca/entities/237532/">Dancing Bears</ref></cell>
+                        <cell/>
+                        <cell>OED.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">ward</hi></cell>
+                        <cell>An administrative division of a borough or city; originally, a
+                            district under the jurisdiction of an alderman. Also, the people of such
+                            a district collectively. In Anglo-Latin documents the wards (wardæ) of
+                            London are mentioned by that name from the 12th cent, sometimes
+                            designated by the name of the alderman and sometimes by their
+                            locality.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/232150/">Cripplegate</ref></cell>
+                        <cell/>
+                        <cell>OED 19a.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                    <row>
+                        <cell><hi rend="italic">water<lb/> feature</hi></cell>
+                        <cell>A body or mass of standing or flowing water (natural or artificial),
+                            irrespective of size or type; a sea, lake, river, etc.</cell>
+                        <cell/>
+                        <cell><ref target="https://ereed.library.utoronto.ca/entities/231960/">sewers, Southwark</ref></cell>
+                        <cell/>
+                        <cell>OED "water" 11a. Amended.</cell>
+                    </row>
+                    <row>
+                        <cell><lb/></cell>
+                    </row>
+                </table>
+            </div>
+        </body>
+    </text>
+</TEI>

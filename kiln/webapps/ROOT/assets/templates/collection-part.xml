@@ -30,6 +30,9 @@
             <h1>
               <xsl:apply-templates select="$record_text/tei:div/tei:head/node()" />
             </h1>
+            <h2>
+              <xsl:apply-templates select="$record_text/tei:div/tei:ab/node()" />
+            </h2>
           </div>
         </div>
         <xsl:for-each select="$record_text">
