@@ -4948,7 +4948,7 @@
       </div>
      </div>
      <div type="endnote">
-      <p> <!--IN: Not sure what is going on with the markup here?-->'@DOUBLE_SQUARE_OPENO@DOUBLE_SQUARE_CLOSE{u}r Ladye p{ar}ishe' (p 40) is that of St Mary,
+      <p> <!--IN: Not sure what is going on with the markup here?-->'[O]{u}r Ladye parish' (p 40) is that of St Mary,
        one of two parishes in Bungay. </p>
 
       <p> In the margins, sums are calculated and a few details of the original account summarized
@@ -6275,7 +6275,7 @@
      <div type="endnote">
       <p> In addition to this entry, John Green, musician, was also paid 10s for performing at the
        civic feast on 16 January 1619/20 and 10s again for a similar performance on 2 January
-       1621/2. He appears to have been one of the town's <rs ref="eats:371945" type="Collective_Office">waits</rs>, perhaps their master. He died in
+       1621/2. He appears to have been one of the town's waits, perhaps their master. He died in
        late December 1621 and was buried at St James Church (Stratham, <title>Accounts</title>, p
        355). His contribution of music to the comedy confirms that Bury's waits sometimes
        contributed to local dramatic productions</p>
@@ -6362,7 +6362,7 @@
 
        <table>
         <row>
-         <cell>And of xx s. given to the <rs ref="eats:11772" type="Person_Female">late Quenes players</rs> to send them owt of Towne when they
+         <cell>And of xx s. given to the <rs ref="eats:11772" type="Person_Female">late Quenes players</rs> to send them owt of <!-- IN for AW: Towne to be tagged here (as Bury St.E)?-->Towne when they
           came to playe at an vnfittinge tyme </cell>
          <cell rend="right">xx s</cell>
         </row>
@@ -6483,7 +6483,7 @@
        <table>
         <row>
          <cell>And of iij li. vij s. paide to Mr Bright for 7 yard<ex>es</ex> of blew <rs ref="eats:302518" type="Thing_ClothingMaterials">cloth</rs> at ix s.
-          the yard for <rs ref="eats:43439" type="Thing_LiveryRegalia">Liveries</rs> for the Towne <rs ref="eats:371945" type="Collective_Office">waytes</rs> in the tyme when Mr Rob<ex>er</ex>te Browne was
+          the yard for <rs ref="eats:43439" type="Thing_LiveryRegalia">Liveries</rs> for <!-- IN for AW: the Towne to be tagged here (as Bury St.E)?-->the Towne <rs ref="eats:371945" type="Collective_Office">waytes</rs> in the tyme when Mr Rob<ex>er</ex>te Browne was
           Received </cell>
          <cell rend="right">iij li. vij s.</cell>
         </row>
@@ -6590,8 +6590,8 @@
 
        <ab>It is agreed at a meeting by the <rs ref="eats:371767" type="Collective_Office">Governours</rs> the day &amp; yere aboveseid that Mr Stevens
         shalbe payd &amp; allowed all the charges that shalbe layd out &amp; disbursed for the
-        makynge of a <rs ref="eats:302248" type="Thing_SetMachinery">stage</rs> at the Abby for a Com<ex>m</ex>odye for the entertayntm<ex>en</ex>t of
-        the high sheriff of the County of <rs ref="eats:2273" type="Place_County">Suff<ex>olk</ex></rs> that now is:<note type="foot">the high
+        makynge of a <rs ref="eats:302248" type="Thing_SetMachinery">stage</rs> at <!-- IN for AW: the Abby to be tagged as location?-->the Abby for a Com<ex>m</ex>odye for the entertayntm<ex>en</ex>t of
+        the <!-- IN for LS: high sherriff... that now is to be tagged as Symond D'Ewes-->high sheriff of the County of Suff<ex>olk</ex> that now is:<note type="foot">the high
          sheriff … that now is: <hi rend="italic">Sir Symond D'Ewes of Stowlangtoft,
          Suffolk</hi></note> &amp; the seid stage to be kept &amp; the serues to the vse of the Schoole:<handShift/>
         <table>
@@ -7236,8 +7236,8 @@
 
        <gap reason="omitted"/>
 
-       <ab><damage><gap unit="chars" extent="9"/></damage> s<ex>an</ex>c<ex>t</ex>i
-        Nich<ex>ola</ex>i Ep<ex>iscop</ex>i in <rs ref="eats:41406" type="CalendarDay_Liturgical">festo s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i</rs> xij
+       <ab><damage><gap unit="chars" extent="9"/></damage><rs ref="eats:375245" type="Collective_Clergy"> s<ex>an</ex>c<ex>t</ex>i
+        Nich<ex>ola</ex>i Ep<ex>iscop</ex>i</rs> in <rs ref="eats:41406" type="CalendarDay_Liturgical">festo s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i</rs> xij
          d<gap reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
@@ -7354,8 +7354,7 @@
        <head>
         <supplied>(Gifts)</supplied></head>
        <gap reason="omitted"/>
-       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
-       <ab>In dono Ep<ex>iscopo</ex> s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i iiij d<gap
+       <ab>In dono <rs ref="eats:375245" type="Collective_Clergy">Ep<ex>iscopo</ex> s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i</rs> iiij d<gap
          reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
@@ -7443,6 +7442,7 @@ patron/troupe -->. </p>
      </div>
     </body>
    </text>
+   
    <text type="record" xml:id="suffk-rid17">
     <body>
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:368503" type="Place_F_ReligiousHouse">Bury St Edmunds Abbey</rs>
@@ -7453,10 +7453,9 @@ patron/troupe -->. </p>
        <head>mb [3] <supplied>(Gifts)</supplied></head>
        <pb n="[3]" type="membrane"/>
 
-       <gap reason="omitted"/>
-       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
-       <ab>In p<ex>ri</ex>mis dat<ex>um</ex> est Ep<ex>iscop</ex>o s<ex>an</ex>c<ex>t</ex>i
-         Nich<ex>ola</ex>i xij d<gap reason="omitted"/>.</ab>
+       <gap reason="omitted"/> 
+       <ab>In p<ex>ri</ex>mis dat<ex>um</ex> est <rs ref="eats:375245" type="Collective_Clergy">Ep<ex>iscop</ex>o s<ex>an</ex>c<ex>t</ex>i
+         Nich<ex>ola</ex>i</rs> xij d<gap reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
       </div>
@@ -7486,10 +7485,10 @@ patron/troupe -->. </p>
        <pb n="1" type="membrane"/>
 
        <gap reason="omitted"/>
-       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
-       <ab>Dat<ex>um</ex> minstrallis in <rs ref="eats:43376" type="CalendarDay_Liturgical">die s<ex>an</ex>c<ex>t</ex>i Ed<ex>mund</ex>i</rs> in absencia
+        
+       <ab>Dat<ex>um</ex> <rs ref="eats:8709" type="Entertainer_Type">minstrallis</rs> in <rs ref="eats:43376" type="CalendarDay_Liturgical">die s<ex>an</ex>c<ex>t</ex>i Ed<ex>mund</ex>i</rs> in absencia
          d<ex>omi</ex>ni <rs ref="eats:27258" type="Collective_Clergy">abb<ex>at</ex>is</rs> iij s<gap reason="omitted"/>. It<ex>e</ex>m dat<ex>um</ex>
-         Ep<ex>iscop</ex>o s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i xij d<gap reason="omitted"/>.
+         <rs ref="eats:375245" type="Collective_Clergy">Ep<ex>iscop</ex>o s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i</rs> xij d<gap reason="omitted"/>.
          It<ex>e</ex>m dat<ex>um</ex> <rs ref="eats:172928" type="Collective_Troupe">minstrallis d<ex>omi</ex>ni Regis</rs> <rs ref="eats:180167" type="Collective_Troupe">d<ex>omi</ex>ne principis</rs>
          <rs ref="eats:373264" type="Collective_Troupe">d<ex>omi</ex>ni Curson</rs> &amp; alijs <rs ref="eats:40706" type="Entertainment_Type">ludent<ex>ibus</ex></rs> in Aula Con<ex>uen</ex>t<ex>i</ex>
          p<ex>er</ex> p<ex>re</ex>ceptu<ex>m</ex> d<ex>omi</ex>ni p<ex>ri</ex>or<ex>is</ex> ij s.
@@ -7515,7 +7514,7 @@ patron/troupe -->. </p>
       </div>
      </div>
      <div type="endnote">
-      <!-- IN: Should there be note for Henry VIII's minstrels here --> 
+      <!-- IN: Should there be note for Henry VIII's minstrels here? --> 
       <p> Sir Robert Curson (1460-1535) was knighted in 1489, and named Baron of the Holy Roman
        Empire in 1500, with residence in Ipswich.</p>
 
@@ -7542,8 +7541,7 @@ patron/troupe -->. </p>
        <pb n="[5]" type="membrane"/>
 
        <gap reason="omitted"/>
-       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
-       <ab>In p<ex>ri</ex>mis Dat<ex>um</ex> episcopo s<ex>an</ex>c<ex>t</ex>i Nicholai xij d<gap
+       <ab>In p<ex>ri</ex>mis Dat<ex>um</ex> <rs ref="eats:375245" type="Collective_Clergy">episcopo s<ex>an</ex>c<ex>t</ex>i Nicholai</rs> xij d<gap
          reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
@@ -7582,10 +7580,9 @@ patron/troupe -->. </p>
            S<ex>anct</ex>i Ed<ex>mund</ex>i</rs> </cell>
          <cell rend="right">iij s.</cell>
         </row>
-        <row>
-         <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
-         <cell>It<ex>em</ex> in donis dat<ex>is</ex> Ep<ex>iscop</ex>o S<ex>anct</ex>i
-          Nicholai</cell>
+        <row> 
+         <cell>It<ex>em</ex> in donis dat<ex>is</ex> <rs ref="eats:375245" type="Collective_Clergy">Ep<ex>iscop</ex>o S<ex>anct</ex>i
+          Nicholai</rs></cell>
          <cell rend="right">xij s.</cell>
         </row>
         <row>
@@ -7666,7 +7663,7 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
        <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
-       <ab>It<ex>e</ex>m datu<ex>m</ex> Ep<ex>isco</ex>po S<ex>an</ex>c<ex>t</ex>i Nicholai iiij
+       <ab>It<ex>e</ex>m datu<ex>m</ex><rs ref="eats:375245" type="Collective_Clergy"> Ep<ex>isco</ex>po S<ex>an</ex>c<ex>t</ex>i Nicholai</rs> iiij
          d<gap reason="omitted"/>. It<ex>e</ex>m solut<ex>um</ex> <rs ref="eats:373472" type="CalendarDay_Liturgical">vigilia s<ex>an</ex>c<ex>t</ex>i
          ioh<ex>ann</ex>is Baptiste</rs> <rs ref="eats:290814" type="Entertainment_FolkCustom">afferent<ex>ibus</ex> Sirpos</rs> viij d. It<ex>e</ex>m
          datu<ex>m</ex> eod<ex>em</ex> die <rs ref="eats:69534" type="Collective_Troupe">lusorib<ex>us</ex> do<ex>min</ex>i Reg<ex>is</ex></rs> iiij
