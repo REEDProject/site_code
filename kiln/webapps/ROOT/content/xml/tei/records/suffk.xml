@@ -7735,9 +7735,8 @@ patron/troupe -->. </p>
       </div>
       <div>
        <head><supplied>(Gifts)</supplied></head>
-       <gap reason="omitted"/>
-       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
-       <ab>In p<ex>ri</ex>mis Ep<ex>isco</ex>po s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i iiij d.
+       <gap reason="omitted"/> 
+       <ab>In p<ex>ri</ex>mis <rs ref="eats:375245" type="Collective_Clergy">Ep<ex>isco</ex>po s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i</rs> iiij d.
          It<ex>e</ex>m dat<ex>um</ex> <rs ref="eats:172928" type="Collective_Troupe">minstrall' d<ex>omi</ex>ni Reg<ex>is</ex></rs> &amp; al<ex>ijs</ex>
         hoc a<ex>nn</ex>o ij s. iiij d.</ab>
 
@@ -7783,11 +7782,10 @@ patron/troupe -->. </p>
        <head>single membrane <supplied>(Expenses noted)</supplied></head>
        <pb n="1" type="membrane"/>
 
-       <gap reason="omitted"/>
-       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
+       <gap reason="omitted"/> 
        <ab><gap reason="omitted"/>It<ex>e</ex>m solut<ex>um</ex> <rs ref="eats:8782" type="Entertainer_Type">lusor'</rs> in aula ad
-         p<ex>re</ex>cept<ex>um</ex> prior<ex>is</ex> hoc a<ex>nn</ex>o ij s<gap reason="omitted"/>.
-         It<ex>e</ex>m dat<ex>um</ex> ep<ex>iscop</ex>o s<ex>an</ex>c<ex>t</ex>i nicholai iiij d<gap
+         p<ex>re</ex>cept<ex>um</ex> <rs ref="eats:27258" type="Collective_Clergy">prior<ex>is</ex></rs> hoc a<ex>nn</ex>o ij s<gap reason="omitted"/>.
+         It<ex>e</ex>m dat<ex>um</ex><rs ref="eats:375245" type="Collective_Clergy"> ep<ex>iscop</ex>o s<ex>an</ex>c<ex>t</ex>i nicholai</rs> iiij d<gap
          reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
@@ -7820,11 +7818,10 @@ patron/troupe -->. </p>
        <pb n="[3]" type="membrane"/>
 
        <gap reason="omitted"/>
-       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
        <table>
         <row>
-         <cell>In p<ex>rim</ex>is dat<ex>um</ex> <rs ref="eats:9186" type="Collective_Clergy">Cl<ex>er</ex>icis</rs> S<ex>an</ex>c<ex>t</ex>i
-           Nich<ex>ola</ex>i ep<ex>iscop</ex>i</cell>
+         <cell>In p<ex>rim</ex>is dat<ex>um</ex> <rs ref="eats:9186" type="Collective_Clergy">Cl<ex>er</ex>icis</rs> <rs ref="eats:375245" type="Collective_Clergy">S<ex>an</ex>c<ex>t</ex>i
+           Nich<ex>ola</ex>i ep<ex>iscop</ex>i</rs></cell>
          <cell rend="right">vj d</cell>
         </row>
         <row>
@@ -7911,18 +7908,17 @@ patron/troupe -->. </p>
        <pb n="4d" type="membrane"/>
 
        <gap reason="omitted"/>
-       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here --> 
        <table>
         <row>
-         <cell>In p<ex>ri</ex>mis solut<ex>um</ex> Ep<ex>isco</ex>po s<ex>an</ex>c<ex>t</ex>i
-          Nicholai</cell>
+         <cell>In p<ex>ri</ex>mis solut<ex>um</ex> <rs ref="eats:375245" type="Collective_Clergy">Ep<ex>isco</ex>po s<ex>an</ex>c<ex>t</ex>i
+          Nicholai</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m solut<ex>um</ex> Minstell<ex>is</ex> d<ex>omi</ex>ni Reg<ex>is</ex>
+         <cell>It<ex>e</ex>m solut<ex>um</ex><rs ref="eats:172928" type="Collective_Troupe"> Minstell<ex>is</ex> d<ex>omi</ex>ni Reg<ex>is</ex></rs>
           &amp; alior<ex>um</ex> Magnatu<ex>m</ex> ad vices</cell>
          <cell rend="right">vj s. viij d.</cell>
         </row>
@@ -7971,11 +7967,12 @@ patron/troupe -->. </p>
 
        <table>
         <row>
+         <!-- IN to LS: See endnote for IDs for people mentioned here-->
          <cell>To the<note type="marginal" place="margin_left">In reward xvij li. xiij s. iiij d.
            gyven by the Countese of Bathe and my M<ex>aste</ex>r to my lord of Norff<ex>olk</ex> his
-           officers at kennyngall dellyvered by the Steward viz. by the countesse of Bathe vj li.
+           officers at <!--IN for AW: Kenninghall Palace to be tagged here?-->kennyngall dellyvered by the <rs ref="eats:297307" type="Collective_Occupations">Steward</rs> viz. by the countesse of Bathe vj li.
            xiij s. iiij d. &amp; by my M<ex>aste</ex>r xj li. at the Marying of M<ex>is</ex>tris
-           Elezabeth Cornwallays as apperethe</note> Violernes &amp; game players</cell>
+          Elezabeth Cornwallays as apperethe</note> Violernes &amp; <rs ref="eats:35779" type="Entertainment_FolkCustom">game</rs> <rs ref="eats:8782" type="Entertainer_Type">players</rs></cell>
          <cell rend="right">xl s.</cell>
         </row>
        </table>
@@ -7990,8 +7987,8 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Gyven to iij Muchesones that came and playd befor my M<ex>aste</ex>r on shrofte
-          sonday </cell>
+         <cell>Gyven to iij Muchesones that came and playd befor my M<ex>aste</ex>r on<rs ref="eats:200104" type="CalendarDay_Liturgical"> shrofte
+          sonday</rs> </cell>
          <cell rend="right">xx d.</cell>
         </row>
        </table>
@@ -8006,7 +8003,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>gyven to two Tvmbellers that played befor my M<ex>aste</ex>r and svndry strongers </cell>
+         <cell>gyven to two <rs ref="eats:26727" type="Entertainer_Type">Tvmbellers</rs> that played befor my M<ex>aste</ex>r and svndry strongers </cell>
          <cell rend="right">ij s. vj d.</cell>
         </row>
        </table>
@@ -8059,21 +8056,21 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab><gap reason="omitted"/>there were two hundred yong Gentlemen, cladde all in white veluet,
-        and three hundred of the grauer sorte apparelled in blacke veluet coates, and faire chaynes,
+       <ab><gap reason="omitted"/>there were two hundred yong Gentlemen, cladde all in white <rs ref="eats:328212" type="Thing_ClothingMaterials">veluet</rs>,
+        and three hundred of the grauer sorte apparelled in blacke veluet <rs ref="eats:71388" type="Thing_TheatricalCostume">coates</rs>, and faire <rs ref="eats:42193" type="Thing_Property">chaynes</rs>,
         all ready at one instant and place, with fifteene hundred seruing men more on Horsebacke,
         well and brauely mounted in good order, ready to receyue the Queenes highnesse into
         <rs ref="eats:2273" type="Place_County">Suffolke</rs>, which surely was a comely troupe, and a noble sight to beholde: and all these
-        waited on the Sheriffe Sir William Spring, during the Queenes Maiesties abode in those
+        waited on the <rs ref="eats:372146" type="Collective_Office">Sheriffe</rs> Sir William Spring, during the Queenes Maiesties abode in those
         parties, and to the very confynes of Suffolke. But before hir highnesse passed to <rs ref="eats:2129" type="Place_County">Norffolke</rs>,
-        there was <pb n="Biij verso" type="signature"/> in Suffolke such sumptuous feasting and
-        bankets, as seldome in any part of the world hath bin seene before. The maister of the
-        Rolles, Sir William Cordall, was one of the firste that beganne this great feasting, and did
+        there was <pb n="Biij verso" type="signature"/> in Suffolke such sumptuous <rs ref="eats:40561" type="Entertainment_Type">feasting</rs> and
+        bankets, as seldome in any part of the world hath bin seene before. The <rs ref="eats:164693" type="Collective_Office">maister of the
+        Rolles</rs>, Sir William Cordall, was one of the firste that beganne this great feasting, and did
         lighte suche a Candle to the rest of the Sheere, that many were glad bountifully and
         franckly to follow the same example, with such charges and cost, as the whole trayne were in
-        some sort pleased therewith. And neere Bury, Sir William Drury for his part at his house,
-        made the Queenes highnesse a costly and delicat dinner, and Sir Robert Iermyne of Roeshbroke
-        feasted the French Embassadoures two seuerall times, with whiche charges and courtesie they
+        some sort pleased therewith. And neere <!-- IN for AW: Bury St Edmunds to be tagged here?-->Bury, Sir William Drury for his part at his house,
+        made the Queenes highnesse a costly and delicat dinner, and Sir Robert Iermyne of <!-- IN for AW: Rushbrooke to be tagged here?-->Roeshbroke
+        feasted the French <rs ref="eats:297854" type="Collective_Office">Embassadoures</rs> two seuerall times, with whiche charges and courtesie they
         stood maruellously contented. The Sheriffe Sir William Spring, Sir Thomas Kidson, Sir Arthur
         Higham, &amp; diuers others of worship, kept great houses, and sundry eyther at the Queenes
         comming, or returne, solemnely feasted hir Highnesse, yea and deffrayed the whole charges
@@ -8143,7 +8140,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>em</ex> payde to Syr vmfrye Ratlyfes sarvantes</cell>
+         <cell>It<ex>em</ex> payde to Syr vmfrye Ratlyfes <rs ref="eats:1261" type="Entertainer_Type">sarvantes</rs></cell>
          <cell rend="right">iiij s.</cell>
         </row>
        </table>
@@ -8174,7 +8171,7 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>Thomas Baker menstrall</ab>
+       <ab>Thomas Baker <rs ref="eats:8709" type="Entertainer_Type">menstrall</rs></ab>
 
        <gap reason="omitted"/>
       </div>
@@ -8208,8 +8205,8 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab><gap reason="omitted"/>It<ex>e</ex>m payd to the menstrell<ex>es</ex> þ<ex>a</ex>t is to
-        sey hert and the taborer xij d.</ab>
+       <ab><gap reason="omitted"/>It<ex>e</ex>m payd to the <rs ref="eats:8709" type="Entertainer_Type">menstrell<ex>es</ex></rs> þ<ex>a</ex>t is to
+        sey hert and the <rs ref="eats:29681" type="Entertainer_Type">taborer</rs> xij d.</ab>
 
        <gap reason="omitted"/>
       </div>
@@ -8232,7 +8229,7 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>It<ex>e</ex>m the bredryn are A greable that þe Minstrall xall haue outȝ of the stok
+       <ab>It<ex>e</ex>m the bredryn are A greable that þe <rs ref="eats:8709" type="Entertainer_Type">Minstrall</rs> xall haue outȝ of the stok
         yerly xij d helpyng the holder And he to bere odyr xij d and his Cost<ex>es</ex></ab>
 
        <gap reason="omitted"/>
@@ -8240,7 +8237,7 @@ patron/troupe -->. </p>
      </div>
      <div type="endnote">
       <p> That the assistance of the minstrel was needed by the holder (the person who kept the
-       accounts and mounted the 'guild') would seem to indicate that the event involved something
+       accounts and mounted the '<rs ref="eats:375295" type="Collective_GuildsReligious">guild</rs>') would seem to indicate that the event involved something
        more than a simple procession. </p>
      </div>
     </body>
@@ -8259,7 +8256,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>paied to the Menstrall</cell>
+         <cell>paied to the <rs ref="eats:8709" type="Entertainer_Type">Menstrall</rs></cell>
          <cell>ij s.</cell>
         </row>
        </table>
@@ -8281,7 +8278,7 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>To the Mynstrall delyu<ex>er</ex>yd <del>ij s.</del> George Haryngton ij s.</ab>
+       <ab>To the <rs ref="eats:8709" type="Entertainer_Type">Mynstrall</rs> delyu<ex>er</ex>yd <del>ij s.</del> George Haryngton ij s.</ab>
 
        <gap reason="omitted"/>
       </div>
@@ -8302,7 +8299,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>to ye Menstrall</cell>
+         <cell>to ye <rs ref="eats:8709" type="Entertainer_Type">Menstrall</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
        </table>
@@ -8326,7 +8323,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>to ye Mynstrall</cell>
+         <cell>to ye <rs ref="eats:8709" type="Entertainer_Type">Mynstrall</rs></cell>
          <cell>xij d.</cell>
         </row>
        </table>
@@ -8350,11 +8347,11 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m to the baner Berer </cell>
+         <cell>It<ex>e</ex>m to the <rs ref="eats:301920" type="Thing_Property">baner</rs> Berer </cell>
          <cell rend="right">j d.</cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m paid to the Menstrall</cell>
+         <cell>It<ex>e</ex>m paid to the <rs ref="eats:8709" type="Entertainer_Type">Menstrall</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
        </table>
@@ -8378,14 +8375,14 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m to the Menstrall</cell>
+         <cell>It<ex>e</ex>m to the <rs ref="eats:8709" type="Entertainer_Type">Menstrall</rs></cell>
          <cell>ij s.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m to the baner berer </cell>
+         <cell>It<ex>e</ex>m to the <rs ref="eats:301920" type="Thing_Property">baner</rs> berer </cell>
          <cell>j d.</cell>
         </row>
        </table>
@@ -8409,14 +8406,14 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m payit on to the menstrall</cell>
+         <cell>It<ex>e</ex>m payit on to the <rs ref="eats:8709" type="Entertainer_Type">menstrall</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m payit on too the berere of the baner</cell>
+         <cell>It<ex>e</ex>m payit on too the berere of the <rs ref="eats:301920" type="Thing_Property">baner</rs></cell>
          <cell rend="right">j d.</cell>
         </row>
         <row>
@@ -8452,7 +8449,7 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>for ye menstrall xij d.</ab>
+       <ab>for ye <rs ref="eats:8709" type="Entertainer_Type">menstrall</rs> xij d.</ab>
 
        <gap reason="omitted"/>
       </div>
@@ -8475,7 +8472,7 @@ patron/troupe -->. </p>
         <row>
          <cell>for me<ex>n</ex><damage><gap unit="chars" extent="2"/></damage>rall<note type="foot"
             >me<ex>n</ex><damage><gap unit="chars" extent="2"/></damage>rall: <hi rend="italic"
-            >for</hi> menstrall<hi rend="italic">; ink blot obscures middle of the
+             >for</hi> <rs ref="eats:8709" type="Entertainer_Type">menstrall</rs><hi rend="italic">; ink blot obscures middle of the
           word</hi></note></cell>
          <cell>xij d.</cell>
         </row>
@@ -8500,7 +8497,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>To ye Menstrall</cell>
+         <cell>To ye <rs ref="eats:8709" type="Entertainer_Type">Menstrall</rs></cell>
          <cell>xij d.</cell>
         </row>
        </table>
@@ -8524,8 +8521,8 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>To the Menstrall</cell>
-         <cell>viij d. <handShift/>&amp; to brew<ex>ers</ex> xij d.<handShift/></cell>
+         <cell>To the <rs ref="eats:8709" type="Entertainer_Type">Menstrall</rs></cell>
+         <cell>viij d. <handShift/>&amp; to <rs ref="eats:38882" type="Collective_Occupations">brew<ex>ers</ex></rs> xij d.<handShift/></cell>
         </row>
        </table>
 
@@ -8536,7 +8533,7 @@ patron/troupe -->. </p>
       <p> The payment to the brewers has been added later in a different hand. Although there is
        adequate space to have added the brewers at the bottom of the page, the scribe has chosen to
        add it into this rather pinched space. One wonders if that choice indictes that the minstrel
-       may have been playing at a church ale. </p>
+       may have been playing at a <rs ref="eats:40561" type="Entertainment_Type">church ale</rs>. </p>
      </div>
     </body>
    </text>
@@ -8554,7 +8551,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>To the menstrall</cell>
+         <cell>To the <rs ref="eats:8709" type="Entertainer_Type">menstrall</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
        </table>
@@ -8578,14 +8575,14 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>To the menstrall</cell>
+         <cell>To the <rs ref="eats:8709" type="Entertainer_Type">menstrall</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>ffor the beryng of ye bann<ex>er</ex></cell>
+         <cell>ffor the beryng of ye <rs ref="eats:301920" type="Thing_Property">bann<ex>er</ex></rs></cell>
          <cell rend="right">j d.</cell>
         </row>
        </table>
@@ -8609,14 +8606,14 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>To the menstrall</cell>
+         <cell>To the <rs ref="eats:8709" type="Entertainer_Type">menstrall</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>for beryng of the banna<ex>r</ex></cell>
+         <cell>for beryng of the <rs ref="eats:301920" type="Thing_Property">banna<ex>r</ex></rs></cell>
          <cell rend="right">j d.</cell>
         </row>
        </table>
@@ -8640,14 +8637,14 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>To the menstrall</cell>
+         <cell>To the <rs ref="eats:8709" type="Entertainer_Type">menstrall</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>ffor beryng of the bann<ex>er</ex></cell>
+         <cell>ffor beryng of the <rs ref="eats:301920" type="Thing_Property">bann<ex>er</ex></rs></cell>
          <cell rend="right">j d.</cell>
         </row>
        </table>
@@ -8671,14 +8668,14 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>To the Menstrall</cell>
+         <cell>To the <rs ref="eats:8709" type="Entertainer_Type">Menstrall</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>ffor beryng of the bannar</cell>
+         <cell>ffor beryng of the <rs ref="eats:301920" type="Thing_Property">bannar</rs></cell>
          <cell rend="right">j d.</cell>
         </row>
        </table>
@@ -8702,14 +8699,14 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>To the Menstrall</cell>
+         <cell>To the <rs ref="eats:8709" type="Entertainer_Type">Menstrall</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>ffor beryng of the bannar</cell>
+         <cell>ffor beryng of the <rs ref="eats:301920" type="Thing_Property">bannar</rs></cell>
          <cell rend="right">j d.</cell>
         </row>
        </table>
@@ -8733,14 +8730,14 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>To the mynsterll</cell>
+         <cell>To the <rs ref="eats:8709" type="Entertainer_Type">mynsterll</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>ffor Beryng off the bannare</cell>
+         <cell>ffor Beryng off the <rs ref="eats:301920" type="Thing_Property">bannare</rs></cell>
          <cell rend="right">j d.</cell>
         </row>
        </table>
@@ -8764,7 +8761,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>em</ex> to the mynstrell</cell>
+         <cell>It<ex>em</ex> to the <rs ref="eats:8709" type="Entertainer_Type">mynstrell</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
