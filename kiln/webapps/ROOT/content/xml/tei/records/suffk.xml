@@ -7865,7 +7865,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid18">
     <body>
-     <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:368503" type="Place_F_ReligiousHouse">Bury St Edmunds Abbey</rs>
+     <head><rs ref="eats:2291" type="Place_County">Suffolk</rs>, <rs ref="eats:368503" type="Place_F_ReligiousHouse">Bury St Edmunds Abbey</rs>
       <date from-iso="1536" to-iso="1537">1536–7</date>
       <seg ana="taxon:SUAB19">SUAB19</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid18-transcription">
@@ -9835,7 +9835,7 @@ patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab><gap reason="omitted"/> Et dat<ex>um</ex> iiij <rs ref="eats:375709" type="Collective_Troupe">Ministrall<ex>is</ex> Comit<ex>is</ex>
-         Som<ex>er</ex>s<ex>etensis</ex></rs> Venient<ex>ibus</ex> ad <!--IN for AW: Wingfield Hospital to be tagged as location here?-->Hospit<ex>ium</ex> d<ex>omi</ex>ni
+         Som<ex>er</ex>s<ex>etensis</ex></rs> Venient<ex>ibus</ex> ad <rs ref="eats:375755" type="Place_F_Hospital">Hospit<ex>ium</ex></rs> d<ex>omi</ex>ni
         apud Wyngefeld d<ex>i</ex>c<ex>t</ex>e Mens<ex>is</ex> aug<ex>uste</ex> &amp;c. de
          mandat<ex>o</ex> d<ex>omi</ex>ni. xiij. s. iiij. d<gap reason="omitted"/>.</ab>
 
@@ -9864,7 +9864,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid193">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs>De Mowbray of Framlingham</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <!-- AW for IN: this is the place where I was unsure if this person should be tagged to a location--><rs>De Mowbray of Framlingham</rs>
       <date from-iso="1401" to-iso="1404">1401–4</date>
       <seg ana="taxon:SUDM01">SUDM01</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid193-transcription">
@@ -9930,7 +9930,7 @@ patron/troupe -->. </p>
      </div>
      <div type="endnote">
       <p> The witches' gathering may have had to do with Plough Monday activities, the day on which
-       Dennington's churchwardens' accounts were declared and new wardens appointed (f [1]). Joseph
+       <rs ref="eats:373866" type="Place_PA_Settlement">Dennington's</rs> churchwardens' accounts were declared and new wardens appointed (f [1]). Joseph
        Strutt's <title>The Sports and Pastimes of the People of England</title>, J. Charles Cox
        (ed), rev ed(London, 1903), p 274, observes that in nineteenth-century Huntingdonshire, the
        mummers on Plough Monday were referred to as 'Plough- Witchers,' but he offers no in-period
@@ -9946,7 +9946,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid547">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <!-- AW for IN: this is where I tagged a modern Diocese--><rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1549">1549</date>
       <seg ana="taxon:SUVA01">SUVA01</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid547-transcription">
@@ -10874,7 +10874,7 @@ patron/troupe -->. </p>
          assemblye<note type="marginal" place="margin_left">Thellecc<ex>i</ex>on of<lb/> the
           Wayght<ex>es</ex></note> it is agreed by Mr Bayliff<ex>es</ex> and the rest of thassemblye
         and they haue nowe elected and Chosen Thom<ex>a</ex>s Thomplinson to be the waight of this
-         o<ex>u</ex>r said towne and burghe and execute that place for one yere from Michaellmas
+         o<ex>u</ex>r said <rs ref="eats:373969" type="Place_PA_Settlement">towne</rs> and burghe and execute that place for one yere from Michaellmas
         next and that he shall haue twoe more of his Companye at the least accordingly as in tymes
         past hath ben vsed/</ab>
       </div>
@@ -11030,7 +11030,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Towne Waight<ex>es</ex></cell>
+         <cell><rs ref="eats:373969" type="Place_PA_Settlement">Towne</rs> Waight<ex>es</ex></cell>
          <cell>Iames Rogers <lb/>Thomas wootton<note type="foot">Iames … wootton: <hi rend="italic"
             >the two names are encompassed by 2 braces; one on the left, pointing left, and one on
             the right, pointing right</hi></note></cell>
@@ -11061,11 +11061,11 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Towne Waight<ex>es</ex></cell>
-         <cell>Thom<ex>a</ex>s Wootton <handShift/>Iur<ex>atus</ex><handShift/>
-          <lb/>Iames Rogers <handShift/>Iur<ex>atus</ex><handShift/>
-          <lb/> and the<ex>ir</ex> Companye<note type="foot">Thom<ex>a</ex>s … Companye: <hi
-            rend="italic">the three lines are encompassed by a brace on the left pointing
+          <cell><rs ref="eats:373969" type="Place_PA_Settlement">Towne</rs> Waight<ex>es</ex></cell>
+          <cell>Thom<ex>a</ex>s Wootton <handShift/>Iur<ex>atus</ex><handShift/>
+           <lb/>Iames Rogers <handShift/>Iur<ex>atus</ex><handShift/>
+           <lb/> and the<ex>ir</ex> Companye<note type="foot">Thom<ex>a</ex>s … Companye: <hi
+             rend="italic">the three lines are encompassed by a brace on the left pointing
            left</hi></note></cell>
         </row>
        </table>
@@ -12178,7 +12178,7 @@ patron/troupe -->. </p>
 
        <ab>It<ex>e</ex>m the said Iohn Allen dothe couenante that he shall not suffer any playes to
         be made w<ex>i</ex>thin the <rs ref="eats:374326" type="Place_F_GuildHall">guyldhall</rs> w<ex>i</ex>thowt consent of six of the cheef
-         inhabitant<ex>es</ex> of the towne vnder their hand wryting And further that all suche
+         inhabitant<ex>es</ex> of the <rs ref="eats:372100" type="Place_PA_Settlement">towne</rs> vnder their hand wryting And further that all suche
         plaies as shalbe made ther maye be ended in the daye time And also that if anye hurte or
         damage be made by the saide plaies or wedding<ex>es</ex> kept ther that then <pb n="269"
          type="page"/> the said Iohn Allen shall repaier and make the said houses in as good sorte
@@ -12229,7 +12229,7 @@ patron/troupe -->. </p>
        <!-- IN: PG, not sure what is going on with the page breaks here? -->
        <pb n="[1]" type="page"/>
 
-       <ab>To my singular honest Stationer, Mr. Robert Mylbourne, at his shop in decimo sexto, by
+       <ab>To my singular honest Stationer, Mr. Robert Mylbourne, at his <rs ref="eats:375777" type="Place_F_Property">shop</rs> in decimo sexto, by
         the fourth doore of Pauls.</ab>
 
        <ab>As you are a true Booke-seller, you must approue your selfe a true Booke- restorer: and
@@ -12290,7 +12290,7 @@ patron/troupe -->. </p>
 
        <ab><hi rend="right">R. M.</hi></ab>
 
-       <ab>London, April 25. 1627. From the small v<damage><gap unit="chars" extent="4"/></damage>e
+       <ab><rs ref="eats:36947" type="Place_PA_Settlement">London</rs>, April 25. 1627. From the small v<damage><gap unit="chars" extent="4"/></damage>e
         of my shop, where the South winde blowes into Pauls.</ab>
 
        <pb/>
@@ -12618,8 +12618,8 @@ patron/troupe -->. </p>
          <cell rend="right">xx s.</cell>
         </row>
         <row>
-         <cell>þe wich he lent hym to geve the kyng<ex>es</ex> menstralys att the meyrys
-          howse.</cell>
+         <cell>þe wich he lent hym to geve the kyng<ex>es</ex> menstralys att the <rs ref="eats:375799" type="Place_F_Residence">meyrys
+          howse</rs>.</cell>
         </row>
        </table>
 
@@ -12804,7 +12804,7 @@ patron/troupe -->. </p>
      </div>
      <div type="endnote">
       <p> John de la Pole (f 65; 1442–92), second duke of Suffolk from 1463, with residence at
-       Wingfield, Suffolk.</p>
+       <rs ref="eats:373838" type="Place_PA_Settlement">Wingfield, Suffolk</rs>.</p>
 
       <p> The hockpot (f 65) was the container that in many communities held the proceeds from a
        post-Easter game, a mock battle, in which the women of the parish 'captured' the men with
@@ -13284,7 +13284,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>and the sonday nexte after the xij day I ȝafe to the pleyeres of stoke</cell>
+         <cell>and the sonday nexte after the xij day I ȝafe to the pleyeres of <rs ref="eats:372335" type="Place_PA_Settlement">stoke</rs></cell>
          <cell rend="right">ij s.</cell>
         </row>
        </table>
@@ -13466,10 +13466,10 @@ patron/troupe -->. </p>
        <ab>harry<note type="marginal" place="margin_left"><handShift/>+<handShift/></note> gamelay
          <note type="marginal" place="margin_right"><handShift/>+<handShift/></note></ab>
 
-       <ab>thomas<note type="marginal" place="margin_left"><handShift/>+<handShift/></note> <rs ref="eats:373613" type="Place_PA_Settlement">brome</rs>/
+       <ab>thomas<note type="marginal" place="margin_left"><handShift/>+<handShift/></note> brome/
          <note type="marginal" place="margin_right"><handShift/>+<handShift/></note></ab>
 
-       <ab>strong of Cromer/</ab>
+       <ab>strong of <rs ref="eats:374632" type="Place_PA_Settlement">Cromer</rs>/</ab>
 
        <ab>tornors of <rs ref="eats:374756" type="Place_PA_Settlement">horsffelde</rs>/</ab>
 
@@ -13481,7 +13481,7 @@ patron/troupe -->. </p>
 
        <ab>Iohn Poter of <rs ref="eats:374775" type="Place_PA_Settlement">Glemesford</rs></ab>
 
-       <ab>edmond frente of Kedyngton/</ab>
+       <ab>edmond frente of <rs ref="eats:374733" type="Place_PA_Settlement">Kedyngton</rs>/</ab>
 
        <ab>Will<ex>ia</ex>m hil of clare/</ab>
 
@@ -14112,7 +14112,7 @@ patron/troupe -->. </p>
          <cell>also þei haue had schert<ex>es</ex> &amp; other gere</cell>
         </row>
         <row>
-         <cell>The xiii. day of august þei Rec<ex>eiued</ex> at harwich</cell>
+         <cell>The xiii. day of august þei Rec<ex>eiued</ex> at <rs ref="eats:375822" type="Place_PA_Settlement">harwich</rs></cell>
          <cell rend="right">iij s. iiij d.</cell>
         </row>
        </table>
@@ -14191,7 +14191,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell rend="center">þe Waytes of london.</cell>
+         <cell rend="center">þe Waytes of <rs ref="eats:36947" type="Place_PA_Settlement">london</rs>.</cell>
         </row>
         <row>
          <cell>The xxvij day of august þey rec<ex>eiued</ex>
@@ -14241,7 +14241,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>And þ<ex>a</ex>t I paid to þe pleirs of Turton strete </cell>
+         <cell>And þ<ex>a</ex>t I paid to þe pleirs of <rs ref="eats:375845" type="Place_PA_Ward">Turton strete</rs> </cell>
          <cell rend="right">xx d.</cell>
         </row>
        </table>
@@ -14253,7 +14253,7 @@ patron/troupe -->. </p>
         <supplied>(5 September)</supplied></head>
        <gap reason="omitted"/>
 
-       <ab rend="center">At Seynt Ossyis.<note type="foot">Seynt Ossyis: <hi rend="italic">St Osyth,
+       <ab rend="center">At <rs ref="eats:375868" type="Place_PA_Settlement">Seynt Ossyis</rs>.<note type="foot">Seynt Ossyis: <hi rend="italic">St Osyth,
           Essex</hi></note></ab>
 
        <ab><gap reason="omitted"/>To þe harpor iiij d<gap reason="omitted"/>.</ab>
@@ -14264,7 +14264,7 @@ patron/troupe -->. </p>
        <head>f 85 <supplied>(6 September)</supplied></head>
        <pb n="85" type="folio"/>
 
-       <ab rend="center">at Weveno<note type="foot">Weveno: <hi rend="italic">Wivenhoe,
+       <ab rend="center">at <rs ref="eats:375891" type="Place_PA_Settlement">Weveno</rs><note type="foot">Weveno: <hi rend="italic">Wivenhoe,
          Essex</hi></note>, homward</ab>
 
        <ab><gap reason="omitted"/>For the taborett<ex>es</ex> And odyr for brekfast viij d.</ab>
@@ -14334,7 +14334,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell rend="center">William Dauyes, pr<ex>ie</ex>st <lb/>of Neylond, for bordyng <lb/>of
+         <cell rend="center">William Dauyes, pr<ex>ie</ex>st <lb/>of <rs ref="eats:372335" type="Place_PA_Settlement">Neylond</rs>, for bordyng <lb/>of
           litel Richard synger/</cell>
         </row>
         <row>
@@ -14352,7 +14352,7 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab rend="center">at Wolpett.<note type="foot">Wolpett: <hi rend="italic">Woolpit,
+       <ab rend="center">at <rs ref="eats:313054" type="Place_PA_Settlement">Wolpett</rs>.<note type="foot">Wolpett: <hi rend="italic">Woolpit,
           Suffolk</hi></note></ab>
 
        <ab><gap reason="omitted"/>to hym that pleyd upo<ex>n</ex> þe <del>h</del> bagpype x d<gap
@@ -14503,7 +14503,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell rend="center">þe plaiers of kokesale/</cell>
+         <cell rend="center">þe plaiers of <rs ref="eats:375932" type="Place_PA_Settlement">kokesale</rs>/</cell>
         </row>
         <row>
          <cell/>
@@ -14540,7 +14540,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Item to þe plaiers of Hadley<note type="foot">Hadley: <hi rend="italic">Hadleigh,
+         <cell>Item to þe plaiers of <rs ref="eats:372100" type="Place_PA_Settlement">Hadley</rs><note type="foot">Hadley: <hi rend="italic">Hadleigh,
             Suffolk</hi></note>and þe olde man and ij children </cell>
          <cell rend="right">vj s. viij d.</cell>
         </row>
@@ -14613,8 +14613,8 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m to the plaiers of esterforde<note type="foot">esterforde: <hi
-            rend="italic">Easterford, Kelvedon, Essex</hi></note>
+         <cell>It<ex>e</ex>m to the plaiers of <rs ref="eats:375955" type="Place_PA_Settlement">esterforde</rs><note type="foot">esterforde: <hi
+            rend="italic">Easterford, <rs ref="eats:375973" type="Place_PA_Settlement">Kelvedon</rs>, Essex</hi></note>
          </cell>
          <cell rend="right">iij s. iiij d.</cell>
         </row>
