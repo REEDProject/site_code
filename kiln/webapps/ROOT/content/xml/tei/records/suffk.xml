@@ -9864,7 +9864,8 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid193">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <!-- AW for IN: this is the place where I was unsure if this person should be tagged to a location--><rs>De Mowbray of Framlingham</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <!-- AW for IN: this is the place where I was unsure if this person should be tagged to a location 
+     IN: I would just tag "Framlingham" here as a location. No need to tag De Mowbray in the header.--><rs>De Mowbray of Framlingham</rs>
       <date from-iso="1401" to-iso="1404">1401–4</date>
       <seg ana="taxon:SUDM01">SUDM01</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid193-transcription">
@@ -9946,7 +9947,8 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid547">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <!-- AW for IN: this is where I tagged a modern Diocese--><rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <!-- AW for IN: this is where I tagged a modern Diocese
+      IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here. You can use find + replace in Oxygen to quickly change all the tags for this. --><rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1549">1549</date>
       <seg ana="taxon:SUVA01">SUVA01</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid547-transcription">
@@ -9971,6 +9973,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid548">
     <body>
+     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1567">1567</date>
       <seg ana="taxon:SUVA03">SUVA03</seg></head>
@@ -9999,6 +10002,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid549">
     <body>
+     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1569">1569</date>
       <seg ana="taxon:SUVA04">SUVA04</seg></head>
@@ -10024,6 +10028,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid561">
     <body>
+     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1578">1578</date>
       <seg ana="taxon:SUVA22">SUVA22</seg></head>
@@ -10104,6 +10109,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid551">
     <body>
+     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1618">1618</date>
       <seg ana="taxon:SUVA07">SUVA07</seg></head>
@@ -10112,7 +10118,7 @@ patron/troupe -->. </p>
        <head>sig B <supplied>(Concerning the parishioners)</supplied></head>
        <pb n="B" type="signature"/>
 
-       <ab type="indent">10 Item, whether haue any in your parish maliciously quarrelled or stricken
+       <ab type="indent">10 Item, whether haue any in your parish maliciously quarrelled or <rs ref="eats:45465" type="CrimesMisdemeanors">stricken</rs>
         your <rs ref="eats:9186" type="Collective_Clergy">Minister</rs>, and laid violent hands vpon him in any sort, or haue done þe like to others
         in any church or churchyard: or whether hath any of your parish<rs ref="eats:45652" type="CrimesMisdemeanors"> disturbed the Minister in
         the time of diuine seruice</rs>, or haue <rs ref="eats:45521" type="CrimesMisdemeanors">libelled</rs> against him, or spoken slanderous words of him
@@ -10153,6 +10159,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid552">
     <body>
+     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1620">1620</date>
       <seg ana="taxon:SUVA09">SUVA09</seg></head>
@@ -10173,6 +10180,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid553">
     <body>
+     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1627">1627</date>
       <seg ana="taxon:SUVA10">SUVA10</seg></head>
@@ -10201,6 +10209,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid554">
     <body>
+     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1629">1629</date>
       <seg ana="taxon:SUVA11">SUVA11</seg></head>
@@ -10229,6 +10238,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid555">
     <body>
+     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1633">1633</date>
       <seg ana="taxon:SUVA12">SUVA12</seg></head>
@@ -10260,6 +10270,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid556">
     <body>
+     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1635">1635</date>
       <seg ana="taxon:SUVA13">SUVA13</seg></head>
@@ -10304,6 +10315,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid557">
     <body>
+     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1636">1636</date>
       <seg ana="taxon:SUVA14">SUVA14</seg></head>
@@ -10316,9 +10328,9 @@ patron/troupe -->. </p>
 
        <ab type="indent">4 Be there any abiding in, or resorting to your Parish, that are commonly
         reputed to be ill affected in matter of the religion professed in our Church, or taken to be
-        Recusant Papists, or factious separatists, refusing to repaire vnto the Church, to heare
+        <rs ref="eats:45671" type="CrimesMisdemeanors">Recusant</rs> Papists, or factious separatists, refusing to repaire vnto the Church, to heare
         diuine Seruice, and to receive the holy Communion? Or that haue or do publish, sell or
-        disperse any superstitious, seditious, or schismaticall Bookes, Libels, or Writings,
+        disperse any <rs ref="eats:45652" type="CrimesMisdemeanors">superstitious</rs>, <rs ref="eats:45742" type="CrimesMisdemeanors">seditious</rs>, or schismaticall Bookes, <rs ref="eats:45521" type="CrimesMisdemeanors">Libels</rs>, or Writings,
         touching the Religion, State, or Ecclesiasticall gouernment of this Kingdome of England?
         Present their names, qualities, and conditions, if you know or haue heard of any.</ab>
 
@@ -10338,9 +10350,9 @@ patron/troupe -->. </p>
         (consecrated to an holy vse) prophanely or wickedly? Hath any quarrelled or stricken one
         another, either in the Church or Church-yard? Hath any person behaued himselfe rudely and
         disorderly in either; or vsed any filthy or prophane talke, or <pb n="A3v" type="signature"
-        /> any other rude and immodest behauiour in them? Haue any Playes, Feasts, Banquets,
+        /> any other rude and immodest behauiour in them? Haue any <rs ref="eats:40453" type="Drama_Type">Playes</rs>, <rs ref="eats:40561" type="Entertainment_Type">Feasts</rs>, Banquets,
         Suppers, Church-ales, Drinkings, Temporall-Courts or Leets, Lay-iuries, Musters, exercise of
-        dancing, Stoole- ball, Foote ball, or the like, or any other prophane vsage beene suffered
+        <rs ref="eats:18451" type="Entertainer_Type">dancing</rs>, <rs ref="eats:40677" type="Entertainment_Type">Stoole- ball</rs>, Foote ball, or the like, or any other prophane vsage beene suffered
         to be kept in your Church, Chappell, or Church-yard?</ab>
 
        <gap reason="omitted"/>
@@ -10351,7 +10363,7 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab type="indent">8 Haue the Churchwardens suffered the Church, Church-yard, or Chappell, to
+       <ab type="indent">8 Haue the <rs ref="eats:3576" type="Collective_Office">Churchwardens</rs> suffered the Church, Church-yard, or Chappell, to
         be prophaned by Playes, Games, Feasts, Banquets, Suppers, Church-ales, Drinkings, Temporall
         Courts, or Leets, Lay-iuries, Musters, etc. at any time acted, kept, or held in them?</ab>
 
@@ -10364,8 +10376,8 @@ patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab type="indent">11 Are there within your Parish or thereunto resorting, any players on
-        Stage, or with Puppets, or any Musitians, Fidlers, Rimers, or Iesters, which do vse any
-        prophane or filthy passages, in their songs, speeches, or gestures, to the dishonour of God,
+        Stage, or with <rs ref="eats:214969" type="Entertainer_Type">Puppets</rs>, or any <rs ref="eats:1243" type="Entertainer_Type">Musitians</rs>, <rs ref="eats:12982" type="Entertainer_Type">Fidlers</rs>, <rs ref="eats:296447" type="Collective_Occupations">Rimers</rs>, or <rs ref="eats:14164" type="Entertainer_Type">Iesters</rs>, which do vse any
+        prophane or filthy passages, in their <rs ref="eats:40706" type="Entertainment_Type">songs</rs>, speeches, or gestures, to the dishonour of God,
         abuse of Scripture, or the corrupting of good manners; or which do publish any thing
         scandalous to the State, or reproachfull to the Holy Clergie?</ab>
 
@@ -10376,6 +10388,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid558">
     <body>
+     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1638">1638</date>
       <seg ana="taxon:SUVA16">SUVA16</seg></head>
@@ -10388,8 +10401,8 @@ patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab type="indent">7 Much lesse is it<note type="foot">it: <hi rend="italic">ie, the
-          churchyard</hi></note> to be unhallowed with dancings, Morises, meetings at Easter,
-        drinkings, Whitson-Ales, Midsommer merrimates, or the like nor by stoole-ball, foot-ball,
+          churchyard</hi></note> to be unhallowed with <rs ref="eats:18451" type="Entertainer_Type">dancings</rs>, <rs ref="eats:79074" type="Entertainment_FolkCustom">Morises</rs>, meetings at <rs ref="eats:41327" type="CalendarDay_Liturgical">Easter</rs>,
+        drinkings, <rs ref="eats:41139" type="CalendarDay_Liturgical">Whitson</rs>-<rs ref="eats:40561" type="Entertainment_Type">Ales</rs>, Midsommer merrimates, or the like nor by <rs ref="eats:40677" type="Entertainment_Type">stoole-ball</rs>, foot-ball,
         wrastlings, wasters, or boyessports: if such abuse hath bin committed, say by whom, whose
         procurement, countenance, or abetting.</ab>
 
@@ -10400,6 +10413,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid559">
     <body>
+     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1638">1638</date>
       <seg ana="taxon:SUVA20">SUVA20</seg></head>
@@ -10411,7 +10425,7 @@ patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab>8. Item, Is there any in your Parish, or resorting to it, that hath, or doth sell,
-        publish, or disperse any superstitious, seditious, or schismaticall Bookes, Libels, or
+        publish, or disperse any <rs ref="eats:45652" type="CrimesMisdemeanors">superstitious</rs>, <rs ref="eats:45742" type="CrimesMisdemeanors">seditious</rs>, or schismaticall Bookes, <rs ref="eats:45521" type="CrimesMisdemeanors">Libels</rs>, or
         writings, touching, the Religion, State, or Ecclesiasticall goverment of this Kingdome,
         present their names, qualities, and conditions, if you know, or haue heard of any?</ab>
 
@@ -10428,11 +10442,11 @@ patron/troupe -->. </p>
         and if not, whose is the default? hath any person within your memory, or that you have
         credibly heard of, encroached upon the Churchyard, by setting up any kind of building or
         fence upon it, or by opening any doore, gate, or stile into it? hath any used that place
-        (consecrated to an holy use) prophanely, or wickedly? hath any quarrelled or stricken one
+        (consecrated to an holy use) prophanely, or wickedly? hath any quarrelled or <rs ref="eats:45465" type="CrimesMisdemeanors">stricken</rs> one
         another, either in the Church or Churchyard; hath any person behaved himselfe rudely and
         disorderly in either, or used any filthy or prophane talke, or any other rude and immodest
-        behaviour in them? have any Playes, Feasts, Banquets, Suppers, Church-ales, Drinkings,
-        temporall Courts, or Leets, Lay-juries, Musters, exercise of Dancing, Stooleball, Football,
+        behaviour in them? have any <rs ref="eats:40453" type="Drama_Type">Playes</rs>, <rs ref="eats:40561" type="Entertainment_Type">Feasts</rs>, Banquets, Suppers, Church-ales, Drinkings,
+        temporall Courts, or Leets, Lay-juries, Musters, exercise of <rs ref="eats:18451" type="Entertainer_Type">Dancing</rs>, <rs ref="eats:40677" type="Entertainment_Type">Stooleball</rs>, Football,
         or the like, or any other prophane usage beene suffered to be kept in your Church, Chappell,
         or Churchyard?</ab>
 
@@ -10445,10 +10459,10 @@ patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab>1 Item, Whether doe any in your Parish prophane any Sunday or Holiday, by vnlawfull
-        gaming, drinking or tipling in Taverns, Innes, or Alehouses, in the time of common prayer or
-        Sermon; or by working, or doing the worke of their Trades and occupations? doe any in your
+        gaming, drinking or tipling in Taverns, Innes, or Alehouses,<rs ref="eats:45671" type="CrimesMisdemeanors"> in the time of common prayer or
+        Sermon</rs>; or by working, or doing the worke of their Trades and occupations? doe any in your
         Parish buy or sell, or keepe open their shops, or set out their wares to bee sold on
-        Sundayes or Holidayes, by themselves, their servants or apprentices; or have they any other
+        Sundayes or Holidayes, by themselves, their <rs ref="eats:297010" type="Collective_Occupations">servants</rs> or apprentices; or have they any other
         waies prophaned the said dayes? and hath the Kings declaration concerning lawfull
         recreations, beene published amongst you, yea or no? If so, when was it done? in what
         manner? and by whom? <gap reason="omitted"/></ab>
