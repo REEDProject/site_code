@@ -10482,6 +10482,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid560">
     <body>
+     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1639">1639</date>
       <seg ana="taxon:SUVA21">SUVA21</seg></head>
@@ -10493,7 +10494,7 @@ patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab>8. Item, Is there any in your Parish, or resorting to it, that hath, or doth sell,
-        publish, or disperse any superstitious, seditious, or schismaticall Bookes, Libels, or
+        publish, or disperse any <rs ref="eats:45652" type="CrimesMisdemeanors">superstitious</rs>, <rs ref="eats:45742" type="CrimesMisdemeanors">seditious</rs>, or schismaticall Bookes, <rs ref="eats:45521" type="CrimesMisdemeanors">Libels</rs>, or
         writings, touching the Religion, State, or Ecclesiasticall goverment of this Kingdome,
         present their names, qualities, and conditions, if you know, or have heard of any?</ab>
       </div>
@@ -10508,11 +10509,11 @@ patron/troupe -->. </p>
         and if not, whose is the default? hath any person within your memory, or that you have
         credibly heard of, encroached upon the Churchyard, by setting up any kind of building or
         fence upon it, or by opening any doore, gate, or stile into it? hath any used that place
-        (consecrated to an holy use) prophanely, or wickedly? hath any quarrelled or stricken one
+        (consecrated to an holy use) prophanely, or wickedly? hath any quarrelled or <rs ref="eats:45465" type="CrimesMisdemeanors">stricken</rs> one
         another, either in the Church or Churchyard; hath any person behaved himselfe rudely or
         disorderly in either, or used any filthy or prophane talke, or any other rude and immodest
-        behaviour in them? have any Playes, Feasts, Banquets, Suppers, Church-ales, Drinkings,
-        temporall Courts, or Leets, Lay-juries, Musters, exercise of Dauncing, Stooleball, Football,
+        behaviour in them? have any <rs ref="eats:40453" type="Drama_Type">Playes</rs>, <rs ref="eats:40561" type="Entertainment_Type">Feasts</rs>, Banquets, Suppers, Church-ales, Drinkings,
+        temporall Courts, or Leets, Lay-juries, Musters, exercise of <rs ref="eats:18451" type="Entertainer_Type">Dauncing</rs>, <rs ref="eats:40677" type="Entertainment_Type">Stooleball</rs>, Football,
         or the like, or any other prophane usage beene suffered to be kept in your Church, Chappell,
         or Churchyard?</ab>
 
@@ -10525,10 +10526,10 @@ patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab>1 Item, Whether doe any in your Parish prophane any Sunday or Holiday, by vnlawfull
-        gaming, drinking or tipling in Taverns, Innes, or Alehouses, in the time of common-prayer or
-        Sermon, or by working, or doing the worke of their Trades and occupations? doe any in your
+        gaming, drinking or tipling in Taverns, Innes, or Alehouses, <rs ref="eats:45671" type="CrimesMisdemeanors">in the time of common-prayer or
+        Sermon</rs>, or by working, or doing the worke of their Trades and occupations? doe any in your
         Parish buy or sell, or keepe open their shops, or set out their wares to bee sold on
-        Sundayes or Holidayes, by themselves, their servants or apprentices; or have they any other
+        Sundayes or Holidayes, by themselves, their <rs ref="eats:297010" type="Collective_Occupations">servants</rs> or <rs ref="eats:55239" type="Collective_Occupations">apprentices</rs>; or have they any other
         waies prophaned the said dayes? And hath the Kings declaration concerning lawfull
         recreations, beene published amongst you, yea or no? If so, when was it done? in what
         manner? and by whom? <gap reason="omitted"/></ab>
@@ -10560,7 +10561,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m to the Lo<ex>rd</ex> Darbyes players </cell>
+         <cell>It<ex>e</ex>m to the <rs ref="eats:17955" type="Collective_Troupe">Lo<ex>rd</ex> Darbyes players</rs> </cell>
          <cell rend="right">v s.</cell>
         </row>
        </table>
@@ -10571,7 +10572,7 @@ patron/troupe -->. </p>
      <div type="endnote">
       <p> William Stanley (1561–1642) was fifteenth earl of Derby from 16 April 1594, with
        residences at Knowsley, Lathom, and New Park, Lancashire. See
-       <title>P&amp;P</title><!-- #IN to add link to patron/troupe -->. </p>
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315879"><title>P&amp;P</title></ref>. </p>
      </div>
     </body>
    </text>
