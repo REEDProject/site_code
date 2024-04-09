@@ -9266,7 +9266,7 @@ patron/troupe -->. </p>
          about<ex>es</ex> eyght of the clocke of the afternoone of the daye <del>he</del> He this
          def<ex>endan</ex>t together w<ex>i</ex>th some other of the def<ex>endan</ex>t<ex>es</ex>
         in the said Bill of Compl<ex>ain</ex>t likewise named beinge then in the kynges high waye
-        neere the <!-- IN for AW: the dwelling house might be worth tagging here (probably as "Hall residence" or something similar?. I'm guessing it won't be locatable for mapping-->dwellinge house of the Compl<ex>ainan</ex>t in the said Bill named syngeinge of a
+        neere the <rs ref="eats:376540" type="Place_F_Residence">dwellinge house</rs> of the Compl<ex>ainan</ex>t in the said Bill named syngeinge of a
         songe Co<ex>m</ex>monly called a harvest songe Not myndynge at all eyther to breake the
         kynges Ma<ex>ies</ex>ties peace or to co<ex>m</ex>mytt any outradge or misdemeanure
          whatsoeu<ex>er</ex> weare by the p<ex>ro</ex>uocac<ex>i</ex>on of the
@@ -9947,8 +9947,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid547">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <!-- AW for IN: this is where I tagged a modern Diocese
-      IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here. You can use find + replace in Oxygen to quickly change all the tags for this. --><rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1549">1549</date>
       <seg ana="taxon:SUVA01">SUVA01</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid547-transcription">
@@ -9973,8 +9972,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid548">
     <body>
-     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1567">1567</date>
       <seg ana="taxon:SUVA03">SUVA03</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid548-transcription">
@@ -10002,8 +10000,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid549">
     <body>
-     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1569">1569</date>
       <seg ana="taxon:SUVA04">SUVA04</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid549-transcription">
@@ -10028,8 +10025,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid561">
     <body>
-     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1578">1578</date>
       <seg ana="taxon:SUVA22">SUVA22</seg></head>
      <!-- IN: DO NOT INDEX YET -->
@@ -10087,7 +10083,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid550">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1605">1605</date>
       <seg ana="taxon:SUVA05">SUVA05</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid550-transcription">
@@ -10109,8 +10105,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid551">
     <body>
-     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1618">1618</date>
       <seg ana="taxon:SUVA07">SUVA07</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid551-transcription">
@@ -10159,8 +10154,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid552">
     <body>
-     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1620">1620</date>
       <seg ana="taxon:SUVA09">SUVA09</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid552-transcription">
@@ -10180,8 +10174,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid553">
     <body>
-     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1627">1627</date>
       <seg ana="taxon:SUVA10">SUVA10</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid553-transcription">
@@ -10209,8 +10202,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid554">
     <body>
-     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1629">1629</date>
       <seg ana="taxon:SUVA11">SUVA11</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid554-transcription">
@@ -10238,8 +10230,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid555">
     <body>
-     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1633">1633</date>
       <seg ana="taxon:SUVA12">SUVA12</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid555-transcription">
@@ -10270,8 +10261,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid556">
     <body>
-     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1635">1635</date>
       <seg ana="taxon:SUVA13">SUVA13</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid556-transcription">
@@ -10315,8 +10305,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid557">
     <body>
-     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1636">1636</date>
       <seg ana="taxon:SUVA14">SUVA14</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid557-transcription">
@@ -10388,8 +10377,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid558">
     <body>
-     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1638">1638</date>
       <seg ana="taxon:SUVA16">SUVA16</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid558-transcription">
@@ -10413,8 +10401,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid559">
     <body>
-     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1638">1638</date>
       <seg ana="taxon:SUVA20">SUVA20</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid559-transcription">
@@ -10482,8 +10469,7 @@ patron/troupe -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid560">
     <body>
-     <!--IN for AW: I would use the pre-existing entity for "Norwich, diocese of" (EATS ID 214669) here-->
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:373923" type="Place_EA_Diocese">Diocese of Norwich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:214669" type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1639">1639</date>
       <seg ana="taxon:SUVA21">SUVA21</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid560-transcription">
@@ -21832,7 +21818,7 @@ to patron/troupe -->.</p>
 
        <table>
         <row>
-         <cell>p<ex>ai</ex>d to Thomas Keele &amp; his company for musicke at the Guylde, as bi
+         <cell>p<ex>ai</ex>d to Thomas Keele &amp; his company for musicke at <rs ref="eats:376295" type="Place_F_TownHall">the Guylde</rs>, as bi
            warr<ex>ant</ex> appereth</cell>
          <cell rend="right">vj s. viij d.</cell>
         </row>
@@ -21875,7 +21861,7 @@ to patron/troupe -->.</p>
      </div>
      <div type="endnote">
       <p> Thomas Keele (f [4v]) was master of a company of musicians that briefly served, during a
-       three-year period, as the town's waits. The records mention them in 1583–4, 1584–5, and here
+       three-year period, as the <rs ref="eats:369522" type="Place_PA_Settlement">town's</rs> waits. The records mention them in 1583–4, 1584–5, and here
        in 1585–6. The brevity of their tenure suggests that their hire was an interim measure at
        best. The company of William Martin that preceeded them served for twenty-one years, and John
        Bettes' company that followed them would serve for twenty years, from 1587 through 1607. </p>
@@ -21951,7 +21937,7 @@ to patron/troupe -->.</p>
      <div type="endnote">
       <p> In the audited accounts of Tooley's foundation (BL: Add MS 25343), John Mynter was paid 3s
        4d for making four women's gowns (f 156v), and 3s 6d for making three pair of breeches and
-       two pair of hose (f 156). John Minter was the town's drummer. Richard Minter was likely his
+       two pair of hose (f 156). John Minter was the <rs ref="eats:369522" type="Place_PA_Settlement">town's</rs> drummer. Richard Minter was likely his
        son and succeeded him as the town's drummer. </p>
      </div>
     </body>
@@ -21971,14 +21957,14 @@ to patron/troupe -->.</p>
        <ab>wheras request is made by l<ex>ett</ex>res fro<ex>m</ex> S<ex>i</ex>r ffraunc<ex>is</ex>
          walsingha<ex>m</ex> knight <note type="foot">S<ex>i</ex>r … knight: <hi rend="italic"
           >Francis Walsingham (c 1532–90) was secretary of state to Elizabeth I</hi></note> ‸<add
-         place="above">aswell</add> touching the Musitians wages of this Towne, dewe this yere by
+         place="above">aswell</add> touching the Musitians wages of this <rs ref="eats:369522" type="Place_PA_Settlement">Towne</rs>, dewe this yere by
         the Towne as also <del>fos</del> ‸<add place="above">for</add> the collecc<ex>i</ex>on of
         the benevelence of the Inh<ex>ab</ex>itant<ex>es</ex> of this Towne, yt is Agred that they
         shall haue ther wages being iiij li. dewe by the Towne paid to the<ex>m</ex> &amp; for the
         rest co<ex>m</ex>myng of the benevolence of the <del>Towne</del> Inh<ex>ab</ex>itant of the
         Towne they shall collect that them selues/ And yt is furder agred that they shall not be
         chardged w<ex>i</ex>th x s. delyu<ex>er</ex>d to ballard nor w<ex>i</ex>th viij s. paid for
-        his herse hyer to londo<ex>n</ex>, nor to v s. geven to the p<ex>ur</ex>syvant
+        his herse hyer to <rs ref="eats:36947" type="Place_PA_Settlement">londo<ex>n</ex></rs>, nor to v s. geven to the p<ex>ur</ex>syvant
         w<ex>hi</ex>ch is for the said Musitc<ex>i</ex>ons</ab>
       </div>
      </div>
@@ -21997,7 +21983,7 @@ to patron/troupe -->.</p>
        <gap reason="omitted"/>
 
        <ab>wheras ther ben Appoynted vnder the chardge of M<ex>aste</ex>r Capten Carye twelue
-         p<ex>er</ex>sons for the Towne to the s<ex>er</ex>uice of the lowe <del>Contries</del>
+         p<ex>er</ex>sons for the <rs ref="eats:369522" type="Place_PA_Settlement">Towne</rs> to the s<ex>er</ex>uice of the lowe <del>Contries</del>
         Contrye/ It is Agreed that those xij p<ex>er</ex>sons shall haue allowed to them
          seu<ex>er</ex>ally ij s. vj d. of the Townes gyfte whiche is Agreed that the
          chamb<ex>er</ex>lens shall paie p<ex>re</ex>sently &amp; that Iohn Cressye <pb n="90"
@@ -22161,7 +22147,7 @@ to patron and troupe? -->.</p>
        <ab>It<note type="marginal" place="margin_left">order for <lb/>musitions</note> is
          furder<note type="foot">It is furder: <hi rend="italic">in display script</hi></note>
         agreed that Iohn Bett<ex>es</ex> musitian with his companye to the nomber of ffoure
-         p<ex>er</ex>sons shall Inioye the offyce of the weyght<ex>es</ex> within this Towne to
+         p<ex>er</ex>sons shall Inioye the offyce of the weyght<ex>es</ex> within this <rs ref="eats:369522" type="Place_PA_Settlement">Towne</rs> to
          s<ex>er</ex>ue in that offyce ffrom the daye of the date herof vntyll assensc<ex>i</ex>on
         daye next &amp; that they shall p<ex>ro</ex>cede ther about<ex>es</ex> nightlye from two of
         the Clock vntyll they have gone throughout the Towne And further that they shalbe at the
