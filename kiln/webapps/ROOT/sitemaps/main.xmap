@@ -323,8 +323,8 @@
         <map:serialize />
       </map:match>
       
-      <!-- PublishedCollections -->
-      <map:match id="ereed-publishedcollections" pattern="publishedcollections">
+      <!-- REED Collections -->
+      <map:match id="reed-collections" pattern="reedcollections">
         <map:aggregate element="aggregation" label="content">
           <map:part element="TEICorpus" src="../content/xml/tei/pcollections.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=printcollections/" />
