@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="records/REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="records/REED.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/" xml:id="print">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/" xml:id="reedcollections">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Published Collections</title>
+                <title type="main">REED Collections</title>
                 <author>Records of Early English Drama (REED)</author>
             </titleStmt>
             <editionStmt>
@@ -59,6 +59,80 @@
     </teiHeader>
     <text>
         <body>
+            <div xml:id="forthcoming_collections">
+                <head>Forthcoming Collections</head>
+                <p>
+                    <list>
+                        <item>
+                            <ref target="mailto:balexander@PointPark.edu">Robert J. Alexander</ref> — Percy Family
+                        </item>
+                        <item>
+                            <ref target="mailto:sarah.carpenter@ed.ac.uk">Sarah Carpenter</ref> — Scotland Royal Court
+                        </item>
+                        <item>
+                            <ref target="mailto:mark.chambers@durham.ac.uk">Mark Chambers</ref> — Durham (with John McKinnell)
+                        </item>
+                        <item>
+                            <ref target="mailto:johnc@sfu.ca">John Craig</ref> — Norfolk (with James Stokes)
+                        </item>
+                        <item>
+                            <ref target="mailto:C.J.D@kent.ac.uk">Callan Davies</ref> — Curtain Playhouse
+                        </item>
+                        <item>
+                            <ref target="mailto:c.egan2@lancaster.ac.uk">Clare Egan</ref> — Derbyshire
+                        </item>
+                        <item>
+                            <ref target="mailto:greenfield@ups.edu">Peter Greenfield</ref> — Bedfordshire, Hertfordshire; Norwich (2nd ed with Emily Mayne)
+                        </item>
+                        <item>
+                            <ref target="https://www.bathspa.ac.uk/our-people/tracey-hill/">Tracey Hill</ref> — Civic London 1558-1642
+                        </item>
+                        <item>
+                            <ref target="mailto:ajohnsto@chass.utoronto.ca">Alexandra F. Johnston</ref> — Buckinghamshire, Oxfordshire
+                        </item>
+                        <item>
+                            <ref target="mailto:s.maclean@utoronto.ca">Sally-Beth MacLean</ref> — Surrey including Southwark
+                        </item>
+                        <item>
+                            <ref target="mailto:j.j.mcgavin@soton.ac.uk">John J. McGavin</ref> — Scotland Provinces (with Eila Williamson)
+                        </item>
+                        <item>
+                            <ref target="mailto:ted.mcgee@uwaterloo.ca">C.E. McGee</ref> — Yorkshire West Riding (with Sylvia Thomas); Wiltshire
+                        </item>
+                        <item>
+                            <ref target="mailto:john.mckinnell@durham.ac.uk">John McKinnell</ref> — Durham (with Mark Chambers)
+                        </item>
+                        <item>
+                            <ref target="https://faculty.ithaca.edu/cmatusiak/">Christopher Matusiak</ref> — Cockpit Playhouse
+                        </item>
+                        <item>
+                            <ref target="mailto:v1emayne@ed.ac.uk">Emily Mayne</ref> — Norwich (2nd ed with Peter Greenfield)
+                        </item>
+                        <item>
+                            <ref target="mailto:ahnelson@berkeley.edu">Alan H. Nelson</ref> — Essex
+                        </item>
+                        <item>
+                            <ref target="mailto:davep@davelinux.info">Dave Postles</ref> — Nottinghamshire
+                        </item>
+                        <item>
+                            <ref target="mailto:somerset@uwo.ca">J.A.B. Somerset</ref> — Warwickshire
+                        </item>
+                        <item>
+                            <ref target="mailto:jstokes@uwsp.edu">James Stokes</ref> — Norfolk (with John Craig), Suffolk
+                        </item>
+                        <item>
+                            <ref target="mailto:sylvia.thomas1274@gmail.com">Sylvia Thomas</ref> — Derbyshire, Yorkshire West Riding (with C.E. McGee)
+                        </item>
+                        <item>
+                            <ref target="mailto:Eila.Williamson@glasgow.ac.uk">Eila Williamson</ref> — Scotland Provinces (with John J. McGavin)
+                        </item>
+                        <item>
+                            <ref target="mailto:d.k.j.wyatt@durham.ac.uk">Diana Wyatt</ref> — Yorkshire East Riding
+                        </item>
+                    </list>
+                    Contact <ref target="s.maclean@utoronto.ca">Sally-Beth MacLean</ref> about collections in progress that are currently without an editor. These are Huntingdonshire, Kent: Diocese of Rochester, Leicestershire, Middlesex including Westminster, and Northumberland.
+                </p>
+            </div>
             <div xml:id="print_collections">
                 <head>Print Collections</head>
                 <p>
