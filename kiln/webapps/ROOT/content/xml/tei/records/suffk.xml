@@ -13004,8 +13004,8 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>em</ex> þe same day my mast<ex>er</ex> gaff to my lord of seynt Iohns
-           me<ex>n</ex>
+         <cell>It<ex>em</ex> þe same day my mast<ex>er</ex> gaff to <rs ref="eats:383206" type="Collective_Troupe">my lord of seynt Iohns
+           me<ex>n</ex></rs>
          </cell>
          <cell rend="right">vj s. viij d.</cell>
         </row>
@@ -13021,7 +13021,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Iohn Symond taberett a jakete<note type="foot">a jakete: <hi rend="italic">in Sir
+         <cell><rs ref="eats:382941" type="Person_Male">Iohn Symond</rs> taberett a jakete<note type="foot">a jakete: <hi rend="italic">in Sir
             John Howard's own hand</hi></note> It<ex>e</ex>m delyveryd to the sayd Iohn the vij day
           of Octob<ex>er</ex> on hys wag<ex>es</ex>
          </cell>
@@ -13039,7 +13039,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>and Iohn stefenson of <rs ref="eats:369522" type="Place_PA_Settlement">Hepesweche</rs> pyper<note type="foot">and … pyper: <hi
+         <cell>and <rs ref="eats:383005" type="Person_Male">Iohn stefenson</rs> of <rs ref="eats:369522" type="Place_PA_Settlement">Hepesweche</rs> <rs ref="eats:1162" type="Entertainer_Type">pyper</rs><note type="foot">and … pyper: <hi
             rend="italic">in Sir John Howard's own hand</hi></note> &amp; delyveryd to the sayd Iohn
           the fyrst da Septe<ex>m</ex>b<ex>er</ex> on hys wag<ex>es</ex>
          </cell>
@@ -13049,7 +13049,7 @@ patron/troupe -->. </p>
          <cell/>
         </row>
         <row>
-         <cell>and reschard steffenson of Hepesweche pyper<note type="foot">and … pyper: <hi
+         <cell>and <rs ref="eats:383069" type="Person_Male">reschard steffenson</rs> of Hepesweche pyper<note type="foot">and … pyper: <hi
             rend="italic">in Sir John Howard's own hand</hi></note>&amp; delyveryd to the sayd
           reschard the <del>x</del> fyrst day of Septe<ex>m</ex>b<ex>er</ex> on hys wagys </cell>
          <cell rend="right">v. s.</cell>
@@ -13109,15 +13109,15 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Item, my master gaff to the heraudes the same day, </cell>
+         <cell>Item, <rs ref="eats:163205" type="Person_Male">my master</rs> gaff to the <!--IN: worth creating a new entertainer entity for heralds?-->heraudes the same day, </cell>
          <cell rend="right">x.s.</cell>
         </row>
         <row>
-         <cell>Item, my master gaff to the menstrales the same day, </cell>
+         <cell>Item, my master gaff to the <rs ref="eats:8709" type="Entertainer_Type">menstrales</rs> the same day, </cell>
          <cell rend="right">x.s.</cell>
         </row>
         <row>
-         <cell>Item, my master gaffe to the troumpetteȝ the same day, </cell>
+         <cell>Item, my master gaffe to the <rs ref="eats:1225" type="Entertainer_Type">troumpetteȝ</rs> the same day, </cell>
          <cell rend="right">xx.s.</cell>
         </row>
        </table>
@@ -13156,7 +13156,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Item, the same day my master paid to the harper fore mendynge of a harppe, </cell>
+         <cell>Item, the same day <rs ref="eats:163205" type="Person_Male">my master</rs> paid to the <rs ref="eats:30189" type="Entertainer_Type">harper</rs> fore mendynge of a <rs ref="eats:45432" type="Thing_MusicalInstrument">harppe</rs>, </cell>
          <cell rend="right">xiiij.d.</cell>
         </row>
        </table>
@@ -13171,7 +13171,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Item, the last day of Aprylle my master gaff to the hokpott, </cell>
+         <cell>Item, the last day of Aprylle my master gaff to the <rs ref="eats:40815" type="Entertainment_FolkCustom">hokpott</rs>, </cell>
          <cell rend="right">xxj.d.</cell>
         </row>
        </table>
