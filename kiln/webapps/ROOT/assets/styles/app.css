@@ -1,6 +1,15 @@
 @charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+
+@font-face {
+    font-family: 'Symbola';
+    src: /* url('Symbola.otf'); */
+      url('Symbola.woff2') format('woff2'),
+        url('Symbola.woff') format('woff');         
+    unicode-range: U+2E4E
+}
+ 
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -8,7 +17,7 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
@@ -5729,7 +5738,7 @@ table.hover tbody tr:hover {
 }
 
 .record, .record .record-info-inner {
-    font-family: Georgia, serif;
+    font-family: Symbola, Georgia, serif;
     font-size: 15px;
     color: #4a4a4a;
     line-height: 24px
@@ -8560,6 +8569,7 @@ hr.padded {
     vertical-align: -webkit-baseline-middle;
     width: 18px
 }
+
 
 .footnote-box {
     background: #f8f8f8;
