@@ -1,0 +1,102 @@
+name: reed
+
+services:
+  nginx-proxy:
+    image: nginxproxy/nginx-proxy:${NGINX_PROXY_VERSION:-1.4}
+    restart: unless-stopped
+    ports:
+      - "${NGINX_PROXY_PORTS:-80:80}"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+  nginx:
+    build:
+      context: .
+      dockerfile: ./services/nginx/Dockerfile
+    restart: unless-stopped
+    expose:
+      - ${NGINX_PORT:-8001}
+    volumes:
+      - ./volumes/django/staticfiles:/usr/share/nginx/static:ro
+      - ./volumes/kiln/webapps/ROOT/assets:/usr/share/nginx/assets:ro
+    environment:
+      VIRTUAL_HOST: "${NGINX_VIRTUAL_HOST:-${VIRTUAL_HOST:-localhost,127.0.0.1}}"
+      VIRTUAL_PATH: "${NGINX_VIRTUAL_PATH:?nginx virtual path not set}"
+      VIRTUAL_PROTO: "${NGINX_VIRTUAL_PROTO:-${VIRTUAL_PROTO:-http}}"
+      VIRTUAL_PORT: ${NGINX_PORT:-8001}
+
+  tomcat:
+    image: tomcat:${TOMCAT_VERSION:-9-jdk11}
+    restart: unless-stopped
+    expose:
+      - ${TOMCAT_PORT:-8080}
+    volumes:
+      - ./volumes/kiln/webapps:/usr/local/tomcat/webapps
+      - ./volumes/kiln/webapps/solr/conf/solr.xml:/usr/local/tomcat/conf/Catalina/localhost/solr.xml
+    environment:
+      CATALINA_OPTS: "${TOMCAT_CATALINA_OPTS:--Xmx2048m}"
+      VIRTUAL_HOST: "${TOMCAT_VIRTUAL_HOST:-${VIRTUAL_HOST:-localhost,127.0.0.1}}"
+      VIRTUAL_PATH: "${TOMCAT_VIRTUAL_PATH:?Tomcat virtual path not set}"
+      VIRTUAL_PROTO: "${TOMCAT_VIRTUAL_PROTO:-${VIRTUAL_PROTO:-http}}"
+      VIRTUAL_PORT: ${TOMCAT_PORT:-8080}
+
+  django:
+    build:
+      context: .
+      dockerfile: ./services/django/Dockerfile
+    restart: unless-stopped
+    expose:
+      - ${DJANGO_PORT:-8000}
+    volumes:
+      - ./volumes/django:/app
+    env_file:
+      - .env
+    environment:
+      VIRTUAL_HOST: "${DJANGO_VIRTUAL_HOST:-${VIRTUAL_HOST:-localhost,127.0.0.1}}"
+      VIRTUAL_PATH: "${DJANGO_VIRTUAL_PATH:?Django virtual path not set}"
+      VIRTUAL_PROTO: "${DJANGO_VIRTUAL_PROTO:-${VIRTUAL_PROTO:-http}}"
+      VIRTUAL_PORT: ${DJANGO_PORT:-8000}
+    command:
+      [
+        "/usr/local/bin/gunicorn",
+        "ereed.wsgi",
+        "--bind",
+        "0.0.0.0:8000",
+        "--chdir=/app",
+        "--timeout",
+        "180",
+        "--forwarded-allow-ips='*'",
+      ]
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  postgres:
+    build:
+      context: .
+      dockerfile: ./services/postgres/Dockerfile
+    restart: unless-stopped
+    expose:
+      - ${DATABASE_PORT:-5432}
+    volumes:
+      - ./volumes/postgres_data:/var/lib/postgresql/data
+      - ./volumes/postgres_backups:/backups
+    environment:
+      POSTGRES_HOST: ${DATABASE_HOST:-postgres}
+      POSTGRES_PORT: ${DATABASE_PORT:-5432}
+      POSTGRES_DB: ${DATABASE_NAME:?Postgres db not set}
+      POSTGRES_USER: ${DATABASE_USER:?Postgres user not set}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:?Postgres user password not set}
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "pg_isready",
+          "-d",
+          "${DATABASE_NAME}",
+          "-U",
+          "${DATABASE_USER}",
+        ]
+      interval: 1s
+      timeout: 3s
+      retries: 10
