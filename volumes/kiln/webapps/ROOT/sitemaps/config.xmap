@@ -14,13 +14,13 @@
   <map:components>
     <map:selectors>
       <map:selector logger="sitemap.selector.exception" name="exception"
-                    src="org.apache.cocoon.selection.ExceptionSelector">
+        src="org.apache.cocoon.selection.ExceptionSelector">
         <exception class="org.apache.cocoon.ResourceNotFoundException"
-                   name="not-found" />
+          name="not-found" />
         <exception class="org.apache.cocoon.components.flow.InvalidContinuationException"
-                   name="invalid-continuation" />
+          name="invalid-continuation" />
         <exception class="java.lang.IllegalArgumentException"
-                   name="illegal-argument" />
+          name="illegal-argument" />
         <!-- The statement below tells the selector to unroll as much
              exceptions as possible -->
         <exception class="java.lang.Throwable" unroll="true" />
@@ -29,8 +29,8 @@
 
     <map:serializers>
       <map:serializer logger="sitemap.serializer.xml"
-                      mime-type="text/xml" name="xml_nodecl"
-                      src="org.apache.cocoon.serialization.XMLSerializer">
+        mime-type="text/xml" name="xml_nodecl"
+        src="org.apache.cocoon.serialization.XMLSerializer">
         <omit-xml-declaration>yes</omit-xml-declaration>
       </map:serializer>
     </map:serializers>
@@ -43,16 +43,16 @@
              messages. Change to "0" to show only a simple
              message. -->
         <debug>1</debug>
-        <eats-server>http://localhost:8000/</eats-server>
+        <eats-server>http://django:8000/</eats-server>
         <eats-base-url>http://ereed.library.utoronto.ca/eats/</eats-base-url>
         <!-- If authentication tokens are required, provide them in
              the URL as per RFC 2396; eg,
              http://username:password@domain.name/ -->
         <fedora-url></fedora-url>
         <rdf-base-uri>http://ereed.library.utoronto.ca/rdf/</rdf-base-uri>
-        <sesame-server>http://localhost:9999/openrdf-sesame/</sesame-server>
+        <sesame-server>http://tomcat:8080/openrdf-sesame/</sesame-server>
         <sesame-server-repository>ereed</sesame-server-repository>
-        <solr-server>http://localhost:9999/solr/</solr-server>
+        <solr-server>http://tomcat:8080/solr/</solr-server>
       </global-variables>
     </map:component-configurations>
 
@@ -62,7 +62,7 @@
            project sitemap, main.xmap. -->
       <map:match pattern="**">
         <map:mount check-reload="yes" src="../kiln/sitemaps/main.xmap"
-                   uri-prefix="" />
+          uri-prefix="" />
       </map:match>
     </map:pipeline>
 

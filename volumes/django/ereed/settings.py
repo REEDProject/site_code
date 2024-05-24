@@ -13,6 +13,10 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
+import environ
+
+env = environ.Env()
+
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
@@ -20,79 +24,80 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = []
-
 CSRF_COOKIE_HTTPONLY = True
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
-X_FRAME_OPTIONS = 'DENY'
+X_FRAME_OPTIONS = "DENY"
 
 
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'django.contrib.sites',
-    'django.contrib.gis',
-    'account',
-    'text_prepare',
-    'records',
-    'selectable',
-    'ddh_utils',
-    'leaflet',
-    'django_cache_manager',
-    'tmapi',
-    'eats',
-    'geomap',
-    'git_update',
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "django.contrib.sites",
+    "django.contrib.gis",
+    "account",
+    "text_prepare",
+    "records",
+    "selectable",
+    "ddh_utils",
+    "leaflet",
+    "django_cache_manager",
+    "tmapi",
+    "eats",
+    "geomap",
+    # TODO: check if this is still needed
+    # "git_update",
 )
 
 MIDDLEWARE_CLASSES = (
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.security.SecurityMiddleware',
-    'account.middleware.LocaleMiddleware',
-    'account.middleware.TimezoneMiddleware',
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.auth.middleware.SessionAuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django.middleware.security.SecurityMiddleware",
+    "account.middleware.LocaleMiddleware",
+    "account.middleware.TimezoneMiddleware",
 )
 
-ROOT_URLCONF = 'ereed.urls'
+ROOT_URLCONF = "ereed.urls"
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates'),],
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-                'account.context_processors.account',
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "DIRS": [
+            os.path.join(BASE_DIR, "templates"),
+        ],
+        "OPTIONS": {
+            "context_processors": [
+                "django.template.context_processors.debug",
+                "django.template.context_processors.request",
+                "django.contrib.auth.context_processors.auth",
+                "django.contrib.messages.context_processors.messages",
+                "account.context_processors.account",
             ],
-            'loaders': [
-                ('django.template.loaders.cached.Loader', [
-                    'django.template.loaders.filesystem.Loader',
-                    'django.template.loaders.app_directories.Loader',
-                ]),
+            "loaders": [
+                (
+                    "django.template.loaders.cached.Loader",
+                    [
+                        "django.template.loaders.filesystem.Loader",
+                        "django.template.loaders.app_directories.Loader",
+                    ],
+                ),
             ],
         },
     },
 ]
 
-WSGI_APPLICATION = 'ereed.wsgi.application'
+WSGI_APPLICATION = "ereed.wsgi.application"
 
 SITE_ID = 1
 
@@ -100,29 +105,25 @@ SITE_ID = 1
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = "UTC"
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+STATIC_URL = "/static/"
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
 
-SERIALIZATION_MODULES = {
-    'geojson_reed': 'geomap.serializers.geojson'
-}
+SERIALIZATION_MODULES = {"geojson_reed": "geomap.serializers.geojson"}
 
 
 # Account settings.
@@ -130,37 +131,103 @@ ACCOUNT_OPEN_SIGNUP = False
 
 
 LEAFLET_CONFIG = {
-    'DEFAULT_CENTER': (-1.77, 52.7),
-    'DEFAULT_ZOOM': 6,
-    'OVERLAYS': [
-        ('Pre-1642 Roads', 'http://talus.geog.utoronto.ca/1.0.0/REED_gis_roads/{z}/{x}/{-y}.png', {}),
-        ('Detailed roads in London area', 'http://talus.geog.utoronto.ca/1.0.0/EREED_gis_roads_wlabels_Z8-18/{z}/{x}/{-y}.png', {}),
+    "DEFAULT_CENTER": (-1.77, 52.7),
+    "DEFAULT_ZOOM": 6,
+    "OVERLAYS": [
+        (
+            "Pre-1642 Roads",
+            "http://talus.geog.utoronto.ca/1.0.0/REED_gis_roads/{z}/{x}/{-y}.png",
+            {},
+        ),
+        (
+            "Detailed roads in London area",
+            "http://talus.geog.utoronto.ca/1.0.0/EREED_gis_roads_wlabels_Z8-18/{z}/{x}/{-y}.png",
+            {},
+        ),
     ],
-    'PLUGINS': {
-        'forms': {
-            'auto-include': True,
-            'css': ['css/leaflet.mousecoordinate.css'],
-            'js': ['js/admin_map.js', 'js/leaflet.mousecoordinate.min.js'],
+    "PLUGINS": {
+        "forms": {
+            "auto-include": True,
+            "css": ["css/leaflet.mousecoordinate.css"],
+            "js": ["js/admin_map.js", "js/leaflet.mousecoordinate.min.js"],
         },
     },
-    'RESET_VIEW': False,
-    'SPATIAL_EXTENT': (-20.5, 46.5, 7.0, 62.0),
-    'SRID': 3857,
-    'TILES': [
-        ('OpenStreetMap', 'https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicmVlZHVvZnQiLCJhIjoiY2l6aWpiODQ2MDE2NjJ4b2RwZ3MyODl6byJ9.A67HGpPtAeCayuReK1ahtA', {'maxZoom': 20, 'attribution': 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'}),
-        ('Counties', 'http://talus.geog.utoronto.ca/1.0.0/EREED_gis_counties_base/{z}/{x}/{-y}.png', {'maxZoom': 20, 'attribution': '<a href="http://reed.utoronto.ca/">Records of Early English Drama</a>'}),
-        ('Relief', 'http://talus.geog.utoronto.ca/1.0.0/REED_gis_relief/{z}/{x}/{-y}.png', {'maxZoom': 20}),
+    "RESET_VIEW": False,
+    "SPATIAL_EXTENT": (-20.5, 46.5, 7.0, 62.0),
+    "SRID": 3857,
+    "TILES": [
+        (
+            "OpenStreetMap",
+            "https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicmVlZHVvZnQiLCJhIjoiY2l6aWpiODQ2MDE2NjJ4b2RwZ3MyODl6byJ9.A67HGpPtAeCayuReK1ahtA",
+            {
+                "maxZoom": 20,
+                "attribution": 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+            },
+        ),
+        (
+            "Counties",
+            "http://talus.geog.utoronto.ca/1.0.0/EREED_gis_counties_base/{z}/{x}/{-y}.png",
+            {
+                "maxZoom": 20,
+                "attribution": '<a href="http://reed.utoronto.ca/">Records of Early English Drama</a>',
+            },
+        ),
+        (
+            "Relief",
+            "http://talus.geog.utoronto.ca/1.0.0/REED_gis_relief/{z}/{x}/{-y}.png",
+            {"maxZoom": 20},
+        ),
     ],
 }
 
 
-ACCOUNT_LOGIN_URL = '/accounts/login/'
+ACCOUNT_LOGIN_URL = "/accounts/login/"
 
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = not env.bool("PRODUCTION", False)
 
-# Local settings
-# Include any local settings (to be excluded from version control)
+ALLOWED_HOSTS = env.list("VIRTUAL_HOSTS", default=[])
 
-try:
-    from .local_settings import *
-except ImportError:
-    pass
+ADMINS = env("DJANGO_ADMINS", default=[])
+SERVER_EMAIL = env("DJANGO_SERVER_EMAIL", default="noreply@localhost")
+DEFAULT_FROM_EMAIL = env("DJANGO_DEFAULT_FROM_EMAIL", default="noreply@localhost")
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.contrib.gis.db.backends.postgis",
+        "NAME": env("DATABASE_NAME"),
+        "USER": env("DATABASE_USER"),
+        "PASSWORD": env("DATABASE_PASSWORD"),
+        "HOST": env("DATABASE_HOST"),
+        "PORT": env("DATABASE_PORT"),
+    }
+}
+
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 3000
+
+SECRET_KEY = env("DJANGO_SECRET_KEY")
+
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
+TIME_ZONE = "America/Toronto"
+
+# django-user-accounts
+ACCOUNT_LOGIN_REDIRECT_URL = "/eats/"
+
+EATS_TOPIC_MAP = "https://ereed.library.utoronto.ca/tm/"
+
+CACHES = {
+    "default": {},
+    "django_cache_manager.cache_backend": {
+        "BACKEND": "django.core.cache.backends.filebased.FileBasedCache",
+        "LOCATION": "/tmp/django_cache_manager",
+        "TIMEOUT": None,
+    },
+}
+
+EATS_RESULTS_PER_PAGE = 10000
+EATS_EXTRA_ENTITY_TYPE_FORMS = 2
+
+GIT_REPOSITORY_PATH = "/site_code"
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 26214400
