@@ -1,9 +1,14 @@
-stages:
-  - get_ip
+image: alpine
 
-get_runner_ip:
-  stage: get_ip
-  image: alpine
+stages:
+  - deploy
+
+deploy_to_server:
+  stage: deploy
+  before_script:
+    - mkdir -p ~/.ssh
+    - cp $DEPLOY_KEY ~/.ssh/id_deploy_key
+    - chmod 600 ~/.~/.ssh/id_deploy_key
+    - ssh-keyscan $DEPLOY_HOST >> ~/.ssh/known_hosts
   script:
-    - echo "Runner IP Address:"
-    - ip route | grep default | awk '{print $3}'
+    - ssh $DEPLOY_USER@$DEPLOY_HOST 'echo "Successfully connected to the server"'
