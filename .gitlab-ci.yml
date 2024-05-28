@@ -3,6 +3,7 @@ stages:
 
 get_runner_ip:
   stage: get_ip
+  image: alpine
   script:
     - echo "Runner IP Address:"
     - ip route | grep default | awk '{print $3}'
