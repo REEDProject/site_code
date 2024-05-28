@@ -1,0 +1,8 @@
+stages:
+  - get_ip
+
+get_runner_ip:
+  stage: get_ip
+  script:
+    - echo "Runner IP Address:"
+    - hostname -I
