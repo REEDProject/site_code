@@ -15,9 +15,7 @@ deploy_to_server:
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
 
-    - echo $HOST
-    - ssh-keyscan $HOST >> ~/.ssh/known_hosts || { echo "ssh-keyscan failed"; exit 1; }
-    - cat ~/.ssh/known_hosts
+    - cp "$SSH_KNOWN_HOSTS" ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
   script:
     - ssh -o StrictHostKeyChecking=no $SSH_USER@$HOST 'echo "Successfully connected to the server"'
