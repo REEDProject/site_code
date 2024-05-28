@@ -10,8 +10,8 @@ deploy_to_server:
     - mkdir -p ~/.ssh
     - cp $DEPLOY_KEY ~/.ssh/id_deploy_key
     - chmod 600 ~/.ssh/id_deploy_key
-    - ssh-keyscan $DEPLOY_HOST >> ~/.ssh/known_hosts
+    - ssh-keyscan $DEPLOY_HOST >> ~/.ssh/known_hosts || { echo "ssh-keyscan failed"; exit 1; }
     - cat ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
   script:
-    - ssh $DEPLOY_USER@$DEPLOY_HOST 'echo "Successfully connected to the server"'
+    - ssh -o StrictHostKeyChecking=no $DEPLOY_USER@$DEPLOY_HOST 'echo "Successfully connected to the server"'
