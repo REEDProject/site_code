@@ -5,4 +5,4 @@ get_runner_ip:
   stage: get_ip
   script:
     - echo "Runner IP Address:"
-    - hostname -I
+    - ip route | grep default | awk '{print $3}'
