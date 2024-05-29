@@ -25,7 +25,7 @@ services:
     expose:
       - ${NGINX_PORT:-80}
     volumes:
-      - ./volumes/django/staticfiles:/usr/share/nginx/static:ro
+      - ./volumes/django/staticfiles:/usr/share/nginx/static
       - ./volumes/kiln/webapps/ROOT/assets:/usr/share/nginx/assets:ro
 
   tomcat:
