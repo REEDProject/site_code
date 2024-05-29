@@ -50,7 +50,9 @@ deploy_to_server:
       ssh ${SSH_USER}@${HOST}
       "
         cd ${DEPLOY_DIR} &&
-        echo ${HOST_ENV} | base64 -d > .env
+        echo ${HOST_ENV} | base64 -d > .env &&
+        mkdir -p volumes/traefik &&
+        echo ${HTPASSWD} | base64 -d > volumes/traefik/.htpasswd
       "
     - !reference [.compose:ssh:up, script]
 
