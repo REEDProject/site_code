@@ -17,17 +17,6 @@ services:
       - django
       - nginx
 
-  nginx:
-    build:
-      context: .
-      dockerfile: ./services/nginx/Dockerfile
-    restart: unless-stopped
-    expose:
-      - ${NGINX_PORT:-80}
-    volumes:
-      - ./volumes/django/staticfiles:/usr/share/nginx/static
-      - ./volumes/kiln/webapps/ROOT/assets:/usr/share/nginx/assets:ro
-
   tomcat:
     image: tomcat:${TOMCAT_VERSION:-9-jdk11}
     restart: unless-stopped
@@ -64,6 +53,17 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+
+  nginx:
+    build:
+      context: .
+      dockerfile: ./services/nginx/Dockerfile
+    restart: unless-stopped
+    expose:
+      - ${NGINX_PORT:-80}
+    volumes:
+      - ./volumes/django/staticfiles:/usr/share/nginx/static:ro
+      - ./volumes/kiln/webapps/ROOT/assets:/usr/share/nginx/assets:ro
 
   postgres:
     build:
