@@ -8,23 +8,23 @@ entryPoints:
 http:
   routers:
     to-tomcat:
-      rule: Host(`localhost`)
+      rule: Host(`localhost`) || Host(`127.0.0.1`)
       service: tomcat
 
     to-tomcat-admin:
-      rule: Host(`localhost`) && PathPrefix(`/admin`)
+      rule: (Host(`localhost`) || Host(`127.0.0.1`)) && PathPrefix(`/admin`)
       middlewares:
         - basic-auth
       service: tomcat
 
     to-django:
-      rule: Host(`localhost`) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare)/`)
+      rule: (Host(`localhost`) || Host(`127.0.0.1`)) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare)/`)
       middlewares:
         - csrf
       service: django
 
     to-nginx:
-      rule: Host(`localhost`) && PathRegexp(`^/(assets/|solr/|static/|robots.txt)`)
+      rule: (Host(`localhost`) || Host(`127.0.0.1`)) && PathRegexp(`^/(assets/|solr/|static/|robots.txt)`)
       middlewares:
         - csrf
       service: nginx
