@@ -1,21 +1,41 @@
 image: alpine
 
+.git:ssh:pull:
+  script:
+    - >
+      ssh ${SSH_USER}@${HOST}
+      "
+        cd ${DEPLOY_DIR} || git clone ${CI_REPOSITORY_URL} ${DEPLOY_DIR} &&
+        cd ${DEPLOY_DIR} &&
+        git config core.fileMode false &&
+        git remote remove origin || true &&
+        git remote add origin ${CI_REPOSITORY_URL} &&
+        git fetch --all &&
+        git checkout ${CI_COMMIT_BRANCH:-main} &&
+        git pull origin ${CI_COMMIT_BRANCH:-main} &&
+        git remote remove origin
+      "
+
 stages:
   - deploy
 
 deploy_to_server:
   stage: deploy
   before_script:
+    - DEPLOY_DIR=/project/prod
+
     - "command -v ssh-agent >/dev/null || ( apk add --no-cache --update openssh )"
     - eval $(ssh-agent -s)
 
-    - chmod 400 "$SSH_PRIVATE_KEY"
-    - ssh-add "$SSH_PRIVATE_KEY"
+    - chmod 400 "${SSH_PRIVATE_KEY}"
+    - ssh-add "${SSH_PRIVATE_KEY}"
 
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
 
-    - cp "$SSH_KNOWN_HOSTS" ~/.ssh/known_hosts
+    - cp "${SSH_KNOWN_HOSTS}" ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
   script:
-    - ssh $SSH_USER@$HOST 'echo "Successfully connected to the server"'
+    - !reference [.git:ssh:pull, script]
+  rules:
+    - if: $CI_COMMIT_BRANCH == "docker"
