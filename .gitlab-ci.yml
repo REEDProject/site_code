@@ -22,8 +22,7 @@ image: alpine
       ssh ${SSH_USER}@${HOST}
       "
         cd ${DEPLOY_DIR} &&
-        docker compose -p $(echo ${DEPLOY_DIR} | tr '/' '_' | sed 's/^\_//') \
-          up -d --build --no-deps --force-recreate --remove-orphans
+        docker compose up -d --build --no-deps --force-recreate --remove-orphans
       "
 
 stages:
