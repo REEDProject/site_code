@@ -1,13 +1,20 @@
 name: reed
 
 services:
-  nginx-proxy:
-    image: nginxproxy/nginx-proxy:${NGINX_PROXY_VERSION:-1.4}
+  traefik:
+    image: traefik:3.0
     restart: unless-stopped
-    ports:
-      - "${NGINX_PROXY_PORTS:-80:80}"
     volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+      # - ./volumes/traefik/acme:/etc/traefik/acme
+      - ./volumes/traefik/traefik.yml:/etc/traefik/traefik.yml:ro
+      - ./volumes/traefik/.htpasswd:/etc/traefik/.htpasswd:ro
+    ports:
+      - 80:80
+    depends_on:
+      - tomcat
+      - django
+      - nginx
 
   nginx:
     build:
@@ -15,15 +22,10 @@ services:
       dockerfile: ./services/nginx/Dockerfile
     restart: unless-stopped
     expose:
-      - ${NGINX_PORT:-8001}
+      - ${NGINX_PORT:-80}
     volumes:
       - ./volumes/django/staticfiles:/usr/share/nginx/static:ro
       - ./volumes/kiln/webapps/ROOT/assets:/usr/share/nginx/assets:ro
-    environment:
-      VIRTUAL_HOST: "${NGINX_VIRTUAL_HOST:-${VIRTUAL_HOST:-localhost,127.0.0.1}}"
-      VIRTUAL_PATH: "${NGINX_VIRTUAL_PATH:?nginx virtual path not set}"
-      VIRTUAL_PROTO: "${NGINX_VIRTUAL_PROTO:-${VIRTUAL_PROTO:-http}}"
-      VIRTUAL_PORT: ${NGINX_PORT:-8001}
 
   tomcat:
     image: tomcat:${TOMCAT_VERSION:-9-jdk11}
@@ -32,13 +34,9 @@ services:
       - ${TOMCAT_PORT:-8080}
     volumes:
       - ./volumes/kiln/webapps:/usr/local/tomcat/webapps
-      - ./volumes/kiln/webapps/solr/conf/solr.xml:/usr/local/tomcat/conf/Catalina/localhost/solr.xml
+      - ./volumes/kiln/webapps/solr/conf/solr.xml:/usr/local/tomcat/conf/Catalina/localhost/solr.xml:ro
     environment:
       CATALINA_OPTS: "${TOMCAT_CATALINA_OPTS:--Xmx2048m}"
-      VIRTUAL_HOST: "${TOMCAT_VIRTUAL_HOST:-${VIRTUAL_HOST:-localhost,127.0.0.1}}"
-      VIRTUAL_PATH: "${TOMCAT_VIRTUAL_PATH:?Tomcat virtual path not set}"
-      VIRTUAL_PROTO: "${TOMCAT_VIRTUAL_PROTO:-${VIRTUAL_PROTO:-http}}"
-      VIRTUAL_PORT: ${TOMCAT_PORT:-8080}
 
   django:
     build:
@@ -51,11 +49,6 @@ services:
       - ./volumes/django:/app
     env_file:
       - .env
-    environment:
-      VIRTUAL_HOST: "${DJANGO_VIRTUAL_HOST:-${VIRTUAL_HOST:-localhost,127.0.0.1}}"
-      VIRTUAL_PATH: "${DJANGO_VIRTUAL_PATH:?Django virtual path not set}"
-      VIRTUAL_PROTO: "${DJANGO_VIRTUAL_PROTO:-${VIRTUAL_PROTO:-http}}"
-      VIRTUAL_PORT: ${DJANGO_PORT:-8000}
     command:
       [
         "/usr/local/bin/gunicorn",

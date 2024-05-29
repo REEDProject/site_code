@@ -1,0 +1,60 @@
+log:
+  level: INFO
+
+entryPoints:
+  web:
+    address: ":80"
+
+http:
+  routers:
+    to-tomcat:
+      rule: HostRegexp(`^(ereed\.org|dev\.ereed\.org|localhost)`)
+      service: tomcat
+
+    to-tomcat-admin:
+      rule: HostRegexp(`^(ereed\.org|dev\.ereed\.org)`) && PathPrefix(`/admin`)
+      middlewares:
+        - basic-auth
+      service: tomcat
+
+    to-django:
+      rule: HostRegexp(`^(ereed\.org|dev\.ereed\.org|localhost)`) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare)/`)
+      middlewares:
+        - csrf
+      service: django
+
+    to-nginx:
+      rule: HostRegexp(`^(ereed\.org|dev\.ereed\.org|localhost)`) && PathRegexp(`^/(assets/|solr/|static/|robots.txt)`)
+      middlewares:
+        - csrf
+      service: nginx
+
+  middlewares:
+    basic-auth:
+      basicAuth:
+        usersFile: /etc/traefik/.htpasswd
+
+    csrf:
+      headers:
+        hostsProxyHeaders: ["X-CSRFToken"]
+
+  services:
+    tomcat:
+      loadBalancer:
+        servers:
+          - url: http://tomcat:8080
+
+    django:
+      loadBalancer:
+        servers:
+          - url: http://django:8000
+
+    nginx:
+      loadBalancer:
+        servers:
+          - url: http://nginx:80
+
+providers:
+  file:
+    filename: "/etc/traefik/traefik.yml"
+    watch: true
