@@ -62,6 +62,9 @@ Create a `.env` file inside the compose directory with the following content:
 # Set to true in production environments
 PRODUCTION=false
 
+# HTTP port for the reverse proxy
+TRAEFIK_HTTP_PORT=80
+
 # Django settings
 DJANGO_ADMINS=("eREED Admin", "reedkiln@library.utoronto.ca")
 DJANGO_SERVER_EMAIL=reedkiln@library.utoronto.ca
@@ -76,6 +79,9 @@ DATABASE_PORT=5432
 DATABASE_DB=database_name
 DATABASE_USER=database_user
 DATABASE_PASSWORD=database_pwd
+
+# Hosts settings
+VIRTUAL_HOSTS=localhost,127.0.0.1
 ```
 
 Ensure to replace database_name, database_user, and database_pwd with your
@@ -128,4 +134,30 @@ these steps:
 1. Create a passwords file named `.htpasswd` using the
    [htpasswd](https://httpd.apache.org/docs/current/programs/htpasswd.html) tool.
    Note, that there is already a passwords file in the project server.
-2. Place the `.htpasswd` file in the `/volumes/traefik/` directory.
+1. Place the `.htpasswd` file in the `/volumes/traefik/` directory.
+
+## Server deployment
+
+Server deployment for the is automated using GitLab CI. The process involves
+running a pipeline that performs the following steps:
+
+1. **Configure CI/CD variables**:
+
+   - **HOST**: The server hostname or IP address.
+   - **HOST_ENV**: The server environment variables, masked and base64 encoded.
+   - **SSH_KNOWN_HOSTS**: A file variable containing the known hosts for SSH
+     connections.
+   - **SSH_PRIVATE_KEY**: A file variable containing the private key for SSH
+     authentication.
+   - **SSH_USER**: The username used for SSH connections.
+
+1. **SSH into the project server**: The pipeline creates a secure SSH connection
+   to the project server using the provided SSH variables.
+1. **Clone the repository**: Once connected, the repository is cloned from the
+   remote GitLab repository to ensure the latest version of the code is deployed.
+1. **Run Docker Compose**: The pipeline executes Docker Compose commands to
+   start up the services defined in the docker-compose.yml file.
+
+This automated process, runs on commit/push to the repository, ensures that the
+latest code is deployed efficiently and consistently to the server. **At the
+moment only commits to the docker branch will get deployed.**
