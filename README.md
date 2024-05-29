@@ -41,8 +41,7 @@ Below is a diagram of the Docker Compose stack architecture:
 
 Follow these steps to set up and run the project using Docker Compose.
 
-**Note** that these instructions cover only the local setup; server deployment
-is not covered here.
+**Note** that these instructions cover only the local setup.
 
 ### Pre-requisites
 
@@ -54,38 +53,44 @@ Before you begin, ensure you have the following installed on your system:
 ### Running the application
 
 1. **Clone this repository**
+1. **Set up the Docker Compose file**
+
+   Rename `docker-compose.override.yml.example` to
+   `docker-compose.override.yml`. This file contains customizations necessary
+   for running the stack in a local development environment.
+
 1. **Set up the environment file**
 
-Create a `.env` file inside the compose directory with the following content:
+   Create a `.env` file inside the compose directory with the following content:
 
-```sh
-# Set to true in production environments
-PRODUCTION=false
+   ```sh
+   # Set to true in production environments
+   PRODUCTION=false
 
-# HTTP port for the reverse proxy
-TRAEFIK_HTTP_PORT=80
+   # HTTP port for the reverse proxy
+   TRAEFIK_HTTP_PORT=80
 
-# Django settings
-DJANGO_ADMINS=("eREED Admin", "reedkiln@library.utoronto.ca")
-DJANGO_SERVER_EMAIL=reedkiln@library.utoronto.ca
-DJANGO_DEFAULT_FROM_EMAIL=reedkiln@library.utoronto.ca
-# Use a strong and unique key in production
-DJANGO_SECRET_KEY=generate_secret_key
+   # Django settings
+   DJANGO_ADMINS=("eREED Admin", "reedkiln@library.utoronto.ca")
+   DJANGO_SERVER_EMAIL=reedkiln@library.utoronto.ca
+   DJANGO_DEFAULT_FROM_EMAIL=reedkiln@library.utoronto.ca
+   # Use a strong and unique key in production
+   DJANGO_SECRET_KEY=generate_secret_key
 
-# PostgreSQL settings
-# In production, use Docker secrets or environment variables managed by the orchestrator
-DATABASE_HOST=postgres
-DATABASE_PORT=5432
-DATABASE_DB=database_name
-DATABASE_USER=database_user
-DATABASE_PASSWORD=database_pwd
+   # PostgreSQL settings
+   # In production, use Docker secrets or environment variables managed by the orchestrator
+   DATABASE_HOST=postgres
+   DATABASE_PORT=5432
+   DATABASE_DB=database_name
+   DATABASE_USER=database_user
+   DATABASE_PASSWORD=database_pwd
 
-# Hosts settings
-VIRTUAL_HOSTS=localhost,127.0.0.1
-```
+   # Hosts settings
+   VIRTUAL_HOSTS=localhost,127.0.0.1
+   ```
 
-Ensure to replace database_name, database_user, and database_pwd with your
-actual database credentials.
+   Ensure to replace database_name, database_user, and database_pwd with your
+   actual database credentials.
 
 1. **Start the services**
 
@@ -143,6 +148,7 @@ running a pipeline that performs the following steps:
 
 1. **Configure CI/CD variables**:
 
+   - **HTPASSWD**: Passwords, masked and base64 encoded.
    - **HOST**: The server hostname or IP address.
    - **HOST_ENV**: The server environment variables, masked and base64 encoded.
    - **SSH_KNOWN_HOSTS**: A file variable containing the known hosts for SSH
