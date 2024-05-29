@@ -41,3 +41,4 @@ volumes/kiln/sw/jetty/temp/
 docker-compose.override.yml
 volumes/postgres_*
 volumes/traefik/.htpasswd
+volumes/traefik/acme
