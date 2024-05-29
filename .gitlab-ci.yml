@@ -18,4 +18,4 @@ deploy_to_server:
     - cp "$SSH_KNOWN_HOSTS" ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
   script:
-    - ssh -o StrictHostKeyChecking=no $SSH_USER@$HOST 'echo "Successfully connected to the server"'
+    - ssh $SSH_USER@$HOST 'echo "Successfully connected to the server"'
