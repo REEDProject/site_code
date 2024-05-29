@@ -68,7 +68,7 @@ DJANGO_SERVER_EMAIL=reedkiln@library.utoronto.ca
 DJANGO_DEFAULT_FROM_EMAIL=reedkiln@library.utoronto.ca
 # Use a strong and unique key in production
 DJANGO_SECRET_KEY=generate_secret_key
-DJANGO_VIRTUAL_PATH=~^/(accounts|djadmin|eats)/
+DJANGO_VIRTUAL_PATH=~^/(accounts|djadmin|eats|prepare|geomap)/
 
 # Nginx settings
 NGINX_VIRTUAL_PATH=~^/(assets/|solr/|static/|robots.txt)
@@ -114,7 +114,7 @@ actual database credentials.
    ```
 
    If you get the error `dropdb: error: database removal failed: ERROR:  
- database "ereed" is being accessed by other users` when running the command,
+database "ereed" is being accessed by other users` when running the command,
    stop the django service `docker compose stop django` and run the restore
    command again.
 
