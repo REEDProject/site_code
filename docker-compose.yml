@@ -10,7 +10,7 @@ services:
       - ./volumes/traefik/traefik.yml:/etc/traefik/traefik.yml:ro
       - ./volumes/traefik/.htpasswd:/etc/traefik/.htpasswd:ro
     ports:
-      - 80:80
+      - ${TRAEFIK_HTTP_PORT:-80}:80
     depends_on:
       - tomcat
       - django
