@@ -36,6 +36,8 @@ volumes/kiln/webapps/solr/data/
 volumes/kiln/sw/jetty/temp/
 
 # Docker
+.cache
 .env
 docker-compose.override.yml
 volumes/postgres_*
+volumes/traefik/.htpasswd
