@@ -4,30 +4,54 @@ log:
 entryPoints:
   web:
     address: ":80"
+    http:
+      redirections:
+        entryPoint:
+          to: web-secure
+
+  web-secure:
+    address: ":443"
+
+certificatesResolvers:
+  letsencrypt:
+    acme:
+      email: jmvieira@gmail.com
+      storage: /etc/traefik/acme/acme.json
+      httpChallenge:
+        # used during the challenge
+        entryPoint: web
 
 http:
   routers:
     to-tomcat:
-      rule: HostRegexp(`^(ereed\.org|dev\.ereed\.org|localhost)`)
+      rule: HostRegexp(`^(ereed\.org|dev\.ereed\.org)`)
       service: tomcat
+      tls:
+        certResolver: letsencrypt
 
     to-tomcat-admin:
       rule: HostRegexp(`^(ereed\.org|dev\.ereed\.org)`) && PathPrefix(`/admin`)
       middlewares:
         - basic-auth
       service: tomcat
+      tls:
+        certResolver: letsencrypt
 
     to-django:
-      rule: HostRegexp(`^(ereed\.org|dev\.ereed\.org|localhost)`) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare)/`)
+      rule: HostRegexp(`^(ereed\.org|dev\.ereed\.org)`) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare)/`)
       middlewares:
         - csrf
       service: django
+      tls:
+        certResolver: letsencrypt
 
     to-nginx:
-      rule: HostRegexp(`^(ereed\.org|dev\.ereed\.org|localhost)`) && PathRegexp(`^/(assets/|solr/|static/|robots.txt)`)
+      rule: HostRegexp(`^(ereed\.org|dev\.ereed\.org)`) && PathRegexp(`^/(assets/|solr/|static/|robots.txt)`)
       middlewares:
         - csrf
       service: nginx
+      tls:
+        certResolver: letsencrypt
 
   middlewares:
     basic-auth:
