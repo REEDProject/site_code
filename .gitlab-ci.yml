@@ -1,6 +1,20 @@
 image: alpine
 
-.git:ssh:pull:
+.prepare:ssh:
+  before_script:
+    - "command -v ssh-agent >/dev/null || ( apk add --no-cache --update openssh )"
+    - eval $(ssh-agent -s)
+
+    - chmod 400 "${SSH_PRIVATE_KEY}"
+    - ssh-add "${SSH_PRIVATE_KEY}"
+
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+
+    - cp "${SSH_KNOWN_HOSTS}" ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+
+.git:pull:
   script:
     - >
       ssh ${SSH_USER}@${HOST}
@@ -16,7 +30,18 @@ image: alpine
         git remote remove origin
       "
 
-.compose:ssh:up:
+.prepare:env:
+  script:
+    - >
+      ssh ${SSH_USER}@${HOST}
+      "
+        cd ${DEPLOY_DIR} &&
+        echo ${HOST_ENV} | base64 -d > .env &&
+        mkdir -p volumes/traefik &&
+        echo ${HTPASSWD} | base64 -d > volumes/traefik/.htpasswd
+      "
+
+.compose:up:
   script:
     - >
       ssh ${SSH_USER}@${HOST}
@@ -34,29 +59,11 @@ deploy_to_server:
   before_script:
     - DEPLOY_DIR=/project/prod
     - DEPLOY_INSTANCE=prod
-
-    - "command -v ssh-agent >/dev/null || ( apk add --no-cache --update openssh )"
-    - eval $(ssh-agent -s)
-
-    - chmod 400 "${SSH_PRIVATE_KEY}"
-    - ssh-add "${SSH_PRIVATE_KEY}"
-
-    - mkdir -p ~/.ssh
-    - chmod 700 ~/.ssh
-
-    - cp "${SSH_KNOWN_HOSTS}" ~/.ssh/known_hosts
-    - chmod 644 ~/.ssh/known_hosts
+    - !reference [.prepare:ssh, before_script]
   script:
-    - !reference [.git:ssh:pull, script]
-    - >
-      ssh ${SSH_USER}@${HOST}
-      "
-        cd ${DEPLOY_DIR} &&
-        echo ${HOST_ENV} | base64 -d > .env &&
-        mkdir -p volumes/traefik &&
-        echo ${HTPASSWD} | base64 -d > volumes/traefik/.htpasswd
-      "
-    - !reference [.compose:ssh:up, script]
+    - !reference [.git:pull, script]
+    - !reference [.prepare:env, script]
+    - !reference [.compose:up, script]
 
   rules:
     - if: $CI_COMMIT_BRANCH == "docker"
