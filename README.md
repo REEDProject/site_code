@@ -67,13 +67,14 @@ Before you begin, ensure you have the following installed on your system:
    # Set to true in production environments
    PRODUCTION=false
 
-   # HTTP port for the reverse proxy
+   # HTTP ports for the reverse proxy
    TRAEFIK_HTTP_PORT=80
+   TRAEFIK_HTTPS_PORT=443
 
    # Django settings
-   DJANGO_ADMINS=("eREED Admin", "reedkiln@library.utoronto.ca")
-   DJANGO_SERVER_EMAIL=reedkiln@library.utoronto.ca
-   DJANGO_DEFAULT_FROM_EMAIL=reedkiln@library.utoronto.ca
+   DJANGO_ADMINS=("eREED Admin", "reeduoft@gmail.com")
+   DJANGO_SERVER_EMAIL=reeduoft@gmail.com
+   DJANGO_DEFAULT_FROM_EMAIL=reeduoft@gmail.com
    # Use a strong and unique key in production
    DJANGO_SECRET_KEY=generate_secret_key
 
