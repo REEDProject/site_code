@@ -1,4 +1,4 @@
-name: reed
+name: reed${INSTANCE:-}
 
 services:
   traefik:

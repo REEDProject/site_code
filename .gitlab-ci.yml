@@ -22,6 +22,7 @@ image: alpine
       ssh ${SSH_USER}@${HOST}
       "
         cd ${DEPLOY_DIR} &&
+        INSTANCE=${DEPLOY_INSTANCE} \
         docker compose up -d --build --no-deps --force-recreate --remove-orphans
       "
 
@@ -32,6 +33,7 @@ deploy_to_server:
   stage: deploy
   before_script:
     - DEPLOY_DIR=/project/prod
+    - DEPLOY_INSTANCE=prod
 
     - "command -v ssh-agent >/dev/null || ( apk add --no-cache --update openssh )"
     - eval $(ssh-agent -s)
