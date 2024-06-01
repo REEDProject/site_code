@@ -19,7 +19,7 @@ RUN apt-get update \
   # psycopg2 dependencies
   libpq-dev \
   # gdal libraries
-  binutils libproj-dev gdal-bin \
+  binutils libproj-dev gdal-bin libsqlite3-mod-spatialite \
   # lxml depedndencies
   # libxml2-dev libxslt-dev python-dev \
   # python3-lxml \
