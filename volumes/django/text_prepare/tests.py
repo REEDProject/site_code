@@ -782,13 +782,13 @@ Text
         self._check_conversion(text, expected)
 
     def test_square_brackets(self):
-        text = "Literal [[."
+        text = "Literal @DOUBLE_SQUARE_OPEN."
         expected = "Literal [."
         self._check_conversion(text, expected)
-        text = "Literal ]]."
+        text = "Literal @DOUBLE_SQUARE_CLOSE."
         expected = "Literal ]."
         self._check_conversion(text, expected)
-        text = "[[ no del here ]]"
+        text = "@DOUBLE_SQUARE_OPEN no del here @DOUBLE_SQUARE_CLOSE"
         expected = "[ no del here ]"
         self._check_conversion(text, expected)
 
