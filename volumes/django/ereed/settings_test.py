@@ -63,10 +63,14 @@ MIGRATION_MODULES = DisableMigrations()
 
 # Optionally disable middleware that you do not need during testing
 MIDDLEWARE = [
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
-    "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
 # Use a simpler email backend for testing
 EMAIL_BACKEND = "django.core.mail.backends.locmem.EmailBackend"
+
+LOGIN_URL = ACCOUNT_LOGIN_URL
