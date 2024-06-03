@@ -37,6 +37,7 @@ services:
       - ${DJANGO_PORT:-8000}
     volumes:
       - ./volumes/django:/app
+      - ./volumes/eats_exports:/exports
     env_file:
       - .env
     command:
