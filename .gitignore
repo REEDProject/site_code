@@ -39,6 +39,7 @@ volumes/kiln/sw/jetty/temp/
 .cache
 .env*
 docker-compose.override.yml
+volumes/eats_exports
 volumes/postgres_*
 volumes/traefik/.htpasswd
 volumes/traefik/acme
