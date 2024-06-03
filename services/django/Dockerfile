@@ -1,6 +1,7 @@
 FROM python:3.8-slim-bookworm
 
 ARG APP_HOME=/app
+ARG EXPORTS_HOME=/exports
 
 ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -39,6 +40,7 @@ RUN sed -i 's/\r$//g' /entrypoint
 RUN chmod +x /entrypoint
 
 RUN chown -R django:django ${APP_HOME}
+RUN chown -R django:django ${EXPORTS_HOME}
 
 USER django
 
