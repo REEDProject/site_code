@@ -97,7 +97,7 @@ Before you begin, ensure you have the following installed on your system:
 
    Use Docker Compose to build and start the services:
 
-   ```bash
+   ```sh
    docker compose up --build
    ```
 
@@ -111,7 +111,7 @@ Before you begin, ensure you have the following installed on your system:
    Get a copy of the database data and make sure it is compressed with `gzip`,
    place the file in `volumes/postgres_backups` and run the command:
 
-   ```bash
+   ```sh
    docker compose exec postgres restore db_backup_name.sql.gz
    ```
 
@@ -144,6 +144,19 @@ these steps:
 
 ## Server deployment
 
+> **Note:** When running Docker Compose commands on the server, use the `-p`
+> flag to specify which instance to run the command on. It helps distinguish
+> between multiple deployments, such as development, staging, and production
+> environments, by providing a unique name for each instance. This ensures that
+> Docker Compose commands target the correct set of services and configurations
+> specific to that instance.
+>
+> For example to run the database restore command on the production instance:
+>
+> ```sh
+> docker compose -p reedprod exec postgres restore db_backup_name.sql.gz
+> ```
+
 Server deployment for the is automated using GitLab CI. The process involves
 running a pipeline that performs the following steps:
 
@@ -168,3 +181,27 @@ running a pipeline that performs the following steps:
 This automated process, runs on commit/push to the repository, ensures that the
 latest code is deployed efficiently and consistently to the server. **At the
 moment only commits to the docker branch will get deployed.**
+
+## Backups and data export
+
+To create backups and export EATS data, follow these instructions:
+
+### Backups
+
+To create a backup of the PostgreSQL database, use the following command:
+
+```sh
+docker compose exec postgres backup
+```
+
+Backups are stored in the `/volumes/postgres_backups` directory.
+
+### Exporting data from EATS
+
+To export EATS entity data, use the following command:
+
+```sh
+docker compose exec django python manage.py eats_export_entities
+```
+
+Exported data is stored in the `/volumes/eats_exports` directory.
