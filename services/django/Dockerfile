@@ -40,7 +40,8 @@ RUN sed -i 's/\r$//g' /entrypoint
 RUN chmod +x /entrypoint
 
 RUN chown -R django:django ${APP_HOME}
-RUN chown -R django:django ${EXPORTS_HOME}
+RUN mkdir -p ${EXPORTS_HOME} \
+  && chown -R django:django ${EXPORTS_HOME}
 
 USER django
 
