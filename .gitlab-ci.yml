@@ -36,7 +36,7 @@ image: alpine
       ssh ${SSH_USER}@${HOST}
       "
         cd ${DEPLOY_DIR} &&
-        echo ${HOST_ENV} | base64 -d > .env &&
+        echo ${INSTANCE_ENV} | base64 -d > .env &&
         mkdir -p volumes/traefik &&
         echo ${HTPASSWD} | base64 -d > volumes/traefik/.htpasswd
       "
@@ -54,11 +54,12 @@ image: alpine
 stages:
   - deploy
 
-deploy_to_server:
+deploy_to_dev:
   stage: deploy
   before_script:
-    - DEPLOY_DIR=/project/prod
-    - DEPLOY_INSTANCE=prod
+    - DEPLOY_DIR=/project/dev
+    - DEPLOY_INSTANCE=dev
+    - INSTANCE_ENV=${HOST_ENV_DEV}
     - !reference [.prepare:ssh, before_script]
   script:
     - !reference [.git:pull, script]
@@ -66,4 +67,19 @@ deploy_to_server:
     - !reference [.compose:up, script]
 
   rules:
-    - if: $CI_COMMIT_BRANCH == "docker"
+    - if: $CI_COMMIT_BRANCH == "master"
+
+deploy_to_prod:
+  stage: deploy
+  before_script:
+    - DEPLOY_DIR=/project/prod
+    - DEPLOY_INSTANCE=prod
+    - INSTANCE_ENV=${HOST_ENV_PROD}
+    - !reference [.prepare:ssh, before_script]
+  script:
+    - !reference [.git:pull, script]
+    - !reference [.prepare:env, script]
+    - !reference [.compose:up, script]
+
+  rules:
+    - if: $CI_COMMIT_BRANCH == "release"
