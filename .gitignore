@@ -29,11 +29,11 @@ staticfiles/
 local_settings.py
 
 # Kiln
-volumes/kiln/sw/jetty/logs/
-volumes/kiln/webapps/ROOT/WEB-INF/logs/
-volumes/kiln/webapps/openrdf-sesame/app_dir/
-volumes/kiln/webapps/solr/data/
-volumes/kiln/sw/jetty/temp/
+kiln/sw/jetty/logs/
+kiln/webapps/ROOT/WEB-INF/logs/
+kiln/webapps/openrdf-sesame/app_dir/
+kiln/webapps/solr/data/
+kiln/sw/jetty/temp/
 
 # Docker
 .cache

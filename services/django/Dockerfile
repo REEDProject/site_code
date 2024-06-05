@@ -28,7 +28,7 @@ RUN apt-get update \
   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
   && rm -rf /var/lib/apt/lists/*
 
-COPY ./volumes/django/requirements.txt /requirements/
+COPY ./django/requirements.txt /requirements/
 RUN pip install -U pip \
   && pip install -r /requirements/requirements.txt
 

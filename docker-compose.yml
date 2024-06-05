@@ -23,8 +23,8 @@ services:
     expose:
       - ${TOMCAT_PORT:-8080}
     volumes:
-      - ./volumes/kiln/webapps:/usr/local/tomcat/webapps
-      - ./volumes/kiln/webapps/solr/conf/solr.xml:/usr/local/tomcat/conf/Catalina/localhost/solr.xml:ro
+      - ./kiln/webapps:/usr/local/tomcat/webapps
+      - ./kiln/webapps/solr/conf/solr.xml:/usr/local/tomcat/conf/Catalina/localhost/solr.xml:ro
     environment:
       CATALINA_OPTS: "${TOMCAT_CATALINA_OPTS:--Xmx2048m}"
 
@@ -36,7 +36,7 @@ services:
     expose:
       - ${DJANGO_PORT:-8000}
     volumes:
-      - ./volumes/django:/app
+      - ./django:/app
       - ./volumes/eats_exports:/exports
     env_file:
       - .env
@@ -63,8 +63,8 @@ services:
     expose:
       - ${NGINX_PORT:-80}
     volumes:
-      - ./volumes/django/staticfiles:/usr/share/nginx/static:ro
-      - ./volumes/kiln/webapps/ROOT/assets:/usr/share/nginx/assets:ro
+      - ./django/staticfiles:/usr/share/nginx/static:ro
+      - ./kiln/webapps/ROOT/assets:/usr/share/nginx/assets:ro
 
   postgres:
     build:
