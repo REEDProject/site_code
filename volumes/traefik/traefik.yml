@@ -1,0 +1,84 @@
+log:
+  level: INFO
+
+entryPoints:
+  web:
+    address: ":80"
+    http:
+      redirections:
+        entryPoint:
+          to: web-secure
+
+  web-secure:
+    address: ":443"
+
+certificatesResolvers:
+  letsencrypt:
+    acme:
+      email: reeduoft@gmail.com
+      storage: /etc/traefik/acme/acme.json
+      httpChallenge:
+        # used during the challenge
+        entryPoint: web
+
+http:
+  routers:
+    to-tomcat:
+      rule: Host(`ereed.org`)
+      service: tomcat
+      tls:
+        certResolver: letsencrypt
+
+    to-tomcat-admin:
+      rule: Host(`ereed.org`) && PathPrefix(`/admin`)
+      middlewares:
+        - basic-auth
+      service: tomcat
+      tls:
+        certResolver: letsencrypt
+
+    to-django:
+      rule: Host(`ereed.org`) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare)/`)
+      middlewares:
+        - csrf
+      service: django
+      tls:
+        certResolver: letsencrypt
+
+    to-nginx:
+      rule: Host(`ereed.org`) && PathRegexp(`^/(assets/|solr/|static/|robots.txt)`)
+      middlewares:
+        - csrf
+      service: nginx
+      tls:
+        certResolver: letsencrypt
+
+  middlewares:
+    basic-auth:
+      basicAuth:
+        usersFile: /etc/traefik/.htpasswd
+
+    csrf:
+      headers:
+        hostsProxyHeaders: ["X-CSRFToken"]
+
+  services:
+    tomcat:
+      loadBalancer:
+        servers:
+          - url: http://tomcat:8080
+
+    django:
+      loadBalancer:
+        servers:
+          - url: http://django:8000
+
+    nginx:
+      loadBalancer:
+        servers:
+          - url: http://nginx:80
+
+providers:
+  file:
+    filename: "/etc/traefik/traefik.yml"
+    watch: true

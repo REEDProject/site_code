@@ -1,0 +1,18 @@
+services:
+  traefik:
+    image: traefik:3.0
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./volumes/traefik/traefik.local.yml:/etc/traefik/traefik.yml:ro
+      - ./volumes/traefik/acme:/etc/traefik/acme
+      - ./volumes/traefik/.htpasswd:/etc/traefik/.htpasswd:ro
+    ports:
+      - ${TRAEFIK_HTTP_PORT:-80}:80
+    depends_on:
+      - tomcat
+      - django
+      - nginx
+
+  django:
+    command: ["/usr/local/bin/python", "manage.py", "runserver", "0.0.0.0:8000"]

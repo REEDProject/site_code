@@ -469,6 +469,9 @@
   <store logger="core.store">
     <parameter name="maxobjects" value="${store.maxobjects}"/>
     <parameter name="use-cache-directory" value="true"/>
+    <parameter name="eternal" value="false"/>
+    <parameter name="timeToLiveSeconds" value="0"/>
+    <parameter name="timeToIdleSeconds" value="3600"/>
   </store>
 
   <!--+
