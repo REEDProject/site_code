@@ -186,7 +186,7 @@ ACCOUNT_LOGIN_URL = "/accounts/login/"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = not env.bool("PRODUCTION", False)
 
-ALLOWED_HOSTS = env.list("VIRTUAL_HOSTS", default=[])
+ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=[])
 
 ADMINS = env("DJANGO_ADMINS", default=[])
 SERVER_EMAIL = env("DJANGO_SERVER_EMAIL", default="noreply@localhost")
