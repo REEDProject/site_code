@@ -67,12 +67,15 @@ Before you begin, ensure you have the following installed on your system:
    # Set to true in production environments
    PRODUCTION=false
 
+   # Host name
+   TRAEFIK_HOST=ereed.org
    # HTTP ports for the reverse proxy
    TRAEFIK_HTTP_PORT=80
    TRAEFIK_HTTPS_PORT=443
 
    # Django settings
    DJANGO_ADMINS=("eREED Admin", "reeduoft@gmail.com")
+   DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
    DJANGO_SERVER_EMAIL=reeduoft@gmail.com
    DJANGO_DEFAULT_FROM_EMAIL=reeduoft@gmail.com
    # Use a strong and unique key in production
@@ -85,9 +88,6 @@ Before you begin, ensure you have the following installed on your system:
    DATABASE_DB=database_name
    DATABASE_USER=database_user
    DATABASE_PASSWORD=database_pwd
-
-   # Hosts settings
-   VIRTUAL_HOSTS=localhost,127.0.0.1
    ```
 
    Ensure to replace database_name, database_user, and database_pwd with your
@@ -162,14 +162,17 @@ running a pipeline that performs the following steps:
 
 1. **Configure CI/CD variables**:
 
-   - **HTPASSWD**: Passwords, masked and base64 encoded.
-   - **HOST**: The server hostname or IP address.
-   - **HOST_ENV**: The server environment variables, masked and base64 encoded.
-   - **SSH_KNOWN_HOSTS**: A file variable containing the known hosts for SSH
+   - `HTPASSWD`: Passwords, masked and base64 encoded.
+   - `HOST`: The server hostname or IP address.
+   - `HOST_ENV_DEV`: The development server environment variables, masked and
+     base64 encoded.
+   - `HOST_ENV_PROD`: The production server environment variables, masked and
+     base64 encoded.
+   - `SSH_KNOWN_HOSTS`: A file variable containing the known hosts for SSH
      connections.
-   - **SSH_PRIVATE_KEY**: A file variable containing the private key for SSH
+   - `SSH_PRIVATE_KEY`: A file variable containing the private key for SSH
      authentication.
-   - **SSH_USER**: The username used for SSH connections.
+   - `SSH_USER`: The username used for SSH connections.
 
 1. **SSH into the project server**: The pipeline creates a secure SSH connection
    to the project server using the provided SSH variables.
@@ -205,3 +208,16 @@ docker compose exec django python manage.py eats_export_entities
 ```
 
 Exported data is stored in the `/volumes/eats_exports` directory.
+
+## File Permissions
+
+The following directories require more permissive file permissions on the
+servers to ensure proper functionality and accessibility:
+
+- `django/staticfiles`: This directory stores static files for the Django
+  application, such as CSS, JavaScript, and image files.
+- `kiln/webapps/ROOT/WEB-INF/logs`: This directory contains log files for the
+  Kiln web application.
+- `volumes/eats_exports/`: This directory is used for exporting files from EATS.
+
+Ensure that the permissions are configured to balance accessibility and security, avoiding overly permissive settings that could introduce vulnerabilities.
