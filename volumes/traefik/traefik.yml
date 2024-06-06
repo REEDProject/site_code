@@ -24,13 +24,13 @@ certificatesResolvers:
 http:
   routers:
     to-tomcat:
-      rule: Host(`ereed.org`)
+      rule: Host(`{{env "TRAEFIK_HOST"}}`)
       service: tomcat
       tls:
         certResolver: letsencrypt
 
     to-tomcat-admin:
-      rule: Host(`ereed.org`) && PathPrefix(`/admin`)
+      rule: Host(`{{env "TRAEFIK_HOST"}}`) && PathPrefix(`/admin`)
       middlewares:
         - basic-auth
       service: tomcat
@@ -38,7 +38,7 @@ http:
         certResolver: letsencrypt
 
     to-django:
-      rule: Host(`ereed.org`) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare)/`)
+      rule: Host(`{{env "TRAEFIK_HOST"}}`) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare)/`)
       middlewares:
         - csrf
       service: django
@@ -46,7 +46,7 @@ http:
         certResolver: letsencrypt
 
     to-nginx:
-      rule: Host(`ereed.org`) && PathRegexp(`^/(assets/|solr/|static/|robots.txt)`)
+      rule: Host(`{{env "TRAEFIK_HOST"}}`) && PathRegexp(`^/(assets/|solr/|static/|robots.txt)`)
       middlewares:
         - csrf
       service: nginx
