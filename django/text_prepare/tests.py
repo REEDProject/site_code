@@ -4,40 +4,63 @@ from lxml import etree
 import pyparsing as pp
 
 from .document import (
-    AB_TO_P_XSLT_PATH, ADD_AB_XSLT_PATH, ADD_HEADER_XSLT_PATH,
-    ADD_ID_XSLT_PATH, Document, MASSAGE_FOOTNOTE_XSLT_PATH,
-    REMOVE_AB_XSLT_PATH, SORT_RECORDS_XSLT_PATH, TIDY_BIBLS_XSLT_PATH)
+    AB_TO_P_XSLT_PATH,
+    ADD_AB_XSLT_PATH,
+    ADD_HEADER_XSLT_PATH,
+    ADD_ID_XSLT_PATH,
+    Document,
+    MASSAGE_FOOTNOTE_XSLT_PATH,
+    REMOVE_AB_XSLT_PATH,
+    SORT_RECORDS_XSLT_PATH,
+    TIDY_BIBLS_XSLT_PATH,
+)
 from .document_parser import DocumentParser
 
 
-class TestDocumentConverter (TestCase):
+class TestDocumentConverter(TestCase):
 
-    vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u']
+    vowels = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"]
 
     def setUp(self):
         self.parser = DocumentParser()
 
-    def _check_conversion(self, text, expected, doc_desc=True, heading=True,
-                          subheading=True, reset_parser=True):
+    def _check_conversion(
+        self,
+        text,
+        expected,
+        doc_desc=True,
+        heading=True,
+        subheading=True,
+        reset_parser=True,
+    ):
         if subheading:
-            text = '@w\\f 124 {{(19 November)}}\\!\n' + text
-            expected = '''<div xml:lang="lat" type="transcription">
+            text = "@w\\f 124 {{(19 November)}}\\!\n" + text
+            expected = (
+                """<div xml:lang="lat" type="transcription">
 <div>
 <head>f 124 <supplied>(19 November)</supplied></head>
 <pb n="124" type="folio" />
-''' + expected + '''
+"""
+                + expected
+                + """
 </div>
-</div>'''
+</div>"""
+            )
         if heading:
-            text = '@h\\BPA!1532!lat\\!\n' + text
-            expected = '''<text type="record">
+            text = "@h\\BPA!1532!lat\\!\n" + text
+            expected = (
+                """<text type="record">
 <body>
 <head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
-''' + expected + '''
+"""
+                + expected
+                + """
 </body>
-</text>'''
+</text>"""
+            )
         if doc_desc:
-            text = '''@md\\Prose document description.!
+            text = (
+                """@md\\Prose document description.!
 
 It spans multiple paragraphs.!
 
@@ -45,8 +68,10 @@ It spans multiple paragraphs.!
 @sl\\Reading@sl/ @sr\\Berkshire Record Office@sr/
 @ss\\D/A2/c.54@ss/
 @st\\Epiphany, 1609@st/; this is the technical paragraph. Latin and English; paper; 0+389+0 leaves.@md/\n
-@pc\\@ab\\BPA@ab/ @ex\\Boring Place Anyway@ex/ @ct\\Staffordshire@ct/@pc/''' + text
-        actual = ''.join(self.parser.parse(text).record)
+@pc\\@ab\\BPA@ab/ @ex\\Boring Place Anyway@ex/ @ct\\Staffordshire@ct/@pc/"""
+                + text
+            )
+        actual = "".join(self.parser.parse(text).record)
         self.assertEqual(actual, expected)
         # Reset the parser to not fall foul of source code reuse.
         if reset_parser:
@@ -55,124 +80,130 @@ It spans multiple paragraphs.!
     def test_acute(self):
         for vowel in self.vowels:
             text = "b@'{}t".format(vowel)
-            expected = 'b{}\N{COMBINING ACUTE ACCENT}t'.format(vowel)
+            expected = "b{}\N{COMBINING ACUTE ACCENT}t".format(vowel)
             self._check_conversion(text, expected)
 
     def test_AE(self):
-        text = 'Vita @AEterna'
-        expected = 'Vita \N{LATIN CAPITAL LETTER AE}terna'
+        text = "Vita @AEterna"
+        expected = "Vita \N{LATIN CAPITAL LETTER AE}terna"
         self._check_conversion(text, expected)
 
     def test_ae(self):
-        text = 'vita @aeterna'
-        expected = 'vita \N{LATIN SMALL LETTER AE}terna'
+        text = "vita @aeterna"
+        expected = "vita \N{LATIN SMALL LETTER AE}terna"
         self._check_conversion(text, expected)
 
     def test_blank(self):
-        text = 'some {{(blank)}} text'
-        expected = 'some <space /> text'
+        text = "some {{(blank)}} text"
+        expected = "some <space /> text"
         self._check_conversion(text, expected)
 
     def test_capitulum(self):
-        text = '@Ca'
-        expected = '\N{CAPITULUM}a'
+        text = "@Ca"
+        expected = "\N{CAPITULUM}a"
         self._check_conversion(text, expected)
 
     def test_caret(self):
-        text = 'a^e'
-        expected = 'a\N{CARET}e'
+        text = "a^e"
+        expected = "a\N{CARET}e"
         self._check_conversion(text, expected)
 
     def test_cedilla(self):
-        text = 'gar@?con'
-        expected = 'garc\N{COMBINING CEDILLA}on'
+        text = "gar@?con"
+        expected = "garc\N{COMBINING CEDILLA}on"
         self._check_conversion(text, expected)
 
     def test_cell_centre(self):
-        text = '<t><r><c>Some</c><cc>text</cc></r></t>'
-        expected = '<table><row><cell>Some</cell><cell rend="center">text</cell></row></table>'
+        text = "<t><r><c>Some</c><cc>text</cc></r></t>"
+        expected = (
+            '<table><row><cell>Some</cell><cell rend="center">text</cell></row></table>'
+        )
         self._check_conversion(text, expected)
 
     def test_cell_right(self):
-        text = '<t><r><c>Some</c><cr>text</cr></r></t>'
-        expected = '<table><row><cell>Some</cell><cell rend="right">text</cell></row></table>'
+        text = "<t><r><c>Some</c><cr>text</cr></r></t>"
+        expected = (
+            '<table><row><cell>Some</cell><cell rend="right">text</cell></row></table>'
+        )
         self._check_conversion(text, expected)
 
     def test_centred(self):
-        text = 'some @m\\centred@m/ text'
+        text = "some @m\\centred@m/ text"
         expected = 'some <ab rend="center">centred</ab> text'
         self._check_conversion(text, expected)
 
     def test_circumflex(self):
         for vowel in self.vowels:
-            text = 'b@^{}t'.format(vowel)
-            expected = 'b{}\N{COMBINING CIRCUMFLEX ACCENT}t'.format(vowel)
+            text = "b@^{}t".format(vowel)
+            expected = "b{}\N{COMBINING CIRCUMFLEX ACCENT}t".format(vowel)
             self._check_conversion(text, expected)
 
     def test_closer(self):
-        text = '@cl\\TTFN, Jamie@cl/'
-        expected = '<closer>TTFN, Jamie</closer>'
+        text = "@cl\\TTFN, Jamie@cl/"
+        expected = "<closer>TTFN, Jamie</closer>"
         self._check_conversion(text, expected)
 
     def test_collation_note(self):
-        text = 'Some text@c\\text: foo@c/ content'
+        text = "Some text@c\\text: foo@c/ content"
         expected = 'Some text<note type="collation">text: foo</note> content'
         self._check_conversion(text, expected)
 
     def test_comment(self):
-        text = 'some @xc\\commented out@xc/ text'
-        expected = 'some <!-- commented out --> text'
+        text = "some @xc\\commented out@xc/ text"
+        expected = "some <!-- commented out --> text"
         self._check_conversion(text, expected)
 
     def test_damaged(self):
         for i in range(1, 5):
-            text = 'dam<{}> text'.format('.' * i)
-            expected = 'dam<damage><gap unit="chars" extent="{}" /></damage>' \
-                       ' text'.format(i)
+            text = "dam<{}> text".format("." * i)
+            expected = (
+                'dam<damage><gap unit="chars" extent="{}" /></damage>' " text".format(i)
+            )
             self._check_conversion(text, expected)
 
     def test_deleted(self):
-        text = 'some [deleted] text'
-        expected = 'some <del>deleted</del> text'
+        text = "some [deleted] text"
+        expected = "some <del>deleted</del> text"
         self._check_conversion(text, expected)
 
     def test_dot_over(self):
-        text = 'ove@.rdot'
-        expected = 'over\N{COMBINING DOT ABOVE}dot'
+        text = "ove@.rdot"
+        expected = "over\N{COMBINING DOT ABOVE}dot"
         self._check_conversion(text, expected)
 
     def test_dot_under(self):
-        text = 'unde@#rdot'
-        expected = 'under\N{COMBINING DOT BELOW}dot'
+        text = "unde@#rdot"
+        expected = "under\N{COMBINING DOT BELOW}dot"
         self._check_conversion(text, expected)
 
     def test_duplicate_source_codes_error(self):
         # Duplicate source codes should raise an error.
-        text = 'Test'
-        expected = 'Test'
+        text = "Test"
+        expected = "Test"
         self._check_conversion(text, expected, reset_parser=False)
-        text = 'Test'
-        expected = 'Test'
-        self.assertRaises(pp.ParseFatalException, self._check_conversion, text,
-                          expected)
+        text = "Test"
+        expected = "Test"
+        self.assertRaises(
+            pp.ParseFatalException, self._check_conversion, text, expected
+        )
 
     def test_ellipsis(self):
-        text = 'some ... text'
+        text = "some ... text"
         expected = 'some <gap reason="omitted" /> text'
         self._check_conversion(text, expected)
 
     def test_en_dash(self):
-        text = '1651--1653'
-        expected = '1651\N{EN DASH}1653'
+        text = "1651--1653"
+        expected = "1651\N{EN DASH}1653"
         self._check_conversion(text, expected)
 
     def test_end_notes(self):
-        text = '''@h\\BPA!1532!eng\\!
+        text = """@h\\BPA!1532!eng\\!
 @w\\f 124 {{(19 November)}}\\!
 Test.
 @en\\A note.@en/
-'''
-        expected = '''<text type="record">
+"""
+        expected = """<text type="record">
 <body>
 <head><rs>Staffordshire</rs>, <rs>Boring Place Anyway</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
 <div xml:lang="eng" type="transcription">
@@ -187,83 +218,83 @@ Test.
 A note.
 </div>
 </body>
-</text>'''
+</text>"""
         self._check_conversion(text, expected, heading=False, subheading=False)
 
     def test_ENG(self):
-        text = '@Nati'
-        expected = '\N{LATIN CAPITAL LETTER ENG}ati'
+        text = "@Nati"
+        expected = "\N{LATIN CAPITAL LETTER ENG}ati"
         self._check_conversion(text, expected)
 
     def test_eng(self):
-        text = 'Fi@nal'
-        expected = 'Fi\N{LATIN SMALL LETTER ENG}al'
+        text = "Fi@nal"
+        expected = "Fi\N{LATIN SMALL LETTER ENG}al"
         self._check_conversion(text, expected)
 
     def test_eth(self):
-        text = 'Gala@don'
-        expected = 'Gala\N{LATIN SMALL LETTER ETH}on'
+        text = "Gala@don"
+        expected = "Gala\N{LATIN SMALL LETTER ETH}on"
         self._check_conversion(text, expected)
 
     def test_exclamation(self):
-        text = 'Zounds@!'
-        expected = 'Zounds!'
+        text = "Zounds@!"
+        expected = "Zounds!"
         self._check_conversion(text, expected)
 
     def test_exdented(self):
-        text = '@g\\Exdented block of text.@g/'
+        text = "@g\\Exdented block of text.@g/"
         expected = '<ab type="exdent">Exdented block of text.</ab>'
         self._check_conversion(text, expected)
 
     def test_expansion(self):
-        text = 'some {{expanded}} text'
-        expected = 'some <ex>expanded</ex> text'
+        text = "some {{expanded}} text"
+        expected = "some <ex>expanded</ex> text"
         self._check_conversion(text, expected)
 
     def test_footnote(self):
-        text = '@f\\our Churche: {{St Nicholas}}@f/'
+        text = "@f\\our Churche: {{St Nicholas}}@f/"
         expected = '<note type="foot">our Churche: <ex>St Nicholas</ex></note>'
         self._check_conversion(text, expected)
 
     def test_grave(self):
         for vowel in self.vowels:
             text = "b@,{}t".format(vowel)
-            expected = 'b{}\N{COMBINING GRAVE ACCENT}t'.format(vowel)
+            expected = "b{}\N{COMBINING GRAVE ACCENT}t".format(vowel)
             self._check_conversion(text, expected)
 
     def test_illegible(self):
-        text = 'an@1gi1 there?'
+        text = "an@1gi1 there?"
         expected = 'an<gap extent="1" reason="illegible" unit="chars" />1 there?'
         self._check_conversion(text, expected)
-        text = 'i@18gin'
+        text = "i@18gin"
         expected = 'i<gap extent="18" reason="illegible" unit="chars" />n'
         self._check_conversion(text, expected)
 
     def test_indented(self):
-        text = '@p\\Indented block of text.@p/'
+        text = "@p\\Indented block of text.@p/"
         expected = '<ab type="indent">Indented block of text.</ab>'
         self._check_conversion(text, expected)
 
     def test_interlineation_above(self):
-        text = 'Some @a\\interlinearly above@a/ text'
+        text = "Some @a\\interlinearly above@a/ text"
         expected = 'Some <add place="above">interlinearly above</add> text'
         self._check_conversion(text, expected)
 
     def test_interlineation_below(self):
-        text = 'Some @b\\interlinearly below@b/ text'
+        text = "Some @b\\interlinearly below@b/ text"
         expected = 'Some <add place="below">interlinearly below</add> text'
         self._check_conversion(text, expected)
 
     def test_interpolation(self):
-        text = 'Some @i\\interpolated@i/ text'
-        expected = 'Some <handShift />interpolated<handShift /> text'
+        text = "Some @i\\interpolated@i/ text"
+        expected = "Some <handShift />interpolated<handShift /> text"
         self._check_conversion(text, expected)
-        nested_text = 'Some @i\\@i\\really@i/ interpolated@i/ text'
-        nested_expected = 'Some <handShift /><handShift />really<handShift /> interpolated<handShift /> text'
+        nested_text = "Some @i\\@i\\really@i/ interpolated@i/ text"
+        nested_expected = "Some <handShift /><handShift />really<handShift /> interpolated<handShift /> text"
         self._check_conversion(nested_text, nested_expected)
 
     def test_italics(self):
-        text = 'Some @it\\italic@it/ text'
+        text = "Some @it\\italic@it/ text"
         expected = 'Some <hi rend="italic">italic</hi> text'
         self._check_conversion(text, expected)
 
@@ -273,24 +304,39 @@ A note.
         self._check_conversion(text, expected)
 
     def test_lang_generic(self):
-        langs = ('ang', 'cnx', 'cor', 'cym', 'eng', 'fra', 'gla', 'gmh',
-                 'gml', 'grc', 'ita', 'lat', 'por', 'spa', 'wlm', 'xno')
-        text = 'Native tones @{}\\Foreign gabble@{}/ judge'
+        langs = (
+            "ang",
+            "cnx",
+            "cor",
+            "cym",
+            "eng",
+            "fra",
+            "gla",
+            "gmh",
+            "gml",
+            "grc",
+            "ita",
+            "lat",
+            "por",
+            "spa",
+            "wlm",
+            "xno",
+        )
+        text = "Native tones @{}\\Foreign gabble@{}/ judge"
         expected = 'Native tones <foreign xml:lang="{}">Foreign gabble</foreign> judge'
         for lang in langs:
-            self._check_conversion(text.format(lang, lang),
-                                   expected.format(lang))
+            self._check_conversion(text.format(lang, lang), expected.format(lang))
 
     def test_left_marginale(self):
-        text = 'Hark, a @l\\left marginale note@l/ appears'
+        text = "Hark, a @l\\left marginale note@l/ appears"
         expected = 'Hark, a <note type="marginal" place="margin_left">left marginale note</note> appears'
         self._check_conversion(text, expected)
 
     def test_line_group(self):
-        text = '@lg\\@lni\\Foo@lni/@ln\\Bar@ln/@lg/'
+        text = "@lg\\@lni\\Foo@lni/@ln\\Bar@ln/@lg/"
         expected = '<lg><l rend="indent">Foo</l><l>Bar</l></lg>'
         self._check_conversion(text, expected)
-        text = '''
+        text = """
 @lg\\
   @lg\\
     @lni\\Stanza 1, line 1, indented@lni/
@@ -299,24 +345,24 @@ A note.
   @lg\\
     @lni\\Stanza 2, line 1, indented@lni/
   @lg/
-@lg/'''
+@lg/"""
         expected = '\n<lg><lg><l rend="indent">Stanza 1, line 1, indented</l><l>Stanza 1, line 2</l></lg><lg><l rend="indent">Stanza 2, line 1, indented</l></lg></lg>'
         self._check_conversion(text, expected)
 
     def test_list(self):
-        text = '@ul\\ @li\\List item@li/ @li\\Another@li/ @ul/'
-        expected = '<list><item>List item</item><item>Another</item></list>'
+        text = "@ul\\ @li\\List item@li/ @li\\Another@li/ @ul/"
+        expected = "<list><item>List item</item><item>Another</item></list>"
         self._check_conversion(text, expected)
 
     def test_macron(self):
         for vowel in self.vowels:
-            text = 'b@-{}t'.format(vowel)
-            expected = 'b{}\N{COMBINING MACRON}t'.format(vowel)
+            text = "b@-{}t".format(vowel)
+            expected = "b{}\N{COMBINING MACRON}t".format(vowel)
             self._check_conversion(text, expected)
 
     def test_ms_doc_desc(self):
         # No prose paragraph.
-        text = '''@md\\@sc\\ABCDEF@sc/
+        text = """@md\\@sc\\ABCDEF@sc/
         @sh\\Heading@sh/
         @sl\\Bognor Regis@sl/
         @sr\\Boris's Borough Books & Records@sr/
@@ -326,8 +372,8 @@ A note.
         @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/@pc/
 @h\\ABC!1532!eng\\!
 @w\\f 124 {{(19 November)}}\\!
-Test.'''
-        expected = '''<text type="record">
+Test."""
+        expected = """<text type="record">
 <body>
 <head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
 <div xml:lang="eng" type="transcription">
@@ -338,11 +384,12 @@ Test.
 </div>
 </div>
 </body>
-</text>'''
-        self._check_conversion(text, expected, doc_desc=False, heading=False,
-                               subheading=False)
-        actual_desc = ''.join(self.parser.parse(text).doc_desc)
-        expected_desc = '''<msDesc xml:id="ABCDEF">
+</text>"""
+        self._check_conversion(
+            text, expected, doc_desc=False, heading=False, subheading=False
+        )
+        actual_desc = "".join(self.parser.parse(text).doc_desc)
+        expected_desc = """<msDesc xml:id="ABCDEF">
 <msIdentifier>
 <settlement>Bognor Regis</settlement>
 <repository>Boris's Borough Books &amp; Records</repository>
@@ -350,10 +397,10 @@ Test.
 <msName>Heading</msName>
 </msIdentifier>
 <ab type="techDesc"><date>1609</date> Technical paragraph.</ab>
-</msDesc>'''
+</msDesc>"""
         self.assertEqual(actual_desc, expected_desc)
         # Prose paragraph.
-        text = '''@md\\
+        text = """@md\\
         Prose paragraph.
         @sc\\ABCDE1@sc/
         @sh\\Heading@sh/
@@ -365,8 +412,8 @@ Test.
         @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/@pc/
 @h\\ABC!1532!eng\\!
 @w\\f 124 {{(19 November)}}\\!
-Test.'''
-        expected = '''<text type="record">
+Test."""
+        expected = """<text type="record">
 <body>
 <head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDE1">ABCDE1</seg></head>
 <div xml:lang="eng" type="transcription">
@@ -377,11 +424,12 @@ Test.
 </div>
 </div>
 </body>
-</text>'''
-        self._check_conversion(text, expected, doc_desc=False, heading=False,
-                               subheading=False)
-        actual_desc = ''.join(self.parser.parse(text).doc_desc)
-        expected_desc = '''<msDesc xml:id="ABCDE1">
+</text>"""
+        self._check_conversion(
+            text, expected, doc_desc=False, heading=False, subheading=False
+        )
+        actual_desc = "".join(self.parser.parse(text).doc_desc)
+        expected_desc = """<msDesc xml:id="ABCDE1">
 <msIdentifier>
 <settlement>Bognor Regis</settlement>
 <repository>Boris's Borough Books &amp; Records</repository>
@@ -390,51 +438,51 @@ Test.
 </msIdentifier>
 <ab type="edDesc">Prose paragraph.</ab>
 <ab type="techDesc"><date>1609</date> Technical paragraph.</ab>
-</msDesc>'''
+</msDesc>"""
         self.assertEqual(actual_desc, expected_desc)
 
     def test_OE(self):
-        text = 'd@OEr'
-        expected = 'd\N{LATIN CAPITAL LIGATURE OE}r'
+        text = "d@OEr"
+        expected = "d\N{LATIN CAPITAL LIGATURE OE}r"
         self._check_conversion(text, expected)
 
     def test_oe(self):
-        text = 'd@oer'
-        expected = 'd\N{LATIN SMALL LIGATURE OE}r'
+        text = "d@oer"
+        expected = "d\N{LATIN SMALL LIGATURE OE}r"
         self._check_conversion(text, expected)
 
     def test_page_break(self):
-        text = '@w\\f 1\\!\nText that |crosses a page.'
-        expected = '''<div xml:lang="lat" type="transcription">
+        text = "@w\\f 1\\!\nText that |crosses a page."
+        expected = """<div xml:lang="lat" type="transcription">
 <div>
 <head>f 1</head>
 <pb n="1" type="folio" />
 Text that <pb />crosses a page.
 </div>
-</div>'''
+</div>"""
         self._check_conversion(text, expected, subheading=False)
 
     def test_paragraph(self):
-        text = '@P Lo, a paragraph.'
-        expected = '\N{PILCROW SIGN} Lo, a paragraph.'
+        text = "@P Lo, a paragraph."
+        expected = "\N{PILCROW SIGN} Lo, a paragraph."
         self._check_conversion(text, expected)
 
     def test_pound(self):
-        text = '@$20 thousand I never knew I had'
-        expected = '\N{POUND SIGN}20 thousand I never knew I had'
+        text = "@$20 thousand I never knew I had"
+        expected = "\N{POUND SIGN}20 thousand I never knew I had"
         self._check_conversion(text, expected)
 
     def test_print_doc_desc(self):
         # No prose paragraph.
-        text = '''@pd\\@sc\\ABCDE1@sc/
+        text = """@pd\\@sc\\ABCDE1@sc/
         @sh\\Heading@sh/
         Technical paragraph.
         @pd/
         @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/ @pc/
 @h\\ABC!1532!eng\\!
 @w\\f 124 {{(19 November)}}\\!
-Test.'''
-        expected = '''<text type="record">
+Test."""
+        expected = """<text type="record">
 <body>
 <head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDE1">ABCDE1</seg></head>
 <div xml:lang="eng" type="transcription">
@@ -445,17 +493,18 @@ Test.
 </div>
 </div>
 </body>
-</text>'''
-        self._check_conversion(text, expected, doc_desc=False, heading=False,
-                               subheading=False)
-        actual_desc = ''.join(self.parser.parse(text).doc_desc)
-        expected_desc = '''<bibl xml:id="ABCDE1">
+</text>"""
+        self._check_conversion(
+            text, expected, doc_desc=False, heading=False, subheading=False
+        )
+        actual_desc = "".join(self.parser.parse(text).doc_desc)
+        expected_desc = """<bibl xml:id="ABCDE1">
 <title type="edName">Heading</title>
 <note type="techDesc"><p>Technical paragraph.</p></note>
-</bibl>'''
+</bibl>"""
         self.assertEqual(actual_desc, expected_desc)
         # Prose paragraph.
-        text = '''@pd\\Prose paragraph.
+        text = """@pd\\Prose paragraph.
         @sc\\ABCDEF@sc/
         @sh\\Heading@sh/
         Technical paragraph.
@@ -463,8 +512,8 @@ Test.
         @pc\\ @ab\\ABC@ab/ @ex\\A Bland County@ex/ @ct\\Staffordshire@ct/ @pc/
 @h\\ABC!1532!eng\\!
 @w\\f 124 {{(19 November)}}\\!
-Test.'''
-        expected = '''<text type="record">
+Test."""
+        expected = """<text type="record">
 <body>
 <head><rs>Staffordshire</rs>, <rs>A Bland County</rs> <date when-iso="1532">1532</date> <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
 <div xml:lang="eng" type="transcription">
@@ -475,33 +524,53 @@ Test.
 </div>
 </div>
 </body>
-</text>'''
-        self._check_conversion(text, expected, doc_desc=False, heading=False,
-                               subheading=False)
-        actual_desc = ''.join(self.parser.parse(text).doc_desc)
-        expected_desc = '''<bibl xml:id="ABCDEF">
+</text>"""
+        self._check_conversion(
+            text, expected, doc_desc=False, heading=False, subheading=False
+        )
+        actual_desc = "".join(self.parser.parse(text).doc_desc)
+        expected_desc = """<bibl xml:id="ABCDEF">
 <title type="edName">Heading</title>
 <note type="edDesc"><p>Prose paragraph.</p></note>
 <note type="techDesc"><p>Technical paragraph.</p></note>
-</bibl>'''
+</bibl>"""
         self.assertEqual(actual_desc, expected_desc)
 
     def test_punctuation(self):
-        punctuation = ['.', ',', ';', ':', "'", '"', '(', ')', '*', '/', '#',
-                       '$', '%', '+', '-', '?', '–', '_', '=']
+        punctuation = [
+            ".",
+            ",",
+            ";",
+            ":",
+            "'",
+            '"',
+            "(",
+            ")",
+            "*",
+            "/",
+            "#",
+            "$",
+            "%",
+            "+",
+            "-",
+            "?",
+            "–",
+            "_",
+            "=",
+        ]
         for item in punctuation:
             text = item
             expected = item
             self._check_conversion(text, expected)
 
     def test_raised(self):
-        text = 'mid@*dot'
-        expected = 'mid\N{MIDDLE DOT}dot'
+        text = "mid@*dot"
+        expected = "mid\N{MIDDLE DOT}dot"
         self._check_conversion(text, expected)
 
     def test_record_heading(self):
-        base_input = '@h\\{place}!{year}!{lang}\\!\n@w\\Test\\!\nText'
-        base_expected = '''<text type="record">
+        base_input = "@h\\{place}!{year}!{lang}\\!\n@w\\Test\\!\nText"
+        base_expected = """<text type="record">
 <body>
 <head><rs>Staffordshire</rs>, <rs>{full_place}</rs> {date} <seg ana="taxon:ABCDEF">ABCDEF</seg></head>
 <div xml:lang="{lang}" type="transcription">
@@ -512,231 +581,308 @@ Text
 </div>
 </div>
 </body>
-</text>'''
-        data = {'lang': 'lat', 'place': 'BPA',
-                'date': '<date when-iso="1532">1532</date>', 'year': '1532',
-                'full_place': 'Boring Place Anyway'}
-        self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), heading=False,
-                               subheading=False)
-        data = {'lang': 'lat', 'place': 'BPA',
-                'date': '<date when-iso="1631">1630/1</date>',
-                'year': '1630/1', 'full_place': 'Boring Place Anyway'}
-        self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), heading=False,
-                               subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA',
-                'date': '<date from-iso="1630" to-iso="1631">1630-1</date>',
-                'year': '1630-1', 'full_place': 'Boring Place Anyway'}
-        self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), heading=False,
-                               subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA',
-                'date': '<date from-iso="1629" to-iso="1631">1629-31</date>',
-                'year': '1629-31', 'full_place': 'Boring Place Anyway'}
-        self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), heading=False,
-                               subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA',
-                'date': '<date from-iso="1630" to-iso="1632">1629/30-31/2</date>',
-                'year': '1629/30-31/2', 'full_place': 'Boring Place Anyway'}
-        self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), heading=False,
-                               subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA',
-                'date': '<date precision="low" when-iso="1631"><hi rend="italic">c</hi> 1631</date>',
-                'year': '@it\\c@it/ 1631', 'full_place': 'Boring Place Anyway'}
-        self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), heading=False,
-                               subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA',
-                'date': '<date from-iso="1630" precision="low" to-iso="1632"><hi rend="italic">c</hi> 1629/30-31/2</date>',
-                'year': '@it\\c@it/ 1629/30-31/2', 'full_place': 'Boring Place Anyway'}
-        self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), heading=False,
-                               subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA',
-                'date': '<date from-iso="1601" to-iso="1700">17th Century</date>',
-                'year': '17th Century', 'full_place': 'Boring Place Anyway'}
-        self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), heading=False,
-                               subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA',
-                'date': '<date when-iso="1600">1599/1600</date>',
-                'year': '1599/1600', 'full_place': 'Boring Place Anyway'}
-        self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), heading=False,
-                               subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA',
-                'date': '<date when-iso="0900">900</date>', 'year': '900',
-                'full_place': 'Boring Place Anyway'}
-        self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), heading=False,
-                               subheading=False)
-        data = {'lang': 'eng', 'place': 'BPA',
-                'date': 'Undated', 'year': 'Undated',
-                'full_place': 'Boring Place Anyway'}
-        self._check_conversion(base_input.format(**data),
-                               base_expected.format(**data), heading=False,
-                               subheading=False)
+</text>"""
+        data = {
+            "lang": "lat",
+            "place": "BPA",
+            "date": '<date when-iso="1532">1532</date>',
+            "year": "1532",
+            "full_place": "Boring Place Anyway",
+        }
+        self._check_conversion(
+            base_input.format(**data),
+            base_expected.format(**data),
+            heading=False,
+            subheading=False,
+        )
+        data = {
+            "lang": "lat",
+            "place": "BPA",
+            "date": '<date when-iso="1631">1630/1</date>',
+            "year": "1630/1",
+            "full_place": "Boring Place Anyway",
+        }
+        self._check_conversion(
+            base_input.format(**data),
+            base_expected.format(**data),
+            heading=False,
+            subheading=False,
+        )
+        data = {
+            "lang": "eng",
+            "place": "BPA",
+            "date": '<date from-iso="1630" to-iso="1631">1630-1</date>',
+            "year": "1630-1",
+            "full_place": "Boring Place Anyway",
+        }
+        self._check_conversion(
+            base_input.format(**data),
+            base_expected.format(**data),
+            heading=False,
+            subheading=False,
+        )
+        data = {
+            "lang": "eng",
+            "place": "BPA",
+            "date": '<date from-iso="1629" to-iso="1631">1629-31</date>',
+            "year": "1629-31",
+            "full_place": "Boring Place Anyway",
+        }
+        self._check_conversion(
+            base_input.format(**data),
+            base_expected.format(**data),
+            heading=False,
+            subheading=False,
+        )
+        data = {
+            "lang": "eng",
+            "place": "BPA",
+            "date": '<date from-iso="1630" to-iso="1632">1629/30-31/2</date>',
+            "year": "1629/30-31/2",
+            "full_place": "Boring Place Anyway",
+        }
+        self._check_conversion(
+            base_input.format(**data),
+            base_expected.format(**data),
+            heading=False,
+            subheading=False,
+        )
+        data = {
+            "lang": "eng",
+            "place": "BPA",
+            "date": '<date precision="low" when-iso="1631"><hi rend="italic">c</hi> 1631</date>',
+            "year": "@it\\c@it/ 1631",
+            "full_place": "Boring Place Anyway",
+        }
+        self._check_conversion(
+            base_input.format(**data),
+            base_expected.format(**data),
+            heading=False,
+            subheading=False,
+        )
+        data = {
+            "lang": "eng",
+            "place": "BPA",
+            "date": '<date from-iso="1630" precision="low" to-iso="1632"><hi rend="italic">c</hi> 1629/30-31/2</date>',
+            "year": "@it\\c@it/ 1629/30-31/2",
+            "full_place": "Boring Place Anyway",
+        }
+        self._check_conversion(
+            base_input.format(**data),
+            base_expected.format(**data),
+            heading=False,
+            subheading=False,
+        )
+        data = {
+            "lang": "eng",
+            "place": "BPA",
+            "date": '<date from-iso="1601" to-iso="1700">17th Century</date>',
+            "year": "17th Century",
+            "full_place": "Boring Place Anyway",
+        }
+        self._check_conversion(
+            base_input.format(**data),
+            base_expected.format(**data),
+            heading=False,
+            subheading=False,
+        )
+        data = {
+            "lang": "eng",
+            "place": "BPA",
+            "date": '<date when-iso="1600">1599/1600</date>',
+            "year": "1599/1600",
+            "full_place": "Boring Place Anyway",
+        }
+        self._check_conversion(
+            base_input.format(**data),
+            base_expected.format(**data),
+            heading=False,
+            subheading=False,
+        )
+        data = {
+            "lang": "eng",
+            "place": "BPA",
+            "date": '<date when-iso="0900">900</date>',
+            "year": "900",
+            "full_place": "Boring Place Anyway",
+        }
+        self._check_conversion(
+            base_input.format(**data),
+            base_expected.format(**data),
+            heading=False,
+            subheading=False,
+        )
+        data = {
+            "lang": "eng",
+            "place": "BPA",
+            "date": "Undated",
+            "year": "Undated",
+            "full_place": "Boring Place Anyway",
+        }
+        self._check_conversion(
+            base_input.format(**data),
+            base_expected.format(**data),
+            heading=False,
+            subheading=False,
+        )
 
     def test_return(self):
-        text = 'Bam! new line'
-        expected = 'Bam<lb /> new line'
+        text = "Bam! new line"
+        expected = "Bam<lb /> new line"
         self._check_conversion(text, expected)
 
     def test_right_marginale(self):
-        text = 'Hark, a @r\\right marginale note@r/ appears'
+        text = "Hark, a @r\\right marginale note@r/ appears"
         expected = 'Hark, a <note type="marginal" place="margin_right">right marginale note</note> appears'
         self._check_conversion(text, expected)
 
     def test_section(self):
-        text = 'A new section? @% Yes.'
-        expected = 'A new section? \N{SECTION SIGN} Yes.'
+        text = "A new section? @% Yes."
+        expected = "A new section? \N{SECTION SIGN} Yes."
         self._check_conversion(text, expected)
 
     def test_semicolon(self):
-        text = 'PUA @; punctus elevatus'
-        expected = 'PUA \uF161 punctus elevatus'
+        text = "PUA @; punctus elevatus"
+        expected = "PUA \uF161 punctus elevatus"
         self._check_conversion(text, expected)
 
     def test_signed(self):
-        text = '@sn\\Thomas dyckes@sn/'
+        text = "@sn\\Thomas dyckes@sn/"
         expected = '<seg type="signed">Thomas dyckes</seg>'
         self._check_conversion(text, expected)
 
     def test_signed_centre(self):
-        text = '@snc\\Thomas dyckes@snc/'
+        text = "@snc\\Thomas dyckes@snc/"
         expected = '<seg type="signed" rend="center">Thomas dyckes</seg>'
         self._check_conversion(text, expected)
 
     def test_signed_right(self):
-        text = '@snr\\Thomas dyckes@snr/'
+        text = "@snr\\Thomas dyckes@snr/"
         expected = '<seg type="signed" rend="right">Thomas dyckes</seg>'
         self._check_conversion(text, expected)
 
     def test_signed_mark(self):
-        text = '@sm\\Who even knows@sm/'
+        text = "@sm\\Who even knows@sm/"
         expected = '<seg type="signed_mark">Who even knows</seg>'
         self._check_conversion(text, expected)
 
     def test_signed_mark_centre(self):
-        text = '@smc\\Who even knows@smc/'
+        text = "@smc\\Who even knows@smc/"
         expected = '<seg type="signed_mark" rend="center">Who even knows</seg>'
         self._check_conversion(text, expected)
 
     def test_signed_mark_right(self):
-        text = '@smr\\Who even knows@smr/'
+        text = "@smr\\Who even knows@smr/"
         expected = '<seg type="signed_mark" rend="right">Who even knows</seg>'
         self._check_conversion(text, expected)
 
     def test_special_v(self):
-        text = 'Special @v, not k'
-        expected = 'Special \N{LATIN SMALL LETTER MIDDLE-WELSH V}, not k'
+        text = "Special @v, not k"
+        expected = "Special \N{LATIN SMALL LETTER MIDDLE-WELSH V}, not k"
         self._check_conversion(text, expected)
 
     def test_square_brackets(self):
-        text = 'Literal [[.'
-        expected = 'Literal [.'
+        text = "Literal @DOUBLE_SQUARE_OPEN."
+        expected = "Literal [."
         self._check_conversion(text, expected)
-        text = 'Literal ]].'
-        expected = 'Literal ].'
+        text = "Literal @DOUBLE_SQUARE_CLOSE."
+        expected = "Literal ]."
         self._check_conversion(text, expected)
-        text = '[[ no del here ]]'
-        expected = '[ no del here ]'
+        text = "@DOUBLE_SQUARE_OPEN no del here @DOUBLE_SQUARE_CLOSE"
+        expected = "[ no del here ]"
         self._check_conversion(text, expected)
 
     def test_superscript(self):
-        text = 'Some @s\\superscripted@s/ text'
+        text = "Some @s\\superscripted@s/ text"
         expected = 'Some <hi rend="superscript">superscripted</hi> text'
         self._check_conversion(text, expected)
 
     def test_tab_start(self):
-        text = '@[This should be right aligned.@]'
+        text = "@[This should be right aligned.@]"
         expected = '<hi rend="right">This should be right aligned.</hi>'
         self._check_conversion(text, expected)
 
     def test_table(self):
-        text = '<t>\n<r>\n<c></c>\n<c>Some</c>\n<c>text</c>\n</r>\n</t>'
-        expected = '<table>\n<row>\n<cell></cell>\n<cell>Some</cell>\n<cell>text</cell>\n</row>\n</table>'
+        text = "<t>\n<r>\n<c></c>\n<c>Some</c>\n<c>text</c>\n</r>\n</t>"
+        expected = "<table>\n<row>\n<cell></cell>\n<cell>Some</cell>\n<cell>text</cell>\n</row>\n</table>"
         self._check_conversion(text, expected)
 
     def test_table_with_comment(self):
-        text = '<t>\n<r>\n<c></c>\n<c>Some</c>\n@xc\\A comment@xc/\n<c>text</c>\n</r>\n</t>'
-        expected = '<table>\n<row>\n<cell></cell>\n<cell>Some</cell>\n<!-- A comment -->\n<cell>text</cell>\n</row>\n</table>'
+        text = "<t>\n<r>\n<c></c>\n<c>Some</c>\n@xc\\A comment@xc/\n<c>text</c>\n</r>\n</t>"
+        expected = "<table>\n<row>\n<cell></cell>\n<cell>Some</cell>\n<!-- A comment -->\n<cell>text</cell>\n</row>\n</table>"
         self._check_conversion(text, expected)
 
     def test_THORN(self):
-        text = '@THat is silly and wrong'
-        expected = '\N{LATIN CAPITAL LETTER THORN}at is silly and wrong'
+        text = "@THat is silly and wrong"
+        expected = "\N{LATIN CAPITAL LETTER THORN}at is silly and wrong"
         self._check_conversion(text, expected)
 
     def test_thorn(self):
-        text = 'A @thin man'
-        expected = 'A \N{LATIN SMALL LETTER THORN}in man'
+        text = "A @thin man"
+        expected = "A \N{LATIN SMALL LETTER THORN}in man"
         self._check_conversion(text, expected)
 
     def test_tilde(self):
-        for char in self.vowels + ['n']:
+        for char in self.vowels + ["n"]:
             text = 'pa@"{}a'.format(char)
-            expected = 'pa{}\N{COMBINING TILDE}a'.format(char)
+            expected = "pa{}\N{COMBINING TILDE}a".format(char)
             self._check_conversion(text, expected)
 
     def test_title(self):
-        text = 'A <title>citation title</title> somewhere'
+        text = "A <title>citation title</title> somewhere"
         expected = text
         self._check_conversion(text, expected)
 
     def test_transcription(self):
-        text = '@w\\ f.40* {{(12 January) (Fortune: Warrant)}}\\!\nText'
-        expected = '''<div xml:lang="lat" type="transcription">
+        text = "@w\\ f.40* {{(12 January) (Fortune: Warrant)}}\\!\nText"
+        expected = """<div xml:lang="lat" type="transcription">
 <div>
 <head> f.40* <supplied>(12 January) (Fortune: Warrant)</supplied></head>
 <pb />
 Text
 </div>
-</div>'''
+</div>"""
         self._check_conversion(text, expected, subheading=False)
-        base_text = '@w\\{head}\\!\nText'
-        base_expected = '''<div xml:lang="lat" type="transcription">
+        base_text = "@w\\{head}\\!\nText"
+        base_expected = """<div xml:lang="lat" type="transcription">
 <div>
 <head>{head}</head>
 {pb}
 Text
 </div>
-</div>'''
+</div>"""
         all_data = [
-            {'head': 'single mb', 'pb': '<pb n="1" type="membrane" />'},
-            {'head': 'mbs 2-4', 'pb': '<pb type="membrane" />'},
-            {'head': 'sig B3', 'pb': '<pb n="B3" type="signature" />'},
-            {'head': 'sigs B3-C5', 'pb': '<pb type="signature" />'},
-            {'head': 'p 234', 'pb': '<pb n="234" type="page" />'},
-            {'head': 'pp 2-4', 'pb': '<pb type="page" />'},
-            {'head': 'ff [1v–2]', 'pb': '<pb type="folio" />'},
-            {'head': 'f 46v', 'pb': '<pb n="46v" type="folio" />'},
-            {'head': 'sheet 5', 'pb': '<pb n="5" type="sheet" />'},
-            {'head': 'sheets 6-7', 'pb': '<pb type="sheet" />'},
-            {'head': '', 'pb': ''}
+            {"head": "single mb", "pb": '<pb n="1" type="membrane" />'},
+            {"head": "mbs 2-4", "pb": '<pb type="membrane" />'},
+            {"head": "sig B3", "pb": '<pb n="B3" type="signature" />'},
+            {"head": "sigs B3-C5", "pb": '<pb type="signature" />'},
+            {"head": "p 234", "pb": '<pb n="234" type="page" />'},
+            {"head": "pp 2-4", "pb": '<pb type="page" />'},
+            {"head": "ff [1v–2]", "pb": '<pb type="folio" />'},
+            {"head": "f 46v", "pb": '<pb n="46v" type="folio" />'},
+            {"head": "sheet 5", "pb": '<pb n="5" type="sheet" />'},
+            {"head": "sheets 6-7", "pb": '<pb type="sheet" />'},
+            {"head": "", "pb": ""},
         ]
         for data in all_data:
             self._check_conversion(
-                base_text.format(**data), base_expected.format(**data),
-                subheading=False)
-        text = '@w\\ {{(12 January)}}\\!\nText'
-        expected = '''<div xml:lang="lat" type="transcription">
+                base_text.format(**data), base_expected.format(**data), subheading=False
+            )
+        text = "@w\\ {{(12 January)}}\\!\nText"
+        expected = """<div xml:lang="lat" type="transcription">
 <div>
 <head> <supplied>(12 January)</supplied></head>
 
 Text
 </div>
-</div>'''
+</div>"""
         self._check_conversion(text, expected, subheading=False)
 
     def test_translation(self):
-        text = '''@w\\f.40*\\!\nTextus
+        text = """@w\\f.40*\\!\nTextus
 @tr\\@w\\f.40*\\!
-Text@tr/'''
-        expected = '''<div xml:lang="lat" type="transcription">
+Text@tr/"""
+        expected = """<div xml:lang="lat" type="transcription">
 <div>
 <head>f.40*</head>
 <pb />
@@ -750,14 +896,14 @@ Textus
 <pb />
 Text
 </div>
-</div>'''
+</div>"""
         self._check_conversion(text, expected, subheading=False)
-        text = '''@w\\f.40*\\!\nTextus
+        text = """@w\\f.40*\\!\nTextus
 @tr\\@w\\f.40*\\!
 Text
 @w\\f.41\\!
-Totally new.@tr/'''
-        expected = '''<div xml:lang="lat" type="transcription">
+Totally new.@tr/"""
+        expected = """<div xml:lang="lat" type="transcription">
 <div>
 <head>f.40*</head>
 <pb />
@@ -777,59 +923,58 @@ Text
 <pb />
 Totally new.
 </div>
-</div>'''
+</div>"""
         self._check_conversion(text, expected, subheading=False)
 
     def test_umlaut(self):
         for vowel in self.vowels:
-            text = 'b@:{}t'.format(vowel)
-            expected = 'b{}\N{COMBINING DIAERESIS}t'.format(vowel)
+            text = "b@:{}t".format(vowel)
+            expected = "b{}\N{COMBINING DIAERESIS}t".format(vowel)
             self._check_conversion(text, expected)
 
     def test_wynn(self):
-        text = 'All I do is @y'
-        expected = 'All I do is \N{LATIN LETTER WYNN}'
+        text = "All I do is @y"
+        expected = "All I do is \N{LATIN LETTER WYNN}"
         self._check_conversion(text, expected)
 
     def test_xml_escape(self):
-        data = {'&': '&amp;', '<': '&lt;', '>': '&gt;'}
+        data = {"&": "&amp;", "<": "&lt;", ">": "&gt;"}
         for char, expected in data.items():
-            text = 'a {} b'.format(char)
-            expected = 'a {} b'.format(expected)
+            text = "a {} b".format(char)
+            expected = "a {} b".format(expected)
             self._check_conversion(text, expected)
 
     def test_YOGH(self):
-        text = 'Not @Z Sothoth'
-        expected = 'Not \N{LATIN CAPITAL LETTER YOGH} Sothoth'
+        text = "Not @Z Sothoth"
+        expected = "Not \N{LATIN CAPITAL LETTER YOGH} Sothoth"
         self._check_conversion(text, expected)
 
     def test_yogh(self):
-        text = 'cummings invokes @z sothoth'
-        expected = 'cummings invokes \N{LATIN SMALL LETTER YOGH} sothoth'
+        text = "cummings invokes @z sothoth"
+        expected = "cummings invokes \N{LATIN SMALL LETTER YOGH} sothoth"
         self._check_conversion(text, expected)
 
     def test_nesting(self):
         # This is impossible to comprehensively test. Start with a few
         # examples and add more as problems are discovered.
-        text = '@l\\@m\\ac@m/or @m\\a@m/@l/!'
+        text = "@l\\@m\\ac@m/or @m\\a@m/@l/!"
         expected = '<note type="marginal" place="margin_left"><ab rend="center">ac</ab>or <ab rend="center">a</ab></note><lb />'
         self._check_conversion(text, expected)
 
 
-class TestXSLT (TestCase):
+class TestXSLT(TestCase):
 
     def setUp(self):
-        self._doc = Document('staff')
+        self._doc = Document("staff")
         self.maxDiff = None
 
     def _transform(self, text, *xslt_paths):
         tree = etree.ElementTree(etree.fromstring(text))
         result_tree = self._doc._transform(tree, *xslt_paths)
-        return etree.tostring(result_tree, encoding='unicode',
-                              pretty_print=True)
+        return etree.tostring(result_tree, encoding="unicode", pretty_print=True)
 
     def test_ab_to_p(self):
-        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+        text = """<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group>
 <text type="record">
@@ -884,8 +1029,8 @@ After table text.
 </text>
 </group>
 </text>
-</TEI>'''
-        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+</TEI>"""
+        expected = """<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group>
 <text type="record">
@@ -941,12 +1086,12 @@ After table text.
 </group>
 </text>
 </TEI>
-'''
+"""
         actual = self._transform(text, AB_TO_P_XSLT_PATH)
         self.assertEqual(actual, expected)
 
     def test_add_ab(self):
-        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+        text = """<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group>
 <text type="record">
@@ -995,8 +1140,8 @@ After table text.
 </text>
 </group>
 </text>
-</TEI>'''
-        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+</TEI>"""
+        expected = """<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group>
 <text type="record">
@@ -1052,12 +1197,12 @@ After table text.
 </group>
 </text>
 </TEI>
-'''
+"""
         actual = self._transform(text, ADD_AB_XSLT_PATH)
         self.assertEqual(actual, expected)
 
     def test_add_header(self):
-        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff" xml:lang="eng">
+        text = """<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff" xml:lang="eng">
 <text>
 <group>
 <text type="record" xml:id="staff-ridm4">
@@ -1079,8 +1224,8 @@ After table text.
 </text>
 </group>
 </text>
-</TEI>'''
-        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff" xml:lang="eng"><teiHeader><fileDesc><titleStmt/><sourceDesc/></fileDesc><encodingDesc><listPrefixDef><prefixDef ident="eats" matchPattern="([0-9]+)" replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/"><p>URIs using the <code>eats</code> prefix are references to EATS entities.</p></prefixDef><prefixDef ident="gloss" matchPattern="([\S]+)" replacementPattern="../glossary.xml#$1"><p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the glossary.xml file. For example, <code>gloss:histrio-1</code> dereferences to <code>glossary.xml#histrio-1</code>.</p></prefixDef><prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../taxonomy.xml#$1"><p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the taxonomy.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p></prefixDef></listPrefixDef></encodingDesc><profileDesc><langUsage><language ident="eng">English</language><language ident="lat">Latin</language></langUsage></profileDesc></teiHeader>
+</TEI>"""
+        expected = """<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff" xml:lang="eng"><teiHeader><fileDesc><titleStmt/><sourceDesc/></fileDesc><encodingDesc><listPrefixDef><prefixDef ident="eats" matchPattern="([0-9]+)" replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/"><p>URIs using the <code>eats</code> prefix are references to EATS entities.</p></prefixDef><prefixDef ident="gloss" matchPattern="([\S]+)" replacementPattern="../glossary.xml#$1"><p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the glossary.xml file. For example, <code>gloss:histrio-1</code> dereferences to <code>glossary.xml#histrio-1</code>.</p></prefixDef><prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../taxonomy.xml#$1"><p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the taxonomy.xml file. For example, <code>taxon:church</code> dereferences to <code>taxonomy.xml#church</code>.</p></prefixDef></listPrefixDef></encodingDesc><profileDesc><langUsage><language ident="eng">English</language><language ident="lat">Latin</language></langUsage></profileDesc></teiHeader>
 <text>
 <group>
 <text type="record" xml:id="staff-ridm4">
@@ -1103,12 +1248,12 @@ After table text.
 </group>
 </text>
 </TEI>
-'''
+"""
         actual = self._transform(text, ADD_HEADER_XSLT_PATH)
         self.assertEqual(actual, expected)
 
     def test_add_id(self):
-        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+        text = """<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group>
 <text type="record">
@@ -1138,14 +1283,14 @@ After table text.
 </text>
 </group>
 </text>
-</TEI>'''
-        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff">
+</TEI>"""
+        expected = """<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="staff">
 <text>
 <group>
-<text type="record" xml:id="staff-ridm4">
+<text type="record" xml:id="staff-rid1">
 <body>
 <head>@h head 1</head>
-<div type="transcription" xml:id="staff-ridm4-transcription">
+<div type="transcription" xml:id="staff-rid1-transcription">
 <div>
 <head>@w head 1.1</head>
 <ab>Some text with <note type="collation">collated material</note>.</ab>
@@ -1153,10 +1298,10 @@ After table text.
 </div>
 </body>
 </text>
-<text type="record" xml:id="staff-ridm21">
+<text type="record" xml:id="staff-rid2">
 <body>
 <head>@h head 2</head>
-<div type="transcription" xml:id="staff-ridm21-transcription">
+<div type="transcription" xml:id="staff-rid2-transcription">
 <div>
 <head>@w head 2.1</head>
 <ab>Nothing here but a <note type="marginal" place="margin_left">marginal note</note> and a <note type="foot">footnote</note>.</ab>
@@ -1170,12 +1315,12 @@ After table text.
 </group>
 </text>
 </TEI>
-'''
+"""
         actual = self._transform(text, ADD_ID_XSLT_PATH)
         self.assertEqual(actual, expected)
 
     def test_massage_footnote(self):
-        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+        text = """<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group>
 <text type="record">
@@ -1191,8 +1336,8 @@ After table text.
 </text>
 </group>
 </text>
-</TEI>'''
-        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+</TEI>"""
+        expected = """<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group>
 <text type="record">
@@ -1209,12 +1354,12 @@ After table text.
 </group>
 </text>
 </TEI>
-'''
+"""
         actual = self._transform(text, MASSAGE_FOOTNOTE_XSLT_PATH)
         self.assertEqual(actual, expected)
 
     def test_remove_ab(self):
-        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+        text = """<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group>
 <text type="record">
@@ -1231,8 +1376,8 @@ After table text.
 </text>
 </group>
 </text>
-</TEI>'''
-        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+</TEI>"""
+        expected = """<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group>
 <text type="record">
@@ -1250,12 +1395,12 @@ After table text.
 </group>
 </text>
 </TEI>
-'''
+"""
         actual = self._transform(text, REMOVE_AB_XSLT_PATH)
         self.assertEqual(actual, expected)
 
     def test_sort_records(self):
-        text = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+        text = """<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group>
 <text type="record">
@@ -1293,8 +1438,8 @@ After table text.
 </text>
 </group>
 </text>
-</TEI>'''
-        expected = '''<TEI xmlns="http://www.tei-c.org/ns/1.0">
+</TEI>"""
+        expected = """<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <text>
 <group><text type="record">
 <body>
@@ -1329,12 +1474,12 @@ After table text.
 </text></group>
 </text>
 </TEI>
-'''
+"""
         actual = self._transform(text, SORT_RECORDS_XSLT_PATH)
         self.assertEqual(actual, expected)
 
     def test_tidy_bibls(self):
-        text = '''<listBibl xmlns="http://www.tei-c.org/ns/1.0">
+        text = """<listBibl xmlns="http://www.tei-c.org/ns/1.0">
 <msDesc xml:id="ABCD">
 <msIdentifier>
 <settlement>Bognor Regis</settlement>
@@ -1345,8 +1490,8 @@ After table text.
 <ab type="edDesc">Prose<pb/>paragraph.</ab>
 <ab type="techDesc">Technical<pb />paragraph.</ab>
 </msDesc>
-</listBibl>'''
-        expected = '''<listBibl xmlns="http://www.tei-c.org/ns/1.0">
+</listBibl>"""
+        expected = """<listBibl xmlns="http://www.tei-c.org/ns/1.0">
 <msDesc xml:id="ABCD">
 <msIdentifier>
 <settlement>Bognor Regis</settlement>
@@ -1358,6 +1503,6 @@ After table text.
 <ab type="techDesc">Technical|paragraph.</ab>
 </msDesc>
 </listBibl>
-'''
+"""
         actual = self._transform(text, TIDY_BIBLS_XSLT_PATH)
         self.assertEqual(actual, expected)

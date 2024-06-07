@@ -9,6 +9,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+.env
 .Python
 env/
 build/
@@ -24,11 +25,21 @@ wheels/
 *.egg
 
 # Django
+staticfiles/
 local_settings.py
 
 # Kiln
-/kiln/sw/jetty/logs/
-/kiln/webapps/ROOT/WEB-INF/logs/
-/kiln/webapps/openrdf-sesame/app_dir/
-/kiln/webapps/solr/data/
-/kiln/sw/jetty/temp/
+kiln/sw/jetty/logs/
+kiln/webapps/ROOT/WEB-INF/logs/
+kiln/webapps/openrdf-sesame/app_dir/
+kiln/webapps/solr/data/
+kiln/sw/jetty/temp/
+
+# Docker
+.cache
+.env*
+docker-compose.override.yml
+volumes/eats_exports
+volumes/postgres_*
+volumes/traefik/.htpasswd
+volumes/traefik/acme
