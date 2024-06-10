@@ -1,0 +1,99 @@
+name: reed${INSTANCE:-}
+
+services:
+  traefik:
+    image: traefik:3.0
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./volumes/traefik/traefik.yml:/etc/traefik/traefik.yml:ro
+      - ./volumes/traefik/acme:/etc/traefik/acme
+      - ./volumes/traefik/.htpasswd:/etc/traefik/.htpasswd:ro
+    ports:
+      - ${TRAEFIK_HTTP_PORT:-80}:80
+      - ${TRAEFIK_HTTPS_PORT:-443}:443
+    environment:
+      - TRAEFIK_HOST
+    depends_on:
+      - tomcat
+      - django
+      - nginx
+
+  tomcat:
+    image: tomcat:${TOMCAT_VERSION:-9-jdk11}
+    restart: unless-stopped
+    expose:
+      - ${TOMCAT_PORT:-8080}
+    volumes:
+      - ./kiln/webapps:/usr/local/tomcat/webapps
+      - ./kiln/webapps/solr/conf/solr.xml:/usr/local/tomcat/conf/Catalina/localhost/solr.xml:ro
+    environment:
+      CATALINA_OPTS: "${TOMCAT_CATALINA_OPTS:--Xmx2048m}"
+
+  django:
+    build:
+      context: .
+      dockerfile: ./services/django/Dockerfile
+    restart: unless-stopped
+    expose:
+      - ${DJANGO_PORT:-8000}
+    volumes:
+      - ./django:/app
+      - ./volumes/eats_exports:/exports
+    env_file:
+      - .env
+    command:
+      [
+        "/usr/local/bin/gunicorn",
+        "ereed.wsgi",
+        "--bind",
+        "0.0.0.0:8000",
+        "--chdir=/app",
+        "--timeout",
+        "180",
+        "--forwarded-allow-ips='*'",
+      ]
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  nginx:
+    build:
+      context: .
+      dockerfile: ./services/nginx/Dockerfile
+    restart: unless-stopped
+    expose:
+      - ${NGINX_PORT:-80}
+    volumes:
+      - ./django/staticfiles:/usr/share/nginx/static:ro
+      - ./kiln/webapps/ROOT/assets:/usr/share/nginx/assets:ro
+
+  postgres:
+    build:
+      context: .
+      dockerfile: ./services/postgres/Dockerfile
+    restart: unless-stopped
+    expose:
+      - ${DATABASE_PORT:-5432}
+    volumes:
+      - ./volumes/postgres_data:/var/lib/postgresql/data
+      - ./volumes/postgres_backups:/backups
+    environment:
+      POSTGRES_HOST: ${DATABASE_HOST:-postgres}
+      POSTGRES_PORT: ${DATABASE_PORT:-5432}
+      POSTGRES_DB: ${DATABASE_NAME:?Postgres db not set}
+      POSTGRES_USER: ${DATABASE_USER:?Postgres user not set}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:?Postgres user password not set}
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "pg_isready",
+          "-d",
+          "${DATABASE_NAME}",
+          "-U",
+          "${DATABASE_USER}",
+        ]
+      interval: 1s
+      timeout: 3s
+      retries: 10
