@@ -214,7 +214,7 @@ TIME_ZONE = "America/Toronto"
 # django-user-accounts
 ACCOUNT_LOGIN_REDIRECT_URL = "/eats/"
 
-EATS_TOPIC_MAP = "https://ereed.org/tm/"
+EATS_TOPIC_MAP = "https://ereed.library.utoronto.ca/tm/"
 
 CACHES = {
     "default": {},
