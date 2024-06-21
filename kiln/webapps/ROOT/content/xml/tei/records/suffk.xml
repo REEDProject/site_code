@@ -13847,10 +13847,10 @@ patron/troupe -->. </p>
          <cell/>
         </row>
         <row>
-         <cell rend="center">Edmond Frente/</cell>
+         <cell rend="center"><rs ref="eats:384366" type="Person_Male">Edmond Frente</rs>/</cell>
         </row>
         <row>
-         <cell>Item to <rs ref="eats:384366" type="Person_Male">edmond frente</rs></cell>
+         <cell>Item to edmond frente</cell>
          <cell rend="right">ij s.</cell>
         </row>
         <row>
@@ -13996,7 +13996,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell rend="center">Piper of buklsey &amp; v men</cell>
+         <cell rend="center"><rs ref="eats:1162" type="Entertainer_Type">Piper</rs> of buklsey &amp; v men</cell>
         </row>
         <row>
          <cell>My lord toke and prest</cell>
@@ -14076,10 +14076,10 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell rend="center">Chr<ex>ist</ex>ofer, taboret</cell>
+         <cell rend="center"><rs ref="eats:384619" type="Person_StatusOther">Chr<ex>ist</ex>ofer</rs>, taboret</cell>
         </row>
         <row>
-         <cell rend="center">Valentin taboret</cell>
+         <cell rend="center"><rs ref="eats:384672" type="Person_Male">Valentin</rs> taboret</cell>
         </row>
         <row>
          <cell>It<ex>em</ex> eche of them had a goon coste my lord</cell>
@@ -14094,11 +14094,11 @@ patron/troupe -->. </p>
          <cell rend="right">v s.</cell>
         </row>
         <row>
-         <cell>also they Receiued of Dalamar þer prest</cell>
+         <cell>also they Receiued of Dalamar þer <rs ref="eats:9186" type="Collective_Clergy">prest</rs></cell>
          <cell rend="right">iiij s.</cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> Valentyn had to go to south<ex>a</ex>mpton</cell>
+         <cell>It<ex>em</ex> Valentyn had to go to <rs ref="eats:72712" type="Place_PA_Settlement">south<ex>a</ex>mpton</rs></cell>
          <cell rend="right">ij s. ij d.</cell>
         </row>
         <row>
@@ -14193,7 +14193,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell rend="center">þe Waytes of <rs ref="eats:36947" type="Place_PA_Settlement">london</rs>.</cell>
+         <cell rend="center">þe <rs ref="eats:275374" type="Collective_Office">Waytes</rs> of <rs ref="eats:36947" type="Place_PA_Settlement">london</rs>.</cell>
         </row>
         <row>
          <cell>The xxvij day of august þey rec<ex>eiued</ex>
@@ -14243,7 +14243,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>And þ<ex>a</ex>t I paid to þe pleirs of <rs ref="eats:375845" type="Place_PA_Ward">Turton strete</rs> </cell>
+         <cell>And þ<ex>a</ex>t I paid to þe <rs ref="eats:8782" type="Entertainer_Type">pleirs</rs> of <!-- IN for AW: I would check with JS about this location. --><rs ref="eats:375845" type="Place_PA_Ward">Turton strete</rs> </cell>
          <cell rend="right">xx d.</cell>
         </row>
        </table>
@@ -14281,7 +14281,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>My lord of Kent mynstrels/ my lord Tafr<add place="above">end</add></cell>
+         <cell>My <rs ref="eats:180254" type="Collective_Troupe">lord of Kent mynstrels</rs>/ my lord Tafr<add place="above">end</add></cell>
          <cell rend="right">ij s. vj d.</cell>
         </row>
         <row>
@@ -14336,11 +14336,11 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell rend="center">William Dauyes, pr<ex>ie</ex>st <lb/>of <rs ref="eats:372335" type="Place_PA_Settlement">Neylond</rs>, for bordyng <lb/>of
+         <cell rend="center"><rs ref="eats:386958" type="Person_Male">William Dauyes</rs>, pr<ex>ie</ex>st <lb/>of <rs ref="eats:372335" type="Place_PA_Settlement">Neylond</rs>, for bordyng <lb/>of
           litel Richard synger/</cell>
         </row>
         <row>
-         <cell>The xxj yer of the king &amp; at mikelmes my Lord toke him for his boorde xix
+         <cell>The xxj yer of the king &amp; at <rs ref="eats:42598" type="CalendarDay_Liturgical">mikelmes</rs> my Lord toke him for his boorde xix
            wek<ex>es</ex> vnto thursday after mykelmes day</cell>
          <cell rend="right">xiij s. iiij d.</cell>
         </row>
@@ -14357,7 +14357,7 @@ patron/troupe -->. </p>
        <ab rend="center">at <rs ref="eats:313054" type="Place_PA_Settlement">Wolpett</rs>.<note type="foot">Wolpett: <hi rend="italic">Woolpit,
           Suffolk</hi></note></ab>
 
-       <ab><gap reason="omitted"/>to hym that pleyd upo<ex>n</ex> þe <del>h</del> bagpype x d<gap
+       <ab><gap reason="omitted"/>to hym that pleyd upo<ex>n</ex> þe <del>h</del> <rs ref="eats:41092" type="Thing_MusicalInstrument">bagpype</rs> x d<gap
          reason="omitted"/>.</ab>
       </div>
       <div>
@@ -14368,7 +14368,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>And þ<ex>a</ex>t I toke to þe trompetes of my lord of glocester</cell>
+         <cell>And þ<ex>a</ex>t I toke to þe <rs ref="eats:387076" type="Collective_Troupe">trompetes of my lord of glocester</rs></cell>
          <cell rend="right">v s.</cell>
         </row>
        </table>
@@ -14383,8 +14383,8 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>The x day of october, my Lord tok Dalamar þ<ex>a</ex>t he toke my lady
-           norff<ex>olk</ex> minstrels </cell>
+         <cell>The x day of october, my Lord tok Dalamar þ<ex>a</ex>t he toke my <rs ref="eats:387180" type="Collective_Troupe">lady
+           norff<ex>olk</ex> minstrels</rs> </cell>
          <cell rend="right">iij s. iiij d.</cell>
         </row>
        </table>
