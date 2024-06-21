@@ -38,7 +38,7 @@ http:
         certResolver: letsencrypt
 
     to-django:
-      rule: Host(`{{env "TRAEFIK_HOST"}}`) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare)/`)
+      rule: Host(`{{env "TRAEFIK_HOST"}}`) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare|selectable)/`)
       middlewares:
         - csrf
       service: django

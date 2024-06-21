@@ -18,7 +18,7 @@ http:
       service: tomcat
 
     to-django:
-      rule: (Host(`localhost`) || Host(`127.0.0.1`)) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare)/`)
+      rule: (Host(`localhost`) || Host(`127.0.0.1`)) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare|selectable)/`)
       middlewares:
         - csrf
       service: django
