@@ -28,7 +28,7 @@ services:
       - ./kiln/webapps:/usr/local/tomcat/webapps
       - ./kiln/webapps/solr/conf/solr.xml:/usr/local/tomcat/conf/Catalina/localhost/solr.xml:ro
     environment:
-      CATALINA_OPTS: "${TOMCAT_CATALINA_OPTS:--Xmx2048m}"
+      CATALINA_OPTS: "${TOMCAT_CATALINA_OPTS:--Xmx4096m}"
 
   django:
     build:
