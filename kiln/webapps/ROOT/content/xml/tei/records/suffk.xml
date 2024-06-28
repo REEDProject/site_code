@@ -16203,7 +16203,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m for mendyng of Thom<ex>as</ex> fooll<ex>es</ex> Coate</cell>
+         <cell>It<ex>e</ex>m for mendyng of <rs ref="eats:384924" type="Person_Male">Thom<ex>as</ex></rs> <rs ref="eats:14164" type="Entertainer_Type">fooll<ex>es</ex></rs> Coate</cell>
          <cell rend="right">viij d.</cell>
         </row>
        </table>
@@ -16218,7 +16218,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m the same day, my lord gaff to þe wayt<ex>es</ex> of London</cell>
+         <cell>It<ex>e</ex>m the same day, <rs ref="eats:163205" type="Person_Male">my lord</rs> gaff to þe <rs ref="eats:275374" type="Collective_Office">wayt<ex>es</ex> of London</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
        </table>
@@ -16233,12 +16233,13 @@ patron/troupe -->. </p>
 
        <table>
         <row>
+         <!-- IN for AW: Some locations to be tagged here -->
          <cell>It<ex>e</ex>m the same day my lord made couen<ex>a</ex>u<ex>n</ex>te
-           w<ex>i</ex>t<ex>h</ex> will<ex>ia</ex>m wastell of london <add place="above">harper</add>
-          that he shall have the sone of Iohn Colet of of<note type="foot">of of: <hi rend="italic"
+           w<ex>i</ex>t<ex>h</ex> <rs ref="eats:394387" type="Person_Male">will<ex>ia</ex>m wastell</rs> of london <add place="above">harper</add>
+          that he shall have the sone of <rs ref="eats:394452" type="Person_Male">Iohn Colet</rs> of of<note type="foot">of of: <hi rend="italic"
             >dittography</hi></note> colchest<ex>er</ex> harper for a yere to teche hym hym<note
            type="foot">hym hym: <hi rend="italic">dittography</hi></note> to harpe and to<note
-           type="marginal" place="margin_left">William Wastell harper for a chylde</note> synge for
+           type="marginal" place="margin_left">William Wastell harper for a chylde</note> <rs ref="eats:10906" type="Entertainer_Type">synge</rs> for
           þe whiche techynge my lord shall geve hym xiij s. iiij d. &amp; a gown whereof my lord
           toke hy<ex>m</ex> in ernest <del>vj s. viij d.</del>
          </cell>
@@ -16264,11 +16265,11 @@ patron/troupe -->. </p>
          <cell>Item<note type="marginal" place="margin_left">Pleyers<note type="foot">Pleyers: <hi
              rend="italic">followed by left pointing brace encompassing both
            entries</hi></note></note> on <del>s<damage><gap unit="chars" extent="1"/></damage></del>
-          Crystemas day my lord gaff to iiij pleyers of my lord of gloucestres</cell>
+          <rs ref="eats:239365" type="CalendarDay_Liturgical">Crystemas day</rs> my lord gaff to iiij <rs ref="eats:394517" type="Collective_Troupe">pleyers of my lord of gloucestres</rs></cell>
          <cell rend="right">iij s. iiij d.</cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m the same day my lord gaff to iiij pleyers of <rs ref="eats:375932"
+         <cell>It<ex>e</ex>m the same day my lord gaff to iiij <rs ref="eats:8782" type="Entertainer_Type">pleyers</rs> of <rs ref="eats:375932"
            type="Place_PA_Settlement">Coksale</rs><note type="foot">Coksale: <hi rend="italic"
             >Coggeshall, Essex</hi></note></cell>
          <cell rend="right">iij s. iiij d.</cell>
@@ -16283,7 +16284,7 @@ patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab><gap reason="omitted"/>It<ex>em</ex><note type="marginal" place="margin_left">The
-         steward</note> that he toke to þe menstralles of colchest<ex>er</ex> xx d<gap
+        <rs ref="eats:297307" type="Collective_Occupations">steward</rs></note> that he toke to þe <rs ref="eats:8709" type="Entertainer_Type">menstralles</rs> of colchest<ex>er</ex> xx d<gap
          reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
@@ -16318,7 +16319,7 @@ patron/troupe -->. </p>
        <table>
         <row>
          <cell>It<ex>e</ex>m<note type="marginal" place="margin_left">The mynstrelles</note> to the
-          menstrellis þe same day be the hand<ex>es</ex> of bawdwyn</cell>
+          <rs ref="eats:8709" type="Entertainer_Type">menstrellis</rs> þe same day be the hand<ex>es</ex> of bawdwyn</cell>
          <cell rend="right">ij s.</cell>
         </row>
        </table>
@@ -16333,7 +16334,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Item, the x<hi rend="superscript">th</hi> day of Ienever my lord gaff to a mynstrell
+         <cell>Item, the x<hi rend="superscript">th</hi> day of Ienever <rs ref="eats:163205" type="Person_Male">my lord</rs> gaff to a mynstrell
           of mast<ex>e</ex>r woodes</cell>
          <cell rend="right">xx d.</cell>
         </row>
