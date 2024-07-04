@@ -16722,8 +16722,8 @@ patron/troupe -->. </p>
        <pb n="39v" type="folio"/>
 
        <gap reason="omitted"/>
-
-       <ab>It<ex>e</ex>m p<ex>ai</ex>d to Ros the ij<hi rend="superscript">de</hi> daye of february
+<!-- IN to self: Checking with JS here about Ros-->
+       <ab>It<ex>e</ex>m p<ex>ai</ex>d to <rs ref="eats:399138" type="Person_GenderUnknown">Ros</rs> the ij<hi rend="superscript">de</hi> daye of february
         for a peyer of clowght<ex>es</ex> for the folis shoone ij d<gap reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
@@ -16736,14 +16736,14 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m p<ex>ai</ex>d on seynt Stephyn daye at night to iiij pleyer<ex>es</ex>
-          of <rs ref="eats:372100" type="Place_PA_Settlement">hadley</rs> by the comaundement of my
-           lord<ex>es</ex><note type="foot">my lord<ex>es</ex>: <hi rend="italic">Thomas Howard,
+         <cell>It<ex>e</ex>m p<ex>ai</ex>d on <rs ref="eats:165048" type="CalendarDay_Liturgical">seynt Stephyn daye</rs> at night to iiij <rs ref="eats:8782" type="Entertainer_Type">pleyer<ex>es</ex></rs>
+          of <rs ref="eats:372100" type="Place_PA_Settlement">hadley</rs> by the comaundement of <rs ref="eats:167868" type="Person_Male">my
+           lord<ex>es</ex></rs><note type="foot">my lord<ex>es</ex>: <hi rend="italic">Thomas Howard,
             third duke of Norfolk</hi></note> grace </cell>
          <cell rend="right">vj s. viij d.</cell>
         </row>
-        <row>
-         <cell>It<ex>e</ex>m p<ex>ai</ex>d on seynt Iohns daye at night to iiij pleyer<ex>e</ex>s of
+        <row><!-- IN for self: checking with JS about the St John's Day here--> 
+         <cell>It<ex>e</ex>m p<ex>ai</ex>d on <rs ref="eats:41188" type="CalendarDay_Liturgical">seynt Iohns daye</rs> at night to iiij pleyer<ex>e</ex>s of
            <rs ref="eats:371629" type="Place_PA_Settlement">lauenham</rs> by my lord<ex>es</ex>
           comaundement </cell>
          <cell rend="right">vj s. viij d.</cell>
