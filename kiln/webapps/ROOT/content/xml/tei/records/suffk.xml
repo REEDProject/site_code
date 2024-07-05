@@ -3398,8 +3398,8 @@
         <row>
          <cell/>
         </row>
-        <row> <!-- AW Note: End of My Person Indexing-->
-         <cell>It<ex>e</ex>m <rs ref="eats:398412" type="Person_Male">Iohn Whytyng sen<ex>ior</ex></rs> &amp; Iohn Browne for <rs
+        <row> 
+         <cell>It<ex>e</ex>m <rs ref="eats:398412" type="Person_Male">Iohn Whytyng sen<ex>ior</ex></rs> &amp; <rs ref="eats:399275" type="Person_Male">Iohn Browne</rs> for <rs
            ref="eats:372289" type="Place_PA_Settlement">waldi<ex>n</ex>gfeld magna</rs> &amp; <rs
            ref="eats:374913" type="Place_PA_Settlement">waldyngfeld</rs> p<ex>ar</ex>ua </cell>
          <cell rend="right">xxij s.</cell>
@@ -3408,7 +3408,7 @@
          <cell/>
         </row>
         <row>
-         <cell>It<ex>e</ex>m of Petyr ffen &amp; Thom<ex>a</ex>s plum<ex>m</ex>e for <rs
+         <cell>It<ex>e</ex>m of <rs ref="eats:399336" type="Person_Male">Petyr ffen</rs> &amp; <rs ref="eats:399369" type="Person_Male">Thom<ex>a</ex>s plum<ex>m</ex>e</rs> for <rs
            ref="eats:372312" type="Place_PA_Settlement">Neyland</rs> xxj s. viij d. &amp;
            rec<ex>eyvid</ex> of other strangers v s.</cell>
          <cell rend="right">xxvj s. viij d.</cell>
@@ -3417,11 +3417,11 @@
          <cell/>
         </row>
         <row>
-         <cell>It<ex>e</ex>m receyvid of the p<ex>ar</ex>son of Boxford </cell>
+         <cell>It<ex>e</ex>m receyvid of the <!-- AW for IN: this might be someone I can find, but it might also be a waste of time-->p<ex>ar</ex>son of Boxford </cell>
          <cell rend="right">v s.</cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m rec<ex>eyvid</ex> of Thom<ex>a</ex>s Garold </cell>
+         <cell>It<ex>e</ex>m rec<ex>eyvid</ex> of <rs ref="eats:399453" type="Person_Male">Thom<ex>a</ex>s Garold</rs> </cell>
          <cell rend="right">vj s. viij d.</cell>
         </row>
         <row>
@@ -3454,7 +3454,7 @@
         <row>
          <cell>ou<ex>er</ex> &amp; besyde xxvj s. viij d. in Petyr ffennys hand<ex>es</ex> which he
           &amp; Thom<ex>a</ex>s plum<ex>m</ex>e rec<ex>eyvid</ex> at the pley by ther own confessyon
-          wherof Neyland brought xxj s. viij d.</cell>
+          wherof <!-- AW for IN: think this is the name of a person based on context?-->Neyland brought xxj s. viij d.</cell>
         </row>
         <row>
          <cell/>
@@ -3616,7 +3616,7 @@
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m of<note type="marginal" place="margin_left">petre ffenne</note> petyr
+         <cell>It<ex>e</ex>m of<note type="marginal" place="margin_left"><rs ref="eats:399336" type="Person_Male">petre ffenne</rs></note> petyr
           ffen in full payment of xxvj s viij d which he receyvid of the township of <rs
            ref="eats:372312" type="Place_PA_Settlement">Neyland</rs> &amp; other at the <rs
            ref="eats:40453" type="Drama_Type">pley</rs> holden in the yere of o<ex>u</ex>r lord god
@@ -3732,7 +3732,7 @@
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>Re<ex>sseyuyd</ex> of rychard clark for a motheter <rs ref="eats:71388"
+         <cell>Re<ex>sseyuyd</ex> of <rs ref="eats:399513" type="Person_Male">rychard clark</rs> for a motheter <rs ref="eats:71388"
            type="Thing_TheatricalCostume">cot</rs> of red of <rs ref="eats:368485"
            type="Drama_Character">saynt necolas</rs><note type="foot">necolas: co <hi rend="italic"
             >written over other letters</hi></note></cell>
@@ -3799,7 +3799,7 @@
          <cell rend="right">xxx s.</cell>
         </row>
        </table>
-
+       <!-- AW Note: End of My Person Indexing-->
        <gap reason="omitted"/>
       </div>
      </div>
@@ -12710,7 +12710,7 @@ patron/troupe -->. </p>
          >Burneby</rs> nere vnto the <rs ref="eats:377727" type="Place_F_Property">Smithes
          fforge</rs> or ells at the house of <rs ref="eats:377509" type="Person_Male">Edmond
          Harys</rs> nere
-          <!--IN for AW: Seems like Hobur Hill is a location? Maybe Haverhill? Worth checking Eckles and contacting JS if unsure-->Hobur<damage><gap
+          <!--AW note: JS was unsure about this location, so I am leaving it ambiguous-->Hobur<damage><gap
           unit="chars" extent="1"/></damage><note type="foot">Hobur<damage><gap unit="chars"
            extent="1"/></damage>: <hi rend="italic">as many as 7 characters erased</hi></note> Hill
         And the said Hullock Everard William Hullock and Prudence his wief Thomas Hullock and Mary
@@ -16660,7 +16660,7 @@ patron/troupe -->. </p>
        entries later, on Sunday 24 August, the prior of Thetford 'paid for my Lord at Bury, for his
        offering ther, followed by some further payments for offerings and alms at Bury. Then the
        Prior paid Buckingham's trumpet 'at the said town [Bury]'. Four entries later he gave 20s 'to
-       the offecerys of the <!-- IN for AW: We don't normally tag text that is being quoted--><rs ref="eats:368503" type="Place_F_ReligiousHouse">Abbey of Bury</rs>.'
+       the offecerys of the Abbey of Bury.'
        Thus the payment on f 91 was made at Bury, not Thetford. </p>
 
       <p> The trumpets paid on f 91 were those of Henry Stafford (1455–1483), second duke of
