@@ -17522,8 +17522,8 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>Et concess<ex>um</ex> est q<ex>uo</ex>d si lusores siue ffistyllatores
-        veniu<ex>eri</ex>nt ad prandiu<ex>m</ex> q<ex>uo</ex>d tu<ex>n</ex>c stipend<ex>ium</ex>
+       <ab>Et concess<ex>um</ex> est q<ex>uo</ex>d si <rs ref="eats:8782" type="Entertainer_Type">lusores</rs> siue <rs ref="eats:1162" type="Entertainer_Type">ffistyllatores</rs>
+        veniu<ex>eri</ex>nt ad <rs ref="eats:40561" type="Entertainment_Type">prandiu<ex>m</ex></rs> q<ex>uo</ex>d tu<ex>n</ex>c stipend<ex>ium</ex>
          eor<ex>um</ex> erit collect<ex>um</ex> ad prandiu<ex>m</ex></ab>
 
        <gap reason="omitted"/>
@@ -17556,16 +17556,16 @@ patron/troupe -->. </p>
        <pb n="1" type="membrane"/>
 
        <gap reason="omitted"/>
-
+ 
        <ab>Et <note type="marginal" place="margin_left"><damage><gap unit="chars" extent="3"
           /></damage>aco'<note type="foot">aco': <hi rend="italic">left edge of membrane missing;
            likely for</hi> Ordinacio</note></note> ordinatu<ex>m</ex> est q<ex>uo</ex>d
-        om<ex>n</ex>es barbitonsores hui<ex>us</ex>
+        om<ex>n</ex>es <rs ref="eats:39147" type="Collective_Occupations">barbitonsores</rs> hui<ex>us</ex>
         <rs ref="eats:369522" type="Place_PA_Settlement">ville</rs> co<ex>m</ex>morant<ex>es</ex>
-         ib<ex>id</ex>em in festo Corp<ex>or</ex>is Chr<ex>ist</ex>i erunt
+         ib<ex>id</ex>em in festo <rs ref="eats:41497" type="CalendarDay_Liturgical">Corp<ex>or</ex>is Chr<ex>ist</ex>i</rs> erunt
          admin<ex>iculari</ex>e<note type="foot">admin<ex>iculari</ex>e: <hi rend="italic">for</hi>
-         adminicularij</note> cu<ex>m</ex> tab<ex>er</ex>nac<ex>u</ex>lo S<ex>anct</ex>i Thome
-         mart<ex>yris</ex> t<ex>r</ex>ansient<ex>e</ex> p<ex>ro</ex>cess<ex>ionaliter</ex>
+          adminicularij</note> cu<ex>m</ex> <!-- IN for self: Tabernacle of St Thomas to be tagged here? --> tab<ex>er</ex>nac<ex>u</ex>lo S<ex>anct</ex>i Thome
+         mart<ex>yris</ex> t<ex>r</ex>ansient<ex>e</ex> <rs ref="eats:40619" type="Entertainment_Type">p<ex>ro</ex>cess<ex>ionaliter</ex></rs>
          p<ex>ro</ex>ut cons<ex>uetidine</ex> ex Antiq<ex>ua</ex> vsit<ex>ati</ex> sint &amp;
          int<ex>er</ex> se eligunt <note type="foot">eligunt: <hi rend="italic">for</hi> eligent <hi
           rend="italic">?</hi></note> ij p<ex>re</ex>posit<ex>os</ex> eiusd<ex>e</ex>m Artis ad
