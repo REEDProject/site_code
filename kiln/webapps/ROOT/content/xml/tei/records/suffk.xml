@@ -17429,9 +17429,9 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>Ad eand<ex>em</ex> Cur<ex>iam</ex> Ioh<ex>ann</ex>es Causton admiss<ex>us</ex> est
-         Burgens<ex>is</ex> intrins<ex>ecus</ex> et h<ex>ab</ex>et exit<ex>us</ex> Ioh<ex>annem</ex>
-         Henr<ex>icum</ex> Thom<ex>am</ex> &amp; Rob<ex>er</ex>tu<ex>m</ex> &amp; Iur<ex>atus</ex>
+       <ab>Ad eand<ex>em</ex> Cur<ex>iam</ex> <rs ref="eats:402249" type="Person_Male">Ioh<ex>ann</ex>es Causton</rs> admiss<ex>us</ex> est
+         Burgens<ex>is</ex> intrins<ex>ecus</ex> et h<ex>ab</ex>et exit<ex>us</ex> <rs ref="eats:402343" type="Person_Male">Ioh<ex>annem</ex></rs>
+         <rs ref="eats:402408" type="Person_Male">Henr<ex>icum</ex></rs> <rs ref="eats:402458" type="Person_StatusOther">Thom<ex>am</ex></rs> &amp; <rs ref="eats:402538" type="Person_Male">Rob<ex>er</ex>tu<ex>m</ex></rs> &amp; Iur<ex>atus</ex>
         est sub condic<ex>i</ex>one q<ex>uo</ex>d idem Ioh<ex>annes</ex> Causton p<ex>er</ex> vij
          A<ex>nn</ex>os p<ex>ro</ex>x<ex>ime</ex> sequ<ex>entes</ex> post dat<ex>am</ex>
          p<ex>re</ex>sent<ex>is</ex> Cur<ex>ie</ex> diligent<ex>er</ex><note type="marginal"
@@ -17440,12 +17440,12 @@ patron/troupe -->. </p>
          attend<ex>et</ex> mi<ex>ni</ex>st<ex>r</ex>abit<note type="foot"
          >mi<ex>ni</ex>st<ex>r</ex>abit: b <hi rend="italic">possibly written over</hi> r</note>
         &amp; custodiet ornamenta quecu<ex>m</ex>q<ex>ue</ex> de lez pagent<ex>es</ex>
-         Gild<ex>e</ex> Corp<ex>or</ex>is Chr<ex>ist</ex>i ac ordinabit &amp; p<ex>re</ex>uidebit
-        circa rep<ex>ar</ex>ac<ex>i</ex>o<ex>n</ex>em de lez pagent<ex>es</ex> &amp; p<ex>ro</ex>
+         <rs ref="eats:402310" type="Collective_GuildsReligious">Gild<ex>e</ex> Corp<ex>or</ex>is Chr<ex>ist</ex>i</rs> ac ordinabit &amp; p<ex>re</ex>uidebit
+        circa rep<ex>ar</ex>ac<ex>i</ex>o<ex>n</ex>em de lez <rs ref="eats:302248" type="Thing_SetMachinery">pagent<ex>es</ex></rs> &amp; p<ex>ro</ex>
          factur<ex>a</ex> de lez Stages p<ex>ro</ex> lusorib<ex>us</ex> tam de villa q<ex>ua</ex>m
-         ex<ex>tr</ex>a vna cu<ex>m</ex> Thoma Bysshop Cl<ex>er</ex>ico Co<ex>mmun</ex>i
+         ex<ex>tr</ex>a vna cu<ex>m</ex> <rs ref="eats:402588" type="Person_Male">Thoma Bysshop</rs> Cl<ex>er</ex>ico Co<ex>mmun</ex>i
          dict<ex>e</ex> ville Gipp<ex>ewic</ex>i p<ex>e</ex>r sup<ex>er</ex>uis<ex>ionem</ex>
-         Ball<ex>iu</ex>or<ex>um</ex> eiusd<ex>e</ex>m ville qui p<ex>ro</ex> temp<ex>or</ex>e
+         <rs ref="eats:402653" type="Collective_Office">Ball<ex>iu</ex>or<ex>um</ex></rs> eiusd<ex>e</ex>m ville qui p<ex>ro</ex> temp<ex>or</ex>e
          fu<ex>er</ex>int capiend<ex>o</ex> o<ex>mn</ex>es &amp; singul<ex>as</ex> expens<ex>as</ex>
         tam <del>de</del> p<ex>ro</ex> rep<ex>ar</ex>ac<ex>i</ex>o<ex>n</ex>e de lez
          pagent<ex>es</ex> q<ex>ua</ex>m p<ex>ro</ex> Conduccio<ex>n</ex>e Arraiament<ex>orum</ex>
@@ -17463,7 +17463,7 @@ patron/troupe -->. </p>
          fact<ex>is</ex> circa p<ex>re</ex>dict<ex>os</ex> lez pagentz Gilde corp<ex>or</ex>is
          chr<ex>ist</ex>i xl s. q<ex>u</ex>ousq<ex>ue</ex> expen<ex>se</ex>
          p<ex>re</ex>dict<ex>e</ex> p<ex>re</ex>fat<ex>o</ex> Ioh<ex>ann</ex>i Caldewell aut eius
-         c<ex>er</ex>t<ex>o</ex> attorn<ex>ato</ex> plenar<ex>ie</ex> fu<ex>er</ex>int
+         c<ex>er</ex>t<ex>o</ex> <rs ref="eats:347292" type="Collective_Occupations">attorn<ex>ato</ex></rs> plenar<ex>ie</ex> fu<ex>er</ex>int
          solut<ex>e</ex> &amp;c.</ab>
 
        <gap reason="omitted"/>
@@ -17475,7 +17475,7 @@ patron/troupe -->. </p>
        <pb n="9" type="folio"/>
 
        <gap reason="omitted"/>
-
+<!-- IN for AW: Tags should be in the transcription, not in the translation --> 
        <ab>At the same
         <!-- AW for IN: I am not sure if a court is a place or an itinerant legal body
         IN for AW: Maybe ask JS if he thinks it would be worth indexing as a location. Personally I would probably not do so, but if he thinks it makes sense to, go ahead-->court, John
