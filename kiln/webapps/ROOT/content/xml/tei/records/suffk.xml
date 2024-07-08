@@ -17376,19 +17376,19 @@ patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab>Ad hanc Cur<ex>iam</ex> Ball<ex>iu</ex>i &amp; tota Co<ex>mmun</ex>itas
-         concesser<ex>unt</ex> Thome Denys Ioh<ex>ann</ex>i Caldewell Will<ex>elm</ex>o Rydout &amp;
-         Ioh<ex>ann</ex>i Causton tot<ex>um</ex> p<ex>ro</ex>fic<ex>ium</ex> ill<ex>ius</ex>
+         concesser<ex>unt</ex> <rs ref="eats:402066" type="Person_Male">Thome Denys</rs> <rs ref="eats:402112" type="Person_Male">Ioh<ex>ann</ex>i Caldewell</rs> <rs ref="eats:402188" type="Person_Male">Will<ex>elm</ex>o Rydout</rs> &amp;
+         <rs ref="eats:402249" type="Person_Male">Ioh<ex>ann</ex>i Causton</rs> tot<ex>um</ex> p<ex>ro</ex>fic<ex>ium</ex> ill<ex>ius</ex>
          ten<ex>ementi</ex> voc<ex>atum</ex>
         <rs ref="eats:376168" type="Place_PA_Settlement">le Merssh</rs> cu<ex>m</ex>
          domib<ex>us</ex> edific<ex>ijs</ex> terr<ex>is</ex> arabil<ex>ibus</ex> prat<ex>is</ex>
          pasc<ex>uis</ex> pastur<ex>is</ex> maress<ex>cis</ex> &amp; om<ex>n</ex>ib<ex>us</ex> Alijs
-        suis p<ex>er</ex>tin<ex>entibus</ex> A festo s<ex>anct</ex>i Mich<ex>ael</ex>is
+        suis p<ex>er</ex>tin<ex>entibus</ex> A festo s<ex>anct</ex>i <rs ref="eats:42598" type="CalendarDay_Liturgical">Mich<ex>ael</ex>is</rs>
          Arch<ex>angel</ex>i vlti<ex>m</ex>o p<ex>re</ex>t<ex>er</ex>ito an<ex>te</ex>
          dat<ex>am</ex> p<ex>re</ex>senc<ex>em</ex> vsq<ex>ue</ex> ad fine<ex>m</ex> &amp;
          t<ex>ermi</ex>nu<ex>m</ex> triu<ex>m</ex> Annoru<ex>m</ex> p<ex>ro</ex>x<ex>ime</ex>
          sequ<ex>entium</ex> complend<ex>orum</ex> Ad Sustentac<ex>ion</ex>em &amp;
-         rep<ex>ar</ex>ac<ex>i</ex>o<ex>n</ex>em de lez pagent<ex>is</ex> Gild Corp<ex>or</ex>is
-         Chr<ex>ist</ex>i p<ex>re</ex>d<ex>i</ex>cte ville <rs ref="eats:369522"
+         rep<ex>ar</ex>ac<ex>i</ex>o<ex>n</ex>em de lez pagent<ex>is</ex> <rs ref="eats:375295" type="Collective_GuildsReligious">Gild Corp<ex>or</ex>is
+         Chr<ex>ist</ex>i</rs> p<ex>re</ex>d<ex>i</ex>cte ville <rs ref="eats:369522"
          type="Place_PA_Settlement">Gippewici</rs></ab>
 
        <gap reason="omitted"/>
@@ -17402,7 +17402,8 @@ patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab>At this
-        <!-- AW for IN: I am not sure if a court is a place or an itinerant legal body-->court, the
+        <!-- AW for IN: I am not sure if a court is a place or an itinerant legal body
+        IN for AW: I wouldn't tag court as a location here.-->court, the
         bailiffs and the whole commonalty granted to Thomas Denys, John Caldewell, William Rydout
         and John Causton all the profit of that tenement called the Merssh along with its houses,
         buildings, arable lands, grazing meadows, marshes, and all its other appurtenances from
