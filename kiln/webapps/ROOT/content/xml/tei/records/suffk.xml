@@ -17479,7 +17479,7 @@ patron/troupe -->. </p>
        <ab>At the same
         <!-- AW for IN: I am not sure if a court is a place or an itinerant legal body
         IN for AW: Maybe ask JS if he thinks it would be worth indexing as a location. Personally I would probably not do so, but if he thinks it makes sense to, go ahead-->court, John
-        Causton was admitted as a resident burgess and he has issue (namely) John, Henry, Thomas,
+        Causton was admitted as a resident <rs ref="eats:297065" type="Collective_Office">burgess</rs> and he has issue (namely) John, Henry, Thomas,
         and Robert, and he was sworn under the condition that the same John Causton shall for the
         seven years next following after the date of the present court diligently<note
          type="marginal" place="margin_left">Burgess conditionally</note> faithfully and assiduously
@@ -17710,11 +17710,11 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>Et ordinat<ex>um</ex> est q<ex>uo</ex>d quili<ex>be</ex>t Burgens<ex>is</ex> qui non
-        soluit den<ex>arios</ex> p<ex>ro</ex> corp<ex>or</ex>e chr<ex>ist</ex>i q<ex>uo</ex>d<note
+       <ab>Et ordinat<ex>um</ex> est q<ex>uo</ex>d quili<ex>be</ex>t <rs ref="eats:297065" type="Collective_Office">Burgens<ex>is</ex></rs> qui non
+        soluit den<ex>arios</ex> p<ex>ro</ex> <rs ref="eats:41497" type="CalendarDay_Liturgical">corp<ex>or</ex>e chr<ex>ist</ex>i</rs> q<ex>uo</ex>d<note
          type="foot">q<ex>uo</ex>d: <hi rend="italic">for deletion</hi></note> solu<ex>er</ex>it
          den<ex>arios</ex> p<ex>re</ex>dict<ex>os</ex> a<ex>n</ex>te d<ex>omi</ex>nicam
-         an<ex>te</ex> festu<ex>m</ex> Nat<ex>iuitatis</ex> b<ex>eat</ex>e Marie
+         an<ex>te</ex> <rs ref="eats:160090" type="CalendarDay_Liturgical">festu<ex>m</ex> Nat<ex>iuitatis</ex> b<ex>eat</ex>e Marie</rs>
          p<ex>ro</ex>x<ex>imum</ex> futur<ex>um</ex> sinautem q<ex>uo</ex>d sint ad
          p<ex>ro</ex>x<ex>imam</ex> Cur<ex>iam</ex> gen<ex>er</ex>al<ex>em</ex> ad dicend<ex>um</ex>
         si quid p<ex>ro</ex> eis h<ex>ab</ex>eant ad dic<ex>endum</ex> sciant quare non
@@ -17722,21 +17722,21 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>Et concess<ex>um</ex> est Will<ex>ielm</ex>o p<ex>er</ex>nell in
+       <ab>Et concess<ex>um</ex> est <rs ref="eats:402723" type="Person_Male">Will<ex>ielm</ex>o p<ex>er</ex>nell</rs> in
         recompensac<ex>ion</ex>em illius monete que sibi debent<ex>ur</ex><note type="foot"
           >debent<ex>ur</ex>: <hi rend="italic">for</hi> debetur</note> p<ex>ro</ex> lez pagent
          videl<ex>ici</ex>t illos den<ex>arios</ex> quos<note type="foot">illos den<ex>arios</ex>
          quos: <hi rend="italic">for</hi> illi denarij qui</note> su<ex>n</ex>t in manib<ex>us</ex>
          Burgens<ex>ium</ex> non solutos<note type="foot">solutos: <hi rend="italic">for</hi>
-         soluti</note> p<ex>ro</ex> prandio</ab>
+         soluti</note> p<ex>ro</ex> <rs ref="eats:40561" type="Entertainment_Type">prandio</rs></ab>
 
        <ab>Et ordina<ex>uerunt</ex> q<ex>uo</ex>d quili<ex>b</ex>et Burgens<ex>is</ex> soluet
-        annuatim Gilde Corp<ex>or</ex>i Chr<ex>ist</ex>i viij d. &amp; non ha<ex>be</ex>bunt
+        annuatim <rs ref="eats:402310" type="Collective_GuildsReligious">Gilde Corp<ex>or</ex>i Chr<ex>ist</ex>i</rs> viij d. &amp; non ha<ex>be</ex>bunt
          p<ex>ran</ex>diu<ex>m</ex>
         <pb n="57" type="page"/></ab>
 
        <ab>Et elig<ex>er</ex>unt Will<ex>el</ex>m<ex>um</ex> P<ex>er</ex>nell &amp;
-        Ioh<ex>ann</ex>em Balhed ad custodiend<ex>um</ex> om<ex>n</ex>ia vtencilia &amp;
+        <rs ref="eats:388545" type="Person_Male">Ioh<ex>ann</ex>em Balhed</rs> ad custodiend<ex>um</ex> om<ex>n</ex>ia vtencilia &amp;
          ornament<ex>a</ex> Corporis Chr<ex>ist</ex>i decet<ex>er</ex>o</ab>
 
        <gap reason="omitted"/>
@@ -17785,8 +17785,8 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>Ad hanc Cur<ex>iam</ex> eligeru<ex>n</ex>t Ioh<ex>ann</ex>em Regner
-         Inburgens<ex>iam</ex><note type="foot">Inburgens<ex>iam</ex>: <hi rend="italic">for</hi> in
+       <ab>Ad hanc Cur<ex>iam</ex> eligeru<ex>n</ex>t <rs ref="eats:402849" type="Person_Male">Ioh<ex>ann</ex>em Regner</rs>
+         <rs ref="eats:297065" type="Collective_Office">Inburgens<ex>iam</ex></rs><note type="foot">Inburgens<ex>iam</ex>: <hi rend="italic">for</hi> in
          burgensiam</note> Intrinc<ex>ecam</ex> sub ista tamen Condic<ex>i</ex>o<ex>n</ex>e
          q<ex>uo</ex>d decetero erit co<ex>m</ex>morans &amp; residens infra villa<ex>m</ex>
         <rs ref="eats:369522" type="Place_PA_Settlement">Gippi<ex>wici</ex></rs> &amp;
