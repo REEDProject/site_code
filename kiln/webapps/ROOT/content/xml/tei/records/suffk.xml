@@ -17784,7 +17784,7 @@ patron/troupe -->. </p>
        <pb n="116" type="page"/>
 
        <gap reason="omitted"/>
-
+       <!-- IN for self: Have to figure out how to tag the pageant here -->
        <ab>Ad hanc Cur<ex>iam</ex> eligeru<ex>n</ex>t <rs ref="eats:402849" type="Person_Male">Ioh<ex>ann</ex>em Regner</rs>
          <rs ref="eats:297065" type="Collective_Office">Inburgens<ex>iam</ex></rs><note type="foot">Inburgens<ex>iam</ex>: <hi rend="italic">for</hi> in
          burgensiam</note> Intrinc<ex>ecam</ex> sub ista tamen Condic<ex>i</ex>o<ex>n</ex>e
@@ -17792,8 +17792,8 @@ patron/troupe -->. </p>
         <rs ref="eats:369522" type="Place_PA_Settlement">Gippi<ex>wici</ex></rs> &amp;
          scilic<ex>et</ex> erit auxiliator in om<ex>n</ex>ib<ex>us</ex> p<ex>ro</ex> le pagent de
          Corp<ex>or</ex>e Chr<ex>ist</ex>i s<ex>e</ex>c<ex>un</ex>d<ex>u</ex>m suu<ex>m</ex>
-         Ingeniu<ex>m</ex> in faciendo &amp; emendand<ex>o</ex> libru<ex>m</ex> Corp<ex>or</ex>is
-         Chr<ex>ist</ex>i &amp; nic<ex>hi</ex>ll h<ex>ab</ex>et ex<ex>tra</ex> &amp;
+         Ingeniu<ex>m</ex> in faciendo &amp; emendand<ex>o</ex> <rs ref="eats:328770" type="Thing_BookPlayMusic">libru<ex>m</ex> Corp<ex>or</ex>is
+         Chr<ex>ist</ex>i</rs> &amp; nic<ex>hi</ex>ll h<ex>ab</ex>et ex<ex>tra</ex> &amp;
          Iur<ex>atus</ex> est</ab>
 
        <ab>Ad hanc Cur<ex>iam</ex> <rs ref="eats:403458" type="Person_Male">Nich<ex>ola</ex>us Baker</rs> <rs ref="eats:403508" type="Person_Male">Ioh<ex>ann</ex>es hamond</rs>
@@ -17803,21 +17803,21 @@ patron/troupe -->. </p>
          p<ex>ro</ex>x<ex>imam</ex> Cur<ex>iam</ex> &amp;c ad dicend<ex>um</ex> si quid p<ex>ro</ex>
         eis h<ex>ab</ex>eant aut dicere sciant quar<ex>e</ex> non p<ex>er</ex>derent
         lib<ex>er</ex>tatem suam Burgens<ex>ie</ex> p<ex>ro</ex> eo q<ex>uo</ex>d nolu<ex>n</ex>t
-        soluere ad sustentac<ex>ion</ex>em Gilde Corp<ex>or</ex>is Chr<ex>ist</ex>i
+        soluere ad sustentac<ex>ion</ex>em <rs ref="eats:402310" type="Collective_GuildsReligious">Gilde Corp<ex>or</ex>is Chr<ex>ist</ex>i</rs>
          s<ex>e</ex>cund<ex>u</ex>m ordinac<ex>i</ex>o<ex>n</ex>em &amp; consuetudi<ex>n</ex>em
         ville Gippi<ex>wici</ex> p<ex>ro</ex>ut Iurat<ex>i</ex> erant &amp;c</ab>
 
        <ab>Ad hanc Cur<ex>iam</ex>
-        <del>eleg</del> eliger<ex>u</ex>nt Gardian<ex>os</ex> Gilde Corp<ex>or</ex>is
-         Chr<ex>ist</ex>i videl<ex>ice</ex>t Vi<ex>n</ex>c<ex>entiu</ex>m fferyngton
-        Joh<ex>ann</ex>em Keche Thomam Phelyp<ex>s</ex> &amp; Rob<ex>er</ex>tum Halle Sherman
-         p<ex>ro</ex> anno Sequ<ex>enti</ex> &amp; quod Custodi<ex>a</ex>nt prandiu<ex>m</ex>
+        <del>eleg</del> eliger<ex>u</ex>nt <rs ref="eats:403996" type="Collective_Office">Gardian<ex>os</ex></rs> Gilde Corp<ex>or</ex>is
+         Chr<ex>ist</ex>i videl<ex>ice</ex>t <rs ref="eats:404018" type="Person_Male">Vi<ex>n</ex>c<ex>entiu</ex>m fferyngton</rs>
+        <rs ref="eats:404083" type="Person_Male">Joh<ex>ann</ex>em Keche</rs> <rs ref="eats:404148" type="Person_Male">Thomam Phelyp<ex>s</ex></rs> &amp; <rs ref="eats:404213" type="Person_Male">Rob<ex>er</ex>tum Halle</rs> <rs ref="eats:39002" type="Collective_Occupations">Sherman</rs>
+         p<ex>ro</ex> anno Sequ<ex>enti</ex> &amp; quod Custodi<ex>a</ex>nt <rs ref="eats:40561" type="Entertainment_Type">prandiu<ex>m</ex></rs>
          p<ex>ro</ex>ut p<ex>ri</ex>us Soleba<ex>n</ex>t aliquo actu p<ex>ri</ex>us in contrario
         facto Innic<ex>hi</ex>ll<note type="foot">Innic<ex>hi</ex>ll: <hi rend="italic">for</hi> in
          nichill</note> obstant<ex>i</ex> &amp; q<ex>uo</ex>d quil<ex>ibe</ex>t Burgensis Soluat
          p<ex>ro</ex> prandio xvj d.</ab>
 
-       <ab>Ad eand<ex>e</ex>m Cur<ex>iam</ex> concesserunt pro sustentacione le pagent talem
+       <ab>Ad eand<ex>e</ex>m Cur<ex>iam</ex> concesserunt pro sustentacione le <rs ref="eats:302248" type="Thing_SetMachinery">pagent</rs> talem
          Su<ex>m</ex>ma<ex>m</ex> de artificibus p<ex>ro</ex>ut h<ex>ab</ex>uerunt
          <del>proximo</del> anno p<ex>re</ex>t<ex>er</ex>ito</ab>
       </div>
@@ -17867,13 +17867,13 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Generosi <lb/> Pewterer<ex>es</ex>
-          <lb/> plomer<ex>es</ex>
-          <lb/> Masonnys <lb/> Tyler<ex>es</ex>
-          <lb/> Sadeler<ex>es</ex>
-          <lb/> armerer<ex>es</ex><note type="foot">Generosi … armerer<ex>es</ex>: <hi rend="italic"
+         <cell>Generosi <lb/> <rs ref="eats:400102" type="Collective_GuildsOccupational">Pewterer<ex>es</ex></rs>
+          <lb/> <rs ref="eats:400135" type="Collective_GuildsOccupational">plomer<ex>es</ex></rs>
+          <lb/> <rs ref="eats:400213" type="Collective_GuildsOccupational">Masonnys</rs> <lb/> <rs ref="eats:400250" type="Collective_GuildsOccupational">Tyler<ex>es</ex></rs>
+          <lb/> <rs ref="eats:400168" type="Collective_GuildsOccupational">Sadeler<ex>es</ex></rs>
+          <lb/> <rs ref="eats:400416" type="Collective_GuildsOccupational">armerer<ex>es</ex></rs><note type="foot">Generosi … armerer<ex>es</ex>: <hi rend="italic"
             >joined on the right by brace</hi></note></cell>
-         <cell>Ioh<ex>an</ex>ne Pytt <lb/> Alysand<ex>er</ex> Hartt<note type="foot"
+         <cell><rs ref="eats:404282" type="Person_Male">Ioh<ex>an</ex>ne Pytt</rs> <lb/> <rs ref="eats:404343" type="Person_Male">Alysand<ex>er</ex> Hartt</rs><note type="foot"
            >Joh<ex>an</ex>ne … Hartt: <hi rend="italic">joined on the right by brace</hi></note>
           <lb/>
           <lb/> p<ex>ro</ex> s<ex>an</ex>c<ex>t</ex>o Georgio <lb/>
@@ -17885,8 +17885,8 @@ patron/troupe -->. </p>
         <row>
          <cell>
           <lb/>
-          <lb/> Taylour<ex>es</ex></cell>
-         <cell>Rechard Goodwyn <lb/> iiij s. ij d.<note type="foot"> iiij s. ij d.: <hi
+          <lb/> <rs ref="eats:400486" type="Collective_GuildsOccupational">Taylour<ex>es</ex></rs></cell>
+         <cell><rs ref="eats:404404" type="Person_Male">Rechard Goodwyn</rs> <lb/> iiij s. ij d.<note type="foot"> iiij s. ij d.: <hi
             rend="italic">underlined</hi></note>
           <lb/> p<ex>ro</ex> s<ex>an</ex>c<ex>t</ex>o Ioh<ex>an</ex>ne</cell>
         </row>
@@ -17896,10 +17896,10 @@ patron/troupe -->. </p>
         <row>
          <cell>
           <lb/>
-          <lb/> Goldsmythis <lb/> Blaksmythis <lb/> Loksmythis <lb/> Bladsmythis<note type="foot"
+          <lb/> <rs ref="eats:400523" type="Collective_GuildsOccupational">Goldsmythis</rs> <lb/> <rs ref="eats:400560" type="Collective_GuildsOccupational">Blaksmythis</rs> <lb/> <rs ref="eats:400597" type="Collective_GuildsOccupational">Loksmythis</rs> <lb/> <rs ref="eats:400630" type="Collective_GuildsOccupational">Bladsmythis</rs><note type="foot"
            >Goldsmythis … Bladsmythis: <hi rend="italic">joined by brace on the
           right</hi></note></cell>
-         <cell>Petur Lodbrok <lb/> Rob<ex>er</ex>t Lynncoln <lb/> iij s.<note type="foot">iij s.:
+         <cell><rs ref="eats:404465" type="Person_Male">Petur Lodbrok</rs> <lb/> <rs ref="eats:404526" type="Person_Male">Rob<ex>er</ex>t Lynncoln</rs> <lb/> iij s.<note type="foot">iij s.:
             <hi rend="italic">underlined</hi></note>
           <lb/> p<ex>ro</ex> s<ex>an</ex>c<ex>t</ex>o Elagio<lb/></cell>
         </row>
