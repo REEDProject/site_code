@@ -18045,7 +18045,7 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>Et concess<ex>erunt</ex> ad rep<ex>ar</ex>ac<ex>ion</ex>em de lez pagent tal<ex>em</ex>
+       <ab>Et concess<ex>erunt</ex> ad rep<ex>ar</ex>ac<ex>ion</ex>em de lez <rs ref="eats:302248" type="Thing_SetMachinery">pagent</rs> tal<ex>em</ex>
          sum<ex>m</ex>am &amp; consimilem sicut soluer<ex>unt</ex> vlti<ex>mo</ex> anno de
          artificib<ex>us</ex> leuand<ex>am</ex></ab>
       </div>
@@ -18064,6 +18064,7 @@ patron/troupe -->. </p>
     </body>
    </text>
    <text type="record" xml:id="suffk-rid336">
+    <!-- IN: DO NOT INDEX YET -->
     <body>
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522"
        type="Place_PA_Settlement">Ipswich</rs>
@@ -18115,7 +18116,7 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>ffower Guild wardens elected./</ab>
+       <ab>ffower <rs ref="eats:403996" type="Collective_Office">Guild wardens</rs> elected./</ab>
 
        <ab>Corpus Chr<ex>ist</ex>i pageant shall be provided at the charge of suche as have been
         used.</ab>
@@ -18141,7 +18142,7 @@ patron/troupe -->. </p>
        <pb n="1" type="folio"/>
 
        <ab>Howe eu<ex>er</ex>y occupac<ex>i</ex>on or Crafft<ex>es</ex> men Shuld order them
-         Selff<ex>es</ex> in ther going w<ex>i</ex>th ther pagant<ex>es</ex> in the procession of
+         Selff<ex>es</ex> in ther going w<ex>i</ex>th ther <rs ref="eats:302248" type="Thing_SetMachinery">pagant<ex>es</ex></rs> in the procession of
          Corp<ex>us</ex> Chr<ex>ist</ex>i</ab>
       </div>
       <div>
@@ -18150,9 +18151,9 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Gen<ex>er</ex>osi <lb/> pewt<ex>er</ex>ars <lb/> plomars <lb/> Sadars<note
+         <cell>Gen<ex>er</ex>osi <lb/> <rs ref="eats:400102" type="Collective_GuildsOccupational">pewt<ex>er</ex>ars</rs> <lb/> <rs ref="eats:400135" type="Collective_GuildsOccupational">plomars</rs> <lb/> <rs ref="eats:400168" type="Collective_GuildsOccupational">Sadars</rs><note
            type="foot">Sadars: <hi rend="italic">for</hi> Sadlars</note>
-          <lb/> Masons <lb/> Tyllers <lb/> Armorars<note type="foot">Gen<ex>er</ex>osi … Armorars:
+          <lb/> <rs ref="eats:400213" type="Collective_GuildsOccupational">Masons</rs> <lb/> <rs ref="eats:400250" type="Collective_GuildsOccupational">Tyllers</rs> <lb/> <rs ref="eats:400416" type="Collective_GuildsOccupational">Armorars</rs><note type="foot">Gen<ex>er</ex>osi … Armorars:
             <hi rend="italic">joined by right pointing brace</hi>
           </note></cell>
          <cell>Seint Gorge</cell>
@@ -18161,15 +18162,15 @@ patron/troupe -->. </p>
          <cell/>
         </row>
         <row>
-         <cell>Taylors/ Seint Iohn</cell>
+         <cell><rs ref="eats:400486" type="Collective_GuildsOccupational">Taylors</rs>/ Seint Iohn</cell>
          <cell><hi rend="italic">(blank)</hi></cell>
         </row>
         <row>
          <cell/>
         </row>
         <row>
-         <cell>Goldsmythes <lb/> Blaksmythes <lb/> Loksmythes <lb/> Blaksmythes<note type="foot"
-           >Blaksmythes: <hi rend="italic">probably an error for</hi> Bladsmythes</note><note
+         <cell><rs ref="eats:400523" type="Collective_GuildsOccupational">Goldsmythes</rs> <lb/> <rs ref="eats:400560" type="Collective_GuildsOccupational">Blaksmythes</rs> <lb/> <rs ref="eats:400597" type="Collective_GuildsOccupational">Loksmythes</rs> <lb/> Blaksmythes<note type="foot"
+           >Blaksmythes: <hi rend="italic">probably an error for</hi> <rs ref="eats:400630" type="Collective_GuildsOccupational">Bladsmythes</rs></note><note
            type="foot">Goldsmythes … Blaksmythes: <hi rend="italic">joined by right pointing
             brace</hi></note>
          </cell>
@@ -18179,7 +18180,7 @@ patron/troupe -->. </p>
          <cell/>
         </row>
         <row>
-         <cell>Barbo<ex>ur</ex>s <lb/> waxchandelers<note type="foot">Barbo<ex>ur</ex>s
+         <cell><rs ref="eats:400663" type="Collective_GuildsOccupational">Barbo<ex>ur</ex>s</rs> <lb/> <rs ref="eats:400700" type="Collective_GuildsOccupational">waxchandelers</rs><note type="foot">Barbo<ex>ur</ex>s
            waxchandelers: <hi rend="italic">joined by right pointing brace</hi></note>
           <lb/> Seint Thomas</cell>
          <cell><hi rend="italic">(blank)</hi></cell>
