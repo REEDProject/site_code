@@ -17120,7 +17120,7 @@ patron/troupe -->. </p>
        <head>f 72v, col 1</head>
        <pb n="72v" type="folio"/>
 
-       <ab rend="center">Le pagent p<ex>ro</ex> corp<ex>or</ex>e Chr<ex>ist</ex>i</ab>
+       <ab rend="center">Le <rs ref="eats:403978" type="Drama_Type">pagent</rs> p<ex>ro</ex> corp<ex>or</ex>e Chr<ex>ist</ex>i</ab>
 
        <table>
         <row>
@@ -17311,8 +17311,8 @@ patron/troupe -->. </p>
        <head>f 72, col 1</head>
        <pb n="72" type="folio"/>
 
-       <ab>s<note type="foot">s: <hi rend="italic">for erasure (?)</hi></note> lez pagentz</ab>
-<!-- IN to self: Need to consult with SB about tagging pageants here -->
+       <ab>s<note type="foot">s: <hi rend="italic">for erasure (?)</hi></note> lez <rs ref="eats:403978" type="Drama_Type">pagentz</rs></ab>
+
        <ab>⸿ Saynt George</ab>
 
        <ab>⸿ Saynt loy</ab>
@@ -17387,7 +17387,7 @@ patron/troupe -->. </p>
          dat<ex>am</ex> p<ex>re</ex>senc<ex>em</ex> vsq<ex>ue</ex> ad fine<ex>m</ex> &amp;
          t<ex>ermi</ex>nu<ex>m</ex> triu<ex>m</ex> Annoru<ex>m</ex> p<ex>ro</ex>x<ex>ime</ex>
          sequ<ex>entium</ex> complend<ex>orum</ex> Ad Sustentac<ex>ion</ex>em &amp;
-         rep<ex>ar</ex>ac<ex>i</ex>o<ex>n</ex>em de lez pagent<ex>is</ex> <rs ref="eats:402310" type="Collective_GuildsReligious">Gild Corp<ex>or</ex>is
+         rep<ex>ar</ex>ac<ex>i</ex>o<ex>n</ex>em de lez <rs ref="eats:403978" type="Drama_Type">pagent<ex>is</ex></rs> <rs ref="eats:402310" type="Collective_GuildsReligious">Gild Corp<ex>or</ex>is
          Chr<ex>ist</ex>i</rs> p<ex>re</ex>d<ex>i</ex>cte ville <rs ref="eats:369522"
          type="Place_PA_Settlement">Gippewici</rs></ab>
 
@@ -17439,7 +17439,7 @@ patron/troupe -->. </p>
          fidelit<ex>er</ex> &amp; Assidue s<ex>e</ex>c<ex>un</ex>d<ex>u</ex>m suu<ex>m</ex> posse
          attend<ex>et</ex> mi<ex>ni</ex>st<ex>r</ex>abit<note type="foot"
          >mi<ex>ni</ex>st<ex>r</ex>abit: b <hi rend="italic">possibly written over</hi> r</note>
-        &amp; custodiet ornamenta quecu<ex>m</ex>q<ex>ue</ex> de lez pagent<ex>es</ex>
+        &amp; custodiet ornamenta quecu<ex>m</ex>q<ex>ue</ex> de lez <rs ref="eats:403978" type="Drama_Type">pagent<ex>es</ex></rs>
          <rs ref="eats:402310" type="Collective_GuildsReligious">Gild<ex>e</ex> Corp<ex>or</ex>is Chr<ex>ist</ex>i</rs> ac ordinabit &amp; p<ex>re</ex>uidebit
         circa rep<ex>ar</ex>ac<ex>i</ex>o<ex>n</ex>em de lez <rs ref="eats:302248" type="Thing_SetMachinery">pagent<ex>es</ex></rs> &amp; p<ex>ro</ex>
          factur<ex>a</ex> de lez Stages p<ex>ro</ex> lusorib<ex>us</ex> tam de villa q<ex>ua</ex>m
@@ -17711,7 +17711,7 @@ patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab>Et ordinat<ex>um</ex> est q<ex>uo</ex>d quili<ex>be</ex>t <rs ref="eats:297065" type="Collective_Office">Burgens<ex>is</ex></rs> qui non
-        soluit den<ex>arios</ex> p<ex>ro</ex> <rs ref="eats:41497" type="CalendarDay_Liturgical">corp<ex>or</ex>e chr<ex>ist</ex>i</rs> q<ex>uo</ex>d<note
+        soluit den<ex>arios</ex> p<ex>ro</ex> <rs ref="eats:403978" type="Drama_Type">corp<ex>or</ex>e chr<ex>ist</ex>i</rs> q<ex>uo</ex>d<note
          type="foot">q<ex>uo</ex>d: <hi rend="italic">for deletion</hi></note> solu<ex>er</ex>it
          den<ex>arios</ex> p<ex>re</ex>dict<ex>os</ex> a<ex>n</ex>te d<ex>omi</ex>nicam
          an<ex>te</ex> <rs ref="eats:160090" type="CalendarDay_Liturgical">festu<ex>m</ex> Nat<ex>iuitatis</ex> b<ex>eat</ex>e Marie</rs>
@@ -18667,7 +18667,7 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>Corp<ex>us</ex> Chr<ex>ist</ex>i pageant and <rs ref="eats:40561" type="Entertainment_Type">dinner</rs> againe laid aside.</ab>
+       <ab><rs ref="eats:403978" type="Drama_Type">Corp<ex>us</ex> Chr<ex>ist</ex>i pageant</rs> and <rs ref="eats:40561" type="Entertainment_Type">dinner</rs> againe laid aside.</ab>
 
        <gap reason="omitted"/>
       </div>
