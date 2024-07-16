@@ -20123,7 +20123,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m to my lord mounttegles bearward at mr balyves
+         <cell>It<ex>e</ex>m to my <rs ref="eats:408416" type="Collective_Troupe">lord mounttegles bearward</rs> at <rs ref="eats:402653" type="Collective_Office">mr balyves</rs>
           co<ex>m</ex>manddyment</cell>
          <cell rend="right">vj s. viij d.</cell>
         </row>
@@ -20138,7 +20138,7 @@ patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <table>
-        <row>
+        <row><!-- IN for self: Need to return to William Foskew(/Fortescue?)-->
          <cell>It<ex>e</ex>m ye 3 of Iuli to s<ex>i</ex>r wyllyam foskews players </cell>
          <cell rend="right">x s.</cell>
         </row>
@@ -20154,7 +20154,7 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m to my lorde stranghis players </cell>
+         <cell>It<ex>e</ex>m to my <rs ref="eats:50416" type="Collective_Troupe">lorde stranghis players</rs> </cell>
          <cell rend="right">x s.</cell>
         </row>
        </table>
@@ -20163,8 +20163,8 @@ patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m ye satter day before mydsommer day to <hi rend="italic">(blank)</hi>
-          players </cell>
+         <cell>It<ex>e</ex>m ye satter day before <rs ref="eats:42682" type="CalendarDay_Secular">mydsommer day</rs> to <hi rend="italic">(blank)</hi>
+          <rs ref="eats:8782" type="Entertainer_Type">players</rs> </cell>
          <cell rend="right">x s.</cell>
         </row>
        </table>
@@ -20212,8 +20212,7 @@ patron/troupe -->.</p>
        thereafter (on f [4]) was made on 16 March.</p>
 
       <p> William Stanley (<hi rend="italic">c</hi> 1527-1581) was third Lord Monteagle from 25
-       August 1560, with seat at Hornby Castle, Lancashire. See <title>P&amp;P</title><!-- IN to
-add link to patron/troupe -->.</p>
+       August 1560, with seat at Hornby Castle, Lancashire. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315875"><title>P&amp;P</title></ref>.</p>
 
       <p> Henry Stanley (f [5]; September 1531–September 1593) was Lord Strange from 1531, with
        residences at Stanley House, Chester, Cheshire and at various places in Lancashire. See
