@@ -127,7 +127,6 @@
                     </head>
                     <div xml:lang="lat" type="transcription"
                         xml:id="yorkc-ridp141501981-transcription">
-                        <div>
                             <head> f 252v</head>
                             <pb n="252v" type="folio"/>
                             <ab> Ordo paginaru<ex>m</ex>
@@ -162,7 +161,7 @@
                                 <row>
                                     <cell>
                                         <rs ref="eats:393980" type="Collective_GuildsOccupational"
-                                            >Tannours</rs>
+                                            >Tannours&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</rs>
                                     </cell>
                                     <cell>
                                         <rs ref="eats:394697" type="Drama_Character">Deus
@@ -1575,9 +1574,7 @@
                                 </row>
                             </table>
                         </div>
-                        </div>
-                        <div type="translation"
-                            xml:id="yorkc-ridp141501981-translation">
+                    <div xml:lang="eng" type="translation">
                             <div>
                                 <head>
                                     <!--Membrane/Folio number goes here. Use mb for membrance and f for folio]-->
