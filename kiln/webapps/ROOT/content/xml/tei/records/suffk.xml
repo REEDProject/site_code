@@ -24937,7 +24937,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m to <rs ref="eats:415621" type="Person_Male">Thomas Stevenson</rs> for a shewe vppon <rs ref="eats:411404" type="CalendarDay_Secular">Crownac<ex>i</ex>on daye</rs> 1595 </cell>
+         <cell>It<ex>e</ex>m to <rs ref="eats:415621" type="Person_Male">Thomas Stevenson</rs> for a <rs ref="eats:62012" type="Entertainment_Type">shewe</rs> vppon <rs ref="eats:411404" type="CalendarDay_Secular">Crownac<ex>i</ex>on daye</rs> 1595 </cell>
          <cell rend="right">iij li. vi s. viij d. </cell>
         </row>
        </table>
@@ -25011,11 +25011,11 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
 
        <ab>It is Agreed that there shalbe xl<hi rend="superscript">s</hi>paid by the <rs
          ref="eats:369522" type="Place_PA_Settlement">towne</rs> toward<ex>es</ex> A
-         <del>shewe</del> &amp; speche to be made vppon Coronac<ex>i</ex>on daie And <del>th</del>
+         <del><rs ref="eats:62012" type="Entertainment_Type">shewe</rs></del> &amp; <rs ref="eats:41951" type="Entertainment_Type">speche</rs> to be made vppon <rs ref="eats:411404" type="CalendarDay_Secular">Coronac<ex>i</ex>on daie</rs> And <del>th</del>
         Alsoe ‸<add place="above">þ<ex>a</ex>t</add> there shalbe <del>pa del</del> bestowed xl<hi
          rend="superscript">s</hi> ‸<add place="above">to be spent the same daie</add>in powder in
         the shewing &amp; trayning of the <del>ordern</del> order<ex>n</ex>arie ff<ex>oot</ex>
-        soldiers of this towne /.</ab>
+        <rs ref="eats:300316" type="Collective_Occupations">soldiers</rs> of this towne /.</ab>
 
        <gap reason="omitted"/>
       </div>
