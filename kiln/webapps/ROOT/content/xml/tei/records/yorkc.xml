@@ -1575,8 +1575,8 @@
                                 </row>
                             </table>
                         </div>
-                        <!-- The section below is only needed if your record also contains a translation. The div type will always be translation in this section. The xml:id must match the one above, except with a -translation at the end.  -->
-                        <div xml:lang="eng" type="translation"
+                        </div>
+                        <div type="translation"
                             xml:id="yorkc-ridp141501981-translation">
                             <div>
                                 <head>
@@ -2363,7 +2363,6 @@
                                 </ab>
                             </div>
                         </div>
-                    </div>
                     <div type="endnote">
                         <p>This 'ordo gathering' has been published in part by Drake in <hi
                                 rend="italic">Eboracum</hi>, Smith in <hi rend="italic">York
