@@ -3417,7 +3417,7 @@
          <cell/>
         </row>
         <row>
-         <cell>It<ex>e</ex>m receyvid of the <!-- AW for IN: this might be someone I can find, but it might also be a waste of time-->p<ex>ar</ex>son of Boxford </cell>
+         <cell>It<ex>e</ex>m receyvid of the <!-- AW for IN: this might be someone I can find, but it might also be a waste of time. IN for AW: Doubtful that a person ID could be found here. Have tagged this as parish clergy. --><rs ref="eats:9186" type="Collective_Clergy">p<ex>ar</ex>son</rs> of Boxford </cell>
          <cell rend="right">v s.</cell>
         </row>
         <row>
@@ -3454,7 +3454,9 @@
         <row>
          <cell>ou<ex>er</ex> &amp; besyde xxvj s. viij d. in Petyr ffennys hand<ex>es</ex> which he
           &amp; Thom<ex>a</ex>s plum<ex>m</ex>e rec<ex>eyvid</ex> at the pley by ther own confessyon
-          wherof <!-- AW for IN: think this is the name of a person based on context?-->Neyland brought xxj s. viij d.</cell>
+          wherof <!-- AW for IN: think this is the name of a person based on context? 
+           IN for AW: Seems likely to me. I'd suggest you check with JS via spreadsheet. I see that Neyland has been tagged as location above, so not sure if both are references to a person or a location. -->
+          Neyland brought xxj s. viij d.</cell>
         </row>
         <row>
          <cell/>
@@ -4088,7 +4090,7 @@
        <head>single sheet <supplied>( Bill of complaint)</supplied></head>
        <pb n="1" type="sheet"/>
        
-       <ab rend="center">To <rs ref="eats:400347" type="Person_Male">the reu<ex>er</ex>end ffather</rs> in god my lord Cardinall legate A
+       <ab rend="center">To <rs ref="eats:171004" type="Person_Male">the reu<ex>er</ex>end ffather</rs> in god my lord Cardinall legate A
         latere<lb/> Archebisshop of york Primate of Englond And Chauncler of the same</ab>
 
        <ab>In most humble wyse shewyth &amp; compleynyth vnto yo<ex>ur</ex> grace yo<ex>ur</ex> trew
@@ -4105,7 +4107,7 @@
          type="CrimesMisdemeanors">Riotto<ex>ur</ex>s</rs> and in Riottous man<ex>ner</ex> at Bungey
         aforeyd at xj of the clok on the frydaye at nyght nex aft<ex>er</ex>
         <rs ref="eats:41497" type="CalendarDay_Liturgical">Corpus chr<ex>ist</ex>i day</rs> in the
-        sixthe yere of the most noble reygn of <!-- AW for IN: do I tag people mentioned rhetorically? this isn't important to the text-->Kyng Henry tha now is and at that tyme the seyd
+        sixthe yere of the most noble reygn of <!-- AW for IN: do I tag people mentioned rhetorically? this isn't important to the text. IN: No, don't tag monarchs if mention is only to do with the year of their reign -->Kyng Henry tha now is and at that tyme the seyd
         Richard warton Thomas &amp; Iohn brake &amp; threw down ffyve <rs ref="eats:302248"
          type="Thing_SetMachinery">pagent<ex>es</ex></rs> of yo<ex>ur</ex> seyd
          inhabit<ex>a</ex>unt<ex>es</ex> that is to sey hevyn pagent the pagent of all the world
@@ -4707,7 +4709,7 @@
        <table>
         <row>
          <cell>It<ex>e</ex>m paid to <rs ref="eats:407094" type="Person_Male">will<ex>ia</ex>m Ellys </rs>for the <rs ref="eats:40398"
-           type="Drama_Type">Int<ex>er</ex>lude</rs> &amp; game Booke </cell>
+           type="Drama_Type">Int<ex>er</ex>lude</rs> &amp; <rs ref="eats:328770" type="Thing_BookPlayMusic">game Booke</rs> </cell>
          <cell rend="right">iiij d.</cell>
         </row>
         <row>
@@ -4718,7 +4720,7 @@
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m paid to <rs ref="eats:407154" type="Person_Male">Rushiners</rs> mayde for <rs ref="eats:40978" type="Thing_FoodDrink"
+         <cell>It<ex>e</ex>m paid to <rs ref="eats:407154" type="Person_Male">Rushiners</rs> <rs ref="eats:297010" type="Collective_Occupations">mayde</rs> for <rs ref="eats:40978" type="Thing_FoodDrink"
             >egg<ex>es</ex></rs> for the <rs ref="eats:40561" type="Entertainment_Type">Churche
            ale</rs></cell>
          <cell rend="right">viij d.</cell>
@@ -5004,7 +5006,7 @@
 
        <table>
         <row>
-         <cell><!-- AW for IN: this one is weird. Is it the son of Mr. Bram?-->It<ex>e</ex>m gyuen to Bram hes Boye for Turnyng of speet<ex>es</ex>
+         <cell><!-- AW for IN: this one is weird. Is it the son of Mr. Bram? IN: Seems likely. Check with JS via spreadsheet-->It<ex>e</ex>m gyuen to Bram hes Boye for Turnyng of speet<ex>es</ex>
          </cell>
          <cell rend="right">j d.</cell>
         </row>
