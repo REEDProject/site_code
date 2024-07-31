@@ -27032,7 +27032,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m P<ex>ai</ex>d to tooe Companeyes of Player<ex>es</ex> ‸<add
+         <cell>It<ex>e</ex>m P<ex>ai</ex>d to tooe Companeyes of <rs ref="eats:8782" type="Entertainer_Type">Player<ex>es</ex></rs> ‸<add
            place="above">ye <rs ref="eats:17474" type="Collective_Troupe">Quen<ex>es</ex></rs> &amp; <rs ref="eats:188015" type="Collective_Troupe">prync<ex>es</ex> men</rs></add>
          </cell>
          <cell rend="right">002</cell>
@@ -27049,10 +27049,10 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        accounts the three columns on the right represent pounds, shillings, and pence respectively. </p>
 
       <p> Anne of Denmark (1574–1618/19) was crowned queen of England on 25 July 1603. See
-        <title>P&amp;P</title><!-- IN to add link to patron/troupe -->. </p>
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315847"><title>P&amp;P</title></ref>. </p>
 
       <p> Henry Frederick Stuart (1593/4–1612) was prince until the time of his death. See
-        <title>P&amp;P</title><!-- IN to add link to patron/troupe -->. </p>
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316327"><title>P&amp;P</title></ref>. </p>
      </div>
     </body>
    </text>
@@ -27064,14 +27064,14 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
       <seg ana="taxon:SUIP20">SUIP20</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid356-transcription">
       <div>
-       <head>f 196v <supplied>(29 September–29 September) (Treasurer's payments)</supplied></head>
+       <head>f 196v <supplied>(29 September–29 September) (<rs ref="eats:414480" type="Collective_Office">Treasurer's</rs> payments)</supplied></head>
        <pb n="196v" type="folio"/>
 
        <gap reason="omitted"/>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m to Burrage &amp; the Rest of the music<ex>i</ex>ons there
+         <cell>It<ex>e</ex>m to <rs ref="eats:417892" type="Person_Male">Burrage</rs> &amp; the Rest of the <rs ref="eats:1243" type="Entertainer_Type">music<ex>i</ex>ons</rs> there
            wag<ex>es</ex>
          </cell>
          <cell rend="right">v li. </cell>
@@ -27089,8 +27089,8 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        <table>
         <row>
          <cell>Item<note type="foot">Item: <hi rend="italic">in display script</hi></note> for viij
-           yard<ex>es</ex> &amp; iij q<ex>uar</ex>t<ex>er</ex> of blewe clothe for the vj waites
-          Lyveries at x s vj d the <!-- AW for IN: is this a place, I can't tell-->yard </cell>
+          yard<ex>es</ex> &amp; iij q<ex>uar</ex>t<ex>er</ex> of blewe <rs ref="eats:302518" type="Thing_ClothingMaterials">clothe</rs> for the vj <rs ref="eats:406229" type="Collective_Office">waites</rs>
+          <rs ref="eats:43439" type="Thing_LiveryRegalia">Lyveries</rs> at x s vj d the <!-- AW for IN: is this a place, I can't tell. IN: Pretty sure this refers to yards of cloth.-->yard </cell>
          <cell rend="right">iiij li xj s. x d. </cell>
         </row>
        </table>
@@ -27127,13 +27127,13 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m giuen to the Queenes plaiers as by warr<ex>an</ex>t</cell>
+         <cell>It<ex>e</ex>m giuen to the <rs ref="eats:17474" type="Collective_Troupe">Queenes plaiers</rs> as by warr<ex>an</ex>t</cell>
          <cell rend="right">01</cell>
          <cell rend="right">10</cell>
          <cell rend="right">0</cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m to the Princes plaiers as by warr<ex>an</ex>t</cell>
+         <cell>It<ex>e</ex>m to the <rs ref="eats:188015" type="Collective_Troupe">Princes plaiers</rs> as by warr<ex>an</ex>t</cell>
          <cell rend="right">01</cell>
          <cell rend="right">06</cell>
          <cell rend="right">8</cell>
@@ -27157,7 +27157,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m paid to Brooke for splisinge the rope to baite the Bulls withall</cell>
+         <cell>It<ex>e</ex>m paid to Brooke for splisinge the rope to <rs ref="eats:21767" type="Entertainment_AnimalSport">baite</rs> the <rs ref="eats:357316" type="Entertainer_Type">Bulls</rs> withall</cell>
          <cell rend="right">00</cell>
          <cell rend="right">00</cell>
          <cell rend="right">3</cell>
@@ -27168,10 +27168,11 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
       </div>
      </div>
      <div type="endnote">
-      <p> Anne of Denmark (f [4v]; 1574-1618/19) was crowned queen of England on 25 July 1603. See
-        <title>P&amp;P</title><!-- IN to
-add link – ID patron + troupe? -->. Henry Frederick Stuart (1593/4-1612) was Prince until
-       the time of his death. See ? patron-title-list). </p>
+      <p> Anne of Denmark (1574–1618/19) was crowned queen of England on 25 July 1603. See
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315847"><title>P&amp;P</title></ref>.</p>
+      
+      <p> Henry Frederick Stuart (1593/4–1612) was prince until the time of his death. See
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316327"><title>P&amp;P</title></ref>.</p>
      </div>
     </body>
    </text>
@@ -27188,27 +27189,27 @@ add link – ID patron + troupe? -->. Henry Frederick Stuart (1593/4-1612) was P
 
        <ab><del>It is Agreed that the music<ex>i</ex>ans</del> shalbe Re</ab>
 
-       <ab>Att this Assembly the ‸<add place="above">same</add> music<ex>i</ex>ans <del>nowe
+       <ab>Att this Assembly the ‸<add place="above">same</add> <rs ref="eats:1243" type="Entertainer_Type">music<ex>i</ex>ans</rs> <del>nowe
          sh</del> are Reteyned for a</ab>
 
        <ab>Att this<note type="foot">this: i <hi rend="italic">written over</hi> e</note> Assemblye
-        Thomas Burrage ‸<add place="above">&amp; Richard Lowe</add> &amp; the rest of the Companye
-        of music<ex>i</ex>ans ‸<add place="above">of this <rs ref="eats:369522"
+        <rs ref="eats:417892" type="Person_Male">Thomas Burrage</rs> ‸<add place="above">&amp; <rs ref="eats:418320" type="Person_Male">Richard Lowe</rs></add> &amp; the rest of the <rs ref="eats:406229" type="Collective_Office">Companye
+        of music<ex>i</ex>ans</rs> ‸<add place="above">of this <rs ref="eats:369522"
           type="Place_PA_Settlement">towne</rs> nowe being</add> shall haue <del>paid them x</del>
-        xiij li. vj s. viij d. ‸<add place="above">from Mich<ex>aelmas</ex> last</add> yerelie
-        during ij yeres att o<ex>u</ex>r ladie &amp; mich<ex>aelmas</ex> by euen pircas for there
+        xiij li. vj s. viij d. ‸<add place="above">from <rs ref="eats:42598" type="CalendarDay_Liturgical">Mich<ex>aelmas</ex></rs> last</add> yerelie
+        during ij yeres att <rs ref="eats:72087" type="CalendarDay_Liturgical">o<ex>u</ex>r ladie</rs> &amp; mich<ex>aelmas</ex> by euen pircas for there
          wag<ex>es</ex> And Afterward that they shall haue paid them xx li. yerelie at the
          o<ex>u</ex>r ladie &amp; mich<ex>aelmas</ex> by euen pircas</ab>
 
-       <ab>in Consideraci<ex>on</ex> whereof Thomas Burrage Richard Lowe Alexander Thomas
+       <ab>in Consideraci<ex>on</ex> whereof Thomas Burrage Richard Lowe <rs ref="eats:416959" type="Person_Male">Alexander Thomas</rs>
          <del>Thomas</del>
-        <add place="above">Iohn</add> Stone Symon Mynes <add place="above">Music<ex>i</ex>ans of the
+        <rs ref="eats:418389" type="Person_Male"><add place="above">Iohn</add> Stone</rs> <rs ref="eats:417961" type="Person_Male">Symon Mynes</rs> <add place="above">Music<ex>i</ex>ans of the
          towne</add>
-        <del>hau</del> haue Agreed w<ex>i</ex>th A singinge boye not <del>to goe</del>
+        <del>hau</del> haue Agreed w<ex>i</ex>th A <rs ref="eats:10906" type="Entertainer_Type">singinge</rs> boye not <del>to goe</del>
         <add place="above">dep<ex>ar</ex>t</add> out of this towne w<ex>i</ex>th there musick
-         w<ex>i</ex>thut the license of ye Bayliff<ex>es</ex> And shalbe redie at all tymes
+         w<ex>i</ex>thut the license of ye <rs ref="eats:402653" type="Collective_Office">Bayliff<ex>es</ex></rs> And shalbe redie at all tymes
           <del>w<ex>i</ex>th there musick w<ex>i</ex>thin the towne</del> to pleye vppn there
-         Instrum<ex>en</ex>t<ex>es</ex>
+         <rs ref="eats:41840" type="Thing_MusicalInstrument">Instrum<ex>en</ex>t<ex>es</ex></rs>
         <del>when they</del> w<ex>i</ex>thin <del>the sam</del> this towne when they shalbe Required
         therevnto by the Bayliff<ex>es</ex> of ye towne for the tyme being/</ab>
       </div>
@@ -27223,7 +27224,7 @@ add link – ID patron + troupe? -->. Henry Frederick Stuart (1593/4-1612) was P
       <seg ana="taxon:SUIP20">SUIP20</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid357-transcription">
       <div>
-       <head>f 204 <supplied>(29 September–29 September) (Treasurer's payments)</supplied></head>
+       <head>f 204 <supplied>(29 September–29 September) (<rs ref="eats:414480" type="Collective_Office">Treasurer's</rs> payments)</supplied></head>
        <pb n="204" type="folio"/>
 
        <table>
@@ -27238,7 +27239,7 @@ add link – ID patron + troupe? -->. Henry Frederick Stuart (1593/4-1612) was P
         </row>
         <row>
          <cell>It<ex>e</ex>m to the <rs ref="eats:369522" type="Place_PA_Settlement">Towne</rs>
-          Musitians for their wag<ex>es</ex></cell>
+          <rs ref="eats:406229" type="Collective_Office">Musitians</rs> for their wag<ex>es</ex></cell>
          <cell rend="right">013</cell>
          <cell rend="right">06</cell>
          <cell rend="right">8</cell>
@@ -27255,11 +27256,11 @@ add link – ID patron + troupe? -->. Henry Frederick Stuart (1593/4-1612) was P
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m to the Queenes Ma<ex>ies</ex>ties Players by warr<ex>ant</ex></cell>
+         <cell>It<ex>e</ex>m to the <rs ref="eats:17474" type="Collective_Troupe">Queenes Ma<ex>ies</ex>ties Players</rs> by warr<ex>ant</ex></cell>
          <cell rend="right">xxx s.</cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m to the Duke of Lenox his pleyers by warr<ex>ant</ex></cell>
+         <cell>It<ex>e</ex>m to the <rs ref="eats:418458" type="Collective_Troupe">Duke of Lenox his pleyers</rs> by warr<ex>ant</ex></cell>
          <cell rend="right">xx s.</cell>
         </row>
        </table>
@@ -27269,12 +27270,11 @@ add link – ID patron + troupe? -->. Henry Frederick Stuart (1593/4-1612) was P
      </div>
      <div type="endnote">
       <p> Anne of Denmark (1574–1618/19) was crowned queen of England on 25 July 1603. See
-        <title>P&amp;P</title><!-- IN to add link to patron/troupe -->.</p>
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315847"><title>P&amp;P</title></ref>.</p>
 
       <p> Ludovic Stuart (1574–1623/4) was second duke and earl of Lennox from 1583, and second duke
        of Richmond from 17 May 1623, with his seat at Richmond Castle, Yorkshire, North Riding. See
-        <title>P&amp;P</title><!-- IN to add link to
-patron/troupe -->. </p>
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316323"><title>P&amp;P</title></ref>.</p>
      </div>
     </body>
    </text>
@@ -27291,11 +27291,11 @@ patron/troupe -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>It is Agreed that Thomas Burrage Richard Lowe Iohn Stone &amp; Symon Mynes shall paie
-         <del>It is Agreed that Alexander Thomas shall haue</del> toward<ex>es</ex> the
-         meynten<ex>a</ex>n<ex>ce</ex> of the Singing boye ‸<add place="above">nowe in the keping of
+       <ab>It is Agreed that <rs ref="eats:417892" type="Person_Male">Thomas Burrage</rs> <rs ref="eats:418320" type="Person_Male">Richard Lowe</rs> <rs ref="eats:418389" type="Person_Male">Iohn Stone</rs> &amp; <rs ref="eats:417961" type="Person_Male">Symon Mynes</rs> shall paie
+         <del>It is Agreed that <rs ref="eats:416959" type="Person_Male">Alexander Thomas</rs> shall haue</del> toward<ex>es</ex> the
+         meynten<ex>a</ex>n<ex>ce</ex> of the <rs ref="eats:10906" type="Entertainer_Type">Singing</rs> boye ‸<add place="above">nowe in the keping of
          the said allexander</add> soe long as he shall contynewe <del>to sing</del> singing,
-        amongest ‸<add place="above">the music<ex>i</ex>ans of this <rs ref="eats:369522"
+        amongest ‸<add place="above">the <rs ref="eats:406229" type="Collective_Office">music<ex>i</ex>ans</rs> of this <rs ref="eats:369522"
           type="Place_PA_Settlement">towne</rs></add>
         <del>then the residewe of the music<ex>i</ex>ans And that the Residewe of the
           music<ex>i</ex>ans besid<ex>es</ex> the said Alexander shall paie</del> iiij li. yerelie
