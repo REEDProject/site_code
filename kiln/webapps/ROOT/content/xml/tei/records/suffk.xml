@@ -28960,22 +28960,22 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <gap reason="omitted"/>
 
-       <ab><del>It is Agreed that</del> ‸<add place="above">Att this Assemblye</add> Symon Mynes
-         <del>whoe</del> one of the music<ex>i</ex>ans of this <rs ref="eats:369522"
+       <ab><del>It is Agreed that</del> ‸<add place="above">Att this Assemblye</add> <rs ref="eats:417961" type="Person_Male">Symon Mynes</rs>
+         <del>whoe</del> one of the <rs ref="eats:406229" type="Collective_Office">music<ex>i</ex>ans</rs> of this <rs ref="eats:369522"
          type="Place_PA_Settlement">towne</rs>
         <del>shalbe</del> is dischardged from his place <del>for his that offence for his
          misbehavior</del> for that he <add place="above">hath vnlawfullie</add>
         <del>hathe ben Accused w<ex>i</ex>th car being Accused by</del>
         <add place="above">begotten w<ex>i</ex>th two children one</add> Alice Ward of whose <add
-         place="above">bodye he confesseth he had the vse severall tymes
-         <del>vnlawfullie</del></add>
+         place="above"><rs ref="eats:45689" type="CrimesMisdemeanors">bodye he confesseth he had the vse severall tymes
+         <del>vnlawfullie</del></rs></add>
         <del>to haue begotten her w<ex>i</ex>th w<ex>i</ex>th<note type="foot">w<ex>i</ex>th
            w<ex>i</ex>th: <hi rend="italic">dittography</hi></note> echild vnlawfullie, hathe
          confessed that whereof whoe hathe confessed that he haue had the vse of her bodie</del>,
         And ‸<add place="above">it is Agreed</add> that he shall not be suffred hereafter to be
          ‸<add place="above"><del>o<damage><gap unit="chars" extent="2"/></damage></del>
          <del><damage><gap unit="chars" extent="2"/></damage></del>contynewe for one</add>of the
-        Company of the music<ex>i</ex>ons of this towne nor to weare the towne lyverie
+        Company of the music<ex>i</ex>ons of this towne nor to weare the towne <rs ref="eats:43439" type="Thing_LiveryRegalia">lyverie</rs>
         w<ex>i</ex>thin this towne or in the company <del>of</del> of the said music<ex>i</ex>ons or
         any of them</ab>
       </div>
@@ -29005,7 +29005,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
         </row>
         <row>
          <cell>It<ex>e</ex>m to the <rs ref="eats:369522" type="Place_PA_Settlement">Toune</rs>
-          Musitians for there yeres wages</cell>
+          <rs ref="eats:406229" type="Collective_Office">Musitians</rs> for there yeres wages</cell>
          <cell rend="right">13</cell>
          <cell rend="right">6</cell>
          <cell rend="right">8</cell>
@@ -29029,8 +29029,8 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m to Edward Page for one yarde &amp; halfe of <del>Cl</del> bleue Clothe
-          to make Symonde Mynd<ex>es</ex> one of the Musitians A liuerye Coate att x s p<ex>er</ex>
+         <cell>It<ex>e</ex>m to <rs ref="eats:418812" type="Person_Male">Edward Page</rs> for one yarde &amp; halfe of <del>Cl</del> bleue <rs ref="eats:302518" type="Thing_ClothingMaterials">Clothe</rs>
+          to make <rs ref="eats:417961" type="Person_Male">Symonde Mynd<ex>es</ex></rs> one of the Musitians A liuerye <rs ref="eats:71388" type="Thing_TheatricalCostume">Coate</rs> att x s p<ex>er</ex>
           yarde</cell>
          <cell rend="right">00</cell>
          <cell rend="right">15</cell>
@@ -29082,13 +29082,13 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m payd by warent to the prinncs &amp; the duke of lennox trumpetor</cell>
+         <cell>It<ex>e</ex>m payd by warent to the <rs ref="eats:187989" type="Collective_Troupe">prinncs</rs> &amp; the <rs ref="eats:421771" type="Collective_Troupe">duke of lennox trumpetor</rs></cell>
          <cell rend="right">00</cell>
          <cell rend="right">11</cell>
          <cell rend="right">0<note type="marginal" place="margin_right">+</note></cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m payd by warent to the quenes magestes players</cell>
+         <cell>It<ex>e</ex>m payd by warent to the <rs ref="eats:17474" type="Collective_Troupe">quenes magestes players</rs></cell>
          <cell rend="right">01</cell>
          <cell rend="right">06</cell>
          <cell rend="right">8<note type="marginal" place="margin_right">+</note></cell>
@@ -29111,7 +29111,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>Item payd by warent to the Kings magestes pleyers</cell>
+         <cell>Item payd by warent to the <rs ref="eats:17717" type="Collective_Troupe">Kings magestes pleyers</rs></cell>
          <cell rend="right">01</cell>
          <cell rend="right">06</cell>
          <cell rend="right">8</cell>
@@ -29123,19 +29123,17 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
      </div>
      <div type="endnote">
       <p> Henry Frederick Stuart (1593/4–1612) was prince (f [3]) until the time of his death. See
-        <title>P&amp;P</title><!-- IN to add link to patron/troupe -->.</p>
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316327"><title>P&amp;P</title></ref>.</p>
 
       <p> Ludovic Stuart (1574–1623/4) was second duke and earl of Lennox from 1583, second duke of
        Richmond from 17 May 1623, with seat at Richmond Castle, Yorkshire, North Riding. See
-        <title>P&amp;P</title><!-- IN to add link to
-patron/troupe -->.</p>
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316323"><title>P&amp;P</title></ref>.</p>
 
       <p> Anne of Denmark (1574–1618/19) was crowned queen of England on 25 July 1603. See
-        <title>P&amp;P</title><!-- IN to add link to patron/troupe -->.</p>
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315847"><title>P&amp;P</title></ref>.</p>
 
       <p> James Stuart (f [3v]; 1566– 1625), was crowned James I of England on 24 March 1602/3. See
-        <title>P&amp;P</title><!-- IN to
-add link to patron/troupe -->. </p>
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315880"><title>P&amp;P</title></ref>.</p>
      </div>
     </body>
    </text>
@@ -29162,7 +29160,7 @@ add link to patron/troupe -->. </p>
         </row>
         <row>
          <cell>It<ex>e</ex>m to the <rs ref="eats:369522" type="Place_PA_Settlement">Towne</rs>
-           Music<ex>i</ex>ons for there yeres wages</cell>
+           <rs ref="eats:406229" type="Collective_Office">Music<ex>i</ex>ons</rs> for there yeres wages</cell>
          <cell rend="right">13</cell>
          <cell rend="right">06</cell>
          <cell rend="right">08</cell>
@@ -29186,9 +29184,9 @@ add link to patron/troupe -->. </p>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m to him<note type="foot">him: <hi rend="italic">Henry
+         <cell>It<ex>e</ex>m to <rs ref="eats:417485" type="Person_Male">him</rs><note type="foot">him: <hi rend="italic">Henry
            Buckenham</hi></note>for 9 yard<ex>es</ex> of blewe to make 6 music<ex>i</ex>ons there
-           liu<ex>er</ex>ie Coat<ex>es</ex> att 10 s p<ex>er</ex> yarde</cell>
+           liu<ex>er</ex>ie <rs ref="eats:147358" type="Thing_LiveryRegalia">Coat<ex>es</ex></rs> att 10 s p<ex>er</ex> yarde</cell>
          <cell rend="right">04</cell>
          <cell rend="right">10</cell>
          <cell rend="right">00</cell>
