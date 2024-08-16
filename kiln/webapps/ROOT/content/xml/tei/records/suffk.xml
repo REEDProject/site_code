@@ -31371,7 +31371,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <table>
         <row>
-         <cell>Payed more for <rs ref="eats:40883" type="Thing_MusicalInstrument">virgenall</rs> wyer </cell>
+         <cell>Payed <rs ref="eats:424687" type="Person_GenderUnknown">more</rs> for <rs ref="eats:40883" type="Thing_MusicalInstrument">virgenall</rs> wyer </cell>
          <cell rend="right">xij d.</cell>
         </row>
        </table>
@@ -31395,7 +31395,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <gap reason="omitted"/>
 
-       <ab>Payed<note type="foot">Payed: <hi rend="italic">in display script</hi></note> to ffoster
+       <ab>Payed<note type="foot">Payed: <hi rend="italic">in display script</hi></note> to <rs ref="eats:425184" type="Person_Male">ffoster</rs>
         assomuch by him payed for amendinge my m<ex>ist</ex>res lute ij s.<note type="foot">ij s.:
           <hi rend="italic">underlined</hi></note><gap reason="omitted"/></ab>
 
@@ -31408,7 +31408,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
        <gap reason="omitted"/>
 
        <ab>Payed<note type="foot">Payed: <hi rend="italic">in display script;</hi> e <hi
-          rend="italic">smudged</hi></note> to M<ex>or</ex>ten assmuch by him payed for a <rs ref="eats:425154" type="Thing_MusicalInstrument">recorder</rs>
+          rend="italic">smudged</hi></note> to <rs ref="eats:425221" type="Person_Male">M<ex>or</ex>ten</rs> assmuch by him payed for a <rs ref="eats:425154" type="Thing_MusicalInstrument">recorder</rs>
         vj s.<note type="foot">vj s.: <hi rend="italic">underlined</hi></note><gap reason="omitted"
         /></ab>
 
@@ -31435,8 +31435,8 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
    </text>
    <text type="record" xml:id="suffk-rid471">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:379988"
-       type="Place_F_Residence">Kitson of Hengrave Hall</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, Kitson of <rs ref="eats:379988"
+      type="Place_F_Residence">Hengrave Hall</rs>
       <date when-iso="1574">1573/4</date>
       <seg ana="taxon:SUKI03">SUKI03</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid471-transcription">
@@ -31448,8 +31448,8 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <table>
         <row>
-         <cell>Payed more<note type="foot">Payed more: <hi rend="italic">in display
-           script</hi></note> for vij cornett<ex>es</ex> bought by the musicions </cell>
+         <cell>Payed <rs ref="eats:424687" type="Person_GenderUnknown">more</rs><note type="foot">Payed more: <hi rend="italic">in display
+           script</hi></note> for vij <rs ref="eats:71592" type="Thing_MusicalInstrument">cornett<ex>es</ex></rs> bought by the <rs ref="eats:1243" type="Entertainer_Type">musicions</rs> </cell>
          <cell rend="right">iiij li.</cell>
         </row>
        </table>
@@ -31462,13 +31462,12 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <gap reason="omitted"/>
 
-       <ab><gap reason="omitted"/>In rew<ex>ar</ex>d to the musicions at Neweyere xx s<gap
+       <ab><gap reason="omitted"/>In rew<ex>ar</ex>d to the musicions at <rs ref="eats:41680" type="CalendarDay_Secular">Neweyere</rs> xx s<gap
          reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
 
-       <ab><gap reason="omitted"/>In rewarde to Henrye Reade one of the wayghtes of <rs
-         ref="eats:73473" type="Place_PA_Settlement">Cambridge</rs> for his attendance in Christmas
+       <ab><gap reason="omitted"/>In rewarde to <rs ref="eats:425258" type="Person_Male">Henrye Reade</rs> one of the <rs ref="eats:322602" type="Collective_Office">wayghtes of Cambridge</rs> for his attendance in <rs ref="eats:41461" type="CalendarDay_Liturgical">Christmas</rs>
         tyme xx s.</ab>
 
        <gap reason="omitted"/>
@@ -31491,7 +31490,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <table>
         <row>
-         <cell>Payed for c<ex>er</ex>ten lute stryng<ex>es</ex> &amp; viall stryng<ex>es</ex> by
+         <cell>Payed for c<ex>er</ex>ten <rs ref="eats:71682" type="Thing_MusicalInstrument">lute</rs> stryng<ex>es</ex> &amp; <rs ref="eats:40854" type="Thing_MusicalInstrument">viall</rs> stryng<ex>es</ex> by
           bill assigned </cell>
          <cell rend="right">xij s.</cell>
         </row>
@@ -31505,7 +31504,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <gap reason="omitted"/>
 
-       <ab><gap reason="omitted"/>for iij keyes for the musicions xviij d.<note type="foot">xviij
+       <ab><gap reason="omitted"/>for iij keyes for the <rs ref="eats:1243" type="Entertainer_Type">musicions</rs> xviij d.<note type="foot">xviij
          d.: <hi rend="italic">underlined</hi></note><gap reason="omitted"/></ab>
 
        <gap reason="omitted"/>
@@ -31516,15 +31515,15 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <gap reason="omitted"/>
 
-       <ab><gap reason="omitted"/>To Phillipp Barrowe for comynge to one of the musicion boyes iij
+       <ab><gap reason="omitted"/>To <rs ref="eats:425312" type="Person_Male">Phillipp Barrowe</rs> for comynge to one of the musicion boyes iij
         s. iiij d.<note type="foot">iij s. iiij d.: <hi rend="italic">underlined</hi></note><gap
          reason="omitted"/></ab>
 
        <gap reason="omitted"/>
 
-       <ab><gap reason="omitted"/>In rewarde by Iohn Cocker at my m<ex>aste</ex>r his
-         comandeme<ex>n</ex>t to a beareman ij s vj d. In rewarde to my L<ex>ord</ex> of Lesseter
-        his players at my m<ex>aste</ex>r his comand<ex>ement</ex> v s.<note type="foot">v s.: <hi
+       <ab><gap reason="omitted"/>In rewarde by <rs ref="eats:425373" type="Person_Male">Iohn Cocker</rs> at <rs ref="eats:424824" type="Person_Male">my m<ex>aste</ex>r</rs> his
+         comandeme<ex>n</ex>t to a <rs ref="eats:21804" type="Entertainer_Type">beareman</rs> ij s vj d. In rewarde to my <rs ref="eats:48635" type="Collective_Troupe">L<ex>ord</ex> of Lesseter
+        his players</rs> at my m<ex>aste</ex>r his comand<ex>ement</ex> v s.<note type="foot">v s.: <hi
           rend="italic">underlined</hi></note><gap reason="omitted"/></ab>
 
        <gap reason="omitted"/>
@@ -31534,13 +31533,13 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <gap reason="omitted"/>
 
-       <ab><gap reason="omitted"/>In reward by her<note type="foot">her: <hi rend="italic">Lady
+       <ab><gap reason="omitted"/>In reward by <rs ref="eats:424913" type="Person_Female">her</rs><note type="foot">her: <hi rend="italic">Lady
           Kitson</hi></note> to certayne harvest fookes<note type="foot">harvest fookes: <hi
-          rend="italic">folk, perhaps having to do with harvest games</hi></note> ij s.<note
+          rend="italic">folk, perhaps having to do with <rs ref="eats:217943" type="Entertainment_Type">harvest games</rs></hi></note> ij s.<note
          type="foot">ij s.: <hi rend="italic">underlined</hi></note>
         <gap reason="omitted"/></ab>
 
-       <ab>In reward to my Lord of Sussex players vj s.<note type="foot">vj s.: <hi rend="italic"
+       <ab>In reward to my <rs ref="eats:175555" type="Collective_Troupe">Lord of Sussex players</rs> vj s.<note type="foot">vj s.: <hi rend="italic"
           >underlined</hi></note>
         <gap reason="omitted"/></ab>
 
@@ -31570,7 +31569,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <table>
         <row>
-         <cell>In reward to Robert the musicion at my M<ex>ist</ex>res comandeme<ex>n</ex>t </cell>
+         <cell>In reward to <rs ref="eats:425438" type="Person_Male">Robert</rs> the musicion at my M<ex>ist</ex>res comandeme<ex>n</ex>t </cell>
          <cell rend="right">vj s. viij d./</cell>
         </row>
        </table>
@@ -31585,7 +31584,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <table>
         <row>
-         <cell>In reward to the musitions at ware </cell>
+         <cell>In reward to the musitions at <!-- IN for AW: Location to be tagged here-->ware </cell>
          <cell rend="right">iij s./</cell>
         </row>
        </table>
@@ -31600,21 +31599,21 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <table>
         <row>
-         <cell>Payed to the smyth for ij Irons to hold vpp the virgenalles </cell>
+         <cell>Payed to the <rs ref="eats:67134" type="Collective_Occupations">smyth</rs> for ij Irons to hold vpp the <rs ref="eats:40883" type="Thing_MusicalInstrument">virgenalles</rs> </cell>
          <cell rend="right">ij s. vj d.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>Payed to Robert assomoch by him payed for stryng<ex>es</ex> for his base vyallen </cell>
+         <cell>Payed to Robert assomoch by him payed for stryng<ex>es</ex> for his base <rs ref="eats:423483" type="Thing_MusicalInstrument">vyallen</rs> </cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>for thamendinge the trumpett </cell>
+         <cell>for thamendinge the <rs ref="eats:41777" type="Thing_MusicalInstrument">trumpett</rs> </cell>
          <cell rend="right">xviij d./</cell>
         </row>
        </table>
@@ -31630,7 +31629,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
        <table>
         <row>
          <cell>Payed to the handes of my M<ex>ist</ex>res by her owne bill assemuch by her payed for
-          an instrume<ex>n</ex>t called a curtall </cell>
+          an instrume<ex>n</ex>t called a <rs ref="eats:425476" type="Thing_MusicalInstrument">curtall</rs> </cell>
          <cell rend="right">xxx s.</cell>
         </row>
        </table>
@@ -31645,7 +31644,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <table>
         <row>
-         <cell>In reward to the musicions on Neweyeres mornynge at London </cell>
+         <cell>In reward to the musicions on <rs ref="eats:41680" type="CalendarDay_Secular">Neweyeres</rs> mornynge at <rs ref="eats:36947" type="Place_PA_Settlement">London</rs> </cell>
          <cell rend="right">xl s.</cell>
         </row>
        </table>
@@ -31683,8 +31682,8 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <table>
         <row>
-         <cell>Payed to one Cosen for teachinge the Children of the virgenalles from Christmas
-           vntil<del>.</del> Easter </cell>
+         <cell>Payed to one Cosen for teachinge the Children of the <rs ref="eats:40883" type="Thing_MusicalInstrument">virgenalles</rs> from <rs ref="eats:239365" type="CalendarDay_Liturgical">Christmas</rs>
+           vntil<del>.</del> <rs ref="eats:41327" type="CalendarDay_Liturgical">Easter</rs> </cell>
          <cell rend="right">iij li.</cell>
         </row>
        </table>
