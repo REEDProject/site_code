@@ -3442,7 +3442,7 @@
         </row>
         <row>
          <cell>It<ex>e</ex>m receyvid of the
-           <!-- AW for IN: this might be someone I can find, but it might also be a waste of time. IN for AW: Doubtful that a person ID could be found here. Have tagged this as parish clergy. --><rs
+           <rs
            ref="eats:9186" type="Collective_Clergy">p<ex>ar</ex>son</rs> of Boxford </cell>
          <cell rend="right">v s.</cell>
         </row>
@@ -7958,7 +7958,7 @@
        <gap reason="omitted"/>
 
        <ab><damage><gap unit="chars" extent="9"/></damage><rs ref="eats:375245"
-         type="Collective_Clergy"> s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i Ep<ex>iscop</ex>i</rs>
+        type="Collective_Clergy"> <!-- AW for IN: Lets mark this as an office?-->s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i Ep<ex>iscop</ex>i</rs>
         in <rs ref="eats:41406" type="CalendarDay_Liturgical">festo s<ex>an</ex>c<ex>t</ex>i
           Nich<ex>ola</ex>i</rs> xij d<gap reason="omitted"/>.</ab>
 
@@ -8413,16 +8413,16 @@ patron/troupe -->.</p>
        <pb n="1" type="membrane"/>
 
        <gap reason="omitted"/>
-       <!--IN for LS: See item #33 in the spreadsheet for info re: the ID of St Nicholas bishop here -->
+  
        <ab>It<ex>e</ex>m datu<ex>m</ex><rs ref="eats:375245" type="Collective_Clergy">
-          Ep<ex>isco</ex>po S<ex>an</ex>c<ex>t</ex>i Nicholai</rs> iiij d<gap reason="omitted"/>.
+          <rs ref="eats:21537" type="Entertainment_FolkCustom">Ep<ex>isco</ex>po S<ex>an</ex>c<ex>t</ex>i Nicholai</rs></rs> iiij d<gap reason="omitted"/>.
          It<ex>e</ex>m solut<ex>um</ex>
         <rs ref="eats:373472" type="CalendarDay_Liturgical">vigilia s<ex>an</ex>c<ex>t</ex>i
           ioh<ex>ann</ex>is Baptiste</rs>
         <rs ref="eats:290814" type="Entertainment_FolkCustom">afferent<ex>ibus</ex> Sirpos</rs> viij
         d. It<ex>e</ex>m datu<ex>m</ex> eod<ex>em</ex> die <rs ref="eats:69534"
          type="Collective_Troupe">lusorib<ex>us</ex> do<ex>min</ex>i Reg<ex>is</ex></rs> iiij d<gap
-         reason="omitted"/>. It<ex>e</ex>m datu<ex>m</ex> Ioh<ex>ann</ex>i foster <rs
+         reason="omitted"/>. It<ex>e</ex>m datu<ex>m</ex> <rs ref="eats:429738" type="Person_Male">Ioh<ex>ann</ex>i foster</rs> <rs
          ref="eats:8709" type="Entertainer_Type">mynst<ex>rello</ex></rs> ij d. It<ex>e</ex>m
          datu<ex>m</ex>
         <rs ref="eats:8782" type="Entertainer_Type">lusor<ex>ibus</ex></rs> in aula ij d.
@@ -8449,11 +8449,11 @@ patron/troupe -->.</p>
 
        <ab>Likewise given to the bishop of St Nicholas, 4d<gap reason="omitted"/> Likewise paid on
         the vigil of St John the Baptist to those bearing rushes, 8d. Likewise given on the same day
-        to players of the lord king, 4d<gap reason="omitted"/> Likewise given to John Foster
+        to players of the <rs ref="eats:43591" type="Person_Male">lord king</rs>, 4d<gap reason="omitted"/> Likewise given to John Foster
         minstrel, 2d. Likewise given to those playing in the hall, 2d. Likewise given to a servant
-        of the lord Exeter, a luter, 1d. Likewise given to the earl of Derby's players, 4d. Likewise
-        given to players of the duke of Norfolk, 4d. Likewise given to players of the duke of
-        Somerset, 4d. And given to minstrels of the lord king, 3d<gap reason="omitted"/></ab>
+        of the <rs ref="eats:97693" type="Person_Male">lord Exeter</rs>, a luter, 1d. Likewise given to the <rs ref="eats:40022" type="Person_Nobility">earl of Derby</rs>'s players, 4d. Likewise
+        given to players of the <rs ref="eats:167868" type="Person_Male">duke of Norfolk</rs>, 4d. Likewise given to players of the <rs ref="eats:138881" type="Person_Male">duke of
+        Somerset</rs>, 4d. And given to minstrels of the lord king, 3d<gap reason="omitted"/></ab>
 
        <gap reason="omitted"/>
       </div>
@@ -8532,7 +8532,7 @@ patron/troupe -->.</p>
        <gap reason="omitted"/>
 
        <ab>First, to the bishop of St Nicholas, 4d. Likewise given to minstrels/a minstrel of the
-        lord king and others this year, 2s 4d.</ab>
+        <rs ref="eats:43591" type="Person_Male">lord king</rs> and others this year, 2s 4d.</ab>
 
        <gap reason="omitted"/>
       </div>
@@ -8755,7 +8755,7 @@ patron/troupe -->.</p>
         <row>
          <!-- IN to LS: See endnote for IDs for people mentioned here-->
          <cell>To the<note type="marginal" place="margin_left">In reward xvij li. xiij s. iiij d.
-           gyven by the Countese of Bathe and my M<ex>aste</ex>r to my lord of Norff<ex>olk</ex> his
+           gyven by the <rs ref="eats:429821" type="Person_Female">Countese of Bathe</rs> and my M<ex>aste</ex>r to my lord of Norff<ex>olk</ex> his
            officers at <rs ref="eats:375359" type="Place_PA_Settlement">kennyngall</rs> dellyvered
            by the <rs ref="eats:297307" type="Collective_Occupations">Steward</rs> viz. by the
            countesse of Bathe vj li. xiij s. iiij d. &amp; by my M<ex>aste</ex>r xj li. at the
@@ -8805,7 +8805,7 @@ patron/troupe -->.</p>
      <div type="endnote">
       <p> The payments on f [10] occurred at Kenninghall, Norfolk. </p>
 
-      <p> Margaret Bouchier (Denington) (f [10]; <hi rend="italic">c</hi> 1509–1561) was countess of
+      <p> Margaret Bourchier (Denington) (f [10]; <hi rend="italic">c</hi> 1510–1561) was countess of
        Bath and wife of Sir Thomas Kitson (1485–1540), with a residence at Hengrave Hall, Suffolk. </p>
 
       <p> Thomas Howard (1537/8–1572) was duke of Norfolk from 25 August 1554, with residences at
@@ -17591,7 +17591,8 @@ patron/troupe -->.</p>
           Chr<ex>ist</ex>i</rs> ac ordinabit &amp; p<ex>re</ex>uidebit circa
          rep<ex>ar</ex>ac<ex>i</ex>o<ex>n</ex>em de lez <rs ref="eats:302248"
          type="Thing_SetMachinery">pagent<ex>es</ex></rs> &amp; p<ex>ro</ex> factur<ex>a</ex> de lez
-        Stages p<ex>ro</ex> lusorib<ex>us</ex> tam de villa q<ex>ua</ex>m ex<ex>tr</ex>a vna
+        Stages p<ex>ro</ex> lusorib<ex>us</ex> tam de <rs ref="eats:369522"
+         type="Place_PA_Settlement">villa</rs> q<ex>ua</ex>m ex<ex>tr</ex>a vna
          cu<ex>m</ex>
         <rs ref="eats:402588" type="Person_Male">Thoma Bysshop</rs> Cl<ex>er</ex>ico
         Co<ex>mmun</ex>i dict<ex>e</ex> ville Gipp<ex>ewic</ex>i p<ex>e</ex>r
@@ -17608,7 +17609,7 @@ patron/troupe -->.</p>
 
        <ab>Et ad eand<ex>em</ex> Cur<ex>iam</ex> ordinat<ex>um</ex> est &amp; concordat<ex>um</ex>
          p<ex>er</ex> p<ex>re</ex>dict<ex>os</ex> Balli<ex>u</ex>os &amp; Burg<ex>enses</ex>
-         q<ex>uo</ex>d firmarij co<ex>mmun</ex>is marisci ac p<ex>ra</ex>ti portman<ex>orum</ex>
+        q<ex>uo</ex>d <rs ref="eats:376195" type="Place_F_OpenArea">firmarij</rs> co<ex>mmun</ex>is <rs ref="eats:376217" type="Place_F_OpenArea">marisci</rs> ac p<ex>ra</ex>ti portman<ex>orum</ex>
          eiusd<ex>e</ex>m ville qui p<ex>ro</ex> temp<ex>or</ex>e eru<ex>n</ex>t Annuatim
          solue<ex>n</ex>t vel solui fac<ex>ient</ex> Iohanni Caldwell p<ex>ro</ex> expen<ex>sis</ex>
          fact<ex>is</ex> circa p<ex>re</ex>dict<ex>os</ex> lez pagentz Gilde corp<ex>or</ex>is
@@ -17627,10 +17628,8 @@ patron/troupe -->.</p>
        <pb n="9" type="folio"/>
 
        <gap reason="omitted"/>
-       <!-- IN for AW: Tags should be in the transcription, not in the translation -->
        <ab>At the same
-        <!-- AW for IN: I am not sure if a court is a place or an itinerant legal body
-        IN for AW: Maybe ask JS if he thinks it would be worth indexing as a location. Personally I would probably not do so, but if he thinks it makes sense to, go ahead-->court,
+        court,
         John Causton was admitted as a resident <rs ref="eats:297065" type="Collective_Office"
          >burgess</rs> and he has issue (namely) John, Henry, Thomas, and Robert, and he was sworn
         under the condition that the same John Causton shall for the seven years next following
@@ -17638,8 +17637,7 @@ patron/troupe -->.</p>
          >Burgess conditionally</note> faithfully and assiduously according to his ability attend,
         administer, and guard any and all of the accoutrements of the pageants of the guild of
         Corpus Christi and arrange and make provision for the repair of the pageants and for the
-        making of the stages for the players both from the <rs ref="eats:369522"
-         type="Place_PA_Settlement">town</rs> and from outside together with Thomas Bysshop, the
+        making of the stages for the players both from the town and from outside together with Thomas Bysshop, the
         common clerk of the said town of Ipswich by the supervision of the bailiffs of same town,
         who exist at the time, receiving all and every the expenses both for the repair of the
         pageants and for the hire of equipment, clothing, and other necessities which will be
@@ -17647,8 +17645,8 @@ patron/troupe -->.</p>
         meadow just as appears necessary and opportune as long as, etc.</ab>
 
        <ab>And at the same court it was ordained and agreed by the aforesaid bailiffs and burgesses
-        that the tenants of the <rs ref="eats:376195" type="Place_F_OpenArea">common marsh</rs> and
-        of the <rs ref="eats:376217" type="Place_F_OpenArea">citizens' meadow</rs> of the same town
+        that the tenants of the common marsh and
+        of the citizens' meadow of the same town
         who exist for the time being shall pay annually or cause to be paid to John Caldwell for
         expenses made regarding the aforesaid pageants of the Guild of Corpus Christi 50s until the
         the aforesaid expenses are fully paid to the aforesaid John Caldewell or his assured
