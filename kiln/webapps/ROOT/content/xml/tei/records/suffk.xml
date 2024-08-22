@@ -33477,9 +33477,9 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <gap reason="omitted"/>
 
-       <ab><gap reason="omitted"/> Et <rs ref="eats:430052" type="Person_Male">Thome</rs> <rs ref="eats:8709" type="Entertainer_Type">ministrall<ex>o</ex></rs> ad pasche iiij d<gap
-         reason="omitted"/>. Et ministrall' d<ex>omi</ex>ni will<ex>elm</ex>i Knyvet iiij d<gap
-         reason="omitted"/>. Et Will<ex>el</ex>mo Scarlet p<ex>ro</ex> regardo xx d<gap
+       <ab><gap reason="omitted"/> Et <rs ref="eats:430052" type="Person_Male">Thome</rs> <rs ref="eats:8709" type="Entertainer_Type">ministrall<ex>o</ex></rs> ad <rs ref="eats:41327" type="CalendarDay_Liturgical">pasche</rs> iiij d<gap
+         reason="omitted"/>. Et <rs ref="eats:430169" type="Collective_Troupe">ministrall' d<ex>omi</ex>ni will<ex>elm</ex>i Knyvet</rs> iiij d<gap
+         reason="omitted"/>. Et <rs ref="eats:430213" type="Person_Male">Will<ex>el</ex>mo Scarlet</rs> p<ex>ro</ex> regardo xx d<gap
          reason="omitted"/>. Et cuida<ex>m</ex> ceco mi<ex>ni</ex>strallo iiij d<gap
          reason="omitted"/>.</ab>
       </div>
@@ -33489,9 +33489,9 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <gap reason="omitted"/>
 
-       <ab><gap reason="omitted"/> Et Io<ex>hann</ex>i Scarlet ministrallo iiij d<gap
+       <ab><gap reason="omitted"/> Et <rs ref="eats:430289" type="Person_Male">Io<ex>hann</ex>i Scarlet</rs> ministrallo iiij d<gap
          reason="omitted"/>. Et dius<ex>er</ex>s<ex>is</ex> ministrall<ex>is</ex> &amp;
-         lusorib<ex>us</ex> temp<ex>or</ex>e Nat<ex>alis</ex> D<ex>omi</ex>ni iiij s. iiij d<gap
+        <rs ref="eats:8782" type="Entertainer_Type">lusorib<ex>us</ex></rs> temp<ex>or</ex>e <rs ref="eats:41461" type="CalendarDay_Liturgical">Nat<ex>alis</ex> D<ex>omi</ex>ni</rs> iiij s. iiij d<gap
          reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
@@ -33538,8 +33538,8 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
        <head>f 80 <supplied>(15 April–29 September 1487) (Gifts)</supplied></head>
        <pb n="80" type="folio"/>
 
-       <ab>Et dat<ex>um</ex> ministrall' d<ex>omi</ex>ni Reg<ex>is</ex> xx d<gap reason="omitted"/>.
-        Et ministrall' Duc<ex>is</ex> Norff<ex>olchie</ex> xij d.</ab>
+       <ab>Et dat<ex>um</ex> <rs ref="eats:163866" type="Collective_Troupe">ministrall' d<ex>omi</ex>ni Reg<ex>is</ex></rs> xx d<gap reason="omitted"/>.
+        Et <rs ref="eats:430385" type="Collective_Troupe">ministrall' Duc<ex>is</ex> Norff<ex>olchie</ex></rs> xij d.</ab>
 
        <gap reason="omitted"/>
       </div>
@@ -33549,12 +33549,12 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <table>
         <row>
-         <cell>Et dat<ex>um</ex> Will<ex>elm</ex>o Scarlet</cell>
+         <cell>Et dat<ex>um</ex> <rs ref="eats:430213" type="Person_Male">Will<ex>elm</ex>o Scarlet</rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
-         <cell>Et lusorib<ex>us</ex> diu<ex>er</ex>s<ex>is</ex> in tempor<ex>e</ex> Nat<ex>alis</ex>
-           D<ex>omi</ex>ni</cell>
+         <cell>Et <rs ref="eats:8782" type="Entertainer_Type">lusorib<ex>us</ex></rs> diu<ex>er</ex>s<ex>is</ex> in tempor<ex>e</ex> <rs ref="eats:41461" type="CalendarDay_Liturgical">Nat<ex>alis</ex>
+           D<ex>omi</ex>ni</rs></cell>
          <cell rend="right">iiij s.</cell>
         </row>
        </table>
@@ -33612,23 +33612,23 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <table>
         <row>
-         <cell>Et cuid<ex>a</ex>m menstrallo</cell>
+         <cell>Et cuid<ex>a</ex>m <rs ref="eats:8709" type="Entertainer_Type">menstrallo</rs></cell>
          <cell rend="right">iiij d.</cell>
         </row>
         <row>
-         <cell>Et Ioh<ex>ann</ex>i Scarlet &amp; socio suo</cell>
+         <cell>Et <rs ref="eats:430289" type="Person_Male">Ioh<ex>ann</ex>i Scarlet</rs> &amp; socio suo</cell>
          <cell rend="right">viij d.</cell>
         </row>
         <row>
-         <cell>Et menstrallis d<ex>omi</ex>ne Regine</cell>
+         <cell>Et <rs ref="eats:159930" type="Collective_Troupe">menstrallis d<ex>omi</ex>ne Regine</rs></cell>
          <cell rend="right">xx d.</cell>
         </row>
         <row>
-         <cell>Et menstrall' Ducisse Eboraci</cell>
+         <cell>Et menstrall' <rs ref="eats:162565" type="Collective_Troupe">Ducisse Eboraci</rs></cell>
          <cell rend="right">xvj d.</cell>
         </row>
         <row>
-         <cell>Et menstrall' D<ex>omi</ex>ni Oxonie</cell>
+         <cell>Et <rs ref="eats:382915" type="Collective_Troupe">menstrall' D<ex>omi</ex>ni Oxonie</rs></cell>
          <cell rend="right">xvj d.</cell>
         </row>
        </table>
@@ -33675,12 +33675,11 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
       <p> Cecily Neville (1415-after 31 May 1495) was duchess of York from <hi rend="italic">c</hi>
        18 October 1424 and mother to Edward IV and Richard III. See
-       <title>P&amp;P</title><!-- IN to add link to patron/troupe -->. </p>
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316207"><title>P&amp;P</title></ref>.</p>
 
       <p> John de Vere (1442– 1512/13) was thirteenth earl of Oxford from 16 February 1461/2, with
        residence at Hedingham Castle, Essex. See
-       <title>P&amp;P</title><!-- IN
-to add link to patron/troupe -->. </p>
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316369"><title>P&amp;P</title></ref>.</p>
      </div>
     </body>
    </text>
@@ -33699,15 +33698,15 @@ to add link to patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Et dat<ex>um</ex> Thome Scarlet</cell>
+         <cell>Et dat<ex>um</ex> <rs ref="eats:430534" type="Person_Male">Thome Scarlet</rs></cell>
          <cell rend="right">iiij d.</cell>
         </row>
         <row>
-         <cell>Et in regard<ex>o</ex> menstrallis d<ex>omi</ex>ni Reg<ex>is</ex></cell>
+         <cell>Et in regard<ex>o</ex> <rs ref="eats:163866" type="Collective_Troupe">menstrallis d<ex>omi</ex>ni Reg<ex>is</ex></rs></cell>
          <cell rend="right">ij s.</cell>
         </row>
         <row>
-         <cell>Et alijs menstrall<ex>is</ex></cell>
+         <cell>Et alijs <rs ref="eats:8709" type="Entertainer_Type">menstrall<ex>is</ex></rs></cell>
          <cell rend="right">xx d.</cell>
         </row>
        </table>
@@ -33722,7 +33721,7 @@ to add link to patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Et dat<ex>um</ex> cuid<ex>a</ex>m <del>Sen<ex>esca</ex>lo</del>
+         <cell>Et dat<ex>um</ex> cuid<ex>a</ex>m <del><rs ref="eats:297307" type="Collective_Occupations">Sen<ex>esca</ex>lo</rs></del>
           menstrall<ex>o</ex></cell>
          <cell rend="right">iiij d.</cell>
         </row>
@@ -33730,8 +33729,8 @@ to add link to patron/troupe -->. </p>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>Et dat<ex>um</ex> diu<ex>er</ex>s<ex>is</ex> menstrall<ex>is</ex> in fest<ex>o</ex>
-           Nat<ex>alis</ex> d<ex>omi</ex>ni</cell>
+         <cell>Et dat<ex>um</ex> diu<ex>er</ex>s<ex>is</ex> menstrall<ex>is</ex> in <rs ref="eats:40561" type="Entertainment_Type">fest<ex>o</ex></rs>
+           <rs ref="eats:41461" type="CalendarDay_Liturgical">Nat<ex>alis</ex> d<ex>omi</ex>ni</rs></cell>
          <cell rend="right">iij s. iiij d.</cell>
         </row>
        </table>
@@ -33809,14 +33808,14 @@ to add link to patron/troupe -->. </p>
         <row>
          <cell>Et solut<ex>um</ex>
           <del><damage><gap unit="chars" extent="1"/></damage></del> siue in regard<ex>o</ex>
-           dat<ex>um</ex> Tho<ex>m</ex>e Scarlet minstrallo</cell>
+          dat<ex>um</ex> <rs ref="eats:430534" type="Person_Male">Tho<ex>m</ex>e Scarlet</rs> <rs ref="eats:8709" type="Entertainer_Type">minstrallo</rs></cell>
          <cell rend="right">iiij d.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>Et ministrall' d<ex>omi</ex>ni Reg<ex>is</ex></cell>
+         <cell>Et <rs ref="eats:163866" type="Collective_Troupe">ministrall' d<ex>omi</ex>ni Reg<ex>is</ex></rs></cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
@@ -33838,13 +33837,13 @@ to add link to patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Et dat<ex>um</ex> in regard<ex>o</ex> Ioh<ex>ann</ex>i Broun minstrall<ex>o</ex>
+         <cell>Et dat<ex>um</ex> in regard<ex>o</ex> <rs ref="eats:430694" type="Person_Male">Ioh<ex>ann</ex>i Broun</rs> minstrall<ex>o</ex>
           &amp; socio suo</cell>
          <cell rend="right">xvj d.</cell>
         </row>
         <row>
-         <cell>Et dat<ex>um</ex> diu<ex>er</ex>s<ex>is</ex> lusorib<ex>us</ex> infra
-           Nat<ex>alem</ex> D<ex>omi</ex>ni</cell>
+         <cell>Et dat<ex>um</ex> diu<ex>er</ex>s<ex>is</ex> <rs ref="eats:8782" type="Entertainer_Type">lusorib<ex>us</ex></rs> infra
+           <rs ref="eats:41461" type="CalendarDay_Liturgical">Nat<ex>alem</ex> D<ex>omi</ex>ni</rs></cell>
          <cell rend="right"><del>xx</del> xvij d.</cell>
         </row>
        </table>
@@ -33920,8 +33919,8 @@ to add link to patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Et dat<ex>um</ex> iiij<hi rend="superscript">or</hi> ministrallis d<ex>omi</ex>ni
-           Reg<ex>is</ex>
+         <cell>Et dat<ex>um</ex> iiij<hi rend="superscript">or</hi> <rs ref="eats:163866" type="Collective_Troupe">ministrallis d<ex>omi</ex>ni
+           Reg<ex>is</ex></rs>
          </cell>
          <cell rend="right">iij s. iiij d.</cell>
         </row>
@@ -33994,7 +33993,7 @@ to add link to patron/troupe -->. </p>
        <gap reason="omitted"/>
 
        <ab><gap reason="omitted"/> Et dat<ex>um</ex> diu<ex>er</ex>s<ex>is</ex>
-         ministrall<ex>is</ex> d<ex>omi</ex>ni Reg<ex>is</ex> ij s.</ab>
+         <rs ref="eats:163866" type="Collective_Troupe">ministrall<ex>is</ex> d<ex>omi</ex>ni Reg<ex>is</ex></rs> ij s.</ab>
 
        <gap reason="omitted"/>
       </div>
@@ -34028,7 +34027,7 @@ to add link to patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Et dat<ex>um</ex> ministrall<ex>is</ex> d<ex>omi</ex>ni Reg<ex>is</ex> hoc
+         <cell>Et dat<ex>um</ex> <rs ref="eats:163866" type="Collective_Troupe">ministrall<ex>is</ex> d<ex>omi</ex>ni Reg<ex>is</ex></rs> hoc
           anno</cell>
          <cell rend="right">ij s. viij d.</cell>
         </row>
@@ -34071,8 +34070,8 @@ to add link to patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Et solut<ex>um</ex> &amp; dat<ex>um</ex> lusorib<ex>us</ex> et menstrallis in
-           temp<ex>or</ex>e nat<ex>ale</ex> d<ex>omi</ex>ni</cell>
+         <cell>Et solut<ex>um</ex> &amp; dat<ex>um</ex> <rs ref="eats:8782" type="Entertainer_Type">lusorib<ex>us</ex></rs> et <rs ref="eats:8709" type="Entertainer_Type">menstrallis</rs> in
+           temp<ex>or</ex>e <rs ref="eats:41461" type="CalendarDay_Liturgical">nat<ex>ale</ex> d<ex>omi</ex>ni</rs></cell>
          <cell rend="right">iij s. iiij d.</cell>
         </row>
        </table>
@@ -34114,7 +34113,7 @@ to add link to patron/troupe -->. </p>
 
        <table>
         <row>
-         <cell>Et dat<ex>um</ex> ministrallis d<ex>omi</ex>ni Reg<ex>is</ex></cell>
+         <cell>Et dat<ex>um</ex> <rs ref="eats:163866" type="Collective_Troupe">ministrallis d<ex>omi</ex>ni Reg<ex>is</ex></rs></cell>
          <cell rend="right">ij s.</cell>
         </row>
        </table>
