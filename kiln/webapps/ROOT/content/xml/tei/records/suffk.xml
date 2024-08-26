@@ -36012,8 +36012,8 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m recepim<ex>us</ex> de Westrow ex collecc<ex>i</ex>o<ex>n</ex>e Thome
-          Skott d<ex>omi</ex>ni de Mysrule in temp<ex>or</ex>e Natalis d<ex>omi</ex>ni A<ex>nn</ex>o
+         <cell>It<ex>e</ex>m recepim<ex>us</ex> de <!-- IN for AW: Location to be tagged here-->Westrow ex collecc<ex>i</ex>o<ex>n</ex>e <rs ref="eats:431528" type="Person_Male">Thome
+          Skott</rs> <rs ref="eats:14146" type="Entertainment_FolkCustom">d<ex>omi</ex>ni de Mysrule</rs> in <rs ref="eats:41461" type="CalendarDay_Liturgical">temp<ex>or</ex>e Natalis d<ex>omi</ex>ni</rs> A<ex>nn</ex>o
            xx<add place="above">o</add> H<ex>enrici</ex> viij </cell>
          <cell rend="right">vij s. iiij d.</cell>
         </row>
@@ -36031,7 +36031,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
         <row>
          <cell>It<ex>e</ex>m recepim<ex>us</ex> de diu<ex>er</ex>sis p<ex>ar</ex>ochianis in
            mens<ex>e</ex> Maij vlti<ex>m</ex>o p<ex>re</ex>t<ex>er</ex>ito p<ex>ro</ex> ludo
-           vocat<ex>o</ex> Maygame</cell>
+           vocat<ex>o</ex> <rs ref="eats:35779" type="Entertainment_FolkCustom">Maygame</rs></cell>
          <cell rend="right">lxiiij s.</cell>
         </row>
        </table>
@@ -36104,19 +36104,19 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m the gathryng on May Daye</cell>
+         <cell>It<ex>e</ex>m the gathryng on <rs ref="eats:41230" type="CalendarDay_Secular">May Daye</rs></cell>
          <cell rend="right">vij s. iiij d.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m of the gatheryng on corp<ex>us</ex> c<ex>hri</ex>sty day</cell>
+         <cell>It<ex>e</ex>m of the gatheryng on <rs ref="eats:41497" type="CalendarDay_Liturgical">corp<ex>us</ex> c<ex>hri</ex>sty day</rs></cell>
          <cell rend="right">vij s.</cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m of the gatheryng mony ffor the pley <add place="above">or
-           chyrchall</add></cell>
+         <cell>It<ex>e</ex>m of the gatheryng mony ffor the <rs ref="eats:40453" type="Drama_Type">pley</rs> <add place="above">or
+           <rs ref="eats:40561" type="Entertainment_Type">chyrchall</rs></add></cell>
          <cell rend="right">xxj s.</cell>
         </row>
        </table>
@@ -36141,8 +36141,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <table>
         <row>
-         <cell>P<ex>ri</ex>m<ex>is</ex> receyvyd at þe <rs ref="eats:385925" type="Place_F_Church"
-           >cherche</rs> ale clere</cell>
+         <cell>P<ex>ri</ex>m<ex>is</ex> receyvyd at þe <rs ref="eats:40561" type="Entertainment_Type">cherche ale</rs> clere</cell>
          <cell rend="right">xxj s. viij d.</cell>
         </row>
         <row>
@@ -36154,11 +36153,11 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
         </row>
         <row>
          <cell>It<ex>em</ex> rec<ex>eyvyd</ex>
-          <del>of</del> att the gatheryng day beyng may day </cell>
+          <del>of</del> att the gatheryng day beyng <rs ref="eats:41230" type="CalendarDay_Secular">may day</rs> </cell>
          <cell rend="right">vj s. ij d.</cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> receyvyd at ye gatheryng day on corpys crysty <damage><gap unit="chars"
+         <cell>It<ex>em</ex> receyvyd at ye gatheryng day on <rs ref="eats:41497" type="CalendarDay_Liturgical">corpys crysty</rs> <damage><gap unit="chars"
             extent="2"/></damage>y </cell>
          <cell rend="right">iij s. iiij d.</cell>
         </row>
