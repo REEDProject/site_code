@@ -3395,6 +3395,27 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Bear Garden 3",
+                        "place_type": "arena",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "594"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09575081078833055,
+                            51.50795390256948
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Curtain Playhouse",
                         "place_type": "playhouse",
                         "is_approximate": false,
@@ -3473,27 +3494,6 @@
                         "coordinates": [
                             -0.07982475069439197,
                             51.52456411521703
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Bear Garden 3",
-                        "place_type": "arena",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "594"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09575081078833055,
-                            51.50795390256948
                         ]
                     }
                 },
@@ -4486,27 +4486,6 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Globe Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "573"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09483936752466425,
-                            51.50685267906804
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
                         "name": "Bear Garden 3",
                         "place_type": "arena",
                         "is_approximate": false,
@@ -4522,6 +4501,48 @@
                         "coordinates": [
                             -0.09575081078833055,
                             51.50795390256948
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Blackfriars Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 53,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1535"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.102893656073869,
+                            51.5126421918322
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Boar's Head Inn",
+                        "place_type": "victualling-house",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1605"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07404720989344102,
+                            51.51477289468731
                         ]
                     }
                 },
@@ -4570,6 +4591,27 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Globe Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "573"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09483936752466425,
+                            51.50685267906804
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Red Bull Playhouse",
                         "place_type": "playhouse",
                         "is_approximate": false,
@@ -4585,48 +4627,6 @@
                         "coordinates": [
                             -0.10347652525102667,
                             51.52417099873942
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Blackfriars Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 53,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1535"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.102893656073869,
-                            51.5126421918322
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Boar's Head Inn",
-                        "place_type": "victualling-house",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 58,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1605"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.07404720989344102,
-                            51.51477289468731
                         ]
                     }
                 }
@@ -4714,27 +4714,6 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Globe Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "573"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09483936752466425,
-                            51.50685267906804
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
                         "name": "Bear Garden 3",
                         "place_type": "arena",
                         "is_approximate": false,
@@ -4750,6 +4729,48 @@
                         "coordinates": [
                             -0.09575081078833055,
                             51.50795390256948
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Blackfriars Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 53,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1535"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.102893656073869,
+                            51.5126421918322
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Boar's Head Inn",
+                        "place_type": "victualling-house",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1605"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07404720989344102,
+                            51.51477289468731
                         ]
                     }
                 },
@@ -4798,6 +4819,27 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Globe Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "573"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09483936752466425,
+                            51.50685267906804
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Red Bull Playhouse",
                         "place_type": "playhouse",
                         "is_approximate": false,
@@ -4813,48 +4855,6 @@
                         "coordinates": [
                             -0.10347652525102667,
                             51.52417099873942
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Blackfriars Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 53,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1535"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.102893656073869,
-                            51.5126421918322
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Boar's Head Inn",
-                        "place_type": "victualling-house",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 58,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1605"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.07404720989344102,
-                            51.51477289468731
                         ]
                     }
                 }
@@ -5383,7 +5383,7 @@
             "display": "1615/16-06-20"
         },
         "ereed_url": null,
-        "record_url": "https://ereed.org/collections/bghop/appendix-4/"
+        "record_url": "https://ereed.org/records/app4?/"
     },
     "bghop-01-0063": {
         "title": null,
@@ -5638,7 +5638,7 @@
             "display": "1617-11"
         },
         "ereed_url": null,
-        "record_url": "https://ereed.org/collections/bghop/appendix-4/"
+        "record_url": "https://ereed.org/records/app4?/"
     },
     "bghop-01-0068": {
         "title": null,
@@ -6099,7 +6099,7 @@
     },
     "bghop-01-0072": {
         "title": "Chancery Court Pleadings: Jacob Meade v. Agnes Henslowe, Mary Moushurst and Elizabeth Moushurst, and Edward Alleyn",
-        "description": "Jacob Meade launches Chancery Court Suit vs Agnes Henslowe, Mary and Elizabeth Moushurst and Edward Alleyn.",
+        "description": "Jacob Meade launched Chancery Court Suit vs Agnes Henslowe, Mary and Elizabeth Moushurst and Edward Alleyn.",
         "record_id": "bghop-ridp261321848",
         "regions": {
             "type": "featurecollection",
@@ -6215,27 +6215,6 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Globe Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "573"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09483936752466425,
-                            51.50685267906804
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
                         "name": "Bear Garden 4/Hope Playhouse",
                         "place_type": "playhouse",
                         "is_approximate": false,
@@ -6251,6 +6230,48 @@
                         "coordinates": [
                             -0.09571204309390599,
                             51.50776757930662
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Blackfriars Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 53,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1535"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.102893656073869,
+                            51.5126421918322
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Boar's Head Inn",
+                        "place_type": "victualling-house",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1605"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07404720989344102,
+                            51.51477289468731
                         ]
                     }
                 },
@@ -6299,6 +6320,27 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Globe Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "573"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09483936752466425,
+                            51.50685267906804
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Red Bull Playhouse",
                         "place_type": "playhouse",
                         "is_approximate": false,
@@ -6314,48 +6356,6 @@
                         "coordinates": [
                             -0.10347652525102667,
                             51.52417099873942
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Blackfriars Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 53,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1535"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.102893656073869,
-                            51.5126421918322
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Boar's Head Inn",
-                        "place_type": "victualling-house",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 58,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1605"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.07404720989344102,
-                            51.51477289468731
                         ]
                     }
                 }
@@ -6425,7 +6425,7 @@
             "display": "1626\u201430"
         },
         "ereed_url": null,
-        "record_url": "https://ereed.org/search/?facet_locations_feature_water_feature=231960&start=0&facet_people_named_n=345810"
+        "record_url": "https://ereed.org/records/SKCS group?/"
     },
     "bghop-01-0079": {
         "title": "St Saviour's Overseers of the Poor Accounts",
@@ -6494,27 +6494,6 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Globe Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "573"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09483936752466425,
-                            51.50685267906804
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
                         "name": "Bear Garden 4/Hope Playhouse",
                         "place_type": "playhouse",
                         "is_approximate": false,
@@ -6530,6 +6509,48 @@
                         "coordinates": [
                             -0.09571204309390599,
                             51.50776757930662
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Blackfriars Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 53,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1535"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.102893656073869,
+                            51.5126421918322
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Boar's Head Inn",
+                        "place_type": "victualling-house",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1605"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07404720989344102,
+                            51.51477289468731
                         ]
                     }
                 },
@@ -6578,6 +6599,27 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Globe Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "573"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09483936752466425,
+                            51.50685267906804
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Red Bull Playhouse",
                         "place_type": "playhouse",
                         "is_approximate": false,
@@ -6593,48 +6635,6 @@
                         "coordinates": [
                             -0.10347652525102667,
                             51.52417099873942
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Blackfriars Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 53,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1535"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.102893656073869,
-                            51.5126421918322
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Boar's Head Inn",
-                        "place_type": "victualling-house",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 58,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1605"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.07404720989344102,
-                            51.51477289468731
                         ]
                     }
                 }
@@ -6966,27 +6966,6 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Globe Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "573"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09483936752466425,
-                            51.50685267906804
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
                         "name": "Bear Garden 4/Hope Playhouse",
                         "place_type": "playhouse",
                         "is_approximate": false,
@@ -7002,6 +6981,48 @@
                         "coordinates": [
                             -0.09571204309390599,
                             51.50776757930662
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Blackfriars Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 53,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1535"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.102893656073869,
+                            51.5126421918322
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Boar's Head Inn",
+                        "place_type": "victualling-house",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1605"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07404720989344102,
+                            51.51477289468731
                         ]
                     }
                 },
@@ -7050,6 +7071,27 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Globe Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "573"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09483936752466425,
+                            51.50685267906804
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Red Bull Playhouse",
                         "place_type": "playhouse",
                         "is_approximate": false,
@@ -7065,48 +7107,6 @@
                         "coordinates": [
                             -0.10347652525102667,
                             51.52417099873942
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Blackfriars Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 53,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1535"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.102893656073869,
-                            51.5126421918322
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Boar's Head Inn",
-                        "place_type": "victualling-house",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 58,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1605"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.07404720989344102,
-                            51.51477289468731
                         ]
                     }
                 }
