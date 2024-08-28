@@ -10484,7 +10484,7 @@ patron/troupe -->.</p>
        <gap reason="omitted"/>
 
        <ab><gap reason="omitted"/>j <rs ref="eats:30189" type="Entertainer_Type"
-         >harpo<ex>ur</ex></rs> Agn<ex>etis</ex> Whyte p<ex>er</ex> tot<ex>um</ex> die<ex>m</ex><gap
+         >harpo<ex>ur</ex></rs> <rs ref="eats:438579" type="Person_Female">Agn<ex>etis</ex> Whyte</rs> p<ex>er</ex> tot<ex>um</ex> die<ex>m</ex><gap
          reason="omitted"/></ab>
 
        <gap reason="omitted"/>
@@ -10506,7 +10506,7 @@ patron/troupe -->.</p>
        <gap reason="omitted"/>
 
        <ab><gap reason="omitted"/>j <rs ref="eats:376488" type="Collective_Troupe"
-          >menstrall<ex>us</ex></rs> do<ex>mi</ex>ni Ric<ex>ard</ex>i Waldeg<ex>ra</ex>ue Dag<note
+          >menstrall<ex>us</ex></rs> do<ex>mi</ex>ni <rs ref="eats:438662" type="Person_Male">Ric<ex>ard</ex>i Waldeg<ex>ra</ex>ue</rs> <rs ref="eats:438872" type="Person_Male">Dag</rs><note
          type="foot">Dag: <hi rend="italic">likely John Dag, tenant, <rs ref="eats:375329"
            type="Collective_Occupations">thatcher</rs>, <rs ref="eats:375571"
            type="Collective_Occupations">clock-maker</rs>, guest on 8 December, 24 January, 17
@@ -10523,7 +10523,7 @@ patron/troupe -->.</p>
        <gap reason="omitted"/>
 
        <ab><gap reason="omitted"/>ij <rs ref="eats:8709" type="Entertainer_Type">menstralli</rs>
-         d<ex>omi</ex>no Petro Crek cu<ex>m</ex> fr<ex>at</ex>e ad vnu<ex>m</ex>
+         <rs ref="eats:438998" type="Person_Male">d<ex>omi</ex>no Petro Crek</rs> cu<ex>m</ex> fr<ex>at</ex>e ad vnu<ex>m</ex>
          repast<ex>um</ex><gap reason="omitted"/></ab>
 
        <gap reason="omitted"/>
@@ -10641,7 +10641,7 @@ patron/troupe -->.</p>
 
        <gap reason="omitted"/>
 
-       <ab><gap reason="omitted"/>Ioh<ex>annus</ex> Blake &amp; j <rs ref="eats:8709"
+       <ab><gap reason="omitted"/><rs ref="eats:439103" type="Person_Male">Ioh<ex>annus</ex> Blake</rs> &amp; j <rs ref="eats:8709"
          type="Entertainer_Type">menstrall<ex>us</ex></rs> p<ex>er</ex> tot<ex>um</ex>
          die<ex>m</ex><gap reason="omitted"/></ab>
       </div>
@@ -10768,9 +10768,7 @@ patron/troupe -->.</p>
    <text type="record" xml:id="suffk-rid193">
     <body>
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>,
-       <!-- AW for IN: this is the place where I was unsure if this person should be tagged to a location 
-     IN: I would just tag "Framlingham" here as a location. No need to tag De Mowbray in the header.--><rs>De
-       Mowbray of Framlingham</rs>
+       <rs ref="eats:374458" type="Place_PA_Settlement">De Mowbray of Framlingham</rs>
       <date from-iso="1401" to-iso="1404">1401–4</date>
       <seg ana="taxon:SUDM01">SUDM01</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid193-transcription">
