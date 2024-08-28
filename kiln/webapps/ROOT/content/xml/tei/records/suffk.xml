@@ -37679,17 +37679,19 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
        <gap reason="omitted"/>
 
        <ab>Et<note type="marginal" place="margin_left">ffin<ex>is</ex> vj d.</note> q<ex>uo</ex>d
-         Ioh<ex>ann</ex>es Saye extra Cur<ex>iam</ex> surs<ex>um</ex>redd<ex>idit</ex> in
-         man<ex>us</ex> d<ex>omi</ex>ni p<ex>er</ex> man<ex>us</ex> Thome Miller nat<ex>ivi</ex>
-         ten<ex>entis</ex> in p<ex>re</ex>s<ex>en</ex>cia laurencij Reyngberd Thome Rolfe et
+         <rs ref="eats:439853" type="Person_Male">Ioh<ex>ann</ex>es Saye</rs> extra Cur<ex>iam</ex> surs<ex>um</ex>redd<ex>idit</ex> in
+         man<ex>us</ex> d<ex>omi</ex>ni p<ex>er</ex> man<ex>us</ex> <rs ref="eats:439915" type="Person_Male">Thome Miller</rs> nat<ex>ivi</ex>
+         ten<ex>entis</ex> in p<ex>re</ex>s<ex>en</ex>cia <rs ref="eats:439346" type="Person_Male">laurencij Reyngberd</rs> <rs ref="eats:439514" type="Person_Male">Thome Rolfe</rs> et
          al<ex>iorum</ex> de homag<ex>io</ex> di<ex>midiam</ex> acr<ex>am</ex> et xvj
          p<ex>er</ex>ticat<ex>as</ex> terr<ex>e</ex> iac<ex>entes</ex> int<ex>er</ex>
-         terr<ex>am</ex> nup<ex>er</ex> Thome Berne ex p<ex>ar</ex>te austr<ex>ali</ex> et
-         terr<ex>am</ex> nup<ex>er</ex> Rob<ex>er</ex>ti Man ex p<ex>ar</ex>te Aquil<ex>onali</ex>
-        vno capite abbutt<ex>ante</ex> sup<ex>er</ex> hallegrene vers<ex>us</ex> orien<ex>tem</ex>
-        Ad opus Ioh<ex>ann</ex>is Page et Rob<ex>er</ex>ti Holme Quibus lib<ex>er</ex>at<ex>a</ex>
+         terr<ex>am</ex> nup<ex>er</ex> <rs ref="eats:431869" type="Person_Male">Thome Berne</rs> ex p<ex>ar</ex>te austr<ex>ali</ex> et
+         terr<ex>am</ex> nup<ex>er</ex> <rs ref="eats:439976" type="Person_Male">Rob<ex>er</ex>ti Man</rs> ex p<ex>ar</ex>te Aquil<ex>onali</ex>
+        vno capite abbutt<ex>ante</ex> sup<ex>er</ex> <rs ref="eats:386480" type="Place_F_OpenArea"
+         >hallegrene</rs> vers<ex>us</ex> orien<ex>tem</ex>
+        Ad opus <rs ref="eats:439224" type="Person_Male">Ioh<ex>ann</ex>is Page</rs> et <rs ref="eats:439575" type="Person_Male">Rob<ex>er</ex>ti Holme</rs> Quibus lib<ex>er</ex>at<ex>a</ex>
         est inde sei<ex>sin</ex>a Tenend<ex>as</ex> ill<ex>is</ex> ad vsum profic<ex>ium</ex> et
-         co<ex>m</ex>mod<ex>um</ex> Eccl<ex>es</ex>ie de Walsh<ex>a</ex>m p<ex>er</ex>
+        co<ex>m</ex>mod<ex>um</ex> <rs
+         ref="eats:386503" type="Place_F_Church">Eccl<ex>es</ex>ie de Walsh<ex>a</ex>m</rs> p<ex>er</ex>
          virg<ex>am</ex> ad volunt<ex>atem</ex> d<ex>omi</ex>ni p<ex>er</ex>
          s<ex>er</ex>uic<ex>ia</ex> &amp; cons<ex>uetudines</ex> &amp;c.</ab>
 
@@ -37707,20 +37709,18 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
         presentment) that John Saye, outside the court, surrendered into the hands of the lord by
         the hands of Thomas Miller, bondsman tenant, in the presence of Lawrence Reyngberd, Thomas
         Rolfe, and of others from the homage, half an acre and sixteen perches of land lying between
-        <!-- AW for IN: I dont think its worth tagging this exact land beacuse its ambiguous, but I will leave a tag for Hallegreene which must be an open area aka Game Place-->the
+        <!-- AW for IN: I dont think its worth tagging this exact land beacuse its ambiguous, but I will leave a tag for Hallegreene which must be an open area aka Game Place. IN: Agreed, not worth tagging. Too vague. -->the
         land of the late Thomas Berne on the south side and the land of the late Robert Man on the
-        north side with one end abutting onto <rs ref="eats:386480" type="Place_F_OpenArea"
-         >Hallegrene</rs> toward the east for the use of John Page and Robert Holme to whom seisin
-        of it has been delivered, to be held by them for the use, profit, and advantage of the <rs
-         ref="eats:386503" type="Place_F_Church">church of Walsham</rs> by authority according to
+        north side with one end abutting onto Hallegrene toward the east for the use of John Page and Robert Holme to whom seisin
+        of it has been delivered, to be held by them for the use, profit, and advantage of the church of Walsham by authority according to
         the will of the lord by service and cunstom, etc.</ab>
 
        <gap reason="omitted"/>
       </div>
      </div>
      <div type="endnote">
-      <p> As Dodd observes, this action by the <rs ref="eats:386583" type="Place_PA_Manor">manor
-        court</rs> 'contains the earliest description of the Game Place as a recognizable separate
+      <p> As Dodd observes, this action by the <rs ref="eats:386583" type="Place_PA_Manor">manor</rs>
+        court 'contains the earliest description of the Game Place as a recognizable separate
        tenement, although it was not then called by that name' ('Another English Theater,' p 129).
       </p>
      </div>
@@ -37745,7 +37745,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
            ten<ex>et</ex> de nouo redd<ex>it</ex>u vnam p<ex>er</ex>cell<ex>am</ex> t<ex>er</ex>re
            voc<ex>atam</ex>
           <rs ref="eats:386537" type="Place_F_Property">Campyngclosse</rs>
-           p<ex>er</ex>cell<ex>am</ex> ten<ex>emen</ex>t<ex>i</ex> Thome berne p<ex>er</ex>
+           p<ex>er</ex>cell<ex>am</ex> ten<ex>emen</ex>t<ex>i</ex> <rs ref="eats:431869" type="Person_Male">Thome berne</rs> p<ex>er</ex>
            annu<ex>m</ex>
          </cell>
          <cell rend="right">viij d. ob.</cell>
@@ -37772,11 +37772,12 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
        tenure of the site to his own son, Richard, and to his wife, Agnes, the court entry
        describing the site as: </p>
 
+     <!-- IN for PG: This should be a different record, I think?-->
       <p> dimid<ex>iam</ex> acr<ex>am</ex> t<ex>e</ex>rre percell<ex>am</ex> de conynger
-        iac<ex>entem</ex> int<ex>er</ex> t<ex>e</ex>rras nup<ex>er</ex> Rob<ex>er</ex>ti Man ex
-       parte Aquilon<ex>ali</ex> et terr<ex>as</ex> p<ex>re</ex>dic<ex>t</ex>i Thome bernys ex
-        p<ex>ar</ex>te austral<ex>i</ex> vno capite abbutt<ex>ante</ex> sup<ex>er</ex> hallegrene
-        v<ex>er</ex>sus orien<ex>tem</ex> alio vere capite abbutt<ex>ante</ex> sup<ex>er</ex>
+        iac<ex>entem</ex> int<ex>er</ex> t<ex>e</ex>rras nup<ex>er</ex> <rs ref="eats:439976" type="Person_Male">Rob<ex>er</ex>ti Man</rs> ex
+       parte Aquilon<ex>ali</ex> et terr<ex>as</ex> p<ex>re</ex>dic<ex>t</ex>i <rs ref="eats:431869" type="Person_Male">Thome bernys</rs> ex
+       p<ex>ar</ex>te austral<ex>i</ex> vno capite abbutt<ex>ante</ex> sup<ex>er</ex> <rs ref="eats:386480" type="Place_F_OpenArea"
+        >hallegrene</rs> v<ex>er</ex>sus orien<ex>tem</ex> alio vere capite abbutt<ex>ante</ex> sup<ex>er</ex>
         t<ex>e</ex>rr<ex>am</ex> p<ex>re</ex>d<ex>ict</ex>i Thome bernys versus
         occident<ex>em</ex><gap reason="omitted"/>(Suffolk Archives, Bury: HA 504/1/18, mb 1). </p>
 
@@ -37803,14 +37804,15 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
        <gap reason="omitted"/>
 
        <ab>It<ex>e</ex>m<note type="foot">It<ex>e</ex>m: <hi rend="italic">in display
-         script</hi></note><note type="marginal" place="margin_left">Obitus Ioh<ex>ann</ex>is
-         Page</note> p<ex>re</ex>sent<ex>ant</ex> q<ex>uo</ex>d Ioh<ex>ann</ex>es Page de Cleystrete
+         script</hi></note><note type="marginal" place="margin_left">Obitus <rs ref="eats:439224" type="Person_Male">Ioh<ex>ann</ex>is
+          Page</rs></note> p<ex>re</ex>sent<ex>ant</ex> q<ex>uo</ex>d Ioh<ex>ann</ex>es Page de <rs ref="eats:386560" type="Place_F_Street">Cleystrete</rs>
         obijt solus sei<ex>si</ex>tus de pictello terr<ex>e</ex> nat<ex>iue</ex> iac<ex>ente</ex>
          iux<ex>t</ex>a <rs ref="eats:386537" type="Place_F_OpenArea"><foreign xml:lang="eng">le
-          game place</foreign></rs> &amp; q<ex>uo</ex>d Will<ex>elmu</ex>s Page Ioh<ex>ann</ex>es
-        Page et Ric<ex>ard</ex>us Page filij p<ex>re</ex>d<ex>i</ex>c<ex>t</ex>i Ioh<ex>ann</ex>is
+          game place</foreign></rs> &amp; q<ex>uo</ex>d <rs ref="eats:440038" type="Person_Male">Will<ex>elmu</ex>s Page</rs> <rs ref="eats:440172" type="Person_Male">Ioh<ex>ann</ex>es
+        Page</rs> et <rs ref="eats:440103" type="Person_Male">Ric<ex>ard</ex>us Page</rs> filij p<ex>re</ex>d<ex>i</ex>c<ex>t</ex>i Ioh<ex>ann</ex>is
         Page sunt p<ex>ro</ex>x<ex>imi</ex> heredes ip<ex>s</ex>ius Ioh<ex>ann</ex>is
-         s<ex>e</ex>c<ex>un</ex>dum con<ex>suetudinem</ex> Man<ex>er</ex>ij et plene etatis
+        s<ex>e</ex>c<ex>un</ex>dum con<ex>suetudinem</ex> <rs ref="eats:386583"
+         type="Place_PA_Manor">Man<ex>er</ex></rs>ij et plene etatis
         &amp;c.</ab>
 
        <gap reason="omitted"/>
@@ -37824,11 +37826,10 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
        <gap reason="omitted"/>
 
        <ab>Likewise<note type="marginal" place="margin_left">Death of John Page</note> they present
-        that John Page of <rs ref="eats:386560" type="Place_F_Street">Cleystreet</rs> has died
+        that John Page of Cleystreet has died
         solely seized by birth of the pightel of land which lies next to the game place, and that
         Willaim Page, John Page, and Richard Page are sons of the aforesaid John Page, the closest
-        heirs of that John according to the custom of the <rs ref="eats:386583"
-         type="Place_PA_Manor">manor</rs>, and are of full age, etc.</ab>
+        heirs of that John according to the custom of the manor, and are of full age, etc.</ab>
 
        <gap reason="omitted"/>
       </div>
@@ -37857,25 +37858,25 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
          havinge</add>
         <del>sett v</del> many great trees called populers growynge about the same banke, in the
         myddest a fayre round place of earth wythe a stone wall about the same to the height of the
-        earth made of purpose for the vse of Stage playes<note type="marginal" place="margin_right"
+        earth made of purpose for the vse of <rs ref="eats:40453" type="Drama_Type">Stage playes</rs><note type="marginal" place="margin_right"
           >di<ex>midia</ex> acr<ex>e</ex> x p<ex>e</ex>r<ex>ticarum</ex></note> doth Lie betwene the
         ortyard of the Last sayd tenam<ex>ent</ex> on the north<note type="foot">tenam<ex>ent</ex>
          on the north: <hi rend="italic">the 1.5 acre tenement of Margery</hi></note> and the
-         tene<ex>men</ex>te &amp; ground in the tenure of Iohn vincent <del>ff</del> called barnes
+         tene<ex>men</ex>te &amp; ground in the tenure of <rs ref="eats:440292" type="Person_Male">Iohn vincent</rs> <del>ff</del> called <rs ref="eats:431869" type="Person_Male">barnes</rs>
         on the south thone hedd thereof abbutteth vppon the <rs ref="eats:386480"
          type="Place_F_OpenArea">hall grene</rs> toward<ex>es</ex> the east the other on the sayd
         ground called barnes in p<ex>ar</ex>te and the ‸<add place="above">cust<ex>omary</ex></add>
-        close of <del>Ces</del>
-        <add place="above">cycelye</add> margerye in p<ex>ar</ex>te on the west p<ex>ar</ex>te and
+        close of <rs ref="eats:440414" type="Person_Female"><del>Ces</del>
+        <add place="above">cycelye</add> margerye</rs> in p<ex>ar</ex>te on the west p<ex>ar</ex>te and
          cont<ex>eyneth</ex></ab>
 
        <ab>The<note type="marginal" place="margin_left">vyncent I <lb/> Barnes
          Ten<ex>ant</ex></note> sayd ‸<add place="above">cust<ex>omary</ex></add> ten<ex>emen</ex>te
         called Barnes w<ex>i</ex>t<ex>h</ex> one back yard thervnto adioyninge in the tenure of Iohn
         vincent lieth betwene the game place aforesayd toward<ex>es</ex> the north &amp; the way to
-        bury S<ex>ain</ex>t Edmund <del>toward<ex>es</ex> the south</del>
+        <rs ref="eats:313077" type="Place_PA_Settlement">bury S<ex>ain</ex>t Edmund</rs> <del>toward<ex>es</ex> the south</del>
         <add place="above">in p<ex>ar</ex>te and the</add> custom<ex>ary</ex> cottage in the tenure
-        of Iohn knyght in p<ex>ar</ex>te toward<ex>es</ex> the south p<ex>ar</ex>te</ab>
+        of <rs ref="eats:440353" type="Person_Male">Iohn knyght</rs> in p<ex>ar</ex>te toward<ex>es</ex> the south p<ex>ar</ex>te</ab>
       </div>
      </div>
      <div type="endnote">
@@ -37900,13 +37901,13 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
        <gap reason="omitted"/>
 
        <ab type="exdent">7. Dicti Inh<ex>ab</ex>itantes<note type="foot">Dicti
-         Inh<ex>ab</ex>itantes: <hi rend="italic">in display script</hi></note> ville de walsham
-        tenent nat<ex>iue</ex> vna<ex>m</ex> peciam pastur<ex>e</ex> vocat<ex>am</ex> le game place
-         quond<ex>am</ex> Thome Berne cum <pb n="51" type="folio"/> percella vnius pecie
+         Inh<ex>ab</ex>itantes: <hi rend="italic">in display script</hi></note> ville de <rs ref="eats:386439" type="Place_PA_Settlement">walsham</rs>
+        tenent nat<ex>iue</ex> vna<ex>m</ex> peciam pastur<ex>e</ex> vocat<ex>am</ex> <rs ref="eats:386537" type="Place_F_OpenArea">le game place</rs>
+         quond<ex>am</ex> <rs ref="eats:431869" type="Person_Male">Thome Berne</rs> cum <pb n="51" type="folio"/> percella vnius pecie
          pastur<ex>e</ex> ad finem occiden<ex>talem</ex> eiusd<ex>e</ex>m scituat<ex>e</ex> et
          iacen<ex>tis</ex> int<ex>er</ex> vltim<ex>am</ex> ex p<ex>ar</ex>te Austr<ex>ali</ex> et
-         Ten<ex>emen</ex>t<ex>u</ex>m ac croftum nati<ex>ue</ex> in tenur<ex>a</ex> Cicilie
-         m<ex>ar</ex>gery vid<ex>ue</ex> ex p<ex>ar</ex>te alter<ex>a</ex> Et Abuttat
+         Ten<ex>emen</ex>t<ex>u</ex>m ac croftum nati<ex>ue</ex> in tenur<ex>a</ex> <rs ref="eats:440414" type="Person_Female">Cicilie
+         m<ex>ar</ex>gery</rs> vid<ex>ue</ex> ex p<ex>ar</ex>te alter<ex>a</ex> Et Abuttat
          Simil<ex>ite</ex>r versus orien<ex>tem</ex> et super peciam p<ex>ro</ex>x<ex>imam</ex>
          sequen<ex>tem</ex> versus occid<ex>entem</ex> Et cont<ex>inet</ex> dimi<ex>diam</ex>
          Acra<ex>m</ex>/</ab>
@@ -37925,7 +37926,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
         of pasture called 'the game place' formerly of Thomas Berne with <pb n="51" type="folio"/> a
         parcel of one piece of pasture situated on the west boundary of the same and lying between
         the last (mentioned, <hi rend="italic">ie,</hi> the game place) on the south side and the
-        tenement and croft in the villein tenure of Cicilia Margery, widow, on the other side, and
+        tenement and croft in the villein tenure of Cecilia Margery, widow, on the other side, and
         abuts likewise on the east and onto the next following piece toward the west. And it
         contains half an acre.</ab>
 
