@@ -122,7 +122,8 @@
         <group>
             <text type="record" xml:id="yorkc-ridp141501981">
                 <body>
-                    <head><rs ref="eats:2417" type="Place_County">Yorkshire</rs>, <rs ref="eats:37840" type="Place_PA_Settlement">York</rs>
+                    <head><rs ref="eats:2417" type="Place_County">Yorkshire</rs>, <rs
+                            ref="eats:37840" type="Place_PA_Settlement">York</rs>
                         <date when-iso="1415">1415</date>
                         <seg ana="taxon:YMAAY">YMAAY</seg>
                     </head>
@@ -146,30 +147,33 @@
                             </ab>
                             <ab rend="right">R<ex>egistravit</ex>°</ab>
 
-                            
+
                             <table>
                                 <row>
                                     <cell>
                                         <rs ref="eats:393980" type="Collective_GuildsOccupational"
-                                            >Tannours</rs><note type="marginal" place="margin_left">°Deliu<ex>er</ex>and<ex>e</ex>
-                                                Sunt <rs ref="eats:398484" type="Thing_BookPlayMusic">Sedule</rs>
-                                                Paginar<ex>um</ex> subsequent<ex>er</ex> in forma
-                                                subscript<ex>a</ex> . artific<ex>iis</ex> P<ex>er</ex> vj. <rs
-                                                    ref="eats:394623" type="Collective_Occupations"
-                                                    >Seruient<ex>es</ex> Maior<ex>is</ex> ad
-                                                    clau<ex>am</ex></rs> p<ex>r</ex>ima vel ij<hi rend="superscript"
-                                                        >a.</hi>
-                                                <rs ref="eats:41869" type="CalendarDay_Liturgical"
-                                                    >sept<ex>iman</ex>a xl<hi rend="superscript">ma.</hi></rs>
-                                                Annuatim scribend<ex>e</ex> p<ex>er</ex> Co<ex>mmun</ex>em
-                                                Cl<ex>er</ex>icum°</note>
+                                            >Tannours</rs><note type="marginal" place="margin_left"
+                                                >°Deliu<ex>er</ex>and<ex>e</ex> Sunt <rs
+                                                ref="eats:398484" type="Thing_BookPlayMusic"
+                                                >Sedule</rs> Paginar<ex>um</ex>
+                                                subsequent<ex>er</ex> in forma subscript<ex>a</ex> .
+                                                artific<ex>iis</ex> P<ex>er</ex> vj. <rs
+                                                ref="eats:394623" type="Collective_Occupations"
+                                                  >Seruient<ex>es</ex> Maior<ex>is</ex> ad
+                                                  clau<ex>am</ex></rs> p<ex>r</ex>ima vel ij<hi
+                                                rend="superscript">a.</hi>
+                                            <rs ref="eats:41869" type="CalendarDay_Liturgical"
+                                                  >sept<ex>iman</ex>a xl<hi rend="superscript"
+                                                  >ma.</hi></rs> Annuatim scribend<ex>e</ex>
+                                                p<ex>er</ex> Co<ex>mmun</ex>em
+                                            Cl<ex>er</ex>icum°</note>
                                     </cell>
                                     <cell>
                                         <rs ref="eats:394697" type="Drama_Character">Deus
                                                 pat<ex>er</ex> om<ex>n</ex>ipotens</rs>
                                         <rs ref="eats:389074" type="Drama_TitledWork">creans &amp;
                                             formans celos</rs>
-                                        <rs ref="eats:203592" type="Drama_Character">Angelos</rs>
+                                        <rs ref="eats:203592" type="Drama_Character">Angelos</rs></cell><cell>
                                         &amp; archangelos <rs ref="eats:394752"
                                             type="Drama_Character">luciferum</rs> &amp; angelos qui
                                         cum eo ceciderunt in infernu<ex>m</ex><note type="foot"
@@ -184,7 +188,7 @@
                                     </cell>
                                     <cell> Deus pat<ex>er</ex> in sua substancia creans
                                             t<ex>er</ex>ram<note type="foot">t<ex>er</ex>ram] <hi
-                                                rend="italic">over erasure</hi></note> &amp;
+                                                rend="italic">over erasure</hi></note> </cell><cell>&amp;
                                             om<ex>n</ex>ia que in ea<note type="foot">ea] <hi
                                                 rend="italic">over erasure</hi></note> sunt <rs
                                             ref="eats:390359" type="Drama_TitledWork">p<ex>er</ex>
@@ -202,7 +206,7 @@
                                         <rs ref="eats:389052" type="Drama_TitledWork">formans</rs>
                                         <rs ref="eats:56812" type="Drama_Character">Adam</rs> de
                                         lymo t<ex>er</ex>re &amp; faciens <rs ref="eats:56831"
-                                            type="Drama_Character">Euam</rs> de costa Ade &amp;
+                                            type="Drama_Character">Euam</rs></cell><cell> de costa Ade &amp;
                                         inspirans eos sp<ex>irit</ex>u<note type="foot">de...
                                                 sp<ex>irit</ex>u] <hi rend="italic">partly over
                                                 erasure</hi></note> vite </cell>
@@ -225,10 +229,10 @@
                                     <cell>
                                         <rs ref="eats:389438" type="Drama_TitledWork">Adam &amp; Eua
                                             &amp; arbor int<ex>er</ex> eos</rs> s<ex>er</ex>pens
-                                        decipiens eos cum pomis Deus loquens eis &amp; maledicens
+                                        decipiens eos cum</cell><cell> pomis Deus loquens eis &amp; maledicens
                                             s<ex>er</ex>pente<ex>m</ex> &amp; angelus<note
                                             type="foot">angelus] <hi rend="italic">erasure
-                                                follows</hi></note> cum gladio eiciens eos de
+                                                follows</hi></note> cum gladio eiciens</cell><cell> eos de
                                             p<ex>ar</ex>adiso </cell>
                                 </row>
                                 <row>
@@ -275,7 +279,7 @@
                                             Arche</rs> &amp; <rs ref="eats:394906"
                                             type="Drama_Character">vxor eius</rs> tres <rs
                                             ref="eats:394928" type="Drama_Character">filij Noe</rs>
-                                        cum <rs ref="eats:394950" type="Drama_Characters"
+                                        cum </cell><cell><rs ref="eats:394950" type="Drama_Characters"
                                                 >vxorib<ex>u</ex>s suis</rs> cum diu<ex>er</ex>sis
                                             a<ex>n</ex>i<ex>m</ex>alib<ex>u</ex>s </cell>
                                 </row>
@@ -291,7 +295,7 @@
                                             >Abrah<ex>a</ex>m</rs>
                                         <rs ref="eats:388784" type="Drama_TitledWork">immolans</rs>
                                         <rs ref="eats:395025" type="Drama_Character">filiu<ex>m</ex>
-                                                suu<ex>m</ex> °Isaac°</rs> sup<ex>er</ex> altare <rs
+                                            suu<ex>m</ex> °Isaac°</rs> sup<ex>er</ex> altare</cell><cell> <rs
                                             ref="eats:395047" type="Drama_Character">garcio</rs> cum
                                         bosco &amp; angelus </cell>
                                 </row>
@@ -306,7 +310,7 @@
                                             serpentem in <damage><gap unit="chars" extent="3"
                                                 /></damage></rs><note type="collation">deserto
                                             Pharao</note>
-                                        <rs ref="eats:395113" type="Drama_Character">Rex</rs> viij
+                                        <rs ref="eats:395113" type="Drama_Character">Rex</rs> viij</cell><cell>
                                             <rs ref="eats:395135" type="Drama_Characters">Iudei</rs>
                                         admirantes <damage><gap unit="chars" extent="3"
                                             /></damage><note type="collation">ex expectantes</note>
@@ -318,7 +322,7 @@
                                             >Spicers</rs>
                                     </cell>
                                     <cell> °<add place="above">doctor declarans dicta
-                                                p<ex>ro</ex>phetar<ex>um</ex> de nativitat<ex>e</ex>
+                                        p<ex>ro</ex>phetar<ex>um</ex> de nativitat<ex>e</ex></add></cell><cell><add place="above">
                                                 Chr<ex>ist</ex>i futura</add>° <rs ref="eats:386268"
                                             type="Drama_Character">°Maria°</rs>
                                         <rs ref="eats:395190" type="Drama_Character">Angelus</rs>
@@ -338,17 +342,17 @@
                                             >°Iosep</rs>
                                         <rs ref="eats:389594" type="Drama_TitledWork">volens
                                                   <damage><gap unit="chars" extent="3"
-                                            /></damage></rs><note type="collation">dimittere</note> eam
-                                                <damage><gap unit="chars" extent="3"/></damage><note
-                                            type="collation">angelus eis loquens</note> vt
+                                            /></damage></rs><note type="collation">dimittere</note>
+                                        eam <damage><gap unit="chars" extent="3"/></damage><note
+                                            type="collation">angelus eis loquens</note> vt</cell><cell>
                                             t<ex>ra</ex>nsea<ex>n</ex>t vsqu<ex>e</ex> Bedlem°
                                     </cell>
                                 </row>
                                 <row>
                                     <cell> °Peuderes <lb/>ffoundo<ex>ur</ex>s </cell>
                                     <cell> °Maria Iosep volens occult <damage><gap unit="chars"
-                                                extent="3"/></damage><note type="collation">e dimettere
-                                            eam</note> angelus eis loquens ut transeant
+                                                extent="3"/></damage><note type="collation">e
+                                                    dimettere eam</note> angelus eis</cell><cell> loquens ut transeant
                                             vsq<ex>u</ex>e bethleem°<pb n="253r" type="folio"/>
                                     </cell>
                                 </row>
@@ -362,13 +366,13 @@
                                             <damage><gap unit="chars" extent="4"/></damage></del>
                                         Ioseph . <rs ref="eats:395390" type="Drama_Character"
                                             >obstetrix</rs> / <rs ref="eats:395423"
-                                            type="Drama_Character">pu<ex>er</ex></rs>
+                                                type="Drama_Character">pu<ex>er</ex></rs></cell><cell>
                                         <rs ref="eats:389787" type="Drama_TitledWork">nat<ex>u</ex>s
                                             °iacens i<ex>n</ex> p<ex>re</ex>sepio°</rs><note
                                             type="foot">°iacens i<ex>n</ex> p<ex>re</ex>sepio°] <hi
                                                 rend="italic">over erasure</hi></note>
                                             int<ex>er</ex> bouen &amp; azinu<ex>m</ex> &amp;
-                                            angel<ex>us</ex> loquens °pastorib<ex>u</ex>s°<note
+                                                    angel<ex>us</ex> loquens </cell><cell>°pastorib<ex>u</ex>s°<note
                                             type="foot"><hi rend="italic">°pastorib<ex>u</ex>s°]
                                                 over erasure</hi></note> &amp; ludentib<ex>us</ex>
                                         in pagina sequente / </cell>
@@ -380,7 +384,7 @@
                                     </cell>
                                     <cell>
                                         <rs ref="eats:241016" type="Drama_Character">Pastores</rs>
-                                        loquentes adinuicem °stella in oriente° / <rs
+                                        loquentes adinuicem °stella in oriente° / </cell><cell><rs
                                             ref="eats:390073" type="Drama_TitledWork">Angelus
                                             nuncians °pastorib<ex>u</ex>s gaudiu<ex>m</ex> de
                                                 pu<ex>e</ex>ro nato°</rs>
@@ -391,7 +395,8 @@
                                         <rs ref="eats:391391" type="Collective_GuildsOccupational"
                                             >°Goldsmythes°</rs>
                                         <lb/>Orfeuers <rs ref="eats:391461"
-                                            type="Collective_GuildsOccupational">°Masons°&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</rs>
+                                            type="Collective_GuildsOccupational"
+                                            >°Masons°&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</rs>
                                         <lb/><rs ref="eats:391494"
                                             type="Collective_GuildsOccupational">Goldbeters</rs>
                                         <lb/><rs ref="eats:391527"
@@ -401,12 +406,12 @@
                                         <rs ref="eats:395467" type="Drama_Character">Tres Reges</rs>
                                         <rs ref="eats:389568" type="Drama_TitledWork">venientes ab
                                             oriente</rs> / <rs ref="eats:395511"
-                                            type="Drama_Character">herodes</rs> int<ex>er</ex>ogans
+                                                type="Drama_Character">herodes</rs> </cell><cell>int<ex>er</ex>ogans
                                         eos de pu<ex>er</ex>o Iesu °<add place="above">&amp; <rs
                                                 ref="eats:395581" type="Drama_Character">filius
                                                 herodis</rs></add>° &amp; duo <rs ref="eats:395608"
                                             type="Drama_Character">consi°liarij</rs> &amp; <rs
-                                            ref="eats:218835" type="Drama_Character">nuncius</rs>
+                                                ref="eats:218835" type="Drama_Character">nuncius</rs></cell><cell>
                                         /./.° Maria cum pu<ex>er</ex>o &amp; stella desup<ex>er</ex>
                                         &amp; tres Reges offerentes <del><damage><gap unit="chars"
                                                   extent="3"/></damage></del> mun<ex>er</ex>a
@@ -419,7 +424,7 @@
                                                 s<ex>an</ex>c<ex>t</ex>i <lb/>leonardi</rs>
                                         <lb/>°iam Masons° </cell>
                                     <cell> Maria cum pu<ex>er</ex>o Iosep <rs ref="eats:395652"
-                                            type="Drama_Character">Anna</rs> obstetrix cum pullis
+                                        type="Drama_Character">Anna</rs> obstetrix cum pullis</cell><cell>
                                             columbar<ex>um</ex>
                                         <rs ref="eats:395685" type="Drama_Character">Symeon</rs>
                                         <rs ref="eats:389865" type="Drama_TitledWork">recipiens
@@ -435,7 +440,7 @@
                                     </cell>
                                     <cell> Maria cum pu<ex>er</ex>o &amp; Iosep <rs
                                             ref="eats:389490" type="Drama_TitledWork">fugientes in
-                                                Egipt<ex>um</ex></rs> Angelo nunciante </cell>
+                                        Egipt<ex>um</ex></rs></cell><cell> Angelo nunciante </cell>
                                 </row>
                                 <row>
                                     <cell>
@@ -452,12 +457,12 @@
                                                 /></damage></rs><note type="collation">-piens pueros
                                             occidi iiij-</note><hi rend="superscript">or</hi>
                                         <rs ref="eats:240944" type="Drama_Character">milites</rs>
-                                        cum lanceis duo <damage><gap unit="chars" extent="3"
-                                            /></damage><note type="collation">consiliarii Regis et</note>
-                                        iiij <rs ref="eats:395740" type="Drama_Character"
-                                            >mulieres</rs> deflentes <damage><gap unit="chars"
-                                                extent="3"/></damage><note type="collation">occisionem
-                                            puerorum suorum</note>
+                                        cum lanceis</cell><cell> duo <damage><gap unit="chars" extent="3"
+                                            /></damage><note type="collation">consiliarii Regis
+                                            et</note> iiij <rs ref="eats:395740"
+                                            type="Drama_Character">mulieres</rs> deflentes
+                                                <damage><gap unit="chars" extent="3"/></damage><note
+                                            type="collation">occisionem puerorum suorum</note>
                                     </cell>
                                 </row>
                                 <row>
@@ -470,7 +475,7 @@
                                     <cell> Ie<ex>su</ex>s °<add place="above"><rs ref="eats:395773"
                                                 type="Drama_Character">Doctores</rs> puer</add>°
                                         sedens <damage><gap unit="chars" extent="3"/></damage><note
-                                            type="collation">in templo in medio</note>
+                                            type="collation">in templo in medio</note></cell><cell>
                                         <rs ref="eats:388964" type="Drama_TitledWork">eor<ex>um</ex>
                                                 int<ex>er</ex>rogans eos &amp; respondens
                                                   <damage><gap unit="chars" extent="3"
@@ -478,7 +483,8 @@
                                                 rend="superscript">or</hi> Judei Maria et
                                             Josep</note> querentes eum <add place="above"
                                             >&amp;</add> inuen<damage><gap unit="chars" extent="3"
-                                            /></damage><note type="collation">-ientes in templo</note>
+                                            /></damage><note type="collation">-ientes in
+                                            templo</note>
                                     </cell>
                                 </row>
                                 <row>
@@ -504,11 +510,12 @@
                                     <cell> Ie<ex>su</ex>s Maria <damage><gap unit="chars" extent="3"
                                             /></damage><note type="collation">sponsus cum sponsa
                                             Architri-</note>clin<ex>u</ex>s cum fam<damage><gap
-                                                unit="chars" extent="3"/></damage><note type="collation"
-                                            >-ulia sua cum vj ydreis aque vbi</note>
+                                                unit="chars" extent="3"/></damage><note
+                                                    type="collation">-ulia sua cum vj ydreis aque vbi</note></cell><cell>
                                         <rs ref="eats:389683" type="Drama_TitledWork">vertitur
                                                   <damage><gap unit="chars" extent="3"
-                                            /></damage></rs><note type="collation">aqua in vinum</note>
+                                            /></damage></rs><note type="collation">aqua in
+                                            vinum</note>
                                     </cell>
                                 </row>
                                 <row>
@@ -524,8 +531,8 @@
                                             these plays.</note>
                                     </cell>
                                     <cell> Ies<ex>u</ex>s <damage><gap unit="chars" extent="3"
-                                            /></damage><note type="collation">super Pynaculum templi et
-                                            diabolus</note>
+                                            /></damage><note type="collation">super Pynaculum templi
+                                            et diabolus</note>
                                         <rs ref="eats:390514" type="Drama_TitledWork">temptans
                                             eum</rs>
                                         <damage><gap unit="chars" extent="3"/></damage><note
@@ -544,7 +551,7 @@
                                                 >Iacob<ex>us</ex></rs> &amp; <rs ref="eats:395987"
                                             type="Drama_TitledWork">Ioh<ex>ann</ex>es</rs>
                                         <rs ref="eats:390203" type="Drama_TitledWork">Iesus
-                                            ascendens in monte<ex>m</ex> &amp;
+                                            ascendens</rs></cell><cell> <rs ref="eats:390203" type="Drama_TitledWork">in monte<ex>m</ex> &amp;
                                             t<ex>r</ex>ansfigurans</rs><note type="foot">Petrus...
                                             &amp; t<ex>r</ex>ansfigurans] <hi rend="italic">over
                                                 erasure</hi></note>
@@ -570,9 +577,10 @@
                                         <rs ref="eats:396087" type="Drama_Character">Maria
                                             Magdalena</rs>
                                         <damage><gap unit="chars" extent="3"/></damage><note
-                                            type="collation">lauans pedes Jesu</note> lac<ex>ri</ex>mis
-                                                <damage><gap unit="chars" extent="3"/></damage><note
-                                            type="collation">suis et capillis suis tergens</note>
+                                            type="collation">lauans pedes Jesu</note>
+                                        lac<ex>ri</ex>mis <damage><gap unit="chars" extent="3"
+                                            /></damage><note type="collation">suis et capillis suis
+                                            tergens</note>
                                     </cell>
                                 </row>
                                 <row>
@@ -765,8 +773,9 @@
                                                   unit="chars" extent="2"/></damage></del> Cayphas
                                         duo Iudei &amp; <rs ref="eats:389943"
                                             type="Drama_TitledWork">Iudas <damage><gap unit="chars"
-                                                  extent="3"/></damage>ans</rs><note type="collation"
-                                            >reportans</note> eis xxx argenteos </cell>
+                                                  extent="3"/></damage>ans</rs><note
+                                            type="collation">reportans</note> eis xxx argenteos
+                                    </cell>
                                 </row>
                                 <row>
                                     <cell>
@@ -783,10 +792,10 @@
                                             type="Collective_GuildsOccupational">°Serveourz°</rs>
                                     </cell>
                                     <cell> °Ie<ex>su</ex>s° <damage><gap unit="chars" extent="3"
-                                            /></damage>s<note type="collation">Pilatus</note> Cayphas
-                                        Anna sex milites tene<ex>n</ex>tes hastas cu<ex>m</ex>
-                                            vexill<ex>i</ex>s &amp; alij quattuor ducentes
-                                            Iesu<ex>m</ex> ab herode <rs ref="eats:390047"
+                                            /></damage>s<note type="collation">Pilatus</note>
+                                        Cayphas Anna sex milites tene<ex>n</ex>tes hastas
+                                            cu<ex>m</ex> vexill<ex>i</ex>s &amp; alij quattuor
+                                        ducentes Iesu<ex>m</ex> ab herode <rs ref="eats:390047"
                                             type="Drama_TitledWork">petentes</rs>
                                         <rs ref="eats:395238" type="Drama_Character">Baraban</rs>
                                         dimitti &amp; Iesu<ex>m</ex> crucifigi &amp; ib<ex>ide</ex>m
@@ -973,8 +982,8 @@
                                             type="Collective_GuildsOccupational">Dubbers</rs>
                                     </cell>
                                     <cell> Ie<ex>su</ex>s Petrus Ioh<ex>ann</ex>es <damage><gap
-                                                unit="chars" extent="3"/></damage><note type="collation"
-                                            >Jacobus</note>
+                                                unit="chars" extent="3"/></damage><note
+                                            type="collation">Jacobus</note>
                                         <rs ref="eats:396786" type="Drama_Character"
                                                 >Ph<ex>illip</ex>us</rs> &amp; alij
                                         Ap<ex>osto</ex>li cum p<ex>ar</ex>te piscis assi &amp; fauo
@@ -1022,9 +1031,10 @@
                                             type="Drama_TitledWork">Maria</rs> Gabriell cum ij
                                         angelis duo <rs ref="eats:173956" type="Drama_Character"
                                             >virgines</rs> &amp; tres Iudei de <damage><gap
-                                                unit="chars" extent="3"/></damage><note type="collation"
-                                            >cognacione Marie</note> viij ap<ex>osto</ex>li &amp; ij
-                                            <rs ref="eats:40913" type="Drama_Character">diaboli</rs>
+                                                unit="chars" extent="3"/></damage><note
+                                            type="collation">cognacione Marie</note> viij
+                                            ap<ex>osto</ex>li &amp; ij <rs ref="eats:40913"
+                                            type="Drama_Character">diaboli</rs>
                                     </cell>
                                 </row>
                                 <row>
@@ -1036,13 +1046,14 @@
                                     <cell> Quatuo<ex>r</ex><note type="foot">Quatuo<ex>r</ex>] <hi
                                                 rend="italic">over erasure</hi></note>
                                             Ap<ex>osto</ex>li <damage><gap unit="chars" extent="3"
-                                            /></damage><note type="collation">portantes feretrum</note>
-                                        Marie et <rs ref="eats:396874" type="Drama_Character"
-                                            >fergus</rs> pendens <rs ref="eats:389334"
-                                            type="Drama_TitledWork">sup<ex>er</ex> feretrum</rs>
+                                            /></damage><note type="collation">portantes
+                                            feretrum</note> Marie et <rs ref="eats:396874"
+                                            type="Drama_Character">fergus</rs> pendens <rs
+                                            ref="eats:389334" type="Drama_TitledWork">sup<ex>er</ex>
+                                            feretrum</rs>
                                         <damage><gap unit="chars" extent="2"/></damage>is<note
-                                            type="collation">sun ij aliis</note> Iudeis °cu<ex>m</ex> vno
-                                        Angelo° </cell>
+                                            type="collation">sun ij aliis</note> Iudeis
+                                            °cu<ex>m</ex> vno Angelo° </cell>
                                 </row>
                                 <row>
                                     <cell>
@@ -1170,8 +1181,8 @@
                                     &#x00FE;<ex>er</ex>fore and nowere elles of &#x00FE;e payne of
                                     forfait<ex>ur</ex>e to be raysed &#x00FE;at is ordayned
                                         <damage><gap unit="chars" extent="3"/></damage><note
-                                    type="collation">&#x00FE;<ex>er</ex>fore</note> °<add place="above"
-                                        >yat<note type="foot">yat] <hi rend="italic">under
+                                    type="collation">&#x00FE;<ex>er</ex>fore</note> °<add
+                                    place="above">yat<note type="foot">yat] <hi rend="italic">under
                                             patch</hi></note> ys to say xl s</add>° And &#x00FE;at
                                 men of craftes &amp; all othir men &#x00FE;at fyndes torches
                                 &#x00FE;at &#x00FE;ai com furth in array &amp; in &#x00FE;e
@@ -1182,19 +1193,19 @@
                                     >careynge tapers (Toulmin Smith, xxxiv); saveyin keepers (Drake,
                                     xxxij)</note> of &#x00FE;e pagentz and officers &#x00FE;at ar
                                 kepers <damage><gap unit="chars" extent="3"/></damage><note
-                                    type="collation">of &#x00FE;e pees</note> of payne of forfaiture of
-                                &#x00FE;aire <pb n="255r" type="folio"/> fraunchis and &#x00FE;aire
-                                bodyes to prison And &#x2038; <add place="above">yat</add> °all
-                                    man<ex>er</ex> of craftmen &#x00FE;<ex>a</ex>t <rs
-                                    ref="eats:302248" type="Thing_SetMachinery">bringe<del>th</del>
-                                    furthe ther pageantez</rs> in ord<ex>er</ex> &amp; course by
-                                good players well arayed &amp; openly spekyng vpon payn of lesyng of
-                                C s to be paid to the chambre withoute any p<ex>a</ex>rdon And that
-                                    eu<ex>er</ex>y player that shall play be redy in his pagiaunt at
-                                    co<ex>n</ex>venyant tyme that is to say at the mydhowre betwix
-                                    iiij<hi rend="superscript">th</hi> &amp; v<hi rend="superscript"
-                                    >th</hi> of the cloke in the mornyng &amp; then all
-                                    oy<ex>er</ex> pageant<ex>es</ex> fast folowyng ilkon
+                                    type="collation">of &#x00FE;e pees</note> of payne of forfaiture
+                                of &#x00FE;aire <pb n="255r" type="folio"/> fraunchis and
+                                &#x00FE;aire bodyes to prison And &#x2038; <add place="above"
+                                    >yat</add> °all man<ex>er</ex> of craftmen &#x00FE;<ex>a</ex>t
+                                    <rs ref="eats:302248" type="Thing_SetMachinery"
+                                        >bringe<del>th</del> furthe ther pageantez</rs> in
+                                    ord<ex>er</ex> &amp; course by good players well arayed &amp;
+                                openly spekyng vpon payn of lesyng of C s to be paid to the chambre
+                                withoute any p<ex>a</ex>rdon And that eu<ex>er</ex>y player that
+                                shall play be redy in his pagiaunt at co<ex>n</ex>venyant tyme that
+                                is to say at the mydhowre betwix iiij<hi rend="superscript">th</hi>
+                                &amp; v<hi rend="superscript">th</hi> of the cloke in the mornyng
+                                &amp; then all oy<ex>er</ex> pageant<ex>es</ex> fast folowyng ilkon
                                     aft<ex>er</ex> oy<ex>er</ex> as y<ex>er</ex> course is
                                     w<ex>i</ex>t<ex>h</ex>out Tarieng sub pe<ex>n</ex>a
                                     f<ex>a</ex>c<ex>ienda</ex> cam<ex>er</ex>e <add place="below">vj
@@ -1393,8 +1404,9 @@
                                     <cell> Bowers </cell>
                                     <cell> Illusio °<add place="above">perryng</add>°
                                             ch<ex>rist</ex>i cora<ex>m</ex> Ca<damage><gap
-                                                unit="chars" extent="3"/></damage><note type="collation"
-                                            >Caypha <hi rend="foot">under patch</hi></note>
+                                                unit="chars" extent="3"/></damage><note
+                                            type="collation">Caypha <hi rend="foot">under
+                                            patch</hi></note>
                                     </cell>
                                 </row>
                                 <row>
