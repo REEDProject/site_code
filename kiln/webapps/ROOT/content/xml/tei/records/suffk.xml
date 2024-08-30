@@ -678,9 +678,7 @@
 
        <table>
         <row>
-         <cell>To <rs ref="eats:369025" type="Person_Male">Robert Hind</rs> for a <rs
-           ref="eats:235898" type="Thing_TheatricalCostume">Iyrken</rs> a paire of <rs
-           ref="eats:71780" type="Thing_TheatricalCostume">briches</rs> for making linyng &amp;
+         <cell>To <rs ref="eats:369025" type="Person_Male">Robert Hind</rs> for a Iyrken a paire of briches for making linyng &amp;
           buttons for the same for ye <rs ref="eats:369212" type="Person_Male">blind Boye</rs>
          </cell>
          <cell rend="right">x s.</cell>
@@ -703,15 +701,14 @@
         </row>
         <row>
          <cell>To <rs ref="eats:368830" type="Person_Male">thom<ex>a</ex>s Smithes</rs>
-          <!--IN for LS: Thomas Smithe's wife should be tagged here as well. Also, I think Smithe's surname doesn't have an s at the end-->wiff
-          for vj weekes keping of þe blinde boye at ij s. vj d. ye weke</cell>
+          <rs ref="eats:441961" type="Person_Female">wiff</rs> for vj weekes keping of þe blinde boye at ij s. vj d. ye weke</cell>
          <cell rend="right">xv s.</cell>
         </row>
         <row>
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>To <rs ref="eats:368830" type="Person_Male">thom<ex>a</ex>s smithes</rs> wiff for ye
+         <cell>To thom<ex>a</ex>s smithes wiff for ye
           blind boyes bourd iij weekes &amp; iij dayes at ij s. vj d. ye week</cell>
          <cell rend="right">viij s. vj d.</cell>
         </row>
@@ -763,8 +760,7 @@
          <cell rend="right">vj d.</cell>
         </row>
         <row>
-         <cell>more to him for going to mennes hovss to Bydd them to come to
-          <!-- IN for LS: Freman to be tagged here (and given occupation of inn and tavern keeper, as per en-->ffremans
+         <cell>more to him for going to mennes hovss to Bydd them to come to <rs ref="eats:442038" type="Person_Male">ffremans</rs>
           to ye <rs ref="eats:40453" type="Drama_Type">play</rs>
          </cell>
          <cell rend="right">iiij d.</cell>
@@ -785,7 +781,7 @@
              type="Person_Male">John Foxe</rs>, one of the <rs ref="eats:366764"
              type="Place_PA_Settlement">town's</rs> two <rs ref="eats:366787"
              type="Collective_Office">bailiffs</rs></hi></note>
-          <!-- IN for LS: Mr cave to be tagged here?-->Mr caves <rs ref="eats:297010"
+          <rs ref="eats:442079" type="Person_Male">Mr caves</rs> <rs ref="eats:297010"
            type="Collective_Occupations">man</rs> for ye blind boy</cell>
          <cell rend="right">ij s. vj d.</cell>
         </row>
@@ -1030,8 +1026,7 @@
        <table>
         <row>
          <cell>p<ex>ai</ex>d to my <rs ref="eats:367091" type="Collective_Troupe">L<ex>ord</ex>
-            Rob<ex>er</ex>tes menne</rs> &amp; my <rs ref="eats:25827" type="Collective_Troupe"
-            >L<ex>ord</ex> howard<ex>es</ex> menne</rs> when they played heere </cell>
+            Rob<ex>er</ex>tes menne</rs> &amp; my <rs ref="eats:441901" type="Collective_Troupe">L<ex>ord</ex> howard<ex>es</ex> menne</rs> when they played heere </cell>
          <cell rend="right">iij s.</cell>
         </row>
        </table>
@@ -2421,7 +2416,7 @@
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>Geven to the Players that they might not play</cell>
+         <cell>Geven to the <rs ref="eats:441928" type="Collective_Troupe">Players</rs> that they might not play</cell>
          <cell rend="right">00</cell>
          <cell rend="right">06</cell>
          <cell rend="right">08</cell>
@@ -3765,7 +3760,7 @@
         <row>
          <cell>Re<ex>sseyuyd</ex> of <rs ref="eats:399513" type="Person_Male">rychard clark</rs> for
           a motheter <rs ref="eats:71388" type="Thing_TheatricalCostume">cot</rs> of red of <rs
-           ref="eats:368485" type="Drama_Character">saynt necolas</rs><note type="foot">necolas: co
+           ref="eats:368485 eats:21537" type="Drama_Character">saynt necolas</rs><note type="foot">necolas: co
             <hi rend="italic">written over other letters</hi></note></cell>
          <cell rend="right">xiij d. <del>vix s. j d.</del></cell>
         </row>
@@ -4253,8 +4248,7 @@
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m payde for the Copying owȝt of þe <rs ref="eats:328770"
-           type="Thing_BookPlayMusic">game booke</rs>
+          <cell>It<ex>e</ex>m payde for the Copying owȝt of þe <rs ref="eats:70656" type="Thing_BookPlayMusic">game booke</rs>
          </cell>
          <cell rend="right">iiij s.</cell>
         </row>
@@ -4770,7 +4764,7 @@
         <row>
          <cell>It<ex>e</ex>m paid to <rs ref="eats:407094" type="Person_Male">will<ex>ia</ex>m Ellys
           </rs>for the <rs ref="eats:40398" type="Drama_Type">Int<ex>er</ex>lude</rs> &amp; <rs
-           ref="eats:328770" type="Thing_BookPlayMusic">game Booke</rs>
+           ref="eats:70656" type="Thing_BookPlayMusic">game Booke</rs>
          </cell>
          <cell rend="right">iiij d.</cell>
         </row>
