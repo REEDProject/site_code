@@ -7950,8 +7950,7 @@
 
        <gap reason="omitted"/>
 
-       <ab><damage><gap unit="chars" extent="9"/></damage><rs ref="eats:375245"
-        type="Collective_Clergy"> <!-- AW for IN: Lets mark this as an office?-->s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i Ep<ex>iscop</ex>i</rs>
+       <ab><damage><gap unit="chars" extent="9"/></damage> <!-- AW for IN: Lets mark this as an office?--><rs ref="eats:368503" type="Place_F_ReligiousHouse">s<ex>an</ex>c<ex>t</ex>i Nich<ex>ola</ex>i</rs> <rs ref="eats:21537" type="Entertainment_FolkCustom">Ep<ex>iscop</ex>i</rs>
         in <rs ref="eats:41406" type="CalendarDay_Liturgical">festo s<ex>an</ex>c<ex>t</ex>i
           Nich<ex>ola</ex>i</rs> xij d<gap reason="omitted"/>.</ab>
 
@@ -8442,11 +8441,11 @@ patron/troupe -->.</p>
 
        <ab>Likewise given to the bishop of St Nicholas, 4d<gap reason="omitted"/> Likewise paid on
         the vigil of St John the Baptist to those bearing rushes, 8d. Likewise given on the same day
-        to players of the <rs ref="eats:43591" type="Person_Male">lord king</rs>, 4d<gap reason="omitted"/> Likewise given to John Foster
+        to players of the lord king, 4d<gap reason="omitted"/> Likewise given to John Foster
         minstrel, 2d. Likewise given to those playing in the hall, 2d. Likewise given to a servant
-        of the <rs ref="eats:97693" type="Person_Male">lord Exeter</rs>, a luter, 1d. Likewise given to the <rs ref="eats:40022" type="Person_Nobility">earl of Derby</rs>'s players, 4d. Likewise
-        given to players of the <rs ref="eats:167868" type="Person_Male">duke of Norfolk</rs>, 4d. Likewise given to players of the <rs ref="eats:138881" type="Person_Male">duke of
-        Somerset</rs>, 4d. And given to minstrels of the lord king, 3d<gap reason="omitted"/></ab>
+        of the lord Exeter, a luter, 1d. Likewise given to the earl of Derby's players, 4d. Likewise
+        given to players of the duke of Norfolk, 4d. Likewise given to players of the duke of
+        Somerset, 4d. And given to minstrels of the lord king, 3d<gap reason="omitted"/></ab>
 
        <gap reason="omitted"/>
       </div>
@@ -8752,7 +8751,7 @@ patron/troupe -->.</p>
            officers at <rs ref="eats:375359" type="Place_PA_Settlement">kennyngall</rs> dellyvered
            by the <rs ref="eats:297307" type="Collective_Occupations">Steward</rs> viz. by the
            countesse of Bathe vj li. xiij s. iiij d. &amp; by my M<ex>aste</ex>r xj li. at the
-           Marying of M<ex>is</ex>tris <rs ref="eats:424913" type="Person_Female">Elezabeth Cornwallays</rs> as apperethe</note> Violernes &amp; <rs
+           Marying of M<ex>is</ex>tris <rs ref="eats:424913" type="Person_Female">Elezabeth Cornwallays</rs> as apperethe</note> <rs ref="eats:423483" type="Thing_MusicalInstrument">Violernes</rs> &amp; <rs
            ref="eats:35779" type="Entertainment_FolkCustom">game</rs>
           <rs ref="eats:8782" type="Entertainer_Type">players</rs></cell>
          <cell rend="right">xl s.</cell>
@@ -8769,7 +8768,7 @@ patron/troupe -->.</p>
 
        <table>
         <row>
-         <cell>Gyven to iij Muchesones that came and playd befor my M<ex>aste</ex>r on<rs
+         <cell>Gyven to iij <rs ref="eats:1243" type="Entertainer_Type">Muchesones</rs> that came and playd befor <rs ref="eats:442216" type="Person_Male">my M<ex>aste</ex>r</rs> on<rs
            ref="eats:200104" type="CalendarDay_Liturgical"> shrofte sonday</rs>
          </cell>
          <cell rend="right">xx d.</cell>
@@ -9156,7 +9155,7 @@ patron/troupe -->.</p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m to the <rs ref="eats:301920" type="Thing_Property">baner</rs> Berer </cell>
+         <cell>It<ex>e</ex>m to the <rs ref="eats:301920" type="Thing_Property">baner</rs> <rs ref="eats:40619" type="Entertainment_Type">Berer</rs> </cell>
          <cell rend="right">j d.</cell>
         </row>
         <row>
@@ -11805,7 +11804,7 @@ patron/troupe -->.</p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m for the charges of the Townesmen on the Coronac<ex>i</ex>on Daye viz.
+         <cell>It<ex>e</ex>m for the charges of the Townesmen on the <rs ref="eats:442282" type="CalendarDay_Secular">Coronac<ex>i</ex>on Daye</rs> viz.
            <rs ref="eats:24712" type="Collective_Occupations">Ringers</rs> gu<ex>n</ex>ners &amp;
            <rs ref="eats:29681" type="Entertainer_Type">dromers</rs>
          </cell>
@@ -11831,7 +11830,7 @@ patron/troupe -->.</p>
 
        <table>
         <row>
-         <cell>p<ex>ai</ex>d to my Lord<ex>es</ex> playres </cell>
+         <cell>p<ex>ai</ex>d to <rs ref="eats:442315" type="Collective_Troupe">my Lord<ex>es</ex> playres</rs> </cell>
          <cell rend="right">v s.</cell>
         </row>
        </table>
@@ -12875,7 +12874,7 @@ patron/troupe -->.</p>
          rend="superscript">th</hi> daye of Maye in the Sixte yeare of yo<ex>u</ex>r heighnes most
         happie Reigne over vs, yo<ex>u</ex>r said subiect beinge an <rs ref="eats:347292"
          type="Collective_Occupations">Attorny</rs> of yo<ex>u</ex>r Heighnes Corte of Kinges Benche
-        &amp; a Phylizor of the said Corte <del><damage><gap unit="chars" extent="2"
+        &amp; a <rs ref="eats:442341" type="Collective_Office">Phylizor</rs> of the said Corte <del><damage><gap unit="chars" extent="2"
          /></damage></del><note type="foot"><del><damage><gap unit="chars" extent="2"
           /></damage></del>: <hi rend="italic">6mm of erasure with line filler</hi></note> at the
         instant request &amp; entreatie of one <rs ref="eats:377600" type="Person_Male">Thomas
@@ -13163,8 +13162,8 @@ patron/troupe -->.</p>
           from c 1564, MP for Suffolk, 1563, knighted 1576, sheriff of Suffolk and Norfolk in
           1586–8, knighted 1576</hi></note> &amp; <rs ref="eats:378427" type="Person_Male"
           >S<ex>i</ex>r George Waldegrave</rs> Knightes &amp; one <rs ref="eats:378472"
-         type="Person_Male">Mr Iohn Gurdon</rs><note type="foot">Iohn Guerdon: <hi rend="italic"
-          >John Guerdon (d. 1623), of <rs ref="eats:372123" type="Place_PA_Settlement"
+         type="Person_Male">Mr Iohn Gurdon</rs><note type="foot">Iohn Gurdon: <hi rend="italic"
+          >John Gurdon (d. 1623), of <rs ref="eats:372123" type="Place_PA_Settlement"
            >Assington</rs>, Suffolk, JP for Suffolk, high sheriff of Suffok</hi></note>
          Esq<ex>uire</ex> Iustices of yo<ex>u</ex>r heighnes peace for the Countie of
          Suff<ex>olk</ex> to examyne vppon the foresaid slaunderous articles all such witnesses as
@@ -13293,8 +13292,8 @@ patron/troupe -->.</p>
        <gap reason="omitted"/>
 
        <ab>A l<ex>ett</ex>re to the <rs ref="eats:372146" type="Collective_Office">high Sheriff of
-         Suffolk</rs>, <rs ref="eats:379169" type="Person_Male">William Foorth</rs>, Iohn Gurdall,
-        &amp; <hi rend="italic">(blank)</hi> Clopton Esquires: We do vnderstand by yo<ex>u</ex>r
+         Suffolk</rs>, <rs ref="eats:379169" type="Person_Male">William Foorth</rs>, <rs ref="eats:379231" type="Person_Male">Iohn Gurdall</rs>,
+        &amp; <hi rend="italic">(blank)</hi> <rs ref="eats:442393" type="Person_GenderUnknown">Clopton</rs> Esquires: We do vnderstand by yo<ex>u</ex>r
          le<ex>tt</ex>re of the third of this instant of a purpose in the Towne of <rs
          ref="eats:372100" type="Place_PA_Settlement">Hadley</rs> to make c<ex>er</ex>taine Stage
          <rs ref="eats:40453" type="Drama_Type">playes</rs> at this tyme of the <rs ref="eats:41139"
@@ -13329,7 +13328,7 @@ patron/troupe -->.</p>
 
        <gap reason="omitted"/>
 
-       <ab>It<ex>e</ex>m the said Iohn Allen dothe couenante that he shall not suffer any <rs
+       <ab>It<ex>e</ex>m the said <rs ref="eats:379293" type="Person_Male">Iohn Allen</rs> dothe couenante that he shall not suffer any <rs
          ref="eats:40453" type="Drama_Type">playes</rs> to be made w<ex>i</ex>thin the <rs
          ref="eats:374326" type="Place_F_GuildHall">guyldhall</rs> w<ex>i</ex>thowt consent of six
         of the cheef inhabitant<ex>es</ex> of the <rs ref="eats:372100" type="Place_PA_Settlement"
