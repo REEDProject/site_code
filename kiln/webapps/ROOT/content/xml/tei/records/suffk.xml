@@ -32167,7 +32167,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
 
        <table>
         <row>
-         <cell>Payed by my m<ex>ist</ex>res for <del>ij elles lawne</del> a payer of virgenalles </cell>
+         <cell>Payed by my m<ex>ist</ex>res for <del>ij elles <rs ref="eats:328230" type="Thing_ClothingMaterials">lawne</rs></del> a payer of virgenalles </cell>
          <cell rend="right">xxx s.</cell>
         </row>
        </table>
@@ -32454,7 +32454,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        <table>
         <row>
          <cell>In Rewarde to <rs ref="eats:426891" type="Person_Male">Mr Bolderos</rs> man for
-          bringinge Theapes </cell>
+          bringinge <rs ref="eats:357410" type="Entertainer_Type">Theapes</rs> </cell>
          <cell rend="right">iij d.</cell>
         </row>
         <row>
@@ -32776,8 +32776,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
         and galliards for the consert.</ab>
 
        <ab>It<ex>e</ex>m, one great booke w<ex>hic</ex>h came from
-        <!-- IN for AW: Assuming this refers to Cadiz, Spain, would be worth tagging but not mapping. See #166 in spreadsheet-->Cadis,
-        covered w<ex>i</ex>th redd <rs ref="eats:301749" type="Thing_ClothingMaterials">lether</rs>,
+        <rs ref="eats:443939" type="Place_PA_Settlement">Cadis</rs>, covered w<ex>i</ex>th redd <rs ref="eats:301749" type="Thing_ClothingMaterials">lether</rs>,
         and gylt.</ab>
 
        <ab>It<ex>e</ex>m, v books cont<ex>ainin</ex>g one sett of Italyan fa-laes.</ab>
@@ -32969,7 +32968,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
         <!-- AW for IN: this probably isnt worth tagging specifically, but I did tag the street. IN: Seems like the right approach to me-->clarkes
         office in <rs ref="eats:384901" type="Place_F_Street">chaun=cerie lane</rs>, that burnt
         downe that house and fowre more, besides three others quite pulled downe, and that
-         w<ex>hi</ex>ch was S<ex>i</ex>r mathew Caries scaped narrowly, but yet is in a manner quite
+         w<ex>hi</ex>ch was <rs ref="eats:443961" type="Person_Male">S<ex>i</ex>r mathew Caries</rs> scaped narrowly, but yet is in a manner quite
         defaced and torne in peices: the fire was so vehement that yt caught hold of the Rolles on
         the other side of the street, but by great labour and daunger yt was quenched, for
          w<ex>hi</ex>ch seruice <rs ref="eats:202880" type="Person_Male">S<ex>i</ex>r Iulius
@@ -33467,7 +33466,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m dat<ex>um</ex> cl<ex>er</ex>ic<ex>is</ex> S<ex>anct</ex>i
+         <cell>It<ex>e</ex>m dat<ex>um</ex> <rs ref="eats:27258" type="Collective_Clergy">cl<ex>er</ex>ic<ex>is</ex></rs> S<ex>anct</ex>i
            Nich<ex>ol</ex>ai ap<ex>u</ex>d <rs ref="eats:385073" type="Place_PA_Settlement"
            >metygham</rs></cell>
          <cell rend="right">vj d.</cell>
@@ -33615,7 +33614,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        1401–2, preceded by the account for 1400–1. Thus it appears that this is a two-year account,
        and that the accounts likely ran from 29 September to 29 September.</p>
 
-      <p> Robert de Willoughby (<hi rend="italic">c</hi> 1349–1396) was fourth Baron Eresby with
+      <p> William de Willoughby (<hi rend="italic">c</hi> 1370–1409) was fifth Baron Eresby with
        residence at Spilsby, Lincolnshire (John Wasson, John (ed), <title>Collections 11</title>,
        Malone Society (Oxford, 1980/81), 227. </p>
 
@@ -36735,8 +36734,8 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        the poor and indigent (Middleton-Stewart, <title>Records</title>, p 78; for his will, see
        Bury, Suffolk Record Office, IC 500/2/19/). </p>
 
-      <p> Wasson lists the entry on f 21v as 1529, but if the account is 1528–9 and starts 22 April,
-       it must be 1528 (<title>Plays and Players</title>, p ?). </p>
+      <p> Wasson lists the entry on f 20v as 1529, but if the account is 1528–9 and starts 22 April,
+       it must be 1528 (<title>Plays and Players</title>, p 192). </p>
      </div>
     </body>
    </text>
@@ -36934,8 +36933,8 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
          Rent<ex>es</ex> and services due to the Lord<ex>es</ex> of the Mannors of whome the same
         are houlden And whereas I hold of the <rs ref="eats:432288" type="Person_Male">Lorde of the
          Mannor</rs><!-- AW for IN this is vague idk if we want to tag it--><note type="foot">Lorde
-         … Mannor: <hi rend="italic">Jeffrey Lytell, who purchased the manor in 1587 from Sir
-          Nicholas Bacon</hi></note> of <rs ref="eats:385978" type="Place_PA_Settlement">greate
+         … Mannor: <hi rend="italic">Jeffrey Lytell, who purchased the manor from <rs ref="eats:444022" type="Person_Male">Sir
+          Nicholas Bacon</rs> sometime between 1561 and 1579 (when Bacon died).</hi></note> of <rs ref="eats:385978" type="Place_PA_Settlement">greate
          Ashefeild</rs> in Suff<ex>olk</ex> certayne land<ex>es</ex> by Indenture of Lease for
         certaine yeares yett to come and vnexpired by a certaine rent in the said Indenture of Lease
         expressed my will and intent is that he my said brother ffrancis ffirmage shall have and
@@ -38031,7 +38030,8 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        <table>
         <row>
          <cell>It<ex>em</ex><note type="marginal" place="margin_left"
-           >Nove<ex>m</ex>b<ex>er</ex></note> to charles wife in exchaunge of a <rs ref="eats:45432"
+          >Nove<ex>m</ex>b<ex>er</ex></note> to <rs ref="eats:444086"
+           type="Person_Male">charles</rs> wife in exchaunge of a <rs ref="eats:45432"
            type="Thing_MusicalInstrument">harp</rs></cell>
          <cell rend="right">iij d.</cell>
         </row>
@@ -38216,7 +38216,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
 
        <table>
         <row>
-         <cell>To <rs ref="eats:438557" type="Person_Male">Dawes</rs> for beergood </cell>
+         <cell>To <rs ref="eats:438557" type="Person_Male">Dawes</rs> for <rs ref="eats:40997" type="Thing_FoodDrink">beergood</rs> </cell>
          <cell rend="right"><damage><gap unit="chars" extent="3"/></damage><note type="foot"
              ><damage><gap unit="chars" extent="3"/></damage>: <hi rend="italic">edge of leaf
             deteriorated; sums missing</hi></note></cell>
@@ -39324,7 +39324,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        <ab>The<note type="marginal" place="margin_left">Iune</note> v<hi rend="superscript">th</hi>
         of Iune <rs ref="eats:441727" type="Person_Male">mr Powle</rs> did showe me an Infamous <rs
          ref="eats:45521" type="CrimesMisdemeanors">libel</rs> written in <rs ref="eats:40706"
-         type="Entertainment_Type">Ryming verses</rs> made as I suppose of P E.</ab>
+          type="Entertainment_Type">Ryming verses</rs> made as I suppose of <rs ref="eats:444204" type="Person_GenderUnknown">P E.</rs></ab>
 
        <gap reason="omitted"/>
       </div>
