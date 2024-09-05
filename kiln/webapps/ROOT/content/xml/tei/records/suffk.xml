@@ -7544,17 +7544,17 @@
        <gap reason="omitted"/>
 
        <ab>In<note type="marginal" place="margin_left">Dona dat<ex>a</ex>
-         minstrall<ex>is</ex></note> ffesto o<ex>mni</ex>u<ex>m</ex>
-         s<ex>an</ex>c<ex>t</ex>or<ex>um</ex> Dat<ex>um</ex> Nich<ex>ola</ex>o le <foreign
-         xml:lang="eng">Tregetour</foreign> xviij d. It<ex>e</ex>m custodi vrsorum d<ex>omi</ex>ni
+         minstrall<ex>is</ex></note> <rs ref="eats:71524" type="CalendarDay_Liturgical">ffesto o<ex>mni</ex>u<ex>m</ex>
+         s<ex>an</ex>c<ex>t</ex>or<ex>um</ex></rs> Dat<ex>um</ex> <rs ref="eats:445321" type="Person_Male">Nich<ex>ola</ex>o</rs> le <foreign
+         xml:lang="eng"><rs ref="eats:150141" type="Entertainer_Type">Tregetour</rs></foreign> xviij d. It<ex>e</ex>m custodi <!-- See isse #183 --><rs ref="eats:21804" type="Entertainer_Type">vrsorum</rs> d<ex>omi</ex>ni
         de southwode xviij d. It<ex>e</ex>m Sarc<ex>i</ex>o<ex>n</ex>i<note type="foot"
           >Sarc<ex>i</ex>o<ex>n</ex>i: <hi rend="italic">for</hi> Garcioni <hi rend="italic"
           >(?)</hi></note> suo iij d. It<ex>e</ex>m eod<ex>em</ex> die . iiij. al<ex>ijs</ex>
-         menestrall<ex>is</ex> . ij. s. It<ex>e</ex>m in festo s<ex>anct</ex>i Edm<ex>und</ex>i
+        <rs ref="eats:8709" type="Entertainer_Type">menestrall<ex>is</ex></rs>. ij. s. It<ex>e</ex>m in <rs ref="eats:43376" type="CalendarDay_Liturgical">festo s<ex>anct</ex>i Edm<ex>und</ex>i</rs>
           dat<damage><gap unit="chars" extent="1"/></damage><note type="foot">dat<damage><gap
            unit="chars" extent="1"/></damage>: <hi rend="italic">hole in ms</hi></note>ij
-         trou<ex>m</ex>ppour<ex>is</ex> d<ex>omi</ex>ni de offord. &amp;. ij.
-         t<ex>ro</ex>u<ex>m</ex>pp<ex>our</ex>s d<ex>omi</ex>ni Io<ex>hanni</ex> de verdoun. &amp; .
+         <rs ref="eats:445453" type="Collective_Troupe">trou<ex>m</ex>ppour<ex>is</ex> d<ex>omi</ex>ni de offord</rs>. &amp;. ij.
+         <rs ref="eats:445574" type="Collective_Troupe">t<ex>ro</ex>u<ex>m</ex>pp<ex>our</ex>s d<ex>omi</ex>ni Io<ex>hanni</ex> de verdoun</rs>. &amp; .
         vj alijs. menestrall<ex>is</ex> viij. s. iiij. d.</ab>
 
        <ab>It<ex>e</ex>m eod<ex>em</ex>. die dat<ex>is</ex> Cytharist<ex>is</ex> d<ex>omi</ex>ni
@@ -18959,9 +18959,9 @@ patron/troupe -->.</p>
 
        <ab>Ad hanc Cur<ex>iam</ex> Concordatu<ex>m</ex> est p<ex>er</ex><note type="foot"
           >p<ex>er</ex>: <hi rend="italic">corrected from</hi> p<ex>ro</ex></note>
-         burgen<ex>s</ex>is<note type="foot">burgen<ex>s</ex>is: <hi rend="italic">for</hi>
-         burgenses</note> p<ex>re</ex>d<ex>i</ex>c<ex>t</ex>os q<ex>uo</ex>d ludus voc<ex>atus</ex>
-        Corpus Chr<ex>ist</ex>i pley p<ex>ro</ex> a<ex>nn</ex>o sequen<ex>ti</ex>
+         <rs ref="eats:297065" type="Collective_Office">burgen<ex>s</ex>is</rs><note type="foot">burgen<ex>s</ex>is: <hi rend="italic">for</hi>
+          burgenses</note> p<ex>re</ex>d<ex>i</ex>c<ex>t</ex>os q<ex>uo</ex>d <rs ref="eats:40453" type="Drama_Type">ludus</rs> voc<ex>atus</ex>
+        <rs ref="eats:405485" type="Drama_TitledWork">Corpus Chr<ex>ist</ex>i pley</rs> p<ex>ro</ex> a<ex>nn</ex>o sequen<ex>ti</ex>
          dimittit<ex>ur</ex> et no<ex>n</ex> ludit<ex>ur</ex><note type="foot">ludit<ex>ur</ex>: <hi
           rend="italic">for</hi> ludetur<hi rend="italic">(?)</hi></note> Et q<ex>uo</ex>d
          prandiu<ex>m</ex> vocat<ex>um</ex> x<note type="foot">x: <hi rend="italic">likely for
@@ -18969,7 +18969,7 @@ patron/troupe -->.</p>
          seq<ex>uenti</ex> si<ex>m</ex>ilit<ex>er</ex> dimittit<ex>ur</ex> et differrat<ex>ur</ex>
         et q<ex>uo</ex>d quilib<ex>e</ex>t burg<ex>ensis</ex> soluet p<ex>ro</ex>
          p<ex>re</ex>d<ex>ict</ex>o a<ex>nn</ex>o seque<ex>nti</ex>
-        <add place="above">v s.</add> Suffic<ex>iencia</ex> p<ex>re</ex>sbit' invent<ex>a</ex> erit
+        <add place="above">v s.</add> Suffic<ex>iencia</ex> <rs ref="eats:9186" type="Collective_Clergy">p<ex>re</ex>sbit'</rs> invent<ex>a</ex> erit
          p<ex>ro</ex> eode<ex>m</ex> a<ex>nn</ex>o ad selebrand<ex>um</ex> missam p<ex>ro</ex>
         <del>.</del> animab<ex>us</ex> fr<ex>atu</ex>m et soror<ex>um</ex> burg<ex>ensium</ex>
          p<ex>re</ex>d<ex>ict</ex>e ville illius viij d. &amp;c. <handShift/>vel aliter
