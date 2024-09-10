@@ -18760,7 +18760,6 @@ patron/troupe -->.</p>
        type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1505">1505</date>
       <seg ana="taxon:SUIP15">SUIP15</seg></head>
-     <!-- IN: READY FOR INDEXING -->
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid334-transcription">
       <div>
        <head>p 570 <supplied>(22 April)</supplied></head>
@@ -18769,14 +18768,14 @@ patron/troupe -->.</p>
        <gap reason="omitted"/>
 
        <ab><damage><gap unit="chars" extent="3"/></damage>mend' &amp; etiam inveniet
-         diuers<ex>os</ex> lusores <damage><gap unit="chars" extent="3"/></damage>
+        diuers<ex>os</ex> <rs ref="eats:8782" type="Entertainer_Type">lusores</rs> <damage><gap unit="chars" extent="3"/></damage>
         <foreign xml:lang="fra">a tontz mang<ex>es</ex> &amp; boies p<ex>our</ex> tantz
          homez</foreign>
         <damage><gap unit="chars" extent="3"/></damage>prendo quolibet anno pro eid<ex>em</ex> xxvj
         s.</ab>
 
        <ab><damage><gap unit="chars" extent="3"/></damage> om<ex>n</ex>ia ornamenta p<ex>ro</ex>
-        eodem ludo <foreign xml:lang="fra"><damage><gap unit="chars" extent="3"/></damage>es
+        eodem <rs ref="eats:405485" type="Drama_TitledWork">ludo</rs> <foreign xml:lang="fra"><damage><gap unit="chars" extent="3"/></damage>es
          necessaries ‸<add place="above">po<ex>u</ex>r le terme de xij anz</add>&amp; tontz Anz
          garda a le <damage><gap unit="chars" extent="3"/></damage></foreign></ab>
 
@@ -18827,8 +18826,8 @@ patron/troupe -->.</p>
 
        <gap reason="omitted"/>
 
-       <ab>M<ex>emoran</ex>d<ex>um</ex> ad hanc Cur<ex>iam</ex> Ioh<ex>ann</ex>es porteman soluit
-        gardianos gillde corp<ex>or</ex>is Chr<ex>ist</ex>i xvj d.</ab>
+       <ab>M<ex>emoran</ex>d<ex>um</ex> ad hanc Cur<ex>iam</ex> <rs ref="eats:447207" type="Person_Male">Ioh<ex>ann</ex>es porteman</rs> soluit
+        <rs ref="eats:403996" type="Collective_Office">gardianos gillde corp<ex>or</ex>is Chr<ex>ist</ex>i</rs> xvj d.</ab>
       </div>
      </div>
      <div xml:lang="eng" type="translation">
@@ -18856,13 +18855,13 @@ patron/troupe -->.</p>
        <pb n="102" type="page"/>
 
        <ab>Et<note type="marginal" place="margin_left">Elec<ex>ci</ex>o</note> elig<ex>er</ex>unt
-         Ric<ex>ardu</ex>m Blodevell &amp; Will<ex>ellmu</ex>m Deade ad officiu<ex>m</ex>
-        Collectoris p<ex>ro</ex> le pagent Corp<ex>or</ex>is Chr<ex>ist</ex>i</ab>
+         <rs ref="eats:447268" type="Person_Male">Ric<ex>ardu</ex>m Blodevell</rs> &amp; <rs ref="eats:447329" type="Person_Male">Will<ex>ellmu</ex>m Deade</rs> ad officiu<ex>m</ex>
+        Collectoris p<ex>ro</ex> le <rs ref="eats:403978" type="Drama_Type">pagent Corp<ex>or</ex>is Chr<ex>ist</ex>i</rs></ab>
 
        <ab>Precept<ex>i</ex> om<ex>n</ex>es inhabitant<ex>es</ex> &amp;
          occupac<ex>i</ex>on<ex>es</ex> ville. attend<ex>ere</ex> &amp; habeant tab<ex>er</ex>nacula
-         sua.<note type="marginal" place="margin_left">pe<ex>na</ex></note> ad festu<ex>m</ex>
-         corp<ex>or</ex>is Chr<ex>ist</ex>i proxime ffutur<ex>is</ex> sub pe<ex>n</ex>a cuiuslibet
+         sua.<note type="marginal" place="margin_left">pe<ex>na</ex></note> ad <rs ref="eats:41497" type="CalendarDay_Liturgical">festu<ex>m</ex>
+         corp<ex>or</ex>is Chr<ex>ist</ex>i</rs> proxime ffutur<ex>is</ex> sub pe<ex>n</ex>a cuiuslibet
          eor<ex>um</ex> vj s. viij d. &amp;c. et q<ex>uo</ex>d cons<ex>er</ex>uent ordin<ex>em</ex>
          p<ex>ro</ex>cessionis sicut continet<ex>ur</ex> in libro
          constituc<ex>i</ex>onu<ex>m</ex><note type="foot"> constituc<ex>i</ex>onu<ex>m</ex>: <hi
@@ -18903,12 +18902,12 @@ patron/troupe -->.</p>
        <pb n="308" type="page"/>
 
        <ab>Ad hanc Cur<ex>iam</ex> ordinauer<ex>unt</ex>
-        <del>will<ex>elmum</ex> Rivet</del> m<ex>agist</ex>ros de le pagent s<ex>an</ex>c<ex>t</ex>i
-        Georgij Thom<ex>am</ex> Cuttinge &amp; Ioh<ex>ann</ex>em Smythe &amp; veq<ex>ue</ex><note
+        <del>will<ex>elmum</ex> Rivet</del> m<ex>agist</ex>ros de le <rs ref="eats:403978" type="Drama_Type">pagent</rs> s<ex>an</ex>c<ex>t</ex>i
+        Georgij <rs ref="eats:447451" type="Person_Male">Thom<ex>am</ex> Cuttinge</rs> &amp; <rs ref="eats:447512" type="Person_Male">Ioh<ex>ann</ex>em Smythe</rs> &amp; veq<ex>ue</ex><note
          type="foot">veq<ex>ue</ex>: <hi rend="italic">for</hi> vterque <hi rend="italic"
          >(?)</hi></note> eor<ex>um</ex> dabit p<ex>re</ex>d<ex>i</ex>c<ex>t</ex>o pageant ‸<add
-         place="above">s<ex>an</ex>c<ex>t</ex>i Georgij</add> vj s. viij d. Et Will<ex>elm</ex>us
-        Rivet x s. Et Iohannes Catemayn x s. Et Ioh<ex>ann</ex>es Best x s. Et Thomas Melys x s. Et
+         place="above">s<ex>an</ex>c<ex>t</ex>i Georgij</add> vj s. viij d. Et <rs ref="eats:447390" type="Person_Male">Will<ex>elm</ex>us
+        Rivet</rs> x s. Et <rs ref="eats:447608" type="Person_Male">Iohannes Catemayn</rs> x s. Et Ioh<ex>ann</ex>es Best x s. Et Thomas Melys x s. Et
          Ioh<ex>ann</ex>es Stannard x s. Et Chr<ex>ist</ex>oferus lynner vj s. viij d. Et
          Thom<ex>as</ex> Bryan iij s. iiij d. Et Rog<ex>er</ex>us Smythe iij s. iiij d. Et
          Ioh<ex>ann</ex>es Southe xx d. Et Rob<ex>ertus</ex> Hardynge xij d. Et Ioh<ex>ann</ex>es
