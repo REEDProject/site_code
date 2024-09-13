@@ -36520,7 +36520,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        <table>
         <row>
          <cell>It<ex>em</ex> Receyuyd for
-          <!-- IN for AW: Halywell = Holywell Row? Location to be mapped-->halywell May <rs
+          <rs ref="eats:450602" type="Place_PA_Settlement">halywell</rs> May <rs
            ref="eats:40561" type="Entertainment_Type">ale</rs>
          </cell>
          <cell rend="right">xiij s. iiij d.</cell>
@@ -36535,7 +36535,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
         </row>
         <row>
          <cell>It<ex>em</ex> Receyuyd for ye May ale in ye
-          <!-- IN for AW: becke Weche = Beck Row? Location to be mapped-->becke Weche</cell>
+          <rs ref="eats:450620" type="Place_PA_Settlement">becke</rs> Weche</cell>
          <cell rend="right">xl s. iiij s.<note type="foot">xl s. iiij s: <hi rend="italic">for</hi>
            xl s. iiij d.</note></cell>
         </row>
@@ -36544,7 +36544,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
         </row>
         <row>
          <cell>It<ex>em</ex> Receyuyd ffor ye
-          <!-- IN for AW: Westrow to be tagged as location here?-->westrow May</cell>
+          <rs ref="eats:385902" type="Place_PA_Settlement">westrow</rs> May</cell>
          <cell rend="right"><del>xl</del> l s.</cell>
         </row>
        </table>
@@ -36652,7 +36652,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        <table>
         <row>
          <cell>It<ex>e</ex>m recepim<ex>us</ex> de
-          <!-- IN for AW: Location to be tagged here-->Westrow ex collecc<ex>i</ex>o<ex>n</ex>e <rs
+          <rs ref="eats:385902" type="Place_PA_Settlement">Westrow</rs> ex collecc<ex>i</ex>o<ex>n</ex>e <rs
            ref="eats:431528" type="Person_Male">Thome Skott</rs>
           <rs ref="eats:14146" type="Entertainment_FolkCustom">d<ex>omi</ex>ni de Mysrule</rs> in
            <rs ref="eats:41461" type="CalendarDay_Liturgical">temp<ex>or</ex>e Natalis
