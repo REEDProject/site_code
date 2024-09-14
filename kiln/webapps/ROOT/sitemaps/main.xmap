@@ -113,9 +113,9 @@
           <map:part src="cocoon://internal/eatsml/entity/{1}.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=entities/" />
           <!-- Query for associated records. -->
-          <map:part element="records_results" src='cocoon://internal/search/entity_finder_records.xml?q="{global:eats-base-url}entity/{1}/"' />
+          <map:part element="records_results" src='cocoon://internal/search/entity_finder_records.xml?q=*/entity/{1}/' />
           <!-- Query for associated editorial material. -->
-          <map:part element="editorial_results" src='cocoon://internal/search/entity_finder_editorial.xml?q="{global:eats-base-url}entity/{1}/"' />
+          <map:part element="editorial_results" src='cocoon://internal/search/entity_finder_editorial.xml?q=*/entity/{1}/' />
           <map:part src="cocoon://internal/collections.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/entity.xsl" />
@@ -179,7 +179,7 @@
         <map:transform src="cocoon://_internal/template/symbols.xsl" />
         <map:serialize />
       </map:match>
-      
+
       <!-- About: Locations. -->
       <map:match id="ereed-about-locations" pattern="about/locations/">
         <map:aggregate element="aggregation" label="content">
@@ -189,7 +189,7 @@
         <map:transform src="cocoon://_internal/template/locations.xsl" />
         <map:serialize />
       </map:match>
-      
+
       <!-- About: People. -->
       <map:match id="ereed-about-people" pattern="about/people/">
         <map:aggregate element="aggregation" label="content">
@@ -199,7 +199,7 @@
         <map:transform src="cocoon://_internal/template/about.xsl" />
         <map:serialize />
       </map:match>
-      
+
       <!-- About: Visit. -->
       <map:match id="ereed-about-visit" pattern="about/visit/">
         <map:aggregate element="aggregation" label="content">
@@ -209,7 +209,7 @@
         <map:transform src="cocoon://_internal/template/about.xsl" />
         <map:serialize />
       </map:match>
-      
+
       <!-- About: Sponsors. -->
       <map:match id="ereed-about-sponsors" pattern="about/sponsors/">
         <map:aggregate element="aggregation" label="content">
@@ -219,7 +219,7 @@
         <map:transform src="cocoon://_internal/template/about.xsl" />
         <map:serialize />
       </map:match>
-      
+
       <!-- About: Donate. -->
       <map:match id="ereed-about-donate" pattern="about/donate/">
         <map:aggregate element="aggregation" label="content">
@@ -322,7 +322,7 @@
         <map:transform src="cocoon://_internal/template/howto-search.xsl" />
         <map:serialize />
       </map:match>
-      
+
       <!-- REED Collections -->
       <map:match id="reed-collections" pattern="reedcollections">
         <map:aggregate element="aggregation" label="content">
