@@ -16596,13 +16596,13 @@ patron/troupe -->.</p>
 
        <table>
         <row>
-         <!-- IN for AW: Some locations to be tagged here -->
+         
          <cell>It<ex>e</ex>m the same day my lord made couen<ex>a</ex>u<ex>n</ex>te
            w<ex>i</ex>t<ex>h</ex>
-          <rs ref="eats:394387" type="Person_Male">will<ex>ia</ex>m wastell</rs> of london <add
+          <rs ref="eats:394387" type="Person_Male">will<ex>ia</ex>m wastell</rs> of <rs ref="eats:36947" type="Place_PA_Settlement">london</rs> <add
            place="above">harper</add> that he shall have the sone of <rs ref="eats:394452"
            type="Person_Male">Iohn Colet</rs> of of<note type="foot">of of: <hi rend="italic"
-            >dittography</hi></note> colchest<ex>er</ex> harper for a yere to teche hym hym<note
+            >dittography</hi></note> <rs ref="eats:372911" type="Place_PA_Settlement">colchest<ex>er</ex></rs> harper for a yere to teche hym hym<note
            type="foot">hym hym: <hi rend="italic">dittography</hi></note> to harpe and to<note
            type="marginal" place="margin_left">William Wastell harper for a chylde</note>
           <rs ref="eats:10906" type="Entertainer_Type">synge</rs> for þe whiche techynge my lord
@@ -39463,7 +39463,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
    </text>
    <text type="record" xml:id="suffk-rid562">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs>Weybread</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:451558" type="Place_PA_Settlement">Weybread</rs>
       <date when-iso="1617">1617</date>
       <seg ana="taxon:SUWB01">SUWB01</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid562-transcription">
@@ -39516,7 +39516,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
    </text>
    <text type="record" xml:id="suffk-rid571">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs>Winthrop of Groton Manor</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:451581" type="Place_PA_Manor">Winthrop of Groton Manor</rs>
       <date when-iso="1603">1603</date>
       <seg ana="taxon:SUWN01">SUWN01</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid571-transcription">
@@ -39553,7 +39553,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
    </text>
    <text type="record" xml:id="suffk-rid579">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs>Yoxford</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:451604" type="Place_PA_Settlement">Yoxford</rs>
       <date when-iso="1537">1536/7</date>
       <seg ana="taxon:SUYX01">SUYX01</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid579-transcription">
