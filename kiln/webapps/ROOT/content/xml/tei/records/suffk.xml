@@ -31083,7 +31083,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
         the sum<ex>m</ex>e of Thirtie pownd<ex>es</ex> which Mr <rs ref="eats:423349"
          type="Person_Clergy">Iohn Ward</rs>
         <rs ref="eats:9186" type="Collective_Clergy">Clarke Parson</rs> of
-        <!-- IN for AW: Location to be indexed here-->Dinnington hath of myne, in his
+        <rs ref="eats:373866" type="Place_PA_Settlement">Dinnington</rs> hath of myne, in his
          hand<ex>es</ex> And ‸ <add place="above">all</add> that money and plate good<ex>es</ex>,
         Moveables, houshold stuffe, and p<ex>er</ex>sonall estate which nowe, or att the tyme of my
         decease shall happen to bee in my possession, or of right belonging vnto me, To haue and
@@ -32092,7 +32092,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
 
        <table>
         <row>
-         <cell>In reward to the musitions at <!-- IN for AW: Location to be tagged here-->ware </cell>
+         <cell>In reward to the musitions at <rs ref="eats:451645" type="Place_PA_Settlement">ware</rs> </cell>
          <cell rend="right">iij s./</cell>
         </row>
        </table>
@@ -32381,8 +32381,8 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
         <row>
          <cell>To Robert the musicion asssomuch by him gyven in reward to the poore at
           m<ex>ist</ex>res goinge to
-          <!-- IN for AW: Location to be indexed and potentially mapped here? See #160 in spreadsheet-->durreham
-          howse </cell>
+          <rs ref="eats:227209" type="Place_F_Residence">durreham
+          howse</rs> </cell>
          <cell rend="right">iiij d.</cell>
         </row>
        </table>
