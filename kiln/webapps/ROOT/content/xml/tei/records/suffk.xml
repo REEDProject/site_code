@@ -7535,7 +7535,7 @@
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:368503"
        type="Place_F_ReligiousHouse">Bury St Edmunds Abbey</rs>
       <date from-iso="1335" precision="low" to-iso="1336"><hi rend="italic">c</hi> 1335–6</date>
-      <!-- IN: READY FOR INDEXING -->
+      <!-- IN: READY FOR INDEXING --><!--AW: Location Tagging Done -->
       <seg ana="taxon:SUAB08">SUAB08</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid8-transcription">
       <div>
@@ -11114,7 +11114,7 @@ patron/troupe -->.</p>
        type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1578">1578</date>
       <seg ana="taxon:SUVA22">SUVA22</seg></head>
-     <!-- IN: READY FOR INDEXING -->
+     <!-- IN: READY FOR INDEXING --><!-- AW: Locations cleared -->
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid561-transcription">
       <div>
        <head>sig Aiiii</head>
@@ -13595,7 +13595,7 @@ patron/troupe -->.</p>
        <ab>To my singular honest Stationer, <rs ref="eats:379572" type="Person_Male">Mr. Robert
          Mylbourne</rs>, at his <rs ref="eats:375777" type="Place_F_Property">shop</rs> in decimo
         sexto, by the fourth doore of
-        <!--IN for AW: Is this St Paul's Cathedral? A question for Jim, maybe?-->Pauls.</ab>
+        <rs ref="eats:165732" type="Place_F_Church">Pauls</rs>.</ab>
        <ab>As you are a true Booke-seller, you must approue your selfe a true Booke- restorer: and
         therfore by hooke or by crooke, see that you send backe my <rs ref="eats:70656"
          type="Thing_BookPlayMusic">Book</rs>. And yet not my Booke. For it was but a borrowed
@@ -18728,7 +18728,7 @@ patron/troupe -->.</p>
        type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1503">1503</date>
       <seg ana="taxon:SUIP15">SUIP15</seg></head>
-     <!-- IN: READY FOR INDEXING -->
+     <!-- IN: READY FOR INDEXING --><!-- AW: Locations cleared -->
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid332-transcription">
       <div>
        <head>p 434 <supplied>(24 April) (Ordinance)</supplied></head>
@@ -18943,7 +18943,7 @@ patron/troupe -->.</p>
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522"
        type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1508">1508</date>
-      <!-- IN: READY FOR INDEXING -->
+      <!-- IN: READY FOR INDEXING --><!-- AW: Locations cleared -->
       <seg ana="taxon:SUIP6A">SUIP6A</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid290-transcription">
       <div>
@@ -18975,7 +18975,7 @@ patron/troupe -->.</p>
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522"
        type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1509">1509</date>
-      <!-- IN: READY FOR INDEXING -->
+      <!-- IN: READY FOR INDEXING --><!-- AW: Locations cleared -->
       <seg ana="taxon:SUIP6A">SUIP6A</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid291-transcription">
       <div>
@@ -19024,14 +19024,14 @@ patron/troupe -->.</p>
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522"
        type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1511">1511</date>
-      <!-- IN: READY FOR INDEXING -->
+      <!-- IN: READY FOR INDEXING --><!-- AW: Locations checked - 1 comment -->
       <seg ana="taxon:SUIP6A">SUIP6A</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid292-transcription">
       <div>
        <head>p 308 <supplied>(7 November)</supplied></head>
        <pb n="308" type="page"/>
 
-       <ab>Ad hanc Cur<ex>iam</ex> ordinauer<ex>unt</ex>
+       <ab>Ad hanc Cur<ex>iam</ex> <!-- AW for IN: do you think this court might have a specific place? -->ordinauer<ex>unt</ex>
         <del>will<ex>elmum</ex> Rivet</del> m<ex>agist</ex>ros de le <rs ref="eats:403978"
          type="Drama_Type">pagent</rs> s<ex>an</ex>c<ex>t</ex>i Georgij <rs ref="eats:447451"
          type="Person_Male">Thom<ex>am</ex> Cuttinge</rs> &amp; <rs ref="eats:447512"
