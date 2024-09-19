@@ -1306,6 +1306,12 @@ p {
     text-rendering: optimizeLegibility
 }
 
+p.tei.edDesc.align\(blockquote\) {
+    margin: 0 0 1rem;
+    padding: .5625rem 1.25rem 0 1.1875rem;
+    border-left: 1px solid #cacaca;
+}
+
 em, i {
     font-style: italic
 }
