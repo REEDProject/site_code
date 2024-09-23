@@ -38728,26 +38728,46 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->.
        and his wife, in 1509. According to a court roll of 1516, in that year Berne junior gave
        tenure of the site to his own son, Richard, and to his wife, Agnes, the court entry
        describing the site as: </p>
-
-      <!-- IN for PG: This should be a different record, I think?-->
-      <p> dimid<ex>iam</ex> acr<ex>am</ex> t<ex>e</ex>rre percell<ex>am</ex> de conynger
-        iac<ex>entem</ex> int<ex>er</ex> t<ex>e</ex>rras nup<ex>er</ex>
-       <rs ref="eats:439976" type="Person_Male">Rob<ex>er</ex>ti Man</rs> ex parte
-        Aquilon<ex>ali</ex> et terr<ex>as</ex> p<ex>re</ex>dic<ex>t</ex>i <rs ref="eats:431869"
-        type="Person_Male">Thome bernys</rs> ex p<ex>ar</ex>te austral<ex>i</ex> vno capite
-        abbutt<ex>ante</ex> sup<ex>er</ex>
-       <rs ref="eats:386480" type="Place_F_OpenArea">hallegrene</rs> v<ex>er</ex>sus
-        orien<ex>tem</ex> alio vere capite abbutt<ex>ante</ex> sup<ex>er</ex>
-        t<ex>e</ex>rr<ex>am</ex> p<ex>re</ex>d<ex>ict</ex>i Thome bernys versus
-        occident<ex>em</ex><gap reason="omitted"/>(Suffolk Archives, Bury: HA 504/1/18, mb 1). </p>
-
-      <p> half an acre of land, a parcel of the cunnigar, lying between the lands, lately of Robert
-       Man, on the north side and the lands of the aforesaid Thomas Bernys on the south side with
-       one extremity abutting on the
-       <!-- AW for IN: This guy's land comes up twice so maybe its worth trying to figure out where it is exactly? However, the Game Place seems to be the most important-->hall
-       green towards the east but the other extremity abutting on the land of the aforesaid Thomas
-       Bernys towards the west<gap reason="omitted"/></p>
      </div>
+    </body>
+   </text>
+   <text type="record" xml:id="suffk-rid580">
+    <body>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:386439"
+      type="Place_PA_Settlement">Walsham-Le-Willows</rs>
+      <date when-iso="1509">1508/9</date>
+      <seg ana="taxon:SUWW04">SUWW04</seg></head>
+     <div xml:lang="lat" type="transcription" xml:id="suffk-rid580-transcription">
+      <div>
+       <head>f 175v <supplied>(20 March)</supplied></head>
+       <pb n="175v" type="folio"/>
+    
+    
+    <!-- IN for PG: This should be a different record, I think?-->
+    <p> dimid<ex>iam</ex> acr<ex>am</ex> t<ex>e</ex>rre percell<ex>am</ex> de conynger
+     iac<ex>entem</ex> int<ex>er</ex> t<ex>e</ex>rras nup<ex>er</ex>
+     <rs ref="eats:439976" type="Person_Male">Rob<ex>er</ex>ti Man</rs> ex parte
+     Aquilon<ex>ali</ex> et terr<ex>as</ex> p<ex>re</ex>dic<ex>t</ex>i <rs ref="eats:431869"
+      type="Person_Male">Thome bernys</rs> ex p<ex>ar</ex>te austral<ex>i</ex> vno capite
+     abbutt<ex>ante</ex> sup<ex>er</ex>
+     <rs ref="eats:386480" type="Place_F_OpenArea">hallegrene</rs> v<ex>er</ex>sus
+     orien<ex>tem</ex> alio vere capite abbutt<ex>ante</ex> sup<ex>er</ex>
+     t<ex>e</ex>rr<ex>am</ex> p<ex>re</ex>d<ex>ict</ex>i Thome bernys versus
+     occident<ex>em</ex><gap reason="omitted"/>(Suffolk Archives, Bury: HA 504/1/18, mb 1). </p>
+      </div>
+     </div>
+      <div xml:lang="eng" type="translation">
+       <div>
+        <head>f 175v <supplied>(20 March)</supplied></head>
+        <pb n="175v" type="folio"/>
+    <p> half an acre of land, a parcel of the cunnigar, lying between the lands, lately of Robert
+     Man, on the north side and the lands of the aforesaid Thomas Bernys on the south side with
+     one extremity abutting on the
+     <!-- AW for IN: This guy's land comes up twice so maybe its worth trying to figure out where it is exactly? However, the Game Place seems to be the most important-->hall
+     green towards the east but the other extremity abutting on the land of the aforesaid Thomas
+     Bernys towards the west<gap reason="omitted"/></p>
+       </div>
+      </div>
     </body>
    </text>
    <text type="record" xml:id="suffk-rid576">
