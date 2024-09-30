@@ -2446,6 +2446,315 @@
                     </div>
                 </body>
             </text>
+            <text type="record" xml:id="yorkc-ridp003081995">
+    <body>
+        <head><!-- Record location goes here in the following format: [COUNTY, CITY] (eg. Yorkshire, York). -->
+            Yorkshire, York 
+            <!-- Date is encoded here. For slash dates, put the modern date into the quotation marks and the slash date in between the date tags. Eg: <date when-iso="1617">1616/17</date>". 
+                For date ranges, use <date from-iso="YYYY" to-iso="YYYY">YYYY-Y</date>. Eg: <date from-iso="1451" to-iso="1452">1451-2</date>. In all other cases, keep the tags as below and simply change the YYYY to the appropriate year-->
+            <date when-iso="1486">1486</date>
+            <!-- Choose the appropriate code based on the type of record you are working with. 
+                - Mercer’s Indenture:  YMAAI
+                - Mercer’s Account Rolls: YMAAR
+                - Mercers’ Pageant Documents: YMAAP
+                - Mercers’ Chartulary: YMAAC
+            -->
+            <seg ana="taxon:YMAA*">YMAAH</seg>
+        </head>
+        <!-- xml:lang: eng= english, lat= latin, ang=anglo-saxon. Type will always be transcription in this section. the xml:id here must match the xml:id above with the addition of a -transcription -->
+        <div xml:lang="eng" type="transcription" xml:id="yorkc-ridp003081995-transcription">
+            <div>
+                <head>
+                    <!--Membrane/Folio number goes here. Use mb for membrane and f for folio]--> mb #</head>
+                <!-- Memberane/Folio number is encoded below. Under type, use "membrane" for membrance and "folio" for folio -->      
+                <pb n="12v" type="folio"/>
+                <ab>  
+                        <note type="marginal" place="margin_left">p<ex>re</ex>sent del king</note>
+                        anno p<ex>ri</ex>mo <rs ref="eats:23807" type="Person_Royalty">henrici vij</rs><hi rend="superscript">mi</hi>
+                        Assembled det<ex>er</ex>mined that the king shuld haue at this his accept
+                        <note type="marginal" place="margin_left">p<ex>re</ex>sent a le Roy</note>
+                        co<ex>m</ex>myng to this <rs ref="eats:37840" type="Place_PA_Settlement">Citie</rs> the p<ex>re</ex>sent ensuyng ffirst in maynebrede
+                        Cast<ex>es</ex> CC Also in <rs ref="eats:40978" type="Thing_FoodDrink">wyne</rs> of Rosse colo<ex>u</ex>r A Tone In gret fatt oxen
+                        vj In gret and fatt Weders I And ou<ex>er</ex> this &#x00FE;<ex>a</ex>t <rs ref="eats:372732" type="Collective_Office">the Maier</rs> and
+                        <rs ref="eats:299917" type="Collective_Office">Aldermen</rs> <rs ref="eats:302518" type="Thing_ClothingMaterials">cled in Colo<ex>u</ex>r of violet in greyne</rs> the xxiiij cled in
+                        <handShift/>clothing<handShift/> colo<ex>u</ex>r of <del>violet</del> Murrey the Co<ex>m</ex>munaltie in
+                        <rs ref="eats:147358" type="Thing_LiveryRegalia">Gounes of Rede</rs> shall waite on the king on horse at <rs ref="eats:386042" type="Place_F_OpenArea">Bilburghcrosse</rs>
+                        on this half aft<ex>er</ex> that at two of the saide Aldermen and the two
+                        <rs ref="eats:267118" type="Collective_Office">Sheriff<ex>es</ex></rs> haue mett wit<ex>h</ex> his grace at <rs ref="eats:386060" type="Place_F_Bridge">Tadcastr<ex>e</ex> brige</rs> the
+                        extremities of the bound<ex>es</ex> of this fraunches And Also that in
+                        consid<ex>er</ex>acion of that at the King<ex>es</ex> highnesse Rememb<ex>er</ex>ing the
+                        pou<ex>er</ex>tie decay and Ruyn of this Citie shewid vnto hyme by the
+                        moost Reu<ex>er</ex>end fader in god <rs ref="eats:220215" type="Collective_Clergy">Tharchbishop of york Richard york</rs>
+                        and <rs ref="eats:386078" type="Person_Commoner">Robert Hancok</rs> late being at his parliament and other is
+                        content to haue no money of the same Citie as by meyne of
+                        Reward like as oth<ex>er</ex> <rs ref="eats:17651" type="Collective_Titles">King<ex>es</ex> of England</rs> haith be accustomed to
+                        haue heire before of the same Citie at &#x00FE;<ex>er</ex> first and next co<ex>m</ex>myng
+                        to the forsaide Citie and other Cities of his Realme wol that some
+                        co<ex>n</ex>uenyent shew be had ayenst the king<ex>es</ex> saide Co<ex>m</ex>myng by
+                        the Counsell of some which can devise the same wherby his
+                        highnesse may the rather be movid to <handShift/>to<handShift/><note type="foot"><hi rend="italic">MS to to</hi></note> think that the said maier
+                        Aldermen Sheriff<ex>es</ex> and oth<ex>e</ex>r inh<ex>ab</ex>itances heyr be gladdid and
+                        loifull of the same his co<ex>m</ex>myng as thei haue be in tymes past of
+                        seing co<ex>m</ex>myng of oth<ex>e</ex>r king<ex>es</ex> y<ex>er</ex> sou<ex>er</ex>ain lord 
+                        <ab>
+                        <pb n="13v" type="folio"/> 
+                        Assembled concludid wit<ex>h</ex> <rs ref="eats:386099" type="Person_Male">Sir Henrie Hudsone</rs> p<ex>re</ex>st that he
+                        shuld haue the conueance of the making and directing of the
+                        shew to be maide ayenst the king<ex>es</ex> next co<ex>m</ex>myng hed<ex>er</ex> which
+                        the said henrie haith vnd<ex>er</ex>take to do to the worship of the Citie
+                        heyre And for the same shew he shall haue in Rewarde of the
+                        saide Citie ou<ex>er</ex> thexpenses tobe maide in that p<ex>ar</ex>tie And
+                        Reward<ex>es</ex> tobe yeven to oth<ex>e</ex>r p<ex>er</ex>sones to be occupied about the
+                        same tobe borne by the forsaid Citie / five marc<ex>es</ex> in money with
+                        some conuenient thing to be yeuen at the pleasure of the said
+                        Maier vnto the <rs ref="eats:386120" type="Place_F_Church">Church of Spofford</rs> wher the said Sir Henrie is
+                        parich p<ex>re</ex>st haueing Cure of the soules of the pariching y<ex>er</ex>In<damage><gap unit="chars" extent="3"/></damage>
+                    </ab>
+                    <ab>                 
+                            <pb n="15v-18" type="folio"/> 
+                        It is concludit by the Maier his breder Aldermen and oth<ex>e</ex>r of the
+                        <rs ref="eats:372840" type="Collective_Office">Co<ex>m</ex>mon Counesell of the Citie</rs> that thei being in gude hope to
+                        fynd the king more gracious sou<ex>er</ex>aine lord vnto the forsaide
+                        Citie by the mediac<ex>i</ex>on of the most Reu<ex>er</ex>end fadre in godd
+                        tharchbisshop of york and oth<ex>e</ex>r lord<ex>es</ex> sp<ex>irit</ex>uall and temporall
+                        of his moost noble Counesaill shewing theim<ex>e</ex> and all thinbitanc<ex>es</ex> <handShift/>thinbitanc<ex>es</ex><handShift/><note type="foot"><hi rend="italic">brevigraph omitted for thinhabitances</hi></note>
+                        y<ex>er</ex>of gretely gladdit and Ioyed of the Co<ex>m</ex>myng of his moost
+                        Riall p<ex>er</ex>sone wit<ex>h</ex> oth<ex>e</ex>r his nobles vnto the saide Citie haue
+                        ordeigned and p<ex>re</ex>pared to Receyue the king<ex>es</ex> <ex>gr</ex>ace in forme
+                        felowing that is to saie
+                        ffirst Wher the two sheriff<ex>es</ex> of the saide Citie for the tyme
+                        being wit<ex>h</ex> xx horses haith be accustumed to yeue y<ex>er</ex> attandance
+                        of king<ex>es</ex> herbefor resorting vnto the Citie at Tadcastre brige
+                        being thextremitie of y<ex>er</ex> fraunches It is now concludid that not
+                        oonly the saide two sheriff<ex>es</ex> bot aswell two of the Aldermen
+                        accumpaned with xl horsses shall y<ex>er</ex> wait on his <ex>gr</ex>ace
+                        Secundly where the Maire and Aldermen cled in long gownys
+                        of skarlet and other of the Couneseil accumpanyd with
+                        thinhabitanc<ex>es</ex> of the Citie haue be accustumed to wait of king<ex>es</ex>
+                        in lykwise co<ex>m</ex>myng to the Citie on horse bak aboute two miles
+                        fro the Citie thei be det<ex>er</ex>mined that the saide Maier And
+                        Ald<ex>er</ex>men in like clothing of skarlet the Co<ex></ex>mon Couneseill and
+                        <rs ref="eats:279117" type="Collective_Occupations">clerc</rs> in violet Chambrelayns in murray and many of thinhabitanc<ex>es</ex>
+                        in Rede on horse bak shall wait on the king at Bilburgh crose
+                        about v miles fro the Citie and other thinhabitaunc<ex>es</ex> which may
+                        not ride or be of power to haue rede gownes to yeue y<ex>er</ex>
+                        attendance on foote betwixt <rs ref="eats:386156" type="Place_Feature">dringhowsis</rs> and the Citie beside a
+                        certaine nowmbre of Childrine as shalbe gaddard togiddre aboute
+                        <rs ref="eats:386138" type="Place_F_Church">saint Iames Chappell</rs> calling loyfully king henrie after the maner
+                        of Children
+                        <note type="marginal" place="margin_left">iij</note>
+                        Thirdly at the entre of the Citie and first bar of the same
+                        shalbe <rs ref="eats:363206" type="Thing_SetMachinery">craftelye conceyvid a place in man<ex>er</ex> of A heven of grete
+                        Ioy and Anglicall Armony vnder the heven shalbe a world
+                        desolaite full of treys and floures</rs> In the which shall spryng vp A
+                        rioall rich rede rose convaide by viace vnto the which Rose shall
+                        appeyre an oth<ex>e</ex>r Rich white rose vnto whome so being to gedre
+                        all oth<ex>e</ex>r floures shall lowte and evidently yeue suffrantie shewing
+                        the Rose tobe principall of all floures as witnesh Barthilmow And
+                        <ex>yer</ex>ypon shall come fro A cloude A <rs ref="eats:302360" type="Thing_TheatricalCostume">crowne</rs> Cou<ex>er</ex>ing the Roses
+                        after the which shall appeir A Citie with Citisyns with the
+                        begynn<ex>er</ex> of the same callid <rs ref="eats:398513" type="Drama_Character">Ebrauk</rs> which shall salute the king
+                        wit<ex>h</ex> word<ex>es</ex> felowing in p<ex>ro</ex>se and <ex>yer</ex>vpon present vnto the king
+                        the keys of the Citie being thenheritaunce of the saide Ebrauk
+                        yelding his title and his Crowne vnto the king as moost glad of
+                        hym above al oth<ex>e</ex>r
+                     </ab>
+                    <ab>                           
+                        Ebrauke
+                    </ab>
+                    <ab>
+                        Most Reuerend rightwose regent of this Rigalitie
+                        Whos primatiue patrone I peyre to yo<ex>u</ex>r p<ex>re</ex>sence
+                        Ebrauuk of britane I sitt nat this Citie
+                        ffor A place<damage><gap unit="chars" extent="3"/></damage> to my pleaso<ex>u</ex>r of moost p<ex>re</ex>hemynence
+                        Hervnto I recoursid for moost conuenience
+                        In comforthing that by cource of liniall succession
+                        Myne heires this my Citie shuld haue i<ex>n</ex> possession
+                    </ab>
+                    <ab>            
+                        Of Right I was regent and rewlid this rigion
+                        I subdewid fraunce and led in my legence
+                        To you henrie I submitt my Citie key and Croune
+                        To reuyll and redresse yo<ex>u</ex>r dew to defence
+                        Neu<ex>er</ex> to this Citie to p<ex>re</ex>sume ne p<ex>re</ex>tence
+                        Bot holy I graunt it to yo<ex>u</ex>r gou<ex>er</ex>naunce
+                        as A principall p<ex>ar</ex>cell of yo<ex>u</ex>r inheritaunce
+                    </ab>
+                    <ab>
+                        Please it I besuch you for my remembrance
+                        Seth that l am prematiue of yo<ex>u</ex>r p<ex>ro</ex>genie
+                        Shew yo<ex>u</ex>r grace to this Citie wit<ex>h</ex> such Abounedance
+                        As the reame may recouer in to p<ex>ro</ex>sp<ex>er</ex>itie
+                        And also of yo<ex>u</ex>r <ex>gr</ex>ace gyve not yo<ex>u</ex>r ee
+                        oonely to this Citie of insufficience
+                        Bot <ex>gr</ex>aciously consider y<ex>er</ex>with and diligence
+                    </ab>   
+                    <ab>     
+                        It is knawne in trueth of grete exp<ex>er</ex>ience
+                        ffor yo<ex>u</ex>r blode this Citie made neu<ex>er</ex> degression
+                        As recordith by the grete hurt for blode of yo<ex>u</ex>r excellence
+                        Wherfor the rath<ex>e</ex>r I pray for compassion
+                        And to mynd how this Citie of old and pure affeccion
+                        Gladdith and Inioith yo<ex>u</ex>r high <ex>gr</ex>ace and co<ex>m</ex>myng
+                        Wit<ex>h</ex> oon concent knowing you y<ex>er</ex> sufferaine and king
+                    </ab>
+                    <ab>
+                        ffourtly the king Co<ex>m</ex>myng vp the stret<ex>es</ex> shallse the same
+                        furnishede wit<ex>h</ex> clothis of the best which may begottyn wit<ex>h</ex>in
+                        the Citie for the hono<ex>u</ex>rme<ex>n</ex>t of the same and at his entrie vnto
+                        vuse brigge in theend of the street<ex>es</ex> of <rs ref="eats:386178" type="Place_F_Street">Skeldargate</rs> and
+                        <rs ref="eats:386296" type="Person_F_Street">Northstrete</rs> becauce no gapp<ex>es</ex> shall appeir shall y<ex>er</ex>be Clothes
+                        hangid and A co<ex>n</ex>uenient thing diuisid wherby if the weder be
+                        fair of the lord<ex>es</ex> before and oth<ex>e</ex>r ne before the king schall
+                        Rayne Rose water
+                        ffiftly shalbe on the hight of ousebrigge A Rioall Treyne and
+                        y<ex>er</ex>in sodainely appering set togidd<ex>er</ex> in Counsail sex king<ex>es</ex>
+                        Crouned betokining the sex henries which after the sight had of
+                        the king with certaine conuenient laiso<ex>u</ex>r avisidly shall co<ex>m</ex>myt
+                        A cepto<ex>u</ex>r vnto <rs ref="eats:386214" type="Drama_Character">Salamon</rs> cledd as king which salamon shall
+                        y<ex>er</ex>vpon taking that Cepto<ex>u</ex>r and saying the word<ex>es</ex> felowing vnto
+                        the king in p<ex></ex>rose yelde vnto him the saide Cepto<ex>u</ex>r in tokining
+                        that in hym is wisdome and Iustice
+                    </ab> 
+                    <ab>
+                        Salomon
+                    </ab>
+                    <ab>
+                        Most prudent prince of pruved prevision
+                        Their p<ex>ri</ex>mordiall princes of this principalitie
+                        Haith p<ex>re</ex>parate yo<ex>u</ex>r reame the vij<hi rend="superscript">th</hi> by succession
+                        Remitting reame als right to yo<ex>u</ex>r Rialtie
+                        Their ar king<ex>es</ex> condigne of yo<ex>u</ex>r consanguinitie
+                        ffull riall and rightwose in rewle of y<ex>er</ex> regence
+                        And ful lordly thai execute the lawes of y<ex>er</ex> legence
+                    </ab>
+                    <ab>
+                        Seth that god moost glorius eternall sapience
+                        Did insence me salomon of his effluent <ex>gr</ex>ace
+                        Wherfore I am takin as patrone of prudence
+                        To discuse vpin conscience ich iudiciall cace
+                        Revolving how with sapience ye haue spent yo<ex>u</ex>r space
+                        To the tyme of this yo<ex>u</ex>r misteriusly
+                        obteyning as moost worthi your right not regosly
+                    </ab>
+                    <ab>
+                        Now reane ye reule ye yo<ex>u</ex>r reame rightwosly
+                        By politike prouidence as god haith in dewid
+                        To you sufferaunce in sapience submitting me vmbly
+                        yo<ex>u</ex>r sage savo<ex>u</ex>r sothfastnese haith so be shewid
+                        In ich Iudiciall right this reame to be renewid
+                        ye be avisid most worthi by graciouse affluence
+                        Submitting to yo<ex>u</ex>r sufferaunt my septo<ex>u</ex>r of sapience
+                    </ab>
+                    <ab>            
+                        <note type="marginal" place="margin_left">vj</note>
+                        Sextly shal appere in thend of A strete loning on the syde of
+                        ousegate passing into <rs ref="386250" type="Place_F_Street">Conyngstrete</rs> shalbe A shew and fro the
+                        same shall come hailestones tobe maid by viace falling on the
+                        lord<ex>es</ex> and oth<ex>e</ex>r co<ex>m</ex>myng ne before the King hailestones to be
+                        made by craft<ex>es</ex> of cumfett<ex>es</ex>
+                        <note type="marginal" place="margin_left">vij</note>
+                        Sevently shalbe at the Co<ex>m</ex>mon Hall A Castell appeiring of
+                        grete force wherin <rs ref="eats:386232" type="Drama_Character">Dauid</rs> as the moost principall shall appeir and
+                        he shall wit<ex>h</ex> word<ex>es</ex> felowing yeld vnto the king A swerd of his
+                        victorie y<ex>er</ex>er shalbe in that Castell Citisyns which after A sight of
+                        the king and reme<ex>m</ex>brance of hyme wit<ex>h</ex> gude countenaunce
+                        shall appeir in clothing of white and greyne shewing y<ex>er</ex> trueth
+                        and h<ex>er</ex>tly affeccion vnto the kinge
+                    </ab>
+                    <ab>     
+                        Dauid
+                    </ab> 
+                    <ab>           
+                        Most prepotent prince of power Imp<ex>er</ex>iall
+                        Redowtid in ich region of Crist<ex>es</ex> affiance
+                        yo<ex>u</ex>r act<ex>es</ex> victorious be notid principall
+                        In man<ex>er</ex> more noble then <rs ref="eats:MISSING" type="Collective_Title">Charlis of fraunce</rs>
+                        Seth god so disposith of his p<ex>re</ex>ordiniance
+                        And right so yeue me might to devyne goodly
+                        I dauid submitt to you my swerd of victorie
+                    </ab>
+                    <ab>
+                        When I reynid in ludie I know and testify
+                        That Ebraunce the noble which subdewid ffraunce
+                        In memorie of his triumph this Citie did edify
+                        That the name of his noble shuld haue co<ex>n</ex>tinuance
+                        I witnesh that this Citie without variaunce
+                        Was neu<ex>er</ex> deflorid be force in violence
+                        Wherfore I haue chosyn it for my place to yo<ex>u</ex>r p<ex>re</ex>sence
+                    </ab>
+                    <ab>                
+                        Submitting it wit<ex>h</ex> thafforce and trueth to yo<ex>u</ex>r excellence
+                        Beseching yo<ex>u</ex>r highnese ye more for myne instance
+                        To this yo<ex>u</ex>r inheritance tak gracious co<ex>m</ex>placence
+                        seth yat it is yo<ex>u</ex>r Citie not filid wit<ex>h</ex> dissavaunce
+                        Trew and bold to yo<ex>u</ex>r blode not dreding p<ex>er</ex>turbance
+                        Which causid moost this citie tobe desolate
+                        Now reviving in co<ex>m</ex>forth to attaine yo<ex>u</ex>r asstate
+                    </ab>
+                    <ab>        
+                        Eghtly shalbe at thend of Swynegale loning of staynegate <rs ref="eats:386268" type="Drama_Character">o<ex>u</ex>r
+                        lady</rs> co<ex>m</ex>myng frome hevin and welcome the king in word<ex>es</ex>
+                        felowing and y<ex>er</ex>vpon ascend ayene into heven wit angell sang
+                        and y<ex>er</ex> schall it snaw by craft tobe made of waffrons in man<ex>er</ex>
+                        of Snaw
+                    </ab>
+                    <ab>
+                        Oure lady
+                    </ab>
+                    <ab> 
+                        Henrie seth my sone as thi sufferayne haith the sembly assynyd
+                        Of his grace tobe gou<ex>er</ex>ner for his people p<ex>ro</ex>rotection
+                        ffull specially that thine heier of petie be declinid
+                        I p<ex>r</ex>ay the seth thi people haith me mich in affeccion
+                        My Son and my soveraine in whome is eleccion
+                        Singulerly this Citie haith honourd humbely
+                        And maide me yer meane withoutin obieccion
+                        In hope of yer help to haue it holy
+                        What I axk of his grete grace he grantith it gudely
+                        As a beame of all bevtes benyngne
+                        The his knyght he haith callid victoriously
+                        To convoce and concord this his contrie condigne
+                        I pray in this space
+                        ffor this Citie a place of my pleasing
+                        And haue you no drede nor no dowting
+                        Continuall heir in this reynyng.
+                        I shall sew to my sone to send you his grace
+                    </ab>
+                    <ab>            
+                            <pb n="44" type="folio"/>  (4 October)
+                        Assembled acceptid and admittid <rs ref="eats:386286" type="Person_Male">Robert Comgilton</rs> one of the
+                        wait<ex>es</ex> of this Citie tobe in the Roume of Robert sheyne being in
+                        so grete age and soo decrepid that he no may forther attend
+                        toccupa<ex>ci</ex>on of waite forsaide In considera<ex>ci</ex>on wh<ex>e</ex>rof and of the
+                        long continued s<ex>er</ex>uice that he haith done in the saide Roume by
+                        the space of .xl. yeres and more It is det<ex>er</ex>mined that the saide
+                        <rs ref="eats:386307" type="Person_Male">Robert Sheyne</rs> yerely during his life And whils the said Robert
+                        Comgilton shalbe here waite shalhaue in name of a pension of the
+                        same Robert Comgilton thertene sheling<ex>es</ex> and <del>for</del> <handShift/>four<handShift/>
+                        penys tobe payde wharterly wit<ex>h</ex>out deley and forther that the
+                        saide Robert Sheyne shuld haue in his reliefe during his life a
+                        house of the Co<ex>m</ex>mons wit<ex>h</ex> charge of Rep<ex>ar</ex>a<ex>ci</ex>on wit<ex>h</ex>out eny
+                        oth<ex>e</ex>r forme paying for the same <damage><gap unit="chars" extent="X"/></damage>
+                        </ab>
+                </ab>
+            </div>
+            <!-- The section below is only needed if your record also contains a translation. The div type will always be translation in this section. The xml:id must match the one above, except with a -translation at the end.  -->
+            <div xml:lang="eng" type="translation" xml:id="yorkc-ridpXXXXXXXXX-translation">
+                <div>
+                    <head>
+                        <!--Membrane/Folio number goes here. Use mb for membrance and f for folio]-->
+                        mb 1</head>
+                    <!-- Memberane/Folio number is encoded below. Under type, use "membrane" for membrance and "folio" for folio -->
+                    <pb n="1" type="membrane"/>
+                    <ab>
+                        <!-- Translation text/paragraph goes here. Use a new <ab></ab> tag pair for each new paragraph or block of text -->
+                    </ab>
+                </div>
+            </div>
+        </div>
+    </body>
+</text>
         </group>
     </text>
 </TEI>
