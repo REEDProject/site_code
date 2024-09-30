@@ -2448,25 +2448,14 @@
             </text>
             <text type="record" xml:id="yorkc-ridp003081995">
     <body>
-        <head><!-- Record location goes here in the following format: [COUNTY, CITY] (eg. Yorkshire, York). -->
+        <head>
             Yorkshire, York 
-            <!-- Date is encoded here. For slash dates, put the modern date into the quotation marks and the slash date in between the date tags. Eg: <date when-iso="1617">1616/17</date>". 
-                For date ranges, use <date from-iso="YYYY" to-iso="YYYY">YYYY-Y</date>. Eg: <date from-iso="1451" to-iso="1452">1451-2</date>. In all other cases, keep the tags as below and simply change the YYYY to the appropriate year-->
             <date when-iso="1486">1486</date>
-            <!-- Choose the appropriate code based on the type of record you are working with. 
-                - Mercer’s Indenture:  YMAAI
-                - Mercer’s Account Rolls: YMAAR
-                - Mercers’ Pageant Documents: YMAAP
-                - Mercers’ Chartulary: YMAAC
-            -->
-            <seg ana="taxon:YMAA*">YMAAH</seg>
+            <seg ana="taxon:YMAAH">YMAAH</seg>
         </head>
-        <!-- xml:lang: eng= english, lat= latin, ang=anglo-saxon. Type will always be transcription in this section. the xml:id here must match the xml:id above with the addition of a -transcription -->
         <div xml:lang="eng" type="transcription" xml:id="yorkc-ridp003081995-transcription">
             <div>
-                <head>
-                    <!--Membrane/Folio number goes here. Use mb for membrane and f for folio]--> mb #</head>
-                <!-- Memberane/Folio number is encoded below. Under type, use "membrane" for membrance and "folio" for folio -->      
+                <head> f 12v</head>      
                 <pb n="12v" type="folio"/>
                 <ab>  
                         <note type="marginal" place="margin_left">p<ex>re</ex>sent del king</note>
