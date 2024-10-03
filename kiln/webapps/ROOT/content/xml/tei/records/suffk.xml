@@ -39606,7 +39606,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    
    <text type="record" xml:id="suffk-rid581">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Ipswich</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1443">1443</date>
       <seg ana="taxon:SUIP03">SUIP03</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid581-transcription">
@@ -39616,12 +39616,12 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>Ad<note type="marginal" place="margin_left">Gipp<ex>ewic</ex>i</note> eand<ex>em</ex>
+       <ab>Ad<note type="marginal" place="margin_left"><rs ref="eats:369522" type="Place_PA_Settlement">Gipp<ex>ewic</ex>i</rs></note> eand<ex>em</ex>
          Cur<ex>iam</ex> ball<ex>iu</ex>i d<ex>omi</ex>ni Regis lib<ex>er</ex>tat<ex>is</ex> ville
         Gippewici &amp; eiusd<ex>e</ex>m tota Co<ex>mmun</ex>itas concesseru<ex>nt</ex> Thome Denys
          <note type="marginal" place="margin_left">dimiss<ex>io</ex></note>Ioh<ex>ann</ex>i
         Caldewell Will<ex>elm</ex>o Rydout &amp; Ioh<ex>ann</ex>i Causton totu<ex>m</ex>
-         p<ex>ro</ex>ficuu<ex>m</ex> illius ten<ex>ementi</ex> vocat<ex>um</ex> Merssh cu<ex>m</ex>
+         p<ex>ro</ex>ficuu<ex>m</ex> illius ten<ex>ementi</ex> vocat<ex>um</ex> <rs ref="eats:376195" type="Place_F_OpenArea">Merssh</rs> cu<ex>m</ex>
          domib<ex>us</ex> edificijs terr<ex>is</ex> arrabilib<ex>us</ex> p<ex>ra</ex>tis pascuis
         pasturis marescis &amp; om<ex>n</ex>ib<ex>us</ex> alijs suis p<ex>er</ex>tin<ex>entibus</ex>
         A festo S<ex>anct</ex>i Mich<ex>ael</ex>is Arch<ex>angel</ex>i vlti<ex>m</ex>o
@@ -39657,7 +39657,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid582">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Ipswich</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1445">1445</date>
       <seg ana="taxon:SUIP03">SUIP03</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid582-transcription">
@@ -39677,7 +39677,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
          dat<ex>am</ex> p<ex>re</ex>sent<ex>is</ex> Cur<ex>ie</ex> diligent<ex>er</ex>
          fidelit<ex>er</ex> &amp; assidue s<ex>e</ex>c<ex>un</ex>d<ex>u</ex>m suu<ex>m</ex> posse
         attendet ministrabit &amp; custodiet ornamenta quecu<ex>m</ex>q<ex>ue</ex> de lez pagentis
-        Gilde corp<ex>or</ex>is Chr<ex>ist</ex>i d<ex>i</ex>c<ex>te</ex> ville Gipp<ex>ew</ex>ici Ac
+        Gilde corp<ex>or</ex>is Chr<ex>ist</ex>i d<ex>i</ex>c<ex>te</ex> ville <rs ref="eats:369522" type="Place_PA_Settlement">Gipp<ex>ew</ex>ici</rs> Ac
          p<ex>re</ex>uidebit &amp; ordinabit circa rep<ex>ar</ex>ac<ex>i</ex>o<ex>n</ex>em de lez
         pagentis &amp; p<ex>ro</ex> f<ex>a</ex>c<ex>t</ex>ura de lez Stages p<ex>ro</ex>
          lusorib<ex>us</ex> tam de villa q<ex>u</ex>am ex<ex>tr</ex>a vna cu<ex>m</ex> Thoma Bysshop
@@ -39688,7 +39688,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
          rep<ex>ar</ex>ac<ex>i</ex>o<ex>n</ex>e de Lez pagentis q<ex>u</ex>am p<ex>ro</ex>
          conduc<ex>c</ex>io<ex>n</ex>e araiament<ex>orum</ex> vestiment<ex>orum</ex> &amp;
          alior<ex>um</ex> necessarior<ex>um</ex> que ad dict<ex>a</ex> Lez pagentis fu<ex>er</ex>int
-        necessaria de firmar<ex>ijs</ex> Co<ex>mmun</ex>is Maresci &amp; p<ex>ra</ex>ti<ex>s</ex>
+        necessaria de firmar<ex>ijs</ex> <rs ref="eats:376195" type="Place_F_OpenArea">Co<ex>mmun</ex>is Maresci</rs> &amp; p<ex>ra</ex>ti<ex>s</ex>
          portman<ex>norum</ex> p<ex>ro</ex>ut dict<ex>is</ex> ball<ex>iu</ex>is necesse
          videat<ex>ur</ex> &amp; oportunu<ex>m</ex> q<ex>ua</ex>m diu &amp;c Et d<ex>ict</ex>us
          Ioh<ex>ann</ex>es Causton obijt infra t<ex>er</ex>min<ex>um</ex> Annor<ex>um</ex>
@@ -39734,7 +39734,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
 
        <ab>And<note type="marginal" place="margin_left">Ipswich</note> at the same court it was
         ordered and agreed by the aforesaid bailiffs and burgesses of the said town of Ipswich that
-        the farmers of the common marsh and the townsmen's meadow of the same town who exist at the
+        the farmers of the common marsh and the <rs ref="eats:454021" type="Place_F_OpenArea">townsmen's meadow</rs> of the same town who exist at the
         time shall pay annually or shall cause to be paid to John Caldewell for the expenses
         incurred concerning the aforesaid pageants of the guild of Corpus Christi, £40, to the point
         that the aforesaid expenses will be fully paid to the aforesaid John Caldewell or his sure
@@ -39747,7 +39747,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid583">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Ipswich</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1491">1491</date>
       <seg ana="taxon:SUIP47">SUIP47</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid583-transcription">
@@ -39792,7 +39792,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid584">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Ipswich</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1491">1491</date>
       <seg ana="taxon:SUIP47">SUIP47</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid584-transcription">
@@ -39831,7 +39831,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid585">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Ipswich</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1507">1507</date>
       <seg ana="taxon:SUIP5A">SUIP5A</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid585-transcription">
@@ -39905,7 +39905,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid586">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Ipswich</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1514">1514</date>
       <seg ana="taxon:SUIP04">SUIP04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid586-transcription">
@@ -39944,7 +39944,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid587">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Ipswich</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1515">1515</date>
       <seg ana="taxon:SUIP04">SUIP04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid587-transcription">
@@ -39978,7 +39978,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid588">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Ipswich</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1515">1515</date>
       <seg ana="taxon:SUIP04">SUIP04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid588-transcription">
@@ -40016,7 +40016,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid589">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Ipswich</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1517">1517</date>
       <seg ana="taxon:SUIP04">SUIP04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid589-transcription">
@@ -40054,7 +40054,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid590">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Ipswich</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1519">1519</date>
       <seg ana="taxon:SUIP04">SUIP04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid590-transcription">
@@ -40089,7 +40089,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid591">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Ipswich</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1520">1520</date>
       <seg ana="taxon:SUIP04">SUIP04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid591-transcription">
@@ -40142,7 +40142,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid592">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1402" to-iso="1403">1402-3</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid592-transcription">
@@ -40180,7 +40180,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid593">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1403" to-iso="1404">1403-4</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid593-transcription">
@@ -40216,7 +40216,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid594">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1404" to-iso="1405">1404-5</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid594-transcription">
@@ -40241,7 +40241,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab><gap reason="omitted"/>Likewise given to the parish clerk and John Knyth who played at
+       <ab><gap reason="omitted"/>Likewise given to the <rs ref="eats:385073" type="Place_PA_Settlement">parish</rs> clerk and John Knyth who played at
         Christmas, 8d<gap reason="omitted"/> Likewise given to a certain minstrel who played, with a
         horse, 4d<gap reason="omitted"/></ab>
 
@@ -40252,7 +40252,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid595">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1405" to-iso="1406">1405-6</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid595-transcription">
@@ -40287,7 +40287,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid596">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1406" to-iso="1407">1406-7</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid596-transcription">
@@ -40323,7 +40323,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid597">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1407" to-iso="1408">1407-8</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid597-transcription">
@@ -40363,7 +40363,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid598">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1408" to-iso="1409">1408-9</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid598-transcription">
@@ -40405,7 +40405,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid599">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1409" to-iso="1410">1409-10</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid599-transcription">
@@ -40439,7 +40439,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid600">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1410" to-iso="1411">1410-11</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid600-transcription">
@@ -40479,7 +40479,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid601">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1411" to-iso="1412">1411-12</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid601-transcription">
@@ -40514,7 +40514,7 @@ https://reed.library.utoronto.ca/node/316382 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid602">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1412" to-iso="1413">1412-13</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid602-transcription">
@@ -40548,7 +40548,7 @@ https://reed.library.utoronto.ca/node/316382 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid603">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1413" to-iso="1414">1413-14</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid603-transcription">
@@ -40590,7 +40590,7 @@ https://reed.library.utoronto.ca/node/316382 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid604">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1414" to-iso="1415">1414-15</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid604-transcription">
@@ -40628,7 +40628,7 @@ https://reed.library.utoronto.ca/node/316159 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid605">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1415" to-iso="1416">1415-16</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid605-transcription">
@@ -40673,7 +40673,7 @@ https://reed.library.utoronto.ca/node/316176 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid606">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1416" to-iso="1417">1416-17</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid606-transcription">
@@ -40725,7 +40725,7 @@ https://reed.library.utoronto.ca/node/316176 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid607">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1417" to-iso="1418">1417-18</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid607-transcription">
@@ -40763,7 +40763,7 @@ https://reed.library.utoronto.ca/node/315926 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid608">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1418" to-iso="1419">1418-19</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid608-transcription">
@@ -40805,7 +40805,7 @@ https://reed.library.utoronto.ca/node/315926 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid609">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1419" to-iso="1420">1419-20</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid609-transcription">
@@ -40845,7 +40845,7 @@ https://reed.library.utoronto.ca/node/316234 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid610">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1420" to-iso="1421">1420-21</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid610-transcription">
@@ -40877,7 +40877,7 @@ https://reed.library.utoronto.ca/node/316234 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid611">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1421" to-iso="1422">1421-2</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid611-transcription">
@@ -40916,7 +40916,7 @@ https://reed.library.utoronto.ca/node/316234 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid612">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1422" to-iso="1423">1422-3</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid612-transcription">
@@ -40952,7 +40952,7 @@ https://reed.library.utoronto.ca/node/316234 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid613">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1423" to-iso="1424">1423-4</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid613-transcription">
@@ -40995,7 +40995,7 @@ https://reed.library.utoronto.ca/node/316177 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid614">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1424" to-iso="1425">1424-5</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid614-transcription">
@@ -41040,7 +41040,7 @@ https://reed.library.utoronto.ca/node/316177 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid615">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1448" to-iso="1449">1448-9</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid615-transcription">
@@ -41089,7 +41089,7 @@ https://reed.library.utoronto.ca/node/316177 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid616">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1449" to-iso="1450">1449-50</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid616-transcription">
@@ -41121,7 +41121,7 @@ https://reed.library.utoronto.ca/node/316177 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid617">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1450" to-iso="1451">1450-1</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid617-transcription">
@@ -41158,7 +41158,7 @@ https://reed.library.utoronto.ca/node/316177 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid618">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1451">1451</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid618-transcription">
@@ -41196,7 +41196,7 @@ https://reed.library.utoronto.ca/node/316177 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid619">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1452">1452</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid619-transcription">
@@ -41247,7 +41247,7 @@ https://reed.library.utoronto.ca/node/316177 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid620">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1452" to-iso="1453">1452-3</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid620-transcription">
@@ -41276,7 +41276,7 @@ https://reed.library.utoronto.ca/node/316177 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid621">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1453" to-iso="1454">1453-4</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid621-transcription">
@@ -41321,7 +41321,7 @@ link to https://reed.library.utoronto.ca/node/317765 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid622">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1454">1454</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid622-transcription">
@@ -41358,7 +41358,7 @@ link to https://reed.library.utoronto.ca/node/317765 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid623">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1454" to-iso="1455">1454-5</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid623-transcription">
@@ -41396,7 +41396,7 @@ link to https://reed.library.utoronto.ca/node/317765 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid624">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1455">1455</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid624-transcription">
@@ -41427,7 +41427,7 @@ link to https://reed.library.utoronto.ca/node/317765 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid625">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1455" to-iso="1456">1455-6</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid625-transcription">
@@ -41458,7 +41458,7 @@ link to https://reed.library.utoronto.ca/node/317765 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid626">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1456" to-iso="1457">1456-7</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid626-transcription">
@@ -41497,7 +41497,7 @@ link to https://reed.library.utoronto.ca/node/317765 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid627">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1457">1457</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid627-transcription">
@@ -41528,7 +41528,7 @@ link to https://reed.library.utoronto.ca/node/317765 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid628">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1457" to-iso="1458">1457-8</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid628-transcription">
@@ -41568,7 +41568,7 @@ link to https://reed.library.utoronto.ca/node/317765 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid629">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1459">1459</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid629-transcription">
@@ -41580,7 +41580,7 @@ link to https://reed.library.utoronto.ca/node/317765 -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>em</ex> iij. ministrall<ex>is</ex> Norwic<ex>ie</ex>
+         <cell>It<ex>em</ex> iij. ministrall<ex>is</ex> <rs ref="eats:73838" type="Place_PA_Settlement">Norwic<ex>ie</ex></rs>
          </cell>
          <cell rend="right">x d.</cell>
         </row>
@@ -41642,7 +41642,7 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid630">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1459" to-iso="1460">1459-60</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid630-transcription">
@@ -41683,7 +41683,7 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid631">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1460" to-iso="1461">1460-1</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid631-transcription">
@@ -41731,7 +41731,7 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid632">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1462">1462</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid632-transcription">
@@ -41785,7 +41785,7 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid633">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1462" to-iso="1463">1462-3</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid633-transcription">
@@ -41827,7 +41827,7 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid634">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1463">1463</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid634-transcription">
@@ -41883,7 +41883,7 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid635">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1463" to-iso="1464">1463-4</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid635-transcription">
@@ -41926,7 +41926,7 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid636">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1464" to-iso="1465">1464-5</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid636-transcription">
@@ -42008,7 +42008,7 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid637">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1464" to-iso="1465">1464-5</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid637-transcription">
@@ -42049,7 +42049,7 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid638">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1465">1465</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid638-transcription">
@@ -42120,7 +42120,7 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid639">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1465" to-iso="1466">1465-6</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid639-transcription">
@@ -42133,8 +42133,8 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
        <table>
         <row>
          <cell>It<ex>e</ex>m vni ministrall<ex>o</ex> d<ex>omi</ex>ni Reg<ex>is</ex> eo
-          q<ex>uo</ex>d p<ex>re</ex>t<ex>er</ex>ierunt Colleg<ex>ium</ex> &amp; iberunt
-           vsq<ex>ue</ex> Bungey et ib<ex>id</ex>em p<ex>er</ex>noctauerunt </cell>
+          q<ex>uo</ex>d p<ex>re</ex>t<ex>er</ex>ierunt <rs ref="eats:385096" type="Place_F_School">Colleg<ex>ium</ex></rs> &amp; iberunt
+           vsq<ex>ue</ex> <rs ref="eats:372934" type="Place_PA_Settlement">Bungey</rs> et ib<ex>id</ex>em p<ex>er</ex>noctauerunt </cell>
          <cell rend="right">xij d.</cell>
         </row>
         <row>
@@ -42181,7 +42181,7 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid640">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1466">1466</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid640-transcription">
@@ -42237,7 +42237,7 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid641">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1466" to-iso="1467">1466-7</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid641-transcription">
@@ -42335,7 +42335,7 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid642">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1467">1467</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid642-transcription">
@@ -42378,7 +42378,7 @@ https://reed.library.utoronto.ca/node/316182 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid643">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1467" to-iso="1468">1467-8</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid643-transcription">
@@ -42477,7 +42477,7 @@ https://reed.library.utoronto.ca/node/316089 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid644">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1468" to-iso="1469">1468-9</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid644-transcription">
@@ -42489,7 +42489,7 @@ https://reed.library.utoronto.ca/node/316089 -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m dat<ex>um</ex> vni paup<ex>er</ex>o ministrall<ex>o</ex> Cancie </cell>
+         <cell>It<ex>e</ex>m dat<ex>um</ex> vni paup<ex>er</ex>o ministrall<ex>o</ex> <rs ref="eats:2039" type="Place_County">Cancie</rs> </cell>
          <cell rend="right">ij d.</cell>
         </row>
         <row>
@@ -42552,7 +42552,7 @@ https://reed.library.utoronto.ca/node/316089 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid645">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1469">1469</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid645-transcription">
@@ -42609,7 +42609,7 @@ https://reed.library.utoronto.ca/node/316089 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid646">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1469" to-iso="1470">1469-70</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid646-transcription">
@@ -42689,7 +42689,7 @@ https://reed.library.utoronto.ca/node/316247 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid647">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1470">1470</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid647-transcription">
@@ -42746,7 +42746,7 @@ https://reed.library.utoronto.ca/node/316247 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid648">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1470" to-iso="1471">1470-1</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid648-transcription">
@@ -42819,7 +42819,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid649">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1471">1471</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid649-transcription">
@@ -42879,7 +42879,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid650">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1471" to-iso="1472">1471-2</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid650-transcription">
@@ -42935,7 +42935,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid651">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1472">1472</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid651-transcription">
@@ -42993,7 +42993,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid652">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1472" to-iso="1473">1472-3</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid652-transcription">
@@ -43005,17 +43005,17 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
 
        <table>
         <row>
-         <cell>It<ex>e</ex>m <rs ref="eats:29681" type="Entertainer_Type">Tab<ex>er</ex>ario</rs> de Bungey daunsyng cu<ex>m</ex> trib<ex>us</ex>
+         <cell>It<ex>e</ex>m <rs ref="eats:29681" type="Entertainer_Type">Tab<ex>er</ex>ario</rs> de <rs ref="eats:372934" type="Place_PA_Settlement">Bungey</rs> daunsyng cu<ex>m</ex> trib<ex>us</ex>
           Socijs suis </cell>
          <cell rend="right">viij d.</cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m ij ho<ex>min</ex>ibus de Becclis quor<ex>um</ex> vnus eor<ex>um</ex>
+         <cell>It<ex>e</ex>m ij ho<ex>min</ex>ibus de <rs ref="eats:373096" type="Place_PA_Settlement">Becclis</rs> quor<ex>um</ex> vnus eor<ex>um</ex>
           <rs ref="eats:214969" type="Entertainer_Type">ludebat cu<ex>m</ex> Popyns</rs> </cell>
          <cell rend="right">viij d.</cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m <rs ref="eats:30189" type="Entertainer_Type">Citharedo</rs> Ceco de Wymondh<ex>a</ex>m </cell>
+         <cell>It<ex>e</ex>m <rs ref="eats:30189" type="Entertainer_Type">Citharedo</rs> Ceco de <rs ref="eats:373324" type="Place_PA_Settlement">Wymondh<ex>a</ex>m</rs> </cell>
          <cell rend="right">viij d.</cell>
         </row>
         <row>
@@ -43024,7 +43024,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
          <cell rend="right">viij d.</cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m trib<ex>us</ex> ho<ex>min</ex>ib<ex>us</ex> Norwic<ex>ie</ex>
+         <cell>It<ex>e</ex>m trib<ex>us</ex> ho<ex>min</ex>ib<ex>us</ex> <rs ref="eats:73838" type="Place_PA_Settlement">Norwic<ex>ie</ex></rs>
           <rs ref="eats:8782" type="Entertainer_Type">ludent<ex>ibus</ex></rs> duos ludos </cell>
          <cell rend="right">viij d.</cell>
         </row>
@@ -43086,7 +43086,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid653">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1473">1473</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid653-transcription">
@@ -43138,7 +43138,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid654">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1473" to-iso="1474">1473-4</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid654-transcription">
@@ -43166,7 +43166,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
          <cell rend="right">xvj d.</cell>
         </row>
         <row>
-         <cell>It<ex>e</ex>m duob<ex>us</ex> ho<ex>min</ex>ib<ex>us</ex> de South Elmh<ex>a</ex>m
+         <cell>It<ex>e</ex>m duob<ex>us</ex> ho<ex>min</ex>ib<ex>us</ex> de <rs ref="eats:450685" type="Place_PA_Settlement">South Elmh<ex>a</ex>m</rs>
            ludentib<ex>us</ex> et alij ho<ex>min</ex>i venie<ex>n</ex>ti a <rs ref="eats:453956" type="Person_Male">Thom<ex>a</ex> Brews</rs>
           milite </cell>
          <cell rend="right">viij d.</cell>
@@ -43223,7 +43223,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid655">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1474">1474</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid655-transcription">
@@ -43280,7 +43280,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid656">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1474" to-iso="1475">1474-5</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid656-transcription">
@@ -43327,7 +43327,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid657">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1475">1475</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid657-transcription">
@@ -43365,7 +43365,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid658">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1475" to-iso="1476">1475-6</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid658-transcription">
@@ -43423,7 +43423,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid659">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1476">1476</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid659-transcription">
@@ -43474,7 +43474,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid660">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1476" to-iso="1477">1476-7</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid660-transcription">
@@ -43498,7 +43498,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid661">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1477" to-iso="1478">1477-8</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid661-transcription">
@@ -43558,7 +43558,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid662">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1477" to-iso="1478">1477-8</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid662-transcription">
@@ -43601,7 +43601,7 @@ https://reed.library.utoronto.ca/node/316248 -->. </p>
    </text>
    <text type="record" xml:id="suffk-rid663">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1478">1478</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid663-transcription">
@@ -43682,7 +43682,7 @@ https://reed.library.utoronto.ca/node/316247 -->.</p>
    </text>
    <text type="record" xml:id="suffk-rid664">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Mettingham College</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1479">1479</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid664-transcription">
@@ -43754,7 +43754,7 @@ https://reed.library.utoronto.ca/node/316247 -->.</p>
    </text>
    <text type="record" xml:id="suffk-rid665">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Polstead</rs>
+     <head><rs>Suffolk</rs>, <rs ref="eats:372017" type="Place_PA_Settlement">Polstead</rs>
       <date when-iso="1363">1363</date>
       <seg ana="taxon:SUPO01">SUPO01</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid665-transcription">
@@ -43766,8 +43766,8 @@ https://reed.library.utoronto.ca/node/316247 -->.</p>
 
        <ab><rs ref="eats:453317" type="Person_Male">Ioh<ex>ann</ex>es</rs><note type="marginal" place="margin_left">ff<ex>ine</ex>m xl s.</note>
         <rs ref="eats:453317" type="Person_Male">Attefforth</rs> dat <rs ref="eats:453254" type="Person_Male">d<ex>omi</ex>no</rs> de fine p<ex>ro</ex> eo q<ex>uo</ex>d intrabat
-         claus<ex>uram</ex> d<ex>omi</ex>ni &amp; simul cu<ex>m</ex> al<ex>ijs</ex> ludebat in aula
-         d<ex>omi</ex>ni vnu<ex>m</ex> ludu<ex>m</ex> voc<ex>atum</ex>
+         claus<ex>uram</ex> d<ex>omi</ex>ni &amp; simul cu<ex>m</ex> al<ex>ijs</ex> ludebat in <rs ref="eats:454061" type="Place_F_Property">aula
+         d<ex>omi</ex>ni</rs> vnu<ex>m</ex> ludu<ex>m</ex> voc<ex>atum</ex>
         <rs ref="eats:35779" type="Entertainment_FolkCustom"><foreign xml:lang="eng">Som<ex>er</ex>gamen</foreign></rs> vt in cap<ex>itulo</ex></ab>
 
        <gap reason="omitted"/>
