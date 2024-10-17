@@ -40026,8 +40026,8 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        <gap reason="omitted"/>
 
        <ab>Ad hanc Cur<ex>iam</ex> si<ex>mi</ex>lit<ex>er</ex> concordat<ex>um</ex> est p<ex>er</ex>
-         Ball<ex>iuis</ex> &amp; Burgen<ex>sibus</ex> p<ex>re</ex>script<ex>is</ex> q<ex>uo</ex>d
-        ludus vocat<ex>us</ex> Corpus Cristi Pley &amp; Prand<ex>iu</ex>m vocat<ex>um</ex> Corpus
+         <rs ref="eats:402653" type="Collective_Office">Ball<ex>iuis</ex></rs> &amp; <rs ref="eats:297065" type="Collective_Office">Burgen<ex>sibus</ex></rs> p<ex>re</ex>script<ex>is</ex> q<ex>uo</ex>d
+        <rs ref="eats:40453" type="Drama_Type">ludus</rs> vocat<ex>us</ex> <rs ref="eats:402310" type="Collective_GuildsReligious">Corpus Cristi Pley</rs> &amp; <rs ref="eats:40561" type="Entertainment_Type">Prand<ex>iu</ex>m</rs> vocat<ex>um</ex> Corpus
         Cristi dynner p<ex>ro</ex> hoc anna<note type="foot">anna: <hi rend="italic">for</hi>
          anno</note> non ludit<ex>ur</ex> neq<ex>ue</ex> custodit<ex>ur</ex> set deferant<ex>ur</ex>
         &amp;c</ab>
@@ -40063,9 +40063,9 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>Ad h<ex>a</ex>nc Cur<ex>iam</ex> concordat<ex>um</ex> est q<ex>uo</ex>d ludus
-         vocatu<ex>s</ex> Corpus Chr<ex>ist</ex>i Paie<note type="foot">Paie: <hi rend="italic"
-          >for</hi> Plaie</note> &amp; Prandiu<ex>m</ex> vocat<ex>um</ex> Corpus Chr<ex>ist</ex>i
+       <ab>Ad h<ex>a</ex>nc Cur<ex>iam</ex> concordat<ex>um</ex> est q<ex>uo</ex>d <rs ref="eats:40453" type="Drama_Type">ludus</rs>
+         vocatu<ex>s</ex> <rs ref="eats:405485" type="Drama_TitledWork">Corpus Chr<ex>ist</ex>i Paie</rs><note type="foot">Paie: <hi rend="italic"
+          >for</hi> Plaie</note> &amp; <rs ref="eats:40561" type="Entertainment_Type">Prandiu<ex>m</ex></rs> vocat<ex>um</ex> Corpus Chr<ex>ist</ex>i
         dynner p<ex>ro</ex> hoc anno non ludit<ex>ur</ex> nec custodit<ex>ur</ex></ab>
 
        <gap reason="omitted"/>
@@ -40098,17 +40098,17 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
 
        <gap reason="omitted"/>
 
-       <ab>Et assign<ex>auerunt</ex> Rob<ex>er</ex>t<ex>u</ex>m Ioyne &amp; Ric<ex>ard</ex>us
-        lenaker Gardian<ex>os</ex> Gilde Corp<ex>or</ex>us chr<ex>ist</ex>i p<ex>ro</ex> Anno
-         sequ<ex>enti</ex> Et q<ex>uo</ex>d Prand<ex>iu</ex>m vocat<ex>um</ex> Corpus
+       <ab>Et assign<ex>auerunt</ex> <rs ref="eats:455015" type="Person_Male">Rob<ex>er</ex>t<ex>u</ex>m Ioyne</rs> &amp; <rs ref="eats:455235" type="Person_Male">Ric<ex>ard</ex>us
+        lenaker</rs> <rs ref="eats:403996" type="Collective_Office">Gardian<ex>os</ex> Gilde Corp<ex>or</ex>us chr<ex>ist</ex>i</rs> p<ex>ro</ex> Anno
+         sequ<ex>enti</ex> Et q<ex>uo</ex>d <rs ref="eats:40561" type="Entertainment_Type">Prand<ex>iu</ex>m</rs> vocat<ex>um</ex> Corpus
          chr<ex>ist</ex>i Dynner hoc Anno tenet<ex>ur</ex> &amp; custodit<ex>ur</ex>
-        <del>&amp;c</del> Et q<ex>uo</ex>d ludus voc<ex>atus</ex> Corpus chr<ex>ist</ex>i Playe
+        <del>&amp;c</del> Et q<ex>uo</ex>d <rs ref="eats:40453" type="Drama_Type">ludus</rs> voc<ex>atus</ex> <rs ref="eats:405485" type="Drama_TitledWork">Corpus chr<ex>ist</ex>i Playe</rs>
          p<ex>ro</ex> hoc anno ludet<ex>ur</ex><note type="foot">ludet<ex>ur</ex>: <hi rend="italic"
           >likely for</hi> non ludetur</note> nec tenet<ex>ur</ex></ab>
 
        <gap reason="omitted"/>
 
-       <ab>Et Assign<ex>auerunt</ex> Thom<ex>am</ex> Manser &amp; Will<ex>elmu</ex>m Gardener
+       <ab>Et Assign<ex>auerunt</ex> <rs ref="eats:455300" type="Person_Male">Thom<ex>am</ex> Manser</rs> &amp; <rs ref="eats:455361" type="Person_Male">Will<ex>elmu</ex>m Gardener</rs>
          M<ex>agist</ex>ros p<ex>ro</ex> Anno sequ<ex>enti</ex> Et q<ex>uo</ex>d h<ex>aber</ex>ent
         le Pagent paratu<ex>m</ex> A<note type="foot">A: <hi rend="italic">for</hi> ad</note> festum
          Corp<ex>or</ex>is Chr<ex>ist</ex>i sub pena forisfact<ex>ure</ex> x li.</ab>
@@ -40131,7 +40131,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        <gap reason="omitted"/>
 
        <ab>And they assigned Thomas Manser and William Gardener to be masters for the following
-        year, and they would have the pageant ready for the feast of Corpus Christi under penalty of
+        year, and they would have the <rs ref="eats:403978" type="Entertainment_Type">pageant</rs> ready for the feast of Corpus Christi under penalty of
         the forfeiture of £10.</ab>
 
        <gap reason="omitted"/>
