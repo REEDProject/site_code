@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="2.0"
-  exclude-result-prefixes="#all"
-  xmlns="http://www.tei-c.org/ns/1.0"
-  xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
-  xmlns:tei="http://www.tei-c.org/ns/1.0"
-  xmlns:xi="http://www.w3.org/2001/XInclude"
-  xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  
+                exclude-result-prefixes="#all"
+                xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+                xmlns:tei="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
   <!-- Expand @sameAs and @ana references. These typically replace the
        element carrying the referencing attribute with the content of
        the referenced element.
 
        The pipeline calling this must be following by an XInclude
        transformation to effect the actual inclusion. -->
-  
+
   <xsl:include href="cocoon://_internal/url/reverse.xsl" />
-  
+
   <xsl:variable name="tei" select="/tei:TEI" />
-  
+
   <xsl:template match="tei:quote[@source]">
     <xsl:variable name="context" select="." />
     <xsl:copy>
@@ -53,7 +53,7 @@
       </xsl:for-each>
     </xsl:copy>
   </xsl:template>
-  
+
   <xsl:template match="tei:text[@ana]" priority="10">
     <!-- The record types that are attached to the tei:text should not
          replace the content of the element. -->
@@ -97,7 +97,7 @@
       <xsl:apply-templates select="node()" />
     </xsl:copy>
   </xsl:template>
-  
+
   <xsl:template match="tei:*[@ana]" mode="#default referenced-record">
     <xsl:for-each select="tokenize(@ana, '\s+')">
       <xsl:call-template name="make-xinclude">
@@ -105,17 +105,17 @@
       </xsl:call-template>
     </xsl:for-each>
   </xsl:template>
-  
-  <xsl:template match="tei:text[@copyOf]">
+
+  <xsl:template match="tei:text[@sameAs]">
     <xsl:apply-templates select="@*|node()"/>
   </xsl:template>
-  
-  <xsl:template match="tei:*[@copyOf]" priority="1">
+
+  <xsl:template match="tei:*[@sameAs]">
     <xsl:call-template name="make-xinclude">
-      <xsl:with-param name="url" select="@copyOf" />
+      <xsl:with-param name="url" select="@sameAs" />
     </xsl:call-template>
   </xsl:template>
-  
+
   <xsl:template match="tei:*[@target]">
     <xsl:variable name="context" select="." />
     <xsl:copy>
@@ -151,9 +151,9 @@
       <xsl:apply-templates select="node()" />
     </xsl:copy>
   </xsl:template>
-  
+
   <xsl:template match="@ana" />
-  <xsl:template match="tei:text/@copyOf" priority="2">
+  <xsl:template match="tei:text/@sameAs">
     <xsl:attribute name="other_collection_ids">
       <xsl:for-each select="tokenize(., '\s+')">
         <xsl:value-of select="substring-before(., '.xml')" />
@@ -163,8 +163,8 @@
       </xsl:for-each>
     </xsl:attribute>
   </xsl:template>
-  <xsl:template match="@copyOf" />
-  
+  <xsl:template match="@sameAs" />
+
   <!-- Referenced records just need the tei:body/tei:head to be copied
        across. We also need to expand the tei:seg in the tei:head in
        order to get the title.
@@ -177,13 +177,13 @@
       <xsl:apply-templates mode="referenced-record" select="@*|tei:body/tei:head" />
     </xsl:copy>
   </xsl:template>
-  
+
   <xsl:template match="@*|node()" mode="referenced-record">
     <xsl:copy>
       <xsl:apply-templates mode="referenced-record" select="@*|node()" />
     </xsl:copy>
   </xsl:template>
-  
+
   <!-- References to things other than records only need an element
        carrying the referenced xml:id along with the containing
        [front|body]/div's xml:id. -->
@@ -193,13 +193,13 @@
       <xsl:attribute name="section-id" select="ancestor-or-self::tei:div[local-name(parent::*)=('back', 'front')]/@xml:id" />
     </xsl:copy>
   </xsl:template>
-  
+
   <xsl:template match="@*|node()">
     <xsl:copy>
       <xsl:apply-templates select="@*|node()" />
     </xsl:copy>
   </xsl:template>
-  
+
   <xsl:template name="make-xinclude">
     <xsl:param name="url" />
     <!-- XInclude does not permit fragment identifiers in
@@ -207,7 +207,7 @@
          pass the fragment). Convert to a querystring. -->
     <xsl:variable name="final-url" select="replace($url, '#', '?id=')" />
     <xi:include href="{kiln:url-for-match('ereed-extract-referenced-content',
-      ($final-url), 1)}" />
+                      ($final-url), 1)}" />
   </xsl:template>
-  
+
 </xsl:stylesheet>
