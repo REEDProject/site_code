@@ -1,0 +1,2030 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
+
+<!-- IN NOTE: TEI Header from BGHope, will have to be adjusted later--> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="bghop">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Newington Butts</title>
+        <funder><orgName>Jackman Foundation, Toronto, Canada</orgName></funder>
+        <funder><orgName>National Endowment for the Humanities, Washington, DC, United States of
+          America</orgName></funder>
+        <funder><orgName>Social Sciences and Humanities Research Council, Ottawa,
+          Canada</orgName></funder>
+        <editor>Sally-Beth MacLean</editor>
+        <respStmt>
+          <persName xml:id="JC">James Cummings</persName>
+          <orgName>Newcastle University</orgName>
+          <resp>TEI Schema Designer</resp>
+          <resp>Technical Consultant</resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="PG">Patrick Gregory</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>Paleographer</resp>
+          <resp>Translator</resp>
+          <resp>Glossarian</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Tanya Hagen</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>Bibliographer</resp>
+          <resp>Copy Editor</resp>
+          <resp>Project Manager</resp>
+          <resp>Proofreader</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Stephanie Hovland</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>UK Paleographer</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sally-Beth MacLean</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>Principal Investigator, SSHRC grant</resp>
+          <resp>Director of Research</resp>
+          <resp>General Editor</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Emily Mayne</persName>
+          <orgName>University of East Anglia, University of St Andrews</orgName>
+          <resp>Paleographer</resp>
+          <resp>Translator</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Jenna McKellips</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>Research Assistant</resp>
+          <resp>Indexer, Entity Tagger</resp>
+          <resp>REED EATS database maintainer</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Byron Moldofsky</persName>
+          <orgName>University of Toronto</orgName>
+          <resp>Cartographer</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Illya Nokhrin</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>Research Associate</resp>
+          <resp>Indexer, Entity Tagger</resp>
+          <resp>REED EATS taxonomy developer</resp>
+          <resp>REED EATS database maintainer</resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="JN">Jamie Norrish</persName>
+          <resp>Programmer</resp>
+          <resp>TEI Schema Designer</resp>
+          <resp>Technical Consultant</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sim Ong</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>Bibliographic Assistant</resp>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition> Version 1, released <date when-iso="2024-02-29">29 February 2024.</date>
+        </edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority><orgName>Records of Early English Drama (REED)</orgName>
+          <address>
+            <addrLine>University of Toronto</addrLine>
+            <addrLine>170 St George Street, Suite 810</addrLine>
+            <addrLine>Toronto, Ontario, Canada</addrLine>
+            <addrLine>M5R 2M8</addrLine>
+          </address>
+        </authority>
+        <availability>
+          <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
+            <date>2018</date></p>
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed under a
+            Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA
+            4.0) licence.</licence>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Records of Early English Drama</title>
+      </seriesStmt>
+      <sourceDesc>
+        <p>Born digital. Information on original sources for transcriptions can be accessed via
+          taxonomy.xml.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="eats" matchPattern="([0-9]+)"
+          replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/">
+          <p>URIs using the <code>eats</code> prefix are references to EATS entities.</p>
+        </prefixDef>
+        <prefixDef ident="gloss" matchPattern="([\S]+)" replacementPattern="../glossary.xml#$1">
+          <p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the
+            glossary.xml file. For example, <code>gloss:histrio-1</code> dereferences to
+            <code>glossary.xml#histrio-1</code>.</p>
+        </prefixDef>
+        <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)"
+          replacementPattern="../taxonomy.xml#$1">
+          <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the
+            taxonomy.xml file. For example, <code>taxon:church</code> dereferences to
+            <code>taxonomy.xml#church</code>.</p>
+        </prefixDef>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="eng">English</language>
+        <language ident="lat">Latin</language>
+        <language ident="ita">Italian</language>
+        <language ident="fra">French</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <group><text type="record" xml:id="nwbts-rid25">
+<body>
+<head><rs>Surrey</rs>, <rs>Newingto</rs> <date precision="low" when-iso="1590"><hi rend="italic">c</hi> 1590</date> <seg ana="taxon:RSWPC1">RSWPC1</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid25-transcription">
+<div><head>f [1]</head>
+<pb n="[1]" type="folio"/>
+
+<ab>Whereas<note type="foot">Whereas: W <hi rend="italic">in display script</hi></note> not longe since vpon
+some Considerac<ex>i</ex>ons we did restraine the Lorde Straunge his
+s<ex>er</ex>vaunt<ex>es</ex> from playinge at the rose on the banckside, and
+enioyned them to plaie three daies at newington Butts, Now forasmuch as
+wee are satisfied that by reason of the tediousnes of the waie and y<ex>a</ex>t
+of longe tyme plaies haue not there bene vsed on working daies, And for
+that a nomber of poore watermen are therby releeved, Yow shall p<ex>er</ex>mitt
+and suffer them or any other there to exercise yem selues in suche sorte
+as they haue don heretofore, And that the Rose maie be at libertie
+w<ex>i</ex>thout any restrainte, solonge as yt shalbe free from infection of
+sicknes, Any Comaundem<ex>en</ex>t<note type="foot">Comaundem<ex>en</ex>t: <hi rend="italic">3 minims for</hi>
+un</note> from vs heretofore to the Contrye notw<ex>i</ex>thstanding. ffrom.
+<hi rend="italic">(blank)</hi></ab>
+
+<ab><handShift/>To the Iustices Bayliffes</ab>
+
+<ab>Constables and others to</ab>
+
+<ab>Whome Yt shall
+Apperteyne:<handShift/></ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+The 'tediousnes of the waie' to Newington Butts has been much
+commented on. The old playhouse was about a mile's walk from Bankside and
+so less conveniently placed for London playgoers taking the boat or London
+Bridge to Southwark. The fact that 'of longe tyme plaies haue not there
+bene vsed on working daies' is worth noting. The leaseholder of the
+Lurklane property at Newington from <hi rend="italic">c</hi> 1580 was Peter Hunningborne,
+not known as a theatre manager, so Henslowe must have paid for temporary
+use of the playhouse there, as he probably did later in the summer of
+1594. See for example, Ingram, <title>Business of Playing</title>, p 152.
+Whether others paid for occasional use after 1587, when the Rose was
+opened on Bankside, remains an open question.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid12">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1574">1574</date> <seg ana="taxon:NBPL14">NBPL14</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid12-transcription">
+<div><head>f [1] <supplied>(15 November) (Hampton Court)</supplied></head>
+<pb n="[1]" type="folio"/>
+
+<ab>After our very hartie commendac<ex>i</ex>ons ffor so much as yt is found by
+experience that very great perill and incouenienc<ex>es</ex> hath fallen vppon
+soundry of the Queenes Ma<ex>ies</ex>t<ex>es</ex> subiect<ex>es</ex> by the sufferance of
+great assemblies of people to come together at plaies and shewes neare
+London in this tyme of Contagion and infection of the plague: And for the
+restraint thereof straicte order hath ben taken in the Citie and the
+liberties of the same. Theis be to requier youe forthw<ex>i</ex>th to giue
+commaundement, as so directed by vs that there be no playes shewes nor any
+such vnnecessarie assemblies vsed in that Countie w<ex>i</ex>thin ten myles of
+the Citie vntill Easter next vppon payne of imprisonement to such as shall
+in any wies offend to the contrarie. And thervnto youe must take
+spciall<note type="foot">spciall: <hi rend="italic">for</hi> speciall</note> regarde. ffarre youe hartely
+well ffrom Hampton Court the xv<hi rend="superscript">th</hi> of Nouember 1574</ab>
+
+<ab><hi rend="right"> <damage><gap unit="chars" extent="4"/></damage> ffrendes</hi></ab>
+
+<table><row><cell><damage><gap unit="chars" extent="3"/></damage>er C<ex>ustos</ex> s<ex>igili</ex></cell><cell> W<ex>illiam</ex>
+Burghley</cell><cell>E<ex>dward</ex> lyncon <damage><gap unit="chars" extent="2"/></damage>undell</cell></row>
+<row><cell/><cell/><cell>A<ex>mbrose</ex> Warwyk</cell><cell>R<ex>obert</ex> Leycester.</cell></row>
+<row><cell>F<ex>rancis</ex> Knollys</cell><cell>Iamys croft</cell><cell>T<ex>homas</ex>
+Smith</cell><cell>Fra<ex>ncis</ex> Walsyngham</cell></row></table>
+</div>
+</div>
+<div type="endnote">
+<p>
+ An oblong tear on the left side of the manuscript has obscured some
+letters before the legible signatures. The first damaged signature may
+have been by Ralph Sadler, identified in the Acts of the Privy Council for
+the meeting on 15 November as present (see <title>Acts of the Privy
+Council</title>, vol 8, pp 301–26, <title>British History
+Online</title><!-- https://www.british-history.ac.uk/acts-privy-
+council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has
+identified, in the 19th-c. ink below, the signature of Nicholas Bacon, who
+appears to have signed with the initials 'C s' for 'C<ex>ustos</ex> s<ex>igili</ex>'
+(keeper of the seal). There is also an oblong tear in the manuscript where
+the seal was ripped off, obliterating the word before 'ffrendes' and the
+'Ar' of Arundell, but possibly more letters for Henry Fitzalan (1512–80),
+twenty-fourth earl of Arundel.</p>
+
+<p>
+Besides the earl of Arundel, the privy councillors signing the letter are
+as follows: Sir Nicholas Bacon (1510–79), lord keeper of the Great Seal,
+1558–79; Sir William Cecil (1520/21–98), first Baron Burghley, lord
+treasurer, 1572–98; Edward Clinton (1512–85), sixteenth earl of Lincoln,
+lord admiral, 1559–85; Ambrose Dudley (<hi rend="italic">c</hi> 1530–90), twenty-first
+earl of Warwick; Sir Francis Knollys (1511/12–96), treasurer of the
+Household, 1570–96; Sir James Croft (<hi rend="italic">c</hi> 1518–90), comptroller of
+the Household, 1570–90; Sir Thomas Smith (1513–77), secretary of State,
+1572–7; Robert Dudley (1532/3–88), fourteenth earl of Leicester; and Sir
+Francis Walsingham (<hi rend="italic">c</hi> 1532–90), principal secretary, 1573–90.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid13">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1576">1576</date> <seg ana="taxon:NBSKCS">NBSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid13-transcription">
+<div><head>f 87v <supplied>(13 July)</supplied></head>
+<pb n="87v" type="folio"/>
+
+<gap reason="omitted"/>
+
+<ab rend="center">Newinton</ab>
+
+<table><row><cell>ffirste<note type="marginal" place="margin_left">Savage &amp; Hilles</note> p<ex>re</ex>sente Ierome Savadge &amp; Iohn
+Hilles to skowre &amp; caste deeper x roddes of their com<ex>m</ex>on shewer
+leadinge from the grate at newington Butt<ex>es</ex> to the ende of Ierome
+Savag<ex>es</ex> orchard corner beinge more or les to be done by the x<hi rend="superscript">th</hi>
+daye of October nexte comynge vppon paine of xx d. for euerye rod then
+vndone</cell><cell rend="right">xx d.</cell></row>
+<row><cell/><cell rend="right">x<hi rend="superscript">o</hi> Octob<ex>e</ex>r don<ex>e</ex></cell></row></table>
+
+<table><row><cell>It<ex>e</ex>m<note type="marginal" place="margin_left">thenhabitant<ex>es</ex> of Newinton</note>we p<ex>re</ex>sente
+thenhabitance of ‸<add place="above">the p<ex>ar</ex>ishe of</add> Newington to clense &amp; caste
+deeper one rodde before the grate of Ierome Savadges doore to be done by
+the x<hi rend="superscript">th</hi> of October next comynge vpon paine of vj s. viij d. yf it be
+then vndone</cell><cell rend="right"> vj s. viij d.</cell></row>
+<row><cell/><cell rend="right">xx<hi rend="superscript">o</hi> Octob<ex>e</ex>r don<ex>e</ex></cell></row></table>
+
+<table><row><cell>We<note type="marginal" place="margin_left">Hilles &amp; Cockowe</note>p<ex>re</ex>sente Iohn hills &amp; Thomas Cockowe
+to skowre &amp; caste deeper xv pooles of the com<ex>m</ex>on shewer leadinge from
+Ierome Savag<ex>es</ex> orchard corner to barl<add place="above">owes</add><del><damage><gap unit="chars" extent="2"/></damage>es</del> grounde be it
+more or les to be done by the x<hi rend="superscript">th</hi> daye of October next comynge vpon
+paine of xx d. euery rod then vndone</cell><cell rend="right">xx d.</cell></row>
+<row><cell/><cell rend="right">xi<hi rend="superscript">o</hi> Octob<ex>e</ex>r don<ex>e</ex></cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+Jerome Savage (d. 1587) is known to have been an actor in the earl of
+Warwick's troupe between 1575–9. See further History of the
+Playhouse<!-- #IN to link to Introduction: 2nd chapter -->.
+</p>
+
+<p>
+John Hilles' property apparently lay to the south of the 'common sewer,'
+which ran between them on the south edge of Savage's lot (Ingram
+<title>Business of Playing</title>, pp 160–2). For Thomas Cuckowe, named
+in the third entry, see the 1590 lease, CCA: Register W, CCA-DCc-
+Register/W, ff 36v–7<!-- #IN to link to NBCCDC -->.
+</p>
+
+<p>
+On 21 July 1576 (f 90v), Jerome Savage's name appears listed with others
+'which performed' tasks.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid14">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1577">1577</date> <seg ana="taxon:NBSKCS">NBSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid14-transcription">
+<div><head>f 95v <supplied>(5 July)</supplied></head>
+<pb n="95v" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>Imprimis <note type="marginal" place="margin_left">Newington St Georges &amp; St Mary Magdalyns</note>we
+p<ex>re</ex>sent all thos p<ex>er</ex>sons whose names are herevnder named hauing
+grounde w<ex>i</ex>thin the saied p<ex>ar</ex>ishes to cutt &amp; dragge all theire
+seuerall p<ex>ar</ex>tes of the Co<ex>m</ex>en shewer begyninge at the grate at
+Newington Buttes &amp; so all alonge to the bridge at the Lasier house viz:
+Iohn<note type="foot">Iohn: <hi rend="italic">presumably an error for</hi> Ierome</note> Savadge &amp; Iohn
+Hilles x roddes<gap reason="omitted"/></cell><cell rend="right">xiij d. don<ex>e</ex></cell>
+</row><row><cell/><cell rend="right">xx<hi rend="superscript">th</hi> of Nouember</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+Savage's name continues to appear in combination with Hilles in the
+Sewer Commission records until November 1578.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid15">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1578">1578</date> <seg ana="taxon:NBSKCS">NBSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid15-transcription">
+<div><head>f 105v <supplied>(3 November)</supplied></head>
+<pb n="105v" type="folio"/>
+
+<ab rend="center">The p<ex>ar</ex>ishes of Newington St Georges <lb/>Reddereth &amp; Mary Magdalyns</ab>
+
+<table><row><cell>It<ex>e</ex>m we p<ex>re</ex>sent all the landhoulders from Newington
+bridge vppon both sydes the Co<ex>m</ex>en sewer &amp; so alonge to Duffildes sluce
+to Cutt pare &amp; dragge all &amp; euery man his seu<ex>er</ex>all p<ex>ar</ex>te of the
+same sewer to be done by the laste daye of November next comyng vppon
+payne of xij d. for euery rodde then vndone viz. </cell><cell rend="right">xij d.</cell></row>
+<row><cell/><cell rend="right">vlt<ex>imo</ex> Nov<ex>embris</ex> don<ex>e</ex></cell></row></table>
+
+<table><row><cell>Ierom Savadge &amp; Iohn Hylles</cell><cell>x poles</cell></row>
+<row><cell>&#160;</cell></row>
+<row><cell>Thomas Cuckowe</cell><cell>xv pole</cell></row>
+<row><cell>&#160;</cell></row>
+<row><cell>Barlowes widdowe &amp; Thomas Cuckowe</cell><cell>vij pole</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid3">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1582">1582</date> <seg ana="taxon:NBCCAB">NBCCAB</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid3-transcription">
+<div><head>f 27v <supplied>(June)</supplied></head>
+<pb n="27v" type="folio"/>
+
+<gap reason="omitted"/>
+
+<ab>It<ex>e</ex>m yt ys agreyd that peter honybo<ex>u</ex>rne shall haue a lease of the
+resydue of the garden <del>adioyni</del> and ground<ex>es</ex> adioynyng to the playe
+house in newyngton not comp<ex>ri</ex>sed in his former lease for xxj<hi rend="superscript">ti</hi>
+yer<ex>es</ex> to begynne at mich<ex>aelm</ex>as next and he to pay therefore yerely
+two shilling<ex>es</ex></ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The date of the chapter meeting on f 25 has been damaged by fire; the
+exact date in June is lost. The original foliation for the entry was
+4v.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid1">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1583">1582/3</date> <seg ana="taxon:BHCJ21">BHCJ21</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid1-transcription">
+<div><head>f 255v <supplied>(16 January)</supplied></head>
+<pb n="255v" type="folio"/>
+
+<ab rend="center">By the Maior./</ab>
+
+<ab>By<note type="marginal" place="margin_left">To thalderma<ex>n</ex> of the warde of <hi rend="italic">(blank)</hi></note> vertue of
+letters from the righte honorable the Lordes of her Ma<ex>ies</ex>t<ex>ies</ex> most
+honorable prive Councell to me latlye dyrected/ Theise shalbe in her
+highnes name streightly to charge &amp; comaund yow that forthw<ex>i</ex>th yow
+take order that no mann<ex>er</ex> of p<ex>er</ex>sone or p<ex>er</ex>sones
+whatsoeu<ex>er</ex> inhabitinge or resiante w<ex>i</ex>thin yo<ex>u</ex>r said warde do
+at any<note type="marginal" place="margin_left">A p<ex>re</ex>cepte that no p<ex>er</ex>son inhabitinge or resiant
+w<ex>i</ex>thin this Citye do goe or resorte to any plaies or other vnlawfull
+pastimes vppon the sabathe daies/</note> tyme or tymes herafter goe or resorte
+to any playes enterludes tumbling<ex>es</ex> beare or  bulbaytinges or <del>wyne</del>
+anye vnlaufull games plaies pastimes or exercises vpon eny the saboth
+daies either w<ex>i</ex>thin this Cittie or w<ex>i</ex>thin two milles of the same/
+And that if any p<ex>er</ex>sone or p<ex>er</ex>sones shall offende herin after
+warninge to him or them given that then yow cause eu<ex>er</ex>ye suche
+offender to be forthw<ex>i</ex>th comitted to warde into one of the Compters of
+this Cittie theire to remaine vntill further order shalbe taken touchinge
+their said offences/<gap reason="omitted"/></ab>
+</div>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid22">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1587">1587</date> <seg ana="taxon:RSPCL5">RSPCL5</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid22-transcription">
+<div><head>p 339 <supplied>(7 May)</supplied></head>
+<pb n="339" type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>A<note type="marginal" place="margin_left">L<ex>ord</ex> Chancelor:<note type="foot">L<ex>ord</ex> Chancelor: <hi rend="italic">Sir Christpher Hatton
+(<hi rend="italic">c</hi> 1540–91), lord chancellor, 1587–91</hi></note><lb/>L<ex>ord</ex>
+Thr<ex>easur</ex>er:<note type="foot">L<ex>ord</ex> Thr<ex>easur</ex>er: <hi rend="italic">Sir William Cecil
+(1520/21–98), lord treasurer, 1572–98</hi></note><lb/>E<ex>arl</ex> of
+Warwicke:<note type="foot">E<ex>arl</ex> of Warwicke: <hi rend="italic">Ambrose Dudley (<hi rend="italic">c</hi> 1530–90),
+twenty-first earl of Warwick</hi></note><lb/>Earl of Leicester:<note type="foot">Earl of
+Leicester: <hi rend="italic">Robert Dudley (<hi rend="italic">c</hi> 1532/3–88), fourteenth earl of
+Leicester, first Baron Denbigh</hi></note><lb/>L<ex>ord</ex> Admirall:<note type="foot">L<ex>ord</ex>
+Admirall: <hi rend="italic">Charles Howard (1536–1624), second Baron Howard of Effingham
+and tenth earl of Nottingham, lord admiral, 1585–1619</hi></note><lb/>L<ex>ord</ex>
+Chamberlaine:<note type="foot"> L<ex>ord</ex> Chamberlaine: <hi rend="italic">Henry Carey (1526–96), first
+Baron Hunsdon and lord chamberlain of the Household, 1585–96</hi></note><lb/>Mr
+Secr<ex>etary</ex> Walsingha<ex>m</ex><note type="foot"> Mr Secr<ex>etary</ex> Walsingha<ex>m</ex>: <hi rend="italic">Sir
+Francis Walsingham (<hi rend="italic">c</hi> 1532–90), principal secretary,
+1573–90</hi></note></note> l<ex>ett</ex>re to the L<ex>ord</ex> Maior of the citie of London:
+that whereas their l<ex>ordshipes</ex> were giuen to vnderstand that certaine
+outrages and disorders were of late committed in certaine places and
+Theaters erected w<ex>i</ex>thin that Citie of London or the suburbes of the
+same where enterludes &amp; comedies were vsuallie plaied, and for that the
+season of the yeare grew hott<ex>e</ex>r and hott<ex>e</ex>r it was to be doubted
+least by reason of the Concorse of people to such plac<ex>es</ex> of co<ex>m</ex>mon
+assemblies there might some danger of infecc<ex>i</ex>on happen in the Citie
+Their l<ex>ordshipes</ex> thought it expedient to haue the vse of the said
+Interludes inhibited both at the Theaters, and in all oth<ex>e</ex>r plac<ex>es</ex>
+w<ex>i</ex>thin his iurisdicc<ex>i</ex>on And therefore required him accordinglie to
+take p<ex>rese</ex>nte order for the stayinge of the same, charginge the
+plaiers and actors to cease and forbeare the vse of the said plac<ex>es</ex>
+for the purpose of playinge or shewinge of anie such Enterlud<ex>es</ex> or
+Comedies vntill aft<ex>e</ex>r Barthelomew tide next ensuinge/</ab>
+
+<ab>A like l<ex>ett</ex>re to the same effecte to the m<ex>aste</ex>r of the Rolles.</ab>
+
+<ab>A like l<ex>ett</ex>re to the like effecte to the<add place="above">Iustic<ex>es</ex></add>
+<del>sheriff<ex>es</ex></del> of Surrie/</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The copy of this letter to the JPs of Surrey has not survived.The Rose
+playhouse on Bankside may not yet have been opened by this date but the
+playhouse at Newington Butts could have been affected by this summer
+inhibition.</p>
+
+<p>
+The  present at the meeting are listed in the left margin.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid19">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1589">1589</date> <seg ana="taxon:RSLPCL">RSLPCL</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid19-transcription">
+<div><head>pp 388–9 <supplied>(12 November)</supplied></head>
+<pb type="page" n="388"/>
+
+<gap reason="omitted"/>
+
+<ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note> l<ex>ett</ex>re to the L<ex>ord</ex>
+Archb<ex>ishop</ex> of Canterbury. That wheras there hathe growne some
+inconuenience by Com<ex>m</ex>on playes and enterludes in and about the Cyttie
+of London, in<note type="foot">in: <hi rend="italic">for</hi> in that</note> the players tak vppon them to
+handle in their plaies certen matters of Diuinitye and of State vnfitt to
+be suffred: for redresse whereof their L<ex>ordshipes</ex> haue thought good to
+appointe some p<ex>er</ex>sones of iudgemt and vndrstanding<note type="foot">vndrstanding:
+<hi rend="italic">for</hi> vnderstanding<hi rend="italic">; abbreviation mark missing</hi></note> to viewe
+and examine their playes before they be p<ex>er</ex>mitted to p<ex>re</ex>sent them
+publickly: his L<ex>ordship</ex> is desired that some fytt p<ex>er</ex>sone well
+learned in Diuinity be appointed by him to Ioyne w<ex>i</ex>th the M<ex>aste</ex>r
+of the Revells<note type="foot">M<ex>aste</ex>r of the Revells: <hi rend="italic">Edmund Tilney, master of
+the Revels, 1579–1610</hi></note> and one oth<ex>e</ex>r to be nominated by the
+L<ex>ord</ex> Mayor, and they Ioyntly w<ex>i</ex>th some spede to viewe and Consider
+of suche Comedyes and Tragedyes as are and shalbe publickly played by the
+Companies of players in and aboute the Cyttie of London, and they to geue
+allowance of suche as they shall thincke meete to be plaied and to forbydd
+the rest.</ab>
+
+<ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note> l<ex>ett</ex>re to the L<ex>ord</ex> Mayor of
+London, That wheras their l<ex>ordshipes</ex> haue already signifyde vnto him
+to appoint a sufficient p<ex>er</ex>son learned and of Iudgemt<note type="foot">Iudgemt:
+<hi rend="italic">for</hi> Iudgement<hi rend="italic">; abbreviation mark missing</hi></note> for the Cyttie
+of London to Ioyne w<ex>i</ex>th the M<ex>aste</ex>r of the Revelles, and w<ex>i</ex>th a
+divine to be nominated by the L<ex>ord</ex> Archeb<ex>ishop</ex> of Cant<ex>erbury</ex>
+for the reforming of the plaies daylie exercised and p<ex>re</ex>sented
+publickly in and about the Cyttie of London, where the players tak vppon
+them w<ex>i</ex>thout Iudgem<ex>en</ex>t or Decoru<ex>m</ex> to handle matters of
+Divinitye and State. he is required if he haue not as yet made choice of
+suche a p<ex>er</ex>sone that he will so doe forthw<ex>i</ex>th, and thereof geue
+knowledge to the L<ex>ord</ex> Archeb<ex>ishop</ex>; and the M<ex>aste</ex>r of the
+Reveles; that they may all meet accordingly<pb n="389"/></ab>
+
+<ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note> l<ex>ettr</ex>e to the m<ex>aste</ex>r of the
+Revelles, requiring him w<ex>i</ex>th two oth<ex>e</ex>rs the one to be appointed by
+the L<ex>ord</ex> Archb<ex>ishop</ex> of Canterb<ex>ury</ex> and the oth<ex>e</ex>r by the
+L<ex>ord</ex> mayor of London to be men of Larning and Iudgement and to Call
+before them the seu<ex>er</ex>all Companies of players (whose servaunt<ex>es</ex>
+soever they be) and to require them by authorytie herof to delyver vnto
+them ther booke that they maye Consider of the matters of their Comedyes
+and Tragedyes, and therevppon to sayke oute or reforme suche
+p<ex>ar</ex>t<ex>es</ex> and matters as they shall fynd vnfitt and vn<ex>reu</ex>erent to
+be handled in playes, bothe for divinitie and state, comanding the said
+Companies of players in her Ma<ex>ies</ex>t<ex>es</ex> name, that they forbear to
+present and playe publickly anie Comedy or Tragedy other then suche as
+they there shall haue seene and allowed w<ex>hi</ex>ch if they shall not
+observe they shall lett them knowe from ther l<ex>ordshipes</ex> that they
+shalbe not onely sevearely punished but made Capable of the exercise of
+ther profession forever hereaft<ex>e</ex>r</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+At least two of the companies involved in these controversial
+performances are known to have been the Queen's Men and John Lyly's boy
+company at Paul's, both of which seem to have come to grief as a result of
+their participation. It is also possible that Will Kemp and his company,
+Lord Strange's Men, engaged in satirical stage mockery of Martin. Kemp is
+listed as one of the 'haggling and profane' satirists working to ruin
+Martin in <title>Theses Martinianae</title>, dated 22 July 1589. See
+further, Manley and MacLean, <title>Lord Strange's Men </title>, pp 37–41.
+Although the date of arrival of Lord Strange's Men for residence at the
+Rose has not yet been confirmed, it seems feasible that they were there by
+<hi rend="italic">c</hi> 1590, as their extant petition to the privy council and another
+by the Thames watermen, pleading for their continuing use of the Rose,
+indicate. See further, 'History of the Rose Playhouse'<!-- #IN insert cross
+ref -->. The summer of 1589 remains a possibility for their early
+performances at the Rose therefore.</p>
+
+<p>
+The privy councillors listed as present at the meeting (p 388) were John
+Whitgift (<hi rend="italic">c</hi> 1530–1604), archbishop of Canterbury, 1583–1604; Sir
+William Cecil (1520/21–98), lord treasurer, 1572–98; Sir Christopher
+Hatton (<hi rend="italic">c</hi> 1540–91), lord chancellor, 1587–91; Charles Howard
+(1536–1624), lord admiral, 1585–1619; William Brooke (1527–97), tenth Lord
+Cobham, privy councillor, 1585–97; Thomas Sackville (<hi rend="italic">c</hi> 1536–1608),
+first Baron Buckhurst, privy councillor, 1586–1608; ; Sir John
+Perrot(1528–92), privy councillor, 1589–91; and Sir John Fortescue
+(1533–1607), privy councillor, 1588–1607.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid16">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1591">1590/1</date> <seg ana="taxon:NBSKCS">NBSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid16-transcription">
+<div><head>f 172 <supplied>(26 February)</supplied></head>
+<pb n="172" type="folio"/>
+
+<gap reason="omitted"/>
+
+<table><row><cell>We<note type="marginal" place="margin_left">Honningborne.</note> p<ex>re</ex>sent Peter Honningborne to open the
+sluce by the play house that the water may hav a fre passage by our
+Ladyday next<note type="foot">our Ladyday next: <hi rend="italic">feast of the Annunciation, 25
+March</hi></note> vpon pa<ex>y</ex>n of</cell><cell rend="right">v s.</cell></row></table>
+
+<gap reason="omitted"/>
+
+<table><row><cell>We<note type="marginal" place="margin_left">Cuckow <lb/>exstreted</note> p<ex>re</ex>sent Richard Cuckow to make
+asluce or thorough at his gate leading in to his feild next adioyning to
+the playhouse by our Lady day next. vppon paine of</cell><cell>v s.</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+<!-- EMLoT E403 -->
+For Richard Cuckow see the 1590 lease, CCA: Register W, CCA-DCc-
+Register/W, ff 36v–7<!-- #IN to link to NWCCDC -->.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid23">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1591">1591</date> <seg ana="taxon:RSPCL6">RSPCL6</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid23-transcription">
+<div><head>p 440 <supplied>(25 July) (Greenwich)</supplied></head>
+<pb n="440" type="page"/>
+
+<ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note> Let<ex>t</ex>re to the L<ex>ord</ex> maior of
+the Cyttie of London, and the Iustices of midlesex<note type="foot">midlesex: <hi rend="italic">3
+minims for</hi> mi</note> and Surrey. Whereas heretofore there hathe ben order
+taken to restraine the playinge of Enterludes and playes on the Sabothe
+daie, Notw<ex>i</ex>thstandinge the w<ex>hi</ex>ch (as wee are enformed), the same
+ys neglected to the prophanac<ex>i</ex>on of this daie, and all other daies of
+the weeke in divers places the players doe vse to Recyte theire plaies to
+the great hurt and destruction of the game of Beare Baytinge and lyke
+pastymes w<ex>hi</ex>ch are maynteyned for her ma<ex>ies</ex>t<ex>es</ex> pleasure yf
+occac<ex>i</ex>on require: These shalbe therefore to Requiere yow not onlie to
+take order hereafter that there maie no plaies Interludes or Commodyes be
+vsed or publicklie made and shewed either on the Sondaie or on the
+Thursdaies, because on the Thursdayes those other games vsuallie haue ben
+allwayes accustomed and practized. Whereof see yow faile not hereafter to
+see this o<ex>u</ex>r order dulie observed for the avoydinge of the
+Inconveniences aforesaid./</ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+Although authorities in London and Middlesex were also addressed here,
+this letter provides evidence that the proximity – and competition –
+offered to the long-standing Bear Garden in Southwark by Henslowe's Rose
+and the Lord Strange's Men, likely resident there by this time, was of
+growing concern. Whether the playhouse at Newington Butts was used by
+players during this period is unknown.</p>
+
+<p>
+The privy councillors listed as present at the meeting (p 436) were John
+Whitgift (<hi rend="italic">c</hi> 1530–1604), archbishop of Canterbury, 1583–1604; Sir
+Christopher Hatton (<hi rend="italic">c</hi> 1540–91), lord chancellor, 1587–91; Sir
+William Cecil (1520/21–98), lord treasurer, 1572–98; Thomas Sackville
+(<hi rend="italic">c</hi> 1536–1608), first Baron Buckhurst, privy councillor, 1586–1608;
+Sir Francis Knollys (1511/12–96), treasurer of the Household, 1570–96; Sir
+Thomas Heneage (<hi rend="italic">c</hi> 1532–95), vice-chamberlain of the Household,
+1587–95; Sir John Wolley (d.1596), privy councillor, 1586–96; and Sir John
+Fortescue (1533–1607), privy councillor, 1588–1607.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid18">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date precision="low" when-iso="1593"><hi rend="italic">c</hi> 1593</date> <seg ana="taxon:RSAPPC">RSAPPC</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid18-transcription">
+<div><head>single sheet</head>
+<pb n="1" type="sheet"/>
+
+<gap reason="omitted"/>
+
+<ab>That<note type="foot">That: T <hi rend="italic">in display script</hi></note><note type="marginal" place="margin_left">8</note> for avoydinge of great
+concourse of people, W<ex>hi</ex>ch causeth increase of thinfection, yt were
+convenient, that all Playes, Bearebaytinges, Cockpitt<ex>es</ex>, co<ex>m</ex>mon
+Bowlinge alleyes, and suche like vnnecessarie assemblies should be
+suppressed duringe the tyme of infection, for that infected people, after
+theire longe keepinge in, and before they be clered of theire disease and
+infection, beinge desirous of recreac<ex>i</ex>on, vse to resort to suche
+assemblies, where throughe heate and thronge, they infecte manie sound
+personnes./</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid24">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1593">1592/3</date> <seg ana="taxon:RSPCO9">RSPCO9</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid24-transcription">
+<div><head>pp 211–12 <supplied>(28 January) (Hampton Court)</supplied></head>
+<pb type="page" n="211"/>
+
+<gap reason="omitted"/>
+
+<ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note> l<ex>ett</ex>re to the l<ex>ord</ex> Maio<ex>u</ex>r
+and Aldermen of the Cittie of london forasmuch as by the Certificate of
+the last weeke, yt appearethe the infection dothe increase, w<ex>hi</ex>ch by
+the favo<ex>u</ex>r of God, and w<ex>i</ex>th  yo<ex>u</ex>r dilligent obseruance of her
+Ma<ex>ies</ex>t<ex>es</ex> Comandement<ex>es</ex> and the meanes and orders prescribed to
+be put in execution w<ex>i</ex>thin the Cittie of london maie speedelie cease
+yeat for the better furderance therof we think yt fitt that all manner of
+concourse and publique meetinges of the people at playes, beare baitinges,
+bowlinges, and other like assemblyes for sportes be forbidden, and
+therefore doe hereby requier you and in her Ma<ex>ies</ex>t<ex>es</ex> name
+straightlie charge and co<ex>m</ex>mande you forthw<ex>i</ex>th to inhibite
+w<ex>i</ex>thin yo<ex>u</ex>r Iurisdiction all plaies baiting of beares, bulls,
+Bowling and any other like occasions to assemble any nombers of people
+together (preacheing and devyne seruice at Churches excepted) wherby no
+occasions be offred to increase the infection w<ex>i</ex>thin the Cittie,
+w<ex>hi</ex>ch you shall doe bothe by <pb n="212"/> p<ex>ro</ex>clamac<ex>i</ex>on to be published to
+that ende and by spetiall watche and obseruac<ex>i</ex>on to be had at the
+places where the Plaies bearebaitinges bowlinges and like pastimes are
+vsually frequented and if you shall vpon this publicaon<note type="foot">publicaon:
+<hi rend="italic">for</hi> publicacion<hi rend="italic">; abbreviation mark missing</hi></note> finde any so
+vnduitifull and disobedient as they will, notw<ex>i</ex>thstanding this
+p<ex>ro</ex>hibition offer to plaie, beate beares or bulles bowle &amp;c. you shall
+p<ex>rese</ex>ntelie cause them to be apprehended and comitted to prison there
+to remaine vntill by their order they shalbe dismissed  And to the end the
+like assemblies w<ex>i</ex>thin the out liberties adioyning to the Cittie we
+haue giuen direction to the Iustices of the peace, and other publique
+officers of the Counties of Middlesex and Surrey to hold the like course
+not onlie w<ex>i</ex>thin the said liberties but also w<ex>i</ex>thin the distance
+of seven myles about the Cittie w<ex>hi</ex>ch we doubte not they will
+carefullie see to be executed as you for yo<ex>u</ex>r p<ex>ar</ex>te w<ex>i</ex>thin the
+Cittie will doe the like, in regarde of her Ma<ex>ies</ex>t<ex>es</ex>
+comandem<ex>en</ex>t the benefitt of the Cittie; and for the respectes alreadie
+signified vnto you.</ab>
+
+<ab>Two other l<ex>ett</ex>res of the like teno<ex>u</ex>r written to the Iustices of
+the peace w<ex>i</ex>thin the Counties of Surrey and Middelsex for the
+p<ex>ro</ex>hibition of like assemblies in the out liberties and w<ex>i</ex>thin
+seven miles of the Cittie of either Countie.</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The privy councillors listed as present at the meeting (p 209) were
+John Whitgift (<hi rend="italic">c</hi> 1530–1604), archbishop of Canterbury, 1583–1604;
+Sir John Puckering (1543/4–96), lord keeper of the Great Seal, 1592–6;
+Charles Howard (1536–1624), lord admiral, 1585–1619; Henry Carey
+(1526–96), lord chamberlain of the Household, 1585–96; Sir Thomas
+Sackville (<hi rend="italic">c</hi> 1536–1608), first Baron Buckhurst, privy councillor,
+1586–1608; Sir Thomas Heneage (<hi rend="italic">c</hi> 1532–95), vice-chamberlain of the
+Household, 1587–95; Sir Robert Cecil (1536–1612), privy councillor,
+1591–1612; Sir John Wolley (d.1596), privy councillor,1586–96; and Sir
+John Fortescue (1533–1607), privy councillor, 1588–1607.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid4">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1594">1594</date> <seg ana="taxon:NBCCAB">NBCCAB</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid4-transcription">
+<div><head>f 184 <supplied>(6 July)</supplied></head>
+<pb n="184" type="folio"/>
+
+<gap reason="omitted"/>
+
+<ab>Yt is agreed that Mr Paule Bucke shall have the leases of t<damage><gap unit="chars" extent="2"/></damage>
+ten<ex>emen</ex>te and plaiehouse thereto adioyninge in Newington renewed vp to
+xxj yeares w<ex>i</ex>th coven<ex>au</ex>nt<ex>es</ex> as before and w<ex>i</ex>th a clause
+that he shall convert the playehouse to some other <del>house</del> vse vppon the
+saide grownde and not suffer anie plaies there after michelmas nexte</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The date of this agreement for Buck's lease of the Lurklane property
+comes soon after Henslowe's use of the Newington Butts playhouse for the
+newly formed Lord Chamberlain's and Lord Admiral's Men in June 1594. Both
+Ingram, <title>Business of Playing</title>, p 176, n 48, and Wickham
+<hi rend="italic">et al</hi>, <title>English Professional Theatre</title>, p 329, use the
+older ink folio number 153 for this entry.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid8">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1594">1594</date> <seg ana="taxon:NBHEDY">NBHEDY</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid8-transcription">
+<div><head>f 9 <supplied>(3–13 June)</supplied></head>
+<pb n="9" type="folio"/>
+
+<gap reason="omitted"/>
+
+<ab rend="center">In the name of god Amen begininge at newing <lb/>ton my Lord Admerall<ex>es</ex>
+men &amp; my Lorde chamberlen<ex>es</ex> <lb/>  men As ffolowethe 1594</ab>
+
+<table><row><cell>¶ 3 of Iune 1594</cell><cell>R<ex>eceued</ex> at heaster &amp;
+asheweros</cell><cell rend="right">viij s</cell></row>
+<row><cell>¶ 4 of Iune 1594</cell><cell>R<ex>eceued</ex> at the Iewe of malta</cell><cell rend="right">x
+s.</cell></row>
+<row><cell>¶ 5 of Iune 1594</cell><cell>R<ex>eceued</ex> at andronicous</cell><cell rend="right">xij
+s.</cell></row>
+<row><cell>¶ 6 of Iune 1594</cell><cell>R<ex>eceued</ex> at cutlacke</cell><cell rend="right">xj
+s.</cell></row>
+<row><cell>¶ 8 of Iune 1594 ne<note type="foot">ne: <hi rend="italic">evidently written after first
+writing</hi></note></cell><cell>R<ex>eceued</ex> at bellendon X<note type="foot">X: <hi rend="italic">written over line
+filler, evidently after first writing</hi></note> </cell><cell rend="right">xvij s</cell></row>
+<row><cell> 9 of Iune 1594</cell><cell>R<ex>eceued</ex> at hamlet</cell><cell rend="right">viij s.</cell></row>
+<row><cell>¶ 10 of Iune 1594</cell><cell>R<ex>eceued</ex> at heaster </cell><cell rend="right"> v
+s.</cell></row>
+<row><cell>¶ 11 of Iune 1594</cell><cell>R<ex>eceued</ex> at the tamynge of A
+shrowe</cell><cell rend="right">ix s.</cell></row>
+<row><cell>¶ 12 of Iune 1594</cell><cell>R<ex>eceued</ex> at andronicous</cell><cell rend="right">vij
+s.</cell></row>
+<row><cell>13 of Iune 1594</cell><cell>R<ex>eceued</ex> at the Iewe</cell><cell rend="right">iiij
+s.</cell></row></table>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+For further details on the plays listed, see Appendix 2<!-- IN please
+link to App 2 -->. Henslowe drew a line following the entry on 13 June
+before continuing with his receipts from performances following, from 15
+June onward. <title>The Taming of a Shrew</title> and <title>Titus
+Andronicus</title> do not appear again in the repertory recorded in the
+<hi rend="italic">Diary</hi> and scholars have generally agreed that the Admiral's and
+Chamberlain's Men did not continue together at the Newington playhouse
+after their brief run there ending 13 June 1594.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid20">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1594">1593/4</date> <seg ana="taxon:RSPC03">RSPC03</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid20-transcription">
+<div><head>f 5v <supplied>(3 February) (Hampton Court)</supplied></head>
+<pb n="5v" type="folio"/>
+
+<ab>After<note type="foot">After: A <hi rend="italic">in display script</hi></note><note type="marginal" place="margin_left">For restraint of
+playes.</note> o<ex>u</ex>r very hartie co<ex>m</ex>mendations to yo<ex>u</ex>r L<ex>ordship</ex>
+Whearas certein infourmation is given that very great multitudes of all
+sorts of people do daylie frequent &amp; resort to co<ex>m</ex>mon playes lately
+again set vp in &amp; about London. whearby it is vpon good cause feared that
+the dangerous infection of the plague, by Gods great mercy and goodnes
+well slaked, may again very dangerously encrease and break foorth to the
+great losse and preiudice of hir Ma<ex>ies</ex>t<ex>es</ex> Subiects in g<ex>ene</ex>rall
+&amp; especially to those of that Citie of whose safetie &amp; well doing hir
+Highnes hath alwayes had an especiall regard as by the last ‸<add place="above">years</add>
+experience by lyke occasions &amp; resort to playes it soddainly encreased
+from a very little number to that greatnes of mortallitie w<ex>hi</ex>ch
+ensued. Wee thearfore thought it very expedient to require yo<ex>u</ex>r
+L<ex>ordship</ex> foorthw<ex>i</ex>th to take strait order that thear bee no more
+publique playes or enterludes exercised by any Companie whatsoever
+w<ex>i</ex>thin the compas of five miles distance from London till vpon better
+lykelyhood and assurance of health farther direction may bee given from vs
+to the contrary. So wee bid yo<ex>u</ex>r L<ex>ordship</ex> very hartily farewell.
+ffrom the Court at Hampton.<note type="foot">Hampton: <hi rend="italic">in a more formal script</hi></note>
+the 3. of February. 1593.</ab>
+
+<ab><hi rend="right">Yo<ex>u</ex>r L<ex>ordships</ex> very loving friend.</hi></ab>
+
+<table><row><cell>Io<ex>hn</ex> Cant<ex>uar</ex><note type="foot">Io<ex>hn</ex> Cant<ex>uar</ex>: <hi rend="italic">John Whitgift
+(1530/31?–1604), archbishop of Canterbury, 1583–1604</hi></note></cell><cell>Io<ex>hn</ex>
+Puckering.<note type="foot">Io<ex>hn</ex> Puckering: <hi rend="italic">Sir John Puckering (1543/4–96), lord
+keeper of the Great Seal, 1592–6</hi></note></cell><cell>C<ex>harles</ex>
+Howard<note type="foot">C<ex>harles</ex> Howard: <hi rend="italic">Charles Howard (1536–1624), second Baron
+Howard of Effingham and tenth earl of Nottingham, lord admiral,
+1585–1619</hi></note></cell></row>
+<row><cell>Th<ex>omas</ex> Buckhurst.<note type="foot">Th<ex>omas</ex> Buckhurst: <hi rend="italic">Thomas Sackville
+(<hi rend="italic">c</hi> 1536–1608), first Baron Buckhurst</hi></note></cell><cell>R<ex>obert</ex>
+Cecyll.<note type="foot"> R<ex>obert</ex> Cecyll: <hi rend="italic">Sir Robert Cecil
+(1563–1612)</hi></note></cell><cell>I<ex>ohn</ex> Fortescue<note type="foot">I<ex>ohn</ex> Fortescue: <hi rend="italic">Sir
+John Fortescue (1533–1607), chancellor of the Exchequer,
+1589–1603</hi></note><note type="foot">Io<ex>hn</ex> Cant<ex>uar</ex> … Fortesue: <hi rend="italic">names of
+signatories in a more formal script</hi></note></cell></row></table>
+
+<ab><hi rend="right">To o<ex>u</ex>r very good L<ex>ord</ex> Mr Alderman Buckle</hi></ab>
+
+<ab><hi rend="right">L<ex>ord</ex> Maior of the Citie of London.</hi></ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+The privy council here revives the restraint of plays for fear of
+plague. Henslowe's diary shows that performances at the Rose had resumed,
+with Sussex's Men in residence by 27 December 1593, but there was a break
+between 6 February, shortly after this order, until the Queen's Men in
+company with Sussex's Men began another run on 1 April (DC: MS VII, ff
+8v–9). See the <title>Henslowe-Alleyn Digitisation Project</title><!-- #IN
+link to
+https://henslowe-alleyn.org.uk/catalogue/mss-7/008-verso/ -->.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid17">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1599">1599</date> <seg ana="taxon:NBSKCS">NBSKCS</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid17-transcription">
+<div><head>f 294a v <supplied>(5 October)</supplied></head>
+<pb n="294a" type="folio"/>
+
+<gap reason="omitted"/>
+
+<ab>Item <note type="marginal" place="margin_left">Cuckowe <lb/>fface <lb/>Salter <lb/>miller <lb/>Iefferson <lb/>Harvy</note><note type="marginal" place="margin_left"/> we fynd
+that the sewar leadinge from the houses where the old playe house did
+stand att Newington all alongest vnto the Bridge goyng from Barmondsey
+cross the high waye vnto sainct Thomas Watering<ex>es</ex> is needefull to be
+cast clensed and scowred, and we fynd that Richard Cuckow Robert fface,
+Richard Salter Iohn miller, Iohn Iefferson and Thomas Harvy oughte to cast
+clense and scower the same We p<ex>re</ex>sent the same to be done before
+Candlemas next vpon payne of every pole then vndone<table><row><cell/><cell rend="right">ij s.
+vj d.</cell></row>
+<row><cell/><cell rend="right">done</cell></row></table></ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+<!-- EMLoT E402 -->
+This final notice of the 'old playe house' in the Sewer Commission records
+indicates that the building had been demolished before 1599 and possibly
+around the time that Buck assumed the lease. 'St. Thomas à Waterings was
+situated close to the second milestone on the Old Kent Road, and was so
+called from a brook or spring, dedicated to St. Thomas à Becket.' See
+Edward Walford, 'The Old Kent Road,' in <title>Old and New London: Volume
+6</title> (London, 1878), 248–255, <title>British History Online</title>
+http://www.british-history.ac.uk/old-new-london/vol6/pp248-255,
+[accessed 27 July 2024].
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid2">
+<body>
+<head><rs>Surrey</rs>, <rs>Newington</rs> <date when-iso="1631">1631</date> <seg ana="taxon:BHHCSA">BHHCSA</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid2-transcription">
+<div><head>sig liii verso, col 1 <supplied>(The Globe and Fortune playhouses burned with
+other things of note)</supplied></head>
+<pb n="liii" type="signature"/>
+
+<gap reason="omitted"/>
+
+<ab type="indent">And about foure yeeres after<note type="foot">about foure … after: <hi rend="italic">ie, after the
+burning of the Globe</hi></note>, a fayre strong new built Play-house, neere
+Gouldinglane, called the Fortune, by negligence of a candle, was cleane
+burnt to the ground, but shortly after, rebuilt farre fairer. In the yeare
+one thousand sixe hundred twenty nine, there was builded a new faire Play-
+house, neere the white Fryers.<note type="foot">new faire Play-house … Fryers.:
+<hi rend="italic">Salisbury Court playhouse</hi></note> And this is the seauenteenth Stage,
+or common Play-house, which hath beene new made within the space of
+threescore yeeres within London and the Suburbs, viz.</ab>
+
+<ab type="indent">Fiue Innes, or common Osteryes turned to Play-houses, one Cock-pit, S.
+Paules singing Schoole, one in the Black-fryers, and one in the White-
+fryers, which was built last of all, in the yeare one thousand sixe
+hundred twentynine, all the rest not named, were erected only for common
+Play-houses, besides the new built Beare garden, which was built as well
+for playes, and Fencers prizes, as Bull Bayting<note type="foot">new built Beare garden
+… Bayting; <hi rend="italic">ie, the Hope playhouse, built in 1613</hi></note> besides, one
+in former time at Newington Buts; Before the space of threescore yeares
+aboue-sayd I neither knew heard nor read of any such Theatres, set Stages,
+or Play-houses, as haue beene purposely built within mans memory.</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The pagination is confused: after page 1014, a second page numbered
+1003 is followed by 104, that is, for 1004. The signatures are therefore
+more reliable. Stow's account of the burning of the Globe in 1613
+immediately precedes this section.
+</p>
+
+<p>
+The Globe burnt down on 1 August 1613, so the burning of the Fortune is
+placed here around or after 1617 ('four years after'); it was, in fact,
+December 1621. By 1631 the early playhouse at Newington Butts was a
+distant memory.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid7">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1577">1577</date> <seg ana="taxon:NBCRSH">NBCRSH</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid7-transcription">
+<div><head>mb 3 <supplied>(Bill of complaint)</supplied></head>
+<pb n="3" type="membrane"/>
+
+<ab rend="center">To<note type="foot">To: <hi rend="italic">display initial</hi> T</note> the Quenes most
+excellent<lb/>ma<ex>ies</ex>tie</ab>
+
+<ab>In<note type="foot">In: <hi rend="italic">display initial</hi> I</note> most humble wise shew<ex>e</ex>th vnto
+yo<ex>u</ex>r most excellent ma<ex>ies</ex>tie yo<ex>u</ex>r ma<ex>ies</ex>ties humble and
+obedient Subiect Ierom Savage that where one Richarde<note type="foot">Richarde:
+<hi rend="italic">written over erasure</hi></note> Tomson had by good conveyance for terme of
+xix<hi rend="superscript">te</hi> yeres in and to one messuage w<ex>i</ex>th the
+app<ex>ur</ex>tenan<ex>au</ex>nc<ex>es</ex> in Newington in the countie of Surrey wherin
+yo<ex>u</ex>r said Subiect now inhabiteth and he the said Thom<ex>a</ex>s beinge
+therof soo possessed co<ex>n</ex>veyed hys interest aforesaid therein to
+yo<ex>u</ex>r said Subiect by force whereof yo<ex>u</ex>r said Subiect entered and
+was possessed accordingly &amp; yo<ex>u</ex>r said Subiect havinge the
+p<ex>re</ex>miss<ex>es</ex> by such title was desirous to p<ex>ro</ex>cure further yeres
+as also to have estaite in hys owne right from him that claymed the
+inheritance of the p<ex>re</ex>misses That ys to say of one Richard Hick<ex>es</ex>
+and therevpon yo<ex>u</ex>r said Subiect moved the said Richard Hick<ex>es</ex> who
+then affirmed to have the verie fee simple of the p<ex>re</ex>misses &amp; that he
+had full poer to graunte the same to yo<ex>u</ex>r said Orator for such yeres
+as they concluded to have the same for terme of 30 yeres &amp; therevpon for
+the some of x li.<note type="foot">x li.: <hi rend="italic">written over erasure</hi></note> paid by
+yo<ex>u</ex>r said Orator the said Richard Hik<ex>es</ex> at or about
+thannunciac<ex>i</ex>on of our Ladie in the xviij<hi rend="superscript">th</hi> yere<note type="foot"> xviij<hi rend="superscript">th</hi>
+yere: <hi rend="italic">1576</hi></note> of yo<ex>u</ex>r ma<ex>ies</ex>t<ex>ies</ex> reigne dyd by hys
+sufficient deed lett the said messuage and one orchard and garden w<ex>i</ex>th
+thapp<ex>ur</ex>ten<ex>au</ex>nc<ex>es</ex> for terme of 30 yeres then next followinge
+reseruinge yerely during the said terme ffoure mark<ex>es</ex> of good and
+lawfull money of England payable quarterlie at ffoure termes in the yere
+y<ex>a</ex>t ys to say at the feast<ex>es</ex> of the Natiuitie of St Iohn Baptist &amp;
+St Mychell tharca<ex>u</ex>ngell &amp; the natiuitie of o<ex>u</ex>r Lord God and
+thannunciac<ex>i</ex>on of our Lady by even porc<ex>i</ex>ons And in the said lease
+ther was one condic<ex>i</ex>on or p<ex>ro</ex>uiso by y<ex>a</ex>t w<ex>hi</ex>ch yt was
+p<ex>ro</ex>vided that yf the said Rent or any part therof were behind in
+p<ex>ar</ex>te or in all at any feast or day aforesaid wherin the said Rent
+ought to be paid &amp; by xiiij<hi rend="superscript">th</hi> daies after being lawfullie
+d‸<add place="above">e</add>maunded y<ex>a</ex>t then yt should be lawfull to &amp; for the said
+Richard hys heires &amp; assign<ex>es</ex> to enter and yt to have &amp;
+repossed<note type="foot">repossed: <hi rend="italic">for</hi> repossessed<hi rend="italic">; abbreviation mark
+missing</hi></note> as in hys first &amp; former estate And by force of such Lease
+yo<ex>u</ex>r said subiect entred &amp; was possessed of now so yt ys &amp; yt may
+please yo<ex>u</ex>r most excellent ma<ex>ies</ex>tie y<ex>a</ex>t the said Richard
+Hik<ex>es</ex> sekinge to defeat yo<ex>u</ex>r said Subiect of the p<ex>re</ex>misses
+co<ex>n</ex>trarie to hys owne graunte &amp; to p<ex>re</ex>fer one Peter Hunnyngborne
+hys sonne in law to the same first p<ex>re</ex>tend that the said Peter had &amp;
+hath of the said Richard a former graunte before the said seconde lease &amp;
+publish the said lease wher ether ther ys no such lease or yf ther were
+any the same was antedated or made onely upo<ex>n</ex> trust betwen the said
+p<ex>ar</ex>ties &amp; not to thuse of the said Peter but by fraude &amp; coven to
+deceive such to whome the said Richard should lett the p<ex>re</ex>miss<ex>es</ex>
+and the said Richard &amp; Peter fearinge &amp; suspectinge that such form<ex>er</ex>
+lease as they published yf any ther be will not be sufficient to defeat
+such the estate of yo<ex>u</ex>r highnes subiect so made bona fide for good
+considerac<ex>i</ex>ons the said Richard by secret practise withe the said
+Peter as the said Peter <damage><gap unit="chars" extent="2"/></damage>firmeth<note type="foot"><damage><gap unit="chars" extent="2"/></damage>firmeth: <hi rend="italic">small hole in
+MS</hi></note> hath made secret estate to the said Peter of the
+reu<ex>er</ex>c<ex>i</ex>on of the p<ex>re</ex>miss<ex>es</ex> to thend y<ex>a</ex>t he the said
+Peter by some arte &amp; practice might the so<ex>o</ex>ner cu<ex>me</ex> to hys
+determined p<ex>ur</ex>posse to p<ex>ro</ex>cure the possession of the
+p<ex>re</ex>miss<ex>es</ex> to him self &amp; to defeat by craft yo<ex>u</ex>r said
+Subiect<ex>es</ex> lease by reason that yo<ex>u</ex>r said subiect knew not of any
+such assurance as the said Peter now p<ex>re</ex>tendeth And so yt ys &amp; yt may
+please yo<ex>u</ex>r highnes y<ex>a</ex>t after the feast of thannunciac<ex>i</ex>on of
+o<ex>u</ex>r Lady last past &amp; before the xiiij day after yo<ex>u</ex>r said subiect
+left ye said Rent due at the said feast w<ex>hi</ex>ch one Thom<ex>a</ex>s
+whase<note type="foot">whase: h <hi rend="italic">corrected over another letter</hi></note> whom yo<ex>ur</ex>
+ma<ex>ies</ex>tie havinge occasion to go about hys affaires left in the said
+house co<ex>m</ex>maundinge him to pay ye said Rent to ye said Richard
+Hik<ex>es</ex> before or at the said xiiij<hi rend="superscript">th</hi> day w<ex>hi</ex>ch the said
+Richard &amp; Peter vnderstandinge cam not to demaund the same Rent so that
+xiij<hi rend="superscript">th</hi> daies passinge &amp; the said Thom<ex>a</ex>s whase<note type="foot">whase:
+<hi rend="italic">corrected over erasure</hi></note> suspecting no fraude vpon the
+xiiij<hi rend="superscript">th</hi> day went to london aboute hys affaires as also hopinge to
+mett ther w<ex>i</ex>th the said Richard Hik<ex>es</ex> to pay the said some not
+knowinge that the some was to be renderet on the lande nor suspectinge
+such the practice of the said Richard and Peter &amp; yo<ex>u</ex>r said Subiect
+hopeth to p<ex>ro</ex>ve that by secret meanes vsed by the said Peter y<ex>a</ex>t
+the said Thom<ex>a</ex>s was p<ex>ro</ex>cured to go to the said cytty y<ex>a</ex>t day
+he the said Thom<ex>a</ex>s nothinge suspectinge such practice And true yt ys &amp;
+yt may please yo<ex>u</ex>r highnes y<ex>a</ex>t after y<ex>a</ex>t the said Thom<ex>a</ex>s
+was dep<ex>ar</ex>ted to london the aforesaid honyngborne havinge knowledg
+therof came to the aforesaid messuage &amp; ther demaunded the said Rent
+su<ex>m</ex>tymes as yt ys said in hys owne &amp; su<ex>m</ex>tymes in the name of ye
+said Richard &amp; for default of paym<ex>en</ex>t as he the said Peter reporteth
+made hys entrie into the said messuage and after ye said Thom<ex>a</ex>s
+cumminge to the said messuage w<ex>i</ex>thin half an houre after &amp; hearinge of
+the same demaunde retorned to the house of the said Peter in London
+imed‸<add place="above">i</add>ate the same day &amp; ther offered to pay the same Rent &amp;
+declared y<ex>a</ex>t he had ye same longe before redy to haue paid yt by the
+deliu<ex>er</ex>ye &amp; commaundem<ex>en</ex>t of yo<ex>u</ex>r ma<ex>ies</ex>t<ex>ies</ex> said
+Subiect but at the first the ‸<add place="above">said</add> Peter refused to receive the same
+&amp; after ye same day yo<ex>u</ex>r highnes said Subiect likewise after came to
+the house of the said Peter &amp; made tender of the saide Rent w<ex>hi</ex>ch the
+said Peter awhyle refused Neu<ex>er</ex>thelesse the same Peter afterwardes the
+same day ‸<add place="above">by his wif</add> receyved the same Rent &amp; she deliuered
+‸<add place="above">it</add> to the said Peter who yet hath the same &amp; <del>held</del> the
+p<ex>re</ex>miss<ex>es</ex> notw<ex>i</ex>thstandinge the said Peter &amp; Richard by such
+co<ex>n</ex>tynuall practice seeke still to frustrate and make void the
+interest of yo<ex>u</ex>r said Subiect by such ther indirect &amp; extreame
+dealinge Notw<ex>i</ex>thstandinge the receipte of the said rente and for that
+in extremitie of law some p<ex>er</ex>ill<note type="foot">p<ex>er</ex>ill: <hi rend="italic">corrected over
+erasure in fresh ink</hi></note> in the p<ex>re</ex>miss<ex>es</ex> may insue to yo<ex>u</ex>r
+said Subiect onelesse the truthe in the p<ex>re</ex>miss<ex>es</ex> may appere by
+the corporall othe of the said said<note type="foot">said said: <hi rend="italic">dittography</hi></note>
+Richard &amp; Peter May yt ‸<add place="above">therefore</add> pleasse yo<ex>u</ex>r most excellent
+ma<ex>ies</ex>tie to graunt yo<ex>u</ex>r ma<ex>ies</ex>t<ex>ies</ex> wryt of Prevy seale to
+be directed to the said <del>Pete</del> Richard and Peter commaundinge them &amp;
+either of them therby at a c<ex>er</ex>taine day and vnder a c<ex>er</ex>taine paine
+ther in to be limytted p<ex>er</ex>sonally to appere before yo<ex>u</ex>r
+ma<ex>ies</ex>t<ex>ies</ex> honorable court of Request<ex>es</ex> then &amp; ther to aunswere
+the p<ex>re</ex>miss<ex>es</ex> And yo<ex>u</ex>r ma<ex>ies</ex>t<ex>ies</ex> said Subiect shall
+dayly pray to god for the longe &amp; prosperus contynuance of yo<ex>u</ex>r
+ma<ex>ies</ex>t<ex>ies</ex> reigne etc</ab>
+
+<ab><seg type="signed" rend="right">E fenner</seg></ab>
+</div>
+<div><head>mb 2 <supplied>(10 May)</supplied> <supplied>(Answer of Peter Hunningborne)</supplied></head>
+<pb n="2" type="membrane"/>
+
+<ab rend="center">The<note type="foot">The: <hi rend="italic">in display script</hi></note><note type="marginal" place="margin_left">x<hi rend="superscript">o</hi> Die Maij A<ex>nn</ex>o
+R<ex>egi</ex>ne</note> answere of Peter Honingborne Def<ex>endan</ex>t to<lb/> the<note type="marginal" place="margin_left">
+Elizabeth xix<hi rend="superscript">o</hi></note> Bill of Complaint of Ierom Savage
+Compl<ex>ainan</ex>t</ab>
+
+<ab>The<note type="foot">The: <hi rend="italic">display initial</hi> T</note> saide Defendant saithe That the
+saide Bill against him exhibited for the most parte of the matters therein
+conteyned is vncerteine vntrewe and insufficient in the lawe As he
+thinketh to be answered vnto not concerninge anie matter of Substaunce or
+effecte Worthie to tro<ex>u</ex>ble this Hono<ex>u</ex>rable Court w<ex>i</ex>thall and
+is sett fourthe and devised as he beleaveth by the Compl<ex>ainan</ex>t rather
+of malice and envey to greave Charge and vexe this Defend<ex>an</ex>t then for
+anie good grounde or Cause of svte Nevertheles if this Def<ex>endan</ex>t by
+order of this Courte shalbe compelled to make anie further answere vnto
+the ‸<add place="above">said</add> vncerteine and insufficient Bill of Compl<ex>ain</ex>t Then the
+advantage and exception to the incertentie and insvfficiencye of the saide
+Bill vnto this Def<ex>endan</ex>t at all tymes hereafter saved for answere and
+declarac<ex>i</ex>on of the treuth of suche thing<ex>es</ex> Conteyned in the saide
+Bill as Concerneth this def<ex>endan</ex>t Materiall to be answered vnto he
+saieth that as towchinge the messwage w<ex>i</ex>th the appurten<ex>au</ex>nces in
+the Countie of Sussex<note type="foot">Sussex: <hi rend="italic">likely for</hi> Surrey</note> wherein the
+saide Compl<ex>ainan</ex>t saieth that he nowe dwelleth w<ex>hi</ex>ch as he saieth
+he had of one Thomas Thomson in whome he supposethe a former possession of
+the said premisses, this Defend<ex>an</ex>t knowethe noe suche thinge, But in
+trewthe this Defend<ex>an</ex>t saiethe That one Richarde Thomson as this
+Defend<ex>an</ex>t thinketh had and held one messwage or Tenement nere
+Newington Butt<ex>es</ex> in the Countie of Surr<ex>ey</ex> as Ten<ex>au</ex>nte to
+Richarde Hick<ex>es</ex> in the saide Bill of Complaynt named but how or by
+what title this defend<ex>an</ex>t knoweth not And this Defendant further
+saiethe that after the Departure of the saide Richarde Thomson beinge a
+silkewever as this Defend<ex>an</ex>t thinkethe The saied Compl<ex>ainan</ex>t
+occupied the same messwage or ten<ex>emen</ex>te and he so havinge the
+occupac<ex>i</ex>on of the saide house sought by all meanes that he coulde to
+obteyne of the saide Richarde Hick<ex>es</ex> to whome the premisses was by the
+Cheif Landlorde of the premisses graunted for manie yeres yet to come a
+lease for Thirtie yeares of the saide Messwage or tenement<ex>e</ex> And the
+same Complainant thinckinge and entendinge as it semeth and as the said
+Complainant hym seulf saide to entrapp the saide Richarde Hick<ex>es</ex> being
+a symple and plaine dealinge man whom the saide complainant aswell therein
+as otherwaies hathe abused, did Cause to be inserted in the Indenture
+‸<add place="above">of lease</add> a Coven<ex>au</ex>nt Whereby the saide Richarde did stand
+bounde that he had full power right and Aucthoritie to Demise and graunt
+the saide Messwage or ten<ex>emen</ex>te and other the premisses in the saide
+lease graunted, in suche sorte as in the same deed is expressed. And the
+saide Compl<ex>ainan</ex>t givinge but Tenne Pound<ex>es</ex> for suche his lease
+procured the saide Richard Hick<ex>es</ex> to seale a bond of a Hundered
+Pound<ex>es</ex> to performe coven<ex>au</ex>nt<ex>es</ex> meaninge thereby to make him
+forfeit his bond ymediatlie after the sealing thereof. Whiche saide
+Indenture of Lease graunted by the said Richard Hick<ex>es</ex> to the saide
+Compl<ex>ainan</ex>t was vppon Divers Condic<ex>i</ex>ons. That is to saie That if
+the yerelie rent of ffiftie Three shilling<ex>es</ex> and ffower Pence
+therefore reserved should be behind vnpaid in parte or in all, by the
+space of xiiij<hi rend="superscript">tene</hi> Daies over or after anie feast or terme of
+paymente in the said Indenture of lease lymited and beinge lawfullie
+asked. Or if the saide Compl<ex>ainan</ex>t his executors administrators or
+assignes should breake or make defaulte in performance of anie
+Covena<ex>u</ex>nte graunt Article or agrement in the saide Indenture mencioned
+W<ex>hi</ex>ch on his and their part<ex>es</ex> or <del>of</del> on the behalf of anie of
+them were or oughte to be performed by the trew intent<ex>es</ex> and
+meanig<ex>es</ex><note type="foot">meanig<ex>es</ex>: <hi rend="italic">for</hi> meaninges <hi rend="italic">abbreviation mark
+missing</hi></note> of the saide Indenture That then and from thensfourth the
+saide demise and lease should cease be fullie determined and of none
+effecte and that then and at all tymes after it should be lawfull to and
+for the saide Richarde Hick<ex>es</ex> his executors and assignes into the
+saide tenement and other the premisses w<ex>i</ex>th Thappurtena<ex>u</ex>nc<ex>es</ex>
+wholie to reenter and the same as ‸<add place="above">in</add> his or there former estate to
+have againe retaine and repossede, And the said Complainant his executors
+and assignes and all others occupiynge the same premisses from thense
+vtterlie to expell amove and put oute forever, anie thinge in the saide
+Indenture of lease conteyned to the Contrarie notw<ex>i</ex>thstandinge as by
+the saide Indenture of Demise more at large maie appeare after whiche
+saide Lease ‸<add place="above">to the said Compl<ex>ainant</ex> mad</add> the saide Richarde
+Hick<ex>es</ex> beinge by obligac<ex>i</ex>on vnder his hande and Seall Lawfullie
+and iustlie indebted to this Defend<ex>an</ex>t in the some of fiftie
+Pound<ex>es</ex> for the payment whereof he stoode bound to the said
+Defend<ex>an</ex>t in one obligac<ex>i</ex>on of one hundredth mark<ex>es</ex> and for
+non payment thereof beinge sved at the Comon lawe by this defendant and
+the matter reddie to come to triall by Nysi prius fell to Composic<ex>i</ex>on
+w<ex>i</ex>th this defendant and for satisfac<ex>i</ex>on thereof amongest other
+thing<ex>es</ex> the saide Richard Hick<ex>es</ex> did graunt the reverc<ex>i</ex>on of
+the said p<ex>re</ex>misses to the saide defend<ex>an</ex>t for Divers yeres yet to
+come Wherevnto the saide Compl<ex>ainan</ex>t consented and did acknowledge the
+saide Defend<ex>an</ex>t as his Landlord by vertue whereof the said
+Defend<ex>an</ex>t was possessed thereof accordinglie and afterward<ex>es</ex> this
+Defend<ex>an</ex>t cominge to the foresaid Messwage or Tenement as is
+aforesaide demised, gentlie demanded his rent on the ffowertenth daie
+after the ffeast daie of Thanunciac<ex>i</ex>on of oure Ladie Saint Marie the
+virgen in the Nynetenth yere of the Reigne of oure Soveraigne Ladie
+Elizabeth the Queenes Ma<ex>ies</ex>tie<note type="foot">Nynetenth…Ma<ex>ies</ex>tie: <hi rend="italic">ie,
+1577</hi></note> that nowe is Dewe at the saide ffeast of Thanunciac<ex>i</ex>on of
+oure Ladie and there taried for the same one hole hower in the latter
+p<ex>ar</ex>te of the daie even vntell the sonne was sett and the daie finished
+and yet Could gett noe rent or other money dewe Wherevppon this defendant
+Imediatlie reentred w<ex>hi</ex>ch he neded not to have done for that the lease
+and interest of the saide Complainant by the said demaunde was mad void
+ipso facto)<note type="foot">facto): <hi rend="italic">opening parens omitted likely before</hi>
+which</note> w<ex>i</ex>thout anie reentrey and further this defendant saieth that
+he w<ex>i</ex>th workmen accordinge to a couenant and Condic<ex>i</ex>on conteyned
+in the saide lease came to viewe the reperac<ex>i</ex>ons, and Could not be
+suffered to enter and veiw accordinge to the saide Coven<ex>au</ex>nt and
+Condic<ex>i</ex>on but those that kepte the house vtterlie denies him so to doe
+and shutt the dore against him By reason whereof also the Lease was voide
+and Determined. And when this defendant Cometh thether meaninge to talke
+friendlie and deale Curtiouslie w<ex>i</ex>th the saide Complainant, althoughe
+his <damage><gap unit="chars" extent="2"/></damage>sert<ex>es</ex> be otherwise. The same Complanant giveth vnto the
+Defendant Threteninge word<ex>es</ex> and fecheth his sword to thende as this
+defend<ex>an</ex>t is induced to beleave, to stricke this defendant. And the
+saide Compl<ex>ainan</ex>t braggeth and bosteth that he hathe suche
+freind<ex>es</ex> as shall Compell this Defend<ex>an</ex>t to deale in suche sort as
+pleasethe him And in trewthe the compl<ex>ainan</ex>t himsealf is a verrie
+lewed feallowe and liveth by noe other trade then playinge of staige
+plaies and Interlevd<ex>es</ex> to the knoledge of this defend<ex>an</ex>t and for
+his lewde and lose lief hath Comaundement from the ordenarye as is
+Crediblie reported to avoide out of that parishe w<ex>hi</ex>ch his lewed
+behavior would sone make an honest man werie of so weked <damage><gap unit="chars" extent="3"/></damage><note type="foot"><damage><gap unit="chars" extent="3"/></damage>:
+<hi rend="italic">38mm of text faded</hi></note> tenant And so muche the more because <del>the
+mor because</del> the honest neighboures in that place doe so mislike his
+behavior as they will not suffer hime to Dwell there anie longer althoughe
+as it is void And althoughe the defendant for his parte would be contented
+to allowe the same. W<ex>hi</ex>ch he cannot Convenientlie doe because in
+trewthe this defendant is in greate need of a house and therefore meanethe
+to dwell there him sealf whereof by the <damage><gap unit="chars" extent="3"/></damage><note type="foot"><damage><gap unit="chars" extent="3"/></damage>: <hi rend="italic">50mm of faded
+text followed by 75mm of line filler</hi></note> And bycause he cold not hold
+the same by him sealf he did sett a Bill on the dore to sell or doe awaie
+the same And this defend<ex>an</ex>t further saiethe that he did not practise
+anie measur to defeat the Compl<ex>ainan</ex>t of his Interest otherwise then
+by the demand of his saide Rent as Lawfullie it was for him to doe
+w<ex>i</ex>thout that. that by anie secreat meanes vsed by the saide
+defend<ex>an</ex>t that the said Thomas whast in the said Bill of Complaint
+named was procured to goe to the Cittie of London that daie Whereon the
+saide demaund was made as in the said Bill is most falselie and vntrulie
+surmised. ffor in verry trewth this defend<ex>an</ex>t tarried a great while
+for his rent Could get none or hard of anie suche fellowe. And w<ex>i</ex>thout
+that that the saide rent was that daie paied to this defend<ex>an</ex>t as in
+the said Bill is also vntrulie aledged. And w<ex>i</ex>thout that that anie
+other matter or thinge Comprehended in the said Bill Materiall to be
+answered vnto And <add place="above">in</add> this answere not sufficientlie answered or
+confessed and avoided Denied or traversed as this defend<ex>an</ex>t belaeaveth
+is trew in mann<ex>er</ex> and forme as in the said Bill is Contteyned All
+w<ex>hi</ex>ch matters this defend<ex>an</ex>t is reddie to Averr and prove as this
+honorable Court shall awarde And praieth to be dismissed w<ex>i</ex>th his
+resonable cost<ex>es</ex> in this behalf wrongfullie sussteyned</ab>
+
+<ab><seg type="signed" rend="right">S ffuller</seg></ab>
+</div>
+<div><head>mb 1 <supplied>(17 May)</supplied> <supplied>(Answer of Richard Hickes)</supplied></head>
+<pb n="1" type="membrane"/>
+
+<ab rend="center">The<note type="marginal" place="margin_left">xvij<hi rend="superscript">o</hi> die maij A<ex>nn</ex>o R<ex>egi</ex>ne<lb/> Elizabeth xix<hi rend="superscript">o</hi></note>
+answere of Richard Hick<ex>es</ex> defend<ex>an</ex>t to the Bill of Complaint<lb/> of
+Ierome Savage Complanante</ab>
+
+<ab>The saide Defendant saiethe that the said Bill of Complainte against him
+exhibited for the moste p<ex>ar</ex>te of the matters therein Conteyned as
+concerne this defendant is vncerteyne vntrewe and insufficiente in the
+Lawe as he thincketh to be answered vnto not Conteyninge<note type="foot">Conteyninge:
+<hi rend="italic">4 minims for</hi> nin</note> any matter of substaunce or effecte Worthie to
+troble this honnorable Courte w<ex>i</ex>th all and is set fourth and devised
+by the complanant as he beleaveth rather of Crafte envye and mallice to
+entrape tharge<note type="foot">tharge: <hi rend="italic">for</hi> the charge <hi rend="italic">(?)</hi></note> and vexe
+this Defend<ex>an</ex>t then for anie good ground or Cause of sute
+Neverthelesse if this defendant by the order of this Honnorable Courte
+shalbe Compelled to make anie further answere vnto the said vncerteine and
+insufficient Bill of Complainte Then the Advantage and excepc<ex>i</ex>on to
+the incertenty and insufficyencye of the saide Bill vnto this Defendant at
+all tymes hereafter saved for answere and declarac<ex>i</ex>on of the truthe of
+suche thing<ex>es</ex> Conteyned in the said Bill as concerneth this
+Defend<ex>an</ex>t materiall to be answered vnto he saiethe That as towchinge
+the messwage w<ex>i</ex>th Thappurten<ex>au</ex>nc<ex>es</ex> in Newington in the Countie
+of Sussex<note type="foot">Sussex: <hi rend="italic">for</hi> Surrey</note> wherein the saied
+Compl<ex>ainant</ex> saieth that he nowe dwelleth w<ex>hi</ex>ch as he saieth he had
+of one Thomas Thomson whome he supposeth a farmer in the possession of the
+saide premisses This Defendant knoweth noe suche thinge But in truthe this
+defendant saiethe That one Richard Thomson as this Defendaunt remembreth
+had and held one messwage or Tenement nere Newington Butt<ex>es</ex> in the
+Countie of Surr<ex>ey</ex> as ten<ex>au</ex>nt to this defendant And this defendant
+further saiethe that after the departure of the saied Richard Thomson
+beinge a silkewever as this defendante remembreth The said Complanant
+occupied the saide messwage or Ten<ex>emen</ex>te and he so havinge the
+occupac<ex>i</ex>on of the saide house sought by all meanes that he could to
+obteyne of him this defendant to whom the premisses was by the Cheif
+Landlord of the premisses graunted for manie ye<ex>a</ex>res yet to come a
+lease for Thirtie yeres of the saide messwage or Tenemente And the same
+Compl<ex>ainant</ex> thinkinge and entendinge as it seameth as he hym sealf
+hath saied to entrape the said Defendant beinge a simple and plaine
+delinge man whom the Compl<ex>ainant</ex> as well therein as in other
+thing<ex>es</ex> hathe greatlie abused did cause to be inse‸<add place="above">r</add>ted in the
+said Indenture of Lease a Coven<ex>au</ex>nte whereby this defend<ex>an</ex>t did
+stand bounde that he had full power right and aucthoritie to Demise and
+graunt the said messwage, or tenement and other the premisses in the saide
+Indenture of Lease graunted in suche sort as in the saide Deed is
+expressed. And the same Complaynaunt givinge but Tenn Pound<ex>es</ex> for such
+his lease procured the saide Defendaunt beinge simple and givinge over
+muche Credite to the feyer word<ex>es</ex> of the saide Complanant to seall a
+Bonde of a Hundered Pound<ex>es</ex> to p<ex>er</ex>forme the coven<ex>au</ex>nt<ex>es</ex>
+And in trewth as it semeth the same Complanant ment to make this Defendant
+forfecte his bond ymedyatlie after the sealinge thereof Which saide
+Indenture of lease graunted by this defendante to the saide
+Compl<ex>ainant</ex> was vppon divers Condic<ex>i</ex>ons that is to saie That if
+the yerelie rente of ffiftie Three shilling<ex>es</ex> and ffower Pence thereby
+for the premises reserved should be behinde vnpaied in part or in all by
+the space of ffourteane Daies over or after anie feast or terme of
+paymente in the saide Indenture of lease lymited and beinge Lawfullie
+asked. Or if the saide Compl<ex>ainant</ex> his executo<ex>ur</ex>s
+administrato<ex>ur</ex>s or assignes should breake or make defaulte in
+p<ex>e</ex>rformaunce of anie Coven<ex>au</ex>nte article or Agremente in the saide
+Indenture mencioned w<ex>hi</ex>ch on his and their part<ex>es</ex> or on the behouf
+of anie of them were or ought to be p<ex>er</ex>formed by the trewe entent and
+meaninge of the saide Indenture. That then and from thensfourth the saide
+demise and lease should cease be fullie determined and of none effecte And
+that then and at all tymes after it should be lawfull to and for this
+defendant his executo<ex>u</ex>rs and assignes into the saide tenement and
+other the premisses w<ex>i</ex>th Thappurten<ex>au</ex>nc<ex>es</ex> wholie to reenter
+And the same as in his or there form<ex>er</ex> estate to have againe retaine
+and reposses. And the saide Complanant his executo<ex>u</ex>rs and assignes and
+all others occupiinge the same premisses from theise vtterlie to expell
+amove and put out forever Anie thinge in the saide Indenture of Lease
+conteyned to the Contrary notw<ex>i</ex>thstandinge As by the said Indenture of
+Demise more at large maie appeare, After w<ex>hi</ex>che saide lease to the
+saide Complanant made this defendant beinge before that by obligac<ex>i</ex>on
+vnder his hande and Seale lawfullie lawfullie<note type="foot">lawfullie lawfullie:
+<hi rend="italic">dittography at the beginning of the line</hi></note> and Iustlie indebted
+to Peter Honningborne one of the defendant<ex>es</ex> in the saide Bill of
+Complainte named in the some of ffiftie Pound<ex>es</ex> for the payment
+whereof he this defendaunt stoode bound to the saide Peter Honingborne by
+the saide obligac<ex>i</ex>on in one Hundereth mark<ex>es</ex> And for none payment
+thereof beinge sved at the com<ex>m</ex>on Lawe by the saide Peter Honingborne
+and the matter redye to come to tryall by Nisi prius this Defend<ex>an</ex>t
+fell to Composic<ex>i</ex>on w<ex>i</ex>th the saide Peter Honingborne And for
+satisfac<ex>i</ex>on thereof amongest other thing<ex>es</ex> this defendant did
+graunt aswell the reverc<ex>i</ex>on of the premisses as the reverc<ex>i</ex>on of
+Two other tenement<ex>es</ex> in the parrishe of Saint Olaves in Southworke in
+the Countie of Surrey by this defendant before that demised to one Thomas
+Cranage Ioynte to the saide Peter Honingborne for Divers yeres yet to come
+wherevnto the saide Complanant Consented and did acknowledge the saide
+Peter Honingborne as his Landlord as this defendant hathe bene Credeblie
+enformed And as this defendant hath gathered by the Complanant<ex>es</ex> owne
+word<ex>es</ex> By vertue whereof the said Peter Honingborne was possessed
+thereof accordingly And afterward<ex>es</ex> as this defendant hath herd the
+saide Peter Honingborne the ffowertenth Daie after the ffeast of
+Thanuncyac<ex>i</ex>on of our Ladie Saint Marie the Virgin in the xix<hi rend="superscript">th</hi>
+yere<note type="foot"> xix<hi rend="superscript">th</hi> yere: <hi rend="italic">1577</hi></note> of the raigne of our Sovereigne
+Ladie the Queenes Ma<ex>ies</ex>tie that nowe is made his demaunde for the rent
+dewe at the feast aforesaide and for none payment thereof reentered And by
+reason of suche demaunde made the Complanant<ex>es</ex> lease voide as this
+defendant thinckethe And also this defendant hath herd it Credably
+reported that the said Peter Honingborne w<ex>i</ex>th workmen accordinge to a
+Conven<ex>au</ex>nte and proviso conteyned in the saide Lease Came to the
+premises to viewe the reparac<ex>i</ex>ons thereof w<ex>hi</ex>ch was to him denied
+and the Dore shutt against him ‸<add place="above">w<ex>hi</ex>ch</add> was another Cause whereby
+the lease should be voide And the saide Peter Honingborne hath tolde this
+defend<ex>an</ex>t that he hath ben evill vsed and threatened by this said
+Complanant who make the great Bragg<ex>es</ex> and saiethe he cane procure
+greate freind<ex>es</ex> to Counten<ex>au</ex>nce his matter And to force the saide
+Peter Honingborne to yeald to him as is said And yet in trewthe the saide
+Complainant is a Verrie lewde fellowe and his Cheifeste Man<ex>ner</ex> of
+lyvinge is by playinge of interlud<ex>es</ex> and for his lewde and loase life
+hath ben presented to the ordenarie<note type="foot">Ordenarye: <hi rend="italic">the archbishop's
+representative in the deanery of Croydon</hi></note> and is Comaunded by the
+Ordenarye as is saide to avoide the parishe w<ex>hi</ex>ch his lewde behavor
+wolde sone make an honeste man wearye of so Wicked an Idell a Lyvinge
+tennaunte And so much the more bennefite the honest neighboures in that
+place doe so mislike his behavioure as they will not suffer him to Dwell
+there w<ex>hi</ex>ch he Cannot Convenyentlie doe bycause in truth the saide
+Peter Honingborne is in great need of a house And there fore meanethe to
+Dwell there him sealf And also the Complanant f<damage><gap unit="chars" extent="2"/></damage>reth not greatlie
+thereof as it seamethe for he hathe sett a Bill on the Dore to sell his
+interest And this defendant also saiethe <damage><gap unit="chars" extent="3"/></damage><note type="foot"><damage><gap unit="chars" extent="3"/></damage>: <hi rend="italic">20mm of text
+faded; approximately 9 characters</hi></note> he did not Practise anie
+mean<ex>es</ex> to defeat the Complanant of his Interest in the p<ex>re</ex>misses
+but did graunt the reverc<ex>i</ex>on of the premisses Bona fide to the saide
+Peter Honingborne as is aforesaide And if the saide Complanant hathe given
+Cause of forfeiture of his Interest in the p<ex>re</ex>misses this defendant
+cannot doe w<ex>i</ex>thall. W<ex>i</ex>thout that. that anie other matter or thinge
+Comprehended in the saide Bill of Complainte apperteyninge to this
+defendant Materiall to be answered vnto and in this answere not
+sufficiently answered or confessed and avoided denied or traversed as this
+defend<ex>an</ex>t beleaveth is trewe in mann<ex>er</ex> and forme as in the saide
+Bill of Complainte is conteyned All w<ex>hi</ex>ch matters this Defendant is
+redie to averr and prove as this honnorable Courte shall awarde And soe
+asmuche as it evidentlie appearethe that there was or is noe iust Cause
+whie this Defend<ex>an</ex>t showld be molested or trobled he praieth therefore
+to be dismissed. this Honnorable Courte w<ex>i</ex>th his resonable Cost and
+Charg<ex>es</ex> by him wrongfullie susteyned</ab>
+
+<ab><seg type="signed" rend="right">S. ffuller</seg></ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+ Although the bill of complaint (mb 3) is not dated specifically,
+Savage's reference to the rent due by the feast of the Annunciation, 25
+March, narrows the period to sometime in April or early May, before the
+answers of Hickes and Hunningborne were recorded.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid10">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1578">1578</date> <seg ana="taxon:NBPCO7">NBPCO7</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid10-transcription">
+<div><head>p 300 <supplied>(10 November) (Richmond)</supplied></head>
+<pb n="300" type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>A l<ex>ett</ex>re to Mr doctor Fourthe Rob<ex>er</ex>t Lewseye, Edward Bellingham &amp;
+Barnard Randolphe Esquiers, to restraine c<ex>er</ex>ten players w<ex>i</ex>t<ex>h</ex>in
+the Bouroghe of Southewarke and other places nere adioyning w<ex>i</ex>t<ex>h</ex>in
+the Bouroghe of Southewarke and other places nere adioyning w<ex>i</ex>t<ex>h</ex>in
+that p<ex>ar</ex>te of Surreye, who by meanes of the alluring of the people
+‸<add place="above">to their plaies</add> doe augement the infection of ‸<add place="above">the plague in</add>
+London; and if they shall not obeye their order to see them seuerely
+punished./</ab>
+
+<gap reason="omitted"/>
+</div>
+<div><head>p 348 <supplied>(23 December) (Richmond)</supplied></head>
+<pb n="348" type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>A l<ex>ett</ex>er to the L<ex>ord</ex> Maior and the Iustices of Midd<ex>lesex</ex> and
+Surrey, Requiring<note type="foot">Requiring: <hi rend="italic">2 minims for</hi> in</note> them to suffer
+the exercise of playes w<ex>i</ex>thin the Cittie of London and
+‸<add place="above">w<ex>i</ex>thin</add> the lib<ex>er</ex>ties, and to have regarde that suche orders
+as are p<ex>re</ex>scribed for the staying<note type="foot">staying: <hi rend="italic">2 minims for</hi>
+in</note> of thinfection maie be duelie observed, so as ther growe no
+hurte<note type="foot">hurte: u <hi rend="italic">written over</hi> a</note> vnto the soundre in their
+publicque assemblies./</ab>
+</div>
+</div>
+<div type="endnote">
+<p>
+Those named in the 10 November privy council letter were the JPs for
+Surrey. Edward Bellingham (<hi rend="italic">c</hi> 1545-1605), was appointed JP in
+<hi rend="italic">c</hi> 1573, according to <title>HPO</title>
+<!-- https://www.historyofparliamentonline.org/volume/1558-1603/member/bell
+ingham-edward-1545-1605 -->, accessed 23 July 2024. Bernard Randolph, JP
+of Middlesex, was also appointed JP for Surrey in 1567 (See Appendix One
+of William Baxter Robison III, 'The Justices of the Peace of Surrey in
+National and County Politics, 14831570,' 2 vols, PhD thesis (Louisiana
+State University, 1983), 403). No further information has been found for
+'Mr doctor Fourthe' and 'Rob<ex>er</ex>t Lewseye.'
+</p>
+
+<p>
+Privy councillors listed as present at the 10 November meeting (p 381)
+were Sir Nicholas Bacon (1510-79), keeper of the Great Seal, 1558-79; Sir
+William Cecil (1520/21-98), first Baron Burghley, lord treasurer, 1572–98;
+Thomas Radcliffe (1526/7-83), tenth earl of Sussex, lord chamberlain of
+the Household, 1572-83; Henry Fitzalan (1512-80), twenty-fourth earl of
+Arundel; Sir James Croft (<hi rend="italic">c</hi> 1518-90), comptroller of the
+Household, 1570-90; Sir Christopher Hatton (<hi rend="italic">c</hi> 1540–91), vice-
+chamberlain of the Household, 1577–87; and Sir Francis Walsingham
+(<hi rend="italic">c</hi> 1532-90), principal secretary, 1573–90.</p>
+
+<p>
+Privy councillors listed as present at the 23 December meeting (p 433)
+were Edward Clinton (1512-85), sixteenth earl of Lincoln, lord admiral,
+1559-85; Ambrose Dudley (<hi rend="italic">c</hi> 1530-90), twenty-first earl of Warwick;
+Robert Dudley (1532/3-88), fourteenth earl of Leicester; Sir Francis
+Knollys (1511/12-96), treasurer of the Household, 1570–96; Sir James Croft
+(<hi rend="italic">c</hi> 1518-90), comptroller of the Household, 1570-90; and Sir
+Francis Walsingham (<hi rend="italic">c</hi> 1532-90), principal secretary, 1573-90.
+
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid11">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1580">1580</date> <seg ana="taxon:NBPL13">NBPL13</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid11-transcription">
+<div><head>p 10 <supplied>(13 May) (Westminster)</supplied></head>
+<pb n="10" type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>A l<ex>ett</ex>re to the Iustic<ex>es</ex> of peace of the Countie of Surr<ex>ie</ex>
+that whereas therr l<ex>ordships</ex> do vnderstand that notw<ex>i</ex>thstandinge
+therr late order geuen to the l<ex>ord</ex> maior to for bidd all playes
+w<ex>i</ex>thin and about the Cittie vntill Michalmas next for avoydinge of
+infection neu<ex>er</ex>theles certen players do playe sunderie daies eu<ex>er</ex>y
+weeke at newington butt<ex>es</ex> on that p<ex>ar</ex>te of Surr<ex>ie</ex> w<ex>i</ex>thout
+the Iurisdicc<ex>i</ex>on of the said L<ex>or</ex>d Maior contrary to therr
+l<ex>ordships</ex> order. therr l<ex>ordships</ex> requier the Iustic<ex>es</ex> not only
+to enquier who they be that disobey therr
+Comaundeme<ex>n</ex>t<note type="foot">Comaundeme<ex>n</ex>t: <hi rend="italic">blot over</hi> t</note> in that behalf
+and not only to forbidd them expresly for plying<note type="foot">plying: <hi rend="italic">likely
+for</hi> playing</note> in any of theis remote places nere vnto the Cittie
+vntill Michaelmas. but to haue regard that w<ex>i</ex>thin the precincte of
+Surr<ex>ie</ex> none be p<ex>er</ex>mitted to play if any do to comitt them and to
+adu<ex>er</ex>tise/ &amp;c</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The last recorded performance at court by the earl of Warwick's
+players was 1 January 1579/80 (for lxvj s. viij d., TNA: E351/542, f 8),
+but it is possible that the company was still in residence at Newington
+Butts in May of the same year. Ingram, <title>Business of Playing</title>,
+pp 174–5, and Johnson, <title>Shakespeare's Lost Playhouse</title>, pp 89,
+99, have speculated that the newly formed earl of Oxford's players, led by
+the Dutton brothers, may have used the playhouse next. How long Jerome
+Savage continued his tenancy is unclear, but by June 1582 Peter
+Hunningborne is on record in the Cathedral Chapter Act Book with a lease
+for the 'resydue of the garden<gap reason="omitted"/>and ground<ex>es</ex> adioyning to the play
+house' <!-- #IN link to NBCCAB -->, indicating the existence of an even
+earlier lease.</p>
+
+<p>
+Savage had moved by 1582 to the parish of St Peter Westcheap, London,
+where he was assessed on £3 3s of goods in a lay subsidy roll for that
+year (TNA: E179/251/16, f 79). The baptism of Anne, one of his four
+daughters, was recorded on 19 March 1581/2 in the St Peter Westcheap
+parish register (LMA: P69/PET4/A/001/MS06502). Suzan, another daughter,
+was baptized 28 November 1585, but no baptismal dates have been found for
+Elizabeth, Faith, or Daniel, all named in their father's will. Although
+the surname Savage does not appear in St Peter Westcheap Churchwardens'
+Accounts between 1577-83, there is mention of a 'Mr Savage' under the Wood
+Street subheading in the receipts for 1583–4 (LMA:
+P69/PET4/B/006/MS00645/001, f 112). By November 1586 he was still resident
+there (TNA: E115/343/52, single sheet). He died soon after: his will is
+dated 31 January 1586/7, with a probate date of 18 February (see TNA: PROB
+11/70/119).</p>
+
+<p>
+The 'late order' refers to a plague order issued by the privy council to
+the JPs of Middlesex on 17 April 1580, to restrain plays on the outskirts
+of London until Michaelmas (TNA: PC2/12, p 812).</p>
+
+<p>
+Privy councillors listed as present at this meeting (p 10) were Sir Thomas
+Bromley (<hi rend="italic">c</hi> 1530–87), lord chancellor, 1579-87; Sir William Cecil
+(1520/21-98), first Baron Burghley, lord treasurer, 1572-98; Sir
+Christopher Hatton (<hi rend="italic">c</hi> 1540–91), vice-chamberlain of the Household,
+1577–87; Sir Francis Walsingham (<hi rend="italic">c</hi> 1532-90), principal secretary,
+1573-90; and Thomas Wilson (<hi rend="italic">c</hi> 1523/4-81).
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid9">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1586">1586</date> <seg ana="taxon:NBPCL3">NBPCL3</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid9-transcription">
+<div><head>p 84 <supplied>(11 May) (Greenwich)</supplied></head>
+<pb n="84" type="page"/>
+
+<ab>A l<ex>ett</ex>re to the Iustices of Surrey: that according to suche direction
+as hathe ben geuen by their L<ex>ordship</ex>s to the L<ex>ord</ex> Maior to
+restraine and inhibite the vse of plaies and interludes in publique places
+in and about the Cittie of London., in respect of the heat of the yeere
+now drawing on for thauoyding of the infection like to grow and increase
+by thordinarie assemblies of the people to those places they <add place="above">ar</add>
+<del>is</del>‸ also required in like sorte to take order y<ex>a</ex>t the playes &amp;
+assemblies of the people at the Theater or anie other places about
+Newington bee forthw<ex>i</ex>th restrained and forborne as aforesaid &amp;c.</ab>
+
+<gap reason="omitted"/>
+</div>
+<div><head>p 86</head>
+<pb n="86" type="page"/>
+
+<gap reason="omitted"/>
+
+<ab>A l<ex>ett</ex>re to the L<ex>ord</ex> Maior: his l<ex>ordship</ex> is desired according
+<del><damage><gap unit="chars" extent="3"/></damage></del> to his request made to their l<ex>ordship</ex>s by his l<ex>ett</ex>res of
+the vij<hi rend="superscript">th</hi> of this p<ex>rese</ex>nt to geue order for the restrayning of
+playes and interludes w<ex>i</ex>thin and about the Cittie of London for
+thauoyding of infection feared to grow and increase this tyme of
+So<ex>m</ex>mer by the Comon assemblies of people at those places, and that
+their l<ex>ordship</ex>s haue taken the like order for the p<ex>ro</ex>hibiting of
+the vse of playes at the Theater &amp; thother places about newington out of
+his charge: and that according to his request their l<ex>ordship</ex>s haue
+geuen order for the reformeing of the disorder noted among the millners.
+&amp;c.</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The mayor's letter of 7 May has not yet been found.</p>
+
+<p>
+Privy councillors listed as present at the 11 May meeting (p 89) were John
+Whitgift (<hi rend="italic">c</hi> 1530–1604), archbishop of Canterbury, 1583–1604; Sir
+William Cecil (1520/21–98), first Baron Burghley, lord treasurer, 1572–98;
+, 1585–96; William Brooke (1527–97), tenth Lord Cobham, privy councillor,
+1585–97; Sir Thomas Sackville (<hi rend="italic">c</hi> 1536–1608), first Baron
+Buckhurst, privy councillor, 1586–1608; Sir Christopher Hatton (<hi rend="italic">c</hi>
+1540–91), lord chancellor, 1587–91; Sir Francis Knollys (1511/12–96),
+treasurer of the Household, 1570–96; and Sir Francis Walsingham (<hi rend="italic">c</hi>
+1532–90), principal secretary, 1573–90.
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid5">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1590">1590</date> <seg ana="taxon:NBCCDC">NBCCDC</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid5-transcription">
+<div><head>ff 36v–7 <supplied>(30 November)</supplied></head>
+<pb type="folio" n="36v"/>
+
+<gap reason="omitted"/>
+
+<ab>This Indenture<note type="foot">This Indenture: <hi rend="italic">in display script</hi></note> made the
+thirtieth day of November in the three and thirtith yeare of the raigne of
+o<ex>u</ex>r soveraigne Lady Elizabeth<note type="foot">three and thirtith … Elizabeth:
+<hi rend="italic">ie, 1590</hi></note> by the grace of god of England ffraunce and Ireland
+Quene defendor<note type="marginal" place="margin_left"><damage><gap unit="chars" extent="7"/></damage>nta in New<damage><gap unit="chars" extent="2"/></damage>gton Richardo <damage><gap unit="chars" extent="2"/></damage>ckucke
+dimiss<ex>a</ex><note type="foot">:<damage><gap unit="chars" extent="3"/></damage>rata … dimiss<ex>a</ex>: <hi rend="italic">'Tennements in Newington
+demised to Richard Cuckowe'; letters lost due to fire damage along the
+left margin</hi></note></note> of the fayth etc. Betwene<note type="foot">Betwene: <hi rend="italic">in display
+script</hi></note> the Deane and Chapiter of the Cathedrall and metropoliticall
+Church of Christ of Caunterbury of thone parte, And Rychard Cukcuk of the
+Bourrough of Southwark nere to the Cytty of London Inhoulder of thothert
+p<ex>ar</ex>te wytnesseth<note type="foot">wytnesseth: <hi rend="italic">in display script</hi></note> that the
+sayd Deane and Chapiter as well for and in consyderac<ex>i</ex>on of the
+Surrender of a lease of the kinges hereby againe demysed before this tyme
+made and graunted to one Thomas Cukcuk of the sayd Bourrough of Southwarke
+Inhoulder father of the sayd Rychard Cukcuk, w<ex>hi</ex>ch lease beareth date
+the last daye of September in the fower and twentith yeare<note type="foot">fower and
+twentith yeare: <hi rend="italic">ie, 1582</hi></note> of the raigne of o<ex>u</ex>r sayd
+soveraigne Lady Quene Elizabeth the interest and terme of yeares of and in
+w<ex>hi</ex>ch sayd lease before ‸<add place="above">&amp;</add> at the tyme of the sayd surrender was
+in the sayd Rychard Cukcuk, As also for divers other good and reasonable
+causes and considerac<ex>i</ex>ons then thervnto movinge have w<ex>i</ex>th there
+mutuall assent and consent demised graunted and to ferme letten And by
+theise presentes for them and theire Successors doe demyse graunte and to
+ferme lett vnto the sayd Rychard Cukcuk All those theire thirtie and five
+acres one daye work one pearch and half a pearch of land and meadowe
+w<ex>i</ex>th thapurtena<ex>u</ex>nc<ex>es</ex> severallye lying and being in the
+p<ex>ar</ex>ish of Newington in the County of Surrey Wherof tenn acres one rodd
+fowerday work<ex>es</ex> and one pearch be called Lurklane togeythers lyinge to
+the Butt<ex>es</ex> of Newington against the West, to the land<ex>es</ex> of the
+sayd Deane and Chapiter there called litle pightell against the East, to
+the land<ex>es</ex> of the late Abbey of Barmondsey called Mellfeild against
+the North and to the Orchard nowe or late of one Edmond Myddleton against
+the South and twoe acres and twoe dayes Worke and half a day work be
+called litle pyghtell and lye betwene the sayd landes called Lurklane and
+the land<ex>es</ex> of the sayd Deane and Chapiter called Stewefenne And nyne
+acres one rodd and fyve dayes worke be called Stewefenne lying to a garden
+there called Bell garden agaynst the North to a meadowe called
+Marlett<ex>es</ex> meadowa<note type="foot">meadowa: <hi rend="italic">for</hi> meadow</note> against the South
+to the sayd Land<ex>es</ex> called the litle Pyghtell against the West and to
+the landes of the late pryo<ex>u</ex>r of and Covent of St Mary Overyes against
+the East And seaven acres and one rodd therof be called flex crost lying
+to the common sewar agayinst the North to the land<ex>es</ex> late S<ex>i</ex>r
+Henry Wyatt<ex>es</ex> knight called Bramble Shott against the South to the
+land<ex>es</ex> now or late of Stephen Myddleton called Byrneyard And the sayd
+meadowe called Marleez meade against the East And seaven acres reasydue of
+the sayd land<ex>es</ex> severallye lyinge in a cloase called horsemongerland
+of the w<ex>hi</ex>ch seaven acres five acres lye together to the land<ex>es</ex>
+nowe or late of the sayd Edmond Myddleton towardes the East and South and
+to the land<ex>es</ex> of the sayd late pryo<ex>u</ex>r and Covent of St Mary
+Overyes called le Wyffym toward<ex>es</ex> the west and to the landes of the
+late M<ex>aste</ex>r of St Thomas Hospitall in Southwarke/ and the Cartway
+leadinge from and out of the sayd close called horsemongerland in to the
+kyng<ex>es</ex> hygh streate there toward<ex>es</ex> the North and twoe acres
+reasydue of the sayd seaven acres lye togither to three acres of land late
+walter kellet And before Rob<ex>er</ex>te Gaynfforth Esquier toward<ex>es</ex> the
+East to three acres now or late of the sayd Edmond Myddletons toward<ex>es</ex>
+the West, And to the lands late Rychard Baker and somtyme Roger Poynte
+towardes the South and to the land<ex>es</ex> of the sayd Hospitall
+toward<ex>es</ex> the North Except and alwayes to the sayd Deane and Chapiter
+and theire Successors res<ex>er</ex>ved one Messuage or tennem<ex>en</ex>te
+heretofore by one Rychard Hyck<ex>es</ex> deceased erected and built vppon
+p<ex>ar</ex>cell of the sayd land<ex>es</ex> now called<pb n="37"/> the playhowse w<ex>i</ex>th all
+howses gardens or orchard<ex>es</ex> thervnto adioyninge <damage><gap unit="chars" extent="1"/></damage> and in
+thoccupac<ex>i</ex>on of one Peter Honingborne or his assignes To ha<damage><gap unit="chars" extent="2"/></damage><note type="foot">To
+ha<damage><gap unit="chars" extent="2"/></damage>: <hi rend="italic">display script</hi></note> occupye and enioye all the sayd land and
+meadowe w<ex>i</ex>t<ex>h</ex> thapurtena<ex>u</ex>nc<ex>es</ex> to the s<damage><gap unit="chars" extent="3"/></damage> and his
+assignes (except before excepted) from the feast of St Mychaell
+tharch<damage><gap unit="chars" extent="3"/></damage> before the date of theise present<ex>es</ex> vnto the full end of
+the terme of twenty and <damage><gap unit="chars" extent="3"/></damage> from thence next ensuinge and fullye to be
+compleate and ended Yealding <damage><gap unit="chars" extent="3"/></damage> payinge<note type="foot">payinge: <hi rend="italic">in display
+script</hi></note> therfore yearlye to the sayd Deane and Chapiter and to
+theire Suc<damage><gap unit="chars" extent="3"/></damage> the gate entringe to the foresayd tenn acres one Rodd
+fower dayework<ex>es</ex> and one pe<damage><gap unit="chars" extent="3"/></damage> land called Lurklane five pound<ex>es</ex>
+fowertene shillinges and fower pence of law<damage><gap unit="chars" extent="3"/></damage> money of England at fower
+vsuall termes in the yeare that is to say at the feast<ex>es</ex> of th<damage><gap unit="chars" extent="3"/></damage> of
+o<ex>u</ex>r Lord Christ Thanuntiac<ex>i</ex>on of St Mary the Virgin the Natiuitie
+of St Iohn <damage><gap unit="chars" extent="3"/></damage> and St Mychaell tharchangell by even porc<ex>i</ex>ons to be
+payde And<note type="foot">And: <hi rend="italic">in display script</hi></note> the sayd Rychard <damage><gap unit="chars" extent="3"/></damage> for
+him his executors administrators and assignes Covena<ex>u</ex>nt<ex>es</ex> and
+graunteth to and <damage><gap unit="chars" extent="3"/></damage> the sayd Deane and Chapiter and theire Successors
+by theise p<ex>re</ex>sent<ex>es</ex> that he the sa<damage><gap unit="chars" extent="2"/></damage> Rychard Cukcuk his
+exectuors administrators and assignes shall duringe and by all th<damage><gap unit="chars" extent="3"/></damage>
+terme from tyme to tyme as oft as nede shall require at his and theire
+proper cost<damage><gap unit="chars" extent="3"/></damage> expences, Skowre, repayre, maynteyne susteyne and amend
+the Common sewar <damage><gap unit="chars" extent="3"/></damage>inge to the sayd Landes or any of them, and the
+brydge or bridges over the same sewar <damage><gap unit="chars" extent="3"/></damage> be/ and also pay all
+Skott<ex>es</ex> taxes, and ymposytions to be sett or ymposed vppon the sa<damage><gap unit="chars" extent="2"/></damage>
+land<ex>es</ex> and lykwyse kepe the hedges dytches and enclosures well dyked
+fenced and enclosed and the same sewar bridges hedges and dytches well
+repayred amended dyked fro <damage><gap unit="chars" extent="3"/></damage> enclosed and fenced in the end of the
+sayd terme to the sayd Deane and Chapiter and theire successors shall
+leave and yeld vpp And<note type="foot">And: <hi rend="italic">display script</hi></note> yf it happen the
+sayd yearlye rent or ferme of fyve poundes fowertene shillinges and fower
+pence of lawfull money of england to be behind and vnpayd in p<ex>ar</ex>te or
+in all by the space of twentye dayes next after any fest of the
+feast<ex>es</ex> abovesayd in w<ex>hi</ex>ch it ought to be payd (yf it be lawfullie
+required and demaunded Or yf such p<ex>er</ex>son or p<ex>er</ex>sons to whose vse
+and possession this p<ex>re</ex>sent lease and terme of yeares shall remaine
+and come, by bargayne, sale devyse legacy or otherwise by or from the sayd
+Rychard Cukcuk doe not eyther w<ex>i</ex>thin one whole yeare next after
+thavinge and enioyinge of this lease and terme of yeares, make Surrender
+of this sayd lease and of the terme of yeres therin then to come to the
+sayd Deane and Chapiter and theire Successessors so that he or they may
+then or within covenient<note type="foot">covenient: <hi rend="italic">for</hi> convenient<hi rend="italic">;
+abbreviation mark missing</hi></note> tyme after, receyve of the sayd Deane and
+Chapiter and theire successors a lyke good sufficient and lawfull newe
+lease of all the predemysed p<ex>re</ex>misses for so many yeares as shalbe
+then to come of the terme aforesayd conteininge in it the like word<ex>es</ex>
+of demise Covena<ex>u</ex>nt<ex>es</ex> and condic<ex>i</ex>ons res<ex>er</ex>vac<ex>i</ex>ons and
+all other articles as is aforesayd for the w<ex>hi</ex>ch lease so to be
+graunted nofyne nor other paym<ex>en</ex>t shalbe required or demaunded but
+only the ordinary fees for sealinge and wrytinge of the same/ Or
+w<ex>i</ex>thin the tyme aforesayd give sygnificac<ex>i</ex>on and notice to the
+sayd Deane and Chapiter and theire successors of his and there possession
+and interest of and in this p<ex>re</ex>sent demyse and terme of yeares and
+thervppon by paym<ex>en</ex>t of the rent or otherwyse become tennaunt to the
+sayd Deane and Chapiter and theire Successors And doe then also make
+paym<ex>en</ex>t to theire officers of such ordinary fees and dutyes as are
+accustomed to be payd for the sealinge and writinge of a lease w<ex>hi</ex>ch
+doth passe vnder theire common seale, That then and from thence forth this
+p<ex>re</ex>sent Indenture lease and terme of yeares and every clause and
+article therin above one the behalf of the sayd Deane and Chapiter and
+theire Successors made and graunted shalbe vtterlye voyde frustrate and of
+nowe effect, any thinge in theise p<ex>re</ex>sent<ex>es</ex> before mencioned to
+the contrary hereof in any wysenotw<ex>i</ex>thstandinge In<note type="foot">In: <hi rend="italic">in
+display script</hi></note> wytnes wherof to one p<ex>ar</ex>te of this Indenture
+remayninge w<ex>hi</ex>ch the sayd Rychard Cukcuk the sayd Deane and Chapiter
+have sett theire common seal<ex>es</ex> And to thother p<ex>ar</ex>te remayninge
+w<ex>hi</ex>ch the sayd Deane and Chapiter the sayd Rychard Cukcuk hath sett
+his seale./ Dated in the Chapiter howse of the sayd Deane and Chapiter the
+day and yeare first above written./</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+The edge of folio 37 has been badly damaged by fire, with consequent
+loss of letters indicated by '<damage><gap unit="chars" extent="3"/></damage>.'
+</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid21">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1592">1592</date> <seg ana="taxon:RSPCL4">RSPCL4</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid21-transcription">
+<div><head>pp 414–15 <supplied>(23 June) (Greenwich)</supplied></head>
+<pb type="page" n="414"/>
+
+<gap reason="omitted"/>
+
+<ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note> l<ex>ett</ex>re to the<note type="foot">the: th
+<hi rend="italic">written over</hi> S</note> m<ex>aste</ex>r of the Rolles S<ex>i</ex>r Owen Hopton
+knight Iohn Barnes and Richard yonge Esquiors whereas her ma<ex>ies</ex>tie is
+informed that certaine Apprentyces and other idle people theire
+adherent<ex>es</ex> that were authors and p<ex>ar</ex>takers of the late mutynous
+and foule disorder in Southwarke in moste outrageous and tumultuous sorte
+haue a further purpose and meaninge on Midsom<ex>m</ex>er eueninge or
+Midsom<ex>m</ex>er nighte or about that tyme to renewe theire leud assemblye
+togeather by Cullo<ex>u</ex>r of the tyme for some bad and mischeiuous
+intenc<ex>i</ex>on to the disturbance and breache of her ma<ex>ies</ex>t<ex>es</ex> peace
+and Comyttinge some outrage<del>us</del>. To preuente in tyme theis wicked and
+mischeuious purpos<ex>es</ex> wee haue giuen straighte order to the maior of
+London for the Cittye and the liberties therevnto belonginge and to all
+other places nerre to the same to haue regarde herevnto; And so likewyse
+wee are in her ma<ex>ies</ex>t<ex>es</ex> name straightlie to Chardge and Comaunde
+yow presentlye vpon sighte hereof to sende for the Constables &amp; some of
+the Cheifest and descreetest inh<ex>ab</ex>itant<ex>es</ex> in Holborne Clerkenwell
+St Giles in the feildes &amp;c and other<del>s</del> places nere thereabout<ex>es</ex>, and
+to chardge and Comaunde them to take ordr<note type="foot">to take ordr: <hi rend="italic">written on a
+separate line in the bottom right corner of the page with</hi> ordr<hi rend="italic">,
+for</hi> order<hi rend="italic">, functioning as catchword; abbreviation mark
+missing</hi></note> <pb n="415"/> order that there maye be a stronge and substancyall
+watche kept bothe on Midsom<ex>m</ex>er Eueninge Midsom<ex>m</ex>er night and
+Sondaye at nighte of housholders and Masters of families to Contynue from
+the begin<ex>n</ex>inge of the Eueninge vntill the morninge, and that all
+m<ex>aste</ex>rs of servau<ex>n</ex>tes and of Apprentys<ex>es</ex> be straightlie
+Chardged as they will answere to the Contrarye at theire p<ex>er</ex>ill<ex>es</ex>
+to keepe theire seruant<ex>es</ex> in theire hous<ex>es</ex> for those two
+night<ex>es</ex>, so as they maie be w<ex>i</ex>thin the dores before the Eueninge
+and not suffered to Come forthe nor to haue anye weapons yf they shoulde
+be so lewdlie disposed to execute anye euill purpose And yf
+notw<ex>i</ex>thstandinge this straighte chardge and Comaundm<ex>en</ex>t any
+seruant<ex>es</ex> apprentyces or other suspected p<ex>er</ex>sons shalbe founde in
+the streetes, to see them presentlie Comytted to prison. Especiallie yow
+shall take order that theis watches of housholders, may be of that
+strengthe w<ex>i</ex>th theire weapons as they maie be hable yf there be anie
+vprore Tumult or vnlawfull assemblye to suppresse the same. Moreouer for
+avoydinge of theis vnlawfull assemblies in those quarters yt is thoughte
+meete yow shall take order that there be noe playes vsed in anye place
+nerre thereabout<ex>es</ex> as the Theator, Curtayne or other vsuall places
+there where the same are Comonly vsed nor no other sorte of vnlawfull or
+forbidden Pastymes that drawe togeather the baser sorte of people from
+hence forth vntill the feast of St michaell. Herein wee are to require yow
+yo<ex>u</ex>rselues to Call to yow the head Constables and other officers and
+suche principall men as dwell in those quarters, and to take some
+extraordynarye paines to see theis orders straightlie obs<ex>er</ex>ued, and
+all other thinges effectually p<ex>er</ex>formed that maye tende and be
+necessarye, for the pres<ex>er</ex>uac<ex>i</ex>on of the Peace auoydinge of Tumult
+and suppressinge of suche disordr as maie happen or be any waie intended
+and to ioyne and assyste suche officers of the Cittye as shall keepe
+Watche nerre vnto yow.</ab>
+
+<ab>Sixe other letters of the like Teno<ex>u</ex>r to the p<ex>er</ex>sons and places
+followinge./</ab>
+
+<ab rend="center">Surrey</ab>
+
+<table><row><cell>Mr Gardiner<lb/>Mr Bowier<lb/>Mr Parker<!-- right pointing
+brace --></cell><cell>for ye precincts of</cell><cell><!-- left pointing
+brace -->Newington<lb/>Kentish streete<lb/>Barmondseystreete<lb/>Clinck, Paris garden
+&amp; the banckside.</cell></row></table>
+
+<table><row><cell>Lieutenant of ye Tower.<lb/>M<ex>aste</ex>r of St Katins<!-- right pointing
+brace --></cell><cell>for ye precincts of</cell><cell><!-- left pointing brace -->St
+Catherins<lb/>Estsmithfeilde</cell></row></table>
+
+<table><row><cell>L<ex>ord</ex> Wentworthe<!-- right pointing brace --></cell><cell>for yeis
+precincts</cell><cell><!-- left pointing
+brace -->Ratcliffe<lb/>Shorditch<lb/>Whitechappell.</cell></row></table>
+
+<table><row><cell>L<ex>ord</ex> Cobham<!-- right pointing brace --></cell><cell>for
+ye</cell><cell><!-- left pointing brace -->Blackfriers.</cell></row></table>
+
+<table><row><cell>S<ex>i</ex>r Tho<ex>mas</ex> Sherley<!-- right pointing brace --></cell><cell>for
+the</cell><cell><!-- left pointing brace -->Whitefriers.</cell></row></table>
+
+<table><row><cell>Bailiue of Westm<ex>inste</ex>r<!-- right pointing
+brace --></cell><cell/><cell>Westminster<lb/>St Martins<lb/>ye Stronde</cell></row></table>
+</div>
+</div>
+<div type="endnote">
+<p>
+Official anxiety about the potential for further unrest and disorder
+at midsummer, triggered by London apprentices, was clearly in response to
+the recent riotous events in Southwark, when Feltmakers' apprentices
+clashed with the knight marshal's men. See BL: Lansdowne 71, f
+[1]<!-- #link to RSLWWB -->. The
+letters directed to those responsible for the precincts in Newington and
+Southwark have not survived.</p>
+
+<p>
+The items in each cell of the left column are encompassed by a brace
+pointing to the corresponding cell in the middle column, or the far right
+column, in the case of the last row. Likewise, the items in each cell of
+the far right column are encompassed by a brace pointing to the
+corresponding cell in the middle column, or left column, in the case of
+the last row.</p>
+
+<p>
+The  listed as present at the meeting (p 414) were  (1520/21–98), first
+Baron Burghley, lord treasurer, 1572–98;  (1536–1624), lord admiral,
+1585–1619;  (1526–96), lord chamberlain of the Household, 1585–96;
+(<hi rend="italic">c</hi> 1532–95), vice-chamberlain of the Household, 1587–95;
+(1563–1612); and  (d. 1596).</p>
+</div>
+</body>
+</text><text type="record" xml:id="nwbts-rid6">
+<body>
+<head><rs>Surrey</rs>, <rs>Southwark</rs> <date when-iso="1595">1595</date> <seg ana="taxon:NBCCDC">NBCCDC</seg></head>
+<div xml:lang="eng" type="transcription" xml:id="nwbts-rid6-transcription">
+<div><head>ff 265v–6 <supplied>(5 April)</supplied></head>
+<pb type="folio" n="265v"/>
+
+<ab>This<note type="marginal" place="margin_left"><damage><gap unit="chars" extent="1"/></damage>enement<ex>um</ex> vocat<ex>um</ex> <damage><gap unit="chars" extent="3"/></damage>kelane prope <damage><gap unit="chars" extent="1"/></damage>outhwarke Paulo
+Buck dimiss<ex>um</ex><note type="foot"><damage><gap unit="chars" extent="1"/></damage>enement<ex>um</ex>…dimiss<ex>um</ex>: <hi rend="italic">'The tenement
+called Lurklane near Southwark demised to Paul Buck'; letters lost to fire
+damage along the left margin</hi></note></note> Indenture<note type="foot">This Indenture: <hi rend="italic">in
+display script</hi></note> made the fifte daie of Aprill in the seauen and
+thirtith yeare of the raigne of our Soveraigne Ladye Elizabeth<note type="foot">seauen
+and thirtith yeare … Ladye Elizabeth: <hi rend="italic">ie, 1595</hi></note> by the grace
+of God Queen of Englande ffraunce and Irelande defendor of the faithe &amp;c
+Betwene<note type="foot">Betwene: <hi rend="italic">in display script</hi></note> the Deane and chapiter of
+the Cathedrall and Metropoliticall Church of Christ of Canterburye of the
+one parte and Paule Bucke of <del>the</del> Cittie of London gent of the other
+parte wytnesseth<note type="foot">wytnesseth: <hi rend="italic">in display script</hi></note> that whereas
+the said Deane and Chapiter by theire Indenture of Demise bearinge date
+the six and twentith daie of November in the Nynth yeare of the raigne of
+our said Soveraigne Ladye Queene Elizabeth<note type="foot">Nynth yeare … Elizabeth:
+<hi rend="italic">ie, 1566</hi></note> did demise to Richard Hick<ex>es</ex> one of the yeomen of
+her Ma<ex>ies</ex>ties garde. All the thinges by theis present<ex>es</ex> hereafter
+demised To<note type="foot">To: <hi rend="italic">display initial</hi> T</note> haue and to hould to the
+said Richarde Hick<ex>es</ex> his executors and assignes from the feast of St
+Mychaell tharchangell then last past before the date of the saide
+Indenture vnto thend and terme of three scoare yeares. w<ex>hi</ex>ch said
+terme and the interest therein by good conveyaunce in lawe is sithence
+come to the handes and possession of the said Paule Buck. All w<ex>hi</ex>ch he
+the said Paule Buck hath surrendered to the said Deane and
+Chap<damage><gap unit="chars" extent="3"/></damage><note type="foot">Chap<damage><gap unit="chars" extent="3"/></damage>: <hi rend="italic">characters lost in binding</hi></note><pb n="266"/> Nowe<note type="foot">Nowe:
+<hi rend="italic">in display script</hi></note> therefore the said Deane and Chapiter for and
+in Considerac<ex>i</ex>on of <damage><gap unit="chars" extent="3"/></damage> said Surrender and for other good causes and
+Considerac<ex>i</ex>ons haue demised <damage><gap unit="chars" extent="3"/></damage> graunted and to ferme letten. And by
+theis present<ex>es</ex> for them and theire suc<damage><gap unit="chars" extent="3"/></damage> doe demise graunte and to
+ferme let vnto the saide Paule Bucke All that theire M<damage><gap unit="chars" extent="3"/></damage> howse and
+tenem<ex>en</ex>t latelie builded by the foresaide Richarde Hickes vpon a
+parcell <damage><gap unit="chars" extent="3"/></damage> scituat and ‸<add place="above">beinge</add> in newington neere Southwarke in
+the countee of Surr<ex>ey</ex> called Lurklane <damage><gap unit="chars" extent="3"/></damage> letten as aforesaide to
+the saide Richarde Hickes amonge other landes togeither <damage><gap unit="chars" extent="3"/></damage> or garden
+plott as it is nowe inclosed out of the saide lande called Lurklane All
+<damage><gap unit="chars" extent="3"/></damage> howse and garden conteyneth in length alonge by the landes of the
+saide Deane and cha<damage><gap unit="chars" extent="3"/></damage> the tenure of the saide Richarde Hickes or his
+assignes towardes the northe fortye and six <damage><gap unit="chars" extent="3"/></damage> like length alonge by
+the Common Sewer there towardes the south ffortie fower yard<damage><gap unit="chars" extent="3"/></damage> bradth
+alonge by the Queens high waie there towardes the west thirtie six yardes
+And <damage><gap unit="chars" extent="3"/></damage> breadh<note type="foot">breadh: <hi rend="italic">for</hi> breadth</note> alonge by the landes of
+the saide Deane and Chapiter towardes the East twentie <damage><gap unit="chars" extent="3"/></damage> To haue
+and<note type="foot">To haue and: <hi rend="italic">display script</hi></note> to houlde all the saide
+Messuage and tennement w<ex>i</ex>th thappurtenanc<damage><gap unit="chars" extent="3"/></damage> the saide Paule Buck
+his executors and assignes from the feaste of Ste Michaell th<damage><gap unit="chars" extent="3"/></damage> last
+past before the date of theis present<ex>es</ex> vnto the full end of the
+‸<add place="above">terme</add> of twoe and thirtie yeares <damage><gap unit="chars" extent="3"/></damage> thence next ensuinge and
+fullie to bee compleate and ended yeldinge and<note type="foot">yeldinge and: <hi rend="italic">in
+display script</hi></note> paying th<damage><gap unit="chars" extent="3"/></damage> yearlie to the saide Deane and
+chapiter and there successors or to theire lawfull assign<damage><gap unit="chars" extent="3"/></damage> assignes
+the some of twelue shillinges of good and laufull monney of englande at
+the feastes <damage><gap unit="chars" extent="3"/></damage> thanuntiac<ex>i</ex>on of the blessed <del>Wirgin</del> ‸<add place="above">virgin</add>
+marye and St Michaell tharckaungell by even portions <damage><gap unit="chars" extent="3"/></damage> bee paide
+duringe the saide terme/ And the sayde<note type="foot">And the sayde: <hi rend="italic">in display
+script</hi></note> Paule Buck for him his executors admi<damage><gap unit="chars" extent="3"/></damage>strators and
+assignes Couenaunteth and graunteth to and with the saide Deane and
+Chapiter and <damage><gap unit="chars" extent="3"/></damage> there Successors by theis presentes. That he the saide
+Paule Bucke his executors adminis<damage><gap unit="chars" extent="3"/></damage>tors and assignes at his and theire
+owne proper Costes Charges and expences shall in all thing<damage><gap unit="chars" extent="3"/></damage> duringe
+all the saide terme repaire vphoulde maintaine and sustaine the saide
+messuage and tenn<damage><gap unit="chars" extent="3"/></damage>ment and other the premisses and the same well and
+sufficientlie repaired into the handes of the <damage><gap unit="chars" extent="3"/></damage> saide Deane and
+Chapiter and theire successors, in thende of the saide terme to leave and
+yelde vp <damage><gap unit="chars" extent="3"/></damage> And yf it <del>shall</del> happen<note type="foot">And yf … happen: <hi rend="italic">in
+display script</hi></note> the saide yearelye rent or ferme of twelue
+shillinges or anie <damage><gap unit="chars" extent="3"/></damage> parte thereof to bee behinde and vnpaide by the
+space of one monneth next after anie of the daye<damage><gap unit="chars" extent="2"/></damage> of paymente
+abouesaide, in which it ought to <note type="foot">to: <hi rend="italic">followed by ink blot</hi></note> be
+paide/ Or yf the Reparac<ex>i</ex>on of the saide messu<damage><gap unit="chars" extent="3"/></damage> or tennement and
+other the premisses <hi rend="italic">(blank)</hi> by theis presentes demised be not
+w<ex>i</ex>thin the space of one whole yeare next after monicion and warninge
+given by the Deane Receyvor general <del>and</del> or Surveyor of the landes and
+possessions of the saide Deane and Chapiter and theire successors for the
+tyme beinge to the saide Paule Buck his executors or assignes or to the
+occupiers occupiers<note type="foot">occupiers occupiers: <hi rend="italic">dittography at beginning of
+line</hi></note> of the premisses for the due and needefull kepinge and
+repairinge thereof well and sufficientlye donne made mayntayned and
+repaired That then and from thence foorth this present Indenture amd every
+Clause and article therein vpon the behalfe of the saide deane and
+Chap<damage><gap unit="chars" extent="3"/></damage> above graunted to be vtterlye frustrate and of no force or
+effect anie thinge before mencio<damage><gap unit="chars" extent="3"/></damage> to the contrarye notwithstandinge/
+In wytnes whereof<note type="foot">In wytnes whereof: <hi rend="italic">in display script</hi></note> to one
+parte of this Indenture remayninge with the saide Paule Bucke the saide
+Deane and Chapiter haue set there common seale and to the other parte
+remayninge w<ex>i</ex>th the sayd Deane and ‸<add place="above">chapit<ex>er</ex></add> <del>chapiter</del> the
+saide Paule Bucke hath set his seale. Dated in the Chapiter howse of the
+saide Deane and Chapiter the daie and yeare first aboue written/</ab>
+
+<gap reason="omitted"/>
+</div>
+<div><head>ff 266–6v <supplied>(6 April)</supplied></head>
+<pb type="folio" n="266"/>
+
+<gap reason="omitted"/>
+
+<ab>This<note type="marginal" place="margin_left">residuu<ex>m</ex> p<ex>ar</ex>cell<ex>e</ex> terre ib<ex>ide</ex>m Paulo Buck
+dimiss<ex>um</ex><note type="foot">residuu<ex>m</ex> … dimiss<ex>um</ex>: <hi rend="italic">'The remainder of a
+parcel of land demised to Paul Buck'</hi></note></note> Indenture<note type="foot">This Indenture:
+<hi rend="italic">in display script</hi></note> Made the Sixt daie of Aprill in the seauen
+and thirtith yeare <damage><gap unit="chars" extent="3"/></damage> the raigne of our Soueraigne Ladie Elizabeth by
+the grace of God Queene of Englande ffran<damage><gap unit="chars" extent="2"/></damage> and Irelande defendor of the
+faith &amp;tc. Betwene<note type="foot">Betwene: <hi rend="italic">in display script</hi></note> the deane and
+Chapiter of the Cath<damage><gap unit="chars" extent="3"/></damage> and Metropoliticall Church of Christe of
+Canterburye of the one parte And Paule Bucke of of<note type="foot">of of:
+<hi rend="italic">dittography at beginning of line</hi></note> London gent of the other
+parte/ Wytnesseth<note type="foot"> Wytnesseth: <hi rend="italic">in display script</hi></note> that whereas
+the saide Deane and Ch<damage><gap unit="chars" extent="3"/></damage> by there Indenture of demise vnder theire
+common seale bearinge date the fifte daie of Ap<damage><gap unit="chars" extent="3"/></damage> in the seauen and
+thirtith yeare of the raigne of our saide Soueraigne Ladye Queene
+Eliza<damage><gap unit="chars" extent="3"/></damage> haue letten <del>vn</del>to the saide Paule Bucke. One Messuage or
+tennement scituat and beinge in Newington neere Southwarke in the Countie
+of Surr<ex>ey</ex> latelie builded vpon a parcell of land<damage><gap unit="chars" extent="1"/></damage> there called
+Lurklane by one Richarde Hickes deceased togeither with a garden or garden
+<damage><gap unit="chars" extent="3"/></damage> as it was then enclosed in wch<note type="foot">wch: <hi rend="italic">for</hi> w<ex>hi</ex>ch<hi rend="italic">;
+abbreviation mark missing</hi></note> lease certaine content<ex>es</ex> of the lande
+therein enclosed are set downe w<ex>hi</ex>ch doe not conteyne the whole lande
+as it was inclosed by the saide Richarde Hic<damage><gap unit="chars" extent="3"/></damage> and as it nowe remayneth
+by fortye and eyght yardes in length and thirtie seaven yar<damage><gap unit="chars" extent="3"/></damage> and an
+half in breadth or <del>abor</del> there about<ex>es</ex> That wee the saide Deane and
+chapiter h<damage><gap unit="chars" extent="3"/></damage> demised graunted and to ferme letten, And by theis
+presentes doe demise graunte and to <damage><gap unit="chars" extent="3"/></damage> let to the saide Paule Bucke the
+residue of the full content of the landes inclosed <damage><gap unit="chars" extent="3"/></damage> <pb n="266v"/> saide garden
+and garden plott not fullie sett downe in the saide former lease as it was
+inclosed and taken in by the saide Richarde Hickes in his lyfe time
+bearinge the content of ffourtie and eight yardes towardes the north and
+south and in breadth towardes the East ffortie and twoe yardes and in like
+breadth to the west thirtie and three yardes be it more or less To haue
+and to houlde<note type="foot">To haue … houlde: <hi rend="italic">in display text</hi></note> the saide
+residue of the garden or garden plotte aforesaide to the saide Paule Buck
+his executors and assignes from the feaste of Thanu<ex>n</ex>tiacion of the
+blessed Virgin Marye last past before the date of theis presentes vnto the
+full ende of the terme of twentie and one yeares from thence next ensuinge
+and fullie to bee compleate and ended yeldinge and Payinge<note type="foot">yeldinge and
+Payinge: <hi rend="italic">in display text</hi></note> therefore yearelye duringe the saide
+terme to the saide Deane and chapiter and theire successors the some of
+twoe shillinges of good and laufull monney of Englande at the feaste of St
+Michaell<note type="foot">Michaell: e <hi rend="italic">written over</hi></note> tharchaungell onelie And yf
+it happen<note type="foot"> And … happen: <hi rend="italic">in display text</hi></note> the saide yearlie
+rent or ferme of twoe shillinges to be behinde and unpaide in parte or in
+all by the space of eight and twentye dayes next after the feaste
+abouesaide in w<ex>hi</ex>ch it ough<note type="foot">ough: <hi rend="italic">for</hi> ought</note> to be paide,
+That then and from thencefoorth this presente Indenture and lease and
+everye Clause and article therein aboue on the behalfe of the saide Dean
+and chapiter and theire Successors made and graunted shalbe vtterlie voide
+frustrated and of none effecte anie thinge in theis presentes before
+mencioned to the contrary hereof in anie wise notwithstandinge/ In wytnes
+Whereof<note type="foot"> In wytnes Whereof: <hi rend="italic">in display text</hi></note> to one parte of
+this Indenture remayninge with the saide Paule Buck the saide Dean and
+Chapiter haue set theire common seale And to the other parte remayninge
+w<ex>i</ex>th the saide Deane and Chapiter the saide Paule Buck his seale hath
+set Dated in the Chapiter howse of the saide deane and chapiter the daie
+and yeare first aboue written</ab>
+
+<gap reason="omitted"/>
+</div>
+</div>
+<div type="endnote">
+<p>
+It is worth noting that the playhouse is not specifically mentioned in
+the new lease. Because the 5 April version contained errors in the
+dimensions of the property, Buck evidently was quick to request the
+revised version of 6 April. See further Ingram, <title>Business of
+Playing</title>, pp 157–8, 176–7. The edge of f 266 has been badly damaged
+by fire, with consequent loss of letters indicated by '<damage><gap unit="chars" extent="3"/></damage>.'
+</p>
+</div>
+</body>
+</text></group>
+  </text>
+</TEI>
