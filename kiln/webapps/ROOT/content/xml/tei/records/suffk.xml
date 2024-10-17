@@ -4120,7 +4120,7 @@
        <pb n="1" type="sheet"/>
 
        <ab rend="center">To the reu<ex>er</ex>end ffather in god <rs ref="eats:171004"
-         type="Person_Male">my lord Cardinall</rs> legate A latere<lb/> Archebisshop of york Primate
+         type="Person_Male">my lord Cardinall</rs> legate A latere<lb/> <rs ref="eats:171004" type="Person_Male">Archebisshop of york</rs> Primate
         of Englond And Chauncler of the same</ab>
 
        <ab>In most humble wyse shewyth &amp; compleynyth vnto yo<ex>ur</ex> grace yo<ex>ur</ex> trew
@@ -15804,8 +15804,7 @@ patron/troupe -->.</p>
        <table>
         <row>
          <cell>And þ<ex>a</ex>t I paid to þe <rs ref="eats:8782" type="Entertainer_Type">pleirs</rs>
-          of <!-- IN for AW: I would check with JS about this location. --><rs ref="eats:375845"
-           type="Place_PA_Ward">Turton strete</rs>
+          of <rs ref="eats:375845" type="Place_F_Street">Turton strete</rs>
          </cell>
          <cell rend="right">xx d.</cell>
         </row>
@@ -31781,7 +31780,7 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        <ab><gap reason="omitted"/>In reward amongest the <rs ref="eats:275374"
          type="Collective_Office">wayghtes of London</rs> for playeinge at <rs ref="eats:424824"
          type="Person_Male">my m<ex>aste</ex>r</rs> his
-        <!-- IN for AW: May be worth trying to tag this house, probably as 'Kitson residence', contained within London. Can ask JS if it might be locatable/mappable, though my guess is probably not-->howse
+        <rs ref="eats:454850" type="Place_F_Residence">howse</rs>
         ther vj s.<note type="foot">vj s.: <hi rend="italic">underlined</hi></note><gap
          reason="omitted"/> In reward to <rs ref="eats:443660" type="Person_Male">ffrythe</rs> the
          m<ex>aste</ex>r of the dauncinge scoole at my m<ex>aste</ex>r his comandement ij s.<note
