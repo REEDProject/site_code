@@ -106,13 +106,13 @@
     </xsl:for-each>
   </xsl:template>
   
-  <xsl:template match="tei:text[@sameAs]">
+  <xsl:template match="tei:text[@copyOf]">
     <xsl:apply-templates select="@*|node()"/>
   </xsl:template>
   
-  <xsl:template match="tei:*[@sameAs]">
+  <xsl:template match="tei:*[@copyOf]" priority="1">
     <xsl:call-template name="make-xinclude">
-      <xsl:with-param name="url" select="@sameAs" />
+      <xsl:with-param name="url" select="@copyOf" />
     </xsl:call-template>
   </xsl:template>
   
@@ -153,7 +153,7 @@
   </xsl:template>
   
   <xsl:template match="@ana" />
-  <xsl:template match="tei:text/@sameAs">
+  <xsl:template match="tei:text/@copyOf" priority="2">
     <xsl:attribute name="other_collection_ids">
       <xsl:for-each select="tokenize(., '\s+')">
         <xsl:value-of select="substring-before(., '.xml')" />
@@ -163,7 +163,7 @@
       </xsl:for-each>
     </xsl:attribute>
   </xsl:template>
-  <xsl:template match="@sameAs" />
+  <xsl:template match="@copyOf" />
   
   <!-- Referenced records just need the tei:body/tei:head to be copied
        across. We also need to expand the tei:seg in the tei:head in
