@@ -40529,8 +40529,8 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        <head>f 71 <supplied>(Gifts) (29 September-29 September)</supplied></head>
        <pb n="71" type="folio"/>
 
-       <ab>dat<ex>um</ex> Ioh<ex>ann</ex>i Tabowrer iij d<gap reason="omitted"/>. It<ex>e</ex>m
-         dat<ex>um</ex> menstrall' d<ex>omi</ex>ni de morle xx d<gap reason="omitted"/>.</ab>
+       <ab>dat<ex>um</ex> <rs ref="eats:429345" type="Person_Male">Ioh<ex>ann</ex>i</rs> <rs ref="eats:29681" type="Entertainer_Type">Tabowrer</rs> iij d<gap reason="omitted"/>. It<ex>e</ex>m
+         dat<ex>um</ex> <rs ref="eats:325563" type="Collective_Troupe">menstrall' d<ex>omi</ex>ni de morle</rs> xx d<gap reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
       </div>
@@ -40563,12 +40563,12 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        <head>f 77 <supplied>(Gifts) (29 September-29 September)</supplied></head>
        <pb n="77" type="folio"/>
 
-       <ab>da<ex>tu</ex>m menstrall' d<ex>omi</ex>ni de morle xx d. It<ex>e</ex>m dat<ex>um</ex>
-        menstrall' vj d<gap reason="omitted"/>. It<ex>e</ex>m dat<ex>um</ex> cuidam menstrallo
-         d<ex>omi</ex>ni Episcopi Eliens<ex>is</ex> viij d<gap reason="omitted"/>. It<ex>e</ex>m
-         dat<ex>um</ex> menstrall' Comit<ex>is</ex> Suffolch<ex>ie</ex> viij d<gap reason="omitted"
+       <ab>da<ex>tu</ex>m <rs ref="eats:325563" type="Collective_Troupe">menstrall' d<ex>omi</ex>ni de morle</rs> xx d. It<ex>e</ex>m dat<ex>um</ex>
+        menstrall' vj d<gap reason="omitted"/>. It<ex>e</ex>m dat<ex>um</ex> cuidam <rs ref="eats:455738" type="Collective_Troupe">menstrallo
+         d<ex>omi</ex>ni Episcopi Eliens<ex>is</ex></rs> viij d<gap reason="omitted"/>. It<ex>e</ex>m
+         dat<ex>um</ex> <rs ref="eats:455509" type="Collective_Troupe">menstrall' Comit<ex>is</ex> Suffolch<ex>ie</ex></rs> viij d<gap reason="omitted"
         />. It<ex>e</ex>m dat<ex>um</ex> menstrall' Comit<ex>is</ex> Suff<ex>olchie</ex> xij d<gap
-         reason="omitted"/>. It<ex>e</ex>m dat<ex>um</ex> menstrallo d<ex>omi</ex>ni de Wylughby xl
+         reason="omitted"/>. It<ex>e</ex>m dat<ex>um</ex> <rs ref="eats:429319" type="Collective_Troupe">menstrallo d<ex>omi</ex>ni de Wylughby</rs> xl
          d<gap reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
@@ -40579,8 +40579,8 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        <head>f 77 <supplied>(Gifts) (29 September-29 September)</supplied></head>
        <pb n="77" type="folio"/>
 
-       <ab>Given to minstrels/a minstrel of Lord de Morley, 20d. Likewise given to minstrels/a
-        minstrel, 6d<gap reason="omitted"/> Likewise given to a certain minstrel of the lord bishop
+       <ab>Given to minstrels/a minstrel of Lord de Morley, 20d. Likewise given to <rs ref="eats:8709" type="Entertainer_Type">minstrels/a
+        minstrel</rs>, 6d<gap reason="omitted"/> Likewise given to a certain minstrel of the lord bishop
         of Ely, 8d<gap reason="omitted"/> Likewise given to minstrels/a minstrel of the earl of
         Suffolk, 8d<gap reason="omitted"/> Likewise, given to minstrels/a minstrel of the earl of
         Suffolk, 12d<gap reason="omitted"/> Likewise, give to a minstrel of Lord de Willoughby,
@@ -40590,8 +40590,19 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
       </div>
      </div>
      <div type="endnote">
-      <p> John Fordham (d. 1425) was bishop of Durham in 1381-2, and bishop of Ely from 3 April
+      <p> Thomas de Morley (1354-1416) was fouth Baron Morley from 1380, with residences at Morley,
+       Hingham, and other places in Norfolk. </p>
+      
+      <p> John Fordham (c.1340-1425) was bishop of Durham in 1381-2, and bishop of Ely from 3 April
        1388. </p>
+      
+      <p> Michael de la Pole (1367-1415) was second earl of Suffolk from 1399, with residence at Wingfield,
+       Suffolk. </p>
+      
+      <p> Robert de Willoughby (<hi rend="italic">c</hi> 1385-25 July 1452) was sixth Baron
+       Willoughby de Eresby, with residence at Spilsby, Lincolnshire. See
+       <ref target="https://reed.library.utoronto.ca/node/316382"><title>P&amp;P</title></ref>.</p>
+      
      </div>
     </body>
    </text>
@@ -40627,9 +40638,11 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
       </div>
      </div>
      <div type="endnote">
+      <p> Thomas de Morley (1354-1416) was fouth Baron Morley from 1380, with residences at Morley,
+       Hingham, and other places in Norfolk. </p>
+      
       <p> Thomas of Lancaster (1389-1421) was second duke of Clarence from 1412. He was the second
-       son of King Henry IV. See <title>P&amp;P</title><!-- IN to link to
-https://reed.library.utoronto.ca/node/316159 -->. </p>
+       son of King Henry IV. See <ref target="https://reed.library.utoronto.ca/node/316159"><title>P&amp;P</title></ref>. </p>
      </div>
     </body>
    </text>
