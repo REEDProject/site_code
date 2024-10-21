@@ -40616,10 +40616,10 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        <head>f 83 <supplied>(Gifts) (29 September-29 September)</supplied></head>
        <pb n="83" type="folio"/>
 
-       <ab><gap reason="omitted"/>It<ex>e</ex>m dat<ex>um</ex> menstrall' d<ex>omi</ex>ni de morlay
-        xx d. It<ex>e</ex>m dat<ex>um</ex> menstrall' d<ex>omi</ex>ni de Wylughby v s. It<ex>e</ex>m
+       <ab><gap reason="omitted"/>It<ex>e</ex>m dat<ex>um</ex> <rs ref="eats:325563" type="Collective_Troupe">menstrall' d<ex>omi</ex>ni de morlay</rs>
+        xx d. It<ex>e</ex>m dat<ex>um</ex> <rs ref="eats:429319" type="Collective_Troupe">menstrall' d<ex>omi</ex>ni de Wylughby</rs> v s. It<ex>e</ex>m
          dat<ex>um</ex> menstrall' d<ex>omi</ex>ni Rogeri de Welyngton viij d. It<ex>e</ex>m
-         dat<ex>um</ex> menstrall' ducis de Clarenc<ex>ia</ex> xij d<gap reason="omitted"/>.</ab>
+         dat<ex>um</ex> <rs ref="eats:176539" type="Collective_Troupe">menstrall' ducis de Clarenc<ex>ia</ex></rs> xij d<gap reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
       </div>
@@ -40641,6 +40641,10 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
       <p> Thomas de Morley (1354-1416) was fouth Baron Morley from 1380, with residences at Morley,
        Hingham, and other places in Norfolk. </p>
       
+      <p> Robert de Willoughby (<hi rend="italic">c</hi> 1385-25 July 1452) was sixth Baron
+       Willoughby de Eresby, with residence at Spilsby, Lincolnshire. See
+       <ref target="https://reed.library.utoronto.ca/node/316382"><title>P&amp;P</title></ref>.</p>
+      
       <p> Thomas of Lancaster (1389-1421) was second duke of Clarence from 1412. He was the second
        son of King Henry IV. See <ref target="https://reed.library.utoronto.ca/node/316159"><title>P&amp;P</title></ref>. </p>
      </div>
@@ -40656,13 +40660,13 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
        <head>f 89 <supplied>(Gifts) (29 September-29 September)</supplied></head>
        <pb n="89" type="folio"/>
 
-       <ab>dat<ex>um</ex> Henric<ex>o</ex> Iestowr &amp; haukyn menstrel viij d<gap reason="omitted"
-        />. It<ex>e</ex>m dat<ex>um</ex> Ioh<ex>ann</ex>i Taburer iij d<gap reason="omitted"/>.
-         It<ex>e</ex>m dat<ex>um</ex> menstrall' Comit<ex>is</ex> de march xx d. It<ex>e</ex>m
+       <ab>dat<ex>um</ex> <rs ref="eats:455764" type="Person_Male">Henric<ex>o</ex></rs> <rs ref="eats:14164" type="Entertainer_Type">Iestowr</rs> &amp; <rs ref="eats:455817" type="Person_Male">haukyn</rs> <rs ref="eats:8709" type="Entertainer_Type">menstrel</rs> viij d<gap reason="omitted"
+        />. It<ex>e</ex>m dat<ex>um</ex> <rs ref="eats:429345" type="Person_Male">Ioh<ex>ann</ex>i</rs> <rs ref="eats:29681" type="Entertainer_Type">Taburer</rs> iij d<gap reason="omitted"/>.
+         It<ex>e</ex>m dat<ex>um</ex> <rs ref="eats:455954" type="Collective_Troupe">menstrall' Comit<ex>is</ex> de march</rs> xx d. It<ex>e</ex>m
          dat<ex>um</ex> menstrall' d<ex>omi</ex>ni de Wylughby xl d. It<ex>e</ex>m datum menstrall'
          d<ex>omi</ex>ni de morley xx d<gap reason="omitted"/>. It<ex>em</ex> dat<ex>um</ex>
-         cuida<ex>m</ex> menstrallo d<ex>omi</ex>ni de Wylughby xl d<gap reason="omitted"/>. Item
-         cuida<ex>m</ex> menstrallo d<ex>omi</ex>ni de morle vj d<gap reason="omitted"/>.</ab>
+         cuida<ex>m</ex><rs ref="eats:429319" type="Collective_Troupe"> menstrallo d<ex>omi</ex>ni de Wylughby</rs> xl d<gap reason="omitted"/>. Item
+         cuida<ex>m</ex> <rs ref="eats:325563" type="Collective_Troupe">menstrallo d<ex>omi</ex>ni de morle</rs> vj d<gap reason="omitted"/>.</ab>
 
        <gap reason="omitted"/>
       </div>
@@ -40686,8 +40690,14 @@ patron/troupe. IN: No P&P page for Hinde/Hynde. Remove text? -->. </p>
      </div>
      <div type="endnote">
       <p> Edmund Mortimer (1391-1425) was fifth earl of March from 1398. He died in Ireland and was
-       buried in Clare Priory. See <title>P&amp;P</title><!-- IN to link to
-https://reed.library.utoronto.ca/node/316176 -->. </p>
+       buried in Clare Priory. See <ref target="https://reed.library.utoronto.ca/node/316176"><title>P&amp;P</title></ref>. </p>
+      
+      <p> Robert de Willoughby (<hi rend="italic">c</hi> 1385-25 July 1452) was sixth Baron
+       Willoughby de Eresby, with residence at Spilsby, Lincolnshire. See
+       <ref target="https://reed.library.utoronto.ca/node/316382"><title>P&amp;P</title></ref>.</p>
+      
+      <p> Thomas de Morley (1354-1416) was fouth Baron Morley from 1380, with residences at Morley,
+       Hingham, and other places in Norfolk. </p>      
      </div>
     </body>
    </text>
@@ -40701,14 +40711,14 @@ https://reed.library.utoronto.ca/node/316176 -->. </p>
        <head>f 95 <supplied>(Gifts) (29 September-29 September)</supplied></head>
        <pb n="95" type="folio"/>
 
-       <ab><gap reason="omitted"/>It<ex>e</ex>m dat<ex>um</ex> menstrall' d<ex>omi</ex>ni
-         Ep<ex>iscop</ex>i eliens<ex>is</ex> xij d<gap reason="omitted"/>. It<ex>e</ex>m
-         dat<ex>um</ex> menstrall' d<ex>omi</ex>ni de morle xij d. It<ex>e</ex>m dat<ex>um</ex>
-        menstrall' d<ex>omi</ex>ni de Wylughby <del>xx d. It<ex>e</ex>m</del> xl d. It<ex>e</ex>m
+       <ab><gap reason="omitted"/>It<ex>e</ex>m dat<ex>um</ex> <rs ref="eats:455738" type="Collective_Troupe">menstrall' d<ex>omi</ex>ni
+         Ep<ex>iscop</ex>i eliens<ex>is</ex></rs> xij d<gap reason="omitted"/>. It<ex>e</ex>m
+         dat<ex>um</ex> <rs ref="eats:456101" type="Collective_Troupe">menstrall' d<ex>omi</ex>ni de morle</rs> xij d. It<ex>e</ex>m dat<ex>um</ex>
+       <rs ref="eats:429319" type="Collective_Troupe"> menstrall' d<ex>omi</ex>ni de Wylughby</rs> <del>xx d. It<ex>e</ex>m</del> xl d. It<ex>e</ex>m
          dat<ex>um</ex> menstrall' Ep<ex>iscop</ex>i eliens<ex>is</ex> vj d<gap reason="omitted"/>.
-         It<ex>em</ex> dat<ex>um</ex> menstrall' d<ex>omi</ex>ni Ep<ex>iscop</ex>i
-         Wyncestr<ex>ie</ex> xij d<gap reason="omitted"/>. It<ex>e</ex>m dat<ex>um</ex>
-         cuida<ex>m</ex> menstrallo viij d.</ab>
+         It<ex>em</ex> dat<ex>um</ex> <rs ref="eats:125079" type="Collective_Troupe">menstrall' d<ex>omi</ex>ni Ep<ex>iscop</ex>i
+         Wyncestr<ex>ie</ex></rs> xij d<gap reason="omitted"/>. It<ex>e</ex>m dat<ex>um</ex>
+        cuida<ex>m</ex> <rs ref="eats:8709" type="Entertainer_Type">menstrallo</rs> viij d.</ab>
 
        <gap reason="omitted"/>
       </div>
@@ -40735,10 +40745,15 @@ https://reed.library.utoronto.ca/node/316176 -->. </p>
 
       <p> Thomas de Morley (1393-1438) was fifth Baron Morley, Lord Morley from 1416, with
        residences at Morley, Hingham, and other places in Norfolk. </p>
+      
+      <p> Robert de Willoughby (<hi rend="italic">c</hi> 1385-25 July 1452) was sixth Baron
+       Willoughby de Eresby, with residence at Spilsby, Lincolnshire. See
+       <ref target="https://reed.library.utoronto.ca/node/316382"><title>P&amp;P</title></ref>.</p>
 
-      <p> Henry Beaufort (<hi rend="italic">c</hi> 1335-1447) was bishop of Winchester from 1404,
+      <p> Henry Beaufort (<hi rend="italic">c</hi> 1375-1447) was bishop of Winchester from 1404,
        with residence at the Bishop's Palace, Winchester. He was the second son of the four
-       legitimized children of John of Gaunt, and from 1426 was a cardinal of the Church of Rome.
+       legitimized children of John of Gaunt, and from 1426 was a cardinal of the Church of Rome. See
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916"><title>P&amp;P</title></ref>.
       </p>
      </div>
     </body>
