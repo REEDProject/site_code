@@ -16,7 +16,7 @@
   <xsl:template match="/">
     <add>
       <!-- Treat each eREED record as its own Solr document. -->
-      <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:group/tei:text[@type='record'][not(@copyOf)]" />
+      <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:group/tei:text[@type='record']" />
       <!-- Index front and back matter. -->
       <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:front/tei:div" mode="editorial" />
       <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:back/tei:div" mode="editorial" />
@@ -50,8 +50,14 @@
                            select=".//tei:*[local-name()=('name', 'rs')][@ref]" />
     </doc>
   </xsl:template>
+  
+  <!-- New template to handle records that are shared between collections -->
+  <xsl:template match="tei:text[@copyOf]">
+    <xsl:variable name="target" select="@copyOf" />
+    <xsl:apply-templates select="id($target)" />
+  </xsl:template>
 
-  <xsl:template match="tei:text[@type='record']">
+  <xsl:template match="tei:text[@type='record'][not (@copyOf)]">
     <xsl:variable name="free-text">
       <xsl:apply-templates mode="free-text" select="." />
       <xsl:text> </xsl:text>

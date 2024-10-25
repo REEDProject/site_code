@@ -105,7 +105,7 @@
       </xsl:call-template>
     </xsl:for-each>
   </xsl:template>
-
+<!--
   <xsl:template match="tei:text[@sameAs]">
     <xsl:apply-templates select="@*|node()"/>
   </xsl:template>
@@ -113,6 +113,19 @@
   <xsl:template match="tei:*[@sameAs]">
     <xsl:call-template name="make-xinclude">
       <xsl:with-param name="url" select="@sameAs" />
+    </xsl:call-template>
+  </xsl:template>
+  
+  -->
+  
+  <!-- 2 new templates below for copyOf for records that are shared between collections --> 
+  <xsl:template match="tei:text[@copyOf]">
+    <xsl:apply-templates select="@*|node()"/>
+  </xsl:template>
+  
+  <xsl:template match="tei:*[@copyOf]">
+    <xsl:call-template name="make-xinclude">
+      <xsl:with-param name="url" select="@copyOf" />
     </xsl:call-template>
   </xsl:template>
 
