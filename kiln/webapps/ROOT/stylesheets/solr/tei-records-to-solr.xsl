@@ -55,10 +55,17 @@
   </xsl:template>
 
   <xsl:template match="tei:text[@copyOf]">
+    <!-- Capture the `copyOf` attribute's URI -->
     <xsl:variable name="copyTarget" select="@copyOf" />
+    <!-- Extract the fragment (original record ID) -->
     <xsl:variable name="fragment" select="substring-after($copyTarget, '#')" />
+    <!-- Define the full path to the original record -->
     <xsl:variable name="fullPath" select="concat('/records/', $fragment, '/')" />
-    <xi:include href="{$fullPath}" />
+    
+    <!-- Load the original record document and apply templates -->
+    <xsl:for-each select="document($fullPath)//*[@xml:id=$fragment]">
+      <xsl:apply-templates select="." />
+    </xsl:for-each>
   </xsl:template>
   
   
