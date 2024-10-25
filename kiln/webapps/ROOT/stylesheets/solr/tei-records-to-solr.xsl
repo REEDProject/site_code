@@ -3,7 +3,10 @@
                 xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
+  >
+  
 
   <!-- XSLT to convert a TEI document containing eREED records and
        full EATSML into a Solr index document. -->
@@ -50,14 +53,16 @@
                            select=".//tei:*[local-name()=('name', 'rs')][@ref]" />
     </doc>
   </xsl:template>
-  
-  <!-- New template to handle records that are shared between collections -->
-  <xsl:template match="tei:text[@copyOf]">
-    <xsl:variable name="target" select="@copyOf" />
-    <xsl:apply-templates select="id($target)" />
-  </xsl:template>
 
-  <xsl:template match="tei:text[@type='record'][not (@copyOf)]">
+  <xsl:template match="tei:text[@copyOf]">
+    <xsl:variable name="copyTarget" select="@copyOf" />
+    <xsl:variable name="fragment" select="substring-after($copyTarget, '#')" />
+    <xsl:variable name="fullPath" select="concat('/records/', $fragment, '/')" />
+    <xi:include href="{$fullPath}" />
+  </xsl:template>
+  
+
+  <xsl:template match="tei:text[@type='record']">
     <xsl:variable name="free-text">
       <xsl:apply-templates mode="free-text" select="." />
       <xsl:text> </xsl:text>

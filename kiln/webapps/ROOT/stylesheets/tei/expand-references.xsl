@@ -105,30 +105,29 @@
       </xsl:call-template>
     </xsl:for-each>
   </xsl:template>
+
 <!--
   <xsl:template match="tei:text[@sameAs]">
     <xsl:apply-templates select="@*|node()"/>
   </xsl:template>
-
+-->
+<!--
   <xsl:template match="tei:*[@sameAs]">
     <xsl:call-template name="make-xinclude">
       <xsl:with-param name="url" select="@sameAs" />
     </xsl:call-template>
   </xsl:template>
-  
-  -->
-  
-  <!-- 2 new templates below for copyOf for records that are shared between collections --> 
-  <xsl:template match="tei:text[@copyOf]" priority="2">
-    <xsl:apply-templates select="@*|node()"/>
-  </xsl:template>
-  
-  <xsl:template match="tei:*[@copyOf]" priority="1">
-    <xsl:call-template name="make-xinclude">
-      <xsl:with-param name="url" select="@copyOf" />
-    </xsl:call-template>
-  </xsl:template>
 
+-->
+  
+  <xsl:template match="tei:text[@copyOf]">
+    <xsl:variable name="copyTarget" select="@copyOf" />
+    <xsl:variable name="fragment" select="substring-after($copyTarget, '#')" />
+    <xsl:variable name="fullPath" select="concat('/records/', $fragment, '/')" />
+    <xi:include href="{$fullPath}" />
+  </xsl:template>
+  
+  
   <xsl:template match="tei:*[@target]">
     <xsl:variable name="context" select="." />
     <xsl:copy>
