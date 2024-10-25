@@ -105,21 +105,17 @@
       </xsl:call-template>
     </xsl:for-each>
   </xsl:template>
-  
-  <xsl:template match="tei:text[@copyOf]" priority="10">
-    <!-- Apply attributes first -->
-    <xsl:apply-templates select="@*"/>
-    <!-- Then apply child nodes -->
-    <xsl:apply-templates select="node()"/>
+
+  <xsl:template match="tei:text[@sameAs]">
+    <xsl:apply-templates select="@*|node()"/>
   </xsl:template>
-  
-  <xsl:template match="tei:*[@copyOf]" priority="5">
-    <!-- Apply attributes first -->
+
+  <xsl:template match="tei:*[@sameAs]">
     <xsl:call-template name="make-xinclude">
-      <xsl:with-param name="url" select="@copyOf" />
+      <xsl:with-param name="url" select="@sameAs" />
     </xsl:call-template>
   </xsl:template>
-  
+
   <xsl:template match="tei:*[@target]">
     <xsl:variable name="context" select="." />
     <xsl:copy>

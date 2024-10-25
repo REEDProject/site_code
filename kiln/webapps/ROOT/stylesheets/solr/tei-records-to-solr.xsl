@@ -16,13 +16,13 @@
   <xsl:template match="/">
     <add>
       <!-- Treat each eREED record as its own Solr document. -->
-      <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:group/tei:text[@type='record']" />
+      <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:group/tei:text[@type='record'][not(@copyOf)]" />
       <!-- Index front and back matter. -->
       <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:front/tei:div" mode="editorial" />
       <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:back/tei:div" mode="editorial" />
     </add>
   </xsl:template>
-  
+
   <xsl:template match="tei:div" mode="editorial">
     <doc>
       <field name="file_path">
@@ -52,7 +52,6 @@
   </xsl:template>
 
   <xsl:template match="tei:text[@type='record']">
-    <xsl:variable name="record" select="if (@copyOf) then document(substring-before(@copyOf, '#'))//*[@xml:id = substring-after(@copyOf, '#')] else ." />
     <xsl:variable name="free-text">
       <xsl:apply-templates mode="free-text" select="." />
       <xsl:text> </xsl:text>
