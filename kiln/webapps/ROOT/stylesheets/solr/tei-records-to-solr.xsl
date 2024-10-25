@@ -56,12 +56,9 @@
 
   <xsl:template match="tei:text[@copyOf]">
     <xsl:variable name="copyTarget" select="@copyOf" />
-    <xsl:variable name="fileName" select="substring-before($copyTarget, '#')" />
     <xsl:variable name="fragment" select="substring-after($copyTarget, '#')" />
-    <xsl:variable name="fullPath" select="concat('/records/', $fileName)" />
-    <xsl:for-each select="document($fullPath)//*[@xml:id=$fragment]">
-      <xsl:apply-templates select="." />
-    </xsl:for-each>
+    <xsl:variable name="fullPath" select="concat('/records/', $fragment, '/')" />
+    <xi:include href="{$fullPath}" />
   </xsl:template>
   
   
