@@ -119,11 +119,11 @@
   -->
   
   <!-- 2 new templates below for copyOf for records that are shared between collections --> 
-  <xsl:template match="tei:text[@copyOf]">
+  <xsl:template match="tei:text[@copyOf]" priority="2">
     <xsl:apply-templates select="@*|node()"/>
   </xsl:template>
   
-  <xsl:template match="tei:*[@copyOf]">
+  <xsl:template match="tei:*[@copyOf]" priority="1">
     <xsl:call-template name="make-xinclude">
       <xsl:with-param name="url" select="@copyOf" />
     </xsl:call-template>
