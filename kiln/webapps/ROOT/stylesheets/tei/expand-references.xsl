@@ -106,27 +106,15 @@
     </xsl:for-each>
   </xsl:template>
 
-<!--
-  <xsl:template match="tei:text[@sameAs]">
+  <xsl:template match="tei:text[@copyOf]">
     <xsl:apply-templates select="@*|node()"/>
   </xsl:template>
--->
-<!--
-  <xsl:template match="tei:*[@sameAs]">
+  
+  <xsl:template match="tei:*[@copyOf]">
     <xsl:call-template name="make-xinclude">
-      <xsl:with-param name="url" select="@sameAs" />
+      <xsl:with-param name="url" select="@copyOf" />
     </xsl:call-template>
   </xsl:template>
-
--->
-  
-  <xsl:template match="tei:text[@copyOf]">
-    <xsl:variable name="copyTarget" select="@copyOf" />
-    <xsl:variable name="fragment" select="substring-after($copyTarget, '#')" />
-    <xsl:variable name="fullPath" select="concat('/records/', $fragment, '/')" />
-    <xi:include href="{$fullPath}" />
-  </xsl:template>
-  
   
   <xsl:template match="tei:*[@target]">
     <xsl:variable name="context" select="." />

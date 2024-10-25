@@ -3,10 +3,7 @@
                 xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:xi="http://www.w3.org/2001/XInclude"
-  >
-  
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- XSLT to convert a TEI document containing eREED records and
        full EATSML into a Solr index document. -->
@@ -25,7 +22,7 @@
       <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:back/tei:div" mode="editorial" />
     </add>
   </xsl:template>
-
+  
   <xsl:template match="tei:div" mode="editorial">
     <doc>
       <field name="file_path">
@@ -54,20 +51,8 @@
     </doc>
   </xsl:template>
 
-
-  <xsl:template match="tei:text[@copyOf]">
-    <xsl:variable name="copyTarget" select="@copyOf" />
-    <xsl:variable name="fragment" select="substring-after($copyTarget, '#')" />
-    <xsl:variable name="fullPath" select="concat('/records/', $fragment, '/')" />
-    <xi:include href="{$fullPath}" />
-    <!-- Apply templates to the included document to ensure its fields are indexed -->
-    <xsl:apply-templates select="document($fullPath)//tei:text[@type='record']" />
-  </xsl:template>
-  
-  
-  
-
   <xsl:template match="tei:text[@type='record']">
+    <xsl:variable name="record" select="if (@copyOf) then document(substring-before(@copyOf, '#'))//*[@xml:id = substring-after(@copyOf, '#')] else ." />
     <xsl:variable name="free-text">
       <xsl:apply-templates mode="free-text" select="." />
       <xsl:text> </xsl:text>
