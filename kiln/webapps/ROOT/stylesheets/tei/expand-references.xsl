@@ -98,6 +98,10 @@
     </xsl:copy>
   </xsl:template>
 
+  <xsl:template match="kiln:added/tei:text[@type='record']" mode="record-addition">
+    <xsl:apply-templates select="tei:body/tei:head" />
+  </xsl:template>
+
   <xsl:template match="tei:*[@ana]" mode="#default referenced-record">
     <xsl:for-each select="tokenize(@ana, '\s+')">
       <xsl:call-template name="make-xinclude">

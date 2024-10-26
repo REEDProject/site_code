@@ -262,4 +262,9 @@
     <xsl:apply-templates mode="free-text" />
   </xsl:template>
 
+  <xsl:template match="tei:text[@type='record'][@copyOf]">
+    <xsl:variable name="copyOfId" select="substring-after(@copyOf, '#')" />
+    <xsl:apply-templates select="id($copyOfId)" />
+  </xsl:template>
+
 </xsl:stylesheet>
