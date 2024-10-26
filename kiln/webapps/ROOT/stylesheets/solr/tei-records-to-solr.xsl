@@ -268,7 +268,9 @@
       <xsl:text>Processing copyOf reference: </xsl:text>
       <xsl:value-of select="$copyOfReference" />
     </xsl:message>
-    <xsl:apply-templates select="id($copyOfReference)" />
+    <xsl:apply-templates select="id($copyOfReference)">
+      <xsl:with-param name="collection" select="ancestor::collection/@id" />
+    </xsl:apply-templates>
   </xsl:template>
 
 </xsl:stylesheet>
