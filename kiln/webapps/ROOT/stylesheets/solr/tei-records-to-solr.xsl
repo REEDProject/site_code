@@ -264,6 +264,10 @@
 
   <xsl:template match="tei:text[@type='record'][@copyOf]">
     <xsl:variable name="copyOfId" select="substring-after(@copyOf, '#')" />
+    <xsl:message>
+      <xsl:text>Processing copyOf reference: </xsl:text>
+      <xsl:value-of select="$copyOfId" />
+    </xsl:message>
     <xsl:apply-templates select="id($copyOfId)" />
   </xsl:template>
 
