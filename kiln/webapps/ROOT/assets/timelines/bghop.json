@@ -5264,7 +5264,7 @@
     },
     "bghop-01-0056": {
         "title": "Taylor, Taylors Revenge",
-        "description": "Trial of Wit at the new Hope cancelled",
+        "description": "Articles of Grievance by Players against Philip Henslowe",
         "record_id": "bghop-ridp265267400",
         "regions": {
             "type": "featurecollection",
@@ -5312,108 +5312,6 @@
         },
         "ereed_url": null,
         "record_url": "https://ereed.org/records/bghop-ridp265267400/"
-    },
-    "bghop-01-0061": {
-        "title": "Letter to Edward Alleyn from the Players",
-        "description": "Prince Charles' Players' Letter to Alleyn about leaving the Hope",
-        "record_id": "bghop-ridp265761784",
-        "regions": {
-            "type": "featurecollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "epsg:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Bear Garden 4/Hope Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "574"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09571204309390599,
-                            51.50776757930662
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": null,
-        "ereed_id": null,
-        "category": "BG/Playhouse Business",
-        "time_period": "Hope Playhouse Era: 1613-1626",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": "low",
-            "when": 1616,
-            "sort": 1616,
-            "display": "c. 1616"
-        },
-        "ereed_url": null,
-        "record_url": "https://ereed.org/records/bghop-ridp265761784/"
-    },
-    "bghop-01-0059": {
-        "title": null,
-        "description": "John Henslowe launched Chancery Court Suit vs Agnes Henslowe, Edward Alleyn et al",
-        "record_id": "bghop-ridp267781560",
-        "regions": {
-            "type": "featurecollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "epsg:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Bear Garden 4/Hope Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "574"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09571204309390599,
-                            51.50776757930662
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": null,
-        "ereed_id": null,
-        "category": "Litigation",
-        "time_period": "Hope Playhouse Era: 1613-1626",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1616-01",
-            "sort": "1616-01",
-            "display": "1615/16-01"
-        },
-        "ereed_url": null,
-        "record_url": "https://ereed.org/records/bghop-ridp267781560/"
     },
     "bghop-01-0090": {
         "title": null,
@@ -6669,12 +6567,114 @@
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1616-01-06",
-            "sort": "1616-01-06",
-            "display": "1616-01-06"
+            "when": "1615-01-06",
+            "sort": "1615-01-06",
+            "display": "1615/16-01-06"
         },
         "ereed_url": null,
         "record_url": null
+    },
+    "bghop-01-0059": {
+        "title": null,
+        "description": "John Henslowe launched Chancery Court Suit vs Agnes Henslowe, Edward Alleyn et al",
+        "record_id": "bghop-ridp267781560",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Bear Garden 4/Hope Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "574"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09571204309390599,
+                            51.50776757930662
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": null,
+        "time_period": "Hope Playhouse Era: 1613-1626",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1615-01-16",
+            "sort": "1615-01-16",
+            "display": "1615/16-01-16"
+        },
+        "ereed_url": null,
+        "record_url": "https://ereed.org/records/bghop-ridp267781560/"
+    },
+    "bghop-01-0061": {
+        "title": "Letter to Edward Alleyn from the Players",
+        "description": "Prince Charles' Players' Letter to Alleyn about leaving the Hope",
+        "record_id": "bghop-ridp265761784",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Bear Garden 4/Hope Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "574"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09571204309390599,
+                            51.50776757930662
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "BG/Playhouse Business",
+        "time_period": "Hope Playhouse Era: 1613-1626",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": "low",
+            "when": 1616,
+            "sort": 1616,
+            "display": "c. 1616"
+        },
+        "ereed_url": null,
+        "record_url": "https://ereed.org/records/bghop-ridp265761784/"
     },
     "bghop-01-0057": {
         "title": "Articles of Agreement between Edward Alleyn, Jacob Meade and Players at the 574",
@@ -6773,7 +6773,7 @@
             "precision": null,
             "when": "1616-06-20",
             "sort": "1616-06-20",
-            "display": "1615/16-06-20"
+            "display": "1616-06-20"
         },
         "ereed_url": null,
         "record_url": "https://ereed.org/collections/bghop/appendix-4/"
