@@ -111,13 +111,22 @@
   </xsl:template>
   
   <xsl:template match="tei:text[@copyOf]" priority="10">
+    <!-- Create a variable for the copyOf reference -->
     <xsl:variable name="copyOfReference" select="substring-after(@copyOf, '#')" />
-    <xsl:attribute name="copyOfReference">
-      <xsl:value-of select="$copyOfReference" />
-    </xsl:attribute>
-    <!-- Apply attributes and child nodes -->
-    <xsl:apply-templates select="@*"/>
-    <xsl:apply-templates select="node()"/>
+    
+    <!-- Create a new element or modify the existing one -->
+    <xsl:element name="{name()}">
+      <!-- Add the copyOfReference attribute -->
+      <xsl:attribute name="copyOfReference">
+        <xsl:value-of select="$copyOfReference" />
+      </xsl:attribute>
+      
+      <!-- Apply other attributes -->
+      <xsl:apply-templates select="@*[name() != 'copyOf']"/>
+      
+      <!-- Apply child nodes -->
+      <xsl:apply-templates select="node()"/>
+    </xsl:element>
   </xsl:template>
   
   <xsl:template match="tei:*[@copyOf]" priority="5">
