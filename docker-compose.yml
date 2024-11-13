@@ -51,7 +51,7 @@ services:
         "--chdir=/app",
         "--timeout",
         "180",
-        "--forwarded-allow-ips='*'",
+        "--forwarded-allow-ips=0.0.0.0",
       ]
     depends_on:
       postgres:
