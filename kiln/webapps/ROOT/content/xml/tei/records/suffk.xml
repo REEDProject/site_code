@@ -21903,7 +21903,6 @@ patron/troupe -->.</p>
        type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1572">1572</date>
       <seg ana="taxon:SUIP63">SUIP63</seg></head>
-     <!-- IN: DO NOT INDEX YET -->
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid422-transcription">
       <div><head>mbs 3-4 <supplied>(16 May)</supplied></head>
        <pb type="membrane"/>
@@ -21911,20 +21910,20 @@ patron/troupe -->.</p>
        <gap reason="omitted"/>
        
        <ab><gap reason="omitted"/>Et ultimo dam<ex>us</ex> &amp; concedem<ex>us</ex> p<ex>ro</ex> nobis hered<ex>ibus</ex> &amp;
-        successorib<ex>us</ex> n<ex>ost</ex>ris p<ex>re</ex>fat<ex>is</ex> Balliuis Burgens<ex>ibus</ex> &amp;
-        Co<ex>mm</ex>u<ex>n</ex>itat<ex>i</ex> ville n<ex>ost</ex>re p<ex>re</ex>d<ex>i</ex>c<ex>t</ex>e &amp; sucessorib<ex>us</ex>
+        successorib<ex>us</ex> n<ex>ost</ex>ris p<ex>re</ex>fat<ex>is</ex> <rs ref="eats:402653" type="Collective_Office">Balliuis</rs> <rs ref="eats:297065" type="Collective_Office">Burgens<ex>ibus</ex></rs> &amp;
+        Co<ex>mm</ex>u<ex>n</ex>itat<ex>i</ex> <rs ref="eats:369522" type="Place_PA_Settlement">ville</rs> n<ex>ost</ex>re p<ex>re</ex>d<ex>i</ex>c<ex>t</ex>e &amp; sucessorib<ex>us</ex>
         suis imp<ex>er</ex>p<ex>etuu</ex>m q<ex>uo</ex>d bene liceat &amp; licebit tam p<ex>re</ex>dict<ex>is</ex>
         Balliuis Burgens<ex>ibis</ex> &amp; Co<ex>mun</ex>itat<ex>i</ex> p<ex>ro</ex> tempore existen<ex>te</ex>
         q<ex>ua</ex>m eisdem &amp; talib<ex>us</ex> gub<ex>er</ex>nator<ex>ibus</ex> officar<ex>ijs</ex> vel
         ministr<ex>is</ex> quos &amp; quales p<ex>re</ex>dict<ex>i</ex> Balliui Burgens<ex>es</ex> &amp;
         Co<ex>mmun</ex>itat'<note type="foot">Co<ex>mmun</ex>itat': <hi rend="italic">for</hi> Communitas</note> appunctuabunt siue
         ordinabunt de tempore in tempus esse gub<ex>er</ex>natores offic<ex>iarios</ex> vel
-        ministr<ex>os</ex> sub se euisdem domus voc<ex>ate</ex> <foreign xml:lang="eng">Christ<ex>es</ex> hospitall</foreign>
+        ministr<ex>os</ex> sub se euisdem domus voc<ex>ate</ex> <foreign xml:lang="eng"><rs ref="eats:458709" type="Place_F_Hospital">Christ<ex>es</ex> hospitall</rs></foreign>
         aut illar<ex>um</ex> aliar<ex>um</ex> domor<ex>um</ex> eidem hospitali spectan<ex>ti</ex> &amp;
         trib<ex>us</ex> vel duob<ex>us</ex> eor<ex>um</ex> officiar<ex>iorum</ex> omni<ex>n</ex>o post hac de
         tempore in tempus tam infra Burgum &amp; villam p<ex>re</ex>dict<ex>os</ex> &amp;
         suburbijs<note type="foot">suburbijs: <hi rend="italic">for</hi> suburbia</note> eiusdem q<ex>u</ex>am alibi infra
-        dict<ex>um</ex> Com<ex>itatum</ex> nostrum Suff<ex>olicie</ex> inquirere &amp; examinare
+        dict<ex>um</ex> Com<ex>itatum</ex> nostrum <rs ref="eats:2273" type="Place_County">Suff<ex>olicie</ex></rs> inquirere &amp; examinare
         diligent<ex>er</ex> omnib<ex>us</ex> vijs &amp; modis quib<ex>us</ex> melius scire potuerint
         s<ex>e</ex>c<ex>un</ex>d<ex>u</ex>m eor<ex>um</ex> prudenciam &amp; discrec<ex>i</ex>o<ex>n</ex>em om<ex>n</ex>es &amp;
         om<ex>n</ex>imod<ex>a</ex> suspiciosas domos tab<ex>er</ex>nas diu<ex>er</ex>saria
@@ -21935,7 +21934,7 @@ patron/troupe -->.</p>
         quibuscumq<ex>ue</ex> no<ex>m</ex>i<ex>n</ex>ib<ex>us</ex> seu titulis illa seu eor<ex>um</ex> alique
         sint aut erunt vocat<ex>a</ex> nuncupat<ex>a</ex> aut appelat<ex>a</ex> acetiam scrutari
         inuestigar<ex>e</ex> ac inquirere om<ex>n</ex>es &amp; singulas domos aliquo modo suspectas
-        siue locos quoscumq<ex>ue</ex> suspectos p<ex>ro</ex> ocios<ex>is</ex> ruffianis ingnauis
+        siue locos quoscumq<ex>ue</ex> suspectos p<ex>ro</ex> ocios<ex>is</ex> <rs ref="eats:194093" type="CrimesMisdemeanors">ruffianis ingnauis</rs>
         ganionib<ex>us</ex> vagabundis &amp; vallidis mendicis siue al<ex>ijs</ex> quibuscumq<ex>ue</ex>
         p<ex>er</ex>sonis suspect<ex>is</ex> &amp; ho<ex>m</ex>i<ex>n</ex>ib<ex>us</ex> quibuscumq<ex>ue</ex> &amp;
         mulierib<ex>us</ex> seu viris mali no<ex>min</ex>is &amp; fame Et eosdem Ruffianos
