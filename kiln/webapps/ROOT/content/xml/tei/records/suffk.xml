@@ -41932,7 +41932,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
 
        <gap reason="omitted"/>
 
-       <ab>It<ex>e</ex>m duob<ex>us</ex> menstralib<ex>us</ex> d<ex>omi</ex>ni Bonnser xij d.</ab>
+       <ab>It<ex>e</ex>m duob<ex>us</ex> <rs ref="eats:459133" type="Collective_Troupe">menstralib<ex>us</ex> d<ex>omi</ex>ni Bonnser</rs> xij d.</ab>
 
        <gap reason="omitted"/>
       </div>
@@ -42639,7 +42639,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
          <cell><gap reason="omitted"/></cell>
         </row>
         <row>
-         <cell>It<ex>em</ex> mi<ex>n</ex>strall' D<ex>omi</ex>ni Ioh<ex>ann</ex>is Bone. </cell>
+         <cell>It<ex>em</ex> <rs ref="eats:459058" type="Collective_Troupe">mi<ex>n</ex>strall' D<ex>omi</ex>ni Ioh<ex>ann</ex>is Bone</rs>. </cell>
          <cell rend="right">viij d.</cell>
         </row>
        </table>
@@ -43811,6 +43811,8 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
         </row>
        </table>
       </div>
+      </div>
+     <div xml:lang="eng" type="translation">
       <div>
        <head>f 147v <supplied>(1 October-25 April)</supplied></head>
        <pb n="147v" type="folio"/>
