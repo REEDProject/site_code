@@ -45332,7 +45332,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
           </row>
           <row>
            <cell/>
-           <cell>Girsecote/ Visage, &amp; Magote Menestrall<ex>is</ex> facientib<ex>us</ex> eodem
+           <cell><rs ref="eats:461340" type="Person_Male">Girsecote</rs>/ <rs ref="eats:461381" type="Person_GenderUnknown">Visage</rs>, &amp; <rs ref="eats:461422" type="Person_GenderUnknown">Magote</rs> Menestrall<ex>is</ex> facientib<ex>us</ex> eodem
             modo menstralcias suas coram d<ex>i</ex>c<ex>t</ex>a d<ex>omi</ex>na Elizabeth<ex>a</ex>
             die p<ex>re</ex>d<ex>i</ex>c<ex>t</ex>o p<ex>e</ex>r manus d<ex>i</ex>c<ex>t</ex>i
              d<ex>omi</ex>ni Ioh<ex>ann</ex>is ibidem eodem die cuilibet eor<ex>um</ex> xx s. de
@@ -45341,8 +45341,8 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
           </row>
           <row>
            <cell/>
-           <cell>Diuersis Menestrall<ex>is</ex> facientib<ex>us</ex> Menestralcias suas coram Comite
-             Holland<ex>ie</ex> &amp; Comitissa fil<ex>ia</ex> R<ex>egis</ex> die nuptiar<ex>um</ex>
+           <cell>Diuersis Menestrall<ex>is</ex> facientib<ex>us</ex> Menestralcias suas coram <rs ref="eats:461463" type="Person_Male">Comite
+             Holland<ex>ie</ex></rs> &amp; Comitissa fil<ex>ia</ex> R<ex>egis</ex> die nuptiar<ex>um</ex>
              suar<ex>um</ex> p<ex>re</ex>d<ex>i</ex>c<ex>t</ex>o de dono eiusdem Comitis
              p<ex>er</ex> p<ex>re</ex>c<ex>eptum</ex> R<ex>egis</ex> videl<ex>i</ex>c<ex>et</ex>
             Ricardino vidulatori Morello Regi. Guilloto de Ros Ianino le leutor Thome le ffol
@@ -45639,8 +45639,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
 
          <gap reason="omitted"/>
 
-         <ab type="indent">Ex pacto Domini Sacristæ<!-- add closing square bracket here as
-punctuation in xml --> Prodeant testes in caussa Taurina. Testis primus comparuit vir
+         <ab type="indent">Ex pacto Domini Sacristæ] Prodeant testes in caussa Taurina. Testis primus comparuit vir
           probus ac lepidus, Iacobus Copinus Notarius publicus, in Ecclesiasticis circumvicinæ
           Iurisdictionis Curiis Procurator. Profert ille Registrum autenticum Monasterii S. Edmundi,
           olim Sacristæ custodiæ destinatum. Legit distinctè Dominus Copinus: Hæc indentura testatur
