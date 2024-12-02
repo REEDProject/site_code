@@ -154,7 +154,7 @@
 
        <table>
         <row>
-         <cell>It<ex>em</ex> sold <rs ref="eats:368485" type="Drama_Character">sent Nycholas</rs>
+         <cell>It<ex>em</ex> sold <rs ref="eats:21537 eats:368485" type="Drama_Character">sent Nycholas</rs>
           <rs ref="eats:71388" type="Thing_TheatricalCostume">cote</rs> &amp; <rs ref="eats:302360"
            type="Thing_TheatricalCostume">woode</rs> greately eatyn w<ex>y</ex>t<ex>h</ex>
            moth<ex>es</ex></cell>
@@ -222,7 +222,7 @@
        <table>
         <row>
          <cell>Ite<ex>m</ex> to <rs ref="eats:367448" type="Person_Male">Mr Rycherd
-           Clopto<ex>n</ex></rs> for a seme of <rs ref="eats:40978" type="Thing_FoodDrink">malt</rs>
+           Clopto<ex>n</ex></rs> for a seme of <rs ref="eats:40997" type="Thing_FoodDrink">malt</rs>
            Agey<ex>n</ex>st þe gamy<ex>n</ex>g</cell>
          <cell rend="right">xvj s.</cell>
         </row>
@@ -3767,7 +3767,7 @@
          <cell>Re<ex>sseyuyd</ex> of <rs ref="eats:399513" type="Person_Male">rychard clark</rs> for
           a motheter<note type="foot">motheter: <hi rend="italics">for</hi> motheten</note>
           <rs ref="eats:71388" type="Thing_TheatricalCostume">cot</rs> of red of <rs
-           ref="eats:368485 eats:21537" type="Drama_Character">saynt necolas</rs><note type="foot"
+           ref="eats:21537 eats:368485" type="Drama_Character">saynt necolas</rs><note type="foot"
            >necolas: co <hi rend="italic">written over other letters</hi></note></cell>
          <cell rend="right">xiij d. <del>vix s. j d.</del></cell>
         </row>
@@ -8688,8 +8688,7 @@ patron/troupe -->.</p>
        <gap reason="omitted"/>
 
        <ab><gap reason="omitted"/>It<ex>e</ex>m solut<ex>um</ex>
-        <rs ref="eats:1225" type="Entertainer_Type">le trompett</rs> in absencia <rs
-         ref="eats:27258" type="Collective_Clergy">abbat<ex>is</ex></rs> ad <rs ref="eats:43376"
+        <rs ref="eats:1225" type="Entertainer_Type">le trompett</rs> in absencia <rs ref="eats:458403" type="Person_Male">abbat<ex>is</ex></rs> ad <rs ref="eats:43376"
          type="CalendarDay_Liturgical">festu<ex>m</ex> s<ex>an</ex>c<ex>t</ex>i
          Ed<ex>mund</ex>i</rs> iij s<gap reason="omitted"/>.</ab>
 
@@ -20306,12 +20305,6 @@ patron/troupe -->.</p>
        troupe performed on Corpus Christi days, guild feasts, and the bailiffs' entries into the
        city and their official departures therefrom. The troupe also performed as actors. Martin
        further served as the Clerk of the Market; see Stokes, 'Waits' pp 19–21). </p>
-
-      <p> John de Vere (<hi rend="italic">c</hi> 1516–62) was sixteenth earl of Oxford from 21 March
-       1539/40, with residence at Hedingham Castle, Essex. See <ref
-        target="https://library2.utm.utoronto.ca/otra/reed/node/316374"
-       ><title>P&amp;P</title></ref>. </p>
-
 
       <p> John de Vere (<hi rend="italic">c</hi> 1516–62) was sixteenth earl of Oxford from 21 March
        1539/40, with residence at Hedingham Castle, Essex. See <ref
@@ -34548,6 +34541,9 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
        <gap reason="omitted"/>
       </div>
      </div>
+     <div type="endnote">
+      <p>Thomas Fitz Alan (1450-1524) was 22nd Earl of Arundel, with residence at Arundel Castle, Sussex.</p>
+     </div>
     </body>
    </text>
    <text type="record" xml:id="suffk-rid497">
@@ -35563,6 +35559,9 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
 
        <gap reason="omitted"/>
       </div>
+     </div>
+     <div type="endnote">
+      <p>John de Vere (1442-1513) was 13th Earl of Oxford, with residence at Hedingham Castle, Essex</p>
      </div>
     </body>
    </text>
@@ -37219,7 +37218,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
 
        <table>
         <row>
-         <cell>It<ex>em</ex> Receyuyd for ye May <rs ref="eats:40561" type="Entertainment_Type"
+         <cell>It<ex>em</ex> Receyuyd for ye <rs ref="eats:35779" type="Entertainment_FolkCustom">May</rs> <rs ref="eats:40561" type="Entertainment_Type"
            >ale</rs> ye s<ex>u</ex>m<ex>m</ex>a</cell>
          <cell rend="right">li. iij s. iiij d. ob.</cell>
         </row>
