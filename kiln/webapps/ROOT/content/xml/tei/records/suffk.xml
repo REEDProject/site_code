@@ -7609,7 +7609,6 @@
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:368503"
        type="Place_F_ReligiousHouse">Bury St Edmunds Abbey</rs>
       <date from-iso="1335" precision="low" to-iso="1336"><hi rend="italic">c</hi> 1335–6</date>
-      <!-- IN: READY FOR INDEXING --><!--AW: Location Tagging Done -->
       <seg ana="taxon:SUAB08">SUAB08</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid8-transcription">
       <div>
@@ -7661,7 +7660,7 @@
        <ab>It<ex>e</ex>m dat<ex>um</ex> cont<ex>ra</ex> Turniament<ex>um</ex> de <rs
          ref="eats:324038" type="Place_PA_Settlement">nouo marcheto</rs><note type="foot">nouo
          mercheto: <hi rend="italic">Newmarket</hi></note>
-        <rs ref="eats:445925" type="Person_Male">Ioh<ex>ann</ex>i Chesam</rs> heraud<ex>o</ex>
+        <rs ref="eats:445925" type="Person_Male">Ioh<ex>ann</ex>i Chesam</rs> <rs ref="eats:418970" type="Collective_Occupations">heraud<ex>o</ex></rs>
          p<ex>ro</ex> d<ex>omi</ex>no Reg<ex>e</ex> xl s.</ab>
 
        <ab>It<ex>e</ex>m <rs ref="eats:445986" type="Person_Male">Manprene</rs>. xl. d.
@@ -38235,7 +38234,9 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
       </div>
      </div>
      <div type="endnote">
-      <p> Anne of Denmark (1574–1618/19) was crowned queen of England on 25 July 1603.</p>
+      <p> Anne of Denmark (f [4v]1574–1618/19) was crowned as queen on 25 July 1603. See <ref
+       target="https://library2.utm.utoronto.ca/otra/reed/node/315847"
+       ><title>P&amp;P</title></ref>.</p>
      </div>
     </body>
    </text>
@@ -38515,7 +38516,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
         <row>
          <cell>Given to the <rs ref="eats:437058" type="Collective_Troupe">Queens players</rs> the
            <rs ref="eats:21924" type="Collective_Troupe">La<ex>die</ex> Elizabeth hir players</rs>
-          and the Children of the revells</cell>
+          and the <rs ref="eats:437031" type="Collective_Troupe">Children of the revells</rs></cell>
          <cell rend="right">xxviij s.</cell>
         </row>
        </table>
@@ -38537,9 +38538,10 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
        crowned queen of Bohemia 7 November 1619, with residences in Europe from 1613. See <ref
         target="https://library2.utm.utoronto.ca/otra/reed/node/315884"
        ><title>P&amp;P</title></ref>.</p>
-
-
-
+      
+      <p> Anne of Denmark (f [4v]1574–1618/19) was crowned as queen on 25 July 1603. See <ref
+       target="https://library2.utm.utoronto.ca/otra/reed/node/315847"
+       ><title>P&amp;P</title></ref>.</p>
      </div>
     </body>
    </text>
@@ -45457,7 +45459,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
 
          <table>
           <row>
-           <cell>To a harper of lord Hugh <lb/>of Cressingham#160;&#160;&#160;&#160;&#160;</cell>
+           <cell>To a harper of lord Hugh <lb/>of Cressingham&#160;&#160;&#160;&#160;&#160;</cell>
            <cell> To Giloto, harper of Lord Hugh of Cressingham, returning to the same, his lord, in
             Scotland from a gift of the king by his own hands at (Bury) St Edmunds, 20
             November</cell>
@@ -45467,7 +45469,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
            <cell><gap reason="omitted"/></cell>
           </row>
           <row>
-           <cell>Harpers of the king#160;&#160;&#160;&#160;&#160;</cell>
+           <cell>Harpers of the king&#160;&#160;&#160;&#160;&#160;</cell>
            <cell>To Nicholas and Adam, harpers of the king, from a gift of the same king, for a
             piece of wood to be bought by them (<hi rend="italic">or</hi> him?) for their portable
             bed (<hi rend="italic">? lit.</hi> bed to be carried), Lord Peter <damage><gap
@@ -45479,7 +45481,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
            <cell><gap reason="omitted"/></cell>
           </row>
           <row>
-           <cell>Dancer#160;&#160;&#160;&#160;&#160;</cell>
+           <cell>Dancer&#160;&#160;&#160;&#160;&#160;</cell>
            <cell>To Matilda Makejoy , a dancer who did her dances before Lord Edward, son of the
             king, in the hall of the same king from a gift of the same Lord Edward by the hands of
             Nicholas Arcard at Ipswich, 27 December</cell>
@@ -45490,7 +45492,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
           </row>
           <row>
            <cell>To minstrels on the wedding day of the Countess of Holland, daughter of the
-            king#160;&#160;&#160;&#160;&#160;</cell>
+            king&#160;&#160;&#160;&#160;&#160;</cell>
            <cell>To John, page of the king, fiddler and his companion, Simon, (his) son, a minstrel
             making (their) minstralcy on the wedding day of Elizabeth, daughter of the king,
             Countess of Holland, to each of them, 50s from a gift of the king by the hands of Lord
