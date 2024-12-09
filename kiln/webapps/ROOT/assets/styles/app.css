@@ -7,8 +7,21 @@
     src: /* url('Symbola.otf'); */
       url('Symbola.woff2') format('woff2'),
         url('Symbola.woff') format('woff');         
-    unicode-range: U+2E4E, U+204B, U+204C, U+2E3F;
+    unicode-range: U+2E4E, U+204B, U+204C;
 }
+
+@font-face {
+    font-family: 'Courier New';
+}
+
+.uni-2e3f {
+    font-family: 'Courier New', monospace;
+}
+
+[data-unicode="2e3f"] {
+    font-family: 'Courier New', monospace;
+}
+
  
 html {
     font-family: sans-serif;
