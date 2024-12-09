@@ -40946,7 +40946,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
 
        <ab><gap reason="omitted"/>It<ex>e</ex>m dat<ex>um</ex>
         <rs ref="eats:455535" type="Person_Male">Ioh<ex>ann</ex>i Wyrly</rs> &amp; sociis
-         <del>so</del> suis <rs ref="eats:14146" type="Entertainment_FolkCustom"
+        <del>so</del> suis <rs ref="eats:8782" type="Entertainer_Type"
          >ludent<ex>ibus</ex></rs> in <rs ref="eats:41461" type="CalendarDay_Liturgical">Natale
           D<ex>omi</ex>ni</rs> iiij s<gap reason="omitted"/>. It<ex>e</ex>m dat<ex>um</ex>
         <rs ref="eats:455509" type="Collective_Troupe">menstrall' Comit<ex>is</ex>
@@ -44833,6 +44833,68 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
      </div>
     </body>
    </text>
+   <text type="record" xml:id="suffk-rid668">
+    <body>
+     <head><rs>Suffolk</rs>, <rs>Bury St Edmunds</rs> <date when-iso="1494">1493/4</date> <seg ana="taxon:SUJBW1">SUJBW1</seg></head>
+     <div xml:lang="eng" type="transcription" xml:id="suffk-rid668-transcription">
+      <div><head>ff 24-4v <supplied>(7 January)</supplied></head>
+       <pb type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <ab><gap reason="omitted"/>It<ex>e</ex>m I geve and bequethe to the Gylde of seynt Iohn Baptist in Bury
+        and also for the Revell on Seynt Edmund<ex>es</ex> <del>E</del> nyght my <pb/> longe gown of
+        blak demaske and my short gowne of damakse and I will that Iohn Basse haue
+        the kepyng of the seid ij gownes duryng his lyff and aft<ex>er</ex> the
+        discease of the seid Iohn Basse to remayn to thuse aboueseid<gap reason="omitted"/></ab>
+      </div>
+     </div>
+     <div type="endnote">
+      <p>
+       John Basse (d. 1506) was 'a prominent draper' of Bury, who would
+       'request burial in the north porch of St Mary's church in his will'
+       written in 1506 (Gibson, Theatre of Devotion, pp 115, and 206, n 37).
+       Given the content concerning Basse and the St Edmund's Night revel, in
+       John Benale's will, Basse was a fellow member of the uild of St John
+       Baptist and a participant, along with Benale, in that revel.
+      </p>
+     </div>
+    </body>
+   </text><text type="record" xml:id="suffk-rid669">
+    <body>
+     <head><rs>Suffolk</rs>, <rs>Lavenham</rs> <date when-iso="1557">1557</date> <seg ana="taxon:SULV01">SULV01</seg></head>
+     <div xml:lang="eng" type="transcription" xml:id="suffk-rid669-transcription">
+      <div><head>f 330 <supplied>(19 November)</supplied></head>
+       <pb n="330" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <ab>Item he dyd giue vnto his brother Rob<ex>e</ex>rt Critofte his best dublet his
+        Cote his best cloke his tabret w<ex>i</ex>th the pypes and stik flewed w<ex>i</ex>th
+        syluer all his maskinge geare with visers and the drome, all his new
+        dauncinge crestes w<ex>i</ex>th all his foyle assydew and glew all his gylt
+        workes lyeng vppon the chambre in a chist a table paynted of the passion
+        of christe<gap reason="omitted"/>. It<ex>e</ex>m he dyd gyve to Rob<ex>e</ex>rt Boyton his s<ex>er</ex>uaunt
+        all his paynters patrones<gap reason="omitted"/>.</ab>
+      </div>
+     </div>
+     <div type="endnote">
+      <p>
+       Dymond says that in Sexten's original will, Critofte is identified as
+       Sexten's cousin rather than his brother (Suffolk Archives, Bury: IC
+       500/1/20, f 249). Dymond has used the registered version of Sexten's will
+       because, as he says, 'the original is damaged and incomplete'
+       (<title>Three Entertainers </title>, p 5, n 11).</p>
+      
+      <p>
+       Citing J.O. Halliwell-Phillips, <title>Dictionary of Archaic and
+        Provincial Words</title>, vol 1 (London, 1846), p 97, Dymond says that
+       'assidue' was much used by participants at Christmas and on Plough Monday,
+       in referring to their decorations.
+      </p>
+     </div>
+    </body>
+   </text>
   </group>
   <back>
    <div n="1" type="appendix" xml:id="appendix-1">
@@ -44890,12 +44952,12 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
      </floatingText>
     </div>
     <div>
-     <floatingText type="record" xml:id="suffk-rid668">
+     <floatingText type="record" xml:id="suffk-rid674">
       <body>
        <head><rs>Suffolk</rs>, <rs>Bury St Edmunds</rs>
         <date from-iso="1347" to-iso="1348">1347-8</date>
         <seg ana="taxon:SUBU24">SUBU24</seg></head>
-       <div xml:lang="lat" type="transcription" xml:id="suffk-rid668-transcription">
+       <div xml:lang="lat" type="transcription" xml:id="suffk-rid674-transcription">
         <div>
          <head>mb 9 <supplied>(29 September-29 September)</supplied></head>
          <pb n="9" type="membrane"/>
@@ -45151,12 +45213,12 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
      </floatingText>
     </div>
     <div>
-     <floatingText type="record" xml:id="suffk-rid669">
+     <floatingText type="record" xml:id="suffk-rid675">
       <body>
        <head><rs>Suffolk</rs>, <rs>Bury St Edmunds</rs>
         <date when-iso="1348">1347/8</date>
         <seg ana="taxon:SUEBPI">SUEBPI</seg></head>
-       <div xml:lang="lat" type="transcription" xml:id="suffk-rid669-transcription">
+       <div xml:lang="lat" type="transcription" xml:id="suffk-rid675-transcription">
         <div>
          <head>f 43 <supplied>(February) (Gifts given by the prince)</supplied></head>
          <pb n="43" type="folio"/>
