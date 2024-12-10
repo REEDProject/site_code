@@ -5,8 +5,8 @@
 @font-face {
     font-family: 'Symbola';
     src: /* url('Symbola.otf'); */
-      url('Symbola.woff2') format('woff2'),
-        url('Symbola.woff') format('woff');         
+      url('/assets/styles/Symbola.woff2') format('woff2'),
+        url('/assets/styles/Symbola.woff') format('woff');         
     unicode-range: U+2E4E, U+204B, U+204C, U+2E3F;
 }
 
