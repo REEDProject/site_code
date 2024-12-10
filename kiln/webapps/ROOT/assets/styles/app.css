@@ -11,7 +11,7 @@
 }
 
 .special-character {
-    font-family: 'Symbola', 'Segoe UI Symbol', 'Arial Unicode MS', 'Apple Symbols', 'Helvetica Neue', monospace; /* Fallback fonts */
+    font-family: 'Georgia', 'Symbola', 'Segoe UI Symbol', 'Arial Unicode MS', 'Apple Symbols', 'Helvetica Neue', monospace; /* Fallback fonts */
 }
 
 
@@ -5756,7 +5756,7 @@ table.hover tbody tr:hover {
 }
 
 .record .special-character {
-    font-family: Symbola, Segoe UI Symbol, Arial Unicode MS, Apple Symbols, Helvetica Neue, monospace !important;
+    font-family: Georgia, Symbola, Segoe UI Symbol, Arial Unicode MS, Apple Symbols, Helvetica Neue, monospace !important;
 }
 
 .record .record-info-inner {
