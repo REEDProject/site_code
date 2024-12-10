@@ -5755,6 +5755,10 @@ table.hover tbody tr:hover {
     line-height: 24px
 }
 
+.record .special-character {
+    font-family: Symbola, Segoe UI Symbol, Arial Unicode MS, monospace !important;
+}
+
 .record .record-info-inner {
     padding-bottom: 10px
 }
