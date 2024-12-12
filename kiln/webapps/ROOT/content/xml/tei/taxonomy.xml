@@ -234,11 +234,14 @@
                         </category>
                         <category xml:id="RT_Manorial">
                             <catDesc>Manorial</catDesc>
+                            <category xml:id="Manorial_Accounts">
+                                <catDesc>Accounts</catDesc>
+                            </category>
                             <category xml:id="Manorial_Courts">
                                 <catDesc>Courts</catDesc>
                             </category>
-                            <category xml:id="Manorial_Accounts">
-                                <catDesc>Accounts</catDesc>
+                            <category xml:id="Manorial_Survey">
+                                <catDesc>Surveys</catDesc>
                             </category>
                         </category>
                         <category xml:id="RT_Playhouse">
