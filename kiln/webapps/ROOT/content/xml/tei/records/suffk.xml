@@ -6359,7 +6359,7 @@
          ref="eats:371490" type="Collective_Office">Wayte</rs> in <rs ref="eats:372934"
          type="Place_PA_Settlement">Bungey</rs> ad vnu<ex>m</ex>
         <rs ref="eats:40398" type="Drama_Type">interludu<ex>m</ex></rs> cora<ex>m</ex>
-        d<ex>omi</ex>na monstrat<ex>um</ex> p<ex>er</ex> ten<ex>uram</ex> suo<note type="foot">suo:
+        <rs ref="eats:27258" type="Collective_Clergy">d<ex>omi</ex>na monstrat<ex>um</ex></rs> p<ex>er</ex> ten<ex>uram</ex> suo<note type="foot">suo:
           <hi rend="italic">for</hi> suam</note> infra temp<ex>us</ex>
         <rs ref="eats:41461" type="CalendarDay_Liturgical">Nat<ex>a</ex>l<ex>is</ex></rs>
          d<ex>omi</ex>ni hoc A<ex>nn</ex>o iiij d<gap reason="omitted"/>.</ab>
@@ -6374,11 +6374,8 @@
 
        <gap reason="omitted"/>
 
-       <ab><gap reason="omitted"/>And given to a
-        <!-- AW for IN: do we tag these kinds of ambiguous things? I think that the prioress prior to this is someone searchable but this isn't-->certain
-        minstrel occupying the office of 'the wait' in Bungay at one interlude performed before the
-        <!-- AW for self: I need to ask how to find this kind of person-->lady (prioress) in the
-        course of his tenure during (<hi rend="italic">or</hi> before) Christmastide this year,
+       <ab><gap reason="omitted"/>And given to a certain minstrel occupying the office of 'the wait' in Bungay at one interlude performed before the
+        lady (prioress) in the course of his tenure during (<hi rend="italic">or</hi> before) Christmastide this year,
          4d<gap reason="omitted"/></ab>
 
        <gap reason="omitted"/>
@@ -7640,7 +7637,7 @@
           s<ex>an</ex>c<ex>t</ex>or<ex>um</ex></rs> Dat<ex>um</ex>
         <rs ref="eats:445321" type="Person_Male">Nich<ex>ola</ex>o</rs> le <foreign xml:lang="eng"
           ><rs ref="eats:150141" type="Entertainer_Type">Tregetour</rs></foreign> xviij d.
-         It<ex>e</ex>m custodi <!-- See isse #183 --><rs ref="eats:453078" type="Collective_Troupe"
+         It<ex>e</ex>m custodi <rs ref="eats:453078" type="Collective_Troupe"
          >vrsorum d<ex>omi</ex>ni de southwode</rs> xviij d. It<ex>e</ex>m
          Sarc<ex>i</ex>o<ex>n</ex>i<note type="foot">Sarc<ex>i</ex>o<ex>n</ex>i: <hi rend="italic"
           >for</hi> Garcioni <hi rend="italic">(?)</hi></note> suo iij d. It<ex>e</ex>m
@@ -8367,13 +8364,11 @@
       <p> Henry Tudor (1491–1546/7) was created prince of Wales in 1503.</p>
 
       <p> John de Vere (1499–1526) was fourteenth earl of Oxford from 1512, with residence at
-       Hedingham Castle, Essex. See <title>P&amp;P</title><!-- IN to add link to
-patron/troupe -->. </p>
+       Hedingham Castle, Essex. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316371"><title>P&amp;P</title></ref>.</p>
 
       <p> Thomas FitzAlan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at
        Arundel Castle, Sussex and lands in Norfolk. See
-       <title>P&amp;P</title><!-- IN to add link to
-patron/troupe -->.</p>
+       <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073"><title>P&amp;P</title></ref>.</p>
      </div>
     </body>
    </text>
@@ -8460,7 +8455,9 @@ patron/troupe -->.</p>
       </div>
      </div>
      <div type="endnote">
-      <!-- IN: Should there be note for Henry VIII's minstrels here? TH: You can ask Jim?-->
+      <p> Henry Tudor (1491–1546/7) was Henry VIII of England from 22 April 1509.  See <ref
+       target="https://library2.utm.utoronto.ca/otra/reed/node/316356"
+       ><title>P&amp;P</title></ref>.</p>
       <p> Sir Robert Curson (1460-1534/5) was knighted in 1489, and named Baron of the Holy Roman
        Empire sometime after 1500, with residence in Ipswich. For useful biographical information on
        Curzon, see John Blatchly and Bill Haward, ‘Sir Robert, Lord Curson, Soldier, Courtier and
@@ -8669,7 +8666,9 @@ patron/troupe -->.</p>
       </div>
      </div>
      <div type="endnote">
-      <p> Henry Tudor (1491–1546/7) was Henry VIII of England from 22 April 1509.</p>
+      <p> Henry Tudor (1491–1546/7) was Henry VIII of England from 22 April 1509.  See <ref
+       target="https://library2.utm.utoronto.ca/otra/reed/node/316356"
+       ><title>P&amp;P</title></ref>.</p>
 
       <p> Henry Courtenay (<hi rend="italic">c</hi> 1498-1538) was first marquess of Exeter from
        1525, with primary residence at West Horsley, Surrey. See <ref
@@ -11245,8 +11244,6 @@ patron/troupe -->.</p>
        type="Place_EA_Diocese">Diocese of Norwich</rs>
       <date when-iso="1578">1578</date>
       <seg ana="taxon:SUVA22">SUVA22</seg></head>
-     <!-- IN: READY FOR INDEXING -->
-     <!-- AW: Locations cleared -->
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid561-transcription">
       <div>
        <head>sig Aiiii</head>
@@ -11540,7 +11537,7 @@ patron/troupe -->.</p>
        <pb n="[B1v]" type="signature"/>
 
        <gap reason="omitted"/>
-       <!--IN: Missing <pb> here? -->
+       <!--IN for PG: Missing <pb> here? -->
        <ab>1 Whether you and the <rs ref="eats:3576" type="Collective_Office">Church-wardens</rs>,
         Quest-men or Side-men, from time to time, do, and haue done their diligence, in not
         suffering any idle person to abide either in the Church yard or Church porch <rs
@@ -13052,7 +13049,6 @@ patron/troupe -->.</p>
      </div>
     </body>
    </text>
-   <!-- IN note to self: started doing People indexing here-->
    <text type="record" xml:id="suffk-rid219" ana="taxon:CentralGov_Courts">
     <body>
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:374084"
@@ -13165,7 +13161,7 @@ patron/troupe -->.</p>
         oute even from his house and all his lande, I put you oute of doubt, This was the kyndnes
         that he fownde, of this his gracelesse son, if he had fownde no better frendes he had ben
         quite vndone, This Grumbold nowe hath sold his land, and as I do heare say, he meanes to
-        live by <!-- IN to self: worth creating a tag for usury here?-->vsury, which is an easy way,
+        live by vsury, which is an easy way,
         ffor he can still to give a grippe, if men fall in his hand, they shalbe sure for to pay the
         forfett of there band, Althoughe that he before ther day tell them they nede not feare, for
         thoughe they vnprovided be; he may them well forbeare, yet when the daye and tyme is past,
@@ -13189,8 +13185,7 @@ patron/troupe -->.</p>
          type="Person_Male">Iohn Haltwaye</rs> of <rs ref="eats:377704" type="Place_PA_Settlement"
          >Burneby</rs> nere vnto the <rs ref="eats:377727" type="Place_F_Property">Smithes
          fforge</rs> or ells at the house of <rs ref="eats:377509" type="Person_Male">Edmond
-         Harys</rs> nere
-          <!--AW note: JS was unsure about this location, so I am leaving it ambiguous-->Hobur<damage><gap
+         Harys</rs> nere Hobur<damage><gap
           unit="chars" extent="1"/></damage><note type="foot">Hobur<damage><gap unit="chars"
            extent="1"/></damage>: <hi rend="italic">as many as 7 characters erased</hi></note> Hill
         And the said Hullock Everard William Hullock and Prudence his wief Thomas Hullock and Mary
@@ -13300,9 +13295,7 @@ patron/troupe -->.</p>
          >slaunderouslie</rs> in the time aforesaid wrote dyvers l<ex>ett</ex>res to one mr <rs
          ref="eats:377795" type="Person_Male">Isaack Wincoll</rs><note type="foot">Isaack Wincoll:
           <hi rend="italic">Isaac Wincoll (b. 1594), gentleman, of Twinstead Hall, Essex, who
-          married
-          <!-- IN for self: not sure if Mary or Thomas Waldegave are worth tagging here?-->Mary,
-          daughter of Thomas Waldegave of the Ferrers in <rs ref="eats:374245"
+          married Mary, daughter of Thomas Waldegrave of the Ferrers in <rs ref="eats:374245"
            type="Place_PA_Settlement">Bures</rs> Hamlet</hi></note> Essex. of <rs ref="eats:374199"
          type="Place_PA_Settlement">Twinsted</rs> in the Countie of <rs ref="eats:1931"
          type="Place_County">Essex</rs> Es<ex>quie</ex>r vnckle to the said Robert Rogers in manner
@@ -14294,7 +14287,6 @@ patron/troupe -->.</p>
        138–8v) are payments for 'baytynge' during Sir John Howard's travels. In this context, the
        word appears simply to mean the providing of food and drink for his horses, as on f 132v a
        payment for baiting his horse.</p>
-      <!-- IN for TH: Not sure I see the relevance of below here? I don't think f 48 is in this record? There is an f 48v in suffk-rid233-->
       <p> On f 48, Howard reimbursed Sir William Warner for money laid out at tennis. </p>
      </div>
     </body>
@@ -14413,9 +14405,10 @@ patron/troupe -->.</p>
       </div>
      </div>
      <div type="endnote">
-      <!--IN for TH: P&P link to be added here?-->
       <p> John de la Pole (f 65; 1442–92), second duke of Suffolk from 1463, with residence at <rs
-        ref="eats:373838" type="Place_PA_Settlement">Wingfield, Suffolk</rs>.</p>
+       ref="eats:373838" type="Place_PA_Settlement">Wingfield, Suffolk</rs>. See <ref
+        target="https://library2.utm.utoronto.ca/otra/reed/node/316247"
+        ><title>P&amp;P</title></ref>.</p>
 
       <p> The hockpot (f 65) was the container that in many communities held the proceeds from a
        post-Easter game, a mock battle, in which the women of the parish 'captured' the men with
@@ -14758,8 +14751,7 @@ patron/troupe -->.</p>
 
        <table>
         <row>
-         <cell>Item, <rs ref="eats:163205" type="Person_Male">my master</rs> gaff to the
-          <!--IN: worth creating a new entertainer entity for heralds?-->heraudes the same day, </cell>
+         <cell>Item, <rs ref="eats:163205" type="Person_Male">my master</rs> gaff to the <rs ref="eats:418970" type="Collective_Occupations">heraudes</rs> the same day, </cell>
          <cell rend="right">x.s.</cell>
         </row>
         <row>
@@ -16385,7 +16377,6 @@ patron/troupe -->.</p>
          <cell>It<ex>em</ex> paid <rs ref="eats:442941" type="Person_Male">robson</rs>
           <rs ref="eats:442978" type="Person_Female">wiff </rs>for þ<ex>a</ex>t <rs
            ref="eats:328073" type="Thing_ClothingMaterials">fustiane</rs> for þe dobletȝ</cell>
-         <!-- IN to self: Return to this after Jim answers #82-->
          <cell rend="right">vj s.</cell>
         </row>
         <row>
@@ -16445,7 +16436,6 @@ patron/troupe -->.</p>
 
        <table>
         <row>
-         <!-- IN to self: return to this after #84 in spreadsheet -->
          <cell>The xv day of feu<ex>er</ex>er my lord boght of <hi rend="italic">(blank)</hi>
           <rs ref="eats:443019" type="Person_GenderUnknown">cawwodde</rs> a <rs ref="eats:10906"
            type="Entertainer_Type">singer</rs> of <rs ref="eats:165732" type="Place_F_Church"
@@ -16521,7 +16511,6 @@ patron/troupe -->.</p>
 
        <table>
         <row>
-         <!-- IN to self: revisit this after JS answer -->
          <cell>It<ex>e</ex>m for shone to þe children of þe chapel</cell>
          <cell rend="right">xviij d.</cell>
         </row>
@@ -17509,7 +17498,7 @@ patron/troupe -->.</p>
        </table>
 
        <pb/>
-       <!--Extra <pb> here?-->
+       <!--In for PG: Extra <pb> here?-->
       </div>
       <div>
        <head>col 1</head>
@@ -18200,7 +18189,6 @@ patron/troupe -->.</p>
          ib<ex>id</ex>em in festo <rs ref="eats:41497" type="CalendarDay_Liturgical"
          >Corp<ex>or</ex>is Chr<ex>ist</ex>i</rs> erunt admin<ex>iculari</ex>e<note type="foot"
           >admin<ex>iculari</ex>e: <hi rend="italic">for</hi> adminicularij</note> cu<ex>m</ex>
-        <!-- IN for self: Tabernacle of St Thomas to be tagged here? -->
         tab<ex>er</ex>nac<ex>u</ex>lo S<ex>anct</ex>i Thome mart<ex>yris</ex>
          t<ex>r</ex>ansient<ex>e</ex>
         <rs ref="eats:40619" type="Entertainment_Type">p<ex>ro</ex>cess<ex>ionaliter</ex></rs>
@@ -18997,7 +18985,6 @@ patron/troupe -->.</p>
          <cell/>
         </row>
         <row>
-         <!-- IN to self: Need to figure out what to do with these friars groups -->
          <cell>ffriers Carmelit<ex>es</ex>
           <lb/> ffriers Minors <lb/> ffriers prechors</cell>
          <cell><hi rend="italic">(blank)</hi></cell>
@@ -19013,8 +19000,6 @@ patron/troupe -->.</p>
        type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1503">1503</date>
       <seg ana="taxon:SUIP15">SUIP15</seg></head>
-     <!-- IN: READY FOR INDEXING -->
-     <!-- AW: Locations cleared -->
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid332-transcription">
       <div>
        <head>p 434 <supplied>(24 April) (Ordinance)</supplied></head>
@@ -19231,7 +19216,6 @@ patron/troupe -->.</p>
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522"
        type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1508">1508</date>
-      <!-- IN: READY FOR INDEXING --><!-- AW: Locations cleared -->
       <seg ana="taxon:SUIP6A">SUIP6A</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid290-transcription">
       <div>
@@ -19263,7 +19247,6 @@ patron/troupe -->.</p>
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522"
        type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1509">1509</date>
-      <!-- IN: READY FOR INDEXING --><!-- AW: Locations cleared -->
       <seg ana="taxon:SUIP6A">SUIP6A</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid291-transcription">
       <div>
@@ -19312,15 +19295,13 @@ patron/troupe -->.</p>
      <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522"
        type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1511">1511</date>
-      <!-- IN: READY FOR INDEXING --><!-- AW: Locations checked - 1 comment -->
       <seg ana="taxon:SUIP6A">SUIP6A</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid292-transcription">
       <div>
        <head>p 308 <supplied>(7 November)</supplied></head>
        <pb n="308" type="page"/>
 
-       <ab>Ad hanc Cur<ex>iam</ex>
-        <!-- AW for IN: do you think this court might have a specific place? -->ordinauer<ex>unt</ex>
+       <ab>Ad hanc Cur<ex>iam</ex> ordinauer<ex>unt</ex>
         <del>will<ex>elmum</ex> Rivet</del> m<ex>agist</ex>ros de le <rs ref="eats:403978"
          type="Drama_Type">pagent</rs> s<ex>an</ex>c<ex>t</ex>i Georgij <rs ref="eats:447451"
          type="Person_Male">Thom<ex>am</ex> Cuttinge</rs> &amp; <rs ref="eats:447512"
@@ -19396,7 +19377,7 @@ patron/troupe -->.</p>
         <rs ref="eats:405485" type="Drama_TitledWork">Corpus Chr<ex>ist</ex>i pley</rs> p<ex>ro</ex>
          a<ex>nn</ex>o sequen<ex>ti</ex> dimittit<ex>ur</ex> et no<ex>n</ex> ludit<ex>ur</ex><note
          type="foot">ludit<ex>ur</ex>: <hi rend="italic">for</hi> ludetur<hi rend="italic"
-         >(?)</hi></note> Et q<ex>uo</ex>d prandiu<ex>m</ex> vocat<ex>um</ex> x<note type="foot">x:
+         >(?)</hi></note> Et q<ex>uo</ex>d <rs ref="eats:40561" type="Entertainment_Type">prandiu<ex>m</ex></rs> vocat<ex>um</ex> x<note type="foot">x:
           <hi rend="italic">likely for deletion</hi></note> Corpus Chr<ex>ist</ex>i Dyner
          p<ex>ro</ex> a<ex>nn</ex>o seq<ex>uenti</ex> si<ex>m</ex>ilit<ex>er</ex>
          dimittit<ex>ur</ex> et differrat<ex>ur</ex> et q<ex>uo</ex>d quilib<ex>e</ex>t
@@ -21613,9 +21594,7 @@ patron/troupe -->.</p>
        ><title>P&amp;P</title></ref>. </p>
 
       <p> George Tuke (1525-74) was sheriff of Essex in 1567, with residence at Layer Marney,
-       situated between Colchester and Maldon, Essex.
-       <!-- IN: George Tuke not in P&P as far as I can tell. Can't find him in HPO or ODNB either. -->See
-        <title>P&amp;P</title><!-- IN to add link to patron/troupe -->. </p>
+       situated between Colchester and Maldon, Essex.</p>
      </div>
     </body>
    </text>
@@ -22263,7 +22242,7 @@ patron/troupe -->.</p>
         exempt places which are within the said town and suburbs of the same, or within our said
         county of Suffolk, the same ruffians, gluttons, vagabonds, and beggars, but also to commit
         the tenants, masters, lords, or keepers of such houses or suspected places where any such
-        person or persons shall be found <pb/><!--Extra <pb> here?--> together with suspected
+        person or persons shall be found <pb/><!--IN for PG: Extra <pb> here?--> together with suspected
         persons into the house of occupations of the aforesaid Christ's Hospital by deliberation and
         examination of the said four governors or in any other way to punish each and everyone of
         them, by the aforesaid deliberation and examination just as it seems (proportionate) at that
@@ -22447,8 +22426,7 @@ patron/troupe -->.</p>
          ><title>P&amp;P</title></ref>. </p>
 
       <p> Henry Wriothesley (f 71v; 1545–81), third earl of Southampton from 1550, with residences
-       at Tichfield and Itchell, near Dogmersfield, Hampshire. See
-       <title>P&amp;P</title><!-- IN to add link to patron/troupe. IN for TH: No P&P page for Wriothesley (1545-81). Can add link to ODNB instead? -->. </p>
+       at Tichfield and Itchell, near Dogmersfield, Hampshire.</p>
 
       <p> Robert Dudley (f 72v; 1532 or 1533–88), fourteenth earl of Leicester from 29 September
        1564, with seats at Kenilworth, Warwickshire, and Wanstead, Essex. See <ref
@@ -23863,11 +23841,9 @@ patron/troupe -->.</p>
        See <title>P&amp;P</title> pages for <ref
         target="https://library2.utm.utoronto.ca/otra/reed/node/315845">Robert Dudley</ref> or <ref
         target="https://library2.utm.utoronto.ca/otra/reed/node/315846">Robert Devereux</ref>. </p>
-      <!-- IN for TH: I've changed the wording for the P&P link above. I can instead insert links into the en text, though I think that might be confusing? -->
 
       <p> Frederick Windsor (1559–85) was fourth Baron Windsor of Stanwell from 1575, with residence
-       at Stanwell, Surrey. See <title>P&amp;P</title><!-- IN to add link to
-patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->. </p>
+       at Stanwell, Surrey.</p>
 
       <p> Edward de Vere (1550–1604) was seventeenth earl of Oxford from 3 August 1562, with
        residences at Hedingham Castle, Essex, and Hackney, Middlesex. See <ref
@@ -26583,8 +26559,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
         <rs ref="eats:1243" type="Entertainer_Type">music<ex>i</ex>ons</rs>
         <note type="marginal" place="margin_left">A libertie gr<ex>a</ex>unted <lb/>to the
           music<ex>i</ex>ons to <lb/>goe beyonde ye seas</note>of this <rs ref="eats:369522"
-         type="Place_PA_Settlement">Towne</rs> touchinge libertie of the goinge beyonde the
-        <!-- AW for IN: Is the Seas something that can be tagged? IN: I wouldn't tag this-->seas
+         type="Place_PA_Settlement">Towne</rs> touchinge libertie of the goinge beyonde the seas
         this som<ex>m</ex>er next, It is nowe Agreed at this Courte that the said music<ex>i</ex>ons
         shall haue libertie accordinglie to goe &amp; passe at there pleasure.</ab>
 
@@ -27121,7 +27096,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
         begynne Att <rs ref="eats:239365" type="CalendarDay_Liturgical">chr<ex>ist</ex>mas</rs> next
         And that they shall haue Allowed them eu<ex>er</ex>ie yere that they shall make them <rs
          ref="eats:43439" type="Thing_LiveryRegalia">liveries</rs>
-        <!-- IN: stray <pb/> here? --><pb/> Twelue shilling<ex>es</ex> A pece seas they shall goe
+        <!-- IN for PG: stray <pb/> here? --><pb/> Twelue shilling<ex>es</ex> A pece seas they shall goe
         decentlie Ap<ex>ar</ex>elled p<ex>ro</ex>uided that the said Iohn Bett<ex>es</ex> shall not
         att any tyme hereafter take any p<ex>er</ex>son into his Companye dwellinge out of this
         Towne w<ex>i</ex>thout the Consent of the <rs ref="eats:402653" type="Collective_Office"
@@ -28947,8 +28922,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
            yard<ex>es</ex> &amp; iij q<ex>uar</ex>t<ex>er</ex> of blewe <rs ref="eats:302518"
            type="Thing_ClothingMaterials">clothe</rs> for the vj <rs ref="eats:406229"
            type="Collective_Office">waites</rs>
-          <rs ref="eats:43439" type="Thing_LiveryRegalia">Lyveries</rs> at x s vj d the
-          <!-- AW for IN: is this a place, I can't tell. IN: Pretty sure this refers to yards of cloth.-->yard </cell>
+          <rs ref="eats:43439" type="Thing_LiveryRegalia">Lyveries</rs> at x s vj d the yard</cell>
          <cell rend="right">iiij li xj s. x d. </cell>
         </row>
        </table>
@@ -31805,8 +31779,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
         and besydes thee ffower poundes yerely whiche was givenn her by my <rs ref="eats:423962"
          type="Person_Male">late husbande</rs>, and I giue vnto her one featherbed boulster and
         Coveringe and all theise premisses not otherwise excepte my sonne shall refuse to keepe her
-        and maintaine her duringe her lief in his
-        <!-- AW for IN: since these are specific housse, are they worth tagging? IN: No, not worth tagging these-->howse,
+        and maintaine her duringe her lief in his howse,
         the whiche I doe rather wish for him to keepe her for that shee hathe benne a Longe <rs
          ref="eats:297010" type="Collective_Occupations">s<ex>er</ex>uante</rs>, then to putt her
         awaye out of his house: Also from the tyme that <rs ref="eats:424206" type="Person_Male"
@@ -32408,8 +32381,9 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
 
       <p> My lord of Essex, whose players were paid on f 78v, was Walter Devereux (1539–76),
        eighteenth earl of Essex from 4 May 1572, with residences at Lamphey, Pembrokeshire, and
-       Chartley, Staffordshire. </p>
-      <!-- IN for TH: Should we add a P&P link here?-->
+       Chartley, Staffordshire.  See <ref
+        target="https://library2.utm.utoronto.ca/otra/reed/node/316048"
+        ><title>P&amp;P</title></ref>.</p>
      </div>
     </body>
    </text>
@@ -32748,7 +32722,7 @@ patron/troupe. IN for TH: Can't find Frederick Windsor in P&P. Remove text? -->.
          <cell>To <rs ref="eats:426411" type="Person_Male">George Langeley</rs> assomuch by him
           payed for a linke to alight <rs ref="eats:424824" type="Person_Male">my
            m<ex>aste</ex>r</rs> from a <rs ref="eats:40453" type="Drama_Type">playe</rs> at the
-          <!-- AW for self: the heck is a temple?-->temple </cell>
+          temple</cell>
          <cell rend="right">iiij d.</cell>
         </row>
        </table>
