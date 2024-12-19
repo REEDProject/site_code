@@ -3944,6 +3944,14 @@
                         </sense>
                     </entry>
                     
+                    <entry xml:id="distray">
+                        <form>
+                            <orth>distray</orth>
+                            <gram>v</gram>
+                        </form>
+                        <sense xml:id="distray-1">destroy</sense>
+                    </entry>
+                    
                     <entry xml:id="distreyne">
                         <form>
                             <orth>distreyne</orth>, <!--these forms already exist in the records; 'distreyne' is the most common variant-->
@@ -4038,7 +4046,14 @@
                         </form>
                         <sense xml:id="droncnes-1">drunkness, drunkenness</sense>
                     </entry>
-
+   
+                    <entry xml:id="droomers">
+                        <form>
+                            <orth>droomers</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="droomers-1">droomers</sense>
+                    </entry>
                     <entry xml:id="dwe">
                         <form>
                             <orth>dwe</orth>
@@ -4046,7 +4061,13 @@
                         </form>
                         <sense xml:id="dwe-1"> due </sense>
                     </entry>
-
+                    <entry xml:id="dwly">
+                        <form>
+                            <orth>dwly</orth>
+                            <gram>adv</gram>
+                        </form>
+                        <sense xml:id="dwly-1"> duely </sense>
+                    </entry>
                     <entry xml:id="dysarde">
                         <form>
                             <orth>dysarde</orth>
@@ -4236,6 +4257,15 @@
                         <sense xml:id="fache-1">fetch</sense>
                     </entry>
 
+                    <entry xml:id="fa-laes">
+                        <form>
+                            <orth>fa-laes</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="fa-laes-1">madrigals or 'ballets'
+                        </sense>
+                    </entry>
+
                     <entry xml:id="falchon">
                         <form>
                             <orth>falchon</orth>
@@ -4311,6 +4341,15 @@
                                     (and n.) and adj.2</hi>]</ref></sense>
                         <!--n.b. the markup here is not in error: "adv. (and n.) and adj.2" is the full grammatical designation-->
                     </entry>
+                    
+                    
+                    <entry xml:id="felwys">
+                        <form>
+                            <orth>felwys</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="felwys-1"> fellows </sense>
+                    </entry>
                     <entry xml:id="ferdingalles">
                         <form>
                             <orth>ferdingalles</orth>
@@ -4342,7 +4381,14 @@
                         </form>
                         <sense xml:id="fett-1">fetched</sense>
                     </entry>
-
+                    
+                    <entry xml:id="fettyth">
+                        <form>
+                            <orth>fettyth</orth>
+                            <gram>v pr 3 sg</gram>
+                        </form>
+                        <sense xml:id="fettyth-1">fits, is suitable</sense>
+                    </entry>
                     <entry xml:id="feuerell">
                         <form>
                             <orth>feuerell</orth>
@@ -4418,15 +4464,32 @@
                         </form>
                         <sense xml:id="flonge-1">flung </sense>
                     </entry>
-
+                    
+                    <entry xml:id="folis">
+                        <form>
+                            <orth>folis</orth>
+                            <gram>n poss</gram>
+                        </form>
+                        <sense xml:id="folis-1"> fool's 
+                        </sense>
+                    </entry>
 
                     <entry xml:id="folo">
                         <form>
                             <orth>foloythe</orth>
-                            <gram>v pr 3 s</gram>
+                            <gram>v pr 3 sg</gram>
                         </form>
                         <sense xml:id="folo-1">follows </sense>
                     </entry>
+                   
+                    <entry xml:id="fookes">
+                        <form>
+                            <orth>fookes</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="fookes-1">folks</sense>
+                    </entry>
+                    
                     <entry xml:id="forfeict">
                         <form>
                             <orth>forfeict</orth>
@@ -4511,10 +4574,9 @@
                             <orth>frindg</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="frindg-1"> fringe </sense>
+                        <sense xml:id="frindg-1"> fringe, ornamental bordering; <form><orth>frynge</orth></form> </sense>
                     </entry>
-
-
+ 
                     <entry xml:id="frise">
                         <form>
                             <orth>frise</orth>
@@ -4531,7 +4593,8 @@
                         </form>
                         <sense xml:id="fyld-1">cannon</sense>
                     </entry>
-
+ 
+                     
                     <entry xml:id="fylle">
                         <form>
                             <orth>fylle</orth>
@@ -4539,6 +4602,14 @@
                             <orth>on the fylle</orth>
                         </form>
                         <sense xml:id="fylle-1">in full</sense>
+                    </entry>
+                    <entry xml:id="fylyd">
+                        <form>
+                            <orth>fylyd</orth>
+                            <gram>v pasp</gram>
+                            <orth>fylyd</orth>
+                        </form>
+                        <sense xml:id="fylyd-1">filed, defiled, made dirty</sense>
                     </entry>
 
                 </div>
@@ -4619,7 +4690,16 @@
                             <hi rend="bold">gather</hi></xr>
                         <!--see "gather" above: tagged only when sense is ambiguous-->
                     </entry>
-
+ 
+                    
+                    <entry xml:id="gedr">
+                    <form>
+                        <orth>gedr</orth>
+                        <gram>v</gram>
+                    </form>
+                    <sense xml:id="gedr-1"> gather </sense>
+                    </entry>
+                    
                     <entry xml:id="gernynge">
                         <form>
                             <orth>gernynge</orth>
@@ -4660,7 +4740,7 @@
                             <!--inf based on 'geddred'; neither spelling appears more frequently-->
                             <gram>v inf</gram>
                         </form>
-                        <sense xml:id="geddred-1">to gather; <form>
+                        <sense xml:id="geddred-1">to gather; <form><orth>gedr</orth>; 
                                 <orth>geddred</orth>, <orth>gedyryd</orth>
                                 <gram>pa</gram>
                             </form>
@@ -4782,7 +4862,7 @@
                             <orth>gyeld</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="gyeld-1">guild</sense>
+                        <sense xml:id="gyeld-1">guild; <form><orth>geld</orth>, <orth>gelde</orth></form></sense>
                     </entry>
 
                     <entry xml:id="gyless">
