@@ -3563,13 +3563,14 @@
                         </form>
                         <sense xml:id="convenaunt-1">covenant</sense>
                     </entry>
-                    
+
                     <entry xml:id="conyngger">
                         <form>
                             <orth>conyngger</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="conyngger-1">cunnigar, a rabbit warren; <form><orth>connygree</orth></form></sense>
+                        <sense xml:id="conyngger-1">cunnigar, a rabbit warren;
+                                    <form><orth>connygree</orth></form></sense>
                     </entry>
                     <entry xml:id="conyngges">
                         <form>
@@ -3619,6 +3620,23 @@
                         <sense xml:id="corlled-1"> curled </sense>
                     </entry>
 
+                    <entry xml:id="corrans">
+                        <form>
+                            <orth>corrans</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="corrans-1">currants, raisins of Corinth</sense>
+                    </entry>
+
+                    <entry xml:id="corranto">
+                        <form>
+                            <orth>corranto</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="corrnato-1">courante, a dance;
+                                    <form><orth>corrantoes</orth><gram>pl</gram></form></sense>
+                    </entry>
+
                     <entry xml:id="coson">
                         <form>
                             <orth>coson</orth>
@@ -3627,13 +3645,21 @@
                         <sense xml:id="coson-1">cousin</sense>
                     </entry>
 
+                    <entry xml:id="cot">
+                        <form>
+                            <orth>cot</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="cot-1">coat</sense>
+                    </entry>
+
+
                     <entry xml:id="cottes">
                         <form>
                             <orth>cottes</orth>
                             <gram>n pl</gram>
                         </form>
-                        <sense xml:id="cottes-1">coats; <form><orth>cootes</orth></form>
-                        </sense>
+                        <sense xml:id="cottes-1">coats; <form><orth>cootes</orth></form></sense>
                     </entry>
 
                     <entry xml:id="coulestaffe">
@@ -3816,6 +3842,7 @@
                         </form>
                         <sense xml:id="dallinge-1">dallying </sense>
                     </entry>
+                      
                     <entry xml:id="danes">
                         <form>
                             <orth>danes</orth>
@@ -3829,7 +3856,7 @@
                             <orth>dawnsor</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="dawnsor-1">dancer</sense>
+                        <sense xml:id="dawnsor-1">dancer; <form><orth>dancher</orth></form></sense>
                     </entry>
 
                     <entry xml:id="dawnssyng">
@@ -3858,8 +3885,9 @@
                         </form>
                         <sense xml:id="dees-1"> dais </sense>
                     </entry>
-
-                    <entry xml:id="demeaynyng">
+                    
+                 
+                   <entry xml:id="demeaynyng">
                         <form>
                             <orth>demeaynyng</orth>
                             <gram>n</gram>
@@ -3891,7 +3919,13 @@
                         <sense xml:id="despose-1">to depose, testify</sense>
                     </entry>
 
-
+                    <entry xml:id="dewke">
+                        <form>
+                            <orth>dewke</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="dewke-1">duke; <form><orth>dewekes</orth><gram>poss</gram></form></sense>
+                    </entry>
                     <entry xml:id="disceipte">
                         <form>
                             <orth>disceipte</orth>
@@ -3901,6 +3935,15 @@
                         </sense>
                     </entry>
 
+                    <entry xml:id="deyzin">
+                        <form>
+                            <orth>deyzin</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="deyzin-1">denizen
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="distreyne">
                         <form>
                             <orth>distreyne</orth>, <!--these forms already exist in the records; 'distreyne' is the most common variant-->
