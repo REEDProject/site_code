@@ -13280,7 +13280,7 @@
          yo<ex>u</ex>r said subiect he shold not doe nor see to be done by any other But to his
         power shold lett the same, &amp; warne yo<ex>u</ex>r said Subiect therof, the Goodes of
          yo<ex>u</ex>r said Subiect he shold not
-        <!--IN for self: Worth creating a tag for financial crimes to tag embezzlement here?-->imbezill,
+        <!--IN for self: Worth creating a tag for financial crimes to tag embezzlement here?--><rs ref="eats:202471" type="CrimesMisdemeanors">imbezill</rs>,
         Alehowses he shold not hawnte, matrymony with any woman he shold not contract, ffrom the
         service of yo<ex>u</ex>r said Subiect he shold not dep<ex>ar</ex>te nor absent himself, But
         in all thinges as a good &amp; feithfull s<ex>er</ex>vant and Apprentice to yo<ex>u</ex>r
@@ -15309,7 +15309,7 @@
        <gap reason="omitted"/>
       </div>
       <div>
-       <head>f 25v <supplied>(11 March)<!-- Dalamar, see below --></supplied></head>
+       <head>f 25v <supplied>(11 March)</supplied></head>
        <pb n="25v" type="folio"/>
 
        <gap reason="omitted"/>
@@ -20960,6 +20960,15 @@
        <gap reason="omitted"/>
       </div>
      </div>
+     <div type="endnote">
+      <p> William Martin was master of a company of five musicians who served as the <rs
+       ref="eats:406229" type="Collective_Office">waits of Ipswich</rs> between 1561 and 1582. The
+       troupe performed on Corpus Christi days, guild feasts, and the bailiffs' entries into the
+       city and their official departures therefrom. The troupe also performed as actors, as
+       evidenced by payments to them for 'plaing the ffoles in the halle' in 1568–9 (C/3/3/2/9, f
+       [10v] and for 'a play at the Mote hall' in 1571–2 (C/3/3/2/12, f [4]). Martin further served
+       as the Clerk of the Market (see James Stokes, 'Waits,' <title>Romard</title>, pp 19-21). </p>
+     </div>
     </body>
    </text>
    <text type="record" xml:id="suffk-rid455" ana="taxon:LocalGov_BoroughCity">
@@ -21003,7 +21012,6 @@
        <gap reason="omitted"/>
       </div>
      </div>
-     <!-- IN for TH: should this en also be present in suffk-rid270? -->
      <div type="endnote">
       <p> William Martin was master of a company of five musicians who served as the <rs
         ref="eats:406229" type="Collective_Office">waits of Ipswich</rs> between 1561 and 1582. The
@@ -32871,8 +32879,7 @@
         <row>
          <cell>In reward by <rs ref="eats:426663" type="Person_Male">Barker</rs> to the <rs
            ref="eats:426700" type="Collective_Occupations">porter</rs> at <rs ref="eats:229148"
-           type="Place_F_Gate">Ludgate</rs> at my m<ex>aste</ex>r his comynge from a playe at
-          <!-- AW for self: the heck is this temple?-->Temple in <rs ref="eats:330339"
+           type="Place_F_Gate">Ludgate</rs> at my m<ex>aste</ex>r his comynge from a playe at <rs ref="eats:486396" type="Place_F_Other">Temple</rs> in <rs ref="eats:330339"
            type="CalendarDay_Liturgical">Candlemas</rs> night </cell>
          <cell rend="right">vj d.</cell>
         </row>
@@ -32889,7 +32896,7 @@
         <row>
          <cell>In reward by my M<ex>aste</ex>r his comandeme<ex>n</ex>t to the <rs ref="eats:426645"
            type="Collective_Office">yeoman of the wardrope</rs> at the
-          <!-- AW for self: which tower?-->tower ij s to <rs ref="eats:21804"
+          <!-- AW for self: which tower?--><rs ref="eats:123553" type="Place_F_PlaceOfPunishment">tower</rs> ij s to <rs ref="eats:21804"
            type="Entertainer_Type">him that keepeth</rs> the <rs ref="eats:357428"
            type="Entertainer_Type">lyons</rs> vj d </cell>
          <cell rend="right">ij s. vj d./</cell>
@@ -39713,9 +39720,7 @@
         there <del><damage><gap unit="chars" extent="4"/></damage></del><note type="foot">
          <del><damage><gap unit="chars" extent="4"/></damage></del>: <hi rend="italic">word
           erased</hi></note>
-        <add place="above">went</add> vnto the then
-        <!-- AW for IN: I am not 100% who the subject is in these letters to tag this house-->dwellinge
-        Howse of yo<ex>u</ex>r said subiecte in wetherden aforesaid in Ryotous mann<ex>er</ex> to
+        <add place="above">went</add> vnto the then dwellinge Howse of yo<ex>u</ex>r said subiecte in wetherden aforesaid in Ryotous mann<ex>er</ex> to
         the entent by force and vyolence that they mighte have taken and gotten yo<ex>u</ex>r said
         subiect out of his mansyon Howse and then to haue eyther murthered or otherwise wounded
          yo<ex>u</ex>r said subiect and they the said Iohn Horne Iames Quarrye Thomas Hamont &amp;
@@ -40155,8 +40160,6 @@
      </div>
     </body>
    </text>
-   <!-- START OF RECORDS UPLOADED 2024-10-02 -->
-
    <text type="record" xml:id="suffk-rid581" ana="taxon:LocalGov_BoroughCity">
     <body>
      <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
@@ -41912,8 +41915,7 @@
 
        <gap reason="omitted"/>
 
-       <ab>It<ex>e</ex>m vni <rs ref="eats:8709" type="Entertainer_Type">menstrallo</rs> de
-        <!-- IN for AW: Beaumont to be mapped/tagged as location here-->Bello mo<ex>n</ex>te<note
+       <ab>It<ex>e</ex>m vni <rs ref="eats:8709" type="Entertainer_Type">menstrallo</rs> de <rs ref="eats:486373" type="Place_PA_Settlement">Bello mo<ex>n</ex>te</rs><note
          type="foot">Bello mo<ex>n</ex>te: <hi rend="italic">Beaumont, Essex</hi></note> xij s.</ab>
 
        <gap reason="omitted"/>
