@@ -4729,8 +4729,8 @@
                         </form>
                         <sense xml:id="gyrcken-1"> jerkin; <form><orth>gearcken</orth></form>,
                                     <form><orth>gearken</orth></form>,
-                                <form><orth>gercken</orth></form>, <form><orth>gerkenes
-                                    </orth><gram>pl</gram></form>
+                                <form><orth>gercken</orth></form>, <form><orth>iyrken</orth></form>,
+                                    <form><orth>gerkenes </orth><gram>pl</gram></form>
                         </sense>
                     </entry>
 
@@ -5240,7 +5240,7 @@
                         </form>
                         <sense xml:id="ianevere-1">January; <form><orth>ianyuery</orth></form>;
                                     <form><orth>ianyver</orth></form>;
-                            <form><orth>ianyvery</orth></form><form><orth>ienever</orth></form>
+                                <form><orth>ianyvery</orth></form><form><orth>ienever</orth></form>
                         </sense>
                     </entry>
 
@@ -5279,8 +5279,8 @@
                         <sense xml:id="ierland-1">Ireland</sense>
                     </entry>
 
- 
-                   <entry xml:id="Iernemuth">
+
+                    <entry xml:id="Iernemuth">
                         <form>
                             <orth>Iernemuth</orth>
                             <gram>n</gram>
@@ -5410,14 +5410,14 @@
                     </entry>
 
                     <entry xml:id="iunger">
-                        
+
                         <form>
                             <orth>iunger</orth>
                             <gram>adj compar</gram>
                         </form>
-                        <sense xml:id="iunger-1">younger
-                             </sense>
+                        <sense xml:id="iunger-1">younger </sense>
                     </entry>
+                    <entry>
                         <form>
                             <orth>iuridiccion</orth>
                             <gram>n</gram>
@@ -5487,12 +5487,29 @@
                     <!--JH: I wasn't sure about this one because we're listing a series of forms before a sense, rather than variants after a sense; above in the Latin glossary cases like this are separated with commas (see e.g. some of the terms under C). Any thoughts on whether this needs to be changed to be more consistent?-->
                     <!-- JH: I think we need to rethink the organization of this one: the long list of variants of "king ale" at the top feels like a bit much. Consider splitting "king ale," "king play," and "king hall" into separate glossary entries?-->
 
+
+                    <entry xml:id="kyes">
+                        <form>
+                            <orth>kyes</orth>
+                            <gram>n pl</gram>
+                        </form>
+                        <sense xml:id="kyes-1">keys</sense>
+                    </entry>
+
                     <entry xml:id="kyltherkyn">
                         <form>
                             <orth>kyltherkyn</orth>
                             <gram>n</gram>
                         </form>
                         <sense xml:id="kyltherkyn-1">kilderkin, a cask</sense>
+                    </entry>
+
+                    <entry xml:id="kytchinge">
+                        <form>
+                            <orth>kytchinge</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="kytchinge-1">kitchen</sense>
                     </entry>
 
                 </div>
@@ -5554,7 +5571,8 @@
                             <orth>lavolto</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="lavolto-1">lavolta, a popular dance</sense>
+                        <sense xml:id="lavolto-1">lavolta, a popular dance;
+                                    <form><orth>levaultoes</orth><gram>pl</gram></form></sense>
                     </entry>
 
                     <entry xml:id="leades">
@@ -5697,6 +5715,13 @@
                         </form>
                         <sense xml:id="loughty-1">lofty</sense>
                     </entry>
+                    <entry xml:id="lowkys">
+                        <form>
+                            <orth>lowkys</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="lowkys-1">locks</sense>
+                    </entry>
 
                     <entry xml:id="lowt">
                         <form>
@@ -5766,10 +5791,16 @@
                         <sense xml:id="lyvie-1">levied </sense>
                     </entry>
 
+                    <entry xml:id="lyure">
+                        <form>
+                            <orth>lyure</orth>
+                            <gram>n</gram>
+                        </form>
+                        <sense xml:id="lyure-1">livery</sense>
+                    </entry>
                 </div>
 
                 <div n="M" xml:id="gloss-eng-M">
-
                     <entry xml:id="mademaryon">
                         <form>
                             <orth>made maryon</orth>
@@ -5777,7 +5808,6 @@
                         </form>
                         <sense xml:id="mademaryon-1">Maid Marian</sense>
                     </entry>
-
                     <entry xml:id="maiar">
                         <form>
                             <orth>maiar</orth>
@@ -5785,7 +5815,6 @@
                         </form>
                         <sense xml:id="maiar-1">mayor</sense>
                     </entry>
-
                     <entry xml:id="mal">
                         <form>
                             <orth>mald</orth>
@@ -5793,7 +5822,6 @@
                         </form>
                         <sense xml:id="mal-1">mauled, knocked, struck (down)</sense>
                     </entry>
-
                     <entry xml:id="mar">
                         <form>
                             <orth>marde</orth>
@@ -5801,7 +5829,6 @@
                         </form>
                         <sense xml:id="mar-1">marred; erred</sense>
                     </entry>
-
                     <entry xml:id="mariolty">
                         <form>
                             <orth>mariolty</orth>
@@ -5809,7 +5836,6 @@
                         </form>
                         <sense xml:id="mariolty-1">mayoralty</sense>
                     </entry>
-
                     <entry xml:id="marresdaunce">
                         <form>
                             <orth>marresdaunce</orth>
@@ -5817,7 +5843,6 @@
                         </form>
                         <sense xml:id="marresdaunce-1">morris dance</sense>
                     </entry>
-
                     <entry xml:id="martij">
                         <form>
                             <orth>martij</orth>
@@ -5825,7 +5850,6 @@
                         </form>
                         <sense xml:id="martij-1">March</sense>
                     </entry>
-
                     <entry xml:id="mase">
                         <form>
                             <orth>mase</orth>
@@ -5833,7 +5857,6 @@
                         </form>
                         <sense xml:id="mase-1">mace; <form><orth>masse</orth></form></sense>
                     </entry>
-
                     <entry xml:id="mawe">
                         <form>
                             <orth>mawe</orth>
@@ -5841,8 +5864,6 @@
                         </form>
                         <sense xml:id="mawe-1"> mallow colour, mauve</sense>
                     </entry>
-
-
                     <entry xml:id="mawkin">
                         <form>
                             <orth>mawkin</orth>
@@ -5852,7 +5873,6 @@
                         <sense xml:id="mawkin-1">in malkin attire, dressed untidily; used here
                             quasi-adverbially</sense>
                     </entry>
-
                     <entry xml:id="mayesgowne">
                         <form>
                             <orth>mayes gowne</orth>
@@ -5861,7 +5881,6 @@
                         <sense xml:id="mayesgowne-1">May's gown, a gown belonging to a character in
                             a May game(?)</sense>
                     </entry>
-
                     <entry xml:id="mease">
                         <form>
                             <orth>mease</orth>
@@ -5869,7 +5888,6 @@
                         </form>
                         <sense xml:id="mease-1">mese, messuage</sense>
                     </entry>
-
                     <entry xml:id="medswett">
                         <form>
                             <orth>medswett</orth>
@@ -5877,7 +5895,6 @@
                         </form>
                         <sense xml:id="medswett-1">meadowsweet</sense>
                     </entry>
-
                     <entry xml:id="mensterl">
                         <form>
                             <orth>mensterl</orth>
@@ -5892,7 +5909,6 @@
                                     <form><orth>mynesryle</orth></form>;
                                     <form><orth>mystrelle</orth></form></sense>
                     </entry>
-
                     <entry xml:id="miesre">
                         <form>
                             <orth>miesre</orth>
@@ -5900,7 +5916,6 @@
                         </form>
                         <sense xml:id="miesre-1">misery</sense>
                     </entry>
-
                     <entry xml:id="moer">
                         <form>
                             <orth>moer</orth>
@@ -5908,7 +5923,6 @@
                         </form>
                         <sense xml:id="moer-1">mower</sense>
                     </entry>
-
                     <entry xml:id="mone">
                         <form>
                             <orth>mone</orth>
@@ -5917,7 +5931,6 @@
                         </form>
                         <sense xml:id="mone-1">pascal money, ie, Easter money</sense>
                     </entry>
-
                     <entry xml:id="monssall">
                         <form>
                             <orth>monssall</orth>
@@ -5925,7 +5938,6 @@
                         </form>
                         <sense xml:id="monssall-1">mensal, monthly payment</sense>
                     </entry>
-
                     <entry xml:id="moo">
                         <form>
                             <orth>moo</orth>
@@ -5933,7 +5945,6 @@
                         </form>
                         <sense xml:id="moo-1">more</sense>
                     </entry>
-
                     <entry xml:id="morec">
                         <form>
                             <orth>mores</orth>
@@ -5944,7 +5955,6 @@
                                 <form><orth>moreys</orth></form>; <form><orth>morreyce</orth></form>
                         </sense>
                     </entry>
-
                     <entry xml:id="morysplayer">
                         <form>
                             <orth>morysplayer</orth>
@@ -5952,7 +5962,6 @@
                         </form>
                         <sense xml:id="morysplayer-1">morris player</sense>
                     </entry>
-
                     <entry xml:id="mose">
                         <form>
                             <orth>mose</orth>
@@ -5960,7 +5969,6 @@
                         </form>
                         <sense xml:id="mose-1"> moss, of moss</sense>
                     </entry>
-
                     <entry xml:id="movth">
                         <form>
                             <orth>movth</orth>
@@ -5969,7 +5977,6 @@
                         <sense xml:id="mouth-1"> mouth, <hi rend="italic">here,</hi> a mouthpiece
                             for a trumpet </sense>
                     </entry>
-
                     <entry xml:id="mowscoller">
                         <form>
                             <orth>mows coller</orth>
@@ -5977,8 +5984,6 @@
                         </form>
                         <sense xml:id="mowscoller-1"> mouse-colour</sense>
                     </entry>
-
-
                     <entry xml:id="museck">
                         <form>
                             <orth>museck</orth>
@@ -5988,7 +5993,6 @@
                             musicians</sense>
                         <!--covered by EATS-->
                     </entry>
-
                     <entry xml:id="musesen">
                         <form>
                             <orth>musesen</orth>
@@ -6006,7 +6010,6 @@
                                 <form><orth>mysysion</orth></form>
                         </sense>
                     </entry>
-
                     <entry xml:id="musitioner">
                         <form>
                             <orth>musitioner</orth>
@@ -6014,15 +6017,18 @@
                         </form>
                         <sense xml:id="musitioner-1">musician</sense>
                     </entry>
-
                     <entry xml:id="mychlmas">
                         <form>
                             <orth>mychlmas</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="mychlmas-1">Michaelmas</sense>
+                        <sense xml:id="mychlmas-1">Michaelmas, the feast of St Michael, observed on
+                            29 September; <form><orth>mihillmes</orth></form>,
+                                    <form><orth>mikelmes</orth></form>,
+                                <form><orth>myhellmes</orth></form>,
+                                <form><orth>mykelmes</orth></form>
+                        </sense>
                     </entry>
-
                     <entry xml:id="myscountance">
                         <form>
                             <orth>myscountance</orth>
@@ -6032,7 +6038,6 @@
                             of discontent, dissatisfaction, or annoyance <ref>[<hi rend="italic"
                                     >OEDO</hi> miscontent <hi rend="italic">n</hi>]</ref></sense>
                     </entry>
-
                     <entry xml:id="mysdemeanannte">
                         <form>
                             <orth>mysdemeanannte</orth>
@@ -6044,7 +6049,6 @@
                                 1]</ref>
                         </sense>
                     </entry>
-
                     <entry xml:id="myserewell">
                         <form>
                             <orth>myserewell</orth>
@@ -6053,7 +6057,6 @@
                         <sense xml:id="myserewell-1">misrule;
                             <form><orth>mysrewell</orth></form></sense>
                     </entry>
-
                 </div>
 
                 <div n="N" xml:id="gloss-eng-N">
