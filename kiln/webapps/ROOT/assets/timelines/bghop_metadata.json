@@ -30,7 +30,7 @@
         },
         "counties": {
             "label": "EREED coverage by county",
-            "url": "http://talus.geog.utoronto.ca/1.0.0/EREED_gis_counties_base_Z8-18/{z}/{x}/{-y}.png",
+            "url": "https://library2.utm.utoronto.ca/tileserver/EREED_gis_counties_base_Z8-18/{z}/{x}/{-y}.png",
             "is_base_layer": true,
             "is_overlay_layer": false,
             "is_start_layer": true,
@@ -40,7 +40,7 @@
         },
         "sewers": {
             "label": "Sewers near Rose Playhouse",
-            "url": "http://talus.geog.utoronto.ca/1.0.0/EREED_gis_Rose_sewersonly/{z}/{x}/{-y}.png",
+            "url": "https://library2.utm.utoronto.ca/tileserver/EREED_gis_Rose_sewersonly/{z}/{x}/{-y}.png",
             "is_base_layer": false,
             "is_overlay_layer": true,
             "is_start_layer": true,
@@ -48,7 +48,7 @@
         },
         "liberties": {
             "label": "Southwark Manors and Liberties",
-            "url": "http://talus.geog.utoronto.ca/1.0.0/EREED_gis_Rose_Liberties_purple/{z}/{x}/{-y}.png",
+            "url": "https://library2.utm.utoronto.ca/tileserver/EREED_gis_Rose_Liberties_purple/{z}/{x}/{-y}.png",
             "is_base_layer": false,
             "is_overlay_layer": true,
             "is_start_layer": false,
@@ -56,7 +56,7 @@
         },
         "parishes": {
             "label": "London area parishes",
-            "url": "http://talus.geog.utoronto.ca/1.0.0/EREED_gis_Rose_Parishes_wlabels/{z}/{x}/{-y}.png",
+            "url": "https://library2.utm.utoronto.ca/tileserver/EREED_gis_Rose_Parishes_wlabels/{z}/{x}/{-y}.png",
             "is_base_layer": false,
             "is_overlay_layer": true,
             "is_start_layer": true,
@@ -64,7 +64,7 @@
         },
         "roads": {
             "label": "Roads",
-            "url": "http://talus.geog.utoronto.ca/1.0.0/EREED_gis_roads_wlabels_Z8-18/{z}/{x}/{-y}.png",
+            "url": "https://library2.utm.utoronto.ca/tileserver/EREED_gis_roads_wlabels_Z8-18/{z}/{x}/{-y}.png",
             "is_base_layer": false,
             "is_overlay_layer": true,
             "is_start_layer": true,
@@ -72,7 +72,7 @@
         },
         "points": {
             "label": null,
-            "url": "http://talus.geog.utoronto.ca/1.0.0/EREED_places_geojson_points_Z8-18/{z}/{x}/{-y}.png",
+            "url": "https://library2.utm.utoronto.ca/tileserver/EREED_places_geojson_points_Z8-18/{z}/{x}/{-y}.png",
             "is_base_layer": false,
             "is_overlay_layer": false,
             "is_start_layer": true,
@@ -80,7 +80,7 @@
         },
         "labels": {
             "label": "Rose Collection place labels",
-            "url": "http://talus.geog.utoronto.ca/1.0.0/EREED_places_geojson_labels_Z8-18/{z}/{x}/{-y}.png",
+            "url": "https://library2.utm.utoronto.ca/tileserver/EREED_places_geojson_labels_Z8-18/{z}/{x}/{-y}.png",
             "is_base_layer": false,
             "is_overlay_layer": true,
             "is_start_layer": true,

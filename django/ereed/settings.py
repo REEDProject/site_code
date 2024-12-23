@@ -136,12 +136,12 @@ LEAFLET_CONFIG = {
     "OVERLAYS": [
         (
             "Pre-1642 Roads",
-            "http://talus.geog.utoronto.ca/1.0.0/REED_gis_roads/{z}/{x}/{-y}.png",
+            "https://library2.utm.utoronto.ca/tileserver/REED_gis_roads/{z}/{x}/{-y}.png",
             {},
         ),
         (
             "Detailed roads in London area",
-            "http://talus.geog.utoronto.ca/1.0.0/EREED_gis_roads_wlabels_Z8-18/{z}/{x}/{-y}.png",
+            "https://library2.utm.utoronto.ca/tileserver/EREED_gis_roads_wlabels_Z8-18/{z}/{x}/{-y}.png",
             {},
         ),
     ],
@@ -166,7 +166,7 @@ LEAFLET_CONFIG = {
         ),
         (
             "Counties",
-            "http://talus.geog.utoronto.ca/1.0.0/EREED_gis_counties_base/{z}/{x}/{-y}.png",
+            "https://library2.utm.utoronto.ca/tileserver/EREED_gis_counties_base/{z}/{x}/{-y}.png",
             {
                 "maxZoom": 20,
                 "attribution": '<a href="http://reed.utoronto.ca/">Records of Early English Drama</a>',
@@ -174,7 +174,7 @@ LEAFLET_CONFIG = {
         ),
         (
             "Relief",
-            "http://talus.geog.utoronto.ca/1.0.0/REED_gis_relief/{z}/{x}/{-y}.png",
+            "https://library2.utm.utoronto.ca/tileserver/REED_gis_relief/{z}/{x}/{-y}.png",
             {"maxZoom": 20},
         ),
     ],
