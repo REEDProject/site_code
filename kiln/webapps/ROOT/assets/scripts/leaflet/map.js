@@ -121,6 +121,7 @@ function addTileLayers(map) {
   let county_coverage = L.tileLayer(
     getREEDLayerURL('EREED_gis_counties_base'), {
       attribution: '<a href="http://reed.utoronto.ca/">Records of Early English Drama</a>',
+      tms:true
     });
   let relief = L.tileLayer(getREEDLayerURL('REED_gis_relief'));
   let osm = L.tileLayer(
@@ -131,8 +132,8 @@ function addTileLayers(map) {
     });
   let roads = L.tileLayer(getREEDLayerURL('EREED_gis_roads'));
   let london_roads = L.tileLayer(getREEDLayerURL('EREED_gis_roads_wlabels_Z8-18'));
-  let symbols = L.tileLayer(getREEDLayerURL('EREED_places_geojson_points'));
-  let labels = L.tileLayer(getREEDLayerURL('EREED_places_geojson_labels'));
+  let symbols = L.tileLayer(getREEDLayerURL('EREED_places_geojson_points'), {tms:true});
+  let labels = L.tileLayer(getREEDLayerURL('EREED_places_geojson_labels'), {tms:true});
   let dioceses_pre = L.tileLayer(getREEDLayerURL('EREED_gis_dioceses_pre1541'));
   let dioceses_post = L.tileLayer(getREEDLayerURL('EREED_gis_dioceses_post1541'));
 
