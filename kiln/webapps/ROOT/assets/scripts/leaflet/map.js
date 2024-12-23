@@ -193,7 +193,7 @@ function fitBounds(map, regionLayer, relatedLayer) {
  * @returns {String}
  */
 function getREEDLayerURL(name) {
-  return 'https://library2.utm.utoronto.ca/tileserver/' + name + '/{z}/{x}/{-y}.png';
+  return 'https://library2.utm.utoronto.ca/tileserver/' + name + '/{z}/{x}/{y}.png';
 }
 
 
