@@ -866,7 +866,16 @@
                             <orth>eboracum, -i</orth>
                             <gram>n nt</gram>
                         </form>
-                        <sense xml:id="eboracum-1">York </sense>
+                        <sense xml:id="eboracum-1">York; <form><orth>aboracum</orth></form></sense>
+                    </entry>
+                    
+
+                    <entry xml:id="Eliensis">
+                        <form>
+                            <orth>Eliensis, -is</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="eliensis-1">of or pertaining to Ely </sense>
                     </entry>
                     
                     <entry xml:id="episcopus">
@@ -907,6 +916,32 @@
                         </sense>
                     </entry>
 
+                    <entry xml:id="Excestria">
+                        <form>
+                            <orth>Excestria, -ae</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="Excestria-1">Exeter </sense>
+                    </entry>
+ 
+                    <entry xml:id="exequiae">
+                        <form>
+                            <orth>exequiae, -arum</orth>
+                            <gram>n f pl</gram>
+                        </form>
+                        <sense xml:id="exequiae-1"><hi rend="italic">var of</hi> exsequiae <ref>[<hi
+                            rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="Essexia">
+                        <form>
+                            <orth>Essexia, -ae</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="Essexia-1">Essex </sense>
+                    </entry>
+                    
                     <entry xml:id="exennia">
                         <form>
                             <orth>exennia, -ie</orth>
@@ -927,7 +962,16 @@
                         </sense>
                     </entry>
 
-
+ 
+                    <entry xml:id="exto">
+                        <form>
+                            <orth>exto, -are, -titi, -titum</orth>
+                            <gram>v</gram>
+                        </form>
+                        <sense xml:id="exto-1"><hi rend="italics">var of</hi> exsto <ref>[<hi rend="italic">DML</hi>
+                            exstare, exsistere]</ref>
+                        </sense>
+                    </entry>
 
                 </div>
 
@@ -949,11 +993,33 @@
                             <gram>n m</gram>
                         </form>
                         <sense xml:id="fistulator-1">piper, possibly a generic term for one who
-                            plays a wind instrument</sense>
+                            plays a wind instrument; <form><orth>fistyllator</orth></form></sense>
                     </entry>
                 </div>
 
                 <div n="G" xml:id="gloss-la-G">
+ 
+                    <entry xml:id="ganio">
+                        <form>
+                            <orth>ganio, -onis</orth>
+                            <gram>n f, m</gram>
+                        </form>
+                        <sense xml:id="ganio-1">
+                            <hi rend="italic">var of</hi> ganeo <ref>[<hi rend="italic"
+                                >DML</hi>]</ref>
+                        </sense>
+                    </entry>
+ 
+                    <entry xml:id="gardianus">
+                        <form>
+                            <orth>gardianus, us</orth>
+                            <gram>n m</gram>
+                        </form>
+                        <sense xml:id="gardianus-1">
+                            <hi rend="italic">var of</hi> gaurdianus <ref>[<hi rend="italic"
+                                >DML</hi>]</ref>
+                        </sense>
+                    </entry>
                     <entry xml:id="gentaculum">
                         <form>
                             <orth>gentaculum</orth>
