@@ -476,7 +476,16 @@
                         </form>
                         <sense xml:id="americanus-1"> American </sense>
                     </entry>
-
+ 
+                    <entry xml:id="araiamentum">
+                        <form>
+                            <orth> araiamentum, -i</orth>
+                            <gram>n nt</gram>
+                        </form>
+                        <sense xml:id="araiamentum-1"> <hi rend="italic">var of</hi>arraiamentum <ref>[<hi
+                            rend="italic">DML</hi>]</ref></sense>
+                    </entry>
+                    
                     <entry xml:id="armorarius">
                         <form>
                             <orth>armorarius, -i</orth>
@@ -607,7 +616,15 @@
                     <!-- PG and JC: in record text or notes (id only needed if pointing to it from glossary) 
                 <p> Canto <term xml:id="term-abc123" ref="glossary-la.xml#balletta-1"
                         >ballettae</term> musicae </p>-->
-
+ 
+                    <entry xml:id="bumbarus">
+                        <form>
+                            <orth>bumbarus, -i</orth>
+                            <gram>n m</gram>
+                        </form>
+                        <sense xml:id="bumbarus-1"> bombard player
+                        </sense>
+                    </entry>
                 </div>
 
                 <div n="C" xml:id="gloss-la-C">
@@ -642,6 +659,14 @@
                                     <ref>[<hi rend="italic">DML</hi>]</ref></sense>
                     </entry>
 
+                    <entry xml:id="carnibreuium">
+                        <form>
+                            <orth>carnibreuium, -i</orth>
+                            <gram>n nt</gram>
+                        </form>
+                        <sense xml:id="carnibreuium-1"><hi rend="italic">var of</hi> carniprivium
+                            <ref>[<hi rend="italic">DML</hi>]</ref>; <form><orth>carnispriuium</orth></form></sense>
+                    </entry>
 
 
                     <entry xml:id="caryandum">
@@ -766,8 +791,14 @@
                         <sense xml:id="cituatum-1"><hi rend="italic"> var of</hi> situatum <ref>[<hi
                                     rend="italic">DML</hi> situare]</ref>
                         </sense>
+                    </entry> 
+                    <entry xml:id="cocus">
+                        <form>
+                            <orth>cocus, -a, -m</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="cocus-1"> <hi rend="italics">var of</hi> caecus <ref>[<hi rend="italics">OLD, DML</hi>]</ref></sense>
                     </entry>
-
                     <entry xml:id="coma">
                         <form>
                             <orth>coma, -e</orth>
@@ -836,7 +867,23 @@
                             questions the validity of a document purported to be a will <ref>[<hi
                                     rend="italics">see Black’s</hi> devisavit vel non]</ref></sense>
                     </entry>
-                    
+                    <entry xml:id="diocensis">
+                        <form>
+                            <orth>diocensis, -is</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="diocensis-1"><hi rend="italic">var of</hi> dioecesis <ref>[<hi
+                            rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+
+                    <entry xml:id="disgrado">
+                    <form>
+                        <orth>disgrado, -are</orth>
+                        <gram>v tr</gram>
+                    </form>
+                    <sense xml:id="disgrado-1"> <hi rend="italics">var of</hi> degrado <ref>[<hi rend="italics">DML</hi>]</ref></sense>
+                    </entry>
                     <entry xml:id="donewicum"><form><orth>donewicum -i</orth> <gram>n nt</gram></form> <sense xml:id="donewicum-1">Dunwich</sense></entry>
 
                     <entry xml:id="Dublenia">
@@ -1559,7 +1606,7 @@
                             <orth>sitheredus, -i</orth>
                             <gram>n m</gram>
                         </form>
-                        <sense xml:id="sitheredus-1"><hi rend="italics">var of </hi> citharoedus [<ref>DML</ref>]
+                        <sense xml:id="sitheredus-1"><hi rend="italics">var of </hi> citharoedus [<ref>DML</ref>]; <form><orth>chitharedus</orth></form>
                         </sense>
                     </entry>
                     
