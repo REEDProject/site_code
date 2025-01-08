@@ -6020,7 +6020,7 @@
             <div>
               <head>Item 5, single membrane <supplied>(20 June) (Rejoinder of Digges and
                   Gape)</supplied></head>
-              <pb n="5" facs="BHEBDGmb5"/>
+              <pb n="5" facs="#BHEBDGmb5"/>
 
               <ab rend="center">The<note type="marginal" place="margin_left"><handShift/>xx<hi
                     rend="superscript">o</hi> Die Iunij A<ex>nn</ex>o R<ex>egi</ex>ne
@@ -8244,7 +8244,7 @@
             </div>
             <div>
               <head>single membrane <supplied>(Schedule of bulls and bears)</supplied></head>
-              <pb n="1" type="membrane" facs="BHBLBG2"/>
+              <pb n="1" type="membrane" facs="#BHBLBG2"/>
 
               <ab>A<note type="foot">A: <hi rend="italic">exdented; written in display
                   script</hi></note> Scedule Indented of all the <rs ref="eats:357316"
@@ -20135,7 +20135,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp258480904-transcription">
             <div>
               <head>f [1] <supplied>(22 October) (Golden Cross, the Strand)</supplied></head>
-              <pb n="[1]" type="folio" facs="#BHLJCS1 #BHLJCS2"/>
+              <pb n="[1]" type="folio" facs="#BHLJCS1"/>
 
               <ab><gap reason="omitted"/>there are very fewe Inhabitant<ex>es</ex> in the
                   Suburb<ex>es</ex> but such as are of poore and desperate fortune<ex>s</ex> And
@@ -20162,6 +20162,7 @@
                   reason="omitted"/></ab>
 
               <gap reason="omitted"/>
+              <pb facs="BHLJCS2"/>
             </div>
           </div>
         </body>
