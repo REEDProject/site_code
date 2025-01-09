@@ -426,7 +426,7 @@
     <graphic url="images/bghop/BHJCDC.jpg" xml:id="BHJCDC">
       <desc>The National Archives (UK), ref. SP 14/148</desc>
     </graphic>
-    <graphic url="images/bghop/BHLJCS1.jpg" xml:id="BHLJCS1">
+    <graphic url="images/bghop/BHLJCS.jpg" xml:id="BHLJCS">
       <desc>The National Archives (UK), ref. SP 16/334</desc>
     </graphic>
     <graphic url="images/bghop/BHBLBG2.jpg" xml:id="BHBLBG2">
@@ -437,9 +437,6 @@
     </graphic>
     <graphic url="images/bghop/BHMRHH2.jpg" xml:id="BHMRHH2">
       <desc>The National Archives (UK), ref. TNA: C 38/25</desc>
-    </graphic>
-    <graphic url="images/bghop/BHLJCS2.jpg" xml:id="BHLJCS2">
-      <desc>The National Archives (UK), ref. SP 16/334</desc>
     </graphic>
     <graphic url="images/bghop/BHWLBG.jpg" xml:id="BHWLBG">
       <desc>The National Archives (UK), ref. C 146/8578</desc>
@@ -20135,7 +20132,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp258480904-transcription">
             <div>
               <head>f [1] <supplied>(22 October) (Golden Cross, the Strand)</supplied></head>
-              <pb n="[1]" type="folio" facs="#BHLJCS1"/>
+              <pb n="[1]" type="folio" facs="#BHLJCS"/>
 
               <ab><gap reason="omitted"/>there are very fewe Inhabitant<ex>es</ex> in the
                   Suburb<ex>es</ex> but such as are of poore and desperate fortune<ex>s</ex> And
@@ -20162,7 +20159,6 @@
                   reason="omitted"/></ab>
 
               <gap reason="omitted"/>
-              <pb facs="#BHLJCS2"/>
             </div>
           </div>
         </body>
