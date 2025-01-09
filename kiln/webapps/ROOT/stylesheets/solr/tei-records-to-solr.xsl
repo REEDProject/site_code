@@ -194,7 +194,7 @@
         <xsl:when test="$value = ('Borough/City', 'County', 'Civil Parish')">
           <xsl:text>local_gov</xsl:text>
         </xsl:when>
-        <xsl:when test="$value = ('Accounts', 'Courts')">
+        <xsl:when test="$value = ('Accounts', 'Courts', 'Surveys')">
           <xsl:text>manorial</xsl:text>
         </xsl:when>
         <xsl:when test="$value = ('Inventories', 'Advertisements', 'Memoranda', 'Business', 'Correspondence', 'Estate')">
