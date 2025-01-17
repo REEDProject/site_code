@@ -1414,7 +1414,7 @@
                             <orth>parachianus, -a, -um</orth>
                             <gram>adj</gram>
                         </form>
-                        <sense xml:id="parachianus-1"><hi rend="italic">var of</hi> paroecianus
+                        <sense xml:id="parachianus-1"><hi rend="italic">var of</hi> paroecianus; <form><orth>parochianus</orth></form>
                                     <ref>[<hi rend="italic">DML</hi>]</ref>
                         </sense>
                     </entry>
@@ -1434,7 +1434,7 @@
                             <orth>parochialis, -e</orth>
                             <gram>adj</gram>
                         </form>
-                        <sense xml:id="parochialis-1">of or pertaining to a parish</sense>
+                        <sense xml:id="parochialis-1"><hi rend="italic">var of</hi> paroecialis <ref>[<hi rend="italics">DML</hi>]</ref></sense>
                     </entry>
 
                     <entry xml:id="pedotriba">
@@ -1550,6 +1550,14 @@
 
                 </div>
                 <div n="R" xml:id="gloss-la-R">
+                    
+                    <entry xml:id="recompensacio">
+                        <form>
+                            <orth>recompensacio, -onis</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="recompensacio-1"><hi rend="italics">var of</hi> recompensio <ref>[<hi rend="italics">DML</hi>]</ref></sense>
+                    </entry>
                     <entry xml:id="redeliberacio">
                         <form>
                             <orth>redeliberacio, -onis</orth>
@@ -1561,7 +1569,25 @@
 
                 </div>
                 <div n="S" xml:id="gloss-la-S">
+                    
+                    <entry xml:id="salianti">
+                        <form>
+                            <orth>salianti</orth>
+                            <gram>prp dat</gram>
+                        </form>
+                        <sense xml:id="salianti-1"><hi rend="italic">var of</hi> salienti; <hi
+                            rend="italic">cp</hi> salio, salire <ref>[<hi rend="italics">OLD, DML</hi>]</ref> </sense>
+                    </entry>
 
+                    <entry xml:id="seisina">
+                        <form>
+                            <orth>seisina, -e</orth>
+                            <gram>n f</gram>
+                        </form>
+                        <sense xml:id="seisina-1">seisin, legal possession
+                        </sense>
+                    </entry>
+                    
                     <entry xml:id="sepes">
                         <form>
                             <orth>sepes, -is</orth>
@@ -1580,6 +1606,15 @@
                         </form>
                         <sense xml:id="seruisa-1"><hi rend="italic">var of</hi> ceruisia <ref>[<hi
                                     rend="italic">DML</hi>]</ref>
+                        </sense>
+                    </entry>
+                    
+                    <entry xml:id="simulcum">
+                        <form>
+                            <orth>simulcum</orth>
+                            <gram>prep</gram>
+                        </form>
+                        <sense xml:id="simulcum-1"> together with
                         </sense>
                     </entry>
 
@@ -1695,6 +1730,14 @@
                             <gram>n nt</gram>
                         </form>
                         <sense xml:id="tripidem-1"><hi rend="italic">var of</hi> tripudium </sense>
+                    </entry>
+                    
+                    <entry xml:id="tubum">
+                        <form>
+                            <orth>tubum, -i</orth>
+                            <gram>n nt</gram>
+                        </form>
+                        <sense xml:id="tubum-1">trumpet; <hi rend="italics">cp</hi> <ref>[<hi rend="italics">OLD</hi>, <hi rend="italics">DML</hi>]</ref> </sense>
                     </entry>
                     
                    
