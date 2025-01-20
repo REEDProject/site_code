@@ -177,8 +177,8 @@
       fellow REED editor, for his selfless contributions during production. No less essential and
       substantive have been the contributions of four talented research assistants on the editorial
       team: Alexandra Atiya (Centre for Medieval Studies), Bibliographer, Latin Glossarian, and
-      Latin Checker; Morgan Moore (Centre for Medieval Studies), Content Checker; Andrew Wiebe,
-      Mapping and Locations Indexer; and Laina Southgate, Assistant Indexer.</p>
+      Latin Checker; Morgan Moore (Centre for Medieval Studies), Content Checker; Andrew Wiebe (Faculty of Information),
+      Mapping and Locations Indexer; and Laina Southgate (Department of English), Assistant Indexer.</p>
 
      <p>Other REED associates who deserve special thanks for their skills and contributions include
       Stephanie Hovland, Stuart Palmer, Matthew Payne, Alan H. Nelson, and Peter Greenfield, who
@@ -6957,7 +6957,7 @@
     <group>
      <text type="record" xml:id="suffk-rid676" ana="taxon:Family_Estate">
       <body>
-       <head><rs>Suffolk</rs>, <rs>Bury St Edmunds</rs>
+       <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:313077" type="Place_PA_Settlement">Bury St Edmunds</rs>
         <date when-iso="1509">1509</date>
         <seg ana="taxon:SUTPW1">SUTPW1</seg></head>
        <div xml:lang="eng" type="transcription" xml:id="suffk-rid676-transcription">
@@ -8664,7 +8664,7 @@
    </text>
    <text type="record" xml:id="suffk-rid11" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Surrey</rs>, <rs ref="eats:368503" type="Place_F_ReligiousHouse">Bury St Edmunds
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:368503" type="Place_F_ReligiousHouse">Bury St Edmunds
        Abbey</rs>
       <date from-iso="1524" to-iso="1525">1524–5</date>
       <seg ana="taxon:SUAB11">SUAB11</seg></head>
@@ -9322,7 +9322,7 @@
    </text>
    <text type="record" xml:id="suffk-rid187" ana="taxon:SocLit_Entertainments">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs>County</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>
       <date when-iso="1578">1578</date>
       <seg ana="taxon:SUCY01">SUCY01</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid187-transcription">
@@ -38043,8 +38043,8 @@
    </text>
    <text type="record" xml:id="suffk-rid531" ana="taxon:Family_Estate">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs><rs ref="eats:385955"
-        type="Place_PA_Settlement">Rougham</rs></rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385955"
+        type="Place_PA_Settlement">Rougham</rs>
       <date when-iso="1621">1621</date>
       <seg ana="taxon:SURO01">SURO01</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid531-transcription">
@@ -40112,8 +40112,8 @@
    </text>
    <text type="record" xml:id="suffk-rid178" ana="taxon:Church_Parish">
     <body>
-     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs><rs ref="eats:450768"
-        type="Place_PA_Settlement">Wattisfield</rs></rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:450768"
+        type="Place_PA_Settlement">Wattisfield</rs>
       <date from-iso="1574" to-iso="1575">1574–5</date>
       <seg ana="taxon:SUCW09">SUCW09</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid178-transcription">
@@ -40664,7 +40664,7 @@
    </text>
    <text type="record" xml:id="suffk-rid581" ana="taxon:LocalGov_BoroughCity">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1443">1443</date>
       <seg ana="taxon:SUIP03">SUIP03</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid581-transcription">
@@ -40723,7 +40723,7 @@
    </text>
    <text type="record" xml:id="suffk-rid582" ana="taxon:LocalGov_BoroughCity">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1445">1445</date>
       <seg ana="taxon:SUIP03">SUIP03</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid582-transcription">
@@ -40825,7 +40825,7 @@
    </text>
    <text type="record" xml:id="suffk-rid583" ana="taxon:LocalGov_BoroughCity">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1491">1491</date>
       <seg ana="taxon:SUIP47">SUIP47</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid583-transcription">
@@ -40877,7 +40877,7 @@
    </text>
    <text type="record" xml:id="suffk-rid584" ana="taxon:LocalGov_BoroughCity">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1491">1491</date>
       <seg ana="taxon:SUIP47">SUIP47</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid584-transcription">
@@ -40921,7 +40921,7 @@
    </text>
    <text type="record" xml:id="suffk-rid585" ana="taxon:LocalGov_BoroughCity">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1507">1507</date>
       <seg ana="taxon:SUIP5A">SUIP5A</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid585-transcription">
@@ -41004,7 +41004,7 @@
    </text>
    <text type="record" xml:id="suffk-rid586" ana="taxon:LocalGov_BoroughCity">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1514">1514</date>
       <seg ana="taxon:SUIP04">SUIP04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid586-transcription">
@@ -41047,7 +41047,7 @@
    </text>
    <text type="record" xml:id="suffk-rid587" ana="taxon:LocalGov_BoroughCity">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1515">1515</date>
       <seg ana="taxon:SUIP04">SUIP04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid587-transcription">
@@ -41083,7 +41083,7 @@
    </text>
    <text type="record" xml:id="suffk-rid588" ana="taxon:LocalGov_BoroughCity">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1515">1515</date>
       <seg ana="taxon:SUIP04">SUIP04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid588-transcription">
@@ -41126,7 +41126,7 @@
    </text>
    <text type="record" xml:id="suffk-rid589" ana="taxon:LocalGov_BoroughCity">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1517">1517</date>
       <seg ana="taxon:SUIP04">SUIP04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid589-transcription">
@@ -41168,7 +41168,7 @@
    </text>
    <text type="record" xml:id="suffk-rid590" ana="taxon:LocalGov_BoroughCity">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1519">1519</date>
       <seg ana="taxon:SUIP04">SUIP04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid590-transcription">
@@ -41205,7 +41205,7 @@
    </text>
    <text type="record" xml:id="suffk-rid591" ana="taxon:LocalGov_BoroughCity">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
       <date when-iso="1520">1520</date>
       <seg ana="taxon:SUIP04">SUIP04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid591-transcription">
@@ -41265,7 +41265,7 @@
    </text>
    <text type="record" xml:id="suffk-rid592" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1402" to-iso="1403">1402-3</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid592-transcription">
@@ -41304,7 +41304,7 @@
    </text>
    <text type="record" xml:id="suffk-rid593" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1403" to-iso="1404">1403-4</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid593-transcription">
@@ -41343,7 +41343,7 @@
    </text>
    <text type="record" xml:id="suffk-rid594" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1404" to-iso="1405">1404-5</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid594-transcription">
@@ -41381,7 +41381,7 @@
    </text>
    <text type="record" xml:id="suffk-rid595" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1405" to-iso="1406">1405-6</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid595-transcription">
@@ -41419,7 +41419,7 @@
    </text>
    <text type="record" xml:id="suffk-rid596" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1406" to-iso="1407">1406-7</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid596-transcription">
@@ -41459,7 +41459,7 @@
    </text>
    <text type="record" xml:id="suffk-rid597" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1407" to-iso="1408">1407-8</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid597-transcription">
@@ -41551,7 +41551,7 @@
    </text>
    <text type="record" xml:id="suffk-rid599" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1409" to-iso="1410">1409-10</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid599-transcription">
@@ -41588,7 +41588,7 @@
    </text>
    <text type="record" xml:id="suffk-rid600" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1410" to-iso="1411">1410-11</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid600-transcription">
@@ -41634,7 +41634,7 @@
    </text>
    <text type="record" xml:id="suffk-rid601" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1411" to-iso="1412">1411-12</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid601-transcription">
@@ -41670,7 +41670,7 @@
 
    <text type="record" xml:id="suffk-rid602" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1412" to-iso="1413">1412-13</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid602-transcription">
@@ -41708,7 +41708,7 @@
    </text>
    <text type="record" xml:id="suffk-rid603" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1413" to-iso="1414">1413-14</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid603-transcription">
@@ -41765,7 +41765,7 @@
    </text>
    <text type="record" xml:id="suffk-rid604" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1414" to-iso="1415">1414-15</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid604-transcription">
@@ -41815,7 +41815,7 @@
    </text>
    <text type="record" xml:id="suffk-rid605" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1415" to-iso="1416">1415-16</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid605-transcription">
@@ -41876,7 +41876,7 @@
    </text>
    <text type="record" xml:id="suffk-rid606" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1416" to-iso="1417">1416-17</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid606-transcription">
@@ -41941,7 +41941,7 @@
    </text>
    <text type="record" xml:id="suffk-rid607" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1417" to-iso="1418">1417-18</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid607-transcription">
@@ -41989,7 +41989,7 @@
    </text>
    <text type="record" xml:id="suffk-rid608" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1418" to-iso="1419">1418-19</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid608-transcription">
@@ -42039,7 +42039,7 @@
    </text>
    <text type="record" xml:id="suffk-rid609" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1419" to-iso="1420">1419-20</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid609-transcription">
@@ -42087,7 +42087,7 @@
    </text>
    <text type="record" xml:id="suffk-rid610" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1420" to-iso="1421">1420-21</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid610-transcription">
@@ -42125,7 +42125,7 @@
    </text>
    <text type="record" xml:id="suffk-rid611" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1421" to-iso="1422">1421-2</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid611-transcription">
@@ -42188,7 +42188,7 @@
    </text>
    <text type="record" xml:id="suffk-rid612" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1422" to-iso="1423">1422-3</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid612-transcription">
@@ -42232,7 +42232,7 @@
    </text>
    <text type="record" xml:id="suffk-rid613" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1423" to-iso="1424">1423-4</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid613-transcription">
@@ -42296,7 +42296,7 @@
    </text>
    <text type="record" xml:id="suffk-rid614" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1424" to-iso="1425">1424-5</date>
       <seg ana="taxon:SUMC04">SUMC04</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid614-transcription">
@@ -42357,7 +42357,7 @@
    </text>
    <text type="record" xml:id="suffk-rid615" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1448" to-iso="1449">1448-9</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid615-transcription">
@@ -42410,7 +42410,7 @@
    </text>
    <text type="record" xml:id="suffk-rid616" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1449" to-iso="1450">1449-50</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid616-transcription">
@@ -42443,7 +42443,7 @@
    </text>
    <text type="record" xml:id="suffk-rid617" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1450" to-iso="1451">1450-1</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid617-transcription">
@@ -42481,7 +42481,7 @@
    </text>
    <text type="record" xml:id="suffk-rid618" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1451">1451</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid618-transcription">
@@ -42519,7 +42519,7 @@
    </text>
    <text type="record" xml:id="suffk-rid619" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1452">1452</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid619-transcription">
@@ -42577,7 +42577,7 @@
    </text>
    <text type="record" xml:id="suffk-rid620" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1452" to-iso="1453">1452-3</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid620-transcription">
@@ -42607,7 +42607,7 @@
    </text>
    <text type="record" xml:id="suffk-rid621" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1453" to-iso="1454">1453-4</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid621-transcription">
@@ -42653,7 +42653,7 @@
    </text>
    <text type="record" xml:id="suffk-rid622" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1454">1454</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid622-transcription">
@@ -42691,7 +42691,7 @@
    </text>
    <text type="record" xml:id="suffk-rid623" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1454" to-iso="1455">1454-5</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid623-transcription">
@@ -42730,7 +42730,7 @@
    </text>
    <text type="record" xml:id="suffk-rid624" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1455">1455</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid624-transcription">
@@ -42763,7 +42763,7 @@
    </text>
    <text type="record" xml:id="suffk-rid625" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1455" to-iso="1456">1455-6</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid625-transcription">
@@ -42795,7 +42795,7 @@
    </text>
    <text type="record" xml:id="suffk-rid626" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1456" to-iso="1457">1456-7</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid626-transcription">
@@ -42843,7 +42843,7 @@
    </text>
    <text type="record" xml:id="suffk-rid627" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1457">1457</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid627-transcription">
@@ -42880,7 +42880,7 @@
    </text>
    <text type="record" xml:id="suffk-rid628" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1457" to-iso="1458">1457-8</date>
       <seg ana="taxon:SUMC05">SUMC05</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid628-transcription">
@@ -42928,7 +42928,7 @@
    </text>
    <text type="record" xml:id="suffk-rid629" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1459">1459</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid629-transcription">
@@ -43008,7 +43008,7 @@
    </text>
    <text type="record" xml:id="suffk-rid630" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1459" to-iso="1460">1459-60</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid630-transcription">
@@ -43051,7 +43051,7 @@
    </text>
    <text type="record" xml:id="suffk-rid631" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1460" to-iso="1461">1460-1</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid631-transcription">
@@ -43109,7 +43109,7 @@
    </text>
    <text type="record" xml:id="suffk-rid632" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1462">1462</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid632-transcription">
@@ -43169,7 +43169,7 @@
    </text>
    <text type="record" xml:id="suffk-rid633" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1462" to-iso="1463">1462-3</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid633-transcription">
@@ -43218,7 +43218,7 @@
    </text>
    <text type="record" xml:id="suffk-rid634" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1463">1463</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid634-transcription">
@@ -43284,7 +43284,7 @@
    </text>
    <text type="record" xml:id="suffk-rid635" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1463" to-iso="1464">1463-4</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid635-transcription">
@@ -43334,7 +43334,7 @@
    </text>
    <text type="record" xml:id="suffk-rid636" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1464" to-iso="1465">1464-5</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid636-transcription">
@@ -43430,7 +43430,7 @@
    </text>
    <text type="record" xml:id="suffk-rid637" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1464" to-iso="1465">1464-5</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid637-transcription">
@@ -43474,7 +43474,7 @@
    </text>
    <text type="record" xml:id="suffk-rid638" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1465">1465</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid638-transcription">
@@ -43554,7 +43554,7 @@
    </text>
    <text type="record" xml:id="suffk-rid639" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1465" to-iso="1466">1465-6</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid639-transcription">
@@ -43625,7 +43625,7 @@
    </text>
    <text type="record" xml:id="suffk-rid640" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1466">1466</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid640-transcription">
@@ -43693,7 +43693,7 @@
    </text>
    <text type="record" xml:id="suffk-rid641" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1466" to-iso="1467">1466-7</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid641-transcription">
@@ -43802,7 +43802,7 @@
    </text>
    <text type="record" xml:id="suffk-rid642" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1467">1467</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid642-transcription">
@@ -43852,7 +43852,7 @@
    </text>
    <text type="record" xml:id="suffk-rid643" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1467" to-iso="1468">1467-8</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid643-transcription">
@@ -43958,7 +43958,7 @@
    </text>
    <text type="record" xml:id="suffk-rid644" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1468" to-iso="1469">1468-9</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid644-transcription">
@@ -44038,7 +44038,7 @@
    </text>
    <text type="record" xml:id="suffk-rid645" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1469">1469</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid645-transcription">
@@ -44109,7 +44109,7 @@
    </text>
    <text type="record" xml:id="suffk-rid646" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1469" to-iso="1470">1469-70</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid646-transcription">
@@ -44195,7 +44195,7 @@
    </text>
    <text type="record" xml:id="suffk-rid647" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1470">1470</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid647-transcription">
@@ -44257,7 +44257,7 @@
    </text>
    <text type="record" xml:id="suffk-rid648" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1470" to-iso="1471">1470-1</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid648-transcription">
@@ -44338,7 +44338,7 @@
    </text>
    <text type="record" xml:id="suffk-rid649" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1471">1471</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid649-transcription">
@@ -44407,7 +44407,7 @@
    </text>
    <text type="record" xml:id="suffk-rid650" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1471" to-iso="1472">1471-2</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid650-transcription">
@@ -44472,7 +44472,7 @@
    </text>
    <text type="record" xml:id="suffk-rid651" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1472">1472</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid651-transcription">
@@ -44542,7 +44542,7 @@
    </text>
    <text type="record" xml:id="suffk-rid652" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1472" to-iso="1473">1472-3</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid652-transcription">
@@ -44645,7 +44645,7 @@
    </text>
    <text type="record" xml:id="suffk-rid653" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1473">1473</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid653-transcription">
@@ -44708,7 +44708,7 @@
    </text>
    <text type="record" xml:id="suffk-rid654" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1473" to-iso="1474">1473-4</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid654-transcription">
@@ -44803,7 +44803,7 @@
    </text>
    <text type="record" xml:id="suffk-rid655" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1474">1474</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid655-transcription">
@@ -44868,7 +44868,7 @@
    </text>
    <text type="record" xml:id="suffk-rid656" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1474" to-iso="1475">1474-5</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid656-transcription">
@@ -44917,7 +44917,7 @@
    </text>
    <text type="record" xml:id="suffk-rid657" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1475">1475</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid657-transcription">
@@ -44963,7 +44963,7 @@
    </text>
    <text type="record" xml:id="suffk-rid658" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1475" to-iso="1476">1475-6</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid658-transcription">
@@ -45034,7 +45034,7 @@
    </text>
    <text type="record" xml:id="suffk-rid659" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1476">1476</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid659-transcription">
@@ -45096,7 +45096,7 @@
    </text>
    <text type="record" xml:id="suffk-rid660" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1476" to-iso="1477">1476-7</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid660-transcription">
@@ -45122,7 +45122,7 @@
    </text>
    <text type="record" xml:id="suffk-rid661" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1477" to-iso="1478">1477-8</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid661-transcription">
@@ -45193,7 +45193,7 @@
    </text>
    <text type="record" xml:id="suffk-rid662" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date from-iso="1477" to-iso="1478">1477-8</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid662-transcription">
@@ -45238,7 +45238,7 @@
    </text>
    <text type="record" xml:id="suffk-rid663" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1478">1478</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid663-transcription">
@@ -45338,7 +45338,7 @@
    </text>
    <text type="record" xml:id="suffk-rid664" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>
       <date when-iso="1479">1479</date>
       <seg ana="taxon:SUMC06">SUMC06</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid664-transcription">
@@ -45422,7 +45422,7 @@
    </text>
    <text type="record" xml:id="suffk-rid665" ana="taxon:Manorial_Courts">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:372017" type="Place_PA_Settlement">Polstead</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:372017" type="Place_PA_Settlement">Polstead</rs>
       <date when-iso="1363">1363</date>
       <seg ana="taxon:SUPO01">SUPO01</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid665-transcription">
@@ -45476,7 +45476,7 @@
    </text>
    <text type="record" xml:id="suffk-rid667" ana="taxon:RelCommunity_Monasteries">
     <body>
-     <head><rs>Suffolk</rs>, <rs>Bury St Edmunds</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:313077" type="Place_PA_Settlement">Bury St Edmunds</rs>
       <date when-iso="1533">1533</date>
       <seg ana="taxon:SUBU26">SUBU26</seg></head>
      <div xml:lang="lat" type="transcription" xml:id="suffk-rid667-transcription">
@@ -45572,7 +45572,7 @@
    </text>
    <text type="record" xml:id="suffk-rid668" ana="taxon:Family_Estate">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:313077" type="Place_PA_Settlement">Bury St Edmunds</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:313077" type="Place_PA_Settlement">Bury St Edmunds</rs>
       <date when-iso="1494">1493/4</date>
       <seg ana="taxon:SUJBW1">SUJBW1</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid668-transcription">
@@ -45590,7 +45590,7 @@
          <del>E</del> nyght</rs> my <pb type="folio" n="24v"/> longe <rs ref="eats:302389"
          type="Thing_TheatricalCostume">gown</rs> of blak <rs ref="eats:301767"
          type="Thing_ClothingMaterials">demaske</rs> and my short gowne of damakse and I will that
-        Iohn Basse haue the kepyng of the seid ij gownes duryng his lyff and aft<ex>er</ex> the
+        <rs ref="eats:475634" type="Person_Male">Iohn Basse</rs> haue the kepyng of the seid ij gownes duryng his lyff and aft<ex>er</ex> the
         discease of the seid Iohn Basse to remayn to thuse aboueseid<gap reason="omitted"/></ab>
       </div>
      </div>
@@ -45605,7 +45605,7 @@
    </text>
    <text type="record" xml:id="suffk-rid669" ana="taxon:Family_Estate">
     <body>
-     <head><rs>Suffolk</rs>, <rs ref="eats:371629" type="Place_PA_Settlement">Lavenham</rs>
+     <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:371629" type="Place_PA_Settlement">Lavenham</rs>
       <date when-iso="1557">1557</date>
       <seg ana="taxon:SULV01">SULV01</seg></head>
      <div xml:lang="eng" type="transcription" xml:id="suffk-rid669-transcription">
@@ -45663,7 +45663,7 @@
     <div>
      <floatingText type="record" xml:id="suffk-rid666" ana="taxon:CentralGov_Royal">
       <body>
-       <head><rs>Suffolk</rs>, <rs>County</rs>
+       <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>
         <date when-iso="1512">1511/12</date>
         <seg ana="taxon:SUCO02">SUCO02</seg></head>
        <div xml:lang="eng" type="transcription" xml:id="suffk-rid666-transcription">
@@ -45701,7 +45701,7 @@
     <div>
      <floatingText type="record" xml:id="suffk-rid674" ana="taxon:CentralGov_Royal">
       <body>
-       <head><rs>Suffolk</rs>, <rs>Bury St Edmunds</rs>
+       <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:313077" type="Place_PA_Settlement">Bury St Edmunds</rs>
         <date from-iso="1347" to-iso="1348">1347-8</date>
         <seg ana="taxon:SUBU24">SUBU24</seg></head>
        <div xml:lang="lat" type="transcription" xml:id="suffk-rid674-transcription">
@@ -45962,7 +45962,7 @@
     <div>
      <floatingText type="record" xml:id="suffk-rid675" ana="taxon:CentralGov_Royal">
       <body>
-       <head><rs>Suffolk</rs>, <rs>Bury St Edmunds</rs>
+       <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:313077" type="Place_PA_Settlement">Bury St Edmunds</rs>
         <date when-iso="1348">1347/8</date>
         <seg ana="taxon:SUEBPI">SUEBPI</seg></head>
        <div xml:lang="lat" type="transcription" xml:id="suffk-rid675-transcription">
@@ -46003,7 +46003,7 @@
     <div>
      <floatingText type="record" xml:id="suffk-rid670" ana="taxon:CentralGov_Royal">
       <body>
-       <head><rs>Suffolk</rs>, <rs>Framlingham Castle</rs>
+       <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:486693" type="Place_F_Residence">Framlingham Castle</rs>
         <date from-iso="1311" to-iso="1312">1311-12</date>
         <seg ana="taxon:SUFM01">SUFM01</seg></head>
        <div xml:lang="lat" type="transcription" xml:id="suffk-rid670-transcription">
@@ -46131,7 +46131,7 @@
     <div>
      <floatingText type="record" xml:id="suffk-rid671" ana="taxon:CentralGov_Royal">
       <body>
-       <head><rs>Suffolk</rs>, <rs>Ipswich</rs>
+       <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:369522" type="Place_PA_Settlement">Ipswich</rs>
         <date from-iso="1296" to-iso="1297">1296-7</date>
         <seg ana="taxon:SUIP9A">SUIP9A</seg></head>
        <div xml:lang="lat" type="transcription" xml:id="suffk-rid671-transcription">
@@ -46438,7 +46438,7 @@
     <div>
      <floatingText type="record" xml:id="suffk-rid672" ana="taxon:SocLit_Poetry">
       <body>
-       <head><rs>Suffolk</rs>, <rs>Bury St Edmunds</rs>
+       <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:313077" type="Place_PA_Settlement">Bury St Edmunds</rs>
         <date when-iso="1634">1634</date>
         <seg ana="taxon:SUBU23">SUBU23</seg></head>
        <div xml:lang="lat" type="transcription" xml:id="suffk-rid672-transcription">
@@ -46894,7 +46894,7 @@
     <div>
      <floatingText type="record" xml:id="suffk-rid673" ana="taxon:ChronHist_Hist">
       <body>
-       <head><rs>Suffolk</rs>, <rs>Long Melford</rs>
+       <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:368526" type="Place_PA_Settlement">Long Melford</rs>
         <date from-iso="1554" to-iso="1615">1554-1615</date>
         <seg ana="taxon:SULM01">SULM01</seg></head>
        <div xml:lang="eng" type="transcription" xml:id="suffk-rid673-transcription">
