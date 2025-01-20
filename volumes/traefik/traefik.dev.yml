@@ -66,8 +66,7 @@ http:
         hostsProxyHeaders: ["X-CSRFToken"]
 
     redirect-to-domain:
-      redirectRule:
-        rule: "PathPrefix(`/`)"
+      redirect:
         regex: "^https?://198\\.168\\.185\\.15/(.*)"
         replacement: "https://{{env "TRAEFIK_HOST"}}/$1"
         permanent: true
