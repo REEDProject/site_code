@@ -67,7 +67,8 @@ http:
 
     redirect-to-domain:
       redirectRegex:
-        regex: "^https?://198\\.168\\.185\\.15/(.*)"
+        regex: >-
+          ^https?://198\.168\.185\.15/(.*)
         replacement: "https://{{env \"TRAEFIK_HOST\"}}/$1"
         permanent: true
 
