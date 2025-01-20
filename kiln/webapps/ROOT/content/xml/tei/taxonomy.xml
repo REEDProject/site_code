@@ -24868,8 +24868,7 @@ SO content-checked
                             <idno type="shelfmark">Royal. MS 6 B.X.</idno>
                             <msName>Cellarer's Account</msName>
                         </msIdentifier>
-                        <ab type="edDesc"
-                            ><!-- IN: Not 100% sure about the </ab><ab> tags (ie. linebreaks) here. -->
+                        <ab type="edDesc">
                             The <rs ref="eats:368503" type="Place_F_ReligiousHouse">abbey of Bury St
                                 Edmunds</rs> was founded in the year 1020. With the abbey's
                             dissolution in 1539, the rich collection of manuscripts in its library,
@@ -24935,9 +24934,7 @@ SO content-checked
                             <idno type="shelfmark">SC 6/HENVII/1692</idno>
                             <msName>Hosteller's Accounts</msName>
                         </msIdentifier>
-                        <ab type="edDesc"
-                            ><!-- IN: Not 100% sure about the <ab></ab> tags (line breaks) at the end here -->The
-                                <rs ref="eats:368503" type="Place_F_ReligiousHouse">abbey of Bury St
+                        <ab type="edDesc">The <rs ref="eats:368503" type="Place_F_ReligiousHouse">abbey of Bury St
                                 Edmunds</rs> was founded in the year 1020. With the abbey's
                             dissolution in 1539, the rich collection of manuscripts in its library,
                             and the many documents in its archives 'were very quickly scattered'
@@ -26627,8 +26624,7 @@ Introduction -->. The Aldeburgh records that contain evidence of plays,
                             <msName>Letter from Charles Brandon, Duke of Suffolk to Thomas Cromwell,
                                 Lord Privy Seal</msName>
                         </msIdentifier>
-                        <ab type="edDesc">This letter was sent, with another
-                            <!-- #IN link to SUBN03. IN: No record for SUBN03. Was it removed from the collection? -->
+                        <ab type="edDesc">This letter was sent, with <ref target="https://dev.ereed.org/records/suffk-rid70/">another</ref>
                             by Charles Brandon (<hi rend="italic">c</hi> 1484–1545), first duke of
                             Suffolk, to Thomas Cromwell (1485–1540), chancellor of the Exchequer,
                             1533–40, and lord privy seal, 1536–40, concerning potentially seditious
@@ -27065,7 +27061,7 @@ Introduction -->. The Aldeburgh records that contain evidence of plays,
                         <msIdentifier>
                             <settlement>Bury St Edmunds</settlement>
                             <repository sameAs="#SA"/>
-                            <idno type="shelfmark">E5/9/203.15 <!-- removed <del> tag here -->item
+                            <idno type="shelfmark">E5/9/203.15 item
                                 3</idno>
                             <msName>King Edward School Accounts and Rentals</msName>
                         </msIdentifier>
@@ -27200,7 +27196,6 @@ Introduction -->. The Aldeburgh records that contain evidence of plays,
                             blank and unnumbered); sewn booklet now folded in 4s.</ab>
                     </msDesc>
                     <msDesc xml:id="SUBU16">
-                        <!-- Not indexed yet -->
                         <msIdentifier>
                             <settlement>Kew</settlement>
                             <repository sameAs="#TNA"/>
@@ -28066,7 +28061,6 @@ Introduction -->. The Aldeburgh records that contain evidence of plays,
                             leaves deteriorated, repaired; modern canvas cover stitched to
                             booklet.</ab>
                     </msDesc>
-                    <!-- IN: To be indexed later -->
                     <msDesc xml:id="SUDL01">
                         <msIdentifier>
                             <settlement>Ipswich</settlement>
@@ -28075,7 +28069,7 @@ Introduction -->. The Aldeburgh records that contain evidence of plays,
                             <msName>Accounts for Michael de la Pole, second earl of Suffolk</msName>
                         </msIdentifier>
                         <ab type="edDesc">Michael de la Pole (1367/8–1415), second earl of Suffolk,
-                            was born in Suffolk, Yorkshire East Riding, and was buried at Wingfield,
+                            was born in Hull, Yorkshire East Riding, and was buried at Wingfield,
                             Suffolk. He was the son of Michael de la Pole, first earl of Suffolk and
                             Katherine de Wingfield, and was the husband of Katherine de Stafford,
                             countess of Suffolk. He accompanied Henry V to France, and died of
@@ -28850,8 +28844,7 @@ Introduction -->. The Aldeburgh records that contain evidence of plays,
                                 his transcription of that material, he used two manuscripts of
                                 Howard's personal accounts. The first of the two now survives as BL:
                                 Add. MS
-                                46349<!-- link to Household Accounts of Sir John Howard (<hi rend="italic">c</hi>
-1422–85), Duke of Norfolk IN: Need to add link to search page for all SUHW05 records after tagging is finished. -->.
+                                46349 (see <ref target="https://dev.ereed.org/search/?facet_people_named_h=163205">Sir John Howard's Household Accounts</ref>).
                                 Its contents extend from November 1462 through July 1469. When Botfield saw it, this first manuscript was 'in the
                                 valuable collection of Sir Thomas Phillipps, Bart., at Middle Hill,
                                 who purchased it at the sale of the library of the late Mr. Craven
@@ -29847,7 +29840,6 @@ Introduction -->. The Aldeburgh records that contain evidence of plays,
                             covered with white leather, leather strap and metal clasps, original
                             stitching.</ab>
                     </msDesc>
-                    <!-- IN: To be indexed later -->
                     <msDesc xml:id="SUIP10">
                         <msIdentifier>
                             <settlement>Ipswich</settlement>
@@ -30193,8 +30185,6 @@ Introduction -->. The Aldeburgh records that contain evidence of plays,
                         <msIdentifier>
                             <settlement>Ipswich</settlement>
                             <repository sameAs="#SA"/>
-                            <!-- IN:Is Suffolk Archives, Ipswich a distinct entity from Suffolk Archives?-->
-                            <!--<repository>Suffolk Archives, Ipswich</repository>-->
                             <idno type="shelfmark">C/3/3/2/2</idno>
                             <msName>Chamberlains' Audited Accounts</msName>
                         </msIdentifier>
@@ -30261,10 +30251,7 @@ Introduction -->. The Aldeburgh records that contain evidence of plays,
                             some items not found in the audited accounts, especially the treasurers'
                             accounts. Extracts from all these runs of civic accounts are represented
                             in the collection. For a comprehensive catalogue of the Ipswich
-                            municipal archives, see Allen, <title>Ipswich Borough Archives</title>.
-                            <!-- these are copies of audited accounts that also survive. I don't repeat
-entries if they appear in both audited a/cs and registers, choosing audited over
-register if possible. --></ab>
+                            municipal archives, see Allen, <title>Ipswich Borough Archives</title>.</ab>
                         <ab type="techDesc"><date>1593–1641</date>; English; paper; 478 leaves;
                             350mm x 215mm (text area 290mm x 155mm with sums in margin); modern
                             foliation 1–453 followed here (final 25 blanks unnumbered), older
@@ -34219,7 +34206,7 @@ HistBack -->.</ab>
                             Thomas would subsequently be named first earl of Norfolk and earl marshall
                             of England. Thomas was full brother of Edmund, and half-brother of Edward
                             II. Thomas apparently died of natural causes (Scott L. Waugh, 'Thomas
-                            <del>Thomas of Brotherton</del>, first earl of Norfolk (1300–1388,'
+                            [Thomas of Brotherton], first earl of Norfolk (1300–1388,'
                             <title>ODNB</title>, accessed 14 November 2024). Edmund was named the
                             first earl of Kent. When his half-brother Edward II essentially deprived
                             him of his promised lands and titles in favor of Piers Gaveston (Edward's
@@ -34227,7 +34214,7 @@ HistBack -->.</ab>
                             deposing Edward II. However, Edmund eventually broke with the victors as
                             well. While planning a rebellion against them, he was captured and
                             executed in 1330, at the age of twenty-nine (Scott L. Waugh, 'Edmund
-                            <del>Edmund of Woodstock</del>, first earl of Kent (1301–1330) <title>ODNB</title>,
+                            [Edmund of Woodstock], first earl of Kent (1301–1330) <title>ODNB</title>,
                             accessed 14 November 2024). The relevant entries in these accounts are
                             payments to various entertainers while the young princes were staying at
                             Framlingham Castle.</ab>
@@ -34337,7 +34324,7 @@ HistBack -->.</ab>
                             
                         <ab type="edDesc">As his will indicates, the guild of St John Baptist in Bury entrusted him
                             with the care of garments used in the guild's revel on St Edmund's night,
-                            and that he, in turn, entrusted those same garments to John Besse. That the
+                            and that he, in turn, entrusted those same garments to John Basse. That the
                             owner of the garments was not Benale but the guild itself offers
                             compelling evidence that the revel (whatever its particulars) was likely
                             part of a cooperative performance tradition involving the town and the
@@ -34398,37 +34385,32 @@ HistBack -->.</ab>
                             Goldsmiths and Glovers Streets, two very short adjoining rows merging into each
                             other and lying immediately in front of the abbey, between St James and St Mary
                             churches (Breen, <title>Bury Rental</title>, pp 34, 36). Pykerell bequeathed
-                            this house and all its appurtenances to his wife.<lb/>
-                            <lb/>
-                            Pykerell's second tenement lay on Reynegate (or Raingate) Street, which ends at
+                            this house and all its appurtenances to his wife.</ab>                        
+                        <ab type="edDesc">Pykerell's second tenement lay on Reynegate (or Raingate) Street, which ends at
                             the base of Honey Hill and the Shire Hall, within steps of the Great Churchyard
                             and the abbey grounds. Pykerell also bequeathed this second house and its
-                            appurtenances to his wife.<lb/>
-                            <lb/>
-                            Pykerell's third house lay on an unspecified plot in Westgate Street, which runs
+                            appurtenances to his wife.</ab>                            
+                        <ab type="edDesc">Pykerell's third house lay on an unspecified plot in Westgate Street, which runs
                             from the West Gate of the town to St May's Square, which is within a short
                             distance of the Great Churchyard. His will requested that this third house be
                             consigned to his executors to sell, half the proceeds going to the parish church
-                            of St Mary and half to his wife.<lb/>
-                            <lb/>
-                            Although brief, Pykerell's bequest of his playing garments provides considerable
+                            of St Mary and half to his wife.</ab>
+                        <ab type="edDesc">Although brief, Pykerell's bequest of his playing garments provides considerable
                             information about the local playing tradition in medieval Bury. Immediately
                             preceding the extracted passage, Pykerell bequeathed his best gown to John
                             Tyler. The proximity of the two bequests (gown and playing garments), and their
-                            similarity to bequests in the will of John Benale strongly suggest that Pykerell
+                            similarity to bequests in the <ref target="https://dev.ereed.org/records/suffk-rid668/">will of John Benale</ref> strongly suggest that Pykerell
                             was a member of the Guild of St John Baptist. Pykerell's use of the word 'all'
                             suggests that he had considerably more playing garments than the two gowns of
-                            Benale.<lb/>
-                            <lb/>
-                            Gibson very usefully identifies the frater (where the play was held) as 'the
+                            Benale.</ab>
+                        <ab type="edDesc">Gibson very usefully identifies the frater (where the play was held) as 'the
                             refrectory or monk's dining hall.' As seen in a map of 1748, which shows the
                             frater's precise location, it was 'a rectangular stone building just to the
                             north of the abbey cloister and adjacent to the monk's dormitory.' According to
                             William of Worcester who recorded the dimensions of the frater in 1479, it was
                             '90 paces long (about 171 feet) and 40 feet wide,' a performance venue of some
-                            size (Gibson, 'Play of "Wisdom",' pp 115-16, 206 n 39).<lb/>
-                            <lb/>
-                            Pykerell's will was proved on 20 November 1509.</ab>
+                            size (Gibson, 'Play of "Wisdom",' pp 115-16, 206 n 39).</ab>
+                        <ab type="edDesc">Pykerell's will was proved on 20 November 1509.</ab>
                         <ab type="techDesc"><date>1491-1509</date>; Latin and English; i + 216 + i; parchment;
                             340mm x 250mm; contemporary ink foliation; parchment binding with tie, title on
                             spine: 'Testaments | Pye | 1491 | to | 1509 | 6'.</ab>
