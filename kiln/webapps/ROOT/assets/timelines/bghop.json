@@ -5109,57 +5109,7 @@
         "ereed_url": null,
         "record_url": "https://ereed.org/records/bghop-ridp265562696/"
     },
-    "bghop-01-0053": {
-        "title": "Articles of Agreement between Robert Dawes, player, and Philip Henslowe and Jacob Meade (A)",
-        "description": "Player's agreement with Henslowe and Meade",
-        "record_id": "bghop-ridp249513592",
-        "regions": {
-            "type": "featurecollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "epsg:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Bear Garden 4/Hope Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "574"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09571204309390599,
-                            51.50776757930662
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": null,
-        "ereed_id": null,
-        "category": "BG/Playhouse Business",
-        "time_period": "Hope Playhouse Era: 1613-1626",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1614-04-07",
-            "sort": "1614-04-07",
-            "display": "1614-04-07"
-        },
-        "ereed_url": null,
-        "record_url": "https://ereed.org/records/bghop-ridp249513592/"
-    },
+    
     "bghop-01-0054": {
         "title": "Letter from Nathan Field, Robert Daborne, and Philip Massinger to Henslowe",
         "description": "Players' letter to Henslowe seeking support",
@@ -5211,6 +5161,59 @@
         "ereed_url": null,
         "record_url": "https://ereed.org/records/bghop-ridp265792200/"
     },
+
+    "bghop-01-0053": {
+        "title": "Articles of Agreement between Robert Dawes, player, and Philip Henslowe and Jacob Meade (A)",
+        "description": "Player's agreement with Henslowe and Meade",
+        "record_id": "bghop-ridp249513592",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Bear Garden 4/Hope Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "574"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09571204309390599,
+                            51.50776757930662
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "BG/Playhouse Business",
+        "time_period": "Hope Playhouse Era: 1613-1626",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1614-04-07",
+            "sort": "1614-04-07",
+            "display": "1614-04-07"
+        },
+        "ereed_url": null,
+        "record_url": "https://ereed.org/records/bghop-ridp249513592/"
+    },
+    
     "bghop-01-0056": {
         "title": "Taylor, Taylors Revenge",
         "description": "Trial of Wit at the new Hope Playhouse cancelled",
@@ -7138,7 +7141,7 @@
     },
     "bghop-01-0070": {
         "title": "John Chamberlain's Letter to Dudley Carleton",
-        "description": "Spanish Ambassador's visit to the Bear Garden",
+        "description": "Spanish ambassador's visit to the Bear Garden",
         "record_id": "bghop-ridp265948040",
         "regions": {
             "type": "featurecollection",
