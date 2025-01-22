@@ -1452,7 +1452,7 @@
     },
     "bghop-01-0009": {
         "title": "Polsted Complaint in the Court of Augmentations",
-        "description": "Henry Polsted's Complaint about unpaid rents on Bankside",
+        "description": "Henry Polsted's complaint about unpaid rents on Bankside",
         "record_id": "bghop-ridp266090440",
         "regions": {
             "type": "featurecollection",
@@ -4553,7 +4553,7 @@
     },
     "bghop-01-0047": {
         "title": "Petition of Philip Henslowe and Edward Alleyn to James I",
-        "description": "Henslowe and Alleyn Petitioned the king for the costs of the Bear Garden",
+        "description": "Henslowe and Alleyn petitioned the king for the costs of the Bear Garden",
         "record_id": "bghop-ridp268588248",
         "regions": {
             "type": "featurecollection",
@@ -4604,7 +4604,7 @@
     },
     "bghop-01-0048": {
         "title": "Plague Orders made by the Mayor and Aldermen of London and the JPs of Middlesex and Surrey",
-        "description": "Plays, bearbatings et al prohibited by the Privy Council",
+        "description": "Plays, bearbaitings et al prohibited by the Privy Council",
         "record_id": "bghop-ridp269362936",
         "regions": {
             "type": "featurecollection",
@@ -4832,7 +4832,7 @@
     },
     "bghop-01-0050": {
         "title": "Privy Council Letter to the Lord Mayor of London",
-        "description": "Plays, bearbatings et al prohibited by the Privy Council",
+        "description": "Plays, bearbaitings et al prohibited by the Privy Council",
         "record_id": "bghop-ridp267712056",
         "regions": {
             "type": "featurecollection",
@@ -5211,57 +5211,6 @@
         "ereed_url": null,
         "record_url": "https://ereed.org/records/bghop-ridp265792200/"
     },
-    "bghop-01-0055": {
-        "title": "Articles of Grievance by Players against Philip Henslowe",
-        "description": "Articles of Grievance by players against Philip Henslowe",
-        "record_id": "bghop-ridp247753816",
-        "regions": {
-            "type": "featurecollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "epsg:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Bear Garden 4/Hope Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "574"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09571204309390599,
-                            51.50776757930662
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": null,
-        "ereed_id": null,
-        "category": "BG/Playhouse Business",
-        "time_period": "Hope Playhouse Era: 1613-1626",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": 1615,
-            "sort": 1615,
-            "display": 1615
-        },
-        "ereed_url": null,
-        "record_url": "https://ereed.org/records/bghop-ridp247753816/"
-    },
     "bghop-01-0056": {
         "title": "Taylor, Taylors Revenge",
         "description": "Trial of Wit at the new Hope Playhouse cancelled",
@@ -5313,6 +5262,58 @@
         "ereed_url": null,
         "record_url": "https://ereed.org/records/bghop-ridp265267400/"
     },
+    "bghop-01-0055": {
+        "title": "Articles of Grievance by Players against Philip Henslowe",
+        "description": "Articles of Grievance by players against Philip Henslowe",
+        "record_id": "bghop-ridp247753816",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Bear Garden 4/Hope Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "574"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09571204309390599,
+                            51.50776757930662
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "BG/Playhouse Business",
+        "time_period": "Hope Playhouse Era: 1613-1626",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": 1615,
+            "sort": 1615,
+            "display": 1615
+        },
+        "ereed_url": null,
+        "record_url": "https://ereed.org/records/bghop-ridp247753816/"
+    },
+    
     "bghop-01-0090": {
         "title": null,
         "description": "Death of Philip Henslowe",
