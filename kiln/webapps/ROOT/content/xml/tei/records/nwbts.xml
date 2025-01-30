@@ -135,6 +135,50 @@
       </langUsage>
     </profileDesc>
   </teiHeader>
+  <facsimile>
+    <graphic url="images/nwbts/NBPL14.jpg" xml:id="NBPL14">
+      <desc>By kind permission of the More-Molyneux family and Surrey History Centre</desc>
+    </graphic>   
+    <graphic url="images/nwbts/LMA/NBSKCSf87v.jpg" xml:id="NBSKCSf87v">
+      <desc>© London Metropolitan Archives (City of London), SKCS/018</desc>
+    </graphic>
+    <graphic url="images/nwbts/LMA/NBSKCSf95v.jpg" xml:id="NBSKCSf95v">
+      <desc>© London Metropolitan Archives (City of London), SKCS/018</desc>
+    </graphic>
+    <graphic url="images/nwbts/LMA/NBSKCSf105v.jpg" xml:id="NBSKCSf105v">
+      <desc>© London Metropolitan Archives (City of London), SKCS/018</desc>
+    </graphic>
+    <graphic url="images/nwbts/LMA/NBSKCSf172.jpg" xml:id="NBSKCSf172">
+      <desc>© London Metropolitan Archives (City of London), SKCS/018</desc>
+    </graphic>
+    <graphic url="images/nwbts/LMA/NBSKCS294av.jpg" xml:id="NBSKCS294av">
+      <desc>© London Metropolitan Archives (City of London), SKCS/018</desc>
+    </graphic>
+    <graphic url="images/nwbts/TNA/NBPCL3p84.jpg" xml:id="NBPCL3p84">
+      <desc>The National Archives (UK), ref. PC2/14</desc>
+    </graphic>    
+    <graphic url="images/nwbts/TNA/NBPCL3p86.jpg" xml:id="NBPCL3p86">
+      <desc>The National Archives (UK), ref. PC2/14</desc>
+    </graphic>    
+    <graphic url="images/nwbts/TNA/NBPCO7p300.jpg" xml:id="NBPCO7p300">
+      <desc>The National Archives (UK), ref. PC2/12</desc>
+    </graphic>    
+    <graphic url="images/nwbts/TNA/NBPCO7p348.jpg" xml:id="NBPCO7p348">
+      <desc>The National Archives (UK), ref. PC2/12</desc>
+    </graphic>    
+    <graphic url="images/nwbts/TNA/NBPL13p10.jpg" xml:id="NBPL13p10">
+      <desc>The National Archives (UK), ref. PC2/13</desc>
+    </graphic>    
+    <graphic url="images/nwbts/TNA/NBCRSH3.jpg" xml:id="NBCRSH3">
+      <desc>The National Archives (UK), ref. REQ 2/266</desc>
+    </graphic>    
+    <graphic url="images/nwbts/TNA/NBCRSH2.jpg" xml:id="NBCRSH2">
+      <desc>The National Archives (UK), ref. REQ 2/266</desc>
+    </graphic>    
+    <graphic url="images/nwbts/TNA/NBCRSH1.jpg" xml:id="NBCRSH1">
+      <desc>The National Archives (UK), ref. REQ 2/266</desc>
+    </graphic>    
+  </facsimile>
   <text>
     <group>
       <text type="record" xml:id="nwbts-rid25" copyOf="rosep.xml#rosep-ridm90700072">
@@ -150,7 +194,7 @@
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid12-transcription">
             <div>
               <head>f [1] <supplied>(15 November) (Hampton Court)</supplied></head>
-              <pb n="[1]" type="folio"/>
+              <pb n="[1]" type="folio" facs="#NBPL14"/>
 
               <ab>After our very hartie commendac<ex>i</ex>ons ffor so much as yt is found by
                 experience that very great perill and incouenienc<ex>es</ex> hath fallen vppon
@@ -226,7 +270,7 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid13-transcription">
             <div>
               <head>f 87v <supplied>(13 July)</supplied></head>
-              <pb n="87v" type="folio"/>
+              <pb n="87v" type="folio" facs="#NBSKCSf87v"/>
 
               <gap reason="omitted"/>
 
@@ -311,7 +355,7 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid14-transcription">
             <div>
               <head>f 95v <supplied>(5 July)</supplied></head>
-              <pb n="95v" type="folio"/>
+              <pb n="95v" type="folio" facs="#NBSKCSf95v"/>
 
               <gap reason="omitted"/>
 
@@ -350,7 +394,7 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid15-transcription">
             <div>
               <head>f 105v <supplied>(3 November)</supplied></head>
-              <pb n="105v" type="folio"/>
+              <pb n="105v" type="folio" facs="#NBSKCSf105v"/>
 
               <ab rend="center">The p<ex>ar</ex>ishes of Newington St Georges <lb/>Reddereth &amp;
                 Mary Magdalyns</ab>
@@ -446,7 +490,7 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid16-transcription">
             <div>
               <head>f 172 <supplied>(26 February)</supplied></head>
-              <pb n="172" type="folio"/>
+              <pb n="172" type="folio" facs="#NBSKCSf172"/>
 
               <gap reason="omitted"/>
 
@@ -761,7 +805,7 @@ link to App 2 -->. Henslowe drew a line following the entry on 13 June before co
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid17-transcription">
             <div>
               <head>f 294a v <supplied>(5 October)</supplied></head>
-              <pb n="294a" type="folio"/>
+              <pb n="294a" type="folio" facs="#NBSKCS294av"/>
 
               <gap reason="omitted"/>
 
@@ -812,7 +856,7 @@ link to App 2 -->. Henslowe drew a line following the entry on 13 June before co
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid7-transcription">
             <div>
               <head>mb 3 <supplied>(Bill of complaint)</supplied></head>
-              <pb n="3" type="membrane"/>
+              <pb n="3" type="membrane" facs="#NBCRSH3"/>
 
               <ab rend="center">To<note type="foot">To: <hi rend="italic">display initial</hi>
                   T</note> the Quenes most excellent<lb/>ma<ex>ies</ex>tie</ab>
@@ -940,7 +984,7 @@ link to App 2 -->. Henslowe drew a line following the entry on 13 June before co
             <div>
               <head>mb 2 <supplied>(10 May)</supplied>
                 <supplied>(Answer of Peter Hunningborne)</supplied></head>
-              <pb n="2" type="membrane"/>
+              <pb n="2" type="membrane" facs="#NBCRSH2"/>
 
               <ab rend="center">The<note type="foot">The: <hi rend="italic">in display
                   script</hi></note><note type="marginal" place="margin_left">x<hi
@@ -1092,7 +1136,7 @@ link to App 2 -->. Henslowe drew a line following the entry on 13 June before co
             <div>
               <head>mb 1 <supplied>(17 May)</supplied>
                 <supplied>(Answer of Richard Hickes)</supplied></head>
-              <pb n="1" type="membrane"/>
+              <pb n="1" type="membrane" facs="#NBCRSH1"/>
 
               <ab rend="center">The<note type="marginal" place="margin_left">xvij<hi
                     rend="superscript">o</hi> die maij A<ex>nn</ex>o R<ex>egi</ex>ne<lb/> Elizabeth
@@ -1249,7 +1293,7 @@ link to App 2 -->. Henslowe drew a line following the entry on 13 June before co
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid10-transcription">
             <div>
               <head>p 300 <supplied>(10 November) (Richmond)</supplied></head>
-              <pb n="300" type="page"/>
+              <pb n="300" type="page" facs="#NBPCO7p300"/>
 
               <gap reason="omitted"/>
 
@@ -1266,7 +1310,7 @@ link to App 2 -->. Henslowe drew a line following the entry on 13 June before co
             </div>
             <div>
               <head>p 348 <supplied>(23 December) (Richmond)</supplied></head>
-              <pb n="348" type="page"/>
+              <pb n="348" type="page" facs="#NBPCO7p348"/>
 
               <gap reason="omitted"/>
 
@@ -1320,7 +1364,7 @@ ingham-edward-1545-1605 -->, accessed 23 July 2024. Bernard Randolph, JP of Midd
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid11-transcription">
             <div>
               <head>p 10 <supplied>(13 May) (Westminster)</supplied></head>
-              <pb n="10" type="page"/>
+              <pb n="10" type="page" facs="#NBPL13p10"/>
 
               <gap reason="omitted"/>
 
@@ -1390,7 +1434,7 @@ ingham-edward-1545-1605 -->, accessed 23 July 2024. Bernard Randolph, JP of Midd
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid9-transcription">
             <div>
               <head>p 84 <supplied>(11 May) (Greenwich)</supplied></head>
-              <pb n="84" type="page"/>
+              <pb n="84" type="page" facs="#NBPCL3p84"/>
 
               <ab>A l<ex>ett</ex>re to the Iustices of Surrey: that according to suche direction as
                 hathe ben geuen by their L<ex>ordship</ex>s to the L<ex>ord</ex> Maior to restraine
@@ -1406,7 +1450,7 @@ ingham-edward-1545-1605 -->, accessed 23 July 2024. Bernard Randolph, JP of Midd
             </div>
             <div>
               <head>p 86</head>
-              <pb n="86" type="page"/>
+              <pb n="86" type="page" facs="#NBPCL3p86"/>
 
               <gap reason="omitted"/>
 

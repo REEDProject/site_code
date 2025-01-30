@@ -3,7 +3,6 @@
 <?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="suffk">
  <teiHeader>
-  <!-- IN: Header is from Cambs.xml file. Will need to be updated for BGHope-->
   <fileDesc>
    <titleStmt>
     <title type="main">Suffolk</title>
@@ -22,10 +21,35 @@
     <respStmt>
      <persName xml:id="PG">Patrick Gregory</persName>
      <orgName>Records of Early English Drama (REED)</orgName>
+     <resp>Associate Editor</resp>
+     <resp>Latinist</resp>
      <resp>Paleographer</resp>
      <resp>Translator</resp>
      <resp>Glossarian</resp>
     </respStmt>
+    <respStmt>
+     <persName>Alexandra Atiya</persName>
+     <orgName>Records of Early English Drama (REED)</orgName>
+     <resp>Bibliographer</resp>
+     <resp>Latin Glossarian</resp>
+     <resp>Latin Checker</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Stuart Palmer</persName>
+     <orgName>Cambridge University</orgName>
+     <resp>On-Site Checker</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Alan H. Nelson</persName>
+     <orgName>University of California, Berkeley</orgName>
+     <resp>On-Site Checker</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Peter Greenfield</persName>
+     <orgName>University of Puget Sound</orgName>
+     <resp>On-Site Checker</resp>
+     <resp>English Palaeographer</resp>
+    </respStmt>    
     <respStmt>
      <persName>Tanya Hagen</persName>
      <orgName>Records of Early English Drama (REED)</orgName>
@@ -33,6 +57,11 @@
      <resp>Copy Editor</resp>
      <resp>Project Manager</resp>
      <resp>Proofreader</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Morgan Moore</persName>
+     <orgName>Records of Early English Drama (REED)</orgName>
+     <resp>Content Checker</resp>
     </respStmt>
     <respStmt>
      <persName>Stephanie Hovland</persName>
@@ -53,13 +82,6 @@
      <resp>Translator</resp>
     </respStmt>
     <respStmt>
-     <persName>Jenna McKellips</persName>
-     <orgName>Records of Early English Drama (REED)</orgName>
-     <resp>Research Assistant</resp>
-     <resp>Indexer, Entity Tagger</resp>
-     <resp>REED EATS database maintainer</resp>
-    </respStmt>
-    <respStmt>
      <persName>Byron Moldofsky</persName>
      <orgName>University of Toronto</orgName>
      <resp>Cartographer</resp>
@@ -68,14 +90,33 @@
      <persName>Illya Nokhrin</persName>
      <orgName>Records of Early English Drama (REED)</orgName>
      <resp>Research Associate</resp>
-     <resp>Indexer, Entity Tagger</resp>
+     <resp>Lead Digital Indexer</resp>
      <resp>REED EATS taxonomy developer</resp>
      <resp>REED EATS database maintainer</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Andrew Wiebe</persName>
+     <orgName>Records of Early English Drama (REED)</orgName>
+     <resp>Research Assistant</resp>
+     <resp>Indexer, Entity Tagger</resp>
+     <resp>GIS Locations Manager</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Laina Southgate</persName>
+     <orgName>Records of Early English Drama (REED)</orgName>
+     <resp>Research Assistant</resp>
+     <resp>Indexer, Entity Tagger</resp>
     </respStmt>
     <respStmt>
      <persName xml:id="JN">Jamie Norrish</persName>
      <resp>Programmer</resp>
      <resp>TEI Schema Designer</resp>
+     <resp>Technical Consultant</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Miguel Vieira</persName>
+     <orgName>King's College London</orgName>
+     <resp>Senior Developer</resp>
      <resp>Technical Consultant</resp>
     </respStmt>
    </titleStmt>
