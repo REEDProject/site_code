@@ -17,9 +17,13 @@ certificatesResolvers:
     acme:
       email: reeduoft@gmail.com
       storage: /etc/traefik/acme/acme.json
-      httpChallenge:
+      dnsChallenge:
+      provider: cloudflare
+      resolvers:
+        - "1.1.1.1:53"
+      #httpChallenge:
         # used during the challenge
-        entryPoint: web
+       # entryPoint: web
 
 http:
   routers:
