@@ -37,6 +37,7 @@ image: alpine
       "
         cd ${DEPLOY_DIR} &&
         echo ${INSTANCE_ENV} | base64 -d > .env &&
+        echo 'CLOUDFLARE_DNS_API_TOKEN=${CLOUDFLARE_DNS_API_TOKEN}' >> .env &&
         mkdir -p volumes/traefik &&
         echo ${HTPASSWD} | base64 -d > volumes/traefik/.htpasswd
       "
