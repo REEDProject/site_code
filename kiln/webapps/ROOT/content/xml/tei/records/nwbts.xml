@@ -265,7 +265,7 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
       </text>
       <text type="record" xml:id="nwbts-rid13">
         <body>
-          <head><rs>Surrey</rs>, <rs>Newington</rs>
+          <head><rs>Surrey</rs>, <rs><rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs></rs>
             <date when-iso="1576">1576</date>
             <seg ana="taxon:NBSKCS">NBSKCS</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid13-transcription">
@@ -275,12 +275,12 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
 
               <gap reason="omitted"/>
 
-              <ab rend="center">Newinton</ab>
+              <ab rend="center"><rs ref="eats:231618" type="Place_PA_Settlement">Newinton</rs></ab>
 
               <table>
                 <row>
                   <cell>ffirste<note type="marginal" place="margin_left">Savage &amp; Hilles</note>
-                      p<ex>re</ex>sente Ierome Savadge &amp; Iohn Hilles to skowre &amp; caste
+                      p<ex>re</ex>sente <rs ref="eats:202508" type="Person_Male">Ierome Savadge</rs> &amp; <rs ref="eats:486905" type="Person_Male">Iohn Hilles</rs> to skowre &amp; caste
                     deeper x roddes of their com<ex>m</ex>on shewer leadinge from the grate at
                     newington Butt<ex>es</ex> to the ende of Ierome Savag<ex>es</ex> orchard corner
                     beinge more or les to be done by the x<hi rend="superscript">th</hi> daye of
