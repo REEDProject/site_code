@@ -3273,7 +3273,7 @@
          demonstrate proficiencies warranting their advancement. In the cloth-making village of
          Boxford, for example, the ordinances of the school dictated that before they could be
          promoted to a higher form, students must perform a speech.<note type="foot">Suffolk
-          Archives, Bury St Edmunds, GD 503/1/4, sheets 1 and 2.</note> At Bury in <ref target="https://dev.ereed.org/records/suffk-rid91/">1601</ref><!--IN: Wrong year in record reference? Should be 1599-1600?--> the feoffees
+          Archives, Bury St Edmunds, GD 503/1/4, sheets 1 and 2.</note> At Bury in <ref target="https://dev.ereed.org/records/suffk-rid91/">1599–1600</ref> the feoffees
          of the school paid the schoolmaster 40s for a comedy made by his students at one Mr
          Golding's.<note type="foot"
           >Likely Robert Golding, esquire, a feoffee in 1582–8 and again in 1606–11. He was a
@@ -3320,7 +3320,7 @@
           <head>Religious Houses</head>
           <p>Evidence of their great support of parish drama, custom, and music survive in the
            records of several religious houses. Most notable among them are the registers of
-           Mettingham College, which record payments to performers of every kind, from professional
+           <rs ref="eats:385096" type="Place_F_School">Mettingham College</rs>, which record payments to performers of every kind, from professional
            troupes to parish players, from minstrels to boy bishops, from bearwards to jesters, from
            dancers to fools, over a 250-year period. Several small priories record payments to
            parish players and waits (Bungay Priory), a king and queen of the May and a harpist
@@ -3334,9 +3334,9 @@
            small. Performances at the Abbey occurred every year on three occasions: the ceremony of
            the boy bishop on the Feast of St Nicholas (6 December); the commemoration of St Edmund's
            Day (20 November), and the feast of Christmas. Abbey officials paid minstrels for
-           performing in the hall in 1401–2, and a minstrel at Christmas in 1417–18. They paid the
-           boy bishop in 1417–18, 1422–3, and 1493–4. And they rewarded minstrels on the Feast of St
-           Edmund in 1417–18, 1429–30, and 1486–7. Through the centuries all but one of their
+           performing in the hall in <ref target="https://dev.ereed.org/records/suffk-rid1/">1401–2</ref>, and a minstrel at Christmas in <ref target="https://dev.ereed.org/records/suffk-rid2/">1417–18</ref>. They paid the
+           boy bishop in 1417–18, <ref target="https://dev.ereed.org/records/suffk-rid13/">1422–3</ref>, and <ref target="https://dev.ereed.org/records/suffk-rid9/">1493–4</ref>. And they rewarded minstrels on the Feast of St
+           Edmund in 1417–18, <ref target="#suffk-rid3">1429–30</ref>, and <ref target="#suffk-rid20">1486–7</ref>. Through the centuries all but one of their
            payments to entertainers occurred on one of eleven feast days: St Edmund (9 times); St
            Nicholas and Easter (4 each); Christmas and the Ascension (2 each); and St John Baptist,
            St Edward, All Saints, Purification, Lent, and St Mark (1 each).</p>
@@ -3346,7 +3346,7 @@
            members of their households, to the rewarding, sponsoring, and educating of children, who
            also performed. For detailed discussion of payments to professional entertainers by
            households both religious and private through the centuries, see the section on
-           Professional Performers below@xc\IN to link to section@xc \.</p>
+           <ref target="#drama-performers">Professional Performers below</ref>.</p>
          </div>
          <div>
           <head>Secular Households</head>
@@ -3901,7 +3901,7 @@
            musical culture became the increasingly vicious and inhibiting wars of ideology,
            religion, and politics.</p>
          </div>
-         <div>
+         <div xml:id="drama-performers">
           <head>Professional Performers</head>
           <p>Performances by travelling professional troupes of actors and musicians, and individual
            performers of many kinds show up in the records of every period for which documents
