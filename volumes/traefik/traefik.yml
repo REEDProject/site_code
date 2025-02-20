@@ -11,6 +11,9 @@ entryPoints:
 
   web-secure:
     address: ":443"
+    http:
+      middlewares:
+        - redirect-to-domain
 
 certificatesResolvers:
   letsencrypt:
@@ -29,14 +32,14 @@ http:
   routers:
     to-tomcat:
       rule: Host(`{{env "TRAEFIK_HOST"}}`)
+      middlewares:
+        - basic-auth
       service: tomcat
       tls:
         certResolver: letsencrypt
 
     to-tomcat-admin:
       rule: Host(`{{env "TRAEFIK_HOST"}}`) && PathPrefix(`/admin`)
-      middlewares:
-        - basic-auth
       service: tomcat
       tls:
         certResolver: letsencrypt
@@ -65,6 +68,12 @@ http:
     csrf:
       headers:
         hostsProxyHeaders: ["X-CSRFToken"]
+
+    redirect-to-domain:
+      redirectRegex:
+        regex: '^https?://(198\.168\.185\.15|198-168-185-15\.cloud\.computecanada\.ca)/(.*)'
+        replacement: 'https://{{env "TRAEFIK_HOST"}}/$2'
+        permanent: true
 
   services:
     tomcat:
