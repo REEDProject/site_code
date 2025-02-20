@@ -11,9 +11,6 @@ entryPoints:
 
   web-secure:
     address: ":443"
-    http:
-      middlewares:
-        - redirect-to-domain
 
 certificatesResolvers:
   letsencrypt:
@@ -59,6 +56,13 @@ http:
       service: nginx
       tls:
         certResolver: letsencrypt
+
+    redirect-ip:
+      rule: HostRegexp(`{host:(198\.168\.185\.15|198-168-185-15\.cloud\.computecanada\.ca)}`)
+      middlewares:
+        - redirect-to-domain
+      service: noop@internal
+      priority: 1
 
   middlewares:
     basic-auth:
