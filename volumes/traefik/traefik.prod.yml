@@ -28,7 +28,7 @@ certificatesResolvers:
 http:
   routers:
     to-tomcat:
-      rule: Host(`{{env "TRAEFIK_HOST"}}`)
+      rule: Host(`{{env "TRAEFIK_HOST"}}`) && !PathPrefix(`/admin`)
       service: tomcat
       tls:
         certResolver: letsencrypt
