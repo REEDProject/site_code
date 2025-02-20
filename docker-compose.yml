@@ -26,6 +26,7 @@ services:
       - "traefik.http.middlewares.redirect-to-domain.redirectregex.regex=^https?://(198\\.168\\.185\\.15|198-168-185-15\\.cloud\\.computecanada\\.ca)/(.*)"
       - "traefik.http.middlewares.redirect-to-domain.redirectregex.replacement=https://${TRAEFIK_HOST}/$2"
       - "traefik.http.middlewares.redirect-to-domain.redirectregex.permanent=true"
+      - "traefik.http.routers.redirect.priority=1"
 
   tomcat:
     image: tomcat:${TOMCAT_VERSION:-9-jdk11}
