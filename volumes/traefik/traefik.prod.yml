@@ -62,15 +62,18 @@ http:
       entryPoints:
         - web
       middlewares:
+        - redirect-to-https
         - redirect-to-domain
       service: noop@internal
       priority: 1
 
   middlewares:
-    redirect-to-domain:
+    redirect-to-https:
       redirectScheme:
         scheme: https
         permanent: true
+
+    redirect-to-domain:
       redirectRegex:
         regex: '^https?://(198\.168\.185\.15|198-168-185-15\.cloud\.computecanada\.ca)(/.*)?'
         replacement: 'https://{{env "TRAEFIK_HOST"}}$1'
