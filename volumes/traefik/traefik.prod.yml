@@ -65,6 +65,12 @@ http:
       priority: 1
 
   middlewares:
+    redirect-to-domain:
+      redirectRegex:
+        regex: '^https?://(198\.168\.185\.15|198-168-185-15\.cloud\.computecanada\.ca)/(.*)'
+        replacement: 'https://{{env "TRAEFIK_HOST"}}/$2'
+        permanent: true
+
     basic-auth:
       basicAuth:
         usersFile: /etc/traefik/.htpasswd
@@ -73,12 +79,6 @@ http:
       headers:
         hostsProxyHeaders: ["X-CSRFToken"]
     
-    redirect-to-domain:
-      redirectRegex:
-        regex: '^https?://(198\.168\.185\.15|198-168-185-15\.cloud\.computecanada\.ca)/(.*)'
-        replacement: 'https://{{env "TRAEFIK_HOST"}}/$2'
-        permanent: true
-
   services:
     tomcat:
       loadBalancer:
