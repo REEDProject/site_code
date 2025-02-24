@@ -8,23 +8,12 @@ entryPoints:
       redirections:
         entryPoint:
           to: web-secure
-          scheme: https
-          permanent: true
 
   web-secure:
     address: ":443"
     http:
-      tls:
-        certResolver: letsencrypt
-        domains:
-          - main: "ereed.org"
       middlewares:
-        - default-timeouts
-    transport:
-      respondingTimeouts:
-        readTimeout: "30s"
-        writeTimeout: "30s"
-        idleTimeout: "120s"
+        - redirect-to-domain
 
 certificatesResolvers:
   letsencrypt:
@@ -35,7 +24,6 @@ certificatesResolvers:
         provider: cloudflare
         resolvers:
           - "1.1.1.1:53"
-          - "1.0.0.1:53"
       #httpChallenge:
         # used during the challenge
         # entryPoint: web
@@ -43,63 +31,36 @@ certificatesResolvers:
 http:
   routers:
     to-tomcat:
-      rule: Host(`ereed.org`) && !PathPrefix(`/admin`)
+      rule: Host(`{{env "TRAEFIK_HOST"}}`)
       service: tomcat
-      middlewares:
-        - default-timeouts
       tls:
         certResolver: letsencrypt
 
     to-tomcat-admin:
-      rule: Host(`ereed.org`) && PathPrefix(`/admin`)
+      rule: Host(`{{env "TRAEFIK_HOST"}}`) && PathPrefix(`/admin`)
       middlewares:
         - basic-auth
-        - default-timeouts
       service: tomcat
       tls:
         certResolver: letsencrypt
 
     to-django:
-      rule: Host(`ereed.org`) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare|selectable)/`)
+      rule: Host(`{{env "TRAEFIK_HOST"}}`) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare|selectable)/`)
       middlewares:
         - csrf
-        - default-timeouts
       service: django
       tls:
         certResolver: letsencrypt
 
     to-nginx:
-      rule: Host(`ereed.org`) && PathRegexp(`^/(assets/|solr/|static/|robots.txt)`)
+      rule: Host(`{{env "TRAEFIK_HOST"}}`) && PathRegexp(`^/(assets/|solr/|static/|robots.txt)`)
       middlewares:
         - csrf
-        - default-timeouts
       service: nginx
       tls:
         certResolver: letsencrypt
 
-    redirect-ip:
-      rule: "HostRegexp(`{host:(198\\.168\\.185\\.15|198-168-185-15\\.cloud\\.computecanada\\.ca)}`)"
-      entryPoints:
-        - web
-      middlewares:
-        - redirect-to-domain
-      service: noop@internal
-      priority: 1
-
   middlewares:
-    default-timeouts:
-      headers:
-        customRequestHeaders:
-          X-Forwarded-Proto: "https"
-        customResponseHeaders:
-          Strict-Transport-Security: "max-age=31536000"
-
-    redirect-to-domain:
-      redirectRegex:
-        regex: '^https?://(198\\.168\\.185\\.15|198-168-185-15\\.cloud\\.computecanada\\.ca)(/.*)?'
-        replacement: 'https://ereed.org$2'
-        permanent: true
-
     basic-auth:
       basicAuth:
         usersFile: /etc/traefik/.htpasswd
@@ -107,31 +68,28 @@ http:
     csrf:
       headers:
         hostsProxyHeaders: ["X-CSRFToken"]
+    
+    redirect-to-domain:
+      redirectRegex:
+        regex: '^https?://198\.168\.185\.15/(.*)'
+        replacement: 'https://{{env "TRAEFIK_HOST"}}/$1'
+        permanent: true
 
   services:
     tomcat:
       loadBalancer:
         servers:
           - url: http://tomcat:8080
-        passHostHeader: true
-        responseForwarding:
-          flushInterval: "100ms"
 
     django:
       loadBalancer:
         servers:
           - url: http://django:8000
-        passHostHeader: true
-        responseForwarding:
-          flushInterval: "100ms"
 
     nginx:
       loadBalancer:
         servers:
           - url: http://nginx:80
-        passHostHeader: true
-        responseForwarding:
-          flushInterval: "100ms"
 
 providers:
   file:
