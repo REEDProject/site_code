@@ -11,23 +11,24 @@ entryPoints:
 
   web-secure:
     address: ":443"
-    http:
-      middlewares:
-        - redirect-to-domain
 
 certificatesResolvers:
   letsencrypt:
     acme:
       email: reeduoft@gmail.com
       storage: /etc/traefik/acme/acme.json
-      httpChallenge:
+      dnsChallenge:
+        provider: cloudflare
+        resolvers:
+          - "1.1.1.1:53"
+      #httpChallenge:
         # used during the challenge
-        entryPoint: web
+        # entryPoint: web
 
 http:
   routers:
     to-tomcat:
-      rule: Host(`{{env "TRAEFIK_HOST"}}`)
+      rule: Host(`{{env "TRAEFIK_HOST"}}`) && !PathPrefix(`/admin`)
       service: tomcat
       tls:
         certResolver: letsencrypt
@@ -56,7 +57,28 @@ http:
       tls:
         certResolver: letsencrypt
 
+    redirect-ip:
+      rule: HostRegexp(`{host:(198\.168\.185\.15|198-168-185-15\.cloud\.computecanada\.ca)}`)
+      entryPoints:
+        - web
+      middlewares:
+        - redirect-to-https
+        - redirect-to-domain
+      service: noop@internal
+      priority: 1
+
   middlewares:
+    redirect-to-https:
+      redirectScheme:
+        scheme: https
+        permanent: true
+
+    redirect-to-domain:
+      redirectRegex:
+        regex: '^https?://(198\.168\.185\.15|198-168-185-15\.cloud\.computecanada\.ca)(/.*)?'
+        replacement: 'https://{{env "TRAEFIK_HOST"}}$1'
+        permanent: true
+
     basic-auth:
       basicAuth:
         usersFile: /etc/traefik/.htpasswd
@@ -65,12 +87,6 @@ http:
       headers:
         hostsProxyHeaders: ["X-CSRFToken"]
     
-    redirect-to-domain:
-      redirectRegex:
-        regex: '^https?://198\.168\.185\.15/(.*)'
-        replacement: 'https://{{env "TRAEFIK_HOST"}}/$1'
-        permanent: true
-
   services:
     tomcat:
       loadBalancer:

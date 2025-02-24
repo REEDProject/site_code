@@ -1,5 +1,5 @@
 name: reed${INSTANCE:-}
-
+# Instance is either dev or prod
 services:
   traefik:
     image: traefik:3.0
