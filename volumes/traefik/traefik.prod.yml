@@ -78,6 +78,7 @@ http:
           followRedirects: true
           port: 8080
           scheme: http
+        serversTransport: "tomcat-transport"
 
     django:
       loadBalancer:
@@ -93,3 +94,10 @@ providers:
   file:
     filename: "/etc/traefik/traefik.yml"
     watch: true
+
+serversTransports:
+  tomcat-transport:
+    forwardingTimeouts:
+      dialTimeout: "5s"
+      responseHeaderTimeout: "60s"
+      idleConnTimeout: "90s"
