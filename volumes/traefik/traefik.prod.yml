@@ -71,6 +71,13 @@ http:
       loadBalancer:
         servers:
           - url: http://tomcat:8080
+        healthCheck:
+          path: /
+          interval: "10s"
+          timeout: "5s"
+          followRedirects: true
+          port: 8080
+          scheme: http
 
     django:
       loadBalancer:
