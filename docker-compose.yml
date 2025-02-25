@@ -30,15 +30,7 @@ services:
       - ./kiln/webapps:/usr/local/tomcat/webapps
       - ./kiln/webapps/solr/conf/solr.xml:/usr/local/tomcat/conf/Catalina/localhost/solr.xml:ro
     environment:
-      CATALINA_OPTS: "${TOMCAT_CATALINA_OPTS:--Xmx4096m} -Dconnection.timeout=20000 -Dread.timeout=50000 -XX:ParallelGCThreads=2 -XX:ConcGCThreads=2 -Dorg.apache.tomcat.util.threads.TaskThreadFactory.MAX_THREADS=100"
-    dns:
-      - 8.8.8.8
-      - 1.1.1.1
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 6G
+      CATALINA_OPTS: "${TOMCAT_CATALINA_OPTS:--Xmx4096m}"
 
   django:
     build:

@@ -71,14 +71,6 @@ http:
       loadBalancer:
         servers:
           - url: http://tomcat:8080
-        healthCheck:
-          path: /
-          interval: "10s"
-          timeout: "5s"
-          followRedirects: true
-          port: 8080
-          scheme: http
-        serversTransport: "tomcat-transport"
 
     django:
       loadBalancer:
@@ -89,13 +81,6 @@ http:
       loadBalancer:
         servers:
           - url: http://nginx:80
-
-  serversTransports:
-    tomcat-transport:
-      forwardingTimeouts:
-        dialTimeout: "5s"
-        responseHeaderTimeout: "60s"
-        idleConnTimeout: "90s"
 
 providers:
   file:
