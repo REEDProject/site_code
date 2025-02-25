@@ -31,6 +31,9 @@ services:
       - ./kiln/webapps/solr/conf/solr.xml:/usr/local/tomcat/conf/Catalina/localhost/solr.xml:ro
     environment:
       CATALINA_OPTS: "${TOMCAT_CATALINA_OPTS:--Xmx4096m}"
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
 
   django:
     build:
