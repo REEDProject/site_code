@@ -90,14 +90,14 @@ http:
         servers:
           - url: http://nginx:80
 
+  serversTransports:
+    tomcat-transport:
+      forwardingTimeouts:
+        dialTimeout: "5s"
+        responseHeaderTimeout: "60s"
+        idleConnTimeout: "90s"
+
 providers:
   file:
     filename: "/etc/traefik/traefik.yml"
     watch: true
-
-serversTransports:
-  tomcat-transport:
-    forwardingTimeouts:
-      dialTimeout: "5s"
-      responseHeaderTimeout: "60s"
-      idleConnTimeout: "90s"
