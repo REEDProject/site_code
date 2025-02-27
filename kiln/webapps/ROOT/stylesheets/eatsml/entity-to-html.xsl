@@ -134,10 +134,38 @@
 
   <xsl:template name="display-external-data">
     <xsl:choose>
-      <xsl:when test="$entity/external_data">
+ <xsl:when test="$entity/external_data[not(contains(@href, 'ereed.library.utoronto.ca/geomap/')) and 
+                                          not(contains(@href, 'ereed.org/geomap/')) and
+                                          not(contains(@href, 'ereed.library.utoronto.ca/gis/'))]">
         <ul>
-          <xsl:for-each select="$entity/external_data">
-            <li><a href="{@href}"><xsl:value-of select="@href"/></a></li>
+          <xsl:for-each select="$entity/external_data[not(contains(@href, 'ereed.library.utoronto.ca/geomap/')) and 
+                                                     not(contains(@href, 'ereed.org/geomap/')) and
+                                                     not(contains(@href, 'ereed.library.utoronto.ca/gis/'))]">
+            <li>
+              <a href="{@href}">
+                <xsl:choose>
+                  <xsl:when test="contains(@href, 'archive.org')">Archive.org</xsl:when>
+                  <xsl:when test="contains(@href, 'britannica.com')">Britannica</xsl:when>
+                  <xsl:when test="contains(@href, 'british-history.ac.uk')">British History Online</xsl:when>
+                  <xsl:when test="contains(@href, 'emlot.library.utoronto.ca') or 
+                                contains(@href, 'emlot.org')">Early Modern London Theatres</xsl:when>
+                  <xsl:when test="contains(@href, 'historyofparliamentonline.org')">History of Parliament Online</xsl:when>
+                  <xsl:when test="contains(@href, 'lostplays.folger.edu')">Lost Plays Database</xsl:when>
+                  <xsl:when test="contains(@href, 'masl.library.utoronto.ca')">Mayors and Sheriffs of London</xsl:when>
+                  <xsl:when test="contains(@href, 'odnb') or contains (@href, 'oxforddnb')">Oxford Dictionary of National Biography</xsl:when>
+                  <xsl:when test="contains(@href, 'oed')">Oxford English Dictionary</xsl:when>
+                  <xsl:when test="contains(@href, 'reed.library.utoronto.ca') or 
+                                contains(@href, 'library2.utm.utoronto.ca/otra/reed/')">Patrons &amp; Performances</xsl:when>
+                  <xsl:when test="contains(@href, 'poms.ac.uk')">People of Medieval Scotland</xsl:when>
+                  <xsl:when test="contains(@href, 'viaf.org')">Virtual International Authority File (VIAF)</xsl:when>
+                  <xsl:when test="contains(@href, 'wikidata.org')">Wikidata</xsl:when>
+                  <xsl:when test="contains(@href, 'wikipedia.org')">Wikipedia</xsl:when>
+                  <xsl:otherwise>Other External Source: (<xsl:value-of select="@href"/>)</xsl:otherwise>
+                </xsl:choose>
+              </a>
+
+            </li>
+
           </xsl:for-each>
         </ul>
       </xsl:when>

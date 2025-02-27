@@ -21,6 +21,7 @@
   </menu>
   <menu label="Playhouse Timelines" match="ereed-timelines">
     <item label="Rose Playhouse" match="ereed-timeline" params="rosep"/>
+    <item label="Bear Gardens/Hope Playhouse" match="ereed-timeline" params="bghop"/>
   </menu>
   <menu label="About REED Online" match="ereed-about-section">
     <item label="How To Use REED Online" match="ereed-howto-section"/>
@@ -35,6 +36,7 @@
   <menu label="Other REED Resources" match="ereed-resources-section">
     <item label="EMLoT" href="https://emlot.org" />
     <item label="Patrons and Performances" href="https://library2.utm.utoronto.ca/otra/reed/" />
+    <item label="REED Civic London 1558-1642" href="https://civiclondon.wordpress.com/" />
     <item label="REED Collections" match="reed-collections" />
     <item label="REED North-East" href="https://reed-ne.webspace.durham.ac.uk/" />
     <item label="REED Pre-Publication Collections" href="https://reedprepub.org/" />

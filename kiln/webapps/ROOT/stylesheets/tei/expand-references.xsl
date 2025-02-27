@@ -98,6 +98,10 @@
     </xsl:copy>
   </xsl:template>
 
+  <xsl:template match="kiln:added/tei:text[@type='record']" mode="record-addition">
+    <xsl:apply-templates select="tei:body/tei:head" />
+  </xsl:template>
+
   <xsl:template match="tei:*[@ana]" mode="#default referenced-record">
     <xsl:for-each select="tokenize(@ana, '\s+')">
       <xsl:call-template name="make-xinclude">
@@ -105,7 +109,23 @@
       </xsl:call-template>
     </xsl:for-each>
   </xsl:template>
-
+  
+  <xsl:template match="tei:text[@copyOf]" priority="10">
+    <xsl:variable name="originalId" select="substring-after(@copyOf, '#')" />
+    <xsl:message>
+      <xsl:text>Processing copyOf reference: </xsl:text>
+      <xsl:value-of select="$originalId" />
+    </xsl:message>
+    <xsl:apply-templates select="id($originalId)" mode="referenced" />
+  </xsl:template>
+  
+  <xsl:template match="tei:*[@copyOf]" priority="5">
+    <!-- Apply attributes first -->
+    <xsl:call-template name="make-xinclude">
+      <xsl:with-param name="url" select="@copyOf" />
+    </xsl:call-template>
+  </xsl:template>
+  
   <xsl:template match="tei:text[@sameAs]">
     <xsl:apply-templates select="@*|node()"/>
   </xsl:template>

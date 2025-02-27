@@ -107,6 +107,8 @@
         compatibility is not guaranteed.  Names with both leading and
         trailing underscores (e.g. _version_) are reserved.
    -->
+   <field name="copyOfReference" type="string" indexed="true" stored="true" />
+   <field name="collectionId" type="string" indexed="true" stored="true" />
 
    <field indexed="true" multiValued="true" name="document_title"
           required="false" stored="true" type="text_general" />

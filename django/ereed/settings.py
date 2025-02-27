@@ -136,12 +136,12 @@ LEAFLET_CONFIG = {
     "OVERLAYS": [
         (
             "Pre-1642 Roads",
-            "http://talus.geog.utoronto.ca/1.0.0/REED_gis_roads/{z}/{x}/{-y}.png",
+            "https://library2.utm.utoronto.ca/tileserver/REED_gis_roads/{z}/{x}/{y}.png",
             {},
         ),
         (
             "Detailed roads in London area",
-            "http://talus.geog.utoronto.ca/1.0.0/EREED_gis_roads_wlabels_Z8-18/{z}/{x}/{-y}.png",
+            "https://library2.utm.utoronto.ca/tileserver/EREED_gis_roads_wlabels_Z8-18/{z}/{x}/{y}.png",
             {},
         ),
     ],
@@ -166,7 +166,7 @@ LEAFLET_CONFIG = {
         ),
         (
             "Counties",
-            "http://talus.geog.utoronto.ca/1.0.0/EREED_gis_counties_base/{z}/{x}/{-y}.png",
+            "https://library2.utm.utoronto.ca/tileserver/EREED_gis_counties_base/{z}/{x}/{y}.png",
             {
                 "maxZoom": 20,
                 "attribution": '<a href="http://reed.utoronto.ca/">Records of Early English Drama</a>',
@@ -174,7 +174,7 @@ LEAFLET_CONFIG = {
         ),
         (
             "Relief",
-            "http://talus.geog.utoronto.ca/1.0.0/REED_gis_relief/{z}/{x}/{-y}.png",
+            "https://library2.utm.utoronto.ca/tileserver/REED_gis_relief/{z}/{x}/{y}.png",
             {"maxZoom": 20},
         ),
     ],
@@ -191,6 +191,43 @@ ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=[])
 ADMINS = env("DJANGO_ADMINS", default=[])
 SERVER_EMAIL = env("DJANGO_SERVER_EMAIL", default="noreply@localhost")
 DEFAULT_FROM_EMAIL = env("DJANGO_DEFAULT_FROM_EMAIL", default="noreply@localhost")
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "filters": {"require_debug_false": {"()": "django.utils.log.RequireDebugFalse"}},
+    "formatters": {
+        "verbose": {
+            "format": "%(levelname)s %(asctime)s %(module)s "
+            "%(process)d %(thread)d %(message)s"
+        }
+    },
+    "handlers": {
+        "mail_admins": {
+            "level": "ERROR",
+            "filters": ["require_debug_false"],
+            "class": "django.utils.log.AdminEmailHandler",
+        },
+        "console": {
+            "level": "DEBUG",
+            "class": "logging.StreamHandler",
+            "formatter": "verbose",
+        },
+    },
+    "root": {"level": "INFO", "handlers": ["console"]},
+    "loggers": {
+        "django.request": {
+            "handlers": ["mail_admins"],
+            "level": "ERROR",
+            "propagate": True,
+        },
+        "django.security.DisallowedHost": {
+            "level": "ERROR",
+            "handlers": ["console", "mail_admins"],
+            "propagate": True,
+        },
+    },
+}
 
 DATABASES = {
     "default": {

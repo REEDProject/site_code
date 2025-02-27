@@ -5,11 +5,16 @@
 @font-face {
     font-family: 'Symbola';
     src: /* url('Symbola.otf'); */
-      url('Symbola.woff2') format('woff2'),
-        url('Symbola.woff') format('woff');         
-    unicode-range: U+2E4E
+      url('/assets/styles/Symbola.woff2') format('woff2'),
+        url('/assets/styles/Symbola.woff') format('woff');         
+    unicode-range: U+2E4E, U+204B, U+204C, U+2E3F;
 }
- 
+
+.special-character {
+    font-family: 'Georgia', 'Times New Roman', 'Symbola', 'Segoe UI Symbol', 'Arial Unicode MS', 'Apple Symbols', 'Helvetica Neue', monospace; /* Fallback fonts */
+}
+
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -1304,6 +1309,12 @@ p {
     line-height: 1.6;
     margin-bottom: 1rem;
     text-rendering: optimizeLegibility
+}
+
+p.tei.edDesc.align\(blockquote\) {
+    margin: 0 0 1rem;
+    padding: .5625rem 1.25rem 0 1.1875rem;
+    border-left: 1px solid #cacaca;
 }
 
 em, i {
@@ -5742,6 +5753,10 @@ table.hover tbody tr:hover {
     font-size: 15px;
     color: #4a4a4a;
     line-height: 24px
+}
+
+.record .special-character {
+    font-family: Georgia, Times New Roman, Symbola, Segoe UI Symbol, Arial Unicode MS, Apple Symbols, Helvetica Neue, monospace !important;
 }
 
 .record .record-info-inner {

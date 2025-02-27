@@ -420,6 +420,24 @@
     <graphic url="images/bghop/BHEBDGmb4.jpg" xml:id="BHEBDGmb4">
       <desc>The National Archives (UK), ref. REQ 2/177/35</desc>
     </graphic>
+    <graphic url="images/bghop/BHEBDGmb5.jpg" xml:id="BHEBDGmb5">
+      <desc>The National Archives (UK), ref. REQ 2/177/35</desc>
+    </graphic>
+    <graphic url="images/bghop/BHJCDC.jpg" xml:id="BHJCDC">
+      <desc>The National Archives (UK), ref. SP 14/148</desc>
+    </graphic>
+    <graphic url="images/bghop/BHLJCS.jpg" xml:id="BHLJCS">
+      <desc>The National Archives (UK), ref. SP 16/334</desc>
+    </graphic>
+    <graphic url="images/bghop/BHBLBG2.jpg" xml:id="BHBLBG2">
+      <desc>The National Archives (UK), ref. C 146/8581</desc>
+    </graphic>
+    <graphic url="images/bghop/BHMRHH1.jpg" xml:id="BHMRHH1">
+      <desc>The National Archives (UK), ref. TNA: C 38/25</desc>
+    </graphic>
+    <graphic url="images/bghop/BHMRHH2.jpg" xml:id="BHMRHH2">
+      <desc>The National Archives (UK), ref. TNA: C 38/25</desc>
+    </graphic>
     <graphic url="images/bghop/BHWLBG.jpg" xml:id="BHWLBG">
       <desc>The National Archives (UK), ref. C 146/8578</desc>
     </graphic>
@@ -485,6 +503,9 @@
     </graphic>
     <graphic url="images/bghop/BHAPCB.jpg" xml:id="BHAPCB">
       <desc>The National Archives (UK), ref. C 3/139/4</desc>
+    </graphic>
+    <graphic url="images/bghop/BHCRAH.jpg" xml:id="BHCRAH">
+      <desc>The National Archives (UK), ref. C 3/139/4: part 2</desc>
     </graphic>
   </facsimile>
 
@@ -5512,7 +5533,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="bghop-ridp269496296">
+      <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="bghop-ridp269496296" sameAs="nwbts.xml#nwbts-rid1">
         <body>
           <head><rs ref="eats:36947" type="Place_PA_Settlement">London</rs>, <rs ref="eats:361887"
               type="Place_F_GuildHall">Guildhall</rs>
@@ -5996,7 +6017,7 @@
             <div>
               <head>Item 5, single membrane <supplied>(20 June) (Rejoinder of Digges and
                   Gape)</supplied></head>
-              <pb n="5"/>
+              <pb n="5" facs="#BHEBDGmb5"/>
 
               <ab rend="center">The<note type="marginal" place="margin_left"><handShift/>xx<hi
                     rend="superscript">o</hi> Die Iunij A<ex>nn</ex>o R<ex>egi</ex>ne
@@ -8220,7 +8241,7 @@
             </div>
             <div>
               <head>single membrane <supplied>(Schedule of bulls and bears)</supplied></head>
-              <pb n="1" type="membrane"/>
+              <pb n="1" type="membrane" facs="#BHBLBG2"/>
 
               <ab>A<note type="foot">A: <hi rend="italic">exdented; written in display
                   script</hi></note> Scedule Indented of all the <rs ref="eats:357316"
@@ -8724,8 +8745,7 @@
           <div type="endnote">
             <p> As Henslowe reports here, the <rs ref="eats:25827" type="Collective_Troupe"
                 >Admiral's player</rs>, Gabriel Spencer (1576-98), was slain on 22 September by Ben
-              Jonson in a duel in Hoxton fields. Spencer is known to have been with <rs
-                ref="eats:199956" type="Collective_Troupe">Pembroke's Men</rs> in 1596, moving with
+              Jonson in a duel in Hoxton fields. Spencer is known to have been with Pembroke's Men in 1596, moving with
               others from that company to the Admiral's Men at the <rs ref="eats:157260"
                 type="Place_F_Playhouse">Rose</rs> by 1597. See further Andrew Gurr,
                 <title>Shakespeare's Opposites: The Admiral's Company 1594-1625</title> (Cambridge,
@@ -13059,7 +13079,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp267781560-transcription">
             <div>
               <head>ff [1–2] <supplied>(30 April)</supplied></head>
-              <pb n="[1]" type="folio"/>
+              <pb n="[1]" type="folio" facs="#BHMRHH1"/>
 
               <ab rend="center">Inter <rs ref="eats:344164" type="Person_Commoner">Ioh<ex>ann</ex>em
                   Henslow</rs> q<ex>uerentem</ex>. <rs ref="eats:344308" type="Person_Commoner"
@@ -13097,7 +13117,7 @@
                   freind<ex>es</ex> and findinge the said Phillip ‸ <add place="above">to be</add>
                 in daunger of death, did practise w<ex>i</ex>th thother
                   def<ex>endan</ex>t<ex>es</ex> to drawe the said Phillip to alter his will and to
-                settle all his estate on the said Agnes, and <pb n="[1v]" type="folio"/> to make hir
+                settle all his estate on the said Agnes, and <pb n="[1v]" type="folio" facs="#BHMRHH2"/> to make hir
                 his sole executrix and thother def<ex>endan</ex>t<ex>es</ex> Overseers,
                 w<ex>hi</ex>ch Phillip often refused to doe To w<ex>hi</ex>ch point the
                   def<ex>endan</ex>t<ex>es</ex> by their answere say That there was not any such
@@ -18378,7 +18398,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp265948040-transcription">
             <div>
               <head>f [1v] <supplied>(12 July)</supplied></head>
-              <pb n="[1v]" type="folio"/>
+              <pb n="[1v]" type="folio" facs="#BHJCDC"/>
 
               <ab>the <rs ref="eats:345565" type="Person_Male">spanish ambassador</rs><note
                   type="foot">spanish ambassador: <hi rend="italic">Juan de Mendoza y Velasco,
@@ -19141,7 +19161,7 @@
             <div>
               <head>single mb <supplied>(31 January)</supplied></head>
               <!-- IN: PG, missing page breaks here? PG: no idea why we had page numbers for this.  Odd-->
-              <pb n="1" type="membrane"/>
+              <pb n="1" type="membrane" facs="#BHCRAH"/>
 
               <ab rend="center">To the <rs ref="eats:17496" type="Person_Male">Kinges</rs> mosts
                 excellent Ma<ex>ies</ex>tie/</ab>
@@ -19997,7 +20017,7 @@
           </div>
         </body>
       </text>
-      <text ana="taxon:ChronHist_Hist" type="record" xml:id="bghop-ridp258075656">
+      <text ana="taxon:ChronHist_Hist" type="record" xml:id="bghop-ridp258075656" sameAs="nwbts.xml#nwbts-rid2">
         <body>
           <head><rs ref="eats:36966" type="Place_PA_Settlement">Southwark</rs>, <rs
               ref="eats:227893" type="Place_F_Playhouse">Bear Garden 4/Hope Playhouse</rs>
@@ -20111,7 +20131,7 @@
           <div xml:lang="eng" type="transcription" xml:id="bghop-ridp258480904-transcription">
             <div>
               <head>f [1] <supplied>(22 October) (Golden Cross, the Strand)</supplied></head>
-              <pb n="[1]" type="folio"/>
+              <pb n="[1]" type="folio" facs="#BHLJCS"/>
 
               <ab><gap reason="omitted"/>there are very fewe Inhabitant<ex>es</ex> in the
                   Suburb<ex>es</ex> but such as are of poore and desperate fortune<ex>s</ex> And

@@ -194,7 +194,7 @@
         <xsl:when test="$value = ('Borough/City', 'County', 'Civil Parish')">
           <xsl:text>local_gov</xsl:text>
         </xsl:when>
-        <xsl:when test="$value = ('Accounts', 'Courts')">
+        <xsl:when test="$value = ('Accounts', 'Courts', 'Surveys')">
           <xsl:text>manorial</xsl:text>
         </xsl:when>
         <xsl:when test="$value = ('Inventories', 'Advertisements', 'Memoranda', 'Business', 'Correspondence', 'Estate')">
@@ -260,6 +260,15 @@
 
   <xsl:template match="tei:note" mode="free-text-note">
     <xsl:apply-templates mode="free-text" />
+  </xsl:template>
+
+  <xsl:template match="tei:text[@type='record'][@copyOf]">
+    <xsl:variable name="copyOfReference" select="substring-after(@copyOf, '#')" />
+    <xsl:message>
+      <xsl:text>Processing copyOf reference: </xsl:text>
+      <xsl:value-of select="$copyOfReference" />
+    </xsl:message>
+    <xsl:apply-templates select="id($copyOfReference)" />
   </xsl:template>
 
 </xsl:stylesheet>

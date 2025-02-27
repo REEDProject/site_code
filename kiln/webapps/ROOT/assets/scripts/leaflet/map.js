@@ -120,7 +120,7 @@ function addSourceLayer(map, baseImagePath) {
 function addTileLayers(map) {
   let county_coverage = L.tileLayer(
     getREEDLayerURL('EREED_gis_counties_base'), {
-      attribution: '<a href="http://reed.utoronto.ca/">Records of Early English Drama</a>',
+      attribution: '<a href="http://reed.utoronto.ca/">Records of Early English Drama</a>'
     });
   let relief = L.tileLayer(getREEDLayerURL('REED_gis_relief'));
   let osm = L.tileLayer(
@@ -192,7 +192,7 @@ function fitBounds(map, regionLayer, relatedLayer) {
  * @returns {String}
  */
 function getREEDLayerURL(name) {
-  return 'http://talus.geog.utoronto.ca/1.0.0/' + name + '/{z}/{x}/{-y}.png';
+  return 'https://library2.utm.utoronto.ca/tileserver/' + name + '/{z}/{x}/{y}.png';
 }
 
 

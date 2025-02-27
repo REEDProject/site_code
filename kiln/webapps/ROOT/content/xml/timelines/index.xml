@@ -28,15 +28,16 @@
       <title>Rose Playhouse Timeline</title>
       <description>Timeline for the Rose Playhouse collection</description>
     </timeline>
+    <timeline xml:id="bghop">
+      <title>Bear Gardens/Hope Playhouse Timeline</title>
+      <description>Timeline for the Bear Gardens/Hope Playhouse collection</description>
+    </timeline>
   </live>
-  <development>
-    <timeline>Bear Gardens/Hope Playhouse Timeline</timeline>
-  </development>
-  <featured ref="#rosep">
-    <title>Rose Playhouse</title>
+  <featured ref="#bghop">
+    <title>Bear Gardens/ Hope Playhouse</title>
     <!-- Thumbnail is the path of a PNG in content/images, excluding
          the file extension and relative content/images. Eg,
          "timelines/rose_timeline_thumbnail" -->
-    <thumbnail>timelines/rose_timeline_thumbnail</thumbnail>
+    <thumbnail>timelines/bghope_timeline_thumbnail</thumbnail>
   </featured>
 </timelines>
