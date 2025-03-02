@@ -4,10 +4,6 @@ log:
 entryPoints:
   web:
     address: ":80"
-    http:
-      redirections:
-        entryPoint:
-          to: web-secure
 
   web-secure:
     address: ":443"
@@ -57,6 +53,43 @@ http:
       tls:
         certResolver: letsencrypt
 
+    redirect-ip:
+      rule: "HostRegexp(`{host:(198\\.168\\.185\\.15)}`)"
+      entryPoints:
+        - web
+      middlewares:
+        - redirect-to-domain
+      service: noop@internal
+      priority: 200
+
+    redirect-ip-secure:
+      rule: "HostRegexp(`{host:(198\\.168\\.185\\.15)}`)"
+      entryPoints:
+        - web-secure
+      middlewares:
+        - redirect-to-domain-secure
+      service: noop@internal
+      priority: 100
+      tls: {}
+
+    ip-to-domain:
+      rule: "Host(`198.168.185.15`)"
+      entryPoints:
+        - web
+      service: noop@internal
+      priority: 1000
+      middlewares:
+        - to-domain
+
+    http-to-https:
+      rule: "Host(`ereed.org`) || Host(`www.ereed.org`) || Host(`dev.ereed.org`)"
+      entryPoints:
+        - web
+      service: noop@internal
+      priority: 100
+      middlewares:
+        - to-https
+
   middlewares:
     basic-auth:
       basicAuth:
@@ -66,6 +99,29 @@ http:
       headers:
         hostsProxyHeaders: ["X-CSRFToken"]
     
+    redirect-to-domain:
+      redirectRegex:
+        regex: ".*"
+        replacement: "https://ereed.org"
+        permanent: true
+
+    redirect-to-domain-secure:
+      redirectRegex:
+        regex: '^https://(198\.168\.185\.15)(/.*)?$'
+        replacement: 'https://ereed.org$2'
+        permanent: true
+
+    to-domain:
+      redirectRegex:
+        regex: ".*"
+        replacement: "https://ereed.org"
+        permanent: true
+
+    to-https:
+      redirectScheme:
+        scheme: https
+        permanent: true
+
   services:
     tomcat:
       loadBalancer:
