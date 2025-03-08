@@ -138,7 +138,7 @@
   <facsimile>
     <graphic url="images/nwbts/NBPL14.jpg" xml:id="NBPL14">
       <desc>By kind permission of the More-Molyneux family and Surrey History Centre</desc>
-    </graphic>
+    </graphic>   
     <graphic url="images/nwbts/LMA/NBSKCSf87v.jpg" xml:id="NBSKCSf87v">
       <desc>© London Metropolitan Archives (City of London), SKCS/018</desc>
     </graphic>
@@ -156,30 +156,29 @@
     </graphic>
     <graphic url="images/nwbts/TNA/NBPCL3p84.jpg" xml:id="NBPCL3p84">
       <desc>The National Archives (UK), ref. PC2/14</desc>
-    </graphic>
+    </graphic>    
     <graphic url="images/nwbts/TNA/NBPCL3p86.jpg" xml:id="NBPCL3p86">
       <desc>The National Archives (UK), ref. PC2/14</desc>
-    </graphic>
+    </graphic>    
     <graphic url="images/nwbts/TNA/NBPCO7p300.jpg" xml:id="NBPCO7p300">
       <desc>The National Archives (UK), ref. PC2/12</desc>
-    </graphic>
+    </graphic>    
     <graphic url="images/nwbts/TNA/NBPCO7p348.jpg" xml:id="NBPCO7p348">
       <desc>The National Archives (UK), ref. PC2/12</desc>
-    </graphic>
+    </graphic>    
     <graphic url="images/nwbts/TNA/NBPL13p10.jpg" xml:id="NBPL13p10">
       <desc>The National Archives (UK), ref. PC2/13</desc>
-    </graphic>
+    </graphic>    
     <graphic url="images/nwbts/TNA/NBCRSH3.jpg" xml:id="NBCRSH3">
       <desc>The National Archives (UK), ref. REQ 2/266</desc>
-    </graphic>
+    </graphic>    
     <graphic url="images/nwbts/TNA/NBCRSH2.jpg" xml:id="NBCRSH2">
       <desc>The National Archives (UK), ref. REQ 2/266</desc>
-    </graphic>
+    </graphic>    
     <graphic url="images/nwbts/TNA/NBCRSH1.jpg" xml:id="NBCRSH1">
       <desc>The National Archives (UK), ref. REQ 2/266</desc>
-    </graphic>
+    </graphic>    
   </facsimile>
-
   <text>
     <front>
       <div xml:id="property">
@@ -784,7 +783,7 @@
       </div>
     </front>
     <group>
-      <!-- IN: Skip indexing this record for now -->
+      <!-- IN: Skip indexing this record for now --> 
       <text type="record" xml:id="nwbts-rid25" copyOf="rosep.xml#rosep-ridm90700072">
         <body>
           <p/>
@@ -868,8 +867,7 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
       </text>
       <text type="record" xml:id="nwbts-rid13">
         <body>
-          <head><rs>Surrey</rs>, <rs><rs ref="eats:231618" type="Place_PA_Settlement"
-              >Newington</rs></rs>
+          <head><rs>Surrey</rs>, <rs><rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs></rs>
             <date when-iso="1576">1576</date>
             <seg ana="taxon:NBSKCS">NBSKCS</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid13-transcription">
@@ -884,13 +882,11 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
               <table>
                 <row>
                   <cell>ffirste<note type="marginal" place="margin_left">Savage &amp; Hilles</note>
-                      p<ex>re</ex>sente <rs ref="eats:202508" type="Person_Male">Ierome Savadge</rs>
-                    &amp; <rs ref="eats:486905" type="Person_Male">Iohn Hilles</rs> to skowre &amp;
-                    caste deeper x roddes of their com<ex>m</ex>on shewer leadinge from the grate at
-                      <rs ref="eats:227741" type="Place_F_Playhouse">newington Butt</rs><ex>es</ex>
-                    to the ende of Ierome Savag<ex>es</ex> orchard corner beinge more or les to be
-                    done by the x<hi rend="superscript">th</hi> daye of October nexte comynge vppon
-                    paine of xx d. for euerye rod then vndone</cell>
+                      p<ex>re</ex>sente <rs ref="eats:202508" type="Person_Male">Ierome Savadge</rs> &amp; <rs ref="eats:486905" type="Person_Male">Iohn Hilles</rs> to skowre &amp; caste
+                    deeper x roddes of their com<ex>m</ex>on <rs ref="eats:487554" type="Place_F_WaterFeature">shewer</rs> leadinge from the grate at
+                    <rs ref="eats:227741" type="Place_F_Playhouse">newington Butt</rs><ex>es</ex> to the ende of Ierome Savag<ex>es</ex> orchard corner
+                    beinge more or les to be done by the x<hi rend="superscript">th</hi> daye of
+                    October nexte comynge vppon paine of xx d. for euerye rod then vndone</cell>
                   <cell rend="right">xx d.</cell>
                 </row>
                 <row>
@@ -904,7 +900,7 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
                 <row>
                   <cell>It<ex>e</ex>m<note type="marginal" place="margin_left"
                         >thenhabitant<ex>es</ex> of Newinton</note>we p<ex>re</ex>sente
-                    thenhabitance of ‸<add place="above">the p<ex>ar</ex>ishe of</add> Newington to
+                    thenhabitance of ‸<add place="above">the p<ex>ar</ex>ishe of</add> <rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs> to
                     clense &amp; caste deeper one rodde before the grate of Ierome Savadges doore to
                     be done by the x<hi rend="superscript">th</hi> of October next comynge vpon
                     paine of vj s. viij d. yf it be then vndone</cell>
@@ -920,13 +916,12 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
               <table>
                 <row>
                   <cell>We<note type="marginal" place="margin_left">Hilles &amp;
-                      Cockowe</note>p<ex>re</ex>sente Iohn hills &amp; <rs ref="eats:486966"
-                      type="Person_Male">Thomas Cockowe</rs> to skowre &amp; caste deeper xv pooles
-                    of the com<ex>m</ex>on shewer leadinge from Ierome Savag<ex>es</ex> orchard
-                    corner to barl<add place="above">owes</add><del><damage><gap unit="chars"
-                          extent="2"/></damage>es</del> grounde be it more or les to be done by the
-                      x<hi rend="superscript">th</hi> daye of October next comynge vpon paine of xx
-                    d. euery rod then vndone</cell>
+                      Cockowe</note>p<ex>re</ex>sente Iohn hills &amp; <rs ref="eats:486966" type="Person_Male">Thomas Cockowe</rs> to skowre
+                    &amp; caste deeper xv pooles of the com<ex>m</ex>on shewer leadinge from Ierome
+                      Savag<ex>es</ex> orchard corner to barl<add place="above"
+                          >owes</add><del><damage><gap unit="chars" extent="2"/></damage>es</del>
+                    grounde be it more or les to be done by the x<hi rend="superscript">th</hi> daye
+                    of October next comynge vpon paine of xx d. euery rod then vndone</cell>
                   <cell rend="right">xx d.</cell>
                 </row>
                 <row>
@@ -940,7 +935,7 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
             </div>
           </div>
           <div type="endnote">
-            <p> Jerome Savage (d. 1587) is known to have been an actor in the earl of Warwick's
+            <p> Jerome Savage (d. 1587) is known to have been an actor in the <rs ref="eats:12706" type="Collective_Troupe">earl of Warwick's</rs>
               troupe between 1575–9. See further History of the
               Playhouse<!-- #IN to link to Introduction: 2nd chapter -->. </p>
 
@@ -969,16 +964,14 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
 
               <table>
                 <row>
-                  <cell>Imprimis <note type="marginal" place="margin_left">Newington <rs
-                        ref="eats:487008" type="Place_PA_Settlement">St Georges</rs> &amp; <rs
-                        ref="eats:487026" type="Place_PA_Settlement">St Mary Magdalyns</rs></note>we
-                      p<ex>re</ex>sent all thos p<ex>er</ex>sons whose names are herevnder named
-                    hauing grounde w<ex>i</ex>thin the saied p<ex>ar</ex>ishes to cutt &amp; dragge
-                    all theire seuerall p<ex>ar</ex>tes of the Co<ex>m</ex>en shewer begyninge at
-                    the grate at Newington Buttes &amp; so all alonge to the bridge at the Lasier
-                    house viz: Iohn<note type="foot">Iohn: <hi rend="italic">presumably an error
-                        for</hi> Ierome</note> Savadge &amp; Iohn Hilles x roddes<gap
-                      reason="omitted"/></cell>
+                  <cell>Imprimis <note type="marginal" place="margin_left">Newington <rs ref="eats:487008" type="Place_PA_Settlement">St Georges</rs>
+                      &amp; <rs ref="eats:487026" type="Place_PA_Settlement">St Mary Magdalyns</rs></note>we p<ex>re</ex>sent all thos p<ex>er</ex>sons
+                    whose names are herevnder named hauing grounde w<ex>i</ex>thin the saied
+                      p<ex>ar</ex>ishes to cutt &amp; dragge all theire seuerall p<ex>ar</ex>tes of
+                    the Co<ex>m</ex>en shewer begyninge at the grate at Newington Buttes &amp; so
+                    all alonge to the bridge at the Lasier house viz: <rs ref="eats:202508" type="Person_Male">Iohn<note type="foot">Iohn:
+                        <hi rend="italic">presumably an error for</hi> Ierome</note> Savadge</rs> &amp;
+                    <rs ref="eats:486905" type="Person_Male">Iohn Hilles</rs> x roddes<gap reason="omitted"/></cell>
                   <cell rend="right">xiij d. don<ex>e</ex></cell>
                 </row>
                 <row>
@@ -1011,12 +1004,11 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
 
               <table>
                 <row>
-                  <cell>It<ex>e</ex>m we p<ex>re</ex>sent all the landhoulders from Newington bridge
-                    vppon both sydes the Co<ex>m</ex>en sewer &amp; so alonge to <rs
-                      ref="eats:487062" type="Place_Feature">Duffildes sluce</rs> to Cutt pare &amp;
-                    dragge all &amp; euery man his seu<ex>er</ex>all p<ex>ar</ex>te of the same
-                    sewer to be done by the laste daye of November next comyng vppon payne of xij d.
-                    for euery rodde then vndone viz. </cell>
+                  <cell>It<ex>e</ex>m we p<ex>re</ex>sent all the landhoulders from <rs ref="eats:487587" type="Place_F_Bridge">Newington bridge</rs>
+                    vppon both sydes the Co<ex>m</ex>en sewer &amp; so alonge to <rs ref="eats:487062" type="Place_Feature">Duffildes sluce</rs> to
+                    Cutt pare &amp; dragge all &amp; euery man his seu<ex>er</ex>all p<ex>ar</ex>te
+                    of the same sewer to be done by the laste daye of November next comyng vppon
+                    payne of xij d. for euery rodde then vndone viz. </cell>
                   <cell rend="right">xij d.</cell>
                 </row>
                 <row>
@@ -1027,21 +1019,21 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
 
               <table>
                 <row>
-                  <cell>Ierom Savadge &amp; Iohn Hylles</cell>
+                  <cell><rs ref="eats:202508" type="Person_Male">Ierom Savadge</rs> &amp; <rs ref="eats:486905" type="Person_Male">Iohn Hylles</rs></cell>
                   <cell>x poles</cell>
                 </row>
                 <row>
                   <cell>&#160;</cell>
                 </row>
                 <row>
-                  <cell>Thomas Cuckowe</cell>
+                  <cell><rs ref="eats:486966" type="Person_Male">Thomas Cuckowe</rs></cell>
                   <cell>xv pole</cell>
                 </row>
                 <row>
                   <cell>&#160;</cell>
                 </row>
                 <row>
-                  <cell>Barlowes widdowe &amp; Thomas Cuckowe</cell>
+                  <cell><rs ref="eats:487396" type="Person_Female">Barlowes widdowe</rs> &amp; Thomas Cuckowe</cell>
                   <cell>vij pole</cell>
                 </row>
               </table>
@@ -1063,12 +1055,11 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
 
               <gap reason="omitted"/>
 
-              <ab>It<ex>e</ex>m yt ys agreyd that <rs ref="eats:487080" type="Person_Male">peter
-                    honybo<ex>u</ex>rne</rs> shall haue a lease of the resydue of the garden
-                  <del>adioyni</del> and ground<ex>es</ex> adioynyng to the playe house in newyngton
-                not comp<ex>ri</ex>sed in his former lease for xxj<hi rend="superscript">ti</hi>
-                  yer<ex>es</ex> to begynne at mich<ex>aelm</ex>as next and he to pay therefore
-                yerely two shilling<ex>es</ex></ab>
+              <ab>It<ex>e</ex>m yt ys agreyd that <rs ref="eats:133645" type="Person_Male">peter honybo<ex>u</ex>rne</rs> shall haue a lease of
+                the resydue of the garden <del>adioyni</del> and ground<ex>es</ex> adioynyng to the
+                <rs ref="eats:227741" type="Place_F_Playhouse">playe house in newyngton</rs> not comp<ex>ri</ex>sed in his former lease for xxj<hi
+                  rend="superscript">ti</hi> yer<ex>es</ex> to begynne at mich<ex>aelm</ex>as next
+                and he to pay therefore yerely two shilling<ex>es</ex></ab>
 
               <gap reason="omitted"/>
             </div>
@@ -1109,7 +1100,7 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
               <table>
                 <row>
                   <cell>We<note type="marginal" place="margin_left">Honningborne.</note>
-                      p<ex>re</ex>sent Peter Honningborne to open the sluce by the play house that
+                      p<ex>re</ex>sent <rs ref="eats:133645" type="Person_Male">Peter Honningborne</rs> to open the <rs ref="eats:487044" type="Place_Feature">sluce</rs> by the <rs ref="eats:227741" type="Place_F_Playhouse">play house</rs> that
                     the water may hav a fre passage by our Ladyday next<note type="foot">our Ladyday
                       next: <hi rend="italic">feast of the Annunciation, 25 March</hi></note> vpon
                       pa<ex>y</ex>n of</cell>
@@ -1122,9 +1113,9 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
               <table>
                 <row>
                   <cell>We<note type="marginal" place="margin_left">Cuckow <lb/>exstreted</note>
-                      p<ex>re</ex>sent <rs ref="eats:487187" type="Person_Male">Richard Cuckow</rs>
-                    to make asluce or thorough at his gate leading in to his feild next adioyning to
-                    the playhouse by our Lady day next. vppon paine of</cell>
+                      p<ex>re</ex>sent <rs ref="eats:487187" type="Person_Male">Richard Cuckow</rs> to make asluce or thorough at his gate leading
+                    in to his feild next adioyning to the playhouse by our Lady day next. vppon
+                    paine of</cell>
                   <cell>v s.</cell>
                 </row>
               </table>
@@ -1139,6 +1130,7 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
           </div>
         </body>
       </text>
+      <!--IN: Do not tag--> 
       <text type="record" xml:id="nwbts-rid23">
         <!--copyOf="rosep.xml#rosep-ridm91625448"-->
         <body>
@@ -1187,11 +1179,13 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
           </div>
         </body>
       </text>
+      <!--IN: Do not tag--> 
       <text type="record" xml:id="nwbts-rid27" copyOf="rosep.xml#rosep-ridm91625448">
         <body>
           <p/>
         </body>
       </text>
+      <!--IN: Do not tag--> 
       <text type="record" xml:id="nwbts-rid18">
         <body>
           <head><rs>Surrey</rs>, <rs>Newington</rs>
@@ -1219,6 +1213,7 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
           </div>
         </body>
       </text>
+      <!--IN: Do not tag--> 
       <text type="record" xml:id="nwbts-rid24">
         <body>
           <head><rs>Surrey</rs>, <rs>Newington</rs>
@@ -1298,25 +1293,23 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
 
               <gap reason="omitted"/>
 
-              <ab>Yt is agreed that Mr Paule Bucke shall have the leases of t<damage><gap
+              <ab>Yt is agreed that Mr <rs ref="eats:487334" type="Person_Male">Paule Bucke</rs> shall have the leases of t<damage><gap
                     unit="chars" extent="2"/></damage> ten<ex>emen</ex>te and plaiehouse thereto
-                adioyninge in <rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs>
-                renewed vp to xxj yeares w<ex>i</ex>th coven<ex>au</ex>nt<ex>es</ex> as before and
-                  w<ex>i</ex>th a clause that he shall convert the playehouse to some other
-                  <del>house</del> vse vppon the saide grownde and not suffer anie plaies there
-                after michelmas nexte</ab>
+                adioyninge in <rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs> renewed vp to xxj yeares w<ex>i</ex>th
+                  coven<ex>au</ex>nt<ex>es</ex> as before and w<ex>i</ex>th a clause that he shall
+                convert the playehouse to some other <del>house</del> vse vppon the saide grownde
+                and not suffer anie plaies there after michelmas nexte</ab>
 
               <gap reason="omitted"/>
             </div>
           </div>
           <div type="endnote">
-            <p> The date of this agreement for Buck's lease of the <rs ref="eats:357211"
-                type="Place_Feature">Lurklane</rs> property comes soon after <rs ref="eats:349842"
-                type="Person_Male">Henslowe</rs>'s use of the Newington Butts playhouse for the
-              newly formed Lord Chamberlain's and Lord Admiral's Men in June 1594. Both Ingram,
-                <title>Business of Playing</title>, p 176, n 48, and Wickham <hi rend="italic">et
-                al</hi>, <title>English Professional Theatre</title>, p 329, use the older ink folio
-              number 153 for this entry. </p>
+            <p> The date of this agreement for Buck's lease of the <rs ref="eats:357211" type="Place_Feature">Lurklane</rs> property comes soon
+              after <rs ref="eats:349842" type="Person_Male">Henslowe</rs>'s use of the Newington Butts playhouse for the newly formed <rs ref="eats:223085" type="Collective_Troupe">Lord
+              Chamberlain's</rs> and <rs ref="eats:187706" type="Collective_Troupe">Lord Admiral's</rs> Men in June 1594. Both Ingram, <title>Business of
+                Playing</title>, p 176, n 48, and Wickham <hi rend="italic">et al</hi>,
+                <title>English Professional Theatre</title>, p 329, use the older ink folio number
+              153 for this entry. </p>
           </div>
         </body>
       </text>
@@ -1332,10 +1325,9 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
 
               <gap reason="omitted"/>
 
-              <ab rend="center">In the name of god Amen begininge at <rs ref="eats:231618"
-                  type="Place_PA_Settlement">newing <lb/>ton</rs> my Lord Admerall<ex>es</ex> men
-                &amp; my Lorde chamberlen<ex>es</ex>
-                <lb/> men As ffolowethe 1594</ab>
+              <ab rend="center">In the name of god Amen begininge at <rs ref="eats:231618" type="Place_PA_Settlement">newing <lb/>ton</rs> my <rs ref="eats:25827" type="Collective_Troupe">Lord
+                  Admerall<ex>es</ex> men</rs> &amp; my <rs ref="eats:223085" type="Collective_Troupe">Lorde chamberlen<ex>es</ex>
+                <lb/> men</rs> As ffolowethe 1594</ab>
 
               <table>
                 <row>
@@ -1397,13 +1389,8 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
             </div>
           </div>
           <div type="endnote">
-            <p>Henslowe's customary abbreviation 'R'followed by the '-es' loop has been expanded
-              here according to REED practice. Although Henslowe spells the word variously
-              throughout the manuscript, 'Receued' appears in 1591 expenses (f 6v) and for example,
-              January 1596/7 (f 16) @xc\#link to
-              https://henslowe-alleyn.org.uk/catalogue/mss-7/016-recto/@xc \. </p>
             <p> For further details on the plays listed, see the Appendix <!-- IN please
-link to App -->. Henslowe drew a line following the entry on 13 June before continuing
+link to App -->. <rs ref="eats:129736" type="Person_Male">Henslowe</rs> drew a line following the entry on 13 June before continuing
               with his receipts from performances following, from 15 June onward. <title>The Taming
                 of a Shrew</title> and <title>Titus Andronicus</title> do not appear again in the
               repertory recorded in the <hi rend="italic">Diary</hi> and scholars have generally
@@ -1435,7 +1422,7 @@ link to App -->. Henslowe drew a line following the entry on 13 June before cont
                 old playe house did stand att Newington all alongest vnto the Bridge goyng from
                 Barmondsey cross the high waye vnto sainct Thomas Watering<ex>es</ex> is needefull
                 to be cast clensed and scowred, and we fynd that Richard Cuckow Robert fface,
-                Richard Salter Iohn miller, Iohn Iefferson and Thomas Harvy oughte to cast clense
+                Richard Salter Iohn miller, Iohn Iefferson and <rs ref="eats:11864" type="Person_Commoner">Thomas Harvy</rs> oughte to cast clense
                 and scower the same We p<ex>re</ex>sent the same to be done before Candlemas next
                 vpon payne of every pole then vndone<table>
                   <row>
@@ -1483,25 +1470,24 @@ link to App -->. Henslowe drew a line following the entry on 13 June before cont
 
               <ab>In<note type="foot">In: <hi rend="italic">display initial</hi> I</note> most
                 humble wise shew<ex>e</ex>th vnto yo<ex>u</ex>r most excellent ma<ex>ies</ex>tie
-                  yo<ex>u</ex>r ma<ex>ies</ex>ties humble and obedient Subiect Ierom Savage that
-                where one Richarde<note type="foot">Richarde: <hi rend="italic">written over
-                    erasure</hi></note> Tomson had by good conveyance for terme of xix<hi
+                  yo<ex>u</ex>r ma<ex>ies</ex>ties humble and obedient Subiect <rs ref="eats:202508" type="Person_Male">Ierom Savage</rs> that
+                where one <rs ref="eats:282357" type="Person_Male">Richarde<note type="foot">Richarde: <hi rend="italic">written over
+                    erasure</hi></note> Tomson</rs> had by good conveyance for terme of xix<hi
                   rend="superscript">te</hi> yeres in and to one messuage w<ex>i</ex>th the
-                  app<ex>ur</ex>tenan<ex>au</ex>nc<ex>es</ex> in <rs ref="eats:231618"
-                  type="Place_PA_Settlement">Newington</rs> in the countie of Surrey wherin
-                  yo<ex>u</ex>r said Subiect now inhabiteth and he the said Thom<ex>a</ex>s beinge
-                therof soo possessed co<ex>n</ex>veyed hys interest aforesaid therein to
+                  app<ex>ur</ex>tenan<ex>au</ex>nc<ex>es</ex> in <rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs> in the countie of <rs ref="eats:2291" type="Place_County">Surrey</rs>
+                wherin yo<ex>u</ex>r said Subiect now inhabiteth and he the said Thom<ex>a</ex>s
+                beinge therof soo possessed co<ex>n</ex>veyed hys interest aforesaid therein to
                   yo<ex>u</ex>r said Subiect by force whereof yo<ex>u</ex>r said Subiect entered and
                 was possessed accordingly &amp; yo<ex>u</ex>r said Subiect havinge the
                   p<ex>re</ex>miss<ex>es</ex> by such title was desirous to p<ex>ro</ex>cure further
                 yeres as also to have estaite in hys owne right from him that claymed the
-                inheritance of the p<ex>re</ex>misses That ys to say of one Richard Hick<ex>es</ex>
+                inheritance of the p<ex>re</ex>misses That ys to say of one <rs ref="eats:487271" type="Person_Male">Richard Hick<ex>es</ex></rs>
                 and therevpon yo<ex>u</ex>r said Subiect moved the said Richard Hick<ex>es</ex> who
                 then affirmed to have the verie fee simple of the p<ex>re</ex>misses &amp; that he
                 had full poer to graunte the same to yo<ex>u</ex>r said Orator for such yeres as
                 they concluded to have the same for terme of 30 yeres &amp; therevpon for the some
                 of x li.<note type="foot">x li.: <hi rend="italic">written over erasure</hi></note>
-                paid by yo<ex>u</ex>r said Orator the said Richard Hik<ex>es</ex> at or about
+                paid by yo<ex>u</ex>r said Orator the said <rs ref="eats:487271" type="Person_Male">Richard Hik<ex>es</ex></rs> at or about
                   thannunciac<ex>i</ex>on of our Ladie in the xviij<hi rend="superscript">th</hi>
                   yere<note type="foot"> xviij<hi rend="superscript">th</hi> yere: <hi rend="italic"
                     >1576</hi></note> of yo<ex>u</ex>r ma<ex>ies</ex>t<ex>ies</ex> reigne dyd by hys
@@ -1524,7 +1510,7 @@ link to App -->. Henslowe drew a line following the entry on 13 June before cont
                 entred &amp; was possessed of now so yt ys &amp; yt may please yo<ex>u</ex>r most
                 excellent ma<ex>ies</ex>tie y<ex>a</ex>t the said Richard Hik<ex>es</ex> sekinge to
                 defeat yo<ex>u</ex>r said Subiect of the p<ex>re</ex>misses co<ex>n</ex>trarie to
-                hys owne graunte &amp; to p<ex>re</ex>fer one Peter Hunnyngborne hys sonne in law to
+                hys owne graunte &amp; to p<ex>re</ex>fer one <rs ref="eats:133645" type="Person_Male">Peter Hunnyngborne</rs> hys sonne in law to
                 the same first p<ex>re</ex>tend that the said Peter had &amp; hath of the said
                 Richard a former graunte before the said seconde lease &amp; publish the said lease
                 wher ether ther ys no such lease or yf ther were any the same was antedated or made
@@ -1635,7 +1621,7 @@ link to App -->. Henslowe drew a line following the entry on 13 June before cont
                 former possession of the said premisses, this Defend<ex>an</ex>t knowethe noe suche
                 thinge, But in trewthe this Defend<ex>an</ex>t saiethe That one Richarde Thomson as
                 this Defend<ex>an</ex>t thinketh had and held one messwage or Tenement nere
-                Newington Butt<ex>es</ex> in the Countie of Surr<ex>ey</ex> as Ten<ex>au</ex>nte to
+                <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butt</rs><ex>es</ex> in the Countie of Surr<ex>ey</ex> as Ten<ex>au</ex>nte to
                 Richarde Hick<ex>es</ex> in the saide Bill of Complaynt named but how or by what
                 title this defend<ex>an</ex>t knoweth not And this Defendant further saiethe that
                 after the Departure of the saide Richarde Thomson beinge a silkewever as this
@@ -2487,194 +2473,203 @@ ingham-edward-1545-1605 -->, accessed 23 July 2024. Bernard Randolph, JP of Midd
           </div>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid26">
-        <body>
-          <head><rs>Surrey</rs>, <rs>Newington Butts</rs>
-            <date from-iso="1566" to-iso="1567">1566–7</date>
-            <seg ana="taxon:NBCCA1">NBCCA1</seg></head>
-          <div xml:lang="eng" type="transcription" xml:id="nwbts-rid26-transcription">
-            <div>
-              <head>f 68 <supplied>(between 25 September 1566 and March 1566/7)</supplied></head>
-              <pb n="68" type="folio"/>
-
-              <gap reason="omitted"/>
-
-              <ab>It<ex>e</ex>m. where Rychard hick<ex>es</ex> h<damage><gap unit="chars" extent="3"
-                  /></damage> the churches Land<ex>es</ex> at Ne<damage><gap unit="chars" extent="3"
-                  /></damage> for terme of yeres yet to com<ex>m</ex>e <damage><gap unit="chars"
-                    extent="3"/></damage> Richard hyck<ex>es</ex> hath built <damage><gap
-                    unit="chars" extent="3"/></damage> vppon one p<ex>ar</ex>cell of the
-                    sa<damage><gap unit="chars" extent="3"/></damage> Lurkelane which with a
-                    <damage><gap unit="chars" extent="3"/></damage> therevnto Lande<note type="foot"
-                  >Lande: <hi rend="italic">1 minim for</hi> n</note> conteyn<damage><gap
-                    unit="chars" extent="3"/></damage> highwaye leading from <damage><gap
-                    unit="chars" extent="3"/></damage> newyngton<add place="above">xliiij</add>
-                <del>xxiij</del> yard<ex>es</ex>
-                <damage><gap unit="chars" extent="3"/></damage> in lyke length in the fy<damage><gap
-                    unit="chars" extent="3"/></damage> xliiij yard<ex>es</ex> and vppon
-                    th<damage><gap unit="chars" extent="3"/></damage> South. xiiij yard<ex>es</ex>
-                yt ys ag<damage><gap unit="chars" extent="3"/></damage> Rychard shall haue a
-                    leas<damage><gap unit="chars" extent="3"/></damage> and garden as yt is now
-                    <damage><gap unit="chars" extent="3"/></damage> for lx yeres to begynne at
-                    <damage><gap unit="chars" extent="3"/></damage> payeng therefore yerely
-                    aft<damage><gap unit="chars" extent="3"/></damage> fully to be
-                det<ex>er</ex>myned at <damage><gap unit="chars" extent="3"/></damage>
-                  shilling<ex>es</ex> and bearing <damage><gap unit="chars" extent="3"/></damage>
-                howse and inclosures th<damage><gap unit="chars" extent="3"/></damage>
-                  Hyck<ex>es</ex> or ‸<add place="above">his</add> assignes when <damage><gap
-                    unit="chars" extent="3"/></damage> a new lease of the foresai<damage><gap
-                    unit="chars" extent="3"/></damage> w<ex>i</ex>t<ex>h</ex> hym in a former
-                    lea<damage><gap unit="chars" extent="3"/></damage> his assignes <damage><gap
-                    unit="chars" extent="2"/></damage>all n<damage><gap unit="chars" extent="3"
-                  /></damage> dymyse <damage><gap unit="chars" extent="3"/></damage></ab>
+        <text type="record" xml:id="nwbts-rid26">
+          <body>
+            <head><rs>Surrey</rs>, <rs>Newington Butts</rs>
+              <date from-iso="1566" to-iso="1567">1566–7</date>
+              <seg ana="taxon:NBCCA1">NBCCA1</seg></head>
+            <div xml:lang="eng" type="transcription" xml:id="nwbts-rid26-transcription">
+              <div>
+                <head>f 68 <supplied>(between 25 September 1566 and March
+                  1566/7)</supplied></head>
+                <pb n="68" type="folio"/>
+                
+                <gap reason="omitted"/>
+                
+                <ab>It<ex>e</ex>m. where Rychard hick<ex>es</ex> h<damage><gap unit="chars"
+                  extent="3"/></damage> the churches Land<ex>es</ex> at Ne<damage><gap
+                    unit="chars" extent="3"/></damage> for terme of yeres yet to com<ex>m</ex>e
+                  <damage><gap unit="chars" extent="3"/></damage> Richard hyck<ex>es</ex> hath
+                  built <damage><gap unit="chars" extent="3"/></damage> vppon one p<ex>ar</ex>cell
+                  of the sa<damage><gap unit="chars" extent="3"/></damage> Lurkelane which with a
+                  <damage><gap unit="chars" extent="3"/></damage> therevnto Lande<note
+                    type="foot">Lande: <hi rend="italic">1 minim for</hi> n</note>
+                  conteyn<damage><gap unit="chars" extent="3"/></damage> highwaye leading from
+                  <damage><gap unit="chars" extent="3"/></damage> newyngton<add place="above"
+                    >xliiij</add>
+                  <del>xxiij</del> yard<ex>es</ex>
+                  <damage><gap unit="chars" extent="3"/></damage> in lyke length in the
+                  fy<damage><gap unit="chars" extent="3"/></damage> xliiij yard<ex>es</ex> and
+                  vppon th<damage><gap unit="chars" extent="3"/></damage> South. xiiij
+                  yard<ex>es</ex> yt ys ag<damage><gap unit="chars" extent="3"/></damage>
+                  Rychard shall haue a leas<damage><gap unit="chars" extent="3"/></damage> and
+                  garden as yt is now <damage><gap unit="chars" extent="3"/></damage> for lx yeres
+                  to begynne at <damage><gap unit="chars" extent="3"/></damage> payeng therefore
+                  yerely aft<damage><gap unit="chars" extent="3"/></damage> fully to be
+                  det<ex>er</ex>myned at <damage><gap unit="chars" extent="3"/></damage>
+                  shilling<ex>es</ex> and bearing <damage><gap unit="chars" extent="3"
+                  /></damage> howse and inclosures th<damage><gap unit="chars" extent="3"
+                  /></damage> Hyck<ex>es</ex> or ‸<add place="above">his</add> assignes when
+                  <damage><gap unit="chars" extent="3"/></damage> a new lease of the
+                  foresai<damage><gap unit="chars" extent="3"/></damage>
+                  w<ex>i</ex>t<ex>h</ex> hym in a former lea<damage><gap unit="chars" extent="3"
+                  /></damage> his assignes <damage><gap unit="chars" extent="2"/></damage>all
+                  n<damage><gap unit="chars" extent="3"/></damage> dymyse <damage><gap
+                    unit="chars" extent="3"/></damage></ab>
+              </div>
             </div>
-          </div>
-        </body>
-      </text>
-      <text type="record" xml:id="nwbts-27">
-        <body>
-          <head><rs>Surrey</rs>, <rs>Newington Butts</rs>
-            <date when-iso="1573">1573</date>
-            <seg ana="taxon:NBCCA2">NBCCA2</seg></head>
-          <div xml:lang="eng" type="transcription" xml:id="nwbts-rid27-transcription">
-            <div>
-              <head>ff 32v–3v <supplied>(29 September)</supplied></head>
-              <pb type="folio"/>
-
-              <gap reason="omitted"/>
-
-              <ab>This Indenture made<note type="foot">This … made: <hi rend="italic">in display
-                    script</hi></note> The xxix<hi rend="superscript">th</hi> daye of September in
-                fyvetenth yeare of the Raigne of our Soveraigne Ladye Elizabeth by the grace of god
-                Quene of Englande ffraunce and Irelande Defendo<ex>ur</ex> of the faithe &amp;c.
-                Betwene the deane and Chapter of the Cathedrall and metropoliticall Churche of
-                  chr<ex>ist</ex>e in Canterburye of thone p<ex>ar</ex>tye. And Richard Hickes one
-                of the yeomen of the Quenes maiesties garde on thother p<ex>ar</ex>tye. Wytnessethe
-                that the sayde Deane and Chapter haue dymised graunted and to farme letten and by
-                theis p<ex>rese</ex>nt<ex>es</ex> doe dymise graunt and to ferme lett vnto the sayd
-                Richard Hickes all those there thyrtye and five Acres one daye woorke one
-                  p<ex>er</ex>che and half a p<ex>er</ex>che of Lande and medowe
-                  w<ex>i</ex>t<ex>h</ex> the appurtena<ex>u</ex>nc<ex>es</ex> severally lying and
-                being in the p<ex>ar</ex>ishe of Newyngton in the Countye of Surrye Whereof tenne
-                Acres one Rodde fower days works and a p<ex>er</ex>che ben called Lurkelane together
-                lying in the Butt<ex>es</ex> of Newington against the west to the landes of the
-                sayde deane and Chapter there called little pyghtell against the East, to the
-                  land<ex>es</ex> of the late Abbye of Barmondsey called <del>mettl</del> melferlde
-                against the Northe and to the orchard of the heyres of Edmonde myddleton against the
-                Southe, And two acres too days woorke and halfe a days woorke ben called little
-                pightell and lye between the sayde Landes called Lurkelane and the Landes of the
-                sayde deane &amp; Chapter called Stewfenne, And nyne Acres one Rodde and five days
-                worke ben called Stewfenne lying to a garden there called Bellgarden against the
-                North to a medowe called marleez medow against the Southe to the sayde Landes called
-                the lyttell pightell <pb/> against the west and to the Landes of the Late Prior and
-                Covent of <damage><gap unit="chars" extent="3"/></damage> Overyes against the east,
-                and seven acres and one Rodd thereof bene ca<damage><gap unit="chars" extent="3"
-                  /></damage> Lying <damage><gap unit="chars" extent="1"/></damage><note type="foot"
-                      ><damage><gap unit="chars" extent="1"/></damage>: <hi rend="italic">a single
-                    ascending stroke, likely for deletion</hi></note> in the Comon Sewer against the
-                Northe to the Landes someth<damage><gap unit="chars" extent="3"/></damage> Henry
-                wyatt knight called Bramble Shott against the Southe to <damage><gap unit="chars"
-                    extent="3"/></damage> nowe or Late Stephen Myddleton called Barynarde against
-                the <damage><gap unit="chars" extent="3"/></damage> the medowe called marles meede
-                against the east <del>and the west</del><damage><gap unit="chars" extent="3"
-                  /></damage> acres Residue of the sayde Land<ex>es</ex> severally lye in a close
-                    call<damage><gap unit="chars" extent="3"/></damage> Lande of the which seven
-                acres fyve acres lye together to the Land<damage><gap unit="chars" extent="3"
-                  /></damage> of the heyres of the sayed Edmonde Mydeleton towardes the <damage><gap
-                    unit="chars" extent="3"/></damage> Southe and to the Landes of the sayde Late
-                Prior and Covent of <damage><gap unit="chars" extent="3"/></damage> Marye Overyes
-                called the wiffen towardes the west and to the L<damage><gap unit="chars" extent="3"
+          </body>
+        </text>
+        <text type="record" xml:id="nwbts-27">
+          <body>
+            <head><rs>Surrey</rs>, <rs>Newington Butts</rs>
+              <date when-iso="1573">1573</date>
+              <seg ana="taxon:NBCCA2">NBCCA2</seg></head>
+            <div xml:lang="eng" type="transcription" xml:id="nwbts-rid27-transcription">
+              <div>
+                <head>ff 32v–3v <supplied>(29 September)</supplied></head>
+                <pb type="folio"/>
+                
+                <gap reason="omitted"/>
+                
+                <ab>This Indenture made<note type="foot">This … made: <hi rend="italic">in display
+                  script</hi></note> The xxix<hi rend="superscript">th</hi> daye of September
+                  in fyvetenth yeare of the Raigne of our Soveraigne Ladye Elizabeth by the grace
+                  of god Quene of Englande ffraunce and Irelande Defendo<ex>ur</ex> of the faithe
+                  &amp;c. Betwene the deane and Chapter of the Cathedrall and metropoliticall
+                  Churche of chr<ex>ist</ex>e in Canterburye of thone p<ex>ar</ex>tye. And Richard
+                  Hickes one of the yeomen of the Quenes maiesties garde on thother
+                  p<ex>ar</ex>tye. Wytnessethe that the sayde Deane and Chapter haue dymised
+                  graunted and to farme letten and by theis p<ex>rese</ex>nt<ex>es</ex> doe dymise
+                  graunt and to ferme lett vnto the sayd Richard Hickes all those there thyrtye
+                  and five Acres one daye woorke one p<ex>er</ex>che and half a p<ex>er</ex>che of
+                  Lande and medowe w<ex>i</ex>t<ex>h</ex> the appurtena<ex>u</ex>nc<ex>es</ex>
+                  severally lying and being in the p<ex>ar</ex>ishe of Newyngton in the Countye of
+                  Surrye Whereof tenne Acres one Rodde fower days works and a p<ex>er</ex>che ben
+                  called Lurkelane together lying in the Butt<ex>es</ex> of Newington against the
+                  west to the landes of the sayde deane and Chapter there called little pyghtell
+                  against the East, to the land<ex>es</ex> of the late Abbye of Barmondsey called
+                  <del>mettl</del> melferlde against the Northe and to the orchard of the heyres
+                  of Edmonde myddleton against the Southe, And two acres too days woorke and halfe
+                  a days woorke ben called little pightell and lye between the sayde Landes called
+                  Lurkelane and the Landes of the sayde deane &amp; Chapter called Stewfenne, And
+                  nyne Acres one Rodde and five days worke ben called Stewfenne lying to a garden
+                  there called Bellgarden against the North to a medowe called marleez medow
+                  against the Southe to the sayde Landes called the lyttell pightell <pb/> against
+                  the west and to the Landes of the Late Prior and Covent of <damage><gap
+                    unit="chars" extent="3"/></damage> Overyes against the east, and seven acres
+                  and one Rodd thereof bene ca<damage><gap unit="chars" extent="3"/></damage>
+                  Lying <damage><gap unit="chars" extent="1"/></damage><note type="foot"
+                    ><damage><gap unit="chars" extent="1"/></damage>: <hi rend="italic">a
+                      single ascending stroke, likely for deletion</hi></note> in the Comon Sewer
+                  against the Northe to the Landes someth<damage><gap unit="chars" extent="3"
+                  /></damage> Henry wyatt knight called Bramble Shott against the Southe to
+                  <damage><gap unit="chars" extent="3"/></damage> nowe or Late Stephen
+                  Myddleton called Barynarde against the <damage><gap unit="chars" extent="3"
+                  /></damage> the medowe called marles meede against the east <del>and the
+                    west</del><damage><gap unit="chars" extent="3"/></damage> acres Residue of the
+                  sayde Land<ex>es</ex> severally lye in a close call<damage><gap unit="chars"
+                    extent="3"/></damage> Lande of the which seven acres fyve acres lye together
+                  to the Land<damage><gap unit="chars" extent="3"/></damage> of the heyres of the
+                  sayed Edmonde Mydeleton towardes the <damage><gap unit="chars" extent="3"
+                  /></damage> Southe and to the Landes of the sayde Late Prior and Covent of
+                  <damage><gap unit="chars" extent="3"/></damage> Marye Overyes called the
+                  wiffen towardes the west and to the L<damage><gap unit="chars" extent="3"
                   /></damage> the Late m<ex>aste</ex>r of St Thomas Hospitall in Sowthewark and
-                    th<damage><gap unit="chars" extent="3"/></damage> waye Leading from and owt of
-                the sayde close called horsmon<damage><gap unit="chars" extent="3"/></damage> into
-                the highe streate there towardes the Northe and two acres to<damage><gap
+                  th<damage><gap unit="chars" extent="3"/></damage> waye Leading from and owt
+                  of the sayde close called horsmon<damage><gap unit="chars" extent="3"/></damage>
+                  into the highe streate there towardes the Northe and two acres to<damage><gap
                     unit="chars" extent="3"/></damage> of the sayde seven acres lye together to
-                three acres of Lande sowthe <damage><gap unit="chars" extent="3"/></damage> walter
-                kettell and before that Robert Gaineffourthe Esquyer to <damage><gap unit="chars"
-                    extent="3"/></damage> the east <del>and</del> ‸<add place="above">to</add> three
-                acres of Lande of the heyres of the sayde Edmo<damage><gap unit="chars" extent="3"
-                  /></damage> myddeleton towardes the west, And the Landes Late Richarde
-                    <damage><gap unit="chars" extent="3"/></damage> and somtyme Roger
-                  Poynt<ex>es</ex> towardes the southe and to the Landes of the<damage><gap
-                    unit="chars" extent="3"/></damage> hospitall towardes the Northe. To haue and to
-                hold all the sayde <damage><gap unit="chars" extent="3"/></damage> and medowe
-                  w<ex>i</ex>t<ex>h</ex> the appurtena<ex>u</ex>nces to the sayde Richarde Hickes
-                his executours <damage><gap unit="chars" extent="3"/></damage> and assignes from the
-                date of the date of theys p<ex>rese</ex>ntes vnto the full ende an<damage><gap
+                  three acres of Lande sowthe <damage><gap unit="chars" extent="3"/></damage>
+                  walter kettell and before that Robert Gaineffourthe Esquyer to <damage><gap
+                    unit="chars" extent="3"/></damage> the east <del>and</del> ‸<add
+                      place="above">to</add> three acres of Lande of the heyres of the sayde
+                  Edmo<damage><gap unit="chars" extent="3"/></damage> myddeleton towardes the
+                  west, And the Landes Late Richarde <damage><gap unit="chars" extent="3"
+                  /></damage> and somtyme Roger Poynt<ex>es</ex> towardes the southe and to the
+                  Landes of the<damage><gap unit="chars" extent="3"/></damage> hospitall towardes
+                  the Northe. To haue and to hold all the sayde <damage><gap unit="chars"
+                    extent="3"/></damage> and medowe w<ex>i</ex>t<ex>h</ex> the
+                  appurtena<ex>u</ex>nces to the sayde Richarde Hickes his executours
+                  <damage><gap unit="chars" extent="3"/></damage> and assignes from the date
+                  of the date of theys p<ex>rese</ex>ntes vnto the full ende an<damage><gap
                     unit="chars" extent="1"/></damage> terme of Twentye and one Yeares next
                   ens<del>y</del>uyng and fullyes to be <damage><gap unit="chars" extent="1"
-                  /></damage> complete and ended Yelding and paying therefore Yearelye to the sayde
-                    <damage><gap unit="chars" extent="1"/></damage> deane and Chapter and there
-                successours fyve poundes fowerteene shill<damage><gap unit="chars" extent="3"
-                  /></damage> fower pence of Lawfull monye of Englande at the feastes of the byrthe
-                of our Lorde god, theanu<ex>n</ex>cyac<ex>i</ex>on of St mary the virgyn the
-                Natyuyty of St Iohn Baptist and St Mychell Tharcungell by even porc<ex>i</ex>ons
-                during the sayde terme And the sayde Richard Hickes for him his executo<damage><gap
-                    unit="chars" extent="2"/></damage> admi<ex>ni</ex>strators and assignes
-                  Covena<ex>u</ex>ntethe and grauntethe to and w<ex>i</ex>t<ex>h</ex> the sayde
-                    de<damage><gap unit="chars" extent="2"/></damage> and Chapter and there
-                successours by theis presentes, That he the sayde Richard hus executors
-                  admi<ex>ni</ex>strato<ex>ur</ex>s and assignes shall during and by <damage><gap
-                    unit="chars" extent="2"/></damage> the sayde terme from tyme to tyme as ofte as
-                neede shall Require at h<damage><gap unit="chars" extent="3"/></damage> there
-                propper costes and expenses scowar repayre, maynteyne susteyne <damage><gap
-                    unit="chars" extent="3"/></damage> Amende the Com<ex>m</ex>on Sewer belonging to
-                the sayde Landes or anye o<damage><gap unit="chars" extent="3"/></damage> and the
-                bridge or bridges over the same Sewer if any be and <damage><gap unit="chars"
-                    extent="3"/></damage> hedges dyches and enclosures suffycyently dyked fensed and
-                    e<damage><gap unit="chars" extent="3"/></damage> shall also beare all manner of
-                skottes Lotes Taxes and Cess<damage><gap unit="chars" extent="3"/></damage> to be
-                cessed or Taxed vpon the sayde Landes during the s<damage><gap unit="chars"
-                    extent="3"/></damage> the same Sewer bridge or bridges hedges and dyches
-                    <damage><gap unit="chars" extent="3"/></damage> sufficientlye Repayred amended
-                dyked skowered enclosed <damage><gap unit="chars" extent="3"/></damage> the sayde
-                Landes Clearlye discharged of all s<damage><gap unit="chars" extent="3"/></damage>
-                and other encombraunces in thende of the sayde <damage><gap unit="chars" extent="3"
-                  /></damage>
-                <pb/> yelde vp. And if it happen the sayde yearely Rent or farme of fyve poundes
-                fowerteene shillinges ‸<add place="above">of</add> fower pence to be behynde and
-                vnpayde, in parte or in all by the space of fowerteene dayes next after any of the
-                feaste or featses aboue sayde in whiche it ought to be payed Or if the abovenamyd
-                Richard Hick<ex>es</ex> his executours or assigned or any of them during the terme
-                abouesayde doe dymyse sett lett or Alleyne the Landes before dymysed or any part
-                thereof to any p<ex>ar</ex>son or parsones other then to the Tena<ex>u</ex>nte
-                whiche from tyme to tyme during the sayde terme shall occupy inhabyte and dwell in
-                the sayde messuag and ten<ex>eme</ex>nte of the sayde deane and Chapter sytuate and
-                being in the p<ex>ar</ex>ishe of Saynte Olave in the Borrowe of Southewark called
-                the flowerdeluce whiche the sayde Rcharde hathe and enyoyethe by Lease from the
-                sayde Deane and Chapter w<ex>i</ex>t<ex>h</ex>out Lycens of the sayde deane and
-                Chapter and there Successours <del>if</del> first hade and atteyned Or if suche
-                  p<ex>ar</ex>son or p<ex>ar</ex>sons to whose vse and possession this present lease
-                and terme of yeares or any p<ex>ar</ex>te thereof shall Remayne and come by bargayne
-                sale devyse legacye or other wyse from the sayde Richarde hickes do not
-                w<ex>i</ex>thin one halfe yeare next after the having and enioying of the lease and
-                terme of yeares mak surrender of this present Lease and of the terme of yeares
-                therein then to come to the sayde Deane and Chapter and there successours so that he
-                or they may then Receyve of the same deane and Chapter at the time <del>and</del> of
-                suche Surrender a good suffycyent and Lawfull newe Lease of all the premisses for so
-                manye yeares as shalbe then to come of the terme aforesayde w<ex>i</ex>t<ex>h</ex>
-                lyke covena<ex>u</ex>nt<ex>es</ex> condic<ex>i</ex>ons Reservac<ex>i</ex>ons of
-                  Rent<ex>es</ex> ‸<add place="above">so</add> all other <del>Rent<ex>es</ex></del>
-                  ‸<add place="above">Articles as is</add> aforesayde for the whiche so to be
-                graunted no fyne nor other payment shalbe Requyred or demaunded but onelye
-                Thordynary fees for sealing and wryting of the same That then and from thenceforthe
-                this present Indenture and Lease and everye clause and Article therein above on the
-                behalf of the sayde deane and Chapter and there successo<ex>u</ex>rs made and
-                graunted shalbe vtterly voyde frustrate and <del>ost</del> of none effect any thinge
-                before menc<ex>i</ex>oned to the con<ex>tra</ex>rye hereof in any wise
+                  /></damage> complete and ended Yelding and paying therefore Yearelye to the
+                  sayde <damage><gap unit="chars" extent="1"/></damage> deane and Chapter and
+                  there successours fyve poundes fowerteene shill<damage><gap unit="chars"
+                    extent="3"/></damage> fower pence of Lawfull monye of Englande at the
+                  feastes of the byrthe of our Lorde god, theanu<ex>n</ex>cyac<ex>i</ex>on of St
+                  mary the virgyn the Natyuyty of St Iohn Baptist and St Mychell Tharcungell by
+                  even porc<ex>i</ex>ons during the sayde terme And the sayde Richard Hickes for
+                  him his executo<damage><gap unit="chars" extent="2"/></damage>
+                  admi<ex>ni</ex>strators and assignes Covena<ex>u</ex>ntethe and grauntethe to
+                  and w<ex>i</ex>t<ex>h</ex> the sayde de<damage><gap unit="chars" extent="2"
+                  /></damage> and Chapter and there successours by theis presentes, That he the
+                  sayde Richard hus executors admi<ex>ni</ex>strato<ex>ur</ex>s and assignes shall
+                  during and by <damage><gap unit="chars" extent="2"/></damage> the sayde terme
+                  from tyme to tyme as ofte as neede shall Require at h<damage><gap unit="chars"
+                    extent="3"/></damage> there propper costes and expenses scowar repayre,
+                  maynteyne susteyne <damage><gap unit="chars" extent="3"/></damage> Amende the
+                  Com<ex>m</ex>on Sewer belonging to the sayde Landes or anye o<damage><gap
+                    unit="chars" extent="3"/></damage> and the bridge or bridges over the same
+                  Sewer if any be and <damage><gap unit="chars" extent="3"/></damage> hedges
+                  dyches and enclosures suffycyently dyked fensed and e<damage><gap unit="chars"
+                    extent="3"/></damage> shall also beare all manner of skottes Lotes Taxes and
+                  Cess<damage><gap unit="chars" extent="3"/></damage> to be cessed or Taxed
+                  vpon the sayde Landes during the s<damage><gap unit="chars" extent="3"
+                  /></damage> the same Sewer bridge or bridges hedges and dyches <damage><gap
+                    unit="chars" extent="3"/></damage> sufficientlye Repayred amended dyked
+                  skowered enclosed <damage><gap unit="chars" extent="3"/></damage> the sayde
+                  Landes Clearlye discharged of all s<damage><gap unit="chars" extent="3"
+                  /></damage> and other encombraunces in thende of the sayde <damage><gap
+                    unit="chars" extent="3"/></damage>
+                  <pb/> yelde vp. And if it happen the sayde yearely Rent or farme of fyve poundes
+                  fowerteene shillinges ‸<add place="above">of</add> fower pence to be behynde and
+                  vnpayde, in parte or in all by the space of fowerteene dayes next after any of
+                  the feaste or featses aboue sayde in whiche it ought to be payed Or if the
+                  abovenamyd Richard Hick<ex>es</ex> his executours or assigned or any of them
+                  during the terme abouesayde doe dymyse sett lett or Alleyne the Landes before
+                  dymysed or any part thereof to any p<ex>ar</ex>son or parsones other then to the
+                  Tena<ex>u</ex>nte whiche from tyme to tyme during the sayde terme shall occupy
+                  inhabyte and dwell in the sayde messuag and ten<ex>eme</ex>nte of the sayde
+                  deane and Chapter sytuate and being in the p<ex>ar</ex>ishe of Saynte Olave in
+                  the Borrowe of Southewark called the flowerdeluce whiche the sayde Rcharde hathe
+                  and enyoyethe by Lease from the sayde Deane and Chapter
+                  w<ex>i</ex>t<ex>h</ex>out Lycens of the sayde deane and Chapter and there
+                  Successours <del>if</del> first hade and atteyned Or if suche p<ex>ar</ex>son or
+                  p<ex>ar</ex>sons to whose vse and possession this present lease and terme of
+                  yeares or any p<ex>ar</ex>te thereof shall Remayne and come by bargayne sale
+                  devyse legacye or other wyse from the sayde Richarde hickes do not
+                  w<ex>i</ex>thin one halfe yeare next after the having and enioying of the lease
+                  and terme of yeares mak surrender of this present Lease and of the terme of
+                  yeares therein then to come to the sayde Deane and Chapter and there successours
+                  so that he or they may then Receyve of the same deane and Chapter at the time
+                  <del>and</del> of suche Surrender a good suffycyent and Lawfull newe Lease of
+                  all the premisses for so manye yeares as shalbe then to come of the terme
+                  aforesayde w<ex>i</ex>t<ex>h</ex> lyke covena<ex>u</ex>nt<ex>es</ex>
+                  condic<ex>i</ex>ons Reservac<ex>i</ex>ons of Rent<ex>es</ex> ‸<add
+                    place="above">so</add> all other <del>Rent<ex>es</ex></del> ‸<add
+                      place="above">Articles as is</add> aforesayde for the whiche so to be graunted
+                  no fyne nor other payment shalbe Requyred or demaunded but onelye Thordynary
+                  fees for sealing and wryting of the same That then and from thenceforthe this
+                  present Indenture and Lease and everye clause and Article therein above on the
+                  behalf of the sayde deane and Chapter and there successo<ex>u</ex>rs made and
+                  graunted shalbe vtterly voyde frustrate and <del>ost</del> of none effect any
+                  thinge before menc<ex>i</ex>oned to the con<ex>tra</ex>rye hereof in any wise
                   Notw<ex>i</ex>t<ex>h</ex>standinge In wytnes<note type="foot">In wytnes: <hi
                     rend="italic">in display script</hi></note> whereof to one p<ex>ar</ex>te of
-                this Indenture Remayning w<ex>i</ex>t<ex>h</ex> the sayde Richard hickes the sayde
-                deane and Chapter haue putte there com<ex>m</ex>on seale And to thother
-                p<ex>ar</ex>te Remayning w<ex>i</ex>t<ex>h</ex> the sayde deane and Chapter the
-                sayde Richard hickes haue put to his seale. dated in the Chapter howse of the sayde
-                deane and Chapter the daye and yeare fyrst above wryten.</ab>
-
-              <gap reason="omitted"/>
+                  this Indenture Remayning w<ex>i</ex>t<ex>h</ex> the sayde Richard hickes the
+                  sayde deane and Chapter haue putte there com<ex>m</ex>on seale And to thother
+                  p<ex>ar</ex>te Remayning w<ex>i</ex>t<ex>h</ex> the sayde deane and Chapter
+                  the sayde Richard hickes haue put to his seale. dated in the Chapter howse of
+                  the sayde deane and Chapter the daye and yeare fyrst above wryten.</ab>
+                
+                <gap reason="omitted"/>
+              </div>
             </div>
-          </div>
-        </body>
-      </text>
+          </body>
+        </text>
     </group>
     <back>
       <div type="appendix" xml:id="appendix">
