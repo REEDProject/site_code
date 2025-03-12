@@ -60,9 +60,7 @@
           <xsl:with-param name="facet-field" select="$name" />
           <xsl:with-param name="facet-value" select="$value" />
         </xsl:call-template>
-        <xsl:if test="string-length(.) > 0 and number(.) > 0">
-          <xsl:call-template name="display-facet-count" />
-        </xsl:if>
+        <xsl:call-template name="display-facet-count" />
       </a>
     </li>
   </xsl:template>
@@ -378,6 +376,18 @@
         <xsl:call-template name="display-entity-primary-name-plus">
           <xsl:with-param name="entity" select="$item" />
         </xsl:call-template>
+        
+        <!-- Add container information for location facets -->
+        <xsl:if test="starts-with($facet-field, 'facet_locations_') and not($facet-field = 'facet_locations_country')">
+          <xsl:variable name="container-entity" select="$item/eats:entity_relationships/eats:entity_relationship[@entity_relationship_type='is contained within']/id(@range_entity)" />
+          <xsl:if test="$container-entity">
+            <xsl:text> (</xsl:text>
+            <xsl:call-template name="display-entity-primary-name">
+              <xsl:with-param name="entity" select="$container-entity" />
+            </xsl:call-template>
+            <xsl:text>)</xsl:text>
+          </xsl:if>
+        </xsl:if>
       </xsl:when>
       <xsl:when test="$item">
         <xsl:value-of select="normalize-space($item)" />
