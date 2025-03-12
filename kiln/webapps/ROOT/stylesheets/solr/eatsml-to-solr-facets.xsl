@@ -139,6 +139,15 @@
     <!-- Location containment relationships, so that each place adds
          the appropriate facet value for each containing place. -->
     <xsl:if test="@entity_relationship_type=$contains and @domain_entity=$entity_id and ../../eats:entity_types/eats:entity_type[@entity_type=$locations]">
+      <!-- Debug output -->
+      <xsl:comment>
+        Processing containment: 
+        domain_entity=<xsl:value-of select="@domain_entity" />,
+        range_entity=<xsl:value-of select="@range_entity" />,
+        range_entity_eats_id=<xsl:value-of select="$range_entity/@eats_id" />,
+        range_entity_types=<xsl:value-of select="$range_entity/eats:entity_types/eats:entity_type/@entity_type" />
+      </xsl:comment>
+      
       <xsl:apply-templates select="$range_entity/eats:entity_types/eats:entity_type[@entity_type=$locations]/@entity_type">
         <xsl:with-param name="entity_eats_id" select="$range_entity/@eats_id" />
         <xsl:with-param name="entity_id" select="$range_entity/@xml:id" />
