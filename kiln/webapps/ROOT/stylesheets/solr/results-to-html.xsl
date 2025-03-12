@@ -32,36 +32,53 @@
 
   <!-- Display a facet (in the list of all facets). -->
   <xsl:template match="int" mode="search-results">
+    <xsl:param name="facet-field" />
     <xsl:variable name="name" select="../@name" />
     <xsl:variable name="value" select="@name" />
-    <li class="checkbox">
-      <xsl:variable name="selected" select="$request/h:parameter[@name=$name]/h:value = $value" />
-      <xsl:if test="$selected">
-        <xsl:attribute name="class" select="'checkbox checked'" />
-      </xsl:if>
-      <a>
-        <xsl:attribute name="href">
-          <xsl:choose>
-            <xsl:when test="$selected">
-              <xsl:call-template name="make-deselect-facet-url">
-                <xsl:with-param name="facet-name" select="$name" />
-                <xsl:with-param name="facet-value" select="$value" />
-              </xsl:call-template>
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:value-of select="$query-string-at-start" />
-              <xsl:text>&amp;</xsl:text>
-              <xsl:value-of select="$name" />
-              <xsl:text>=</xsl:text>
-              <xsl:value-of select="kiln:escape-for-query-string($value)" />
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:attribute>
-        <xsl:call-template name="display-facet-value">
-          <xsl:with-param name="facet-field" select="$name" />
-          <xsl:with-param name="facet-value" select="$value" />
-        </xsl:call-template>
-        <xsl:call-template name="display-facet-count" />
+    <xsl:variable name="count" select="." />
+    <li>
+      <a href="{$search-url}?{$query-string-for-facet}&amp;fq={encode-for-uri($name)}:{encode-for-uri($value)}">
+        <!-- Get the display value for this facet -->
+        <xsl:variable name="display-value">
+          <xsl:call-template name="display-facet-value">
+            <xsl:with-param name="facet-field" select="$name" />
+            <xsl:with-param name="facet-value" select="$value" />
+          </xsl:call-template>
+        </xsl:variable>
+        
+        <!-- Display the facet value -->
+        <xsl:value-of select="$display-value" />
+        
+        <!-- For location facets, add container information -->
+        <xsl:if test="starts-with($name, 'facet_locations_') and not($name = 'facet_locations_country')">
+          <xsl:variable name="entity" select="key('item-by-eats-id', $value)" />
+          <xsl:if test="$entity">
+            <xsl:variable name="container-info">
+              <!-- Look for the container relationship -->
+              <xsl:for-each select="$entity//eats:entity_relationship[@entity_relationship_type='is contained within'][1]">
+                <xsl:variable name="container-id" select="@range_entity" />
+                <xsl:variable name="container" select="//eats:entity[@xml:id=$container-id]" />
+                <xsl:if test="$container">
+                  <xsl:call-template name="display-entity-primary-name">
+                    <xsl:with-param name="entity" select="$container" />
+                  </xsl:call-template>
+                </xsl:if>
+              </xsl:for-each>
+            </xsl:variable>
+            
+            <!-- Only add parentheses if we have container info -->
+            <xsl:if test="string-length(normalize-space($container-info)) > 0">
+              <xsl:text> (</xsl:text>
+              <xsl:value-of select="$container-info" />
+              <xsl:text>)</xsl:text>
+            </xsl:if>
+          </xsl:if>
+        </xsl:if>
+        
+        <!-- Display the count -->
+        <xsl:text> (</xsl:text>
+        <xsl:value-of select="$count" />
+        <xsl:text>)</xsl:text>
       </a>
     </li>
   </xsl:template>
@@ -80,24 +97,25 @@
 
   <xsl:template match="lst[@name='facet_fields']/lst"
                 mode="search-results">
-    <xsl:variable name="facet-values">
-      <xsl:apply-templates mode="search-results" />
+    <xsl:variable name="name" select="@name" />
+    <xsl:variable name="facet-field-name">
+      <xsl:call-template name="get-facet-field-name">
+        <xsl:with-param name="field-name" select="$name" />
+      </xsl:call-template>
     </xsl:variable>
-    <xsl:if test="normalize-space($facet-values)">
-      <li class="accordion-item" data-accordion-item="">
-        <a href="#" class="accordion-title">
-          <xsl:apply-templates mode="search-results" select="@name" />
-        </a>
-        <div class="accordion-content" data-tab-content="">
-          <ul class="open-filters">
-            <xsl:for-each select="$facet-values/li">
-              <xsl:sort select="lower-case(.)" />
-              <xsl:copy-of select="." />
-            </xsl:for-each>
-          </ul>
-        </div>
-      </li>
-    </xsl:if>
+    
+    <li class="accordion-item" data-accordion-item="">
+      <a href="#" class="accordion-title">
+        <xsl:value-of select="$facet-field-name" />
+      </a>
+      <div class="accordion-content" data-tab-content="">
+        <ul>
+          <xsl:apply-templates mode="search-results">
+            <xsl:with-param name="facet-field" select="$name" />
+          </xsl:apply-templates>
+        </ul>
+      </div>
+    </li>
   </xsl:template>
 
   <xsl:template match="lst[@name='facet_fields']/lst"
