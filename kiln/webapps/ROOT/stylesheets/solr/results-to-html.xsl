@@ -3,7 +3,8 @@
                 xmlns:h="http://apache.org/cocoon/request/2.0"
                 xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:eats="http://ereed.library.utoronto.ca/eats/">
 
   <!-- XSLT for displaying Solr results. -->
 
@@ -379,7 +380,7 @@
         
         <!-- Add container information for location facets -->
         <xsl:if test="starts-with($facet-field, 'facet_locations_') and not($facet-field = 'facet_locations_country')">
-          <xsl:variable name="container-entity" select="$item/eats:entity_relationships/eats:entity_relationship[@entity_relationship_type='is contained within']/id(@range_entity)" />
+          <xsl:variable name="container-entity" select="$item/eats:entity_relationships/eats:entity_relationship[@entity_relationship_type='is contained by']/id(@range_entity)" />
           <xsl:if test="$container-entity">
             <xsl:text> (</xsl:text>
             <xsl:call-template name="display-entity-primary-name">
