@@ -374,18 +374,30 @@
     <xsl:variable name="item" select="key('item-by-eats-id', $facet-value)" />
     <xsl:choose>
       <xsl:when test="$item and local-name($item) = 'entity'">
+        <!-- Display the primary name of the entity -->
         <xsl:call-template name="display-entity-primary-name-plus">
           <xsl:with-param name="entity" select="$item" />
         </xsl:call-template>
         
-        <!-- Add container information for location facets -->
+        <!-- Add container information for location facets if available -->
         <xsl:if test="starts-with($facet-field, 'facet_locations_') and not($facet-field = 'facet_locations_country')">
-          <xsl:variable name="container-entity" select="$item/eats:entity_relationships/eats:entity_relationship[@entity_relationship_type='is contained by']/id(@range_entity)" />
-          <xsl:if test="$container-entity">
+          <xsl:variable name="container-name">
+            <xsl:for-each select="$item//eats:entity_relationship[@entity_relationship_type='is contained within'][1]">
+              <xsl:variable name="container-id" select="@range_entity" />
+              <xsl:variable name="container-entity" select="//eats:entity[@xml:id=$container-id]" />
+              
+              <xsl:if test="$container-entity">
+                <xsl:call-template name="display-entity-primary-name">
+                  <xsl:with-param name="entity" select="$container-entity" />
+                </xsl:call-template>
+              </xsl:if>
+            </xsl:for-each>
+          </xsl:variable>
+          
+          <!-- Only display parentheses if we have a container name -->
+          <xsl:if test="string-length(normalize-space($container-name)) > 0">
             <xsl:text> (</xsl:text>
-            <xsl:call-template name="display-entity-primary-name">
-              <xsl:with-param name="entity" select="$container-entity" />
-            </xsl:call-template>
+            <xsl:value-of select="$container-name" />
             <xsl:text>)</xsl:text>
           </xsl:if>
         </xsl:if>
