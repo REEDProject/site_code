@@ -60,7 +60,9 @@
           <xsl:with-param name="facet-field" select="$name" />
           <xsl:with-param name="facet-value" select="$value" />
         </xsl:call-template>
-        <xsl:call-template name="display-facet-count" />
+        <xsl:if test="string-length(.) > 0 and number(.) > 0">
+          <xsl:call-template name="display-facet-count" />
+        </xsl:if>
       </a>
     </li>
   </xsl:template>
@@ -362,11 +364,9 @@
   </xsl:template>
 
   <xsl:template name="display-facet-count">
-    <xsl:if test="string-length(.) > 0 and number(.) > 0">
-      <xsl:text> (</xsl:text>
-      <xsl:value-of select="." />
-      <xsl:text>)</xsl:text>
-    </xsl:if>
+    <xsl:text> (</xsl:text>
+    <xsl:value-of select="." />
+    <xsl:text>)</xsl:text>
   </xsl:template>
 
   <xsl:template name="display-facet-value">
