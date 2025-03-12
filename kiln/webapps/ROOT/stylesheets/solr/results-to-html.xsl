@@ -362,9 +362,11 @@
   </xsl:template>
 
   <xsl:template name="display-facet-count">
-    <xsl:text> (</xsl:text>
-    <xsl:value-of select="." />
-    <xsl:text>)</xsl:text>
+    <xsl:if test="string-length(.) > 0 and number(.) > 0">
+      <xsl:text> (</xsl:text>
+      <xsl:value-of select="." />
+      <xsl:text>)</xsl:text>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template name="display-facet-value">
