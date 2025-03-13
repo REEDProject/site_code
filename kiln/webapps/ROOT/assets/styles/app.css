@@ -8906,7 +8906,8 @@ table:not(#table):not(#result-table):not(.related-entities-table) tbody tr td, t
     /* color: #be3c3c; */
 }
 
-table.tei.table.padded {
+table.tei.table.padded td, 
+table.tei.table.padded th {
     padding: 0 13px;
 }
 
