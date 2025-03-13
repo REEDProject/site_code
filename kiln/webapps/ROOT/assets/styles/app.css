@@ -8906,6 +8906,10 @@ table:not(#table):not(#result-table):not(.related-entities-table) tbody tr td, t
     /* color: #be3c3c; */
 }
 
+table.tei.table.padded {
+    padding: 0 13px;
+}
+
 .featured-timelines-thumbnail 
 {
     height: 200px;
