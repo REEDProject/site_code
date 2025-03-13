@@ -8908,7 +8908,7 @@ table:not(#table):not(#result-table):not(.related-entities-table) tbody tr td, t
 
 table.tei.table.padded td, 
 table.tei.table.padded th {
-    padding: 0 13px;
+    padding: 0 13px !important;
 }
 
 .featured-timelines-thumbnail 
