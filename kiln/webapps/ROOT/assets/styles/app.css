@@ -8912,9 +8912,12 @@ table.tei.table.padded th {
 }
 
 table.tei.table.fixedwidth {
-    width: 75% !important;
+    width: 100%;
 }
 
+table.tei.table.fixedwidth td {
+    width: 50%;
+}
 .featured-timelines-thumbnail 
 {
     height: 200px;
