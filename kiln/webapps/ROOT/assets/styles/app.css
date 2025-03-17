@@ -8911,6 +8911,10 @@ table.tei.table.padded th {
     padding: 0 13px !important;
 }
 
+table.tei.table.fixedwidth {
+    width: 75% !important;
+}
+
 .featured-timelines-thumbnail 
 {
     height: 200px;
