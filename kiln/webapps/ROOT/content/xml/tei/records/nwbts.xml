@@ -177,7 +177,28 @@
     </graphic>    
     <graphic url="images/nwbts/TNA/NBCRSH1.jpg" xml:id="NBCRSH1">
       <desc>The National Archives (UK), ref. REQ 2/266</desc>
-    </graphic>    
+    </graphic>
+    <graphic url="images/nwbts/CCA/NBCCDCf36v.png" xml:id="NBCCDCf36v">
+      <desc>Reproduced courtesy of the Chapter of Canterbury, CCA-DCc-Register/W, f 36v</desc>
+    </graphic>
+    <graphic url="images/nwbts/CCA/NBCCABf184.jpg" xml:id="NBCCABf184">
+      <desc>Reproduced courtesy of the Chapter of Canterbury, CCA-DCc-Register/W, f 184</desc>
+    </graphic>
+    <graphic url="images/nwbts/CCA/NBCCABf27v.jpg" xml:id="NBCCABf27v">
+      <desc>Reproduced courtesy of the Chapter of Canterbury, CCA-DCc-Register/W, f 27v</desc>
+    </graphic>
+    <graphic url="images/nwbts/CCA/NBCCDCf266v.png" xml:id="NBCCDCf266v">
+      <desc>Reproduced courtesy of the Chapter of Canterbury, CCA-DCc-Register/W, f 266v</desc>
+    </graphic>
+    <graphic url="images/nwbts/CCA/NBCCDCf266r.png" xml:id="NBCCDCf266r">
+      <desc>Reproduced courtesy of the Chapter of Canterbury, CCA-DCc-Register/W, f 266r</desc>
+    </graphic>
+    <graphic url="images/nwbts/CCA/NBCCDCf265v.png" xml:id="NBCCDCf265v">
+      <desc>Reproduced courtesy of the Chapter of Canterbury, CCA-DCc-Register/W, f 265v</desc>
+    </graphic>
+    <graphic url="images/nwbts/CCA/NBCCDCf37r.png" xml:id="NBCCDCf37r">
+      <desc>Reproduced courtesy of the Chapter of Canterbury, CCA-DCc-Register/W, f 37</desc>
+    </graphic>
   </facsimile>
   <text>
     <front>
@@ -1051,7 +1072,7 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid3-transcription">
             <div>
               <head>f 27v <supplied>(June)</supplied></head>
-              <pb n="27v" type="folio"/>
+              <pb n="27v" type="folio" facs="#NBCCABf27v"/>
 
               <gap reason="omitted"/>
 
@@ -1289,7 +1310,7 @@ council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified,
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid4-transcription">
             <div>
               <head>f 184 <supplied>(6 July)</supplied></head>
-              <pb n="184" type="folio"/>
+              <pb n="184" type="folio" facs="#NBCCABf184"/>
 
               <gap reason="omitted"/>
 
@@ -2098,7 +2119,7 @@ ingham-edward-1545-1605 -->, accessed 23 July 2024. <rs ref="eats:487983" type="
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid5-transcription">
             <div>
               <head>ff 36v–7 <supplied>(30 November)</supplied></head>
-              <pb type="folio" n="36v"/>
+              <pb type="folio" n="36v" facs="#NBCCDCf36v"/>
 
               <gap reason="omitted"/>
 
@@ -2166,8 +2187,8 @@ ingham-edward-1545-1605 -->, accessed 23 July 2024. <rs ref="eats:487983" type="
                 to the land<ex>es</ex> of the sayd Hospitall toward<ex>es</ex> the North Except and
                 alwayes to the sayd Deane and Chapiter and theire Successors res<ex>er</ex>ved one
                 Messuage or tennem<ex>en</ex>te heretofore by one Rychard Hyck<ex>es</ex> deceased
-                erected and built vppon p<ex>ar</ex>cell of the sayd land<ex>es</ex> now called<pb
-                  n="37"/> the playhowse w<ex>i</ex>th all howses gardens or orchard<ex>es</ex>
+                erected and built vppon p<ex>ar</ex>cell of the sayd land<ex>es</ex> now called<pb type="folio" n="37r" facs="#NBCCDCf37r"/> 
+                the playhowse w<ex>i</ex>th all howses gardens or orchard<ex>es</ex>
                 thervnto adioyninge <damage><gap unit="chars" extent="1"/></damage> and in
                   thoccupac<ex>i</ex>on of one Peter Honingborne or his assignes To ha<damage><gap
                     unit="chars" extent="2"/></damage><note type="foot">To ha<damage><gap
@@ -2270,7 +2291,7 @@ ingham-edward-1545-1605 -->, accessed 23 July 2024. <rs ref="eats:487983" type="
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid6-transcription">
             <div>
               <head>ff 265v–6 <supplied>(5 April)</supplied></head>
-              <pb type="folio" n="265v"/>
+              <pb type="folio" n="265v" facs="#NBCCDCf265v"/>
 
               <ab>This<note type="marginal" place="margin_left"><damage><gap unit="chars" extent="1"
                     /></damage>enement<ex>um</ex> vocat<ex>um</ex>
@@ -2303,7 +2324,7 @@ ingham-edward-1545-1605 -->, accessed 23 July 2024. <rs ref="eats:487983" type="
                 Paule Buck. All w<ex>hi</ex>ch he the said Paule Buck hath surrendered to the said
                 Deane and Chap<damage><gap unit="chars" extent="3"/></damage><note type="foot"
                       >Chap<damage><gap unit="chars" extent="3"/></damage>: <hi rend="italic"
-                    >characters lost in binding</hi></note><pb n="266"/> Nowe<note type="foot">Nowe:
+                        >characters lost in binding</hi></note><pb type="folio"/> Nowe<note type="foot">Nowe:
                     <hi rend="italic">in display script</hi></note> therefore the said Deane and
                 Chapiter for and in Considerac<ex>i</ex>on of <damage><gap unit="chars" extent="3"
                   /></damage> said Surrender and for other good causes and Considerac<ex>i</ex>ons
@@ -2388,7 +2409,7 @@ ingham-edward-1545-1605 -->, accessed 23 July 2024. <rs ref="eats:487983" type="
             </div>
             <div>
               <head>ff 266–6v <supplied>(6 April)</supplied></head>
-              <pb type="folio" n="266"/>
+              <pb type="folio" n="266" facs="#NBCCDCf266r"/>
 
               <gap reason="omitted"/>
 
@@ -2428,7 +2449,7 @@ ingham-edward-1545-1605 -->, accessed 23 July 2024. <rs ref="eats:487983" type="
                 letten, And by theis presentes doe demise graunte and to <damage><gap unit="chars"
                     extent="3"/></damage> let to the saide Paule Bucke the residue of the full
                 content of the landes inclosed <damage><gap unit="chars" extent="3"/></damage>
-                <pb n="266v"/> saide garden and garden plott not fullie sett downe in the saide
+                <pb n="266v" facs="#NBCCDCf266v"/> saide garden and garden plott not fullie sett downe in the saide
                 former lease as it was inclosed and taken in by the saide Richarde Hickes in his
                 lyfe time bearinge the content of ffourtie and eight yardes towardes the north and
                 south and in breadth towardes the East ffortie and twoe yardes and in like breadth
@@ -2529,7 +2550,7 @@ ingham-edward-1545-1605 -->, accessed 23 July 2024. <rs ref="eats:487983" type="
             <div xml:lang="eng" type="transcription" xml:id="nwbts-rid27-transcription">
               <div>
                 <head>ff 32v–3v <supplied>(29 September)</supplied></head>
-                <pb type="folio"/>
+                <pb type="folio" n="32v" facs="#NBCCA2f32v"/>
                 
                 <gap reason="omitted"/>
                 
@@ -2556,7 +2577,7 @@ ingham-edward-1545-1605 -->, accessed 23 July 2024. <rs ref="eats:487983" type="
                   Lurkelane and the Landes of the sayde deane &amp; Chapter called Stewfenne, And
                   nyne Acres one Rodde and five days worke ben called Stewfenne lying to a garden
                   there called Bellgarden against the North to a medowe called marleez medow
-                  against the Southe to the sayde Landes called the lyttell pightell <pb/> against
+                  against the Southe to the sayde Landes called the lyttell pightell <pb n="33" facs="#NBCCA2f33"/> against
                   the west and to the Landes of the Late Prior and Covent of <damage><gap
                     unit="chars" extent="3"/></damage> Overyes against the east, and seven acres
                   and one Rodd thereof bene ca<damage><gap unit="chars" extent="3"/></damage>
@@ -2625,7 +2646,7 @@ ingham-edward-1545-1605 -->, accessed 23 July 2024. <rs ref="eats:487983" type="
                   Landes Clearlye discharged of all s<damage><gap unit="chars" extent="3"
                   /></damage> and other encombraunces in thende of the sayde <damage><gap
                     unit="chars" extent="3"/></damage>
-                  <pb/> yelde vp. And if it happen the sayde yearely Rent or farme of fyve poundes
+                  <pb n="33v" facs="#NBCCA2f33v"/> yelde vp. And if it happen the sayde yearely Rent or farme of fyve poundes
                   fowerteene shillinges ‸<add place="above">of</add> fower pence to be behynde and
                   vnpayde, in parte or in all by the space of fowerteene dayes next after any of
                   the feaste or featses aboue sayde in whiche it ought to be payed Or if the
