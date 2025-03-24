@@ -36,6 +36,14 @@ http:
       service: tomcat
       tls:
         certResolver: letsencrypt
+      
+    to-solr-admin:
+      rule: Host(`{{env "TRAEFIK_HOST"}}`) && PathPrefix(`/solr`)
+      middlewares:
+        - basic-auth
+      service: tomcat
+      tls:
+        certResolver: letsencrypt
 
     to-django:
       rule: Host(`{{env "TRAEFIK_HOST"}}`) && PathRegexp(`^/(accounts|djadmin|eats|geomap|prepare|selectable)/`)
