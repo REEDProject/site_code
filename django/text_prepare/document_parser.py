@@ -293,6 +293,8 @@ class DocumentParser:
         tab_start_code.setParseAction(self._pa_tab_start)
         title_code = pp.nestedExpr("<title>", "</title>", content=enclosed)
         title_code.setParseAction(self._pa_title)
+        inset_code = pp.nestedExpr("@in\\", "@in/", content=enclosed)
+        inset_code.setParseAction(self._pa_inset)
         paired_codes = (
             centred_code
             ^ closer_code
@@ -303,6 +305,7 @@ class DocumentParser:
             ^ expansion_code
             ^ footnote_code
             ^ indented_code
+            ^ inset_code
             ^ interpolation_code
             ^ interlineation_above_code
             ^ interlineation_below_code
@@ -345,10 +348,23 @@ class DocumentParser:
             ),
         )
         row.setParseAction(self._pa_row)
-        table = pp.nestedExpr(
+        table_regular = pp.nestedExpr(
             "<t>", "</t>", content=pp.OneOrMore(row | comment_code | white)
         )
-        table.setParseAction(self._pa_table)
+        table_regular.setParseAction(self._pa_table)
+        
+        table_padded = pp.nestedExpr(
+            "<t@p>", "</t>", content=pp.OneOrMore(row | comment_code | white)
+        )
+        table_padded.setParseAction(self._pa_table_padded)
+        
+        table_fixedwidth = pp.nestedExpr(
+            "<t@fw>", "</t>", content=pp.OneOrMore(row | comment_code | white)
+        )
+        table_fixedwidth.setParseAction(self._pa_table_fixedwidth)
+        
+        # Replace the original table with an OR of all table types
+        table = table_regular ^ table_padded ^ table_fixedwidth
         record_heading_place = pp.Word(pp.alphanums)
         record_heading_place.setParseAction(self._pa_record_heading_place)
         year = pp.Word(pp.nums, min=3, max=4)
@@ -941,6 +957,12 @@ class DocumentParser:
     def _pa_table(self, s, loc, toks):
         return ["<table>", "".join(toks[0]), "</table>"]
 
+    def _pa_table_padded(self, s, loc, toks):
+        return ['<table rend="padded">', "".join(toks[0]), "</table>"]
+
+    def _pa_table_fixedwidth(self, s, loc, toks):
+        return ['<table rend="fixedwidth">', "".join(toks[0]), "</table>"]
+
     def _pa_thorn(self, s, loc, toks):
         return ["\N{LATIN SMALL LETTER THORN}"]
 
@@ -1014,3 +1036,6 @@ class DocumentParser:
 
     def _pa_YOGH(self, s, loc, toks):
         return ["\N{LATIN CAPITAL LETTER YOGH}"]
+
+    def _pa_inset(self, s, loc, toks):
+        return ['<ab rend="inset">', "".join(toks[0]), "</ab>"]

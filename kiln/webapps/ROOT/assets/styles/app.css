@@ -1311,6 +1311,10 @@ p {
     text-rendering: optimizeLegibility
 }
 
+p.tei.ab.inset {
+    padding-left: 6rem;
+}
+
 p.tei.edDesc.align\(blockquote\) {
     margin: 0 0 1rem;
     padding: .5625rem 1.25rem 0 1.1875rem;
@@ -8906,6 +8910,18 @@ table:not(#table):not(#result-table):not(.related-entities-table) tbody tr td, t
     /* color: #be3c3c; */
 }
 
+table.tei.table.padded td, 
+table.tei.table.padded th {
+    padding: 0 13px !important;
+}
+
+table.tei.table.fixedwidth {
+    width: 100%;
+}
+
+table.tei.table.fixedwidth td {
+    width: 75%;
+}
 .featured-timelines-thumbnail 
 {
     height: 200px;
