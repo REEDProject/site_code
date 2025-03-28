@@ -2150,7 +2150,7 @@ select[multiple] {
 
 .accordion-title {
     display: block;
-    padding: 1.25rem 1rem;
+    padding: 1.25rem;
     line-height: 1;
     font-size: .75rem;
     color: #008281;
@@ -8647,7 +8647,7 @@ hr.padded {
 }
 
 .footnotes li, .glossed-terms li, .marginalia-list li, .collation-list li {
-    padding: .3125rem 0
+    padding: .3125rem
 }
 
 .footnotes li:not(:first-of-type), .glossed-terms li:not(:first-of-type), .marginalia-list li:not(:first-of-type), .collation-list li:not(:first-of-type) {
