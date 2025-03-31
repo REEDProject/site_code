@@ -72,6 +72,11 @@
           <resp>TEI Schema Designer</resp>
           <resp>Technical Consultant</resp>
         </respStmt>
+        <respStmt>
+          <persName>Sim Ong</persName>
+          <orgName>Records of Early English Drama (REED)</orgName>
+          <resp>Bibliographic Assistant</resp>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition> Version 1, released <date when-iso="2024-02-29">29 February 2024.</date>
@@ -695,11 +700,13 @@
             possible that the difference in the documentation can be attributed to the dating of the
             earlier petitions and the Privy Council warrant to the period before Philip Henslowe
             began to record dates and performances in his Diary, which only starts in 1591.<note
-              type="foot">See further <title>Rose Playhouse</title>, <ref target="https://ereed.org/collections/rosep/background-henslowe/">Historical Background</ref>.</note> We know
+              type="foot">See further <title>Rose Playhouse</title>, <ref target="https://ereed.org/collections/rosep/background-henslowe/">Historical Background</ref>
+              (@xc\#link to Philip Henslowe, Entrepreneur and Man of Property@xc \.</note> We know
             that Peter Hunningborne remained the leaseholder at Lurklane until 1594, so presumably
             he would have been responsible for any rentals of the playhouse at Newington but the
             cost to Henslowe or Strange's Men cannot be discovered.<note type="foot">For the plays
-              in Strange's Men's repertory, see <title>Rose Playhouse</title> <ref target="https://ereed.org/collections/rosep/appendix-3/">Appendix 3</ref>. See 'History of the Property' above for the dates of Hunningborne's tenancy at
+              in Strange's Men's repertory, see <title>Rose Playhouse</title>@xc\#link to Appendix
+              3@xc \. See 'History of the Property' above for the dates of Hunningborne's tenancy at
               Lurklane.</note></p>
 
           <p>In June 1594 more substantial evidence reveals that the companies, newly patronized by
@@ -782,7 +789,11 @@
             thousand sixe hundred twentynine, all the rest not named, were erected only for common
             Play-houses, besides the new built Beare garden, which was built as well for playes, and
             Fencers prizes, as Bull Bayting besides, one in former time at Newington Buts....'<note
-              type="foot">Howes, <ref target="https://ereed.org/records/bghop-ridp258075656/">Continuation of Stow, <title>Annales</title></ref>.</note></p>
+              type="foot">Howes, Continuation of Stow, <title>Annales</title>@xc\#link to BHHCSA@xc
+              \.</note></p>
+
+
+
         </div>
       </div>
     </front>
@@ -847,9 +858,9 @@
             <p> An oblong tear on the left side of the manuscript has obscured some letters before
               the legible signatures. The first damaged signature may have been by Ralph Sadler,
               identified in the Acts of the Privy Council for the meeting on 15 November as present
-              (see <title>Acts of the Privy Council</title>, vol 8, pp 301–26, <ref target="https://www.british-history.ac.uk/acts-privy-
-                council/vol8/pp301-325"><title>British
-                History Online</title></ref>, accessed 23 July 2024). William Bray has identified, in
+              (see <title>Acts of the Privy Council</title>, vol 8, pp 301–26, <title>British
+                History Online</title><!-- https://www.british-history.ac.uk/acts-privy-
+council/vol8/pp301-325 -->, accessed 23 July 2024). William Bray has identified, in
               the nineteenth-century ink below, the signature of Nicholas Bacon, who appears to have signed
               with the initials 'C s' for 'C<ex>ustos</ex> s<ex>igili</ex>' (keeper of the seal).
               There is also an oblong tear in the manuscript where the seal was ripped off,
@@ -940,14 +951,14 @@
           </div>
           <div type="endnote">
             <p> Jerome Savage (d. 1587) is known to have been an actor in the earl of Warwick's
-              troupe between 1575–9. See further the <ref target="https://dev.ereed.org/collections/nwbts/playhouse/">Introduction: History of the
-              Playhouse</ref>. </p>
+              troupe between 1575–9. See further the Introduction: History of the
+              Playhouse<!-- #IN to link to Introduction: 2nd chapter -->. </p>
 
             <p> John Hilles' property apparently lay to the south of the 'common sewer,' which ran
               between them on the south edge of Savage's lot (Ingram <title>Business of
                 Playing</title>, pp 160–2). For Thomas Cuckowe, named in the third entry, see the
-              <ref target="https://dev.ereed.org/records/nwbts-rid5/">1590 lease</ref>, CCA: Register W, CCA-DCc- Register/W, ff
-              36v–7. </p>
+              1590 lease, CCA: Register W, CCA-DCc- Register/W, ff
+              36v–7<!-- #IN to link to NBCCDC -->. </p>
 
             <p> On 21 July 1576 (f 90v), Jerome Savage's name appears listed with others 'which
               performed' tasks. </p>
@@ -1009,7 +1020,7 @@
               <table>
                 <row>
                   <cell>It<ex>e</ex>m we p<ex>re</ex>sent all the landhoulders from <rs ref="eats:487587" type="Place_F_Bridge">Newington bridge</rs>
-                    vppon both sydes the Co<ex>m</ex>en sewer &amp; so alonge to <rs ref="eats:487062" type="Place_Feature">Duffildes sluce</rs> to
+                    vppon both sydes the Co<ex>m</ex>en <rs ref="eats:487554" type="Place_F_WaterFeature">sewer</rs> &amp; so alonge to <rs ref="eats:487062" type="Place_Feature">Duffildes sluce</rs> to
                     Cutt pare &amp; dragge all &amp; euery man his seu<ex>er</ex>all p<ex>ar</ex>te
                     of the same sewer to be done by the laste daye of November next comyng vppon
                     payne of xij d. for euery rodde then vndone viz. </cell>
@@ -1061,8 +1072,8 @@
 
               <ab>It<ex>e</ex>m yt ys agreyd that <rs ref="eats:133645" type="Person_Male">peter honybo<ex>u</ex>rne</rs> shall haue a lease of
                 the resydue of the garden <del>adioyni</del> and ground<ex>es</ex> adioynyng to the
-                <rs ref="eats:227741" type="Place_F_Playhouse">playe house in newyngton</rs> not comp<ex>ri</ex>sed in his former lease for xxj<hi
-                  rend="superscript">ti</hi> yer<ex>es</ex> to begynne at mich<ex>aelm</ex>as next
+                <rs ref="eats:227741" type="Place_F_Playhouse">playe house</rs> in <rs ref="eats:231618" type="Place_PA_Settlement">newyngton</rs> not comp<ex>ri</ex>sed in his former lease for xxj<hi
+                  rend="superscript">ti</hi> yer<ex>es</ex> to begynne at <rs ref="eats:42598" type="CalendarDay_Liturgical">mich<ex>aelm</ex>as</rs> next
                 and he to pay therefore yerely two shilling<ex>es</ex></ab>
 
               <gap reason="omitted"/>
@@ -1105,7 +1116,7 @@
                 <row>
                   <cell>We<note type="marginal" place="margin_left">Honningborne.</note>
                       p<ex>re</ex>sent <rs ref="eats:133645" type="Person_Male">Peter Honningborne</rs> to open the <rs ref="eats:487044" type="Place_Feature">sluce</rs> by the <rs ref="eats:227741" type="Place_F_Playhouse">play house</rs> that
-                    the water may hav a fre passage by our Ladyday next<note type="foot">our Ladyday
+                    the water may hav a fre passage by our <rs ref="eats:72087" type="CalendarDay_Liturgical">Ladyday</rs> next<note type="foot">our Ladyday
                       next: <hi rend="italic">feast of the Annunciation, 25 March</hi></note> vpon
                       pa<ex>y</ex>n of</cell>
                   <cell rend="right">v s.</cell>
@@ -1129,8 +1140,8 @@
           </div>
           <div type="endnote">
             <p>
-              For Richard Cuckow see the <ref target="https://dev.ereed.org/records/nwbts-rid5/">1590 lease</ref>, CCA: Register W, CCA-DCc-
-              Register/W, ff 36v–7. See also the <ref target="https://emlot.org/db/record/event/403/">related EMloT event</ref>.</p>
+              <!-- EMLoT E403 --> For Richard Cuckow see the 1590 lease, CCA: Register W, CCA-DCc-
+              Register/W, ff 36v–7<!-- #IN to link to NWCCDC -->. </p>
           </div>
         </body>
       </text>
@@ -1147,14 +1158,14 @@
               <pb n="440" type="page"/>
 
               <ab>A<note type="foot">A: <hi rend="italic">in display script</hi></note>
-                  Let<ex>t</ex>re to the L<ex>ord</ex> maior of the Cyttie of London, and the
-                Iustices of midlesex<note type="foot">midlesex: <hi rend="italic">3 minims for</hi>
-                  mi</note> and Surrey. Whereas heretofore there hathe ben order taken to restraine
-                the playinge of Enterludes and playes on the Sabothe daie, Notw<ex>i</ex>thstandinge
+                  Let<ex>t</ex>re to the <rs ref="eats:489801" type="Person_Male">L<ex>ord</ex> maior</rs> of the <rs ref="eats:36947" type="Place_PA_Settlement">Cyttie of London</rs>, and the
+                <rs ref="eats:154215" type="Collective_Office">Iustices of midlesex</rs><note type="foot">midlesex: <hi rend="italic">3 minims for</hi>
+                  mi</note> and <rs ref="eats:160152" type="Collective_Office">Surrey</rs>. Whereas heretofore there hathe ben order taken to restraine
+                the playinge of <rs ref="eats:40398" type="Drama_Type">Enterludes</rs> and <rs ref="eats:40453" type="Drama_Type">playes</rs> on the Sabothe daie, Notw<ex>i</ex>thstandinge
                 the w<ex>hi</ex>ch (as wee are enformed), the same ys neglected to the
-                  prophanac<ex>i</ex>on of this daie, and all other daies of the weeke in divers
+                  <rs ref="eats:45652" type="CrimesMisdemeanors">prophanac<ex>i</ex>on</rs> of this daie, and all other daies of the weeke in divers
                 places the players doe vse to Recyte theire plaies to the great hurt and destruction
-                of the game of Beare Baytinge and lyke pastymes w<ex>hi</ex>ch are maynteyned for
+                of the game of <rs ref="eats:21767" type="Entertainment_AnimalSport">Beare Baytinge</rs> and lyke pastymes w<ex>hi</ex>ch are maynteyned for
                 her ma<ex>ies</ex>t<ex>es</ex> pleasure yf occac<ex>i</ex>on require: These shalbe
                 therefore to Requiere yow not onlie to take order hereafter that there maie no
                 plaies Interludes or Commodyes be vsed or publicklie made and shewed either on the
@@ -1298,17 +1309,17 @@
               <gap reason="omitted"/>
 
               <ab>Yt is agreed that Mr <rs ref="eats:488277" type="Person_Male">Paule Bucke</rs> shall have the leases of t<damage><gap
-                    unit="chars" extent="2"/></damage> ten<ex>emen</ex>te and <rs ref="eats:227741" type="Place_F_Playhouse">plaiehouse</rs> thereto
+                    unit="chars" extent="2"/></damage> <rs ref="eats:489670" type="Place_F_Property">ten<ex>emen</ex>te</rs> and <rs ref="eats:227741" type="Place_F_Playhouse">plaiehouse</rs> thereto
                 adioyninge in <rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs> renewed vp to xxj yeares w<ex>i</ex>th
                   coven<ex>au</ex>nt<ex>es</ex> as before and w<ex>i</ex>th a clause that he shall
                 convert the playehouse to some other <del>house</del> vse vppon the saide grownde
-                and not suffer anie plaies there after michelmas nexte</ab>
+                and not suffer anie plaies there after <rs ref="eats:42598" type="CalendarDay_Liturgical">michelmas</rs> nexte</ab>
 
               <gap reason="omitted"/>
             </div>
           </div>
           <div type="endnote">
-            <p> The date of this agreement for Buck's lease of the <rs ref="eats:489670" type="Place_F_Property">Lurklane</rs> property comes soon
+            <p> The date of this agreement for Buck's lease of the Lurklane property comes soon
               after Henslowe's use of the Newington Butts playhouse for the newly formed Lord
               Chamberlain's and Lord Admiral's Men in June 1594. Both Ingram, <title>Business of
                 Playing</title>, p 176, n 48, and Wickham <hi rend="italic">et al</hi>,
@@ -1329,7 +1340,7 @@
 
               <gap reason="omitted"/>
 
-              <ab rend="center">In the name of god Amen begininge at <rs ref="eats:231618" type="Place_PA_Settlement">newing <lb/>ton</rs> my <rs ref="eats:25827" type="Collective_Troupe">Lord
+              <ab rend="center">In the name of god Amen begininge at <rs ref="eats:227741" type="Place_F_Playhouse">newing <lb/>ton</rs> my <rs ref="eats:25827" type="Collective_Troupe">Lord
                   Admerall<ex>es</ex> men</rs> &amp; my <rs ref="eats:223085" type="Collective_Troupe">Lorde chamberlen<ex>es</ex>
                 <lb/> men</rs> As ffolowethe 1594</ab>
 
@@ -1393,8 +1404,8 @@
             </div>
           </div>
           <div type="endnote">
-            <p> For further details on the plays listed, see <ref target="https://dev.ereed.org/collections/nwbts/appendix/">the Appendix</ref>. 
-              <rs ref="eats:129736" type="Person_Male">Henslowe</rs> drew a line following the entry on 13 June before continuing
+            <p> For further details on the plays listed, see the Appendix <!-- IN please
+link to App -->. <rs ref="eats:129736" type="Person_Male">Henslowe</rs> drew a line following the entry on 13 June before continuing
               with his receipts from performances following, from 15 June onward. <title>The Taming
                 of a Shrew</title> and <title>Titus Andronicus</title> do not appear again in the
               repertory recorded in the <hi rend="italic">Diary</hi> and scholars have generally
@@ -1423,10 +1434,10 @@
               <ab>Item <note type="marginal" place="margin_left">Cuckowe <lb/>fface <lb/>Salter
                   <lb/>miller <lb/>Iefferson <lb/>Harvy</note> we fynd that the <rs ref="eats:487554" type="Place_F_WaterFeature">sewar</rs> leadinge from the houses where the
                 <rs ref="eats:227741" type="Place_F_Playhouse">old playe house</rs> did stand att <rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs> all alongest vnto the Bridge goyng from
-                <rs ref="eats:226373" type="Place_PA_Settlement">Barmondsey</rs> cross the high waye vnto <rs ref="eats:487644" type="Place_F_PlaceOfPunishment">sainct Thomas Watering<ex>es</ex></rs> is needefull
+                <rs ref="eats:226373" type="Place_PA_Settlement">Barmondsey</rs> cross the high waye vnto sainct Thomas Watering<ex>es</ex> is needefull
                 to be cast clensed and scowred, and we fynd that <rs ref="eats:487187" type="Person_Male">Richard Cuckow</rs> <rs ref="eats:487690" type="Person_Male">Robert fface</rs>,
-                <rs ref="eats:488387" type="Person_Male">Richard Salter</rs> <rs ref="eats:487764" type="Person_Male">Iohn miller</rs>, <rs ref="eats:487801" type="Person_Male">Iohn Iefferson</rs> and <rs ref="eats:11864" type="Person_Commoner">Thomas Harvy</rs> oughte to cast clense
-                and scower the same We p<ex>re</ex>sent the same to be done before Candlemas next
+                <rs ref="eats:488387" type="Person_Male">Richard Salter</rs> <rs ref="eats:487764" type="Person_Male">Iohn miller</rs>, <rs ref="eats:487801" type="Person_Male">Iohn Iefferson</rs> and <rs ref="eats:489881" type="Person_Male">Thomas Harvy</rs> oughte to cast clense
+                and scower the same We p<ex>re</ex>sent the same to be done before <rs ref="eats:330339" type="CalendarDay_Liturgical">Candlemas</rs> next
                 vpon payne of every pole then vndone<table>
                   <row>
                     <cell/>
@@ -1441,15 +1452,15 @@
           </div>
           <div type="endnote">
             <p>
-              This final notice of the 'old playe house' in the Sewer Commission
+              <!-- EMLoT E402 --> This final notice of the 'old playe house' in the Sewer Commission
               records indicates that the building had been demolished before 1599 and possibly
               around the time that <rs ref="eats:141231" type="Person_Male">Buck</rs> assumed the lease. 'St. Thomas à Waterings was situated
               close to the second milestone on the Old Kent Road, and was so called from a brook or
               spring, dedicated to St. Thomas à Becket.' See Edward Walford, 'The Old Kent Road,' in
                 <title>Old and New London: Volume 6</title> (London, 1878), 248–255, <title>British
                 History Online</title>
-              <ref target="http://www.british-history.ac.uk/old-new-london/vol6/pp248-255">http://www.british-history.ac.uk/old-new-london/vol6/pp248-255</ref>, [accessed 27 July
-              2024]. See the <ref target="https://emlot.org/db/record/event/402/">related EMLoT event</ref></p>
+              http://www.british-history.ac.uk/old-new-london/vol6/pp248-255, [accessed 27 July
+              2024]. </p>
           </div>
         </body>
       </text>
@@ -1476,7 +1487,7 @@
                   yo<ex>u</ex>r ma<ex>ies</ex>ties humble and obedient Subiect <rs ref="eats:202508" type="Person_Male">Ierom Savage</rs> that
                 where one <rs ref="eats:488448" type="Person_Male">Richarde</rs><note type="foot">Richarde: <hi rend="italic">written over
                     erasure</hi></note> <rs ref="eats:488448" type="Person_Male">Tomson</rs> had by good conveyance for terme of xix<hi
-                  rend="superscript">te</hi> yeres in and to one messuage w<ex>i</ex>th the
+                  rend="superscript">te</hi> yeres in and to one <rs ref="eats:489670" type="Place_F_Property">messuage</rs> w<ex>i</ex>th the
                   app<ex>ur</ex>tenan<ex>au</ex>nc<ex>es</ex> in <rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs> in the countie of <rs ref="eats:2291" type="Place_County">Surrey</rs>
                 wherin yo<ex>u</ex>r said Subiect now inhabiteth and he the said Thom<ex>a</ex>s
                 beinge therof soo possessed co<ex>n</ex>veyed hys interest aforesaid therein to
@@ -1491,15 +1502,15 @@
                 they concluded to have the same for terme of 30 yeres &amp; therevpon for the some
                 of x li.<note type="foot">x li.: <hi rend="italic">written over erasure</hi></note>
                 paid by yo<ex>u</ex>r said Orator the said Richard Hik<ex>es</ex> at or about
-                  thannunciac<ex>i</ex>on of our Ladie in the xviij<hi rend="superscript">th</hi>
+                  <rs ref="eats:72087" type="CalendarDay_Liturgical">thannunciac<ex>i</ex>on of our Ladie</rs> in the xviij<hi rend="superscript">th</hi>
                   yere<note type="foot"> xviij<hi rend="superscript">th</hi> yere: <hi rend="italic"
                     >1576</hi></note> of yo<ex>u</ex>r ma<ex>ies</ex>t<ex>ies</ex> reigne dyd by hys
                 sufficient deed lett the said messuage and one orchard and garden w<ex>i</ex>th
                   thapp<ex>ur</ex>ten<ex>au</ex>nc<ex>es</ex> for terme of 30 yeres then next
                 followinge reseruinge yerely during the said terme ffoure mark<ex>es</ex> of good
                 and lawfull money of England payable quarterlie at ffoure termes in the yere
-                  y<ex>a</ex>t ys to say at the feast<ex>es</ex> of the Natiuitie of St Iohn Baptist
-                &amp; St Mychell tharca<ex>u</ex>ngell &amp; the natiuitie of o<ex>u</ex>r Lord God
+                  y<ex>a</ex>t ys to say at the feast<ex>es</ex> of the <rs ref="eats:41188" type="CalendarDay_Liturgical">Natiuitie of St Iohn Baptist</rs>
+                &amp; <rs ref="eats:42598" type="CalendarDay_Liturgical">St Mychell tharca<ex>u</ex>ngell</rs> &amp; the <rs ref="eats:239365" type="CalendarDay_Liturgical">natiuitie of o<ex>u</ex>r Lord God</rs>
                 and thannunciac<ex>i</ex>on of our Lady by even porc<ex>i</ex>ons And in the said
                 lease ther was one condic<ex>i</ex>on or p<ex>ro</ex>uiso by y<ex>a</ex>t
                   w<ex>hi</ex>ch yt was p<ex>ro</ex>vided that yf the said Rent or any part therof
@@ -1518,7 +1529,7 @@
                 Richard a former graunte before the said seconde lease &amp; publish the said lease
                 wher ether ther ys no such lease or yf ther were any the same was antedated or made
                 onely upo<ex>n</ex> trust betwen the said p<ex>ar</ex>ties &amp; not to thuse of the
-                said Peter but by fraude &amp; coven to deceive such to whome the said Richard
+                said Peter but by <rs ref="eats:202471" type="CrimesMisdemeanors">fraude</rs> &amp; coven to deceive such to whome the said Richard
                 should lett the p<ex>re</ex>miss<ex>es</ex> and the said Richard &amp; Peter
                 fearinge &amp; suspectinge that such form<ex>er</ex> lease as they published yf any
                 ther be will not be sufficient to defeat such the estate of yo<ex>u</ex>r highnes
@@ -1544,7 +1555,7 @@
                 said Richard &amp; Peter vnderstandinge cam not to demaund the same Rent so that
                   xiij<hi rend="superscript">th</hi> daies passinge &amp; the said Thom<ex>a</ex>s
                   whase<note type="foot">whase: <hi rend="italic">corrected over erasure</hi></note>
-                suspecting no fraude vpon the xiiij<hi rend="superscript">th</hi> day went to london
+                suspecting no fraude vpon the xiiij<hi rend="superscript">th</hi> day went to <rs ref="eats:36947" type="Place_PA_Settlement">london</rs>
                 aboute hys affaires as also hopinge to mett ther w<ex>i</ex>th the said Richard
                   Hik<ex>es</ex> to pay the said some not knowinge that the some was to be renderet
                 on the lande nor suspectinge such the practice of the said Richard and Peter &amp;
@@ -1618,7 +1629,7 @@
                   declarac<ex>i</ex>on of the treuth of suche thing<ex>es</ex> Conteyned in the
                 saide Bill as Concerneth this def<ex>endan</ex>t Materiall to be answered vnto he
                 saieth that as towchinge the messwage w<ex>i</ex>th the appurten<ex>au</ex>nces in
-                the Countie of Sussex<note type="foot">Sussex: <hi rend="italic">likely for</hi>
+                the Countie of <rs ref="eats:2309" type="Place_County">Sussex</rs><note type="foot">Sussex: <hi rend="italic">likely for</hi>
                   Surrey</note> wherein the saide Compl<ex>ainan</ex>t saieth that he nowe dwelleth
                   w<ex>hi</ex>ch as he saieth he had of one Thomas Thomson in whome he supposethe a
                 former possession of the said premisses, this Defend<ex>an</ex>t knowethe noe suche
@@ -1627,7 +1638,7 @@
                 <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butt</rs><ex>es</ex> in the Countie of Surr<ex>ey</ex> as Ten<ex>au</ex>nte to
                 Richarde Hick<ex>es</ex> in the saide Bill of Complaynt named but how or by what
                 title this defend<ex>an</ex>t knoweth not And this Defendant further saiethe that
-                after the Departure of the saide Richarde Thomson beinge a silkewever as this
+                after the Departure of the saide Richarde Thomson beinge a <rs ref="eats:5732" type="Collective_Occupations">silkewever</rs> as this
                   Defend<ex>an</ex>t thinkethe The saied Compl<ex>ainan</ex>t occupied the same
                 messwage or ten<ex>emen</ex>te and he so havinge the occupac<ex>i</ex>on of the
                 saide house sought by all meanes that he coulde to obteyne of the saide Richarde
@@ -1938,7 +1949,8 @@
           <div type="endnote">
             <p> Those named in the 10 November privy council letter were the JPs for Surrey. <rs ref="eats:487941" type="Person_Male">Edward
               Bellingham</rs> (<hi rend="italic">c</hi> 1545–1605), was appointed JP in <hi rend="italic"
-                >c</hi> 1573, according to the <ref target="https://www.historyofparliamentonline.org/volume/1558-1603/member/bellingham-edward-1545-1605"><title>HPO</title></ref>, accessed 23 July 2024. <rs ref="eats:487983" type="Person_Male">Bernard Randolph</rs>, JP of Middlesex,
+                >c</hi> 1573, according to the <title>HPO</title><!-- https://www.historyofparliamentonline.org/volume/1558-1603/member/bell
+ingham-edward-1545-1605 -->, accessed 23 July 2024. <rs ref="eats:487983" type="Person_Male">Bernard Randolph</rs>, JP of Middlesex,
               was also appointed JP for Surrey in 1567 (see Appendix One of William Baxter Robison
               III, 'The Justices of the Peace of Surrey in National and County Politics, 14831570,'
               2 vols, PhD thesis (Louisiana State University, 1983), 403). No further information
@@ -2004,8 +2016,8 @@
                 Playhouse</title>, pp 89, 99, have speculated that the newly formed earl of Oxford's
               players, led by the <rs ref="eats:489167" type="Person_Family">Dutton brothers</rs>, may have used the playhouse next. How long <rs ref="eats:202508" type="Person_Male">Jerome
               Savage</rs> continued his tenancy is unclear, but by June 1582 <rs ref="eats:133645" type="Person_Male">Peter Hunningborne</rs> is on
-              record in the <ref target="https://dev.ereed.org/records/nwbts-rid3/">Cathedral Chapter Act Book</ref> with a lease for the 'resydue of the
-                garden <gap reason="omitted"/> and ground<ex>es</ex> adioyning to the play house,' indicating the existence of an even earlier lease.</p>
+              record in the Cathedral Chapter Act Book with a lease for the 'resydue of the
+                garden <gap reason="omitted"/> and ground<ex>es</ex> adioyning to the play house,'<!-- #IN link to NBCCAB --> indicating the existence of an even earlier lease.</p>
 
             <p> Savage had moved by 1582 to the parish of <rs ref="eats:225955" type="Place_PA_Settlement">St Peter Westcheap</rs>, London, where he was
               assessed on £3 3s of goods in a lay subsidy roll for that year (TNA: E179/251/16, f
