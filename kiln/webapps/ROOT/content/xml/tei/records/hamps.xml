@@ -4377,6 +4377,7 @@
               >Hampshire</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/86811/"
               type="Place_PA_Settlement">Andover</rs>
             <date when-iso="1381">1381</date>
+            <!--IN: Look into what happened with the commoners here!-->
             <seg ana="taxon:HAANAA">HAANAA</seg></head>
           <div xml:lang="lat" type="transcription" xml:id="hamps-ridp219992864-transcription">
             <div>
@@ -4542,6 +4543,7 @@
           </div>
         </body>
       </text>
+      <!-- IN: More weird commoner tags here?-->
       <text ana="taxon:Church_Parish" type="record" xml:id="hamps-ridp220059024">
         <body>
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/1967/" type="Place_County"
@@ -12215,9 +12217,7 @@
             </div>
           </div>
           <div type="endnote">
-            <p> 'Ovedale,' also spelled 'Uvedale,' is a well-known name in <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/1967/" type="Place_County"
-                >Hampshire</rs> history. This <rs
+            <p> 'Ovedale,' also spelled 'Uvedale,' is a well-known name in Hampshire history. This <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type"
                 >minstrel</rs>'s patron may have been <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/118607/" type="Person_Gentry">Sir
@@ -12254,8 +12254,7 @@
                   type="CalenderDay_Secular">Maye daie</rs>. the <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/35779/"
                   type="Entertainment_Custom">custome</rs> is &amp; hathe be<ex>n</ex> tyme owt of
-                mynde y<ex>a</ex>t ye <rs ref="http://ereed.library.utoronto.ca/eats/entity/10976/"
-                  type="Collective_Office">bailives</rs> for ye tyme beinge sholde yerely appoynte a
+                mynde y<ex>a</ex>t ye <rs ref="eats:489960" type="Collective_Office">bailives</rs> for ye tyme beinge sholde yerely appoynte a
                   <rs ref="http://ereed.library.utoronto.ca/eats/entity/59852/"
                   type="Drama_Character">Lorde</rs> to ride w<ex>i</ex>th a <rs
                   ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type"
@@ -12360,8 +12359,7 @@
                 ref="http://ereed.library.utoronto.ca/eats/entity/2363/" type="Place_PA_Settlement"
                 >Isle of Wight</rs> Dewlie co<ex>n</ex>tinued fro<ex>m</ex> ye tyme
               ye<ex>m</ex>memorie of ma<ex>n</ex> is not to the contrarie' (f 16), copied in 1567–9
-              by town <rs ref="http://ereed.library.utoronto.ca/eats/entity/10976/"
-                type="Collective_Office">bailiffs</rs> from various unidentified sources. <rs
+              by town bailiffs from various unidentified sources. <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/126758/" type="Place_F_OpenArea"
                 >Parkhurst Forest</rs> was a royal forest located to the north-west of Newport. <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/98105/" type="Person_Gentry">Sir
@@ -12447,7 +12445,7 @@
               <gap reason="omitted"/>
 
               <table>
-                <row>
+                <row><!--IN: Tawlbott to be tagged here?-->
                   <cell>It<ex>e</ex>m p<ex>ai</ex>d Tawlbott for mendinge the <rs
                       ref="http://ereed.library.utoronto.ca/eats/entity/124076/"
                       type="Place_F_Arena">Bvll<note type="foot">Bvll: v <hi rend="italic">written
@@ -13634,10 +13632,7 @@
           <div type="endnote">
             <p>The <rs ref="eats:298118" type="Person_Family">Oglander family</rs> was resident at
                 <rs ref="eats:124340" type="Place_F_Residence">Nunwell House</rs>.</p>
-            <p> Lumping a payment for <rs ref="http://ereed.library.utoronto.ca/eats/entity/40978/"
-                type="Thing_FoodDrink">salt</rs> and a reward to a <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type"
-                >minstrel</rs> into the same entry on p 164 seems an odd linkage, but <rs
+            <p> Lumping a payment for salt and a reward to a minstrel into the same entry on p 164 seems an odd linkage, but <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/98105/" type="Person_Gentry"
                 >Oglander's</rs> accounts have no order other than the order in which he made the
               payments, with expenses for foodstuffs, clothing, and <rs
@@ -14599,8 +14594,7 @@
             </div>
           </div>
           <div type="endnote">
-            <p>The <rs ref="eats:221085" type="Person_Family">Paulet family</rs> was resident at <rs
-                ref="eats:106707" type="Place_F_Residence">Freefolk</rs>.</p>
+            <p>The Paulet family was resident at Freefolk.</p>
 
             <p>The <rs ref="eats:127860" type="Entertainer_Type">maskers</rs>' letter indicates that
               they are waiting at <rs ref="eats:123118" type="Place_PA_Settlement">Basingstoke</rs>
