@@ -109,8 +109,9 @@
                   <div class="logo last hide-for-medium" data-equalizer-watch=""><img src="{$kiln:assets-path}/images/footer-logo-mobile-2.png" alt="" /></div>
                 </div>
                 <div class="row medium-up-2" data-equalizer="" data-equalize-on="medium">
-                  <div class="logo column medium-offset-1"><a href="http://www.sshrc-crsh.gc.ca/home-accueil-eng.aspx"><img src="{$kiln:assets-path}/images/footer-logo.png" alt="Social Science and Humanities Research Council of Canada logo" /></a></div>
-                  <div class="logo column end medium-offset-1"><a href="https://alliancecan.ca/"><img src="{$kiln:assets-path}/images/footer-logo7.png" alt="Digital Research Alliance of Canada logo" /></a></div>
+                  
+                  <div class="logo column text-left"><a href="http://www.sshrc-crsh.gc.ca/home-accueil-eng.aspx"><img src="{$kiln:assets-path}/images/footer-logo.png" alt="Social Science and Humanities Research Council of Canada logo" /></a></div>
+                  <div class="logo column text-right"><a href="https://alliancecan.ca/"><img src="{$kiln:assets-path}/images/footer-logo7.png" alt="Digital Research Alliance of Canada logo" /></a></div>
                 </div>
               </div>
               <div class="footer-bottom row text-center">
