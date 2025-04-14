@@ -19,10 +19,25 @@
     <xsl:apply-templates mode="free-text" select="/*/tei/*/tei:text" />
   </xsl:variable>
 
-  <!-- Template to handle copyOf references -->
+  <!-- Template to handle copyOf references, including cross-collection references -->
   <xsl:template match="tei:*[@copyOf]" priority="10">
-    <xsl:variable name="referenced-id" select="substring(@copyOf, 2)"/>
-    <xsl:apply-templates select="//*[@xml:id=$referenced-id]"/>
+    <xsl:variable name="reference" select="@copyOf"/>
+    <xsl:choose>
+      <!-- Handle cross-collection references -->
+      <xsl:when test="contains($reference, '.xml#')">
+        <xsl:variable name="doc-name" select="substring-before($reference, '#')"/>
+        <xsl:variable name="element-id" select="substring-after($reference, '#')"/>
+        <!-- Load the referenced collection -->
+        <xsl:variable name="referenced-doc" select="document($doc-name)"/>
+        <!-- Find and process the referenced element -->
+        <xsl:apply-templates select="$referenced-doc//*[@xml:id=$element-id]"/>
+      </xsl:when>
+      <!-- Handle same-collection references -->
+      <xsl:otherwise>
+        <xsl:variable name="referenced-id" select="substring($reference, 2)"/>
+        <xsl:apply-templates select="//*[@xml:id=$referenced-id]"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="/">
