@@ -1145,8 +1145,7 @@
         </body>
       </text>
       <!--IN: Do not tag--> 
-      <text type="record" xml:id="nwbts-rid23" copyOf="rosep-ridm91625448">
-        <!--copyOf="rosep.xml#rosep-ridm91625448"-->
+      <text type="record" xml:id="nwbts-rid23" copyOf="rosep.xml#rosep-ridm91625448">
         <body>
           <p/>
         </body>
@@ -1203,8 +1202,12 @@
         </body>
       </text>
       <!--IN: Do not tag--> 
-      <text type="record" xml:id="nwbts-rid18">
+      <text type="record" xml:id="nwbts-rid18" copyOf="rosep.xml#rosep-ridm91625448">
         <body>
+          <p/>
+        </body>
+      </text>
+        <!--<body>
           <head><rs>Surrey</rs>, <rs>Newington</rs>
             <date precision="low" when-iso="1593"><hi rend="italic">c</hi> 1593</date>
             <seg ana="taxon:RSAPPC">RSAPPC</seg></head>
@@ -1229,7 +1232,7 @@
             </div>
           </div>
         </body>
-      </text>
+      </text>-->
       <!--IN: Do not tag--> 
       <text type="record" xml:id="nwbts-rid24">
         <body>
