@@ -19,6 +19,12 @@
     <xsl:apply-templates mode="free-text" select="/*/tei/*/tei:text" />
   </xsl:variable>
 
+  <!-- Template to handle copyOf references -->
+  <xsl:template match="tei:*[@copyOf]" priority="10">
+    <xsl:variable name="referenced-id" select="substring(@copyOf, 2)"/>
+    <xsl:apply-templates select="//*[@xml:id=$referenced-id]"/>
+  </xsl:template>
+
   <xsl:template match="/">
     <!-- Entity mentions are restricted to the text of the document;
          entities keyed in the TEI header are document metadata. -->

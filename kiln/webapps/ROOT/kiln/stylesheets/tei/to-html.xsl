@@ -472,4 +472,20 @@
     </span>
   </xsl:template>
 
+  <!-- Template to handle elements with copyOf attribute -->
+  <xsl:template match="tei:*[@copyOf]" priority="10">
+    <xsl:variable name="referenced-id" select="substring(@copyOf, 2)"/>
+    <xsl:variable name="referenced-element" select="//*[@xml:id=$referenced-id]"/>
+    <xsl:choose>
+      <xsl:when test="$referenced-element">
+        <!-- Apply templates to the referenced element -->
+        <xsl:apply-templates select="$referenced-element"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <!-- If referenced element not found, process current element normally -->
+        <xsl:next-match/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
 </xsl:stylesheet>
