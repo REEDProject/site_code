@@ -16,36 +16,54 @@
   </xsl:variable>
 
   <xsl:variable name="free-text">
-    <xsl:apply-templates mode="free-text" select="/*/tei/*/tei:text" />
+    <!-- Modified to handle both regular and copyOf text elements -->
+    <xsl:apply-templates mode="free-text" select="/*/tei/*/tei:text[not(@copyOf)]" />
+    <xsl:for-each select="/*/tei/*/tei:text[@copyOf]">
+      <xsl:variable name="ref" select="@copyOf"/>
+      <xsl:variable name="doc-name" select="substring-before($ref, '#')"/>
+      <xsl:variable name="element-id" select="substring-after($ref, '#')"/>
+      <xsl:apply-templates mode="free-text" select="document($doc-name)//*[@xml:id=$element-id]"/>
+    </xsl:for-each>
   </xsl:variable>
 
-  <!-- Template to handle copyOf references, including cross-collection references -->
-  <xsl:template match="tei:*[@copyOf]" priority="10">
-    <xsl:variable name="reference" select="@copyOf"/>
-    <xsl:choose>
-      <!-- Handle cross-collection references -->
-      <xsl:when test="contains($reference, '.xml#')">
-        <xsl:variable name="doc-name" select="substring-before($reference, '#')"/>
-        <xsl:variable name="element-id" select="substring-after($reference, '#')"/>
-        <!-- Load the referenced collection -->
-        <xsl:variable name="referenced-doc" select="document($doc-name)"/>
-        <!-- Find and process the referenced element -->
-        <xsl:apply-templates select="$referenced-doc//*[@xml:id=$element-id]"/>
-      </xsl:when>
-      <!-- Handle same-collection references -->
-      <xsl:otherwise>
-        <xsl:variable name="referenced-id" select="substring($reference, 2)"/>
-        <xsl:apply-templates select="//*[@xml:id=$referenced-id]"/>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-
   <xsl:template match="/">
-    <!-- Entity mentions are restricted to the text of the document;
-         entities keyed in the TEI header are document metadata. -->
+    <!-- Process regular text elements -->
     <xsl:apply-templates mode="entity-mention" select="/*/tei/*/tei:text//tei:*[@key]" />
 
-    <!-- Text content -->
+    <!-- Process text elements with copyOf -->
+    <xsl:for-each select="/*/tei/*/tei:text[@copyOf]">
+      <xsl:variable name="ref" select="@copyOf"/>
+      <xsl:variable name="doc-name" select="substring-before($ref, '#')"/>
+      <xsl:variable name="element-id" select="substring-after($ref, '#')"/>
+      <xsl:variable name="referenced-doc" select="document($doc-name)"/>
+      <xsl:variable name="referenced-text" select="$referenced-doc//*[@xml:id=$element-id]"/>
+      
+      <doc>
+        <xsl:sequence select="$document-metadata" />
+
+        <field name="file_path">
+          <xsl:value-of select="$file-path" />
+        </field>
+        <field name="document_id">
+          <xsl:value-of select="@xml:id" />
+        </field>
+        <field name="original_document">
+          <xsl:value-of select="$doc-name" />
+        </field>
+        <field name="original_id">
+          <xsl:value-of select="$element-id" />
+        </field>
+
+        <field name="text">
+          <xsl:value-of select="normalize-space($referenced-text)" />
+        </field>
+      </doc>
+
+      <!-- Process any entity mentions in the referenced text -->
+      <xsl:apply-templates mode="entity-mention" select="$referenced-text//tei:*[@key]" />
+    </xsl:for-each>
+
+    <!-- Text content for non-copyOf elements -->
     <xsl:if test="normalize-space($free-text)">
       <doc>
         <xsl:sequence select="$document-metadata" />
