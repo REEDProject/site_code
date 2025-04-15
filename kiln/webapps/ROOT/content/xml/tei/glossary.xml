@@ -1358,7 +1358,7 @@
                         <sense xml:id="Northumberlandia-1">Northumberland </sense>
                     </entry>
 
-
+                
                 </div>
                 <div n="O" xml:id="gloss-la-O">
                     <!-- all of the entries for O -->
@@ -6437,7 +6437,8 @@
                         <sense xml:id="ny-1"> nigh; in <form><gram>adv phr</gram>
                                 <orth>ny vppon</orth></form> near or close to </sense>
                     </entry>
-
+ 
+                    
                     <entry xml:id="nyʒth">
                         <form>
                             <orth>nyʒth</orth>
@@ -6445,7 +6446,14 @@
                         </form>
                         <sense xml:id="nyʒth-1">night</sense>
                     </entry>
-
+ 
+                    <entry xml:id="nysiprius">
+                        <form>
+                            <orth>nysi prius</orth>
+                            <gram>n phr</gram>
+                        </form>
+                        <sense xml:id="nysiprius-1">a legal action tried under a writ of nisi prius <ref>[OEDO nisi prius]</ref></sense>
+                    </entry>
                 </div>
 
                 <div n="O" xml:id="gloss-eng-O">
@@ -6521,7 +6529,15 @@
                         </form>
                         <sense xml:id="one-1">on</sense>
                     </entry>
-
+ 
+                    <entry xml:id="oneless">
+                        <form>
+                            <orth>oneless</orth>
+                            <!-- specifically the instance on f38 of Hampshire appendix-->
+                            <gram>adv</gram>
+                        </form>
+                        <sense xml:id="oneless-1">unless</sense>
+                    </entry>
                     <entry xml:id="onor">
                         <form>
                             <orth>onor</orth>
@@ -7867,6 +7883,15 @@
                         </form>
                         <sense xml:id="speetes-1"> spits</sense>
                     </entry>
+                     
+ 
+                    <entry xml:id="spetiall">
+                        <form>
+                            <orth>spetiall</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="spetiall-1"> special</sense>
+                      </entry>
  
                     <entry xml:id="splentes">
                         <form>
