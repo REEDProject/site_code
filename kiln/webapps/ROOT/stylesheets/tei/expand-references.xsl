@@ -111,12 +111,42 @@
   </xsl:template>
   
   <xsl:template match="tei:text[@copyOf]" priority="10">
-    <xsl:variable name="originalId" select="substring-after(@copyOf, '#')" />
+    <xsl:variable name="has_file" select="contains(@copyOf, '.xml#')" />
+    <xsl:variable name="filepath">
+      <xsl:choose>
+        <xsl:when test="$has_file">
+          <xsl:value-of select="substring-before(@copyOf, '#')" />
+        </xsl:when>
+        <xsl:otherwise>
+          <!-- For same-document references -->
+          <xsl:value-of select="''" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:variable name="id" select="substring-after(@copyOf, '#')" />
+    
     <xsl:message>
       <xsl:text>Processing copyOf reference: </xsl:text>
-      <xsl:value-of select="$originalId" />
+      <xsl:if test="$has_file">
+        <xsl:value-of select="$filepath" />
+        <xsl:text>#</xsl:text>
+      </xsl:if>
+      <xsl:value-of select="$id" />
     </xsl:message>
-    <xsl:apply-templates select="id($originalId)" mode="referenced" />
+    
+    <xsl:choose>
+      <xsl:when test="$has_file">
+        <!-- External document reference -->
+        <xsl:variable name="referenced-doc" select="document($filepath)" />
+        <xsl:if test="$referenced-doc">
+          <xsl:apply-templates select="$referenced-doc//tei:*[@xml:id=$id]" mode="referenced" />
+        </xsl:if>
+      </xsl:when>
+      <xsl:otherwise>
+        <!-- Same document reference -->
+        <xsl:apply-templates select="id($id)" mode="referenced" />
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
   
   <xsl:template match="tei:*[@copyOf]" priority="5">
@@ -136,7 +166,7 @@
     </xsl:call-template>
   </xsl:template>
 
-  <xsl:template match="tei:text/@sameAs">
+  <xsl:template match="tei:text/@sameAs" priority="20">
     <xsl:attribute name="other_collection_ids">
       <xsl:for-each select="tokenize(., '\s+')">
         <xsl:value-of select="substring-before(., '.xml')" />
@@ -185,17 +215,7 @@
   </xsl:template>
 
   <xsl:template match="@ana" />
-  <xsl:template match="tei:text/@sameAs">
-    <xsl:attribute name="other_collection_ids">
-      <xsl:for-each select="tokenize(., '\s+')">
-        <xsl:value-of select="substring-before(., '.xml')" />
-        <xsl:if test="position() != last()">
-          <xsl:text> </xsl:text>
-        </xsl:if>
-      </xsl:for-each>
-    </xsl:attribute>
-  </xsl:template>
-  <xsl:template match="@sameAs" />
+
 
   <!-- Referenced records just need the tei:body/tei:head to be copied
        across. We also need to expand the tei:seg in the tei:head in
