@@ -263,12 +263,116 @@
   </xsl:template>
 
   <xsl:template match="tei:text[@type='record'][@copyOf]">
-    <xsl:variable name="copyOfReference" select="substring-after(@copyOf, '#')" />
+    <xsl:variable name="has_file" select="contains(@copyOf, '.xml#')" />
+    <xsl:variable name="filepath">
+      <xsl:choose>
+        <xsl:when test="$has_file">
+          <xsl:value-of select="substring-before(@copyOf, '#')" />
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="concat($file-path, '.xml')" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:variable name="id">
+      <xsl:choose>
+        <xsl:when test="$has_file">
+          <xsl:value-of select="substring-after(@copyOf, '#')" />
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="substring-after(@copyOf, '#')" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    
     <xsl:message>
       <xsl:text>Processing copyOf reference: </xsl:text>
-      <xsl:value-of select="$copyOfReference" />
+      <xsl:value-of select="$filepath" />
+      <xsl:text>#</xsl:text>
+      <xsl:value-of select="$id" />
     </xsl:message>
-    <xsl:apply-templates select="id($copyOfReference)" />
+    
+    <!-- Try to find the referenced document and load it -->
+    <xsl:variable name="referenced-doc" select="document($filepath)" />
+    
+    <xsl:choose>
+      <xsl:when test="$referenced-doc">
+        <!-- If document found, find the referenced element -->
+        <xsl:variable name="referenced-element" select="$referenced-doc//tei:text[@xml:id=$id]" />
+        <xsl:if test="$referenced-element">
+          <!-- Create a copy of the record but update the collection_id -->
+          <doc>
+            <field name="file_path">
+              <xsl:value-of select="$file-path" />
+            </field>
+            <field name="document_id">
+              <xsl:value-of select="@xml:id" />
+            </field>
+            <field name="document_type">
+              <xsl:text>record</xsl:text>
+            </field>
+            <!-- Copy all the fields from the original document -->
+            <xsl:variable name="free-text">
+              <xsl:apply-templates mode="free-text" select="$referenced-element" />
+              <xsl:text> </xsl:text>
+              <xsl:apply-templates mode="free-text-notes" select="$referenced-element//tei:note" />
+            </xsl:variable>
+            <field name="document_title">
+              <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:date" />
+              <xsl:text>, </xsl:text>
+              <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:rs[1]" />
+              <xsl:if test="$referenced-element/tei:body/tei:head/tei:rs[2]">
+                <xsl:text>, </xsl:text>
+                <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:rs[2]" />
+              </xsl:if>
+              <xsl:text>. </xsl:text>
+              <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:bibl[1]/tei:title" />
+              <xsl:text>. </xsl:text>
+              <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:bibl[1]/tei:span[@type='shelfmark'][@subtype='text']" />
+            </field>
+            <!-- Use current collection ID -->
+            <field name="collection_id">
+              <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id" />
+            </field>
+            <!-- Include original collection ID as additional collection -->
+            <field name="collection_id">
+              <xsl:value-of select="substring-before($filepath, '.xml')" />
+            </field>
+            <field name="record_title">
+              <xsl:value-of select="normalize-space($referenced-element/tei:body/tei:head/tei:bibl[1]/tei:title)" />
+            </field>
+            <field name="record_location">
+              <xsl:for-each select="$referenced-element/tei:body/tei:head/tei:rs">
+                <xsl:value-of select="normalize-space()" />
+                <xsl:if test="position() != last()">
+                  <xsl:text>, </xsl:text>
+                </xsl:if>
+              </xsl:for-each>
+            </field>
+            <field name="text">
+              <xsl:value-of select="normalize-space($free-text)" />
+            </field>
+            <!-- Copy entity references and facets -->
+            <xsl:apply-templates mode="entity-mention"
+                                 select="$referenced-element//tei:*[local-name()=('name', 'rs')]
+                                         [@ref]" />
+            <xsl:apply-templates mode="entity-mention"
+                                 select="$referenced-element/tei:index[@indexName='associated_entity']/tei:term" />
+            <xsl:apply-templates mode="entity-facet"
+                                 select="$referenced-element//tei:*[local-name()=('name', 'rs')]
+                                         [@ref]" />
+            <xsl:apply-templates mode="entity-facet"
+                                 select="$referenced-element/tei:index[@indexName='associated_entity']/tei:term" />
+          </doc>
+        </xsl:if>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:message>
+          <xsl:text>Warning: Could not load document: </xsl:text>
+          <xsl:value-of select="$filepath" />
+        </xsl:message>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
 </xsl:stylesheet>

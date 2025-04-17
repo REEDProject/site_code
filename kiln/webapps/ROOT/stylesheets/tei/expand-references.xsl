@@ -136,6 +136,18 @@
     </xsl:call-template>
   </xsl:template>
 
+  <xsl:template match="tei:text/@sameAs">
+    <xsl:attribute name="other_collection_ids">
+      <xsl:for-each select="tokenize(., '\s+')">
+        <xsl:value-of select="substring-before(., '.xml')" />
+        <xsl:if test="position() != last()">
+          <xsl:text> </xsl:text>
+        </xsl:if>
+      </xsl:for-each>
+    </xsl:attribute>
+  </xsl:template>
+  <xsl:template match="@sameAs" />
+
   <xsl:template match="tei:*[@target]">
     <xsl:variable name="context" select="." />
     <xsl:copy>
