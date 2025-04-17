@@ -112,39 +112,58 @@
   
   <xsl:template match="tei:text[@copyOf]" priority="10">
     <xsl:variable name="has_file" select="contains(@copyOf, '.xml#')" />
-    <xsl:variable name="filepath">
+  
+    <!-- Extract filename from copyOf attribute -->
+    <xsl:variable name="filename">
       <xsl:choose>
         <xsl:when test="$has_file">
           <xsl:value-of select="substring-before(@copyOf, '#')" />
         </xsl:when>
         <xsl:otherwise>
-          <!-- For same-document references -->
+          <xsl:value-of select="concat($file-path, '.xml')" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+  
+    <!-- Construct full filepath with relative path -->
+    <xsl:variable name="filepath">
+      <xsl:choose>
+        <xsl:when test="$has_file">
+          <xsl:value-of select="concat('../../content/xml/tei/records/', $filename)" />
+        </xsl:when>
+        <xsl:otherwise>
           <xsl:value-of select="''" />
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
+  
+    <!-- Extract ID part from copyOf attribute -->
     <xsl:variable name="id" select="substring-after(@copyOf, '#')" />
-    
+  
     <xsl:message>
       <xsl:text>Processing copyOf reference: </xsl:text>
-      <xsl:if test="$has_file">
-        <xsl:value-of select="$filepath" />
-        <xsl:text>#</xsl:text>
-      </xsl:if>
+      <xsl:value-of select="$filepath" />
+      <xsl:text>#</xsl:text>
       <xsl:value-of select="$id" />
     </xsl:message>
-    
+  
+    <!-- Try to find the referenced document and load it -->
+    <xsl:variable name="referenced-doc" select="document($filepath)" />
+  
     <xsl:choose>
-      <xsl:when test="$has_file">
-        <!-- External document reference -->
-        <xsl:variable name="referenced-doc" select="document($filepath)" />
-        <xsl:if test="$referenced-doc">
-          <xsl:apply-templates select="$referenced-doc//tei:*[@xml:id=$id]" mode="referenced" />
+      <xsl:when test="$referenced-doc">
+        <!-- If document found, find the referenced element -->
+        <xsl:variable name="referenced-element" select="$referenced-doc//tei:text[@xml:id=$id]" />
+        <xsl:if test="$referenced-element">
+          <!-- Apply templates to the referenced element -->
+          <xsl:apply-templates select="$referenced-element" mode="referenced" />
         </xsl:if>
       </xsl:when>
       <xsl:otherwise>
-        <!-- Same document reference -->
-        <xsl:apply-templates select="id($id)" mode="referenced" />
+        <xsl:message>
+          <xsl:text>Warning: Could not load document: </xsl:text>
+          <xsl:value-of select="$filepath" />
+        </xsl:message>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>

@@ -264,7 +264,9 @@
 
   <xsl:template match="tei:text[@type='record'][@copyOf]">
     <xsl:variable name="has_file" select="contains(@copyOf, '.xml#')" />
-    <xsl:variable name="filepath">
+    
+    <!-- Extract filename from copyOf attribute -->
+    <xsl:variable name="filename">
       <xsl:choose>
         <xsl:when test="$has_file">
           <xsl:value-of select="substring-before(@copyOf, '#')" />
@@ -274,16 +276,21 @@
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
-    <xsl:variable name="id">
+    
+    <!-- Construct full filepath with relative path -->
+    <xsl:variable name="filepath">
       <xsl:choose>
         <xsl:when test="$has_file">
-          <xsl:value-of select="substring-after(@copyOf, '#')" />
+          <xsl:value-of select="concat('../../content/xml/tei/records/', $filename)" />
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="substring-after(@copyOf, '#')" />
+          <xsl:value-of select="''" />
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
+    
+    <!-- Extract ID part from copyOf attribute -->
+    <xsl:variable name="id" select="substring-after(@copyOf, '#')" />
     
     <xsl:message>
       <xsl:text>Processing copyOf reference: </xsl:text>
@@ -336,7 +343,7 @@
             </field>
             <!-- Include original collection ID as additional collection -->
             <field name="collection_id">
-              <xsl:value-of select="substring-before($filepath, '.xml')" />
+              <xsl:value-of select="substring-before($filename, '.xml')" />
             </field>
             <field name="record_title">
               <xsl:value-of select="normalize-space($referenced-element/tei:body/tei:head/tei:bibl[1]/tei:title)" />
