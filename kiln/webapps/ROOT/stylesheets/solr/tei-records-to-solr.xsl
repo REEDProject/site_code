@@ -15,8 +15,11 @@
 
   <xsl:template match="/">
     <add>
-      <!-- Treat each eREED record as its own Solr document. -->
-      <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:group/tei:text[@type='record']" />
+     <!-- Treat each eREED record as its own Solr document. -->
+      <!-- Process regular records -->
+      <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:group/tei:text[@type='record'][not(@copyOf)]" />
+      <!-- Process copyOf records -->
+      <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:group/tei:text[@type='record'][@copyOf]" />
       <!-- Index front and back matter. -->
       <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:front/tei:div" mode="editorial" />
       <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:back/tei:div" mode="editorial" />
