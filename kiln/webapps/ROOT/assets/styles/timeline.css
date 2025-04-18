@@ -94,6 +94,7 @@
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   color: var(--primary-color);
+  font-family: 'Helvetica', sans-serif;
 }
 
 .event_tab.active {
@@ -107,12 +108,12 @@
 }
 
 .event_tab a, .event_tab div {
-  padding: 0.5rem 0.75rem;
+  padding: 0.25rem 0.75rem;
   display: block;
   color: inherit;
-  min-height: 44px;
   display: flex;
   align-items: center;
+  font-size: 0.85rem;
 }
 
 .events {
