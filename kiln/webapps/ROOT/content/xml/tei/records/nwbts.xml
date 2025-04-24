@@ -79,6 +79,7 @@
         </respStmt>
       </titleStmt>
       <editionStmt>
+        <!-- Release date to be changed here prior to publication --> 
         <edition> Version 1, released <date when-iso="2024-02-29">29 February 2024.</date>
         </edition>
       </editionStmt>
@@ -110,7 +111,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="eats" matchPattern="([0-9]+)"
-          replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/">
+          replacementPattern="http://ereed.org/$1/">
           <p>URIs using the <code>eats</code> prefix are references to EATS entities.</p>
         </prefixDef>
         <prefixDef ident="gloss" matchPattern="([\S]+)" replacementPattern="../glossary.xml#$1">
@@ -227,6 +228,7 @@
           ran through Guildford to Portsmouth on the Hampshire coast.</p>
         <figure>
           <graphic url="/images/OgilbyBritannia.jpg"/>
+          <desc>Strip map from John Ogilby's Britannia depicting the road from London to Arundel and Chichester.</desc>
           <head>John Ogilby, <hi rend="italic">Britannia</hi> (1675), Plate 4: London to Arundel and Chichester.</head>
         </figure>        
         <p>A later seventeenth century map of Walworth manor in the Canterbury Cathedral Archives
@@ -239,6 +241,7 @@
             61–2.</note></p>
           <figure>
             <graphic url="/images/WalworthManor.png"/>
+            <desc>17th century map of Walworth manor, showcasing the meeting of three roads converging in a triangle in Newington</desc>
             <head>Manor of Walworth, 1681. Canterbury Cathedral Archives: Map 19/1.</head>
           </figure>    
         <p>Like that of neighbouring Southwark, the land around Newington was low-lying and marshy, its
@@ -366,6 +369,7 @@
             73).</note></p>
           <figure>
             <graphic url="/images/Lurklane.png"/>
+            <desc>A close-up of the Walworth manor map, with an added red square to highlight the site of the Lurklane property</desc>
             <head>The Lurklane site on the 1681 Walworth manor plan, as confirmed by Laurie Johnson, <hi rend="italic">Shakespeare’s Lost Playhouse</hi>. Canterbury Cathedral Archives: Map 19/1.</head>
           </figure>    
           
