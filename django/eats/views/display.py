@@ -2,6 +2,7 @@ from django.conf import settings
 from django.contrib.sites.models import Site
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
+from django.views.decorators.csrf import csrf_exempt
 
 import ddh_utils.utils
 from lxml import etree
@@ -21,6 +22,7 @@ def home (request):
     context_data['user_is_editor'] = user_is_editor(request.user)
     return render(request, 'eats/display/home.html', context_data)
 
+@csrf_exempt
 @add_topic_map
 def entity_view (request, topic_map, entity_id):
     try:
@@ -62,6 +64,7 @@ def entity_view (request, topic_map, entity_id):
                     'user_is_editor': user_is_editor(request.user)}
     return render(request, 'eats/display/entity.html', context_data)
 
+@csrf_exempt
 @add_topic_map
 def entity_eatsml_view (request, topic_map, entity_id):
     try:
@@ -74,6 +77,7 @@ def entity_eatsml_view (request, topic_map, entity_id):
     xml = etree.tostring(tree, encoding='utf-8', pretty_print=True)
     return HttpResponse(xml, content_type='text/xml')
 
+@csrf_exempt
 @add_topic_map
 def search (request, topic_map):
     form_data = request.GET or None
@@ -118,6 +122,7 @@ def search (request, topic_map):
     context_data.update(user_preferences)
     return render(request, 'eats/display/search.html', context_data)
 
+@csrf_exempt
 @add_topic_map
 def search_eatsml (request, topic_map):
     name = request.GET.get('name', '')

@@ -266,6 +266,16 @@
   </xsl:template>
 
   <xsl:template match="tei:text[@type='record'][@copyOf]">
+    <!-- Debug messages -->
+    <xsl:message>
+        <xsl:text>Current file-path: </xsl:text>
+        <xsl:value-of select="$file-path"/>
+    </xsl:message>
+    <xsl:message>
+        <xsl:text>CopyOf attribute: </xsl:text>
+        <xsl:value-of select="@copyOf"/>
+    </xsl:message>
+    
     <xsl:variable name="has_file" select="contains(@copyOf, '.xml#')" />
     
     <!-- Extract filename from copyOf attribute -->
