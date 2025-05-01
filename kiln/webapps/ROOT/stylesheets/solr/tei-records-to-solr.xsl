@@ -338,17 +338,15 @@
               <xsl:apply-templates mode="free-text-notes" select="$referenced-element//tei:note" />
             </xsl:variable>
             <field name="document_title">
-              <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:date" />
-              <xsl:text>, </xsl:text>
-              <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:rs[1]" />
-              <xsl:if test="$referenced-element/tei:body/tei:head/tei:rs[2]">
-                <xsl:text>, </xsl:text>
-                <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:rs[2]" />
-              </xsl:if>
-              <xsl:text>. </xsl:text>
-              <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:bibl[1]/tei:title" />
-              <xsl:text>. </xsl:text>
-              <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:bibl[1]/tei:span[@type='shelfmark'][@subtype='text']" />
+              <xsl:value-of select="normalize-space(concat(
+                $referenced-element/tei:body/tei:head/tei:date, ', ',
+                $referenced-element/tei:body/tei:head/tei:rs[1],
+                if ($referenced-element/tei:body/tei:head/tei:rs[2]) then concat(', ', $referenced-element/tei:body/tei:head/tei:rs[2]) else '',
+                '. ',
+                $referenced-element/tei:body/tei:head/tei:bibl[1]/tei:title,
+                '. ',
+                $referenced-element/tei:body/tei:head/tei:bibl[1]/tei:span[@type='shelfmark'][@subtype='text']
+              ))" />
             </field>
             <!-- Use current collection ID -->
             <field name="collection_id">
@@ -384,27 +382,25 @@
               </xsl:variable>
               <xsl:value-of select="substring-before(substring-after($location_ref, '/entity/'), '/')" />
             </field>
-            <!-- Add record_shelfmark field -->
-            <field name="record_shelfmark">
-              <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:bibl[1]/tei:span[@type='shelfmark'][@subtype='text']" />
-            </field>
-            <!-- Add record_date fields -->
+            <!-- Copy the date from referenced record -->
             <xsl:apply-templates select="$referenced-element/tei:body/tei:head/tei:date" />
             <field name="record_date_display">
-              <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:date" />
+              <xsl:value-of select="normalize-space($referenced-element/tei:body/tei:head/tei:date)" />
+            </field>
+            <!-- Copy shelfmark from referenced record -->
+            <field name="record_shelfmark">
+              <xsl:value-of select="normalize-space($referenced-element/tei:body/tei:head/tei:bibl[1]/tei:span[@type='shelfmark'][@subtype='text'])" />
             </field>
             <field name="text">
               <xsl:value-of select="normalize-space($free-text)" />
             </field>
-            <!-- Copy entity references and facets -->
+            <!-- Copy entity references and facets from referenced record -->
             <xsl:apply-templates mode="entity-mention"
-                               select="$referenced-element//tei:*[local-name()=('name', 'rs')]
-                                       [@ref]" />
+                               select="$referenced-element//tei:*[local-name()=('name', 'rs')][@ref]" />
             <xsl:apply-templates mode="entity-mention"
                                select="$referenced-element/tei:index[@indexName='associated_entity']/tei:term" />
             <xsl:apply-templates mode="entity-facet"
-                               select="$referenced-element//tei:*[local-name()=('name', 'rs')]
-                                       [@ref]" />
+                               select="$referenced-element//tei:*[local-name()=('name', 'rs')][@ref]" />
             <xsl:apply-templates mode="entity-facet"
                                select="$referenced-element/tei:index[@indexName='associated_entity']/tei:term" />
           </doc>
