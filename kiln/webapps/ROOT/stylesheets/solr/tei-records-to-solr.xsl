@@ -15,11 +15,8 @@
 
   <xsl:template match="/">
     <add>
-     <!-- Treat each eREED record as its own Solr document. -->
-      <!-- Process regular records -->
+      <!-- Treat each eREED record as its own Solr document. -->
       <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:group/tei:text[@type='record'][not(@copyOf)]" />
-      <!-- Process copyOf records -->
-      <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:group/tei:text[@type='record'][@copyOf]" />
       <!-- Index front and back matter. -->
       <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:front/tei:div" mode="editorial" />
       <xsl:apply-templates select="/aggregation/tei/tei:TEI/tei:text/tei:back/tei:div" mode="editorial" />
@@ -266,45 +263,8 @@
   </xsl:template>
 
   <xsl:template match="tei:text[@type='record'][@copyOf]">
-    <!-- Debug messages -->
-    <xsl:message>
-        <xsl:text>Current file-path: </xsl:text>
-        <xsl:value-of select="$file-path"/>
-    </xsl:message>
-    <xsl:message>
-        <xsl:text>CopyOf attribute: </xsl:text>
-        <xsl:value-of select="@copyOf"/>
-    </xsl:message>
-    
-    <xsl:variable name="has_file" select="contains(@copyOf, '.xml#')" />
-    
-    <!-- Extract filename from copyOf attribute -->
-    <xsl:variable name="filename">
-      <xsl:choose>
-        <xsl:when test="$has_file">
-          <xsl:value-of select="substring-before(@copyOf, '#')" />
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:value-of select="concat($file-path, '.xml')" />
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
-    
-    <!-- Construct full filepath with relative path -->
-    <xsl:variable name="filepath">
-      <xsl:choose>
-        <xsl:when test="$has_file">
-          <xsl:value-of select="concat('../../content/xml/tei/records/', $filename)" />
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:value-of select="''" />
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
-    
-    <!-- Extract ID part from copyOf attribute -->
+    <xsl:variable name="filepath" select="substring-before(@copyOf, '#')" />
     <xsl:variable name="id" select="substring-after(@copyOf, '#')" />
-    
     <xsl:message>
       <xsl:text>Processing copyOf reference: </xsl:text>
       <xsl:value-of select="$filepath" />
@@ -320,38 +280,8 @@
         <!-- If document found, find the referenced element -->
         <xsl:variable name="referenced-element" select="$referenced-doc//tei:text[@xml:id=$id]" />
         <xsl:if test="$referenced-element">
-          <xsl:message>
-            <xsl:text>Processing copyOf record with ID: </xsl:text>
-            <xsl:value-of select="@xml:id"/>
-          </xsl:message>
-          
-          <xsl:message>
-            <xsl:text>Found record_title: </xsl:text>
-            <xsl:value-of select="normalize-space($referenced-element/tei:body/tei:head/tei:bibl[1]/tei:title)"/>
-          </xsl:message>
-          
-          <xsl:message>
-            <xsl:text>Found record_shelfmark: </xsl:text>
-            <xsl:value-of select="normalize-space($referenced-element/tei:body/tei:head/tei:bibl[1]/tei:span[@type='shelfmark'][@subtype='text'])"/>
-          </xsl:message>
-          
-          <xsl:message>
-            <xsl:text>Found record_date: </xsl:text>
-            <xsl:value-of select="normalize-space($referenced-element/tei:body/tei:head/tei:date)"/>
-          </xsl:message>
-          
-          <xsl:message>
-            <xsl:text>Found record_location: </xsl:text>
-            <xsl:for-each select="$referenced-element/tei:body/tei:head/tei:rs">
-              <xsl:value-of select="normalize-space()"/>
-              <xsl:if test="position() != last()">
-                <xsl:text>, </xsl:text>
-              </xsl:if>
-            </xsl:for-each>
-          </xsl:message>
-
+          <!-- Create a copy of the record but update the collection_id -->
           <doc>
-            <!-- Copy file_path and document_id -->
             <field name="file_path">
               <xsl:value-of select="$file-path" />
             </field>
@@ -361,16 +291,35 @@
             <field name="document_type">
               <xsl:text>record</xsl:text>
             </field>
-            
-            <!-- Copy record_title, record_shelfmark, and record_date_display -->
+            <!-- Copy all the fields from the original document -->
+            <xsl:variable name="free-text">
+              <xsl:apply-templates mode="free-text" select="$referenced-element" />
+              <xsl:text> </xsl:text>
+              <xsl:apply-templates mode="free-text-notes" select="$referenced-element//tei:note" />
+            </xsl:variable>
+            <field name="document_title">
+              <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:date" />
+              <xsl:text>, </xsl:text>
+              <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:rs[1]" />
+              <xsl:if test="$referenced-element/tei:body/tei:head/tei:rs[2]">
+                <xsl:text>, </xsl:text>
+                <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:rs[2]" />
+              </xsl:if>
+              <xsl:text>. </xsl:text>
+              <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:bibl[1]/tei:title" />
+              <xsl:text>. </xsl:text>
+              <xsl:value-of select="$referenced-element/tei:body/tei:head/tei:bibl[1]/tei:span[@type='shelfmark'][@subtype='text']" />
+            </field>
+            <!-- Use current collection ID -->
+            <field name="collection_id">
+              <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id" />
+            </field>
+            <!-- Include original collection ID as additional collection -->
+            <field name="collection_id">
+              <xsl:value-of select="substring-before($filepath, '.xml')" />
+            </field>
             <field name="record_title">
               <xsl:value-of select="normalize-space($referenced-element/tei:body/tei:head/tei:bibl[1]/tei:title)" />
-            </field>
-            <field name="record_shelfmark">
-              <xsl:value-of select="normalize-space($referenced-element/tei:body/tei:head/tei:bibl[1]/tei:span[@type='shelfmark'][@subtype='text'])" />
-            </field>
-            <field name="record_date_display">
-              <xsl:value-of select="normalize-space($referenced-element/tei:body/tei:head/tei:date)" />
             </field>
             <field name="record_location">
               <xsl:for-each select="$referenced-element/tei:body/tei:head/tei:rs">
@@ -380,30 +329,20 @@
                 </xsl:if>
               </xsl:for-each>
             </field>
-            
-            <!-- Copy collection_id from referenced record -->
-            <field name="collection_id">
-              <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id" />
-            </field>
-            <field name="collection_id">
-              <xsl:value-of select="substring-before($filename, '.xml')" />
-            </field>
-            
-            <!-- Copy free text content from referenced record -->
-            <xsl:variable name="free-text">
-              <xsl:apply-templates mode="free-text" select="$referenced-element" />
-              <xsl:text> </xsl:text>
-              <xsl:apply-templates mode="free-text-notes" select="$referenced-element//tei:note" />
-            </xsl:variable>
             <field name="text">
               <xsl:value-of select="normalize-space($free-text)" />
             </field>
-            
-            <!-- Copy entity references and facets from referenced record -->
+            <!-- Copy entity references and facets -->
             <xsl:apply-templates mode="entity-mention"
-                               select="$referenced-element//tei:*[local-name()=('name', 'rs')][@ref]" />
+                                 select="$referenced-element//tei:*[local-name()=('name', 'rs')]
+                                         [@ref]" />
             <xsl:apply-templates mode="entity-mention"
-                               select="$referenced-element/tei:index[@indexName='associated_entity']/tei:term" />
+                                 select="$referenced-element/tei:index[@indexName='associated_entity']/tei:term" />
+            <xsl:apply-templates mode="entity-facet"
+                                 select="$referenced-element//tei:*[local-name()=('name', 'rs')]
+                                         [@ref]" />
+            <xsl:apply-templates mode="entity-facet"
+                                 select="$referenced-element/tei:index[@indexName='associated_entity']/tei:term" />
           </doc>
         </xsl:if>
       </xsl:when>

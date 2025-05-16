@@ -111,61 +111,25 @@
   </xsl:template>
   
   <xsl:template match="tei:text[@copyOf]" priority="10">
-    <xsl:variable name="has_file" select="contains(@copyOf, '.xml#')" />
-  
-    <!-- Extract filename from copyOf attribute -->
-    <xsl:variable name="filename">
-      <xsl:choose>
-        <xsl:when test="$has_file">
-          <xsl:value-of select="substring-before(@copyOf, '#')" />
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:value-of select="concat($file-path, '.xml')" />
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
-  
-    <!-- Construct full filepath with relative path -->
-    <xsl:variable name="filepath">
-      <xsl:choose>
-        <xsl:when test="$has_file">
-          <xsl:value-of select="concat('../../content/xml/tei/records/', $filename)" />
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:value-of select="''" />
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
-  
-    <!-- Extract ID part from copyOf attribute -->
-    <xsl:variable name="id" select="substring-after(@copyOf, '#')" />
-  
+    <xsl:variable name="filepath" select="substring-before(@copyOf, '#')" />
+    <xsl:variable name="originalId" select="substring-after(@copyOf, '#')" />
     <xsl:message>
       <xsl:text>Processing copyOf reference: </xsl:text>
       <xsl:value-of select="$filepath" />
       <xsl:text>#</xsl:text>
-      <xsl:value-of select="$id" />
+      <xsl:value-of select="$originalId" />
     </xsl:message>
-  
-    <!-- Try to find the referenced document and load it -->
-    <xsl:variable name="referenced-doc" select="document($filepath)" />
-  
-    <xsl:choose>
-      <xsl:when test="$referenced-doc">
-        <!-- If document found, find the referenced element -->
-        <xsl:variable name="referenced-element" select="$referenced-doc//tei:text[@xml:id=$id]" />
-        <xsl:if test="$referenced-element">
-          <!-- Apply templates to the referenced element -->
-          <xsl:apply-templates select="$referenced-element" mode="referenced" />
-        </xsl:if>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:message>
-          <xsl:text>Warning: Could not load document: </xsl:text>
-          <xsl:value-of select="$filepath" />
-        </xsl:message>
-      </xsl:otherwise>
-    </xsl:choose>
+    
+    <!-- Keep the original element with its ID -->
+    <xsl:copy>
+      <xsl:apply-templates select="@*" />
+      <!-- Add the referenced document's collection as an attribute -->
+      <xsl:attribute name="referenced_collection">
+        <xsl:value-of select="substring-before($filepath, '.xml')" />
+      </xsl:attribute>
+      <!-- Keep the original content -->
+      <xsl:apply-templates select="node()" />
+    </xsl:copy>
   </xsl:template>
   
   <xsl:template match="tei:*[@copyOf]" priority="5">
@@ -184,18 +148,6 @@
       <xsl:with-param name="url" select="@sameAs" />
     </xsl:call-template>
   </xsl:template>
-
-  <xsl:template match="tei:text/@sameAs" priority="20">
-    <xsl:attribute name="other_collection_ids">
-      <xsl:for-each select="tokenize(., '\s+')">
-        <xsl:value-of select="substring-before(., '.xml')" />
-        <xsl:if test="position() != last()">
-          <xsl:text> </xsl:text>
-        </xsl:if>
-      </xsl:for-each>
-    </xsl:attribute>
-  </xsl:template>
-  <xsl:template match="@sameAs" />
 
   <xsl:template match="tei:*[@target]">
     <xsl:variable name="context" select="." />
@@ -234,7 +186,8 @@
   </xsl:template>
 
   <xsl:template match="@ana" />
-
+  <xsl:template match="tei:text/@sameAs" />
+  <xsl:template match="@sameAs" />
 
   <!-- Referenced records just need the tei:body/tei:head to be copied
        across. We also need to expand the tei:seg in the tei:head in
