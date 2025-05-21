@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="hamps">
 
   <teiHeader>
@@ -18344,7 +18345,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
-            <p> Amounts are underlined in this set of accounts. </p>
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            <p>Walter Hungerford (1338-1449) was treasurer of England 1424/5-1431/2, with residences at Farleigh Hungerford Castle (Somerset) and Heytesbury Manor (Wiltshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316108">P&amp;P</ref>.</p>
+            <p>Henry of Windsor (1421-1471) was Henry VI of England 1422-1461 and 1470-1471. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316387">P&amp;P</ref>.</p>
+            <p>Richard of York (1411-1460) was third duke of York from 1415. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316242">P&amp;P</ref>.</p>
+            <p>Amounts are underlined in this set of accounts.</p>
           </div>
         </body>
       </text>
@@ -18788,6 +18793,13 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>John of Lancaster (1389-1435) was first duke of Bedford from 1414. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316158">P&amp;P</ref>.</p>
+            <p>John Holand (1350-1399/1400) was duke of Exeter from 1397, with residences at Pultney House (London), Berkhampstead Castle (Hertfordshire), Dartington Hall (Devon). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316107">P&amp;P</ref></p>
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            <p>Richard de Beauchamp (1381/2)-1439) was thirteenth earl of Warwick from 1401, with residences at Warwick Castle (Warwickshire) and Hanley Castle (Worcestershire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315922">P&amp;P</ref>.</p>
+            <p>Henry Percy (1392/3-1455) was fifth earl of Northumberland from 1415/6, with residences at Alnwick and Warkworth (Northumberland) and Petworth House (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316232">P&amp;P</ref>.</p>
+            <p>Humphrey of Lancaster (1390-1446/7) was second duke of Gloucester from 1414, with residences at Greenwich (Kent) and Baynard's Castle (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316161">P&amp;P</ref>.</p>
+            
             <p> The draft accounts for this year have survived and the entry corresponding to the
               one concerning the <rs ref="http://ereed.library.utoronto.ca/eats/entity/108222/"
                 type="Person_Clergy">cardinal</rs> on f 2 is complete in the draft accounts: 'Solui
@@ -19189,6 +19201,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>John of Lancaster (1389-1435) was first duke of Bedford from 1414. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316158">P&amp;P</ref>.</p>
+            <p>John Holand (1350-1399/1400) was duke of Exeter from 1397, with residences at Pultney House (London), Berkhampstead Castle (Hertfordshire), Dartington Hall (Devon). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316107">P&amp;P</ref></p>
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            <p>Richard de Beauchamp (1381/2)-1439) was thirteenth earl of Warwick from 1401, with residences at Warwick Castle (Warwickshire) and Hanley Castle (Worcestershire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315922">P&amp;P</ref>.</p>
+            
             <p> The entry on f 6 of these draft accounts reveals what SC5/1/2 (<ptr
                 target="#hamps-ridp224739600"/>) does not, that the <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type"
@@ -19806,6 +19823,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>John Holand (1350-1399/1400) was duke of Exeter from 1397, with residences at Pultney House (London), Berkhampstead Castle (Hertfordshire), Dartington Hall (Devon). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316107">P&amp;P</ref></p>
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            
+            
             <p> The payments for wages on f 7 occur in a group of payments of wages to the clerk of
               the customs, the craneman, 'one who kept the clock,' and another for ringing the
               curfew. The three men here all given the same last name, 'Wayte,' are identified as
@@ -19976,6 +19997,15 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                   king<gap reason="omitted"/></ab>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            <p>John Stafford (1413-1452) was Lord Chancellor of England 1432-1450, with residences at the Bishop's Palace, Wells (Somerset), Dogmersfield (Hampshire), Croydon (Surrey) and Stafford's Inn (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316293">P&amp;P</ref>.</p>
+            <p>Walter Hungerford (1338-1449) was first baron Hungerford from 1425, with residences at Farleigh Hungerford Castle (Somerset) and Heytesbury Manor (Wiltshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316108">P&amp;P</ref>.</p>
+            <p>Reynold de Cobham (1381-1446) was third baron Cobham from 1403, with residence at  Sterborough Castle (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/318584">P&amp;P</ref>.</p>
+            <p>Richard of York (1411-1460) was third duke of York from 1415. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316242">P&amp;P</ref>.</p>
+            <p>Henry of Windsor (1421-1471) was Henry VI of England 1422-1461 and 1470-1471. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316387">P&amp;P</ref>.</p>
+            <p>Richard de Beauchamp (1381/2)-1439) was thirteenth earl of Warwick from 1401, with residences at Warwick Castle (Warwickshire) and Hanley Castle (Worcestershire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315922">P&amp;P</ref>.</p>            
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp225700704">
@@ -20036,6 +20066,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            <p>Thomas Bourchier (1411-1486) was bishop of Worcester 1434/5-1443. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315935">P&amp;P</ref>.</p>
+            <p>John Holand (1350-1399/1400) was duke of Exeter from 1397, with residences at Pultney House (London), Berkhampstead Castle (Hertfordshire), Dartington Hall (Devon). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316107">P&amp;P</ref></p>
+            <p>Humphrey of Lancaster (1390-1446/7) was second duke of Gloucester from 1414, with residences at Greenwich (Kent) and Baynard's Castle (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316161">P&amp;P</ref>.</p>
+            <p>Richard Neville (1400-1460) was tenth earl of Salisbury from 1429, with residence at Middleham Castle (Yorkshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315863">P&amp;P</ref>.</p>
+            
             <p> Folio 12v is devoted solely to payments to lords' minstrels, which is done
               throughout this year's accounts with single folios devoted to costs of gentlemen in
               town for <rs ref="http://ereed.library.utoronto.ca/eats/entity/43439/"
@@ -20186,6 +20222,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Henry of Windsor (1421-1471) was Henry VI of England 1422-1461 and 1470-1471. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316387">P&amp;P</ref>.</p>
+            <p>Richard Gray (1436-1466) was first baron Gray of Powis from c. 1455, with residences at Powys Castle and Welshpool (Montgomeryshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316092">P&amp;P</ref>.</p>
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Edmund Beaufort (1406-1455) was second duke of Somerset from 1448. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315933">P&amp;P</ref>.</p>
+            <p>James Butler (1420-1461) was first earl of Wiltshire from 1449. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/319154">P&amp;P</ref>.</p>
             <p> The two dates mentioned in this group of payments are 16 December (not transcribed)
               and <rs ref="http://ereed.library.utoronto.ca/eats/entity/41461/"
                 type="CalendarDay_Liturgical">Christmas</rs>, but as this may have been a group of
@@ -20363,6 +20404,18 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <ab><hi rend="right">S<ex>um</ex>ma xxix s. iiij d.</hi></ab>
             </div>
           </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Henry Beaufort was third duke of Somerset from 1455 to 1464.</p>
+            <p>Richard Neville (1400-1460) was tenth earl of Salisbury from 1429, with residence at Middleham Castle (Yorkshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315863">P&amp;P</ref>.</p>
+            <p>John Talbot (1413-1460) was fifth earl of Shrewsbury from 1453, with residences at Blackmere (Shropshire) and Sheffield Castle (Yorkshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316344">P&amp;P</ref>.</p>
+            <p>Henry Holand (1430-1475) was fourth duke of Exeter from 1447 to 1461, with residences at Dartington Hall (Devon) and Coldharbour (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315854">P&amp;P</ref>.</p>
+            <p>Richard Neville (1428-1471) was sixteenth earl of Warwick from 1448, with residences at Middleham and Sheriff Hutton (Yorkshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316208">P&amp;P</ref>.</p>
+            <p>Humphrey Stafford (1402-1460) was first duke of Buckingham from 1444, with residences at Stafford Castle (Staffordshire), Writtle (Essex), and Maxstoke Castle (Warwickshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316292">P&amp;P</ref>.</p>
+            <p>Richard of York (1411-1460) was third duke of York from 1415. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316242">P&amp;P</ref>.</p>
+            <p>Thomas Bourchier (1411-1486) was archbishop of Canterbury from 1454, with residence at Knole Manor (Kent). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315935">P&amp;P</ref>.</p>
+            <p>Thomas de Courtney (1414-1457/8) was thirteenth earl of Devon from 1422, with residences at Colcombe Castle, Okehampton Castle, and Tiverton Castle (Devon). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315989">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp225814144">
@@ -20484,6 +20537,15 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Richard Neville (1428-1471) was sixteenth earl of Warwick from 1448, with residences at Middleham and Sheriff Hutton (Yorkshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316208">P&amp;P</ref>.</p>
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Richard West was seventh baron De La Warre 1450-1475.</p>
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+            <p>William Waynflete was bishop of Winchester 1447-1486.</p>
+            <p>William Neville was tenth earl of Kent 1461-1463.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp225861536">
@@ -20511,6 +20573,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -20615,6 +20680,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>William Waynflete was bishop of Winchester 1447-1486.</p>
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>George Plantagenet (1449-1477/8) was third duke of Clarence from 1461, with residences at Tutbury Castle (Staffordshire), Tiverton Castle (Devon), and Warwick Castle (Warwickshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316248">P&amp;P</ref>.</p>
+            <p>William Lord Hastings was chamberlain of the royal household 1461-1470.</p>
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+            
             <p> The payment following that to the <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/159800/" type="Collective_Troupe"
                 >king's minstrel(s)</rs> on f 26v is for horse-hire to <rs
@@ -20738,7 +20809,7 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                   <cell>Itam payd þe xij day of Agust by þe co<ex>m</ex>mawndment of Ihon
                       Wyll<ex>i</ex>am þen beynge meyr vnto my lord reues<note type="foot">lord
                       reues: <hi rend="italic">probably Anthony Woodville, 2nd Earl
-                      Rivers</hi></note> foull</cell>
+                      Rivers</hi></note> <rs ref="eats:14164" type="Entertainer_Type">foull</rs></cell>
                   <cell rend="right">xij d.</cell>
                 </row>
               </table>
@@ -20788,6 +20859,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Thomas Fitz Alan (1450-1524) was lord Mautravers 1471-1488 and twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>Henry Percy (1449-1489) was eighth earl of Northumberland from 1470, with residences at Alnwick Castle (Northumberland) and Petworth House (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316249">P&amp;P</ref>.</p>
+            <p>Elizabeth Woodville (1437-1492) was queen of England from 1465 to 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316389">P&amp;P</ref>.</p>
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+            
             <p> On f 53v, the 'lord matrevers' who was given a <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/40561/" type="Entertainment_Type"
                 >supper</rs> by the town (at which his <rs
@@ -20892,6 +20968,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>George Plantagenet (1449-1477/8) was third duke of Clarence from 1461, with residences at Tutbury Castle (Staffordshire), Tiverton Castle (Devon), and Warwick Castle (Warwickshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316248">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp226029936">
@@ -20938,6 +21019,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <ab rend="center">S<ex>um</ex>ma xvj s. viij d.</ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Edward Plantagent (1470-1483) was prince of Wales 1471-1483 and King Edward V of England 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316251">P&amp;P</ref>.</p>
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+            <p>George Plantagenet (1449-1477/8) was third duke of Clarence from 1461, with residences at Tutbury Castle (Staffordshire), Tiverton Castle (Devon), and Warwick Castle (Warwickshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316248">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -21054,6 +21141,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+            <p>Edward Plantagent (1470-1483) was prince of Wales 1471-1483 and King Edward V of England 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316251">P&amp;P</ref>.</p>
+            
+            
             <p> The steward for this year sets 'It' well to the left of the rest of each entry on f
               10, and there is no clear mark of abbreviation; abbreviation has been assumed and the
               abbreviation appropriately expanded. The 'u' in 'waytus' and 'Gownus' is peculiar, but
@@ -21130,6 +21222,13 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Elizabeth Woodville (1437-1492) was queen of England from 1465 to 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316389">P&amp;P</ref>.</p>
+            <p>Edward Plantagent (1470-1483) was prince of Wales 1471-1483 and King Edward V of England 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316251">P&amp;P</ref>.</p>
+            <p>Richard Plantagenet (1452-1485) was third duke of Gloucester 1461-1483 and King Richard III of England 1483-1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316250">P&amp;P</ref>.</p>
+            <p>Cecily Neville (1415-1495) was duchess of York from 1424, with residences at Berkhamstead (Hertfordshire), Fotheringhay Castle (Northamptonshire) and Baynard’s Castle (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316205">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -21269,6 +21368,16 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>John de la Pole (1442-1492) was second duke of Suffolk from 1450, with residence at Wingfield (Suffolk). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316247">P&amp;P</ref>.</p>
+            <p>William Waynflete was bishop of Winchester 1447-1486.</p>
+            <p>Richard Plantagenet (1452-1485) was third duke of Gloucester 1461-1483, Lord Protector 1483, and King Richard III of England 1483-1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316250">P&amp;P</ref>.</p>
+            <p>Henry Percy (1449-1489) was eighth earl of Northumberland from 1470, with residences at Alnwick Castle (Northumberland) and Petworth House (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316249">P&amp;P</ref>.</p>
+            <p>Francis Lovell (c. 1455-in or after 1487) was Lord Chamberlain 1483-1485.</p>
+            <p>John Howard (1430-1485) was sixth duke of Norfolk from 1483, with residence at Stoke Nayland (Suffolk). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316547">P&amp;P</ref>.</p>
+            <p>Thomas Stanley (1433-1504) was second baron Stanley from 1458, with residences at Lathom House, New Park and Knowsley Hall (Lancashire) and Derby House, Paul's Wharf (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315870">P&amp;P</ref>.</p>
+            <p>Henry Stafford (1455-1483) was second duke of Buckingham from 1460, with residences at Penshurst (Kent), Stafford Castle (Staffordshire), Maxstoke Castle (Warwickshire), Brecon Castle (Brecknockshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316299">P&amp;P</ref>.</p>
+            
             <p> The town apparently had only two minstrels or <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/13000/" type="Collective_Office"
                 >waits</rs> at this time, and the wages section of the accounts on f 22v records no
@@ -21365,6 +21474,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Anne Neville (1456-1484/5) was queen of England from 1483.</p>
+            <p>Richard Plantagenet (1452-1485) was King Richard III of England 1483-1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316250">P&amp;P</ref>.</p>
+            <p>Edward Plantagent (1470-1483) was prince of Wales 1471-1483 and King Edward V of England 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316251">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp226223680">
@@ -21418,6 +21533,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -21571,6 +21691,14 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Thomas Fitz Alan (1450-1524) was lord Mautravers 1471-1488 and twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>Edward Courtenay (n.d.-1509) was seventeenth earl of Devonshire from 1485, with residences at Colcombe Castle, Okehampton Castle, and Tiverton Castle (Devon). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315995">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp226255984">
@@ -21626,6 +21754,13 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 </row>
               </table>
             </div>
+          </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Thomas Stanley (1433-1504) was tenth  earl of Derby from 1485, with residences at Lathom House, New Park and Knowsley Hall (Lancashire) and Derby House, Paul's Wharf (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315870">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -21686,6 +21821,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -21769,6 +21910,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>Thomas West (1457-1525) was eighth Baron La Warre from 1475, with residence at Offington House (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/318063">P&amp;P</ref>.</p>
+            
             <p> The heading on f 42v is in display script, braced at beginning and end, and
               elaborately underlined. The entire set of payments is enclosed by a bracket on the
               right-hand side of the page, and to the right of the bracket, 'S<ex>um</ex>ma xxviij
@@ -21872,6 +22018,13 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>Arthur Tudor (1486-1502)  was prince of Wales from 1489. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316354">P&amp;P</ref>.</p>
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp226302416">
@@ -21905,6 +22058,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 </row>
               </table>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -21940,6 +22098,7 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Margaret Beaufort (1443-1509) was the mother of Henry VII, who became king 22 August 1485.  See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315942">P&amp;P</ref>.</p>
             <p> This is the first year in which a list of payments is included in the Book of Fines,
               along with the receipts from fines and other sources. </p>
           </div>
@@ -22003,6 +22162,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>Arthur Tudor (1486-1502)  was prince of Wales from 1489. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316354">P&amp;P</ref>.</p>
+            
             <p> The entry at the top of f 18v appears to continue the rewards to <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/8709/" type="Entertainer_Type"
                 >minstrels</rs> begun at the bottom of the recto of the leaf, but the entire entry
@@ -22059,6 +22221,8 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Margaret Beaufort (1443-1509) was the mother of Henry VII, who became king 22 August 1485.  See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315942">P&amp;P</ref>.</p>
+            
             <p> Butler transcribes 'mynstr<ex>elles</ex>' as 'mynistr' (<title>Book of
               Fines</title>, vol 1, p 55; Butler expands abbreviations silently). There may be an
               abbreviation mark after the 'n,' as well as the very clear abbreviation mark after the
@@ -30904,19 +31068,17 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
-            <p>
-              <rs ref="http://ereed.library.utoronto.ca/eats/entity/131276/" type="Person_Nobility"
+            <p><rs ref="eats:131276" type="Person_Royalty"
+                >Richard Plantagenet</rs> (1366/7-1399/1400) was Richard II of England from 21 June 1377. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316230">P&amp;P</ref>.</p>
+            
+            <p>Thomas De Holand (c. 1350-1397) was seventh earl of Kent from 1360.</p>
+              
+              <p><rs ref="eats:131276" type="Person_Nobility"
                 >Richard FitzAlan</rs> (<hi rend="italic">c</hi> 1348–97), 15th earl of Arundel, had
-              been part of <rs ref="http://ereed.library.utoronto.ca/eats/entity/32403/"
-                type="Person_Royalty">Richard II</rs>'s council but in 1397 was executed for
-              supporting <rs ref="http://ereed.library.utoronto.ca/eats/entity/152331/"
-                type="Person_Royalty">Gloucester</rs>'s plotting against the king. This section also
-              includes gifts to the <rs ref="eats:154663" type="Collective_Clergy">bishops of
-                Winchester</rs> and to the servants of the <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/24172/" type="Collective_Title"
-                >earls of Arundel</rs> and <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/90390/" type="Collective_Title"
-                >Kent</rs>. There appears to be a note in the left margin but it is both faded and
+              been part of Richard II's council but in 1397 was executed for
+              supporting Gloucester's plotting against the king.</p>         
+              
+              <p>This section also includes gifts to the bishops of Winchester and to the servants of the earls of Arundel and Kent. There appears to be a note in the left margin but it is both faded and
               obscured by repair. The marginal heading is also obscured by fading and repair. </p>
           </div>
         </body>
@@ -30965,13 +31127,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
-            <p>
-              <rs ref="http://ereed.library.utoronto.ca/eats/entity/131276/" type="Person_Nobility"
-                >Richard FitzAlan</rs> (<hi rend="italic">c</hi> 1348–97), 15th earl of Arundel, had
-              been part of <rs ref="http://ereed.library.utoronto.ca/eats/entity/32403/"
-                type="Person_Royalty">Richard II</rs>'s council but in 1397 was executed for
-              supporting <rs ref="http://ereed.library.utoronto.ca/eats/entity/152331/"
-                type="Person_Royalty">Gloucester</rs>'s plotting against the king. </p>
+            <p>Richard Plantagenet (1366/7-1399/1400) was Richard II of England from 21 June 1377. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316230">P&amp;P</ref>.</p>
+            <p>Thomas De Holand (c. 1350-1397) was seventh earl of Kent from 1360.</p>
+            <p><rs ref="http://ereed.library.utoronto.ca/eats/entity/131276/" type="Person_Nobility">Richard FitzAlan</rs> (1346-1397) was fifteenth earl of Arundel from 1375/6 to 1397, with residence at Arundel Castle, Sussex. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316066">P&amp;P</ref>.  FitzAlan had been part Richard II's council but in 1397 was executed for supporting Gloucester's plotting  against the king.</p>
           </div>
         </body>
       </text>
@@ -31023,13 +31181,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
-            <p>
-              <rs ref="http://ereed.library.utoronto.ca/eats/entity/131276/" type="Person_Nobility"
-                >Richard FitzAlan</rs> (<hi rend="italic">c</hi> 1348–97), 15th earl of Arundel, had
-              been part of <rs ref="http://ereed.library.utoronto.ca/eats/entity/32403/"
-                type="Person_Royalty">Richard II</rs>'s council but in 1397 was executed for
-              supporting <rs ref="http://ereed.library.utoronto.ca/eats/entity/152331/"
-                type="Person_Royalty">Gloucester</rs>'s plotting against the king. </p>
+            <p>Richard Plantagenet (1366/7-1399/1400) was Richard II of England from 21 June 1377. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316230">P&amp;P</ref>.</p>
+            <p>Thomas De Holand (c. 1350-1397) was seventh earl of Kent from 1360.</p>
+            <p><rs ref="http://ereed.library.utoronto.ca/eats/entity/131276/" type="Person_Nobility">Richard FitzAlan</rs> (1346-1397) was fifteenth earl of Arundel from 1375/6 to 1397, with residence at Arundel Castle, Sussex. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316066">P&amp;P</ref>.  FitzAlan had been part Richard II's council but in 1397 was executed for supporting Gloucester's plotting  against the king.</p>
           </div>
         </body>
       </text>
@@ -32317,6 +32471,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                   reason="omitted"/></ab>
             </div>
           </div>
+            <div type="endnote">
+              <p><rs ref="eats:13153" type="Person_Royalty">John of Gaunt</rs> (1340-1398/9) was second duke of Lancaster from 1362, with residences at Hertford Castle, Leicester Castle, Dunstanburgh Castle (Northumberland), Kenilworth Castle (Warwickshire), Kingston Lacy Manor (Dorset). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315850">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp245294752">
@@ -32355,6 +32512,14 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 gift to minstrels/a minstrel of the earl of Salisbury, 2s<gap reason="omitted"
                 />.</ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>William of Wykeham (c. 1324-1404) was bishop of Winchester 1366-1404.</p>
+            
+            <p>Richard FitzAlan (1346-1397) was fifteenth earl of Arundel from 1375/6 to 1397, with residence at Arundel Castle, Sussex. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316066">P&amp;P</ref>.</p>
+            
+            <p>William Montagu (1328-1397) was seventh earl of Salisbury and Lord Montague 1334-1397.</p> 
+            
           </div>
         </body>
       </text>
@@ -32656,6 +32821,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 />.</ab>
             </div>
           </div>
+          <div type="endnote">
+            <p>Thomas De Holand (c. 1350-1397) was seventh earl of Kent from 1360.</p>
+            <p>William of Wykeham (c 1324-1404) was bishop of Winchester 1366-1404.</p>
+            <p>Richard Plantagenet (1366/7-1399/1400) was Richard II of England from 21 June 1377. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316230">P&amp;P</ref>.</p>            
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp245840928">
@@ -32872,6 +33042,13 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Richard Plantagenet (1366/7-1399/1400) was Richard II of England from 21 June 1377. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316230">P&amp;P</ref>.</p>
+            <p>Thomas De Holand (c. 1350-1397) was seventh earl of Kent from 1360.</p>
+            <p>Charles Valois (1368-1422) was Charles VI of France from 1380 to 1422.</p>
+            <p>Edward of York (1373-1415) was duke of Aumerle from 1397 to 1399, with residence at Oakham Castle, Ruthland. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316408">P&amp;P</ref> (as duke of York).</p>
+            <p>John Holand (1350-1399/1400) was duke of Exeter from 1397, with residences at Pultney House (London), Berkhampstead Castle (Hertfordshire), Dartington Hall (Devon). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316107">P&amp;P</ref></p>
+            <p>Edmund Langley (1341-1402) was first duke of York from 1385. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/317114">P&amp;P</ref>.</p>
+            
             <p> The right side of mb [1] is damaged where the beginning of the entry for the <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/32482/" type="Collective_Troupe"
                 >king's minstrel</rs> would be.</p>
@@ -33872,6 +34049,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 this year, 17s<gap reason="omitted"/>.</ab>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry of Bolingbroke (c. 1367-1412/3) was Henry IV of England from 1399. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315920">P&amp;P</ref>.</p>
+            <p>Edmund De Holand (1383-1408) was ninth earl of Kent from 1400.</p>
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp241530352">
@@ -34466,6 +34648,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry of Bolingbroke (c. 1367-1412/3) was Henry IV of England from 1399. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315920">P&amp;P</ref>.</p>
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp240455088">
@@ -34580,6 +34766,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -34936,6 +35125,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Thomas of Lancaster (1389-1420/1) was second duke of Clarence from 1412. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316159">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp241702400">
@@ -35068,6 +35260,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <ab><gap reason="omitted"/>As gifts/a gift to minstrels/a minstrel of the bishop of
                 Winchester on Low Sunday, 20d<gap reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Humphrey of Lancaster (1390-1446/7) was second duke of Gloucester from 1414, with residences at Greenwich (Kent) and Baynard's Castle (London). See P&amp;P.</p>
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -35228,6 +35424,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Humphrey of Lancaster (1390-1446/7) was second duke of Gloucester from 1414, with residences at Greenwich (Kent) and Baynard's Castle (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316161">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -35393,6 +35592,7 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Humphrey of Lancaster (1390-1446/7) was second duke of Gloucester from 1414, with residences at Greenwich (Kent) and Baynard's Castle (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316161">P&amp;P</ref>.</p>
             <p> 28 December (f [14v]) is the <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/41365/"
                 type="CalendarDay_Liturgical">feast of the Holy Innocents</rs> and a frequent time
@@ -35475,6 +35675,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Humphrey of Lancaster (1390-1446/7) was second duke of Gloucester from 1414, with residences at Greenwich (Kent) and Baynard's Castle (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316161">P&amp;P</ref>.</p>
+            <p>Nicholas Carew (1400-1449) was baron Carew from 1431, with residences at Haccombe and Mohun's Ottery (Devon). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315985">P&amp;P</ref>.</p>
+            <p>Thomas of Lancaster (1389-1420/1) was second duke of Clarence from 1412. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316159">P&amp;P</ref>.</p>
+            <p>John de Mowbray (1392-1432), was earl marshal of England from 1412/3. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316177">P&amp;P</ref>.</p>
+            <p>Henry of Monmouth (1387-1422) was Henry V of England from 1412/3. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316174">P&amp;P</ref>.</p>
+            
             <p> The indistinct capital letter after 'S<ex>anc</ex>te' occurs at the right margin,
               where the scribe used only the initial capital and a mark of abbreviation rather than
               writing the name in full on the next line. </p>
@@ -35531,6 +35737,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                   reason="omitted"/> and the same (chamberlains) render account of 20d paid to two
                 minstrels of the duke of Gloucester<gap reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry of Monmouth (1387-1422) was Henry V of England from 1412/3. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316174">P&amp;P</ref>.</p>
+            <p>John of Lancaster (1389-1435) was first duke of Bedford from 1414. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316158">P&amp;P</ref>.</p>
+            <p>Humphrey of Lancaster (1390-1446/7) was second duke of Gloucester from 1414, with residences at Greenwich (Kent) and Baynard's Castle (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316161">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -35637,8 +35848,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
-            <p> This section of mb [1] has no marginal heading, but it has been bracketed together.
-            </p>
+            <p>John of Lancaster (1389-1435) was first duke of Bedford from 1414. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316158">P&amp;P</ref>.</p>
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            <p>Richard de Beauchamp (1381/2)-1439) was thirteenth earl of Warwick from 1401, with residences at Warwick Castle (Warwickshire) and Hanley Castle (Worcestershire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315922">P&amp;P</ref>.</p>
+            <p> This section of mb [1] has no marginal heading, but it has been bracketed together.</p>
           </div>
         </body>
       </text>
@@ -35670,6 +35883,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <ab><gap reason="omitted"/>and (the chamberlains render account) of 3s 4d given to
                 minstrels/a minstrel of the duke of Gloucester<gap reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Humphrey of Lancaster (1390-1446/7) was second duke of Gloucester from 1414, with residences at Greenwich (Kent) and Baynard's Castle (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316161">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -35710,6 +35926,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <ab><gap reason="omitted"/>As a gift to an entertainer of the lord bishop of
                 Winchester 5 January, 20d<gap reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -35798,6 +36017,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 Winchester and others at Christmastide out of courtesy and honour, 2s 8d<gap
                   reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -36219,6 +36441,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            <p>Joan Beaufort (at or before 1379-1440) was countess of Westmorland from 1397.</p>
+          </div>
+          
         </body>
       </text>
       <text ana="taxon:RelCommunity_Monasteries" type="record" xml:id="hamps-ridp239886304">
@@ -36304,6 +36531,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp245959696">
@@ -36367,19 +36597,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
-            <p> Lord Walter of Hungerford was<rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/110693/" type="Person_Nobility">
-                Walter, 1st Baron Hungerford</rs> (1378–1449), whose principal residence was <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/106982/" type="Place_F_Residence"
-                >Farleigh Hungerford Castle</rs> in <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/2255/" type="Place_County"
-                >Somerset</rs>. Lord 'le Betrewes' was <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/177311/" type="Person_Nobility"
-                >William, 3rd Baron Botreaux</rs> (1388/9–1462), who resided at <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/107026/" type="Place_F_Residence"
-                >Botreaux Castle</rs> in <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/1823/" type="Place_County"
-                >Cornwall</rs>. </p>
+            <p>Richard de Beauchamp (1381/2)-1439) was thirteenth earl of Warwick from 1401, with residences at Warwick Castle (Warwickshire) and Hanley Castle (Worcestershire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315922">P&amp;P</ref>.</p>
+            <p>Thomas Montagu (1388-1428) was ninth earl of Salisbury from 1401. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316175">P&amp;P</ref>.</p>
+            <p>William de Botreaux (1388/9-1462) was third baron Botreaux from 1395, with residence at Bottreaux Castle (Cornwall). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315923">P&amp;P</ref>.</p>
+            <p>Richard of York (1411-1460) was third duke of York from 1415. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316242">P&amp;P</ref>.</p>
+            <p>Humphrey of Lancaster (1390-1446/7) was second duke of Gloucester from 1414, with residences at Greenwich (Kent) and Baynard's Castle (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316161">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -36419,6 +36642,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Humphrey of Lancaster (1390-1446/7) was second duke of Gloucester from 1414, with residences at Greenwich (Kent) and Baynard's Castle (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316161">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -36467,6 +36693,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 coming to the college on the day after the Purification of St Mary, 2s<gap
                   reason="omitted"/>.</ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            <p>Humphrey of Lancaster (1390-1446/7) was second duke of Gloucester from 1414, with residences at Greenwich (Kent) and Baynard's Castle (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316161">P&amp;P</ref>.</p>            
           </div>
         </body>
       </text>
@@ -36632,6 +36862,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Humphrey of Lancaster (1390-1446/7) was second duke of Gloucester from 1414, with residences at Greenwich (Kent) and Baynard's Castle (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316161">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp242178608">
@@ -36723,6 +36956,7 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
             <p> The payments for '<rs ref="http://ereed.library.utoronto.ca/eats/entity/147358/"
                 type="Thing_LiveryRegalia">tog<ex>is</ex></rs>,' that is, <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/147358/"
@@ -36772,6 +37006,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <ab><gap reason="omitted"/>As gifts to two minstrels of the lord cardinal coming to
                 the college 10 January, 20d<gap reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -36844,6 +37081,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            <p>Humphrey of Lancaster (1390-1446/7) was second duke of Gloucester from 1414, with residences at Greenwich (Kent) and Baynard's Castle (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316161">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp241924576">
@@ -36905,6 +37146,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -37028,6 +37272,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp241972240">
@@ -37072,6 +37320,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 England and to Hugh, a minstrel of the bishop of Dublin, 20d<gap reason="omitted"
                 /></ab>
             </div>
+          </div>
+          <div>
+            <p>John Stafford (1413-1452) was Lord Chancellor of England 1432-1450, with residences at the Bishop's Palace, Wells (Somerset), Dogmersfield (Hampshire), Croydon (Surrey) and Stafford's Inn (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316293">P&amp;P</ref>.</p>
+            <p>Richard Talbot (n.d.-1449) was archbishop of Dublin from 1417. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/318567">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -37133,6 +37385,8 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            
             <p> The manor of <rs ref="http://ereed.library.utoronto.ca/eats/entity/107092/"
                 type="Place_PA_Settlement">Eling</rs>, on the west side of Southampton Water, was
               granted to <rs ref="http://ereed.library.utoronto.ca/eats/entity/106806/"
@@ -37182,6 +37436,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <ab><gap reason="omitted"/>In payment to minstrels of the lord cardinal 15 January,
                   20d<gap reason="omitted"/>.</ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -37269,6 +37526,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp242034208">
@@ -37321,6 +37581,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 gifts to three minstrels of the duke of Somerset in the aforesaid month of July,
                   12d<gap reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>John Beaufort (1404-1444) was first duke of Somerset from 1443. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315932">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -37407,6 +37672,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            
             <p> The Friday on f [15v] may be either 11 January (if the first term started,
               unusually, on the Saturday of Michaelmas itself) or more likely 18 January (if the
               term started as usual, one week after Michaelmas). Similarly the Wednesday on f [16v]
@@ -37522,6 +37790,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp242058352">
@@ -37566,6 +37837,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 And as gifts/a gift to minstrels/a minstrel of the lord bishop of Durham coming to
                 the college in the month of August, 12d<gap reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            <p>Robert Neville (1404-1457) was bishop of Durham from 1437/8 with residences at the Bishop's Palace, Bishop Auckland and Durham Castle (Durham), and Crayke Castle (Yorkshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316202">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -37659,6 +37934,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 type="Entertainer_Type">mimus</rs>' without mention of any patron in the bursars'
               account for 1440–1 (see <ptr target="#hamps-ridp241990016"/>), and the hall book for
               1446 (see <ptr target="#hamps-ridp240996816"/>). </p>
+          </div>
+          <div type="endnote">
+            <p>Robert Neville (1404-1457) was bishop of Durham from 1437/8 with residences at the Bishop's Palace, Bishop Auckland and Durham Castle (Durham), and Crayke Castle (Yorkshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316202">P&amp;P</ref>.</p>
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            <p>John Stafford (1413-1452) was Lord Chancellor of England 1432-1450, with residences at the Bishop's Palace, Wells (Somerset), Dogmersfield (Hampshire), Croydon (Surrey) and Stafford's Inn (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316293">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -37774,6 +38055,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp242120208">
@@ -37814,6 +38098,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <ab><gap reason="omitted"/>As gifts to minstrels of the lord cardinal coming to the
                 college on the last day of December, 16d<gap reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Beaufort (1375-1447) was bishop of Winchester from 1404, with residences at Wolvesey Palace in Winchester and Bishops Waltham (Hampshire), as well as Winchester Palace (Surrey). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315916">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -37937,6 +38225,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 coming to the college 3 December, 12d<gap reason="omitted"/></ab>
             </div>
           </div>
+          <div type="endnote">
+            <p>Robert Neville (1404-1457) was bishop of Durham from 1437/8 with residences at the Bishop's Palace, Bishop Auckland and Durham Castle (Durham), and Crayke Castle (Yorkshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316202">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp242160736">
@@ -37977,6 +38268,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Richard Lestrange, who was seventh lord Strange 1397-1449, or John Lestrange, who was eighth lord Strange from 1449.</p>
           </div>
         </body>
       </text>
@@ -38088,6 +38382,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Robert Neville (1404-1457) was bishop of Durham from 1437/8 with residences at the Bishop's Palace, Bishop Auckland and Durham Castle (Durham), and Crayke Castle (Yorkshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316202">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -38319,6 +38617,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Richard of York (1411-1460) was third duke of York from 1415. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316242">P&amp;P</ref>.</p>
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:RelCommunity_Monasteries" type="record" xml:id="hamps-ridp240107888">
@@ -38403,6 +38705,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -38560,6 +38865,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp242233776">
@@ -38601,6 +38909,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 gifts/a gift to minstrels/a minstrel of the earl of Kent coming to the college in
                 the month of July, 3s 4d<gap reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>William Neville was tenth earl of Kent 1461-1463.</p>
+            
           </div>
         </body>
       </text>
@@ -38644,6 +38957,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 minstrels/a minstrel of the lord king, 6s 9d. <del>In payment to minstrel(s) of Lord
                   of Warwick, 3s 4d</del><gap reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -38863,6 +39179,7 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
             <p> The performer(s) from <rs ref="http://ereed.library.utoronto.ca/eats/entity/106784/"
                 type="Place_PA_Settlement">Romsey</rs> on f [9v] probably came from the town rather
               than from the abbey of Benedictine nuns. </p>
@@ -38902,6 +39219,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <ab><gap reason="omitted"/>And as gifts to minstrels of the lord earl of Arundel
                 coming to the college in the month of January, 20d<gap reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -38995,6 +39315,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp242272304">
@@ -39036,6 +39359,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -39144,6 +39470,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                   8d<gap reason="omitted"/></ab>
             </div>
           </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp246126608">
@@ -39239,6 +39570,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>George Plantagenet (1449-1477/8) was third duke of Clarence from 1461, with residences at Tutbury Castle (Staffordshire), Tiverton Castle (Devon), and Warwick Castle (Warwickshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316248">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -39522,6 +39857,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp242350688">
@@ -39586,6 +39924,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 June, 12d <gap reason="omitted"/> And as a gift to one minstrel by the warden,
                   4d<gap reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Richard Neville (1428-1471) was sixteenth earl of Warwick from 1448/9, with residences at Middleham and Sheriff Hutton (Yorkshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316208">P&amp;P</ref>.</p>
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -39683,6 +40027,13 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Sir Thomas Uvedale (1410-1474).</p>
+            <p>Richard Neville (1428-1471) was sixteenth earl of Warwick from 1448/9, with residences at Middleham and Sheriff Hutton (Yorkshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316208">P&amp;P</ref>.</p>
+            <p>William Lord Hastings was chamberlain of the royal household 1461-1470.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp246143888">
@@ -39724,6 +40075,7 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
             <p> The computus is missing from the head of this account but the date has been
               established by the HRO archivist using the names of mayors and other internal
               evidence: 'The heading is missing, but the document has been dated from internal
@@ -39849,6 +40201,13 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Richard Neville (1428-1471) was sixteenth earl of Warwick from 1448/9, with residences at Middleham and Sheriff Hutton (Yorkshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316208">P&amp;P</ref>.</p>
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Margaret of Anjou (1429/30-1482) was queen of England from 1445. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315907">P&amp;P</ref>.</p>
+            <p>George Plantagenet (1449-1477/8) was third duke of Clarence from 1461, with residences at Tutbury Castle (Staffordshire), Tiverton Castle (Devon), and Warwick Castle (Warwickshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316248">P&amp;P</ref>.</p>
+            <p>Richard Plantagenet (1452-1485) was third duke of Gloucester 1461-1483 and King Richard III of England 1483-1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316250">P&amp;P</ref>.</p>
+            <p>Henry Percy (1449-1489) was eighth earl of Northumberland from 1470, with residences at Alnwick Castle (Northumberland) and Petworth House (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316249">P&amp;P</ref>.</p>
+            
             <p> This is the first reference in the <rs
                 ref="http://ereed.library.utoronto.ca/eats/entity/106806/" type="Place_F_School"
                 >college</rs> and <rs ref="http://ereed.library.utoronto.ca/eats/entity/79157/"
@@ -39955,6 +40314,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 duke of Clarence coming to the college in the month of December, 8d<gap
                   reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>George Plantagenet (1449-1477/8) was third duke of Clarence from 1461, with residences at Tutbury Castle (Staffordshire), Tiverton Castle (Devon), and Warwick Castle (Warwickshire). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316248">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -40107,6 +40469,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+            <p>William Waynflete was bishop of Winchester 1447-1486.</p>
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Thomas Stanley (1433-1504) was second baron Stanley from 1458, with residences at Lathom House, New Park and Knowsley Hall (Lancashire) and Derby House, Paul's Wharf (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315870">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp241410624">
@@ -40191,6 +40559,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -40289,6 +40660,13 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+            <p>William Waynflete was bishop of Winchester 1447-1486.</p>
+            <p>William Lord Hastings was chamberlain of the royal household 1461-1470 and 1471-1483.</p>
+            
           </div>
         </body>
       </text>
@@ -40407,6 +40785,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>William Waynflete was bishop of Winchester 1447-1486.</p>
+            <p>Elizabeth Woodville (1437-1492) was queen of England from 1465 to 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316389">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp242617872">
@@ -40480,6 +40864,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote"><p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Richard Plantagenet (1452-1485) was third duke of Gloucester 1461-1483 and King Richard III of England 1483-1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316250">P&amp;P</ref>.</p>
+            <p>Edward Plantagent (1470-1483) was prince of Wales 1471-1483 and King Edward V of England 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316251">P&amp;P</ref>.</p>
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp245011440">
@@ -40530,6 +40919,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -40608,6 +41000,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>William Waynflete was bishop of Winchester 1447-1486.</p>
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Richard Plantagenet (1452-1485) was third duke of Gloucester 1461-1483 and King Richard III of England 1483-1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316250">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp246232240">
@@ -40668,6 +41066,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <ab>And in gifts to minstrel(s) to the lord king as well as to the lady queen and the
                 prince, 23s 4d<gap reason="omitted"/>.</ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+            <p>Elizabeth Woodville (1437-1492) was queen of England from 1465 to 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316389">P&amp;P</ref>.</p>
+            <p>Edward Plantagent (1470-1483) was prince of Wales 1471-1483 and King Edward V of England 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316251">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -40818,6 +41222,13 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                   20d<gap reason="omitted"/></ab>
             </div>
           </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+            <p>Elizabeth Woodville (1437-1492) was queen of England from 1465 to 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316389">P&amp;P</ref>.</p>
+            <p>Richard (Plantagenet) of Shrewsbury (1473-1483) was fifth duke of York from 1474. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316253">P&amp;P</ref>.</p>
+            <p>William Waynflete was bishop of Winchester 1447-1486.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp246262736">
@@ -40884,6 +41295,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+            <p>Elizabeth Woodville (1437-1492) was queen of England from 1465 to 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316389">P&amp;P</ref>.</p>
+            <p>Edward Plantagent (1470-1483) was prince of Wales 1471-1483 and King Edward V of England 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316251">P&amp;P</ref>.</p>
+            
             <p>
               <rs ref="http://ereed.library.utoronto.ca/eats/entity/106806/" type="Place_F_School"
                 >Winchester College</rs> rewarded the king's and queen's minstrels in this year but
@@ -41010,6 +41425,13 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 coming to the college 15 April with 12d given to minstrels of the lord bishop of
                 Winchester coming to the college 1 June, 4s 4d<gap reason="omitted"/>.</ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Elizabeth Woodville (1437-1492) was queen of England from 1465 to 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316389">P&amp;P</ref>.</p>
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Thomas West (1457-1525) was eighth Baron La Warre from 1475, with residence at Offington House (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/318063">P&amp;P</ref>.</p>
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+            <p>William Waynflete was bishop of Winchester 1447-1486.</p>
           </div>
         </body>
       </text>
@@ -41539,6 +41961,13 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>William Waynflete was bishop of Winchester 1447-1486.</p>
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Edward Plantagent (1470-1483) was prince of Wales 1471-1483 and King Edward V of England 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316251">P&amp;P</ref>.</p>
+            <p>Richard Plantagenet (1452-1485) was third duke of Gloucester 1461-1483 and King Richard III of England 1483-1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316250">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp246292272">
@@ -41612,21 +42041,20 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Richard Plantagenet (1452-1485) was third duke of Gloucester 1461-1483 and King Richard III of England 1483-1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316250">P&amp;P</ref>.</p>
+            <p>William Lord Hastings was chamberlain of the royal household 1461-1470 and 1471-1483.</p>
+            <p>William Waynflete was bishop of Winchester 1447-1486.</p>
+            <p>Edward of York (1442-1483) was Edward IV of England 1460/1-1470 and 1471-1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316583">P&amp;P</ref>.</p>
+            <p>Elizabeth Woodville (1437-1492) was queen of England from 1465 to 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316389">P&amp;P</ref>.</p>
+            <p>Edward Plantagent (1470-1483) was prince of Wales 1471-1483 and King Edward V of England 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316251">P&amp;P</ref>.</p>
+            
             <p> The 'D<ex>omi</ex>ni de Soakes' (mb [3]) likely refers to the liberty of <rs
-                ref="eats:111630" type="Place_PA_Liberty">the Soke</rs>, just outside <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/79157/" type="Place_PA_Settlement"
-                >Winchester</rs> on the east side, between the River Itchen and <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/111361/" type="Place_F_OpenArea"
-                >St Giles' Hill</rs>. The city had no authority there, jurisdiction being in the
-              hands of the <rs ref="http://ereed.library.utoronto.ca/eats/entity/154663/"
-                type="Collective_ClergyAndChurchwardens">bishop of Winchester</rs> (Keene and
+                ref="eats:111630" type="Place_PA_Liberty">the Soke</rs>, just outside Winchester on the east side, between the River Itchen and St Giles' Hill. The city had no authority there, jurisdiction being in the
+              hands of the bishop of Winchester (Keene and
               Rumble, <title>Survey</title>, p 72). The bishop might thus be termed the 'lord of the
-              Soke' (at this time <rs ref="http://ereed.library.utoronto.ca/eats/entity/87662/"
-                type="Person_Clergy">William Waynflete</rs> (<hi rend="italic">c</hi> 1400–86),
+              Soke' (at this time William Waynflete (<hi rend="italic">c</hi> 1400–86),
               bishop of Winchester (1447–86)), but it is unclear why the chamberlains would do so in
-              this single case. The prince's minstrels also visited the <rs
-                ref="http://ereed.library.utoronto.ca/eats/entity/106806/" type="Place_F_School"
-                >college</rs> in this year (see <ptr target="#hamps-ridp242785248"/>). </p>
+              this single case. The prince's minstrels also visited the college in this year (see <ptr target="#hamps-ridp242785248"/>). </p>
           </div>
         </body>
       </text>
@@ -41720,6 +42148,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Edward Plantagent (1470-1483) was King Edward V of England 1483. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316251">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -41833,6 +42265,10 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>William Fitz Allan (1417-1487) was twenty-first earl of Arundel from 1438, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316072">P&amp;P</ref>.</p>
+            <p>Francis Lovell (c. 1455-in or after 1487) was Lord Chamberlain 1483-1485.</p>
+            <p>Margaret Beaufort (1443-1509) was the mother of Henry VII, who became king 22 August 1485.  See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315942">P&amp;P</ref>.</p>
+            
             <p> The payment to the minstrels of the king's mother comes toward the end of this set
               of accounts, so the date of the payment may have been 26 September 1485, even though
               the account was supposed to have ended the previous day. In that case the king would
@@ -41886,6 +42322,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Anne Neville (1456-1484/5) was queen of England from 1483.</p>
+            <p>Richard Plantagenet (1452-1485) was King Richard III of England 1483-1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316250">P&amp;P</ref>.</p>
+            
             <p>The king and queen whose minstrels were paid in this account must have been Richard
               III and Anne Neville, which means the payment occurred between 29 September 1484 and
               16 March 1485, the date of Anne's death. Henry VII took the crown on 22 August 1585, a
@@ -41957,6 +42396,14 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                   reason="omitted"/>.</ab>
             </div>
           </div>
+          <div type="endnote">
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>Thomas Stanley (1433-1504) was tenth earl of Derby from 1485, with residences at Lathom House, New Park and Knowsley Hall (Lancashire) and Derby House, Paul's Wharf (London). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315870">P&amp;P</ref>.</p>
+            <p>Peter Courtenay (c. 1432-1492) was bishop of Winchester from 1487.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp242898384">
@@ -42026,6 +42473,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Peter Courtenay (c. 1432-1492) was bishop of Winchester from 1487.</p>
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp246342976">
@@ -42093,6 +42546,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <ab rend="center">Total 18s 8d <gap reason="omitted"/></ab>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>Arthur Tudor (1486-1502)  was prince of Wales from 1489. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316354">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp242933920">
@@ -42143,6 +42601,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                   reason="omitted"/>. And as gifts/as a gift to minstrels/a minstrel of the lord
                 king in the month of July, 20d<gap reason="omitted"/>.</ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Peter Courtenay (c. 1432-1492) was bishop of Winchester from 1487.</p>
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -42196,6 +42660,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 minstrels/a minstrel of the lord king coming to the college 30 May, 20d<gap
                   reason="omitted"/>.</ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Peter Courtenay (c. 1432-1492) was bishop of Winchester from 1487.</p>
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -42270,6 +42740,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>Arthur Tudor (1486-1502)  was prince of Wales from 1489. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316354">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -42371,6 +42847,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Thomas West (1457-1525) was eighth Baron La Warre from 1475, with residence at Offington House (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/318063">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp246404704">
@@ -42442,6 +42924,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <ab rend="center">Total 20s <gap reason="omitted"/></ab>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>Arthur Tudor (1486-1502)  was prince of Wales from 1489. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316354">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp243009904">
@@ -42497,6 +42985,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <gap reason="omitted"/>
             </div>
           </div>
+          <div type="endnote">
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Margaret Beaufort (1443-1509) was the mother of Henry VII, who became king 22 August 1485.  See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/315942">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp246436304">
@@ -42544,6 +43038,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
               <ab rend="center">Total 20s <gap reason="omitted"/></ab>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>Arthur Tudor (1486-1502)  was prince of Wales from 1489. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316354">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:Education_Schools" type="record" xml:id="hamps-ridp243037088">
@@ -42590,6 +43090,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 the lord bishop of Winchester coming to the college 18 January, 20d<gap
                   reason="omitted"/>.</ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>Thomas Langton (c. 1430-1501) was bishop of Winchester from 1493.</p>
+            
           </div>
         </body>
       </text>
@@ -42698,6 +43203,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 college at the time of the election, 2s<gap reason="omitted"/>.</ab>
             </div>
           </div>
+          <div type="endnote">
+            <p>Thomas Langton (c. 1430-1501) was bishop of Winchester from 1493.</p>
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp246458432">
@@ -42762,6 +43273,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <ab rend="center">Total 21s 8d <gap reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>Arthur Tudor (1486-1502)  was prince of Wales from 1489. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316354">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -42841,6 +43358,9 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
                 the college in the month of June, 2s<gap reason="omitted"/>.</ab>
             </div>
           </div>
+          <div type="endnote">
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+          </div>
         </body>
       </text>
       <text ana="taxon:LocalGov_BoroughCity" type="record" xml:id="hamps-ridp246488848">
@@ -42885,6 +43405,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <ab rend="center">Total 21s 8d <gap reason="omitted"/></ab>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>Arthur Tudor (1486-1502)  was prince of Wales from 1489. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316354">P&amp;P</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -42945,6 +43471,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Thomas Langton (c. 1430-1501) was bishop of Winchester from 1493.</p>
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>
@@ -43092,6 +43624,12 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
             </div>
           </div>
           <div type="endnote">
+            <p>Thomas Langton (c. 1430-1501) was bishop of Winchester from 1493.</p>
+            <p>Thomas Fitz Alan (1450-1524) was twenty-second earl of Arundel from 1488, with residence at Arundel Castle (Sussex). See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316073">P&amp;P</ref>.</p>
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            
+            
             <p> This account was dated by a bursar from internal evidence. The compotus gives the
               year as 16 Hen VII but it is more likely that this account was for 15 Hen VII, 20
               September 1499–20 September 1500. </p>
@@ -43164,6 +43702,11 @@ later 2nd Baron Hunsdon -->] of my Lordes chiefe Gentlemen <ex>Q1</ex></note>, a
 
               <gap reason="omitted"/>
             </div>
+          </div>
+          <div type="endnote">
+            <p>Henry Tudor (1457-1509) was Henry VII of England from 22 August 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316350">P&amp;P</ref>.</p>
+            <p>Elizabeth of York (1465/6-1502/3) was queen of England from 1485. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316411">P&amp;P</ref>.</p>
+            <p>Arthur Tudor (1486-1502)  was prince of Wales from 1489. See <ref target="https://library2.utm.utoronto.ca/otra/reed/node/316354">P&amp;P</ref>.</p>
           </div>
         </body>
       </text>

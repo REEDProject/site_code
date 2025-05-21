@@ -79,6 +79,7 @@
         </respStmt>
       </titleStmt>
       <editionStmt>
+        <!-- Release date to be changed here prior to publication --> 
         <edition> Version 1, released <date when-iso="2024-02-29">29 February 2024.</date>
         </edition>
       </editionStmt>
@@ -110,7 +111,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="eats" matchPattern="([0-9]+)"
-          replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/">
+          replacementPattern="http://ereed.org/$1/">
           <p>URIs using the <code>eats</code> prefix are references to EATS entities.</p>
         </prefixDef>
         <prefixDef ident="gloss" matchPattern="([\S]+)" replacementPattern="../glossary.xml#$1">
@@ -227,6 +228,7 @@
           ran through Guildford to Portsmouth on the Hampshire coast.</p>
         <figure>
           <graphic url="/images/OgilbyBritannia.jpg"/>
+          <figDesc>Strip map from John Ogilby's Britannia depicting the road from London to Arundel and Chichester.</figDesc>
           <head>John Ogilby, <hi rend="italic">Britannia</hi> (1675), Plate 4: London to Arundel and Chichester.</head>
         </figure>        
         <p>A later seventeenth century map of Walworth manor in the Canterbury Cathedral Archives
@@ -239,6 +241,7 @@
             61–2.</note></p>
           <figure>
             <graphic url="/images/WalworthManor.png"/>
+            <figDesc>17th century map of Walworth manor, showcasing the meeting of three roads converging in a triangle in Newington</figDesc>
             <head>Manor of Walworth, 1681. Canterbury Cathedral Archives: Map 19/1.</head>
           </figure>    
         <p>Like that of neighbouring Southwark, the land around Newington was low-lying and marshy, its
@@ -366,6 +369,7 @@
             73).</note></p>
           <figure>
             <graphic url="/images/Lurklane.png"/>
+            <figDesc>A close-up of the Walworth manor map, with an added red square to highlight the site of the Lurklane property</figDesc>
             <head>The Lurklane site on the 1681 Walworth manor plan, as confirmed by Laurie Johnson, <hi rend="italic">Shakespeare’s Lost Playhouse</hi>. Canterbury Cathedral Archives: Map 19/1.</head>
           </figure>    
           
@@ -949,18 +953,21 @@
             </div>
           </div>
           <div type="endnote">
-            <p> Jerome Savage (d. 1587) is known to have been an actor in the earl of Warwick's
+            <p>Jerome Savage (d. 1587) is known to have been an actor in the earl of Warwick's
               troupe between 1575–9. See further the <ref target="https://dev.ereed.org/collections/nwbts/playhouse/">Introduction: History of the
-              Playhouse</ref>. </p>
+              Playhouse</ref>.</p>
 
-            <p> John Hilles' property apparently lay to the south of the 'common sewer,' which ran
+            <p>John Hilles' property apparently lay to the south of the 'common sewer,' which ran
               between them on the south edge of Savage's lot (Ingram <title>Business of
                 Playing</title>, pp 160–2). For Thomas Cuckowe, named in the third entry, see the
               <ref target="https://dev.ereed.org/records/nwbts-rid5/">1590 lease</ref>, CCA: Register W, CCA-DCc- Register/W, ff
-              36v–7. </p>
+              36v–7.</p>
 
-            <p> On 21 July 1576 (f 90v), Jerome Savage's name appears listed with others 'which
-              performed' tasks. </p>
+            <p>On 21 July 1576 (f 90v), Jerome Savage's name appears listed with others 'which
+              performed' tasks.</p>
+            
+            <p>For an abstract of the document and details of its transcription history,  see the related EMLoT <ref target="https://emlot.org/db/record/event/404/index.html">event record</ref>.</p>
+            
           </div>
         </body>
       </text>
@@ -1323,6 +1330,9 @@
               <gap reason="omitted"/>
             </div>
           </div>
+           <div type="endnote">
+             <p>For an abstract of the document and details of its transcription history,  see the related EMLoT <ref target="https://dev.ereed.org/records/nwbts-rid4/">event record</ref>.</p>
+          </div>
          
         </body>
       </text>
@@ -1418,6 +1428,8 @@
               repertory recorded in the diary and scholars have generally
               agreed that the Admiral's and Chamberlain's Men did not continue together at the
               Newington playhouse after their brief run there ending 13 June 1594. </p>
+            
+            <p>For an abstract of the document and details of its transcription history,  see the related EMLoT <ref target="https://emlot.org/db/record/event/7863/index.html">event record</ref>.</p>
           </div>
       
         </body>
@@ -1910,6 +1922,7 @@
               to the rent due by the feast of the Annunciation, 25 March, narrows the period to
               sometime in April or early May, before the answers of Hickes and Hunningborne were
               recorded. </p>
+            <p>For an abstract of the document and details of its transcription history,  see the related EMLoT events records: <ref target="https://emlot.org/db/record/event/184/index.html">the bill</ref>, <ref target="https://emlot.org/db/record/event/7314/index.html">Hunningborne's answer</ref>, and <ref target="https://emlot.org/db/record/event/7313/index.html">Hicks' reply</ref>.</p>
           </div>
         </body>
       </text>
@@ -1979,6 +1992,8 @@
               of the Household, 1570–96; Sir James Croft (<hi rend="italic">c</hi> 1518–90),
               comptroller of the Household, 1570–90; and Sir Francis Walsingham (<hi rend="italic"
                 >c</hi> 1532–90), principal secretary, 1573–90. </p>
+            
+            <p>For an abstract of the 10 November order and details of its transcription history,  see the related EMLoT <ref target="https://emlot.org/db/record/event/236/index.html">event record</ref>.</p>
           </div>
         </body>
       </text>
@@ -2048,6 +2063,8 @@
                 (<hi rend="italic">c</hi> 1540–91), vice-chamberlain of the Household, 1577–87; <rs ref="eats:121275" type="Person_Male">Sir
               Francis Walsingham</rs> (<hi rend="italic">c</hi> 1532–90), principal secretary, 1573-90;
               and <rs ref="eats:489034" type="Person_Male">Thomas Wilson</rs> (<hi rend="italic">c</hi> 1523/4-81). </p>
+            
+            <p>For an abstract of the document and details of its transcription history,  see the related EMLoT <ref target="https://emlot.org/db/record/event/234/index.html">event record</ref>.</p>
           </div>
         </body>
       </text>
@@ -2105,6 +2122,8 @@
               chancellor, 1587–91; <rs ref="eats:68527" type="Person_Gentry">Sir Francis Knollys</rs> (1511/12–96), treasurer of the Household,
               1570–96; and <rs ref="eats:121275" type="Person_Male">Sir Francis Walsingham</rs> (<hi rend="italic">c</hi> 1532–90), principal
               secretary, 1573–90. </p>
+            
+            <p>For an abstract of the document and details of its transcription history,  see the related EMLoT <ref target="https://emlot.org/db/record/event/69/index.html">event record</ref>.</p>
           </div>
         </body>
       </text>
@@ -2512,6 +2531,8 @@
               the property of Lurklane and repeated the error in the phrasing regarding the playhouse, though by 
               this time it was no longer functioning as such, if indeed it was still standing. 
               See CCA-DCc-Register/W, ff 292–2v, and Ingram, <title>Business of Playing</title>, pp 157–8, 176–7.</p>
+            
+            <p>For an abstract of the document and details of its transcription history,  see the related EMLoT records: <ref target="https://emlot.org/db/record/event/7591/index.html">5 April</ref> and <ref target="https://emlot.org/db/record/event/7592/index.html">6 April</ref>.</p>
           </div>
         </body>
       </text>
