@@ -317,6 +317,45 @@
                     </div>
                 </body>
             </text>
+            <text type="record" xml:id="testr-rid14">
+                <body>
+                    <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs>
+                        <date when-iso="1577">1577</date>
+                        <seg ana="taxon:NBSKCS">NBSKCS</seg></head>
+                    <div xml:lang="eng" type="transcription" xml:id="testr-rid14-transcription">
+                        <div>
+                            <head>f 95v <supplied>(5 July)</supplied></head>
+                            <pb n="95v" type="folio" facs="#NBSKCSf95v"/>
+                            
+                            <gap reason="omitted"/>
+                            
+                            <table>
+                                <row>
+                                    <cell>Imprimis <note type="marginal" place="margin_left">Newington St Georges
+                                            &amp; St Mary Magdalyns</note>we p<ex>re</ex>sent all thos p<ex>er</ex>sons
+                                        whose names are herevnder named hauing grounde w<ex>i</ex>thin the saied
+                                        p<ex>ar</ex>ishes to cutt &amp; dragge all theire seuerall p<ex>ar</ex>tes of
+                                        the Co<ex>m</ex>en <rs ref="eats:487554" type="Place_F_WaterFeature">shewer</rs> begyninge at the grate at <rs ref="eats:227741" type="Place_F_Playhouse">Newington Buttes</rs> &amp; so
+                                        all alonge to the bridge at the Lasier house viz: <rs ref="eats:202508" type="Person_Male">Iohn</rs><note type="foot">Iohn:
+                                            <hi rend="italic">presumably an error for</hi> Ierome</note> <rs ref="eats:202508" type="Person_Male">Savadge</rs> &amp;
+                                        <rs ref="eats:486905" type="Person_Male">Iohn Hilles</rs> x roddes<gap reason="omitted"/></cell>
+                                    <cell rend="right">xiij d. don<ex>e</ex></cell>
+                                </row>
+                                <row>
+                                    <cell/>
+                                    <cell rend="right">xx<hi rend="superscript">th</hi> of Nouember</cell>
+                                </row>
+                            </table>
+                            
+                            <gap reason="omitted"/>
+                        </div>
+                    </div>
+                    <div type="endnote">
+                        <p> Savage's name continues to appear in combination with Hilles' in the Sewer Commission
+                            records until November 1578. </p>
+                    </div>
+                </body>
+            </text>
         </group>
     </text>
 </TEI>
