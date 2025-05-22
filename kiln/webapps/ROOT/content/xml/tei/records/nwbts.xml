@@ -800,7 +800,7 @@
     <group>           
       <text type="record" xml:id="nwbts-rid12">
         <body>
-          <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs>
+          <head><rs ref="eats:2111" type="Place_County">Middlesex</rs>, <rs ref="eats:228103" type="Place_F_Residence">Hampton Court</rs>
             <date when-iso="1574">1574</date>
             <seg ana="taxon:NBPL14">NBPL14</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid12-transcription">
@@ -811,39 +811,39 @@
               <ab>After our very hartie commendac<ex>i</ex>ons ffor so much as yt is found by
                 experience that very great perill and incouenienc<ex>es</ex> hath fallen vppon
                 soundry of the Queenes Ma<ex>ies</ex>t<ex>es</ex> subiect<ex>es</ex> by the
-                sufferance of great assemblies of people to come together at plaies and shewes neare
-                London in this tyme of Contagion and infection of the plague: And for the restraint
-                thereof straicte order hath ben taken in the Citie and the liberties of the same.
+                sufferance of great assemblies of people to come together at <rs ref="eats:40453" type="Drama_Type">plaies</rs> and shewes neare
+                London in this tyme of Contagion and infection of the <!--IN: PLAGUE REF-->plague: And for the restraint
+                thereof straicte order hath ben taken in the <rs ref="eats:36947" type="Place_PA_Settlement">Citie</rs> and the liberties of the same.
                 Theis be to requier youe forthw<ex>i</ex>th to giue commaundement, as so directed by
                 vs that there be no playes shewes nor any such vnnecessarie assemblies vsed in that
-                Countie w<ex>i</ex>thin ten myles of the Citie vntill Easter next vppon payne of
+                <rs ref="eats:2291" type="Place_County">Countie</rs> w<ex>i</ex>thin ten myles of the Citie vntill <rs ref="eats:41327" type="CalendarDay_Liturgical">Easter</rs> next vppon payne of
                 imprisonement to such as shall in any wies offend to the contrarie. And thervnto
                 youe must take spciall<note type="foot">spciall: <hi rend="italic">for</hi>
-                  speciall</note> regarde. ffarre youe hartely well ffrom Hampton Court the xv<hi
+                  speciall</note> regarde. ffarre youe hartely well ffrom <rs ref="eats:228103" type="Place_F_Residence">Hampton Court</rs> the xv<hi
                   rend="superscript">th</hi> of Nouember 1574</ab>
 
               <ab><hi rend="right">
                   <damage><gap unit="chars" extent="4"/></damage> ffrendes</hi></ab>
 
               <table>
-                <row>
+                <row><!-- IN: Check that all of these have the relationship to the Privy Council entity-->
                   <cell><damage><gap unit="chars" extent="3"/></damage>er C<ex>ustos</ex>
                       s<ex>igili</ex></cell>
-                  <cell> W<ex>illiam</ex> Burghley</cell>
-                  <cell>E<ex>dward</ex> lyncon <damage><gap unit="chars" extent="2"
+                  <cell> <rs ref="eats:130613" type="Person_Male">W<ex>illiam</ex> Burghley</rs></cell>
+                  <cell><rs ref="eats:488164" type="Person_Male">E<ex>dward</ex> lyncon</rs> <damage><gap unit="chars" extent="2"
                     /></damage>undell</cell>
                 </row>
                 <row>
                   <cell/>
                   <cell/>
-                  <cell>A<ex>mbrose</ex> Warwyk</cell>
-                  <cell>R<ex>obert</ex> Leycester.</cell>
+                  <cell><rs ref="eats:12536" type="Person_Nobility">A<ex>mbrose</ex> Warwyk</rs></cell>
+                  <cell><rs ref="eats:44753" type="Person_Nobility">R<ex>obert</ex> Leycester</rs>.</cell>
                 </row>
                 <row>
-                  <cell>F<ex>rancis</ex> Knollys</cell>
-                  <cell>Iamys croft</cell>
+                  <cell><rs ref="eats:68527" type="Person_Gentry">F<ex>rancis</ex> Knollys</rs></cell>
+                  <cell><rs ref="eats:488103" type="Person_Gentry">Iamys croft</rs></cell>
                   <cell>T<ex>homas</ex> Smith</cell>
-                  <cell>Fra<ex>ncis</ex> Walsyngham</cell>
+                  <cell><rs ref="eats:121275" type="Person_Male">Fra<ex>ncis</ex> Walsyngham</rs></cell>
                 </row>
               </table>
             </div>
