@@ -156,7 +156,7 @@
 
   <xsl:template name="display-record-doc-desc">
     <li class="accordion-item" data-accordion-item="">
-      <a href="#" class="accordion-title">Document Description</a>
+      <a href="#" class="accordion-title">About This Record</a>
       <div class="accordion-content" data-tab-content="">
         <xsl:variable name="head" select="tei:body/tei:head" />
         <xsl:for-each select="$head/tei:bibl">
