@@ -71,7 +71,6 @@
         </map:aggregate>
         <map:transform src="../stylesheets/solr/tei-records-to-solr.xsl">
           <map:parameter name="file-path" value="{1}/{2}" />
-          <map:parameter name="enable-cross-collection" value="true" />
         </map:transform>
         <map:transform src="../stylesheets/solr/deduplicate-fields.xsl" />
         <map:transform type="solr">
