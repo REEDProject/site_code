@@ -111,7 +111,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="eats" matchPattern="([0-9]+)"
-          replacementPattern="http://ereed.org/$1/">
+          replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/">
           <p>URIs using the <code>eats</code> prefix are references to EATS entities.</p>
         </prefixDef>
         <prefixDef ident="gloss" matchPattern="([\S]+)" replacementPattern="../glossary.xml#$1">
@@ -794,14 +794,10 @@
             Play-houses, besides the new built Beare garden, which was built as well for playes, and
             Fencers prizes, as Bull Bayting besides, one in former time at Newington Buts....'<note
               type="foot"><ref target="https://ereed.org/records/bghop-ridp258075656/">Howes' Continuation of Stowe's, <title>Annales</title></ref>.</note></p>
-
-
-
         </div>
       </div>
     </front>
-    <group>
-           
+    <group>           
       <text type="record" xml:id="nwbts-rid12">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs>

@@ -11,7 +11,7 @@
                         America</orgName></funder>
                 <funder><orgName>Social Sciences and Humanities Research Council, Ottawa,
                         Canada</orgName></funder>
-                <editor>Test Editor</editor>
+                <editor>Test</editor>
                 <respStmt>
                     <persName xml:id="JC">James Cummings</persName>
                     <orgName>Newcastle University</orgName>
@@ -21,34 +21,9 @@
                 <respStmt>
                     <persName xml:id="PG">Patrick Gregory</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Associate Editor</resp>
-                    <resp>Latinist</resp>
                     <resp>Paleographer</resp>
                     <resp>Translator</resp>
                     <resp>Glossarian</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Alexandra Atiya</persName>
-                    <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Bibliographer</resp>
-                    <resp>Latin Glossarian</resp>
-                    <resp>Translation Checker</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Stuart Palmer</persName>
-                    <orgName>Cambridge University</orgName>
-                    <resp>On-Site Checker</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Alan H. Nelson</persName>
-                    <orgName>University of California, Berkeley</orgName>
-                    <resp>On-Site Checker</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Peter Greenfield</persName>
-                    <orgName>University of Puget Sound</orgName>
-                    <resp>On-Site Checker</resp>
-                    <resp>English Palaeographer</resp>
                 </respStmt>
                 <respStmt>
                     <persName>Tanya Hagen</persName>
@@ -57,11 +32,6 @@
                     <resp>Copy Editor</resp>
                     <resp>Project Manager</resp>
                     <resp>Proofreader</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Morgan Moore</persName>
-                    <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Content Checker</resp>
                 </respStmt>
                 <respStmt>
                     <persName>Stephanie Hovland</persName>
@@ -90,22 +60,9 @@
                     <persName>Illya Nokhrin</persName>
                     <orgName>Records of Early English Drama (REED)</orgName>
                     <resp>Research Associate</resp>
-                    <resp>Lead Digital Indexer</resp>
+                    <resp>Indexer, Entity Tagger</resp>
                     <resp>REED EATS taxonomy developer</resp>
                     <resp>REED EATS database maintainer</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Andrew Wiebe</persName>
-                    <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Research Assistant</resp>
-                    <resp>Indexer, Entity Tagger</resp>
-                    <resp>GIS Locations Manager</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Laina Southgate</persName>
-                    <orgName>Records of Early English Drama (REED)</orgName>
-                    <resp>Research Assistant</resp>
-                    <resp>Indexer, Entity Tagger</resp>
                 </respStmt>
                 <respStmt>
                     <persName xml:id="JN">Jamie Norrish</persName>
@@ -114,15 +71,14 @@
                     <resp>Technical Consultant</resp>
                 </respStmt>
                 <respStmt>
-                    <persName>Miguel Vieira</persName>
-                    <orgName>King's College London</orgName>
-                    <resp>Senior Developer</resp>
-                    <resp>Technical Consultant</resp>
+                    <persName>Sim Ong</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Bibliographic Assistant</resp>
                 </respStmt>
             </titleStmt>
             <editionStmt>
-                <edition> Version 1, released <date when-iso="2022-09-22">22 September 2022.</date>
-                    <!-- IN: CHANGE RELEASE DATE HERE -->
+                <!-- Release date to be changed here prior to publication --> 
+                <edition> Version 1, released <date when-iso="2024-02-29">29 February 2024.</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -135,10 +91,11 @@
                     </address>
                 </authority>
                 <availability>
-                    <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>, <date>2018</date></p>
+                    <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
+                        <date>2018</date></p>
                     <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed under a
-                        Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
-                        licence.</licence>
+                        Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA
+                        4.0) licence.</licence>
                 </availability>
             </publicationStmt>
             <seriesStmt>
@@ -152,7 +109,7 @@
         <encodingDesc>
             <listPrefixDef>
                 <prefixDef ident="eats" matchPattern="([0-9]+)"
-                    replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/">
+                    replacementPattern="http://ereed.org/$1/">
                     <p>URIs using the <code>eats</code> prefix are references to EATS entities.</p>
                 </prefixDef>
                 <prefixDef ident="gloss" matchPattern="([\S]+)" replacementPattern="../glossary.xml#$1">
@@ -160,7 +117,8 @@
                         glossary.xml file. For example, <code>gloss:histrio-1</code> dereferences to
                         <code>glossary.xml#histrio-1</code>.</p>
                 </prefixDef>
-                <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../taxonomy.xml#$1">
+                <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)"
+                    replacementPattern="../taxonomy.xml#$1">
                     <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the
                         taxonomy.xml file. For example, <code>taxon:church</code> dereferences to
                         <code>taxonomy.xml#church</code>.</p>
