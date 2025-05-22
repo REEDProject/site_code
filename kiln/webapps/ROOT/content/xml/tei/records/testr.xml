@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="testr">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Test</title>
+                <funder><orgName>Jackman Foundation, Toronto, Canada</orgName></funder>
+                <funder><orgName>National Endowment for the Humanities, Washington, DC, United States of
+                        America</orgName></funder>
+                <funder><orgName>Social Sciences and Humanities Research Council, Ottawa,
+                        Canada</orgName></funder>
+                <editor>Test Editor</editor>
+                <respStmt>
+                    <persName xml:id="JC">James Cummings</persName>
+                    <orgName>Newcastle University</orgName>
+                    <resp>TEI Schema Designer</resp>
+                    <resp>Technical Consultant</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="PG">Patrick Gregory</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Associate Editor</resp>
+                    <resp>Latinist</resp>
+                    <resp>Paleographer</resp>
+                    <resp>Translator</resp>
+                    <resp>Glossarian</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Alexandra Atiya</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Bibliographer</resp>
+                    <resp>Latin Glossarian</resp>
+                    <resp>Translation Checker</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Stuart Palmer</persName>
+                    <orgName>Cambridge University</orgName>
+                    <resp>On-Site Checker</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Alan H. Nelson</persName>
+                    <orgName>University of California, Berkeley</orgName>
+                    <resp>On-Site Checker</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Peter Greenfield</persName>
+                    <orgName>University of Puget Sound</orgName>
+                    <resp>On-Site Checker</resp>
+                    <resp>English Palaeographer</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Tanya Hagen</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Bibliographer</resp>
+                    <resp>Copy Editor</resp>
+                    <resp>Project Manager</resp>
+                    <resp>Proofreader</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Morgan Moore</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Content Checker</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Stephanie Hovland</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>UK Paleographer</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Sally-Beth MacLean</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Principal Investigator, SSHRC grant</resp>
+                    <resp>Director of Research</resp>
+                    <resp>General Editor</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Emily Mayne</persName>
+                    <orgName>University of East Anglia, University of St Andrews</orgName>
+                    <resp>Paleographer</resp>
+                    <resp>Translator</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Byron Moldofsky</persName>
+                    <orgName>University of Toronto</orgName>
+                    <resp>Cartographer</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Illya Nokhrin</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Research Associate</resp>
+                    <resp>Lead Digital Indexer</resp>
+                    <resp>REED EATS taxonomy developer</resp>
+                    <resp>REED EATS database maintainer</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Andrew Wiebe</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Research Assistant</resp>
+                    <resp>Indexer, Entity Tagger</resp>
+                    <resp>GIS Locations Manager</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Laina Southgate</persName>
+                    <orgName>Records of Early English Drama (REED)</orgName>
+                    <resp>Research Assistant</resp>
+                    <resp>Indexer, Entity Tagger</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="JN">Jamie Norrish</persName>
+                    <resp>Programmer</resp>
+                    <resp>TEI Schema Designer</resp>
+                    <resp>Technical Consultant</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Miguel Vieira</persName>
+                    <orgName>King's College London</orgName>
+                    <resp>Senior Developer</resp>
+                    <resp>Technical Consultant</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition> Version 1, released <date when-iso="2022-09-22">22 September 2022.</date>
+                    <!-- IN: CHANGE RELEASE DATE HERE -->
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <authority><orgName>Records of Early English Drama (REED)</orgName>
+                    <address>
+                        <addrLine>University of Toronto</addrLine>
+                        <addrLine>170 St George Street, Suite 810</addrLine>
+                        <addrLine>Toronto, Ontario, Canada</addrLine>
+                        <addrLine>M5R 2M8</addrLine>
+                    </address>
+                </authority>
+                <availability>
+                    <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>, <date>2018</date></p>
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed under a
+                        Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+                        licence.</licence>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title>Records of Early English Drama</title>
+            </seriesStmt>
+            <sourceDesc>
+                <p>Born digital. Information on original sources for transcriptions can be accessed via
+                    taxonomy.xml.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <listPrefixDef>
+                <prefixDef ident="eats" matchPattern="([0-9]+)"
+                    replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/">
+                    <p>URIs using the <code>eats</code> prefix are references to EATS entities.</p>
+                </prefixDef>
+                <prefixDef ident="gloss" matchPattern="([\S]+)" replacementPattern="../glossary.xml#$1">
+                    <p>Private URIs using the <code>gloss</code> prefix are pointers to entities in the
+                        glossary.xml file. For example, <code>gloss:histrio-1</code> dereferences to
+                        <code>glossary.xml#histrio-1</code>.</p>
+                </prefixDef>
+                <prefixDef ident="taxon" matchPattern="([A-Za-z0-9_-]+)" replacementPattern="../taxonomy.xml#$1">
+                    <p>Private URIs using the <code>taxon</code> prefix are pointers to entities in the
+                        taxonomy.xml file. For example, <code>taxon:church</code> dereferences to
+                        <code>taxonomy.xml#church</code>.</p>
+                </prefixDef>
+            </listPrefixDef>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+                <language ident="lat">Latin</language>
+                <language ident="ita">Italian</language>
+                <language ident="fra">French</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <group>
+            <text type="record" xml:id="testr-rid168" ana="taxon:Church_Parish">
+                <body>
+                    <head><rs ref="eats:2273" type="Place_County">Suffolk</rs>, <rs ref="eats:368526"
+                            type="Place_PA_Settlement">Long Melford</rs>
+                        <date from-iso="1547" to-iso="1548">1547–8</date>
+                        <seg ana="taxon:SUCW06">SUCW06</seg></head>
+                    <div xml:lang="eng" type="transcription" xml:id="testr-rid168-transcription">
+                        <div>
+                            <head>f 26 <supplied>(24 June 1547–21 October 1548) (Receipts)</supplied></head>
+                            <pb n="26" type="folio"/>
+                            
+                            <gap reason="omitted"/>
+                            
+                            <table>
+                                <row>
+                                    <cell>It<ex>em</ex> sold <rs ref="eats:21537 eats:368485" type="Drama_Character">sent
+                                            Nycholas</rs>
+                                        <rs ref="eats:71388" type="Thing_TheatricalCostume">cote</rs> &amp; <rs ref="eats:302360"
+                                            type="Thing_TheatricalCostume">woode</rs> greately eatyn w<ex>y</ex>t<ex>h</ex>
+                                        moth<ex>es</ex></cell>
+                                    <cell rend="right">iij s. iiij d.</cell>
+                                </row>
+                                <row>
+                                    <cell>It<ex>em</ex> sold &amp; toke of the <rs ref="eats:366600"
+                                            type="Thing_ClothingMaterials">sylver</rs> &amp; <rs ref="eats:366618"
+                                                type="Thing_ClothingMaterials">stonys</rs> &amp; sold them by the selffe</cell>
+                                    <cell rend="right">iij s. iiij d.</cell>
+                                </row>
+                                <row>
+                                    <cell>It<ex>em</ex> sold the bare <rs ref="eats:302317" type="Thing_TheatricalCostume"
+                                            >myt<ex>er</ex></rs> vnto a <rs ref="eats:56779" type="Collective_Occupations"
+                                                >paynt<ex>er</ex></rs> of <rs ref="eats:366555" type="Place_F_TownHall">sudbury
+                                                    hall</rs></cell>
+                                    <cell rend="right">xx d.</cell>
+                                </row>
+                            </table>
+                            
+                            <gap reason="omitted"/>
+                        </div>
+                    </div>
+                    <div type="endnote">
+                        <p> This garment and mitre had once been used by the <rs ref="eats:21537"
+                                type="Entertainment_FolkCustom">boy bishop</rs> in <rs ref="eats:368526"
+                                    type="Place_PA_Settlement">Long Melford</rs>, in ceremonies abolished under the brief reign
+                            of Edward VI. This account was made by <rs ref="eats:3576" type="Collective_Office"
+                                >churchwardens</rs>
+                            <rs ref="eats:468877" type="Person_Male">William Dyke</rs> and <rs ref="eats:468942"
+                                type="Person_Male">William Marchall</rs>. </p>
+                    </div>
+                </body>
+            </text>
+        </group>
+    </text>
+</TEI>
