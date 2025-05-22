@@ -801,13 +801,7 @@
       </div>
     </front>
     <group>
-      <!-- IN: Skip indexing this record for now --> 
-      <text type="record" xml:id="nwbts-rid25" copyOf="rosep.xml#rosep-ridm90700072">
-        <body>
-          <p/>
-        </body>
-      </text>
-      
+           
       <text type="record" xml:id="nwbts-rid12">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs>
@@ -883,6 +877,7 @@
           </div>
         </body>
       </text>
+
       <text type="record" xml:id="nwbts-rid13">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs>
@@ -969,6 +964,12 @@
             <p>For an abstract of the document and details of its transcription history,  see the related EMLoT <ref target="https://emlot.org/db/record/event/404/index.html">event record</ref>.</p>
             
           </div>
+        </body>
+      </text>
+      <!-- IN: Skip indexing this record for now --> 
+      <text type="record" xml:id="nwbts-rid25" copyOf="rosep.xml#rosep-ridm90700072">
+        <body>
+          <p/>
         </body>
       </text>
       <text type="record" xml:id="nwbts-rid14">
