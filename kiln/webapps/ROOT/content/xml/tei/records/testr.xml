@@ -229,6 +229,94 @@
                     </div>
                 </body>
             </text>
+            <text type="record" xml:id="testr-rid13" ana="taxon:Church_Parish">
+                <body>
+                    <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs>
+                        <date when-iso="1576">1576</date>
+                        <seg ana="taxon:NBSKCS">NBSKCS</seg></head>
+                    <div xml:lang="eng" type="transcription" xml:id="testr-rid13-transcription">
+                        <div>
+                            <head>f 87v <supplied>(13 July)</supplied></head>
+                            <pb n="87v" type="folio" facs="#NBSKCSf87v"/>
+                            
+                            <gap reason="omitted"/>
+                            
+                            <ab rend="center"><rs ref="eats:231618" type="Place_PA_Settlement">Newinton</rs></ab>
+                            
+                            <table>
+                                <row>
+                                    <cell>ffirste<note type="marginal" place="margin_left">Savage &amp; Hilles</note>
+                                        p<ex>re</ex>sente <rs ref="eats:202508" type="Person_Male">Ierome Savadge</rs> &amp; <rs ref="eats:486905" type="Person_Male">Iohn Hilles</rs> to skowre &amp; caste
+                                        deeper x roddes of their com<ex>m</ex>on <rs ref="eats:487554" type="Place_F_WaterFeature">shewer</rs> leadinge from the grate at
+                                        <rs ref="eats:227741" type="Place_F_Playhouse">newington Butt</rs><ex>es</ex> to the ende of Ierome Savag<ex>es</ex> orchard corner
+                                        beinge more or les to be done by the x<hi rend="superscript">th</hi> daye of
+                                        October nexte comynge vppon paine of xx d. for euerye rod then vndone</cell>
+                                    <cell rend="right">xx d.</cell>
+                                </row>
+                                <row>
+                                    <cell/>
+                                    <cell rend="right">x<hi rend="superscript">o</hi> Octob<ex>e</ex>r
+                                        don<ex>e</ex></cell>
+                                </row>
+                            </table>
+                            
+                            <table>
+                                <row>
+                                    <cell>It<ex>e</ex>m<note type="marginal" place="margin_left"
+                                            >thenhabitant<ex>es</ex> of Newinton</note>we p<ex>re</ex>sente
+                                        thenhabitance of ‸<add place="above">the p<ex>ar</ex>ishe of</add> Newington to
+                                        clense &amp; caste deeper one rodde before the grate of Ierome Savadges doore to
+                                        be done by the x<hi rend="superscript">th</hi> of October next comynge vpon
+                                        paine of vj s. viij d. yf it be then vndone</cell>
+                                    <cell rend="right"> vj s. viij d.</cell>
+                                </row>
+                                <row>
+                                    <cell/>
+                                    <cell rend="right">xx<hi rend="superscript">o</hi> Octob<ex>e</ex>r
+                                        don<ex>e</ex></cell>
+                                </row>
+                            </table>
+                            
+                            <table>
+                                <row>
+                                    <cell>We<note type="marginal" place="margin_left">Hilles &amp;
+                                            Cockowe</note>p<ex>re</ex>sente Iohn hills &amp; <rs ref="eats:486966" type="Person_Male">Thomas Cockowe</rs> to skowre
+                                        &amp; caste deeper xv pooles of the com<ex>m</ex>on shewer leadinge from Ierome
+                                        Savag<ex>es</ex> orchard corner to barl<add place="above"
+                                            >owes</add><del><damage><gap unit="chars" extent="2"/></damage>es</del>
+                                        grounde be it more or les to be done by the x<hi rend="superscript">th</hi> daye
+                                        of October next comynge vpon paine of xx d. euery rod then vndone</cell>
+                                    <cell rend="right">xx d.</cell>
+                                </row>
+                                <row>
+                                    <cell/>
+                                    <cell rend="right">xi<hi rend="superscript">o</hi> Octob<ex>e</ex>r
+                                        don<ex>e</ex></cell>
+                                </row>
+                            </table>
+                            
+                            <gap reason="omitted"/>
+                        </div>
+                    </div>
+                    <div type="endnote">
+                        <p>Jerome Savage (d. 1587) is known to have been an actor in the earl of Warwick's
+                            troupe between 1575–9. See further the <ref target="https://dev.ereed.org/collections/nwbts/playhouse/">Introduction: History of the
+                                Playhouse</ref>.</p>
+                        
+                        <p>John Hilles' property apparently lay to the south of the 'common sewer,' which ran
+                            between them on the south edge of Savage's lot (Ingram <title>Business of
+                                Playing</title>, pp 160–2). For Thomas Cuckowe, named in the third entry, see the
+                            <ref target="https://dev.ereed.org/records/nwbts-rid5/">1590 lease</ref>, CCA: Register W, CCA-DCc- Register/W, ff
+                            36v–7.</p>
+                        
+                        <p>On 21 July 1576 (f 90v), Jerome Savage's name appears listed with others 'which
+                            performed' tasks.</p>
+                        
+                        <p>For an abstract of the document and details of its transcription history,  see the related EMLoT <ref target="https://emlot.org/db/record/event/404/index.html">event record</ref>.</p>
+                        
+                    </div>
+                </body>
+            </text>
         </group>
     </text>
 </TEI>
