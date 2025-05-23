@@ -51,7 +51,8 @@
     </doc>
   </xsl:template>
 
-  <xsl:template match="tei:text[@type='record'][not(@copyOf)]">
+  <!-- Template for records with @corresp -->
+  <xsl:template match="tei:text[@type='record'][@corresp][not(@copyOf)]">
     <xsl:variable name="free-text">
       <xsl:apply-templates mode="free-text" select="." />
       <xsl:text> </xsl:text>
@@ -60,7 +61,7 @@
     <xsl:if test="normalize-space($free-text)">
       <doc>
         <debug>
-          <message>Processing original record: <xsl:value-of select="@xml:id"/></message>
+          <message>Processing record with @corresp: <xsl:value-of select="@xml:id"/></message>
           <message>other_collection_ids: <xsl:value-of select="@other_collection_ids"/></message>
         </debug>
         <field name="file_path">
@@ -100,6 +101,82 @@
             <xsl:value-of select="." />
           </field>
         </xsl:for-each>
+        <field name="record_title">
+          <xsl:value-of select="normalize-space(tei:body/tei:head/tei:bibl[1]/tei:title)" />
+        </field>
+        <field name="record_location">
+          <!-- QAZ: Use EATSML name? -->
+          <xsl:for-each select="tei:body/tei:head/tei:rs">
+            <xsl:value-of select="normalize-space()" />
+            <xsl:if test="position() != last()">
+              <xsl:text>, </xsl:text>
+            </xsl:if>
+          </xsl:for-each>
+        </field>
+        <field name="record_location_id">
+          <xsl:text>entity-</xsl:text>
+          <xsl:variable name="location_ref">
+            <xsl:choose>
+              <xsl:when test="tei:body/tei:head/tei:rs[@role='recMapLoc']">
+                <xsl:value-of select="tei:body/tei:head/tei:rs[@role='recMapLoc']/@ref" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="tei:body/tei:head/tei:rs[position()=last()]/@ref" />
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:variable>
+          <xsl:value-of select="substring-before(substring-after($location_ref, '/entity/'), '/')" />
+        </field>
+        <field name="record_shelfmark">
+          <xsl:value-of select="tei:body/tei:head/tei:bibl[1]/tei:span[@type='shelfmark'][@subtype='text']" />
+        </field>
+        <xsl:apply-templates select="tei:body/tei:head/tei:date" />
+        <field name="record_date_display">
+          <xsl:value-of select="tei:body/tei:head/tei:date" />
+        </field>
+        <field name="text">
+          <xsl:value-of select="normalize-space($free-text)" />
+        </field>
+        <xsl:apply-templates mode="record_type"
+                             select="tei:index[@indexName='record_type']/tei:term" />
+        <xsl:apply-templates mode="entity-mention"
+                             select=".//tei:*[local-name()=('name', 'rs')]
+                                     [@ref]" />
+        <xsl:apply-templates mode="entity-mention"
+                             select="tei:index[@indexName='associated_entity']/tei:term" />
+        <xsl:apply-templates mode="entity-facet"
+                             select=".//tei:*[local-name()=('name', 'rs')]
+                                     [@ref]" />
+        <xsl:apply-templates mode="entity-facet"
+                             select="tei:index[@indexName='associated_entity']/tei:term" />
+      </doc>
+    </xsl:if>
+  </xsl:template>
+
+  <!-- Template for records without @corresp -->
+  <xsl:template match="tei:text[@type='record'][not(@corresp)][not(@copyOf)]">
+    <xsl:variable name="free-text">
+      <xsl:apply-templates mode="free-text" select="." />
+      <xsl:text> </xsl:text>
+      <xsl:apply-templates mode="free-text-notes" select=".//tei:note" />
+    </xsl:variable>
+    <xsl:if test="normalize-space($free-text)">
+      <doc>
+        <debug>
+          <message>Processing record without @corresp: <xsl:value-of select="@xml:id"/></message>
+        </debug>
+        <field name="file_path">
+          <xsl:value-of select="$file-path" />
+        </field>
+        <field name="document_id">
+          <xsl:value-of select="@xml:id" />
+        </field>
+        <field name="document_type">
+          <xsl:text>record</xsl:text>
+        </field>
+        <field name="collection_id">
+          <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id" />
+        </field>
         <field name="record_title">
           <xsl:value-of select="normalize-space(tei:body/tei:head/tei:bibl[1]/tei:title)" />
         </field>
