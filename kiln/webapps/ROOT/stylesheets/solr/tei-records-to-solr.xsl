@@ -63,6 +63,11 @@
         <debug>
           <message>Processing record with @corresp: <xsl:value-of select="@xml:id"/></message>
           <message>other_collection_ids: <xsl:value-of select="@other_collection_ids"/></message>
+          <message>Checking for records that copy this one...</message>
+          <xsl:for-each select="//tei:text[@type='record'][@copyOf][contains(@copyOf, concat('#', @xml:id))]">
+            <message>Found record that copies this one: <xsl:value-of select="@xml:id"/></message>
+            <message>Collection ID to add: <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id"/></message>
+          </xsl:for-each>
         </debug>
         <field name="file_path">
           <xsl:value-of select="$file-path" />
@@ -93,12 +98,10 @@
         <field name="collection_id">
           <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id" />
         </field>
-        <xsl:for-each select="tokenize(@other_collection_ids, '\s+')">
-          <debug>
-            <message>Adding collection_id: <xsl:value-of select="."/></message>
-          </debug>
+        <!-- Add collection IDs from records that copy this one -->
+        <xsl:for-each select="//tei:text[@type='record'][@copyOf][contains(@copyOf, concat('#', @xml:id))]">
           <field name="collection_id">
-            <xsl:value-of select="." />
+            <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id" />
           </field>
         </xsl:for-each>
         <field name="record_title">
@@ -228,6 +231,9 @@
       </doc>
     </xsl:if>
   </xsl:template>
+
+  <!-- Template for records with @copyOf - do nothing -->
+  <xsl:template match="tei:text[@type='record'][@copyOf]" />
 
   <xsl:template match="tei:date">
     <xsl:choose>
