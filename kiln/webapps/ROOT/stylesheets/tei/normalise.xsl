@@ -38,7 +38,7 @@
   </xsl:template>
 
   <!-- Expand URLs with a prefix into a full URL. -->
-  <xsl:template match="@ana|@ref|@sameAs|@target">
+  <xsl:template match="@ana|@ref|@sameAs|@target|@corresp">
     <xsl:variable name="context" select="parent::*" />
     <xsl:variable name="refs">
       <xsl:for-each select="tokenize(., '\s+')">

@@ -98,6 +98,10 @@
     </xsl:copy>
   </xsl:template>
 
+  <xsl:template match="kiln:added/tei:text[@type='record']" mode="record-addition">
+    <xsl:apply-templates select="tei:body/tei:head" />
+  </xsl:template>
+
   <xsl:template match="tei:*[@ana]" mode="#default referenced-record">
     <xsl:for-each select="tokenize(@ana, '\s+')">
       <xsl:call-template name="make-xinclude">
@@ -105,18 +109,54 @@
       </xsl:call-template>
     </xsl:for-each>
   </xsl:template>
-
-  <xsl:template match="tei:text[@sameAs]">
+  
+  <xsl:template match="tei:text[@copyOf]" priority="10">
+    <xsl:variable name="filepath" select="substring-before(@copyOf, '#')" />
+    <xsl:variable name="originalId" select="substring-after(@copyOf, '#')" />
+    <xsl:message>
+      <xsl:text>Processing copyOf reference: </xsl:text>
+      <xsl:value-of select="$filepath" />
+      <xsl:text>#</xsl:text>
+      <xsl:value-of select="$originalId" />
+    </xsl:message>
+    
+    <!-- Keep the original element with its ID -->
+    <xsl:copy>
+      <xsl:apply-templates select="@*" />
+      <!-- Add the referenced document's collection as an attribute -->
+      <xsl:attribute name="referenced_collection">
+        <xsl:value-of select="substring-before($filepath, '.xml')" />
+      </xsl:attribute>
+      <!-- Keep the original content -->
+      <xsl:apply-templates select="node()" />
+    </xsl:copy>
+  </xsl:template>
+  
+  <xsl:template match="tei:*[@copyOf]" priority="5">
+    <!-- Apply attributes first -->
+    <xsl:call-template name="make-xinclude">
+      <xsl:with-param name="url" select="@copyOf" />
+    </xsl:call-template>
+  </xsl:template>
+  
+  <xsl:template match="tei:text[@corresp]">
     <xsl:apply-templates select="@*|node()"/>
   </xsl:template>
 
-  <xsl:template match="tei:*[@sameAs]">
-    <xsl:call-template name="make-xinclude">
-      <xsl:with-param name="url" select="@sameAs" />
-    </xsl:call-template>
+  <xsl:template match="tei:*[@corresp]">
+    <xsl:variable name="context" select="." />
+    <xsl:copy>
+      <xsl:apply-templates select="@*" />
+      <xsl:for-each select="tokenize(@corresp, '\s+')">
+        <xsl:call-template name="make-xinclude">
+          <xsl:with-param name="url" select="." />
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:apply-templates select="node()" />
+    </xsl:copy>
   </xsl:template>
 
-  <xsl:template match="tei:*[@target]">
+  <xsl:template match="tei:text[@target]">
     <xsl:variable name="context" select="." />
     <xsl:copy>
       <xsl:apply-templates select="@*" />
@@ -153,17 +193,6 @@
   </xsl:template>
 
   <xsl:template match="@ana" />
-  <xsl:template match="tei:text/@sameAs">
-    <xsl:attribute name="other_collection_ids">
-      <xsl:for-each select="tokenize(., '\s+')">
-        <xsl:value-of select="substring-before(., '.xml')" />
-        <xsl:if test="position() != last()">
-          <xsl:text> </xsl:text>
-        </xsl:if>
-      </xsl:for-each>
-    </xsl:attribute>
-  </xsl:template>
-  <xsl:template match="@sameAs" />
 
   <!-- Referenced records just need the tei:body/tei:head to be copied
        across. We also need to expand the tei:seg in the tei:head in

@@ -963,11 +963,11 @@
         </body>
       </text>
       <!-- IN: Skip indexing this record for now --> 
-      <!--<text type="record" xml:id="nwbts-rid25" copyOf="rosep.xml#rosep-ridm90700072">
+      <text type="record" xml:id="nwbts-rid25" copyOf="rosep.xml#rosep-ridm90700072">
         <body>
           <p/>
         </body>
-      </text>-->
+      </text>
       <text type="record" xml:id="nwbts-rid14">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:231618" type="Place_PA_Settlement">Newington</rs>
