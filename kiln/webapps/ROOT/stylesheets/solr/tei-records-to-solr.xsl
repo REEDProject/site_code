@@ -346,7 +346,7 @@
     <xsl:apply-templates mode="free-text" />
   </xsl:template>
 
-  <xsl:template match="tei:text[@corresp]">
+  <xsl:template match="tei:text[@corresp][not(@type='record')]">
     <xsl:copy>
       <xsl:apply-templates select="@*" />
       <debug>
