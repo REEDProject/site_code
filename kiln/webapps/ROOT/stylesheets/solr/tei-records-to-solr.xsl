@@ -51,7 +51,7 @@
     </doc>
   </xsl:template>
 
-  <xsl:template match="tei:text[@type='record']">
+  <xsl:template match="tei:text[@type='record'][not(@copyOf)]">
     <xsl:variable name="free-text">
       <xsl:apply-templates mode="free-text" select="." />
       <xsl:text> </xsl:text>
@@ -59,6 +59,10 @@
     </xsl:variable>
     <xsl:if test="normalize-space($free-text)">
       <doc>
+        <debug>
+          <message>Processing original record: <xsl:value-of select="@xml:id"/></message>
+          <message>other_collection_ids: <xsl:value-of select="@other_collection_ids"/></message>
+        </debug>
         <field name="file_path">
           <xsl:value-of select="$file-path" />
         </field>
@@ -89,6 +93,9 @@
           <xsl:value-of select="/aggregation/tei/tei:TEI/@xml:id" />
         </field>
         <xsl:for-each select="tokenize(@other_collection_ids, '\s+')">
+          <debug>
+            <message>Adding collection_id: <xsl:value-of select="."/></message>
+          </debug>
           <field name="collection_id">
             <xsl:value-of select="." />
           </field>
