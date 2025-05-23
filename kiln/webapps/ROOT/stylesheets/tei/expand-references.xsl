@@ -142,6 +142,12 @@
   <xsl:template match="tei:text[@corresp]">
     <xsl:copy>
       <xsl:apply-templates select="@*" />
+      <debug>
+        <message>Processing @corresp value: <xsl:value-of select="@corresp"/></message>
+        <xsl:for-each select="tokenize(@corresp, '\s+')">
+          <message>Processing corresp value: <xsl:value-of select="."/></message>
+        </xsl:for-each>
+      </debug>
       <xsl:attribute name="other_collection_ids">
         <xsl:for-each select="tokenize(@corresp, '\s+')">
           <xsl:value-of select="substring-before(., '.xml')" />
@@ -150,6 +156,9 @@
           </xsl:if>
         </xsl:for-each>
       </xsl:attribute>
+      <debug>
+        <message>Final other_collection_ids: <xsl:value-of select="@other_collection_ids"/></message>
+      </debug>
       <xsl:apply-templates select="node()" />
     </xsl:copy>
   </xsl:template>

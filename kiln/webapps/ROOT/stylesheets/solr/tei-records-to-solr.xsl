@@ -5,8 +5,6 @@
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <xsl:import href="../tei/expand-references.xsl" />
-
   <!-- XSLT to convert a TEI document containing eREED records and
        full EATSML into a Solr index document. -->
 
@@ -262,6 +260,30 @@
 
   <xsl:template match="tei:note" mode="free-text-note">
     <xsl:apply-templates mode="free-text" />
+  </xsl:template>
+
+  <xsl:template match="tei:text[@corresp]">
+    <xsl:copy>
+      <xsl:apply-templates select="@*" />
+      <debug>
+        <message>Processing @corresp value: <xsl:value-of select="@corresp"/></message>
+        <xsl:for-each select="tokenize(@corresp, '\s+')">
+          <message>Processing corresp value: <xsl:value-of select="."/></message>
+        </xsl:for-each>
+      </debug>
+      <xsl:attribute name="other_collection_ids">
+        <xsl:for-each select="tokenize(@corresp, '\s+')">
+          <xsl:value-of select="substring-before(., '.xml')" />
+          <xsl:if test="position() != last()">
+            <xsl:text> </xsl:text>
+          </xsl:if>
+        </xsl:for-each>
+      </xsl:attribute>
+      <debug>
+        <message>Final other_collection_ids: <xsl:value-of select="@other_collection_ids"/></message>
+      </debug>
+      <xsl:apply-templates select="node()" />
+    </xsl:copy>
   </xsl:template>
 
 </xsl:stylesheet>
