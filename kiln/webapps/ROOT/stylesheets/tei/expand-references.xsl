@@ -111,23 +111,23 @@
   </xsl:template>
   
   <xsl:template match="tei:text[@copyOf]" priority="10">
-    <xsl:variable name="filepath" select="substring-before(@copyOf, '#')" />
-    <xsl:variable name="originalId" select="substring-after(@copyOf, '#')" />
-    <xsl:message>
-      <xsl:text>Processing copyOf reference: </xsl:text>
-      <xsl:value-of select="$filepath" />
-      <xsl:text>#</xsl:text>
-      <xsl:value-of select="$originalId" />
-    </xsl:message>
-    
-    <!-- Keep the original element with its ID -->
     <xsl:copy>
       <xsl:apply-templates select="@*" />
       <!-- Add the referenced document's collection as an attribute -->
       <xsl:attribute name="referenced_collection">
-        <xsl:value-of select="substring-before($filepath, '.xml')" />
+        <xsl:value-of select="substring-before(@copyOf, '.xml')" />
       </xsl:attribute>
-      <!-- Keep the original content -->
+      <!-- If there's a corresp attribute, add those collection IDs too -->
+      <xsl:if test="@corresp">
+        <xsl:attribute name="other_collection_ids">
+          <xsl:for-each select="tokenize(@corresp, '\s+')">
+            <xsl:value-of select="substring-before(substring-after(., '#'), '.xml')" />
+            <xsl:if test="position() != last()">
+              <xsl:text> </xsl:text>
+            </xsl:if>
+          </xsl:for-each>
+        </xsl:attribute>
+      </xsl:if>
       <xsl:apply-templates select="node()" />
     </xsl:copy>
   </xsl:template>
