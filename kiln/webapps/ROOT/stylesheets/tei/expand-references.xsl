@@ -144,7 +144,7 @@
       <xsl:apply-templates select="@*" />
       <xsl:attribute name="other_collection_ids">
         <xsl:for-each select="tokenize(@corresp, '\s+')">
-          <xsl:value-of select="substring-before(substring-after(., '#'), '.xml')" />
+          <xsl:value-of select="substring-before(., '.xml')" />
           <xsl:if test="position() != last()">
             <xsl:text> </xsl:text>
           </xsl:if>

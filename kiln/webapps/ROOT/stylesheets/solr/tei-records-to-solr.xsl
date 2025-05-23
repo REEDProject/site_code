@@ -5,6 +5,8 @@
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+  <xsl:import href="../tei/expand-references.xsl" />
+
   <!-- XSLT to convert a TEI document containing eREED records and
        full EATSML into a Solr index document. -->
 
