@@ -1,0 +1,2959 @@
+{
+    "nwbts-01-0001": {
+        "title": "Canterbury Cathedral Chapter Act Book",
+        "description": "Richard Hickes leases D&C lands at Newington for 60 years",
+        "record_id": "nwbts-rid26",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Lurklane",
+                        "place_type": "property",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "2152"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ],
+                                    [
+                                        -0.09923878456775777,
+                                        51.4947136204279
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington",
+                        "place_type": "settlement",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "https://www.genuki.org.uk/big/eng/SRY/Newington [accessed 14 February 2020]",
+                        "pk": "1391"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.100550651550293,
+                            51.49514488504163
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Deeds & Leases",
+        "time_period": "Early Days: 1566-1580",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1566-11-26",
+            "sort": "1566-11-26",
+            "display": "1566-11-26"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid26/"
+    },
+    "nwbts-01-0002": {
+        "title": "Canterbury Cathedral Chapter Act Book",
+        "description": "Richard Hickes' original 60-year lease surrendered, new indenture for 21 years created.",
+        "record_id": "nwbts-rid27",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Lurklane",
+                        "place_type": "property",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "2152"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ],
+                                    [
+                                        -0.09923878456775777,
+                                        51.4947136204279
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington",
+                        "place_type": "settlement",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "https://www.genuki.org.uk/big/eng/SRY/Newington [accessed 14 February 2020]",
+                        "pk": "1391"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.100550651550293,
+                            51.49514488504163
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Deeds & Leases",
+        "time_period": "Early Days: 1566-1580",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1573-09-29",
+            "sort": "1573-09-29",
+            "display": "1573-09-29"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid27/"
+    },
+    "nwbts-01-0003": {
+        "title": "Privy Council Letter to the Sheriff and JPs of Surrey",
+        "description": "Privy Council writes Surrey justices of the peace to ban plays due to plague",
+        "record_id": "nwbts-rid12",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Hampton Court",
+                        "place_type": "residence",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1608"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.3378344576677799,
+                            51.40359739236717
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Early Days: 1566-1580",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1574-11-15",
+            "sort": "1574-11-15",
+            "display": "1574-11-15"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid12/"
+    },
+    "nwbts-01-0004": {
+        "title": "Court of Requests: Jerome Savage v. Peter Hunningborne et al",
+        "description": "Richard Hickes assigns Jerome Savage new sub-lease for Lurklane property",
+        "record_id": "nwbts-rid7",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Lurklane",
+                        "place_type": "property",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "2152"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ],
+                                    [
+                                        -0.09923878456775777,
+                                        51.4947136204279
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Sewer south of Lurklane property",
+                        "place_type": "other site",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 0,
+                        "symbol_flag": 0,
+                        "notes": "",
+                        "pk": "2153"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09913008794507251,
+                                        51.49434663195413
+                                    ],
+                                    [
+                                        -0.09912350936577713,
+                                        51.49432335145311
+                                    ],
+                                    [
+                                        -0.09982654887067482,
+                                        51.49428447184788
+                                    ],
+                                    [
+                                        -0.09983277857159144,
+                                        51.494306517745265
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Deeds & Leases",
+        "time_period": "Early Days: 1566-1580",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1576-03-25",
+            "sort": "1576-03-25",
+            "display": "1576-03-25"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid7/"
+    },
+    "nwbts-01-0005": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court Minutes and Orders",
+        "description": "Jerome Savage and John Hilles ordered to repair the common sewer leading from the grate of the Butts to the end of Savage's orchard corner",
+        "record_id": "nwbts-rid13",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Lurklane",
+                        "place_type": "property",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "2152"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ],
+                                    [
+                                        -0.09923878456775777,
+                                        51.4947136204279
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Sewer south of Lurklane property",
+                        "place_type": "other site",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 0,
+                        "symbol_flag": 0,
+                        "notes": "",
+                        "pk": "2153"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09913008794507251,
+                                        51.49434663195413
+                                    ],
+                                    [
+                                        -0.09912350936577713,
+                                        51.49432335145311
+                                    ],
+                                    [
+                                        -0.09982654887067482,
+                                        51.49428447184788
+                                    ],
+                                    [
+                                        -0.09983277857159144,
+                                        51.494306517745265
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Early Days: 1566-1580",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1576-07-13",
+            "sort": "1576-07-13",
+            "display": "1576-07-13"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid13/"
+    },
+    "nwbts-01-0006": {
+        "title": "Court of Requests: Jerome Savage v. Peter Hunningborne et al",
+        "description": "Jerome Savage launches court case against Peter Hunningbrone",
+        "record_id": "nwbts-rid7",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Lurklane",
+                        "place_type": "property",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "2152"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ],
+                                    [
+                                        -0.09923878456775777,
+                                        51.4947136204279
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Early Days: 1566-1580",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": "low",
+            "when": "1577-04",
+            "sort": "1577-04",
+            "display": "1577-04"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid7/"
+    },
+    "nwbts-01-0007": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court Minutes and Orders",
+        "description": "Jerome Savage and John Hilles ordered to repair their part of the common sewer",
+        "record_id": "nwbts-rid14",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Lurklane",
+                        "place_type": "property",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "2152"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ],
+                                    [
+                                        -0.09923878456775777,
+                                        51.4947136204279
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Sewer south of Lurklane property",
+                        "place_type": "other site",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 0,
+                        "symbol_flag": 0,
+                        "notes": "",
+                        "pk": "2153"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09913008794507251,
+                                        51.49434663195413
+                                    ],
+                                    [
+                                        -0.09912350936577713,
+                                        51.49432335145311
+                                    ],
+                                    [
+                                        -0.09982654887067482,
+                                        51.49428447184788
+                                    ],
+                                    [
+                                        -0.09983277857159144,
+                                        51.494306517745265
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Early Days: 1566-1580",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1577-07-05",
+            "sort": "1577-07-05",
+            "display": "1577-07-05"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid14/"
+    },
+    "nwbts-01-0008": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court Minutes and Orders",
+        "description": "Jerome Savage and John Hilles ordered to repair their part of the common sewer",
+        "record_id": "nwbts-rid15",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Lurklane",
+                        "place_type": "property",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "2152"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ],
+                                    [
+                                        -0.09923878456775777,
+                                        51.4947136204279
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Sewer south of Lurklane property",
+                        "place_type": "other site",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 0,
+                        "symbol_flag": 0,
+                        "notes": "",
+                        "pk": "2153"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09913008794507251,
+                                        51.49434663195413
+                                    ],
+                                    [
+                                        -0.09912350936577713,
+                                        51.49432335145311
+                                    ],
+                                    [
+                                        -0.09982654887067482,
+                                        51.49428447184788
+                                    ],
+                                    [
+                                        -0.09983277857159144,
+                                        51.494306517745265
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Early Days: 1566-1580",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1578-11-03",
+            "sort": "1578-11-03",
+            "display": "1578-11-03"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid15/"
+    },
+    "nwbts-01-0009": {
+        "title": "Privy Council Orders regarding Plague",
+        "description": "Privy Council writes Surrey justices of the peace to restrain 'certen plays' in Southwark",
+        "record_id": "nwbts-rid10",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Hampton Court",
+                        "place_type": "residence",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1608"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.3378344576677799,
+                            51.40359739236717
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Theatre Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1614"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07982475069439197,
+                            51.52456411521703
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Curtain Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1606"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.08040249318621445,
+                            51.523016418141054
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Early Days: 1566-1580",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1578-11-10",
+            "sort": "1578-11-10",
+            "display": "1578-11-10"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid10/"
+    },
+    "nwbts-01-0010": {
+        "title": "Privy Council Letter to the JPs of Surrey",
+        "description": "Privy Council writes to Surrey justices of the peace about playing despite recent order forbidding plays within the City",
+        "record_id": "nwbts-rid11",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Westminster Palace",
+                        "place_type": "residence",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 1297,
+                        "patrons_label_flag": 3,
+                        "symbol_flag": 3,
+                        "notes": "",
+                        "pk": "2261"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.125527381896979,
+                            51.49937819917337
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Early Days: 1566-1580",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1580-05-13",
+            "sort": "1580-05-13",
+            "display": "1580-05-13"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid11/"
+    },
+    "nwbts-01-0011": {
+        "title": "Canterbury Cathedral Chapter Act Book",
+        "description": "Peter Hunningborne granted lease of gardens and grounds adjoining the playhouse.",
+        "record_id": "nwbts-rid3",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Deeds & Leases",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1582-06-01",
+            "sort": "1582-06-01",
+            "display": "1582-06-01"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid3/"
+    },
+    "nwbts-01-0012": {
+        "title": "Mayor's Order v. Playgoing on the Sabbath",
+        "description": "Mayor of London issues order against playgoing, animal baiting, and other games on the Sabbath",
+        "record_id": "bghop-ridp269496296",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Guildhall",
+                        "place_type": "guildhall",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 1272,
+                        "patrons_label_flag": 3,
+                        "symbol_flag": 3,
+                        "notes": "",
+                        "pk": "2154"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09198045678203931,
+                            51.515913612459
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Bear Garden 3",
+                        "place_type": "arena",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "594"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09575081078833055,
+                            51.50795390256948
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Theatre Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1614"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07982475069439197,
+                            51.52456411521703
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Curtain Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1606"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.08040249318621445,
+                            51.523016418141054
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1582/3-01-16",
+            "sort": "1583-01-16",
+            "display": "1582/3-01-16"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/bghop-ridp269496296/"
+    },
+    "nwbts-01-0013": {
+        "title": "Privy Council Letters regarding Newington",
+        "description": "Privy Council writes to Surrey justices of the peace to restrain playing in Newington due to plague concerns",
+        "record_id": "nwbts-rid9",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Guildhall",
+                        "place_type": "guildhall",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 1272,
+                        "patrons_label_flag": 3,
+                        "symbol_flag": 3,
+                        "notes": "",
+                        "pk": "2154"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09198045678203931,
+                            51.515913612459
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1586-05-11",
+            "sort": "1586-05-11",
+            "display": "1586-05-11"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid9/"
+    },
+    "nwbts-01-0014": {
+        "title": "Privy Council Letter restraining Plays",
+        "description": "Privy Council writes to mayor of London to restrain plays until after 24 August",
+        "record_id": "rosep-ridm92788552",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Nonsuch Palace",
+                        "place_type": "residence",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 3,
+                        "symbol_flag": 3,
+                        "notes": "Location determined via Martin Biddle, \"Nonsuch Palace: The Material Culture of a Noble Restoration Household\", figure 2 (p3) in conjunction with OSmaps location for Nonsuch palace (site of). Note that this location differs from the OpenStreetMap location, which seems to be incorrect given the sources listed here.",
+                        "pk": "2131"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.23713946342468306,
+                            51.35377427458364
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Theatre Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1614"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07982475069439197,
+                            51.52456411521703
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536202,
+                            51.50729173227136
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Curtain Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1606"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.08040249318621445,
+                            51.523016418141054
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1587-05-07",
+            "sort": "1587-05-07",
+            "display": "1587-05-07"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/rosep-ridm92788552/"
+    },
+    "nwbts-01-0015": {
+        "title": "Indentures of Lease",
+        "description": "35 acre Newington property redemised to Richard Cuckowe. Lurklane excepted via sub-lease to Peter Hunningborne.",
+        "record_id": "nwbts-rid5",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington",
+                        "place_type": "settlement",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "https://www.genuki.org.uk/big/eng/SRY/Newington [accessed 14 February 2020]",
+                        "pk": "1391"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.100550651550293,
+                            51.49514488504163
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Lurklane",
+                        "place_type": "property",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "2152"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ],
+                                    [
+                                        -0.09923878456775777,
+                                        51.4947136204279
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Deeds & Leases",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1590-11-30",
+            "sort": "1590-11-30",
+            "display": "1590-11-30"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid5/"
+    },
+    "nwbts-01-0016": {
+        "title": "Warrant from the Privy Council",
+        "description": "Privy Council lifts restraint of playing at Rose Playhouse",
+        "record_id": "rosep-ridm90700072",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536202,
+                            51.50729173227136
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": "low",
+            "when": 1590,
+            "sort": 1590,
+            "display": 1590
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/rosep-ridm90700072/"
+    },
+    "nwbts-01-0017": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court Minutes and Orders",
+        "description": "Peter Hunningborne ordered to open the sluice by Newington Butts Playhouse",
+        "record_id": "nwbts-rid16",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Sewer south of Lurklane property",
+                        "place_type": "other site",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 0,
+                        "symbol_flag": 0,
+                        "notes": "",
+                        "pk": "2153"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09913008794507251,
+                                        51.49434663195413
+                                    ],
+                                    [
+                                        -0.09912350936577713,
+                                        51.49432335145311
+                                    ],
+                                    [
+                                        -0.09982654887067482,
+                                        51.49428447184788
+                                    ],
+                                    [
+                                        -0.09983277857159144,
+                                        51.494306517745265
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1590/1-02-26",
+            "sort": "1591-02-26",
+            "display": "1590/1-02-26"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid16/"
+    },
+    "nwbts-01-0018": {
+        "title": "Privy Council Letter to the Lord Mayor and JPs of Middlesex and Surrey",
+        "description": "Privy Council writes to mayor of London to restrain plays on Thursdays and Sundays so that bearbaiting could proceed without competition",
+        "record_id": "rosep-ridm91625448",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Greenwich Palace",
+                        "place_type": "residence",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 3,
+                        "symbol_flag": 3,
+                        "notes": "Point placed on location of the great hall, as referenced in Julian Bowsher, \"The Chapel Royal at Greenwich Palace\", plate 16A, pg. 162.",
+                        "pk": "2132"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.00526249408721924,
+                            51.48388374496173
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Bear Garden 3",
+                        "place_type": "arena",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "594"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09575081078833055,
+                            51.50795390256948
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Curtain Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1606"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.08040249318621445,
+                            51.523016418141054
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Theatre Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1614"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07982475069439197,
+                            51.52456411521703
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536202,
+                            51.50729173227136
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1591-07-25",
+            "sort": "1591-07-25",
+            "display": "1591-07-25"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/rosep-ridm91625448/"
+    },
+    "nwbts-01-0019": {
+        "title": "Order regarding Plague",
+        "description": "Privy Council writes to mayor of London to restrain plays within 7 miles of the city due to plague",
+        "record_id": "nwbts-rid24",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Hampton Court",
+                        "place_type": "residence",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1608"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.3378344576677799,
+                            51.40359739236717
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Bear Garden 3",
+                        "place_type": "arena",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "594"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09575081078833055,
+                            51.50795390256948
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Curtain Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1606"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.08040249318621445,
+                            51.523016418141054
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Theatre Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1614"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07982475069439197,
+                            51.52456411521703
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536202,
+                            51.50729173227136
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1592/3-01-28",
+            "sort": "1593-01-28",
+            "display": "1592/3-01-28"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid24/"
+    },
+    "nwbts-01-0020": {
+        "title": "Privy Council Letter to the Lord Mayor",
+        "description": "Privy Council writes to mayor of London to restrain plays within 5 miles of the city due to plague",
+        "record_id": "rosep-ridm93271400",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Hampton Court",
+                        "place_type": "residence",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1608"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.3378344576677799,
+                            51.40359739236717
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Bear Garden 3",
+                        "place_type": "arena",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "594"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09575081078833055,
+                            51.50795390256948
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Curtain Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1606"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.08040249318621445,
+                            51.523016418141054
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Theatre Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1614"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07982475069439197,
+                            51.52456411521703
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536202,
+                            51.50729173227136
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1593/4-02-03",
+            "sort": "1594-02-03",
+            "display": "1593/4-02-03"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/rosep-ridm93271400/"
+    },
+    "nwbts-01-0021": {
+        "title": "Canterbury Cathedral Chapter Act Book",
+        "description": "Lurklane leased to Paul Buck",
+        "record_id": "nwbts-rid4",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Lurklane",
+                        "place_type": "property",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "2152"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ],
+                                    [
+                                        -0.09923878456775777,
+                                        51.4947136204279
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Deeds & Leases",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1594-03-05",
+            "sort": "1594-03-05",
+            "display": "1594-03-05"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid4/"
+    },
+    "nwbts-01-0023": {
+        "title": "Henslowe's Diary",
+        "description": "Esther and Ahasuerus performed at Newington Butts playhouse",
+        "record_id": "nwbts-rid8",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Performance",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1594-06-03",
+            "sort": "1594-06-03",
+            "display": "1594-06-03"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid8/"
+    },
+    "nwbts-01-0024": {
+        "title": "Henslowe's Diary",
+        "description": "Jew of Malta performed at Newington Butts playhouse",
+        "record_id": "nwbts-rid8",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Performance",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1594-06-04",
+            "sort": "1594-06-04",
+            "display": "1594-06-04"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid8/"
+    },
+    "nwbts-01-0025": {
+        "title": "Henslowe's Diary",
+        "description": "Titus Andronicus performed at Newington Butts playhouse",
+        "record_id": "nwbts-rid8",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Performance",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1594-06-05",
+            "sort": "1594-06-05",
+            "display": "1594-06-05"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid8/"
+    },
+    "nwbts-01-0026": {
+        "title": "Henslowe's Diary",
+        "description": "Guthlac performed at Newington Butts playhouse",
+        "record_id": "nwbts-rid8",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Performance",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1594-06-06",
+            "sort": "1594-06-06",
+            "display": "1594-06-06"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid8/"
+    },
+    "nwbts-01-0027": {
+        "title": "Henslowe's Diary",
+        "description": "Bellendon performed at Newington Butts playhouse",
+        "record_id": "nwbts-rid8",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Performance",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1594-06-08",
+            "sort": "1594-06-08",
+            "display": "1594-06-08"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid8/"
+    },
+    "nwbts-01-0028": {
+        "title": "Henslowe's Diary",
+        "description": "Hamlet performed at Newington Butts playhouse",
+        "record_id": "nwbts-rid8",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Performance",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1594-06-09",
+            "sort": "1594-06-09",
+            "display": "1594-06-09"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid8/"
+    },
+    "nwbts-01-0029": {
+        "title": "Henslowe's Diary",
+        "description": "Esther and Ahasuerus performed at Newington Butts playhouse",
+        "record_id": "nwbts-rid8",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Performance",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1594-06-10",
+            "sort": "1594-06-10",
+            "display": "1594-06-10"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid8/"
+    },
+    "nwbts-01-0030": {
+        "title": "Henslowe's Diary",
+        "description": "Taming of a Shrew performed at Newington Butts playhouse",
+        "record_id": "nwbts-rid8",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Performance",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1594-06-11",
+            "sort": "1594-06-11",
+            "display": "1594-06-11"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid8/"
+    },
+    "nwbts-01-0031": {
+        "title": "Henslowe's Diary",
+        "description": "Titus Andronicus performed at Newington Butts playhouse",
+        "record_id": "nwbts-rid8",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Performance",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1594-06-12",
+            "sort": "1594-06-12",
+            "display": "1594-06-12"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid8/"
+    },
+    "nwbts-01-0032": {
+        "title": "Henslowe's Diary",
+        "description": "Jew of Malta performed at Newington Butts playhouse",
+        "record_id": "nwbts-rid8",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Performance",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1594-06-13",
+            "sort": "1594-06-13",
+            "display": "1594-06-13"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid8/"
+    },
+    "nwbts-01-0033": {
+        "title": "Canterbury Cathedral Chapter Act Book",
+        "description": "Paul Buck's lease of Lurklane renewed on the condition that he convert the playhouse to some other use",
+        "record_id": "nwbts-rid4",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Lurklane",
+                        "place_type": "property",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "2152"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ],
+                                    [
+                                        -0.09923878456775777,
+                                        51.4947136204279
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Deeds & Leases",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1594-07-06",
+            "sort": "1594-07-06",
+            "display": "1594-07-06"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid4/"
+    },
+    "nwbts-01-0034": {
+        "title": "Surrey and Kent Commissioners for Sewers' Court Minutes and Orders",
+        "description": "Richard Cuckow et al. ordered to repair sewer by the former playhouse ",
+        "record_id": "nwbts-rid17",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Lurklane",
+                        "place_type": "property",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 13,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "2152"
+                    },
+                    "geometry": {
+                        "type": "MultiPolygon",
+                        "coordinates": [
+                            [
+                                [
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ],
+                                    [
+                                        -0.09923878456775777,
+                                        51.4947136204279
+                                    ],
+                                    [
+                                        -0.09913641005432586,
+                                        51.49436900483883
+                                    ],
+                                    [
+                                        -0.09983944955922358,
+                                        51.49433012527254
+                                    ],
+                                    [
+                                        -0.09992929992008145,
+                                        51.49462122276463
+                                    ]
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "Active Period and Final Years: 1582-1600",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1599-04-05",
+            "sort": "1599-04-05",
+            "display": "1599-04-05"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/nwbts-rid17/"
+    }
+}
