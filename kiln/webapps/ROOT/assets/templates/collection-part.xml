@@ -25,7 +25,7 @@
           <div class="columns medium-9 record">
             <div class="record-info-inner">
               <xsl:call-template name="display-collection-name" />
-              <xsl:text> Collection</xsl:text>
+              <!--<xsl:text> Collection</xsl:text>-->
             </div>
             <h1>
               <xsl:apply-templates select="$record_text/tei:div/tei:head/node()" />

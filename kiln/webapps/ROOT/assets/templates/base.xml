@@ -100,20 +100,22 @@
               </div>
               <div class="footer-logos text-center">
                 <div class="row medium-up-5" data-equalizer="" data-equalize-on="medium">
-                  <div class="logo column" data-equalizer-watch=""><a href="http://www.britac.ac.uk/"><img src="{$kiln:assets-path}/images/footer-logo3.png" alt="" /></a></div>
-                  <div class="logo column" data-equalizer-watch=""><a href="http://www.english.utoronto.ca/"><img src="{$kiln:assets-path}/images/footer-logo5.png" alt="" /></a></div>
-                  <div class="logo column" data-equalizer-watch=""><a href="https://onesearch.library.utoronto.ca/"><img src="{$kiln:assets-path}/images/footer-logo2.png" alt="" /></a></div>
-                  <div class="logo column" data-equalizer-watch=""><a href="https://vicu.utoronto.ca/"><img src="{$kiln:assets-path}/images/VC-logo-cropped.png" alt="" /></a></div>
-                  <div class="logo column" data-equalizer-watch=""><a href="https://www.neh.gov/"><img src="{$kiln:assets-path}/images/footer-logo4.png" alt="" /></a></div>
+                  <div class="logo column" data-equalizer-watch=""><a href="http://www.britac.ac.uk/"><img src="{$kiln:assets-path}/images/footer-logo3.png" alt="British Academy logo" /></a></div>
+                  <div class="logo column" data-equalizer-watch=""><a href="http://www.english.utoronto.ca/"><img src="{$kiln:assets-path}/images/footer-logo5.png" alt="University of Toronto English Department logo" /></a></div>
+                  <div class="logo column" data-equalizer-watch=""><a href="https://www.utm.utoronto.ca/"><img src="{$kiln:assets-path}/images/footer-logo2.png" alt="University of Toronto Mississauga logo" /></a></div>
+                  <div class="logo column" data-equalizer-watch=""><a href="https://vicu.utoronto.ca/"><img src="{$kiln:assets-path}/images/VC-logo-cropped.png" alt="Victoria College logo" /></a></div>
+                  <div class="logo column" data-equalizer-watch=""><a href="https://www.neh.gov/"><img src="{$kiln:assets-path}/images/footer-logo4.png" alt="National Endowment for the Humanities logo" /></a></div>
                   <div class="logo column hide-for-medium" data-equalizer-watch=""><img src="{$kiln:assets-path}/images/footer-logo-mobile-1.png" alt="" /></div>
                   <div class="logo last hide-for-medium" data-equalizer-watch=""><img src="{$kiln:assets-path}/images/footer-logo-mobile-2.png" alt="" /></div>
                 </div>
-                <div class="row row-spacer-20 show-for-medium text-center last-logos">
-                  <div class="logo column"><a href="http://www.sshrc-crsh.gc.ca/home-accueil-eng.aspx"><img src="{$kiln:assets-path}/images/footer-logo.png" alt="" /></a></div>
+                <div class="row medium-up-2" data-equalizer="" data-equalize-on="medium">
+                  
+                  <div class="logo column text-left"><a href="http://www.sshrc-crsh.gc.ca/home-accueil-eng.aspx"><img src="{$kiln:assets-path}/images/footer-logo.png" alt="Social Science and Humanities Research Council of Canada logo" /></a></div>
+                  <div class="logo column text-right"><a href="https://alliancecan.ca/"><img src="{$kiln:assets-path}/images/footer-logo7.png" alt="Digital Research Alliance of Canada logo" /></a></div>
                 </div>
               </div>
               <div class="footer-bottom row text-center">
-                <span class="copyright">Records of Early English Drama Online © 2016–23</span>
+                <span class="copyright">Records of Early English Drama Online © 2016–25</span>
               </div>
             </footer>
           </kiln:block>

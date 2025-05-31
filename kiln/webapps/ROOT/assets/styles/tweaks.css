@@ -1,7 +1,7 @@
 q:before { content: none; }
 q:after { content: none; }
 span.indent { margin-left: 1em; }
-.center { margin-left: auto; margin-right: auto; width: 50%; }
+.center { margin-left: auto; margin-right: auto; width: 75%; text-align: center; line-height: normal; }
 th, td { vertical-align: top; }
 td.center { text-align: center; }
 td.right { text-align: right; vertical-align: bottom; white-space: nowrap; }

@@ -65,5 +65,20 @@
       {% endif %}
     </tbody>
   </table>
-  <p><a href="{% url 'eats-entity-view' entity.get_id %}">View</a> or <a href="{% url 'eats-entity-change' entity.get_id %}">Edit</a></p>
+  <p>
+    <a href="{% url 'eats-entity-view' entity.get_id %}">View</a> or 
+    <a href="{% url 'eats-entity-change' entity.get_id %}">Edit</a> or 
+    <a href="#" onclick="copyRsTag('{{ entity.get_id }}', '{% if entity_types %}{{ entity_types.0 }}{% else %}{% endif %}', '{{ preferred_name_form }}'); return false;">Copy RS Tag</a>
+  </p>
 </div>
+
+<script>
+function copyRsTag(entityId, entityType, entityName) {
+  const rsTag = `<rs ref="eats:${entityId}" type="${entityType}">${entityName}</rs>`;
+  navigator.clipboard.writeText(rsTag).then(function() {
+    alert("RS tag copied to clipboard: " + rsTag);
+  }, function() {
+    prompt("Copy this RS tag:", rsTag);
+  });
+}
+</script>
