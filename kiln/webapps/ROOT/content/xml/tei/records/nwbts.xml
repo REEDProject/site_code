@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="REED.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="REED.rng" type="application/xml" schematypens="hthtp://purl.oclc.org/dsdl/schematron"?>
-
-<!-- IN NOTE: TEI Header from BGHope, will have to be adjusted later--> 
+ 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="tei/records/" xml:lang="eng" xml:id="nwbts">
   <teiHeader>
     <fileDesc>
@@ -48,12 +47,6 @@
           <resp>General Editor</resp>
         </respStmt>
         <respStmt>
-          <persName>Emily Mayne</persName>
-          <orgName>University of East Anglia, University of St Andrews</orgName>
-          <resp>Paleographer</resp>
-          <resp>Translator</resp>
-        </respStmt>
-        <respStmt>
           <persName>Byron Moldofsky</persName>
           <orgName>University of Toronto</orgName>
           <resp>Cartographer</resp>
@@ -73,14 +66,17 @@
           <resp>Technical Consultant</resp>
         </respStmt>
         <respStmt>
-          <persName>Sim Ong</persName>
+          <persName>Rose Grant</persName>
           <orgName>Records of Early English Drama (REED)</orgName>
-          <resp>Bibliographic Assistant</resp>
+          <resp>Bibliographic Researcher</resp>
+          <resp>Content Checker</resp>
+          <resp>Copy Editor</resp>
+          <resp>Indexer</resp>
         </respStmt>
       </titleStmt>
       <editionStmt>
         <!-- Release date to be changed here prior to publication -->
-        <edition> Version 1, released <date when-iso="2024-02-29">29 February 2024.</date>
+        <edition> Version 1, released <date when-iso="2025-06-19">19 June 2025</date>
         </edition>
       </editionStmt>
       <publicationStmt>
@@ -1562,8 +1558,7 @@
       </text>
       <text type="record" xml:id="nwbts-rid7">
         <body>
-          <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:231618"
-              type="Place_PA_Settlement">Newington</rs>
+          <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butts Playhouse</rs>
             <date when-iso="1577">1577</date>
             <seg ana="taxon:NBCRSH">NBCRSH</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid7-transcription">
@@ -2279,8 +2274,7 @@
       </text>
       <text type="record" xml:id="nwbts-rid5">
         <body>
-          <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:36966"
-              type="Place_PA_Settlement">Southwark</rs>
+          <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butts Playhouse</rs>
             <date when-iso="1590">1590</date>
             <seg ana="taxon:NBCCDC">NBCCDC</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid5-transcription">
@@ -2335,7 +2329,7 @@
                   Butt<ex>es</ex> of Newington against the West, to the land<ex>es</ex> of the sayd
                 Deane and Chapiter there called litle pightell against the East, to the
                   land<ex>es</ex> of the late Abbey of Barmondsey called Mellfeild against the North
-                and to the Orchard nowe or late of one <rs ref="eats:489194" type="Person_Male"
+                and to the Orchard nowe or late of one <rs ref="eats:489458" type="Person_Male"
                   >Edmond Myddleton</rs> against the South and twoe acres and twoe dayes Worke and
                 half a day work be called litle pyghtell and lye betwene the sayd landes called
                 Lurklane and the land<ex>es</ex> of the sayd Deane and Chapiter called Stewefenne
@@ -2497,8 +2491,7 @@
       </text>
       <text type="record" xml:id="nwbts-rid6">
         <body>
-          <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:36966"
-              type="Place_PA_Settlement">Southwark</rs>
+          <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butts Playhouse</rs>
             <date when-iso="1595">1595</date>
             <seg ana="taxon:NBCCDC">NBCCDC</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="nwbts-rid6-transcription">
