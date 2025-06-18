@@ -935,7 +935,7 @@
       </div>
     </front>
     <group>
-      <text type="record" xml:id="nwbts-rid12">
+      <text ana="taxon:CentralGov_PC" type="record" xml:id="nwbts-rid12">
         <body>
           <head><rs ref="eats:2111" type="Place_County">Middlesex</rs>, <rs ref="eats:228103"
               type="Place_F_Residence">Hampton Court</rs>
@@ -1024,7 +1024,7 @@
         </body>
       </text>
 
-      <text type="record" xml:id="nwbts-rid13">
+      <text ana="taxon:LocalGov_County" type="record" xml:id="nwbts-rid13">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butts Playhouse</rs>
             <date when-iso="1576">1576</date>
@@ -1121,10 +1121,10 @@
       </text>
       <text type="record" xml:id="nwbts-rid25" copyOf="rosep.xml#rosep-ridm90700072">
         <body>
-          <p>Blank record</p>
+          <p/>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid14">
+      <text ana="taxon:LocalGov_County" type="record" xml:id="nwbts-rid14">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butts Playhouse</rs>
             <date when-iso="1577">1577</date>
@@ -1167,7 +1167,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid15">
+      <text ana="taxon:LocalGov_County" type="record" xml:id="nwbts-rid15">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butts Playhouse</rs>
             <date when-iso="1578">1578</date>
@@ -1225,7 +1225,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid3">
+      <text ana="taxon:Church_Admin" type="record" xml:id="nwbts-rid3">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butts Playhouse</rs>
             <date when-iso="1582">1582</date>
@@ -1270,7 +1270,7 @@
           <p/>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid16">
+      <text ana="taxon:LocalGov_County" type="record" xml:id="nwbts-rid16">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butts Playhouse</rs>
             <date when-iso="1591">1590/1</date>
@@ -1333,13 +1333,12 @@
         </body>
       </text>
 
-      <!--IN: Do not tag-->
-      <text type="record" xml:id="nwbts-rid24" copyOf="rosep.xml#rosep-ridm92826968">
+      <text ana="taxon:CentralGov_PC" type="record" xml:id="nwbts-rid24" copyOf="rosep.xml#rosep-ridm92826968">
         <body>
           <p/>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid4">
+      <text ana="taxon:Church_Admin" type="record" xml:id="nwbts-rid4">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butts Playhouse</rs>
             <date when-iso="1594">1594</date>
@@ -1372,7 +1371,7 @@
 
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid8">
+      <text ana="taxon:Family_Personal" type="record" xml:id="nwbts-rid8">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butts Playhouse</rs>
             <date when-iso="1594">1594</date>
@@ -1495,7 +1494,7 @@
           <p/>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid17">
+      <text ana="taxon:LocalGov_County" type="record" xml:id="nwbts-rid17">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butts Playhouse</rs>
             <date when-iso="1599">1599</date>
@@ -1556,7 +1555,7 @@
           <p/>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid7">
+      <text ana="taxon:CentralGov_Courts" type="record" xml:id="nwbts-rid7">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butts Playhouse</rs>
             <date when-iso="1577">1577</date>
@@ -2020,7 +2019,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid10">
+      <text ana="taxon:CentralGov_PC" type="record" xml:id="nwbts-rid10">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227912"
               type="Place_F_Residence">Richmond Palace</rs>
@@ -2112,7 +2111,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid11">
+      <text ana="taxon:CentralGov_PC" type="record" xml:id="nwbts-rid11">
         <body>
           <head><rs ref="eats:2111" type="Place_County">Middlesex</rs>, <rs ref="eats:375732"
               type="Place_F_Residence">Westminster Palace</rs>
@@ -2199,7 +2198,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid9">
+      <text ana="taxon:CentralGov_PC" type="record" xml:id="nwbts-rid9">
         <body>
           <head><rs ref="eats:2039" type="Place_County">Kent</rs>, <rs ref="eats:334708"
               type="Place_F_Residence">Greenwich Palace</rs>
@@ -2272,7 +2271,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid5">
+      <text ana="taxon:Manorial_Leases" type="record" xml:id="nwbts-rid5">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butts Playhouse</rs>
             <date when-iso="1590">1590</date>
@@ -2489,7 +2488,7 @@
           <p/>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid6">
+      <text ana="taxon:Manorial_Leases" type="record" xml:id="nwbts-rid6">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741" type="Place_F_Playhouse">Newington Butts Playhouse</rs>
             <date when-iso="1595">1595</date>
@@ -2718,7 +2717,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid26">
+      <text ana="taxon:Manorial_Leases" type="record" xml:id="nwbts-rid26">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741"
               type="Place_F_Playhouse">Newington Butts Playhouse</rs>
@@ -2779,7 +2778,7 @@
           </div>
         </body>
       </text>
-      <text type="record" xml:id="nwbts-rid27">
+      <text ana="taxon:Manorial_Leases" type="record" xml:id="nwbts-rid27">
         <body>
           <head><rs ref="eats:2291" type="Place_County">Surrey</rs>, <rs ref="eats:227741"
               type="Place_F_Playhouse">Newington Butts Playhouse</rs>
