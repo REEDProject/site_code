@@ -402,10 +402,10 @@
           <p>The <rs ref="eats:231694" type="Place_F_Property">property known as the Rose</rs> was
             situated on the south bank of the Thames in the <rs ref="eats:223826"
               type="Place_PA_Liberty">liberty of the Clink</rs>, located to the west of London
-            Bridge in Southwark and to the east of <rs ref="eats:223902" type="Place_PA_Manor">Paris Garden manor</rs>.<note type="foot">For manor
+            Bridge in <rs ref="eats:36966" type="Place_PA_Settlement">Southwark</rs> and to the east of <rs ref="eats:223902" type="Place_PA_Manor">Paris Garden manor</rs>.<note type="foot">For manor
               boundaries see the <ref target="https://ereed.library.utoronto.ca/collections/rosep/"
                 >linked interactive map of London and Southwark</ref>.</note> The bridge was the
-            only crossing of the river to link the city of London and lands south and southeast of
+            only crossing of the river to link the city of <rs ref="eats:36947" type="Place_PA_Settlement">London</rs> and lands south and southeast of
             the river from Roman times until the eighteenth century, so its presence there was key
             to the development of Southwark as a zone of hospitality for travellers, notably
             Chaucer's pilgrims to Canterbury.<note type="foot">See further Martha Carlin,
@@ -616,7 +616,7 @@
             Cholmley amongst the Henslowe-Alleyn papers after 1587 are a couple of scribbles,
             perhaps pen trials, on f 1 of Henslowe’s diary. William Ingram has persuasively
             identified this shadowy character as John Cholmley, originally from Bletchingley,
-            Surrey, where he began his career as a tanner, following his father's trade, before
+            <rs ref="eats:2291" type="Place_County">Surrey</rs>, where he began his career as a tanner, following his father's trade, before
             achieving the freedom of the city as a member of the Grocers' company.<note type="foot"
               >'John Cholmley on the Bankside,' <title>Early Theatre</title> 15.2 (2012), 43–66,
               especially 45–50.</note> This Cholmley died a mere two years into the contract, in
@@ -771,7 +771,7 @@
               Frederick Gard Fleay, <title>A Chronicle History of the London Stage,
                 1559–1642</title> (London, 1890), 117.</note> Fortunately it is no longer necessary
             to rehabilitate Henslowe's character and substantial contribution to the business of
-            playing in early modern London. R.A. Foakes, in the most recent edition of
+            playing in early modern <rs ref="eats:36947" type="Place_PA_Settlement">London</rs>. R.A. Foakes, in the most recent edition of
               <title>Henslowe's Diary</title>, shed a clarifying light on Henslowe's character as
             revealed in that most famous record of his numerous and varied activities.<note
               type="foot">Foakes and Rickert collaborated on the first edition of <title>Henslowe’s
@@ -855,7 +855,7 @@
             success in business, property development, and court appointments, as well as his rising
             social status in the parish of St Saviour's Southwark, is fascinating to trace.</p>
           <p>The purchase of the Little Rose lease was surely not a random choice. As the map of
-            Southwark shows at a glance, the Little Rose property, adjacent on its west side to the
+            <rs ref="eats:36966" type="Place_PA_Settlement">Southwark</rs> shows at a glance, the Little Rose property, adjacent on its west side to the
             Great Rose, was also only a few steps from the <rs ref="eats:227798"
               type="Place_F_Arena">Bear Garden</rs> flourishing then at the Bell and Cock site, a
             little further west of the Great Rose. Documentary evidence from the mid-sixteenth
@@ -1173,7 +1173,7 @@
               website).</note> All of his properties had houses and shops that brought regular
             income to the owner of the lease, so Henslowe was by no means dependent on the quirky
             and unpredictable fortunes of his first playhouse. Around the same time Alleyn was
-            building his own substantial estate, soon acquiring the manor of Dulwich in the Surrey
+            building his own substantial estate, soon acquiring the manor of Dulwich in the <rs ref="eats:2291" type="Place_County">Surrey</rs>
             countryside where he eventually relocated.<note type="foot">He noted his purchase of the
               manor of Dulwich from Sir Francis Calton in his memorandum book on 20 October 1605 for
               £5,000, with regular payments due over seven years; see Ioppolo,
@@ -3884,8 +3884,7 @@
       <text ana="eats:358194 taxon:CentralGov_PC" type="record" xml:id="rosep-ridm90700072" corresp="nwbts.xml#nwbts-rid25">
         <body>
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
-              >Surrey</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/"
-              type="Place_F_Playhouse"> Rose Playhouse</rs>
+              >Surrey</rs>
             <date precision="low" when-iso="1590"><hi rend="italic">c</hi> 1590</date>
             <seg ana="taxon:RSWPC1">RSWPC1</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="rosep-ridm90700072-transcription">
@@ -3969,8 +3968,7 @@
       <text ana="eats:358239 taxon:CentralGov_PC" type="record" xml:id="rosep-ridm91625448"
         corresp="bghop.xml#bghop-ridp265822728 nwbts.xml#nwbts-rid23"> 
         <body>
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2111/" type="Place_County"
-              >Middlesex</rs>, <rs ref="eats:334708" type="Place_F_Residence">Greenwich Palace</rs>
+          <head><rs ref="eats:2039" type="Place_County">Kent</rs>, <rs ref="eats:334708" type="Place_F_Residence">Greenwich Palace</rs>
             <date when-iso="1591">1591</date>
             <seg ana="taxon:RSPCL6">RSPCL6</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="rosep-ridm91625448-transcription">
@@ -4222,8 +4220,7 @@
       </text>
       <text ana="eats:358353 taxon:CentralGov_PC" type="record" xml:id="rosep-ridm92855896" corresp="nwbts.xml#nwbts-rid21">
         <body>
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
-              >Surrey</rs>, <rs ref="eats:334708" type="Place_F_Residence">Greenwich Palace</rs>
+          <head><rs ref="eats:2039" type="Place_County">Kent</rs>, <rs ref="eats:334708" type="Place_F_Residence">Greenwich Palace</rs>
             <date when-iso="1592">1592</date>
             <seg ana="taxon:RSPCL4">RSPCL4</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="rosep-ridm92855896-transcription">
@@ -4645,8 +4642,7 @@ brace --></cell>
       <text ana="eats:358491 taxon:CentralGov_PC" type="record" xml:id="rosep-ridm90590584" corresp="bghop.xml#bghop-ridp265780184 nwbts.xml#nwbts-rid18"><!--sameAs="nwbts.xml#nwbts-rid18"-->
         <body>
           <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
-              >Surrey</rs>, <rs ref="http://ereed.library.utoronto.ca/eats/entity/157260/"
-              type="Place_F_Playhouse"> Rose Playhouse</rs>
+              >Surrey</rs>
             <date when-iso="1593">1593</date>
             <seg ana="taxon:RSAPPC">RSAPPC</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="rosep-ridm90590584-transcription">
@@ -4777,11 +4773,7 @@ brace --></cell>
                 Project</title>, MS 7, ff <ref
                 target="https://henslowe-alleyn.org.uk/catalogue/mss-7/008-verso/">8v</ref> and <ref
                 target="https://henslowe-alleyn.org.uk/catalogue/mss-7/009-recto/">9</ref>.</p>
-            <p>The privy councillors signing the letter and present at the meeting were John Whitgift (<hi rend= "italic">c</hi> 1530-1604), archbishop of Canterbury, 1583–1604; Thomas Sackville (<hi rend= "italic">c</hi> 1536–1608), first
-              Baron Buckhurst; Sir John Puckering (<hi rend= "italic">c</hi>
-              1543–96), lord keeper of the Great Seal, 1592–6; Sir Robert Cecil (1563–1612); Charles Howard (<hi rend= "italic">c</hi> 1536–1624), lord admiral, 1585–1618/19;
-              and Sir John Fortescue
-              (1533–1607).</p>
+            
             <p>For an
               abstract of the document and details of its transcription history, see
               the related EMLoT <ref target="http://emlot.org/db/record/event/1813">event record</ref>.</p>
@@ -4983,8 +4975,7 @@ brace --></cell>
       </text>
       <text ana="eats:358647 taxon:CentralGov_PC" type="record" xml:id="rosep-ridm92864504">
         <body>
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
-              >Surrey</rs>, <rs ref="eats:334708" type="Place_F_Residence">Greenwich Palace</rs>
+          <head><rs ref="eats:2039" type="Place_County">Kent</rs>, <rs ref="eats:334708" type="Place_F_Residence">Greenwich Palace</rs>
             <date when-iso="1596">1596</date>
             <seg ana="taxon:RSPC11">RSPC11</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="rosep-ridm92864504-transcription">
@@ -5286,8 +5277,7 @@ brace --></cell>
       </text>
       <text ana="eats:359724 taxon:CentralGov_PC" type="record" xml:id="rosep-ridm91627064">
         <body>
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
-              >Surrey</rs>, <rs ref="eats:334708" type="Place_F_Residence">Greenwich Palace</rs>
+          <head><rs ref="eats:2039" type="Place_County">Kent</rs>, <rs ref="eats:334708" type="Place_F_Residence">Greenwich Palace</rs>
             <date when-iso="1597">1597</date>
             <seg ana="taxon:RSPCL7">RSPCL7</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="rosep-ridm91627064-transcription">
@@ -5647,8 +5637,8 @@ brace --></cell>
       </text>
       <text ana="eats:359781 taxon:CentralGov_PC" type="record" xml:id="rosep-ridm96311064">
         <body>
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
-              >Surrey</rs>, <rs ref="eats:124560" type="Place_F_Residence">Whitehall Palace</rs>
+          <head><rs ref="eats:2111" type="Place_County">Middlesex</rs>, <rs
+              ref="eats:124560" type="Place_F_Residence">Whitehall Palace</rs>
             <date when-iso="1598">1597/8</date>
             <seg ana="taxon:RSLPCJ">RSLPCJ</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="rosep-ridm96311064-transcription">
@@ -7376,8 +7366,7 @@ brace --></cell>
       </text>
       <text ana="eats:359968 taxon:CentralGov_PC" type="record" xml:id="rosep-ridm91010728">
         <body>
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
-              >Surrey</rs>, <rs ref="eats:334708" type="Place_F_Residence">Greenwich Palace</rs>
+          <head><rs ref="eats:2039" type="Place_County">Kent</rs>, <rs ref="eats:334708" type="Place_F_Residence">Greenwich Palace</rs>
             <date when-iso="1600">1600</date>
             <seg ana="taxon:RSPO11">RSPO11</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="rosep-ridm91010728-transcription">
@@ -7913,8 +7902,8 @@ brace --></cell>
       </text>
       <text ana="eats:360052 taxon:CentralGov_PC" type="record" xml:id="rosep-ridm91581784">
         <body>
-          <head><rs ref="http://ereed.library.utoronto.ca/eats/entity/2291/" type="Place_County"
-              >Surrey</rs>, <rs ref="eats:124560" type="Place_F_Residence">Whitehall Palace</rs>
+          <head><rs ref="eats:2111" type="Place_County">Middlesex</rs>, <rs
+              ref="eats:124560" type="Place_F_Residence">Whitehall Palace</rs>
             <date when-iso="1601">1601</date>
             <seg ana="taxon:RSPCL8">RSPCL8</seg></head>
           <div xml:lang="eng" type="transcription" xml:id="rosep-ridm91581784-transcription">

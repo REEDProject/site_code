@@ -37,11 +37,14 @@
       <description>Timeline for the Newington Butts Playhouse collection</description>
     </timeline>
   </live>
-  <featured ref="#bghop">
-    <title>Bear Gardens/ Hope Playhouse</title>
+  <development>
+    <timeline>Swan Playhouse</timeline>
+  </development>
+  <featured ref="#nwbts">
+    <title>Newington Butts Playhouse</title>
     <!-- Thumbnail is the path of a PNG in content/images, excluding
          the file extension and relative content/images. Eg,
          "timelines/rose_timeline_thumbnail" -->
-    <thumbnail>timelines/bghope_timeline_thumbnail</thumbnail>
+    <thumbnail>timelines/nwbts_timeline_thumbnail</thumbnail>
   </featured>
 </timelines>
