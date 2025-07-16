@@ -926,7 +926,7 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            -0.07982475069439197,
+                            -0.07982475069439202,
                             51.52456411521703
                         ]
                     }
@@ -1036,27 +1036,6 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Newington Butts Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": true,
-                        "placeholder_coordinates": null,
-                        "container": 1391,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "571"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09983450174331669,
-                            51.494548729614024
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
                         "name": "Lurklane",
                         "place_type": "property",
                         "is_approximate": false,
@@ -1094,6 +1073,27 @@
                                     ]
                                 ]
                             ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Newington Butts Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": true,
+                        "placeholder_coordinates": null,
+                        "container": 1391,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "571"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09983450174331669,
+                            51.494548729614024
                         ]
                     }
                 }
@@ -1227,7 +1227,7 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            -0.07982475069439197,
+                            -0.07982475069439202,
                             51.52456411521703
                         ]
                     }
@@ -1341,7 +1341,7 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            -0.07982475069439197,
+                            -0.07982475069439202,
                             51.52456411521703
                         ]
                     }
@@ -1421,27 +1421,6 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Theatre Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 58,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1614"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.07982475069439197,
-                            51.52456411521703
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
                         "name": "Newington Butts Playhouse",
                         "place_type": "playhouse",
                         "is_approximate": true,
@@ -1478,6 +1457,27 @@
                         "coordinates": [
                             -0.09543165564536202,
                             51.50729173227136
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Theatre Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1614"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07982475069439202,
+                            51.52456411521703
                         ]
                     }
                 }
@@ -1807,7 +1807,7 @@
                         "place_type": "residence",
                         "is_approximate": false,
                         "placeholder_coordinates": null,
-                        "container": 13,
+                        "container": 14,
                         "patrons_label_flag": 3,
                         "symbol_flag": 3,
                         "notes": "Point placed on location of the great hall, as referenced in Julian Bowsher, \"The Chapel Royal at Greenwich Palace\", plate 16A, pg. 162.",
@@ -1816,7 +1816,7 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            -0.00526249408721924,
+                            -0.005262494087219,
                             51.48388374496173
                         ]
                     }
@@ -1887,27 +1887,6 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Theatre Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 58,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1614"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.07982475069439197,
-                            51.52456411521703
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
                         "name": "Rose Playhouse",
                         "place_type": "playhouse",
                         "is_approximate": false,
@@ -1923,6 +1902,27 @@
                         "coordinates": [
                             -0.09543165564536202,
                             51.50729173227136
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Theatre Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1614"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07982475069439202,
+                            51.52456411521703
                         ]
                     }
                 }
@@ -2043,27 +2043,6 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Theatre Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 58,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1614"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.07982475069439197,
-                            51.52456411521703
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
                         "name": "Rose Playhouse",
                         "place_type": "playhouse",
                         "is_approximate": false,
@@ -2079,6 +2058,27 @@
                         "coordinates": [
                             -0.09543165564536202,
                             51.50729173227136
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Theatre Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1614"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07982475069439202,
+                            51.52456411521703
                         ]
                     }
                 }
@@ -2199,27 +2199,6 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Theatre Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 58,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1614"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.07982475069439197,
-                            51.52456411521703
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
                         "name": "Rose Playhouse",
                         "place_type": "playhouse",
                         "is_approximate": false,
@@ -2235,6 +2214,27 @@
                         "coordinates": [
                             -0.09543165564536202,
                             51.50729173227136
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Theatre Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1614"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07982475069439202,
+                            51.52456411521703
                         ]
                     }
                 }
