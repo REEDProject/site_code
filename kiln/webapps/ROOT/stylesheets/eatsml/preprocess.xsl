@@ -101,7 +101,7 @@
   <xsl:variable name="container_location_entity_types"
                 select="($location_county_entity_type, $location_duchy_entity_type, $location_ea_archdeaconry_entity_type, $location_ea_diocese_entity_type, $location_ea_province_entity_type, $location_feature_entity_type, $location_feature_arena_entity_type, $location_feature_bridge_entity_type, $location_feature_church_entity_type, $location_feature_church_house_entity_type, $location_feature_gate_entity_type, $location_feature_guild_hall_entity_type, $location_feature_hospital_entity_type, $location_feature_inn_of_court_entity_type, $location_feature_open_area_entity_type, $location_feature_place_of_punishment_entity_type, $location_feature_playhouse_entity_type, $location_feature_property_entity_type, $location_feature_religious_house_entity_type, $location_feature_residence_entity_type, $location_feature_school_entity_type, $location_feature_street_entity_type, $location_feature_town_hall_entity_type, $location_feature_victualling_house_entity_type, $location_feature_water_feature_entity_type, $location_pa_liberty_entity_type, $location_pa_manor_entity_type, $location_pa_settlement_entity_type, $location_pa_ward_entity_type)" />
   <xsl:variable name="troupe_entity_type" select="'entity_type-12619'" />
-  <xsl:variable name="gis_base_url" select="'https://ereed.library.utoronto.ca/geomap/places/'" />
+  <xsl:variable name="gis_base_url" select="'https://ereed.org/geomap/places/'" />
   <xsl:variable name="show_containing" select="($occupational_guild_entity_type, $religious_guild_entity_type, $container_location_entity_types)" />
   <xsl:variable name="calendar_entity_types" select="('entity_type-4857', 'entity_type-4855')" />
   <xsl:variable name="no_occupation_in_name_types"

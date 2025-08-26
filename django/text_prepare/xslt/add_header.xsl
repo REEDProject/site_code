@@ -20,7 +20,7 @@
         <encodingDesc>
           <listPrefixDef>
             <prefixDef ident="eats" matchPattern="([0-9]+)"
-                       replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/">
+                       replacementPattern="https://ereed.org/eats/entity/$1/">
               <p>URIs using the <code>eats</code> prefix are references to EATS entities.</p>
             </prefixDef>
             <prefixDef ident="gloss" matchPattern="([\S]+)"

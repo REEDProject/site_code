@@ -28,7 +28,7 @@
           <ul>
             <li>
               <p>EATS data: Save the <a
-              href="https://ereed.library.utoronto.ca/eats/export/eatsml/entities/">EATSML
+              href="https://ereed.org/eats/export/eatsml/entities/">EATSML
               data</a> (warning: takes a long time to generate) to
               <code>kiln/webapps/ROOT/content/xml/eatsml/entities.xml</code>,
               commit the change to your local repository, and
@@ -37,7 +37,7 @@
 
             <li>
               <p>Fetch, save, and commit the <a
-              href="https://ereed.library.utoronto.ca/geomap/serialise/all/placeholders/">GIS
+              href="https://ereed.org/geomap/serialise/all/placeholders/">GIS
               data</a> to your local repository, and push. The linked
               resource (warning: takes a long time to generate) is a
               ZIP file containing files to be moved to your local

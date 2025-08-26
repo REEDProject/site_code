@@ -92,7 +92,7 @@
         <encodingDesc>
             <listPrefixDef>
                 <prefixDef ident="eats" matchPattern="([0-9]+)"
-                    replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/">
+                    replacementPattern="http://ereed.org/eats/entity/$1/">
                     <p>URIs using the <code>eats</code> prefix are references to EATS entities.</p>
                 </prefixDef>
                 <prefixDef ident="gloss" matchPattern="([\S]+)"
@@ -2784,6 +2784,339 @@
         </div>
     </body>
 </text>
+            <text type="record" xml:id="yorkc-ripd234765849">
+                <body>
+                    <head>
+                        Yorkshire, York 
+                        <date when-iso="1399">1399</date>
+                        <seg ana="taxon:YAYMBB">YAYMBB</seg>
+                    </head>
+                    <!-- xml:lang: eng= english, lat= latin, ang=anglo-saxon. Type will always be transcription in this section. the xml:id here must match the xml:id above with the addition of a -transcription -->
+                    <div xml:lang="lat" type="transcription" xml:id="yorkc-ripd234765849-transcription">
+                        <div>
+                            <head>
+                                <!--Membrane/Folio number goes here. Use mb for membrane and f for folio]--> mb #</head>
+                            <!-- Memberane/Folio number is encoded below. Under type, use "membrane" for membrance and "folio" for folio -->
+                            <pb n="19v" type="folio"/>
+                            
+                            <ab>
+                                Minute et <lb/> varie exp<ex>e</ex>nse 
+                            </ab>
+                            <ab>
+                                A/Y Memorandum Book Y: E20
+                                f 19V
+                                <handShift/>De ordina<ex>cion</ex>e ludi coporis chr<ex>ist</ex>i A<ex>nn</ex>o r<ex>egn</ex>i <rs ref="eats:32403" type="Person_Male">r<ex>egi</ex>s Ric<ex>ard</ex>i
+                                    s<ex>e</ex>c<ex>un</ex>di</rs> xxij<hi rend="superscript">o</hi> et plus de eode<ex>m</ex> in s<ex>ecund</ex>o folio p<ex>re</ex>cedenti &amp;
+                                de torcheis <add place="above">bonor<ex>um</ex> ho<ex>m</ex>i<ex>nu</ex>m</add> h<ex>ab</ex>endis in iiij. fol<ex>io</ex>
+                                precedenti . &amp; de <rs ref="eats:372358" type="Collective_GuildsOccupational">Buklermakers</rs> et <rs ref="eats:372391" type="Collective_GuildsOccupational">Shethers</rs> in viij<hi rend="superscript">o</hi> folio
+                                p<ex>re</ex>ced<ex>enti</ex> &amp; de <rs ref="eats:40362" type="Drama_Type">pagina de moyses &amp; Pharao</rs>. in cxij<hi rend="superscript">mo</hi> fol<ex>io</ex>
+                                sequen<ex>ti</ex> et ordo paginar<ex>um</ex> in fine hui<ex>us</ex> libri<handShift/><note type="marginal" place="margin_right"></note>
+                                <foreign xml:lang="anm">Al hon<ex>ur</ex>ables ho<ex>m</ex>mes le meir &amp; les Aldermans de la Citee
+                                    <rs ref="eats:37840" type="Place_PA_Settlement">Deu<ex>er</ex>wyk</rs> Suppliou<ex>n</ex>t les Co<ex>mun</ex>es demesme la Citee q<ex>ue</ex> com ils
+                                    fount g<ex>rau</ex>ndes espences &amp; costages ento<ex>ur</ex> le Iuer &amp; les pagentz
+                                    de la <rs ref="eats:41497" type="CalendarDay_Liturgical">io<ex>ur</ex> de Corpore / chr<ex>ist</ex>i</rs> / les queux ne p<ex>ur</ex>rount estre iuez
+                                    ne p<ex>er</ex>fo<ex>ur</ex>nez mesme le io<ex>ur</ex> solounc ceo com ils deuerount estre
+                                    a cause q<ex>ue</ex> les pagentz suisditz sount jueez en si pluso<ex>ur</ex>s lieux a
+                                    g<ex>r</ex>aunde damage &amp; disease a les ditz co<ex>mun</ex>es &amp; a les Est<ex>r</ex>aungers
+                                    repairauncez a la dite Citee mesme le io<ex>ur</ex> p<ex>ur</ex> mesme la cause
+                                    q<ex>ue</ex> pleise a vous consid<ex>er</ex>er q<ex>ue</ex> les ditz pagentz sount
+                                    mayntenez &amp; sustenez p<ex>ar</ex> les Co<ex>mun</ex>es &amp; Artificers demesme la
+                                    Citee en honour &amp; reu<ex>er</ex>ence n<ex>ost</ex>reseignour lesu Crist &amp; hono<ex>ur</ex>
+                                    &amp; p<ex>ro</ex>fitt de mesme la Citee defaire ordeigner q<ex>ue</ex> les pagentz
+                                    suisditz soient jueez en les lieux quelles furent limitez &amp; assignez
+                                    p<ex>ar</ex> vous &amp; les <add place="above">co<ex>mun</ex>es</add> suisditz deua<ex>u</ex>nt ces houres les quelles
+                                    lieux sount annexis a y ceste bille en vne cedulle <add place="above">ou en autres
+                                        lieux ch<ex>esc</ex>un ane al disposicion &amp; volu<ex>n</ex>te de le mair &amp; c<ex>on</ex>seil
+                                        de la chambr<ex>e</ex></add><note type="foot">in same band as marginal heading</note> et q<ex>ue</ex> il ou ascun q<ex>ui</ex> encountre les ordeignances
+                                    &amp; estabilismentz auantditz ferra ou ferrount encourge ou
+                                    encourgent en payne de xl s. p<ex>ur</ex> estre forfait a la Chaumbre de
+                                    counsale de la dite Citee , &amp; q<ex>ue</ex> si ascuns de les pagentz suisditz
+                                    soient targiez ou delaiez p<ex>ar</ex> defaut ou neccligence de les Iuers
+                                    qils encourgentz en payne de vi s. viij d a mesme la chaumbre
+                                    Et ces matiers suisditz suppliount quelles soient p<ex>er</ex>fo<ex>ur</ex>neez ou
+                                    aut<ex>r</ex>ement la d<ex>i</ex>te Iue ne s<ex>er</ex>ra my Iueez p<ex>ar</ex> les comunes suisditz.
+                                    Et ces p<ex>ri</ex>ount p<ex>ur</ex> dieu &amp; en ou<ex>er</ex>e de charitee p<ex>ur</ex> le p<ex>ro</ex>fitte de
+                                    les ditz Co<ex>mun</ex>es &amp; de les Estraungers repairauncez a la dite Citee
+                                    a lono<ex>ur</ex> &lt;<damage><gap unit="chars" extent="3"/></damage>dieu &amp; nuresaunce de charitee p<ex>ar</ex>entre mesme les
+                                    comunes</foreign>
+                            </ab>
+                            <ab>
+                                Loca vbi ludus Corporis chr<ex>ist</ex>i erit lusus In primis ad portas
+                                s<ex>an</ex>cte <rs ref="eats:366104" type="Place_F_Church">Trinitatis in Mikelgate</rs>. Sec<ex>und</ex>o ad ostiu<ex>m</ex> <rs ref="eats:372552" type="Person_StatusOther">Rob<ex>er</ex>ti
+                                    Harpham</rs>. Tercio ad ostiu<ex>m</ex> <rs ref="eats:372612" type="Person_StatusOther">loh<ex>ann</ex>is de Gyseburne</rs> Quarto apud
+                                <rs ref="eats:366126" type="Place_F_Street">Skeldergatehend</rs> &amp; <rs ref="eats:366148" type="Place_F_Street">Northstrethend</rs> <note type="foot">in same band as marginal heading over erasure</note> . Quinto ad finem de
+                                <rs ref="eats:366170" type="Place_F_Street">Conyngstrete</rs> v<ex>er</ex>sus le <rs ref="eats:366192" type="Place_F_Street">Castelgate</rs>. Sexto ad finem de <rs ref="eats:366214" type="Place_F_Street">lubretgate</rs>
+                                Septimo <damage><gap unit="chars" extent="3"/></damage> ostiu<ex>m</ex> <rs ref="eats:366263" type="Person_Male">Henr<ex>ici</ex> Wyman</rs> in Conyngstrete. Octauo ad
+                                finem de Conyngstrete iuxta <rs ref="eats:372818" type="Place_F_TownHall">Aulam Co<ex>mmun</ex>em</rs><note type="foot">in different band over erasure</note> Nono ad ostiu<ex>m</ex>
+                                <rs ref="eats:372672" type="Person_StatusOther">Ade del Brigg</rs>. Decimo ad portas <rs ref="eats:253735" type="Place_F_Church">Monast<ex>er</ex>ii beati petri</rs>.
+                                Vndecimo ad finem de <rs ref="eats:366305" type="Place_F_Street">Girdlergate</rs> in <rs ref="eats:366327" type="Place_F_Street">Petergate</rs> . Duodecimo
+                                sup<ex>er</ex> <rs ref="eats:366349" type="Place_F_Street">Pauiament<ex>um</ex></rs>
+                            </ab>
+                            <ab>
+                                Et ordinatu<ex>m</ex> est q<ex>u</ex>od <rs ref="eats:301920" type="Thing_Property">vexilla</rs> ludi cu<ex>m</ex> armis ciuitat<ex>is</ex>
+                                lib<ex>er</ex>ent<ex>ur</ex> <handShift/><add place="above">in vigilia corporis chr<ex>ist</ex>i</add><handShift/> per maiore<ex>m</ex> ponenda in
+                                locis vbi erit ludus paginar<ex>um</ex> &amp; q<ex>u</ex>od vexilla ipsa an<ex>n</ex>uatim i<ex>n</ex>
+                                crastino Corp<ex>or</ex>is ch<ex>rist</ex>i rep<ex>or</ex>tentur ad cam<ex>er</ex>a<ex>m</ex> ad man<ex>us</ex>
+                                maior<ex>is</ex> &amp; cam<ex>er</ex>ar<ex>iorum</ex> ciuitatis. &amp; ib<ex>ide</ex>m custodia<ex>n</ex>t<ex>ur</ex> per
+                                totu<ex>m</ex> ann<ex>um</ex> seque<ex>n</ex>te<ex>m</ex> s<ex>u</ex>b pe<ex>na</ex> vj s. viij d. solue<ex>n</ex>d<ex>orum</ex> ad
+                                opus co<ex>mmun</ex>itat<ex>is</ex> per illu<ex>m</ex> et illos q<ex>u</ex>i vexilla illa vlt<ex>ra</ex>
+                                crastinu<ex>m</ex> illu<ex>m</ex> detinu<ex>er</ex>int &amp; ea no<ex>n</ex> lib<ex>er</ex>au<ex>er</ex>int modo quo
+                                p<ex>re</ex>fert<ex>ur</ex>.
+                            </ab>
+                        </div>
+                        <!-- The section below is only needed if your record also contains a translation. The div type will always be translation in this section. The xml:id must match the one above, except with a -translation at the end.  -->
+                        <div xml:lang="eng" type="translation" xml:id="yorkc-ripd234765849-translation">
+                            <div>
+                                <head>
+                                    <!--Membrane/Folio number goes here. Use mb for membrance and f for folio]-->
+                                    f 19v</head>
+                                <!-- Memberane/Folio number is encoded below. Under type, use "membrane" for membrance and "folio" for folio -->
+                                <pb n="19v" type="folio"/>
+                                <ab>
+                                    <ab>
+                                        1399
+                                        A/Y Memorandum Book Y: E20
+                                    </ab>
+                                    <ab>
+                                        f 19v
+                                        <handShift/>Concerning the ordinance of the Corpus Christi Play in the
+                                        twenty-second year of the reign of King Richard the second, and
+                                        more about the same matter in the second folio preceding, and
+                                        about the torches of the honourable citizens in the fourth folio
+                                        preceding, and about the Bucklermakers and Sheathers in the
+                                        eighth folio preceding, and about the pageant of Moses and
+                                        Pharaoh in the one hundred and twelfth folio following, and
+                                        the order of the pageants at the end of this book.<handShift/><note type="marginal" place="margin_right"></note>
+                                    </ab>
+                                    <ab>
+                                        To the honourable men, the mayor and aldermen of the city of
+                                        York, the commons of the same city beg that, inasmuch as they
+                                        incur great expense and costs in connection with the pageants
+                                        and plays of Corpus Christi day, the which cannot be played or
+                                        performed on the same day as they ought to be, because the
+                                        aforesaid pageants are played in so many places at considerable
+                                        hardship and deprivation to the said commons and strangers who
+                                        have travelled to the said city on the same day for the same
+                                        purpose, that it please you to consider that the said pageants
+                                        are maintained and supported by the commons and the crafts-
+                                        men of the same city in honour and reverence of our Lord Jesus
+                                        Christ and for the glory and benefit of the same city, that you
+                                        decree that the aforesaid pageants be played in the places to
+                                        which they were limited and assigned by you and by the aforesaid
+                                        commons previously, the which places are annexed to this bill
+                                        in a schedule, or in other places from year to year according
+                                        to the disposition and will of the mayor and the council of the
+                                        Chamber, and that anyone who acts in contravention of the
+                                        aforesaid ordinances and regulations shall incur a fine of 40s to
+                                        be paid to the Council Chamber of the said city, and that if any
+                                        of the aforesaid pageants be delayed or held back through fault
+                                        or negligence on the part of the players, that they shall incur a
+                                        penalty of 6s 8d to the same Chamber. And they (the commons)
+                                        beg that these aforesaid matters be performed, or otherwise the
+                                        said play shall not be played by the aforesaid commons. And
+                                        they (the commons) ask these things for the sake of God and as
+                                        a work of charity for the benefit of the said commons and of
+                                        the strangers who have travelled to the said city for the honour
+                                        (of) God and the promotion of charity among the same commons.
+                                    </ab>
+                                    <ab>
+                                        Places where the play of Corpus Christi will have been played:
+                                        first at the gates of Holy Trinity in Micklegate; second at Robert
+                                        Harpham’s door; third at John de Gyseburne's door; fourth at
+                                        Skeldergate and North Street; fifth at the end of Coney Street
+                                        opposite the Castlegate; sixth at the end of Jubbergate; seventh
+                                        (at) Henry Wyman’s door in Coney Street; eighth at the end of
+                                        Coney Street next to the Common Hall; ninth at Adam del
+                                        Brigg’s door; tenth at the gates of the Minster of blessed Peter;
+                                        eleventh at the end of Girdlergate in Petergate; twelfth on the
+                                        Pavement.
+                                    </ab>
+                                    <ab>
+                                        And it has been ordained that the banners of the play with the
+                                        arms of the city be delivered by the mayor on the eve of Corpus
+                                        Christi, « to be set in the places where the play of the pageants
+                                        will be, and that each year on the day after Corpus Christi,
+                                        the banners be returned to the Chamber to the hands of the
+                                        mayor and chamberlains of the city and kept there for the entire
+                                        year following, under penalty of 6s 8d to be paid to the needs
+                                        of the commons by anyone who shall have kept the banners
+                                        beyond the next day and shall not have given them up in the
+                                        manner which is stated.
+                                    </ab>
+                                </ab>
+                            </div>
+                        </div>
+                    </div>
+                </body>
+            </text>
+            <text type="record" xml:id="yorkc-ridp173649820">
+                <body>
+                    <head><!-- Record location goes here in the following format: [COUNTY, CITY] (eg. Yorkshire, York). -->
+                        Yorkshire, York 
+                        <!-- Date is encoded here. For slash dates, put the modern date into the quotation marks and the slash date in between the date tags. Eg: <date when-iso="1617">1616/17</date>". 
+                For date ranges, use <date from-iso="YYYY" to-iso="YYYY">YYYY-Y</date>. Eg: <date from-iso="1451" to-iso="1452">1451-2</date>. In all other cases, keep the tags as below and simply change the YYYY to the appropriate year-->
+                        <date when-iso="1401">1401</date>
+                        <!-- Choose the appropriate code based on the type of record you are working with. 
+                - Mercer’s Indenture:  YMAAI
+                - Mercer’s Account Rolls: YMAAR
+                - Mercers’ Pageant Documents: YMAAP
+                - Mercers’ Chartulary: YMAAC
+            -->
+                        <seg ana="taxon:YAYMB*">YAYMB*</seg>
+                    </head>
+                    <!-- xml:lang: eng= english, lat= latin, ang=anglo-saxon. Type will always be transcription in this section. the xml:id here must match the xml:id above with the addition of a -transcription -->
+                    <div xml:lang="anm" type="transcription" xml:id="yorkc-ridpridp173649820-transcription">
+                        <div>
+                            <head>
+                                <!--Membrane/Folio number goes here. Use mb for membrane and f for folio]--> mb #</head>
+                            <!-- Memberane/Folio number is encoded below. Under type, use "membrane" for membrance and "folio" for folio -->
+                            <pb n="42*" type="folio"/>
+                            <ab>
+                                1401
+                                A/Y Memorandum Book Y: E20
+                            </ab>
+                            <ab>
+                                f42* (7 July) <rs ref="eats:372424" type="Collective_Occupations">Spurriers</rs> and <rs ref="372453" type="Collective_Occupations">Lorimers</rs>
+                                [... nul Esperoner ne <rs ref="eats:372482" type="Collective_Occupations">lorymer</rs> de la d<ex>i</ex>te citee ou les s<ex>u</ex>burbes
+                                dicell p<ex>a</ex>r lui ne p<ex>a</ex>r <damage><gap unit="chars" extent="3"/></damage> s<ex>er</ex>vant ouer ou face ou<ex>er</ex>er en autre
+                                Artifice mais soulement Esporoner ceo q<ex>u</ex>e affiert a son artifice
+                                &amp; lorymer ce q<ex>ue</ex> affiert a son myster s<ex>u</ex>r peyne de xiij s iiij d
+                                appaier p<ex>ar</ex> celly q<ex>ui</ex> face la cont<ex>r</ex>arie dicell ordeign<ex>a</ex>nce
+                                Cestassauoir lune moite au mair &amp; Co<ex>mmun</ex>ialtee de la d<ex>i</ex>te
+                                Citee &amp; laut<ex>r</ex>e moite al oeps del pagyne des Artifices &amp; mystiers
+                                suisditz...]
+                            </ab>   
+                            <ab>    
+                                <foreign xml:lang="lat"> <handShift/>M<ex>emoran</ex>d<ex>um</ex> q<ex>uo</ex>d xii<hi rend="superscript">o</hi> die maij temp<ex>or</ex>e <rs ref="eats:372754" type="Person_Male">Ric<ex>ard</ex>i york Maioris</rs>
+                                    addit<ex>um</ex> fuit q<ex>uo</ex>d le <rs ref="eats:57919" type="Collective_Occupations">hatmakers</rs> istius Ciuitatis sint cont<ex>r</ex>ibut<ex>orij</ex>
+                                    pagine art<ex>is</ex> p<ex>re</ex>dict<ex>e</ex> et sol<ex>uerunt</ex> absq<ex>ue</ex> cont<ex>r</ex>adiccione s<ex>u</ex>b pe<ex>n</ex>a
+                                    eiusd<ex>e</ex>m xl d <handShift/></foreign>
+                            </ab>       
+                        </div>
+                        <!-- The section below is only needed if your record also contains a translation. The div type will always be translation in this section. The xml:id must match the one above, except with a -translation at the end.  -->
+                        <div xml:lang="eng" type="translation" xml:id="yorkc-ridp173649820-translation">
+                            <div>
+                                <head>
+                                    <!--Membrane/Folio number goes here. Use mb for membrance and f for folio]-->
+                                    mb 1</head>
+                                <!-- Memberane/Folio number is encoded below. Under type, use "membrane" for membrance and "folio" for folio -->
+                                <pb n="42*" type="folio"/>
+                                <ab>
+                                    <ab>
+                                        1401
+                                        A/Y Memorandum Book Y: E20
+                                    </ab>
+                                    <ab>
+                                        f42* (7 July) Spurriers and Lorimers
+                                        [... No spurrier or harnessmaker of the said city or the suburbs 
+                                        of it is to fashion himself or to have fashioned by (his) servant in
+                                        another guild, but only in the Spurriers, that which belongs to
+                                        his trade, on pain of 13s 4d to be paid by him who acts contrary
+                                        to this ordinance, that is, one half to the mayor and commonalty
+                                        of the said city and the other half for the use of the pageant of
+                                        the guilds and crafts aforesaid...]
+                                    </ab>
+                                    <ab>
+                                        <handShift/> Memorandum that on the twelfth day of May in the time of
+                                        Richard York, mayor, it was added that the Hatmakers of this
+                                        city be contributors to the pageant of the aforesaid craft and
+                                        they pay without contradiction, under pain of 40d from each
+                                        one. <handShift/>
+                                    </ab>
+                                </ab>
+                            </div>
+                        </div>
+                    </div>
+                </body>
+            </text>
+            <text type="record" xml:id="yorkc-ridp367235098">
+                <body>
+                    <head><!-- Record location goes here in the following format: [COUNTY, CITY] (eg. Yorkshire, York). -->
+                        Yorkshire, York 
+                        <!-- Date is encoded here. For slash dates, put the modern date into the quotation marks and the slash date in between the date tags. Eg: <date when-iso="1617">1616/17</date>". 
+                For date ranges, use <date from-iso="YYYY" to-iso="YYYY">YYYY-Y</date>. Eg: <date from-iso="1451" to-iso="1452">1451-2</date>. In all other cases, keep the tags as below and simply change the YYYY to the appropriate year-->
+                        <date when-iso="1403">1403</date>
+                        <!-- Choose the appropriate code based on the type of record you are working with. 
+                - Mercer’s Indenture:  YMAAI
+                - Mercer’s Account Rolls: YMAAR
+                - Mercers’ Pageant Documents: YMAAP
+                - Mercers’ Chartulary: YMAAC
+            -->
+                        <seg ana="taxon:YAYMB*">YAYMB*</seg>
+                    </head>
+                    <!-- xml:lang: eng= english, lat= latin, ang=anglo-saxon. Type will always be transcription in this section. the xml:id here must match the xml:id above with the addition of a -transcription -->
+                    <div xml:lang="anm" type="transcription" xml:id="yorkc-ridp367235098-transcription">
+                        <div>
+                            <head>
+                                <!--Membrane/Folio number goes here. Use mb for membrane and f for folio]--> mb #</head>
+                            <!-- Memberane/Folio number is encoded below. Under type, use "membrane" for membrance and "folio" for folio -->
+                            <pb n="148v" type="folio"/>
+                            <ab>
+                                <ab>
+                                    1403
+                                    A/Y Memorandum Book Y: E20
+                                </ab> 
+                                <ab>
+                                    De la pagyne de<lb/>moyses &amp;<lb/>pharao &amp;c<lb/>hosyers
+                                </ab>
+                                <ab>
+                                    <foreign xml:lang="lat">plus in xvij<lb/>fol<ex>io</ex> in<lb/>pr<ex>ese</ex>nci lib<ex>ro</ex></foreign>
+                                </ab>
+                                <ab>
+                                    f148v (8 May)
+                                    ffait a remembre q<ex>ue</ex> le viij<hi rend="superscript">me</hi> jour de May lan du regne
+                                    n<ex>ot</ex>res<ex>eignour</ex> le <rs ref="32283" type="Person_Royalty">Roy henry quart</rs> puis le conquest denglet<ex>erre</ex>
+                                    quart accorde est &amp; assentu de<ex>u</ex>aunt le <rs ref="eats:372732" type="Collective_Office">Maior de la Citee
+                                        <rs ref="eats:37840" type="Place_PA_Settlement">deu<ex>er</ex>wyk</rs></rs> les <rs ref="eats:297883" type="Collective_Office">Chaumbreleyns</rs> &amp; autres bones gent<ex>z</ex> de mesme la
+                                    Citee en la <rs ref="eats:372862" type="Place_F_TownHall">Chaumbre de counseil sur le <rs ref="eats:366371" type="Place_F_Bridge">pount de Ouse</rs></rs> en
+                                    <rs ref="eats:37840" type="Place_PA_Settlement">Eu<ex>er</ex>wyk</rs> entre les <rs ref="eats:39060" type="Collective_Occupations">gentz de Drapercraft</rs> et les <rs ref="eats:58759" type="Collective_Occupations">gentz de
+                                        Hosyercraft</rs> Deu<ex>er</ex>wyk q<ex>ue</ex> touz hosyers q<ex>ui</ex> vendou<ex>n</ex>t chaunces
+                                    ou facent chaunces a vendre ouesq<ex>ue</ex> les vphalderes quels
+                                    vendou<ex>n</ex>t drape de leyne dasore enaua<ex>u</ex>nt aueront la charge del
+                                    <rs ref="eats:40362" type="Drama_Type">pagyne de Moyses &amp; Pharao</rs> &amp;c en <rs ref="eats:40362" type="Drama_Type">la Iue de corpore chr<ex>ist</ex>i</rs>
+                                    horspris les <rs ref="eats:372515" type="Collective_GuildsOccupational">Dubbers</rs> &amp; ceux qui sount assignez a eux.
+                                </ab>
+                            </ab>
+                        </div>
+                        <!-- The section below is only needed if your record also contains a translation. The div type will always be translation in this section. The xml:id must match the one above, except with a -translation at the end.  -->
+                        <div xml:lang="eng" type="translation" xml:id="yorkc-ridp367235098-translation">
+                            <div>
+                                <head>
+                                    <!--Membrane/Folio number goes here. Use mb for membrance and f for folio]-->
+                                    mb 1</head>
+                                <!-- Memberane/Folio number is encoded below. Under type, use "membrane" for membrance and "folio" for folio -->
+                                <pb n="148v" type="folio"/>
+                                <ab>
+                                    <ab>
+                                        1403
+                                        A/Y Memorandum Book Y: E20
+                                    </ab>
+                                    <ab>
+                                        Of the pageant<lb/>of Moses and<lb/>Pharaoh etc,<lb/>Hosiers
+                                    </ab> 
+                                    <ab>
+                                        More on the<lb/>seventeenth<lb/>folio in the<lb/>present book
+                                    </ab>
+                                    <ab>
+                                        f 148v (8 May)
+                                        Let it be remembered that the eighth day of May, the year of
+                                        the reign of our lord the King Henry the fourth, since the con-
+                                        quest of England the fourth, it is accorded and assented before
+                                        the mayor of the city of York, the chamberlains, and other good
+                                        people of the same city in the Council Chamber on Ouse Bridge
+                                        in York between the people of drapercraft and the people of
+                                        hosiercraft of York, that all hosiers who sell stockings or make
+                                        stockings to sell with the upholders who sell cloth of wool
+                                        henceforth will have the charge of the pageant of Moses and
+                                        Pharaoh, etc, in the play of Corpus Christi, except the Dubbers
+                                        and those who are assigned to them.
+                                    </ab>
+                                </ab>
+                            </div>
+                        </div>
+                    </div>
+                </body>
+            </text>
         </group>
     </text>
 </TEI>
