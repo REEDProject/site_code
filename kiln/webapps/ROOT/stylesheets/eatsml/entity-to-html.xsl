@@ -154,8 +154,13 @@
                   <xsl:when test="contains(@href, 'masl.library.utoronto.ca')">Mayors and Sheriffs of London</xsl:when>
                   <xsl:when test="contains(@href, 'odnb') or contains (@href, 'oxforddnb')">Oxford Dictionary of National Biography</xsl:when>
                   <xsl:when test="contains(@href, 'oed')">Oxford English Dictionary</xsl:when>
-                  <xsl:when test="contains(@href, 'reed.library.utoronto.ca') or 
-                                contains(@href, 'library2.utm.utoronto.ca/otra/reed/')">Patrons &amp; Performances</xsl:when>
+                  <xsl:when test="contains(@href, 'reed.library.utoronto.ca') 
+                    or contains(@href, 'library2.utm.utoronto.ca/otra/reed/')">
+                    <a href="{replace(@href, 'reed\.library\.utoronto\.ca', 
+                      'library2.utm.utoronto.ca/otra/reed')}">
+                      Patrons &amp; Performances
+                    </a>
+                  </xsl:when>
                   <xsl:when test="contains(@href, 'poms.ac.uk')">People of Medieval Scotland</xsl:when>
                   <xsl:when test="contains(@href, 'viaf.org')">Virtual International Authority File (VIAF)</xsl:when>
                   <xsl:when test="contains(@href, 'wikidata.org')">Wikidata</xsl:when>
