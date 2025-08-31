@@ -22491,7 +22491,7 @@ SO content-checked
                                         rend="italic">Richard Barnes</hi>.</title> | 1632.
                                     <title>STC</title>: 12027.</p></note>
                         <idno type="publication" sameAs="#STC"/>
-                        <idno type="pubNumber">1632</idno>
+                        <idno type="pubNumber">12027</idno>
                     </bibl>
                     <bibl xml:id="BHJTGE">
                         <title type="edName">John Taylor, The Great Eater of Kent</title>
@@ -33223,7 +33223,7 @@ HistBack -->.</ab>
 <msDesc xml:id="SWCLDC">
 <msIdentifier>
 <settlement>Kew</settlement>
-<repository>The National Archives</repository>
+    <repository sameAs="#TNA"/>
 <idno type="shelfmark">SP12/287</idno>
 <msName>John Chamberlain's Letter to Dudley Carleton</msName>
 </msIdentifier>
@@ -33265,11 +33265,13 @@ By THOMAS MIDELTON Gent.|
 Printed for <hi rend="italic">Francis Constable</hi> dwelling at the | signe
 of the <hi rend="italic">Crane</hi> in <hi rend="italic">Pauls</hi> | Church-yard. | 1630 .|
 <title>STC</title>: 17877. 1st edition. SR 8 April 1630.</p></note>
+    <idno type="publication" sameAs="#STC"/>
+    <idno type="pubNumber">17877</idno>
 </bibl>
 <msDesc xml:id="SWCSHL">
 <msIdentifier>
 <settlement>Kew</settlement>
-<repository>The National Archives</repository>
+    <repository sameAs="#TNA"/>
 <idno type="shelfmark">REQ 2/266</idno>
 <msName>Court of Requests Case of Robert Shawe et al v. Francis
 Langley</msName>
@@ -33357,11 +33359,13 @@ Meres Maister</hi> | of Artes of both Vni- | uersities. |
 Printed by P. Short, for Cuthbert Burbie, and | are to be
 solde at his shop at the Royall | Exchange. 1598.
 <title>STC</title>: 17834.</p></note>
+    <idno type="publication" sameAs="#STC"/>
+    <idno type="pubNumber">17834</idno>
 </bibl>
 <msDesc xml:id="SWJCLD">
 <msIdentifier>
 <settlement>Kew</settlement>
-<repository>The National Archives</repository>
+    <repository sameAs="#TNA"/>   
 <idno type="shelfmark">SP12/285</idno>
 <msName>John Chamberlain's Letter to Dudley Carleton</msName>
 </msIdentifier>
@@ -33391,7 +33395,7 @@ boards, red leather spine and corners) titled on spine: 'STATE
 <msDesc xml:id="SWJMAD">
 <msIdentifier>
 <settlement>London</settlement>
-<repository>British Library</repository>
+    <repository sameAs="#BL"/>
 <idno type="shelfmark">Harley MS 5353</idno>
 <msName>John Manningham's Diary</msName>
 </msIdentifier>
@@ -33484,6 +33488,8 @@ spurgal'd, swicht, and snaffled.</hi> | Printed at London for
 Tower, and are to be sold | by <hi rend="italic">Edward Marchant</hi>, in
 Pauls Church- | yard. 1615. <title>STC</title>: 23741. 2nd
 ed.</p></note>
+    <idno type="publication" sameAs="#STC"/>
+    <idno type="pubNumber">23741</idno>   
 </bibl>
 <msDesc xml:id="SWJWAB">
 <msIdentifier>
@@ -33515,7 +33521,7 @@ parchment over pasteboard binding, no title on spine. Folios
 <msDesc xml:id="SWLLMB">
 <msIdentifier>
 <settlement>London</settlement>
-<repository>The London Archives</repository>
+    <repository sameAs="#LA"/>
 <idno type="shelfmark">COL/RMD/PA/01/002</idno>
 <msName>Letter from the Lord Mayor to Lord Burghley</msName>
 </msIdentifier>
@@ -33535,7 +33541,7 @@ margin.</ab>
 <msDesc xml:id="SWPC10">
 <msIdentifier>
 <settlement>Kew</settlement>
-<repository>The National Archives</repository>
+    <repository sameAs="#TNA"/>
 <idno type="shelfmark">PC 2/22</idno>
 <msName>Privy Council Letter regarding a Seditious Play</msName>
 </msIdentifier>
@@ -33562,7 +33568,7 @@ title on spine: 'ELIZABETH. | VOL. XIII. | COUNCIL | REGISTER.
 <msDesc xml:id="SWPCWD">
 <msIdentifier>
 <settlement>Kew</settlement>
-<repository>The National Archives</repository>
+    <repository sameAs="#TNA"/>
 <idno type="shelfmark">PC2/23</idno>
 <msName>Privy Council Warrant for Release of Players</msName>
 </msIdentifier>
@@ -33582,7 +33588,7 @@ VOL. XIV. | COUNCIL<lb/>REGISTER. | 20. SEP. 1597. | TO | 30.JULY.
 <msDesc xml:id="SWPGOP">
 <msIdentifier>
 <settlement>London</settlement>
-<repository>British Library</repository>
+    <repository sameAs="#BL"/>
 <idno type="shelfmark">Additional MS 34,110</idno>
 <msName>Paris Garden Overseers of the Poor Accounts</msName>
 </msIdentifier>
@@ -33622,7 +33628,7 @@ edges, gold-stamped title on spine: ACCOMPTS | OF | OVERSEERS
 <msDesc xml:id="SWPO11">
 <msIdentifier>
 <settlement>Kew</settlement>
-<repository>The National Archives</repository>
+    <repository sameAs="#TNA"/>
 <idno type="shelfmark">PC2/25</idno>
 <msName>Privy Council Letter to the JPs of Surrey</msName>
 </msIdentifier>
@@ -33667,11 +33673,13 @@ audience while its author ran away.'<lb/></p></note>
 <note type="techDesc"><p>THE PLOT OF THE PLAY, CALLED | <hi rend="italic">ENGLANDS JOY</hi>. | To be
 Playd at the Swan this 6. of Nouember. 1602. | 2nd ed.
 <title>STC</title>: 24636.7.</p></note>
+    <idno type="publication" sameAs="#STC"/>
+    <idno type="pubNumber">24636.7</idno>
 </bibl>
 <msDesc xml:id="SWROSL">
 <msIdentifier>
 <settlement>Kew</settlement>
-<repository>The National Archives</repository>
+    <repository sameAs="#TNA"/>
 <idno type="shelfmark">REQ 1/19</idno>
 <msName>Court of Requests Order re Robert Shaw et al v. Francis
 Langley</msName>
@@ -33744,6 +33752,8 @@ hence either</hi> | <hi rend="italic">finde reason to censure others mo-</hi>
 | <hi rend="italic">destly, or sustaine their owne</hi> | <hi rend="italic">wrongs
 lightly.</hi> | <hi rend="italic">LONDON</hi> | Printed by NICHOLAS OKES.
 1614. <title>STC</title>: 24636</p></note>
+    <idno type="publication" sameAs="#STC"/>
+    <idno type="pubNumber">24636</idno>
 </bibl>
                 </listBibl>
             </div>
