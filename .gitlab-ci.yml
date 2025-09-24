@@ -2,12 +2,10 @@ image: alpine
 
 .prepare:ssh:
   before_script:
-    # Update package index and upgrade OpenSSL first
+    # Option 1: Force openssh reinstall
     - apk update
-    - apk upgrade openssl
-    
-    # Install or update openssh with the corrected OpenSSL version
-    - "command -v ssh-agent >/dev/null || ( apk add --no-cache --update openssh )"
+    - apk del openssh openssl || true
+    - apk add --no-cache openssl openssh
     
     # Start SSH agent
     - eval $(ssh-agent -s)
