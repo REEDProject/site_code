@@ -2,15 +2,25 @@ image: alpine
 
 .prepare:ssh:
   before_script:
+    # Update package index and upgrade OpenSSL first
+    - apk update
+    - apk upgrade openssl
+    
+    # Install or update openssh with the corrected OpenSSL version
     - "command -v ssh-agent >/dev/null || ( apk add --no-cache --update openssh )"
+    
+    # Start SSH agent
     - eval $(ssh-agent -s)
 
+    # Set up SSH key
     - chmod 400 "${SSH_PRIVATE_KEY}"
     - ssh-add "${SSH_PRIVATE_KEY}"
 
+    # Create and configure SSH directory
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
 
+    # Set up known hosts
     - cp "${SSH_KNOWN_HOSTS}" ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
 
