@@ -24,4 +24,5 @@
       <li>{% with uri=si.subject_identifier %}<a href="{{ uri }}">{{ uri }}</a>{% endwith %}</li>
       {% endfor %}</ul>{% endif %}{% endwith %}</td>
   <td>{% with creator=entity.creator.username %}{% if creator %}{{ creator }}<br/>{% endif %}{% endwith %}{{ entity.created }}</td>
+  <td><code>&lt;rs ref="eats:{{ entity.get_id }}" type="{% if first_entity_type %}{{ first_entity_type }}{% endif %}"&gt;</code></td>
 </tr>
