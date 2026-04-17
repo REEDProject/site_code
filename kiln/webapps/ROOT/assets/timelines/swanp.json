@@ -2,7 +2,7 @@
     "swanp-01-0001": {
         "title": "Deed between Francis Langley, Draper of London, and Richard Cure",
         "description": "Francis Langley acquires the lordship of Paris Garden Manor from Thomas Cure",
-        "record_id": "swanp-rid176",
+        "record_id": "https://dev.ereed.org/collections/swanp/appendix-1/",
         "regions": {
             "type": "featurecollection",
             "crs": {
@@ -1677,7 +1677,7 @@
             "display": "1589-05-24"
         },
         "ereed_url": null,
-        "record_url": "https://dev.ereed.org/records/swanp-rid176/"
+        "record_url": "https://dev.ereed.org/records/https://dev.ereed.org/collections/swanp/appendix-1//"
     },
     "swanp-01-0002": {
         "title": "Letter from the Lord Mayor to Lord Burghley",
@@ -2363,21 +2363,42 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Greenwich Palace",
-                        "place_type": "residence",
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
                         "is_approximate": false,
                         "placeholder_coordinates": null,
-                        "container": 14,
-                        "patrons_label_flag": 3,
-                        "symbol_flag": 3,
-                        "notes": "Point placed on location of the great hall, as referenced in Julian Bowsher, \"The Chapel Royal at Greenwich Palace\", plate 16A, pg. 162.",
-                        "pk": "2132"
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
                     },
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            -0.005262494087219,
-                            51.48388374496173
+                            -0.09543165564536202,
+                            51.50729173227136
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Swan Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "Source 1627 map",
+                        "pk": "572"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.10244999999999999,
+                            51.50758700000001
                         ]
                     }
                 }
@@ -2386,7 +2407,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -2521,7 +2542,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": null,
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -2635,7 +2656,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -2791,7 +2812,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -2805,7 +2826,7 @@
     },
     "swanp-01-0008": {
         "title": "Richard Topcliffe\u2019s Letter to Sir Robert Cecil",
-        "description": "Robert Topcliffe's Letter re The Isle of Dogs",
+        "description": "Robert Topcliffe's Letter regarding <title>The Isle of Dogs</title>",
         "record_id": "swanp-rid34",
         "regions": {
             "type": "featurecollection",
@@ -2842,7 +2863,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": null,
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -2856,7 +2877,7 @@
     },
     "swanp-01-0009": {
         "title": "Privy Council Letter regarding a Seditious Play",
-        "description": "Privy Council Letter regarding The Isle of Dogs",
+        "description": "Privy Council Letter regarding <title>The Isle of Dogs</title>",
         "record_id": "swanp-rid23",
         "regions": {
             "type": "featurecollection",
@@ -2893,7 +2914,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Performance",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -2944,7 +2965,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -2959,7 +2980,7 @@
     "swanp-01-0011": {
         "title": "Court of Requests Case of Robert Shawe et al v. Francis Langley",
         "description": "Court of Requests Case of Robert Shawe et al v. Francis Langley \n\n",
-        "record_id": "swanp-rid16",
+        "record_id": "swanp-rid16, swanp-rid15, swanp-rid33",
         "regions": {
             "type": "featurecollection",
             "crs": {
@@ -3010,23 +3031,65 @@
                             51.50729173227136
                         ]
                     }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Curtain Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1606"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.08040249318621445,
+                            51.523016418141054
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Theatre Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1614"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07982475069439202,
+                            51.52456411521703
+                        ]
+                    }
                 }
             ]
         },
         "emlot_id": null,
         "ereed_id": null,
         "category": "Litigation",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
-            "from": "1597-11",
-            "to": "1598-02-06",
+            "from": null,
+            "to": null,
             "precision": null,
-            "when": null,
-            "sort": "1597-11",
-            "display": "1597-11\u20141597/8-02-06"
+            "when": "1597-02-06",
+            "sort": "1597-02-06",
+            "display": "1597-02-06"
         },
         "ereed_url": null,
-        "record_url": "https://dev.ereed.org/records/swanp-rid16/"
+        "record_url": "https://dev.ereed.org/records/swanp-rid16, swanp-rid15, swanp-rid33/"
     },
     "swanp-01-0012": {
         "title": "Privy Council Letter to the Master of the Revels and the JPs of Middlesex and Surrey",
@@ -3151,7 +3214,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -3244,7 +3307,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -3259,758 +3322,6 @@
     "swanp-01-0014": {
         "title": "St Saviour's Vestry Minutes",
         "description": "Vestry Minutes regarding Southwark playhouse contributions to the poor",
-        "record_id": "swanp-rid10",
-        "regions": {
-            "type": "featurecollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "epsg:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "St Saviour's Church",
-                        "place_type": "church",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1554"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.08972035381071101,
-                            51.50607134365256
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Swan Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "Source 1627 map",
-                        "pk": "572"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.10244999999999999,
-                            51.50758700000001
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Rose Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 1,
-                        "symbol_flag": 1,
-                        "notes": "",
-                        "pk": "566"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09543165564536202,
-                            51.50729173227136
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": null,
-        "ereed_id": null,
-        "category": "Regulation",
-        "time_period": "First Period: 1595-1602",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1598-05-01",
-            "sort": "1598-05-01",
-            "display": "1598-05-01"
-        },
-        "ereed_url": null,
-        "record_url": "https://dev.ereed.org/records/swanp-rid10/"
-    },
-    "swanp-01-0015": {
-        "title": "Court of Requests Order re Robert Shaw et al v. Francis Langley",
-        "description": "May Court of Requests Order re Robert Shawe et al v. Francis Langley",
-        "record_id": "swanp-rid33",
-        "regions": {
-            "type": "featurecollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "epsg:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Whitehall Palace",
-                        "place_type": "residence",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 58,
-                        "patrons_label_flag": 3,
-                        "symbol_flag": 3,
-                        "notes": "'Preface', in Survey of London: Volume 13, St Margaret, Westminster, Part II: Whitehall I, ed. Montagu H Cox and Philip Norman (London, 1930), pp. xxi-xxii. British History Online http://www.british-history.ac.uk/survey-london/vol13/pt2/xxi-xxii [accessed 8 January 2020].\r\n\r\n\"Palace of Whitehall,\" (31 October 2019). Wikipedia, https://en.wikipedia.org/wiki/Palace_of_Whitehall [accessed 08 January 2020].",
-                        "pk": "1196"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.12573242565393783,
-                            51.5049729397533
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "St Saviour Southwark",
-                        "place_type": "London area parish",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 3,
-                        "symbol_flag": 3,
-                        "notes": "",
-                        "pk": "1525"
-                    },
-                    "geometry": {
-                        "type": "MultiPolygon",
-                        "coordinates": [
-                            [
-                                [
-                                    [
-                                        -0.10906819294157899,
-                                        51.50851305173348
-                                    ],
-                                    [
-                                        -0.1090259209192577,
-                                        51.508518793792284
-                                    ],
-                                    [
-                                        -0.10827308779540445,
-                                        51.50853767604724
-                                    ],
-                                    [
-                                        -0.10715970145920427,
-                                        51.508538746183085
-                                    ],
-                                    [
-                                        -0.10498884621837545,
-                                        51.508571775572776
-                                    ],
-                                    [
-                                        -0.1036278473589352,
-                                        51.508567345750144
-                                    ],
-                                    [
-                                        -0.10219862864020313,
-                                        51.50858122228135
-                                    ],
-                                    [
-                                        -0.10190154679261929,
-                                        51.50845376591228
-                                    ],
-                                    [
-                                        -0.1012022415815891,
-                                        51.508399619365626
-                                    ],
-                                    [
-                                        -0.10045414796915679,
-                                        51.508418435135766
-                                    ],
-                                    [
-                                        -0.09940469922334791,
-                                        51.50834908909094
-                                    ],
-                                    [
-                                        -0.09936011403917742,
-                                        51.50822940207254
-                                    ],
-                                    [
-                                        -0.09803335267015943,
-                                        51.508323672972324
-                                    ],
-                                    [
-                                        -0.09700177680523357,
-                                        51.508369606258924
-                                    ],
-                                    [
-                                        -0.09632504356234428,
-                                        51.50832293438499
-                                    ],
-                                    [
-                                        -0.09590339772416691,
-                                        51.508285158507036
-                                    ],
-                                    [
-                                        -0.0955009021712427,
-                                        51.50824531387886
-                                    ],
-                                    [
-                                        -0.09507792592811008,
-                                        51.50814803142668
-                                    ],
-                                    [
-                                        -0.0948394708309123,
-                                        51.50807867937921
-                                    ],
-                                    [
-                                        -0.09455673597670891,
-                                        51.5080024310873
-                                    ],
-                                    [
-                                        -0.09400066713774008,
-                                        51.50784092169528
-                                    ],
-                                    [
-                                        -0.09350691802325795,
-                                        51.507667298390444
-                                    ],
-                                    [
-                                        -0.09307044279638639,
-                                        51.507491748806174
-                                    ],
-                                    [
-                                        -0.09273722621647089,
-                                        51.50736355861419
-                                    ],
-                                    [
-                                        -0.09273111228266825,
-                                        51.507418659138345
-                                    ],
-                                    [
-                                        -0.09243279255661228,
-                                        51.50734956597341
-                                    ],
-                                    [
-                                        -0.09161709083758461,
-                                        51.50725302133166
-                                    ],
-                                    [
-                                        -0.09107191227478975,
-                                        51.50716087289752
-                                    ],
-                                    [
-                                        -0.09041763152413322,
-                                        51.50703363676544
-                                    ],
-                                    [
-                                        -0.09025528888429606,
-                                        51.50699530404469
-                                    ],
-                                    [
-                                        -0.08951908357635222,
-                                        51.50682152207916
-                                    ],
-                                    [
-                                        -0.08894253674217344,
-                                        51.506750266965255
-                                    ],
-                                    [
-                                        -0.08815392012726249,
-                                        51.506662458061335
-                                    ],
-                                    [
-                                        -0.08821498221040439,
-                                        51.50644934974114
-                                    ],
-                                    [
-                                        -0.08820462104191822,
-                                        51.50640540168737
-                                    ],
-                                    [
-                                        -0.08752101568712034,
-                                        51.50597740469547
-                                    ],
-                                    [
-                                        -0.08809404382034891,
-                                        51.50547662737711
-                                    ],
-                                    [
-                                        -0.0878751252839206,
-                                        51.50538740416927
-                                    ],
-                                    [
-                                        -0.088042138264908,
-                                        51.5052360301702
-                                    ],
-                                    [
-                                        -0.08831751322199388,
-                                        51.50523853460374
-                                    ],
-                                    [
-                                        -0.08855941695158076,
-                                        51.50521582918861
-                                    ],
-                                    [
-                                        -0.08888183129022606,
-                                        51.50538287562692
-                                    ],
-                                    [
-                                        -0.08916475209566072,
-                                        51.50518368194268
-                                    ],
-                                    [
-                                        -0.08921963287133562,
-                                        51.505136736176
-                                    ],
-                                    [
-                                        -0.08959268703918336,
-                                        51.5048176217735
-                                    ],
-                                    [
-                                        -0.08876328780868709,
-                                        51.50436858822178
-                                    ],
-                                    [
-                                        -0.08898981866883812,
-                                        51.50405352406133
-                                    ],
-                                    [
-                                        -0.08913622339889163,
-                                        51.50383463572821
-                                    ],
-                                    [
-                                        -0.08925367183410456,
-                                        51.50366999866672
-                                    ],
-                                    [
-                                        -0.0893574874365148,
-                                        51.5035104997953
-                                    ],
-                                    [
-                                        -0.08959281998980403,
-                                        51.50330949459058
-                                    ],
-                                    [
-                                        -0.08995494255894804,
-                                        51.50300019214311
-                                    ],
-                                    [
-                                        -0.08945499057744362,
-                                        51.502785050290726
-                                    ],
-                                    [
-                                        -0.08896220176206057,
-                                        51.50264486191166
-                                    ],
-                                    [
-                                        -0.08846653833774401,
-                                        51.50250385501558
-                                    ],
-                                    [
-                                        -0.08864054021162604,
-                                        51.502314023500524
-                                    ],
-                                    [
-                                        -0.08911980758539897,
-                                        51.50206058906753
-                                    ],
-                                    [
-                                        -0.08981609715200671,
-                                        51.50237376186294
-                                    ],
-                                    [
-                                        -0.090200518601447,
-                                        51.50251846312794
-                                    ],
-                                    [
-                                        -0.09035015097828882,
-                                        51.50257478685221
-                                    ],
-                                    [
-                                        -0.09034689009383896,
-                                        51.502579292747114
-                                    ],
-                                    [
-                                        -0.09026759939696083,
-                                        51.50268884099234
-                                    ],
-                                    [
-                                        -0.09061954495221815,
-                                        51.50281948459684
-                                    ],
-                                    [
-                                        -0.09100433111764489,
-                                        51.502962557797616
-                                    ],
-                                    [
-                                        -0.09130813865180412,
-                                        51.5030688965654
-                                    ],
-                                    [
-                                        -0.0917261813473655,
-                                        51.50320882641949
-                                    ],
-                                    [
-                                        -0.09176366265426163,
-                                        51.50322137206896
-                                    ],
-                                    [
-                                        -0.09144550722843153,
-                                        51.50359178366422
-                                    ],
-                                    [
-                                        -0.09140697040103103,
-                                        51.50363665035185
-                                    ],
-                                    [
-                                        -0.09143051973622157,
-                                        51.50364110022485
-                                    ],
-                                    [
-                                        -0.09212964169091724,
-                                        51.50377320947485
-                                    ],
-                                    [
-                                        -0.09281536437483312,
-                                        51.503891424170725
-                                    ],
-                                    [
-                                        -0.09296227755136044,
-                                        51.50361424553128
-                                    ],
-                                    [
-                                        -0.09299990977521998,
-                                        51.50358035869442
-                                    ],
-                                    [
-                                        -0.09306685672177181,
-                                        51.503460698291256
-                                    ],
-                                    [
-                                        -0.09315821718281578,
-                                        51.503281357515256
-                                    ],
-                                    [
-                                        -0.09340782216934508,
-                                        51.502964211287114
-                                    ],
-                                    [
-                                        -0.09361296593921681,
-                                        51.50267867171793
-                                    ],
-                                    [
-                                        -0.09397499059198249,
-                                        51.50222535328725
-                                    ],
-                                    [
-                                        -0.09472781024109773,
-                                        51.502456480948815
-                                    ],
-                                    [
-                                        -0.09554540201545698,
-                                        51.502688655344095
-                                    ],
-                                    [
-                                        -0.09610211045491404,
-                                        51.502869003297754
-                                    ],
-                                    [
-                                        -0.09682856185548881,
-                                        51.50307641301874
-                                    ],
-                                    [
-                                        -0.09684431381399036,
-                                        51.503080910476385
-                                    ],
-                                    [
-                                        -0.09729799537185711,
-                                        51.50253151838346
-                                    ],
-                                    [
-                                        -0.0976870709927621,
-                                        51.502005848892495
-                                    ],
-                                    [
-                                        -0.09785604858929782,
-                                        51.50178364701421
-                                    ],
-                                    [
-                                        -0.09895895158610518,
-                                        51.502070431354355
-                                    ],
-                                    [
-                                        -0.09992414105324772,
-                                        51.50198256478248
-                                    ],
-                                    [
-                                        -0.10072499272226543,
-                                        51.50190965863911
-                                    ],
-                                    [
-                                        -0.10091881143136476,
-                                        51.50203030840699
-                                    ],
-                                    [
-                                        -0.10098326734962808,
-                                        51.502070431354355
-                                    ],
-                                    [
-                                        -0.10117917284510604,
-                                        51.502257182206264
-                                    ],
-                                    [
-                                        -0.10134846664859697,
-                                        51.50245215342154
-                                    ],
-                                    [
-                                        -0.10183224985326784,
-                                        51.50236957300575
-                                    ],
-                                    [
-                                        -0.10211063686151269,
-                                        51.5023368002597
-                                    ],
-                                    [
-                                        -0.10280340952380196,
-                                        51.5022552412691
-                                    ],
-                                    [
-                                        -0.10286279714721618,
-                                        51.502248249197585
-                                    ],
-                                    [
-                                        -0.10318684552134987,
-                                        51.50221596173883
-                                    ],
-                                    [
-                                        -0.10348835426666288,
-                                        51.50219412659093
-                                    ],
-                                    [
-                                        -0.10443100500335148,
-                                        51.502123711970235
-                                    ],
-                                    [
-                                        -0.10491661627961019,
-                                        51.50208873304769
-                                    ],
-                                    [
-                                        -0.10540554233932146,
-                                        51.50206570173348
-                                    ],
-                                    [
-                                        -0.10574178444508302,
-                                        51.50204734075682
-                                    ],
-                                    [
-                                        -0.10590120127205871,
-                                        51.50206419136383
-                                    ],
-                                    [
-                                        -0.10600688806524368,
-                                        51.502089690378874
-                                    ],
-                                    [
-                                        -0.10609155428074206,
-                                        51.50216243630647
-                                    ],
-                                    [
-                                        -0.10621743699813373,
-                                        51.50225250293156
-                                    ],
-                                    [
-                                        -0.10632091663069063,
-                                        51.502699100292716
-                                    ],
-                                    [
-                                        -0.10637106597971104,
-                                        51.50286884001746
-                                    ],
-                                    [
-                                        -0.10649842642575792,
-                                        51.50319923712578
-                                    ],
-                                    [
-                                        -0.1066911482918486,
-                                        51.503516414709324
-                                    ],
-                                    [
-                                        -0.10674849045141394,
-                                        51.50378857932619
-                                    ],
-                                    [
-                                        -0.10684718565670583,
-                                        51.50398289479835
-                                    ],
-                                    [
-                                        -0.10686258817059062,
-                                        51.50407117688666
-                                    ],
-                                    [
-                                        -0.1067766337709317,
-                                        51.50430533870312
-                                    ],
-                                    [
-                                        -0.10659805767562056,
-                                        51.504566556439066
-                                    ],
-                                    [
-                                        -0.10656593302273694,
-                                        51.50478969083951
-                                    ],
-                                    [
-                                        -0.1066572710258843,
-                                        51.50506954178659
-                                    ],
-                                    [
-                                        -0.10672773577507048,
-                                        51.50525507314333
-                                    ],
-                                    [
-                                        -0.10677811958440427,
-                                        51.505327264933584
-                                    ],
-                                    [
-                                        -0.1071424340428321,
-                                        51.505552040617324
-                                    ],
-                                    [
-                                        -0.10758948962713348,
-                                        51.50580432113158
-                                    ],
-                                    [
-                                        -0.1077970902892909,
-                                        51.50594685880883
-                                    ],
-                                    [
-                                        -0.10789783365345555,
-                                        51.50605873448665
-                                    ],
-                                    [
-                                        -0.10792101647600248,
-                                        51.50608447728811
-                                    ],
-                                    [
-                                        -0.10797577328413899,
-                                        51.50623525578242
-                                    ],
-                                    [
-                                        -0.10797541575465402,
-                                        51.506427972317184
-                                    ],
-                                    [
-                                        -0.10799932351761994,
-                                        51.50645617790062
-                                    ],
-                                    [
-                                        -0.1081062760370434,
-                                        51.50658235776443
-                                    ],
-                                    [
-                                        -0.10830003635561157,
-                                        51.506782963291
-                                    ],
-                                    [
-                                        -0.10836348256750504,
-                                        51.50695410575529
-                                    ],
-                                    [
-                                        -0.10842490667168579,
-                                        51.50703599181292
-                                    ],
-                                    [
-                                        -0.10854352201841759,
-                                        51.50730200516445
-                                    ],
-                                    [
-                                        -0.10865353419968996,
-                                        51.5075916733894
-                                    ],
-                                    [
-                                        -0.10869843918413,
-                                        51.507704223241106
-                                    ],
-                                    [
-                                        -0.10878624052000989,
-                                        51.50779367282835
-                                    ],
-                                    [
-                                        -0.10879269761024367,
-                                        51.50794635225543
-                                    ],
-                                    [
-                                        -0.1088874240586427,
-                                        51.508075766388544
-                                    ],
-                                    [
-                                        -0.10900383673632573,
-                                        51.50837207976905
-                                    ],
-                                    [
-                                        -0.10906819294157899,
-                                        51.50851305173348
-                                    ]
-                                ]
-                            ]
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Swan Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "Source 1627 map",
-                        "pk": "572"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.10244999999999999,
-                            51.50758700000001
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": null,
-        "ereed_id": null,
-        "category": "Regulation",
-        "time_period": "First Period: 1595-1602",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1598-05-29",
-            "sort": "1598-05-29",
-            "display": "1598-05-29"
-        },
-        "ereed_url": null,
-        "record_url": "https://dev.ereed.org/records/swanp-rid33/"
-    },
-    "swanp-01-0016": {
-        "title": "St Saviour's Vestry Minutes",
-        "description": "Vestry petition to close the playhouses in the parish",
         "record_id": "swanp-rid11",
         "regions": {
             "type": "featurecollection",
@@ -4089,7 +3400,151 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1598-05-01",
+            "sort": "1598-05-01",
+            "display": "1598-05-01"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/swanp-rid11/"
+    },
+    "swanp-01-0015": {
+        "title": "Court of Requests Order re Robert Shaw et al v. Francis Langley",
+        "description": "May Court of Requests Order re Robert Shawe et al v. Francis Langley",
+        "record_id": "swanp-rid33",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Swan Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "Source 1627 map",
+                        "pk": "572"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.10244999999999999,
+                            51.50758700000001
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "First Period: 1596-1602",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1598-05-29",
+            "sort": "1598-05-29",
+            "display": "1598-05-29"
+        },
+        "ereed_url": null,
+        "record_url": "https://dev.ereed.org/records/swanp-rid33/"
+    },
+    "swanp-01-0016": {
+        "title": "St Saviour's Vestry Minutes",
+        "description": "Vestry petition to close the playhouses in the parish",
+        "record_id": "swanp-rid10",
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "St Saviour's Church",
+                        "place_type": "church",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1554"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.08972035381071101,
+                            51.50607134365256
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Swan Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "Source 1627 map",
+                        "pk": "572"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.10244999999999999,
+                            51.50758700000001
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536202,
+                            51.50729173227136
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Regulation",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -4099,7 +3554,7 @@
             "display": "1598-07-19"
         },
         "ereed_url": null,
-        "record_url": "https://dev.ereed.org/records/swanp-rid11/"
+        "record_url": "https://dev.ereed.org/records/swanp-rid10/"
     },
     "swanp-01-0017": {
         "title": "Meres, Palladis Tamia",
@@ -4140,7 +3595,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Performance",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -4254,7 +3709,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -4326,7 +3781,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -4482,7 +3937,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -4497,7 +3952,7 @@
     "swanp-01-0021": {
         "title": "Lease of Paris Garden Manor to Hugh Browker and his Son Thomas Browker",
         "description": "Lease of Paris Garden Manor to Hugh Browker and his Son Thomas",
-        "record_id": "swanp-rid256",
+        "record_id": "https://dev.ereed.org/collections/swanp/appendix-1/",
         "regions": {
             "type": "featurecollection",
             "crs": {
@@ -4931,7 +4386,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Deeds & Leases",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -4941,7 +4396,7 @@
             "display": "1601-12-01"
         },
         "ereed_url": null,
-        "record_url": "https://dev.ereed.org/records/swanp-rid256/"
+        "record_url": "https://dev.ereed.org/records/https://dev.ereed.org/collections/swanp/appendix-1//"
     },
     "swanp-01-0022": {
         "title": "PC Letters to the JPs of Middlesex and Surrey and the Lord Mayor",
@@ -5108,7 +4563,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
@@ -5121,9 +4576,9 @@
         "record_url": "https://dev.ereed.org/records/swanp-rid7/"
     },
     "swanp-01-0023": {
-        "title": "Appendix 3?",
+        "title": "Chancery Court Case re Paris Garden Manor: Phillips v. Turnour et al.",
         "description": "Langley's family continue in residence in Paris Garden manor house",
-        "record_id": "Appendix 3",
+        "record_id": "https://dev.ereed.org/collections/swanp/appendix-3/",
         "regions": {
             "type": "featurecollection",
             "crs": {
@@ -5137,21 +4592,21 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Litigation",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
-            "from": 1602,
-            "to": 1610,
+            "from": 1603.0,
+            "to": 1610.0,
             "precision": null,
             "when": null,
             "sort": 1602,
             "display": "1602\u201410"
         },
         "ereed_url": null,
-        "record_url": "https://dev.ereed.org/records/Appendix 3/"
+        "record_url": "https://dev.ereed.org/records/https://dev.ereed.org/collections/swanp/appendix-3//"
     },
     "swanp-01-0024": {
         "title": "Englands Joy",
-        "description": "Aborted Performance of England's Joy at the Swan",
+        "description": "Aborted Performance of <title>England's Joy</title> at the Swan",
         "record_id": "swanp-rid32",
         "regions": {
             "type": "featurecollection",
@@ -5188,14 +4643,14 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Performance",
-        "time_period": "First Period: 1595-1602",
+        "time_period": "First Period: 1596-1602",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": 1602,
-            "sort": 1602,
-            "display": 1602
+            "when": "1602-11-06",
+            "sort": "1602-11-06",
+            "display": "1602-11-06"
         },
         "ereed_url": null,
         "record_url": "https://dev.ereed.org/records/swanp-rid32/"
@@ -5239,7 +4694,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Performance",
-        "time_period": null,
+        "time_period": NaN,
         "date": {
             "from": null,
             "to": null,
@@ -5290,7 +4745,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Performance",
-        "time_period": null,
+        "time_period": NaN,
         "date": {
             "from": null,
             "to": null,
@@ -5303,9 +4758,9 @@
         "record_url": "https://dev.ereed.org/records/swanp-rid13/"
     },
     "swanp-01-0027": {
-        "title": "Appendix 3?",
+        "title": "Chancery Court Case re Paris Garden Manor: Phillips v. Turnour et al.",
         "description": "Jane Langley died",
-        "record_id": "Appendix 3",
+        "record_id": "https://dev.ereed.org/collections/swanp/appendix-3/",
         "regions": {
             "type": "featurecollection",
             "crs": {
@@ -5319,17 +4774,17 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": null,
-        "time_period": "Second Period: 1610-1630",
+        "time_period": "Second Period: 1610-1622",
         "date": {
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1610-06",
-            "sort": "1610-06",
-            "display": "1610-06"
+            "when": "1611-06",
+            "sort": "1611-06",
+            "display": "1611-06"
         },
         "ereed_url": null,
-        "record_url": "https://dev.ereed.org/records/Appendix 3/"
+        "record_url": "https://dev.ereed.org/records/https://dev.ereed.org/collections/swanp/appendix-3//"
     },
     "swanp-01-0028": {
         "title": "Paris Garden Overseers of the Poor Accounts",
@@ -5391,10 +4846,10 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "Second Period: 1610-1630",
+        "time_period": "Second Period: 1610-1622",
         "date": {
-            "from": 1610,
-            "to": 1611,
+            "from": 1610.0,
+            "to": 1611.0,
             "precision": null,
             "when": null,
             "sort": 1610,
@@ -5463,10 +4918,10 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "Second Period: 1610-1630",
+        "time_period": "Second Period: 1610-1622",
         "date": {
-            "from": 1611,
-            "to": 1612,
+            "from": 1611.0,
+            "to": 1612.0,
             "precision": null,
             "when": null,
             "sort": 1611,
@@ -5492,17 +4947,17 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": null,
-        "time_period": "Second Period: 1610-1630",
+        "time_period": "Second Period: 1610-1622",
         "date": {
             "from": null,
             "to": null,
             "precision": "low",
-            "when": 1612,
-            "sort": 1612,
-            "display": "c. 1612"
+            "when": 1611,
+            "sort": 1611,
+            "display": "c. 1611"
         },
         "ereed_url": null,
-        "record_url": null
+        "record_url": NaN
     },
     "swanp-01-0031": {
         "title": "Paris Garden Overseers of the Poor Accounts",
@@ -5564,10 +5019,10 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "Second Period: 1610-1630",
+        "time_period": "Second Period: 1610-1622",
         "date": {
-            "from": 1612,
-            "to": 1613,
+            "from": 1612.0,
+            "to": 1613.0,
             "precision": null,
             "when": null,
             "sort": 1612,
@@ -5636,10 +5091,10 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "Second Period: 1610-1630",
+        "time_period": "Second Period: 1610-1622",
         "date": {
-            "from": 1613,
-            "to": 1614,
+            "from": 1613.0,
+            "to": 1614.0,
             "precision": null,
             "when": null,
             "sort": 1613,
@@ -5650,7 +5105,7 @@
     },
     "swanp-01-0033": {
         "title": "A Chast Mayd in Cheap-side",
-        "description": "Lady Elizabeth's Men perform A Chaste Maid at Cheapside at the Swan",
+        "description": "Lady Elizabeth's Men perform <title>A Chaste Maid at Cheapside</title> at the Swan",
         "record_id": "swanp-rid14",
         "regions": {
             "type": "featurecollection",
@@ -5687,7 +5142,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Performance",
-        "time_period": "Second Period: 1610-1630",
+        "time_period": "Second Period: 1610-1622",
         "date": {
             "from": null,
             "to": null,
@@ -5701,7 +5156,7 @@
     },
     "swanp-01-0034": {
         "title": "Vennar, An Apology",
-        "description": "Richard Vennar apologizes for the non-event of England's Joy",
+        "description": "Richard Vennar apologizes for the non-event of <title>England's Joy</title>",
         "record_id": "swanp-rid35",
         "regions": {
             "type": "featurecollection",
@@ -5738,7 +5193,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Performance",
-        "time_period": "Second Period: 1610-1630",
+        "time_period": "Second Period: 1610-1622",
         "date": {
             "from": null,
             "to": null,
@@ -5753,7 +5208,7 @@
     "swanp-01-0035": {
         "title": "Paris Garden Overseers of the Poor Accounts",
         "description": "Swan Players pay tithes for the poor",
-        "record_id": "swanp-rid25",
+        "record_id": "swanp-rid29",
         "regions": {
             "type": "featurecollection",
             "crs": {
@@ -5810,22 +5265,22 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "Second Period: 1610-1630",
+        "time_period": "Second Period: 1610-1622",
         "date": {
-            "from": 1614,
-            "to": 1615,
+            "from": 1614.0,
+            "to": 1615.0,
             "precision": null,
             "when": null,
             "sort": 1614,
             "display": "1614\u201415"
         },
         "ereed_url": null,
-        "record_url": "https://dev.ereed.org/records/swanp-rid25/"
+        "record_url": "https://dev.ereed.org/records/swanp-rid29/"
     },
     "swanp-01-0036": {
         "title": "Paris Garden Overseers of the Poor Accounts",
         "description": "Swan Players pay tithes for the poor",
-        "record_id": "swanp-rid26",
+        "record_id": "swanp-rid30",
         "regions": {
             "type": "featurecollection",
             "crs": {
@@ -5882,22 +5337,22 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "Second Period: 1610-1630",
+        "time_period": "Second Period: 1610-1622",
         "date": {
-            "from": 1620,
-            "to": 1621,
+            "from": 1620.0,
+            "to": 1621.0,
             "precision": null,
             "when": null,
             "sort": 1620,
             "display": "1620\u20141"
         },
         "ereed_url": null,
-        "record_url": "https://dev.ereed.org/records/swanp-rid26/"
+        "record_url": "https://dev.ereed.org/records/swanp-rid30/"
     },
     "swanp-01-0037": {
         "title": "St Saviour's Vestry Minutes",
         "description": "Henry Leake to pay tithes for his Paris Garden manor house with the exception of the playhouse",
-        "record_id": "swanp-rid10",
+        "record_id": "swanp-rid12",
         "regions": {
             "type": "featurecollection",
             "crs": {
@@ -6352,7 +5807,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Regulation",
-        "time_period": "Second Period: 1610-1630",
+        "time_period": "Second Period: 1610-1622",
         "date": {
             "from": null,
             "to": null,
@@ -6362,7 +5817,7 @@
             "display": "1621-09-26"
         },
         "ereed_url": null,
-        "record_url": "https://dev.ereed.org/records/swanp-rid10/"
+        "record_url": "https://dev.ereed.org/records/swanp-rid12/"
     },
     "swanp-01-0038": {
         "title": null,
@@ -6381,7 +5836,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": null,
-        "time_period": "Second Period: 1610-1630",
+        "time_period": "Second Period: 1610-1622",
         "date": {
             "from": null,
             "to": null,
@@ -6391,12 +5846,12 @@
             "display": 1622
         },
         "ereed_url": null,
-        "record_url": null
+        "record_url": NaN
     },
     "swanp-01-0039": {
         "title": "Survey of Paris Garden",
         "description": "Alexander Walsh, fruiterer, occupies the manor house",
-        "record_id": "swanp-rid398",
+        "record_id": "https://dev.ereed.org/collections/swanp/appendix-1/",
         "regions": {
             "type": "featurecollection",
             "crs": {
@@ -6432,17 +5887,17 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": "Deeds & Leases",
-        "time_period": "Second Period: 1610-1630",
+        "time_period": "Final Years: 1623-1632",
         "date": {
-            "from": 1627,
-            "to": 1629,
+            "from": 1627.0,
+            "to": 1629.0,
             "precision": null,
             "when": null,
             "sort": 1627,
             "display": "1627\u20149"
         },
         "ereed_url": null,
-        "record_url": "https://dev.ereed.org/records/swanp-rid398/"
+        "record_url": "https://dev.ereed.org/records/https://dev.ereed.org/collections/swanp/appendix-1//"
     },
     "null": {
         "title": "Goodman, Hollands Leagver",
@@ -6525,7 +5980,7 @@
         "emlot_id": null,
         "ereed_id": null,
         "category": null,
-        "time_period": "Final Years: 1627-1632",
+        "time_period": "Final Years: 1623-1632",
         "date": {
             "from": null,
             "to": null,
