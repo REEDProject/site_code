@@ -587,29 +587,36 @@ function getExpandedEventRecord(events, eventID) {
     }
 
     const recordIDs = normalizeToArray(event.record_id);
+    const recordTitles = normalizeToArray(event.record_title);
     const recordURLs = normalizeToArray(event.record_url);
 
     if (recordIDs.length > 0 || recordURLs.length > 0) {
         const $associatedRecords = jQ('<span>').appendTo($eventActive);
         $associatedRecords.append(document.createTextNode('Associated records: '));
 
-        const recordCount = Math.max(recordIDs.length, recordURLs.length);
+        const recordCount = Math.max(recordTitles.length, recordIDs.length, recordURLs.length);
+        const useLineBreaks = recordCount > 1;
+
         for (let i = 0; i < recordCount; i++) {
-            const recordID = recordIDs[i] ?? `Record ${i + 1}`;
+            const recordTitle = recordTitles[i];
+            const recordID = recordIDs[i];
             const recordURL = recordURLs[i];
+            const recordLabel = recordTitle || recordID || `Record ${i + 1}`;
+
+            if (i > 0) {
+                $associatedRecords.append(useLineBreaks ? '<br>' : document.createTextNode(', '));
+            } else if (useLineBreaks) {
+                $associatedRecords.append('<br>');
+            }
 
             if (recordURL) {
                 jQ('<a>', {
                     target: '_blank',
                     href: recordURL,
-                    text: recordID,
+                    text: recordLabel,
                 }).appendTo($associatedRecords);
             } else {
-                $associatedRecords.append(document.createTextNode(recordID));
-            }
-
-            if (i < recordCount - 1) {
-                $associatedRecords.append(document.createTextNode(', '));
+                $associatedRecords.append(document.createTextNode(recordLabel));
             }
         }
 
