@@ -440,6 +440,50 @@ function generateEvents(events, regionsGroupLayer, map, jsonFilter = null, jsonF
 }
 
 /**
+ * Appends event description text, rendering <title>...</title> sections in italics.
+ * Only <title> tags are interpreted; all other text remains escaped.
+ * @param {jQuery} $description - The description container element.
+ * @param {string} descriptionText - The raw description text.
+ */
+function appendFormattedEventDescription($description, descriptionText) {
+    const text = String(descriptionText ?? '');
+    const titleTagRegex = /<title>([\s\S]*?)<\/title>/gi;
+
+    let previousIndex = 0;
+    let match;
+
+    while ((match = titleTagRegex.exec(text)) !== null) {
+        const textBefore = text.slice(previousIndex, match.index);
+        if (textBefore) {
+            $description.append(document.createTextNode(textBefore));
+        }
+
+        jQ('<em>', {
+            text: match[1],
+        }).appendTo($description);
+
+        previousIndex = titleTagRegex.lastIndex;
+    }
+
+    const trailingText = text.slice(previousIndex);
+    if (trailingText) {
+        $description.append(document.createTextNode(trailingText));
+    }
+}
+
+/**
+ * Normalizes scalar/array/null values into an array.
+ * @param {any} value - The raw value.
+ * @returns {Array} - The normalized array.
+ */
+function normalizeToArray(value) {
+    if (value === null || value === undefined || value === '') {
+        return [];
+    }
+    return Array.isArray(value) ? value : [value];
+}
+
+/**
  * Creates a list group element in collapsed form for a specific event.
  * @param {Object} events - The JSON object containing all of the events.
  * @param {string} eventID - The ID of the particular event.
@@ -462,10 +506,10 @@ function getEventRecord(events, eventID) {
         text: event.date.display,
     }).appendTo($eventLink);
 
-    jQ('<div>', {
+    const $description = jQ('<div>', {
         class: 'description',
-        text: event.description,
     }).appendTo($eventLink);
+    appendFormattedEventDescription($description, event.description);
 
     return $eventRecord;
 }
@@ -515,10 +559,10 @@ function getExpandedEventRecord(events, eventID) {
         text: event.date.display,
     }).appendTo($eventActive);
 
-    jQ('<div>', {
+    const $description = jQ('<div>', {
         class: 'description',
-        text: event.description,
     }).appendTo($eventActive);
+    appendFormattedEventDescription($description, event.description);
 
     const $features = jQ('<ul>', {
         class: 'features',
@@ -542,12 +586,33 @@ function getExpandedEventRecord(events, eventID) {
         $eventActive.append('<br>'); // Add line break
     }
 
-    if (event.record_url) {
-        jQ('<a>', {
-            target: '_blank',
-            href: event.record_url,
-            text: 'See associated record.',
-        }).appendTo($eventActive);
+    const recordIDs = normalizeToArray(event.record_id);
+    const recordURLs = normalizeToArray(event.record_url);
+
+    if (recordIDs.length > 0 || recordURLs.length > 0) {
+        const $associatedRecords = jQ('<span>').appendTo($eventActive);
+        $associatedRecords.append(document.createTextNode('Associated records: '));
+
+        const recordCount = Math.max(recordIDs.length, recordURLs.length);
+        for (let i = 0; i < recordCount; i++) {
+            const recordID = recordIDs[i] ?? `Record ${i + 1}`;
+            const recordURL = recordURLs[i];
+
+            if (recordURL) {
+                jQ('<a>', {
+                    target: '_blank',
+                    href: recordURL,
+                    text: recordID,
+                }).appendTo($associatedRecords);
+            } else {
+                $associatedRecords.append(document.createTextNode(recordID));
+            }
+
+            if (i < recordCount - 1) {
+                $associatedRecords.append(document.createTextNode(', '));
+            }
+        }
+
         $eventActive.append('<br>'); // Add line break
     }
 
