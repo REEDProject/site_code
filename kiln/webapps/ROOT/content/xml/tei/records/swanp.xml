@@ -183,6 +183,13 @@
     <graphic url="images/nwbts/CCA/NBCCA2f33v.jpg" xml:id="NBCCA2f33v">
       <desc>Reproduced courtesy of the Chapter of Canterbury, CCA-DCc-Register/W, ff 32v–3v</desc>
     </graphic>
+    <graphic url="images/swanp/UtrechtUL/SWJWABf131v.jpg" xml:id="SWJWABf131v">
+      <desc>Reproduced courtesy of the Utrecht University Library, Ms. 842 (7 E 3)</desc></graphic>
+    <graphic url="images/swanp/UtrechtUL/SWJWABf132.jpg" xml:id="SWJWABf132">
+      <desc>Reproduced courtesy of the Utrecht University Library, Ms. 842 (7 E 3)</desc></graphic>
+    <graphic url="images/swanp/UtrechtUL/SWJWABf132v.jpg" xml:id="SWJWABf132v">
+      <desc>Reproduced courtesy of the Utrecht University Library, Ms. 842 (7 E 3)</desc></graphic>
+    
   </facsimile>
   <text>
     <front>
@@ -1418,7 +1425,7 @@
           <div xml:lang="lat" type="transcription" xml:id="swanp-rid21-transcription">
             <div>
               <head>ff 131v–2v</head>
-              <pb type="folio"/>
+              <pb type="folio" n="131v" facs="#SWJWABf131v"/>
 
               <gap reason="omitted"/>
 
@@ -1426,11 +1433,11 @@
                 diuersa no<ex>m</ex>i<ex>n</ex>a sortiuntur: in ijs varia quotidie scaena populo
                 exhibetur. Horum duo excellentiora vltra Tamisim ad meridiem sita sunt, a suspensis
                 signis ROSA et Cygnus nominata: Alia duo extra vrbem ad septentrionem sunt, viâ quâ
-                itur per Episcopal<ex>e</ex>m portam vulgariter Biscopgat nuncupatam. Est et <pb/>
+                itur per Episcopal<ex>e</ex>m portam vulgariter Biscopgat nuncupatam. Est et <pb type="folio" n="132" facs="#SWJWABf132"/>
                 quintum sed dispari et<note type="foot">et: <hi rend="italic">for deletion
                   (?)</hi></note> structura, bestiarum concertationi destinatum, in quo multi vrsi,
                 Tauri, et stupendae magnitudinis canes, discretis caueis &amp; septis aluntur, qui
-                <pb/> ad pugnam adseruantur, iucundissimum hominibus spectaculum praebentes,
+                <pb type="folio" n="132v" facs="#SWJWABf132v"/> ad pugnam adseruantur, iucundissimum hominibus spectaculum praebentes,
                 Theatrorum autem omnium prestantissimum est et amplissimum id cuius intersignium est
                 cygnus (vulgo le theater off te cijn) quippe quod tres mille ho<ex>mi</ex>nes in
                 sedilibus admittat, constructum ex coaceruato lapide pyrritide (quoru<ex>m</ex>
