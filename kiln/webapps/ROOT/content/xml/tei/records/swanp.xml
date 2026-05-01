@@ -283,7 +283,7 @@
                 <title>London Life</title>, pp 72–7.</note> From this date forward the copyholders'
             properties have a separate history.</p>
 
-          <p>Cure does not appear to have resided in the Paris Garden manor house and, in fact,
+          <p xml:id="note_cure_manor">Cure does not appear to have resided in the Paris Garden manor house and, in fact,
             acquired the lordship of the manor and the demesne lands in his son's name, <rs
               ref="eats:494954" type="Person_Male">Thomas Cure the Younger</rs>.<note type="foot"
               >See Ingram, <title>London Life</title>, p 77. Neither Thomas Cure the Elder or the
@@ -360,7 +360,7 @@
             <head>John Norden, part of Southwark in a panorama of the city of London. John Norden, <hi rend="italic">Civitas Londini</hi>. 1600. National Library of Sweden, Maps and Pictures DelaG 89. Used by kind permission.</head>
           </figure>
           
-          <p>Fortunately a later, more exact survey of Paris Garden manor survives from 1627 to
+          <p xml:id="note_survey_paris">Fortunately a later, more exact survey of Paris Garden manor survives from 1627 to
             provide a detailed view of the Swan and its surroundings.</p>
 
           <figure>
@@ -508,12 +508,12 @@
             Hugh Browker in 1608. An order of the parish vestry in September 1621 is relevant
             here:</p>
 
-          <p>'It is ordered that Mr. Leake shall paye for his mansion house of the mann<ex>or</ex>
+          <quote type="block"><p>'It is ordered that Mr. Leake shall paye for his mansion house of the mann<ex>or</ex>
             of Parris garden and for his garden &amp; orchard &amp; for the house wherein Baxter
             dwelt w<ex>i</ex>th the litle platt of ground in w<ex>hi</ex>ch Baxters house standeth
             xx s. tithe p<ex>er</ex> annu<ex>m</ex>, the playhouse being excepted/.'<note
               type="foot"><ref target="https://dev.ereed.org/records/swanp-rid12/">St Saviour's
-                Vestry Minutes, p 509</ref>.</note></p>
+                Vestry Minutes, p 509</ref>.</note></p></quote>
 
           <p>Henry Leake became one of the parish overseers of the poor for Paris Garden in 1615 and
             a member of the parish vestry in 1619. He was appointed churchwarden on 2 March 1621/2
@@ -533,7 +533,7 @@
               Ingram and Nelson, <title>Token Books</title>,
               @xc\https://tokenbooks.folger.edu/search/EntryResult.php@xc \.</note></p>
 
-          <p>Following Henry Leake's death his widow continued to live in the manor house until
+          <p xml:id="note_alex_walsh">Following Henry Leake's death his widow continued to live in the manor house until
             1624. It is worth noting that there are no further payments by players to the overseers
             of the poor after 1621 so the playhouse may have ceased to be used as such thereafter.
             Available evidence suggests that the London fruiterer, Alexander Walsh (Welsh), took
@@ -838,7 +838,7 @@
                 Development of Shakespeare’s Theatre</title>, John H. Astington (ed) (New York,
               1992), 128–31).</note></p>
 
-          <p>Whatever its dimensions and design the Swan was for a few years the newest playhouse in
+          <p xml:id="note_pembroke_ipswich">Whatever its dimensions and design the Swan was for a few years the newest playhouse in
             Elizabethan London. Whether it was immediately competitive with the older theatre at the
             Rose, where the Admiral's Men were based, or the much older Curtain and Theatre
             playhouses north of the river, cannot be determined, for lack of records. Although he
@@ -872,7 +872,7 @@
               Ingram's cautious analysis of the evidence for Chamberlain's Men at the Swan,
                 <title>London Life</title>, pp 142–50.</note></p>
 
-          <p>Although we may never know who performed on the stage of the Swan in its first year of
+          <p xml:id="note_lawsuit_context">Although we may never know who performed on the stage of the Swan in its first year of
             operation, 1595–6, it can be documented that by February 1596/7, Langley had established
             a novel bonded commitment from eight members of Pembroke's Men to play there in
             repertory exclusively for one year. Five of the principal actors were <rs
@@ -1068,7 +1068,7 @@
               see Ingram and Nelson, <ref target="https://stsaviour.folger.edu/Add-34110.html"
                   ><title>Parish of St Saviour</title></ref>.</note></p>
 
-          <p>Management of the playhouse during this period remains opaque for lack of
+          <p xml:id="note_bankside_theatres">Management of the playhouse during this period remains opaque for lack of
             documentation, though we may speculate that Henry Leake, resident from 1611 until his
             death in 1622, was at least tolerant of such activities on his leased property. However,
             Philip Henslowe, theatrical entrepreneur and fellow parishioner, was expanding his
@@ -2934,7 +2934,7 @@
               continued its operation for at least three more years after the <rs ref="eats:25827"
                 type="Collective_Troupe">Admiral's Men</rs> moved north of the river to the <rs
                 ref="eats:63599" type="Place_F_Playhouse">Fortune playhouse</rs>. See the <ref
-                target="https://dev.ereed.org/collections/swanp/playhouse/">History of the Playhouse</ref> and
+                  target="https://dev.ereed.org/collections/swanp/playhouse/#note_bankside_theatres">History of the Playhouse</ref> and
               Foakes, <title>Henslowe's Diary</title>, pp 164, 213–26.</p>
 
             <p> The privy councillors present for the issuing of the order are not listed.</p>
@@ -4122,7 +4122,7 @@ SWVEAA -->.</p>
               >Thomas Cure the Younger</rs> would convey the property and manor house before the
             feast of the <rs ref="eats:41188" type="CalendarDay_Liturgical">Nativity of St John the
               Baptist</rs> that same year. See further the <ref
-              target="https://dev.ereed.org/collections/swanp/property/">History of
+                target="https://dev.ereed.org/collections/swanp/property/#note_cure_manor">History of
               the Property</ref>.</p>
           <lb/>
           <p>On 1 December 1601 <rs ref="eats:492522" type="Person_Male">Hugh</rs> and his son <rs
@@ -4152,7 +4152,7 @@ SWVEAA -->.</p>
             was occasionally used following the death of Francis Langley. Alexander Walsh (Welsh)
             would therefore seem an unlikely candidate for management of the playhouse in the early
             seventeenth century. See further the <ref
-              target="https://dev.ereed.org/collections/swanp/property/">History of
+              target="https://dev.ereed.org/collections/swanp/property/#note_alex_walsh">History of
               the Property</ref>. </p>
         </div>
         <div>
@@ -4852,13 +4852,11 @@ SWVEAA -->.</p>
             the death of Francis Langley, Jane Langley had continued as subholder of the four leases
             that likely included the <rs ref="eats:227779" type="Place_F_Playhouse">Swan
               Playhouse</rs> and the manor house. See further <ref
-              target="https://dev.ereed.org/collections/swanp/property/">'History of the
+                target="https://dev.ereed.org/collections/swanp/property/#note_alex_walsh">'History of the
               Property'</ref>.</p>
 
           <p>For Ashley, see Michael Hicks, 'Ashley, Sir Anthony, baronet(1551/2–1628), politician
-            and translator of The Mariners Mirrour,' <title>ODNB</title>@xc\#link to
-            https://www.oxforddnb.com/display/10.1093/ref:odnb/9780198614128.001.0001/odnb-9780198614128-e-757?rskey=qNsmBa&amp;result=1@xc
-            \. @sc\SWCCPT@sc \</p>
+            and translator of The Mariners Mirrour,' <title>ODNB</title>.</p>
         </div>
         <div>
           <floatingText type="record" xml:id="swanp-rid177">
