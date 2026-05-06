@@ -258,6 +258,13 @@
     <graphic url="images/swanp/TNA/SWPCWDf13.jpg" xml:id="SWPCWDf13">
       <desc>The National Archives, PC 2/23</desc>
     </graphic>
+    <graphic url="images/swanp/TLA/RSLSPCf52v.jpg" xml:id="RSLSPCf52v">
+      <desc>The London Archives, COL/RMD/PA/01/002</desc>
+    </graphic>
+    <graphic url="images/swanp/TLA/RSLSPCf53.jpg" xml:id="RSLSPCf53">
+      <desc>The London Archives, COL/RMD/PA/01/002</desc>
+    </graphic>
+
 
 
 
@@ -1380,7 +1387,7 @@
           <div xml:lang="eng" type="transcription" xml:id="swanp-rid4-transcription">
             <div>
               <head>ff 52v–3 <supplied>(13 September)</supplied></head>
-              <pb type="folio"/>
+              <pb type="page" n="52v" facs="#RSLSPCf52v"/>
 
               <ab>Our<note type="foot">Our: O <hi rend="italic">in display script</hi></note> humble
                 duty remembred to yo<ex>u</ex>r good L<ex>ordships</ex> &amp; the rest: <rs
@@ -1421,15 +1428,16 @@
                 themselfes Whearof wee begin to haue experienc again w<ex>i</ex>thin these few daies
                 since it pleased her highnes to revoke her Comission graunted forthe to the Provost
                 Marshall, for fear of home they retired themselfes for the time into other
-                  part<ex>es</ex> out of his p<ex>re</ex>cinct but ar now returned to <pb n="53"
-                  type="folio" facs="#f53"/> their old<note type="foot">their old: <hi rend="italic"
-                    >also written as catchwords at the foot of f 52v</hi></note> haunt &amp;
-                frequent the Plaies (as their manner is) that ar daily shewed at the Theator &amp;
-                Bankside: Whearof will follow the same inconvenienc<ex>es</ex> whearof wee haue had
-                to much experienc heartofore, ffor p<ex>re</ex>venting Whearof wee ar humble suters
-                to yo<ex>u</ex>r good L<ex>ordships</ex> &amp; the rest to direct yo<ex>u</ex>r
-                  l<ex>ett</ex>res to the <rs ref="http://ereed.org/eats/entity/160152/"
-                  type="Collective_Office">Iustic<ex>es</ex> of peac of Surrey</rs> &amp; <rs
+                  part<ex>es</ex> out of his p<ex>re</ex>cinct but ar now returned to <pb
+                  type="page" n="53" facs="#RSLSPCf53"/> their old<note type="foot">their old: <hi
+                    rend="italic">also written as catchwords at the foot of f 52v</hi></note> haunt
+                &amp; frequent the Plaies (as their manner is) that ar daily shewed at the Theator
+                &amp; Bankside: Whearof will follow the same inconvenienc<ex>es</ex> whearof wee
+                haue had to much experienc heartofore, ffor p<ex>re</ex>venting Whearof wee ar
+                humble suters to yo<ex>u</ex>r good L<ex>ordships</ex> &amp; the rest to direct
+                  yo<ex>u</ex>r l<ex>ett</ex>res to the <rs
+                  ref="http://ereed.org/eats/entity/160152/" type="Collective_Office"
+                    >Iustic<ex>es</ex> of peac of Surrey</rs> &amp; <rs
                   ref="http://ereed.org/eats/entity/154215/" type="Collective_Office"
                     >Midd<ex>lesex</ex></rs> for the p<ex>re</ex>sent stay &amp; finall suppressing
                 of the said Plaies aswell at the Theator &amp; Bankside as in all other
