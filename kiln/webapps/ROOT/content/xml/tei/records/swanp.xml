@@ -220,13 +220,13 @@
       <desc>Reproduced courtesy of The British Libary, Harley MS 5353, f 98</desc>
     </graphic>
     <graphic url="images/swanp/TNA/SWCSHL1.jpg" xml:id="SWCSHL1">
-      <desc>The National Archives, REQ 2/266</desc>
+      <desc>The National Archives (UK), ref. REQ 2/266</desc>
     </graphic>
     <graphic url="images/swanp/TNA/SWCSHL2.jpg" xml:id="SWCSHL2">
-      <desc>The National Archives, REQ 2/266</desc>
+      <desc>The National Archives (UK), ref. REQ 2/266</desc>
     </graphic>
     <graphic url="images/swanp/TNA/SWCSHL3.jpg" xml:id="SWCSHL3">
-      <desc>The National Archives, REQ 2/266</desc>
+      <desc>The National Archives (UK), ref. REQ 2/266</desc>
     </graphic>
     <graphic url="images/swanp/TLA/RSSSVMp217.jpg" xml:id="RSSSVMp217">
       <desc>The London Archives, P92/SAV/450</desc>
@@ -253,10 +253,10 @@
       <desc>The London Archives, COL/RMD/PA/01/002</desc>
     </graphic>
     <graphic url="images/swanp/TNA/SWPC10p346.jpg" xml:id="SWPC10p346">
-      <desc>The National Archives, PC 2/22</desc>
+      <desc>The National Archives (UK), ref. PC 2/22</desc>
     </graphic>
     <graphic url="images/swanp/TNA/SWPCWDf13.jpg" xml:id="SWPCWDf13">
-      <desc>The National Archives, PC 2/23</desc>
+      <desc>The National Archives (UK), ref. PC 2/23</desc>
     </graphic>
     <graphic url="images/swanp/TLA/RSLSPCf52v.jpg" xml:id="RSLSPCf52v">
       <desc>The London Archives, COL/RMD/PA/01/002</desc>
@@ -264,10 +264,9 @@
     <graphic url="images/swanp/TLA/RSLSPCf53.jpg" xml:id="RSLSPCf53">
       <desc>The London Archives, COL/RMD/PA/01/002</desc>
     </graphic>
-
-
-
-
+    <graphic url="images/swanp/TLA/RSPC11p317.jpg" xml:id="RSPC11p317">
+      <desc>The National Archives (UK), ref. PC 2/21</desc>
+    </graphic>
 
   </facsimile>
   <text>
@@ -1488,8 +1487,7 @@
           <div xml:lang="eng" type="transcription" xml:id="swanp-rid5-transcription">
             <div>
               <head>p 317 <supplied>(22 July)</supplied></head>
-              <pb n="317" type="page"/>
-
+              <pb type="page" n="317" facs="#RSPC11p317"/>
               <gap reason="omitted"/>
 
               <ab>L<ex>ett</ex>res to the <rs ref="http://ereed.org/eats/entity/154215/"
