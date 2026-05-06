@@ -267,6 +267,13 @@
     <graphic url="images/swanp/TNA/RSPC11p317.jpg" xml:id="RSPC11p317">
       <desc>The National Archives (UK), ref. PC 2/21</desc>
     </graphic>
+    <graphic url="images/swanp/TLA/RSLBPCf85.jpg" xml:id="RSLBPCf85">
+      <desc>The London Archives, COL/RMD/PA/01/002</desc>
+    </graphic>
+    <graphic url="images/swanp/TLA/RSLBPCf85v.jpg" xml:id="RSLBPCf85v">
+      <desc>The London Archives, COL/RMD/PA/01/002</desc>
+    </graphic>
+
 
   </facsimile>
   <text>
@@ -1599,7 +1606,7 @@
           <div xml:lang="eng" type="transcription" xml:id="swanp-rid2-transcription">
             <div>
               <head>ff 85–5v <supplied>(28 July)</supplied></head>
-              <pb type="folio"/>
+              <pb type="folio" n="85" facs="#RSLBPCf85"/>
 
               <gap reason="omitted"/>
 
@@ -1653,7 +1660,7 @@
 
               <ab rend="right">Yo<ex>u</ex>r H<ex>ighnesses</ex>
                 <rs ref="http://ereed.org/eats/entity/151102/" type="Person_Gentry">most
-                  humble</rs><pb n="85v" type="folio" facs="#f85v"/></ab>
+                  humble</rs><pb type="folio" n="85v" facs="#RSLBPCf85v"/></ab>
 
               <ab>They<note type="marginal" place="margin_left"><handShift/>The inconueniencest that
                   grow by Stage playes abowt the<lb/>Citie of London./<handShift/></note> ar a
