@@ -252,6 +252,12 @@
     <graphic url="images/swanp/TLA/SWLLMBf33v.jpg" xml:id="SWLLMBf33v">
       <desc>The London Archives, COL/RMD/PA/01/002</desc>
     </graphic>
+    <graphic url="images/swanp/TNA/SWPC10p346.jpg" xml:id="SWPC10p346">
+      <desc>The National Archives, PC 2/22</desc>
+    </graphic>
+    <graphic url="images/swanp/TLA/SWPCWDf13.jpg" xml:id="SWPCWDf13">
+      <desc>The National Archives, PC 2/22</desc>
+    </graphic>
 
 
 
@@ -2085,7 +2091,7 @@
           <div xml:lang="eng" type="transcription" xml:id="swanp-rid23-transcription">
             <div>
               <head>p 346 <supplied>(15 August)</supplied></head>
-              <pb n="346" type="page"/>
+              <pb type="page" n="33" facs="#SWPC10p346"/>
 
               <ab type="exdent">A L<ex>ett</ex>re to <rs ref="eats:491605" type="Person_Male"
                   >Richard Topclyfe</rs>, <rs ref="eats:151936" type="Person_Male">Thomas
@@ -2194,7 +2200,7 @@
           <div xml:lang="eng" type="transcription" xml:id="swanp-rid24-transcription">
             <div>
               <head>f 13 <supplied>(3 October) (Richmond)</supplied></head>
-              <pb n="13" type="folio"/>
+              <pb type="folio" n="33" facs="#SWPCWDf13"/>
 
               <gap reason="omitted"/>
 
