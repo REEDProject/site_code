@@ -309,6 +309,12 @@
     <graphic url="images/swanp/TLA/BHLPCSf68.jpg" xml:id="BHLPCSf68">
       <desc>The London Archives, COL/RMD/PA/01/003</desc>
     </graphic>
+    <graphic url="images/swanp/TNA/SWJCLDf1v.jpg" xml:id="SWJCLDf1v">
+      <desc>The National Archives (UK), ref. SP 12/285</desc>
+    </graphic>
+    <graphic url="images/swanp/TNA/SWCLDCf1v.jpg" xml:id="SWCLDCf1v">
+      <desc>The National Archives (UK), ref. SP 12/287</desc>
+    </graphic>
   </facsimile>
   <text>
     <front>
@@ -1673,15 +1679,14 @@
                     >apprentice<ex>s</ex></rs> &amp; other seruant<ex>es</ex> whoe have confessed
                 vnto vs that the saide Staige playes were the very places of theire Randevous
                 appoynted by them to meete w<ex>i</ex>th such otheir as wear to <term
-                  ref="gloss:ioigne-1">ioigne</term> w<ex>i</ex>th
-                them in theire designes &amp; <rs ref="http://ereed.org/eats/entity/45576/"
-                  type="CrimesMisdemeanors">mutinus attempt<ex>es</ex></rs>, beeinge allso the
-                ordinarye places for maisterles men to come together &amp; to recreate themselves.
-                ffor avoydinge wheareof wee are nowe againe most humble &amp; earnest
-                  suito<ex>u</ex>rs to yo<ex>u</ex>r ho<ex>no</ex>r to dirrect yo<ex>u</ex>r
-                  l<ex>ett</ex>res aswell to o<ex>u</ex>r selves as to the <rs
-                  ref="http://ereed.org/eats/entity/160152/" type="Collective_Office">Iustices of
-                  peace of Surrey</rs> &amp; <rs ref="http://ereed.org/eats/entity/154215/"
+                  ref="gloss:ioigne-1">ioigne</term> w<ex>i</ex>th them in theire designes &amp; <rs
+                  ref="http://ereed.org/eats/entity/45576/" type="CrimesMisdemeanors">mutinus
+                    attempt<ex>es</ex></rs>, beeinge allso the ordinarye places for maisterles men
+                to come together &amp; to recreate themselves. ffor avoydinge wheareof wee are nowe
+                againe most humble &amp; earnest suito<ex>u</ex>rs to yo<ex>u</ex>r ho<ex>no</ex>r
+                to dirrect yo<ex>u</ex>r l<ex>ett</ex>res aswell to o<ex>u</ex>r selves as to the
+                  <rs ref="http://ereed.org/eats/entity/160152/" type="Collective_Office">Iustices
+                  of peace of Surrey</rs> &amp; <rs ref="http://ereed.org/eats/entity/154215/"
                   type="Collective_Office">Midlesex </rs>for the pr<ex>e</ex>sent staie &amp; fynall
                 suppressinge of the saide Stage playes, aswell at the <rs
                   ref="http://ereed.org/eats/entity/228083/" type="Place_F_Playhouse">Theatre
@@ -2296,15 +2301,15 @@
               <ab>Right honorable this gentilman the bear<ex>e</ex>r herof, To whome <rs
                   ref="eats:491605" type="Person_Male">I</rs> did wryte yester night, did this
                 morninge Cume speedely vnto me, And when he did perceaue that <rs ref="eats:130613"
-                  type="Person_Nobility">yo<ex>u</ex>r</rs> <term
-                    ref="gloss:plesuer-1">pleasor</term> was that he should wayt vpon yow
-                He did tacke comfort, &amp; harty hoape, That it was for his good And that throwghe
-                my humble suwte, It hathe pleased yow to renewe yo<ex>u</ex>r good conceate of
-                  hym<gap reason="omitted"/> I did speak as I thought to hym, and do wryte this to
-                yow, as in my Sowle I am resolved w<ex>i</ex>thovt Arte// And I haue lifted vpp his
-                hart agein w<ex>i</ex>t<ex>h</ex> lettinge hym knowe That her ma<ex>ies</ex>ty is so
-                well pleassed w<ex>i</ex>t<ex>h</ex> hym, &amp; yo<ex>u</ex>r hono<ex>u</ex>r also,
-                for the prooffe he laytly mayd to me of his loyall harte, To bee ye first man That
+                  type="Person_Nobility">yo<ex>u</ex>r</rs>
+                <term ref="gloss:plesuer-1">pleasor</term> was that he should wayt vpon yow He did
+                tacke comfort, &amp; harty hoape, That it was for his good And that throwghe my
+                humble suwte, It hathe pleased yow to renewe yo<ex>u</ex>r good conceate of hym<gap
+                  reason="omitted"/> I did speak as I thought to hym, and do wryte this to yow, as
+                in my Sowle I am resolved w<ex>i</ex>thovt Arte// And I haue lifted vpp his hart
+                agein w<ex>i</ex>t<ex>h</ex> lettinge hym knowe That her ma<ex>ies</ex>ty is so well
+                pleassed w<ex>i</ex>t<ex>h</ex> hym, &amp; yo<ex>u</ex>r hono<ex>u</ex>r also, for
+                the prooffe he laytly mayd to me of his loyall harte, To bee ye first man That
                 discoverred to me that <rs ref="eats:45742" type="CrimesMisdemeanors">sedycioos</rs>
                 play Cawlled <rs ref="eats:201209" type="Drama_TitledWork">The Ile of
                   doggs</rs><note type="foot">Cawlled … doggs: <hi rend="italic">in italic
@@ -3486,8 +3491,7 @@
           <div xml:lang="eng" type="transcription" xml:id="swanp-rid13-transcription">
             <div>
               <head>f [1v] <supplied>(11 February)</supplied></head>
-              <pb n="[1v]" type="folio"/>
-
+              <pb type="folio" n="[1v]" facs="#SWCLDCf1v"/>
               <ab>On monday last here was a great prise and challenge performed at the <rs
                   ref="eats:227779" type="Place_F_Playhouse">swan</rs> betwene two <rs
                   ref="eats:289432" type="Entertainer_Type">fencers</rs>
@@ -3663,14 +3667,14 @@
                 resident at the <rs ref="eats:227779" type="Place_F_Playhouse">Globe</rs> on the <rs
                   ref="eats:229072" type=" Place_F_Street ">Banke-side</rs>, of much more then would
                 have supplyed my then want; I noted euery mans hand ready to feed the luxury of his
-                eye, that <term
-                  ref="gloss:puld-1">puld</term> downe his hat to stop the sight of his charity, wherefore I concluded
-                to make a friend of Mammon, and to giue them sound for words, both being but aire,
-                for which they should giue double payment, to the intent onely, men of ability might
-                make the purchase without repentance, and my selfe obserue that wise rule of
-                Phylosophy; Non fiat per plura quod potest fieri per pauciora:<note type="foot">Non
-                  … pauciora: <hi rend="italic">'Let it not be done with many things what can be
-                    done with fewer.'</hi></note> My deuise was all sorts of <pb/>
+                eye, that <term ref="gloss:puld-1">puld</term> downe his hat to stop the sight of
+                his charity, wherefore I concluded to make a friend of Mammon, and to giue them
+                sound for words, both being but aire, for which they should giue double payment, to
+                the intent onely, men of ability might make the purchase without repentance, and my
+                selfe obserue that wise rule of Phylosophy; Non fiat per plura quod potest fieri per
+                  pauciora:<note type="foot">Non … pauciora: <hi rend="italic">'Let it not be done
+                    with many things what can be done with fewer.'</hi></note> My deuise was all
+                sorts of <pb/>
                 <rs ref="eats:41840" type="Thing_MusicalInstrument">Musique</rs>, beginning with
                 Chambers, the Harpe of war, and ending with Hounds, <pb/> the cry of peace, of which
                 I was doubly prouided, for Fox and Hare.</ab>
@@ -3916,7 +3920,7 @@
           <div xml:lang="eng" type="transcription" xml:id="swanp-rid18-transcription">
             <div>
               <head>f [1v] <supplied>(19 November)</supplied></head>
-              <pb n="[1v]" type="folio"/>
+              <pb type="folio" n="[1v]" facs="#SWJCLDf1v"/>
 
               <ab><gap reason="omitted"/>and now we are in mirth I must not forget to tell you of a
                 cousening prancke of one <rs ref="eats:492247" type="Person_Male">venner</rs> of <rs
@@ -4281,14 +4285,14 @@ SWVEAA -->.</p>
                     and assignes or vnto suche other parson or parsons and theire heyres to theire
                     sole and onlye vse and vses forever as the saide ffraunc<ex>es</ex> langley his
                     heyres or assignes shall name and appoynte a good sure sufficient lawfull
-                    p<ex>er</ex>fecte and <term
-                      ref="gloss:indeficible-1">indeficible</term> estate in the lawe in fee symple absolute
-                    without condicion or lymytacion of other vses of and in all that the lordeshippe
-                    and <rs ref="eats:223902" type="Place_PA_Manor ">mannor of Parys Gardeyne</rs>
-                    in the Countie of Surrey with his right<ex>es</ex> royalties members and
-                      appurtena<ex>u</ex>nc<ex>es</ex> whatsoever and of and in all that mancion or
-                    mancion howse of the saide lordshippe and mannor of Paris Gardeyne aforesaide
-                    with thappurtena<ex>u</ex>nc<ex>es</ex> in the same Countie scituate and being
+                      p<ex>er</ex>fecte and <term ref="gloss:indeficible-1">indeficible</term>
+                    estate in the lawe in fee symple absolute without condicion or lymytacion of
+                    other vses of and in all that the lordeshippe and <rs ref="eats:223902"
+                      type="Place_PA_Manor ">mannor of Parys Gardeyne</rs> in the Countie of Surrey
+                    with his right<ex>es</ex> royalties members and appurtena<ex>u</ex>nc<ex>es</ex>
+                    whatsoever and of and in all that mancion or mancion howse of the saide
+                    lordshippe and mannor of Paris Gardeyne aforesaide with
+                      thappurtena<ex>u</ex>nc<ex>es</ex> in the same Countie scituate and being
                     within the moate there and of and in all those two gardens there abutting vppon
                     the saide mansion howse and of and in all that howse called the gatehowse there
                     and of and in all those foure pastures called the ponde yarde the Connygree the
