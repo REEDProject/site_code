@@ -261,6 +261,12 @@
     <xsl:apply-templates />
   </xsl:template>
 
+  <xsl:template match="tei:desc//tei:ref[@target]">
+    <a href="{@target}">
+      <xsl:apply-templates select="node()" />
+    </a>
+  </xsl:template>
+
   <xsl:template match="tei:repository" mode="doc_desc">
     <br />
     <xsl:text>Repository: </xsl:text>

@@ -279,7 +279,7 @@
               <xsl:text> </xsl:text>
             </xsl:for-each>
           </p>
-          <p><xsl:value-of select="id(substring-after($facs[1]/@facs, '#'))/tei:desc" /></p>
+          <p><xsl:apply-templates select="id(substring-after($facs[1]/@facs, '#'))/tei:desc/node()" /></p>
         </div>
       </li>
     </xsl:if>
