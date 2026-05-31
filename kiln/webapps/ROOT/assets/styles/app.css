@@ -5610,8 +5610,10 @@ table.hover tbody tr:hover {
         padding: 35px 25px;
         bottom: 0;
         /* min-height: 61.25rem; */
-        height: 100vh;
-        min-height: 38rem;
+        /*IN: Changed height to auto and changed min-height from 38 to 30rem so that there's no as much whitespace for appendices with a short header note followed by records */
+        height: auto;
+        /* min-height: 38rem; */
+        min-height: 30rem;
         float: right
     }
 }
