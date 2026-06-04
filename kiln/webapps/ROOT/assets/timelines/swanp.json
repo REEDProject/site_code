@@ -2580,8 +2580,135 @@
         ]
     },
     "swanp-01-0006": {
+        "title": "Court of Requests Case of Robert Shawe et al v. Francis Langley",
+        "description": "Court of Requests Case of Robert Shawe et al v. Francis Langley ",
+        "record_id": [
+            "swanp-rid16",
+            "swanp-rid15",
+            "swanp-rid33"
+        ],
+        "record_title": [
+            "Court of Requests Case of Robert Shawe et al v. Francis Langley, 1597/8",
+            "Court of Requests Case of Robert Shawe et al v. Francis Langley, 1597",
+            "Court of Requests Order re Robert Shaw et al v. Francis Langley, 1598"
+        ],
+        "regions": {
+            "type": "featurecollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "epsg:4326"
+                }
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Swan Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "Source 1627 map",
+                        "pk": "572"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.10244999999999999,
+                            51.50758700000001
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Rose Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 643,
+                        "patrons_label_flag": 1,
+                        "symbol_flag": 1,
+                        "notes": "",
+                        "pk": "566"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.09543165564536202,
+                            51.50729173227136
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Curtain Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1606"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.08040249318621445,
+                            51.523016418141054
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Theatre Playhouse",
+                        "place_type": "playhouse",
+                        "is_approximate": false,
+                        "placeholder_coordinates": null,
+                        "container": 58,
+                        "patrons_label_flag": 2,
+                        "symbol_flag": 2,
+                        "notes": "",
+                        "pk": "1614"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.07982475069439202,
+                            51.52456411521703
+                        ]
+                    }
+                }
+            ]
+        },
+        "emlot_id": null,
+        "ereed_id": null,
+        "category": "Litigation",
+        "time_period": "First Period: 1596-1602",
+        "date": {
+            "from": null,
+            "to": null,
+            "precision": null,
+            "when": "1597-02-06",
+            "sort": "1597-02-06",
+            "display": "1597-02-06"
+        },
+        "ereed_url": null,
+        "record_url": [
+            "https://dev.ereed.org/records/swanp-rid16/",
+            "https://dev.ereed.org/records/swanp-rid15/",
+            "https://dev.ereed.org/records/swanp-rid33/"
+        ]
+    },
+    "swanp-01-0007": {
         "title": "Letter from the Lord Mayor to the Privy Council",
-        "description": "Mayor's Letter against Plays",
+        "description": "Mayor's Letter against plays",
         "record_id": [
             "swanp-rid2"
         ],
@@ -2698,7 +2825,7 @@
             "https://dev.ereed.org/records/swanp-rid2/"
         ]
     },
-    "swanp-01-0007": {
+    "swanp-01-0008": {
         "title": "Privy Council Letter to the JPs of Middlesex",
         "description": "Privy Council Letter to the JPs of Middlesex re disorder in playhouses ",
         "record_id": [
@@ -2859,7 +2986,7 @@
             "https://dev.ereed.org/records/swanp-rid6/"
         ]
     },
-    "swanp-01-0008": {
+    "swanp-01-0009": {
         "title": "Richard Topcliffe\u2019s Letter to Sir Robert Cecil",
         "description": "Robert Topcliffe's Letter regarding <title>The Isle of Dogs</title>",
         "record_id": [
@@ -2915,7 +3042,7 @@
             "https://dev.ereed.org/records/swanp-rid34/"
         ]
     },
-    "swanp-01-0009": {
+    "swanp-01-0010": {
         "title": "Privy Council Letter regarding a Seditious Play",
         "description": "Privy Council Letter regarding <title>The Isle of Dogs</title>",
         "record_id": [
@@ -2971,9 +3098,9 @@
             "https://dev.ereed.org/records/swanp-rid23/"
         ]
     },
-    "swanp-01-0010": {
+    "swanp-01-0011": {
         "title": "Privy Council Warrant for Release of Players",
-        "description": "Privy Council Warrant for Release of Pembroke's Players",
+        "description": "Privy Council Warrant for Release of Pembroke's players",
         "record_id": [
             "swanp-rid24"
         ],
@@ -3025,133 +3152,6 @@
         "ereed_url": null,
         "record_url": [
             "https://dev.ereed.org/records/swanp-rid24/"
-        ]
-    },
-    "swanp-01-0011": {
-        "title": "Court of Requests Case of Robert Shawe et al v. Francis Langley",
-        "description": "Court of Requests Case of Robert Shawe et al v. Francis Langley \n\n",
-        "record_id": [
-            "swanp-rid16",
-            "swanp-rid15",
-            "swanp-rid33"
-        ],
-        "record_title": [
-            "Court of Requests Case of Robert Shawe et al v. Francis Langley, 1597/8",
-            "Court of Requests Case of Robert Shawe et al v. Francis Langley, 1597",
-            "Court of Requests Order re Robert Shaw et al v. Francis Langley, 1598"
-        ],
-        "regions": {
-            "type": "featurecollection",
-            "crs": {
-                "type": "name",
-                "properties": {
-                    "name": "epsg:4326"
-                }
-            },
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Swan Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "Source 1627 map",
-                        "pk": "572"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.10244999999999999,
-                            51.50758700000001
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Rose Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 643,
-                        "patrons_label_flag": 1,
-                        "symbol_flag": 1,
-                        "notes": "",
-                        "pk": "566"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.09543165564536202,
-                            51.50729173227136
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Curtain Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 58,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1606"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.08040249318621445,
-                            51.523016418141054
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Theatre Playhouse",
-                        "place_type": "playhouse",
-                        "is_approximate": false,
-                        "placeholder_coordinates": null,
-                        "container": 58,
-                        "patrons_label_flag": 2,
-                        "symbol_flag": 2,
-                        "notes": "",
-                        "pk": "1614"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -0.07982475069439202,
-                            51.52456411521703
-                        ]
-                    }
-                }
-            ]
-        },
-        "emlot_id": null,
-        "ereed_id": null,
-        "category": "Litigation",
-        "time_period": "First Period: 1596-1602",
-        "date": {
-            "from": null,
-            "to": null,
-            "precision": null,
-            "when": "1597-02-06",
-            "sort": "1597-02-06",
-            "display": "1597-02-06"
-        },
-        "ereed_url": null,
-        "record_url": [
-            "https://dev.ereed.org/records/swanp-rid16/",
-            "https://dev.ereed.org/records/swanp-rid15/",
-            "https://dev.ereed.org/records/swanp-rid33/"
         ]
     },
     "swanp-01-0012": {
@@ -3898,7 +3898,7 @@
     },
     "swanp-01-0020": {
         "title": "Privy Council Order regarding the Restriction of Playhouses",
-        "description": "Privy Council Order regarding the Restriction of Playhouses",
+        "description": "Privy Council Order regarding the restriction of playhouses",
         "record_id": [
             "swanp-rid9"
         ],
@@ -4715,12 +4715,12 @@
         "category": "Litigation",
         "time_period": "First Period: 1596-1602",
         "date": {
-            "from": 1603.0,
+            "from": 1602.0,
             "to": 1610.0,
             "precision": null,
             "when": null,
             "sort": 1602,
-            "display": "1602\u201410"
+            "display": "1602\u20141610"
         },
         "ereed_url": null,
         "record_url": [
@@ -4898,9 +4898,7 @@
     "swanp-01-0027": {
         "title": "Chancery Court Case re Paris Garden Manor: Phillips v. Turnour et al.",
         "description": "Jane Langley died",
-        "record_id": [
-            "appendix-1"
-        ],
+        "record_id": null,
         "record_title": null,
         "regions": {
             "type": "featurecollection",
@@ -4920,18 +4918,16 @@
             "from": null,
             "to": null,
             "precision": null,
-            "when": "1611-06",
-            "sort": "1611-06",
-            "display": "1611-06"
+            "when": "1611-06-29",
+            "sort": "1611-06-29",
+            "display": "1611-06-29"
         },
         "ereed_url": null,
-        "record_url": [
-            "https://dev.ereed.org/collections/swanp/appendix-1/"
-        ]
+        "record_url": null
     },
     "swanp-01-0028": {
         "title": "Paris Garden Overseers of the Poor Accounts",
-        "description": "Swan Players pay tithes for the poor",
+        "description": "Swan players pay tithes for the poor",
         "record_id": [
             "swanp-rid25"
         ],
@@ -4999,7 +4995,7 @@
             "precision": null,
             "when": null,
             "sort": 1610,
-            "display": "1610\u201411"
+            "display": "1610\u20141611"
         },
         "ereed_url": null,
         "record_url": [
@@ -5008,7 +5004,7 @@
     },
     "swanp-01-0029": {
         "title": "Paris Garden Overseers of the Poor Accounts",
-        "description": "Swan Players pay tithes for the poor",
+        "description": "Swan players pay tithes for the poor",
         "record_id": [
             "swanp-rid26"
         ],
@@ -5076,7 +5072,7 @@
             "precision": null,
             "when": null,
             "sort": 1611,
-            "display": "1611\u201412"
+            "display": "1611\u20141612"
         },
         "ereed_url": null,
         "record_url": [
@@ -5106,16 +5102,16 @@
             "from": null,
             "to": null,
             "precision": "low",
-            "when": 1611,
-            "sort": 1611,
-            "display": "c. 1611"
+            "when": 1612,
+            "sort": 1612,
+            "display": "c. 1612"
         },
         "ereed_url": null,
         "record_url": null
     },
     "swanp-01-0031": {
         "title": "Paris Garden Overseers of the Poor Accounts",
-        "description": "Swan Players pay tithes for the poor",
+        "description": "Swan players pay tithes for the poor",
         "record_id": [
             "swanp-rid27"
         ],
@@ -5183,7 +5179,7 @@
             "precision": null,
             "when": null,
             "sort": 1612,
-            "display": "1612\u201313"
+            "display": "1612\u20141613"
         },
         "ereed_url": null,
         "record_url": [
@@ -5192,7 +5188,7 @@
     },
     "swanp-01-0032": {
         "title": "Paris Garden Overseers of the Poor Accounts",
-        "description": "Swan Players pay tithes for the poor",
+        "description": "Swan players pay tithes for the poor",
         "record_id": [
             "swanp-rid28"
         ],
@@ -5260,7 +5256,7 @@
             "precision": null,
             "when": null,
             "sort": 1613,
-            "display": "1613\u201414"
+            "display": "1613\u20141614"
         },
         "ereed_url": null,
         "record_url": [
@@ -5381,7 +5377,7 @@
     },
     "swanp-01-0035": {
         "title": "Paris Garden Overseers of the Poor Accounts",
-        "description": "Swan Players pay tithes for the poor",
+        "description": "Swan players pay tithes for the poor",
         "record_id": [
             "swanp-rid29"
         ],
@@ -5449,7 +5445,7 @@
             "precision": null,
             "when": null,
             "sort": 1614,
-            "display": "1614\u201415"
+            "display": "1614\u20141615"
         },
         "ereed_url": null,
         "record_url": [
@@ -5458,7 +5454,7 @@
     },
     "swanp-01-0036": {
         "title": "Paris Garden Overseers of the Poor Accounts",
-        "description": "Swan Players pay tithes for the poor",
+        "description": "Swan players pay tithes for the poor",
         "record_id": [
             "swanp-rid30"
         ],
@@ -5526,7 +5522,7 @@
             "precision": null,
             "when": null,
             "sort": 1620,
-            "display": "1620\u20141"
+            "display": "1620\u20141621"
         },
         "ereed_url": null,
         "record_url": [
@@ -6031,9 +6027,9 @@
             "from": null,
             "to": null,
             "precision": null,
-            "when": 1622,
-            "sort": 1622,
-            "display": 1622
+            "when": "1622-09-16",
+            "sort": "1622-09-16",
+            "display": "1622-09-16"
         },
         "ereed_url": null,
         "record_url": null
@@ -6087,7 +6083,7 @@
             "precision": null,
             "when": null,
             "sort": 1627,
-            "display": "1627\u20149"
+            "display": "1627\u20141629"
         },
         "ereed_url": null,
         "record_url": [
@@ -6096,7 +6092,7 @@
     },
     "null": {
         "title": "Goodman, Hollands Leagver",
-        "description": "Swan Playhouse in decay",
+        "description": "Swan playhouse in decay",
         "record_id": [
             "swanp-rid1"
         ],
