@@ -306,7 +306,7 @@
         <a href="#" class="accordion-title">Marginalia</a>
         <div class="accordion-content" data-tab-content="">
           <ul class="marginalia-list">
-            <xsl:apply-templates mode="group" select=".//tei:note[@type='marginal' and not(ancestor::tei:div/@subtype='modernization')]" />
+            <xsl:apply-templates mode="group" select=".//tei:note[@type='marginal' and not(ancestor::tei:div/@subtype='modernization') and not(ancestor::tei:div/@type='translation')]" />
           </ul>
         </div>
       </li>
