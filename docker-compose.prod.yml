@@ -1,0 +1,19 @@
+services:
+  tomcat:
+    mem_limit: 6g
+    volumes:
+      - ./services/tomcat/server.xml:/usr/local/tomcat/conf/server.xml:ro
+    environment:
+      CATALINA_OPTS: "${TOMCAT_CATALINA_OPTS:--Xms1024m -Xmx4096m -XX:+ExitOnOutOfMemoryError}"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "bash",
+          "-c",
+          "exec 3<>/dev/tcp/127.0.0.1/8080 && printf 'GET / HTTP/1.0\r\nHost: localhost\r\n\r\n' >&3 && grep -q 'Records of Early English Drama' <&3",
+        ]
+      interval: 2m
+      timeout: 15s
+      retries: 3
+      start_period: 2m

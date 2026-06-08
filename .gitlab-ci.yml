@@ -57,7 +57,7 @@ image: alpine
       "
         cd ${DEPLOY_DIR} &&
         INSTANCE=${DEPLOY_INSTANCE} \
-        docker compose up -d --build --no-deps --force-recreate --remove-orphans
+        docker compose ${COMPOSE_FILES} up -d --build --no-deps --force-recreate --remove-orphans
       "
 
 stages:
@@ -68,6 +68,7 @@ deploy_to_dev:
   before_script:
     - DEPLOY_DIR=/project/dev
     - DEPLOY_INSTANCE=dev
+    - COMPOSE_FILES="-f docker-compose.yml"
     - INSTANCE_ENV=${HOST_ENV_DEV}
     - !reference [.prepare:ssh, before_script]
   script:
@@ -83,6 +84,7 @@ deploy_to_prod:
   before_script:
     - DEPLOY_DIR=/project/prod
     - DEPLOY_INSTANCE=prod
+    - COMPOSE_FILES="-f docker-compose.yml -f docker-compose.prod.yml"
     - INSTANCE_ENV=${HOST_ENV_PROD}
     - !reference [.prepare:ssh, before_script]
   script:

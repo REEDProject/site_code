@@ -25,6 +25,8 @@ http:
   routers:
     to-tomcat:
       rule: Host(`{{env "TRAEFIK_HOST"}}`)
+      middlewares:
+        - tomcat-inflight
       service: tomcat
       tls:
         certResolver: letsencrypt
@@ -99,6 +101,10 @@ http:
         - to-https
 
   middlewares:
+    tomcat-inflight:
+      inFlightReq:
+        amount: 20
+
     basic-auth:
       basicAuth:
         usersFile: /etc/traefik/.htpasswd
