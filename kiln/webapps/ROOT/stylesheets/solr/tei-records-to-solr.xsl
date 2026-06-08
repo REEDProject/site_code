@@ -12,6 +12,8 @@
 
   <xsl:key name="entities-by-url" match="/aggregation/eatsml/entities/entity"
            use="@url" />
+  <xsl:key name="entities-by-eats-id" match="/aggregation/eatsml/entities/entity"
+           use="@eats_id" />
 
   <xsl:template match="/">
     <add>
@@ -237,7 +239,16 @@
     <xsl:for-each select="tokenize(@ref, '\s+')">
       <xsl:variable name="url" select="." />
       <xsl:for-each select="$node">
-        <xsl:copy-of select="key('entities-by-url', $url)/field" />
+        <xsl:variable name="eats-id"
+                      select="tokenize(substring-after($url, '/entity/'), '/')[1]" />
+        <xsl:choose>
+          <xsl:when test="$eats-id and key('entities-by-eats-id', $eats-id)">
+            <xsl:copy-of select="key('entities-by-eats-id', $eats-id)/field" />
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:copy-of select="key('entities-by-url', $url)/field" />
+          </xsl:otherwise>
+        </xsl:choose>
       </xsl:for-each>
     </xsl:for-each>
   </xsl:template>
