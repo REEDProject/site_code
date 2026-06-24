@@ -292,7 +292,7 @@
                     supplemented where appropriate by the <title>Dictionary of Medieval Latin from
                         British Sources</title> (<title>DML</title>). Other works consulted can be
                     found in the <ref
-                        target="https://ereed.library.utoronto.ca/about/bibliography/?collection_id=generalBib&amp;bibl_author=&amp;bibl_title="
+                        target="https://ereed.org/about/bibliography/?collection_id=generalBib&amp;bibl_author=&amp;bibl_title="
                         >General Bibliography</ref>. Adverbs that are formed regularly from
                     adjectives found in the <title>OLD</title> and <title>DML</title> are not
                     included. Words with unusual spellings have been not been included if they are
@@ -335,7 +335,7 @@
                             Dictionary Online</ref></title> (<title>AND</title>) or cannot be easily
                     found there in the spelling in which they occur in the text. Other works
                     consulted can be found in the <ref
-                        target="https://ereed.library.utoronto.ca/about/bibliography/?collection_id=generalBib&amp;bibl_author=&amp;bibl_title="
+                        target="https://ereed.org/about/bibliography/?collection_id=generalBib&amp;bibl_author=&amp;bibl_title="
                         >General Bibliography</ref>. Words with unusual spellings have been not been
                     included if they are treated in the text as scribal errors and footnoted, or if
                     they are the result of the following common spelling variations alone:</p>
@@ -373,7 +373,7 @@
                             Dictionary Online</ref></title> (<title>OEDO</title>) or cannot be
                     easily found there in the spelling in which they appear in the text. Other works
                     consulted can be found in the <ref
-                        target="https://ereed.library.utoronto.ca/about/bibliography/?collection_id=generalBib&amp;bibl_author=&amp;bibl_title="
+                        target="https://ereed.org/about/bibliography/?collection_id=generalBib&amp;bibl_author=&amp;bibl_title="
                         >General Bibliography</ref>. Words with unusual spellings have not been
                     included if they have been treated in the text as scribal errors and footnoted,
                     or if they are the result of the following common spelling variations alone:</p>
@@ -5632,7 +5632,14 @@
                         <sense xml:id="incontagion-1">contagion, possibly with a play on
                             'incantation' </sense>
                     </entry>
-
+                    <entry xml:id="indeficible">
+                        <form>
+                            <orth>indeficible</orth>
+                            <gram>adj</gram>
+                        </form>
+                        <sense xml:id="indeficible-1">indivisible</sense>
+                    </entry>
+                    
                     <entry xml:id="indorcement">
                         <form>
                             <orth>indorcement</orth>
@@ -5688,6 +5695,14 @@
                         </form>
                         <sense xml:id="ioggeler-1">juggler</sense>
                     </entry>
+                    <entry xml:id="ioigne">
+                        <form>
+                            <orth>ioigne</orth>
+                            <gram>v</gram>
+                        </form>
+                        <sense xml:id="ioigne-1"> join</sense>
+                    </entry>
+                    
 
                     <entry xml:id="iornie">
                         <form>
@@ -6910,7 +6925,8 @@
                             <orth>plesuer</orth>
                             <gram>n</gram>
                         </form>
-                        <sense xml:id="plesuer-1">pleasure</sense>
+                        <sense xml:id="plesuer-1">pleasure; <form><orth>pleasor</orth>
+                        </form></sense>
                     </entry>
 
                     <entry xml:id="pone">
@@ -7035,6 +7051,14 @@
                         <sense xml:id="prymust-1">in primis; a Latinism signifying first, in the
                             first place</sense>
                     </entry>
+                    <entry xml:id="puld">
+                        <form>
+                            <orth>puld</orth>
+                            <gram>v past</gram>
+                        </form>
+                        <sense xml:id="puld-1">pulled</sense>
+                    </entry>
+                    
 
                     <entry xml:id="pydecoote">
                         <form>

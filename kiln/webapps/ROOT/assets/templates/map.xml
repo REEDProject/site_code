@@ -8,7 +8,7 @@
 
   <xsl:param name="collection" select="''" />
 
-  <xsl:variable name="playhouse-collections" select="('bghop', 'rosep', 'nwbts')" />
+  <xsl:variable name="playhouse-collections" select="('bghop', 'rosep', 'nwbts', 'swanp')" />
 
   <kiln:parent>
     <xi:include href="base.xml" />

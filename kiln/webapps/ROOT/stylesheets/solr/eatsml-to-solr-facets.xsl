@@ -122,7 +122,7 @@
   </xsl:template>
 
   <xsl:template match="eats:entity">
-    <entity url="{@url}">
+    <entity eats_id="{@eats_id}" url="{@url}">
       <xsl:apply-templates select="eats:entity_types/eats:entity_type/@entity_type">
         <xsl:with-param name="entity_eats_id" select="@eats_id" />
         <xsl:with-param name="entity_id" select="@xml:id" />

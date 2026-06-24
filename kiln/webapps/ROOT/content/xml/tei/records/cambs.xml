@@ -114,7 +114,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="eats" matchPattern="([0-9]+)"
-          replacementPattern="http://ereed.library.utoronto.ca/eats/entity/$1/">
+          replacementPattern="http://ereed.org/eats/entity/$1/">
           <p>URIs using the <code>eats</code> prefix are references to EATS entities.</p>
         </prefixDef>
         <prefixDef ident="gloss" matchPattern="([\S]+)" replacementPattern="../glossary.xml#$1">
@@ -563,11 +563,11 @@
               Bassingbourn, for example, record regular church <rs ref="eats:40561"
                 type="Entertainment_Type">ales</rs>, church repairs, and endowments from 1497 to
               1538, as well as the well-supported St George’s Play on 20 July 1511 (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_locations_settlement_b=326134"
+                target="https://ereed.org/search/?facet_locations_settlement_b=326134"
                 >Sts Peter and Paul Churchwardens' Accounts</ref>). Similarly, the Holy Trinity
               guild accounts of Leverington report regular guild dinners and payments to minstrels
               through the fifteenth century (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_collectives_guild_religious=327612"
+                target="https://ereed.org/search/?facet_collectives_guild_religious=327612"
                 >records</ref> pertaining to the guild of the Holy Trinity). A new pattern of growth
               did not fully emerge in Cambridgeshire, however, until the late fifteenth and early
               sixteenth centuries, when the county began to show the effects of reorganization.
@@ -1379,7 +1379,7 @@
                   >‘Parish Church of St Peter and St Paul,’</ref>
                 <title>Historic England</title>.</note> Funds for the upkeep and restoration of the
               church were gathered by the churchwardens, whose account books (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_locations_settlement_b=326134"
+                target="https://ereed.org/search/?facet_locations_settlement_b=326134"
                 >associated records</ref>) offer details of these efforts, including regular church
               ales and the <rs ref="eats:326774" type="Drama_TitledWork">St George’s play</rs> of 20
               July 1511 (see <ref target="#cambs_pt_civic">‘Performance Traditions: Civic
@@ -1450,7 +1450,7 @@
               Christi (all from the reign of Richard II), Holy Trinity (from before 1379), St
               George, St Lawrence, and Holy Cross. <rs ref="eats:327612"
                 type="Collective_GuildsReligious">Holy Trinity</rs>, whose accounts (see <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_collectives_guild_religious=327612"
+                target="https://ereed.org/search/?facet_collectives_guild_religious=327612"
                 >Holy Trinity Guild Accounts</ref>) detail activities from 1379 to 1564, was perhaps
               the most important of these guilds. The membership was fairly constant at about
               sixty-five to seventy guildsmen, and Holy Trinity had a guildhall in Wisbech from
@@ -1499,7 +1499,7 @@
                 September 2021.</note> The records detail the activities of the churchwardens there
               from 1518 to 1566, including regular payments to both local and travelling performers
               (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_locations_feature_church=328496"
+                target="https://ereed.org/search/?facet_locations_feature_church=328496"
                 >St Leonard's Churchwardens' Accounts</ref> and <ref target="#cambs_pt_civic"
                 >‘Performance Traditions: Civic Entertainment’</ref>).</p>
           </div>
@@ -1523,7 +1523,7 @@
               sixteenth-century interactions between the wardens and the local guilds, with rentals
               of <rs ref="eats:314340" type="Place_F_GuildHall">the guildhall</rs> (called the
               ‘Townhouse’ or the ‘Old Guildhall’)<note type="foot">See the <ref
-                  target="https://ereed.library.utoronto.ca/search/?facet_locations_feature_guild_hall=314340"
+                  target="https://ereed.org/search/?facet_locations_feature_guild_hall=314340"
                   >St Mary's Churchwardens' Accounts</ref></note>. This seems to have been the
               guildhall belonging to the Trinity guild (dating from 1466), which was one of three
               guilds in the village, the others being St Lawrence’s (by 1466) and Our Lady (by
@@ -2130,7 +2130,7 @@
               ref="eats:327791" type="Place_F_ReligiousHouse">Anglesey Priory</rs> (see <ptr
               target="#cambs-ridp261606472"/>), and as late as 1641, in a payment to the Cambridge
             waits at <rs ref="eats:322628" type="Place_F_Church">Ely Cathedral</rs> (see the <ref
-              target="https://ereed.library.utoronto.ca/search/?facet_locations_feature_church=322628&amp;facet_collectives_office_specific=322602"
+              target="https://ereed.org/search/?facet_locations_feature_church=322628&amp;facet_collectives_office_specific=322602"
               >associated records</ref>).</p>
 
           <p>The preponderance of documentary evidence in this collection, however, follows the
@@ -2194,23 +2194,23 @@
 
           <p>The earliest records of local entertainment are in the accounts of the Holy Trinity
             guild at Wisbech (see the <ref
-              target="https://ereed.library.utoronto.ca/search/?facet_collectives_guild_religious=327612"
+              target="https://ereed.org/search/?facet_collectives_guild_religious=327612"
               >associated records</ref>); the guild held an annual <rs ref="eats:40561"
               type="Entertainment_Type">dinner</rs> in May or June through much of the fourteenth
             and fifteenth centuries. In the later sixteenth century, the churchwardens at St Mary’s,
             Linton (see the <ref
-              target="https://ereed.library.utoronto.ca/search/?facet_locations_feature_church=333257"
+              target="https://ereed.org/search/?facet_locations_feature_church=333257"
               >associated records</ref>) coordinated a playing space in Linton’s <rs
               ref="eats:314340" type="Place_F_GuildHall">Townhouse</rs> (owned by Pembroke Hall,
             Cambridge) several times. Likewise the churchwardens’ accounts of St Leonard’s,
             Leverington (see the <ref
-              target="https://ereed.library.utoronto.ca/search/?facet_locations_feature_church=328496"
+              target="https://ereed.org/search/?facet_locations_feature_church=328496"
               >associated records</ref>), dating from the mid-sixteenth century, reveal regular
             payments to travelling performers from nearby Wisbech, as well as other towns in other
             counties, including Fitton Fen, Kirton Fen, and Spalding, Lincolnshire. The most
             detailed records, however, are found in the churchwardens’ accounts of Sts Peter and
             Paul (see the <ref
-              target="https://ereed.library.utoronto.ca/search/?facet_locations_settlement_b=326134"
+              target="https://ereed.org/search/?facet_locations_settlement_b=326134"
               >associated records</ref>) in Bassingbourn, which show about thirty years of regular
             church ales, celebration of <rs ref="eats:72132" type="CalendarDay_Liturgical"
               >Hocktide</rs>, and most significantly, a<rs ref="eats:326774" type="Drama_TitledWork"
@@ -2291,8 +2291,8 @@
               type="foot">Although it is impossible to suppose which minstrels these were, see Eliza
               Tiner, ‘Patrons and Travelling Companies,’ in Nelson, <title>Cambridge</title>, vol 2,
               pp 1269–70 and pp 1277–8. See also <title>P&amp;P</title> pages for <ref
-                target="https://reed.library.utoronto.ca/node/316387">Henry VI</ref> and <ref
-                target="https://reed.library.utoronto.ca/node/316182">John de Mowbray</ref>.</note>
+                target="https://library2.utm.utoronto.ca/otra/reed//node/316387">Henry VI</ref> and <ref
+                target="https://library2.utm.utoronto.ca/otra/reed//node/316182">John de Mowbray</ref>.</note>
             Similar payments occur under Prior Henry Peterborough in
             1467<!--IN to link to CAABHB. IN: As of 2022-08-23, CAABHB is awaiting OS check. May insert x-ref at later date.-->,
             to the minstrels of <rs ref="eats:159800" type="Collective_Troupe">King Edward IV</rs>,
@@ -2366,12 +2366,12 @@
             <p>Beyond the evidence from Ely and Barnwell for the employment of performers from
               Christmas through Candlemas, the records offer little record of Christmas festivities.
               The St Leonard’s churchwarden’s accounts (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_locations_feature_church=328496"
+                target="https://ereed.org/search/?facet_locations_feature_church=328496"
                 >associated records</ref>) mention payments at Christmastime in 1517, 1554, and
               1568; other payments in January and February might be connected to the season but are
               not identified as such. The churchwardens' accounts of Sts Peter and Paul Church in
               Bassingbourn (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_locations_settlement_b=326134"
+                target="https://ereed.org/search/?facet_locations_settlement_b=326134"
                 >associated records</ref>), dating from 1496–<hi rend="italic">c</hi> 1540, detail
               regular payments for candles and liturgical vestments from the <rs ref="eats:72087"
                 type="CalendarDay_Liturgical">Annunciation</rs> and Christmas but offer no record of
@@ -2428,7 +2428,7 @@
             <head>Hocking</head>
 
             <p>The Bassingbourn churchwardens' accounts (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_locations_settlement_b=326134"
+                target="https://ereed.org/search/?facet_locations_settlement_b=326134"
                 >associated records</ref>), suggest that — as in other counties — <rs
                 ref="eats:40815" type="Entertainment_FolkCustom">hocking</rs> was a popular custom
               in Cambridgeshire, although these are the only surviving records from the county to
@@ -2453,7 +2453,7 @@
               and gathering the largest sum for the parish. The funds thus gathered were given to
               the parish especially for poor relief but also to pay for repairs to the church fabric
               and other parish expenses.'<note type="foot">Peter Greenfield and Jane Cowling, <ref
-                  target="https://ereed.library.utoronto.ca/collections/hamps/traditions/"
+                  target="https://ereed.org/collections/hamps/traditions/"
                   >‘Performance Traditions,’</ref>
                 <title>Hampshire</title>.</note></p>
 
@@ -2516,7 +2516,7 @@
                   Community</title>, pp 237–45.</note></p>
 
             <p>The Bassingbourn churchwarden’s accounts (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_locations_settlement_b=326134"
+                target="https://ereed.org/search/?facet_locations_settlement_b=326134"
                 >associated records</ref>) nonetheless offer evidence of this earlier form of
               charitable activity until the 1540s. Church ales are very frequently mentioned: while
               the majority are May ales (Whitsunday or Whitmonday) and mid-Lenten Sunday ales, 'a
@@ -2582,7 +2582,7 @@
 
             <p>The most detailed evidence for dramatic performance in the towns is in the
               Bassingbourn churchwardens' accounts (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_locations_settlement_b=326134"
+                target="https://ereed.org/search/?facet_locations_settlement_b=326134"
                 >associated records</ref>), which record two plays. The first account offers limited
               detail, but notes 2d paid on Whitmonday 1500 (7 June) 'ffor a <rs ref="eats:70656"
                 type="Thing_BookPlayMusic">playe Book</rs>,' along with 2d to the bearer of the book
@@ -2645,13 +2645,13 @@
             <p>Beyond these records and those of players and interludes at Cambridgeshire's
               religious institutions, few records of dramatic performance survive. The accounts of
               the churchwardens of St Leonard’s, Leverington (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_locations_feature_church=328496"
+                target="https://ereed.org/search/?facet_locations_feature_church=328496"
                 >associated records</ref>), dating from the mid-sixteenth century, record payments
               for plays from 1518 to 1566. The St Mary’s churchwardens’ accounts (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_locations_feature_church=333257"
+                target="https://ereed.org/search/?facet_locations_feature_church=333257"
                 >associated records</ref>) record payments for plays at the townhouse from 1577 to
               1590. The Holy Trinity guild accounts of Wisbech (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_collectives_guild_religious=327612"
+                target="https://ereed.org/search/?facet_collectives_guild_religious=327612"
                 >associated records</ref>) also record numerous payments from 1380 to 1489 for
               minstrels, players, harpers, and dancers at annual guild dinners, which name several
               professional players (Nicholas Tyneteshale, Thomas Foster, Nicolas Maunger, and Robert
@@ -2733,7 +2733,7 @@
               are found in the accounts of Sir John and <rs ref="eats:326915" type="Person_Nobility"
                 >Dorothy North</rs> of <rs ref="eats:311819" type="Place_F_Residence">Kirtling</rs>
               (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_locations_feature_residence=311819"
+                target="https://ereed.org/search/?facet_locations_feature_residence=311819"
                 >associated records</ref> and <ref target="#cambs_hb_families">'Historical
                 Background: Cambridgeshire Families'</ref>). John North’s accounts are extensive,
               detailing music and performance-related activity at points in Cambridgeshire and
@@ -2781,7 +2781,7 @@
               ecclesiastical infractions who claimed to be acting as travelling performers (see
               above, 'Civic Entertainment'), the churchwardens' accounts of St Leonard’s,
               Leverington (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_locations_feature_church=328496"
+                target="https://ereed.org/search/?facet_locations_feature_church=328496"
                 >associated records</ref>), offer the best evidence for travelling performers in the
               county. Most notably here the churchwardens seem to have drawn regularly on
               Lincolnshire performers. On Whitsunday 1568 there were players from <rs
@@ -3199,7 +3199,7 @@
               practice occurred at many times of the year, fixed to no holiday in particular. In
               Cambridgeshire too, Morris dancing is the performance activity most frequently cited
               in the diocesan court proceedings (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_record_type_church=Ecclesiastical+Courts&amp;facet_entertainments_custom=79074&amp;facet_locations_county=1787"
+                target="https://ereed.org/search/?facet_record_type_church=Ecclesiastical+Courts&amp;facet_entertainments_custom=79074&amp;facet_locations_county=1787"
                 >associated records</ref>), evidence of the 'church’s reversal of policy towards
               Morris dancing from active support to rigorous prosecution' in the later sixteenth and
               early seventeenth centuries.<note type="foot">John Forrest, <title>The History of
@@ -3253,7 +3253,7 @@
             <head>Linton Townhouse</head>
 
             <p>The St Mary’s churchwardens’ accounts (see the <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_locations_feature_church=333257"
+                target="https://ereed.org/search/?facet_locations_feature_church=333257"
                 >associated records</ref>) of <rs ref="eats:314306" type="Place_PA_Settlement"
                 >Linton</rs> note several receipts of money for players at <rs ref="eats:314340"
                 type="Place_F_GuildHall">the Townhouse</rs>, from 1577 to 1590, as well as rent of
@@ -3301,7 +3301,7 @@
             <p>The <rs ref="eats:327612" type="Collective_GuildsReligious">Holy Trinity guild</rs>
               accounts of <rs ref="eats:303814" type="Place_PA_Settlement">Wisbech</rs> (see the
                 <ref
-                target="https://ereed.library.utoronto.ca/search/?facet_collectives_guild_religious=327612"
+                target="https://ereed.org/search/?facet_collectives_guild_religious=327612"
                 >associated records</ref>) record many payments from 1380 to 1489 at annual guild
               dinners, and the building that housed the guildhall still stands on Hill Street in
               Wisbech. After the suppression of the guilds in 1547 the building was converted to

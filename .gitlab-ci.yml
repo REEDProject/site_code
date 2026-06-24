@@ -2,15 +2,23 @@ image: alpine
 
 .prepare:ssh:
   before_script:
-    - "command -v ssh-agent >/dev/null || ( apk add --no-cache --update openssh )"
+    # Option 1: Force openssh reinstall
+    - apk update
+    - apk del openssh openssl || true
+    - apk add --no-cache openssl openssh
+    
+    # Start SSH agent
     - eval $(ssh-agent -s)
 
+    # Set up SSH key
     - chmod 400 "${SSH_PRIVATE_KEY}"
     - ssh-add "${SSH_PRIVATE_KEY}"
 
+    # Create and configure SSH directory
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
 
+    # Set up known hosts
     - cp "${SSH_KNOWN_HOSTS}" ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
 
@@ -49,7 +57,7 @@ image: alpine
       "
         cd ${DEPLOY_DIR} &&
         INSTANCE=${DEPLOY_INSTANCE} \
-        docker compose up -d --build --no-deps --force-recreate --remove-orphans
+        docker compose ${COMPOSE_FILES} up -d --build --no-deps --force-recreate --remove-orphans
       "
 
 stages:
@@ -60,6 +68,7 @@ deploy_to_dev:
   before_script:
     - DEPLOY_DIR=/project/dev
     - DEPLOY_INSTANCE=dev
+    - COMPOSE_FILES="-f docker-compose.yml"
     - INSTANCE_ENV=${HOST_ENV_DEV}
     - !reference [.prepare:ssh, before_script]
   script:
@@ -75,6 +84,7 @@ deploy_to_prod:
   before_script:
     - DEPLOY_DIR=/project/prod
     - DEPLOY_INSTANCE=prod
+    - COMPOSE_FILES="-f docker-compose.yml -f docker-compose.prod.yml"
     - INSTANCE_ENV=${HOST_ENV_PROD}
     - !reference [.prepare:ssh, before_script]
   script:

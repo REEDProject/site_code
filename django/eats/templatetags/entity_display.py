@@ -103,12 +103,18 @@ def display_entity_search_result (context, entity):
     entity_relationships = entity.get_entity_relationships()
     entity_types = entity.get_entity_types()
     entity_type_values = set()
+    first_entity_type = None
     for entity_type in entity_types:
-        entity_type_values.add(entity_type.entity_type.get_admin_name())
+        entity_type_name = entity_type.entity_type.get_admin_name()
+        entity_type_values.add(entity_type_name)
+        if first_entity_type is None:
+            first_entity_type = entity_type_name
     notes = entity.get_notes(context['eats_user'])
     return {'dates': dates, 'entity': entity,
             'entity_relationships': entity_relationships,
-            'entity_types': entity_type_values, 'notes': notes,
+            'entity_types': entity_type_values,
+            'first_entity_type': first_entity_type,
+            'notes': notes,
             'other_names': other_name_values,
             'preferred_authority': preferred_authority,
             'preferred_language': preferred_language,
