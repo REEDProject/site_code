@@ -36,15 +36,18 @@
       <title>Newington Butts Playhouse Timeline</title>
       <description>Timeline for the Newington Butts Playhouse collection</description>
     </timeline>
+    <timeline xml:id="swanp">
+      <title>Swan Playhouse Timeline</title>
+      <description>Timeline for the Swan Playhouse collection</description>
+    </timeline>
   </live>
   <development>
-    <timeline>Swan Playhouse</timeline>
   </development>
-  <featured ref="#nwbts">
-    <title>Newington Butts Playhouse</title>
+  <featured ref="#swanp">
+    <title>Swan Playhouse Playhouse</title>
     <!-- Thumbnail is the path of a PNG in content/images, excluding
          the file extension and relative content/images. Eg,
          "timelines/rose_timeline_thumbnail" -->
-    <thumbnail>timelines/nwbts_timeline_thumbnail</thumbnail>
+    <thumbnail>timelines/swanp_timeline_thumbnail</thumbnail>
   </featured>
 </timelines>

@@ -960,10 +960,7 @@
      <div>
       <head><rs ref="eats:294170" type="Person_Family">Danby</rs> of <rs ref="eats:252795"
         type="Place_F_Residence">Masham</rs></head>
-      <note type="foot">Because of the closure of the archives due to the COVID-19 pandemic, the <rs
-        ref="eats:294170" type="Person_Family">Danby</rs> of <rs ref="eats:252795"
-        type="Place_F_Residence">Masham</rs> household records are still awaiting on-site checks.
-       Please stay tuned for a publication notice.</note>
+      
       <p>From 1329 to 1517 the <rs ref="http://ereed.org/eats/entity/252795/"
         type="Place_F_Residence">manor of Masham</rs> was the seat of the Scrope family. The death
        of <rs ref="eats:299116" type="Person_Nobility">Thomas, fifth Lord Scrope of Masham</rs>, in
@@ -1413,7 +1410,7 @@
         ref="eats:40561" type="Entertainment_Type">feast</rs>.<note type="foot">Waggett,
          <title>Mercers, Grocers, and Haberdashers</title>.</note> The payments to the waits vary
        from 6d to 2s 2d, suggesting a significant variation in the number of musicians in the group.
-       The Richmond musicians were also hired on <ref target="https://dev.ereed.org/records/yksnr-rid23456/">several occasions</ref> by <rs ref="eats:298760"
+       The Richmond musicians were also hired on <ref target="https://ereed.org/records/yksnr-rid23456/">several occasions</ref> by <rs ref="eats:298760"
         type="Person_StatusOther">Christopher Danby</rs> of <rs ref="eats:252703"
         type="Place_PA_Settlement"
        >Snape</rs>.
@@ -1443,7 +1440,7 @@
      <div>
       <head>Private Music</head>
       <p>Middleham's waits, paid on five occasions for playing in <rs ref="eats:250812"
-       type="Place_PA_Settlement">Carlisle</rs>, also appear in <ref target="https://dev.ereed.org/records/ykssup-rid3/">a single payment</ref> in <rs
+       type="Place_PA_Settlement">Carlisle</rs>, also appear in <ref target="https://ereed.org/records/ykssup-rid3/">a single payment</ref> in <rs
         ref="eats:298760" type="Person_StatusOther">Christopher Danby</rs> of <rs ref="eats:252795"
         type="Place_F_Residence">Masham</rs>'s household accounts.
        Given <rs ref="eats:251875" type="Place_PA_Settlement">Middleham</rs>'s small size,
@@ -6990,10 +6987,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
       <p><rs ref="eats:268546" type="Person_Commoner">Robert Nettleton</rs> was one of the servants
        on the staff at Hackness.</p>
 
-      <p> Because of the closing of the Archives due to the Covid-19 pandemic, the transcription of
-       the interlinear passage beginning '<damage><gap unit="chars" extent="3"/></damage> said
-        sub<ex>iec</ex>t being' and ending 'vnto your said subiect' has not yet been checked for
-       accuracy. </p>
+     
      </div>
     </body>
    </text>
@@ -12086,6 +12080,243 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
      </div>
     </body>
    </text>
+   <text ana="taxon:Family_Household" type="record" xml:id="yksnr-rid123"> 
+    <body>
+     <head><rs>Yorkshire North
+       Riding</rs>, <rs>Newburgh Priory</rs> <date when-iso="1613">1613</date> <seg ana="taxon:YNZDV9">YNZDV9</seg></head>
+     <div xml:lang="eng" type="transcription" xml:id="yksnr-rid123-transcription">
+      <div><head>f [6] <supplied>(1 May 1613) (<rs ref="eats:497411" type="Person_Commoner">William Havercroft's</rs> disbursements)</supplied></head>
+       <pb n="[6]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to the <rs ref="eats:275786" type="Collective_Office">waytes of yorke</rs></cell><cell rend="right">ij s.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+     </div>
+    </body>
+   </text><text type="record" xml:id="yksnr-rid223">
+    <body>
+     <head><rs>Yorkshire North
+       Riding</rs>, <rs>Newburgh Priory</rs> <date when-iso="1614">1614</date> <seg ana="taxon:YNZDV9">YNZDV9</seg></head>
+     <div xml:lang="eng" type="transcription" xml:id="yksnr-rid223-transcription">
+      <div><head>ff [23v] <supplied>(1 February 1613/14) (<rs ref="eats:275401" type="Person_Commoner">William Jefferson's</rs>
+         disbursements)</supplied></head>
+       <pb n="[23v]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to <rs ref="eats:258856" type="Person_Commoner">Iervys</rs> the <rs ref="eats:8782"
+        type="Entertainer_Type">player</rs></cell><cell rend="right">vj s. viij
+          d.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+      <div><head>f [24v] <supplied>(24 March)</supplied></head>
+       <pb n="[24v]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to <rs ref="eats:497455" type="Person_Commoner">Hugh Vary</rs> w<ex>hi</ex>ch he gaue to <rs ref="eats:154950" type="Collective_Office">waytes</rs>
+       </cell><cell rend="right">xij d.</cell></row></table>
+      </div>
+      <div><head>f [50v] <supplied>(3 December) (<rs ref="eats:497491" type="Person_Commoner">William Garbutt's</rs> disbursements)</supplied></head>
+       <pb n="[50v]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex><note type="marginal" place="margin_left"><rs ref="eats:497532" type="Person_Commoner">mr Byrman</rs>./</note> to mr. Byrma<ex>n</ex> the .20.
+          november.</cell><cell rend="right">xx s.</cell></row>
+        <row><cell>It<ex>em</ex> the same day to players</cell><cell rend="right">xx s.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+      <div><head>f [54v] <supplied>(24 December 1614) (William Garbutt's disbursements</supplied></head>
+       <pb n="[54v]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to the players .18. of December.</cell><cell rend="right">xx
+          s.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+      <div><head>f [55] <supplied>(31 December) (William Garbutt's disbursements)</supplied></head>
+       <pb n="[55]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to <rs ref="eats:497568" type="Person_Commoner">Christoper ffarnham</rs> about the <rs ref="eats:40453"
+        type="Drama_Type">play</rs>
+       </cell><cell rend="right">xxj s. vj d.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+     </div>
+    </body>
+   </text><text type="record" xml:id="yksnr-rid323">
+    <body>
+     <head><rs>Yorkshire North
+       Riding</rs>, <rs>Newburgh Priory</rs> <date when-iso="1615">1615</date> <seg ana="taxon:YNZDV9">YNZDV9</seg></head>
+     <div xml:lang="eng" type="transcription" xml:id="yksnr-rid323-transcription">
+      <div><head>f [55v] <supplied>(16 January 1614/5) (<rs ref="eats:497491" type="Person_Commoner">William Garbutt's</rs> Accounts)</supplied></head>
+       <pb n="[55v]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to <rs ref="eats:497608" type="Person_Commoner">Tho<ex>mas</ex> Lecke</rs> for <rs ref="eats:41461"
+        type="Entertainer_Type">playinge</rs> at <rs ref="eats:8782"
+         type="CalendarDay_Liturgical">Christemas</rs>
+       </cell><cell rend="right">v s.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+      <div><head>f [77v] <supplied>(31 August 1615) (William Garbutt's disbursements)</supplied></head>
+       <pb n="[77v]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to the <rs ref="eats:17474" type="Collective_Troupe">quenes players</rs>. 14<hi rend="superscript">th</hi> August
+       </cell><cell rend="right">xx s.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+      <div><head>f [83] <supplied>(18 September 1615) (William Garbutt's
+         disbursements)</supplied></head>
+       <pb n="[83]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to the players that day<note type="foot">that day: <hi rend="italic">17
+            September 1615</hi></note></cell><cell rend="right"> xx s.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+     </div>
+    </body>
+   </text><text type="record" xml:id="yksnr-rid423">
+    <body>
+     <head><rs>Yorkshire North
+       Riding</rs>, <rs>Newburgh Priory</rs> <date when-iso="1616">1616</date> <seg ana="taxon:YNZDV9">YNZDV9</seg></head>
+     <div xml:lang="eng" type="transcription" xml:id="yksnr-rid423-transcription">
+      <div><head>f [124] <supplied>(16 May 1616) (Accounts of <rs ref="eats:275401" type="Person_Commoner">William Jefferson</rs>)</supplied></head>
+       <pb n="[124]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> give<ex>n</ex> to the <rs ref="eats:382315" type="Collective_Office">waits of Lincolne</rs>
+       </cell><cell rend="right">xij d.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+      <div><head>f [127v] <supplied>(11 July 1616) (William Jefferson's disbursements)</supplied></head>
+       <pb n="[127v]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to the <rs ref="eats:1162" type="Entertainer_Type">piper</rs> at ij. times</cell><cell rend="right">ij
+          s.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+      <div><head>f [104] <supplied>(18 August 1616) (<rs ref="eats:497491" type="Person_Commoner">William Garbutt's</rs> disbursements)</supplied></head>
+       <pb n="[104]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to the <rs ref="eats:17474" type="Collective_Troupe">Quenes players</rs> the 24<hi rend="superscript">th</hi> of Iulie
+       </cell><cell rend="right">v s.</cell></row>
+        <row><cell><gap reason="omitted"/></cell></row>
+        <row><cell>It<ex>em</ex> to <rs ref="eats:276281" type="Person_Commoner">Hugh</rs> for <rs ref="eats:40854" type="Thing_MusicalInstrument">Vyoll stringes</rs>.</cell><cell rend="right">ij s.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+      <div><head>f [104v]</head>
+       <pb n="[104v]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to the <rs ref="eats:14164" type="Entertainer_Type">foole</rs> at <rs ref="eats:40854" type="Place_PA_Settlement">thirkleby</rs></cell><cell rend="right">iij
+          s.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+      <div><head>f [108] <supplied>(22 October 1616) (William Garbutt's disbursements)</supplied></head>
+       <pb n="[108]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to <rs ref="eats:41461"
+        type="Entertainer_Type">players</rs> at <rs ref="eats:249525" type="Place_F_Residence">Newb<ex>urgh</ex></rs> the xix<hi rend="superscript">th</hi> of
+          Octob<ex>e</ex>r</cell><cell rend="right">xiij s. iiij d.</cell></row></table>
+      </div>
+     </div>
+    </body>
+   </text><text type="record" xml:id="yksnr-rid523">
+    <body>
+     <head><rs>Yorkshire North
+       Riding</rs>, <rs>Newburgh Priory</rs> <date when-iso="1617">1617</date> <seg ana="taxon:YNZDV9">YNZDV9</seg></head>
+     <div xml:lang="eng" type="transcription" xml:id="yksnr-rid523-transcription">
+      <div><head>f [115v] <supplied>(11 March 1616/7) (<rs ref="eats:497491" type="Person_Commoner">William Garbutt's</rs>
+         disbursements)</supplied></head>
+       <pb n="[115v]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to thre <rs ref="eats:1225"
+        type="Entertainer_Type">trumpeters</rs> the vij<hi rend="superscript">th</hi> of
+          March</cell><cell rend="right">ij s.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+      <div><head>f [117]</head>
+       <pb n="[117]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to the <rs ref="eats:497650" type="Collective_Office">waytes of Hedden</rs> the .28. of m<ex>ar</ex>ch
+       </cell><cell rend="right">xij d.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+      <div><head>ff [117v-18] <supplied>(8 May 1617)</supplied></head>
+       <pb type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to the <rs ref="eats:154950"
+        type="Collective_Office">waits</rs> at <rs ref="eats:497672"
+         type="Person_StatusOther">Mrs Barbar<ex>es</ex></rs> Maryadg
+       </cell><cell rend="right">ij s. vj d.</cell></row></table>
+       
+       <ab><gap reason="omitted"/><pb/></ab>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to the <rs ref="eats:276180" type="Collective_Office">waits of Doncaster</rs>  </cell><cell rend="right">ij
+          s.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+      <div><head>f [168v] <supplied>(12 August 1617) (William Garbutt's disbursements)</supplied></head>
+       <pb n="[168v]" type="folio"/>
+       
+       <gap reason="omitted"/>
+       
+       <table rend="padded"><row><cell>It<ex>em</ex> to the <rs ref="eats:275786" type="Collective_Office">waits at york</rs>        </cell><cell rend="right">ij
+          s.</cell></row></table>
+       
+       <gap reason="omitted"/>
+      </div>
+     </div>
+     <div type="endnote">
+      <p>
+       The parish of Thirkleby (f 104v) lies five miles west of the
+       Bellasis estate at Newburgh Priory.
+      </p>
+     </div>
+    </body>
+   </text> 
+   
    <text ana="taxon:LocalGov_County" type="record" xml:id="yksnr-ridp283389896">
     <body>
      <head><rs ref="http://ereed.org/eats/entity/2453/" type="Place_County">Yorkshire North
@@ -20567,7 +20798,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
 
 
 
-       <table rend="fixedwidth">
+       <table rend="padded">
         <row>
          <cell>1 </cell>
          <cell>Our old<ex>er</ex> Scipio was esteemed by those y<ex>a</ex>t kindly of him dremd
@@ -21031,7 +21262,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
           w<ex>i</ex>thin the <rs
            ref="http://ereed.org/eats/entity/2417/" type="Place_County">Countie of yorke</rs> as folow<ex>e</ex>th vi<ex>delicet</ex></ab>
 
-         <table>
+         <table rend="padded">
           <row>
            <cell>1.</cell>
            <cell>ffirst y<ex>a</ex>t the iustyc<ex>es</ex> of peace shall appoynt two. thre foure.
@@ -21064,11 +21295,8 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
              oy<ex>e</ex>r thing for y<ex>ou</ex>r wyves Children &amp; famylye to work vpon &amp;
             to se theym occupied co<ex>n</ex>tynuallye therin, or to put theym to such oy<ex>e</ex>r
              occupac<ex>i</ex>on or neccessarye labo<ex>u</ex>r as eu<ex>er</ex>ye of theym, shall
-            best be apt to take &amp; use for ye manteynance of theyre lyvyng.</cell>
-          </row>
-         </table>
-
-         <gap reason="omitted"/>
+            best be apt to take &amp; use for ye manteynance of theyre lyvyng.</cell></row></table>
+<gap reason="omitted"/>
         </div>
         <div>
          <head>f [1v]</head>
@@ -21088,9 +21316,7 @@ to link to YNNA10. As of 2021-05-10 YNNA10 is awaiting OS check. Cross-ref may b
              also to be put vnder bond<ex>es</ex> of com<ex>m</ex>on maynprise according to the
              lawes &amp; statut<ex>es</ex> p<ex>ro</ex>vyded in y<ex>a</ex>t behalfe</ab></cell>
           </row>
-         </table>
-
-         <gap reason="omitted"/>
+         </table> <gap reason="omitted"/>
         </div>
         <div>
          <head>ff [3–3v]</head>
