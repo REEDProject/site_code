@@ -66,7 +66,11 @@
           <div class="column medium-12">
             <div class="row collapse map-wrapper map small-margin-bottom-25">
               <div class="columns medium-12">
-                <div id="map"></div>
+                <div id="map">
+                  <xsl:if test="$collection = $playhouse-collections">
+                    <xsl:attribute name="data-default-view">southwark</xsl:attribute>
+                  </xsl:if>
+                </div>
               </div>
             </div>
           </div>

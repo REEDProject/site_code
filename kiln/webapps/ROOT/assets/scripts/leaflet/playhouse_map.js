@@ -200,6 +200,10 @@ Add to Overlays the three new layers: sewers, parishes, liberties-and-manors
  */
 function fitBounds(map, regionLayer, relatedLayer) {
   let zoom = 12;
+  if (map.getContainer().getAttribute('data-default-view') === 'southwark') {
+    map.setView([51.505, -0.09], 14);
+    return;
+  }
   if (source_region_geojson.length > 0) {
     map.fitBounds(regionLayer.getBounds());
   } else if (related_location_geojson.length > 0) {
