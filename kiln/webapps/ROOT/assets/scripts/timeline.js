@@ -324,13 +324,17 @@ function loadMap(metadata) {
     const baseLayers = {};
     const overlayLayers = {};
     const startLayers = [];
+    let overlayLayerZIndex = 200;
 
     // Iterate over basemapLayers and extract layer information
     for (const [key, layer] of Object.entries(basemapLayers)) {
         const { url, options, is_base_layer, is_overlay_layer, is_start_layer } = layer;
+        const tileLayerOptions = Object.assign({}, options || {}, {
+            zIndex: is_base_layer ? 100 : overlayLayerZIndex++,
+        });
 
         // Create a tile layer based on layer information
-        const tileLayer = L.tileLayer(url, options);
+        const tileLayer = L.tileLayer(url, tileLayerOptions);
 
         // Assign the tile layer to the corresponding layer category
         if (is_base_layer) {
@@ -366,12 +370,7 @@ function loadMap(metadata) {
     const map = L.map('map', mapSetupOptions);
 
     // Add layer control for base and overlay layers
-    L.control.layers(baseLayers, overlayLayers).addTo(map);
-
-    // Bring start layers to the front
-    startLayers.forEach((layer) => {
-        layer.bringToFront();
-    });
+    L.control.layers(baseLayers, overlayLayers, { autoZIndex: false }).addTo(map);
 
     // Add legend control to the bottom-right corner
     const legend = L.control({ position: 'bottomright' });
